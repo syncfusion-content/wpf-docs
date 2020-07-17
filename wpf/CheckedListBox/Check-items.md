@@ -13,10 +13,14 @@ In [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), it
 
 1. Using Collection
 2. Using Property
-2. Using Mouse
-3. Using Keyboard
+3. Using Mouse
+4. Using Keyboard
 
-##  Check items using Collection
+## Check items programmatically
+
+You can check or uncheck the items by using collection or property.
+
+### Check items using Collection
 
 We can check or uncheck the particular item by add or remove that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection. 
 
@@ -105,7 +109,7 @@ class ViewModel : NotificationObject {
 
 Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/CheckItems) to download the sample that showcases check the items by using the collection.
 
-## Check items using Property
+### Check items using Property
 
 We can change the item’s checked state by using the [CheckListBoxItem.IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBoxItem~IsChecked.html) property bounded with any boolean property. There is limitation when using this approach. During virtualization, views will not be loaded, so it does not know the bounded value of `CheckListBoxItem.IsChecked` property. Hence, `SelectedItems` will not be in synchronized. However we can turnoff virtualization if you want both selected items to be in sync with bounded boolean property.
 

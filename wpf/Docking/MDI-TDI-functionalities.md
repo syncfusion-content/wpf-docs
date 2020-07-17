@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# MDI/ TDI functionalities
+# MDI/ TDI functionalities in
 
 The MDI and TDI functionalities are applicable for the Document window in the DockingManager. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
 
@@ -179,6 +179,32 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).IsAllowMDIResize = Fals
 {% endhighlight %}
 
 {% endtabs %}
+
+## Closing TDI tab items on mouse middle click
+
+You can close the document windows by clicking the mouse middle button on the document header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CloseTabOnMiddleClick.html) property as `true` and the [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) is set to `TDI` and [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanClose.html) property as `true`. The default value of `CloseTabOnMiddleClick` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1"
+                           UseDocumentContainer="True"
+                           ContainerMode="TDI" 
+                           CloseTabOnMiddleClick="True">
+    <ContentControl x:Name="Content1"
+                    syncfusion:DockingManager.Header="Document1"
+                    syncfusion:DockingManager.State="Document" 
+                    syncfusion:DockingManager.CanClose="True"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+this.DockingManager1.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Different Keyboard Navigation Modes
 
@@ -583,74 +609,6 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 
 ![Using the ContextMenu,  first item has been inserted to Next Tab group](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
-
-## TabGroup creation through mouse interaction 
-
-In the docking manager, a new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. To enable this functionality, set the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property as ActiveFiles for document items, and ActiveToolWindows for dock items.
-
-### ActiveFiles mode
-
-Moving document items to a docked state can be restricted by setting the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property as ActiveFiles. Users can also create a tab group at a side in the document area with the help of a drag provider similar to the one in Visual Studio.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">  
-
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
-
-<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
-
-<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following screenshot shows a tab group being created at the top of the document area.
-
-![Second Item Dock window is dragged and dropping into existing tab group through drag providers to create new Tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
-
-![Second Item Dock window is now Documented in New tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
-
-### ActiveToolWindows mode
-
-Dock items can be moved to both docked and document states in the document area by setting the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property to ActiveToolWindows, which turns on the active tool windows mode. This mode enables a drag provider that will appear based on the cursor position near the sides of an item. If the cursor is positioned at the outer half of the docking hints, the item will move to the docked state. If the cursor is at the inner half, the item will move to the document state. 
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">    
-
-<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
-
-<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
-
-<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.DesiredWidthInDockedMode="200" syncfusion:DockingManager.DesiredHeightInDockedMode="50" syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.TabSwitchSection="ActiveToolWindows"/>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following screenshot shows moving an item to a docked state at the right side of the document area.
-
-![First Item document window is moving to Dock state using outer Drag Providers](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
-
-![First Item is moved to Dock state](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
-
-The following screenshot shows moving an item to the document state at the right side of the document area.
-
-![First Item dock window is moving to Document state using inner Drag Providers](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
-
-![First Item is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
-
-N> These functionalities will take effect only when the [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2010DraggingEnabled.html) property of DockingManager is true.
 
 ## Disable TabGroups
 

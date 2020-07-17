@@ -7,18 +7,18 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# UI Automation
+# UI Automation in WPF DateTimePicker (DateTimeEdit)
 
 Microsoft UI Automation is the new accessibility Framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides accessibility to most UI elements and it provides the information about UI element to the end user. You can interact with the UI by using automated test scripts. To know more about UI Automation, refer the MSDN page [here](https://msdn.microsoft.com/en-us/library/ms747327(v=vs.110).aspx).
 
-DateTimeEdit supports the following types of UI Automation,
+[DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) supports the following types of UI Automation,
 
 1. Quick Test Professional
 2. Coded UI
 
 ## Quick Test Professional (QTP)
 
-The QTP tool can recognize the DateTimeEdit control. Hence with the DateTimeEdit control, it is possible to record interactions such as opening the calendar popup, closing the calendar popup, choosing the date from  the calendar , setting the DateTime value and and so on, for testing using QTP.
+The QTP tool can recognize the `DateTimeEdit` control. Hence with the `DateTimeEdit` control, it is possible to record interactions such as opening the calendar popup, closing the calendar popup, choosing the date from  the calendar , setting the DateTime value and and so on, for testing using QTP.
 
 ### Mapping the control to the custom server
 

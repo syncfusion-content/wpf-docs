@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Closing the GroupBar in Stack Mode| GroupBar | Wpf | Syncfusion
-description: closing the groupbar in stack mode
+description: Learn about Closing the GroupBar in Stack Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more details.
 platform: wpf
 control: GroupBar
 documentation: ug
@@ -51,7 +51,7 @@ groupBar.IsCloseButtonEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-# Maximum number of Visible Items in OverFlowPanel
+## Maximum number of Visible Items in OverFlowPanel
 
 User can customize the maximum number of Visible Items to be displayed in the StackMode OverflowPanel, using the property StackVisibleItemsCount. 
 
@@ -89,6 +89,6 @@ GroupBar.StackVisibleItemsCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![](GroupBar_StackMode_images/Maximumnumberofvisibleitems.png)
+![Maximum Number of Visible Items of WPF navigation pane](GroupBar_StackMode_images/Maximumnumberofvisibleitems.png)
 
 Note: This property is applicable for SfSkinManager Office2016 themes. 

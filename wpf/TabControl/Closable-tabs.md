@@ -13,7 +13,13 @@ This section explains how to closing the tab item and its functionalities in the
 
 ## Closing tab item 
 
-You can close the selected tab by clicking the close button which is placed top-right corner of the tab panel. You also close any tab by clicking mouse middle button.You can enable it by setting the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseTabOnMiddleClick.html) property value as `true`. The default value of `CloseTabOnMiddleClick` property is `false`.
+You can close the selected tab by clicking the close button which is placed top-right corner of the tab panel.
+
+![Tabs closing by close button](Closable-tabs-images/CloseMiddleClick.png)
+
+### Closing tab item using mouse middle click
+
+You can close any tab item by clicking mouse middle button on the tab item header. You can enable it by setting the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseTabOnMiddleClick.html) property value as `true`. The default value of `CloseTabOnMiddleClick` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -31,8 +37,6 @@ tabControlExt.CloseTabOnMiddleClick = true;
 
 {% endhighlight %}
 {% endtabs %}
-
-![Tabs closing by close button and mouse middle button click](Closable-tabs-images/CloseMiddleClick.png)
 
 You can also close the tab items using the default tab item context menu. Refer this [page](https://help.syncfusion.com/wpf/tabcontrol/contextmenu#default-tab-item-context-menu) to know more about the closing the tab item using context menu.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add References| Wpf | Syncfusion
-description: add a syncfusion references via syncfusion reference manger
+description: Syncfusion Reference Manger extension is add-in to add the Syncfusion references into the WinForms application
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Add References
+# Add Reference for WPF
 
 Syncfusion Reference Manager is the Visual Studio Add-In for WPF platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or from where Essential Studio is installed. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2013 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
 
@@ -45,9 +45,14 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
-   N> The GAC option will not be available when you selected WPF (.NET Core) application in Visual Studio 2019.
+
+   N> The GAC option will not be available when you selected WPF (.NET Core 3.1 and .Net 5.0) application in Visual Studio 2019. 
 
    **Version:** Choose the build version to add the corresponding version assemblies to the project.
+
+   ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger1-img4.png)
+
+   N> WPF (.NET Core 3.1 and .Net 5.0) application in Visual Studio 2019 is supported from 18.2.0.44   version and Version combobox is not visible for NuGet option. 
 
    **Themes Option:** Choose the required themes based on your need. Refer the below link to know more about built in themes and its available assemblies.
    [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)

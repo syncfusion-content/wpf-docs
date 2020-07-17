@@ -1,318 +1,344 @@
 ---
 layout: post
-title: WPF TreeView Appearance | Syncfusion
-description: This section describes how to customize the appearance of WPF TreeView.
+title: Appearance in WPF TreeView control | Syncfusion
+description: This section describes about the Appearance support in Syncfusion Wpf TreeView (SfTreeView) control and more details. 
 platform: wpf
-control: TreeViewAdv
+control: SfTreeView
 documentation: ug
 ---
-# Appearance
 
-This section deals with the appearance of TreeViewAdv control and contains the following topics:
+# Appearance in WPF TreeView (SfTreeView)
 
-## Customizing the appearance of the TreeViewAdv
+The TreeView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
 
-The TreeViewAdv appearance is customized by using the appearance properties available in the control. You can set the color for the Foreground, Background, Selected Item Foreground, Selected Item Background, MouseOver Foreground and MouseOver Background of TreeViewAdv control.
+## ItemTemplate
 
-* **SelectedBackground:** Gets or sets the background color of the selected treeview item
-* **SelectedForeground:** Gets or sets the foreground color of the selected treeview item
-* **MouseOverForeground:** Gets or sets the foreground color of the treeview item over which the mouse pointer moves
-* **MouseOverBackground:** Gets or sets the background color of the treeview item over which the mouse pointer moves
-* **SelectionUnfocussedBackground:** Gets or sets the background color of the selected treeview item when the item loses focus
-
-The following code example illustrates the above property settings.
-
-{% tabs %} 
-{% highlight XAML %}
-<!-- Adding TreeViewAdv With Brushes -->
-<syncfusion:TreeViewAdv MouseOverBackground="Aqua" MouseOverForeground="Magenta" Name="treeViewAdv" SelectedBackground="Orange" SelectedForeground="Red" SelectionUnfocussedBackcolor="Gold">
-<!-- Adding TreeViewItemAdv -->
-<syncfusion:TreeViewItemAdv Header="Marital Status">
-<syncfusion:TreeViewItemAdv Header="Single"/>
-<syncfusion:TreeViewItemAdv Header="Married"/>
-<syncfusion:TreeViewItemAdv Header="Married with Children"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-<syncfusion:TreeViewItemAdv Header="Tetanus"/>
-<syncfusion:TreeViewItemAdv Header="Polio"/>
-<syncfusion:TreeViewItemAdv Header="Measles"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Country Information"/>
-</syncfusion:TreeViewAdv>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-// Set MouseOverBackground property
-treeViewAdv.MouseOverBackground = Brushes.Aqua;
-
-// Set MouseOverForeground property
-treeViewAdv.MouseOverForeground = Brushes.Magenta;
-
-// Set SelectedBackground property
-treeViewAdv.SelectedBackground = Brushes.Orange;
-
-// Set SelectedForeground property
-treeViewAdv.SelectedForeground = Brushes.Red;
-
-// Set SelectionUnfocussedBackcolor property
-treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Set MouseOverBackground property
-treeViewAdv.MouseOverBackground = Brushes.Aqua
-
-' Set MouseOverForeground property
-treeViewAdv.MouseOverForeground = Brushes.Magenta
-
-' Set SelectedBackground property
-treeViewAdv.SelectedBackground = Brushes.Orange
-
-' Set SelectedForeground property
-treeViewAdv.SelectedForeground = Brushes.Red
-
-' Set SelectionUnfocussedBackcolor property
-treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-![Applied back and fore color on selected item in WPF TreeView](Appearance_images/Appearance_img1.jpeg)
-
-
-## Setting Visual Style
-
-The appearance of the TreeViewAdv control is customized by using the VisualStyle property. It gets or sets the visual style for the TreeViewAdv control.
-
-The various built-in visual styles are listed below.
-
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent
+The TreeView allows you to customize the appearance of content view and expander view by setting the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTemplate.html) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ExpanderTemplate.html) properties.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
+<Window x:Class="NodeWithImageDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NodeWithImageDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d">
 
-<!-- Adding TreeViewAdv with visual style -->
-<syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Transparent">
-<!-- Adding TreeViewItemAdv -->
-<syncfusion:TreeViewItemAdv Header="Marital Status">
-<syncfusion:TreeViewItemAdv Header="Single"/>
-<syncfusion:TreeViewItemAdv Header="Married"/>
-<syncfusion:TreeViewItemAdv Header="Married with Children"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-<syncfusion:TreeViewItemAdv Header="Tetanus"/>
-<syncfusion:TreeViewItemAdv Header="Polio"/>
-<syncfusion:TreeViewItemAdv Header="Measles"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Country Information">
-<syncfusion:TreeViewItemAdv Header="Canada"/>
-<syncfusion:TreeViewItemAdv Header="France"/>
-<syncfusion:TreeViewItemAdv Header="Germany"/>
-<syncfusion:TreeViewItemAdv Header="UK"/>
-<syncfusion:TreeViewItemAdv Header="USA"/>
-</syncfusion:TreeViewItemAdv>
-</syncfusion:TreeViewAdv>
+    <Window.DataContext>
+        <local:FileManagerViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <syncfusion:SfTreeView x:Name="sfTreeView" Grid.Row="1"
+                               ChildPropertyName="SubFiles"
+                               FullRowSelect="True"
+                               ItemsSource="{Binding ImageNodeInfo}" >
+
+            <syncfusion:SfTreeView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="grid">
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid>
+                                <Image Source="{Binding ImageIcon}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Height="16"
+                                               Width="16"/>
+                            </Grid>
+                            <Grid Grid.Column="1"
+                                              Margin="1,0,0,0"
+                                              VerticalAlignment="Center">
+                                <Label Content="{Binding ItemName}"
+                                                   Foreground="Black"
+                                                   FontSize="11"
+                                                   VerticalContentAlignment="Center" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfTreeView.ItemTemplate>
+        </syncfusion:SfTreeView>
+    </Grid>
+</Window>
 
 {% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %}
+## BindingContext for ItemTemplate
 
-//Setting the visual style as Blend
-SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
+By default, the binding context of tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) for Unbound Mode.
 
-{% endhighlight %}
-
-{% highlight VB %}
-
-'Setting the visual style as Blend
-SkinStorage.SetVisualStyle(treeViewAdv, "Blend")
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-**Blend theme**
-
-![Applied Blend theme to WPF TreeView](Appearance_images/Appearance_img2.jpeg)
-
-**Office2003 theme**
-
-![Applied Office2003 theme to WPF TreeView](Appearance_images/Appearance_img3.jpeg)
-
-**Office2007Blue theme**
-
-![Applied Office2007Blue theme to WPF TreeView](Appearance_images/Appearance_img4.jpeg)
-
-**Office2007Black theme**
-
-![Applied Office2007Black theme to WPF TreeView](Appearance_images/Appearance_img5.jpeg)
-
-**Office2007Silver theme**
-
-![Applied Office2007Silver theme to WPF TreeView](Appearance_images/Appearance_img6.jpeg)
-
-**Office2010Blue theme**
-
-![Applied Office2007Blue theme to WPF TreeView](Appearance_images/Appearance_img7.jpeg)
-
-**Office2010Black theme**
-
-![Applied Office2010Black theme to WPF TreeView](Appearance_images/Appearance_img8.jpeg)
-
-**Office2010Silver theme**
-
-![Applied Office2010Silver theme to WPF TreeView](Appearance_images/Appearance_img9.jpeg)
-
-**ShinyBlue theme**
-
-![Applied ShinyBlue theme to WPF TreeView](Appearance_images/Appearance_img10.jpeg)
-
-**ShinyRed theme**
-
-![Applied ShinyRed theme to WPF TreeView](Appearance_images/Appearance_img11.jpeg)
-
-**ShinyOrange theme**
-
-![Applied ShinyOrange theme to WPF TreeView](Appearance_images/Appearance_img12.jpeg)
-
-**VS2010 theme**
-
-![Applied VS2010 theme to WPF TreeView](Appearance_images/Appearance_img13.jpeg)
-
-**Metro theme**
-
-![Applied Metro theme to WPF TreeView](Appearance_images/Appearance_img14.jpeg)
-
-**Transparent theme**
-
-![Applied Transparent theme to WPF TreeView](Appearance_images/Appearance_img15.jpeg)
-
-## Customizing root lines
-
-You can customize the Root lines color and pen of the TreeViewAdv.
-
-### Line color
-
-The color of the root lines, which connect different nodes in a TreeViewAdv control is changed by using the LineBrush property. Use the following code example to set the color of the root lines.
+For Bound Mode, you can change the binding context of the treeview items by using [ItemTemplateContextType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTemplateDataContextType.html) property.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
+<Window x:Class="NodeWithImageDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NodeWithImageDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d">
 
-<!-- Adding TreeViewAdv With show root lines and line brush -->
-<syncfusion:TreeViewAdv Name="treeViewAdv" LineBrush="Red" ShowRootLines="True">
-<!-- Adding TreeViewItemAdv -->
-<syncfusion:TreeViewItemAdv Header="Marital Status">
-<syncfusion:TreeViewItemAdv Header="Single"/>
-<syncfusion:TreeViewItemAdv Header="Married"/>
-<syncfusion:TreeViewItemAdv Header="Married with Children"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-<syncfusion:TreeViewItemAdv Header="Tetanus"/>
-<syncfusion:TreeViewItemAdv Header="Polio"/>
-<syncfusion:TreeViewItemAdv Header="Measles"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Country Information"/>
-</syncfusion:TreeViewAdv>
+    <Window.DataContext>
+        <local:FileManagerViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock VerticalAlignment="Center" 
+                       TextWrapping="Wrap" 
+                       Padding="5,0,0,0" 
+                       FontSize="14" 
+                       Margin="5,5,5,20">
+                <Run Text="This sample demonstrates the default functionalities to include images in SfTreeView."/>
+        </TextBlock>
+
+        <syncfusion:SfTreeView x:Name="sfTreeView" Grid.Row="1"
+                               ChildPropertyName="SubFiles"
+                               FullRowSelect="True"
+                               ItemTemplateDataContextType="Node"
+                               ItemsSource="{Binding ImageNodeInfo}" >
+
+            <syncfusion:SfTreeView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="grid">
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid>
+                                <Image Source="{Binding Content.ImageIcon}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Height="16"
+                                               Width="16"/>
+                            </Grid>
+                            <Grid Grid.Column="1"
+                                              Margin="1,0,0,0"
+                                              VerticalAlignment="Center">
+                                <Label Content="{Binding Content.ItemName}"
+                                                   Foreground="Black"
+                                                   FontSize="11"
+                                                   VerticalContentAlignment="Center" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfTreeView.ItemTemplate>
+        </syncfusion:SfTreeView>
+    </Grid>
+</Window>
 
 {% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %}
+## ItemTemplate Selector
 
-// Show root lines
-treeViewAdv.ShowRootLines = true;
-
-// Set line brush
-treeViewAdv.LineBrush = Brushes.Red;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Show root lines
-treeViewAdv.ShowRootLines = True
-
-' Set line brush
-treeViewAdv.LineBrush = Brushes.Red
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-![Applied color to root line and line brush in WPF TreeView](Appearance_images/Appearance_img16.jpeg)
-
-
-### Line pen
-
-The root lines which connect different nodes in a TreeViewAdv control are customized by using the LinePen property. This property specifies the pen color for a node line. To set the LinePen property, refer the below code
+The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTemplateSelector.html). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=netcore-3.1) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
+<Window x:Class="NodeWithImageDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NodeWithImageDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d">
 
-<!-- Adding TreeViewAdv With show root lines and line pen -->
-<syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="True">
-<syncfusion:TreeViewAdv.LinePen>
-<Pen Brush="Red" Thickness="1"/>
-</syncfusion:TreeViewAdv.LinePen>
-<!-- Adding TreeViewItemAdv -->
-<syncfusion:TreeViewItemAdv Header="Marital Status">
-<syncfusion:TreeViewItemAdv Header="Single"/>
-<syncfusion:TreeViewItemAdv Header="Married"/>
-<syncfusion:TreeViewItemAdv Header="Married with Children"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-<syncfusion:TreeViewItemAdv Header="Tetanus"/>
-<syncfusion:TreeViewItemAdv Header="Polio"/>
-<syncfusion:TreeViewItemAdv Header="Measles"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Country Information"/>
-</syncfusion:TreeViewAdv>
+    <Window.DataContext>
+        <local:FileManagerViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <local:ItemTemplateSelector x:Key="itemTemplateSelector"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <syncfusion:SfTreeView x:Name="sfTreeView" 
+		                       Grid.Row="1"
+                               ChildPropertyName="SubFiles"
+                               FullRowSelect="True"
+                               ItemTemplateDataContextType="Node"
+                               ItemsSource="{Binding ImageNodeInfo}" 
+							   ItemTemplateSelector="{StaticResource itemTemplateSelector}" >
+        </syncfusion:SfTreeView>
+    </Grid>
+</Window>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-// Show root lines
-treeViewAdv.ShowRootLines = true;
-
-// Set line Pen
-treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Show root lines
-treeViewAdv.ShowRootLines = True
-
-' Set line Pen
-treeViewAdv.LinePen = New Pen(Brushes.Red, 1)
+class ItemTemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var treeviewNode = item as TreeViewNode;
+        if (treeviewNode == null)
+            return null;
+        if (treeviewNode.Level == 0)
+            return Application.Current.MainWindow.FindResource("RootTemplate") as DataTemplate;
+        else
+            return Application.Current.MainWindow.FindResource("ChildTemplate") as DataTemplate;
+    }
+}
 
 {% endhighlight %}
+{% endtabs %}
 
-{% endtabs %}  
-![Applied color to root line and line pen in WPF TreeView](Appearance_images/Appearance_img17.jpeg)
+![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images2.png)
+
+You can also download the entire source code of this demo from [here](
+https://github.com/SyncfusionExamples/How-to-customize-tree-nodes-using-data-template-selector-in-wpf-treeview)
+
+## Indentation
+
+The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~Indentation.html) property. The default value of this property is 20. This property can be customized at runtime.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfTreeView x:Name="sfTreeView" Indentation="40" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.Indentation = 40;
+
+{% endhighlight %}
+{% endtabs %}
+
+## ExpanderWidth
+
+The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is 20. This property can be customized at runtime.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfTreeView x:Name="sfTreeView" ExpanderWidth="40" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.ExpanderWidth = "40";
+
+{% endhighlight %}
+{% endtabs %}
+
+## ExpanderPosition
+
+The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`. This property has following two positions:
+
+Start: Allows displaying the expander view at the start position.
+End: Allows displaying the expander view at the end position.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfTreeView x:Name="sfTreeView" ExpanderPosition="End">
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.ExpanderPosition = ExpanderPosition.End;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Level based styling
+
+The TreeView allows you to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netcore-3.1).
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <local:FontAttributeConverter x:Key="FontAttributeConverter"/>
+</Window.Resources>
+<Window.DataContext>
+    <local:MailFolderViewModel x:Name="viewModel"/>
+</Window.DataContext>
+
+<Grid>
+    <Syncfusion:SfTreeView HorizontalAlignment="Left" ItemTemplateDataContextType="Node"  ItemsSource="{Binding Folders}"  ChildPropertyName="SubFolder" >
+        <Syncfusion:SfTreeView.ItemTemplate>
+            <DataTemplate>
+                <Label  Content="{Binding Content.FolderName}" FontWeight="{Binding Level, Converter={StaticResource FontAttributeConverter}}"
+                FontSize="14"/>
+            </DataTemplate>
+        </Syncfusion:SfTreeView.ItemTemplate>
+    </Syncfusion:SfTreeView>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class FontAttributeConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var level = (int)value;
+        return level == 0 ? FontWeights.Bold : FontWeights.Regular;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images3.png)
+
+You can also download the entire source code of this demo from [here](
+https://github.com/SyncfusionExamples/How-to-customize-the-style-of-tree-nodes-based-on-its-level-using-converter-in-wpf-treeview)
+
+## Animation
+
+The SfTreeView supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeNodeView.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~IsAnimationEnabled.html) property of SfTreeView.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfTreeView x:Name="sfTreeView" IsAnimationEnabled="true">
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.IsAnimationEnabled = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images1.gif)

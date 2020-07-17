@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Interaction with WPF UpDown control | Syncfusion
-description: This section explains about keyboard and mouse interaction in WPF UpDown control.
+description: Learn about keyboard and mouse interaction support in Syncfusion WPF NumericUpdown control and more details about the control features.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Interaction
+# Interaction in WPF NumericUpdown
 
 This section explains about how to change the value by using mouse and keyboard in WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
 
@@ -17,7 +17,7 @@ The `UpDown` control allows to increase or decrease the value by pressing <kbd>u
 
 ### Increment or decrement value in mouse wheel 
 
-When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property is `true`, the user can increase or decrease the current value by scrolling over UpDown control.
+You can increase or decrease the current value by scrolling over `UpDown` control. You can enable it by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property as `true`. You can disable the value changing on mouse scrolling by using the `IsScrollingOnCircle` property as `false`. The default value of `IsScrollingOnCircle` property is `true`. 
 
 {% tabs %}
 

@@ -188,35 +188,9 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
-## Display mode of the TabControl
-
-If you want to show tab items without its headers in the `TabControl`, use the [FullScreenMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~FullScreenMode.html) property. If you set `FullScreenMode` property value as `ControlMode`, then it will auto hide headers and show it only on when hover the mouse on respective tab header placed area. You can also display the `TabControl` in the full window by setting the `FullScreenMode` property value as `WindowMode`. The default value of `FullScreenMode` property is `None`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:TabControlExt FullScreenMode="ControlMode"
-                          TabStripPlacement="Bottom"
-                          Name="tabControlExt">
-    <syncfusion:TabItemExt Header="tabItem1" />
-    <syncfusion:TabItemExt Header="tabItem2" />
-    <syncfusion:TabItemExt Header="tabItem3" />
-</syncfusion:TabControlExt>
-
-{% endhighlight %}
-{% highlight C# %}
-
-tabControlExt.FullScreenMode = FullScreenMode.ControlMode;
-tabControlExt.TabStripPlacement = Dock.Bottom;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Show the tab item without its header](Getting-Started_images/FullScreenMode.gif)
-
 ## Selecting TabItem
 
-You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
+You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select a tab item when control not in focused state. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item when control in focused . You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
 N> You can select only one tab item at a time.
 
@@ -261,7 +235,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 {% endhighlight %}
 {% endtabs %}
 
-## Working with tab close button
+## Closing the tab item
 
 `TabControl` allows end-users to close the tabs using close button. The close button can be displayed in `Tabcontrol` using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. 
 The following options are supported to show close the button in `TabControl`.
@@ -403,7 +377,7 @@ private void TabControlExt_NewButtonClick(object sender, EventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-![Enable the new button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-newbutton.png)
+![New tab item added by new button click](NewButton-Feature_images/NewButton.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
@@ -431,6 +405,38 @@ tabControlExt.ShowTabListContextMenu = true;
 ![Tablist Context menu of tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-tablistcontextmenu.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
+
+### Show hidden tab items
+
+By default, all the tab items except hidden items are listed in the tab list context menu. If you wants to show the hidden tab items into tab list context menu to navigate, use the [TabListContextMenuOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabListContextMenuOptions.html) property value as `Default, ShowHiddenItems`. You can set single or multiple options for the `TabListContextMenuOptions` to show single or different types of tab items into the context menu. The default value of `TabListContextMenuOptions` property is `Default`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabListContextMenuOptions="Default, ShowHiddenItems"
+                          ShowTabListContextMenu="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+    <syncfusion:TabItemExt Header="tabItem3" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem4" IsEnabled="False"/>
+    <syncfusion:TabItemExt Header="tabItem5"/>
+    <syncfusion:TabItemExt Header="tabItem6" Visibility="Collapsed"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabListContextMenu = true;
+tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.Default |
+                                          TabListContextMenuOptions.ShowHiddenItems;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl show only enabled, disabled or hidden tab items on tab list context menu](Tab-Item-Header_images/ShowHiddenTabListContextMenu.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions) in GitHub
 
 ## Enable or disable tab navigation bar
 

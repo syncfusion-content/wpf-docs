@@ -39,6 +39,27 @@ colorPickerPalette.Height = 40;
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
+## Setting null value
+
+You can set a null color value for the selected color by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Color="Transparent"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Color = Colors.Transparent;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with selected null color](Dealing-with-ColorPickerPalette_images/Nullvalue.png)
+
 ## Setting automatic color
 
 If we want to change the default selected color on application launching, set the value for [AutomaticColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~AutomaticColor.html) property. If we changed the selected color, then we can easily make the default color as selected color by clicking the automatic color panel. We can hide the automatic color visibility by setting the [AutomaticColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~AutomaticColorVisibility.html) property value as `Collapsed`. The default value of `AutomaticColor` property is `Black` and the default value of `AutomaticColorVisibility` property is `Visible`.
@@ -310,7 +331,7 @@ N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `
 
 ## Color changed notification
 
-The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorChanged_EV.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties.
+The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorChanged_EV.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties. You can also get the color changed notification by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,6 +365,66 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 {% endhighlight %}
 {% endtabs %} 
 
+## Customize the header
+
+You can customize the appearance of the  `ColorPickerPalette` header and can display the selected color name in the header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~HeaderTemplate.html) property.
+
+N> The `DataContext` of `HeaderTemplate` is `ColorPickerPalette`
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <DataTemplate x:Key="Custom_HeaderTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid  x:Name="IconGrid" 
+                   Margin="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="image" 
+                       Source="/images/fill.png"
+                       Height="12" 
+                       Width="12"/>
+                <Border Name="color_border" 
+                        Grid.Row="1" 
+                        Height="3">
+                    <Border.Background>
+                        <SolidColorBrush Color="{Binding Color, 
+                            RelativeSource={RelativeSource FindAncestor, 
+                                AncestorLevel=1,
+                                AncestorType={x:Type syncfusion:ColorPickerPalette}}, 
+                                UpdateSourceTrigger=PropertyChanged}"/>
+                    </Border.Background>
+                </Border>
+            </Grid>
+            <TextBlock Padding="1" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center" Grid.Column="1" 
+                       Text="Shape Fill" FontSize="11"
+                       Width="auto"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:ColorPickerPalette HeaderTemplate="{DynamicResource Custom_HeaderTemplate}"
+                                   Name="ColorPickerPallete2"                                  
+                                   Margin="10"
+                                   Mode="Split"/>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with Custom UI](Appearance_images/HeaderTemplate.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/HeaderTemplate) in GitHub
+
 ## Tooltip support
 
 Tooltip is used to show the information about the segment, when you mouse over on the segment. We can show information about the name of the color item using tooltip when hovering the mouse on the specific color item.
@@ -352,29 +433,119 @@ Tooltip is used to show the information about the segment, when you mouse over o
 
 ## Expanded mode
 
-If we want to directly use the `ColorPickerPalette` without drop down, set the [IsExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~IsExpanded.html) property value as `true`. The default value of `IsExpanded` is `true`.
+If you want to directly use the palette without drop down button, set the `Mode` property value as `Palette`. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette IsExpanded="true"
-                               Name="colorPickerPalette" 
-                               Width="60"
-                               Height="40">
-</syncfusion:ColorPickerPalette>
+<syncfusion:ColorPickerPalette Mode="Palette"
+                               Name="colorPickerPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.IsExpanded = true;
-colorPickerPalette.Width = 60;
-colorPickerPalette.Height = 40;
+colorPickerPalette.Mode = PickerMode.Palette;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with expanded mode](Dealing-with-ColorPickerPalette_images/Expanded.png)
+![ColorPickerPalette with Palette mode](Dealing-with-ColorPickerPalette_images/Expanded.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
+
+## ColorPickerPalette as a command button
+
+By default, ColorPickerPalette acts like a dropdown. It opening a color palette when clicking anywhere on the header. By setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property to `Split`, it acts like a button and dropdown as explained below.
+1. When clicking on the dropdown arrow button, It acts like a dropdown.
+2. When you click on the header area, it acts like a button and [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) will be triggered. Using this command, you can do some action like applying the selected color as background of selected text.
+
+![ColorPickerPalette in drop down and split mode](Dealing-with-ColorPickerPalette_images/Mode.png)
+
+For example, if you want to apply a last selected color as a foreground to a TextEditor's selected text. You can direct click the button instead of opening the dropdown and selecting an already selected color again.
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+public class ViewModel : NotificationObject
+{  
+    private ICommand selectionChangedCommand;
+    private ICommand loadedChangedCommand;
+    private RichTextBox TextBox;
+   
+    public ICommand SelectionChangedCommand {
+        get {
+            return selectionChangedCommand;
+        }
+    }
+
+    public ICommand LoadedChangedCommand {
+        get {
+            return loadedChangedCommand;
+        }
+    }
+
+    public void Loadedmethod(object param) {
+        TextBox = param as RichTextBox;
+    }
+    public void PropertyChangedHandler(object param) {
+        if (param != null && TextBox != null) {
+            ColorSelectedCommandArgs groupItem = param as ColorSelectedCommandArgs;
+            TextRange range = new TextRange(TextBox.Selection.Start, TextBox.Selection.End);
+            range.ApplyPropertyValue(FlowDocument.ForegroundProperty, groupItem.Brush);
+        }
+    }
+    public ViewModel() {
+        selectionChangedCommand = new DelegateCommand<object>(PropertyChangedHandler);
+        loadedChangedCommand = new DelegateCommand<object>(Loadedmethod);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette  Name="colorpickerpalette" 
+                                Mode="Split"
+                                SelectedCommand="{Binding SelectionChangedCommand}"
+                                Width="60" 
+                                Height="40">
+  
+ </syncfusion:ColorPickerPalette>
+
+ <RichTextBox Name="richTextBox"
+              Height="297" 
+              Width="331">
+     <i:Interaction.Triggers>
+         <i:EventTrigger EventName="Loaded">
+             <i:InvokeCommandAction Command="{Binding LoadedChangedCommand}"
+                                    CommandParameter="{Binding ElementName=richTextBox}"/>
+         </i:EventTrigger>
+     </i:Interaction.Triggers>
+     <FlowDocument>
+         <Paragraph FontSize="14">Hello, world!</Paragraph>
+         <Paragraph FontStyle="Italic" 
+                    TextAlignment="Left"
+                    FontSize="14">Thanks to the RichTextBox control, 
+                                  this FlowDocument is completely editable!</Paragraph>
+     </FlowDocument>
+ </RichTextBox>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.Mode = PickerMode.Split;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Choose a color without opening a Palette](Dealing-with-ColorPickerPalette_images/SplitColor.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/TextColorSelection) in GitHub
 
 ## Change color item size
 
@@ -457,3 +628,37 @@ We can set the icons for control header which is placed left to the DropDown but
 ![ColorPickerPalette popup size changed](Dealing-with-ColorPickerPalette_images/Icons.png)
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) to download the sample that showcases features and  different type color items with its panel visibility customization.
+
+## Hide the drop down button
+
+You can hide the dropdown button in the `ColorPickerPalette` by setting the dropdown button visibility as `Collapsed`. You can open a popup color palette by clicking the header of the `ColorPickerPalette`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Loaded="ColorPickerPalette_Loaded"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Loaded += ColorPickerPalette_Loaded;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+private void ColorPickerPalette_Loaded(object sender, RoutedEventArgs e) {
+    var dropDown = (Border)(sender as ColorPickerPalette).Template.FindName("UpDownBorder", colorPickerPalette);
+    if (dropDown != null) {
+        dropDown.Visibility = Visibility.Collapsed;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette hides the dropdown button](Dealing-with-ColorPickerPalette_images/HiddenDropDown.gif)

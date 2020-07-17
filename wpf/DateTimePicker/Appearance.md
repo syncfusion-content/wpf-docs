@@ -1,187 +1,199 @@
 ---
 layout: post
-title: WPF DateTimeEdit Customization | Syncfusion 
-description: This section explains about customizing the appearance of calendar, clock, drop-down button and various styles available in DateTimeEdit.
+title: About WPF DateTimeEdit  Control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF DateTimeEdit  control and more details about the control features.
 platform: wpf
-control: DateTimeEdit
+control: DateTimeEdit 
 documentation: ug
 ---
 
-# Appearance in WPF DateTimeEdit    
+# Appearance in WPF DateTimePicker (DateTimeEdit)
 
-The DateTimeEdit provides built-in themes which can be applied using SkinStorage and SfSkinManager. Also provides support to create custom theme using theme studio. You can customize the appearance of calendar, clock, up-down and drop-down buttons in the DateTimeEdit.
+This section explains different UI customization options available in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 
-## Customize up-down appearance
+## Setting the Foreground
 
- The visibility of the Repeat Button can be enabled by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsVisibleRepeatButton.html) property to true. The [RepeatButtonBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBackground.html), [RepeatButtonBorderThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBorderThickness.html), [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonTemplate.html), [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonTemplate.html), [UpRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonMargin.html), and [DownRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonMargin.html) properties are used to customize the appearance of the Repeat Buttons.
+You can change the foreground color for `dateTimeEdit` by setting the `Foreground` property. The default color value of `Foreground` property is `Black`.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         IsVisibleRepeatButton="True" RepeatButtonBackground="Violet" 
-                         UpRepeatButtonMargin="1" DownRepeatButtonMargin="1" />          
+<syncfusion:DateTimeEdit Foreground="Red"
+                           Name="dateTimeEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-dateTimeEdit.RepeatButtonBackground = Brushes.Violet;
-dateTimeEdit.UpRepeatButtonMargin = new Thickness(1);
-dateTimeEdit.DownRepeatButtonMargin = new Thickness(1);
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.Foreground = Brushes.Red;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![WPF DateTimeEdit up-down button customization](appearance-images/wpf-datetimeedit-up-down-customize.png)
+![DateTimeEdit with Red foreground](appearance-images/Appearance_Foreground.png)
 
-## Custom calendar and clock
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
-You can host your own calendar and clock control in DateTimeEdit by using [DateTimeCalender](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeCalender.html) and [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~Clock.html) properties to enhance its appearance.
+## Setting the Background
 
-### Custom calendar
-
-You can host a custom calendar by using [DateTimeCalender](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeCalender.html) property of DateTimeEdit. 
+You can change the background color and selection color of `DateTimeEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
- <syncfusion:DateTimeEdit Width="250" Height="25" x:Name="dateTimeEdit">
-            <syncfusion:DateTimeEdit.DateTimeCalender>
-                <syncfusion:SfDateSelector Width="250" ShowCancelButton="False" ShowDoneButton="False" 
-                                   SelectorItemWidth="75" SelectorItemHeight="75" 
-                                   SelectorItemSpacing="4.5" Height="430" 
-                                   SelectedDateTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
-                                                      Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                </syncfusion:SfDateSelector>
-            </syncfusion:DateTimeEdit.DateTimeCalender>
-        </syncfusion:DateTimeEdit>
+<syncfusion:DateTimeEdit Background="Yellow"
+                         SelectionBrush="Red"
+                         Name="dateTimeEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-ToggleButton todayButton;
-public MainWindow()
-{
-    InitializeComponent();
-    dateTimeEdit.IsDropDownOpenChanged += DateTimeEdit_IsDropDownOpenChanged;
-}
-
-private void DateTimeEdit_IsDropDownOpenChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    if (dateTimeEdit.IsDropDownOpen)
-    {
-        todayButton = dateTimeEdit.Template.FindName("Button_Today_Classic", dateTimeEdit) as ToggleButton;
-        if (todayButton != null)
-        {
-            todayButton.Visibility = Visibility.Collapsed;
-        }
-    }
-}
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![Custom calendar in WPF DateTimeEdit](appearance-images/wpf-datetimeedit-custom-calendar.png)
-
-### Custom clock
-
-You can host a custom clock using the [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~Clock.html) property of DateTimeEdit. You can enable the clock by setting [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DropDownView.html)  property as `Clock`.
-{% tabs %}
-
-{% highlight XAML %}
-
-  <syncfusion:DateTimeEdit Width="250" Height="25" DropDownView="Clock" x:Name="dateTimeEdit">
-            <syncfusion:DateTimeEdit.Clock>
-                <syncfusion:SfTimeSelector Width="248" ShowCancelButton="False" ShowDoneButton="False" 
-                                   SelectorItemWidth="75" SelectorItemHeight="75" Height="430"
-                                   SelectorItemSpacing="4.5"                  
-                                   SelectedTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
-                                                  Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-                </syncfusion:SfTimeSelector>
-            </syncfusion:DateTimeEdit.Clock>
-        </syncfusion:DateTimeEdit>
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.Background = Brushes.Yellow;
+dateTimeEdit.SelectionBrush = Brushes.Red;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![Customize the Clock in DateTimeEdit](appearance-images/wpf-datetimeedit-custom-clock.png)
+![DateTimeEdit with Red background](appearance-images/Appearance_Background.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Custom-clock-and-calendar)
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
-## Built-in themes
+## Change focus border color
 
-The appearance of DateTimeEdit control can be customized by VisualStyle attached property of the `SfSkinManager` and `SkinStorage`. You can find the list of available built-in themes and the assemblies needs to be referred in the following documentation [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and [SkinStorage](https://help.syncfusion.com/wpf/skinmanager/overview).
-
-Below example explains how to apply blend theme for DateTimeEdit using SfSkinManager in an existing application.
-
-* Add reference Syncfusion.SfSkinManager.Wpf.dll and Syncfusion.Themes.Blend.Wpf.dll assembly.
-* Now add reference to `SfSkinManager` namespace and set `SfSkinManager.VisualStyle` attached property to window or DateTimeEdit. Setting `VisualStyle` property to window will apply blend theme for all controls in Windows.
+You can change the focus border color of the `DateTimeEdit` by setting the [FocusedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~FocusedBorderBrush.html) property. The default value of `FocusedBorderBrush` property is `Medium Aquamarine`.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-
-<Window x:Class="DateTimeEdit_sample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                          
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:DateTimeEdit_sample"
-        xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        Title="Visual Styles Demo"  Icon="App.ico"
-        Width="1200" Height="720"
-        WindowStartupLocation="CenterScreen">
-
-    <Grid>             
-       <syncfusion:DateTimeEdit skinManager:SfSkinManager.VisualStyle="Blend" x:Name="datetimeedit" Width="200" Height="25" />
-   </Grid>
-
-</Window>                        
+<syncfusion:DateTimeEdit FocusedBorderBrush="Red"
+                         Name="dateTimeEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-using Syncfusion.SfSkinManager;
-
-SfSkinManager.SetVisualStyle(datetimeedit, VisualStyles.Blend);
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.FocusedBorderBrush = Brushes.Red;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-* Now run the application, you can see blend theme applied for DateTimeEdit.
+![DateTimeEdit with Red focused border](appearance-images/FocusedBorderBrush.png)
 
-![WPF DateTimeEdit blend visual style of SfSkinManager](appearance-images/wpf-datetimeedit-sfskinmanager-theme.png)
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
 
-### Custom Theme using Theme Studio
+## Change flow direction
 
-DateTimeEdit themes can be customized using theme studio. Refer the documentation [link](https://help.syncfusion.com/wpf/themes/theme-studio) for more information.
-
-## Flow direction 
-
-The `DateTimeEdit` control elements can be aligned in right-to-left direction by using `FlowDirection` property. The default value is `LeftToRight`.  
+You can change the flow direction of the `DateTimeEdit` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" FlowDirection="RightToLeft" Width="200" Height="25" />          
+<syncfusion:DateTimeEdit FlowDirection="RightToLeft"
+                         Name="dateTimeEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
 dateTimeEdit.FlowDirection = FlowDirection.RightToLeft;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![WPF DateTimeEdit aligned in right-to-left direction](appearance-images/wpf-datetimeedit-flow-direction.png)
+![DateTimeEdit with RightToLeft flow direction](appearance-images/FlowDirection_RightToLeft.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Appearance) in GitHub
+
+## Theme
+
+You can customize the appearance of the `DateTimeEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `DateTimeEdit` control.
+
+* Blend
+* Default
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+Here, the `Blend` style is applied to the `DateTimeEdit`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DateTimeEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                         Name="dateTimeEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+SfSkinManager.SetVisualStyle(dateTimeEdit, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![DateTimeEdit with Blend visual style](appearance-images/BlendTheme.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Themes) in GitHub
+
+### Custom Theme using Theme Studio
+
+DateTimeEdit themes can be customized using theme studio. Refer the [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio) documentation  for more information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,9 +15,36 @@ This section explains how to change the time value and time formats in the WPF [
 
 ## Date, hour and minute field navigation
 
-If you want to manually change the day, hour or minute values, before that you navigate to the respective field by using the mouse or move `Left-Right` keys in the keyboard.
+By default, the focus field will be navigated automatically after the value has been validated to the corresponding field.If you want to manually change the day, hour or minute values, before that you navigate to the respective field by using the mouse or move the `Left-Right` keys in the keyboard.
 
 ![Date, hour and minute field navigation in TimeSpanEdit](Deals-with-TimeSpanEdit_images/Time_field.gif)
+
+## Increase or decrease the time fields with specific interval
+
+If you want to increase or decrease the time span field values with specific interval, use the [StepInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~StepInterval.html) property. Selected time span field  will be increased or decreased based on `StepInterval` field value by pressing the `Up-Down` arrow keys, UpDown button in `TimeSpanEdit` or using mouse wheel. The default value of `StepInterval` property is `{1.01:01:01}`.
+
+For example, if value is `1.1:1:10`, seconds will increase or decrease in `10` seconds interval. other fields will increase or decrease `1` minute, hour, day interval.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TimeSpanEdit StepInterval="1.1:1:10" 
+                         Value="25.08:33:10"
+                         Name="timeSpanEdit" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.StepInterval = new TimeSpan(2, 0, 1, 10);
+timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
+
+{% endhighlight %}
+{% endtabs %}
+
+![TimeSpanEdit seconds value incremented by 10](Deals-with-TimeSpanEdit_images/StepInterval.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Change the time value 
 
@@ -48,7 +75,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time using updown buttons
 
-You can increase or decrease the time by pressing the Up or Down arrow buttons in the `TimeSpanEdit`. If you want to restrict the user to change time by clicking the UpDown buttons, use the [ShowArrowButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ShowArrowButtons.html) property value as `false`. It will hides the Arrow buttons. The default value of `ShowArrowButtons` property is `true`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by pressing the Up or Down arrow buttons in the `TimeSpanEdit`. If you want to restrict the user to change time by clicking the UpDown buttons, use the [ShowArrowButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ShowArrowButtons.html) property value as `false`. It will hides the Arrow buttons. The default value of `ShowArrowButtons` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -73,7 +100,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time on mouse wheel
 
-You can increase or decrease the time by mouse scrolling over the `TimeSpanEdit`. If you want to restrict the user to change time by using mouse scrolling, use the [IncrementOnScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~IncrementOnScrolling.html) property value as `false`. The default value of `IncrementOnScrolling` property is `true`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by mouse scrolling over the `TimeSpanEdit`. If you want to restrict the user to change time by using mouse scrolling, use the [IncrementOnScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~IncrementOnScrolling.html) property value as `false`. The default value of `IncrementOnScrolling` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -98,7 +125,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time on click and drag
 
-You can increase or decrease the time by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. This is effective only on when control is in unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. This is effective only on when control is in unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -123,7 +150,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time using keyboard interaction
 
-You can increase or decrease the time by pressing `Up-Arrow` and `Down-Arrow` keys in keyboard.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by pressing `Up-Arrow` and `Down-Arrow` keys in keyboard.
 
 ![Time span value changed by keyboard interaction](Deals-with-TimeSpanEdit_images/Time_field.gif)
 

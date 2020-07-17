@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Ribbon Items
+title: Dealing with Ribbon Items in WPF Ribbon control | Syncfusion
 description: This topic deal with arranging Ribbon items, changing size of item, adding LaunchButton to RibbonBar
 platform: wpf
 control: Ribbon
@@ -58,7 +58,7 @@ SmallIcon="Images/Orange.png" />
 
 {% endtabs %}
 
-![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img1.jpeg)
+![Arranging Ribbon Items Using Button Panel in WPF ribbon items](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img1.jpeg)
 
 
 ## Adding items to ButtonPanel in code behind
@@ -104,10 +104,10 @@ _buttonPanel.Items.Add(_splitButton)
 
 {% endtabs %}
 
-![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img2.jpeg)
+![Arranging Ribbon Items Using Button Panel in WPF ribbom items](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img2.jpeg)
 
 
-# Changing size of ribbon items
+## Changing size of ribbon items
 
 `SizeForm` is used to set the size of the Ribbon items that are added inside the Ribbon control.
 
@@ -159,9 +159,9 @@ The code to set SizeForm for the above controls is illustrated below
 
 {% endtabs %}
 
-![](ChangingSizeofRibbonitems_images/ChangingSizeofRibbonitems_img1.jpeg)
+![Changing Size of Ribbon Items in WPF ribbon items](ChangingSizeofRibbonitems_images/ChangingSizeofRibbonitems_img1.jpeg)
 
-# Add command to RibbonLauncherButton
+## Add command to RibbonLauncherButton
 
 Ribbon instance now provides command support for RibbonBar LauncherButton. It provides the following options.
 
@@ -201,9 +201,9 @@ Command for RibbonBar LauncherButton can be set by using `LauncherCommand` attac
 
 The font size for the selected text is increased when launcher button is clicked
 
-![](AddingcommandtoRibbonLauncherButton_images/AddingcommandtoRibbonLauncherButton_img1.jpeg)
+![Adding Command to Ribbon Launcher Button in WPF ribbon items](AddingcommandtoRibbonLauncherButton_images/AddingcommandtoRibbonLauncherButton_img1.jpeg)
 
-# Show HelpButton in RibbonWindow
+## Show HelpButton in RibbonWindow
 
 The HelpButton displays the information about the application.To enable this HelpButton in `Office2013` theme, set `ShowHelpButton` as `True` 
 
@@ -221,14 +221,14 @@ Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="
 
 {% endtabs %}
 
-![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img1.jpeg)
+![Show Help Button in Ribbon Window at default position in WPF ribbon items](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img1.jpeg)
 
 
 To set the HelpButton at the right of the RibbonWindow for the themes except Office2013, use `TabPanelItem` property of the Ribbon
 
 The TabPanelItem is located at the right corner below the main window close button in the following screen shot.
 
-![](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img2.jpeg)
+![Show Help Button in Ribbon Window at right side in WPF ribbon items](ShowHelpButtoninRibbonWindow_images/ShowHelpButtoninRibbonWindow_img2.jpeg)
 
 
 This following code snippet explains how to create and configure TabPanelItem.

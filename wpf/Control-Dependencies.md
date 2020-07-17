@@ -1425,6 +1425,7 @@ Syncfusion.SfChart.WPF
 <tr>
 <td> 
 Syncfusion.SfMaps.WPF
+Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.SfMaps.WPF
@@ -1609,7 +1610,7 @@ Syncfusion.SfRichTextRibbon.WPF
 </tr>
 </table>
 
-## SfSchedule
+## SfScheduler
 
 <table>
 <tr>
@@ -1618,13 +1619,15 @@ Syncfusion.SfRichTextRibbon.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfSchedule.WPF <br/>
-Syncfusion.SfRadialMenu.WPF <br/>
+Syncfusion.SfScheduler.WPF <br/>
+Syncfusion.SfInput.WPF<br/>
+Syncfusion.SfSkinManager.WPF<br/>
 Syncfusion.SfShared.WPF <br/>
-Syncfusion.Shared.WPF
+Syncfusion.Shared.WPF<br/>
+Syncfusion.Themes.MaterialLight.WPF
 </td>
 <td> 
-Syncfusion.SfSchedule.WPF
+Syncfusion.SfScheduler.WPF
 </td>
 </tr>
 </table>
@@ -1834,6 +1837,25 @@ Syncfusion.Compression.Base
 </td>
 <td> 
 Syncfusion.DataGridExcelExport.Wpf
+</td>
+</tr>
+</table>
+
+## SfTreeView
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeView.WPF <br/>
+Syncfusion.SfBusyIndicator.WPF <br/>
+Syncfusion.SfGridCommon.WPF
+</td>
+<td> 
+Syncfusion.SfTreeView.WPF
 </td>
 </tr>
 </table>

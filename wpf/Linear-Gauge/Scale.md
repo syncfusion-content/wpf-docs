@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-## Scale 
+# Scale in SfLinearGauge 
 
 The `MainScale` is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 

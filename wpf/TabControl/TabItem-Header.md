@@ -47,7 +47,7 @@ tabControlExt.Items.Add(tabItemExt3);
 
 ## Edit tab item header at runtime
 
-You can edit the text of the tab header at runtime by double clicking the tab header or selected a tab and pressing `F2` or `Ctrl + F2` key. You can restrict this editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EnableLabelEdit.html) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
+You can edit the text of the tab header at runtime by double clicking the tab header or selected a tab and pressing `Ctrl + F2` key. You can restrict all the tab header editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EnableLabelEdit.html) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,11 +70,52 @@ tabControlExt.EnableLabelEdit = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
 
+## Restrict header editing for specific tab item
+
+If you want to restrict header editing for specific tab item, handle the []() and setting the []() property as `true` for that specific tab item.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:TabControlExt BeforeLabelEdit="tabControlExt_BeforeLabelEdit"
+                          EnableLabelEdit="True" 
+                          Name="tabControlExt">       
+    <syncfusion:TabItemExt Header="tabItem1"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight c# %}
+
+tabControlExt.BeforeLabelEdit += tabControlExt_BeforeLabelEdit;
+tabControlExt.EnableLabelEdit = true;
+
+
+{% endhighlight %}
+{% endtabs %}
+
+You can restrict the specific tab item as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void tabControlExt_BeforeLabelEdit(object sender, BeforeLabelEditEventArgs e) {
+    //Retrict header editing for tabItem1
+    if( e.HeaderBeforeEdit.ToString() == "tabItem1" ) {
+        e.Cancel = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items header edit disabled for specific tab item](Tab-Item-Header_images/Header_runtime.png)
+
 ## Custom UI for the edit tab item header
 
 You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
-Please refer [Custom UI for the edit tab item header](https://help.syncfusion.com/wpf/tabcontrol/databinding#custom-ui-for-the-edit-tab-item-header) topic to know more details about `EditHeaderTemplate`.
+Please refer [Editing tab header](https://help.syncfusion.com/wpf/tabcontrol/databinding#editing-tab-header) topic to know more details about `EditHeaderTemplate`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
@@ -241,6 +282,10 @@ tabControlExt.HideHeaderOnSingleChild = true;
 ![TabControl contains single item without tab header](Tab-Item-Header_images/NoTabheader.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
+
+## Customize tab item header
+
+You can change the tab item header background and foreground.
 
 ## Change tab item background
 

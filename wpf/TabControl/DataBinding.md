@@ -194,9 +194,9 @@ You can define the tab item content using `ContentTemplate` property. Otherwise,
 
 ![Added content to tabitem in WPF TabControl](Databinding_images/wpf-tabcontrol-binding_content.png)
 
-## Custom UI for the edit tab item header
+##  Editing tab header
 
-You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
+By default, built-in `TextBox` is used as editor for the tab item header editing. You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
 {% tabs %}
 {% highlight XAML %}

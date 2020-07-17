@@ -7,191 +7,174 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Restricting date value
+# Restrict date time value in WPF DateTimePicker (DateTimeEdit)
 
-This section explains how to change the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) value of DateTimeEdit control. And also to select a date and time in a particular range by specifying [minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) dates in DateTimeEdit control.
+This section explains how to select a date and time in a particular range by specifying minimum and maximum dates and formatting the datetime in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 
-## Changing date value 
+## Restrict the datetime within minimum and maximum datetime
 
-The DateTimeEdit allows the end-user to change the value using the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property. 
+The selecting datetime in `DateTimeEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) properties
 
-### Binding date value
-
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source)or bidirectional (source <-> target). By assigning a value to the **DateTime** property by binding, you can change the DateTimeEdit value.
-
-The following code snippets illustrate the value binding from one DateTimeEdit to another.
+N> The `MaxDateTime` should be greater than `MinDateTime` of the `DateTimeEdit`. If the `MinDateTime` property is greater than the new `MaxDateTime`, then the `MinDateTime` will be reset to the `MaxDateTime`.
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-    <syncfusion:DateTimeEdit x:Name="dateTimeEdit1" Height="25" Width="200" DateTime="{Binding Path=MyValue,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-    <syncfusion:DateTimeEdit x:Name="dateTimeEdit2" Height="25" Width="200" DateTime="{Binding ElementName=dateTimeEdit1, Path=DateTime,Mode=TwoWay}" Margin="10"/>
-</StackPanel>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-class ViewModel : NotificationObject
-{
-    private DateTime myValue = new DateTime(2010, 7, 15);
-    public DateTime MyValue
-    {
-        get
-        {
-            return myValue;
-        }
-        set
-        {
-            myValue = value;
-            RaisePropertyChanged("MyValue");
-        }
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF DateTimeEdit binding support](Maximum-and-Minimum-Value_images/wpf-datetimeedit-binding.png)
-
-### Value change notification
-
-The [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeChanged_EV.html) event will be invoked when the change is occurred in the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property of the DateTimeEdit. If you need to do any custom actions while value changed, that can be done at the DateTimeChanged event. 
-
-{% tabs %}
-
-{% highlight C# %}
-
-dateTimeEdit.DateTimeChanged += DateTimeEdit_DateTimeChanged;
-
-private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    Console.WriteLine("DateTimeChanged event is fired");     
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> You can also edit value of DateTimeEdit while scrolling the mouse by setting the [EnableMouseWheelEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~EnableMouseWheelEdit.html) property to true.  
-
-## Setting the null value
-
-The `DateTimeEdit` control accepts null values. The [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~NullValue.html) support in the DateTimeEdit control can be enabled by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEmptyDateEnabled.html) property to `true` and [ShowMaskOnNullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~ShowMaskOnNullValue.html) property to `false`. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in the DateTimeEdi control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         ShowMaskOnNullValue="False" NullValue="{x:Null}"
-                         IsEmptyDateEnabled="True" />
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF DateTimeEdit display null value](Watermark-Support_images/wpf-datetimeedit-null-value.png)
-
-## Setting the watermark text
-
-The DateTimeEdit control provides support to display a hint information using watermark text when the selected date is null. In addition, it also provides support to define null DateTime value. You can customize the watermark text using the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property of DateTimeEdit.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         ShowMaskOnNullValue="False" NullValue="{x:Null}"
-                         IsEmptyDateEnabled="True" NoneDateText="Choose a date"/>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF DateTimeEdit watermark support](Watermark-Support_images/wpf-datetimeedit-watermark.png)
-
-## Restricting date value
-
-Prevents users from selecting a date and time in a particular range by specifying [minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) dates in DateTimeEdit control. The Calendar also displays only the dates between the MinDateTime and MaxDateTime.
-
-### Minimum date value
-
-The [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) helps you to restrict the DateTime value which is lesser than the specific DateTime value. If the [DateTime value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) of DateTimeEdit is less than **MinDateTime**, then the DateTime property will be reset to MinDateTime. The **MinDateTime** should be lesser than the [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) of the DateTimeEdit. When the MinDateTime is set, if the new **MinDateTime** value is greater than the **MaxDateTime**, then the MaxDateTime will be reset to the MinDateTime.
-
-### Maximum date value
-
-The [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) helps you to restrict the DateTime value that is set greater than the specific DateTime value. If the [DateTime value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) of DateTimeEdit is greater than **MaxDateTime**, then the DateTime property will be reset to MaxDateTime. The **MaxDateTime** should be greater than [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) of the DateTimeEdit. When the MaxDateTime is set, if the **MinDateTime** property is greater than the new **MaxDateTime**, then the MinDateTime will be reset to the MaxDateTime.
-
-{% tabs %}
-
 {% highlight xaml %}
 
 <!--Setting date range -->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         DateTime="07/05/2010" MinDateTime="07/01/2010" 
-                         MaxDateTime="07/28/2010"/>
+<syncfusion:DateTimeEdit MinDateTime="06/1/2020" 
+                         MaxDateTime="06/10/2020"
+                         Name="dateTimeEdit"/>
+
 
 {% endhighlight  %}
-
 {% highlight c# %}
 
-dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);
-dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 28);
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.MinDateTime = new DateTime(2020, 06, 01);
+dateTimeEdit.MaxDateTime = new DateTime(2020, 06, 10);
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 ![Setting minimum and maximum value in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/wpf-datetimeedit-minimum-and-maximum.png)
 
-### Minimum Maximum value change notification
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
-The DateTimeEdit notifies that the minimum and maximum value is changed through the [MinDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTimeChanged_EV.html) and [MaxDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTimeChanged_EV.html) event. You can use the **OldValue** and **NewValue** properties to get the old and new minimum / maximum date time value.
+### Minimum and maximum value change notification
+
+The `DateTimeEdit` notifies that the minimum and maximum value is changed through the [MinDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTimeChanged_EV.html) and [MaxDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTimeChanged_EV.html) event. You can use the `OldValue` and `NewValue` properties to get the old and new minimum / maximum date time value.
 
 {% tabs %}
-
 {% highlight C# %}
 
+<syncfusion:DateTimeEdit MinDateTimeChanged="DateTimeEdit_MinDateTimeChanged" 
+                         MaxDateTimeChanged="DateTimeEdit_MaxDateTimeChanged"
+                         Name="dateTimeEdit"/>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+DateTimeEdit dateTimeEdit = new  DateTimeEdit();
 dateTimeEdit.MinDateTimeChanged += DateTimeEdit_MinDateTimeChanged;
 dateTimeEdit.MaxDateTimeChanged += DateTimeEdit_MaxDateTimeChanged;
 
-private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    Console.WriteLine("MinDateTimeChanged event is fired"); 
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new minimum date values
+    var oldMinDate = e.OldValue;
+    var newMinDate = e.NewValue;
 }
 
-private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    Console.WriteLine("MinDateTimeChanged event is fired"); 
+private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new maximum date values
+    var oldMaxDate = e.OldValue;
+    var newMaxDate = e.NewValue;
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
-## ReadOnly 
+## Restrict date selection
 
-The DateTimeEdit cannot allow the user input, edits when **IsReadOnly** property is sets to true. However, value can be changed programmatically in readonly mode.
+You can restrict the user to select the date from the popup calendar by setting the [DisableDateSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DisableDateSelection.html) property value as `true`. You can select only month and year from the popup calendar. The default value of `DisableDateSelection` property is `false`.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit1" Height="25" Width="200" 
-                         DateTime="7/15/2010" IsReadOnly="True"/>
+<syncfusion:DateTimeEdit DisableDateSelection="true" 
+                         Pattern="CustomPattern" 
+                         CustomPattern="MM-yyyy"
+                         Name="dateTimeEdit"/>
+
 
 {% endhighlight  %}
-
 {% highlight c# %}
 
-dateTimeEdit.IsReadOnly = true;
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.DisableDateSelection = true;
+dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
+dateTimeEdit.CustomPattern = "MM-yyyy";
 
 {% endhighlight  %}
-
 {% endtabs %}
 
-![WPF DateTimeEdit read only mode](Maximum-and-Minimum-Value_images/wpf-datetimeedit-read-only-mode.png)
+![DateTimeEdit restrict date selection](Maximum-and-Minimum-Value_images/Restrict_date_selection.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
+
+## Block particular dates 
+
+You can restrict the user to select the date within some range by blocking the particular date in the `DateTimeEdit`. If you try to set the blackout dates as the selected datetime through editing or when pressing down arrow, it will reset the previous valid date from `StartDate` of blackout dates in `DateTimeEdit`. If you try to set the blackout dates as the selected datetime  by pressing down arrow, it will reset the next valid date from `EndDate` of blackout dates in `DateTimeEdit`.
+
+N> If you try to set the `DateTime` value which contained in blackout dates collection or  try to add the selected `DateTime` value in blackout dates collection, its throws the `Specified argument was out of the range of valid values`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DateTimeEdit Loaded="DateTimeEdit_Loaded" 
+                         Name="dateTimeEdit"/>
+{% endhighlight  %}
+{% highlight xaml %}
+
+DateTimeEdit dateTimeEdit = new  DateTimeEdit();
+dateTimeEdit.Loaded += DateTimeEdit_Loaded; 
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the blockout days
+private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e) {
+    //Setting start and end range for blocking dates
+    DateTime StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+    DateTime EndDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 2);
+    Syncfusion.Windows.Controls.CalendarDateRange blackOutDays = new Syncfusion.Windows.Controls.CalendarDateRange() 
+    {
+        Start = StartDate, 
+        End = EndDate
+    };
+    Syncfusion.Windows.Controls.Calendar calendar = dateTimeEdit.DateTimeCalender as Syncfusion.Windows.Controls.Calendar;
+    calendar.BlackoutDates.Add(blackOutDays);
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Block particular dates in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/BlackOutDays.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/BlackOutdates) in GitHub
+
+## ReadOnly support
+
+If you want to restrict the inputs from the user, use the `IsReadOnly` property value as `true`. However, value can be changed programmatically in readonly mode and the user can still select text. The default value of `IsReadOnly` property is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DateTimeEdit IsReadOnly="True" 
+                         DateTime="06/20/2020" 
+                         Name="dateTimeEdit" />
+
+{% endhighlight  %}
+{% highlight c# %}
+
+DateTimeEdit dateTimeEdit = new  DateTimeEdit();
+dateTimeEdit.IsReadOnly = true;
+dateTimeEdit.DateTime = new DateTime(2020, 06, 20);
+
+{% endhighlight  %}
+{% endtabs %}
+
+![DateTimeEdit in read only mode](Maximum-and-Minimum-Value_images/wpf-datetimeedit-read-only-mode.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub

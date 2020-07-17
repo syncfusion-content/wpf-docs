@@ -1,92 +1,159 @@
 ---
 layout: post
-title: Appearance | SfMaskedEdit | Wpf | Syncfusion
-description: Appearance of SfMaskedEdit
+title: Appearance of the WPF SfMaskedEdit control | Syncfusion
+description: Learn about UI customization, theme support in Syncfusion WPF SfMaskedEdit control and more details about the control features.
 platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
-# Appearance
 
-Appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` properties.
+# Appearance in WPF SfMaskedEdit
 
-## Border
+This section explains different UI customization and theming options available in [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
 
-### BorderBrush
+## Setting the background
 
-Customize the `BorderBrush` property that provides border color for the `SfMaskedEdit`.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfMaskedEdit Width="255" Height="46" BorderBrush="Blue"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.BorderBrush = Brushes.Blue;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Appearence_Images/Appearence_Img1.jpg)
-
-
-### ErrorBorderBrush
-
-Customize the `ErrorBorderBrush` property that provides border color for the `SfMaskedEdit` when validation becomes failed.
+You can change the default background color and selection color of `SfMaskedEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
 
 {% tabs %}
+{% highlight XAML %}
 
-{% highlight xaml %}
-
-<syncfusion:SfMaskedEdit Width="255" Height="46" ErrorBorderBrush="DarkOrange"/>
+<syncfusion:SfMaskedEdit Background="Yellow"
+                         SelectionBrush="Green"
+                         Name="sfMaskedEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.ErrorBorderBrush = Brushes.DarkOrange;
+SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+sfMaskedEdit.Background = Brushes.Yellow;
+sfMaskedEdit.SelectionBrush = Brushes.Green;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![](Appearence_Images/Appearence_Img2.jpg)
+![SfMaskedEdit with yellow background](Appearence_Images/Background.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
-## ShowPromptOnFocus
+## Setting the foreground
 
-If the `ShowPromptOnFocus` property is set to true, the prompt characters will be ignored when control lost its focus. The prompt characters will be restored again when focusing the control.
+You can change the foreground color by using the `Foreground` property and can change the caret color by using the `CaretBrush` property. The default value of `Foreground` property is `Black` and `CaretBrush` property is `null`.
 
 {% tabs %}
+{% highlight XAML %}
 
-{% highlight xaml %}
-
-<syncfusion:SfMaskedEdit Width="255" Height="46" MaskType="Simple" Mask="(000) 000-0000" ShowPromptOnFocus="True"/>
+<syncfusion:SfMaskedEdit Foreground="Blue" 
+                         CaretBrush="Red"
+                         Name="sfMaskedEdit"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-SfMaskedEdit maskededit = new SfMaskedEdit();
-maskededit.MaskType = MaskType.Simple;
-maskedEdit.Mask = "(000) 000-0000";
-maskedEdit.ShowPromptOnFocus = true;
+SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+sfMaskedEdit.Foreground = Brushes.Blue;
+sfMaskedEdit.CaretBrush = Brushes.Red;
 
 {% endhighlight %}
-
 {% endtabs %}
 
-Control loses focus
+![SfMaskedEdit with red foreground](Appearence_Images/Foreground.png)
 
-![](Appearence_Images/Appearence_Img4.jpg)
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
-Control gets focus
+## Setting the border color
 
-![](Appearence_Images/Appearence_Img3.jpg)
+You can change the default border color of `SfMaskedEdit` by using the `BorderBrush` property. The default value of `BorderBrush` property is `Lavender`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfMaskedEdit BorderBrush="Blue"
+                         Name="sfMaskedEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+sfMaskedEdit.BorderBrush = Brushes.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfMaskedEdit with yellow background](Appearence_Images/BorderColor.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
+
+## Change flow direction
+
+You can change the flow direction of the `SfMaskedEdit` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfMaskedEdit FlowDirection="RightToLeft"
+                         Name="sfMaskedEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+sfMaskedEdit.FlowDirection = FlowDirection.RightToLeft;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfMaskedEdit with RightToLeft flow direction](Appearence_Images/FlowDirection.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
+
+## Theme
+
+You can customize the appearance of the `SfMaskedEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfMaskedEdit` control.
+
+* Blend
+* Default
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+Here, the `Blend` style is applied to the `SfMaskedEdit`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                         Name="sfMaskedEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
+SfSkinManager.SetVisualStyle(sfMaskedEdit, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfMaskedEdit with Blend visual style](Appearence_Images/Theme.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Themes) in GitHub

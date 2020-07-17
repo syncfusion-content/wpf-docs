@@ -215,7 +215,6 @@ DockingManager1.ExecuteAutoHide(Content1)
 
 ![Setting AutoHidden window programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img6.jpeg)
 
-
 #### Making Window Float and Document programmatically
 
 The docking window can be made to float and document using the [SetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetState.html) method with its DockState value as `Float` and `Document` respectively
@@ -421,6 +420,84 @@ Grid1.Children.Add(dockingmanager)
 
 {% endtabs %}
 
+## Event to notify when a child is added or removed
+
+If you want to know while docking child added or removed from the `DockingManager`, it can be notified by using the [ChildrenCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ChildrenCollectionChanged_EV.html) event. It receives an argument of type `NotifyCollectionChangedEventArgs` containing the following information about the event.
+
+<table>
+<tr>
+<th>Event Data</th>
+<th>Description</th></tr>
+<tr>
+<td>Action</td>
+<td>Gets an action that determines either an item is added to the children collection or item is removed from the children collection.</td>
+</tr>
+<tr>
+<td>NewItems</td>
+<td>Gets the newly added items in the children collection.</td>
+</tr>
+<tr>
+<td>OldItems</td>
+<td>Gets the removal of the items from the children collection.</td>
+</tr>
+<tr>
+<td>NewStartingIndex</td>
+<td>Gets the index location of the newly added items from the children collection.</td>
+</tr>
+<tr>
+<td>OldStartingIndex</td>
+<td>Gets the index location of the recently removed items from the children collection.</td>
+</tr>
+</table>
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager ChildrenCollectionChanged="DockingManager_ChildrenCollectionChanged"  
+                           Name="dockingManager" >
+    <ContentControl syncfusion:DockingManager.Header="Solution Explorer" 
+                    Name="SolutionExplorer" />
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight XAML %}
+
+dockingManager.ChildrenCollectionChanged += DockingManager_ChildrenCollectionChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Add a docking child item in the children collection of DockingManager
+ContentControl contentControl = new ContentControl();
+dockingManager.Children.Add(contentControl)
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void DockingManager_ChildrenCollectionChanged(object sender, NotifyCollectionChangedEventArgs e) {
+    //Occurs when children collection changed   
+    MessgeBox.Show(“Children collection was changed”);
+    if(e.Action== NotifyCollectionChangedAction.Add) {
+        var added_Item = e.NewItems;
+        int addedIndex = e.NewStartingIndex;
+    }
+    else if (e.Action == NotifyCollectionChangedAction.Remove) {
+        var removed_item = e.OldItems;
+        int removedIndex = e.OldStartingIndex;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Restricting Docking in Float Window
 
 The float window allows to dock another float window inside it by default. This behavior can be restricted by set [CanDockOnFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDockonFloat.html) as False for that particular window.
@@ -446,63 +523,6 @@ DockingManager.SetCanDockonFloat(Item1, false);
 {% endhighlight %}
 
 {% endtabs %}
-
-## Restricting Docking by Drag Providers
-
-DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockAbility.html) with the required values.
-
-* Setting DockAbility as Horizontal – Restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DockingManager>
-	
-<ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.DockAbility="Horizontal">
-	
-</ContentControl>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-DockingManager.SetDockAbility(window1, DockAbility.Horizontal);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Setting Dockability as horizontal to the DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img7.jpeg)
-
-* Setting DockAbility as Vertical  – Restrict the children to dock only on Vertical side by providing the Vertical Drag providers
-
-{% tabs %}
-
-{%highlight XAML %}
-
-<syncfusion:DockingManager >
-
-<ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.DockAbility="Vertical">
-
-</ContentControl>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-DockingManager.SetDockAbility(window1, DockAbility.Vertical);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Setting Dockability as vertical to the DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img8.jpeg)
-
 
 ## Customizing a window
 
@@ -1276,12 +1296,12 @@ Context menu options
 </td>
 <td>
 
-![Dock window with default context menu](Dealing-with-Windows_images/Default-menu.jpg)
+<Img alt="Dock window with default context menu" src="Dealing-with-Windows_images/Default-menu.jpg"/>
 
 </td>
 <td>
 
-![Dock window with VS2010 context menu](Dealing-with-Windows_images/VS2010-menu.jpg)
+<Img alt="Dock window with VS2010 context menu" src="Dealing-with-Windows_images/VS2010-menu.jpg"/>
 
 </td>
 </tr>
@@ -1319,12 +1339,12 @@ Context menu option when window is in `Auto-Hide` state
 </td>
 <td>
 
-![Auto-Hide window with default context menu](Dealing-with-Windows_images/AutoHide_Window_Default-Menu.jpg)
+<Img alt="Auto-Hide window with default context menu"  src="Dealing-with-Windows_images/AutoHide_Window_Default-Menu.jpg"/>
 
 </td>
 <td>
 
-![Auto-Hide window with VS2010 context menu](Dealing-with-Windows_images/AutoHide_Window_VS2010-Menu.jpg)
+<Img alt="Auto-Hide window with VS2010 context menu"  src="Dealing-with-Windows_images/AutoHide_Window_VS2010-Menu.jpg"/> 
 
 </td>
 </tr>
@@ -1450,5 +1470,4 @@ The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~S
 {% endtabs %}
 
 ![DockingManager acts as layout control](Dealing-with-Windows_images/dockingManager-as-flatlayout.jpeg)
-
 

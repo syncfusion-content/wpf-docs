@@ -1,115 +1,116 @@
 ---
 layout: post
 title: Getting Started | TileView | wpf | Syncfusion
-description: getting started
+description: This section provides the detailed getting started information of the TileView control in application.
 platform: wpf
 control: TileView Control
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of TileViewControl
 
-This section describes how to design a `TileViewControl` control in a WPF application and overview of its basic functionalities.
+This section describes how to design a [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in a WPF application and overview of its basic functionalities.
 
-## Structure of the TileViewControl
+## Assembly deployment
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tileview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in any application.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+You can find more details about installing the NuGet package in a WPF application in the following link:
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages).
 
-# Creating simple application with TileViewControl
+## Creating sample application with TileViewControl
 
-The TileViewControl control can be added to an application using Visual Studio and Blend.
+The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html)  can be added to an application using Visual Studio and Blend.
 
-You can create the WPF application with TileViewControl control as follows:
+You can create the WPF application with [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-
-Create a WPF project in Visual Studio and refer to the following assemblies.
+3. [Adding control manually via XAML](#adding-control-manually-via-XAML)
+3. [Adding control manually via C#](#adding-control-manually-via-C#)
 
 ## Creating the project
 
-The steps to create a TileViewControl control using Visual Studio in C# are as follows:
-
-1.	Open Visual Studio.
-
-2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
+Below section provides detailed information to create new project in Visual Studio to display [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html).
 
 ## Adding control via designer
 
-TileViewControl control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly **Syncfusion.Shared.WPF** references will be added automatically.
+[TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html)  can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly **Syncfusion.Shared.WPF** references will be added automatically.
 
 ### Through Visual Studio
 
-The following are the steps to create the TileViewControl using Visual Studio.
+The following are the steps to create the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using Visual Studio.
 
-1. Drag TileViewControl from the Toolbox and drop it in the Designer area. It will generate the TileViewControl. 
+1. Drag TileViewControl from the Toolbox and drop it in the Designer area. 
 
-     ![](Getting-Started_images/Getting-Started_img2.png)
+     ![TileViewControl by VS designer](Getting-Started_images/Getting-Started_img2.png)
 
-2. To add items to the TileViewControl using the Collection Editor, select the TileViewControl and look at its properties.
-3. Click the button in the Items property. This will open the Collection Editor.
+2. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select the TileViewControl and click the button in the Items property. This will open the Collection Editor.
 
-     ![](Getting-Started_images/Getting-Started_img3.png)
+     ![Collection Editor of TileViewControl](Getting-Started_images/Getting-Started_img3.png)
 
-4.  Using the Collection Editor, add the GroupBarItems and configure their properties.
+3. Using the Collection Editor, add the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) and configure their properties.
 
 ### Through Expression Blend
 
-The TileViewControl can also be created and configured using Expression Blend. The following are the steps to do so.
+The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) can also be created and configured using Expression Blend. The following are the steps to do so.
 
-1. Create a WPF project in Expression Blend and reference the following assemblies.
-i. Syncfusion.Shared.Wpf
-ii. Syncfusion.Core
-2. Search for TileViewControl in the Toolbox.
+1. Create a WPF project in Expression Blend and refer the following assemblies.
 
-     ![](Getting-Started_images/Getting-Started_img4.png)
+   1. Syncfusion.Shared.Wpf
+   
+2. Drag TileViewControl from the Toolbox and drop it in the Designer area. 
 
-3. Drag the TileViewControl to the designer. This will generate the control as follows.
+     ![TileViewControl by Blend Designer](Getting-Started_images/Getting-Started_img5.png)
 
-     ![](Getting-Started_images/Getting-Started_img5.png)
+3. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select TileViewControl and go to Properties and click Items (Collection) under Common Properties.
 
-4. To add items to the TileViewControl using the Collection Editor, select TileViewControl and go to Properties.
-5. Click Items (Collection) under Common Properties.
+     ![CollectionEditor in Blend](Getting-Started_images/Getting-Started_img6.png)
 
-     ![](Getting-Started_images/Getting-Started_img6.png)
+4. Once the Collection Editor window opens, click Add another item button to open Select Object window. 
 
-6. Once the Collection Editor window opens, click Add another item. The Select Object window will open. 
-7. Select TileViewItem by typing _TileViewItem_ in the search box, and then click OK.
+5. Select [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by typing _TileViewItem_ in the search box, and then click OK.
 
-     ![](Getting-Started_images/Getting-Started_img7.png)
+     ![Adding TileViewItem](Getting-Started_images/Getting-Started_img7.png)
 
-8. Configure the TileViewItem using the properties in the Collection Editor.
+6. Configure the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) using the properties in the Collection Editor.
 
-N> You can customize the appearance of the TileViewControl and its Item using the template-editing feature available in the Expression Blend.
+N> You can customize the appearance of the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) and its Item using the template-editing feature available in the Expression Blend.
 
-### Through XAML
+## Adding control manually via XAML
 
-The TileViewControl can also be created through XAML. The following code example illustrates this.
+The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) can be created through XAML codes. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
+<Window
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:WPF_ForDocumentation"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+x:Class="WPF_ForDocumentation.MainWindow"
+mc:Ignorable="d"
+Name="mainWindow"
+Title="MainWindow" Height="450" Width="700" >
+<Grid>
 <syncfusion:TileViewControl Name="tileViewControl1" >
-
      <syncfusion:TileViewItem Header="Item 1" />
-
      <syncfusion:TileViewItem Header="Item 2" />
-
      <syncfusion:TileViewItem Header="Item 3" />
-
      <syncfusion:TileViewItem Header="Item 4" />
-
- </syncfusion:TileViewControl>
-
+</syncfusion:TileViewControl>
+</Grid>
+</Window>
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding control manually in code
+## Adding control manually via C#
 
-To create the TileViewControl through C#, include the following namespace to the directives list.
+To create the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) through C#, include the following namespace to the directives list.
 
 {% tabs %}
 
@@ -127,28 +128,21 @@ Imports Syncfusion.Windows.Shared
 
 {% endtabs %}
 
-Next, create the TileViewControl as follows.
+Create an instance for [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) and add the TileViewItems in it.
 
 {% tabs %}
 
 {% highlight c# %}
 
 TileViewControl tvControl = new TileViewControl();
-
 TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
-
 TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
-
 TileViewItem tvitem3 = new TileViewItem() { Header = "Item 3" };
-
 TileViewItem tvitem4 = new TileViewItem() { Header = "Item 4" };
 
 tvControl.Items.Add(tvitem1);
-
 tvControl.Items.Add(tvitem2);
-
 tvControl.Items.Add(tvitem3);
-
 tvControl.Items.Add(tvitem4);
 
 {% endhighlight %}
@@ -160,6 +154,7 @@ Dim tvitem1 As TileViewItem = New TileViewItem
 Dim tvitem2 As TileViewItem = New TileViewItem
 Dim tvitem3 As TileViewItem = New TileViewItem
 Dim tvitem4 As TileViewItem = New TileViewItem
+
 tvControl.Items.Add(tvitem1)
 tvControl.Items.Add(tvitem2)
 tvControl.Items.Add(tvitem3)
@@ -169,93 +164,74 @@ tvControl.Items.Add(tvitem4)
 
 {% endtabs %}
 
-This will generate the following TileViewControl.
+N> To learn how to data bind the TileViewControl using ItemSource [click here](https://help.syncfusion.com/wpf/tile-view/data-binding).  
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![TileViewControl added by codebehind](Getting-Started_images/Getting-Started_img8.png)
 
+## Selection
 
-### Adding IsSelected to an Application 
-
-`IsSelected` can be added to an application by using either XAML or C# code.
-
-The following code example illustrates how to add the `IsSelected` to an application.
-
+You can set the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) to be selected or check whether required TileViewItem is selected in [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using [IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800">
-
-      <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
-
-      <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
-
-      <syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" />
-
-      <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" 
-
-                               IsSelected="True" /> 
-
+     <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
+     <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" IsSelected="True" /> 
 </syncfusion:TileViewControl>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-TileViewControl Tile = new TileViewControl();
+TileViewControl tvControl = new TileViewControl();
+TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
+TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
 
-TileViewItem item1 = new TileViewItem();
-
-item1.IsSelected = true;
+tvControl.Items.Add(tvitem1);
+tvControl.Items.Add(tvitem2);
+tvitem1.IsSelected = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim Tile As TileViewControl = New TileViewControl
-Dim item1 As TileViewItem = New TileViewItem
-item1.IsSelected = true
+Dim tvControl As TileViewControl = New TileViewControl
+Dim tvitem1 As TileViewItem = New TileViewItem
+Dim tvitem2 As TileViewItem = New TileViewItem
+
+tvControl.Items.Add(tvitem1)
+tvControl.Items.Add(tvitem2)
+
+tvitem1.IsSelected = true
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Click Header to Maximize
+## Maximize TileViewItem 
 
-The TileViewItem moves to maximized state from Normal or minimized state when you click on the header of the TileViewItem. You can enable or disable this feature by using the `ClickHeaderToMaximized` property in the TileViewControl. If you click on the header of the TileViewItem in maximized state, then no action will take place, the TileViewItem’s state will remain same.
-
-## Adding Click Header to Maximize to an Application
-
-Click Header to Maximize can be added to an application by using either XAML or C# code.
-
-The following code example illustrates how to add the Click Header to Maximize to an application.
+In [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) you can maximize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by clicking on its header after enabling the [ClickHeaderToMaximize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-<syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" 
-
-      ClickHeaderToMaximize ="True" >
-
-      <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
-
-      <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
-
-      <syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" />
-
-      <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" /> 
-
+<syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" ClickHeaderToMaximize ="True" >
+     <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
+     <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
 </syncfusion:TileViewControl>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-      TileViewControl Tile = new TileViewControl();
+TileViewControl tvControl = new TileViewControl();
+TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
+TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
 
-      Tile.ClickHeaderToMaximize = true;      
+tvControl.Items.Add(tvitem1);
+tvControl.Items.Add(tvitem2);
+tvControl.ClickHeaderToMaximize = true;      
 
 {% endhighlight %}
 

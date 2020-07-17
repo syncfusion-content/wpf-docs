@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-## Row drag and drop in WPF DataGrid (SfDataGrid)
+# Row drag and drop in WPF DataGrid (SfDataGrid)
 
 DataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) property as `true`. It is also possible to drag and drop the rows between datagrid and other controls such as `ListView` and `SfTreeGrid`. SfDataGrid allows dropping rows when `AllowDrop` is `true` and allows dragging when `AllowDraggingRows` is `true`.
 
@@ -145,6 +145,27 @@ private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArg
 
 {% endhighlight %}
 {% endtabs %}
+
+## Changing the row drop indicator
+
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the [sfDataGrid.RowDropIndicatorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDropIndicatorMode.html) as `Line`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid Name="dataGrid"
+                       ItemsSource="{Binding OrdersListDetails}"
+                       AllowDrop="True"
+                       AllowDraggingRows="True"
+                       RowDropIndicatorMode="Line" />
+{% endhighlight %}
+{% highlight c# %}
+
+this.dataGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the row drop indicator in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img32.png)
 
 ## Customizing row drag and drop operation
 

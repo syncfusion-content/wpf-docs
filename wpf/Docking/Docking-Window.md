@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Docking Window
+# Docking Window in WPF DockingManager
 
 Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
 
@@ -121,6 +121,7 @@ DockingManager.SetSideInDockedMode(dockWindow5, DockSide.Tabbed);
 
 ![Docking window in various targets](DockingWindow_images/DockingWindow_img3.jpeg)
 
+N> View [Sample](https://github.com/SyncfusionExamples/how-to-arrange-children-of-docking-containers-like-a-grid-with-3-column-two-row-and-cell-merging/tree/master/DockingManagerTest_C%23) in GitHub
 
 ## Maximize/Minimize Support
 

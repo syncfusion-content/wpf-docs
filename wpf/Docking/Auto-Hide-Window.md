@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Auto Hide Window
+# Auto Hide Window in WPF DockingManager
 
 AutoHide window is one of the state in the DockingManager. To enable Auto hidden for DockingManager's children, set its `State` value as `AutoHidden`.
 
@@ -562,6 +562,57 @@ SyncDockingManager.IsAnimationEnabledOnMouseOver = false;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Allow or restrict dragging the AutoHide Window
+
+You can allow dragging of the auto hide window in the `DockingManager` by using the [CanDragAutoHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDragAutoHidden.html) property value as `true`. You can restrict it by setting the `CanDragAutoHidden` property value as `false`. The default value of `CanDragAutoHidden` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager Name="dockingManager">
+
+     <!--Disable dragging--> 
+    <ContentControl Content="First Window"
+                    syncfusion:DockingManager.Header="Item1" 
+                    syncfusion:DockingManager.State="AutoHidden" 
+                    syncfusion:DockingManager.CanDragAutoHidden="False" 
+                    Name="AutoHideWindow1" />
+
+     <!--Enable dragging-->
+    <ContentControl Content="Second Window"
+                    syncfusion:DockingManager.Header="Item2"            
+                    syncfusion:DockingManager.State="AutoHidden" 
+                    syncfusion:DockingManager.CanDragAutoHidden="True"    
+                    Name="AutoHideWindow2"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Disable dragging
+ContentControl AutoHideWindow1 = new ContentControl() { Content = "First Window" };  
+DockingManager.SetHeader(AutoHideWindow1, "Item1");           
+DockingManager.SetState(AutoHideWindow1, DockState.AutoHidden);
+DockingManager.SetCanDragAutoHidden(AutoHideWindow1, false);
+
+// Enable dragging
+ContentControl AutoHideWindow2 = new ContentControl() { Content = "Second Window" };
+DockingManager.SetHeader(AutoHideWindow2, "Item2");
+DockingManager.SetState(AutoHideWindow2, DockState.AutoHidden);
+DockingManager.SetCanDragAutoHidden(AutoHideWindow2, true);
+
+//Adding content control to the dockingmanager
+DockingManager dockingManager = new DockingManager();
+dockingManager.Children.Add(AutoHideWindow1);
+dockingManager.Children.Add(AutoHideWindow2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Auto hide window dragging restricted](Auto-Hide-Window_images/RestrictDragAutoHideItem.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/AutoHideWindow-Dragging) in GitHub
 
 ## Pinning / UnPinning All Window
 
