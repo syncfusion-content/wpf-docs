@@ -97,7 +97,7 @@ private void SfTreeView_QueryNodeSize(object sender, Syncfusion.UI.Xaml.TreeView
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/How-to-autofit-item-height-based-on-content-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-autofit-item-height-based-on-content-in-wpf-treeview).
 
 ![AutoFit items](ItemHeight_images/ItemHeight_image1.png)
 
