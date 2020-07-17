@@ -7,7 +7,7 @@ control: SkinStorage
 documentation: ug
 ---
 
-# Touch support UI in skinstorage
+# Touch support UI in skin storage
 
 The touch support allows users to interact with some Syncfusion WPF controls with finger gestures on touchscreen devices.
 

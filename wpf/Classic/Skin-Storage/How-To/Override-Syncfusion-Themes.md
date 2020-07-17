@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Override Syncfusion Themes| SkinStorage | Wpf | Syncfusion
-description: All Syncfusion styles can be overridden by a common Naming Convention. A unique key is given to each style, so that you can override the styles using the BasedOn property.
+description: All Syncfusion styles can be overridden by a common Naming Convention. A unique key is given to each and every style, so that you can override the styles using the BasedOn property.
 platform: wpf
 control: SkinStorage
 documentation: ug
