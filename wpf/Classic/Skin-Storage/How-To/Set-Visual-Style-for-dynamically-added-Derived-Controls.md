@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Set Visual Style for dynamically added Derived Controls| SkinManager | Wpf | Syncfusion
+title: Set Visual Style for dynamically added Derived Controls| SkinStorage | Wpf | Syncfusion
 description: set visual style for dynamically added derived controls
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 

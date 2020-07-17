@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Resource ID for Syncfusion Themes| SkinManager | Wpf | Syncfusion
+title: Resource ID for Syncfusion Themes| SkinStorage | Wpf | Syncfusion
 description: resource id for syncfusion themes
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 

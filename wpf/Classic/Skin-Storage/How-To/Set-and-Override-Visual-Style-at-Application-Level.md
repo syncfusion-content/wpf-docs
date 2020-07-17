@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Set and Override Visual Style at Application Level| SkinManager | Wpf | Syncfusion
+title: Set and Override Visual Style at Application Level| SkinStorage | Wpf | Syncfusion
 description: set and override visual style at application level
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 

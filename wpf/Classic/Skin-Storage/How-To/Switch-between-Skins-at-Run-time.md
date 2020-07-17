@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Switch between Skins at Run time| SkinManager | Wpf | Syncfusion
+title: Switch between Skins at Run time| SkinStorage | Wpf | Syncfusion
 description: switch between skins at run-time
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 

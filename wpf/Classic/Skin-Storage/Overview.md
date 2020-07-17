@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview of SkinManager| SkinManager | WPF | Syncfusion
+title: Overview of SkinManager| SkinStorage | WPF | Syncfusion
 description: WPF Skin Manager Framework provides a convenient way to give the appealing appearance to the Syncfusion WPF controls at one place.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
