@@ -26,7 +26,7 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/How-to-bring-the-tree-node-into-view-by-scrolling-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bring-the-tree-node-into-view-by-scrolling-in-wpf-treeview).
 
 The `BringIntoView` method comprises of other optional parameters to decide on the way in which the child item should come into view. 
 
