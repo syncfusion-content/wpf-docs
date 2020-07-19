@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Set Visual Style for dynamically added Derived Controls| SkinManager | Wpf | Syncfusion
-description: set visual style for dynamically added derived controls
+title: Set VisualStyle for Derived Controls| SkinStorage | Wpf | Syncfusion
+description: When an user control derived from the existing control is added, a style based on the base class should be defined in the application.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
 # Set Visual Style for dynamically added Derived Controls
 
-Normally, a control added to an application will dynamically pick up the existing style using the Skin Manager. But when an user control derived from the existing control is added to an application, a style based on the Base class should be defined in the application. 
+Normally, a control added to an application will dynamically pick up the existing style using the SkinStorage. But when an user control derived from the existing control is added to an application, a style based on the Base class should be defined in the application. 
 
 The following code snippet explains the scenario where an user control of Button type is exposed here.
 
@@ -59,4 +59,4 @@ Styles based on the button style should be defined in the application as follows
 
 The output is displayed as shown below.
 
-![](Set-Visual-Style-for-dynamically-added-Derived-Controls_images/Set-Visual-Style-for-dynamically-added-Derived-Controls_img1.png)
+![Set visual style dynamically for derived controls](Set-Visual-Style-for-dynamically-added-Derived-Controls_images/Set-Visual-Style-for-dynamically-added-Derived-Controls_img1.png)
