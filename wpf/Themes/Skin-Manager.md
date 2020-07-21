@@ -6,7 +6,7 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# SkinManager
+# SkinManager overview
 
 ## Themes overview
 
@@ -136,7 +136,7 @@ There are several ways to add the Syncfusion `SfSkinManager` in to Visual Studio
 
 ### Add theme assembly reference
 
-`SfSkinManager` supports various built-in themes mentioned above. The corresponding style resources are included with the specific theme assemblies. To add theme assemblies, add the DLL from the build which is currently used. For Example,To apply Material Dark theme, use “Syncfusion.Themes.MaterialDark.Wpf”. Also, refer to the required theme assemblies with the project when needed.
+`SfSkinManager` supports various built-in themes mentioned above. The corresponding style resources are included with the specific theme assemblies. To add theme assemblies, add the assembly from the build which is currently used. For Example,To apply Material Dark theme, use “Syncfusion.Themes.MaterialDark.Wpf”. Also, refer to the required theme assemblies with the project when needed.
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
