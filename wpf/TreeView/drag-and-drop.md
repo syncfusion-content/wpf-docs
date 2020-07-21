@@ -26,13 +26,13 @@ sfTreeView.AllowDragging = true;
 
 While dropping, the dragged items can be added above or below to the target item based on drag indicator position.
 
-![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image1)
+![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image1.png)
 
 ## Dragging multiple items
 
 SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectionMode.html) as `Multiple` or `Extended`. 
 
-![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image2)
+![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image2.png)
 ## Drag and drop events
 
 SfTreeView triggers the following events when drag and drop:
@@ -229,7 +229,7 @@ To customize the draggable popup, use the [DragPreviewTemplate](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image3)
+![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image3.png)
 
 ## Drag and drop between two TreeView's
 
@@ -315,6 +315,6 @@ AssociatedObject.sfTreeView2.ItemDropped += SfTreeView1_ItemDropped;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image4)
+![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image4.png)
 
 N> View sample in [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/TreeView/DragAndDrop)
