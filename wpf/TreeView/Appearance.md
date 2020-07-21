@@ -213,8 +213,7 @@ class ItemTemplateSelector : DataTemplateSelector
 
 ![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images2.png)
 
-You can also download the entire source code of this demo from [here](
-https://github.com/SyncfusionExamples/How-to-customize-tree-nodes-using-data-template-selector-in-wpf-treeview)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-tree-nodes-using-data-template-selector-in-wpf-treeview)
 
 ## Indentation
 
@@ -320,8 +319,7 @@ public class FontAttributeConverter : IValueConverter
 
 ![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images3.png)
 
-You can also download the entire source code of this demo from [here](
-https://github.com/SyncfusionExamples/How-to-customize-the-style-of-tree-nodes-based-on-its-level-using-converter-in-wpf-treeview)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-style-of-tree-nodes-based-on-its-level-using-converter-in-wpf-treeview)
 
 ## Animation
 

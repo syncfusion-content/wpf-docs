@@ -13,7 +13,7 @@ documentation: ug
 
 ## Interacting with TreeView items
 
-### Item Tapped event
+### ItemTapped event
 
 The [ItemTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTapped_EV.html) event will be triggered whenever tapping the item.  [ItemTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.ItemTappedEventArgs.html) has the following members which provides the information for `ItemTapped` event:
 

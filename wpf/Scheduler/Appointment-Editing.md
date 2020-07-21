@@ -159,8 +159,13 @@ Scheduler has support to resize the selected appointment. This support is availa
 Scheduler supports to disable the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `Resize`. In this case, you will not be able to perform appointment resizing.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        AppointmentEditFlag="Add,DragDrop,Edit">
+ </syncfusion:SfScheduler>
+{% endhighlight %}
 {% highlight c# %}
- this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit | AppointmentEditFlag.None;
+ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit;
 {% endhighlight %}
 {% endtabs %}
 
