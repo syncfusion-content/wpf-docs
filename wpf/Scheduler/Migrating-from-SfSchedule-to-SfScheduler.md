@@ -9,7 +9,7 @@ documentation: ug
 
 # Migrating from SfSchedule to SfScheduler
 
-SfScheduler is a new Scheduler control introduced in 18.1 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
+SfScheduler is a new Scheduler control introduced in 18.2.0.45 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
 
 ## Adding Reference
 
@@ -41,7 +41,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Scheduler;assembly=Syncfusion
 
 ## Initialization
 
-Both SfSchedule and SfScheduler almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
+Both [SfSchedule](https://help.syncfusion.com/wpf/schedule/overview) and [SfScheduler](https://help.syncfusion.com/wpf/scheduler/overview) almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
 
 ## Major improvements of SfScheduler
 
@@ -80,16 +80,20 @@ Description</th></tr>
 <td>ItemsSource</td>
 <td>Gets or sets a items source to the scheduler.</td></tr>
 <tr>
-<td>AppointmentMapping</td>
-<td>AppointmentMapping</td>
-<td>Gets or sets the mapping to the appointment.</td></tr>
+<td>ScheduleAppointment</td>
+<td>ScheduleAppointment</td>
+<td>Gets or sets the appointments data in schedule control.</td></tr>
 <tr>
 <td>AppointmentMapping</td>
 <td>AppointmentMapping</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
+<tr>
+<td>Resource</td>
+<td>-</td>
+<td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
-The following table compares the `ScheduleAppointment` APIs,
+The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
 
 <table>
 <tr>
@@ -167,7 +171,7 @@ Description</th></tr>
 <td>Gets the type of appointment.</td></tr>
 </table>
 
-The following table compares the `AppointmentMapping` APIs,
+The following table compares the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) APIs,
 
 <table>
 <tr>

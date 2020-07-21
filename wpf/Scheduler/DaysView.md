@@ -203,6 +203,9 @@ The `SpecialTimeRegion` background color can be customized by using the `Backgro
     </DataTemplate>
 </Window.Resources>
 {% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>
@@ -290,7 +293,7 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endtabs %}
 ![Time text formatting in WPF Scheduler](DaysView_Images/adding-Timetextformatting.png)
 
-## ViewHeader
+## View header
 You can customize the default appearance of view header in day, week, work week views by setting `ViewHeaderDateFormat`, `ViewHeaderHeight``ViewHeaderDayFormat`and  `ViewHeaderTemplate` of `DaysViewSettings`.
 
 ### View header text formatting
@@ -331,7 +334,7 @@ Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endtabs %}
 ![View header height in WPF Scheduler](DaysView_Images/adding-Viewheaderheight.png)
 
-### ViewHeader appearance customization
+### View header appearance customization
 You can customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}

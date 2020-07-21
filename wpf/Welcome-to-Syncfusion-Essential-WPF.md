@@ -265,7 +265,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/treeview/getting-started">TreeView</a>
-<small> - TreeViewAdv</small></p>
+<small> - SfTreeView</small></p>
 </td>
 </tr>
 
@@ -514,7 +514,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/scheduler/getting-started">Scheduler</a>
-<small> - SfSchedule</small></p>
+<small> - SfScheduler</small></p>
 </td>
 </tr>
 
@@ -636,6 +636,10 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <tr>
 <td>
 <a href="https://help.syncfusion.com/wpf/classic/richtextboxadv/getting-started">RichTextBoxAdv</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/treeview/getting-started">TreeViewAdv</a>
 <sup>classic</sup>
 </td>
 <td/>

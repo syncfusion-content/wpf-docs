@@ -1,169 +1,467 @@
 ---
 layout: post
-title: Getting Started | CalendarEdit | WPF | Syncfusion
-description: This section describes how to add calendar control into wpf application and explore its basic features.
+title: Getting Started with WPF CalendarEdit | Syncfusion
+description: Learn here about getting started with Syncfusion WPF CalendarEdit and its basic features and structure.
 platform: WPF
 control: CalendarEdit
 documentation: ug
 ---
 
-# Getting Started with Syncfusion CalendarEdit control for WPF
+# Getting Started with WPF CalendarEdit
+
+This section explains how to create a WPF [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) and explains about its structure.
+
+## Structure of CalendarEdit
+
+The various elements of `CalendarEdit` are illustrated in the following screenshot.
+
+![Structure of WPF CalendarEdit with Calendar](Getting-Started_images/wpf-CalendarEdit-with-calendar.png)
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#calendaredit) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#calendaredit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet packages in a WPF application in the following link: 
+Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+## Adding WPF CalendarEdit via designer
 
-## Creating a simple application with CalendarEdit
+1) The `CalendarEdit` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-You can create a WPF application with CalendarEdit control using the following steps:
-
-1.	[Create a project.](#creating-the-project)
-2.	[Add control via designer.](#adding-control-via-designer)
-3.	[Add control manually in XAML.](#adding-control-manually-in-xaml)
-4.	[Add control manually in C#.](#adding-control-manually-in-c)
-5.	[Select date.](#selecting-a-date)
-6.	[Select multiple dates.](#selecting-multiple-dates)
-7.	[Set the minimum and maximum dates.](#setting-the-minimum-and-maximum-dates)
-8.	[Configure to show week number.](#configuring-to-show-week-number)
-
-### Creating the project
-
-Create a new WPF project in Visual Studio to display the CalendarEdit with functionalities.
-
-## Adding control via designer
-
-The CalendarEdit control can be added to an application by dragging it from the toolbox to a designer view. The required assembly references will be added automatically.
+* Syncfusion.Shared.WPF
 
 ![wpf calendar control added by designer](Getting-Started_images/wpf-calendar-control-added-by-designer.png)
- 
-## Adding control manually in XAML
 
-To add the control manually in XAML, follow the given steps:
+2) Set the properties for `CalendarEdit` in design mode using the SmartTag feature.
 
-1.	Add the following required assembly reference to the project: 
-    * Syncfusion.Shared.WPF.
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
-3.	Declare CalendarEdit control in XAML page.
+## Adding WPF CalendarEdit via XAML
+
+To add the `CalendarEdit` manually in XAML, follow these steps:
+
+1) Create a new WPF project in Visual Studio.
+
+2) Add the following required assembly references to the project:
+
+* Syncfusion.Shared.WPF
+
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the CalendarEdit in XAML page.
 
 {% tabs %}
+
 {% highlight XAML %}
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+<Window x:Class="CalendarEdit_sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-        x:Class="CalendarEditSample.MainWindow"
-        Title="CalendarEdit Sample" Height="350" Width="525">
-    <Grid>
-        <!-- CalendarEdit Control -->
-        <syncfusion:CalendarEdit x:Name="calendarEdit"/>
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarEdit_sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Name="grid">
+        <syncfusion:CalendarEdit Name="calendarEdit"
+                                 Height="200"
+                                 Width="200"/>
     </Grid>
 </Window>
+
 {% endhighlight %}
 {% endtabs %}
 
-## Adding control manually in C\#
+## Adding WPF CalendarEdit via C#
 
-To add control manually in C#, follow the given steps:
+To add the `CalendarEdit` manually in C#, follow these steps:
 
-1.	Add the following required assembly reference to the project: 
-    * Syncfusion.Shared.WPF 
-2.	Import CalendarEdit namespace **using Syncfusion.Windows.Shared;**.
-3.	Create a CalendarEdit instance, and add it to the window.
+1) Create a new WPF application via Visual Studio.
+
+2) Add the following required assembly references to the project:
+
+* Syncfusion.Shared.WPF
+
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Shared;
-namespace CalendarEditSample
-{
-    /// 
-    /// Interaction logic for MainWindow.xaml
-    /// 
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            //Creating an instance of CalendarEdit control
-            CalendarEdit calendarEdit = new CalendarEdit();
-            //Adding CalendarEdit as window content
-            this.Content = calendarEdit;
-        }
-    }
-}
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf calendar control added by code](Getting-Started_images/wpf-calendar-control-added-manually.png)
+4) Create an instance of `CalendarEdit`, and add it to the window.
 
-## Selecting a date
+{% tabs %}
+{% highlight C# %}
 
-You can select a date in the CalendarEdit control by enabling the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowSelection.html) property. 
+// Creating an instance of the CalendarEdit
+CalendarEdit calendarEdit = new CalendarEdit();
+
+// Setting height and width to CalendarEdit
+calendarEdit.Height = 200;
+calendarEdit.Width = 200;
+
+{% endhighlight %}
+{% endtabs %}
+
+![wpf calendar control added by code-behind](Getting-Started_images/Codebehind_CalendarEdit.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Getting-Started)
+
+## Select a date
+
+You can select a date in the `CalendarEdit` control by mouse click on the specific date. You can get the selected date by using the `Date` property.
 
 {% tabs %}
 {% highlight XAML %}
+
 <!-- Selecting date -->
-<syncfusion:CalendarEdit Name="calendarEdit" syncfusion:SkinStorage.VisualStyle="Metro" AllowSelection="True"/>
+<syncfusion:CalendarEdit Name="calendarEdit" />
+
 {% endhighlight %}
 {% highlight C# %}
-//Selecting date at run time
-calendarEdit.AllowSelection = true;
+
+CalendarEdit calendarEdit = new CalendarEdit();
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf calendar control date selection](Getting-Started_images/wpf-calendar-control-date-selection.png)
+![Date selected from the CalendarEdit](Getting-Started_images/wpf-calendar-control-date-selection.png)
 
-## Selecting multiple dates
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-The CalendarEdit control allows you select multiple dates by setting the [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property to true.
+### Select a date programmatically
+
+You can set selected date programmatically by setting the date value to the [Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~Date.html) property.
 
 {% tabs %}
 {% highlight XAML %}
-<!-- Selecting multiple dates-->
-<syncfusion:CalendarEdit Name="calendarEdit" syncfusion:SkinStorage.VisualStyle="Metro" Width="250" Height="250" AllowMultiplySelection="True"/>
+
+<!-- Selecting date programmatically -->
+<syncfusion:CalendarEdit Date="25/08/2020"
+                         Name="calendarEdit"/>
 {% endhighlight %}
 {% highlight C# %}
+
+//Selecting date programmatically
+calendarEdit.Date = new DateTime(2020, 08, 25);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Date selected programmatically from the CalendarEdit](Getting-Started_images/Date_programmatically.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Select multiple dates
+
+If you want to select the multiple dates from the `CalendarEdit`, use the [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property value as `true`. You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDates.html) property.You can restrict the multiple selection by setting  value of `AllowMultiplySelection` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting multiple dates-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         AllowMultiplySelection="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
 //Selecting multiple dates
 calendarEdit.AllowMultiplySelection = true;
+
 {% endhighlight %}
 {% endtabs %}
 
 ![wpf calendar control multiple date selection](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
 
-## Setting the minimum and maximum dates
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-You can set the minimum and maximum dates to the CalendarEdit control using the [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MaxDate.html) properties.
+### Select a multiple dates programmatically
+
+You can select a multiple dates programmatically by setting the dates to the [SelectedDatesList](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDatesList.html) property.
 
 {% tabs %}
 {% highlight XAML %}
-<!--Setting minimum and maximum dates-->
-<syncfusion:CalendarEdit Name="calendarEdit" syncfusion:SkinStorage.VisualStyle="Metro" Width="250" Height="250" MinDate="12/5/2018" MaxDate="12/28/2018"/>
+
+<!-- Selecting date -->
+<syncfusion:CalendarEdit Date="25/08/2020" 
+                         AllowMultiplySelection="True"
+                         Name="calendarEdit"/>
 {% endhighlight %}
 {% highlight C# %}
-//Setting minimum date value
-calendarEdit.MinDate = new DateTime(2018, 12, 05);
-//Setting maximum date value
-calendarEdit.MaxDate = new DateTime(2018, 12, 28);
+
+//Selecting multiple date programmatically
+calendarEdit.AllowMultiplySelection = true;
+calendarEdit.SelectedDatesList = new List<Date>();
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 01));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 02));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 03));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 04));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 05));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 06));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 07));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 08));
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf calendar control date range](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
 
-## Configuring to show week number
+## Restrict date selection range
 
-You can show the week numbers near the left margin by enabling the [ShowWeekNumbers](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowWeekNumbers.html) property.
+You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MaxDate.html) in `CalendarEdit` control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Setting date range -->
+<syncfusion:CalendarEdit MinDate="05/1/2020" 
+                         MaxDate="05/10/2020"
+                         Name="calendarEdit"/>
+
+{% endhighlight  %}
+{% highlight c# %}
+
+CalendarEdit calendarEdit = new CalendarEdit();
+calendarEdit.MinDate = new DateTime(2020, 05, 01);
+calendarEdit.MaxDate = new DateTime(2020, 05, 10);
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Setting minimum and maximum value in WPF CalendarEdit](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
+
+## Block particular dates 
+
+If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection. You can add more block out date ranges to the `BlackoutDates` collection.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CalendarEdit Name="calendarEdit">
+    <syncfusion:CalendarEdit.BlackoutDates>
+        <syncfusion:BlackoutDatesRange StartDate="07/03/2020"
+                                       EndDate="07/07/2020" />
+        <syncfusion:BlackoutDatesRange StartDate="07/22/2020" 
+                                       EndDate="07/25/2020" />
+    </syncfusion:CalendarEdit.BlackoutDates>
+</syncfusion:CalendarEdit>
+
+{% endhighlight %}
+{% highlight c# %}
+
+calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+    StartDate = new DateTime(2020, 08, 03),
+    EndDate = new DateTime(2020, 08, 07)});
+calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
+    StartDate = new DateTime(2020, 08, 22), 
+    EndDate = new DateTime(2020, 08, 25)});
+
+{% endhighlight %}
+{% endtabs %}
+
+![Block particular dates in WPF CalendarEdit](Getting-Started_images/BlackOutDays.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Blackoutdates)
+
+## Highlight special days
+
+You can differentiate the special day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
 
 {% tabs %}
 {% highlight XAML %}
+
+    <Window.Resources>
+        <DataTemplate x:Key="WorldEnvironmentDay" >
+            <Image Source="Resources\Icon_Environmental day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="EngineersDay" >
+            <Image Source="Resources\Icon_Engineer day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="PollutionPreventionDay" >
+            <Image Source="Resources\Icon_Pollution day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="NationalMathematicsDay" >
+            <Image Source="Resources\Icon_Mathematics day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="Christmas" >
+            <Image Source="Resources\Christmas.png" />
+        </DataTemplate>
+
+        <local:ViewModel x:Key="viewModel">
+            <local:ViewModel.SpecialDates>
+                <syncfusion:SpecialDate Date="06/05/2020" CellTemplate="{StaticResource WorldEnvironmentDay }"/>
+                <syncfusion:SpecialDate Date="09/15/2020" CellTemplate="{StaticResource EngineersDay }"/>
+                <syncfusion:SpecialDate Date="12/02/2020" CellTemplate="{StaticResource PollutionPreventionDay }"/>
+                <syncfusion:SpecialDate Date="12/22/2020" CellTemplate="{StaticResource NationalMathematicsDay }"/>
+                <syncfusion:SpecialDate Date="12/25/2020" CellTemplate="{StaticResource Christmas }"/>
+            </local:ViewModel.SpecialDates>
+        </local:ViewModel>
+    </Window.Resources>
+    
+    <Grid>
+        <syncfusion:CalendarEdit DataContext="{StaticResource viewModel}"                         
+                                 SpecialDates="{Binding SpecialDates}"
+                                 Name="calendarEdit" />
+    </Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom appearance for the special Day cell](Working-with-Calendar_images/SpecialDays.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays)
+
+## Display week numbers
+
+If you want to know the week number of the currently displayed dates, use the [ShowWeekNumbers](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowWeekNumbers.html) property as `true`. The default value of `ShowWeekNumbers` property is `false`.   
+
+{% tabs %}
+{% highlight XAML %}
+
 <!--Showing Week number-->
-<syncfusion:CalendarEdit Name="calendarEdit" ShowWeekNumbers="True"/>
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         ShowWeekNumbers="True"/>
+
 {% endhighlight %}
 {% highlight C# %}
+
 //Shows week numbers
 calendarEdit.ShowWeekNumbers = true;
+
 {% endhighlight %}
 {% endtabs %}
 
 ![wpf calendar control shows week numbers](Getting-Started_images/wpf-calendar-control-week-numbers.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Change default calendar mode
+
+By default, the days are displayed in the `CalendarEdit`.
+You can change the default calendar mode as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
+
+![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         VisualMode="YearsRange"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.VisualMode = CalendarVisualMode.YearsRange;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changed initial display mode as years range](Working-with-Calendar_images/YearVisualMode.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Setting Culture
+
+You can change the culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!--Setting french culture-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         Culture="fr-FR"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Setting french culture
+calendarEdit.Culture = new CultureInfo("fr-FR");
+
+{% endhighlight %}
+{% endtabs %}
+
+![wpf calendar control with french culture](Getting-Started_images/Culture.png)
+
+## Expand month and week day names
+
+You can display expanded month names and week day names by setting the [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) and [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) properties as `false`. The default value of `ShowAbbreviatedDayNames` and `ShowAbbreviatedDayNames` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit ShowAbbreviatedDayNames="False"
+                         ShowAbbreviatedMonthNames="False"
+                         Name="calendarEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CalendarEdit calendarEdit = new CalendarEdit();
+calendarEdit.ShowAbbreviatedDayNames = false;
+calendarEdit.ShowAbbreviatedMonthNames = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit with expanded weekday names](Getting-Started_images/FullDayNames.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Tooltip for particular days
+
+You can set tooltip for particular days in the `CalendarEdit` control by using the [SetToolTip(Date,ToolTip)](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SetToolTip(Date,ToolTip).html) method. You can pass the specific date and tooltip to the `SetToolTip(Date,ToolTip)` method.
+
+{% tabs %}
+{% highlight C# %}
+
+Date yesterday = new Date(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day-1);
+Date today = new Date(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+CalendarEdit calendarEdit = new CalendarEdit();
+
+//Setting tooltip for yesterday and today dates
+calendarEdit.SetToolTip(yesterday, new ToolTip() { Content = "Yesterday" });
+calendarEdit.SetToolTip(today, new ToolTip() { Content = "Today" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tooltip for today and yesterday](Working-with-Calendar_images/Tooltip.png)
+
+## Date Changed Notification
+
+The selected date changed in `CalendarEdit` can be examined using [DateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DateChanged_EV.html) event. The `DateChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+ <syncfusion:CalendarEdit DateChanged="CalendarEdit_DateChanged" 
+                          Name="calendarEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CalendarEdit calendarEdit = new CalendarEdit();
+calendarEdit.DateChanged += CalendarEdit_DateChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void CalendarEdit_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new selected date values
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
