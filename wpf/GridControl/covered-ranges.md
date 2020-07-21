@@ -27,7 +27,7 @@ grid.Model.CoveredRanges.Add(new CoveredCellInfo(2, 2, 5, 5));
 
 ### Creating covered cells using QueryCoveredRange event
 
-You can also covered the range of cells by using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~QueryCoveredRange_EV.html) event. This event will be raised for all the cells and set the range of cells by using [Range](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridQueryCoveredRangeEventArgs~Range.html) property.
+You can also covered the range of cells by using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~QueryCoveredRange_EV.html) event. This event will be raised for all the cells and you can set the range of cells by using [Range](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridQueryCoveredRangeEventArgs~Range.html) property.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ private void Grid_QueryCoveredRange(object sender, Syncfusion.Windows.Controls.G
     if(e.CellRowColumnIndex.RowIndex == 2 && e.CellRowColumnIndex.ColumnIndex == 2)
     {
         //Set the range to be covered.
-        e.Range = new CoveredCellInfo(e.CellRowColumnIndex.ColumnIndex, e.CellRowColumnIndex.RowIndex, e.CellRowColumnIndex.ColumnIndex + 3, e.CellRowColumnIndex.RowIndex + 3);
+        e.Range = new CoveredCellInfo(2, 2, 5, 5);
 
         //Handled property has to be enabled to perform this customization.
         e.Handled = true;
