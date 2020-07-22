@@ -86,7 +86,7 @@ You can remove the covered range at run time by using [Clear()](https://help.syn
 
 {% tabs %}
 
-{% highllight C# %}
+{% highlight C# %}
 
 //Removing the covered range from GridControl.
 grid.Model.CoveredRanges.Clear();
