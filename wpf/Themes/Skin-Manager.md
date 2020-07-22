@@ -6,7 +6,7 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# Themes overview
+# Themes getting started with SkinManager
 
 The `SfSkinManager` control helps to apply the built-in themes to the Syncfusion UI controls for WPF. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes can be color customized in the [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio). Refer to the following built in themes and its available assemblies below.
 
