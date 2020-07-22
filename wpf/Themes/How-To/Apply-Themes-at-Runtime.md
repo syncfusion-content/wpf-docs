@@ -9,8 +9,7 @@ documentation: ug
 
 # Apply themes at run time
 
-Applied built-in themes can be changed at the runtime by the `VisualStyle` property. The controls can be used to switch various built-in themes at run time. Here, a ComboBox Control is used to switch various built-in themes that are referred in the assembly references.
-
+The built-in themes can be changed at runtime using the `VisualStyle` property. The controls can be used to switch various built-in themes at run time. For example, a `ComboBox` control is used to switch various built-in themes added as reference to the project.
 
 ![Added references for SkinManager and visual style](Apply-Themes-at-Runtime-images/Apply-Themes-at-Runtime_img1.jpeg)
 
@@ -24,8 +23,21 @@ Applied built-in themes can be changed at the runtime by the `VisualStyle` prope
         <RowDefinition Height="*"></RowDefinition>
     </Grid.RowDefinitions>
     <ComboBox SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBoxItem>MaterialLight</ComboBoxItem>
+        <ComboBoxItem>MaterialDark</ComboBoxItem>
+        <ComboBoxItem>MaterialLightBlue</ComboBoxItem>
+        <ComboBoxItem>MaterialDarkBlue</ComboBoxItem>
+        <ComboBoxItem>Office2019Colorful</ComboBoxItem>
+        <ComboBoxItem>Office2019Black</ComboBoxItem>
         <ComboBoxItem>Metro</ComboBoxItem>
         <ComboBoxItem>Blend</ComboBoxItem>
+        <ComboBoxItem>Lime</ComboBoxItem>
+        <ComboBoxItem>Saffron</ComboBoxItem>
+        <ComboBoxItem>Office2016Colorful</ComboBoxItem>
+        <ComboBoxItem>Office2016White</ComboBoxItem>
+        <ComboBoxItem>Office2016DarkGray</ComboBoxItem>
+        <ComboBoxItem>Office365</ComboBoxItem>
+        <ComboBoxItem>VisualStudio2015</ComboBoxItem>
         <ComboBoxItem>VisualStudio2013</ComboBoxItem>
         <ComboBoxItem>Office2013White</ComboBoxItem>
         <ComboBoxItem>Office2013DarkGray</ComboBoxItem>
