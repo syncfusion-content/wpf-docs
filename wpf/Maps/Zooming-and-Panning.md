@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Zooming and Panning | SfMap | wpf | Syncfusion
-description: zooming and panning
+description: This section describes Zooming and Panning in WPF SfMaps control with ZoomLevel, EnableZoom, MinZoom, MaxZoom.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming and Panning in WPF Maps (SfMap)
 
 The Zooming and Panning feature of the Maps control allows you to zoom in and out and navigate the map.
 
@@ -85,7 +85,7 @@ Maps can be zoomed through the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncf
 
 In addition to the pinching event, the map can be zoomed with mouse events.  When the mouse is scrolled up, the map is zoomed in. When the mouse is scrolled down, the map is zoomed out.
 
-![](Zooming-and-Panning_images/Zooming-and-Panning_img1.png)
+![Maps controls Zooming and Padding](Zooming-and-Panning_images/Zooming-and-Panning_img1.png)
 
 
 
@@ -148,6 +148,6 @@ The map can be panned by dragging the map through mouse interactions. This works
 
 N> The map can be panned only when some parts of the map are outside the view of the control.
 
-![](Zooming-and-Panning_images/Zooming-and-Panning_img2.png)
+![Maps controls Zooming and Panning](Zooming-and-Panning_images/Zooming-and-Panning_img2.png)
 
 

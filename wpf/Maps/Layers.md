@@ -207,7 +207,7 @@ ItemsTemplate is a type of DataTemplate that is used to override the default tem
 
 {% endtabs %}
 
-![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
+![Displaying Items on a Maps](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
 
 ## BaseMapIndex
 

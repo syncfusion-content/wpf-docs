@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | SfMap | wpf | Syncfusion
-description: events
+description: This section describes events usage and description in WPF SfMaps control with API reference redirect link and example code. 
 platform: wpf
 control: SfMap
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Map Selection | SfMap | wpf | Syncfusion
-description: map selection
+description: This section describes how to use Selection support WPF SfMaps control with SelectedShapeColor, SelectedMapShapes properties.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Selection
+# Map Selection in WPF Maps (SfMap)
 
 Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes:
 
@@ -45,10 +45,10 @@ Multiple shapes in the map can be selected when [`EnableMultiSelection`](https:/
 {% endhighlight %}
 
 
-![](Map-Selection_images/Map-Selection_img1.png)
+![Maps control selection](Map-Selection_images/Map-Selection_img1.png)
 
 
 
-![](Map-Selection_images/Map-Selection_img2.png)
+![Maps control selection](Map-Selection_images/Map-Selection_img2.png)
 
 

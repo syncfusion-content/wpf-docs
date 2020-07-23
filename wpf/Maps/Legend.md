@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Legend | SfMap | wpf | Syncfusion
-description: legend
+description: This section describes how to use Legend in WPF SfMaps control with LegendPosition, LegendType, LegendHeader properties.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Legend
+# Legend in WPF Maps (SfMap)
 
 A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is showing you, and can be represented in various colors and shapes based on the data.
 
@@ -151,7 +151,7 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 {% endtabs %}
 
-![](Legend_images/Legend_img1.png)
+![Maps control with legend](Legend_images/Legend_img1.png)
 
 
 {% highlight xaml %}
@@ -184,6 +184,6 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![Maps control legend with Bubble type](Legend_images/Legend_img2.png)
 
 

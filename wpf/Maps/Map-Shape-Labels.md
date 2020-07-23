@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Map Shape Labels | SfMap | wpf | Syncfusion
-description: map shape labels
+description: This section describes WPF SfMaps control ShapeFileLayer labels customization with LabelPath property.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Shape Labels
+# Map Shape Labels in WPF Maps (SfMap)
 
 Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LabelPath.html) of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
-
 
 
 <table>
@@ -62,6 +61,6 @@ The labels can also be customized by modifying the [`ItemsTemplate`](https://hel
 {% endhighlight %}
 
 
-![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
+![Maps control Shape labels](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
 
 

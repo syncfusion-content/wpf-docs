@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Annotations | SfMap | wpf | Syncfusion
-description: annotations
+description: This section describes annotation usages with its customization by using defined properties in WPF SfMaps control.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Annotations
+# Annotations in WPF Maps (SfMap)
 
 Annotations are notes that are used to leave some message on the map. In Maps, annotations are denoted by the MapAnnotations. MapAnnotation has two major parts:
 
@@ -62,7 +62,7 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 
 {% endhighlight %}
 
-![](Annotations_images/Annotations_img1.png)
+![Maps Annotation with Customization](Annotations_images/Annotations_img1.png)
 
 
 
@@ -110,7 +110,7 @@ AnnotationTemplate is a DataTemplate type, used to customize or override the def
 {% endhighlight %}
 
 
-![](Annotations_images/Annotations_img2.png)
+![Maps Annotation with Positioning](Annotations_images/Annotations_img2.png)
 
 
 

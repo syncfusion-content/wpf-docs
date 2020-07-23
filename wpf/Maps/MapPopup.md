@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MapPopup | SfMap | wpf | Syncfusion
-description: mappopup
+description: This section describes WPF SfMaps control MapPopup support usage with customization by using PopupCustomTemplate.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# MapPopup
+# MapPopup in WPF Maps (SfMap)
 
 MapPopup is a hanging window, displayed when the shape is tapped. It shows additional information from the object bounded with the shape. By default, it takes the property of the bounded object that is referred in the ShapeValuePath and displays its content when the corresponding shape is tapped.
 
@@ -134,7 +134,7 @@ It also customizes the MapPopup template. [`PopupCustomTemplate`](https://help.s
 
 {% endtabs %}
 
-![](MapPopup_images/MapPopup_img1.png)
+![Maps control Popup](MapPopup_images/MapPopup_img1.png)
 
 
 

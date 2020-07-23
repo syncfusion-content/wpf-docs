@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shapes Color Customization | SfMap | wpf | Syncfusion
-description: shapes color customization
+description: This section describes WPF SfMaps control Shape Color customization support with ShapeFill, ShapeStroke, ShapeStrokeThickness.
 platform: wpf
 control: SfMap
 documentation: ug
@@ -54,8 +54,7 @@ These setting works only when “AutoFillColor” is set as false.
 
 {% endhighlight %}
 
-![](Shapes-Color-Customization_images/Shapes-Color-Customization_img1.png)
-
+![Maps controls Shapes color customization](Shapes-Color-Customization_images/Shapes-Color-Customization_img1.png)
 
 
 ## Tree map-like support
@@ -180,7 +179,7 @@ AutoFillColor must be set to false to enable the range color mapping.
 N> The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
 
 
-![](Shapes-Color-Customization_images/Shapes-Color-Customization_img2.png)
+![Maps control Shapes color customization](Shapes-Color-Customization_images/Shapes-Color-Customization_img2.png)
 
 
 ## ColorPalette
@@ -212,7 +211,7 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 {% endhighlight %}
 
 
-![](Shapes-Color-Customization_images/Shapes-Color-Customization_img3.png)
+![Maps controls Shape layer with palette](Shapes-Color-Customization_images/Shapes-Color-Customization_img3.png)
 
 
 
@@ -247,7 +246,7 @@ MapColorPalette contains a property named “FillBrush”. This property sets th
 {% endhighlight %}
 
 
-![](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)
+![Maps controls Shapes color with custom palette](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)
 
 
 

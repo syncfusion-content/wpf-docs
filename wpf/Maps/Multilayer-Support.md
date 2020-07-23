@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Multilayer Support
+# Multilayer Support in WPF Maps (SfMap)
 
 Multilayer support allows you to load multiple shapefiles in a single container, enabling maps to display more detail.
 
@@ -254,7 +254,7 @@ SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncf
 
 {%endtabs%}
 
-![](Multilayer-Support_images/Multilayer-Support_img1.png)
+![Maps control multi layer support](Multilayer-Support_images/Multilayer-Support_img1.png)
 
 
 
