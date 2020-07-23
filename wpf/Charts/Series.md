@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series| SfChart | Wpf | Syncfusion
-description: Learn how to create a plotting area properties and customization of chart header, area,multiple areas,serialization, and chart events
+title: Series | SfChart | Wpf | Syncfusion
+description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Series WPF Chart (SfChart)
+# Series in WPF Chart (SfChart)
 
 ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
@@ -3208,134 +3208,6 @@ chart.Series.Add(series3);
 
 ![IsClosed support for stacking area series in WPF Chart](Series_images/stackingarea_closed.png)
 
-
-### Grouping Stacked Series
-
-You can group the stacked series using [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) property. The following code example shows how to group the stacking series.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:StackingColumnSeries   Interior="#4A4A4A"
-
-GroupingLabel="Group1" 
-
-XBindingPath="Year" 
-
-YBindingPath="Quarter1" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries Interior="#BCBCBC"
-
-GroupingLabel="Group1" 
-
-XBindingPath="Year" 
-
-YBindingPath="Quarter2" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries Interior="#7F7F7F"
-
-XBindingPath="Year" 
-
-GroupingLabel="Group2" 
-
-YBindingPath="Quarter3" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries XBindingPath="Year" 
-
-GroupingLabel="Group2"
-
-Interior="#343434"
-
-YBindingPath="Quarter4" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-StackingColumnSeries series1 = new StackingColumnSeries()
-{
-
-    ItemsSource = new ViewModel().AnnualDetails,
-
-    XBindingPath = "Year",
-
-    YBindingPath = "Quarter1",
-
-    GroupingLabel="Group1",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
-
-};
-
-StackingColumnSeries series2 = new StackingColumnSeries()
-{
-
-    ItemsSource = new ViewModel().AnnualDetails,
-
-    XBindingPath = "Year",
-
-    YBindingPath = "Quarter2",
-
-    GroupingLabel = "Group1",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-StackingColumnSeries series3 = new StackingColumnSeries()
-{
-
-    ItemsSource = new ViewModel().AnnualDetails,
-
-    XBindingPath = "Year",
-
-    YBindingPath = "Quarter3",
-
-    GroupingLabel = "Group2",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
-};
-
-StackingColumnSeries series4 = new StackingColumnSeries()
-{
-
-    ItemsSource = new ViewModel().AnnualDetails,
-
-    XBindingPath = "Year",
-
-    YBindingPath = "Quarter4",
-
-    GroupingLabel = "Group2",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
-
-};
-
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
-
-chart.Series.Add(series3);
-
-chart.Series.Add(series4);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
-
-
 ## Range Series
 
 ### HiLo
@@ -4040,608 +3912,772 @@ series.ConnectorLineStyle = style;
 ![Connector line customization support in WPF](Series_images/waterfall6.png)
 
 
-## Fast Charts
+## Error Bars
 
-### Fast Line
+[ErrorBarSeries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 
-The [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
+
+The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalErrorValue.html#) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalErrorValue.html#) is used to set the error value(variation) to the series.
+
+The following code examples illustrates how to create error bar series:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastLineSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
+<chart:ScatterSeries ScatterWidth="20" ScatterHeight="20"  Label="Coal" 
 
-XBindingPath="Date" Interior="#7F7F7F"
+ItemsSource="{Binding EnergyProductions}" Interior="#BCBCBC"
 
-YBindingPath="Value"/>
+XBindingPath="ID" YBindingPath="Coal">
+
+</chart:ScatterSeries>
+
+<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
+
+XBindingPath="ID" YBindingPath="Coal" 
+
+VerticalErrorValue="50" HorizontalErrorValue="1" >
+
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastLineSeries series = new FastLineSeries()
+ScatterSeries series = new ScatterSeries()
 {
 
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "Date",
+    XBindingPath = "ID",
 
-    YBindingPath = "Value",
+    YBindingPath = "Coal",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+    ScatterWidth = 20,
+
+    ScatterHeight = 20,
+
+    Label ="Coal",
+
+    ListenPropertyChange=true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    HorizontalErrorValue = 1,
+
+    VerticalErrorValue = 50
 
 };
 
 chart.Series.Add(series);
 
+chart.Series.Add(errorBar);
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastLine chart type in WPF](Series_images/fastline.png)
+![Error bars support in WPF Chart](ErrorBar_images/ErrorBar_1.png)
 
-The following line properties are available for FastLineSeries:
 
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html#)
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashArray.html#)
-* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html# )
-* [`StrokeDashCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html#)
-* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html#)
+### Mode
 
-### Fast Line Bitmap 
+This [`Mode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~Mode.html#) property is used to define whether to identify horizontal error or vertical error. By default, the Mode value is [`Both`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarMode.html), which will display both horizontal and vertical error values.
 
-[`FastLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#) displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries renders a million data point in a fraction of seconds.
+**Horizontal**
 
-The following code example shows how to use the fast line bitmap series:
+To view horizontal error value, you can set the Mode as Horizontal as shown in the below code example.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
+<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
 
-XBindingPath="Date" Interior="#7F7F7F" 
+XBindingPath="ID" YBindingPath="Coal"                                  
 
-YBindingPath="Value" />
+VerticalErrorValue="50" HorizontalErrorValue="1" 
+
+Mode="Horizontal">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastLineBitmapSeries series = new FastLineBitmapSeries()
+ErrorBarSeries errorBar = new ErrorBarSeries()
 {
 
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "Date",
+    XBindingPath = "ID",
 
-    YBindingPath = "Value",
+    YBindingPath = "Coal",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+    HorizontalErrorValue = 1,
+
+    VerticalErrorValue = 50,
+
+    Mode = ErrorBarMode.Horizontal
 
 };
 
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastLineBitmap chart type in WPF](Series_images/fastlinebitmap.png)
+![Mode for error bars in WPF Chart](ErrorBar_images/ErrorBar_2.png)
 
-Like FastLineSeries, this bitmap series is also having line properties. 
 
-N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries~EnableAntiAliasing.html#) property.
+**Vertical**
+
+To view vertical error value, you can set the Mode as Vertical as shown in the below code example.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" 
+<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
 
-XBindingPath="Date" Interior="#7F7F7F" 
+XBindingPath="ID" YBindingPath="Coal" 
 
-StrokeDashArray="5,5"
+VerticalErrorValue="50" HorizontalErrorValue="1" 
 
-YBindingPath="Value" EnableAntiAliasing="True"/>
+Mode="Vertical">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastLineBitmapSeries series = new FastLineBitmapSeries()
+ErrorBarSeries errorBar = new ErrorBarSeries()
 {
 
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "Date",
+    XBindingPath = "ID",
 
-    YBindingPath = "Value",
+    YBindingPath = "Coal",
 
-    EnableAntiAliasing =true,
+    HorizontalErrorValue = 1,
 
-    StrokeDashArray =new DoubleCollection() { 5,5},
+    VerticalErrorValue = 50,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+    Mode = ErrorBarMode.Vertical
 
 };
 
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![AntiAliasing support for FastLine Chart in WPF](Series_images/fastlinealiasing.png)
+![Mode for error bars in WPF Chart](ErrorBar_images/ErrorBar_3.png)
 
 
-### Fast Column
+## Direction
 
-[`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html#) is used to boost up the performance of the ColumnSeries.
+[`ErrorBar`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows you to view the horizontal and vertical error values in both positive and negative directions.
+
+**Horizontal direction**
+
+[`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirection.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the horizontal error value in the following type of directions:
+
+ * [`Both`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive and negative error values.
+ * [`Minus`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of negative error value.
+ * [`Plus`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive error value.
+
+**Both**
+
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as both.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastColumnBitmapSeries Interior="#7F7F7F"
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Both">
 
-ItemsSource="{Binding List}" 
-
-XBindingPath="Date" YBindingPath="Price" />
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastColumnBitmapSeries series = new FastColumnBitmapSeries()
-{
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
-    ItemsSource = new ViewModel().List,
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Both;
 
-    XBindingPath = "Date",
-
-    YBindingPath = "Value",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
-};
-
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastColumnBitmap chart type in WPF](Series_images/fastcolumn.png)
+![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_both.png)
 
-### Fast Bar
+**Minus**
 
-FastBarBitmapSeries is used to boost up the performance of the series.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as minus.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastBarBitmapSeries x:Name="FastBarBitmapSeries" ItemsSource="{Binding List}" 
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Minus">
 
-XBindingPath="Date" YBindingPath="Price" 
-
-Interior="#7F7F7F"/>
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastBarBitmapSeries series = new FastBarBitmapSeries()
-{
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
-    ItemsSource = new ViewModel().List,
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Minus;
 
-    XBindingPath = "Date",
-
-    YBindingPath = "Value",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
-};
-
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastBarBitmap chart type in WPF](Series_images/fastbar.png)
+![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_minus.png)
 
+**Plus**
 
-### Fast Candle
-
-FastCandleBitmapSeries renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like CandleSeries. 
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as plus.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" 
+<chart:ErrorBarSeries Name="Errorseries" HorizontalDirection="Plus">
 
-XBindingPath="X" High="Y" 
-
-Low="Y1" Open="Y2" Close="Y3" 
-
-BullFillColor="#BCBCBC" 
-
-BearFillColor="#4A4A4A"  />
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastCandleBitmapSeries series = new FastCandleBitmapSeries()
-{
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
-    ItemsSource = new ViewModel().TestingModel,
+errorBarSeries.HorizontalDirection = ErrorBarDirection.Plus;
 
-    XBindingPath = "X",
-
-    High="Y", Low="Y1",
-
-    Open="Y2", Close="Y3",
-
-    BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
-    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
-};
-
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastCandleBitmap chart type in WPF](Series_images/fastcandle.png)
+![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_plus.png)
 
+**Vertical direction**
 
-### Fast HiLo
+[`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the vertical error value in following type of directions:
 
-[`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html#) represents a series of line segments with high and low values rendered using WritableBitmap. 
+ * Both - It indicates the actual data point value along with specific amount of positive and negative error values.
+ * Minus - It indicates the actual data point value along with specific amount of negative error value.
+ * Plus - It indicates the actual data point value along with specific amount of positive error value.
 
-{% tabs %}
+**Both**
 
-{% highlight xaml %}
-
-<chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
-
-Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
-
-Low="Price"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-FastHiLoBitmapSeries series = new FastHiLoBitmapSeries()
-{
-
-    ItemsSource = new ViewModel().List,
-
-    XBindingPath = "Date",
-
-    High = "Stock",Low = "Price",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F)),
-
-    StrokeThickness = 5
-
-};
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![FastHiLoBitmap chart type in WPF](Series_images/fasthilo.png)
-
-### Fast OHLC
-
-[`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html#) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as both.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" 
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Both" >
 
-XBindingPath="X" High="Y" Low="Y1" Open="Y2"        
-
-Close="Y3"   BullFillColor="#7F7F7F"      
-
-BearFillColor="#4A4A4A"/>
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastHiLoOpenCloseBitmapSeries series = new FastHiLoOpenCloseBitmapSeries()
-{
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
-    ItemsSource = new ViewModel().TestingModel,
+errorBarSeries.VerticalDirection= ErrorBarDirection.Both;
 
-    XBindingPath = "X",
-
-    High="Y", Low="Y1",
-
-    Open="Y2", Close="Y3",
-
-    BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
-    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
-};
-
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastHiLoOpenCloseBitmap chart type in WPF](Series_images/fastohlc.png)
+![Direction for error bars in WPF Chart](ErrorBar_images/vertical_both.png)
 
-### Fast Scatter
+**Minus**
 
-[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterHeight.html#) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterWidth.html#) also available as in ScatterSeries. [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:FastScatterBitmapSeries Interior="#7F7F7F"   
-
-ItemsSource="{Binding Data}"                         
-
-x:Name="FastScatterSeries"  XBindingPath="Date" 
-
-YBindingPath="Value" ScatterHeight="4"  
-
-ScatterWidth="4"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-FastScatterBitmapSeries series = new FastScatterBitmapSeries()
-{
-
-    ItemsSource = new ViewModel().Data,
-
-    XBindingPath = "Date",
-
-    YBindingPath = "Value",
-
-    ScatterHeight = 4,
-
-    ScatterWidth = 4,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
-};
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![FastScatterBitmap chart type in WPF](Series_images/fastscatter.png)
-
-
-### Fast Step Line
-
-[`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#) is the high performance version of StepLineSeries.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as minus.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}"
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Minus" >
 
-XBindingPath="Date"                                 
-
-YBindingPath="Value" Interior="#4A4A4A" />
+</chart:ErrorBarSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.VerticalDirection= ErrorBarDirection.Minus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Direction for error bars in WPF Chart](ErrorBar_images/vertical_minus.png)
+
+**Plus**
+
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as plus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries" VerticalDirection="Plus" >
+
+</chart:ErrorBarSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries();
+
+errorBarSeries.VerticalDirection= ErrorBarDirection.Plus;
+
+chart.Series.Add(errorBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Direction for error bars in WPF Chart](ErrorBar_images/vertical_plus.png)
+
+
+## Type
+
+SfChart supports the following type of error bar series.
+
+* [`Fixed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
+* [`Percentage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
+* [`StandardDeviation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
+* [`StandardError`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
+
+N> The default error bar series is Fixed.
+
+### Fixed
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries Name="Errorseries"  
+
+ItemsSource="{Binding EnergyProductions}" 
+
+XBindingPath="ID" 
+
+YBindingPath="Coal" 
+
+VerticalErrorValue="40" HorizontalErrorValue="10" 
+
+Mode="Both" Type="Fixed">
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ErrorBarSeries errorBar = new ErrorBarSeries()
 {
 
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "Date",
+    XBindingPath = "ID",
 
-    YBindingPath = "Value",
+    YBindingPath = "Coal",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.Fixed
 
 };
 
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastStepLineBitmap chart type in WPF](Series_images/faststepline.png)
+![Fixed error bar type in WPF Chart](ErrorBar_images/ErrorBar_4.png)
 
-The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
+### Percentage
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}"
+<chart:ErrorBarSeries Name="Errorseries"  
 
-x:Name="FastStepLineSeries" XBindingPath="Date" 
+ItemsSource="{Binding EnergyProductions}" 
 
-YBindingPath="Value" Interior="#4A4A4A"/>
+XBindingPath="ID" 
+
+YBindingPath="Coal" 
+
+VerticalErrorValue="40" HorizontalErrorValue="10" 
+
+Mode="Both" Type="Percentage">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
+ErrorBarSeries errorBar = new ErrorBarSeries()
 {
 
-    ItemsSource = new ViewModel().Data,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "Date",
+    XBindingPath = "ID",
 
-    YBindingPath = "Value",
+    YBindingPath = "Coal",
 
-    EnableAntiAliasing = true ,
+    HorizontalErrorValue = 10,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.Percentage
 
 };
 
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WPF](Series_images/faststepline_alias.png)
+
+![Percentage error bar type in WPF Chart](ErrorBar_images/ErrorBar_5.png)
 
 
-### Fast Stacking Column
-
-[`FastStackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html#) similar to StackingColumnSeries except that it loads faster and provides better performance. 
+### Standard Deviation
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastStackingColumnBitmapSeries StrokeThickness="5"
+<chart:ErrorBarSeries Name="Errorseries"  
 
-ItemsSource="{Binding MedalDetails}”       
+ItemsSource="{Binding EnergyProductions}" 
 
-XBindingPath="CountryName" YBindingPath="GoldMedals"  
+XBindingPath="ID" 
 
-Interior="#4A4A4A" />
+YBindingPath="Coal" 
+
+VerticalErrorValue="40" HorizontalErrorValue="10" 
+
+Mode="Both" Type="StandardDeviation"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastStackingColumnBitmapSeries series = new FastStackingColumnBitmapSeries()
+ErrorBarSeries errorBar = new ErrorBarSeries()
 {
 
-    ItemsSource = new ViewModel().MedalDetails,
+    ItemsSource = new ViewModel().EnergyProductions,
 
-    XBindingPath = "CountryName",
+    XBindingPath = "ID",
 
-    YBindingPath = "GoldMedals",
+    YBindingPath = "Coal",
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+    HorizontalErrorValue = 10,
+
+    VerticalErrorValue = 40,
+
+    Mode = ErrorBarMode.Both,
+
+    Type = ErrorBarType.StandardDeviation
 
 };
 
-chart.Series.Add(series);
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![FastStackingColumnBitmap chart type in WPF](Series_images/faststackingcolumn.png)
+![Standard deviation error bar type in WPF Chart](ErrorBar_images/ErrorBar_6.png)
 
-
-### Fast Range Area
-
-[`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#) is the high performance version of RangeAreaSeries. 
+### Standard Errors
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
+<chart:ErrorBarSeries Name="Errorseries"  
 
-                             XBindingPath="Date" 
-					 
-                             High="HighTemperature" 
-					 
-                             Low="LowTemperature"        
-					                                      
-                             Interior="#7F7F7F" />
+ItemsSource="{Binding EnergyProductions}" 
+
+XBindingPath="ID" 
+
+YBindingPath="Coal" 
+
+VerticalErrorValue="40" HorizontalErrorValue="10" 
+
+Mode="Both" Type="StandardErrors"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
 
-fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
+    ItemsSource = new ViewModel().EnergyProductions,
 
-fastRangeAreaBitmapSeries.XBindingPath = "Date";
+    XBindingPath = "ID",
 
-fastRangeAreaBitmapSeries.High = "HighTemperature";
+    YBindingPath = "Coal",
 
-fastRangeAreaBitmapSeries.Low = "LowTemperature";
+    HorizontalErrorValue = 10,
 
-fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
+    VerticalErrorValue = 40,
 
+    Mode = ErrorBarMode.Both,
 
-chart.Series.Add(fastRangeAreaBitmapSeries);
+    Type = ErrorBarType.StandardErrors
+
+};
+
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
+![Standard deviation error bar type in WPF Chart](ErrorBar_images/ErrorBar_7.png)
 
-The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries~EnableAntiAliasing.html) property of FastRangeAreaBitmapSeries as in below code snippet:
+
+### Custom
+
+If the Type is Custom, you have to bind [`HorizontalErrorPathValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalErrorPath.html#) and [`VerticalErrorPathValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalErrorPath.html#) as shown in the below code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
+<chart:ErrorBarSeries Name="Errorseries"  
 
-                                 XBindingPath="Date" 
+ItemsSource="{Binding EnergyProductions}" 
 
-                                 High="HighTemperature" 
+XBindingPath="ID" 
 
-                                 Low="LowTemperature" 
+YBindingPath="Coal" 
 
-                                 EnableAntiAliasing="True" 
+HorizontalErrorPath="HorizontalErrorValue"
 
-                                 Interior="#7F7F7F" />
+VerticalErrorPath="VerticalErrorValue"
+
+Mode="Both" Type="Custom"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-FastRangeAreaBitmapSeries fastRangeAreaBitmapSeries = new FastRangeAreaBitmapSeries();
+ErrorBarSeries errorBar = new ErrorBarSeries()
+{
 
-fastRangeAreaBitmapSeries.ItemsSource = new ViewModel().Data;
+    ItemsSource = new ViewModel().EnergyProductions,
 
-fastRangeAreaBitmapSeries.XBindingPath = "Date";
+    XBindingPath = "ID",
 
-fastRangeAreaBitmapSeries.High = "HighTemperature";
+    YBindingPath = "Coal",
 
-fastRangeAreaBitmapSeries.Low = "LowTemperature";
+    HorizontalErrorValue = 10,
 
-fastRangeAreaBitmapSeries.EnableAntiAliasing = true;
+    VerticalErrorValue = 40,
 
-fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
+    Mode = ErrorBarMode.Both,
 
+    Type = ErrorBarType.Custom
 
-chart.Series.Add(fastRangeAreaBitmapSeries);
+};
+
+chart.Series.Add(errorBar);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](Series_images/fastrangeareabitmapantialiasing.png)
+![Custom error bar type in WPF Chart](ErrorBar_images/ErrorBar_8.png)
+
+
+## Customization 
+
+SfChart provides customization properties for the error bar lines as in the following section.
+
+### Line Style
+
+You can define the LineStyle for the error bar lines using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalLineStyle.html#) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalLineStyle.html#) properties as in the below code examples.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries.HorizontalLineStyle>
+
+<chart:LineStyle Stroke="Black"  StrokeThickness="2"  >
+
+</chart:LineStyle>
+
+</chart:ErrorBarSeries.HorizontalLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+errorBarSeries.HorizontalLineStyle = new LineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_9.png)
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries.VerticalLineStyle>
+
+<chart:LineStyle Stroke="Black"  StrokeThickness="2"  >
+
+</chart:LineStyle>
+
+</chart:ErrorBarSeries.VerticalLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+errorBarSeries.VerticalLineStyle = new LineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_10.png)
+
+
+### Line Cap Style
+
+ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalCapLineStyle.html#) and [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalCapLineStyle.html#) as in the below code examples.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries.HorizontalCapLineStyle>
+
+<chart:CapLineStyle Stroke="Black" StrokeThickness="2"  
+
+LineWidth="10"></chart:CapLineStyle>
+
+</chart:ErrorBarSeries.HorizontalCapLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2,
+
+    LineWidth = 10
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_11.png)
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ErrorBarSeries.VerticalCapLineStyle>
+
+<chart:CapLineStyle Stroke="Black" StrokeThickness="3"  
+
+LineWidth="15"></chart:CapLineStyle>
+
+</chart:ErrorBarSeries.VerticalCapLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+errorBarSeries.VerticalCapLineStyle = new CapLineStyle()
+{
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 3,
+
+    LineWidth = 15
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_12.png)
