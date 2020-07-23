@@ -188,7 +188,7 @@ or nuget packages [reference](https://help.syncfusion.com/wpf/control-dependenci
 
 ### Set visual style
 
-Any built-in themes can applied to the both syncfusion controls and framework controls by `VisualStyle` attached property of the SfSkinManager. All built-in assemblies have style resources for controls, so whenever an application get its style through SfSkinManager, the corresponding control style merges with the applied controls resource dictionary. Now, apply the value as `MaterialDark` to the `VisualStyle` property of the SfSkinManager for the SfDataGrid control.
+Any built-in themes can applied to the both syncfusion controls and framework controls by `VisualStyle` attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinManager.html). All built-in assemblies have style resources for controls, so whenever an application get its style through SfSkinManager, the corresponding control style merges with the applied controls resource dictionary. Now, apply the value as `MaterialDark` to the `VisualStyle` property of the SfSkinManager for the SfDataGrid control.
 
 {% tabs %}
 
@@ -204,6 +204,7 @@ Any built-in themes can applied to the both syncfusion controls and framework co
                              Icon="App.ico"
                              Title="Getting Started"
                              WindowStartupLocation="CenterScreen">
+
     <syncfusion:ChromelessWindow.Resources>
         <local:ViewModel x:Key="viewmodel" />
         <local:SelectedImageConverter x:Key="selectedImageConverter"/>
@@ -346,10 +347,9 @@ Any built-in themes can applied to the both syncfusion controls and framework co
 
 ## Apply a theme globally in the application
 
-By Default, `SfSkinManager` merges the required resource files from the theme assembly to the applied control. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the resource files to the Application’s Resource Dictionary.
+By Default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinManager.html) merges the required resource files from the theme assembly to the applied control. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the resource files to the Application’s Resource Dictionary.
 
-N> The `ApplyStylesOnApplication` property value should be set prior to the initialise component and it should not be set dynamically.
-
+N> The value of the `ApplyStylesOnApplication` property should be set before the initialization component and should not be set dynamically.
 {% tabs %}
 
 {% highlight C# %}
@@ -375,15 +375,26 @@ To apply the built-in themes to derived control using `SfSkinManager`, set the 
 {% highlight XAML %}
 
 
-<local:DockingAdv x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
-    <ContentControl x:Name="SolutionExplorer"
-                local:DockingAdv.Header="Solution Explorer" local:DockingAdv.SideInDockedMode="Right"/>
-    <ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden"/>
-    <ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float"/>
-    <ContentControl x:Name="Output" local:DockingAdv.Header="Output"
-                local:DockingAdv.SideInDockedMode="Tabbed" local:DockingAdv.TargetNameInDockedMode="SolutionExplorer"/>
-    <ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document"/>
-</local:DockingAdv>
+ <local:SfDataGridExt x:Name="grid"
+                             AllowGrouping="True"
+                             AutoGenerateColumns="False"
+                             ItemsSource="{Binding EmployeeDetails}"
+                             ShowGroupDropArea="True">
+            <local:SfDataGridExt.Resources>
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>
+                        <ResourceDictionary Source="/Syncfusion.SfGrid.WPF;component/Styles/Styles.xaml" />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+            </local:SfDataGridExt.Resources>
+            <local:SfDataGridExt.Columns>
+                <syncfusion:GridNumericColumn MappingName="EmployeeAge" />
+                <syncfusion:GridTextColumn MappingName="EmployeeName" />
+                <syncfusion:GridTextColumn MappingName="EmployeeGender" />
+                <syncfusion:GridTextColumn AllowEditing="True" MappingName="Country" />
+                <syncfusion:GridNumericColumn MappingName="EmployeeSalary" />
+            </local:SfDataGridExt.Columns>
+        </local:SfDataGridExt>
 
 {% endhighlight %}
 
@@ -394,13 +405,13 @@ To apply the built-in themes to derived control using `SfSkinManager`, set the 
 {% highlight C# %}
 
 
-public class DockingAdv : DockingManager
-{
-    public DockingAdv()
-	{
-		SetResourceReference(StyleProperty, typeof(DockingManager));
-	}
-}
+ public class SfDataGridExt : SfDataGrid
+    {
+        public SfDataGridExt()
+        {
+            SetResourceReference(StyleProperty, typeof(SfDataGrid));
+        }
+    }
 
 
 {% endhighlight %}
@@ -448,7 +459,7 @@ End Sub
 
 ## How To
 
-### Change Visual style at runtime
+### Change visual style at runtime
 
 The built-in themes can be changed at runtime using the `VisualStyle` property. The controls can be used to switch various built-in themes at run time. Please refer to the below snippet for changing the visual style at runtime and their corresponding built-in themes added as a reference to the project.
 
@@ -469,6 +480,7 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                              Icon="App.ico"
                              Title="Getting Started"
                              WindowStartupLocation="CenterScreen">
+
     <syncfusion:ChromelessWindow.Resources>
         <local:ViewModel x:Key="viewmodel" />
         <local:SelectedImageConverter x:Key="selectedImageConverter"/>
