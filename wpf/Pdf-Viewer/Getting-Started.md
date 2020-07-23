@@ -64,7 +64,7 @@ To add control manually in XAML, do the following steps,
 
 	~~~xaml
 	<Window
-		xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF">
+		xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF"
 	</Window>	
 	~~~
 
