@@ -2178,6 +2178,24 @@ Syncfusion.Themes.Metro.WPF
 </tr>
 </table>
 
+### Office365	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office365.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office365.WPF
+</td>
+</tr>
+</table>
+
 ### Office2010Black	
 
 <table>
@@ -2286,6 +2304,60 @@ Syncfusion.Themes.Office2013White.WPF
 </tr>
 </table>
 
+### Office2016Colorful
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2016Colorful.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2016Colorful.WPF
+</td>
+</tr>
+</table>
+
+### Office2016DarkGray	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2016DarkGray.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2016DarkGray.WPF
+</td>
+</tr>
+</table>
+
+### Office2016White	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2016White.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2016White.WPF
+</td>
+</tr>
+</table>
+
 ### Saffron	
 
 <table>
@@ -2304,6 +2376,24 @@ Syncfusion.Themes.Saffron.WPF
 </tr>
 </table>
 
+### SystemTheme
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.SystemTheme.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.SystemTheme.WPF
+</td>
+</tr>
+</table>
+
 ### VisualStudio2013	
 
 <table>
@@ -2318,6 +2408,132 @@ Syncfusion.SfSkinManager.WPF
 </td>
 <td> 
 Syncfusion.Themes.VisualStudio2013.WPF
+</td>
+</tr>
+</table>
+
+### VisualStudio2015	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.VisualStudio2015.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.VisualStudio2015.WPF
+</td>
+</tr>
+</table>
+
+### MaterialLight	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.MaterialLight.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.MaterialLight.WPF
+</td>
+</tr>
+</table>
+
+### MaterialDark	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.MaterialDark.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.MaterialDark.WPF
+</td>
+</tr>
+</table>
+
+### MaterialLightBlue	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.MaterialLightBlue.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.MaterialLightBlue.WPF
+</td>
+</tr>
+</table>
+
+### MaterialDarkBlue	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.MaterialDarkBlue.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.MaterialDarkBlue.WPF
+</td>
+</tr>
+</table>
+
+### Office2019Colorful	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2019Colorful.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2019Colorful.WPF
+</td>
+</tr>
+</table>
+
+### Office2019Black	
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Themes.Office2019Black.WPF <br/>
+Syncfusion.SfSkinManager.WPF
+</td>
+<td> 
+Syncfusion.Themes.Office2019Black.WPF
 </td>
 </tr>
 </table>
