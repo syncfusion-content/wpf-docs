@@ -44,12 +44,10 @@ Sample code for setting zooming feature properties:
 
 {% highlight xaml %}
 
-
-
-
 <syncfusion:SfMap ZoomLevel="3" MinZoom="1" MaxZoom="20" EnableZoom="True">                
 
 </syncfusion:SfMap >
+
 {% endhighlight %}
 
 
@@ -70,8 +68,6 @@ A map can be zoomed by changing the zoom level of the Map control. Incrementing 
 Maps can be zoomed through the Zoom method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
 
 {% highlight C# %}
-
-  
 
    SfMap syncMap = new SfMap();
 
@@ -107,18 +103,13 @@ The EnablePan property enables or disables the panning feature of the map. A “
 
 {% highlight xaml %}
 
-
-<syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">         
-
+       <syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">         
             <syncfusion:SfMap.Layers>
-
                 <syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                    
-
                 </syncfusion:ShapeFileLayer>
-
             </syncfusion:SfMap.Layers>
-
         </syncfusion:SfMap >
+
 {% endhighlight %}
 
 
@@ -137,9 +128,7 @@ The map can be panned with the Pan method in the Maps control. The Pan method ha
 
 {% highlight C# %}
 
-  
-
-        SfMap syncMap = new SfMap();
+           SfMap syncMap = new SfMap();
 
             syncMap.EnablePan = true;
 

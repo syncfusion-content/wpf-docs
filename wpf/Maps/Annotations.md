@@ -18,8 +18,6 @@ AnnotationLabel is a “Text” that shows some information in the text format.
 
 AnnotationSymbol is a “VisualObject” that shows a note symbolically.
 
-## AnnotationLabel’s appearance is customized by the following properties:
-
 1. AnnotationLabelForeground: Get or sets the foreground color of the annotation label.
 2. AnnotationLabelFontStyle: Gets or sets the font style of the annotation label.
 3. AnnotationLabelBackground: Gets or sets the background color of the annotation label.
@@ -27,67 +25,38 @@ AnnotationSymbol is a “VisualObject” that shows a note symbolically.
 5. AnnotationLabelFontSize: Gets or sets the annotation label font size.
 
 
-
 {% highlight xaml %}
 
-
-
-
-
-
-<syncfusion:SfMap >         
-
-<syncfusion:SfMap.Layers>
-
-<syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                    
-
-<syncfusion:ShapeFileLayer.Annotations>
-
-<syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" >
-
-<syncfusion:MapAnnotations.AnnotationSymbol>
-
-<Ellipse Fill="Orange" Height="10" Width="10">                                    
-
-</Ellipse>
-
-</syncfusion:MapAnnotations.AnnotationSymbol>
-
-</syncfusion:MapAnnotations>
-
-<syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="Unites States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" >
-
-<syncfusion:MapAnnotations.AnnotationSymbol>
-
-<Ellipse Fill="Orange" Height="10" Width="10">
-
-</Ellipse>
-
-</syncfusion:MapAnnotations.AnnotationSymbol>
-
-</syncfusion:MapAnnotations>
-
-</syncfusion:ShapeFileLayer.Annotations>
-
-
-
-
-
-<syncfusion:ShapeFileLayer.ShapeSettings>
-
-<syncfusion:ShapeSetting>
-
-
-
-</syncfusion:ShapeSetting>
-
-</syncfusion:ShapeFileLayer.ShapeSettings>
-
-</syncfusion:ShapeFileLayer>
-
-</syncfusion:SfMap.Layers>
-
-</syncfusion:SfMap >
+    <syncfusion:SfMap >
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer Uri="DataMarkers.ShapeFiles.world1.shp">
+                <syncfusion:ShapeFileLayer.Annotations>
+                    <syncfusion:MapAnnotations Latitude="-22" Longitude="132" 
+                                               AnnotationLabel="Australia" 
+                                               AnnotationLabelFontFamily="Times New Roman" 
+                                               AnnotationLabelFontSize="20" 
+                                               AnnotationLabelFontStyle="Oblique" 
+                                               AnnotationLabelForeground="Red" >
+                        <syncfusion:MapAnnotations.AnnotationSymbol>
+                            <Ellipse Fill="Orange" Height="10" Width="10">
+                            </Ellipse>
+                        </syncfusion:MapAnnotations.AnnotationSymbol>
+                    </syncfusion:MapAnnotations>
+                    <syncfusion:MapAnnotations Latitude="40" Longitude="-98" 
+                                               AnnotationLabel="Unites States of America" 
+                                               AnnotationLabelFontFamily="Times New Roman" 
+                                               AnnotationLabelFontSize="20" 
+                                               AnnotationLabelFontStyle="Oblique" 
+                                               AnnotationLabelForeground="Red" >
+                        <syncfusion:MapAnnotations.AnnotationSymbol>
+                            <Ellipse Fill="Orange" Height="10" Width="10">
+                            </Ellipse>
+                        </syncfusion:MapAnnotations.AnnotationSymbol>
+                    </syncfusion:MapAnnotations>
+                </syncfusion:ShapeFileLayer.Annotations>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap >
 
 {% endhighlight %}
 
@@ -109,75 +78,36 @@ AnnotationTemplate is a DataTemplate type, used to customize or override the def
 
 {% highlight xaml %}
 
-
-
-<syncfusion:SfMap >
-
+       <syncfusion:SfMap >
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">
-
-                    <syncfusion:ShapeFileLayer.AnnotationTemplate>
-
-                        <DataTemplate>
-
-                            <Grid Margin="-50,-20,0,0">
-
-                                <ContentPresenter Content="{Binding AnnotationSymbol}"/>
-
-                                <TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                            </Grid>
-
-                        </DataTemplate>
-
-                    </syncfusion:ShapeFileLayer.AnnotationTemplate>
-
+                <syncfusion:ShapeFileLayer   Uri="DataMarkers.ShapeFiles.world1.shp">
                     <syncfusion:ShapeFileLayer.Annotations>
-
                         <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia"  >
-
                             <syncfusion:MapAnnotations.AnnotationSymbol>
-
                                 <Image Height="100" Width="100" Source="note.jpg" />
-
                             </syncfusion:MapAnnotations.AnnotationSymbol>
-
                         </syncfusion:MapAnnotations>
-
                         <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="USA">
-
                             <syncfusion:MapAnnotations.AnnotationSymbol>
-
                                 <Image Height="100" Width="100" Source="note.jpg" />
-
                             </syncfusion:MapAnnotations.AnnotationSymbol>
-
                         </syncfusion:MapAnnotations>
-
                     </syncfusion:ShapeFileLayer.Annotations>
-
-
-
-
-
-                    <syncfusion:ShapeFileLayer.ShapeSettings>
-
-                        <syncfusion:ShapeSetting>
-
-
-
-                        </syncfusion:ShapeSetting>
-
-                    </syncfusion:ShapeFileLayer.ShapeSettings>
-
+                    <syncfusion:ShapeFileLayer.AnnotationTemplate>
+                        <DataTemplate>
+                            <Grid Margin="-50,-20,0,0">
+                                <ContentPresenter Content="{Binding AnnotationSymbol}"/>
+                                <TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:ShapeFileLayer.AnnotationTemplate>
                 </syncfusion:ShapeFileLayer>
-
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
 
-		{% endhighlight %}
+{% endhighlight %}
 
 
 ![](Annotations_images/Annotations_img2.png)

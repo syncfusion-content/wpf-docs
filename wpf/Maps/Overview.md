@@ -33,28 +33,10 @@ Options like zooming, panning, and map selection extend the interactivity of the
 ![Maps - Overview](Overview_images/Overview_img1.png)
 
 
-
 ## Structure of Map
 
-A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items.
+A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items. The imagery layer is used to visualize satellite, aerial, street map, or other imagery tiles without using shapefiles.
 
-<table>
-<tr>
-<th>
-Map</th></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-<td>
-Layers</td></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-<td>
-ShapeFileLayer</td></tr>
-</table>
+![Maps - Overview](Overview_images/Overview_layers.png)
 
-Structure of Map
 

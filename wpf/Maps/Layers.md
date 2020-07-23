@@ -116,11 +116,105 @@ The shape selection is enabled when the [`EnableSelection`] (https://help.syncfu
 
 ![Selected shape setting image](Layers_images/SelectedShapeSetting_image.png)
 
-### Events
+## Appearance customization
+
+ItemsTemplate is a type of DataTemplate that is used to override the default template for map items. “Data” is the property that holds the object for a map item.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer Background="White" ItemsSource="{Binding Countries}" 
+                                           ShapeIDPath="Name" ShapeIDTableField="NAME" 
+                                           Uri="DataMarkers.ShapeFiles.world1.shp">
+                    <syncfusion:ShapeFileLayer.ItemsTemplate>
+                        <DataTemplate>
+                            <Grid Background="#332D2D2D">
+                                <TextBlock Margin="5" Foreground="White" Opacity="1" FontSize="12" 
+                                           FontWeight="SemiBold" FontFamily="Segoe UI" 
+                                           Text="{Binding Data.Name}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:ShapeFileLayer.ItemsTemplate>
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" 
+                                                 ShapeStrokeThickness="0.5" ShapeValuePath="Population" 
+                                                 ShapeColorValuePath="Population" >
+                            <syncfusion:ShapeSetting.FillSetting>
+                                <syncfusion:ShapeFillSetting AutoFillColors="False">
+                                    <syncfusion:ShapeFillSetting.ColorMappings>
+                                        <syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/>
+                                        <syncfusion:RangeColorMapping To="750000000" From="1000" Color="#3D9FD8"/>
+                                        <syncfusion:RangeColorMapping From="0" To="1000" Color="#C7E9FA"/>
+                                    </syncfusion:ShapeFillSetting.ColorMappings>
+                                </syncfusion:ShapeFillSetting>
+                            </syncfusion:ShapeSetting.FillSetting>
+                        </syncfusion:ShapeSetting>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class Country
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        private double population;
+
+        public double Population
+        {
+            get { return population; }
+            set { population = value; }
+        }
+
+    }
+
+    public class ViewModel
+    {
+        private ObservableCollection<Country> countries;
+        public ObservableCollection<Country> Countries
+        {
+            get { return countries; }
+            set { countries = value; }
+        }
+
+        public ViewModel()
+        {
+            Countries = new ObservableCollection<Country>
+            {
+                new Country { Name = "Russia", Population = 143228300},
+                new Country { Name = "China",  Population = 1347350000 },
+                new Country { Name = "Australia", Population = 22789701  },
+                new Country { Name = "South Africa", Population = 50586757},
+                new Country { Name = "United States", Population = 314623000 },
+                new Country { Name = "Egypt", Population = 82724000},
+            };
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
+
+
+## Events
 
 The [`ShapeSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapesSelected_EV.html) event will be triggered when a map shape is selected. A corresponding model data is passed as an argument.
 
-The [`ShapesUnSelected`] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapesUnSelected_EV.html) event will be triggered when a map shape is un selected. A corresponding model data is passed as an argument.
+The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapesUnSelected_EV.html) event will be triggered when a map shape is un selected. A corresponding model data is passed as an argument.
 {% tabs %}
 
 {% highlight xml %}

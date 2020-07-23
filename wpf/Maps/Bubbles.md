@@ -75,59 +75,92 @@ Gets or sets the border color of the bubble.</td></tr>
 
 To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-
-
-
-
-
-<syncfusion:SfMap >
-
+       <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ShapeFileLayer EnableSelection="False" ItemsSource="{Binding Countries}" ShapeIDPath="NAME"  ShapeIDTableField="NAME" Uri="BubbleVisualization.ShapeFiles.world1.shp">
-
+                <syncfusion:ShapeFileLayer EnableSelection="False" ItemsSource="{Binding Countries}" 
+                                           ShapeIDPath="Name"  ShapeIDTableField="NAME" 
+                                           Uri="DataMarkers.ShapeFiles.world1.shp">
                     <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-                        <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" Fill="#FF26E8FB" StrokeThickness="0" ValuePath="Population" >
-
-
-
+                        <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" 
+                                                        Fill="#FF26E8FB" StrokeThickness="0" 
+                                                        ValuePath="Population" >
                         </syncfusion:BubbleMarkerSetting>
-
                     </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-
-
                     <syncfusion:ShapeFileLayer.ShapeSettings>
-
-                        <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
-
+                        <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" 
+                                                 ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
                     </syncfusion:ShapeFileLayer.ShapeSettings>
-
+                    <syncfusion:ShapeFileLayer.ItemsTemplate>
+                        <DataTemplate>
+                            <Border Background="Transparent">
+                                <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="White" 
+                                           Text="{Binding Data.Population}"/>
+                            </Border>
+                        </DataTemplate>
+                    </syncfusion:ShapeFileLayer.ItemsTemplate>
                 </syncfusion:ShapeFileLayer>
-
             </syncfusion:SfMap.Layers>
-
-        </syncfusion:SfMap >
-
+        </syncfusion:SfMap>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+    public class Country
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        private double population;
+
+        public double Population
+        {
+            get { return population; }
+            set { population = value; }
+        }
+
+    }
+
+    public class ViewModel
+    {
+        private ObservableCollection<Country> countries;
+        public ObservableCollection<Country> Countries
+        {
+            get { return countries; }
+            set { countries = value; }
+        }
+
+        public ViewModel()
+        {
+            Countries = new ObservableCollection<Country>
+            {
+                new Country { Name = "Russia", Population = 143228300},
+                new Country { Name = "China",  Population = 1347350000 },
+                new Country { Name = "Australia", Population = 22789701  },
+                new Country { Name = "South Africa", Population = 50586757},
+                new Country { Name = "United States", Population = 314623000 },
+                new Country { Name = "Egypt", Population = 82724000},
+            };
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Adding Bubbles](Bubbles_images/Bubbles_img1.png)
-
-
-
-Adding Bubbles
-{:.caption}
 
 ## Customizing Bubble Symbol
 
 The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the BubbleType enum property. Also, bubbles can be customized by setting the CustomTemplate of the BubbleMarkerSetting.
-
-
 
 <table>
 <tr>
@@ -149,86 +182,51 @@ Gets or sets the template to customize the bubble.</td></tr>
 
 {% highlight xaml %}
 
-
-
-
-
-
-<syncfusion:SfMap>
-
-        <syncfusion:SfMap.Layers>
-
-            <syncfusion:ShapeFileLayer x:Name="shapeFileLayer"   
-
+         <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer x:Name="shapeFileLayer"   
                                        ItemsSource="{Binding Countries}"
-
-                                       ShapeIDPath="NAME" 
-
-                                       ShapeIDTableField="NAME"                                       Uri="MapApp.world1.shp">
-
-                <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-                    <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" ColorValuePath="Population"                                                        ValuePath="Population" BubbleType="Star">
-
-                        <syncfusion:BubbleMarkerSetting.ColorMappings>
-
-<syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
-
-<syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
-
-<syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
-
-<syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
-
-<syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-
-<syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>                        </syncfusion:BubbleMarkerSetting.ColorMappings>
-
-                    </syncfusion:BubbleMarkerSetting>
-
-                </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-                <syncfusion:ShapeFileLayer.ItemsTemplate>
-
-                    <DataTemplate>
-
-                        <Border Background="Transparent">
-
-                            <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#FF333333" Text="{Binding Data.PopulationFormat}"/>
-
-                        </Border>
-
-                    </DataTemplate>
-
-                </syncfusion:ShapeFileLayer.ItemsTemplate>
-
-                <syncfusion:ShapeFileLayer.ShapeSettings>
-
-                    <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
-
-                </syncfusion:ShapeFileLayer.ShapeSettings>
-
-            </syncfusion:ShapeFileLayer>
-
-        </syncfusion:SfMap.Layers>
-
-    </syncfusion:SfMap>	
+                                       ShapeIDPath="Name" 
+                                       ShapeIDTableField="NAME"                                       
+                                       Uri="DataMarkers.ShapeFiles.world1.shp">
+                    <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                        <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" 
+                                                        ColorValuePath="Population"                                                        
+                                                        ValuePath="Population" BubbleType="Star">
+                            <syncfusion:BubbleMarkerSetting.ColorMappings>
+                                <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
+                                <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
+                                <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
+                                <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
+                                <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
+                                <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
+                            </syncfusion:BubbleMarkerSetting.ColorMappings>
+                        </syncfusion:BubbleMarkerSetting>
+                    </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                    <syncfusion:ShapeFileLayer.ItemsTemplate>
+                        <DataTemplate>
+                            <Border Background="Transparent">
+                                <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#FF333333" 
+                                           Text="{Binding Data.Population}"/>
+                            </Border>
+                        </DataTemplate>
+                    </syncfusion:ShapeFileLayer.ItemsTemplate>
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" 
+                                                 ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
 {% endhighlight %}
 
 
-
 ![Bubble with Star Symbol](Bubbles_images/Bubbles_img2.png)
-
-
-
-Bubble with Star Symbol
-{:.caption}
 
 ## Range Color Mapping
 
 Range color mapping is one of the features used to differentiate the bubble fill, based on its under-bound value and color ranges. It contains the following properties:
-
 
 
 <table>
@@ -254,27 +252,17 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 {% highlight xaml %}
 
-
-
-              <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" ColorValuePath="Population"                                                        ValuePath="Population" BubbleType="Star">
-
-                   <syncfusion:BubbleMarkerSetting.ColorMappings>
-
-<syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
-
-<syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
-
-<syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
-
-<syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
-
-<syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-
-</syncfusion:BubbleMarkerSetting.ColorMappings>
-
-                    </syncfusion:BubbleMarkerSetting>
-
-                </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+ <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" 
+                          ColorValuePath="Population"                                                        
+                          ValuePath="Population" BubbleType="Star">
+          <syncfusion:BubbleMarkerSetting.ColorMappings>
+          <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
+          <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
+          <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
+          <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
+          <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
+     </syncfusion:BubbleMarkerSetting.ColorMappings>
+ </syncfusion:BubbleMarkerSetting>
 
 {% endhighlight %}
 
@@ -284,66 +272,4 @@ When the under-bound object value is 22789702, then the fill color of the corres
 When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as “Black.”
 
 “AutoFillColor” must be set as “false” to enable range color mapping.
-
-## Code Sample
-
-Create the “Model” and the “ViewModel” as mentioned in the Data Binding topic and add the following code
-
-{% highlight xaml %}
-
-
-
-
-<syncfusion:SfMap >
-
-            <syncfusion:SfMap.Layers>
-
-                <syncfusion:ShapeFileLayer EnableSelection="False" ItemsSource="{Binding Countries}" ShapeIDPath="NAME"  ShapeIDTableField="NAME" Uri="BubbleVisualization.ShapeFiles.world1.shp">
-
-                    <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-                        <syncfusion:BubbleMarkerSetting ColorValuePath="Population" AutoFillColor="False" Fill="Blue" MaxSize="100" MinSize="50"  StrokeThickness="0" ValuePath="Population">
-
-                            <syncfusion:BubbleMarkerSetting.ColorMappings>
-
-                                <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
-
-                                <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
-
-                                <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
-
-                                <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
-
-                                <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-
-                                <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
-
-                            </syncfusion:BubbleMarkerSetting.ColorMappings>
-
-
-
-                        </syncfusion:BubbleMarkerSetting>
-
-                    </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-
-                    <syncfusion:ShapeFileLayer.ShapeSettings>
-
-                        <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
-
-                    </syncfusion:ShapeFileLayer.ShapeSettings>
-
-                </syncfusion:ShapeFileLayer>
-
-            </syncfusion:SfMap.Layers>
-
-        </syncfusion:SfMap >
-
-{% endhighlight %}
-
 ![RangeColorMapping](Bubbles_images/Bubbles_img3.png)
-
-
-
-RangeColorMapping for Bubbles
-{:.caption}
-

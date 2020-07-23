@@ -28,30 +28,20 @@ Multiple shapes in the map can be selected when “EnableMultiSelection” of Sh
 
 {% highlight xaml %}
 
+        <syncfusion:SfMap >
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer x:Name="shapeLayer" CrossCursorStroke="#686868" 
+                                           CrossCursorStrokeThickness="0.5" EnableSelection ="True"
+                                           EnableMultiSelection="True"
+                                           Uri="DataMarkers.ShapeFiles.world1.shp">
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" 
+                                                 ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
-
-
-<syncfusion:SfMap >
-
-                <syncfusion:SfMap.Layers>
-
-                    <syncfusion:ShapeFileLayer x:Name="shapeLayer" CrossCursorStroke="#686868" CrossCursorStrokeThickness="0.5"  
-
-                                               EnableSelection ="True"                                               EnableMultiSelection="True"                                               
-
-Uri="MapApp.world1.shp"  >
-
-                        <syncfusion:ShapeFileLayer.ShapeSettings>
-
-                            <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
-
-                        </syncfusion:ShapeFileLayer.ShapeSettings>
-
-                    </syncfusion:ShapeFileLayer>
-
-                </syncfusion:SfMap.Layers>
-
-            </syncfusion:SfMap >
 {% endhighlight %}
 
 

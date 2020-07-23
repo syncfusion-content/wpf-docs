@@ -21,19 +21,12 @@ You can enable this feature by setting the layerType property value as "OSM".
 
 {% highlight xaml %}
  
-
-
-
-
-        <syncfusion:SfMap>
-
-            <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="OSM" />
-
-            </syncfusion:SfMap.Layers>
-
-        </syncfusion:SfMap >
+   <syncfusion:SfMap ZoomLevel="3">
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ImageryLayer LayerType="OSM"/>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+       
 {% endhighlight %}
 ![OSM map image](Map-Providers_images/OSM_Map_image.png)
 
@@ -67,7 +60,6 @@ Markers are used to leave some message on the map.
     {
         public ObservableCollection<Model> Models { get; set; }
 
-        public ObservableCollection<Country> AfricaList { get; set; }
         public MapViewModel()
         {
             this.Models = new ObservableCollection<Model>();
@@ -122,7 +114,7 @@ The default appearance of the Marker can be customized by using the MarkerTempla
 
 ![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
-Refer to this [`link`](<a href="/wpf/Maps/markers">Markers</a>) for customizing marker icons, labels, marker alignment, marker selection and events. 
+Refer to this [`link`](https://help.syncfusion.com/wpf/maps/markers) for customizing marker icons, labels, marker alignment, marker selection and events. 
 
 ### Adding a multiple layers in OSM
 
@@ -137,30 +129,19 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 {% highlight xaml %}
 
         <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
                 <syncfusion:ImageryLayer LayerType="OSM" >
-                                    
-                    <syncfusion:ImageryLayer.SubShapeFileLayers>
-                    
-                        <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">
-                            
-                            <syncfusion:SubShapeFileLayer.ShapeSettings>
-                               
-                                <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>
-                           
-                            </syncfusion:SubShapeFileLayer.ShapeSettings>
-                       
-                        </syncfusion:SubShapeFileLayer>
-                   
-                    </syncfusion:ImageryLayer.SubShapeFileLayers>
-               
+                    <syncfusion:ImageryLayer.SubShapeFileLayers>                   
+                        <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
+                            <syncfusion:SubShapeFileLayer.ShapeSettings>                               
+                                <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
+                            </syncfusion:SubShapeFileLayer.ShapeSettings>                       
+                        </syncfusion:SubShapeFileLayer>                   
+                    </syncfusion:ImageryLayer.SubShapeFileLayers>               
                 </syncfusion:ImageryLayer>     
-
             </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
-        </syncfusion:SfMap >
 {% endhighlight %}
 
 
@@ -174,11 +155,11 @@ Bing Map is a key feature in accessing the external geospatial imagery services 
 
 ### Enable a Bing Map 
 
-You can enable this feature by defining the LayerType as “bing”. 
+You can enable this feature by defining the LayerType as Bing. 
 
 ### Bing Map Key
 
-The bing Map key is provided as input to this key property. The Bing Map key can be obtained from 
+The Bing map key is provided as input to this key property. The Bing Map key can be obtained from 
 
 [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
@@ -187,19 +168,10 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 {% highlight xaml %}
        
-
-
-
-
-
 	   <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Aerial" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Aerial" />  
             </syncfusion:SfMap.Layers>
-
         </syncfusion:SfMap >
 
 {% endhighlight %}
@@ -217,19 +189,10 @@ The following screenshot illustrates the Aerial View.
 
 {% highlight xaml %}
 
-
-
-
-
-
        <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Road" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Road" />     
             </syncfusion:SfMap.Layers>
-
         </syncfusion:SfMap >
 
 {% endhighlight %}
@@ -247,24 +210,13 @@ The following screenshot illustrates the Road view.
 
 {% highlight xaml %}
 
-
-
-
-
-
         <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="AerialWithLabels" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="AerialWithLabels" />    
             </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
-        </syncfusion:SfMap >
 {% endhighlight %}
-
-
-
 
 The following screenshot illustrates the AerialWithLabel view.
 
