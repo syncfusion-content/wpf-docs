@@ -13,7 +13,7 @@ Points are one of the record type in shape file layer. Points are used to specif
 
 ## Customizing the MapPoint
 
-The default appearance of the MapPoint can be customized by using the MapPointTemplate property. The MapPointTemplate property is available in the ShapeFileLayer.
+The default appearance of the MapPoint can be customized by using the [`MapPointTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointTemplate.html) property. The MapPointTemplate property is available in the ShapeFileLayer.
 
 ## About MapPointTemplate Property
 
@@ -40,7 +40,7 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 ## MapPointIcon
 
-MapPointIcon is used for customizing points shapes.It can be customized by following shapes:
+[`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointIcon.html) is used for customizing points shapes.It can be customized by following shapes:
 
 * Rectangle
 
@@ -75,7 +75,7 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
 
 ### MapPointPopupTemplate
 
-MapPointPopupTemplate is a DataTemplate, used to expose the template for the MapPoint. 
+[`MapPointPopupTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointPopupTemplate.html) is a DataTemplate, used to expose the template for the MapPoint. 
 
 {% highlight xaml %}
 
@@ -155,7 +155,7 @@ MapPointPopupTemplate is a DataTemplate, used to expose the template for the Map
 
 ## Convert a Geo-coordinate point for ShapeFileLayer and ImageryLayer
 
-You can convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using the `GeopointToViewPoint` method and `GetLatLonFromPoint`.
+You can convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using the [`GeopointToViewPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer~GeopointToViewPoint.html) method and [`GetLatLonFromPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer~GetLatLonFromPoint.html).
 
 {% tabs %}
 

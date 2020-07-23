@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Shape Labels
 
-Labels for map shapes can be displayed by using the LabelPath of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
+Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LabelPath.html) of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
 
 
 
@@ -39,7 +39,7 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 {% endhighlight %}
 
-The labels can also be customized by modifying the ItemsTemplate of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
+The labels can also be customized by modifying the [`ItemsTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsTemplate.html) of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
 
 {% highlight xaml %}
 

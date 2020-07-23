@@ -17,7 +17,7 @@ OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view
 
 ### Enable an OSM
 
-You can enable this feature by setting the layerType property value as "OSM".
+You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LayerType.html) property value as "OSM".
 
 {% highlight xaml %}
  
@@ -78,7 +78,7 @@ Markers are used to leave some message on the map.
 
 ### Customizing the Marker Template
 
-The default appearance of the Marker can be customized by using the MarkerTemplate property.
+The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~MarkerTemplate.html) property.
 
 {% highlight xaml %}
 
@@ -159,7 +159,7 @@ You can enable this feature by defining the LayerType as Bing. 
 
 ### Bing Map Key
 
-The Bing map key is provided as input to this key property. The Bing Map key can be obtained from 
+The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~BingMapKey.html) is provided as input to this key property. The Bing Map key can be obtained from 
 
 [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
@@ -234,7 +234,9 @@ This feature allows you to set the initial zoom level automatically in two ways:
 
 N> DistanceType default value is KiloMeter.
 
-Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
+Calculate the initial zoom level automatically based on the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~Radius.html) and [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~DistanceType.html) properties of ImageryLayer.
+
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~Center.html) - Represents center point of ImageryLayer.  
 
 {% tabs %}
 
@@ -296,7 +298,7 @@ Calculate the initial zoom level automatically based on the `Radius` and `Distan
 
 ### Geo-bounds
 
-Calculate the initial zoom level automatically based on the LatLngBounds of ImageryLayer.
+Calculate the initial zoom level automatically based on the [`LatLngBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LatLngBounds.html) of ImageryLayer.
 
 {% tabs %}
 

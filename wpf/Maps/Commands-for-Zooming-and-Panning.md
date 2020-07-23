@@ -19,24 +19,23 @@ The Map control contains the following commands:
 
 ## ZoomIn Command
 
-ZoomIn command—zooms in the map.
+[`ZoomIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomInCommand.html) command zooms in the map.
 
 ## ZoomOut Command
 
-ZoomOut Command--zooms out the map.
+[`ZoomOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomOutCommand.html) command zooms out the map.
 
 ## Pan Command
 
-Pan Command is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
+[`PanCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~PanCommand.html) is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
 
 ## ZoomReset Command
 
-The ZoomReset command resets the ZoomLevel value of the Map control.
+The [`ZoomResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomResetCommand.html) resets the ZoomLevel value of the Map control.
 
 ## PanReset Command
 
-The PanReset command resets the map at its initial position; it resets the pan values.
-
+The [`PanResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~PanResetCommand.html) resets the map at its initial position; it resets the pan values.
 
 {% highlight xaml %}
 

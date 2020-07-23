@@ -71,7 +71,7 @@ Refer to the following code sample for customizing shapes.
 
 ### Customize selected shapes
 
-The shape selection is enabled when the [`EnableSelection`] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~EnableSelection.html) property is set to true. To customize the selected shapes alone, use the following properties:
+The shape selection is enabled when the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~EnableSelection.html) property is set to true. To customize the selected shapes alone, use the following properties:
 
 [`SelectedShapeColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeColor.html): Sets the color for selected shapes in a map.
 
@@ -209,6 +209,20 @@ ItemsTemplate is a type of DataTemplate that is used to override the default tem
 
 ![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
 
+## BaseMapIndex
+
+[`BaseMapIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~BaseMapIndex.html) property is used to set the front layer of multiple layer defined in maps controls
+
+{% highlight xml %}
+
+     <syncfusion:SfMap x:Name="Map" BaseMapIndex="0">
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer  Uri="DataMarkers.ShapeFiles.world1.shp"/>
+                <syncfusion:ShapeFileLayer   Uri="DataMarkers.ShapeFiles.usa_state.shp"/>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap >
+		
+{% endhighlight %}
 
 ## Events
 

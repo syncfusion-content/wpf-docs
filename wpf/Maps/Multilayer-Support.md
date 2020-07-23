@@ -19,11 +19,11 @@ Situations arise where, any combination of available shapefiles needs to be load
 
 ## Adding Multiple Layers in the Map
 
-ShapeFileLayer is the core layer for the map. Multiple layers can be added in the ShapeFileLayer itself. They have to be added in SubShapeFileLayers within the ShapeFileLayer.
+ShapeFileLayer is the core layer for the map. Multiple layers can be added in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) itself. They have to be added in SubShapeFileLayers within the ShapeFileLayer.
 
 ## SubShapeFileLayers
 
-SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is also a type of shapefile layer. The following code adds multiple layers in the ShapeFileLayer.
+SubShapeFileLayers is the collection of [`SubShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SubShapeFileLayer.html). SubShapeFileLayer is also a type of shapefile layer. The following code adds multiple layers in the ShapeFileLayer.
 
 
 {%tabs%}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Zooming and Panning
 
-The Zooming and Panning feature of the Map control allows you to zoom in and out and navigate the map.
+The Zooming and Panning feature of the Maps control allows you to zoom in and out and navigate the map.
 
 ## Zooming
 
-The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the ZoomLevel property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
+The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the [`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomLevel.html) property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
 
 ### Properties Related to Zooming
 
@@ -26,19 +26,19 @@ The following properties are related to the zooming feature of the Maps control:
 
 #### ZoomLevel
 
-ZoomLevel is the primary property of the zooming feature. It controls the map’s scale size while zooming. Initially, the zoom level is 1. ZoomLevel cannot be less than 1.
+[`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomLevel.html) is the primary property of the zooming feature. It controls the map’s scale size while zooming. Initially, the zoom level is 1. ZoomLevel cannot be less than 1.
 
 #### EnableZoom
 
-The EnableZoom property enables or disables the zooming feature. A “True” value of this property enables the zooming feature and “False” disables the zooming feature.
+The [`EnableZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnableZoom.html) property enables or disables the zooming feature. A “True” value of this property enables the zooming feature and “False” disables the zooming feature.
 
 #### MinZoom
 
-The MinZoom property is used to set the minimum zoom level of the map. 
+The [`MinZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MinZoom.html) property is used to set the minimum zoom level of the map. 
 
 ####  MaxZoom
 
-The MaxZoom property is used to set the maximum zoom level of the Map control.
+The [`MaxZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MaxZoom.html) property is used to set the maximum zoom level of the Map control.
 
 Sample code for setting zooming feature properties:
 
@@ -65,7 +65,7 @@ A map can be zoomed by changing the zoom level of the Map control. Incrementing 
 
 #### Through the Zoom method
 
-Maps can be zoomed through the Zoom method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
+Maps can be zoomed through the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Zoom.html) method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
 
 {% highlight C# %}
 
@@ -99,7 +99,7 @@ Properties related to Panning are:
 
 #### Enable and disable pan
 
-The EnablePan property enables or disables the panning feature of the map. A “True” value enables the panning feature. A “False” value disables the panning feature of the map.
+The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnablePan.html) property enables or disables the panning feature of the map. A “True” value enables the panning feature. A “False” value disables the panning feature of the map.
 
 {% highlight xaml %}
 
@@ -122,7 +122,7 @@ There are two methods for panning the map. They are:
 
 #### Through the Pan method
 
-The map can be panned with the Pan method in the Maps control. The Pan method has two parameters: x and y.  The map is translated with respect to the x and y parameters.
+The map can be panned with the [`Pan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Pan.html) method in the Maps control. The Pan method has two parameters: x and y.  The map is translated with respect to the x and y parameters.
 
 ##### Code sample for the Pan method:
 
