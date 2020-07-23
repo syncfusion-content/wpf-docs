@@ -65,7 +65,7 @@ documentation: ug
 
  ![Switching between Simplified and Normal layout mode](SimplifiedLayout_images/SwitchingSimplifiedAndNormalLayout.gif)
 
-### Visibility of the Ribbon items between normal and simplified layout
+## Visibility of the Ribbon items between normal and simplified layout
 
  The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings~SetDisplayMode.html) attached property. By default, items will be displayed in both normal and simplified layout. The [`DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.DisplayMode.html) is of flag enumeration type that contains the following values.
 
@@ -150,7 +150,7 @@ documentation: ug
 
  {% endtabs %}
 
-### Setting image for Ribbon items
+## Setting image for Ribbon items
 
  For **"Normal"** layout mode, the images from the [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SmallIcon.html) and [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~LargeIcon.html) properties are used inside the Ribbon items based on the size mode (extra small, small and large). However, the simplified layout mode uses 20 * 20 image size for the Ribbon items as standard and it can be obtained from the [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~MediumIcon.html) property. In-case if the [`IconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconTemplate.html) property is used to display the image, the simplified layout will automatically resize it to 20 * 20 size.
 
@@ -197,7 +197,7 @@ documentation: ug
 
  ![Setting item location using DisplayMode for Simplified layout](SimplifiedLayout_images/RibbonSimplifiedLayout.png)
  
- Click [here](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-Ribbon) to access the sample code that displays the simplified layout in the Ribbon control.
+ N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-Ribbon) in GitHub that showcases the simplified layout in the Ribbon control.
 
 ## Customizing the Ribbon during runtime through the QAT window
 
