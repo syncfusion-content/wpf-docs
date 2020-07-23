@@ -342,7 +342,7 @@ Any built-in themes can applied to the both syncfusion controls and framework co
 
 {% endtabs %}
 
-![Applied skinmanager for WPF SfDataGrid control](Skin-Manager_images/Skin-Manager_img3.png)
+![Applied skinmanager for WPF SfDataGrid control](Skin-Manager_images/Skin-Manager_img3.jpg)
 
 
 ## Apply a theme globally in the application
@@ -463,7 +463,7 @@ End Sub
 
 The built-in themes can be changed at runtime using the `VisualStyle` property. The controls can be used to switch various built-in themes at run time. Please refer to the below snippet for changing the visual style at runtime and their corresponding built-in themes added as a reference to the project.
 
-![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.png)
+![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.jpg)
 
 {% tabs %}
 
