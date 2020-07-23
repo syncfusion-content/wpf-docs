@@ -18,7 +18,7 @@ documentation: ug
  * **Small** - Displays the label and the image in 16 * 16 size.
  * **Large** - Displays the label and the image in 32 * 32 size.
 
- In the **simplified layout**, [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) displays the image in 20 * 20 size irrespective of the size mode and is arranged in a single line interface, allowing more screen space for compact content viewing.
+ In the **simplified layout**, [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) displays the image in 20 * 20 size irrespective of the size mode.
 
  {% tabs %}
 
