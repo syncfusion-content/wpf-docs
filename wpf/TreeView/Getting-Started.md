@@ -400,17 +400,23 @@ public class FileManagerViewModel
         xmlns:treeViewEngine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
         mc:Ignorable="d"
         Title="MainWindow" >
-		
-	<Window.DataContext>
+    
+    <Window.DataContext>
         <local:FileManagerViewModel/>
     </Window.DataContext>
 
     <Grid>
         <syncfusion:SfTreeView x:Name="treeView" ItemsSource="{Binding ImageNodeInfo}">
-            <sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
-                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
-                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
-            </sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+            <syncfusion:SfTreeView.HierarchyPropertyDescriptors>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:SubFile}" ChildPropertyName="Items"/>
+            </syncfusion:SfTreeView.HierarchyPropertyDescriptors>
+            <syncfusion:SfTreeView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FileName}" VerticalAlignment="Center" />
+                </DataTemplate>
+            </syncfusion:SfTreeView.ItemTemplate>
         </syncfusion:SfTreeView>
     </Grid>
 </Window>
