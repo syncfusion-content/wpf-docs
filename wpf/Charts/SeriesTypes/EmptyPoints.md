@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Series customization | SfChart | Wpf | Syncfusion
-description: Explains the grouping, empty points and other customization options of Series in WPF Charts (SfChart)
+title: Empty Points charts | SfChart | Wpf | Syncfusion
+description: This section explains Empty Points charts and its properties for customization in WPF Charts (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Series customization in WPF Charts (SfChart)
-
-## Empty Points
+# Empty Points in WPF Chart (SfChart)
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
@@ -35,7 +33,7 @@ By default, ShowEmptyPoints property is false. So the empty points will not be r
 ![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_3.png)
 
 
-### Display Empty Points
+## Display Empty Points
 
 You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) property as True. So we need to define the value for this empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) property.
 
@@ -142,7 +140,7 @@ The following code example shows the [`EmptyPointValue`](https://help.syncfusion
 ![Displaying empty points in WPF Chart](EmptyPoints_images/emptypoint_5.png)
 
 
-### Customizing Empty Points
+## Customizing Empty Points
 
 You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) property. The following are the values of EmptyPointStyle:
 
@@ -355,7 +353,7 @@ chart.Series.Add(series);
 ![Custom symbol for empty points in WPF Chart](EmptyPoints_images/emptypoint_9.png)
 
 
-### EmptyPoints and Series
+## EmptyPoints and Series
 
 The following section illustrates few chart types and its behavior with EmptyPoints.
 
@@ -372,191 +370,3 @@ The following section illustrates few chart types and its behavior with EmptyPoi
 **Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
 
 ![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_12.png)
-
-## Grouping Stacked Series
-
-You can group the stacked similar series using [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) property of stacked series. The stacked series which contains the same [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) will be stacked in a single group.
-
-The following code example shows how to group the stacking series.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <chart:StackingColumnSeries Interior="#4A4A4A" GroupingLabel="Group1" XBindingPath="Year" 
-         YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
-
-        <chart:StackingColumnSeries Interior="#BCBCBC" GroupingLabel="Group1" XBindingPath="Year" 
-          YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
-
-        <chart:StackingColumnSeries Interior="#7F7F7F" GroupingLabel="Group2" XBindingPath="Year"
-          YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
-
-        <chart:StackingColumnSeries Interior="#343434" GroupingLabel="Group2" XBindingPath="Year"
-          YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfChart chart = new SfChart();
-
-            StackingColumnSeries series1 = new StackingColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter1",
-                GroupingLabel = "Group1",
-                Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-            };
-
-            StackingColumnSeries series2 = new StackingColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter2",
-                GroupingLabel = "Group1",
-                Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-            };
-
-            StackingColumnSeries series3 = new StackingColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter3",
-                GroupingLabel = "Group2",
-                Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-            };
-
-            StackingColumnSeries series4 = new StackingColumnSeries()
-            {
-                ItemsSource = new ViewModel().AnnualDetails,
-                XBindingPath = "Year",
-                YBindingPath = "Quarter4",
-                GroupingLabel = "Group2",
-                Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
-            };
-
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
-            chart.Series.Add(series3);
-            chart.Series.Add(series4);
-{% endhighlight %}
-
-{% endtabs %}
-
-![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
-
-## Customize Series
-
-CustomTemplate property is used to customize the chart series. It supports the following series
-
-* BarSeries
-* BubbleSeries
-* ColumnSeries
-* LineSeries
-* ScatterSeries
-* SplineSeries
-* StackingBarSeries
-* StackingBar100Series
-* StackingColumnSeries
-* StackingColumn100Series
-* StepLineSeries
-* FastLineSeries
-* RangeColumnSeries
-
-The respective segment of each series will be your DataTemplate context, which contains the following properties in common. This will be used to plot the custom shapes for the series.
-
-* [`XData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~XData.html#)-Returns the actual X value of the segment.
-* [`YData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~YData.html#)-Returns the actual Y value of the segment.
-* [`Item`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Item.html#)-Returns the underlying model object of the segment.
-* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Interior.html#)-Returns the brush color of the segment.
-
-The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property:
-
-{% tabs %}
-
-{% highlight xaml %}
-
- <syncfusion:SfChart x:Name="chart">
-
-     <syncfusion:SfChart.Resources>
-
-            <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
-
-            <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>
-
-            <DataTemplate x:Key="seriesTemplate">
-
-                <Canvas>
-
-                    <Path Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
-                              
-                          Stretch="Fill" Height="{Binding ScatterHeight}"
-                              
-                          Width="{Binding ScatterWidth}" RenderTransformOrigin="0.5,0.5"
-                              
-                          Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
-                              
-                          Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
-                              
-                              0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
-
-                          <Path.RenderTransform>
-
-                                <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
-
-                          </Path.RenderTransform>
-
-                        </Path>
-
-                    </Canvas>
-
-                </DataTemplate>
-
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
-                                       
-                                XBindingPath="Year" YBindingPath="Count" 
-                                       
-                                ItemsSource="{Binding Data}"
-                                
-                                CustomTemplate="{StaticResource seriesTemplate}"/>
-
-</syncfusion:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ScatterSeries series = new ScatterSeries()
-{
-
-    ItemsSource = new ViewModel().Data,
-
-    XBindingPath = "Year",
-
-    YBindingPath = "Count",
-
-    ScatterHeight = 20,
-
-    ScatterWidth = 20,
-
-    Interior = new SolidColorBrush(Colors.DarkGray),
-
-    CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
-
-};
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
-
-The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries have been customized using the [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property. Refer to this [`sample`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart) for complete series CustomTemplate.
-
-![Customizing series in Syncfusion WPF SfChart](Styling-and-Customization_images/CustomTemplate.png)    
