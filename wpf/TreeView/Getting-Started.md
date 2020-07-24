@@ -188,16 +188,44 @@ You can create a tree view by binding the ItemsSource to a hierarchical data sou
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
         mc:Ignorable="d">
-    
+
     <Window.DataContext>
         <local:FileManagerViewModel/>
     </Window.DataContext>
-    
+
     <Grid>
         <syncfusion:SfTreeView x:Name="sfTreeView" 
                                ChildPropertyName="SubFiles"
-                               ItemsSource="{Binding ImageNodeInfo}"  >							   
-        </syncfusion:SfTreeView>							   
+                               ItemsSource="{Binding ImageNodeInfo}">
+
+            <syncfusion:SfTreeView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="grid">
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid>
+                                <Image Source="{Binding ImageIcon}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               Height="16"
+                                               Width="16"/>
+                            </Grid>
+                            <Grid Grid.Column="1"
+                                              Margin="1,0,0,0"
+                                              VerticalAlignment="Center">
+                                <TextBlock Text="{Binding ItemName}"
+                                                   Foreground="Black"
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center" 
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfTreeView.ItemTemplate>
+        </syncfusion:SfTreeView>
     </Grid>
 </Window>
 
@@ -372,17 +400,23 @@ public class FileManagerViewModel
         xmlns:treeViewEngine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
         mc:Ignorable="d"
         Title="MainWindow" >
-		
-	<Window.DataContext>
+    
+    <Window.DataContext>
         <local:FileManagerViewModel/>
     </Window.DataContext>
 
     <Grid>
         <syncfusion:SfTreeView x:Name="treeView" ItemsSource="{Binding ImageNodeInfo}">
-            <sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
-                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
-                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
-            </sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+            <syncfusion:SfTreeView.HierarchyPropertyDescriptors>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
+                <treeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:SubFile}" ChildPropertyName="Items"/>
+            </syncfusion:SfTreeView.HierarchyPropertyDescriptors>
+            <syncfusion:SfTreeView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FileName}" VerticalAlignment="Center" />
+                </DataTemplate>
+            </syncfusion:SfTreeView.ItemTemplate>
         </syncfusion:SfTreeView>
     </Grid>
 </Window>

@@ -12,7 +12,9 @@ documentation: ug
  Data points can be easily annotated with labels to help improve the readability of data.
 
 ## Define Label Content
-SfChart3D provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+To enable the marker in adornments you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html#) property as True. 
+
+ [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property allows you to define the value to be displayed as adornment label.
 
 {% tabs %}
 
@@ -59,53 +61,6 @@ SfChart3D provides the support to customize the label content using [`SegmentLab
 |[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)|
 |[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)|
 |[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)|
-
-
-## Label Rotation
-
-[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
-        YBindingPath="Value">                
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D LabelRotationAngle="45" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new StockViewModel().Demands,
-                XBindingPath = "Category",
-                YBindingPath = "Value",
-            };
-
-        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
-            {
-                ShowLabel = true,
-                LabelRotationAngle=45,
-                LabelPosition=AdornmentsLabelPosition.Outer,
-                UseSeriesPalette=true,
-                BorderBrush = new SolidColorBrush(Colors.White),
-                BorderThickness = new Thickness(1),
-            };
-
-        series.AdornmentsInfo = adornmentInfo;
-
-        chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Adornments label rotation support in WPF Chart](Adornments-Images/Label_Rotation.png)
 
 ## Customizing the label
 
@@ -167,6 +122,52 @@ The following code example demonstrates the customization of label using the abo
 
 ![Adornments label content customization support in WPF Chart](Adornments-Images/Label_appearance.png)
 
+## Label Rotation
+
+[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
+        YBindingPath="Value">                
+                <chart:ColumnSeries3D.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo3D LabelRotationAngle="45" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+                </chart:ColumnSeries3D.AdornmentsInfo>
+        </chart:ColumnSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ColumnSeries3D series = new ColumnSeries3D()
+            {
+                ItemsSource = new StockViewModel().Demands,
+                XBindingPath = "Category",
+                YBindingPath = "Value",
+            };
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowLabel = true,
+                LabelRotationAngle=45,
+                LabelPosition=AdornmentsLabelPosition.Outer,
+                UseSeriesPalette=true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                BorderThickness = new Thickness(1),
+            };
+
+        series.AdornmentsInfo = adornmentInfo;
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adornments label rotation support in WPF Chart](Adornments-Images/Label_Rotation.png)
+
 ## Label Format
 
 [`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html#) property allows you to provide formatting for the labels.
@@ -215,7 +216,7 @@ The following code example demonstrates the label having three decimal digits:
 ![Adornments label format support in WPF Chart](Adornments-Images/Label_Format.png)
 
 
-## ConnectorLine
+## Connector Line
 
 You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html#) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html#), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html#) properties.
 
