@@ -10,6 +10,7 @@ documentation: ug
 
 `RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items but `ListBoxItem` by default.
 
+## Add ListBox to the RibbonBar
 
 {% tabs %}
 

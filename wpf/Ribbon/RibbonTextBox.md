@@ -10,6 +10,7 @@ documentation: ug
 
 `RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
 
+## Add TextBox to the RibbonBar
 
 {% tabs %}
 
