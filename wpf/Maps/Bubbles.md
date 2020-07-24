@@ -75,7 +75,7 @@ Gets or sets the border color of the bubble.</td></tr>
 
 To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the [`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~AutoFillColor.html) as true and set the [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~Fill.html) property. Create the Model and ViewModel as illustrated in the [`Data Binding`](https://help.syncfusion.com/wpf/maps/custom-data-binding) topic and add the following code. 
 
-Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MaxSize.html), [`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MinSize.html), and [`ValuePath'](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~ValuePath.html) properties as illustrated in the following code example.
+Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MaxSize.html), [`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MinSize.html), and [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~ValuePath.html) properties as illustrated in the following code example.
 
 {% tabs %}
 
@@ -267,7 +267,6 @@ The fill color of a particular bubble fill can be determined by its under-bound 
  </syncfusion:BubbleMarkerSetting>
 
 {% endhighlight %}
-
 
 When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to “#7FEB737C”.  As mentioned earlier, the under-bound value of the bubble is set through the “ValuePath” in the BubbleMarkerSetting.
 
