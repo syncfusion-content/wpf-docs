@@ -35,12 +35,12 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend support in WPF Chart](Legend_images/legend_overview.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_pie.png)
 
 
 Each legend composed of the following parts:
 
-![Legend support in WPF Chart](Legend_images/legend_overview_1.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_elements_pie.png)
 
 
 ## Legend Icon
