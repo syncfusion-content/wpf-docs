@@ -9,11 +9,35 @@ documentation: ug
 
 # Data Label in WPF Charts (SfChart)
 
-Data points can be easily annotated with labels to help improve the readability of data. Labels are enabled by default but you can also change the visibility of the labels using [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
+Data points can be easily annotated with labels to help improve the readability of data. 
 
 ## Define Data Label 
 
-SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+To enable the Label in adornments you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
+
+[`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property allows you to define the value to be displayed as adornment label.
+
+The following code example demonstrates about define the value to be displayed as adornment label.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <syncfusion:ChartAdornmentInfo SegmentLabelContent="YValue" ShowLabel="True" LabelPosition="Outer"></syncfusion:ChartAdornmentInfo>
+
+{% endhighlight %}
+
+{% highlight c# %}
+        
+            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+            {
+               ShowLabel = true,
+               SegmentLabelContent=LabelContent.YValue
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
