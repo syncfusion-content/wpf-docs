@@ -11,13 +11,13 @@ documentation: ug
 
 A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is showing you, and can be represented in various colors and shapes based on the data.
 
-## Visibility
+## Legend visibility
 
-Legends are visible only by setting the [`LegendVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendVisibility.html) property of the Visibility type as Visible in the ShapeFileLayer.
+Legends are visible by setting the [`LegendVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendVisibility.html) property of the visibility type as `Visible` in the ShapeFileLayer.
 
-## Positioning
+## Legend Position
 
-Map legends can be positioned by setting the [`LegendPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendPosition.html) property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
+Map legends can be positioned by setting the [`LegendPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendPosition.html) property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the X-axis and the Y-axis with the help of the `LegendPositionX` and `LegendPositionY` properties available in ShapeFileLayer. For positioning the legend based on margins, corresponding to a map, `LegendPosition` must be set with value of `Default`.
 
 
 
@@ -44,11 +44,11 @@ Double</td><td>
 Gets or sets the margin value for the y axis.</td></tr>
 </table>
 
-## Header
+## Legend header
 
 A header for the legend can be added by setting the [`LegendHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendHeader.html) property of the string type.
 
-## Categories
+## Legend categories
 
 Legends are categorized as two types:
 
