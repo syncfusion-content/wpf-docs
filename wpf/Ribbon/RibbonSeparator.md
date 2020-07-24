@@ -10,6 +10,7 @@ documentation: ug
 
 `RibbonSeparator` used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
 
+## Add Separator to the RibbonBar
 
 {% tabs %}
 
