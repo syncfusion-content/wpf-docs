@@ -8,9 +8,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter 
+# Bubble and Scatter Charts in WPF Chart (SfChart)
 
-## Bubble
+## Bubble 
 
 [`BubbleSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries.html#) is represented by closely packed circles, whose areas are proportional to the quantities. 
 

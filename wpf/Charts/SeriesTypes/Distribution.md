@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Distribution charts
+# Distribution charts in WPF Chart (SfChart)
 
 ## Histogram 
 

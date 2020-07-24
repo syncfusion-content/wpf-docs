@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Column and Bar Charts
+# Column and Bar Charts in WPF Chart (SfChart)
 
 ## Column
 
@@ -159,7 +159,7 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Area_images/Area_img6.jpeg)
+![Column chart type placed side by side](Series_images/Area_img6.jpeg)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html#) as false.
@@ -287,7 +287,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Area_images/Area_img7.jpeg)
+![Column chart type place one over another.](Series_images/Area_img7.jpeg)
 
 
 N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.

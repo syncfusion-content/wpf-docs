@@ -20,5 +20,3 @@ The following APIs are common for the most of the series types:
 * [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html) – Represents the brush to fill the series.
 * [`Palette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) – Used to define the set of pre-defined or custom colors for the series.
 * [`IsSeriesVisible`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSeriesVisible.html) – A bool property, which is used to enable or disable the series visibility.
-
-

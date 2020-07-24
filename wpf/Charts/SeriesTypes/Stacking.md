@@ -7,8 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-
-# Stacking Charts
+# Stacking Charts in WPF Chart (SfChart)
 
 ## Stacking Line
 
