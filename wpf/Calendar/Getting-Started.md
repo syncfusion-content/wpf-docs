@@ -155,7 +155,8 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Select multiple dates
 
-If you want to select the multiple dates from the `CalendarEdit`, use the [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property value as `true`. You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDates.html) property.You can restrict the multiple selection by setting  value of `AllowMultiplySelection` property is `false`.
+You can select a multiple dates by drag and move the mouse from required start date to end date.
+ You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDates.html) property. You can restrict the multiple date selection by setting [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property as `false`. The default value of `AllowMultiplySelection` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -173,7 +174,7 @@ calendarEdit.AllowMultiplySelection = true;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf calendar control multiple date selection](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
+![CalendarEdit control displaying multiple selected dates](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -208,7 +209,7 @@ calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 08));
 
 ![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
 
-## Restrict date selection range
+## Restrict date selection
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MaxDate.html) in `CalendarEdit` control.
 
@@ -230,11 +231,11 @@ calendarEdit.MaxDate = new DateTime(2020, 05, 10);
 {% endhighlight  %}
 {% endtabs %}
 
-![Setting minimum and maximum value in WPF CalendarEdit](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+![CalendarEdit showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
-## Block particular dates 
+## Block dates
 
 If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection. You can add more block out date ranges to the `BlackoutDates` collection.
 
@@ -267,7 +268,7 @@ calendarEdit.BlackoutDates.Add(new BlackoutDatesRange() {
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Blackoutdates)
 
-## Highlight special days
+## Special days
 
 You can differentiate the special day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
 
@@ -339,10 +340,10 @@ calendarEdit.ShowWeekNumbers = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-## Change default calendar mode
+## Change default view (Month, Year, Decade)
 
 By default, the days are displayed in the `CalendarEdit`.
-You can change the default calendar mode as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
+You can change the default calendar view as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
 
 ![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
 
@@ -386,9 +387,9 @@ calendarEdit.Culture = new CultureInfo("fr-FR");
 
 ![wpf calendar control with french culture](Getting-Started_images/Culture.png)
 
-## Expand month and week day names
+## Show full month and week name
 
-You can display expanded month names and week day names by setting the [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) and [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) properties as `false`. The default value of `ShowAbbreviatedDayNames` and `ShowAbbreviatedDayNames` property is `true`.
+You can display full month names and week day names by setting the [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) and [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) properties as `false`. The default value of `ShowAbbreviatedDayNames` and `ShowAbbreviatedDayNames` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -407,7 +408,7 @@ calendarEdit.ShowAbbreviatedMonthNames = false;
 {% endhighlight %}
 {% endtabs %}
 
-![CalendarEdit with expanded weekday names](Getting-Started_images/FullDayNames.png)
+![CalendarEdit shows full month and week name](Getting-Started_images/FullDayNames.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -431,7 +432,7 @@ calendarEdit.SetToolTip(today, new ToolTip() { Content = "Today" });
 
 ![Tooltip for today and yesterday](Working-with-Calendar_images/Tooltip.png)
 
-## Date Changed Notification
+## Selected date changed notification
 
 The selected date changed in `CalendarEdit` can be examined using [DateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DateChanged_EV.html) event. The `DateChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
 
