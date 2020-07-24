@@ -324,13 +324,13 @@ The following code example shows the customization options for connector line:
  
  ![Connector Line in WPF Chart](Adornments_images/Line.png) 
 
- **Straight Line**
-
-![Connector line with StraightLine type](Adornments_images/StraightLine.png)
-
  **Bezier**
  
   ![Bezier in WPF Chart](Adornments_images/Bezier.png)
+
+   **Straight Line**
+
+![Connector line with StraightLine type](Adornments_images/StraightLine.png)
 
 ## Applying Series Brush
 
