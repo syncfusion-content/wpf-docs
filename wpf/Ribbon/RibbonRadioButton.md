@@ -10,6 +10,7 @@ documentation: ug
 
 RibbonRadioButton control is used to select a option like normal RadioButton . 
 
+## Add RadioButton to the RibbonBar
 
 {% tabs %}
 

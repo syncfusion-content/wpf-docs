@@ -9,10 +9,39 @@ documentation: ug
 
 # Serialization in WPF Charts (SfChart)
 
-SfChart supports serialization and deserialization to save the settings of the chart and reload. 
+SfChart provides the support for serializing and deserializing control. This section explains on how to serialize and deserialize SfChart.
 
-This can be done using [`Serialize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html#) and [`Deserialize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html#) methods as in below code example:
-
+<table>
+<tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
+<tr>
+<td>
+Serialize()</td><td>
+Serialize the control and saves as the XML file in the parent folder.</td></tr>
+<tr>
+<td>
+Serialize(string filePath)</td><td>
+Serialize the control and saves as the XML file in the given file path.</td></tr>
+<tr>
+<td>
+Serialize(Stream stream)</td><td>
+Serialize the control and saves as the XML file in the given stream.</td></tr>
+<tr>
+<td>
+Deserialize()</td><td>
+Deserialize the XML file from the parent folder and returns the SfChart control object.</td></tr>
+<tr>
+<td>
+Deserialize(string filePath)</td><td>
+Deserialize the XML file from the given file path and returns the SfChart control object.</td></tr>
+<tr>
+<td>
+Deserialize(Stream stream)</td><td>
+Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
+</table>
+{% tabs %}
 {% tabs %}
 
 {% highlight xaml %}
