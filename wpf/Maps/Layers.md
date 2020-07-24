@@ -118,7 +118,7 @@ The shape selection is enabled when the [`EnableSelection`](https://help.syncfus
 
 ## Appearance customization
 
-ItemsTemplate is a type of DataTemplate that is used to override the default template for map items. “Data” is the property that holds the object for a map item.
+ItemsTemplate is a type of DataTemplate that is used to override the default template for map items. `Data` is the property that holds the object for a map item.
 
 {% tabs %}
 
@@ -209,20 +209,119 @@ ItemsTemplate is a type of DataTemplate that is used to override the default tem
 
 ![Displaying Items on a Maps](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
 
-## BaseMapIndex
+## Displaying layer in the view
 
-[`BaseMapIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~BaseMapIndex.html) property is used to set the front layer of multiple layer defined in maps controls
+The [`BaseMapIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~BaseMapIndex.html) property allows drill-down from main layer to another layer.
+
+In the ShapeSelected event, the BaseMapIndex property has been used to change the layer when Australia shape is selected.
+
+{% tabs %}
 
 {% highlight xml %}
 
-     <syncfusion:SfMap x:Name="Map" BaseMapIndex="0">
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer  Uri="DataMarkers.ShapeFiles.world1.shp"/>
-                <syncfusion:ShapeFileLayer   Uri="DataMarkers.ShapeFiles.usa_state.shp"/>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap >
+<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.DataContext>
+            <local:DrilldownViewModel/>
+        </Grid.DataContext>
+        
+        <maps:SfMap x:Name="map">
+            <maps:SfMap.Layers>
+                <maps:ShapeFileLayer EnableSelection="True" x:Name="layer1" Uri="DataMarkers.ShapeFiles.world1.shp" 
+                                     ItemsSource="{Binding DataSource}" ShapeIDPath="Country" 
+                                     ShapeIDTableField="NAME" 
+                                     ShapesSelected="layer1_ShapesSelected">
+                    <maps:ShapeFileLayer.ShapeSettings>
+                        <maps:ShapeSetting  ShapeColorValuePath="Country" ShapeValuePath="Country">
+                        </maps:ShapeSetting>
+                    </maps:ShapeFileLayer.ShapeSettings>
+                    <maps:ShapeFileLayer.ItemsTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" IsHitTestVisible="False"/>
+                        </DataTemplate>
+                    </maps:ShapeFileLayer.ItemsTemplate>
+                </maps:ShapeFileLayer>
+                <maps:ShapeFileLayer x:Name="layer2" Uri="DataMarkers.ShapeFiles.australia.shp">
+                    <maps:ShapeFileLayer.ShapeSettings>
+                        <maps:ShapeSetting ShapeFill="#462A6D"/>
+                    </maps:ShapeFileLayer.ShapeSettings>
+                </maps:ShapeFileLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+        <Label x:Name="label" Grid.Row="1"
+               HorizontalAlignment="Center" Background="LightGray" Margin="10"
+               Content="Click on a Australia shape to drill down"/>
+    </Grid>
 		
 {% endhighlight %}
+
+{% highlight c# %}
+
+   private void layer1_ShapesSelected(object sender, SelectionEventArgs args)
+   {
+            MapShape mapShape = (args.Items as ObservableCollection<MapShape>)[0];
+
+            if (mapShape != null)
+            {
+                if (mapShape.ShapeValue.ToString() == "Australia")
+                {
+                    this.map.BaseMapIndex = 1;
+                    label.Visibility = Visibility.Collapsed;
+                }
+            }
+    }
+
+    public class DrilldownViewModel
+    {
+        public DrilldownViewModel()
+        {
+            DataSource = new ObservableCollection<DrilldownModel>();
+            DataSource.Add(new DrilldownModel("Afghanistan", "Asia"));
+            DataSource.Add(new DrilldownModel("Albania", "Europe"));
+            DataSource.Add(new DrilldownModel("United Arab Emirates", "Asia"));
+            DataSource.Add(new DrilldownModel("Argentina", "South America"));
+            DataSource.Add(new DrilldownModel("Armenia", "Asia"));
+            DataSource.Add(new DrilldownModel("French Southern and Antarctic Lands", "Seven seas (open ocean)"));
+            DataSource.Add(new DrilldownModel("Australia", "Australia"));
+            //..
+            //..
+            DataSource.Add(new DrilldownModel("Zambia", "Africa"));
+            DataSource.Add(new DrilldownModel("Zimbabwe", "Africa"));
+        }
+        public ObservableCollection<DrilldownModel> DataSource { get; set; }
+
+    }
+
+    public class DrilldownModel
+    {
+        public DrilldownModel(string country, string con)
+        {
+            this.Country = country;
+            this.Continent = con;
+        }
+        public string Continent
+        {
+            get;
+            set;
+        }
+        public string Country
+        {
+            get;
+            set;
+        }
+
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfMap shape layer drill down image](Layers_images/drill_down_image1.png)
+
+![SfMap shape layer drill down image](Layers_images/drill_down_image2.png)
 
 ## Events
 
@@ -272,3 +371,8 @@ The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WP
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+
+[`How to specify ItemTemplate to shape file layer`](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer)
+[`How to drilldown map layers`](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)

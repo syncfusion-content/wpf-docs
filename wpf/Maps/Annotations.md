@@ -14,9 +14,9 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 1. AnnotationLabel
 2. AnnotationSymbol
 
-[`AnnotationLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabel.html) is a “Text” that shows some information in the text format. 
+[`AnnotationLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabel.html) is a `Text` that shows some information in the text format. 
 
-[`AnnotationSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationSymbol.html) is a “VisualObject” that shows a note symbolically.
+[`AnnotationSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationSymbol.html) is a `VisualObject` that shows a note symbolically.
 
 1. [`AnnotationLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelForeground.html): Get or sets the foreground color of the annotation label.
 2. [`AnnotationLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelFontStyle.html): Gets or sets the font style of the annotation label.

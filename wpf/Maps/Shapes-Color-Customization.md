@@ -33,7 +33,7 @@ The below mentioned properties are available in the ShapesSetting property of th
 
 [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html) is a double type property that sets the border thickness of the shape in the map.
 
-These setting works only when “AutoFillColor” is set as false.
+These setting works only when `AutoFillColor` is set as false.
 
 
 {% highlight xaml %}
@@ -217,9 +217,9 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 ## CustomColorPalette
 
-Besides the built-in the color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the “CustomColors” in “ShapeSetting.” CustomColors is the collection property that accepts the “MapColorPalette.” To apply the custom colors, “ColorPalette” must be set to “CustomPalette” and CustomColors should be defined.
+Besides the built-in the color palettes, the custom colors can be defined for the color palette. The custom colors are defined in the `CustomColors` in `ShapeSetting`. CustomColors is the collection property that accepts the `MapColorPalette`. To apply the custom colors, `ColorPalette` must be set to `CustomPalette` and CustomColors should be defined.
 
-MapColorPalette contains a property named “FillBrush”. This property sets the fill color of the shape when custom palette is set.
+MapColorPalette contains a property named `FillBrush`. This property sets the fill color of the shape when custom palette is set.
 
 {% highlight xaml %}
 

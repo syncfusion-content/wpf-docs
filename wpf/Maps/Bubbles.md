@@ -268,9 +268,9 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 {% endhighlight %}
 
-When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to “#7FEB737C”.  As mentioned earlier, the under-bound value of the bubble is set through the “ValuePath” in the BubbleMarkerSetting.
+When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to `#7FEB737C`.  As mentioned earlier, the under-bound value of the bubble is set through the `ValuePath` in the BubbleMarkerSetting.
 
-When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as “Black.”
+When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as `Black`.
 
-“AutoFillColor” must be set as “false” to enable range color mapping.
+`AutoFillColor` must be set as `false` to enable range color mapping.
 ![RangeColorMapping](Bubbles_images/Bubbles_img3.png)

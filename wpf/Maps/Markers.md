@@ -480,3 +480,6 @@ If you set any view for the `MarkerTemplate` property of MarkerSelectedEventArgs
 
 ![Marker Selected Event Image](Marker_images/Marker Selected Event.png)
 
+## See Also
+
+[`How to customize the markers in maps`](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)

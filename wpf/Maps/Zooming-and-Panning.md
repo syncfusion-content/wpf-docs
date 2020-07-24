@@ -30,7 +30,7 @@ The following properties are related to the zooming feature of the Maps control:
 
 #### EnableZoom
 
-The [`EnableZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnableZoom.html) property enables or disables the zooming feature. A “True” value of this property enables the zooming feature and “False” disables the zooming feature.
+The [`EnableZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnableZoom.html) property enables or disables the zooming feature. A `True` value of this property enables the zooming feature and `False` disables the zooming feature.
 
 #### MinZoom
 
@@ -100,7 +100,7 @@ Properties related to Panning are:
 
 #### Enable and disable pan
 
-The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnablePan.html) property enables or disables the panning feature of the map. A “True” value enables the panning feature. A “False” value disables the panning feature of the map.
+The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnablePan.html) property enables or disables the panning feature of the map. A `True` value enables the panning feature. A `False` value disables the panning feature of the map.
 
 {% highlight xaml %}
 

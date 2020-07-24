@@ -13,11 +13,11 @@ SfMap control supports map providers such as OpenStreetMap that can be added to
 
 ## Open Street Map
 
-OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view, edit, and use geographical data in a collaborative way from any place on the Earth.
+The OpenStreetMap (OSM) is a map of the world built by a community of mappers that is free to use under an open license. It allows you to view geographical data in a collaborative way from anywhere on the Earth. It provides small tile images based on our requests and combines those images into a single one to display the map area in our maps control.
 
 ### Enable an OSM
 
-You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LayerType.html) property value as "OSM".
+You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LayerType.html) property value as `OSM`.
 
 {% highlight xaml %}
  
@@ -151,11 +151,11 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 ## Bing Map
 
-Bing Map is a key feature in accessing the external geospatial imagery services for deep-zoom satellite view.
+Bing maps is a map of the entire world owned by Microsoft. As with OSM, it provides map tile images based on our requests and combines those images into a single one to display a map area.
 
 ### Enable a Bing Map 
 
-You can enable this feature by defining the LayerType as Bing. 
+You can enable this feature by defining the LayerType as `Bing`. 
 
 ### Bing Map Key
 
@@ -163,8 +163,17 @@ The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Sync
 
 [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
+Maps supports three types of Bing map viewing style options.
+
+1. Aerial
+2. AerialWithLabel
+3. Road. 
+
+The default view of Bing map style is Road.
+
 ### Aerial View
 
+Aerial view displays satellite images to highlight roads and major landmarks for easy identification. To apply the Aerial view, you need to set BingMapStyle as `Aerial`, as shown in the following code.
 
 {% highlight xaml %}
        
@@ -182,10 +191,9 @@ The following screenshot illustrates the Aerial View.
 
 ![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.jpg)
 
-
-
 ### Road View
 
+Road view displays the default map view of roads, buildings, and geography. To apply the Road view, you need to set BingMapStyle as `Road`, as shown in the following code.
 
 {% highlight xaml %}
 
@@ -197,16 +205,14 @@ The following screenshot illustrates the Aerial View.
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the Road view.
 
 '![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
 
 
-
 ### AerialWithLabelView
 
+AerialWithLabel view displays the Aerial map areas with labels for continent, country, ocean, etc., names. To apply this type of view style, you need to set BingMapStyle as `AerialWithLabel`, as shown in the following code.
 
 {% highlight xaml %}
 
@@ -222,5 +228,8 @@ The following screenshot illustrates the AerialWithLabel view.
 
 ![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
+## See Also
+
+[`How to view Bing map using WPF Map control`](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
 

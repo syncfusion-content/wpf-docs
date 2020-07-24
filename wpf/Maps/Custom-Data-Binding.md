@@ -192,5 +192,8 @@ To show the custom data on the map, the CustomDataSourceTemplate must be specifi
 
 ![Maps control with custom Data Binding](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)
 
+## See Also
+
+[`How to render CustomDataSource in SfMap?`](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
 
 
