@@ -17,7 +17,7 @@ The default appearance of the MapPoint can be customized by using the [`MapPoint
 
 ## About MapPointTemplate Property
 
-MapPointTemplate is a DataTemplate type, used to customize or override the default template of MapPoints.
+`MapPointTemplate` is a DataTemplate type, used to customize or override the default template of MapPoints.
 
 {% highlight xaml %}
 
@@ -79,7 +79,7 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
 
 {% highlight xaml %}
 
-<syncfusion:SfMap >
+<syncfusion:SfMap>
      <syncfusion:SfMap.Layers>
          <syncfusion:ShapeFileLayer Background="White" EnableSelection="True" 
                                     Uri="MapApp.ShapeFiles.states.shp">
