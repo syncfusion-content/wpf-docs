@@ -324,6 +324,24 @@ You can differentiate the special day from other days by setting that date value
 {% tabs %}
 {% highlight XAML %}
 
+//ViewModel.cs
+public class ViewModel {
+	private SpecialDatesCollection specialDates;
+	public SpecialDatesCollection SpecialDates {
+		get { return specialDates; }
+		set { specialDates = value; }
+	}
+	public ViewModel() {
+		SpecialDates = new SpecialDatesCollection();
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
     <Window.Resources>
         <DataTemplate x:Key="WorldEnvironmentDay" >
             <Image Source="Resources\Icon_Environmental day.png" />
