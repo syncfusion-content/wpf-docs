@@ -81,8 +81,6 @@ _RibbonBar2.Items.Add(_splitbutton)
  * **Small** - Displays the label and the image in 16 * 16 size.
  * **Large** - Displays the label and the image in 32 * 32 size.
 
-In the **simplified layout**, [`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size mode.
-
 {% tabs %}
 
 {% highlight XAML %}
@@ -132,7 +130,7 @@ _ribbonBar2.Items.Add(_splitbutton3)
 
 ![Various size forms in SplitButton](SplitButton_images/SplitButton_img2.jpg)
 
-N> When **simplified** layout is set, the image will be automatically resized to 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
+N> When **simplified** layout is set, [`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
 ## Setting image to SplitButton
 

@@ -18,8 +18,6 @@ documentation: ug
  * **Small** - Displays the label and the image in 16 * 16 size.
  * **Large** - Displays the label and the image in 32 * 32 size.
 
- In the **simplified layout**, [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) displays the image in 20 * 20 size irrespective of the size mode.
-
  {% tabs %}
 
  {% highlight XAML %}
@@ -138,7 +136,7 @@ documentation: ug
 
  ![Various size forms of RibbonButton](RibbonButton_images/RibbonButton_SizeForm.png)
 
-N> When **simplified** layout is set, the image will be automatically resized to 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
+N> When **simplified** layout is set, [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
 ## Setting image to RibbonButton
 
