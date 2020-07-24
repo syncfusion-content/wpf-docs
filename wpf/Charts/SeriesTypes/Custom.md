@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Series | SfChart | Wpf | Syncfusion
-description: This section explains Custom Series and its properties for customization in WPF Charts (SfChart)
+description: This section explains Custom Series and its properties for customization (Template) in WPF Charts (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug

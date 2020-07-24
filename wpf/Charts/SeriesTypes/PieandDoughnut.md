@@ -337,7 +337,7 @@ chart.Series.Add(doughnut1);
 
 ![DoughnutSize support in WPF Chart](Series_images/HoleSize.png)
 
-**HoleSize**
+**Hole Size**
 
 [`DoughnutHoleSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutHoleSizeProperty.html) is an attachable property. It gets or sets the double value, which is used to customize the doughnut hole size. Its value ranges from 0 to 1, and it can be set as shown in the following code example.
 
