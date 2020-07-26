@@ -111,6 +111,18 @@ You can customize the appearance of the `CalendarEdit` control by using the [SfS
 * VisualStudio2015
 
 {% tabs %}
+{% highlight xaml %}
+
+<Window>
+    <!--Theme Namespace-->
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:CalendarEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                 Name="calendarEdit" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
 {% highlight C# %}
 
 //Namespace for the SfSkinManager.
