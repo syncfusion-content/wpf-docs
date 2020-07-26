@@ -9,11 +9,35 @@ documentation: ug
 
 # Data Label in WPF Charts (SfChart)
 
-Data points can be easily annotated with labels to help improve the readability of data. Labels are enabled by default but you can also change the visibility of the labels using ['ShowLabel'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of ['ChartAdornmentInfo'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
+Data points can be easily annotated with labels to help improve the readability of data. 
 
-## Define Label Content
+## Define Data Label 
 
-SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+To enable the Label in adornments you have to set the [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
+
+[`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property allows you to define the value to be displayed as adornment label.
+
+The following code example demonstrates about define the value to be displayed as adornment label.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <syncfusion:ChartAdornmentInfo SegmentLabelContent="YValue" ShowLabel="True" LabelPosition="Outer"></syncfusion:ChartAdornmentInfo>
+
+{% endhighlight %}
+
+{% highlight c# %}
+        
+            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+            {
+               ShowLabel = true,
+               SegmentLabelContent=LabelContent.YValue
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
@@ -23,64 +47,6 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 | XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
 | YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
 | YValue | Displays the Y value of series' point| ![ YValue in Adornment](Adornments_images/YValue.png) |
-
-## Label Format
-
-[`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html#) property allows you to provide formatting for the labels.
-
-The following code example demonstrates the y value having three decimal digits.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="#.000" AdornmentsPosition="Top">
-        </syncfusion:ChartAdornmentInfo>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-        {
-             ShowLabel = true,
-            SegmentLabelFormat = "0.000"
-        };
-
-{% endhighlight %}
-
-{% endtabs %}
-
-In the following image, you can see the decimal position will be rounded off to two digits by default.
-
-![Adornments label format support in WPF Chart](Adornments_images/label_format.png)
-
-## Label Rotation
-
-[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <syncfusion:ColumnSeries.AdornmentsInfo>
-             <syncfusion:ChartAdornmentInfo LabelPosition="Outer" LabelRotationAngle="45" ShowLabel="True"></syncfusion:ChartAdornmentInfo>
-        </syncfusion:ColumnSeries.AdornmentsInfo>
-{% endhighlight %}
-
-{% highlight c# %}
-
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                LabelRotationAngle = 45,
-                LabelPosition=AdornmentsLabelPosition.Outer          
-            };
-{% endhighlight %}
-
-{% endtabs %}
-
-![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
 
 ## Customizing Labels
 
@@ -132,7 +98,7 @@ The following code example demonstrates the customization of label using the abo
 
 ![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.png)
 
-## LabelTemplate
+## Label Template
 
 The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html) property as in the below code example:
 
@@ -203,6 +169,63 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 ![LabelTemplate support for adornments in WPF Chart](Adornments_images/label_template.png)
 
+## Label Format
+
+[`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html#) property allows you to provide formatting for the labels.
+
+The following code example demonstrates the y value having three decimal digits.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="#.000" AdornmentsPosition="Top">
+        </syncfusion:ChartAdornmentInfo>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        {
+             ShowLabel = true,
+            SegmentLabelFormat = "0.000"
+        };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+In the following image, you can see the decimal position will be rounded off to two digits by default.
+
+![Adornments label format support in WPF Chart](Adornments_images/label_format.png)
+
+## Label Rotation
+
+[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <syncfusion:ColumnSeries.AdornmentsInfo>
+             <syncfusion:ChartAdornmentInfo LabelPosition="Outer" LabelRotationAngle="45" ShowLabel="True"></syncfusion:ChartAdornmentInfo>
+        </syncfusion:ColumnSeries.AdornmentsInfo>
+{% endhighlight %}
+
+{% highlight c# %}
+
+            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+            {
+                ShowLabel = true,
+                LabelRotationAngle = 45,
+                LabelPosition=AdornmentsLabelPosition.Outer          
+            };
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
 
 ## Connector Line
 
@@ -325,13 +348,13 @@ The following code example shows the customization options for connector line:
  
  ![Connector Line in WPF Chart](Adornments_images/Line.png) 
 
- **StraightLine**
-
-![Connector line with StraightLine type](Adornments_images/StraightLine.png)
-
  **Bezier**
  
   ![Bezier in WPF Chart](Adornments_images/Bezier.png)
+
+   **Straight Line**
+
+![Connector line with StraightLine type](Adornments_images/StraightLine.png)
 
 ## Applying Series Brush
 
