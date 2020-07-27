@@ -194,6 +194,6 @@ To show the custom data on the map, the CustomDataSourceTemplate must be specifi
 
 ## See Also
 
-[`How to render CustomDataSource in SfMap?`](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
+[How to render CustomDataSource in SfMap?](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
 
 
