@@ -33,7 +33,7 @@ calendarEdit.MaxDate = new DateTime(2020, 05, 10);
 {% endhighlight  %}
 {% endtabs %}
 
-![Setting minimum and maximum value in WPF CalendarEdit](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
+![CalendarEdit showing dates that are disabled](Getting-Started_images/wpf-calendar-control-min-max-dates.png)
 
 N> The `MaxDate` should be greater than `MinDate` of the `CalendarEdit`. If the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` will be reset to the `MaxDate`.
 
@@ -87,7 +87,7 @@ calendarEdit.DisableDateSelection = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Restrict-Date)
 
-## Block particular dates 
+## Block dates
 
 If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection. You can add more block out date ranges to the `BlackoutDates` collection.
 
