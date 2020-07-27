@@ -23,7 +23,7 @@ Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/)
 
 **Method 2: Adding SfMap reference from toolbox**
 
-You can drag the SfMap control from the  toolbox and drop it to the designer. It will automatically install the required NuGet packages and add the namespace to the page. 
+You can drag the SfMap control from the  toolbox and drop it to the designer. It will automatically reference the required assemblies and add the namespace to the page. 
 
 **Method 3: Adding SfMap assemblies manually from the installed location**
 
@@ -31,7 +31,7 @@ If you prefer to manually reference the assemblies instead referencing from NuGe
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding map to your project.
+You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfmaps) link to know about the assemblies required for adding map to your project.
 
 ## Create SfMap control 
 
