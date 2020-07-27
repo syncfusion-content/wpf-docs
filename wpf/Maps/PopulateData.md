@@ -9,11 +9,11 @@ documentation: ug
 
 # Populate Data with SfMap
 
-This section explains how to populate shape data for providing data input to the maps control and usage of the `ItemsSource` property.
+This section explains how to populate shape data for providing data input to the maps control and usage of the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsSource.html) property.
 
 ## Data binding
 
-The maps control supports data binding using the `ItemsSource` property in the shape layers.
+The maps control supports data binding using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsSource.html) property in the shape layers.
 
 The following properties in shape layers are used for binding data in the maps control:
 
@@ -35,7 +35,7 @@ The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusi
 
 ### ShapeValuePath
 
-ShapeValuePath is a string type property used to define the object bound to the shapes of the map. The ShapeValuePath must be the name of any property that is defined in the ItemsSource items. The ShapeIDPath, ShapeIDTableField, and ShapeValue paths are dependent upon one another. Without specifying the ShapeIDPath and ShapeIDTableField, ShapeValuePath has no effect. When ShapeIDPath and ShapeIDTableField are properly set as mentioned in the Data Binding section, the ShapeValuePath has an impact on the map.
+[`ShapeValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeValuePath.html) is a string type property used to define the object bound to the shapes of the map. The ShapeValuePath must be the name of any property that is defined in the ItemsSource items. The ShapeIDPath, ShapeIDTableField, and ShapeValue paths are dependent upon one another. Without specifying the ShapeIDPath and ShapeIDTableField, ShapeValuePath has no effect. When ShapeIDPath and ShapeIDTableField are properly set as mentioned in the Data Binding section, the ShapeValuePath has an impact on the map.
 
 ### Role of DBF file in Data Binding
 

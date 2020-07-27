@@ -136,7 +136,7 @@ You can customize the previous and next navigation buttons by using the [Previou
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Previous-NextButton)
 
-## Change direction of previous or next month navigation 
+## Change navigation direction
 
 You can change previous or next month navigation direction to either `Horizontal` or `Vertical` by using the [MonthChangeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MonthChangeDirection.html) property. The default value of `MonthChangeDirection` property is `Horizontal`.
 
@@ -153,7 +153,7 @@ calendarEdit.MonthChangeDirection = AnimationDirection.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![Navigation between next and previous months animation direction to vertical](Navigation_images/MonthChangeDirection.gif)
+![Navigation between next and previous months animation direction changed to vertical](Navigation_images/MonthChangeDirection.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Navigation)
 

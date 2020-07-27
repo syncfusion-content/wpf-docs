@@ -13,27 +13,20 @@ SfMap control supports map providers such as OpenStreetMap that can be added to
 
 ## Open Street Map
 
-OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view, edit, and use geographical data in a collaborative way from any place on the Earth.
+The OpenStreetMap (OSM) is a map of the world built by a community of mappers that is free to use under an open license. It allows you to view geographical data in a collaborative way from anywhere on the Earth. It provides small tile images based on our requests and combines those images into a single one to display the map area in our maps control.
 
 ### Enable an OSM
 
-You can enable this feature by setting the layerType property value as "OSM".
+You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LayerType.html) property value as `OSM`.
 
 {% highlight xaml %}
  
-
-
-
-
-        <syncfusion:SfMap>
-
-            <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="OSM" />
-
-            </syncfusion:SfMap.Layers>
-
-        </syncfusion:SfMap >
+   <syncfusion:SfMap ZoomLevel="3">
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ImageryLayer LayerType="OSM"/>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+       
 {% endhighlight %}
 ![OSM map image](Map-Providers_images/OSM_Map_image.png)
 
@@ -67,7 +60,6 @@ Markers are used to leave some message on the map.
     {
         public ObservableCollection<Model> Models { get; set; }
 
-        public ObservableCollection<Country> AfricaList { get; set; }
         public MapViewModel()
         {
             this.Models = new ObservableCollection<Model>();
@@ -86,7 +78,7 @@ Markers are used to leave some message on the map.
 
 ### Customizing the Marker Template
 
-The default appearance of the Marker can be customized by using the MarkerTemplate property.
+The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~MarkerTemplate.html) property.
 
 {% highlight xaml %}
 
@@ -122,7 +114,7 @@ The default appearance of the Marker can be customized by using the MarkerTempla
 
 ![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
-Refer to this [`link`](<a href="/wpf/Maps/markers">Markers</a>) for customizing marker icons, labels, marker alignment, marker selection and events. 
+Refer to this [`link`](https://help.syncfusion.com/wpf/maps/markers) for customizing marker icons, labels, marker alignment, marker selection and events. 
 
 ### Adding a multiple layers in OSM
 
@@ -137,30 +129,19 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 {% highlight xaml %}
 
         <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
                 <syncfusion:ImageryLayer LayerType="OSM" >
-                                    
-                    <syncfusion:ImageryLayer.SubShapeFileLayers>
-                    
-                        <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">
-                            
-                            <syncfusion:SubShapeFileLayer.ShapeSettings>
-                               
-                                <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>
-                           
-                            </syncfusion:SubShapeFileLayer.ShapeSettings>
-                       
-                        </syncfusion:SubShapeFileLayer>
-                   
-                    </syncfusion:ImageryLayer.SubShapeFileLayers>
-               
+                    <syncfusion:ImageryLayer.SubShapeFileLayers>                   
+                        <syncfusion:SubShapeFileLayer  Uri="DataMarkers.ShapeFiles.Africa.shp">                            
+                            <syncfusion:SubShapeFileLayer.ShapeSettings>                               
+                                <syncfusion:ShapeSetting  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5"  ShapeFill="Chocolate"/>                           
+                            </syncfusion:SubShapeFileLayer.ShapeSettings>                       
+                        </syncfusion:SubShapeFileLayer>                   
+                    </syncfusion:ImageryLayer.SubShapeFileLayers>               
                 </syncfusion:ImageryLayer>     
-
             </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
-        </syncfusion:SfMap >
 {% endhighlight %}
 
 
@@ -170,36 +151,36 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 ## Bing Map
 
-Bing Map is a key feature in accessing the external geospatial imagery services for deep-zoom satellite view.
+Bing maps is a map of the entire world owned by Microsoft. As with OSM, it provides map tile images based on our requests and combines those images into a single one to display a map area.
 
 ### Enable a Bing Map 
 
-You can enable this feature by defining the LayerType as “bing”. 
+You can enable this feature by defining the LayerType as `Bing`. 
 
 ### Bing Map Key
 
-The bing Map key is provided as input to this key property. The Bing Map key can be obtained from 
+The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~BingMapKey.html) is provided as input to this key property. The Bing Map key can be obtained from 
 
 [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
+Maps supports three types of Bing map viewing style options.
+
+1. Aerial
+2. AerialWithLabel
+3. Road. 
+
+The default view of Bing map style is Road.
+
 ### Aerial View
 
+Aerial view displays satellite images to highlight roads and major landmarks for easy identification. To apply the Aerial view, you need to set BingMapStyle as `Aerial`, as shown in the following code.
 
 {% highlight xaml %}
        
-
-
-
-
-
 	   <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Aerial" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Aerial" />  
             </syncfusion:SfMap.Layers>
-
         </syncfusion:SfMap >
 
 {% endhighlight %}
@@ -210,316 +191,45 @@ The following screenshot illustrates the Aerial View.
 
 ![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.jpg)
 
-
-
 ### Road View
 
+Road view displays the default map view of roads, buildings, and geography. To apply the Road view, you need to set BingMapStyle as `Road`, as shown in the following code.
 
 {% highlight xaml %}
 
-
-
-
-
-
        <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Road" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="Road" />     
             </syncfusion:SfMap.Layers>
-
         </syncfusion:SfMap >
 
 {% endhighlight %}
-
-
 
 The following screenshot illustrates the Road view.
 
 '![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
 
 
-
 ### AerialWithLabelView
 
+AerialWithLabel view displays the Aerial map areas with labels for continent, country, ocean, etc., names. To apply this type of view style, you need to set BingMapStyle as `AerialWithLabel`, as shown in the following code.
 
 {% highlight xaml %}
 
-
-
-
-
-
         <syncfusion:SfMap>
-
             <syncfusion:SfMap.Layers>
-
-                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="AerialWithLabels" />     
-
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="<Your Bing map key>" BingMapStyle="AerialWithLabels" />    
             </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
-        </syncfusion:SfMap >
 {% endhighlight %}
-
-
-
 
 The following screenshot illustrates the AerialWithLabel view.
 
 ![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
+## See Also
 
-## Calculate a zoom level
+[`How to view Bing map using WPF Map control`](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
-This feature allows you to set the initial zoom level automatically in two ways:
 
-* Distance Radius(KM/miles)
-* Geo-bounds(Northeast, Southwest)
-
-### Distance Radius 
-
-N> DistanceType default value is KiloMeter.
-
-Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-      <Window.Resources>
-        <ResourceDictionary >
-            <DataTemplate x:Key="markerTemplate">
-                <Grid Margin="-12,-30,0,0">
-                    <Canvas>
-                        <Image Source="pin.png" Height="30"/>
-                    </Canvas>
-                </Grid>
-            </DataTemplate>
-        </ResourceDictionary>
-    </Window.Resources>
-	
-    <Grid>
-        <maps:SfMap>
-            <maps:SfMap.Layers>
-                <maps:ImageryLayer MarkerTemplate="{StaticResource ResourceKey=markerTemplate}" Markers="{Binding Models}" Center="38.909804, -77.043442" Radius="5" DistanceType="KiloMeter" >
-                </maps:ImageryLayer>
-            </maps:SfMap.Layers>
-        </maps:SfMap>
-    </Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfMap maps = new SfMap();
-            ImageryLayer layer = new ImageryLayer();
-            layer.Center = new Point(38.909804, -77.043442);
-            layer.Radius = 5;
-            layer.DistanceType = DistanceType.KiloMeter;
-            layer.Markers = obj.Models;
-            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
-            maps.Layers.Add(layer);
-			
-	  public class Model
-      {
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-      }
-			
-	   public class ViewModel
-       {
-          public ObservableCollection<Model> Models { get; set; }
-          public ViewModel()
-          {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
-         }
-      }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Geo-bounds
-
-Calculate the initial zoom level automatically based on the LatLngBounds of ImageryLayer.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <Window.Resources>
-        <ResourceDictionary >
-            <DataTemplate x:Key="markerTemplate">
-                <Grid Margin="-12,-30,0,0">
-                    <Canvas>
-                        <Image Source="pin.png" Height="30"/>
-                    </Canvas>
-                </Grid>
-            </DataTemplate>
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <maps:SfMap>
-            <maps:SfMap.Layers>
-                <maps:ImageryLayer LayerType="OSM" MarkerTemplate="{StaticResource ResourceKey=markerTemplate}"  Markers="{Binding Models}"  >
-                    <maps:ImageryLayer.LatLngBounds>
-                        <maps:LatLngBounds Northeast="38.909804, -77.043442" Southwest="38.909804, -77.043442" >
-                        </maps:LatLngBounds>
-                    </maps:ImageryLayer.LatLngBounds>
-                </maps:ImageryLayer>
-            </maps:SfMap.Layers>
-        </maps:SfMap>
-    </Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfMap maps = new SfMap();
-            ImageryLayer layer = new ImageryLayer();
-            LatLngBounds bounds = new LatLngBounds();
-            bounds.Northeast = new Point(38.909804, -77.043442);
-            bounds.Southwest = new Point(38.909804, -77.043442);
-            layer.LatLngBounds = bounds;
-            layer.Markers = obj.Models;
-            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
-            maps.Layers.Add(layer);
-			
-	  public class Model
-      {
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-      }
-			
-	   public class ViewModel
-       {
-          public ObservableCollection<Model> Models { get; set; }
-          public ViewModel()
-          {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
-         }
-      }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius, and calculate zoom level based on Radius value.
-
-![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.jpg)
-
-## Calculate the map tile layer bounds
-
-Calculate the imagery layer pixel bounds while zooming, panning, and Geo-Coordinate value changing.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-      <maps:SfMap>
-            <maps:SfMap.Layers>
-                <maps:ImageryLayer x:Name="layer"  Center="30.9709225, -100.2187212" CenterChanged="layer_CenterChanged">
-                </maps:ImageryLayer>
-            </maps:SfMap.Layers>
-      </maps:SfMap>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-    public partial class MapBound : ContentPage
-    {
-        ImageryLayer layer = new ImageryLayer();
-        public MapBound()
-        {
-            InitializeComponent();
-            SfMap maps = new SfMap();
-            layer.Center = new Point(30.9709225, -100.2187212);
-            layer.CenterChanged += layer_CenterChanged;
-            maps.Layers.Add(layer);
-            this.Content = maps;
-        }
-        private void layer_CenterChanged(object sender, CenterChangedEventArgs e)
-        {
-            var pixelbounds = layer.MapBounds;
-        }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Pinch zooming
-
-If you want to zoom the imagery layer using fingers by touch, then you have to enable `EnableZoom` and `IsManipulationEnabled` property of map control.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <Window.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="markerTemplate">
-                <Grid>
-                    <Canvas Margin="-12,-30,0,0">
-                        <Image Source="pin.png" Height="30" />
-                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="20" FontFamily="Segoe UI" Text="{Binding Label}"/>
-                    </Canvas>
-                </Grid>
-            </DataTemplate>
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <Grid>
-            <syncfusion:SfMap ZoomLevel="3" IsManipulationEnabled="True" EnableZoom="True">
-                <syncfusion:SfMap.Layers>
-                    <syncfusion:ImageryLayer  Markers="{Binding Models}" MarkerTemplate="{StaticResource markerTemplate}">
-                    </syncfusion:ImageryLayer>
-                </syncfusion:SfMap.Layers>
-            </syncfusion:SfMap>
-        </Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfMap maps = new SfMap();
-            ImageryLayer layer = new ImageryLayer();
-            layer.Markers = view.Models;
-            maps.ZoomLevel = 3;
-            layer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
-            maps.IsManipulationEnabled = true;
-            maps.EnableZoom = true;
-            maps.Layers.Add(layer);
-            this.Content = maps;
-			
-    public class ViewModel
-    {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
-        {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Label = "USA", Latitude = "38.8833N", Longitude = "77.0167W" });
-            this.Models.Add(new Model() { Label = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
-            this.Models.Add(new Model() { Label = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
-            this.Models.Add(new Model() { Label = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
-            this.Models.Add(new Model() { Label = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
-        }
-    }
-
-    public class Model
-    {
-        public string Label { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF SfMaps pinch zoom image](Map-Providers_images/Marker_PinchZooming.gif)
