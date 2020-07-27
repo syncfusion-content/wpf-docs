@@ -374,5 +374,5 @@ The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WP
 
 ## See Also
 
-[`How to specify ItemTemplate to shape file layer`](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer)
-[`How to drilldown map layers`](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
+[How to specify ItemTemplate to shape file layer?](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer)
+[How to drilldown map layers?](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
