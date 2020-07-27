@@ -49,6 +49,6 @@ SfMap offers two utility methods to transform the pixel values to longitude and 
 
 {% endtabs %}
 
-![Set the center from screen point](Map-Points_images/Change_Center_Point_Before.png)
+![Set the center from screen point](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_Before.png)
 
-![Set the center from screen point](Map-Points_images/Change_Center_Point_After.png)
+![Set the center from screen point](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_After.png)

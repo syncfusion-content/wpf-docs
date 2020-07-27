@@ -230,6 +230,6 @@ The following screenshot illustrates the AerialWithLabel view.
 
 ## See Also
 
-[`How to view Bing map using WPF Map control`](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
+[How to view Bing map using WPF Map control?](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
 
