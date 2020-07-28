@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch UI| SkinManager | Wpf | Syncfusion
-description: touch ui 
+title: Touch UI| SkinStorage | Wpf | Syncfusion
+description: The touch support in skinstorage allows users to interact with some Syncfusion WPF controls with finger gestures on touchscreen devices.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
-# Touch UI 
+# Touch support UI in skin storage
 
 The touch support allows users to interact with some Syncfusion WPF controls with finger gestures on touchscreen devices.
 
@@ -52,8 +52,8 @@ SkinStorage.SetEnableTouch(this, true);
 
 ## Controls with touch UI
 
-![C:/Users/ramalakshmim/Desktop/New folder/New folder/screenshot008.png](Touch-UI_images/Touch-UI_img1.png)
+![Controls with touch UI Pic_1](Touch-UI_images/Touch-UI_img1.png)
 
-![C:/Users/ramalakshmim/Desktop/New folder/New folder/Tree-touch.png](Touch-UI_images/Touch-UI_img2.png)
+![Controls with touch UI Pic_2](Touch-UI_images/Touch-UI_img2.png)
 
-![C:/Users/ramalakshmim/Desktop/New folder/New folder/Menu-touch.png](Touch-UI_images/Touch-UI_img3.png)
+![Controls with touch UI Pic_3](Touch-UI_images/Touch-UI_img3.png)

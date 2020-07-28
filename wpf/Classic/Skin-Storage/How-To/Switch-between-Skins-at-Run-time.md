@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Switch between Skins at Run time| SkinManager | Wpf | Syncfusion
-description: switch between skins at run-time
+title: Switch between Skins | SkinStorage | Wpf | Syncfusion
+description: The themes can be switched dynamically using the Syncfusion Skin Picker control and by using the Combobox Selection Changed event.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
@@ -25,7 +25,7 @@ You can use the Syncfusion Skin Picker Control to switch between the skins. Just
 {% endhighlight %}
 {% endtabs %}
 
-![](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img1.png)
+![Switch between skins at runtime](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img1.png)
 
 
 
@@ -83,7 +83,7 @@ The output is displayed as shown below.
 
 
 
-![](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img2.png)
+![Switch selection at runtime using combobox selection](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img2.png)
 
 
 
