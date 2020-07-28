@@ -72,7 +72,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Rim customization
 
-The color and thickness of the rim can be set by using the `RimStroke` and `RimStrokeThickness` properties.
+The color and thickness of the rim can be set by using the [`RimStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimStroke.html) and [`RimStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimStrokeThickness.html) properties.
 
 {% tabs %}
 
@@ -127,8 +127,8 @@ sfCircularGauge.Scales.Add(circularScale);
 ## Setting a position for rim
 
 You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge~Scales.html) in the following two ways:
-1.	 `RadiusFactor` property.
-2.	 `Radius` property.
+1.	 [`RadiusFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RadiusFactor.html) property.
+2.	 [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~Radius.html) property.
 
 ### Setting a radius factor for rim
 
@@ -234,7 +234,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ### Show rim
 
-The `ShowRim` property is a Boolean property, which is used to enable or disable the rim in circular gauge.
+The [`ShowRim`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowRim.html) property is a Boolean property, which is used to enable or disable the rim in circular gauge.
 
 N> Default value of the ShowRim property is true.
 
@@ -272,8 +272,8 @@ N> Default value of the ShowRim property is true.
 
 ### StartOffset and EndOffset for rim
 
-* `StartOffset` - Sets the rim start offset position. Its range is from 0 to 1.
-* `EndOffset` - Sets the rim end offset position. Its range is from 0 to 1.
+* [`RimStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimStartOffset.html) - Sets the rim start offset position. Its range is from 0 to 1.
+* [`RimEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimEndOffset.html) - Sets the rim end offset position. Its range is from 0 to 1.
 
 {% tabs %}
 

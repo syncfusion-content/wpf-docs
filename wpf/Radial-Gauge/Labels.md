@@ -13,7 +13,7 @@ The `Scale` labels associate numeric values with major scale tick marks.
 
 ## Label stroke customization
 
-The label color can be changed using the `LabelStroke` property.
+The label color can be changed using the [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelStroke.html) property.
 
 {% tabs %}
 
@@ -120,10 +120,10 @@ sfCircularGauge.Scales.Add(mainscale);
 ## Setting a position for labels
 
   The `Labels` can be placed inside the scale, outside the scale, or on the scale using the following two ways:
-     
-     1. Placing the labels by selecting one of the options available in the `LabelPosition` property.
 
-      They are,
+### LabelPosition
+
+Placing the labels by selecting one of the options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) property. Please find the values available in `LabelPosition` property below.
 
 1.	Inside (Default)
 
@@ -177,7 +177,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Setting position for labels image](Labels_images/Setting_Position_for_labels.png)
 
-2.	Positioning the labels far away from the ticks using the `LabelOffset` property. First, set the `LabelPosition` to custom, and then position the label using the `LabelOffset` property.
+### LabelOffset
+
+Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html) property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) to custom, and then position the label using the `LabelOffset` property.
 
 {% tabs %}
 
@@ -233,11 +235,11 @@ Smart labels allow to change the numeric scale type of the labels displayed in a
 
 ### Enable or disable smart labels
 
-The `EnableSmartLabels` property is a Boolean property that enables or disables the smart label feature of the circular gauge.
+The [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableSmartLabels.html) property is a Boolean property that enables or disables the smart label feature of the circular gauge.
 
 ## Setting a numeric scale type
 
-The `NumericScaleType` property allows to set the type of label. The following types can be applied to labels:
+The [`NumericScaleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~NumericScaleType.html) property allows to set the type of label. The following types can be applied to labels:
 
 •	Auto
 
@@ -307,7 +309,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Setting a number of fraction digits for labels
 
-The `NoOfFractionDigit` property is used to set the number of fractional digits to be displayed in the scale labels.
+The [`NoOfFractionalDigit`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~NoOfFractionalDigit.html) property is used to set the number of fractional digits to be displayed in the scale labels.
 
 {% tabs %}
 
@@ -357,7 +359,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Setting a postfix and prefix for labels
 
-You can postfix or prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
+You can postfix or prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html) properties, respectively.
 
 ### Label postfix
 
@@ -459,7 +461,7 @@ mainscale.Pointers.Add(circularPointer);
 
 ### Show labels
 
-The `ShowLabels` property is a Boolean property, which is used to enable or disable the labels in circular gauge.
+The [`ShowLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLabels.html) property is a Boolean property, which is used to enable or disable the labels in circular gauge.
 
 N> Default value of the ShowLabels property is true.
 
@@ -498,7 +500,7 @@ N> Default value of the ShowLabels property is true.
 
 ### Edge label customization
 
-You can customize the edge label by using the `ShowFirstLabel` and `ShowLastLabel` properties, which are Boolean properties.
+You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html) and [`ShowLastLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html) properties, which are Boolean properties.
 
 * `ShowFirstLabel` property is used to enable or disable the first label. Default value of the ShowFirstLabel property is true.
 
@@ -545,7 +547,7 @@ You can customize the edge label by using the `ShowFirstLabel` and `ShowLastLabe
 
 ## Events
 
-You can change the default label by hooking the `LabelCreated` event. Based on your requirements, the labels can be changed by using the `LabelText` property of `LabelCreatedEventArgs`.
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the [`LabelText`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LabelCreatedEventArgs~LabelText.html) property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 

@@ -48,7 +48,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
 ## Setting start and end values for scale
 
-The `StartValue` and `EndValue` properties allow you to set the start and end values for a scale.
+The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~EndValue.html) properties allow you to set the start and end values for a scale.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ The `StartValue` and `EndValue` properties allow you to set the start and end va
 
 ## Setting start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale~StartAngle.html)  and `SweepAngle` properties allow you to set the start and end angles for a scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale~StartAngle.html)  and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepAngle.html) properties allow you to set the start and end angles for a scale.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gaug
 
 ## Setting interval for scale
 
-The `Interval` property allows you to set the interval for a scale.
+The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~Interval.html) property allows you to set the interval for a scale.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ N> You can specify the interval value upto 5 decimal places while showing the la
 
 ## Setting scale direction for scale
 
-The `SweepDirection` property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepDirection.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% tabs %}
 
