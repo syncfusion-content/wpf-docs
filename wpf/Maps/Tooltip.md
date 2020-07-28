@@ -115,16 +115,16 @@ Tooltip is displayed by tapping the following elements:
 
 The appearance of the tooltip can be customized using the following properties:
 
-`Foreground` : Customizes the text color of tooltip.
-`Background` : Customizes the background color of tooltip.
-`Stroke` : Customizes the stroke color of tooltip.
-`StrokeThickness` : Customizes the stroke width of tooltip.
-`ShowDuration` : Specifies the duration of tooltip to be displayed.
-`Margin` : Sets the margin for tooltip.
-`FontFamily` : Customizes the text font family of tooltip.
-`FontStyle` : Customizes the font style of tooltip text.
-`FontSize` : Customizes the font size of tooltip text.
-`PointerLength` : Customizes the tooltip pointer length.
+[`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Foreground.html) : Customizes the text color of tooltip.
+[`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Background.html) : Customizes the background color of tooltip.
+[`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Stroke.html) : Customizes the stroke color of tooltip.
+[`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~StrokeThickness.html) : Customizes the stroke width of tooltip.
+[`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~ShowDuration.html) : Specifies the duration of tooltip to be displayed.
+[`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Margin.html) : Sets the margin for tooltip.
+[`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontFamily.html) : Customizes the text font family of tooltip.
+[`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontStyle.html) : Customizes the font style of tooltip text.
+[`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontSize.html) : Customizes the font size of tooltip text.
+[`PointerLength`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~PointerLength.html) : Customizes the tooltip pointer length.
 
 The following code sample shows all the above customizations.
 
@@ -197,47 +197,7 @@ The maps control provides options to design your own template for tooltip using 
 
 ![Tooltip Custom Template Image](Tooltip_images/Custom_Template.png)
 
-## Events
-
-### Tooltip opening event
-
-This event occurs whenever you select a shape, bubble, or marker. You will get the `Data` and `TooltipType` properties as arguments from `TooltipOpeningEventArgs` handler, and you can cancel the event for a particular shape using the `Cancel` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-      <maps:SfMap MapToolTipOpening="Map_MapToolTipOpening" >
-            <maps:SfMap.Layers>               
-                <maps:ShapeFileLayer Uri="MapsZoom.ShapeFiles.usa_state.shp" ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME" EnableSelection="False" LabelPath="State">
-                    <maps:ShapeFileLayer.ShapeSettings>
-                        <maps:ShapeSetting   ShapeStrokeThickness="1" ></maps:ShapeSetting>
-                    </maps:ShapeFileLayer.ShapeSettings>
-                    <maps:ShapeFileLayer.ToolTipSettings>
-                        <maps:ToolTipSetting ValuePath="Candidate" x:Name="shapeTooltipSettings" >
-                        </maps:ToolTipSetting>
-                    </maps:ShapeFileLayer.ToolTipSettings>
-                </maps:ShapeFileLayer>
-	       </maps:SfMap.Layers>
-        </maps:SfMap>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-         private void SfMaps_TooltipOpening(object sender, TooltipOpeningEventArgs e)
-         {
-            if ((e.Data is MapsZoom.ElectionData) && (e.Data as MapsZoom.ElectionData).State == "North Dakota")
-            {
-                e.Cancel = true;
-            }
-		}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Enable tooltip by tapping the Bubbles in shapeFileLayer
+## Enable tooltip by tapping the Bubbles in shapeFileLayer
 
 {% tabs %}
 
@@ -342,7 +302,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 ![WPF SfMaps marker tooltip image](Tooltip_images/Bubble_Tooltip.png)
 
-### Enable tooltip by tapping the Markers in shapeFileLayer
+## Enable tooltip by tapping the Markers in shapeFileLayer
 
 {% tabs %}
 
@@ -406,7 +366,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 ![WPF SfMaps marker tooltip image](Tooltip_images/MarkerTooltip.png)
 
-### Marker tooltip in imagery layer
+## Marker tooltip in imagery layer
 
 {% tabs %}
 
@@ -467,3 +427,4 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 {% endtabs %}
 
 ![WPF SfMaps marker tooltip image](Tooltip_images/ImageryLayer_Tooltip.png)
+
