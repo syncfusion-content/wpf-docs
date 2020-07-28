@@ -22,7 +22,7 @@ Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/)
 
 **Method 2: Adding gauge reference from toolbox**
 
-You can drag the circular gauge control from the  toolbox and drop it to the designer. It will automatically reference the required assemblies and add the namespace to the page. 
+You can drag the circular gauge control from the  toolbox and drop it to the designer. It will add the required assembly references automatically, and add the namespace to the page.
 
 **Method 3: Adding gauge assemblies manually from the installed location**
 
