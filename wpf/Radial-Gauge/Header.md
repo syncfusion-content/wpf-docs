@@ -7,11 +7,11 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# Header support in in SfCircularGauge
+# Header support in SfCircularGauge
 
 Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) option. This provides information about the data that is being plotted in the circular gauge.
 
-## Header
+## Setting Header for CircularGauge
 
 The [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
 

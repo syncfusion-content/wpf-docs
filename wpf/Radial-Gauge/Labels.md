@@ -177,7 +177,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Setting position for labels image](Labels_images/Setting_Position_for_labels.png)
 
-### LabelOffset
+### Setting Offset position value for labels
 
 Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html) property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) to custom, and then position the label using the `LabelOffset` property.
 
@@ -263,7 +263,8 @@ The [`NumericScaleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.W
 
     <gauge:SfCircularGauge.Scales>
 
-    <gauge:CircularScale StartValue="0" EndValue="500" EnableSmartLabels="True" NumericScaleType="Thousands">
+    <gauge:CircularScale StartValue="0" EndValue="500" 
+                         EnableSmartLabels="True" NumericScaleType="Thousands">
 
     <gauge:CircularScale.Pointers>
 
@@ -361,7 +362,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 You can postfix or prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html) properties, respectively.
 
-### Label postfix
+### Setting postfix value for labels
 
 The `LabelPostfix` property allows to postfix the values to the scale labels.
 
@@ -411,7 +412,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Postfix for lables image](Labels_images/Postfix_for_lables.png)
 
-### Label prefix
+### Setting prefix value for labels
 
 The `LabelPrefix` property allows to prefix the values to the scale labels.
 
@@ -459,7 +460,7 @@ mainscale.Pointers.Add(circularPointer);
 
 ![Prefix for lables image](Labels_images/Prefix_for_lables.png)
 
-### Show labels
+### Setting scale labels visibility
 
 The [`ShowLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLabels.html) property is a Boolean property, which is used to enable or disable the labels in circular gauge.
 
@@ -498,7 +499,7 @@ N> Default value of the ShowLabels property is true.
 
 ![WPF Circular Gauge Label Image](Labels_images/Show-labels.png)
 
-### Edge label customization
+### Edge label customization in scale
 
 You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html) and [`ShowLastLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html) properties, which are Boolean properties.
 
@@ -512,7 +513,9 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
       <gauge:SfCircularGauge>
            <gauge:SfCircularGauge.Scales >
-                 <gauge:CircularScale ShowFirstLabel = "False" StartValue = "0" EndValue = "12" Interval ="1" MinorTicksPerInterval = "5" StartAngle = "270" SweepAngle = "360" x:Name="scale" RimStroke="LightGray" >
+                 <gauge:CircularScale ShowFirstLabel = "False" StartValue = "0" EndValue = "12" 
+                                      Interval ="1" MinorTicksPerInterval = "5" StartAngle = "270" 
+                                      SweepAngle = "360" x:Name="scale" RimStroke="LightGray" >
                         <gauge:CircularScale.Pointers>
                             <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
                         </gauge:CircularScale.Pointers>
@@ -555,7 +558,10 @@ You can change the default label by hooking the [`LabelCreated`](https://help.sy
 
        <gauge:SfCircularGauge>
             <gauge:SfCircularGauge.Scales >
-                    <gauge:CircularScale  x:Name="scale"  LabelCreated="scale_LabelCreated" SweepAngle="360" StartAngle="270" StartValue="0" EndValue="16" Interval="2" RimStroke="LightGray" MinorTicksPerInterval="1" ShowLastLabel="False"  >
+                    <gauge:CircularScale  x:Name="scale"  LabelCreated="scale_LabelCreated" 
+                                          SweepAngle="360" StartAngle="270" StartValue="0" EndValue="16" 
+                                          Interval="2" RimStroke="LightGray" MinorTicksPerInterval="1" 
+                                          ShowLastLabel="False"  >
                         <gauge:CircularScale.Pointers>
                             <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
                         </gauge:CircularScale.Pointers>

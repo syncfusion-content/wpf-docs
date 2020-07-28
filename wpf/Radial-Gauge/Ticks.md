@@ -114,23 +114,21 @@ The [`TickShape`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Sync
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-
-     <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale  TickShape="Triangle" MinorTicksPerInterval="3" TickStroke="Blue" SmallTickStroke="Blue">
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+       <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale  TickShape="Triangle" MinorTicksPerInterval="3">
+                    <gauge:CircularScale.MajorTickSettings>
+                        <gauge:MajorTickSetting Stroke="Blue"/>
+                    </gauge:CircularScale.MajorTickSettings>
+                    <gauge:CircularScale.MinorTickSettings>
+                        <gauge:MinorTickSetting Stroke="Blue"/>
+                    </gauge:CircularScale.MinorTickSettings>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -144,9 +142,9 @@ mainscale.TickShape = TickShape.Triangle;
 
 mainscale.MinorTicksPerInterval = 3;
 
-mainscale.TickStroke = new SolidColorBrush(Colors.Blue);
+mainscale.MajorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
 
-mainscale.SmallTickStroke = new SolidColorBrush(Colors.Blue);
+mainscale.MinorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
 
 CircularPointer circularPointer = new CircularPointer();
 
@@ -168,7 +166,7 @@ The major and minor ticks can be positioned far away from the rim using the foll
  
 * Using the [`MajorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MajorTickSetting_members.html) and [`MinorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MinorTickSetting_members.html) [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Offset.html), [`StartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~StartOffset.html), and [`EndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~EndOffset.html) properties. First, set the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickPosition.html) property to custom, and then set the offset of the tick.
 
-#### Offset
+#### Setting scale ticket Offset value
 
 For relative position you can use `Offset` property, for setting the `Offset` to the Ticks.
 
@@ -217,7 +215,7 @@ For relative position you can use `Offset` property, for setting the `Offset` to
 
 ![Tick Offset image](Ticks_images/Custom_Position_Ticks.png)
 
-#### StartOffset, EndOffset
+#### Setting start and end Offset value for scale tick
 
 For absolute position you can use `StartOffset`, `EndOffset` properties of `MajorTickSettings` and `MinorTickSettings`.
 
@@ -229,10 +227,12 @@ For absolute position you can use `StartOffset`, `EndOffset` properties of `Majo
             <gauge:SfCircularGauge.Scales >
                 <gauge:CircularScale  x:Name="scale" TickPosition="Custom" MinorTicksPerInterval="3" >
                     <gauge:CircularScale.MajorTickSettings>
-                        <gauge:MajorTickSetting  StartOffset="0.5" EndOffset="0.7" Length="20" Stroke="Brown" StrokeThickness="2"  />
+                        <gauge:MajorTickSetting  StartOffset="0.5" EndOffset="0.7" 
+                                                 Length="20" Stroke="Brown" StrokeThickness="2"  />
                     </gauge:CircularScale.MajorTickSettings>
                     <gauge:CircularScale.MinorTickSettings>
-                        <gauge:MinorTickSetting  Stroke="Brown" StartOffset="0.6" EndOffset="0.7"   StrokeThickness="2"  />
+                        <gauge:MinorTickSetting  Stroke="Brown" StartOffset="0.6" 
+                                                 EndOffset="0.7"   StrokeThickness="2"  />
                     </gauge:CircularScale.MinorTickSettings>
                     <gauge:CircularScale.Pointers>
                         <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
@@ -273,8 +273,6 @@ For absolute position you can use `StartOffset`, `EndOffset` properties of `Majo
 
 ![Tick StartOffset EndOffset image](Ticks_images/Tick_Start_End_Offset.png)
 
-![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
-
 * Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. They are:
 
 1.	Inside (Default)
@@ -293,7 +291,7 @@ For absolute position you can use `StartOffset`, `EndOffset` properties of `Majo
 
     <gauge:SfCircularGauge.Scales>
 
-    <gauge:CircularScale  TickPosition="Outside"  MinorTicksPerInterval="3" Radius="200">
+    <gauge:CircularScale  TickPosition="Outside"  MinorTicksPerInterval="3">
 
     <gauge:CircularScale.Pointers>
 
@@ -315,8 +313,6 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
-mainscale.Radius = 200;
-
 mainscale.TickPosition = TickPosition.Outside;
 
 mainscale.MinorTicksPerInterval = 3;
@@ -335,7 +331,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Outer position ticks image](Ticks_images/Outer_Position_Ticks.png)
 
-### Show ticks
+### Setting ticks visibility in scale
 
 The [`ShowTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
 

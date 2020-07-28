@@ -25,39 +25,52 @@ The following code is used to create the Annotations.
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge>
-                <gauge:SfCircularGauge.Annotations>
-                    <gauge:GaugeAnnotation Angle="270" Offset="0">
-                        <gauge:GaugeAnnotation>
-                            <TextBlock Text="75" FontSize="25" Height="30" Foreground="LightSkyBlue" Width="35"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </gauge:GaugeAnnotation>
-                    </gauge:GaugeAnnotation>
-                </gauge:SfCircularGauge.Annotations>
-                <gauge:SfCircularGauge.Scales>
-                    <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom" RangePointerOffset="0.5">
-                        <gauge:CircularScale.Pointers>
-                            <gauge:CircularPointer PointerType="RangePointer" RangePointerStrokeThickness="30" RangeCap="Both" RangePointerStroke="LightSkyBlue" Value="75"/>
-                        </gauge:CircularScale.Pointers>
-                  </gauge:CircularScale>
-              </gauge:SfCircularGauge.Scales>
-    </gauge:SfCircularGauge>
+     <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Annotations>
+                <gauge:GaugeAnnotation Offset="0" Angle="270">
+                    <TextBlock Text="75%" FontSize="25" 
+                               Foreground="DeepSkyBlue" FontWeight="Bold"
+                               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </gauge:GaugeAnnotation>
+            </gauge:SfCircularGauge.Annotations>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"
+                                     LabelStroke="Transparent"
+                                     RimStrokeThickness="30" RangePointerPosition="Custom">
+                    <gauge:CircularScale.MajorTickSettings>
+                        <gauge:MajorTickSetting Stroke="Transparent"/>
+                    </gauge:CircularScale.MajorTickSettings>
+                    <gauge:CircularScale.MinorTickSettings>
+                        <gauge:MinorTickSetting Stroke="Transparent"/>
+                    </gauge:CircularScale.MinorTickSettings>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="RangePointer" 
+                                               RangePointerStrokeThickness="30" 
+                                               RangeCap="Both"  
+                                               RangePointerStroke="DeepSkyBlue" Value="75"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+           SfCircularGauge sfCircularGauge = new SfCircularGauge();
             CircularScale mainscale = new CircularScale();
             mainscale.RangePointerPosition = RangePointerPosition.Custom;
             mainscale.SweepAngle = 360;
             mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
             mainscale.RimStrokeThickness = 30;
+            mainscale.MinorTickSettings.Stroke = new SolidColorBrush(Colors.Transparent);
+            mainscale.MajorTickSettings.Stroke = new SolidColorBrush(Colors.Transparent);
+            mainscale.LabelStroke = new SolidColorBrush(Colors.Transparent);
             TextBlock annotationText = new TextBlock();
-            annotationText.Text = "95";
+            annotationText.Text = "75%";
+            annotationText.FontWeight = FontWeights.Bold;
             annotationText.FontSize = 25;
-            annotationText.Height = 30;
-            annotationText.Foreground = new SolidColorBrush(Colors.LightSkyBlue);
-            annotationText.Width = 35;
+            annotationText.Foreground = new SolidColorBrush(Colors.DeepSkyBlue);
             annotationText.HorizontalAlignment = HorizontalAlignment.Center;
             annotationText.VerticalAlignment = VerticalAlignment.Center;
             GaugeAnnotation gaugeAnnotation = new GaugeAnnotation();
@@ -71,10 +84,12 @@ The following code is used to create the Annotations.
             circularPointer.PointerType = PointerType.RangePointer;
             circularPointer.RangePointerStrokeThickness = 30;
             circularPointer.RangeCap = RangeCap.Both;
-            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightSkyBlue);
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.DeepSkyBlue);
             circularPointer.Value = 75;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+
+            this.Content = sfCircularGauge;            
 
 {% endhighlight %}
 

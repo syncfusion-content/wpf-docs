@@ -89,7 +89,7 @@ A ranges UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr
 
     <gauge:CircularScale.Ranges>
 
-    <gauge:CircularRange StartValue="0" EndValue="50" Offset="0.4" Stroke="Pink" StrokeThickness="40"/>
+    <gauge:CircularRange StartValue="0" EndValue="50" Offset="0.6" Stroke="Pink" StrokeThickness="40"/>
 
     </gauge:CircularScale.Ranges>
 
@@ -115,7 +115,7 @@ A ranges UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr
             CircularRange circularRange = new CircularRange();
             circularRange.StartValue = 0;
             circularRange.EndValue = 50;
-            circularRange.Offset = 0.4;
+            circularRange.Offset = 0.6;
             circularRange.Stroke = new SolidColorBrush(Colors.Pink);
             circularRange.StrokeThickness = 40;
             mainscale.Ranges.Add(circularRange);
@@ -302,7 +302,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
-### Range position
+### By setting range position
 
 You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html) property.
 
@@ -406,7 +406,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img5.png)
 
-### Range offset
+### By setting range offset
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
@@ -416,7 +416,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 N>For using this feature need to set the `RangePosition` as custom in the `Rim`.
 
-#### Offset and StrokeThickness
+#### By setting Offset and StrokeThickness
 
 For absolute position, you can use `Offset` and `StrokeThickness` properties of Range. For setting the `Offset` and `StrokeThickness` to the range.
 
@@ -431,7 +431,11 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
                             <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
                         </gauge:CircularScale.Pointers>
                         <gauge:CircularScale.Ranges>
-                            <gauge:CircularRange StartValue = "0" EndValue = "100" Stroke="MediumTurquoise" Offset = "0.3" StrokeThickness = "20"  ></gauge:CircularRange>                      </gauge:CircularScale.Ranges>
+                            <gauge:CircularRange StartValue = "0" EndValue = "100" 
+                                                 Stroke="MediumTurquoise" Offset = "0.3" 
+                                                 StrokeThickness="20">
+                            </gauge:CircularRange>
+                      </gauge:CircularScale.Ranges>
                     </gauge:CircularScale>
                 </gauge:SfCircularGauge.Scales>
             </gauge:SfCircularGauge>
@@ -461,7 +465,7 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
 
 ![Offset Image for Range](Ranges_images/Range-Offset.png)
 
-#### InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
+#### By setting InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
 
 For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
 
@@ -476,7 +480,10 @@ For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterS
                             <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
                         </gauge:CircularScale.Pointers>
                         <gauge:CircularScale.Ranges>
-                            <gauge:CircularRange StartValue="10" EndValue="80" InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8"  Stroke="MediumTurquoise" ></gauge:CircularRange>             
+                            <gauge:CircularRange StartValue="10" EndValue="80" InnerStartOffset = "0.83" 
+                                                 InnerEndOffset = "0.6" OuterStartOffset = "0.85" 
+                                                 OuterEndOffset =" 0.8"  Stroke="MediumTurquoise">
+                            </gauge:CircularRange>             
                         </gauge:CircularScale.Ranges>
                     </gauge:CircularScale>
                 </gauge:SfCircularGauge.Scales>
@@ -518,33 +525,26 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge >
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale  RangePosition="Inside" Radius="200">
-
-    <gauge:CircularScale.Ranges>
-
-    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-
-    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-
-    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-
-    </gauge:CircularScale.Ranges>
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+<gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:CircularScale  RangePosition="Inside" Radius="200">
+                <gauge:CircularScale.Ranges>
+                    <gauge:CircularRange StartValue="0" EndValue="40" 
+                                         Stroke="Green" StrokeThickness ="10" 
+                                         StartWidth="1" EndWidth="10"/>
+                    <gauge:CircularRange StartValue="40" EndValue="60" 
+                                         Stroke="Yellow" StrokeThickness ="10" 
+                                         StartWidth="1" EndWidth="10"/>
+                    <gauge:CircularRange StartValue="60" EndValue="100" 
+                                         Stroke="Red" StrokeThickness ="10" 
+                                         StartWidth="1" EndWidth="10"/>
+                </gauge:CircularScale.Ranges>
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>    
 
 {% endhighlight %}
 
@@ -626,30 +626,37 @@ You can give color transition to range by specifying the different colors using 
 
 {% highlight xaml %}
 
-       <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale LabelStroke ="IndianRed" LabelOffset="0.77" LabelPosition="Custom" MinorTicksPerInterval="5"  RangePosition="Custom" TickPosition="Custom" RimStroke="White">
-                    <gauge:CircularScale.Ranges>
-                        <gauge:CircularRange StartValue="0" EndValue="85" Offset="0.5" StrokeThickness="40" >
-                            <gauge:CircularRange.GradientStops>
-                                <gauge:GaugeGradientStop Value="15" Color="OrangeRed"/>
-                                <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
-                                <gauge:GaugeGradientStop Value="80" Color="Green"/>
-                            </gauge:CircularRange.GradientStops>
-                        </gauge:CircularRange>
-                    </gauge:CircularScale.Ranges>
-                    <gauge:CircularScale.MajorTickSettings>
-                        <gauge:MajorTickSetting  Length="20" Stroke="IndianRed" StrokeThickness="2"  Offset="0.7"  />
-                    </gauge:CircularScale.MajorTickSettings>
-                    <gauge:CircularScale.MinorTickSettings>
-                        <gauge:MinorTickSetting  Stroke="IndianRed"  StrokeThickness="2"  Offset="0.65"  />
-                    </gauge:CircularScale.MinorTickSettings>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" Visibility="Collapsed"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+     <gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:CircularScale LabelStroke ="IndianRed" LabelOffset="0.77" 
+                                 LabelPosition="Custom" MinorTicksPerInterval="5"  
+                                 RangePosition="Custom" TickPosition="Custom" 
+                                 RimStroke="White">
+                <gauge:CircularScale.Ranges>
+                    <gauge:CircularRange StartValue="0" EndValue="85" Offset="0.5" 
+                                         StrokeThickness="40" >
+                        <gauge:CircularRange.GradientStops>
+                            <gauge:GaugeGradientStop Value="15" Color="OrangeRed"/>
+                            <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
+                            <gauge:GaugeGradientStop Value="80" Color="Green"/>
+                        </gauge:CircularRange.GradientStops>
+                    </gauge:CircularRange>
+                </gauge:CircularScale.Ranges>
+                <gauge:CircularScale.MajorTickSettings>
+                    <gauge:MajorTickSetting  Length="20" Stroke="IndianRed" 
+                                             StrokeThickness="2"  Offset="0.7"  />
+                </gauge:CircularScale.MajorTickSettings>
+                <gauge:CircularScale.MinorTickSettings>
+                    <gauge:MinorTickSetting  Stroke="IndianRed"  StrokeThickness="2"  
+                                             Offset="0.65"  />
+                </gauge:CircularScale.MinorTickSettings>
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer PointerType="NeedlePointer" 
+                                           Visibility="Collapsed"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 

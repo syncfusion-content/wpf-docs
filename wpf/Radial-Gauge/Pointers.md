@@ -11,11 +11,11 @@ documentation: ug
 
 Pointers are used to indicate values on the scale. Value of the pointer can be modified using the `Value` property.
 
-## Pointer Type
+## Setting pointer type of CircularPointer
 
 There are three types of pointers. You can choose a pointer using the [`PointerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerType.html) property. 
 
-## Needle pointer
+## Circular pointer with needle pointer
 
 A needle pointer contains two parts, a needle and a pointer cap, that can be placed on a gauge to mark values. 
 
@@ -63,7 +63,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img1.png)
 
-### NeedlePointerType
+### Different types of needle pointer with scale
 
 The appearance of the needle pointer can be customized using the [`NeedlePointerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerType.html) property. The default value of this property is Rectangle.
 The `NeedlePointerType` is an `enum` property that includes the following options:
@@ -88,7 +88,8 @@ The `NeedlePointerType` is an `enum` property that includes the following option
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle"/>
+    <gauge:CircularPointer PointerType="NeedlePointer" 
+                           NeedlePointerType="Triangle"/>
 
     </gauge:CircularScale.Pointers>
 
@@ -138,8 +139,9 @@ The length of a needle is controlled using the [`NeedleLengthFactor`](https://he
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" NeedlePointerStroke="DeepSkyBlue"     PointerCapDiameter="20" KnobStroke="DeepSkyBlue"
-    NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" 
+                           NeedlePointerStroke="DeepSkyBlue" PointerCapDiameter="20" KnobStroke="DeepSkyBlue"
+                           NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
 
     </gauge:CircularScale.Pointers>
 
@@ -229,7 +231,6 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img4.png)
 
 ### Setting tail for needle pointer
 
@@ -316,7 +317,7 @@ Tail of the needle pointer can be customized by using the [`TailFill`](https://h
 
 ![Pointers - Circular Gauge](Pointers_images/TailImage.png)
 
-## Range pointer
+## Setting range pointer with circular scale
 
 The range pointer is an accenting line or shaded background range that can be placed on a gauge to mark values. 
 
@@ -382,7 +383,8 @@ The range pointer’s UI is customized using the [`RangePointerStroke`](https://
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="RangePointer" Value="50" RangePointerStroke="DarkCyan" RangePointerStrokeThickness="20"/>
+    <gauge:CircularPointer PointerType="RangePointer" Value="50" 
+                           RangePointerStroke="DarkCyan" RangePointerStrokeThickness="20"/>
 
     </gauge:CircularScale.Pointers>
 
@@ -494,7 +496,8 @@ You can place the range pointer by selecting one of the below option available i
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
+    <gauge:CircularPointer PointerType="RangePointer" 
+                           RangePointerStroke="HotPink" Value="60"/>
 
     </gauge:CircularScale.Pointers>
 
@@ -542,11 +545,12 @@ sfCircularGauge.Scales.Add(mainscale);
         <gauge:SfCircularGauge.Scales >
             <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
                 <gauge:CircularScale.Pointers>
-                       gauge:CircularPointer PointerType="RangePointer" Offset="0.5" RangePointerStroke="LightGray" Value="60"/>
+                    <gauge:CircularPointer PointerType="RangePointer" Offset="0.5" 
+                                           RangePointerStroke="LightGray" Value="90"/>
                 </gauge:CircularScale.Pointers>
-           </gauge:CircularScale>
-        </gauge:SfCircularGauge.Scales>	
-   </gauge:SfCircularGauge>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -586,14 +590,21 @@ The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncf
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge >
+    <gauge:SfCircularGauge Margin="10">
         <gauge:SfCircularGauge.Scales>
-              <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom">
-                   <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" RangePointerStrokeThickness="30" RangeCap="Both" RangePointerStroke="LightSkyBlue" Value="75"/>
-                    </gauge:CircularScale.Pointers>
-              </gauge:CircularScale>
-         </gauge:SfCircularGauge.Scales>
+            <gauge:CircularScale x:Name="scale" SweepAngle="360" 
+                                 RimStroke="LightGray"  
+                                 RimStrokeThickness="30" 
+                                 RangePointerPosition="Custom">
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer PointerType="RangePointer" 
+                                           RangePointerStrokeThickness="30" 
+                                           RangeCap="Both" 
+                                           RangePointerStroke="DeepSkyBlue" 
+                                           Value="75"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -610,7 +621,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncf
             circularPointer.PointerType = PointerType.RangePointer;
             circularPointer.RangePointerStrokeThickness = 30;
             circularPointer.RangeCap = RangeCap.Both;
-            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightSkyBlue);
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.DeepSkyBlue);
             circularPointer.Value = 75;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
@@ -621,7 +632,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncf
 
 ![RangeCap for Circular Gauge RangePointer](Pointers_images/RangeCap.png)
 
-## Symbol pointer
+## Setting symbol pointer with circular scale
 
 In symbol pointer, the value is pointed out using a symbol on the scale. The symbol is an enum property that provides symbol options for the symbol pointer, which contains several shapes such as rectangle, ellipse, and triangle.
 
@@ -774,7 +785,6 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img12.png)
 
 ### Setting offset for SymbolPointers
 
@@ -788,7 +798,8 @@ The [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfus
             <gauge:SfCircularGauge.Scales>
                 <gauge:CircularScale>
                     <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="SymbolPointer" Offset="0.5" Symbol="Triangle"  Value="60"/>
+                        <gauge:CircularPointer PointerType="SymbolPointer" 
+                                               Offset="0.5" Symbol="Triangle"  Value="60"/>
                     </gauge:CircularScale.Pointers>
                 </gauge:CircularScale>
             </gauge:SfCircularGauge.Scales>
@@ -826,29 +837,21 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge>
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale >
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
-     NeedlePointerType="Tapered" KnobStroke="#39B2C6" />
-
-    <gauge:CircularPointer PointerType="RangePointer"  Value="100"/>
-
-    <gauge:CircularPointer PointerType="SymbolPointer"  Value="50" Symbol="Pentagon"
-     SymbolPointerHeight="20" SymbolPointerWidth="20" SymbolPointerStroke="#39B2C6"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+<gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:CircularScale >
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer PointerType="NeedlePointer" 
+                                           NeedleLengthFactor="0.4" Value="60"
+                                           NeedlePointerType="Tapered" KnobStroke="#39B2C6" />
+                    <gauge:CircularPointer PointerType="RangePointer"  Value="100"/>
+                    <gauge:CircularPointer PointerType="SymbolPointer"  Value="50" Symbol="Pentagon"
+                                           SymbolPointerHeight="20" SymbolPointerWidth="20" 
+                                           SymbolPointerStroke="#39B2C6"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>    
 
 {% endhighlight %}
 
@@ -985,7 +988,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WP
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)
 
-## Pointer dragging
+## Circular pointer dragging
 
 Symbol pointer and needle pointer can be dragged over the scale value by setting the [`EnableDragging`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~EnableDragging.html) property as true. Pointers can be moved to the respective position.
 
@@ -993,19 +996,29 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 {% highlight xml %}
 
         <gauge:SfCircularGauge >
-             <gauge:SfCircularGauge.Scales >
-                <gauge:CircularScale LabelPosition="Custom"  Grid.Row="1" RimStroke ="LightGray" RadiusFactor="1" ShowTicks="False"
-                         RimStrokeThickness="30"     StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelStroke ="Black" FontSize  ="15">
-                    <gauge:CircularScale.Ranges>
-                        <gauge:CircularRange StrokeThickness="30" StartValue="0" x:Name="range" EndValue="25" Stroke="DeepSkyBlue"/>
-                    </gauge:CircularScale.Ranges>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="SymbolPointer" Symbol="InvertedTriangle" SymbolPointerHeight="18" SymbolPointerWidth="18"
-                             ValueChanged="CircularPointer_ValueChanged"  SymbolPointerStroke="DarkBlue" Value="25" EnableAnimation="False" EnableDragging="True"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Scales >
+            <gauge:CircularScale LabelPosition="Custom"  Grid.Row="1" 
+                                 RimStroke="LightGray" 
+                                 RadiusFactor="1" ShowTicks="False"
+                                 RimStrokeThickness="30"     
+                                 StartValue="0" EndValue="100" Interval="10" 
+                                 LabelOffset="0.75" LabelStroke="Black" FontSize="15">
+                <gauge:CircularScale.Ranges>
+                    <gauge:CircularRange StrokeThickness="30" StartValue="0" 
+                                         x:Name="range" EndValue="25" 
+                                         Stroke="DeepSkyBlue"/>
+                </gauge:CircularScale.Ranges>
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer PointerType="SymbolPointer" 
+                                           Symbol="InvertedTriangle" 
+                                           SymbolPointerHeight="18" SymbolPointerWidth="18"
+                                           ValueChanged="CircularPointer_ValueChanged"  
+                                           SymbolPointerStroke="DarkBlue" Value="25" 
+                                           EnableAnimation="False" EnableDragging="True"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
 
 
 {% endhighlight %}
@@ -1080,7 +1093,10 @@ Called during a drag when the user is selecting before a new value for the point
             <gauge:SfCircularGauge.Scales>
                 <gauge:CircularScale>
                     <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer EnableDragging="True" ValueChanging="CircularPointer_ValueChanging" Value="20" Symbol="InvertedTriangle" PointerType="SymbolPointer" />
+                        <gauge:CircularPointer EnableDragging="True" 
+                                               ValueChanging="CircularPointer_ValueChanging" 
+                                               Value="20" Symbol="InvertedTriangle" 
+                                               PointerType="SymbolPointer" />
                     </gauge:CircularScale.Pointers>
                 </gauge:CircularScale>
             </gauge:SfCircularGauge.Scales>
