@@ -244,7 +244,7 @@ radialSlider.SweepDirection = SweepDirection.Counterclockwise;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
-## Show maximum value
+## Display maximum value
 
 By default, the maximum value is not shown in the `SfRadialSlider`. If you want to show the maximum value when difference of the minimum and maximum value is not a `TickFrequency` multiples, use the [ShowMaximumValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~ShowMaximumValue.html) property value as `true`. The default value of `ShowMaximumValue` property is `false`.
 
