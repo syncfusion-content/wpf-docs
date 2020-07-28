@@ -116,7 +116,7 @@ You can select any tick value by dragging the pointer along the circular track o
 
 ### Select tick value programmatically
 
-You can select a tick value programmatically by assinging the tick value to the `Value` property.
+You can select a tick value programmatically by assigning the tick value to the `Value` property.
 
 {% tabs %}
 {% highlight XAML %}
