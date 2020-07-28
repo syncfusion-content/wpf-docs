@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Map Shape Labels | SfMap | wpf | Syncfusion
-description: map shape labels
+description: This section describes WPF SfMaps control ShapeFileLayer labels customization with LabelPath property.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Shape Labels
+# Map Shape Labels in WPF Maps (SfMap)
 
-Labels for map shapes can be displayed by using the LabelPath of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
-
+Labels for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LabelPath.html) of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
 
 
 <table>
@@ -28,74 +27,40 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 {% highlight xaml %}
 
-
-
-    <syncfusion:SfMap>
-
-        <syncfusion:SfMap.Layers>
-
-            <syncfusion:ShapeFileLayer x:Name="shapeFileLayer"   
-
-                                       Uri="BubbleVisualization.world1.shp"                                                               
-
+      <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer x:Name="shapeFileLayer"   
+                                       Uri="DataMarkers.ShapeFiles.world1.shp"                                                               
                                        LabelPath="NAME" FontSize="14">
-
-            </syncfusion:ShapeFileLayer>
-
-        </syncfusion:SfMap.Layers>
-
-    </syncfusion:SfMap>  
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
 {% endhighlight %}
 
-
-
-The labels can also be customized by modifying the ItemsTemplate of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
+The labels can also be customized by modifying the [`ItemsTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsTemplate.html) of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
 
 {% highlight xaml %}
 
-
-
-     <syncfusion:SfMap>
-
-        <syncfusion:SfMap.Layers>
-
-            <syncfusion:ShapeFileLayer x:Name="shapeFileLayer" 
-
-                                       Uri="BubbleVisualization.world1.shp"
-
+       <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer Uri="DataMarkers.ShapeFiles.world1.shp"
                                        LabelPath="NAME">
-
-                <syncfusion:ShapeFileLayer.ItemsTemplate>
-
-                    <DataTemplate>
-
-                        <Grid Background="Gray" Opacity="0.75">
-
-                            <TextBlock Text="{Binding DBFData[NAME]}"
-
+                    <syncfusion:ShapeFileLayer.ItemsTemplate>
+                        <DataTemplate>
+                            <Grid Background="Gray" Opacity="0.75">
+                                <TextBlock Text="{Binding DBFData[NAME]}"
                                        FontSize="14" Margin="10 5"/>
-
-                        </Grid>
-
-                    </DataTemplate>
-
-                </syncfusion:ShapeFileLayer.ItemsTemplate>
-
-            </syncfusion:ShapeFileLayer>
-
-        </syncfusion:SfMap.Layers>
-
-    </syncfusion:SfMap> 
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:ShapeFileLayer.ItemsTemplate>
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
 {% endhighlight %}
 
 
+![Maps control Shape labels](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
 
-![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
-
-
-
-Map with Labels
-{:.caption}
 

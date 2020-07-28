@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Overview
+# Overview in WPF Maps (SfMap)
 
 A map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. By using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels. Bubbles visualize the data that is bound to the map.
 
@@ -33,28 +33,10 @@ Options like zooming, panning, and map selection extend the interactivity of the
 ![Maps - Overview](Overview_images/Overview_img1.png)
 
 
-
 ## Structure of Map
 
-A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items.
+A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items. The imagery layer is used to visualize satellite, aerial, street map, or other imagery tiles without using shapefiles.
 
-<table>
-<tr>
-<th>
-Map</th></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-<td>
-Layers</td></tr>
-<tr>
-<td>
-</td></tr>
-<tr>
-<td>
-ShapeFileLayer</td></tr>
-</table>
+![Maps - Overview](Overview_images/Overview_SfMap_Shape_layers.png)
 
-Structure of Map
 

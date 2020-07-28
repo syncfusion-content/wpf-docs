@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview of SkinManager| SkinManager | WPF | Syncfusion
+title: Overview of SkinStorage| SkinStorage | WPF | Syncfusion
 description: WPF Skin Manager Framework provides a convenient way to give the appealing appearance to the Syncfusion WPF controls at one place.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
@@ -195,7 +195,7 @@ SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
    The output is displayed as shown below.
 
-   ![SkinManager - Overview](Overview_images/Overview_img2.png)
+   ![SkinStorage - Overview](Overview_images/Overview_img2.png)
 
 
 
@@ -244,7 +244,7 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 {% endtabs %}
 
 
-![SkinManager - Overview](Overview_images/Overview_img3.png)
+![SkinStorage - Overview](Overview_images/Overview_img3.png)
 
 
 
@@ -254,7 +254,7 @@ Metro Customization Demo
 
 ## Performance
 
-The performance of SkinManager can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetEnableOptimization.html) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
+The performance of SkinStorage can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetEnableOptimization.html) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -289,7 +289,7 @@ Replace “< CurrentVisualStyle>“  with the  required  VisualStyle name
 
 Ex:
 
-To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the application:
+To merge the Office2010Blue Theming Dictionary for MicrosoftControls into the application:
 
 {% tabs %}
 {% highlight xaml %}

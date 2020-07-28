@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Override Syncfusion Themes| SkinManager | Wpf | Syncfusion
-description: override syncfusion themes
+title: Override Syncfusion Themes| SkinStorage | Wpf | Syncfusion
+description: A unique key is given to each and every style, so that you can override the styles using the BasedOn property.
 platform: wpf
-control: SkinManager
+control: SkinStorage
 documentation: ug
 ---
 
@@ -57,7 +57,7 @@ The following steps explain how to override the Syncfusion Themes.
 
 The output is displayed as shown below.
 
-![](Override-Syncfusion-Themes_images/Override-Syncfusion-Themes_img1.png)
+![Override syncfusion themes](Override-Syncfusion-Themes_images/Override-Syncfusion-Themes_img1.png)
 
 
 
