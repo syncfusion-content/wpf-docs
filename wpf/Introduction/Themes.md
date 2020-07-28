@@ -1,226 +1,222 @@
 ---
 layout: post
-title: Themes| Introduction | Wpf | Syncfusion
-description: themes
+title: Themes overview with SkinManager
+description: Learn here about the themes overview and how to apply the themes for Syncfusion Essential WPF controls using SfSkinManager
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Themes
+# Themes overview with SkinManager
 
-Syncfusion offers enhanced theme support through Skin Manager.
+Syncfusion offers enhanced theme support through SkinManager.
 
-The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) framework provides a convenient way to give the appealing appearance to both WPF syncfusion and framework controls.
 
-## Built In Skins
+## Built-in Themes
 
-You can apply Skins to the control by setting the VisualStyle property defined in the Skin Storage class. Set the VisualStyle property to the corresponding theme. You can set this property either in XAML or C#.
+The built-in themes can applied to both syncfusion controls and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). 
 
+There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes can be color customized in the [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 
-### Property Table
+N> For detailed information on supported themes and SkinManager, refer to this [topic](https://help.syncfusion.com/wpf/themes/skin-manager).
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Used for setting Skins for the controls. The Built-In-Skins are as follows.* Office2003* Office2007Blue* Office2007Black* Office2007Silver* ShinyRed* Blend* ShinyBlue* SyncOrange* VS2010* Office2010Blue* Office2010Black * Office2010Silver* Metro* Transparent</td><td>
-<br>Attached Property</td><td>
-String</td><td>
-{{ '[Setting VisualStyle in XAML](http://help.syncfusion.com/wpf/hierarchynavigator/skins#built-in-skins)' | markdownify }}{{ '[Setting VisualStyle in C#](http://help.syncfusion.com/wpf/hierarchynavigator/skins#built-in-skins  )' | markdownify }}</td></tr>
-</table>
+## Setting visual style in XAML
 
+The following code example explains how to set the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) property in XAML.
 
-## Setting VisualStyle in XAML
+1. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
 
-The following code example explains how to set the VisualStyle property in XAML.
+{% tabs %}
 
-1. Add the following namespace in the sample.
+{% highlight XAML %}
 
-   ~~~xaml
-   
-         xmlns:syncfusion=”http://schemas.syncfusion.com/wpf”
-		 
-   ~~~
-
-
-
-2. Set the VisualStyle property for the control as illustrated in the following code example. 
-  
-   ~~~ xaml
-   
-           <Syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle=”Blend”></Syncfusion:CalendarEdit>  
-		   
-   ~~~
-   
-  
-
-
-    ### Setting VisualStyle in C&#35;                                     
-
-   You can also set the VisualStyle property in C# by using the SetVisualStyle.
-
-   The following code example explains how to set the VisualStyle property in C#.
-
-3. Name the control by using the Name attribute.
-
-   ~~~ xaml
-   
-         <Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
-   ~~~
- 
- 
-
-
-
-4. Add the following line in code behind file.
-
-   ~~~ csharp
-   
-         SkinStorage.SetVisualStyle(calendar, “Blend”);
-   ~~~
-   
-
-The output is displayed as follows.
-
-![](Themes_images/Themes_img1.jpeg)
-
-
-Visual Style property for setting Skins
-{:.caption}
-
-## Customization
-
-### Active Color Scheme
-
-You can set the custom color for the WPF controls by using the ActiveColorScheme property defined in the Skin Manager class. You can set this property either in XAML or C#.
-
-### Property Table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-ActiveColorScheme  </td><td>
-Sets the custom color for the controls. </td><td>
-Attached Property</td><td>
-SolidColorBrush</td><td>
-{{ '[Setting ActiveColorScheme property in XAML](http://help.syncfusion.com/wpf/ribbon/appearance#active-color-scheme)' | markdownify }}
-{{ '[Setting ActiveColorScheme property in C#](http://help.syncfusion.com/wpf/ribbon/appearance#active-color-scheme)' | markdownify }}</td></tr>
-</table>
-
-
-#### Setting ActiveColorScheme property in XAML
-
-The following code example explains how to set the ActiveColorScheme property in XAML.
-
-1. Add the following namespace in the sample.
-
-   ~~~ xaml
-  
-
-           xmlns:Syncfusion=http://schemas.syncfusion.com/wpf
-
-   ~~~
-  
-2. Set the ActiveColorScheme property for the control as illustrated in the following code example.
-
-   ~~~ xaml
-
-
-          <Syncfusion:CalendarEdit Name=”calendar” Syncfusion:SkinManager.ActiveColorScheme=”Red”></Syncfusion:CalendarEdit> 
-
-   ~~~
-  
-
-    Setting ActiveColorScheme property in C&#35;
-
-    You can also set the custom color for the WPF controls in C# by using _SetActiveColorScheme._
-
-    The following code example explains how to set the ActiveColorScheme property in C#.
-
-3. Name the control by using the Name attribute.
-
-   ~~~xaml
-   
-          <Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
-
-   ~~~  
-   
-
-4. Add the following line in code behind file.
-   
-   ~~~ csharp
-
-
-		SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
-
-   ~~~
-   
-
-The output is displayed as follows.
-
-![](Themes_images/Themes_img2.png)
-
-Custom color using ActiveColorScheme
-{:.caption}
-
-### Metro theme
-
-The Metro theme is a well sophisticated theme that supports a complete customization over the brushes and fonts. You can change and customize each and every brushes of Metro Theme according to your requirement.
-
-You can customize the following brushes in Metro Theme.
-
-* MetroBrush
-* MetroBackgroundBrush
-* MetroPanelBackgroundBrush
-* MetroBorderBrush
-* MetroForegroundBrush
-* MetroFontFamily
-* MetroHoverBrush
-* MetroFocusedBorderBrush
-* MetroHighlightedForegroundBrush
-
-
-
-#### Setting MetroBackgroundBrush property in XAML
-
-{% highlight html %}
-
-
-<Syncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
-
-Title=”Window1” Height=”350” Width=”525” xmlns:Syncfusion=”http://schemas.syncfusion.com/wpf” syncfusion:SkinStorage.VisualStyle=”Metro” syncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
-
-</Syncfusion:ChromelessWindow>
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
+{% endtabs %}
 
-#### Setting MetroBackgroundBrush property in C#
+2. Set the `VisualStyle` property for the control as illustrated in the following code example. 
+  
+{% tabs %}
 
-{% highlight c# %}
+{% highlight XAML %}
 
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:DataGrid_Themes"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+							        xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+							        syncfusionskin:SfSkinManager.VisualStyle="MaterialDark"
+                             Icon="App.ico"
+                             Title="Getting Started"
+                             WindowStartupLocation="CenterScreen">
 
-SkinStorage.SetMetroBrush(this, Brushes.Green);
+    <syncfusion:ChromelessWindow.Resources>
+        <local:ViewModel x:Key="viewmodel" />
+        <local:SelectedImageConverter x:Key="selectedImageConverter"/>
+        <local:StatusConverter        x:Key="statusConverter"/>
+        <local:TrustImageConverter    x:Key="trustImageConverter"/>
+        <Style TargetType="syncfusion:SfRatingItem">
+            <Setter Property="Padding" Value="1" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Width" Value="22" />
+        </Style> 
+        <Style TargetType="syncfusion:SfRating">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </syncfusion:ChromelessWindow.Resources>
+
+    <Grid DataContext="{StaticResource viewmodel}">
+        <syncfusion:SfDataGrid Name="sfgrid" Margin="5"
+                                       AutoGenerateColumns="False"
+                                       AllowDraggingColumns="True"
+                                       AllowEditing="True"
+                                       LiveDataUpdateMode="AllowDataShaping"
+                                       AllowFiltering="True"
+                                       HeaderRowHeight="26"
+                                       SelectionMode="Extended"
+                                       ColumnSizer="Auto"
+                                       ItemsSource="{Binding EmployeeDetails}">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridCheckBoxSelectorColumn  MappingName="Selected" AllowFiltering="False" Width="30"
+                                                                AllowSorting="False"   AllowCheckBoxOnHeader="True"/>
+                <syncfusion:GridTemplateColumn  MappingName="EmployeeName" Padding="2"
+                                                        HeaderText="Employee Name">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid Margin="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  Width="15"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Gender,
+                                                                Converter={StaticResource selectedImageConverter}}" 
+                                               Height="15"      Width="15"       Grid.Column="0"/>
+                                <TextBlock Text="{Binding EmployeeName}" Padding="4" 
+                                                   VerticalAlignment="Center"    Grid.Column="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTextColumn  MappingName="Designation" HeaderText="Designation"/>
+                <syncfusion:GridTextColumn  MappingName="Mail"        HeaderText="Mail"/>
+                <syncfusion:GridTemplateColumn MappingName="Location" Width="100"
+                                                       HeaderText="Location">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid Margin="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  Width="15"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="Images/location.png"   Height="15"
+                                               Grid.Column="0"                Width="15"/>
+                                <TextBlock Text="{Binding Location}"  Padding="4" 
+                                                   VerticalAlignment="Center" Grid.Column="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTemplateColumn MappingName="Status" Width="90" HeaderText="Status">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock  Foreground="{Binding Status,
+                                                                     Converter={StaticResource statusConverter}}"
+                                                Padding="3"          Text="{Binding Status}"/>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                    <syncfusion:GridTemplateColumn.EditTemplate>
+                        <DataTemplate>
+                            <syncfusion:ComboBoxAdv SelectedValue="{Binding Status}" ItemsSource="{Binding Status, Source={StaticResource viewmodel}}"/>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.EditTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTemplateColumn MappingName="Trustworthiness" HeaderText="Trust Worthiness">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid Margin="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  Width="15"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding Trustworthiness,
+                                                                Converter={StaticResource trustImageConverter}}"
+                                               Height="15"      Width="15"          Grid.Column="0"/>
+                                <TextBlock Text="{Binding Trustworthiness}" Padding="4" 
+                                                   VerticalAlignment="Center"       Grid.Column="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                    <syncfusion:GridTemplateColumn.EditTemplate>
+                        <DataTemplate>
+                            <syncfusion:ComboBoxAdv SelectedValue="{Binding Trustworthiness}"  ItemsSource="{Binding Trustworthiness, Source={StaticResource viewmodel}}"/>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.EditTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTemplateColumn MappingName="Rating" Width="130">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <syncfusion:SfRating VerticalAlignment="Center" ItemsCount="5" ShowToolTip="False"
+                                                         Value="{Binding Rating, Mode=TwoWay}"/>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTextColumn  Width="90" DisplayBinding="{Binding Path=Salary,
+                                                                             StringFormat='{}{0:C}'}"   
+                                                    TextAlignment="Right"    HeaderText="Salary"/>
+                <syncfusion:GridTextColumn MappingName="Address" HeaderText="Address"/>
+                <syncfusion:GridPercentColumn HeaderText="Software Proficiency" AllowEditing="False"
+                                                      MappingName="SoftwareProficiency">
+                    <syncfusion:GridPercentColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <ProgressBar Background="Transparent" BorderThickness="0" Maximum=".99"
+                                                     Value="{Binding SoftwareProficiency,StringFormat=P}"/>
+                                <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                     Text="{Binding SoftwareProficiency, StringFormat=P}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridPercentColumn.CellTemplate>
+                </syncfusion:GridPercentColumn>
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </Grid>
+</syncfusion:ChromelessWindow>
 
 {% endhighlight %}
 
-![](Themes_images/Themes_img3.jpeg)
+{% highlight C# %}
 
-Metro theme customization
-{:.caption}
+SfSkinManager.SetVisualStyle(this, "MaterialDark");
 
+{% endhighlight %}
+
+{% endtabs %}
+
+## Setting VisualStyle in C&#35;                                     
+
+The following code example explains how to set the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) property in C#.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfSkinManager.SetVisualStyle(this, "MaterialDark");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The output is displayed as follows.
+
+![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Themes_images/Themes_DataGrid.jpg)
+
+N> View [sample](https://github.com/SyncfusionExamples/set-visualstyle-using-skinmanager) in GitHub.
