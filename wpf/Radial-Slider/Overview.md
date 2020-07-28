@@ -9,16 +9,13 @@ documentation: ug
 
 # Overview  
 
-The Radial Slider provides an optimized interface for selecting a numeric value.
+The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value.
 
 ### Key Features
 
 * Customization – Can customize outer rim, inner rim, labels, ticks, and pointer. 
-* Content – Can place content inside the inner rim. 
 
-
-
-
+* Content – Can place content inside the inner rim.
 
 ![Radial Slider - Overview](Overview_images/Overview_img1.png) 
 
