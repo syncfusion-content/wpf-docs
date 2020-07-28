@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to apply themes for Syncfusion Essential WPF controls
-description: Learn here about how to apply the themes for Syncfusion Essential WPF controls using SfSkinManager
+description: Learn here about how to apply the themes for Syncfusion Essential WPF controls and framework controls using SfSkinManager
 platform: wpf
 control: Themes
 documentation: ug
