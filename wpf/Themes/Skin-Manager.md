@@ -17,7 +17,7 @@ N> Built-in themes in current ThemeStudio has improved consistency and uniquenes
 <th>
 Styles</th><th>
 Assemblies</th><th>
-NuGet References</th><th>
+NuGet packages</th><th>
 Supported in ThemeStudio</th><th>
 Alternative themes in ThemeStudio</th></tr>
 <tr>
