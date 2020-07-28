@@ -41,7 +41,8 @@ Deserialize the XML file from the given file path and returns the SfChart contro
 Deserialize(Stream stream)</td><td>
 Deserialize the XML file from the given stream and returns the SfChart control object.</td></tr>
 </table>
-{% tabs %}
+
+
 {% tabs %}
 
 {% highlight xaml %}
