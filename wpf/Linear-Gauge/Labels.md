@@ -58,7 +58,7 @@ The foreground of the label is customized by setting the [`LabelStroke`](https:/
 
 {% endtabs %}
 
-![](Labels_images/Labels_img1.png)
+![Linear Gauge Labels with color customization](Labels_images/Labels_img1.png)
 
 ## Label font customization
 
@@ -116,7 +116,7 @@ The label font can be customized using the [`LabelSize`](https://help.syncfusion
 
 {% endtabs %}
 
-![](Labels_images/Labels_img2.png)
+![Linear Gauge Labels with size customization](Labels_images/Labels_img2.png)
 
 ## Setting position for labels
 
@@ -169,7 +169,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 {% endtabs %}
 
-![](Labels_images/Labels_img3.png)
+![Linear Gauge Labels with position customization](Labels_images/Labels_img3.png)
 
 ## Setting postfix and prefix for labels
 
@@ -230,7 +230,7 @@ The `LabelPostfix` property allows to postfix the values to scale labels.
 
 {% endtabs %}
 
-![](Labels_images/Labels_img4.png)
+![Linear Gauge Labels with postfix](Labels_images/Labels_img4.png)
 
 ### Setting label prefix
 
@@ -289,7 +289,7 @@ The `LabelPrefix` property allows to prefix the values to scale labels.
 
 {% endtabs %}
 
-![](Labels_images/Labels_img5.png)
+![Linear Gauge Labels with prefix](Labels_images/Labels_img5.png)
 
 ## Labels visibility
 
@@ -348,4 +348,4 @@ Labels visibility can be customized using the [`LabelVisibility`](https://help.s
 
 {% endtabs %}
 
-![](Labels_images/Labels_img6.png)
+![Linear Gauge scale without Labels](Labels_images/Labels_img6.png)

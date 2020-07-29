@@ -56,4 +56,4 @@ The `LinearGauge` control supports horizontal and vertical orientations. By defa
 
 {% endtabs %}
 
-![](Orientation_images/Orientation_img1.png)
+![Linear Gauge with vertical scale](Orientation_images/Orientation_img1.png)

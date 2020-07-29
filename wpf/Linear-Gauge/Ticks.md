@@ -71,7 +71,7 @@ By setting the [`MajorTickStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Linear Gauge Ticks appearance customization](Ticks_images/Ticks_img1.png)
 
 ## Setting position for tick
 
@@ -133,7 +133,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img2.png)
+![Linear Gauge with Ticks position customization](Ticks_images/Ticks_img2.png)
 
 ## Setting minor ticks per interval
 
@@ -185,4 +185,4 @@ The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncf
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![Linear Gauge Ticks interval customization](Ticks_images/Ticks_img3.png)
