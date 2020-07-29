@@ -75,7 +75,7 @@ The start and end values of ranges are set by using the [`StartValue`](https://h
 
 ## Range customization
 
-A ranges UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~Stroke.html), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~StrokeThickness.html), and [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~Offset.html) properties. First, set the `RangePosition` property to custom in scale, and then set the `Offset`.
+A ranges  appearance is customized by using the [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~Stroke.html), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~StrokeThickness.html), and [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~Offset.html) properties. First, set the `RangePosition` property to custom in scale, and then set the `Offset`.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ A ranges UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr
 
 ## Setting a width for range
 
-The appearance of the circular range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~StartWidth.html) and [`EndWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~EndWidth.html) properties.
+The circular range width is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~StartWidth.html) and [`EndWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange~EndWidth.html) properties.
 
 {% tabs %}
 
@@ -200,7 +200,7 @@ The appearance of the circular range is customized by setting the [`StartWidth`]
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img3.png)
 
-## Binding range stroke
+## Binding range color to scale tick and labels
 
 You can bind the ranges stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToLabels.html) and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToTicks.html) properties to true.
 
@@ -302,7 +302,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
-### By setting range position
+### By setting direct range position
 
 You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html) property.
 
@@ -312,7 +312,6 @@ You can place the range by selecting one of the options available in the [`Range
 
 3.	SetAsGaugeRim (Default)
 
-4.	Custom
 
 {% tabs %}
 
@@ -467,7 +466,7 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
 
 #### By setting InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
 
-For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
+For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. This positions is responsive for all the window size. 
 
 {% tabs %}
 
