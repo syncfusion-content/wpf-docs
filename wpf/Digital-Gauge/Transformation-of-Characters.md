@@ -39,7 +39,7 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img1.png)
+![Digital Gauge Value with CharacterHeight](Transformation-of-Characters_images/Transformation-of-Characters_img1.png)
 
 ### CharacterWidth
 
@@ -62,7 +62,7 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img2.png)
+![Digital Gauge Value with CharacterWidth](Transformation-of-Characters_images/Transformation-of-Characters_img2.png)
 
 ## Skewing
 
@@ -89,7 +89,7 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img3.png)
+![Digital Gauge Value with SkewAngleX](Transformation-of-Characters_images/Transformation-of-Characters_img3.png)
 
 ### SkewAngleY
 
@@ -112,4 +112,4 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img4.png)
+![Digital Gauge Value with SkewAngleY](Transformation-of-Characters_images/Transformation-of-Characters_img4.png)
