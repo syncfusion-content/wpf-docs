@@ -87,7 +87,7 @@ No</td></tr>
 <td>
 Blend</td><td>
 Syncfusion.Themes.Blend.Wpf.dll</td><td>
-Syncfusion.Themes.Saffron.WPF</td><td>
+Syncfusion.Themes.Blend.WPF</td><td>
 No</td><td>
 MaterialDark, Office2019Black</td></tr>
 <tr>
