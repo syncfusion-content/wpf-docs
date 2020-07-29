@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Digital Characters | SfDigitalGauge | Wpf | Syncfusion
-description: Digital Characters 
+description:  This section describes Digital Characters support in WPF SfDigitalGauge control with CharacterType property.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Digital Characters
+# Digital Characters in Digital Gauge (SfDigitalGauge)
 
 The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~Value.html) property of type string.
 
@@ -27,7 +27,7 @@ The digital characters in the digital gauge can be viewed in different types of 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img1.png)
+![Digital Gauge with Value](Digital-Characters_images/Digital-Characters_img1.png)
 
 
 ## 7-Segments
@@ -51,7 +51,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img2.png)
+![Digital Gauge with SegmentSeven CharacterType](Digital-Characters_images/Digital-Characters_img2.png)
 
 ## 14-Segments
 
@@ -74,7 +74,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img3.png)
+![Digital Gauge with SegmentFourteen CharacterType](Digital-Characters_images/Digital-Characters_img3.png)
 
 ## 16-Segments
 
@@ -97,7 +97,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img4.png)
+![Digital Gauge with SegmentSixteen CharacterType](Digital-Characters_images/Digital-Characters_img4.png)
 
 ## 8*8 Dot Matrix Segments
 
@@ -120,5 +120,5 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs%}
 
-![](Digital-Characters_images/Digital-Characters_img5.png)
+![Digital Gauge with EightCrossEightDotMatrix CharacterType](Digital-Characters_images/Digital-Characters_img5.png)
 

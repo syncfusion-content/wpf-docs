@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Settings| SfDigitalGauge | Wpf | Syncfusion
-description: Settings 
+description:  This section describes customization options available in WPF Digital Gauge control with spacing, stroke opacity properties.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Settings
+# Settings options available in Digital Gauge (SfDigitalGauge)
 
 There are some other elements/behavior in SfDigitalGauge also can be customized. 
 
@@ -41,7 +41,7 @@ The distance between the characters can be set by using the [`CharacterSpacing`]
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img1.png)
+![Digital Gauge Value with CharacterSpacing](Settings_images/Settings_img1.png)
 
 ## Character Stroke
 
@@ -66,7 +66,7 @@ The Stroke of the character can be changed by [`CharacterStroke`](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img2.png)
+![Digital Gauge Value with CharacterStroke](Settings_images/Settings_img2.png)
 
 ## Segment Thickness
 
@@ -91,7 +91,7 @@ Using [`SegmentThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img3.png)
+![Digital Gauge Value with SegmentThickness](Settings_images/Settings_img3.png)
 
 ## RTL (Right to Left) support
 
@@ -116,7 +116,7 @@ The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img4.png)
+![Digital Gauge Value with RTL](Settings_images/Settings_img4.png)
 
 ## Dimmed Brush stroke
 
@@ -141,7 +141,7 @@ The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img5.png)
+![Digital Gauge Value with DimmedBrush](Settings_images/Settings_img5.png)
 
 ## Dimmed Brush opacity
 
@@ -167,4 +167,4 @@ The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img6.png)
+![Digital Gauge Value with DimmedBrushOpacity](Settings_images/Settings_img6.png)

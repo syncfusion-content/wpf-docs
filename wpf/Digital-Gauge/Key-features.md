@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Key Features| SfDigitalGauge | Wpf | Syncfusion
-description: Key Features
+description: This section describes types of segment display available in WPF Digital Gauge (SfDigitalGauge) control.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Key Features
+# Key Features in WPF Digital Gauge (SfDigitalGauge)
 
-A digital gauge is composed of segments which are a major UI component of the digital gauge. **SfDigitalGauge** comprises of the following segments to display the digital characters.
+A digital gauge is composed of segments which are a major UI component of the digital gauge. `SfDigitalGauge` comprises of the following segments to display the digital characters.
 
 * 7 Segment Display
 * 14 Segment Display

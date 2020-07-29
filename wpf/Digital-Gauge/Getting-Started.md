@@ -7,7 +7,7 @@ control: SfDigitalGauge
 documentation: ug
 ---
 
-# Getting Started with SfDigitalGauge
+# Getting Started with WPF Digital Gauge (SfDigitalGauge)
 
 This section explains you the steps required to configure the **SfDigitalGauge** and also explains the steps to add basic elements of **SfDigitalGauge** through various API’s available within it.
 
