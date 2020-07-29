@@ -119,11 +119,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Setting a position for labels
 
-  The `Labels` can be placed inside the scale, outside the scale, or on the scale using the following two ways:
+  The `Labels` can be placed inside the scale, outside the scale, or custom position using the following two ways:
 
-### LabelPosition
+### Inside or Outside label Position
 
-Placing the labels by selecting one of the options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) property. Please find the values available in `LabelPosition` property below.
+Placing the labels inside or outside the scale by selecting the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) property is `Inside` or `Outside`. Please find the values available in `LabelPosition` property below.
 
 1.	Inside (Default)
 
@@ -177,7 +177,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Setting position for labels image](Labels_images/Setting_Position_for_labels.png)
 
-### Setting Offset position value for labels
+### Setting custom position for labels
 
 Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html) property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) to custom, and then position the label using the `LabelOffset` property.
 
@@ -229,7 +229,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Positioning labels image](Labels_images/Positioning_labels.png)
 
-### Setting a smart labels
+## Setting a smart labels
 
 Smart labels allow to change the numeric scale type of the labels displayed in a gauge scale, and customize the labels by adding prefixes or suffixes to the scale labels.
 
@@ -550,7 +550,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
 ## Events
 
-You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the [`LabelText`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LabelCreatedEventArgs~LabelText.html) property of `LabelCreatedEventArgs`.
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelCreated_EV.html) event. Based on requirements, the labels can be changed by using the [`LabelText`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LabelCreatedEventArgs~LabelText.html) property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 
