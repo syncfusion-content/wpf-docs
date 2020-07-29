@@ -13,7 +13,7 @@ Ticks are used to identify the gauge’s data value by marking the gauge scale i
 
 ## Tick customization
 
-By setting the `MajorTickStroke` and `MinorTickStroke` properties, the stroke of the major ticks and minor ticks can be customized. Using the `MajorTickStrokeThickness` and `MinorTickStrokeThickness`, the stroke thickness of the major ticks and minor ticks can be customized. The size of the major ticks and minor ticks can be modified using the `MajorTickSize` and `MinorTickSize` properties.
+By setting the [`MajorTickStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MajorTickStroke.html) and [`MinorTickStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MinorTickStroke.html) properties, the stroke of the major ticks and minor ticks can be customized. Using the [`MajorTickStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MajorTickStrokeThickness.html) and [`MinorTickStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MinorTickStrokeThickness.html), the stroke thickness of the major ticks and minor ticks can be customized. The size of the major ticks and minor ticks can be modified using the [`MajorTickSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MajorTickSize.html) and [`MinorTickSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MinorTickSize.html) properties.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ By setting the `MajorTickStroke` and `MinorTickStroke` properties, the stroke of
 
 ## Setting position for tick
 
-The ticks in the scale can be placed above, below, or in between the scale by choosing one of the following options available in the `TickPosition` property:
+The ticks in the scale can be placed above, below, or in between the scale by choosing one of the following options available in the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~TickPosition.html) property:
 
 1.	Above
 
@@ -137,7 +137,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 ## Setting minor ticks per interval
 
-The `Interval` property is used to calculate the tick counts for a scale. Like ticks, minor ticks can also be calculated by using the `MinorTicksPerInterval` property.
+The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~Interval.html) property is used to calculate the tick counts for a scale. Like ticks, minor ticks can also be calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~MinorTicksPerInterval.html) property.
 
 {% tabs %}
 

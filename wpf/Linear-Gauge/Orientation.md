@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-The `LinearGauge` control supports horizontal and vertical orientations. By default, the `LinearGauge` is rendered with horizontal orientation. You can change the orientation using the `Orientation` property.
+The `LinearGauge` control supports horizontal and vertical orientations. By default, the `LinearGauge` is rendered with horizontal orientation. You can change the orientation using the [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfLinearGauge~Orientation.html) property.
 
 {% tabs %}
 
@@ -19,9 +19,9 @@ The `LinearGauge` control supports horizontal and vertical orientations. By defa
 
     <gauge:SfLinearGauge.MainScale>
 
-    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
-    ScaleBarSize="10" MinorTicksPerInterval="3">
-
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" 
+                       MinorTickStroke="Gray" LabelStroke="#424242"
+                       ScaleBarSize="10" MinorTicksPerInterval="3">
     </gauge:LinearScale>
 
     </gauge:SfLinearGauge.MainScale>
