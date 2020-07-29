@@ -16,7 +16,7 @@ The digital characters in the digital gauge can be transformed by setting certai
 
 ## Scaling
 
-The value of the digital characters is scaled by altering the height and width of the digital characters. It is achieved by setting the **CharacterHeight** and **CharacterWidth** property in the digital gauge.
+The value of the digital characters is scaled by altering the height and width of the digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterWidth.html) property in the digital gauge.
 
 ### CharacterHeight
 
@@ -39,7 +39,7 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img1.jpeg)
+![](Transformation-of-Characters_images/Transformation-of-Characters_img1.png)
 
 ### CharacterWidth
 
@@ -62,11 +62,11 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img2.jpeg)
+![](Transformation-of-Characters_images/Transformation-of-Characters_img2.png)
 
 ## Skewing
 
-The digital gauge also performs skew transformation for the digital characters. It can be done on both x-axis and y-axis through **SkewAngleX** and **SkewAngleY** properties respectively.
+The digital gauge also performs skew transformation for the digital characters. It can be done on both x-axis and y-axis through [`SkewAngleX`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~SkewAngleX.html) and [`SkewAngleY`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~SkewAngleY.html) properties respectively.
 
 ### SkewAngleX
 
@@ -89,7 +89,7 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img3.jpeg)
+![](Transformation-of-Characters_images/Transformation-of-Characters_img3.png)
 
 ### SkewAngleY
 
@@ -112,4 +112,4 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img4.jpeg)
+![](Transformation-of-Characters_images/Transformation-of-Characters_img4.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Digital Characters
 
-The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the **Value** property of type string.
+The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~Value.html) property of type string.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,12 +27,12 @@ The digital characters in the digital gauge can be viewed in different types of 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img1.jpeg)
+![](Digital-Characters_images/Digital-Characters_img1.png)
 
 
 ## 7-Segments
 
-The digital characters which are set as the value property of the digital gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by the **CharacterType** property.
+The digital characters which are set as the value property of the digital gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by the [`CharacterType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterType.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img2.jpeg)
+![](Digital-Characters_images/Digital-Characters_img2.png)
 
 ## 14-Segments
 
@@ -74,7 +74,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img3.jpeg)
+![](Digital-Characters_images/Digital-Characters_img3.png)
 
 ## 16-Segments
 
@@ -97,7 +97,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img4.jpeg)
+![](Digital-Characters_images/Digital-Characters_img4.png)
 
 ## 8*8 Dot Matrix Segments
 
@@ -120,5 +120,5 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs%}
 
-![](Digital-Characters_images/Digital-Characters_img5.jpeg)
+![](Digital-Characters_images/Digital-Characters_img5.png)
 

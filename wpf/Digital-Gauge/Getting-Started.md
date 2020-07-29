@@ -23,7 +23,7 @@ Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/)
 
 **Method 2: Adding gauge reference from toolbox**
 
-You can drag the digital gauge control from the  toolbox and drop it to the designer. It will automatically install the required NuGet packages and add the namespace to the page. 
+You can drag the digital gauge control from the  toolbox and drop it to the designer. It will add the required assembly references automatically, and add the namespace to the page.  
 
 **Method 3: Adding gauge assemblies manually from the installed location**
 
@@ -31,7 +31,7 @@ If you prefer to manually reference the assemblies instead referencing from NuGe
 
 Location: {Installed location}/{version}/WPF/Assemblies
 
-You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding gauge to your project.
+You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sfgauge) link to know about the assemblies required for adding gauge to your project.
 
 ## Initialize gauge
 
