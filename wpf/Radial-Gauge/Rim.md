@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# SfCircularGauge Rim customization
+# Scale Rim for SfCircularGauge
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 
@@ -132,7 +132,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 ### Setting a radius factor for rim
 
-The value for `RadiusFactor` should be specified in offset value. `RadiusFactor` sets the scale responsive with the window. 
+The value for `RadiusFactor` should be specified in offset value. It value should be 0 to 1.  `RadiusFactor` sets the scale responsive with the window. 
 
 {% tabs %}
 
@@ -270,7 +270,7 @@ N> Default value of the ShowRim property is true.
 
 ![Show rim support in WPF Circular Gauge](Rim_images/show-rim.png)
 
-### Set offset value for a responsive window in rim
+### Set offset value for a responsive size in rim
 
 * [`RimStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimStartOffset.html) - Sets the rim start offset position. Its range is from 0 to 1.
 * [`RimEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RimEndOffset.html) - Sets the rim end offset position. Its range is from 0 to 1.
