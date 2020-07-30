@@ -541,7 +541,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 * Using the `Offset` property with `RangePointerPosition` is custom.
 
-`Offset` property allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `Offset` property for required position. `Offset' value should be from 0 to 1. 
+This ways allows to place the range pointer anywhere inside the gauge. First, set the `RangePointerPosition` to custom, and then set the `Offset` property for required position. `Offset' value should be from 0 to 1. 
 
 {% tabs %}
 

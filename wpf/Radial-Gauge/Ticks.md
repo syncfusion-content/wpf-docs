@@ -13,7 +13,7 @@ Ticks help you identify the gauge’s data value by marking the gauge scale in r
 
 ## Tick customization
 
-The Interval property is used to calculate the tick count for a scale. Similar ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~MinorTicksPerInterval.html) property.
+The Interval property is used to calculate the tick count for a scale. Similar major ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~MinorTicksPerInterval.html) property.
 
 The length, stroke, and stroke thickness of a major ticks and minor ticks are set by using the [`Length`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Length.html), [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Stroke.html), and [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~StrokeThickness.html) properties, respectively. 
 
