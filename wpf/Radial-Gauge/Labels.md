@@ -231,13 +231,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Setting a smart labels
 
-Smart labels allow to change the numeric scale type of the labels displayed in a gauge scale, and customize the labels by adding prefixes or suffixes to the scale labels.
-
-### Enable or disable smart labels
-
 The [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableSmartLabels.html) property is a Boolean property that enables or disables the smart label feature of the circular gauge.
 
-## Setting a numeric scale type
+This property allow to change the `NumericScaleType` of the labels displayed in a gauge scale, and customize the labels by adding prefixes or suffixes to the scale labels.
 
 The [`NumericScaleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~NumericScaleType.html) property allows to set the type of label. The following types can be applied to labels:
 

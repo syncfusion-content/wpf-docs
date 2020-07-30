@@ -529,14 +529,11 @@ In addition to the default range, you can add n number of ranges to a scale by u
             <gauge:CircularScale  RangePosition="Inside" Radius="200">
                 <gauge:CircularScale.Ranges>
                     <gauge:CircularRange StartValue="0" EndValue="40" 
-                                         Stroke="Green" StrokeThickness ="10" 
-                                         StartWidth="1" EndWidth="10"/>
+                                         Stroke="Green" StrokeThickness ="10"/>
                     <gauge:CircularRange StartValue="40" EndValue="60" 
-                                         Stroke="Yellow" StrokeThickness ="10" 
-                                         StartWidth="1" EndWidth="10"/>
+                                         Stroke="Yellow" StrokeThickness ="10"/>
                     <gauge:CircularRange StartValue="60" EndValue="100" 
-                                         Stroke="Red" StrokeThickness ="10" 
-                                         StartWidth="1" EndWidth="10"/>
+                                         Stroke="Red" StrokeThickness ="10"/>
                 </gauge:CircularScale.Ranges>
                 <gauge:CircularScale.Pointers>
                     <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>

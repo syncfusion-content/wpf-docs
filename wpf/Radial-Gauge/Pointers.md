@@ -123,7 +123,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Needle pointer customization
 
-The length of a needle is controlled using the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property. The minimum and maximum bounds of the `NeedleLengthFactor` property is 0 to 1. The needle’s UI is customized using the [`NeedlePointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStroke.html) and [`NeedlePointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStrokeThickness.html) properties. The size of the pointer cap can be modified by changing the [`PointerCapDiameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapDiameter.html) property, and color can be modified using the [`KnobStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobStroke.html) property.
+The length of a needle is controlled using the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property. The minimum and maximum bounds of the `NeedleLengthFactor` property is 0 to 1. The needle’s UI is customized using the [`NeedlePointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStroke.html) and [`NeedlePointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStrokeThickness.html) properties. The size of the pointer cap can be modified by changing the [`PointerCapDiameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapDiameter.html) property, and color can be modified using the [`KnobStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobStroke.html) and [`KnobFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobFill.html) properties.
 
 {% tabs %}
 
@@ -139,6 +139,7 @@ The length of a needle is controlled using the [`NeedleLengthFactor`](https://he
 
     <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" 
                            NeedlePointerStroke="DeepSkyBlue" PointerCapDiameter="20" KnobStroke="DeepSkyBlue"
+			   KnobFill="DeepSkyBlue"
                            NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
 
     </gauge:CircularScale.Pointers>
@@ -172,6 +173,8 @@ circularPointer.NeedleLengthFactor = 0.5;
 circularPointer.PointerCapDiameter = 20;
 
 circularPointer.KnobStroke = new SolidColorBrush(Colors.DeepSkyBlue);
+
+circularPointer.KnobFill = new SolidColorBrush(Colors.DeepSkyBlue);
 
 mainscale.Pointers.Add(circularPointer);
 
@@ -470,8 +473,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Setting position for range pointer
 
-The `RangePointer` can be positioned inside the gauge by the following two ways:
-*	Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property.
+The `RangePointer` can be positioned inside the gauge by the following ways:
+
+#### Setting range pointer position inside/outside	
+
+Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property.
 
 You can directly place the range pointer inside, outside or cross the scale by selecting one of the below option available in the `RangePointerPosition` property. 
 1.	Inside (Default)
@@ -531,9 +537,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img8.png)
 
-*	Using the `Offset` property with `RangePointerPosition` is custom.
+#### Setting custom range pointer position	
 
-This ways allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `Offset` property for required position. `Offset' value should be from 0 to 1. 
+* Using the `Offset` property with `RangePointerPosition` is custom.
+
+`Offset` property allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `Offset` property for required position. `Offset' value should be from 0 to 1. 
 
 {% tabs %}
 
@@ -579,6 +587,111 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
+
+* `RangeStartOffset` and `RangeEndOffset` properties with `RangePointerPosition` is custom allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `RangeStartOffset` and `RangeEndOffset` properties for required position. Offset value should be from 0 to 1. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <gauge:SfCircularGauge >
+        <gauge:SfCircularGauge.Scales >
+            <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
+                <gauge:CircularScale.Pointers>
+                    <gauge:CircularPointer PointerType="RangePointer" 
+					   RangeStartOffset="0.5"  RangeEndOffset="0.7" 
+                                           RangePointerStroke="LightGray" Value="90"/>
+                </gauge:CircularScale.Pointers>
+            </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale mainscale = new CircularScale();
+
+            mainscale.RangePointerPosition = RangePointerPosition.Custom;
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.PointerType = PointerType.RangePointer;
+
+            circularPointer.RangeStartOffset = 0.5;
+
+            circularPointer.RangeEndOffset = 0.7;
+
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightGray);
+
+            circularPointer.Value = 90;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_rangepointer_custom_offset.png)
+
+### Range pointer start customization
+
+The [`RangeStart`] property used to customize the range pointer start position in scale. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="RangePointer" 
+                                               RangeStart="20"
+                                               RangeStartOffset="0.5"  RangeEndOffset="0.7"
+                                           RangePointerStroke="LightGray" Value="90"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale mainscale = new CircularScale();
+
+            mainscale.RangePointerPosition = RangePointerPosition.Custom;
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.PointerType = PointerType.RangePointer;
+
+            circularPointer.RangeStartOffset = 0.5;
+
+            circularPointer.RangeEndOffset = 0.7;
+
+	    circularPointer.RangeStart = 20;
+
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightGray);
+
+            circularPointer.Value = 90;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_rangepointer_custom_start.png)
 
 ### Setting range cap for range pointer
 
@@ -651,6 +764,137 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img10.png)
+
+### Symbol pointer types
+
+You can modify the symbol pointer view by choosing available options in [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.Symbol.html) property. Please find the types of symbol below. 
+
+1. Arrow
+2. Cross
+3. Custom
+4. Diamond
+5. Ellipse
+6. Hexagon
+7. InvertedArrow
+8. InvertedTriangle
+9. Pentagon
+10. Rectangle
+11. RoundedRectangle
+12. Triangle
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfCircularGauge >
+
+            <gauge:SfCircularGauge.Scales>
+
+                <gauge:CircularScale>
+
+                    <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer PointerType="SymbolPointer"  
+                                               Symbol="Pentagon"
+                                               Value="60"/>
+
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale mainscale = new CircularScale();
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.PointerType = PointerType.SymbolPointer;
+
+            circularPointer.Symbol = Symbol.Pentagon;
+
+            circularPointer.Value = 60;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+            grid.Children.Add(sfCircularGauge);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_pentagon_symbolpointer.png)
+
+### Setting custom symbol pointer
+
+You can customize the `SymbolPointer` by setting `Symbol` as `Custom` and defining `SymbolTemplate`. Please find the custom template section below. 
+
+{% highlight xml %}
+
+<gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale  x:Name="scale" 
+                                      RangePointerPosition="Custom">
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="SymbolPointer"
+                                               Symbol="Custom"
+                                               Value="60">
+                            <gauge:CircularPointer.SymbolPointerTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Visible">
+                                            <Ellipse Fill="White" Name="Fill" Visibility="Visible" />
+                                        </Grid>
+                                        <Path Stretch="Uniform" Fill="Black" Width="24" Height="24" 
+                                              Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                            <Path.Data>
+                                                <PathGeometry FillRule="Nonzero" 
+                                                              Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,
+                            13.0306243896484 16.283203125,15.6966400146484 15.6796875,18.8665618896484 16.283203125,
+                            22.0423431396484 18.09375,24.7259368896484 20.759765625,26.5540618896484 23.9296875,27.1634368896484 27.1025371551514,
+                            26.5540618896484 29.77734375,24.7259368896484 31.5966796875,22.0423431396484 32.203125,18.8665618896484 31.5966796875,
+                            15.6966400146484 29.77734375,13.0306243896484 27.1025371551514,11.2200794219971 23.9296875,10.6165618896484z M25.265625,
+                            7.35874938964844L26.6953125,9.86656188964844 29.3671875,8.64781188964844 29.765625,11.4837493896484 32.7421875,
+                            11.2728118896484 32.015625,14.1790618896484 34.921875,14.9759368896484 33.1875,17.4134368896484 35.578125,
+                            19.1478118896484 33.140625,20.7884368896484 34.640625,23.3665618896484 31.8046875,23.9759368896484 32.3203125,
+                            26.9759368896484 29.4375,26.5540618896484 28.921875,29.4837493896484 26.25,27.9603118896484 24.75,
+                            30.4681243896484 22.8046875,28.2181243896484 20.5078125,30.0228118896484 19.5703125,27.1634368896484 16.640625,
+                            28.0306243896484 16.875,25.1009368896484 13.875,24.7728118896484 15.140625,22.1478118896484 12.421875,
+                            20.7415618896484 14.5546875,18.6790618896484 12.4921875,16.5228118896484 15.2578125,15.3040618896484 14.203125,
+                            12.5384368896484 17.1328125,12.3978118896484 17.1328125,9.42124938964844 19.921875,10.4056243896484 21.046875,
+                            7.61656188964844 23.296875,9.49156188964844 25.265625,7.35874938964844z" />
+                                            </Path.Data>
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <TransformGroup.Children>
+                                                        <RotateTransform Angle="0" />
+                                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                    </TransformGroup.Children>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </Grid>
+                                </DataTemplate>
+                            </gauge:CircularPointer.SymbolPointerTemplate>
+                        </gauge:CircularPointer>
+                                               
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>    
+
+{% endhighlight %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_custom_symbolpointer.png)
 
 ### Symbol pointer customization
 
