@@ -528,9 +528,13 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Setting position for range pointer
 
-The `RangePointer` can be positioned inside the gauge by the following ways:
+The `RangePointer` can be positioned anywhere in the gauge by the following ways:
 
-#### Setting range pointer position inside/outside	
+1. Setting direct `RangePointerPosition` property to place pointer inside or outside the gauge.  
+2. Setting `Offset` and `RangePointerStrokeThickness` properties. This positions is responsive for all the window size. But `RangePointer` width is fixed. 
+3. Setting `RangeStartOffset` and `RangeEndOffset` properties. This position and width are responsive to all size of the window.
+
+#### Setting direct range pointer position
 
 Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property.
 
@@ -540,6 +544,8 @@ You can directly place the range pointer inside, outside or cross the scale by s
 2.	Outside
 
 3.	Cross
+
+4.	Custom
 
 {% tabs %}
 
@@ -592,26 +598,25 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img8.png)
 
-#### Setting custom range pointer position	
+#### Setting offset range pointer position with fixed width	
 
-* Using the `Offset` property with `RangePointerPosition` is custom.
-
-This ways allows to place the range pointer anywhere inside the gauge. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) to custom, and then set the [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~Offset.html) property for required position. `Offset` value should be from 0 to 1. 
+This ways allows to place the range pointer anywhere inside the gauge. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) to custom, and then set the [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~Offset.html) property for required position. `Offset` value should be from 0 to 1. This positions is responsive for all the window size. But `RangePointer` width is fixed.
 
 {% tabs %}
 
 {% highlight xaml %}
 
     <gauge:SfCircularGauge >
-        <gauge:SfCircularGauge.Scales >
-            <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
-                <gauge:CircularScale.Pointers>
-                    <gauge:CircularPointer PointerType="RangePointer" Offset="0.5" 
-                                           RangePointerStroke="LightGray" Value="90"/>
-                </gauge:CircularScale.Pointers>
-            </gauge:CircularScale>
-        </gauge:SfCircularGauge.Scales>
-    </gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="RangePointer" Offset="0.5" 
+                                              RangePointerStrokeThickness="20"
+                                               RangePointerStroke="LightGray" Value="60"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -631,7 +636,9 @@ circularPointer.Offset = 0.5;
 
 circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightGray);
 
-circularPointer.Value = 90;
+circularPointer.RangePointerStrokeThickness = 20;
+
+circularPointer.Value = 60;
 
 mainscale.Pointers.Add(circularPointer);
 
@@ -643,7 +650,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
 
-* [`RangeStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeStartOffset.html) and [`RangeEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeEndOffset.html) properties with `RangePointerPosition` is custom allows to place the range pointer anywhere inside the gauge. First, set the `RangePointerPosition` to custom, and then set the `RangeStartOffset` and `RangeEndOffset` properties for required position. Offset value should be from 0 to 1. 
+#### Setting start and end position of the range pointer with offset
+
+[`RangeStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeStartOffset.html) and [`RangeEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeEndOffset.html) properties with `RangePointerPosition` is custom allows to place the range pointer anywhere inside the gauge. First, set the `RangePointerPosition` to custom, and then set the `RangeStartOffset` and `RangeEndOffset` properties for required position. Offset value should be from 0 to 1. This position and width are responsive to all size of the window.
 
 {% tabs %}
 
