@@ -123,7 +123,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Needle pointer customization
 
-The length of a needle is controlled using the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property. The minimum and maximum bounds of the `NeedleLengthFactor` property is 0 to 1. The needle’s UI is customized using the [`NeedlePointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStroke.html) and [`NeedlePointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStrokeThickness.html) properties. The size of the pointer cap can be modified by changing the [`PointerCapDiameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapDiameter.html) property, and color can be modified using the [`KnobStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobStroke.html) and [`KnobFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobFill.html) properties.
+The length of a needle is controlled using the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property. The minimum and maximum bounds of the `NeedleLengthFactor` property is 0 to 1. The needle’s UI is customized using the [`NeedlePointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStroke.html) and [`NeedlePointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStrokeThickness.html) properties. The size of the pointer cap can be modified by changing the [`PointerCapDiameter`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapDiameter.html) property.
 
 {% tabs %}
 
@@ -185,6 +185,61 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img3.png)
+
+### Needle pointer knob customization
+
+You can able to customize the needle pointer knob size, fill, stroke and stroke thickness by using [`KnobRadiusFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobRadiusFactor.html), [`KnobFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobFill.html), [`KnobStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobStroke.html), [`KnobStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~KnobStrokeThickness.html) properties. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+   <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="NeedlePointer" 
+                                               KnobStrokeThickness="5"
+                                               KnobRadiusFactor="0.2"
+                                               KnobStroke="DeepSkyBlue"
+                                               KnobFill="White"
+                                               Value="60"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale mainscale = new CircularScale();
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.PointerType = PointerType.NeedlePointer;
+
+            circularPointer.KnobStroke = new SolidColorBrush(Colors.DeepSkyBlue);
+
+            circularPointer.KnobRadiusFactor = 0.2;
+
+            circularPointer.KnobStrokeThickness = 5;
+
+            circularPointer.KnobFill = new SolidColorBrush(Colors.White);
+
+            circularPointer.Value = 60;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_needlepointer_knobcustomization.png)
 
 ### Setting visibility of needle pointer
 
