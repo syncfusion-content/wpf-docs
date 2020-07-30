@@ -695,30 +695,52 @@ The [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syn
 
 ### Setting range cap for range pointer
 
-The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeCap.html) property provides options to set the rounded cap for the range pointer corners, which contains the start, end, both, and none options. The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeCap.html) property is an enum property.
+The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeCap.html) property provides options to position the range cap of the RangePointer, which contains the start, end, both, and none options. The `RangeCap` property is an enum property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge Margin="10">
+    <gauge:SfCircularGauge >
         <gauge:SfCircularGauge.Scales>
-            <gauge:CircularScale x:Name="scale" SweepAngle="360" 
-                                 RimStroke="LightGray"  
-                                 RimStrokeThickness="30" 
-                                 RangePointerPosition="Custom">
-                <gauge:CircularScale.Pointers>
-                    <gauge:CircularPointer PointerType="RangePointer" 
-                                           RangePointerStrokeThickness="30" 
-                                           RangeCap="Both" 
-                                           RangePointerStroke="DeepSkyBlue" 
-                                           Value="75"/>
-                </gauge:CircularScale.Pointers>
-            </gauge:CircularScale>
-        </gauge:SfCircularGauge.Scales>
+              <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom">
+                   <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="RangePointer" RangePointerStrokeThickness="30" RangeCap="Both" 
+                                               RangePointerStroke="LightSkyBlue" Value="75"/>
+                    </gauge:CircularScale.Pointers>
+              </gauge:CircularScale>
+         </gauge:SfCircularGauge.Scales>
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RangePointerPosition = RangePointerPosition.Custom;
+            mainscale.SweepAngle = 360;
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            mainscale.RimStrokeThickness = 30;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.RangePointer;
+            circularPointer.RangePointerStrokeThickness = 30;
+            circularPointer.RangeCap = RangeCap.Both;
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightSkyBlue);
+            circularPointer.Value = 75;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RangeCap for Circular Gauge RangePointer](Pointers_images/RangeCap.png)
+
+## Symbol pointer
+
+In symbol pointer, the value is pointed out using a symbol on the scale. The symbol is an enum property that provides symbol options for the symbol pointer, which contains several shapes such as rectangle, ellipse, and triangle.
+
 {% tabs %}
 
 {% highlight xml %}
