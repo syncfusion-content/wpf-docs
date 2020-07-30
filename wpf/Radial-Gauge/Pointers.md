@@ -541,7 +541,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 * Using the `Offset` property with `RangePointerPosition` is custom.
 
-This ways allows to place the range pointer anywhere inside the gauge. First, set the `RangePointerPosition` to custom, and then set the `Offset` property for required position. `Offset' value should be from 0 to 1. 
+This ways allows to place the range pointer anywhere inside the gauge. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) to custom, and then set the [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~Offset.html) property for required position. `Offset' value should be from 0 to 1. 
 
 {% tabs %}
 
@@ -588,7 +588,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
 
-* `RangeStartOffset` and `RangeEndOffset` properties with `RangePointerPosition` is custom allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `RangeStartOffset` and `RangeEndOffset` properties for required position. Offset value should be from 0 to 1. 
+* [`RangeStartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeStartOffset.html) and [`RangeEndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeEndOffset.html) properties with `RangePointerPosition` is custom allows to place the range pointer anywhere inside the guage. First, set the `RangePointerPosition` to custom, and then set the `RangeStartOffset` and `RangeEndOffset` properties for required position. Offset value should be from 0 to 1. 
 
 {% tabs %}
 
@@ -640,7 +640,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Range pointer start customization
 
-The [`RangeStart`] property used to customize the range pointer start position in scale. 
+The [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangeStart.html) property used to customize the range pointer start position in scale. 
 
 {% tabs %}
 
@@ -836,7 +836,7 @@ You can modify the symbol pointer view by choosing available options in [`Symbol
 
 ### Setting custom symbol pointer
 
-You can customize the `SymbolPointer` by setting `Symbol` as `Custom` and defining `SymbolTemplate`. Please find the custom template section below. 
+You can customize the `SymbolPointer` by setting [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~Symbol.html) as `Custom` and defining [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularPointer~SymbolPointerTemplate.html). Please find the custom template section below. 
 
 {% highlight xml %}
 
@@ -1045,7 +1045,7 @@ The [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfus
 
 ### Setting multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a scale using the `Pointers` property.
+In addition to the default pointer, you can add n number of pointers to a scale using the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~Pointers.html) property.
 
 {% tabs %}
 
