@@ -536,9 +536,8 @@ The `RangePointer` can be positioned anywhere in the gauge by the following ways
 
 #### Setting direct range pointer position
 
-Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property.
+You can directly place the range pointer inside, outside or cross the scale by selecting one of the below option available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property. 
 
-You can directly place the range pointer inside, outside or cross the scale by selecting one of the below option available in the `RangePointerPosition` property. 
 1.	Inside (Default)
 
 2.	Outside
