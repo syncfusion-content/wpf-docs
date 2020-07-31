@@ -48,7 +48,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
 ## Setting start and end values for scale
 
-The `StartValue` and `EndValue` properties allow you to set the start and end values for a scale.
+The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~EndValue.html) properties allow you to set the start and end values for a scale.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ The `StartValue` and `EndValue` properties allow you to set the start and end va
 
 ## Setting start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale~StartAngle.html)  and `SweepAngle` properties allow you to set the start and end angles for a scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale~StartAngle.html)  and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepAngle.html) properties allow you to set the start and end angles for a scale.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gaug
 
 ## Setting interval for scale
 
-The `Interval` property allows you to set the interval for a scale.
+The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~Interval.html) property allows you to set the interval for a scale. The default value of `Interval` is `Auto`, it defines the count of the scale labels based on `StartValue` and `EndValue` of scale. 
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ N> You can specify the interval value upto 5 decimal places while showing the la
 
 ## Setting scale direction for scale
 
-The `SweepDirection` property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepDirection.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% tabs %}
 
@@ -264,161 +264,147 @@ You can add multiple scales to the same circular gauge and customize all the sca
 
 {% highlight xml %}
 
-    <Grid Background="Black">
-
-    <gauge:SfCircularGauge SpacingMargin="0.7">
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale Radius="175" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
-
-    <gauge:CircularScale.Ranges>
-
-    <gauge:CircularRange  StartValue="0"  EndValue="60" 
-    Stroke="#B0B0B0" StrokeThickness="5" />
-
-    <gauge:CircularRange  StartValue="60" EndValue="100" Stroke="#C1252C" StrokeThickness="5"/>
-
-    </gauge:CircularScale.Ranges>
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer Value="30"    PointerType="SymbolPointer" Symbol="InvertedArrow"  
-    SymbolPointerWidth="30"  SymbolPointerHeight="20"  SymbolPointerStroke="Green"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    <gauge:CircularScale Radius="90" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
-
-    <gauge:CircularScale.Ranges>
-
-    <gauge:CircularRange  StartValue="0" EndValue="60"  Stroke="#B0B0B0" StrokeThickness="5" />
-
-    <gauge:CircularRange  StartValue="60"   EndValue="100" Stroke="#C1252C" StrokeThickness="5"/>
-
-    </gauge:CircularScale.Ranges>
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer Value="30"  PointerType="NeedlePointer" NeedlePointerStroke="#C1252C"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
-        
-    </Grid>
+         <gauge:SfCircularGauge SpacingMargin="0.7">
+                <gauge:SfCircularGauge.Scales>
+                    <gauge:CircularScale Radius="175">
+                        <gauge:CircularScale.Ranges>
+                            <gauge:CircularRange  StartValue="0"  EndValue="60" 
+                                                  Stroke="#B0B0B0" StrokeThickness="5" />
+                            <gauge:CircularRange  StartValue="60" EndValue="100" 
+                                                  Stroke="#C1252C" StrokeThickness="5"/>
+                        </gauge:CircularScale.Ranges>
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer Value="30" PointerType="SymbolPointer" 
+                                                   Symbol="InvertedArrow"  
+                                                   SymbolPointerWidth="30" 
+                                                   SymbolPointerHeight="20"  
+                                                   SymbolPointerStroke="Green"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                    <gauge:CircularScale Radius="90" LabelStroke="Black">
+                        <gauge:CircularScale.MajorTickSettings>
+                            <gauge:MajorTickSetting Stroke="Black"/>
+                        </gauge:CircularScale.MajorTickSettings>
+                        <gauge:CircularScale.MinorTickSettings>
+                            <gauge:MinorTickSetting Stroke="Black"/>
+                        </gauge:CircularScale.MinorTickSettings>
+                        <gauge:CircularScale.Ranges>
+                            <gauge:CircularRange  StartValue="0" EndValue="60"  
+                                                  Stroke="#B0B0B0" StrokeThickness="5"/>
+                            <gauge:CircularRange  StartValue="60" EndValue="100" 
+                                                  Stroke="#C1252C" StrokeThickness="5"/>
+                        </gauge:CircularScale.Ranges>
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer Value="30" PointerType="NeedlePointer" 
+                                                   NeedlePointerStroke="#C1252C"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-   this.Background = new SolidColorBrush(Colors.Black);
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            
+            circularGauge.SpacingMargin = 0.7;
 
-   SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale1 = new CircularScale();
 
-   CircularScale scale1 = new CircularScale();
+            scale1.LabelStroke = new SolidColorBrush(Colors.Black);
 
-   scale1.TickStroke = new SolidColorBrush(Colors.White);
+            scale1.Radius = 175;
 
-   scale1.LabelStroke = new SolidColorBrush(Colors.White);
+            CircularScale scale2 = new CircularScale();
 
-   scale1.SmallTickStroke = new SolidColorBrush(Colors.White);
+            scale2.LabelStroke = new SolidColorBrush(Colors.Black);
 
-   scale1.Radius = 175;
+            scale2.Radius = 90;
 
-   CircularScale scale2 = new CircularScale();
+            scale2.MajorTickSettings.Stroke = new SolidColorBrush(Colors.Black);
 
-   scale2.TickStroke = new SolidColorBrush(Colors.White);
+            scale2.MinorTickSettings.Stroke = new SolidColorBrush(Colors.Black);
 
-   scale2.LabelStroke = new SolidColorBrush(Colors.White);
+            CircularRange circularRange = new CircularRange();
 
-   scale2.SmallTickStroke = new SolidColorBrush(Colors.White);
+            circularRange.StartValue = 0;
 
-   scale2.Radius = 90;
+            circularRange.EndValue = 60;
 
-   CircularRange circularRange = new CircularRange();
+            circularRange.Stroke = new SolidColorBrush(Color.FromRgb(176, 176, 176));
 
-   circularRange.StartValue = 0;
+            circularRange.StrokeThickness = 5;
 
-   circularRange.EndValue = 60;
+            scale1.Ranges.Add(circularRange);
 
-   circularRange.Stroke = new SolidColorBrush(Color.FromRgb(176, 176, 176));
+            CircularRange circularRange1 = new CircularRange();
 
-   circularRange.StrokeThickness = 5;
+            circularRange1.StartValue = 60;
 
-   scale1.Ranges.Add(circularRange);
+            circularRange1.EndValue = 100;
 
-   CircularRange circularRange1 = new CircularRange();
+            circularRange1.Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
 
-   circularRange1.StartValue = 60;
+            circularRange1.StrokeThickness = 5;
 
-   circularRange1.EndValue = 100;
+            scale1.Ranges.Add(circularRange1);
 
-   circularRange1.Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
+            CircularPointer circularPointer = new CircularPointer();
 
-   circularRange1.StrokeThickness = 5;
+            circularPointer.Value = 30;
 
-   scale1.Ranges.Add(circularRange1);
+            circularPointer.PointerType = PointerType.SymbolPointer;
 
-   CircularPointer circularPointer = new CircularPointer();
+            circularPointer.Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow;
 
-   circularPointer.Value = 30;
+            circularPointer.SymbolPointerWidth = 30;
 
-   circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.SymbolPointerHeight = 20;
 
-   circularPointer.Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow;
+            circularPointer.SymbolPointerStroke = new SolidColorBrush(Colors.Green);
 
-   circularPointer.SymbolPointerWidth = 30;
+            scale1.Pointers.Add(circularPointer);
 
-   circularPointer.SymbolPointerHeight = 20;
+            CircularRange circularRange2 = new CircularRange();
 
-   circularPointer.SymbolPointerStroke = new SolidColorBrush(Colors.Green);
+            circularRange2.StartValue = 0;
 
-   scale1.Pointers.Add(circularPointer);
+            circularRange2.EndValue = 60;
 
-   CircularRange circularRange2 = new CircularRange();
+            circularRange2.Stroke = new SolidColorBrush(Color.FromRgb(176, 176, 176));
 
-   circularRange2.StartValue = 0;
+            circularRange2.StrokeThickness = 5;
 
-   circularRange2.EndValue = 60;
+            scale2.Ranges.Add(circularRange2);
 
-   circularRange2.Stroke = new SolidColorBrush(Color.FromRgb(176, 176, 176));
+            CircularRange circularRange3 = new CircularRange();
 
-   circularRange2.StrokeThickness = 5;
+            circularRange3.StartValue = 60;
 
-   scale2.Ranges.Add(circularRange2);
+            circularRange3.EndValue = 100;
 
-   CircularRange circularRange3 = new CircularRange();
+            circularRange3.Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
 
-   circularRange3.StartValue = 60;
+            circularRange3.StrokeThickness = 5;
 
-   circularRange3.EndValue = 100;
+            scale2.Ranges.Add(circularRange3);
 
-   circularRange3.Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
+            CircularPointer circularPointer2 = new CircularPointer();
 
-   circularRange3.StrokeThickness = 5;
+            circularPointer2.Value = 30;
 
-   scale2.Ranges.Add(circularRange3);
+            circularPointer2.PointerType = PointerType.NeedlePointer;
 
-   CircularPointer circularPointer2 = new CircularPointer();
+            circularPointer2.NeedlePointerStroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
 
-   circularPointer2.Value = 30;
+            scale2.Pointers.Add(circularPointer2);
 
-   circularPointer2.PointerType = PointerType.NeedlePointer;
+            circularGauge.Scales.Add(scale1);
 
-   circularPointer2.NeedlePointerStroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C));
+            circularGauge.Scales.Add(scale2);
 
-   scale2.Pointers.Add(circularPointer2);
-
-   circularGauge.Scales.Add(scale1);
-   
-   circularGauge.Scales.Add(scale2);
+            this.Content = circularGauge;
 
 {% endhighlight %}
 

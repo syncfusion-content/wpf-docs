@@ -7,7 +7,7 @@ control: SfDigitalGauge
 documentation: ug
 ---
 
-# Overview
+# Overview of Digital Gauge (SfDigitalGauge)
 
 The Digital Gauge control is used to display alphanumeric characters in digital (LED Display) mode. Digital gauge is used to display a range of values that uses character in combination with numbers. 
 
