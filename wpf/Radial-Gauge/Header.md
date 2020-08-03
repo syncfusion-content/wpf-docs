@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Header | SfCircularGauge | Wpf | Syncfusion
-description: Header
+description: Header in WPF Circular Gauge are used to show the label inside on the scale. The header also be customized with its properties. 
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Header 
+# Header support in SfCircularGauge
 
-Header allows you to show text or any UI content inside the gauge control using `GaugeHeader` option. This provides information about the data that is being plotted in the circular gauge.
+Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) option. This provides information about the data that is being plotted in the circular gauge.
 
-## Header
+## Setting Header for Circular Gauge
 
-The `GaugeHeader` is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
+The [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
 
 {% tabs %}
 
@@ -83,11 +83,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Header_images/Header_img1.png)
+![CircularGauge Header](Header_images/Header_img1.png)
 
 ## Setting alignment for header
 
-The gauge header can be positioned by using the `HeaderAlignment` property. The default value of this property is Left.
+The gauge header can be positioned by using the [`HeaderAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~HeaderAlignment.html) property. The default value of this property is `Left`.
 
 It includes the following options:
 
@@ -179,11 +179,11 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Header_images/Header_img2.png)
+![CircularGauge Header with customization](Header_images/Header_img2.png)
 
 ## Setting position for header
 
-The `GaugeHeaderPosition` property is used to place header in the circular gauge. The value for `GaugeHeaderPosition` should be specified in offset value. In the point value, which has been given for the `GaugeHeaderPosition`, the first value represent x-coordinate and the second value represents y-coordinate. First, set the `HeaderAlignment` to custom, then set the position of header.
+The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeaderPosition.html) property is used to place header in the circular gauge. The value for `GaugeHeaderPosition` should be specified in offset value. In the point value, which has been given for the `GaugeHeaderPosition`, the first value represent x-coordinate and the second value represents y-coordinate. First, set the `HeaderAlignment` to custom, then set the position of header.
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ The `GaugeHeaderPosition` property is used to place header in the circular gauge
 
 {% endtabs %}
 
-![](Header_images/Header_img3.png)
+![CircularGauge header with custom position](Header_images/Header_img3.png)
 
 ## Customization of header font
 
@@ -337,7 +337,7 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 
 {% endtabs %}
 
-![](Header_images/Header_img4.png)
+![CircularGauge Header with customization](Header_images/Header_img4.png)
 
 
 
