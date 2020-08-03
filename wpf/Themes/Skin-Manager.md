@@ -6,20 +6,24 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# Getting started with SkinManager
+# Getting started with SkinManager for WPF
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the built-in themes for both the WPF syncfusion and framework controls. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes can be color customized in the [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio). Refer to the following built in themes and its available assemblies below.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the themes for both syncfusion and framework controls. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes color derivations can be customized using [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
-N> Built-in themes in current ThemeStudio has improved consistency and uniqueness among various controls compared to old themes.
+N> Theme studio based on themes provides improved consistency and uniqueness among various controls compared to other themes. Its recommedned to use theme studio based themes in application over other themes. 
+
+## Themes List
+
+Below table lists available themes and assembly or nuget reference to use the same in application. 
 
 <table>
 <tr>
 <th>
 Styles</th><th>
-Assemblies</th><th>
-NuGet packages</th><th>
+Assembly</th><th>
+NuGet package</th><th>
 Supported in ThemeStudio</th><th>
-Alternative themes in ThemeStudio</th></tr>
+Alternative theme suggestion to use</th></tr>
 <tr>
 <td>
 MaterialLight</td><td>
@@ -182,7 +186,7 @@ No</td></tr>
 
 There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) reference in Visual Studio WPF project. The following steps will help to add through `XAML` Code,
 
-1) Create a WPF project in Visual Studio and add the `Syncfusion.SfSkinManager.WPF` assembly or nuget package [reference](https://help.syncfusion.com/wpf/control-dependencies#skinmanager) to the project.
+1) Add reference to `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
 2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
 
 ![Add SfSkinManager Reference](Skin-Manager_images/Skin-Manager_img1.png)
@@ -203,14 +207,14 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 ### Add theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports various built-in themes mentioned above. The corresponding style resources are included with the specific theme assemblies. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly reference to the project. Similarly, refer the required theme assemblies or nuget packages [reference](https://help.syncfusion.com/wpf/control-dependencies#sfskinmanager-dependencies) with the project when needed.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports various built-in themes mentioned in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. 
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
 
 ### Set visual style
 
-Any built-in themes can applied to both syncfusion controls and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). All built-in assemblies have style resources for controls, so whenever an application get its style through `SfSkinManager`, the corresponding control style merges with the applied controls resource dictionary. For example, apply the value as `MaterialDark` to the `VisualStyle` property of the `SfSkinManager` for the [ChromelessWindow](https://help.syncfusion.com/wpf/chromeless-window/getting-started) control containing [DataGrid](https://help.syncfusion.com/wpf/datagrid/getting-started).
+Themes can applied to both syncfusion controls and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). Theme assemblies has resource dictionaries with styles resources for controls, so whenever an application get its style through `SfSkinManager`, the corresponding control style merges with the applied controls resource dictionary. For example, apply the value as `MaterialDark` to the `VisualStyle` property of the `SfSkinManager` for the [ChromelessWindow](https://help.syncfusion.com/wpf/chromeless-window/getting-started) control containing [DataGrid](https://help.syncfusion.com/wpf/datagrid/getting-started).
 
 {% tabs %}
 
