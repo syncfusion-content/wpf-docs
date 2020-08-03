@@ -260,13 +260,13 @@ SfSkinManager.SetVisualStyle(this, "MaterialDark");
 
 ![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Skin-Manager_img3.jpg)
 
-N> View [sample](https://github.com/SyncfusionExamples/set-visualstyle-using-skinmanager) in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/set-visualstyle-using-skinmanager).
 
 ## Apply a theme globally in the application
 
-By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the applied control. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the resource files to the application’s resource dictionary.
+By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the element to which theme is applied. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the theme resource files to `Application.Current.Resources`.
 
-N> The value of the `ApplyStylesOnApplication` property should be set before the initialization and should not be set dynamically.
+N> `SfSkinManager.ApplyStylesOnApplication` static property should be set befor `InitializeComponent` of window or in application start up if you are applying for multiple windows. 
 
 {% tabs %}
 
@@ -278,9 +278,9 @@ SfSkinManager.ApplyStylesOnApplication = true;
 
 {% endtabs %}
 
-## Apply style to custom controls
+## Apply themes to the controls derived from syncfusion controls
 
-To apply the built-in themes to derived control using `SfSkinManager`, call the [SetResourceReference](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference) method and pass the `StyleProperty` and derived control type as parameters. 
+To apply the themes to derived control using `SfSkinManager`, call [SetResourceReference](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference) method and pass the `StyleProperty` and derived control type as parameters. 
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 ### Change visual style at runtime
 
-The built-in themes can be changed at runtime using the `VisualStyle` property. The various controls can be used to switch built-in themes at run time. Please refer to the below snippet for changing the visual style at runtime and their corresponding built-in themes added as a reference to the project.
+Themes for application can be changed at runtime by changing `VisaulStyle` property. Make sure the new theme assembly referenced in application when applying theme.
 
 ![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.jpg)
 
@@ -357,32 +357,16 @@ The built-in themes can be changed at runtime using the `VisualStyle` property. 
 
 {% highlight XAML %}
 
-syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                              xmlns:local="clr-namespace:DataGrid_Themes"
                              xmlns:system="clr-namespace:System;assembly=mscorlib"
                              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-							 syncfusionskin:SfSkinManager.VisualStyle="{Binding ElementName=comboVisualStyle, Path=SelectedValue, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
-                             Icon="App.ico"
-                             Title="Getting Started"
-                             WindowStartupLocation="CenterScreen">
+							 syncfusionskin:SfSkinManager.VisualStyle="{Binding ElementName=comboVisualStyle, Path=SelectedValue, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
 
     <syncfusion:ChromelessWindow.Resources>
-        <local:ViewModel x:Key="viewmodel" />
-        <local:SelectedImageConverter x:Key="selectedImageConverter"/>
-        <local:StatusConverter        x:Key="statusConverter"/>
-        <local:TrustImageConverter    x:Key="trustImageConverter"/>
-        <Style TargetType="syncfusion:SfRatingItem">
-            <Setter Property="Padding" Value="1" />
-            <Setter Property="Height" Value="20" />
-            <Setter Property="Width" Value="22" />
-        </Style> 
-        <Style TargetType="syncfusion:SfRating">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
         <ObjectDataProvider
             x:Key="Themes"
             MethodName="GetValues"
@@ -405,6 +389,7 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                 Margin="5"
                 ItemsSource="{Binding Source={StaticResource Themes}}"
                 SelectedIndex="18" />
+                
         <Grid Grid.Row="1" DataContext="{StaticResource viewmodel}">
             <syncfusion:SfDataGrid Name="sfgrid" Margin="5"
                                        AutoGenerateColumns="False"
@@ -416,108 +401,7 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                                        SelectionMode="Extended"
                                        ColumnSizer="Auto"
                                        ItemsSource="{Binding EmployeeDetails}">
-                <syncfusion:SfDataGrid.Columns>
-                    <syncfusion:GridCheckBoxSelectorColumn  MappingName="Selected" AllowFiltering="False" Width="30"
-                                                                AllowSorting="False"   AllowCheckBoxOnHeader="True"/>
-                    <syncfusion:GridTemplateColumn  MappingName="EmployeeName" Padding="2"
-                                                        HeaderText="Employee Name">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="{Binding Gender,
-                                                                Converter={StaticResource selectedImageConverter}}" 
-                                               Height="15"      Width="15"       Grid.Column="0"/>
-                                    <TextBlock Text="{Binding EmployeeName}" Padding="4" 
-                                                   VerticalAlignment="Center"    Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTextColumn  MappingName="Designation" HeaderText="Designation"/>
-                    <syncfusion:GridTextColumn  MappingName="Mail"        HeaderText="Mail"/>
-                    <syncfusion:GridTemplateColumn MappingName="Location" Width="100"
-                                                       HeaderText="Location">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="Images/location.png"   Height="15"
-                                               Grid.Column="0"                Width="15"/>
-                                    <TextBlock Text="{Binding Location}"  Padding="4" 
-                                                   VerticalAlignment="Center" Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Status" Width="90" HeaderText="Status">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock  Foreground="{Binding Status,
-                                                                     Converter={StaticResource statusConverter}}"
-                                                Padding="3"          Text="{Binding Status}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                        <syncfusion:GridTemplateColumn.EditTemplate>
-                            <DataTemplate>
-                                <syncfusion:ComboBoxAdv SelectedValue="{Binding Status}" ItemsSource="{Binding Status, Source={StaticResource viewmodel}}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.EditTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Trustworthiness" HeaderText="Trust Worthiness">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="{Binding Trustworthiness,
-                                                                Converter={StaticResource trustImageConverter}}"
-                                               Height="15"      Width="15"          Grid.Column="0"/>
-                                    <TextBlock Text="{Binding Trustworthiness}" Padding="4" 
-                                                   VerticalAlignment="Center"       Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                        <syncfusion:GridTemplateColumn.EditTemplate>
-                            <DataTemplate>
-                                <syncfusion:ComboBoxAdv SelectedValue="{Binding Trustworthiness}"  ItemsSource="{Binding Trustworthiness, Source={StaticResource viewmodel}}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.EditTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Rating" Width="130">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <syncfusion:SfRating VerticalAlignment="Center" ItemsCount="5" ShowToolTip="False"
-                                                         Value="{Binding Rating, Mode=TwoWay}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTextColumn  Width="90" DisplayBinding="{Binding Path=Salary,
-                                                                             StringFormat='{}{0:C}'}"   
-                                                    TextAlignment="Right"    HeaderText="Salary"/>
-                    <syncfusion:GridTextColumn MappingName="Address" HeaderText="Address"/>
-                    <syncfusion:GridPercentColumn HeaderText="Software Proficiency" AllowEditing="False"
-                                                      MappingName="SoftwareProficiency">
-                        <syncfusion:GridPercentColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <ProgressBar Background="Transparent" BorderThickness="0" Maximum=".99"
-                                                     Value="{Binding SoftwareProficiency,StringFormat=P}"/>
-                                    <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                     Text="{Binding SoftwareProficiency, StringFormat=P}"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridPercentColumn.CellTemplate>
-                    </syncfusion:GridPercentColumn>
-                </syncfusion:SfDataGrid.Columns>
+             
             </syncfusion:SfDataGrid>
         </Grid>
     </Grid>
@@ -527,4 +411,4 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
 
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager) in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
