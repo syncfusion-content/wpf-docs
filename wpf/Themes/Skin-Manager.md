@@ -207,14 +207,16 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 ### Add theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports various built-in themes mentioned in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. 
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
 
 ### Set visual style
 
-Themes can applied to both syncfusion controls and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). Theme assemblies has resource dictionaries with styles resources for controls, so whenever an application get its style through `SfSkinManager`, the corresponding control style merges with the applied controls resource dictionary. For example, apply the value as `MaterialDark` to the `VisualStyle` property of the `SfSkinManager` for the [ChromelessWindow](https://help.syncfusion.com/wpf/chromeless-window/getting-started) control containing [DataGrid](https://help.syncfusion.com/wpf/datagrid/getting-started).
+Themes can applied to both syncfusion and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). The theme assemblies has resource dictionaries with styles of controls. So when you set `VisualStyle` property, skin manager merges the theme resource dictionaries of an element to which theme applied and its descendants into the resource dictionary of the element to which theme is applied or `Application.Current.Resource`.
+
+N> When you are applying theme to a Window or any element, `SkinManager` inherits the same theme to all its descendants.
 
 {% tabs %}
 
