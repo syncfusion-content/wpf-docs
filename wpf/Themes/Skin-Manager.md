@@ -10,7 +10,7 @@ documentation: ug
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the themes for both syncfusion and framework controls. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes color derivations can be customized using [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
-N> Theme studio based on themes provides improved consistency and uniqueness among various controls compared to other themes. Its recommedned to use theme studio based themes in application over other themes. 
+N> Theme studio based on themes provides improved consistency and uniqueness among various controls compared to other themes. Its recommended to use theme studio based themes in application over other themes. 
 
 ## Themes List
 
@@ -28,156 +28,156 @@ Alternative theme suggestion to use</th></tr>
 <td>
 MaterialLight</td><td>
 Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialLight.WPF</td><td>
+[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialDark</td><td>
 Syncfusion.Themes.MaterialDark.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialDark.WPF</td><td>
+[Syncfusion.Themes.MaterialDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialLightBlue</td><td>
 Syncfusion.Themes.MaterialLightBlue.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialLightBlue.WPF</td><td>
+[Syncfusion.Themes.MaterialLightBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLightBlue.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialDarkBlue</td><td>
 Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialDarkBlue.WPF</td><td>
+[Syncfusion.Themes.MaterialDarkBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDarkBlue.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Office2019Colorful</td><td>
 Syncfusion.Themes.Office2019Colorful.Wpf.dll</td><td>
-Syncfusion.Themes.Office2019Colorful.WPF</td><td>
+[Syncfusion.Themes.Office2019Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Colorful.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Office2019Black</td><td>
 Syncfusion.Themes.Office2019Black.Wpf.dll</td><td>
-Syncfusion.Themes.Office2019Black.WPF</td><td>
+[Syncfusion.Themes.Office2019Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Black.WPF/)</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Metro</td><td>
 Syncfusion.Themes.Metro.Wpf.dll</td><td>
-Syncfusion.Themes.Metro.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Metro.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Metro.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Lime</td><td>
 Syncfusion.Themes.Lime.Wpf.dll</td><td>
-Syncfusion.Themes.Lime.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Lime.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Lime.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Saffron</td><td>
 Syncfusion.Themes.Saffron.Wpf.dll</td><td>
-Syncfusion.Themes.Saffron.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Saffron.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Saffron.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Blend</td><td>
 Syncfusion.Themes.Blend.Wpf.dll</td><td>
-Syncfusion.Themes.Blend.WPF</td><td>
-No</td><td>
+[Syncfusion.Themes.Blend.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Blend.WPF/)</td><td>
+-</td><td>
 MaterialDark, Office2019Black</td></tr>
 <tr>
 <td>
 Office2013White</td><td>
 Syncfusion.Themes.Office2013White.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013White.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2013White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013White.WPF/)</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2013LightGray</td><td>
 Syncfusion.Themes.Office2013LightGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013LightGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2013LightGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013LightGray.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2013DarkGray</td><td>
 Syncfusion.Themes.Office2013DarkGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013DarkGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2013DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013DarkGray.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 VisualStudio2013</td><td>
 Syncfusion.Themes.VisualStudio2013.Wpf.dll</td><td>
-Syncfusion.Themes.VisualStudio2013.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.VisualStudio2013.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2013.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Black</td><td>
 Syncfusion.Themes.Office2010Black.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Black.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2010Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Black.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Blue</td><td>
 Syncfusion.Themes.Office2010Blue.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Blue.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2010Blue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Blue.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Silver</td><td>
 Syncfusion.Themes.Office2010Silver.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Silver.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2010Silver.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Silver.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office365</td><td>
 Syncfusion.Themes.Office365.Wpf.dll</td><td>
-Syncfusion.Themes.Office365.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office365.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office365.WPF/)</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016Colorful</td><td>
 Syncfusion.Themes.Office2016Colorful.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016Colorful.WPF</td><td>
-No</td><td>
+[Syncfusion.Themes.Office2016Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016Colorful.WPF/)</td><td>
+-</td><td>
 Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016White</td><td>
 Syncfusion.Themes.Office2016White.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016White.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2016White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016White.WPF/)</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016DarkGray</td><td>
 Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016DarkGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.Office2016DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016DarkGray.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 VisualStudio2015</td><td>
 Syncfusion.Themes.VisualStudio2015.Wpf.dll</td><td>
-Syncfusion.Themes.VisualStudio2015.WPF</td><td>
-No</td><td>
-No</td></tr>
+[Syncfusion.Themes.VisualStudio2015.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2015.WPF/)</td><td>
+-</td><td>
+-</td></tr>
 </table>
 
 ## Apply a theme to a control
@@ -207,7 +207,7 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 ### Add theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window.
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
@@ -266,7 +266,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/set-visualstyle
 
 By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the element to which theme is applied. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the theme resource files to `Application.Current.Resources`.
 
-N> `SfSkinManager.ApplyStylesOnApplication` static property should be set befor `InitializeComponent` of window or in application start up if you are applying for multiple windows. 
+N> The `SfSkinManager.ApplyStylesOnApplication` static property should be set before `InitializeComponent` of window or in application start up, if you are applying for multiple windows. 
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 ### Change visual style at runtime
 
-Themes for application can be changed at runtime by changing `VisaulStyle` property. Make sure the new theme assembly referenced in application when applying theme.
+Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure the new theme assembly is attached as reference in application when applying theme.
 
 ![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.jpg)
 
