@@ -139,11 +139,7 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.
 
 ## Key Navigation
 
-The TreeView allows to select the items through keyboard interactions. Behavior of key navigation is explained as follows:
-
-* When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectionMode.html) is `Single` or `SingleDeselect`, the selected item is highlighted with [FocusBorderColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~FocusBorderColor.html) around the item while key navigation.
-
-* When the `SelectionMode` is `Multiple` or `Extended`, the `FocusBorderColor` will set to the `CurrentItem`.
+The TreeView allows to select or navigate the items through keyboard interactions. When the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectionMode.html) is `Multiple` or `Extended`, the [FocusBorderColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~FocusBorderColor.html) will set to the CurrentItem.
 
 ## FocusBorderColor
 

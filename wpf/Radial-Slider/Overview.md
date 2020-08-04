@@ -7,20 +7,25 @@ control: SfRadialSlider
 documentation: ug
 ---
 
-# Overview  
+# WPF SfRadialSlider Overview  
 
-The Radial Slider provides an optimized interface for selecting a numeric value.
+The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value within the minimum and maximum range in the circular track.
 
-### Key Features
+## Key features
 
 * Customization – Can customize outer rim, inner rim, labels, ticks, and pointer. 
-* Content – Can place content inside the inner rim. 
 
+* Content – Can place content inside the inner rim.
 
+* Step interval support
 
+* Min-Max value support
 
+* Sweep direction support
 
-![Radial Slider - Overview](Overview_images/Overview_img1.png) 
+* Start-End angle support
+
+![RadialSlider control structure](Overview_images/Overview_img1.png) 
 
 
 

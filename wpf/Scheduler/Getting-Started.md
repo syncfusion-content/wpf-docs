@@ -397,8 +397,7 @@ Create meetings of type `ObservableCollection<Events>` and assign those appointm
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of creating CustomAppointment for WPF from
-here [SchedulerDataBindingDemo](https://github.com/SyncfusionExamples/wpf-scheduler-data-binding-demo)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-data-binding-demo)
 
 ## Change first day of week
 
@@ -410,7 +409,7 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 {% endhighlight %}   
 {% highlight c# %}
 //setting first day of the week    
-Schedule.FirstDayOfWeek = DayOfWeek.Monday;   
+Schedule.FirstDayOfWeek = DayOfWeek.Tuesday;   
 {% endhighlight %}  
 {% endtabs %}   
 

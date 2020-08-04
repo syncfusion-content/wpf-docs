@@ -1,46 +1,141 @@
 ---
 layout: post
-title: Appearance | CalendarEdit | WPF | Syncfusion
-description: How to apply theme for CalendarEdit control for WPF? 
+title: Appearance of the WPF CalendarEdit control | Syncfusion
+description: Learn about styling, theme support in Syncfusion WPF CalendarEdit control and more details about the control features.
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# Appearance 
+# Appearance in WPF CalendarEdit
 
-CalenderEdit provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started). 
+This section explains different styling, theming options available in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
-## Built-in Themes
+## Setting the foreground
 
-The appearance of CalenderEdit control can be customized by [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html).
-
-Below example explains how to apply Metro theme for CalenderEdit using `SfSkinManager` in an existing application.
-<ul>
-<li>Add reference to <b>Syncfusion.SfSkinManager.Wpf.dll</b> and <b>Syncfusion.Themes.Metro.Wpf.dll</b> assembly.</li>
-<li>Now add reference to `SfSkinManager` namespace and set `SfSkinManager.VisualStyle` attached property to window or CalenderEdit. Setting `VisualStyle` property to window will apply metro theme for all controls in Windows.
+You can change the default foreground, mouse hover foreground and border brush of the `CalendarEdit` by using the `Foreground`, `MouseOverForeground` and `MouseOverBorderBrush` properties. The default value of `Foreground` is `Dark SlateGray` and `MouseOverForeground` is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
 
-<Grid>
-<syncfusion:CalendarEdit x:Name="calendar" skinManager:SfSkinManager.VisualStyle="Metro"/>    
-</Grid>   
+<syncfusion:CalendarEdit Foreground="Blue"
+                         MouseOverForeground="Red"
+                         MouseOverBorderBrush="DarkGoldenrod"
+                         Name="calendarEdit" />
+
 {% endhighlight %}
-{% highlight c# %}
-using Syncfusion.SfSkinManager;
+{% highlight C# %}
 
-SfSkinManager.SetVisualStyle(calendar, VisualStyles.Metro);
+calendarEdit.Foreground = Brushes.Blue;
+calendarEdit.MouseOverForeground = Brushes.Red;
+calendarEdit.MouseOverBorderBrush = Brushes.DarkGoldenrod;
 
 {% endhighlight %}
 {% endtabs %}
 
-</li> 
+![Changed the default and mouse hover background of CalendarEdit](Appearance_images/Foreground.png)
 
-<li>Now run the application, you can see Metro theme applied for CalenderEdit.</li>
-</ul>
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
 
-![Display Metro theme applied for CalenderEdit](Themes_images/themes_img1.png)
+## Setting the background
 
+You can change the default background and mouse hover background color of the `CalendarEdit` by using the `Background` and `MouseOverBackground` properties. The default value of `Background` is `White` and `MouseOverBackground` is `Lavender`.
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CalendarEdit Background="Pink"
+                         MouseOverBackground="Green"
+                         Name="calendarEdit" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.Background = Brushes.Pink;
+calendarEdit.MouseOverBackground = Brushes.Green;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changed the default and mouse hover background of CalendarEdit](Appearance_images/Background.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
+
+## Change flow direction
+
+You can change the flow direction of the `CalendarEdit` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CalendarEdit FlowDirection="RightToLeft"
+                         Name="calendarEdit" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.FlowDirection = FlowDirection.RightToLeft;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit with right to left flow direction](Appearance_images/rtl.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
+
+## Theme
+
+You can customize the appearance of the `CalendarEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `CalendarEdit` control.
+
+* Blend
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office2019Black
+* Office2019Colorful
+* Office365
+* Saffron
+* VisualStudio2013
+* VisualStudio2015
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window>
+    <!--Theme Namespace-->
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:CalendarEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                 Name="calendarEdit" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+CalendarEdit calendarEdit = new CalendarEdit();
+SfSkinManager.SetVisualStyle(calendarEdit, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit with Blend visual style](Appearance_images/blend.png)
+
+Here, the `Blend` style is applied to the `CalendarEdit`.
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Themes)

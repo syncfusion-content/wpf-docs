@@ -18,7 +18,7 @@ Syncfusion WPF PDF Viewer renders the PDF pages through 2 different rendering en
 
 PDFium is used in Google Chrome for rendering PDF files. It provides accurate and robust PDF rendering. It is the recommended PDF rendering engine. 
 
-N> From v16.2.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WPF PDF Viewer.
+N> From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WPF PDF Viewer.
 
 ### How PDFium works with Syncfusion’s PDF Viewer
 
@@ -75,7 +75,7 @@ N>			* Pdfium.dll
 
 ## SfPdf
 
-`SfPdf` is the Syncfusion’s own PDF rendering engine. Before v16.2.0.x, PDF Viewer control has used this rendering engine as default to rendering the PDF pages. If you wish to use `SfPdf` rendering engine or face any compatibility issues with `Pdfium` rendering engine in your environment, you may set the [RenderingEngine](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~RenderingEngine.html) property to `SfPdf` as shown in the following code sample.
+`SfPdf` is the Syncfusion’s own PDF rendering engine. Before v16.3.0.x, PDF Viewer control has used this rendering engine as default to rendering the PDF pages. If you wish to use `SfPdf` rendering engine or face any compatibility issues with `Pdfium` rendering engine in your environment, you may set the [RenderingEngine](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~RenderingEngine.html) property to `SfPdf` as shown in the following code sample.
 
 N> The recommended PDF rendering engine is PDFium.
 

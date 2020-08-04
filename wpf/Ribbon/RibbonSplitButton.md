@@ -75,8 +75,11 @@ _RibbonBar2.Items.Add(_splitbutton)
 
 ## Set various sizes for SplitButton
 
-SplitButton have three types of size forms. You can set size forms using its `SizeForm` Property.
+[`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) supports three types of size modes and it can be set using the [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SizeForm.html) property. The different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.SizeForm.html) available are as follows:
 
+ * **ExtraSmall** - Displays only the image in 16 * 16 size.
+ * **Small** - Displays the label and the image in 16 * 16 size.
+ * **Large** - Displays the label and the image in 32 * 32 size.
 
 {% tabs %}
 
@@ -126,6 +129,8 @@ _ribbonBar2.Items.Add(_splitbutton3)
 {% endtabs %}
 
 ![Various size forms in SplitButton](SplitButton_images/SplitButton_img2.jpg)
+
+N> When **simplified** layout is set, [`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
 ## Setting image to SplitButton
 
@@ -236,11 +241,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![SplitButton image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
-
 *Normal layout*
 
 ![SplitButton image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ### Setting vector image 
@@ -515,11 +518,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![SplitButton vector image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
-
 *Normal layout*
 
 ![SplitButton vector image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ## Add SplitButton to the simplified layout

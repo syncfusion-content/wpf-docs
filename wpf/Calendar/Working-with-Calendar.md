@@ -7,308 +7,567 @@ control: CalendarEdit
 documentation: ug
 ---
 
-# Working with Calendar
+# Working with WPF CalendarEdit
 
-This section contains the following topics:
+This section explains how to select a date and custom UI of the WPF [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
-## Setting the date
+## Select a date
 
-You can explicitly set the date for the CalendarEdit control, using the [Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~Date.html) property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
-
-{% tabs %}
-{% highlight XAML %}
-
-<!-- Adding calendar with date as 12/12/2009 -->
-<syncfusion:CalendarEdit Name="calendarEdit" Date="12/12/2009"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Creating an instance of CalendarEdit control
-CalendarEdit calendarEdit = new CalendarEdit();
-
-//Sets the Date
-calendarEdit.Date = DateTime.Now.Date;  
-
-//Adding CalendarEdit as window content
-this.Content = calendarEdit;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Calendar date](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)
-
-## Settings the days
-
-It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the [ShowNextMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowNextMonthDays.html) and [ShowPreviousMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowPreviousMonthDays.html) properties. 
-
-For setting these properties, use the following code.
+You can select a date in the `CalendarEdit` control by mouse click on the specific date. You can get the selected date by using the `Date` property.
 
 {% tabs %}
 {% highlight XAML %}
 
-<!-- Adding calendar with next month day and previous month day Set to false -->
-<syncfusion:CalendarEdit Name="calendarEdit" ShowNextMonthDays="False" ShowPreviousMonthDays="False"/>
+<!-- Selecting date -->
+<syncfusion:CalendarEdit Name="calendarEdit" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
 
-//Hide the next month days
-calendarEdit.ShowNextMonthDays = false;
-
-//Hide the previous month days
-calendarEdit.ShowPreviousMonthDays = false;
-
-//Adding CalendarEdit as window content
-this.Content = calendarEdit;
- 
 {% endhighlight %}
 {% endtabs %}
 
-![Setting days in calendar](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)
+![Date selected from the CalendarEdit](Getting-Started_images/wpf-calendar-control-date-selection.png)
 
-## Today row
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the [TodayRowIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayRowIsVisible.html) property to true to display today's details. This dependency property indicates whether the today bar is visible or collapsed.
+### Select a date programmatically
 
-For setting this property, use the following code example.
+You can set selected date programmatically by setting the date value to the [Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~Date.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting date programmatically -->
+<syncfusion:CalendarEdit Date="25/08/2020"
+                         Name="calendarEdit"/>
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting date programmatically
+calendarEdit.Date = new DateTime(2020, 08, 25);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Date selected programmatically from the CalendarEdit](Getting-Started_images/Date_programmatically.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Select multiple dates
+
+You can select a multiple dates by drag and move the mouse from required start date to end date.
+ You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDates.html) property. You can restrict the multiple date selection by setting [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property as `false`. The default value of `AllowMultiplySelection` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting multiple dates-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         AllowMultiplySelection="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting multiple dates
+calendarEdit.AllowMultiplySelection = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit control displaying multiple selected dates](Getting-Started_images/wpf-calendar-control-multiple-date-selection.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+### Select a multiple dates programmatically
+
+You can select a multiple dates programmatically by setting the dates to the [SelectedDatesList](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDatesList.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting date -->
+<syncfusion:CalendarEdit Date="25/08/2020" 
+                         AllowMultiplySelection="True"
+                         Name="calendarEdit"/>
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting multiple date programmatically
+calendarEdit.AllowMultiplySelection = true;
+calendarEdit.SelectedDatesList = new List<Date>();
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 01));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 02));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 03));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 04));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 05));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 06));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 07));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 08));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
+
+## Highlight selected date
+
+If you want to highlight the selected date, change it's foreground, background or border brush by using the [SelectionForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionForeground.html), [SelectedDayCellBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDayCellBackground.html) and [SelectedDayCellBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDayCellBorderBrush.html) and  properties. You can also change the mouse hover background and border brush for the selected day cell by using the [SelectedDayCellHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectedDayCellHoverBackground.html) and [SelectionBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionBorderBrush.html) properties.
+
+![Changed selected date appearance](Working-with-Calendar_images/SelectionApperance.png)
 
 {% tabs %}
 {% highlight xaml %}
 
-<!-- Adding Calendar with today row -->
-<syncfusion:CalendarEdit Name="calendarEdit" TodayRowIsVisible="True"/>
+<syncfusion:CalendarEdit SelectedDayCellBackground="Yellow" 
+                         SelectedDayCellBorderBrush="Blue"
+                         SelectionForeground="Red"
+                         SelectedDayCellHoverBackground="Green"
+                         SelectionBorderBrush="Red"
+                         Name="calendarEdit" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+calendarEdit.SelectedDayCellBackground = Brushes.Yellow;
+calendarEdit.SelectedDayCellBorderBrush = Brushes.Blue;
+calendarEdit.SelectionForeground = Brushes.Red;
+calendarEdit.SelectedDayCellHoverBackground = Brushes.Green;
+calendarEdit.SelectionBorderBrush = Brushes.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Selected date background and foreground changed in CalendarEdit](Working-with-Calendar_images/SelectionCustomUI.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Get today date
+
+If you want to know the today date, use the [TodayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayDate.html) property. It contains the today date of the `CalendarEdit` control.
+
+{% tabs %}
+{% highlight c# %}
+
+CalendarEdit calendarEdit = new calendarEdit();
+
+//get the today date
+ var today_Date= calendarEdit.TodayDate;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Display today date
+
+If you want to display the today date in the `CalendarEdit` control, use the [TodayRowIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayRowIsVisible.html) property value as `true`. It will display the today date in the bottom-left corner of the `CalendarEdit` control. The default value of `TodayRowIsVisible` property is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CalendarEdit TodayRowIsVisible="True"
+                         Name="calendarEdit" />
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-//Creating an instance of CalendarEdit control
-CalendarEdit calendarEdit = new CalendarEdit();
 
 //Enable the today row
 calendarEdit.TodayRowIsVisible = true; 
 
-//Adding CalendarEdit as window content
-this.Content = calendarEdit;
+{% endhighlight %}
+{% endtabs %}
+
+![Display today date](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+### Highlight today date
+
+If you want to highlight the today date, change it's foreground, background or border brush by using [TodayCellForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellForeground.html), [TodayCellBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellBackground.html) and [TodayCellBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellBorderBrush.html) properties. You can also change the selected border brush and background of the today date by using the [TodayCellSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellSelectedBorderBrush.html) and [TodayCellSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellSelectedBackground.html) properties.
+
+![Changing today dates foreground and background to highlight](Working-with-Calendar_images/Highlight_todaydate.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit TodayCellSelectedBorderBrush="Red" 
+                         TodayCellSelectedBackground="Green"
+                         TodayCellForeground="Yellow"
+                         Name="calendarEdit" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.TodayCellSelectedBorderBrush = Brushes.Red;
+calendarEdit.TodayCellSelectedBackground = Brushes.Green;
+calendarEdit.TodayCellForeground = Brushes.Yellow;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Today row](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
+![Changing today dates selected foreground and background to highlight](Working-with-Calendar_images/HighlightTodaydate.png)
 
-## Week number
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set [ShowWeekNumbers](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowWeekNumbers.html) property to true as follows.
+## Differentiate current month days from other days
+
+If you want to differentiate currently selected month days from previous or next month days, change the previous and next month days foreground by using the [NotCurrentMonthForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~NotCurrentMonthForeground.html) property. The default value of `NotCurrentMonthForeground` property is `Gray`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-<!-- Adding calendar with week numbers -->
-<syncfusion:CalendarEdit Name="calendarEdit" ShowWeekNumbers="True"/>
+<syncfusion:CalendarEdit NotCurrentMonthForeground="Red"
+                         Name="calendarEdit" />
 
 {% endhighlight %}
+{% highlight C# %}
 
-{% highlight c# %}
+calendarEdit.NotCurrentMonthForeground = Brushes.Red;
 
-//Creating an instance of CalendarEdit control
-CalendarEdit calendarEdit = new CalendarEdit();
+{% endhighlight %}
+{% endtabs %}
 
-//Show week numbers
+![Changing previous and next month days foregroud to differentiate current month days](Working-with-Calendar_images/NotCurrentMonthForeground.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Change default view (Month, Year, Decade)
+
+By default, the days are displayed in the `CalendarEdit`.
+You can change the default calendar view as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
+
+![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         VisualMode="YearsRange"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.VisualMode = CalendarVisualMode.YearsRange;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changed initial display mode as years range](Working-with-Calendar_images/YearVisualMode.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Display week numbers
+
+If you want to know the week number of the currently displayed dates, use the [ShowWeekNumbers](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowWeekNumbers.html) property as `true`. It will display the respective week numbers in the left side of the `CalendarEdit` control.The default value of `ShowWeekNumbers` property is `false`.   
+
+{% tabs %}
+{% highlight XAML %}
+
+<!--Showing Week number-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         ShowWeekNumbers="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Shows week numbers
 calendarEdit.ShowWeekNumbers = true;
 
-//Adding CalendarEdit as window content
-this.Content = calendarEdit;
-
 {% endhighlight %}
 {% endtabs %}
 
-![Week number displayed in calendar](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)
+![wpf calendar control shows week numbers](Getting-Started_images/wpf-calendar-control-week-numbers.png)
 
-## Week numbers grid
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-It is now possible to edit weekly date in CalendarEdit control. This is achieved by Setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) to WeekNumbers as follows.
+## Highlight week numbers
 
-The following code example illustrates this.
-
-{% tabs %}
-{% highlight xaml %}
-<!--Calendar Edit-->
-<syncfusion:CalendarEdit Name="calendar"  VisualMode="WeekNumbers"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//Setting VisualMode in C#
-calendar.VisualMode = VisualMode.Syncfusion.Windows.Shared.CalendarVisualMode.WeekNumbers;
-
-{% endhighlight %}
-{% endtabs %}
-
-Run the code. The output is as follows:
-
-![Week numbers](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)
-
-### Changing week number grids default properties
-
-You can set the color for the border brush, background and foreground for the cells in the Week Numbers Grid. You can also set the corner radius and thickness for the border of the cells in the Week Numbers Grid.
-
-The following code example illustrates this.
+If you want to highlight the week numbers, change it's foreground, background or border brush by using the [WeekNumberBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberBackground.html), [WeekNumberForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberForeground.html) and [WeekNumberBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberBorderBrush.html) properties. You can also change the mouse hover background, foreground and border brush for the selected day cell by using the [WeekNumberHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverBackground.html), [WeekNumberHoverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverForeground.html) and [WeekNumberHoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverBorderBrush.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Calendar Edit with Week Number Default Properties-->
-<syncfusion:CalendarEdit  WeekNumberBackground="DodgerBlue" WeekNumberBorderBrush="Cyan" WeekNumberForeground="White" WeekNumberBorderThickness="1" WeekNumberCornerRadius="2"/>
+<syncfusion:CalendarEdit WeekNumberBackground="Green" 
+                         WeekNumberBorderBrush="Red"
+                         WeekNumberForeground="Yellow"
+                         WeekNumberHoverBackground="Yellow"
+                         WeekNumberHoverBorderBrush="Blue"
+                         WeekNumberHoverForeground="Green"
+                         ShowWeekNumbers="True"
+                         VisualMode="WeekNumbers" />
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-//Calendar Edit with Week Number Default Properties
-CalendarEdit calendar = new CalendarEdit();
-calendar.WeekNumberBorderBrush = Brushes.Cyan;calendar.WeekNumberCornerRadius = new CornerRadius(2);
-calendar.WeekNumberBorderThickness = new Thickness(1);calendar.WeekNumberBackground = Brushes.DodgerBlue;
-calendar.WeekNumberForeground = Brushes.White;
+calendarEdit.WeekNumberBackground = Brushes.Green;
+calendarEdit.WeekNumberBorderBrush = Brushes.Red;
+calendarEdit.WeekNumberForeground = Brushes.Yellow;
+calendarEdit.WeekNumberHoverBackground = Brushes.Yellow;
+calendarEdit.WeekNumberHoverBorderBrush = Brushes.Blue;
+calendarEdit.WeekNumberHoverForeground = Brushes.Green;
+calendarEdit.ShowWeekNumbers = true;
+calendarEdit.VisualMode = CalendarVisualMode.WeekNumbers;
 
 {% endhighlight %}
 {% endtabs %}
 
-Run the code. The output is as follows:
+![Week number cells background and foreground changed in CalendarEdit](Working-with-Calendar_images/WeekNumberCustomUI.png)
 
-![Week numbers grid customization](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-### Changing week number grids selection properties
+## Special days
 
-You can set the border brush, background and foreground color for the required cell in the Week Numbers Grid. You can also set the corner radius and thickness for the border of the selected cell in the Week Numbers Grid.
-
-The following code example illustrates this.
-
+You can differentiate the special day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
 
 {% tabs %}
-{% highlight XAML %}
-
-<!--Calendar Edit with Week Number Selection Properties-->
-<syncfusion:CalendarEdit WeekNumberSelectionBackground="AntiqueWhite" WeekNumberSelectionBorderBrush="Blue" WeekNumberSelectionForeground="Brown" WeekNumberSelectionBorderThickness="2" WeekNumberSelectionBorderCornerRadius="2"/>
-
-{% endhighlight %}
-
 {% highlight C# %}
 
-//Calendar Edit with Week Number Selection Properties
-CalendarEdit calendar = new CalendarEdit();
-calendar.WeekNumberSelectionBorderBrush = Brushes.Blue;calendar.WeekNumberSelectionBorderCornerRadius = new CornerRadius(2);
-calendar.WeekNumberSelectionBorderThickness = new Thickness(2);
-calendar.WeekNumberSelectionBackground = Brushes.AntiqueWhite;calendar.WeekNumberSelectionForeground = Brushes.Brown;
+//ViewModel.cs
+public class ViewModel {
+	private SpecialDatesCollection specialDates;
+	public SpecialDatesCollection SpecialDates {
+		get { return specialDates; }
+		set { specialDates = value; }
+	}
+	public ViewModel() {
+		SpecialDates = new SpecialDatesCollection();
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-Run the code. The output is as follows:
-
-![Changing week number grids](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)
-
-### Changing week number Mouse over properties
-
-You can set the border brush, background and foreground color for the cell focused in the Week Numbers Grid.
-
-The following code example illustrates this.
-
 {% tabs %}
 {% highlight XAML %}
 
-<!--Calendar Edit with Week Number Mouse Over Properties-->
-<syncfusion:CalendarEdit WeekNumberHoverBackground="Gold"  WeekNumberHoverBorderBrush="DarkOrange" WeekNumberHoverForeground="Indigo" />
+    <Window.Resources>
+        <DataTemplate x:Key="WorldEnvironmentDay" >
+            <Image Source="Resources\Icon_Environmental day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="EngineersDay" >
+            <Image Source="Resources\Icon_Engineer day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="PollutionPreventionDay" >
+            <Image Source="Resources\Icon_Pollution day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="NationalMathematicsDay" >
+            <Image Source="Resources\Icon_Mathematics day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="Christmas" >
+            <Image Source="Resources\Christmas.png" />
+        </DataTemplate>
 
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Calendar Edit with Week Number Mouse Over Properties
-CalendarEdit calendar = new CalendarEdit();
-calendar.WeekNumberHoverBorderBrush = Brushes.DarkOrange;
-calendar.WeekNumberHoverBackground = Brushes.Gold;
-calendar.WeekNumberHoverForeground = Brushes.Indigo;
+        <local:ViewModel x:Key="viewModel">
+            <local:ViewModel.SpecialDates>
+                <syncfusion:SpecialDate Date="06/05/2020" CellTemplate="{StaticResource WorldEnvironmentDay }"/>
+                <syncfusion:SpecialDate Date="09/15/2020" CellTemplate="{StaticResource EngineersDay }"/>
+                <syncfusion:SpecialDate Date="12/02/2020" CellTemplate="{StaticResource PollutionPreventionDay }"/>
+                <syncfusion:SpecialDate Date="12/22/2020" CellTemplate="{StaticResource NationalMathematicsDay }"/>
+                <syncfusion:SpecialDate Date="12/25/2020" CellTemplate="{StaticResource Christmas }"/>
+            </local:ViewModel.SpecialDates>
+        </local:ViewModel>
+    </Window.Resources>
+    
+    <Grid>
+        <syncfusion:CalendarEdit DataContext="{StaticResource viewModel}"                         
+                                 SpecialDates="{Binding SpecialDates}"
+                                 Name="calendarEdit" />
+    </Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-Run the code. The output is as follows:
+![Custom appearance for the special Day cell](Working-with-Calendar_images/SpecialDays.png)
 
-![Week numbers grid customization](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays)
 
-## Customizing the display of minimum and maximum dates
+## Setting Culture
 
-Minimum dates and Maximum dates display in CalendarEdit can be customized with two states-True and False. The states can be set by using the property MinMaxHidden:
-
-* When this property is set to True, the minimum dates and maximum dates are hidden. 
-* When this property is set to False, the display minimum dates and maximum dates are disabled. 
-* The default value for this property is true. It returns the Boolean value.
-
-The following code example illustrates how to set the [MinMaxHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinMaxHidden.html) property to the control programmatically.
+You can change the culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
 
 {% tabs %}
 {% highlight XAML %}
-<!-- CalendarEdit with MinMaxHidden has false -->
-<syncfusion:CalendarEdit Height ="250" Width ="250" Name="calendar" MinMaxHidden="False" MinDate="11/30/2009" MaxDate="1/4/2010"/>
+
+<!--Setting french culture-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         Culture="fr-FR"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Create an instance of CalendarEdit
+//Setting french culture
+calendarEdit.Culture = new CultureInfo("fr-FR");
+
+{% endhighlight %}
+{% endtabs %}
+
+![wpf calendar control with french culture](Getting-Started_images/Culture.png)
+
+## Show full month and week name
+
+You can display full month names and week day names by setting the [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) and [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowAbbreviatedDayNames.html) properties as `false`. The default value of `ShowAbbreviatedDayNames` and `ShowAbbreviatedDayNames` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit ShowAbbreviatedDayNames="False"
+                         ShowAbbreviatedMonthNames="False"
+                         Name="calendarEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CalendarEdit calendarEdit = new CalendarEdit();
+calendarEdit.ShowAbbreviatedDayNames = false;
+calendarEdit.ShowAbbreviatedMonthNames = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit shows full month and week name](Getting-Started_images/FullDayNames.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
+## Tooltip for particular days
+
+You can set tooltip for particular days in the `CalendarEdit` control by using the [SetToolTip(Date,ToolTip)](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SetToolTip(Date,ToolTip).html) method. You can pass the specific date and tooltip to the `SetToolTip(Date,ToolTip)` method.
+
+{% tabs %}
+{% highlight C# %}
+
+Date yesterday = new Date(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day-1);
+Date today = new Date(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 CalendarEdit calendarEdit = new CalendarEdit();
 
-//CalendarEdit with MinMaxHidden as false
-calendarEdit.MinMaxHidden = false;
+//Setting tooltip for yesterday and today dates
+calendarEdit.SetToolTip(yesterday, new ToolTip() { Content = "Yesterday" });
+calendarEdit.SetToolTip(today, new ToolTip() { Content = "Today" });
 
 {% endhighlight %}
 {% endtabs %}
 
-Run the code. The output is as follows:
+![Tooltip for today and yesterday](Working-with-Calendar_images/Tooltip.png)
 
-![Date range](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
+## Custom appearance of day cell
 
-![Date range](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)
+You can customize the appearance of day cell by using styles and templates in the `CalendarEdit` control.
 
-## Highlight the particular Day cell
+### Custom UI for day cell using style
 
-You can differentiate the particular day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
+You can customize the appearance of day cell by using the [DayCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsStyle` is `DayCell`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<Window.Resources>
-    <DataTemplate x:Key="special_date">
-        <TextBlock Text="{Binding Day}"
-                   Background="Yellow"/>
-    </DataTemplate>
+<Window.Resources>    
+    <!-- day cell style -->
+    <Style x:Key="dayCell" 
+           TargetType="{x:Type syncfusion:DayCell}">
+        <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="Background" Value="Pink"/>
+    </Style>
 </Window.Resources>
-
 <Grid>
-    <syncfusion:CalendarEdit Name="calendarEdit">
-        <syncfusion:CalendarEdit.SpecialDates>
-
-            <!--Adding special dates into SpecialDates collection for highlight-->
-            <syncfusion:SpecialDate Date="05/11/2020"
-                                    CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="05/22/2020" 
-                                    CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="05/25/2020" 
-                                    CellTemplate="{StaticResource special_date }"/>
-        </syncfusion:CalendarEdit.SpecialDates>
-    </syncfusion:CalendarEdit>
+    <syncfusion:CalendarEdit DayCellsStyle="{StaticResource dayCell}" 
+                             Name="calendarEdit" />
 </Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom appearance for the particular Day cell](Working-with-Calendar_images/SpecialDays.png)
+![Custom UI for the day cell by using DayCellsStyle](Working-with-Calendar_images/DayCellsStyle.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Style)
+
+### Custom UI for day cell using template
+
+You can customize the appearance of day cell by using the [DayCellsDataTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsDataTemplate` is `DayCell`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>    
+    <!-- day cell template -->
+    <DataTemplate x:Key="dayCelltemplate"
+                  DataType="syncfusion:DayCell">
+        <TextBlock TextAlignment="Center"
+                   Foreground="Yellow"
+                   Background="Green"
+                   FontFamily="Tahoma"
+                   FontStyle="Normal"
+                   Text="{Binding Day}"/>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:CalendarEdit DayCellsDataTemplate="{StaticResource dayCelltemplate}"  
+                             Name="calendarEdit" />
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI for the day cell by using DayCellsStyle](Working-with-Calendar_images/DayCellsDataTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Template)
+
+## Custom UI for day name cell using style
+
+You can customize the appearance of day name cell by using the [DayNameCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayNameCellsStyle.html) property. The `DataContext` of the `DayNameCellsStyle` is `DayNameCell`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>    
+    <!-- day name cell style -->
+    <Style x:Key="daynameCellStyle" 
+           TargetType="{x:Type syncfusion:DayNameCell}">
+        <Setter Property="Background" Value="Yellow"/>
+        <Setter Property="Foreground" Value="Yellow"/>
+    </Style>
+</Window.Resources>
+<Grid>
+    <syncfusion:CalendarEdit DayNameCellsStyle="{StaticResource daynameCellStyle}" 
+                             Name="calendarEdit" />
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI for the day name cell by using DayNameCellsStyle](Working-with-Calendar_images/DayNameCellsStyle.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Style)
+
+## Selected date changed notification
+
+The selected date changed in `CalendarEdit` can be examined using [DateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DateChanged_EV.html) event. The `DateChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+ <syncfusion:CalendarEdit DateChanged="CalendarEdit_DateChanged" 
+                          Name="calendarEdit"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CalendarEdit calendarEdit = new CalendarEdit();
+calendarEdit.DateChanged += CalendarEdit_DateChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void CalendarEdit_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new selected date values
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
