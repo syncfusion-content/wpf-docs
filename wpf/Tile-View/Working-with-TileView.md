@@ -85,3 +85,132 @@ tileItem1.OnMinimizedWidth = new GridLength(300);
 {% endtabs %}
 
 ![TileViewItem size customized in minimized state](Working-with-TileView_images/Minimized-State_img1.png)
+
+## Custom UI of TileViewItem header
+
+You can customize the appearance of `TileViewItem` headers by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) property. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl  Name="tileViewControl">
+    <syncfusion:TileViewItem Header="Item 1" />
+    <syncfusion:TileViewItem Header="Item 2" />
+    <syncfusion:TileViewItem Header="Item 3" />
+    <syncfusion:TileViewItem Header="Item 4" />
+    <syncfusion:TileViewControl.HeaderTemplate>
+        <DataTemplate x:Name="headerTemplate">
+            <Grid>
+                <TextBlock HorizontalAlignment="Center"
+                           Text="{Binding}" 
+                           FontFamily="Verdana"
+                           Background="Yellow"
+                           Foreground="Red"/>
+            </Grid>
+        </DataTemplate>
+    </syncfusion:TileViewControl.HeaderTemplate>
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% endtabs %}
+
+![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
+
+### Custom UI of specfic TileViewItem header
+
+You can customize the appearance of specific `TileViewItem` headers by using the [TileViewItem.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html) property. The `DataContext` of the `TileViewItem.HeaderTemplate` property is `TileViewItem.Header`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="headerTemplate">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center"
+                       Text="{Binding}" 
+                       FontFamily="Verdana"
+                       Background="Yellow"
+                       Foreground="Red"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:TileViewControl  Name="tileViewControl">
+        <syncfusion:TileViewItem Header="Item 1" 
+                                 HeaderTemplate="{StaticResource headerTemplate }" />
+        <syncfusion:TileViewItem Header="Item 2" />
+        <syncfusion:TileViewItem Header="Item 3" />
+        <syncfusion:TileViewItem Header="Item 4" 
+                                 HeaderTemplate="{StaticResource headerTemplate }" />
+    </syncfusion:TileViewControl>
+</Grid>
+{% endhighlight %}
+{% endtabs %}
+
+![Specific TileViewItem header panel UI changed](TileViewHeader_images/Tile_HeaderTemplate.png)
+
+## Custom UI of TileViewItem content
+
+You can customize the appearance of `TileViewItem` content by using the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ItemTemplate.html) property. The `DataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="contentTemplate">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center"
+                       Text="{Binding}"
+                       Foreground="Red"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+
+<Grid>
+    <syncfusion:TileViewControl ItemTemplate="{StaticResource contentTemplate}"
+                                Name="tileViewControl">
+        <syncfusion:TileViewItem Content="Content 1" Header="Item 1" />
+        <syncfusion:TileViewItem Content="Content 2" Header="Item 2" />
+        <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+        <syncfusion:TileViewItem Content="Content 4" Header="Item 4" />
+    </syncfusion:TileViewControl>
+</Grid>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![TileViewItem content UI changed](Working-with-TileView_images/ItemTemplate.png)
+
+### Custom UI of specfic TileViewItem content
+
+You can customize the appearance of specific `TileViewItem` content by using the [TileViewItem.ContentTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~ContentTemplate.html) property. The `DataContext` of the `TileViewItem.ContentTemplate` property is `TileViewItem.Content`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="contentTemplate">
+        <Grid>
+            <TextBlock HorizontalAlignment="Center"
+                       Text="{Binding}"
+                       Foreground="Red"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+
+<Grid>
+    <syncfusion:TileViewControl Name="tileViewControl">
+        <syncfusion:TileViewItem ContentTemplate="{StaticResource contentTemplate}"
+                                 Content="Content 1" Header="Item 1" />
+        <syncfusion:TileViewItem Content="Content 2" Header="Item 2" />
+        <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+        <syncfusion:TileViewItem ContentTemplate="{StaticResource contentTemplate}"
+                                 Content="Content 4" Header="Item 4" />
+    </syncfusion:TileViewControl>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Specific TileViewItem content UI changed](Working-with-TileView_images/Tile_ContentTemplate.png)
