@@ -156,7 +156,7 @@ private void TileViewControl_SelectionChanged(object sender, SelectionChangedEve
 
 ## Display TileViewItem splitter
 
-If you want to display the splitter between maximized and each minimized items, use the [SplitterVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterVisibility.html) property value as `Visible`. You can also change the splitter color and thickness by using the [SplitterColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterColor.html)and [SplitterThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterThickness.html) properties. The default value of `SplitterVisibility` is `Collapsed`, `SplitterColor` value is `Gray` and `SplitterThickness` value is `0`.
+If you want to display the splitter between maximized and each minimized items, use the [SplitterVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterVisibility.html) property value as `Visible`. You can also change the splitter color and thickness by using the [SplitterColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterColor.html) and [SplitterThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterThickness.html) properties. The default value of `SplitterVisibility` is `Collapsed`, `SplitterColor` value is `Gray` and `SplitterThickness` value is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -213,7 +213,7 @@ You can customize the appearance of `TileViewItem` headers by using the [HeaderT
 
 ![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
 
-### Custom UI of specfic TileViewItem header
+### Custom UI of specific TileViewItem header
 
 You can customize the appearance of specific `TileViewItem` headers by using the [TileViewItem.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html) property. The `DataContext` of the `TileViewItem.HeaderTemplate` property is `TileViewItem.Header`.
 
@@ -279,7 +279,7 @@ You can customize the appearance of `TileViewItem` content by using the [ItemTem
 
 ![TileViewItem content UI changed](Working-with-TileView_images/ItemTemplate.png)
 
-### Custom UI of specfic TileViewItem content
+### Custom UI of specific TileViewItem content
 
 You can customize the appearance of specific `TileViewItem` content by using the [TileViewItem.ContentTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~ContentTemplate.html) property. The `DataContext` of the `TileViewItem.ContentTemplate` property is `TileViewItem.Content`.
 

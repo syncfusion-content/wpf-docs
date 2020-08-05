@@ -77,7 +77,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ## Setting the border
 
-You can change the border color of the each `TileViewItem` separately by using the `TileViewItem.BorderBrush` property. You can also change the border thickness by using the `TileViewItem.BorderThickness` property. The default value of `TileViewItem.BorderBrush` property is `Dark Blue` and `TileViewItem.BorderThickness` proeprty is `1`.
+You can change the border color of the each `TileViewItem` separately by using the `TileViewItem.BorderBrush` property. You can also change the border thickness by using the `TileViewItem.BorderThickness` property. The default value of `TileViewItem.BorderBrush` property is `Dark Blue` and `TileViewItem.BorderThickness` property is `1`.
 
 {% tabs %}
 {% highlight xaml %}

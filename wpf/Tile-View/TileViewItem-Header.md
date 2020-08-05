@@ -232,7 +232,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ### Change border for TileViewItem header
 
-You can change the border color of the each `TileViewItem` header separately by using the [TileViewItem.HeaderBorderBrush](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderBorderBrush.html) property. You can also change the header border thickness by using the [TileViewItem.HeaderBorderThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderBorderThickness.html) property. The default value of `TileViewItem.HeaderBorderBrush` property is `Dark Blue` and `TileViewItem.HeaderBorderThickness` proeprty is `{0,0,0,1}`.
+You can change the border color of the each `TileViewItem` header separately by using the [TileViewItem.HeaderBorderBrush](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderBorderBrush.html) property. You can also change the header border thickness by using the [TileViewItem.HeaderBorderThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderBorderThickness.html) property. The default value of `TileViewItem.HeaderBorderBrush` property is `Dark Blue` and `TileViewItem.HeaderBorderThickness` property is `{0,0,0,1}`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,7 +296,7 @@ You can customize the appearance of `TileViewItem` headers by using the [HeaderT
 
 ![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
 
-### Custom UI of specfic TileViewItem header
+### Custom UI of specific TileViewItem header
 
 You can customize the appearance of specific `TileViewItem` headers by using the [TileViewItem.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html) property. The `DataContext` of the `TileViewItem.HeaderTemplate` property is `TileViewItem.Header`.
 

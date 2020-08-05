@@ -13,7 +13,7 @@ You can minimize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wp
 
 ## Minimize the TileViewItem
 
-You can minimimize the maximized `TileViewItem` by click on the minimize button.
+You can minimize the maximized `TileViewItem` by click on the minimize button.
 
 {% tabs %}
 {% highlight XAML %}
@@ -90,7 +90,7 @@ tileViewControl.MinimizedItemsPercentage = 50;
 
 ## Change minimized TileViewItem content
 
-By deafult, `TileViewItem.Content` property values displayed as `TileViewItem` content on minimized state. If you want to change the content of the `TileViewItem` on minimized state, use the [MinimizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) property. The default value of `MinimizedItemContent` property is `null`.
+By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on minimized state. If you want to change the content of the `TileViewItem` on minimized state, use the [MinimizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) property. The default value of `MinimizedItemContent` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}

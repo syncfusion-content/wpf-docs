@@ -65,7 +65,7 @@ tileViewControl.ClickHeaderToMaximize = true;
 
 ## Show maximize button only on mouse hover
 
-If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsMinMaxButtonOnMouseOverOnly.html) propery value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` proeprty is `false`.
+If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsMinMaxButtonOnMouseOverOnly.html) propery value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ tileViewControl.IsMinMaxButtonOnMouseOverOnly = true;
 
 ## Hide maximize button
 
-You can hide the maximize button for the specifc `TileViewItem` by using the [TileViewItem.MinMaxButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinMaxButtonVisibility.html) property value as `Collapsed`. The default value of `TileViewItem.MinMaxButtonVisibility` property is `Visible`. 
+You can hide the maximize button for the specific `TileViewItem` by using the [TileViewItem.MinMaxButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinMaxButtonVisibility.html) property value as `Collapsed`. The default value of `TileViewItem.MinMaxButtonVisibility` property is `Visible`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -159,7 +159,7 @@ You can customize the appearance of particular `TileViewItem`'s maximize button 
 
 ## Change maximized TileViewItem content
 
-By deafult, `TileViewItem.Content` property values displayed as `TileViewItem` content on maximized state. If you want to change the content of the `TileViewItem` on maximized state, use the [MaximizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) property. The default value of `MaximizedItemContent` property is `null`.
+By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on maximized state. If you want to change the content of the `TileViewItem` on maximized state, use the [MaximizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) property. The default value of `MaximizedItemContent` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
