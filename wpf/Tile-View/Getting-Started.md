@@ -1,238 +1,467 @@
 ---
 layout: post
-title: Getting Started | TileView | wpf | Syncfusion
-description: This section provides the detailed getting started information of the TileView control in application.
-platform: wpf
-control: TileView Control
+title: About WPF TileView control | Syncfusion
+description: This section describes about how to add the TileView control into wpf application and its basic features.
+platform: WPF
+control: TileViewControl
 documentation: ug
 ---
 
-# Getting Started of TileViewControl
+# Getting Started with WPF TileViewControl
 
-This section describes how to design a [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in a WPF application and overview of its basic functionalities.
+This section describes how to create a [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in a WPF application and overview of its basic functionalities.
+
+## Structure of TileViewControl
+
+![Structure of WPF TileViewControl](Getting-Started_images/Structure.png)
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tileview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages).
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#tileview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-## Creating sample application with TileViewControl
+Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html)  can be added to an application using Visual Studio and Blend.
+## Adding WPF TileViewControl via designer
 
-You can create the WPF application with [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control as follows:
+1) The `TileViewControl` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually via XAML](#adding-control-manually-via-XAML)
-3. [Adding control manually via C#](#adding-control-manually-via-C#)
+* Syncfusion.Shared.WPF
 
-## Creating the project
+![wpf TileViewControl added by designer](Getting-Started_images/Getting-Started_img2.png)
 
-Below section provides detailed information to create new project in Visual Studio to display [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html).
+2) Set the properties for `TileViewControl` in design mode using the SmartTag feature.
 
-## Adding control via designer
+## Adding WPF TileViewControl via XAML
 
-[TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html)  can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly **Syncfusion.Shared.WPF** references will be added automatically.
+To add the `TileViewControl` manually in XAML, follow these steps:
 
-### Through Visual Studio
+1) Create a new WPF project in Visual Studio.
 
-The following are the steps to create the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using Visual Studio.
+2) Add the following required assembly references to the project:
 
-1. Drag TileViewControl from the Toolbox and drop it in the Designer area. 
+* Syncfusion.Shared.WPF
 
-     ![TileViewControl by VS designer](Getting-Started_images/Getting-Started_img2.png)
-
-2. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select the TileViewControl and click the button in the Items property. This will open the Collection Editor.
-
-     ![Collection Editor of TileViewControl](Getting-Started_images/Getting-Started_img3.png)
-
-3. Using the Collection Editor, add the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) and configure their properties.
-
-### Through Expression Blend
-
-The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) can also be created and configured using Expression Blend. The following are the steps to do so.
-
-1. Create a WPF project in Expression Blend and refer the following assemblies.
-
-   1. Syncfusion.Shared.Wpf
-   
-2. Drag TileViewControl from the Toolbox and drop it in the Designer area. 
-
-     ![TileViewControl by Blend Designer](Getting-Started_images/Getting-Started_img5.png)
-
-3. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select TileViewControl and go to Properties and click Items (Collection) under Common Properties.
-
-     ![CollectionEditor in Blend](Getting-Started_images/Getting-Started_img6.png)
-
-4. Once the Collection Editor window opens, click Add another item button to open Select Object window. 
-
-5. Select [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by typing _TileViewItem_ in the search box, and then click OK.
-
-     ![Adding TileViewItem](Getting-Started_images/Getting-Started_img7.png)
-
-6. Configure the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) using the properties in the Collection Editor.
-
-N> You can customize the appearance of the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) and its Item using the template-editing feature available in the Expression Blend.
-
-## Adding control manually via XAML
-
-The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) can be created through XAML codes. 
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TileViewControl` in XAML page.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
-<Window
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:local="clr-namespace:WPF_ForDocumentation"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-x:Class="WPF_ForDocumentation.MainWindow"
-mc:Ignorable="d"
-Name="mainWindow"
-Title="MainWindow" Height="450" Width="700" >
-<Grid>
-<syncfusion:TileViewControl Name="tileViewControl1" >
-     <syncfusion:TileViewItem Header="Item 1" />
-     <syncfusion:TileViewItem Header="Item 2" />
-     <syncfusion:TileViewItem Header="Item 3" />
-     <syncfusion:TileViewItem Header="Item 4" />
-</syncfusion:TileViewControl>
-</Grid>
+<Window x:Class="TileViewControl_sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TileViewControl_sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Name="grid">
+        <syncfusion:TileViewControl Name="tileViewControl"
+                             Height="200"
+                             Width="200"/>
+    </Grid>
 </Window>
-{% endhighlight %}
 
+{% endhighlight %}
 {% endtabs %}
 
-## Adding control manually via C#
+## Adding WPF TileViewControl via C#
 
-To create the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) through C#, include the following namespace to the directives list.
+To add the `TileViewControl` manually in C#, follow these steps:
+
+1) Create a new WPF application via Visual Studio.
+
+2) Add the following required assembly references to the project:
+
+* Syncfusion.Shared.WPF
+
+3) Include the required namespace.
 
 {% tabs %}
-
-{% highlight c# %}
+{% highlight C# %}
 
 using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Imports Syncfusion.Windows.Shared
-
-{% endhighlight %}
-
 {% endtabs %}
 
-Create an instance for [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) and add the TileViewItems in it.
+4) Create an instance of `TileViewControl`, and add it to the window.
 
 {% tabs %}
+{% highlight C# %}
 
-{% highlight c# %}
+// Creating an instance of the TileViewControl
+TileViewControl tileViewControl = new TileViewControl();
 
-TileViewControl tvControl = new TileViewControl();
-TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
-TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
-TileViewItem tvitem3 = new TileViewItem() { Header = "Item 3" };
-TileViewItem tvitem4 = new TileViewItem() { Header = "Item 4" };
-
-tvControl.Items.Add(tvitem1);
-tvControl.Items.Add(tvitem2);
-tvControl.Items.Add(tvitem3);
-tvControl.Items.Add(tvitem4);
+// Setting height and width to TileViewControl
+tileViewControl.Height = 200;
+tileViewControl.Width = 300;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim tvControl As TileViewControl = New TileViewControl
-Dim tvitem1 As TileViewItem = New TileViewItem
-Dim tvitem2 As TileViewItem = New TileViewItem
-Dim tvitem3 As TileViewItem = New TileViewItem
-Dim tvitem4 As TileViewItem = New TileViewItem
-
-tvControl.Items.Add(tvitem1)
-tvControl.Items.Add(tvitem2)
-tvControl.Items.Add(tvitem3)
-tvControl.Items.Add(tvitem4)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-N> To learn how to data bind the TileViewControl using ItemSource [click here](https://help.syncfusion.com/wpf/tile-view/data-binding).  
+## Populating items using TileViewItem
 
-![TileViewControl added by codebehind](Getting-Started_images/Getting-Started_img8.png)
-
-## Selection
-
-You can set the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) to be selected or check whether required TileViewItem is selected in [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using [IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
+You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
 
 {% tabs %}
+{% highlight XAML %}
 
-{% highlight xaml %}
-
-<syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800">
-     <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
-     <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" IsSelected="True" /> 
+<syncfusion:TileViewControl Name="tileViewControl">
+    <syncfusion:TileViewItem Content="Content 1" Header="Item 1" />
+    <syncfusion:TileViewItem Content="Content 2" Header="Item 2" />
+    <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+    <syncfusion:TileViewItem Content="Content 4" Header="Item 4" />
 </syncfusion:TileViewControl>
 
 {% endhighlight %}
+{% highlight C# %}
 
-{% highlight c# %}
-
-TileViewControl tvControl = new TileViewControl();
-TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
-TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
-
-tvControl.Items.Add(tvitem1);
-tvControl.Items.Add(tvitem2);
-tvitem1.IsSelected = true;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim tvControl As TileViewControl = New TileViewControl
-Dim tvitem1 As TileViewItem = New TileViewItem
-Dim tvitem2 As TileViewItem = New TileViewItem
-
-tvControl.Items.Add(tvitem1)
-tvControl.Items.Add(tvitem2)
-
-tvitem1.IsSelected = true
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 1",
+    Header = "Item 1" });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 2",
+    Header = "Item 2" });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 3",
+    Header = "Item 3" });
+tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
+    Header = "Item 4" });
 
 {% endhighlight %}
-
 {% endtabs %}
 
-## Maximize TileViewItem 
+![TileView items are populated to the TileView control](Working-with-TileView_images/TileViewItem.png)
 
-In [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) you can maximize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by clicking on its header after enabling the [ClickHeaderToMaximize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) property.
+## Populating items using collection binding
+
+You can populate items to the `TileViewControl` by setting the collection value to the `ItemsSource` property.
 
 {% tabs %}
+{% highlight C# %}
 
-{% highlight xaml %}
-<syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" ClickHeaderToMaximize ="True" >
-     <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
-     <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
+// Model.cs
+public class TileItem {
+    public string Header { get; set; }
+    public string Content { get; set; }
+    public TileItem() {
+    }
+}
+
+//ViewModel.cs
+public class ViewModel : NotificationObject {
+    private ObservableCollection<TileItem> tileViewItems;
+    public ObservableCollection<TileItem> TileViewItems {
+        get { return tileViewItems; }
+        set {
+            tileViewItems = value;
+            this.RaisePropertyChanged(nameof(TileViewItems));
+        }
+    }
+
+    public ViewModel() {
+        tileViewItems = new ObservableCollection<TileItem>();
+        PopulateCollection();
+    }
+
+    public void PopulateCollection() {
+        //Adding the tileview items into the collection
+        TileViewItems.Add(new TileItem() { Header = "Item 1", Content = "Content 1" });
+        TileViewItems.Add(new TileItem() { Header = "Item 2", Content = "Content 2" });
+        TileViewItems.Add(new TileItem() { Header = "Item 3", Content = "Content 3" });
+        TileViewItems.Add(new TileItem() { Header = "Item 4", Content = "Content 4" });   
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl ItemsSource="{Binding TileViewItems}" 
+                            Name="tileViewControl">
+    <syncfusion:TileViewControl.ItemContainerStyle>
+        <Style TargetType="{x:Type syncfusion:TileViewItem}">
+            <Setter Property="Header" Value="{Binding Header}" />
+            <Setter Property="Content" Value="{Binding Content}"/>
+        </Style>
+    </syncfusion:TileViewControl.ItemContainerStyle>
+    
+    <syncfusion:TileViewControl.DataContext>
+        <local:ViewModel/>
+    </syncfusion:TileViewControl.DataContext>
 </syncfusion:TileViewControl>
 
 {% endhighlight %}
-{% highlight c# %}
+{% endtabs %}
 
-TileViewControl tvControl = new TileViewControl();
-TileViewItem tvitem1 = new TileViewItem() { Header = "Item 1" };
-TileViewItem tvitem2 = new TileViewItem() { Header = "Item 2" };
+![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
-tvControl.Items.Add(tvitem1);
-tvControl.Items.Add(tvitem2);
-tvControl.ClickHeaderToMaximize = true;      
+## Select a TileViewItem
+
+You can select any `TileViewItem` by mouse click on the specific `TileViewItem`. You can get the selected item by using the `SelectedItem` property. You can also get the selected value and its index by using the `SelectedValue` and `SelectedIndex` properties. The default value of `SelectedItem` property is `null`.
+
+N> You can select only one item at a time.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl Name="tileViewControl">
+    <syncfusion:TileViewItem Content="Content 1" Header="Item 1" />
+    <syncfusion:TileViewItem Content="Content 2" Header="Item 2" />
+    <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+    <syncfusion:TileViewItem Content="Content 4" Header="Item 4" />
+</syncfusion:TileViewControl>
 
 {% endhighlight %}
+{% highlight C# %}
 
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 1",
+    Header = "Item 1" });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 2",
+    Header = "Item 2" });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 3",
+    Header = "Item 3" });
+tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
+    Header = "Item 4" });
+
+{% endhighlight %}
 {% endtabs %}
+
+![TileViewItem selected by mouse click](Working-with-TileView_images/Selection.gif)
+
+### Select TileViewItem programmatically using property
+
+You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl Name="tileViewControl">
+    <syncfusion:TileViewItem Content="Content 1" Header="Item 1" />
+    <syncfusion:TileViewItem IsSelected="True"
+                             Content="Content 2" Header="Item 2" />
+    <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+    <syncfusion:TileViewItem Content="Content 4" Header="Item 4" />
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 1",
+    Header = "Item 1" });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 2",
+    Header = "Item 2", IsSelected = true });
+tileViewControl.Items.Add(new TileViewItem() { Content="Content 3",
+    Header = "Item 3" });
+tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
+    Header = "Item 4" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Particular TileViewItem selected by using IsSelected property](Working-with-TileView_images/IsSelected.png)
+
+## Selected item changed notification
+
+The selected item changed in `TileViewControl` can be examined using `SelectionChanged` event. The `SelectionChanged` event contains the old and newly selected item in the `RemovedItems` and `AddedItems` properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl SelectionChanged="TileViewControl_SelectionChanged" 
+                            Name="tileViewControl">
+    <syncfusion:TileViewItem Content="Content 1" Header="Item 1" />
+    <syncfusion:TileViewItem Content="Content 2" Header="Item 2" />
+    <syncfusion:TileViewItem Content="Content 3" Header="Item 3" />
+    <syncfusion:TileViewItem Content="Content 4" Header="Item 4" />
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tileViewControl.SelectionChanged += TileViewControl_SelectionChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void TileViewControl_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+    //Get old and new selected TileView item
+    var oldItem = e.RemovedItems;
+    var newItem = e.AddedItems;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Arrange TileViewItem in rows and columns
+
+You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowCount.html) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnCount.html) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl RowCount="6" ColumnCount="1"
+                            Name="tileViewControl"  >
+    <syncfusion:TileViewItem Header="Item1"/>
+    <syncfusion:TileViewItem Header="Item2"/>
+    <syncfusion:TileViewItem Header="Item3"/>
+    <syncfusion:TileViewItem Header="Item4"/>
+    <syncfusion:TileViewItem Header="Item5"/>
+    <syncfusion:TileViewItem Header="Item6"/>
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tileViewControl.RowCount = 6;
+tileViewControl.ColumnCount = 1;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
+
+
+## Minimize or maximize the TileViewItem
+
+You can minimize or maximize the `TileViewItem` by click on the `MinMaxButton`. you can change the header and content for the minimized and maximized items separately by using the [TileViewItem.MinimizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedHeader.html), [TileViewItem.MinimizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) and [TileViewItem.MaximizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedHeader.html) , [TileViewItem.MaximizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl Name="tileViewControl">
+    <syncfusion:TileViewItem Header="Item 1" Content="Content 1"
+                             MinimizedItemContent="Min Content 1"
+                             MaximizedItemContent="Max Content 1"
+                             MinimizedHeader="Min Item 1"
+                             MaximizedHeader="Max Item 1"/>
+    <syncfusion:TileViewItem Header="Item2" Content="Content 2"
+                             MinimizedItemContent="Min Content 2"
+                             MaximizedItemContent="Max Content 2"
+                             MinimizedHeader="Min Item 2"
+                             MaximizedHeader="Max Item 2"/>
+    <syncfusion:TileViewItem Header="Item3" Content="Content 3"
+                             MinimizedItemContent="Min Content 3"
+                             MaximizedItemContent="Max Content 3"
+                             MinimizedHeader="Min Item 3"
+                             MaximizedHeader="Max Item 3"/>
+    <syncfusion:TileViewItem Header="Item4" Content="Content 4"
+                             MinimizedItemContent="Min Content 4"
+                             MaximizedItemContent="Max Content 4"
+                             MinimizedHeader="Min Item 4"
+                             MaximizedHeader="Max Item 4"/>
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.Items.Add(new TileViewItem() { Header = "Item 1", 
+    Content = "Content 1", MaximizedItemContent = "Max Content 1", 
+    MinimizedItemContent = "Min Content 1",
+    MinimizedHeader="Min Item 1", MaximizedHeader="Max Item 1"});
+ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 2",
+     Content = "Content 2", MaximizedItemContent = "Max Content 2",
+     MinimizedItemContent = "Min Content 1",
+     MinimizedHeader="Min Item 2", MaximizedHeader="Max Item 2"});
+ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 3",
+     Content = "Content 3", MaximizedItemContent = "Max Content 3",
+     MinimizedItemContent = "Min Content 1",
+     MinimizedHeader="Min Item 3", MaximizedHeader="Max Item 3"});
+ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
+     Content = "Content 4", MaximizedItemContent = "Max Content 4",
+     MinimizedItemContent = "Min Content 1",
+     MinimizedHeader="Min Item 4", MaximizedHeader="Max Item 4"});
+
+{% endhighlight %}
+{% endtabs %}
+
+![Minimizing and maximizing the TileViewItems](Getting-Started_images/MinMax.gif)
+
+## Closing TileViewItem 
+
+You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel. If you want to display the close button on `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonVisibility.html) property value as `Visible`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl Name="tileViewControl">
+    <syncfusion:TileViewItem Header="Item 1" 
+                             CloseButtonVisibility="Visible"/>
+    <syncfusion:TileViewItem Header="Item 2" 
+                             CloseButtonVisibility="Visible"/>
+    <syncfusion:TileViewItem Header="Item 3" 
+                             CloseButtonVisibility="Visible"/>
+    <syncfusion:TileViewItem Header="Item 4" 
+                             CloseButtonVisibility="Visible"/>
+</syncfusion:TileViewControl>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.Items.Add(new TileViewItem() { Header = "Item 1",
+    CloseButtonVisibility= Visibility.Visible});
+tileViewControl.Items.Add(new TileViewItem() { Header = "Item 2",
+    CloseButtonVisibility = Visibility.Visible });
+tileViewControl.Items.Add(new TileViewItem() { Header = "Item 3",
+    CloseButtonVisibility = Visibility.Visible });
+tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
+    CloseButtonVisibility = Visibility.Visible });
+
+{% endhighlight %}
+{% endtabs %}
+
+![TileViewItems closing by close button click](Closing_images/CloseButtonClick.gif)
+
+## Custom UI of TileViewItem
+
+You can customize the header and content of `TileViewItem` appearance by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) and `ItemTemplate` properties. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header` and `dataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="contentTemplate">
+        <Grid>
+            <TextBlock VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="{Binding}"
+                       Foreground="Blue"/>
+        </Grid>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="headerTemplate">
+        <Grid>
+            <TextBlock VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="{Binding}"
+                       Foreground="Red"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:TileViewControl HeaderTemplate="{StaticResource headerTemplate}"
+                                ItemTemplate="{StaticResource  contentTemplate}"
+                                Name="tileViewControl">
+        <syncfusion:TileViewItem Header="Item 1" Content="Content 1"/>
+        <syncfusion:TileViewItem Header="Item 2" Content="Content 2" />
+        <syncfusion:TileViewItem Header="Item 3" Content="Content 3"/>
+        <syncfusion:TileViewItem Header="Item 4" Content="Content 4"/>
+    </syncfusion:TileViewControl>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI of the TileViewItems](Getting-Started_images/TileViewItem_UI.png)

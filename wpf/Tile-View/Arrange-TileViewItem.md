@@ -98,10 +98,9 @@ tileViewControl.ColumnWidth = 100;
 
 ![TileViewControl rows and columns size changed](Arrange_images/RowHeight.png)
 
-
 ## Navigate to TileViewItem
 
-You can navigate from one `TileViewItem` to any other `TileViewItem` by using the mouse click on the specific `TileViewItem` header.
+You can navigate from one `TileViewItem` to any other `TileViewItem` by using the mouse click on the specific `TileViewItem`.
 
 ![Navigation from one TileViewItem to another](Arrange_images/Navigate.gif)
 

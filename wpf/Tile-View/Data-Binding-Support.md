@@ -142,6 +142,26 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 
 ![TileViewControl auto creates tileview item from XML using data binding](Data-binding_images/Data-Binding_img2.png)
 
+## Virtualization support
+
+You can enable the UI virtualization support in `TileViewControl`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [IsVirtualizing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsVirtualizing.html) property value as `true`. This feature allows users to reduce the loading time of `TileView` items regardless of items count. The default value of `IsVirtualizing` property is `false`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TileViewControl IsVirtualizing="True"
+                            Name="tileViewControl"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TileViewControl tileViewControl = new TileViewControl();
+tileViewControl.IsVirtualizing = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## TileViewItem header
 
 You can define the `TileViewItem` header using `HeaderTemplate` or `TileViewItem.ItemContainerStyle` property. Otherwise, `TileViewItem` header will display the data object class name which is associated with `TileViewItem`. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.

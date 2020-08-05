@@ -47,7 +47,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Showing the close button on TileViewItem](Closing_images/CloseButton.png)
 
-## Closing TileViewItem item 
+## Closing TileViewItem
 
 You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel.
 
