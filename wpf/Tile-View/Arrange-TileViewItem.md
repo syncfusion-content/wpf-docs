@@ -9,7 +9,7 @@ documentation: ug
 
 # Arrange and navigate items in TileViewControl
 
-This section explains how to arrange the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Rearrange position of TileViewItem
 
@@ -19,9 +19,9 @@ If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/cref_
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
-## Restrict re-positioning of TileViewItem
+## Restrict rearranging of TileViewItem
 
-You can restrict the re-positioning of `TileViewItem` by setting the [AllowItemRepositioning](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioning.html) property value as `false`. The default value of `AllowItemRepositioning` property is `true`.
+You can restrict the rearranging of `TileViewItem` by setting the [AllowItemRepositioning](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioning.html) property value as `false`. The default value of `AllowItemRepositioning` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -179,7 +179,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Disable built-in navigation animation
 
-By default, navigation of `TileViewItem` animation is enabled. If you want to disable the animation while navigation of `TileViewItem`, use the [EnableAnimation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~EnableAnimation.html) property value as ` false`.
+By default, navigation of `TileViewItem` animation is enabled. If you want to disable the animation while navigation of `TileViewItem`, use the [EnableAnimation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~EnableAnimation.html) property value as `false`.
 
 {% tabs %}
 {% highlight XAML %}

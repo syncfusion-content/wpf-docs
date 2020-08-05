@@ -11,7 +11,7 @@ documentation: ug
 
 You can add a [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the WPF [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
 
-## Data-Binding to Objects
+## Data binding to Objects
 
 The `TileViewControl` can bound to an external source to auto create `TileViewItem` and display the data using `ItemsSource` property. When you are auto generating `TileViewItem` using `ItemsSource`, you need to set `Header` property or `HeaderTemplate` in `ItemContainerStyle` to define header and use `Content` property or `ContentTemplate` in `ItemContainerStyle` to display the content of the `TileViewItem` item.  
 
@@ -80,11 +80,11 @@ public class ViewModel : NotificationObject {
 
 ![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
-## Data-Binding with XML
+## Data binding with XML
 
 You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in the `TileViewControl`. You can easily populates the items from the `XML` files using the `ItemTemplate` and `ContentTemplate` or `ItemContainerStyle` properties. 
 
-1. Create an `XML` file with the required details and name it as `Data.xml`.
+1.Create an `XML` file with the required details and name it as `Data.xml`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -110,7 +110,7 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 {% endhighlight %}
 {% endtabs %}
 
-2. Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `TileViewControl`.
+2.Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `TileViewControl`.
 
 {% tabs %}
 {% highlight XAML %}
