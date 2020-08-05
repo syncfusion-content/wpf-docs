@@ -95,8 +95,8 @@ You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Sy
 {% highlight XAML %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox1" Margin="10"
-                                       Width="150" Height="30"
-                                       ValueChanged="IntegerTextBox1_ValueChanged" />
+                           Width="150" Height="30"
+                           ValueChanged="IntegerTextBox1_ValueChanged" />
 
 {% endhighlight %}
 {% highlight C# %}
