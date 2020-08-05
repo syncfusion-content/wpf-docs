@@ -88,7 +88,7 @@ You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Sy
 
  * `None` - No behavior is implemented.
 
- * `Resetvalue` - Resets the entered value to 0 after focus is lost.
+ * `ResetValue` - Resets the entered value to 0 after focus is lost.
 
 
 {% tabs %}
