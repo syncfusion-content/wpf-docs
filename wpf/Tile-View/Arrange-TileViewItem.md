@@ -17,6 +17,8 @@ If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/cref_
 
 ![TileViewItems are rearranged by drag and drop](Arrange_images/Arrange.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+
 ## Restrict re-positioning of TileViewItem
 
 You can restrict the re-positioning of `TileViewItem` by setting the [AllowItemRepositioning](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioning.html) property value as `false`. The default value of `AllowItemRepositioning` property is `true`.
@@ -41,6 +43,8 @@ tileViewControl.AllowItemRepositioning = false;
 {% endtabs %}
 
 ![TileViewItems repositioning disabled](Arrange_images/Arrange_disable.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
 ## Arrange TileViewItem in rows and columns
 
@@ -70,6 +74,8 @@ tileViewControl.ColumnCount = 1;
 
 ![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+
 ## Change row and column size
 
 By default, `TileViewItem` rows and columns size are allocated based on the control size and number of items in a control. You can change the row and column size of the `TileViewItem` by setting the value to [RowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowHeight.html) and [ColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnWidth.html) properties. The default value of `RowHeight` and `ColumnWidth` properties is `auto`.
@@ -97,6 +103,8 @@ tileViewControl.ColumnWidth = 100;
 {% endtabs %}
 
 ![TileViewControl rows and columns size changed](Arrange_images/RowHeight.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
 ## Navigate to TileViewItem
 
@@ -127,8 +135,6 @@ If you add more items and set the row and column size to place the items that ex
     <syncfusion:TileViewItem Header="Item9"/>
 </syncfusion:TileViewControl>
 
-
-
 {% endhighlight %}
 {% highlight C# %}
 
@@ -141,6 +147,8 @@ tileViewControl. HorizontalScrollBarVisibility = Visibility.Auto;
 {% endtabs %}
 
 ![Navigate to the hidden items in TileViewControl using scroll bars](Arrange_images/ScrollBarVisibility.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
 ## Change built-in animation duration
 
@@ -157,8 +165,6 @@ If you want to change the animation duration of navigation, use the [AnimationDu
     <syncfusion:TileViewItem Header="Item4"/>
 </syncfusion:TileViewControl>
 
-
-
 {% endhighlight %}
 {% highlight C# %}
 
@@ -168,6 +174,8 @@ tileViewControl.AnimationDuration = new TimeSpan(0, 0, 0, 0, 300);
 {% endtabs %}
 
 ![Animation time for navigation is changed](Arrange_images/AnimationDuration.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
 ## Disable built-in navigation animation
 
@@ -195,3 +203,5 @@ tileViewControl.EnableAnimation = false;
 {% endtabs %}
 
 ![Built-in navigation animation is disabled](Arrange_images/EnableAnimation.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)

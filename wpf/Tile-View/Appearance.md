@@ -43,6 +43,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems with various foreground](Appearance_images/Foreground.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+
 ## Setting the background
 
 You can change the background color of the each `TileViewItem` separately by using the `TileViewItem.Background` property. The default value of `TileViewItem.Background` property is `White`.
@@ -74,6 +76,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 {% endtabs %}
 
 ![TileViewItems with various background](Appearance_images/Background.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
 
 ## Setting the border
 
@@ -111,6 +115,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4", Content = "Con
 
 ![TileViewItems with various border colors](Appearance_images/BorderBrush.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
+
 ## Change flow direction
 
 You can change the flow direction of the `TileViewControl` layout from right to left by setting the `TileViewControl.FlowDirection` property value as `RightToLeft`. The default value of `TileViewControl.FlowDirection` property is `LeftToRight`.
@@ -119,7 +125,7 @@ You can change the flow direction of the `TileViewControl` layout from right to 
 {% highlight xaml %}
 
 <syncfusion:TileViewControl FlowDirection="RightToLeft"
-                            Name="tileViewControl" />
+                            Name="tileViewControl" >
      <syncfusion:TileViewItem Header="Item1" Content="Content1"/>
      <syncfusion:TileViewItem Header="Item2" Content="Content2"/>
      <syncfusion:TileViewItem Header="Item3" Content="Content3"/>
@@ -135,6 +141,8 @@ tileViewControl.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![TileViewControl with right to left flow direction](Appearance_images/rtl.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
 
 ### Change flow direction for specific TileViewItem
 
@@ -169,6 +177,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 {% endtabs %}
 
 ![Particular TileViewItem flow direction changed](Appearance_images/TileViewItem_rtl.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Appearance)
 
 ## Theme
 
@@ -230,3 +240,5 @@ SfSkinManager.SetVisualStyle(tileViewControl, VisualStyles.Blend);
 ![TileViewControl with Blend visual style](Appearance_images/blend.png)
 
 Here, the `Blend` style is applied to the `TileViewControl`.
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Themes)

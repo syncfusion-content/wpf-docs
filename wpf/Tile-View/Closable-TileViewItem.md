@@ -47,6 +47,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Showing the close button on TileViewItem](Closing_images/CloseButton.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+
 ## Closing TileViewItem
 
 You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel.
@@ -82,6 +84,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 {% endtabs %}
 
 ![TileViewItems closing by close button click](Closing_images/CloseButtonClick.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
 
 ## Closing TileViewItem programmatically
 
@@ -166,6 +170,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems will delete from items collection](Closing_images/CloseMode.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+
 ## Custom UI of close button
 
 You can customize the appearance of particular `TileViewItem`'s close button by using the [CloseButtonStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonStyle.html) property. You can also change the margin of the `TileViewItem` close button by using the [CloseButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonMargin.html) property. The `DataContext` of the `CloseButtonStyle` property is [TileViewItemCloseButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItemCloseButton.html).
@@ -176,13 +182,13 @@ You can customize the appearance of particular `TileViewItem`'s close button by 
 <Window.Resources>
     <Style x:Key="closeButtonStyle"
        TargetType="syncfusion:TileViewItemCloseButton">
-        <Setter Property="Background" Value="Yellow"/>
+        <Setter Property="Background" Value="Orange"/>
     </Style>
 </Window.Resources>
 <Grid>
-    <syncfusion:TileViewControl CloseButtonMargin="3"
-                                Name="tileViewControl">
-        <syncfusion:TileViewItem CloseButtonStyle="{StaticResource closeButtonStyle}"
+    <syncfusion:TileViewControl Name="tileViewControl">
+        <syncfusion:TileViewItem CloseButtonMargin="3"
+                                 CloseButtonStyle="{StaticResource closeButtonStyle}"
                                  Header="Item 1" CloseButtonVisibility="Visible"/>
         <syncfusion:TileViewItem Header="Item 2" CloseButtonVisibility="Visible"/>
         <syncfusion:TileViewItem Header="Item 3" CloseButtonVisibility="Visible"/>
@@ -194,6 +200,8 @@ You can customize the appearance of particular `TileViewItem`'s close button by 
 {% endtabs %}
 
 ![TileViewItems close button UI changed](Closing_images/CloseButtonStyle.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
 
 ## TileViewItem closing notification
 

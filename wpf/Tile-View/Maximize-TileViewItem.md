@@ -65,7 +65,7 @@ tileViewControl.ClickHeaderToMaximize = true;
 
 ## Show maximize button only on mouse hover
 
-If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsMinMaxButtonOnMouseOverOnly.html) propery value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` property is `false`.
+If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsMinMaxButtonOnMouseOverOnly.html) property value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}

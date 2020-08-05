@@ -102,6 +102,8 @@ tileViewControl.Width = 300;
 {% endhighlight %}
 {% endtabs %}
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+
 ## Populating items using TileViewItem
 
 You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
@@ -133,6 +135,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 {% endtabs %}
 
 ![TileView items are populated to the TileView control](Working-with-TileView_images/TileViewItem.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
 
 ## Populating items using collection binding
 
