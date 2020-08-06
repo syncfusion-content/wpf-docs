@@ -82,7 +82,7 @@ integerTextBox.IsReadOnlyCaretVisible = true;
 
 ## Customize the behavior for invalid value
 
-You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) behaves when you enter a value which you consider as not valid using [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~InvalidValueBehavior.html) property. It can be customized by below values,
+You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) behaves  when entered value is not equal to the value of [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ValidationValue.html) property, using [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~InvalidValueBehavior.html) property. It can be customized by below values,
 
  * `DisplayErrorMessage` - Shows a MessageBox with message" String validation failed" after focus is lost from IntegerTextBox.
 
@@ -90,29 +90,29 @@ You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Sy
 
  * `ResetValue` - Resets the entered value to 0 after focus is lost.
 
+N> By default ValidationValue property value is String.Empty.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:IntegerTextBox x:Name="integerTextBox1" Margin="10"
-                           Width="150" Height="30"
-                           ValueChanged="IntegerTextBox1_ValueChanged" />
+<syncfusion:DoubleTextBox Width="120" Height="30"
+                         InvalidValueBehavior="DisplayErrorMessage"
+                         ValidationValue="1222"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-private void IntegerTextBox1_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+DoubleTextBox doubleTextBox1 = new DoubleTextBox()
 {
-  // To check and set the behavior for a specific value in IntegerTextBox
-  if (integerTextBox1.Value == 30)
-  {
-    integerTextBox1.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
-  }
-  else
-  {
-    integerTextBox1.InvalidValueBehavior = InvalidInputBehavior.None;
-  }
-}
+  Height = 30,
+  Width = 120,
+  InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage,
+  ValidationValue = "1222",
+  HorizontalAlignment = HorizontalAlignment.Center,
+  VerticalAlignment = VerticalAlignment.Center
+};
 
 {% endhighlight %}
 {% endtabs %}
