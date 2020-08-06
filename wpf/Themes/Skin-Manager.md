@@ -6,174 +6,200 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# Getting started with SkinManager
+# Getting started with SkinManager for WPF
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the built-in themes for both the WPF syncfusion and framework controls. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes can be color customized in the [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio). Refer to the following built in themes and its available assemblies below.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the themes for both syncfusion and framework controls. There are 22 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes color derivations can be customized using [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
-N> Built-in themes in current ThemeStudio has improved consistency and uniqueness among various controls compared to old themes.
+N> Theme studio based themes provides improved consistency and uniqueness among various controls compared to other themes. Its recommended to use theme studio based themes in application over other themes. 
+
+## Themes List
+
+Below table lists available themes and assembly or nuget reference to use the same in application. 
 
 <table>
 <tr>
 <th>
 Styles</th><th>
-Assemblies</th><th>
-NuGet packages</th><th>
+Assembly</th><th>
+NuGet package</th><th>
 Supported in ThemeStudio</th><th>
-Alternative themes in ThemeStudio</th></tr>
+Alternative theme suggestion to use</th></tr>
 <tr>
 <td>
 MaterialLight</td><td>
 Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialLight.WPF</td><td>
+{{'[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialDark</td><td>
 Syncfusion.Themes.MaterialDark.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialDark.WPF</td><td>
+{{'[Syncfusion.Themes.MaterialDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialLightBlue</td><td>
 Syncfusion.Themes.MaterialLightBlue.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialLightBlue.WPF</td><td>
+{{'[Syncfusion.Themes.MaterialLightBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLightBlue.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 MaterialDarkBlue</td><td>
 Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td><td>
-Syncfusion.Themes.MaterialDarkBlue.WPF</td><td>
+{{'[Syncfusion.Themes.MaterialDarkBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDarkBlue.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Office2019Colorful</td><td>
 Syncfusion.Themes.Office2019Colorful.Wpf.dll</td><td>
-Syncfusion.Themes.Office2019Colorful.WPF</td><td>
+{{'[Syncfusion.Themes.Office2019Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Colorful.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Office2019Black</td><td>
 Syncfusion.Themes.Office2019Black.Wpf.dll</td><td>
-Syncfusion.Themes.Office2019Black.WPF</td><td>
+{{'[Syncfusion.Themes.Office2019Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Black.WPF/)'| markdownify }}
+</td><td>
 Yes</td><td>
-NA</td></tr>
+-</td></tr>
 <tr>
 <td>
 Metro</td><td>
 Syncfusion.Themes.Metro.Wpf.dll</td><td>
-Syncfusion.Themes.Metro.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Metro.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Metro.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Lime</td><td>
 Syncfusion.Themes.Lime.Wpf.dll</td><td>
-Syncfusion.Themes.Lime.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Lime.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Lime.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Saffron</td><td>
 Syncfusion.Themes.Saffron.Wpf.dll</td><td>
-Syncfusion.Themes.Saffron.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Saffron.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Saffron.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Blend</td><td>
 Syncfusion.Themes.Blend.Wpf.dll</td><td>
-Syncfusion.Themes.Blend.WPF</td><td>
-No</td><td>
+{{'[Syncfusion.Themes.Blend.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Blend.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
 MaterialDark, Office2019Black</td></tr>
 <tr>
 <td>
 Office2013White</td><td>
 Syncfusion.Themes.Office2013White.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013White.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2013White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013White.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2013LightGray</td><td>
 Syncfusion.Themes.Office2013LightGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013LightGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2013LightGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013LightGray.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2013DarkGray</td><td>
 Syncfusion.Themes.Office2013DarkGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2013DarkGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2013DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013DarkGray.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 VisualStudio2013</td><td>
 Syncfusion.Themes.VisualStudio2013.Wpf.dll</td><td>
-Syncfusion.Themes.VisualStudio2013.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.VisualStudio2013.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2013.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Black</td><td>
 Syncfusion.Themes.Office2010Black.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Black.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2010Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Black.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Blue</td><td>
 Syncfusion.Themes.Office2010Blue.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Blue.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2010Blue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Blue.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office2010Silver</td><td>
 Syncfusion.Themes.Office2010Silver.Wpf.dll</td><td>
-Syncfusion.Themes.Office2010Silver.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2010Silver.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Silver.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 Office365</td><td>
 Syncfusion.Themes.Office365.Wpf.dll</td><td>
-Syncfusion.Themes.Office365.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office365.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office365.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016Colorful</td><td>
 Syncfusion.Themes.Office2016Colorful.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016Colorful.WPF</td><td>
-No</td><td>
+{{'[Syncfusion.Themes.Office2016Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016Colorful.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
 Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016White</td><td>
 Syncfusion.Themes.Office2016White.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016White.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2016White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016White.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2016DarkGray</td><td>
 Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td><td>
-Syncfusion.Themes.Office2016DarkGray.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.Office2016DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016DarkGray.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
 VisualStudio2015</td><td>
 Syncfusion.Themes.VisualStudio2015.Wpf.dll</td><td>
-Syncfusion.Themes.VisualStudio2015.WPF</td><td>
-No</td><td>
-No</td></tr>
+{{'[Syncfusion.Themes.VisualStudio2015.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2015.WPF/)'| markdownify }}
+</td><td>
+-</td><td>
+-</td></tr>
 </table>
 
 ## Apply a theme to a control
@@ -182,7 +208,7 @@ No</td></tr>
 
 There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) reference in Visual Studio WPF project. The following steps will help to add through `XAML` Code,
 
-1) Create a WPF project in Visual Studio and add the `Syncfusion.SfSkinManager.WPF` assembly or nuget package [reference](https://help.syncfusion.com/wpf/control-dependencies#skinmanager) to the project.
+1) Add reference to `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
 2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
 
 ![Add SfSkinManager Reference](Skin-Manager_images/Skin-Manager_img1.png)
@@ -203,14 +229,16 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 ### Add theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports various built-in themes mentioned above. The corresponding style resources are included with the specific theme assemblies. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly reference to the project. Similarly, refer the required theme assemblies or nuget packages [reference](https://help.syncfusion.com/wpf/control-dependencies#sfskinmanager-dependencies) with the project when needed.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window.
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
 
 ### Set visual style
 
-Any built-in themes can applied to both syncfusion controls and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). All built-in assemblies have style resources for controls, so whenever an application get its style through `SfSkinManager`, the corresponding control style merges with the applied controls resource dictionary. For example, apply the value as `MaterialDark` to the `VisualStyle` property of the `SfSkinManager` for the [ChromelessWindow](https://help.syncfusion.com/wpf/chromeless-window/getting-started) control containing [DataGrid](https://help.syncfusion.com/wpf/datagrid/getting-started).
+Themes will be applied to both syncfusion and framework controls by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager~VisualStyleProperty.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). The theme assemblies have resource dictionaries with styles of controls. So, when you set `VisualStyle` property, the skin manager merges the theme resource dictionaries of an element to which theme applied and its descendants into the resource dictionary of the element to which theme is applied or `Application.Current.Resource`.
+
+N> When you are applying theme to a Window or any element, `SkinManager` inherits the same theme to all its descendants.
 
 {% tabs %}
 
@@ -222,26 +250,10 @@ Any built-in themes can applied to both syncfusion controls and framework contro
                              xmlns:local="clr-namespace:DataGrid_Themes"
                              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-							 syncfusionskin:SfSkinManager.VisualStyle="MaterialDark"
                              Icon="App.ico"
                              Title="Getting Started"
-                             WindowStartupLocation="CenterScreen">
-
-    <syncfusion:ChromelessWindow.Resources>
-        <local:ViewModel x:Key="viewmodel" />
-        <local:SelectedImageConverter x:Key="selectedImageConverter"/>
-        <local:StatusConverter        x:Key="statusConverter"/>
-        <local:TrustImageConverter    x:Key="trustImageConverter"/>
-        <Style TargetType="syncfusion:SfRatingItem">
-            <Setter Property="Padding" Value="1" />
-            <Setter Property="Height" Value="20" />
-            <Setter Property="Width" Value="22" />
-        </Style> 
-        <Style TargetType="syncfusion:SfRating">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
-    </syncfusion:ChromelessWindow.Resources>
+                             WindowStartupLocation="CenterScreen"
+                             syncfusionskin:SfSkinManager.VisualStyle="MaterialDark">
 
     <Grid DataContext="{StaticResource viewmodel}">
         <syncfusion:SfDataGrid Name="sfgrid" Margin="5"
@@ -254,108 +266,6 @@ Any built-in themes can applied to both syncfusion controls and framework contro
                                        SelectionMode="Extended"
                                        ColumnSizer="Auto"
                                        ItemsSource="{Binding EmployeeDetails}">
-            <syncfusion:SfDataGrid.Columns>
-                <syncfusion:GridCheckBoxSelectorColumn  MappingName="Selected" AllowFiltering="False" Width="30"
-                                                                AllowSorting="False"   AllowCheckBoxOnHeader="True"/>
-                <syncfusion:GridTemplateColumn  MappingName="EmployeeName" Padding="2"
-                                                        HeaderText="Employee Name">
-                    <syncfusion:GridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Grid Margin="3">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition  Width="15"/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <Image Source="{Binding Gender,
-                                                                Converter={StaticResource selectedImageConverter}}" 
-                                               Height="15"      Width="15"       Grid.Column="0"/>
-                                <TextBlock Text="{Binding EmployeeName}" Padding="4" 
-                                                   VerticalAlignment="Center"    Grid.Column="1"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.CellTemplate>
-                </syncfusion:GridTemplateColumn>
-                <syncfusion:GridTextColumn  MappingName="Designation" HeaderText="Designation"/>
-                <syncfusion:GridTextColumn  MappingName="Mail"        HeaderText="Mail"/>
-                <syncfusion:GridTemplateColumn MappingName="Location" Width="100"
-                                                       HeaderText="Location">
-                    <syncfusion:GridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Grid Margin="3">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition  Width="15"/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <Image Source="Images/location.png"   Height="15"
-                                               Grid.Column="0"                Width="15"/>
-                                <TextBlock Text="{Binding Location}"  Padding="4" 
-                                                   VerticalAlignment="Center" Grid.Column="1"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.CellTemplate>
-                </syncfusion:GridTemplateColumn>
-                <syncfusion:GridTemplateColumn MappingName="Status" Width="90" HeaderText="Status">
-                    <syncfusion:GridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock  Foreground="{Binding Status,
-                                                                     Converter={StaticResource statusConverter}}"
-                                                Padding="3"          Text="{Binding Status}"/>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.CellTemplate>
-                    <syncfusion:GridTemplateColumn.EditTemplate>
-                        <DataTemplate>
-                            <syncfusion:ComboBoxAdv SelectedValue="{Binding Status}" ItemsSource="{Binding Status, Source={StaticResource viewmodel}}"/>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.EditTemplate>
-                </syncfusion:GridTemplateColumn>
-                <syncfusion:GridTemplateColumn MappingName="Trustworthiness" HeaderText="Trust Worthiness">
-                    <syncfusion:GridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Grid Margin="3">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition  Width="15"/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <Image Source="{Binding Trustworthiness,
-                                                                Converter={StaticResource trustImageConverter}}"
-                                               Height="15"      Width="15"          Grid.Column="0"/>
-                                <TextBlock Text="{Binding Trustworthiness}" Padding="4" 
-                                                   VerticalAlignment="Center"       Grid.Column="1"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.CellTemplate>
-                    <syncfusion:GridTemplateColumn.EditTemplate>
-                        <DataTemplate>
-                            <syncfusion:ComboBoxAdv SelectedValue="{Binding Trustworthiness}"  ItemsSource="{Binding Trustworthiness, Source={StaticResource viewmodel}}"/>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.EditTemplate>
-                </syncfusion:GridTemplateColumn>
-                <syncfusion:GridTemplateColumn MappingName="Rating" Width="130">
-                    <syncfusion:GridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <syncfusion:SfRating VerticalAlignment="Center" ItemsCount="5" ShowToolTip="False"
-                                                         Value="{Binding Rating, Mode=TwoWay}"/>
-                        </DataTemplate>
-                    </syncfusion:GridTemplateColumn.CellTemplate>
-                </syncfusion:GridTemplateColumn>
-                <syncfusion:GridTextColumn  Width="90" DisplayBinding="{Binding Path=Salary,
-                                                                             StringFormat='{}{0:C}'}"   
-                                                    TextAlignment="Right"    HeaderText="Salary"/>
-                <syncfusion:GridTextColumn MappingName="Address" HeaderText="Address"/>
-                <syncfusion:GridPercentColumn HeaderText="Software Proficiency" AllowEditing="False"
-                                                      MappingName="SoftwareProficiency">
-                    <syncfusion:GridPercentColumn.CellTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <ProgressBar Background="Transparent" BorderThickness="0" Maximum=".99"
-                                                     Value="{Binding SoftwareProficiency,StringFormat=P}"/>
-                                <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                     Text="{Binding SoftwareProficiency, StringFormat=P}"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:GridPercentColumn.CellTemplate>
-                </syncfusion:GridPercentColumn>
-            </syncfusion:SfDataGrid.Columns>
         </syncfusion:SfDataGrid>
     </Grid>
 </syncfusion:ChromelessWindow>
@@ -372,13 +282,13 @@ SfSkinManager.SetVisualStyle(this, "MaterialDark");
 
 ![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Skin-Manager_img3.jpg)
 
-N> View [sample](https://github.com/SyncfusionExamples/set-visualstyle-using-skinmanager) in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
 ## Apply a theme globally in the application
 
-By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the applied control. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the resource files to the application’s resource dictionary.
+By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the element to which theme is applied. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the theme resource files to `Application.Current.Resources`.
 
-N> The value of the `ApplyStylesOnApplication` property should be set before the initialization and should not be set dynamically.
+N> The `SfSkinManager.ApplyStylesOnApplication` static property should be set before `InitializeComponent` of window or in application start up, if you are applying for multiple windows. 
 
 {% tabs %}
 
@@ -390,9 +300,9 @@ SfSkinManager.ApplyStylesOnApplication = true;
 
 {% endtabs %}
 
-## Apply style to custom controls
+## Apply themes to the controls derived from syncfusion controls
 
-To apply the built-in themes to derived control using `SfSkinManager`, call the [SetResourceReference](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference) method and pass the `StyleProperty` and derived control type as parameters. 
+To apply the themes to derived control using `SfSkinManager`, call [SetResourceReference](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.setresourcereference) method and pass the `StyleProperty` and derived control type as parameters. 
 
 {% tabs %}
 
@@ -461,7 +371,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 ### Change visual style at runtime
 
-The built-in themes can be changed at runtime using the `VisualStyle` property. The various controls can be used to switch built-in themes at run time. Please refer to the below snippet for changing the visual style at runtime and their corresponding built-in themes added as a reference to the project.
+Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure the new theme assembly is attached as reference in application when applying theme.
 
 ![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.jpg)
 
@@ -469,32 +379,16 @@ The built-in themes can be changed at runtime using the `VisualStyle` property. 
 
 {% highlight XAML %}
 
-syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                              xmlns:local="clr-namespace:DataGrid_Themes"
                              xmlns:system="clr-namespace:System;assembly=mscorlib"
                              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-							 syncfusionskin:SfSkinManager.VisualStyle="{Binding ElementName=comboVisualStyle, Path=SelectedValue, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
-                             Icon="App.ico"
-                             Title="Getting Started"
-                             WindowStartupLocation="CenterScreen">
+							 syncfusionskin:SfSkinManager.VisualStyle="{Binding ElementName=comboVisualStyle, Path=SelectedValue, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
 
     <syncfusion:ChromelessWindow.Resources>
-        <local:ViewModel x:Key="viewmodel" />
-        <local:SelectedImageConverter x:Key="selectedImageConverter"/>
-        <local:StatusConverter        x:Key="statusConverter"/>
-        <local:TrustImageConverter    x:Key="trustImageConverter"/>
-        <Style TargetType="syncfusion:SfRatingItem">
-            <Setter Property="Padding" Value="1" />
-            <Setter Property="Height" Value="20" />
-            <Setter Property="Width" Value="22" />
-        </Style> 
-        <Style TargetType="syncfusion:SfRating">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
-        </Style>
         <ObjectDataProvider
             x:Key="Themes"
             MethodName="GetValues"
@@ -517,6 +411,7 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                 Margin="5"
                 ItemsSource="{Binding Source={StaticResource Themes}}"
                 SelectedIndex="18" />
+                
         <Grid Grid.Row="1" DataContext="{StaticResource viewmodel}">
             <syncfusion:SfDataGrid Name="sfgrid" Margin="5"
                                        AutoGenerateColumns="False"
@@ -528,108 +423,7 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
                                        SelectionMode="Extended"
                                        ColumnSizer="Auto"
                                        ItemsSource="{Binding EmployeeDetails}">
-                <syncfusion:SfDataGrid.Columns>
-                    <syncfusion:GridCheckBoxSelectorColumn  MappingName="Selected" AllowFiltering="False" Width="30"
-                                                                AllowSorting="False"   AllowCheckBoxOnHeader="True"/>
-                    <syncfusion:GridTemplateColumn  MappingName="EmployeeName" Padding="2"
-                                                        HeaderText="Employee Name">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="{Binding Gender,
-                                                                Converter={StaticResource selectedImageConverter}}" 
-                                               Height="15"      Width="15"       Grid.Column="0"/>
-                                    <TextBlock Text="{Binding EmployeeName}" Padding="4" 
-                                                   VerticalAlignment="Center"    Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTextColumn  MappingName="Designation" HeaderText="Designation"/>
-                    <syncfusion:GridTextColumn  MappingName="Mail"        HeaderText="Mail"/>
-                    <syncfusion:GridTemplateColumn MappingName="Location" Width="100"
-                                                       HeaderText="Location">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="Images/location.png"   Height="15"
-                                               Grid.Column="0"                Width="15"/>
-                                    <TextBlock Text="{Binding Location}"  Padding="4" 
-                                                   VerticalAlignment="Center" Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Status" Width="90" HeaderText="Status">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock  Foreground="{Binding Status,
-                                                                     Converter={StaticResource statusConverter}}"
-                                                Padding="3"          Text="{Binding Status}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                        <syncfusion:GridTemplateColumn.EditTemplate>
-                            <DataTemplate>
-                                <syncfusion:ComboBoxAdv SelectedValue="{Binding Status}" ItemsSource="{Binding Status, Source={StaticResource viewmodel}}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.EditTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Trustworthiness" HeaderText="Trust Worthiness">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid Margin="3">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="15"/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image Source="{Binding Trustworthiness,
-                                                                Converter={StaticResource trustImageConverter}}"
-                                               Height="15"      Width="15"          Grid.Column="0"/>
-                                    <TextBlock Text="{Binding Trustworthiness}" Padding="4" 
-                                                   VerticalAlignment="Center"       Grid.Column="1"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                        <syncfusion:GridTemplateColumn.EditTemplate>
-                            <DataTemplate>
-                                <syncfusion:ComboBoxAdv SelectedValue="{Binding Trustworthiness}"  ItemsSource="{Binding Trustworthiness, Source={StaticResource viewmodel}}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.EditTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTemplateColumn MappingName="Rating" Width="130">
-                        <syncfusion:GridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <syncfusion:SfRating VerticalAlignment="Center" ItemsCount="5" ShowToolTip="False"
-                                                         Value="{Binding Rating, Mode=TwoWay}"/>
-                            </DataTemplate>
-                        </syncfusion:GridTemplateColumn.CellTemplate>
-                    </syncfusion:GridTemplateColumn>
-                    <syncfusion:GridTextColumn  Width="90" DisplayBinding="{Binding Path=Salary,
-                                                                             StringFormat='{}{0:C}'}"   
-                                                    TextAlignment="Right"    HeaderText="Salary"/>
-                    <syncfusion:GridTextColumn MappingName="Address" HeaderText="Address"/>
-                    <syncfusion:GridPercentColumn HeaderText="Software Proficiency" AllowEditing="False"
-                                                      MappingName="SoftwareProficiency">
-                        <syncfusion:GridPercentColumn.CellTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <ProgressBar Background="Transparent" BorderThickness="0" Maximum=".99"
-                                                     Value="{Binding SoftwareProficiency,StringFormat=P}"/>
-                                    <TextBlock   HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                     Text="{Binding SoftwareProficiency, StringFormat=P}"/>
-                                </Grid>
-                            </DataTemplate>
-                        </syncfusion:GridPercentColumn.CellTemplate>
-                    </syncfusion:GridPercentColumn>
-                </syncfusion:SfDataGrid.Columns>
+             
             </syncfusion:SfDataGrid>
         </Grid>
     </Grid>
@@ -639,4 +433,4 @@ syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
 
 {% endtabs %}
 
-N> View [sample](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager) in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
