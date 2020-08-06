@@ -566,6 +566,7 @@ The following are the built-in categories being available in the diagram resourc
 * UMLUseCase
 * UMLRelationship
 * ElectricalShapes
+* SwimlaneShapes
 
 {% tabs %}
 {% highlight xaml %}

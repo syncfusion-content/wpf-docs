@@ -68,7 +68,7 @@ The following table explains how to navigating the carousel item using keyboard,
 </tr>
 </table>
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
 ## Navigate carousel item using mouse wheel
 
@@ -76,7 +76,7 @@ You can navigate to the previous or next item one by one from the currently sele
 
 ![Navigate carousel item using mouse wheel](Scrolling_images/Mousewheel.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
 ## Navigate using commands
 
@@ -127,7 +127,7 @@ You can easily navigate to the first, last, previous or next items and also prev
 </tr>
 </table>
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
 ## Looping items
 
@@ -206,6 +206,6 @@ Carousel.VisualMode = VisualMode.CustomPath;
 
 ![Circular scroll carousel item](Scrolling_images/EnableLooping.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling) 
 
 

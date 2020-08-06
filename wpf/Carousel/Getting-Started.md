@@ -1,167 +1,186 @@
 ---
 layout: post
-title: Getting Started | Carousel | WPF | Syncfusion
-description: This section describes how to add carousel control into wpf application and its basic features.
+title: About WPF Carousel control | Syncfusion
+description: This section describes about how to add the carousel control into wpf application and its basic features.
 platform: WPF
 control: Carousel
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with WPF Carousel
+
+This section explains how to create a WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel.html) and explains about its structure.
+
+## Structure of Carousel
+
+![Structure of WPF Carousel with Carousel](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#carousel) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#carousel) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
+Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+## Adding WPF Carousel via designer
 
-## Creating a simple application with Carousel
+1) The `Carousel` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-You can create a WPF application with Carousel control using the following steps:
+* Syncfusion.Shared.WPF
 
-1.	[Create a project.](#creating-a-project)
-2.	[Add control via designer.](#adding-control-via-designer)
-3.	[Add control manually in XAML.](#adding-contro-manually-in-xaml)
-4.	[Add control manually in C#.](#adding-control-manually-in-c)
-5.	[Add items using CarouselItem.](#adding-items-using-carouselitem)
-6.	[Bind to data.](#binding-to-data)
-7.	[Set scaling to Carousel view.](#scale-view)
-8.	[Rotate Carousel items.](#rotation-view)
+![wpf Carousel control added by designer](Getting-Started_images/wpf-carousel-control-added-by-designer.png)
 
-## Creating a project
+2) Set the properties for `Carousel` in design mode using the SmartTag feature.
 
-Create a new WPF project in Visual Studio to display the Carousel with functionalities.
+## Adding WPF Carousel via XAML
 
-## Adding control via designer
+To add the `Carousel` manually in XAML, follow these steps:
 
-The Carousel control can be added to an application by dragging it from the toolbox to a designer view. The required assembly references will be added automatically.
+1) Create a new WPF project in Visual Studio.
 
-![wpf carousel control added by designer](Getting-Started_images/wpf-carousel-control-added-by-designer.png)
+2) Add the following required assembly references to the project:
 
-## Adding control manually in XAML
+* Syncfusion.Shared.WPF
 
-To add control manually in XAML, follow the given steps:
-
-1.	Add the following required assembly references to the project: 
-    * Syncfusion.Shared.WPF.
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
-3.	Declare the Carousel control in XAML page.
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the Carousel in XAML page.
 
 {% tabs %}
+
 {% highlight XAML %}
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+<Window x:Class="Carousel_sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-        x:Class="CarouselSample.MainWindow"
-        Title="Carousel Sample" Height="350" Width="525">
-    <Grid>
-         <!--Adding Carousel control -->
-        <syncfusion:Carousel x:Name="carousel" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Carousel_sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Name="grid">
+        <syncfusion:Carousel Name="carousel"
+                             Height="200"
+                             Width="200"/>
     </Grid>
 </Window>
+
 {% endhighlight %}
 {% endtabs %}
 
-## Adding control manually in C\#
+## Adding WPF Carousel via C#
 
-To add control manually in C#, follow the given steps:
+To add the `Carousel` manually in C#, follow these steps:
 
-1.	Add the following required assembly references to the project: 
-    * Syncfusion.Shared.WPF. 
-2.	Import Carousel namespace **using Syncfusion.Windows.Shared;**.
-3.	Create a Carousel instance, and add it to the window.
+1) Create a new WPF application via Visual Studio.
+
+2) Add the following required assembly references to the project:
+
+* Syncfusion.Shared.WPF
+
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
-using Syncfusion.Windows.Shared
-namespace CarouselSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-			InitializeComponent();
-			//Creating an instance of Carousel control
-			Carousel carousel = new Carousel();
-			//Adding Carousel as window content
-			this.Content = carousel;
-        }
-    } 
-}
+
+using Syncfusion.Windows.Shared;
+
 {% endhighlight %}
 {% endtabs %}
 
-## Adding items using CarouselItem
+4) Create an instance of `Carousel`, and add it to the window.
 
-You can add the carousel items inside the control using the [CarouselItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CarouselItem.html).
+{% tabs %}
+{% highlight C# %}
+
+// Creating an instance of the Carousel
+Carousel carousel = new Carousel();
+
+// Setting height and width to Carousel
+carousel.Height = 200;
+carousel.Width = 260;
+
+{% endhighlight %}
+{% endtabs %}
+
+![wpf Carousel control added by code-behind](Getting-Started_images/Codebehind_Carousel.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
+
+## Populating items using CarouselItem
+
+You can add the carousel items inside the control using the [CarouselItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CarouselItem.html) property.
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/Buchanan.png"/>
- 			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/Callahan.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/Davolio-1.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/Callahan.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/dodsworth.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/Fuller.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-				<Image Source="Images/King.png"/>
-    		</Viewbox>
-		</syncfusion:CarouselItem.Content>
-	</syncfusion:CarouselItem>
-	<syncfusion:CarouselItem>
-		<syncfusion:CarouselItem.Content>
-			<Viewbox Height="100" Width="100">
-        		<Image Source="Images/Leverling.png"/>
-			</Viewbox>
-		</syncfusion:CarouselItem.Content>
+
+<syncfusion:Carousel x:Name="carousel" 
+                     Height="700" Width="500">
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Buchanan.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Callahan.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Davolio-1.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Callahan.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/dodsworth.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Fuller.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/King.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="Images/Leverling.png"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 </syncfusion:Carousel>
+
 {% endhighlight %}
 {% highlight C# %}
-Carousel carousel = new Carousel() { Margin=40, RadiusX = 220, RadiusY = -100, ScaleFraction=0.60 };
+
+Carousel carousel = new Carousel()
+{ 
+	Width=700, 
+	Height = 500
+};
 
 Image image = new Image();
 Image image1 = new Image();
@@ -189,72 +208,48 @@ image4.Source = bitimg5 as ImageSource;
 image5.Source = bitimg6 as ImageSource;
 image6.Source = bitimg7 as ImageSource;
 image7.Source = bitimg8 as ImageSource;
+          
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image1 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image2 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image3 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image4 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image5 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image6 }});
+carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image7 }});
 
-Viewbox viewbox1 = new Viewbox();
-Viewbox viewbox2 = new Viewbox();
-Viewbox viewbox3 = new Viewbox();
-Viewbox viewbox4 = new Viewbox();
-Viewbox viewbox5 = new Viewbox();
-Viewbox viewbox6 = new Viewbox();
-Viewbox viewbox7 = new Viewbox();
-Viewbox viewbox8 = new Viewbox();
-
-viewbox1.Child = image;
-viewbox2.Child = image1;
-viewbox3.Child = image2;
-viewbox4.Child = image3;
-viewbox5.Child = image4;
-viewbox6.Child = image5;
-viewbox7.Child = image6;
-viewbox8.Child = image7;
-            
-carousel.Items.Add(new CarouselItem() { Content = viewbox1 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox2 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox3 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox4 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox5 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox6 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox7 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox8 });
 {% endhighlight %}
 {% endtabs %}
 
-![wpf carousel items](Getting-Started_images/wpf-carousel-item.jpeg)
+![Carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
 
-## Binding to data
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
-You can bind to a business object collection using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) and ItemTemplate properties of Carousel control. Refer to  the [Data binding](https://help.syncfusion.com/wpf/carousel/data-binding) section for more details.
+## Populating items using collection binding
 
-* **Model.cs**
+You can populate items to the `Carousel` control by setting the collection value to the `ItemsSource` property. 
 
 {% tabs %}
 {% highlight C# %}
-public class CarouselModel
-{
-	private string header;
-	public string Header
-	{
-		get { return header; }
-		set { header = value; }
-	}
+
+//Model.cs
+public class CarouselModel {
+	public string Header { get; set; }
 }
-{% endhighlight %}
-{% endtabs %}
 
-* **ViewModel.cs**
-
-{% tabs %}
-{% highlight C# %}
-public class ViewModel
-{
+//ViewModel.cs
+public class ViewModel {
 	private ObservableCollection<CarouselModel> collection;
 	public ObservableCollection<CarouselModel> HeaderCollection
 	{
-		get { return collection; }
-		set { collection = value; }
+		get {
+			return collection;
+		}
+		set {
+			collection = value;
+		}
 	}
-	public ViewModel()
-	{
+	public ViewModel() {
 		HeaderCollection = new ObservableCollection<CarouselModel>();
 		HeaderCollection.Add(new CarouselModel() { Header = "Buchanan" });
 		HeaderCollection.Add(new CarouselModel() { Header = "Callahan" });
@@ -266,61 +261,319 @@ public class ViewModel
 		HeaderCollection.Add(new CarouselModel() { Header = "Suyama" });
 	}
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-* **MainWindow.Xaml**
-
 {% tabs %}
 {% highlight XAML %}
+
 <Window.DataContext>
     <local:ViewModel/>
 </Window.DataContext>
 
-<syncfusion:Carousel Name="Carousel" ItemsSource="{Binding HeaderCollection}" VerticalAlignment="Center" HorizontalAlignment="Center"> 
-    <syncfusion:Carousel.ItemTemplate>
-        <DataTemplate>
-            <Border Height="50" Width="100" BorderBrush="Purple" BorderThickness="5" Background="LightBlue">
-                <TextBlock Text="{Binding Header}"/>
-            </Border>
-        </DataTemplate>
-    </syncfusion:Carousel.ItemTemplate>
-</syncfusion:Carousel>
+<Grid>
+    <syncfusion:Carousel Name="Carousel"
+                         ItemsSource="{Binding HeaderCollection}">
+        <syncfusion:Carousel.ItemTemplate>
+            <DataTemplate>
+                <Border Height="50" 
+                        Width="100" 
+                        BorderBrush="Purple" 
+                        BorderThickness="5"
+                        Background="LightBlue">
+                    <TextBlock HorizontalAlignment="Center" 
+                               VerticalAlignment="Center" 
+                               Text="{Binding Header}"/>
+                </Border>
+            </DataTemplate>
+        </syncfusion:Carousel.ItemTemplate>
+    </syncfusion:Carousel>
+</Grid>
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf carousel control data binding](Getting-Started_images/wpf-carousel-item-binding.png)
+![Carousel items populated by using the collection binding](Getting-Started_images/wpf-carousel-item-binding.png)
 
-## Scale view
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
-You can set scaling view to the carousel items by setting the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScaleFraction.html) property of the Carousel control.
+## Select carousel item
+
+You can select a carousel item by mouse click on the specific item. You can get the selected item and its value by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedItem.html) and [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedValue.html) properties. You can also get the selected item index by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedIndex.html) property. You can only select a single item at a time.
+
+### Select carousel item programmatically using property
+
+You can select a particular carousel item programmatically by using the [CarouselItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CarouselItem~IsSelected.html) property.
 
 {% tabs %}
 {% highlight XAML %}
-<!--Setting scale view -->
-<syncfusion:Carousel x:Name="carousel" ScalingEnabled="True" ScaleFraction="0.50"/>
-{% endhighlight %}
-{% highlight C# %}
-//Setting scale view 
-carousel. ScaleFraction =0.50;
+
+<Window.Resources>
+    <Style x:Key="selecteditemStyle" TargetType="syncfusion:CarouselItem" >
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Foreground" Value="Red"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</Window.Resources>
+<Grid>
+    <syncfusion:Carousel ItemContainerStyle="{StaticResource selecteditemStyle}" 
+                         x:Name="carousel">
+        <syncfusion:CarouselItem Content="Item1"/>
+        <syncfusion:CarouselItem Content="Item2"/>
+        <syncfusion:CarouselItem Content="Item3" IsSelected="True"/>
+        <syncfusion:CarouselItem Content="Item4"/>
+        <syncfusion:CarouselItem Content="Item5"/>
+    </syncfusion:Carousel>
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf carousel control scale view](Getting-Started_images/wpf-carousel-scaling-view.png)
+![Particular carousel item selected using IsSelected property](Getting-Started_images/IsSelected.png)
 
-## Rotation view
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
-You can rotate the carousel items by setting the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationAngle.html) property of the Carousel control.
+### Select carousel item programmatically using command and methods
+
+You can select a previous, next, first or last carousel items programmatically by using the commands and methods.
+
+* [SelectFirstItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectFirstItemCommand.html) or [SelectFirstItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectFirstItem().html) - To select the first item.
+
+* [SelectLastItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectLastItemCommand.html) or [SelectLastItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectLastItem().html) - To select the last item.
+
+* [SelectPreviousItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectPreviousItemCommand.html) or [SelectPreviousItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectPreviousItem().html) - To select the previous item from the currently selected item
+
+* [SelectNextItemCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectNextItemCommand.html) or [SelectNextItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectNextItem().html) - To select the next item from the currently selected item.
+
+* [SelectPreviousPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectPreviousPageCommand.html) or [SelectPreviousPage()](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectPreviousPage().html) - To select the previous page item.
+
+* [SelectNextPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectNextPageCommand.html) or [SelectNextPage()](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectNextPage().html) - To select the next page item.
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
+
+## Rotate carousel item
+
+You can place the carousel item with a specific rotation angle by using the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationAngle.html) property. You can change the rotation speed of the carousel items by using the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationSpeed.html) property. You can also disable the rotate animation by using the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableRotationAnimation.html) property value as `false`. The default value of `RotationAngle` property is `0` and `RotationSpeed` property is `200` and `EnableRotationAnimation` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
-<!--Rotation view -->
-<syncfusion:Carousel x:Name="carousel" VerticalAlignment="Center" HorizontalAlignment="Center" RotationAngle="180"/>
+
+<syncfusion:Carousel RotationAngle="180" 
+                     RotationSpeed="500" 
+                     EnableRotationAnimation="True"
+                     Name="carousel" />
+
 {% endhighlight %}
 {% highlight C# %}
-//Rotation view
-carousel.RotationAngle=180;
+
+carousel.RotationAngle = 180;
+carousel.RotationSpeed = 500;
+carousel.EnableRotationAnimation = true;
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf carousel control rotation view](Getting-Started_images/wpf-carousel-rotation-view.png)
+![Carousel items rotated with 25 degree angle](Getting-Started_images/Rotating.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
+
+## Resize the carousel items
+
+If you want reduce the size of the carousel items except the selected item, use the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScaleFraction.html) property. The default value `ScaleFraction` property is `0`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel ScaleFraction="0.50"
+                     Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel. ScaleFraction = 0.50;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Size reduced for the next and previous items of the selected item](Getting-Started_images/wpf-carousel-scaling-view.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
+
+## Change radius of carousel item
+
+You can change the radius of the `Carousel` control by setting the value to the [RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusX.html) and [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusY.html) properties. Based on the radius points , items are arranged. The default value of `RadiusX` property is `250` and `RadiusY` property is `150`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel RadiusX="100" 
+                     RadiusY="100"
+                     Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel.RadiusX = 100;
+carousel.RadiusY = 100;
+
+{% endhighlight %}
+{% endtabs %}
+
+![The radius of the carousel control changed](Getting-Started_images/radius.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
+
+## Change display path
+
+By default, carousel items are arranged in a circular path. If you want to customize the display path of carousel item, use the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~VisualMode.html) property value as `CustomPath`. The default value of `VisualMode` property is `Standard`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel VisualMode="CustomPath"
+                     Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel.VisualMode = VisualMode.CustomPath;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel items visual path customized to U shape](Getting-Started_images/VisualMode.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
+
+## Change display item count
+
+You can change the number of carousel items displayed in the `Carousel` control by using the [ItemsPerPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ItemsPerPage.html) property. `ItemsPerPage` is  effective only on `CustomPath` view mode. The default value of `ItemsPerPage` property is `-1`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel ItemsPerPage="3"
+                     VisualMode="CustomPath"
+                     Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel.ItemsPerPage = 3;
+carousel.VisualMode = VisualMode.CustomPath;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Number of items displayed in the Carousel control is reduced](Getting-Started_images/ItemsPerPage.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
+
+## Custom UI of carousel item
+
+You can customize the appearance of each carousel item by using the `ItemTemplate` property. If you want to change the appearance of particular carousel item appearance, use `ItemTemplateSelector` property. The `DataContext` of the `ItemTemplate` property is `CarouselItem`.
+
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+public class CarouselModel {
+	public string Header { get; set; }
+}
+
+//ViewModel.cs
+public class ViewModel {
+	private ObservableCollection<CarouselModel> collection;
+	public ObservableCollection<CarouselModel> HeaderCollection	{
+		get {
+			return collection;
+		}
+		set {
+			collection = value;
+		}
+	}
+	public ViewModel() {
+		HeaderCollection = new ObservableCollection<CarouselModel>();
+		HeaderCollection.Add(new CarouselModel() { Header = "Buchanan" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Callahan" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Davolio" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Dodsworth" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Fuller" });
+		HeaderCollection.Add(new CarouselModel() { Header = "King" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Leverling" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Suyama" });
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
+
+<Grid>
+    <syncfusion:Carousel ItemsSource="{Binding HeaderCollection}"
+                         ScaleFraction="0.5"
+                         Name="carousel" >
+        <syncfusion:Carousel.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Ellipse Width="200" Height="100" 
+                             Stroke="Green" 
+                             StrokeThickness="4"
+                             Fill="Yellow"/>
+                    <TextBlock HorizontalAlignment="Center" 
+                               VerticalAlignment="Center" 
+                               Text="{Binding Header}"/>
+                </Grid>
+            </DataTemplate>
+        </syncfusion:Carousel.ItemTemplate>
+    </syncfusion:Carousel>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom UI of carousel item using ItemTemplate](customization_images/ItemTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
+
+## Selected item changed notification
+
+The selected item changed in `Carousel` can be examined using [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectionChanged_EV.html) event. The `SelectionChanged` event contains the old and newly selected item in the `OldValue` and `NewValue` properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+ <syncfusion:Carousel SelectionChanged="Carousel_SelectionChanged" 
+                      Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+Carousel carousel = new Carousel();
+carousel.SelectionChanged += Carousel_SelectionChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void Carousel_SelectionChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new selected carousel item
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
+
+{% endhighlight %}
+{% endtabs %}

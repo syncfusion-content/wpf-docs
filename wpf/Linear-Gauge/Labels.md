@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Labels | SfLinearGauge | Wpf | Syncfusion
-description: Labels 
+description: This section describes Labels support with its customization by using LabelStroke, LabelSize and other properties in WPF SfLinearGauge control.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Labels
+# Labels support in WPF Linear Gauge (SfLinearGauge)
 
 `Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 
 ## Label color customization
 
-The foreground of the label is customized by setting the `LabelStroke` of the linear scale.
+The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelStroke.html) of the linear scale.
 
 {% tabs %}
 
@@ -58,11 +58,11 @@ The foreground of the label is customized by setting the `LabelStroke` of the li
 
 {% endtabs %}
 
-![](Labels_images/Labels_img1.png)
+![Linear Gauge Labels with color customization](Labels_images/Labels_img1.png)
 
 ## Label font customization
 
-The label font can be customized using the `LabelSize`, `FontFamily`, and `FontStyle` properties. The labels can be positioned far away from the ticks using the `LabelOffset` property.
+The label font can be customized using the [`LabelSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelSize.html), `FontFamily`, and `FontStyle` properties. The labels can be positioned far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelOffset.html) property.
 
 {% tabs %}
 
@@ -116,11 +116,11 @@ The label font can be customized using the `LabelSize`, `FontFamily`, and `FontS
 
 {% endtabs %}
 
-![](Labels_images/Labels_img2.png)
+![Linear Gauge Labels with size customization](Labels_images/Labels_img2.png)
 
 ## Setting position for labels
 
-The labels in the scale can be placed above or below the linear scale by choosing the following options available in the `LabelPosition` property. The default value of `LabelPosition` property is below.
+The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPosition.html) property. The default value of `LabelPosition` property is below.
 
 1.	Above
 
@@ -134,7 +134,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
     <gauge:SfLinearGauge.MainScale>
 
-    <gauge:LinearScale LabelPosition="Above"ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+    <gauge:LinearScale LabelPosition="Above" ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
     MinorTickStroke="Gray" LabelStroke="#424242"  ScaleBarSize="10" MinorTicksPerInterval="3" />
 
     </gauge:SfLinearGauge.MainScale>
@@ -169,11 +169,11 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 {% endtabs %}
 
-![](Labels_images/Labels_img3.png)
+![Linear Gauge Labels with position customization](Labels_images/Labels_img3.png)
 
 ## Setting postfix and prefix for labels
 
-You can postfix and prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
+You can postfix and prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPrefix.html) properties, respectively.
 
 ### Setting label postfix
 
@@ -187,8 +187,10 @@ The `LabelPostfix` property allows to postfix the values to scale labels.
 
     <gauge:SfLinearGauge.MainScale>
 
-    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPostfix="%" Interval="10" ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
-    ScaleBarSize="10" MinorTicksPerInterval="0" />
+    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPostfix="%" Interval="10" 
+                       ScaleBarStroke="#E0E0E0" 
+                       MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
+                       ScaleBarSize="10" MinorTicksPerInterval="0" />
 
     </gauge:SfLinearGauge.MainScale>
 
@@ -228,7 +230,7 @@ The `LabelPostfix` property allows to postfix the values to scale labels.
 
 {% endtabs %}
 
-![](Labels_images/Labels_img4.png)
+![Linear Gauge Labels with postfix](Labels_images/Labels_img4.png)
 
 ### Setting label prefix
 
@@ -242,9 +244,10 @@ The `LabelPrefix` property allows to prefix the values to scale labels.
 
     <gauge:SfLinearGauge.MainScale>
 
-    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPrefix="$" Interval="10"  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242" 
-    ScaleBarSize="10" MinorTicksPerInterval="0">
-
+    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPrefix="$" Interval="10"  
+                       ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" 
+                       MinorTickStroke="Gray" LabelStroke="#424242" 
+                       ScaleBarSize="10" MinorTicksPerInterval="0">
     </gauge:LinearScale>
 
     </gauge:SfLinearGauge.MainScale>
@@ -286,11 +289,11 @@ The `LabelPrefix` property allows to prefix the values to scale labels.
 
 {% endtabs %}
 
-![](Labels_images/Labels_img5.png)
+![Linear Gauge Labels with prefix](Labels_images/Labels_img5.png)
 
 ## Labels visibility
 
-Labels visibility can be customized using the `LabelVisibility` property of linear scale.
+Labels visibility can be customized using the [`LabelVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelVisibility.html) property of linear scale.
 
 {% tabs %}
 
@@ -300,10 +303,11 @@ Labels visibility can be customized using the `LabelVisibility` property of line
 
     <gauge:SfLinearGauge.MainScale>
 
-    <gauge:LinearScale TickPosition="Cross" LabelVisibility="Collapsed" MajorTickSize="20" MinorTickSize="9"
-    ScaleBarStroke="#E0E0E0" MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="#424242"
-    ScaleBarSize="40" MinorTicksPerInterval="3">
-
+    <gauge:LinearScale TickPosition="Cross" LabelVisibility="Collapsed" 
+                       MajorTickSize="20" MinorTickSize="9"
+                       ScaleBarStroke="#E0E0E0" MajorTickStroke="Black" 
+                       MinorTickStroke="Black" LabelStroke="#424242"
+                       ScaleBarSize="40" MinorTicksPerInterval="3">
     </gauge:LinearScale>
 
     </gauge:SfLinearGauge.MainScale>
@@ -344,4 +348,4 @@ Labels visibility can be customized using the `LabelVisibility` property of line
 
 {% endtabs %}
 
-![](Labels_images/Labels_img6.png)
+![Linear Gauge scale without Labels](Labels_images/Labels_img6.png)
