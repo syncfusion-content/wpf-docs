@@ -86,7 +86,7 @@ You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Sy
 
  * `DisplayErrorMessage` - Shows a MessageBox with message" String validation failed" after focus is lost from IntegerTextBox.
 
- * `None` - No behavior is implemented.
+ * `None` - Validation will not occurs.
 
  * `ResetValue` - Resets the entered value to 0 after focus is lost.
 
@@ -106,12 +106,12 @@ N> By default ValidationValue property value is String.Empty.
 
 DoubleTextBox doubleTextBox1 = new DoubleTextBox()
 {
-  Height = 30,
-  Width = 120,
-  InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage,
-  ValidationValue = "1222",
-  HorizontalAlignment = HorizontalAlignment.Center,
-  VerticalAlignment = VerticalAlignment.Center
+    Height = 30,
+    Width = 120,
+    InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage,
+    ValidationValue = "1222",
+    HorizontalAlignment = HorizontalAlignment.Center,
+    VerticalAlignment = VerticalAlignment.Center
 };
 
 {% endhighlight %}
