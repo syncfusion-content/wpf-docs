@@ -524,65 +524,77 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True"
+<syncfusion:SfChart>
+    <syncfusion:SfChart.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="tooltip">
+                <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
+                    <TextBlock Text="{Binding Item.Year2010}"
+                        Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </DataTemplate>
 
-ItemsSource="{Binding Demands}"
+            <DataTemplate x:Key="tooltip1">
+                <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
+                    <TextBlock Text="{Binding Item.Year2011}"
+                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </DataTemplate>
+        </ResourceDictionary>
+    </syncfusion:SfChart.Resources>
 
-TooltipTemplate="{StaticResource tooltip}"
+    <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
+        syncfusion:ChartTooltip.VerticalAlignment="Top" TooltipTemplate="{StaticResource tooltip}"
+        XBindingPath="Demand" YBindingPath="Year2010" />
 
-XBindingPath="Demand" YBindingPath="Year2010" />
-
-<syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-
-TooltipTemplate="{StaticResource tooltip}"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+    <syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
+        syncfusion:ChartTooltip.VerticalAlignment="Top" TooltipTemplate="{StaticResource tooltip1}"
+        ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+            
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series1 = new ColumnSeries()
-{
+    SfChart chart = new SfChart();
+    ColumnSeries series1 = new ColumnSeries()
+        {
 
-    ItemsSource = new ViewModel().Demands,
+            ItemsSource = Demands,
 
-    XBindingPath = "Demand",
+            XBindingPath = "Demand",
 
-    YBindingPath = "Year2010",
+            YBindingPath = "Year2010",
 
-    Label = "2010",
+            Label = "2010",
 
-    ShowTooltip = true,
+            ShowTooltip = true,
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
+            TooltipTemplate = chart.Resources["tooltip"] as DataTemplate,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+        };
 
-};
+    ColumnSeries series2 = new ColumnSeries()
+        {
 
-ColumnSeries series2 = new ColumnSeries()
-{
+            ItemsSource = Demands,
 
-    ItemsSource = new ViewModel().Demands,
+            XBindingPath = "Demand",
 
-    XBindingPath = "Demand",
+            YBindingPath = "Year2011",
 
-    YBindingPath = "Year2011",
+            Label = "2011",
 
-    Label = "2011",
+            ShowTooltip = true,
 
-    ShowTooltip = true,
+            TooltipTemplate = chart.Resources["tooltip1"] as DataTemplate,
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
+        };
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+    chart.Series.Add(series1);
 
-};
-
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
+    chart.Series.Add(series2);
 
 {% endhighlight %}
 
