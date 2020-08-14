@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon Merging in Syncfusion Ribbon control
-description: This section explains the options to merge two Ribbon controls.
+description: This section briefly describes the options to merge two different Ribbon controls in WPF Ribbon Merge support.
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -259,7 +259,7 @@ In the example both the Mdi parent ribbon and child view1's ribbon has ribbon ta
 
 If you change the `MergeType` of ribbon tab in child view1 as `Add`, then `Home` tab will be added as new tab like `View1 Tab2` 
 
-![](menu-merging-images/wpf-ribbon-mdi-merging2.png)
+![Changing the MergeType in Ribbon Merging](menu-merging-images/wpf-ribbon-mdi-merging2.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-and-TDI-merging)
 
@@ -310,7 +310,7 @@ In the below code, the [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf
 
 {% endtabs %}
 
-![](menu-merging-images/wpf-ribbon-merge-order.PNG)
+![Setting ribbon merge order](menu-merging-images/wpf-ribbon-merge-order.PNG)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-and-TDI-merging)
 
