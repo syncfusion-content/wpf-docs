@@ -318,8 +318,9 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-
 
 Ribbon merging can be performed in code by using [Ribbon.Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~Merge.html) method of MDI parent ribbon. Child view's ribbon should be passed as parameter to perform merge operation.
 
-Similarly, the child ribbon can be unmerged from MDI parent ribbon using [Ribbon.UnMerge]([Ribbon.Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~UnMerge.html)) method of MDI parent ribbon.
+Similarly, the child ribbon can be unmerged from MDI parent ribbon using [Ribbon.UnMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~UnMerge.html) method of MDI parent ribbon.
 
+{% tabs %}
 
 {% highlight C# %}
 
