@@ -9,7 +9,7 @@ documentation: ug
 
 # Drop-down customization 
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the `AutoComplete` control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `AutoComplete` control.
 
 ## Customize the background 
 
@@ -47,7 +47,7 @@ The default value is bottom.
 
 ### Top
 
-The drop-down list will open at the top of the control.
+The drop-down list will open at the top of the text field.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +73,7 @@ Drop-down list opening at the top.
 
 ### Bottom
 
-The drop-down list will open at the bottom of the control.
+The drop-down list will open at the bottom of the text field.
 
 {% tabs %}
 {% highlight xaml %}
@@ -98,7 +98,7 @@ Drop-down list opening at the bottom.
 
 ### None
 
-The drop-down list will not open.
+The drop-down list will show the filtered items.
 
 {% tabs %}
 {% highlight xaml %}
