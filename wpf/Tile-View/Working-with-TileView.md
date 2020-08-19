@@ -44,11 +44,13 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileView items are populated to the TileView control](Working-with-TileView_images/TileViewItem.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+
 ## Populating items using binding
 
 You can populate items to the `TileView` control by setting the collection value to the `ItemsSource` property.
 
-N> Please refer [Data Binding](https://help.syncfusion.com/wpf/tile-view/data-binding) page to know more details about binding support available in the `TileViewControl`.
+N> Please refer [Data Binding](https://help.syncfusion.com/wpf/tile-view/data-binding-support) page to know more details about binding support available in the `TileViewControl`.
 
 ## Select a TileViewItem
 
@@ -84,6 +86,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileViewItem selected by mouse click](Working-with-TileView_images/Selection.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+
 ### Select TileViewItem programmatically using property
 
 You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
@@ -116,6 +120,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 {% endtabs %}
 
 ![Particular TileViewItem selected by using IsSelected property](Working-with-TileView_images/IsSelected.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
 
 ## Selected item changed notification
 
@@ -183,6 +189,8 @@ tileViewControl.SplitterVisibility = Visibility.Visible;
 
 ![Displaying the TileViewItem splitter](Working-with-TileView_images/SplitterColor.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Custom UI of TileViewItem header
 
 You can customize the appearance of `TileViewItem` headers by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) property. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.
@@ -212,6 +220,8 @@ You can customize the appearance of `TileViewItem` headers by using the [HeaderT
 {% endtabs %}
 
 ![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
 
 ### Custom UI of specific TileViewItem header
 
@@ -246,6 +256,8 @@ You can customize the appearance of specific `TileViewItem` headers by using the
 
 ![Specific TileViewItem header panel UI changed](TileViewHeader_images/Tile_HeaderTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Specific-CustomUI)
+
 ## Custom UI of TileViewItem content
 
 You can customize the appearance of `TileViewItem` content by using the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ItemTemplate.html) property. The `DataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
@@ -279,6 +291,8 @@ You can customize the appearance of `TileViewItem` content by using the [ItemTem
 
 ![TileViewItem content UI changed](Working-with-TileView_images/ItemTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
+
 ### Custom UI of specific TileViewItem content
 
 You can customize the appearance of specific `TileViewItem` content by using the [TileViewItem.ContentTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~ContentTemplate.html) property. The `DataContext` of the `TileViewItem.ContentTemplate` property is `TileViewItem.Content`.
@@ -311,3 +325,5 @@ You can customize the appearance of specific `TileViewItem` content by using the
 {% endtabs %}
 
 ![Specific TileViewItem content UI changed](Working-with-TileView_images/Tile_ContentTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Specific-CustomUI)
