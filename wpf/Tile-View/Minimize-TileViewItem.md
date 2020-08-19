@@ -48,7 +48,8 @@ If you want to change direction of placing the minimized items, use the [Minimiz
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TileViewControl MinimizedItemsOrientation="Bottom" Name="tileViewControl" >
+<syncfusion:TileViewControl MinimizedItemsOrientation="Bottom"
+                            Name="tileViewControl" >
     <syncfusion:TileViewItem Header="Item 1" />
     <syncfusion:TileViewItem Header="Item 2" />
     <syncfusion:TileViewItem Header="Item 3" />
@@ -182,7 +183,7 @@ The `TileViewControl` notifies that the minimized state changed in the `TileView
 {% highlight XAML %}
 
 <syncfusion:TileViewControl Minimized="TileViewControl_Minimized"
-                          Name="tileViewControl" />
+                            Name="tileViewControl" />
 
 {% endhighlight %}
 {% highlight C# %}
