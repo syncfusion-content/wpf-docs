@@ -9,17 +9,17 @@ documentation: ug
 
 # Ribbon Merging for MDI Applications
 
-WPF [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows merging of `RibbonTab` and `RibbonBar` of two different Ribbon controls in MDI applications. [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html), [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) and [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html) properties helps to perform menu merging.
+WPF [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows merging of [RibbonTab](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) and [RibbonBar](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonBar.html) of two different Ribbon controls in MDI applications. [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html), [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) and [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html) properties helps to perform menu merging.
 
 In WPF, you can create MDI application using [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) control. Also, [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) controls allows to merge [RibbonTab](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbontab) and [RibbonBar](https://help.syncfusion.com/wpf/ribbon/gettingstarted#add-ribbonbar) of active child window to the [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) in parent window. 
 
 ## Creating MDI window and enabling menu merging
 
-[DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) helps to create MDI window in WPF Application. The `DocumentContainer` allows you to create MDI window and Tabbed MDI window layouts.
+[DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) helps to create MDI window in WPF Application. The [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started) allows you to create MDI window and Tabbed MDI window layouts.
 
 Follow the below steps to create simple sample to understand ribbon menu merging,
 
-1. Creating main `RibbonWindow` with `Ribbon` and [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started)
+ 1. Creating main [RibbonWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonWindow.html) with [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) and [DocumentContainer](https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started)
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Follow the below steps to create simple sample to understand ribbon menu merging
 
 {% endtabs %}
 
-2. Next, lets create two `UserControl` views with Ribbon which acts as child MDI windows.
+ 2. Next, lets create two `UserControl` views with Ribbon which acts as child MDI windows.
 
 Child View 1
 
@@ -143,7 +143,7 @@ Child View 2
 
 {% endtabs %}
 
-3. Now, add the both child view's into the `DocumentContainer` and set the the [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html) property of `DocumentContainer`.
+ 3. Now, add the both child view's into the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) and set the the [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html) property of [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html).
 
 {% tabs %}
 
@@ -187,17 +187,17 @@ Now run the application and you can see an output like this.
 
 ![WPF Ribbon in MDI Windows](menu-merging-images/wpf-ribbon-in-mdi-windows.PNG)
 
-3. Now the child view's has been added inside the `DocumentContainer`, and now lets see how to merge the child Ribbon into the parent Ribbon.
+ 4. Now the child view's has been added inside the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html), and now lets see how to merge the child Ribbon into the parent Ribbon.
 
     The merging operation performed based on [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) (`MDI` and `TDI`) property. 
 
-* [MDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The default value of [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html). In the above image child view's are in MDI mode where each view loaded inside a child window. You can merge the `Ribbon` in child view's into the MDI parent Ribbon by maximizing the MDI child window.
+* [MDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The default value of [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html). In the above image child view's are in MDI mode where each view loaded inside a child window. You can merge the [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) in child view's into the MDI parent Ribbon by maximizing the MDI child window.
 
 ![WPF Ribbon MDI Merging](menu-merging-images/wpf-ribbon-mdi-merging.png)
 
-* [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The child view's will be loaded in tabs. In this mode, the child view's ribbon of the active tab will be merged to the Mdi parent Ribbon.
+* [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html) - The child view's will be loaded in tabs. In this mode, the child view's ribbon of the active tab will be merged to the MDI parent Ribbon.
 
-In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property for `DocumentContainer` is set to `TDI`.
+In the below example the [DocumentContainer.Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property for [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) is set to [TDI](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainerMode.html).
 
 {% tabs %}
 
@@ -245,19 +245,19 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-
 
 ## Merge Type
 
-[RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) property indicates how the items in child view's ribbon are merged with Mdi parent ribbon. [MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) has following options,
+[RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) property indicates how the items in child view's ribbon are merged with MDI parent ribbon. [MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) has following options,
 
-* [Add](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html) - Adds the child view's `RibbonTab` to the Mdi parent ribbon based on [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html), even if Mdi parent has `RibbonTab` with same `Caption`. 
+* [Add](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html) - Adds the child view's [RibbonTab](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) to the MDI parent ribbon based on [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html), even if MDI parent has [RibbonTab](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) with same [Caption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~Caption.html). 
 
-* [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html) - The default value of `RibbonTab.MergeType`. If `RibbonTab.Caption` of Mdi parent ribbon and `RibbonTab.Caption` of child view's ribbon has same name and child view's `RibbonTab.MergeType` is `Merge`, then child view's `RibbonBar`'s are merged with Mdi parent's tab. If Mdi parent ribbon doesn't have tab with same caption, then child view's ribbon tab added to Mdi parent ribbon based on [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html). 
+* [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html) - The default value of [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html). If [RibbonTab.Caption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~Caption.html) of MDI parent ribbon and [RibbonTab.Caption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~Caption.html) of child view's ribbon has same name and child view's [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) is [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html), then child view's [RibbonBar](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonBar.html)'s are merged with MDI parent's tab. If MDI parent ribbon doesn't have tab with same caption, then child view's ribbon tab added to MDI parent ribbon based on [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html). 
 
 Let's look at the example,
 
-In the example both the MDI parent ribbon and child view1's ribbon has ribbon tab with same caption and the default value of [MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) is [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html). So, when child view1 maximized, bar's in child view's Home tab get are merged to Mdi parent ribbon's Home tab.
+In the example both the MDI parent ribbon and child view1's ribbon has ribbon tab with same caption and the default value of [MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) is [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MergeType.html). So, when child view1 maximized, bar's in child view's Home tab get are merged to MDI parent ribbon's Home tab.
 
 ![WPF Ribbon MDI Merging](menu-merging-images/wpf-ribbon-mdi-merging1.png)
 
-If you change the `MergeType` of ribbon tab in child view1 as `Add`, then `Home` tab will be added as new tab like `View1 Tab2` 
+If you change the [MergeType]((https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html)) of ribbon tab in child view1 as `Add`, then `Home` tab will be added as new tab like `View1 Tab2` 
 
 ![Changing the MergeType in Ribbon Merging](menu-merging-images/wpf-ribbon-mdi-merging2.png)
 
