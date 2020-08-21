@@ -7,7 +7,7 @@ control: CardView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Card View
 
 ## Assembly deployment
 
