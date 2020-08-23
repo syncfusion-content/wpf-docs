@@ -19,7 +19,7 @@ TextBoxExt is an extended version of the TextBox control. Most of the functional
 
 * **AutoComplete modes**: The control provides the suggestions based on a predefined collection while typing.
 * **Watermark**: The control will prompt some information when it is not in focus and contains an empty string.
-* **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. AutoComplete provides the both case-sensitive and insensitive modes.
+* **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. AutoComplete provides both the case-sensitive and insensitive modes.
 * **Popup delay**: The filtering process can be delayed. Displaying filtered suggestions from a drop-down list may also be delayed for a period of time.
 * **Minimum prefix characters**: Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries.
 * **Customize Entry**: AutoComplete provides the options to customize the Entry using the Font, FontSize, and FontFamily.

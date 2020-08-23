@@ -9,14 +9,12 @@ documentation: ug
 
 # Highlighting matched text
 
-Highlight matching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightMode.html) property. The default value of TextHighlightMode is None. The matching text can be highlighted in the following two ways:
+Highlight matching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightMode.html) property. The default value is None. The matching text can be highlighted in the following two ways:
 
 * First occurrence
 * Multiple occurrence
 
-The text highlight can be indicated with customizing style by enabling the following property.
-
-* [HighlightedTextColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~HighlightedTextColor.html): Sets the color of the highlighted text for differentiating the highlighted characters.
+The text highlight can be indicated by customizing the color of the characters using [HighlightedTextColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~HighlightedTextColor.html) property.
 
 ## First occurrence
 
@@ -44,7 +42,7 @@ It highlights the first position of the matching characters in the suggestion li
 
 ## Multiple occurrence
 
-It highlights the matching character that presents everywhere in the suggestion list for contain case in SuggestionMode.
+It highlights the matching character that presents everywhere in the suggestion list for "Contains" case in SuggestionMode.
 
 {% tabs %}
 

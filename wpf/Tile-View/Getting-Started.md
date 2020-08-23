@@ -203,6 +203,8 @@ public class ViewModel : NotificationObject {
 
 ![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+
 ## Select a TileViewItem
 
 You can select any `TileViewItem` by mouse click on the specific `TileViewItem`. You can get the selected item by using the `SelectedItem` property. You can also get the selected value and its index by using the `SelectedValue` and `SelectedIndex` properties. The default value of `SelectedItem` property is `null`.
@@ -237,6 +239,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileViewItem selected by mouse click](Working-with-TileView_images/Selection.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+
 ### Select TileViewItem programmatically using property
 
 You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
@@ -269,6 +273,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 {% endtabs %}
 
 ![Particular TileViewItem selected by using IsSelected property](Working-with-TileView_images/IsSelected.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
 
 ## Selected item changed notification
 
@@ -335,6 +341,7 @@ tileViewControl.ColumnCount = 1;
 
 ![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
 
 ## Minimize or maximize the TileViewItem
 
@@ -392,6 +399,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 1",
 
 ![Minimizing and maximizing the TileViewItems](Getting-Started_images/MinMax.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Closing TileViewItem 
 
 You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel. If you want to display the close button on `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonVisibility.html) property value as `Visible`. 
@@ -427,6 +436,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 {% endtabs %}
 
 ![TileViewItems closing by close button click](Closing_images/CloseButtonClick.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
 
 ## Custom UI of TileViewItem
 
@@ -469,3 +480,5 @@ You can customize the header and content of `TileViewItem` appearance by using t
 {% endtabs %}
 
 ![Custom UI of the TileViewItems](Getting-Started_images/TileViewItem_UI.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
