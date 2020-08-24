@@ -39,6 +39,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![TileViewItem is minimizing](Minimize_images/Minimize.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Direction for minimized items 
 
 If you want to change direction of placing the minimized items, use the [MinimizedItemsOrientation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientation.html) property. The default value of `MinimizedItemsOrientation` property is `Right`.
@@ -46,7 +48,8 @@ If you want to change direction of placing the minimized items, use the [Minimiz
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TileViewControl Name="tileViewControl" >
+<syncfusion:TileViewControl MinimizedItemsOrientation="Bottom"
+                            Name="tileViewControl" >
     <syncfusion:TileViewItem Header="Item 1" />
     <syncfusion:TileViewItem Header="Item 2" />
     <syncfusion:TileViewItem Header="Item 3" />
@@ -62,6 +65,8 @@ tileViewControl.MinimizedItemsOrientation = MinimizedItemsOrientation.Bottom;
 {% endtabs %}
 
 ![Minimized TileViewItem direction is changed as bottom](Minimize_images/MinimizedItemsOrientation.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
 
 ## Allocate size for minimized TileViewItem
 
@@ -87,6 +92,8 @@ tileViewControl.MinimizedItemsPercentage = 50;
 {% endtabs %}
 
 ![Allocated certain percentage of the total size to the minimized items](Minimize_images/MinimizedItemsPercentage.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
 
 ## Change minimized TileViewItem content
 
@@ -125,6 +132,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Minimized TileViewItem content changed](Minimize_images/MinimizedItemContent.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Custom UI of minimized TileViewItem content
 
 You can customize the appearance of minimized `TileViewItem` content by using the [MinimizedItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html) property. The `DataContext` of the `MinimizedItemTemplate` property is `TileViewItem.MinimizedItemContent`.
@@ -158,6 +167,14 @@ You can customize the appearance of minimized `TileViewItem` content by using th
 
 ![Minimized TileViewItem content UI changed](Minimize_images/MinimizedItemTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/CustomUI-MinMaxTileItem)
+
+## Change minimized TileViewItem header
+
+If you want to change the header of the `TileViewItem` on minimized state, use the [MinimizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedHeader.html) property. The default value of `MinimizedHeader` property is `null`.
+
+N> Please refer [Minimized TileViewItem header](https://help.syncfusion.com/wpf/tile-view/tileviewitem-header#change-minimized-and-maximized-header) topic to know more details about minimized `TileViewItem` header and its customization available in the `TileViewControl`.
+
 ## Minimized state changed notification
 
 The `TileViewControl` notifies that the minimized state changed in the `TileViewItem` by using [Minimized](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~Minimized_EV.html) event. You can get the minimized items by using the [Source](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~Source.html) property. You can also use the [OldState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~OldState.html) and [NewState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~NewState.html) properties to get the old and new state of `TileViewItem`.
@@ -166,7 +183,7 @@ The `TileViewControl` notifies that the minimized state changed in the `TileView
 {% highlight XAML %}
 
 <syncfusion:TileViewControl Minimized="TileViewControl_Minimized"
-                          Name="tileViewControl" />
+                            Name="tileViewControl" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -189,3 +206,4 @@ private void TileViewControl_Minimized(object sender, TileViewEventArgs args) {
 
 {% endhighlight %}
 {% endtabs %}
+

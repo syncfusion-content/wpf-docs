@@ -41,6 +41,8 @@ tileViewControl.Items.Add(new TileViewItem());
 
 ![TileViewItems with header text](TileViewHeader_images/HeaderText.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+
 ## Change minimized and maximized header
 
 By default, the `TileViewItem.Header` property value is displayed as `TileViewItem` header text. If you want to change the header text on minimized and maximized state, use the [TileViewItem.MinimizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedHeader.html) and [TileViewItem.MaximizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedHeader.html) properties. Based on the minimized and maximized state of the `TileViewItem`, respective header text is displayed. The default value of `TileViewItem.MinimizedHeader` and `TileViewItem.MaximizedHeader` property is ``.
@@ -77,6 +79,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems with minimized and maximized header text](TileViewHeader_images/MaximizedHeader.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Hide the TileViewItem header
 
 If you want to hide the specific `TileViewItem`'s header panel, use the [TileViewItem.HeaderVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderVisibility.html) property value as `Collapsed`. The default value of `TileViewItem.HeaderVisibility` property is `Visible`.
@@ -111,6 +115,8 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileViewItems header panels collapsed](TileViewHeader_images/HideHeader.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Header)
+
 ## Change TileViewItem header height
 
 If you want to change height of the specific `TileViewItem`'s header panel, use the [TileViewItem.HeaderHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderHeight.html) property. The default value of `TileViewItem.HeaderHeight` property is `25`.
@@ -139,6 +145,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4", HeaderHeight =
 {% endtabs %}
 
 ![TileViewItems header panels height changed](TileViewHeader_images/HeaderHeight.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Header)
 
 ## Change TileViewItem header cursor
 
@@ -198,6 +206,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItem headers with various foreground](TileViewHeader_images/HeaderForeground.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Header)
+
 ### Change background for TileViewItem header
 
 You can change the background color of the each `TileViewItem` header separately by using the [TileViewItem.HeaderBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderBackground.html) property. The default value of `TileViewItem.HeaderBackground` property is `Cornflower Blue`.
@@ -229,6 +239,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 {% endtabs %}
 
 ![TileViewItem headers with various background](TileViewHeader_images/HeaderBackground.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Header)
 
 ### Change border for TileViewItem header
 
@@ -266,6 +278,8 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItem headers with various border colors](TileViewHeader_images/HeaderBorderBrush.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Header)
+
 ## Custom UI of TileViewItem header
 
 You can customize the appearance of `TileViewItem` headers by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) property. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.
@@ -295,6 +309,8 @@ You can customize the appearance of `TileViewItem` headers by using the [HeaderT
 {% endtabs %}
 
 ![TileViewItem header panel UI changed](TileViewHeader_images/TileView_HeaderTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
 
 ### Custom UI of specific TileViewItem header
 
@@ -329,6 +345,8 @@ You can customize the appearance of specific `TileViewItem` headers by using the
 
 ![Specific TileViewItem header panel UI changed](TileViewHeader_images/Tile_HeaderTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Specific-CustomUI)
+
 ## Custom UI of minimized TileViewItem header
 
 You can customize the appearance of minimized `TileViewItem` headers by using the [MinimizedHeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedHeaderTemplate.html) property. The `DataContext` of the `MinimizedHeaderTemplate` property is `TileViewItem.MinimizedHeader`.
@@ -362,6 +380,8 @@ You can customize the appearance of minimized `TileViewItem` headers by using th
 
 ![Minimized TileViewItem header panel UI changed](TileViewHeader_images/MinimizedHeaderTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinimizedItem)
+
 ## Custom UI of maximized TileViewItem header
 
 You can customize the appearance of maximized `TileViewItem` headers by using the [MaximizedHeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MaximizedHeaderTemplate.html) property. The `DataContext` of the `MaximizedHeaderTemplate` property is `TileViewItem.MaximizedHeader`.
@@ -394,3 +414,5 @@ You can customize the appearance of maximized `TileViewItem` headers by using th
 {% endtabs %}
 
 ![Maximized TileViewItem header panel UI changed](TileViewHeader_images/MaximizedHeaderTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinimizedItem)
