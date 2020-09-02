@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Diacritic sensitivity of AutoComplete in Syncfusion SfTextBoxExt.
 description: This section describes how to enable and disable support for Diacritic Sensitivity in AutoComplete Control.

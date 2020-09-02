@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: AutoComplete | SfTextBoxExt | wpf | Syncfusion
 description: This section provides details about AutoComplete and how to populate the strings or objects in AutoComplete of SfTextBoxExt control.
