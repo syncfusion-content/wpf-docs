@@ -40,14 +40,19 @@ The [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfI
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Left"
-                                  AutoCompleteMode="Suggest"
-                                  SearchItemPath="Name"
-                                  MultiSelectMode="Token"
-                                  Height="40"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"
-                                  Width="200"/>
+<editors:SfTextBoxExt HorizontalAlignment="Left"
+                      AutoCompleteMode="Suggest"
+                      SearchItemPath="Name"
+                      MultiSelectMode="Token"
+                      Height="40"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"
+                      Width="200"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 
 {% endhighlight %}
 
@@ -121,15 +126,22 @@ To use this feature, it is need to set the `MultiSelectMode` as `Token` and `Tok
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Left"
-                                  AutoCompleteMode="Suggest"
-                                  SearchItemPath="Name"
-                                  MultiSelectMode="Token" 
-                                  TokensWrapMode="Wrap"
-                                  EnableAutoSize="True"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"
-                                  Width="200"/>
+<editors:SfTextBoxExt HorizontalAlignment="Left"
+                      AutoCompleteMode="Suggest"
+                      SearchItemPath="Name"
+                      MultiSelectMode="Token" 
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"
+                      Width="200"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Token;
+textBoxExt.TokensWrapMode = TokensWrapMode.Wrap;
+textBoxExt.EnableAutoSize = true;
 
 {% endhighlight %}
 
@@ -147,14 +159,19 @@ In `Delimiter` mode, each item is separated by a character that is set to the [D
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              MultiSelectMode="Delimiter"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      MultiSelectMode="Delimiter"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endhighlight %}
 
@@ -170,40 +187,40 @@ The [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfIn
 The `SelectedItem` and `SelectedItems` contains the object of the custom data and using the 
 `SearchItemPath` property the value displayed in the text field can be retrieved.
 
+Model Class:
+
 {% tabs %}
-
-{% highlight xaml %}
-
-    <editors:SfTextBoxExt HorizontalAlignment="Center"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  SelectedItem="{Binding SelectedItem}"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                 
-                                  Height="40" 
-                                  Width="200"
-                              />
-
-{% endhighlight %}
-
 {% highlight c# %}
 
-Employee Class:
 
-    public class Employee
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-    }
+public class Employee
+{
+        string name;
+        string email;
 
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
-EmployeeViewModel Class:
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+}
 
-    public class EmployeeViewModel
-    {
+{% endhighlight %}
+{% endtabs %}
+
+In EmployeeViewModel class the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) updated initially from the Employees collection. 
+
+{% tabs %}
+{% highlight c# %}
+
+public class EmployeeViewModel
+{
         private List<Employee> employees;
         public List<Employee> Employees
         {
@@ -230,31 +247,7 @@ EmployeeViewModel Class:
             Employees.Add(new Employee() { Name = "Lucas", Email = "Lucas@syncfusion.com" });
             SelectedItem = Employees[0];
         }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![selected item](Single_and_multiple_selection_images/Set_SelectedItem.png)
-
-
-{% tabs %}
-
-{% highlight c# %}
-
-
-        private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            SfTextBoxExt textBoxExt = d as SfTextBoxExt;
-            string selectedItem = "";
-            if (textBoxExt.SelectedItem != null)
-            {
-                selectedItem =((textBoxExt.SelectedItem as Employee).Name).ToString();
-            }
-
-            MessageBox.Show(selectedItem, "SelectedItem", MessageBoxButton.OK, MessageBoxImage.None);
-        }
+}
 
 {% endhighlight %}
 
@@ -265,36 +258,83 @@ EmployeeViewModel Class:
 
 {% highlight xaml %}
 
-    <editors:SfTextBoxExt HorizontalAlignment="Center"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="Token"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  SelectedItems="{Binding SelectedItems}"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                 
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Center"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      SelectedItem="{Binding SelectedItem}"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                 
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
+![selected item](Single_and_multiple_selection_images/Set_SelectedItem.png)
+
+
+{% tabs %}
+
 {% highlight c# %}
 
-Employee Class:
 
-    public class Employee
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-    }
+private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+         SfTextBoxExt textBoxExt = d as SfTextBoxExt;
+         string selectedItem = "";
+         if (textBoxExt.SelectedItem != null)
+         {
+            selectedItem =((textBoxExt.SelectedItem as Employee).Name).ToString();
+         }
+
+         MessageBox.Show(selectedItem, "SelectedItem", MessageBoxButton.OK, MessageBoxImage.None);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-EmployeeViewModel Class:
 
-    public class EmployeeViewModel
-    {
+Model Class:
+
+{% tabs %}
+{% highlight c# %}
+
+public class Employee
+{
+        string name;
+        string email;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+In EmployeeViewModel class the [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) updated initially from the Employees collection. 
+
+{% tabs %}
+{% highlight c# %}
+
+public class EmployeeViewModel
+{
         private List<Employee> employees;
         public List<Employee> Employees
         {
@@ -324,11 +364,33 @@ EmployeeViewModel Class:
             SelectedItems.Add(Employees[0]);
             SelectedItems.Add(Employees[1]);
         }
-    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfTextBoxExt HorizontalAlignment="Center"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="Token"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      SelectedItems="{Binding SelectedItems}"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                 
+                      Height="40" 
+                      Width="200"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![selected items](Single_and_multiple_selection_images/Set_SelectedItems.png)
 
@@ -341,33 +403,32 @@ The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfI
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt HorizontalAlignment="Left"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  ValueMemberPath="Email"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                                                      
-                                  SelectedItemChanged="AutoComplete_SelectedItemChanged"
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Left"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      ValueMemberPath="Email"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                                                      
+                      SelectedItemChanged="AutoComplete_SelectedItemChanged"
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            SfTextBoxExt textBoxExt = d as SfTextBoxExt;
-            if (textBoxExt.SelectedValue != null)
-            {
-                MessageBox.Show(textBoxExt.SelectedValue.ToString(), "SelectedValue", MessageBoxButton.OK, MessageBoxImage.None);
-            }
-        }
+private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+       SfTextBoxExt textBoxExt = d as SfTextBoxExt;
+       if (textBoxExt.SelectedValue != null)
+       {
+          MessageBox.Show(textBoxExt.SelectedValue.ToString(), "SelectedValue", MessageBoxButton.OK, MessageBoxImage.None);
+       }
+}
 
 {% endhighlight %}
 
@@ -383,31 +444,30 @@ When an item is selected from suggestion list, their index can be retrieved usin
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt HorizontalAlignment="Left"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  ValueMemberPath="Email"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                                                      
-                                  SelectedItemChanged="AutoComplete_SelectedItemChanged"
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Left"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      ValueMemberPath="Email"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                                                      
+                      SelectedItemChanged="AutoComplete_SelectedItemChanged"
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            string suggestionIndex = "";
-            suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
-            MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
-        }
+private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+        string suggestionIndex = "";
+        suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
+        MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
+}
 
 {% endhighlight %}
 

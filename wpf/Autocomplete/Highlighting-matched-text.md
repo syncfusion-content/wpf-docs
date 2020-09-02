@@ -24,15 +24,20 @@ It highlights the first position of the matching characters in the suggestion li
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              HighlightedTextColor="Red"
-                              TextHighlightMode="FirstOccurrence"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      HighlightedTextColor="Red"
+                      TextHighlightMode="FirstOccurrence"
+                      AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.TextHighlightMode = OccurrenceMode.FirstOccurrence;
 
 {% endhighlight %}
 
@@ -48,16 +53,21 @@ It highlights the matching character that presents everywhere in the suggestion 
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              SuggestionMode="Contains"
-                              HighlightedTextColor="Red"
-                              TextHighlightMode="MultipleOccurrence"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      SuggestionMode="Contains"
+                      HighlightedTextColor="Red"
+                      TextHighlightMode="MultipleOccurrence"
+                      AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
 
 {% endhighlight %}
 
