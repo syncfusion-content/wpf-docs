@@ -13,22 +13,24 @@ The AutoComplete functionality provides several modes of suggestions while typin
 
 ## AutoComplete source
 
-The `TextBoxExt` control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property. The data can be either a list of strings or a custom data.
+The [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property. The data can be either a list of strings or a custom data.
 
 
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% endtabs %}
+
+For further details, refer to [Populating Autocomplete with Data](https://help.syncfusion.com/wpf/autocomplete/getting-started#populating-autocomplete-with-data).
 
 ![AutoCompleteSource](AutoComplete_and_filtering_images/AutoCompleteSource.png)
 
@@ -39,13 +41,18 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.SearchItemPath = "Name";
 
 {% endhighlight %}
 {% endtabs %}
@@ -61,32 +68,28 @@ By default the drop-down window lists the filtered items as a text based on the 
 {% tabs %}
 {% highlight xaml %}
 
-               <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                     VerticalAlignment="Center" 
-                                     Width="400"
-                                     Height="40"
-                                     SearchItemPath="Name"
-                                     AutoCompleteMode="SuggestAppend"
-                                     AutoCompleteSource="{Binding Employees}" >
-                    <editors:SfTextBoxExt.AutoCompleteItemTemplate>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="SuggestAppend"
+                      AutoCompleteSource="{Binding Employees}" >
+                      <editors:SfTextBoxExt.AutoCompleteItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="User.png" Margin="2" Stretch="Uniform" Width="12"/>
                                 <TextBlock Text="{Binding Name}" Margin="5 2"/>
                             </StackPanel>
                         </DataTemplate>
-                    </editors:SfTextBoxExt.AutoCompleteItemTemplate>
-                </editors:SfTextBoxExt>
-        </Window.Content>
-</Window>
+                      </editors:SfTextBoxExt.AutoCompleteItemTemplate>
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 {% endtabs %}
 
 ![ItemTemplate](AutoComplete_and_filtering_images/ItemTemplate.png)
 
-Drop-down list with image
-{:.caption}
 
 ## Filtering options
 
@@ -243,14 +246,19 @@ The control returns all possible matches ending with the typed text based on the
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                      VerticalAlignment="Center" 
-                                      Width="400"
-                                      Height="40"
-                                      SearchItemPath="Name"
-                                      SuggestionMode="Contains"
-                                      AutoCompleteMode="Suggest"
-                                      AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      Height="40"
+                      SearchItemPath="Name"
+                      SuggestionMode="Contains"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.SuggestionMode = SuggestionMode.Contains;
 
 {% endhighlight %}
 {% endtabs %}
@@ -265,23 +273,26 @@ Instead of displaying suggestion list on every character entry, matches can be f
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              MinimumPrefixCharacters="2"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      MinimumPrefixCharacters="2"
+                      AutoCompleteSource="{Binding Employees}" />
      
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MinimumPrefixCharacters = 2;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Minimum Prefix Length](AutoComplete_and_filtering_images/MinimumPrefixCharacters.png)
 
-Minimum Prefix Length case
-{:.caption}
 
 
 ## Working with case sensitivity
@@ -291,22 +302,25 @@ Minimum Prefix Length case
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="400"
-                                  Height="40"
-                                  SearchItemPath="Name"
-                                  IgnoreCase="True"
-                                  AutoCompleteMode="Suggest"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      Height="40"
+                      SearchItemPath="Name"
+                      IgnoreCase="True"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.IgnoreCase = true;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Ignore Case](AutoComplete_and_filtering_images/IgnoreCase.png)
 
-Ignore Case
-{:.caption}
 
 ## Showing image in token and drop-down 
 
@@ -319,16 +333,16 @@ To display image for each drop-down item a custom template can be assigned to [A
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Left"
-                                  AutoCompleteMode="Suggest"
-                                  SearchItemPath="Name"
-                                  ImageMemberPath="Image"
-                                  MultiSelectMode="Token" 
-                                  TokensWrapMode="None"
-                                  Height="40"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"
-                                  Width="200">
+<editors:SfTextBoxExt HorizontalAlignment="Left"
+                      AutoCompleteMode="Suggest"
+                      SearchItemPath="Name"
+                      ImageMemberPath="Image"
+                      MultiSelectMode="Token" 
+                      TokensWrapMode="None"
+                      Height="40"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"
+                      Width="200">
             <editors:SfTextBoxExt.AutoCompleteItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Height="40">
@@ -341,7 +355,7 @@ To display image for each drop-down item a custom template can be assigned to [A
                     </StackPanel>
                 </DataTemplate>
             </editors:SfTextBoxExt.AutoCompleteItemTemplate>
-            </editors:SfTextBoxExt>
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 
@@ -360,19 +374,19 @@ When the entered item is not in the suggestion list, AutoComplete displays a tex
 {% tabs %}
 {% highlight xaml %}
        
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Height="40"
-                                  Width="400"
-                                  SearchItemPath="Name"
-                                  AutoCompleteMode="Suggest"
-                                  AutoCompleteSource="{Binding Employees}">
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Height="40"
+                      Width="400"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}">
             <editors:SfTextBoxExt.NoResultsFoundTemplate>
                 <DataTemplate>
                     <Label Content="No Results Found" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </DataTemplate>
             </editors:SfTextBoxExt.NoResultsFoundTemplate>
-        </editors:SfTextBoxExt>
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 {% endtabs %}
