@@ -29,8 +29,8 @@ The following types of series support Animation.
 The following APIs are used to customize the Animation.
 
 
-* [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EnableAnimation.html)-Represents a boolean value to enable the animation for series.
-* [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~AnimationDuration.html)-Represents a TimeSpan value which sets animation speed for the chart.
+* [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EnableAnimation)-Represents a boolean value to enable the animation for series.
+* [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_AnimationDuration)-Represents a TimeSpan value which sets animation speed for the chart.
 
 
 The following example shows the Animation feature for chart series.

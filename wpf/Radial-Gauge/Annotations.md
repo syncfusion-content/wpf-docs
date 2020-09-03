@@ -15,9 +15,9 @@ SfCircularGauge supports annotations, which allows you to mark the specific area
 
 When the annotation allows you to place the custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the Annotations:
 
-* [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.GaugeAnnotation~Angle.html) : Used to place the view at the given angle.
-* [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.GaugeAnnotation~Offset.html) : Used to move the view from the center to edge of the circular gauge. The value should be ranges from 0 to 1.
-* [`ViewMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.GaugeAnnotation~ViewMargin.html) : Used to customize the Annotation x and y position by using the pixel values.
+* [`Angle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_Angle) : Used to place the view at the given angle.
+* [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_Offset) : Used to move the view from the center to edge of the circular gauge. The value should be ranges from 0 to 1.
+* [`ViewMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.GaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_GaugeAnnotation_ViewMargin) : Used to customize the Annotation x and y position by using the pixel values.
 
 The following code is used to create the Annotations.
 

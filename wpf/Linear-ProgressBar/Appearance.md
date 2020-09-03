@@ -11,7 +11,7 @@ documentation: ug
 You can highly customize the appearance of the linear progressbar in the following ways.
 
 ## Corner radius
-The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~IndicatorCornerRadiusProperty.html) property is used to frame rounded edges in the linear progressbar as demonstrated in the following code sample.
+The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property is used to frame rounded edges in the linear progressbar as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight XAML %}
@@ -28,7 +28,7 @@ grid.Children.Add(linear);
 ![Corner radius image](Appearance_images/Cornerradius.png)
 
 ## Padding
-Padding helps to generate space between track bar and progressbar in the linear progressbar. The [IndicatorPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar~IndicatorPaddingProperty.html) property is used to set the padding value.
+Padding helps to generate space between track bar and progressbar in the linear progressbar. The [IndicatorPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfLinearProgressBar_IndicatorPaddingProperty) property is used to set the padding value.
 {% tabs %}
 {% highlight XAML %}      
 <Syncfusion:SfLinearProgressBar Progress="70" IndicatorPadding="5"/>       
@@ -47,9 +47,9 @@ grid.Children.Add(linear);
 ## Color Customization
 You can customize the color of the linear progressbar's progress color and track color. The following properties are used to customize the color in the progressbar.
 
-•[ProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~ProgressColor.html): Represents the color of the progress indicator.
+•[ProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_ProgressColor): Represents the color of the progress indicator.
 
-•[TrackColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~TrackColorProperty.html): Represents the color of the track indicator.
+•[TrackColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_TrackColorProperty): Represents the color of the track indicator.
 
 {% tabs %}
 {% highlight XAML %}      
@@ -68,13 +68,13 @@ grid.Children.Add(linear);
 ## Range Colors
 
 You can visualize multiple ranges with different solid colors that are mapped to each range to enhance the readability of progress.
-The solid colors can be mapped to the specific ranges using the [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor.html).
+The solid colors can be mapped to the specific ranges using the [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html).
 
-•[Color](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
+•[Color](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_Color): Represents the color to the specified range.
 
-•[Start](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
+•[Start](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_Start): Represents the start range of the color.
 
-•[End](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~End.html): Represents the end range of the color.
+•[End](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_End): Represents the end range of the color.
 You can visualize the multiple ranges with different solid colors that are mapped to each range to enhance the readability of progress.
 
 {% tabs %}
@@ -105,7 +105,7 @@ grid.Children.Add(linear);
 ![RangeColorsimage](Appearance_images/RangeColors.png)
 
 ## Gradient
-Gradient shows change in intensity of the colors during the progress. [IsGradient](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~IsGradient.html) property in  [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor.html) class to get the gradient effect in the colors applied to the progressbar.
+Gradient shows change in intensity of the colors during the progress. [IsGradient](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_IsGradient) property in  [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html) class to get the gradient effect in the colors applied to the progressbar.
 {% tabs %}
 {% highlight XAML %}
       <Syncfusion:SfLinearProgressBar Progress="80>

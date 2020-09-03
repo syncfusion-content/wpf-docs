@@ -115,16 +115,16 @@ Tooltip is displayed by tapping the following elements:
 
 The appearance of the tooltip can be customized using the following properties:
 
-[`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Foreground.html) : Customizes the text color of tooltip.
-[`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Background.html) : Customizes the background color of tooltip.
-[`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Stroke.html) : Customizes the stroke color of tooltip.
-[`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~StrokeThickness.html) : Customizes the stroke width of tooltip.
-[`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~ShowDuration.html) : Specifies the duration of tooltip to be displayed.
-[`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~Margin.html) : Sets the margin for tooltip.
-[`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontFamily.html) : Customizes the text font family of tooltip.
-[`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontStyle.html) : Customizes the font style of tooltip text.
-[`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~FontSize.html) : Customizes the font size of tooltip text.
-[`PointerLength`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ToolTipSetting~PointerLength.html) : Customizes the tooltip pointer length.
+[`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_Foreground) : Customizes the text color of tooltip.
+[`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_Background) : Customizes the background color of tooltip.
+[`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_Stroke) : Customizes the stroke color of tooltip.
+[`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_StrokeThickness) : Customizes the stroke width of tooltip.
+[`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_ShowDuration) : Specifies the duration of tooltip to be displayed.
+[`Margin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_Margin) : Sets the margin for tooltip.
+[`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_FontFamily) : Customizes the text font family of tooltip.
+[`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_FontStyle) : Customizes the font style of tooltip text.
+[`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_FontSize) : Customizes the font size of tooltip text.
+[`PointerLength`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_PointerLength) : Customizes the tooltip pointer length.
 
 The following code sample shows all the above customizations.
 

@@ -13,7 +13,7 @@ Points are one of the record type in shape file layer. Points are used to specif
 
 ## Customizing the MapPoint
 
-The default appearance of the MapPoint can be customized by using the [`MapPointTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointTemplate.html) property. The MapPointTemplate property is available in the ShapeFileLayer.
+The default appearance of the MapPoint can be customized by using the [`MapPointTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointTemplate) property. The MapPointTemplate property is available in the ShapeFileLayer.
 
 ## About MapPointTemplate Property
 
@@ -40,7 +40,7 @@ The default appearance of the MapPoint can be customized by using the [`MapPoint
 
 ## MapPointIcon
 
-[`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointIcon.html) is used for customizing points shapes.It can be customized by following shapes:
+[`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon) is used for customizing points shapes.It can be customized by following shapes:
 
 * Rectangle
 
@@ -75,7 +75,7 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
 
 ### MapPointPopupTemplate
 
-[`MapPointPopupTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~MapPointPopupTemplate.html) is a DataTemplate, used to expose the template for the MapPoint. 
+[`MapPointPopupTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointPopupTemplate) is a DataTemplate, used to expose the template for the MapPoint. 
 
 {% highlight xaml %}
 

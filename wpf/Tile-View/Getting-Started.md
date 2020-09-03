@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF TileViewControl
 
-This section describes how to create a [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in a WPF application and overview of its basic functionalities.
+This section describes how to create a [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control in a WPF application and overview of its basic functionalities.
 
 ## Structure of TileViewControl
 
@@ -106,7 +106,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using TileViewItem
 
-You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
+You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -243,7 +243,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ### Select TileViewItem programmatically using property
 
-You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
+You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_IsSelected) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -315,7 +315,7 @@ private void TileViewControl_SelectionChanged(object sender, SelectionChangedEve
 
 ## Arrange TileViewItem in rows and columns
 
-You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowCount.html) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnCount.html) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
+You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -345,7 +345,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Minimize or maximize the TileViewItem
 
-You can minimize or maximize the `TileViewItem` by click on the `MinMaxButton`. you can change the header and content for the minimized and maximized items separately by using the [TileViewItem.MinimizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedHeader.html), [TileViewItem.MinimizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) and [TileViewItem.MaximizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedHeader.html) , [TileViewItem.MaximizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) properties.
+You can minimize or maximize the `TileViewItem` by click on the `MinMaxButton`. you can change the header and content for the minimized and maximized items separately by using the [TileViewItem.MinimizedHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinimizedHeader), [TileViewItem.MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinimizedItemContent) and [TileViewItem.MaximizedHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MaximizedHeader) , [TileViewItem.MaximizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MaximizedItemContent) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -403,7 +403,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Closing TileViewItem 
 
-You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel. If you want to display the close button on `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonVisibility.html) property value as `Visible`. 
+You can close the `TileViewItem` by clicking the close button which is placed top-right corner of the header panel. If you want to display the close button on `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseButtonVisibility) property value as `Visible`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -441,7 +441,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI of TileViewItem
 
-You can customize the header and content of `TileViewItem` appearance by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) and `ItemTemplate` properties. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header` and `dataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
+You can customize the header and content of `TileViewItem` appearance by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_HeaderTemplate) and `ItemTemplate` properties. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header` and `dataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
 
 {% tabs %}
 {% highlight XAML %}

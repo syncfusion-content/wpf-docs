@@ -33,7 +33,7 @@ There are two modes of selection available in the GridControl. They are,
 
 ## Range selection
 
-Range selection is a cell-based selection mode that allows you to do a selection across the cell by using the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~AllowSelection.html) property. It accepts value from [GridSelectionFlags](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridSelectionFlags.html) enumeration. Default value for `AllowSelection` is `Any` and the specified range of Cell/Row/Column or Table can be highlighted using the range section.
+Range selection is a cell-based selection mode that allows you to do a selection across the cell by using the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_AllowSelection) property. It accepts value from [GridSelectionFlags](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridSelectionFlags.html) enumeration. Default value for `AllowSelection` is `Any` and the specified range of Cell/Row/Column or Table can be highlighted using the range section.
 
 The possible values for this type of selection are defined by the enum GridSelectionFlags. To control the selection behavior of the grid, set any of the following flags to the AllowSelection property. 
 
@@ -106,7 +106,7 @@ Grid offers the following three types of record selections which are together ca
 * SelectionMode–MultiSimple
 * SelectionMode-MultiExtended
 
-To enable record selection, set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ListBoxSelectionMode.html) property to any of the above specified List Box Selection Mode values. To enable list box selection, turn off the range selection by setting the `AllowSelection` property to `Row`. Below is a detailed description of list box selection modes.
+To enable record selection, set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_ListBoxSelectionMode) property to any of the above specified List Box Selection Mode values. To enable list box selection, turn off the range selection by setting the `AllowSelection` property to `Row`. Below is a detailed description of list box selection modes.
 
 ### SelectionMode-One
 
@@ -159,7 +159,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 
 ## Selecting rows and columns programmatically
 
-The entire grid selections are managed by the [GridModel.Selections](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections.html) collection. It exposes several APIs that let you to add, remove and operate on different grid selections. Below is the description of some important properties and APIs:
+The entire grid selections are managed by the [GridModel.Selections](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html) collection. It exposes several APIs that let you to add, remove and operate on different grid selections. Below is the description of some important properties and APIs:
 
 <table>
 <tr>
@@ -168,35 +168,35 @@ Property/Method</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Add](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~Add.html)'| markdownify }}, {{'[Remove](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~Remove.html)'| markdownify }}</td><td>
+{{'[Add](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_Add_Syncfusion_Windows_Controls_Grid_GridRangeInfo_)'| markdownify }}, {{'[Remove](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_Remove_Syncfusion_Windows_Controls_Grid_GridRangeInfo_)'| markdownify }}</td><td>
 Adds or removes the specified range to/from the collection.</td></tr>
 <tr>
 <td>
-{{'[InsertRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~InsertRows.html)'| markdownify }}, {{'[InsertColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~InsertColumns.html)'| markdownify }}</td><td>
+{{'[InsertRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_InsertRows_System_Int32_System_Int32_Syncfusion_Windows_Controls_Grid_GridRangeInfoList_)'| markdownify }}, {{'[InsertColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_InsertColumns_System_Int32_System_Int32_Syncfusion_Windows_Controls_Grid_GridRangeInfoList_)'| markdownify }}</td><td>
 Inserts new rows or columns into the collection.</td></tr>
 <tr>
 <td>
-{{'[RemoveRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~RemoveRows.html)'| markdownify }}, {{'[RemoveColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~RemoveColumns.html)'| markdownify }}</td><td>
+{{'[RemoveRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_RemoveRows_System_Int32_System_Int32_Syncfusion_Windows_Controls_Grid_GridRangeInfoList_)'| markdownify }}, {{'[RemoveColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_RemoveColumns_System_Int32_System_Int32_Syncfusion_Windows_Controls_Grid_GridRangeInfoList_)'| markdownify }}</td><td>
 Removes the specified rows or columns from the collection.</td></tr>
 <tr>
 <td>
-{{'[Ranges](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~Ranges.html)'| markdownify }}</td><td>
+{{'[Ranges](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_Ranges)'| markdownify }}</td><td>
 A GridRangeInfoList collection that stores all the selected ranges for the grid.</td></tr>
 <tr>
 <td>
-{{'[SelectRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~SelectRange.html)'| markdownify }}</td><td>
+{{'[SelectRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_SelectRange_Syncfusion_Windows_Controls_Grid_GridRangeInfo_System_Boolean_)'| markdownify }}</td><td>
 Adds or removes a range to/from the collection.</td></tr>
 <tr>
 <td>
-{{'[GetSelectedRanges](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~GetSelectedRanges.html)'| markdownify }}</td><td>
+{{'[GetSelectedRanges](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_GetSelectedRanges_Syncfusion_Windows_Controls_Grid_GridRangeInfoList__System_Boolean_)'| markdownify }}</td><td>
 Retrieves a list of selected ranges and if there are no selected ranges, returns the current cell.</td></tr>
 <tr>
 <td>
-{{'[GetSelectedRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~GetSelectedRows.html)'| markdownify }}</td><td>
+{{'[GetSelectedRows](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_GetSelectedRows_System_Boolean_System_Boolean_)'| markdownify }}</td><td>
 Returns the number of selected rows.</td></tr>
 <tr>
 <td>
-{{'[GetSelectedCols](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections~GetSelectedCols.html)'| markdownify }}</td><td>
+{{'[GetSelectedCols](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelSelections.html#Syncfusion_Windows_Controls_Grid_GridModelSelections_GetSelectedCols_System_Boolean_System_Boolean_)'| markdownify }}</td><td>
 Returns the number of selected columns.</td></tr>
 </table>
 
@@ -211,19 +211,19 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[DrawSelectionOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~DrawSelectionOptions.html)'| markdownify }}</td><td>
+{{'[DrawSelectionOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_DrawSelectionOptions)'| markdownify }}</td><td>
 Defines the selection behavior for the grid. Important options are:AlphaBlendReplaceBackgroundReplaceTextColor</td></tr>
 <tr>
 <td>
-{{'[HighlightSelectionAlphaBlend](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~HighlightSelectionAlphaBlend.html)'| markdownify }}</td><td>
+{{'[HighlightSelectionAlphaBlend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_HighlightSelectionAlphaBlend)'| markdownify }}</td><td>
 Specifies the alpha blend color used for selection.</td></tr>
 <tr>
 <td>
-{{'[HighlightSelectionBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~HighlightSelectionBackground.html)'| markdownify }}</td><td>
+{{'[HighlightSelectionBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_HighlightSelectionBackground)'| markdownify }}</td><td>
 Specifies the background color for selection.</td></tr>
 <tr>
 <td>
-{{'[HighlightSelectionForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~HighlightSelectionForeground.html)'| markdownify }}</td><td>
+{{'[HighlightSelectionForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_HighlightSelectionForeground)'| markdownify }}</td><td>
 Specifies the foreground color for selection.</td></tr>
 </table>
 
@@ -271,7 +271,7 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 
 ## Excel-like selection frame
 
-The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) property to `true`.
+The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_ExcelLikeSelectionFrame) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -285,7 +285,7 @@ N> If multiple ranges are selected, the selection frame is applicable only for `
 
 ## CurrentCell
 
-When a cell is activated current cell is outlined with a border. You can show or hide current cell outline by setting [ShowCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ShowCurrentCell.html) property.
+When a cell is activated current cell is outlined with a border. You can show or hide current cell outline by setting [ShowCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_ShowCurrentCell) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -298,7 +298,7 @@ this.gridControl.Model.Options.ShowCurrentCell = true;
 
 ## Excel-like CurrentCell
 
-You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel(borders with thickness). This feature can be enabled by setting [GridModelOptions.ExcelLikeCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeCurrentCell.html) property to `true`.  
+You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel(borders with thickness). This feature can be enabled by setting [GridModelOptions.ExcelLikeCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModelOptions.html#Syncfusion_Windows_Controls_Grid_GridModelOptions_ExcelLikeCurrentCell) property to `true`.  
 
 {% tabs %}
 {% highlight c# %}
@@ -313,7 +313,7 @@ N> If you have selected a current cell within a specified range, the range will 
 
 ## Highlighting row and column header based on selection
 
-In Excel, whenever a selection is made, the headers of those rows and columns which are involved in the selection will be highlighted. You can get a similar behavior in the Grid by overriding the [OnPrepareRenderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~OnPrepareRenderCell.html) method.
+In Excel, whenever a selection is made, the headers of those rows and columns which are involved in the selection will be highlighted. You can get a similar behavior in the Grid by overriding the [OnPrepareRenderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html#Syncfusion_Windows_Controls_Grid_GridControlBase_OnPrepareRenderCell_Syncfusion_Windows_Controls_Grid_GridPrepareRenderCellEventArgs_) method.
 
 `OnPrepareRenderCell` method will be invoked for every cell in the grid, when they are about to be rendered. Hence, using this method, the cells which are going to be rendered are identified and their headers are highlighted.
 

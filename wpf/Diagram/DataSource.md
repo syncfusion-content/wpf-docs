@@ -19,11 +19,11 @@ Diagram can be populated with the nodes and connectors based on the information 
 
 * The DataSourceSettings `Root` property is used to define the root node for the diagram populated from the data source.
 
-To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
+To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html)
 
 ## Defining DataSource
 
-[DataSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings~DataSource.html) can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
+[DataSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html#Syncfusion_UI_Xaml_Diagram_DataSourceSettings_DataSource) can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -271,7 +271,7 @@ data.Add(new ItemInfo("n21", "#941100")
 
 ## FlowchartDataSourceSettings
 
-[FlowchartDataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings_members.html) is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
+[FlowchartDataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings.html) is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
 `ContentMapping`: Maps the content in the underlying data object to data source item.
 

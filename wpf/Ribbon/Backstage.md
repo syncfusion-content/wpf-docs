@@ -9,7 +9,7 @@ documentation: ug
 
 ## BackStage settings in Ribbon
 
-The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~BackStage.html) property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
+The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ### Customize the BackStage Visibility 
 
-The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~IsBackStageVisible.html) property of Ribbon enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
+The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_IsBackStageVisible) property of Ribbon enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
 
 1) Through Property 
 
@@ -159,7 +159,7 @@ End Sub
 
 3) Through Commands
 
-Ribbon control provides the static command [OpenBackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonCommands~OpenBackStage.html) to show/hide the BackStage based on the parameter passed to it.
+Ribbon control provides the static command [OpenBackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) to show/hide the BackStage based on the parameter passed to it.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ Ribbon control provides the static command [OpenBackStage](https://help.syncfusi
 
 {% endtabs %}
 
-N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonCommands~OpenBackStage.html) command, CommandTarget and CommandParameter must be defined.
+N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) command, CommandTarget and CommandParameter must be defined.
 
 ## Add BackStageCommandButton
 
@@ -383,7 +383,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStage separator			
 
-BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
+BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
 
 {% tabs %}
 

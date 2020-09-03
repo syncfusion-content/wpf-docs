@@ -93,7 +93,7 @@ namespace GroupBarSample
 
 ## Add items using GroupBarItem
 
-You can add the group bar items inside the GroupBar control using [GroupBarItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.GroupBarItem.html).
+You can add the group bar items inside the GroupBar control using [GroupBarItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.GroupBarItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -222,7 +222,7 @@ public class ViewModel
 
 ## Add content to GroupBar Item
 
-You can add content to a GroupBar Item using a panel or a [GroupView](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.GroupView.html) control. 
+You can add content to a GroupBar Item using a panel or a [GroupView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.GroupView.html) control. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -273,7 +273,7 @@ this.Content = groupBar;
 
 ## Expand one or more items
 
-You can expand and collapse any number of groupbar items by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.GroupBar~VisualMode.html) to MultipleExpansion.
+You can expand and collapse any number of groupbar items by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.GroupBar.html#Syncfusion_Windows_Tools_Controls_GroupBar_VisualMode) to MultipleExpansion.
 
 {% tabs %}
 {% highlight XAML %}

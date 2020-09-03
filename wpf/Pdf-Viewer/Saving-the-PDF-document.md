@@ -9,7 +9,7 @@ documentation: ug
 
 # Saving PDF Files in WPF Pdf Viewer
 
-PDF Viewer allows you to save the PDF document that is being displayed in the PDF Viewer. It helps you to keep the file up to date with any modifications and prevent your work from being lost. The [Save](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Save.html) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to save the modified PDF file to a specific path in the local disk. Refer to the following code to achieve the same in a button click event from the application level.
+PDF Viewer allows you to save the PDF document that is being displayed in the PDF Viewer. It helps you to keep the file up to date with any modifications and prevent your work from being lost. The [Save](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Save_System_String_) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to save the modified PDF file to a specific path in the local disk. Refer to the following code to achieve the same in a button click event from the application level.
 
 {% tabs %}
 {% highlight c# %}

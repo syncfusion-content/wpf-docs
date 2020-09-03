@@ -9,12 +9,12 @@ documentation: ug
 
 # Working with WPF TileViewControl
 
-This section explains different UI customization and common features available in [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html) control.
+This section explains different UI customization and common features available in [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
 
 
 ## Populating items using TileViewItem
 
-You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
+You can add the tileview items inside the control by adding the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) into the `TileViewControl.Items` collection property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -90,7 +90,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ### Select TileViewItem programmatically using property
 
-You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property.
+You can select a particular `TileViewItem` programmatically by using the [TileViewItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_IsSelected) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -162,7 +162,7 @@ private void TileViewControl_SelectionChanged(object sender, SelectionChangedEve
 
 ## Display TileViewItem splitter
 
-If you want to display the splitter between maximized and each minimized items, use the [SplitterVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterVisibility.html) property value as `Visible`. You can also change the splitter color and thickness by using the [SplitterColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterColor.html) and [SplitterThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~SplitterThickness.html) properties. The default value of `SplitterVisibility` is `Collapsed`, `SplitterColor` value is `Gray` and `SplitterThickness` value is `0`.
+If you want to display the splitter between maximized and each minimized items, use the [SplitterVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_SplitterVisibility) property value as `Visible`. You can also change the splitter color and thickness by using the [SplitterColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_SplitterColor) and [SplitterThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_SplitterThickness) properties. The default value of `SplitterVisibility` is `Collapsed`, `SplitterColor` value is `Gray` and `SplitterThickness` value is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -193,7 +193,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI of TileViewItem header
 
-You can customize the appearance of `TileViewItem` headers by using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HeaderTemplate.html) property. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.
+You can customize the appearance of `TileViewItem` headers by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_HeaderTemplate) property. The `DataContext` of the `HeaderTemplate` property is `TileViewItem.Header`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -225,7 +225,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ### Custom UI of specific TileViewItem header
 
-You can customize the appearance of specific `TileViewItem` headers by using the [TileViewItem.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html) property. The `DataContext` of the `TileViewItem.HeaderTemplate` property is `TileViewItem.Header`.
+You can customize the appearance of specific `TileViewItem` headers by using the [TileViewItem.HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_HeaderTemplate) property. The `DataContext` of the `TileViewItem.HeaderTemplate` property is `TileViewItem.Header`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -260,7 +260,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI of TileViewItem content
 
-You can customize the appearance of `TileViewItem` content by using the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ItemTemplate.html) property. The `DataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
+You can customize the appearance of `TileViewItem` content by using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) property. The `DataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -295,7 +295,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ### Custom UI of specific TileViewItem content
 
-You can customize the appearance of specific `TileViewItem` content by using the [TileViewItem.ContentTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~ContentTemplate.html) property. The `DataContext` of the `TileViewItem.ContentTemplate` property is `TileViewItem.Content`.
+You can customize the appearance of specific `TileViewItem` content by using the [TileViewItem.ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) property. The `DataContext` of the `TileViewItem.ContentTemplate` property is `TileViewItem.Content`.
 
 {% tabs %}
 {% highlight XAML %}

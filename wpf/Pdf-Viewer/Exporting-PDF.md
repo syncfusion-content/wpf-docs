@@ -9,11 +9,11 @@ documentation: ug
 
 # Exporting pages of the PDF files into images
 
-Essential PDF Viewer allows exporting pages of a PDF file into JPG, PNG, TIFF, and BMP formats using [ExportAsImage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ExportAsImage.html) methods. This option helps to convert PDF pages into images.
+Essential PDF Viewer allows exporting pages of a PDF file into JPG, PNG, TIFF, and BMP formats using [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) methods. This option helps to convert PDF pages into images.
 
 ## Exporting a single page
 
-You can export a single page of the PDF file into an image by passing the page index as a parameter of the [ExportAsImage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ExportAsImage(Int32).html) method. Refer to the following code to export a single page of PDF into JPEG image.
+You can export a single page of the PDF file into an image by passing the page index as a parameter of the [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. Refer to the following code to export a single page of PDF into JPEG image.
 
 {% tabs %}
 {% highlight C# %}
@@ -80,7 +80,7 @@ N> You can follow a similar step for exporting PDF into images in all the other 
 
 ## Exporting a specific range of pages
 
-You can export a specific range of PDF pages into images by passing the start and end page indexes as parameters of the [ExportAsImage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ExportAsImage(Int32,Int32).html) method. Refer to the following code to export the pages of PDF into JPEG images.
+You can export a specific range of PDF pages into images by passing the start and end page indexes as parameters of the [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_System_Int32_) method. Refer to the following code to export the pages of PDF into JPEG images.
 
 {% tabs %}
 {% highlight C# %}
@@ -151,7 +151,7 @@ loadedDocument = Nothing
 
 ## Exporting with a custom image size
 
-You can export PDF pages as images with custom width and height by passing the required size as a parameter of the [ExportAsImage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ExportAsImage(Int32,SizeF,Boolean).html) method. Refer to the following code to export the pages of PDF into JPEG images. Refer to the following code to export the page at the index of 0 into JPEG image with the width and the height of 1836 and 2372 in pixels respectively.
+You can export PDF pages as images with custom width and height by passing the required size as a parameter of the [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_System_Drawing_SizeF_System_Boolean_) method. Refer to the following code to export the pages of PDF into JPEG images. Refer to the following code to export the page at the index of 0 into JPEG image with the width and the height of 1836 and 2372 in pixels respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -180,7 +180,7 @@ N> To maintain the aspect ratio of output images, you are required to pass the v
 
 ## Exporting with a custom image resolution
 
-You can export PDF pages as images with a custom horizontal and vertical resolution by passing the required `DpiX` and `DpiY` values as parameters of the [ExportAsImage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ExportAsImage(Int32,Int32,Single,Single).html) method respectively. Refer to the following code to export the pages of PDF into JPEG images with the horizontal and vertical resolution of 200 respectively.
+You can export PDF pages as images with a custom horizontal and vertical resolution by passing the required `DpiX` and `DpiY` values as parameters of the [ExportAsImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_System_Int32_System_Single_System_Single_) method respectively. Refer to the following code to export the pages of PDF into JPEG images with the horizontal and vertical resolution of 200 respectively.
 
 {% tabs %}
 {% highlight C# %}

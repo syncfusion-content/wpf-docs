@@ -13,7 +13,7 @@ Cubic curve segments are used to create curve segments and the curves are config
 
 ## how to create cubic curve segments
 
-To create a Curve line, you should specify the segment as [CubicCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
+To create a Curve line, you should specify the segment as [CubicCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ Cubic bezier segments are annotated with thumbs to represent the control points.
 
 ## How to add multiple cubic bezier segments
 
-'n' number of cubic bezier segments can be added into single connector by using [Point1](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point1.html), [Point2](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point2.html) and [Point3](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point3.html) properties of `CubicCurveSegment` class. 
+'n' number of cubic bezier segments can be added into single connector by using [Point1](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_Point1), [Point2](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_Point2) and [Point3](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_Point3) properties of `CubicCurveSegment` class. 
 
 *   Point1: Specifies the left side control point of the segment.
 *   Point2: Specifies the right side control point of the segment.
@@ -120,7 +120,7 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-Vectors also can be used to define the control points of the cubic bezier segments by using [Vector1](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Vector1.html), [Vector2](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Vector2.html) properties of `CubicCurveSegment` class. 
+Vectors also can be used to define the control points of the cubic bezier segments by using [Vector1](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_Vector1), [Vector2](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_Vector2) properties of `CubicCurveSegment` class. 
 
 {% tabs %}
 {% highlight xaml %}

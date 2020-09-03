@@ -9,7 +9,7 @@ documentation: ug
 
 # Change DateTime in WPF DateTimePicker (DateTimeEdit)
 
-The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free form editing and mask based editing. 
+The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free form editing and mask based editing. 
 
 ## Mask editing
 
@@ -160,7 +160,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change date time programmatically
 
-You can set or change the selected datetime of the `DateTimeEdit` programmatically by setting the value to the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property.
+You can set or change the selected datetime of the `DateTimeEdit` programmatically by setting the value to the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DateTime) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -237,7 +237,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Free form editing
 
-You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
+You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CanEdit) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
 
 {% tabs %}
 {% highlight XAML %}
@@ -259,7 +259,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change date time on mouse wheel
 
-You can increase or decrease the datetime by select the respective fields and mouse scrolling over the `DateTimeEdit`. If you want to restrict the user to change datetime by using mouse scrolling, use the [EnableMouseWheelEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~EnableMouseWheelEdit.html) property value as `false`. The default value of `EnableMouseWheelEdit` property is `true`.
+You can increase or decrease the datetime by select the respective fields and mouse scrolling over the `DateTimeEdit`. If you want to restrict the user to change datetime by using mouse scrolling, use the [EnableMouseWheelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_EnableMouseWheelEdit) property value as `false`. The default value of `EnableMouseWheelEdit` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -282,7 +282,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change date time using up-down button
 
-You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button are hidden. you can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsVisibleRepeatButton.html)  property value as `true`.
+You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button are hidden. you can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsVisibleRepeatButton)  property value as `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -307,7 +307,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Disable up-down button
 
-You can disable the updown button by setting the [IsEnabledRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEnabledRepeatButton.html) property as `false`. The default value of `IsEnabledRepeatButton` property is `true`.
+You can disable the updown button by setting the [IsEnabledRepeatButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsEnabledRepeatButton) property as `false`. The default value of `IsEnabledRepeatButton` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -332,7 +332,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Show only the up-down button
 
-You can show only the updown button by hiding the dropdown button. You can hide the dropdown button by setting the [IsButtonPopUpEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsButtonPopUpEnabled.html) property value as `false`.
+You can show only the updown button by hiding the dropdown button. You can hide the dropdown button by setting the [IsButtonPopUpEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsButtonPopUpEnabled) property value as `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -363,7 +363,7 @@ You can change the background and UI of the updown button.
 
 ### Change updown background
 
-If you want to change the updown button background, use the [RepeatButtonBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBackground.html) property. You can also change the margin of the up and down button separately by using the [DownRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonMargin.html) and [UpRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonMargin.html) properties. The default value of `RepeatButtonBackground` property is `Gainsboro`  and `UpRepeatButtonMargin` & `DownRepeatButtonMargin` properties is `{0,0,0,0}`.
+If you want to change the updown button background, use the [RepeatButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_RepeatButtonBackground) property. You can also change the margin of the up and down button separately by using the [DownRepeatButtonMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DownRepeatButtonMargin) and [UpRepeatButtonMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_UpRepeatButtonMargin) properties. The default value of `RepeatButtonBackground` property is `Gainsboro`  and `UpRepeatButtonMargin` & `DownRepeatButtonMargin` properties is `{0,0,0,0}`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -394,7 +394,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Custom UI for up and down button
 
-You can customize the up and down button appearance separately by using the [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonTemplate.html) and [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonTemplate.html) properties.
+You can customize the up and down button appearance separately by using the [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_UpRepeatButtonTemplate) and [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DownRepeatButtonTemplate) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -435,7 +435,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change month using alpha keys
 
-You can change the month which is in abbreviated form or digit form, can be edited by select the month field and pressing the initial letter of respective month. You can enable it by setting the [EnableAlphaKeyNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableAlphaKeyNavigation.html) value as `true` and `CanEdit` property as `false`. The default value of `EnableAlphaKeyNavigation` property is `false`.
+You can change the month which is in abbreviated form or digit form, can be edited by select the month field and pressing the initial letter of respective month. You can enable it by setting the [EnableAlphaKeyNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_EnableAlphaKeyNavigation) value as `true` and `CanEdit` property as `false`. The default value of `EnableAlphaKeyNavigation` property is `false`.
 
 For example, If you pressing the `j` key, then it will selects `January`. On subsequent presses of the `j` key selects `June` and then `July`.
 
@@ -464,7 +464,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Delete and edit the date time value
 
-By default, date time field will be selected and you can only override the date time field value without deleting the old value. You can delete the existing field values by pressing the `BackSpace` or `Delete` key and enter the new values. You can enable it by setting the [EnableBackspaceKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableBackspaceKey.html) and [EnableDeleteKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableDeleteKey.html) properties as `true`. The default value of `EnableBackspaceKey` and `EnableDeleteKey` property is `false`.
+By default, date time field will be selected and you can only override the date time field value without deleting the old value. You can delete the existing field values by pressing the `BackSpace` or `Delete` key and enter the new values. You can enable it by setting the [EnableBackspaceKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_EnableBackspaceKey) and [EnableDeleteKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_EnableDeleteKey) properties as `true`. The default value of `EnableBackspaceKey` and `EnableDeleteKey` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -493,7 +493,7 @@ You can add your own calendar and clock control in `DateTimeEdit` to selected th
 
 ### Custom calendar
 
-If you want to select the Date from the own calendar, use the [DateTimeCalender](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeCalender.html) property and set the custom date selector. You can enable the calendar by setting [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DropDownView.html)  property as `Calendar`.
+If you want to select the Date from the own calendar, use the [DateTimeCalender](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DateTimeCalender) property and set the custom date selector. You can enable the calendar by setting [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DropDownView)  property as `Calendar`.
 
 {% tabs %}
 {% highlight C# %}
@@ -544,7 +544,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-exampl
 
 ### Custom clock
 
-If you want to select the time from the own clock, use the [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~Clock.html) property and set the custom time selector. You can enable the custom clock by setting `DropDownView` property as `Clock`.
+If you want to select the time from the own clock, use the [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_Clock) property and set the custom time selector. You can enable the custom clock by setting `DropDownView` property as `Clock`.
 
 {% tabs %}
 {% highlight C# %}
@@ -595,7 +595,7 @@ N> You can also use both custom clock and calendar in the full datetime pattern 
 
 ## Setting the null value
 
-If you want to set or change the null value for the `DateTimeEdit`, use the [NullValue]() property. you can enable it only by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEmptyDateEnabled.html) property as `true` and [ShowMaskOnNullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~ShowMaskOnNullValue.html) property as `false`. If `IsEmptyDateEnabled` property is `false`, then the default date time is displayed. If the [ShowMaskOnNullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~ShowMaskOnNullValue.html) property true, then datetime mask is shown.
+If you want to set or change the null value for the `DateTimeEdit`, use the [NullValue]() property. you can enable it only by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsEmptyDateEnabled) property as `true` and [ShowMaskOnNullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_ShowMaskOnNullValue) property as `false`. If `IsEmptyDateEnabled` property is `false`, then the default date time is displayed. If the [ShowMaskOnNullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_ShowMaskOnNullValue) property true, then datetime mask is shown.
 
 {% tabs %}
 {% highlight xaml %}
@@ -649,7 +649,7 @@ dateTimeEdit.NullValue = null;
 
 ## Show watermark when value is null
 
-If you want to display any watermark text instead of null value, use the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property to setting the watermark text. you can enable it only by setting the `IsEmptyDateEnabled` property as `true`, `ShowMaskOnNullValue` property as `false`  and `NullValue` property as `null`. The default value of `NoneDateText` property is `string.Empty`.
+If you want to display any watermark text instead of null value, use the [NoneDateText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_NoneDateText) property to setting the watermark text. you can enable it only by setting the `IsEmptyDateEnabled` property as `true`, `ShowMaskOnNullValue` property as `false`  and `NullValue` property as `null`. The default value of `NoneDateText` property is `string.Empty`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -678,7 +678,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Select the date time field on focus 
 
-By default, the first field of the date time is selected to edit when control got focus. you can set the last field of date time as selected field when control got focus by setting the [OnFocusBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~OnFocusBehavior.html) property as `CursorAtEnd`. The default value of `OnFocusBehavior` property is `CursorOnFirstCharacter`.
+By default, the first field of the date time is selected to edit when control got focus. you can set the last field of date time as selected field when control got focus by setting the [OnFocusBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_OnFocusBehavior) property as `CursorAtEnd`. The default value of `OnFocusBehavior` property is `CursorOnFirstCharacter`.
 
 N> If control got focus by directly clicking the date time field, `OnFocusBehavior` property value not take effects.
 
@@ -703,7 +703,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Value Changed Notification
 
-The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeChanged_EV.html) event. The `DateTimeChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
+The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) event. The `DateTimeChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}

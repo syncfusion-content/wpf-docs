@@ -22,11 +22,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)'| markdownify }}</td><td>
+{{'[`IntervalType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Interval.html#Syncfusion_UI_Xaml_Charts_Interval_IntervalType)'| markdownify }}</td><td>
 Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
-{{'[`LabelFormatters`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)'| markdownify }}</td><td>
+{{'[`LabelFormatters`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Interval.html#Syncfusion_UI_Xaml_Charts_Interval_LabelFormatters)'| markdownify }}</td><td>
 Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
@@ -118,12 +118,12 @@ The following screenshot illustrates only Quarter and Month intervals in the nav
 
 The interval can be set in the following types: 
 
-* [`Year`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Quarter`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Month`(https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Week`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Day`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Hour`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Year`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Quarter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`(https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Week`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Day`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Hour`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 
 The auto timespan format simplifies the visual representation of data when zooming in with the following formats:
 
@@ -171,14 +171,14 @@ Description</th></tr>
 <tr>
 <td>
 LabelBarStyle</td><td>
-Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherLevelBarStyle.html) or [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLevelBarStyle.html).</td></tr>
+Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle) or [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle).</td></tr>
 <tr>
 <td>
-{{'[`SelectedLabelStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~SelectedLabelStyle.html)'| markdownify }}</td><td>
+{{'[`SelectedLabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_SelectedLabelStyle)'| markdownify }}</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-{{'[`Position`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)'| markdownify }}</td><td>
+{{'[`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_Position)'| markdownify }}</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 

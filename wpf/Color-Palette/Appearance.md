@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF ColorPalette (SfColorPalette)
 
-This section explains different UI customization options available in [ColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
+This section explains different UI customization options available in [ColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
 
 ## Setting the Foreground
 

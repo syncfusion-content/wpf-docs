@@ -9,22 +9,22 @@ documentation: ug
 
 # Zoom command in WPF Diagram(SfDiagram)
 
-The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Zoom.html) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
+The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 
-To execute zoom commands, IZoomParameter type [IZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter_members.html) have to be passed.
+To execute zoom commands, IZoomParameter type [IZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) have to be passed.
 
 ## Zoom position parameter
 
-The [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) is used to represent the position parameters to for executing zoom command. Please find its properties and their description as follows.
+The [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html) is used to represent the position parameters to for executing zoom command. Please find its properties and their description as follows.
 
 | Property name | Description |
 | --- | --- |
-| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~FocusPoint.html) | It is used to set the point of foucus when zooming. Usually used to specify a particular point in the diagram view. |
-| [PanDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~PanDelta.html) | It is used to set the finite increament in the pan value. |
-| [ScrollDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~ScrollDelta.html) | It is used to set the finite increament in the scroll value. |
-| [ZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~ZoomCommand.html) | It is used to set the opertaion to be performed. |
-| [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~ZoomFactor.html) | It is used to set the percentage of scale value for each ZoomIn or ZoomOut functionalities. |
-| [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter~ZoomTo.html) | It is used to set the zoom to a particular value. |
+| [FocusPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_FocusPoint) | It is used to set the point of foucus when zooming. Usually used to specify a particular point in the diagram view. |
+| [PanDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_PanDelta) | It is used to set the finite increament in the pan value. |
+| [ScrollDelta](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ScrollDelta) | It is used to set the finite increament in the scroll value. |
+| [ZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomCommand) | It is used to set the opertaion to be performed. |
+| [ZoomFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomFactor) | It is used to set the percentage of scale value for each ZoomIn or ZoomOut functionalities. |
+| [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_ZoomTo) | It is used to set the zoom to a particular value. |
 
 For ZoomIn operation
 
@@ -137,11 +137,11 @@ For VerticalScroll
 
 ## Reset
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Reset.html) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the Reset command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ResetParameter_members.html) as parameter.
+The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Reset) command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If you want to customize the Reset command, you can use the [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) as parameter.
 
 ### ResetParameter
 
-The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ResetParameter_members.html) parameter is used to define the behavior of the Reset Command. 
+The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) parameter is used to define the behavior of the Reset Command. 
 
 | Reset Enum Values | Description |
 | --- | --- |

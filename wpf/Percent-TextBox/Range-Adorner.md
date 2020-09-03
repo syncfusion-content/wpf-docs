@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Adorner in WPF PercentTextBox 
 
-[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~Value.html) of [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `PercentTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
+[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) of [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `PercentTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
 {% highlight XAML %}
@@ -32,7 +32,7 @@ percentTextBox.EnableRangeAdorner =true;
 
 ## Changing background of range-adorner
 
-You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property.
+You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_RangeAdornerBackground) property.
 
 {% tabs %}
 {% highlight XAML %}

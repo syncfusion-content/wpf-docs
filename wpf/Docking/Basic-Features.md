@@ -11,7 +11,7 @@ documentation: ug
 
 ## Dealing with States
 
-States of child is nothing but a different appearance of the DockingManager children.  [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~State.html) Property in DockingManager is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
+States of child is nothing but a different appearance of the DockingManager children.  [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) Property in DockingManager is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
 
 ### Dock State:
 
@@ -113,7 +113,7 @@ Document State Child can be of two types.
 * TDI (Tabbed Document Interface)
 * MDI (Multiple Document Interface)
 
-You can create MDI Documents by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) to MDI as a child state,and as Document , as shown below.
+You can create MDI Documents by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) to MDI as a child state,and as Document , as shown below.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ You can create MDI Documents by specifying [ContainerMode](https://help.syncfusi
 
 ![Document state](Basic-Features_images/Basic-Features_img4.jpeg)
 
-Similarly you can create a TDI Document by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) as TDI and child state as document.
+Similarly you can create a TDI Document by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) as TDI and child state as document.
 
 {% tabs %}
 
@@ -191,7 +191,7 @@ How to Create Docking Manager?
 
 ## Layout of the child
 
-We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html).
+We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode).
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ How to Create Docking Manager?
 
 ## DockSide for Docked State child’s
 
-[SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) and [SideInFloatMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInFloatMode.html) are used to decide the dock side of child with respect to their target names in dock mode and float mode.
+[SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) and [SideInFloatMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInFloatMode) are used to decide the dock side of child with respect to their target names in dock mode and float mode.
 
 {% tabs %}
 
