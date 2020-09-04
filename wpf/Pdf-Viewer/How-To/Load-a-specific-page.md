@@ -9,7 +9,7 @@ documentation: ug
 
 # Load a specific page
 
-Navigation to a specific page, through code, is possible using [GoToPageAtIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GoToPageAtIndex.html) method.
+Navigation to a specific page, through code, is possible using [GoToPageAtIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GoToPageAtIndex_System_Int32_) method.
 
 {% tabs %}
 {% highlight c# %}

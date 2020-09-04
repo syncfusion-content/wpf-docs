@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with ColorPicker
 
-This section explains how to create a WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) and explains about its structure and features.
+This section explains how to create a WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) and explains about its structure and features.
 
 ## Structure of ColorPicker
 
@@ -98,7 +98,7 @@ colorPicker.Height=100;
 
 ## Select a Color
 
-We can select a solid color or gradient color from a `ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
+We can select a solid color or gradient color from a `ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Color) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_Brush) properties.
 
 ### Select Solid Color
 
@@ -127,7 +127,7 @@ We can select a linear or radial gradient color which holds the multiple colors 
 
 #### Linear Gradient ####
 
-Linear Gradient color can be selected by the multiple colors and their location along the gradient axis using the `GradientStops` objects and [StartPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Startpoint.html) and [EndPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Endpoint.html) properties. Based on the `StartPoint` and `EndPoint`, the selected colors will be combined in linear manner.
+Linear Gradient color can be selected by the multiple colors and their location along the gradient axis using the `GradientStops` objects and [StartPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Startpoint) and [EndPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Endpoint) properties. Based on the `StartPoint` and `EndPoint`, the selected colors will be combined in linear manner.
 
 {% tabs %}
 {% highlight xaml %}
@@ -165,7 +165,7 @@ colorPicker.Brush = linearGradient;
 
 #### Radial Gradient ####
 
-Radial Gradient color is similar to Linear Gradient color, except for the axis defined by the circle. Based on the [GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~GradientOrigin.html), `Center` and `RadiusPoint` properties values, the selected gradient colors are combined in a circle manner. 
+Radial Gradient color is similar to Linear Gradient color, except for the axis defined by the circle. Based on the [GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_GradientOrigin), `Center` and `RadiusPoint` properties values, the selected gradient colors are combined in a circle manner. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ colorPicker.Brush = radialGradient;
 
 ## Color and Brush changed notification
 
-Selected Color and Brush changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html) events.
+Selected Color and Brush changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) events.
 
 {% tabs %}
 {% highlight xaml %}
@@ -248,7 +248,7 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 ## Change opacity of the color
 
-We can change the opacity of the selected color by using the A-Alpha value editor or delicate slider in the `ColorPicker`. We can hide the A-Alpha value editor and delicate slider by using the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property value as `false`. The default value of the `IsAlphaVisible` property is `true`.
+We can change the opacity of the selected color by using the A-Alpha value editor or delicate slider in the `ColorPicker`. We can hide the A-Alpha value editor and delicate slider by using the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsAlphaVisible) property value as `false`. The default value of the `IsAlphaVisible` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -274,7 +274,7 @@ We can change the color selection mode directly by clicking on the corresponding
 
 ### Restrict the brush mode from Solid to Gradient
 
- We can restrict color selection mode switching at runtime by setting the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) property value as `false`.  It will hide the Solid, Linear and Gradient brush switch buttons.
+ We can restrict color selection mode switching at runtime by setting the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableSolidToGradientSwitch) property value as `false`.  It will hide the Solid, Linear and Gradient brush switch buttons.
 
 {% tabs %}
 {% highlight xaml %}

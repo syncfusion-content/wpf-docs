@@ -22,7 +22,7 @@ They are:
 
 ## Character Spacing
 
-The distance between the characters can be set by using the [`CharacterSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharactersSpacing.html) property.
+The distance between the characters can be set by using the [`CharacterSpacing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharactersSpacing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ The distance between the characters can be set by using the [`CharacterSpacing`]
 
 ## Character Stroke
 
-The Stroke of the character can be changed by [`CharacterStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterStroke.html) property.
+The Stroke of the character can be changed by [`CharacterStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterStroke) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,7 +70,7 @@ The Stroke of the character can be changed by [`CharacterStroke`](https://help.s
 
 ## Segment Thickness
 
-Using [`SegmentThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~SegmentThickness.html) property, you can adjust the thickness of the segment.
+Using [`SegmentThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_SegmentThickness) property, you can adjust the thickness of the segment.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ Using [`SegmentThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge
 
 ## RTL (Right to Left) support
 
-The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~EnableRTLFormat.html) property. The default value of `EnableRTLFormat` is `false`.
+The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_EnableRTLFormat) property. The default value of `EnableRTLFormat` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -120,7 +120,7 @@ The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com
 
 ## Dimmed Brush stroke
 
-[`DimmedBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~DimmedBrush.html) property is used to apply brushes to the dimmed segment. This property is used to suit the background of the Digital gauge
+[`DimmedBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_DimmedBrush) property is used to apply brushes to the dimmed segment. This property is used to suit the background of the Digital gauge
 
 {% tabs %}
 {% highlight xaml %}
@@ -145,7 +145,7 @@ The Characters are aligned using [`EnableRTLFormat`](https://help.syncfusion.com
 
 ## Dimmed Brush opacity
 
-[`DimmedBrushOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~DimmedBrushOpacity.html) property is used to set the opacity of the brushes to the dimmed segment.
+[`DimmedBrushOpacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_DimmedBrushOpacity) property is used to set the opacity of the brushes to the dimmed segment.
 
 {% tabs %}
 {% highlight xaml %}

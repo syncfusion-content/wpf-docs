@@ -9,7 +9,7 @@ documentation: ug
 
 # Rulers in WPF Diagram (SfDiagram)
 
-The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LengthUnit_members.html) of measure is pixels.
+The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html) of measure is pixels.
 
 Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted->Rulers and Units.
 
@@ -43,7 +43,7 @@ diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
 
 ## Customizing the Ruler
 
-By default, ruler segments are arranged based on the `MeasurementUnit`. See the available [LengthUnits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LengthUnit_fields.html) for Ruler.
+By default, ruler segments are arranged based on the `MeasurementUnit`. See the available [LengthUnits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LengthUnit.html) for Ruler.
 
 Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. 
 

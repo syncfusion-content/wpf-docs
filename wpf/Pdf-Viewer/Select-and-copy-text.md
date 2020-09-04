@@ -13,7 +13,7 @@ In PDF Viewer, text can be selected by clicking the mouse left button and draggi
 
 ## Detecting the completion of text selection
 
-When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~TextSelectionCompleted_EV.html) event will be raised. The selected text can be retrieved as string from the `args` parameter of the event handler.
+When the text selection is completed, the [TextSelectionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event will be raised. The selected text can be retrieved as string from the `args` parameter of the event handler.
 
 {% tabs %}
 {% highlight c# %}

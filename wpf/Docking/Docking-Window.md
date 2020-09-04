@@ -22,7 +22,7 @@ The five sides that can be docked are
 * Bottom
 * Tabbed
 
-To dock 4 children of a DockingManager in 4 different sides, then use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) property with the required values.
+To dock 4 children of a DockingManager in 4 different sides, then use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) property with the required values.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Bottom);
 
 ## Docking window in various Targets 
 
-Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html).
+Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode).
  
 Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of DockingManager that targets a single Docking window docked along Left, Top, Right and Tabbed.
 {% tabs %}
@@ -133,7 +133,7 @@ This feature helps to Maximize/Minimize Docked Windows for better usage of each 
 ### Enabling Maximization feature
 
 
-To enable maximizing feature of Docking Window, set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MaximizeButtonEnabled.html) to `True`
+To enable maximizing feature of Docking Window, set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True`
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 ### Maximize Docking Window to full screen
 
-[MaximizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MaximizeMode.html) helps to change the maximization behavior of DockingWindow. Docking Windows occupies entire screen when [MaximizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MaximizeMode.html) set as FullScreen and DockingWindow in the Maximized state.
+[MaximizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeMode) helps to change the maximization behavior of DockingWindow. Docking Windows occupies entire screen when [MaximizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeMode) set as FullScreen and DockingWindow in the Maximized state.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ SyncDockingManager.MaximizeMode = MaximizeMode.FullScreen;
 
 ### Enabling Minimization feature
 
-To enable minimizing feature of DockingWindow, set [MinimizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MinimizeButtonEnabled.html) to `True`
+To enable minimizing feature of DockingWindow, set [MinimizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MinimizeButtonEnabled) to `True`
 
 {% tabs %}
 
@@ -214,7 +214,7 @@ SyncDockingManager.MinimizeButtonEnabled = true;
 
 ### Restrict Maximization or Minimization for a specific children
 
-DockingManager provides two attached property named [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanMaximize.html) and [CanMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanMinimize.html) to enable or disable Maximizing and Minimizing buttons respectively to the specific window.
+DockingManager provides two attached property named [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMaximize) and [CanMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMinimize) to enable or disable Maximizing and Minimizing buttons respectively to the specific window.
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ DockingManager.SetCanMaximize(Toolbox, false);
 
 ## Hot Drag the window
 
-The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window by [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsEnableHotTracking.html) property. Default value of IsEnableHotTracking is `False`, to enable this functionality turn its value to `True`.
+The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window by [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsEnableHotTracking) property. Default value of IsEnableHotTracking is `False`, to enable this functionality turn its value to `True`.
 
 {% tabs %}
 
@@ -273,7 +273,7 @@ SyncDockingManager.IsEnableHotTracking = true;
 
 ## Enabling or Disabling the Dock functionality
 
-The [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDock.html) property can help to enable or disable the docking functionality by setting its value as `True` or `False`. By default its value is `True`, to disable this functionality turn its value to `False`.
+The [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property can help to enable or disable the docking functionality by setting its value as `True` or `False`. By default its value is `True`, to disable this functionality turn its value to `False`.
 
 {% tabs %}
 
@@ -293,7 +293,7 @@ DockingManager.SetCanDock(dockWindow1, false);
 
 ## Enabling or Disabling the Header Visibility
 
-[NoHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~NoHeader.html) is an attached property, that is used to hide the header of DockWindow. Default value of NoHeader is `False`, to hide the Header turn its value to `True`.
+[NoHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_NoHeader) is an attached property, that is used to hide the header of DockWindow. Default value of NoHeader is `False`, to hide the Header turn its value to `True`.
 
 {% tabs %}
 

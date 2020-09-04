@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in GridControl
 
-Tooltip can be added to individual cells, rows and columns to show more information about the particular cell on mouse hover. ToolTip services can be enabled by setting [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridTooltipService~SetShowTooltips.html) attached property to `true`. ToolTip for particular cell or row or column can be enabled by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) property of [GridStyleInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo.html).
+Tooltip can be added to individual cells, rows and columns to show more information about the particular cell on mouse hover. ToolTip services can be enabled by setting [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTooltipService.html#Syncfusion_Windows_Controls_Grid_GridTooltipService_SetShowTooltips_System_Windows_DependencyObject_System_Boolean_) attached property to `true`. ToolTip for particular cell or row or column can be enabled by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) property of [GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html).
 
 ## ToolTip for specific cell
 
-ToolTip can be displayed for any cell by setting [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) and ToolTip text can be customized by setting [ToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ToolTip.html) property.
+ToolTip can be displayed for any cell by setting [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) and ToolTip text can be customized by setting [ToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ToolTip) property.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ gridcontrol.Model[1, 1].ShowTooltip = true;
 
 ## ToolTip for row and column
 
-ToolTip can be displayed for any row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) and ToolTip text can be customized by setting the [ToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ToolTip.html).
+ToolTip can be displayed for any row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) and ToolTip text can be customized by setting the [ToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ToolTip).
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl
 
 ## Set ToolTip in QueryCellInfo event
 
-You can set the ToolTip to a specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~QueryCellInfo_EV.html) event.
+You can set the ToolTip to a specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html) event.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl
 
 ## Show or hide the ToolTip
 
-You can show or hide the ToolTip in a specific cell or row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) property to `false`.
+You can show or hide the ToolTip in a specific cell or row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) property to `false`.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ gridcontrol.Model[1, 1].ShowTooltip = false;
 
 ## Setting ToolTip delay
 
-The [SetToolTipDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridTooltipService~SetTooltipDelay.html) method allows you to increase or decrease the time that the ToolTip waits before displaying the ToolTip.
+The [SetToolTipDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTooltipService.html#Syncfusion_Windows_Controls_Grid_GridTooltipService_SetTooltipDelay_System_Windows_DependencyObject_System_Int32_) method allows you to increase or decrease the time that the ToolTip waits before displaying the ToolTip.
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ GridTooltipService.SetTooltipDelay(gridcontrol, 5000);
 
 ## Handling ToolTip opening event
 
-The [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~CellToolTipOpening_EV.html) event will be triggered when the mouse hover on a cell has valid the ToolTip text.
+The [CellToolTipOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html) event will be triggered when the mouse hover on a cell has valid the ToolTip text.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
 
 ## Hide ToolTip for disabled cell
 
-You can disable the cell by setting `Enabled` property to `false`. If you want to hide the tooltip for this disabled cell, you need to set the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) property to `false`.
+You can disable the cell by setting `Enabled` property to `false`. If you want to hide the tooltip for this disabled cell, you need to set the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowTooltip) property to `false`.
 
 {% tabs %}
 
@@ -179,7 +179,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl
 
 ## Identify whether cell has ToolTip
 
-The [HasToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~HasToolTip.html) property is used to identify whether a cell has ToolTip or not in a cell or row or column in GridControl. You can also highlight the row or column or cell applied to the ToolTip.
+The [HasToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_HasToolTip) property is used to identify whether a cell has ToolTip or not in a cell or row or column in GridControl. You can also highlight the row or column or cell applied to the ToolTip.
 
 {% tabs %}
 
@@ -206,9 +206,9 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ## Customize the ToolTip
 
-The tooltip appearance can be customized by defining DataTemplate. The DataTemplate can be assigned to the [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplate.html) property. If you are using tooltipTemplate1 then you need to assign template to its corresponding template key property namely `GridStyleInfo.ToolTipTemplate` or `GridStyleInfo.ToolTipTemplateKey`.
+The tooltip appearance can be customized by defining DataTemplate. The DataTemplate can be assigned to the [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_TooltipTemplateKey) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_TooltipTemplate) property. If you are using tooltipTemplate1 then you need to assign template to its corresponding template key property namely `GridStyleInfo.ToolTipTemplate` or `GridStyleInfo.ToolTipTemplateKey`.
 
-[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of ToolTip.
+[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of ToolTip.
 
 **Using ToolTipTemplateKey**
 

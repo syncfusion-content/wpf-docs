@@ -9,7 +9,7 @@ documentation: ug
 
 # FitToPage in WPF Diagram(SfDiagram)
 
-The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~FitToPage.html) commands are used to bring the entire Diagram into the view. The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
+The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_FitToPage) commands are used to bring the entire Diagram into the view. The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
 If the parameter is null, entire diagram is fit into the view.
 
 {% tabs %}
@@ -24,17 +24,17 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ## FitToPageParameter
 
-The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is used to customize the FitToPage command behavior.
+The [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
 
 ### CanZoomIn
 
-The [CanZoomIn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~CanZoomIn.html) is used to set whether small diagram gets zoom in to whole view or not.
+The [CanZoomIn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_CanZoomIn) is used to set whether small diagram gets zoom in to whole view or not.
 
 ![CanZoomIn](Commands_Images/Commands_img18.gif)
 
 ### FitToPage 
 
-The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~FitToPage.html) is used to enable or disable the fit to page behavior with respect to height or width.
+The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_FitToPage) is used to enable or disable the fit to page behavior with respect to height or width.
 
 | Values | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Sync
 
 ### Region
 
-The [Region](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~Region.html) is used to set the region where to perform fittopage in diagram.
+The [Region](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_Region) is used to set the region where to perform fittopage in diagram.
 
 | Values | Description |
 | --- | --- |
@@ -57,7 +57,7 @@ The [Region](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfus
 
 ### FocusArea 
 
-The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~FocusArea.html) is used to set the focus area to execute the  `FitToPage` command in custom region. 
+The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html#Syncfusion_UI_Xaml_Diagram_FitToPageParameter_FocusArea) is used to set the focus area to execute the  `FitToPage` command in custom region. 
 
 ![Region](Commands_Images/Commands_img20.gif)
 

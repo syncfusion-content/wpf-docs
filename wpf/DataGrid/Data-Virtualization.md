@@ -174,7 +174,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 You can display animations when fetching data from service for [LoadMoreItemsAsync](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
 
-In the below code snippet data fetched from service using `BackgroundWorker` and [SfBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfBusyIndicator.WPF~Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html) displayed over SfDataGrid based on [IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.SfBusyIndicator.WPF~Syncfusion.Windows.Controls.Notification.SfBusyIndicator~IsBusy.html) property in `ViewModel`, until `BackgroundWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and [SfBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html) displayed over SfDataGrid based on [IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html#Syncfusion_Windows_Controls_Notification_SfBusyIndicator_IsBusy) property in `ViewModel`, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}

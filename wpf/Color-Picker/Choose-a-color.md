@@ -21,7 +21,7 @@ Choosing solid color from HSV(Hue, saturation and value) explained below.
 
 ### Hue 
 
-Hue is the color portion of the model, expressed as a number between `0` and `360` degrees, with all colors falling within a certain range. In [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html), the Hue value can be modified using the slider or H-Hue value editor.
+Hue is the color portion of the model, expressed as a number between `0` and `360` degrees, with all colors falling within a certain range. In [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html), the Hue value can be modified using the slider or H-Hue value editor.
 
 ![ColorPicker with Hue editor](Selection-Mode_images/ColorPicker_Hue_editor.png)
 
@@ -39,11 +39,11 @@ Value works in conjunction with saturation and describes the brightness or inten
 
 ## Select RGB and HSV color
 
-`ColorPicker` controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~VisualizationStyle.html) property is used to switch between these modes. By default, the RGB mode is enabled.
+`ColorPicker` controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_VisualizationStyle) property is used to switch between these modes. By default, the RGB mode is enabled.
 
 ### RGB
 
-We can pick a color in RGB (Red, green, and blue) color format by setting the value of the `VisualizationStyle` property as [ColorSelectionMode.RGB](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html). Color formats can be switched from HSV to RGB at runtime, using built-in color model `ComboBox`.
+We can pick a color in RGB (Red, green, and blue) color format by setting the value of the `VisualizationStyle` property as [ColorSelectionMode.RGB](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.ColorSelectionMode.html). Color formats can be switched from HSV to RGB at runtime, using built-in color model `ComboBox`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ this.Content = colorPicker;
 
 ### HSV
 
-We can pick a color in HSV (Hue, Saturation, and Value/Brightness) color format by setting the value of the `VisualizationStyle` property as [ColorSelectionMode.HSV](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html). Color formats can be switched from RGB to HSV at runtime, using built-in color model `ComboBox`.
+We can pick a color in HSV (Hue, Saturation, and Value/Brightness) color format by setting the value of the `VisualizationStyle` property as [ColorSelectionMode.HSV](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.ColorSelectionMode.html). Color formats can be switched from RGB to HSV at runtime, using built-in color model `ComboBox`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -97,7 +97,7 @@ Hexadecimal color values are also supported in `ColorPicker`, the built-in `Text
 
 ## Select a standard color
 
-`ColorPicker` has built-in color `ComboBox` to select standard color easily. By default, the standard color `ComboBox` is not shown in the `ColorPicker`. If we want to use the standard color `ComboBox`, use the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsColorPaletteVisible.html) property value as `true`. The default value of `IsColorPaletteVisible` property is `false`.
+`ColorPicker` has built-in color `ComboBox` to select standard color easily. By default, the standard color `ComboBox` is not shown in the `ColorPicker`. If we want to use the standard color `ComboBox`, use the [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_IsColorPaletteVisible) property value as `true`. The default value of `IsColorPaletteVisible` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +118,7 @@ colorPicker.IsColorPaletteVisible = true;
 
 ## Solid color changed notification
 
-Selected color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html) event.
+Selected color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,7 +150,7 @@ private void ColorPicker_ColorChanged(DependencyObject d, DependencyPropertyChan
 
 ## Get color name from color property
 
-`ColorPicker` come along with method which returns the nearest names of [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Color.html) property, this can be obtained by [SuchColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~SuchColor.html) method. We can get similar four color names of the `Color` property by passing the index value from 0 to 3 in the `SuchColor` method.
+`ColorPicker` come along with method which returns the nearest names of [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Color) property, this can be obtained by [SuchColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_SuchColor_System_Windows_Media_Color_) method. We can get similar four color names of the `Color` property by passing the index value from 0 to 3 in the `SuchColor` method.
 
 {% tabs %}
 {% highlight xaml %}

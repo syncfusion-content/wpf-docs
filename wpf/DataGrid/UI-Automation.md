@@ -69,7 +69,7 @@ N> `Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll` need to be ins
 
 This topic shows you how to create a CodedUITest project and test the SfDataGrid application. 
 
-1. Create a new WPF application or open an existing WPF application with SfDataGrid and enable Coded UI Test in SfDataGrid. To enable CUITs, you need to set [AutomationPeerHelper.EnableCodedUI](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutomationPeerHelper~EnableCodedUI.html) as `True` and access the [AutomationPeerHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutomationPeerHelper.html) class from [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.WPF~Syncfusion.UI.Xaml.Grid_namespace.html) namespace as shown in the following code example,
+1. Create a new WPF application or open an existing WPF application with SfDataGrid and enable Coded UI Test in SfDataGrid. To enable CUITs, you need to set [AutomationPeerHelper.EnableCodedUI](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutomationPeerHelper.html#Syncfusion_UI_Xaml_Grid_AutomationPeerHelper_EnableCodedUI) as `True` and access the [AutomationPeerHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutomationPeerHelper.html) class from [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.html) namespace as shown in the following code example,
 
 
 {% tabs %}

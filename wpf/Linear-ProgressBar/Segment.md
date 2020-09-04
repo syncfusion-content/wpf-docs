@@ -10,7 +10,7 @@ documentation: ug
 Divides the progressbar into multiple segements using the API.
 
 ## Segment
-To visualize the progress of multiple sequential tasks, split the progressbar into multiple segments by setting the [SegmentCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~SegmentCountProperty.html).
+To visualize the progress of multiple sequential tasks, split the progressbar into multiple segments by setting the [SegmentCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_SegmentCountProperty).
 {% tabs %}
 {% highlight XAML %}      
 <Syncfusion:SfLinearProgressBar Progress="70"  SegmentCount="4" />     
@@ -28,7 +28,7 @@ grid.Children.Add(linear);
 
 ## Segment with corner radius
 
-Corner radius helps to generate rounded edges for the progressbar. This can be achieved through the [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~IndicatorCornerRadiusProperty.html) property. 
+Corner radius helps to generate rounded edges for the progressbar. This can be achieved through the [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property. 
 {% tabs %}
 {% highlight XAML %}
  <Syncfusion:SfLinearProgressBar Progress="70"  SegmentCount="4"  IndicatorCornerRadius="10"/>   

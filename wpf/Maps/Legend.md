@@ -13,11 +13,11 @@ A legend is a key to symbolism used on a map, usually containing swatches of sym
 
 ## Legend visibility
 
-Legends are visible by setting the [`LegendVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendVisibility.html) property of the visibility type as `Visible` in the ShapeFileLayer.
+Legends are visible by setting the [`LegendVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendVisibility) property of the visibility type as `Visible` in the ShapeFileLayer.
 
 ## Legend Position
 
-Map legends can be positioned by setting the [`LegendPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendPosition.html) property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the X-axis and the Y-axis with the help of the `LegendPositionX` and `LegendPositionY` properties available in ShapeFileLayer. For positioning the legend based on margins, corresponding to a map, `LegendPosition` must be set with value of `Default`.
+Map legends can be positioned by setting the [`LegendPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendPosition) property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the X-axis and the Y-axis with the help of the `LegendPositionX` and `LegendPositionY` properties available in ShapeFileLayer. For positioning the legend based on margins, corresponding to a map, `LegendPosition` must be set with value of `Default`.
 
 
 
@@ -46,7 +46,7 @@ Gets or sets the margin value for the y axis.</td></tr>
 
 ## Legend header
 
-A header for the legend can be added by setting the [`LegendHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendHeader.html) property of the string type.
+A header for the legend can be added by setting the [`LegendHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendHeader) property of the string type.
 
 ## Legend categories
 
@@ -55,13 +55,13 @@ Legends are categorized as two types:
 * Legends for shape layers.
 * Legends for bubbles.
 
-These can be set by using the [`LegendType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendType.html) property of the type LegendType.
+These can be set by using the [`LegendType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendType) property of the type LegendType.
 
 ### Shapes
 
-Bubble type legends are always bubbles with varying sizes.  The size of the bubbles is obtained from the [`SizeRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~SizeRatio.html) from the BubbleMarkerSetting.
+Bubble type legends are always bubbles with varying sizes.  The size of the bubbles is obtained from the [`SizeRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_SizeRatio) from the BubbleMarkerSetting.
 
-Layer shape type legends can be different shapes for the legend. The shapes can be set by using the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~LegendIcon.html), of the LegendIcon type. 
+Layer shape type legends can be different shapes for the legend. The shapes can be set by using the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendIcon), of the LegendIcon type. 
 
 ### Arranging the Legends 
 

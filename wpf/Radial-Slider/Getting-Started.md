@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfRadialSlider
 
-This section explains how to create a WPF [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) and explains about its structure.
+This section explains how to create a WPF [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) and explains about its structure.
 
 ## Structure of SfRadialSlider
 
@@ -138,7 +138,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Display selected value
 
-You can display the selected value in the content area of the `SfRadialSlider` by setting the selected value to the [Content](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~Content.html) property. The default value of `Content` property is `null`.
+You can display the selected value in the content area of the `SfRadialSlider` by setting the selected value to the [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_Content) property. The default value of `Content` property is `null`.
 
 {% tabs %}
 {% highlight C# %}
@@ -204,7 +204,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change start and end position
 
-You can change starting and ending position for generating the ticks in the circular track by using the [StartAngle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~StartAngle.html) and [EndAngle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~EndAngle.html) properties. The default value of `EndAngle` property is `0` and `StartAngle` property is `360`.
+You can change starting and ending position for generating the ticks in the circular track by using the [StartAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_EndAngle) properties. The default value of `EndAngle` property is `0` and `StartAngle` property is `360`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -228,7 +228,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change tick display interval
 
-You can change the tick display interval from the `Minimum` to `Maximum` values by using the [TickFrequency](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickFrequency.html) property. Based on `TickFrequency`'s multiples, the display interval is set from `Minimum` to `Maximum` value.
+You can change the tick display interval from the `Minimum` to `Maximum` values by using the [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_TickFrequency) property. Based on `TickFrequency`'s multiples, the display interval is set from `Minimum` to `Maximum` value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +272,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change inner and outer rim radius
 
-You can change inner and outer rim radius of the `SfRadialSlider` by using the [InnerRimRadiusFactor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~InnerRimRadiusFactor.html) and [OuterRimRadiusFactor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~OuterRimRadiusFactor.html) properties. The default value of `InnerRimRadiusFactor` property is `0.2` and `OuterRimRadiusFactor` property is `0.7`.
+You can change inner and outer rim radius of the `SfRadialSlider` by using the [InnerRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_InnerRimRadiusFactor) and [OuterRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_OuterRimRadiusFactor) properties. The default value of `InnerRimRadiusFactor` property is `0.2` and `OuterRimRadiusFactor` property is `0.7`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,7 +296,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change tick direction
 
-You can change the ticks direction either clockwise or counter-clockwise direction by using the [SweepDirection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~SweepDirection.html) property. The default value of `SweepDirection` property is `Clockwise`.
+You can change the ticks direction either clockwise or counter-clockwise direction by using the [SweepDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html#Syncfusion_Windows_Controls_Navigation_SfRadialSlider_SweepDirection) property. The default value of `SweepDirection` property is `Clockwise`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -320,7 +320,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Text formatting
 
-You can customize the text format for the specific or all tick labels by handling the [DrawLabel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~DrawLabel_EV.html) event and setting the [DrawLabelEventArgs.Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Handled.html) property value as `true`. You can change the content and foreground of the tick labels by using the [DrawLabelEventArgs.Text](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Text.html) and [DrawLabelEventArgs.Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Foreground.html) properties. You can also change the font family and font size of the tick labels by using the [DrawLabelEventArgs.FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~FontFamily.html) and [DrawLabelEventArgs.FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~FontSize.html) properties.
+You can customize the text format for the specific or all tick labels by handling the [DrawLabel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) event and setting the [DrawLabelEventArgs.Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs.html#Syncfusion_Windows_Controls_Navigation_DrawLabelEventArgs_Handled) property value as `true`. You can change the content and foreground of the tick labels by using the [DrawLabelEventArgs.Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs.html#Syncfusion_Windows_Controls_Navigation_DrawLabelEventArgs_Text) and [DrawLabelEventArgs.Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs.html#Syncfusion_Windows_Controls_Navigation_DrawLabelEventArgs_Foreground) properties. You can also change the font family and font size of the tick labels by using the [DrawLabelEventArgs.FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs.html#Syncfusion_Windows_Controls_Navigation_DrawLabelEventArgs__ctor_System_Double_System_Windows_Media_Brush_System_Windows_Media_FontFamily_System_Double_System_String_System_Boolean_) and [DrawLabelEventArgs.FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs.html#Syncfusion_Windows_Controls_Navigation_DrawLabelEventArgs_FontSize) properties.
 
 {% tabs %}
 {% highlight xaml %}

@@ -61,11 +61,11 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 
 ## Grouping
 
-Cards inside the CardView control can be grouped by the fields available in the list. Grouping can be achieved by dragging the field from the list to the header panel in the CardView control. Grouping can be controlled by the property called [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanGroup.html). By default [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanGroup.html) value will be true.
+Cards inside the CardView control can be grouped by the fields available in the list. Grouping can be achieved by dragging the field from the list to the header panel in the CardView control. Grouping can be controlled by the property called [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup). By default [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) value will be true.
 
 ### Adding grouping to an Application 
 
-[CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanGroup.html) property can be added directly to an application using the following code snippet:
+[CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) property can be added directly to an application using the following code snippet:
 
 {% highlight xaml %}
 
@@ -89,11 +89,11 @@ Cards can be filtered by the values which are given for the fields. To filter th
 
 ## Sorting
 
-Cards can be sorted inside the CardView Control. It can be achieved by the fields available. To sort the cards just click on the field name listed in the header. It can be controlled by the property called [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanSort.html). By default the value is true.
+Cards can be sorted inside the CardView Control. It can be achieved by the fields available. To sort the cards just click on the field name listed in the header. It can be controlled by the property called [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort). By default the value is true.
 
 ### Adding sorting to an Application 
 
-[CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanSort.html) can be added directly to an application using the following code snippet: 
+[CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) can be added directly to an application using the following code snippet: 
 
 {% highlight xaml %}
 
@@ -113,11 +113,11 @@ cardview.CanSort = false;
 
 ## Editing
 
-More attractive feature in the CardView control is editing. [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanEdit.html) property allows the user to edit the fields available in the cards. Moreover we can customize the Item template while editing by using the property called [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~EditItemTemplate.html).
+More attractive feature in the CardView control is editing. [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property allows the user to edit the fields available in the cards. Moreover we can customize the Item template while editing by using the property called [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate).
 
 ### Adding editing to an Application 
 
-[CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanEdit.html) property can be added directly to an application using the following code example:
+[CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property can be added directly to an application using the following code example:
 
 {% highlight xaml %}
 
@@ -139,7 +139,7 @@ cardview.CanEdit = false;
 
 By default, editing mode can be started by double-clicking the `CardViewItem` or by pressing the `F2` key and can stop the editing to putting selected `CardViewItem` into view mode by clicking the `Esc` or `Enter` key. 
 
-You can use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~BeginEdit.html) and [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~EndEdit.html) methods to make the selected item to editing mode and change the edit mode to view mode for the selected item. In the edit mode, `EditItemTemplate` is applied and in the view mode `ItemTemplate` is applied to the selected item.
+You can use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit) and [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) methods to make the selected item to editing mode and change the edit mode to view mode for the selected item. In the edit mode, `EditItemTemplate` is applied and in the view mode `ItemTemplate` is applied to the selected item.
 
 N> You must set the `CanEdit` property as `true` to perform `BeginEdit` or `EndEdit`.
 
@@ -274,11 +274,11 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-
 
 ## Header Panel
 
-It is the base to showcase the fields when you drop the fields from the list. We can customize the visibility of the Header panel by using the property called [ShowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~ShowHeader.html).
+It is the base to showcase the fields when you drop the fields from the list. We can customize the visibility of the Header panel by using the property called [ShowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_ShowHeader).
 
 ### Adding Header Panel visibility customization to an Application 
 
-[ShowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~ShowHeader.html) property can be added directly to an application using the following code example:
+[ShowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_ShowHeader) property can be added directly to an application using the following code example:
 
 {% highlight xaml %}
 

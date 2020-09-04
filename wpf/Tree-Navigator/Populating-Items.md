@@ -11,7 +11,7 @@ documentation: ug
 
 ## Items source 
 
-[Tree Navigator items](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigatorItem.html) can be populated with the business object collection. Let us create a [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) which will show the list of Syncfusion Enterprise Toolkit products.  
+[Tree Navigator items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigatorItem.html) can be populated with the business object collection. Let us create a [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) which will show the list of Syncfusion Enterprise Toolkit products.  
 
 Create a Model class with the necessary properties. 
 
@@ -78,7 +78,7 @@ public class TreeViewModel
 {% endhighlight %}
 {% endtabs %}
 
- Bind the Models collection to the ItemsSource property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as follows. 
+ Bind the Models collection to the ItemsSource property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) control as follows. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,13 +92,13 @@ public class TreeViewModel
 {% endhighlight %}
 {% endtabs %}
 
- This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as shown below. 
+ This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as shown below. 
 
 ![Items source ](Populating-Items_images/Populating-Items_img1.png)
 
 ## Item template 
 
-ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) can be used to customize the display of business objects. 
+ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) can be used to customize the display of business objects. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,7 +122,7 @@ ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf
 {% endhighlight %}
 {% endtabs %}
 
-This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeNavigator.WPF~Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as follows.
+This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as follows.
 
 ![Item template](Populating-Items_images/Populating-Items_img2.png)
 

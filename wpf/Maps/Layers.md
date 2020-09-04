@@ -9,7 +9,7 @@ documentation: ug
 
 # Layers in syncfusion SfMap control
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 
 The maps control consists the following two layers:
 
@@ -29,7 +29,7 @@ Using shape file layer, custom shape files can be rendered and the shapes can be
 
 This section defines how to customize the shapes in a map.
 
-You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeFill.html), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStroke.html),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html) properties.
+You can customize a shape's fill, stroke, and stroke thickness using the [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke),[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties.
 
 Refer to the following code sample for customizing shapes.
 
@@ -71,13 +71,13 @@ Refer to the following code sample for customizing shapes.
 
 ### Customize selected shapes
 
-The shape selection is enabled when the [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~EnableSelection.html) property is set to true. To customize the selected shapes alone, use the following properties:
+The shape selection is enabled when the [`EnableSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_EnableSelection) property is set to true. To customize the selected shapes alone, use the following properties:
 
-[`SelectedShapeColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeColor.html): Sets the color for selected shapes in a map.
+[`SelectedShapeColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_SelectedShapeColor): Sets the color for selected shapes in a map.
 
-[`SelectedShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeStroke.html): Sets the border color for selected shapes in a map.
+[`SelectedShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_SelectedShapeStroke): Sets the border color for selected shapes in a map.
 
-[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~SelectedShapeStrokeThickness.html): Sets the border thickness for selected shapes in a map.
+[`SelectedShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_SelectedShapeStrokeThickness): Sets the border thickness for selected shapes in a map.
 
 
 {% tabs %}
@@ -211,7 +211,7 @@ ItemsTemplate is a type of DataTemplate that is used to override the default tem
 
 ## Displaying layer in the view
 
-The [`BaseMapIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~BaseMapIndex.html) property allows drill-down from main layer to another layer.
+The [`BaseMapIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_BaseMapIndex) property allows drill-down from main layer to another layer.
 
 In the ShapeSelected event, the BaseMapIndex property has been used to change the layer when Australia shape is selected.
 
@@ -325,9 +325,9 @@ In the ShapeSelected event, the BaseMapIndex property has been used to change th
 
 ## Events
 
-The [`ShapeSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapesSelected_EV.html) event will be triggered when a map shape is selected. A corresponding model data is passed as an argument.
+The [`ShapeSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) event will be triggered when a map shape is selected. A corresponding model data is passed as an argument.
 
-The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapesUnSelected_EV.html) event will be triggered when a map shape is un selected. A corresponding model data is passed as an argument.
+The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) event will be triggered when a map shape is un selected. A corresponding model data is passed as an argument.
 {% tabs %}
 
 {% highlight xml %}

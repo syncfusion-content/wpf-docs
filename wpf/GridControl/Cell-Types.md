@@ -116,7 +116,7 @@ Used to display the multiple scroller in row and column</td></tr>
 
 This section elaborates you on how to employ basic controls like Check Box, Radio Button and more in a grid cell.
 
-To set up desired cell type, the [Style.CellType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellType.html) property must be assigned with the corresponding format string. The list of cell types and their usages are described below.
+To set up desired cell type, the [Style.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_CellType) property must be assigned with the corresponding format string. The list of cell types and their usages are described below.
 
 ## Header cell type
 
@@ -663,7 +663,7 @@ NumberGroupSizes</td><td>
 Number of digits in each group</td></tr>
 <tr>
 <td>UseNullOption</td>
-<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
+<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridIntegerEditStyleInfo_UseNullOption)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
 </tr>
 </table>
 
@@ -1368,7 +1368,7 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 ## DataTemplate cell type
 
-The cell is specified as "DataBoundTemplate", that cell can not be changed or edited. You can show the cell information or text by setting the `DataTemplate` key to [GridStyleInfo.CellItemTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellItemTemplateKey.html) property.
+The cell is specified as "DataBoundTemplate", that cell can not be changed or edited. You can show the cell information or text by setting the `DataTemplate` key to [GridStyleInfo.CellItemTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_CellItemTemplateKey) property.
 
 {% tabs %}
 
@@ -1402,7 +1402,7 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 The Nested grid's can be added inside a row, column or covered range. When you nest a grid inside a covered range you can specify whether the rows or columns derive their state from the parent control. You have multiple independent options for both rows and columns.
 
-The Nested grid cell type of WPF [GridControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControl.html) allows to host the one grid into another grid control. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
+The Nested grid cell type of WPF [GridControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControl.html) allows to host the one grid into another grid control. When you scroll within the parent grid, the nested grid also scrolls based on the parent grid scroller.
 
 You can add the nested grids within the other grid control by the following ways.
 
@@ -1415,7 +1415,7 @@ N> The nested grid will have no separate scrollbars and shared with the parent g
 
 ### Nested grid inside a row or column
 
-You can add the nested grid into the parent grid row by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellModelCollection~Add.html) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested scroll grid model ([GridCellNestedScrollGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellNestedScrollGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
+You can add the nested grid into the parent grid row by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellModelCollection.html#Syncfusion_Windows_Controls_Grid_GridCellModelCollection_Add_System_String_Syncfusion_Windows_Controls_Grid_GridCellModelBase_) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested scroll grid model ([GridCellNestedScrollGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellNestedScrollGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
 
 Refer the below code for your reference.
 
@@ -1463,15 +1463,15 @@ N> Similarly, you can also create a nested grid inside a whole column.
 
 ### Nested grid layout of row and column
 
-[GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html) is the class to be used as model class for this cell type. Its constructor accepts two objects of type [GridNestedAxisLayout](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum, where the first parameter corresponds to row and second parameter corresponds to grid column. This enum value determines whether to share the row layout or column layout or the rows and columns are independent of parent grid.
+[GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html) is the class to be used as model class for this cell type. Its constructor accepts two objects of type [GridNestedAxisLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum, where the first parameter corresponds to row and second parameter corresponds to grid column. This enum value determines whether to share the row layout or column layout or the rows and columns are independent of parent grid.
 
 ### Multiple nested grid inside a covered range with its rows using row layout
 
 You can add the multiple number of nested grid into the parent grid row using row layout. You can achieve this requirement by the following way.
 
-First, You can add the nested grid into the parent grid row by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellModelCollection~Add.html) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
+First, You can add the nested grid into the parent grid row by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellModelCollection.html#Syncfusion_Windows_Controls_Grid_GridCellModelCollection_Add_System_String_Syncfusion_Windows_Controls_Grid_GridCellModelBase_) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
 
-N> You need to specify the row layout, use [GridNestedAxisLayout.Shared](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the first parameter and the [GridNestedAxisLayout.Normal](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the second parameter of `GridCellNestedGridModel`.
+N> You need to specify the row layout, use [GridNestedAxisLayout.Shared](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the first parameter and the [GridNestedAxisLayout.Normal](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the second parameter of `GridCellNestedGridModel`.
 
 Next, you can add another nested grid inside the first nested grid by setting the specific range of first nested grid and again do this for adding another nested grid.
 
@@ -1679,9 +1679,9 @@ private GridModel GetThirdNestedGridWithSharedRowsModel()
 
 You can add the multiple number of nested grid into the parent grid column using column layout. You can achieve this requirement by the following way.
 
-First, You can add the nested grid into the parent grid column by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellModelCollection~Add.html) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the column of parent grid.
+First, You can add the nested grid into the parent grid column by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellModelCollection.html#Syncfusion_Windows_Controls_Grid_GridCellModelCollection_Add_System_String_Syncfusion_Windows_Controls_Grid_GridCellModelBase_) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the column of parent grid.
 
-N> You need to specify the column layout, use [GridNestedAxisLayout.Shared](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the second parameter and [GridNestedAxisLayout.Normal](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the first parameter of `GridCellNestedGridModel`.
+N> You need to specify the column layout, use [GridNestedAxisLayout.Shared](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the second parameter and [GridNestedAxisLayout.Normal](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in the first parameter of `GridCellNestedGridModel`.
 
 Next, you can add another nested grid inside the first nested grid by setting the specific range of first nested grid and again do this for adding another nested grid.
 
@@ -1838,9 +1838,9 @@ private GridModel GetSecondNestedGridWithSharedColumnssModel()
 
 ### Nested grid inside a covered with its rows and columns independent of parent grid
 
-You can add the nested grid into the parent grid row and column by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellModelCollection~Add.html) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
+You can add the nested grid into the parent grid row and column by using [grid.Model.CellModels.Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellModelCollection.html#Syncfusion_Windows_Controls_Grid_GridCellModelCollection_Add_System_String_Syncfusion_Windows_Controls_Grid_GridCellModelBase_) method and need to specify the cell type as **ScrollGrid** in the first parameter and set the nested cell grid model ([GridCellNestedGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCellNestedGridModel.html)) in the second parameter of this collection method. Before that, you must add a row and column to the nested grid and set the cell range for adding the nested grid to the row of parent grid.
 
-N> You need to specify the row and column layout, use `Normal` option of [GridNestedAxisLayout](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in both parameter of `GridCellNestedGridModel`.
+N> You need to specify the row and column layout, use `Normal` option of [GridNestedAxisLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridNestedAxisLayout.html) enum in both parameter of `GridCellNestedGridModel`.
 
 In this case, The nested grid maintains its own row heights and column widths. You can scroll through this grid without scrolling the parent grid. You can resize the rows and columns in the nested grid without affect the parent grid.
 

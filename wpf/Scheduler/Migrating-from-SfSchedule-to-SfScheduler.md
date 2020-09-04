@@ -93,7 +93,7 @@ Description</th></tr>
 <td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
-The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
+The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
 
 <table>
 <tr>
@@ -171,7 +171,7 @@ Description</th></tr>
 <td>Gets the type of appointment.</td></tr>
 </table>
 
-The following table compares the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) APIs,
+The following table compares the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) APIs,
 
 <table>
 <tr>

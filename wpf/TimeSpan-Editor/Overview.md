@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF TimeSpanEdit Overview
 
-[TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html) is a control which set or display the time as `Days: Hour: Min: Sec` format. The fields can be incremented or decremented using the up/down keys. 
+[TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) is a control which set or display the time as `Days: Hour: Min: Sec` format. The fields can be incremented or decremented using the up/down keys. 
 
 ![TimeSpanEdit control structure](Getting-Started_images/Control_Structure.png)
 
