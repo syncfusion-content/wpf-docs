@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-TabSplitter Items are placed horizontally or vertically by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Orientation.html) property. This is a dependency property which sets the orientation of the TabSplitter Item. It supports the following types of orientation.
+TabSplitter Items are placed horizontally or vertically by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html#Syncfusion_Windows_Tools_Controls_TabSplitterItem_Orientation) property. This is a dependency property which sets the orientation of the TabSplitter Item. It supports the following types of orientation.
 
 * Horizontal: TabSplitter Item in the TabSplitter is placed horizontally
 * Vertical: TabSplitter Item in the TabSplitter is placed vertically

@@ -95,7 +95,7 @@ namespace HierarchicalNavigatorSample
 
 ## Add items using HierarchyNavigatorItem
 
-You can add the items inside the HierarchyNavigator control using [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html).
+You can add the items inside the HierarchyNavigator control using [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html).
 
 {% tabs %}
 {% highlight XAML %}

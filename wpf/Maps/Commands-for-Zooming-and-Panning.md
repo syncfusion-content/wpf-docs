@@ -19,23 +19,23 @@ The Map control contains the following commands:
 
 ## ZoomIn Command
 
-[`ZoomIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomInCommand.html) command zooms in the map.
+[`ZoomIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomInCommand) command zooms in the map.
 
 ## ZoomOut Command
 
-[`ZoomOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomOutCommand.html) command zooms out the map.
+[`ZoomOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomOutCommand) command zooms out the map.
 
 ## Pan Command
 
-[`PanCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~PanCommand.html) is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
+[`PanCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_PanCommand) is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
 
 ## ZoomReset Command
 
-The [`ZoomResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomResetCommand.html) resets the ZoomLevel value of the Map control.
+The [`ZoomResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomResetCommand) resets the ZoomLevel value of the Map control.
 
 ## PanReset Command
 
-The [`PanResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~PanResetCommand.html) resets the map at its initial position; it resets the pan values.
+The [`PanResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_PanResetCommand) resets the map at its initial position; it resets the pan values.
 
 {% highlight xaml %}
 

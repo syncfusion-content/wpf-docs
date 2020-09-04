@@ -13,13 +13,13 @@ When you draw, resize, or move a diagramming element in the page, you can set it
 
 The `SnapSettings` class and its properties allows you to snap the shapes to the ruler subdivisions more easily.
 
-Refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapSettings_members.html) properties.
+Refer to the [SnapSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapSettings.html) properties.
 
 ## Snap-to-objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing diagram. A node can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in cyan shade color and its color code is #83F6F0.  
 
-Refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
+Refer to the members of [SnapToObject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
 Snapping to objects can be enabled by assigning values to the `SnapToObject` property of `SnapSettings` class. Default value is None.
 
@@ -118,7 +118,7 @@ diagram.SnapSettings = new SnapSettings()
 
 This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
+Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}

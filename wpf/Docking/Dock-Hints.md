@@ -53,7 +53,7 @@ Otherwise the provider will be displayed with 5 hints.
 
 ## Restrict docking by disabling inner and outer dock hints
 
-Dock hints of the DragProvider can be disabled / enabled through attached property [DockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockAbility.html) of the DockingManager.
+Dock hints of the DragProvider can be disabled / enabled through attached property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockAbility.html) of the DockingManager.
 
 ### All
 
@@ -497,11 +497,11 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-ma
 
 ## Restrict outer dockability
 
-By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To disabled of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~OuterDockAbilityProperty.html) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseOuterDockAbility.html) property is true.
+By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To disabled of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_OuterDockAbilityProperty) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseOuterDockAbility) property is true.
 
 ## Restrict docking at run-time
 
-You can disabled the dock hints at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PreviewDockHints_EV.html) event in the `DockingManager`. It helps to handle before displaying the dock hints when drag the windows in `DockingManager` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
+You can disabled the dock hints at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event in the `DockingManager`. It helps to handle before displaying the dock hints when drag the windows in `DockingManager` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
 
 <table>
 <tr>

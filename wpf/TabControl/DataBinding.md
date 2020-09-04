@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding tab items in WPF TabControl
 
-You can add a tab item using data binding in the WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+You can add a tab item using data binding in the WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Adding tab items using data binding
 
@@ -196,7 +196,7 @@ You can define the tab item content using `ContentTemplate` property. Otherwise,
 
 ##  Editing tab header
 
-By default, built-in `TextBox` is used as editor for the tab item header editing. You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
+By default, built-in `TextBox` is used as editor for the tab item header editing. You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EditHeaderTemplate) property.
 
 {% tabs %}
 {% highlight XAML %}

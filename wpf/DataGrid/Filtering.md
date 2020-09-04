@@ -72,7 +72,7 @@ N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data
 
 #### Improving performance while adding multiple FilterPredicates to the column in loop
 
-You can improve the performance of filtering by suspending the data operation while adding `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
+You can improve the performance of filtering by suspending the data operation while adding `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_BeginInit_System_Boolean_) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_EndInit) method, before and after the data operation.
 
 {% tabs %}
 {% highlight c# %}
@@ -581,7 +581,7 @@ void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 
 ## Show image in CheckBoxFilterControl instead of image path
 
-By default, in SfDataGrid image path is shown inside the CheckBoxFilterControl instead of image but you can show the image in CheckBoxFilterControl by setting [CheckBoxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CheckboxFilterControl~ItemTemplate.html)  as like below. 
+By default, in SfDataGrid image path is shown inside the CheckBoxFilterControl instead of image but you can show the image in CheckBoxFilterControl by setting [CheckBoxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CheckboxFilterControl.html#Syncfusion_UI_Xaml_Grid_CheckboxFilterControl_ItemTemplate)  as like below. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -652,7 +652,7 @@ public class StringToImageConverter : IValueConverter
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
 ## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
-By default, the default filter created by [ICollectionView.Filter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview.filter?view=netframework-4.8#System_ComponentModel_ICollectionView_Filter) and [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanUseViewFilter.html) property. 
+By default, the default filter created by [ICollectionView.Filter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview.filter?view=netframework-4.8#System_ComponentModel_ICollectionView_Filter) and [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property. 
 
 ## Functionality Customization
 
@@ -791,7 +791,7 @@ void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 
 ### Customize the FilterPopup size using GridFilterControl style
 
-You can customize the FilterPopup size using [FilterPopupHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridFilterControl~FilterPopupHeight.html) property by writing style of TargetType as GridFilterControl.
+You can customize the FilterPopup size using [FilterPopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridFilterControl.html#Syncfusion_UI_Xaml_Grid_GridFilterControl_FilterPopupHeight) property by writing style of TargetType as GridFilterControl.
 
 {% tabs %}
 {% highlight xaml %}

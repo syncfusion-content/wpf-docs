@@ -9,11 +9,11 @@ documentation: ug
 
 # WPF Pulsing Tile control
 
-The Pulsing Tile control (extended from [HubTileBase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase.html) class) allows to create a tile similar to music and video tiles in Windows Phone. The content zooms in/out randomly with random movement along the X-axis and Y-axis. This section explains about the supporting features of Pulsing Tile control.
+The Pulsing Tile control (extended from [HubTileBase](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html) class) allows to create a tile similar to music and video tiles in Windows Phone. The content zooms in/out randomly with random movement along the X-axis and Y-axis. This section explains about the supporting features of Pulsing Tile control.
 
 ## Setting header content
 
-Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_Header) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -67,7 +67,7 @@ grid.Children.Add(pulsingTile);
 
 ## Setting title content
 
-Title can be used to display updates and notifications in a tile. The content can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+Title can be used to display updates and notifications in a tile. The content can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_Title) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -121,7 +121,7 @@ grid.Children.Add(pulsingTile);
 
 ## Setting image
 
-The image acts as a pictorial representation of the purpose of tile control. The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
+The image acts as a pictorial representation of the purpose of tile control. The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ImageSource) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -148,7 +148,7 @@ grid.Children.Add(pulsingTile);
 
 ### Scaling animation
 
-Scaling animation causes the content of the tile to zoom in/out and it is achieved by setting the [PulseScale](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~PulseScale.html) property. The property specifies the translation range in the x-axis and y-axis while scaling the content.
+Scaling animation causes the content of the tile to zoom in/out and it is achieved by setting the [PulseScale](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfPulsingTile.html#Syncfusion_Windows_Controls_Notification_SfPulsingTile_PulseScale) property. The property specifies the translation range in the x-axis and y-axis while scaling the content.
 
 {% tabs %}
 {% highlight XAML %}
@@ -177,7 +177,7 @@ grid.Children.Add(pulsingTile);
 {% endhighlight %}
 {% endtabs %}
 
-The time required to complete a single scaling animation is achieved by setting the [PulseDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~PulseDuration.html) property.  
+The time required to complete a single scaling animation is achieved by setting the [PulseDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfPulsingTile.html#Syncfusion_Windows_Controls_Notification_SfPulsingTile_PulseDuration) property.  
 
 {% tabs %}
 {% highlight XAML %}
@@ -216,7 +216,7 @@ After applying pulse scale to the Pulsing Tile :
 
 ### Press animation
 
-The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html). The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.htm) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) is used to determine the time taken for the single tile press animation.
+The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ScaleDepth) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TilePressDuration). The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ScaleDepth) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TilePressDuration) is used to determine the time taken for the single tile press animation.
 
 {% tabs %}
 {% highlight XAML %}
@@ -243,13 +243,13 @@ grid.Children.Add(pulsingTile);
 {% endhighlight %}
 {% endtabs %}
 
-N> The tile press animation occurs only if the [OverrideDefaultStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**.
+N> The tile press animation occurs only if the [OverrideDefaultStates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_OverrideDefaultStates) property is said to be **false**.
 
 ## Translations
 
 ### Horizontal translation
 
-Horizontal translation allows the content of the tile to move from left to right along x-axis. The Pulsing Tile provides support for horizontal translation by using [RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~RadiusX.html) property. The property specifies the translation range of the content along the x-axis.
+Horizontal translation allows the content of the tile to move from left to right along x-axis. The Pulsing Tile provides support for horizontal translation by using [RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfPulsingTile.html#Syncfusion_Windows_Controls_Notification_SfPulsingTile_RadiusX) property. The property specifies the translation range of the content along the x-axis.
 
 {% tabs %}
 {% highlight XAML %}
@@ -280,7 +280,7 @@ grid.Children.Add(pulsingTile);
 
 ### Vertical translation
  
-Vertical translation allows the content of the tile to move up and down along the y-axis. The Pulsing Tile provides support for vertical translation by using [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~RadiusY.html) property. The property specifies the translation range of the content along the y-axis.
+Vertical translation allows the content of the tile to move up and down along the y-axis. The Pulsing Tile provides support for vertical translation by using [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfPulsingTile.html#Syncfusion_Windows_Controls_Notification_SfPulsingTile_RadiusY) property. The property specifies the translation range of the content along the y-axis.
 
 {% tabs %}
 {% highlight XAML %}
@@ -313,7 +313,7 @@ grid.Children.Add(pulsingTile);
 
 ### Duration of horizontal and vertical translation
 
-The time taken for translating the content along the x-axis and y-axis is achieved by setting the [TranslateDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~TranslateDuration.html) property.
+The time taken for translating the content along the x-axis and y-axis is achieved by setting the [TranslateDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfPulsingTile.html#Syncfusion_Windows_Controls_Notification_SfPulsingTile_TranslateDuration) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -345,7 +345,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples
 
 ## Grouping
 
-Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of pulsing tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
+Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_GroupName) property of pulsing tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
 
 {% tabs %}
 {% highlight XAML %}
@@ -427,7 +427,7 @@ wrapPanel.Children.Add(pulsingTileThree);
 Freezing provides support to stop animating the tile contents. Unfreezing provides support to keep the tile content animated. By the following two ways freezing/unfreezing can be set to the Pulsing Tile:                                                            
 ### Freezing/unfreezing via property
 
-The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to be **true**.
+The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_IsFrozen) property to be **true**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -460,7 +460,7 @@ grid.Children.Add(pulsingTile);
  
 ![wpf pulsingtile freeze a tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
 
-The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to **false**.
+The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_IsFrozen) property to **false**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -494,13 +494,13 @@ grid.Children.Add(pulsingTile);
 
 ### Freezing/unfreezing via methods
 
-The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) to freeze and unfreeze the animation by passing a Pulsing Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) as an argument. 
+The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_Freeze_Syncfusion_Windows_Controls_Notification_HubTileBase_) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_UnFreeze_Syncfusion_Windows_Controls_Notification_SfHubTile_) to freeze and unfreeze the animation by passing a Pulsing Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_GroupName) as an argument. 
 * Add required **System.Windows.Interactivity** assembly reference in application. 
 * Import schema for interactivity **http://schemas.microsoft.com/expression/2010/interactivity** in XAML or **using System.Windows.Interactivity** namespace in C#.
 
-N> The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class allows to set the freeze/unfreeze state of the tile after the tiles are loaded.
+N> The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html) class allows to set the freeze/unfreeze state of the tile after the tiles are loaded.
 
-A single tile or a group of tiles can be frozen by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) method.
+A single tile or a group of tiles can be frozen by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_Freeze_Syncfusion_Windows_Controls_Notification_HubTileBase_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -579,7 +579,7 @@ Single tile
 Group of tiles
 {:.caption}
 
-A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
+A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_UnFreeze_Syncfusion_Windows_Controls_Notification_SfHubTile_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -663,7 +663,7 @@ Once the tile is pressed, it is notified by the click event and the command prop
 
 ### Event
 
-The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
+The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html) event rises whenever the tile is pressed.
 
 {% tabs %}
 {% highlight XAML %} 
@@ -696,7 +696,7 @@ public class ClickEvent : TargetedTriggerAction<SfPulsingTile>
 
 ### Command binding
 
-Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern.
+Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_Command) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_CommandParameter) are used instead of click event in MVVM pattern.
 
 {% tabs %}
 {% highlight XAML %} 
@@ -770,7 +770,7 @@ public class Command : ICommand
 
 ### Customizing header
 
-Header of the tile can be customized either through [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) or [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as shown below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of the header by adding user-defined template.
+Header of the tile can be customized either through [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderStyle) or [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderTemplate) as shown below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderStyle) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderTemplate) is used to customize the visual appearance of the header by adding user-defined template.
 
 {% tabs %}
 {% highlight XAML %}
@@ -819,7 +819,7 @@ Header of the tile can be customized either through [HeaderStyle](https://help.s
 
 ### Customizing  title
 
-The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TitleStyle.html) property is used to customize the title of the tile by setting its appropriate properties.
+The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TitleStyle) property is used to customize the title of the tile by setting its appropriate properties.
 
 {% tabs %}
 {% highlight XAML %}

@@ -127,7 +127,7 @@ using Syncfusion.Windows.Tools.Controls;
 
 ## Setting label
 
-The label on the button is a text that explains its action to the end-user. Apply the text by using the [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~Label.html) property.
+The label on the button is a text that explains its action to the end-user. Apply the text by using the [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_Label) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -148,7 +148,7 @@ button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.Relat
 
 ## Setting size mode
 
-Size mode is used to render Dropdown Button control in different pre-defined sizes based on application demand. Apply the size mode by setting the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~SizeMode.html) property.
+Size mode is used to render Dropdown Button control in different pre-defined sizes based on application demand. Apply the size mode by setting the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode) property.
 
  The **SizeMode** is an enumeration which contains the following values:
 
@@ -224,7 +224,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\flaglarge.png", UriKind.Relat
 
 ## Setting image
 
-The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~SmallIcon.html) or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~LargeIcon.html) property.
+The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) property.
 
 * **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
 * **LargeIcon** — This property will be used to set the image when size mode is **Large**.
@@ -292,7 +292,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.Rela
 
 ## Setting icon width and height
 
-Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconWidth.html) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconHeight.html) properties respectively.
+Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconWidth) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconHeight) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

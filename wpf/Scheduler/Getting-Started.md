@@ -97,7 +97,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to `Appointments` property.
 
 ### Adding Appointments
-The [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Subject.html), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Location.html), and [IsAllDay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~IsAllDay.html) properties.
+The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location), and [IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) properties.
 
 {% tabs %}   
 {% highlight xaml %}
@@ -348,7 +348,7 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 #### Bind to SfScheduler appointment
 
-You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentMappingProperty.html) property.
+You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMappingProperty) property.
 
 {% tabs %}
 {% highlight xaml %}

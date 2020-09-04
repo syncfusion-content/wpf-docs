@@ -9,7 +9,7 @@ documentation: ug
 
 # Stencil in the WPF Diagram (SfDiagram)
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil_namespace.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped onto the diagram surface at any number of times.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped onto the diagram surface at any number of times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,16 +39,16 @@ Stencil stencil = new Stencil()
 
 ## How to add Symbol into the Stencil
 
-The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in Stencil that can be created using the following ways:
+The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in Stencil that can be created using the following ways:
  
  * Using the Diagram Elements 
  * SymbolViewModel
  
- The Stencil's [SymbolSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~SymbolSource.html) property is used to define the data source as a collection of objects (symbol,node,connector....) that needs to be populated as Symbols.
+ The Stencil's [SymbolSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) property is used to define the data source as a collection of objects (symbol,node,connector....) that needs to be populated as Symbols.
  
 ### Using the Diagram Elements
 
-Diagram elements such as [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [Connector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), and [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) can be used to visualize the Symbol.
+Diagram elements such as [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [Connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), and [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) can be used to visualize the Symbol.
  
 {% tabs %} 
 {% highlight xaml %}
@@ -162,7 +162,7 @@ public class SymbolCollection : ObservableCollection<Object>
 
 ### Using the SymbolViewModel
 
-The [SymbolViewModel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html) have [Symbol](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel~Symbol.html) and [SymbolTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel~SymbolTemplate.html) properties to visualize the `Symbol` on the stencil.
+The [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html) have [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolViewModel_Symbol) and [SymbolTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolViewModel_SymbolTemplate) properties to visualize the `Symbol` on the stencil.
 
 {% tabs %}
 
@@ -289,7 +289,7 @@ The width and height properties of symbol enables you to define the size of the 
 
 ## Symbol Groups
 
-The [SymbolGroupProvider](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html) groups the set of symbols into [SymbolGroup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroups.html) based on the [MappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider~MappingName.html) property.
+The [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html) groups the set of symbols into [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroups.html) based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -461,7 +461,7 @@ You can customize the appearance of a `SymbolGroup` by changing its Style. The f
 
 ## Symbol Filters
 
-The [SymbolFilterProvider](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is used to filter or hide the symbols by using the delegates. The [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~SymbolFilters.html) are the collection of SymbolFilterProvider.
+The [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is used to filter or hide the symbols by using the delegates. The [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) are the collection of SymbolFilterProvider.
 
 {% tabs %}
 {% highlight C# %}
@@ -491,7 +491,7 @@ There can be multiple SymbolFilters but only one filter can be selected at a tim
 
 ## ExpandMode
 
-The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
+The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
 
 |ExpandMode|Description|
 |----------|-----------|
@@ -503,7 +503,7 @@ The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syn
 
 ## Preview for Drag and Drop
 
-When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. Preview of the item can be enabled or disabled by using the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) `ShowPreview`.
+When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. Preview of the item can be enabled or disabled by using the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) `ShowPreview`.
 
 {% highlight C# %}
 
@@ -521,7 +521,7 @@ Here, stencil is an instance of Stencil.
 
 #### Customization of Preview for Drag and Drop
 
-You can customize the preview content by overriding the [PrepareDragDropPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~PrepareDragDropPreview.html) method of the Stencil. You can define your own customized preview to the [SymbolPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~SymbolPreview.html) property of the stencil.
+You can customize the preview content by overriding the [PrepareDragDropPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareDragDropPreview) method of the Stencil. You can define your own customized preview to the [SymbolPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolPreview) property of the stencil.
 
 {% tabs %}
 {% highlight C# %}
@@ -549,7 +549,7 @@ public class CustomStencil : Stencil
 
 ## Symbol categories
 
-There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code snippets to add all symbols to stencil. To avoid this, shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory_members.html "StencilCategory") class. You can add more than one category using the [Categories](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Categories.html) property of the stencil class.
+There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code snippets to add all symbols to stencil. To avoid this, shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html ) class. You can add more than one category using the [Categories](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Categories) property of the stencil class.
 
 `Categories` can be mentioned by using the following properties of `StencilCategory` class,
 
@@ -625,13 +625,13 @@ N> Custom symbol collections should be added in the App.xaml file.
 
 ### How to customize the default appearance of the symbols in the built-in categories
 
-Built-in symbol categories symbol sizes are equivalent to Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~PrepareSymbolViewModel.html) virtual method of the stencil class. Symbols can be modified by using the following properties of  `PrepareSymbolViewModel` method,
+Built-in symbol categories symbol sizes are equivalent to Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of  `PrepareSymbolViewModel` method,
 
 * `Item`: To modify the symbol and its properties.
 * `SymbolName`: To know the name of the symbol.
 * `CategoryName`: To know the name of the category.
 
-Also, you can decide whether a symbol can be added to stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~CanAddSymbol.html) virtual method of stencil class. 
+Also, you can decide whether a symbol can be added to stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_) virtual method of stencil class. 
 
 {% tabs %}
 {% highlight C# %}
@@ -683,20 +683,20 @@ public class StencilViewModel : Stencil
 
 ## Events
 
-* The `Expanded Event` and `Collapsed Event` are notified to provide interactions in the SymbolGroup. To explore about arguments refer to the [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html)
+* The `Expanded Event` and `Collapsed Event` are notified to provide interactions in the SymbolGroup. To explore about arguments refer to the [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html)
 
 * The `DragEnter Event` notifies when an element enter into the diagram from stencil.
 * The `DragLeave Event` notifies when an element leaves from the diagram.
 * The `DragOver Event` notifies when an element drag over another diagram element.
 * The `ItemDropEvent Event` notifies when an element is dropped on the diagram.. 
 
-To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
+To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
 
 
 ## How to restrict node dropped on Diagram
 
 The diagram provides support to cancel the drag and drop operation from the stencil to the diagram in two ways.
-* Using the `Cancel` argument of `ItemDropEventArgs`. For example, if you need to restrict drop for a particular node or based on some condition, then this argument will allow you to achieve the same. To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
+* Using the `Cancel` argument of `ItemDropEventArgs`. For example, if you need to restrict drop for a particular node or based on some condition, then this argument will allow you to achieve the same. To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
  
 * When the ESC key is pressed.
 
@@ -728,7 +728,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 
 ## Constraints
 
-The `Constraints` property of stencil allows you to enable or disable certain features. For more information about stencil constraints, refer to the [StencilConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.StencilConstraints.html).
+The `Constraints` property of stencil allows you to enable or disable certain features. For more information about stencil constraints, refer to the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html).
 
 ## See Also
 

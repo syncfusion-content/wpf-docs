@@ -9,21 +9,21 @@ documentation: ug
 
 # DateSelector in WPF SfDatePicker
 
-The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property. 
+The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_Value) property. 
 
 ![SfDateSelector](Features_images/Features_img3.png)
 
-The visual elements of the date selector can be customized using the [SelectorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorStyle.html) property.
+The visual elements of the date selector can be customized using the [SelectorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorStyle) property.
 
 ## Change the Cell templates
 
 We can changes the template for the Date, Month or Year selector by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
 
-N> The DataContext of Month, Date and Year selection cell is [DateTimeWrapper](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.DateTimeWrapper.html).
+N> The DataContext of Month, Date and Year selection cell is [DateTimeWrapper](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.DateTimeWrapper.html).
 
 ## Change the DayCell Template
 
-We can change the day selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~DayCellTemplate.html) property. In that, we can add like image, icon or text with the day numbers.
+We can change the day selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_DayCellTemplate) property. In that, we can add like image, icon or text with the day numbers.
 
 {% highlight xaml %}
 
@@ -64,7 +64,7 @@ We can change the day selector template by using the [DayCellTemplate](https://h
 
 ## Change the MonthCell Template
 
-We can change the month selector template by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~MonthCellTemplate.html) property. In that, we can add like image, icon or text with the month numbers.
+We can change the month selector template by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_MonthCellTemplate) property. In that, we can add like image, icon or text with the month numbers.
 
 {% highlight xaml %}
 
@@ -104,7 +104,7 @@ We can change the month selector template by using the [MonthCellTemplate](https
 
 ## Change the YearCell Template
 
-We can change the year selector template by using the [YearCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~YearCellTemplate.html) property. In that, we can add like image, icon or text with the year numbers.
+We can change the year selector template by using the [YearCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html#Syncfusion_Windows_Controls_Input_SfDateSelector_YearCellTemplate) property. In that, we can add like image, icon or text with the year numbers.
 
 {% highlight xaml %}
 
@@ -144,7 +144,7 @@ We can change the year selector template by using the [YearCellTemplate](https:/
 
 ## Change size of cells
 
-We can change the cell size in the `SfDateSelector` control by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemHeight.html) properties. The default value of the `SelectorItemWidth` and `SelectorItemHeight` properties is `80` and `70`. 
+We can change the cell size in the `SfDateSelector` control by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorItemWidth) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorItemHeight) properties. The default value of the `SelectorItemWidth` and `SelectorItemHeight` properties is `80` and `70`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -167,7 +167,7 @@ sfDatePicker.SelectorItemHeight = 100;
 
 ## DateSelector item spacing
  
-We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html) property. The default value of the `SelectorItemSpacing` property is `4`.
+We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorItemSpacing) property. The default value of the `SelectorItemSpacing` property is `4`.
 
 {% tabs %}
 {% highlight XAML %}

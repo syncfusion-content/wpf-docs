@@ -94,7 +94,7 @@ this.Content = percentTextBox;
 
 ## Setting Value
 
-The percent value of the `PercentTextBox` can be set by using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property.
+The percent value of the `PercentTextBox` can be set by using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -160,7 +160,7 @@ class ViewModel : NotificationObject
 
 ## Value Changed Notification
 
-The `PercentTextBox` control can notifies the percent value changes through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValueChanged_EV.html) event. You can get old percent value and new percent value from `OldValue` and `NewValue` properties in `PercentValueChanged` event.
+The `PercentTextBox` control can notifies the percent value changes through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) event. You can get old percent value and new percent value from `OldValue` and `NewValue` properties in `PercentValueChanged` event.
 
 {%tabs%}
 {% highlight xaml %}
@@ -193,7 +193,7 @@ private void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPr
 
 ## Min Max Value Restriction
 
-The `PercentValue` of `PercentTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MaxValue.html) properties. It allows the user to enter the percent value between `MinValue` and `MaxValue`. 
+The `PercentValue` of `PercentTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MaxValue) properties. It allows the user to enter the percent value between `MinValue` and `MaxValue`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -218,7 +218,7 @@ percentTextBox.PercentValue = 100;
 
 ## Step Interval to increase or decrease the value
 
-The `PercentTextBox` control allows to increase or decrease the percent value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
+The `PercentTextBox` control allows to increase or decrease the percent value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_ScrollInterval) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ percentTextBox.ScrollInterval = 4;
 
 ## Formatting the value
 
-You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSeparator.html), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSizes.html), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalDigits.html), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalSeparator.html), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentNegativePattern.html), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentPositivePattern.html), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentageSymbol.html) properties of `PercentTextBox`.
+You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NumberFormat) property or the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSeparator), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentGroupSizes), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalSeparator), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentNegativePattern), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentPositivePattern), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentageSymbol) properties of `PercentTextBox`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -267,7 +267,7 @@ percentTextBox.PercentGroupSeparator = "*";
 
 ## Setting the Culture
 
-The `PercentTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `PercentTextBox` percent value based on the respective culture.
+The `PercentTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_Culture) property. The `Culture` is used to format the decimal separator and group separator of the `PercentTextBox` percent value based on the respective culture.
 
 {%tabs%}
 {% highlight xaml %} 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Creating tab groups in WPF DocumentContainer
 
-you can create tab groups for the tabitem of TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging and also using the options in context menu items.
+you can create tab groups for the tabitem of TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging and also using the options in context menu items.
 
 ## Creating tab groups using context menu item
 
@@ -31,7 +31,7 @@ You can create a new horizontal or vertical tab groups for the TDI `DocumentCont
 
 ![Tab Groups created by ContextMenuItem](Creating-Tab-Groups_images/Tabgroup_Contextmenu.gif)
 
-N> Tab groups created only in TDI mode of the `DocumentContainer`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property value as `TDI`.
+N> Tab groups created only in TDI mode of the `DocumentContainer`. You can enable it by setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property value as `TDI`.
 
 ## Creating tab groups using tabitem dragging
 
@@ -55,7 +55,7 @@ You can create new horizontal tab group for the TDI `DocumentContainer` tab item
 
 ## Creating tab groups programmatically
 
-You can programmatically creates a tab group on horizontally or vertically by using the [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CreateHorizontalTabGroup.html) and [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CreateVerticalTabGroup.html) methods.
+You can programmatically creates a tab group on horizontally or vertically by using the [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateHorizontalTabGroup_System_Windows_UIElement_) and [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CreateVerticalTabGroup_System_Windows_UIElement_) methods.
 
 {% tabs %}
 {% highlight xaml %}

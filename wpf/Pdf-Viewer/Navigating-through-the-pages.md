@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigating through the pages
 
-PDF Viewer allows you to navigate through the pages of the PDF document using the [GotoPage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GotoPage.html) method. The following code example illustrates the navigation to page 2 of the PDF document.
+PDF Viewer allows you to navigate through the pages of the PDF document using the [GotoPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GotoPage_System_Int32_) method. The following code example illustrates the navigation to page 2 of the PDF document.
 
 {% tabs %}
 {% highlight C# %}
@@ -51,7 +51,7 @@ pdfviewer1.GotoPage(2)
 {% endtabs %}
 
 ## Navigate to the horizontal and vertical offset
-You can now scroll to the given horizontal and vertical offset of the PDF document programmatically using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ScrollTo(Double,Double).html) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to scroll the PDF document to the horizontal and vertical offset of 160 and 400 respectively.
+You can now scroll to the given horizontal and vertical offset of the PDF document programmatically using the [ScrollTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ScrollTo_System_Double_) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Refer to the following code to scroll the PDF document to the horizontal and vertical offset of 160 and 400 respectively.
 
 {% tabs %}
 {% highlight C# %}

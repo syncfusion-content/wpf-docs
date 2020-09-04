@@ -166,10 +166,10 @@ public class Employee
 
 {% endhighlight %}
 
-3.To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property to `IEnumerable` implementation.
+3.To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property to `IEnumerable` implementation.
 
 
-Bind the collection created in previous step to [AutoCompleteSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property in XAML by setting EmployeeViewModel as `DataContext`.
+Bind the collection created in previous step to [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property in XAML by setting EmployeeViewModel as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +255,7 @@ In None mode, the search algorithm starts even when the item is not available in
 </tr>
 </table>
 
-N> The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
+N> The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteModeProperty) is None.
 
 
 {% tabs %}
@@ -285,11 +285,11 @@ textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 By default single selection is enable in AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property to specify whether a single or multiple selection.
 
-Index of the selected items can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property. 
+Index of the selected items can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property. 
 
-The selected items of the AutoComplete can be retrieved using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property for single selection. 
+The selected items of the AutoComplete can be retrieved using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property for single selection. 
 
-In Multi-selection, [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) property contains the items that are selected in the control.
+In Multi-selection, [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property contains the items that are selected in the control.
 
 The selected values of the AutoComplete can be retrieved using the [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property.
 

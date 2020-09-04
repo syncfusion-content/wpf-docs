@@ -209,7 +209,7 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Add custom stamps in the toolbar
 
-The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to add the custom stamps as images in the toolbar using the [StampAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerToolbarSettings~StampAnnotations.html) collection. You can select and include the stamp at the required location of the page using a mouse-tap. Refer to the following code to clear the existing standard stamps and to add a custom stamp in the toolbar.
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to add the custom stamps as images in the toolbar using the [StampAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerToolbarSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerToolbarSettings_StampAnnotations) collection. You can select and include the stamp at the required location of the page using a mouse-tap. Refer to the following code to clear the existing standard stamps and to add a custom stamp in the toolbar.
 
 {% tabs %}
 {% highlight C# %}

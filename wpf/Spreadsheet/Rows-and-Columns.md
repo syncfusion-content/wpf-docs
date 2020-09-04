@@ -28,10 +28,10 @@ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
-* [RowsInserted](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsInserted_EV.html)
-* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
+* [RowsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsInserted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -69,10 +69,10 @@ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
-* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
-* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
+* [RowsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGridModel.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
 
 ## Hide Rows and Columns
 
-SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
+SfSpreadsheet provides support to hide rows/columns and this can be done by [HideRow](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_HideRow_System_Int32_) and [HideColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_HideColumn_System_Int32_) method
 
 {% tabs %}
 {% highlight c# %}
@@ -110,7 +110,7 @@ spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
 
 ## Unhide Rows and Columns
 
-Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
+Unhide the rows/columns in SfSpreadsheet can be done by [ShowRow](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ShowRow_System_Int32_System_Boolean_) and [ShowColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ShowColumn_System_Int32_System_Boolean_) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ spreadsheet.ActiveGrid.FrozenColumns = 1;
 
 SfSpreadsheet provides support to fit the rows or columns based on its content at run time.
 
-You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
+You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_AutofitRows) and  [AutoFitColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_AutofitColumns) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_SetRowHeight_System_Int32_System_Int32_System_Double_) and [SetColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_SetColumnWidth_System_Int32_System_Int32_System_Double_) methods of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}

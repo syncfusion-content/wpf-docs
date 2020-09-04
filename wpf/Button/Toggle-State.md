@@ -9,9 +9,9 @@ documentation: ug
 
 # Toggle State in WPF Button (ButtonAdv)
 
-The button control can also be used as a toggle button, similar to the on/off view when the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property is set to **true**. The default value of this property is **false**.
+The button control can also be used as a toggle button, similar to the on/off view when the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCheckable) property is set to **true**. The default value of this property is **false**.
 
-N> In addition to [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property, the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsChecked.html) property helps to check the button by default. In other words, during initial rendering, the button will appear in **on** state using the later property.
+N> In addition to [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCheckable) property, the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsChecked) property helps to check the button by default. In other words, during initial rendering, the button will appear in **on** state using the later property.
 
 {% tabs %}
 {% highlight xaml %}

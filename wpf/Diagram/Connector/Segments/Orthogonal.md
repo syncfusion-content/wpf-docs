@@ -13,7 +13,7 @@ Orthogonal segments are used to create line segments that are perpendicular at t
 
 ## How to create orthogonal segments
 
-To create a orthogonal segment, specify the segment as [OrthogonalSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
+To create a orthogonal segment, specify the segment as [OrthogonalSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html) and add it to the connector's segments collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ When necessary, some segments are added or removed automatically, when dragging 
 
 ## How to customize the orthogonal segments
 
-'n' number of orthogonal segments can be added within the source point and target point with required length and desired direction using [Length](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OrthogonalSegment~Length.html) and [Direction](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OrthogonalSegment~Direction.html) properties of `OrthogonalSegment` class.
+'n' number of orthogonal segments can be added within the source point and target point with required length and desired direction using [Length](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html#Syncfusion_UI_Xaml_Diagram_OrthogonalSegment_Length) and [Direction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.OrthogonalSegment.html#Syncfusion_UI_Xaml_Diagram_OrthogonalSegment_Direction) properties of `OrthogonalSegment` class.
 
 {% tabs %}
 {% highlight xaml %}

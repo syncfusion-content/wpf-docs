@@ -11,7 +11,7 @@ documentation: ug
 
 ### Define QuickCommand
 
-Quick Commands are used to execute the commonly or frequently used commands around the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeViewModel_members.html), [Connectors](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel_members.html) and [Groups](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GroupViewModel_members.html). There are 3 default Quick Commands for Nodes and Groups to execute Draw, Delete and Duplicate commands.For example, if you select the node then the quick command of the node will get visible.
+Quick Commands are used to execute the commonly or frequently used commands around the [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [Connectors](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html) and [Groups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html). There are 3 default Quick Commands for Nodes and Groups to execute Draw, Delete and Duplicate commands.For example, if you select the node then the quick command of the node will get visible.
 
 ![frequently used commands around the Nodes](Interaction_images/QuickCommand_img.png)
 
@@ -60,19 +60,19 @@ SfDiagram provides support to define custom quick command around the Nodes, Conn
 
 ### Customize quick command appearance
 
-Appearance of the [QuickCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel_members.html) can be customized by using [Shape](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~Shape.html), [ShapeStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~ShapeStyle.html), [Content](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~Content.html) and [ContentTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~ContentTemplate.html) properties.
+Appearance of the [QuickCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html) can be customized by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_Shape), [ShapeStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_ShapeStyle), [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_Content) and [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_ContentTemplate) properties.
 
 ![custom appearance of quick command](Interaction_images/quickcommand_img3.png)
 
-N> By default QuickCommand will host on Node. [VisibilityMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~VisibilityMode.html) property is to define the host of the QuickCommand on either Node or Connector or both.    
+N> By default QuickCommand will host on Node. [VisibilityMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_VisibilityMode) property is to define the host of the QuickCommand on either Node or Connector or both.    
 
 ### Alignment
 
 QuickCommand can be aligned relative to boundaries of the Node or segments of the Connector. 
 
-* [OffsetX](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~OffsetX.html) and [OffsetY](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~OffsetY.html) property of QuickCommand is used to align the QuickCommand based on fractions. The default value is 0.5.
-* [HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~HorizontalAlignment.html) and [VerticalAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~VerticalAlignment.html) properties are used to align the quick commands for horizontal and vertical positions.
-* [Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~Margin.html) is an absolute value used to add some blank space in any one of its four sides.
+* [OffsetX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_OffsetX) and [OffsetY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_OffsetY) property of QuickCommand is used to align the QuickCommand based on fractions. The default value is 0.5.
+* [HorizontalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_HorizontalAlignment) and [VerticalAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_VerticalAlignment) properties are used to align the quick commands for horizontal and vertical positions.
+* [Margin](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel.html#Syncfusion_UI_Xaml_Diagram_QuickCommandViewModel_Margin) is an absolute value used to add some blank space in any one of its four sides.
 
 The Alignment of QuickCommand is similar  to [Annotation Alignment](https://help.syncfusion.com/wpf/sfdiagram/annotation/positioningandappearance).   
 

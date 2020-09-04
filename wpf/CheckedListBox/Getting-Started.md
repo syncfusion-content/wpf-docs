@@ -97,7 +97,7 @@ public partial class MainWindow : Window {
 
 ## Populating items using CheckListBoxItem
 
-You can add the items inside the `CheckListBox` control using [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
+You can add the items inside the `CheckListBox` control using [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -200,13 +200,13 @@ checkListBox.DisplayMemberPath = "Name";
 
 ## Check or Uncheck items
 
-The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. Also, the checked state of an item can be handled using the `Space` key. If we wants to make some item as checked using programmatically, add that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection.
+The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. Also, the checked state of an item can be handled using the `Space` key. If we wants to make some item as checked using programmatically, add that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) collection.
 
 ![CheckListBox items check and uncheck](Getting-Started_images/CheckItems.gif)
 
 ## Checked event notification
 
-When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~ItemChecked_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -240,7 +240,7 @@ private void CheckListBox_ItemChecked(object sender, ItemCheckedEventArgs e)
 
 ## Get list of checked items
 
-The `CheckListBox` control gets all the checked items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) property. We can also get the currently selected item which is in either checked or unchecked state by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItem.html) property.
+The `CheckListBox` control gets all the checked items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) property. We can also get the currently selected item which is in either checked or unchecked state by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItem) property.
 
 ![CheckListBox with checked items count](Getting-Started_images/CheckItems_Count.gif)
 

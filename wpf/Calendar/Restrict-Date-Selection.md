@@ -9,11 +9,11 @@ documentation: ug
 
 # Restricting date selection in WPF CalendarEdit
 
-This section explains how to restrict a date within a particular range by using [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
+This section explains how to restrict a date within a particular range by using [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
 ## Restrict date selection within minimum and maximum date
 
-You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MaxDate.html) in `CalendarEdit` control.
+You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_MinDate) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_MaxDate) in `CalendarEdit` control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,7 +41,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ### Show disabled dates 
 
-If you want to show the disabled dates which are not within the range of minimum and maximum date limits, use the [MinMaxHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinMaxHidden.html) property value as `false`. The default value of `MinMaxHidden` property is `true`. 
+If you want to show the disabled dates which are not within the range of minimum and maximum date limits, use the [MinMaxHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_MinMaxHidden) property value as `false`. The default value of `MinMaxHidden` property is `true`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,7 +68,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Restrict date selection
 
-If you want to restrict the user to select the date, use the [DisableDateSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DisableDateSelection.html) property value as `true`. However, you can select any month or year. The default value of `DisableDateSelection` property is `false`.
+If you want to restrict the user to select the date, use the [DisableDateSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_DisableDateSelection) property value as `true`. However, you can select any month or year. The default value of `DisableDateSelection` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Block dates
 
-If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection. You can add more block out date ranges to the `BlackoutDates` collection.
+If you want to block particular dates from the date selection, add that date ranges to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_BlackoutDates) collection. You can add more block out date ranges to the `BlackoutDates` collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,7 +122,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Custom appearance of blocked days
 
-You can change the background and cross-mark color of the block out days by using the [BlackoutDatesBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBackground.html) and [BlackoutDatesCrossBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesCrossBrush.html) properties. You can also change the foreground and border color of the block out dates by using the [BlackoutDatesForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesForeground.html) and [BlackoutDatesBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBorderBrush.html) properties. The default value of `BlackoutDatesBackground` is `Transparent` and `BlackoutDatesCrossBrush` is `Black`. The default value of `BlackoutDatesForeground` is `White` and `BlackoutDatesBorderBrush` is `Transparent`.
+You can change the background and cross-mark color of the block out days by using the [BlackoutDatesBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_BlackoutDatesBackground) and [BlackoutDatesCrossBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_BlackoutDatesCrossBrush) properties. You can also change the foreground and border color of the block out dates by using the [BlackoutDatesForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_BlackoutDatesForeground) and [BlackoutDatesBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_BlackoutDatesBorderBrush) properties. The default value of `BlackoutDatesBackground` is `Transparent` and `BlackoutDatesCrossBrush` is `Black`. The default value of `BlackoutDatesForeground` is `White` and `BlackoutDatesBorderBrush` is `Transparent`.
 
 ![Blockout days custom appearance](Restrict-Date-Selection_images/BlockOut.png)
 
@@ -165,7 +165,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Hide previous and next month days
 
-If you want show only the currently displaying month's days without displaying previous and next month's days, use the [ShowPreviousMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowPreviousMonthDays.html) and [ShowNextMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowNextMonthDays.html) property value as `false`. The default value of `ShowPreviousMonthDays` and `ShowNextMonthDays` property is `true`.
+If you want show only the currently displaying month's days without displaying previous and next month's days, use the [ShowPreviousMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_ShowPreviousMonthDays) and [ShowNextMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_ShowNextMonthDays) property value as `false`. The default value of `ShowPreviousMonthDays` and `ShowNextMonthDays` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -188,7 +188,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Readonly support
 
-If you want to restrict the user to select the date or month or year, use the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowSelection.html) property value as `false`. However, selected date can be changed programmatically in readonly mode and the user can only navigate to any month or year. The default value of `AllowSelection` property is `true`.
+If you want to restrict the user to select the date or month or year, use the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_AllowSelection) property value as `false`. However, selected date can be changed programmatically in readonly mode and the user can only navigate to any month or year. The default value of `AllowSelection` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

@@ -151,7 +151,7 @@ public class ViewModel
 
 ## Spin button alignment
 
-The spin button’s position in the DomainUpDown control can be changed using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDomainUpDown~SpinButtonsAlignment.html) property.
+The spin button’s position in the DomainUpDown control can be changed using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property.
 
 {% tabs %}
 {% highlight XAML %}

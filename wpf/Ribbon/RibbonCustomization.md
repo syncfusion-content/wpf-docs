@@ -263,7 +263,7 @@ Finally, the Items gets displayed in the QAT
 
 ## Add custom QAT items
 
-Ribbon control provides an option to add items to the QAT that will not be present in the Ribbon. These items can be defined in the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) collection of the **QuickAccessToolbar** and can be accessed from the QAT Window in the **"Commands Not in the Ribbon"** and **"All Commands"** section. 
+Ribbon control provides an option to add items to the QAT that will not be present in the Ribbon. These items can be defined in the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) collection of the **QuickAccessToolbar** and can be accessed from the QAT Window in the **"Commands Not in the Ribbon"** and **"All Commands"** section. 
 
 {% tabs %}
 
@@ -318,13 +318,13 @@ Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton)
 
 {% endtabs %}
 
-Once the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) are added to the Quick Access Toolbar using the **Add** button, it will be visible in the Ribbon QAT and in the QAT Dropdown menu. The visibility of this item in the Ribbon QAT can be toggled by checking/unchecking from the QAT Dropdown menu. 
+Once the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) are added to the Quick Access Toolbar using the **Add** button, it will be visible in the Ribbon QAT and in the QAT Dropdown menu. The visibility of this item in the Ribbon QAT can be toggled by checking/unchecking from the QAT Dropdown menu. 
 
 ![Adding CustomQATItem to the QAT](AddingItemstoQuickAccessToolBar_images/Adding_CustomQATItem_To_QAT.png)
 
 ![Accessing the CustomQATItem through QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/CustomQATItem_in_DropDownMenu_QAT.png)
 
-The added [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) in the QAT Dropdown menu can be removed through the QAT Window using the **Remove** button. 
+The added [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) in the QAT Dropdown menu can be removed through the QAT Window using the **Remove** button. 
 
 ![Removing CustomQATITem from the QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/Removing_CustomQATItem_from_Dropdown.png)
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # NewButton Feature in TabControl (TabControlExt)
 
-This section explains how to create new tab items using new button and its UI customization in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+This section explains how to create new tab items using new button and its UI customization in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
 ## Adding New tab button and new tab item
 
-You can add a new tab item at runtime by clicking the new button. You can enable it by using the [IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property. You should handle the click action of the New Button and add a new tab items to `TabControl` by using the [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonClick_EV.html) event. The new button can be aligned first or last position in the tab item header panel by using the [NewButtonAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonAlignment.html) property. The default value of `IsNewButtonEnabled` property is `false` and `NewButtonAlignment` property is `Last`.
+You can add a new tab item at runtime by clicking the new button. You can enable it by using the [IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonEnabled) property. You should handle the click action of the New Button and add a new tab items to `TabControl` by using the [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) event. The new button can be aligned first or last position in the tab item header panel by using the [NewButtonAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonAlignment) property. The default value of `IsNewButtonEnabled` property is `false` and `NewButtonAlignment` property is `Last`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -61,7 +61,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Auto hide new button when no child tab item
 
-The `TabControl` automatically hides the new button on when no child tab item present in the `TabControl`. If you want to always show the new button, use the [IsNewButtonClosedonNoChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonClosedonNoChild.html) property value as `false`. The default value of `IsNewButtonClosedonNoChild` property is `true`.
+The `TabControl` automatically hides the new button on when no child tab item present in the `TabControl`. If you want to always show the new button, use the [IsNewButtonClosedonNoChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonClosedonNoChild) property value as `false`. The default value of `IsNewButtonClosedonNoChild` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -86,7 +86,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Custom template for the new button
 
-If you wants to change the UI for the new button, use the [NewTabButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewTabButtonTemplate.html) property. 
+If you wants to change the UI for the new button, use the [NewTabButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewTabButtonTemplate) property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -112,7 +112,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Change background of new button
 
-If you want to change the background of the new button, use the [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonBackground.html) property. The default value of `NewButtonBackground` property is `null`.
+If you want to change the background of the new button, use the [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonBackground) property. The default value of `NewButtonBackground` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}

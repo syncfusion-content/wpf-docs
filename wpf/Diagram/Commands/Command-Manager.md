@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Manager in WPF Diagram(SfDiagram)
 
-The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map the user gestures (keyboard, mouse) with SfDiagram commands and helps to include new gesture commands in SfDiagram. Refer to the following table for built-in commands with Key gesture and Mouse gesture.
+The [CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map the user gestures (keyboard, mouse) with SfDiagram commands and helps to include new gesture commands in SfDiagram. Refer to the following table for built-in commands with Key gesture and Mouse gesture.
 
 List of Commands and Key Gesture:
 
@@ -63,7 +63,7 @@ N> When different commands are registered for the same key / mouse gestures, you
 ### Custom command
 
 CommandManager provides support to define custom commands. The custom commands are executed when the specified key gesture is recognized.
-The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GestureCommand_members.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gesture_members.html) help you to define a custom command.
+The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) help you to define a custom command.
 
 The following code example represents how to define custom command to Save Command (Control + S).
 

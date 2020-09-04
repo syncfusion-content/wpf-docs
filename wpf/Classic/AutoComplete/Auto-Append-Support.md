@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Append Support
 
-Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html) property.
+Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsAutoAppend) property.
 
 ![Auto append support](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
@@ -18,7 +18,7 @@ Auto Append
 
 ## Adding auto append support to an application 
 
-If the [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html) property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
+If the [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsAutoAppend) property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,11 +38,11 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend 
 
 ### Properties
 
-* [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html)
+* [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsAutoAppend)
 
 ### Events
 
-* [IsAutoAppendChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppendChanged_EV.html)
+* [IsAutoAppendChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html)
 
 ## Sample link
 

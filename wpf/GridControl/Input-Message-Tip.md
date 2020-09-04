@@ -9,11 +9,11 @@ documentation: ug
 
 # Input Message Tip in WPF GridControl
 
-The input message tip can be added to individual cells, rows and columns to show external message of a specific cell when the cell is activated. The input message tip service can be enabled by setting the [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridTooltipService~SetShowTooltips.html) attached property to `true`. Tooltip for particular cell or row or column can be enabled by setting the [GridStyleInfo.ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowDataValidationTooltip.html) property.
+The input message tip can be added to individual cells, rows and columns to show external message of a specific cell when the cell is activated. The input message tip service can be enabled by setting the [GridTooltipService.SetShowTooltips](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTooltipService.html#Syncfusion_Windows_Controls_Grid_GridTooltipService_SetShowTooltips_System_Windows_DependencyObject_System_Boolean_) attached property to `true`. Tooltip for particular cell or row or column can be enabled by setting the [GridStyleInfo.ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowDataValidationTooltip) property.
 
 ## Input Message Tip for particular cell
 
-The input message tip displayed for any cell by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowDataValidationTooltip.html) and the message tip can be customized by setting [DataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~DataValidationTooltip.html) property.
+The input message tip displayed for any cell by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowDataValidationTooltip) and the message tip can be customized by setting [DataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_DataValidationTooltip) property.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ grid.Model[1, 2].ShowDataValidationTooltip = true;
 
 ## Input Message Tip for row and column
 
-The input message tip can be displayed for any row or column by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowDataValidationTooltip.html) and the message tip can be customized by setting [DataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~DataValidationTooltip.html) property.
+The input message tip can be displayed for any row or column by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowDataValidationTooltip) and the message tip can be customized by setting [DataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_DataValidationTooltip) property.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol
 
 ## Set Input Message Tip using QueryCellInfo event
 
-You can set the input message tip for specific cell or row or column by using [QueryCellInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModel~QueryCellInfo_EV.html) event.
+You can set the input message tip for specific cell or row or column by using [QueryCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html) event.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol
 
 ## Show or hide Input Message Tip
 
-You can show or hide the input message tip for specific cell or row or column by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowDataValidationTooltip.html) property to `false`.
+You can show or hide the input message tip for specific cell or row or column by setting the [ShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_ShowDataValidationTooltip) property to `false`.
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ grid.Model[1, 2].ShowDataValidationTooltip = false;
 
 ## Identify whether cell has Input Message Tip
 
-The [HasShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~HasShowDataValidationTooltip.html) property is used to identify whether the cell has an input message tip in a cell or row or column in GridControl. You can also highlight the cell or row or column applied to the input message tip.
+The [HasShowDataValidationTooltip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_HasShowDataValidationTooltip) property is used to identify whether the cell has an input message tip in a cell or row or column in GridControl. You can also highlight the cell or row or column applied to the input message tip.
 
 {% tabs %}
 
@@ -165,9 +165,9 @@ private void Grid_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.
 
 ## Customize the Input Message Tip
 
-The input message tip can be customized by defining DataTemplate. The DataTemplate can be assigned to the [GridStyleInfo.DataValidationTooltipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~DataValidationTooltipTemplateKey.html) property. If you are using inputTextmessage1 then you need to assign template to its corresponding template key property namely `GridStyleInfo.DataValidationTooltipTemplateKey`.
+The input message tip can be customized by defining DataTemplate. The DataTemplate can be assigned to the [GridStyleInfo.DataValidationTooltipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html#Syncfusion_Windows_Controls_Grid_GridStyleInfo_DataValidationTooltipTemplateKey) property. If you are using inputTextmessage1 then you need to assign template to its corresponding template key property namely `GridStyleInfo.DataValidationTooltipTemplateKey`.
 
-[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of input message tip.
+[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of input message tip.
 
 {% tabs %}
 

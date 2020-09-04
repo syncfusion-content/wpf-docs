@@ -426,7 +426,7 @@ The visibility of ports depends on the properties of `MouseOver`, `Default`, `Co
 | ValidConnection |Specifies to visible the port when mousehover the DiagramElement and enable the PortConstraints as InConnect and Outconnect. |
 | Visible | Port is always visible for the DiagramElement. |
 
-To learn more about PortVisibility, refer to [PortVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
+To learn more about PortVisibility, refer to [PortVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
 
 ## Connection direction
 
@@ -458,7 +458,7 @@ port.ConnectionDirection = ConnectionDirection.Right;
 #### After ConnectionDirection
 ![After ConnectionDirection](Port_images/rightdirection.PNG)
 
-For more information , refer to [ConnectionDirection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html)
+For more information , refer to [ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html)
 
 ## Appearance
 
@@ -524,7 +524,7 @@ The `PortChangedEvent` will get invoked when you drag the port.
  
 * DockPort: The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
 
- To explore about arguments, refer to [PortChangedEvent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
+ To explore about arguments, refer to [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 
 ## Constraints
 

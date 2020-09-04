@@ -9,23 +9,23 @@ documentation: ug
 
 # Selecting Items
 
-Items can be selected programmatically using the properties [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedIndex.html), [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItem.html) and [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItems.html).
+Items can be selected programmatically using the properties [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex), [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) and [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItems).
 
 ## Selecting item using SelectedIndex
 
-[SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedIndex.html) property is used to select an item using its index. It contains the index of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
+[SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndex) property is used to select an item using its index. It contains the index of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
 ## Selecting item using SelectedItem
 
-[SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItem.html) property is used to select an item using its instance. It contains the instance of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
+[SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItem) property is used to select an item using its instance. It contains the instance of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
 ## Retrieving the selected items
 
-[SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItems.html) property contains a collection of selected items instances for all the SelectionModes. It is a read only property and it cannot be set.
+[SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedItems) property contains a collection of selected items instances for all the SelectionModes. It is a read only property and it cannot be set.
 
 ## Retrieving the selected item indices
 
-[SelectedIndices](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedIndices.html) property contains a collection of selected items indices for all the SelectionModes. It is a read only property and it cannot be set.
+[SelectedIndices](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectedIndices) property contains a collection of selected items indices for all the SelectionModes. It is a read only property and it cannot be set.
 
 Here is an example showing the functioning of these properties in which items are selected in run time by touch: 
 
@@ -140,7 +140,7 @@ Here is an example showing the functioning of these properties in which items ar
 
 ## Selecting item using IsSelected
 
-`SfAccordionItem` has a property [IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~IsSelected.html) that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `True` based on the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionMode.html).
+`SfAccordionItem` has a property [IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html#Syncfusion_Windows_Controls_Layout_SfAccordionItem_IsSelected) that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `True` based on the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode).
 
 * IsSelected=true – Item is expanded
 * IsSelected=false – Item is collapsed
@@ -185,7 +185,7 @@ Here is an example showing the functioning of these properties in which items ar
 
 {% endtabs %}
 
-Here is an example showing the behavior of this property by binding [SfAccordionItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~IsSelected.html) property to CheckBox.IsChecked property in Two-way.
+Here is an example showing the behavior of this property by binding [SfAccordionItem.IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html#Syncfusion_Windows_Controls_Layout_SfAccordionItem_IsSelected) property to CheckBox.IsChecked property in Two-way.
 
 {% tabs %}
 
@@ -237,12 +237,12 @@ Here is an example showing the behavior of this property by binding [SfAccordion
 
 ## Checking the lock state of an item
 
-`SfAccordionItem` provides a read-only property [IsLocked](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~IsLocked.html) to check whether an item is locked or not. An accordion item is said to be locked when it cannot be unselected/collapsed. 
+`SfAccordionItem` provides a read-only property [IsLocked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html#Syncfusion_Windows_Controls_Layout_SfAccordionItem_IsLocked) to check whether an item is locked or not. An accordion item is said to be locked when it cannot be unselected/collapsed. 
 For example: In One SelectionMode, the selected item cannot be collapsed directly by clicking on its header, it is locked. It can be unlocked by selecting another accordion item, now the newly selected item is locked.
 
 ## Select All Items
 
-`SfAccordion` provides a method [SelectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectAll.html) to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
+`SfAccordion` provides a method [SelectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectAll) to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
 
 {% tabs %}
 
@@ -262,7 +262,7 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
  
 ## Unselect All Items
 
-`SfAccordion` provides a method [UnselectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~UnselectAll.html) to unselect all the items. In One [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionMode.html), there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
+`SfAccordion` provides a method [UnselectAll](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_UnselectAll) to unselect all the items. In One [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode), there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
 
 {% tabs %}
 
@@ -282,7 +282,7 @@ For example: In One SelectionMode, the selected item cannot be collapsed directl
 
 ## Notifying selected item change
 
-[SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItemsChanged_EV.html) event is fired whenever an item is expanded or collapsed. The arguments of the event are
+[SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event is fired whenever an item is expanded or collapsed. The arguments of the event are
 
 <table>
 <tr>
@@ -488,7 +488,7 @@ Collapse the item with header Windows Phone
 
 ## Notifying an item selection
 
-[SfAccordionItem.Selected](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~Selected_EV.html) event is fired whenever the item is selected/expanded.
+[SfAccordionItem.Selected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) event is fired whenever the item is selected/expanded.
 
 {% tabs %}
 
@@ -524,7 +524,7 @@ Collapse the item with header Windows Phone
 
 ## Notifying an item un-selection
 
-[SfAccordionItem.Unselected](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~Unselected_EV.html) event is fired whenever the item is unselected/collapsed.
+[SfAccordionItem.Unselected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) event is fired whenever the item is unselected/collapsed.
 
 {% tabs %}
 
@@ -562,8 +562,8 @@ Collapse the item with header Windows Phone
 
 ## Notifying selection change
 
-[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionChanged_EV.html) event fires when an item is selected and unselected. It behaves same as that of [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectedItemsChanged_EV.html) event. 
-The difference between these two events are the event argument parameters. The parameters of [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionChanged_EV.html) event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
+[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event fires when an item is selected and unselected. It behaves same as that of [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event. 
+The difference between these two events are the event argument parameters. The parameters of [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html) event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
 
 
 

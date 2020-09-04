@@ -19,9 +19,9 @@ documentation: ug
 
 You can hold and resume the series updates in dynamic update scenarios using the below methods.
 
-[`SuspendSeriesNotification`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html#)
+[`SuspendSeriesNotification`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SuspendSeriesNotification)
 
-[`ResumeSeriesNotification`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html#)
+[`ResumeSeriesNotification`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ResumeSeriesNotification)
 
 
 

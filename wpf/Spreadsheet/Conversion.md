@@ -12,7 +12,7 @@ This section explains about the conversion of workbook in SfSpreadsheet into ima
 
 ## Convert to Image
 
-SfSpreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ConvertToImage.html) method,worksheet can be converted into an image.
+SfSpreadsheet provides support to convert a worksheet in to an image of type Bitmap or Metafile based on the input range of rows and columns with all basic formats preserved, By using the [ConvertToImage](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ConvertToImage_System_Int32_System_Int32_System_Int32_System_Int32_) method,worksheet can be converted into an image.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Minimizing TileViewItem
 
-You can minimize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+You can minimize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Minimize the TileViewItem
 
@@ -43,7 +43,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Direction for minimized items 
 
-If you want to change direction of placing the minimized items, use the [MinimizedItemsOrientation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientation.html) property. The default value of `MinimizedItemsOrientation` property is `Right`.
+If you want to change direction of placing the minimized items, use the [MinimizedItemsOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_MinimizedItemsOrientation) property. The default value of `MinimizedItemsOrientation` property is `Right`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -70,7 +70,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Allocate size for minimized TileViewItem
 
-If you want to allocate a certain percentage of the total size to the minimized items, use the [MinimizedItemsPercentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsPercentage.html) property. The default value of `MinimizedItemsPercentage` property is `20`.
+If you want to allocate a certain percentage of the total size to the minimized items, use the [MinimizedItemsPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_MinimizedItemsPercentage) property. The default value of `MinimizedItemsPercentage` property is `20`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -97,7 +97,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change minimized TileViewItem content
 
-By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on minimized state. If you want to change the content of the `TileViewItem` on minimized state, use the [MinimizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) property. The default value of `MinimizedItemContent` property is `null`.
+By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on minimized state. If you want to change the content of the `TileViewItem` on minimized state, use the [MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinimizedItemContent) property. The default value of `MinimizedItemContent` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,7 +136,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI of minimized TileViewItem content
 
-You can customize the appearance of minimized `TileViewItem` content by using the [MinimizedItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html) property. The `DataContext` of the `MinimizedItemTemplate` property is `TileViewItem.MinimizedItemContent`.
+You can customize the appearance of minimized `TileViewItem` content by using the [MinimizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_MinimizedItemTemplate) property. The `DataContext` of the `MinimizedItemTemplate` property is `TileViewItem.MinimizedItemContent`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -177,7 +177,7 @@ N> Please refer [Minimized TileViewItem header](https://help.syncfusion.com/wpf/
 
 ## Minimized state changed notification
 
-The `TileViewControl` notifies that the minimized state changed in the `TileViewItem` by using [Minimized](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~Minimized_EV.html) event. You can get the minimized items by using the [Source](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~Source.html) property. You can also use the [OldState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~OldState.html) and [NewState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~NewState.html) properties to get the old and new state of `TileViewItem`.
+The `TileViewControl` notifies that the minimized state changed in the `TileViewItem` by using [Minimized](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) event. You can get the minimized items by using the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_Source) property. You can also use the [OldState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_OldState) and [NewState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_NewState) properties to get the old and new state of `TileViewItem`.
 
 {% tabs %}
 {% highlight XAML %}

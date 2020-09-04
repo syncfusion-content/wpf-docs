@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Title bar Font size Support
 
-The font size of the ChromelessWindow title bar can be changed by using [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleFontSize.html) property. By default its value is 12, to enable this functionality, change its value as desired
+The font size of the ChromelessWindow title bar can be changed by using [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. By default its value is 12, to enable this functionality, change its value as desired
 
 To set this property, use the below code
 

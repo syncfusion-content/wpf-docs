@@ -84,7 +84,7 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 ## Retain editing on lost focus
 
-The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the [LostFocusBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LostFocusBehavior.html) property to `LostFocusBehavior.Default` if you want to retain the editing of the current cell even when focus is moved to another control.
+The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the [LostFocusBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LostFocusBehavior) property to `LostFocusBehavior.Default` if you want to retain the editing of the current cell even when focus is moved to another control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -437,12 +437,12 @@ WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell 
 
 ### Cell tapped event
 
-WPF DataGrid `CellTapped` event occurs when the user clicks or touches a cell in DataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). `CellTapped` event does not occur for the non-selectable cells. The `GridCellTappedEventArgs` has following members which provides information for `CellTapped` event.
-* [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Column.html) - Gets the GridColumn of the tapped cell.
-* [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Record.html) - Gets the data context of the tapped cell.
-* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the tapped cell.
-* [ChangedButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~ChangedButton.html) - Get the MouseButton associated with the event.
-* [OriginalSender](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) - Gets the original reporting source that raised the event.  
+WPF DataGrid `CellTapped` event occurs when the user clicks or touches a cell in DataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). `CellTapped` event does not occur for the non-selectable cells. The `GridCellTappedEventArgs` has following members which provides information for `CellTapped` event.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellTappedEventArgs_Column) - Gets the GridColumn of the tapped cell.
+* [Record](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellTappedEventArgs_Record) - Gets the data context of the tapped cell.
+* [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellTappedEventArgs_RowColumnIndex) - Gets the RowColumnIndex of the tapped cell.
+* [ChangedButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellTappedEventArgs_ChangedButton) - Get the MouseButton associated with the event.
+* [OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) - Gets the original reporting source that raised the event.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -463,12 +463,12 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 
 ### Cell double tapped event
 
-`CellDoubleTapped` event occurs when the user double clicks or double taps a cell in DataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). `CellDoubleTapped` event does not occur for non-selectable cells. `GridCellDoubleTappedEventArgs` has following members which provides information for `CellDoubleTapped ` event.
-* [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Column.html) - Gets the GridColumn of the double tapped cell.
-* [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Record.html) - Gets the data context of the double tapped cell.
-* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the double tapped cell.
-* [ChangedButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~ChangedButton.html) - Gets the MouseButton associated with the event.
-* [OriginalSender](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) - Gets the original reporting source that raised the event.
+`CellDoubleTapped` event occurs when the user double clicks or double taps a cell in DataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). `CellDoubleTapped` event does not occur for non-selectable cells. `GridCellDoubleTappedEventArgs` has following members which provides information for `CellDoubleTapped ` event.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_Column) - Gets the GridColumn of the double tapped cell.
+* [Record](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_Record) - Gets the data context of the double tapped cell.
+* [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_RowColumnIndex) - Gets the RowColumnIndex of the double tapped cell.
+* [ChangedButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_ChangedButton) - Gets the MouseButton associated with the event.
+* [OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) - Gets the original reporting source that raised the event.
 
 {% tabs %}
 {% highlight xaml %}

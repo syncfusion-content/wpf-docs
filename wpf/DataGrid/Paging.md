@@ -15,7 +15,7 @@ SfDataGrid provides support to manipulate the data using SfDataPager control. Yo
 
 Follow the below steps to bind SfDataGrid with SfDataPager.
  
-1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~source.html) property.
+1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
 
 2. Set [SfDataPager.PageSize](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html) property to specify the number of records to be displayed per page.
 
