@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with Resources in WPF Scheduler | Syncfusion
 description: This section explains about how to group the appointment based on the associated resource with an appointment.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Resources in WPF Scheduler
 
-The Scheduler allows to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. Appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Resource.html) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleResourceTypeCollection.html) properties are set, and also when the value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
+The Scheduler allows to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. Appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) properties are set, and also when the value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
 For example, end user can create appointments for different doctors.
 
 {% tabs %}
@@ -43,7 +43,7 @@ Schedule1.Appointments.Add(app1);
 
 Let's see the steps to add resources in Scheduler.
 
-The first step is set the [Resource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Resource.html) in Scheduler
+The first step is set the [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) in Scheduler
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,7 +54,7 @@ The first step is set the [Resource](https://help.syncfusion.com/cr/cref_files/w
 {% endhighlight  %}
 {% endtabs %}
 
-After this, we need to create a [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleResourceTypeCollection.html), to assign the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ResourceType.html):
+After this, we need to create a [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection), to assign the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ResourceType.html):
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,7 +70,7 @@ After this, we need to create a [ScheduleResourceTypeCollection](https://help.s
 
 ## Adding ResourceType to a resource collection
 
-After Creating the `ScheduleResourceTypeCollection` add the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ResourceType.html), here we create the example for `ResourceType` as Doctors.
+After Creating the `ScheduleResourceTypeCollection` add the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ResourceType.html), here we create the example for `ResourceType` as Doctors.
 
 {% tabs %}
 {% highlight xaml %}
@@ -140,7 +140,7 @@ This feature enables users to view appointments based on their subcategory only 
 
 ### DayHeaderOrder property
 
-[DayHeaderOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayHeaderOrder.html) property is used to set the order by which resources have to be displayed
+[DayHeaderOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayHeaderOrder) property is used to set the order by which resources have to be displayed
 
 <table>
 <tr>
@@ -199,7 +199,7 @@ this.grid.Children.Add(schedule);
 
 This feature supports to display `N` number of resources in the Schedule view. You can achieve this by specifying the count of resources that needs to be displayed per view. This support is offered for `Day` view alone.
 
-This support can be enabled by using property [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayViewColumnCount.html) in `SfSchedule`. By default, its value is “zero”.
+This support can be enabled by using property [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCount) in `SfSchedule`. By default, its value is “zero”.
 
 <table>
 <tr>
@@ -216,7 +216,7 @@ Gets or sets a value to specify the number of resources that need to be shown in
 
 ### Example:
 
-In the following code example, [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayViewColumnCount.html) is “two”, so the Scheduler displays two resources in the view. This count is maintained while scrolling to view the other resources.
+In the following code example, [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCount) is “two”, so the Scheduler displays two resources in the view. This count is maintained while scrolling to view the other resources.
 
 {% tabs %}
 {% highlight xaml %}

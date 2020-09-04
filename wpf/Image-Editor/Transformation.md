@@ -24,7 +24,7 @@ To flip an image, click the Flip icon in the toolbar. Popup will be displayed pr
 
 ### Using code
 
-Programmatically, you can flip an image using the Flip method. This method takes the [`FlipDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.Enums.FlipDirection.html) as the parameter to specify whether it is a horizontal flip or vertical flip.
+Programmatically, you can flip an image using the Flip method. This method takes the [`FlipDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.Enums.FlipDirection.html) as the parameter to specify whether it is a horizontal flip or vertical flip.
 
 {% tabs %} 
 

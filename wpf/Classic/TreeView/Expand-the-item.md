@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Expand the Item in WPF TreeView (TreeViewAdv)
 
-TreeViewAdv allows to expand or collapse each node by setting [IsExpanded](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewItemAdv~IsExpanded.html) property. 
+TreeViewAdv allows to expand or collapse each node by setting [IsExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewItemAdv_IsExpanded) property. 
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ N> [View the sample in GitHub](https://github.com/SyncfusionExamples/how-to-prog
 
 ## Animation type
 
-The type of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AnimationType.html) property. This property includes the following options.
+The type of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the [AnimationType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AnimationType) property. This property includes the following options.
 
 * `Fade` — Fade animation applies when expand or collapse the nodes. 
 * `None` — Expands or collapses the nodes without animation.
@@ -181,7 +181,7 @@ treeViewAdv.AnimationType = AnimationType.Slide
 
 ## Animation speed
 
-The speed of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AnimationSpeed.html) property. The default value of this property is set to `1`. 
+The speed of animation that is generated while expanding or collapsing the TreeViewAdv is controlled by using the [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_AnimationSpeed) property. The default value of this property is set to `1`. 
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ treeViewAdv.AnimationSpeed = 2
 
 ## Expand animation
 
-The Expand or Collapse operation in a TreeViewItemAdv leads to an animated action. This animation is controlled by using the [ExpandAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewItemAdv~ExpandAnimation.html) property of TreeViewItemAdv. The animation is also applied to the child items. The following code example illustrates how to set this property.
+The Expand or Collapse operation in a TreeViewItemAdv leads to an animated action. This animation is controlled by using the [ExpandAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewItemAdv_ExpandAnimation) property of TreeViewItemAdv. The animation is also applied to the child items. The following code example illustrates how to set this property.
 
 {% tabs %}
 

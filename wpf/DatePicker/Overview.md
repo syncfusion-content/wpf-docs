@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF SfDatePicker Overview
 
-The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) control allows the user to select date values in a touch friendly manner.
+The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) control allows the user to select date values in a touch friendly manner.
 
 ### Normal view:
 

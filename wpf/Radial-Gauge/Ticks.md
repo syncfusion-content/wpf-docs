@@ -13,9 +13,9 @@ Ticks help you identify the gauge’s data value by marking the gauge scale in r
 
 ## Tick customization
 
-The Interval property is used to calculate the tick count for a scale. Similar major ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~MinorTicksPerInterval.html) property.
+The Interval property is used to calculate the tick count for a scale. Similar major ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_MinorTicksPerInterval) property.
 
-The length, stroke, and stroke thickness of a major ticks and minor ticks are set by using the [`Length`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Length.html), [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Stroke.html), and [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~StrokeThickness.html) properties, respectively. 
+The length, stroke, and stroke thickness of a major ticks and minor ticks are set by using the [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Length), [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Stroke), and [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_StrokeThickness) properties, respectively. 
 
 ### Customize major ticks for scale
 
@@ -108,7 +108,7 @@ The length, stroke, and stroke thickness of a major ticks and minor ticks are se
 
 ## Setting shape for tick
 
-The [`TickShape`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickShape.html) is an enum property that provides an option to select shape of the circular mark ticks, which contains several shapes such as rectangle, ellipse, and triangle.
+The [`TickShape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_TickShape) is an enum property that provides an option to select shape of the circular mark ticks, which contains several shapes such as rectangle, ellipse, and triangle.
 
 {% tabs %}
 
@@ -164,15 +164,15 @@ sfCircularGauge.Scales.Add(mainscale);
 
 The major and minor ticks can be positioned far away from the rim using the following ways:
 
-* Setting direct [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickPosition.html) property. This place the tick inside, outside or cross of the rim. 
+* Setting direct [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_TickPosition) property. This place the tick inside, outside or cross of the rim. 
 
-* Setting [`MajorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MajorTickSetting_members.html) and [`MinorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MinorTickSetting_members.html) [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Offset.html) and [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Length.html) properties. This tick positions is responsive for all the window size. But tick length is fixed.
+* Setting [`MajorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.MajorTickSetting.html) and [`MinorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.MinorTickSetting.html) [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Offset) and [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Length) properties. This tick positions is responsive for all the window size. But tick length is fixed.
 
-* Setting [`MajorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MajorTickSetting_members.html) and [`MinorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.MinorTickSetting_members.html) [`StartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~StartOffset.html), and [`EndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~EndOffset.html) properties. This tick position and length are responsive to all size of the window.
+* Setting [`MajorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.MajorTickSetting.html) and [`MinorTickSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.MinorTickSetting.html) [`StartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_StartOffset), and [`EndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_EndOffset) properties. This tick position and length are responsive to all size of the window.
 
 ### Setting direct tick position
 
-Placing the ticks inside or outside the scale, or across the scale by selecting one of the options available in the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickPosition.html) property. They are:
+Placing the ticks inside or outside the scale, or across the scale by selecting one of the options available in the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_TickPosition) property. They are:
 
 1.	Inside (Default)
 
@@ -232,7 +232,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Setting scale tick Offset value
 
-For relative position you can use [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Offset.html) and [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~Length.html) property. First, set the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickPosition.html) property to custom, and then set the offset and length of the tick.
+For relative position you can use [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Offset) and [`Length`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_Length) property. First, set the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_TickPosition) property to custom, and then set the offset and length of the tick.
 
 {% tabs %}
 
@@ -284,7 +284,7 @@ For relative position you can use [`Offset`](https://help.syncfusion.com/cr/wpf/
 
 ### Setting start and end Offset value for scale tick
 
-For absolute position you can use [`StartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~StartOffset.html), [`EndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.TickSetting~EndOffset.html) properties of `MajorTickSettings` and `MinorTickSettings`. First, set the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~TickPosition.html) property to custom, and then set the `StartOffset` and `EndOffset` of the tick.
+For absolute position you can use [`StartOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_StartOffset), [`EndOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.TickSetting.html#Syncfusion_UI_Xaml_Gauges_TickSetting_EndOffset) properties of `MajorTickSettings` and `MinorTickSettings`. First, set the [`TickPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_TickPosition) property to custom, and then set the `StartOffset` and `EndOffset` of the tick.
 
 {% tabs %}
 
@@ -342,7 +342,7 @@ For absolute position you can use [`StartOffset`](https://help.syncfusion.com/cr
 
 ### Setting ticks visibility in scale
 
-The [`ShowTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
+The [`ShowTicks`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_ShowTicks) property allows you to enable or disable the ticks of circular gauge.
 
 N> Default value of the ShowTicks property is true.
 

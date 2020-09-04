@@ -23,15 +23,15 @@ The below mentioned properties are available in the ShapesSetting property of th
 
 ### ShapeFill
 
-[`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeFill.html) is a Brush type property that sets the fill color of the shapes in the map.
+[`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill) is a Brush type property that sets the fill color of the shapes in the map.
 
 ### ShapeStroke
 
-[`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStroke.html) is also a brush type property that sets the border color of the shape in the map.
+[`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke) is also a brush type property that sets the border color of the shape in the map.
 
 ### ShapeStrokeThickness
 
-[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ShapeStrokeThickness.html) is a double type property that sets the border thickness of the shape in the map.
+[`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) is a double type property that sets the border thickness of the shape in the map.
 
 These setting works only when `AutoFillColor` is set as false.
 
@@ -184,7 +184,7 @@ N> The shape’s under-bound object value must have numeric property and should 
 
 ## ColorPalette
 
-[`ColorPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeSetting~ColorPalette.html) is a set of colors that are applied on the shapes. Map contains two built-in color palettes. They are: 
+[`ColorPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ColorPalette) is a set of colors that are applied on the shapes. Map contains two built-in color palettes. They are: 
 
 1. Metro 
 2. CoolBlue 

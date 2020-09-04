@@ -13,7 +13,7 @@ We can decide the properties which are need to be displayed in [PropertyGrid](ht
 
 ## Hide the Properties using Collection
 
-We can hide the properties using the [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~HidePropertiesCollection.html) property. It is used to hide the mentioned properties which are already present in [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html). Properties can also be hidden at runtime using  `HidePropertiesCollection`.
+We can hide the properties using the [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_HidePropertiesCollection) property. It is used to hide the mentioned properties which are already present in [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject). Properties can also be hidden at runtime using  `HidePropertiesCollection`.
 
 {% tabs %}
 {% highlight C# %}
@@ -230,7 +230,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Hide the Properties at runtime
 
-We can hide the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property as `true`.
+We can hide the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property as `true`.
    
 {% tabs %}
 {% highlight C# %}
@@ -309,7 +309,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Searching the Properties
 
-If the `PropertyGrid.SelectedObject` contains more properties, it is difficult to find the specific property. Now, we can easily get the required properties by searching the property name in the SearchBox. SearchBox will be filter and display the properties which are contains the searched text. SearchBox is shown by default, we can hide it by setting [SearchBoxVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SearchBoxVisibility.html) property as `Collapsed`.
+If the `PropertyGrid.SelectedObject` contains more properties, it is difficult to find the specific property. Now, we can easily get the required properties by searching the property name in the SearchBox. SearchBox will be filter and display the properties which are contains the searched text. SearchBox is shown by default, we can hide it by setting [SearchBoxVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SearchBoxVisibility) property as `Collapsed`.
 
 {% tabs %}
 {% highlight C# %}

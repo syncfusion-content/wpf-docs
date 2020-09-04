@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting the Animation Speed
 
-You can set the animation speed, which controls the time taken to expand or collapse the taskbar items in the TaskBar, using the [Speed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~SpeedProperty.html) property. This is an attached property, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar by using the SetSpeed method.
+You can set the animation speed, which controls the time taken to expand or collapse the taskbar items in the TaskBar, using the [Speed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_SpeedProperty) property. This is an attached property, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar by using the SetSpeed method.
 
 Use the following code snippet to set this property.
 
@@ -79,7 +79,7 @@ TaskBar.SetSpeed(taskBar, 10);
 
 ### GetSpeed
 
-This [GetSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GetSpeed.html) method is used to get the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has one argument, which returns the speed value of type, double.
+This [GetSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GetSpeed_System_Windows_DependencyObject_) method is used to get the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has one argument, which returns the speed value of type, double.
 
 
 {% highlight c# %}
@@ -98,7 +98,7 @@ speed = TaskBar.GetSpeed(taskBar);
 
 ### SetSpeed
 
-This [SetSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~SetSpeed.html) method is used to set the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has two arguments. The first argument specifies the object, while the second argument specifies the value of speed of type double.
+This [SetSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_SetSpeed_System_Windows_DependencyObject_System_Double_) method is used to set the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has two arguments. The first argument specifies the object, while the second argument specifies the value of speed of type double.
 
 
 {% highlight c# %}

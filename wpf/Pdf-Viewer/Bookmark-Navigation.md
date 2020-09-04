@@ -51,7 +51,7 @@ pdfDocumentView.GoToBookmark(bookmark(0))
 {% endhighlight %}
 {% endtabs %}
 
-You can also perform the same in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the [GotoBookmark(PdfBookmark)](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GoToBookmark.html) method. Refer to the following code sample.
+You can also perform the same in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the [GotoBookmark(PdfBookmark)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GoToBookmark_Syncfusion_Pdf_Interactive_PdfBookmark_) method. Refer to the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ Property</th><th>
 Action</th></tr>
 <tr>
 <td>
-{{'[IsBookmarkEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~IsBookmarkEnabled.html)'| markdownify }}</td><td>
+{{'[IsBookmarkEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_IsBookmarkEnabled)'| markdownify }}</td><td>
 Enables or disables the bookmark feature.</td></tr>
 </table>
 

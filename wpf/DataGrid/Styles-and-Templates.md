@@ -16,11 +16,11 @@ The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header,
 ![control structure of WPF DataGrid](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 ## Customizing Default Containers
-SfDataGrid arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
+SfDataGrid arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
 
 ![VisualTree structure of WPF DataGrid](Styles-and-Templates_images/Styles-and-Templates_img31.png)
 
-[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding `RowGenerator` class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
+[RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding `RowGenerator` class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowGenerator). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
 
 ### Row containers
 Below table shows the different types of grid rows and its container.
@@ -38,7 +38,7 @@ Below table shows the different types of grid rows and its container.
 DataRow
 </td>
 <td>
-{{'[VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html)'| markdownify }}
+{{'[VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ DataRow
 UnboundRow
 </td>
 <td>
-{{'[UnBoundRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html)'| markdownify }}
+{{'[UnBoundRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ UnboundRow
 FilterRow
 </td>
 <td>
-{{'[FilterRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html)'| markdownify }}
+{{'[FilterRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ FilterRow
 DetailsViewDataRow
 </td>
 <td>
-{{'[DetailsViewRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewRowControl.html)'| markdownify }}
+{{'[DetailsViewRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ DetailsViewDataRow
 TableSummaryRow
 </td>
 <td>
-{{'[TableSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TableSummaryRowControl.html)'| markdownify }}
+{{'[TableSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.TableSummaryRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -78,7 +78,7 @@ TableSummaryRow
 HeaderRow
 </td>
 <td>
-{{'[HeaderRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html)'| markdownify }}
+{{'[HeaderRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.HeaderRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ HeaderRow
 AddNewRow
 </td>
 <td>
-{{'[AddNewRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html)'| markdownify }}
+{{'[AddNewRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AddNewRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ AddNewRow
 CaptionSummaryRow
 </td>
 <td>
-{{'[CaptionSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html)'| markdownify }}
+{{'[CaptionSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ CaptionSummaryRow
 GroupSummaryRow
 </td>
 <td>
-{{'[GroupSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html)'| markdownify }}
+{{'[GroupSummaryRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -110,18 +110,18 @@ GroupSummaryRow
 StackedHeaderRow
 </td>
 <td>
-{{'[GridStackedHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html)'| markdownify }}
+{{'[GridStackedHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html)'| markdownify }}
 </td>
 </tr>
 </table>
 
 ### Animating the data row when property changes
 
-You can customize the [DataRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DataRow.html) operations by overriding the `DataRow` class. You have to override the [GetDataRow](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator~GetDataRow.html) method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `DataRow`.
+You can customize the [DataRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DataRow.html) operations by overriding the `DataRow` class. You have to override the [GetDataRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html#Syncfusion_UI_Xaml_Grid_RowGenerator_GetDataRow__1_Syncfusion_UI_Xaml_Grid_RowType_) method in [RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `DataRow`.
 Similarly, you can able to customize:
-1. [GridUnboundRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
-2. [FilterRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
-3. [SpannedDataRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
+1. [GridUnboundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
+2. [FilterRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
+3. [SpannedDataRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
 
 The below code example shows how to animate the `DataRow` when the row data is changed.
 {% tabs %}
@@ -249,7 +249,7 @@ Below table shows the different types of cells and its container.
 GridCell
 </td>
 <td>
-{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
+{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@ GridCell
 GridUnBoundRowCell
 </td>
 <td>
-{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
+{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -265,17 +265,17 @@ GridUnBoundRowCell
 GridFilterRowCell
 </td>
 <td>
-{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
+{{'[OrientedCellsPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.OrientedCellsPanel.html)'| markdownify }}
 </td>
 </tr>
 </table>
 
 ### Animating the data cell when property changes
 
-You can customize the [GridCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) behavior by overriding the `GridCell` class. You have to override the [GetGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator~GetGridCell.html) method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridCell`.
+You can customize the [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) behavior by overriding the `GridCell` class. You have to override the [GetGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html#Syncfusion_UI_Xaml_Grid_RowGenerator_GetGridCell__1) method in [RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridCell`.
 Similarly, you can able to customize:
-1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
-2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
+1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
+2. [GridFilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
 
 The below code example shows how to animate the cell based on the changes occur in another cell using the `DataContextChanged` and `PropertyChanged` events.
 
@@ -1410,7 +1410,7 @@ The appearance of [GroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/S
 
 ## Showing busy indicator before loading records
 
-You can show the indication of data loading with the help of [BusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.BusyIndicator.html) by setting [BusyIndicator.IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.BusyIndicator~IsBusy.html) as `True` and you can stop it by setting `BusyIndicator.IsBusy` as `false` in the `ItemsSourceChanged` event.
+You can show the indication of data loading with the help of [BusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BusyIndicator.html) by setting [BusyIndicator.IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BusyIndicator.html#Syncfusion_Windows_Tools_Controls_BusyIndicator_IsBusy) as `True` and you can stop it by setting `BusyIndicator.IsBusy` as `false` in the `ItemsSourceChanged` event.
 
 {% tabs %}
 {% highlight xaml %}

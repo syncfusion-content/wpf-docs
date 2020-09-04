@@ -87,7 +87,7 @@ namespace PinnableListBoxSample
 
 ## Add items using PinnableListBoxItem
 
-You can add the items inside the PinnableListBox control using [PinnableListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PinnableListBoxItem.html).
+You can add the items inside the PinnableListBox control using [PinnableListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PinnableListBoxItem.html).
 
 {% tabs %}
 {% highlight XAML %}

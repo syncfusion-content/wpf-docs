@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF DocumentContainer
 
-This section describes how to add [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) control into wpf application and its basic functionalities.
+This section describes how to add [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) control into wpf application and its basic functionalities.
 
 ## Assembly deployment
 
@@ -116,7 +116,7 @@ documentContainer.Items.Add(button3);
 
 ## Set header to document
 
-You can set header to the DocumentContainer elements by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentHeader~Header.html) property.
+You can set header to the DocumentContainer elements by setting the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentHeader.html#Syncfusion_Windows_Tools_Controls_DocumentHeader_Header) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -151,7 +151,7 @@ The DocumentContainer supports the following document modes :
 * **TDI** - Tabbed Document Interface
 * **MDI** - Multiple Document Interface
 
-You can change the above modes using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~Mode.html) property of DocumentContainer.
+You can change the above modes using the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property of DocumentContainer.
 
 {% tabs %}
 {% highlight XAML %}
@@ -172,7 +172,7 @@ documentContainer.Mode=DocumentContainerMode.TDI;
 
 ## Minimizing MDI window
 
-You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CanMDIMinimize.html) property as `true`. The default value of `CanMDIMinimize` property is `false`. The minimized  MDI windows are arranged one by one in the bottom-left corner of the window.
+You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMinimize) property as `true`. The default value of `CanMDIMinimize` property is `false`. The minimized  MDI windows are arranged one by one in the bottom-left corner of the window.
 
 {% tabs %}
 {% highlight xaml %}

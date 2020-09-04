@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Binding in WPF AutoComplete
 
-Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSource.html) property. While binding the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSource.html) to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
+Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CustomSource) property. While binding the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CustomSource) to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
 
 ## Adding data binding to an application 
 
-You can add the custom source for the `AutoComplete` by binding the source to the `CustomSource` property. You can use the `DisplayMemberPath` property to set the value for items that needs to be displayed in the drop-down list. Also you can use the [SelectedValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValuePath.html) property which can be used to set the value of the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValue.html) property. 
+You can add the custom source for the `AutoComplete` by binding the source to the `CustomSource` property. You can use the `DisplayMemberPath` property to set the value for items that needs to be displayed in the drop-down list. Also you can use the [SelectedValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectedValuePath) property which can be used to set the value of the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectedValue) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -75,6 +75,6 @@ N> View [Sample]() in GitHub
 
 ### Events
 
-* [SelectedValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValueChanged_EV.html)
-* [CustomSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSourceChanged_EV.html)
+* [SelectedValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html)
+* [CustomSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html)
 

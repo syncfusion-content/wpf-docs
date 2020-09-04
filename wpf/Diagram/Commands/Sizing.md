@@ -13,7 +13,7 @@ Sizing commands are used to resize all selected object based on width, height, a
 
 ## SameSize command
 
-The [SameSize](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~SameSize.html) command is used to resize all the selected object based on the size of the first item in the selection list.
+The [SameSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameSize) command is used to resize all the selected object based on the size of the first item in the selection list.
 
 {% tabs %}
 {% highlight C# %}
@@ -28,7 +28,7 @@ graphinfo.Commands.SameSize.Execute(null);
 
 ## SameHeight command
 
-The [SameHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~SameHeight.html) command is used to resize all the selected object based on the height of the first item in the selection list.
+The [SameHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameHeight) command is used to resize all the selected object based on the height of the first item in the selection list.
 
 {% tabs %}
 {% highlight C# %}
@@ -43,7 +43,7 @@ graphinfo.Commands.SameHeight.Execute(null);
 
 ## SameWidth command
 
-The [SameWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~SameWidth.html) command is used to resize all the selected object based on the width of the first item in the selection list.
+The [SameWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SameWidth) command is used to resize all the selected object based on the width of the first item in the selection list.
 
 {% tabs %}
 {% highlight C# %}

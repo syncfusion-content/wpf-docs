@@ -9,15 +9,15 @@ documentation: ug
 
 # Overview of WPF ColorPalette (SfColorPalette)
 
-The various elements of the [sfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
+The various elements of the [sfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
 
 ![VisualStructure of SfColorPalatte](Overview_images/Overview_img1.png)
 
-  * The [Swatch button](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.ColorPaletteButton.html) is used to switch between available color packages.
+  * The [Swatch button](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.ColorPaletteButton.html) is used to switch between available color packages.
 
-  * In Swatch button different [Color Swatches](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.ColorSwatches.html) are available to allow the user to select colors.
+  * In Swatch button different [Color Swatches](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.ColorSwatches.html) are available to allow the user to select colors.
 
-  * The [Color item](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.ColorItem.html) displays the various color items available in current swatch.
+  * The [Color item](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.ColorItem.html) displays the various color items available in current swatch.
 
   * Color ToolTip shows  preview of the hovered color item. 
 

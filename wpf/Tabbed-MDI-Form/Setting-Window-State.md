@@ -44,7 +44,7 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 ## Notify event for MDIWindow State Changes
 
-The [MDIWindowStateChanging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIWindowStateChanging_EV.html) event occurs before the state of the MDIWindow is changed. The state changing of MDIWindow can be handled by setting e.Cancel to true.
+The [MDIWindowStateChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) event occurs before the state of the MDIWindow is changed. The state changing of MDIWindow can be handled by setting e.Cancel to true.
 
 {% tabs %}
 {% highlight XAML %}

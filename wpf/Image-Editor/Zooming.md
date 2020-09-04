@@ -13,7 +13,7 @@ documentation: ug
 
 ## Toolbar
 
-Images can be zoomed in or zoomed out for better viewing and this can be enabled using the [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~EnableZooming.html). In the footer toolbar, you can find the slider, which helps in increasing the zoom level of an image.
+Images can be zoomed in or zoomed out for better viewing and this can be enabled using the [`EnableZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EnableZooming). In the footer toolbar, you can find the slider, which helps in increasing the zoom level of an image.
 
 Zoom level ranges from 50 to 400 percents. You can move the slider to increase the zoom level. Also, there will be Increase and Decrease icons on both sides of the slider. These icons help in increasing of the level gradually.
 

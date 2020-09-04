@@ -13,7 +13,7 @@ Scheduler control displays appointments based on details such as `StartTime`, `E
 
 ## Adding appointment
 
-Scheduler support to add the `ScheduleAppointment` by using [Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Appointments.html) property. Schedule supports to render all day appointments, spanned appointment and recurring appointments. 
+Scheduler support to add the `ScheduleAppointment` by using [Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Appointments) property. Schedule supports to render all day appointments, spanned appointment and recurring appointments. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,7 +41,7 @@ this.Schedule.Appointments = scheduleAppointmentCollection;
 ![WPF Scheduler adding appointments](appointments_images/adding-appointments.png)
 
 ## AppointmentCollectionChanged
-Scheduler notifies changes of `Appointments` collection by [AppointmentCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentCollectionChanged_EV.html) event.
+Scheduler notifies changes of `Appointments` collection by [AppointmentCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 This event triggers with default [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs).
 
 {% tabs %}
@@ -56,7 +56,7 @@ private void Schedule_AppointmentCollectionChanged(object sender, System.Collect
 
 ## Data Binding
 
-Scheduler supports to bind any collection that implements the `IEnumerable` interface to populate appointments. You can map properties in data object to `ScheduleAppointment` by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) property. Below table which property shows mapping property details to `ScheduleAppointment`. 
+Scheduler supports to bind any collection that implements the `IEnumerable` interface to populate appointments. You can map properties in data object to `ScheduleAppointment` by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentMapping) property. Below table which property shows mapping property details to `ScheduleAppointment`. 
 
 <table>
 <tr><th>Property Name</th><th>Description</th></tr>
@@ -104,7 +104,7 @@ public class Event
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `Event` class with our Scheduler control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and bind the mapping collection with scheduler control using [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSource.html) property.
+You can map those properties of `Event` class with our Scheduler control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentMapping) and bind the mapping collection with scheduler control using [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ItemsSource) property.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -149,7 +149,7 @@ public partial class MainWindow : Window
 ![WPF Scheduler custom appointment](appointments_images/adding-custom-appointments.png)
 
 ### ItemSourceChanged event
-Scheduler notifies changes to the `ItemSource` by [ItemSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSourceChanged_EV.html) event in custom binding. 
+Scheduler notifies changes to the `ItemSource` by [ItemSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event in custom binding. 
 
 {% tabs %}
 {% highlight c# %}
@@ -173,7 +173,7 @@ Appointment editor window
 ![WPF Scheduler editor window](appointments_images/appointment-addnew-editor-window.png)
 
 ## Appointment template customization
-Scheduler supports to customize the appointment appearance  by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentTemplate.html) property. The `AppointmentTemplate` is a `ControlTemplate` type, used to customize or override the default template of the appointments.
+Scheduler supports to customize the appointment appearance  by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentTemplate) property. The `AppointmentTemplate` is a `ControlTemplate` type, used to customize or override the default template of the appointments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -244,7 +244,7 @@ this.schedule.ItemsSource = Meetings;
 This section has briefly explained in following [link](https://help.syncfusion.com/wpf/scheduler/recurrence)
 
 ### All day appointments
-Appointments can be scheduled for an entire day by using [AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDay.html) property in `ScheduleAppointment`.
+Appointments can be scheduled for an entire day by using [AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDay) property in `ScheduleAppointment`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -273,7 +273,7 @@ this.Schedule.Appointments = scheduleAppointmentCollection;
 N> Appointment which lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting `AllDay` property. For example 06/09/2018 12:00AM to 06/10/2018 12:00AM.
 
 ## Appointment generating behavior
-Scheduler supports to change the all day appointment creation behavior by using [AppointmentBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentBehavior.html) property.
+Scheduler supports to change the all day appointment creation behavior by using [AppointmentBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentBehavior) property.
 
 `Default` - Appointments will be generated based on `StartTime` and `EndTime`. If `AllDay` property is enabled appointment will be generated in all day panel.
 `ExChangeBehavior` - Appointments will be generated when appointment has scheduled for full day.
@@ -312,7 +312,7 @@ ExchangeBehavior
 ![WPF Scheduler appointment exchange behavior](appointments_images/appointment-exchange-behavior.png)
 
 ## All day appointment panel
-All-day appointment and Spanned appointment doesn’t block out entire time slot in Scheduler, rather it will render in separate layout exclusively for all-day appointment. It can be disabled by setting [ShowAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowAllDay.html) property.
+All-day appointment and Spanned appointment doesn’t block out entire time slot in Scheduler, rather it will render in separate layout exclusively for all-day appointment. It can be disabled by setting [ShowAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ShowAllDay) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -326,7 +326,7 @@ this.Schedule.ShowAllDay = false;
 ![WPF Scheduler all day panel](appointments_images/all-day-panel.png)
 
 ## Appointment tooltip
-Scheduler supports to show the tooltip for appointment with the details of appointment. The appointment tooltip will be displayed by using the [AppointmentTooltipVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentTooltipVisibility.html) property.
+Scheduler supports to show the tooltip for appointment with the details of appointment. The appointment tooltip will be displayed by using the [AppointmentTooltipVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentTooltipVisibility) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -340,7 +340,7 @@ this.Schedule.AppointmentTooltipVisibility = Visibility.Visible;
 ![WPF Scheduler Appointment Tooltip](appointments_images/appointment-tooltip.png)
 
 ### Appointment tooltip template customization
-Scheduler supports to customize the tooltip by using [AppointmentToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentToolTipTemplate.html) property.
+Scheduler supports to customize the tooltip by using [AppointmentToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentToolTipTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +380,7 @@ schedule.Appointments.Add(new ScheduleAppointment()
 ![WPF Scheduler Tooltip template](appointments_images/appointment-tooltip-template.png)
 
 ## Change the appointment selection color
-Scheduler supports to change the appointment selection background by using [AppointmentSelectionBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentSelectionBrush.html) property.
+Scheduler supports to change the appointment selection background by using [AppointmentSelectionBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentSelectionBrush) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -394,7 +394,7 @@ this.schedule.AppointmentSelectionBrush = Brushes.DarkGreen;
 ![WPF Scheduler appointment selection brush](appointments_images/appointment-selection-brush.png)
 
 ## Customize the appointment status collection
-Scheduler supports to customize the appointment status collection by using [AppointmentStatusCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStatusCollection.html) property.
+Scheduler supports to customize the appointment status collection by using [AppointmentStatusCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentStatusCollection) property.
 
 {% tabs %}
 {% highlight xaml %}

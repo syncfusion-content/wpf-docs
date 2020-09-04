@@ -139,7 +139,7 @@ Ensure the `Sign the assembly` checkbox is clicked to use the private key pair f
 
 ### Integrating custom theme to application
 
-The [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html) control helps to apply the built-in themes to the Syncfusion UI controls for WPF.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) control helps to apply the built-in themes to the Syncfusion UI controls for WPF.
 
 Let us see the step by step procedure for adding exported theme project as assembly(.dll) and witness the custom theme set for Docking Manager.  
 
@@ -167,7 +167,7 @@ Add reference of **Syncfusion.SfSkinManager.Wpf.dll** to the WPF application and
 
 **Step 3:**
 
-The appearance of any Syncfusion UI controls for WPF can be customized by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). 
+The appearance of any Syncfusion UI controls for WPF can be customized by using [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
 
 Now, set the `SfSkinManager` attached property `VisualStyle` as `MaterialDark` for the Docking Manager control since we have generated MaterialDark (`Syncfusion.Themes.MaterialDark.WPF`) assembly from exported theme project for demonstration purpose.
 

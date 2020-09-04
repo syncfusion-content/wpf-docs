@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features
 
-A basic requirement in creating any WPF application that uses our DockingManager control, is the ability to set a window as an active window. DockingManager's [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindow.html) property can be used for this. [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindow.html) is an element, which returns a window object that is currently focused. To set a window as active, use the following code.
+A basic requirement in creating any WPF application that uses our DockingManager control, is the ability to set a window as an active window. DockingManager's [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property can be used for this. [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) is an element, which returns a window object that is currently focused. To set a window as active, use the following code.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ You can also iterate through all the child elements of the DockingManager contro
 
 ## Using ActiveWindow Property
 
-[ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindow.html) Property is used to Get/Set ActiveWindow for DockingManager
+[ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) Property is used to Get/Set ActiveWindow for DockingManager
 
 {% highlight c# %}
 
@@ -161,15 +161,15 @@ Under this section you will find all the possible customization options availabl
 
 FloatWindow Customization properties table
 
-* [FloatWindowBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowBorderBrush.html)
-* [FloatWindowHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowHeaderBackground.html)
-* [FloatWindowHeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowHeaderForeground.html)
-* [FloatWindowMouseOverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowMouseOverBorderBrush.html)
-* [FloatWindowMouseOverHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowMouseOverHeaderBackground.html)
-* [FloatWindowMouseOverHeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowMouseOverHeaderForeground.html)
-* [FloatWindowSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowSelectedBorderBrush.html)
-* [FloatWindowSelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowSelectedHeaderBackground.html)
-* [FloatWindowSelectedHeaderForegroundProperty](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowSelectedHeaderForeground.html)
+* [FloatWindowBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowBorderBrush)
+* [FloatWindowHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowHeaderBackground)
+* [FloatWindowHeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowHeaderForeground)
+* [FloatWindowMouseOverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowMouseOverBorderBrush)
+* [FloatWindowMouseOverHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowMouseOverHeaderBackground)
+* [FloatWindowMouseOverHeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowMouseOverHeaderForeground)
+* [FloatWindowSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowSelectedBorderBrush)
+* [FloatWindowSelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowSelectedHeaderBackground)
+* [FloatWindowSelectedHeaderForegroundProperty](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowSelectedHeaderForeground)
 
 N> The default value of all the above listed properties is Transparent. 
 
@@ -199,18 +199,18 @@ Customized Float Window
 
 You can set the border thickness for the hosted children of the Docking Manager control. The following properties are used to set the thickness for the individual child elements in various dock states.
 
-* [ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ElementBorderThickness.html) 
-* [FloatWindowBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowBorderThickness.html) 
-* [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderThickness.html)
-* [SidePanelItemsBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelItemsBorderThickness.html)
-* [TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabPanelBorderThickness.html)
-* [TabItemBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabItemBorderThickness.html) 
-* [TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabItemsBorderThicknessSelected.html)
-* [HeaderBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderBorderThickness.html) 
+* [ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ElementBorderThickness) 
+* [FloatWindowBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowBorderThickness) 
+* [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelBorderThickness)
+* [SidePanelItemsBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelItemsBorderThickness)
+* [TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabPanelBorderThickness)
+* [TabItemBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabItemBorderThickness) 
+* [TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabItemsBorderThicknessSelected)
+* [HeaderBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderBorderThickness) 
 
 ### ElementBorderThickness
 
-[ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ElementBorderThickness.html) property is used to store border thickness value for host. The default value of this property is 1. It is a dependency property, which defines the border thickness of the element inside the window. 
+[ElementBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ElementBorderThickness) property is used to store border thickness value for host. The default value of this property is 1. It is a dependency property, which defines the border thickness of the element inside the window. 
 
 The below code snippet is used to set an element border thickness for the Docking Manager control.
 
@@ -248,7 +248,7 @@ ElementBorderThickness = "20"
 
 ### FloatWindowBorderThickness
 
-This property specifies the border thickness value of the floating window. The default value of the [FloatWindowBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowBorderThickness.html) property is 22,4,4,4 . 
+This property specifies the border thickness value of the floating window. The default value of the [FloatWindowBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_FloatWindowBorderThickness) property is 22,4,4,4 . 
 
 Use the following XAML and C# code, for setting the float window border thickness.
 
@@ -321,7 +321,7 @@ DockingManager.SidePanelBorderThickness = new Thickness(20);
 SidePanelBorderThickness = "20"
 {:.caption}
 
-[SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderThickness.html) - This dependency property specifies the border thickness of the side panel items. The default value is 1. 
+[SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelBorderThickness) - This dependency property specifies the border thickness of the side panel items. The default value is 1. 
 
 Here is the code snippet for setting this property.
 
@@ -358,7 +358,7 @@ DockingManager.SidePanelItemsBorderThickness = new Thickness(20);
 SidePanelItemsBorderThickness = "20"
 {:.caption}
 
-[TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabPanelBorderThickness.html) - This dependency property defines the border thickness of the tab panel. The default value of the [TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabPanelBorderThickness.html) property is 0.
+[TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabPanelBorderThickness) - This dependency property defines the border thickness of the tab panel. The default value of the [TabPanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabPanelBorderThickness) property is 0.
 
 {% tabs %}
 
@@ -389,7 +389,7 @@ DockingManager.TabPanelBorderThickness = new Thickness(20);
 
 {% endtabs %} 
 
-[TabItemBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabItemBorderThickness.html) - This dependency property defines the border thickness of the tab item. The default value is 1. 
+[TabItemBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabItemBorderThickness) - This dependency property defines the border thickness of the tab item. The default value is 1. 
 
 {% tabs %}
 
@@ -420,7 +420,7 @@ DockingManager.TabItemBorderThickness = new Thickness(20);
 {% endtabs %} 
 
 
-[TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabItemsBorderThicknessSelected.html) - This dependency property defines border thickness of the selected tab items. The default value of the [TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabItemsBorderThicknessSelected.html) property is 0.
+[TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabItemsBorderThicknessSelected) - This dependency property defines border thickness of the selected tab items. The default value of the [TabItemsBorderThicknessSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabItemsBorderThicknessSelected) property is 0.
 
 {% tabs %}
 
@@ -453,7 +453,7 @@ DockingManager.TabItemsBorderThicknessSelected = new Thickness(20);
 
 ### HeaderBorderThickness 
 
-[HeaderBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderBorderThickness.html) dependency property defines the border thickness of the window's header. The default value is 1.
+[HeaderBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_HeaderBorderThickness) dependency property defines the border thickness of the window's header. The default value is 1.
 
 {% tabs %}
 
@@ -490,7 +490,7 @@ HeaderBorderThickness = "20"
 
 ### Tab Strip Placement
 
-The tabs of the docked windows will be placed at the top of the parent window, by default. This tab placement is changed to any of the following options by using the [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockTabAlignment.html) property.
+The tabs of the docked windows will be placed at the top of the parent window, by default. This tab placement is changed to any of the following options by using the [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) property.
 
 * Top (default)
 * Right
@@ -541,7 +541,7 @@ DockTabAlignment = "Right"
 
 ### SidePanel Header Background
 
-[SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemBackground.html) property allows you to set a background color for TabItem’s Header. It is a dependency property, which defines the background color of the element in side panel.
+[SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideTabItemBackground) property allows you to set a background color for TabItem’s Header. It is a dependency property, which defines the background color of the element in side panel.
 
 {% tabs %}
 
@@ -583,7 +583,7 @@ TabHeader with background
 
 ### SidePanel Header Foreground
 
-[SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemForeground.html) property allows you to set foreground color for SidePanelTabItem’s Header. It is a dependency property, which defines the foreground color of the element in SidePanel.
+[SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideTabItemForeground) property allows you to set foreground color for SidePanelTabItem’s Header. It is a dependency property, which defines the foreground color of the element in SidePanel.
 
 {% tabs %}
 
@@ -629,9 +629,9 @@ The following description gives you a clear knowledge about docking, float and c
 
 ###	Docking a Dockable Window
 
-DockingManager facilitates the users to allow or restrict a dockable window to move to the docked state. This is done by using the [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDock.html) property of the DockingManager. When this property is set to False, the dockable window will be restricted to enter the docked state; it can either be in floating or in auto hidden state. Also this setting will not allow the transition of states from Auto Hide to Float or vice versa, as the window needs to change the dock state as a part of the transition.
+DockingManager facilitates the users to allow or restrict a dockable window to move to the docked state. This is done by using the [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property of the DockingManager. When this property is set to False, the dockable window will be restricted to enter the docked state; it can either be in floating or in auto hidden state. Also this setting will not allow the transition of states from Auto Hide to Float or vice versa, as the window needs to change the dock state as a part of the transition.
 
-For settings, [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDock.html) property, use the following code.
+For settings, [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDock) property, use the following code.
 
 {% tabs %}
 
@@ -652,9 +652,9 @@ DockingManager.SetCanDock(Properties, true);
 
 ### Floating a Dock Window
 
-The Floating state of a dockable window is controlled by using the CanFloat property. When the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloat.html) property is set to False, the window can take either docked or auto hidden states. It will not be allowed to float until the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloat.html) property is enabled.
+The Floating state of a dockable window is controlled by using the CanFloat property. When the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property is set to False, the window can take either docked or auto hidden states. It will not be allowed to float until the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property is enabled.
 
-To enable the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloat.html) property of DockingManager, use the following code. 
+To enable the [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloat) property of DockingManager, use the following code. 
 
 {% tabs %}
 
@@ -685,7 +685,7 @@ CanFloat = "True"
 
 ### Closing a Dock Window
 
-The DockingManager gives the option for users to control the closing functionality of the dockable window. A window is restricted from closing by disabling the [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanClose.html) property of the DockingManager. When this property is set to False, it will not display the close button in the header of the window.
+The DockingManager gives the option for users to control the closing functionality of the dockable window. A window is restricted from closing by disabling the [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanClose) property of the DockingManager. When this property is set to False, it will not display the close button in the header of the window.
 
 To set this property, refer the following code.
 
@@ -725,7 +725,7 @@ Document State Child
 
 ### AutoHide Button Visibility
 
-By default, all docked windows will have the ability to auto hide, when the user clicks the auto hide button. This feature can be disabled using the [AutoHideVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideVisibility.html) property. This property is typically used to allow or deny the changing element's state to auto hidden, through Graphical User Interface (GUI), by showing / hiding the AWL button in the host header and hence auto hiding the context menu item. 
+By default, all docked windows will have the ability to auto hide, when the user clicks the auto hide button. This feature can be disabled using the [AutoHideVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideVisibility) property. This property is typically used to allow or deny the changing element's state to auto hidden, through Graphical User Interface (GUI), by showing / hiding the AWL button in the host header and hence auto hiding the context menu item. 
 
 Here is the code snippet for setting the above property.
 
@@ -812,8 +812,8 @@ DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
 
 The following events are handled while Auto hiding.
 
-* [AutoHideAnimationStartEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationStart_EV.html)
-* [AutoHideAnimationStopEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationStop_EV.html)
+* [AutoHideAnimationStartEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html)
+* [AutoHideAnimationStopEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html)
 
 
 ### Using AutoHide Animation Modes
@@ -826,7 +826,7 @@ DockingManager supports three different built–in animations for auto-hiding th
 
 
 
-The animation modes can be applied by using the [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationMode.html) property of the Docking Manager. 
+The animation modes can be applied by using the [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideAnimationMode) property of the Docking Manager. 
 
 To apply different animation styles to the docking windows, use the following code. This setting will get reflected when the user auto hides a window at run time.
 
@@ -854,9 +854,9 @@ this.DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
 
 ### Animation Duration
 
-DockingManager enables you to control the duration for animation or the animation delay, while auto hiding the docking windows. Animation delay is set by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~AnimationDelay.html) property of the DockingManager. It accepts the duration in milliseconds. 
+DockingManager enables you to control the duration for animation or the animation delay, while auto hiding the docking windows. Animation delay is set by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property of the DockingManager. It accepts the duration in milliseconds. 
 
-The following code sets the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~AnimationDelay.html) property.
+The following code sets the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property.
 
 
 {% highlight c# %}
@@ -894,9 +894,9 @@ this.DockingManager.CloseTabs = CloseTabsMode.CloseActive;
 
 ### Enable/Disable Dragging a Window
 
-The DockingManager enables you to restrict an element to be dragged from one side to another. The dragging functionality is disabled for a window by setting the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDrag.html) property to false.
+The DockingManager enables you to restrict an element to be dragged from one side to another. The dragging functionality is disabled for a window by setting the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDrag) property to false.
 
-The following code is used to enable the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDrag.html) property.
+The following code is used to enable the [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDrag) property.
 
 {% tabs %}
 
@@ -938,9 +938,9 @@ This topic illustrates the following features:
 ### DockHost Alignment
 
 
-The [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockTabAlignment.html) property is used as a tab strip placement for all TabbedHosts that are docked, inside the DockingManager instance. By default its value is set to Bottom.
+The [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) property is used as a tab strip placement for all TabbedHosts that are docked, inside the DockingManager instance. By default its value is set to Bottom.
 
-You can set the [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockTabAlignment.html) to Left, Right, Bottom or Top.
+You can set the [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockTabAlignment) to Left, Right, Bottom or Top.
 
 {% highlight xaml %}
 
@@ -985,9 +985,9 @@ DockTabAlignment = "Right"
 
 ### DockHost Style
 
-This dependency property will get or set the style used by the TabbedHosts that are docked, when it is rendered. It provides [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockedElementTabbedHostStyle.html) value for the Docking Manager. 
+This dependency property will get or set the style used by the TabbedHosts that are docked, when it is rendered. It provides [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockedElementTabbedHostStyle) value for the Docking Manager. 
 
-The user can initialize the style of the docked element host by setting the [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockedElementTabbedHostStyle.html) property in XAML as follows.
+The user can initialize the style of the docked element host by setting the [DockedElementTabbedHostStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DockedElementTabbedHostStyle) property in XAML as follows.
 
 
 {% highlight xaml %}
@@ -1030,7 +1030,7 @@ The DockingManager enables you to set different drag modes, when a docking windo
 * Border DragMode and
 * Shadow DragMode
 
-The [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DraggingType.html) property of DockingManager is used to change the drag mode. The options provided by this property are as follows:
+The [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DraggingType) property of DockingManager is used to change the drag mode. The options provided by this property are as follows:
 
 * NormalDragging (Normal DragMode)
 * BorderDragging (Border DragMode) and
@@ -1205,9 +1205,9 @@ void DockingManager_ContextMenuItemClick(object sender, RoutedEventArgs e)
 
 ### Custom Menu Items
 
-A dockable window is well associated with a default context menu with default menu items. You can also add custom menu items to the existing context menu items of the dockable window. [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CustomMenuItems.html) property is used for this purpose.
+A dockable window is well associated with a default context menu with default menu items. You can also add custom menu items to the existing context menu items of the dockable window. [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) property is used for this purpose.
 
-[CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CustomMenuItems.html) - This property is attached to a docking manager child, and gives an ability to add some additional menu items to the context menu. This can easily extend GUI functionality by using the Custom menu items.
+[CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) - This property is attached to a docking manager child, and gives an ability to add some additional menu items to the context menu. This can easily extend GUI functionality by using the Custom menu items.
 
 To add the custom menu item:
 
@@ -1269,7 +1269,7 @@ Custom Menu Item added to the Context Menu
 
 ### Collapse Default MenuItems
 
-We can disable the default menu item such as Dockable, Floating, AutoHide and so on. This can be done by [CollapseDefaultContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CollapseDefaultContextMenuItems.html) property.. The usage is shown below.
+We can disable the default menu item such as Dockable, Floating, AutoHide and so on. This can be done by [CollapseDefaultContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CollapseDefaultContextMenuItems) property.. The usage is shown below.
 
 {% tabs %}
 
@@ -1331,7 +1331,7 @@ Collapse Default MenuItems
 
 ## Context Menu, Context Menu Button Visibility
 
-[IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsContextMenuButtonVisible.html) property is used to control the visibility of the Context Menu Button, which is available when the Header of Docked Window or Float Window is right-clicked. The display of Context Menu can be disabled by setting [IsContextMenuVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsContextMenuVisible.html) to False.
+[IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsContextMenuButtonVisible) property is used to control the visibility of the Context Menu Button, which is available when the Header of Docked Window or Float Window is right-clicked. The display of Context Menu can be disabled by setting [IsContextMenuVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsContextMenuVisible) to False.
 
 The following code illustrates the same:
 
@@ -1381,7 +1381,7 @@ The default value is set to True.  This property can also be applied to every c
 
 
 
-[IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsContextMenuButtonVisible.html) property is used to control the visibility of the Context Menu Button (available when child Window is in dock state). The display of Context Menu can be disabled by setting [IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsContextMenuButtonVisible.html) to False.
+[IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsContextMenuButtonVisible) property is used to control the visibility of the Context Menu Button (available when child Window is in dock state). The display of Context Menu can be disabled by setting [IsContextMenuButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsContextMenuButtonVisible) to False.
 
 The following code illustrates the same.
 
@@ -1447,7 +1447,7 @@ IsContextMenuButtonVisible=”True” for Individual Child
 
 ### DesireWidth and DesireHeight in Dock/Float Modes
 
-Height and width of the docking window in the docked state is set by using properties like [DesiredWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredWidthInDockedMode.html) and [DesiredHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredHeightInDockedMode.html) respectively.
+Height and width of the docking window in the docked state is set by using properties like [DesiredWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredWidthInDockedMode) and [DesiredHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredHeightInDockedMode) respectively.
 
 To set the height and width for the DockingManager elements in the docked state, use the following code snippet.
 
@@ -1476,7 +1476,7 @@ this.DockingManager.SetDesiredHeightInDockedMode(Properties, 400);
 {% endtabs %} 
 
 
-The Height and Width of the DockingManager elements in the floating state is set using the [DesiredWidthInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredWidthInFloatingMode.html) and DesiredHeightInFloatingMode properties, respectively.
+The Height and Width of the DockingManager elements in the floating state is set using the [DesiredWidthInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredWidthInFloatingMode) and DesiredHeightInFloatingMode properties, respectively.
 
 Use the following code to set the above properties.
 
@@ -1507,7 +1507,7 @@ this.DockingManager.SetDesiredHeightInFloatingMode(Properties, 200);
 
 ### Hot Tracking the Dock Window
 
-The docking elements can be highlighted when the mouse is hovered over a Docking window. This feature is enabled using the [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsEnableHotTracking.html) property.
+The docking elements can be highlighted when the mouse is hovered over a Docking window. This feature is enabled using the [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsEnableHotTracking) property.
 
 To enable / disable hot tracking feature in DockingManager, use the following code.
 
@@ -1543,7 +1543,7 @@ this.DockingManager.IsEnableHotTracking = false;
 
 ### Using SizetoContentInFloat
 
-The Float window can be resized to its child size by setting the [SizetoContentInFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SizetoContentInFloat.html) property to True. The Float window will be resized to its child size when dragged from Dock to Float state. 
+The Float window can be resized to its child size by setting the [SizetoContentInFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SizetoContentInFloat) property to True. The Float window will be resized to its child size when dragged from Dock to Float state. 
 
 ![Float window](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
@@ -1580,9 +1580,9 @@ When user control is dragged out from Dock state the Float window generated will
 
 The following three properties allow you to customize the styles of Tab control and MDI document. This feature is integrated with both DockingManager and Document Container. 
 
-* [DocumentTabControlStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DocumentTabControlStyle.html) 
-* [DocumentTabItemStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DocumentTabItemStyle.html) 
-* [DocumentMDIHeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DocumentMDIHeaderStyle.html) 
+* [DocumentTabControlStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DocumentTabControlStyle) 
+* [DocumentTabItemStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DocumentTabItemStyle) 
+* [DocumentMDIHeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DocumentMDIHeaderStyle) 
 
 
 
