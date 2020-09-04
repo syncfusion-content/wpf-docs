@@ -60,122 +60,122 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <th>Type</th>
 </tr>
 <tr>
-<td>Open button</td>
+<td>Open tool</td>
 <td>PART_ButtonOpen</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Save button</td>
+<td>Save tool</td>
 <td>PART_ButtonSave</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Print button</td>
+<td>Print tool</td>
 <td>PART_ButtonPrint</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Navigation toolbar separator</td>
+<td>Navigation tools separator</td>
 <td>Part_NavigationToolsSeparator</td>
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>First page button</td>
+<td>First page tool</td>
 <td>PART_ButtonGoToFirstPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Previous page button</td>
+<td>Previous page tool</td>
 <td>PART_ButtonGoToPreviousPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Current page number</td>
+<td>Current page number tool</td>
 <td>PART_TextCurrentPageIndex</td>
 <td>System.Windows.Controls.TextBox</td>
 </tr>
 <tr>
-<td>Page count </td>
+<td>Page count tool</td>
 <td>PART_LabelTotalPageCount</td>
 <td>System.Windows.Controls.TextBlock</td>
 </tr>
 <tr>
-<td>Next page button</td>
+<td>Next page tool</td>
 <td>PART_ButtonGoToNextPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Last page button</td>
+<td>Last page tool</td>
 <td>PART_ButtonGoToLastPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Zoom toolbar separator</td>
+<td>Zoom tools separator</td>
 <td>Part_ZoomToolsSeparator_0</td>
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>Current zoom</td>
+<td>Current zoom level tool</td>
 <td>PART_ComboBoxCurrentZoomLevel</td>
 <td>System.Windows.Controls.ComboBox</td>
 </tr>
 <tr>
-<td>Zoom in button</td>
+<td>Zoom in tool</td>
 <td>PART_ButtonZoomIn</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Zoom out button</td>
+<td>Zoom out tool</td>
 <td>PART_ButtonZoomOut</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Zoom toolbar separator</td>
+<td>Zoom tools separator</td>
 <td>PART_ZoomToolsSeparator_1</td>
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>Fit width button</td>
+<td>Fit width tool</td>
 <td>PART_ButtonFitWidth</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Fit page button</td>
+<td>Fit page tool</td>
 <td>PART_ButtonFitPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Annotation toolbar separator</td>
+<td>Annotation tools separator</td>
 <td>PART_AnnotationToolsSeparator</td>
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>Ink button</td>
+<td>Ink tool</td>
 <td>PART_Ink</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Highlight button</td>
+<td>Highlight tool</td>
 <td>PART_Highlight</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Underline button</td>
+<td>Underline tool</td>
 <td>PART_Underline</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Strikethrough button</td>
+<td>Strikethrough tool</td>
 <td>PART_Strikethrough</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Shapes button</td>
+<td>Shapes tool</td>
 <td>PART_Shapes</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Fill button</td>
+<td>Fill tool</td>
 <td>PART_Fill</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
@@ -225,7 +225,7 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
-<td>Text search button</td>
+<td>Text search tool</td>
 <td>PART_ButtonTextSearch</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
