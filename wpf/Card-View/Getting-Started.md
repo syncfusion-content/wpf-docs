@@ -101,7 +101,7 @@ namespace CardViewSample
 
 ## Adding Items using CardViewItem
 
-You can add the items inside the CardView control using [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html).
+You can add the items inside the CardView control using [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -215,7 +215,7 @@ public class ViewModel
 
 ## Grouping
 
-You can group the cards inside the CardView control by enabling the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanGroup.html) property.
+You can group the cards inside the CardView control by enabling the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanGroup) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -230,7 +230,7 @@ cardview.CanGroup =true;
 
 ## Sorting
 
-You can sort the cards inside the CardView control by enabling the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanSort.html) property.
+You can sort the cards inside the CardView control by enabling the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanSort) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -245,7 +245,7 @@ cardview.CanSort =true;
 
 ## Editing
 
-You can edit the fields available in the cards by enabling [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanEdit.html) property of CardView control.
+You can edit the fields available in the cards by enabling [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property of CardView control.
 
 {% tabs %}
 {% highlight XAML %}

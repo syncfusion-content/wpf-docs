@@ -13,7 +13,7 @@ The Hub Tile control supports the tile feature similar to the live tile feature 
 
 ## Setting header content
 
-Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_Header) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -65,7 +65,7 @@ grid.Children.Add(hubTile);
 
 ## Setting title content 
 
-Title can be used to display updates and notifications in a tile. The content of the title can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+Title can be used to display updates and notifications in a tile. The content of the title can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_Title) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +119,7 @@ grid.Children.Add(hubTile);
 
 ## Setting image 
 
-The image acts as a pictorial representation of the purpose of tile control. The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
+The image acts as a pictorial representation of the purpose of tile control. The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ImageSource) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -144,7 +144,7 @@ grid.Children.Add(hubTile);
 
 ## Setting secondary content
 
-The [secondary content](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) specifies the content to be displayed when the tile content of the tile changes during each transition, that is, from primary view. Secondary content can be an image, a text or a control.
+The [secondary content](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html#Syncfusion_Windows_Controls_Notification_SfHubTile_SecondaryContent) specifies the content to be displayed when the tile content of the tile changes during each transition, that is, from primary view. Secondary content can be an image, a text or a control.
 {% tabs %}
 {% highlight XAML %}
 
@@ -232,7 +232,7 @@ grid.Children.Add(hubTile);
 
 ## Animation
 
-The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the Hub Tile. The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) is used to determine the time taken for the single tile press animation.
+The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ScaleDepth) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TilePressDuration) in the Hub Tile. The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_ScaleDepth) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TilePressDuration) is used to determine the time taken for the single tile press animation.
 
 {% tabs %}
 {% highlight XAML %}
@@ -269,11 +269,11 @@ grid.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}
 
-N> The tile press animation occurs only if the [OverrideDefaultStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**. 
+N> The tile press animation occurs only if the [OverrideDefaultStates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_OverrideDefaultStates) property is said to be **false**. 
 
 ## Transitions
 
-The Hub Tile control supports various transitions which causes the tile to change from primary tile content to secondary tile content. The transitions can be set to the Hub Tile by using the [HubTileTransitions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitions.html) property. These transitions happens based on the specified interval set via [Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~Interval.html) property of the Hub Tile. The control provides the following built-in transitions:
+The Hub Tile control supports various transitions which causes the tile to change from primary tile content to secondary tile content. The transitions can be set to the Hub Tile by using the [HubTileTransitions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html#Syncfusion_Windows_Controls_Notification_SfHubTile_HubTileTransitions) property. These transitions happens based on the specified interval set via [Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html#Syncfusion_Windows_Controls_Notification_SfHubTile_Interval) property of the Hub Tile. The control provides the following built-in transitions:
 1. Slide transition
 2. Fade transition
 
@@ -339,7 +339,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in XAML or import **u
 
 ### Notifications on transitions
 
-Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event rises on each transition completion. Below example demonstrates the working of the event in the Hub Tile.
+Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html) event rises on each transition completion. Below example demonstrates the working of the event in the Hub Tile.
 
 {% tabs %}
 {% highlight XAML %}
@@ -382,7 +382,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples
 
 ## Grouping
 
-Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hub tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
+Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_GroupName) property of hub tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
 
 {% tabs %}
 {% highlight XAML %}
@@ -609,7 +609,7 @@ Freezing provides support to stop animating the tile contents. Unfreezing provid
 
 ### Freezing/unfreezing via property
 
-The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to be **true**.
+The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_IsFrozen) property to be **true**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -649,7 +649,7 @@ gird.Children.Add(hubTile);
  
 ![wpf hubtile freeze a single tile](Getting-Started_images/wpf-hubtile-single-tile-freezing.png)
 
-The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to **false**.
+The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_IsFrozen) property to **false**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -690,13 +690,13 @@ grid.Children.Add(hubTile);
 
 ### Freezing/unfreezing via methods
 
-The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) to freeze and unfreeze the animation by passing a Hub Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) as an argument. 
+The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_Freeze_Syncfusion_Windows_Controls_Notification_HubTileBase_) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_UnFreeze_Syncfusion_Windows_Controls_Notification_SfHubTile_) to freeze and unfreeze the animation by passing a Hub Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_GroupName) as an argument. 
 * Add required **System.Windows.Interactivity** assembly reference in application. 
 * Import schema for interactivity **http://schemas.microsoft.com/expression/2010/interactivity** in XAML or **using System.Windows.Interactivity** namespace in C#.
 
-N> The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class allows to set the freeze/unfreeze state of the tile after the tiles are loaded.
+N> The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html) class allows to set the freeze/unfreeze state of the tile after the tiles are loaded.
 
-A single tile or a group of tiles can be frozen by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) method.
+A single tile or a group of tiles can be frozen by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_Freeze_Syncfusion_Windows_Controls_Notification_HubTileBase_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -788,7 +788,7 @@ Single tile
 Group of tiles
 {:.caption}
 
-A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
+A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileService.html#Syncfusion_Windows_Controls_Notification_HubTileService_UnFreeze_Syncfusion_Windows_Controls_Notification_SfHubTile_) method.
  
 {% tabs %}
 {% highlight XAML %}
@@ -886,7 +886,7 @@ Once the tile is pressed, it is notified by the click event and the command prop
 
 ### Event
   
-The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
+The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html) event rises whenever the tile is pressed.
 
 {% tabs %}
 {% highlight XAML %} 
@@ -921,7 +921,7 @@ public class ClickEvent : TargetedTriggerAction<SfHubTile>
 
 ### Command binding
 
-Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern. 
+Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_Command) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_CommandParameter) are used instead of click event in MVVM pattern. 
 
 {% tabs %}
 {% highlight XAML%} 
@@ -992,7 +992,7 @@ public class Command : ICommand
 
 ### Customizing header
 
-Header of the tile can be customized either through [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) or [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as shown below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of header by adding user-defined template.
+Header of the tile can be customized either through [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderStyle) or [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderTemplate) as shown below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderStyle) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Primitives.HeaderedContentControl.html#Syncfusion_Windows_Primitives_HeaderedContentControl_HeaderTemplate) is used to customize the visual appearance of header by adding user-defined template.
 
 {% tabs %}
 {% highlight XAML %}
@@ -1038,7 +1038,7 @@ Header of the tile can be customized either through [HeaderStyle](https://help.s
 
 ### Customizing title
 
-The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TitleStyle.html) property is used to customize the title of the tile by setting its appropriate properties.
+The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.HubTileBase.html#Syncfusion_Windows_Controls_Notification_HubTileBase_TitleStyle) property is used to customize the title of the tile by setting its appropriate properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -1078,7 +1078,7 @@ By the following two ways the secondary content of the Hub Tile can be customize
 
 #### Customizing secondary content via property
  
-The secondary content of the tile can be customized by using the appropriate [SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) property like below.
+The secondary content of the tile can be customized by using the appropriate [SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html#Syncfusion_Windows_Controls_Notification_SfHubTile_SecondaryContent) property like below.
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
@@ -1097,7 +1097,7 @@ The secondary content of the tile can be customized by using the appropriate [Se
 
 #### Customizing secondary content via template
  
-The secondary content of the tile can be customized by using the [SecondaryContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContentTemplate.html) property like below.
+The secondary content of the tile can be customized by using the [SecondaryContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfHubTile.html#Syncfusion_Windows_Controls_Notification_SfHubTile_SecondaryContentTemplate) property like below.
 
 {% tabs %}
 {% highlight XAML %}

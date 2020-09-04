@@ -9,10 +9,10 @@ documentation: ug
 
 # Error Bars in WPF Chart (SfChart)
 
-[ErrorBarSeries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
+[ErrorBarSeries](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 
 
-The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalErrorValue.html#) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalErrorValue.html#) is used to set the error value(variation) to the series.
+The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorValue) is used to set the error value(variation) to the series.
 
 The following code examples illustrates how to create error bar series:
 
@@ -89,7 +89,7 @@ chart.Series.Add(errorBar);
 
 ## Mode
 
-This [`Mode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~Mode.html#) property is used to define whether to identify horizontal error or vertical error. By default, the Mode value is [`Both`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarMode.html), which will display both horizontal and vertical error values.
+This [`Mode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Mode) property is used to define whether to identify horizontal error or vertical error. By default, the Mode value is [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarMode.html), which will display both horizontal and vertical error values.
 
 **Horizontal**
 
@@ -185,19 +185,19 @@ chart.Series.Add(errorBar);
 
 ## Direction
 
-[`ErrorBar`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows you to view the horizontal and vertical error values in both positive and negative directions.
+[`ErrorBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) series allows you to view the horizontal and vertical error values in both positive and negative directions.
 
 **Horizontal direction**
 
-[`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirection.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the horizontal error value in the following type of directions:
+[`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirection) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the horizontal error value in the following type of directions:
 
- * [`Both`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive and negative error values.
- * [`Minus`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of negative error value.
- * [`Plus`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive error value.
+ * [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive and negative error values.
+ * [`Minus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of negative error value.
+ * [`Plus`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarDirection.html) – It indicates the actual data point value along with specific amount of positive error value.
 
 **Both**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as both.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as both.
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as minus.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as minus.
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalDirectionProperty.html) value as plus.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as plus.
 
 {% tabs %}
 
@@ -281,7 +281,7 @@ chart.Series.Add(errorBar);
 
 **Vertical direction**
 
-[`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the vertical error value in following type of directions:
+[`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the vertical error value in following type of directions:
 
  * Both - It indicates the actual data point value along with specific amount of positive and negative error values.
  * Minus - It indicates the actual data point value along with specific amount of negative error value.
@@ -289,7 +289,7 @@ chart.Series.Add(errorBar);
 
 **Both**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as both.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as both.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as minus.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as minus.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalDirectionProperty.html) value as plus.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as plus.
 
 {% tabs %}
 
@@ -376,10 +376,10 @@ chart.Series.Add(errorBar);
 
 SfChart supports the following type of error bar series.
 
-* [`Fixed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
-* [`Percentage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
-* [`StandardDeviation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
-* [`StandardError`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
+* [`Fixed`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
+* [`Percentage`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html) 
+* [`StandardDeviation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
+* [`StandardError`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarType.html)
 
 N> The default error bar series is Fixed.
 
@@ -584,7 +584,7 @@ chart.Series.Add(errorBar);
 
 ## Custom
 
-If the Type is Custom, you have to bind [`HorizontalErrorPathValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalErrorPath.html#) and [`VerticalErrorPathValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalErrorPath.html#) as shown in the below code snippet.
+If the Type is Custom, you have to bind [`HorizontalErrorPathValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPathValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorPath) as shown in the below code snippet.
 
 {% tabs %}
 
@@ -643,7 +643,7 @@ SfChart provides customization properties for the error bar lines as in the foll
 
 ### Line Style
 
-You can define the LineStyle for the error bar lines using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalLineStyle.html#) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalLineStyle.html#) properties as in the below code examples.
+You can define the LineStyle for the error bar lines using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalLineStyle) properties as in the below code examples.
 
 {% tabs %}
 
@@ -710,7 +710,7 @@ errorBarSeries.VerticalLineStyle = new LineStyle()
 
 ### Line Cap Style
 
-ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~HorizontalCapLineStyle.html#) and [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries~VerticalCapLineStyle.html#) as in the below code examples.
+ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalCapLineStyle) and [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalCapLineStyle) as in the below code examples.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting icon for dropdown menu items
 
-The icon option helps to provide pictorial representation of the dropdown menu item. One can apply the icon by setting the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~Icon.html) property value to an image source.
+The icon option helps to provide pictorial representation of the dropdown menu item. One can apply the icon by setting the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_Icon) property value to an image source.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,9 +52,9 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 ## Setting icon bar visibility
 
- The icon bar option helps to enable/disable the vertical bar next to the Dropdown menu item icon. One can change the icon bar visibility by setting the [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) property to **true** or **false**.
+ The icon bar option helps to enable/disable the vertical bar next to the Dropdown menu item icon. One can change the icon bar visibility by setting the [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_IconBarEnabled) property to **true** or **false**.
 
- N> The default value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) is `false`.
+ N> The default value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_IconBarEnabled) is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,7 +96,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 ## Setting scrollbar visibility
 
-The dropdown menu group supports built-in scrollbar to show large number of menu items in a compact view. One can enable the visibility of scroll bar by setting the [ScrollBarVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~ScrollBarVisibility.html) property to **Visible**.
+The dropdown menu group supports built-in scrollbar to show large number of menu items in a compact view. One can enable the visibility of scroll bar by setting the [ScrollBarVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_ScrollBarVisibility) property to **Visible**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,7 +176,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 ## Resizing dropdown menu
 
-The dropdown menu group height can be increased or decreased using the resizing gripper. One can enable the resizing behavior by setting the [IsResizable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsResizable.html) property to **true**.
+The dropdown menu group height can be increased or decreased using the resizing gripper. One can enable the resizing behavior by setting the [IsResizable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_IsResizable) property to **true**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -225,7 +225,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 ## Checkable dropdown menu items
 
-The checkable option helps to check/uncheck the dropdown menu item on selection by setting the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property to **true**.
+The checkable option helps to check/uncheck the dropdown menu item on selection by setting the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_IsCheckable) property to **true**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,7 +264,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examp
 
 ## Adding custom dropdown menu items
 
-The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
+The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_MoreItems) property.
 
 N> The **MoreItems** property has return type `ObservableCollection<UIElement>`, so it can accept any UIElement as its child items.
 
@@ -340,7 +340,7 @@ namespace Dropdown_Button_Custom_Items
 
 ## Setting icon bar visibility for custom dropdown menu items
 
-The custom dropdown menu items icon visibility can be enabled/disabled by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsMoreItemsIconTrayEnabled.html) property either to **true** or **false**.
+The custom dropdown menu items icon visibility can be enabled/disabled by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html#Syncfusion_Windows_Tools_Controls_DropDownMenuGroup_IsMoreItemsIconTrayEnabled) property either to **true** or **false**.
 
 {% tabs %}
 {% highlight xaml %}

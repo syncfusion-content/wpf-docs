@@ -9,7 +9,7 @@ documentation: ug
 
 # Flip command in WPF Diagram(SfDiagram)
 
-The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Flip.html) command is used to mirror the selected object's content and port in the diagram page in both horizontal and vertical direction. 
+The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the diagram page in both horizontal and vertical direction. 
 
 {% tabs %}
 {% highlight C# %}
@@ -23,11 +23,11 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusio
 
 ## Flip parameter
 
-The [Flip parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FlipParameter_members.html) is used to customize the flip mode and flip direction. If the parameter is null, then the object will be flipped both horizontally and vertically.
+The [Flip parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlipParameter.html) is used to customize the flip mode and flip direction. If the parameter is null, then the object will be flipped both horizontally and vertically.
 
 ### Flip mode 
 
-The [FlipMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FlipMode.html) is used to control the behaviour of the flip object.
+The [FlipMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlipMode.html) is used to control the behaviour of the flip object.
 
 | FlipMode | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ The [FlipMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncf
 
 ### Flip
 
-The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Flip.html) is used to specify the flip direction in flip command.
+The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Flip.html) is used to specify the flip direction in flip command.
 
 | Flip | Description |
 | --- | --- |

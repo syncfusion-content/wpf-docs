@@ -13,7 +13,7 @@ The AutoComplete functionality provides several modes of suggestions while typin
 
 ## AutoComplete source
 
-The [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property. The data can be either a list of strings or a custom data.
+The [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items bind to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. The data can be either a list of strings or a custom data.
 
 
 {% tabs %}
@@ -36,7 +36,7 @@ For further details, refer to [Populating Autocomplete with Data](https://help.s
 
 ## Custom data
 
-The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the property path, by which the filtering has to be done when a custom data is bound to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property. This property defines the value to be displayed in the drop-down suggestion box.
+The [SearchItemPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SearchItemPath) property specifies the property path, by which the filtering has to be done when a custom data is bound to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property. This property defines the value to be displayed in the drop-down suggestion box.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,7 +63,7 @@ N> The default value of the AutoCompleteMode property is None. So, running the c
 
 ## Customize using the ItemTemplate
 
-By default the drop-down window lists the filtered items as a text based on the [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property set for the data. The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) property helps to decorate the filtered items with visual elements. The following code block explains how to add an image to the drop-down list items.
+By default the drop-down window lists the filtered items as a text based on the [SearchItemPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SearchItemPath) property set for the data. The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) property helps to decorate the filtered items with visual elements. The following code block explains how to add an image to the drop-down list items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,7 +93,7 @@ By default the drop-down window lists the filtered items as a text based on the 
 
 ## Filtering options
 
-The phenomenon of string comparison for filtering suggestions can be changed using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html) property. The default filtering strategy is “StartsWith” and it is case-insensitive.
+The phenomenon of string comparison for filtering suggestions can be changed using the [SuggestionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionMode) property. The default filtering strategy is “StartsWith” and it is case-insensitive.
 
 <table>
 <tr>
@@ -205,7 +205,7 @@ The control returns all possible matches that equals the typed text based on the
 Custom
 </td>
 <td>
-The control returns all possible matches based on the [Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Filter.html) property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+The control returns all possible matches based on the [Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Filter) property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
 </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ textBoxExt.SuggestionMode = SuggestionMode.Contains;
 
 ## Prefix characters constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MinimumPrefixCharacters.html)` property. By default the constraint is  set for each character entry.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MinimumPrefixCharacters)` property. By default the constraint is  set for each character entry.
 
 {% tabs %}
 
@@ -297,7 +297,7 @@ textBoxExt.MinimumPrefixCharacters = 2;
 
 ## Working with case sensitivity
 
-[IgnoreCase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html) option allows the control to filter the suggestions by ignoring the case. The default value is false.
+[IgnoreCase](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) option allows the control to filter the suggestions by ignoring the case. The default value is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -324,11 +324,11 @@ textBoxExt.IgnoreCase = true;
 
 ## Showing image in token and drop-down 
 
-To display image in token use the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property.
+To display image in token use the [ImageMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ImageMemberPath) property.
 
 N> This feature is applicable only for MultiSelectMode with Token mode.
 
-To display image for each drop-down item a custom template can be assigned to [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) support. 
+To display image for each drop-down item a custom template can be assigned to [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteItemTemplate) support. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -369,7 +369,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
+When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. Th text to be displayed for this can be customized using the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_NoResultsFoundTemplate) property.
 
 {% tabs %}
 {% highlight xaml %}

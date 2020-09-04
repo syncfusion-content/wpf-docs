@@ -9,7 +9,7 @@ documentation: ug
 
 # Collection Editor in WPF PropertyGrid
 
-You can edit (add, remove) a collection type of property such as List, ObservableCollection using the `Collection Editor` in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
+You can edit (add, remove) a collection type of property such as List, ObservableCollection using the `Collection Editor` in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
 
 ## How to add or remove items in collection using collection editor
 
@@ -23,7 +23,7 @@ N> You will not be able to edit a collection of primitive type, such as `List<in
 
 ## Edit a selected object, which is of type collection
 
-If you directly assign the collection instance as [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html), it generates value editor for the each collection property items.
+If you directly assign the collection instance as [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject), it generates value editor for the each collection property items.
 
 {% tabs %}
 {% highlight C# %}

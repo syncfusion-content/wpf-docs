@@ -11,7 +11,7 @@ documentation: ug
 
 ## Using Adorner Drag Provider and Adorner FloatWindow
 
-There are two ways to display the Drag provider in DockingManager. One is to display it as a popup, which is default and the other is to display it in an adorner layer for this you need to enable [UseAdornerDragProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseAdornerDragProvider.html) property to display the Drag provider as Adorner layer.
+There are two ways to display the Drag provider in DockingManager. One is to display it as a popup, which is default and the other is to display it in an adorner layer for this you need to enable [UseAdornerDragProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseAdornerDragProvider) property to display the Drag provider as Adorner layer.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ DockingManager.UseAdornerFloatWindow = true;
 
 ## ActiveWindow Changed Event
 
-The [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindowChanged_EV.html) event is raised whenever the [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindow.html) property of DockingManager is changed. This event is used whenever you need to track the change in ActiveChild and do some content changes to the child. The following example demonstrates the changing of the Child header, based on the ActiveWindow.
+The [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event is raised whenever the [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ActiveWindow) property of DockingManager is changed. This event is used whenever you need to track the change in ActiveChild and do some content changes to the child. The following example demonstrates the changing of the Child header, based on the ActiveWindow.
 
 {% tabs %}
 
@@ -102,11 +102,11 @@ DockingManager.SetHeader(element, "");
 
 ## AutoHide Animation Start /Stop Events
 
-[AutoHideAnimationStart](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationStart_EV.html) event will raise whenever you click on the AWL AutoHide button. Similarly [AutoHideAnimationStop](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationStop_EV.html) is raised after [AutoHideAnimationStart](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationStart_EV.html) indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
+[AutoHideAnimationStart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event will raise whenever you click on the AWL AutoHide button. Similarly [AutoHideAnimationStop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) is raised after [AutoHideAnimationStart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) indicates that animation is completed. You can use these events to update the relevant information in UI or to do some UI related manipulations.
 
 ## AutoHide Visibility
 
-[CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanAutoHide.html) property is used to enable and disable the AutoHidden state of children. When CanAutoHide=False, the AWL AutoHidden button will be hidden.
+[CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanAutoHide) property is used to enable and disable the AutoHidden state of children. When CanAutoHide=False, the AWL AutoHidden button will be hidden.
 
 
 {% tabs %}
@@ -134,7 +134,7 @@ DockingManager.SetCanAutoHide(grid1, false);
 
 ## Enabling/Disabling Animation on mouse over for auto hide
 
-By default, whenever you move your mouse over the AutoHidden tab, the auto hide animation will start. You can disable this behavior by setting the [IsAutoHideAnimationOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsAnimationEnabledOnMouseOver.html)=true so that when you move the mouse over the auto hide tab it does not start the AutoHide animation.  But it will make you click the auto hide tab to start auto hide animation.
+By default, whenever you move your mouse over the AutoHidden tab, the auto hide animation will start. You can disable this behavior by setting the [IsAutoHideAnimationOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver)=true so that when you move the mouse over the auto hide tab it does not start the AutoHide animation.  But it will make you click the auto hide tab to start auto hide animation.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ DockingManager.IsAnimationEnabledOnMouseOver = true;
 
 ## AutoHide Animation Delay
 
-You can control the animation speed of auto hide by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~AnimationDelay.html) property as given below :
+You can control the animation speed of auto hide by using the [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property as given below :
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ DockingManager.SetAnimationDelay(element, dur);
 
 ## Events for ContextMenu and BeforeOpen
 
-[BeforeContextMenuOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~BeforeContextMenuOpen_EV.html) – When the user right clicks on the header of the Docked Child, this can be used to initiate the various actions before the context menu open.
+[BeforeContextMenuOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) – When the user right clicks on the header of the Docked Child, this can be used to initiate the various actions before the context menu open.
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ private void DockingManager_BeforeContextMenuOpen(object sender, RoutedEventArgs
 
 ## DockAbility of Child
 
-[DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockAbility.html) is the property, which is used to decide whether which child can be allowed to dock in using the internal Drag Provider.
+[DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DockAbility) is the property, which is used to decide whether which child can be allowed to dock in using the internal Drag Provider.
 
 {% highlight c# %}
 
@@ -233,7 +233,7 @@ DockingManager.SetDockAbility(grid1, ability);
 
 ## Get/Set DockedElementTabbed host size
 
-Get/Set HostSize() method has direct control over the size of the [DockedElementTabbedHost](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockedElementTabbedHost.html),  which  acts as a container for the docking child in both Dock and Float state. The container for Dock and Float state, which belongs to the given element, can be obtained as follows.
+Get/Set HostSize() method has direct control over the size of the [DockedElementTabbedHost](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockedElementTabbedHost.html),  which  acts as a container for the docking child in both Dock and Float state. The container for Dock and Float state, which belongs to the given element, can be obtained as follows.
 
 
 {% highlight c# %}
@@ -268,7 +268,7 @@ Size hostsize = DockingManager.GetHostSize(dockHost);
 
 ## Disabling the Header of the Docked Window
 
-[NoHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~NoHeader.html) is the attached property, which is used to hide the header of the Docked Child .This can be shown below.
+[NoHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_NoHeader) is the attached property, which is used to hide the header of the Docked Child .This can be shown below.
 
 {% tabs %}
 
@@ -302,7 +302,7 @@ DockingManager.SetNoHeader(grid1, true);
 
 ## Detecting the maximized state of the MDI window
 
-[IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsInMDIMaximizedState.html) property indicates whether any of the MDI children is in a maximized state.
+[IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsInMDIMaximizedState) property indicates whether any of the MDI children is in a maximized state.
 
 {% highlight c# %}
 
@@ -312,7 +312,7 @@ bool mdimax = DockingManager.IsInMDIMaximizedState;
 
 ## Setting MDI Layout
 
-[SetMDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetMDILayout.html) method is used to set the MDILayout of the child. There are three types of layouts that are available: They are:
+[SetMDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetMDILayout_Syncfusion_Windows_Tools_Controls_MDILayout_) method is used to set the MDILayout of the child. There are three types of layouts that are available: They are:
 
 * Cascade
 * Horizontal
@@ -360,7 +360,7 @@ DockingManager.SetMDILayout(MDILayout.Vertical);
 
 ## Rolling the FloatWindow up
 
-[IsRollupFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsRollupFloatWindow.html) property is used to enable the RollUp feature of Float window when it is double clicked.
+[IsRollupFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsRollupFloatWindow) property is used to enable the RollUp feature of Float window when it is double clicked.
 
 {% tabs %}
 
@@ -413,7 +413,7 @@ DockingManager.IsRollupFloatWindow = true;
 
 ## Different Keyboard Navigation Modes
 
-[SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SwitchMode.html) is a property used to specify the different types of switches while using   ctrl + tab navigation. There are five types of switches available. They are:
+[SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SwitchMode) is a property used to specify the different types of switches while using   ctrl + tab navigation. There are five types of switches available. They are:
 
 * Immediate
 * List
@@ -469,12 +469,12 @@ Users can drag the TDI window which will automatically generate the Float window
 
 #### Properties
 
-* [IsVS2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2010DraggingEnabled.html)
+* [IsVS2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled)
 
 
 ### Adding VS2010 Behavior to an Application 
 
-The VS2010 behavior can be enabled by setting [IsVS2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2010DraggingEnabled.html) property to true which will enable the VS2010 drag and drop support of TDI Windows. The default value is set to false.
+The VS2010 behavior can be enabled by setting [IsVS2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled) property to true which will enable the VS2010 drag and drop support of TDI Windows. The default value is set to false.
 
 The property in Docking Manager and can be set in the following ways:
 
@@ -525,12 +525,12 @@ Using this feature, users can decide whether the docked and float windows can be
 
 #### Properties
 
-* [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInDockedState.html)
-* [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInFloatState.html)
-* [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInDockedState.html)
-* [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInDockedState.html)
-* [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInFloatState.html)
-* [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInFloatState.html)
+* [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState)
+* [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInFloatState)
+* [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInDockedState)
+* [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInDockedState)
+* [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInFloatState)
+* [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInFloatState)
 
 ### Sample Link
 
@@ -540,12 +540,12 @@ SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\&lt;Versi
 
 Users can decide whether the docked and float windows can be resized or not using the CanResize properties. 
 
-* [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInDockedState.html): To enable resize for docked windows, set this property to True. To disable resize for the docked windows, set this property to False. By default the value of the [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInDockedState.html) property is set to True.
-* [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInFloatState.html): To enable resize for float windows, set this property to True. To disable resize for the float windows, set this property to False. By default the value of the [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInFloatState.html) property is set to True.
-* [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInDockedState.html): To enable only height resize for docked windows, set this property to True. To disable only height resize for the docked windows, set this property to False. By default the value of the [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInDockedState.html) property is set to True.
-* [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInDockedState.html): To enable only width resize for docked windows, set this property to True. To disable only width resize for the docked windows, set this property to False. By default the value of the [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInDockedState.html) property is set to True.
-* [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInFloatState.html): To enable only height resize for float windows, set this property to True. To disable only height resize for the float windows, set this property to False. By default the value of the [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInFloatState.html) property is set to True.
-* [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInFloatState.html): To enable only width resize for float windows, set this property to True. To disable only width resize for the float windows, set this property to False. By default the value of the [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInFloatState.html) property is set to True.
+* [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState): To enable resize for docked windows, set this property to True. To disable resize for the docked windows, set this property to False. By default the value of the [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState) property is set to True.
+* [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInFloatState): To enable resize for float windows, set this property to True. To disable resize for the float windows, set this property to False. By default the value of the [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInFloatState) property is set to True.
+* [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInDockedState): To enable only height resize for docked windows, set this property to True. To disable only height resize for the docked windows, set this property to False. By default the value of the [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInDockedState) property is set to True.
+* [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInDockedState): To enable only width resize for docked windows, set this property to True. To disable only width resize for the docked windows, set this property to False. By default the value of the [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInDockedState) property is set to True.
+* [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInFloatState): To enable only height resize for float windows, set this property to True. To disable only height resize for the float windows, set this property to False. By default the value of the [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInFloatState) property is set to True.
+* [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInFloatState): To enable only width resize for float windows, set this property to True. To disable only width resize for the float windows, set this property to False. By default the value of the [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInFloatState) property is set to True.
 
 The following code snippet shows how to set values for the CanResize properties: 
 
@@ -648,9 +648,9 @@ SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_
 
 The user can decide whether the docked windows can be given a fixed size using the FixedSize properties. 
 
-* [IsFixedSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~IsFixedSize.html):To enable fixed sizes for the docked windows, set this property to True. To disable fixed sizes for the docked windows, set this property to False. By default the value of the IsFixedSize property is set to False. When fixed size is enabled for docked windows, the corresponding [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInDockedState.html) property should be set to False.
-* [IsFixedHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~IsFixedHeight.html): To enable fixed height for the docked windows, set this property to True. To disable fixed height for the docked windows, set this property to False. By default the value of the [IsFixedHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~IsFixedHeight.html) property is set to False. When fixed height is enabled for docked windows, the corresponding [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInDockedState.html) property should be set to False.
-* [IsFixedWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~IsFixedWidth.html): To enable fixed width for docked windows, set this property to True. To disable fixed width for the docked windows, set this property to False. By default the value of the IsFixedWidth property is set to False. When fixed width is enabled for docked windows, the corresponding [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInDockedState.html) property should be set to False.
+* [IsFixedSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_IsFixedSize):To enable fixed sizes for the docked windows, set this property to True. To disable fixed sizes for the docked windows, set this property to False. By default the value of the IsFixedSize property is set to False. When fixed size is enabled for docked windows, the corresponding [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeInDockedState) property should be set to False.
+* [IsFixedHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_IsFixedHeight): To enable fixed height for the docked windows, set this property to True. To disable fixed height for the docked windows, set this property to False. By default the value of the [IsFixedHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_IsFixedHeight) property is set to False. When fixed height is enabled for docked windows, the corresponding [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeHeightInDockedState) property should be set to False.
+* [IsFixedWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_IsFixedWidth): To enable fixed width for docked windows, set this property to True. To disable fixed width for the docked windows, set this property to False. By default the value of the IsFixedWidth property is set to False. When fixed width is enabled for docked windows, the corresponding [CanResizeWidthInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanResizeWidthInDockedState) property should be set to False.
 
 The fixed-size docked windows will not have dockable options to allow other docked windows to be docked inside them.
 
@@ -704,7 +704,7 @@ dockingmanager.Children.Add(grid);
 
 ## Support to manage Maximize Button Visibility in Docking Windows
 
-This support will be useful to decide whether the Maximize button should be disabled or collapsed when the [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanMaximize.html) property is set to False.
+This support will be useful to decide whether the Maximize button should be disabled or collapsed when the [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMaximize) property is set to False.
 
 ### Use Case Scenarios
 
@@ -714,7 +714,7 @@ This support enhances the usability of the Maximize button.
 
 #### Properties
 
-* [MaximizeButtonMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MaximizeButtonMode.html)
+* [MaximizeButtonMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonMode)
 
 ### Sample Link
 
@@ -724,9 +724,9 @@ N/A
 
 The user can choose whether the Maximize button should be collapsed or disabled when the CanMaximize property is set to False. 
 
-By setting VisibilityMode as Collapsed when the [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanMaximize.html) property is set to False, the Maximize button will be collapsed. By setting VisibilityMode as Disable, the Maximize button is visible, but we set the IsEnabled property of the Maximize button to False.
+By setting VisibilityMode as Collapsed when the [CanMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanMaximize) property is set to False, the Maximize button will be collapsed. By setting VisibilityMode as Disable, the Maximize button is visible, but we set the IsEnabled property of the Maximize button to False.
 
-The following code snippet shows how to set values for the [MaximizeButtonMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MaximizeButtonMode.html) property: 
+The following code snippet shows how to set values for the [MaximizeButtonMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonMode) property: 
 
 {% tabs %}
 
@@ -762,11 +762,11 @@ dockingmanager.Children.Add(grid);
 
 ### UseNativeFloatWindow
 
-The [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseNativeFloatWindow.html) property is used to enable or disable the native float window which inherits the window architecture. By disabling this property, you can use the existing float window.
+The [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property is used to enable or disable the native float window which inherits the window architecture. By disabling this property, you can use the existing float window.
 
 ### Adding Native Float Window to an Application 
 
-By enabling the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseNativeFloatWindow.html) property, you can use the native float window as a floating window. This property cannot be changed dynamically.
+By enabling the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseNativeFloatWindow) property, you can use the native float window as a floating window. This property cannot be changed dynamically.
 
 {% tabs %}
 
@@ -799,11 +799,11 @@ By enabling the [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfu
 
 ### CanFloatMaximize
 
-The [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloatMaximize.html) property allows the native float window to get maximized using the Maximize button. By using this property, you can make the Maximize button visible on the title bar of the native floating window.
+The [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloatMaximize) property allows the native float window to get maximized using the Maximize button. By using this property, you can make the Maximize button visible on the title bar of the native floating window.
 
 ### Maximizing the Native Float Window
 
-By enabling the [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloatMaximize.html) property, the native float window can be maximized.
+By enabling the [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanFloatMaximize) property, the native float window can be maximized.
 
 {% tabs %}
 
@@ -841,14 +841,14 @@ Users can add a document tab group at run time in either a horizontal and vertic
 
 #### Methods
 
-* [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CreateHorizontalTabGroup.html)
-* [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CreateVerticalTabGroup.html)
-* [AddElementToTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AddElementToTabGroup.html)
+* [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CreateHorizontalTabGroup_System_Windows_UIElement_)
+* [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CreateVerticalTabGroup_System_Windows_UIElement_)
+* [AddElementToTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AddElementToTabGroup_Syncfusion_Windows_Tools_Controls_DocumentTabControl_System_Windows_UIElement_)
 
 #### Events
 
-* [TabGroupCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabGroupCreated_EV.html)
-* [MoveToOtherTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~MoveToOtherTabGroup_EV.html)
+* [TabGroupCreated](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html)
+* [MoveToOtherTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html)
 
 ### Adding a Document Tab Group to an Application 
 

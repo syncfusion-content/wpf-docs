@@ -13,7 +13,7 @@ Z – Order commands are used to visually arrange the selected objects such as N
 
 ## BringToFront
 
-The [BringToFront](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~BringToFront.html) command is used to visually brings the selected element to the front over all other overlapped elements. 
+The [BringToFront](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringToFront) command is used to visually brings the selected element to the front over all other overlapped elements. 
 
 {% tabs %}
 {% highlight C# %}
@@ -28,7 +28,7 @@ graphinfo.Commands.BringToFront.Execute(null);
 
 ## SendToBack
 
-The [SendToBack](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~SendToBack.html) command visually moves the selected elements behind all the other overlapped elements. 
+The [SendToBack](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendToBack) command visually moves the selected elements behind all the other overlapped elements. 
 
 {% tabs %}
 {% highlight C# %}
@@ -45,7 +45,7 @@ graphinfo.Commands.SendToBack.Execute(null);
 
 ## SendBackward
 
-The [SendBackward](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~SendBackward.html) command visually moves the selected elements behind the underlying element.
+The [SendBackward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendBackward) command visually moves the selected elements behind the underlying element.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +60,7 @@ graphinfo.Commands.SendBackward.Execute(null);
 
 ## BringForward
 
-The [BringForward](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~BringForward.html) command visually moves the selected element over the nearest overlapping element.
+The [BringForward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringForward) command visually moves the selected element over the nearest overlapping element.
 
 {% tabs %}
 {% highlight C# %}

@@ -15,7 +15,7 @@ PivotGridControl supports resizing of rows and columns dynamically. In this topi
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns.
 
-To enable the column resizing dynamically, the [`AllowResizeColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.PivotAnalysis.Wpf~Syncfusion.Windows.Controls.PivotGrid.PivotGridControl~AllowResizeColumns.html) property should be enabled. The below code snippet shows the resizing of columns in pivot grid is being enabled.
+To enable the column resizing dynamically, the [`AllowResizeColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_AllowResizeColumns) property should be enabled. The below code snippet shows the resizing of columns in pivot grid is being enabled.
 
 {% tabs %}
 
@@ -135,7 +135,7 @@ End Class
 
 You can change the row height by click and dragging the resizing cursor at the edge of row header. The resizing cursor appears when you hover the grid line exists between two rows.
 
-To enable the row resizing dynamically, the [`AllowResizeRows`](https://help.syncfusion.com/cr/wpf/Syncfusion.PivotAnalysis.Wpf~Syncfusion.Windows.Controls.PivotGrid.PivotGridControl~AllowResizeRows.html) property should be enabled. The below code snippet shows the resizing of rows in pivot grid is being enabled.
+To enable the row resizing dynamically, the [`AllowResizeRows`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_AllowResizeRows) property should be enabled. The below code snippet shows the resizing of rows in pivot grid is being enabled.
 
 {% tabs %}
 

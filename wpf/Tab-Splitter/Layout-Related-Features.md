@@ -9,11 +9,11 @@ documentation: ug
 
 # Layout Related Features
 
-This section illustrates the following Layout-related feature of [TabSplitter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter.html) control.
+This section illustrates the following Layout-related feature of [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control.
 
 ## Customizing the Appearance of TabSplitter
 
-The appearance of the [TabSplitter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter.html) control is customized by using the appearance properties available in the control. You can set the color for the [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~MouseOverBackground.html), [MouseOverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~MouseOverForeground.html), [SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~SelectedForeground.html) and [SelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~SelectedBackground.html) of the TabSplitter control. Here is the code snippet.
+The appearance of the [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control is customized by using the appearance properties available in the control. You can set the color for the [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_MouseOverBackground), [MouseOverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_MouseOverForeground), [SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_SelectedForeground) and [SelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_SelectedBackground) of the TabSplitter control. Here is the code snippet.
 
 {%tabs%}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ tabsplitter.MouseOverForeground = Brushes.Yellow;
 
 ## Hide TabSplitterItem header tab in TabSplitter
 
-You can hide the [TabSplitterItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem.html) header tab in [TabSplitter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter.html) by enabling the [HideHeaderOnSingleChild](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~HideHeaderOnSingleChild.html)  property. This property works only if TabSplitter control has one TabSplitterItem in it.
+You can hide the [TabSplitterItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitterItem.html) header tab in [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) by enabling the [HideHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html#Syncfusion_Windows_Tools_Controls_TabSplitter_HideHeaderOnSingleChild)  property. This property works only if TabSplitter control has one TabSplitterItem in it.
 
 {%tabs%}
 {% highlight xaml %}

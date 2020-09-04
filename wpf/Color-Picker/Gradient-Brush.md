@@ -56,11 +56,11 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Startpoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Startpoint.html)' | markdownify }}</td><td>
+{{ '[Startpoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Startpoint)' | markdownify }}</td><td>
 Indicates the Start point of LinearGradientBrush.</td></tr>
 <tr>
 <td>
-{{ '[Endpoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Endpoint.html)' | markdownify }}</td><td>
+{{ '[Endpoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_Endpoint)' | markdownify }}</td><td>
 Indicates the End point of LinearGradientBrush.</td></tr>
 </table>
 
@@ -134,19 +134,19 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~GradientOrigin.html)' | markdownify }}</td><td>
+{{ '[GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_GradientOrigin)' | markdownify }}</td><td>
 Indicates the gradient origin of RadialGradientBrush.</td></tr>
 <tr>
 <td>
-{{ '[CentrePoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~CentrePoint.html)' | markdownify }}</td><td>
+{{ '[CentrePoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_CentrePoint)' | markdownify }}</td><td>
 Indicates the centre point of RadialGradientBrush.</td></tr>
 <tr>
 <td>
-{{ '[RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~RadiusX.html)' | markdownify }}</td><td>
+{{ '[RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_RadiusX)' | markdownify }}</td><td>
 Indicates the X value in Radius of RadialGradientBrush.</td></tr>
 <tr>
 <td>
-{{ '[RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~RadiusY.html)' | markdownify }}</td><td>
+{{ '[RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_RadiusY)' | markdownify }}</td><td>
 Indicates the Y value in Radius of RadialGradientBrush.</td></tr>
 </table>
 
@@ -216,13 +216,13 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 ## Reverse the Gradient Colors
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) comes with the reverse button which helps in changing the gradient colors upside down or in case of radial gradient inside out. 
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) comes with the reverse button which helps in changing the gradient colors upside down or in case of radial gradient inside out. 
 
 ![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button_change.png)
 
 ## Show selected gradient color name
 
-By default, the selected Gradient mode name is displayed in `ColorPicker`. If we want to display the selected gradient color name instead of the Gradient mode name, use the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientBrushDisplayMode.html) value as `Extended`. The default value of `GradientBrushDisplayMode` property is `Default`.
+By default, the selected Gradient mode name is displayed in `ColorPicker`. If we want to display the selected gradient color name instead of the Gradient mode name, use the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientBrushDisplayMode) value as `Extended`. The default value of `GradientBrushDisplayMode` property is `Default`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,7 +242,7 @@ colorPicker.GradientBrushDisplayMode =  GradientBrushDisplayMode.Extended;
 
 ## Show gradient color value editor
 
-We can display the gradient property editor either in popup mode or in extended mode. By default, the gradient property editor is displayed in the extended mode. If we want display the gradient property editor only in a popup, use the [GradientPropertyEditorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientPropertyEditorMode.html) property value as `PopUp`. 
+We can display the gradient property editor either in popup mode or in extended mode. By default, the gradient property editor is displayed in the extended mode. If we want display the gradient property editor only in a popup, use the [GradientPropertyEditorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_GradientPropertyEditorMode) property value as `PopUp`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -262,7 +262,7 @@ colorPicker.GradientPropertyEditorMode =  GradientPropertyEditorMode.Popup;
 
 ## Switch between Solid, Gradient mode
 
-We can change the brush mode from solid to gradient or vice versa at runtime as well as programmatically. By default, the `Solid` brush mode is enabled. If we want `Gradient` brush mode, use the [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~BrushMode.html) property value as `Gradient`.
+We can change the brush mode from solid to gradient or vice versa at runtime as well as programmatically. By default, the `Solid` brush mode is enabled. If we want `Gradient` brush mode, use the [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorEdit.html#Syncfusion_Windows_Shared_ColorEdit_BrushMode) property value as `Gradient`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -291,7 +291,7 @@ We can change the brush mode directly by clicking on the corresponding Solid, Li
 
 ## Disable Switching between Solid, Linear and Gradient brush mode at runtime
 
- If we want to disable the Solid, Linear and Gradient brush mode transition at runtime, use the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) property value as `false`. It will hide the Solid, Linear and Gradient brush buttons. The Default value of `EnableSolidToGradientSwitch` property is `true`.
+ If we want to disable the Solid, Linear and Gradient brush mode transition at runtime, use the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html#Syncfusion_Windows_Shared_ColorPicker_EnableSolidToGradientSwitch) property value as `false`. It will hide the Solid, Linear and Gradient brush buttons. The Default value of `EnableSolidToGradientSwitch` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -311,7 +311,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 
 ## Gradient color changed notification
 
-Selected gradient color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) event.
+Selected gradient color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) event.
 
 {% tabs %}
 {% highlight xaml %}

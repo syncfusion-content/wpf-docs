@@ -16,7 +16,7 @@ The Gantt provides support to add strip lines in the Gantt chart region that den
 Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval.
 
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
-* The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ShowStripLines.html) property in the Gantt control.
+* The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines) property in the Gantt control.
 
 The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
 

@@ -9,9 +9,9 @@ documentation: ug
 
 # Custom Filtration Support
 
-AutoComplete supports Custom Filtration of items, which allows you to specify three different search modes for displaying the drop-down list. The [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~StringMode.html) property is used to specify the search mode.
+AutoComplete supports Custom Filtration of items, which allows you to specify three different search modes for displaying the drop-down list. The [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_StringMode) property is used to specify the search mode.
 
-When the value of the [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~StringMode.html) property is set as StartChar, AutoComplete begins its search from starting index of the strings in the source list collection and the matching results will be displayed in the drop-down list. In the figure shown below, AutoComplete searches using the entered key “D” and displays the matched list.
+When the value of the [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_StringMode) property is set as StartChar, AutoComplete begins its search from starting index of the strings in the source list collection and the matching results will be displayed in the drop-down list. In the figure shown below, AutoComplete searches using the entered key “D” and displays the matched list.
 
 ![custom filteration support](Custom-Filtration-Support_images/Custom-Filtration-Support_img1.png)
 
@@ -34,7 +34,7 @@ StringMode—AnyChar
 
 ## Using custom filtration support in an application 
 
-The [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~StringMode.html) property will be used to attain this functionality by setting its value as StartChar or IndexBased or AnyChar.
+The [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_StringMode) property will be used to attain this functionality by setting its value as StartChar or IndexBased or AnyChar.
 
 {% tabs %}
 {% highlight xaml %}

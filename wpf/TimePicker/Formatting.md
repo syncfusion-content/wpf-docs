@@ -13,7 +13,7 @@ The [SfTimePicker](https://www.syncfusion.com/wpf-ui-controls/timepicker) contro
 
 ## Display the time using the FormatString
 
- We can edit and display the selected time with various formatting like short time, long time, universal time and 24 hour time formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property. The default value of `FormatString` property is `"h:mm tt"`.
+ We can edit and display the selected time with various formatting like short time, long time, universal time and 24 hour time formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html#Syncfusion_Windows_Controls_Input_SfTimePicker_FormatString) property. The default value of `FormatString` property is `"h:mm tt"`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,7 +36,7 @@ Here, `SfTimePicker` with 24 hour time format
 
 ## Specifying format for the TimeSelector
 
-We can allow the user to select the pair of hour, minutes, seconds and meridiem selector or any single selector cell from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property. The default value of `SelectorFormatString` property is `"h:mm tt"` and the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
+We can allow the user to select the pair of hour, minutes, seconds and meridiem selector or any single selector cell from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html#Syncfusion_Windows_Controls_Input_SfTimePicker_SelectorFormatString) property. The default value of `SelectorFormatString` property is `"h:mm tt"` and the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
 
 {% tabs %}
 {% highlight xaml %}

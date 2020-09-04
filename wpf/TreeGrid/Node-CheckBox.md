@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Node Checkbox
 
-SfTreeGrid provides support for loading `CheckBox` in the expander cell of each node, which allows the user to check/uncheck the corresponding node. You can display check box in each node by setting [SfTreeGrid.ShowCheckBox](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ShowCheckBox.html) property as `true`. It also provides support to process the selection in the context of state of the checkbox based on [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CheckBoxSelectionMode.html) property.
+SfTreeGrid provides support for loading `CheckBox` in the expander cell of each node, which allows the user to check/uncheck the corresponding node. You can display check box in each node by setting [SfTreeGrid.ShowCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ShowCheckBox) property as `true`. It also provides support to process the selection in the context of state of the checkbox based on [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -28,7 +28,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 
 ## Indeterminate State Support
 
-You can enable or disable the indeterminate state for node CheckBox using [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowTriStateChecking.html) property.
+You can enable or disable the indeterminate state for node CheckBox using [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,7 +45,7 @@ treeGrid.AllowTriStateChecking = true;
 
 ## Recursive Checking
 
-SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~EnableRecursiveChecking.html) property as `true`.
+SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) property as `true`.
 
 * A tree node will be checked only if all its child nodes are checked.
 * A tree node will be unchecked if all its child nodes are unchecked. 
@@ -66,11 +66,11 @@ treeGrid.EnableRecursiveChecking = true;
 
 ![](Node-CheckBox_images/Node-CheckBox_img2.png)
 
-N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowTriStateChecking.html) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~EnableRecursiveChecking.html) is `true`, CheckBox can be in indeterminate state.
+N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
 ## Saving and loading Node CheckBox state from the property in data object
 
-You can bind state of node checkbox to the bool property in underlying data object by using [SfTreeGrid.CheckBoxMappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CheckBoxMappingName.html) property. TreeGrid updates the checked state of checkbox when underlying data object property gets changed and vice versa.
+You can bind state of node checkbox to the bool property in underlying data object by using [SfTreeGrid.CheckBoxMappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxMappingName) property. TreeGrid updates the checked state of checkbox when underlying data object property gets changed and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,7 +87,7 @@ treeGrid.CheckBoxMappingName = "IsSelected";
 
 ### Disable Recursive Checking when data object property changed
 
-By default, recursive checking will be applied, whenever node’s `IsChecked` property gets changed. You can disable the recursive checking on property value change (which is mapped with `CheckBoxMappingName`) by setting [SfTreeGrid.RecursiveCheckingMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RecursiveCheckingMode.html) as `OnCheck`.
+By default, recursive checking will be applied, whenever node’s `IsChecked` property gets changed. You can disable the recursive checking on property value change (which is mapped with `CheckBoxMappingName`) by setting [SfTreeGrid.RecursiveCheckingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RecursiveCheckingMode) as `OnCheck`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,7 +105,7 @@ treeGrid.RecursiveCheckingMode = RecursiveCheckingMode.OnCheck;
 
 ## Disabling CheckBox for certain nodes
 
-You can disable CheckBox by writing style for [TreeGridExpanderCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html) and setting [IsCheckBoxEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell~IsCheckBoxEnabled.html) property as ‘false’
+You can disable CheckBox by writing style for [TreeGridExpanderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html) and setting [IsCheckBoxEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridExpanderCell_IsCheckBoxEnabled) property as ‘false’
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,7 +121,7 @@ In the below screenshot, node CheckBox is disabled for leaf nodes.
 
 ## Collapsing CheckBox for certain nodes
 
-You can collapse node CheckBox for certain nodes by editing the control template of [TreeGridExpanderCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html) and changing the Checkbox visibility based on condition.
+You can collapse node CheckBox for certain nodes by editing the control template of [TreeGridExpanderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html) and changing the Checkbox visibility based on condition.
 
 {% tabs %}
 {% highlight xaml %}
@@ -288,7 +288,7 @@ SfTreeGrid has following modes for processing selection based on check box state
 
 **Default mode**
 
-If you don’t want to affect the selection while checking/unchecking the node CheckBox, you need to set [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CheckBoxSelectionMode.html) as `Default`.
+If you don’t want to affect the selection while checking/unchecking the node CheckBox, you need to set [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) as `Default`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -309,7 +309,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 
 **SelectOnCheck**
 
-If you want to select/deselect the rows using node CheckBox only, you need to set [SfTreeGrid. CheckBoxSelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CheckBoxSelectionMode.html) as `SelectOnCheck`. 
+If you want to select/deselect the rows using node CheckBox only, you need to set [SfTreeGrid. CheckBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) as `SelectOnCheck`. 
 Navigation, editing and programmatic selection are not supported in this mode.
 
 {% tabs %}
@@ -329,7 +329,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 
 **SynchronizeSelection**
 
-If you want to synchronize the selection with node CheckBox’s IsChecked state, you need to set [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CheckBoxSelectionMode.html) as `SynchronizeSelection`. In this mode, you can select by checking checkbox and selecting/deselecting the row will check/uncheck the corresponding node checkbox.
+If you want to synchronize the selection with node CheckBox’s IsChecked state, you need to set [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) as `SynchronizeSelection`. In this mode, you can select by checking checkbox and selecting/deselecting the row will check/uncheck the corresponding node checkbox.
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ N>
 
 ### NodeCheckStateChanged
 
-[NodeCheckStateChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~NodeCheckStateChanged_EV.html) event triggered when user check or uncheck the node check box.
+[NodeCheckStateChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event triggered when user check or uncheck the node check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -369,7 +369,7 @@ private void TreeGrid_NodeCheckStateChanged(object sender, NodeCheckStateChanged
 
 ## Programmatically Processing Node CheckBox
 
-You can change the state of node checkbox programmatically by calling [SetCheckedState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeNode~SetCheckedState.html) method as below,
+You can change the state of node checkbox programmatically by calling [SetCheckedState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_SetCheckedState_System_Nullable_System_Boolean__System_Boolean_System_Boolean_) method as below,
 
 {% tabs %}
 {% highlight c# %}
@@ -378,7 +378,7 @@ treeNode.SetCheckedState(true);
 {% endhighlight %}
 {% endtabs %}
 
-If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~EnableRecursiveChecking.html) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeNode~SetCheckedState.html) method.
+If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_SetCheckedState_System_Nullable_System_Boolean__System_Boolean_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -389,7 +389,7 @@ treeNode.SetCheckedState(true, false, false);
 
 ## Getting Checked nodes
 
-You can get the checked nodes collection using [GetCheckedNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~GetCheckedNodes.html) method.
+You can get the checked nodes collection using [GetCheckedNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_GetCheckedNodes_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}

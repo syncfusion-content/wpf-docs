@@ -47,7 +47,7 @@ checkListBox.Foreground=Brushes.Red;
 
 ### Setting the Background 
 
- We can change the background color of `CheckListBox` items by setting the `Background` property. If we want to differentiate mouse hovered item or currently selected item with other items, we can do this by using [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~MouseOverBackground.html) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItemBackground.html) properties.
+ We can change the background color of `CheckListBox` items by setting the `Background` property. If we want to differentiate mouse hovered item or currently selected item with other items, we can do this by using [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_MouseOverBackground) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItemBackground) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -579,7 +579,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Theme
 
-We can customize the appearance of the `CheckListBox` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `CheckListBox` control.
+We can customize the appearance of the `CheckListBox` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CheckListBox` control.
 
 * Blend
 * Default

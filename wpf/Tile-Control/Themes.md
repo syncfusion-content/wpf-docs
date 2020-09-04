@@ -13,13 +13,13 @@ Hub Tile and Pulsing Tile supports various themes which can be applied using [Sf
 
 ## Applying themes using SkinManager
 
-The appearance of Hub Tile and Pulsing Tile control can be customized by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). The list of available themes and assemblies can be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
+The appearance of Hub Tile and Pulsing Tile control can be customized by using [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). The list of available themes and assemblies can be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
 
 Below example explains how to apply blend theme for Hub Tile and Pulsing Tile using `SfSkinManager` in an existing application.
 
  * Add references like **Syncfusion.SfSkinManager.Wpf.dll** and **Syncfusion.Themes.Blend.Wpf.dll** assembly to the project.
 
- * Import **SfSkinManager** namespace and set **SfSkinManager.VisualStyle** attached property either to the Window or the Hub Tile. Setting [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) property to the Window will apply blend theme for all controls inside the Window.
+ * Import **SfSkinManager** namespace and set **SfSkinManager.VisualStyle** attached property either to the Window or the Hub Tile. Setting [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) property to the Window will apply blend theme for all controls inside the Window.
 
 {% tabs %}
 {% highlight xaml %}

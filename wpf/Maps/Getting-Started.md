@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with SfMap
 
-This section explains the steps required to configure the [`SfMap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfMap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) and add basic elements to it using various APIs.
 
 ## Adding SfMap reference
 
@@ -108,7 +108,7 @@ SfMap syncMap = new SfMap();
 
 ## Adding layers
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer.html). It can be either ShapeFileLayer or ImageryLayer. The following example will show to add ShapeFileLayer on map. 
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html). It can be either ShapeFileLayer or ImageryLayer. The following example will show to add ShapeFileLayer on map. 
 
 {%tabs%}
 
@@ -208,7 +208,7 @@ The above code example results in the following output
 
 ## Data Binding in Map
 
-Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDPath.html), and [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDTableField.html) properties.
+Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource), [`ShapeIDPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDPath), and [`ShapeIDTableField`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDTableField) properties.
 
 The [`Populate data`](https://help.syncfusion.com/wpf/maps/PopulateData) section gives the detailed explanation of data binding.
 

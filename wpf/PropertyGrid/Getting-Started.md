@@ -104,7 +104,7 @@ public partial class MainWindow : Window {
 
 ## Populating the properties
 
-We can display the properties of any object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
+We can display the properties of any object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.Property.html#Syncfusion_Windows_PropertyGrid_Property_SelectedObject) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -162,7 +162,7 @@ Here, the `SelectedEmployee` object is set as `SelectedObject` for the `Property
 
 ## Custom Editor as value editors
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html). 
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
 
 For example, if we create an `EmailID` property as a string type, `TextBox` will assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
 
@@ -275,7 +275,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Selected property item changed notification
 
-The property item selection changed in `PropertyGrid` can be examined using [SelectedPropertyItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedPropertyItemChanged_EV.html) event. The `SelectedPropertyItemChanged` event contains the old and newly selected property item details in the `OldValue` and  `NewValue` properties.
+The property item selection changed in `PropertyGrid` can be examined using [SelectedPropertyItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event. The `SelectedPropertyItemChanged` event contains the old and newly selected property item details in the `OldValue` and  `NewValue` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -312,7 +312,7 @@ private void PropertyGrid_SelectedPropertyItemChanged(DependencyObject d, Depend
 
 ## Tooltip support
 
-You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) property as `false`. The default value of `EnableToolTip` property is `true`.
+You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property as `false`. The default value of `EnableToolTip` property is `true`.
 
 {% tabs %}
 {% highlight C# %}
@@ -373,7 +373,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-example
 
 ## Property item value changed notification
 
-The property item value changed in `PropertyGrid` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly changed property values by the `OldValue` and `NewValue` properties and `Property` contains the property item whose values is changed.
+The property item value changed in `PropertyGrid` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event. The `ValueChanged` event contains the old and newly changed property values by the `OldValue` and `NewValue` properties and `Property` contains the property item whose values is changed.
 
 {% tabs %}
 {% highlight xaml %}

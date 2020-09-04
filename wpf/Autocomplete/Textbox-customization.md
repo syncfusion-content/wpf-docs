@@ -14,7 +14,7 @@ AutoComplete provides the user-friendly customizing options for text box. This s
 
 ## Water mark 
 
-[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
+[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,7 +63,7 @@ N> The Watermark property is of the object type. So, any framework elements can 
 
 ### Water mark template 
 
-Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkTemplate.html)  property.
+Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_WatermarkTemplate)  property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ Any business object can be bound to the Watermark property and that object can b
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text in the AutoComplete control.
+The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the AutoComplete control.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 ## Setting the Dropdown Icon 
 
-This feature allows to set the drop-down icon for the TextBox control using the [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowDropDownButton.html).
+This feature allows to set the drop-down icon for the TextBox control using the [ShowDropDownButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowDropDownButton).
 
 {% tabs %}
 

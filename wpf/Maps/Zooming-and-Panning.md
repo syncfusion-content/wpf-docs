@@ -13,7 +13,7 @@ The Zooming and Panning feature of the Maps control allows you to zoom in and ou
 
 ### Zooming
 
-The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the [`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomLevel.html) property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
+The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the [`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomLevel) property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
 
 ### Properties Related to Zooming
 
@@ -26,19 +26,19 @@ The following properties are related to the zooming feature of the Maps control:
 
 #### ZoomLevel
 
-[`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomLevel.html) is the primary property of the zooming feature. It controls the map’s scale size while zooming. Initially, the zoom level is 1. ZoomLevel cannot be less than 1.
+[`ZoomLevel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomLevel) is the primary property of the zooming feature. It controls the map’s scale size while zooming. Initially, the zoom level is 1. ZoomLevel cannot be less than 1.
 
 #### EnableZoom
 
-The [`EnableZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnableZoom.html) property enables or disables the zooming feature. A `True` value of this property enables the zooming feature and `False` disables the zooming feature.
+The [`EnableZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_EnableZoom) property enables or disables the zooming feature. A `True` value of this property enables the zooming feature and `False` disables the zooming feature.
 
 #### MinZoom
 
-The [`MinZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MinZoom.html) property is used to set the minimum zoom level of the map. 
+The [`MinZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_MinZoom) property is used to set the minimum zoom level of the map. 
 
 ####  MaxZoom
 
-The [`MaxZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MaxZoom.html) property is used to set the maximum zoom level of the Map control.
+The [`MaxZoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_MaxZoom) property is used to set the maximum zoom level of the Map control.
 
 Sample code for setting zooming feature properties:
 
@@ -66,7 +66,7 @@ A map can be zoomed by changing the zoom level of the Map control. Incrementing 
 
 #### Through the Zoom method
 
-Maps can be zoomed through the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Zoom.html) method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
+Maps can be zoomed through the [`Zoom`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_Zoom_System_Double_) method. The Zoom method has the parameter zoom value. The map can be zoomed or scaled with the zoom value parameter.
 
 {% highlight C# %}
 
@@ -100,7 +100,7 @@ Properties related to Panning are:
 
 #### Enable and disable pan
 
-The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~EnablePan.html) property enables or disables the panning feature of the map. A `True` value enables the panning feature. A `False` value disables the panning feature of the map.
+The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_EnablePan) property enables or disables the panning feature of the map. A `True` value enables the panning feature. A `False` value disables the panning feature of the map.
 
 {% highlight xaml %}
 
@@ -123,7 +123,7 @@ There are two methods for panning the map. They are:
 
 #### Through the Pan method
 
-The map can be panned with the [`Pan`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Pan.html) method in the Maps control. The Pan method has two parameters: x and y.  The map is translated with respect to the x and y parameters.
+The map can be panned with the [`Pan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_Pan_System_Double_System_Double_) method in the Maps control. The Pan method has two parameters: x and y.  The map is translated with respect to the x and y parameters.
 
 ##### Code sample for the Pan method:
 
@@ -164,9 +164,9 @@ This feature allows you to set the initial zoom level automatically in two ways:
 
 N> DistanceType default value is KiloMeter.
 
-Calculate the initial zoom level automatically based on the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~Radius.html) and [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~DistanceType.html) properties of ImageryLayer.
+Calculate the initial zoom level automatically based on the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Radius) and [`DistanceType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_DistanceType) properties of ImageryLayer.
 
-* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~Center.html) - Represents center point of ImageryLayer.  
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_Center) - Represents center point of ImageryLayer.  
 
 {% tabs %}
 
@@ -228,7 +228,7 @@ Calculate the initial zoom level automatically based on the [`Radius`](https://h
 
 ### Geo-bounds
 
-Calculate the initial zoom level automatically based on the [`LatLngBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LatLngBounds.html) of ImageryLayer.
+Calculate the initial zoom level automatically based on the [`LatLngBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LatLngBounds) of ImageryLayer.
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ If you want to zoom the imagery layer using fingers by touch, then you have to e
 
 ![WPF SfMaps pinch zoom image](Map-Providers_images/Marker_PinchZooming.gif)
 
-You can able to cancel the pinch zooming in ImageryLayer by setting [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ZoomLevelChangingEventArgs~Cancel.html) property as true in [`ZoomLevelChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~ZoomLevelChanging_EV.html) event argument as per the below code snippet. 
+You can able to cancel the pinch zooming in ImageryLayer by setting [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ZoomLevelChangingEventArgs.html#Syncfusion_UI_Xaml_Maps_ZoomLevelChangingEventArgs_Cancel) property as true in [`ZoomLevelChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html) event argument as per the below code snippet. 
 
 {% tabs %}
 

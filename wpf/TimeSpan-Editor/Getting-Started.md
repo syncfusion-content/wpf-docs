@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WPF TimeSpanEdit
 
-This section explains how to create a WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html) and explains about its structure and features.
+This section explains how to create a WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) and explains about its structure and features.
 
 ## Control Structure
 
@@ -123,7 +123,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Change display format of time span
 
-You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~Format.html) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
+You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_Format) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
 
 * d - It displays the days value.
 * h - It displays the hours value.
@@ -153,7 +153,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Value Changed Notification
 
-The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
+The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -186,7 +186,7 @@ private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ## Restrict the time within minimum and maximum time span
 
-The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties.
+The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MinValue) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MaxValue) properties.
 
 {% tabs %}
 {% highlight XAML %}

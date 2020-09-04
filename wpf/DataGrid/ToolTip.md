@@ -13,7 +13,7 @@ ToolTip provides the support to show the pop-up window that displays the informa
 
 ## Record cell tooltip
 
-You can enable the ToolTip for the [GridCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html) by setting the [SfDataGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as `true`.
+You can enable the ToolTip for the [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) by setting the [SfDataGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as `true`.
 
 
 {% tabs %}

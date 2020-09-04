@@ -9,9 +9,9 @@ documentation: ug
 
 # Data-Binding to Objects
 
-The [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView.html) control can also support data-binding to objects. The following example shows this.
+The [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control can also support data-binding to objects. The following example shows this.
 
-1. Create a class that act as a model for [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html) as follows.
+1. Create a class that act as a model for [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) as follows.
 
    ~~~ csharp
     public class Contact : IDataErrorInfo
@@ -87,7 +87,7 @@ The [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusio
     </Window.DataContext>
    ~~~
 
-4. Configure the ItemTemplate and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~HeaderTemplate.html) for the CardView control.
+4. Configure the ItemTemplate and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) for the CardView control.
 
   ~~~ xaml
 <syncfusion:CardView ItemsSource="{Binding Contacts}" >

@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Percent Value in WPF PercentTextBox
 
-The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) allows the user to change the percent value using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property.
+The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) allows the user to change the percent value using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentValue) property.
 
 {%tabs%}
 {% highlight xaml %}
@@ -72,7 +72,7 @@ class ViewModel : NotificationObject
 
 ## Change percent value by pasting the clipboard's text
 
-By default, `PercentTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PasteMode.html) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+By default, `PercentTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PasteMode) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
 
 The following table explains the pasting behaviour in `Advanced` paste mode,
 
@@ -132,7 +132,7 @@ percentTextBox.PercentValue = 12345.67;
 
 ## Value Changed Event
 
-The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValueChanged_EV.html) event. In `PercentValueChanged` event, you can get old percent value and new percent value from the `OldValue` and  `NewValue` properties.
+The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) event. In `PercentValueChanged` event, you can get old percent value and new percent value from the `OldValue` and  `NewValue` properties.
 
 {%tabs%}
 {% highlight xaml %}
@@ -165,7 +165,7 @@ private void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPr
 
 ## Setting the Null value
 
- By default, the `PercentTextBox` control will display zero value when the `PercentValue` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~NullValue.html) and [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) properties to show the null or any other percent value instead of zero.
+ By default, the `PercentTextBox` control will display zero value when the `PercentValue` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_NullValue) and [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_UseNullOption) properties to show the null or any other percent value instead of zero.
  
  The default value of the `NullValue` property is `null`, you can reset this to any other percent value. It will display only on setting the `UseNullOption` property is set to `true`.
  
@@ -215,11 +215,11 @@ percentTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the Percent value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkText) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextIsVisible) property is `true` and the Percent value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
 
 ### Setting the WatermarkText Foreground
 
-The `PercentTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WaterMarkTextForeground.html) property. The default color of `WaterMarkTextForeground` is `Black`.
+The `PercentTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTextForeground) property. The default color of `WaterMarkTextForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -246,7 +246,7 @@ percentTextBox.WatermarkTextForeground = Brushes.Red;
 
 ### Setting Watermark Template
 
-You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
+You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_WatermarkTemplate) property.
 
 {% highlight xaml %}
 

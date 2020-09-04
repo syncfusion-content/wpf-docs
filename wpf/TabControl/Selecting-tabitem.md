@@ -9,7 +9,7 @@ documentation: ug
 
 # Selecting a tab item in TabControl (TabControlExt)
 
-This section explains how to select tab item and selection functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains how to select tab item and selection functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Select tab item using mouse or keyboard
 
@@ -21,7 +21,7 @@ N> You can select only one tab item at a time.
 
 ## Tab selection changed notification
 
-The `TabControl` notifies that the selected tabitem is changed by user through the [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~OldSelectedItem.html) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~NewSelectedItem.html) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
+The `TabControl` notifies that the selected tabitem is changed by user through the [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_OldSelectedItem) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_SelectedItemChangedEventArgs_NewSelectedItem) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
 
 {% tabs %}
 {% highlight XAML %}
@@ -58,7 +58,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Load the previously selected tab item content
 
-If you want to load the previously selected tab item in background after new tab item is selected, use the [IsDisableUnloadTabItemExtContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsDisableUnloadTabItemExtContent.html) property value as `true`. The default value of `IsDisableUnloadTabItemExtContent` property is `false`.
+If you want to load the previously selected tab item in background after new tab item is selected, use the [IsDisableUnloadTabItemExtContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsDisableUnloadTabItemExtContent) property value as `true`. The default value of `IsDisableUnloadTabItemExtContent` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -83,7 +83,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Display mode of the selected tab item
 
-If you want to show tab items without its headers in the `TabControl`, use the [FullScreenMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~FullScreenMode.html) property. If you set `FullScreenMode` property value as `ControlMode`, then it will auto hide headers and show it only on when hover the mouse on respective tab header placed area. You can also display the `TabControl` in the full window by setting the `FullScreenMode` property value as `WindowMode`. The default value of `FullScreenMode` property is `None`.
+If you want to show tab items without its headers in the `TabControl`, use the [FullScreenMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_FullScreenMode) property. If you set `FullScreenMode` property value as `ControlMode`, then it will auto hide headers and show it only on when hover the mouse on respective tab header placed area. You can also display the `TabControl` in the full window by setting the `FullScreenMode` property value as `WindowMode`. The default value of `FullScreenMode` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -113,7 +113,7 @@ You can change the selected tab item header font weight, background and foregrou
 
 ### Change selected tab header font weight
 
-If you want to highlight the selected tab header, change the font of tab header from semi bold to extra bold by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
+If you want to highlight the selected tab header, change the font of tab header from semi bold to extra bold by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectedItemFontWeight) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -138,7 +138,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ### Change selected tab header background and foreground 
 
-You can change the highlighting background and foreground of the selected tab item by using the [TabItemSelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedForeground.html) and [TabItemSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~.html) properties. The default value of `TabItemSelectedForeground` property is `Black`  and `TabItemSelectedBackground` property is `Lavender`.
+You can change the highlighting background and foreground of the selected tab item by using the [TabItemSelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabItemSelectedForeground) and [TabItemSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) properties. The default value of `TabItemSelectedForeground` property is `Black`  and `TabItemSelectedBackground` property is `Lavender`.
 
 {% tabs %}
 {% highlight XAML %}

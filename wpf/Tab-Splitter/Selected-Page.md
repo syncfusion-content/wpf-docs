@@ -9,7 +9,7 @@ documentation: ug
 
 # Selected Page
 
-You can set the selected page by using the [IsSelectedPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitterPage~IsSelectedPage.html) property. If this property is set to _true_, the page is selected, else it is not selected.
+You can set the selected page by using the [IsSelectedPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitterPage.html#Syncfusion_Windows_Tools_Controls_SplitterPage_IsSelectedPage) property. If this property is set to _true_, the page is selected, else it is not selected.
 
 {%tabs%}
 {% highlight xaml %}

@@ -161,7 +161,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Save directly to file
 
-After exporting to excel, you can save exported workbook directly to file system by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
+After exporting to excel, you can save exported workbook directly to file system by using [SaveAs](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAs_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Save as stream
 
-After exporting to excel, you can save exported workbook to stream by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
+After exporting to excel, you can save exported workbook to stream by using [SaveAs](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAs_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -303,7 +303,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ## Export DataGrid to HTML
 
-You can save exported workbook as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
+You can save exported workbook as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -372,7 +372,7 @@ Console.WriteLine("Mail has been sent...");
 
 ## Export DataGrid to XML
 
-You can save exported workbook as `Xml` file also by using [SaveAsXml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsXml.html) methods.
+You can save exported workbook as `Xml` file also by using [SaveAsXml](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsXml_System_IO_Stream_Syncfusion_XlsIO_ExcelXmlSaveType_) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -562,7 +562,7 @@ Here, `OrderID` column cells are customized while exporting.
 SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
 
 ### Workbook
-SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
+SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving. 
 
 {% tabs %}
 {% highlight c# %}
@@ -590,7 +590,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~Version.html) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
+Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. You can refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
 
 #### Setting borders
 

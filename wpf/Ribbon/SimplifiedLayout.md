@@ -10,7 +10,7 @@ documentation: ug
 
  The Ribbon is available in simplified layout which is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. For the best user experience, the other Ribbon commands are located under the overflow menu. It also provides option to switch back and forth between the simplified and the normal layout using the minimize button.
 
- The [`LayoutMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~LayoutMode.html) enumeration property provides an option to load the Ribbon control in simplified layout. It contains the following options like:
+ The [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) enumeration property provides an option to load the Ribbon control in simplified layout. It contains the following options like:
 
  * **Normal** - The Ribbon items are arranged in the standard layout. This is the default value.
  * **Simplified** - The Ribbon items are arranged in the simplified layout.
@@ -39,7 +39,7 @@ documentation: ug
 
 ## Switching between simplified and normal layouts
 
- The Ribbon control allows to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~EnableSimplifiedLayoutMode.html) property to **True**. By default, its value is **False**.
+ The Ribbon control allows to switch between simplified and normal layouts at runtime using the Ribbon minimize button located in the lower right corner of the Ribbon. To enable this option, set the [`EnableSimplifiedLayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_EnableSimplifiedLayoutMode) property to **True**. By default, its value is **False**.
 
  {% tabs %}
 
@@ -67,20 +67,20 @@ documentation: ug
 
 ## Visibility of the Ribbon items between normal and simplified layout
 
- The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings~SetDisplayMode.html) attached property. By default, items will be displayed in both normal and simplified layout. The [`DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.DisplayMode.html) is of flag enumeration type that contains the following values.
+ The Ribbon items can be set common between different layouts or can be made visible only in a particular layout using the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) attached property. By default, items will be displayed in both normal and simplified layout. The [`DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.DisplayMode.html) is of flag enumeration type that contains the following values.
 
  * **Normal** - The item will be displayed only in the normal layout.
  * **Simplified** - The item will be displayed only in the simplified layout.
  * **OverflowMenu** - The item will be displayed only inside the overflow menu when simplified layout is enabled.
 
- Also, the [`DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings~SetDisplayMode.html) property allows the following value combinations as well.
+ Also, the [`DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property allows the following value combinations as well.
 
  * **Normal, Simplified** – The item will be displayed in both normal and simplified layout.
  * **Normal, OverflowMenu** – The item will be displayed in both normal layout and inside overflow menu during simplified layout.
  * **Simplified, OverflowMenu** – The item will be displayed in simplified layout.
  * **Normal, Simplified, OverflowMenu** – The item will be displayed in both normal and simplified layout.
 
- In the below code snippet, the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings~SetDisplayMode.html) property for *Paste* option is set to **"Simplified"**, so it will only be displayed only in the simplified layout. The [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings~SetDisplayMode.html) property for *Underline* option is set to **"Normal, Overflow"**, so it will be displayed in the normal layout and will also be displayed inside the overflow menu in the simplified layout.
+ In the below code snippet, the [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Paste* option is set to **"Simplified"**, so it will only be displayed only in the simplified layout. The [`SimplifiedLayoutSettings.DisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimplifiedLayoutSettings.html#Syncfusion_Windows_Tools_Controls_SimplifiedLayoutSettings_SetDisplayMode_System_Windows_UIElement_Syncfusion_Windows_Tools_DisplayMode_) property for *Underline* option is set to **"Normal, Overflow"**, so it will be displayed in the normal layout and will also be displayed inside the overflow menu in the simplified layout.
 
  {% tabs %}
 
@@ -152,7 +152,7 @@ documentation: ug
 
 ## Setting image for Ribbon items
 
- For **"Normal"** layout mode, the images from the [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SmallIcon.html) and [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~LargeIcon.html) properties are used inside the Ribbon items based on the size mode (extra small, small and large). However, the simplified layout mode uses 20 * 20 image size for the Ribbon items as standard and it can be obtained from the [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~MediumIcon.html) property. In-case if the [`IconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconTemplate.html) property is used to display the image, the simplified layout will automatically resize it to 20 * 20 size.
+ For **"Normal"** layout mode, the images from the [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon) and [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) properties are used inside the Ribbon items based on the size mode (extra small, small and large). However, the simplified layout mode uses 20 * 20 image size for the Ribbon items as standard and it can be obtained from the [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) property. In-case if the [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_IconTemplate) property is used to display the image, the simplified layout will automatically resize it to 20 * 20 size.
 
  {% tabs %}
 
@@ -201,7 +201,7 @@ documentation: ug
 
 ## Customizing the Ribbon during runtime through the QAT window
 
- The Ribbon control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`RibbonTab`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonBar.html). The newly added [`RibbonTab`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonBar.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~LayoutMode.html) is set as **"Simplified"** and a new [`RibbonTab`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior. 
+ The Ribbon control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). The newly added [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior. 
 
  
  ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItems_NormalLayout.png)
@@ -211,7 +211,7 @@ documentation: ug
  *Simplified layout*
 
 
- In the meantime, the Ribbon control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~LayoutMode.html) is set as **"Simplified"** and the *Bold* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts.
+ In the meantime, the Ribbon control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and the *Bold* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts.
 
   ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItemsThroughContext_NormalLayout.png)
  *Normal layout*

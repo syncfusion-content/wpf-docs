@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endtabs %}
 
-Then initialize an empty chart with [PrimaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and [SecondaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html) as shown below,
+Then initialize an empty chart with [PrimaryAxis](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_SecondaryAxis) as shown below,
 
 {% tabs %}
 
@@ -149,9 +149,9 @@ this.DataContext = new UsersViewModel();
 
 ## Populate chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)  to [`SfChart3D.Series`]( https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html) property, and then bind the Data property of the above ViewModel to the [`ColumnSeries3D.ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ItemsSource.html) property as follows.
+As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)  to [`SfChart3D.Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) property, and then bind the Data property of the above ViewModel to the [`ColumnSeries3D.ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property as follows.
 
->N You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries3D~YBindingPath.html) properties, so that [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D.html) would fetch values from the respective properties in the data model to plot the series.
+>N You need to set [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) properties, so that [`SfChart3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html) would fetch values from the respective properties in the data model to plot the series.
 
 
 {% tabs %}
@@ -199,7 +199,7 @@ As we are going to visualize the comparison of heights in the data model, add [`
 
 ## Add Title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html) property of chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as follows.
 
 {% tabs %} 
 
@@ -225,7 +225,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries3D~AdornmentsInfo.html) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries3D_members.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
+You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html#Syncfusion_UI_Xaml_Charts_ChartSeries3D_AdornmentsInfo) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries3D.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
 
 {% tabs %} 
 
@@ -262,7 +262,7 @@ Refer to [`Adornments`](https://help.syncfusion.com/wpf/SfChart3D/Adornments) to
 
 ## Enable legend
 
-You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) property as follows.
+You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property as follows.
 
 {% tabs %} 
 
@@ -293,7 +293,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}  
 
-Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Label.html) property of ChartSeries, which will be displayed in corresponding legend.
+Additionally, you need to set label for each series using the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -330,7 +330,7 @@ Additionally, you need to set label for each series using the [`Label`](https://
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowTooltip.html)  property to true.
+Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip)  property to true.
 
 {% tabs %} 
 
