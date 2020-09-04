@@ -60,6 +60,11 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <th>Type</th>
 </tr>
 <tr>
+<td>Open button</td>
+<td>PART_ButtonOpen</td>
+<td>System.Windows.Controls.Button</td>
+</tr>
+<tr>
 <td>Save button</td>
 <td>PART_ButtonSave</td>
 <td>System.Windows.Controls.Button</td>
@@ -170,14 +175,59 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Text search button</td>
-<td>PART_ButtonTextSearch</td>
-<td>System.Windows.Controls.Button</td>
-</tr>
-<tr>
 <td>Fill button</td>
 <td>PART_Fill</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Add textbox tool</td>
+<td>PART_FreeText</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Text properties tool</td>
+<td>PART_ButtonTextBoxFont</td>
+<td>System.Windows.Controls.Button</td>
+</tr>
+<tr>
+<td>Separator between the annotation and cursor tools</td>
+<td>PART_AnnotationsSeparator</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Stamp tool</td>
+<td>PART_Stamp</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Handwritten signature tool</td>
+<td>PART_ButtonSignature</td>
+<td>System.Windows.Controls.Button</td>
+</tr>
+<tr>
+<td>Select tool</td>
+<td>PART_SelectTool</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Hand tool</td>
+<td>PART_HandTool</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Marquee zoom tool</td>
+<td>PART_MarqueeZoom</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Separator between the cursor tools and text search button</td>
+<td>Part_CursorTools</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Text search button</td>
+<td>PART_ButtonTextSearch</td>
+<td>System.Windows.Controls.Button</td>
 </tr>
 </table>
 
