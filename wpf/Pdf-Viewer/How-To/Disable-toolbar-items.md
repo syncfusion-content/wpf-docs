@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disable toolbar items| PDF Viewer | Wpf | Syncfusion
-description: disable toolbar items
+description: This section explains how to disable a toolbar item and contains the table showing the complete list of toolbar items and their types.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -11,27 +11,22 @@ documentation: ug
 
 To remove the toolbar altogether use PdfDocumentView control instead of PdfViewerControl as described in the [Load PDF without ToolStrip in viewer](https://help.syncfusion.com/wpf/pdfviewer/how-to/load-pdf-without-toolstrip-in-viewer) section. Individual toolbar items from the default toolbar of PDF Viewer can be removed selectively. The following code snippet illustrates disabling the open file button. 
 
-
 {% tabs %}
 {% highlight c# %}
 
 private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {
 	//Get the instance of the toolbar using its template name
-
 	DocumentToolbar toolbar = pdfViewerControl.Template.FindName("PART_Toolbar", pdfViewerControl) as DocumentToolbar;
 
 	//Get the instance of the open file button using its template name
-
 	Button openButton = (Button)toolbar.Template.FindName("PART_ButtonOpen", toolbar);
 
 	//Set the visibility of the button to collapsed 
-
 	openButton.Visibility = System.Windows.Visibility.Collapsed;
 }
 
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
