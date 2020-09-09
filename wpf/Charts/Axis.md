@@ -3107,6 +3107,130 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img64.jpeg)
 
+**RoundStart**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="RoundStart">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    RangePadding = DateTimeRangePadding.RoundStart
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in WPF Chart]
+
+**RoundEnd**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="RoundEnd">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    RangePadding = DateTimeRangePadding.RoundEnd
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in WPF Chart]
+
+**PrependInterval**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="PrependInterval">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    RangePadding = DateTimeRangePadding.PrependInterval
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in WPF Chart]
+
+**AppendInterval**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:DateTimeAxis  RangePadding="AppendInterval">
+
+</syncfusion:DateTimeAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    RangePadding = DateTimeRangePadding.AppendInterval
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in WPF Chart]
+
 
 ### NumericalRangePadding
 
@@ -3117,6 +3241,10 @@ The following types are available for [`NumericalAxis`](https://help.syncfusion.
 * Normal
 * Round
 * Auto
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 By default, the default [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis), the default value is [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
@@ -3218,6 +3346,129 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img68.jpeg)
 
+**RoundStart**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="RoundStart">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    RangePadding = NumericalPadding.RoundStart
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in WPF Chart]
+
+**RoundEnd**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="RoundEnd">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    RangePadding = NumericalPadding.RoundEnd
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in WPF Chart]
+
+**PrependInterval**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="PrependInterval">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    RangePadding = NumericalPadding.PrependInterval
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in WPF Chart]
+
+**AppendInterval**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  RangePadding="AppendInterval">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    RangePadding = NumericalPadding.AppendInterval
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in WPF Chart]
 
 ##  Applying Padding to the Axis
 
