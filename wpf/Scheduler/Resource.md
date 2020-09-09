@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource scheduler | WPF| Syncfusion
-description: WPF scheduler resource view allows users to select resources and display with efficient use of the events associated with the selected resources.
+title: Resource Grouping scheduler | WPF| Syncfusion
+description: WPF scheduler resource grouping allows users to select resources and display with efficient use of the events associated with the selected resources.
 platform: WPF
 control: SfScheduler
 documentation: ug
 ---
 
-# Resource in WPF Scheduler (SfScheduler)
+# Resource Grouping in WPF Scheduler (SfScheduler)
 
 Resource Grouping displays the resources as discrete views integrated with the scheduler to display appointments in all types of schedule views. It provides an intuitive user interface, which allows users to select single or multiple resources and display the events associated with the selected resources with efficient and effective utilization. Each resource can be assigned to a unique color to more easily identify the resource associated with an appointment. 
 
@@ -32,16 +32,20 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler Resource view](Resource_Images/Resource.png)
+
 ## Resource view visibility
 
 You can handle the visibility of resource using the `ResourceGroupType` property of `SfScheduler`. If the appointments are not grouped based on resources the default value is Resource.
 
-`Resource`: Displays the dates grouped under resource.
+* Resource
 
-`Date`: Displays the resources grouped within a date.
+* Date
 
-`None`: The resource not displays.
+* None
+
+### Resource
+
+It groups the number of dates under each resource and is applicable only on the scheduler views such as day, week, work week views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,6 +56,51 @@ schedule.ViewType = SchedulerViewType.Week;
 schedule.ResourceGroupType = ResourceGroupType.Resource;
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler Resource Grouping](Resource_Images/Resource.png)
+
+### Date
+It groups the number of resources under each date and is applicable only on the scheduler views such as day, week, work week views.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Date" Grid.Row="1"/>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ViewType = SchedulerViewType.Week;
+schedule.ResourceGroupType = ResourceGroupType.Date;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler Grouping resource by date ](Resource_Images/Resource_Date.png)
+
+
+### None
+The resource not displays.
+
+
+### Resource sharing 
+Multiple resources can share the same events, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
+
+{% tabs %}
+{% highlight c# %}
+
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+var appointments = new ScheduleAppointment()
+{
+StartTime = DateTime.Now.AddMinutes(20),
+EndTime = DateTime.Now.AddHours(2),
+Subject = "SUBJECT",
+ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id , (ResourceCollection[1] as SchedulerResource).Id}
+};
+
+scheduleAppointmentCollection.Add(appointments);
+this.schedule.ItemsSource = scheduleAppointmentCollection;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler resource sharing ](Resource_Images/Resource_Sharing.png)
 
 ## Creating appointments by specifying the resource
 
@@ -260,3 +309,26 @@ schedule.TimelineViewSettings.VisibleResourceCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
+## Special Time Region
+
+Special time region can be created based on the resources in day , week , work week and timeline views.
+
+{% tabs %}
+{% highlight c# %}
+
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+var appointments = new ScheduleAppointment()
+{
+StartTime = DateTime.Now.AddMinutes(20),
+EndTime = DateTime.Now.AddHours(2),
+Subject = "SUBJECT",
+ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id , (ResourceCollection[1] as SchedulerResource).Id}
+};
+
+scheduleAppointmentCollection.Add(appointments);
+this.schedule.ItemsSource = scheduleAppointmentCollection;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler resource Special Time Region ](Resource_Images/Resource_SepcialRegion.png)
