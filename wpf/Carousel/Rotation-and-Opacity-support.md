@@ -9,11 +9,11 @@ documentation: ug
 
 # Rotation and Opacity supports in WPF Carousel
 
-You can rotate and change the opacity of the carousel items in WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel.html) control.
+You can rotate and change the opacity of the carousel items in WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control.
 
 ## Rotate carousel item
 
-You can place the carousel items with a specific rotation angle by using the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationAngle.html) property. The default value of `RotationAngle` property is `0`.
+You can place the carousel items with a specific rotation angle by using the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationAngle) property. The default value of `RotationAngle` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -35,7 +35,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change rotation speed
 
-If you want to change the rotation speed of the carousel items when selecting or navigating from one item to another item, use the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationSpeed.html) property. This will effective only on `Standard` visual mode. The default value of `RotationSpeed` property is `200`.
+If you want to change the rotation speed of the carousel items when selecting or navigating from one item to another item, use the [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_RotationSpeed) property. This will effective only on `Standard` visual mode. The default value of `RotationSpeed` property is `200`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -59,7 +59,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Disable rotation animation
 
-If you want to disable the animated rotation of carousel items when selecting or navigating from one item to another item, use the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableRotationAnimation.html) property value as `false`. This will effective only on `Standard` visual mode. The default value of `EnableRotationAnimation` property is `true`.
+If you want to disable the animated rotation of carousel items when selecting or navigating from one item to another item, use the [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableRotationAnimation) property value as `false`. This will effective only on `Standard` visual mode. The default value of `EnableRotationAnimation` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -83,7 +83,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Opacity for carousel item in standard view 
 
-If you want to change the opacity of the carousel items except the selected item in the `VisualMode.Standard` mode, set the fraction value to the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityFraction.html) property. The default value of `OpacityFraction` property is `0`.
+If you want to change the opacity of the carousel items except the selected item in the `VisualMode.Standard` mode, set the fraction value to the [OpacityFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFraction) property. The default value of `OpacityFraction` property is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -107,7 +107,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Opacity for carousel item in custom view 
 
-If you want to individually change the opacity of the next, previous items or selected carousel items in the `VisualMode.CustomPath` mode, set the fraction values to the [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityFractions.html) collection property. You can disable it by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html) property value as `false`.  The default value of `OpacityFractions` property is `null` and `OpacityEnabled` property is `true`.
+If you want to individually change the opacity of the next, previous items or selected carousel items in the `VisualMode.CustomPath` mode, set the fraction values to the [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityFractions) collection property. You can disable it by setting the [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_OpacityEnabled) property value as `false`.  The default value of `OpacityFractions` property is `null` and `OpacityEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

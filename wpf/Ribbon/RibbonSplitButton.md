@@ -75,7 +75,7 @@ _RibbonBar2.Items.Add(_splitbutton)
 
 ## Set various sizes for SplitButton
 
-[`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) supports three types of size modes and it can be set using the [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SizeForm.html) property. The different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.SizeForm.html) available are as follows:
+[`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) supports three types of size modes and it can be set using the [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_SizeForm) property. The different [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) available are as follows:
 
  * **ExtraSmall** - Displays only the image in 16 * 16 size.
  * **Small** - Displays the label and the image in 16 * 16 size.
@@ -130,22 +130,22 @@ _ribbonBar2.Items.Add(_splitbutton3)
 
 ![Various size forms in SplitButton](SplitButton_images/SplitButton_img2.jpg)
 
-N> When **simplified** layout is set, [`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
+N> When **simplified** layout is set, [`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
 ## Setting image to SplitButton
 
-[`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~IconType.html) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~IconType.html) property is **"Icon"**. The [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
+[`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) property is **"Icon"**. The [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
 
-* **Icon** - Gets the detail of the icon path from the [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SmallIcon.html), [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~MediumIcon.html) or [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~LargeIcon.html) properties and sets it to the SplitButton.
-* **VectorImage** - Gets the details of the icon path data from the [`VectorImage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~VectorImage.html) property and sets it to the SplitButton.
+* **Icon** - Gets the detail of the icon path from the [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon), [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) or [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) properties and sets it to the SplitButton.
+* **VectorImage** - Gets the details of the icon path data from the [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage) property and sets it to the SplitButton.
 
 ### Setting image path
 
-[`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) allows to set the image according to the different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SizeForm.html) values. To set the image to SplitButton, the following properties are used:
+[`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) allows to set the image according to the different [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm) values. To set the image to SplitButton, the following properties are used:
 
-* [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SmallIcon.html) - 16 * 16 size image to be displayed in normal layout for **"ExtraSmall"** and **"Small"** size form.
-* [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~MediumIcon.html) - 20 * 20 size image to be displayed in simplified layout.
-* [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~LargeIcon.html) - 32 * 32 size image to be displayed in normal layout for **"Large"** size form.
+* [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon) - 16 * 16 size image to be displayed in normal layout for **"ExtraSmall"** and **"Small"** size form.
+* [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) - 20 * 20 size image to be displayed in simplified layout.
+* [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) - 32 * 32 size image to be displayed in normal layout for **"Large"** size form.
 
 {% tabs %}
 
@@ -248,7 +248,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 ### Setting vector image 
 
-The [`VectorImage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~VectorImage.html) property is of the type `ObservableCollection<Path>` which allows the image to be set as path type. The SplitButton will automatically resize the image according to its [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~SizeForm.html). For simplified layout, the image will be resized to 20 * 20 size which is the standard.
+The [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage) property is of the type `ObservableCollection<Path>` which allows the image to be set as path type. The SplitButton will automatically resize the image according to its [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm). For simplified layout, the image will be resized to 20 * 20 size which is the standard.
 
 {% tabs %}
 
@@ -525,7 +525,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 ## Add SplitButton to the simplified layout
 
-When the simplified layout is enabled, the [`SplitButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitButton.html) can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+When the simplified layout is enabled, the [`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
 {% tabs %}
 

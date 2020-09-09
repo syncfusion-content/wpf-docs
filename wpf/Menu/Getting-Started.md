@@ -18,17 +18,17 @@ Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup 
 
 ## Creating the MenuAdv Control 
 
-The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control can be created through Visual Studio, Expression Blend, XAML, or C#. The following sections describe this.
+The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can be created through Visual Studio, Expression Blend, XAML, or C#. The following sections describe this.
 
 ### Through Visual Studio
 
-The following are the steps to create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control using Visual Studio.
+The following are the steps to create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control using Visual Studio.
 
-1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
+1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
 
    ![ThroughVisualStudio](Getting-Started_images/Getting-Started_img2.png)
 
-2. Select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
+2. Select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
 
 3. Click on the button given in Items property. This will open the Collection Editor window.
 
@@ -38,18 +38,18 @@ The following are the steps to create the [MenuAdv](https://help.syncfusion.com/
 
 ### Through Expression Blend
 
-The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control can also be created and configured using Expression Blend. The following are the steps to do so.
+The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can also be created and configured using Expression Blend. The following are the steps to do so.
 
 1. Create a WPF project in the Expression Blend and reference the following assemblies.
     1. Syncfusion.Shared.Wpf
 
-2. Search for [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) in the Toolbox.
+2. Search for [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in the Toolbox.
 
    ![ThroughExpressionBlend](Getting-Started_images/Getting-Started_img4.png)
 
-3. Drag the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) to the designer. This will generate an empty menu bar. 
+3. Drag the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) to the designer. This will generate an empty menu bar. 
 
-4. To add the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) to the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control, select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) and go to Properties area.
+4. To add the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) to the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control, select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to Properties area.
 
 5. Click Items (Collection) under Common Properties.
 
@@ -57,19 +57,19 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusio
 
 6. Once the Collection Editor opens, click Add another item.  The Select Object window will open.
 
-7. Select [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) by typing [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) in the search box, and then click OK.
+7. Select [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) by typing [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) in the search box, and then click OK.
 
     ![ItemCollection](Getting-Started_images/Getting-Started_img6.png)
 
-8. Configure the properties (such as header or icon) of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) using the properties in the Collection Editor. This will generate the following control.
+8. Configure the properties (such as header or icon) of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the properties in the Collection Editor. This will generate the following control.
 
 	![Output](Getting-Started_images/Getting-Started_img7.png)
 
-N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
+N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 
-The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control can also be created through XAML. The following code example illustrates this.
+The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control can also be created through XAML. The following code example illustrates this.
 
 
 {% highlight xaml %}
@@ -96,7 +96,7 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusio
 
 ### Through C#
 
-To create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) control through C#, include the following namespace to the directives list.
+To create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control through C#, include the following namespace to the directives list.
 
 {% highlight C# %}
 
@@ -104,7 +104,7 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 
-Next, create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) as follows.
+Next, create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) as follows.
 
 {% highlight C# %}
 

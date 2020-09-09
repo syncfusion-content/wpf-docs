@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Adding custom Content
-In the circular progress bar, you can add any custom content to the center of the control using [ProgressContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~ProgressContent.html) property.
+In the circular progress bar, you can add any custom content to the center of the control using [ProgressContent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_ProgressContent) property.
 For example, you can include add, play or pause button to control the progress. You can also add an image that indicates the actual task in progress or add custom text that conveys how far the task is completed.
 
 The following code sample demonstrates to add custom text that conveys how far the resource is used.

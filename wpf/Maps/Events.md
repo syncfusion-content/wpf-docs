@@ -9,15 +9,15 @@ documentation: ug
 
 # Events in WPF Maps (SfMap)
 
-• [`ZoomedIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomedIn_EV.html) - Occurs whenever zooming the map.  
-• [`ZoomedOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~ZoomedOut_EV.html) - Occurs when zoomed out the map.
-• [`Panning`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Panning_EV.html) - Occurs while panning the map.
-• [`Panned`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~Panned_EV.html) - Occurs after panned the map.
-• [`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MapToolTipOpening_EV.html) - Occurs when any tooltip on the SfMap control is opened.
+• [`ZoomedIn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs whenever zooming the map.  
+• [`ZoomedOut`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs when zoomed out the map.
+• [`Panning`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs while panning the map.
+• [`Panned`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs after panned the map.
+• [`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) - Occurs when any tooltip on the SfMap control is opened.
 
 ### Tooltip opening event
 
-[`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.SfMap~MapToolTipOpening_EV.html) event occurs whenever you select a shape, bubble, or marker. You will get the `Data` and `TooltipType` properties as arguments from `TooltipOpeningEventArgs` handler, and you can cancel the event for a particular shape using the `Cancel` property.
+[`MapToolTipOpening`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html) event occurs whenever you select a shape, bubble, or marker. You will get the `Data` and `TooltipType` properties as arguments from `TooltipOpeningEventArgs` handler, and you can cancel the event for a particular shape using the `Cancel` property.
 
 {% tabs %}
 

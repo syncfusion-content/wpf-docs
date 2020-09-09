@@ -16,7 +16,7 @@ documentation: ug
 
 ## Key features
 
-* SfChart3D supports different type of [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html) which can be used for different data visualizations.Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
+* SfChart3D supports different type of [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_Series) which can be used for different data visualizations.Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
 
 * Supports several axes types which can be used with the charts. There are axes specialized for Numerical,          Category, DateTime, TimeSpan, Logarithmic scenarios.
 

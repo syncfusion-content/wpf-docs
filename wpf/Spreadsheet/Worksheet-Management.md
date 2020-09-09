@@ -43,7 +43,7 @@ spreadsheet.UnhideSheet("Sheet 2");
 
 ## Hide or unhide sheet tabs
 
-Spreadsheet provides support to hide and unhide the all worksheet tabs in the workbook using the [ShowSheetTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ShowSheetTabs.html) property. The Default value is `true`.
+Spreadsheet provides support to hide and unhide the all worksheet tabs in the workbook using the [ShowSheetTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ShowSheetTabs) property. The Default value is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ spreadsheet.RenameSheet("Sheet1");
 
 ### Rename a worksheet programmatically
 
-SfSpreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RenameSheet(String,String).html) method.
+SfSpreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_RenameSheet_System_String_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
 
 ### Protecting a worksheet
 
-SfSpreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
+SfSpreadsheet provides support to protect the worksheet with or without password. This helps to prevent a user from modifying the contents of the worksheet. The protection of worksheet can be done with [ExcelSheetProtection](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.ExcelSheetProtection.html) options also.
 
 The Protect sheet options are
 

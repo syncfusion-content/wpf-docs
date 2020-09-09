@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting and customization
 
-SfDiagram provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Export.html "Export") method.
+SfDiagram provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Export) method.
 SfDiagram can be exported in the following File formats.
 
 * PNG
@@ -36,11 +36,11 @@ diagram.Export();
 
 ## Export settings
 
-SfDiagram provides various options to customize the exported diagram using the [SfDiagram.ExportSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~ExportSettings.html "SfDiagram.ExportSettings") property of type [ExportSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings.html "ExportSettings").
+SfDiagram provides various options to customize the exported diagram using the [SfDiagram.ExportSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_ExportSettings) property of type [ExportSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html).
 
 ### Image format
 
-You can use the [ExportBitmapEncoder](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportBitmapEncoder.html "ExportBitmapEncoder") or [ExportType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportType.html "ExportType") properties to specify the type/format of the exported image file.
+You can use the [ExportBitmapEncoder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportBitmapEncoder) or [ExportType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportType) properties to specify the type/format of the exported image file.
 
 {% tabs %}
 {% highlight C# %}
@@ -59,7 +59,7 @@ diagram.Export();
 
 ### Image file name
 
-You can save the exported image as stream or file system using the [ExportStream](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportStream.html "ExportStream") or [FileName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~FileName.html "FileName") properties of `ExportSettings` class respectively.
+You can save the exported image as stream or file system using the [ExportStream](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportStream) or [FileName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_FileName) properties of `ExportSettings` class respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +79,7 @@ diagram.Export();
 
 ### ExportMode
 
-[ExportMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportMode.html "ExportMode") specifies whether the complete page region of the diagram is to be exported or the content region alone. The exporting options are as follows:
+[ExportMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ExportMode) specifies whether the complete page region of the diagram is to be exported or the content region alone. The exporting options are as follows:
 
 | ExportMode| Description | Output |
 |---|---|---|
@@ -134,7 +134,7 @@ diagram.Export();
 
 ### Export to PDF
 
-SfDiagram does not have the built-in support to convert the diagram to PDF file, but you can achieve this by exporting the diagram as XPS file and then convert the exported XPS file to PDF using [Syncfusion.XPS.XPSToPdfConverter](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Base~Syncfusion.XPS.XPSToPdfConverter.html "Syncfusion.XPS.XPSToPdfConverter").
+SfDiagram does not have the built-in support to convert the diagram to PDF file, but you can achieve this by exporting the diagram as XPS file and then convert the exported XPS file to PDF using [Syncfusion.XPS.XPSToPdfConverter](https://help.syncfusion.com/cr/file-formats/Syncfusion.XPS.XPSToPdfConverter.html).
 
 ### Export specific region of diagram
 

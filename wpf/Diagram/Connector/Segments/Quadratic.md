@@ -13,7 +13,7 @@ Quadratic curve segments are used to create curve segments as quadratic shape an
 
 ## How to create the Quadratic Curve Segments
 
-To create a quadratic curve line, you should specify the segment as [QuadraticCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuadraticCurveSegment.html).
+To create a quadratic curve line, you should specify the segment as [QuadraticCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.QuadraticCurveSegment.html).
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Arrange and navigate items in TileViewControl
 
-This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Rearrange position of TileViewItem
 
-If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) position, drag that item and drop to anywhere you want to place it in the `TileViewControl`.
+If you want to rearrange the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) position, drag that item and drop to anywhere you want to place it in the `TileViewControl`.
 
 ![TileViewItems are rearranged by drag and drop](Arrange_images/Arrange.gif)
 
@@ -21,7 +21,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Restrict rearranging of TileViewItem
 
-You can restrict the rearranging of `TileViewItem` by setting the [AllowItemRepositioning](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioning.html) property value as `false`. The default value of `AllowItemRepositioning` property is `true`.
+You can restrict the rearranging of `TileViewItem` by setting the [AllowItemRepositioning](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_AllowItemRepositioning) property value as `false`. The default value of `AllowItemRepositioning` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -48,7 +48,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Arrange TileViewItem in rows and columns
 
-You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowCount.html) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnCount.html) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
+You can change the number of tileview items displayed in view by setting the value to [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowCount) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnCount) properties. The default value of `RowCount` and `ColumnCount` properties is `0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -78,7 +78,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change row and column size
 
-By default, `TileViewItem` rows and columns size are allocated based on the control size and number of items in a control. You can change the row and column size of the `TileViewItem` by setting the value to [RowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowHeight.html) and [ColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnWidth.html) properties. The default value of `RowHeight` and `ColumnWidth` properties is `auto`.
+By default, `TileViewItem` rows and columns size are allocated based on the control size and number of items in a control. You can change the row and column size of the `TileViewItem` by setting the value to [RowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_RowHeight) and [ColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ColumnWidth) properties. The default value of `RowHeight` and `ColumnWidth` properties is `auto`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -114,7 +114,7 @@ You can navigate from one `TileViewItem` to any other `TileViewItem` by using th
 
 ## Navigate to hidden items using scroll bar
 
-If you add more items and set the row and column size to place the items that exceeds the control size, then some items are hidden from the view. You can easily navigate to the hidden items by using the scroll bar. You can enable the vertical and horizontal scroll bars by using the [HorizontalScrollBarVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~HorizontalScrollBarVisibility.html) and [VerticalScrollBarVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~VerticalScrollBarVisibility.html) properties value as `auto` or `Visible`. The default value of `HorizontalScrollBarVisibility` and `VerticalScrollBarVisibility` properties is `Disabled`.
+If you add more items and set the row and column size to place the items that exceeds the control size, then some items are hidden from the view. You can easily navigate to the hidden items by using the scroll bar. You can enable the vertical and horizontal scroll bars by using the [HorizontalScrollBarVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_HorizontalScrollBarVisibility) and [VerticalScrollBarVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_VerticalScrollBarVisibility) properties value as `auto` or `Visible`. The default value of `HorizontalScrollBarVisibility` and `VerticalScrollBarVisibility` properties is `Disabled`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -152,7 +152,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change built-in animation duration
 
-If you want to change the animation duration of navigation, use the [AnimationDuration](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AnimationDuration.html) property. The default value of `AnimationDuration` property is `{00:00:00.7000000}`.
+If you want to change the animation duration of navigation, use the [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_AnimationDuration) property. The default value of `AnimationDuration` property is `{00:00:00.7000000}`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -179,7 +179,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Disable built-in navigation animation
 
-By default, navigation of `TileViewItem` animation is enabled. If you want to disable the animation while navigation of `TileViewItem`, use the [EnableAnimation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~EnableAnimation.html) property value as `false`.
+By default, navigation of `TileViewItem` animation is enabled. If you want to disable the animation while navigation of `TileViewItem`, use the [EnableAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_EnableAnimation) property value as `false`.
 
 {% tabs %}
 {% highlight XAML %}

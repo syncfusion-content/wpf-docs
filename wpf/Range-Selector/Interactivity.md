@@ -22,43 +22,43 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomPosition.html)'| markdownify }}</td><td>
+{{'[`ZoomPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ZoomPosition)'| markdownify }}</td><td>
 Represents the zoom position of the selected range.</td></tr>
 <tr>
 <td>
-{{'[`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomFactor.html)'| markdownify }}</td><td>
+{{'[`ZoomFactor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ZoomFactor)'| markdownify }}</td><td>
 Represents the zoom factor of the selected range.</td></tr>
 <tr>
 <td>
-{{'[`SelectedData`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~SelectedData.html)'| markdownify }}</td><td>
+{{'[`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_SelectedData)'| markdownify }}</td><td>
 Gets the selected data between selected ranges.</td></tr>
 <tr>
 <td>
-{{'[`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowGridLines.html)'| markdownify }}</td><td>
+{{'[`ShowGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ShowGridLines)'| markdownify }}</td><td>
 Shows the gridlines inside the content.</td></tr>
 <tr>
 <td>
-{{'[`Minimum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~Minimum.html)'| markdownify }}</td><td>
+{{'[`Minimum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_Minimum)'| markdownify }}</td><td>
 Sets the minimum or starting range of the navigator.</td></tr>
 <tr>
 <td>
-{{'[`Maximum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~Maximum.html)'| markdownify }}</td><td>
+{{'[`Maximum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_Maximum)'| markdownify }}</td><td>
 Sets the maximum or ending range of the navigator.</td></tr>
 <tr>
 <td>
-{{'[`ViewRangeStart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeStart.html)'| markdownify }}</td><td>
+{{'[`ViewRangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ViewRangeStart)'| markdownify }}</td><td>
 Gets the start value of the selected range.</td></tr>
 <tr>
 <td>
-{{'[`ViewRangeEnd`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeEnd.html)'| markdownify }}</td><td>
+{{'[`ViewRangeEnd`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ViewRangeEnd)'| markdownify }}</td><td>
 Gets the end value of the selected range.</td></tr>
 <tr>
 <td>
-{{'[`EnableDeferredUpdate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~EnableDeferredUpdate.html)'| markdownify }}</td><td>
+{{'[`EnableDeferredUpdate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_EnableDeferredUpdate)'| markdownify }}</td><td>
 Enables deferred scrolling and panning.</td></tr>
 <tr>
 <td>
-{{'[`DeferredUpdateDelay`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~DeferredUpdateDelay.html)'| markdownify }}</td><td>
+{{'[`DeferredUpdateDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_DeferredUpdateDelay)'| markdownify }}</td><td>
 Gets or sets the delay value when the EnableDeferredUpdate is enabled.</td></tr>
 </table>
 
@@ -73,7 +73,7 @@ Parameters</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`ValueChanged`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ValueChanged_EV.html)'| markdownify }}</td><td>
+{{'[`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html)'| markdownify }}</td><td>
 ValueChanged (Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar is changed</td></tr>
 <tr>
@@ -218,19 +218,19 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftThumbStyle.html)'| markdownify }}</td><td>
+{{'[`LeftThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle)'| markdownify }}</td><td>
 Defines the style for the left thumb of the navigator.</td></tr>
 <tr>
 <td>
-{{'[`RightThumbStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightThumbStyle.html)'| markdownify }}</td><td>
+{{'[`RightThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)'| markdownify }}</td><td>
 Defines the style for the right thumb of the navigator.</td></tr>
 <tr>
 <td>
-{{'[`LineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ThumbStyle~LineStyle.html)'| markdownify }}</td><td>
+{{'[`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle)'| markdownify }}</td><td>
 Defines the style for line in the left or right thumb.</td></tr>
 <tr>
 <td>
-{{'[`SymbolTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ThumbStyle~SymbolTemplate.html)'| markdownify }}</td><td>
+{{'[`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate)'| markdownify }}</td><td>
 Defines the style for symbol placed in the left or right thumb.</td></tr>
 </table>
 
@@ -307,18 +307,18 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`HigherBarGridLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherBarGridLineStyle.html)'| markdownify }}</td><td>
+{{'[`HigherBarGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarGridLineStyle)'| markdownify }}</td><td>
 Defines the style for gridlines of upper labels bar.</td></tr>
 <tr>
 <td>
-{{'[`LowerBarGridLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerBarGridLineStyle.html)'| markdownify }}</td><td>
+{{'[`LowerBarGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarGridLineStyle)'| markdownify }}</td><td>
 Defines the style for gridlines of lower labels bar.</td></tr>
 <tr>
 <td>
-{{'[`HigherBarTickLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherBarTickLineStyle.html)'| markdownify }}</td><td>
+{{'[`HigherBarTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarTickLineStyle)'| markdownify }}</td><td>
 Defines the style for ticklines of upper labels bar.</td></tr>
 <tr>
 <td>
-{{'[`LowerBarTickLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerBarTickLineStyle.html)'| markdownify }}</td><td>
+{{'[`LowerBarTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarTickLineStyle)'| markdownify }}</td><td>
 Defines the style for ticklines of lower labels bar.</td></tr>
 </table>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Dropdown Pop-up in WPF DateTimePicker (DateTimeEdit)
 
-You can display the dropdown popup by clicking the dropdown button. You can select the datetime by using the dropdown popup calendar and clock. The dropdown pop-up in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) controls contains the following parts:
+You can display the dropdown popup by clicking the dropdown button. You can select the datetime by using the dropdown popup calendar and clock. The dropdown pop-up in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) controls contains the following parts:
 
 * Calendar
 * Clock
@@ -28,7 +28,7 @@ You can open or close the popup datetime selector popup by pressing the `Alt + D
 ## Dropdown date time selector
 
 You can select the date and time using `Calendar` and `Clock`.  By default, the `Calender` is displayed in the drop down popup.
-You can use the [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DropDownView.html) property to display either  `Calendar` or `Clock` or both in the drop down to select the datetime.
+You can use the [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DropDownView) property to display either  `Calendar` or `Clock` or both in the drop down to select the datetime.
 
 {% tabs %}
 {% highlight XAML %}
@@ -60,7 +60,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Custom UI for drop down button
 
-You can customize the dropdown button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DropDownButtonTemplate.html) property.
+You can customize the dropdown button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DropDownButtonTemplate) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -92,7 +92,7 @@ You can easily select the today date by clicking the dropdown popup `Today` butt
 
 ### Select today date and time
 
-You can select the today date and time by setting the [TodayButtonAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~TodayButtonAction.html) property as `DateTime` and clicking the dropdown popup `Today` button. The default value of `TodayButtonAction` property is `Date`.
+You can select the today date and time by setting the [TodayButtonAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_TodayButtonAction) property as `DateTime` and clicking the dropdown popup `Today` button. The default value of `TodayButtonAction` property is `Date`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -117,7 +117,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Reset the selected date
 
-You can easily reset the selected datetime value with null value by clicking the dropdown popup `None` button. You can enable it by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEmptyDateEnabled.html) property as `true`. The default value of `IsEmptyDateEnabled` property is `false`.
+You can easily reset the selected datetime value with null value by clicking the dropdown popup `None` button. You can enable it by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsEmptyDateEnabled) property as `true`. The default value of `IsEmptyDateEnabled` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -140,7 +140,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change month names
 
-You can change the popup calendar month names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AbbreviatedMonthNames.html) property. The default value of `AbbreviatedMonthNames` property is `null`.
+You can change the popup calendar month names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_AbbreviatedMonthNames) property. The default value of `AbbreviatedMonthNames` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -194,7 +194,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change weekday names
 
-You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AbbreviatedMonthNames.html) property. The default value of `AbbreviatedMonthNames` property is `null`.
+You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_AbbreviatedMonthNames) property. The default value of `AbbreviatedMonthNames` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -238,7 +238,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Open the popup date time selector with time delay
 
-You can open the dropdown popup with some delay after clicking the dropdown button by setting the time span to the [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~PopupDelay.html) property. The default value of `PopupDelay` property is `{00:00:00}`.
+You can open the dropdown popup with some delay after clicking the dropdown button by setting the time span to the [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_PopupDelay) property. The default value of `PopupDelay` property is `{00:00:00}`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -259,7 +259,7 @@ dateTimeEdit.PopupDelay = new TimeSpan(0, 0, 2);
 
 ## Disable dropdown date time selector
 
-You can restrict the user to select the datetime from the dropdown popup calendar and clock by hiding the dropdown button. You can hide the dropdown button by setting the [IsButtonPopUpEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsButtonPopUpEnabled.html) property value as `false`. The default value of `IsButtonPopUpEnabled` property is `true`.
+You can restrict the user to select the datetime from the dropdown popup calendar and clock by hiding the dropdown button. You can hide the dropdown button by setting the [IsButtonPopUpEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_IsButtonPopUpEnabled) property value as `false`. The default value of `IsButtonPopUpEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

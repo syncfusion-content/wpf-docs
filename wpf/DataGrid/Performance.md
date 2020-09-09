@@ -46,7 +46,7 @@ Conditional styling using converter provides better performance compare to Data 
 
 ### Improving loading and scrolling performance using LightWeightTemplate
 
-You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UseDrawing.html) property as `Default`. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the `VisualTree` of SfDataGrid to improve the loading and scrolling performance. 
+You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UseDrawing) property as `Default`. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the `VisualTree` of SfDataGrid to improve the loading and scrolling performance. 
 {% tabs %}
 {% highlight xaml %}
 <Syncfusion:SfDataGrid x:Name="dataGrid"  
@@ -177,7 +177,7 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 
 ### Loading performance - On demand summary calculation for group and caption summary
 
-You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryCalculationMode.html) as `CalculationMode.OndemandCaptionSummary` or `CalculationMode.OndemandGroupSummary`. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
+You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryCalculationMode) as `CalculationMode.OndemandCaptionSummary` or `CalculationMode.OndemandGroupSummary`. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Status Bar
 
- The status bar option is used to view primary information such as the loaded document's path, encoding type, line number and column number based on the cursor position. By default, [Visibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~Visibility.html) property for status bar is set to be **Collapsed**. 
+ The status bar option is used to view primary information such as the loaded document's path, encoding type, line number and column number based on the cursor position. By default, [Visibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_Visibility) property for status bar is set to be **Collapsed**. 
 
 {% tabs %}
 
@@ -76,10 +76,10 @@ Me.EditControl1.StatusBarSettings.Visibility = Visibility.Visible;
 
 The status bar shows the file path, encoding type, line number and column number. The visibility of each item in the status bar can be customized by using the below properties.
  
-  * [ShowFilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~ShowFilePath.html): It shows the exact application directory and the file path which was loaded in Edit Control. File Path property can be enabled/disabled by changing it's visibility property.
-  * [ShowLineNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~ShowLineNumber.html): It shows the current line number where the cursor is placed on Edit Control. By changing it's visibility user can enable/disable the line number property.
-  * [ShowColumnNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~ShowColumnNumber.html): It shows the current column number where the cursor is placed on Edit Control. By changing it's visibility user can enable/disable the Column number property.
-  * [ShowEncoding](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~ShowEncoding.html): It shows the current encoding type of the loaded file in Edit Control. Encoding property can be enable/disable by changing it's visibility property.
+  * [ShowFilePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_ShowFilePath): It shows the exact application directory and the file path which was loaded in Edit Control. File Path property can be enabled/disabled by changing it's visibility property.
+  * [ShowLineNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_ShowLineNumber): It shows the current line number where the cursor is placed on Edit Control. By changing it's visibility user can enable/disable the line number property.
+  * [ShowColumnNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_ShowColumnNumber): It shows the current column number where the cursor is placed on Edit Control. By changing it's visibility user can enable/disable the Column number property.
+  * [ShowEncoding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_ShowEncoding): It shows the current encoding type of the loaded file in Edit Control. Encoding property can be enable/disable by changing it's visibility property.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ Me.EditControl1.StatusBarSettings.ShowEncoding = Visibility.Collapsed;
 
 {% endtabs %}
 
-The following screenshot shows the Edit Control after changing the [ShowEncoding](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.StatusBarSettings~ShowEncoding.html) visibility property to **Collapsed**.
+The following screenshot shows the Edit Control after changing the [ShowEncoding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_ShowEncoding) visibility property to **Collapsed**.
 
 ![Status Bar](Status-Bar_images/StatusBar_Properties.png)
 

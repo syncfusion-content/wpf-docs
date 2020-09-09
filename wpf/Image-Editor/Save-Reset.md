@@ -100,15 +100,15 @@ editor.Reset();
 
 Image editor has the following two events:
 
-* [`ImageSaving`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ImageSaving_EV.html)
-* [`ImageSaved`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ImageSaved_EV.html)
+* [`ImageSaving`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
+* [`ImageSaved`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
 
 ### Image saving
 
-This event occurs before the image is saved to the destination location. [`ImageSavingEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html) is the parameter. This argument contains the following two properties:
+This event occurs before the image is saved to the destination location. [`ImageSavingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html) is the parameter. This argument contains the following two properties:
 
 * `Cancel` - Cancels the saving functionality.
-* [`Stream`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs~Stream.html) - Stream of the image that is going to be saved.
+* [`Stream`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs.html#Syncfusion_UI_Xaml_ImageEditor_ImageSavingEventArgs__ctor_System_IO_Stream_) - Stream of the image that is going to be saved.
 * `FileName` - You can save the image in the specified name using the `ImageSaving` event. 
 
 Hence, you can control the saving using the `Cancel` property, and you can also access the stream as needed.
@@ -141,7 +141,7 @@ The following code cancels the default saving and saves the stream in the specif
 
 ### Image saved
 
-This event occurs after the image has been saved to the destination location. The [`ImageSavedEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html) will be the parameter. This parameter contains the [`Location`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs~Location.html) property, which specifies the location in which image is saved.
+This event occurs after the image has been saved to the destination location. The [`ImageSavedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html) will be the parameter. This parameter contains the [`Location`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.ImageSavedEventArgs.html#Syncfusion_UI_Xaml_ImageEditor_ImageSavedEventArgs_Location) property, which specifies the location in which image is saved.
 
 {% tabs %} 
 
@@ -160,12 +160,12 @@ This event occurs after the image has been saved to the destination location. Th
 
 The Reset functionality has the following two events:
 
-* [`BeginReset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~BeginReset_EV.html)
-* [`EndReset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~EndReset_EV.html)
+* [`BeginReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
+* [`EndReset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
 
 ### Begin reset
 
-This event occurs before resetting the changes. Hence, you can control the reset operation using the Cancel property in the [`BeginResetEventArgs`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.BeginResetEventArgs.html).
+This event occurs before resetting the changes. Hence, you can control the reset operation using the Cancel property in the [`BeginResetEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.BeginResetEventArgs.html).
 
 {% tabs %} 
 

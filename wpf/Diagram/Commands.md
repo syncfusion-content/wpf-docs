@@ -139,7 +139,7 @@ graphinfo.Commands.UnGroup.Execute(null);
 
 ## Flip
 
-Flip commands are used to mirror a diagram object’s content. [IFlip parameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FlipParameter_members.html) is provided to customize the flip. 
+Flip commands are used to mirror a diagram object’s content. [IFlip parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FlipParameter.html) is provided to customize the flip. 
 If the parameter is null, the object will be flipped both horizontally and vertically.
 
 {% tabs %}
@@ -225,7 +225,7 @@ graphinfo.Commands.BringForward.Execute(null);
 
 Zoom commands are used to zoom-in and zoom-out the Diagram view.
 
-To execute zoom commands, parameters of type IZoomParameter ([IZoomManipulationParameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomManipulationParamenter_members.html), [IZoomPositionParameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter_members.html), or [IZoomPointerParameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPointerParamenter_members.html)) have to be passed.
+To execute zoom commands, parameters of type IZoomParameter ([IZoomManipulationParameter](https://help.syncfusion.com/cr//wpf/Syncfusion.UI.Xaml.Diagram.ZoomManipulationParamenter.html#Syncfusion_UI_Xaml_Diagram_ZoomManipulationParamenter_members), [IZoomPositionParameter](https://help.syncfusion.com/cr//wpf/Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter.html#Syncfusion_UI_Xaml_Diagram_ZoomPositionParameter_members), or [IZoomPointerParameter](https://help.syncfusion.com/cr//wpf/Syncfusion.UI.Xaml.Diagram.IZoomPointerParameter.html#Syncfusion_UI_Xaml_Diagram_IZoomPointerParameter_members)) have to be passed.
 
 {% tabs %}
 {% highlight C# %}
@@ -243,7 +243,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 
 ## Reset
 
-Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. To execute a reset command, a parameter of type [IReset](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ResetParameter_members.html) has to be passed.
+Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. To execute a reset command, a parameter of type [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetParameter.html) has to be passed.
 
 {% tabs %}
 {% highlight C# %}
@@ -260,7 +260,7 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
 The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo.
 
-Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
+Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
 
 {% tabs %}
 {% highlight C# %}
@@ -287,7 +287,7 @@ graphinfo.Commands.Redo.Execute(null);
 
 ## Nudge
 
-Nudge commands move the selected elements towards up, down, left or right by 1 pixel. [IMoveParameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MoveParameter_members.html) is provided to customize the movement of the selected objects. The Nudge Commands as follows.
+Nudge commands move the selected elements towards up, down, left or right by 1 pixel. [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.MoveParameter.html) is provided to customize the movement of the selected objects. The Nudge Commands as follows.
 
 | Commands | Description |
 |---|---|
@@ -309,7 +309,7 @@ graphinfo.Commands.MoveUp.Execute(null);
 
 ## FitToPage
 
-FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is provided to customize the FitToPage.
+FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is provided to customize the FitToPage.
 If the parameter is null, entire Diagram is fit into the view.
 
 {% tabs %}
@@ -375,7 +375,7 @@ N> When different commands are registered for the same key / mouse gestures, you
 ### Custom command
 
 CommandManager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
-The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GestureCommand_members.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gesture_members.html) helps to define a custom command.
+The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GestureCommand.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Gesture.html) helps to define a custom command.
 
 The following code example represents how to define custom command to Save Command (Control + S).
 

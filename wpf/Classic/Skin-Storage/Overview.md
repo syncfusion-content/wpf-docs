@@ -254,7 +254,7 @@ Metro Customization Demo
 
 ## Performance
 
-The performance of SkinStorage can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetEnableOptimization.html) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
+The performance of SkinStorage can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SkinStorage.html#Syncfusion_Windows_Shared_SkinStorage_SetEnableOptimization_System_Windows_DependencyObject_System_Boolean_) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
 
 {% tabs %}
 {% highlight xaml %}

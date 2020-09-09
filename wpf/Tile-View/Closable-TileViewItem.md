@@ -9,11 +9,11 @@ documentation: ug
 
 # Closing or hiding TileViewItem
 
-This section explains how to closing the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) and its functionalities in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+This section explains how to closing the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and its functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Show close button
 
-By default, the close button is not displayed in the `TileViewItem`. If you want to display the close button on specific `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonVisibility.html) property value as `Visible`. The default value of `TileViewItem.CloseButtonVisibility` property is `Collapsed`.
+By default, the close button is not displayed in the `TileViewItem`. If you want to display the close button on specific `TileViewItem`, use the [TileViewItem.CloseButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseButtonVisibility) property value as `Visible`. The default value of `TileViewItem.CloseButtonVisibility` property is `Collapsed`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Closing TileViewItem programmatically
 
-If you want to close the `TileViewItem` programmatically, pass that items into the [CloseTileViewItem()](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~CloseTileViewItem.html) method.
+If you want to close the `TileViewItem` programmatically, pass that items into the [CloseTileViewItem()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_CloseTileViewItem_Syncfusion_Windows_Shared_TileViewItem_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,7 +136,7 @@ private void CloseItem_Click(object sender, RoutedEventArgs e) {
 
 ## Hide or delete TileViewItem when closing a item
 
-You can decide whether the `TileViewItem` can be only hidden from the view or removed from the items collection of `TileViewControl` by using the [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) property while closing it. If you set `CloseMode` property as `Hide`, the `TileViewItem` will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the `TileViewItem` will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
+You can decide whether the `TileViewItem` can be only hidden from the view or removed from the items collection of `TileViewControl` by using the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseMode) property while closing it. If you set `CloseMode` property as `Hide`, the `TileViewItem` will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the `TileViewItem` will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -174,7 +174,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Custom UI of close button
 
-You can customize the appearance of particular `TileViewItem`'s close button by using the [CloseButtonStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonStyle.html) property. You can also change the margin of the `TileViewItem` close button by using the [CloseButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonMargin.html) property. The `DataContext` of the `CloseButtonStyle` property is [TileViewItemCloseButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItemCloseButton.html).
+You can customize the appearance of particular `TileViewItem`'s close button by using the [CloseButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseButtonStyle) property. You can also change the margin of the `TileViewItem` close button by using the [CloseButtonMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_CloseButtonMargin) property. The `DataContext` of the `CloseButtonStyle` property is [TileViewItemCloseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItemCloseButton.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -205,7 +205,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## TileViewItem closing notification
 
-When the `TileViewItem` is closing, it will be notified by using the [TileViewItem.Closing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~Closing_EV.html) event. You can restrict the closing of `TileViewItem` by using the [CloseEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem+CloseEventArgs~Cancel.html) property value as `true`.
+When the `TileViewItem` is closing, it will be notified by using the [TileViewItem.Closing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) event. You can restrict the closing of `TileViewItem` by using the [CloseEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.CloseEventArgs.html#Syncfusion_Windows_Shared_TileViewItem_CloseEventArgs_Cancel) property value as `true`.
 
 {% tabs %}
 {% highlight XAML %}

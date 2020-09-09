@@ -112,7 +112,7 @@ End Class
 
 ### Adding TargetManager list of DockingManager
 
-To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AddToTargetManagersList.html) method of the DockingManager with the valid DockingManager instance as argument.
+To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AddToTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) method of the DockingManager with the valid DockingManager instance as argument.
 
 When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. For example DockingManager1 and DockingManager2 are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
 
@@ -161,7 +161,7 @@ MainWindow.DockingManager2.AddToTargetManagersList(Me.DockingManager1)
 {% endtabs %}
 ### Removing Target Manager list
 
-To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagerList](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~RemoveFromTargetManagersList.html) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
+To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagerList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_RemoveFromTargetManagersList_Syncfusion_Windows_Tools_Controls_DockingManager_) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
 
 {% tabs %}
 

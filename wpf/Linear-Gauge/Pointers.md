@@ -13,7 +13,7 @@ The `LinearGauge` provides support to mark values using the `BarPointer` and `Sy
 
 ## Bar pointer
 
-`BarPointer` is used to mark scale values. It starts at the beginning of gauge and ends at the pointer value. You can add bar pointer using the [`PointerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~PointerType.html) property. 
+`BarPointer` is used to mark scale values. It starts at the beginning of gauge and ends at the pointer value. You can add bar pointer using the [`PointerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_PointerType) property. 
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ The `LinearGauge` provides support to mark values using the `BarPointer` and `Sy
 
 ### Bar pointer customization
 
-The UI of `Bar pointer` is customized using the [`BarPointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~BarPointerStroke.html) and [`BarPointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~BarPointerStrokeThickness.html) properties.
+The UI of `Bar pointer` is customized using the [`BarPointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_BarPointerStroke) and [`BarPointerStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_BarPointerStrokeThickness) properties.
 
 {% tabs %}
 
@@ -231,7 +231,7 @@ In `SymbolPointer`, the value is pointed by a symbol on the scale.
 
 ### Symbol pointer customization
 
-You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerHeight.html) and [`SymbolPointerWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerWidth.html) properties. The stroke of symbol pointer is changed using the [`SymbolPointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerStroke.html) property. 
+You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerHeight) and [`SymbolPointerWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerWidth) properties. The stroke of symbol pointer is changed using the [`SymbolPointerStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerStroke) property. 
 
 {% tabs %}
 
@@ -307,7 +307,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 ## Positioning symbol pointer
 
-`SymbolPointer` in the scale can be placed above, below, or in between the scale by choosing the following options available in the [`SymbolPointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerPosition.html) property:
+`SymbolPointer` in the scale can be placed above, below, or in between the scale by choosing the following options available in the [`SymbolPointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerPosition) property:
 
 1.	Above
 
@@ -391,7 +391,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 ### Change symbol pointer shapes
 
-The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerStyle.html) property is used to select symbol pointer style.
+The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerStyle) property is used to select symbol pointer style.
 
 {% highlight xml %}
 
@@ -437,7 +437,7 @@ The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge
 
 ### Adding multiple pointers
 
-In addition to the default pointer, you can add "n" number of pointers to a linear scale using the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~Pointers.html) property.
+In addition to the default pointer, you can add "n" number of pointers to a linear scale using the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Pointers) property.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF DateTimePicker (DateTimeEdit)
 
-This section explains how to create a WPF [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html)  and explains about its structure.
+This section explains how to create a WPF [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html)  and explains about its structure.
 
 ## Structure of DateTimeEdit
 
@@ -111,7 +111,7 @@ grid.Children.Add(dateTimeEdit);
 
 ## Setting date time value
 
-You can set the date using the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property of `DateTimeEdit`.
+You can set the date using the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DateTime) property of `DateTimeEdit`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -191,7 +191,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Value Changed Notification
 
-The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeChanged_EV.html) event. The `DateTimeChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
+The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) event. The `DateTimeChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -224,7 +224,7 @@ private void dateTimeEdit_DateTimeChanged(DependencyObject d, DependencyProperty
 
 ## Applying built-in pattern
 
-You can change the date-time pattern using the [Pattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property of the DateTimeEdit. The `DateTimeEdit` control supports the following DateTime format:
+You can change the date-time pattern using the [Pattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_Pattern) property of the DateTimeEdit. The `DateTimeEdit` control supports the following DateTime format:
 
 * LongDate
 * LongTime
@@ -261,7 +261,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Applying custom pattern
 
-You can also set the custom pattern for displaying the date in the `DateTimeEdit` control by using either [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property or [DateTimeFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html) property. `CustomPattern` support can be enabled by setting the `Pattern` property to the `DateTimePattern.CustomPattern`.
+You can also set the custom pattern for displaying the date in the `DateTimeEdit` control by using either [CustomPattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CustomPattern) property or [DateTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DateTimeFormat) property. `CustomPattern` support can be enabled by setting the `Pattern` property to the `DateTimePattern.CustomPattern`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -289,7 +289,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Editing date time
 
-`DateTimeEdit` supports both free form editing(like normal textbox editing) and mask based editing. Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property of `DateTimeEdit`. You can enable free low editing mode by setting the `CanEdit` property as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus in the free form editing mode. 
+`DateTimeEdit` supports both free form editing(like normal textbox editing) and mask based editing. Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CanEdit) property of `DateTimeEdit`. You can enable free low editing mode by setting the `CanEdit` property as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus in the free form editing mode. 
 
  The following code example demonstrates free form editing.
 
@@ -315,7 +315,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Restrict date range
 
-You can restrict the users from selecting a date and time in a particular range by specifying [minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) dates in `DateTimeEdit` control.
+You can restrict the users from selecting a date and time in a particular range by specifying [minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_MinDateTime) and [maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_MaxDateTime) dates in `DateTimeEdit` control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -342,7 +342,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Show watermark when value is null
 
-If you want to display any watermark text instead of null value, use the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property to setting the watermark text. you can enable it only by setting the `IsEmptyDateEnabled` property as `true`, `ShowMaskOnNullValue` property as `false`  and `NullValue` property as `null`. The default value of `NoneDateText` property is `string.Empty`.
+If you want to display any watermark text instead of null value, use the [NoneDateText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_NoneDateText) property to setting the watermark text. you can enable it only by setting the `IsEmptyDateEnabled` property as `true`, `ShowMaskOnNullValue` property as `false`  and `NullValue` property as `null`. The default value of `NoneDateText` property is `string.Empty`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -371,7 +371,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change month names
 
-You can change the popup calendar month names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AbbreviatedMonthNames.html) property. The default value of `AbbreviatedMonthNames` property is `null`.
+You can change the popup calendar month names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_AbbreviatedMonthNames) property. The default value of `AbbreviatedMonthNames` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -425,7 +425,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change week day names
 
-You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AbbreviatedMonthNames.html) property. The default value of `AbbreviatedMonthNames` property is `null`.
+You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_AbbreviatedMonthNames) property. The default value of `AbbreviatedMonthNames` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}

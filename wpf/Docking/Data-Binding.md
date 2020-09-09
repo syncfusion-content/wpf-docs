@@ -13,9 +13,9 @@ Data Binding is the process of establishing a connection between the application
 
 ## Adding Docking Window child through ItemsSource:
 
-`DockingManager` [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ItemsSource.html) property allows to bind the Observable Collection of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html). [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class which contains all attached properties of `DockingManager`.
+`DockingManager` [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ItemsSource) property allows to bind the Observable Collection of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html). [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) class which contains all attached properties of `DockingManager`.
 
-The following code snippet explains how to use the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ItemsSource.html) property
+The following code snippet explains how to use the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ItemsSource) property
 
 {% tabs %}
 
@@ -107,7 +107,7 @@ We have docked the docking child window in five sides these are,
 * Bottom
 * Tabbed
 
-To dock the children of `DockingManager` in different side, use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) mode property of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class.
+To dock the children of `DockingManager` in different side, use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) mode property of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) class.
 
 {% tabs %}
 
@@ -132,11 +132,11 @@ DockCollections.Add(new DockItem() { Header = "Docking Bottom", SideInDockedMode
 
 ## Configure the Docking window through ItemsSource
 
-Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html)
+Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode)
 
-Also to set as Tabbed Window, the window should aware of a [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) Name of corresponding target window. The following code helps to arrange children of `DockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
+Also to set as Tabbed Window, the window should aware of a [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) Name of corresponding target window. The following code helps to arrange children of `DockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
 
-N> The following code snippet explains how to use all attached properties of `DockingManager` using [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class.
+N> The following code snippet explains how to use all attached properties of `DockingManager` using [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html) class.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Localizing WPF DateTimePicker (DateTimeEdit)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) after `InitializeComponent` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) after `InitializeComponent` method. 
 
 Below application culture changed to French.
 
