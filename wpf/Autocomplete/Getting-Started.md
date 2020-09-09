@@ -255,7 +255,7 @@ In None mode, the search algorithm starts even when the item is not available in
 </tr>
 </table>
 
-N> The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteModeProperty) is None.
+N> The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteModeProperty) is None. So, running the control without specifying this property will not show any suggestions. 
 
 
 {% tabs %}
