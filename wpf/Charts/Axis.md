@@ -3136,7 +3136,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundStart.jpeg)
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundStart.png)
 
 
 **RoundEnd**
@@ -3168,7 +3168,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundEnd.jpeg)
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundEnd.png)
 
 
 **PrependInterval**
@@ -3200,7 +3200,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_PrependInterval.jpeg)
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_PrependInterval.png)
 
 
 **AppendInterval**
@@ -3232,7 +3232,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_AppendInterval.jpeg)
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_AppendInterval.png)
 
 
 ### NumericalRangePadding
@@ -3378,7 +3378,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundStart.jpeg)
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundStart.png)
 
 
 **RoundEnd**
@@ -3410,7 +3410,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundEnd.jpeg)
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundEnd.png)
 
 
 **PrependInterval**
@@ -3442,7 +3442,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_PrependInterval.jpeg)
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_PrependInterval.png)
 
 
 **AppendInterval**
@@ -3474,7 +3474,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxisAppendInterval.jpeg)
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_AppendInterval.png)
 
 
 ##  Applying Padding to the Axis
