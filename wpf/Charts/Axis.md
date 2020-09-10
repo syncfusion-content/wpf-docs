@@ -3136,7 +3136,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart]
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundStart.jpeg)
+
 
 **RoundEnd**
 
@@ -3167,7 +3168,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart]
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundEnd.jpeg)
+
 
 **PrependInterval**
 
@@ -3198,7 +3200,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart]
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_PrependInterval.jpeg)
+
 
 **AppendInterval**
 
@@ -3229,7 +3232,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart]
+![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_AppendInterval.jpeg)
 
 
 ### NumericalRangePadding
@@ -3375,7 +3378,8 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart]
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundStart.jpeg)
+
 
 **RoundEnd**
 
@@ -3406,7 +3410,8 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart]
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundEnd.jpeg)
+
 
 **PrependInterval**
 
@@ -3437,7 +3442,8 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart]
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_PrependInterval.jpeg)
+
 
 **AppendInterval**
 
@@ -3468,7 +3474,8 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart]
+![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxisAppendInterval.jpeg)
+
 
 ##  Applying Padding to the Axis
 
