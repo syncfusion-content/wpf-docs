@@ -25,7 +25,7 @@ The following assemblies are needs to be added for importing the Excel to GridCo
 * Syncfusion.XlsIO.Base
 
 
-You can get the [GridModelImportExtensions](https://help.syncfusion.com/cr/wpf/Syncfusion.GridConverter.Wpf~Syncfusion.Windows.Controls.Grid.Converter.GridModelImportExtensions.html) class and it's importing methods under the namespace [Syncfusion.Windows.Controls.Grid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.GridConverter.Wpf~Syncfusion.Windows.Controls.Grid.Converter_namespace.html).
+You can get the [GridModelImportExtensions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.Converter.GridModelImportExtensions.html) class and it's importing methods under the namespace [Syncfusion.Windows.Controls.Grid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.Converter.html).
 
 ## Use Case Scenarios
 

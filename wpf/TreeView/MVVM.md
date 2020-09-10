@@ -15,7 +15,7 @@ This section explains about how to work with MVVM pattern in TreeView.
 
 ### Binding SelectedItem
 
-TreeView support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectedItem.html) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
+TreeView support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 
 ### Binding SelectedItems
 
-TreeView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectedItems.html) property from view model with `ObservableCollection<object>` type. 
+TreeView support to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property from view model with `ObservableCollection<object>` type. 
 
 {% tabs %}
 {% highlight xaml %}

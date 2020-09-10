@@ -9,7 +9,7 @@ documentation: ug
 
 # Toggling visibility of the scroll bar
 
-PDF Viewer supports showing and hiding scrollbar, when you feel to use the PDF Viewer only with the touch support, you can hide the default scrollbars of the PDF Viewer using the [ShowScrollbar](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ShowScrollbar.html). The following code example hides the scrollbar in the PDF Viewer control.
+PDF Viewer supports showing and hiding scrollbar, when you feel to use the PDF Viewer only with the touch support, you can hide the default scrollbars of the PDF Viewer using the [ShowScrollbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShowScrollbar). The following code example hides the scrollbar in the PDF Viewer control.
 
 {% tabs %}
 {% highlight c# %}

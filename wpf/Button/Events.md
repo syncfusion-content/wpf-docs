@@ -36,7 +36,7 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 ## Checked
 
-The event occurs when the button control is utilized as toggle button, that is, when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property value is set to **true**. Any action can be handled in the respective event handler.
+The event occurs when the button control is utilized as toggle button, that is, when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IsCheckable) property value is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}

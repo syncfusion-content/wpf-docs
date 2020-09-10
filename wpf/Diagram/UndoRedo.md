@@ -20,7 +20,7 @@ Undo is a function performed to reverse the action of an earlier action.
 
 Undo/redo actions can be executed through shortcut keys. Shortcut key for undo is Ctrl+z and shortcut key for redo is Ctrl+y. 
 
-Undo/Redo for diagram can be enabled/disabled with the [Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Constraints.html) property of SfDiagram class.
+Undo/Redo for diagram can be enabled/disabled with the [Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Constraints) property of SfDiagram class.
 
 {% tabs %}
 
@@ -63,9 +63,9 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
 ## How to Customize the Undo Redo process
 
-History list allows to revert or restore single and multiple changes through a single undo/redo command. The purpose of custom undo redo process is to store actions which are not done through default undo redo history list. Appearance level changes and its history informations did not stored in the history list.  For example, revert/restore the fill color change of multiple elements at a time. To store multiple actions at a time, actions should be logged using [CompositeTransactions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CompositeTransactions.html) class.
+History list allows to revert or restore single and multiple changes through a single undo/redo command. The purpose of custom undo redo process is to store actions which are not done through default undo redo history list. Appearance level changes and its history informations did not stored in the history list.  For example, revert/restore the fill color change of multiple elements at a time. To store multiple actions at a time, actions should be logged using [CompositeTransactions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CompositeTransactions.html) class.
 
-To achieve this you need to customize the [HistoryManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.HistoryManager.html) class of diagram control and need to override the Undo Redo methods.
+To achieve this you need to customize the [HistoryManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.HistoryManager.html) class of diagram control and need to override the Undo Redo methods.
 
 {% tabs %}
 {% highlight C# %}
@@ -294,7 +294,7 @@ public struct NodeState
 
 ## How to restrict Undo/Redo
 
-Undo, Redo process can be avoided for particular element by using [CanLogHistoryEntry](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~CanLogHistoryEntry.html) virtual method of diagram control.
+Undo, Redo process can be avoided for particular element by using [CanLogHistoryEntry](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_CanLogHistoryEntry_Syncfusion_UI_Xaml_Diagram_LogDataArgs_) virtual method of diagram control.
 
 {% tabs %}
 {% highlight C# %}
@@ -350,13 +350,13 @@ public class CustomDiagram: SfDiagram
 
 Diagram allows to notify undo/redo action for the below events,
 
-* [NodeChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~NodeChangedEvent_EV.html)
-* [ItemDeletedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ItemDeleted_EV.html)
-* [ItemAddedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ItemAdded_EV.html)
-* [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~PortChanged_EV.html)
-* [AnnotationChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~AnnotationChanged_EV.html)
-* [ConnectorSourceChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ConnectorSourceChangedEvent_EV.html)
-* [ConnectorTargetChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~ConnectorTargetChangedEvent_EV.html)
+* [NodeChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [ItemDeletedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [ItemAddedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [AnnotationChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [ConnectorSourceChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [ConnectorTargetChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
 
 {% tabs %}
 {% highlight C# %}

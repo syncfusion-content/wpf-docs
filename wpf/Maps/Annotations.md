@@ -14,17 +14,17 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 1. AnnotationLabel
 2. AnnotationSymbol
 
-[`AnnotationLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabel.html) is a `Text` that shows some information in the text format. 
+[`AnnotationLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel) is a `Text` that shows some information in the text format. 
 
-[`AnnotationSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationSymbol.html) is a `VisualObject` that shows a note symbolically.
+[`AnnotationSymbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol) is a `VisualObject` that shows a note symbolically.
 
-1. [`AnnotationLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelForeground.html): Get or sets the foreground color of the annotation label.
-2. [`AnnotationLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelFontStyle.html): Gets or sets the font style of the annotation label.
-3. [`AnnotationLabelBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelBackground.html): Gets or sets the background color of the annotation label.
-4. [`AnnotationLabelFontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelFontFamily.html): Gets or sets the font family for the annotation label.
-5. [`AnnotationLabelFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationLabelFontSize.html): Gets or sets the annotation label font size.
-6. [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~Latitude.html): Gets or sets the Latitude coordinate of the Annotation.
-7. [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~Longitude.html): Gets or set the Longitude coordinate of the Annotation.
+1. [`AnnotationLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabelForeground): Get or sets the foreground color of the annotation label.
+2. [`AnnotationLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabelFontStyle): Gets or sets the font style of the annotation label.
+3. [`AnnotationLabelBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabelBackground): Gets or sets the background color of the annotation label.
+4. [`AnnotationLabelFontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabelFontFamily): Gets or sets the font family for the annotation label.
+5. [`AnnotationLabelFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabelFontSize): Gets or sets the annotation label font size.
+6. [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Latitude): Gets or sets the Latitude coordinate of the Annotation.
+7. [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Longitude): Gets or set the Longitude coordinate of the Annotation.
 
 
 {% highlight xaml %}
@@ -68,11 +68,11 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 
 ## Positioning a MapAnnotation
 
-MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~Latitude.html) and [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~Longitude.html) that are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude. 
+MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Latitude) and [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Longitude) that are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude. 
 
 ### Customizing the Annotation Template
 
-The default appearance of the annotation can be customized by using the [`AnnotationTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapAnnotations~AnnotationTemplate.html) property. The annotation template property is available in the ShapeFileLayer.
+The default appearance of the annotation can be customized by using the [`AnnotationTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationTemplate) property. The annotation template property is available in the ShapeFileLayer.
 
 AnnotationTemplate is a DataTemplate type, used to customize or override the default template of MapAnnotations.
 

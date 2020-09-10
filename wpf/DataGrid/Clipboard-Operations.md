@@ -17,7 +17,7 @@ N> Clipboard operations is not supported for the summary rows, add new row and u
  
 ## Copy to Clipboard in DataGrid
 
-Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridCopyOption.html) property. 
+Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property. 
 
 `GridCopyOption` provides the following options,
 
@@ -52,7 +52,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is [Cell](http://
 
 ## Paste from Clipboard in DataGrid
 
-Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridPasteOption.html) property. 
+Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridPasteOption) property. 
 
 `GridPasteOption` provides the following options,
 
@@ -83,7 +83,7 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 
 ## Cut to Clipboard in DataGrid
 
-Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridCopyOption.html) property. 
+Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property. 
 
 `GridCopyOption` provides the following options,
 

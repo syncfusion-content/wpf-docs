@@ -10,9 +10,9 @@ documentation: ug
 
 State persistence is the combined process of serialization and deserialization. 
 
-DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) Method to work on state functionality.
+DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) Method to work on state functionality.
 
-To reset the DockingManager state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) method of DockingManager instance.
+To reset the DockingManager state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ResetState) method of DockingManager instance.
 
 N> DockingManager serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in DockingManager to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization process has been successful.
 
@@ -35,7 +35,7 @@ DockingManager1.ResetState()
 
 {% endtabs %}
 
-To delete the DockState of the DockingManager, call [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DeleteDockState.html) of DockingManager instance
+To delete the DockState of the DockingManager, call [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DeleteDockState.html) of DockingManager instance
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ DockingManager1.DeleteDockState()
 
 ## Auto Save / Load functionalities
 
-DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PersistState.html) property as `True`. The default value of the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PersistState.html) property is `False`. It saves the state of the DockingManager in an isolated storage format while [WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~WindowClosing_EV.html). 
+DockingManager supports AutoSave support, that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property as `True`. The default value of the [PersistState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_PersistState) property is `False`. It saves the state of the DockingManager in an isolated storage format while [WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html). 
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ DockingManager1.PersistState = True
 
 {% endtabs %}
 
-To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~LoadDockState().html) method of the DockingManager in its loaded event.
+To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method of the DockingManager in its loaded event.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ Since the DockingManager state persistence feature implemented in such a way tha
 
 ### Notification for load DockState
 
-When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection. if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, `false` value will be returned by the `LoadDockState` method of DockingManager.
+When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection. if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, `false` value will be returned by the `LoadDockState` method of DockingManager.
 
 ## Various formats to Save / Load states
 
@@ -302,7 +302,7 @@ reader.Close()
 
 ## Restrict state persistence for specific child
 
-The [CanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CanSerializeProperty.html) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CanSerializeProperty.html) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetCanSerialize.html) function of DockingManager.
+The [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCanSerialize_System_Windows_DependencyObject_System_Boolean_) function of DockingManager.
 
 {% tabs %}
 

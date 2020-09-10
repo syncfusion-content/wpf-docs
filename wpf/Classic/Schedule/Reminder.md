@@ -9,10 +9,10 @@ documentation: ug
 
 # Reminder Of WPF SFSchedule
 
-Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
+Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 
 ## Setting reminder for an Appointment
-Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property is `true`.The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of ScheduleAppointment.
+Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer) property is `true`.The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTime) property of ScheduleAppointment.
 
 {%tabs%}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ schedule.Appointments.Add(new ScheduleAppointment
 Download demo from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/ReminderAlert)
 
 ## Configuring Reminder Duration
-Scheduler supports to set the reminder duration time to remind the appointments by using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html).
+Scheduler supports to set the reminder duration time to remind the appointments by using the [ReminderTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTime) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ schedule.Appointments[0].ReminderTime = ReminderTimeType.FifteenMin;
 {% endtabs %}
 
 ## Create a custom binding for ReminderTime
-[ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) supports to map your custom object with `ScheduleAppointment.ReminderTime`.
+[ReminderTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTime) supports to map your custom object with `ScheduleAppointment.ReminderTime`.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ public class Meeting
 N>You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 
-You can map those properties of `Meeting` class with our [SfSchedule](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
+You can map those properties of `Meeting` class with our [SfSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentMapping) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,13 +121,13 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Rem
 
 ### ReminderOpening event
 
-[ReminderOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderOpening_EV.html) – occurs when appearing the reminder window.
+[ReminderOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when appearing the reminder window.
 
-[ReminderControlOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderControlOpeningEventArgs.html) has following property.
+[ReminderControlOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderControlOpeningEventArgs.html) has following property.
 
-[RemindAppCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderControlOpeningEventArgs~RemindAppCollection.html) – Gets list of reminder appointments.
+[RemindAppCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderControlOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderControlOpeningEventArgs_RemindAppCollection) – Gets list of reminder appointments.
 
-You can prevent the reminder window opening through [ReminderControlOpeningEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property of [ReminderOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderOpening_EV.html) event.
+You can prevent the reminder window opening through [ReminderControlOpeningEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property of [ReminderOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,19 +142,19 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 
 ### ReminderClosed event
 
-[ReminderClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderClosed_EV.html) – occurs when closing the reminder window.
-[ReminderControlClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderControlClosedEventArgs.html) provides information for [ReminderClosed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderClosed_EV.html) event.
+[ReminderClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when closing the reminder window.
+[ReminderControlClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderControlClosedEventArgs.html) provides information for [ReminderClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
 ### ReminderFormActionChanged event
 
-[ReminderFormActionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderFormActionChanged_EV.html) – occurs when change the reminder window action for the appointment.
+[ReminderFormActionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) – occurs when change the reminder window action for the appointment.
 
-[ReminderFormActionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html) has following properties which provides information for [ReminderFormActionChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderFormActionChanged_EV.html) event.
+[ReminderFormActionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html) has following properties which provides information for [ReminderFormActionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
-[Action](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs~Action.html) - Gets the action of schedule appointments.
+[Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderFormActionChangedEventArgs_Action) - Gets the action of schedule appointments.
 
-[Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs~Appointments.html) – Gets list of appointments that are changed.
+[Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderFormActionChangedEventArgs_Appointments) – Gets list of appointments that are changed.
 
-[SnoozeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs~SnoozeTime.html) – Gets the snooze time of action changed appointments.
+[SnoozeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ReminderFormActionChangedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ReminderFormActionChangedEventArgs_SnoozeTime) – Gets the snooze time of action changed appointments.
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)

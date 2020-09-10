@@ -37,7 +37,7 @@ N/A</td></tr>
 
 ## How to disable hyperlink navigation in PDF viewer control?
 
-We can disable the hyperlink navigation in PDF viewer control by wiring the event [HyperlinkClicked](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~HyperlinkClicked_EV.html) which is available in PdfViewerControl and PdfDocumentView like below,
+We can disable the hyperlink navigation in PDF viewer control by wiring the event [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) which is available in PdfViewerControl and PdfDocumentView like below,
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkCl
 
 ## How to retrieve the clicked URI from PDF viewer?
 
-We can get the URI which is clicked in the PDF viewer control from the [AnnotEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.AnnotEventArgs.html) which is passed as a parameter of the [HyperlinkClicked](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~HyperlinkClicked_EV.html) event. Please refer the below example for more details.
+We can get the URI which is clicked in the PDF viewer control from the [AnnotEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotEventArgs.html) which is passed as a parameter of the [HyperlinkClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event. Please refer the below example for more details.
 
 We can navigate to different URL irrespective of the URI clicked in the PDF viewer. Please refer the below example for more details.
 
@@ -176,7 +176,7 @@ End Sub
 
 ## How to identify hyperlink detection? 
 
-[HyperlinkMouseOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~HyperlinkMouseOver_EV.html) event will be raised when we place the mouse pointer over the URI in the PDF viewer control. 
+[HyperlinkMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event will be raised when we place the mouse pointer over the URI in the PDF viewer control. 
 
 {% tabs %}
 {% highlight c# %}

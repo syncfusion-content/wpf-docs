@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show/hide the Header
 
-You can enable/disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~HeaderVisibility.html) property of TabNavigationControl.
+You can enable/disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_HeaderVisibility) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}
@@ -33,7 +33,7 @@ tabNavigation.HeaderVisibility = Visibility.Collapsed;
 
 ## Show/hide the NavigationButton
 
-You can enable/disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~NavigationButtonVisibility.html) property of TabNavigationControl.
+You can enable/disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_NavigationButtonVisibility) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}
@@ -55,7 +55,7 @@ tabNavigation.NavigationButtonVisibility = Visibility.Collapsed;
 
 ## Show/hide the TabStrip
 
-You can enable/disable the visibility of tab strip by setting [TabStripVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~TabStripVisibility.html) property of TabNavigationControl.
+You can enable/disable the visibility of tab strip by setting [TabStripVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationControl.html#Syncfusion_Windows_Tools_Controls_TabNavigationControl_TabStripVisibility) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}

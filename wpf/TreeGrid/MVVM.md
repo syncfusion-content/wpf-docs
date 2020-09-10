@@ -13,7 +13,7 @@ This section explains various MVVM requirements using SfTreeGrid.
 
 ## Bind the SelectedItem property of treegrid
 
-You can bind the [SelectedItem ](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
+You can bind the [SelectedItem ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind button command to view model
 
-You can load a button for the columns in treegrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
+You can load a button for the columns in treegrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
 
 In the following example, ViewModel command receives the underlying data object as command parameter, since the DataContext is bound as command parameter.
 
@@ -80,7 +80,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind combobox column ItemsSource from view model
 
-You can bind the ItemsSource from ViewModel to [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) or using `ElementName` binding.
+You can bind the ItemsSource from ViewModel to [TreeGridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) or using `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
@@ -106,7 +106,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind view model ItemsSource to ComboBox inside template
 
-You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the ItemsSource from ViewModel to ComboBox using `ElementName` binding.
+You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the ItemsSource from ViewModel to ComboBox using `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
@@ -131,7 +131,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind columns from view model
 
-You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnsProperty.html) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of treegrid in ViewModel.
+You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnsProperty) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of treegrid in ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,7 +150,7 @@ You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/cref_files
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the following code example in which the treegrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the ViewModel instance.
+Refer to the following code example in which the treegrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the ViewModel instance.
 
 {% tabs %}
 {% highlight c# %}

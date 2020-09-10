@@ -159,7 +159,7 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 ## Resize Ribbon Window
 The ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed Ribbon bar, the total Ribbon bar will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
 
-The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~SetIsAutoSizeFormEnabled.html) property must be set to True to get responsive ribbon window. Same behavior will be continued to every Ribbon bar while minimized continuously. Again, the Ribbon bar will be visible if the spacing between window border and Ribbon bar has enough space to allocate all the items in that Ribbon bar. The following snippet is used for resize the ribbon window.
+The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_SetIsAutoSizeFormEnabled_System_Windows_DependencyObject_System_Boolean_) property must be set to True to get responsive ribbon window. Same behavior will be continued to every Ribbon bar while minimized continuously. Again, the Ribbon bar will be visible if the spacing between window border and Ribbon bar has enough space to allocate all the items in that Ribbon bar. The following snippet is used for resize the ribbon window.
 
 {% tabs %}
 
@@ -1119,7 +1119,7 @@ End Class
 
 ## Detecting selection changes in RibbonTab
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~SelectionChanging_EV.html) event notifies when the user attempts to switch tab in the Ribbon control. The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~SelectionChanging_EV.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
+The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event notifies when the user attempts to switch tab in the Ribbon control. The [`SelectionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) event  receives an argument of the type **CancelEventArgs** that allows us to cancel the switching operation. 
 
 {% tabs %}
 

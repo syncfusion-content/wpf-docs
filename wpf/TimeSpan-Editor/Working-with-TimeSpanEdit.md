@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with TimeSpanEdit
 
-This section explains how to change the time value and time formats in the WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html).
+This section explains how to change the time value and time formats in the WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html).
 
 ![TimeSpanEdit control time fields](Getting-Started_images/Control_Structure.png)
 
@@ -21,7 +21,7 @@ By default, the focus field will be navigated automatically after the value has 
 
 ## Increase or decrease the time fields with specific interval
 
-If you want to increase or decrease the time span field values with specific interval, use the [StepInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~StepInterval.html) property. Selected time span field  will be increased or decreased based on `StepInterval` field value by pressing the `Up-Down` arrow keys, UpDown button in `TimeSpanEdit` or using mouse wheel. The default value of `StepInterval` property is `{1.01:01:01}`.
+If you want to increase or decrease the time span field values with specific interval, use the [StepInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_StepInterval) property. Selected time span field  will be increased or decreased based on `StepInterval` field value by pressing the `Up-Down` arrow keys, UpDown button in `TimeSpanEdit` or using mouse wheel. The default value of `StepInterval` property is `{1.01:01:01}`.
 
 For example, if value is `1.1:1:10`, seconds will increase or decrease in `10` seconds interval. other fields will increase or decrease `1` minute, hour, day interval.
 
@@ -75,7 +75,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time using updown buttons
 
-You can increase or decrease the selected time span field value based on the `StepInterval` value by pressing the Up or Down arrow buttons in the `TimeSpanEdit`. If you want to restrict the user to change time by clicking the UpDown buttons, use the [ShowArrowButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ShowArrowButtons.html) property value as `false`. It will hides the Arrow buttons. The default value of `ShowArrowButtons` property is `true`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by pressing the Up or Down arrow buttons in the `TimeSpanEdit`. If you want to restrict the user to change time by clicking the UpDown buttons, use the [ShowArrowButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_ShowArrowButtons) property value as `false`. It will hides the Arrow buttons. The default value of `ShowArrowButtons` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -100,7 +100,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time on mouse wheel
 
-You can increase or decrease the selected time span field value based on the `StepInterval` value by mouse scrolling over the `TimeSpanEdit`. If you want to restrict the user to change time by using mouse scrolling, use the [IncrementOnScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~IncrementOnScrolling.html) property value as `false`. The default value of `IncrementOnScrolling` property is `true`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by mouse scrolling over the `TimeSpanEdit`. If you want to restrict the user to change time by using mouse scrolling, use the [IncrementOnScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_IncrementOnScrolling) property value as `false`. The default value of `IncrementOnScrolling` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -125,7 +125,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time on click and drag
 
-You can increase or decrease the selected time span field value based on the `StepInterval` value by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. This is effective only on when control is in unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
+You can increase or decrease the selected time span field value based on the `StepInterval` value by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_EnableExtendedScrolling) property value as `true`. This is effective only on when control is in unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -156,7 +156,7 @@ You can increase or decrease the selected time span field value based on the `St
 
 ## Setting null value
 
-If you want to set null value for the `TimeSpanEdit`, use the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~AllowNull.html) property value as `true` and `Value` property as `null`. If `AllowNull` property is `false`, then the default time is displayed.
+If you want to set null value for the `TimeSpanEdit`, use the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_AllowNull) property value as `true` and `Value` property as `null`. If `AllowNull` property is `false`, then the default time is displayed.
 
 {% tabs %}
 {% highlight XAML %}
@@ -181,7 +181,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Show watermark when value is null
 
-If you want to display any watermark text instead of null value, use the [NullString](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~NullString.html) property to setting the watermark text. You can enable it by setting the `AllowNull` property as `true` and `Value` property as `null`. The default value of `NullString` property is `string.Empty`.
+If you want to display any watermark text instead of null value, use the [NullString](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_NullString) property to setting the watermark text. You can enable it by setting the `AllowNull` property as `true` and `Value` property as `null`. The default value of `NullString` property is `string.Empty`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -208,7 +208,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Change display format of time span
 
-You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~Format.html) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
+You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_Format) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
 
 * d - It displays the days value.
 * h - It displays the hours value.
@@ -265,7 +265,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Value Changed Notification
 
-The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
+The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -321,7 +321,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Restrict the time within minimum and maximum time span
 
-The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties.
+The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MinValue) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html#Syncfusion_Windows_Shared_TimeSpanEdit_MaxValue) properties.
 
 {% tabs %}
 {% highlight XAML %}

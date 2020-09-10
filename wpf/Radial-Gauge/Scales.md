@@ -9,12 +9,12 @@ documentation: ug
 
 # Scales in WPF Radial Gauge 
 
-Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
+Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
-The [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html) contains sub elements such as rim, ticks, labels, ranges, and pointers. They define the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. A scale will have multiple ranges.
-A range is a visual element, which begins and ends at the specified values within a [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html). A range will have one or more pointers to point out the values in a scale.
+The [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularScale.html) contains sub elements such as rim, ticks, labels, ranges, and pointers. They define the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. A scale will have multiple ranges.
+A range is a visual element, which begins and ends at the specified values within a [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularScale.html). A range will have one or more pointers to point out the values in a scale.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
 ## Setting start and end values for scale
 
-The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~EndValue.html) properties allow you to set the start and end values for a scale.
+The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_EndValue) properties allow you to set the start and end values for a scale.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syn
 
 ## Setting start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale~StartAngle.html)  and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepAngle.html) properties allow you to set the start and end angles for a scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularScale.html#Syncfusion_Windows_Gauge_CircularScale_StartAngle)  and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle) properties allow you to set the start and end angles for a scale.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gaug
 
 ## Setting interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~Interval.html) property allows you to set the interval for a scale. The default value of `Interval` is `Auto`, it defines the count of the scale labels based on `StartValue` and `EndValue` of scale. 
+The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_Interval) property allows you to set the interval for a scale. The default value of `Interval` is `Auto`, it defines the count of the scale labels based on `StartValue` and `EndValue` of scale. 
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ N> You can specify the interval value upto 5 decimal places while showing the la
 
 ## Setting scale direction for scale
 
-The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepDirection.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepDirection) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF
 
 ## Setting multiple scales for circular gauge
 
-You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge~Scales.html) collection.
+You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html#Syncfusion_Windows_Gauge_CircularGauge_Scales) collection.
 
 {% tabs %}
 

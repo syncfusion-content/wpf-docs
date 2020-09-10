@@ -9,11 +9,11 @@ documentation: ug
 
 # Restrict date time value in WPF DateTimePicker (DateTimeEdit)
 
-This section explains how to select a date and time in a particular range by specifying minimum and maximum dates and formatting the datetime in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control.
+This section explains how to select a date and time in a particular range by specifying minimum and maximum dates and formatting the datetime in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 
 ## Restrict the datetime within minimum and maximum datetime
 
-The selecting datetime in `DateTimeEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) properties
+The selecting datetime in `DateTimeEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_MinDateTime) and [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_MaxDateTime) properties
 
 N> The `MaxDateTime` should be greater than `MinDateTime` of the `DateTimeEdit`. If the `MinDateTime` property is greater than the new `MaxDateTime`, then the `MinDateTime` will be reset to the `MaxDateTime`.
 
@@ -42,7 +42,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Minimum and maximum value change notification
 
-The `DateTimeEdit` notifies that the minimum and maximum value is changed through the [MinDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTimeChanged_EV.html) and [MaxDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTimeChanged_EV.html) event. You can use the `OldValue` and `NewValue` properties to get the old and new minimum / maximum date time value.
+The `DateTimeEdit` notifies that the minimum and maximum value is changed through the [MinDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) and [MaxDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) event. You can use the `OldValue` and `NewValue` properties to get the old and new minimum / maximum date time value.
 
 {% tabs %}
 {% highlight C# %}
@@ -84,7 +84,7 @@ private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPrope
 
 ## Restrict date selection
 
-You can restrict the user to select the date from the popup calendar by setting the [DisableDateSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DisableDateSelection.html) property value as `true`. You can select only month and year from the popup calendar. The default value of `DisableDateSelection` property is `false`.
+You can restrict the user to select the date from the popup calendar by setting the [DisableDateSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html#Syncfusion_Windows_Shared_DateTimeEdit_DisableDateSelection) property value as `true`. You can select only month and year from the popup calendar. The default value of `DisableDateSelection` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}

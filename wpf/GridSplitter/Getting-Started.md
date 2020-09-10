@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfGridSplitter
 
-This section explains how to create a WPF [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter.html) and explains about its structure.
+This section explains how to create a WPF [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) and explains about its structure.
 
 ## Structure of SfGridSplitter
 
@@ -238,7 +238,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ### Resize the grid rows or columns programmatically
 
-We can move the splitter and resize the affected columns or rows programmatically with certain pixels by passing the pixel value in [MoveSplitter(Double)](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~MoveSplitter(Double).html) method.
+We can move the splitter and resize the affected columns or rows programmatically with certain pixels by passing the pixel value in [MoveSplitter(Double)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_MoveSplitter_System_Double_) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -290,7 +290,7 @@ gridSplitter.MoveSplitter(50);
 
 ## Show or hide the grid row and columns
 
-We can collapse or expands the element in either side of the splitter by clicking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~EnableCollapseButton.html) property value as `true`. The default value of `EnableCollapseButton` is `false`.
+We can collapse or expands the element in either side of the splitter by clicking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_EnableCollapseButton) property value as `true`. The default value of `EnableCollapseButton` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -336,7 +336,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Custom UI for Collapse buttons 
 
-If you you want to change the UI of horizontal splitter up and down collapse button separately, use the [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~UpButtonTemplate.html) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~DownButtonTemplate.html) properties. If you want to change the UI of vertical splitter left and right collapse button, use the [LeftButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~LeftButtonTemplate.html) and [RightButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~RightButtonTemplate.html) properties 
+If you you want to change the UI of horizontal splitter up and down collapse button separately, use the [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_UpButtonTemplate) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_DownButtonTemplate) properties. If you want to change the UI of vertical splitter left and right collapse button, use the [LeftButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_LeftButtonTemplate) and [RightButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_RightButtonTemplate) properties 
 
 N> You can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
 
@@ -434,7 +434,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Custom UI for expander gripper
 
-If you you want to change the UI of vertical and horizontal splitter gripper separately, use the [VerticalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~VerticalGripperTemplate.html) and [HorizontalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~HorizontalGripperTemplate.html) properties.
+If you you want to change the UI of vertical and horizontal splitter gripper separately, use the [VerticalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_VerticalGripperTemplate) and [HorizontalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html#Syncfusion_Windows_Controls_Input_SfGridSplitter_HorizontalGripperTemplate) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -535,7 +535,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Deferred resizing
 
-We can directly redistribute the row or columns by using `SfGridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~ShowsPreview.html) property as `true`.
+We can directly redistribute the row or columns by using `SfGridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property as `true`.
 
 {% tabs %}
 {% highlight XAML %}

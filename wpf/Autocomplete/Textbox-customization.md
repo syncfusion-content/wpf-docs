@@ -9,21 +9,26 @@ documentation: ug
 
 # Textbox customization 
 
-AutoComplete provides the user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
+AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
 
 
 ## Water mark 
 
-[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
+[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Watermark) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="300" 
-                                  Height="50"
-                                  Watermark="Enter names separated by comma (Ex : John, Kate)"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300" 
+                      Height="50"
+                      Watermark="Enter names separated by comma (Ex : John, Kate)"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
 
 {% endhighlight %}
 {% endtabs %}
@@ -35,10 +40,10 @@ N> The Watermark property is of the object type. So, any framework elements can 
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                  VerticalAlignment="Center" 
-                                  Height="50"
-                                  Width="300">
+<editors:SfTextBoxExt HorizontalAlignment="Center"
+                      VerticalAlignment="Center" 
+                      Height="50"
+                      Width="300">
                 <editors:SfTextBoxExt.Watermark>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Windows 8.png" 
@@ -49,7 +54,7 @@ N> The Watermark property is of the object type. So, any framework elements can 
                                    Opacity="0.5"/>
                     </StackPanel>
                 </editors:SfTextBoxExt.Watermark>
-            </editors:SfTextBoxExt>
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 {% endtabs %}
@@ -58,7 +63,7 @@ N> The Watermark property is of the object type. So, any framework elements can 
 
 ### Water mark template 
 
-Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkTemplate.html)  property.
+Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_WatermarkTemplate)  property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,23 +93,31 @@ Any business object can be bound to the Watermark property and that object can b
 ![Watermark_View](Textbox_customization_images/WatermarkTemplate.png)
 
 
-## Customizing the text box
+## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text box.
+The [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), [FontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase), and [FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_IgnoreCase) properties are used to customize the text in the AutoComplete control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              Text="TextBox"
-                              FontSize="20"
-                              FontWeight="Bold"
-                              FontFamily="Times New Roman"
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="200">
-            </editors:SfTextBoxExt>
+<editors:SfTextBoxExt x:Name="textBoxExt" 
+                      Text="TextBox"
+                      FontSize="20"
+                      FontWeight="Bold"
+                      FontFamily="Times New Roman"
+                      HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="200">
+</editors:SfTextBoxExt>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.Text = "TextBox";
+textBoxExt.FontSize = 20;
+textBoxExt.FontWeight = FontWeights.Bold;
+textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 {% endhighlight %}
 
@@ -116,23 +129,27 @@ The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~
 
 ## Setting the Dropdown Icon 
 
-This feature allows to set the drop-down icon for the text box control using the [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowDropDownButton.html).
+This feature allows to set the drop-down icon for the TextBox control using the [ShowDropDownButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowDropDownButton).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              ShowDropDownButton="True"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      ShowDropDownButton="True"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
+{% highlight c# %}
 
+textBoxExt.ShowDropDownButton = true;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![DropdownIcon](Textbox_customization_images/DropDownIcon.png)

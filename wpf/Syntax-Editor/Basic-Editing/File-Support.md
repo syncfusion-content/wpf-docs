@@ -95,14 +95,14 @@ The following image displays the save file dialog.
 ![Saving changes in a file using save file dialog](File-Support_images/File-Support_img3.jpeg)
 
 ## DocumentClosing event
-By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the [DocumentClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~DocumentClosing_EV.html) event, which occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.
+By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the [DocumentClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) event, which occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.
 
-| [DocumentClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.DocumentClosingEventArgs_members.html) | Description |
+| [DocumentClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.DocumentClosingEventArgs.html) | Description |
 |---------------|-------------|
 | HasUnsavedChanges | Represents a value that indicates whether the file contains unsaved changes. |
 | Action| Represents a value to specify the save actions.|
 
-| [SaveAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.SaveAction.html) | Description |
+| [SaveAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.SaveAction.html) | Description |
 |---|---|
 | Save | Saves the changes before closing document. |
 | Discard | Ignores the changes and closes the document. |

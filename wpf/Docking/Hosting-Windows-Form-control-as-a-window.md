@@ -44,7 +44,7 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 ## Interaction with control hosted by Win32 Host 
 
 * While interacting the  WindowsForm control with WPF controls, it leads to inaccessibility of WPF controls behind WindowsForm control, since the WindowsForm control is on top. 
-* While floating the WindowsForm control in DockingManager, it is  invisible. For these cases, set [UseInteropCompatibilityMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseInteropCompatibilityMode.html) property as `True` for the DockingManager. 
+* While floating the WindowsForm control in DockingManager, it is  invisible. For these cases, set [UseInteropCompatibilityMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseInteropCompatibilityMode) property as `True` for the DockingManager. 
 
 {% tabs %}
 

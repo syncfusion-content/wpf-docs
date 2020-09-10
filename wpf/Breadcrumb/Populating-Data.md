@@ -13,7 +13,7 @@ documentation: ug
 
 The steps to add items to the HierarchyNavigator in XAML are as follows: 
 
-1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
+1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
 {% tabs %}
 {% highlight xaml%}
@@ -24,7 +24,7 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 {% endhighlight %}			
 {% endtabs %}
 
-2. Add the [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) to the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
+2. Add the [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) to the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +47,7 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-3. The snippet below demonstrates the steps to add items to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control in code:
+3. The snippet below demonstrates the steps to add items to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control in code:
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ Data binding is the process of establishing a connection between the application
 
 ### Binding to an object
 
-To bind to a Business Object collection, the `ItemsSource` property and `ItemTemplate` should be used in [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html). HierarchicalDataTemplate should be used for all item templates.
+To bind to a Business Object collection, the `ItemsSource` property and `ItemTemplate` should be used in [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html). HierarchicalDataTemplate should be used for all item templates.
 
 The steps to bind to a Business Object collection are as follows:
 
@@ -158,7 +158,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endtabs %}
 
 
-3. In XAML, bind the collections to the `ItemsSource` property of the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
+3. In XAML, bind the collections to the `ItemsSource` property of the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -186,7 +186,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 ### Binding XML data
 
-To bind XML data to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control, convert the XML to a collection, and then bind the collection by using the `ItemsSource` property.
+To bind XML data to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control, convert the XML to a collection, and then bind the collection by using the `ItemsSource` property.
 
 The XML displayed below is used in this example (attached in the sample project named HierarchyItems.xml).
 
@@ -214,7 +214,7 @@ The XML displayed below is used in this example (attached in the sample project 
 {% endhighlight %}
 {% endtabs %}
 
-The steps to bind XML data to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control are as follows:
+The steps to bind XML data to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control are as follows:
 
 1. Create a separate class that represents the node in an XML document. In this example, a class named Category is created.
 
@@ -237,7 +237,7 @@ public class HierarchyItem
 {% endhighlight %}
 {% endtabs %}
 
-2. Convert the XML data to a collection, and then bind the collection to the `ItemsSource` property of [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html).
+2. Convert the XML data to a collection, and then bind the collection to the `ItemsSource` property of [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +275,7 @@ public partial class MainPage : UserControl
 {% endtabs %}
 
 
-3. The code for the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
+3. The code for the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
 
 {% tabs %}
 {% highlight xaml %}

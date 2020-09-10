@@ -9,11 +9,11 @@ documentation: ug
 
 # Single and multiple selection 
 
-In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. The default value of `MultiSelectMode` is `None` which performs single selection.
+In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
 
 ## Single selection
 
-The single selection can be performed by setting the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property to None. In this mode we can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property.
+The single selection can be performed by setting the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to None. In this mode we can set and retrieve the selected item using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property.
 
 ## Multi selection
 
@@ -27,27 +27,32 @@ The multi-selection, there are two ways to display the selection in the control.
 
 Each selected items can be displayed as a token representation having a close button for each token. 
 
-In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html).
+In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
 
 * `Wrap` - The selected items will be wrapped to the next line of the SfAutoComplete.
 
 * `None` - The selected items will be arranged in horizontal layout in single line.
 
-The [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) property can be used to set and retrieve the items in `MultiSelectMode`.
+The [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property can be used to set and retrieve the items in `MultiSelectMode`.
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Left"
-                                  AutoCompleteMode="Suggest"
-                                  SearchItemPath="Name"
-                                  MultiSelectMode="Token"
-                                  Height="40"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"
-                                  Width="200"/>
+<editors:SfTextBoxExt HorizontalAlignment="Left"
+                      AutoCompleteMode="Suggest"
+                      SearchItemPath="Name"
+                      MultiSelectMode="Token"
+                      Height="40"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"
+                      Width="200"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 
 {% endhighlight %}
 
@@ -113,7 +118,7 @@ The token can be customized by overriding the default style targeting the `Token
 
 ### Enable autosize in token mode 
 
-In token representation when we have set `Wrap` mode enabling the [EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property re-renders the control height based on the number of lines the tokens are wrapped inside the control. 
+In token representation when we have set `Wrap` mode enabling the [EnableAutoSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_EnableAutoSize) property re-renders the control height based on the number of lines the tokens are wrapped inside the control. 
 
 To use this feature, it is need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. By default this feature is disabled.
 
@@ -121,15 +126,22 @@ To use this feature, it is need to set the `MultiSelectMode` as `Token` and `Tok
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Left"
-                                  AutoCompleteMode="Suggest"
-                                  SearchItemPath="Name"
-                                  MultiSelectMode="Token" 
-                                  TokensWrapMode="Wrap"
-                                  EnableAutoSize="True"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"
-                                  Width="200"/>
+<editors:SfTextBoxExt HorizontalAlignment="Left"
+                      AutoCompleteMode="Suggest"
+                      SearchItemPath="Name"
+                      MultiSelectMode="Token" 
+                      TokensWrapMode="Wrap"
+                      EnableAutoSize="True"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"
+                      Width="200"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Token;
+textBoxExt.TokensWrapMode = TokensWrapMode.Wrap;
+textBoxExt.EnableAutoSize = true;
 
 {% endhighlight %}
 
@@ -141,20 +153,25 @@ See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/auto
 
 ## Multiple selection using delimiter 
 
-In `Delimiter` mode, each item is separated by a character that is set to the [Delimiter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. By default the items are separated by `,`(Comma).
+In `Delimiter` mode, each item is separated by a character that is set to the [Delimiter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Delimiter) property. By default the items are separated by `,`(Comma).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              MultiSelectMode="Delimiter"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      MultiSelectMode="Delimiter"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endhighlight %}
 
@@ -165,45 +182,45 @@ In `Delimiter` mode, each item is separated by a character that is set to the [D
 
 ## Setting and retrieving SelectedItem 
 
-The [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property is used to select a particular item from the suggestion list or to retrieve the item that is selected. The SelectedItem property can be used in single selection where the `MultiSelectMode` as `None`. For multi-selection where the `MultiSelectMode` is set either as `Token` or `Delimiter` the selected items can be set or retrieved using the [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) property.
+The [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) property is used to select a particular item from the suggestion list or to retrieve the item that is selected. The SelectedItem property can be used in single selection where the `MultiSelectMode` as `None`. For multi-selection where the `MultiSelectMode` is set either as `Token` or `Delimiter` the selected items can be set or retrieved using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property.
 
 The `SelectedItem` and `SelectedItems` contains the object of the custom data and using the 
 `SearchItemPath` property the value displayed in the text field can be retrieved.
 
+Model Class:
+
 {% tabs %}
-
-{% highlight xaml %}
-
-    <editors:SfTextBoxExt HorizontalAlignment="Center"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  SelectedItem="{Binding SelectedItem}"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                 
-                                  Height="40" 
-                                  Width="200"
-                              />
-
-{% endhighlight %}
-
 {% highlight c# %}
 
-Employee Class:
 
-    public class Employee
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-    }
+public class Employee
+{
+        string name;
+        string email;
 
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
-EmployeeViewModel Class:
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+}
 
-    public class EmployeeViewModel
-    {
+{% endhighlight %}
+{% endtabs %}
+
+In EmployeeViewModel class the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItem) updated initially from the Employees collection. 
+
+{% tabs %}
+{% highlight c# %}
+
+public class EmployeeViewModel
+{
         private List<Employee> employees;
         public List<Employee> Employees
         {
@@ -230,31 +247,7 @@ EmployeeViewModel Class:
             Employees.Add(new Employee() { Name = "Lucas", Email = "Lucas@syncfusion.com" });
             SelectedItem = Employees[0];
         }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![selected item](Single_and_multiple_selection_images/Set_SelectedItem.png)
-
-
-{% tabs %}
-
-{% highlight c# %}
-
-
-        private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            SfTextBoxExt textBoxExt = d as SfTextBoxExt;
-            string selectedItem = "";
-            if (textBoxExt.SelectedItem != null)
-            {
-                selectedItem =((textBoxExt.SelectedItem as Employee).Name).ToString();
-            }
-
-            MessageBox.Show(selectedItem, "SelectedItem", MessageBoxButton.OK, MessageBoxImage.None);
-        }
+}
 
 {% endhighlight %}
 
@@ -265,36 +258,83 @@ EmployeeViewModel Class:
 
 {% highlight xaml %}
 
-    <editors:SfTextBoxExt HorizontalAlignment="Center"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="Token"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  SelectedItems="{Binding SelectedItems}"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                 
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Center"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      SelectedItem="{Binding SelectedItem}"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                 
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
+![selected item](Single_and_multiple_selection_images/Set_SelectedItem.png)
+
+
+{% tabs %}
+
 {% highlight c# %}
 
-Employee Class:
 
-    public class Employee
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-    }
+private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+         SfTextBoxExt textBoxExt = d as SfTextBoxExt;
+         string selectedItem = "";
+         if (textBoxExt.SelectedItem != null)
+         {
+            selectedItem =((textBoxExt.SelectedItem as Employee).Name).ToString();
+         }
+
+         MessageBox.Show(selectedItem, "SelectedItem", MessageBoxButton.OK, MessageBoxImage.None);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
-EmployeeViewModel Class:
 
-    public class EmployeeViewModel
-    {
+Model Class:
+
+{% tabs %}
+{% highlight c# %}
+
+public class Employee
+{
+        string name;
+        string email;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+In EmployeeViewModel class the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) updated initially from the Employees collection. 
+
+{% tabs %}
+{% highlight c# %}
+
+public class EmployeeViewModel
+{
         private List<Employee> employees;
         public List<Employee> Employees
         {
@@ -324,50 +364,71 @@ EmployeeViewModel Class:
             SelectedItems.Add(Employees[0]);
             SelectedItems.Add(Employees[1]);
         }
-    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
-![selected items](Single_and_multiple_selection_images/Set_SelectedItems.png)
-
-## Retrieving SelectedValue 
-
-The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list. We have to set the [ValueMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ValueMemberPathProperty.html) property when using custom data for the value we want to retrieve from `SelectedValue` based on the `SelectedItem` object.
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt HorizontalAlignment="Left"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  ValueMemberPath="Email"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                                                      
-                                  SelectedItemChanged="AutoComplete_SelectedItemChanged"
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Center"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="Token"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      SelectedItems="{Binding SelectedItems}"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                 
+                      Height="40" 
+                      Width="200"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![selected items](Single_and_multiple_selection_images/Set_SelectedItems.png)
+
+## Retrieving SelectedValue 
+
+The [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property is used to retrieve the selected values from the suggestion list. We have to set the [ValueMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ValueMemberPathProperty) property when using custom data for the value we want to retrieve from `SelectedValue` based on the `SelectedItem` object.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfTextBoxExt HorizontalAlignment="Left"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      ValueMemberPath="Email"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                                                      
+                      SelectedItemChanged="AutoComplete_SelectedItemChanged"
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            SfTextBoxExt textBoxExt = d as SfTextBoxExt;
-            if (textBoxExt.SelectedValue != null)
-            {
-                MessageBox.Show(textBoxExt.SelectedValue.ToString(), "SelectedValue", MessageBoxButton.OK, MessageBoxImage.None);
-            }
-        }
+private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+       SfTextBoxExt textBoxExt = d as SfTextBoxExt;
+       if (textBoxExt.SelectedValue != null)
+       {
+          MessageBox.Show(textBoxExt.SelectedValue.ToString(), "SelectedValue", MessageBoxButton.OK, MessageBoxImage.None);
+       }
+}
 
 {% endhighlight %}
 
@@ -376,38 +437,37 @@ The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfI
 
 ### Retrieving SuggestionIndex
 
-When an item is selected from suggestion list, their index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property.
+When an item is selected from suggestion list, their index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property.
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt HorizontalAlignment="Left"                                
-                                  x:Name="autoComplete"
-                                  MaxDropDownHeight="100"
-                                  MultiSelectMode="None"  
-                                  AutoCompleteMode="Suggest"                                                          
-                                  SearchItemPath="Name"
-                                  ValueMemberPath="Email"
-                                  AutoCompleteSource="{Binding Employees}"
-                                  VerticalAlignment="Center"                                                      
-                                  SelectedItemChanged="AutoComplete_SelectedItemChanged"
-                                  Height="40" 
-                                  Width="200"
-                              />
+<editors:SfTextBoxExt HorizontalAlignment="Left"                                
+                      x:Name="autoComplete"
+                      MaxDropDownHeight="100"
+                      MultiSelectMode="None"  
+                      AutoCompleteMode="Suggest"                                                          
+                      SearchItemPath="Name"
+                      ValueMemberPath="Email"
+                      AutoCompleteSource="{Binding Employees}"
+                      VerticalAlignment="Center"                                                      
+                      SelectedItemChanged="AutoComplete_SelectedItemChanged"
+                      Height="40" 
+                      Width="200"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 
-        private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            string suggestionIndex = "";
-            suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
-            MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
-        }
+private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+        string suggestionIndex = "";
+        suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
+        MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
+}
 
 {% endhighlight %}
 
@@ -416,11 +476,11 @@ When an item is selected from suggestion list, their index can be retrieved usin
 
 ## Displaying images 
 
-This feature allows to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property.
+This feature allows to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ImageMemberPath) property.
 
 N> This feature is applicable only for MultiSelectMode with Token mode.
 
-For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-dropdown).
+For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-drop-down).
 
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Single-and-multiple-selection) in GitHub
