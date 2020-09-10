@@ -993,7 +993,7 @@ chart.Legend = new ChartLegend()
 
 ## Troubleshooting
 
-While updating the chart element dynamically, the chart view is running in the background thread with the timespan problem, hence only legend item is not showing. To resolve this by using the Dispatcher.BeginInvoke() method. Please refer the following code snippet.
+The legend item is not showing because the chart view is running in the background thread with the timespan problem while updating the chart element dynamically. You can resolve this by using the Dispatcher.BeginInvoke() method. Please refer to the following code sample.
 
 {% highlight c# %}
 
