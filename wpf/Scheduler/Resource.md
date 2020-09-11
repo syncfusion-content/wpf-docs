@@ -21,10 +21,9 @@ ObservableCollection<object> resources = new ObservableCollection<object>();
 // Adding schedule resource in scheduler resource collection.
 ResourceCollection = new ObservableCollection<object>()
 {
-   new SchedulerResource() { Name = "Peter", Background = new SolidColorBrush(Colors.Red), Id = "5001", Foreground = new SolidColorBrush(Colors.White) },
-   new SchedulerResource() { Name = "Natasha", Background = new SolidColorBrush(Colors.Blue), Id = "5002" },
-   new SchedulerResource() { Name = "Steev Roger", Background = new SolidColorBrush(Colors.Green), Id = "5003" },
-   new SchedulerResource() { Name = "Star Loard", Background = new SolidColorBrush(Colors.Yellow), Id = "5004"  },
+new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "0", Foreground = new SolidColorBrush(Colors.White) },
+new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1" },
+new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "2" },
 };
 
 // Adding schedule resource collection to schedule resources of SfSchedule.
@@ -33,7 +32,7 @@ schedule.ResourceCollection = ResourceCollection;
 {% endtabs %}
 
 
-## Resource view visibility
+## Resource Grouping visibility
 
 You can handle the visibility of resource using the `ResourceGroupType` property of `SfScheduler`. If the appointments are not grouped based on resources the default value is Resource.
 
@@ -90,7 +89,7 @@ var appointments = new ScheduleAppointment()
 {
 StartTime = DateTime.Now.AddMinutes(20),
 EndTime = DateTime.Now.AddHours(2),
-Subject = "SUBJECT",
+Subject = "General Meeting",
 ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id , (ResourceCollection[1] as SchedulerResource).Id}
 };
 
@@ -111,15 +110,14 @@ You can associate `Resources` to the appointments by adding `Id` of resource in 
 // Creating an instance for scheduler appointment collection
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in scheduler appointment collection 
-var scheduleAppointment = new ScheduleAppointment()
+var appointments = new ScheduleAppointment()
 {
-   StartTime = currentDate.AddMinutes(20),
-   EndTime = currentDate.AddMinutes(40),
-   Subject = "Business meeting",
-   AppointmentBackground = new SolidColorBrush(Colors.RoyalBlue),
-   IsAllDay = true,
-   ResourceIdCollection=new ObservableCollection<object>() { "5001","5002"}
+StartTime = DateTime.Now.AddMinutes(20),
+EndTime = DateTime.Now.AddHours(2),
+Subject = "General Meeting",
+ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id}
 };
+
 
 scheduleAppointmentCollection.Add(scheduleAppointment1);
 //Adding schedule appointment collection to ItemsSource of SfScheduler
@@ -218,10 +216,11 @@ You can add resources for `CustomResourceClass` that can be assigned to appointm
 ObservableCollection<object> resources = new ObservableCollection<object>();
 
 // Adding custom resource in scheduler resource collection.
- ResourceCollection = new ObservableCollection<object>()
+ResourceCollection = new ObservableCollection<object>()
 {
-new CustomResourceClass() { Name = "Peter", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "5001", ForegroundColor = new SolidColorBrush(Colors.White) },
-new CustomResourceClass() { Name = "Natasha", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "5002" },             
+new CustomResourceClass() { Name = "Peter", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "0", ForegroundColor = new SolidColorBrush(Colors.White) },
+new CustomResourceClass() { Name = "Natasha", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1" },
+new CustomResourceClass() { Name = "James William", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "2" },
 };
 
 // Adding schedule resource collection to schedule resources of SfSchedule.
@@ -250,18 +249,18 @@ You can map the properties of `CustomResourceClass` class with our `SfScheduler`
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.ResourceMapping>
-<Schedule:ResourceMapping Id="Code" Name="Subject" Background="BackgroundColor" Foreground="ForegroundColor"/>
+<Schedule:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
 </Schedule:SfScheduler.ResourceMapping>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
  // Schedule data mapping for custom resource.
- ResourceMapping resourceMapping = new ResourceMapping();
- resourceMapping.Name = "Subject";
- resourceMapping.Id = "Id";
- resourceMapping.Background = "BackgroundColor";
- resourceMapping.Foreground = "ForegroundColor";
- schedule.ResourceMapping = resourceMapping;
+ResourceMapping resourceMapping = new ResourceMapping();
+resourceMapping.Name = "Name";
+resourceMapping.Id = "Id";
+resourceMapping.Background = "BackgroundColor";
+resourceMapping.Foreground = "ForegroundColor";
+schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
