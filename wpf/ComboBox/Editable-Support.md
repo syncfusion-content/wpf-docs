@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-## IsEditable
+# IsEditable
 
 It allows user to edit the text in the ComboBoxAdv.
 
