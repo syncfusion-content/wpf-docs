@@ -331,3 +331,36 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endtabs %}
 
 ![WPF scheduler resource Special Time Region ](Resource_Images/Resource_SepcialRegion.png)
+
+## Customization of Resource Grouping
+
+Resource UI customization using a template and template selectors support.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler.ResourceHeaderTemplate>
+<DataTemplate>
+<Grid Background="Transparent">
+<Border BorderThickness="0.3" BorderBrush="Gray" >
+<StackPanel VerticalAlignment="Center" Orientation="Vertical">
+<Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
+<Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+<Image HorizontalAlignment="Center" VerticalAlignment="Center"
+Width="55"
+Height="55"
+Source="{Binding ImageSource}" />
+</Border>
+</Border>
+<TextBlock
+HorizontalAlignment="Center"
+VerticalAlignment="Center"
+FontSize="15"
+Foreground="Black"
+Text="{Binding Name}" />
+</StackPanel>
+</Border>
+</Grid>
+</DataTemplate>
+</syncfusion:SfScheduler.ResourceHeaderTemplate>
+{% endhighlight %}
+{% endtabs %}
