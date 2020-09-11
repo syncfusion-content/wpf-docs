@@ -17,5 +17,5 @@ The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 
 * Value – The Value property retrieves the current value calculated from the calculator. This is a **Read-Only** property.
 * Memory – The Memory property retrieves the value stored in memory.
-* Defaultvalue - The Default value property shows default value in the value TextBox.
+* DefaultValue - The Default value property shows default value in the value TextBox.
 * DisplayText - The DisplayText property shows watermark in the value TextBox.
