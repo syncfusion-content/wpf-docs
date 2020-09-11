@@ -3313,7 +3313,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Padding for ChartAxis support in WPF](Axis_images/Axis_img69.jpeg)
+![PlotOffsetStart for ChartAxis support in WPF](Axis_images/PlotOffset_Start.png)
 
 ### PlotOffsetEnd
 
@@ -3361,8 +3361,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Padding for ChartAxis support in WPF](Axis_images/Axis_img69.jpeg)
-
+![PlotOffsetEnd for ChartAxis support in WPF](Axis_images/PlotOffset_End.png)
 
 ## AutoScrollingDelta
 
