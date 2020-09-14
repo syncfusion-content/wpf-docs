@@ -1,38 +1,93 @@
 ---
 layout: post
 title: Orientation | SfRangeSlider | wpf | Syncfusion
-description: orientation  
+description: This section provides how to use the Orientation property in Syncfusion WPF RangeSlider (SfRangeSlider) control.  
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Orientation  
+# Orientation in WPF RangeSlider(SfRangeSlider) 
 
-The Orientation property has the following two options.  
+The [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property has the following two options.  
 
 1. Horizontal  
 2. Vertical  
 
+The default option is Horizontal.
 
+{% tabs %}
 
-The default option is Horizontal.  
+{% highlight XAML %}
 
-![](Orientation_images/Orientation_img1.jpeg)
-
-
-
-The following code sample illustrates how to set Vertical Orientation to SfRangeSlider.  
-
-
-{%highlight xaml%}
-
-
-<editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  />
+<editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    Orientation="Horizontal"
+                    Value="50" />
 
 {%endhighlight%}
 
-![](Orientation_images/Orientation_img2.jpeg)
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                Value = 50,
+                Orientation = Orientation.Horizontal
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![Horizontal](Orientation_images/Orientation_img1.png)
+
+
+The following code sample illustrates how to set vertical orientation to [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html).  
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<editors:SfRangeSlider
+                    Height="300"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Maximum="100"
+                    Minimum="0"
+                    Orientation="Vertical"
+                    Value="50" />
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                Value = 50,
+                Orientation = Orientation.Vertical
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![Vertical](Orientation_images/Orientation_img2.png)
 
 
 
