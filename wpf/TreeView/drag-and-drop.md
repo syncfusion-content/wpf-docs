@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop in WPF TreeView (SfTreeView)
 
-TreeView allows drag and drop the items within the treeview control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~AllowDragging.html) property as `true`. It is also possible to drag and drop the items between treeview and other controls such as `ListView` and `SfDataGrid`. 
+TreeView allows drag and drop the items within the treeview control by setting the [AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDragging) property as `true`. It is also possible to drag and drop the items between treeview and other controls such as `ListView` and `SfDataGrid`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ While dropping, the dragged items can be added above or below to the target item
 
 ## Dragging multiple items
 
-SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~SelectionMode.html) as `Multiple` or `Extended`. 
+SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) as `Multiple` or `Extended`. 
 
 ![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image2.png)
 ## Drag and drop events
@@ -39,11 +39,11 @@ SfTreeView triggers the following events when drag and drop:
 
 ### ItemDragStarting event
 
-[ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarting_EV.html) event occurs when you starting to drag the items in treeview. The [TreeViewItemDragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html)  has the following member, which provides information for the `ItemDragStarting` event.
+[ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event occurs when you starting to drag the items in treeview. The [TreeViewItemDragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html)  has the following member, which provides information for the `ItemDragStarting` event.
 
-* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs~Data.html) : Gets or Sets a data object that contains the data associated while dragging the items. 
-* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs~DraggingNodes.html) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.If you set the Data property, the value of DraggingNodes property will be `null`.
-* [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs~Cancel.html) : Gets or sets a value indicating whether dragging should be canceled.
+* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragStartingEventArgs_Data) : Gets or Sets a data object that contains the data associated while dragging the items. 
+* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragStartingEventArgs_DraggingNodes) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.If you set the Data property, the value of DraggingNodes property will be `null`.
+* [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragStartingEventArgs_Cancel) : Gets or sets a value indicating whether dragging should be canceled.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,10 +59,10 @@ private void SfTreeView_ItemDragStarting(object sender, Syncfusion.UI.Xaml.TreeV
 
 ### ItemDragStarted event
 
-[ItemDragStarted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarted_EV.html)  event occurs after started the dragging, in treeview. The [TreeViewItemDragStartedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs.html)  has the following member, which provides information for the `ItemDragStarted` event.
+[ItemDragStarted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html)  event occurs after started the dragging, in treeview. The [TreeViewItemDragStartedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs.html)  has the following member, which provides information for the `ItemDragStarted` event.
 
-* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs~Data.html) : Gets a data object that contains the data associated while dragging the items. 
-* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs~DraggingNodes.html) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
+* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragStartedEventArgs_Data) : Gets a data object that contains the data associated while dragging the items. 
+* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragStartedEventArgs_DraggingNodes) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
 
 {% tabs %}
 {% highlight c# %}
@@ -77,13 +77,13 @@ private void SfTreeView_ItemDragStarted(object sender, Syncfusion.UI.Xaml.TreeVi
 
 ### ItemDragOver event
 
-[ItemDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragOver_EV.html) event occurs continuously while item is dragged within the targeted SfTreeView. The [TreeViewItemDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html) has the following members, which provide information for the `ItemDragOver` event.
+[ItemDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event occurs continuously while item is dragged within the targeted SfTreeView. The [TreeViewItemDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html) has the following members, which provide information for the `ItemDragOver` event.
 
-* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs~Data.html) : Gets a data object that contains the data associated while dragging the items. 
-* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs~DraggingNodes.html) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
-* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs~DragSource.html) : Gets the source of the transferred data.
-* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs~DropPosition.html) : Gets or sets the position where dragged nodes are going to be dropped.
-* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs~TargetNode.html) : Gets the node where the dragged nodes are going to be dropped.
+* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragOverEventArgs_Data) : Gets a data object that contains the data associated while dragging the items. 
+* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragOverEventArgs_DraggingNodes) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
+* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragOverEventArgs_DragSource) : Gets the source of the transferred data.
+* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragOverEventArgs_DropPosition) : Gets or sets the position where dragged nodes are going to be dropped.
+* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDragOverEventArgs_TargetNode) : Gets the node where the dragged nodes are going to be dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,14 +98,14 @@ private void SfTreeView_ItemDragOver(object sender, Syncfusion.UI.Xaml.TreeView.
 
 ### ItemDropping event
 
-[ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropping_EV.html) event occurs when item is dropping within the targeted SfTreeView. The [TreeViewItemDroppingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html) has the following members, which provide information for the `ItemDropping` event.
+[ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event occurs when item is dropping within the targeted SfTreeView. The [TreeViewItemDroppingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html) has the following members, which provide information for the `ItemDropping` event.
 
-* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~Data.html) : Gets a data object that contains the data associated while dragging the items. 
-* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~DraggingNodes.html) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
-* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~DragSource.html) : Gets the source of the transferred data.
-* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~DropPosition.html) : Gets or sets the position where dragged nodes are going to be dropped.
-* [Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~Handled.html) : Gets or sets a value indicating whether the event is handled. If this event is handled, dragged nodes will not be dropped to TreeView.
-* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs~TargetNode.html) : Gets the node where the dragged nodes are going to be dropped.
+* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_Data) : Gets a data object that contains the data associated while dragging the items. 
+* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_DraggingNodes) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
+* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_DragSource) : Gets the source of the transferred data.
+* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_DropPosition) : Gets or sets the position where dragged nodes are going to be dropped.
+* [Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_Handled) : Gets or sets a value indicating whether the event is handled. If this event is handled, dragged nodes will not be dropped to TreeView.
+* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppingEventArgs_TargetNode) : Gets the node where the dragged nodes are going to be dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,12 +120,12 @@ private void SfTreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.
 
 ### ItemDropped event
 
-[ItemDropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropped_EV.html) event occurs when item is dropped within the targeted SfTreeView. The [TreeViewItemDroppedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html) has the following members, which provide information for the `Drop` event.
-* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~Data.html) : Gets a data object that contains the data associated while dragging the items. 
-* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~DraggingNodes.html) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
-* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~DragSource.html) : Gets the source of the transferred data.
-* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~DropPosition.html) : Gets the position where dragged nodes are dropped.
-* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~TargetNode.html) : Gets the node where the dragged nodes are dropped.
+[ItemDropped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event occurs when item is dropped within the targeted SfTreeView. The [TreeViewItemDroppedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html) has the following members, which provide information for the `Drop` event.
+* [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppedEventArgs_Data) : Gets a data object that contains the data associated while dragging the items. 
+* [DraggingNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppedEventArgs_DraggingNodes) : Gets the collection of [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) which are dragged.
+* [DragSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppedEventArgs_DragSource) : Gets the source of the transferred data.
+* [DropPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppedEventArgs_DropPosition) : Gets the position where dragged nodes are dropped.
+* [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html#Syncfusion_UI_Xaml_TreeView_TreeViewItemDroppedEventArgs_TargetNode) : Gets the node where the dragged nodes are dropped.
 
 {% tabs %}
 {% highlight c# %}
@@ -143,7 +143,7 @@ private void SfTreeView_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.T
 
 ### Disable dragging of certain items in WPF TreeView
 
-You can restrict the dragging of certain nodes in SfTreeView by using the  [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarting_EV.html) event.
+You can restrict the dragging of certain nodes in SfTreeView by using the  [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ private void SfTreeView_ItemDragStarting(object sender, Syncfusion.UI.Xaml.TreeV
 
 ### Disable dropping on certain items in WPF TreeView
 
-You can restrict the dropping the items on certain nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropping_EV.html) event.
+You can restrict the dropping the items on certain nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ private void SfTreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.
 
 ### Customize the drop position
 
-You can customize the drop position of dragging nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropping_EV.html) event.
+You can customize the drop position of dragging nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ private void SfTreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.
 
 ### Customizing drag Popup
 
-To customize the draggable popup, use the [DragPreviewTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~DragPreviewTemplate.html) property in the SfTreeView. The DataContext of DragPreviewTemplate is [TreeViewDragInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewDragInfo.html).
+To customize the draggable popup, use the [DragPreviewTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_DragPreviewTemplate) property in the SfTreeView. The DataContext of DragPreviewTemplate is [TreeViewDragInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewDragInfo.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -233,7 +233,7 @@ To customize the draggable popup, use the [DragPreviewTemplate](https://help.syn
 
 ## Drag and drop between two TreeView's
 
-You can customize the dragging operation between two treeview by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarting_EV.html) , [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropping_EV.html) and [SfTreeView.ItemDropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropped_EV.html) events.
+You can customize the dragging operation between two treeview by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) , [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeView.ItemDropped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) events.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Gestures | SfRangeSlider | wpf | Syncfusion
-description: gestures   
+description: This section provides how to use both KeyGesture and MouseGesture in Syncfusion WPF RangeSlider (SfRangeSlider).   
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Gestures   
+# Gestures in WPF RangeSlider(SfRangeSlider) 
 
 ### Keyboard 
 
@@ -33,9 +33,9 @@ N> When the SnapsTo property is set to Ticks then the Thumb snaps to next tick b
 
 ### Mouse  
 
-You can use the mouse gesture to update the value in SfRangeSlider by either dragging the Thumb to the certain distance or pressing on the specified region in the track.   
+RangeSlider allows the mouse gesture to update the value of the SfRangeSlider either by dragging the thumb to a certain distance or by pressing the specified region in the track.  
 
-N> When the Thumb is released between two steps or when the pointer is pressed between two steps, then the value and Thumb automatically snaps to nearest value.
+N> When the thumb is released between two steps or when the pointer is pressed between two steps, then the value and thumb automatically snaps to nearest value.
 
 
 

@@ -16,7 +16,7 @@ Determinate is the default state. You can use it when the progress estimation is
 ![Determinate image](States_images/Determinate.png)
 
 ## Indeterminate
-By enabling the [IsIndeterminate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~IsIndeterminateProperty.html) property, the state of the progressbar can be changed to indeterminate when the progress cannot be estimated or is not being calculated.
+By enabling the [IsIndeterminate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IsIndeterminateProperty) property, the state of the progressbar can be changed to indeterminate when the progress cannot be estimated or is not being calculated.
 {% tabs %}
 {% highlight XAML %}      
 <Syncfusion:SfLinearProgressBar Progress="70" IsIndeterminate="True" />      {% endhighlight %}
@@ -30,7 +30,7 @@ grid.Children.Add(linear);
 ![InDeterminate image](States_images/InDeterminate.png)
 
 ## Buffer
-Buffer is used as a secondary progress indicator when the primary task depends on the secondary task. This will allow users to visualize both primary and secondary tasks progress simultaneously. The [SecondaryProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar~SecondaryProgressProperty.html) property can be set to visualize secondary progress and  separate color for the secondary progress can bet set by [SecondaryProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar~SecondaryProgressColorProperty.html) property.
+Buffer is used as a secondary progress indicator when the primary task depends on the secondary task. This will allow users to visualize both primary and secondary tasks progress simultaneously. The [SecondaryProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfLinearProgressBar_SecondaryProgressProperty) property can be set to visualize secondary progress and  separate color for the secondary progress can bet set by [SecondaryProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfLinearProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfLinearProgressBar_SecondaryProgressColorProperty) property.
 {% tabs %}
 {% highlight XAML %}      
 <Syncfusion:SfLinearProgressBar Progress="70" SecondaryProgress="90" />      {% endhighlight %}

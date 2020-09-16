@@ -380,7 +380,7 @@ Header can be displayed using the property [DisplayMemberPath](https://docs.micr
 
 ![Setting Header for items](Populating-Items-images/Populating-Items-img5.jpeg)
 
-[HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~HeaderTemplate.html) property can also be used to display the header. [HeaderTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~HeaderTemplateSelector.html) property is also provided to apply header template based on the selection logic. 
+[HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property can also be used to display the header. [HeaderTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplateSelector) property is also provided to apply header template based on the selection logic. 
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ Header can be displayed using the property [DisplayMemberPath](https://docs.micr
 
 ### Setting Content for items
 
-Content can be displayed using the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ContentTemplate.html) property. Content is visible only in the expanded state. [ContentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ContentTemplateSelector.html) property is also provided to apply content template based on the selection logic.
+Content can be displayed using the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ContentTemplate) property. Content is visible only in the expanded state. [ContentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_ContentTemplateSelector) property is also provided to apply content template based on the selection logic.
 
 {% tabs %}
 

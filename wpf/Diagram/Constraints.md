@@ -9,12 +9,12 @@ documentation: ug
 
 # Constraints in WPF Diagram (SfDiagram)
 
-`Constraints` are used to enable/disable certain behaviors of the [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram.html), [node](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [connector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [port](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html) and [annotation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html). Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
+`Constraints` are used to enable/disable certain behaviors of the [diagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html), [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [port](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodePortViewModel.html) and [annotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationEditorViewModel.html). Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
 ## Graph Constraints
 
-[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
+[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
 
 |Constraints|Description|
 |--|--|
@@ -61,7 +61,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 ## Node Constraints
 
-[NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default Selectable, Connectable, Inherit, RoutingObstacle, PivotDraggable, Delete and ThemeStyle constraints are enabled for Node.
+[NodeConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default Selectable, Connectable, Inherit, RoutingObstacle, PivotDraggable, Delete and ThemeStyle constraints are enabled for Node.
 
 |Constraints	|Description|
 |--|--|
@@ -135,7 +135,7 @@ NodeViewModel node = new NodeViewModel()
 
 ## Connector Constraints
 
-[ConnectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allows to enable or disable the following behaviors of Connectors. By default Selectable, EndDraggable, Inherit, Thumbs, Connectable, Delete, BridgeObstacle and ThemeStyle constraints are enabled for connector.
+[ConnectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allows to enable or disable the following behaviors of Connectors. By default Selectable, EndDraggable, Inherit, Thumbs, Connectable, Delete, BridgeObstacle and ThemeStyle constraints are enabled for connector.
 
 |Constraints	|Description|
 |--|--|
@@ -201,7 +201,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Port Constraints
 
-[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port.By default Inherit constraints are enabled for port.
+[PortConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PortConstraints.html) allows to enable or disable the following behaviors of port.By default Inherit constraints are enabled for port.
 
 |Constraints	|Description|
 |--|--|
@@ -242,7 +242,7 @@ NodePortViewModel port=	new NodePortViewModel()
 
 ## Annotation Constraints
 
-[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation.By default Inherit and Editable constraints are enabled for annotation.
+[AnnotationConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html) allows to enable or disable the following behaviors of Annotation.By default Inherit and Editable constraints are enabled for annotation.
 
 |Constraints	|Description|
 |--|--|
@@ -290,7 +290,7 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 
 ## Selector Constraints
 
-Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with [SelectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html). The part of selector is categorized as follows.
+Selector visually represents the selected elements with certain editable thumbs. The visual representation of the thumbs can be controlled with [SelectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorConstraints.html). The part of selector is categorized as follows.
 
 |Constraints	|Description|
 |--|--|
@@ -322,7 +322,7 @@ The following code example illustrates how to hide rotator.
 
 ## Snap Constraints
 
-[SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable or disable snapping. Snap constraints allow to set the following behaviors.
+[SnapConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) control the visibility of gridlines and enable or disable snapping. Snap constraints allow to set the following behaviors.
 
 |Constraints	|Description|
 |--|--|

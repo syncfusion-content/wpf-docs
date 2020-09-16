@@ -898,7 +898,7 @@ The stroke color, fill color, begin style, end style, opacity and thickness of t
 
 ##### Editing thickness of the arrow
 
-Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of properties window will allow us to modify the thickness of the selected arrow shape.
+Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of properties window will allow us to modify the thickness of the selected arrow shape.
 
 The following image illustrates how to change the thickness of the arrow shape.
 
@@ -1178,7 +1178,7 @@ The stroke color, fill color, thickness and opacity of the polygon annotation ca
 
 ##### Editing the thickness of the polygon annotation
 
-Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of polygon annotation properties window will allow us to modify the thickness of the selected polygon annotation.
+Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of polygon annotation properties window will allow us to modify the thickness of the selected polygon annotation.
 
 The following image illustrates how to change the thickness of the polygon annotation.
 
@@ -1417,7 +1417,7 @@ The color, opacity and thickness of the polyline annotation can be edited using 
 
 ##### Editing the thickness of the polyline annotation
 
-Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of polyline annotation properties window will allow us to modify the thickness of the selected polyline annotation.
+Modifying the value in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control in the Appearance tab of polyline annotation properties window will allow us to modify the thickness of the selected polyline annotation.
 
 The following image illustrates how to change the thickness of the polyline annotation.
 

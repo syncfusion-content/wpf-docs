@@ -11,7 +11,7 @@ documentation: ug
 You can highly customize the appearance of the circular progressbar in the following ways.
 
 ## Angle
-The appearance of the circular progressbar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [StartAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~StartAngleProperty.html) and [EndAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~EndAngleProperty.html) properties. The following code sample demonstrates to change the appearance of the circular progressbar to semi-circle.
+The appearance of the circular progressbar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [StartAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_StartAngleProperty) and [EndAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_EndAngleProperty) properties. The following code sample demonstrates to change the appearance of the circular progressbar to semi-circle.
 
 {% tabs %}
 {% highlight XAML %}
@@ -29,13 +29,13 @@ grid.Children.Add(Circular);
 ## Radius/Thickness 
 You can customize the radius or thickness of the circular progressbar based on its usage. The following properties are used to change the look and appearance of the circular progressbar:
 
-•[IndicatorOuterRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~IndicatorOuterRadiusProperty.html): Defines the outer radius of the progress indicator.
+•[IndicatorOuterRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_IndicatorOuterRadiusProperty): Defines the outer radius of the progress indicator.
 
-•[IndicatorInnerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~IndicatorInnerRadiusProperty.html): Defines the inner radius of the progress indicator.
+•[IndicatorInnerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_IndicatorInnerRadiusProperty): Defines the inner radius of the progress indicator.
 
-•[TrackOuterRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~TrackOuterRadiusProperty.html): Defines the outer radius of the track indicator.
+•[TrackOuterRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_TrackOuterRadiusProperty): Defines the outer radius of the track indicator.
 
-•[TrackInnerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar~TrackInnerRadiusProperty.html): Defines the inner radius of the track indicator.
+•[TrackInnerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfCircularProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfCircularProgressBar_TrackInnerRadiusProperty): Defines the inner radius of the track indicator.
 
 The below  code samples are provided to showcase various customizations of the circular progressbar.
 
@@ -114,9 +114,9 @@ grid.Children.Add(Circular);
 ## Color Customization
 You can customize the color of the circular progressbar's progress color and track color.The following properties are used to customize the color in the progressbar:
 
-•[ProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~ProgressColor.html): Represents the color of the progress indicator.
+•[ProgressColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_ProgressColor): Represents the color of the progress indicator.
 
-•[TrackColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase~TrackColorProperty.html): Represents the color of the track indicator.
+•[TrackColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_TrackColorProperty): Represents the color of the track indicator.
 
 {% tabs %}
 {% highlight XAML %}      
@@ -135,13 +135,13 @@ grid.Children.Add(circular);
 ## Range Colors
 
 You can visualize the multiple ranges with different solid colors that are mapped to each range to enhance the readability of progress.
-The solid colors can be mapped to the specific ranges using the [RangeColor] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor.html).
+The solid colors can be mapped to the specific ranges using the [RangeColor] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html).
 
-•[Color](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
+•[Color](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_Color): Represents the color to the specified range.
 
-•[Start](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
+•[Start](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_Start): Represents the start range of the color.
 
-•[End](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~End.html): Represents the end range of the color.
+•[End](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_End): Represents the end range of the color.
 
 {% tabs %}
 {% highlight XAML %}
@@ -170,7 +170,7 @@ grid.Children.Add(circular);
 
 ## Gradient
 
-Gradient shows change in intensity of the colors during the progress. [IsGradient](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor~IsGradient.html) property  in  [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfProgressBar.WPF~Syncfusion.UI.Xaml.ProgressBar.RangeColor.html) class is used to set gradient effect to the colors applied to the progressbar.
+Gradient shows change in intensity of the colors during the progress. [IsGradient](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html#Syncfusion_UI_Xaml_ProgressBar_RangeColor_IsGradient) property  in  [RangeColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.RangeColor.html) class is used to set gradient effect to the colors applied to the progressbar.
 {% tabs %}
 {% highlight XAML %}
       <Syncfusion:SfCircularProgressBar Progress="80" >

@@ -9,7 +9,7 @@ documentation: ug
 
 # Filter Support
 
-Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilter.html) property.
+Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsFilter) property.
 
 ![Filter Support](Filter-Support_images/Filter-Support_img1.png)
 
@@ -18,7 +18,7 @@ Filter Support
 
 ## Adding filter support to an application 
 
-If the [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilter.html) property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
+If the [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsFilter) property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
 will be displayed in the drop-down list. If this property is set as False the matched list of items will not be 
 displayed in the drop-down list, instead all the items will be displayed.
 
@@ -40,7 +40,7 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = tr
 
 ### Events
 
-* [IsFilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilterChanged_EV.html)
+* [IsFilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html)
 
 ## Sample link
 

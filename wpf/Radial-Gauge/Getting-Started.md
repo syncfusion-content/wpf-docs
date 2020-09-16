@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with SfCircularGauge
 
-This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
 
 ## Adding gauge references
 
@@ -34,7 +34,7 @@ You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sf
 
 ## Initialize gauge
 
-Import  the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) namespace to your respective Window as follows.
+Import  the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) namespace to your respective Window as follows.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) control.
+You can initialize an empty [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) control.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.Content = sfCircularGauge;
 
 ## Adding headers
 
-You can assign a unique header to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by using the [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) property.
+You can assign a unique header to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by using the [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) property.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ this.Content = sfCircularGauge;
 
 ## Configuring scales
 
-You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements by using the following APIs:
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements by using the following APIs:
 
 * StartAngle
 
@@ -158,7 +158,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Adding ranges
 
-You can add ranges to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange.html)  property.
+You can add ranges to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularRange.html)  property.
 
 {% tabs %}
 

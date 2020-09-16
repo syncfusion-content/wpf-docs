@@ -17,7 +17,7 @@ The OpenStreetMap (OSM) is a map of the world built by a community of mappers th
 
 ### Enable an OSM
 
-You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~LayerType.html) property value as `OSM`.
+You can enable this feature by setting the [`LayerType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_LayerType) property value as `OSM`.
 
 {% highlight xaml %}
  
@@ -78,7 +78,7 @@ Markers are used to leave some message on the map.
 
 ### Customizing the Marker Template
 
-The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~MarkerTemplate.html) property.
+The default appearance of the Marker can be customized by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_MarkerTemplate) property.
 
 {% highlight xaml %}
 
@@ -159,7 +159,7 @@ You can enable this feature by defining the LayerType as `Bing`. 
 
 ### Bing Map Key
 
-The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ImageryLayer~BingMapKey.html) is provided as input to this key property. The Bing Map key can be obtained from 
+The [`BingMapKey`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) is provided as input to this key property. The Bing Map key can be obtained from 
 
 [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 

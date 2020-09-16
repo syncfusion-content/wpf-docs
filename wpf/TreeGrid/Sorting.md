@@ -130,7 +130,7 @@ this.treeGrid.ShowSortNumbers = true;
 
 You can sort the data programmatically by adding or removing the SortColumnDescription in [SfTreeGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) property.
 
-N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortColumnsChanging_EV.html) and [SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortColumnsChanged_EV.html) events are not raised when the data sorted programmatically through `SfTreeGrid.SortColumnDescriptions`.
+N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events are not raised when the data sorted programmatically through `SfTreeGrid.SortColumnDescriptions`.
 
 ### Adding sort columns
 
@@ -187,7 +187,7 @@ this.treeGrid.SortColumnDescriptions.Clear();
 ## Custom sorting
 
 SfTreeGrid allows you to sort the columns based on the custom logic. 
-The custom sorting can be applied by adding the [SortComparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortComparers.html). 
+The custom sorting can be applied by adding the [SortComparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
 
 The [SortComparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SortComparer.html) have the following properties,
 
@@ -253,7 +253,7 @@ public class CustomSortComparer : IComparer<object>, ISortDirection
 
 ####Adding custom comparer to SfTreeGrid
 
-Custom comparer can be added to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortComparers.html) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
+Custom comparer can be added to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,7 +280,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 ### SortColumnChanging event
 
-[SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortColumnsChanging_EV.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
+[SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
 
 [Action](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs~Action.html) - Gets the action triggered this event. 
 
@@ -313,4 +313,4 @@ private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChanging
 
 ### SortColumnChanged event
 
-[SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SortColumnsChanged_EV.html) event occurs when the sorting is applied to the column. [GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnChanged` event. 
+[SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the sorting is applied to the column. [GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnChanged` event. 

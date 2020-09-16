@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Printing and its customization
 
-SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "PrintingService.Print") method.
+SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
 
 ## Direct print
 
-Sfdiagram provides support to directly print the diagram pages using system default printer without opening the print preview window. To print the diagram by calling [SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "SfDiagram.PrintingService.Print") method, refer to the following code sample.
+Sfdiagram provides support to directly print the diagram pages using system default printer without opening the print preview window. To print the diagram by calling [SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "SfDiagram.PrintingService.Print") method, refer to the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ diagram.PrintingService.Print();
 
 SfDiagram provides option to display print preview to review and customize the diagram in desired format before printing. Print preview window lets users to navigate through every page, zoom in and out on a page to determine the errors if any, which need to be resolved prior to printing.
 
-Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDialog](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~ShowDialog.html "SfDiagram.PrintingService.ShowDialog") to true and calling the[SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "SfDiagram.PrintingService.Print") method.
+Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_ShowDialog) to true and calling the[SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "SfDiagram.PrintingService.Print") method.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ diagram.PrintingService.Print();
 
 ## Print settings
 
-SfDiagram provides various options to customize print preview settings using the [SfDiagram.PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~PageSettings.html "SfDiagram.PageSettings") and [PrintingService.PrintSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~PrintSettings.html "PrintingService.PrintSettings") properties.
+SfDiagram provides various options to customize print preview settings using the [SfDiagram.PageSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_PageSettings) and [PrintingService.PrintSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_PrintSettings.html "PrintingService.PrintSettings") properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ Page margin can be changed in print preview also by selecting from predefined pa
 
 ## Header and Footer
 
-SfDiagram provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting the [PageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageHeaderHeight.html), [PageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageHeaderTemplate.html), [PageFooterHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageFooterHeight.html), and [PageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageFooterTemplate.html) properties in PrintSettings.
+SfDiagram provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting the [PageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderHeight), [PageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageHeaderTemplate), [PageFooterHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterHeight), and [PageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Printing.PrintSettingsBase.html#Syncfusion_Windows_Shared_Printing_PrintSettingsBase_PageFooterTemplate) properties in PrintSettings.
 
 Steps for setting Header for printing:
 
@@ -249,7 +249,7 @@ public class CustomPrintingService : PrintingService
 
 ## Printing event
 
-The `Printing` event will notify the different state of the printing with [PrintingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingEventArgs.html).The argument will provide the print dialog and print state value of the printing. 
+The `Printing` event will notify the different state of the printing with [PrintingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingEventArgs.html).The argument will provide the print dialog and print state value of the printing. 
 
 | PrintStatus | Description |
 |---|---|

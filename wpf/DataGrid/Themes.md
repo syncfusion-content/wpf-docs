@@ -13,7 +13,7 @@ SfDataGrid provides built-in themes which can be applied using [SfSkinManager](h
 
 ## Built-in Themes
 
-The appearance of SfDataGrid control can be customized by [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
+The appearance of SfDataGrid control can be customized by [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
 
 Below example explains how to apply blend theme for SfDataGrid using `SfSkinManager` in an existing application.
 <ul>

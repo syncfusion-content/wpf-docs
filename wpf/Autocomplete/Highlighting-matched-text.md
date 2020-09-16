@@ -9,14 +9,12 @@ documentation: ug
 
 # Highlighting matched text
 
-Highlight matching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightMode.html) property. The default value of [TextHighlightMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightMode.html) is None. The matching text can be highlighted in the following two ways:
+Highlight matching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is None. The matching text can be highlighted in the following two ways:
 
 * First occurrence
 * Multiple occurrence
 
-The text highlight can be indicated with customizing style by enabling the following property.
-
-* [HighlightedTextColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~HighlightedTextColor.html): Sets the color of the highlighted text for differentiating the highlighted characters.
+The text highlight can be indicated by customizing the color of the characters using [HighlightedTextColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextColor) property.
 
 ## First occurrence
 
@@ -49,7 +47,7 @@ textBoxExt.TextHighlightMode = OccurrenceMode.FirstOccurrence;
 
 ## Multiple occurrence
 
-It highlights the matching character that presents everywhere in the suggestion list for contain case in [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html).
+It highlights the matching character that presents everywhere in the suggestion list for "Contains" case in SuggestionMode.
 
 {% tabs %}
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # TrackBall in WPF Charts (SfChart)
 
-The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
+The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
 ## Adding TrackBall to the SfChart
 
-You can create an instance [`ChartTrackBallBehavior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~Behaviors.html) collection.
+You can create an instance [`ChartTrackBallBehavior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ chart.Behaviors.Add(behavior);
 
 **Customization of TrackBall Line**
 
-SfChart allows you to customize the appearance of  trackball vertical line using the [`LineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html#) property.
+SfChart allows you to customize the appearance of  trackball vertical line using the [`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LineStyle) property.
 
 The following code snippet explains the customization of trackball line.
 
@@ -179,7 +179,7 @@ chart.Behaviors.Add(trackball);
 
 ## Symbol
 
-By default, the trackball symbol is displayed as ellipse to change the default style of the symbol using [`ChartTrackBallStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~ChartTrackBallStyle.html#) property.
+By default, the trackball symbol is displayed as ellipse to change the default style of the symbol using [`ChartTrackBallStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_ChartTrackBallStyle) property.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ N>By default the value of ShowTrackBallInfo is false.
 
 **Alignment** **of** **Axis** **Label**
 
-The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~AxisLabelAlignment.html#) property.
+The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AxisLabelAlignment) property.
 
 Auto –Axis label is aligned in Near/Far positions based on the trackball movement.
 
@@ -315,7 +315,7 @@ chart.Behaviors.Add(behavior);
 
 ### Customization of axis label
 
-You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~TrackBallLabelTemplate.html#) property in ChartAxis as in the below code snippet.
+You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackBallLabelTemplate) property in ChartAxis as in the below code snippet.
 
 {% tabs %}
 
@@ -383,7 +383,7 @@ When the trackball is hovered over, you can view the label is also displayed ove
 
 **ShowTrackballInfo**
 
-The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
+The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
 
 {% tabs %}
 
@@ -426,7 +426,7 @@ The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion
 
 **Alignment** **of** **Series** **Label**
 
-The trackball label displayed over the series can be aligned using the [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html#) properties. By default, the series label will be horizontally aligned to the left and vertically to the top.
+The trackball label displayed over the series can be aligned using the [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelVerticalAlignment) properties. By default, the series label will be horizontally aligned to the left and vertically to the top.
 
 The following code snippet explains how to align the series label to the center of the trackball.
 
@@ -468,7 +468,7 @@ chart.Behaviors.Add(behavior);
 
 ### Label Display Mode
 
-When there is a multiple series, by default, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayMode.html#) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
+When there is a multiple series, by default, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
 
 **FloatAllPoints**
 
@@ -539,7 +539,7 @@ chart.Behaviors.Add(behavior);
 
 **GroupAllPoints**
 
-[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) supports to group the multiple selected trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property of [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) as GroupAllPoints.
+[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) supports to group the multiple selected trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayModeProperty) property of [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) as GroupAllPoints.
 
 {% tabs %}
 
@@ -570,18 +570,18 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-The following screenshot illustrates the trackball label for multiple series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+The following screenshot illustrates the trackball label for multiple series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayModeProperty) property value is GroupAllPoints.
 
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping1.png)
 
-The following screenshot illustrates the trackball label for financial series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+The following screenshot illustrates the trackball label for financial series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayModeProperty) property value is GroupAllPoints.
 
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping2.png)
 
 
 ## TrackBall for Technical Indicators
 
-In trackball label, the data point value of the technical indicator also can be displayed by enabling [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) of technical indicator. It is shown in the following code example.
+In trackball label, the data point value of the technical indicator also can be displayed by enabling [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_ShowTrackballInfoProperty) of technical indicator. It is shown in the following code example.
 
 {% tabs %}
 
@@ -621,11 +621,11 @@ chart.TechnicalIndicators.Add(average);
 
 ![TrackBall for Technical Indicators support in WPF](Interactive-Features_images/indicator.png)
 
-N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) value of technical indicators is false.
+N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_ShowTrackballInfoProperty) value of technical indicators is false.
 
 ### TrackBall Label Template
 
-[`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html#) property in [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#) allows you to customize the appearance of series label in trackball.
+[`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TrackBallLabelTemplate) property in [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#) allows you to customize the appearance of series label in trackball.
 
 {% tabs %}
 
@@ -704,7 +704,7 @@ chart.Series.Add(series);
 
 **Applying** **Palette** **to** **the** **Series** **Label**
 
-Palette or interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html#) to True as shown in the following code snippet.
+Palette or interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_UseSeriesPalette) to True as shown in the following code snippet.
 
 {% tabs %}
 
@@ -744,40 +744,40 @@ The following events are available in ChartTrackBallBehavior:
 
 **PositionChanging**
 
-The [`PositionChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanging_EV.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changing from current mouse position to new mouse position. This argument contains the following information.
+The [`PositionChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changing from current mouse position to new mouse position. This argument contains the following information.
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~Cancel.html) - Gets or sets a value that indicates whether to show the trackball on new mouse pointer position.
-* [`PointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~PointInfos.html) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
+* [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangingEventArgs_Cancel) - Gets or sets a value that indicates whether to show the trackball on new mouse pointer position.
+* [`PointInfos`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangingEventArgs_PointInfos) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 
 **PositionChanged**
 
-The [`PositionChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanged_EV.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changed from current mouse position to new mouse position. This argument contains the following information.
+The [`PositionChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changed from current mouse position to new mouse position. This argument contains the following information.
 
-* [`PreviousPointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs~PreviousPointInfos.html) - Gets or sets the previous [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
-* [`CurrentPointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs~CurrentPointInfos.html) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
+* [`PreviousPointInfos`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangedEventArgs_PreviousPointInfos) - Gets or sets the previous [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
+* [`CurrentPointInfos`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangedEventArgs_CurrentPointInfos) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 
-The [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html) class contains the following properties to customize the appearance of trackball label:
+The [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html) class contains the following properties to customize the appearance of trackball label:
 
-* [`Axis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Axis.html) - Gets the associated axis in which the trackball is activated.
-* [`BaseX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BaseX.html) - Gets the x-initial coordinate of the trackball label. 
-* [`BaseY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BaseY.html) - Gets the y-initial coordinate of the trackball label.
-* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BorderBrush.html) - Gets or sets the border color of the trackball label.
-* [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Close.html) - Gets the close value of the trackball label when it is applicable.
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Foreground.html) - Gets or sets the foreground color of the trackball label.
-* [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~High.html) - Gets the high value of the trackball label when it is applicable.
-* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Interior.html) - Gets or sets the interior color of the trackball label.
-* [`Item`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Item.html) - Gets the respective underlying object of the data in which the trackball is activated.
-* [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Low.html) - Gets the low value of the trackball label when it is applicable.
-* [`LowerLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~LowerLine.html) - Gets the y-value of the lower line in indicator. 
-* [`Median`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Median.html) - Gets the median value when it is applicable.
-* [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Open.html) - Gets the open value of the trackball label when it is applicable.
-* [`PolygonPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~PolygonPoints.html) - Gets the point collection to render trackball.
-* [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Series.html) - Gets the associated series in which the trackball is activated.
-* [`SeriesValues`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~SeriesValues.html) - Gets the SeriesValues in which the trackball is activated.
-* [`SignalLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~SignalLine.html) - Gets the y-value of the signal line in indicator. 
-* [`UpperLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~UpperLine.html) - Gets the y-value of the upper line in indicator. 
-* [`ValueX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~ValueX.html) - Gets the x-value of the trackball label.
-* [`ValueY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~ValueY.html) - Gets the y-value of the trackball label.
-* [`X`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~X.html) - Gets the x-coordinate of the trackball label.
-* [`Y`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Y.html) - Gets the y-coordinate of the trackball label.
+* [`Axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Axis) - Gets the associated axis in which the trackball is activated.
+* [`BaseX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_BaseX) - Gets the x-initial coordinate of the trackball label. 
+* [`BaseY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_BaseY) - Gets the y-initial coordinate of the trackball label.
+* [`BorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_BorderBrush) - Gets or sets the border color of the trackball label.
+* [`Close`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Close) - Gets the close value of the trackball label when it is applicable.
+* [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Foreground) - Gets or sets the foreground color of the trackball label.
+* [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_High) - Gets the high value of the trackball label when it is applicable.
+* [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Interior) - Gets or sets the interior color of the trackball label.
+* [`Item`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Item) - Gets the respective underlying object of the data in which the trackball is activated.
+* [`Low`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Low) - Gets the low value of the trackball label when it is applicable.
+* [`LowerLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_LowerLine) - Gets the y-value of the lower line in indicator. 
+* [`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Median) - Gets the median value when it is applicable.
+* [`Open`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Open) - Gets the open value of the trackball label when it is applicable.
+* [`PolygonPoints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_PolygonPoints) - Gets the point collection to render trackball.
+* [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Series) - Gets the associated series in which the trackball is activated.
+* [`SeriesValues`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_SeriesValues) - Gets the SeriesValues in which the trackball is activated.
+* [`SignalLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_SignalLine) - Gets the y-value of the signal line in indicator. 
+* [`UpperLine`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_UpperLine) - Gets the y-value of the upper line in indicator. 
+* [`ValueX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_ValueX) - Gets the x-value of the trackball label.
+* [`ValueY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_ValueY) - Gets the y-value of the trackball label.
+* [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_X) - Gets the x-coordinate of the trackball label.
+* [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Y) - Gets the y-coordinate of the trackball label.
 

@@ -24,19 +24,19 @@ Property Name</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[`ShowToolTip`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowToolTip.html)'| markdownify }}</td><td>
+{{'[`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ShowToolTip)'| markdownify }}</td><td>
 Shows or hides the tooltip.</td></tr>
 <tr>
 <td>
-{{'[`ToolTipLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ToolTipLabelFormat.html)'| markdownify }}</td><td>
+{{'[`ToolTipLabelFormat`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_ToolTipLabelFormat)'| markdownify }}</td><td>
 Sets the date-time label format for the tooltip.</td></tr>
 <tr>
 <td>
-{{'[`LeftToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftToolTipTemplate.html)'| markdownify }}</td><td>
+{{'[`LeftToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftToolTipTemplate)'| markdownify }}</td><td>
 Sets the data template for the left tooltip.</td></tr>
 <tr>
 <td>
-{{'[`RightToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightToolTipTemplate.html)'| markdownify }}</td><td>
+{{'[`RightToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightToolTipTemplate)'| markdownify }}</td><td>
 Sets the data template for the right tooltip.</td></tr>
 </table>
 

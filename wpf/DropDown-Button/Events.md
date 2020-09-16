@@ -130,7 +130,7 @@ private void dropDownMenuItem_Click(object sender, RoutedEventArgs e)
 
 ### IsCheckedChanged
 
-The event occurs when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
+The event occurs when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html#Syncfusion_Windows_Tools_Controls_DropDownMenuItem_IsCheckable) property is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 

@@ -7,121 +7,171 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# Range 
+# Range in WPF RangeSlider(SfRangeSlider)
 
-The SfRangeSlider control provides support to select the range of value using two thumbs.  
+The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control provides support to select the range of value using two thumbs.  
 
 ## ShowRange  
 
 When ShowRange property is set to true, two thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
 
-{%highlight xaml%}
+{% tabs %}
 
+{% highlight XAML %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/>
+ <editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    RangeEnd="70"
+                    RangeStart="40"
+                    ShowRange="True" />
 
 {%endhighlight%}
 
-![ShowRange](Range_images/Range_img1.jpeg)
+{%highlight C#%}
 
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ShowRange = true,
+                RangeStart = 40,
+                RangeEnd = 70
+            };
 
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![ShowRange](Range_images/Range_img1.png)
 
 ## RangeStart  
 
 Gets or sets the start value of the range start.  
 
-{%highlight xaml%}
+{% tabs %}
 
+{% highlight XAML %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="10" ShowRange="True" RangeStart="10" RangeEnd="70"/>
+ <editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    RangeEnd="70"
+                    RangeStart="40"
+                    ShowRange="True" />
 
 {%endhighlight%}
 
-![RangeStart](Range_images/Range_img2.jpeg)
+{%highlight C#%}
 
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ShowRange = true,
+                RangeStart = 40,
+                RangeEnd = 70
+            };
 
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![RangeStart](Range_images/Range_img2.png)
 
 ## RangeEnd 
 
 Gets or sets the end value of the range end.  
 
-{%highlight xaml%}
+{% tabs %}
 
+{% highlight XAML %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  />
+ <editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    RangeEnd="70"
+                    RangeStart="40"
+                    ShowRange="True" />
 
 {%endhighlight%}
 
-![RangeEnd](Range_images/Range_img3.jpeg)
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ShowRange = true,
+                RangeStart = 40,
+                RangeEnd = 70
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![RangeEnd](Range_images/Range_img3.png)
 
 ## Drag Selected Range
 
-The `AllowRangeDrag` API allows the users to adjust the range in the Range Slider and drag the range without changing the start and end ranges individually. The default value for `AllowRangeDrag` is false.
+The `AllowRangeDrag` API allows the range in the Range Slider to be adjusted and the range to be dragged without changing the start and end ranges individually. The default value of `AllowRangeDrag` is false.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
-<Window x:Class="SfRangeSliderSample_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SfRangeSliderSample_WPF"
-        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <editors:SfRangeSlider Width="400" 
-                               RangeStart="0" 
-                               RangeEnd="20" 
-                               Minimum="0" 
-                               Maximum="100"
-                               ShowValueLabels="True" 
-                               AllowRangeDrag="True" 
-                               ShowRange="True" 
-                               TickFrequency="20" 
-                               HorizontalAlignment="Center" 
-                               VerticalAlignment="Center"/>
-</Window>
-		
-{% endhighlight %}  
+<editors:SfRangeSlider
+                    Width="300"
+                    AllowRangeDrag="True"
+                    Maximum="100"
+                    Minimum="0"
+                    RangeEnd="20"
+                    RangeStart="0"
+                    ShowRange="True"
+                    ShowValueLabels="True"
+                    TickFrequency="20" />
 
-{% highlight c# %}
+{%endhighlight%}
 
-using Syncfusion.Windows.Controls.Input;
-using System.Windows;
+{%highlight C#%}
 
-namespace SfRangeSliderSample_WPF
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
+            Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
             {
-                Width = 400,
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ShowRange = true,
                 RangeStart = 0,
                 RangeEnd = 20,
-                Minimum = 0,
-                Maximum = 100,
                 ShowValueLabels = true,
-                AllowRangeDrag = true,
-                ShowRange = true,
                 TickFrequency = 20,
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center
+                AllowRangeDrag = true
             };
 
-            this.Content = rangeSlider;
-        }
-    }
-}
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
 
-{% endhighlight %}
+{%endhighlight%}
 
 {% endtabs %}
 

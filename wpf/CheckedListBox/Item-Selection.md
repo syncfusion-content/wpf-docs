@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Selection
 
-In CheckListBox, selection of item can be done by single click using the property [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~IsCheckOnFirstClick.html). If it is false, then the selection is done when double click is detected. By default, the value of this property is “True”.
+In CheckListBox, selection of item can be done by single click using the property [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckOnFirstClick). If it is false, then the selection is done when double click is detected. By default, the value of this property is “True”.
 
 Here is the code for setting this property.
 

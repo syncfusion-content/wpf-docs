@@ -16,7 +16,7 @@ The digital characters in the digital gauge can be transformed by setting certai
 
 ## Scaling
 
-The value of the digital characters is scaled by altering the height and width of the digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterHeight.html) and [`CharacterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterWidth.html) property in the digital gauge.
+The value of the digital characters is scaled by altering the height and width of the digital characters. It is achieved by setting the [`CharacterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterHeight) and [`CharacterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterWidth) property in the digital gauge.
 
 ### CharacterHeight
 
@@ -66,7 +66,7 @@ The value of the digital characters is scaled by altering the height and width o
 
 ## Skewing
 
-The digital gauge also performs skew transformation for the digital characters. It can be done on both x-axis and y-axis through [`SkewAngleX`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~SkewAngleX.html) and [`SkewAngleY`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~SkewAngleY.html) properties respectively.
+The digital gauge also performs skew transformation for the digital characters. It can be done on both x-axis and y-axis through [`SkewAngleX`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_SkewAngleX) and [`SkewAngleY`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_SkewAngleY) properties respectively.
 
 ### SkewAngleX
 

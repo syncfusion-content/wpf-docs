@@ -22,7 +22,7 @@ You can check or uncheck the items by using collection or property.
 
 ### Check items using Collection
 
-We can check or uncheck the particular item by add or remove that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection. 
+We can check or uncheck the particular item by add or remove that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) collection. 
 
 {% tabs %}
 {% highlight C#%}
@@ -111,7 +111,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ### Check items using Property
 
-We can change the item’s checked state by using the [CheckListBoxItem.IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBoxItem~IsChecked.html) property bounded with any boolean property. There is limitation when using this approach. During virtualization, views will not be loaded, so it does not know the bounded value of `CheckListBoxItem.IsChecked` property. Hence, `SelectedItems` will not be in synchronized. However we can turnoff virtualization if you want both selected items to be in sync with bounded boolean property.
+We can change the item’s checked state by using the [CheckListBoxItem.IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html#Syncfusion_Windows_Tools_Controls_CheckListBoxItem_IsChecked) property bounded with any boolean property. There is limitation when using this approach. During virtualization, views will not be loaded, so it does not know the bounded value of `CheckListBoxItem.IsChecked` property. Hence, `SelectedItems` will not be in synchronized. However we can turnoff virtualization if you want both selected items to be in sync with bounded boolean property.
 
 {% tabs %}
 {% highlight C#%}
@@ -218,7 +218,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
 
 ## Check items using Mouse
 
-The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. We can check or uncheck a `GroupHeader` or `SelectAll` item to check or uncheck a group of items or all items. By default, the items are checked or unchecked by the  single mouse click. If we want to check or uncheck the items only on mouse double click use the [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~IsCheckOnFirstClick.html) property as `false`.
+The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. We can check or uncheck a `GroupHeader` or `SelectAll` item to check or uncheck a group of items or all items. By default, the items are checked or unchecked by the  single mouse click. If we want to check or uncheck the items only on mouse double click use the [IsCheckOnFirstClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckOnFirstClick) property as `false`.
 
 {% tabs %}
 {% highlight C#%}
@@ -314,7 +314,7 @@ Based on the checked state of a `GroupHeader` and `SelectAll` item, their corres
 
 ## Checked state changed notification
 
-When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~ItemChecked_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -348,7 +348,7 @@ private void CheckListBox_ItemChecked(object sender, ItemCheckedEventArgs e)
  
 ## Selection changed notification
 
-When the selected item is changed, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectionChanged_EV.html) event.The [SelectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.selectionchangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) has the following members that provides information for the `SelectionChanged` event:
+When the selected item is changed, it will be notified by using the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event.The [SelectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.selectionchangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) has the following members that provides information for the `SelectionChanged` event:
 
 * **Added items** : Gets a collection of the underlying data objects in which the selection has to be processed.
 

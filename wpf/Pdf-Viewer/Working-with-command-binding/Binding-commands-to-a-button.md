@@ -13,8 +13,8 @@ documentation: ug
 
 The PdfViewerControl provides the following set of commands to perform magnification.
 
-*   [IncreaseZoomCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~IncreaseZoomCommand.html)
-*   [DecreaseZoomCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~DecreaseZoomCommand.html)
+*   [IncreaseZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_IncreaseZoomCommand)
+*   [DecreaseZoomCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DecreaseZoomCommand)
 
 N>  
 * When executing the IncreaseZoomCommand, the 25% of zoom value has been increased from the current zoom percentage.
@@ -47,11 +47,11 @@ The following XAML code shows how to bind the DecreaseZoomCommand to a button.
 
 The below list of commands will be helpful for performing the page navigation operations.
 
-*  [FirstPageCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~FirstPageCommand.html)
-*  [LastPageCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~LastPageCommand.html)
-*  [PreviousPageCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PreviousPageCommand.html)
-*  [NextPageCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~NextPageCommand.html)
-*  [GoToPageCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GoToPageCommand.html)
+*  [FirstPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FirstPageCommand)
+*  [LastPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LastPageCommand)
+*  [PreviousPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PreviousPageCommand)
+*  [NextPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_NextPageCommand)
+*  [GoToPageCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GoToPageCommand)
 
 ### FirstPageCommand
 
@@ -150,7 +150,7 @@ N>
 
 Printing can be performed by using the Print command.
 
-The following XAML code shows how to bind the [PrintCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PrintCommand.html) to a Button.
+The following XAML code shows how to bind the [PrintCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrintCommand) to a Button.
 
 
 {% tabs %}
@@ -165,7 +165,7 @@ The following XAML code shows how to bind the [PrintCommand](https://help.syncfu
 
 ## AnnotationCommand
 
-The [AnnotationCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~AnnotationCommand.html) can be used to set the different types of annotation mode by using the AnnotationParameter in PdfViewer.
+The [AnnotationCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_AnnotationCommand) can be used to set the different types of annotation mode by using the AnnotationParameter in PdfViewer.
 
 The following list of AnnotationCommandParameter values to the AnnotationCommand are used to set the annotation mode.
 

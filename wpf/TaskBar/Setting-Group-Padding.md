@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Group Padding
 
-You can set the padding for the TaskBar Items by using the [GroupPadding](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupPaddingProperty.html) property. This is an attached property, which sets the padding for adjusting the TaskBarItems by using the [SetGroupPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~SetGroupPadding.html) method. You can enhance the appearance of the content in the taskbar items by using this property.
+You can set the padding for the TaskBar Items by using the [GroupPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GroupPaddingProperty) property. This is an attached property, which sets the padding for adjusting the TaskBarItems by using the [SetGroupPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_SetGroupPadding_System_Windows_DependencyObject_System_Windows_Thickness_) method. You can enhance the appearance of the content in the taskbar items by using this property.
 
 You can also set the value for Left, Right, Bottom and Top group padding.
 

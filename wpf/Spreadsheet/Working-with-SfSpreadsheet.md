@@ -12,7 +12,7 @@ documentation: ug
 
 ## Accessing the Worksheet
 
-A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html) property of SfSpreadsheet.
+A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html) property of SfSpreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
@@ -265,7 +265,7 @@ var value = typeof(WorkbookImpl).GetProperty("IsCellModified", bindFlags).GetVal
 
 ## Suppress message boxes in Spreadsheet
 
-In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~DisplayAlerts.html) property to `false`. 
+In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_DisplayAlerts) property to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -276,7 +276,7 @@ spreadsheet.DisplayAlerts = false;
 
 ## Suspend and resume formula calculation
 
-Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~SuspendFormulaCalculation.html) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ResumeFormulaCalculation.html) method.
+Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_SuspendFormulaCalculation) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ResumeFormulaCalculation) method.
 
 Resuming formula calculation will recalculate all the formula cells in a workbook. This would be helpful to improve the performance when you are updating the value of more number of cells by skipping the dependent cells recalculation on each cell value changed.
 
@@ -292,7 +292,7 @@ spreadsheet.SuspendFormulaCalculation();
 
 ## Close the popup programmatically 	
 
-In SfSpreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~ShowHidePopup.html) method of `SpreadsheetGrid`.
+In SfSpreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_ShowHidePopup_System_Boolean_) method of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -306,7 +306,7 @@ spreadsheet.ActiveGrid.ShowHidePopup(true);
 
 ## Identify when the active sheet is changed
 
-SfSpreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~PropertyChanged_EV.html) event of SfSpreadsheet like below.
+SfSpreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) event of SfSpreadsheet like below.
 
 {% tabs %}
 {% highlight c# %}

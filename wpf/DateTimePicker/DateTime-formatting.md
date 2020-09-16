@@ -9,12 +9,12 @@ documentation: ug
 
 # DateTime formatting in WPF DateTimePicker (DateTimeEdit)
 
-you can specify the selected datetime display format in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) by using the predefined patterns and custom patterns.
+you can specify the selected datetime display format in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) by using the predefined patterns and custom patterns.
 
 ## Predefined display patterns
 
 You can display the selected date time in the predefined patterns
-by setting the pattern value to the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property. The default value of `Pattern` property is `ShortDate`.
+by setting the pattern value to the [Pattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_Pattern) property. The default value of `Pattern` property is `ShortDate`.
 
 The `DateTimeEdit` control supports the following patterns:
 * LongDate 
@@ -53,7 +53,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Pattern Changed notification
 
-The `DateTimeEdit` notifies that the pattern is changed through the [PatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~PatternChanged_EV.html) event. You can get the old and new pattern by using the `OldValue` and `NewValue` properties in the `PatternChanged` event.
+The `DateTimeEdit` notifies that the pattern is changed through the [PatternChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html) event. You can get the old and new pattern by using the `OldValue` and `NewValue` properties in the `PatternChanged` event.
 
 {% tabs %}
 {% highlight C# %}
@@ -72,7 +72,7 @@ private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyC
 
 ## Change datetime format
 
-you can change the date time format by using the [DateTimeFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html)  property. The default value of `` property is ``.
+you can change the date time format by using the [DateTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_DateTimeFormat)  property. The default value of `` property is ``.
 
 {% tabs %}
 {% highlight XAML %}
@@ -101,7 +101,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Custom display pattern
 
-You can also set the custom pattern for displaying the datetime in the `DateTimeEdit` control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. You can enable the custom display pattern by setting the `Pattern` property value as `CustomPattern`.
+You can also set the custom pattern for displaying the datetime in the `DateTimeEdit` control by using the [CustomPattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CustomPattern) property. You can enable the custom display pattern by setting the `Pattern` property value as `CustomPattern`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -127,7 +127,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Custom pattern Changed notification
 
-The `DateTimeEdit` notifies that the custom pattern is changed through the [CustomPatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPatternChanged_EV.html) event. You can get the old and new custom pattern by using the `OldValue` and `NewValue` properties in the `CustomPatternChanged` event.
+The `DateTimeEdit` notifies that the custom pattern is changed through the [CustomPatternChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html) event. You can get the old and new custom pattern by using the `OldValue` and `NewValue` properties in the `CustomPatternChanged` event.
 
 {% tabs %}
 {% highlight C# %}
@@ -148,7 +148,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change culture 
 
-By default, the `DateTimeEdit` supports system’s current culture. You can change the culture of `DateTimeEdit` by using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CultureInfo.html) property. Based on the value of `CultureInfo` property, `DateTimeEdit` control elements localized.
+By default, the `DateTimeEdit` supports system’s current culture. You can change the culture of `DateTimeEdit` by using the [CultureInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeBase.html#Syncfusion_Windows_Shared_DateTimeBase_CultureInfo) property. Based on the value of `CultureInfo` property, `DateTimeEdit` control elements localized.
 
 ![Setting various culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-culture1.png)
 

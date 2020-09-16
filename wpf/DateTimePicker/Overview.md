@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of WPF DateTimePicker (DateTimeEdit)
 
-The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) allows you to quickly navigate and select dates using months, years, and decades of calendar. The `DateTimeEdit` comprises text box and a dropdown with calendar and clock to pick or edit a date with time. It supports data binding, null value, maximum and minimum dates, date validation, watermark, culture and much more. It also provides flexible options for displaying the date-time according to the format required, as well as many customization options to enhance its appearance.
+The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) allows you to quickly navigate and select dates using months, years, and decades of calendar. The `DateTimeEdit` comprises text box and a dropdown with calendar and clock to pick or edit a date with time. It supports data binding, null value, maximum and minimum dates, date validation, watermark, culture and much more. It also provides flexible options for displaying the date-time according to the format required, as well as many customization options to enhance its appearance.
 
 ![Overview of DateTimeEdit control](Overview_images/overview.png)
 

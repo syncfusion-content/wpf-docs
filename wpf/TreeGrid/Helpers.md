@@ -11,9 +11,9 @@ documentation: ug
 
 ## IndexResolver
 
-SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the Syncfusion.UI.Xaml.TreeGrid namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
+SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the Syncfusion.UI.Xaml.TreeGrid namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
 
-For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~GetNodeAtRowIndex.html) method.
+For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetNodeAtRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_System_Int32_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,4 +120,4 @@ Gets the tree node based on the row index.
 
 ## Dispose
 
-This method is associated with relinquishes memory and clears all references associated with treegrid. When you call this method, it releases all references for treegrid. So, the memory occupied using treegrid is reclaimed. You should call the [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Dispose.html) method to release the memory.
+This method is associated with relinquishes memory and clears all references associated with treegrid. When you call this method, it releases all references for treegrid. So, the memory occupied using treegrid is reclaimed. You should call the [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Dispose_System_Boolean_) method to release the memory.

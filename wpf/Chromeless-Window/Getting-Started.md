@@ -85,7 +85,7 @@ public partial class MainWindow : ChromelessWindow
 
 ## Title bar background
 
-You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleBarBackground.html) property of ChromelessWindow.
+You can customize the background of the title bar by setting the [TitleBarBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property of ChromelessWindow.
 
 {% tabs %}
 {% highlight XAML %}
@@ -109,7 +109,7 @@ You can customize the background of the title bar by setting the [TitleBarBackgr
 
 ## Title bar font
 
-The font of the caption in the title bar can be customized using the [TitleFontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleFontSize.html) property.
+The font of the caption in the title bar can be customized using the [TitleFontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -133,7 +133,7 @@ The font of the caption in the title bar can be customized using the [TitleFontS
 
 ## Title bar height
 
-You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleBarHeight.html) of ChromelessWindow.
+You can customize the caption height by setting the [TitleBarHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) of ChromelessWindow.
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,7 +157,7 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 
 ## Title bar text alignment
 
-The text alignment of the title can be set using the [`TitleTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleTextAlignment.html) property in the Chromeless Window. The various options of the `TitleTextAlignment` are listed below.
+The text alignment of the title can be set using the [`TitleTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleTextAlignment) property in the Chromeless Window. The various options of the `TitleTextAlignment` are listed below.
 
 * Left
 * Right
@@ -213,7 +213,7 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 
 ## Title bar icon alignment
 
-The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~IconAlignment.html) property in the Chromeless Window. Its various options are listed below.
+The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_IconAlignment) property in the Chromeless Window. Its various options are listed below.
 
 * Left
 * Right
@@ -242,7 +242,7 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
 
 ## Customizing the border of ChromelessWindow
 
-You can change the border color of the chromeless window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~ResizeBorderBrush.html) property.
+You can change the border color of the chromeless window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ResizeBorderBrush) property.
 
 {% tabs %}
 {% highlight XAML %}

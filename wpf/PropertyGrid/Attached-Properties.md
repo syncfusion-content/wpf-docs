@@ -13,7 +13,7 @@ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) cont
 
 ## Show or hide attached properties of SelectedObject
 
-We can show or hide the attached properties of SelectedObject by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs_members.html) property. Below example shows, how to hide the attached properties using `AutoGeneratingPropertyGridItem` event.
+We can show or hide the attached properties of SelectedObject by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property. Below example shows, how to hide the attached properties using `AutoGeneratingPropertyGridItem` event.
 
 {% tabs %}
 

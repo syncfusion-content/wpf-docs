@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Intermediate Values | SfRangeSlider | wpf | Syncfusion
-description: intermediate values  
+description: This section provides details about intermediate values in Syncfusion WPF RangeSlider (SfRangeSlider).  
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Intermediate Values  
+# Intermediate Values in WPF RangeSlider(SfRangeSlider)
 
-It is possible to get the intermediate value, before the value is snapped to either the tick or step value when you interact with SfRangeSlider. 
+It is possible to get an intermediate value before either the tick value or the step value is snapped when interacting with SfRangeSlider. 
 
 ### IntermediateValue 
 

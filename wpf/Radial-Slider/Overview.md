@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF SfRadialSlider Overview  
 
-The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value within the minimum and maximum range in the circular track.
+The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value within the minimum and maximum range in the circular track.
 
 ## Key features
 

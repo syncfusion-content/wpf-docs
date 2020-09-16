@@ -160,7 +160,7 @@ Selecting delete option from the context menu which is displayed when clicking r
 
 ## Track the changes in a handwritten signature
 
-You can track the changes occurred in a handwritten signature such as add, select, deselect, move, resize, and remove. The `HandwrittenSignatureChanged` event indicates that a signature is changed in the current document and the `Action` property of the `HandwrittenSignatureChangedEventArgs` provides you the type of changes made in the signature. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+You can track the changes occurred in a handwritten signature such as add, select, deselect, move, resize, and remove. The `HandwrittenSignatureChanged` event indicates that a signature is changed in the current document and the `Action` property of the `HandwrittenSignatureChangedEventArgs` provides you the type of changes made in the signature. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight C# %}
