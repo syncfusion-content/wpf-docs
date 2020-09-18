@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfRating | wpf | Syncfusion
-description: This section gives the detailed description on getting started with the SfTSfRating and its basic features.
+description: This section gives the detailed description on getting started with the SfRating and its basic features.
 platform: wpf
 control: SfRating
 documentation: ug
@@ -16,7 +16,7 @@ This section explains how to configure the [SfRating](https://help.syncfusion.co
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfrating) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Creating Application with SfRating control
 In this walk through, user will create a WPF application that contains [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
@@ -194,5 +194,5 @@ SfRating rating = new SfRating()
 
 ![SfRating Getting Started](images/gettingstarted.jpg)
 
-The complete getting started sample can be downloaded [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted480564187.zip).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/SfRating-getting-started)
 
