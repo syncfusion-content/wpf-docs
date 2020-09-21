@@ -1,100 +1,18 @@
 ---
 layout: post
-title: Context Menu in WPF  Scheduler Control | Syncfusion
+title: Context Menu Commands in WPF  Scheduler Control | Syncfusion
 description: Learn about context menu support and its customization in Syncfusion WPF Scheduler (SfScheduler) control and more details. 
 platform: wpf
 control: SfScheduler
 documentation: ug
 ---
 
-# Context Menu in WPF Scheduler (SfScheduler)
+# Context Menu Commands in WPF Scheduler (SfScheduler)
 
-Scheduler provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for Appointment, Timeslot and Monthcell in an efficient manner.
+Scheduler provides the built-in `RoutedUICommands` support for handling context menu to add , edit and deleting the appointments in scheduler. There are two types of ContextMeu.
 
-The below code example shows the context menu with command bindings.
-
-{% tabs %}
-{% highlight xaml %}
-<ContextMenu>
-</MenuItem>
-<MenuItem Command="{Binding CopyCommand}" CommandTarget="{Binding}" Header="Copy">
-</MenuItem>
-</ContextMenu>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight c# %}
-   public class CustomCommand : ICommand
-    {
-        Action _action;
-        public CustomCommand(Action action)
-        {
-            _action = action;
-        }
-
-
-
-        public event EventHandler CanExecuteChanged;
-
-
-
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-
-
-        public void Execute(object parameter)
-        {
-            _action();
-        }
-    }
-
-   /// <summary>
-    /// Schedule View Model
-    /// </summary>
-    public class ScheduleViewModel : INotifyPropertyChanged
-    {
-        #region Properties
-
-        /// <summary>
-        /// Gets the values that represents the Copy command
-        /// </summary>
-        ICommand copyCommand;
-        public ICommand CopyCommand
-        {
-            get
-            {
-                return copyCommand;
-            }
-        }
-
-        internal void Copy()
-        {
-
-        }
-        #endregion Properties
-
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ScheduleViewModel" /> class.
-        /// </summary>
-        public ScheduleViewModel()
-        {
-            copyCommand = new CustomCommand(Copy);
-        }
-
-        #endregion Constructor
-    }
-
-{% endhighlight %}
-{% endtabs %}
-
-![CustomContextMenu in WPF Scheduler](images/scheduler/Resource/CustomContextMenu.png)
+* Cell ContextMenu
+* Appointment ContextMenu
 
 ## Context menu for cell
 
@@ -124,7 +42,7 @@ You can set the context menu for the cell by using `SfScheduler.CellContextMenu`
 
 ## Context menu for appointment
 
-You can set the context menu for the appointment by using `SfScheduler.AppointmentContextMenu` property. 
+You can set the context menu for the appointment by using `SfScheduler.AppointmentContextMenu` property. You can create context menu for Appointment, Timeslot and Monthcell in an efficient manner.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler.AppointmentContextMenu>
@@ -177,3 +95,101 @@ You need to check "IsAllDay" check box manually in AppointmentEditor window, whe
 * `MenuType` – Gets the element type for which the context menu opens.
 
 * `ContextMenu` – It represents shortcut context menu which is being opened.
+
+## Adding custom commands
+
+The below code example shows the context menu with command bindings.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+        <local:ScheduleViewModel/>
+</Window.DataContext>
+<ContextMenu>
+<MenuItem Command="{Binding CopyCommand}" CommandTarget="{Binding}" Header="Copy"></MenuItem>
+<MenuItem Command="{Binding PasteCommand}" CommandTarget="{Binding}" Header="Paste"></MenuItem>
+</ContextMenu>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+   public class CustomCommand : ICommand
+    {
+        Action _action;
+        public CustomCommand(Action action)
+        {
+            _action = action;
+        }
+
+
+
+        public event EventHandler CanExecuteChanged;
+
+
+
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+
+
+        public void Execute(object parameter)
+        {
+            _action();
+        }
+    }
+
+   /// <summary>
+    /// Schedule View Model
+    /// </summary>
+    public class ScheduleViewModel : INotifyPropertyChanged
+    {
+
+        /// <summary>
+        /// Gets the values that represents the Copy command
+        /// </summary>
+        ICommand copyCommand;
+
+        /// <summary>
+        ///  Gets the values that represents the Paste command
+        /// </summary>
+        ICommand pasteCommand;
+
+        public ICommand CopyCommand
+        {
+            get
+            {
+                return copyCommand;
+            }
+        }
+
+    
+        public ICommand PasteCommand
+        {
+            get
+            {
+                return pasteCommand;
+            }
+        }
+
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ScheduleViewModel" /> class.
+        /// </summary>
+        public ScheduleViewModel()
+        {
+            copyCommand = new CustomCommand(Copy);
+            pasteCommand = new CustomCommand(Paste);
+        }
+
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![CustomContextMenu in WPF Scheduler](images/scheduler/Resource/CustomContextMenu.png)
+
+You can download Adding custom  commnnds of ContextMenu Demo for WPF from here [SchedulerCustomContextMeu](https://github.com/SyncfusionExamples/how-to-use-custom-commands-in-context-menu)
