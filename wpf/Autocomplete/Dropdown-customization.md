@@ -9,11 +9,11 @@ documentation: ug
 
 # Drop-down customization 
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the AutoComplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `AutoComplete` control.
 
 ## Customize the background 
 
-The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~DropDownBackground.html) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
+The [DropDownBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_DropDownBackground) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
 
 ## Drop-down placement 
 
-The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionBoxPlacement.html) property, defines the position of pop-up relative to the control. It contains three built-in options:
+The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionBoxPlacement) property, defines the position of pop-up relative to the control. It contains three built-in options:
 
 1. Top
 2. Bottom
@@ -51,7 +51,7 @@ The default value is bottom.
 
 ### Top
 
-The drop-down list will open at the top of the control.
+The drop-down list will open at the top of the text field.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,9 +77,10 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 ![Top](Dropdown_customization_images/Top.png)
 
 
+
 ### Bottom
 
-The drop-down list will open at the bottom of the control.
+The drop-down list will open at the bottom of the text field.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,7 +108,7 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 
 ### None
 
-The drop-down list will not open.
+The drop-down list will show the filtered items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -135,7 +136,7 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 ## Setting the maximum height 
 
-The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
+The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaxDropDownHeight) property.
 
 {% tabs %}
 
@@ -161,7 +162,7 @@ textBoxExt.MaxDropDownHeight = 500;
 
 ## Open the drop-down on focus 
 
-Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowSuggestionsOnFocus.html) property. At that time, show the suggested items with complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowSuggestionsOnFocus) property. At that time, suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -187,7 +188,7 @@ textBoxExt.ShowSuggestionsOnFocus = true;
 
 ## Open drop-down with a delay 
 
-The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~PopupDelay.html) specifies the delay after, which the suggestion pop-up should open. 
+The [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_PopupDelay) specifies the delay after, which the suggestion pop-up should open. 
 
 {% tabs %}
 {% highlight xaml %}

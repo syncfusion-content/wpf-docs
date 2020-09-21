@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfSpellChecker
 
-This section explains how to create a WPF [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker.html) and spell check the text.
+This section explains how to create a WPF [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) and spell check the text.
 
 ## Control Structure
 
@@ -34,7 +34,7 @@ You can add the `SfSpellChecker` and text editor to an application by the follow
 * Syncfusion.SpellChecker.Base
 * Syncfusion.SfSpellChecker.WPF
 
-2. Create a `TextSpellEditor` by implementing the [IEditorProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.IEditorProperties.html) interface members.
+2. Create a `TextSpellEditor` by implementing the [IEditorProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IEditorProperties.html) interface members.
 
 {% tabs %}
 {% highlight C# %}
@@ -118,7 +118,7 @@ public class TextSpellEditor : IEditorProperties {
 {% endhighlight %}
 {% endtabs %}
 
-4. Create a instance for `SfSpellChecker` and `TextSpellEditor`, then load the spell checker on button click by calling the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~PerformSpellCheckUsingDialog.html) method.
+4. Create a instance for `SfSpellChecker` and `TextSpellEditor`, then load the spell checker on button click by calling the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingDialog_Syncfusion_Windows_Controls_IEditorProperties_) method.
 
 {% tabs %}
 {% highlight C# %}
@@ -167,7 +167,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using context menu
 
-You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can enable context menu suggestion by using the [PerformSpellCheckUsingContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~PerformSpellCheckUsingContextMenu.html) method and can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining.
+You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can enable context menu suggestion by using the [PerformSpellCheckUsingContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingContextMenu_Syncfusion_Windows_Controls_IEditorProperties_) method and can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining.
 
 {% tabs %}
 {% highlight C# %}
@@ -209,9 +209,9 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 You can get the suggestion list by passing the error word in the below methods.
 
-* [GetSuggestions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~GetSuggestions.html) - To get a list of suggestion words for an error word
-* [GetPhoneticWords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~GetPhoneticWords.html) - To get a list of phonetic words for an error word
-* [GetAnagrams](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~GetAnagrams(String).html) - To get a list of anagram words for an error word
+* [GetSuggestions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetSuggestions_System_String_) - To get a list of suggestion words for an error word
+* [GetPhoneticWords](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetPhoneticWords_System_String_) - To get a list of phonetic words for an error word
+* [GetAnagrams](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetAnagrams_System_String_) - To get a list of anagram words for an error word
 
 {% tabs %}
 {% highlight C# %}
@@ -349,7 +349,7 @@ public partial class MainWindow : Window {
 
 ## SpellCheck for any language(culture) 
 
-You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Culture.html) property and add the dictionaries which contains the basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Dictionaries.html) collection.
+You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Culture) property and add the dictionaries which contains the basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_Dictionaries) collection.
 
 The following dictionary types are used for spell-checking,
 
@@ -368,7 +368,7 @@ N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellche
 
 ## Event to notify when spell check is completed
 
-By default, when the spell check is completed, it will be notified by using the message box that showing the `Spell check is completed` message. If you want to restrict that message box, you can handle the [SpellCheckCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~SpellCheckCompleted_EV.html) event and set the [SpellCheckCompletedEventArgs.ShowMessageBox](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SpellCheckCompletedEventArgs~ShowMessageBox.html) to `false`.
+By default, when the spell check is completed, it will be notified by using the message box that showing the `Spell check is completed` message. If you want to restrict that message box, you can handle the [SpellCheckCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) event and set the [SpellCheckCompletedEventArgs.ShowMessageBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SpellCheckCompletedEventArgs.html#Syncfusion_Windows_Controls_SpellCheckCompletedEventArgs_ShowMessageBox) to `false`.
 
 {% tabs %}
 {% highlight C# %}

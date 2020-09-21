@@ -13,9 +13,9 @@ The source point, target point, and segements path of a connector can be customi
 
 ## Decorator
 
-The start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or any path. You can decorate the connection end points using the [SourceDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~SourceDecorator.html) and [TargetDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~TargetDecorator.html) properties of connector. 
+The start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or any path. You can decorate the connection end points using the [SourceDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceDecorator) and [TargetDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetDecorator) properties of connector. 
 
-The [SourceDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~SourceDecoratorStyle.html) and [TargetDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~TargetDecoratorStyle.html) properties allows you to define the styles of the decorators shapes.
+The [SourceDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceDecoratorStyle) and [TargetDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetDecoratorStyle) properties allows you to define the styles of the decorators shapes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -211,7 +211,7 @@ Following table shows available decorators shapes in the diagram control,
 
 ### How to position the decorators shapes 
 
-The [SourceDecoratorPivot](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~SourceDecoratorPivot.html) and [TargetDecoratorPivot](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~TargetDecoratorPivot.html) properties allows you to customize the position of the decorators in the connector within 0-1 range. The default pivot value of source and target decorator is (1, 0.5).
+The [SourceDecoratorPivot](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SourceDecoratorPivot) and [TargetDecoratorPivot](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_TargetDecoratorPivot) properties allows you to customize the position of the decorators in the connector within 0-1 range. The default pivot value of source and target decorator is (1, 0.5).
 
 {% tabs %}
 {% highlight xaml %}
@@ -246,7 +246,7 @@ ConnectorViewModel PivotDecorator = new ConnectorViewModel()
 
 ### Segment decorators
  
-The [SegmentDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class allows you to customize the shape within the segments line. The [SegmentDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Connector~SegmentDecoratorStyle.html) property allows to customize the Style of SegmentDecorator. You can add any shape to the segments of the connector from resource dictionary. The [Length](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SegmentDecorator~Length.html) property of `SegmentDecorator` class is used to set the position of the segment decorator on the segment path. By default, the segment decorator will be added at the center of the segment, which is of length 0.5d.
+The [SegmentDecorator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html) class allows you to customize the shape within the segments line. The [SegmentDecoratorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Connector.html#Syncfusion_UI_Xaml_Diagram_Connector_SegmentDecoratorStyle) property allows to customize the Style of SegmentDecorator. You can add any shape to the segments of the connector from resource dictionary. The [Length](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SegmentDecorator.html#Syncfusion_UI_Xaml_Diagram_SegmentDecorator_Length) property of `SegmentDecorator` class is used to set the position of the segment decorator on the segment path. By default, the segment decorator will be added at the center of the segment, which is of length 0.5d.
  
 {% tabs %}
 {% highlight xaml %}
@@ -313,7 +313,7 @@ ConnectorViewModel SegmentDecorator = new ConnectorViewModel()
 
 ## Customizing corners of the connector
 
-The [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~CornerRadius.html) property allows you to create connectors with rounded corners.
+The [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_CornerRadius) property allows you to create connectors with rounded corners.
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ ConnectorViewModel cornerRadious = new ConnectorViewModel()
 
 ## Padding
 
-Padding is used to leave space between the connector’s end point and the object to where it is connected. The [SourcePadding](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourcePadding.html) and [TargetPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetPadding.html) properties of connector define the space to be left between the connection end points and the source and target nodes of connector. Default padding value of source and target point is 0d.
+Padding is used to leave space between the connector’s end point and the object to where it is connected. The [SourcePadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_SourcePadding) and [TargetPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_TargetPadding) properties of connector define the space to be left between the connection end points and the source and target nodes of connector. Default padding value of source and target point is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -410,7 +410,7 @@ For sample, refer to [Decorator](http://www.syncfusion.com/downloads/support/dir
 
 ## Bridging
 
-Line bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying connector. Bridging can be enabled or disabled either with the [Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~Constraints.html) property of Connector or with [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Serializer.Graph~Constraints.html).
+Line bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying connector. Bridging can be enabled or disabled either with the [Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_Constraints) property of Connector or with [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Serializer.Graph.html#Syncfusion_UI_Xaml_Diagram_Serializer_Graph_Constraints).
 
 {% tabs %}
 {% highlight xaml %}
@@ -456,9 +456,9 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 
 ### How to change the bridging direction and size
 
-The direction of bridge can be customized with the [BridgeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~BridgeDirection.html) property. The default direction is Top.
+The direction of bridge can be customized with the [BridgeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_BridgeDirection) property. The default direction is Top.
 
-The size of bridge in a connector can be customized with the [BridgeSpace](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~BridgeSpace.html) property. The default value is 15d.
+The size of bridge in a connector can be customized with the [BridgeSpace](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_BridgeSpace) property. The default value is 15d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -559,7 +559,7 @@ ConnectorViewModel customConnector = new ConnectorViewModel()
 
 ## Hit padding
 
-Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with connector and ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The [HitPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~HitPadding.html) property allows you to customize the vicinity area while connecting. Default value is 23d. Connector can be selected and unselected within the hit padding region.
+Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with connector and ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The [HitPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html#Syncfusion_UI_Xaml_Diagram_ConnectorViewModel_HitPadding) property allows you to customize the vicinity area while connecting. Default value is 23d. Connector can be selected and unselected within the hit padding region.
 
 {% tabs %}
 {% highlight xaml %}
@@ -584,7 +584,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ## Events for connectors
 
-* On drawing a connector, the `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, refer to [ObjectDrawn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
+* On drawing a connector, the `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, refer to [ObjectDrawn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
 
 * If any changes made in the source thumb of the connector, the `ConnectorSourceChangedEvent` will notify the DragState and Connector Item with its old and new values. 
 
@@ -592,9 +592,9 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 * On dragging the target thumb of the connector, event will notify the Cause as `UnKnown`. On drawing a connector in an Element, event will notify the Cause as `Drawing`.
 
-To explore about arguments, refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html). 
+To explore about arguments, refer to [ChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html). 
 
-* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html).
+* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html).
 
 ## Customization and validation on connector ends
 
@@ -602,7 +602,7 @@ This support is used to decide on which element connector is going dock with dia
 
 ### Connection parameter
 
-The [ConnectionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectionParameter.html) class is used to get or set the connection validation objects and their values. The list of arguments are as follows:
+The [ConnectionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionParameter.html) class is used to get or set the connection validation objects and their values. The list of arguments are as follows:
 
 | Type | Name | Type | Description |
 |---|---|---|---|

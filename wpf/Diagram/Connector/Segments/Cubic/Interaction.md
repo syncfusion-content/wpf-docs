@@ -9,7 +9,7 @@ documentation: ug
 
 # How to interact with cubic bezier segments efficiently
 
-While interacting with multiple cubic bezier segments, you can maintain their control points in same distance and angle by using [BezierSmoothness](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~BezierSmoothness.html) property of `CubicCurveSegment` class.
+While interacting with multiple cubic bezier segments, you can maintain their control points in same distance and angle by using [BezierSmoothness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html#Syncfusion_UI_Xaml_Diagram_CubicCurveSegment_BezierSmoothness) property of `CubicCurveSegment` class.
 
 | BezierSmoothness value| Description  | Output |
 |---|---|---|

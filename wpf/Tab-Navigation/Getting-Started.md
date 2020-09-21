@@ -90,7 +90,7 @@ namespace TabNavigationSample
 
 ### Adding Items using TabNavigationItem
 
-You can populate the TabNavigation control by adding objects directly to the [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the TabNavigation are wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
+You can populate the TabNavigation control by adding objects directly to the [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the TabNavigation are wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
 
 {% tabs %}
 {% highlight XAML %}

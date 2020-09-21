@@ -28,16 +28,16 @@ Scheduler supports to edit the recurrence appointment. The following window will
 
 ![WPF Scheduler editing recurrence appointment](editing_images/editing-recurrence-appointment.png)
 
-You can also handle the opening of `Open Recurring Item` window using `RecurrenceEditMode` property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) by handling `AppointmentEditorOpening` event.
+You can also handle the opening of `Open Recurring Item` window using `RecurrenceEditMode` property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) by handling `AppointmentEditorOpening` event.
 
 ### AppointmentEditorOpening event
-When user opens the appointment editor UI window to edit the appointment, then scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) event.
+When user opens the appointment editor UI window to edit the appointment, then scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
-[AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) has following members which provides information for `AppointmentEditorOpening` event.
+[AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) has following members which provides information for `AppointmentEditorOpening` event.
 
-[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Action.html) - Gets the action (add or delete or edit) for the selected appointment.
+[Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorOpeningEventArgs_Action) - Gets the action (add or delete or edit) for the selected appointment.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Appointment.html) - Gets the selected appointment details.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorOpeningEventArgs_Appointment) - Gets the selected appointment details.
 
 `RecurrenceEditMode` - Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment.
     
@@ -45,13 +45,13 @@ When user opens the appointment editor UI window to edit the appointment, then s
     * Occurrence - Edit the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
     * Series - Edit the entire series in recurrence appointment. Default window dialog will not appear.
 
-[SelectedResource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~SelectedResource.html) - Gets the selected appointment resource details if scheduler does have the resource.
+[SelectedResource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorOpeningEventArgs_SelectedResource) - Gets the selected appointment resource details if scheduler does have the resource.
 
-[StartTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~StartTime.html) - Gets the appointment start time
+[StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorOpeningEventArgs_StartTime) - Gets the appointment start time
 
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - To avoid the default appointment editor showing by enabling this property. 
 
-For example, to use custom the appointment editor window instead of default appointment editor window you can handle [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) event.
+For example, to use custom the appointment editor window instead of default appointment editor window you can handle [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,18 +73,18 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 {% endtabs %}
 
 ### AppointmentEditorClosed
-Scheduler notifies by [AppointmentEditorClosed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorClosed_EV.html) when user close the appointment editor window.
-[AppointmentEditorClosedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html) event has following members which provides information for `AppointmentEditorClosed` event.
+Scheduler notifies by [AppointmentEditorClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user close the appointment editor window.
+[AppointmentEditorClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html) event has following members which provides information for `AppointmentEditorClosed` event.
 
-[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~Action.html) - Gets the action of appointment which is add or delete or edit.
+[Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorClosedEventArgs_Action) - Gets the action of appointment which is add or delete or edit.
 
-[EditedAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~EditedAppointment.html) - Gets the edited appointment details if appointment editor closed with edit action.
+[EditedAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorClosedEventArgs_EditedAppointment) - Gets the edited appointment details if appointment editor closed with edit action.
 
-[OriginalAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~OriginalAppointment.html) - Gets the selected appointment details.
+[OriginalAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorClosedEventArgs_OriginalAppointment) - Gets the selected appointment details.
 
-[IsNew](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~IsNew.html) - Gets the appointment is new or not. 
+[IsNew](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorClosedEventArgs_IsNew) - Gets the appointment is new or not. 
 
-[Handled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~Handled.html) - To handle appointment editor changes update into the Scheduler `Appointments` collection.
+[Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEditorClosedEventArgs_Handled) - To handle appointment editor changes update into the Scheduler `Appointments` collection.
 
 For example, to handle the appointment adding for today's date, you can handle the `AppointmentEditorClosed` event.
 
@@ -104,7 +104,7 @@ private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorCl
 {% endtabs %}
 
 ## Disable appointment editing
-Scheduler supports to prevent the editing of the appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
+Scheduler supports to prevent the editing of the appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AllowEditing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -116,7 +116,7 @@ this.Schedule.AllowEditing = false;
 {% endtabs %}
 
 ## Create read only appointment
-Scheduler supports to create the read only appointment by using [ScheduleAppointment.ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReadOnly.html)) property. If you enable this property, user will not be able to perform edit, resize and drag drop operations.
+Scheduler supports to create the read only appointment by using [ScheduleAppointment.ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReadOnly)) property. If you enable this property, user will not be able to perform edit, resize and drag drop operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -152,8 +152,8 @@ Scheduler supports to delete the recurrence appointment. The following window wi
 ![WPF Scheduler editing recurrence appointment](editing_images/delete-recurrence-appointment.png)
 
 ### AppointmentDeleting event
-Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDeleting_EV.html) event when user delete the appointment.
-[AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
+Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user delete the appointment.
+[AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
 
 `Appointment` - Gets the selected appointment
 `MappedObject` - Gets the binding object details of selected appointment if schedule appointments are mapped with custom object.
@@ -169,11 +169,11 @@ Scheduler supports to resize the appointment using the option `Resize`option fro
 ![WPF Scheduler appointment resizing using contextmenu](editing_images/appointment-resizing-contextmenu.png)
 
 ### AppointmentStartResizing event
-Scheduler notifies by [AppointmentStartResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStartResizing_EV.html) event when user start to resize the appointment.
+Scheduler notifies by [AppointmentStartResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user start to resize the appointment.
 
-[AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) has following members which provides information for `AppointmentStartResizing` event.
+[AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) has following members which provides information for `AppointmentStartResizing` event.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Get the appointment details that is start to resize.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentStartResizingEventArgs_Appointment) - Get the appointment details that is start to resize.
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Setting value to true, cancels the triggered action.
 
 {% tabs %}
@@ -187,19 +187,19 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentStartRe
 {% endtabs %}
 
 ### AppointmentResizing event
-Scheduler notifies by [AppointmentResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentResizing_EV.html) event when user resizing the appointment.
+Scheduler notifies by [AppointmentResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user resizing the appointment.
 
-[AppointmentResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) has following members which provides information for `AppointmentResizing` event.
+[AppointmentResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) has following members which provides information for `AppointmentResizing` event.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Gets the resizing appointment details.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentStartResizingEventArgs_Appointment) - Gets the resizing appointment details.
 
-[From](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~From.html) - Gets the appointment start time.
+[From](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentResizingEventArgs_From) - Gets the appointment start time.
 
-[To](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~To.html) - Gets the appointment end time.
+[To](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentResizingEventArgs_To) - Gets the appointment end time.
 
-[ResizeType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~ResizeType.html) - Gets the resize type for appointment whether it is resizing from start or end.
+[ResizeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentResizingEventArgs_ResizeType) - Gets the resize type for appointment whether it is resizing from start or end.
 
-[RefreshAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~RefreshAppointment.html) - Get or Sets appointment need to be refresh or not. 
+[RefreshAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentResizingEventArgs_RefreshAppointment) - Get or Sets appointment need to be refresh or not. 
 
 {% tabs %}
 {% highlight c# %}
@@ -213,17 +213,17 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentResizin
 
 
 ### AppointmentEndResizing event
-Scheduler notifies by [AppointmentEndResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEndResizing_EV.html) event when user ends the appointment resizing.
+Scheduler notifies by [AppointmentEndResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user ends the appointment resizing.
 
-[AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) has following members which provides information for `AppointmentEndResizing` event.
+[AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) has following members which provides information for `AppointmentEndResizing` event.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~Appointment.html) - Gets the resizing appointment details.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndResizingEventArgs_Appointment) - Gets the resizing appointment details.
 
-[From](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~From.html) - Gets the appointment start time.
+[From](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndResizingEventArgs_From) - Gets the appointment start time.
 
-[To](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~To.html) - Gets the appointment end time.
+[To](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndResizingEventArgs_To) - Gets the appointment end time.
 
-[ResizeType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~ResizeType.html) - Gets the resize type for appointment whether it is resizing from start or end.
+[ResizeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndResizingEventArgs_ResizeType) - Gets the resize type for appointment whether it is resizing from start or end.
 
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Setting value to true, cancels the triggered action.
 
@@ -241,10 +241,10 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentEndResi
 Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views. 
 
 ### DragStarting event
-Scheduler notifies by [DragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DragStarting_EV.html) when start to drag the appointment.
-[DragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html) has following members which provides information for `DragStarting` event.
+Scheduler notifies by [DragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when start to drag the appointment.
+[DragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html) has following members which provides information for `DragStarting` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs~Appointment.html) - Get the selected appointment.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html#Syncfusion_UI_Xaml_Schedule_DragStartingEventArgs_Appointment) - Get the selected appointment.
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Setting the value as `true` to prevent the drag and drop operation.
 
 {% tabs %}
@@ -258,14 +258,14 @@ private void Schedule_DragStarting(object sender, DragStartingEventArgs e)
 {% endtabs %}
 
 ### AppointmentDragging event
-Scheduler notifies by [AppointmentDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDragging_EV.html) when drag the appointment.
-[AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) has following members which provides information for `AppointmentDragging` event.
+Scheduler notifies by [AppointmentDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when drag the appointment.
+[AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) has following members which provides information for `AppointmentDragging` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs~Appointment.html) - Gets the selected appointment.
-[From](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs~From.html) - Gets the selected appointment start time.
-[RefreshAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs~RefreshAppointment.html) - Gets or sets the bool value to update the appointment `StartTime` and `EndTime` while dragging the appointment or not. 
-[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs~Resources.html) - Gets the resource details if the selected appointment presenting the resource.
-[To](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs~To.html) - Gets the selected appointment end time.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_Appointment) - Gets the selected appointment.
+[From](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_From) - Gets the selected appointment start time.
+[RefreshAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_RefreshAppointment) - Gets or sets the bool value to update the appointment `StartTime` and `EndTime` while dragging the appointment or not. 
+[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_Resources) - Gets the resource details if the selected appointment presenting the resource.
+[To](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentDraggingEventArgs_To) - Gets the selected appointment end time.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,10 +278,10 @@ private void Schedule_AppointmentDragging(object sender, AppointmentDraggingEven
 {% endtabs %}
 
 ### AppointmentStartDragging event
-Scheduler notifies by [AppointmentStartDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStartDragging_EV.html) when user start to drag the appointment.
-[AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html) has following members which provides information for `AppointmentStartDragging` event.
+Scheduler notifies by [AppointmentStartDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user start to drag the appointment.
+[AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html) has following members which provides information for `AppointmentStartDragging` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs~Appointment.html) - Gets the selected appointment.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentStartDraggingEventArgs_Appointment) - Gets the selected appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -293,13 +293,13 @@ private void Schedule_AppointmentStartDragging(object sender, AppointmentStartDr
 {% endhighlight %}
 {% endtabs %}
 ### AppointmentEndDragging event
-Scheduler notifies by [AppointmentEndDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEndDragging_EV.html) when user ends to drag the appointment.
-[AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html) has following members which provides information for `AppointmentEndDragging` event.
+Scheduler notifies by [AppointmentEndDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user ends to drag the appointment.
+[AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html) has following members which provides information for `AppointmentEndDragging` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs~Appointment.html) - Gets the selected appointment.
-[From](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs~From.html) - Gets the selected appointment start time.
-[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs~Resources.html) - Gets the resource details if the selected appointment does have added in resource.
-[To](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs~To.html) - Gets the selected appointment end time.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndDraggingEventArgs_Appointment) - Gets the selected appointment.
+[From](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndDraggingEventArgs_From) - Gets the selected appointment start time.
+[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndDraggingEventArgs_Resources) - Gets the resource details if the selected appointment does have added in resource.
+[To](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html#Syncfusion_UI_Xaml_Schedule_AppointmentEndDraggingEventArgs_To) - Gets the selected appointment end time.
 
 
 {% tabs %}

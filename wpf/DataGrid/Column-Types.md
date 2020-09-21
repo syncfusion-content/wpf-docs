@@ -182,10 +182,10 @@ Use to display the IEnumerable data using {{'[SfMultiColumnDropdownControl](http
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
 Selects or deselects rows based on the check box value, which is not bound with data object.
@@ -908,7 +908,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### ParsingMode support 
 
-GridNumericColumn process int, double and decimal data types. By default, it treats all values as double internally and return the same. When you are binding dynamic property, we need to maintain the type which can be achieved by setting [GridNumericColumn.ParsingMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridNumericColumn~ParsingMode.html) property.
+GridNumericColumn process int, double and decimal data types. By default, it treats all values as double internally and return the same. When you are binding dynamic property, we need to maintain the type which can be achieved by setting [GridNumericColumn.ParsingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_ParsingMode) property.
 For example, you have dynamic object with property OrderID type int. When you edit the OrderID using GridNumericColumn, its type will be changed as double. To avoid this, you must set ParsingMode property based on the type of property you are binding to GridNumericColumn or you need to use ValueBinding converter change type according to your underlying property type.
 
 {% tabs %}
@@ -1681,11 +1681,11 @@ void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting  [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn~ItemsSourceSelector.html) property. 
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting  [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html#Syncfusion_UI_Xaml_Grid_GridComboBoxColumn_ItemsSourceSelector) property. 
 
 ### Implementing IItemsSourceSelector
 
-`ItemsSourceSelector` needs to implement [IItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html) interface which requires you to implement [GetItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector~GetItemsSource.html) method which receives the below parameters,
+`ItemsSourceSelector` needs to implement [IItemsSourceSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html) interface which requires you to implement [GetItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html#Syncfusion_UI_Xaml_Grid_IItemsSourceSelector_GetItemsSource_System_Object_System_Object_) method which receives the below parameters,
 <ul>
 <li> <b>Record</b> – data object associated with row.</li>
 <li> <b>Data Context</b>  – Data context of data grid.</li>
@@ -2243,7 +2243,7 @@ You can format the time span values by setting [Format](http://help.syncfusion.c
 
 ## GridCheckBoxSelectorColumn
 
-`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
+`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode).
 
 {% tabs %}
 {% highlight xaml %}
@@ -2271,7 +2271,7 @@ By default, check box is displayed in the header of selector column, which is us
 
 ### Text on column header
 
-You can display text instead of check box in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `False`.
+You can display text instead of check box in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html#Syncfusion_UI_Xaml_Grid_GridCheckBoxSelectorColumn_AllowCheckBoxOnHeader) property to `False`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2717,7 +2717,7 @@ TimeSpan
 GridCheckBoxSelectorColumn
 </td>
 <td>
-{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
 Selector
@@ -2760,7 +2760,7 @@ public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 
 You can change the renderer of existing column by removing the predefined cell type value from [CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602.html).
 
-For Non-Editable columns, [SupportsRenderOptimization](https://help.syncfusion.com/cr/cref_files/wp8/sfdatagrid/Syncfusion.SfGrid.WP~Syncfusion.UI.Xaml.Grid.Cells.GridCellRendererBase~SupportsRenderOptimization.html) property should be set as `false` to set focus for the control loaded as `DisplayElement` in the column when interact through mouse.
+For Non-Editable columns, [SupportsRenderOptimization](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellRendererBase.html#Syncfusion_UI_Xaml_Grid_Cells_GridCellRendererBase_SupportsRenderOptimization) property should be set as `false` to set focus for the control loaded as `DisplayElement` in the column when interact through mouse.
 
 Below code creates the new `GridComboBoxRenderer` with `ComboBoxAdv` as edit element for `GridComboBoxColumn` and replacing created renderer to `CellRenderers`.
 

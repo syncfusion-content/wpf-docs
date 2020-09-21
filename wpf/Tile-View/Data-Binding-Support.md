@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding TileViewItems in WPF TileViewControl
 
-You can add a [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the WPF [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+You can add a [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the WPF [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Data binding to Objects
 
@@ -80,6 +80,8 @@ public class ViewModel : NotificationObject {
 
 ![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+
 ## Data binding with XML
 
 You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in the `TileViewControl`. You can easily populates the items from the `XML` files using the `ItemTemplate` and `ContentTemplate` or `ItemContainerStyle` properties. 
@@ -142,9 +144,11 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 
 ![TileViewControl auto creates tileview item from XML using data binding](Data-binding_images/Data-Binding_img2.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-XML)
+
 ## Virtualization support
 
-You can enable the UI virtualization support in `TileViewControl`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [IsVirtualizing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsVirtualizing.html) property value as `true`. This feature allows users to reduce the loading time of `TileView` items regardless of items count. The default value of `IsVirtualizing` property is `false`. 
+You can enable the UI virtualization support in `TileViewControl`, which allows the users to load large sets of data without affecting loading or scrolling performance by setting the [IsVirtualizing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_IsVirtualizing) property value as `true`. This feature allows users to reduce the loading time of `TileView` items regardless of items count. The default value of `IsVirtualizing` property is `false`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -234,6 +238,8 @@ public class ViewModel : NotificationObject {
 
 ![TileViewItem header assigned by using the HeaderTemplate](Data-binding_images/header.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+
 ## TileViewItem content
 
 You can define the `TileViewItem` content using `ItemTemplate` or `TileViewItem.ItemContainerStyle` property. Otherwise, `TileViewItem` content will display the data object class name which is associated with `TileViewItem`. The `DataContext` of the `ItemTemplate` property is `TileViewItem.Content`.
@@ -266,6 +272,8 @@ You can define the `TileViewItem` content using `ItemTemplate` or `TileViewItem.
 {% endtabs %}
 
 ![TileViewItem content assigned by using the ItemTemplate](Data-binding_images/content.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
 
 ## Different UI for TileViewItem content
 
@@ -335,3 +343,5 @@ public class MyTemplateSelector : DataTemplateSelector {
 {% endtabs %}
 
 ![TileViewItem with various content UI](Data-binding_images/ItemTemplateSelector.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/ItemTemplate-Selector)

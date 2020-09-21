@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-SfDataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.WPF~Syncfusion.UI.Xaml.Grid_namespace.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
+SfDataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.Grid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 

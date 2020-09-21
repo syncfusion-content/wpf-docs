@@ -17,7 +17,7 @@ The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) c
 
 ### Foreground for Positive Value
 
-We can change a positive color for the value of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) is positive. The default color of `PositiveForeground` is `Black`.
+We can change a positive color for the value of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property and it will be applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_Value) is positive. The default color of `PositiveForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -39,7 +39,7 @@ doubleTextBox.PositiveForeground = Brushes.Blue;
 
 ### Foreground for Negative Value
 
-We can change a negative color for the value of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
+We can change a negative color for the value of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -63,7 +63,7 @@ doubleTextBox.NegativeForeground = Brushes.SpringGreen;
 
 ### Foreground for Zero Value
 
-We can change a zero color for the value of `DoubleTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
+We can change a zero color for the value of `DoubleTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `Value` is zero.
 The default color of `ZeroColor` is `Green`. 
 
 {% tabs %}
@@ -112,7 +112,7 @@ doubleTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `DoubleTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) property. The default value of `CornerRadius` property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `DoubleTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1.
 
 {% tabs %}
 {% highlight XAML %}
@@ -201,7 +201,7 @@ doubleTextBox.ToolTip = "Enter Double value";
 
 ## Theme
 
-The appearance of the `DoubleTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `DoubleTextBox` control.
+The appearance of the `DoubleTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `DoubleTextBox` control.
 
 * Blend
 * Default

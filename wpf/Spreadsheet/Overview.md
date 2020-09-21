@@ -126,7 +126,7 @@ TabStyleManager -> IsCustomTabItemContextMenuEnabled</td><td>
 Gets or sets whether Custom ContextMenu is to be Enabled</td></tr>
 <tr>
 <td>
-{{ '[ShowTabItemContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html)' | markdownify }}</td><td>
+{{ '[ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabItemContextMenu)' | markdownify }}</td><td>
 TabStyleManager -> ShowTabItemContextMenu</td><td>
 Gets or sets whether TabItemContextMenu is to be displayed</td></tr>
 <tr>

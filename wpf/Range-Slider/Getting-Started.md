@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting Started | SfRangeSlider | wpf | Syncfusion
-description: getting started 
+description: Learn here about getting started with Syncfusion WPF RangeSlider (SfRangeSlider) control and more details. 
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with WPF RangeSlider(SfRangeSlider)
 
-This section describes how to design a `SfRangeSlider` control in a WPF application and overview of its basic functionalities.
+This section describes how to design a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control in a WPF application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -20,69 +20,69 @@ This section describes how to design a `SfRangeSlider` control in a WPF applicat
 Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 
-# Creating simple application with SfRadialSlider
+## Creating a simple application with SfRangeSlider
 
-The SfRangeSlider control can be added to an application using Visual Studio.
+The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to an application using Visual Studio.
 
-You can create the WPF application with SfRangeSlider control as follows:
+Create the WPF application with [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually in code](#adding-control-manually-in-code)
 
-## Creating the project
+### Creating the project
 
-The steps to create a SfRangeSlider control by using Visual Studio in C# are as follows:
+The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control by using Visual Studio in C# are as follows:
 
 1.	Open Visual Studio.
 
 2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-## Adding control via designer
+### Adding a control via designer
 
-SfRangeSlider control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![](GettingStarted_images/img1.png)
+![Tools](GettingStarted_images/img1.png)
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"> 
-
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">     
-
-<editors:SfRangeSlider Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="0" Maximum="100"/>
-
-</Grid>
-
-</Window> 
+<editors:SfRangeSlider
+                    Width="500"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Maximum="100"
+                    Minimum="0"
+                    Value="50" />
 
 {%endhighlight%}
 
 {% endtabs %}
 
-## Adding control manually in code
+### Adding a control manually in code
 
-The following code sample shows how to create the SfRangeSlider from code-behind.
+The following code sample shows how to create the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) from code-behind.
 
 {%tabs%}
 
 {%highlight C#%}
 
-SfRangeSlider rangeSlider = new SfRangeSlider();
-
-{%endhighlight%}
-
-{%highlight VB%}
-
-Dim rangeSlider As SfRangeSlider = New SfRangeSlider
+SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 500,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Minimum = 0,
+                Maximum = 100,
+                Value = 60
+            };
 
 {%endhighlight%}
 
 {%endtabs%}
 
-![](GettingStarted_images/img2.png)
+![RangeSlider](GettingStarted_images/img2.png)

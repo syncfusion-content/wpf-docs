@@ -24,10 +24,10 @@ Searches for specific data such as particular number or text according to specif
 
 The common parameters to be passed in Find functions are,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)).
+* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html)).
 * The text to be searched.
 * The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchBy.html) enum.
-* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelFindType.html) enum.
+* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.ExcelFindType.html) enum.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.
 
@@ -163,7 +163,7 @@ Searches and replaces all the texts either in the workbook or worksheet based on
 
 The parameters to be passed in [ReplaceAll](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SearchManager~ReplaceAll.html) function is,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)) in SfSpreadsheet.
+* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorksheet.html)) in SfSpreadsheet.
 * The text to be searched.
 * The text to be replaced.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.

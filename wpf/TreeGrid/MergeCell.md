@@ -9,11 +9,11 @@ documentation: ug
 
 # Merge Cells 
 
-SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~QueryCoveredRange_EV.html) event.
+SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
 
 The `QueryCoveredRange` event occurs when each cell is arranged. When scrolling, the merged range will be added for newly added columns through this event and will also be removed for the columns that are out of view.
 
-[TreeGridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered in this event. GridQueryCoveredRangeEventArgs.OriginalSender returns the TreeGrid fired in this event using the TreeGridQueryCoveredRangeEventArgs.Range property. The adjacent cells can be merged.
+[TreeGridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered in this event. GridQueryCoveredRangeEventArgs.OriginalSender returns the TreeGrid fired in this event using the TreeGridQueryCoveredRangeEventArgs.Range property. The adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}

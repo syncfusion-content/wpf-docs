@@ -10,7 +10,7 @@ documentation: ug
 # How to Rotate the Annotation
 
 Rotation process can be applied over annotation and rotation can be controlled by annotation and its parent node or connector.
-To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
+To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
 ## Rotating the annotation
 
@@ -46,7 +46,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## How to customize the annotation rotation
 
- The `RotationReference` property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ The `RotationReference` property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight xaml %}

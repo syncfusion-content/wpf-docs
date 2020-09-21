@@ -9,7 +9,7 @@ documentation: ug
 
 # Maximizing MDI window
 
-You can maximize the `MDI` window by setting the [CanMDIMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CanMDIMaximize.html) property as `true`. The default value of `CanMDIMaximize` property is `false`.
+You can maximize the `MDI` window by setting the [CanMDIMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMaximize) property as `true`. The default value of `CanMDIMaximize` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}

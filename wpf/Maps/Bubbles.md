@@ -13,7 +13,7 @@ Bubbles in the Maps control represent the under-bound data values of the map. Bu
 
 Bubbles are included when data binding is set as mentioned above and the BubbleMarkerSetting is set. 
 
-The following properties are available in [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html):
+The following properties are available in [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html):
 
 
 
@@ -73,9 +73,9 @@ Gets or sets the border color of the bubble.</td></tr>
 
 ## Adding Bubbles to a Map
 
-To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the [`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~AutoFillColor.html) as true and set the [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~Fill.html) property. Create the Model and ViewModel as illustrated in the [`Data Binding`](https://help.syncfusion.com/wpf/maps/custom-data-binding) topic and add the following code. 
+To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the [`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) as true and set the [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill) property. Create the Model and ViewModel as illustrated in the [`Data Binding`](https://help.syncfusion.com/wpf/maps/custom-data-binding) topic and add the following code. 
 
-Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MaxSize.html), [`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~MinSize.html), and [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~ValuePath.html) properties as illustrated in the following code example.
+Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize), [`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize), and [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) properties as illustrated in the following code example.
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ Also set the [`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WP
 
 ## Customizing Bubble Symbol
 
-The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the [`BubbleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~BubbleType.html) enum property. Also, bubbles can be customized by setting the [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting~CustomTemplate.html) of the BubbleMarkerSetting.
+The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the [`BubbleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_BubbleType) enum property. Also, bubbles can be customized by setting the [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_CustomTemplate) of the BubbleMarkerSetting.
 
 <table>
 <tr>

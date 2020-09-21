@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigation support in WPF CalendarEdit
 
-This section explains navigation between day, month or year mode in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
+This section explains navigation between day, month or year mode in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
 ## Navigate to the day, month or year modes using header
 
@@ -19,7 +19,7 @@ You can easily navigate to the day, month or year modes by clicking the `Calende
 
 ### Change animation time for calendar mode navigation 
 
-If you want to change the animation time for navigate to the day, month or year mode by clicking the `CalenderEdit` header, set value to [ChangeModeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ChangeModeTime.html) property. The default value of `ChangeModeTime` property is `300`.
+If you want to change the animation time for navigate to the day, month or year mode by clicking the `CalenderEdit` header, set value to [ChangeModeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_ChangeModeTime) property. The default value of `ChangeModeTime` property is `300`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -42,7 +42,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ### Custom appearance of header
 
-You can change the background and foreground of the `CalendarEdit` header by using the [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~HeaderBackground.html) and [HeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~HeaderForeground.html) properties. The default value of `HeaderBackground` is `Lavender` and `HeaderForeground` is `Dark SlateGray`.
+You can change the background and foreground of the `CalendarEdit` header by using the [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_HeaderBackground) and [HeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_HeaderForeground) properties. The default value of `HeaderBackground` is `Lavender` and `HeaderForeground` is `Dark SlateGray`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -65,7 +65,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Navigate to previous or next month
 
-You can navigate to the previous or next month by clicking on the `Previous-Next` navigation buttons in the header. You can also navigate to the previous or next month by scrolling the mouse. If you want to change the animation time for navigate to the previous or next month, set value to [FrameMovingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~FrameMovingTime.html) property. The default value of `FrameMovingTime` property is `300`.
+You can navigate to the previous or next month by clicking on the `Previous-Next` navigation buttons in the header. You can also navigate to the previous or next month by scrolling the mouse. If you want to change the animation time for navigate to the previous or next month, set value to [FrameMovingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_FrameMovingTime) property. The default value of `FrameMovingTime` property is `300`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -89,7 +89,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Custom UI for previous and next navigation buttons
 
-You can customize the previous and next navigation buttons by using the [PreviousScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~PreviousScrollButtonTemplate.html) an [NextScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~NextScrollButtonTemplate.html) properties.
+You can customize the previous and next navigation buttons by using the [PreviousScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_PreviousScrollButtonTemplate) an [NextScrollButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_NextScrollButtonTemplate) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -138,7 +138,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Change navigation direction
 
-You can change previous or next month navigation direction to either `Horizontal` or `Vertical` by using the [MonthChangeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MonthChangeDirection.html) property. The default value of `MonthChangeDirection` property is `Horizontal`.
+You can change previous or next month navigation direction to either `Horizontal` or `Vertical` by using the [MonthChangeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_MonthChangeDirection) property. The default value of `MonthChangeDirection` property is `Horizontal`.
 
 {% tabs %}
 {% highlight XAML %}

@@ -15,7 +15,7 @@ AutoHide window is one of the state in the DockingManager. To enable Auto hidden
 
 ## Configuring window in Different Side
 
-AutoHidden window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) property according to its corresponding values in the DockingManager.
+AutoHidden window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode) property according to its corresponding values in the DockingManager.
 {% tabs %}
 
 {% highlight XAML %}
@@ -51,7 +51,7 @@ DockingManager.SetSideInDockedMode(AutoHideWindow4, DockSide.Bottom);
 
 ![Different side docking](Auto-Hide-Window_images/Auto-Hide-Window_img2.jpeg)
 
-The AutoHideWindow can be placed on a required target window through the [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html) property of the DockingManager. DockingWindow will auto hidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While auto hiding Output window, it will auto hide at left due to it's TargetWindow side.
+The AutoHideWindow can be placed on a required target window through the [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_TargetNameInDockedMode) property of the DockingManager. DockingWindow will auto hidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While auto hiding Output window, it will auto hide at left due to it's TargetWindow side.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ DockingManager.SetTargetNameInDockedMode(Properties, "SolutionExplorer");
 
 ## Side panel Customization
 
-The side panel and side panel header can be customized by applying its Background, BorderBrush, BorderThickness and SidePanelSize through [SidePanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBackground.html), [SidePanelBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderBrush.html), [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderThickness.html),  [SidePanelSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelSize.html) properties of the DockingManager. You can also refer to this [sample](https://github.com/SyncfusionExamples/How-to-customize-the-auto-hide-window-of-the-docking-manager.git) which demonstrate the side panel customization.
+The side panel and side panel header can be customized by applying its Background, BorderBrush, BorderThickness and SidePanelSize through [SidePanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelBackground), [SidePanelBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelBorderBrush), [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelBorderThickness),  [SidePanelSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SidePanelSize) properties of the DockingManager. You can also refer to this [sample](https://github.com/SyncfusionExamples/How-to-customize-the-auto-hide-window-of-the-docking-manager.git) which demonstrate the side panel customization.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ SyncDockingManager.SidePanelSize = 40;
 
 ### SideTabItem Customization
 
-The SideTabItem can be customized using the attached properties [SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemForeground.html) and [SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemBackground.html) of DockingManager. 
+The SideTabItem can be customized using the attached properties [SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideTabItemForeground) and [SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideTabItemBackground) of DockingManager. 
 
 
 {% tabs %}
@@ -186,7 +186,7 @@ DockingManager.SetSideTabItemForeground(content1, (new SolidColorBrush(Colors.Bl
 
 ## Excel-like Scrollable panel
 
-The [EnableScrollableSidePanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~EnableScrollableSidePanel.html) feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default [EnableScrollableSidePanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~EnableScrollableSidePanel.html) value is `False`, this feature can be enabled by set its value to `True`.
+The [EnableScrollableSidePanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableScrollableSidePanel) feature is used to provide scroll support when Auto Hidden tab items overflow onto the side panel.  By default [EnableScrollableSidePanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_EnableScrollableSidePanel) value is `False`, this feature can be enabled by set its value to `True`.
 
 {% tabs %}
 
@@ -300,7 +300,7 @@ dockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
 
 ### Configuring Auto Hide Animation
 
-The Animation speed while auto hiding a window can be configured by setting required time delay in [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~AnimationDelay.html) property.
+The Animation speed while auto hiding a window can be configured by setting required time delay in [AnimationDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_AnimationDelay) property.
 
 {% tabs %}
 
@@ -324,7 +324,7 @@ Docking.SetAnimationDelay(autoHideWindow1, new Duration(TimeSpan.FromMillisecond
 
 ### Making different animation for AutoHideWindow
 
-DockingManager supports three different built–in animations while auto-hiding the windows such as `Fade`, `scale` and `slide` that can be set through the property [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAnimationMode.html).
+DockingManager supports three different built–in animations while auto-hiding the windows such as `Fade`, `scale` and `slide` that can be set through the property [AutoHideAnimationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideAnimationMode).
 
 `Fade` – AutoHideWindow fades while auto hiding
 
@@ -400,7 +400,7 @@ Docking.AutoHideAnimationMode = AutoHideAnimationMode.Slide;
 
 ## Enabling and disabling the AutoHide functionality
 
-The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through [AutoHideVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideVisibility.html) property.
+The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through [AutoHideVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideVisibility) property.
 
 {% tabs %}
 
@@ -427,7 +427,7 @@ SyncDockingManager.AutoHideVisibility = false;
 ![Auto hide visibility](Auto-Hide-Window_images/Auto-Hide-Window_img9.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the DockingManager, [CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanAutoHide.html) can be used. By default its value is `true`, this functionality can disable by set its value as `false`.
+To enable or disable the AutoHide functionality for a specific child in the DockingManager, [CanAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanAutoHide) can be used. By default its value is `true`, this functionality can disable by set its value as `false`.
 
 {% tabs %}
 
@@ -457,7 +457,7 @@ DockingManager.SetCanAutoHide(ToolBox, true);
 
 ## Change AutoHide behavior like Visual Studio 2013
 
-AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by click on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its [IsVs2013SidePanelEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2013SidePanelEnable.html) property to `True` and [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsAnimationEnabledOnMouseOver.html) property to `False`. 
+AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by click on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its [IsVs2013SidePanelEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2013SidePanelEnable) property to `True` and [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver) property to `False`. 
 
 {% tabs %}
 
@@ -538,7 +538,7 @@ Grid1.Children.Add(Docking1)
 
 ## AutoHide Animation enabled on Mouse Click
 
-On mouse over the AutoHidden tab, the auto hide animation starts. To disable this functionality, set the property [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsAnimationEnabledOnMouseOver.html) as `False` that changes the auto hide tab start animation behavior. By default, its values is `True`.
+On mouse over the AutoHidden tab, the auto hide animation starts. To disable this functionality, set the property [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver) as `False` that changes the auto hide tab start animation behavior. By default, its values is `True`.
 
 
 {% tabs %}
@@ -565,7 +565,7 @@ SyncDockingManager.IsAnimationEnabledOnMouseOver = false;
 
 ## Allow or restrict dragging the AutoHide Window
 
-You can allow dragging of the auto hide window in the `DockingManager` by using the [CanDragAutoHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDragAutoHidden.html) property value as `true`. You can restrict it by setting the `CanDragAutoHidden` property value as `false`. The default value of `CanDragAutoHidden` property is `false`.
+You can allow dragging of the auto hide window in the `DockingManager` by using the [CanDragAutoHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CanDragAutoHidden) property value as `true`. You can restrict it by setting the `CanDragAutoHidden` property value as `false`. The default value of `CanDragAutoHidden` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -616,7 +616,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-ma
 
 ## Pinning / UnPinning All Window
 
-To auto hide all docked windows in the DockingManager, call [AutoHideAllDockWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~AutoHideAllDockWindow.html) method of the Docking Manager.
+To auto hide all docked windows in the DockingManager, call [AutoHideAllDockWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_AutoHideAllDockWindow) method of the Docking Manager.
 
 {% tabs %}
 
@@ -634,7 +634,7 @@ DockingManager.AutoHideAllDockWindow();
 
 {% endtabs %}
 
-To unpin all auto hide windows in the DockingManager, call [UnPinAllAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UnPinAllAutoHide.html) method of the Docking Manager.
+To unpin all auto hide windows in the DockingManager, call [UnPinAllAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UnPinAllAutoHide) method of the Docking Manager.
 
 {% tabs %}
 

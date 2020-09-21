@@ -28,9 +28,9 @@ N> After selecting the pen tool click and drag on the image to draw.
 
 The following properties of the added shape can be customized:
 
-* [`Fill`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Fill.html)
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Stroke.html)
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~StrokeWidth.html)
+* [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Fill)
+* [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Stroke)
+* [`StrokeWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_StrokeWidth)
 
 By selecting the shape icon in the toolbar, a sub toolbar will be generated below the main toolbar to provide the customizing options for the shapes.
 
@@ -60,8 +60,8 @@ To delete the added shape, select the shape, and then use delete key from the ke
 
 Shapes can be added into an image using the AddShape method. This method takes the following two parameters:
 
-* [`ShapeType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.Enums.ShapeType.html) - You can choose the required shape type. The available shape types are rectangle, circle, and arrow.
-* [`PenSettings`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings.html) – Customizes the added shapes.
+* [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.Enums.ShapeType.html) - You can choose the required shape type. The available shape types are rectangle, circle, and arrow.
+* [`PenSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html) – Customizes the added shapes.
 
 {% tabs %} 
 
@@ -103,12 +103,12 @@ editor.Delete();
 
 The added shapes can be customized using the following properties in pen settings:
 
-* [`Fill`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Fill.html) - Fills the selected shape with this color.
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Stroke.html) – Applies this stroke to the selected shape.
-* [`Opacity`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Opacity.html) – Applies opacity to both stroke and fill of the shape.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~StrokeWidth.html) – Applies the specified width to the stroke of a shape.
-* [`Bounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~Bounds.html) – Rect used to position the shape.
-* [`IsResizable`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings~IsResizable.html) - To control the resizing of the shape.
+* [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Fill) - Fills the selected shape with this color.
+* [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Stroke) – Applies this stroke to the selected shape.
+* [`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Opacity) – Applies opacity to both stroke and fill of the shape.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_StrokeWidth) – Applies the specified width to the stroke of a shape.
+* [`Bounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_Bounds) – Rect used to position the shape.
+* [`IsResizable`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_IsResizable) - To control the resizing of the shape.
 
 N> Values of the bounds rect will be in percentage. For example (25,25,25,25) will take the position of 25 percent from the left and top.
 
@@ -172,8 +172,8 @@ By default, both shapes and text are resizable. You can also control the resizab
 
 Shapes and Text supports the following two events:
 
-* [`ItemSelected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ItemSelected_EV.html)
-* [`ItemUnselected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ItemUnselected_EV.html)
+* [`ItemSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
+* [`ItemUnselected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html)
 
 ### ItemSelected
 

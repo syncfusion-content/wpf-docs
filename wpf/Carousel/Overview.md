@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Carousel Overview
 
-The [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel.html) is a circular conveyor used on which objects are displayed and rotated. The `Carousel` control provides a `3D` interface for displaying objects with interactive navigation, Data Binding Path, ItemsPerPage, Scaling and Skewing.
+The [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) is a circular conveyor used on which objects are displayed and rotated. The `Carousel` control provides a `3D` interface for displaying objects with interactive navigation, Data Binding Path, ItemsPerPage, Scaling and Skewing.
 
 ## Structure of the Carousel Control
 

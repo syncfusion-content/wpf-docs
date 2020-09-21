@@ -13,7 +13,7 @@ Data templates can be customized for items and headers. This section explains ho
 
 ## Item Template 
 
-You can customize how a business object is displayed using ItemTemplate of [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html). The following example shows the usage of ItemTemplate.
+You can customize how a business object is displayed using ItemTemplate of [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html). The following example shows the usage of ItemTemplate.
 
 {% highlight xaml %}
 
@@ -115,7 +115,7 @@ CardView control with Header Template
 
 ## EditItem Template
 
-You can edit the values loaded in [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html) using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~EditItemTemplate.html). This is illustrated in the following example.
+You can edit the values loaded in [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). This is illustrated in the following example.
 
 1. Define a data template for the content as follows.
 

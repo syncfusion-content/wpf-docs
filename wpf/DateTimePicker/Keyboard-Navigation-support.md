@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation in WPF DateTimeEdit control
 
-In this section, you will see available keyboard shortcuts key to navigate or change the datetime in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html).
+In this section, you will see available keyboard shortcuts key to navigate or change the datetime in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html).
 
 ## Open and close the DateTime selector popup using short-cut keys
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Navigation support in WPF Carousel
 
-You can navigate to the carousel items by using the mouse or key navigation in the [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel.html) control. 
+You can navigate to the carousel items by using the mouse or key navigation in the [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control. 
 
 ## Navigate carousel item using keyboard navigation
 
@@ -131,7 +131,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Looping items
 
-Carousel has looping functionality, it allows users to loop items after reaching the last item. In the `Standard` visual mode, the carousal items can be scrolled on the circular manner. But, on the `CustomPath` visual mode, the carousal items scrolled in linear manner and first or last item hidden from the view. If you want to bring the first or last item into view in circular manner, use [EnableLooping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableLooping.html) property value as `true`. The default value of `EnableLooping` property is `false`.
+Carousel has looping functionality, it allows users to loop items after reaching the last item. In the `Standard` visual mode, the carousal items can be scrolled on the circular manner. But, on the `CustomPath` visual mode, the carousal items scrolled in linear manner and first or last item hidden from the view. If you want to bring the first or last item into view in circular manner, use [EnableLooping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableLooping) property value as `true`. The default value of `EnableLooping` property is `false`.
 
 {% tabs %}
 {% highlight C# %}

@@ -757,7 +757,7 @@ N> When you make any change in one [DetailsViewDataGrid](http://help.syncfusion.
 
 Here, `SalesID` column is sorted in all DetailsViewDataGrid at the same level.
 
-N> [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) , [FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html), [FooterRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html), [FooterColumnCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html), [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) properties are not supported while using Master Details view.
+N> [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) , [FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html), [FooterRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html), [FooterColumnCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html), [FrozenColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount) properties are not supported while using Master Details view.
 
 ## Defining columns for DetailsViewDataGrid
 
@@ -896,7 +896,7 @@ Now, you can add the custom column to `Columns` collection of [ViewDefinition.Da
 
 ## Handling events for DetailsViewDataGrid
 
-You can handle [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) events by wiring events to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) where sender is `ViewDefinition.DataGrid`. In another way, you can handle `DetailsViewDataGrid` events also through `ParentDataGrid` events by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NotifyEventsToParentDataGrid.html) property of `ViewDefinition.DataGrid`. For more information refer [Listen DetailsViewDataGrid event from ParentDataGrid event handler](https://help.syncfusion.com/wpf/sfdatagrid/master-details-view#listen-detailsviewdatagrid-event-in-parentdatagrid-event-handler) section. 
+You can handle [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) events by wiring events to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) where sender is `ViewDefinition.DataGrid`. In another way, you can handle `DetailsViewDataGrid` events also through `ParentDataGrid` events by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NotifyEventsToParentDataGrid) property of `ViewDefinition.DataGrid`. For more information refer [Listen DetailsViewDataGrid event from ParentDataGrid event handler](https://help.syncfusion.com/wpf/sfdatagrid/master-details-view#listen-detailsviewdatagrid-event-in-parentdatagrid-event-handler) section. 
 
 ### When AutoGenerateRelations is false
 
@@ -1033,7 +1033,7 @@ void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,
 
 ### Listen DetailsViewDataGrid event in ParentDataGrid event handler
 
-You can listen `DetailsViewDataGrid` events in `ParentDataGrid` event handlers itself by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NotifyEventsToParentDataGrid.html) property of `ViewDefinition.DataGrid`. So, you don’t have to listen events for each level as discussed above.
+You can listen `DetailsViewDataGrid` events in `ParentDataGrid` event handlers itself by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NotifyEventsToParentDataGrid) property of `ViewDefinition.DataGrid`. So, you don’t have to listen events for each level as discussed above.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1070,7 +1070,7 @@ private void Datagrid_RowValidating(object sender, RowValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the `SourceDataGrid` in `ParentDataGrid` events using [GetSourceDataGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers.GridHelper~GetSourceDataGrid.html) helper method.
+You can get the `SourceDataGrid` in `ParentDataGrid` events using [GetSourceDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.GridHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_GridHelper_GetSourceDataGrid_Syncfusion_UI_Xaml_Grid_DetailsViewDataGrid_) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1079,11 +1079,11 @@ var sourceDataGrid = (e.OriginalSender as DetailsViewDataGrid).GetSourceDataGrid
 {% endhighlight %}
 {% endtabs %}
 
-Refer [here](https://help.syncfusion.com/wpf/sfdatagrid/selection#getting-the-parent-of-detailsviewdatagrid) for get the `ParentDataGrid` using [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetParentDataGrid.html) helper method.
+Refer [here](https://help.syncfusion.com/wpf/sfdatagrid/selection#getting-the-parent-of-detailsviewdatagrid) for get the `ParentDataGrid` using [GetParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_SelectionHelper_GetParentDataGrid_Syncfusion_UI_Xaml_Grid_SfDataGrid_) helper method.
 
 ### Binding DetailsViewDataGrid event to command in ViewModel
 
-You can bind the `DetailsViewDataGrid`  events using commands by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NotifyEventsToParentDataGrid.html) property of  `ViewDefinition.DataGrid`. Using this property, listen the `DetailsViewDataGrid` events in `ParentDataGrid` event handler.
+You can bind the `DetailsViewDataGrid`  events using commands by setting [NotifyEventsToParentDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NotifyEventsToParentDataGrid) property of  `ViewDefinition.DataGrid`. Using this property, listen the `DetailsViewDataGrid` events in `ParentDataGrid` event handler.
 Bind the events using commands in `ViewModel` as like below.
 
 {% tabs %}
@@ -1736,7 +1736,7 @@ N> For customizing appearance for second level nested grid, you can refer [here]
 
 ### Customize ExpanderColumn width 
 
-You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpanderColumnWidth.html) property as like below.
+You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpanderColumnWidth) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1866,7 +1866,7 @@ You can download the sample from the following link: [Sample](https://github.com
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
 
-`ItemsSource` for DetailsViewDataGrid is populated from the `DataContext` of parent row based on [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). DetailsViewDataGrid doesn’t update its `ItemsSource` at runtime based on the property change, which is mapped the DetailsViewDataGrid `ItemsSource`. You can update the `ItemsSource` on the property change by setting [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) as `AllowChildViewUpdate`. 
+`ItemsSource` for DetailsViewDataGrid is populated from the `DataContext` of parent row based on [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.ViewDefinition.html#Syncfusion_UI_Xaml_Grid_ViewDefinition_RelationalColumn). DetailsViewDataGrid doesn’t update its `ItemsSource` at runtime based on the property change, which is mapped the DetailsViewDataGrid `ItemsSource`. You can update the `ItemsSource` on the property change by setting [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) as `AllowChildViewUpdate`. 
 
 {% tabs %}
 {% highlight xaml %}

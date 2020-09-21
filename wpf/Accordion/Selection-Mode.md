@@ -9,7 +9,7 @@ documentation: ug
 
 # Expansion Modes
 
-`SfAccordion` provides a property [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionMode.html) that helps to decide the number of items that can be expanded or selected at a time. The values of [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionMode.html) are
+`SfAccordion` provides a property [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) that helps to decide the number of items that can be expanded or selected at a time. The values of [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) are
 
 1. One
 2. OneOrMore
@@ -40,7 +40,7 @@ The default selection mode is One.
 * More than one item can be in expanded/selected state.
 * Allows to unselect all the item. 
 
-Here is an example showing OneOrMore [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~SelectionMode.html):
+Here is an example showing OneOrMore [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode):
 
 {% tabs %}
 
