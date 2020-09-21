@@ -21,9 +21,9 @@ ObservableCollection<object> resources = new ObservableCollection<object>();
 // Adding schedule resource in scheduler resource collection.
 ResourceCollection = new ObservableCollection<object>()
 {
-new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "0", Foreground = new SolidColorBrush(Colors.White) },
-new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1" },
-new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "2" },
+new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000", Foreground = new SolidColorBrush(Colors.White) },
+new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1001" },
+new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "1002" },
 };
 
 // Adding schedule resource collection to schedule resources of SfSchedule.
@@ -40,15 +40,13 @@ You can handle the visibility of resource using the `ResourceGroupType` property
 
 * Date
 
-* None
-
 ### Resource
 
 It groups the number of dates under each resource and is applicable only on the scheduler views such as day, week, work week views.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource" Grid.Row="1"/>
+<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource"/>
 {% endhighlight %}
 {% highlight c# %}
 schedule.ViewType = SchedulerViewType.Week;
@@ -63,7 +61,7 @@ It groups the number of resources under each date and is applicable only on the 
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Date" Grid.Row="1"/>
+<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Date"/>
 {% endhighlight %}
 {% highlight c# %}
 schedule.ViewType = SchedulerViewType.Week;
@@ -72,11 +70,6 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 {% endtabs %}
 
 ![WPF scheduler Grouping resource by date ](Resource_Images/Resource_Date.png)
-
-
-### None
-The resource not displays.
-
 
 ### Resource sharing 
 Multiple resources can share the same events, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
@@ -90,7 +83,7 @@ var appointments = new ScheduleAppointment()
 StartTime = DateTime.Now.AddMinutes(20),
 EndTime = DateTime.Now.AddHours(2),
 Subject = "General Meeting",
-ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id , (ResourceCollection[1] as SchedulerResource).Id}
+ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "1003" }
 };
 
 scheduleAppointmentCollection.Add(appointments);
@@ -107,21 +100,16 @@ You can associate `Resources` to the appointments by adding `Id` of resource in 
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for scheduler appointment collection
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in scheduler appointment collection 
-var appointments = new ScheduleAppointment()
+var ResourceCollection = new ObservableCollection<object>()
 {
-StartTime = DateTime.Now.AddMinutes(20),
-EndTime = DateTime.Now.AddHours(2),
-Subject = "General Meeting",
-ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id}
+new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000", Foreground = new SolidColorBrush(Colors.White) },
+new SchedulerResource() { Name = " Kinsley Elena", Background = new SolidColorBrush(Colors.Yellow), Id = "1001" },
+new SchedulerResource() { Name = " Adeline Ruby", Background = new SolidColorBrush(Colors.Blue), Id = "1002" },
 };
 
+//Add Resource Collection to Scheduler
+<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource"  ResourceCollection="{Binding ResourceCollection}"/>
 
-scheduleAppointmentCollection.Add(scheduleAppointment1);
-//Adding schedule appointment collection to ItemsSource of SfScheduler
-scheduler.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,10 +119,10 @@ You can create a custom class `CustomResourceClass` with mandatory fields `Name`
 
 {% tabs %}
 {% highlight c# %}
-public class CustomResourceClass : INotifyPropertyChanged
+     public class Employee: INotifyPropertyChanged
     {
-        private string subject;
-        private int id;
+        private string imageSource;
+        private string id;
         private Brush background;
         private Brush foreground;
 
@@ -150,24 +138,26 @@ public class CustomResourceClass : INotifyPropertyChanged
             }
         }
 
-
-        public string Subject
+        /// <summary>
+        /// Gets or sets the resource image.
+        /// </summary>
+        public string ImageSource
         {
-            get { return subject; }
+            get { return imageSource; }
             set
             {
-                subject = value;
-                this.RaisePropertyChanged("Subject");
+                imageSource = value;
+                this.RaisePropertyChanged("ImageSource");
             }
         }
 
-        public int Id
+        public string Id
         {
             get { return id; }
             set
             {
                 id = value;
-                this.RaisePropertyChanged("Code");
+                this.RaisePropertyChanged("Id");
             }
         }
 
@@ -199,6 +189,7 @@ public class CustomResourceClass : INotifyPropertyChanged
         }
     }
 
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,19 +203,17 @@ You can add resources for `CustomResourceClass` that can be assigned to appointm
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for scheduler resource collection.
-ObservableCollection<object> resources = new ObservableCollection<object>();
-
-// Adding custom resource in scheduler resource collection.
-ResourceCollection = new ObservableCollection<object>()
+// Creating and Adding custom resource in scheduler resource collection.
+var ResourceCollection = new ObservableCollection<object>()
 {
-new CustomResourceClass() { Name = "Peter", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "0", ForegroundColor = new SolidColorBrush(Colors.White) },
-new CustomResourceClass() { Name = "Natasha", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1" },
-new CustomResourceClass() { Name = "James William", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "2" },
+new Employee () { Name = "Sophia", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
+new Employee () { Name = " Kinsley Elena", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" },
+new Employee () { Name = " Adeline Ruby", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" },
 };
 
-// Adding schedule resource collection to schedule resources of SfSchedule.
+//Adding schedule resource collection to schedule resources of SfSchedule.
 schedule.ResourceCollection = ResourceCollection;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -247,6 +236,7 @@ You can map the properties of `CustomResourceClass` class with our `SfScheduler`
 
 {% tabs %}
 {% highlight xaml %}
+
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.ResourceMapping>
 <Schedule:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
@@ -283,7 +273,7 @@ You can customize the number of visible resources in the current view using the 
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.DaysViewSettings>
-<Schedule:DaysViewSettings VisibleResourceCount="2"/>
+<Schedule:DaysViewSettings VisibleResourceCount="3"/>
 </Schedule:SfScheduler.DaysViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
@@ -299,7 +289,7 @@ schedule.DaysViewSettings.VisibleResourceCount = 3;
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.TimelineViewSettings>
-<Schedule:TimelineViewSettings VisibleResourceCount="2"/>
+<Schedule:TimelineViewSettings VisibleResourceCount="3"/>
 </Schedule:SfScheduler.TimelineViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
@@ -315,17 +305,16 @@ Special time region can be created based on the resources in day , week , work w
 {% tabs %}
 {% highlight c# %}
 
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-var appointments = new ScheduleAppointment()
+this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-StartTime = DateTime.Now.AddMinutes(20),
-EndTime = DateTime.Now.AddHours(2),
-Subject = "SUBJECT",
-ResourceIdCollection = new ObservableCollection<object>() { (ResourceCollection[0] as SchedulerResource).Id , (ResourceCollection[1] as SchedulerResource).Id}
-};
-
-scheduleAppointmentCollection.Add(appointments);
-this.schedule.ItemsSource = scheduleAppointmentCollection;
+StartTime = new System.DateTime(2020, 09, 15, 13, 0, 0),
+EndTime = new System.DateTime(2020, 09, 08, 15, 0, 0),
+Text = "Lunch",
+CanEdit = false,
+Background = Brushes.Black,
+Foreground = Brushes.White,
+ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003"}
+});
 
 {% endhighlight %}
 {% endtabs %}
@@ -338,29 +327,37 @@ Resource UI customization using a template and template selectors support.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler.ResourceHeaderTemplate>
-<DataTemplate>
+
+<Window.Resources>
+<DataTemplate  x:Key="DayViewResourceTemplate">
 <Grid Background="Transparent">
-<Border BorderThickness="0.3" BorderBrush="Gray" >
+<Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
 <StackPanel VerticalAlignment="Center" Orientation="Vertical">
 <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
 <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
-<Image HorizontalAlignment="Center" VerticalAlignment="Center"
-Width="55"
-Height="55"
-Source="{Binding ImageSource}" />
+<Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+Height="55" Source="{Binding ImageSource}" />
 </Border>
 </Border>
-<TextBlock
-HorizontalAlignment="Center"
-VerticalAlignment="Center"
-FontSize="15"
-Foreground="Black"
-Text="{Binding Name}" />
+<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+Foreground="Black"  Text="{Binding Name}" />
 </StackPanel>
 </Border>
 </Grid>
 </DataTemplate>
-</syncfusion:SfScheduler.ResourceHeaderTemplate>
+</Window.Resources>
+
+//used to find Image Source and Name properties
+<Window.DataContext>
+<local:Employee />
+</Window.DataContext>
+
+
+<Grid Name="grid">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
+ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
+</syncfusion:SfScheduler>
+</Grid>
+
 {% endhighlight %}
 {% endtabs %}
