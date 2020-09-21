@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Editable Support | wpf | Syncfusion
-description: editable support in comboboxadv 
+description: Learn about Editable Support support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# IsEditable
+# IsEditable Property in ComboBox
 
 It allows user to edit the text in the ComboBoxAdv.
 
@@ -28,7 +28,7 @@ Boolean</td><td>
 NA</td></tr>
 </table>
 
-#### Adding IsEditable property to an application 
+## Adding IsEditable property to an application 
 
 IsEditable property can be added directly to an application in the following way: 
 
@@ -46,6 +46,6 @@ comboBox.IsEditable = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAdv_images/ComboBoxAdv_img12.png)
+![Adding IsEditable property to an application](ComboBoxAdv_images/ComboBoxAdv_img12.png)
 
 N> It can be applied when `AllowMultiSelect` property is not assigned as true.

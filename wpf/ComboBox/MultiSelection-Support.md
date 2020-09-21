@@ -1,17 +1,17 @@
 ---
 layout: post
 title: MultiSelection Support | wpf | Syncfusion
-description: multiselection support in comboboxadv 
+description: Learn about MultiSelection support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Multiple Selections
+# Multiple Selections in ComboBox
 
 If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect property will be helpful to do this. It allows you to select multiple items in the drop down list. The selected items will be displayed in ascending order as shown in the drop down list. When AllowMultiSelect property is true, the SelectedItems property exposes the items that are selected in the drop down list.
 
-#### Properties
+## Properties
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ ObservableCollection&lt;object&gt;</td><td>
 NA</td></tr>
 </table>
 
-#### Adding multiple selections to an application 
+## Adding multiple selections to an application 
 
 `AllowMultiSelect` property can be added directly to an application using the following code snippet.
 
@@ -56,4 +56,4 @@ comboBox.AllowMultiSelect = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAdv_images/ComboBoxAdv_img9.png)
+![Adding multiple selections to an application](ComboBoxAdv_images/ComboBoxAdv_img9.png)
