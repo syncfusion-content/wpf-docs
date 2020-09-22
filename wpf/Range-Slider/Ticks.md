@@ -51,9 +51,9 @@ The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sy
 
 N> When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
-## Minor Tick Frequency
+## MinorTickFrequency
 
-The MinorTickFrequency property is used to define the number of minor ticks along the track, based on major ticks in track.
+The `MinorTickFrequency` property determines the number of minor ticks on the track between the major ticks. 
 
 {% tabs %}
 

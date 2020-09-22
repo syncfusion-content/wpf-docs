@@ -36,12 +36,12 @@ The Thumb tooltip displays the current value where the Thumb stands.
 
 ![Precision](Thumb-ToolTip_images/Thumb-ToolTip_img2.png)
 
-N> ThumbToolTipPrecision property is only applicable for ToolTipFormat value is N. 
+N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is N.
 
 
-## Thumb ToolTip Format
+## Thumb ToolTipFormat
 
-The ToolTipFormat property determines the format specifier by which the display ToolTip value has to be formatted.
+The `ToolTipFormat` property specifies the format specifier by which to format the ToolTip display value. 
 
 
 {% tabs %}
@@ -79,7 +79,7 @@ The ToolTipFormat property determines the format specifier by which the display 
 ![Format](Thumb-ToolTip_images/ToolTip-Format.png)
 
 
-N> Default value of ToolTipFormat is N.
+N> Default value of `ToolTipFormat` is N.
 
 
 ## Thumb ToolTip Position 
