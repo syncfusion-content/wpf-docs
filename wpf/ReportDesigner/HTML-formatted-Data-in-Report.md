@@ -1,31 +1,31 @@
 ---
 layout: post
 title: HTML formatted data in Reports | ReportDesigner | wpf | Syncfusion
-description: HTML formatted data
+description: Learn how to implement HTML formatted data in a report and import HTML text in the Syncfusion Report Designer control.
 platform: wpf
 control: Report Designer
 documentation: ug
 ---
 
-## HTML Formatted Data with Report
+# HTML Formatted Data with Report
 
 Text box can be used to show the HTML formatted data with the report viewer that is retrieved from the data source. HTML text can be in form of simple or complex expressions. You have to create the placeholder in textbox and show the HTML formatted data from the dataset. The following steps are used to import the HTML text in the report:
 
 1. Draw a textbox report item. Right-click the text box and select “Create Placeholder”.
     
-    ![](HTML-formatted-Data-in-Report_images/textbox_image.png)
+    ![Create Placeholder from text box](HTML-formatted-Data-in-Report_images/textbox_image.png)
 
 2.	Select the markup type as “HTML – Interpret HTML tags as styles” from the “Placeholder Properties” dialog box.
     
-    ![](HTML-formatted-Data-in-Report_images/placeholder_propety_dialog.png)
+    ![Select markup type as HTML](HTML-formatted-Data-in-Report_images/placeholder_propety_dialog.png)
 
 3.	Now, select the dataset field which contains the HTML text or you can provide the HTML text as expression.
     
-    ![](HTML-formatted-Data-in-Report_images/HTML_fomatted_data.png)
+    ![select dataset field containing HTML text](HTML-formatted-Data-in-Report_images/HTML_fomatted_data.png)
 
 4.	Then, click ok. The HTML formatted data will be shown as below in the report designer preview and report viewer.
     
-    ![](HTML-formatted-Data-in-Report_images/HTML_Formatted_Data_Output.png)
+    ![HTML formatted data shown in report designer preview](HTML-formatted-Data-in-Report_images/HTML_Formatted_Data_Output.png)
 
 ## Supported HTML Tags
 
