@@ -263,7 +263,7 @@ Modify the appearance of the ticks by using the following properties:
 
 ### TickStroke
 
-Using the 'TickStroke' property to change the color of major ticks. 
+Use the 'TickStroke' property, to change the color of major ticks. 
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ Using the 'TickStroke' property to change the color of major ticks.
 
 ### ActiveTickStroke
 
-Using the 'ActiveTickStroke' property to change the active major ticks color. 
+Use the 'ActiveTickStroke' property, to change the active major ticks color. 
 
 {% tabs %}
 
@@ -359,7 +359,7 @@ Using the 'ActiveTickStroke' property to change the active major ticks color.
 
 ### TickLength
 
-Using the 'TickLength' property to change the height of the major ticks. 
+Use the 'TickLength' property, to change the height of the major ticks. 
 
 {% tabs %}
 
@@ -409,7 +409,7 @@ Using the 'TickLength' property to change the height of the major ticks.
 
 ### TickStrokeThickness
 
-Using the 'TickStrokeThickness' property to change the thickness of the major ticks. 
+Use the 'TickStrokeThickness' property, to change the thickness of the major ticks. 
 
 {% tabs %}
 
@@ -461,7 +461,7 @@ Using the 'TickStrokeThickness' property to change the thickness of the major ti
 
 ### MinorTickStroke
 
-Using the 'MinorTickStroke' property to change the minor ticks color. 
+Use the 'MinorTickStroke' property, to change the minor ticks color. 
 
 {% tabs %}
 
@@ -510,7 +510,7 @@ Using the 'MinorTickStroke' property to change the minor ticks color.
 
 ### ActiveMinorTickStroke
 
-Using the 'ActiveMinorTickStroke' property to change the color of the active minor ticks. 
+Use the 'ActiveMinorTickStroke' property, to change the color of the active minor ticks. 
 
 {% tabs %}
 
@@ -559,7 +559,7 @@ Using the 'ActiveMinorTickStroke' property to change the color of the active min
 
 ### MinorTickLength
 
-Using the 'MinorTickLength' property to change the height of the minor ticks. 
+Use the 'MinorTickLength' property, to change the height of the minor ticks. 
 
 {% tabs %}
 
@@ -611,7 +611,7 @@ Using the 'MinorTickLength' property to change the height of the minor ticks.
 
 ### MinorTickStrokeThickness
 
-Using the 'MinorTickStrokeThickness' property to change the thickness of the minor ticks. 
+Use the 'MinorTickStrokeThickness' property, to change the thickness of the minor ticks. 
 
 {% tabs %}
 

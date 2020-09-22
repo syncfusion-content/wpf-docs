@@ -53,7 +53,7 @@ N> When the SnapsTo property is set to Ticks, the TickFrequency is used to speci
 
 ## MinorTickFrequency
 
-The `MinorTickFrequency` property determines the number of minor ticks on the track between the major ticks. 
+The `MinorTickFrequency` property, determines the number of minor ticks on the track between the major ticks. 
 
 {% tabs %}
 

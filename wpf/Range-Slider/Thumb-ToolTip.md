@@ -41,7 +41,7 @@ N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is 
 
 ## Thumb ToolTipFormat
 
-The `ToolTipFormat` property specifies the format specifier by which to format the ToolTip display value. 
+The `ToolTipFormat` property, specifies the format specifier by which to format the ToolTip display value. 
 
 
 {% tabs %}
