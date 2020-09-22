@@ -24,12 +24,14 @@ The DataContext for the context menu is `SchedulerContextMenuInfo` Command param
 
 {% tabs %}
 {% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
 <syncfusion:SfScheduler.CellContextMenu>
 <ContextMenu>
-<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" Header="Add">
+<MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
 </MenuItem>
 </ContextMenu>
 </syncfusion:SfScheduler.CellContextMenu>
+</syncfusion:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
@@ -38,18 +40,19 @@ The DataContext for the context menu is `SchedulerContextMenuInfo` Command param
 
 ## Appointment context menu
 
-You can set the context menu for time slot and month cells by using `SfScheduler.AppointmentContextMenu` property. AppointmentContextMenu will be appeared only on time slot or month cells.
+You can set the context menu for schedule appointments by using `SfScheduler.AppointmentContextMenu` property. AppointmentContextMenu will be displayed only on appointments.
 
 >**NOTE**
-AppointmentContextMenu will enables the menu item which binds the `SchedulerCommands.Add`built-in command only when it has the menu items with also `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands.
+AppointmentContextMenu will enables the menu item which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in command only when it has the menu items.
 The DataContext for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
 
 {% tabs %}
 {% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
 <syncfusion:SfScheduler.AppointmentContextMenu>
 <ContextMenu>
 <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"
-                    CommandParameter ="{Binding}"
+                    CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}"
                     Header="Edit">
 </MenuItem>
 <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Delete}}"
@@ -58,6 +61,7 @@ Header="Delete">
 </MenuItem>
 </ContextMenu>
 </syncfusion:SfScheduler.AppointmentContextMenu>
+</syncfusion:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,10 +91,14 @@ You can add the menu items with custom commands for `CellContextMenu` and `Appoi
 <Window.DataContext>
         <local:ScheduleViewModel/>
 </Window.DataContext>
+<syncfusion:SfScheduler x:Name="Schedule"  ViewType="Week">
+<syncfusion:SfScheduler.ContextMenu>
 <ContextMenu>
 <MenuItem Command="{Binding CopyCommand}" CommandTarget="{Binding}" Header="Copy"></MenuItem>
 <MenuItem Command="{Binding PasteCommand}" CommandTarget="{Binding}" Header="Paste"></MenuItem>
 </ContextMenu>
+</syncfusion:SfScheduler.ContextMenu>
+</syncfusion:SfScheduler>
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,7 +183,3 @@ You can add the menu items with custom commands for `CellContextMenu` and `Appoi
 ![CustomContextMenu in WPF Scheduler](ContextMenu/CustomContextMenu.png)
 
 You can get the sample from [here] (https://github.com/SyncfusionExamples/how-to-use-custom-commands-in-context-menu)
-
-## Limitations
-
-You need to check "IsAllDay" check box manually in AppointmentEditor window, when right click the context menu on AllDay panel.
