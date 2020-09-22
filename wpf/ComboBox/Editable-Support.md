@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editable Support | wpf | Syncfusion
-description: Learn about Editable support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details.
+description: Learn about the Editable support in Syncfusion WPF ComboBox (ComboBoxAdv) control with more details.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
