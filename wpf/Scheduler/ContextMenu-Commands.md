@@ -19,7 +19,7 @@ Scheduler provides the built-in `RoutedUICommands` support for handling context 
 You can set the context menu for time slot and month cells by using `SfScheduler.CellContextMenu` property. CellContextMenu will be appeared only on time slot or month cells.
 
 >**NOTE**
-CellContextMenu will enables the menu item which binds the `SchedulerCommands.Add`built-in command only when it has the menu items with also `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands.
+The menu items which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands will be disabled in CellContextMenu.
 The DataContext for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
 
 {% tabs %}
@@ -43,7 +43,7 @@ The DataContext for the context menu is `SchedulerContextMenuInfo` Command param
 You can set the context menu for schedule appointments by using `SfScheduler.AppointmentContextMenu` property. AppointmentContextMenu will be displayed only on appointments.
 
 >**NOTE**
-AppointmentContextMenu will enables the menu item which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in command only when it has the menu items.
+The menu item which binds the `SchedulerCommands.Add` command will be disabled in AppointmentContextMenu.
 The DataContext for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
 
 {% tabs %}
