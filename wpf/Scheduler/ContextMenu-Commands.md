@@ -34,7 +34,7 @@ The DataContext for the context menu is `SchedulerContextMenuInfo` Command param
 {% endhighlight %}
 {% endtabs %}
 
-![Cell ContextMenu in WPF Scheduler](images/scheduler/Resource/CellContextMenu.png)
+![Cell ContextMenu in WPF Scheduler](images/scheduler/ContextMenu/CellContextMenu.png)
 
 ## Appointment context menu
 
@@ -62,7 +62,7 @@ Header="Delete">
 {% endhighlight %}
 {% endtabs %}
 
-![Appointment ContextMenu in WPF Scheduler](images/scheduler/Resource/AppointmentContextMenu.png)
+![Appointment ContextMenu in WPF Scheduler](images/scheduler/ContextMenu/AppointmentContextMenu.png)
 
 ## Events
 
@@ -172,7 +172,7 @@ You can add the menu items with custom commands for `CellContextMenu` and `Appoi
 {% endhighlight %}
 {% endtabs %}
 
-![CustomContextMenu in WPF Scheduler](images/scheduler/Resource/CustomContextMenu.png)
+![CustomContextMenu in WPF Scheduler](images/scheduler/ContextMenu/CustomContextMenu.png)
 
 You can get the sample from [here] (https://github.com/SyncfusionExamples/how-to-use-custom-commands-in-context-menu)
 
