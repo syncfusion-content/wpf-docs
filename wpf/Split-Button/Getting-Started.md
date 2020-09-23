@@ -224,6 +224,8 @@ button.LargeIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.Relative
 
 ## Setting image
 
+### Setting image path
+
 The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) property.
 
 * **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
@@ -288,6 +290,101 @@ button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.Rela
 {% endtabs %}
 
 ![Large Image](Getting-Started_images/Getting-Started_img8.png)
+
+N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
+
+### Setting Icon Template
+
+The IconTemplate property provides support to set any type of mage such as glyphs or any custom control to the SplitButtonAdv. The SplitButtonAdv will automatically resize the template content according to its [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window x:Class="Button_IconTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Button_IconTemplate"
+        xmlns:sync="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" Content="Icon Template" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Size Mode : Small" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Label Content="Size Mode : Normal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Label Content="Size Mode : Large" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <sync:SplitButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="New" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:SplitButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid Width="12" Height="16">
+                        <Path
+                                Margin="0.5"
+                                Data="M0,0 L5.9999999,0 11,5 11,15 0,15 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                        <Path
+                                Data="M7,1.7070007 L7,5 10.292999,5 z M1,1 L1,15 11,15 11,6 6,6 6,1 z M0,0 L6.7070007,0 12,5.2929993 12,16 0,16 z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:SplitButtonAdv.IconTemplate>
+        </sync:SplitButtonAdv>
+        <sync:SplitButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Open" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:SplitButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid Width="16" Height="16">
+                        <Path
+                                Margin="0.5,0.5,0.738,0.502"
+                                Data="M0,0 L5,0 6,1 12,1 12,3.4999998 11.499065,3.9999996 14.716998,3.9999996 11.92699,10.999 4.1853847,10.984859 0,10.982999 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                        <Path
+                                Data="M5.162991,5.0009986 L1.7839907,10.979999 4.3081884,10.984653 5.0009999,10.984999 5.0009999,10.98593 12.088991,10.999 14.480014,5.0009986 z M0,0 L5.7069998,0 6.7069998,1 13,1 13,3.9999998 12,3.9999998 12,1.9999998 6.2930002,1.9999998 5.2930002,1 0.99999994,1 0.99999994,10.335325 4.5790062,4.0009986 15.954991,4.0009986 12.765994,12.000998 4.552258,11.98482 0,11.982999 z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:SplitButtonAdv.IconTemplate>
+        </sync:SplitButtonAdv>
+        <sync:SplitButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Save File" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:SplitButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid  x:Name="Save"
+                            Width="16"
+                            Height="16">
+                        <Path
+                                Width="16"
+                                Height="16"
+                                Data="M5.0000019,11 L5.0000019,15 11.000002,15 11.000002,11 z M4.0000019,1 L4.0000019,6 12.000002,6 12.000002,1 z M1,1 L1,13.174 2.7160001,15 4.0000019,15 4.0000019,10 12.000002,10 12.000002,15 15,15 15,1 13.000002,1 13.000002,7 3.0000019,7 3.0000019,1 z M0,0 L3.0000019,0 13.000002,0 16,0 16,16 12.000002,16 4.0000019,16 2.2840004,16 0,13.57 z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:SplitButtonAdv.IconTemplate>
+        </sync:SplitButtonAdv>
+    </Grid>
+</Window>
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Setting Icon Template](Getting-Started_images/Getting-Started_img12.jpg)
+
+N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
 
 ## Setting icon width and height
 
