@@ -57,6 +57,8 @@ You can customize the appearance of the `TabControl` control by using the [SfSki
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -68,9 +70,14 @@ Here, the `Blend` style is applied to the `TabControl`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                          Name="tabControlExt">
-</syncfusion:TabControlExt>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                  Name="tabControlExt"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

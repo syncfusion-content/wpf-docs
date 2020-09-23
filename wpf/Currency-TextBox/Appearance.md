@@ -210,6 +210,10 @@ The appearance of the `CurrencyTextBox` control can be customized by using the [
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -220,20 +224,32 @@ The appearance of the `CurrencyTextBox` control can be customized by using the [
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
 * VisualStudio2013
 * VisualStudio2015
 
+{% tabs %}
+{% highlight xaml %}
+
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:CurrencyTextBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                    Name="currencyTextBox" />
+    </Grid>
+</Window>
+
 For example, the `Blend` style applied to the `CurrencyTextBox` as shown in the following example code:
 
-{% tabs %}
+{% endhighlight %}
 {% highlight C# %}
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.Width = 100;
-currencyTextBox.Height = 25;
 SfSkinManager.SetVisualStyle(currencyTextBox, VisualStyles.Blend);
 
 {% endhighlight %}

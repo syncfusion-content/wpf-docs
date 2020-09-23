@@ -126,6 +126,8 @@ You can customize the appearance of the `DateTimeEdit` control by using the [SfS
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -137,8 +139,14 @@ Here, the `Blend` style is applied to the `DateTimeEdit`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:DateTimeEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         Name="dateTimeEdit"/>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:DateTimeEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                 Name="dateTimeEdit" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
