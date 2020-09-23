@@ -991,4 +991,25 @@ chart.Legend = new ChartLegend()
 
 ![Customizing legend items layout in WPF Chart](Legend_images/customization_2.png)
 
+## Troubleshooting
 
+The legend item is not showing because the chart view is running in the background thread with the timespan problem while updating the chart element dynamically. You can resolve this by using the Dispatcher.BeginInvoke() method. Please refer to the following code sample.
+
+{% highlight c# %}
+
+ChartWindow chartWindow = new ChartWindow();
+
+chartWindow.DataContext = measurementChart;
+
+chartWindow.Content = new AutoChart();
+
+chartWindow.Content = new SfChart()
+{    
+	. . .
+}
+
+Action action = chartWindow.Show;
+
+Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>()); 
+
+{% endhighlight %}

@@ -524,66 +524,111 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True"
+        ...
 
-ItemsSource="{Binding Demands}"
+        <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
+            syncfusion:ChartTooltip.VerticalAlignment="Top" 
+            XBindingPath="Demand" YBindingPath="Year2010" >
+            <syncfusion:ColumnSeries.TooltipTemplate>
+                <DataTemplate>
+                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
+                        <TextBlock Text="{Binding Item.Year2010}"
+                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </DataTemplate>
+            </syncfusion:ColumnSeries.TooltipTemplate>
+        </syncfusion:ColumnSeries>
 
-TooltipTemplate="{StaticResource tooltip}"
+        <syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
+            syncfusion:ChartTooltip.VerticalAlignment="Top"
+            ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011">
+            <syncfusion:ColumnSeries.TooltipTemplate>
+                <DataTemplate>
+                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
+                        <TextBlock Text="{Binding Item.Year2011}"
+                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </DataTemplate>
+            </syncfusion:ColumnSeries.TooltipTemplate>
+        </syncfusion:ColumnSeries>
 
-XBindingPath="Demand" YBindingPath="Year2010" />
-
-<syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-
-TooltipTemplate="{StaticResource tooltip}"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+        ...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series1 = new ColumnSeries()
-{
+         ...
 
-    ItemsSource = new ViewModel().Demands,
+            DataTemplate tooltip = new DataTemplate();
+            FrameworkElementFactory border = new FrameworkElementFactory(typeof(Border));
 
-    XBindingPath = "Demand",
+            border.SetValue(Border.BackgroundProperty, new SolidColorBrush(Colors.DarkGreen));
+            border.SetValue(Border.CornerRadiusProperty, new CornerRadius(5));
+            border.SetValue(Border.BorderThicknessProperty, new Thickness(2));
+            border.SetValue(Border.BorderBrushProperty, new SolidColorBrush(Colors.Black));
+            border.SetValue(Border.WidthProperty, 50d);
+            border.SetValue(Border.HeightProperty, 30d);
 
-    YBindingPath = "Year2010",
+            FrameworkElementFactory textblock = new FrameworkElementFactory(typeof(TextBlock));
 
-    Label = "2010",
+            textblock.SetBinding(TextBlock.TextProperty,new Binding("Item.Year2010"));
+            textblock.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+            textblock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+            textblock.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
 
-    ShowTooltip = true,
+            border.AppendChild(textblock);
+            tooltip.VisualTree = border;
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
+            DataTemplate tooltip1 = new DataTemplate();
+            FrameworkElementFactory border1 = new FrameworkElementFactory(typeof(Border));
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+            border1.SetValue(Border.BackgroundProperty, new SolidColorBrush(Colors.DarkGreen));
+            border1.SetValue(Border.CornerRadiusProperty, new CornerRadius(5));
+            border1.SetValue(Border.BorderThicknessProperty, new Thickness(2));
+            border1.SetValue(Border.BorderBrushProperty, new SolidColorBrush(Colors.Black));
+            border1.SetValue(Border.WidthProperty, 50d);
+            border1.SetValue(Border.HeightProperty, 30d);
 
-};
+            FrameworkElementFactory textblock1 = new FrameworkElementFactory(typeof(TextBlock));
 
-ColumnSeries series2 = new ColumnSeries()
-{
+            textblock1.SetBinding(TextBlock.TextProperty, new Binding("Item.Year2011"));
+            textblock1.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+            textblock1.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+            textblock1.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
 
-    ItemsSource = new ViewModel().Demands,
+            border1.AppendChild(textblock1);
+            tooltip1.VisualTree = border1;
 
-    XBindingPath = "Demand",
+            ColumnSeries series1 = new ColumnSeries()
+            {
 
-    YBindingPath = "Year2011",
+                ItemsSource = Demands,
+                XBindingPath = "Demand",
+                YBindingPath = "Year2010",
+                Label = "2010",
+                ShowTooltip = true,
+                TooltipTemplate = tooltip
 
-    Label = "2011",
+            };
 
-    ShowTooltip = true,
+            ColumnSeries series2 = new ColumnSeries()
+            {
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
+                ItemsSource = Demands,
+                XBindingPath = "Demand",
+                YBindingPath = "Year2011",
+                Label = "2011",
+                ShowTooltip = true,
+                TooltipTemplate = tooltip1,
 
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+            };
 
-};
+            chart.Series.Add(series1);
+            chart.Series.Add(series2);
 
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
-
+        ...
+        
 {% endhighlight %}
 
 {% endtabs %}

@@ -13,7 +13,7 @@ This section provides a quick overview for working with the ComboBox ([ComboBoxA
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
 
 ## Creating Application with ComboBoxAdv control
 In this walk through, user will create a WPF application that contains [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
@@ -28,7 +28,7 @@ In this walk through, user will create a WPF application that contains [ComboBox
 Below section provides detailed information to create new project in Visual Studio to display [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 ## Adding control via designer
-The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
+The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/ComboBoxAdv_img2.png)
 
