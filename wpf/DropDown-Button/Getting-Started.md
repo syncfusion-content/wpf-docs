@@ -224,7 +224,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\flaglarge.png", UriKind.Relat
 
 ## Setting image 
 
-The size of the image can be set by using an image path and icon template . When the size of the icon is provided in both the ways, then it will prioritise and first it will take the size from the icon templates, then it will take it  from the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode) property.
+The size of the image can be set by using an image path and icon template . When the size of the icon is provided in both the ways, then it will prioritize and first it will take the size from the icon templates, then it will take it  from the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode) property.
 
 ### Setting image path
 
@@ -392,7 +392,7 @@ The IconTemplate property provides support to set any type of image such as glyp
 
 ### Setting icon template selector
 
- The IconTemplateSelector property which allows you to specify a different datatemplate based on the value given in the data templates.For example, the icon template selector is handled with the help of checking the checkbox for displaying the different icons based on the value given in the data template.
+ The IconTemplateSelector property which allows you to specify a different data template based on the value given in the data templates.For example, the icon template selector is handled with the help of checking the checkbox for displaying the different icons based on the value given in the data template.
 
  {% tabs %}
 

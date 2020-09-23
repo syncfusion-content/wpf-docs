@@ -224,7 +224,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.Relative
 
 ## Setting image
 
-The size of the image can be set by using an image path and icon template . When the size of the icon is provided in both the ways, then it will prioritise and first it will take the size from the icon templates, then it will take it  from the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode) property.
+The size of the image can be set by using an image path and icon template . When the size of the icon is provided in both the ways, then it will prioritize and first it will take the size from the icon templates, then it will take it  from the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SizeMode) property.
 
 ### Setting image path
 
@@ -293,7 +293,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.Rela
 
 ![Large Image](Getting-Started_images/Getting-Started_img8.png)
 
-N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon)and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
+N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
 
 ### Setting Icon Template
 
@@ -386,11 +386,11 @@ The IconTemplate property provides support to set any type of image such as glyp
 
  ![Setting Icon Template](Getting-Started_images/Getting-Started_img12.jpg)
 
-N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon)properties will not be utilized. Instead template will be applied.
+N> When IconTemplate property is set to the SplitButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
 
 ### Setting icon template selector
 
- The IconTemplateSelector property which allows you to specify a different datatemplate based on the value given in the data templates.For example, the icon template selector is handled with the help of checking the checkbox for displaying the different icons based on the value given in the data template.
+ The IconTemplateSelector property which allows you to specify a different data template based on the value given in the data templates.For example, the icon template selector is handled with the help of checking the checkbox for displaying the different icons based on the value given in the data template.
 
  {% tabs %}
 

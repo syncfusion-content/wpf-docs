@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ToolBarAdv control for WPF
-description: A quick tour to initial users on Syncfusion ToolBarAdv control for WPF
+description: A quick tour to initial users on Syncfusion ToolBarAdv control for WPF and also its basic features like appearance and properties
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ToolBarAdv
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use our components.
@@ -82,7 +82,7 @@ tool.Height = 50;
 
 ## Appearance and Structure of the Control
 
-![](Getting-Started-images/Getting-Started-img1.jpeg)
+![Appearance and Structure](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
 * The Overflow button is a toggle button that displays on clicking the Overflow panel.
