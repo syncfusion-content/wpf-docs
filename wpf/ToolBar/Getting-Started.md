@@ -90,7 +90,7 @@ tool.Height = 50;
 
 ## Setting icon template
 
-The IconTemplate property provides support to set any type of image such as glyphs or any custom control to the ToolBarAdv icon. The icon will automatically resize the template content according to its size provided in the template.
+The IconTemplate property provides support to set any type of image such as glyphs or any custom control to the ToolBarAdv icon. The icon will automatically resize the template content according to its size provided in the data template.
 
 {% tabs %}
 
