@@ -3267,6 +3267,101 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Padding for ChartAxis support in WPF](Axis_images/Axis_img69.jpeg)
 
+### PlotOffsetStart
+
+[`PlotOffsetStart`] property is used to provide padding to the axis at start position. The following code snippet demonstrates the padding applied to start position for both x and y axes.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  PlotOffsetStart="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis PlotOffsetStart="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    PlotOffsetStart = 30
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    PlotOffsetStart = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetStart for ChartAxis support in WPF](Axis_images/PlotOffset_Start.png)
+
+### PlotOffsetEnd
+
+[`PlotOffsetEnd`] property is used to provide padding to the axis at end position. The following code snippet demonstrates the padding applied to end position for both x and y axes.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:NumericalAxis  PlotOffsetEnd="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis PlotOffsetEnd="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    PlotOffsetEnd = 30
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    PlotOffsetEnd = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetEnd for ChartAxis support in WPF](Axis_images/PlotOffset_End.png)
 
 ## AutoScrollingDelta
 
