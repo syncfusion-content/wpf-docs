@@ -12,7 +12,7 @@ documentation: ug
 
 ## Accessing the Worksheet
 
-A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html) property of SfSpreadsheet.
+A __workbook__ is an excel document in the SfSpreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_Workbook) property of SfSpreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
@@ -35,11 +35,11 @@ N> `ActiveGrid` and `ActiveSheet` property can be accessed only after the `Workb
 
 ## Accessing the Grid
 
-Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) in  `SfSpreadsheet`.
+Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) in  `SfSpreadsheet`.
 
-When the workbook is loaded in the SfSpreadsheet, the [WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorkbookLoaded_EV.html) Event is invoked and when the workbook is removed from SfSpreadsheet, the [WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorkbookUnloaded_EV.html) Event is invoked. 
+When the workbook is loaded in the SfSpreadsheet, the [WorkbookLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) Event is invoked and when the workbook is removed from SfSpreadsheet, the [WorkbookUnloaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) Event is invoked. 
 
-When the worksheet is added into the SfSpreadsheet, the [WorksheetAdded](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorksheetAdded_EV.html) Event is invoked and when the worksheet is removed in the SfSpreadsheet, [WorksheetRemoved](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~WorksheetRemoved_EV.html) Event is invoked.
+When the worksheet is added into the SfSpreadsheet, the [WorksheetAdded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) Event is invoked and when the worksheet is removed in the SfSpreadsheet, [WorksheetRemoved](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html) Event is invoked.
 
 Hence you can access the `ActiveGrid` either in the `WorkbookLoaded` or `WorksheetAdded` Event.
 
@@ -66,7 +66,7 @@ void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-You can also access the each `SpreadsheetGrid` in the SfSpreadsheet either by passing the particular sheet name in the [GridCollection](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~GridCollection.html) or by invoking `WorkbookLoaded` Event of SfSpreadsheet. 
+You can also access the each `SpreadsheetGrid` in the SfSpreadsheet either by passing the particular sheet name in the [GridCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_GridCollection) or by invoking `WorkbookLoaded` Event of SfSpreadsheet. 
 
 ### By using Sheet Name
 
@@ -111,11 +111,11 @@ void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-N> SfSpreadsheet supports virtual mode, which lets you dynamically provide data to the grid by handling an event, [QueryRange](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html), for example. In virtual mode, data will be dynamically loaded into the SpreadsheetGrid on demand or when users need to view the data.
+N> SfSpreadsheet supports virtual mode, which lets you dynamically provide data to the grid by handling an event, [QueryRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html), for example. In virtual mode, data will be dynamically loaded into the SpreadsheetGrid on demand or when users need to view the data.
 
 ## Setting the ActiveSheet programmatically
 
-SfSpreadsheet allows you to set the [ActiveSheet](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ActiveSheet.html) programmatically by specifying the sheet name in the `SetActiveSheet` method of `SfSpreadsheet`.
+SfSpreadsheet allows you to set the [ActiveSheet](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ActiveSheet) programmatically by specifying the sheet name in the `SetActiveSheet` method of `SfSpreadsheet`.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,7 +155,7 @@ N>  If the user has made any modifications with XlsIO range in SfSpreadsheet, th
 
 ## Accessing the value of a cell
 
-SfSpreadsheet allows you to access the value of a cell by using [Value](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~Value.html) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~DisplayText.html) property can be used.
+SfSpreadsheet allows you to access the value of a cell by using [Value](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_Value) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_DisplayText) property can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
 
 ## Setting the value or formula to a cell
 
-In SfSpreadsheet, to update the cell value and formula programmatically, [SetCellValue](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+In SfSpreadsheet, to update the cell value and formula programmatically, [SetCellValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_SetCellValue_Syncfusion_XlsIO_IRange_System_String_) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearData
 {% endhighlight %}
 {% endtabs %}
 
-N> [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+N> [ExcelClearOptions](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 ## Refreshing the view
 
@@ -229,7 +229,7 @@ spreadsheet.ActiveGrid.InvalidateCellBorders(range);
 
 ## Scrolling the Grid programmatically
 
-SfSpreadsheet allows the user to scroll the grid into mentioned cell, by using [ScrollInView](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~ScrollInView.html) method of `SpreadsheetGrid`.
+SfSpreadsheet allows the user to scroll the grid into mentioned cell, by using [ScrollInView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_ScrollInView_Syncfusion_UI_Xaml_Grid_ScrollAxis_RowColumnIndex_) method of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -240,7 +240,7 @@ spreadsheet.ActiveGrid.ScrollInView(new RowColumnIndex(5, 5));
 ## Formula Bar
 
 The Formula Bar is located above the worksheet area of the SfSpreadsheet. The formula bar displays the data or formula stored in the active cell.
-Users can set the visibility state of Formula Bar using [FormulaBarVisibility](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~FormulaBarVisibility.html) property of `SfSpreadsheet`.
+Users can set the visibility state of Formula Bar using [FormulaBarVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_FormulaBarVisibility) property of `SfSpreadsheet`.
 
 {% tabs %}
 {% highlight xaml %}
