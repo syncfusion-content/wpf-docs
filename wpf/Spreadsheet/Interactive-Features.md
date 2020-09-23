@@ -70,7 +70,7 @@ To maintain the source range original format and paste only values</td></tr>
 
 N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
 
-For [Cut](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~Cut.html) Operation,
+For [Cut](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_Cut) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ spreadsheet.ActiveGrid.CopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-For [Copy](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~Copy.html) Operation,
+For [Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_Copy) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -96,7 +96,7 @@ spreadsheet.ActiveGrid.CopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-For [Paste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~Paste.html) Operation,
+For [Paste](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_Paste) Operation,
 
 {% tabs %}
 {% highlight c# %}
@@ -110,7 +110,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.PasteOptions.html) while pasting in SfSpreadsheet, by using [DefaultPasteOption](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste~DefaultPasteOption.html) property.
+T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.PasteOptions.html) while pasting in SfSpreadsheet, by using [DefaultPasteOption](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCopyPaste_DefaultPasteOption) property.
 
 ## Undo/Redo
 
@@ -133,9 +133,9 @@ Redo</td><td>
 Ctrl + Y</td></tr>
 </table>
 
-SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
+SfSpreadsheet has [History Manager](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
 
-By default, Undo/Redo operations in SfSpreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager~Enabled.html) property of [History Manager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) to be false.  
+By default, Undo/Redo operations in SfSpreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html#Syncfusion_UI_Xaml_Spreadsheet_History_HistoryManager_Enabled) property of [History Manager](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.History.HistoryManager.html) to be false.  
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ Context menu in SfSpreadsheet is customizable menu which can be used for various
 
 TabItem Context menu opens when the user right-click on the sheet tab and contains the menus related to worksheet operations.
 
-By default, TabItem Context menu is enabled in SfSpreadsheet. To disable the TabItem context menu, set the [AllowTabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowTabItemContextMenu.html) property to false. 
+By default, TabItem Context menu is enabled in SfSpreadsheet. To disable the TabItem context menu, set the [AllowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_AllowTabItemContextMenu) property to false. 
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ spreadsheet.AllowTabItemContextMenu = false;
 {% endhighlight %}
 {% endtabs %}
 
-Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~IsCustomTabItemContextMenuEnabled.html)  property to be true and you can add your customized menu items.
+Default TabItem context menu has options like Insert, Delete, Hide/Unhide and Protect sheet. You can also customize the TabItem Context menu by setting [IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_IsCustomTabItemContextMenuEnabled)  property to be true and you can add your customized menu items.
 
 {% tabs %}
 {% highlight c# %}
@@ -202,7 +202,7 @@ public ContextMenu CustomTabItemContextMenu()
 
 Cell Context menu opens when the user right-click on a worksheet cell or selection of cells in SfSpreadsheet.
 
-By default, Cell Context menu is enabled in SfSpreadsheet. To disable the Cell Context menu, set the [AllowCellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~AllowCellContextMenu.html)  property as false.
+By default, Cell Context menu is enabled in SfSpreadsheet. To disable the Cell Context menu, set the [AllowCellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_AllowCellContextMenu)  property as false.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +210,7 @@ spreadsheet.AllowCellContextMenu = false;
 {% endhighlight %}
 {% endtabs %}
 
-Users can also customize the Cell Context menu of SfSpreadsheet by using [CellContextMenuOpening](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenuOpening_EV.html) Event of `SpreadsheetGrid`.
+Users can also customize the Cell Context menu of SfSpreadsheet by using [CellContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html) Event of `SpreadsheetGrid`.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -233,13 +233,13 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
 {% endhighlight %}
 {% endtabs %}
 
-T> Custom Cell Context menu can also by added by assigning the customized menu items to the [CellContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellContextMenu.html) property of `SpreadsheetGrid`. For your reference, [CustomContextMenu](https://www.syncfusion.com/kb/6499/how-to-create-a-customized-cell-context-menu-of-sfspreadsheet)
+T> Custom Cell Context menu can also by added by assigning the customized menu items to the [CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_CellContextMenu) property of `SpreadsheetGrid`. For your reference, [CustomContextMenu](https://www.syncfusion.com/kb/6499/how-to-create-a-customized-cell-context-menu-of-sfspreadsheet)
 
 ## Cell Comments
 
-SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking [CellCommentOpening](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CellCommentOpening_EV.html) Event of SpreadsheetGrid
+SfSpreadsheet provides support for cell comments like in excel to give the reader additional context for the data it contains. You can set the comment height and color for the particular comments at runtime by invoking [CellCommentOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html) Event of SpreadsheetGrid
 
-To enable the comment in SfSpreadsheet, set the [ShowComment](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~ShowComment.html) property of SpreadsheetGrid to true.
+To enable the comment in SfSpreadsheet, set the [ShowComment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_ShowComment) property of SpreadsheetGrid to true.
 
 {% tabs %}
 {% highlight c# %}
