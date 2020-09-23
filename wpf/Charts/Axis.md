@@ -3010,9 +3010,27 @@ The [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Char
 
 ### DateTimeRangePadding
 
+The [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) types available in the [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) are: 
+
+* Auto
+* Additional
+* None
+* Round
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
+
+**Auto**
+
 By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
 ![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img61.jpeg)
+
+
+**Additional**
+
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3046,6 +3064,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **Round**
 
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is set to [`Round`], the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3078,6 +3098,10 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **None**
 
+When the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is [`None`].
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`] set to [`None`]. 
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3108,6 +3132,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 ![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img64.jpeg)
 
 **RoundStart**
+
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is set to [`RoundStart`], the range of the chart axis is rounded in the start off to the nearest possible DateTime value, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3141,6 +3167,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **RoundEnd**
 
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is set to [`RoundEnd`], the range of the chart axis is rounded in the end off to the nearest possible DateTime value, as shown in the following screenshot.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3173,6 +3201,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **PrependInterval**
 
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is set to [`PrependInterval`], the DateTime interval of the axis is added in the start as padding, as shown in the following screenshot.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3204,6 +3234,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 
 **AppendInterval**
+
+When [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#) is set to [`AppendInterval`], the DateTime interval of the axis is added in the end as padding, as shown in the following screenshot.
 
 {% tabs %}
 
@@ -3249,12 +3281,20 @@ The following types are available for [`NumericalAxis`](https://help.syncfusion.
 * PrependInterval
 * AppendInterval
 
+**Round**
+
 By default, the default [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis), the default value is [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+
+The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img65.jpeg)
 
 
 **Normal**
+
+[`Normal`] [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for a [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is used mostly for the y-axis to have padding based on the Range calculation.
+
+The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Normal`].
 
 {% tabs %}
 
@@ -3288,6 +3328,10 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Additional**
 
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`Additional`], the interval of the axis is added as padding.
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Additional`].
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3320,6 +3364,8 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **None**
 
+The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) as [`None`], where no padding is applied for the axis.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3350,6 +3396,10 @@ chart.PrimaryAxis = new NumericalAxis()
 ![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img68.jpeg)
 
 **RoundStart**
+
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundStart`], rounds the range of the chart axis in the start to the nearest possible value.
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundStart`].
 
 {% tabs %}
 
@@ -3383,6 +3433,10 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **RoundEnd**
 
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`RoundEnd`], rounds the range of the chart axis in the end to the nearest possible value.
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundEnd`].
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3415,6 +3469,10 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **PrependInterval**
 
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`PrependInterval`], the interval of the axis is added in the start as padding.
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`PrependInterval`].
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -3446,6 +3504,10 @@ chart.PrimaryAxis = new NumericalAxis()
 
 
 **AppendInterval**
+
+If [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) for [`NumericalAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#) is set to [`AppendInterval`], the interval of the axis is added in the end as padding.
+
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`AppendInterval`].
 
 {% tabs %}
 
