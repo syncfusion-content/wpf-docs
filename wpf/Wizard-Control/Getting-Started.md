@@ -117,7 +117,7 @@ namespace WizardControl
 
 ## Adding multiple pages
 
-You can add multiple pages in [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) using the [WizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) control. Based on the page you are on , Cancel, Back, Next and Finish buttons enables and disables automatically.
+You can add multiple pages in [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) using the [WizardPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardPage.html) control. The Cancel, Back, Next and Finish buttons enables and disables automatically based on the current visible wizard page.
 
 {% tabs %}
 
