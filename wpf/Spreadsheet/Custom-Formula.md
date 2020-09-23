@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Formula
 
-SfSpreadsheet allows you to add custom formulas into its function library. You can add the custom formula into the SfSpreadsheet by using the [AddFunction](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.FormulaEngine~AddFunction.html) method of [FormulaEngine](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html),
+SfSpreadsheet allows you to add custom formulas into its function library. You can add the custom formula into the SfSpreadsheet by using the [AddFunction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html#Syncfusion_UI_Xaml_CellGrid_FormulaEngine_AddFunction_System_String_Syncfusion_UI_Xaml_CellGrid_FormulaEngine_LibraryFunction_) method of [FormulaEngine](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.FormulaEngine.html),
 
 {% tabs %}
 {% highlight c# %}
