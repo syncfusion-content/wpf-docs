@@ -109,6 +109,8 @@ You can customize the appearance of the `TimeSpanEdit` control by using the [SfS
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -120,8 +122,14 @@ Here, the `Blend` style is applied to the `TimeSpanEdit`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TimeSpanEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         Name="timeSpanEdit"/>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:TimeSpanEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                   Name="timeSpanEdit" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

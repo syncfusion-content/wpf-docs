@@ -107,8 +107,7 @@ You can customize the appearance of the `SfRadialSlider` control by using the [S
 {% tabs %}
 {% highlight xaml %}
 
-<Window>
-    <!--Theme Namespace-->
+<Window
     xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
     <Grid>
         <syncfusion:SfRadialSlider syncfusionskin:SfSkinManager.VisualStyle="Blend" 
