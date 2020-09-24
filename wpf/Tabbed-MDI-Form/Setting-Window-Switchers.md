@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Window Switchers | DocumentContainer | Wpf | Syncfusion
+title: Setting Window Switchers in WPF Tabbed MDI Form | Syncfusion
 description: DocumentContainer control provides window switchers that enables the users to switch between the windows using keyboard keys.
 platform: wpf
 control: DocumentContainer

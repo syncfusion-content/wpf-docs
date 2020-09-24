@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with QTP/UFT Testing for WPF controls | Syncfusion
+title: Getting Started with QTP/UFT Testing for WPF control | Syncfusion
 description: This section explains about how to test with QTP/UFT for Syncfusion Essential WPF controls and its supported methods
 platform: wpf
 control: Testing
