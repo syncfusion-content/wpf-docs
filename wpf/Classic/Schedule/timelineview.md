@@ -316,12 +316,12 @@ Brush</td><td>
 Used to customize the minor line label stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStrokeDashArray.html">MajorTickStrokeDashArray</a></td><td>
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickStrokeDashArray">MajorTickStrokeDashArray</a></td><td>
 DoubleCollection</td><td>
 Used to customize the major line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStrokeDashArray.html">MinorTickStrokeDashArray</a></td><td>
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickStrokeDashArray">MinorTickStrokeDashArray</a></td><td>
 DoubleCollection</td><td>
 Used to customize the minor line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
