@@ -114,7 +114,7 @@ namespace SfRating_GettingStarted
 
 ## Customize number of rating items
 
-The number of rating items to be displayed can be customized using [ItemCounts](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRating~ItemsCount.html) property in [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
+The number of rating items to be displayed can be customized using [ItemCounts](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_ItemsCount) property in [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
 
 N> The default value of ItemsCount is 0.
 
@@ -140,7 +140,7 @@ SfRating rating = new SfRating()
 
 ## Set value
 
-The display value to be selected among the rating items can be set in the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control using [Value](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRating~Value.html) property.
+The display value to be selected among the rating items can be set in the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Value) property.
 
 N> By default, value of this property is 0.
 
@@ -167,7 +167,7 @@ SfRating rating = new SfRating()
 
 ## Precision of selection
 
-The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control provides option to rate the items in full, half, and exact value using the [Precision](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRating~Precision.html) property. 
+The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control provides option to rate the items in full, half, and exact value using the [Precision](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html#Syncfusion_Windows_Controls_Input_SfRating_Precision) property. 
 
 N> By default, the value of Precision property is `Standard`.
 

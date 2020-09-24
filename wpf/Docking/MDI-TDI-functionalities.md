@@ -120,6 +120,8 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized)
 
 {% endtabs %}
 
+![MDI window is rendered in maximized state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_max.jpg)
+
 ## Getting state of the MDI window
 
 The state of the MDI window can be detect using the [GetMDIWindowState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_GetMDIWindowState_System_Windows_DependencyObject_) method of DocumentContainer.

@@ -231,7 +231,7 @@ public class ViewModel
 
 ## Binding to Data
 
-You can populate the drop down list for SfMultiColumnDropDownControl by setting [ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ItemsSource.html) property.
+You can populate the drop down list for SfMultiColumnDropDownControl by setting [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property.
 Bind the collection created in previous step to `ItemsSource` property by setting ViewModel as DataContext.
 
 {% tabs %}
@@ -265,13 +265,13 @@ sfMultiColumn.ItemsSource = viewModel.Orders;
 
 ## Defining DisplayMember and ValueMember
 
-[DisplayMember](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~DisplayMember.html) denotes the path to a value on the data object for visual presentation of the selected object in editor and [ValueMember](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ValueMember.html) denotes the path to a value on the data object for [SelectedValue](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectedValue.html). 
+[DisplayMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_DisplayMember) denotes the path to a value on the data object for visual presentation of the selected object in editor and [ValueMember](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ValueMember) denotes the path to a value on the data object for [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SelectedValue). 
 
 Refer [here](http://help.syncfusion.com/wpf/sfmulticolumndropdown/data-binding) to know more about the `DisplayMember` and `ValueMember`.
 
 ## Defining Columns
 
-By default, the SfMultiColumnDropDownControl generates the columns automatically based on [ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ItemsSource.html) property. You can prevent the automatic column generation by setting[AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AutoGenerateColumns.html) property to `false`. When `AutoGenerateColumns` property is false, you have to define the columns to be displayed as below,
+By default, the SfMultiColumnDropDownControl generates the columns automatically based on [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property. You can prevent the automatic column generation by setting[AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns) property to `false`. When `AutoGenerateColumns` property is false, you have to define the columns to be displayed as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,5 +301,5 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 
 ## Editing and filtering 
 
-SfMultiColumnDropDownControl provides support to auto append the text from `ItemsSource` when end-user edits in the TextBox by setting [AllowAutoComplete](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowAutoComplete.html) to `true`. 
-Also, it provides support to filter the items displayed in the drop-down based on text in the TextBox by setting[AllowIncrementalFiltering](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowIncrementalFiltering.html) ` to `true`. 
+SfMultiColumnDropDownControl provides support to auto append the text from `ItemsSource` when end-user edits in the TextBox by setting [AllowAutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`. 
+Also, it provides support to filter the items displayed in the drop-down based on text in the TextBox by setting[AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) ` to `true`. 
