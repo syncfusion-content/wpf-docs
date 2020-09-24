@@ -210,6 +210,10 @@ The appearance of the `IntegerTextBox` control can be customized by using the [S
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -220,6 +224,8 @@ The appearance of the `IntegerTextBox` control can be customized by using the [S
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -229,11 +235,21 @@ The appearance of the `IntegerTextBox` control can be customized by using the [S
 For example, the `Blend` style applied to the `IntegerTextBox` as shown in the following example code:
 
 {% tabs %}
+{% highlight xaml %}
+
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:IntegerTextBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                   Name="integerTextBox" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
 {% highlight C# %}
 
 IntegerTextBox integerTextBox = new IntegerTextBox();
-integerTextBox.Width = 100;
-integerTextBox.Height = 25;
 SfSkinManager.SetVisualStyle(integerTextBox, VisualStyles.Blend);
 
 {% endhighlight %}

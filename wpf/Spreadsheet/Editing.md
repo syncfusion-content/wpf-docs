@@ -15,7 +15,7 @@ This section explains about the Editing behavior, Data Validation and Hyperlinks
 
 The SfSpreadsheet control provides support for editing, you can modify and commit the cell values in the workbook.
 
-By default, Editing will be enabled in `SfSpreadsheet`,but if you want to disable the editing in SfSpreadsheet, then set the [AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~AllowEditing.html) Property to be false.
+By default, Editing will be enabled in `SfSpreadsheet`,but if you want to disable the editing in SfSpreadsheet, then set the [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_AllowEditing) Property to be false.
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 #### Start Editing
     
-User can edit a cell programmatically by using [BeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell~BeginEdit.html) method.
+User can edit a cell programmatically by using [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCurrentCell_BeginEdit_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -42,9 +42,9 @@ spreadsheet.ActiveGrid.CurrentCell.BeginEdit(true);
 
 User can end the editing of a cell programmatically in any of the following way,
 
-* [ValidateAndEndEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.GridCurrentCell~ValidateAndEndEdit.html) - Validates and ends the edit operation for the current cell. if the cancel is "true", then the current cell remains in edit mode else if the validation is true, commits the new value and moved to next cell or else if the validation is false, it reverts the old value and moved to next cell.
+* [ValidateAndEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridCurrentCell.html#Syncfusion_UI_Xaml_CellGrid_GridCurrentCell_ValidateAndEndEdit) - Validates and ends the edit operation for the current cell. if the cancel is "true", then the current cell remains in edit mode else if the validation is true, commits the new value and moved to next cell or else if the validation is false, it reverts the old value and moved to next cell.
 
-* [EndEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.GridCurrentCell~EndEdit.html)   - Commits and ends the edit operation for the current cell, if it is passed with parameter _"true"_, commits the new changes for the cell, else reverts the old value.
+* [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridCurrentCell.html#Syncfusion_UI_Xaml_CellGrid_GridCurrentCell_EndEdit_System_Boolean_)   - Commits and ends the edit operation for the current cell, if it is passed with parameter _"true"_, commits the new changes for the cell, else reverts the old value.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,23 +85,23 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CurrentCellBeginEdit_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html)' | markdownify }}</td><td>
 Occurs when the current cell enters into edit mode. This event allows to cancel entering the edit mode.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellValueChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CurrentCellValueChanged_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html)' | markdownify }}</td><td>
 Occurs when the current cell value is changed in edit mode.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CurrentCellValidating_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html)' | markdownify }}</td><td>
 Occurs when the current cell value is going to be validated. It allows you to validate and cancel the end editing.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellValidated](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CurrentCellValidated_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html)' | markdownify }}</td><td>
 Occurs after the current cell is validated.</td></tr>
 <tr>
 <td>
-{{ '[CurrentCellEndEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CurrentCellEndEdit_EV.html)' | markdownify }}</td><td>
+{{ '[CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html)' | markdownify }}</td><td>
 Occurs when the current cell leaves from edit mode.</td></tr>
 </table>
 
@@ -114,19 +114,19 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~AllowEditing.html)' | markdownify }}</td><td>
+{{ '[AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_AllowEditing)' | markdownify }}</td><td>
 Gets or sets the value indicating whether to allow the editing operation or not.</td></tr>
 <tr>
 <td>
-{{ '[EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~EditorSelectionBehavior.html)' | markdownify }}</td><td>
+{{ '[EditorSelectionBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_EditorSelectionBehavior)' | markdownify }}</td><td>
 Gets or sets a value indicating whether editor select all the value or move last position.</td></tr>
 <tr>
 <td>
-{{ '[EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~EditTrigger.html)' | markdownify }}</td><td>
+{{ '[EditTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_EditTrigger)' | markdownify }}</td><td>
 Gets or sets a value indicating any of the trigger options will cause cells to enter Edit Mode.</td></tr>
 <tr>
 <td>
-{{ '[IsEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.GridCurrentCell~IsEditing.html)' | markdownify }}</td><td>
+{{ '[IsEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridCurrentCell.html#Syncfusion_UI_Xaml_CellGrid_GridCurrentCell_isEditing)' | markdownify }}</td><td>
 Gets  whether the current cell is in edit mode or not.</td></tr>
 </table>
 
@@ -139,19 +139,19 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[BeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell~BeginEdit.html)' | markdownify }}</td><td>
+{{ '[BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCurrentCell_BeginEdit_System_Boolean_)' | markdownify }}</td><td>
 Begins the editing operation of the current cell and returns true if the current cell enters into edit mode.</td></tr>
 <tr>
 <td>
-{{ '[EndEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell~EndEdit.html)' | markdownify }}</td><td>
+{{ '[EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetCurrentCell.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetCurrentCell_EndEdit_System_Boolean_)' | markdownify }}</td><td>
 Commits and ends the edit operation of the current cell.</td></tr>
 <tr>
 <td>
-{{ '[ValidateAndEndEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.GridCurrentCell~ValidateAndEndEdit.html)' | markdownify }}</td><td>
+{{ '[ValidateAndEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridCurrentCell.html#Syncfusion_UI_Xaml_CellGrid_GridCurrentCell_ValidateAndEndEdit)' | markdownify }}</td><td>
 Validates and ends the edit operation of the current cell.</td></tr>
 <tr>
 <td>
-{{ '[Validate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.GridCurrentCell~Validate.html)' | markdownify }}</td><td>
+{{ '[Validate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.GridCurrentCell.html#Syncfusion_UI_Xaml_CellGrid_GridCurrentCell_Validate_System_Boolean__)' | markdownify }}</td><td>
 Validates the current cell in the SpreadsheetGrid.</td></tr>
 </table>
 
