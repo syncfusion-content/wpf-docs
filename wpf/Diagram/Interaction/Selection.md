@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Selection in WPF Diagram (SfDiagram)
+# Selection in WPF Diagram (SfDiagram)
 
 [Selector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Selector.html) provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position, and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
 
