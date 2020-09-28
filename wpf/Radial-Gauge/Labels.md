@@ -229,6 +229,66 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Positioning labels image](Labels_images/Positioning_labels.png)
 
+## Label rotation
+
+Each circular gauge label can be rotated and positioned based on its corresponding angle. This can be controlled by `CanRotateLabels` property in the scale.
+
+Setting false to this property will display all the labels without rotation.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+
+                <gauge:CircularScale FontFamily="Monotype Corsiva" FontSize="20" CanRotateLabels="True"
+
+    FontStyle="Italic" >
+
+                    <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale mainscale = new CircularScale();
+
+            sfCircularGauge.FontSize = 20;
+
+            sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
+
+            sfCircularGauge.FontStyle = FontStyles.Italic;
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            mainscale.CanRotateLabels = true;
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label rotation](Labels_images/RotateLabels.PNG)
+
 ## Setting a smart labels
 
 The [`EnableSmartLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_EnableSmartLabels) property is a Boolean property that enables or disables the smart label feature of the circular gauge.
