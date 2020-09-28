@@ -22,7 +22,7 @@ In this walk through, user will create a WPF application that contains [SfDomain
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
-5. [Populating by databinding](#Populating-by-DataBinding)
+5. [Populating by data binding](#Populating-by-DataBinding)
 
 ## Creating project 
 Below section provides detailed information to create new project in Visual Studio to display [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html).
@@ -30,7 +30,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#SfDomainUpDown) will be added automatically.
 
-![Adding control via designer](Getting-Started_images/SfDomainUpDown_img2.png)
+![Adding control via designer](Getting-Started_images/SfDomainUpDown_GettingStarted_img2.png)
 
 ## Adding control manually in XAML
 In order to add [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control manually in XAML, do the below steps,
@@ -182,7 +182,7 @@ public class ViewModel
 
 ## Spin button alignment
 
-You can customize the positon of spin button’s position in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control  using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property.
+You can customize the position of spin button’s position in the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control  using the [SpinButtonsAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_SpinButtonsAlignment) property.
 
 {% tabs %}
 {% highlight XAML %}
