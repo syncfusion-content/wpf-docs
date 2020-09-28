@@ -282,7 +282,7 @@ Ticks are placed inside the track.
 
 No Tick mark appears.  
 
-% tabs %}
+{% tabs %}
 
 {% highlight XAML %}
 
