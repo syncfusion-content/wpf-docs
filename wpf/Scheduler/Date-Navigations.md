@@ -13,7 +13,7 @@ documentation: ug
 Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MinimumDate) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
 
 ### Minimum display date
-`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range.
+`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range.The dates before the minimum date will be disabled  in schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,7 +27,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 {% endtabs %}
 
 ### Maximum display date
-`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range.
+`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range.The dates beyond the maximum date will be disabled  in schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,25 +40,6 @@ this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
-### Disabled Dates 
-
-Support used to disable the dates or hour beyond the Scheduler `MinimumDate` and `MaximumDate`  in current view.
-
-![WPF scheduler Disabled Dates](Resource_Images/Disable_dates.png)
-
-#### Month view
-
-* Beyond `MinimumDate` and `MaximumDate` tapped events, editor, date selection should be disabled by setting `IsEnabled` as False to the MonthCell control.
-* Cell date foreground color to be disabled with disable color follow the below priority, add Trigger to set foreground for `IsEnabled` is False.
-
-![WPF scheduler MothView Disabled Dates](Resource_Images/MonthView_DisableDates.png)
-
-#### Week, Work week, Timeline week, Timeline work week views beyond scheduler min and max dates
-
-* In day, week, work week and Timeline view beyond min and max date in special time region will be added internally in current view and region can edit will be disabled. 
-* Beyond minimum and maximum range view header date text to be disabled by setting `IsEnabled` as false to the ViewHeaderBase control. ViewHeader to be disabled if complete day is beyond `MinimumDate` and `MaximumDate`, if min and max date start like in between time of day (2020 -27-7 , 10,0,0) no need to disable view header. 
-
-![WPF scheduler WeekView Disabled Dates](Resource_Images/WeekView_DisableDates.png)
 
 ## Programmatic date navigation
 You can programmatically navigate dates in scheduler by using the [displayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property of SfScheduler.
@@ -73,6 +54,9 @@ You can programmatically navigate dates in scheduler by using the [displayDate](
 this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+Navigation and selection before minimum dates and beyond maximum dates using `NavigateTo` and `SelectedDate` is not possible.
 
 ## Programmatic date selection
 You can programmatically select the dates in scheduler by using the [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectedDate) property of SfScheduler.
