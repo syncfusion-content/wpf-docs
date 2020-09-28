@@ -1378,6 +1378,49 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ## Events
 
+### Value change started
+
+Invoked when the user starts selecting a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
+
+The `ValueChangeStarted` event contains the following arguments.
+
+`Value` : This value will be the last value the pointer had before the changes began.
+
+N> Do not use this event to update the pointer value instead use `ValueChanged` event. 
+
+{% tabs %}
+{% highlight xaml %}
+
+      <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer EnableDragging="True" 
+                                               ValueChangeStarted="CircularPointer_ValueChangeStarted"
+                                               Value="20" Symbol="InvertedTriangle" 
+                                               PointerType="SymbolPointer" />
+                    </gauge:CircularScale.Pointers>
+
+{% endhighlight %}
+{% highlight C# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.EnableDragging = true;
+            circularPointer.Value = 20;
+            circularPointer.Symbol = Symbol.InvertedTriangle;
+            circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.ValueChangeStarted += CircularPointer_ValueChangeStarted;
+            scale.Pointers.Add(circularPointer);
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
+
+        private void CircularPointer_ValueChangeStarted(object sender, ValueChangedEventArgs e)
+        {
+            
+        }          
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Value changing event
 
 Called during a drag when the user is selecting before a new value for the pointer by dragging. The `ValueChangingEventArgs` contains `OldValue`, `NewValue`, and `Cancel` properties.
@@ -1474,6 +1517,52 @@ Called during a drag when the user is selecting a new value for the pointer by d
             var value = e.Value;
         }
     }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Value change completed
+
+Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+
+This event will notify the completion of dragging with a new value being selected.
+
+The `ValueChangeCompleted` event contains the following arguments.
+
+`Value` : This value will be the new updated pointer value after dragging.
+
+N> Do not use this event to update the pointer value instead use `ValueChanged` event. 
+
+{% tabs %}
+{% highlight xaml %}
+
+     <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer EnableDragging="True" 
+                                               ValueChangeCompleted="CircularPointer_ValueChangeCompleted"
+                                               Value="20" Symbol="InvertedTriangle" 
+                                               PointerType="SymbolPointer" />
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+{% highlight C# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.EnableDragging = true;
+            circularPointer.Value = 20;
+            circularPointer.Symbol = Symbol.InvertedTriangle;
+            circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.ValueChangeCompleted += CircularPointer_ValueChangeCompleted;
+            scale.Pointers.Add(circularPointer);
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
 
 {% endhighlight %}
 {% endtabs %}
