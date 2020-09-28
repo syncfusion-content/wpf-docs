@@ -40,7 +40,6 @@ this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Programmatic date navigation
 You can programmatically navigate dates in scheduler by using the [displayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property of SfScheduler.
 
