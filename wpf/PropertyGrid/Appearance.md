@@ -268,6 +268,10 @@ We can customize the appearance of the `PropertyGrid` control by using the [SfSk
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -278,6 +282,8 @@ We can customize the appearance of the `PropertyGrid` control by using the [SfSk
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -289,12 +295,18 @@ Here, the `Blend` style is applied to the `PropertyGrid`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         x:Name="propertyGrid1" >
-    <syncfusion:PropertyGrid.SelectedObject>
-        <Button></Button>
-    </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:PropertyGrid syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                 x:Name="propertyGrid1" >
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+        </syncfusion:PropertyGrid>        
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

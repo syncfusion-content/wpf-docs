@@ -618,7 +618,7 @@ The size of the filter popup can be changed using the [FilterPopupHeight](https:
 
 ### Changing filter icon style after applying filters
 
-The filter icon style can be changed by writing style with TargetType as [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
+The filter icon style can be changed by writing style with TargetType as [FilterToggleButton](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
 
 {% tabs %}
 {% highlight c# %}

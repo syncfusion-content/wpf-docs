@@ -41,6 +41,8 @@ We can customize the header of the `ColorPicker` by using the [HeaderTemplate](h
 
 ![ColorPicker with custom header template](New-User-Interface-Support_images/CustomHeader_ColorPicker.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance)
+
 ## Change flow direction
 
 We can change the flow direction of the `ColorPicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
@@ -60,6 +62,8 @@ colorPicker.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![ColorPicker with RightToLeft flow direction](Layout-Related-Features_images/ColorPicker_RightToLeft.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance)
 
 ## Setting ToolTip
 
@@ -81,15 +85,18 @@ colorPicker.EnableToolTip = true;
 
 ![ColorPicker with TooTip support](Selection-Mode_images/ColorPicker_Tooltip.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance) to download the sample that showcases the UI customization and styling support.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance)
 
 ## Theme
 
 We can customize the appearance of the `ColorPicker` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `ColorPicker` control.
 
 * Blend
-* Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -100,6 +107,8 @@ We can customize the appearance of the `ColorPicker` control by using the [SfSki
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -111,8 +120,14 @@ Here, the `Blend` style is applied to the `ColorPicker`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         x:Name="colorPicker" />
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:ColorPicker syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                Name="colorPicker" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -128,4 +143,4 @@ SfSkinManager.SetVisualStyle(colorPicker, VisualStyles.Blend);
 
 ![ColorPicker with Blend visual style](Layout-Related-Features_images/ColorPicker_BlendTheme.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Themes)

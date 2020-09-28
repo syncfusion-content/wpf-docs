@@ -82,7 +82,7 @@ integerTextBox.IsReadOnlyCaretVisible = true;
 
 ## Customize the behavior for invalid value
 
-You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) behaves  when entered value is not equal to the value of [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ValidationValue.html) property, using [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~InvalidValueBehavior.html) property. It can be customized by below values,
+You can customize how the [IntegerTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox.html) behaves  when entered value is not equal to the value of [ValidationValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ValidationValue) property, using [InvalidValueBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_InvalidValueBehavior) property. It can be customized by below values,
 
  * `DisplayErrorMessage` - Shows a MessageBox with message" String validation failed" after focus is lost from IntegerTextBox.
 

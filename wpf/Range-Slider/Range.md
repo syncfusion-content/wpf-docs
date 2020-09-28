@@ -51,6 +51,8 @@ When ShowRange property is set to true, two thumbs are placed in the track. One 
 
 ![ShowRange](Range_images/Range_img1.png)
 
+N> When the `ShowRange` property is set to true, both ToolTip will display RangeStart and RangeEnd. 
+
 ## RangeStart  
 
 Gets or sets the start value of the range start.  

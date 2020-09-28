@@ -51,6 +51,48 @@ The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sy
 
 N> When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
+## MinorTickFrequency
+
+The `MinorTickFrequency` property, determines the number of minor ticks on the track between the major ticks. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    MinorTickFrequency="3"
+                    TickFrequency="10"
+                    TickPlacement="BottomRight"
+                    Value="40" />
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {   
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                MinorTickFrequency=3,
+                TickFrequency = 10,
+                TickPlacement=TickPlacement.BottomRight,
+                Value = 40
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![MinorTickFrequency](Ticks_images/MinorTicks.png)
+
 ## Step Frequency  
 
 When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~SnapsTo.html) property is set to StepValues, the [StepFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~StepFrequency.html) property is used to specify the interval between snap points. 
@@ -278,7 +320,7 @@ Ticks are placed inside the track.
 
 ![Inline](Ticks_images/Ticks_img5.png)
 
-## None 
+### None 
 
 No Tick mark appears.  
 
