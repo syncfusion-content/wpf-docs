@@ -33,11 +33,6 @@ Description</th></tr>
 <tr>
 <td>
 Save</td><td>
-Save()</td><td>
-Export the chart image to the particular location using FileSavePicker. </td></tr>
-<tr>
-<td>
-Save</td><td>
 Save(string fileName, StorageFolder folderLocation)</td><td>
 Export the chart image with the given file name to the mentioned location.If folderLocation is null then it exports the image to the app installed location.</td></tr>
 <tr>
@@ -49,22 +44,13 @@ Export the chart image using the stream and its corresponding encoder.</td></tr>
 
 
 
-
-
-
 ### Method 1
-{% highlight c# %}
-chart.Save();
-{% endhighlight %}
-
-
-### Method 2
 {% highlight c# %}
 chart.Save("sfchart.jpg", KnownFolders.PicturesLibrary);
 {% endhighlight  %}
 
 
-### Method 3
+### Method 2
 {% highlight c# %}
 var memoryStream = new InMemoryRandomAccessStream();
 
