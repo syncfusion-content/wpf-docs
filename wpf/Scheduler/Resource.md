@@ -33,7 +33,7 @@ schedule.ResourceCollection = ResourceCollection;
 
 ## Resource Grouping type in day,week,work week views.
 
-You can handle the visibility of resource using the `ResourceGroupType` property of `SfScheduler`. If the appointments are not grouped based on resources the default value is Resource.
+you can group the resource order by date or order by resource using the `ResourceGroupType` property of `SfScheduler`. If the appointments are not grouped based on resources the default value is Resource.
 
 * Resource
 
@@ -41,7 +41,7 @@ You can handle the visibility of resource using the `ResourceGroupType` property
 
 ### Resource
 
-It groups the number of dates under each resource.
+ResourceGroupType.Resource groups the number of dates under each resource.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,7 +72,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Create appointments based on resource
 
-You can associate `Resources` to the appointments by adding `Id` of resource in the `ResourceIdCollection` property of `ScheduleAppointment`. Appointments associated with the selected resources will be displayed in the `SfScheduler` views. 
+Appointments associated with the selected resources will be displayed in the `SfScheduler` views.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ schedule.ResourceCollection = ResourceCollection;
 
 You can associate `ResourceMapping` to the appointment by mapping resource in the `ResourceIdCollection` property of `ScheduleAppointment`. Custom appointments associated with the selected resources will be displayed in the `SfScheduler` views. 
 
-### create business object to appointment
+### create business object to appointment with custom resource
 
 {% tabs %}
 {% highlight c# %}
@@ -233,6 +233,22 @@ dataMapping.EndTime = "To";
 dataMapping.AppointmentBackground = "Color";
 dataMapping.ResourceIdCollection= "Resources";
 Schedule.AppointmentMapping = dataMapping;
+{% endhighlight %}
+{% endtabs %}
+
+### Create custom appointmnet with custom resource code
+You can schedule meetings for a day by setting From ,To and Resources of Meeting class.
+
+{%tabs %}
+{% highlight c# %}
+Meeting meeting = new Meeting();
+meeting.From = new DateTime(2020, 07, 01, 10, 0, 0);
+meeting.To = meeting.From.AddHours(1);
+meeting.EventName = "Meeting";
+meeting.Resources = new ObservableCollection<object> { (Resources[0] as Employee).Id, (Resources[1] as Employee).Id };
+var Meetings = new ObservableCollection<Meeting>();
+Meetings.Add(meeting);
+schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
