@@ -55,7 +55,6 @@ this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 {% endtabs %}
 
 >**NOTE**
-
 Date navigation before the minimum date will be reset to the scheduler minimum date and date navigation beyond the maximum date will be rest to the scheduler maximum date.
 
 ## Programmatic date selection
@@ -73,7 +72,6 @@ this.Schedule.SelectedDate = new DateTime(2020, 07, 10, 10, 0, 0);
 {% endtabs %}
 
 >**NOTE**
-
 Selection before minimum dates and beyond maximum dates using the `SelectedDate` is not possible.
 
 ## Programmatically change to adjacent dates
