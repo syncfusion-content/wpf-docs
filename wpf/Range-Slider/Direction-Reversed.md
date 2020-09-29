@@ -22,9 +22,9 @@ The direction of increasing value can be changed using [IsDirectionReversed](htt
                     Minimum="0"
                     Value="30" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -39,7 +39,7 @@ The direction of increasing value can be changed using [IsDirectionReversed](htt
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
