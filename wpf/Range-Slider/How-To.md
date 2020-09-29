@@ -28,9 +28,9 @@ The [LabelLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sync
                     TickFrequency="20"
                     TickPlacement="Outside" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
         public MainWindow()
         {
@@ -57,7 +57,7 @@ The [LabelLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sync
             e.Content = e.Content + "%";
         }
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -83,9 +83,9 @@ The [RangeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syn
                     RangeStart="30"
                     RangeEnd="60"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
         public MainWindow()
         {
@@ -116,7 +116,7 @@ The [RangeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syn
             var oldEndValue = e.OldEndValue;
         }
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -140,9 +140,9 @@ The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wp
                     RangeStart="30"
                     RangeEnd="60"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
         public MainWindow()
         {
@@ -171,7 +171,7 @@ The [RangeStartChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wp
             var oldStartValue = e.OldStartValue;
         }
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -195,9 +195,9 @@ The [RangeEndChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~
                     RangeStart="30"
                     RangeEnd="60"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
         public MainWindow()
         {
@@ -226,7 +226,7 @@ The [RangeEndChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~
             var oldEndValue = e.OldEndValue;
         }
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
