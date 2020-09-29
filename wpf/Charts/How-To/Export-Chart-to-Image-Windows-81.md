@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Chart to Image Windows 81| SfChart | Wpf | Syncfusion
-description: export chart to image (windows 8.1)
+description: This section described how to export chart to standard image with formats like JPG, PNG, etc (windows 8.1).
 platform: wpf
 control: SfChart
 documentation: ug
