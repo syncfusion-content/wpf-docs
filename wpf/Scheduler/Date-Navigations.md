@@ -60,8 +60,6 @@ this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 
 * Navigation before minimum dates and beyond maximum dates using `NavigateTo` is not possible.
 
-* Selection before minimum dates and beyond maximum dates using `SelectedDate` is not possible.
-
 ## Programmatic date selection
 You can programmatically select the dates in scheduler by using the [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectedDate) property of SfScheduler.
 
@@ -75,6 +73,10 @@ You can programmatically select the dates in scheduler by using the [SelectedDat
 this.Schedule.SelectedDate = new DateTime(2020, 07, 10, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+
+* Selection before minimum dates and beyond maximum dates using `SelectedDate` is not possible.
 
 ## Programmatically change to adjacent dates
 By default, the date can be navigated to next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can be also changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) methods available in SfScheduler.
