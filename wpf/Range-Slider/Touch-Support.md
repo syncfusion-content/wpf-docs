@@ -35,9 +35,9 @@ The following code example and screenshot illustrates the above.
                     SmallChange="5"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -54,7 +54,7 @@ The following code example and screenshot illustrates the above.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -79,9 +79,9 @@ The following code example and screenshot illustrates the above.
                     SmallChange="5"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -98,7 +98,7 @@ The following code example and screenshot illustrates the above.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -123,9 +123,9 @@ The following code example and screenshot illustrates the above.
                     SmallChange="5"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -142,7 +142,7 @@ The following code example and screenshot illustrates the above.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -168,9 +168,9 @@ The following code example and screenshot illustrates the above.
                     SmallChange="5"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -187,7 +187,7 @@ The following code example and screenshot illustrates the above.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
