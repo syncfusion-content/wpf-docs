@@ -27,9 +27,9 @@ When ShowRange property is set to true, two thumbs are placed in the track. One 
                     RangeStart="40"
                     ShowRange="True" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -45,7 +45,7 @@ When ShowRange property is set to true, two thumbs are placed in the track. One 
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -69,9 +69,9 @@ Gets or sets the start value of the range start.
                     RangeStart="40"
                     ShowRange="True" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -87,7 +87,7 @@ Gets or sets the start value of the range start.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -109,9 +109,9 @@ Gets or sets the end value of the range end.
                     RangeStart="40"
                     ShowRange="True" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -127,7 +127,7 @@ Gets or sets the end value of the range end.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -152,9 +152,9 @@ The `AllowRangeDrag` API allows the range in the Range Slider to be adjusted and
                     ShowValueLabels="True"
                     TickFrequency="20" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -173,7 +173,7 @@ The `AllowRangeDrag` API allows the range in the Range Slider to be adjusted and
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 

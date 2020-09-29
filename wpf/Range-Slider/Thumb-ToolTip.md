@@ -30,7 +30,7 @@ The Thumb tooltip displays the current value where the Thumb stands.
                     ThumbToolTipPrecision="2"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -105,9 +105,9 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
                     ThumbToolTipPlacement="BottomRight"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -122,7 +122,7 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -146,9 +146,9 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
                     ThumbToolTipPlacement="TopLeft"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -163,7 +163,7 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -186,9 +186,9 @@ No Tooltip appears.
                     ThumbToolTipPlacement="None"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -203,7 +203,7 @@ No Tooltip appears.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -227,9 +227,9 @@ No Tooltip appears.
             ThumbInterval="10"
             Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -247,7 +247,7 @@ No Tooltip appears.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 

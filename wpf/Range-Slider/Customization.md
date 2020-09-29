@@ -39,7 +39,7 @@ Modify the appearance of the inactive track using the `InactiveTrackStyle` prope
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
 
@@ -61,7 +61,7 @@ Modify the appearance of the inactive track using the `InactiveTrackStyle` prope
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -103,7 +103,7 @@ Modify the appearance of the active track by using the `ActiveTrackStyle` proper
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
 
@@ -134,7 +134,7 @@ Modify the appearance of the active track by using the `ActiveTrackStyle` proper
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -193,7 +193,7 @@ Modify the appearance of the thumb by using the `ThumbStyle` property.
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
 
@@ -241,7 +241,7 @@ Modify the appearance of the thumb by using the `ThumbStyle` property.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -283,7 +283,7 @@ Use the 'TickStroke' property, to change the color of major ticks.
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -302,7 +302,7 @@ Use the 'TickStroke' property, to change the color of major ticks.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -381,7 +381,7 @@ Use the 'TickLength' property, to change the height of the major ticks.
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -401,7 +401,7 @@ Use the 'TickLength' property, to change the height of the major ticks.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -432,7 +432,7 @@ Use the 'TickStrokeThickness' property, to change the thickness of the major tic
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -453,7 +453,7 @@ Use the 'TickStrokeThickness' property, to change the thickness of the major tic
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -705,7 +705,7 @@ Customize the value label using the TickBarItem style.
 
 {% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -727,7 +727,7 @@ Customize the value label using the TickBarItem style.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
