@@ -140,7 +140,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
 {% endhighlight %}
 {% endtabs %}
 
-N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_RefreshOutlines_System_Boolean_System_Boolean_) method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freeze Rows and Columns
 

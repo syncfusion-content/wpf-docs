@@ -26,9 +26,9 @@ The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sy
                     TickFrequency="20"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -43,13 +43,55 @@ The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Sy
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![TickFrequency](Ticks_images/Ticks_img1.png)
 
 N> When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
+
+## MinorTickFrequency
+
+The `MinorTickFrequency` property, determines the number of minor ticks on the track between the major ticks. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    MinorTickFrequency="3"
+                    TickFrequency="10"
+                    TickPlacement="BottomRight"
+                    Value="40" />
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {   
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                MinorTickFrequency=3,
+                TickFrequency = 10,
+                TickPlacement=TickPlacement.BottomRight,
+                Value = 40
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![MinorTickFrequency](Ticks_images/MinorTicks.png)
 
 ## Step Frequency  
 
@@ -67,9 +109,9 @@ When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syn
                     StepFrequency="20"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -84,7 +126,7 @@ When the [SnapsTo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syn
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -126,9 +168,9 @@ Tick marks are placed either below the track in horizontal orientation or right 
                     TickPlacement="BottomRight"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -144,7 +186,7 @@ Tick marks are placed either below the track in horizontal orientation or right 
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -155,9 +197,6 @@ N> In Vertical Orientation, this option places the ticks to right side.
 ### TopLeft  
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation. 
-
-{%highlight xaml%}
-
 
 {% tabs %}
 
@@ -171,9 +210,9 @@ Tick marks are placed either above the track in horizontal orientation or left o
                     TickPlacement="TopLeft"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -189,7 +228,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -213,9 +252,9 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
                     TickPlacement="Outside"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -231,7 +270,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -254,7 +293,7 @@ Ticks are placed inside the track.
                     TickPlacement="Inline"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
 {%highlight C#%}
 
@@ -272,17 +311,17 @@ Ticks are placed inside the track.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![Inline](Ticks_images/Ticks_img5.png)
 
-## None 
+### None 
 
 No Tick mark appears.  
 
-% tabs %}
+{% tabs %}
 
 {% highlight XAML %}
 
@@ -294,9 +333,9 @@ No Tick mark appears.
                     TickPlacement="None"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -312,7 +351,7 @@ No Tick mark appears.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 

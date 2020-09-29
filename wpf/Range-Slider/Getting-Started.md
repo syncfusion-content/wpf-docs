@@ -59,7 +59,7 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
                     Minimum="0"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -67,9 +67,9 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
 
 The following code sample shows how to create the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) from code-behind.
 
-{%tabs%}
+{% tabs %}
 
-{%highlight C#%}
+{% highlight C# %}
 
 SfRangeSlider rangeSlider = new SfRangeSlider()
             {
@@ -81,8 +81,8 @@ SfRangeSlider rangeSlider = new SfRangeSlider()
                 Value = 60
             };
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%endtabs%}
+{% endtabs %}
 
 ![RangeSlider](GettingStarted_images/img2.png)

@@ -20,9 +20,9 @@ Gets or sets the minimum and maximum possible value of the range.
                     Maximum="100"
                     Minimum="0" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -35,6 +35,6 @@ Gets or sets the minimum and maximum possible value of the range.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
