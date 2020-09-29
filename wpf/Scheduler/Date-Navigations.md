@@ -15,7 +15,7 @@ Visible dates can be restricted between certain range of dates, using [MaximumDa
 ![DisableDates in  WPF Scheduler](DisableDates_Images/DisableDates-MonthView.png)
 
 ### Minimum display date
-`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range.The dates before the minimum date will be disabled  in schedule.
+`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range. The dates before the minimum date will be disabled  in schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -29,7 +29,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 {% endtabs %}
 
 ### Maximum display date
-`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range.The dates beyond the maximum date will be disabled  in schedule.
+`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range. The dates beyond the maximum date will be disabled  in schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +58,7 @@ this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 
 >**NOTE**
 
-* Navigation before minimum dates and beyond maximum dates using `NavigateTo` is not possible.
+* Date navigation before minimum date will be reset to scheduler minimum date and date navigation beyond maximum date will be rest to scheduler maximum date.
 
 * Selection before minimum dates and beyond maximum dates using `SelectedDate` is not possible.
 
