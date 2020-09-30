@@ -70,7 +70,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ![WPF scheduler Grouping resource by date ](Resource_Images/Resource_Date.png)
 
-## Create appointments based on resource
+## Assign resources to appointments
 
 Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.
 
@@ -95,7 +95,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 •When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
 •When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
 
-### Appointment sharing to multiple resources
+### Multiple resources appointment sharing
 Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
 
 {% tabs %}
@@ -291,11 +291,11 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-## Create special time region based on Resource
+## Assign resources to special time regions 
 
 Special time region can be created based on the resources in day , week , work week and timeline views.
 
-### special time region based on Resource in days View
+### Assign resources to special time regions in days view
 
 {% tabs %}
 {% highlight c# %}
@@ -316,7 +316,7 @@ ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003
 
 ![WPF scheduler resource Special Time Region ](Resource_Images/Resource_SepcialRegion.png)
 
-### special time region based on Resource in timeline View
+### Assign resources to special time regions in timeline view
 
 {% tabs %}
 {% highlight c# %}
