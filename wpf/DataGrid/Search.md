@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF DataGrid (SfDataGrid)
 
-DataGrid control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~Search.html) method.
+DataGrid control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 
 ### Filtering
 
-You can enable filter based on search by setting [SearchHelper.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~AllowFiltering.html) property to true.
+You can enable filter based on search by setting [SearchHelper.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_AllowFiltering) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -38,7 +38,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 ![ enable filter based on search](Search_images/Search_img2.png)
 
 
-You can search the data with the case-sensitivity by setting [SearchHelper.AllowCaseSensitiveSearch](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~AllowCaseSensitiveSearch.html) property.
+You can search the data with the case-sensitivity by setting [SearchHelper.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_AllowCaseSensitiveSearch) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ this.dataGrid.SearchHelper.AllowCaseSensitiveSearch = true;
 
 ### Changing Search Highlight Background
 
-In SfDatagrid, you can change the search text highlighting color by setting [SearchHelper.SearchBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchBrush.html) property. 
+In SfDatagrid, you can change the search text highlighting color by setting [SearchHelper.SearchBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchBrush) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ this.dataGrid.SearchHelper.SearchForegroundBrush = Brushes.Red;
 
 ## Navigating cells based on search text
 
-You can navigate to the cells contains the SearchText using [SearchHelper.FindNext](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~FindNext.html) and [SearchHelper.FindPrevious](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~FindPrevious.html) methods.
+You can navigate to the cells contains the SearchText using [SearchHelper.FindNext](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_FindNext_System_String_) and [SearchHelper.FindPrevious](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_FindPrevious_System_String_) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ this.dataGrid.SearchHelper.FindPrevious("SearchText");
 {% endhighlight %}
 {% endtabs %}
 
-You can highlight the currently navigated search text using [SearchHelper.SearchHighlightBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchHighlightBrush.html) property.
+You can highlight the currently navigated search text using [SearchHelper.SearchHighlightBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchHighlightBrush) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ this.dataGrid.SearchHelper.SearchForegroundHighlightBrush = Brushes.Red;
 
 ## Move CurrentCell when FindNext and FindPrevious
 
-You can move the current cell along with FindNext and FindPrevious operation using [MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~MoveCurrentCell.html) method in selection controller. 
+You can move the current cell along with FindNext and FindPrevious operation using [MoveCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method in selection controller. 
 
 
 {% tabs %}
@@ -132,7 +132,7 @@ this.dataGrid.SelectionController.MoveCurrentCell(this.dataGrid.SearchHelper.Cur
 
 ## Clear Search
 
-You can clear the search by calling the [SearchHelper.ClearSearch](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~ClearSearch.html) method. 
+You can clear the search by calling the [SearchHelper.ClearSearch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_ClearSearch) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ this.dataGrid.SearchHelper.ClearSearch();
 
 ## Search operation on Master-Details View
 
-Master-details view allows you to search the data by using [SearchHelper.Search](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~Search.html) method in the [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
+Master-details view allows you to search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method in the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid).
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ Master-details view allows you to search the data by using [SearchHelper.Search]
 
 ### Navigating cells based on search text in DetailsViewDataGrid
 
-You can navigate to the cells contains the SearchText using [SearchHelper.FindNext](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~FindNext.html) and [SearchHelper.FindPrevious](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~FindPrevious.html) methods in [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
+You can navigate to the cells contains the SearchText using [SearchHelper.FindNext](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_FindNext_System_String_) and [SearchHelper.FindPrevious](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_FindPrevious_System_String_) methods in [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid).
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ N> It is not possible to Navigate with the two DataGrid at a time.
 
 ## Search customization
 
-SfDataGrid process the search operations in [SearchHelper](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
+SfDataGrid process the search operations in [SearchHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
 
 {% tabs %}
 {% highlight c# %}
@@ -249,7 +249,7 @@ this.dataGrid.SelectedIndex = recordIndex;
 
 ### Search with the GridComboBoxColumn
 
-You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
+You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
 
 {% tabs %}
 {% highlight c# %}

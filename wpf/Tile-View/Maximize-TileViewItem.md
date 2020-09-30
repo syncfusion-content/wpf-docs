@@ -244,7 +244,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Change maximized TileViewItem header
 
-If you want to change the header of the `TileViewItem` on maximized state, use the [MaximizedHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedHeader.html) property. The default value of `MaximizedHeader` property is `null`.
+If you want to change the header of the `TileViewItem` on maximized state, use the [MaximizedHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MaximizedHeader) property. The default value of `MaximizedHeader` property is `null`.
 
 N> Please refer [Maximized TileViewItem header](https://help.syncfusion.com/wpf/tile-view/tileviewitem-header#change-minimized-and-maximized-header) topic to know more details about maximized `TileViewItem` header and its customization available in the `TileViewControl`.
 

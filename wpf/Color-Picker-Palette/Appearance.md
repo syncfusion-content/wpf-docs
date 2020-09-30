@@ -57,12 +57,26 @@ We can customize the appearance of the `ColorPickerPalette` control by using the
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * VisualStudio2013
 * VisualStudio2015
 
 {% tabs %}
+{% highlight xaml %}
+
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:ColorPickerPalette syncfusionskin:SfSkinManager.VisualStyle="Blend"
+                                       Name="colorPickerPalette" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
 {% highlight C# %}
 
 //Namespace for the SfSkinManager.
@@ -70,8 +84,6 @@ using Syncfusion.SfSkinManager;
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
 SfSkinManager.SetVisualStyle(colorPickerPalette, VisualStyles.Blend);
-colorPickerPalette.Width = 60;
-colorPickerPalette.Height = 40;
 
 {% endhighlight %}
 {% endtabs %}
@@ -80,6 +92,6 @@ colorPickerPalette.Height = 40;
 
 Here, the `Blend` style is applied to the `ColorPickerPalette`.
 
-Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Themes) to download the sample that showcases the appearance customization and  different theming supports.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Themes)
 
 

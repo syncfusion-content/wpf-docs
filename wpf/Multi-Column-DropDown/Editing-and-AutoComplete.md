@@ -9,11 +9,11 @@ documentation: ug
 
 # Editing and Auto complete
 
-SfMultiColumnDropDownControl allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropDownControl.ReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ReadOnly.html) property as `true`.
+SfMultiColumnDropDownControl allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropDownControl.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ReadOnly) property as `true`.
 
 ## Auto Completion of Text
 
-SfMultiColumnDropDownControl auto append the text based on `ItemsSource` when end-user edits in the TextBox when setting [AllowAutoComplete](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowAutoComplete.html) to `true`.
+SfMultiColumnDropDownControl auto append the text based on `ItemsSource` when end-user edits in the TextBox when setting [AllowAutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`.
  
 ![](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img1.png)
 
@@ -22,21 +22,21 @@ When setting DataTable as `ItemsSource`, `AllowAutoComplete` is not supported.
 
 ## Auto Increment
 
-You can allow end-user to change the SelectedItem while mouse wheel over the control by setting [AllowSpinOnMouseWheel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowSpinOnMouseWheel.html) as `true`.
+You can allow end-user to change the SelectedItem while mouse wheel over the control by setting [AllowSpinOnMouseWheel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowSpinOnMouseWheel) as `true`.
  
 ## Null Value Support
 
-You can allow the null values in editor by setting [AllowNullInput](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowNullInput.html) as `true`. While deleting the text in Textbox, then the SelectedItem will be null.
+You can allow the null values in editor by setting [AllowNullInput](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowNullInput) as `true`. While deleting the text in Textbox, then the SelectedItem will be null.
 
 Note: `AllowNullInput` will work only when the underlying property type is nullable.
 
 ## Open popup while editing
 
-You can open the popup while typing the value in editor itself by setting [AllowImmediatePopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~AllowImmediatePopup.html) as `true`.
+You can open the popup while typing the value in editor itself by setting [AllowImmediatePopup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowImmediatePopup) as `true`.
  
 ## Open popup while loading
 
-You can specify whether the popup is need to open or close by setting [IsDropDownOpen](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~IsDropDownOpen.html) as `true`. You can open the popup while loading the SfMultiColumnDropDownControl itself by setting `IsDropDownOpen` as `true`.
+You can specify whether the popup is need to open or close by setting [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_IsDropDownOpen) as `true`. You can open the popup while loading the SfMultiColumnDropDownControl itself by setting `IsDropDownOpen` as `true`.
 
 {% tabs %}
 {% highlight xml %}
@@ -106,7 +106,7 @@ Shortcuts to open and close the popup.
 
 ## Getting editor text
 
-You can access the text displayed in the Textbox by using [SfMultiColumnDropDownControl.Text](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~Text.html) property.
+You can access the text displayed in the Textbox by using [SfMultiColumnDropDownControl.Text](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_Text) property.
 
 {% tabs %}
 {% highlight xml %}
@@ -142,4 +142,4 @@ var text = this.sfMultiColumn.Text;
 
 ## Selecting text when editor got focus
 
-You can select the text displayed in the textbox when it got the focus from any other control by setting [TextSelectionOnFocus](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~TextSelectionOnFocus.html) property.
+You can select the text displayed in the textbox when it got the focus from any other control by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_TextSelectionOnFocus) property.

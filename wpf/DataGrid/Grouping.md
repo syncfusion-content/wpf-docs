@@ -18,9 +18,9 @@ SfDataGrid allows you to group the data in below ways,
 
 ## UI grouping
 
-You can allow end-user to group the data by setting  [SfDataGrid.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowGrouping.html) property to `true` , where user can drag and drop the column into `GroupDropArea` to group based on that column.
+You can allow end-user to group the data by setting  [SfDataGrid.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowGrouping) property to `true` , where user can drag and drop the column into `GroupDropArea` to group based on that column.
  
-When the column is grouped, records that have an identical value in the column are combined to form a group. The GroupDropArea can be enabled by setting the [SfDataGrid.ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowGroupDropArea.html) property to `true`.
+When the column is grouped, records that have an identical value in the column are combined to form a group. The GroupDropArea can be enabled by setting the [SfDataGrid.ShowGroupDropArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowGroupDropArea) property to `true`.
 
 
 {% tabs %}
@@ -36,7 +36,7 @@ this.dataGrid.AllowGrouping = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable grouping on particular column by setting the [GridColumn.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowGroupingProperty.html) property.
+You can enable or disable grouping on particular column by setting the [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowGroupingProperty) property.
 
 
 {% tabs %}
@@ -58,7 +58,7 @@ this.dataGrid.Columns["CustomerID"].AllowGrouping = true;
 {% endtabs %}
 
 
-N> [GridColumn.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowGroupingProperty.html) takes higher priority than [SfDataGrid.AllowGrouping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowGrouping.html).
+N> [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowGroupingProperty) takes higher priority than [SfDataGrid.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowGrouping).
 
 ![WPF DataGrid Grouping](Grouping_images/Grouping_img1.png)
 
@@ -73,9 +73,9 @@ Each `CaptionSummaryRow` carries information about a particular group like group
 
 ## Programmatic grouping
 
-SfDataGrid allows you to group the data programmatically by adding or removing [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) collection.
+SfDataGrid allows you to group the data programmatically by adding or removing [GroupColumnDescription](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
 
-For example, if you want to group the OrderID column programmatically, define its [MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) to [ColumnName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~ColumnName.html) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
+For example, if you want to group the OrderID column programmatically, define its [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) to [ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnName) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
 
 
 {% tabs %}
@@ -158,7 +158,7 @@ this.datagrid.Columns.Add(new GridComboBoxColumn()
 
 ## Clearing or removing group
 
-You can remove all the groups by clearing [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) collection.
+You can remove all the groups by clearing [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
 
 
 {% tabs %}
@@ -168,7 +168,7 @@ this.dataGrid.GroupColumnDescriptions.Clear();
 {% endtabs %}
 
 
-You can ungroup the column programmatically at runtime by removing [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html)  from [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) collection.
+You can ungroup the column programmatically at runtime by removing [GroupColumnDescription](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html)  from [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
 
 
 {% tabs %}
@@ -187,7 +187,7 @@ To ungroup the column in UI, click the close button on column header or drag the
 
 ## Hiding the column when grouped
 
-You can hide the column header when the particular column gets grouped by setting [SfDataGrid.ShowColumnWhenGrouped](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowColumnWhenGrouped.html) property to `false`.
+You can hide the column header when the particular column gets grouped by setting [SfDataGrid.ShowColumnWhenGrouped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowColumnWhenGrouped) property to `false`.
 
  
 {% tabs %}
@@ -208,7 +208,7 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 ## Freezing caption rows when scrolling 
 
-You can freeze the group caption of the group in view until its records scrolled out of the view by setting the [SfDataGrid.AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) property to `true`.
+You can freeze the group caption of the group in view until its records scrolled out of the view by setting the [SfDataGrid.AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders) property to `true`.
  
 {% tabs %}
 {% highlight xaml %}
@@ -235,7 +235,7 @@ You can allow end-user to expand or collapse the groups programmatically at runt
  
 ### Expand groups while grouping
  
-You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state.
+You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoExpandGroups) to `true`. So, when user group any column, then all groups will be in expanded state.
  
 {% tabs %}
 {% highlight xaml %}
@@ -254,7 +254,7 @@ this.dataGrid.AutoExpandGroups = true;
 
 #### Expand or collapse all the Groups
 
-You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CollapseAllGroup.html) methods.
+You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpandAllGroup) and [SfDataGrid.CollapseAllGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CollapseAllGroup) methods.
 
 
 {% tabs %}
@@ -267,7 +267,7 @@ this.dataGrid.CollapseAllGroup();
 
 #### Expand or Collapse the Group based on its level
 
-You can expand or collapse the group based on its level by using [SfDataGrid.ExpandGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpandGroupsAtLevel.html) and [SfDataGrid.CollapseGroupsAtLevel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CollapseGroupsAtLevel.html) methods.
+You can expand or collapse the group based on its level by using [SfDataGrid.ExpandGroupsAtLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpandGroupsAtLevel_System_Int32_) and [SfDataGrid.CollapseGroupsAtLevel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CollapseGroupsAtLevel_System_Int32_) methods.
 
 
 {% tabs %}
@@ -280,7 +280,7 @@ this.dataGrid.CollapseGroupsAtLevel(2);
 
 #### Expand or Collapse the specific Group
 
-You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CollapseGroup.html) methods.
+You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ExpandGroup_Syncfusion_Data_Group_) and [SfDataGrid.CollapseGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CollapseGroup_Syncfusion_Data_Group_) methods.
 
 
 {% tabs %}
@@ -312,7 +312,7 @@ this.dataGrid.IndentColumnWidth = 50;
 
 ### GroupDropArea text
 
-You can change the `GroupDropArea’ s` text can by setting [SfDataGrid.GroupDropAreaText](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaText.html) property.
+You can change the `GroupDropArea’ s` text can by setting [SfDataGrid.GroupDropAreaText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupDropAreaText) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -351,7 +351,7 @@ SfDataGrid allows you to customize the appearance and height of `GroupDropArea` 
 ### Expanding GroupDropArea while loading
 
 
-By default, the `GroupDropArea` will be expanded while dragging the column towards the `GroupDropArea`. You can set the `GroupDropArea` to be always expanded by setting the [SfDataGrid.IsGroupDropAreaExpanded](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IsGroupDropAreaExpanded.html) property to `true`. 
+By default, the `GroupDropArea` will be expanded while dragging the column towards the `GroupDropArea`. You can set the `GroupDropArea` to be always expanded by setting the [SfDataGrid.IsGroupDropAreaExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IsGroupDropAreaExpanded) property to `true`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -371,7 +371,7 @@ this.dataGrid.IsGroupDropAreaExpanded = true;
 
 DataGrid allows you to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement. 
 
-To perform custom grouping on a particular column , specify the custom logic through [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) property and the column name to [GroupColumnDescription.ColumnName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~ColumnNameProperty.html) property.
+To perform custom grouping on a particular column , specify the custom logic through [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) property and the column name to [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnNameProperty) property.
 
 For an example, the Date column is grouped based on the week basis in the following example.
 
@@ -425,7 +425,7 @@ public class GroupDateTimeConverter : IValueConverter
 {% endtabs %}
 
 
-Now , assign the `GroupDateTimeConverter` into [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupColumnDescriptions.html) and set `Date` property to [GroupColumnDescription.ColumnName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~ColumnNameProperty.html) property.
+Now , assign the `GroupDateTimeConverter` into [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) and set `Date` property to [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnNameProperty) property.
 
 
 {% tabs %}
@@ -457,8 +457,8 @@ You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-so
 
 ### Sorting the grouped column records 
 
-In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~SortGroupRecords.html)
-sorted based on the column name described in [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_SortGroupRecords)
+sorted based on the column name described in [GroupColumnDescription](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -486,7 +486,7 @@ In the below screenshot custom grouping is applied based on `SickLeaveHours` col
 
 ## Sorting groups based on summary values
 
-DataGrid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value  by using [SfDataGrid. SummaryGroupComparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryGroupComparer.html) property.
+DataGrid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value  by using [SfDataGrid. SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property.
 
 
 Follow the below steps to sort the groups based on caption aggregate value.
@@ -519,7 +519,7 @@ public class SortGroupComparers : IComparer<Group>, ISortDirection
 
 ### Defining custom group comparer to DataGrid
 
-Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGroupComparer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryGroupComparer.html) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
+Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
 
 
 {% tabs %}
@@ -559,11 +559,11 @@ You can download the sample demo [here](http://www.syncfusion.com/downloads/supp
 
 ### GroupExpanding event
 
-The [SfDataGrid.GroupExpanding](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupExpanding_EV.html) event occurs when the group is being expanded.
+The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being expanded.
  
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
 
-[Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs~Group.html) - Gets the group that’s being expanded.
+[Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
 [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
  
@@ -585,20 +585,20 @@ void dataGrid_GroupExpanding(object sender, Syncfusion.UI.Xaml.Grid.GroupChangin
 
 ### GroupExpanded event
 
-The [SfDataGrid.GroupExpanded](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupExpanded_EV.html) event occurs after the group is expanded.
+The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is expanded.
 
  
-The [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
+The [GroupChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs~Group.html) - Gets the expanded group.
+[Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangedEventArgs_Group) - Gets the expanded group.
 
 ### GroupCollapsing event 
 
-The [SfDataGrid.GroupCollapsing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCollapsing_EV.html) event occurs when the group is being collapsed.
+The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being collapsed.
 
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs~Group.html) - Gets the group that’s being collapsed.
+[Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being collapsed.
 
 [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group collapsing.
 
@@ -621,11 +621,11 @@ void dataGrid_GroupCollapsing(object sender, GroupChangingEventArgs e)
 
 ### GroupCollapsed event
  
-The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCollapsed_EV.html) event occurs after the group is collapsed.
+The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is collapsed.
  
-[GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
+[GroupChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
 
-[Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs~Group.html) - Gets the collapsed group.
+[Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangedEventArgs_Group) - Gets the collapsed group.
 
 ## See Also
 [How to remove the gridline of WPF DataGrid (SfDataGrid) with grouping?](https://www.syncfusion.com/kb/11009)

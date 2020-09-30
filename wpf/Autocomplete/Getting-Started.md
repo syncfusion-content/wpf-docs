@@ -17,15 +17,15 @@ Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/nu
 
 ## Creating a simple application
 
-Create a WPF application with [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
+Create a WPF application with [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control using the following steps:
 
 ### Create a project
 
-Create a new WPF project in Visual Studio to display the [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with their functionalities.
+Create a new WPF project in Visual Studio to display the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control with their functionalities.
 
 ### Add a control using the designer
 
-The [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
@@ -40,7 +40,7 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3. Declare the [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
+3. Declare the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -72,8 +72,8 @@ To add the control manually in C#, follow the given steps:
 1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2. Import the [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) namespace using **Syncfusion.Windows.Controls.Input;**.
-3. Create an [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) instance, and add it to the window.
+2. Import the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) namespace using **Syncfusion.Windows.Controls.Input;**.
+3. Create an [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -222,7 +222,7 @@ For further details, refer to [AutoComplete source](https://help.syncfusion.com/
 
 ## AutoComplete modes 
 
-Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
+Suggestions can be shown in number of ways. [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) supports the following.
 
 <table>
 <tr>
@@ -283,7 +283,7 @@ textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 ## Selection 
 
-By default single selection is enable in AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property to specify whether a single or multiple selection.
+By default single selection is enable in AutoComplete control. It can set the [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property to specify whether a single or multiple selection.
 
 Index of the selected items can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionIndex) property. 
 
@@ -291,7 +291,7 @@ The selected items of the AutoComplete can be retrieved using the [SelectedItem]
 
 In Multi-selection, [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedItems) property contains the items that are selected in the control.
 
-The selected values of the AutoComplete can be retrieved using the [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property.
+The selected values of the AutoComplete can be retrieved using the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectedValue) property.
 
 For further details, refer to the [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#retrieving-selectedvalue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#setting-and-retrieving-selecteditem).
 

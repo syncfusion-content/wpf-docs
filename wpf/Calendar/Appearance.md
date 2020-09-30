@@ -113,8 +113,8 @@ You can customize the appearance of the `CalendarEdit` control by using the [SfS
 {% tabs %}
 {% highlight xaml %}
 
-<Window>
-    <!--Theme Namespace-->
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
     xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
     <Grid>
         <syncfusion:CalendarEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
