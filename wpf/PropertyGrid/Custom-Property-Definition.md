@@ -9,15 +9,23 @@ documentation: ug
 
 # Custom definition of the properties in WPF PropertyGrid
 
-By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the `PropertyGridItem`.
+In this section, let us see how to configure properties manually in (`xaml` or `C#`) instead of event or attributes.
 
-N> Manual definition of property item by using `PropertyGridItem` have higher priority than property definition from attributes and `AutoGeneratingPropertyGridItem` event.
+
+
+N> Manual definition of property item by using `PropertyGridItem` have higher priority than property definition from attributes and `AutoGeneratingPropertyGridItem` event. When `AutoGenerateItems` is disabled, `AutoGeneratingPropertyGridItem` event will not be triggered.
 
 ## Define PropertyItem manually 
 
-You can manually define the property item by set the value to its properties and add that item into the `Items` collection property. You can enable it only by setting the `AutoGenerateItems` property value as `false`. The default value of `AutoGenerateItems` property is `true`.
+By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the `PropertyGridItem`.
 
-N> If `AutoGenerateItems` property is `false`, then only the items which are added in the `Items` collection will generated in the `PropertyGrid`.
+### Adding defined PropertyGridItems into PropertyGrid
+
+If you want to load the manually defined property items into the `PropertyGrid`, add that `Items` collection property. You can enable it only by setting the `AutoGenerateItems` property value as `false`. The default value of `AutoGenerateItems` property is `true`.
+
+N> When `AutoGenerateItems` is `false`, `AutoGeneratingPropertyGridItem` event will not be triggered.
+
+In the following example, `AutoGeneratingPropertyGridItem` event not triggered by disabling the `AutoGenerateItems` and items which are manually added in the `Items` collection only loaded in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -196,23 +204,23 @@ private void ClearItems_Click(object sender, RoutedEventArgs e) {
 
 ![PropertyGridItem adding and removing at runtime](Property_definition_images\Dynamic.gif)
 
-## Manually define the PropertyItem
+## Custom definition of PropertyItem
 
-You can manually define the display name, description, category, nested mode, readonly state and value editor for any property items.
+You can customize the display name, description, category, nested mode, readonly state and value editor for any property items.
 
-* `PropertyGridItem.DisplayName` - To manually define the display name for the property items.
+* `PropertyGridItem.DisplayName` - To customize the display name for the property items.
 
-* `PropertyGridItem.Description`- To manually define the description for the property items.
+* `PropertyGridItem.Description`- To customize the description for the property items.
 
-* `PropertyGridItem.CategoryName` - To manually define the category for the property items.
+* `PropertyGridItem.CategoryName` - To customize the category for the property items.
 
-* `PropertyGridItem.IsReadOnly` - To manually define the readonly state for the property items.
+* `PropertyGridItem.IsReadOnly` - To customize the readonly state for the property items.
 
-* `PropertyGridItem.Editor` - To manually define the own value editor for the property items.
+* `PropertyGridItem.Editor` - To customize the own value editor for the property items.
 
-* `PropertyGridItem.NestedPropertyDisplayMode` - To manually define the nested mode of the property items.
+* `PropertyGridItem.NestedPropertyDisplayMode` - To customize the nested mode of the property items.
 
-* `PropertyGridItem.Visibility` - To manually define the visibility for the property items.
+* `PropertyGridItem.Visibility` - To customize the visibility for the property items.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Custom-PropertyDefinition)
 
