@@ -470,7 +470,7 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             var resource = item as Employee;
-            if (resource.ID.Equals("0"))
+            if (resource.ID.Equals("1000"))
                 return DayResourceTemplate;
             else
                 return TimeResourceTemplate;
