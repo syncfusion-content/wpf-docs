@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource Grouping scheduler | WPF| Syncfusion
+title: Resource in scheduler | WPF| Syncfusion
 description: WPF scheduler resource grouping allows users to select resources and display with efficient use of the events associated with the selected resources.
 platform: WPF
 control: SfScheduler
@@ -11,8 +11,8 @@ documentation: ug
 
 The Scheduler control allows you to define resources that can be assigned to appointments in day,week,work week and timeline views. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
 
-## Adding resources in scheduler
-Resources can be visible to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Name`, `Id`, and `Color` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SFScheduler`.
+## Add resources in scheduler
+Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
 
 {% tabs %}
 {% highlight c# %}
@@ -20,7 +20,7 @@ Resources can be visible to the Scheduler by setting `ResourceGroupType` propert
 // Adding schedule resource in scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
-new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000", Foreground = new SolidColorBrush(Colors.White) },
+new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000" },
 new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1001" },
 new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "1002" },
 };
@@ -30,18 +30,15 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
+N>`ResourceGroupType` property value is `None` no resource view displayed in schedule even resource added using the `ResourceCollection` property in scheduler.
 
 ## Resource Grouping type in day,week,work week views.
 
-you can group the resource order by date or order by resource using the `ResourceGroupType` property of `SfScheduler`. If the appointments are not grouped based on resources the default value is Resource.
-
-* Resource
-
-* Date
+You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of `SfScheduler` in day,week,work week views. 
 
 ### Resource
 
-ResourceGroupType.Resource groups the number of dates under each resource.
+`ResourceGroupType` as `Resource` used to groups the number of dates under each resource.
 
 {% tabs %}
 {% highlight xaml %}
@@ -56,7 +53,7 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 ![WPF scheduler Resource Grouping](Resource_Images/Resource.png)
 
 ### Date
-It groups the number of resources under each date.
+`ResourceGroupType` as `Date` used to  groups the number of resources under each date.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,7 +69,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Create appointments based on resource
 
-Appointments associated with the selected resources will be displayed in the `SfScheduler` views.
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,8 +88,12 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
+>**NOTE**
+•When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
+•When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
+
 ### Appointment sharing to multiple resources
-Multiple resources can share the same events, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
+Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,28 +117,26 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 
 ## Scheduler Resource Mapping
 
-Schedule supports full data binding to any type of `IEnumerable` source. Specify the `ResourceMapping` attribute to map the properties in the underlying data source to the schedule resource.
+Schedule supports full data binding to `ResourceCollection`. Specify the `ResourceMapping` attribute to map the properties in the underlying data source to the schedule resource.
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | `Name` | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
 | `Id` | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
-| `Image` | Maps the property name of custom class, which is equivalent to Image in ScheduleResource. |
-| `Color`| Maps the property name of custom class, which is equivalent to Color in ScheduleResource. |
+| `Background` | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
+| `Foreground`| Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
 
 >**NOTE**
 Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
-You can create a custom class `Employee` with mandatory fields `Name`, `Subject`, `Id`,`ForegroundColor` and `BackgroundColor`.
+You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.
 
 {% tabs %}
 {% highlight c# %}
 public class Employee
 {
 public string Name { get; set; }
-
-public string ImageSource { get; set; }
 
 public string Id { get; set; }
 
@@ -150,7 +149,7 @@ public Brush ForegroundColor { get; set; }
 
 * You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-* You can map the properties of `Employee` class with our `SfScheduler` control using Scheduler `ResourceMapping`.
+You can map the properties of `Employee` class with  `SfScheduler` control using Scheduler `ResourceMapping`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,29 +171,29 @@ schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Create custom resource collection
+### Create custom resource collection in scheduler
 
-You can add resources for `Employee` that can be assigned to appointments using the `ResourceIdCollection` property of `SfScheduler`. You need to set the `Name`, `Id`, and `Color` properties of `ResourceCollection` to create a resource.
+You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. 
 
 {% tabs %}
 {% highlight c# %}
 // Creating and Adding custom resource in scheduler resource collection.
-var ResourceCollection = new ObservableCollection<object>()
+var ResourceCollection = new ObservableCollection<Employee>()
 {
 new Employee () { Name = "Sophia", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
-new Employee () { Name = " Kinsley Elena", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" },
-new Employee () { Name = " Adeline Ruby", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" },
+new Employee () { Name = " Kinsley Elena", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.Red)},
+new Employee () { Name = " Adeline Ruby", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.Yellow)},
 };
 
-//Adding schedule resource collection to schedule resources of SfSchedule.
+//Adding schedule resource collection to schedule resources.
 schedule.ResourceCollection = ResourceCollection;
 
 {% endhighlight %}
 {% endtabs %}
 
-You can associate `ResourceMapping` to the appointment by mapping resource in the `ResourceIdCollection` property of `ScheduleAppointment`. Custom appointments associated with the selected resources will be displayed in the `SfScheduler` views. 
-
 ### create business object to appointment with custom resource
+
+You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of `AppointmentMapping`. Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +209,9 @@ public class Meeting
 }
 {% endhighlight %}
 {% endtabs %}
+
 N>You can inherit this class from the INotifyPropertyChanged for dynamic changes in custom data.
+
 You can map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
 {%tabs %}
 {% highlight xaml %}
@@ -236,8 +237,7 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Create custom appointmnet with custom resource code
-You can schedule meetings for a day by setting From ,To and Resources of Meeting class.
+You can schedule meetings for a Resource by setting `From` , `To` and `Resources` of Meeting class.
 
 {%tabs %}
 {% highlight c# %}
@@ -255,36 +255,36 @@ schedule.ItemsSource = Meetings;
 
 ## Visible resource count
 
-You can customize the number of visible resources in the current view using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
+You can customize the number of visible resources in the day , week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
 
-### Day view visible resource count
-`DaysViewSetting` applicable for Day, Week and WorkWeek views. By default, value of this property is set to 1.
+### Visible resource count in days view
+`DaysViewSetting` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.DaysViewSettings>
-<Schedule:DaysViewSettings VisibleResourceCount="3"/>
+<Schedule:DaysViewSettings VisibleResourceCount="2"/>
 </Schedule:SfScheduler.DaysViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-schedule.DaysViewSettings.VisibleResourceCount = 3;
+schedule.DaysViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
 
-### Timeline View visible resource count
-`TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 1.
+### Visible resource count in timeline view
+`TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 3.
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
 <Schedule:SfScheduler.TimelineViewSettings>
-<Schedule:TimelineViewSettings VisibleResourceCount="3"/>
+<Schedule:TimelineViewSettings VisibleResourceCount="2"/>
 </Schedule:SfScheduler.TimelineViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-schedule.TimelineViewSettings.VisibleResourceCount = 3;
+schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,7 +292,7 @@ schedule.TimelineViewSettings.VisibleResourceCount = 3;
 
 Special time region can be created based on the resources in day , week , work week and timeline views.
 
-### Day View
+### special time region based on Resource in days View
 
 {% tabs %}
 {% highlight c# %}
@@ -313,7 +313,7 @@ ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003
 
 ![WPF scheduler resource Special Time Region ](Resource_Images/Resource_SepcialRegion.png)
 
-### Timeline View
+### special time region based on Resource in timeline View
 
 {% tabs %}
 {% highlight c# %}
