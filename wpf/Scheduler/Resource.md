@@ -30,7 +30,7 @@ new SchedulerResource() { Name = "James William", Background = new SolidColorBru
 schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="resource}" ResourceCollection="{Binding ResourceCollection}">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="resource" ResourceCollection="{Binding ResourceCollection}">
 {% endhighlight %}
 {% endtabs %}
 
