@@ -45,6 +45,7 @@ You can set the context menu for schedule appointments by using `SfScheduler.App
 >**NOTE**
 The menu item which binds the `SchedulerCommands.Add` command will be disabled in AppointmentContextMenu.
 The DataContext for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
+In month view, AppointmentContextMenu opens when `MonthViewSettings.AppointmentDisplayMode` is `AppointmentDisplayMode.Appointment`.
 
 {% tabs %}
 {% highlight xaml %}
