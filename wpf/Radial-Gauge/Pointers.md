@@ -1386,8 +1386,6 @@ The `ValueChangeStarted` event contains the following arguments.
 
 `Value` : This value will be the last value the pointer had before the changes began.
 
-N> Do not use this event to update the pointer value instead use `ValueChanged` event. 
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -1530,8 +1528,6 @@ This event will notify the completion of dragging with a new value being selecte
 The `ValueChangeCompleted` event contains the following arguments.
 
 `Value` : This value will be the new updated pointer value after dragging.
-
-N> Do not use this event to update the pointer value instead use `ValueChanged` event. 
 
 {% tabs %}
 {% highlight xaml %}
