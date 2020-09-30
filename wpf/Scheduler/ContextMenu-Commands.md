@@ -20,7 +20,7 @@ You can set the context menu for time slot and month cells by using `SfScheduler
 
 >**NOTE**
 The menu items which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands will be disabled in CellContextMenu.
-The DataContext for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
+The DataContext for the context menu is `SchedulerContextMenuInfo` `CommandParameter` of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
 
 {% tabs %}
 {% highlight xaml %}
