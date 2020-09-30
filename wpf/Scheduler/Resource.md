@@ -11,7 +11,8 @@ documentation: ug
 
 The Scheduler resource view will allows you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views.Its also allows to share events or appointments to multiple resources.
 
-## Add resources in scheduler
+## Scheduler grouping by Resources
+
 Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
 
 {% tabs %}
@@ -72,7 +73,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assign resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.You can also assign resources to recurrence appointments. 
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +134,7 @@ Schedule supports full data binding to `ResourceCollection`. Specify the `Resour
 Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
-You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.
+You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.You can also assign resources to recurrence appointments. 
 
 {% tabs %}
 {% highlight c# %}
@@ -174,7 +175,7 @@ schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Create custom resource collection in scheduler
+### Assign custom resource collection in scheduler
 
 You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. 
 
@@ -194,9 +195,9 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-### create business object to appointment with custom resource
+### Assign custom resource to appointment business object 
 
-You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of `AppointmentMapping`. Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. 
+You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of `AppointmentMapping`. Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to recurrence appointments.
 
 {% tabs %}
 {% highlight c# %}
