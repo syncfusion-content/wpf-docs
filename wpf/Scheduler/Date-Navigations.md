@@ -10,10 +10,10 @@ documentation: ug
 # Date Navigations in WPF Scheduler (SfScheduler)
 
 ## Range for visible dates
-Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MinimumDate.html) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
+Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MinimumDate) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
 
 ### Minimum display date
-`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range.
+`MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range. The dates before the minimum date will be disabled in the schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,7 +27,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 {% endtabs %}
 
 ### Maximum display date
-`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range.
+`MaximumDate` will restrict date navigations features of forward, and also cannot swipe the control using touch gesture beyond the maximum date range. The dates beyond the maximum date will be disabled in the schedule.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,7 +41,7 @@ this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
 {% endtabs %}
 
 ## Programmatic date navigation
-You can programmatically navigate dates in scheduler by using the [displayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~DisplayDate.html) property of SfScheduler.
+You can programmatically navigate dates in scheduler by using the [displayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,8 +54,10 @@ this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
+N>Date navigation before the minimum date will be reset to the scheduler minimum date and date navigation beyond the maximum date will be rest to the scheduler maximum date.
+
 ## Programmatic date selection
-You can programmatically select the dates in scheduler by using the [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~SelectedDate.html) property of SfScheduler.
+You can programmatically select the dates in scheduler by using the [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectedDate) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,8 +70,10 @@ this.Schedule.SelectedDate = new DateTime(2020, 07, 10, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
+N>Selection before minimum dates and beyond maximum dates using the `SelectedDate` is not possible.
+
 ## Programmatically change to adjacent dates
-By default, the date can be navigated to next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can be also changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~Forward.html) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~Backward.html) methods available in SfScheduler.
+By default, the date can be navigated to next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can be also changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) methods available in SfScheduler.
 
 ### Forward
 You can use the `Forward` method of SfScheduler for viewing the next immediate visible dates in the scheduler. It will move to next month if the scheduler view is month, similarly it will move to next week for week view and next day for day view.

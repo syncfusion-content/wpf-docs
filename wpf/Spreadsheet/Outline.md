@@ -14,7 +14,7 @@ SfSpreadsheet provides support for outlines like in excel which makes your data 
 
 SfSpreadsheet provides support to group the specified range in a worksheet.
 
-To [Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Group.html) the rows/columns
+To [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_Group_Syncfusion_XlsIO_IWorksheet_Syncfusion_UI_Xaml_CellGrid_GridRangeInfo_Syncfusion_XlsIO_ExcelGroupBy_) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -32,7 +32,7 @@ spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 SfSpreadsheet provides support to ungroup the specified range in a worksheet.
 
-To [Ungroup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~UnGroup.html) the rows/columns
+To [Ungroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_UnGroup_Syncfusion_XlsIO_IWorksheet_Syncfusion_UI_Xaml_CellGrid_GridRangeInfo_Syncfusion_XlsIO_ExcelGroupBy_) the rows/columns
 
 {% tabs %}
 {% highlight c# %}
@@ -48,7 +48,7 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
 ## Collapse or Expand Group
 
-Groups can be Expanded by [ExpandGroup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~ExpandGroup.html) method  and Collapsed  by [CollapseGroup](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~CollapseGroup.html) method of `XlsIO`.
+Groups can be Expanded by [ExpandGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_ExpandGroup_Syncfusion_XlsIO_ExcelGroupBy_) method  and Collapsed  by [CollapseGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_CollapseGroup_Syncfusion_XlsIO_ExcelGroupBy_) method of `XlsIO`.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ spreadsheet.RefreshOutlines(false,true);
 {% endhighlight %}
 {% endtabs %}
 
-N> [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RefreshOutlines.html) method is invoked to refresh/update the Outlines of the Group in SfSpreadsheet.
+N> [RefreshOutlines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_RefreshOutlines_System_Boolean_System_Boolean_) method is invoked to refresh/update the Outlines of the Group in SfSpreadsheet.
 
 ## Change Outline Settings
 

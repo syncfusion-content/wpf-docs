@@ -16,9 +16,9 @@ Syntax Editor offers extensive support to text navigation. Users can perform nav
 
 The following functions enables text navigation in the Syntax Editor in terms of characters or columns.
 
-1. [MoveToPreviousIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousIndex.html) to move cursor position in backward position. 
+1. [MoveToPreviousIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToPreviousIndex) to move cursor position in backward position. 
 
-2. [MoveToNextIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextIndex.html) to move cursor position in forward position in .
+2. [MoveToNextIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToNextIndex) to move cursor position in forward position in .
 
 {% tabs %}
 
@@ -43,9 +43,9 @@ Me.editControl.MoveToPreviousIndex()
 
 The following functions enables text navigation in the Syntax Editor in terms of words.
 
-1. [MoveToNextWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextWord.html) moves cursor to start position of next word.
+1. [MoveToNextWord](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToNextWord) moves cursor to start position of next word.
 
-2. [MoveToPreviousWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousWord.html) moves cursor to start position of previous word.
+2. [MoveToPreviousWord](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToPreviousWord) moves cursor to start position of previous word.
 
 {% tabs %}
 
@@ -69,13 +69,13 @@ Me.editControl.MoveToPreviousWord()
 
 The following functions enables text navigation in the Syntax Editor in terms of lines.
 
-1. [MoveToNextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextLine.html) to move cursor to same position on next line.
+1. [MoveToNextLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToNextLine) to move cursor to same position on next line.
 
-2. [MoveToPreviousLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousLine.html) to move cursor to same position on previous line.
+2. [MoveToPreviousLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToPreviousLine) to move cursor to same position on previous line.
 
-3. [MoveToLineStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineStart.html) to move cursor to start postion of current line.
+3. [MoveToLineStart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToLineStart) to move cursor to start postion of current line.
 
-4. [MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineEnd.html) to move cursor to end postion of current line.
+4. [MoveToLineEnd](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToLineEnd) to move cursor to end postion of current line.
 
 {% tabs %}
 

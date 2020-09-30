@@ -54,7 +54,7 @@ The adapter user control also determines the state of the element, whether it sh
 
 The adapter can be further customized to add elements as floating or auto-hidden.
 
-The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindowChanged_EV.html) event. Using this, the [ActiveDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ActiveDocument.html) property in the adapter needs to be updated every time focus changes to other panes.
+The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) event. Using this, the [ActiveDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_ActiveDocument) property in the adapter needs to be updated every time focus changes to other panes.
 
 ### Application structure
 

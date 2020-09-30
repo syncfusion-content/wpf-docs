@@ -17,7 +17,7 @@ The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbo
 
 ### Foreground for Positive Value
 
-We can change a positive color for the value of `CurrencyTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) is positive. The default color of `PositiveForeground` is `Black`.
+We can change a positive color for the value of `CurrencyTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_PositiveForeground) property and it will be applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_Value) is positive. The default color of `PositiveForeground` is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -40,7 +40,7 @@ currencyTextBox.PositiveForeground = Brushes.Blue;
 
 ### Foreground for Negative Value
 
-We can change a negative color for the value of `CurrencyTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
+We can change a negative color for the value of `CurrencyTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_NegativeForeground) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyNegativeForeground) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -65,7 +65,7 @@ currencyTextBox.NegativeForeground = Brushes.SpringGreen;
 
 ### Foreground for Zero Value
 
-We can change a zero color for the value of `CurrencyTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
+We can change a zero color for the value of `CurrencyTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ZeroColor) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_ApplyZeroColor) property is `true` and the `Value` is zero.
 The default color of `ZeroColor` is `Green`. 
 
 {% tabs %}
@@ -114,7 +114,7 @@ currencyTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) property. The default value of `CornerRadius` property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `CurrencyTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_CornerRadius) property. The default value of `CornerRadius` property is 1.
 
 {% tabs %}
 
@@ -205,11 +205,15 @@ currencyTextBox.ToolTip = "Enter Currency Value";
 
 ## Theme
 
-The appearance of the `CurrencyTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `CurrencyTextBox` control.
+The appearance of the `CurrencyTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CurrencyTextBox` control.
 
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -220,20 +224,32 @@ The appearance of the `CurrencyTextBox` control can be customized by using the [
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
 * VisualStudio2013
 * VisualStudio2015
 
+{% tabs %}
+{% highlight xaml %}
+
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:CurrencyTextBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                    Name="currencyTextBox" />
+    </Grid>
+</Window>
+
 For example, the `Blend` style applied to the `CurrencyTextBox` as shown in the following example code:
 
-{% tabs %}
+{% endhighlight %}
 {% highlight C# %}
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-currencyTextBox.Width = 100;
-currencyTextBox.Height = 25;
 SfSkinManager.SetVisualStyle(currencyTextBox, VisualStyles.Blend);
 
 {% endhighlight %}

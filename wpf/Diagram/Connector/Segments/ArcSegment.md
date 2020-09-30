@@ -13,7 +13,7 @@ Arc segments are used to create curved lines and the curvature is configurable w
 
 ## how to create arc segments
 
-To create a arc segment, you should specify the segment as [ArcSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ArcSegment.html).
+To create a arc segment, you should specify the segment as [ArcSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,13 +71,13 @@ Arc segments are annotated with thumbs to represent the control points. Control 
 
 Arc segments can be customized by using below properties of `ArcSegment` class,
 
-* [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ArcSegment~RotationAngle.html): To Specify the ratio of the arc length to the radius of curve. Default value is 0 degree.
+* [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html#Syncfusion_UI_Xaml_Diagram_ArcSegment_RotationAngle): To Specify the ratio of the arc length to the radius of curve. Default value is 0 degree.
 
-* [Size](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ArcSegment~Size.html): To Specify the size of the arc segments. 
+* [Size](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html#Syncfusion_UI_Xaml_Diagram_ArcSegment_Size): To Specify the size of the arc segments. 
 
-* [SweepDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ArcSegment~SweepDirection.html): To Specify whether the arc segment should be in clock wise direction or counter clock wise direction. Default direction is `Counterclockwise`.
+* [SweepDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html#Syncfusion_UI_Xaml_Diagram_ArcSegment_SweepDirection): To Specify whether the arc segment should be in clock wise direction or counter clock wise direction. Default direction is `Counterclockwise`.
 
-* [IsLargeArc](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ArcSegment~IsLargeArc.html): To specify whether the arc segment should be consider if the angle is greater then 180 degrees.
+* [IsLargeArc](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ArcSegment.html#Syncfusion_UI_Xaml_Diagram_ArcSegment_IsLargeArc): To specify whether the arc segment should be consider if the angle is greater then 180 degrees.
 
 {% tabs %}
 {% highlight xaml %}

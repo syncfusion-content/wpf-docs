@@ -12,9 +12,9 @@ The circular gauge helps to visualize numeric values on a circular scale. The ap
 
 ## Key features
 
-The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) is composed of several scales. The scales will be an integrated UI part of the circular gauge.
+The [`CircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html) is composed of several scales. The scales will be an integrated UI part of the circular gauge.
 
-The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) is a composite UI element with the following subparts:
+The [`CircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
 

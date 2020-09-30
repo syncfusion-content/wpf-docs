@@ -65,7 +65,7 @@ pdfViewerControl.Load("Sample.pdf")
 
 ## Marquee zoom mode
 
-In this mode, you can zoom a particular area of a PDF document by dragging the area using the zoom tool or keyboard actions. You can marquee a section by left click and drag using your mouse. By pressing the `Ctrl` key, you can decrease the zoom level. Refer to the following code to enable the marquee zoom mode in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+In this mode, you can zoom a particular area of a PDF document by dragging the area using the zoom tool or keyboard actions. You can marquee a section by left click and drag using your mouse. By pressing the `Ctrl` key, you can decrease the zoom level. Refer to the following code to enable the marquee zoom mode in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 

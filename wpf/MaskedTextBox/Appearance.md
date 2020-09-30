@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF SfMaskedEdit
 
-This section explains different UI customization and theming options available in [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
+This section explains different UI customization and theming options available in [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
 
 ## Setting the background
 
@@ -109,7 +109,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Theme
 
-You can customize the appearance of the `SfMaskedEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfMaskedEdit` control.
+You can customize the appearance of the `SfMaskedEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfMaskedEdit` control.
 
 * Blend
 * Default
@@ -128,6 +128,8 @@ You can customize the appearance of the `SfMaskedEdit` control by using the [SfS
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -139,8 +141,14 @@ Here, the `Blend` style is applied to the `SfMaskedEdit`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfMaskedEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         Name="sfMaskedEdit"/>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:SfMaskedEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                   Name="sfMaskedEdit" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

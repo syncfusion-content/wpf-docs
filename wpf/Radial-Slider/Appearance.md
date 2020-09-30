@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF SfRadialSlider
 
-This section explains different styling, theming options available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
+This section explains different styling, theming options available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 
 ## Setting the foreground
 
@@ -79,7 +79,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-You can customize the appearance of the `SfRadialSlider` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `SfRadialSlider` control.
+You can customize the appearance of the `SfRadialSlider` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `SfRadialSlider` control.
 
 * Blend
 * Lime
@@ -107,8 +107,7 @@ You can customize the appearance of the `SfRadialSlider` control by using the [S
 {% tabs %}
 {% highlight xaml %}
 
-<Window>
-    <!--Theme Namespace-->
+<Window
     xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
     <Grid>
         <syncfusion:SfRadialSlider syncfusionskin:SfSkinManager.VisualStyle="Blend" 

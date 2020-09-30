@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with SfLinearGauge
 
-This section explains the steps required to configure the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
+This section explains the steps required to configure the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
 
 ## Adding gauge references
 
@@ -34,7 +34,7 @@ You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies#sf
 
 ## Initialize gauge
 
-Import  the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as in the following.
+Import  the [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as in the following.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
+You can initialize an empty [`SfLinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
 
 {% tabs %}
 
@@ -73,9 +73,9 @@ this.Content = sfLinearGauge;
 
 ## Configuring scale
 
-Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale.html) which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale.
+Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html) which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale.
 
-The [`Minimum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~Maximum.html) properties allow you to set the scale range.
+The [`Minimum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Maximum) properties allow you to set the scale range.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ linearScale.Pointers.Add(linearPointer1);
 
 ## Adding ranges
 
-You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~Ranges.html) property.
+You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Ranges) property.
 
 {% tabs %}
 

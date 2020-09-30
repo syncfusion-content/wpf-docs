@@ -90,7 +90,7 @@ To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/diagr
 
 ## Event
 
-The `OverviewChangedEvent` will notify the interactions in Overview control with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs_members.html) as argument. This argument will provide the dragging and interaction state value of the overview.
+The `OverviewChangedEvent` will notify the interactions in Overview control with [OverviewChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.OverviewChangedEventArgs.html) as argument. This argument will provide the dragging and interaction state value of the overview.
 
 {% seealso %}
 

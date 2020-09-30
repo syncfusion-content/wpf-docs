@@ -47,7 +47,7 @@ checkListBox.Foreground=Brushes.Red;
 
 ### Setting the Background 
 
- We can change the background color of `CheckListBox` items by setting the `Background` property. If we want to differentiate mouse hovered item or currently selected item with other items, we can do this by using [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~MouseOverBackground.html) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItemBackground.html) properties.
+ We can change the background color of `CheckListBox` items by setting the `Background` property. If we want to differentiate mouse hovered item or currently selected item with other items, we can do this by using [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_MouseOverBackground) and [SelectedItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItemBackground) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -117,7 +117,7 @@ checkListBox.FlowDirection = FlowDirection.RightToLeft;
 
 ![CheckListBox with Right To Left flow direction](Appearance_images/rtl.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Apperance) to download the sample that showcases the styling and RTL supports.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Apperance)
 
 ## Item Template
 
@@ -320,7 +320,7 @@ class ViewModel {
 
 ![CheckListBox with SelectAllTemplate](Appearance_images/select_all.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Templates) to download the sample that showcases the `ItemTemplate`, `GroupTemplate` and `SelectAllTemplate` supports.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Templates)
 
 ## ItemContainerStyle
 
@@ -378,7 +378,7 @@ class ViewModel {
 
 Here, the Checked items are contains a bold font.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemContainerStyle) to download the sample that showcases the `ItemContainerStyle` support.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemContainerStyle)
 
 ## ItemTemplateSelector
 
@@ -477,7 +477,7 @@ public class MyTemplateSelector : DataTemplateSelector {
 
 Here, the `Leaf and Salad` and `Bulb and Stem` group items have same data template and the `Beans` group items have separate data template.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemTemplateSelector) to download the sample that showcases the `ItemTemplateSelector` support.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemTemplateSelector)
 
 ## ItemContainerStyleSelection
 
@@ -575,15 +575,19 @@ public class VegetableStyleSelector : StyleSelector {
 
 Here, the `GroupStyle` is applied to the group header and the `ItemStyle` is applied to the child items. 
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemContainerStyleSelection) to download the sample that showcases the `ItemContainerStyleSelector` support.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemContainerStyleSelection)
 
 ## Theme
 
-We can customize the appearance of the `CheckListBox` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `CheckListBox` control.
+We can customize the appearance of the `CheckListBox` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CheckListBox` control.
 
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -594,6 +598,8 @@ We can customize the appearance of the `CheckListBox` control by using the [SfSk
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -605,15 +611,21 @@ Here, the `Blend` style is applied to the `CheckListBox`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:CheckListBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         x:Name="checkListBox" >
-</syncfusion:checkListBox>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:CheckListBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                 Name="checkListBox" >
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
 
 //Namespace for the SfSkinManager.
 using Syncfusion.SfSkinManager;
+
 CheckListBox checkListBox = new CheckListBox();
 SfSkinManager.SetVisualStyle(checkListBox, VisualStyles.Blend);
 
@@ -622,5 +634,5 @@ SfSkinManager.SetVisualStyle(checkListBox, VisualStyles.Blend);
 
 ![CheckListBox with Blend visual style](Appearance_images/blend.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support. 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Themes)
 

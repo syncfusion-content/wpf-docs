@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF TabControl (TabControlExt)
 
-This section explains different UI customization and theming options available in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+This section explains different UI customization and theming options available in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
 ## Change flow direction
 
@@ -38,7 +38,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Theme
 
-You can customize the appearance of the `TabControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TabControl` control.
+You can customize the appearance of the `TabControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TabControl` control.
 
 * Blend
 * Default
@@ -57,6 +57,8 @@ You can customize the appearance of the `TabControl` control by using the [SfSki
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -68,9 +70,14 @@ Here, the `Blend` style is applied to the `TabControl`.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                          Name="tabControlExt">
-</syncfusion:TabControlExt>
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                  Name="tabControlExt"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

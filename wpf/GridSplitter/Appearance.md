@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF SfGridSplitter
 
-This section explains different UI customization and styling support available in [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter.html) control.
+This section explains different UI customization and styling support available in [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) control.
 
 ## Setting the Background
 
@@ -59,7 +59,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ### Custom drag preview
 
-We can change the custom UI of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~PreviewStyle.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
+We can change the custom UI of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +119,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-grid
 
 ## Theme
 
-You can customize the appearance of the `SfGridSplitter` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfGridSplitter` control.
+You can customize the appearance of the `SfGridSplitter` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfGridSplitter` control.
 
 * Blend
 * Default
@@ -138,6 +138,8 @@ You can customize the appearance of the `SfGridSplitter` control by using the [S
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -149,37 +151,40 @@ Here, the `Blend` style is applied to the `SfGridSplitter`.
 {% tabs %}
 {% highlight xaml %}
 
-<Border
-    Margin="10"
-    BorderBrush="DarkGray"
-    BorderThickness="1">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="auto" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   TextAlignment="Center"
-                   Text="Panel 1">
-        </TextBlock>
-        <TextBlock Grid.Row="2"
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center" 
-                   TextAlignment="Center"
-                   Text="Panel 2">
-        </TextBlock>
-        
-        <!--Grid Splitter-->
-        <syncfusion:SfGridSplitter syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                   EnableCollapseButton="True"
-                                   HorizontalAlignment="Stretch"
-                                   Width="auto"
-                                   Grid.Row="1"/>
-    </Grid>
-</Border>
+<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Border
+            Margin="10"
+            BorderBrush="DarkGray"
+            BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       Text="Panel 1">
+            </TextBlock>
+            <TextBlock Grid.Row="2"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       TextAlignment="Center"
+                       Text="Panel 2">
+            </TextBlock>
+
+            <!--Grid Splitter-->
+            <syncfusion:SfGridSplitter syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                       EnableCollapseButton="True"
+                                       HorizontalAlignment="Stretch"
+                                       Width="auto"
+                                       Grid.Row="1"/>
+        </Grid>
+    </Border>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

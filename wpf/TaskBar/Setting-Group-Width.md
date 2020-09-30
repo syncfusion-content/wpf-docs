@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Group Width
 
-The width of the TaskBar is customized by using the [GroupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupWidth.html) property. This is a dependency property, which sets the group width of the TaskBar. It displays all the TaskBar Items in the TaskBar control with the same width. 
+The width of the TaskBar is customized by using the [GroupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GroupWidth) property. This is a dependency property, which sets the group width of the TaskBar. It displays all the TaskBar Items in the TaskBar control with the same width. 
 
 The following code snippet illustrates how to set the group width.
 

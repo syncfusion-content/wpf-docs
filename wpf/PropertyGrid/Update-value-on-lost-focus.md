@@ -9,7 +9,7 @@ documentation: ug
 
 # Update value on lost focus in PropertyGrid
 
-We can update the value of property item either immediately when the editor property changes or during the editor's lost focus using [UpdateSourceMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~UpdateSourceMode.html) property of PropertyGrid. Values of `UpdateSourceMode` are `Immediately`, `ReturnOrLostFocus`. The default value is `Immediately`.
+We can update the value of property item either immediately when the editor property changes or during the editor's lost focus using [UpdateSourceMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_UpdateSourceMode) property of PropertyGrid. Values of `UpdateSourceMode` are `Immediately`, `ReturnOrLostFocus`. The default value is `Immediately`.
 
 ## Binding modes 
 

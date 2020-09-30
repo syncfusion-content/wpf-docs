@@ -11,15 +11,14 @@ documentation: ug
 
 ### Description 
 
-[SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is an extended version of the TextBox control. Most of the functionality of [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is inherited from the [TextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
+[SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is an extended version of the TextBox control. Most of the functionality of [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) is inherited from the [TextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox?view=netcore-3.1) class.
 
-![TextBoxExt - Overview](Overview_images/Overview_img1.png)
 
 ### Key features
 
 * **AutoComplete modes**: The control provides the suggestions based on a predefined collection while typing.
 * **Watermark**: The control will prompt some information when it is not in focus and contains an empty string.
-* **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. AutoComplete provides the both case-sensitive and insensitive modes.
+* **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. AutoComplete provides both the case-sensitive and insensitive modes.
 * **Popup delay**: The filtering process can be delayed. Displaying filtered suggestions from a drop-down list may also be delayed for a period of time.
 * **Minimum prefix characters**: Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries.
 * **Customization support**: AutoComplete provides the options to customize both text box and drop-down list.

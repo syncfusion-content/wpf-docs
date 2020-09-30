@@ -13,7 +13,7 @@ This section explains the covered range of cells in WPF GridControl.
 
 ## Creating covered cells
 
-The range of cells can be covered by adding the [CoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.CoveredCellInfo.html) to the [CoveredRanges](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModel~CoveredRanges.html) collection. The `CoveredRanges` will be maintained in the [GridCoveredCellInfoCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCoveredCellInfoCollection.html) collection.
+The range of cells can be covered by adding the [CoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.CoveredCellInfo.html) to the [CoveredRanges](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_CoveredRanges) collection. The `CoveredRanges` will be maintained in the [GridCoveredCellInfoCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCoveredCellInfoCollection.html) collection.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ grid.Model.CoveredRanges.Add(new CoveredCellInfo(2, 2, 5, 5));
 
 ### Creating covered cells using QueryCoveredRange event
 
-You can also covered the range of cells by using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~QueryCoveredRange_EV.html) event. This event will be raised for all the cells and you can set the range of cells by using [Range](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridQueryCoveredRangeEventArgs~Range.html) property.
+You can also covered the range of cells by using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridControlBase.html) event. This event will be raised for all the cells and you can set the range of cells by using [Range](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridQueryCoveredRangeEventArgs.html#Syncfusion_Windows_Controls_Grid_GridQueryCoveredRangeEventArgs_Range) property.
 
 {% tabs %}
 
@@ -59,7 +59,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol
 
 ## Find whether a cell in covered range
 
-When you want to find a cell in covered ranges, you can use the [GetCoveredCell()](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCoveredCellInfoCollection~GetCoveredCell.html) method. If the specified cell with row index and column index is inside in `GetCoveredCell`, a range will be returned.
+When you want to find a cell in covered ranges, you can use the [GetCoveredCell()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCoveredCellInfoCollection.html#Syncfusion_Windows_Controls_Grid_GridCoveredCellInfoCollection_GetCoveredCell_System_Int32_System_Int32_) method. If the specified cell with row index and column index is inside in `GetCoveredCell`, a range will be returned.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol
 
 ## Remove covered range at run time
 
-You can remove the covered range at run time by using [Clear()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.CellSpanInfoCollection%601~Clear.html) method.
+You can remove the covered range at run time by using [Clear()](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.CellSpanInfoCollection-1.html#Syncfusion_UI_Xaml_CellGrid_CellSpanInfoCollection_1_Clear) method.
 
 {% tabs %}
 
@@ -135,7 +135,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-gridcontrol
 
 ## Extend covered range at run time
 
-You can extend the covered range at run time by using [Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.CellSpanInfoCollection%601~Add.html) method.
+You can extend the covered range at run time by using [Add()](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.CellSpanInfoCollection-1.html#Syncfusion_UI_Xaml_CellGrid_CellSpanInfoCollection_1_Add__0_) method.
 
 For example, Create one button. Next, clear the current covered cell collection using `Clear()` method and create new covered cell ranges by using `Add()` method in this click event.
 

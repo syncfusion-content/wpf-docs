@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 ## Recurrence Appointment
-Recurring appointments can generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) property in Schedule appointment which will build recurring appointments.
+Recurring appointments can generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursive) property in Schedule appointment which will build recurring appointments.
 
 ## Recurrence Rule
-The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) is a string value that includes the details of the recurrence appointments such as repeat form - daily/weekly/monthly/yearly, how many times it needs to be repeated, the duration of the interval and also the time period to make the appointment, etc.
+The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule) is a string value that includes the details of the recurrence appointments such as repeat form - daily/weekly/monthly/yearly, how many times it needs to be repeated, the duration of the interval and also the time period to make the appointment, etc.
 `RecurrenceRule` has the following properties and the Scheduler control makes the recurrence appointments with their respective time period.
 
 <table>
@@ -28,43 +28,43 @@ The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WP
 
 ## Recurrence Pattern
 
-Scheduler supports four types of recurrence patterns. You can set this recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceType.html) property of `RecurrenceRule`. 
+Scheduler supports four types of recurrence patterns. You can set this recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceType.html) property of `RecurrenceRule`. 
 
 <table>
 <tr><th>RecurrenceType</th><th>RecurrenceProperties</th><th>Description</th></tr>
-<tr><td>Daily</td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsDailyEveryNDays.html">IsDailyEveryNDays</a></td><td>Gets or sets a value indicating whether the recurrence should be set based on specified day interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~DailyNDays.html">DailyNDays</a></td><td>Gets or sets the day interval on which recurrence has to be set.</td></tr>
-<tr><td>Weekly</td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~WeeklyEveryNWeeks.html">WeeklyEveryNWeeks</a></td><td>Gets or sets the week interval on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklySunday.html">IsWeeklySunday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Sundays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklyMonday.html">IsWeeklyMonday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Mondays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklyTuesday.html">IsWeeklyTuesday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Tuesdays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklyWednesday.html">IsWeeklyWednesday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Wednesdays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklyThursday.html">IsWeeklyThursday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Thursdays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklyFriday.html">IsWeeklyFriday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Fridays with specified week interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsWeeklySaturday.html">IsWeeklySaturday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Saturdays with specified week interval.</td></tr>
-<tr><td>Monthly</td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsMonthlySpecific.html">IsMonthlySpecific</a></td><td>Gets or sets a value indicating whether the recurrence has to be set for particular month day i.e. MonthlySpecificMonthDay</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~MonthlyEveryNMonths.html">MonthlyEveryNMonths</a></td><td>Gets or sets the month interval on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~MonthlyNthWeek.html">MonthlyNthWeek</a></td><td>Gets or sets the week of month on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~MonthlySpecificMonthDay.html">MonthlySpecificMonthDay</a></td><td>Gets or sets the day on which recurrence has to be set for every month.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~MonthlyWeekDay.html">MonthlyWeekDay</a></td><td>Gets or sets the day of week on which monthly recurrence has to be set.</td></tr>
-<tr><td>Yearly</td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsYearlySpecific.html">IsYearlySpecific</a></td><td>Gets or sets a value indicating whether the recurrence should be set based on specific year interval.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlyEveryNYears.html">YearlyEveryNYears</a></td><td>Gets or sets the year interval on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlyGenericMonth.html">YearlyGenericMonth</a></td><td>Gets or sets the generic month of year on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlyNthWeek.html">YearlyNthWeek</a></td><td>Gets or sets the week of year on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlySpecificMonth.html">YearlySpecificMonth</a></td><td>Gets or sets the specific month of year on which recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlySpecificMonthDay.html">YearlySpecificMonthDay</a></td><td>Gets or sets the specific day of month on which yearly recurrence has to be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~YearlyWeekDay.html">YearlyWeekDay</a></td><td>Gets or sets the day of week on which yearly recurrence has to be set.</td></tr>
-<tr><td>Common</td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsRangeEndDate.html">IsRangeEndDate</a></td><td>Gets or sets a value indicating whether the date should be specified for ending the recurrence.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsRangeNoEndDate.html">IsRangeNoEndDate</a></td><td>Gets or sets a value indicating whether the recurrence should be ended.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~IsRangeRecurrenceCount.html">IsRangeRecurrenceCount</a></td><td>Gets or sets a value indicating whether the count of recurrence should be set.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~RangeEndDate.html">RangeEndDate</a></td><td>Gets or sets the date to end the recurrence.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~RangeStartDate.html">RangeStartDate</a></td><td> Gets or sets the date to start the recurrence.</td></tr>
-<tr><td></td><td><a href = "https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~RangeRecurrenceCount.html">RangeRecurrenceCount</a></td><td>Gets or sets the count for recurring appointment.</td></tr>
+<tr><td>Daily</td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsDailyEveryNDays">IsDailyEveryNDays</a></td><td>Gets or sets a value indicating whether the recurrence should be set based on specified day interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_DailyNDays">DailyNDays</a></td><td>Gets or sets the day interval on which recurrence has to be set.</td></tr>
+<tr><td>Weekly</td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_WeeklyEveryNWeeks">WeeklyEveryNWeeks</a></td><td>Gets or sets the week interval on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklySunday">IsWeeklySunday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Sundays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklyMonday">IsWeeklyMonday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Mondays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklyTuesday">IsWeeklyTuesday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Tuesdays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklyWednesday">IsWeeklyWednesday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Wednesdays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklyThursday">IsWeeklyThursday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Thursdays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklyFriday">IsWeeklyFriday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Fridays with specified week interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsWeeklySaturday">IsWeeklySaturday</a></td><td>Gets or sets a value indicating whether the recurrence should be applied on Saturdays with specified week interval.</td></tr>
+<tr><td>Monthly</td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsMonthlySpecific">IsMonthlySpecific</a></td><td>Gets or sets a value indicating whether the recurrence has to be set for particular month day i.e. MonthlySpecificMonthDay</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_MonthlyEveryNMonths">MonthlyEveryNMonths</a></td><td>Gets or sets the month interval on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_MonthlyNthWeek">MonthlyNthWeek</a></td><td>Gets or sets the week of month on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_MonthlySpecificMonthDay">MonthlySpecificMonthDay</a></td><td>Gets or sets the day on which recurrence has to be set for every month.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_MonthlyWeekDay">MonthlyWeekDay</a></td><td>Gets or sets the day of week on which monthly recurrence has to be set.</td></tr>
+<tr><td>Yearly</td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsYearlySpecific">IsYearlySpecific</a></td><td>Gets or sets a value indicating whether the recurrence should be set based on specific year interval.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlyEveryNYears">YearlyEveryNYears</a></td><td>Gets or sets the year interval on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlyGenericMonth">YearlyGenericMonth</a></td><td>Gets or sets the generic month of year on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlyNthWeek">YearlyNthWeek</a></td><td>Gets or sets the week of year on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlySpecificMonth">YearlySpecificMonth</a></td><td>Gets or sets the specific month of year on which recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlySpecificMonthDay">YearlySpecificMonthDay</a></td><td>Gets or sets the specific day of month on which yearly recurrence has to be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_YearlyWeekDay">YearlyWeekDay</a></td><td>Gets or sets the day of week on which yearly recurrence has to be set.</td></tr>
+<tr><td>Common</td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsRangeEndDate">IsRangeEndDate</a></td><td>Gets or sets a value indicating whether the date should be specified for ending the recurrence.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsRangeNoEndDate">IsRangeNoEndDate</a></td><td>Gets or sets a value indicating whether the recurrence should be ended.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_IsRangeRecurrenceCount">IsRangeRecurrenceCount</a></td><td>Gets or sets a value indicating whether the count of recurrence should be set.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_RangeEndDate">RangeEndDate</a></td><td>Gets or sets the date to end the recurrence.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_RangeStartDate">RangeStartDate</a></td><td> Gets or sets the date to start the recurrence.</td></tr>
+<tr><td></td><td><a href = "https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html#Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_RangeRecurrenceCount">RangeRecurrenceCount</a></td><td>Gets or sets the count for recurring appointment.</td></tr>
 </table>
 
 ## Recurrence Rule Generator
 
-[RRuleGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleGenerator(RecurrenceProperties,DateTime,DateTime).html) method is used to construct the recurrence rule that can be found in the [ScheduleHelper](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the Scheduler control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or from any iCal directory, the client may apply recurrence rule directly.
+[RRuleGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_RRuleGenerator_Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_System_DateTime_System_DateTime_) method is used to construct the recurrence rule that can be found in the [ScheduleHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the Scheduler control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or from any iCal directory, the client may apply recurrence rule directly.
 
 ### Applying Recurrence to Appointments
 
@@ -121,7 +121,7 @@ public class Meeting
 
 N>You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of Meeting class with our SfSchedule control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
+You can map those properties of Meeting class with our SfSchedule control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-
 
 
 ### How to get the Recurrence editor field values from recurrence rule?
-You can get the recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleParser.html) method of Scheduler.
+You can get the recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_RRuleParser_System_String_System_DateTime_) method of Scheduler.
 
 {% tabs %}
 {% highlight c# %}
@@ -214,7 +214,7 @@ recurrenceProperties.IsDailyEveryNDays as true
 recurrenceProperties.RangeRecurrenceCount as 3
 
 ### How to get the occurrences date time list of recurring appointment from recurrence rule?
-Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~GetRecurrenceDateTimeCollection.html) feature of Scheduler to get the occurrence date time list of recurring appointment from the recurrence rule.
+Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) feature of Scheduler to get the occurrence date time list of recurring appointment from the recurrence rule.
 
 {% tabs %}
 {% highlight c# %}
@@ -232,7 +232,7 @@ var date1 = 5/8/2018;
 var date2 = 5/9/2018;
 
 ## RecursiveExceptionDates
-[ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) supports to delete any recurrence appointment which exception from the recurrence pattern appointment by adding exception dates in [RecursiveExceptionDates](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecursiveExceptionDates.html) collection to the schedule appointment.
+[ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) supports to delete any recurrence appointment which exception from the recurrence pattern appointment by adding exception dates in [RecursiveExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecursiveExceptionDates) collection to the schedule appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -294,7 +294,7 @@ public class Meeting
 
 N>You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-Using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html) to map certain properties of the `Meeting` class with our Scheduler control.
+Using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentMapping) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html) to map certain properties of the `Meeting` class with our Scheduler control.
 
 {% tabs %}
 {% highlight xaml %}

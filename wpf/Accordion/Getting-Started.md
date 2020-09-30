@@ -87,7 +87,7 @@ namespace SfAccordionSample
 
 ## Add items using SfAccordionItem
 
-SfAccordion accepts [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) as its child when adding it directly.
+SfAccordion accepts [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordionItem.html) as its child when adding it directly.
 
 {% tabs %}
 {% highlight XAML %}
@@ -233,7 +233,7 @@ public class ViewModel
 
 ## Apply template to item header
 
-SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~HeaderTemplate.html) property; it allows to apply a common data template to all accordion items header.
+SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property; it allows to apply a common data template to all accordion items header.
 
 {% tabs %}
 {% highlight XAML %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Maximizing TileViewItem
 
-You can maximize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl.html).
+You can maximize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 
 ## Maximize the TileViewItem
 
@@ -39,9 +39,11 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![TileViewItem is maximizing](Maximize_images/Maximize.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Maximize on click the header
 
-If you want to maximize the `TileViewItem` on clicking the header, use the [ClickHeaderToMaximize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) property value as `true`. The default value of `ClickHeaderToMaximize` property is `false`.
+If you want to maximize the `TileViewItem` on clicking the header, use the [ClickHeaderToMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_ClickHeaderToMaximize) property value as `true`. The default value of `ClickHeaderToMaximize` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -63,9 +65,11 @@ tileViewControl.ClickHeaderToMaximize = true;
 
 ![TileViewItem is maximized using clicking the header](Maximize_images/HeaderMaximize.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Show maximize button only on mouse hover
 
-If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsMinMaxButtonOnMouseOverOnly.html) property value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` property is `false`.
+If you want to show the maximize button only by mouse hover on the particular `TileViewItem`, use the [IsMinMaxButtonOnMouseOverOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_IsMinMaxButtonOnMouseOverOnly) property value as `true`. The default value of `IsMinMaxButtonOnMouseOverOnly` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,9 +91,11 @@ tileViewControl.IsMinMaxButtonOnMouseOverOnly = true;
 
 ![Displaying the maximize button only by mouse hover on the particular TileViewItem](Maximize_images/IsMinMaxButtonOnMouseOverOnly.gif)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Hide maximize button
 
-You can hide the maximize button for the specific `TileViewItem` by using the [TileViewItem.MinMaxButtonVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinMaxButtonVisibility.html) property value as `Collapsed`. The default value of `TileViewItem.MinMaxButtonVisibility` property is `Visible`. 
+You can hide the maximize button for the specific `TileViewItem` by using the [TileViewItem.MinMaxButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinMaxButtonVisibility) property value as `Collapsed`. The default value of `TileViewItem.MinMaxButtonVisibility` property is `Visible`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,9 +125,11 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4" });
 
 ![Particular TileViewItem maximize button hided](Maximize_images/MinMaxButtonVisibility.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-Maximize-Button)
+
 ## Custom UI of the maximize button
 
-You can customize the appearance of particular `TileViewItem`'s maximize button by using the [MinMaxButtonStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinMaxButtonStyle.html) property. You can also change the margin of the `TileViewItem` maximize button by using the [MinMaxButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinMaxButtonMargin.html) property. The `DataContext` of the `MinMaxButtonStyle` property is [TileViewItemMinMaxButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItemMinMaxButton.html).
+You can customize the appearance of particular `TileViewItem`'s maximize button by using the [MinMaxButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinMaxButtonStyle) property. You can also change the margin of the `TileViewItem` maximize button by using the [MinMaxButtonMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MinMaxButtonMargin) property. The `DataContext` of the `MinMaxButtonStyle` property is [TileViewItemMinMaxButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItemMinMaxButton.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,9 +165,11 @@ You can customize the appearance of particular `TileViewItem`'s maximize button 
 
 ![Maximize button UI changed](Maximize_images/MinMaxButtonStyle.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-Maximize-Button)
+
 ## Change maximized TileViewItem content
 
-By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on maximized state. If you want to change the content of the `TileViewItem` on maximized state, use the [MaximizedItemContent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) property. The default value of `MaximizedItemContent` property is `null`.
+By default, `TileViewItem.Content` property values displayed as `TileViewItem` content on maximized state. If you want to change the content of the `TileViewItem` on maximized state, use the [MaximizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MaximizedItemContent) property. The default value of `MaximizedItemContent` property is `null`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -194,9 +204,11 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![Maximized TileViewItem content changed](Maximize_images/MaximizedItemContent.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/MinMax-TileItem)
+
 ## Custom UI of maximized TileViewItem content
 
-You can customize the appearance of maximized `TileViewItem` content by using the [MaximizedItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MaximizedItemTemplate.html) property. The `DataContext` of the `MaximizedItemTemplate` property is `TileViewItem.MaximizedItemContent`.
+You can customize the appearance of maximized `TileViewItem` content by using the [MaximizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_MaximizedItemTemplate) property. The `DataContext` of the `MaximizedItemTemplate` property is `TileViewItem.MaximizedItemContent`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -211,7 +223,7 @@ You can customize the appearance of maximized `TileViewItem` content by using th
     <syncfusion:TileViewItem Header="Item4" Content="Content4"
                              MaximizedItemContent="Max Content4" />
     <syncfusion:TileViewControl.MaximizedItemTemplate>
-        <DataTemplate x:Name="MinTemplate">
+        <DataTemplate x:Name="MaxTemplate">
             <Grid>
                 <TextBlock HorizontalAlignment="Center"
                            Text="{Binding}" 
@@ -227,15 +239,24 @@ You can customize the appearance of maximized `TileViewItem` content by using th
 
 ![Maximized TileViewItem content UI changed](Maximize_images/MaximizedItemTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/CustomUI-MinMaxTileItem)
+
+
+## Change maximized TileViewItem header
+
+If you want to change the header of the `TileViewItem` on maximized state, use the [MaximizedHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html#Syncfusion_Windows_Shared_TileViewItem_MaximizedHeader) property. The default value of `MaximizedHeader` property is `null`.
+
+N> Please refer [Maximized TileViewItem header](https://help.syncfusion.com/wpf/tile-view/tileviewitem-header#change-minimized-and-maximized-header) topic to know more details about maximized `TileViewItem` header and its customization available in the `TileViewControl`.
+
 ## Maximized state changed notification
 
-The `TileViewControl` notifies that the maximized state changed in the `TileViewItem` by using [Maximized](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~Maximized_EV.html) event. You can get the maximized item by using the [Source](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~Source.html) property. You can also use the [OldState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~OldState.html) and [NewState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewEventArgs~NewState.html) properties to get the old and new state of `TileViewItem`.
+The `TileViewControl` notifies that the maximized state changed in the `TileViewItem` by using [Maximized](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) event. You can get the maximized item by using the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_Source) property. You can also use the [OldState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_OldState) and [NewState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewEventArgs.html#Syncfusion_Windows_Shared_TileViewEventArgs_NewState) properties to get the old and new state of `TileViewItem`.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:TileViewControl Maximized="TileViewControl_Maximized"
-                          Name="tileViewControl" />
+                            Name="tileViewControl" />
 
 {% endhighlight %}
 {% highlight C# %}
