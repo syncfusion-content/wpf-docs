@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Viewing PDF Files | PDF Viewer | WPF | Syncfusion
-description: Viewing PDF files section explains about loading and displaying PDF files from various sources such as from disk, as stream and loading encrypted PDF files. 
+description: Viewing PDF files section explains about loading and displaying PDF files from various sources such as from disk, and as stream. 
 platform: wpf
 control: PDF Viewer
 documentation: ug
