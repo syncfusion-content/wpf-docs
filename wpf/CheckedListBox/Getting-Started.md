@@ -172,7 +172,7 @@ checkListBox.Items.Add(item5);
 
 You can populate items to the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
 
-1. Create Model and populate it with required properties. Create ViewModel class and populate ObserverableCollection object with Model objects.
+1. Create Model and populate it with required properties. Create ViewModel class and populate ObservableCollection object with Model objects.
 
 {% tabs %}
 {% highlight C# %}
@@ -212,7 +212,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-2. Now create an intance of ViewModel in *DataContext* property of CheclistBox control in **MainWindow.xaml** and bind the collection property from ViewModel to `ItemSource` property of CheckListBox. 
+2. Now create an instance of ViewModel in *DataContext* property of CheckListBox control in **MainWindow.xaml** and bind the collection property from ViewModel to `ItemSource` property of CheckListBox. 
 Set the property from Model class to be displayed to `DisplayMemberPath` property. 
 
 {% tabs %}
