@@ -73,7 +73,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assign resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.You can also assign resources to recurrence appointments. 
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
 
 {% tabs %}
 {% highlight c# %}
@@ -134,7 +134,7 @@ Schedule supports full data binding to `ResourceCollection`. Specify the `Resour
 Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
-You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.You can also assign resources to recurrence appointments. 
+You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
 
 {% tabs %}
 {% highlight c# %}
