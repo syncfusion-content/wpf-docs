@@ -13,7 +13,7 @@ The Scheduler resource view will allows you to group appointments based on the r
 
 ## Scheduler grouping by Resources
 
-Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
+Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler` and you can also add or scheduler resources dynamically.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,6 +95,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 >**NOTE**
 •When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
 •When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
+•You can also add or remove appointment resources dynamically.
 
 ### Multiple resources appointment sharing
 Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
@@ -177,7 +178,7 @@ schedule.ResourceMapping = resourceMapping;
 
 ### Assign custom resource collection in scheduler
 
-You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. 
+You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. You can also add or remove scheduler resources dynamically.
 
 {% tabs %}
 {% highlight c# %}
