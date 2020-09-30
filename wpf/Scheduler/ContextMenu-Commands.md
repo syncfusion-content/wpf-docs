@@ -82,5 +82,3 @@ Header="Delete">
 * `MenuType` – Gets the element type for which the context menu opens.
 
 * `ContextMenu` – It represents shortcut context menu which is being opened.
-
-* `Scheduler` - Gets the instance of SFScheduler.
