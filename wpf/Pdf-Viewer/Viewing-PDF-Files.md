@@ -94,35 +94,6 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-## View the password-protected PDF file
-
-PDF Viewer allows you to view the password-protected PDF files by passing the file name and the correct password as parameters to the [Load](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Load_System_String_System_String_) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Load_System_String_System_String_). Refer to the following code to perform the same.
-
-{% tabs %}
-{% highlight c# %}
-using System.Windows;
-
-namespace PdfViewerDemo
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        # region Constructor
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            //Load password protected PDF file using the file path and the password.
-            pdfViewer.Load(@"Template.pdf", "password");
-        }
-        #endregion
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
 ## View PDF file using the ItemSource property
 
 You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts the string file path as well as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1).
