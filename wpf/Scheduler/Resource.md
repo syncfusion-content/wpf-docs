@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource in scheduler | WPF| Syncfusion
-description: WPF scheduler resource grouping allows to define resources that can be assigned to appointments in day,week,work week and timeline views
+description: WPF scheduler resource grouping allows to define resources that can be assigned to appointments in day, week, work week and timeline views
 platform: WPF
 control: SfScheduler
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Resource in WPF Scheduler (SfScheduler)
 
-The Scheduler resource view will allows you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views.Its also allows to share events or appointments to multiple resources.
+The Scheduler resource view will allow you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views. It’s also allows to share events or appointments to multiple resources.
 
 ## Scheduler grouping by Resources
 
-Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
+Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 ![WPF scheduler Resource Grouping](Resource_Images/Resource.png)
 
 ### Date
-`ResourceGroupType` as `Date` used to  groups the number of resources under each date.
+`ResourceGroupType` as `Date` used to groups the number of resources under each date.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +73,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assign resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date’. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
 
 {% tabs %}
 {% highlight c# %}
@@ -134,7 +134,7 @@ Schedule supports full data binding to `ResourceCollection`. Specify the `Resour
 Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
-You can create a custom class `Employee` with mandatory fields `Name`, `Id`,`ForegroundColor` and `BackgroundColor`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
+You can create a custom class `Employee` with mandatory fields `Name`, `Id`, `ForegroundColor` and `BackgroundColor`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ public Brush ForegroundColor { get; set; }
 
 * You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map the properties of `Employee` class with  `SfScheduler` control using Scheduler `ResourceMapping`.
+You can map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,7 +241,7 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule meetings for a Resource by setting `From` , `To` and `Resources` of Meeting class.
+You can schedule meetings for a Resource by setting `From`, `To` and `Resources` of Meeting class.
 
 {%tabs %}
 {% highlight c# %}
@@ -259,7 +259,7 @@ schedule.ItemsSource = Meetings;
 
 ## Visible resource count
 
-You can customize the number of visible resources in the day , week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
+YYou can customize the number of visible resources in the day, week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
 
 ### Visible resource count in days view
 `DaysViewSetting` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
@@ -294,7 +294,7 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 
 ## Assign resources to special time regions 
 
-Special time region can be created based on the resources in day , week , work week and timeline views.
+Special time region can be created based on the resources in day, week , work week and timeline views.
 
 ### Assign resources to special time regions in days view
 
@@ -336,11 +336,11 @@ ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "100
 {% endhighlight %}
 {% endtabs %}
 
-## Resource appearnce customization
+## Resource appearance customization
 
 Resource UI customization using a template and template selectors support.
 
-### Customize resource appearnce using ResourceHeaderTemplate
+### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
 {% highlight xaml %}
@@ -379,7 +379,7 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
 {% endhighlight %}
 {% endtabs %}
 
-### Customize resource appearnce using ResourceHeaderTemplateSelector
+### Customize resource appearance using ResourceHeaderTemplateSelector
 
 {% tabs %}
 {% highlight xaml %}
