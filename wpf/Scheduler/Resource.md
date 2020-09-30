@@ -9,7 +9,7 @@ documentation: ug
 
 # Resource in WPF Scheduler (SfScheduler)
 
-The Scheduler resource view will allows you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views.Its also allows to share events or appointments to multiple resources.
+The Scheduler resource view will allows you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views.Its also allows to share events or appointments to multiple resources and resource appointment details can be edited by using in-built appointment editor.
 
 ## Scheduler grouping by Resources
 
