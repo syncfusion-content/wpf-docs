@@ -28,6 +28,9 @@ new SchedulerResource() { Name = "James William", Background = new SolidColorBru
 // Adding scheduler resource collection to schedule resources of SfSchedule.
 schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="resource}" ResourceCollection="{Binding ResourceCollection}">
+{% endhighlight %}
 {% endtabs %}
 
 N>`ResourceGroupType` property value is `None` no resource view displayed in schedule even resource added using the `ResourceCollection` property in scheduler.
