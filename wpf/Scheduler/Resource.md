@@ -381,19 +381,6 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
 {% highlight xaml %}
 
     <Window.Resources>
-        <x:Array x:Key="schedulerViewTypes" Type="system:String">
-            <system:String>Day</system:String>
-            <system:String>Week</system:String>
-            <system:String>WorkWeek</system:String>
-            <system:String>Timeline</system:String>
-        </x:Array>
-        <ObjectDataProvider x:Key="schedulerResourceGroupTypes" MethodName="GetValues"
-                            ObjectType="{x:Type system:Enum}">
-            <ObjectDataProvider.MethodParameters>
-                <x:Type  Type="{x:Type syncfusion:ResourceGroupType}"/>
-            </ObjectDataProvider.MethodParameters>
-        </ObjectDataProvider>
-
         <DataTemplate x:Key="DayResourcetemplate">
             <Grid Background="Transparent">
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical">
@@ -412,6 +399,7 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
                 </StackPanel>
             </Grid>
         </DataTemplate>
+
         <DataTemplate x:Key="TimeResourcetemplate">
             <Grid Background="Transparent">
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical">
