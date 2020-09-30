@@ -101,6 +101,36 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Rotating page(s) using command
+
+You can rotate the specific range of pages using the `RotatePagesCommand` of `PdfViewerControl`. The following code shows how to rotate pages by executing the command, and to the pass the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesCommand.Execute(new object[] { new int[] { 0, 1 }, PdfPageRotateAngle.RotateAngle180 });
+
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the `RotatePagesClockwiseCommand` and RotatePagesCounterclockwiseCommand` of `PdfViewerControl`. The following codes shows how to rotate pages clockwise and counterclockwise respectively, and to the pass the index of the pages to be rotated.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesClockwiseCommand.Execute( new int[] { 0, 1 } );
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesCounterclockwiseCommand.Execute( new int[] { 0, 1 } );
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Acquiring page rotation
 
 You can get the rotation angle of a PDF page in terms of `PdfPageRotateAngle` using `PageOrganizer.GetPageRotation()` method.
@@ -124,8 +154,6 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
-
 
 ## Rearranging PDF pages
 
@@ -200,6 +228,18 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Remove page(s) using command
+
+You can remove the specific range of pages using the `RemovePagesCommand` of `PdfViewerControl`. The following code shows how to remove pages by executing the command and to the pass the index of the pages to be deleted as command parameter.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RemovePagesCommand.Execute(new int[] { 0, 1 });
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Get the selected page indexes
 
 You can get the selected page indexes of the PDF document in the organizing pages window. The [PageSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event indicates that a page(s) is selected and the [SelectedPages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html#Syncfusion_Windows_PdfViewer_PageSelectedEventArgs_SelectedPages) property of the [PageSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html) provides you the index of the pages that are currently selected. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
@@ -251,4 +291,4 @@ The following keyboard shortcuts are available at miniature preview mode to orga
 •	Delete key: Deletes the selected page from the PDF document.
 •	Ctrl+A: Selects all pages in the PDF document.
 •	Shift+Arrow/MouseButton: Selects a set of consecutive pages in the PDF document.
-•	Ctrl+MouseButton: Selects the clicked pages in the PDF document. 
+•	Ctrl+MouseButton: Selects the clicked pages in the PDF document.
