@@ -261,7 +261,10 @@ schedule.ItemsSource = Meetings;
 
 You can customize the number of visible resources in the day , week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
 
+N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed. 
+
 ### Visible resource count in days view
+
 `DaysViewSetting` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
 {% tabs %}
 {% highlight xaml %}
