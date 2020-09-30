@@ -39,7 +39,7 @@ colorPickerPalette.Height = 40;
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
-## Setting null value
+## Setting null value / No color
 
 You can set a null color value for the selected color by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
 
@@ -329,14 +329,14 @@ colorPickerPalette.Height = 40;
 
 N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `false`, then MoreColor option automatically hides.
 
-## Color changed notification
+## Selected brush or color changed notification
 
-The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties. You can also get the color changed notification by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedCommand) property.
+The selected brush or color changed in `ColorPickerPalette` can be examined using `SelectedBrushChanged` event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties. You can also get the selected brush and color changed notification by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedCommand) property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette ColorChanged="ColorPickerPalette_ColorChanged"
+<syncfusion:ColorPickerPalette SelectedBrushChanged="ColorPickerPalette_SelectedBrushChanged"
                                Name="ColorPickerPalette" 
                                Width="60"
                                Height="40">
@@ -346,7 +346,7 @@ The selected color changed in `ColorPickerPalette` can be examined using [ColorC
 {% highlight C# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.ColorChanged += ColorPickerPalette_ColorChanged;
+colorPickerPalette.SelectedBrushChanged += ColorPickerPalette_SelectedBrushChanged;
 colorPickerPalette.Width = 60;
 colorPickerPalette.Height = 40;
 
@@ -356,10 +356,15 @@ colorPickerPalette.Height = 40;
 {% tabs %}
 {% highlight C# %}
 
-//Invoked when the selected color is changed
-private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
-    Console.WriteLine(e.OldValue.ToString());
-    Console.WriteLine(e.NewValue.ToString());
+//Invoked when the selected color or brush is changed
+private void ColorPickerPalette_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs e) {
+    //Old and newly selected brushes
+    var OldBrush = e.OldBrush ;
+    var newBrush = e.NewBrush;
+
+    //Old and newly selected colors
+    var oldColor = e.OldColor;
+    var newColor = e.NewColor;            
 }
 
 {% endhighlight %}
