@@ -1,24 +1,17 @@
 ---
 layout: post
 title:  Redaction in PDF Viewer WPF | Syncfusion
-description: Redact sensitive/confidential content in the PDF file using Syncfusion PDF Viewer WPF
+description: Redact sensitive/confidential content in in text, images, and graphics from a PDF file using Syncfusion PDF Viewer WPF
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Redaction
+# Redact PDF contents in WPF Pdf Viewer
 
 Redaction support allows you to remove sensitive/confidential information in text, images, and graphics from a PDF document.
 
-## Mark region to redact
-
-Use the following steps to perform redaction in the PDF document page:
-
-1.	Click the redaction tool button in the left pane, this displays the redaction toolbar as a secondary toolbar in the `PdfViewerControl`.
-2.	Select **Mark for Redaction** from redaction toolbar to select the region or text to be redacted
-
-![Mark for Redaction](Redaction_Images/Redaction_Images_0.png)  
+## Enable redaction mode
 
 The following code shows how to switch to redaction mode in code behind.
 
@@ -42,10 +35,44 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Mark region to redact
+
+Use the following steps to perform redaction in the PDF document page:
+
+1.	Click the redaction tool button in the left pane, this displays the redaction toolbar as a secondary toolbar in the `PdfViewerControl`.
+2.	Select **Mark for Redaction** from redaction toolbar to select the region or text to be redacted
+
+	![Mark for Redaction](Redaction_Images/Redaction_Images_0.png)  
+
 3.	Use the mouse pointer to select the region or the text to be redacted. This operation will create a mark in the region selected.
 4.	Choose Apply in the redaction toolbar to redact the marked region.
 
 N> Undo and redo can only be performed before applying the redaction, these operations cannot be performed after applying redaction. 
+
+### Mark regions for redaction without UI interaction
+
+You can also mark regions for redaction without UI interaction from the code behind using the `MarkRegions` method. Refer to the following code to mark the regions by passing the page index and the list of rectangle regions to be marked in the particular page for redaction.
+
+{% tabs %}
+{% highlight c# %}
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{            
+	List<RectangleF> rectangles = new List<RectangleF>();
+
+	rectangles = new List<RectangleF>() { new RectangleF(100, 100, 100, 100) };
+
+	// Appends regions to the existing marked regions, marking regions if it does not already exist.
+	pdfViewerControl.PageRedactor.MarkRegions(0, rectangles, false);
+
+	// Enable the redaction mode.
+	pdfViewerControl.PageRedactor.EnableRedactionMode = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> You can overwrite the existing marked regions with the new regions, By passing the value `true` for the `clearExisting` parameter of `MarkRegions` method.
 
 ## Customizing redaction appearance 
 
@@ -210,6 +237,52 @@ The following image illustrates how to delete the included redaction from the PD
 
 ![Redaction Delete](Redaction_Images/Redaction_Images_8.png)
 
+## Events
+
+### Redaction applied notification
+
+The `RedactionApplied` event notifies you when the marked regions of the page(s) are redacted. It provides the details of the redacted region through the `RedactionEventArgs`. The following code shows hot to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using Syncfusion.Windows.PdfViewer;
+using System.Collections.Generic;
+using System.Windows;
+
+namespace RedactionAppliedEventDemo
+{    
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            pdfViewerControl.PageRedactor.RedactionApplied += PageRedactor_RedactionApplied;
+            pdfViewerControl.Load(@"../../Data/PDF_Succinctly.pdf");
+        }
+        private void PageRedactor_RedactionApplied(object sender, Syncfusion.Windows.PdfViewer.RedactionEventArgs args)
+        {
+            //Collection of redacted regions for pdf pages
+             List<RedactionMark> RedactedMarks = args.Marks;
+
+            foreach (RedactionMark redactionMark in RedactedMarks)
+            {
+                //Bounds of the redacted region
+                System.Drawing.RectangleF RedactedRegion = redactionMark.Bounds;
+
+                //Brush color used to fill the redacted region
+                System.Windows.Media.Color Fillcolor = redactionMark.Fill;
+
+                //Page index of the redaction mark
+                int pageIndex = redactionMark.PageIndex;
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the marked redaction in the PDF document:
@@ -217,4 +290,4 @@ The following keyboard shortcuts are available to customize the marked redaction
 •	Ctrl + Z: Performs undo functionality for recently performed operations.
 •	Ctrl + Y: Performs redo functionality for recently performed operations.
 
-N> All these operations can only be performed before applying the redaction.  
+N> All these operations can only be performed before applying the redaction.
