@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu Commands in WPF  Scheduler Control | Syncfusion
+title: Context Menu and Commands in WPF  Scheduler Control | Syncfusion
 description: Learn about context menu support and its customization in Syncfusion WPF Scheduler (SfScheduler) control and more details. 
 platform: wpf
 control: SfScheduler
@@ -81,3 +81,5 @@ Header="Delete">
 * `MenuType` – Gets the element type for which the context menu opens.
 
 * `ContextMenu` – It represents shortcut context menu which is being opened.
+
+* `Scheduler` - Gets the instance of SFScheduler.
