@@ -82,7 +82,7 @@ var appointments = new ScheduleAppointment()
 StartTime = DateTime.Now.AddMinutes(20),
 EndTime = DateTime.Now.AddHours(2),
 Subject = "General Meeting",
-ResourceIdCollection = new ObservableCollection<object>() { ResourceCollection[0].Id, ResourceCollection[1].Id }
+ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001" }
 };
 
 scheduleAppointmentCollection.Add(appointments);
@@ -107,7 +107,7 @@ var appointments = new ScheduleAppointment()
 StartTime = DateTime.Now.AddMinutes(20),
 EndTime = DateTime.Now.AddHours(2),
 Subject = "General Meeting",
-ResourceIdCollection = new ObservableCollection<object>() { ResourceCollection[0].Id, ResourceCollection[1].Id,ResourceCollection[2].Id }
+ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" }
 };
 
 scheduleAppointmentCollection.Add(appointments);
