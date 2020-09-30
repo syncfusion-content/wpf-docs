@@ -9,7 +9,7 @@ documentation: ug
 
 # Resource in WPF Scheduler (SfScheduler)
 
-The Scheduler control allows you to define resources that can be assigned to appointments in day,week,work week and timeline views. Resources let you associate additional information with your appointments.
+The Scheduler resource view will allows you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views.
 
 ## Add resources in scheduler
 Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource.You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler`.
