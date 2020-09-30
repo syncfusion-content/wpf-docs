@@ -11,10 +11,6 @@ documentation: ug
 
 In this section, let us see how to configure properties manually in (`xaml` or `C#`) instead of event or attributes.
 
-
-
-N> Manual definition of property item by using `PropertyGridItem` have higher priority than property definition from attributes and `AutoGeneratingPropertyGridItem` event. When `AutoGenerateItems` is disabled, `AutoGeneratingPropertyGridItem` event will not be triggered.
-
 ## Define PropertyItem manually 
 
 By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the `PropertyGridItem`.
