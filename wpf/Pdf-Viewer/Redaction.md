@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Redaction in PDF Viewer WPF | Syncfusion
-description: Redact sensitive/confidential content in the PDF file using Syncfusion PDF Viewer WPF
+description: Redact sensitive/confidential content in in text, images, and graphics from a PDF file using Syncfusion PDF Viewer WPF
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Redaction
+# Redact PDF contents in WPF Pdf Viewer
 
 Redaction support allows you to remove sensitive/confidential information in text, images, and graphics from a PDF document.
 
@@ -72,7 +72,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> You can overwrite the existing marked regions with the new regions, By passing the value `true` to the `clearExisting` parameter of `MarkRegions` method.
+N> You can overwrite the existing marked regions with the new regions, By passing the value `true` for the `clearExisting` parameter of `MarkRegions` method.
 
 ## Customizing redaction appearance 
 
