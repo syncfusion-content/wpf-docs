@@ -17,7 +17,7 @@ The label color can be changed using the [`LabelStroke`](https://help.syncfusion
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -67,7 +67,7 @@ The label font can be customized using the `FontSize`, `FontFamily`, and `FontSt
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -133,7 +133,7 @@ Placing the labels inside or outside the scale by selecting the [`LabelPosition`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -183,7 +183,7 @@ Positioning the labels far away from the ticks using the [`LabelOffset`](https:/
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -231,13 +231,13 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Label rotation
 
-Each circular gauge label can be rotated and positioned based on its corresponding angle. This can be controlled by `CanRotateLabels` property in the scale.
+Circular gauge labels can be rotated based on its corresponding angle. This can be controlled by `CanRotateLabels` property in the scale.
 
 Setting false to this property will display all the labels without rotation.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <gauge:SfCircularGauge>
 
@@ -287,7 +287,7 @@ Setting false to this property will display all the labels without rotation.
 
 {% endtabs %}
 
-![Label rotation](Labels_images/RotateLabels.PNG)
+![Label rotation](Labels_images/RotateLabels.png)
 
 ## Setting a smart labels
 
@@ -313,7 +313,7 @@ The [`NumericScaleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.G
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -370,7 +370,7 @@ The [`NoOfFractionalDigit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -424,7 +424,7 @@ The `LabelPostfix` property allows to postfix the values to the scale labels.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
@@ -474,7 +474,7 @@ The `LabelPrefix` property allows to prefix the values to the scale labels.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
 
