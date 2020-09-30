@@ -336,6 +336,8 @@ ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "100
 
 Resource UI customization using a template and template selectors support.
 
+### Customize resource appearnce using ResourceHeaderTemplate
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -370,5 +372,118 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
 </syncfusion:SfScheduler>
 </Grid>
 
+{% endhighlight %}
+{% endtabs %}
+
+### Customize resource appearnce using ResourceHeaderTemplateSelector
+
+{% tabs %}
+{% highlight xaml %}
+
+    <Window.Resources>
+        <x:Array x:Key="schedulerViewTypes" Type="system:String">
+            <system:String>Day</system:String>
+            <system:String>Week</system:String>
+            <system:String>WorkWeek</system:String>
+            <system:String>Timeline</system:String>
+        </x:Array>
+        <ObjectDataProvider x:Key="schedulerResourceGroupTypes" MethodName="GetValues"
+                            ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type  Type="{x:Type syncfusion:ResourceGroupType}"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+        <DataTemplate x:Key="DayResourcetemplate">
+            <Grid Background="Transparent">
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
+                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
+                            <Image HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   Width="55"
+                                   Height="55"
+                                   Source="{Binding ImageSource}" />
+                        </Border>
+                    </Border>
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="15"
+                               Text="{Binding Name}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="TimeResourcetemplate">
+            <Grid Background="Transparent">
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="Black">
+                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
+                            <Image HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   Width="55"
+                                   Height="55"
+                                   Source="{Binding ImageSource}" />
+                        </Border>
+                    </Border>
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="15"
+                               Text="{Binding Name}"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    <Window.Resources>
+
+    <Grid>
+        <Grid.DataContext>
+            <local:BindingViewModel/>
+        </Grid.DataContext>
+        <Grid.Resources>
+            <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayResourceTemplate="{StaticResource DayResourcetemplate}" TimeResourceTemplate="{StaticResource TimeResourcetemplate}"/>
+        </Grid.Resources>
+
+        <syncfusion:SfScheduler x:Name="Schedule"
+                                ViewType="Week"
+                                ResourceGroupType="Resource}"
+                                ResourceCollection="{Binding Resources}"
+                                ItemsSource="{Binding ResourceAppointments}" HeaderHeight="32"
+                                DisplayDate="{Binding DisplayDate}" ResourceHeaderTemplateSelector="{StaticResource resourceTemplateSelector}">
+    
+    </Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+### Creating a ResourceHeaderTemplateSelector
+
+{% tabs %}
+{% highlight c# %}
+
+    public class ResourceTemplateSelector : DataTemplateSelector
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ResourceTemplateSelector" /> class.
+        /// </summary>
+        public ResourceTemplateSelector()
+        {
+        }
+
+        public DataTemplate DayResourceTemplate { get; set; }
+
+        public DataTemplate TimeResourceTemplate { get; set; }
+
+        /// <summary>
+        /// Template selection method
+        /// </summary>
+        /// <param name="item">return the object</param>
+        /// <param name="container">return the bindable object</param>
+        /// <returns>return the template</returns>
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        {
+            var resource = item as Employee;
+            if (resource.ID.Equals("0"))
+                return DayResourceTemplate;
+            else
+                return TimeResourceTemplate;
+        }
+    }
 {% endhighlight %}
 {% endtabs %}
