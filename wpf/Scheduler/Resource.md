@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource in scheduler | WPF| Syncfusion
+title: Resource Grouping in scheduler | WPF| Syncfusion
 description: WPF scheduler resource grouping allows to define resources that can be assigned to appointments in day, week, work week and timeline views.
 platform: WPF
 control: SfScheduler
@@ -153,6 +153,7 @@ public Brush ForegroundColor { get; set; }
 >**NOTE**
 
 * You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+* SchedulerResource.Data  object is used to create the SchedulerResource by mapping the custom resource.
 
 You can map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
 
@@ -343,6 +344,23 @@ ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "100
 ## Resource appearance customization
 
 Resource UI customization using a template and template selectors support.
+
+### Customize resource header appearance
+
+You can style resource header appearance using `ResourceHeaderControl` in scheduler. You can change the background color, textStyle, and borderBrush etc. by setting style property for `ResourceHeaderControl`.
+
+{% tabs %}
+{% highlight xaml %}
+        <Style  TargetType="Schedule:ResourceHeaderControl">
+            <Setter Property="Background" Value="LightCyan"/>
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="BorderBrush" Value="LightCoral"/>
+           <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+{% endhighlight %}
+{% endtabs %}
 
 ### Customize resource appearance using ResourceHeaderTemplate
 

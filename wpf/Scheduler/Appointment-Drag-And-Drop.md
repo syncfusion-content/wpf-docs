@@ -24,7 +24,7 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 {% endtabs %}
 
 ## AppointmentDragOver event
-Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when drag the appointment. [AppointmentDragEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
+Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when drag the appointment. [AppointmentDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
 
 [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragEventArgs_Appointment) - Gets the Appointment that is dragging.
 
@@ -42,6 +42,9 @@ this.Schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
         }
 {% endhighlight %}
 {% endtabs %}
+
+* `SourceResource` - gets the `SchedulerResource` where the appointment was located before starting the dragging. 
+* `TargetResource` - gets the `SchedulerResource` where the appointment is currently being dragged over.  
 
 ## AppointmentDragStarting event
 Scheduler notifies by [AppointmentDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when start to drag the appointment. 
@@ -61,6 +64,7 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
         }
 {% endhighlight %}
 {% endtabs %}
+* `Resource` - gets the resource of an appointment under which the appointment is located.
 
 ## AppointmentDropping event
 Scheduler notifies by [AppointmentDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when you drop the appointment.
@@ -82,3 +86,7 @@ this.Schedule.AppointmentDropping += Schedule_AppointmentDropping;
         }
 {% endhighlight %}
 {% endtabs %}
+
+* `SourceResource` - gets the `SchedulerResource` where the appointment was located before starting the dragging.
+
+* `TargetResource` - gets the `SchedulerResource` where the appointment is currently being dragged over. 
