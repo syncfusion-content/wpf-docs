@@ -1380,7 +1380,7 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ### Value change started
 
-Invoked when the user starts selecting a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
+Invoked when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
 
 The `ValueChangeStarted` event contains the following arguments.
 
@@ -1421,7 +1421,7 @@ The `ValueChangeStarted` event contains the following arguments.
 
 ### Value changing event
 
-Called during a drag when the user is selecting before a new value for the pointer by dragging. The `ValueChangingEventArgs` contains `OldValue`, `NewValue`, and `Cancel` properties.
+Called during a drag when the user is updating before a new value for the pointer by dragging. The `ValueChangingEventArgs` contains `OldValue`, `NewValue`, and `Cancel` properties.
 `OldValue`: Contains pointer old value.
 `NewValue`: Contains pointer new value.
 `Cancel`: To restrict the update of current drag pointer value, set `ValueChangingArgs.cancel` is true.
@@ -1477,7 +1477,7 @@ Called during a drag when the user is selecting before a new value for the point
 
 ### Value changed event
 
-Called during a drag when the user is selecting a new value for the pointer by dragging. The `ValueChangedEventArgs` contains `Value` property.
+Called during a drag when the user is updating a new value for the pointer by dragging. The `ValueChangedEventArgs` contains `Value` property.
 `Value` : Contains drag pointer value.
 
 {% tabs %}
@@ -1521,9 +1521,9 @@ Called during a drag when the user is selecting a new value for the pointer by d
 
 ### Value change completed
 
-Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+Invoked after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
 
-This event will notify the completion of dragging with a new value being selected.
+This event will notify the completion of dragging with a new value being updated.
 
 The `ValueChangeCompleted` event contains the following arguments.
 
