@@ -13,23 +13,21 @@ Organize pages support allows you to rotate, rearrange, and delete pages from a 
 
 Use the following steps to organize the PDF page(s) in `PdfViewerControl`:
 
-1.	Click the organize page button in the left pane, this displays the organize pages pane in the `PdfViewerControl`.
+1. Click the organize page button in the left pane, this displays the organize pages pane in the `PdfViewerControl`.
 
-![Organize Page Button](OrganizePages_Images/OrganizePages_Image_0.png)
+2. You can rotate or delete a specific page using context menu that appears when hovering the mouse over the pages.
 
-2.	You can rotate or delete a specific page using context menu that appears when hovering the mouse over the pages.
+	![Page toolbar](OrganizePages_Images/OrganizePages_Image_1.png)
 
-![Page toolbar](OrganizePages_Images/OrganizePages_Image_1.png)
+3. You can rotate or delete multiple pages using the organize pages toolbar.
 
-3.	You can rotate or delete multiple pages using the organize pages toolbar.
+	![Organize Pages toolbar](OrganizePages_Images/OrganizePages_Image_2.png)
 
-![Organize Pages toolbar](OrganizePages_Images/OrganizePages_Image_2.png)
+	N> You can use Ctrl/Shift keys to select multiple pages. Also, you can select all pages using Ctrl+A shortcut key. You cannot delete all the pages from the document. 
 
-N> You can use Ctrl/Shift keys to select multiple pages. Also, you can select all pages using Ctrl+A shortcut key. You cannot delete all the pages from the document. 
+4. You can rearrange the page(s) by dragging and dropping them.
 
-4.	You can rearrange the page(s) by dragging and dropping them.
-
-![Rearrange pages](OrganizePages_Images/OrganizePages_Image_3.png)
+	![Rearrange pages](OrganizePages_Images/OrganizePages_Image_3.png)
 
 ## Rotating PDF page(s)
 
@@ -98,6 +96,60 @@ private void button1_Click(object sender, RoutedEventArgs e)
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
     'Rotating the pages with index 0 and 1 in counterclockwise
     pdfviewer.PageOrganizer.RotateCounterclockwise (new int[] { 0, 1 })
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+### Rotating page(s) using command
+
+You can rotate the specific range of pages using the `RotatePagesCommand` of `PdfViewerControl`. The following code shows how to rotate pages by executing the command, and to the pass the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesCommand.Execute(new object[] { new int[] { 0, 1 }, PdfPageRotateAngle.RotateAngle180 });
+
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the `RotatePagesClockwiseCommand` and RotatePagesCounterclockwiseCommand` of `PdfViewerControl`. The following codes shows how to rotate pages clockwise and counterclockwise respectively, and to the pass the index of the pages to be rotated.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesClockwiseCommand.Execute( new int[] { 0, 1 } );
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.PageOrganizer.RotatePagesCounterclockwiseCommand.Execute( new int[] { 0, 1 } );
+
+{% endhighlight %}
+{% endtabs %}
+
+## Acquiring page rotation
+
+You can get the rotation angle of a PDF page in terms of `PdfPageRotateAngle` using `PageOrganizer.GetPageRotation()` method.
+
+{% tabs %}
+{% highlight c# %}
+
+private void button1_Click(object sender, RoutedEventArgs e)
+{
+    //Gets rotation angle of page with index 0 
+    PdfPageRotateAngle rotatedAngle = pdfviewer.PageOrganizer.GetPageRotation(0);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
+    'Gets rotation angle of page with index 0 
+    Dim rotatedAngle As PdfPageRotateAngle = pdfviewer.PageOrganizer.GetPageRotation(0)
 End Sub
 
 {% endhighlight %}
@@ -176,26 +228,14 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Acquiring page rotation
+### Remove page(s) using command
 
-You can get the rotation angle of a PDF page in terms of `PdfPageRotateAngle` using `PageOrganizer.GetPageRotation()` method.
+You can remove the specific range of pages using the `RemovePagesCommand` of `PdfViewerControl`. The following code shows how to remove pages by executing the command and to the pass the index of the pages to be deleted as command parameter.
 
 {% tabs %}
 {% highlight c# %}
 
-private void button1_Click(object sender, RoutedEventArgs e)
-{
-    //Gets rotation angle of page with index 0 
-    PdfPageRotateAngle rotatedAngle = pdfviewer.PageOrganizer.GetPageRotation(0);
-}
-
-{% endhighlight %}
-{% highlight VB %}
-
-Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    'Gets rotation angle of page with index 0 
-    Dim rotatedAngle As PdfPageRotateAngle = pdfviewer.PageOrganizer.GetPageRotation(0)
-End Sub
+pdfViewerControl.PageOrganizer.RemovePagesCommand.Execute(new int[] { 0, 1 });
 
 {% endhighlight %}
 {% endtabs %}
@@ -251,4 +291,4 @@ The following keyboard shortcuts are available at miniature preview mode to orga
 •	Delete key: Deletes the selected page from the PDF document.
 •	Ctrl+A: Selects all pages in the PDF document.
 •	Shift+Arrow/MouseButton: Selects a set of consecutive pages in the PDF document.
-•	Ctrl+MouseButton: Selects the clicked pages in the PDF document. 
+•	Ctrl+MouseButton: Selects the clicked pages in the PDF document.
