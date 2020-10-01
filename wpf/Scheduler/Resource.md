@@ -429,7 +429,7 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
         <DataTemplate x:Key="TimeResourcetemplate">
             <Grid Background="Transparent">
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="Black">
+                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
                         <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
                             <Image HorizontalAlignment="Center" VerticalAlignment="Center"
                                    Width="55"
