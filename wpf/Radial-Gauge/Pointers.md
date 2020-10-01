@@ -1380,9 +1380,9 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ### Value change started
 
-Invoked when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
+Called when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events ([`ValueChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanging), [`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanged) and [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted)) will be followed after this event.
 
-The `ValueChangeStarted` event contains the following arguments.
+The [`ValueChangeStarted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeStarted) event contains the following arguments.
 
 `Value` : This value will be the last value the pointer had before the changes began.
 
@@ -1421,7 +1421,7 @@ The `ValueChangeStarted` event contains the following arguments.
 
 ### Value changing event
 
-Called during a drag when the user is updating before a new value for the pointer by dragging. The `ValueChangingEventArgs` contains `OldValue`, `NewValue`, and `Cancel` properties.
+Called during a drag when the user is updating before a new value for the pointer by dragging. The [`ValueChangingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html) contains [`OldValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_OldValue), [`NewValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_NewValue), and [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_Cancel) properties.
 `OldValue`: Contains pointer old value.
 `NewValue`: Contains pointer new value.
 `Cancel`: To restrict the update of current drag pointer value, set `ValueChangingArgs.cancel` is true.
@@ -1477,7 +1477,7 @@ Called during a drag when the user is updating before a new value for the pointe
 
 ### Value changed event
 
-Called during a drag when the user is updating a new value for the pointer by dragging. The `ValueChangedEventArgs` contains `Value` property.
+Called during a drag when the user is updating a new value for the pointer by dragging. The [`ValueChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html) contains [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value) property.
 `Value` : Contains drag pointer value.
 
 {% tabs %}
@@ -1521,11 +1521,11 @@ Called during a drag when the user is updating a new value for the pointer by dr
 
 ### Value change completed
 
-Invoked after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+Called after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted) event.
 
 This event will notify the completion of dragging with a new value being updated.
 
-The `ValueChangeCompleted` event contains the following arguments.
+The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted) event contains the following arguments.
 
 `Value` : This value will be the new updated pointer value after dragging.
 

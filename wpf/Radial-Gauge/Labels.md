@@ -231,7 +231,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Label rotation
 
-Circular gauge labels can be rotated based on its corresponding angle. This can be controlled by `CanRotateLabels` property in the scale.
+Circular gauge labels can be rotated based on its corresponding angle. This can be controlled by [`CanRotateLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_CanRotateLabels) property in the scale.
 
 Setting false to this property will display all the labels without rotation.
 
