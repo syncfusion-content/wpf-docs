@@ -24,13 +24,13 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 {% endtabs %}
 
 ## AppointmentDragOver event
-Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when drag the appointment. [AppointmentDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
+Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when drag the appointment. [AppointmentDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
 
-[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragEventArgs_Appointment) - Gets the Appointment that is dragging.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragOverEventArgs_Appointment) - Gets the Appointment that is dragging.
 
-[DraggingPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragEventArgs_DraggingPoint) - Gets the dragging point of schedule appointment UI.
+[DraggingPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragOverEventArgs_DraggingPoint) - Gets the dragging point of schedule appointment UI.
 
-[DraggingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragEventArgs_DraggingTime) - Gets the dragging time of the dragging appointment object.
+[DraggingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentDragOverEventArgs_DraggingTime) - Gets the dragging time of the dragging appointment object.
 
 {% tabs %}
 {% highlight c# %}
