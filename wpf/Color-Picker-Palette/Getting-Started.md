@@ -284,14 +284,14 @@ colorPickerPalette.Height = 40;
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
 
-## Color changed notification
+## Selected brush or color changed notification
 
-The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties.
+The selected brush or color changed in `ColorPickerPalette` can be examined using `SelectedBrushChanged` event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette ColorChanged="ColorPickerPalette_ColorChanged"
+<syncfusion:ColorPickerPalette SelectedBrushChanged="ColorPickerPalette_SelectedBrushChanged"
                                Name="ColorPickerPalette" 
                                Width="60"
                                Height="40">
@@ -301,7 +301,7 @@ The selected color changed in `ColorPickerPalette` can be examined using [ColorC
 {% highlight C# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.ColorChanged += ColorPickerPalette_ColorChanged;
+colorPickerPalette.SelectedBrushChanged += ColorPickerPalette_SelectedBrushChanged;
 colorPickerPalette.Width = 60;
 colorPickerPalette.Height = 40;
 
@@ -311,10 +311,15 @@ colorPickerPalette.Height = 40;
 {% tabs %}
 {% highlight C# %}
 
-//Invoked when the selected color is changed
-private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
-    Console.WriteLine(e.OldValue.ToString());
-    Console.WriteLine(e.NewValue.ToString());
+//Invoked when the selected color or brush is changed
+private void ColorPickerPalette_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs e) {
+    //Old and newly selected brushes
+    var OldBrush = e.OldBrush ;
+    var newBrush = e.NewBrush;
+
+    //Old and newly selected colors
+    var oldColor = e.OldColor;
+    var newColor = e.NewColor;            
 }
 
 {% endhighlight %}
