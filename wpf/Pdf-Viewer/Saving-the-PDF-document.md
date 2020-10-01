@@ -63,3 +63,15 @@ Namespace PdfViewer
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+
+## Save PDF file using command
+
+You can save the PDF file in the given file path using the `SaveDocumentCommand`. The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.SaveDocumentCommand.Execute(@"C:\temp\Output.pdf");
+
+{% endhighlight %}
+{% endtabs %}
