@@ -103,7 +103,7 @@ End Sub
 
 ### Rotating page(s) using command
 
-You can rotate the specific range of pages using the `RotatePagesCommand` of `PdfViewerControl`. The following code shows how to rotate pages by executing the command, and to the pass the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
+You can rotate the specific range of pages using the `RotatePagesCommand` of `PdfViewerControl`. The following code shows how to rotate pages by executing the command with the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +113,7 @@ pdfViewerControl.PageOrganizer.RotatePagesCommand.Execute(new object[] { new int
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the `RotatePagesClockwiseCommand` and RotatePagesCounterclockwiseCommand` of `PdfViewerControl`. The following codes shows how to rotate pages clockwise and counterclockwise respectively, and to the pass the index of the pages to be rotated.
+Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the `RotatePagesClockwiseCommand` and `RotatePagesCounterclockwiseCommand` of `PdfViewerControl`. The following codes shows how to rotate pages clockwise and counterclockwise respectively, with the index of the pages to be rotated as command parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -230,7 +230,7 @@ End Sub
 
 ### Remove page(s) using command
 
-You can remove the specific range of pages using the `RemovePagesCommand` of `PdfViewerControl`. The following code shows how to remove pages by executing the command and to the pass the index of the pages to be deleted as command parameter.
+You can remove the specific range of pages using the `RemovePagesCommand` of `PdfViewerControl`. The following code shows how to remove pages by executing the command with the index of the pages as command parameter.
 
 {% tabs %}
 {% highlight c# %}
