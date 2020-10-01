@@ -287,7 +287,7 @@ Setting false to this property will display all the labels without rotation.
 
 {% endtabs %}
 
-![Label rotation](Labels_images/RotateLabels.png)
+![Label rotation](Labels_images/RotateLabels.PNG)
 
 ## Setting a smart labels
 
