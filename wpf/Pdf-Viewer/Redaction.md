@@ -241,7 +241,7 @@ The following image illustrates how to delete the included redaction from the PD
 
 ### Redaction applied notification
 
-The `RedactionApplied` event notifies you when the marked regions of the page(s) are redacted. It provides the details of the redacted region through the `RedactionEventArgs`. The following code shows hot to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
+The `RedactionApplied` event notifies you when the marked regions of the page(s) are redacted. It provides the details of the redacted region through the `RedactionEventArgs`. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight c# %}
