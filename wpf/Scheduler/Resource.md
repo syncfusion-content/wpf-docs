@@ -54,7 +54,7 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler Resource Grouping](Resource_Images/Resource.png)
+![WPF scheduler Resource Grouping](Resource_Images/Resource_DayView.png)
 
 ### Date
 `ResourceGroupType` as `Date` used to groups the number of resources under each date.
@@ -69,7 +69,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler Grouping resource by date ](Resource_Images/Resource_Date.png)
+![WPF scheduler Grouping resource by date ](Resource_Images/Date_DayView.png)
 
 ## Assign resources to appointments
 
@@ -118,7 +118,9 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler resource sharing ](Resource_Images/Resource_Sharing.png)
+![WPF scheduler Multiple resources appointment sharing in day view ](Resource_Images/ResourceSharing_DayView.png)
+
+![WPF scheduler Multiple resources appointment sharing in day view ](Resource_Images/ResourceSharing_TimelineView.png)
 
 ## Scheduler Resource Mapping
 
@@ -281,6 +283,8 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
+![WPF scheduler Visible resource count in day view ](Resource_Images/VisibleResourceCout_DayView.png)
+
 
 ### Visible resource count in timeline view
 `TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 3.
@@ -296,6 +300,8 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler Visible resource count in timeline view ](Resource_Images/VisibleResourceCout_TimelineView.png)
 
 ## Assign resources to special time regions 
 
@@ -320,7 +326,7 @@ ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler resource Special Time Region ](Resource_Images/Resource_SepcialRegion.png)
+![WPF scheduler resource Special Time Region in Day View ](Resource_Images/SpecialTimeRegion_DayView.png)
 
 ### Assign resources to special time regions in timeline view
 
@@ -340,6 +346,8 @@ ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "100
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler resource Special Time Region in Timeline View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
 
 ## Resource appearance customization
 
@@ -361,6 +369,8 @@ You can style resource header appearance using `ResourceHeaderControl` in schedu
         </Style>
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler custom ResourceHeaderControl ](Resource_Images/CustomizeResoureHeader.png)
 
 ### Customize resource appearance using ResourceHeaderTemplate
 
@@ -400,6 +410,8 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
 
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler custom ResourceHeaderTemplate ](Resource_Images/CustomDataTemplate.png)
 
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 
@@ -466,6 +478,7 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
 {% endhighlight %}
 {% endtabs %}
 
+
 ### Creating a ResourceHeaderTemplateSelector
 
 {% tabs %}
@@ -501,3 +514,5 @@ ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
     }
 {% endhighlight %}
 {% endtabs %}
+
+![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
