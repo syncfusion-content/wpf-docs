@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu and Commands in WPF Scheduler Control | Syncfusion
-description: Learn about context menu support and built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. 
+description: Learn about the context menu support and built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. 
 platform: wpf
 control: SfScheduler
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Context Menu Commands in WPF Scheduler (SfScheduler)
 
-The WPF Scheduler will have support to define a context menu commands for appointments, time slots, and month cells are right clicked. It also will have built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
+The WPF scheduler has support to define a context menu commands for appointments, time slots, and month cells are right-clicked. It will also have the built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
 
 * CellContextMenu
 * AppointmentContextMenu
 
 ## Cell context menu
 
-You can set the context menu for time slot and month cells by using `SfScheduler.CellContextMenu` property. `CellContextMenu` will be appeared only on time slot or month cells are right clicked.
+You can set the context menu for time slot and month cells by using the `SfScheduler.CellContextMenu` property. The `CellContextMenu` will appear only when the time slot or month cells are right-clicked.
 
 >**NOTE**
-The menu items which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands will be disabled in `CellContextMenu`.
+The menu items which bind the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands will be disabled in the `CellContextMenu`.
 The `DataContext` for the context menu is `SchedulerContextMenuInfo` `CommandParameter` of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
 
 {% tabs %}
@@ -40,12 +40,13 @@ The `DataContext` for the context menu is `SchedulerContextMenuInfo` `CommandPar
 
 ## Appointment context menu
 
-You can set the context menu for schedule appointments by using `SfScheduler.AppointmentContextMenu` property. `AppointmentContextMenu` will be displayed only on appointments are right clicked.
+You can set the context menu for schedule appointments by using the `SfScheduler.AppointmentContextMenu` property. The `AppointmentContextMenu` will be displayed only on appointments that are right-clicked.
 
 >**NOTE**
-The menu item which binds the `SchedulerCommands.Add` command will be disabled in `AppointmentContextMenu`.
+The menu item which binds the `SchedulerCommands.Add` command will be disabled in the `AppointmentContextMenu`.
 The `DataContext` for the context menu is `SchedulerContextMenuInfo` Command parameter of menu item should bound to context menu's data context when using the commands in `SchedulerCommands`.
-In month view, `AppointmentContextMenu` opens when `MonthViewSettings.AppointmentDisplayMode` is `AppointmentDisplayMode.Appointment`.
+In month view, the `AppointmentContextMenu` opens when the `MonthViewSettings.AppointmentDisplayMode` is set to `AppointmentDisplayMode.Appointment`.
+
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,12 +72,13 @@ Header="Delete">
 
 ## SchedulerContextMenuOpening event
 
-`SchedulerContextMenuOpening` event occurs while opening the `AppointmentContextMenu` or `CellContextMenu` in SfScheduler.. 
+The `SchedulerContextMenuOpening` event occurs while opening the `AppointmentContextMenu` or `CellContextMenu` in the SfScheduler. 
 
 `SchedulerContextMenuOpeningEventArgs` has the following members which provides the information about `SchedulerContextMenuOpening` event.
 
-* `MenuInfo` – Returns the `SchedulerContextMenuInfo` which contains the information about date time, appointment of the element opens the context menu.`AppointmentContextMenu` and `CellContextMenu` received this information as DataContext. 
+* `MenuInfo` – Returns the `SchedulerContextMenuInfo` which contains the information about date time, appointment of the element opens the context menu. The `AppointmentContextMenu` and `CellContextMenu` received this information as a DataContext.
 
 * `MenuType` – Gets the element type for which the context menu opens.
 
-* `ContextMenu` – It represents shortcut context menu which is being opened.
+* `ContextMenu` – It represents a shortcut context menu that is being opened.
+
