@@ -582,3 +582,44 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 *	Delete key – Deletes the selected annotation from the PDF document.
 *	Ctrl + Z – Performs undo functionality for recently performed operations.
 *	Ctrl + Y – Performs redo functionality for recently performed operations.
+
+## Events
+
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+
+### TextMarkupAnnotationChanged Event
+
+The `TextMarkupAnnotationChanged` event occurs when the `AAction` performed in text markup annotation. It provides the common information, `Type` and annotation properties which are available in `Settings` through the `TextMarkupAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+
+The following code shows how to write the TextMarkupAnnotationChanged event in PdfViewerControl
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnnotationChangedEventArgs e)
+{
+    //COMMON PROPERTIES
+    //AnnotationChangedAction to identify action performed for annotation 
+    AnnotationChangedAction action = e.Action;
+
+    //Page index in which this shape annotation was modified 
+    int pageNumber = e.PageNumber;
+
+    //Annotation's previous position and current position 
+    RectangleF currentBound = e.NewBounds;
+    RectangleF previousBound = e.NewBounds;
+
+    //To identify which type text markup annotation
+    TextMarkupAnnotationType type = e.Type;
+
+    TextMarkupAnnotationSettings settings = e.Settings;
+    //Annotation's properties which can be modify 
+    string author = settings.Author;
+    string subject = settings.Subject;
+    string Text = settings.Text;
+    float opacity = settings.Opacity;
+
+}
+
+{% endhighlight %}
+{% endtabs %}

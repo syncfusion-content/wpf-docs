@@ -238,5 +238,49 @@ The following keyboard shortcuts are available to customize the annotation in th
 * Ctrl + Z: Performs undo functionality for recently performed operations.
 * Ctrl + Y: Performs redo functionality for recently performed operations.
 
+## Events
 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+
+### FreeTextAnnotationChanged Event
+
+The `FreeTextAnnotationChanged` event occurs when the `Action` performed in free text annotation. It provides the common information and annotation properties which are available in `Settings` through the `FreeTextAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings’.
+
+The following code shows how to write the FreeTextAnnotationChanged event in PdfViewerControl
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotationChangedEventArgs e)
+{
+    //COMMON PROPERTIES
+    //AnnotationChangedAction to identify action performed for annotation 
+    AnnotationChangedAction action = e.Action;
+
+    //Page index in which this shape annotation was modified 
+    int pageNumber = e.PageNumber;
+
+    //Annotation's previous position and current position 
+    RectangleF currentBound = e.NewBounds;
+    RectangleF previousBound = e.NewBounds;
+
+    PdfViewerFreeTextSettings settings = e.Settings;
+    //Annotation's properties which can be modify 
+    string author = settings.Author;
+    string subject = settings.Subject;
+    string Text = settings.Text;
+    float opacity = settings.Opacity;
+    double height = settings.Height;
+    double width = settings.Width;
+    System.Windows.Media.Color backgroundColor = settings.Background;
+    System.Windows.Media.Color borderColor = settings.BorderColor;
+    float thickness = settings.BorderThickness;
+    System.Windows.Media.Color fontColor = settings.FontColor;
+    System.Windows.Media.FontFamily fontFamily = settings.FontFamily;
+    int size = settings.FontSize;
+
+}
+
+{% endhighlight %}
+{% endtabs %}
 
