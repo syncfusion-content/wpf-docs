@@ -73,7 +73,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assign resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date’. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
 
 {% tabs %}
 {% highlight c# %}
