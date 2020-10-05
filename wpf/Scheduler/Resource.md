@@ -92,7 +92,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
->**NOTE**
+N>
 * When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
 * When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
 * You can also add or remove appointment resources dynamically.
@@ -133,8 +133,7 @@ Schedule supports full data binding to `ResourceCollection`. Specify the `Resour
 | `Background` | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
 | `Foreground`| Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
 
->**NOTE**
-Custom resource class should contain a mandatory field for resource `Id`.
+N>Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
 You can create a custom class `Employee` with mandatory fields `Name`, `Id`, `ForegroundColor` and `BackgroundColor`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
@@ -152,7 +151,7 @@ public Brush BackgroundColor { get; set; }
 public Brush ForegroundColor { get; set; }
 }
 
->**NOTE**
+N>
 
 * You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 * SchedulerResource.Data  object is used to create the SchedulerResource by mapping the custom resource.
@@ -260,6 +259,43 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
+## Resource header size 
+
+You can customize the resource header size in the day, week , work week and timeline views by using the `ResouceHeaderSize` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`. 
+
+### Resource header size  in days view
+
+`DaysViewSetting` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 50.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
+ <Schedule:SfScheduler.DaysViewSettings>
+<Schedule:DaysViewSettings ResouceHeaderSize="100"/>
+</Schedule:SfScheduler.DaysViewSettings>
+</Schedule:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+schedule.DaysViewSettings.ResouceHeaderSize = 100;
+{% endhighlight %}
+{% endtabs %}
+
+### Resource header size  in timeline view
+
+`TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 50.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
+<Schedule:SfScheduler.TimelineViewSettings>
+<Schedule:TimelineViewSettings ResouceHeaderSize="100"/>
+</Schedule:SfScheduler.TimelineViewSettings>
+{% endhighlight %}
+{% highlight c# %}
+ schedule.TimelineViewSettings.ResouceHeaderSize = 80;
+{% endhighlight %}
+{% endtabs %}
+
 ## Visible resource count
 
 You can customize the number of visible resources in the day, week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
@@ -284,12 +320,12 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 
 ![WPF scheduler Visible resource count in day view ](Resource_Images/VisibleResourceCout_DayView.png)
 
-
 ### Visible resource count in timeline view
+
 `TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 3.
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
+<Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
 <Schedule:SfScheduler.TimelineViewSettings>
 <Schedule:TimelineViewSettings VisibleResourceCount="2"/>
 </Schedule:SfScheduler.TimelineViewSettings>
