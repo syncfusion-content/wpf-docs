@@ -34,7 +34,7 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N>`ResourceGroupType` property value is `None` no resource view displayed in schedule even resource added using the `ResourceCollection` property in scheduler.
+N>No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None`.
 
 ## Resource Grouping types
 
@@ -44,7 +44,7 @@ N>You can group the resource only in the day, week, and work week views.
 
 ### Resource
 
-`ResourceGroupType` as `Resource` used to groups the number of dates under each resource.
+The `ResourceGroupType` is set to `Resource` to group the number of dates under each resource.
 
 {% tabs %}
 {% highlight xaml %}
@@ -59,7 +59,8 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 ![WPF scheduler Resource Grouping](Resource_Images/Resource_DayView.png)
 
 ### Date
-`ResourceGroupType` as `Date` used to groups the number of resources under each date.
+
+The `ResourceGroupType` is set to `Date` to group the number of resources under each date.
 
 {% tabs %}
 {% highlight xaml %}
