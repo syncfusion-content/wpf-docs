@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu and Commands in WPF  Scheduler Control | Syncfusion
+title: Context Menu and Commands in WPF Scheduler Control | Syncfusion
 description: Learn about context menu support and built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. 
 platform: wpf
 control: SfScheduler
@@ -9,14 +9,14 @@ documentation: ug
 
 # Context Menu Commands in WPF Scheduler (SfScheduler)
 
-The WPF Scheduler will have support to define a context menu commands for appointments, time slots, and month cells. It also will have built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
+The WPF Scheduler will have support to define a context menu commands for appointments, time slots, and month cells are right clicked. It also will have built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
 
 * CellContextMenu
 * AppointmentContextMenu
 
 ## Cell context menu
 
-You can set the context menu for time slot and month cells by using `SfScheduler.CellContextMenu` property. `CellContextMenu` will be appeared only on time slot or month cells.
+You can set the context menu for time slot and month cells by using `SfScheduler.CellContextMenu` property. `CellContextMenu` will be appeared only on time slot or month cells are right clicked.
 
 >**NOTE**
 The menu items which binds the `SchedulerCommands.Edit` and `SchedulerCommands.Delete` built-in commands will be disabled in `CellContextMenu`.
@@ -40,7 +40,7 @@ The `DataContext` for the context menu is `SchedulerContextMenuInfo` `CommandPar
 
 ## Appointment context menu
 
-You can set the context menu for schedule appointments by using `SfScheduler.AppointmentContextMenu` property. `AppointmentContextMenu` will be displayed only on appointments.
+You can set the context menu for schedule appointments by using `SfScheduler.AppointmentContextMenu` property. `AppointmentContextMenu` will be displayed only on appointments are right clicked.
 
 >**NOTE**
 The menu item which binds the `SchedulerCommands.Add` command will be disabled in `AppointmentContextMenu`.
@@ -69,7 +69,7 @@ Header="Delete">
 
 ![Appointment ContextMenu in WPF Scheduler](ContextMenu/AppointmentContextMenu.png)
 
-## Events
+## Handle the SchedulerContextMenuOpening Event
 
 ### SchedulerContextMenuOpening
 
