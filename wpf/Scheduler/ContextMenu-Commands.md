@@ -71,11 +71,11 @@ Header="Delete">
 
 ## Handle the SchedulerContextMenuOpening Event
 
-`SchedulerContextMenuOpening` event occurs while opening the c`AppointmentContextMenu` or `CellContextMenu` in SfScheduler.. 
+`SchedulerContextMenuOpening` event occurs while opening the `AppointmentContextMenu` or `CellContextMenu` in SfScheduler.. 
 
 `SchedulerContextMenuOpeningEventArgs` has the following members which provides the information about `SchedulerContextMenuOpening` event.
 
-* `MenuInfo` – Returns the `SchedulerContextMenuInfo` which contains the information about date time, appointment of the element opens the context menu.`AppointmentContextMenu` and `CellContextMenu` received this information as DataContext.. 
+* `MenuInfo` – Returns the `SchedulerContextMenuInfo` which contains the information about date time, appointment of the element opens the context menu.`AppointmentContextMenu` and `CellContextMenu` received this information as DataContext. 
 
 * `MenuType` – Gets the element type for which the context menu opens.
 
