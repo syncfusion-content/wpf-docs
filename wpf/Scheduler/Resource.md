@@ -93,9 +93,9 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endtabs %}
 
 >**NOTE**
-•When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
-•When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
-•You can also add or remove appointment resources dynamically.
+* When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
+* When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
+* You can also add or remove appointment resources dynamically.
 
 ### Multiple resources appointment sharing
 Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
@@ -260,7 +260,6 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Visible resource count
 
 You can customize the number of visible resources in the day, week , work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
@@ -349,11 +348,11 @@ ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "100
 
 ![WPF scheduler resource Special Time Region in Timeline View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
 
-## Resource appearance customization
+## Appearance customization
 
 Resource UI customization using a template and template selectors support.
 
-### Customize resource header appearance
+### Customize resource header appearance using Style
 
 You can style resource header appearance using `ResourceHeaderControl` in scheduler. You can change the background color, textStyle, and borderBrush etc. by setting style property for `ResourceHeaderControl`.
 
