@@ -92,10 +92,9 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N>
-* When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
-* When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
-* You can also add or remove appointment resources dynamically.
+N>• When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`..
+• When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
+• You can also add or remove appointment resources dynamically.
 
 ### Multiple resources appointment sharing
 Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
@@ -151,10 +150,8 @@ public Brush BackgroundColor { get; set; }
 public Brush ForegroundColor { get; set; }
 }
 
-N>
-
-* You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
-* SchedulerResource.Data  object is used to create the SchedulerResource by mapping the custom resource.
+N>• You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+• SchedulerResource.Data  object is used to create the SchedulerResource by mapping the custom resource.
 
 You can map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
 
