@@ -67,6 +67,8 @@ For example, To use custom appointment editor window instead of default appointm
 {% endhighlight %}
 {% endtabs %}
 
+* `Resource` - gets the resource of an appointment under which the appointment is located. 
+
 ### AppointmentEditorClosing event
 When you close the appointment editor window after added or edited the schedule appointment, Scheduler notifies by [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 
@@ -102,6 +104,8 @@ private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorC
         } 
 {% endhighlight %}
 {% endtabs %}
+
+* `Resource` - gets the resource collection of edited appointment.
 
 ## Disable appointment editing
 To disable appointment editing functionality, Set [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property to `None`. In this case, you will not be able to perform add, edit, resize and drag & drop the appointments.
@@ -201,3 +205,4 @@ this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
         }
 {% endhighlight %}
 {% endtabs %}
+* `Resource` - gets the resource of an appointment under which the appointment is located.
