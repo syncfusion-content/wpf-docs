@@ -105,10 +105,11 @@ Multiple resources can share the same events or appointments, If appointment det
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 var appointments = new ScheduleAppointment()
 {
-StartTime = DateTime.Now.AddMinutes(20),
-EndTime = DateTime.Now.AddHours(2),
+StartTime = new DateTime(2020, 10, 01, 10, 0, 0),
+EndTime = new DateTime(2020, 10, 01, 12, 0, 0),
 Subject = "Project Plan",
 ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" }
+AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")),
 };
 
 scheduleAppointmentCollection.Add(appointments);
@@ -346,8 +347,8 @@ Special time region can be created based on the resources in day, week , work we
 
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-StartTime = new System.DateTime(2020, 09, 15, 13, 0, 0),
-EndTime = new System.DateTime(2020, 09, 08, 15, 0, 0),
+StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
+EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
 Text = "Lunch",
 CanEdit = false,
 Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
@@ -368,8 +369,8 @@ ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003
 
 this.schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-StartTime = new System.DateTime(2020, 09, 15, 13, 0, 0),
-EndTime = new System.DateTime(2020, 09, 08, 15, 0, 0),
+StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
+EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
 Text = "Lunch",
 CanEdit = false,
 Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
