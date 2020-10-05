@@ -96,7 +96,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endtabs %}
 
 N>• When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
-• When `ResourceGroupType` set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
+• When the `ResourceGroupType` is set to `None`, the resource view will be collapsed and all the scheduler DataSource events will be displayed.
 • You can also add or remove the appointment resources dynamically.
 
 ### Multiple resource sharing
