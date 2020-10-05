@@ -36,9 +36,11 @@ schedule.ResourceCollection = ResourceCollection;
 
 N>`ResourceGroupType` property value is `None` no resource view displayed in schedule even resource added using the `ResourceCollection` property in scheduler.
 
-## Resource Grouping type in day,week,work week views.
+## Resource Grouping types
 
-You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of `SfScheduler` in day,week,work week views. 
+You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of `SfScheduler`.
+
+N>You can group the resource only in day,week,work week views. 
 
 ### Resource
 
@@ -71,7 +73,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ![WPF scheduler Grouping resource by date ](Resource_Images/Date_DayView.png)
 
-## Assign resources to appointments
+## Assigning resources to appointments
 
 Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the `ScheduleAppointment` by using the `ResourceIdCollection` for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
 
@@ -96,7 +98,7 @@ N>• When `ResourceIdCollection` not added to 'ScheduleAppointment' then the ap
 • When `ResourceGroupType` set as `None`, then `ScheduleAppointment` associated with `ResourceIdCollection` appointment will be displayed in scheduler.
 • You can also add or remove appointment resources dynamically.
 
-### Multiple resources appointment sharing
+### Multiple resource sharing
 Multiple resources can share the same events or appointments, If appointment details edited or updated then the changes will reflect on all other shared instances simultaneously.
 
 {% tabs %}
@@ -176,7 +178,7 @@ schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Assign custom resource collection in scheduler
+### Assign resource object collection
 
 You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. You can also add or remove scheduler resources dynamically.
 
