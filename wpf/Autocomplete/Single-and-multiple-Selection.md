@@ -149,7 +149,42 @@ textBoxExt.EnableAutoSize = true;
 
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
+
+### ShowClearButton:
+
+This feature allows to show or hide the clear button in Token mode for the AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <editors:SfTextBoxExt
+            x:Name="textBoxExt"
+            Width="200"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AutoCompleteMode="Suggest"
+            AutoCompleteSource="{Binding Employees}"
+            MultiSelectMode="Token"
+            SearchItemPath="Name"
+            ShowClearButton="True" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+textBoxExt.ShowClearButton = true; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowClearButton](Single_and_multiple_selection_images/ ShowClearButton.png)
+
+N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
+
 See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
+
 
 ## Multiple selection using delimiter 
 
