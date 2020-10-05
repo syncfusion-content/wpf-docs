@@ -40,7 +40,7 @@ N>No resource view will be displayed, even a resource added using the `ResourceC
 
 You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of `SfScheduler`.
 
-N>You can group the resource only in the day, week, and work week views.
+N>You can group the resource order only in the day, week, and work week views.
 
 ### Resource
 
