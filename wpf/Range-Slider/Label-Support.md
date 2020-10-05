@@ -52,7 +52,7 @@ Create a ViewModel class with CustomCollection property.
 
 {% tabs %}
 
-{%highlight c#%}
+{% highlight c# %}
 
    public class ViewModel
     {
@@ -71,7 +71,7 @@ Create a ViewModel class with CustomCollection property.
         }
     }
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -91,9 +91,9 @@ In the following code example, the CustomCollection property is bound to [Custom
                     TickPlacement="Outside"
                     ThumbToolTipPlacement="BottomRight"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -114,7 +114,7 @@ In the following code example, the CustomCollection property is bound to [Custom
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -140,9 +140,9 @@ The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Sync
                     TickPlacement="Outside"
                     ThumbToolTipPlacement="BottomRight"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -163,7 +163,7 @@ The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Sync
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -194,9 +194,9 @@ The following code example illustrates the usage of the LabelPlacement property.
                     TickPlacement="Outside"
                     LabelPlacement="BottomRight"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -217,7 +217,7 @@ The following code example illustrates the usage of the LabelPlacement property.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -239,9 +239,9 @@ LabelPlacement in BottomRight
                     TickPlacement="Outside"
                     LabelPlacement="TopLeft"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -262,7 +262,7 @@ LabelPlacement in BottomRight
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -287,9 +287,9 @@ The default value of the [ShowValueLabels](https://help.syncfusion.com/cr/wpf/Sy
                     TickPlacement="BottomRight"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -306,7 +306,7 @@ The default value of the [ShowValueLabels](https://help.syncfusion.com/cr/wpf/Sy
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -337,9 +337,9 @@ The following code example illustrates the usage of [ValuePlacement](https://hel
                     ValuePlacement="TopLeft"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -357,7 +357,7 @@ The following code example illustrates the usage of [ValuePlacement](https://hel
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -379,9 +379,9 @@ ValuePlacement in TopLeft.
                     ValuePlacement="BottomRight"
                     Value="40" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -399,7 +399,7 @@ ValuePlacement in TopLeft.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -431,9 +431,9 @@ The following code example illustrates the usage of [LabelOrientation](https://h
                     LabelOrientation="Horizontal"
                     Value="140" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -452,7 +452,7 @@ The following code example illustrates the usage of [LabelOrientation](https://h
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -475,9 +475,9 @@ LabelOrientation as Horizontal
                     LabelOrientation="Vertical"
                     Value="140" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -496,7 +496,7 @@ LabelOrientation as Horizontal
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
