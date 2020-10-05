@@ -28,6 +28,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 * [CancelNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_CancelNavigation)- specifies whether day view navigation should be disabled when clicking more appointments in month view. It will be applicable for month view has AppointmentDisplaymode as Appointment. and click the More appointments in month cell.
 * [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_DateTime)- gets the date-time of the tapped cell.
 * [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_TimeInterval)- gets the date-time interval of the tapped cell. It is not applicable for month view.
+* `Resource` - gets the resource associated with the timeslot cell where user tapped.
 
 ## CellDoubleTapped
 
@@ -62,6 +63,7 @@ The [ViewHeaderCellTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html) object contains the following properties:
 
 * [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewHeaderCellTappedEventArgs_DateTime) - gets the corresponding date time.
+* `Resource` - gets the resource when tapped on view header in day, week, work week and timeline views.
 
 ## HeaderTapped
 
@@ -89,3 +91,4 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 * [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_Appointment)- gets the custom appointment details
 * [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_SelectedDate)- gets the SelectedDate details
+* `Resource` - gets the resource details under which the appointment is located.
