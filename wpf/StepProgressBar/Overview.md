@@ -1,24 +1,24 @@
 ---
 layout: post
 title: About WPF StepProgressBar  | Syncfusion
-description: WPF StepProgressBar control is used to show the progress of a multi-step process.
+description: The Step ProgressBar control is used to show the progress of a multi-step process, such as new user registration or package status tracking.
 platform: WPF
 control: StepProgressBar
 documentation: ug
 ---
 
-# Overview
+# WPF StepProgressBar Overview
 
-The Step ProgressBar control is used to show the progress of a multi-step process. Customize its appearance by changing the step shape, progress bar color, step template, and content template.
+The Step ProgressBar control is used to show the progress of a multi-step process, such as new user registration or package status tracking. You can customize its appearance by changing the step shape, progress bar color, step template, and content template.
 
 ![Step ProgressBar - Overview](Overview_images/Overview.png)
 
 ## Key features
 
-• Display the progress in horizontal or vertical orientation.
+• Visualize step progress markers with different shapes, such as square and circle.
 
-• Provides three-state progress indication:  Inactive, Indeterminate, and Active.
+• Supports active, inactive, and indeterminate statuses to show progress.
 
-• Customize the shape of the state or step as a circle or a square.
+• Visualize the progress of a multi-step process in the horizontal or vertical orientation.
 
-• Appearance can be customized easily.
+• Customize progress bar styles, markers, and contents using templates.
