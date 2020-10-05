@@ -3,27 +3,27 @@ layout: post
 title: Getting started with WPF Step ProgressBar control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
 platform: WPF
-control: StepProgressBar
+control: SfStepProgressBar
 documentation: ug
 ---
 
 # Creating a simple application with Step ProgressBar
 
-You can create a WPF application with the StepProgressBar control using the following steps:
+You can create a WPF application with the SfStepProgressBar control using the following steps:
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+You can find more details about installing the NuGet package in a WPF application in the following link: [How to install NuGet packages](https://help.syncfusion.com/wpf/nuget-packages)
 
 ## Adding control through designer
 
-The StepProgressBar control can be added to a WPF application by dragging it from the toolbox to a designer view. The following assembly reference will be added automatically:
+The SfStepProgressBar control can be added to a WPF application by dragging it from the toolbox to a designer view. The following assembly reference will be added automatically:
 
 * Syncfusion.SfProgressBar.WPF 
 
-![wpf Step ProgressBar control added through designer](Getting-Started_images/wpf-StepProgressBar-control-added-through-designer.png)
+![wpf SfStepProgressBar control added through designer](Getting-Started_images/wpf-StepProgressBar-control-added-through-designer.png)
 
 ## Adding control manually in XAML
 
@@ -65,9 +65,9 @@ To add control manually through code behind, follow the given steps:
    * Syncfusion.SfProgressBar.WPF
 2.	Import the ProgressBar namespace
     **using Syncfusion.UI.Xaml.ProgressBar;**
-3.	Create an Step Progressbar instance, and add it to the window.
+3.	Create a Step Progressbar instance, and add it to the window.
 
-![WPF Step ProgressBar control added through code](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
+![WPF SfStepProgressBar control added through code](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
 
 {% tabs %}
 {% highlight C# %}
