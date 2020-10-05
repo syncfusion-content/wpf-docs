@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu and Commands in WPF  Scheduler Control | Syncfusion
-description: Learn about context menu support and its customization in Syncfusion WPF Scheduler (SfScheduler) control and more details. 
+description: Learn about context menu support and built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. 
 platform: wpf
 control: SfScheduler
 documentation: ug
