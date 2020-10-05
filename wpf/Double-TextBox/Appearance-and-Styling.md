@@ -206,6 +206,10 @@ The appearance of the `DoubleTextBox` control can be customized by using the [Sf
 * Blend
 * Default
 * Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
 * Metro
 * Office2010Black
 * Office2010Blue
@@ -216,6 +220,8 @@ The appearance of the `DoubleTextBox` control can be customized by using the [Sf
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -225,11 +231,24 @@ The appearance of the `DoubleTextBox` control can be customized by using the [Sf
 For example, the `Blend` style applied to the `DoubleTextBox` as shown in the following example code:
 
 {% tabs %}
+{% highlight xaml %}
+
+<Window
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Grid>
+        <syncfusion:DoubleTextBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                  Name="doubleTextBox" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
 {% highlight C# %}
 
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 100;
-doubleTextBox.Height = 25;
 SfSkinManager.SetVisualStyle(doubleTextBox, VisualStyles.Blend);
 
 {% endhighlight %}

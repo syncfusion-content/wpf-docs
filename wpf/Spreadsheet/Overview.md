@@ -116,12 +116,12 @@ Spreadsheet</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ActiveGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ActiveGrid.html)'| markdownify }}</td><td>
+{{ '[ActiveGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ActiveGrid)'| markdownify }}</td><td>
 GridProperties->ActiveSpreadsheetGrid</td><td>
 Gets the active SpreadsheetGrid</td></tr>
 <tr>
 <td>
-{{'[IsCustomTabItemContextMenuEnabled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~IsCustomTabItemContextMenuEnabled.html)'| markdownify }}</td><td>
+{{'[IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_IsCustomTabItemContextMenuEnabled)'| markdownify }}</td><td>
 TabStyleManager -> IsCustomTabItemContextMenuEnabled</td><td>
 Gets or sets whether Custom ContextMenu is to be Enabled</td></tr>
 <tr>
@@ -131,32 +131,32 @@ TabStyleManager -> ShowTabItemContextMenu</td><td>
 Gets or sets whether TabItemContextMenu is to be displayed</td></tr>
 <tr>
 <td>
-{{ '[TabItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~TabItemContextMenu.html)' | markdownify }}</td><td>
+{{ '[TabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_TabItemContextMenu)' | markdownify }}</td><td>
 TabStyleManager ->TabItemContextMenu</td><td>
 Gets or sets the ContextMenu Items for TabItem</td></tr>
 <tr>
 <td>
-{{ '[ActiveSheet](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ActiveSheet.html)' | markdownify }}</td><td>
+{{ '[ActiveSheet](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_ActiveSheet)' | markdownify }}</td><td>
 ExcelProperties->Workbook->ActiveSheet</td><td>
 Gets the Current ActiveSheet</td></tr>
 <tr>
 <td>
-{{ '[Workbook](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Workbook.html)' | markdownify }}</td><td>
+{{ '[Workbook](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_Workbook)' | markdownify }}</td><td>
 ExcelProperties->Workbook</td><td>
 </td></tr>
 <tr>
 <td>
-{{ '[CurrentCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~CurrentCellStyle.html)' | markdownify }}</td><td>
+{{ '[CurrentCellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_CurrentCellStyle)' | markdownify }}</td><td>
 GridProperties->CurrentCellStyle</td><td>
 Gets the Style of the Current Cell</td></tr>
 <tr>
 <td>
-{{ '[HistoryManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~HistoryManager.html)' | markdownify }}</td><td>
+{{ '[HistoryManager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet.html#Syncfusion_UI_Xaml_Spreadsheet_SfSpreadsheet_HistoryManager)' | markdownify }}</td><td>
 GridProperties.ActiveSpreadsheetGrid.Model.CommandStack</td><td>
 Gets the command stack of the SfSpreadsheet.By default it has been enabled</td></tr>
 <tr>
 <td>
-{{ '[SheetName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid~SheetName.html)' | markdownify }}</td><td>
+{{ '[SheetName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SpreadsheetGrid.html#Syncfusion_UI_Xaml_Spreadsheet_SpreadsheetGrid_SheetName)' | markdownify }}</td><td>
 GridProperties->CurrentSheetName</td><td>
 Gets the tab sheet name</td></tr>
 </table>

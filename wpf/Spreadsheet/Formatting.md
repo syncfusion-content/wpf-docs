@@ -154,7 +154,7 @@ spreadsheet.ActiveGrid.InvalidateCell(4, 3);
 
 SfSpreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
-For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.CoveredCellInfo.html) into [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CoveredCells.html) collection of SpreadsheetGrid and merge the range using [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_Merge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For merging the cells in SfSpreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.CoveredCellInfo.html) into [CoveredCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_CoveredCells) collection of SpreadsheetGrid and merge the range using [Merge](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_Merge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 You can also unmerge the merged cells in SfSpreadsheet.
 
-For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfCellGrid.WPF~Syncfusion.UI.Xaml.CellGrid.SfCellGrid~CoveredCells.html) from the SpreadsheetGrid and unmerge the range using [UnMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_UnMerge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For unmerging the cells in SfSpreadsheet, you need to clear the [CoveredCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.CellGrid.SfCellGrid.html#Syncfusion_UI_Xaml_CellGrid_SfCellGrid_CoveredCells) from the SpreadsheetGrid and unmerge the range using [UnMerge](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_UnMerge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% tabs %}
 {% highlight c# %}
@@ -292,7 +292,7 @@ N> Users need to [refresh the view](http://help.syncfusion.com/wpf/sfspreadsheet
 
 ## Clear formatting
 
-SfSpreadsheet provides support to clear the contents of a cell along with its formatting or by specifying the required clear options using [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+SfSpreadsheet provides support to clear the contents of a cell along with its formatting or by specifying the required clear options using [ExcelClearOptions](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 {% tabs %}
 {% highlight c# %}

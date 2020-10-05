@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Popup customization
-SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBackground.html), [PopupBorderBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBorderBrush.html), [PopupDropDownGridBackground](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupDropDownGridBackground.html) and [PopupBorderThickness](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupBorderThickness.html) properties.
+SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBackground), [PopupBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderBrush), [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground) and [PopupBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderThickness) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,7 +33,7 @@ SfMultiColumnDropDownControl allows you to customize the Popup appearance by set
 
 ![](Popup-customization_images/Popup-customization_img1.png)
 
-You can change the drop down grid background by setting [PopupDropDownGridBackground](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupDropDownGridBackground.html).
+You can change the drop down grid background by setting [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground).
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,18 +58,18 @@ You can change the drop down grid background by setting [PopupDropDownGridBackgr
 
 ## Popup sizing
 
-You can change the pop-up height and width by setting [PopupWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupWidth.html) and [PopupHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupHeight.html) properties. The `PopupWidth` will be set based on[PopupMinWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupMinWidth.html) and [PopupMaxWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupMaxWidth.html) properties when the value is not between them. By default, the `PopupMinWidth` value is 200.0. 
+You can change the pop-up height and width by setting [PopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupWidth) and [PopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupHeight) properties. The `PopupWidth` will be set based on[PopupMinWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupMinWidth) and [PopupMaxWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupMaxWidth) properties when the value is not between them. By default, the `PopupMinWidth` value is 200.0. 
 
-Similarly, the `PopupHeight` will be set based on[PopupMinHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupMinHeight.html) and [PopupMaxHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupMaxHeight.html) when the value is not between them. The default value of `PopupMinHeight` is 300.0. 
+Similarly, the `PopupHeight` will be set based on[PopupMinHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupMinHeight) and [PopupMaxHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupMaxHeight) when the value is not between them. The default value of `PopupMinHeight` is 300.0. 
 
 ### Auto sizing
 
-SfMultiColumnDropDownControl can automatically adjust the popup width and height based on the width and height of SfDataGrid when setting [IsAutoPopupSize](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~IsAutoPopupSize.html) as `true`.
+SfMultiColumnDropDownControl can automatically adjust the popup width and height based on the width and height of SfDataGrid when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_IsAutoPopupSize) as `true`.
 N> When `IsAutoPopupSize` is `true`, then the popup width and height is not calculated based on `PopupHeight` and `PopupWidth`.
 
 ## Resizing popup
 
-You can allow the end-user to resize the drop-down popup through resizing thumb by setting [ResizingThumbVisibility](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~ResizingThumbVisibility.html) property to `Visible`.
+You can allow the end-user to resize the drop-down popup through resizing thumb by setting [ResizingThumbVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ResizingThumbVisibility) property to `Visible`.
 
 ## Keep DropDownPopup as StaysOpen
 
@@ -91,7 +91,7 @@ SfMultiColumnDropDownControl provides the following events for popup customizati
  
 ### PopupClosing event
 
-[PopupClosing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupClosing_EV.html) event is fired when the popup is closing. You can use this event to skip the popup closing and [PopupClosingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PopupClosingEventArgs.html) provides data for `PopupClosing` event. You can skip the popup closing by setting `args.Cancel` as true.
+[PopupClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is closing. You can use this event to skip the popup closing and [PopupClosingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosingEventArgs.html) provides data for `PopupClosing` event. You can skip the popup closing by setting `args.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ void sfMultiColumn_PopupClosing(object sender, PopupClosingEventArgs args)
 
 ### PopupClosed event
 
-[PopupClosed](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupClosed_EV.html) event is fired when the popup is closed. [PopupClosedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PopupClosedEventArgs.html) provides data for `PopupClosed` event
+[PopupClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is closed. [PopupClosedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupClosedEventArgs.html) provides data for `PopupClosed` event
 
 {% tabs %}
 {% highlight c# %}
@@ -119,7 +119,7 @@ void sfMultiColumn_PopupClosed(object sender, PopupClosedEventArgs args)
 
 ### PopupOpening event
 
-[PopupOpening](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupOpening_EV.html) event is fired when the popup is opening. You can use this event to skip the popup opening and [PopupOpeningEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PopupOpeningEventArgs.html) provides data for `PopupOpening` event. You can skip the popup opening by setting `args.Cancel` as true.
+[PopupOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is opening. You can use this event to skip the popup opening and [PopupOpeningEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpeningEventArgs.html) provides data for `PopupOpening` event. You can skip the popup opening by setting `args.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ void sfMultiColumn_PopupOpening(object sender, PopupOpeningEventArgs args)
 
 ### PopupOpened event
 
-[PopupOpened](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~PopupOpened_EV.html) event is fired when the popup is opened. [PopupOpenedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PopupOpenedEventArgs.html) provides data for `PopupOpened` event
+[PopupOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when the popup is opened. [PopupOpenedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PopupOpenedEventArgs.html) provides data for `PopupOpened` event
 
 {% tabs %}
 {% highlight c# %}

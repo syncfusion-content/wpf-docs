@@ -138,6 +138,8 @@ You can customize the appearance of the `SfGridSplitter` control by using the [S
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016White
+* Office2019Black
+* Office2019Colorful
 * Office365
 * Saffron
 * SystemTheme
@@ -149,37 +151,40 @@ Here, the `Blend` style is applied to the `SfGridSplitter`.
 {% tabs %}
 {% highlight xaml %}
 
-<Border
-    Margin="10"
-    BorderBrush="DarkGray"
-    BorderThickness="1">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="auto" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   TextAlignment="Center"
-                   Text="Panel 1">
-        </TextBlock>
-        <TextBlock Grid.Row="2"
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center" 
-                   TextAlignment="Center"
-                   Text="Panel 2">
-        </TextBlock>
-        
-        <!--Grid Splitter-->
-        <syncfusion:SfGridSplitter syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                   EnableCollapseButton="True"
-                                   HorizontalAlignment="Stretch"
-                                   Width="auto"
-                                   Grid.Row="1"/>
-    </Grid>
-</Border>
+<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
+    <Border
+            Margin="10"
+            BorderBrush="DarkGray"
+            BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       Text="Panel 1">
+            </TextBlock>
+            <TextBlock Grid.Row="2"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       TextAlignment="Center"
+                       Text="Panel 2">
+            </TextBlock>
+
+            <!--Grid Splitter-->
+            <syncfusion:SfGridSplitter syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                       EnableCollapseButton="True"
+                                       HorizontalAlignment="Stretch"
+                                       Width="auto"
+                                       Grid.Row="1"/>
+        </Grid>
+    </Border>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
