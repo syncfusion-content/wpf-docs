@@ -69,7 +69,7 @@ Header="Delete">
 
 ![Appointment ContextMenu in WPF Scheduler](ContextMenu/AppointmentContextMenu.png)
 
-## Handle the SchedulerContextMenuOpening Event
+## SchedulerContextMenuOpening event
 
 `SchedulerContextMenuOpening` event occurs while opening the `AppointmentContextMenu` or `CellContextMenu` in SfScheduler.. 
 
