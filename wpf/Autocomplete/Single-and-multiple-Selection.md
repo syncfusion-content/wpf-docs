@@ -29,7 +29,7 @@ Each selected items can be displayed as a token representation having a close bu
 
 In token representation the control behavior of arranging the items can be done in two ways which is handled by the property [TokensWrapMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TokensWrapMode).
 
-* `Wrap` - The selected items will be wrapped to the next line of the SfAutoComplete.
+* `Wrap` - The selected items will be wrapped to the next line of the AutoComplete.
 
 * `None` - The selected items will be arranged in horizontal layout in single line.
 
@@ -149,7 +149,42 @@ textBoxExt.EnableAutoSize = true;
 
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
+
+### ShowClearButton:
+
+This feature allows to show or hide the clear button in Token mode for the AutoComplete control using the [ShowClearButton]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <editors:SfTextBoxExt
+            x:Name="textBoxExt"
+            Width="200"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AutoCompleteMode="Suggest"
+            AutoCompleteSource="{Binding Employees}"
+            MultiSelectMode="Token"
+            SearchItemPath="Name"
+            ShowClearButton="True" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+textBoxExt.ShowClearButton = true; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowClearButton](Single_and_multiple_selection_images/ShowClearButton.png)
+
+N> The default `ShowClearButton` property value is false. It will be only applicable for `MultiSelectMode` is `Token`.  
+
 See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
+
 
 ## Multiple selection using delimiter 
 
