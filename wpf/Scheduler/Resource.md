@@ -13,7 +13,7 @@ The Scheduler resource view will allow you to group appointments based on the re
 
 ## Grouping by Resources
 
-Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler` and you can also add or scheduler resources dynamically.
+Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name` , `Foreground` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler` and you can also add or remove scheduler resources dynamically.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-### Assign custom resource to appointment business object 
+### Assign the resource objects to appointment business object
 
 You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of `AppointmentMapping`. Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to recurrence appointments.
 
