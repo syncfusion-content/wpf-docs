@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Grouping in scheduler | WPF| Syncfusion
-description: WPF scheduler resource grouping allows to define resources that can be assigned to appointments in day, week, work week and timeline views.
+description: WPF scheduler resource grouping allows you to define resources that can be assigned to appointments in a day, week, workweek, and timeline views.
 platform: WPF
 control: SfScheduler
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # Resource Grouping in WPF Scheduler (SfScheduler)
 
-The Scheduler resource view will allow you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views. It’s also allows to share events or appointments to multiple resources and resource appointment details can be edited by using built-in appointment editor.
+The scheduler resource view will allow you to group appointments based on the resources or dates, arranged by the column or row in the day, week, workweek, and timeline views. It also allows you to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor.
 
 ## Grouping by Resources
 
-Resources can be added to the Scheduler by setting `ResourceGroupType` property as `Resource` in `SfScheduler`.You need to set the `Id`, `Name`, `Foreground` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the Scheduler by using `ResourceCollection` property of `SfScheduler` and you can also add or remove scheduler resources dynamically.
+Resources can be added to the scheduler by setting the `ResourceGroupType` property as `Resource` in `SfScheduler.` You need to set the `Id,` `Name,` `Foreground,` and `Background` properties of `SchedulerResource` to create a resource. You can add the resource to the scheduler by using the `ResourceCollection` property of `SfScheduler` and you can also add or remove the scheduler resources dynamically.
 
 {% tabs %}
 {% highlight c# %}
 
-// Adding schedule resource in scheduler resource collection.
+// Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
 new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000" },
@@ -26,7 +26,7 @@ new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrus
 new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "1002" },
 };
 
-// Adding scheduler resource collection to schedule resources of SfSchedule.
+// Adding the scheduler resource collection to the schedule resources of SfSchedule.
 schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ N>`ResourceGroupType` property value is `None` no resource view displayed in sch
 
 You can group the resource order by `Date` or order by `Resource` using the `ResourceGroupType` property of `SfScheduler`.
 
-N>You can group the resource only in day,week,work week views. 
+N>You can group the resource only in the day, week, and work week views.
 
 ### Resource
 
