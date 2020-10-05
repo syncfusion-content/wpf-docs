@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Inclusion of Shapes in a PDF file using Syncfusion PDF viewer..
-description: Inclusion of Shape Annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Shape Annotations in PDF Viewer WPF | Syncfusion
+description: PDF Viewer provides the ability to add, move, edit, resize and deleting shape annotations in PDF document.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
-# Shape Annotation
+# Shape Annotation in WPF Pdf Viewer
 
 PDF viewer WPF allows the user to include the following shape annotations into the PDF document.
 

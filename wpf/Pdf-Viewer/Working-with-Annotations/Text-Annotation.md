@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Text Annotation.
-description: Inclusion of text annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Text Annotation in PDF Viewer WPF | Syncfusion
+description: PDF Viewer provides the ability to add, move, edit, resize and deleting free text annotations in PDF document.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
-# Text annotation
+# Text annotation in WPF Pdf Viewer
 
 The text annotation support in PDF viewer allows you to include text anywhere in the PDF document pages through a text box. You can also edit, modify, delete, and load existing text annotations. 
 
@@ -23,12 +23,8 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf")
     pdfviewer.Load(pdf);   
     pdfviewer1.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.FreeText;
- }
-
-
+}
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -68,8 +64,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -101,8 +95,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -129,8 +121,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -142,25 +132,25 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-# Working with included/existing text annotations
+## Working with included/existing text annotations
 
 The included/existing text annotations are moved, resized, edited, customized, and deleted. To perform these operations, select the included/existing text annotation and right-click over the selected annotation, a pop-up context menu will appear with the following options:
        
 * Properties
 * Delete 
 
-## Properties
+### Properties
 
 Selecting properties from the context menu will display the Text Properties window, which consist of two tabs:
 
 * Appearance
 * General
 
-### Appearance tab
+#### Appearance tab
 
 The border color, background color, border thickness,and opacity of the text annotation can be edited using Appearance tab in the Text Properties window.
 
-### Editing border thickness of the text annotation
+##### Editing border thickness of the text annotation
 
 To modify the thickness of the selected text annotation, modify the value of the NumericUpDown control in the Appearance tab of text annotation properties. 
 
@@ -168,7 +158,7 @@ The following image illustrates how to change the border thickness of the text a
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_2.png)
 
-### Editing border color of the annotation
+##### Editing border color of the annotation
 
 The border color of the selected text annotation will be displayed in the border color row in the Appearance tab. Selecting the color will display the color palette control. Choosing a color from the color palette and clicking OK will apply the color to the text annotation.
 
@@ -176,7 +166,7 @@ The following image illustrates how to change the border color of the text annot
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_3.png)
 
-### Editing background color of the text
+##### Editing background color of the text
 
 Similarly, you can modify the background color of the text.
 
@@ -184,7 +174,7 @@ The following image illustrates how to change the background color of the text a
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_4.png)
 
-### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 The slider control displayed in the Appearance tab allows modifying the opacity of the selected text annotation. You can also modify the opacity by giving numeric value in the opacity text box.
 
@@ -196,7 +186,7 @@ The following screenshot illustrates the completely customized text annotation i
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_6.png)
 
-## General tab
+#### General tab
 
 You can add or edit the Author and Subject of the text annotation using General tab of the Text Properties window.
 
@@ -204,7 +194,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_7.png)
 
-# Editing font properties
+#### Editing font properties
 
 Font properties such as size and color are modified using font properties dialog that is displayed in the text editing mode.
 
@@ -222,7 +212,7 @@ The following image illustrates the change in font color and font size of the te
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_10.png)
 
-## Deleting an annotation
+### Deleting an annotation
 
 Selecting the delete option from the context menu that is displayed by right-clicking the selected annotation will delete the respective annotation from the PDF document.
 
@@ -283,4 +273,3 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
 
 {% endhighlight %}
 {% endtabs %}
-

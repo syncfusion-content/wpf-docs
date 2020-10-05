@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add and modify Ink Annotation using PDF Viewer WPF | Syncfusion
-description: Inclusion of ink annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Ink Annotation in PDF Viewer WPF | Syncfusion
+description: PDF Viewer provides the ability to add, move, edit, resize and deleting ink annotations in PDF document.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Ink annotation
+# Ink annotation in WPF Pdf Viewer
 
 PDF viewer WPF allows the user to include ink annotation in the PDF document and provides options to edit or remove the existing ink annotation in the PDF document. 
 
@@ -24,8 +24,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -56,8 +54,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -84,8 +80,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -141,8 +135,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -274,8 +266,6 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
     float opacity = settings.Opacity;
     System.Windows.Media.Color color = settings.InkColor;
     double thickness = settings.Thickness;
-
 }
-
 {% endhighlight %}
 {% endtabs %}
