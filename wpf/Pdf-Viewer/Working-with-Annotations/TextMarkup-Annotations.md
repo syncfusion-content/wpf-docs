@@ -589,7 +589,7 @@ The PdfViewerControl notifies through events, when `AnnotationChangedAction` suc
 
 ### TextMarkupAnnotationChanged Event
 
-The `TextMarkupAnnotationChanged` event occurs when the `AAction` performed in text markup annotation. It provides the common information, `Type` and annotation properties which are available in `Settings` through the `TextMarkupAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The `TextMarkupAnnotationChanged` event occurs when the `Action` performed in text markup annotation. It provides the common information, `Type` and annotation properties which are available in `Settings` through the `TextMarkupAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
 
 The following code shows how to write the TextMarkupAnnotationChanged event in PdfViewerControl
 
