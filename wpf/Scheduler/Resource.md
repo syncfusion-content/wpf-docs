@@ -285,7 +285,7 @@ schedule.DaysViewSettings.ResouceHeaderSize = 100;
 
 ### Resource header size in timeline view
 
-`TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 50.
+The `TimelineViewSetting` is applicable for the Timeline views. By default, the value of this property is set to 50.
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,13 +301,14 @@ schedule.DaysViewSettings.ResouceHeaderSize = 100;
 
 ## Visible resource count
 
-You can customize the number of visible resources in the day, week, work week and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
+You can customize the number of visible resources in the day, week, workweek, and timeline views by using the `VisibleResourceCount` property of `DaysViewSettings`  or `TimelineViewSettings` in the `SfScheduler.`
 
-N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed. 
+N> The visible resource count exceed count of the schedule `ResourceCollection` count, then the schedule `ResourceCollection` count will be displayed.
 
 ### Visible resource count in days view
 
-`DaysViewSetting` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
+The `DaysViewSetting` is applicable for `Day`, `Week`, and `WorkWeek` views. By default, the value of this property is set to 3.
+
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
@@ -325,7 +326,8 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 
 ### Visible resource count in timeline view
 
-`TimelineViewSetting` applicable for Timeline views. By default, value of this property is set to 3.
+The `TimelineViewSetting` is applicable for timeline views. By default, the value of this property is set to 3.
+
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
@@ -343,7 +345,7 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 
 ## Assign resources to special time regions 
 
-Special time region can be created based on the resources in day, week, work week and timeline views.
+Special time region can be created based on the resources in day, week, workweek, and timeline views.
 
 ### Assign resources to special time regions in days view
 
@@ -395,7 +397,7 @@ Resource UI customization using a template and template selectors support.
 
 ### Customize resource header appearance using Style
 
-You can style resource header appearance using `ResourceHeaderControl` in scheduler. You can change the background color, textStyle, and borderBrush etc. by setting style property for `ResourceHeaderControl`.
+You can style the resource header appearance using the `ResourceHeaderControl` in scheduler. You can change the background color, textStyle, borderBrush and more by setting the style property for the `ResourceHeaderControl`.
 
 {% tabs %}
 {% highlight xaml %}
