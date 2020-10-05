@@ -392,12 +392,8 @@ You can style resource header appearance using `ResourceHeaderControl` in schedu
 {% tabs %}
 {% highlight xaml %}
         <Style  TargetType="Schedule:ResourceHeaderControl">
-            <Setter Property="Background" Value="LightCyan"/>
             <Setter Property="Foreground" Value="Red"/>
-            <Setter Property="Height" Value="50"/>
             <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="BorderBrush" Value="LightCoral"/>
-           <Setter Property="BorderThickness" Value="2"/>
         </Style>
 {% endhighlight %}
 {% endtabs %}
