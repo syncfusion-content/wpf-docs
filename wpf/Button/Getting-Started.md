@@ -223,11 +223,74 @@ button.LargeIcon = new BitmapImage(new Uri("image/userlarge.png", UriKind.Relati
 
 ![Large Mode](Getting-Started_images/Getting-Started_img5.png)
 
-## Setting image 
+## Setting icon template
 
-The size of the image can be set by using an image path and icon template . When the size of the icon is provided in both the ways, then it will prioritize and first it will take the size from the icon templates, then it will take it  from the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SizeMode) property.
+The IconTemplate property provides support for setting up any type of image such as path data, font icons, etc. to the ButtonAdv. The icon will automatically resize the template content according to its size provided in the data template.
 
-### Setting image path
+{% tabs %}
+
+{% highlight XAML %}
+
+        <sync:ButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:ButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid Width="12" Height="16">
+                        <Path
+                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:ButtonAdv.IconTemplate>
+        </sync:ButtonAdv>
+        <sync:ButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:ButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid Width="16" Height="16">
+                        <Path
+                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:ButtonAdv.IconTemplate>
+        </sync:ButtonAdv>
+        <sync:ButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <sync:ButtonAdv.IconTemplate>
+                <DataTemplate>
+                    <Grid  x:Name="Save"
+                            Width="16"
+                            Height="16">
+                        <Path
+                                Width="16"
+                                Height="16"
+                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                                Fill="#FF3A3A38"
+                                Stretch="Fill" />
+                    </Grid>
+                </DataTemplate>
+            </sync:ButtonAdv.IconTemplate>
+        </sync:ButtonAdv>
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Setting icon template](Getting-Started_images/Getting-Started_img12.png)
+
+ N> When IconTemplate property is set to the ButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
+
+ ### Setting icon template selector
+
+ The IconTemplateSelector property that allows you to specify a different data template based on the value given in the data templates.
+
+ N> It loads the icon in the following priority order.
+* IconTemplate Selector
+* IconTemplate
+* Large Icon
+* Small Icon
+
+## Setting image
 
 The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) property or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) property.
 
@@ -293,164 +356,6 @@ button.SmallIcon = new BitmapImage(new Uri("image/syncfusion.png", UriKind.Relat
 
 ![Large Mode Image](Getting-Started_images/Getting-Started_img8.png)
 
-N> When IconTemplate property is set to the ButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
-
-### Setting Icon Template
-
-The IconTemplate property provides support for setting up any type of image such as glyphs or any custom control to the ButtonAdv. The ButtonAdv will automatically resize the template content according to its [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SizeMode).
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="Button_IconTemplate.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Button_IconTemplate"
-        xmlns:sync="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="1" Content="Icon Template" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Size Mode : Small" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Label Content="Size Mode : Normal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Label Content="Size Mode : Large" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <sync:ButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="New" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid Width="12" Height="16">
-                        <Path
-                                Margin="0.5"
-                                Data="M0,0 L5.9999999,0 11,5 11,15 0,15 z"
-                                Fill="White"
-                                Stretch="Fill" />
-                        <Path
-                                Data="M7,1.7070007 L7,5 10.292999,5 z M1,1 L1,15 11,15 11,6 6,6 6,1 z M0,0 L6.7070007,0 12,5.2929993 12,16 0,16 z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
-        <sync:ButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Open" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid Width="16" Height="16">
-                        <Path
-                                Margin="0.5,0.5,0.738,0.502"
-                                Data="M0,0 L5,0 6,1 12,1 12,3.4999998 11.499065,3.9999996 14.716998,3.9999996 11.92699,10.999 4.1853847,10.984859 0,10.982999 z"
-                                Fill="White"
-                                Stretch="Fill" />
-                        <Path
-                                Data="M5.162991,5.0009986 L1.7839907,10.979999 4.3081884,10.984653 5.0009999,10.984999 5.0009999,10.98593 12.088991,10.999 14.480014,5.0009986 z M0,0 L5.7069998,0 6.7069998,1 13,1 13,3.9999998 12,3.9999998 12,1.9999998 6.2930002,1.9999998 5.2930002,1 0.99999994,1 0.99999994,10.335325 4.5790062,4.0009986 15.954991,4.0009986 12.765994,12.000998 4.552258,11.98482 0,11.982999 z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
-        <sync:ButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Save File" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid  x:Name="Save"
-                            Width="16"
-                            Height="16">
-                        <Path
-                                Width="16"
-                                Height="16"
-                                Data="M5.0000019,11 L5.0000019,15 11.000002,15 11.000002,11 z M4.0000019,1 L4.0000019,6 12.000002,6 12.000002,1 z M1,1 L1,13.174 2.7160001,15 4.0000019,15 4.0000019,10 12.000002,10 12.000002,15 15,15 15,1 13.000002,1 13.000002,7 3.0000019,7 3.0000019,1 z M0,0 L3.0000019,0 13.000002,0 16,0 16,16 12.000002,16 4.0000019,16 2.2840004,16 0,13.57 z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
-    </Grid>
-</Window>
-
- {% endhighlight %}
-
- {% endtabs %}
-
- ![Setting icon template](Getting-Started_images/Getting-Started_img12.jpg)
-
- N> When IconTemplate property is set to the ButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
-
- ### Setting icon template selector
-
- The IconTemplateSelector property that allows you to specify a different data template based on the value given in the data templates.For example, the icon template selector is handled with the help of checking the checkbox for displaying the different icons based on the value given in the data template.
-
- {% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="TemplateSelector_ButtonAdv.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TemplateSelector_ButtonAdv"
-        xmlns:Sync="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <DataTemplate x:Key="newIcon">
-            <Grid Width="12" Height="16">
-                <Path
-                      Margin="0.5"
-                      Data="M0,0 L5.9999999,0 11,5 11,15 0,15 z"
-                      Fill="White"
-                      Stretch="Fill" />
-                <Path
-                     Data="M7,1.7070007 L7,5 10.292999,5 z M1,1 L1,15 11,15 11,6 6,6 6,1 z M0,0 L6.7070007,0 12,5.2929993 12,16 0,16 z"
-                     Fill="#FF3A3A38"
-                     Stretch="Fill" />
-            </Grid>
-        </DataTemplate>
-        <DataTemplate x:Key="OpenIcon">
-            <Grid Width="16" Height="16">
-                <Path
-                     Margin="0.5,0.5,0.738,0.502"
-                     Data="M0,0 L5,0 6,1 12,1 12,3.4999998 11.499065,3.9999996 14.716998,3.9999996 11.92699,10.999 4.1853847,10.984859 0,10.982999 z"
-                     Fill="White"
-                     Stretch="Fill" />
-                <Path
-                     Data="M5.162991,5.0009986 L1.7839907,10.979999 4.3081884,10.984653 5.0009999,10.984999 5.0009999,10.98593 12.088991,10.999 14.480014,5.0009986 z M0,0 L5.7069998,0 6.7069998,1 13,1 13,3.9999998 12,3.9999998 12,1.9999998 6.2930002,1.9999998 5.2930002,1 0.99999994,1 0.99999994,10.335325 4.5790062,4.0009986 15.954991,4.0009986 12.765994,12.000998 4.552258,11.98482 0,11.982999 z"
-                     Fill="#FF3A3A38"
-                     Stretch="Fill" />
-            </Grid>
-        </DataTemplate>
-        <local:TemplateSelector x:Key="IconTemp" NewIcon="{StaticResource newIcon}" OpenIcon="{StaticResource OpenIcon}"/>
-    </Window.Resources>
-    <Grid>
-        <StackPanel VerticalAlignment="Center">
-            <CheckBox Name="Check" IsChecked="True" Checked="Check_Checked" Unchecked="Check_Unchecked" HorizontalAlignment="Center" Command="{Binding CheckCommand}" Content="ChangeIcon"/>
-            <Sync:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
-    </StackPanel>
-    </Grid>
-</Window>
-
-{% endhighlight %}
-
- {% endtabs %}
-
-![Setting icon template selector checked state](Getting-Started_images/Getting-Started_img13.jpg)
-
-![Setting icon template selector unchecked state](Getting-Started_images/Getting-Started_img14.jpg)
-
-
 ## Setting icon width and height
 
 Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconWidth) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconHeight) properties respectively.
@@ -497,7 +402,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/
 
 ## IsDefault Property
 
-The IsDefault property indicates whether the ButtonAdv is a Default button. The IsDefault property used to activate the ButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoked the button click event by pressing the `Enter` key. 
+The IsDefault property indicates whether the ButtonAdv is a Default button and is used to activate the ButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
 
 {% tabs %}
 
@@ -511,7 +416,7 @@ The IsDefault property indicates whether the ButtonAdv is a Default button. The 
 
 ## IsCancel Property
 
-The IsCancel property indicates whether the ButtonAdv is a Cancel button. The IsCancel property used to activate the button by using Escape key. When setting the IsCancel property to true, the user can invoked the button click event by pressing the `Escape` key. 
+The IsCancel property indicates whether the ButtonAdv is a Cancel button and is used to activate the button by using Escape key. When setting the IsCancel property to true, the user can invoke the button by pressing the `Escape` key. 
 
 {% tabs %}
 
