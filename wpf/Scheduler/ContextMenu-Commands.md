@@ -71,8 +71,6 @@ Header="Delete">
 
 ## Handle the SchedulerContextMenuOpening Event
 
-### SchedulerContextMenuOpening
-
 `SchedulerContextMenuOpening` event occurs while opening the context menu in SfScheduler. 
 
 `SchedulerContextMenuOpeningEventArgs` has the following members which provides the information about `SchedulerContextMenuOpening` event.
