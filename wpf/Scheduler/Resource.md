@@ -9,7 +9,7 @@ documentation: ug
 
 # Resource Grouping in WPF Scheduler (SfScheduler)
 
-The Scheduler resource view will allow you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views. It’s also allows to share events or appointments to multiple resources and resource appointment details can be edited by using in-built appointment editor.
+The Scheduler resource view will allow you to group appointments based on the resources or dates, arranged by column or row in the day, week, workweek, and timeline views. It’s also allows to share events or appointments to multiple resources and resource appointment details can be edited by using built-in appointment editor.
 
 ## Grouping by Resources
 
@@ -93,7 +93,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endtabs %}
 
 N>• When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`..
-• When `ResourceGroupType` set as `None`, then ‘ScheduleAppointment' associated with `ResourceIdCollection` appointment will be displayed in scheduler.
+• When `ResourceGroupType` set as `None`, then `ScheduleAppointment` associated with `ResourceIdCollection` appointment will be displayed in scheduler.
 • You can also add or remove appointment resources dynamically.
 
 ### Multiple resources appointment sharing
@@ -107,7 +107,7 @@ var appointments = new ScheduleAppointment()
 {
 StartTime = DateTime.Now.AddMinutes(20),
 EndTime = DateTime.Now.AddHours(2),
-Subject = "General Meeting",
+Subject = "Project Plan",
 ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" }
 };
 
@@ -185,8 +185,8 @@ You can add resources of `Employee` collection that can be assigned to scheduler
 var ResourceCollection = new ObservableCollection<Employee>()
 {
 new Employee () { Name = "Sophia", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
-new Employee () { Name = " Kinsley Elena", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.Red)},
-new Employee () { Name = " Adeline Ruby", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.Yellow)},
+new Employee () { Name = "Zoey Addison", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.Red)},
+new Employee () { Name = "James William", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.Yellow)},
 };
 
 //Adding schedule resource collection to schedule resources.
@@ -350,8 +350,9 @@ StartTime = new System.DateTime(2020, 09, 15, 13, 0, 0),
 EndTime = new System.DateTime(2020, 09, 08, 15, 0, 0),
 Text = "Lunch",
 CanEdit = false,
-Background = Brushes.Black,
-Foreground = Brushes.White,
+Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
+Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
+RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
 ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003"}
 });
 
@@ -371,8 +372,9 @@ StartTime = new System.DateTime(2020, 09, 15, 13, 0, 0),
 EndTime = new System.DateTime(2020, 09, 08, 15, 0, 0),
 Text = "Lunch",
 CanEdit = false,
-Background = Brushes.Black,
-Foreground = Brushes.White,
+Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
+Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
+RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
 ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "1003" }
 });
 
