@@ -15,18 +15,10 @@ The Step ProgressBar control is used to show the progress of a multi-step proces
 
 ## Key features
 
-• **Determinate and indeterminate**: Determinate shows specific quantity of progress that occurred and indeterminate shows a redundant animations of linear progress.
+• Display the progress in horizontal or vertical orientation.
 
-• **Corner radius**: It customizes to frame rounded edges in the Linear ProgressBar.
+• Provides three-state progress indication:  Inactive, Indeterminate, and Active.
 
-• **Padding**: Padding generates space between track bar and progress bar in Linear ProgressBar.
+• Customize the shape of the state or step as a circle or a square.
 
-• **Ranges**: Specifies the start position and end position to visualize multiple ranges with different colors that are mapped to each range.
-
-• **Gradient**: Gradient shows change in intensity of the colors during the linear progress.
-
-• **Segments**: Segment splits the ProgressBar into multiple segments and indicates the progress.
-
-• **Segment with corner radius**: Segment with corner radius splits the Linear ProgressBar into multiple segments with the rounded edges at the corner.
-
-
+• Appearance can be customized easily.
