@@ -41,7 +41,7 @@ N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is 
 
 ## Thumb ToolTipFormat
 
-The `ToolTipFormat` property, specifies the format specifier by which to format the ToolTip display value. 
+The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ToolTipFormat) property, specifies the format specifier by which to format the ToolTip display value. 
 
 
 {% tabs %}
