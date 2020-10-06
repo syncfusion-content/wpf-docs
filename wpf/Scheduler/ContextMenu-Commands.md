@@ -7,9 +7,9 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Context Menu Commands in WPF Scheduler (SfScheduler)
+# Context Menu and Commands in WPF Scheduler (SfScheduler)
 
-The WPF scheduler has support to define a context menu commands for appointments, time slots, and month cells are right-clicked. It will also have the built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
+The WPF scheduler has support to define a context menu for appointments, time slots, and month cells are right-clicked. It will also have the built-in `RoutedUICommands` support for handling the context menu to add, edit, and delete appointments. There are two types of `ContextMenu`.
 
 * [CellContextMenu] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu)
 * [AppointmentContextMenu] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu)
