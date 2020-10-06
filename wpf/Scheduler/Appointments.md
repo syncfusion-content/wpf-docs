@@ -61,6 +61,8 @@ The `Scheduler` supports to bind any collection that implements the IEnumerable 
 <td>Maps the property name of custom class, which is equivalent for Location of ScheduleAppointment.</td></tr>
 <tr><td>RecurrenceExceptionDates</td>
 <td>Maps the property name of custom class, which is equivalent for RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
+<tr><td>ResourceIdCollection</td>
+<td>Maps the property name of custom class, which is equivalent for ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
 
 N>The CustomAppointment class should contain event start and end date time fields as mandatory
