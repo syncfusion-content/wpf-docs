@@ -159,7 +159,7 @@ public class Employee
 {% endtabs %}
 
 N>• You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
-• [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) object is used to create the SchedulerResource by mapping the custom resource.
+• [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) property is used to get the deatils of custom data.
 
 You can map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
 
