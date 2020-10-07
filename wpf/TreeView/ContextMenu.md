@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ContextMenu with WPF TreeView control | Syncfusion
-description: Learn here about ContextMenu for TreeViewNodes with Syncfusion WPF TreeView (SfTreeView) control. 
+description: Learn about context menu support and its customization with Syncfusion WPF TreeView (SfTreeView) control and more details.
 platform: wpf
 control: SfTreeView
 documentation: ug
@@ -19,9 +19,9 @@ TreeView provides an entirely customizable context menu to expose the functional
 
 SfTreeView provides support for the following built-in commands
 
-* [Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_Edit) - Command to start the editing of the treeviewnode.
-* [DeleteNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteNode) - Command to delete the treeviewnode.
-* [DeleteSelectedNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteSelectedNodes) - Command to delete all the selected treeviewnodes.
+* [Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_Edit) - Command to start the editing of the node.
+* [DeleteNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteNode) - Command to delete the node.
+* [DeleteSelectedNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteSelectedNodes) - Command to delete all the selected nodes.
 
 {% tabs %}
 {% highlight xaml %}
