@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN Shapes | Syncfusion 
-description: how to define diagram BPMN shapes and how to graphically notate the internal business procedure.
+title: Visualize graphical object using BPMN Shapes | Syncfusion 
+description: How to define diagram BPMN shapes and how to graphically notate the internal business procedure and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Shapes
+# BPMN Shapes and its customization
 
 BPMN(Business Process Model and Notation) shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) shape,in the [Type](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_Type) property, type should be set to “Activity” and its shape should be set as any one of the built-in shapes.
 

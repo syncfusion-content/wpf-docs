@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN DataObject | Syncfusion 
-description: BPMN DataObject represents information flowing through the process.
+title: Visualize graphical object using BPMN DataObject | Syncfusion 
+description: How the BPMN DataObject represents information flowing through the process and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# BPMN DataObject
+# BPMN DataObject and its customization
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`DataObject`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataObject), set the Type property of the bpmnnode should be set to **DataObject** and the [DataObjectType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_DataObjectType) property defines whether data is an input or output. You can create multiple instances of data object with the IsCollectiveData property of data.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`DataObject`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataObject), set the Type property of the bpmn node should be set to **DataObject** and the [DataObjectType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_DataObjectType) property defines whether data is an input or output. You can create multiple instances of data object with the IsCollectiveData property of data.
 
 {% tabs %}
 {% highlight xaml %}

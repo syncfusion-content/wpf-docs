@@ -1,12 +1,12 @@
 ---
 layout: post
-title: BPMN Event | Syncfusion 
-description: Event is notated with a circle and it represents an event in a business process.
+title: Visualize graphical object using BPMN Event | Syncfusion 
+description: How the Event is notated with a circle and it represents an event in a business process and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# BPMN event
+# BPMN event and its customization
 
 An [`Event`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Event) is a common BPMN process model element that represents something happens during a business process and its is notated with a circle.
 The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of the node allows you to set the type of event and by default, it is set to None.

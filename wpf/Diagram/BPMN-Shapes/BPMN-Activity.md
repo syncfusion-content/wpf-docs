@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN Activity | Syncfusion 
-description: BPMN Activity is the task that is performed in a business process.
+title: Visualize graphical object using BPMNNode Activity | Syncfusion 
+description: BPMNNode Activity is the task that is performed in a business process and shows how to customize their appearance.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Activity
+# BPMNNode Activity and its customization
 
 The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Activity) is the task that is performed in a business process. It is represented by a rounded rectangle.
 
@@ -216,7 +216,7 @@ The following table contains various types of BPMN loops.
 
 ### Compensation
 
-Compensation is triggered when the operation is partially failed and enabled it with the compensation property of the task and the collapsedsubprocess. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BPMNNodeViewModel.
+Compensation is triggered when the operation is partially failed and enabled it with the compensation property of the task and the collapsed subprocess. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BPMNNodeViewModel.
 
 >Note: By default, IsCompensationActivity property is false.
 

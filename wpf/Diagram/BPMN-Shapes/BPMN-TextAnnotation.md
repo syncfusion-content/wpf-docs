@@ -1,7 +1,10 @@
 ---
-title: "BPMN Event"
-component: "Diagram"
-description: "Event is notated with a circle and it represents an event in a business process"
+layout: post
+title: Visualize graphical object using BPMN Event| Syncfusion 
+description: How the event is notated with a circle and it represents an event in a business process and how to customize their appearance?
+platform: wpf
+control: SfDiagram
+documentation: ug
 ---
 
 # BPMN text annotation
@@ -20,7 +23,7 @@ description: "Event is notated with a circle and it represents an event in a bus
 
 * The TextAnnotation element can be moved (if their have connected with any BPMN Node) while dragging the BPMN node.
 
-The following code example rreprsent, how to crete a TextAnnotation.
+The following code example represent, how to create a TextAnnotation.
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +52,7 @@ BpmnNodeViewModel textannotation = new BpmnNodeViewModel()
 // Add the node into Node's collection
 (diagram.Nodes as NodeCollection).Add(textannotation);
 
-The following code example rreprsent how to create a TextAnnotation and make a connection between Activity and TextAnnotation shapes.
+The following code example represent how to create a TextAnnotation and make a connection between Activity and TextAnnotation shapes.
 
 {% endhighlight %}
 {%  endtabs %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BPMN Group | Syncfusion 
+title: Visualize graphical object using BPMN Group | Syncfusion 
 description: A group is used to frame a part of the diagram, shows that elements included in it are logically belong together.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Group
+# BPMN Group and its customization
 
 A group is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. 
 
@@ -52,7 +52,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ![BPMN Group](BPMN-Shapes-Images/Bpmn-Group.png)
 
-## Add BPMNNode into BPMNGroup by Programatically
+## Add BPMNNode into BPMNGroup by Programmatically
 
 To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the BpmnNodeViewModel object and add that to nodes collection of the BPMNGroup.
 

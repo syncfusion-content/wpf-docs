@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN shapes | Syncfusion
+title: Visualize graphical object using BPMN shapes with Palette | Syncfusion
 description: How to add the BPMN shapes to the stencil and drag and drop them over the drawing area and its interaction?
 platform: wpf
 control: SfDiagram
