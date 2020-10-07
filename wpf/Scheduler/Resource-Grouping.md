@@ -409,7 +409,7 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler custom ResourceHeaderControl ](Resource_Images/CustomizeResoureHeader.png)
+![WPF scheduler custom ResourceHeaderControl](Resource_Images/CustomizeResoureHeader.png)
 
 ### Customize resource appearance using ResourceHeaderTemplate
 
@@ -450,7 +450,7 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler custom ResourceHeaderTemplate ](Resource_Images/CustomDataTemplate.png)
+![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 
