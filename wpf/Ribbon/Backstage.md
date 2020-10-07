@@ -274,6 +274,27 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![BackStageCommandButton with caption as Save similar to Outlook Save button](GettingStarted_images/GettingStarted_img12.jpg)
 
+### Positioning BackStageCommandButton
+
+The `Position` property of BackStageCommandButton enables you to position top/bottom. The following code example illustrates how to position the BackStageCommandButton whether top or bottom.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:BackStageCommandButton x:Name="_closeCommandButton" Header="Close" Position="Bottom">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+_closeCommandButton.Position = VerticalPosition.Bottom;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BackStageCommandButton with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img19.jpg)
 
 ## Add BackStageTabItem
 
@@ -380,6 +401,28 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% endtabs %}
 
 ![BackStageTab with caption as Info similar to Outlook Info tab](GettingStarted_images/GettingStarted_img13.jpg)
+
+### Positioning BackStageTabItem
+
+The `Position` property of BackstageTabItem enables you to position top/bottom. The following code example illustrates how to position the BackstageTabItem whether top or bottom.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:BackstageTabItem x:Name="_informationTabItem" Header="Information" Position="Bottom">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+_informationTabItem.Position = VerticalPosition.Bottom;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BackstageTabItem with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img20.jpg)
 
 ## Add BackStage separator			
 
@@ -488,3 +531,24 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![BackStageSeparator as like Outlook](GettingStarted_images/GettingStarted_img14.jpg)
 
+### Positioning BackStageSeparator
+
+The `Position` property of BackStageSeparator enables you to position top/bottom. The following code example illustrates how to position the BackStageSeparator whether top or bottom.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:BackStageSeparator x:Name="_backstageSeparator " Position="Bottom">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+_backstageSeparator.Position = VerticalPosition.Bottom;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BackStageSeparator with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img21.jpg)
