@@ -21,9 +21,9 @@ Resources can be added to the scheduler by setting the [ResourceGroupType](https
 // Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
-new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000" },
-new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1001" },
-new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "1002" },
+   new SchedulerResource() { Name = "Sophia", Background = new SolidColorBrush(Colors.Red), Id = "1000" },
+   new SchedulerResource() { Name = "Zoey Addison", Background = new SolidColorBrush(Colors.Blue), Id = "1001" },
+   new SchedulerResource() { Name = "James William", Background = new SolidColorBrush(Colors.Yellow), Id = "1002" },
 };
 
 // Adding the scheduler resource collection to the schedule resources of SfSchedule.
@@ -83,10 +83,10 @@ Appointments associated with scheduler `ResourceCollection` will be displayed wh
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 var appointments = new ScheduleAppointment()
 {
-StartTime = DateTime.Now.AddMinutes(20),
-EndTime = DateTime.Now.AddHours(2),
-Subject = "General Meeting",
-ResourceIdCollection = new ObservableCollection<object> () { "1000", "1001" }
+   StartTime = DateTime.Now.AddMinutes(20),
+   EndTime = DateTime.Now.AddHours(2),
+   Subject = "General Meeting",
+   ResourceIdCollection = new ObservableCollection<object> () { "1000", "1001" }
 };
 
 scheduleAppointmentCollection.Add(appointments);
@@ -109,11 +109,11 @@ Multiple resources can share the same events or appointments. If the appointment
 ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 var appointments = new ScheduleAppointment()
 {
-StartTime = new DateTime(2020, 10, 01, 10, 0, 0),
-EndTime = new DateTime(2020, 10, 01, 12, 0, 0),
-Subject = "Project Plan",
-ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" }
-AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")),
+   StartTime = new DateTime(2020, 10, 01, 10, 0, 0),
+   EndTime = new DateTime(2020, 10, 01, 12, 0, 0),
+   Subject = "Project Plan",
+   ResourceIdCollection = new ObservableCollection<object>() { "1000", "1001","1002" }
+   AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")),
 };
 
 scheduleAppointmentCollection.Add(appointments);
@@ -167,9 +167,9 @@ You can map the properties of `Employee` class with `SfScheduler` control using 
 {% highlight xaml %}
 
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
-<Schedule:SfScheduler.ResourceMapping>
-<Schedule:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
-</Schedule:SfScheduler.ResourceMapping>
+    <Schedule:SfScheduler.ResourceMapping>
+       <Schedule:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
+    </Schedule:SfScheduler.ResourceMapping>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
@@ -192,9 +192,9 @@ You can add resources of `Employee` collection that can be assigned to scheduler
 // Creating and Adding custom resource in scheduler resource collection.
 var ResourceCollection = new ObservableCollection<Employee>()
 {
-new Employee () {Name = "Sophia", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
-new Employee () {Name = "Zoey Addison", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.Red)},
-new Employee () {Name = "James William", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.Yellow)},
+   new Employee () {Name = "Sophia", BackgroundColor = new SolidColorBrush(Colors.Red), Id = "1000", ForegroundColor = new SolidColorBrush(Colors.White) },
+   new Employee () {Name = "Zoey Addison", BackgroundColor = new SolidColorBrush(Colors.Blue), Id = "1001" , ForegroundColor = new SolidColorBrush(Colors.Red)},
+   new Employee () {Name = "James William", BackgroundColor = new SolidColorBrush(Colors.Yellow), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.Yellow)},
 };
 
 //Adding schedule resource collection to schedule resources.
@@ -275,9 +275,9 @@ You can customize the resource header size in the day, week, work week and timel
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
- <Schedule:SfScheduler.DaysViewSettings>
-<Schedule:DaysViewSettings ResouceHeaderSize="100"/>
-</Schedule:SfScheduler.DaysViewSettings>
+   <Schedule:SfScheduler.DaysViewSettings>
+      <Schedule:DaysViewSettings ResouceHeaderSize="100"/>
+   </Schedule:SfScheduler.DaysViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
@@ -292,9 +292,10 @@ schedule.DaysViewSettings.ResouceHeaderSize = 100;
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
-<Schedule:SfScheduler.TimelineViewSettings>
-<Schedule:TimelineViewSettings ResouceHeaderSize="100"/>
-</Schedule:SfScheduler.TimelineViewSettings>
+   <Schedule:SfScheduler.TimelineViewSettings>
+      <Schedule:TimelineViewSettings ResouceHeaderSize="100"/>
+   </Schedule:SfScheduler.TimelineViewSettings>
+</Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
  schedule.TimelineViewSettings.ResouceHeaderSize = 80;
@@ -313,9 +314,9 @@ N> Visible resource count exceed count of schedule `ResourceCollection` count th
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
-<Schedule:SfScheduler.DaysViewSettings>
-<Schedule:DaysViewSettings VisibleResourceCount="2"/>
-</Schedule:SfScheduler.DaysViewSettings>
+   <Schedule:SfScheduler.DaysViewSettings>
+      <Schedule:DaysViewSettings VisibleResourceCount="2"/>
+   </Schedule:SfScheduler.DaysViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
@@ -331,9 +332,9 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 {% tabs %}
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
-<Schedule:SfScheduler.TimelineViewSettings>
-<Schedule:TimelineViewSettings VisibleResourceCount="2"/>
-</Schedule:SfScheduler.TimelineViewSettings>
+   <Schedule:SfScheduler.TimelineViewSettings>
+      <Schedule:TimelineViewSettings VisibleResourceCount="2"/>
+   </Schedule:SfScheduler.TimelineViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
@@ -354,14 +355,14 @@ Special time region can be created based on the resources in day, week, work wee
 
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
-EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
-Text = "Lunch",
-CanEdit = false,
-Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
-Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
-RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
-ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003"}
+   StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
+   EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
+   Text = "Lunch",
+   CanEdit = false,
+   Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
+   Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
+   RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+   ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003"}
 });
 
 {% endhighlight %}
@@ -376,14 +377,14 @@ ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003
 
 this.schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
-EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
-Text = "Lunch",
-CanEdit = false,
-Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
-Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
-RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
-ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "1003" }
+   StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
+   EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
+   Text = "Lunch",
+   CanEdit = false,
+   Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
+   Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
+   RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+   ResourceIdCollection = new ObservableCollection<object>() { "1001", "1002", "1003" }
 });
 
 {% endhighlight %}
@@ -417,20 +418,20 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
 
 <Window.Resources>
 <DataTemplate  x:Key="DayViewResourceTemplate">
-<Grid Background="Transparent">
-<Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
-<StackPanel VerticalAlignment="Center" Orientation="Vertical">
-<Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
-<Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
-<Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
-Height="55" Source="{Binding ImageSource}" />
-</Border>
-</Border>
-<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
-Foreground="Black” Text="{Binding Name}" />
-</StackPanel>
-</Border>
-</Grid>
+   <Grid Background="Transparent">
+      <Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
+         <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+            <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
+                <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                   <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                          Height="55" Source="{Binding ImageSource}" />
+                </Border>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                   Foreground="Black” Text="{Binding Name}" />
+         </StackPanel>
+      </Border>
+   </Grid>
 </DataTemplate>
 </Window.Resources>
 
@@ -441,9 +442,9 @@ Foreground="Black” Text="{Binding Name}" />
 
 
 <Grid Name="grid">
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
-ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
-</syncfusion:SfScheduler>
+   <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
+                           ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
+   </syncfusion:SfScheduler>
 </Grid>
 
 {% endhighlight %}
