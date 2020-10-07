@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with WPF Step ProgressBar control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
+description: Learn about getting started with the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
 platform: WPF
 control: SfStepProgressBar
 documentation: ug
@@ -27,11 +27,11 @@ The SfStepProgressBar control can be added to a WPF application by dragging it f
 
 ## Adding control manually in XAML
 
-To add control manually in XAML, follow the given steps:
+To add control manually in the XAML, follow the given steps:
 
 1.	Add the following required assembly reference to the project:
     * Syncfusion.SfProgressBar.WPF     
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2.	Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3.	Declare the SfStepProgressBar control in the XAML page.
 
 {% tabs %}
@@ -59,7 +59,7 @@ To add control manually in XAML, follow the given steps:
 
 ## Adding control through code behind
 
-To add control manually through code behind, follow the given steps:
+To add control manually using the code behind, follow the given steps:
 
 1.	Add the following required assembly reference to the project:
    * Syncfusion.SfProgressBar.WPF
