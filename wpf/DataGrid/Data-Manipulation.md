@@ -303,7 +303,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 ### Changing the AddNewRow text in DataGrid
 
-You can change the AddNewRow text in DataGrid by using the SfDataGrid.AddNewRowText property.
+You can change the AddNewRow text in DataGrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -652,7 +652,7 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 
 ### Changing the AddNewRow text in Master-Details View
 
-You can change the AddNewRow text in `DetailsViewDataGrid` by using the SfDataGrid.AddNewRowText property in [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
+You can change the AddNewRow text in `DetailsViewDataGrid` by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property in `ViewDefinition.DataGrid`.
 
 {% tabs %}
 {% highlight xaml %}
