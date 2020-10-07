@@ -303,7 +303,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 ### Changing the AddNewRow text in DataGrid
 
-You can change the AddNewRow text in DataGrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property.
+You can change the default static string of AddNewRow in datagrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
 
 {% tabs %}
 {% highlight xaml %}
@@ -650,9 +650,9 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
-### Changing the AddNewRow text in Master-Details View
+### Changing the AddNewRow default text in details view grid
 
-You can change the AddNewRow text in `DetailsViewDataGrid` by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property in `ViewDefinition.DataGrid`.
+You can change the default static string of AddNewRow in details view grid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property in `ViewDefinition.DataGrid`. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
 
 {% tabs %}
 {% highlight xaml %}
