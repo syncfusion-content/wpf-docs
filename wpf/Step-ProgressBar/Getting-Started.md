@@ -46,7 +46,7 @@ To add control manually in the XAML, follow the given steps:
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
      <Grid x:Name="grid">
-        <Syncfusion:SfStepProgressBar VerticalAlignment="Center" SelectedIndex="3">
+        <Syncfusion:SfStepProgressBar SelectedIndex="3">
         <Syncfusion:StepViewItem Content="Ordered" />
         <Syncfusion:StepViewItem Content="Shipped" />
         <Syncfusion:StepViewItem Content="Packed" />
@@ -87,6 +87,11 @@ namespace SfProgressBar
             StepViewItem shippedStepViewItem = new StepViewItem();
             StepViewItem packedStepViewItem = new StepViewItem();
             StepViewItem deliveredStepViewItem = new StepViewItem();
+
+            orderedStepViewItem.Content = "Ordered";
+            shippedStepViewItem.Content = "Shipped";
+            packedStepViewItem.Content = "Packed";
+            deliveredStepViewItem.Content = "Delivered";
 
             stepProgressBar.Items.Add(orderedStepViewItem);
             stepProgressBar.Items.Add(shippedStepViewItem);
