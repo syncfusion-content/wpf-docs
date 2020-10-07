@@ -128,14 +128,14 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 
 ## Scheduler Resource Mapping
 
-Schedule supports full data binding to `ResourceCollection`. Specify the [ResourceMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceMapping.html) attribute to map the properties in the underlying data source to the schedule resource.
+Schedule supports full data binding to [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection). Specify the [ResourceMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceMapping.html) attribute to map the properties in the underlying data source to the schedule resource.
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| `Name` | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
-| `Id` | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
-| `Background` | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
-| `Foreground`| Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
+| Name | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
+| Id | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
+| Background | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
+| Foreground | Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
 
 N>Custom resource class should contain a mandatory field for resource `Id`.
 
