@@ -146,14 +146,17 @@ You can create a custom class `Employee` with mandatory fields `Name`, `Id`, `Fo
 {% highlight c# %}
 public class Employee
 {
-public string Name {get; set;}
+   public string Name {get; set;}
 
-public string Id {get; set;}
+   public string Id {get; set;}
 
-public Brush BackgroundColor {get; set; }
+   public Brush BackgroundColor {get; set; }
 
-public Brush ForegroundColor {get; set; }
+   public Brush ForegroundColor {get; set; }
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 N>• You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 • SchedulerResource.Data object is used to create the SchedulerResource by mapping the custom resource.
