@@ -90,3 +90,20 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Horizontal Scrolling
+
+By default, horizontal scrollbar is not enabled in SfTreeView. If you want to enable horizontal scrolling based on the content, you should set ScrollView.HorizontalScrollBarVisibility as Auto. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView  
+                x:Name="treeView" 
+                ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                AutoExpandMode="AllNodes"
+                IsAnimationEnabled="True" 
+                ItemsSource="{Binding Countries}"/>
+{% endhighlight %}
+{% endtabs %}
+
+[WPF TreeView with horizontal scrolling enabled](Scrolling_images/Scrolling_image1.png)
+
