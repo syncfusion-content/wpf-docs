@@ -47,7 +47,7 @@ hierarchyNavigator.IsEnableEditMode = true;
 
 ## History
 
-Items selected by users have been saved as History Items. To open the History popup, use the drop-down button on the control. Use the property [IsEnableHistory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableHistory) as 'true' for history items.
+Items selected by users have been saved as History Items. To open the History popup, use the drop-down button on the control. Use the property [IsEnableHistory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableHistory) as `true` for history items.
 
 
 {% tabs %}
