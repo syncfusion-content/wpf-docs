@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deferred Scrolling | PivotGrid | Syncfusion
+title: Improved (Deferred) Scrolling in WPF Pivot Grid | Syncfusion
 description: Support to improve the scrolling performance of pivot grid by updating the data only when user releases the thumb on scrolling.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Deferred Scrolling
+# Deferred Scrolling in Pivot Grid
 
 A support has been provided to improve the scrolling performance of pivot grid by updating the data only when user releases the thumb on scrolling. This can be achieved by the `EnableDeferredScrolling` property of the pivot grid control.
 
