@@ -215,7 +215,7 @@ The visibility of the title can be customized using the [`ShowTitle`](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
+![Show or hide the title bar text](Getting-Started_images/TitleTextAlignment.png)
 ![Show or hide the title bar text](Getting-Started_images/ShowTitle.png)
 
 ## Show or hide the maximize and minimize buttons
