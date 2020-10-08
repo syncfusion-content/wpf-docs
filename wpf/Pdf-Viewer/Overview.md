@@ -1,80 +1,31 @@
 ---
 layout: post
-title: Overview| PDF Viewer | WPF | Syncfusion
-description: Overview of PDF viewer for WPF provides details about features supported, prerequisites and compatibility.
+title: Overview | PDF Viewer | WPF | Syncfusion
+description: Overview section of PDF viewer for WPF provides details about PDF Viewer and its key features that are supported.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# PDFViewer
+# WPF PDF Viewer Overview
 
-Introduction to PDF Viewer
+The PDF Viewer control supports viewing, reviewing, and printing PDF files in WPF applications. The thumbnail, bookmark, hyperlink, and table of contents support provides easy navigation within and outside the PDF files. The form-filling support provides a platform to fill, flatten, save, and print PDF files with AcroForm. The PDF files can be reviewed with the abundant available annotation tools.
 
-Essential PDF Viewer is a 100% managed .NET component that has the ability to view and print PDF files from your WPF application.
+![Overview of PDF Viewer control](Overview_images/pdfviewer_overview.png)
 
-Use Case Scenario
+## Key features
 
-You can embed the PDF viewer within the .NET application using this feature. The PDF Viewer can also be used as a stand-alone application.
-
-![Output of PDF Viewer control](Overview_images/Overview_img1.png)
-
-
-
-## Prerequisites and Compatibility
-
-This section covers the requirements that are mandatory for using Syncfusion Essential PDF Viewer. It also lists operating systems and browsers that are compatible with the product.
-
-### Prerequisites
-
-<table>
-<tr>
-<th>
-Development Environments</th><th>
-.NET Framework versions</th></tr>
-<tr>
-<td>
-Visual Studio 2013 (Ultimate, Premium, Professional and Express)Visual Studio 2012 (Ultimate, Premium, Professional and Express)Visual Studio 2010 (Ultimate, Premium, Professional and Express)Visual Studio 2008 (Team System, Professional, Standard & Express)Visual Studio 2005 (Professional, Standard & Express)Microsoft Expression Blend</td><td>
-.NET Framework version 4.5.1.NET Framework version 4.5.NET Framework version 4.0.NET Framework version 3.5 with Service Pack 1.NET Framework version 2.0</td></tr>
-</table>
-
-### Compatibility
-
-<table>
-<tr>
-<th>
-Operating Systems</th></tr>
-<tr>
-<td>
-Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows XP, Windows 2003, Windows 7, Windows 8, Windows 8.1, Windows 10
-</td></tr>
-</table>
-
-### Documentation
-
-
-
-<table>
-<tr>
-<th>
-Type of Documentation</th><th>
-Location</th></tr>
-<tr>
-<td>
-Readme</td><td>
-[drive:]\ProgramFiles\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Read Me\Reporting_WPF.html</td></tr>
-<tr>
-<td>
-Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrastructure\Release Notes\Reporting.html#WPF-PdfViewer</td></tr>
-<tr>
-<td>
-User Guide (this document)</td><td>
-Online {{ '<http://help.syncfusion.com/wpf/pdfviewer>' | markdownify }} (Navigate to the PDF Viewer for WPF User Guide.)> {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
-<tr>
-<td>
-Class Reference</td><td>
-Online {{ '<https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF.html>' | markdownify }} </td></tr>
-</table>
-
-
+* **Open PDF files** - Opens PDF files, both normal and protected, with AES and RC4 encryption algorithms (password-protected). Open PDF files from stream, file path, and PdfLoadedDocument objects.
+* **Instant loading** - Loads PDF files with thousands of pages instantly.
+* **Less runtime memory** - On-demand loading and virtualization mean the control holds only the minimum required pages at runtime to reduce memory consumption.
+* **Virtualized pages** - Renders pages on demand to help reduce initial load time when working with large documents.
+* **Printing** - Supports both the silent printing as well as printing using print dialog.
+* **Select and copy text** - Allows you to select and copy text from PDF files.
+* **Search text** - Allows you to locate a word or phrase easily in a PDF file.
+* **Annotations** - Allows you to review and annotate PDF files using a rich set of annotating tools.
+* **Navigations** - Supports many types of internal and external navigations such as bookmarks, thumbnails, hyperlinks, and table of contents navigations.
+* **Form Filling** - Provides the ability to fill, edit, flatten, and save AcroForms fields in PDF files.
+* **Organize pages** - Allows you to rotate, rearrange, and delete pages in a PDF file using a miniature preview of the PDF pages.
+* **Redaction** - Allows you to remove sensitive text and graphics from a PDF file.
+* **PDF Layers** - Supports displaying layer contents (adding, modifying, or deleting annotations) over the layers and adding, modifying, or deleting layers in a PDF file.
+* **Exporting** - Supports exporting PDF pages to image and exporting form data.
