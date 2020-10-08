@@ -189,6 +189,33 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 
 ![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
 
+## Show or hide the title bar text
+
+The visibility of the title of ChromelessWindow can customize by setting the [`ShowTitle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowTitle) property. The default value of `ShowTitle` is true.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chromeless_Window_Sample"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
+        TitleTextAlignment="Center"
+        Icon="App.ico"
+        ShowTitle="False" 
+        Title="Getting Started"
+        Height="350" Width="550">
+    <Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>
+{% endhighlight %}
+{% endtabs %}
+
+![Show or hide the title](Getting-Started_images/ShowTitle.png)
 
 ## Show or hide the maximize and minimize buttons
 
@@ -219,36 +246,7 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 
 ![Show or hide the maximize and minimize buttons](Getting-Started_images/MaximizeMinimizeButton.png)
 
-N> By default, the maximize and minimize buttons are not displayed in ResizeMode -`NoResize` even the value of those properties set as `True`, since the maximize and minimize buttons are displayed in the remaining three resize modes(`CanMinimize`, `CanResize`, `CanResizeWithGrip`) on the basis of the values given for those properties. 
-
-
-## Show or hide the title
-
-The visibility of the title of ChromelessWindow can customize by setting the [`ShowTitle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowTitle) property. The default value of `ShowTitle` is true.
-
-{% tabs %}
-{% highlight XAML %}
-<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Chromeless_Window_Sample"
-        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
-        TitleTextAlignment="Center"
-        Icon="App.ico"
-        ShowTitle="False" 
-        Title="Getting Started"
-        Height="350" Width="550">
-    <Grid>
-    </Grid>
-</syncfusion:ChromelessWindow>
-{% endhighlight %}
-{% endtabs %}
-
-![Show or hide the title](Getting-Started_images/ShowTitle.png)
+N> By default, the maximize and minimize buttons are not displayed in ResizeMode -`NoResize` even the value of those properties set as `True`. The maximize and minimize buttons are displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` on the basis of the `ShowMaximizeButton` and `ShowMinimizeButton` properties. 
 
 
 ## Title bar icon
@@ -273,35 +271,6 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 {% endtabs %}
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
-
-
-## Show or hide the title bar icon
-
-The visibility of the title bar icon of ChromelessWindow can customize by setting the [`ShowIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowIcon) property. The default value of `ShowIcon` is true.
-
-{% tabs %}
-{% highlight XAML %}
-<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Chromeless_Window_Sample"
-        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
-        TitleTextAlignment="Center"
-        Icon="App.ico"
-        ShowIcon="False" 
-        Title="Getting Started"
-        Height="350" Width="550">
-    <Grid>
-    </Grid>
-</syncfusion:ChromelessWindow>
-{% endhighlight %}
-{% endtabs %}
-
-![Show or hide the title bar icon](Getting-Started_images/ShowIcon.png)
 
 
 ## Title bar icon alignment
@@ -332,6 +301,35 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
 {% endtabs %}
 
 ![Chromeless Window icon alignment](Getting-Started_images/wpf-chromeless-window-icon-alignment.png)
+
+
+## Show or hide the title bar icon
+
+The visibility of the title bar icon of ChromelessWindow can customize by setting the [`ShowIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowIcon) property. The default value of `ShowIcon` is true.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chromeless_Window_Sample"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
+        TitleTextAlignment="Center"
+        Icon="App.ico"
+        ShowIcon="False" 
+        Title="Getting Started"
+        Height="350" Width="550">
+    <Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>
+{% endhighlight %}
+{% endtabs %}
+
+![Show or hide the title bar icon](Getting-Started_images/ShowIcon.png)
 
 ## Customizing the border of ChromelessWindow
 
