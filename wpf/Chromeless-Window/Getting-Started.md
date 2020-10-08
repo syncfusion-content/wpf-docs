@@ -215,7 +215,7 @@ The visibility of the title can be customized using the [`ShowTitle`](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the title bar text](Getting-Started_images/ShowTitle.png)
+![Show or hide the title bar text](Getting-Started_images/ShowTitle.PNG)
 
 ## Show or hide the maximize and minimize buttons
 
@@ -244,7 +244,7 @@ The visibility of the title can be customized using the [`ShowTitle`](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the maximize and minimize buttons](Getting-Started_images/MaximizeMinimizeButton.png)
+![Show or hide the maximize and minimize buttons](Getting-Started_images/MaximizeMinimizeButton.PNG)
 
 N> By default, the maximize and minimize buttons are not displayed in ResizeMode -`NoResize` even the value of `ShowMaximizeButton` and `ShowMaximizeButton` set as `True`. The maximize and minimize buttons are displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` on the basis of the `ShowMaximizeButton` and `ShowMinimizeButton` properties. 
 
@@ -329,7 +329,7 @@ The visibility of the title bar icon can be customized using the [`ShowIcon`](ht
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the title bar icon](Getting-Started_images/ShowIcon.png)
+![Show or hide the title bar icon](Getting-Started_images/ShowIcon.PNG)
 
 ## Customizing the border of ChromelessWindow
 
