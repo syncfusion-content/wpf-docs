@@ -225,52 +225,52 @@ button.LargeIcon = new BitmapImage(new Uri("image/userlarge.png", UriKind.Relati
 
 ## Setting icon template
 
-The IconTemplate property provides support for setting up any type of image such as path data, font icons, etc. to the ButtonAdv. The icon will automatically resize the template content according to its size provided in the data template.
+The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplate) property provides support for setting up any type of image such as path data, font icons, etc. to the ButtonAdv. The icon will automatically resize the template content according to its size provided in the data template.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-        <sync:ButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid Width="12" Height="16">
-                        <Path
-                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
-        <sync:ButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid Width="16" Height="16">
-                        <Path
-                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
-        <sync:ButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <sync:ButtonAdv.IconTemplate>
-                <DataTemplate>
-                    <Grid  x:Name="Save"
-                            Width="16"
-                            Height="16">
-                        <Path
-                                Width="16"
-                                Height="16"
-                                Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
-                                Fill="#FF3A3A38"
-                                Stretch="Fill" />
-                    </Grid>
-                </DataTemplate>
-            </sync:ButtonAdv.IconTemplate>
-        </sync:ButtonAdv>
+<sync:ButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <sync:ButtonAdv.IconTemplate>
+        <DataTemplate>
+            <Grid Width="12" Height="16">
+                <Path
+                        Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                        Fill="#FF3A3A38"
+                        Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+    </sync:ButtonAdv.IconTemplate>
+</sync:ButtonAdv>
+<sync:ButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <sync:ButtonAdv.IconTemplate>
+        <DataTemplate>
+            <Grid Width="16" Height="16">
+                <Path
+                        Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                        Fill="#FF3A3A38"
+                        Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+    </sync:ButtonAdv.IconTemplate>
+</sync:ButtonAdv>
+<sync:ButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <sync:ButtonAdv.IconTemplate>
+        <DataTemplate>
+            <Grid  x:Name="Save"
+                    Width="16"
+                    Height="16">
+                <Path
+                        Width="16"
+                        Height="16"
+                        Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
+                        Fill="#FF3A3A38"
+                        Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+    </sync:ButtonAdv.IconTemplate>
+</sync:ButtonAdv>
 
  {% endhighlight %}
 
@@ -282,7 +282,7 @@ The IconTemplate property provides support for setting up any type of image such
 
  ### Setting icon template selector
 
- The IconTemplateSelector property that allows you to specify a different data template based on the value given in the data templates.
+ The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ButtonAdv.html#Syncfusion_Windows_Tools_Controls_ButtonAdv_IconTemplateSelector) property that allows you to specify a different data template based on the value given in the data templates.
 
  N> It loads the icon in the following priority order.
 * IconTemplate Selector
