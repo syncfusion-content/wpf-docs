@@ -28,8 +28,8 @@ You can create a WPF application with ChromelessWindow using the following steps
 4.	[Customize title bar background.](#title-bar-background)
 5.	[Customize title bar font.](#title-bar-font)
 6.	[Customize title bar height.](#title-bar-height)
-7.	[Show or hide the maximize and minimize buttons.](#show-or-hide-the-maximize-and-minimize-buttons)
-8.	[Show or hide the title.](#show-or-hide-the-title)
+7.	[Show or hide the title bar text.](#show-or-hide-the-title-bar-text)
+8.  [Show or hide the maximize and minimize buttons.](#show-or-hide-the-maximize-and-minimize-buttons)
 9.	[Customize title bar icon.](#title-bar-icon)
 10. [Show or hide the title bar icon.](#show-or-hide-the-title-bar-icon)
 11.	[Customize the border of the ChromelessWindow.](#customizing-the-border-of-chromelesswindow)
@@ -191,7 +191,7 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 
 ## Show or hide the title bar text
 
-The visibility of the title of ChromelessWindow can customize by setting the [`ShowTitle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowTitle) property. The default value of `ShowTitle` is true.
+The visibility of the title can be customized using the [`ShowTitle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowTitle) property. The default value of `ShowTitle` property is true.
 
 {% tabs %}
 {% highlight XAML %}
@@ -203,7 +203,7 @@ The visibility of the title of ChromelessWindow can customize by setting the [`S
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
+        skin:SfSkinManager.VisualStyle="Office2019Colorful"
         TitleTextAlignment="Center"
         Icon="App.ico"
         ShowTitle="False" 
@@ -215,11 +215,11 @@ The visibility of the title of ChromelessWindow can customize by setting the [`S
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the title](Getting-Started_images/ShowTitle.png)
+![Show or hide the title bar text](Getting-Started_images/ShowTitle.png)
 
 ## Show or hide the maximize and minimize buttons
 
- The visibility of maximize and minimize buttons can be customize by setting the [`ShowMaximizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMaximizeButton) and [`ShowMinimizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMinimizeButton) properties respectively. The default value of `ShowMaximizeButton` and `ShowMinimizeButton` property is true. 
+ The visibility of maximize and minimize buttons can be customized using the [`ShowMaximizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMaximizeButton) and [`ShowMinimizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMinimizeButton) properties respectively. The default value of `ShowMaximizeButton` and `ShowMinimizeButton` properties is true. 
 
  {% tabs %}
 {% highlight XAML %}
@@ -231,7 +231,7 @@ The visibility of the title of ChromelessWindow can customize by setting the [`S
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
+        skin:SfSkinManager.VisualStyle="Office2019Colorful"
         TitleTextAlignment="Center"
         Icon="App.ico"
         ShowMinimizeButton="False"
@@ -246,7 +246,7 @@ The visibility of the title of ChromelessWindow can customize by setting the [`S
 
 ![Show or hide the maximize and minimize buttons](Getting-Started_images/MaximizeMinimizeButton.png)
 
-N> By default, the maximize and minimize buttons are not displayed in ResizeMode -`NoResize` even the value of those properties set as `True`. The maximize and minimize buttons are displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` on the basis of the `ShowMaximizeButton` and `ShowMinimizeButton` properties. 
+N> By default, the maximize and minimize buttons are not displayed in ResizeMode -`NoResize` even the value of `ShowMaximizeButton` and `ShowMaximizeButton` set as `True`. The maximize and minimize buttons are displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` on the basis of the `ShowMaximizeButton` and `ShowMinimizeButton` properties. 
 
 
 ## Title bar icon
@@ -305,7 +305,7 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
 
 ## Show or hide the title bar icon
 
-The visibility of the title bar icon of ChromelessWindow can customize by setting the [`ShowIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowIcon) property. The default value of `ShowIcon` is true.
+The visibility of the title bar icon can be customized using the [`ShowIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowIcon) property. The default value of `ShowIcon` property is true.
 
 {% tabs %}
 {% highlight XAML %}
@@ -317,7 +317,7 @@ The visibility of the title bar icon of ChromelessWindow can customize by settin
         xmlns:local="clr-namespace:Chromeless_Window_Sample"
         mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        skin:SfSkinManager.VisualStyle="MaterialLightBlue"
+        skin:SfSkinManager.VisualStyle="Office2019Colorful"
         TitleTextAlignment="Center"
         Icon="App.ico"
         ShowIcon="False" 
