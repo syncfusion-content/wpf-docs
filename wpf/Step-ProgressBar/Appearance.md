@@ -94,7 +94,7 @@ You can customize the color and thickness of the Step progressbar using followin
 
 •[ConnectorColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorColor): Represents the color of the connector for inactive state.
 
-•[ConnectorThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorThickness): Represents the thickness of connector line that connecting neighboring steview items.
+•[ConnectorThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorThickness): Represents the thickness of connector line that connecting neighboring SteViewItem's.
 
 {% tabs %}
 {% highlight XAML %}      

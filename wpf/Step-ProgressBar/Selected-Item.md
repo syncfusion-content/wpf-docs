@@ -87,7 +87,7 @@ SfStepProgressBar stepProgressBar = new SfStepProgressBar();
 ![Selected item status image](Appearance_images/SelectedItemStatus.png)
 
 ## SelectedItemProgress
-You can change the progress value of the stepview item using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemProgress) property. The default value of this property is `100`.
+You can change the progress value of the StepViewItem using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemProgress) property. The default value of this property is `100`.
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">

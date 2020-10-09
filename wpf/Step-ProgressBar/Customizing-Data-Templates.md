@@ -13,7 +13,7 @@ Data templates can be customized for items and content. The next sections explai
 
 ## Item Template
 
-You can customize the content of StepViewItem by using ItemTemplate of StepViewItem. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire stepview item.
+You can customize the content of StepViewItem by using ItemTemplate property. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire stepview item.
 
 
 
@@ -58,18 +58,18 @@ Using ItemTemplateSelector, you can use different templates for items depending 
 
    ~~~csharp
 
-		public class StepViewItemTemplateSelector : DataTemplateSelector
+	public class StepViewItemTemplateSelector : DataTemplateSelector
     {
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            if ((item is StepViewItem) && (item as StepViewItem) != null)
+            StepViewItem stepViewItem = item as StepViewItem;
+            if (stepViewItem != null)
             {
-                StepStatus stepperState = (item as StepViewItem).Status;
-                if (stepperState == StepStatus.Indeterminate)
+                if (stepViewItem.Status == StepStatus.Indeterminate)
                 {
                     return (item as StepViewItem).FindResource("IndeterminateContentTemplate") as DataTemplate;
                 }
-                else if (stepperState == StepStatus.Active)
+                else if (stepViewItem.Status == StepStatus.Active)
                 {
                     return (item as StepViewItem).FindResource("ActiveContentTemplate") as DataTemplate;
                 }
@@ -79,6 +79,7 @@ Using ItemTemplateSelector, you can use different templates for items depending 
             return null;
         }
     }
+
    ~~~
 
 
@@ -173,16 +174,16 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
 
    ~~~csharp
 
-		public class StepViewItemMarkerTemplateSelector : DataTemplateSelector
+	public class StepViewItemMarkerTemplateSelector : DataTemplateSelector
     {
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            if ((item is StepViewItem) && (item as StepViewItem) != null)
+            StepViewItem stepViewItem = item as StepViewItem;
+            if (stepViewItem != null)
             {
-                StepStatus stepperState = (item as StepViewItem).Status;
-                if (stepperState == StepStatus.Indeterminate)
+                if (stepViewItem.Status == StepStatus.Indeterminate)
                     return (item as StepViewItem).FindResource("InProgressDataTemplate") as DataTemplate;
-                else if (stepperState == StepStatus.Active)
+                else if (stepViewItem.Status == StepStatus.Active)
                     return (item as StepViewItem).FindResource("CompletedDataTemplate") as DataTemplate;
                 else
                     return (item as StepViewItem).FindResource("NotStartedDataTemplate") as DataTemplate;
