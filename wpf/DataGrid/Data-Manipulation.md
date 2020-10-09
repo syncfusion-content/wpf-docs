@@ -301,6 +301,25 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the AddNewRow default text in DataGrid
+
+You can change the default static string of AddNewRow in datagrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="dataGrid"
+                       AddNewRowPosition="Top"
+                       AddNewRowText="Click here to add new row in datagrid"
+                       ItemsSource="{Binding Employees}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.dataGrid.AddNewRowText = "Click here to add new row in datagrid";
+{% endhighlight %}
+{% endtabs %}
+
+![Changed the addnewrow text in datagrid WPF](Data-Manipulation_images/Data-Manipulation_img7.png)
+
 ### Customize the newly added row position
 
 SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NewItemPlaceholderPosition).
@@ -575,7 +594,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"                                       
                                        AutoGenerateColumns="True" />
             </syncfusion:GridViewDefinition.DataGrid>
@@ -585,7 +604,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event for `ViewDefinition.DataGrid`.
@@ -631,6 +650,37 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the AddNewRow default text in details view grid
+
+You can change the default static string of AddNewRow in details view grid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property in `ViewDefinition.DataGrid`. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       AutoGenerateRelations="False"
+                       ItemsSource="{Binding Employees}">
+
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
+                                       AddNewRowPosition="Top"
+									   AddNewRowText="Click here to add new row in child grid"									   
+                                       AutoGenerateColumns="True" />
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child grid";
+{% endhighlight %}
+{% endtabs %}
+
+![Changed the addnewrow text in detailsview datagrid WPF](Data-Manipulation_images/Data-Manipulation_img8.png)
 
 ## Delete row
 

@@ -189,9 +189,11 @@ N> You can add multiple `OpenOfficeDictionary` with various culture files into t
 
 If you want to add words that is not available in existing  dictionary, you can add it using [CustomDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.CustomDictionary.html). This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu. 
 
+You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.Dictionaries` collection. If you load the `SfSpellChecker` with `en-US` culture, then you can add your custom words only on `en-US` cultured `CustomDictionary`.  
+
 ### Adding Custom Dictionary
 
-1. Create a custom dictionary text file as `Resource` into the application
+1. Create a custom dictionary text file, set build action as `None` and set `Copy to Output Directory` to `Copy if newer`. 
 
 ![Adding custom word files as resource into the application](Dictionary_images/CustomDictionaryAdding.png)
 
@@ -212,14 +214,16 @@ CultureInfo culture = new CultureInfo("en-US");
 SfSpellChecker SpellChecker = new SfSpellChecker();
 
 // Get the current PROJECT directory
-string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+Uri CustomDict_uri= new Uri(Directory.GetCurrentDirectory()+  
+
+                            @"\English\Custom_en-US.txt", UriKind.Absolute); 
 
 //Add Custom dictionary for US culture
 SpellChecker.Dictionaries.Add(
     new CustomDictionary()
     {
         Culture = culture,
-        DictionaryUri = new Uri(projectDirectory + @"\English\Custom_en-US.txt", UriKind.Absolute)
+        DictionaryUri = CustomDict_uri
     }
 );
 
