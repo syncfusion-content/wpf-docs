@@ -25,35 +25,35 @@ N> The single step size is calculated using ItemSpacing and MarkerWidth or Marke
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="2" ItemSpacing="150">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar SelectedIndex="2" ItemSpacing="150">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-            SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 2;
-            stepProgressBar.ItemSpacing = 150;
+stepProgressBar.SelectedIndex = 2;
+stepProgressBar.ItemSpacing = 150;
 
-            grid.Children.Add(stepProgressBar);
+grid.Children.Add(stepProgressBar);
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,35 +64,35 @@ The step view items are sized to fill the available space.
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="2" ItemsStretch="Fill">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar SelectedIndex="2" ItemsStretch="Fill">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
 SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 2;
-            stepProgressBar.ItemsStretch = ItemsStretch.Fill;
+stepProgressBar.SelectedIndex = 2;
+stepProgressBar.ItemsStretch = ItemsStretch.Fill;
 
-            grid.Children.Add(stepProgressBar);           
-            {% endhighlight %}
+grid.Children.Add(stepProgressBar);           
+{% endhighlight %}
 {% endtabs %}
 ![Items stretch image](Layout_images/ItemsStretch.png)
