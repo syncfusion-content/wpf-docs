@@ -70,6 +70,8 @@ Header="Delete">
 
 ![Appointment ContextMenu in WPF Scheduler](ContextMenu/AppointmentContextMenu.png)
 
+You can download the sample from [here](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
+
 ## SchedulerContextMenuOpening event
 
 The [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html) event occurs while opening the [AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu) or [CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu) in the SfScheduler. 

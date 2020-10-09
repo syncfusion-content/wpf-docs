@@ -36,6 +36,8 @@ schedule.ResourceCollection = ResourceCollection;
 
 N>No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None`.
 
+You can download the sample from [here](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
+
 ## Resource Grouping types
 
 You can group the resource order by `Date` or order by `Resource` using the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property of `SfScheduler`.
@@ -264,6 +266,8 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the sample from [here](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceMappingDemo)
+
 ## Resource header size 
 
 You can customize the resource header size in the day, week, work week and timeline views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
@@ -392,6 +396,8 @@ this.schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![WPF scheduler resource Special Time Region in Timeline View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
 
+You can download the sample from [here](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
+
 ## Appearance customization
 
 Resource UI customization using a template and template selectors support.
@@ -452,6 +458,8 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
 
 ![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
+You can download the sample from [here](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateDemo)
+
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 
 {% tabs %}
@@ -502,7 +510,7 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
             <local:BindingViewModel/>
         </Grid.DataContext>
         <Grid.Resources>
-            <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayResourceTemplate="{StaticResource DayResourcetemplate}" TimeResourceTemplate="{StaticResource TimeResourcetemplate}"/>
+            <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayResourceTemplate="{StaticResource DayViewResourceTemplate}" TimeResourceTemplate="{StaticResource TimelineViewResourceTemplate}"/>
         </Grid.Resources>
 
         <syncfusion:SfScheduler x:Name="Schedule"
@@ -532,9 +540,9 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
         {
         }
 
-        public DataTemplate DayResourceTemplate {get; set;}
+        public DataTemplate DayViewResourceTemplate {get; set;}
 
-        public DataTemplate TimeResourceTemplate {get; set;}
+        public DataTemplate TimelineViewResourceTemplate {get; set;}
 
         /// <summary>
         /// Template selection method
@@ -544,14 +552,18 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
         /// <returns>return the template</returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
-            var resource = item as Employee;
-            if (resource.ID.Equals("1000"))
-                return DayResourceTemplate;
+            var schedule = Syncfusion.Windows.Shared.VisualUtils.FindVisualParent<SfScheduler>(container);
+			if (schedule == null)
+                return null;
+			if (schedule.ViewType != SchedulerViewType.Timeline)
+                return DayViewResourceTemplate;
             else
-                return TimeResourceTemplate;
+                return TimelineViewResourceTemplate;
         }
     }
 {% endhighlight %}
 {% endtabs %}
 
 ![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
+
+You can download the sample from [here](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateSelectorDemo)
