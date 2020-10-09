@@ -16,34 +16,34 @@ You can change the index of the last active (selected) item where items before t
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="3">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar SelectedIndex="3">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-            SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 3;
+stepProgressBar.SelectedIndex = 3;
 
-            grid.Children.Add(stepProgressBar);
+grid.Children.Add(stepProgressBar);
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,36 +53,37 @@ You can change the index of the last active (selected) item where items before t
 You can change the status of step view item using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemStatus) property. The default value of this property is `Inactive`.
 {% tabs %}
 {% highlight XAML %}      
- <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="2" SelectedItemStatus="Indeterminate">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
-        </Grid>
+<Grid x:Name="grid">
+    <syncfusion:SfStepProgressBar SelectedIndex="2" SelectedItemStatus="Indeterminate">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
+</Grid>
 {% endhighlight %}
 {% highlight C# %}
 SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 2;
-            stepProgressBar.SelectedItemStatus = StepStatus.Indeterminate;
+stepProgressBar.SelectedIndex = 2;
+stepProgressBar.SelectedItemStatus = StepStatus.Indeterminate;
            
-            grid.Children.Add(stepProgressBar);            {% endhighlight %}
+grid.Children.Add(stepProgressBar);            
+{% endhighlight %}
 {% endtabs %}
 ![Selected item status image](Appearance_images/SelectedItemStatus.png)
 
@@ -91,38 +92,38 @@ You can change the progress value of the StepViewItem using the [SelectedItemPro
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="2" 
-            SelectedItemProgress="50" SelectedItemStatus="Indeterminate">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar SelectedIndex="2" 
+        SelectedItemProgress="50" SelectedItemStatus="Indeterminate">
+            <syncfusion:StepViewItem Content="Ordered" />
+            <syncfusion:StepViewItem Content="Shipped" />
+            <syncfusion:StepViewItem Content="Packed" />
+            <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
 SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 2;
-            stepProgressBar.SelectedItemStatus = StepStatus.Indeterminate;
-            stepProgressBar.SelectedItemProgress = 50;
+stepProgressBar.SelectedIndex = 2;
+stepProgressBar.SelectedItemStatus = StepStatus.Indeterminate;
+stepProgressBar.SelectedItemProgress = 50;
            
-            grid.Children.Add(stepProgressBar);           
-            {% endhighlight %}
+grid.Children.Add(stepProgressBar);           
+{% endhighlight %}
 {% endtabs %}
 ![Selected item progress image](Appearance_images/SelectedItemProgress.png)
 
@@ -132,36 +133,36 @@ You can change the the duration for completing the animation status of step view
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-            <syncfusion:SfStepProgressBar SelectedIndex="3" AnimationDuration="0:0:1" Orientation="Vertical">
-                <syncfusion:StepViewItem Content="Ordered" />
-                <syncfusion:StepViewItem Content="Shipped" />
-                <syncfusion:StepViewItem Content="Packed" />
-                <syncfusion:StepViewItem Content="Delivered" />
-            </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar SelectedIndex="3" AnimationDuration="0:0:1" Orientation="Vertical">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-            SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.Content = "Shipped";
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.Content = "Delivered";
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.Content = "Shipped";
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.Content = "Delivered";
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 3;
-            stepProgressBar.Orientation = Orientation.Vertical;
-            stepProgressBar.AnimationDuration = new TimeSpan(0, 0, 1);
+stepProgressBar.SelectedIndex = 3;
+stepProgressBar.Orientation = Orientation.Vertical;
+stepProgressBar.AnimationDuration = new TimeSpan(0, 0, 1);
 
-            grid.Children.Add(stepProgressBar);
+grid.Children.Add(stepProgressBar);
 {% endhighlight %}
 {% endtabs %}
 
