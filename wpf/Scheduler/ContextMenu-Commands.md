@@ -14,7 +14,7 @@ The WPF scheduler has support to define a context menu for appointments, time sl
 * [CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu)
 * [AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu)
 
-N>[View smaple in GitHub](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
 
 ## Cell context menu
 
