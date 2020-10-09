@@ -44,7 +44,7 @@ Implementing the above code will create the following Step ProgressBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![Item Template image](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
@@ -161,7 +161,7 @@ This will generate the following Step ProgressBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+![Item Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
 
 ## Marker Template Selector
@@ -287,7 +287,7 @@ This will populate the Step ProgressBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+![Marker Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
   
 

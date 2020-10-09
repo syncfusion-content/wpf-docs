@@ -181,5 +181,5 @@ This will create the following Step ProgressBar control.
 
 
 
-![](Data-Binding_images/Data-Binding_img.png)
+![WPF Step ProgressBar auto creates stepview item from XML using data binding](Data-Binding_images/Data-Binding_img.png)
 
