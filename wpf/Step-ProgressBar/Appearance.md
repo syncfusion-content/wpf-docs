@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance of the WPF Step ProgressBar control | Syncfusion
-description: Learn about appearance and look of the Syncfusion WPF Step ProgressBar control and more details.
+description: Learn about appearance and look of the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
 platform: WPF
 control: Step ProgressBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance customization in WPF Step ProgressBar
 You can highly customize the appearance of the Step progressbar in the following ways.
 
 ## Step Shape

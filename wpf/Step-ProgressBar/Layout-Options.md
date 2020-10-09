@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout alignment of the WPF Step ProgressBar control | Syncfusion
-description: Learn about layout of the Syncfusion WPF Step ProgressBar control and more details.
+description: Learn about layout options of the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
 platform: WPF
 control: Step ProgressBar
 documentation: ug

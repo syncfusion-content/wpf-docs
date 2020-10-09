@@ -1,6 +1,6 @@
 ---
 layout: post
-title: StepView item status customization of the WPF Step ProgressBar control | Syncfusion
+title: Status customization of the WPF Step ProgressBar control | Syncfusion
 description: Learn about status customization of steview item of the Syncfusion WPF Step ProgressBar control and more details.
 platform: WPF
 control: Step ProgressBar
