@@ -13,7 +13,7 @@ Data templates can be customized for items and content. The next sections explai
 
 ## Item Template
 
-You can customize the content of `StepViewItem` by using ItemTemplate property. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire stepview item.
+You can customize the content of `StepViewItem` by using ItemTemplate property. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire `StepViewItem`.
 
 
 {% highlight xaml %}
