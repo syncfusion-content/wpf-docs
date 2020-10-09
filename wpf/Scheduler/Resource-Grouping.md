@@ -15,6 +15,8 @@ The scheduler resource view will allow you to group appointments based on the re
 
 Resources can be added to the scheduler by setting the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property as `Resource` in `SfScheduler.` You need to set the [Id](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Id), [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Name), [Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Foreground) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Background) properties of [SchedulerResource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html) to create a resource. You can add the resource to the scheduler by using the [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property of `SfScheduler` and you can also add or remove the scheduler resources dynamically.
 
+N>No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None`.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -34,9 +36,7 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
->**NOTE**
-* No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None`.
-* View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
 
 ## Resource Grouping types
 
@@ -78,7 +78,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assigning resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by using the [ResourceIdCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection) for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to [recurrence appointments] (https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by using the [ResourceIdCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection) for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
 
 {% tabs %}
 {% highlight c# %}
@@ -266,7 +266,7 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-N>View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceMappingDemo)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceMappingDemo)
 
 ## Resource header size 
 
@@ -396,7 +396,7 @@ this.schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![WPF scheduler resource Special Time Region in Timeline View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
 
-N>View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
 
 ## Appearance customization
 
@@ -458,7 +458,7 @@ You can style resource header appearance using [ResourceHeaderControl](https://h
 
 ![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
-N>View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateDemo)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateDemo)
 
 ### Customize resource appearance using ResourceHeaderTemplateSelector
 
@@ -566,4 +566,4 @@ N>View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 ![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
 
-N>View sample in [GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateSelectorDemo)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateSelectorDemo)

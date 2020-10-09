@@ -14,6 +14,8 @@ The WPF scheduler has support to define a context menu for appointments, time sl
 * [CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu)
 * [AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu)
 
+N>[View smaple in GitHub](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
+
 ## Cell context menu
 
 You can set the context menu for time slot and month cells by using the [SfScheduler.CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu) property. The `CellContextMenu` will appear only when the time slot or month cells are right-clicked.
@@ -69,8 +71,6 @@ Header="Delete">
 {% endtabs %}
 
 ![Appointment ContextMenu in WPF Scheduler](ContextMenu/AppointmentContextMenu.png)
-
-N>View smaple in [GitHub](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
 
 ## SchedulerContextMenuOpening event
 
