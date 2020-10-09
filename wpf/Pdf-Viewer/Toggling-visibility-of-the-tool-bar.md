@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toggling visibility of the tool bar| PDF Viewer | Wpf | Syncfusion
-description: toggling visibility of the tool bar
+description: This section explains how to disable the horizontal toolbar of PDF Viewer and how to disable the vertical toolbar by hiding the items in the toolbar.
 platform: wpf
 control: PDF Viewer
 documentation: ug
