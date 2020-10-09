@@ -9,14 +9,14 @@ documentation: ug
 # BPMN event and its customization
 
 An [`Event`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Event) is a common BPMN process model element that represents something happens during a business process and its is notated with a circle.
-The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of the node allows you to set the type of event and by default, it is set to None.
+The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of BPMNNodeViewModel allows you to set the type of event that occurred during the process. The default event type is none.
  The type of events are as follows:
 
-    * Start - indicates the beginning of the process and every business process start with an event.
-    * Intermediate - indicates the middle of the process.
-    * End - indicates the beginning of the process and every business process end with an event.
+    * Start - Occurs at the beginning of the process and every business process starts with an event.
+    * Intermediate - Occurs in the middle of the process.
+    * End - Occurs at the end of the process and every business process ends with an event.
 
-The event property of the node allows you to define the type of the event. The default value of the event is [Start](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.EventType.html#fields#Start). The following code example explains how to create a BPMN event.
+The event property of the BPMNNodeViewModel allows you to define the type of the event. The default value of the event is [Start](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.EventType.html#fields#Start). The following code example explains how to create a BPMN event.
 
 {% tabs %}
 {% highlight xaml %}
