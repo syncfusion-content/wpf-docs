@@ -70,7 +70,7 @@ Header="Delete">
 
 ![Appointment ContextMenu in WPF Scheduler](ContextMenu/AppointmentContextMenu.png)
 
-You can download the sample from [here](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
+N>View smaple in [GitHub](https://github.com/SyncfusionExamples/context-menu-support-in-wpf-scheduler)
 
 ## SchedulerContextMenuOpening event
 
