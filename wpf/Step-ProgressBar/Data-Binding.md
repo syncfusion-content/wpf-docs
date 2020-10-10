@@ -100,22 +100,22 @@ public class ViewModel : INotifyPropertyChanged
 {% highlight XAML %}
 
 <Grid Name="grid">
-        <syncfusion:SfStepProgressBar
-                x:Name="stepperControlName"
-                Margin="40"
-                ItemsSource="{Binding StepViewItems}"
-                Orientation="Horizontal"
-                SelectedIndex="2">
-                <syncfusion:SfStepProgressBar.ItemContainerStyle>
-                    <Style TargetType="syncfusion:StepViewItem">
-                        <Setter Property="Content" Value="{Binding ModelText}" />
-                        <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
-                    </Style>
-                </syncfusion:SfStepProgressBar.ItemContainerStyle>
-                <syncfusion:SfStepProgressBar.DataContext>
-                    <local:ViewModel />
-                </syncfusion:SfStepProgressBar.DataContext>
-        </syncfusion:SfStepProgressBar>
+    <syncfusion:SfStepProgressBar
+        x:Name="stepperControlName"
+        Margin="40"
+        ItemsSource="{Binding StepViewItems}"
+        Orientation="Horizontal"
+        SelectedIndex="2">
+            <syncfusion:SfStepProgressBar.ItemContainerStyle>
+                <Style TargetType="syncfusion:StepViewItem">
+                    <Setter Property="Content" Value="{Binding ModelText}" />
+                    <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
+                </Style>
+            </syncfusion:SfStepProgressBar.ItemContainerStyle>
+            <syncfusion:SfStepProgressBar.DataContext>
+                <local:ViewModel />
+            </syncfusion:SfStepProgressBar.DataContext>
+    </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
 {% endtabs %}
@@ -142,10 +142,7 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 
     </StepItems>
    ~~~
-
 			
-
-
 2. Add the XmlDataProvider for the XML document.
 
    ~~~xaml
@@ -154,32 +151,22 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 			
    ~~~
 
-
-
 3. ItemsSource property for the Step ProgressBar control.
-
 
    ~~~xaml
    
-	<syncfusion:SfStepProgressBar
-                x:Name="stepperControlName"
-                Margin="40"
-                ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
-                SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
-                <syncfusion:SfStepProgressBar.ItemContainerStyle>
-                    <Style TargetType="syncfusion:StepViewItem">
-                        <Setter Property="Content" Value="{Binding XPath=@Name}" />
-                    </Style>
-                </syncfusion:SfStepProgressBar.ItemContainerStyle>
+	<syncfusion:SfStepProgressBar x:Name="stepperControlName"
+        ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
+        SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
+            <syncfusion:SfStepProgressBar.ItemContainerStyle>
+                <Style TargetType="syncfusion:StepViewItem">
+                    <Setter Property="Content" Value="{Binding XPath=@Name}" />
+                </Style>
+            </syncfusion:SfStepProgressBar.ItemContainerStyle>
     </syncfusion:SfStepProgressBar>
 
    ~~~
 		
-
-
 This will create the following Step ProgressBar control.
 
-
-
 ![WPF Step ProgressBar auto creates stepview item from XML using data binding](Data-Binding_images/Data-Binding_img.png)
-
