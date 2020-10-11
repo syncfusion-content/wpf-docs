@@ -11,19 +11,21 @@ documentation: ug
 
 This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. AutoComplete support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 
+In edit mode provides the following capabilities, 
+
 1. Click the `HierarchyNavigatorItemsControl`, to start the edit mode and which enables the AutoComplete function. 
 
-2. In Edit mode, you can type a navigation path to display a list of navigation items below the HierarchyNavigatorItemsControl from which you can select.
+2. You can type a navigation path in Edit mode to display a list of navigation items under HierarchyNavigatorItemsControl which you can select from.
 
-3. Using the `Tab` key, you can navigate from editing to select the drop-down suggestions from Top to bottom order. using `Shift + Tab` key to select the items from bottom to top order.
+3. You can navigate from editing using the `Tab` key to select drop-down suggestions from the top to bottom order. To select items from the bottom to top order, use the `Shift + Tab` key.
 
-4. When press the escape key while editing, the popup will be closed with the selected item or text edited in the HierarchyNavigator control. After that if we press escape key again, the editor will be closed and control will turn back to select mode with the previous selected item.  
+4. The popup will be closed with the selected item or edited text in the HierarchyNavigator control when pressing the `Escape` key when editing. After that, if the escape key is pressed again, the editor is closed and the control is switched back to select mode with the previous item selected.
 
-5. using the Enter key after selecting the dropdown item using the arrow keys or tab key, the item must be selected based on the matched item and the control turn back to select mode. 
+5. Using the `Enter` key, after using the arrow keys or the tab key to select the drop-down item, the item must be selected based on the matched item and the control switches back to select mode.
 
 6. You can paste the text into editor instead of typing. The control checks for possible matching items and should be shown in the popup.
 
-7. If enter the invalid path or text in the textbox, the popup should be closed. 
+7. The popup should be closed if you enter an invalid path or text in the textbox.
 
 {% tabs %}
 {% highlight XAML %}
