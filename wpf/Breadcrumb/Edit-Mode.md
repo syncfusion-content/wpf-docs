@@ -13,19 +13,17 @@ This feature allows you to easily edit a navigation path by setting the [IsEnabl
 
 In edit mode provides the following capabilities, 
 
-1. Click the `HierarchyNavigatorItemsControl`, to start the edit mode and which enables the AutoComplete function. 
+1. To start the edit mode, click 'HierarchyNavigatorItemsControl' to enable the AutoComplete feature. 
 
-2. You can type a navigation path in Edit mode to display a list of navigation items under HierarchyNavigatorItemsControl which you can select from.
+2. In Edit mode, you can type a navigation path to show a list of navigation items you can select from under `HierarchyNavigatorItemsControl`.
 
-3. You can navigate from editing using the `Tab` key to select drop-down suggestions from the top to bottom order. To select items from the bottom to top order, use the `Shift + Tab` key.
+3. You can use the 'Tab' key to navigate from editing to select drop-down suggestions from top to bottom order. Using the 'Shift + Tab' key to select items from the bottom to top order.
 
-4. The popup will be closed with the selected item or edited text in the HierarchyNavigator control when pressing the `Escape` key when editing. After that, if the escape key is pressed again, the editor is closed and the control is switched back to select mode with the previous item selected.
+4. When pressing the 'Escape' key when editing, the popup will close with the selected item or edited text in the `HierarchyNavigator` control. After that, the editor is closed and the control is switched back to select mode with the previous item selected, if the escape key is pressed again.
 
-5. Using the `Enter` key, after using the arrow keys or the tab key to select the drop-down item, the item must be selected based on the matched item and the control switches back to select mode.
+5. You can paste the text into editor instead of typing and the `HierarchyNavigator` control checks for possible matching items and will be shown in the popup.
 
-6. You can paste the text into editor instead of typing. The control checks for possible matching items and should be shown in the popup.
-
-7. The popup should be closed if you enter an invalid path or text in the textbox.
+7. The popup will be closed if you enter an invalid path or text in the textbox.
 
 {% tabs %}
 {% highlight XAML %}
