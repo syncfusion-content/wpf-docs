@@ -489,14 +489,12 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Placing the BackStage items at top or bottom
 
-The `BackStage` items listed below can be positioned either at top or bottom by using the `Position` property.
-
-1) The `BackStageCommandButton` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
-
-2) The `BackStageTabItem` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackstageTabItem_Position) property.
-
-3) The `BackStageSeparator` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageSeparator_Position) property.
-
+The `BackStage` items listed below can be positioned either at top or bottom by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
+	
+* [BackStageCommandButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageCommandButton.html)
+* [BackStageTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackstageTabItem.html)
+* [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html)
+	
 The following code example illustrates how to position the `BackStage` items whether top or bottom.
 
 {% tabs %}
