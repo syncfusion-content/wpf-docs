@@ -213,14 +213,248 @@ N>When **simplified** layout is set, [`DropDownButton`](https://help.syncfusion.
 
 ## Setting image to DropDownButton
 
-[`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) property is **"Icon"**. The [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
+ The [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) allows to display any type of image such as glyph, font or any custom content using the [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplateSelector) and [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplate) property, which are the preferred options. It allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconType) property is **"Icon"**. The [`IconType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
 
 * **Icon** - Gets the detail of the icon path from the [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon), [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) or [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon) properties and sets it to the DropDownButton.
 * **VectorImage** - Gets the details of the icon’s path data from the [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage) property and sets it to the DropDownButton.
 
+ N> The [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) loads icon in the following priority order,
+ * [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplateSelector) 
+ * [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplate)
+ * [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage)
+ * [`LargeIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_LargeIcon)
+ * [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) 
+ * [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon)
+
+### Setting icon template selector
+
+The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplateSelector) property provides support to specify a different data template based on the value of the [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm) or [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) properties. For simplified layout, the template content will be resized to 20 * 20 size which is the standard. 
+
+ {% tabs %}
+
+ {% highlight XAML %}
+
+ <syncfusion:RibbonWindow x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="MainWindow" Height="450" Width="600">
+    <syncfusion:RibbonWindow.Resources>
+        <DataTemplate x:Key="smallIconTemplate">
+            <Grid Width="14" Height="16">
+                <Path Width="7" Margin="0,7,0,0" HorizontalAlignment="Right" Fill="#FF3A3A38" Stretch="Fill"
+                      Data="F1M122,367L127,367L127,360L122,360z M128,368L121,368L121,359L128,359z" />
+                <Path Margin="0,2,2,0" Fill="#FFDE6C00" Stretch="Fill"
+                      Data="M0,0 L12,0 12,4 11,4 11,0.99999994 1.0000002,0.99999994 1.0000002,13 6.0000001,13 6.0000001,14 0,14 z" />
+                <Path Margin="1,3,3,1" Fill="#FFF8DB8F" Stretch="Fill"
+                Data="M0,0 L10,0 10,3 9.0000001,3 9.0000001,0.99999994 1.0000001,0.99999994 1.0000001,1.5829999 1.0000001,2.5 1.0000001,11 5.0000001,11 5.0000001,12 0,12 z" />
+                <Path Margin="2.011,0.5,0.983,0.983" Fill="#FFFAFAFA" Stretch="Fill"
+                      Data="M5.9873815,7.496151 L11.006,7.496151 11.006,14.516999 5.9873815,14.516999 z M0,5.4959998 L3.9880071,5.4964137 3.9880071,13.51695 0,13.51695 z M3.9889999,2.2337155E-15 C4.8170028,-4.4703477E-08 5.4889999,0.67098993 5.4889999,1.5 L5.4889999,2 7.4889999,2 7.4889999,5 0.4889999,5 0.4889999,2 2.4889999,2 2.4889999,1.5 C2.4889999,0.67098993 3.1609969,-4.4703477E-08 3.9889999,2.2337155E-15 z" />
+                <Path Height="6" Margin="2,0,4,0" VerticalAlignment="Top" Fill="#FF797774" Stretch="Fill"
+                      Data="M4,1 C3.447998,1 3,1.4490051 3,2 L3,3 1,3 1,5 7,5 7,3 5,3 5,2 C5,1.4490051 4.552002,1 4,1 z M4,0 C5.1029968,0 6,0.89700317 6,2 L8,2 8,6 0,6 0,2 2,2 C2,0.89700317 2.8970032,0 4,0 z" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="largeIconTemplate">
+                <Grid Margin="2">
+                    <Path Data="M17,0 L21,0 21,7 20,7 20,1.0000001 17,1.0000001 z M0,0 L4,0 4,1.0000001 1.0000001,1.0000001 1.0000001,23 12,23 12,24 0,24 z"
+                          Margin="0,4,6,2" Fill="#FFED8733" Stretch="Fill" />
+                    <Path Data="M1.0000002,0.99999994 L1.0000002,17 13,17 13,0.99999994 z M0,0 L14,0 14,18 0,18 z"
+                          Margin="13,11,0,0" Fill="#FF3C3B39" Stretch="Fill" />
+                    <Path Data="M16,0 L17,0 19,0 19,6 17,6 17,2 16,2 z M0,0 L2,0 3,0 3,2 2,2 2,20 11,20 11,22 0,22 z"
+                          Margin="1,5,7,3" Fill="#FFF8DB8F" Stretch="Fill"/>
+                    <Path Data="M10.999956,12.5 L22.999956,12.5 22.999956,28.5 10.999956,28.5 z M7.4999558,0 C9.1569382,0 10.499956,1.3439941 10.499956,3 L13.499956,3 13.499956,6.5 15,6.5 15,10.5 9.0000001,10.5 9.0000001,24.5 0,24.5 0,6.5 1.4999557,6.5 1.4999557,3 4.4999558,3 C4.4999558,1.3439941 5.8439499,0 7.4999558,0 z"
+                          Margin="3,0.5,1,1" Fill="White" Stretch="Fill"/>
+                    <Path Data="M6.5,0.99999996 C5.1209717,0.99999996 4,2.1209716 4,3.5 L4,4 0.99999994,4 0.99999994,7 12,7 12,4 9,4 9,3.5 C9,2.1209716 7.8790283,0.99999996 6.5,0.99999996 z M6.5,0 C8.2600098,-4.4703484E-08 9.7209473,1.3060302 9.9649658,3 L13,3 13,8 0,8 0,3 3.0350342,3 C3.2790527,1.3060302 4.7399902,-4.4703484E-08 6.5,0 z"
+                          Height="8" Margin="4,0,10,0" VerticalAlignment="Top" Fill="#FF797774" Stretch="Fill"/>
+                </Grid>
+        </DataTemplate>
+        <local:ItemIconTemplateSelector x:Key="itemIconTemplateSelector"
+                                    SmallTemplate="{StaticResource smallIconTemplate}"
+                                    LargeTemplate="{StaticResource largeIconTemplate}"/>
+    </syncfusion:RibbonWindow.Resources>
+    <Grid>
+        <syncfusion:Ribbon VerticalAlignment="Top">
+            <syncfusion:Ribbon.QuickAccessToolBar>
+                <syncfusion:QuickAccessToolBar/>
+            </syncfusion:Ribbon.QuickAccessToolBar>
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar Header="Clipboard">
+                    <syncfusion:DropDownButton Label="Paste" SizeForm="Large" IconTemplateSelector="{StaticResource itemIconTemplateSelector}"/>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+ </syncfusion:RibbonWindow>
+
+ {% endhighlight %}
+
+ {% highlight c# %}
+
+ public class ItemIconTemplateSelector : DataTemplateSelector
+ {
+    public DataTemplate SmallTemplate { get; set; }
+    public DataTemplate LargeTemplate { get; set; }
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var item1 = (container as ContentPresenter);
+        DropDownButton dropDownButton = (item1.TemplatedParent as DropDownButton);
+        if (dropDownButton != null)
+        {
+            if (dropDownButton.SizeForm == SizeForm.Small || dropDownButton.SizeForm == SizeForm.ExtraSmall)
+            {
+                return SmallTemplate;
+            }
+            else if (dropDownButton.SizeForm == SizeForm.Large)
+            {
+                return LargeTemplate;
+            }
+        }
+        return LargeTemplate;
+    }
+ }
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Image set for DropDownButton using IconTemplateSelector property](DropDownButton_images/DropDownButton_IconTemplateSelector.png)
+
+### Setting icon template
+
+The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplate) property provides support to set any type of image such as glyph, font or any custom content to the [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html). The [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) will automatically resize the template content according to its [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm). For simplified layout, the template content will be resized to 20 * 20 size which is the standard. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <syncfusion:RibbonWindow x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <syncfusion:Ribbon VerticalAlignment="Top">
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar Header="Clipboard">
+                    <syncfusion:DropDownButton Label="Paste" SizeForm="Large">
+                        <syncfusion:DropDownButton.IconTemplate>
+                            <DataTemplate>
+                                <Grid Margin="2">
+                                    <Path
+                                    Data="M17,0 L21,0 21,7 20,7 20,1.0000001 17,1.0000001 z M0,0 L4,0 4,1.0000001 1.0000001,1.0000001 1.0000001,23 12,23 12,24 0,24 z"
+                                    Margin="0,4,6,2" Fill="#FFED8733" Stretch="Fill" />
+                                    <Path
+                                    Data="M1.0000002,0.99999994 L1.0000002,17 13,17 13,0.99999994 z M0,0 L14,0 14,18 0,18 z"
+                                    Margin="13,11,0,0" Fill="#FF3C3B39" Stretch="Fill" />
+                                    <Path
+                                    Data="M16,0 L17,0 19,0 19,6 17,6 17,2 16,2 z M0,0 L2,0 3,0 3,2 2,2 2,20 11,20 11,22 0,22 z"
+                                    Margin="1,5,7,3" Fill="#FFF8DB8F" Stretch="Fill"/>
+                                    <Path
+                                    Data="M10.999956,12.5 L22.999956,12.5 22.999956,28.5 10.999956,28.5 z M7.4999558,0 C9.1569382,0 10.499956,1.3439941 10.499956,3 L13.499956,3 13.499956,6.5 15,6.5 15,10.5 9.0000001,10.5 9.0000001,24.5 0,24.5 0,6.5 1.4999557,6.5 1.4999557,3 4.4999558,3 C4.4999558,1.3439941 5.8439499,0 7.4999558,0 z"
+                                    Margin="3,0.5,1,1" Fill="White" Stretch="Fill"/>
+                                    <Path
+                                    Data="M6.5,0.99999996 C5.1209717,0.99999996 4,2.1209716 4,3.5 L4,4 0.99999994,4 0.99999994,7 12,7 12,4 9,4 9,3.5 C9,2.1209716 7.8790283,0.99999996 6.5,0.99999996 z M6.5,0 C8.2600098,-4.4703484E-08 9.7209473,1.3060302 9.9649658,3 L13,3 13,8 0,8 0,3 3.0350342,3 C3.2790527,1.3060302 4.7399902,-4.4703484E-08 6.5,0 z"
+                                    Height="8" Margin="4,0,10,0" VerticalAlignment="Top" Fill="#FF797774" Stretch="Fill"/>
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:DropDownButton.IconTemplate>
+                    </syncfusion:DropDownButton>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+ </syncfusion:RibbonWindow>
+
+ {% endhighlight %}
+
+ {% highlight c# %}
+
+ Ribbon ribbon = new Ribbon();
+ ribbon.VerticalAlignment = VerticalAlignment.Top;
+ // Creating new tabs
+ RibbonTab homeTab = new RibbonTab();
+ homeTab.Caption = "Home";
+ homeTab.IsChecked = true;
+ 
+ // Creating new bar
+ RibbonBar clipboardBar = new RibbonBar();
+ clipboardBar.Header = "Clipboard";
+ // Creating items
+ DropDownButton pasteButton = new DropDownButton();
+ pasteButton.Label = "Paste";
+ pasteButton.SizeForm = SizeForm.Large;
+ 
+ DataTemplate iconDataTemplate = new DataTemplate();
+ FrameworkElementFactory gridElement = new FrameworkElementFactory(typeof(Grid));
+ FrameworkElementFactory pathElement1 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement2 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement3 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement4 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement5 = new FrameworkElementFactory(typeof(Path));
+ 
+ gridElement.SetValue(Grid.MarginProperty, new Thickness(2));
+ pathElement1.SetValue(Path.DataProperty, Geometry.Parse("M17,0 L21,0 21,7 20,7 20,1.0000001 17,1.0000001 z M0,0 L4,0 4,1.0000001 1.0000001,1.0000001 1.0000001,23 12,23 12,24 0,24 z"));
+ pathElement1.SetValue(Path.MarginProperty, new Thickness(0, 4, 6, 2));
+ pathElement1.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(237, 135, 51)));
+ pathElement1.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ pathElement2.SetValue(Path.DataProperty, Geometry.Parse("M1.0000002,0.99999994 L1.0000002,17 13,17 13,0.99999994 z M0,0 L14,0 14,18 0,18 z"));
+ pathElement2.SetValue(Path.MarginProperty, new Thickness(13, 11, 0, 0));
+ pathElement2.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(60, 59, 57)));
+ pathElement2.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ pathElement3.SetValue(Path.DataProperty, Geometry.Parse("M16,0 L17,0 19,0 19,6 17,6 17,2 16,2 z M0,0 L2,0 3,0 3,2 2,2 2,20 11,20 11,22 0,22 z"));
+ pathElement3.SetValue(Path.MarginProperty, new Thickness(1, 5, 7, 3));
+ pathElement3.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(248, 219, 143)));
+ pathElement3.SetValue(Path.StretchProperty, Stretch.Fill);
+
+ pathElement4.SetValue(Path.DataProperty, Geometry.Parse("M10.999956,12.5 L22.999956,12.5 22.999956,28.5 10.999956,28.5 z M7.4999558,0 C9.1569382,0 10.499956,1.3439941 10.499956,3 L13.499956,3 13.499956,6.5 15,6.5 15,10.5 9.0000001,10.5 9.0000001,24.5 0,24.5 0,6.5 1.4999557,6.5 1.4999557,3 4.4999558,3 C4.4999558,1.3439941 5.8439499,0 7.4999558,0 z"));
+ pathElement4.SetValue(Path.MarginProperty, new Thickness(3, 0.5, 1, 1));
+ pathElement4.SetValue(Path.FillProperty, new SolidColorBrush(Colors.White));
+ pathElement4.SetValue(Path.StretchProperty, Stretch.Fill);
+
+ pathElement5.SetValue(Path.DataProperty, Geometry.Parse("M6.5,0.99999996 C5.1209717,0.99999996 4,2.1209716 4,3.5 L4,4 0.99999994,4 0.99999994,7 12,7 12,4 9,4 9,3.5 C9,2.1209716 7.8790283,0.99999996 6.5,0.99999996 z M6.5,0 C8.2600098,-4.4703484E-08 9.7209473,1.3060302 9.9649658,3 L13,3 13,8 0,8 0,3 3.0350342,3 C3.2790527,1.3060302 4.7399902,-4.4703484E-08 6.5,0 z"));
+ pathElement5.SetValue(Path.MarginProperty, new Thickness(4, 0, 10, 0));
+ pathElement5.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(121, 119, 116)));
+ pathElement5.SetValue(Path.StretchProperty, Stretch.Fill);
+ pathElement5.SetValue(Path.HeightProperty, (double)8);
+ pathElement5.SetValue(Path.VerticalAlignmentProperty, VerticalAlignment.Top);
+ gridElement.AppendChild(pathElement1);
+ gridElement.AppendChild(pathElement2);
+ gridElement.AppendChild(pathElement3);
+ gridElement.AppendChild(pathElement4);
+ gridElement.AppendChild(pathElement5);
+ iconDataTemplate.VisualTree = gridElement;
+ pasteButton.IconTemplate = iconDataTemplate;
+ clipboardBar.Items.Add(pasteButton);
+
+ // Adding bars to the tabs
+ homeTab.Items.Add(clipboardBar);
+ 
+ // Adding tabs to ribbon
+ ribbon.Items.Add(homeTab);
+ grid.Children.Add(ribbon);
+ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Image set for DropDownButton using IconTemplate property](DropDownButton_images/DropDownButton_IconTemplate.png)
+
 ### Setting image path
 
-DropDownButton allows to set the image according to the different [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm) values. To set the image to DropDownButton, the following properties are used:
+ The [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) allows to set the image according to the different [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm) values. To set the image to DropDownButton, the following properties are used:
 
 * [`SmallIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SmallIcon) - 16 * 16 size image to be displayed in normal layout for **"ExtraSmall"** and **"Small"** size form.
 * [`MediumIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_MediumIcon) - 20 * 20 size image to be displayed in simplified layout.
@@ -327,7 +561,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 ### Setting vector image 
 
-The [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage) property is of the type `ObservableCollection<Path>` which allows the image to be set as path type. The DropDownButton will automatically resize the image according to its [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm). For simplified layout, the image will be resized to 20 * 20 size which is the standard.
+The [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_VectorImage) property is of type `ObservableCollection<Path>` which allows the image to be set as path type. The DropDownButton will automatically resize the image according to its [`SizeForm`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_SizeForm). For simplified layout, the image will be resized to 20 * 20 size which is the standard.
 
 {% tabs %}
 
