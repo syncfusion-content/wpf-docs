@@ -399,9 +399,9 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add split button control and its basic features like image sizing options and size modes.
 
-## IsDefault Property
+## IsDefault mode
 
-The IsDefault property indicates whether the SplitButtonAdv is a Default button and is used to activate the SplitButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
+The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_IsDefault) property indicates whether the SplitButtonAdv is a Default button and is used to activate the SplitButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
 
 {% tabs %}
 
