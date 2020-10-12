@@ -179,7 +179,7 @@ N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Add BackStageCommandButton
 
-`BackStageCommandButton` added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
+The `BackStageCommandButton` can be added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
 
 {% tabs %}
 
@@ -276,7 +276,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStageTabItem
 
-`BackStageTabItem` can also be added inside the BackStage Element.Here four BackStageCommandButtons are added with `Header` property value as "Open", "Print" and "Office Account". 
+The `BackStageTabItem` can also be added inside the BackStage Element.Here four BackStageCommandButtons are added with `Header` property value as "Open", "Print" and "Office Account". 
 
 {% tabs %}
 
@@ -382,7 +382,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStage separator			
 
-BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
+The BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
 
 {% tabs %}
 
@@ -487,17 +487,15 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![BackStageSeparator as like Outlook](GettingStarted_images/GettingStarted_img14.jpg)
 
-## Placing the BackStage items at top or bottom
+## BackStage items position
 
-The `BackStage` items listed below can be positioned either at top or bottom by using the `Position` property.
-
-1) The `BackStageCommandButton` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
-
-2) The `BackStageTabItem` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackstageTabItem_Position) property.
-
-3) The `BackStageSeparator` can be placed either at top or bottom of the `BackStage` by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageSeparator_Position) property.
-
-The following code example illustrates how to position the `BackStage` items whether top or bottom.
+The `BackStage` items listed below can be positioned either at top or bottom by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
+	
+* [BackStageCommandButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageCommandButton.html)
+* [BackStageTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackstageTabItem.html)
+* [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html)
+	
+The following code example illustrates how to position the `BackStage` items either at top or bottom.
 
 {% tabs %}
 
