@@ -9,12 +9,11 @@ documentation: ug
 
 # Customizing Data Templates
 
-Data templates can be customized for items and content. The next sections explain how to customize data templates.
+Data templates can be customized for the items and content. The next sections explain how to customize the data templates.
 
 ## Item Template
 
-You can customize the content of `StepViewItem` by using ItemTemplate property. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire `StepViewItem`.
-
+You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to use the ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of an item template is assigned to the image path where it has been modified for a customized look and the content always same for the entire `StepViewItem`.
 
 {% highlight xaml %}
 
@@ -41,7 +40,7 @@ Implementing the above code will create the following Step ProgressBar control.
 
 ## Item Template Selector
 
-Using ItemTemplateSelector, you can use different templates for items depending on specific constraints. The following example illustrates this.
+Using the ItemTemplateSelector, you can use the different templates for items depending on the specific constraints. The following example shows this.
 
 1. Create the template selector in the code.
 
@@ -145,7 +144,7 @@ This will generate the following Step ProgressBar control.
 
 ## Marker Template Selector
 
-With MarkerTemplateSelector, you can use different templates for StepViewItem appearance depending on specific constraints. The following example illustrates this.
+With the MarkerTemplateSelector, you can use the different templates for the StepViewItem appearance depending on specific constraints. The following example shows this.
 
 1. Create the template selector in the code as follows.
 
@@ -230,7 +229,7 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
 
    ~~~
 
-4. Now use MarkerTemplateSelector.
+4. Now, use the MarkerTemplateSelector.
 
    ~~~xaml
 

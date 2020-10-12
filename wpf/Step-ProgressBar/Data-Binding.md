@@ -7,17 +7,17 @@ control: Step ProgressBar
 documentation: ug
 ---
 
-# Binding StepViewItems in WPF Step ProgressBar
+# Binding the StepViewItems in the WPF Step ProgressBar
 
-You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) using data binding in the WPF [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html).
+You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) using the data binding in the WPF [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html).
 
 ## Data binding to Objects
 
-The `SfStepProgressBar` can bound to an external source to auto create `StepViewItem` and display the data using `ItemsSource` property.   
+The `SfStepProgressBar` can bound to an external source to auto-create `StepViewItem` and display the data using the `ItemsSource` property.   
 
-N> To bind `ItemsSource` to `SfStepProgressBar`, you need to have collection with data object which holds step view item details.
+N> To bind the `ItemsSource` to `SfStepProgressBar`, you need to have a collection with a data object which holds the step view item details.
 
-Here, `StepItem` class defined with `Content` and its properties and `ViewModel` class has `ItemsSource` property of type `ObservableCollection<StepItem>`.
+Here, the `StepItem` class defined with `Content` and its properties, and the `ViewModel` class has the `ItemsSource` property of type `ObservableCollection<StepItem>`.
 
 {% tabs %}
 {% highlight C# %}
@@ -62,7 +62,7 @@ public class ViewModel : INotifyPropertyChanged
 
         private void PopulateData()
         {
-            //Adding the stepview items into the collection
+            //Adding the step view items into the collection
             StepItem orderedStepViewItem = new StepItem()
             {
                 ModelText = "Ordered",
@@ -125,7 +125,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ## Data-Binding with XML
 
-An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example illustrates this.
+An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example shows this.
 
 1. Create an XML file with the following information and name it Data.xml.
 
@@ -151,7 +151,7 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 			
    ~~~
 
-3. ItemsSource property for the Step ProgressBar control.
+3. The ItemsSource property for the Step ProgressBar control.
 
    ~~~xaml
    
