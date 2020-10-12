@@ -10,20 +10,20 @@ documentation: ug
 
  ## Customizing the background
  
- The `TitleBarBackground` property can help to set the background for the Title bar. By setting the value for this property, user can create custom Title bars.
+ The [`TitleBarBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property can be used to set the background for the Title bar.
  
  {% tabs %}
  
  {% highlight XAML %}
  
  <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
- xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="_chromelessWindow"  
- syncfusion:SkinStorage.VisualStyle="Metro"  
- xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
- <Grid>
- </Grid>
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="MainWindow" Height="350" Width="525"  TitleBarBackground="Red"   x:Name="_chromelessWindow"  
+  syncfusion:SkinStorage.VisualStyle="Metro"  
+  xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+  <Grid>
+  </Grid>
  </syncfusion:ChromelessWindow>
  
  {% endhighlight %}
@@ -48,24 +48,20 @@ documentation: ug
  
  ## Customizing the height
  
- ChromelessWindow now supports changing the title bar font size and height directly with the  `TitleFontSize` and `TitleBarHeight` respectively and there is no need to edit the full template to change this.
- 
- `TitleBarHeight` is a property, which is used to change the height of the Title bar. By default its value is 30 and we can change this default value as desired 
- 
- Here is the code example for setting the `TitleBarHeight` Property
- 
+ The [`TitleBarHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property can be used to change the height of the Title bar. The default value is `30`. 
+  
  {% tabs %}
  
  {% highlight XAML %}
  
  <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
- xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="ChromelessWindow" Height="350" Width="525" TitleBarHeight="60" TitleBarBackground="Pink" 
- syncfusion:SkinStorage.VisualStyle="Metro"  x:Name="_chromelessWindow"  
- xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
- <Grid>
- </Grid>
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="ChromelessWindow" Height="350" Width="525" TitleBarHeight="60" TitleBarBackground="Pink" 
+  syncfusion:SkinStorage.VisualStyle="Metro"  x:Name="_chromelessWindow"  
+  xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+  <Grid>
+  </Grid>
  </syncfusion:ChromelessWindow>
  
  {% endhighlight %}
@@ -88,21 +84,19 @@ documentation: ug
 
  ## Customizing  the font size
 
- The font size of the ChromelessWindow title bar can be changed by using [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. By default its value is 12, to enable this functionality, change its value as desired
-
- To set this property, use the below code
+ The font size of the ChromelessWindow title bar can be changed by using [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. The default value is `12`.
 
  {% tabs %}
 
  {% highlight XAML %}
 
  <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
- xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="ChromelessWindow" Height="350" Width="525" TitleFontSize="25" syncfusion:SkinStorage.VisualStyle="Metro"     
- x:Name="_chromelessWindow" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
- <Grid>
- </Grid>
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="ChromelessWindow" Height="350" Width="525" TitleFontSize="25" syncfusion:SkinStorage.VisualStyle="Metro"     
+  x:Name="_chromelessWindow" xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+  <Grid>
+  </Grid>
  </syncfusion:ChromelessWindow>
 
  {% endhighlight %}
