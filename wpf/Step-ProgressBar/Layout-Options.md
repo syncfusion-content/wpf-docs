@@ -1,26 +1,26 @@
 ---
 layout: post
 title: Layout alignment of the WPF Step ProgressBar control | Syncfusion
-description: Learn about layout options of the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
+description: Learn about the layout options of the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
 platform: WPF
 control: Step ProgressBar
 documentation: ug
 ---
 
 # Layout Customization
-You can customize the layout of the Step progressbar in the following ways.
+You can customize the layout of the Step progress bar in the following ways.
 
 ## ItemsStretch
 Represents how the item size is increased to fill the unused space. The default value of [ItemsStretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemsStretch) property is `None`.
 
-### Types
+### Types:
 * None
 * Fill
 
 ### None
-The step view items retains its natural size.You can change the spacing between the adjacent step view items using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is 80.
+The step view items retain their its natural size. You can change the spacing between the adjacent step view items using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is 80.
 
-N> The single step size is calculated using ItemSpacing and MarkerWidth or MarkerHeight based on Orientation. The ItemSpacing applies between the current step view item and previous step view item.
+N> The single step size is calculated using the ItemSpacing and MarkerWidth or MarkerHeight based on the Orientation. The ItemSpacing applies between the current step view item and the previous step view item.
 
 {% tabs %}
 {% highlight XAML %}
