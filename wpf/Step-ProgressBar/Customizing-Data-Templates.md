@@ -141,6 +141,7 @@ Using the ItemTemplateSelector, you can use the different templates for items de
 This will generate the following Step ProgressBar control.
 ![Item Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/ItemTemplateSelector).
 
 ## Marker Template Selector
 
@@ -253,3 +254,5 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
 
 This will populate the Step ProgressBar control.
 ![Marker Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/MarkerTemplateSelector).

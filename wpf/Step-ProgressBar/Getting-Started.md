@@ -107,4 +107,4 @@ namespace SfProgressBar
 {% endhighlight %}
 {% endtabs %}
 
-The sample project for displaying PDF files using the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/GettingStarted-Demo).
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/GettingStarted).

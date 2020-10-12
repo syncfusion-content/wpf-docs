@@ -122,6 +122,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ![WPF Step ProgressBar control auto creates stepview item from objects using data binding](Data-binding_images/Data-Binding.png)
 
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/DataBindingToObjects).
 
 ## Data-Binding with XML
 
@@ -170,3 +171,5 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 This will create the following Step ProgressBar control.
 
 ![WPF Step ProgressBar auto creates stepview item from XML using data binding](Data-Binding_images/Data-Binding_img.png)
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/DataBindingWithXml).
