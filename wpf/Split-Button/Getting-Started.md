@@ -340,21 +340,20 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  public class TemplateSelector : DataTemplateSelector
  {
-     public DataTemplate NewIcon { get; set; }
-     public DataTemplate OpenIcon { get; set; }
-
-     public override DataTemplate SelectTemplate(object item, DependencyObject container)
-     {
-         if (item == null)
-         {
-             return OpenIcon;
-         }
-         if ((item as Model).IsChecked)
-         {
-             return NewIcon;
-         }
-         return base.SelectTemplate(item, container);
-     }
+    public DataTemplate NewIcon { get; set; }
+    public DataTemplate OpenIcon { get; set; }
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item == null)
+        {
+            return OpenIcon;
+        }
+        if ((item as Model).IsChecked)
+        {
+            return NewIcon;
+        }
+        return base.SelectTemplate(item, container);
+    }
  }
  
  {% endhighlight %}
