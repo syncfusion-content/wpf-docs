@@ -13,7 +13,7 @@ documentation: ug
 
 ## InactiveTrackStyle
 
-Modify the appearance of the inactive track using the `InactiveTrackStyle` property.
+Modify the appearance of the inactive track using the [InactiveTrackStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_InactiveTrackStyle) property.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Modify the appearance of the inactive track using the `InactiveTrackStyle` prope
 
 ## ActiveTrackStyle
 
-Modify the appearance of the active track by using the `ActiveTrackStyle` property.
+Modify the appearance of the active track by using the [ActiveTrackStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveTrackStyle) property.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ Modify the appearance of the active track by using the `ActiveTrackStyle` proper
 
 ## ThumbStyle
 
-Modify the appearance of the thumb by using the `ThumbStyle` property.
+Modify the appearance of the thumb by using the [ThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ThumbStyle) property.
 
 {% tabs %}
 
@@ -263,7 +263,7 @@ Modify the appearance of the ticks by using the following properties:
 
 ### TickStroke
 
-Use the 'TickStroke' property, to change the color of major ticks. 
+Use the [TickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickStroke) property, to change the color of major ticks. 
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ Use the 'TickStroke' property, to change the color of major ticks.
 
 ### ActiveTickStroke
 
-Use the 'ActiveTickStroke' property, to change the active major ticks color. 
+Use the [ActiveTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveTickStroke) property, to change the active major ticks color. 
 
 {% tabs %}
 
@@ -359,7 +359,7 @@ Use the 'ActiveTickStroke' property, to change the active major ticks color.
 
 ### TickLength
 
-Use the 'TickLength' property, to change the height of the major ticks. 
+Use the [TickLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickLength) property, to change the height of the major ticks. 
 
 {% tabs %}
 
@@ -409,7 +409,7 @@ Use the 'TickLength' property, to change the height of the major ticks.
 
 ### TickStrokeThickness
 
-Use the 'TickStrokeThickness' property, to change the thickness of the major ticks. 
+Use the [TickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickStrokeThickness) property, to change the thickness of the major ticks. 
 
 {% tabs %}
 
@@ -461,7 +461,7 @@ Use the 'TickStrokeThickness' property, to change the thickness of the major tic
 
 ### MinorTickStroke
 
-Use the 'MinorTickStroke' property, to change the minor ticks color. 
+Use the [MinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickStroke) property, to change the minor ticks color. 
 
 {% tabs %}
 
@@ -510,7 +510,7 @@ Use the 'MinorTickStroke' property, to change the minor ticks color.
 
 ### ActiveMinorTickStroke
 
-Use the 'ActiveMinorTickStroke' property, to change the color of the active minor ticks. 
+Use the [ActiveMinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveMinorTickStroke) property, to change the color of the active minor ticks. 
 
 {% tabs %}
 
@@ -559,7 +559,7 @@ Use the 'ActiveMinorTickStroke' property, to change the color of the active mino
 
 ### MinorTickLength
 
-Use the 'MinorTickLength' property, to change the height of the minor ticks. 
+Use the [MinorTickLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickLength) property, to change the height of the minor ticks. 
 
 {% tabs %}
 
@@ -611,7 +611,7 @@ Use the 'MinorTickLength' property, to change the height of the minor ticks.
 
 ### MinorTickStrokeThickness
 
-Use the 'MinorTickStrokeThickness' property, to change the thickness of the minor ticks. 
+Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickStrokeThickness) property, to change the thickness of the minor ticks. 
 
 {% tabs %}
 
@@ -673,7 +673,7 @@ Use the 'MinorTickStrokeThickness' property, to change the thickness of the mino
 
 ### Value label customization
 
-Customize the value label using the TickBarItem style.
+Customize the value label using the `TickBarItem` style.
 
 {% tabs %}
 
