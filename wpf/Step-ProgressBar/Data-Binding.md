@@ -23,18 +23,41 @@ Here, the `StepItem` class defined with `Content` and its properties, and the `V
 {% highlight C# %}
 
 // Model.cs
+/// <summary>
+/// Represents the model.
+/// </summary>
 public class StepItem 
-    {
-        public string ModelText { get; set; }       
-        public Thickness TitleSpace { get; set; }
-    }
+{
+    /// <summary>
+    /// Gets or sets the text for step view item.
+    /// </summary>
+    public string ModelText { get; set; } 
+        
+    /// <summary>
+    /// Gets or sets the space between text and step view item.
+    /// </summary>
+    public double TitleSpace { get; set; }
 }
 
 //ViewModel.cs
+/// <summary>
+/// Represents the view model class.
+/// </summary>
 public class ViewModel : INotifyPropertyChanged
 {
+        /// <summary>
+        /// Represents the step view items.
+        /// </summary>
         private ObservableCollection<StepItem> m_stepViewItems;
+
+        /// <summary>
+        /// Represents the property changed event.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Gets or sets the step view items.
+        /// </summary>
         public ObservableCollection<StepItem> StepViewItems
         {
             get
@@ -48,43 +71,53 @@ public class ViewModel : INotifyPropertyChanged
             }
         }
 
+        /// <summary>
+        /// Trigress the on property changed event.
+        /// </summary>
+        /// <param name="e"></param>
         public void OnPropertyChanged(PropertyChangedEventArgs e)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, e);
         }
 
+        /// <summary>
+        /// Initialize the instance of <see cref="ViewModel"/> class.
+        /// </summary>
         public ViewModel()
         {
             StepViewItems = new ObservableCollection<StepItem>();
             PopulateData();
         }
 
+        /// <summary>
+        /// Populates the data.
+        /// </summary>
         private void PopulateData()
         {
             //Adding the step view items into the collection
             StepItem orderedStepViewItem = new StepItem()
             {
                 ModelText = "Ordered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem shippedStepViewItem = new StepItem()
             {
                 ModelText = "Shipped",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem packedStepViewItem = new StepItem()
             {
                 ModelText = "Packed",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem deliveredStepViewItem = new StepItem()
             {
                 ModelText = "Delivered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepViewItems.Add(orderedStepViewItem);

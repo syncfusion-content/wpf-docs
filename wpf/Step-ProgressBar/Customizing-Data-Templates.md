@@ -47,8 +47,17 @@ Using the ItemTemplateSelector, you can use the different templates for items de
 
    ~~~csharp
 
+    /// <summary>
+    /// Represents the step view item template selector class.
+    /// </summary>
 	public class StepViewItemTemplateSelector : DataTemplateSelector
     {
+        /// <summary>
+        /// Selects the template based on the step view item status.
+        /// </summary>
+        /// <param name="item">step view item.</param>
+        /// <param name="container">step progress bar.</param>
+        /// <returns></returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             StepViewItem stepViewItem = item as StepViewItem;
@@ -151,8 +160,17 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
 
    ~~~csharp
 
+    /// <summary>
+    /// Represents the step view item template selector class.
+    /// </summary>
 	public class StepViewItemMarkerTemplateSelector : DataTemplateSelector
     {
+        /// <summary>
+        /// Selects the template based on the step view item status.
+        /// </summary>
+        /// <param name="item">step view item.</param>
+        /// <param name="container">step progress bar.</param>
+        /// <returns></returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             StepViewItem stepViewItem = item as StepViewItem;
