@@ -15,10 +15,10 @@ The SfStepProgressBar control is used to show the progress of a multi-step proce
 
 ## Key features
 
-• Visualize step progress markers with different shapes, such as square and circle.
+• Visualize the step progress markers with different shapes, such as square and circle.
 
 • Supports active, inactive, and indeterminate statuses to show progress.
 
 • Visualize the progress of a multi-step process in the horizontal or vertical orientation.
 
-• Customize progress bar styles, markers, and contents using templates.
+• Customize the progress bar styles, markers, and contents using the templates.
