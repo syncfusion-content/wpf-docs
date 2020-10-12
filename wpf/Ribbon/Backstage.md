@@ -179,7 +179,7 @@ N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Add BackStageCommandButton
 
-`BackStageCommandButton` added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
+The `BackStageCommandButton` can be added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
 
 {% tabs %}
 
@@ -274,10 +274,9 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![BackStageCommandButton with caption as Save similar to Outlook Save button](GettingStarted_images/GettingStarted_img12.jpg)
 
-
 ## Add BackStageTabItem
 
-`BackStageTabItem` can also be added inside the BackStage Element.Here four BackStageCommandButtons are added with `Header` property value as "Open", "Print" and "Office Account". 
+The `BackStageTabItem` can also be added inside the BackStage Element.Here four BackStageCommandButtons are added with `Header` property value as "Open", "Print" and "Office Account". 
 
 {% tabs %}
 
@@ -383,7 +382,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## Add BackStage separator			
 
-BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
+The BackStageSeparator used to group out similar backstage elements in BackStage. Here BackStageCommandButtons, BackStageTabItems are separated by [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html) according to their use.
 
 {% tabs %}
 
@@ -488,3 +487,117 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![BackStageSeparator as like Outlook](GettingStarted_images/GettingStarted_img14.jpg)
 
+## BackStage items position
+
+The `BackStage` items listed below can be positioned either at top or bottom by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
+	
+* [BackStageCommandButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageCommandButton.html)
+* [BackStageTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackstageTabItem.html)
+* [BackStageSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageSeparator.html)
+	
+The following code example illustrates how to position the `BackStage` items either at top or bottom.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="BackStage.MainWindow"
+xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+syncfusionskin:SfSkinManager.VisualStyle="Office2019Colorful" Width="820" Height="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" IsBackStageVisible="True">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Name="New" Width="90"  Header="New">
+                    <syncfusion:RibbonButton SizeForm="Large" Label="New Email"/>
+                    <syncfusion:DropDownButton SizeForm="Large" Label="New Items">
+                        <syncfusion:DropDownMenuItem Header="E-mail Message"/>
+                        <syncfusion:DropDownMenuItem Header="Appointment"/>
+                        <syncfusion:DropDownMenuItem Header="Meeting"/>
+                        <syncfusion:DropDownMenuItem Header="Contact"/>
+                        <syncfusion:DropDownMenuItem Header="Task"/>
+                    </syncfusion:DropDownButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Delete" Width="130"  Header="Delete">
+                    <syncfusion:RibbonButton Label="Ignore"/>
+                    <syncfusion:SplitButton Label="Clean Up">
+                        <syncfusion:DropDownMenuItem Header="Clean Up Folder"/>
+                        <syncfusion:DropDownMenuItem Header="Clean Up Conversation"/>
+                        <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder"/>
+                    </syncfusion:SplitButton>
+                    <syncfusion:SplitButton Label="Junk" Margin="0,0,12,0" Width="76"/>
+                    <syncfusion:RibbonButton Label="Delete" SizeForm="Large"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Respond" Width="200" Header="Respond">
+                    <syncfusion:RibbonButton Label="Reply" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Reply All" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Forward" SizeForm="Large"/>
+                    <syncfusion:RibbonButton Label="Meeting"/>
+                    <syncfusion:SplitButton Label="IM" Margin="-2,0,6,0" Width="68"/>
+                    <syncfusion:SplitButton Label="More" Margin="-2,0,6,0" Width="68"/>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Width="170" Name="QuickSteps" Header="Quick Steps">
+                    <syncfusion:RibbonGallery Width="160"    VisualMode="InRibbon" ItemHeight="20" ItemWidth="70">
+                        <syncfusion:RibbonGalleryItem  Content="Move to?"/>
+                        <syncfusion:RibbonGalleryItem  Content="Team Email"/>
+                        <syncfusion:RibbonGalleryItem  Content="ReplyDelete"/>
+                        <syncfusion:RibbonGalleryItem  Content="To Manager"/>
+                        <syncfusion:RibbonGalleryItem  Content="Done"/>
+                        <syncfusion:RibbonGalleryItem  Content="Create New"/>
+                    </syncfusion:RibbonGallery>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Width="170" Header="Find" Name="Find"  >
+                    <syncfusion:RibbonComboBox Label="Filter Email" Width="160">
+                        <ComboBoxItem>Person1@mail.com</ComboBoxItem>
+                        <ComboBoxItem>Person2@mail.com</ComboBoxItem>
+                        <ComboBoxItem>Person3@mail.com</ComboBoxItem>
+                    </syncfusion:RibbonComboBox>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="SEND/RCEIVE"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
+            <syncfusion:RibbonTab Caption="VIEW"  IsChecked="False"/>
+            <syncfusion:Ribbon.QuickAccessToolBar>
+                <syncfusion:QuickAccessToolBar>
+                    <syncfusion:RibbonButton SizeForm="ExtraSmall"/>
+                    <syncfusion:RibbonButton SizeForm="ExtraSmall" />
+                    <syncfusion:QuickAccessToolBar.QATMenuItems>
+                        <syncfusion:RibbonButton Label="Send" />
+                        <syncfusion:RibbonButton Label="Forward" />
+                        <syncfusion:RibbonButton Label="ReplyAll" />
+                        <syncfusion:RibbonButton Label="Delete" />
+                        <syncfusion:RibbonButton Label="Print" />
+                    </syncfusion:QuickAccessToolBar.QATMenuItems>
+                </syncfusion:QuickAccessToolBar>
+            </syncfusion:Ribbon.QuickAccessToolBar>
+            <syncfusion:Ribbon.BackStage>
+                <syncfusion:Backstage>
+                    <syncfusion:BackstageTabItem  Header="Info">
+                        <StackPanel>
+                            <TextBlock FontSize="20" Margin="10" Text="Account Information"/>
+                            <TextBlock FontSize="12" Margin="10" Text="Employ1@syncfusion.com"/>
+                        </StackPanel>
+                    </syncfusion:BackstageTabItem>
+                    <syncfusion:BackstageTabItem  Header="Open"/>
+                    <syncfusion:BackStageCommandButton Header="Save" />
+                    <syncfusion:BackStageCommandButton Header="SaveAs" />
+                    <syncfusion:BackStageSeparator/>
+                    <syncfusion:BackstageTabItem  Header="Print"/>
+                    <syncfusion:BackstageTabItem  Header="Share"/>
+                    <syncfusion:BackStageSeparator Position="Bottom"/>
+                    <syncfusion:BackstageTabItem Position="Bottom" Header="Options"/>
+                    <syncfusion:BackStageCommandButton Position="Bottom" Header="Feedback" />
+                    <syncfusion:BackStageCommandButton Position="Bottom" Header="Exit" />
+                </syncfusion:Backstage>
+            </syncfusion:Ribbon.BackStage>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BackStage items with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img19.jpg)
