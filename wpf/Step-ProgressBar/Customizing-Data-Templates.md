@@ -158,11 +158,11 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
             if (stepViewItem != null)
             {
                 if (stepViewItem.Status == StepStatus.Indeterminate)
-                    return (item as StepViewItem).FindResource("InProgressDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("IndeterminateTemplate") as DataTemplate;
                 else if (stepViewItem.Status == StepStatus.Active)
-                    return (item as StepViewItem).FindResource("CompletedDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("ActiveTemplate") as DataTemplate;
                 else
-                    return (item as StepViewItem).FindResource("NotStartedDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("InactiveTemplate") as DataTemplate;
             }
             return null;
         }
@@ -174,7 +174,7 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
 
    ~~~xaml
 
-	<DataTemplate x:Key="InProgressDataTemplate">
+	<DataTemplate x:Key="IndeterminateTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -191,7 +191,7 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
                 Stretch="Fill" />
         </Grid>
     </DataTemplate>
-    <DataTemplate x:Key="CompletedDataTemplate">
+    <DataTemplate x:Key="ActiveTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -209,7 +209,7 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
                 Stroke="White" />
         </Grid>
     </DataTemplate>
-    <DataTemplate x:Key="NotStartedDataTemplate">
+    <DataTemplate x:Key="InactiveTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -243,8 +243,6 @@ With the MarkerTemplateSelector, you can use the different templates for the Ste
         SelectedIndex="2" >
             <syncfusion:SfStepProgressBar.ItemContainerStyle>
                 <Style TargetType="syncfusion:StepViewItem">
-                    <Setter Property="Content" Value="{Binding ModelText}" />
-                    <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
                     <Setter Property="MarkerWidth" Value="35"/>
                     <Setter Property="MarkerHeight" Value="35"/>
                 </Style>
