@@ -49,8 +49,8 @@ grid.Children.Add(stepProgressBar);
 
 ![Selected index image](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
 
-## SelectedItemProgress
-You can change the status of step view item using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemStatus) property. The default value of this property is `Inactive`.
+## SelectedItemStatus
+You can change the status of step view item using the [SelectedItemStatus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemStatus) property. The default value of this property is `Inactive`.
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
