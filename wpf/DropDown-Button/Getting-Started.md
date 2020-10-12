@@ -278,18 +278,97 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  ![Setting Icon Template](Getting-Started_images/Getting-Started_img12.png)
 
- N> When IconTemplate property is set to the DropDownButtonAdv, the icon path set in [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon) and [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon) properties will not be utilized. Instead template will be applied.
+ N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) the icon in the following priority order.
+* [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate)
+* [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon)
+* [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon)
 
 
 ### Setting icon template selector
 
  The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplateSelector) property which allows you to specify a different data template based on the value given in the data templates.
 
- N> It loads the icon in the following priority order.
-* IconTemplate Selector
-* IconTemplate
-* Large Icon
-* Small Icon
+ {% tabs %}
+
+ {% highlight XAML %}
+
+ <Window x:Class="TemplateSelector_DropDownButtonAdv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateSelector_DropDownButtonAdv"
+        xmlns:Sync="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="newIcon">
+            <Grid Width="12" Height="16">
+                <Path
+                      Margin="0.5"
+                      Data="M0,0 L5.9999999,0 11,5 11,15 0,15 z"
+                      Fill="White"
+                      Stretch="Fill" />
+                <Path
+                     Data="M7,1.7070007 L7,5 10.292999,5 z M1,1 L1,15 11,15 11,6 6,6 6,1 z M0,0 L6.7070007,0 12,5.2929993 12,16 0,16 z"
+                     Fill="#FF3A3A38"
+                     Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="OpenIcon">
+            <Grid Width="16" Height="16">
+                <Path
+                     Margin="0.5,0.5,0.738,0.502"
+                     Data="M0,0 L5,0 6,1 12,1 12,3.4999998 11.499065,3.9999996 14.716998,3.9999996 11.92699,10.999 4.1853847,10.984859 0,10.982999 z"
+                     Fill="White"
+                     Stretch="Fill" />
+                <Path
+                     Data="M5.162991,5.0009986 L1.7839907,10.979999 4.3081884,10.984653 5.0009999,10.984999 5.0009999,10.98593 12.088991,10.999 14.480014,5.0009986 z M0,0 L5.7069998,0 6.7069998,1 13,1 13,3.9999998 12,3.9999998 12,1.9999998 6.2930002,1.9999998 5.2930002,1 0.99999994,1 0.99999994,10.335325 4.5790062,4.0009986 15.954991,4.0009986 12.765994,12.000998 4.552258,11.98482 0,11.982999 z"
+                     Fill="#FF3A3A38"
+                     Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+        <local:TemplateSelector x:Key="IconTemp" NewIcon="{StaticResource newIcon}" OpenIcon="{StaticResource OpenIcon}"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <CheckBox Name="Check" IsChecked="True" Checked="Check_Checked" Unchecked="Check_Unchecked" HorizontalAlignment="Center" Command="{Binding CheckCommand}" Content="ChangeIcon"/>
+            <Sync:DropDownButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
+ {% endhighlight %}
+
+ {% highlight c# %}
+
+ public class TemplateSelector : DataTemplateSelector
+ {
+     public DataTemplate NewIcon { get; set; }
+     public DataTemplate OpenIcon { get; set; }
+
+     public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    { 
+         if (item == null)
+         {
+             return OpenIcon;
+         }
+         if ((item as Model).IsChecked)
+         {
+             return NewIcon;
+         }
+         return base.SelectTemplate(item, container);
+     }
+ }
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ N> The [DropDownButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) the icon in the following priority order.
+* [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplateSelector)
+* [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate)
+* [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_LargeIcon)
+* [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_SmallIcon)
 
 ## Setting image
 
