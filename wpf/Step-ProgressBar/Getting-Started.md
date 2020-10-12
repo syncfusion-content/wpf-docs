@@ -106,3 +106,5 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/GettingStarted).
