@@ -13,11 +13,13 @@ This section explains how to show ContextMenu and using built-in commands in the
 
 ## ContextMenu for Nodes
 
-TreeView provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for nodes in an efficient manner.
+The TreeView provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for nodes in an efficient manner.
+
+You can set context menu for the nodes by using [SfTreeView.ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenu) property.
 
 ## Built-in Commands
 
-SfTreeView provides support for the following built-in commands
+The TreeView provides support for the following built-in commands
 
 * [Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_Edit) - Command to start the editing of the node.
 * [DeleteNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteNode) - Command to delete the node.
@@ -45,7 +47,7 @@ SfTreeView provides support for the following built-in commands
 
 ## Custom Commands
 
-SfTreeView provides support to show ContextMenu using custom commands when built-in commands does not meet your requirement.
+The TreeView allows to show ContextMenu using custom commands when built-in commands does not meet your requirement.
 
 For an example, custom command is used to expand the nodes using context menu in the following example
 
@@ -156,14 +158,14 @@ public class FileManagerViewModel
 
 ### ItemContextMenuOpening Event
 
-[ItemContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenuOpening) event occurs while opening the context menu in SfTreeView.
+[ItemContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenuOpening) event occurs while opening the context menu in the TreeView.
 
 [ItemContextMenuOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html) has the following members which provides the information about `ItemContextMenuOpening` event
 
 * [MenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemContextMenuOpeningEventArgs_MenuInfo) - Gets an instance of [TreeViewContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItemContextMenuInfo.html) that contains information about treeview and treeview node.
 * [ContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemContextMenuOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemContextMenuOpeningEventArgs_ContextMenu) - Gets or sets the context menu getting opened. 
 
-You can cancel showing [ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenuOpening) for certain nodes using custom logic within this event by setting `ItemContextMenuOpeningEventArgs.Cancel` as true.
+You can cancel showing of [ItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextMenuOpening) for certain nodes using custom logic within this event by setting `ItemContextMenuOpeningEventArgs.Cancel` as true.
 
 {% tabs %}
 {% highlight c# %}
