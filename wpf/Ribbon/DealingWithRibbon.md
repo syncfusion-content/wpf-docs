@@ -12,7 +12,6 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 ## Three types of RibbonState
 
-
 **Normal** – Ribbon control displays the RibbonTab content and the window content is arranged below the Ribbon. This is the default state
 
 {% tabs %}
@@ -176,6 +175,236 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ![Resize Ribbon Window](RibbonResizeWindow-images/ResizeRibbonWindow.gif)
 
+## Setting collapse image for RibbonBar
+
+When the RibbonBar is converted into a dropdown button during resizing, the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) allows us to display a image using its [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_IconTemplate) or [`CollapseImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_CollapseImage) property.
+
+ N> The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) loads icon in the following priority order,
+ * [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_IconTemplate)
+ * [`CollapseImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_CollapseImage)
+
+### Setting icon template
+
+The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_IconTemplate) property provides support to set any type of image such as glyph, font or any custom content to the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) displays the [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_IconTemplate) in 16 * 16 size.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <syncfusion:RibbonWindow x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <syncfusion:Ribbon VerticalAlignment="Top">
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar Header="Clipboard" >
+                    <syncfusion:RibbonBar.IconTemplate>
+                        <DataTemplate>
+                            <Grid Width="14" Height="16">
+                                <Path Width="7" Margin="0,7,0,0" HorizontalAlignment="Right" Fill="#FF3A3A38" Stretch="Fill"
+                                      Data="F1M122,367L127,367L127,360L122,360z M128,368L121,368L121,359L128,359z" />
+                                <Path Margin="0,2,2,0" Fill="#FFDE6C00" Stretch="Fill"
+                                      Data="M0,0 L12,0 12,4 11,4 11,0.99999994 1.0000002,0.99999994 1.0000002,13 6.0000001,13 6.0000001,14 0,14 z" />
+                                <Path Margin="1,3,3,1" Fill="#FFF8DB8F" Stretch="Fill"
+                                      Data="M0,0 L10,0 10,3 9.0000001,3 9.0000001,0.99999994 1.0000001,0.99999994 1.0000001,1.5829999 1.0000001,2.5 1.0000001,11 5.0000001,11 5.0000001,12 0,12 z" />
+                                <Path Margin="2.011,0.5,0.983,0.983" Fill="#FFFAFAFA" Stretch="Fill"
+                                      Data="M5.9873815,7.496151 L11.006,7.496151 11.006,14.516999 5.9873815,14.516999 z M0,5.4959998 L3.9880071,5.4964137 3.9880071,13.51695 0,13.51695 z M3.9889999,2.2337155E-15 C4.8170028,-4.4703477E-08 5.4889999,0.67098993 5.4889999,1.5 L5.4889999,2 7.4889999,2 7.4889999,5 0.4889999,5 0.4889999,2 2.4889999,2 2.4889999,1.5 C2.4889999,0.67098993 3.1609969,-4.4703477E-08 3.9889999,2.2337155E-15 z" />
+                                <Path Height="6" Margin="2,0,4,0" VerticalAlignment="Top" Fill="#FF797774" Stretch="Fill"
+                                      Data="M4,1 C3.447998,1 3,1.4490051 3,2 L3,3 1,3 1,5 7,5 7,3 5,3 5,2 C5,1.4490051 4.552002,1 4,1 z M4,0 C5.1029968,0 6,0.89700317 6,2 L8,2 8,6 0,6 0,2 2,2 C2,0.89700317 2.8970032,0 4,0 z" />
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:RibbonBar.IconTemplate>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Header="Font" >
+                    <syncfusion:RibbonBar.IconTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Path
+                                    Height="4" VerticalAlignment="Bottom" Data="M0,0 L16,0 16,4 0,4 z"
+                                    Fill="#FFFE0000" Stretch="Fill" />
+                                <Path
+                                    Margin="3.344,0,3.352,5"
+                                    Data="M4.6480023,0.95898432 C4.6079937,1.0870056 4.5689923,1.2149963 4.533012,1.34198 4.4980089,1.4909973 4.4510118,1.6419983 4.394005,1.7949829 L2.5330156,6.8809814 6.787006,6.8809814 4.9330055,1.7799988 C4.8510047,1.5699768 4.7659832,1.2969971 4.6790081,0.95898432 z M4.0779959,0 L5.209006,0 9.304,11 8.3170024,11 7.2039977,8.0019836 2.1150171,8.0029907 1.0100081,11 0,11 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" Stretch="Fill" />
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:RibbonBar.IconTemplate>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+ </syncfusion:RibbonWindow>
+
+ {% endhighlight %}
+
+ {% highlight C# %}
+
+ Ribbon ribbon = new Ribbon();
+ ribbon.VerticalAlignment = VerticalAlignment.Top;
+ // Creating new tabs
+ RibbonTab homeTab = new RibbonTab();
+ homeTab.Caption = "Home";
+ homeTab.IsChecked = true;
+ 
+ // Creating new bar
+ RibbonBar clipboardBar = new RibbonBar();
+ clipboardBar.Header = "Clipboard";
+ 
+ DataTemplate iconDataTemplate = new DataTemplate();
+ FrameworkElementFactory gridElement = new FrameworkElementFactory(typeof(Grid));
+ FrameworkElementFactory pathElement1 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement2 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement3 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement4 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory pathElement5 = new FrameworkElementFactory(typeof(Path));
+ 
+ gridElement.SetValue(Grid.WidthProperty, (double)14);
+ gridElement.SetValue(Grid.HeightProperty, (double)16);
+ pathElement1.SetValue(Path.DataProperty, Geometry.Parse("F1M122,367L127,367L127,360L122,360z M128,368L121,368L121,359L128,359z"));
+ pathElement1.SetValue(Path.MarginProperty, new Thickness(0, 7, 0, 0));
+ pathElement1.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(58, 58, 56)));
+ pathElement1.SetValue(Path.StretchProperty, Stretch.Fill);
+ pathElement1.SetValue(Path.WidthProperty, (double)7);
+ pathElement1.SetValue(Path.HorizontalAlignmentProperty, HorizontalAlignment.Right);
+ 
+ pathElement2.SetValue(Path.DataProperty, Geometry.Parse("M0,0 L12,0 12,4 11,4 11,0.99999994 1.0000002,0.99999994 1.0000002,13 6.0000001,13 6.0000001,14 0,14 z"));
+ pathElement2.SetValue(Path.MarginProperty, new Thickness(0, 2, 2, 0));
+ pathElement2.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(222, 108, 0)));
+ pathElement2.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ pathElement3.SetValue(Path.DataProperty, Geometry.Parse("M0,0 L10,0 10,3 9.0000001,3 9.0000001,0.99999994 1.0000001,0.99999994 1.0000001,1.5829999 1.0000001,2.5 1.0000001,11 5.0000001,11 5.0000001,12 0,12 z"));
+ pathElement3.SetValue(Path.MarginProperty, new Thickness(1, 3, 3, 1));
+ pathElement3.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(248, 219, 143)));
+ pathElement3.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ pathElement4.SetValue(Path.DataProperty, Geometry.Parse("M5.9873815,7.496151 L11.006,7.496151 11.006,14.516999 5.9873815,14.516999 z M0,5.4959998 L3.9880071,5.4964137 3.9880071,13.51695 0,13.51695 z M3.9889999,2.2337155E-15 C4.8170028,-4.4703477E-08 5.4889999,0.67098993 5.4889999,1.5 L5.4889999,2 7.4889999,2 7.4889999,5 0.4889999,5 0.4889999,2 2.4889999,2 2.4889999,1.5 C2.4889999,0.67098993 3.1609969,-4.4703477E-08 3.9889999,2.23
+ pathElement4.SetValue(Path.MarginProperty, new Thickness(2.011, 0.5, 0.983, 0.983));
+ pathElement4.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(250, 250, 250)));
+ pathElement4.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ pathElement5.SetValue(Path.DataProperty, Geometry.Parse("M4,1 C3.447998,1 3,1.4490051 3,2 L3,3 1,3 1,5 7,5 7,3 5,3 5,2 C5,1.4490051 4.552002,1 4,1 z M4,0 C5.1029968,0 6,0.89700317 6,2 L8,2 8,6 0,6 0,2 2,2 C2,0.89700317 2.8970032,0 4,0 z"));
+ pathElement5.SetValue(Path.MarginProperty, new Thickness(2, 0, 4, 0));
+ pathElement5.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(121, 119, 116)));
+ pathElement5.SetValue(Path.StretchProperty, Stretch.Fill);
+ pathElement5.SetValue(Path.HeightProperty, (double)6);
+ pathElement5.SetValue(Path.VerticalAlignmentProperty, VerticalAlignment.Top);
+ gridElement.AppendChild(pathElement1);
+ gridElement.AppendChild(pathElement2);
+ gridElement.AppendChild(pathElement3);
+ gridElement.AppendChild(pathElement4);
+ gridElement.AppendChild(pathElement5);
+ iconDataTemplate.VisualTree = gridElement;
+ clipboardBar.IconTemplate = iconDataTemplate;
+ 
+ RibbonBar fontBar = new RibbonBar();
+ fontBar.Header = "Font";
+ 
+ DataTemplate iconDataTemplate2 = new DataTemplate();
+ FrameworkElementFactory gridElement2 = new FrameworkElementFactory(typeof(Grid));
+ FrameworkElementFactory fontElement1 = new FrameworkElementFactory(typeof(Path));
+ FrameworkElementFactory fontElement2 = new FrameworkElementFactory(typeof(Path));
+ 
+ fontElement1.SetValue(Path.DataProperty, Geometry.Parse("M0,0 L16,0 16,4 0,4 z"));
+ fontElement1.SetValue(Path.FillProperty, new SolidColorBrush(Color.FromRgb(254, 0, 0)));
+ fontElement1.SetValue(Path.StretchProperty, Stretch.Fill);
+ fontElement1.SetValue(Path.HeightProperty, (double)4);
+ fontElement1.SetValue(Path.VerticalAlignmentProperty, VerticalAlignment.Bottom);
+ fontElement2.SetValue(Path.DataProperty, Geometry.Parse("M4.6480023,0.95898432 C4.6079937,1.0870056 4.5689923,1.2149963 4.533012,1.34198 4.4980089,1.4909973 4.4510118,1.6419983 4.394005,1.7949829 L2.5330156,6.8809814 6.787006,6.8809814 4.9330055,1.7799988 C4.8510047,1.5699768 4.7659832,1.2969971 4.6790081,0.95898432 z M4.0779959,0 L5.209006,0 9.304,11 8.3170024,11 7.2039977,8.0019836 2.1150171,8.0029907 1.0100081,11 0,11 z"));
+ fontElement2.SetValue(Path.MarginProperty, new Thickness(3.344, 0, 3.352, 5));
+ fontElement2.SetValue(Path.FillProperty, new SolidColorBrush(Colors.Black));
+ fontElement2.SetValue(Path.StretchProperty, Stretch.Fill);
+ 
+ gridElement2.AppendChild(fontElement1);
+ gridElement2.AppendChild(fontElement2);
+ 
+ iconDataTemplate2.VisualTree = gridElement2;
+ clipboardBar.IconTemplate = iconDataTemplate2;
+ 
+ // Adding bars to the tabs
+ homeTab.Items.Add(clipboardBar);
+ homeTab.Items.Add(fontBar);
+ 
+ // Adding tabs to ribbon
+ ribbon.Items.Add(homeTab);
+ grid.Children.Add(ribbon);
+ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Image set for RibbonBar using IconTemplate](RibbonResizeWindow-images/RibbonBar_IconTemplate.png)
+
+### Setting image path
+
+ The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) allows to set the image for the dropdown button using its [`CollapseImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_CollapseImage) property. The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) displays the image in 16 * 16 size.
+
+
+ {% tabs %}
+
+ {% highlight XAML %}
+
+ <syncfusion:RibbonWindow x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <syncfusion:Ribbon VerticalAlignment="Top">
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar Header="Clipboard" CollapseImage="Resources/Paste16.png"/>
+                <syncfusion:RibbonBar Header="Font" CollapseImage="Resources/FontColor.png"/>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+ </syncfusion:RibbonWindow>
+
+ {% endhighlight %}
+
+ {% highlight C# %}
+
+ Ribbon ribbon = new Ribbon();
+ ribbon.VerticalAlignment = VerticalAlignment.Top;
+ // Creating new tabs
+ RibbonTab homeTab = new RibbonTab();
+ homeTab.Caption = "Home";
+ homeTab.IsChecked = true;
+ 
+ // Creating new bar
+ RibbonBar clipboardBar = new RibbonBar();
+ clipboardBar.Header = "Clipboard";
+ clipboardBar.CollapseImage = new BitmapImage(new Uri(@"/Resources/Paste16.png", UriKind.RelativeOrAbsolute));
+ 
+ RibbonBar fontBar = new RibbonBar();
+ fontBar.Header = "Font";
+ fontBar.CollapseImage = new BitmapImage(new Uri(@"/Resources/FontColor.png", UriKind.RelativeOrAbsolute));
+ 
+ // Adding bars to the tabs
+ homeTab.Items.Add(clipboardBar);
+ homeTab.Items.Add(fontBar);
+ 
+ // Adding tabs to ribbon
+ ribbon.Items.Add(homeTab);
+ grid.Children.Add(ribbon);
+ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
+ ![Resize Ribbon Window](RibbonResizeWindow-images/RibbonBar_CollapseImage.png)
 
 ## Grouping RibbonTabs using ContextTabGroups
 
