@@ -126,7 +126,7 @@ The following table contains various representation of sequence flows.
 Message flows are how the two separately controlled processes communicate and collaborate with one another.  An activity or event in one pool can initiate a message to another pool.  Message Flows are depicted as lines with an empty circle showing where the message originates and and empty arrowhead where the message terminates.e. To create a [MessageFlow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnFlowType.html#fields#MessageFlow), the [FlowType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnFlowViewModel_FlowType) property of the [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) should be set to **MessageFlow**. The types of message are as follows:
 
 * InitiatingMessageFlow - An activity or event in one pool can initiate a message to another pool.
-* NonInitiatingMessageFlow - An activity or event in one pool cann't initiate a message to another pool.
+* NonInitiatingMessageFlow - An activity or event in one pool can not initiate a message to another pool.
 * MessageFlow - A MessageFlow flow shows the flow of messages between two participants and is represented by line.
 
 The message property allows you to define the type of message. The following code example explains how to define a message flow.
