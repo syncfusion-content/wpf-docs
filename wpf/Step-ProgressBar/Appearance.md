@@ -11,7 +11,7 @@ documentation: ug
 You can highly customize the appearance of the Step progress bar in the following ways.
 
 ## Step Shape
-You can change the shape of a step marker using the [MarkerShapeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MarkerShapeType) property. The default value of this property is `Circle.`
+You can change the shape of a step marker by using the [MarkerShapeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MarkerShapeType) property. The default value of this property is `Circle.`
 
 {% tabs %}
 {% highlight XAML %}
@@ -51,7 +51,7 @@ grid.Children.Add(stepProgressBar);
 ![Marker shape type image](Appearance_images/MarkerShapeType.png)
 
 ## Orientation
-You can change the shape of a step marker using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is `Horizontal.`
+You can change the orientation of step view items by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is `Horizontal.`
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
@@ -95,7 +95,7 @@ You can customize the color and thickness of the Step progressbar using the foll
 
 •[ConnectorColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorColor): Represents the color of the connector for inactive state.
 
-•[ConnectorThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorThickness): Represents the thickness of connector line that connecting neighboring SteViewItems.
+•[ConnectorThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ConnectorThickness): Represents the thickness of connector line that connecting neighboring step view items.
 
 {% tabs %}
 {% highlight XAML %}      
