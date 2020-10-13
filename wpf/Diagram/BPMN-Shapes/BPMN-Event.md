@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN Event | Syncfusion 
-description: How the Event is notated with a circle and it represents an event in a business process and how to customize their appearance?
+title: Visualize graphical object using the BPMN Event | Syncfusion 
+description: How the event is notated with a circle and it represents an event in a business process and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 # BPMN event and its customization
 
 An [`Event`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Event) is a common BPMN process model element that represents something happens during a business process and its is notated with a circle.
-The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of BPMNNodeViewModel allows you to set the type of event that occurred during the process. The default event type is none.
+The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventType) property of the BPMNNodeViewModel allows you to set the type of event that occurred during the process. The default event type is None.
  The type of events are as follows:
 
-    * Start - Occurs at the beginning of the process and every business process starts with an event.
-    * Intermediate - Occurs in the middle of the process.
-    * End - Occurs at the end of the process and every business process ends with an event.
+    * Start: Occurs at the beginning of the process and every business process starts with an event.
+    * Intermediate: Occurs in the middle of the process.
+    * End: Occurs at the end of the process and every business process ends with an event.
 
 The following code example explains how to create a BPMN event.
 
@@ -36,10 +36,10 @@ The following code example explains how to create a BPMN event.
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
-//Initialize the BpmnNodeViewModel
+//Initialize the BpmnNodeViewModel.
 BpmnNodeViewModel node = new BpmnNodeViewModel()
 {
   OffsetX = 100,
@@ -50,7 +50,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
   EventType = EventType.Start,
 };
 
-// Add the node into Node's collection
+// Add the node into the Node's collection.
 (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
@@ -60,7 +60,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ## BPMN event trigger
 
-Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [EventTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the `BpmnNodeViewModel` allows you to set the type of trigger and by default, it is set to None. The following code example explains how to create a BPMN trigger.
+The event triggers are notated as icons inside the circle and they represent the specific details of the process. The [EventTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the `BpmnNodeViewModel` allows you to set the type of trigger. By default, it is set to None. The following code example explains how to create a BPMN trigger.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,10 +80,10 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
-//Initialize the BpmnNodeViewModel
+//Initialize the BpmnNodeViewModel.
 BpmnNodeViewModel node = new BpmnNodeViewModel()
 {
   OffsetX = 100,
@@ -95,7 +95,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
   EventTrigger = EventTrigger.Message
 };
 
-// Add the node into Node's collection
+// Add the node into the Node's collection.
 (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}
@@ -103,7 +103,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ![Create Event and Trigger](BPMN-Shapes-Images/Message1.png)
 
-The following table illustrates the type of event triggers.
+The following table shows the type of event triggers.
 
 | Event / Trigger | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |

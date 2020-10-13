@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN shapes with Palette | Syncfusion
+title: Visualize graphical object using the BPMN shapes with Palette | Syncfusion
 description: How to add the BPMN shapes to the stencil and drag and drop them over the drawing area and its interaction?
 platform: wpf
 control: SfDiagram
@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # BPMN items in Stencil
-  Diagram provides support to add BPMN shapes to Stencil. 
+  Diagram provides the support to add BPMN shapes to Stencil. 
 
 ## Add BPMN shapes into stencil
 
-BPMN Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed.
+BPMN Nodes can be predefined and added to the stencil and can be dropped into the diagram when needed.
 
 The following code sample shows how to add the BPMN shapes to palette.
 
@@ -56,14 +56,14 @@ You can add the BPMN shapes using the category. For more information, refer to t
 
 ## Interactions
 
-* drag and drop support for BPMN shapes have been provided.
-* When you drag and drop the BPMN shape, if the diagram already contains BPMNGroup/ Expanded subprocess, the element will be added and stacked inside a BPMN based on the order. 
+* Drag and drop support for BPMN shapes have been provided.
+* When you drag and drop the BPMN shape, if the diagram already contains BPMNGroup or Expanded subprocess, the element will be added and stacked inside a BPMN based on the order. 
 
 The following image shows how to drag symbol from palette.
 
 ![Drag Symbol from Palette](BPMN-Shapes-Images/Symbol_palette.gif)
 
-## How to Create Swimlane objects in BPMN.
+## How to create Swimlane objects in BPMN.
 
 The following code sample shows how to add the BPMN shapes to palette.
 

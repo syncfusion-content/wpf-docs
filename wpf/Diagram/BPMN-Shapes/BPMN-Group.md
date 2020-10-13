@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN Group | Syncfusion 
-description: A group is used to frame a part of the diagram, shows that elements included in it are logically belong together.
+title: Visualize graphical object using the BPMN Group | Syncfusion 
+description: A group is used to frame a part of the diagram, shows that the elements included in it are logically belong together.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -34,10 +34,10 @@ The following code example explains how to create a BPMN group.
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -45,7 +45,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   UnitWidth = 300,
   UnitHeight = 250,
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -55,7 +55,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add BPMNNode into BPMNGroup by Programmatically
 
-To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the BpmnNodeViewModel object and add that to nodes collection of the BPMNGroup.
+To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into the BPMNGroup, you have to define the BpmnNodeViewModel object and add that to the nodes collection of the BPMNGroup.
 
 The following code example explains how to create a BPMN group.
 
@@ -87,10 +87,10 @@ The following code example explains how to create a BPMN group.
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -98,7 +98,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   UnitWidth = 300,
   UnitHeight = 300,
  };
- //Initialize the BpmnNodeViewModel
+ //Initialize the BpmnNodeViewModel.
  BpmnNodeViewModel node1 = new BpmnNodeViewModel()
  {
     OffsetX = 220,
@@ -107,7 +107,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
     UnitHeight = 70,
     Type = BpmnShapeType.Activity,
  };
- //Initialize the BpmnNodeViewModel
+ //Initialize the BpmnNodeViewModel.
  BpmnNodeViewModel node2 = new BpmnNodeViewModel()
  {
     OffsetX = 380,
@@ -116,19 +116,19 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
     UnitHeight = 70,
     Type = BpmnShapeType.Activity,
  };
- //Initialize the BpmnFlowViewModel
+ //Initialize the BpmnFlowViewModel.
  BpmnFlowViewModel flow = new BpmnFlowViewModel()
  {
     SourceNode = node1,
     TargetNode = node2,
  };
- // Add the node into Node's collection
+ // Add the node into the Node's collection.
 (group.Nodes as NodeCollection).Add(node1);
-// Add the node into Node's collection
+// Add the node into the Node's collection.
 (group.Nodes as NodeCollection).Add(node2);
-// Add the connector into Connector's collection
+// Add the connector into the Connector's collection.
 (group.Connectors as ConnectorCollection).Add(flow);
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -138,16 +138,16 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add Group from stencil
 
-Groups can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
+Groups can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding the nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
 
 ## Add BPMN Nodes/Groups into BPMNGroup at runtime
-we can add BPMN Nodes/Groups into BPMNGroup at runtime in two ways.
+You can add the BPMN Nodes or Groups into BPMNGroup at runtime in two ways.
 
   1. Drag and drop the BPMN Nodes or Groups from stencil to BPMN Group 
   2. Drag and drop the BPMN Nodes or Groups from diagram to BPMN Group.
 
- * While resize/drag the child Node, if the child node bounds with in the group bounds, the group size will be updated along with that.
+ * While resize or drag the child Node, if the child node bounds within the group bounds, the group size will be updated along with that.
 
- The following image shows how to add BPMNNode into BPMNGroup at runtime.
+ The following image shows how to add BPMNNode into the BPMNGroup at runtime.
 
 ![BPMNGroup from diagram](BPMN-Shapes-Images/BPMN-GroupElement.gif)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualize graphical object using BPMN DataStore | Syncfusion 
-description: How the DataStore is used to store or access data associated with a business process and how to customize their appearance?
+description: How the DataStore is used to store or access the data associated with a business process and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # BPMN DataStore and its customization
 
-DataStore is used to store or access data associated with a business process. To create a [DataStore](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataStore), set the Type property of the `BpmnNodeViewModel` should be set to **DataStore**. The following code example explains how to create a DataStore.
+DataStore is used to store or access the data associated with a business process. To create a [DataStore](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataStore), set the Type property of the `BpmnNodeViewModel` should be set to **DataStore**. The following code example explains how to create a DataStore.
 
 {% tabs %}
 {% highlight xaml %}
@@ -29,10 +29,10 @@ DataStore is used to store or access data associated with a business process. To
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
-//Initialize the BpmnNodeViewModel
+//Initialize the BpmnNodeViewModel.
 BpmnNodeViewModel node = new BpmnNodeViewModel()
 {
   OffsetX = 100,
@@ -42,7 +42,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
   Type = BpmnShapeType.DataStore,
 };
 
-// Add the node into Node's collection
+// Add the node into the Node's collection.
 (Diagram.Nodes as NodeCollection).Add(node);
 
 {% endhighlight %}

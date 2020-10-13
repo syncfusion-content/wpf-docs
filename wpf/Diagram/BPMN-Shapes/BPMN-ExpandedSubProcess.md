@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN ExpandedSubProcess | Syncfusion 
+title: Visualize graphical object using the BPMN ExpandedSubProcess | Syncfusion 
 description: A ExpandedSubProcess is used to frame a part of the diagram, shows that elements included in it are logically belong together.
 platform: wpf
 control: SfDiagram
@@ -15,7 +15,7 @@ ExpandedSubProcess is the extended version of Group.
 
 ## Create BPMN ExpandedSubProcess
 
-To create a ExpandedSubProcess, you have to define the BpmnGroupViewModel object and enable the [IsExpandedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsExpandedSubProcess) property and add that to groups collection of the Diagram .
+To create a ExpandedSubProcess, you have to define the BpmnGroupViewModel object and enable the [IsExpandedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsExpandedSubProcess) property and add that to the groups collection of the diagram .
 
 The following code example explains how to create a BPMN group.
 
@@ -41,10 +41,10 @@ The following code example explains how to create a BPMN group.
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -53,7 +53,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   UnitHeight = 250,
   IsExpandedSubProcess = true
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -63,7 +63,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add BPMNNode into BPMNGroup
 
-To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the BpmnNodeViewModel object and add that to nodes collection of the BPMNGroup.
+To add a [BpmnNodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html) into BPMNGroup, you have to define the BpmnNodeViewModel object and add that to the nodes collection of the BPMNGroup.
 
 The following code example explains how to create a BPMN group.
 
@@ -101,10 +101,10 @@ The following code example explains how to create a BPMN group.
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -113,7 +113,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   UnitHeight = 300,
   IsExpandedSubProcess = true
  };
- //Initialize the BpmnNodeViewModel
+ //Initialize the BpmnNodeViewModel.
  BpmnNodeViewModel node1 = new BpmnNodeViewModel()
  {
     OffsetX = 220,
@@ -122,7 +122,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
     UnitHeight = 70,
     Type = BpmnShapeType.Activity,
  };
- //Initialize the BpmnNodeViewModel
+ //Initialize the BpmnNodeViewModel.
  BpmnNodeViewModel node2 = new BpmnNodeViewModel()
  {
     OffsetX = 380,
@@ -131,19 +131,19 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
     UnitHeight = 70,
     Type = BpmnShapeType.Activity,
  };
- //Initialize the BpmnFlowViewModel
+ //Initialize the BpmnFlowViewModel.
  BpmnFlowViewModel flow = new BpmnFlowViewModel()
  {
     SourceNode = node1,
     TargetNode = node2,
  };
- // Add the node into Node's collection
+ // Add the node into the Node's collection.
 (group.Nodes as NodeCollection).Add(node1);
-// Add the node into Node's collection
+// Add the node into the Node's collection.
 (group.Nodes as NodeCollection).Add(node2);
-// Add the connector into Connector's collection
+// Add the connector into the Connector's collection.
 (group.Connectors as ConnectorCollection).Add(flow);
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -153,16 +153,16 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ## Add ExpandedSubProcess from stencil
 
-ExpandedSubProcess can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
+The ExpandedSubProcess can be predefined and added to the stencil and can be dropped into the diagram when needed. For more information about adding nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
 
 ## Add BPMN Nodes/Groups into BPMN ExpandedSubProcess at runtime
-we can add BPMN Nodes/Groups into BPMN ExpandedSubProcess at runtime in two ways.
- 1. Drag and drop the BPMN Nodes or Groups from stencil to BPMN ExpandedSubProcess.
- 2. Drag and drop the BPMN Nodes or Groups from diagram to BPMN ExpandedSubProcess.
+You can add BPMN Nodes or Groups into the BPMN ExpandedSubProcess at runtime in two ways.
+ 1. Drag and drop the BPMN Nodes or Groups from stencil to the BPMN ExpandedSubProcess.
+ 2. Drag and drop the BPMN Nodes or Groups from diagram to the BPMN ExpandedSubProcess.
 
- * While resize/drag the child element, if the child element bounds with in the ExpandedSubProcess bounds, the ExpandedSubProcess size will be updated along with that.
+ * While resizing or dragging the child element, if the child element bounds with in the ExpandedSubProcess bounds, the ExpandedSubProcess size will be updated along with that.
 
- The following image shows how to add BPMNNode into BPMN ExpandedSubProcess at runtime.
+ The following image shows how to add BPMNNode into the BPMN ExpandedSubProcess at runtime.
 
 ![BPMN ExpandedSubProcess from diagram](BPMN-Shapes-Images/BPMN-ExpandedSubprocess.gif)
 
@@ -172,9 +172,9 @@ A Sub-process is a group of tasks that is used to hide or reveal details of addi
 
 ### Loop
 
-[`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of BpmnGroupViewModel allows you to define the type of loop. The default value for `LoopActivity` is **None**.
+The [`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of BpmnGroupViewModel allows you to define the type of loop. The default value for `LoopActivity` is **None**.
 
-You can define the loop property in subprocess BPMN shape as shown in the following code.
+You can define the loop property in the subprocess BPMN shape as shown in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -198,10 +198,10 @@ You can define the loop property in subprocess BPMN shape as shown in the follow
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -211,7 +211,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true,
   LoopActivity = LoopCharacteristic.Standard
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -219,7 +219,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ![BPMN Group](BPMN-Shapes-Images/Group-Loop-Standard.png)
 
-The following table contains various types of BPMN loops.
+The following table contains various types of the BPMN loops.
 
 | Loops | Task | Description |
 | -------- | -------- | -------- |
@@ -232,7 +232,7 @@ The following table contains various types of BPMN loops.
 
 Compensation is triggered when the operation is partially failed. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsCompensationActivity) property of the BPMNGroupViewModel.
 
->Note: By default, IsCompensationActivity property is false.
+>Note: By default, the IsCompensationActivity property is False.
 
 {% tabs %}
 {% highlight xaml %}
@@ -256,10 +256,10 @@ Compensation is triggered when the operation is partially failed. To create a Co
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -269,7 +269,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true,
   IsCompensationActivity = true
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -280,9 +280,9 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ### Ad-Hoc
 
-An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition.To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsAdhocActivity) property of the BpmnGroupViewModel.
+An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsAdhocActivity) property of the BpmnGroupViewModel.
 
->Note: By default, IsAdhocActivity property is false.
+>Note: By default, the IsAdhocActivity property is False.
 
 {% tabs %}
 {% highlight xaml %}
@@ -306,10 +306,10 @@ An ad-hoc subprocess is a group of tasks that are executed in any order or skipp
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -319,7 +319,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true,
   IsAdhocActivity = true
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -329,7 +329,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ### SubProcessType
 
-SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of BpmnGroupViewModel allows you to define the type of SubProcess. By default, it is set to **Default**.
+SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of the BpmnGroupViewModel allows you to define the type of SubProcess. By default, it is set to **Default**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -353,10 +353,10 @@ SubProcessType represents the type of task that is being processed. The [`SubPro
 
 {% highlight c# %}
 
-//Initialize the diagram
+//Initialize the diagram.
 SfDiagram diagram = new SfDiagram();
 
- //Initialize the BpmnGroupViewModel
+ //Initialize the BpmnGroupViewModel.
 BpmnGroupViewModel group = new BpmnGroupViewModel()
 {
   OffsetX = 300,
@@ -366,7 +366,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
   IsExpandedSubProcess = true,
   SubProcessType = SubProcessType.Event
  };
- // Add the group into Group's collection
+ // Add the group into the Group's collection.
 (Diagram.Groups as GroupCollection).Add(group);
 
 {% endhighlight %}
@@ -374,7 +374,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ![BPMN Group](BPMN-Shapes-Images/Group-SubProcessType-Event.png)
 
-The following table contains various types of BPMN SubProcess.
+The following table contains various types of the BPMN SubProcess.
 
 | SubProcessType | Symbol | Description |
 | -------- | -------- | -------- |
