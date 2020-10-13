@@ -115,7 +115,7 @@ sfTreeView.ItemEndEdit += TreeView_ItemEndEdit;
 
 private void TreeView_ItemEndEdit(object sender, TreeViewItemEndEditEventArgs e)
 {
-	if (e.Node.Content == "Balnc")
+	if (e.Node.Content == "Cereals")
 		e.Cancel = true;
 }
 {% endhighlight %}
