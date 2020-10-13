@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing Data Templates
 
-Data templates can be customized for the items and content. The next sections explain how to customize the data templates.
+Data templates can be customized for the step markers and step content . The next sections explain how to customize the data templates.
 
 ## Item Template
 
-You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to use the ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of an item template is assigned to the image path where it has been modified for a customized look and the content always same for the entire `StepViewItem`.
+You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to customize the step view item content with DataTemplate.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ Implementing the above code will create the following Step ProgressBar control.
 
 ## Item Template Selector
 
-Using the ItemTemplateSelector, you can use the different templates for items depending on the specific constraints. The following example shows this.
+Using the ItemTemplateSelector, you can use the different templates for step content depends on step view item status. The following example shows this.
 
 1. Create the template selector in the code.
 
@@ -154,7 +154,7 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgre
 
 ## Marker Template Selector
 
-With the MarkerTemplateSelector, you can use the different templates for the StepViewItem appearance depending on specific constraints. The following example shows this.
+With the MarkerTemplateSelector, you can use the different templates for step marker depends on the step view item status. The following example shows this.
 
 1. Create the template selector in the code as follows.
 
