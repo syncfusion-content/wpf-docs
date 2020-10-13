@@ -11,7 +11,7 @@ documentation: ug
 You can customize the status of the StepView item in the following ways.
 
 ## SelectedIndex
-You can change the index of the last active (selected) item where items before this index will move to the active status. using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedIndex) property. 
+You can change the index of the last active (selected) item where items before this index will move to the active status by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedIndex) property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -50,7 +50,7 @@ grid.Children.Add(stepProgressBar);
 ![Selected index image](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
 
 ## SelectedItemStatus
-You can change the status of step view item using the [SelectedItemStatus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemStatus) property. The default value of this property is `Inactive.`
+You can change the status of last active (selected) step view item by using the [SelectedItemStatus](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemStatus) property. The default value of this property is `Inactive.`
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
@@ -88,7 +88,7 @@ grid.Children.Add(stepProgressBar);
 ![Selected item status image](Appearance_images/SelectedItemStatus.png)
 
 ## SelectedItemProgress
-You can change the progress value of the StepViewItem using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemProgress) property. The default value of this property is `100.`
+You can change the progress value of the last active (selected) step view item by using the [SelectedItemProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedItemProgress) property. The default value of this property is `100.`
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
@@ -128,7 +128,7 @@ grid.Children.Add(stepProgressBar);
 ![Selected item progress image](Appearance_images/SelectedItemProgress.png)
 
 ## AnimationDuration
-You can change the the duration for completing the animation status of step view item using the [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_AnimationDurationProperty) property. The default value of this property is `1000ms.`
+You can change the the duration for completing the animation status of step view item by using the [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_AnimationDurationProperty) property. The default value of this property is `1000ms.`
 
 {% tabs %}
 {% highlight XAML %}
