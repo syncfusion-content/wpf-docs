@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN ExpandedSubProcess | Syncfusion 
+title: Visualize graphical object using BPMN ExpandedSubProcess | Syncfusion 
 description: A ExpandedSubProcess is used to frame a part of the diagram, shows that elements included in it are logically belong together.
 platform: wpf
 control: SfDiagram

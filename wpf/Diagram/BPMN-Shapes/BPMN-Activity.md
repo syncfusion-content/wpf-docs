@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visualize graphical object using `FlowType` BPMNNode Activity | Syncfusion 
+title: Visualize graphical object using BPMNNode Activity | Syncfusion 
 description: BPMNNode Activity is a task that is performed in a business process and shows how to customize their appearance.
 platform: wpf
 control: SfDiagram
