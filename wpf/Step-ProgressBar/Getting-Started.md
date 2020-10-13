@@ -45,14 +45,14 @@ To add control manually in the XAML, follow the given steps:
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="StepProgressBar.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-     <Grid x:Name="grid">
-        <Syncfusion:SfStepProgressBar SelectedIndex="3">
-        <Syncfusion:StepViewItem Content="Ordered" />
-        <Syncfusion:StepViewItem Content="Shipped" />
-        <Syncfusion:StepViewItem Content="Packed" />
-        <Syncfusion:StepViewItem Content="Delivered" />
-        </Syncfusion:SfStepProgressBar>       
-     </Grid>
+        <Grid x:Name="grid">
+            <Syncfusion:SfStepProgressBar SelectedIndex="3">
+                <Syncfusion:StepViewItem Content="Ordered" />
+                <Syncfusion:StepViewItem Content="Shipped" />
+                <Syncfusion:StepViewItem Content="Packed" />
+                <Syncfusion:StepViewItem Content="Delivered" />
+            </Syncfusion:SfStepProgressBar>       
+        </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
@@ -106,3 +106,5 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/GettingStarted).
