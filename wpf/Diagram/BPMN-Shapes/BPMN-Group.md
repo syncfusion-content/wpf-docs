@@ -9,7 +9,8 @@ documentation: ug
 
 # BPMN Group and its customization
 
-A group is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. 
+Groups organize tasks or processes that have significance in the overall process.
+A group may control the flow of a process and describe shared goals. A group is denoted by dashes and dots.
 
 ## Create BPMN Group
 
@@ -139,8 +140,11 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 Groups can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
 
-## Add BPMNNode into BPMNGroup at runtime
-we can add BPMNNode into BPMNGroup at runtime by drag and drop the BPMNNode from stencil to BPMN Group and drag and drop the BPMNNode from diagram to BPMN Group.
+## Add BPMN Nodes/Groups into BPMNGroup at runtime
+we can add BPMN Nodes/Groups into BPMNGroup at runtime in two ways.
+
+  1. Drag and drop the BPMN Nodes or Groups from stencil to BPMN Group 
+  2. Drag and drop the BPMN Nodes or Groups from diagram to BPMN Group.
 
  * While resize/drag the child Node, if the child node bounds with in the group bounds, the group size will be updated along with that.
 

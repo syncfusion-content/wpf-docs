@@ -9,7 +9,7 @@ documentation: ug
 
 # BPMN ExpandedSubProcess and its customization
 
-A ExpandedSubProcess is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. 
+A ExpandedSubProcess is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. It is represented by a rounded rectangle.
 
 ExpandedSubProcess is the extended version of Group.
 
@@ -155,10 +155,12 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ExpandedSubProcess can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil") and [BPMN-Shapes-Palette](/wpf/sfdiagram/BPMN-Shapes/BPMN-Shapes-Palette "BPMN-Shapes-Palette").
 
-## Add BPMNNode into BPMN ExpandedSubProcess at runtime
-we can add BPMNNode into BPMN ExpandedSubProcess at runtime by drag and drop the BPMNNode from stencil to BPMN ExpandedSubProcess and drag and drop the BPMNNode from diagram to BPMN ExpandedSubProcess.
+## Add BPMN Nodes/Groups into BPMN ExpandedSubProcess at runtime
+we can add BPMN Nodes/Groups into BPMN ExpandedSubProcess at runtime in two ways.
+ 1. Drag and drop the BPMN Nodes or Groups from stencil to BPMN ExpandedSubProcess.
+ 2. Drag and drop the BPMN Nodes or Groups from diagram to BPMN ExpandedSubProcess.
 
- * While resize/drag the child Node, if the child node bounds with in the ExpandedSubProcess bounds, the ExpandedSubProcess size will be updated along with that.
+ * While resize/drag the child element, if the child element bounds with in the ExpandedSubProcess bounds, the ExpandedSubProcess size will be updated along with that.
 
  The following image shows how to add BPMNNode into BPMN ExpandedSubProcess at runtime.
 
@@ -170,7 +172,8 @@ A Sub-process is a group of tasks that is used to hide or reveal details of addi
 
 ### Loop
 
-[`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `LoopActivity` is **None**.
+[`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of BpmnGroupViewModel allows you to define the type of loop. The default value for `LoopActivity` is **None**.
+
 You can define the loop property in subprocess BPMN shape as shown in the following code.
 
 {% tabs %}
@@ -218,16 +221,16 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 The following table contains various types of BPMN loops.
 
-| Loops | Task |
-| -------- | -------- |
-| None | ![None Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-None.png)  | 
-| Standard | ![Standard Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-Standard.png)  | 
-| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-SequenceMultiInstance.png) |  
-| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](BPMN-Shapes-Images/Group-Loop-ParallelMultiInstance.png) |
+| Loops | Task | Description |
+| -------- | -------- | -------- |
+| None | ![None Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-None.png)| None of the shape shows in the sub-process | 
+| Standard | ![Standard Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-Standard.png)  | Loop marker indicates that the sub-process repeats itself in sequence|
+| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](BPMN-Shapes-Images/Group-Loop-SequenceMultiInstance.png) |Multi-Instance marker indicates that the sub-process can run with other identical sub-processes simultaneously.Three horizontal lines indicate sequential execution|  
+| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](BPMN-Shapes-Images/Group-Loop-ParallelMultiInstance.png) |Multi-Instance marker indicates that the sub-process can run with other identical sub-processes simultaneously.Three vertical lines indicate that the instances will be executed in parallel|
 
 ### Compensation
 
-Compensation is triggered when the operation is partially failed and enabled it with the compensation property of the task and the subprocess. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsCompensationActivity) property of the BPMNGroupViewModel.
+Compensation is triggered when the operation is partially failed. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsCompensationActivity) property of the BPMNGroupViewModel.
 
 >Note: By default, IsCompensationActivity property is false.
 
@@ -277,7 +280,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ### Ad-Hoc
 
-An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and set it with the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsAdhocActivity) property of subprocess.
+An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition.To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_IsAdhocActivity) property of the BpmnGroupViewModel.
 
 >Note: By default, IsAdhocActivity property is false.
 
@@ -326,7 +329,7 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ### SubProcessType
 
-SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of subprocess allows you to define the type of boundary. By default, it is set to **Default**.
+SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnGroupViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnGroupViewModel_SubProcessType) property of BpmnGroupViewModel allows you to define the type of SubProcess. By default, it is set to **Default**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -371,11 +374,11 @@ BpmnGroupViewModel group = new BpmnGroupViewModel()
 
 ![BPMN Group](BPMN-Shapes-Images/Group-SubProcessType-Event.png)
 
-The following table contains various types of BPMN boundaries.
+The following table contains various types of BPMN SubProcess.
 
-| SubProcessType | Image |
-| -------- | -------- |
-| Call | ![Call Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Call.png) |
-| Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Event.png) |
-| Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/Group-Loop-None.png) |
-| Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Transaction.png) |
+| SubProcessType | Symbol | Description |
+| -------- | -------- | -------- |
+| Call | ![Call Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Call.png) |It is a global sub-process that is reused at various points in the business flow|
+| Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Event.png) |The event subprocess is a subprocess that is triggered by an event. An event subprocess can be added at the process level or at any subprocess level|
+| Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/Group-Loop-None.png) |The task that is performed in a business process. It is represented by a rounded rectangle|
+| Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/Group-SubProcessType-Transaction.png) |It is a specialized sub-process that involves payment|

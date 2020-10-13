@@ -18,7 +18,7 @@ The following code sample shows how to add the BPMN shapes to palette.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:Stencil x:Name="stencil"                             BorderThickness="0,0,1,0" ExpandMode="All">
+ <syncfusion:Stencil x:Name="stencil"  BorderThickness="0,0,1,0" ExpandMode="All">
      <syncfusion:Stencil.SymbolSource>
          <syncfusion:SymbolCollection>
          <syncfusion:BpmnNodeViewModel Key="BPMN Shapes" UnitHeight="100" UnitWidth="100" Type="Activity" ActivityType="Task"></syncfusion:BpmnNodeViewModel>
@@ -56,7 +56,7 @@ You can add the BPMN shapes using the category. For more information, refer to t
 
 ## Interactions
 
-* The drag and drop support for BPMN shapes have been provided.
+* drag and drop support for BPMN shapes have been provided.
 * When you drag and drop the BPMN shape, if the diagram already contains BPMNGroup/ Expanded subprocess, the element will be added and stacked inside a BPMN based on the order. 
 
 The following image shows how to drag symbol from palette.
@@ -69,7 +69,7 @@ The following code sample shows how to add the BPMN shapes to palette.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:Stencil x:Name="stencil"                             BorderThickness="0,0,1,0" ExpandMode="All">
+ <syncfusion:Stencil x:Name="stencil" BorderThickness="0,0,1,0" ExpandMode="All">
       <syncfusion:Stencil.Categories>
          <syncfusion:StencilCategoryCollection>
           <!--Specify the basic shapes category with title and resource key-->
@@ -86,7 +86,8 @@ The following code sample shows how to add the BPMN shapes to palette.
  </syncfusion:Stencil>
 
   <syncfusion:SfDiagram  x:Name="Diagram">
-     <syncfusion:SfDiagram.Nodes>                        <syncfusion:NodeCollection/>
+     <syncfusion:SfDiagram.Nodes>                        
+        <syncfusion:NodeCollection/>
     </syncfusion:SfDiagram.Nodes>
      <syncfusion:SfDiagram.Connectors>
           <syncfusion:ConnectorCollection/>

@@ -55,12 +55,12 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 The following table shows the different types of gateways:
 
 | GatewayType | Symbol |Description|
-| -------- | -------- |
-| None | ![GateWay BPMN Shape](BPMN-Shapes-Images/bpmn-gataway-none.png) ||
-| Exclusive | ![Exclusive GateWay BPMN Shape](BPMN-Shapes-Images/Exclusive.png) ||
-| Parallel | ![Parallel GateWay BPMN Shape](BPMN-Shapes-Images/Parallel.png) ||
-| Inclusive | ![Inclusive GateWay BPMN Shape](BPMN-Shapes-Images/Inclusive.png) ||
-| Complex | ![Complex GateWay BPMN Shape](BPMN-Shapes-Images/Complex.png) ||
-| EventBased | ![EventBased GateWay BPMNShape](BPMN-Shapes-Images/EventBased.png) ||
-| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](BPMN-Shapes-Images/EEBased.png) ||
-| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](BPMN-Shapes-Images/PEBased.png) ||
+| -------- | -------- | -------- |
+| None | ![GateWay BPMN Shape](BPMN-Shapes-Images/bpmn-gataway-none.png) |It is represented as a diamond shape. None of the symbol shows inside this shape|
+| Exclusive | ![Exclusive GateWay BPMN Shape](BPMN-Shapes-Images/Exclusive.png) |Its a state of the business process and based on the condition, breaks the flow into one or more mutually exclusive paths|
+| Parallel | ![Parallel GateWay BPMN Shape](BPMN-Shapes-Images/Parallel.png) |Parallel gateways are used to represent two concurrent tasks in a business flow|
+| Inclusive | ![Inclusive GateWay BPMN Shape](BPMN-Shapes-Images/Inclusive.png) |Breaks the process flow into one or more flows|
+| Complex | ![Complex GateWay BPMN Shape](BPMN-Shapes-Images/Complex.png) |These gateways are only used for the most complex flows in a business process|
+| EventBased | ![EventBased GateWay BPMNShape](BPMN-Shapes-Images/EventBased.png) |The event-based Gateway allows you to make a decision based on events|
+| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](BPMN-Shapes-Images/EEBased.png) |Starts a new process instance with each occurrence of a subsequent event|
+| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](BPMN-Shapes-Images/PEBased.png) |This gateway is similar to a parallel gateway. It allows for multiple processes to happen at the same time, but unlike the parallel gateway, processes are event-dependent|

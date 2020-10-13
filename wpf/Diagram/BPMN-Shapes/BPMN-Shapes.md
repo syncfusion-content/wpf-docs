@@ -55,7 +55,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 The list of supported BPMN shapes as follows:
 
-| Shape | Image | Description
+| Shape | Symbol | Description
 | -------- | -------- | --------|
 | Event | ![Event Shape](BPMN-Shapes-Images/Event.png) |Event shape represents something happens during a business process|
 | Gateway | ![Gateway Shape](BPMN-Shapes-Images/Gateway.png) |Gateway is used to control the flow of a process|

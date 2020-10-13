@@ -60,8 +60,8 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ## BPMN activity task
 
-The [`Task`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task) property of the `BpmnNodeViewModel` allows you to define the type of task such as sending, receiving, user-based task, etc. By default, the [`TaskType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TaskType) property of task is set to **None**. The following code explains how to create different types of BPMN tasks.
-The events property of tasks allows you to represent these results as an event attached to the task.
+The [`TaskType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TaskType) property of the `BpmnNodeViewModel` allows you to define the type of task such as sending, receiving, user-based task, etc. By default, the TaskType property of task is set to **None**. This is shown by a small event symbol in the top of the corner. The following code explains how to create different types of BPMN tasks.
+
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,18 +108,18 @@ The various types of BPMN tasks are tabulated as follows.
 
 | Task type | Symbol | Description |
 | -------- | -------- | -------- |
-| Service | ![Service Task BPMN Shape](BPMN-Shapes-Images/Service.png) ||
-| Send | ![Send Task BPMN Shape](BPMN-Shapes-Images/Send.png) ||
-| Receive | ![Receive Task BPMN Shape](BPMN-Shapes-Images/Receive.png) ||
-| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](BPMN-Shapes-Images/InsService.png) ||
-| Manual |![Manual Task BPMN Shape](BPMN-Shapes-Images/Manual.png) ||
-| Business Rule | ![Business Rule  Task BPMN Shape](BPMN-Shapes-Images/Bussiness.png) ||
-| User | ![User Task BPMN Shape](BPMN-Shapes-Images/User.png) ||
-| Script | ![Script Task BPMN Shape](BPMN-Shapes-Images/Script.png) ||
+| Service | ![Service Task BPMN Shape](BPMN-Shapes-Images/Service.png) |A Service Task is a Task that uses a Web service, an automated application, or other kinds of service in completing the task|
+| Send | ![Send Task BPMN Shape](BPMN-Shapes-Images/Send.png) |A Send Task is represents a task that sends a Message from one to another. The Task is completed once the Message has been sent|
+| Receive | ![Receive Task BPMN Shape](BPMN-Shapes-Images/Receive.png) |A Receive Task indicates that waits for the arrival of a certain message. The Task is completed once the message has received|
+| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](BPMN-Shapes-Images/InsService.png) |If a receive task is to instantiate a process, that is, the receive tasks replace message start event |
+| Manual |![Manual Task BPMN Shape](BPMN-Shapes-Images/Manual.png) |A Manual Task is a Task that is performed without the aid of any business process execution engine or any application|
+| Business Rule | ![Business Rule  Task BPMN Shape](BPMN-Shapes-Images/Bussiness.png) |A Business Rule Task is used to synchronously execute one or more rules|
+| User | ![User Task BPMN Shape](BPMN-Shapes-Images/User.png) |A User Task represents that a human performer performs the Task with the use of a software application|
+| Script | ![Script Task BPMN Shape](BPMN-Shapes-Images/Script.png) |A Script Task is an automated activity. When a process execution arrives at the Script Task, the corresponding script is executed|
 
 ## BPMN activity sub process
 
-A [`CollapsedSubProcess`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess) is a group of tasks that is used to hide or reveal details of additional levels using the property of [ActivityType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) is set to **CollapsedSubProcess**.
+A [`CollapsedSubProcess`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess) is a group of tasks that is used to hide or reveal details of additional levels. The following code explains how to create CollapsedSubProcess.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,8 +163,9 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Loop
 
-[`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_LoopActivity) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `LoopActivity` is **None**.
-You can define the loop property in subprocess BPMN shape as shown in the following code.
+[`LoopActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_LoopActivity) is a task that is internally being looped. The LoopActivity property of BpmnNodeViewModel allows you to define the type of loop. The default value for `LoopActivity` is **None**.
+
+You can define the LoopActivity in both task and collapsed subprocess of the Activity.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,16 +210,16 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 The following table contains various types of BPMN loops.
 
-| Loops | Task | CollapsedSubProcess
-| -------- | -------- | -------- |
-| None | ![None Task BPMN Shape](BPMN-Shapes-Images/Loop-None.png)  | ![None CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/BPMN-Loop-None.png) |
-| Standard | ![Standard Task BPMN Shape](BPMN-Shapes-Images/Loop-Standard.png)  | ![Standard CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-Standard.png) |
-| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](BPMN-Shapes-Images/Loop-SequenceMultiInstance.png) |  ![SequenceMultiInstance CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-SequenceMultiInstance.png) |
-| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](BPMN-Shapes-Images/Loop-ParallelMultiInstance.png) | ![ParallelMultiInstance Task BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-ParallelMultiInstance.png) |
+| LoopActivity | Task | CollapsedSubProcess | Description |
+| -------- | -------- | -------- | -------- |
+| None | ![None Task BPMN Shape](BPMN-Shapes-Images/Loop-None.png)  | ![None CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/BPMN-Loop-None.png) |None of the shape shows in the sub-process | 
+| Standard | ![Standard Task BPMN Shape](BPMN-Shapes-Images/Loop-Standard.png)  | ![Standard CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-Standard.png) |Loop marker indicates that the sub-process repeats itself in sequence|
+| SequenceMultiInstance | ![Sequence MultiInstance Task BPMN Shape](BPMN-Shapes-Images/Loop-SequenceMultiInstance.png) |  ![SequenceMultiInstance CollapsedSubProcess BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-SequenceMultiInstance.png) |Multi-Instance marker indicates that the sub-process can run with other identical sub-processes simultaneously.Three horizontal lines indicate sequential execution|
+| ParallelMultiInstance | ![ParallelMultiInstance Task BPMNShape](BPMN-Shapes-Images/Loop-ParallelMultiInstance.png) | ![ParallelMultiInstance Task BPMN Shape](BPMN-Shapes-Images/CollapsedSubProcess-ParallelMultiInstance.png) |Multi-Instance marker indicates that the sub-process can run with other identical sub-processes simultaneously.Three vertical lines indicate that the instances will be executed in parallel|
 
 ### Compensation
 
-Compensation is triggered when the operation is partially failed and enabled it with the compensation property of the task and the collapsed subprocess. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BPMNNodeViewModel.
+Compensation is triggered when the operation is partially failed and enabled it with the compensation property in both task and the collapsed subprocess. To create a Compensation, you have to enable the [IsCompensationActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCompensationActivity) property of the BPMNNodeViewModel.
 
 >Note: By default, IsCompensationActivity property is false.
 
@@ -265,7 +266,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Call
 
-A Call activity is a global subprocess that is reused at various points of the business flow and set it with the call property of the task.To create a Call activity, you have to enable the [IsCallActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BPMNNodeViewModel.
+A Call activity is a global subprocess that is reused at various points of the business flow. To create a Call activity, you have to enable the [IsCallActivity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsCallActivity) property of the BPMNNodeViewModel.
 
 >Note: By default, IsCallActivity property is false.
 
@@ -312,7 +313,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### Ad-Hoc
 
-An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and set it with the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of subprocess.
+An ad-hoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition. To create a ad-hoc activity, you have to enable the [`IsAdhocActivity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_IsAdhocActivity) property of the BPMNNodeViewModel. 
 
 >Note: By default, IsAdhocActivity property is false.
 
@@ -359,7 +360,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ### SubProcessType
 
-SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_SubProcessType) property of subprocess allows you to define the type of boundary. By default, it is set to **Default**.
+SubProcessType represents the type of task that is being processed. The [`SubProcessType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_SubProcessType) property of BpmnNodeViewModel allows you to define the type of SubProcess. By default, it is set to **Default**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -404,9 +405,9 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 The following table contains various types of BPMN boundaries.
 
-| SubProcessType | Image |
-| -------- | -------- |
-| Call | ![Call Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Call.png) |
-| Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Event.png) |
-| Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-Loop-None.png) |
-| Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Transaction.png) |
+| SubProcessType | Symbol | Description |
+| -------- | -------- | -------- |
+| Call | ![Call Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Call.png) |It is a global sub-process that is reused at various points in the business flow|
+| Event | ![Event Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Event.png) |The event subprocess is a subprocess that is triggered by an event.An event subprocess can be added at the process level or at any subprocess level|
+| Default | ![Default Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-Loop-None.png) |The task that is performed in a business process. It is represented by a rounded rectangle|
+| Transaction | ![Transaction Boundary BPMN Shape](BPMN-Shapes-Images/BPMN-SubProcessType-Transaction.png) |It is a specialized sub-process that involves payment|
