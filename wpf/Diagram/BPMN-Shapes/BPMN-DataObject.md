@@ -9,7 +9,7 @@ documentation: ug
 # BPMN DataObject and its customization
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`DataObject`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataObject), set the `Type` property of the `BpmnNodeViewModel` should be set to **DataObject** and the [DataObjectType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_DataObjectType) property defines whether data is an input or output.
-You can incidicate the collection of data object by setting the `IsCollectiveData` property as `true`.
+You can indicate the collection of data object by setting the `IsCollectiveData` property as `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -56,6 +56,6 @@ The following table contains various representation of the BPMN data object.
 
 | DataObjectType | Symbol | IsCollectiveData|Description|
 | -------- | -------- |-------- |-------- |
-| None | ![Collection Data BPMN Shape](BPMN-Shapes-Images/DataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/NoneCollectiveDataObject.png) ||
-| Data Input | ![Data Input BPMN Shape](BPMN-Shapes-Images/InputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/InputCollectiveDataObject.png) ||
-| Data Output | ![Data Output BPMN Shape](BPMN-Shapes-Images/OutputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/OutputCollectiveDataObject.png) ||
+| None | ![Collection Data BPMN Shape](BPMN-Shapes-Images/DataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/NoneCollectiveDataObject.png) |None of the business process with signifies information collected within a DataObject|
+| Data Input | ![Data Input BPMN Shape](BPMN-Shapes-Images/InputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/InputCollectiveDataObject.png) |Represents data requirements that tasks in the business process depend on with signifies information collected within a DataObject|
+| Data Output | ![Data Output BPMN Shape](BPMN-Shapes-Images/OutputDataObject.png) |![Collection Data BPMN Shape](BPMN-Shapes-Images/OutputCollectiveDataObject.png) |Demonstrates information produced as the result of a business process with signifies information collected within a DataObject|
