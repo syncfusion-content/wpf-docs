@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Edit Mode| Hierarchical Navigator | Wpf | Syncfusion
-description: edit mode
+description: This section explains about edit mode in Hierarchical Navigator along with filter support to suggest matching nodes
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Edit Mode
+# Edit Mode in Hierarchical Navigator
 
 This feature allows you to easily edit a navigation path by setting the [IsEnableEditMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_IsEnableEditMode) property to `true`. The filter support is available in edit mode, which suggests matching nodes based on the path entered in the editor like the Windows Explorer.
 
