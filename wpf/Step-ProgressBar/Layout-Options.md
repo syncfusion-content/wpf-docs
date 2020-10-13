@@ -18,7 +18,7 @@ Represents how the item size is increased to fill the unused space. The default 
 * Fill
 
 ### None
-The step view items retain their its natural size. You can change the spacing between the adjacent step view items using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is 80.
+The step view items retain their its natural size. You can change the spacing between the adjacent step view items by using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is 80.
 
 N> The single step size is calculated using the ItemSpacing and MarkerWidth or MarkerHeight based on the Orientation. The ItemSpacing applies between the current step view item and the previous step view item.
 
