@@ -17,7 +17,26 @@ It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/wpf/Sync
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="sfTreeView" AllowEditing="True"/>
+<syncfusion:SfTreeView x:Name="sfTreeView" 
+                               ItemsSource="{Binding Items}"    
+                               ChildPropertyName="Files"
+                               AutoExpandMode="RootNodes"
+                               AllowEditing="True"
+                               >
+    <syncfusion:SfTreeView.ItemTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+        </DataTemplate>
+    </syncfusion:SfTreeView.ItemTemplate>
+    <syncfusion:SfTreeView.EditTemplate>
+        <DataTemplate>
+            <TextBox Text="{Binding Name}" 
+					 VerticalContentAlignment="Center" 
+                     Margin="-4,0,-4,0"
+                     Height="{Binding ItemHeight,ElementName=sfTreeView}" />
+        </DataTemplate>
+    </syncfusion:SfTreeView.EditTemplate>
+</syncfusion:SfTreeView>
 {% endhighlight %}
 {% highlight c# %}
 sfTreeView.AllowEditing = true;
