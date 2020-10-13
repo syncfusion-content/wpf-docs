@@ -13,7 +13,7 @@ Data templates can be customized for the step markers and step content . The nex
 
 ## Item Template
 
-You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to customize the step view item content with DataTemplate.
+You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to customize the step view item's content with DataTemplate.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ Implementing the above code will create the following Step ProgressBar control.
 
 ## Item Template Selector
 
-Using the ItemTemplateSelector, you can use the different templates for step content depends on step view item status. The following example shows this.
+Using the ItemTemplateSelector, you can use the different templates for step content depends on the step view item status. The following example shows this.
 
 1. Create the template selector in the code.
 
