@@ -90,7 +90,7 @@ tool.Height = 50;
 
 ## Setting icon template
 
-The `IconTemplate` supports adding any type of images such as path data, font icons, etc. as template in ToolBar. The icon will automatically resize the template content according to its size provided in the data template.
+The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html#Syncfusion_Windows_Tools_Controls_ToolBarAdv_IconTemplateProperty) supports adding any type of images such as path data, font icons, etc. as template in ToolBar. The icon will automatically resize the template content according to its size provided in the data template.
 {% tabs %}
 
 {% highlight XAML %}
