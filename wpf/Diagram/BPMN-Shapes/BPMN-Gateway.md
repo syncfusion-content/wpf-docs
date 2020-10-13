@@ -9,7 +9,7 @@ documentation: ug
 
 # BPMN gateway and its customization
 
-Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set to [Gateway](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#GateWay) and the [GatewayType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_GatewayType) property can be set with any of the appropriate gateways. The following code example explains how to create a BPMN Gateway.
+Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway shape, the `Type` property of the `BpmnNodeViewModel` should be set to [Gateway](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#GateWay) and the `GatewayType` property can be set to any of the appropriate [[GatewayType]](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.GatewayType.html). The default[GatewayType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_GatewayType) will be **None**. The following code example explains how to create a BPMN Gateway.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,17 +51,16 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ![Create Gateway](BPMN-Shapes-Images/bpmn-gataway-none.png)
 
->Note: By default, the [GatewayType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_GatewayType) will be set to **None**.
 
-There are several types of gateways as follows:
+The following table shows the different types of gateways:
 
-| GatewayType | Image |
+| GatewayType | Symbol |Description|
 | -------- | -------- |
-| None | ![GateWay BPMN Shape](BPMN-Shapes-Images/bpmn-gataway-none.png) |
-| Exclusive | ![Exclusive GateWay BPMN Shape](BPMN-Shapes-Images/Exclusive.png) |
-| Parallel | ![Parallel GateWay BPMN Shape](BPMN-Shapes-Images/Parallel.png) |
-| Inclusive | ![Inclusive GateWay BPMN Shape](BPMN-Shapes-Images/Inclusive.png) |
-| Complex | ![Complex GateWay BPMN Shape](BPMN-Shapes-Images/Complex.png) |
-| EventBased | ![EventBased GateWay BPMNShape](BPMN-Shapes-Images/EventBased.png) |
-| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](BPMN-Shapes-Images/EEBased.png) |
-| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](BPMN-Shapes-Images/PEBased.png) |
+| None | ![GateWay BPMN Shape](BPMN-Shapes-Images/bpmn-gataway-none.png) ||
+| Exclusive | ![Exclusive GateWay BPMN Shape](BPMN-Shapes-Images/Exclusive.png) ||
+| Parallel | ![Parallel GateWay BPMN Shape](BPMN-Shapes-Images/Parallel.png) ||
+| Inclusive | ![Inclusive GateWay BPMN Shape](BPMN-Shapes-Images/Inclusive.png) ||
+| Complex | ![Complex GateWay BPMN Shape](BPMN-Shapes-Images/Complex.png) ||
+| EventBased | ![EventBased GateWay BPMNShape](BPMN-Shapes-Images/EventBased.png) ||
+| ExclusiveEventBased | ![Exclusive EventBased GateWay BPMN Shape](BPMN-Shapes-Images/EEBased.png) ||
+| ParallelEventBased | ![Parallel EventBased GateWay BPMN Shape](BPMN-Shapes-Images/PEBased.png) ||

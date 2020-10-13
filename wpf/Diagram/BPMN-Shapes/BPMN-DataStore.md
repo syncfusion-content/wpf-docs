@@ -9,7 +9,7 @@ documentation: ug
 
 # BPMN DataStore and its customization
 
-DataStore is used to store or access data associated with a business process. To create a [DataStore](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataStore), set the Type property of the bpmn node should be set to **DataStore**. The following code example explains how to create a DataStore.
+DataStore is used to store or access data associated with a business process. To create a [DataStore](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataStore), set the Type property of the `BpmnNodeViewModel` should be set to **DataStore**. The following code example explains how to create a DataStore.
 
 {% tabs %}
 {% highlight xaml %}

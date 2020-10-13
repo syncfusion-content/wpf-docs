@@ -13,8 +13,10 @@ The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.C
 
 There are two types of activities. They are listed as follows:
 
-* Task: Occurs within a process and it is not broken down to a finer level of detail.
-* CollapsedSubProcess: Occurs within a process and it is broken down to a finer level of detail.
+* [Task](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task): Occurs within a process and it is not broken down to a finer level of detail.
+* [CollapsedSubProcess](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#CollapsedSubProcess): Occurs within a process and it is broken down to a finer level of detail.
+
+You can specify the any one of the above activity type using the [ActivityType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_ActivityType) property of `BpmnNodeViewModel`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +60,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ## BPMN activity task
 
-The [`Task`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task) property of the node allows you to define the type of task such as sending, receiving, user-based task, etc. By default, the [`TaskType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TaskType) property of task is set to **None**. The following code explains how to create different types of BPMN tasks.
+The [`Task`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.ActivityType.html#fields#Task) property of the `BpmnNodeViewModel` allows you to define the type of task such as sending, receiving, user-based task, etc. By default, the [`TaskType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TaskType) property of task is set to **None**. The following code explains how to create different types of BPMN tasks.
 The events property of tasks allows you to represent these results as an event attached to the task.
 
 {% tabs %}
@@ -104,16 +106,16 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 The various types of BPMN tasks are tabulated as follows.
 
-| Shape | Image |
-| -------- | -------- |
-| Service | ![Service Task BPMN Shape](BPMN-Shapes-Images/Service.png) |
-| Send | ![Send Task BPMN Shape](BPMN-Shapes-Images/Send.png) |
-| Receive | ![Receive Task BPMN Shape](BPMN-Shapes-Images/Receive.png) |
-| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](BPMN-Shapes-Images/InsService.png) |
-| Manual |![Manual Task BPMN Shape](BPMN-Shapes-Images/Manual.png) |
-| Business Rule | ![Business Rule  Task BPMN Shape](BPMN-Shapes-Images/Bussiness.png) |
-| User | ![User Task BPMN Shape](BPMN-Shapes-Images/User.png) |
-| Script | ![Script Task BPMN Shape](BPMN-Shapes-Images/Script.png) |
+| Task type | Symbol | Description |
+| -------- | -------- | -------- |
+| Service | ![Service Task BPMN Shape](BPMN-Shapes-Images/Service.png) ||
+| Send | ![Send Task BPMN Shape](BPMN-Shapes-Images/Send.png) ||
+| Receive | ![Receive Task BPMN Shape](BPMN-Shapes-Images/Receive.png) ||
+| Instantiating Receive | ![Instantiating Receive Task BPMN Shape](BPMN-Shapes-Images/InsService.png) ||
+| Manual |![Manual Task BPMN Shape](BPMN-Shapes-Images/Manual.png) ||
+| Business Rule | ![Business Rule  Task BPMN Shape](BPMN-Shapes-Images/Bussiness.png) ||
+| User | ![User Task BPMN Shape](BPMN-Shapes-Images/User.png) ||
+| Script | ![Script Task BPMN Shape](BPMN-Shapes-Images/Script.png) ||
 
 ## BPMN activity sub process
 

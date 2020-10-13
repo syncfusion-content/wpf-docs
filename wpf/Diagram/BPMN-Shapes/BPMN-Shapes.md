@@ -57,8 +57,8 @@ The list of supported BPMN shapes as follows:
 
 | Shape | Image | Description
 | -------- | -------- | --------|
-| Event | ![Event Shape](BPMN-Shapes-Images/Event.png) |Event shape represents something happens during a business process and its is notated with a circle|
-| Gateway | ![Gateway Shape](BPMN-Shapes-Images/Gateway.png) |Gateway is used to control the flow of a process and it is represented as a diamond shape|
+| Event | ![Event Shape](BPMN-Shapes-Images/Event.png) |Event shape represents something happens during a business process|
+| Gateway | ![Gateway Shape](BPMN-Shapes-Images/Gateway.png) |Gateway is used to control the flow of a process|
 | Activity | ![Task Shape](BPMN-Shapes-Images/Task.png) | Activities describe the kind of work being done in a particular process instance |
 | Message | ![Message Shape](BPMN-Shapes-Images/Message.png) | The message is just the content of the communication|
 | DataStore | ![Datasource Shape](BPMN-Shapes-Images/Datasource.png) |DataStore is used to store or access data associated with a business process|

@@ -16,7 +16,7 @@ The [EventType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Bp
     * Intermediate - Occurs in the middle of the process.
     * End - Occurs at the end of the process and every business process ends with an event.
 
-The event property of the BPMNNodeViewModel allows you to define the type of the event. The default value of the event is [Start](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.EventType.html#fields#Start). The following code example explains how to create a BPMN event.
+The following code example explains how to create a BPMN event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,7 +60,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 
 ## BPMN event trigger
 
-Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [EventTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the node allows you to set the type of trigger and by default, it is set to None. The following code example explains how to create a BPMN trigger.
+Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [EventTrigger](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_EventTrigger) property of the `BpmnNodeViewModel` allows you to set the type of trigger and by default, it is set to None. The following code example explains how to create a BPMN trigger.
 
 {% tabs %}
 {% highlight xaml %}
