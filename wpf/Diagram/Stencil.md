@@ -567,6 +567,7 @@ The following are the built-in categories being available in the diagram resourc
 * UMLRelationship
 * ElectricalShapes
 * SwimlaneShapes
+* BPMNEditorShapes
 
 {% tabs %}
 {% highlight xaml %}
