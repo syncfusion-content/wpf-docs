@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# Overview
+# Overview of WPF DockingManager
 
 The `DockingManager` control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
 
@@ -31,7 +31,7 @@ The `DockingManager` control implements an architecture that allows child contro
 
 **ContextMenu** - Provides built-in context menu support for tabbed controls, hide and auto hidden tabs to change the states.
 
-**Drag providers** - Provides support varial styles of drag providers. The types are Border, Shadow and Content dragging.  
+**Drag providers** - Provides support various styles of drag providers. The types are Border, Shadow and Content dragging.  
 
 **Tooltip** - Provides tooltip support for all default buttons.
 
