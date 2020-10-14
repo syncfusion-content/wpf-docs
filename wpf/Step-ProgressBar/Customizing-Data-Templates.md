@@ -9,12 +9,11 @@ documentation: ug
 
 # Customizing Data Templates
 
-Data templates can be customized for items and content. The next sections explain how to customize data templates.
+Data templates can be customized for the step markers and step content . The next sections explain how to customize the data templates.
 
 ## Item Template
 
-You can customize the content of `StepViewItem` by using ItemTemplate property. The following example shows how to use ItemTemplate, StepViewItem’s content is customized with DataTemplate. The value of item template is assigned to image path where it has been modified for a customized look and the content always same for entire `StepViewItem`.
-
+You can customize the content of `StepViewItem` by using the ItemTemplate property. The following example shows how to customize the step view item's content with DataTemplate.
 
 {% highlight xaml %}
 
@@ -41,15 +40,24 @@ Implementing the above code will create the following Step ProgressBar control.
 
 ## Item Template Selector
 
-Using ItemTemplateSelector, you can use different templates for items depending on specific constraints. The following example illustrates this.
+Using the ItemTemplateSelector, you can use the different templates for step content depends on the step view item status. The following example shows this.
 
 1. Create the template selector in the code.
 
 
    ~~~csharp
 
+    /// <summary>
+    /// Represents the step view item template selector class.
+    /// </summary>
 	public class StepViewItemTemplateSelector : DataTemplateSelector
     {
+        /// <summary>
+        /// Selects the template based on the step view item status.
+        /// </summary>
+        /// <param name="item">step view item.</param>
+        /// <param name="container">step progress bar.</param>
+        /// <returns></returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             StepViewItem stepViewItem = item as StepViewItem;
@@ -142,28 +150,38 @@ Using ItemTemplateSelector, you can use different templates for items depending 
 This will generate the following Step ProgressBar control.
 ![Item Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/ItemTemplateSelector).
 
 ## Marker Template Selector
 
-With MarkerTemplateSelector, you can use different templates for StepViewItem appearance depending on specific constraints. The following example illustrates this.
+With the MarkerTemplateSelector, you can use the different templates for step marker depends on the step view item status. The following example shows this.
 
 1. Create the template selector in the code as follows.
 
    ~~~csharp
 
+    /// <summary>
+    /// Represents the step view item template selector class.
+    /// </summary>
 	public class StepViewItemMarkerTemplateSelector : DataTemplateSelector
     {
+        /// <summary>
+        /// Selects the template based on the step view item status.
+        /// </summary>
+        /// <param name="item">step view item.</param>
+        /// <param name="container">step progress bar.</param>
+        /// <returns></returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             StepViewItem stepViewItem = item as StepViewItem;
             if (stepViewItem != null)
             {
                 if (stepViewItem.Status == StepStatus.Indeterminate)
-                    return (item as StepViewItem).FindResource("InProgressDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("IndeterminateTemplate") as DataTemplate;
                 else if (stepViewItem.Status == StepStatus.Active)
-                    return (item as StepViewItem).FindResource("CompletedDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("ActiveTemplate") as DataTemplate;
                 else
-                    return (item as StepViewItem).FindResource("NotStartedDataTemplate") as DataTemplate;
+                    return (item as StepViewItem).FindResource("InactiveTemplate") as DataTemplate;
             }
             return null;
         }
@@ -175,7 +193,7 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
 
    ~~~xaml
 
-	<DataTemplate x:Key="InProgressDataTemplate">
+	<DataTemplate x:Key="IndeterminateTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -192,7 +210,7 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
                 Stretch="Fill" />
         </Grid>
     </DataTemplate>
-    <DataTemplate x:Key="CompletedDataTemplate">
+    <DataTemplate x:Key="ActiveTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -210,7 +228,7 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
                 Stroke="White" />
         </Grid>
     </DataTemplate>
-    <DataTemplate x:Key="NotStartedDataTemplate">
+    <DataTemplate x:Key="InactiveTemplate">
         <Grid>
             <Ellipse
                 Width="35"
@@ -230,7 +248,7 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
 
    ~~~
 
-4. Now use MarkerTemplateSelector.
+4. Now, use the MarkerTemplateSelector.
 
    ~~~xaml
 
@@ -244,8 +262,6 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
         SelectedIndex="2" >
             <syncfusion:SfStepProgressBar.ItemContainerStyle>
                 <Style TargetType="syncfusion:StepViewItem">
-                    <Setter Property="Content" Value="{Binding ModelText}" />
-                    <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
                     <Setter Property="MarkerWidth" Value="35"/>
                     <Setter Property="MarkerHeight" Value="35"/>
                 </Style>
@@ -256,3 +272,5 @@ With MarkerTemplateSelector, you can use different templates for StepViewItem ap
 
 This will populate the Step ProgressBar control.
 ![Marker Template Selector image](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/MarkerTemplateSelector).

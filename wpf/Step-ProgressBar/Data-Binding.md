@@ -7,34 +7,57 @@ control: Step ProgressBar
 documentation: ug
 ---
 
-# Binding StepViewItems in WPF Step ProgressBar
+# Binding the StepViewItems in the WPF Step ProgressBar
 
-You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) using data binding in the WPF [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html).
+You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) using the data binding in the WPF [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html).
 
 ## Data binding to Objects
 
-The `SfStepProgressBar` can bound to an external source to auto create `StepViewItem` and display the data using `ItemsSource` property.   
+The `SfStepProgressBar` can bound to an external source to auto-create `StepViewItem` and display the data using the `ItemsSource` property.   
 
-N> To bind `ItemsSource` to `SfStepProgressBar`, you need to have collection with data object which holds step view item details.
+N> To bind the `ItemsSource` to `SfStepProgressBar`, you need to have a collection with a data object which holds the step view item details.
 
-Here, `StepItem` class defined with `Content` and its properties and `ViewModel` class has `ItemsSource` property of type `ObservableCollection<StepItem>`.
+Here, the `StepItem` class defined with `Content` and its properties, and the `ViewModel` class has the `ItemsSource` property of type `ObservableCollection<StepItem>`.
 
 {% tabs %}
 {% highlight C# %}
 
 // Model.cs
+/// <summary>
+/// Represents the model.
+/// </summary>
 public class StepItem 
-    {
-        public string ModelText { get; set; }       
-        public Thickness TitleSpace { get; set; }
-    }
+{
+    /// <summary>
+    /// Gets or sets the text for step view item.
+    /// </summary>
+    public string ModelText { get; set; } 
+        
+    /// <summary>
+    /// Gets or sets the space between text and step view item.
+    /// </summary>
+    public double TitleSpace { get; set; }
 }
 
 //ViewModel.cs
+/// <summary>
+/// Represents the view model class.
+/// </summary>
 public class ViewModel : INotifyPropertyChanged
 {
+        /// <summary>
+        /// Represents the step view items.
+        /// </summary>
         private ObservableCollection<StepItem> m_stepViewItems;
+
+        /// <summary>
+        /// Represents the property changed event.
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Gets or sets the step view items.
+        /// </summary>
         public ObservableCollection<StepItem> StepViewItems
         {
             get
@@ -48,43 +71,53 @@ public class ViewModel : INotifyPropertyChanged
             }
         }
 
+        /// <summary>
+        /// Trigress the on property changed event.
+        /// </summary>
+        /// <param name="e"></param>
         public void OnPropertyChanged(PropertyChangedEventArgs e)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, e);
         }
 
+        /// <summary>
+        /// Initialize the instance of <see cref="ViewModel"/> class.
+        /// </summary>
         public ViewModel()
         {
             StepViewItems = new ObservableCollection<StepItem>();
             PopulateData();
         }
 
+        /// <summary>
+        /// Populates the data.
+        /// </summary>
         private void PopulateData()
         {
-            //Adding the stepview items into the collection
+            //Adding the step view items into the collection
             StepItem orderedStepViewItem = new StepItem()
             {
                 ModelText = "Ordered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem shippedStepViewItem = new StepItem()
             {
                 ModelText = "Shipped",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem packedStepViewItem = new StepItem()
             {
                 ModelText = "Packed",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem deliveredStepViewItem = new StepItem()
             {
                 ModelText = "Delivered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepViewItems.Add(orderedStepViewItem);
@@ -122,10 +155,11 @@ public class ViewModel : INotifyPropertyChanged
 
 ![WPF Step ProgressBar control auto creates stepview item from objects using data binding](Data-binding_images/Data-Binding.png)
 
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/DataBindingToObjects).
 
 ## Data-Binding with XML
 
-An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example illustrates this.
+An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example shows this.
 
 1. Create an XML file with the following information and name it Data.xml.
 
@@ -151,7 +185,7 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 			
    ~~~
 
-3. ItemsSource property for the Step ProgressBar control.
+3. The ItemsSource property for the Step ProgressBar control.
 
    ~~~xaml
    
@@ -170,3 +204,5 @@ An XML file can also be used as the ItemsSource for the Step Progress Bar contro
 This will create the following Step ProgressBar control.
 
 ![WPF Step ProgressBar auto creates stepview item from XML using data binding](Data-Binding_images/Data-Binding_img.png)
+
+Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/DataBindingWithXml).
