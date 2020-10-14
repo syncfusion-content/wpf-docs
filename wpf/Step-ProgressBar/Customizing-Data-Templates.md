@@ -129,7 +129,7 @@ Using the ItemTemplateSelector, you can use the different templates for step con
 
    ~~~xaml
 
-	<local:StepViewItemTemplateSelector x:Key="stepViewItemTemplateSelector"
+	<local:StepViewItemTemplateSelector x:Key="stepViewItemTemplateSelector" />
 
    ~~~
 
