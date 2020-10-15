@@ -402,21 +402,6 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 Resource UI customization using a template and template selectors support.
 
-### Customize resource header appearance using Style
-
-You can style resource header appearance using [ResourceHeaderControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceHeaderControl.html) in Scheduler. You can change the background color, textStyle, and borderBrush etc. by setting style property for `ResourceHeaderControl`.
-
-{% tabs %}
-{% highlight xaml %}
-        <Style  TargetType="Schedule:ResourceHeaderControl">
-            <Setter Property="Foreground" Value="Red"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-        </Style>
-{% endhighlight %}
-{% endtabs %}
-
-![WPF scheduler custom ResourceHeaderControl](Resource_Images/CustomizeResoureHeader.png)
-
 ### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
