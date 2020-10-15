@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported input views in the SfTexInputLayout
+title: Supported input views in the Syncfusion SfTexInputLayout
 description: This section describes what are the supported input views in Syncfusion SfTextInputLayout control in WPF.
 platform: wpf
 control: SfTextInputLayout
