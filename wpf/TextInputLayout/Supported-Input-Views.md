@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion supported input views
-description: This section describes how to add supported input views in Syncfusion TextInputLayout control in WPF.
+title: Supported input views in the SfTexInputLayout
+description: This section describes what are the supported input views in Syncfusion SfTextInputLayout control in WPF.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
@@ -9,11 +9,15 @@ documentation: ug
 
 # Supported input views
 
-In SfTextInputLayout supported only TextBox and PasswordBox in WPF platform.
+[SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has only the following controls as the supported input views.
+
+* TextBox 
+
+* PasswordBox
 
 ## TextBox
 
-You can enter text as input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the SfTextInputLayout.
+You can enter text as input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
@@ -41,7 +45,7 @@ You can enter text as input by adding the [TextBox](https://docs.microsoft.com/e
 
 ## PasswordBox
 
-You can enter the password characters as input by adding the [PasswordBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.passwordbox?view=netcore-3.1) in the SfTextInputLayout.
+You can enter the password characters as input by adding the [PasswordBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.passwordbox?view=netcore-3.1) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 
 {% tabs %} 
 
