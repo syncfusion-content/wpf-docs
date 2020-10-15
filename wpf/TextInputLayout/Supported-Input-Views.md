@@ -41,7 +41,7 @@ You can enter text as input by adding the [TextBox](https://docs.microsoft.com/e
 
 {% endtabs %}
 
-![Image for TextBox](Images/TextBox_Img.png)
+![Image for TextBox](Images/TextBox_Img.PNG)
 
 ## PasswordBox
 
@@ -69,4 +69,4 @@ You can enter the password characters as input by adding the [PasswordBox](https
 
 {% endtabs %}
 
-![Image for PasswordBox](Images/PasswordBox_Img.png)
+![Image for PasswordBox](Images/PasswordBox_Img.PNG)
