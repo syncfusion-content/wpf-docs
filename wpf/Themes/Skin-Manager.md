@@ -32,7 +32,7 @@ Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-MaterialLightThemeSettings</td><td>
+[MaterialLightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLight.WPF.MaterialLightThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -41,7 +41,7 @@ Syncfusion.Themes.MaterialDark.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-MaterialDarkThemeSettings</td><td>
+[MaterialDarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDark.WPF.MaterialDarkThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -50,7 +50,7 @@ Syncfusion.Themes.MaterialLightBlue.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLightBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLightBlue.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-MaterialLightBlueThemeSettings</td><td>
+[MaterialLightBlueThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLightBlue.WPF.MaterialLightBlueThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -59,7 +59,7 @@ Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialDarkBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDarkBlue.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-MaterialDarkBlueThemeSettings</td><td>
+[MaterialDarkBlueThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDarkBlue.WPF.MaterialDarkBlueThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -68,7 +68,7 @@ Syncfusion.Themes.Office2019Colorful.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Colorful.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-Office2019ColorfulThemeSettings</td><td>
+[Office2019ColorfulThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Colorful.WPF.Office2019ColorfulThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -77,7 +77,7 @@ Syncfusion.Themes.Office2019Black.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Black.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-Office2019BlackThemeSettings</td><td>
+[Office2019BlackThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Black.WPF.Office2019BlackThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -86,7 +86,7 @@ Syncfusion.Themes.Office2019White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019White.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-Office2019WhiteThemeSettings</td><td>
+[Office2019WhiteThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019White.WPF.Office2019WhiteThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -95,7 +95,7 @@ Syncfusion.Themes.Office2019DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019DarkGray.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-Office2019DarkGrayThemeSettings</td><td>
+[Office2019DarkGrayThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019DarkGray.WPF.Office2019DarkGrayThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -104,7 +104,7 @@ Syncfusion.Themes.Office2019HighContrast.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019HighContrast.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019HighContrast.WPF/)'| markdownify }}
 </td><td>
 Yes</td><td>
-Office2019HighContrastThemeSettings</td><td>
+[Office2019HighContrastThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019HighContrast.WPF.Office2019HighContrastThemeSettings.html)</td><td>
 -</td></tr>
 <tr>
 <td>
