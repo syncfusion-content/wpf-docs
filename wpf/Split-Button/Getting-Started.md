@@ -224,7 +224,7 @@ button.LargeIcon = new BitmapImage(new Uri("Images\colors.png", UriKind.Relative
 
 ## Setting icon template
 
-The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate) property provides support for setting up any type of image such as path data, font icons, etc. to the SplitButtonAdv. The icon will automatically resize the template content according to its size provided in the data template.
+The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplate) property provides support for setting up any type of image such as path data, font icons, etc. to the `SplitButtonAdv`. The icon will automatically resize the template content according to its size provided in the data template.
 
 {% tabs %}
 
@@ -283,7 +283,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ### Setting icon template selector
 
- The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplateSelector) property which allows you to specify a different data template based on the value given in the data templates.
+ The [IconTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_IconTemplateSelector) property allows you to specify a different data template based on the size mode or different validation criteria.
 
  {% tabs %}
 
@@ -479,7 +479,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples
 
 ## IsDefault mode
 
-The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_IsDefault) property indicates whether the SplitButtonAdv is a Default button and is used to activate the SplitButtonAdv by pressing using Enter key. When setting the IsDefault property to true, the user can invoke the button by pressing the `Enter` key. 
+The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButtonAdv.html#Syncfusion_Windows_Tools_Controls_SplitButtonAdv_IsDefault) property indicates whether the SplitButtonAdv is a `Default` button and is used to activate the SplitButtonAdv by pressing using `Enter` key. When setting the `IsDefault` property to true, the user can invoke the button by pressing the `Enter` key. 
 
 {% tabs %}
 
