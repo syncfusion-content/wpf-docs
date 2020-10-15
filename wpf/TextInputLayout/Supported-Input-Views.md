@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported input views
 
-[SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has only the following controls as the supported input views.
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html) property is applied with ContentPropertyAttribute. [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has only the following controls as the supported input views.
 
 * TextBox 
 
@@ -51,7 +51,7 @@ You can enter the password characters as input by adding the [PasswordBox](https
 
 {% highlight xaml %} 
 
-        <inputLayout:SfTextInputLayout Hint="Password" HelperText="Enter password">
+        <inputLayout:SfTextInputLayout Hint="Password" HelperText="Enter your password">
             <PasswordBox/>
         </inputLayout:SfTextInputLayout>
 
