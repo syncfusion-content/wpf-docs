@@ -128,7 +128,7 @@ grid.Children.Add(stepProgressBar);
 ![Selected item progress image](Appearance_images/SelectedItemProgress.png)
 
 ## AnimationDuration
-You can change the the duration for completing the animation status of step view item by using the [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_AnimationDurationProperty) property. The default value of this property is `1000ms.`
+You can change the the duration for completing the animation status of step view item by using the [AnimationDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_AnimationDurationProperty) property. The default value of this property is `500ms.`
 
 {% tabs %}
 {% highlight XAML %}
