@@ -21,12 +21,12 @@ You can drag and drop the selected text in a paragraph by setting the [AllowDrag
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Syntaxeditor_sample"
-        xmlns:sfedit="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         x:Class="Syntaxeditor_sample.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <sfedit:EditControl Name="editControl" BorderThickness="1" AllowDragDrop="True" AllowDrop="True" EnableOutlining="False" DocumentLanguage="Custom" Text="Setting multi-line text from C# using Environment.NewLine." />
+        <syncfusion:EditControl Name="editControl" BorderThickness="1" AllowDragDrop="True" AllowDrop="True" EnableOutlining="False" DocumentLanguage="Custom" Text="Setting multi-line text from C# using Environment.NewLine." />
     </Grid>
 </Window>
 
