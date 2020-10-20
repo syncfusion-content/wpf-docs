@@ -465,3 +465,9 @@ The following screenshot illustrates the result of the previous codes.
 ![Getting started image](Getting-Started_images/Getting_Started_img1.png)
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).
+
+## See also
+
+[How to apply themes for SfCircularGauge](https://www.syncfusion.com/kb/2514/how-to-apply-themes-for-sfcirculargauge)
+
+[Creating dynamic application driven by excelling formulas using SfCircularGauge](https://www.syncfusion.com/kb/2391/creating-dynamic-application-driven-by-excelling-formulas-using-circulargauge)

@@ -115,5 +115,8 @@ TreeMap with drill down support
 {:.caption}
 
 
+## see also
 
+[How to customize leaf level SfTreeMap](https://www.syncfusion.com/kb/7649/how-to-customize-leaf-level-treemap) 
 
+[How to apply colors based on the ColorValuePath to a leaf template in SfTreeMap](https://www.syncfusion.com/kb/4099/how-to-apply-colors-based-on-the-colorvaluepath-to-a-leaftemplate-in-sftreemap) 

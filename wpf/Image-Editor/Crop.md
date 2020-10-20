@@ -119,3 +119,7 @@ editor.Crop(new Rect(0, 0, 0, 0)
 {% endtabs %} 
 
 ![Manual cropping](Images/ManualCrop.png) 
+
+## See also
+
+[How to crop an image based on the ratio in the image editor](https://www.syncfusion.com/kb/11225/how-to-crop-an-image-based-on-the-ratio-in-the-image-editor)

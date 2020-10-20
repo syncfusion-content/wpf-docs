@@ -390,5 +390,6 @@ The leaf nodes are colored by using different ColorMappings available in the Tre
 
 ![](ColorMapping_images/ColorMapping_img5.png)
 
+## see also
 
-
+[How to apply gradient color mapping to SfTreeMap](https://www.syncfusion.com/kb/9802/how-to-apply-gradientcolormapping-to-sftreemap)

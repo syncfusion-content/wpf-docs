@@ -190,4 +190,8 @@ The following screenshot illustrates the result of the previous codes.
 ![Digital gauge getting started](Getting-Started_images/Getting-Started.png)
 
 
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).\
+
+## See also
+
+[How to apply themes for SfDigitalGauge](https://www.syncfusion.com/kb/2535/how-to-apply-themes-for-sfdigitalgauge)

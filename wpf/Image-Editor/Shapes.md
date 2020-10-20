@@ -212,3 +212,7 @@ You can make changes on the settings such as stroke etc. This is applied after t
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to load the image annotated with shapes and text on the image editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)

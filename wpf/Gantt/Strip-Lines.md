@@ -372,5 +372,6 @@ To view samples:
 5. Expand the Interactive Features item in the Sample Browser.
 6. Choose the Strip Lines sample to launch.
 
+## see also
 
-
+[How to enable horizontal lines for gantt chart rows](https://www.syncfusion.com/kb/3067/how-to-enable-horizontal-lines-for-ganttcharts-rows)

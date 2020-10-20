@@ -357,3 +357,7 @@ The following screenshot illustrates the result of the previous codes.
 
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedLinearGauge).
+
+## See also
+
+[How to apply themes for SfLinearGauge](https://www.syncfusion.com/kb/2534/how-to-apply-themes-for-sflineargauge)

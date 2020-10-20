@@ -67,5 +67,6 @@ GroupSelection support is also provided under selection support where the whole 
 
 ![](Selection-Support_images/Selection-Support_img2.png)
 
+## see also
 
-
+[How to highlight group selection](https://www.syncfusion.com/kb/7654/how-to-highlight-group-selection) 

@@ -217,5 +217,6 @@ this.TreeMap.DataContext = new PopulationViewModel();
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
+## see also
 
-
+[How to apply gradient color mapping to SfTreeMap](https://www.syncfusion.com/kb/9802/how-to-apply-gradientcolormapping-to-sftreemap)

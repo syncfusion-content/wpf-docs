@@ -129,5 +129,6 @@ To view samples:
 5. Expand the Interactive Features item in the Sample Browser
 6. Choose Highlighting Tasks to launch the sample.
 
+## see also
 
-
+[How to view the gantt control with the desired date tasks at load time in WPF](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)
