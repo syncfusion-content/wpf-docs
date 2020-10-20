@@ -41,7 +41,7 @@ sfTreeView.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView in Edit Mode](Editing_images/Editing_image1.png);
+![WPF TreeView in Edit Mode](Editing_images/Editing_image1.png)
 
 ## Programmatic Editing
 
