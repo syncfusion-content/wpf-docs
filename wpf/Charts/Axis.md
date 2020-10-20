@@ -1609,6 +1609,81 @@ chart.PrimaryAxis = new NumericalAxis()
 
 N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
 
+## Customize individual axis elements
+
+The [`RangeStyles`] can be used to customize the gridlines, ticks and axis labels for a specific region of ChartAxis. The following properties are used to customize the specific range in an axis:
+
+[`Start`] - Sets the start range of an axis
+[`End`] - Sets the end range of an axis
+[`MajorGridLineStyle`] - Customizes the major grid lines of an axis.
+[`MinorGridLineStyle`] -  Customizes the minor grid lines of an axis.
+[`MajorTickStyle`] - Customizes the major tick lines of an axis.
+[`MinorTickStyle`] - Customizes the minor tick lines of an axis.
+[`LabelStyle`] -  Customizes the axis labels for a specific range.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+
+  <syncfusion:SfChart.Resources>
+
+         <Style TargetType="Line" x:Key="lineStyle">
+
+                <Setter Property="StrokeThickness" Value="2"/>
+
+                <Setter Property="Stroke" Value="Orange"/>
+
+        </Style>
+
+</syncfusion:SfChart.Resources>
+
+<syncfusion:SfChart.SecondaryAxis>  
+
+    <syncfusion:NumericalAxis>
+          <syncfusion:NumericalAxis.RangeStyles>
+                <syncfusion:ChartAxisRangeStyleCollection>
+                      <syncfusion:ChartAxisRangeStyle Start="500" End="1500" MajorGridLineStyle= "{StaticResource lineStyle}" MajorTickLineStyle = "{StaticResource lineStyle}">                    <syncfusion:ChartAxisRangeStyle.LabelStyle>
+            <syncfusion:LabelStyle Foreground="Violet" />
+          </syncfusion:ChartAxisRangeStyle.LabelStyle>
+                     </syncfusion:ChartAxisRangeStyle>
+                </syncfusion:ChartAxisRangeStyleCollection>
+            </syncfusion:NumericalAxis.RangeStyles>
+    </syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+             NumericalAxis secondaryAxis = new NumericalAxis();
+
+            ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
+
+            ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 500, End = 1500 };
+
+            rangeStyle.MajorGridLineStyle = chart.Resources["LineStyle"] as Style ;
+
+            rangeStyle.LabelStyle = new LabelStyle();
+
+            rangeStyle.LabelStyle.Foreground = new SolidColorBrush(Colors.Red);
+
+            rangeStyle.MajorTickLineStyle = chart.Resources["lineStyle"] as Style;
+            
+            axisRangeStyles.Add(rangeStyle);
+
+            secondaryAxis.RangeStyles = axisRangeStyles;
+
+       chart.SecondaryAxis = secondaryAxis;
+            
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RangeStyle support in WPF Chart](Axis_images/RangeStyle.jpeg)
+
 ## AxisLine
 
 SfChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
@@ -3882,7 +3957,7 @@ In the above screenshot, the LineSeries is plotted based on additional X & Y axe
 
 ## Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsProperty) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_StartProperty) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_EndProperty) range values. You can add any number of labels to an axis. The following code example illustrates how to set a multilevel label.
+[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabels) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) range values. You can add any number of labels to an axis. The following code example illustrates how to set a multilevel label.
 
 {% tabs %}
 
@@ -3935,7 +4010,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Regarding** **Start** **and** **End** **Properties**
 
-[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_StartProperty) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_EndProperty) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects. You can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table.
+[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects. You can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table.
 
 <table>
 <tr>
@@ -3987,7 +4062,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderWidthProperty) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderBrushProperty) properties of chart axis. It can be set as shown in the following code example.
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderWidth) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderBrush) properties of chart axis. It can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -4047,7 +4122,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Type**
 
-[`Chart Axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html). It can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderTypeProperty) property. The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderTypeProperty) is [`Rectangle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) ,[`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html).
+[`Chart Axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html). It can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) property. The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) is [`Rectangle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) ,[`None`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BorderType.html).
 
 **Rectangle**
 
@@ -4707,7 +4782,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontSizeProperty), [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontFamilyProperty) and [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_ForegroundProperty) properties. It is shown in following code example.
+[`ChartMultiLevelLabels`]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html)) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontSizeProperty), [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontFamilyProperty) and [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_ForegroundProperty) properties. It is shown in following code example.
 
 {% tabs %}
 
@@ -5375,9 +5450,9 @@ The [`LabelCreated`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 * [`LabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) - Gets or sets the content of label.
 * [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets or sets the position of label.
 
-### AxisBoundChanged
+### AxisBoundsChanged
 
-The [`AxisBoundChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the bounds of the axis are changed. This argument contains the following information.
+The [`AxisBoundsChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the bounds of the axis are changed. This argument contains the following information.
 
 * [`NewBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisBoundsEventArgs_NewBounds) - Gets the new axis bounds.
 * [`OldBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisBoundsEventArgs_OldBounds) - Gets the old axis bounds.
