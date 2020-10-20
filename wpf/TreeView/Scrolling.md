@@ -105,5 +105,5 @@ By default, horizontal scrollbar is not enabled in the TreeView. If you want to 
 {% endhighlight %}
 {% endtabs %}
 
-[WPF TreeView with horizontal scrolling enabled](Scrolling_images/Scrolling_image1.png)
+![WPF TreeView with horizontal scrolling enabled](Scrolling_images/Scrolling_image1.png)
 
