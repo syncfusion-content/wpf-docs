@@ -203,7 +203,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Custom palette in WPF Chart](3D-Charts_images/Appearance/palette_5.png)
+![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte.png)
 
 
 You can define the custom palette for series as in the below code example:
