@@ -1699,7 +1699,7 @@ The [`RangeStyles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts
 
 {% endtabs %}
 
-![RangeStyle support in WPF Chart](Axis_images/RangeStyle.jpg)
+![RangeStyle support in WPF Chart](Axis_images/RangeStyle.JPG)
 
 ## AxisLine
 
