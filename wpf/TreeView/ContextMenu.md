@@ -43,7 +43,7 @@ The TreeView provides support for the following built-in commands
 {% endhighlight %}
 {% endtabs %}
 
-[WPF TreeView with ContextMenu using built-in commands](ContextMenu_images/ContextMenu_image1.png)
+![WPF TreeView with ContextMenu using built-in commands](ContextMenu_images/ContextMenu_image1.png)
 
 ## Custom Commands
 
@@ -152,7 +152,7 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-[WPF TreeView with ContextMenu using custom commands](ContextMenu_images/ContextMenu_image2.png)
+![WPF TreeView with ContextMenu using custom commands](ContextMenu_images/ContextMenu_image2.png)
 
 ## Events
 
