@@ -23,7 +23,7 @@ The `DockingManager` control implements an architecture that allows child contro
 
 **Themes** - Supports several built-in themes such as Metro, Office2016, etc.
 
-**Tab Switchers** - Supports various window switchers for navigating betweeen tabs.
+**Tab Switchers** - Supports various window switchers for navigating between tabs.
 
 **Customization** - Supports to customize the appearance of Float, Document, AutoHidden and Tabbed windows.
 
