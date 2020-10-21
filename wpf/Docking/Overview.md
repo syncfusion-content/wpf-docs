@@ -23,16 +23,18 @@ The `DockingManager` control implements an architecture that allows child contro
 
 **Themes** - Supports several built-in themes such as Metro, Office2016, etc.
 
-**Customization** - Supports to customize the appearance of Float, Tab and AutoHidden and Tabbed windows.
+**Tab Switchers** - Supports various window switchers for navigating betweeen tabs.
+
+**Customization** - Supports to customize the appearance of Float, Document, AutoHidden and Tabbed windows.
 
 **Nested Layout** - Provides complete support to add the docking manager as a child window to another docking manager.
 
 **Serialization** - Allows to save and load dock panels states in different formats such as binary and XML.
 
-**ContextMenu** - Provides built-in context menu support for tabbed controls, hide and auto hidden tabs to change the states.
+**ContextMenu** - Provides support to built-in context menu option for float, close, pin and tab docking windows or child.
 
-**Drag providers** - Provides support various styles of drag providers. The types are Border, Shadow and Content dragging.  
+**Drag providers** - Provides support various styles of drag providers.
 
-**Tooltip** - Provides tooltip support for all default buttons.
+**Tooltip** - Provides tooltip support for all default buttons and docking window header.
 
 **Localization** - Support complete localization to any desired language of header and context menus of docking windows.
