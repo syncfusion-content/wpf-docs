@@ -149,3 +149,56 @@ private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 Here, the `Name` and `DOB`property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.
+
+## Change property name column width
+
+By default, name of the property items and its value column are splits the available width equally. If you want to changes the property name column width, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. After changing the property name column width, you can easily reset to the default column width by setting the `PropertyNameColumnDefinition` property values as `Auto`. The default value of `PropertyNameColumnDefinition` proeprty is `Auto`.
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24)
+        };
+    }
+}
+      
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid PropertyNameColumnDefinition="80"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+propertyGrid1.PropertyNameColumnDefinition = new GridLength(80);
+
+{% endhighlight %} 
+{% endtabs %}
+
+![PropertyName column width changed before application loading](Attribute-Images\PropertyNameColumnDefinition.png)
