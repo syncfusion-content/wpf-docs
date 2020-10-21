@@ -1611,15 +1611,15 @@ N> For category axis, small tick lines is not applicable since it is rendered ba
 
 ## Customize individual axis elements
 
-The [`RangeStyles`] can be used to customize the gridlines, ticks and axis labels for a specific region of ChartAxis. The following properties are used to customize the specific range in an axis:
+The [`RangeStyles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_RangeStyles) can be used to customize the gridlines, ticks and axis labels for a specific region of ChartAxis. The following properties are used to customize the specific range in an axis:
 
-[`Start`] - Sets the start range of an axis
-[`End`] - Sets the end range of an axis
-[`MajorGridLineStyle`] - Customizes the major grid lines of an axis.
-[`MinorGridLineStyle`] -  Customizes the minor grid lines of an axis.
-[`MajorTickStyle`] - Customizes the major tick lines of an axis.
-[`MinorTickStyle`] - Customizes the minor tick lines of an axis.
-[`LabelStyle`] -  Customizes the axis labels for a specific range.
+* [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_Start) - Sets the start range of an axis.
+* [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_End) - Sets the end range of an axis.
+* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_MajorGridLineStyle) - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_MinorGridLineStyle) -  Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_MajorTickLineStyle)  - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_MinorTickLineStyle) - Customizes the minor tick lines of an axis.
+* [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisRangeStyle.html#Syncfusion_UI_Xaml_Charts_ChartAxisRangeStyle_LabelStyle) -  Customizes the axis labels for a specific range.
 
 {% tabs %}
 
@@ -1628,11 +1628,19 @@ The [`RangeStyles`] can be used to customize the gridlines, ticks and axis label
 
   <syncfusion:SfChart.Resources>
 
+         <Style TargetType="Line" x:Key="RangeLineStyle">
+
+                <Setter Property="StrokeThickness" Value="2"/>
+
+                <Setter Property="Stroke" Value="RoyalBlue"/>
+
+        </Style>
+
          <Style TargetType="Line" x:Key="lineStyle">
 
                 <Setter Property="StrokeThickness" Value="2"/>
 
-                <Setter Property="Stroke" Value="Orange"/>
+                <Setter Property="Stroke" Value="Green"/>
 
         </Style>
 
@@ -1640,11 +1648,14 @@ The [`RangeStyles`] can be used to customize the gridlines, ticks and axis label
 
 <syncfusion:SfChart.SecondaryAxis>  
 
-    <syncfusion:NumericalAxis>
-          <syncfusion:NumericalAxis.RangeStyles>
+    <syncfusion:NumericalAxis MajorGridLineStyle= "{StaticResource lineStyle}" MajorTickLineStyle="{StaticResource lineStyle}">
+        <syncfusion:NumericalAxis.LabelStyle>
+            <syncfusion:LabelStyle Foreground="Green"/>
+        </syncfusion:NumericalAxis.LabelStyle>    
+        <syncfusion:NumericalAxis.RangeStyles>
                 <syncfusion:ChartAxisRangeStyleCollection>
-                      <syncfusion:ChartAxisRangeStyle Start="500" End="1500" MajorGridLineStyle= "{StaticResource lineStyle}" MajorTickLineStyle = "{StaticResource lineStyle}">                    <syncfusion:ChartAxisRangeStyle.LabelStyle>
-            <syncfusion:LabelStyle Foreground="Violet" />
+                      <syncfusion:ChartAxisRangeStyle Start="18" End="22" MajorGridLineStyle= "{StaticResource RangeLineStyle}" MajorTickLineStyle = "{StaticResource RangeLineStyle}">                    <syncfusion:ChartAxisRangeStyle.LabelStyle>
+            <syncfusion:LabelStyle Foreground="RoyalBlue" />
           </syncfusion:ChartAxisRangeStyle.LabelStyle>
                      </syncfusion:ChartAxisRangeStyle>
                 </syncfusion:ChartAxisRangeStyleCollection>
@@ -1657,19 +1668,25 @@ The [`RangeStyles`] can be used to customize the gridlines, ticks and axis label
 
 {% highlight c# %}
 
-             NumericalAxis secondaryAxis = new NumericalAxis();
+            NumericalAxis secondaryAxis = new NumericalAxis();
 
+            secondaryAxis.MajorGridLineStyle = chart.Resources["lineStyle"] as Style ;
+
+            secondaryAxis.MajorTickLineStyle = chart.Resources["lineStyle"] as Style;
+
+            secondaryAxis.LabelStyle.Foreground = new SolidColorBrush(Colors.Green);
+     
             ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
 
-            ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 500, End = 1500 };
+            ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 18, End = 22 };
 
-            rangeStyle.MajorGridLineStyle = chart.Resources["LineStyle"] as Style ;
+            rangeStyle.MajorGridLineStyle = chart.Resources["RangeLineStyle"] as Style ;
 
             rangeStyle.LabelStyle = new LabelStyle();
 
-            rangeStyle.LabelStyle.Foreground = new SolidColorBrush(Colors.Red);
+            rangeStyle.LabelStyle.Foreground = new SolidColorBrush(Colors.RoyalBlue);
 
-            rangeStyle.MajorTickLineStyle = chart.Resources["lineStyle"] as Style;
+            rangeStyle.MajorTickLineStyle = chart.Resources["RangeLineStyle"] as Style;
             
             axisRangeStyles.Add(rangeStyle);
 
