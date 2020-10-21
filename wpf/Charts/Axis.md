@@ -4799,7 +4799,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabels`]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html)) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontSizeProperty), [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontFamilyProperty) and [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_ForegroundProperty) properties. It is shown in following code example.
+[`ChartMultiLevelLabel`]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html)) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontSizeProperty), [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontFamilyProperty) and [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_ForegroundProperty) properties. It is shown in following code example.
 
 {% tabs %}
 
