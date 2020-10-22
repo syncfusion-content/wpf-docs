@@ -258,3 +258,302 @@ propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("DemoPr
 ![PropertyGrid with nested Collection Editor](CollectionEditor_Images/CollectionEditor_Nested.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/NestedCollectionEditor) on GitHub
+
+## Readonly mode for collection type properties
+
+If you want to restrict the user to add or remove the items in the collection type properties, handle the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and set the [CollectionEditorOpeningEventArgs.IsReadonly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html#Syncfusion_Windows_PropertyGrid_CollectionEditorOpeningEventArgs_IsReadonly) property value as `true`. The default value of `CollectionEditorOpeningEventArgs.IsReadonly` property is `false`.
+
+N> You cannot able to add or remove the items into the collection type properties. But, you can edit and save the existing items that are available in the collection type properties.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Customer {
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class Employee {
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class CustomerCollection : ObservableCollection<Customer> {
+    public CustomerCollection() { }
+    public override string ToString() {
+        return "Customer List";
+    }
+}
+
+public class EmployeeList : List<Employee> {
+    public EmployeeList() { }
+    public override string ToString() {
+        return "Employee List";
+    }
+}
+
+public class Product {
+    public int CompanyID { get; set; }
+    public string ProductName { get; set; }
+    public CustomerCollection Customers { get; set; }
+    public EmployeeList Employees { get; set; }
+}
+
+public class ViewModel {
+    public Product DemoProduct { get; set; }
+
+    public ViewModel() {
+        DemoProduct = new Product()
+        {
+            CompanyID = 157,
+            ProductName = "Laptop",
+            Customers = new CustomerCollection
+            {
+                new Customer() { ID = 0, Name = "John", Phone = "2065349857" },
+                new Customer() { ID = 1, Name = "Peter", Phone = "2065981189" }
+            },
+
+            Employees = new EmployeeList
+            {
+                new Employee() { ID = 0, Name = "Mark", Phone = "2065489864" },
+                new Employee() { ID = 1, Name = "David", Phone = "2063481135" }
+            }
+        };
+    }
+}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid CollectionEditorOpening="propertyGrid_CollectionEditorOpening"
+                         SelectedObject="{Binding DemoProduct}" 
+                         x:Name="propertyGrid">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("DemoProduct"));
+propertyGrid.CollectionEditorOpening += propertyGrid_CollectionEditorOpening;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the `CollectionEditorOpening` event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid_CollectionEditorOpening(object sender, CollectionEditorOpeningEventArgs e)
+{
+    //Enbling the readonly collection editor
+    e.IsReadonly = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Collection editor loaded in readonly mode](CollectionEditor_Images/CollectionEditorredonly.png)
+
+Here, `Add` and `Remove` buttons are disabled. `Ok` and `Cancel` button are enabled to edit the existing item values.
+
+## Readonly mode for specific property of collection type
+
+If you want to restrict the user to add or remove the items in the specific property of collection type, create that collection property as the type of `ReadOnlyCollection`.
+
+N> You cannot able to add or remove the items into the readonly collection type properties. But, you can edit and save the existing items that are available in the readonly collection type properties.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Customer
+{
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class Employee
+{
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class Product
+{
+    public int CompanyID { get; set; }
+    public string ProductName { get; set; }        
+    public List<Employee> Employees { get; set; }
+
+    internal List<Customer> customers;
+    public ReadOnlyCollection<Customer> Customers
+    {
+        get 
+        {
+            return customers.AsReadOnly();
+        }
+    }
+}
+
+public class ViewModel
+{
+    public Product DemoProduct { get; set; }
+
+    public ViewModel()
+    {
+        DemoProduct = new Product()
+        {
+            CompanyID = 157,
+            ProductName = "Laptop",
+            customers = new List<Customer>
+            {
+                new Customer() { ID = 0, Name = "John", Phone = "2065349857" },
+                new Customer() { ID = 1, Name = "Peter", Phone = "2065981189" }
+            },
+            Employees = new List<Employee>()
+            {
+                new Employee() { ID = 0, Name = "Mark", Phone = "2065489864" },
+                new Employee() { ID = 1, Name = "David", Phone = "2063481135" }
+            }
+        };             
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding DemoProduct}" 
+                         x:Name="propertyGrid">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("DemoProduct"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Specific collection type property is loaded in readonly mode](CollectionEditor_Images/SpecificCollectionEditorredonly.png)
+
+Here, `Customers` property is a readonly collection type property. So, you cannot able to add or remove the items into the `Customers` property. 
+
+## Restrict collection editor window for collection type properties
+
+You can restirct the opening of collection editor window which used to edit the collection type properties in `PropertyGrid` by handling the [CollectionEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CollectionEditorOpening) event and set the [CollectionEditorOpeningEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CollectionEditorOpeningEventArgs.html) property value as `true`. The default value of `CollectionEditorOpeningEventArgs.Cancel` property is `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Customer {
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class Employee {
+    public int ID { get; set; }
+    public string Name { get; set; }
+    public string Phone { get; set; }
+}
+
+public class CustomerCollection : ObservableCollection<Customer> {
+    public CustomerCollection() { }
+    public override string ToString() {
+        return "Customer List";
+    }
+}
+
+public class EmployeeList : List<Employee> {
+    public EmployeeList() { }
+    public override string ToString() {
+        return "Employee List";
+    }
+}
+
+public class Product {
+    public int CompanyID { get; set; }
+    public string ProductName { get; set; }
+    public CustomerCollection Customers { get; set; }
+    public EmployeeList Employees { get; set; }
+}
+
+public class ViewModel {
+    public Product DemoProduct { get; set; }
+
+    public ViewModel() {
+        DemoProduct = new Product()
+        {
+            CompanyID = 157,
+            ProductName = "Laptop",
+            Customers = new CustomerCollection
+            {
+                new Customer() { ID = 0, Name = "John", Phone = "2065349857" },
+                new Customer() { ID = 1, Name = "Peter", Phone = "2065981189" }
+            },
+
+            Employees = new EmployeeList
+            {
+                new Employee() { ID = 0, Name = "Mark", Phone = "2065489864" },
+                new Employee() { ID = 1, Name = "David", Phone = "2063481135" }
+            }
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid CollectionEditorOpening="propertyGrid_CollectionEditorOpening"
+                         SelectedObject="{Binding DemoProduct}" 
+                         x:Name="propertyGrid">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("DemoProduct"));
+propertyGrid.CollectionEditorOpening += propertyGrid_CollectionEditorOpening;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the `CollectionEditorOpening` event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid_CollectionEditorOpening(object sender, CollectionEditorOpeningEventArgs e)
+{
+    //Restrict collection editor window opening
+    e.Cancel = false;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid restrict the collection editor window opening](CollectionEditor_Images/CollectionEditorOpening.png)
