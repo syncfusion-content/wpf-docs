@@ -353,7 +353,7 @@ You can handle the `CollectionEditorOpening` event as follows,
 
 private void propertyGrid_CollectionEditorOpening(object sender, CollectionEditorOpeningEventArgs e)
 {
-    //Enbling the readonly collection editor
+    //Enabling the readonly collection editor
     e.IsReadonly = true;
 }
 

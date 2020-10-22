@@ -162,7 +162,7 @@ Here, the `SelectedEmployee` object is set as `SelectedObject` for the `Property
 
 ## Change property name column width
 
-By default, name of the property items and its value column are splits the available width equally. If you want to changes the property name column width, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. After changing the property name column width, you can easily reset to the default column width by setting the `PropertyNameColumnDefinition` property values as `Auto`. The default value of `PropertyNameColumnDefinition` proeprty is `Auto`.
+By default, name of the property items and its value column are splits the available width equally. If you want to changes the property name column width, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. After changing the property name column width, you can easily reset to the default column width by setting the `PropertyNameColumnDefinition` property values as `Auto`. The default value of `PropertyNameColumnDefinition` property is `Auto`.
 
 {% tabs %}
 {% highlight C# %}
