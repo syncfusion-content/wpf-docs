@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Crop
+# Crop support in SfImageEditor
 
 An image can be cropped using toolbar and programmatically.
 

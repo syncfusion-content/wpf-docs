@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfImageEditor
 
 This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes, text, path (i.e. free hand drawing), zoom, and pan.
 

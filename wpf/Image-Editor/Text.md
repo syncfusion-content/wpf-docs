@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Text
+# Text in SfImageEditor
 
 You can annotate an image by adding the desired text to it. This can be done in the following two ways:
 

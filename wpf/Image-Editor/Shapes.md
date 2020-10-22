@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Shapes
+# Shapes in SfImageEditor
 
 You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also image editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
 
