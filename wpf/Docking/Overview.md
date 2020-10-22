@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of DockingManager | WPF | Syncfusion
-description: WPF DockingManager control provides an interface to create Visual Studio-like dock windows and provides floating panels, autohide, and tabbed documents.
+description: WPF DockingManager control provides an interface to create a Visual Studio-like dock windows and provides the floating panels, autohide, and tabbed documents.
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -15,26 +15,26 @@ The `DockingManager` control implements an architecture that allows child contro
 
 ## Key features
 
-**DockState** - Supports different dock states such as Docking, Floating, AutoHide and Document.
+**DockState** : Supports the different dock states such as Docking, Floating, AutoHide and Document.
 
-**MDI** - Allows multiple windows to reside under a single parent window in Docking Manager.
+**MDI** : Allows the multiple windows to reside under a single parent window in the Docking Manager.
 
-**TDI** - Allows to add child window as document tab in Docking Manager.
+**TDI** : Allows adding the child window as a document tab in the Docking Manager.
 
-**Themes** - Supports several built-in themes such as Metro, Office2016, etc.
+**Themes** : Supports several built-in themes such as Metro, Office2016, and more.
 
-**Tab Switchers** - Supports various window switchers for navigating between tabs.
+**Tab Switchers** : Supports the various window switchers for navigating between the tabs.
 
-**Customization** - Supports to customize the appearance of Float, Document, AutoHidden and Tabbed windows.
+**Customization** : Supports to customize the appearance of Float, Document, AutoHidden and Tabbed windows.
 
-**Nested Layout** - Provides complete support to add the docking manager as a child window to another docking manager.
+**Nested Layout** : Provides complete support to add the docking manager as a child window to another docking manager.
 
-**Serialization** - Allows to save and load dock panels states in different formats such as binary and XML.
+**Serialization** : Allows you to save and load dock panels states in different formats such as binary and XML.
 
-**ContextMenu** - Provides support to built-in context menu option for float, close, pin and tab docking windows or child.
+**ContextMenu** : Provides support to the built-in context menu option for float, close, pin and tab docking windows or child.
 
-**Drag providers** - Provides support various styles of drag providers.
+**Drag providers** : Provides support for various styles of drag providers.
 
-**Tooltip** - Provides tooltip support for all default buttons and docking window header.
+**Tooltip** : Provides the tooltip support for all default buttons and docking window header.
 
-**Localization** - Support complete localization to any desired language of header and context menus of docking windows.
+**Localization** : Supports complete localization to any desired language of header and context menus of the docking windows.
