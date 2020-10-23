@@ -41,6 +41,30 @@ Here, `Red` color is selected color in the `ColorPickerPalette`.
 
 N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
+## Accessing a color brush programmatically
+
+You can get or change the selected brush of the `ColorPickerPalette` programmatically by setting the value to the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. The default value of `SelectedBrush` property is `Black`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette SelectedBrush="Yellow"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.SelectedBrush = Brushes.Yellow;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette programmatically picked the yellow color brush](Dealing-with-ColorPickerPalette_images/Colorbrushprogrammatically.png)
+
+Here, `Yellow` color brush is selected in the `ColorPickerPalette`.
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
+
 ## Setting automatic color
 
 If we want to change the default selected color on application launching, set the value for [AutomaticColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_AutomaticColor) property. If we changed the selected color, then we can easily make the default color as selected color by clicking the automatic color panel. We can hide the automatic color visibility by setting the [AutomaticColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_AutomaticColorVisibility) property value as `Collapsed`. The default value of `AutomaticColor` property is `Black` and the default value of `AutomaticColorVisibility` property is `Visible`.
