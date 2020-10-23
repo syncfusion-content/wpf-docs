@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | TreeMap | wpf | Syncfusion
-description: TreeMaps are ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables.
+description: This scetion describes configuring the control through visual studioand through expression blend and customizing the syncfusion WPF SfTreeMap Control
 platform: wpf
 control: TreeMap
 documentation: ug

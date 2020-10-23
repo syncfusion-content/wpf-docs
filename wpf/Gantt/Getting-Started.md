@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| Gantt | Wpf | Syncfusion
-description: Gantt is a MS Project-like Project Viewer with built-in grid, schedule and resource assignment constraints. It is designed to assist project managers in developing plans.
+description: This section describes appearance and structure of Gantt, adding Gantt to an application, adjusting chart and grid size and schedule padding in WPF Gantt control.
 platform: wpf
 control: Gantt
 documentation: ug
