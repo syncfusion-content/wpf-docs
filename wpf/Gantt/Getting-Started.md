@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| Gantt | Wpf | Syncfusion
-description: This section describes appearance and structure of Gantt, adding Gantt to an application, adjusting chart and grid size and schedule padding in WPF Gantt control.
+description: This section describes the appearance and structure of Gantt, adding Gantt to an application, adjusting chart and grid size, and schedule padding in WPF Gantt.
 platform: wpf
 control: Gantt
 documentation: ug
