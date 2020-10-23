@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization| SfChart3D | Wpf | Syncfusion
-description: Explains the customizing and styling options to apply different kinds of themes or palettes to WPF Chart (SfChart 3D)
+description: Explains the customizing and styling options to apply the different kinds of themes or palettes to WPF Chart (SfChart 3D)
 platform: wpf
 control: SfChart3D
 documentation: ug
