@@ -51,8 +51,7 @@ chart.Palette = ChartColorPalette.Metro;
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_metro_Palatte.png)
-
+![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_metro_Palatte.PNG)
 
 The following code example defined the palette as a [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
@@ -72,7 +71,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_bluechrome_Palatte.png)
+![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_bluechrome_Palatte.PNG)
 
 
 ### Applying Palette to Segment
@@ -106,7 +105,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_Palatte.png)
+![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_Palatte.PNG)
 
 The following code example defined the palette as an **AutumnBrights**.
 
@@ -137,7 +136,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_AutumnBrights_Palatte.png)
+![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_AutumnBrights_Palatte.PNG)
 
 
 N> Metro palette is the default palette for both Series and Segment.
@@ -203,7 +202,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte.png)
+![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte.PNG)
 
 You can define the custom palette for the series as shown in the following code example:
 
@@ -253,7 +252,7 @@ chart.ColorModel = colorModel;
 
 {% endtabs %}
 
-![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte_chart.png)
+![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte_chart.PNG)
 
 
 ## SegmentColorPath
@@ -295,7 +294,7 @@ Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBr
 
 {% endtabs %}
 
-![SegmentColorPath in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_SegmentColorPath.png)
+![SegmentColorPath in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_SegmentColorPath.PNG)
 
 N> The SegmentColorPath property is not applicable to the Area and CircularSeries.
 
