@@ -798,7 +798,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ## BackStage items position
 
-The `BackStage` items listed below can be positioned either at top or bottom by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_BackStageCommandButton_Position) property.
+The `BackStage` items listed below can be positioned either at top or bottom by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackstageTabItem.html#Syncfusion_Windows_Tools_Controls_BackstageTabItem_Position) property.
 	
 * [BackStageCommandButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageCommandButton.html)
 * [BackStageTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackstageTabItem.html)
