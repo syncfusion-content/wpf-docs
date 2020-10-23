@@ -156,6 +156,8 @@ By default, you can change the width of property's name column by using grid spl
 
 You can use the `double` or `Star` values for changing the column definition. The default value of `PropertyNameColumnDefinition` property is `1*`. Property's value column always occupiers `1*`, which cannot be changed.
 
+N> `PropertyGrid.PropertyNameColumnWidth` property does not supports `Auto` size value.
+
 For example, if you set the value for `PropertyNameColumnDefinition` property to `200`, then property's name column occupies `200` pixels. On the other hands, if `0.5*` is set to `PropertyNameColumnDefinition` property, then property's name column occupies, one third of available width. Remaining two third is occupied by property's value column. 
 
 {% tabs %}

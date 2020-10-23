@@ -15,6 +15,69 @@ You can navigate to the carousel items by using the mouse or key navigation in t
 
 You can navigate to the previous or next carousel items one by one either backward or forward direction by pressing the keys in the keyboard.
 
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+public class Model {
+    private string header;
+    public string Header {
+        get { return header; }
+        set { header = value; }
+    }
+}
+
+//Viewmodel.cs
+public class ViewModel {
+    private ObservableCollection<Model> carouselItem;
+    public ObservableCollection<Model> CarouselItem {
+        get { return carouselItem; }
+        set { carouselItem = value; }
+    }
+    public ViewModel() {
+        CarouselItem = new ObservableCollection<Model>();
+        CarouselItem.Add(new Model() { Header = "Item1" });
+        CarouselItem.Add(new Model() { Header = "Item2" });
+        CarouselItem.Add(new Model() { Header = "Item3" });
+        CarouselItem.Add(new Model() { Header = "Item4" });
+        CarouselItem.Add(new Model() { Header = "Item5" });
+        CarouselItem.Add(new Model() { Header = "Item6" });
+        CarouselItem.Add(new Model() { Header = "Item7" });
+        CarouselItem.Add(new Model() { Header = "Item8" });
+        CarouselItem.Add(new Model() { Header = "Item9" });
+        CarouselItem.Add(new Model() { Header = "Item10" });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:Carousel Name="Carousel"
+                     ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.DataContext>
+        <local:ViewModel/>
+    </syncfusion:Carousel.DataContext>
+    <syncfusion:Carousel.ItemTemplate>
+        <DataTemplate>
+            <Border Height="40"
+                    Width="60"
+                    BorderBrush="Purple"
+                    BorderThickness="5"
+                    Background="LightBlue">
+                <TextBlock Text="{Binding Header}" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:Carousel.ItemTemplate>
+</syncfusion:Carousel>
+
+{% endhighlight %}
+{% endtabs %}
+
 The following table explains how to navigating the carousel item using keyboard,
 
 <table>
@@ -67,6 +130,50 @@ The following table explains how to navigating the carousel item using keyboard,
 <img src="Scrolling_images/PageDown.png" alt="Navigate to the next page item from the current page item"/></td>
 </tr>
 </table>
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
+
+## Navigate carousel item using scroll bar
+
+By default, scroll bars are in collapsed state. If you want to navigate to the previous or next item one by one from the currently selected item using scroll bars, you need to enable the visibilty of vertical or horizontal scroll bars by setting the `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties value as `Visible` or `auto`. 
+
+N> If you set `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.HorizontalScrollBarVisibility` properties value as `Auto`, the scroll bar is automatically visible, based on the items.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:Carousel ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                     Name="carousel"
+                     ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.DataContext>
+        <local:ViewModel/>
+    </syncfusion:Carousel.DataContext>
+    <syncfusion:Carousel.ItemTemplate>
+        <DataTemplate>
+            <Border Height="100"
+                    Width="100"
+                    BorderBrush="Purple"
+                    BorderThickness="5"
+                    Background="LightBlue">
+                <TextBlock Text="{Binding Header}" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:Carousel.ItemTemplate>
+</syncfusion:Carousel>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ScrollViewer.SetHorizontalScrollBarVisibility(carousel, ScrollBarVisibility.Visible);
+ScrollViewer.SetVerticalScrollBarVisibility(carousel, ScrollBarVisibility.Visible);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Navigate carousel item using scroll bars](Scrolling_images/scrollbar.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
@@ -132,43 +239,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 ## Looping items
 
 Carousel has looping functionality, it allows users to loop items after reaching the last item. In the `Standard` visual mode, the carousal items can be scrolled on the circular manner. But, on the `CustomPath` visual mode, the carousal items scrolled in linear manner and first or last item hidden from the view. If you want to bring the first or last item into view in circular manner, use [EnableLooping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableLooping) property value as `true`. The default value of `EnableLooping` property is `false`.
-
-{% tabs %}
-{% highlight C# %}
-
-//Model.cs
-public class Model {
-    private string header;
-    public string Header {
-        get { return header; }
-        set { header = value; }
-    }
-}
-
-//Viewmodel.cs
-public class ViewModel {
-    private ObservableCollection<Model> carouselItem;
-    public ObservableCollection<Model> CarouselItem {
-        get { return carouselItem; }
-        set { carouselItem = value; }
-    }
-    public ViewModel() {
-        CarouselItem = new ObservableCollection<Model>();
-        CarouselItem.Add(new Model() { Header = "Item1" });
-        CarouselItem.Add(new Model() { Header = "Item2" });
-        CarouselItem.Add(new Model() { Header = "Item3" });
-        CarouselItem.Add(new Model() { Header = "Item4" });
-        CarouselItem.Add(new Model() { Header = "Item5" });
-        CarouselItem.Add(new Model() { Header = "Item6" });
-        CarouselItem.Add(new Model() { Header = "Item7" });
-        CarouselItem.Add(new Model() { Header = "Item8" });
-        CarouselItem.Add(new Model() { Header = "Item9" });
-        CarouselItem.Add(new Model() { Header = "Item10" });
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 {% tabs %}
 {% highlight xaml %}
