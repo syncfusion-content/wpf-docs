@@ -13,7 +13,7 @@ Ribbon Customization can be done in two ways,
 
 ## Using Control Template
 
-User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
+User can customize the ribbon items by overriding the template of [SfSpreadsheetRibbon](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheetRibbon.html).
 
 ## Using Event
 
@@ -155,7 +155,7 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 
 ### Canceling a Ribbon commands
 
-You can cancel particular action of SpreadsheetRibbon commands by handling [CommandExecuting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.Helpers.CommandExecutionEventArgs.html) event.
+You can cancel particular action of SpreadsheetRibbon commands by handling [CommandExecuting](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Spreadsheet.Helpers.CommandExecutionEventArgs.html) event.
 
 {% tabs %}
 {% highlight xaml%}

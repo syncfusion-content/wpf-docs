@@ -30,11 +30,57 @@ The Thumb tooltip displays the current value where the Thumb stands.
                     ThumbToolTipPrecision="2"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
 ![Precision](Thumb-ToolTip_images/Thumb-ToolTip_img2.png)
+
+N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is N.
+
+
+## Thumb ToolTipFormat
+
+The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ToolTipFormat) property, specifies the format specifier by which to format the ToolTip display value. 
+
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    ToolTipFormat="C0"
+                    Value="50" />
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ToolTipFormat= C0,
+                Value = 50
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![Format](Thumb-ToolTip_images/ToolTip-Format.png)
+
+
+N> Default value of `ToolTipFormat` is N.
+
 
 ## Thumb ToolTip Position 
 
@@ -59,9 +105,9 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
                     ThumbToolTipPlacement="BottomRight"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -76,11 +122,11 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
-![BottomRight](Thumb-ToolTip_images/Thumb-ToolTip_img3.png)
+![BottomRight](Thumb-ToolTip_images/Thumb-ToolTip_img4.png)
 
 
 N> This option displays the tooltip to right in vertical orientation.
@@ -100,9 +146,9 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
                     ThumbToolTipPlacement="TopLeft"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -117,11 +163,11 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
-![TopLeft](Thumb-ToolTip_images/Thumb-ToolTip_img4.png)
+![TopLeft](Thumb-ToolTip_images/Thumb-ToolTip_img3.png)
 
 N> This option displays the tooltip to left in vertical orientation.
 
@@ -140,9 +186,9 @@ No Tooltip appears.
                     ThumbToolTipPlacement="None"
                     Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -157,7 +203,7 @@ No Tooltip appears.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -181,9 +227,9 @@ No Tooltip appears.
             ThumbInterval="10"
             Value="50" />
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C#%}
+{% highlight C# %}
 
             Grid parentGrid = new Grid();
             SfRangeSlider rangeSlider = new SfRangeSlider()
@@ -201,7 +247,7 @@ No Tooltip appears.
             parentGrid.Children.Add(rangeSlider);
             this.Content = parentGrid;
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}
 
