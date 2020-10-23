@@ -470,4 +470,4 @@ You can find the complete getting started sample from this [`link`](https://git
 
 [How to apply themes for SfCircularGauge](https://www.syncfusion.com/kb/2514/how-to-apply-themes-for-sfcirculargauge)
 
-[Creating dynamic application driven by excelling formulas using SfCircularGauge](https://www.syncfusion.com/kb/2391/creating-dynamic-application-driven-by-excelling-formulas-using-circulargauge)
+[How to create dynamic application driven by excelling formulas using SfCircularGauge](https://www.syncfusion.com/kb/2391/creating-dynamic-application-driven-by-excelling-formulas-using-circulargauge)
