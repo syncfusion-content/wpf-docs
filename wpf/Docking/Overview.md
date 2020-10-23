@@ -33,7 +33,7 @@ The `DockingManager` control implements an architecture that allows child contro
 
 **ContextMenu** : Provides support to the built-in context menu option for float, close, pin and tab docking windows or child.
 
-**Drag providers** : Provides support for various styles of drag providers.
+**Window Dragging** : Provides support for various styles of window dragging like border, shadow and content dragging.
 
 **Tooltip** : Provides the tooltip support for all default buttons and docking window header.
 
