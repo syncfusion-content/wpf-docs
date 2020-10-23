@@ -9,13 +9,13 @@ documentation: ug
 
 # Styling and Customization
 
-SfChart3D supports various customizing and styling options that allows you to enrich the application.
+SfChart3D supports various customizing and styling options that allow you to enrich the application.
 
 ## Palettes
 
-SfChart3D provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
+SfChart3D provides the options to apply the different kinds of themes or palettes to your chart. You can define the [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) either for the entire chart or for an individual series.
 
-We have some predefined palette such as
+We have some predefined palette such as,
 
 * Metro
 * AutumnBrights
@@ -54,7 +54,7 @@ chart.Palette = ChartColorPalette.Metro;
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Series_metro_Palatte.png)
 
 
-The following code example defined Palette as [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
+The following code example defined the palette as a [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 
@@ -108,7 +108,7 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_Segment_Palatte.png)
 
-The following code example defined Palette as **AutumnBrights**.
+The following code example defined the palette as an **AutumnBrights**.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ N> Metro palette is the default palette for both Series and Segment.
 
 ## Custom Palette
 
-SfChart3D provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
+SfChart3D provides an option that enables you to define your own color brushes with your preferred order for the Palette using the [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
 {% tabs %}
 
@@ -205,8 +205,7 @@ chart.Series.Add(series);
 
 ![Custom palette in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_custom_palatte.png)
 
-
-You can define the custom palette for series as in the below code example:
+You can define the custom palette for the series as shown in the following code example:
 
 {% tabs %}
 
@@ -259,7 +258,7 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property.
+The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property of series. The following code shows how to bind the color to the series with the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property.
 
 {% tabs %}
 
@@ -298,6 +297,6 @@ Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBr
 
 ![SegmentColorPath in WPF Chart](3D-Charts_images/Appearance/Wpf_Chart3D_SegmentColorPath.png)
 
-N> SegmentColorPath property is not applicable for Area and CircularSeries.
+N> The SegmentColorPath property is not applicable to the Area and CircularSeries.
 
 
