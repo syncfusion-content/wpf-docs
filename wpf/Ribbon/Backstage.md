@@ -484,6 +484,8 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  The [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_VectorImage) property is of type `ObservableCollection<Path>` which allows the image to be set as path type. The [`BackStageCommandButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.BackStageCommandButton.html) displays the [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_VectorImage) in 16 * 16 size.
 
+ N> The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_IconTemplate) property is the preferred option to set any type of image such as glyph, font or any custom content when compared to the [`VectorImage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html#Syncfusion_Windows_Tools_Controls_RibbonButton_VectorImage) property.
+
  {% tabs %}
 
  {% highlight XAML %}
