@@ -73,7 +73,7 @@ N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-col
 
 ## Select transparent color programmatically
 
-You can set a transparent color as selected color programmatcally by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
+You can set a transparent color as selected color programmatically by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -333,7 +333,7 @@ colorPickerPalette.Height = 40;
 
 N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `false`, then MoreColor option automatically hides.
 
-## Reset the selected color
+## Reset selected color
 
 If you want to reset the selected color as `Transparent` color, click the `No Color` button. You will be display the `No color` button only by setting the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property value as `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
 

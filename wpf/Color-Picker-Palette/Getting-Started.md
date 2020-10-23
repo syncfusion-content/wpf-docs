@@ -284,6 +284,28 @@ colorPickerPalette.Height = 40;
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
 
+## Reset selected color
+
+If you want to reset the selected color as `Transparent` color, click the `No Color` button. You will be display the `No color` button only by setting the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property value as `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette NoColorVisibility="Visible"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.NoColorVisibility = Visibility.Visible;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
+
 ## Selected brush or color changed notification
 
 The selected brush or color changed in `ColorPickerPalette` can be examined using `SelectedBrushChanged` event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties.
