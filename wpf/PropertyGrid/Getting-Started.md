@@ -160,59 +160,6 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 Here, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object.
 
-## Change property name column width
-
-By default, name of the property items and its value column are splits the available width equally. If you want to changes the property name column width, use the [PropertyNameColumnDefinition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_PropertyNameColumnDefinition) property. After changing the property name column width, you can easily reset to the default column width by setting the `PropertyNameColumnDefinition` property values as `Auto`. The default value of `PropertyNameColumnDefinition` property is `Auto`.
-
-{% tabs %}
-{% highlight C# %}
-
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
-public class Employee {
-    public string Name { get; set; }
-    public string ID { get; set; }
-    public DateTime DOB { get; set; }
-}
-
-public class ViewModel {
-    public Object SelectedEmployee { get; set; }
-    public ViewModel() {
-        SelectedEmployee = new Employee()
-        {
-            Name = "John",
-            ID = "381",
-            DOB = new DateTime(1995, 12, 24)
-        };
-    }
-}
-      
-{% endhighlight %}
-{% endtabs %} 
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid PropertyNameColumnDefinition="80"
-                         SelectedObject="{Binding SelectedEmployee}"
-                         x:Name="propertyGrid1">
-    <syncfusion:PropertyGrid.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </syncfusion:PropertyGrid.DataContext>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %} 
-{% highlight C# %}
-
-propertyGrid1.PropertyNameColumnDefinition = new GridLength(80);
-
-{% endhighlight %} 
-{% endtabs %}
-
-![PropertyName column width changed before application loading](Attribute-Images\PropertyNameColumnDefinition.png)
-
 ## Custom Editor as value editors
 
 The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection). 
@@ -322,7 +269,6 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 Here, The `EmailID` property is accepts only the inputs which are in the email-id format by the `EmailEditor`.
 
 ![Property grid with specified custom value editor for EmailID property](CustomEditor-support_images/CustomEditor-Attribute.png)
-
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
