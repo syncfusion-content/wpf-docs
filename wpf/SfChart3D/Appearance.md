@@ -39,13 +39,13 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 
 {% highlight xaml %}
 
-<chart:SfChart3D Height="250" Width="350" Palette="Metro"  >
+    <chart:SfChart3D Height="250" Width="350" Palette="Metro"  >
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.Palette = ChartColorPalette.Metro;
+    chart.Palette = ChartColorPalette.Metro;
 
 {% endhighlight %}
 
