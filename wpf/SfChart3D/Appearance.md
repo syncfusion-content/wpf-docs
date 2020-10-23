@@ -59,13 +59,13 @@ The following code example defined the palette as a [`BlueChrome`](https://help.
 
 {% highlight xaml %}
 
-<chart:SfChart3D Height="250" Width="350" Palette="BlueChrome">
+    <chart:SfChart3D Height="250" Width="350" Palette="BlueChrome">
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.Palette = ChartColorPalette.BlueChrome;
+    chart.Palette = ChartColorPalette.BlueChrome;
 
 {% endhighlight %}
 
@@ -82,7 +82,7 @@ Each palette applies a set of predefined brushes to the segment in a predefined 
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
+    <syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
                            XBindingPath="XValue"
                            YBindingPath="YValue"
                            Palette="Metro"/>
@@ -91,15 +91,15 @@ Each palette applies a set of predefined brushes to the segment in a predefined 
 						   
 {% highlight c# %}
 
-ColumnSeries3D columnSeries = new ColumnSeries3D()
-{
-    ItemsSource = viewModel.Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    Palette = ChartColorPalette.Metro
-};
+    ColumnSeries3D columnSeries = new ColumnSeries3D()
+    {
+        ItemsSource = viewModel.Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        Palette = ChartColorPalette.Metro
+    };
 
-chart.Series.Add(columnSeries);
+    chart.Series.Add(columnSeries);
 
 {% endhighlight %}
 
@@ -113,7 +113,7 @@ The following code example defined the palette as an **AutumnBrights**.
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
+    <syncfusion:ColumnSeries3D ItemsSource="{Binding Data}"
                            XBindingPath="XValue"
                            YBindingPath="YValue"
                            Palette="AutumnBrights"/>
@@ -122,15 +122,15 @@ The following code example defined the palette as an **AutumnBrights**.
 
 {% highlight c# %}
 
-ColumnSeries3D columnSeries = new ColumnSeries3D()
-{
-    ItemsSource = viewModel.Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    Palette = ChartColorPalette.AutumnBrights
-};
+    ColumnSeries3D columnSeries = new ColumnSeries3D()
+    {
+        ItemsSource = viewModel.Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        Palette = ChartColorPalette.AutumnBrights
+    };
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -149,54 +149,54 @@ SfChart3D provides an option that enables you to define your own color brushes w
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries3D  YBindingPath="Percentage" Palette="Custom"
+    <chart:DoughnutSeries3D  YBindingPath="Percentage" Palette="Custom"
 
-XBindingPath="Category" ItemsSource="{Binding Tax}" >   
+    XBindingPath="Category" ItemsSource="{Binding Tax}" >   
 
-<chart:DoughnutSeries3D.ColorModel>
+    <chart:DoughnutSeries3D.ColorModel>
 
-<chart:ChartColorModel>
+    <chart:ChartColorModel>
 
-<chart:ChartColorModel.CustomBrushes>
+    <chart:ChartColorModel.CustomBrushes>
 
-<SolidColorBrush Color="Cyan"/>
+    <SolidColorBrush Color="Cyan"/>
 
-<SolidColorBrush Color="DarkCyan"/>                                                
+    <SolidColorBrush Color="DarkCyan"/>                                                
 
-</chart:ChartColorModel.CustomBrushes>
+    </chart:ChartColorModel.CustomBrushes>
 
-</chart:ChartColorModel>
+    </chart:ChartColorModel>
 
-</chart:DoughnutSeries3D.ColorModel>
+    </chart:DoughnutSeries3D.ColorModel>
 
-</chart:DoughnutSeries3D>
+    </chart:DoughnutSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartColorModel colorModel = new ChartColorModel();
+    ChartColorModel colorModel = new ChartColorModel();
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
+    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Cyan));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
+    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
 
-DoughnutSeries3D series = new DoughnutSeries3D()
-{
+    DoughnutSeries3D series = new DoughnutSeries3D()
+    {
 
-    ItemsSource = new ViewModel().Tax,
+        ItemsSource = new ViewModel().Tax,
 
-    XBindingPath = "Category",
+        XBindingPath = "Category",
 
-    YBindingPath = "Percentage",
+        YBindingPath = "Percentage",
 
-    Palette = ChartColorPalette.Custom,
+        Palette = ChartColorPalette.Custom,
 
-    ColorModel = colorModel
+        ColorModel = colorModel
 
-};
+    };
 
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -210,43 +210,43 @@ You can define the custom palette for the series as shown in the following code 
 
 {% highlight xaml %}
 
-<chart:SfChart3D Height="250" Width="350" Palette="Custom">
+    <chart:SfChart3D Height="250" Width="350" Palette="Custom">
 
-<chart:SfChart3D.ColorModel>
+    <chart:SfChart3D.ColorModel>
 
-<chart:ChartColorModel>
+    <chart:ChartColorModel>
 
-<chart:ChartColorModel.CustomBrushes>
+    <chart:ChartColorModel.CustomBrushes>
 
-<SolidColorBrush Color="BlueViolet"/>
+    <SolidColorBrush Color="BlueViolet"/>
 
-<SolidColorBrush Color="PeachPuff"/>
+    <SolidColorBrush Color="PeachPuff"/>
 
-<SolidColorBrush Color="Purple"/>
+    <SolidColorBrush Color="Purple"/>
 
-</chart:ChartColorModel.CustomBrushes>
+    </chart:ChartColorModel.CustomBrushes>
 
-</chart:ChartColorModel>
+    </chart:ChartColorModel>
 
-</chart:SfChart3D.ColorModel>
+    </chart:SfChart3D.ColorModel>
 
-</chart:SfChart3D>
+    </chart:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-chart.Palette = ChartColorPalette.Custom;
+    chart.Palette = ChartColorPalette.Custom;
 
-ChartColorModel colorModel = new ChartColorModel();
+    ChartColorModel colorModel = new ChartColorModel();
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
+    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.BlueViolet));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
+    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.PeachPuff));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
+    colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Purple));
 
-chart.ColorModel = colorModel;
+    chart.ColorModel = colorModel;
 
 {% endhighlight %}
 
@@ -263,31 +263,31 @@ The color for the chart segments can be bound from its items source collection b
 
 {% highlight xaml %}
 
-<chart:ColumnSeries3D ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentColorPath="ColorPath">
+    <chart:ColumnSeries3D ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue" SegmentColorPath="ColorPath">
 
-</chart:ColumnSeries3D>
+    </chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries3D series = new ColumnSeries3D()
+    ColumnSeries3D series = new ColumnSeries3D()
  
-{
+    {
         
-    ItemsSource = viewModel.Data,
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    SegmentColorPath = "ColorPath"
+        ItemsSource = viewModel.Data,
+        XBindingPath = "XValue",
+        YBindingPath = "YValue",
+        SegmentColorPath = "ColorPath"
             
-};
+    };
 
-Data = new ObservableCollection<Model>();
-Data.Add(new Model() { XValue = "Jan", YValue = 10, ColorPath = new SolidColorBrush(Colors.Cyan) });
-Data.Add(new Model() { XValue = "Feb", YValue = 24, ColorPath = new SolidColorBrush(Colors.Pink) });
-Data.Add(new Model() { XValue = "Mar", YValue = 18, ColorPath = new SolidColorBrush(Colors.Red) });
-Data.Add(new Model() { XValue = "Apr", YValue = 16, ColorPath = new SolidColorBrush(Colors.Orange) });
-Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBrush(Colors.LightGreen) });
+    Data = new ObservableCollection<Model>();
+    Data.Add(new Model() { XValue = "Jan", YValue = 10, ColorPath = new SolidColorBrush(Colors.Cyan) });
+    Data.Add(new Model() { XValue = "Feb", YValue = 24, ColorPath = new SolidColorBrush(Colors.Pink) });
+    Data.Add(new Model() { XValue = "Mar", YValue = 18, ColorPath = new SolidColorBrush(Colors.Red) });
+    Data.Add(new Model() { XValue = "Apr", YValue = 16, ColorPath = new SolidColorBrush(Colors.Orange) });
+    Data.Add(new Model() { XValue = "May", YValue = 28, ColorPath = new SolidColorBrush(Colors.LightGreen) });
 
 
 {% endhighlight %}
