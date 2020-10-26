@@ -209,30 +209,11 @@ The following screenshot illustrates the control after zooming into weeks of dat
 
 ## Thumb style customization
 
-The date-time range navigator control provides the following properties to customize the elements such as upper bar, lower bar, left thumb, and right thumb.
+SfDateTimeRangeNavigator provides the following properties to customize the left and right thumb.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-{{'[`LeftThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle)'| markdownify }}</td><td>
-Defines the style for the left thumb of the navigator.</td></tr>
-<tr>
-<td>
-{{'[`RightThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)'| markdownify }}</td><td>
-Defines the style for the right thumb of the navigator.</td></tr>
-<tr>
-<td>
-{{'[`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle)'| markdownify }}</td><td>
-Defines the style for line in the left or right thumb.</td></tr>
-<tr>
-<td>
-{{'[`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate)'| markdownify }}</td><td>
-Defines the style for symbol placed in the left or right thumb.</td></tr>
-</table>
+* [`LeftThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle)- Gets or sets the thumb style for left thumb.
+* [`RightThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)- Gets or sets the right thumb style.
+* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate)- Gets or sets the data template for the symbol.
 
 {% tabs %}
 
@@ -268,6 +249,8 @@ Defines the style for symbol placed in the left or right thumb.</td></tr>
 
 </syncfusion:SfDateTimeRangeNavigator>
 
+{% endhighlight %}
+
 {% highlight c# %}
 
 {% endhighlight  %}
@@ -297,6 +280,90 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 The following screenshot illustrates the control after customizing the right thumb.
 
 ![Thumb customization support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.png)
+
+* [`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle)- Gets or sets the style for the thumb line.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Grid x:Name="grid">
+
+<Grid.Resources>
+
+    <Style TargetType="Line" x:Key="lineStyle1">
+
+        <Setter Property="Stroke" Value="Red"></Setter>
+
+        <Setter Property="StrokeThickness" Value="3"></Setter>
+
+        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
+
+    </Style>
+
+    <Style TargetType="Line" x:Key="lineStyle2">
+
+        <Setter Property="Stroke" Value="Red"></Setter>
+
+        <Setter Property="StrokeThickness" Value="3"></Setter>
+
+        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
+
+    </Style>
+
+</Grid.Resources>
+
+<syncfusion:SfDateTimeRangeNavigator>
+
+    <syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
+
+        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle1}"/>
+
+     </syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
+
+    <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle2}"/>
+
+    </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+</syncfusion:SfDateTimeRangeNavigator>
+
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ThumbStyle thumbLineStyle1 = new ThumbStyle()
+{
+
+    LineStyle = grid.Resources["lineStyle1"] as DataTemplate
+
+};
+
+ThumbStyle thumbLineStyle2 = new ThumbStyle()
+{
+
+    LineStyle = grid.Resources["lineStyle2"] as DataTemplate
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    LineStyle = thumbLineStyle1,
+
+    LineStyle = thumbLineStyle2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![LineThumbStyle](Interactivity_images/LineStyle.jpeg)
+
 
 ## Higher and lower bars customization
 
