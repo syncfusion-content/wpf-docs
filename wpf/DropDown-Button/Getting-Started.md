@@ -231,9 +231,17 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 {% highlight XAML %}
 
 
-<sync:DropDownButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="New" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:DropDownButtonAdv.IconTemplate>
-        <DataTemplate>
+<Window x:Class="DropDownButtonAdv_IconTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DropDownButtonAdv_IconTemplate"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="smallIconTemplate">
             <Grid Width="12" Height="16">
                 <Path
                         Data="M25.990023,11.689011L17.00602,15.955031 17.00602,28.605018 25.990023,23.618021z M2.0180035,11.688987L2.0180035,23.617996 11.003013,28.605 11.003013,15.95499z M27.990021,8.5260191L27.990021,24.796029 15.006021,32.002019 15.006021,14.690017z M0.018000603,8.5259848L13.003015,14.68999 13.003015,32.002002 0.018000603,24.795997z M14.044014,2.2129984L4.6760044,6.6469963 14.043014,11.079994 23.348023,6.6469963z M14.047014,0L27.996028,6.6469963 14.047014,13.293993 0,6.6469963z"
@@ -241,11 +249,8 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:DropDownButtonAdv.IconTemplate>
-</sync:DropDownButtonAdv>
-<sync:DropDownButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Shapes" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:DropDownButtonAdv.IconTemplate>
-        <DataTemplate>
+
+        <DataTemplate x:Key="normalIconTemplate">
             <Grid Width="16" Height="16">
                 <Path
                         Data="M25.990023,11.689011L17.00602,15.955031 17.00602,28.605018 25.990023,23.618021z M2.0180035,11.688987L2.0180035,23.617996 11.003013,28.605 11.003013,15.95499z M27.990021,8.5260191L27.990021,24.796029 15.006021,32.002019 15.006021,14.690017z M0.018000603,8.5259848L13.003015,14.68999 13.003015,32.002002 0.018000603,24.795997z M14.044014,2.2129984L4.6760044,6.6469963 14.043014,11.079994 23.348023,6.6469963z M14.047014,0L27.996028,6.6469963 14.047014,13.293993 0,6.6469963z"
@@ -253,14 +258,9 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:DropDownButtonAdv.IconTemplate>
-</sync:DropDownButtonAdv>
-<sync:DropDownButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Shapes" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:DropDownButtonAdv.IconTemplate>
-        <DataTemplate>
-            <Grid  x:Name="Save"
-                    Width="16"
-                    Height="16">
+
+        <DataTemplate x:Key="largeIconTemplate">
+            <Grid  Width="16" Height="16">
                 <Path
                         Width="16"
                         Height="16"
@@ -269,8 +269,16 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:DropDownButtonAdv.IconTemplate>
-</sync:DropDownButtonAdv>
+    </Window.Resources>
+    <StackPanel>
+        <syncfusion:DropDownButtonAdv x:Name="smallIcon" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource smallIconTemplate}">
+        </syncfusion:DropDownButtonAdv>
+        <syncfusion:DropDownButtonAdv x:Name="normalIcon"  SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource normalIconTemplate}">
+        </syncfusion:DropDownButtonAdv>
+        <syncfusion:DropDownButtonAdv x:Name="largeIcon" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource largeIconTemplate}">
+        </syncfusion:DropDownButtonAdv>
+    </StackPanel>
+</Window>
 
  {% endhighlight %}
 
@@ -298,7 +306,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemplateSelector_DropDownButtonAdv"
-        xmlns:Sync="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
@@ -333,7 +341,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
     <Grid>
         <StackPanel VerticalAlignment="Center">
             <CheckBox Name="Check" IsChecked="True" Checked="Check_Checked" Unchecked="Check_Unchecked" HorizontalAlignment="Center" Command="{Binding CheckCommand}" Content="ChangeIcon"/>
-            <Sync:DropDownButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
+            <syncfusion:DropDownButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
         </StackPanel>
     </Grid>
 </Window>

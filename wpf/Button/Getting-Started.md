@@ -164,7 +164,7 @@ When the mode is set to small, the control is displayed without the label. Only 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Small" Label="Log-in" SmallIcon ="image\usersmall.png"/>
+<syncfusion:ButtonAdv SizeMode="Small" Label="Log-in" SmallIcon ="image\usersmall.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -231,9 +231,17 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 {% highlight XAML %}
 
-<sync:ButtonAdv Grid.Row="1" Grid.Column="1" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:ButtonAdv.IconTemplate>
-        <DataTemplate>
+<Window x:Class="ButtonAdv_IconTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ButtonAdv_IconTemplate"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="smallIconTemplate">
             <Grid Width="12" Height="16">
                 <Path
                         Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
@@ -241,11 +249,8 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:ButtonAdv.IconTemplate>
-</sync:ButtonAdv>
-<sync:ButtonAdv Grid.Row="2" Grid.Column="1" SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:ButtonAdv.IconTemplate>
-        <DataTemplate>
+
+        <DataTemplate x:Key="normalIconTemplate">
             <Grid Width="16" Height="16">
                 <Path
                         Data="M21.576999,13.473151C26.414003,15.496185 30.259996,20.071221 31.999999,25.86432 15.448002,32.143386 0,25.86432 0,25.86432 1.7140042,20.158227 5.4690005,15.632174 10.202001,13.564156 11.338002,15.514191 13.444005,16.827195 15.862003,16.827195 18.317996,16.827195 20.455997,15.474182 21.576999,13.473151z M16.000003,0C19.617999,1.5323894E-07 22.550998,2.9330488 22.550998,6.5510722 22.550998,10.170134 19.617999,13.102144 16.000003,13.102144 12.381993,13.102144 9.4489957,10.170134 9.4489957,6.5510722 9.4489957,2.9330488 12.381993,1.5323894E-07 16.000003,0z"
@@ -253,14 +258,9 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:ButtonAdv.IconTemplate>
-</sync:ButtonAdv>
-<sync:ButtonAdv Grid.Row="3" Grid.Column="1" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <sync:ButtonAdv.IconTemplate>
-        <DataTemplate>
-            <Grid  x:Name="Save"
-                    Width="16"
-                    Height="16">
+
+        <DataTemplate x:Key="largeIconTemplate">
+            <Grid  Width="16" Height="16">
                 <Path
                         Width="16"
                         Height="16"
@@ -269,8 +269,16 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
                         Stretch="Fill" />
             </Grid>
         </DataTemplate>
-    </sync:ButtonAdv.IconTemplate>
-</sync:ButtonAdv>
+    </Window.Resources>
+    <StackPanel>
+        <syncfusion:ButtonAdv x:Name="smallIcon" SizeMode="Small" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource smallIconTemplate}">
+        </syncfusion:ButtonAdv>
+        <syncfusion:ButtonAdv x:Name="normalIcon"  SizeMode="Normal" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource normalIconTemplate}">
+        </syncfusion:ButtonAdv>
+        <syncfusion:ButtonAdv x:Name="largeIcon" SizeMode="Large" Label="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" IconTemplate="{StaticResource largeIconTemplate}">
+        </syncfusion:ButtonAdv>
+    </StackPanel>
+</Window>
 
  {% endhighlight %}
 
@@ -297,7 +305,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TemplateSelector_ButtonAdv"
-        xmlns:Sync="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
@@ -332,7 +340,7 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
     <Grid>
         <StackPanel VerticalAlignment="Center">
             <CheckBox Name="Check" IsChecked="True" Checked="Check_Checked" Unchecked="Check_Unchecked" HorizontalAlignment="Center" Command="{Binding CheckCommand}" Content="ChangeIcon"/>
-            <Sync:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
+            <syncfusion:ButtonAdv HorizontalAlignment="Center" Margin="10" Content="{Binding IsChecked}" Label="IconTemplateSelector" IconTemplateSelector="{StaticResource IconTemp}"/>
         </StackPanel>
     </Grid>
  </Window>
@@ -420,7 +428,7 @@ The **LargeIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Large" LargeIcon="syncfusion.png" Label="Syncfusion" SmallIcon ="image\syncfusion.png"/>
+<syncfusion:ButtonAdv SizeMode="Large" LargeIcon="syncfusion.png" Label="Syncfusion" SmallIcon ="image\syncfusion.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -487,7 +495,7 @@ The [IsDefault](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Cont
 
 {% highlight xaml %}
 
- <sync:ButtonAdv x:Name="defaultButton" Label="Default" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" IsDefault="True" />
+ <syncfusion:ButtonAdv x:Name="defaultButton" Label="Default" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" IsDefault="True" />
 
 {% endhighlight %}
 
@@ -501,7 +509,7 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 
 {% highlight xaml %}
 
- <sync:ButtonAdv x:Name="cancelButton" Label="Cancel" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" IsCancel="True" />
+ <syncfusion:ButtonAdv x:Name="cancelButton" Label="Cancel" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ButtonAdv_Click" IsCancel="True" />
 
 {% endhighlight %}
 
