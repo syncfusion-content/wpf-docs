@@ -324,6 +324,9 @@ public class ViewModel {
     }
 }
 
+{% endhighlight %}
+{% endtabs %}
+
 {% tabs %}
 {% highlight xaml %}
 
