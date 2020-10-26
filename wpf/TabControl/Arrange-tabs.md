@@ -61,6 +61,97 @@ tabControlExt.AllowDragDrop = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
+## Tab item order changed notification
+
+If you want to know when tab item's order is changed, use the [TabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabOrderChanged) event. You can get the order changed item with its old and new index values by using the [TargetItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_TargetItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_TabOrderChangedEventArgs_NewIndex) properties.
+
+N> The `TabOrderChanged` event occurs only during drag and drop operation. Not occurs when add or remove items using code behind.  
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabOrderChanged="TabControlExt_TabOrderChanged"
+                          AllowDragDrop="True" >
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.AllowDragDrop = true;
+tabControlExt.TabOrderChanged += TabControlExt_TabOrderChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight c# %}
+
+private void TabControlExt_TabOrderChanged(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs e)
+{
+    var drag_Drop_Item = e.TargetItem;
+    var oldIndex = e.OldIndex;
+    var newIndex = e.NewIndex;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items order changed by drag and drop](Tab-Item-Header_images/TabOrderChanged.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabOrderChangeNotification)
+
+## Restrict tab item ordering
+
+If you want to restrict the user to re-ordering the tab item by drag and drop operation, use the [TabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabOrderChanging) event and set []() property value as `true`. You can get the order changed item with its old and new index values by using the `TargetItem`, `OldIndex` and `NewIndex` properties.
+
+N> The `TabOrderChanging` event occurs only during drag and drop operation. Not occurs when add or remove items using code behind.  
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabOrderChanging="TabControlExt_TabOrderChanging"
+                          AllowDragDrop="True" >
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.AllowDragDrop = true;
+tabControlExt.TabOrderChanging += TabControlExt_TabOrderChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight c# %}
+
+private void TabControlExt_TabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.TabOrderChangedEventArgs e)
+{
+    // Restrict the Tab item order changing
+    e.Cancel = true;
+
+    var dragged_Item = e.TargetItem;
+    var oldIndex = e.OldIndex;
+    var newIndex = e.NewIndex;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restricting the tab items order changing via drag and drop](Tab-Item-Header_images/Restrictordering.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabOrderChangeNotification)
+
 ## Tab items alignment
 
 Tab items can be aligned to any side of the `TabControl` by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlSettings.html#Syncfusion_Windows_Tools_Controls_TabControlSettings_TabStripPlacement) property. The default value of `TabStripPlacement` property is `Top`.
