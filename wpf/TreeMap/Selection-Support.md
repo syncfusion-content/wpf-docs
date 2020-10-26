@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection Support | TreeMap | wpf | Syncfusion
-description: This section describes selection by setting HighlightOnSelection property and group selection support by setting HighlightGroupOnSelection property in SfTreeMap.
+description: This section describes selection by setting HighlightOnSelection property and group selection by setting HighlightGroupOnSelection property in SfTreeMap.
 platform: wpf
 control: TreeMap
 documentation: ug
