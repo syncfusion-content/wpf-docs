@@ -209,11 +209,11 @@ The following screenshot illustrates the control after zooming into weeks of dat
 
 ## Thumb style customization
 
-SfDateTimeRangeNavigator provides the following properties to customize the left and right thumb.
+SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle) and [RightThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)  can be customized by using the following properties.
 
-* [`LeftThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle)- Gets or sets the thumb style for left thumb.
-* [`RightThumbStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)- Gets or sets the right thumb style.
-* [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate)- Gets or sets the data template for the symbol.
+### SymbolTemplate
+
+[SymbolTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate) can be used for gets or sets the data template for the symbol.
 
 {% tabs %}
 
@@ -281,7 +281,9 @@ The following screenshot illustrates the control after customizing the right thu
 
 ![Thumb customization support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.png)
 
-* [`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle)- Gets or sets the style for the thumb line.
+### LineStyle
+
+[`LineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle) can be used for gets or sets the style for the thumb line.
 
 {% tabs %}
 
