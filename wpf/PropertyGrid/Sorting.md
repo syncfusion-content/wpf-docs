@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SortDirection) property. Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
+You can sort the properties according to your needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SortDirection) property. Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. Based on the `SortDirection` property,  the property item's nested properties also sorted. The Default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
 
