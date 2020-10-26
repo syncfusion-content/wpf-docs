@@ -1,30 +1,40 @@
 ---
 layout: post
-title: Overview | Docking Manager | WPF | Syncfusion
-description: WPF Docking Manager control provides an interface to create Visual Studio-like dock windows and provides floating panels, autohide, and tabbed documents.
+title: Overview of DockingManager | WPF | Syncfusion
+description: WPF DockingManager control provides an interface to create a Visual Studio-like dock windows and provides the floating panels, autohide, and tabbed documents.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Overview
+# Overview of WPF DockingManager
 
 The `DockingManager` control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
 
-## Features
+![Overview of WPF Docking Manger control](Overview_images/wpf-docking-overview.png)
 
-* DockingManager supports different dock states such as Docking, Floating, AutoHide and Document.
-* Multiple Document Interface (MDI) / Tabbed Document Interface(TDI) windows are available in DockingManager.
-* Various window switchers available for navigating between the windows 
-* Built-in ContextMenu support such as TabListContextMenu and TabItem context menu. 
-* DockingManager support all possible ways for dock the elements.
-* Support for resizing Splitters.
-* Support for several built-in skins.
-* Different types of auto hide animation such as Fade, Scale and Slide.
-* Complete blendability support for customizing appearance.
-* Complete support for customizing behavior of docking windows.
-* ToolTip support for all default buttons.
-* Localization support.
-* Different types of dragging modes such as Border, Shadow and Content dragging.
-* Complete drag provider customization support is available.
-* Complete serialization support of docking states.
+## Key features
+
+**DockState** : Supports the different dock states such as Docking, Floating, AutoHide and Document.
+
+**MDI** : Allows the multiple windows to reside under a single parent window in the Docking Manager.
+
+**TDI** : Allows adding the child window as a document tab in the Docking Manager.
+
+**Themes** : Supports several built-in themes such as Metro, Office2016, and more.
+
+**Tab Switchers** : Supports the various window switchers for navigating between the tabs.
+
+**Customization** : Supports to customize the appearance of Float, Document, AutoHidden and Tabbed windows.
+
+**Nested Layout** : Provides complete support to add the docking manager as a child window to another docking manager.
+
+**Serialization** : Allows you to save and load dock panels states in different formats such as binary and XML.
+
+**ContextMenu** : Provides support to the built-in context menu option for float, close, pin and tab docking windows or child.
+
+**Window Dragging** : Provides support for various styles of window dragging like border, shadow and content dragging.
+
+**Tooltip** : Provides the tooltip support for all default buttons and docking window header.
+
+**Localization** : Supports complete localization to any desired language of header and context menus of the docking windows.
