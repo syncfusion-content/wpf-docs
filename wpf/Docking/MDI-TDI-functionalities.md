@@ -509,6 +509,106 @@ SyncDockingManager.IsTDIDragDropEnabled = true;
 
 {% endtabs %}
 
+## TDI window's order changed notification
+
+You can notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event. You can get the order changed TDI window with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_TargetTabGroup) properties. You will notified when create a horizontal or vertical tab groups using contextmenu or move the tab document to previous  or next tab groups.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager DocumentTabOrderChanged="DockingManager_DocumentTabOrderChanged"
+                           UseDocumentContainer="UseDocumentContainer"
+                           Name="dockingManager">
+    <ContentControl syncfusion:DockingManager.Header="Document1" 
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document2" 
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document3" 
+                    syncfusion:DockingManager.State="Document"/>
+</syncfusion:DockingManager>
+
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+documentcontainer1.UseDocumentContainer = true;
+dockingManager.DocumentTabOrderChanged += DockingManager_DocumentTabOrderChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight c# %}
+
+private void DockingManager_DocumentTabOrderChanged(object sender, DocumentTabOrderChangedEventArgs e)
+{
+    var drag_Drop_Item = e.TargetTabGroup;
+
+    //Get the old and new index of the SourceTabItem
+    var oldIndex = e.OldIndex;
+    var newIndex = e.NewIndex;
+
+    //Get the old and new tab group of the SourceTabItem
+    var sourceTabGroup = e.SourceTabGroup;
+    var targetTabGroup = e.TargetTabGroup;
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![TDI window order changed by drag and drop](MDI_TDIfunctionalities_images/TabOrderChangeNotification.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)
+
+## Restrict TDI window reordering
+
+If you want to restrict the user to reordering the TDI window by drag and drop operation, use the [DocumentTabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanging)event and set `Cancel` property value as `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager DocumentTabOrderChanging="DockingManager_DocumentTabOrderChanging"
+                           UseDocumentContainer="True"
+                           Name="dockingManager">
+    <ContentControl syncfusion:DockingManager.Header="Document1" 
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document2" 
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document3" 
+                    syncfusion:DockingManager.State="Document"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+dockingManager.UseDocumentContainer = true;
+dockingManager.DocumentTabOrderChanging += DockingManager_DocumentTabOrderChanging;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight c# %}
+
+private void DockingManager_DocumentTabOrderChanging(object sender, DocumentTabOrderChangingEventArgs e)
+{
+    // Restrict the TDI window re-ordering
+    e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restricting the TDI window order changing via drag and drop](MDI_TDIfunctionalities_images/Restrictordering.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)
+
 ## Customizing Close Menu
 
 Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the DockingManager. To collapse the visibility of these menu item, set the property [ShowCloseMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseMenuItem), [ShowCloseAllMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllMenuItem) and [ShowCloseAllButThisMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_ShowCloseAllButThisMenuItem) as `False`.
