@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Interactivity | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: Date-time range navigator control provides interactive features such as thumb style and higher and lower bar customization.
+description: Date-time range navigator control provides customization of thumb style, higher and lower bars in WPF platform.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Interactivity in UWP Range Selector (SfDateTimeRangeNavigator)
+# Interactivity in WPF Range Selector (SfDateTimeRangeNavigator)
 
 The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom in large amount of data and navigate to particular timespan by moving the scroll bar.
 
