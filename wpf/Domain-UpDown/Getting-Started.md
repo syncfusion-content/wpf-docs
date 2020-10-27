@@ -29,7 +29,7 @@ In this walk through, you will create WPF application that contains [SfDomainUpD
 
 ## Creating project
 
-Below section provides detailed information to create new project in Visual Studio to display [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html).
+Create a new WPF project to show the `SfDomainUpDown` control in Visual Studio.
 
 ## Adding control via designer
 
