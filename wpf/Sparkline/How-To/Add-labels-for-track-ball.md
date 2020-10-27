@@ -43,10 +43,9 @@ We can add labels for track ball to show the corresponding values. In order to a
 
                 args.RootPanel.Children.Add(info);
 
-                info.Foreground = new SolidColorBrush(Colors.Red);
-
-                info.FontSize = 25;
-
+                TextBlock.SetForeground(info, new SolidColorBrush(Colors.Red)); 
+                
+                TextBlock.SetFontSize(info, 25); 
             }
 
             info.Content = args.Value.Y;
