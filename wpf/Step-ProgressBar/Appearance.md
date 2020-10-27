@@ -51,7 +51,7 @@ grid.Children.Add(stepProgressBar);
 ![Marker shape type image](Appearance_images/MarkerShapeType.png)
 
 ## Orientation
-You can change the orientation of step view items by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is `Horizontal.`
+You can change the orientation of step progressbar by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is `Horizontal.`
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">

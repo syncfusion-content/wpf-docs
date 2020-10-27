@@ -39,26 +39,31 @@ colorPickerPalette.Height = 40;
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
-## Setting null value / No color
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
-You can set a null color value for the selected color by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
+## Accessing a color brush programmatically
+
+You can get or change the selected brush of the `ColorPickerPalette` programmatically by setting the value to the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property. The default value of `SelectedBrush` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette Color="Transparent"
+<syncfusion:ColorPickerPalette SelectedBrush="Yellow"
                                Name="colorPickerPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
-ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.Color = Colors.Transparent;
+colorPickerPalette.SelectedBrush = Brushes.Yellow;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with selected null color](Dealing-with-ColorPickerPalette_images/Nullvalue.png)
+![ColorPickerPalette programmatically picked the yellow color brush](Dealing-with-ColorPickerPalette_images/Colorbrushprogrammatically.png)
+
+Here, `Yellow` color brush is selected in the `ColorPickerPalette`.
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
 ## Setting automatic color
 
@@ -87,6 +92,29 @@ colorPickerPalette.Height = 40;
 {% endtabs %}
 
 ![ColorPickerPalette with automatic color](Dealing-with-ColorPickerPalette_images/AutomaticColor.png)
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
+
+## Select transparent color programmatically
+
+You can set a transparent color as selected color programmatically by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Color="Transparent"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Color = Colors.Transparent;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette selected a transparent color programmatically](Dealing-with-ColorPickerPalette_images/Nullvalue.png)
 
 ## Select a predefined colors
 
@@ -328,6 +356,28 @@ colorPickerPalette.Height = 40;
 ![ColorPickerPalette with custom color tab](Dealing-with-ColorPickerPalette_images/CustomColorPanel.png)
 
 N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `false`, then MoreColor option automatically hides.
+
+## Clear the colour you picked with a transparent colour
+
+If you want to clear the selected color with a `Transparent` color, click the `No Color` button. You will be display the `No color` button only by setting the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property value as `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette NoColorVisibility="Visible"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.NoColorVisibility = Visibility.Visible;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
 ## Selected brush or color changed notification
 
