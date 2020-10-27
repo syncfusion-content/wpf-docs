@@ -18,35 +18,41 @@ This section explains how to display and select the required items using WPF [Ch
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#installing-nuget-packages)
+Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages).
 
-## Creating Application with CheckListBox control
+You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the CheckListBox's dependent assemblies.
+
+## Creating simple application with CheckListBox control
+
 In this walk through, user will create a WPF application that contains [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
+
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
-## Creating project 
+## Creating project
+
 Below section provides detailed information to create new project in Visual Studio to display [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html).
 
 ## Adding control via designer
+
 The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies]([control dependencies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox)) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/wpf-checklistbox-control-added-by-designer.png)
 
 ## Adding control manually in XAML
+
 In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, do the below steps,
 
-1. Add the below required assembly references to the project,
+1.Add the below required assembly references to the project,
 
-    * Syncfusion.Shared.WPF
-    * Syncfusion.Tools.Wpf
+* Syncfusion.Shared.WPF
+* Syncfusion.Tools.Wpf
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2.Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
-3. Declare [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) in XAML page.
+3.Declare [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) in XAML page.
 
 {% tabs %}
 
@@ -77,16 +83,17 @@ In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 {% endtabs %}
 
 ## Adding control manually in C#
+
 In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in C#, do the below steps,
 
-1. Add the below required assembly references to the project,
+1.Add the below required assembly references to the project,
 
-    * Syncfusion.Shared.WPF
-    * Syncfusion.Tools.Wpf
+* Syncfusion.Shared.WPF
+* Syncfusion.Tools.Wpf
 
-2. Import CheckListBox namespace **Syncfusion.Windows.Tools.Controls**.
+2.Import CheckListBox namespace **Syncfusion.Windows.Tools.Controls**.
 
-3. Create CheckListBox control instance and add it to the page.
+3.Create CheckListBox control instance and add it to the page.
 
 {% tabs %}
 
@@ -172,7 +179,7 @@ checkListBox.Items.Add(item5);
 
 You can populate items to the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
 
-1. Create Model and populate it with required properties. Create ViewModel class and populate ObservableCollection object with Model objects.
+1.Create Model and populate it with required properties. Create ViewModel class and populate ObservableCollection object with Model objects.
 
 {% tabs %}
 {% highlight C# %}
@@ -212,7 +219,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-2. Now create an instance of ViewModel in *DataContext* property of CheckListBox control in **MainWindow.xaml** and bind the collection property from ViewModel to `ItemSource` property of CheckListBox. 
+2.Now create an instance of ViewModel in *DataContext* property of CheckListBox control in **MainWindow.xaml** and bind the collection property from ViewModel to `ItemSource` property of CheckListBox. 
 Set the property from Model class to be displayed to `DisplayMemberPath` property. 
 
 {% tabs %}
