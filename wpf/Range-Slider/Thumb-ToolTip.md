@@ -36,6 +36,52 @@ The Thumb tooltip displays the current value where the Thumb stands.
 
 ![Precision](Thumb-ToolTip_images/Thumb-ToolTip_img2.png)
 
+N> ThumbToolTipPrecision property is only applicable, if ToolTipFormat value is N.
+
+
+## Thumb ToolTipFormat
+
+The [ToolTipFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ToolTipFormat) property, specifies the format specifier by which to format the ToolTip display value. 
+
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<editors:SfRangeSlider
+                    Width="300"
+                    Maximum="100"
+                    Minimum="0"
+                    ToolTipFormat="C0"
+                    Value="50" />
+
+{%endhighlight%}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                ToolTipFormat= C0,
+                Value = 50
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![Format](Thumb-ToolTip_images/ToolTip-Format.png)
+
+
+N> Default value of `ToolTipFormat` is N.
+
+
 ## Thumb ToolTip Position 
 
 The position of the Thumb tooltip in relation to the Thumb can be controlled by the [ThumbToolTipPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ThumbToolTipPlacement.html) property. It has the following options.  
@@ -80,7 +126,7 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 {% endtabs %}
 
-![BottomRight](Thumb-ToolTip_images/Thumb-ToolTip_img3.png)
+![BottomRight](Thumb-ToolTip_images/Thumb-ToolTip_img4.png)
 
 
 N> This option displays the tooltip to right in vertical orientation.
@@ -121,7 +167,7 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 {% endtabs %}
 
-![TopLeft](Thumb-ToolTip_images/Thumb-ToolTip_img4.png)
+![TopLeft](Thumb-ToolTip_images/Thumb-ToolTip_img3.png)
 
 N> This option displays the tooltip to left in vertical orientation.
 

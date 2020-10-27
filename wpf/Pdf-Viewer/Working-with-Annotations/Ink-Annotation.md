@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add and modify Ink Annotation using PDF Viewer WPF | Syncfusion
-description: Inclusion of ink annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Ink Annotation in PDF Viewer WPF | Syncfusion
+description: PDF Viewer provides the ability to add, move, edit, resize and deleting ink annotations in PDF document.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Ink annotation
+# Ink annotation in WPF Pdf Viewer
 
 PDF viewer WPF allows the user to include ink annotation in the PDF document and provides options to edit or remove the existing ink annotation in the PDF document. 
 
@@ -24,8 +24,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -56,8 +54,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -84,8 +80,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -141,8 +135,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -239,3 +231,41 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 *	Delete key – Deletes the selected annotation from the PDF document.
 *	Ctrl + Z – Performs undo functionality for recently performed operations.
 *	Ctrl + Y – Performs redo functionality for recently performed operations.
+
+## Events
+
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+
+### InkAnnotationChanged Event
+
+The `InkAnnotationChanged` event occurs when the `Action` performed in ink annotation. It provides the common information and annotation properties which are available in `Settings` through the `InkAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
+
+The following code shows how to write the InkAnnotationChanged event in PdfViewerControl
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e)
+{
+    //COMMON PROPERTIES
+    //AnnotationChangedAction to identify action performed for annotation 
+    AnnotationChangedAction action = e.Action;
+
+    //Page index in which this shape annotation was modified 
+    int pageNumber = e.PageNumber;
+
+    //Annotation's previous position and current position 
+    RectangleF currentBound = e.NewBounds;
+    RectangleF previousBound = e.NewBounds;
+
+    PdfViewerInkSettings settings = e.Settings;
+    //Annotation's properties which can be modify 
+    string author = settings.Author;
+    string subject = settings.Subject;
+    string Text = settings.Text;
+    float opacity = settings.Opacity;
+    System.Windows.Media.Color color = settings.InkColor;
+    double thickness = settings.Thickness;
+}
+{% endhighlight %}
+{% endtabs %}

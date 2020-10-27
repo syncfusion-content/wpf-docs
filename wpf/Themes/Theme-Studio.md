@@ -27,6 +27,12 @@ The WPF Theme Studio comes with the following set of themes,
 
 * Office 2019 Black
 
+* Office 2019 White
+
+* Office 2019 Dark Gray
+
+* Office 2019 High Contrast
+
 ## Creating custom theme
 
 ### Customizing theme color from theme studio
@@ -85,9 +91,11 @@ Now the export dialog appears with the option to select either the entire contro
 
 **Step 3:**
 
-Select the required folder for Theme Export to be selected. When exporting, the download theme will come as a theme project that contains color codes for the selected Syncfusion WPF controls.
+Provide the theme name in which theme should be exported and select the required folder for Theme Export to be selected. When exporting, the download theme will come as a theme project that contains color codes for the selected Syncfusion WPF controls.
 
-![Export Theme project from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Browse-Export.png)
+![Export details dialog from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-ExportName.png)
+
+![Export theme folder from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Browse-Export.png)
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 

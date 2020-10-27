@@ -13,7 +13,7 @@ documentation: ug
 
 ## InactiveTrackStyle
 
-Modify the appearance of the inactive track using the `InactiveTrackStyle` property.
+Modify the appearance of the inactive track using the [InactiveTrackStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_InactiveTrackStyle) property.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Modify the appearance of the inactive track using the `InactiveTrackStyle` prope
 
 ## ActiveTrackStyle
 
-Modify the appearance of the active track by using the `ActiveTrackStyle` property.
+Modify the appearance of the active track by using the [ActiveTrackStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveTrackStyle) property.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ Modify the appearance of the active track by using the `ActiveTrackStyle` proper
 
 ## ThumbStyle
 
-Modify the appearance of the thumb by using the `ThumbStyle` property.
+Modify the appearance of the thumb by using the [ThumbStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ThumbStyle) property.
 
 {% tabs %}
 
@@ -252,12 +252,18 @@ Modify the appearance of the thumb by using the `ThumbStyle` property.
 Modify the appearance of the ticks by using the following properties:
 
 * TickStroke
+* ActiveTickStroke
 * TickLength
 * TickStrokeThickness
+* MinorTickStroke
+* ActiveMinorTickStroke
+* MinorTickLength
+* MinorTickStrokeThickness
+
 
 ### TickStroke
 
-Change tick color by using the `TickStroke` property.
+Use the [TickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickStroke) property, to change the color of major ticks. 
 
 {% tabs %}
 
@@ -302,9 +308,58 @@ Change tick color by using the `TickStroke` property.
 
 ![TickStroke](Customization_images/TickStroke.png)
 
+### ActiveTickStroke
+
+Use the [ActiveTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveTickStroke) property, to change the active major ticks color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <editors:SfRangeSlider
+            Width="300"
+            Maximum="100"
+            Minimum="0"
+            RangeEnd="60"
+            RangeStart="20"
+            ShowRange="True"
+            TickFrequency="10"
+            TickPlacement="BottomRight"
+            TickStroke="#FF0000" 
+            ActiveTickStroke="#02C9F3"/>
+    </Grid>
+
+{% endhighlight %}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                RangeEnd = 60,
+                RangeStart = 20,
+                ShowRange = true,
+                TickFrequency = 10,
+                TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight,
+                TickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000")),
+                ActiveTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3"))
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![ActiveTickStroke](Customization_images/ActiveTickStroke.png)
+
 ### TickLength
 
-Change the height of the ticks by using the `TickLength` property.
+Use the [TickLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickLength) property, to change the height of the major ticks. 
 
 {% tabs %}
 
@@ -354,7 +409,7 @@ Change the height of the ticks by using the `TickLength` property.
 
 ### TickStrokeThickness
 
-Change the thickness of the ticks by using the `TickStrokeThickness` property.
+Use the [TickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_TickStrokeThickness) property, to change the thickness of the major ticks. 
 
 {% tabs %}
 
@@ -404,9 +459,221 @@ Change the thickness of the ticks by using the `TickStrokeThickness` property.
 
 ![TickStrokeThickness](Customization_images/TickStrokeThickness.png)
 
+### MinorTickStroke
+
+Use the [MinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickStroke) property, to change the minor ticks color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <editors:SfRangeSlider
+            Width="300"
+            Maximum="100"
+            Minimum="0"
+            RangeEnd="60"
+            RangeStart="20"
+            ShowRange="True"
+            TickFrequency="10"
+            MinorTickFrequency="3"
+            TickPlacement="BottomRight"
+            MinorTickStroke ="#FF0000" />
+    </Grid>
+
+{% endhighlight %}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                RangeEnd = 60,
+                RangeStart = 20,
+                ShowRange = true,
+                TickFrequency = 10,
+                MinorTickFrequency=3,
+                TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight,
+                MinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![MinorTickStroke](Customization_images/MinorTickStroke.png)
+
+### ActiveMinorTickStroke
+
+Use the [ActiveMinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ActiveMinorTickStroke) property, to change the color of the active minor ticks. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <editors:SfRangeSlider
+            Width="300"
+            Maximum="100"
+            Minimum="0"
+            RangeEnd="60"
+            RangeStart="20"
+            ShowRange="True"
+            TickFrequency="10"
+            MinorTickFrequency="3"
+            TickPlacement="BottomRight"
+            ActiveMinorTickStroke ="#FF0000" />
+    </Grid>
+
+{% endhighlight %}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                RangeEnd = 60,
+                RangeStart = 20,
+                ShowRange = true,
+                TickFrequency = 10,
+                MinorTickFrequency=3,
+                TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight,
+                ActiveMinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![ActiveMinorTickStroke](Customization_images/ActiveMinorTickStroke.png)
+
+### MinorTickLength
+
+Use the [MinorTickLength](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickLength) property, to change the height of the minor ticks. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Grid>
+        <editors:SfRangeSlider
+            Width="300"
+            Maximum="100"
+            Minimum="0"
+            RangeEnd="60"
+            RangeStart="20"
+            ShowRange="True"
+            MinorTickLength ="6"
+            TickLength ="10"
+            TickFrequency="10"
+            MinorTickFrequency="2"
+            TickPlacement="BottomRight" />
+    </Grid>
+
+{% endhighlight %}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                RangeEnd = 60,
+                RangeStart = 20,
+                ShowRange = true,
+                MinorTickLength = 6,
+                TickLength = 10,
+                TickFrequency= 10,
+                MinorTickFrequency= 2,
+                TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![MinorTickLength](Customization_images/MinorTickLength.png)
+
+### MinorTickStrokeThickness
+
+Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_MinorTickStrokeThickness) property, to change the thickness of the minor ticks. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Grid>
+        <editors:SfRangeSlider
+            Width="300"
+            Maximum="100"
+            Minimum="0"
+            RangeEnd="60"
+            RangeStart="20"
+            ShowRange="True"
+            TickFrequency="10"
+            MinorTickFrequency="2"
+            TickLength="8"
+            MinorTickLength="5"
+            TickPlacement="BottomRight"
+            TickStroke="#FF0000"
+            MinorTickStroke="#FF0000"
+            ActiveTickStroke="#02C9F3"
+            ActiveMinorTickStroke="#02C9F3"
+            MinorTickStrokeThickness ="2" />
+    </Grid>
+
+{% endhighlight %}
+
+{%highlight C#%}
+
+            Grid parentGrid = new Grid();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                Maximum = 100,
+                Minimum = 0,
+                RangeEnd = 60,
+                RangeStart = 20,
+                ShowRange = true,
+                TickFrequency = 10,
+                MinorTickFrequency= 2,
+                TickLength = 8,
+                MinorTickStrokeThickness = 2,
+                MinorTickLength= 5,
+                TickPlacement = Syncfusion.Windows.Controls.Input.TickPlacement.BottomRight,
+                TickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
+                MinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000"))
+                ActiveMinorTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3"))
+                ActiveTickStroke = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#02C9F3"))
+            };
+
+            parentGrid.Children.Add(rangeSlider);
+            this.Content = parentGrid;
+
+{%endhighlight%}
+
+{% endtabs %}
+
+![MinorTickStrokeThickness](Customization_images/MinorTickStrokeThickness.png)
+
 ### Value label customization
 
-Customize the value label using the TickBarItem style.
+Customize the value label using the `TickBarItem` style.
 
 {% tabs %}
 

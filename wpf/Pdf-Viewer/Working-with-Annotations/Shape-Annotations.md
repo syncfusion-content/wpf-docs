@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Inclusion of Shapes in a PDF file using Syncfusion PDF viewer..
-description: Inclusion of Shape Annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Shape Annotations in PDF Viewer WPF | Syncfusion
+description: PDF Viewer provides the ability to add, move, edit, resize and deleting shape annotations in PDF document.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
-# Shape Annotation
+# Shape Annotation in WPF Pdf Viewer
 
 PDF viewer WPF allows the user to include the following shape annotations into the PDF document.
 
@@ -1474,3 +1474,48 @@ The following keyboard shortcuts are available to customize the annotation in th
 *	Delete key: Deletes the selected annotation from the PDF document.
 *	Ctrl + Z: Performs undo functionality for recently performed operations.
 *	Ctrl + Y: Performs redo functionality for recently performed operations.
+
+## Events
+
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+
+### ShapeAnnotationChanged Event
+
+The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+
+The following code shows how to write the ShapeAnnotationChanged event in PdfViewerControl
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChangedEventArgs e)
+{
+    //COMMON PROPERTIES
+    //AnnotationChangedAction to identify action performed for annotation 
+    AnnotationChangedAction action = e.Action;
+
+    //To identify which type shape annotation     
+    ShapeAnnotationType annotationType = e.Type;
+
+    //Page index in which this shape annotation was modified 
+    int pageNumber = e.PageNumber;
+
+    //Shape annotation's previous position and current position 
+    RectangleF currentBound = e.NewBounds;
+    RectangleF previousBound = e.NewBounds;
+
+    //For Polygon and Polyline annotations collection of points   
+    ReadOnlyCollection<System.Windows.Point> points = e.Points;
+
+    ShapeAnnotationSettings settings = e.Settings;
+
+    //SHAPES PROPERTIES which can be get/modify 
+    string author = settings.Author;
+    string subject = settings.Subject;
+    string Text = settings.Text;
+    float thickness = settings.Thickness;
+    float opacity = settings.Opacity;
+}
+
+{% endhighlight %}
+{% endtabs %}
