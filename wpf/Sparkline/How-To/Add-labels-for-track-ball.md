@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add labels for track ball | SfSparkline | wpf | Syncfusion
-description: add labels for track ball
+description: The session describes how to add label and customize its appearance inside track ball of WPF spark line (SfSparkline).
 platform: wpf
 control: SfSparkline
 documentation: ug
@@ -60,4 +60,4 @@ We can add labels for track ball to show the corresponding values. In order to a
 
 Following is the snapshot for track ball labels,
 
-![](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
+![custom label in Sparkline track ball](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
