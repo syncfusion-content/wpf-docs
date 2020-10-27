@@ -44,14 +44,14 @@ documentcontainer1.IsTDIDragDropEnabled=false;
 
 ## TDI item's order changing notification in DocumentContainer
 
-You can notified when the TDI item's order is changing by using the [DocumentTabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanging) event. You can get the order changed TDI item with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_TargetTabGroup) properties. You can also notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event.
+You can notified when the TDI item's order is changing by using the [DocumentTabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanging) event. You can get the order changed TDI item with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangingEventArgs_TargetTabGroup) properties. You can also notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event.
 
 N> The `DocumentTabOrderChanged` event also invoked when create a horizontal or vertical tab groups using context menu or move the tab document to previous  or next tab groups.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DocumentContainer DocumentTabOrderChanged="Documentcontainer1_DocumentTabOrderChanging"
+<syncfusion:DocumentContainer DocumentTabOrderChanging="Documentcontainer1_DocumentTabOrderChanging"
                               Name="documentcontainer1"
                               Mode="TDI">
     <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>
@@ -93,7 +93,7 @@ private void Documentcontainer1_DocumentTabOrderChanging(object sender, Syncfusi
 
 ![TDI items order changing by drag and drop](Creating-Tab-Groups_images/TabOrderChangeNotification.png)
 
-N> [View Sample in GitHub]()
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/DocumentTabOrdering)
 
 ## Restrict TDI item reordering in DocumentContainer
 
@@ -102,7 +102,7 @@ If you want to restrict the user to reordering the TDI items by drag and drop op
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DocumentContainer DocumentTabOrderChanged="Documentcontainer1_DocumentTabOrderChanging"
+<syncfusion:DocumentContainer DocumentTabOrderChanging="Documentcontainer1_DocumentTabOrderChanging"
                               Name="documentcontainer1"
                               Mode="TDI">
     <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>
@@ -125,11 +125,10 @@ You can handle the event as follows,
 {% tabs %}
 {% highlight c# %}
 
-private void Documentcontainer1_DocumentTabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs e)
+private void Documentcontainer1_DocumentTabOrderChanging(object sender, Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangingEventArgs e)
 {
     // Restrict the TDI item re-ordering
     e.Cancel = true;
-
 }
 
 {% endhighlight %}
@@ -137,5 +136,5 @@ private void Documentcontainer1_DocumentTabOrderChanging(object sender, Syncfusi
 
 ![Restricting the TDI items order changing via drag and drop](Creating-Tab-Groups_images/Restrictordering.png)
 
-N> [View Sample in GitHub]()
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/DocumentTabOrdering)
 
