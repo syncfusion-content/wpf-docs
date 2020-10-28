@@ -21,15 +21,9 @@ Further information on installing the NuGet package can be found in the followin
 
 In this walk through, you will create WPF application that contains [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control.
 
-1. [Creating project](#Creating-the-project)
-2. [Adding control via designer](#Adding-control-via-designer)
-3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-4. [Adding control manually in C#](#Adding-control-manually-in-C#)
-5. [Populating by data binding](#Populating-by-DataBinding)
-
 ## Creating project
 
-Create a new WPF project to show the `SfDomainUpDown` control in Visual Studio.
+Create a new WPF project to show the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control in Visual Studio.
 
 ## Adding control via designer
 
@@ -175,17 +169,27 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-3.You can bind the Employees property from ViewModel class to ItemSource property of `SfDomainUpDown` control.
+3.You can bind the Employees property from ViewModel class to ItemSource property of `SfDomainUpDown` control and the control is set to display content based on Name inside the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_ContentTemplateProperty) property.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfDomainUpDown x:Name="domainUpDown" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" ItemsSource="{Binding Employees}"/>
+<syncfusion:SfDomainUpDown x:Name="domainUpDown" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" ItemsSource="{Binding Employees}">
+    <syncfusion:SfDomainUpDown.ContentTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Name}"/>
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:SfDomainUpDown.ContentTemplate>
+</syncfusion:SfDomainUpDown>
 
 {% endhighlight %}
 {% endtabs %}
 
 ![wpf domain up down control added by code](Getting-Started_images/wpf-domain-updown-control-data-binding.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GettingStarted-Databinding).
 
 ## Spin button alignment
 
