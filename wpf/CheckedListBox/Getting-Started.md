@@ -24,12 +24,7 @@ You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/
 
 ## Creating simple application with CheckListBox control
 
-In this walk through, user will create a WPF application that contains [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
-
-1. [Creating project](#Creating-the-project)
-2. [Adding control via designer](#Adding-control-via-designer)
-3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-4. [Adding control manually in C#](#Adding-control-manually-in-C#)
+In this walk through, user will create a WPF application that contains [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
 
 ## Creating project
 
@@ -257,7 +252,7 @@ You can programmatically check items in CheckListBox by adding the items in [Sel
 
 ## Checked event notification
 
-When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_ItemChecked) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
 
 {% tabs %}
 {% highlight XAML %}
