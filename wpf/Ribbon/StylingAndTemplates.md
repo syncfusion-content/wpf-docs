@@ -12,7 +12,7 @@ The Ribbon control ships with a number of built-in themes such as Office2003, Of
 
 ## Visual styles
 
-The appearance of Ribbon control can be customized by `VisualStyles` attached property of the SfSkinManager. You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/skin-manager).
+The appearance of Ribbon control can be customized by [VisualStyles](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the SfSkinManager. You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/skin-manager).
 
 ### Add SfSkinManager reference
 
