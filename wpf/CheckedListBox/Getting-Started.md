@@ -28,7 +28,7 @@ In this walk through, user will create a WPF application that contains [CheckLis
 
 ## Creating project
 
-Below section provides detailed information to create new project in Visual Studio to display [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html).
+In Visual Studio, create a new WPF project to show the features of the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control and add the following namespace to the added assemblies.
 
 ## Adding control via designer
 
@@ -40,14 +40,14 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, do the below steps,
 
-1.Add the below required assembly references to the project,
+1.Add the following assembly references to the project.
 
 * Syncfusion.Shared.WPF
-* Syncfusion.Tools.Wpf
+* Syncfusion.Tools.WPF
 
 2.Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
-3.Declare [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) in XAML page.
+3.Declare the `CheckListBox` control in XAML page.
 
 {% tabs %}
 
@@ -63,13 +63,7 @@ In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:CheckListBox Height="200" Width="200">
-            <syncfusion:CheckListBoxItem Content="Austria" />
-            <syncfusion:CheckListBoxItem Content="Australia"/>
-            <syncfusion:CheckListBoxItem Content="Canada"/>
-            <syncfusion:CheckListBoxItem Content="Finland"/>
-            <syncfusion:CheckListBoxItem Content="NewZealand"/>
-        </syncfusion:CheckListBox>
+        <syncfusion:CheckListBox x:Name="checkListBox" Width="200" Height="300"/>
     </Grid>
 </Window>
 
@@ -79,16 +73,16 @@ In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 
 ## Adding control manually in C#
 
-In order to add [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in C#, do the below steps,
+In order to add `CheckListBox` control manually in C#, do the below steps,
 
-1.Add the below required assembly references to the project,
+1.Add the following assembly references to the project.
 
 * Syncfusion.Shared.WPF
-* Syncfusion.Tools.Wpf
+* Syncfusion.Tools.WPF
 
 2.Import CheckListBox namespace **Syncfusion.Windows.Tools.Controls**.
 
-3.Create CheckListBox control instance and add it to the page.
+3.Create the `CheckListBox` control instance and add it to the window.
 
 {% tabs %}
 
@@ -106,22 +100,11 @@ namespace ComboBox
         public MainWindow()
         {
             InitializeComponent();
+
+            //Creating an instance of CheckListBox control.
             CheckListBox checkListBox = new CheckListBox();
-            checkListBox.Height = 200;
-            checkListBox.Width = 200;
 
-            CheckListBoxItem item1 = new CheckListBoxItem() { Content = "Austria" };
-            CheckListBoxItem item2 = new CheckListBoxItem() { Content = "Australia" };
-            CheckListBoxItem item3 = new CheckListBoxItem() { Content = "Canada" };
-            CheckListBoxItem item4 = new CheckListBoxItem() { Content = "Finland" };
-            CheckListBoxItem item5 = new CheckListBoxItem() { Content = "NewZealand" };
-
-            checkListBox.Items.Add(item1);
-            checkListBox.Items.Add(item2);
-            checkListBox.Items.Add(item3);
-            checkListBox.Items.Add(item4);
-            checkListBox.Items.Add(item5);
-
+            //Adding CheckListBox as window content.
             this.Content = checkListBox;
         }
     }
@@ -164,6 +147,8 @@ checkListBox.Items.Add(item2);
 checkListBox.Items.Add(item3);
 checkListBox.Items.Add(item4);
 checkListBox.Items.Add(item5);
+
+this.Content = checkListBox;
 
 {% endhighlight %}
 {% endtabs %}
