@@ -83,5 +83,3 @@ private void DocumentContainer_Loaded(object sender, RoutedEventArgs e) {
 {% endtabs %}
 
 ![Vertical Tab Groups created programmatically](Creating-Tab-Groups_images/Tabgroup_programmatically.png)
-
-
