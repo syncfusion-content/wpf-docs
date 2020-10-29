@@ -87,7 +87,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Skewing the carousel item in standard view
 
-If you want to skewing the carousel items with particular `X-Y` fraction angle, use the `SkewAngleYFraction` and `SkewAngleYFraction` properties. Based on the `SkewAngleYFraction` and `SkewAngleYFraction` values, the carousel items are skewed. The default value `SkewAngleYFraction` and `SkewAngleYFraction` properties is `0`.
+If you want to skewing the carousel items with particular `X-Y` fraction angle, use the [SkewAngleXFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXFraction) and [SkewAngleYFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYFraction) properties. Based on the `SkewAngleXFraction` and `SkewAngleYFraction` values, the carousel items are skewed. The default value `SkewAngleXFraction` and `SkewAngleYFraction` properties is `0`.
 
 {% tabs %}
 {% highlight XAML %}

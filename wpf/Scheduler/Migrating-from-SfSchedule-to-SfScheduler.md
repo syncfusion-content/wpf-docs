@@ -64,31 +64,31 @@ SfSchedule</th><th>
 SfScheduler</th><th>
 Description</th></tr>
 <tr>
-<td>ScheduleViewType</td>
-<td>ViewType</td>
+<td>{{'[ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleType)'| markdownify }}</td>
+<td>{{'[ViewType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType)'| markdownify }}</td>
 <td>Gets or sets a value which determines Scheduler ViewType.</td></tr>
 <tr>
-<td>FirstDayOfWeek</td>
-<td>FirstDayOfWeek</td>
+<td>{{'[FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek)'| markdownify }}</td>
+<td>{{'[FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek)'| markdownify }}</td>
 <td>Gets or sets the day of the week in Schedule.</td></tr>
 <tr>
-<td>NonWorkingDays</td>
-<td>NonWorkingDays </td>
+<td>{{'[NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonWorkingDays)'| markdownify }}</td>
+<td>{{'[NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays)'| markdownify }}</td>
 <td>Gets or sets the non working days.</td></tr>
 <tr>
-<td>Appointments,ItemsSource</td>
-<td>ItemsSource</td>
+<td>{{'[Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Appointments)'| markdownify }}, {{'[ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ItemsSource)'| markdownify }}</td>
+<td>{{'[ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource)'| markdownify }}</td>
 <td>Gets or sets a items source to the scheduler.</td></tr>
 <tr>
-<td>ScheduleAppointment</td>
-<td>ScheduleAppointment</td>
+<td>{{'[ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html)'| markdownify }}</td>
+<td>{{'[ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html)'| markdownify }}</td>
 <td>Gets or sets the appointments data in schedule control.</td></tr>
 <tr>
-<td>AppointmentMapping</td>
-<td>AppointmentMapping</td>
+<td>{{'[AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_AppointmentMapping)'| markdownify }}</td>
+<td>{{'[AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMapping)'| markdownify }}</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
 <tr>
-<td>Resource</td>
+<td>{{'[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource)'| markdownify }}</td>
 <td>-</td>
 <td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
@@ -102,72 +102,72 @@ SfSchedule(ScheduleAppointment)</th><th>
 SfScheduler(ScheduleAppointment)</th><th>
 Description</th></tr>
 <tr>
-<td>Subject</td>
-<td>Subject</td>
+<td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Subject)'| markdownify }}</td></td>
+<td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject)'| markdownify }}</td></td>
 <td>Gets or sets the subject for the appointment.</td></tr>
 <tr>
-<td>Notes</td>
-<td>Notes</td>
+<td>{{'[Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Notes)'| markdownify }}</td></td>
+<td>{{'[Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes)'| markdownify }}</td></td>
 <td>Gets or sets the notes for an appointment.</td></tr>
 <tr>
-<td>Location</td>
-<td>Location</td>
+<td>{{'[Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Location)'| markdownify }}</td></td>
+<td>{{'[Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location)'| markdownify }}</td></td>
 <td>Gets or sets the location for an appointment.</td></tr>
 <tr>
-<td>AppointmentBackground</td>
-<td>AppointmentBackground</td>
+<td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AppointmentBackground)'| markdownify }}</td></td>
+<td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_AppointmentBackground)'| markdownify }}</td></td>
 <td>Gets or sets the appointment color.</td></tr>
 <tr>
-<td>StartTime</td>
-<td>StartTime</td>
+<td>{{'[StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTime)'| markdownify }}</td></td>
+<td>{{'[StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime)'| markdownify }}</td></td>
 <td>Gets or sets the start date and time of the appointment.</td></tr>
 <tr>
-<td>EndTime</td>
-<td>EndTime</td>
+<td>{{'[EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTime)'| markdownify }}</td></td>
+<td>{{'[EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime)'| markdownify }}</td></td>
 <td>Gets or sets the end date and time of the appointment.</td></tr>
 <tr>
 <td>-</td>
-<td>ActualStartTime</td>
+<td>{{'[ActualStartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualStartTime)'| markdownify }}</td></td>
 <td>Gets the internal start time which is converted based on start time zone applied.</td></tr>
 <tr>
 <td>-</td>
-<td>ActualEndTime</td>
+<td>{{'[ActualEndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualEndTime)'| markdownify }}</td></td>
 <td>Gets the internal end time which is converted based on start time zone applied.</td></tr>
 <tr>
-<td>StartTimeZone</td>
-<td>StartTimeZone</td>
+<td>{{'[StartTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTimeZone)'| markdownify }}</td></td>
+<td>{{'[StartTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone)'| markdownify }}</td></td>
 <td>Gets or sets time zone for the start time of the appointment.</td></tr>
 <tr>
-<td>EndTimeZone</td>
-<td>EndTimeZone</td>
+<td>{{'[EndTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTimeZone)'| markdownify }}</td></td>
+<td>{{'[EndTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone)'| markdownify }}</td></td>
 <td>Gets or sets time zone for the end time of the appointment.</td></tr>
 <tr>
-<td>IsRecursive</td>
-<td>IsRecursive</td>
+<td>{{'[IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursive)'| markdownify }}</td></td>
+<td>{{'[IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsRecursive)'| markdownify }}</td></td>
 <td>Gets a value indicating whether the appointment is recurrence appointment or not.</td></tr>
 <tr>
-<td>AllDay</td>
-<td>IsAllDay</td>
+<td>{{'[AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDay)'| markdownify }}</td></td>
+<td>{{'[IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td></td>
 <td>Gets or sets a value indicating whether the appointment's duration is equal one day or not.</td></tr>
 <tr>
-<td>RecurrenceRule</td>
-<td>RecurrenceRule</td>
+<td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td></td>
+<td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td></td>
 <td> Gets or sets a value indicating whether the appointment should be recursive.</td></tr>
 <tr>
-<td>RecursiveExceptionDates</td>
-<td>RecurrenceExceptionDates</td>
+<td>{{'[RecursiveExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecursiveExceptionDates)'| markdownify }}</td></td>
+<td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates)'| markdownify }}</td></td>
 <td>Gets or sets the properties for maintaining recurrence rule exception Dates.</td></tr>
 <tr>
 <td>-</td>
-<td>RecurrenceId</td>
+<td>{{'[RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId)'| markdownify }}</td></td>
 <td>Gets or sets an unique ID for referring recurrence appointment.</td></tr>
 <tr>
 <td>-</td>
-<td>Data</td>
+<td>{{'[Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Data)'| markdownify }}</td></td>
 <td>Gets the data object associated with appointment.</td></tr>
 <tr>
 <td>-</td>
-<td>Type</td>
+<td>{{'[Type](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Type)'| markdownify }}</td></td>
 <td>Gets the type of appointment.</td></tr>
 </table>
 
@@ -180,52 +180,52 @@ SfSchedule(AppointmentMapping)</th><th>
 SfScheduler(AppointmentMapping)</th><th>
 Description</th></tr>
 <tr>
-<td>SubjectMapping</td>
-<td>Subject</td>
+<td>{{'[SubjectMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_SubjectMappingProperty)'| markdownify }}</td>
+<td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Subject)'| markdownify }}</td>
 <td>Gets or sets the Subject property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>NotesMapping</td>
-<td>Notes</td>
+<td>{{'[NotesMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_NotesMappingProperty)'| markdownify }}</td>
+<td>{{'[Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Notes)'| markdownify }}</td>
 <td>Gets or sets the Notes property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>LocationMapping</td>
-<td>Location</td>
+<td>{{'[LocationMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_LocationMappingProperty)'| markdownify }}</td>
+<td>{{'[Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Location)'| markdownify }}</td>
 <td>Gets or sets the Location property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>AppointmentBackgroundMapping</td>
-<td>AppointmentBackground</td>
+<td>{{'[AppointmentBackgroundMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AppointmentBackgroundMappingProperty)'| markdownify }}</td>
+<td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_AppointmentBackground)'| markdownify }}</td>
 <td>Gets or sets the AppointmentBackground property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>StartTimeMapping</td>
-<td>StartTime</td>
+<td>{{'[StartTimeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeMappingProperty)'| markdownify }}</td>
+<td>{{'[StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_StartTime)'| markdownify }}</td>
 <td>Gets or sets the StartTime property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>EndTimeMapping</td>
-<td>EndTime</td>
+<td>{{'[EndTimeMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeMappingProperty)'| markdownify }}</td>
+<td>{{'[EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_EndTime)'| markdownify }}</td>
 <td>Gets or sets the EndTime property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>StartTimeZoneMapping</td>
-<td>StartTimeZone</td>
+<td>{{'[StartTimeZoneMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeZoneMappingProperty)'| markdownify }}</td>
+<td>{{'[StartTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_StartTimeZone)'| markdownify }}</td>
 <td>Gets or sets the StartTimeZone property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>EndTimeZoneMapping</td>
-<td>EndTimeZone</td>
+<td>{{'[EndTimeZoneMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeZoneMappingProperty)'| markdownify }}</td>
+<td>{{'[EndTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_EndTimeZone)'| markdownify }}</td>
 <td>Gets or sets the EndTimeZone property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>AllDayMapping</td>
-<td>IsAllDay</td>
+<td>{{'[AllDayMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AllDayMappingProperty)'| markdownify }}</td>
+<td>{{'[IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_IsAllDay)'| markdownify }}</td>
 <td>Gets or sets the IsAllDay property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>RecurrenceRuleMapping</td>
-<td>RecurrenceRule</td>
+<td>{{'[RecurrenceRuleMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceRuleMappingProperty)'| markdownify }}</td>
+<td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceRule)'| markdownify }}</td>
 <td> Gets or sets the RecurrenceRule property for mapping to the schedule appointment.</td></tr>
 <tr>
-<td>RecursiveExceptionDatesMapping</td>
-<td>RecurrenceExceptionDates</td>
+<td>{{'[RecursiveExceptionDatesMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecursiveExceptionDatesMappingProperty)'| markdownify }}</td>
+<td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceExceptionDates)'| markdownify }}</td>
 <td> Gets or sets the RecurrenceExceptionDates property for mapping to the schedule appointment.</td></tr>
 <tr>
 <td>-</td>
-<td>RecurrenceId</td>
+<td>{{'[RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceId)'| markdownify }}</td>
 <td>Gets or sets the RecurrenceId property for mapping to the schedule appointment.</td></tr>
 </table>
 

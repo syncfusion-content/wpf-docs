@@ -455,6 +455,12 @@ private void Window_Closed(object sender, EventArgs e)
 
 {% endtabs %}
 
+## Additional Help Resources
+
+The [`Skin Manager`](https://www.syncfusion.com/kb/wpf/skinmanager) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+
+Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/wpf/skinmanager), the [`forum`](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked us in the past.
+
 ## How To
 
 ### Change visual style at runtime
