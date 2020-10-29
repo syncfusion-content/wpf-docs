@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multipath search of AutoComplete in Syncfusion SfTextBoxExt.
-description: This section provides details about how to perform Multipath search in AutoComplete control.
+description: This section provides details about how to perform Multipath search from AutoCompleteSource in Syncfusion AutoComplete control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
