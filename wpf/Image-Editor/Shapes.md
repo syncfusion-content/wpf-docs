@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Shapes
+# Shapes in SfImageEditor
 
 You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also image editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
 
@@ -212,3 +212,7 @@ You can make changes on the settings such as stroke etc. This is applied after t
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to load the image annotated with shapes and text on the image editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)
