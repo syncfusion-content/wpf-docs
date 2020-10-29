@@ -12,19 +12,19 @@ The Ribbon control ships with a number of built-in themes such as Office2003, Of
 
 ## Visual styles
 
-The appearance of Ribbon control can be customized by [VisualStyles](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the SfSkinManager. You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/skin-manager).
+The appearance of Ribbon control can be customized by the [VisualStyles](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the SfSkinManager. You can find the list of available built-in themes and the assemblies needs to be referred in the following [link](https://help.syncfusion.com/wpf/themes/skin-manager).
 
 ### Add SfSkinManager reference
 
-There are several ways to add the Syncfusion SfSkinManager reference in Visual Studio WPF project. The following steps will help to add through `XAML` code.
+There are several ways to add the Syncfusion SfSkinManager reference in the Visual Studio WPF project. The following steps will help to add using the `XAML` code.
 
-1) Add reference to `Syncfusion.SfSkinManager.WPF` assembly or Syncfusion.SfSkinManager.WPF [nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF) to the project.
+1) Add reference to the `Syncfusion.SfSkinManager.WPF` assembly or Syncfusion.SfSkinManager.WPF [nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF) to the project.
 
-2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
+2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in the XAML page.
 
 ### Apply styles using SfSkinManager
 
-The SfSkinManger provides rich and professional look and feel UI for Ribbon window. The list of visual styles are given below,
+The SfSkinManger provides a rich and professional look and feel UI for the Ribbon window. A list of visual styles are given as follows,
 
 * Office2010Black, Office2010Blue and Office2010Silver
 * Office2013DarkGray, Office2013LightGray and Office2013White
