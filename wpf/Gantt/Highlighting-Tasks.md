@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Highlighting Tasks| Gantt | Wpf | Syncfusion
-description: highlighting tasks
+description: This section describes highlighting tasks and add the highlighting tasks to an application in Syncfusion WPF Gantt.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Highlighting Tasks
+# Highlighting Tasks in Gantt
 
 Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
 
@@ -110,7 +110,7 @@ The following image shows the Gantt with Highlighted Tasks:
 
 
 
-![](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)
+![Highlighting-Tasks_image](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)
 
 
 
@@ -129,5 +129,6 @@ To view samples:
 5. Expand the Interactive Features item in the Sample Browser
 6. Choose Highlighting Tasks to launch the sample.
 
+## see also
 
-
+[How to view the gantt control with the desired date tasks at load time in WPF](https://www.syncfusion.com/kb/7728/how-to-view-the-gantt-control-with-the-desired-date-tasks-at-load-time-in-wpf)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Drill Down Support | TreeMap | wpf | Syncfusion
-description: drill down support
+description: This section expalin enabling drill down support in WPF TreeMap (SfTreeMap). Based on this property the tree map items can be drilled down.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Drill Down Support
+# Drill Down Support in SfTreeMap
 
 TreeMap enables drill down to expose the hierarchy by clicking on a treemap node and allows drill up by clicking on drill down header. At a time, only one level of the hierarchy can be seen in the treemap.
 
@@ -107,7 +107,7 @@ The following screenshot illustrates a TreeMap with drill down support.
 
 
 
-![](Drill-Down-Support_images/Drill-Down-Support_img1.png)
+![Drilldown support image](Drill-Down-Support_images/Drill-Down-Support_img1.png)
 
 
 
@@ -115,5 +115,8 @@ TreeMap with drill down support
 {:.caption}
 
 
+## see also
 
+[How to customize leaf level SfTreeMap](https://www.syncfusion.com/kb/7649/how-to-customize-leaf-level-treemap) 
 
+[How to apply colors based on the ColorValuePath to a leaf template in SfTreeMap](https://www.syncfusion.com/kb/4099/how-to-apply-colors-based-on-the-colorvaluepath-to-a-leaftemplate-in-sftreemap) 
