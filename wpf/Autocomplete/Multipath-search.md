@@ -7,10 +7,10 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Multi path search with AutoComplete.
+# Multi path search with AutoComplete
 
-AutoComplete control already supports the custom search. So, it can be used for the MultiPath search. When using the AutoCompleteSource object list, the
-control search is based on the SearchItemPath It’s performed the single path search. But using the custom search perform the MultiPath search in AutoComplete.
+AutoComplete control already supports the custom search. So, it can be used for the MultiPath search. When using the object list AutoCompleteSource, the
+control search is based on the SearchItemPath. It’s performed the single path search. But using the custom search and perform the MultiPath search in AutoComplete.
 
 **Model**
 
