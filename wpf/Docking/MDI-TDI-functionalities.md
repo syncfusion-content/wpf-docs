@@ -570,7 +570,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 If you want to restrict the user to reordering the TDI window by drag and drop operation, use the [DocumentTabOrderChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanging) event and set `Cancel` property value as `true`.
 
-N> You can handle the document window will be floated or not by `DockStateChangingEvent` instead of `DocumentTabOrderChaning`. 
+N> You can handle the document window will be floated or not by `DockStateChangingEvent` instead of `DocumentTabOrderChanging`. 
 
 {% tabs %}
 {% highlight XAML %}
