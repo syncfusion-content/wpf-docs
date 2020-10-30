@@ -115,6 +115,8 @@ public partial class MainWindow : Window {
 
 We can set or change the selected color of the `ColorPickerPalette` programmatically by setting the value for [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_Color) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_ColorName) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
+N> You can also set or changes the selected color brush by using the [SelectedBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_SelectedBrush) property.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -283,6 +285,28 @@ colorPickerPalette.Height = 40;
 ![ColorPickerPalette with more color panel](Getting-Started_images/MoreColorWindow.gif)
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
+
+## Reset selected color
+
+If you want to reset the selected color as `Transparent` color, click the `No Color` button. You will be display the `No color` button only by setting the [NoColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_NoColorVisibility) property value as `Visible`. The default value of `NoColorVisibility` property is `Collapsed`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette NoColorVisibility="Visible"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.NoColorVisibility = Visibility.Visible;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette reset selected color as Transparent by clicking the No color button](Dealing-with-ColorPickerPalette_images/NoColor.png)
+
+N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
 ## Selected brush or color changed notification
 

@@ -13,9 +13,17 @@ This section explains navigation between day, month or year mode in [CalendarEdi
 
 ## Navigate to the day, month or year modes using header
 
-You can easily navigate to the day, month or year modes by clicking the `CalenderEdit` header.
+You can easily navigate to the day, month or year or decade modes by clicking the `CalenderEdit` header.
 
 ![Navigation between day, month or year modeNavigate using header](Navigation_images/HeaderChangeMode.png)
+
+### Navigate to the day, month or year modes using key navigation
+
+You can easily navigate to the day, month or year or decade modes by pressing the `Alt` with `Up` or `Down` arrow keys. If you will press the `Alt + Up` arrow key combination, it will navigate from dates to month, year and then decade mode. If you will press `Alt + Down` arrow key combination, it will navigate from decade to year, month and then dates mode.
+
+For example, if you will start navigation from month mode, it will be move to next or previous mode as follows,
+
+![Multiple dates selected by key navigation in CalendarEdit](Working-with-Calendar_images/Mode_keynavigation.png)
 
 ### Change animation time for calendar mode navigation 
 
@@ -65,7 +73,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Navigate to previous or next month
 
-You can navigate to the previous or next month by clicking on the `Previous-Next` navigation buttons in the header. You can also navigate to the previous or next month by scrolling the mouse. If you want to change the animation time for navigate to the previous or next month, set value to [FrameMovingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_FrameMovingTime) property. The default value of `FrameMovingTime` property is `300`.
+You can navigate to the previous or next month by clicking on the `Previous-Next` navigation buttons in the header. You can also navigate to the previous or next month by scrolling the mouse or pressing the `Alt + (Left or Right)` key combination. If you want to change the animation time for navigate to the previous or next month, set value to [FrameMovingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_FrameMovingTime) property. The default value of `FrameMovingTime` property is `300`.
 
 {% tabs %}
 {% highlight XAML %}

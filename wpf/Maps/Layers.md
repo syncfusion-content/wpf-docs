@@ -372,7 +372,13 @@ The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.M
 
 {% endtabs %}
 
-## See Also
+## see also
 
-[How to specify ItemTemplate to shape file layer?](https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer)
-[How to drilldown map layers?](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
+[How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
+
+[How to drilldown map layers](https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
+
+[How to specify ItemTemplate to shape file layer]( https://www.syncfusion.com/kb/10001/how-to-specify-itemtemplate-to-shape-file-layer) 
+
+[How to render custom data source in SfMap](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)
+

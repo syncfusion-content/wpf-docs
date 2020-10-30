@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Text
+# Text in SfImageEditor
 
 You can annotate an image by adding the desired text to it. This can be done in the following two ways:
 
@@ -112,3 +112,8 @@ Using the following properties in TextSettings, text can be customized.
 {% endtabs %} 
 
 ![Text](Images/Text.jpg)   
+
+## See also
+
+[How to load the image annotated with shapes and text on the image editor](https://www.syncfusion.com/kb/11215/how-to-load-the-image-annotated-with-shapes-and-text-on-the-image-editor)
+
