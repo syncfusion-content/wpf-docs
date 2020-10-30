@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ColorMapping | TreeMap | wpf | Syncfusion
-description: colormapping
+description: This section describes uni color, range brush color, desaturation color, palette color, group color mapping in WPF TreeMap (SfTreeMap) 
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# ColorMapping
+# ColorMapping in SfTreeMap
 
 ColorMapping is categorized into four different types such as,
 
@@ -19,7 +19,7 @@ ColorMapping is categorized into four different types such as,
 
 
 
-##TreeMap ColorMapping:
+## TreeMap ColorMapping:
 
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
@@ -52,7 +52,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
 
-##TreeMapLevel ColorMapping:
+## TreeMapLevel ColorMapping:
 
 The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
 
@@ -153,7 +153,7 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
 
 
-![](ColorMapping_images/ColorMapping_img1.png)
+![UniColorMapping_Image](ColorMapping_images/ColorMapping_img1.png)
 
 
 
@@ -207,7 +207,7 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 
 
 
-![](ColorMapping_images/ColorMapping_img2.png)
+![RangeBrushColorMapping_Image](ColorMapping_images/ColorMapping_img2.png)
 
 
 ## DesaturationColorMapping
@@ -250,7 +250,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 
 
-![](ColorMapping_images/ColorMapping_img3.png)
+![DesaturationColorMapping_Image](ColorMapping_images/ColorMapping_img3.png)
 
 
 
@@ -308,7 +308,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 
 
-![](ColorMapping_images/ColorMapping_img4.png)
+![PaletteColorMapping_Image](ColorMapping_images/ColorMapping_img4.png)
 
 
 
@@ -388,7 +388,8 @@ The leaf nodes are colored by using different ColorMappings available in the Tre
 
 {% endhighlight %}
 
-![](ColorMapping_images/ColorMapping_img5.png)
+![GroupColorMapping_Image](ColorMapping_images/ColorMapping_img5.png)
 
+## see also
 
-
+[How to apply gradient color mapping to SfTreeMap](https://www.syncfusion.com/kb/9802/how-to-apply-gradientcolormapping-to-sftreemap)
