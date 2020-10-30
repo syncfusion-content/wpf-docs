@@ -165,29 +165,36 @@ You can populate the items to the [CheckListBox](https://help.syncfusion.com/cr/
 {% highlight C# %}
 
 //Model.cs
-public class Model {
+public class Model
+{
 	public string Name { get; set; }
 	public string Description { get; set; }
 }
 
 //ViewModel.cs
-public class ViewModel {
+public class ViewModel
+{
 	private ObservableCollection<Model> checkList;
-	public ObservableCollection<Model> CheckListItems {
-		get {
+	public ObservableCollection<Model> CheckListItems
+    {
+		get
+        {
 			return checkList;
 		}
-		set	{
+		set
+        {
 			checkList = value;
 		}
 	}
 
-	public ViewModel() {
+	public ViewModel()
+    {
 		CheckListItems = new ObservableCollection<Model>();
 		populateItem();
 	}
 
-	private void populateItem()	{
+	private void populateItem()
+    {
 		CheckListItems.Add(new Model() { Name="Mexico", Description="Mexico"});
 		CheckListItems.Add(new Model() { Name="Canada", Description="Canada"});
 		CheckListItems.Add(new Model() { Name="Bermuda", Description="Bermuda"});
@@ -274,4 +281,4 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ![CheckListBox with checked items count](Getting-Started_images/CheckItems_Count.gif)
 
-[View Sample in GutHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started)
