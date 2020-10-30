@@ -172,7 +172,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
         skin:SfSkinManager.VisualStyle="MaterialLight"
         Title="MainWindow" Height="450" Width="600">
     <syncfusion:RibbonWindow.Resources>
-        <DataTemplate x:Key="smallIconTemplate">
+        <DataTemplate x:Key="ribbonButtonSmallIconTemplate">
             <Grid Width="14" Height="16">
                 <Path Width="7" Margin="0,7,0,0" HorizontalAlignment="Right" Fill="#FF3A3A38" Stretch="Fill"
                       Data="F1M122,367L127,367L127,360L122,360z M128,368L121,368L121,359L128,359z" />
@@ -186,7 +186,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
                       Data="M4,1 C3.447998,1 3,1.4490051 3,2 L3,3 1,3 1,5 7,5 7,3 5,3 5,2 C5,1.4490051 4.552002,1 4,1 z M4,0 C5.1029968,0 6,0.89700317 6,2 L8,2 8,6 0,6 0,2 2,2 C2,0.89700317 2.8970032,0 4,0 z" />
             </Grid>
         </DataTemplate>
-        <DataTemplate x:Key="largeIconTemplate">
+        <DataTemplate x:Key="ribbonButtonLargeIconTemplate">
                 <Grid Margin="2">
                     <Path Data="M17,0 L21,0 21,7 20,7 20,1.0000001 17,1.0000001 z M0,0 L4,0 4,1.0000001 1.0000001,1.0000001 1.0000001,23 12,23 12,24 0,24 z"
                           Margin="0,4,6,2" Fill="#FFED8733" Stretch="Fill" />
@@ -200,9 +200,9 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
                           Height="8" Margin="4,0,10,0" VerticalAlignment="Top" Fill="#FF797774" Stretch="Fill"/>
                 </Grid>
         </DataTemplate>
-        <local:ItemIconTemplateSelector x:Key="itemIconTemplateSelector"
-                                    SmallTemplate="{StaticResource smallIconTemplate}"
-                                    LargeTemplate="{StaticResource largeIconTemplate}"/>
+        <local:RibbonButtonIconTemplateSelector x:Key="ribbonButtonIconTemplateSelector"
+                                    SmallTemplate="{StaticResource ribbonButtonSmallIconTemplate}"
+                                    LargeTemplate="{StaticResource ribbonButtonLargeIconTemplate}"/>
     </syncfusion:RibbonWindow.Resources>
     <Grid>
         <syncfusion:Ribbon VerticalAlignment="Top">
@@ -211,7 +211,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
             </syncfusion:Ribbon.QuickAccessToolBar>
             <syncfusion:RibbonTab Caption="Home">
                 <syncfusion:RibbonBar Header="Clipboard">
-                    <syncfusion:RibbonButton Label="Paste" SizeForm="Large" IconTemplateSelector="{StaticResource itemIconTemplateSelector}"/>
+                    <syncfusion:RibbonButton Label="Paste" SizeForm="Large" IconTemplateSelector="{StaticResource ribbonButtonIconTemplateSelector}"/>
                 </syncfusion:RibbonBar>
             </syncfusion:RibbonTab>
         </syncfusion:Ribbon>
@@ -222,7 +222,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
  {% highlight c# %}
 
- public class ItemIconTemplateSelector : DataTemplateSelector
+ public class RibbonButtonIconTemplateSelector : DataTemplateSelector
  {
     public DataTemplate SmallTemplate { get; set; }
     public DataTemplate LargeTemplate { get; set; }
@@ -249,6 +249,8 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
  {% endtabs %}
 
  ![Image set for RibbonButton using IconTemplateSelector property](RibbonButton_images/RibbonButton_IconTemplateSelector.png)
+
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
 ### Setting icon template
 
@@ -380,6 +382,8 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
  ![Image set for RibbonButton using IconTemplate property](RibbonButton_images/RibbonButton_IconTemplate.png)
+
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
 ### Setting image path
 
