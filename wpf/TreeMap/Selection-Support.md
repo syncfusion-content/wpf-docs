@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection Support | TreeMap | wpf | Syncfusion
-description: selection support
+description: This section describes selection by setting HighlightOnSelection property and group selection by setting HighlightGroupOnSelection property in SfTreeMap.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Selection Support
+# Selection Support in SfTreeMap
 
 While selecting a leaf node, you can highlight it by setting HighlightOnSelection property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap. SelectionMode can also be set to either “Default” or “Multiple”. “Multiple” selection of leaf nodes is made possible by pressing the control key continuously while Mouse Click happens.
 
@@ -36,7 +36,7 @@ While selecting a leaf node, you can highlight it by setting HighlightOnSelectio
 
 
 
-![](Selection-Support_images/Selection-Support_img1.png)
+![Selection Support_images](Selection-Support_images/Selection-Support_img1.png)
 
 
 
@@ -65,7 +65,8 @@ GroupSelection support is also provided under selection support where the whole 
 {% endhighlight %}
 
 
-![](Selection-Support_images/Selection-Support_img2.png)
+![GroupSelection support_images](Selection-Support_images/Selection-Support_img2.png)
 
+## see also
 
-
+[How to highlight group selection](https://www.syncfusion.com/kb/7654/how-to-highlight-group-selection) 

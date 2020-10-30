@@ -196,3 +196,7 @@ This event occurs after the reset function has been completed.
 {% endhighlight %}
 
 {% endtabs %} 
+
+## See also
+
+[How to capture and save signature using the image editor](https://www.syncfusion.com/kb/11213/how-to-capture-and-save-signature-using-the-image-editor)
