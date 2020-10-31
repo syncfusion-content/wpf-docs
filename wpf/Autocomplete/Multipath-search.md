@@ -137,8 +137,14 @@ control search is based on the SearchItemPath. It performs the single path searc
 {% endtabs %}
 
 
+**Search the items with ID:**
+
 ![Multipath Search ID](Multipath_Search/Multipath_Search.png)
 
+
+**Search the items with Name:**
+
 ![Multipath Search Name](Multipath_Search/Multipath_Search_Name.png)
+
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Multipath_Search) in GitHub.
