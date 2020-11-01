@@ -1,16 +1,15 @@
 ---
 layout: post
 title: MultiPath search of AutoComplete in Syncfusion SfTextBoxExt.
-description: This section provides details about how to perform Multipath search from AutoCompleteSource in Syncfusion AutoComplete control.
+description: This section provides details about how to perform MultiPath search from AutoCompleteSource in Syncfusion AutoComplete control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# MultiPath search with AutoComplete
+# MultiPath search in AutoComplete
 
-AutoComplete control already supports the custom search. So, it can be used for the MultiPath search. When using the object list AutoCompleteSource, the
-control search is based on the SearchItemPath. It performs the single path search. But using the custom search, it can perform the MultiPath search in AutoComplete.
+AutoComplete control already supports the custom search. So, it can be used for the MultiPath search. When using the object list AutoCompleteSource, the control search is based on the SearchItemPath. It performs the single path search. But using the custom search, it can perform the MultiPath search in AutoComplete.
 
 **Model**
 
@@ -40,6 +39,12 @@ control search is based on the SearchItemPath. It performs the single path searc
 
     public class ViewModel
     {
+        public ICommand AutoCompleteLoaded
+        {
+            get;
+            private set;
+        }
+
         private ObservableCollection<Model> employeeCollection;
         public ObservableCollection<Model> EmployeeCollection
         {
@@ -48,6 +53,7 @@ control search is based on the SearchItemPath. It performs the single path searc
         }
         public ViewModel()
         {
+            AutoCompleteLoaded = new DelegateCommand(AutoCompleteLoadedMethod);
             employeeCollection = new ObservableCollection<Model>();
             employeeCollection.Add(new Model() { ID = 1, Name = "Eric" });
             employeeCollection.Add(new Model() { ID = 2, Name = "James" });
@@ -59,6 +65,26 @@ control search is based on the SearchItemPath. It performs the single path searc
             employeeCollection.Add(new Model() { ID = 8, Name = "Alan" });
             employeeCollection.Add(new Model() { ID = 9, Name = "Aaron" });
         }
+        private void AutoCompleteLoadedMethod(object obj)
+        {
+            var autocomplete = obj as SfTextBoxExt;
+            if (autocomplete != null)
+            {
+                autocomplete.Filter = CustomFilter;
+            }
+        }
+        public bool CustomFilter(string search, object item)
+        {
+            var model = item as Model;
+            if (model != null)
+            {
+                if ((model.Name.ToLower().Contains(search.ToLower())) || ((model.ID).ToString().ToLower().Contains(search.ToLower())))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 	
 {% endhighlight %}
@@ -67,8 +93,12 @@ control search is based on the SearchItemPath. It performs the single path searc
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt
-            x:Name="autoComplete"
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <StackPanel Margin="10" VerticalAlignment="Center">
+        <editors:SfTextBoxExt
+            x:Name="autoComplete1"
             Width="200"
             Height="40"
             HorizontalAlignment="Center"
@@ -82,7 +112,6 @@ control search is based on the SearchItemPath. It performs the single path searc
                     <Grid HorizontalAlignment="Stretch">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20" />
-                            <ColumnDefinition Width="1" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <TextBlock
@@ -93,14 +122,8 @@ control search is based on the SearchItemPath. It performs the single path searc
                             FontSize="12"
                             FontWeight="Normal"
                             Text="{Binding ID}" />
-                        <Border
-                            Grid.Column="1"
-                            Width="1"
-                            Margin="0,-15"
-                            BorderBrush="#D8D8D8"
-                            BorderThickness="1" />
                         <TextBlock
-                            Grid.Column="2"
+                            Grid.Column="1"
                             Padding="10,8,0,8"
                             VerticalAlignment="Center"
                             FontFamily="SegoeUI"
@@ -110,27 +133,73 @@ control search is based on the SearchItemPath. It performs the single path searc
                     </Grid>
                 </DataTemplate>
             </editors:SfTextBoxExt.AutoCompleteItemTemplate>
+            <interaction:Interaction.Triggers>
+                <interaction:EventTrigger EventName="Loaded">
+                    <interaction:InvokeCommandAction Command="{Binding AutoCompleteLoaded}" CommandParameter="{Binding ElementName=autoComplete1}" />
+                </interaction:EventTrigger>
+            </interaction:Interaction.Triggers>
         </editors:SfTextBoxExt>
+    </StackPanel>
 
 {% endhighlight %}
 
 
 {% highlight c# %}
 
- autoComplete.Filter = CustomFilter;
-
- private bool CustomFilter(string search, object item)
-        {
-            var model = item as Model;
-            if (model != null)
+            ViewModel viewModel = new ViewModel();
+            this.DataContext = viewModel;
+            StackPanel stackPanel = new StackPanel()
             {
-                if ((model.Name.ToLower().Contains(search.ToLower())) || ((model.ID).ToString().ToLower().Contains(search.ToLower())))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
+                Margin = new Thickness(10),
+                VerticalAlignment = VerticalAlignment.Center
+            };
+
+            SfTextBoxExt autoComplete = new SfTextBoxExt()
+            {
+                Width = 200,
+                Height = 40,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                AutoCompleteSource = viewModel.EmployeeCollection,
+                Filter= viewModel.CustomFilter,
+                SearchItemPath = "Name",
+                SuggestionMode = SuggestionMode.Custom
+            };
+
+            FrameworkElementFactory grid = new FrameworkElementFactory(typeof(Grid));
+            grid.SetValue(Grid.HorizontalAlignmentProperty, HorizontalAlignment.Stretch);
+
+            FrameworkElementFactory firstColumn = new FrameworkElementFactory(typeof(ColumnDefinition));
+            firstColumn.SetValue(ColumnDefinition.WidthProperty, new GridLength(20.0));
+
+            FrameworkElementFactory secondColumn = new FrameworkElementFactory(typeof(ColumnDefinition));
+            secondColumn.SetValue(ColumnDefinition.WidthProperty, new GridLength(0.0, GridUnitType.Auto));
+
+            FrameworkElementFactory textBlockID = new FrameworkElementFactory(typeof(TextBlock));
+            textBlockID.SetValue(TextBlock.PaddingProperty,new Thickness(2, 8, 0, 8));
+            textBlockID.SetValue(Grid.ColumnProperty, 0);
+            textBlockID.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+            textBlockID.SetValue(TextBlock.FontSizeProperty, 12.0);
+            textBlockID.SetValue(TextBlock.FontFamilyProperty,new FontFamily("SegoeUI"));
+            textBlockID.SetValue(TextBlock.FontWeightProperty, FontWeights.Normal);
+            textBlockID.SetBinding(TextBlock.TextProperty, new Binding("ID"));
+
+            FrameworkElementFactory textBlockName = new FrameworkElementFactory(typeof(TextBlock));
+            textBlockName.SetValue(TextBlock.PaddingProperty, new Thickness(20,8,0,8));
+            textBlockName.SetValue(Grid.ColumnProperty, 1);
+            textBlockName.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+            textBlockName.SetValue(TextBlock.FontSizeProperty, 12.0);
+            textBlockName.SetValue(TextBlock.FontFamilyProperty, new FontFamily("SegoeUI"));
+            textBlockName.SetValue(TextBlock.FontWeightProperty, FontWeights.Normal);
+            textBlockName.SetValue(TextBlock.TextProperty, new Binding("Name"));
+
+            grid.AppendChild(textBlockID);
+            grid.AppendChild(textBlockName);
+            DataTemplate template = new DataTemplate { VisualTree = grid };
+            autoComplete.AutoCompleteItemTemplate = template;
+            stackPanel.Children.Add(autoComplete);
+            this.Content = stackPanel;
 
 {% endhighlight %}
 
