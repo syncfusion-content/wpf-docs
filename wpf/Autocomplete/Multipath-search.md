@@ -9,7 +9,7 @@ documentation: ug
 
 # MultiPath search in AutoComplete
 
-AutoComplete control already supports the custom search. So, it can be used for the MultiPath search. When using the object list AutoCompleteSource, the control search is based on the SearchItemPath. It performs the single path search. But using the custom search, it can perform the MultiPath search in AutoComplete.
+Multi-path search can be achieved using the custom search feature by setting the `SuggestionMode` API as `Custom`. Users can define a custom filter and can be assigned to the `Filter` API.
 
 **Model**
 
