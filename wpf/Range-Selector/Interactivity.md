@@ -253,8 +253,6 @@ SfDateTimeRangeNavigator [LeftThumbStyle](https://help.syncfusion.com/cr/wpf/Syn
 
 {% highlight c# %}
 
-{% endhighlight  %}
-
 ThumbStyle thumbStyle = new ThumbStyle()
 {
 
