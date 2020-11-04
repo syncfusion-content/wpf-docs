@@ -9,7 +9,7 @@ documentation: ug
 
 # Multiple Selections in ComboBoxAdv
 
-This section explains how to select the multiple items and select the items programatically in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
+This section explains how to select the multiple items and select the items programmatically in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 
 ## Properties
 
