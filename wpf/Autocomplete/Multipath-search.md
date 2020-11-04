@@ -1,15 +1,15 @@
 ---
 layout: post
-title: MultiPath search of AutoComplete in Syncfusion SfTextBoxExt.
-description: This section provides details about how to perform MultiPath search from AutoCompleteSource in Syncfusion AutoComplete control.
+title: MultiPath search of Autocomplete in Syncfusion SfTextBoxExt.
+description: This section provides details about how to perform MultiPath search from AutoCompleteSource in Syncfusion Autocomplete control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# MultiPath search in AutoComplete
+# Multi-path search in Autocomplete
 
-Multi-path search can be achieved using the custom search feature by setting the `SuggestionMode` API as `Custom`. Users can define a custom filter and can be assigned to the `Filter` API.
+Multi-path search can be achieved using the custom search feature by setting the `SuggestionMode` property as `Custom`. Users can define a custom filter and can be assigned to the `Filter` property.
 
 **Model**
 
@@ -33,47 +33,47 @@ Multi-path search can be achieved using the custom search feature by setting the
 	
 {% endhighlight %}
 
-**ViewModel**
+**View model**
 
 {% highlight c# %}
 
-    public class ViewModel
+    public class Viewmodel
     {
-        public ICommand AutoCompleteLoaded
+        public ICommand ControlLoaded
         {
             get;
-            private set;
+            set;
         }
 
-        private ObservableCollection<Model> employeeCollection;
-        public ObservableCollection<Model> EmployeeCollection
+        private ObservableCollection<Model> employees;
+        public ObservableCollection<Model> Employees
         {
-            get { return employeeCollection; }
-            set { employeeCollection = value; }
+            get { return employees; }
+            set { employees = value; }
         }
         public ViewModel()
         {
-            AutoCompleteLoaded = new DelegateCommand(AutoCompleteLoadedMethod);
-            employeeCollection = new ObservableCollection<Model>();
-            employeeCollection.Add(new Model() { ID = 1, Name = "Eric" });
-            employeeCollection.Add(new Model() { ID = 2, Name = "James" });
-            employeeCollection.Add(new Model() { ID = 3, Name = "Jacob" });
-            employeeCollection.Add(new Model() { ID = 4, Name = "Lucas" });
-            employeeCollection.Add(new Model() { ID = 5, Name = "Mark" });
-            employeeCollection.Add(new Model() { ID = 6, Name = "Aldan" });
-            employeeCollection.Add(new Model() { ID = 7, Name = "Aldrin" });
-            employeeCollection.Add(new Model() { ID = 8, Name = "Alan" });
-            employeeCollection.Add(new Model() { ID = 9, Name = "Aaron" });
+            ControlLoaded = new DelegateCommand(Loaded);
+            Employees = new ObservableCollection<Model>();
+            Employees.Add(new Model() { ID = 1, Name = "Eric" });
+            Employees.Add(new Model() { ID = 2, Name = "James" });
+            Employees.Add(new Model() { ID = 3, Name = "Jacob" });
+            Employees.Add(new Model() { ID = 4, Name = "Lucas" });
+            Employees.Add(new Model() { ID = 5, Name = "Mark" });
+            Employees.Add(new Model() { ID = 6, Name = "Aldan" });
+            Employees.Add(new Model() { ID = 7, Name = "Aldrin" });
+            Employees.Add(new Model() { ID = 8, Name = "Alan" });
+            Employees.Add(new Model() { ID = 9, Name = "Aaron" });
         }
-        private void AutoCompleteLoadedMethod(object obj)
+        private void Loaded(object obj)
         {
             var autocomplete = obj as SfTextBoxExt;
             if (autocomplete != null)
             {
-                autocomplete.Filter = CustomFilter;
+                autocomplete.Filter = Filtering;
             }
         }
-        public bool CustomFilter(string search, object item)
+        public bool Filtering(string search, object item)
         {
             var model = item as Model;
             if (model != null)
@@ -98,13 +98,9 @@ Multi-path search can be achieved using the custom search feature by setting the
     </Window.DataContext>
     <StackPanel Margin="10" VerticalAlignment="Center">
         <editors:SfTextBoxExt
-            x:Name="autoComplete1"
-            Width="200"
-            Height="40"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
+            x:Name="autocomplete"
             AutoCompleteMode="Suggest"
-            AutoCompleteSource="{Binding EmployeeCollection}"
+            AutoCompleteSource="{Binding Employees}"
             SearchItemPath="Name"
             SuggestionMode="Custom">
             <editors:SfTextBoxExt.AutoCompleteItemTemplate>
@@ -135,7 +131,7 @@ Multi-path search can be achieved using the custom search feature by setting the
             </editors:SfTextBoxExt.AutoCompleteItemTemplate>
             <interaction:Interaction.Triggers>
                 <interaction:EventTrigger EventName="Loaded">
-                    <interaction:InvokeCommandAction Command="{Binding AutoCompleteLoaded}" CommandParameter="{Binding ElementName=autoComplete1}" />
+                    <interaction:InvokeCommandAction Command="{Binding ControlLoaded}" CommandParameter="{Binding ElementName=autocomplete}" />
                 </interaction:EventTrigger>
             </interaction:Interaction.Triggers>
         </editors:SfTextBoxExt>
@@ -146,23 +142,23 @@ Multi-path search can be achieved using the custom search feature by setting the
 
 {% highlight c# %}
 
-            ViewModel viewModel = new ViewModel();
-            this.DataContext = viewModel;
+            Viewmodel viewmodel = new Viewmodel();
+            this.DataContext = viewmodel;
             StackPanel stackPanel = new StackPanel()
             {
                 Margin = new Thickness(10),
                 VerticalAlignment = VerticalAlignment.Center
             };
 
-            SfTextBoxExt autoComplete = new SfTextBoxExt()
+            SfTextBoxExt autocomplete = new SfTextBoxExt()
             {
                 Width = 200,
                 Height = 40,
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                AutoCompleteSource = viewModel.EmployeeCollection,
-                Filter= viewModel.CustomFilter,
+                AutoCompleteSource = viewmodel.Employees,
+                Filter= viewmodel.Filtering,
                 SearchItemPath = "Name",
                 SuggestionMode = SuggestionMode.Custom
             };
@@ -177,28 +173,16 @@ Multi-path search can be achieved using the custom search feature by setting the
             secondColumn.SetValue(ColumnDefinition.WidthProperty, new GridLength(0.0, GridUnitType.Auto));
 
             FrameworkElementFactory textBlockID = new FrameworkElementFactory(typeof(TextBlock));
-            textBlockID.SetValue(TextBlock.PaddingProperty,new Thickness(2, 8, 0, 8));
-            textBlockID.SetValue(Grid.ColumnProperty, 0);
-            textBlockID.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
-            textBlockID.SetValue(TextBlock.FontSizeProperty, 12.0);
-            textBlockID.SetValue(TextBlock.FontFamilyProperty,new FontFamily("SegoeUI"));
-            textBlockID.SetValue(TextBlock.FontWeightProperty, FontWeights.Normal);
             textBlockID.SetBinding(TextBlock.TextProperty, new Binding("ID"));
 
             FrameworkElementFactory textBlockName = new FrameworkElementFactory(typeof(TextBlock));
-            textBlockName.SetValue(TextBlock.PaddingProperty, new Thickness(20,8,0,8));
-            textBlockName.SetValue(Grid.ColumnProperty, 1);
-            textBlockName.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
-            textBlockName.SetValue(TextBlock.FontSizeProperty, 12.0);
-            textBlockName.SetValue(TextBlock.FontFamilyProperty, new FontFamily("SegoeUI"));
-            textBlockName.SetValue(TextBlock.FontWeightProperty, FontWeights.Normal);
             textBlockName.SetValue(TextBlock.TextProperty, new Binding("Name"));
 
             grid.AppendChild(textBlockID);
             grid.AppendChild(textBlockName);
             DataTemplate template = new DataTemplate { VisualTree = grid };
             autoComplete.AutoCompleteItemTemplate = template;
-            stackPanel.Children.Add(autoComplete);
+            stackPanel.Children.Add(autocomplete);
             this.Content = stackPanel;
 
 {% endhighlight %}
@@ -208,12 +192,12 @@ Multi-path search can be achieved using the custom search feature by setting the
 
 **Search the items with ID:**
 
-![Multipath Search ID](Multipath_Search/Multipath_Search.png)
+![Multi-path Search ID](Multipath_Search/Multipath_Search.png)
 
 
 **Search the items with Name:**
 
-![Multipath Search Name](Multipath_Search/Multipath_Search_Name.png)
+![Multi-path Search Name](Multipath_Search/Multipath_Search_Name.png)
 
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Multipath_Search) in GitHub.
