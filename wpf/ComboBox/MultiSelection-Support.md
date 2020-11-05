@@ -58,11 +58,9 @@ comboBoxAdv.AllowMultiSelect = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Adding multiple selections to an application in WPF ComboBoxAdv](ComboBoxAdv_images/ComboBoxAdv_img13.png)
-
 ## Selecting an item through programmatically
 
-You can select the items programmatically by using [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is true, the `SelectedItems` property exposes the items that are selected in the drop down list.
+You can select the items programmatically by using [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is `true`, the `SelectedItems` property exposes the items that are selected in the drop down list.
 
 In the below example, first two items from the Observable Collection bound to the `SelectedItems` property.
 
@@ -83,7 +81,7 @@ public class Country
 
 {% endtabs %}
 
-2.Create a **ViewModel** class with several data objects in constructor.
+2.Create a **ViewModel** class with `SelectedItems`, Countries properties are initialized with data objects in constructor.
 
 {% tabs %}
 
@@ -161,4 +159,6 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Select the item programmatically in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
+![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
