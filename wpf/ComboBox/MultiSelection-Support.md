@@ -45,76 +45,36 @@ You can select the multiple items in WPF `ComboBoxAdv` control by setting the [A
 
 {% highlight XAML %}
 
-<syncfusion:ComboBoxAdv x:Name="comboBoxAdv" AllowMultiSelect="True" DefaultText="ComboBox Items" Height="30" Width="150">
-    <syncfusion:ComboBoxItemAdv Content="United States"/>
-    <syncfusion:ComboBoxItemAdv Content="India"/>
-    <syncfusion:ComboBoxItemAdv Content="Canada"/>
-    <syncfusion:ComboBoxItemAdv Content="German"/>
+<syncfusion:ComboBoxAdv x:Name="comboBoxAdv" AllowMultiSelect="True">
 </syncfusion:ComboBoxAdv>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-//Initialize the ComboBoxAdv control.
 ComboBoxAdv comboBoxAdv = new ComboBoxAdv();
-comboBoxAdv.Height = 30;
-comboBoxAdv.Width = 150;
-comboBoxAdv.DefaultText = "ComboBox Items";
 comboBoxAdv.AllowMultiSelect = true;
-
-//Initialize the ComboBox items and set the items.
-ComboBoxItemAdv item1 = new ComboBoxItemAdv() { Content = "United States" };
-ComboBoxItemAdv item2 = new ComboBoxItemAdv() { Content = "India" };
-ComboBoxItemAdv item3 = new ComboBoxItemAdv() { Content = "Canada" };
-ComboBoxItemAdv item4 = new ComboBoxItemAdv() { Content = "German" };
-
-//Adding items to the control.
-comboBoxAdv.Items.Add(item1);
-comboBoxAdv.Items.Add(item2);
-comboBoxAdv.Items.Add(item3);
-comboBoxAdv.Items.Add(item4);
-
-//Adding control to the window
-grid.Children.Add(comboBoxAdv);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Adding multiple selections to an application](ComboBoxAdv_images/wpf-comboboxadv-multiselect.png)
+![Adding multiple selections to an application in WPF ComboBoxAdv](ComboBoxAdv_images/ComboBoxAdv_img13.png)
 
-## Select the items
+## Selecting an item through programmatically
 
-You can select the items programmatically by using [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is true, the SelectedItems property exposes the items that are selected in the drop down list.
+You can select the items programmatically by using [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_SelectedItems) property. When `AllowMultiSelect` is true, the `SelectedItems` property exposes the items that are selected in the drop down list.
 
 In the below example, first two items from the Observable Collection bound to the `SelectedItems` property.
 
-**MainWindow.Xaml:**
+### Creating Model and ViewModel data for DataBinding
 
-{% tabs %}
-
-{% highlight Xaml %}
-
-<Window.DataContext>
-    <local:ViewModel />
-</Window.DataContext>
-<Grid>
-    <syncfusion:ComboBoxAdv DisplayMemberPath="Name" SelectedItems="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-            AllowMultiSelect="True" Name="comboboxadv"  HorizontalAlignment="Center" Height="30"
-            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Products}"/>
-</Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Model.cs:**
+1.Create data object class named **Country** and declare the property as shown below.
 
 {% tabs %}
 
 {% highlight C# %}
 
-public class Model
+public class Country
 {
     public string Name { get; set; }
 }
@@ -123,7 +83,7 @@ public class Model
 
 {% endtabs %}
 
-**ViewModel.cs:**
+2.Create a **ViewModel** class with several data objects in constructor.
 
 {% tabs %}
 
@@ -143,28 +103,28 @@ public class ViewModel : INotifyPropertyChanged
             RaisePropertyChanged("SelectedItems");
         }
     }
-    private ObservableCollection<Model> products;
-    public ObservableCollection<Model> Products
+    private ObservableCollection<Country> countries;
+    public ObservableCollection<Country> Countries
     {
-        get { return products; }
+        get { return countries; }
         set
         {
-            products = value;
+            countries = value;
         }
     }
     public ViewModel()
     {
-        Products = new ObservableCollection<Model>();
-
-        Products.Add(new Model() { Name = "United States" });
-        Products.Add(new Model() { Name = "India " });
-        Products.Add(new Model() { Name = "Canada" });
-        Products.Add(new Model() { Name = "German" });
+        Countries = new ObservableCollection<Country>();
+        Countries.Add(new Country() { Name = "Denmark" });
+        Countries.Add(new Country() { Name = "New Zealand" });
+        Countries.Add(new Country() { Name = "Canada" });
+        Countries.Add(new Country() { Name = "Russia" });
+        Countries.Add(new Country() { Name = "Japan" });
 
         _items = new ObservableCollection<object>();
         for (int i = 0; i < 2; i++)
         {
-            _items.Add(Products[i]);
+            _items.Add(Countries[i]);
         }
         SelectedItems = new ObservableCollection<object>(_items);
     }
@@ -182,4 +142,23 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Select the item using SelectedItems property in WPF ComboBoxAdv](Comboboxadv_images/wpf-comboboxadv-selection.png)
+3.To bind the `ComboBoxAdv` to data, bind the collection created in previous step to [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting `ViewModel` as `DataContext`.
+
+{% tabs %}
+
+{% highlight Xaml %}
+
+<Window.DataContext>
+    <local:ViewModel />
+</Window.DataContext>
+<Grid>
+    <syncfusion:ComboBoxAdv DisplayMemberPath="Name" SelectedItems="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            AllowMultiSelect="True" Name="comboboxadv"  HorizontalAlignment="Center" Height="30"
+            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Products}"/>
+</Grid>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Select the item programmatically in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
