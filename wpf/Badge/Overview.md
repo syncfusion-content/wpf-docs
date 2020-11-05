@@ -7,7 +7,7 @@ control: SfBadge
 documentation: ug
 ---
 
-# WPF Badge Overview
+# WPF Badge control Overview
 
 [Badge]() control used to notify users of new or unread messages, notifications, or the status of something. 
 

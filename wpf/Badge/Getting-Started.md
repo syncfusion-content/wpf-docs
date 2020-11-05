@@ -547,7 +547,8 @@ You can format the numbers which are displayed in the `Badge` content by using t
                         NumberDecimalDigits="0"
                         Value="1"
                         x:Name="badgeContent"
-                        ValueChanged="BadgeContent_ValueChanged"/> 
+                        ValueChanged="BadgeContent_ValueChanged"/>
+</StackPanel>
 
 {% endhighlight %}
 {% highlight C# %}

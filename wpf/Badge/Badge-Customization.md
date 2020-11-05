@@ -60,31 +60,37 @@ You can directly add the `Badge` to any objects without using the `SfBadge.Badge
 {% tabs %}
 {% highlight C# %}
 
+public class MailItem
+{
+   public string ItemName { get; set; }
+   public int? UnreadMessageount { get; set; }
+}
+
 public class ViewModel {
-    public List<Model> MailItems { get; set; }
+    public List<MailItem> MailItems { get; set; }
     public ViewModel(){
-        MailItems = new List<Model>();
-        MailItems.Add(new Model()
+        MailItems = new List<MailItem>();
+        MailItems.Add(new MailItem()
         {
             ItemName = "Inbox",
             UnreadMessageount = 20
         });
-        MailItems.Add(new Model()
+        MailItems.Add(new MailItem()
         {
             ItemName = "Drafts",
             UnreadMessageount = null
         });
-        MailItems.Add(new Model()
+        MailItems.Add(new MailItem()
         {
             ItemName = "Sent Items",
             UnreadMessageount = 5
         });
-        MailItems.Add(new Model()
+        MailItems.Add(new MailItem()
         {
             ItemName = "Deleted Items",
             UnreadMessageount = null
         });
-        MailItems.Add(new Model()
+        MailItems.Add(new MailItem()
         {
             ItemName = "Junk Email",
             UnreadMessageount = null
@@ -99,7 +105,7 @@ public class ViewModel {
 {% highlight XAML %}
 
 <Window.DataContext>
-    <local:ViewModel></local:ViewModel>
+    <local:ViewModel/>
 </Window.DataContext>
 <Grid>
     <ListView BorderThickness="1"
@@ -521,8 +527,6 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 {% endhighlight %}
 {% endtabs %}
-
-![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
