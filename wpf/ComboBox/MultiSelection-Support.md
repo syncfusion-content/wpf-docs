@@ -81,7 +81,7 @@ public class Country
 
 {% endtabs %}
 
-2.Create a **ViewModel** class with `SelectedItems`, Countries properties are initialized with data objects in constructor.
+2.Create a **ViewModel** class with `SelectedItems` are initialized with data objects in constructor.
 
 {% tabs %}
 
