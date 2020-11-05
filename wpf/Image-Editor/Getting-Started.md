@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfImageEditor
 
 This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes, text, path (i.e. free hand drawing), zoom, and pan.
 
@@ -112,3 +112,7 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 {% endhighlight %}
 
 ![ImageEditor](Images/ImageEditor.png)   
+
+## See also
+
+[How to retrieve a edited image as a stream in an image editor](https://www.syncfusion.com/kb/11214/how-to-retrieve-a-edited-image-as-a-stream-in-an-image-editor)
