@@ -382,7 +382,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Resize the carousel items
 
-If you want reduce the size of the carousel items except the selected item, use the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFraction) property. The default value `ScaleFraction` property is `0`.
+If you want to change the size of the carousel items except the selected item, use the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFraction) property. You can disable it by setting the [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScalingEnabled) property value as `false`. Value range of `ScaleFraction` property is `0` to `1`. The default value `ScaleFraction` property is `0` and `ScalingEnabled` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -425,52 +425,6 @@ carousel.RadiusY = 100;
 ![The radius of the carousel control changed](Getting-Started_images/radius.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
-
-## Change display path
-
-By default, carousel items are arranged in a circular path. If you want to customize the display path of carousel item, use the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property value as `CustomPath`. The default value of `VisualMode` property is `Standard`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:Carousel VisualMode="CustomPath"
-                     Name="carousel"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-carousel.VisualMode = VisualMode.CustomPath;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Carousel items visual path customized to U shape](Getting-Started_images/VisualMode.gif)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
-
-## Change display item count
-
-You can change the number of carousel items displayed in the `Carousel` control by using the [ItemsPerPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ItemsPerPage) property. `ItemsPerPage` is  effective only on `CustomPath` view mode. The default value of `ItemsPerPage` property is `-1`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:Carousel ItemsPerPage="3"
-                     VisualMode="CustomPath"
-                     Name="carousel"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-carousel.ItemsPerPage = 3;
-carousel.VisualMode = VisualMode.CustomPath;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Number of items displayed in the Carousel control is reduced](Getting-Started_images/ItemsPerPage.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
 ## Custom UI of carousel item
 
@@ -544,6 +498,61 @@ public class ViewModel {
 ![Custom UI of carousel item using ItemTemplate](customization_images/ItemTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
+
+## Custom dispaly path for carousel items
+
+You can change the custom dspaly path of the carousel items by using the [Carousel.Path](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_Path) property. You can enable it by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property as `VisualMode.CustomPath`. The default value of `Carousel.Path` property is `null` and `VisualMode` property is `Standard`.
+
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel VisualMode="CustomPath"
+                     Name="carousel">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,100 L100,20" 
+              Stroke="Blue" 
+              StrokeThickness="2" 
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"/>
+    </syncfusion:Carousel.Path>
+</syncfusion:Carousel>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel.VisualMode = VisualMode.CustomPath;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customized visual path of Carousel items](customization_images/Path.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
+
+## Number of items to be visible in Page
+
+By default, all the items are displayed in the `Carousel` control. If you will be added more items and wants to display less number of items at a time, use the [ItemsPerPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ItemsPerPage) property. `ItemsPerPage` is  effective only on `VisualMode.CustomPath` view mode. The default value of `ItemsPerPage` property is `-1`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:Carousel ItemsPerPage="3"
+                     VisualMode="CustomPath"
+                     Name="carousel"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+carousel.ItemsPerPage = 3;
+carousel.VisualMode = VisualMode.CustomPath;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Number of items displayed in the Carousel control is reduced](Getting-Started_images/ItemsPerPage.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
 ## Selected item changed notification
 
