@@ -144,8 +144,13 @@ N> If you set `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.Horizo
 
 <syncfusion:Carousel ScrollViewer.VerticalScrollBarVisibility="Visible" 
                      ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                     VisualMode="CustomPath"
                      Name="carousel"
                      ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,0 L100,0" />
+    </syncfusion:Carousel.Path>
+
     <syncfusion:Carousel.DataContext>
         <local:ViewModel/>
     </syncfusion:Carousel.DataContext>
@@ -236,7 +241,7 @@ You can easily navigate to the first, last, previous or next items and also prev
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Carousel-Scrolling)
 
-## Looping items
+## Looping items in Custom path view
 
 Carousel has looping functionality, it allows users to loop items after reaching the last item. In the `Standard` visual mode, the carousal items can be scrolled on the circular manner. But, on the `CustomPath` visual mode, the carousal items scrolled in linear manner and first or last item hidden from the view. If you want to bring the first or last item into view in circular manner, use [EnableLooping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_EnableLooping) property value as `true`. The default value of `EnableLooping` property is `false`.
 
@@ -247,6 +252,10 @@ Carousel has looping functionality, it allows users to loop items after reaching
                      VisualMode="CustomPath"
                      Name="Carousel"
                      ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,0 L100,0" />
+    </syncfusion:Carousel.Path>
+
     <syncfusion:Carousel.DataContext>
         <local:ViewModel/>
     </syncfusion:Carousel.DataContext>
