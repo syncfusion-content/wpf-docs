@@ -144,8 +144,13 @@ N> If you set `ScrollViewer.VerticalScrollBarVisibility` or `ScrollViewer.Horizo
 
 <syncfusion:Carousel ScrollViewer.VerticalScrollBarVisibility="Visible" 
                      ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                     VisualMode="CustomPath"
                      Name="carousel"
                      ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,0 L100,0" />
+    </syncfusion:Carousel.Path>
+
     <syncfusion:Carousel.DataContext>
         <local:ViewModel/>
     </syncfusion:Carousel.DataContext>
@@ -247,6 +252,10 @@ Carousel has looping functionality, it allows users to loop items after reaching
                      VisualMode="CustomPath"
                      Name="Carousel"
                      ItemsSource="{Binding CarouselItem}">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,0 L100,0" />
+    </syncfusion:Carousel.Path>
+
     <syncfusion:Carousel.DataContext>
         <local:ViewModel/>
     </syncfusion:Carousel.DataContext>

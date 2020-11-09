@@ -364,6 +364,7 @@ You can place the carousel item with a specific rotation angle by using the [Rot
 <syncfusion:Carousel RotationAngle="180" 
                      RotationSpeed="500" 
                      EnableRotationAnimation="True"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel" />
 
 {% endhighlight %}
@@ -388,6 +389,7 @@ If you want to change the size of the carousel items except the selected item, u
 {% highlight XAML %}
 
 <syncfusion:Carousel ScaleFraction="0.50"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel"/>
 
 {% endhighlight %}
@@ -411,6 +413,7 @@ You can change the radius of the `Carousel` control by setting the value to the 
 
 <syncfusion:Carousel RadiusX="100" 
                      RadiusY="100"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel"/>
 
 {% endhighlight %}
@@ -499,15 +502,16 @@ public class ViewModel {
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/ItemTemplate)
 
-## Custom dispaly path for carousel items
+## Custom display path for carousel items
 
-You can change the custom dspaly path of the carousel items by using the [Carousel.Path](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_Path) property. You can enable it by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property as `VisualMode.CustomPath`. The default value of `Carousel.Path` property is `null` and `VisualMode` property is `Standard`.
+You can change the custom display path of the carousel items by using the [Carousel.Path](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_Path) property. You can enable it by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property as `VisualMode.CustomPath`. The default value of `Carousel.Path` property is `null` and `VisualMode` property is `Standard`.
 
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:Carousel VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,100 L100,20" 
@@ -539,6 +543,7 @@ By default, all the items are displayed in the `Carousel` control. If you will b
 
 <syncfusion:Carousel ItemsPerPage="3"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel"/>
 
 {% endhighlight %}
@@ -561,7 +566,8 @@ The selected item changed in `Carousel` can be examined using [SelectionChanged]
 {% tabs %}
 {% highlight XAML %}
 
- <syncfusion:Carousel SelectionChanged="Carousel_SelectionChanged" 
+ <syncfusion:Carousel SelectionChanged="Carousel_SelectionChanged"
+                      ItemsSource="{Binding HeaderCollection}"
                       Name="carousel"/>
 
 {% endhighlight %}

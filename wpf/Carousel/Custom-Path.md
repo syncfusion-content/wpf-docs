@@ -13,7 +13,9 @@ This section explains about resizing, skewing, page customization and opacity su
 
 ## Load carousel items in custom path
 
-If you want to load the carousel items in custom path, use the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property as `VisualMode.CustomPath`. The default custom path of carousel items is a `U` shaped path. The default value of `VisualMode` property is `VisualMode.Standard`.
+If you want to load the carousel items in your custom path, set the path value to the [Carousel.Path](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_Path). You can enable it only by setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_VisualMode) property as `VisualMode.CustomPath`. The default value of `VisualMode` property is `VisualMode.Standard` and `Carousel.Path` property is `null`.
+
+N> If you not set any path value to `Carousel.Path` property on `VisualMode.CustomPath` mode, carousel items will be loaded in the `U` shaped path.
 
 {% tabs %}
 {% highlight C# %}
@@ -63,6 +65,10 @@ public class ViewModel {
                          VisualMode="CustomPath"
                          SelectedIndex="3"
                          ItemsSource="{Binding HeaderCollection}">
+            <syncfusion:Carousel.Path>
+                <Path Data="M0,100 L100,20" />
+            </syncfusion:Carousel.Path>
+
         <syncfusion:Carousel.ItemTemplate>
             <DataTemplate>
                 <Border Height="50" 
@@ -88,36 +94,6 @@ carousel.SelectedIndex = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel items loaded in custom path mode](Getting-Started_images/wpf-carousel-item-binding_custom.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
-
-## Change custom path
-
-You can change the custom view path of the carousel items by using the [Carousel.Path](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_Path) property. The default value of `Carousel.Path` property is `null`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:Carousel VisualMode="CustomPath"
-                     Name="carousel">
-    <syncfusion:Carousel.Path>
-        <Path Data="M0,100 L100,20" 
-              Stroke="Blue" 
-              StrokeThickness="2" 
-              HorizontalAlignment="Stretch"
-              VerticalAlignment="Stretch"/>
-    </syncfusion:Carousel.Path>
-</syncfusion:Carousel>
-
-{% endhighlight %}
-{% highlight C# %}
-
-carousel.VisualMode = VisualMode.CustomPath;
-
-{% endhighlight %}
-{% endtabs %}
-
 ![Customized visual path of Carousel items](customization_images/Path.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
@@ -131,6 +107,7 @@ By default, all the items are displayed in the `Carousel` control. If you will b
 
 <syncfusion:Carousel ItemsPerPage="3"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel"/>
 
 {% endhighlight %}
@@ -156,6 +133,7 @@ If you want to change the size of the carousel items except the selected item in
 <syncfusion:Carousel ScaleFraction="0.7" 
                      ScalingEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
@@ -176,7 +154,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
-## Resize specfic carousel item
+## Resize specific carousel item
 
 If you want to individually change the size of the next, previous item or selected carousel items in the `VisualMode.CustomPath` mode, set the fraction values to the [ScaleFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_ScaleFractions) collection property. Value range of resizing is `0` to `1`. The default value of `ScaleFractions` property is `null`.
 
@@ -187,6 +165,7 @@ N> This will effective only on when setting the `ScalingEnabled` property value 
 
 <syncfusion:Carousel ScalingEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
@@ -228,7 +207,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Size changed for the next, previous items and selected item in custom view](Scaling-Opacity-and-Skewing-Support_images/ScaleFractions.gif)
+![Size changed for the next, previous items and selected item in custom view](Scaling-Opacity-and-Skewing-Support_images/ScaleFractions.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
@@ -242,6 +221,7 @@ If you want to change the opacity of the carousel items except the selected item
 <syncfusion:Carousel OpacityFraction="0.9"
                      OpacityEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
@@ -273,6 +253,7 @@ N> This will effective only on when setting the `OpacityEnabled` property value 
 
 <syncfusion:Carousel OpacityEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
@@ -330,6 +311,7 @@ If you want to skewing the carousel items with particular `X-Y` fraction angle, 
                      SkewAngleXEnabled="True"
                      SkewAngleYEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
@@ -352,7 +334,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
-## Skewing the spcific carousel item 
+## Skewing the specific carousel item 
 
 If you want to individually skewing the next, previous item or selected carousel items in the `VisualMode.CustomPath` mode, set the `X-Y` fraction angle values to the [SkewAngleXFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleXFractions) and [SkewAngleYFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html#Syncfusion_Windows_Shared_Carousel_SkewAngleYFractions) collection property. The default value of `SkewAngleXFractions` and `SkewAngleYFractions` property is `null`.
 
@@ -364,6 +346,7 @@ N> This will effective only on when setting the `SkewAngleXEnabled` and `SkewAng
 <syncfusion:Carousel SkewAngleXEnabled="True"
                      SkewAngleYEnabled="True"
                      VisualMode="CustomPath"
+                     ItemsSource="{Binding HeaderCollection}"
                      Name="carousel">
     <syncfusion:Carousel.Path>
         <Path Data="M0,0 L100,0" />
