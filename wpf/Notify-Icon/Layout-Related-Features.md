@@ -96,7 +96,7 @@ notifyIcon.HeaderForeground = Brushes.White;
 
 ## Events
 
-The NotifyIcon includes several pre-defined events to perform any required action as shown below,
+The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) includes several pre-defined events to perform any required action as shown below,
 
 * BalloonTipOpening
 * BalloonTipOpened
@@ -269,6 +269,9 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls
 {% tabs %}
 
 {% highlight XAML %}
+
+<syncfusion:NotifyIcon Name="notifyIcon" Header="NotifyIcon" Click="NotifyIcon_Click">
+</syncfusion:NotifyIcon>
 
 {% endhighlight %}
 
