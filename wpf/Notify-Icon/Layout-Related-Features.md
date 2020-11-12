@@ -96,7 +96,7 @@ notifyIcon.HeaderForeground = Brushes.White;
 
 ## Events
 
-The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) includes several pre-defined events to perform any required action as shown below,
+The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) includes several pre-defined events to perform any required action as follows:
 
 * BalloonTipOpening
 * BalloonTipOpened
@@ -111,7 +111,7 @@ The [BalloonTipOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.To
 
 The `CancelEventArgs` object contains the following property.
 
-* Cancel - Canceling the action of the balloon tip show.
+* Cancel : Canceling the action of the balloon tip show.
 
 {% tabs %}
 
@@ -140,11 +140,11 @@ private void NotifyIcon_BalloonTipOpening(object sender, System.ComponentModel.C
 
 The [BalloonTipOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipOpened) event occurs after the balloon tip is opened and action can be handled in the respective event handler.
 
-The [DependencyPropertyChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_OnBalloonTipHeaderVisibilityChanged_System_Windows_DependencyPropertyChangedEventArgs_) object contains the following properties.
+The [DependencyPropertyChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_OnBalloonTipHeaderVisibilityChanged_System_Windows_DependencyPropertyChangedEventArgs_) object contains the following properties:
 
-* NewValue - gets an new value.
-* OldValue - gets an old value.
-* Property - Identify the value.
+* NewValue : gets an new value.
+* OldValue : gets an old value.
+* Property : Identify the value.
 
 {% tabs %}
 
@@ -176,9 +176,9 @@ private void NotifyIcon_BalloonTipOpened(DependencyObject d, DependencyPropertyC
 
 The [BalloonTipHiding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipHiding) event occurs before hiding the balloon tip and action can be handled in the respective event handler.
 
-The `CancelEventArgs` object contains the following property.
+The `CancelEventArgs` object contains the following property:
 
-* Cancel - Canceling the hiding action of the balloon tip.
+* Cancel : Canceling the hiding action of the balloon tip.
 
 {% tabs %}
 
@@ -208,11 +208,11 @@ private void NotifyIcon_BalloonTipHiding(object sender, System.ComponentModel.Ca
 
 The [BalloonTipHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_BalloonTipHidden) event occurs after hiding the balloon tip and action can be handled in the respective event handler.
 
-The [DependencyPropertyChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_OnBalloonTipHeaderVisibilityChanged_System_Windows_DependencyPropertyChangedEventArgs_) object contains the following properties.
+The [DependencyPropertyChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_OnBalloonTipHeaderVisibilityChanged_System_Windows_DependencyPropertyChangedEventArgs_) object contains the following properties:
 
-* NewValue - gets an new value.
-* OldValue - gets an old value.
-* Property - Identify the value.
+* NewValue : gets an new value.
+* OldValue : gets an old value.
+* Property : Identify the value.
 
 {% tabs %}
 
@@ -238,7 +238,7 @@ private void NotifyIcon_BalloonTipHidden(DependencyObject d, DependencyPropertyC
 
 ### CloseButtonClick event
 
-The [CloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_CloseButtonClick) event occurs while clicking the close button in balloon tip.
+The [CloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html#Syncfusion_Windows_Tools_Controls_NotifyIcon_CloseButtonClick) event occurs while clicking the close button in the balloon tip.
 
 {% tabs %}
 
