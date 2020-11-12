@@ -282,13 +282,6 @@ Following code snippets and screenshot illustrates how to apply the custom gradi
                     YBindingPath="YValue"
                     ItemsSource="{Binding Data}"
                     Palette="Custom">
-                
-    <chart:ColumnSeries.Interior>
-        <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#A8EAEE" />
-            <GradientStop Offset="0" Color="#7BB0F9" />
-        </LinearGradientBrush>
-    </chart:ColumnSeries.Interior>
 
     <chart:ColumnSeries.ColorModel>
         <chart:ChartColorModel>
