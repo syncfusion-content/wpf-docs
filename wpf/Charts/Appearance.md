@@ -270,7 +270,7 @@ chart.ColorModel = colorModel;
 
 ## Gradient Colors
 
-Gradient colors for the chart series can be set by using the  [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) or [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property of the chart series and by applying the `LinearGradientBrush` color with the help of `GradientStop`. The `Color` and `Offset` properties of `GradientStop` is used to configure the color and offset position of each color.
+Gradient colors for the chart series can be set by using the [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) or [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property of the chart series and apply the `LinearGradientBrush` color with the help of `GradientStop`. The `Color` and `Offset` properties of `GradientStop` is used to configure the color and offset position of each color.
 
 The following code samples and screenshot illustrates how to apply the custom gradient colors for chart series using the [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property.
 
