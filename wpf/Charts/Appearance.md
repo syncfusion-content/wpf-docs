@@ -268,6 +268,180 @@ chart.ColorModel = colorModel;
 ![Custom palette in WPF Chart](Styling-and-Customization_images/palette_6.png)
 
 
+## Gradient Colors
+
+Gradient colors for the chart series can be set by using the  [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) or [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property of the chart series and by applying the `LinearGradientBrush` color with the help of `GradientStop`. The `Color` and `Offset` properties of `GradientStop` is used to configure the color and offset position of each color.
+
+Following code snippets and screenshot illustrates how to apply the custom gradient colors for chart series using the `ColorModel` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ColumnSeries XBindingPath="XValue" 
+                    YBindingPath="YValue"
+                    ItemsSource="{Binding Data}"
+                    Palette="Custom">
+                
+    <chart:ColumnSeries.Interior>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#A8EAEE" />
+            <GradientStop Offset="0" Color="#7BB0F9" />
+        </LinearGradientBrush>
+    </chart:ColumnSeries.Interior>
+
+    <chart:ColumnSeries.ColorModel>
+        <chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#FFE7C7" />
+                    <GradientStop Offset="0" Color="#FCB69F" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#fadd7d" />
+                    <GradientStop Offset="0" Color="#fccc2d" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#DCFA97" />
+                    <GradientStop Offset="0" Color="#96E6A1" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#DDD6F3" />
+                    <GradientStop Offset="0" Color="#FAACA8" />
+                </LinearGradientBrush>
+                <LinearGradientBrush>
+                    <GradientStop Offset="1" Color="#A8EAEE" />
+                    <GradientStop Offset="0" Color="#7BB0F9" />
+                </LinearGradientBrush>
+            </chart:ChartColorModel.CustomBrushes>
+        </chart:ChartColorModel>
+    </chart:ColumnSeries.ColorModel>
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+...
+
+ChartColorModel colorModel = new ChartColorModel();
+
+LinearGradientBrush gradientColor1 = new LinearGradientBrush();
+
+GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(255, 231, 199) };
+
+GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 182, 159) };
+
+gradientColor1.GradientStops.Add(stop1);
+
+gradientColor1.GradientStops.Add(stop2);
+
+LinearGradientBrush gradientColor2 = new LinearGradientBrush();
+
+stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(250, 221, 125) };
+
+stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(252, 204, 45) };
+
+gradientColor2.GradientStops.Add(stop1);
+
+gradientColor2.GradientStops.Add(stop2);
+
+...
+
+colorModel.CustomBrushes.Add(gradientColor1);
+
+colorModel.CustomBrushes.Add(gradientColor2);
+
+...
+
+ColumnSeries series = new ColumnSeries()
+
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Element",
+
+    YBindingPath = "YValue",
+
+    Palette = ChartColorPalette.Custom,
+
+    ColorModel = colorModel
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Gradient color chart series in WPF Chart](Styling-and-Customization_images/palette_10.png)
+
+Following code snippet and screenshot illustrates how to apply the gradient color using the [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) property of series using `LinearGradientBrush`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ColumnSeries XBindingPath="XValue" 
+                    YBindingPath="YValue"
+                    ItemsSource="{Binding Data}">
+                
+    <chart:ColumnSeries.Interior>
+        <LinearGradientBrush>
+            <GradientStop Offset="1" Color="#A8EAEE" />
+            <GradientStop Offset="0" Color="#7BB0F9" />
+        </LinearGradientBrush>
+    </chart:ColumnSeries.Interior>
+
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+...
+
+LinearGradientBrush gradientColor = new LinearGradientBrush();
+
+GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
+
+GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123, 176, 249) };
+
+gradientColor.GradientStops.Add(stop1);
+
+gradientColor.GradientStops.Add(stop2);
+
+...
+
+ColumnSeries series = new ColumnSeries()
+
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Element",
+
+    YBindingPath = "YValue",
+
+    Interior = gradientColor,
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Gradient color in WPF Chart](Styling-and-Customization_images/palette_11.png)
+
+
 ## SegmentColorPath
 
 The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPathProperty) property.
