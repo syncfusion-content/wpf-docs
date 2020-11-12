@@ -382,3 +382,24 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`Print`](https://help.syncfusion.com/wpf/sfchart/printing#)
 
+[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+
+[`How to add space between multiple columns in a Chart segment`](https://www.syncfusion.com/kb/5500/how-to-add-space-between-multiple-columns-in-a-chart-segment)
+
+[`How to allot space between the segments`](https://www.syncfusion.com/kb/5485/how-to-allot-space-between-the-segments)
+
+[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-sfchart)
+
+[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
+
+[`How to create separate columns StackedGroup in stacking series`](https://www.syncfusion.com/kb/4730/how-to-create-separate-columns-stackedgroup-in-stacking-series)
+
+[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-nan-in-sfchart)
+
+[`How to set the Z Index to the series`](https://www.syncfusion.com/kb/2681/how-to-set-the-z-index-to-the-series)
+
+[`How to get coordinates of x and y in MouseDown event`](https://www.syncfusion.com/kb/2566/how-to-get-coordinates-of-x-and-y-in-mousedown-event)
+
+[`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-itemwidthpercent-before-drawing-chart)
+
+

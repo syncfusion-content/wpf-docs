@@ -1013,3 +1013,29 @@ Action action = chartWindow.Show;
 Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>()); 
 
 {% endhighlight %}
+
+## See also
+
+[`How to customize the legend Icon based on series appearance in WPF Chart`](https://www.syncfusion.com/kb/11672/how-to-customize-the-legend-icon-based-on-series-appearance-in-wpf-chart)
+
+[`How to achieve the draggable legend in WPF Chart`](https://www.syncfusion.com/kb/11484/how-to-achieve-the-draggable-legend-in-wpf-chart-sfchart)
+
+[`How to wrap the text in the WPF Chart legend`](https://www.syncfusion.com/kb/10996/how-to-wrap-the-text-in-the-wpf-chart-legend)
+
+[`How to control the visibility of all series with a single legend item in WPF Chart`](https://www.syncfusion.com/kb/10995/how-to-control-the-visibility-of-all-series-with-a-single-legend-item-in-wpf-chart)
+
+[`How to create custom legend items in WPF Chart`](https://www.syncfusion.com/kb/10675/how-to-create-custom-legend-items-in-wpf-chart)
+
+[`How to get a notification when the legend items are clicked in WPF Chart`](https://www.syncfusion.com/kb/10169/how-to-get-a-notification-when-the-legend-items-are-clicked-in-wpf-chart)
+
+[`How to set the custom labels with auto range for axis`](https://www.syncfusion.com/kb/5907/how-to-set-the-custom-labels-with-auto-range-for-axis)
+
+[`How to add multiple legend items in scroll viewer`](https://www.syncfusion.com/kb/4846/how-to-add-multiple-legend-items-in-scroll-viewer)
+
+[`How to format the legend text`](https://www.syncfusion.com/kb/4691/how-to-format-the-legend-text)
+
+[`How to set or modify the label of the each legend`](https://www.syncfusion.com/kb/4687/how-to-set-or-modify-the-label-of-the-each-legend)
+
+[`How to customize the legends position`](https://www.syncfusion.com/kb/4684/how-to-customize-the-legends-position)
+
+[`How to customize the icons of the legends in Chart`](https://www.syncfusion.com/kb/3966/how-to-customize-the-icons-of-the-legends-in-sfchart)
