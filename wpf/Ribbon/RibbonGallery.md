@@ -543,7 +543,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
         skin:SfSkinManager.VisualStyle="MaterialLight"
         Title="MainWindow" Height="450" Width="600">
     <syncfusion:RibbonWindow.Resources>
-        <DataTemplate x:Key="smallIconTemplate">
+        <DataTemplate x:Key="ribbonGallerySmallIconTemplate">
             <Grid Width="14" Height="16">
                 <Path
                          Height="4"
@@ -558,7 +558,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
                          Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <DataTemplate x:Key="largeIconTemplate">
+        <DataTemplate x:Key="ribbonGalleryLargeIconTemplate">
             <Grid Height="26" Width="26" >
                 <Path
                          Height="4"
@@ -573,20 +573,20 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
                          Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <local:ItemIconTemplateSelector x:Key="itemIconTemplateSelector"
-                                    SmallTemplate="{StaticResource smallIconTemplate}"
-                                    LargeTemplate="{StaticResource largeIconTemplate}"/>
+        <local:RibbonGalleryIconTemplateSelector x:Key="ribbonGalleryIconTemplateSelector"
+                                    SmallTemplate="{StaticResource ribbonGallerySmallIconTemplate}"
+                                    LargeTemplate="{StaticResource ribbonGalleryLargeIconTemplate}"/>
     </syncfusion:RibbonWindow.Resources>
     <Grid>
         <syncfusion:Ribbon VerticalAlignment="Top">
             <syncfusion:Ribbon.QuickAccessToolBar>
                 <syncfusion:QuickAccessToolBar>
-                    <syncfusion:RibbonGallery VisualMode="DropDown" Label="Font Color" SizeForm="ExtraSmall" IconTemplateSelector="{StaticResource itemIconTemplateSelector}"/>
+                    <syncfusion:RibbonGallery VisualMode="DropDown" Label="Font Color" SizeForm="ExtraSmall" IconTemplateSelector="{StaticResource ribbonGalleryIconTemplateSelector}"/>
                 </syncfusion:QuickAccessToolBar>
             </syncfusion:Ribbon.QuickAccessToolBar>
             <syncfusion:RibbonTab Caption="Home">
                 <syncfusion:RibbonBar Header="Styles">
-                    <syncfusion:RibbonGallery VisualMode="DropDown" Label="Font Color" SizeForm="Large" IconTemplateSelector="{StaticResource itemIconTemplateSelector}"/>
+                    <syncfusion:RibbonGallery VisualMode="DropDown" Label="Font Color" SizeForm="Large" IconTemplateSelector="{StaticResource ribbonGalleryIconTemplateSelector}"/>
                 </syncfusion:RibbonBar>
             </syncfusion:RibbonTab>
         </syncfusion:Ribbon>
@@ -597,7 +597,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
  {% highlight c# %}
 
- public class ItemIconTemplateSelector : DataTemplateSelector
+ public class RibbonGalleryIconTemplateSelector : DataTemplateSelector
  {
     public DataTemplate SmallTemplate { get; set; }
     public DataTemplate LargeTemplate { get; set; }
@@ -625,6 +625,8 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
  {% endtabs %}
 
  ![Image set for Large size form RibbonGallery using IconTemplateSelector property](RibbonGallery_images/RibbonGallery_IconTemplateSelector.png)
+
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
 ### Setting icon template
 
@@ -729,6 +731,8 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
  ![Image set for RibbonGallery using IconTemplate property](RibbonGallery_images/RibbonGallery_IconTemplate.png)
+
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
 ### Setting image path
 
