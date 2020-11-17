@@ -122,6 +122,11 @@ You can directly add the `Badge` to any objects without using the `SfBadge.Badge
 {% highlight C# %}
 
 public class ViewModel {
+ public string ItemName { get; set; }
+ public int? UnreadMessageount { get; set; }
+}
+
+public class ViewModel {
     public List<Model> MailItems { get; set; }
     public ViewModel(){
         MailItems = new List<Model>();
