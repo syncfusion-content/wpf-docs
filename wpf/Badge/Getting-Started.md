@@ -436,9 +436,9 @@ N> Download demo application from [GitHub]()
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalCustomAlignment]() or [VerticalCustomAlignment]() properties. The value range for `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties is `0` to`1`. The default value of `HorizontalCustomAlignment` property is `1` and `VerticalCustomAlignment` property is `0`.
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition]() or [VerticalPosition]() properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
+For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -448,8 +448,8 @@ For example, if you use any circular containers, you can easily place the `Badge
        Height="100" >
     <syncfusion:SfBadge.Badge>
         <syncfusion:SfBadge Shape="None"
-                            HorizontalCustomAlignment="0.9"
-                            VerticalCustomAlignment="0.8"
+                            HorizontalPosition="0.9"
+                            VerticalPosition="0.8"
                             x:Name="badge">
             <syncfusion:SfBadge.Content>
                 <Ellipse Width="20"
@@ -463,8 +463,8 @@ For example, if you use any circular containers, you can easily place the `Badge
 {% endhighlight %}
 {% highlight C# %}
 
-badge.HorizontalCustomAlignment = 0.9;
-badge.VerticalCustomAlignment = 0.8;
+badge.HorizontalPosition = 0.9;
+badge.VerticalPosition = 0.8;
 
 {% endhighlight %}
 {% endtabs %}
@@ -473,7 +473,7 @@ badge.VerticalCustomAlignment = 0.8;
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType]() property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [BadgeAnimationType]() property. You can only see the animation when you change the text of the `Badge`. The default value of `BadgeAnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -482,7 +482,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
         Height="50" 
         Content="Inbox">
     <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge AnimationType="Scale"
+        <syncfusion:SfBadge BadgeAnimationType="Scale"
                             x:Name="badge"/>
     </syncfusion:SfBadge.Badge>
 </Button>
@@ -501,7 +501,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% endhighlight %}
 {% highlight C# %}
 
-badge.AnimationType = AnimationType.Scale;
+badge.BadgeAnimationType = AnimationType.Scale;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -539,7 +539,8 @@ You can format the numbers which are displayed in the `Badge` content by using t
         Height="50" 
         Content="Inbox">
     <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge x:Name="badge"/>
+        <syncfusion:SfBadge x:Name="badge"
+                            BadgeAnimationType="None"/>
     </syncfusion:SfBadge.Badge>
 </Button>
 
@@ -558,7 +559,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 {% endhighlight %}
 {% highlight C# %}
 
-badge.AnimationType = AnimationType.Scale;
+badge.BadgeAnimationType = AnimationType.None;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}

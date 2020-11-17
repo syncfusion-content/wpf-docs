@@ -173,9 +173,9 @@ N> Download demo application from [GitHub]()
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalCustomAlignment]() or [VerticalCustomAlignment]() properties. The value range for `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties is `0` to`1`. The default value of `HorizontalCustomAlignment` property is `1` and `VerticalCustomAlignment` property is `0`.
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition]() or [VerticalPosition]() properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
-For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalCustomAlignment` and `VerticalCustomAlignment` properties.
+For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -185,8 +185,8 @@ For example, if you use any circular containers, you can easily place the `Badge
        Height="100" >
     <syncfusion:SfBadge.Badge>
         <syncfusion:SfBadge Shape="None"
-                            HorizontalCustomAlignment="0.9"
-                            VerticalCustomAlignment="0.8"
+                            HorizontalPosition="0.9"
+                            VerticalPosition="0.8"
                             x:Name="badge">
             <syncfusion:SfBadge.Content>
                 <Ellipse Width="20"
@@ -201,8 +201,8 @@ For example, if you use any circular containers, you can easily place the `Badge
 {% endhighlight %}
 {% highlight C# %}
 
-badge.HorizontalCustomAlignment = 0.9;
-badge.VerticalCustomAlignment = 0.8;
+badge.HorizontalPosition = 0.9;
+badge.VerticalPosition = 0.8;
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,7 +211,7 @@ badge.VerticalCustomAlignment = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalCustomAlignment` & `VerticalCustomAlignment` properties and [HorizontalCustomAnchor]() & [VerticalCustomAnchor]() properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalCustomAnchor` and `VerticalCustomAnchor` properties is `0` to`1`. The default value of `HorizontalCustomAnchor`and `VerticalCustomAnchor` properties is `0`.
+You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition]() & [VerticalAnchorPosition]() properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
 <style>
 table, td, th { 
@@ -223,14 +223,14 @@ table, td, th {
 
 <tr>
 <td class="invisible" ></td>
-<th colspan = "3">HorizontalCustomAlignment & 
-HorizontalCustomAnchor</th>
+<th colspan = "3">HorizontalPosition & 
+HorizontalAnchorPosition</th>
 </tr>
 
 <tr>
-<th>VerticalCustomAlignment & 
+<th>VerticalPosition & 
 
-VerticalCustomAnchor</th>
+VerticalAnchorPosition</th>
 <td>0</td>
 <td >0.5</td>
 <td>1</td>
@@ -268,8 +268,8 @@ VerticalCustomAnchor</th>
     <syncfusion:SfBadge.Badge>
         <syncfusion:SfBadge HorizontalAnchor="Custom"
                             VerticalAnchor="Custom"
-                            HorizontalCustomAnchor="0.2"
-                            VerticalCustomAnchor="0.4"
+                            HorizontalAnchorPosition="0.2"
+                            VerticalAnchorPosition="0.4"
                             Content="99+"
                             x:Name="badge2"/>
     </syncfusion:SfBadge.Badge>
@@ -280,8 +280,8 @@ VerticalCustomAnchor</th>
 
 badge.HorizontalAnchor = BadgeAnchor.Custom;
 badge.VerticalAnchor = BadgeAnchor.Custom;
-badge.HorizontalCustomAnchor = 0.2;
-badge.VerticalCustomAnchor = 0.4;
+badge.HorizontalAnchorPosition = 0.2;
+badge.VerticalAnchorPosition = 0.4;
 badge.Content = "99+";
 
 {% endhighlight %}
