@@ -210,6 +210,8 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 You can easily navigate to any tab item by using the tab list menu which is placed in the top-right corner of the tab header panel .The header of all visible tab item’s are shown as a menu item in the tab list menu. You can hide this tab list menu by using the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_ShowTabListContextMenu) property value as `false`.  The default value of `ShowTabListContextMenu` property is `true`.
 
+N> The currently selected tab item has a tick mark on the TabListContextMenu.
+
 {% tabs %}
 {% highlight XAML %}
 
@@ -301,7 +303,7 @@ If you want to show the multiple type of tab items like enabled, disabled or hid
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TabControlExt TabListContextMenuOptions="ShowEnabledItems, ShowDisabledItems"
+<syncfusion:TabControlExt TabListContextMenuOptions="ShowDisabledItems,ShowHiddenItems"
                           ShowTabListContextMenu="True"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" Visibility="Collapsed"/>
@@ -316,8 +318,8 @@ If you want to show the multiple type of tab items like enabled, disabled or hid
 {% highlight C# %}
 
 tabControlExt.ShowTabListContextMenu = true;
-tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowEnabledItems | 
-                                          TabListContextMenuOptions.ShowDisabledItems
+tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowDisabledItems | 
+                                          TabListContextMenuOptions.ShowHiddenItems
 
 {% endhighlight %}
 {% endtabs %}
