@@ -137,7 +137,15 @@ You can use the [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Too
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+notify.Text = "Notify me";
+
+{% endhighlight %}
+
 {% endtabs %}
+
+![Set the text value to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-text.png)
 
 ## Tooltip
 
