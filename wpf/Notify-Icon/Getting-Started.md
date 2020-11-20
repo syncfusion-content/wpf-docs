@@ -173,3 +173,4 @@ notify.ShowBalloonTip(3000);
 
 ![Set the tooltip to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-tooltip.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-WPF-NotifyIcon).
