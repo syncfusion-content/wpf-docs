@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF DateTimePicker (DateTimeEdit)
 
-This section provides a qucick overview for working with the WPF [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html).
+This section provides a quick overview for working with the WPF [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html).
 
 ## Visual Structure
 
@@ -23,7 +23,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Creating application with DateTimeEdit control
 
-In this walk throuh, you will create a WPF application that contains the [DateTimEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control.
+In this walk through, you will create a WPF application that contains the [DateTimEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 
 ## Creating project
 
@@ -45,7 +45,7 @@ To add the control manually in XAML page, follow the given steps:
 
 * Syncfusion.Shared.WPF
 
-2.mport Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2.Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 
 3.Declare the `DateTimeEdit` control in XAML page.
 
