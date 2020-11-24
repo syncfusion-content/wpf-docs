@@ -309,6 +309,67 @@ private void PropertyGrid_SelectedPropertyItemChanged(DependencyObject d, Depend
 {% endhighlight %}
 {% endtabs %}
 
+## Disable animation on loading selected object
+
+You can load the selected's object property items without any animation into the `PropertyGrid` by using the [DisableAnimationOnObjectSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DisableAnimationOnObjectSelection) property value as `true`. The default value of `DisableAnimationOnObjectSelection` property is `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    [Description("Name of the employee")]
+    public string Name { get; set; }
+    public string ID { get; set; }
+    [Description("Birth date of the employee")]
+    public DateTime DOB { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24)
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid DisableAnimationOnObjectSelection="True"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DisableAnimationOnObjectSelection = true;
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading selected object without animation](Getting-Started_images/DisableAnimationOnObjectSelection.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/blob/master/Samples/Common)
+
 ## Tooltip support
 
 You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableToolTip) property as `false`. The default value of `EnableToolTip` property is `true`.
