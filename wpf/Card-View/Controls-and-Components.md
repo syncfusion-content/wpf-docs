@@ -111,7 +111,7 @@ cardview.CanSort = false;
 
 {% endhighlight %}
 
-## Card editing using keyborad and mouse interaction
+## Card editing using keyboard and mouse interaction
 
 You can edit the selected `CardViewItem` value by double-clicking on that item or by pressing the `F2` key. You can enable the editing by setting the value of the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property as `true`. Otherwise, you will not be able to perform the edit operation. To get out from the editing mode, you need to press the `Esc` or `Enter` key. The default value of `CanEdit` property is `false`. 
 
@@ -230,7 +230,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-
 
 ## Start card editing programmatically
 
-If you want to programmatically start the edit mode of selected `CardViewItem`, use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit)  method. You can also programmaticaly change the edit mode to view mode by using the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) method.
+If you want to programmatically start the edit mode of selected `CardViewItem`, use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit)  method. You can also programmatically change the edit mode to view mode by using the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) method.
 
 N> You must set the `CanEdit` property as `true` to perform `BeginEdit` or `EndEdit`.
 
