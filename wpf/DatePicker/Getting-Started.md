@@ -222,8 +222,4 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Ok` and `Cancel` button text in `SfDatePicker` control by adding resource file for each language.
 
-Refer the following links to know more about how provide a localization support for the `SfDatePicker`,
-
-* https://help.syncfusion.com/wpf/localization
-
-* https://github.com/syncfusion/wpf-controls-localization-resx-files
+N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `SfDatePicker`.
