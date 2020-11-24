@@ -115,7 +115,7 @@ cardview.CanSort = false;
 
 You can edit the selected `CardViewItem` value by double-clicking on that item or by pressing the `F2` key. You can enable the editing by setting the value of the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property as `true`. Otherwise, you will not be able to perform the edit operation. To get out from the editing mode, you need to press the `Esc` or `Enter` key. The default value of `CanEdit` property is `false`. 
 
-N> You need to define the UI for edit mode `CardViewItem` with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). `EditItemTemplate` is applied to the selected item in the edit mode, and `ItemTemplate` is applied to the selected item in the view mode.
+N> To perform an edit operation on selected `CardViewItem`, you need to define the `CardViewItem` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). `EditItemTemplate` is applied to the selected item in the edit mode, and `ItemTemplate` is applied to the selected item in the view mode.
 
 {% tabs %}
 {% highlight C# %}
