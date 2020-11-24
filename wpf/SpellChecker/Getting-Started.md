@@ -34,7 +34,7 @@ You can add the `SfSpellChecker` to an application by the following steps,
     * Syncfusion.SpellChecker.Base
     * Syncfusion.SfSpellChecker.WPF
 
-2. Add the `SfSpellChecker` inside the `TextBox` control to perfrom spell check.
+2. Add the `SfSpellChecker` inside the `TextBox` control to perform spell check.
 
 {% tabs %}
 {% highlight XAML %}
@@ -106,7 +106,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using context menu
 
-You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining. You can disble the context menu suggestion by using the `EnableContextMenu` property value as `false`. The default value of `EnableContextMenu` property is `true`.
+You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining. You can disable the context menu suggestion by using the `EnableContextMenu` property value as `false`. The default value of `EnableContextMenu` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,7 +163,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Restrict the spell check operation
 
-If you want to restrict the spellcheck operation, use the `EnableSpellCheck` property value as `false`.If the `EnableSpellCheck` property value is `false`, you will not be able to use both the context menu and SpellCheck dialogue to perform spell checking operations. The default value of `EnableSpellCheck` property is `true`.
+If you want to restrict the spell check operation, use the `EnableSpellCheck` property value as `false`.If the `EnableSpellCheck` property value is `false`, you will not be able to use both the context menu and SpellCheck dialogue to perform spell checking operations. The default value of `EnableSpellCheck` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
