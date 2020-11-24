@@ -20,7 +20,7 @@ You can add a new tab item at runtime by clicking the new button. You can enable
 
 <syncfusion:TabControlExt NewButtonClick="tabControlExt_NewButtonClick"
                           IsNewButtonEnabled="True"
-                          NewButtonAlignment="Last"
+                          NewButtonAlignment="First"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
@@ -31,7 +31,7 @@ You can add a new tab item at runtime by clicking the new button. You can enable
 
 tabControlExt.NewButtonClick += tabControlExt_NewButtonClick;
 tabControlExt.IsNewButtonEnabled = true;
-tabControlExt.NewButtonAlignment = NewButtonAlignment.Last;
+tabControlExt.NewButtonAlignment = NewButtonAlignment.First;
 
 {% endhighlight %}
 {% endtabs %}
@@ -59,6 +59,54 @@ private void tabControlExt_NewButtonClick(object sender, EventArgs e) {
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
+## Select a new tab item while creating it by new button
+
+If you want to change the recently creating tab item as the selected item that is created by the new button click, use [SelectOnCreatingNewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectOnCreatingNewItemProperty) property value as `true`. You can restrict it by setting the `SelectOnCreatingNewItem` property value as `false`. The default value of `SelectOnCreatingNewItem` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt SelectOnCreatingNewItem="True" 
+                          NewButtonClick="tabControlExt_NewButtonClick"
+                          IsNewButtonEnabled="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.NewButtonClick += tabControlExt_NewButtonClick;
+tabControlExt.IsNewButtonEnabled = true;
+tabControlExt.SelectOnCreatingNewItem = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void tabControlExt_NewButtonClick(object sender, EventArgs e) {
+    TabItemExt tabItemExt1 = new TabItemExt()
+    {
+        Header = "tabItem"+ (tabControlExt.Items.Count + 1),
+        Content = new TextBlock() { Text = "This is the content area of TabItem" }
+    };
+
+    //Adding new tab item into the TabControl.
+    tabControlExt.Items.Add(tabItemExt1);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![New tab item as selected item](NewButton-Feature_images/SelectOnCreatingNewItem.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
+
 ## Auto hide new button when no child tab item
 
 The `TabControl` automatically hides the new button on when no child tab item present in the `TabControl`. If you want to always show the new button, use the [IsNewButtonClosedonNoChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonClosedonNoChild) property value as `false`. The default value of `IsNewButtonClosedonNoChild` property is `true`.
@@ -67,6 +115,7 @@ The `TabControl` automatically hides the new button on when no child tab item pr
 {% highlight XAML %}
 
 <syncfusion:TabControlExt IsNewButtonClosedonNoChild="False"
+                          IsNewButtonEnabled="True"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Content="This is the first tab item"
                            Header="tabItem1"/>
@@ -76,6 +125,7 @@ The `TabControl` automatically hides the new button on when no child tab item pr
 {% highlight C# %}
 
 tabControlExt.IsNewButtonClosedonNoChild = false;
+tabControlExt.IsNewButtonEnabled = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -95,8 +145,11 @@ If you wants to change the UI for the new button, use the [NewTabButtonTemplate]
                           x:Name="tabControlExt">
     <syncfusion:TabControlExt.NewTabButtonTemplate>
         <DataTemplate>
-            <Button Background="Red" 
-                    Content=" + "></Button>
+            <TextBlock Background="Red"
+                       FontSize="14"
+                       TextAlignment="Center" 
+                       Width="25" Height="25" 
+                       Text=" + "/>
         </DataTemplate>
     </syncfusion:TabControlExt.NewTabButtonTemplate>
     <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
@@ -110,14 +163,15 @@ If you wants to change the UI for the new button, use the [NewTabButtonTemplate]
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
-## Change background of new button
+## Change background and border thickness of new button
 
-If you want to change the background of the new button, use the [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonBackground) property. The default value of `NewButtonBackground` property is `null`.
+If you want to change the background and border thickness of the new button, use the [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonBackground) and [NewButtonBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_NewButtonBorderThicknessProperty) properties. The default value of `NewButtonBackground` property is `null` and `` property is ``.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:TabControlExt NewButtonBackground="Red"
+                          NewButtonBorderThickness="2"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Content="This is the first tab item"
                            Header="tabItem1"/>
@@ -127,6 +181,7 @@ If you want to change the background of the new button, use the [NewButtonBackgr
 {% highlight C# %}
 
 tabControlExt.NewButtonBackground = Brushes.Red;
+tabControlExt.NewButtonBorderThickness = new Thickness(2);
 
 {% endhighlight %}
 {% endtabs %}

@@ -217,3 +217,13 @@ sfDatePicker.SetValueOnLostFocus = true;
 ![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
+
+## Localization support
+
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Ok` and `Cancel` button text in `SfDatePicker` control by adding resource file for each language.
+
+Refer the following links to know more about how provide a localization support for the `SfDatePicker`,
+
+* https://help.syncfusion.com/wpf/localization
+
+* https://github.com/syncfusion/wpf-controls-localization-resx-files
