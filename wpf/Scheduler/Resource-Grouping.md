@@ -280,12 +280,12 @@ You can customize the resource header size in the day, week, work week and timel
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Week" ResourceGroupType="Resource">
    <Schedule:SfScheduler.DaysViewSettings>
-      <Schedule:DaysViewSettings ResouceHeaderSize="100"/>
+      <Schedule:DaysViewSettings ResourceHeaderSize="100"/>
    </Schedule:SfScheduler.DaysViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-schedule.DaysViewSettings.ResouceHeaderSize = 100;
+schedule.DaysViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
@@ -297,12 +297,12 @@ schedule.DaysViewSettings.ResouceHeaderSize = 100;
 {% highlight xaml %}
 <Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
    <Schedule:SfScheduler.TimelineViewSettings>
-      <Schedule:TimelineViewSettings ResouceHeaderSize="100"/>
+      <Schedule:TimelineViewSettings ResourceHeaderSize="100"/>
    </Schedule:SfScheduler.TimelineViewSettings>
 </Schedule:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
- schedule.TimelineViewSettings.ResouceHeaderSize = 80;
+ schedule.TimelineViewSettings.ResourceHeaderSize = 80;
 {% endhighlight %}
 {% endtabs %}
 
