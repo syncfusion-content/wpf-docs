@@ -443,7 +443,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecke
 
 You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various culture into the `SfSpellChecker.Dictionaries` collection. You can change the spell check culture at runtime by changing the `SfSpellChecker.Culture` property. Based on the current `SfSpellChecker.Culture` respective dictionary is used to spell check.
 
-N> During language switching, you need to set the culture for the `SfSpellChecker.Culture` property from the required dictionary's culture. From `SfSpellChecker.Dictionaries` collection, you can get the required dictionary.
+N> During language switching, you need to set the required culture for `SfSpellChecker.Culture` property from the required dictionary's culture. From `SfSpellChecker.Dictionaries` collection, you can get the required dictionary.
 
 {% tabs %}
 {% highlight xaml %}
