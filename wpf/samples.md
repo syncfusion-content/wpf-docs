@@ -7,7 +7,7 @@ control: Featured Samples
 documentation: ug
 ---
 
-# Featured Samples 
+# Featured Samples for Syncfusion WPF Controls
 
 ## Syncfusion WPF Controls Panel
 
