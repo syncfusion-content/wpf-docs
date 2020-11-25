@@ -109,76 +109,21 @@ You can restrict the user to enter valid value such as alphanumeric, binary, ema
 
 N> You can apply mask attribute to property of type `Object` or `string` only.
 
-<table>
-<th> S.No </th>
-<th> Mask Type </th>
-<th> Example </th>
-<tr>
-<td>1</td>
-<td>Alphanumeric</td>
-<td><img src="Attribute-Images/Alphanumeric.png" alt=""/></td>
-</tr>
-<tr>
-<td>2</td>
-<td>Binary</td>
-<td><img src="Attribute-Images/Binary.png" alt=""/></td>
-</tr>
-<tr>
-<td>3</td>
-<td>CardNumber</td>
-<td><img src="Attribute-Images/CardNumber.png" alt=""/></td>
-</tr>
-<tr>
-<td>4</td>
-<td>EmailId</td>
-<td><img src="Attribute-Images/EmailId.png" alt=""/></td>
-</tr>
-<tr>
-<td>5</td>
-<td>Fraction</td>
-<td><img src="Attribute-Images/Fraction.png" alt=""/></td>
-</tr>
-<tr>
-<td>6</td>
-<td>HexaDecimal</td>
-<td><img src="Attribute-Images/HexaDecimal.png" alt=""/></td>
-</tr>
-<tr>
-<td>7</td>
-<td>IPv4</td>
-<td><img src="Attribute-Images/IPv4.png" alt=""/></td>
-</tr>
-<tr>
-<td>8</td>
-<td>IPv6</td>
-<td><img src="Attribute-Images/IPv6.png" alt=""/></td>
-</tr>
-<tr>
-<td>9</td>
-<td>MobileNumber</td>
-<td><img src="Attribute-Images/MobileNumber.png" alt=""/></td>
-</tr>
-<tr>
-<td>10</td>
-<td>Number</td>
-<td><img src="Attribute-Images/Number.png" alt=""/></td>
-</tr>
-<tr>
-<td>11</td>
-<td>Octal</td>
-<td><img src="Attribute-Images/Octal.png" alt=""/></td>
-</tr>
-<tr>
-<td>12</td>
-<td>PositiveNumber</td>
-<td><img src="Attribute-Images/PositiveNumber.png" alt=""/></td>
-</tr>
-<tr>
-<td>13</td>
-<td>ProductKey</td>
-<td><img src="Attribute-Images/ProductKey.png" alt=""/></td>
-</tr>
-</table>
+S_No | Mask Type | Example 
+--- | --- | ---
+1 | Alphanumeric | ![Value editor allows only the alphanumeric values](Attribute-Images/Alphanumeric.png)
+2 | Binary | ![Value editor allows only the binary values](Attribute-Images/Binary.png)
+3 | CardNumber | ![Value editor allows only the credit or debit card number values](Attribute-Images/CardNumber.png) 
+4 | EmailId | ![Value editor allows only the email-Id values](Attribute-Images/EmailId.png)
+5 | Fraction | ![Value editor allows only the fraction values](Attribute-Images/Fraction.png) 
+6 | HexaDecimal | ![Value editor allows only the hexa decimal values](Attribute-Images/HexaDecimal.png)
+7 | IPv4 | ![Value editor allows only the IPv4 values](Attribute-Images/IPv4.png)
+8 | IPv6 | ![Value editor allows only the IPv6 values](Attribute-Images/IPv6.png)
+9 | MobileNumber | ![Value editor allows only the mobile number values](Attribute-Images/MobileNumber.png) 
+10 | Number | ![Value editor allows only the number values](Attribute-Images/Number.png) 
+11 | Octal | ![Value editor allows only the octal values](Attribute-Images/Octal.png)
+12 | PositiveNumber | ![Value editor allows only the positive number values](Attribute-Images/PositiveNumber.png)
+13 | ProductKey | ![Value editor allows only the valid product key values](Attribute-Images/ProductKey.png)
 
 {% tabs %}
 {% highlight C# %}
@@ -244,8 +189,6 @@ You can restrict the user from providing invalid input for the one or more speci
 
 {% tabs %}
 {% highlight C# %}
-
-using Syncfusion.Windows.PropertyGrid;
 
 //Setting mask option for two specific properties
 [MaskAttribute("[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}", "Email_1,Email_2")]
