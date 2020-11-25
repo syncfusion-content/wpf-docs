@@ -359,7 +359,7 @@ You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.D
                     <syncfusion:SfSpellChecker.Dictionaries>
 
                         <!--Adding english cultured custom dictionary-->
-                        <syncfusion:CustomDictionary DictionaryUri="/CustomSpellCheck;/English/Custom_en-US.txt"
+                        <syncfusion:CustomDictionary DictionaryUri="E:/SpellcheckerDemo/bin/Debug/English/Custom_en-US.txt"
                                                      Culture="en-US"/>
 
                         <!--Adding english cultured OpenOffice dictionary-->
@@ -405,8 +405,8 @@ spellChecker.Dictionaries.Add(
     new OpenOfficeDictionary()
     {
         Culture = culture,
-        GrammarUri = new Uri("/CustomSpellCheck;component//US/en-US.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/CustomSpellCheck;component//US/en-US.dic", UriKind.Relative)
+        GrammarUri = new Uri("/CustomSpellCheck;component/US/en-US.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/CustomSpellCheck;component/US/en-US.dic", UriKind.Relative)
     }
 
 //Setting a US culture for SpellChecker
@@ -443,6 +443,8 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecke
 
 You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various culture into the `SfSpellChecker.Dictionaries` collection. You can change the spell check culture at runtime by changing the `SfSpellChecker.Culture` property. Based on the current `SfSpellChecker.Culture` respective dictionary is used to spell check.
 
+N> During language switching, you need to set the culture for the `SfSpellChecker.Culture` property from the required dictionary's culture. From `SfSpellChecker.Dictionaries` collection, you can get the required dictionary.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -467,12 +469,12 @@ You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times
                                                        Culture="fr-FR"/>
 
                         <!--Adding Spanish cultured Hunspell dictionary-->
-                        <syncfusion:OpenOfficeDictionary DictionaryUri="/HunSpellCheck;component/Spanish/es-ES.dic"
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/Spanish/es-ES.dic"
                                                          GrammarUri="/HunSpellCheck;component/Spanish/es-ES.aff"
                                                          Culture="es-ES"/>
 
                         !--Adding english cultured Hunspell dictionary-->
-                        <syncfusion:OpenOfficeDictionary DictionaryUri="/HunSpellCheck;component/US/en-US.dic"
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/US/en-US.dic"
                                                          GrammarUri="/HunSpellCheck;component/US/en-US.aff"
                                                          Culture="en-US"/>
                         
@@ -490,9 +492,6 @@ You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times
 {% endhighlight %}
 {% highlight c# %}
 
-//Creating a culture instance
-CultureInfo culture = new CultureInfo("fr-FR");
-
 SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Adding Hunspell dictonaries in Dictionaries collection
@@ -502,7 +501,7 @@ spellChecker.Dictionaries = new DictionaryCollection();
 spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
-        Culture = culture,
+        Culture = new CultureInfo("fr-FR"),
         GrammarUri = new Uri("/HunSpellCheck;component//French/fr-FR.aff", UriKind.Relative),
         DictionaryUri = new Uri("/HunSpellCheck;component//French/fr-FR.dic", UriKind.Relative)
     }
@@ -528,8 +527,8 @@ spellChecker.Dictionaries.Add(
     }
 );
 
-//Setting a French culture for SpellChecker
-spellChecker.Culture = culture;
+//Setting a required dictionary's french culture for SpellChecker 
+spellChecker.Culture = spellChecker.Dictionaries[0].Culture;;
 
 //Assigning a spellchecker to the TextBox
 SfSpellChecker.SetSpellChecker(textbox, spellChecker);
