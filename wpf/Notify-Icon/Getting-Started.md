@@ -61,7 +61,7 @@ To add the control manually in XAML page, follow the given steps:
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:NotifyIcon Header="NotifyIcon" Height="100" Width="100"/>
+        <syncfusion:NotifyIcon />
     </Grid>
 </Window>
 
