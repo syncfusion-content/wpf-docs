@@ -40,12 +40,9 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 private void Scheduler_CellTapped(object sender, CellTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
-    MessageBox.Show("Date" + " " + dateTime, "CellTapped", MessageBoxButton.OK);
 }
 {% endhighlight %}
 {% endtabs %}
-
-![WPF Scheduler CellTapped Event](Events_Images/CellTapped_event.png)
 
 ## CellDoubleTapped
 
@@ -61,12 +58,9 @@ The [CellDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
 private void Scheduler_CellDoubleTapped(object sender, CellDoubleTappedEventArgs e)
 {
     var dateTime = e.DateTime.ToString();
-    MessageBox.Show("Date" + " " + dateTime, "CellDoubleTapped", MessageBoxButton.OK);
 }
 {% endhighlight %}
 {% endtabs %}
-
-![WPF Scheduler CellDoubleTapped Event](Events_Images/CellDoubleTapped_event.png)
 
 ## CellLongPressed
 
