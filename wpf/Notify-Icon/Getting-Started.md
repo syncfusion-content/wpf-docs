@@ -61,7 +61,7 @@ To add the control manually to the XAML page, follow the given steps:
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:NotifyIcon />
+        <syncfusion:NotifyIcon Height="80" Width="150" />
     </Grid>
 </Window>
 
@@ -100,6 +100,8 @@ namespace NotifyIcon_GettingStarted
         {
             InitializeComponent();
             NotifyIcon notifyIcon = new NotifyIcon();
+            notifyIcon.Height = 80;
+            notifyIcon.Width = 150;
             this.Content = notifyIcon;
         }
     }
@@ -117,7 +119,7 @@ You can set the icon to the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Sync
 
 {% highlight XAML %}
 
-<syncfusion:NotifyIcon Name="notify" Header="NotifyIcon" Height="100" ShowInTaskBar="True" Width="100" Icon="images\notifyicon.png" />
+<syncfusion:NotifyIcon Name="notify" Header="NotifyIcon" Height="80" ShowInTaskBar="True" Width="150" Icon="images\notifyicon.png" />
 
 {% endhighlight %}
 
@@ -133,7 +135,7 @@ You can use the [Text](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Too
 
 {% highlight XAML %}
 
-<syncfusion:NotifyIcon Name="notify" Header="NotifyIcon" Height="100" ShowInTaskBar="True" Width="100" Icon="images\notifyicon.png" Text="Notify me" />
+<syncfusion:NotifyIcon Name="notify" Header="NotifyIcon" Height="80" ShowInTaskBar="True" Width="150" Icon="images\notifyicon.png" Text="Notify me" />
 
 {% endhighlight %}
 
