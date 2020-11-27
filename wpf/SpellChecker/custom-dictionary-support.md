@@ -47,28 +47,75 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to configure SfSpellChecker.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Nous sommevs heureusre de vous avochir ici"
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker
+                    Culture="fr-FR"
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True">
+                    <syncfusion:SfSpellChecker.Dictionaries>
+
+                        <!--Adding French cultured Hunspell dictionary-->
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/French/fr-FR.dic"
+                                                       GrammarUri="/HunSpellCheck;component/French/fr-FR.aff"
+                                                       Culture="fr-FR"/>
+                    </syncfusion:SfSpellChecker.Dictionaries>
+                </syncfusion:SfSpellChecker>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("fr-FR");
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Adding Hunspell dictonaries in Dictionaries collection
-SpellChecker.Dictionaries = new DictionaryCollection();
+spellChecker.Dictionaries = new DictionaryCollection();
 
 //Add French culture Hunspell dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = culture,
-        GrammarUri = new Uri("/HunSpellCheck;component//French/fr-FR.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/HunSpellCheck;component//French/fr-FR.dic", UriKind.Relative)
+        GrammarUri = new Uri("/HunSpellCheck;component/French/fr-FR.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/HunSpellCheck;component/French/fr-FR.dic", UriKind.Relative)
     }
 );
 
 //Setting a French culture for SpellChecker
-SpellChecker.Culture = culture;
+spellChecker.Culture = culture;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog(Editor);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -98,31 +145,76 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The following code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
-
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="gracsq por venizr por favor ven de nuevoq"
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker
+                    Culture="es-ES"
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True">
+                    <syncfusion:SfSpellChecker.Dictionaries>
+
+                        <!--Adding Spanish cultured Ispell dictionary-->
+                        <syncfusion:IspellDictionary DictionaryUri="/IspellCheck;component/Spanish/es-ES.dic"
+                                                     GrammarUri="/IspellCheck;component/Spanish/es-ES.aff"
+                                                     Culture="es-ES"/>
+                    </syncfusion:SfSpellChecker.Dictionaries>
+                </syncfusion:SfSpellChecker>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("es-ES");
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Adding Ispell dictonaries in Dictionaries collection
-SpellChecker.Dictionaries = new DictionaryCollection();
+spellChecker.Dictionaries = new DictionaryCollection();
 
 //Add Spanish culture Ispell dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new IspellDictionary()
     {
         Culture = culture,
-        GrammarUri = new Uri("/IspellCheck;component//Spanish/es-ES.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/IspellCheck;component//Spanish/es-ES.dic", UriKind.Relative)
+        GrammarUri = new Uri("/IspellCheck;component/Spanish/es-ES.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/IspellCheck;component/Spanish/es-ES.dic", UriKind.Relative)
     }
 );
 
 //Setting a Spanish culture for SpellChecker
-SpellChecker.Culture = culture;
+spellChecker.Culture = culture;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog(Editor);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -152,31 +244,76 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
-
 {% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="gracsq por venizr por favor ven de nuevoq"
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker
+                    Culture="es-ES"
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True">
+                    <syncfusion:SfSpellChecker.Dictionaries>
+
+                        <!--Adding Spanish cultured OpenOffice dictionary-->
+                        <syncfusion:OpenOfficeDictionary DictionaryUri="/OpenOfficeSpellCheck;component/Spanish/es-ES.dic"
+                                                         GrammarUri="/OpenOfficeSpellCheck;component/Spanish/es-ES.aff"
+                                                         Culture="es-ES"/>
+                    </syncfusion:SfSpellChecker.Dictionaries>
+                </syncfusion:SfSpellChecker>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
 {% highlight c# %}
 
 //Creating a Spanish culture instance
 CultureInfo culture = new CultureInfo("es-ES");
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Adding OpenOffice dictonaries in Dictionaries collection
-SpellChecker.Dictionaries = new DictionaryCollection();
+spellChecker.Dictionaries = new DictionaryCollection();
 
 //Add Spanish culture OpenOffice dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new OpenOfficeDictionary()
     {
         Culture = culture,
-        GrammarUri = new Uri("/OpenOfficeSpellCheck;component//Spanish/es-ES.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/OpenOfficeSpellCheck;component//Spanish/es-ES.dic", UriKind.Relative)
+        GrammarUri = new Uri("/OpenOfficeSpellCheck;component/Spanish/es-ES.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/OpenOfficeSpellCheck;component/Spanish/es-ES.dic", UriKind.Relative)
     }
 );
 
 //Setting a Spanish culture for SpellChecker
-SpellChecker.Culture = culture;
+spellChecker.Culture = culture;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog(Editor);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -203,15 +340,51 @@ You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.D
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The following code snippets only explain the insertion of the custom dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
-
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Ribbn illustrats the Microsoft illustrats Offce 2007 UI. Our prduct exposes most of the featres of the new UI and eeps intact winhth the Slverlight architecture. Configuring and designing the layout is very easy through XAML code. Ribbon tabs and Ribbon bars are the main client area in Ribbon. Ribbon tabs will allow your end users to navigate and find the appropriate tools for the task at hand. The Ribbon bars will contain the Ribbon tools."
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker
+                    Culture="en-US"
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True">
+                    <syncfusion:SfSpellChecker.Dictionaries>
+
+                        <!--Adding english cultured custom dictionary-->
+                        <syncfusion:CustomDictionary DictionaryUri="E:/SpellcheckerDemo/bin/Debug/English/Custom_en-US.txt"
+                                                     Culture="en-US"/>
+
+                        <!--Adding english cultured OpenOffice dictionary-->
+                        <syncfusion:OpenOfficeDictionary DictionaryUri="/CustomSpellCheck;component/US/en-US.dic"
+                                                         GrammarUri="/CustomSpellCheck;component/US/en-US.aff"
+                                                         Culture="en-US"/>
+                        
+                    </syncfusion:SfSpellChecker.Dictionaries>
+                </syncfusion:SfSpellChecker>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
 
 //Creating a culture instance
 CultureInfo culture = new CultureInfo("en-US");
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Get the current PROJECT directory
 Uri CustomDict_uri= new Uri(Directory.GetCurrentDirectory()+  
@@ -219,7 +392,7 @@ Uri CustomDict_uri= new Uri(Directory.GetCurrentDirectory()+
                             @"\English\Custom_en-US.txt", UriKind.Absolute); 
 
 //Add Custom dictionary for US culture
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new CustomDictionary()
     {
         Culture = culture,
@@ -228,16 +401,30 @@ SpellChecker.Dictionaries.Add(
 );
 
 //Add US culture OpenOffice dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new OpenOfficeDictionary()
     {
         Culture = culture,
-        GrammarUri = new Uri("/CustomSpellCheck;component//US/en-US.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/CustomSpellCheck;component//US/en-US.dic", UriKind.Relative)
+        GrammarUri = new Uri("/CustomSpellCheck;component/US/en-US.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/CustomSpellCheck;component/US/en-US.dic", UriKind.Relative)
     }
 
 //Setting a US culture for SpellChecker
-SpellChecker.Culture = culture;
+spellChecker.Culture = culture;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog(Editor);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -256,29 +443,72 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecke
 
 You can add `Hunspell`, `Ispell`, or `OpenOffice` dictionaries one or more times with various culture into the `SfSpellChecker.Dictionaries` collection. You can change the spell check culture at runtime by changing the `SfSpellChecker.Culture` property. Based on the current `SfSpellChecker.Culture` respective dictionary is used to spell check.
 
+N> During language switching, you need to set the required culture for `SfSpellChecker.Culture` property from the required dictionary's culture. From `SfSpellChecker.Dictionaries` collection, you can get the required dictionary.
+
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
 
-//Creating a culture instance
-CultureInfo culture = new CultureInfo("fr-FR");
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Nous sommevs heureusre de vous avochir ici"
+            Name="textbox"
+            TextWrapping="Wrap">
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker
+                    Culture="fr-FR"
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True">
+                    <syncfusion:SfSpellChecker.Dictionaries>
+
+                        <!--Adding French cultured Hunspell dictionary-->
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/French/fr-FR.dic"
+                                                       GrammarUri="/HunSpellCheck;component/French/fr-FR.aff"
+                                                       Culture="fr-FR"/>
+
+                        <!--Adding Spanish cultured Hunspell dictionary-->
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/Spanish/es-ES.dic"
+                                                         GrammarUri="/HunSpellCheck;component/Spanish/es-ES.aff"
+                                                         Culture="es-ES"/>
+
+                        !--Adding english cultured Hunspell dictionary-->
+                        <syncfusion:HunspellDictionary DictionaryUri="/HunSpellCheck;component/US/en-US.dic"
+                                                         GrammarUri="/HunSpellCheck;component/US/en-US.aff"
+                                                         Culture="en-US"/>
+                        
+                    </syncfusion:SfSpellChecker.Dictionaries>
+                </syncfusion:SfSpellChecker>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfSpellChecker spellChecker = new SfSpellChecker();
 
 // Adding Hunspell dictonaries in Dictionaries collection
-SpellChecker.Dictionaries = new DictionaryCollection();
+spellChecker.Dictionaries = new DictionaryCollection();
 
 //Add French culture Hunspell dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
-        Culture = culture,
+        Culture = new CultureInfo("fr-FR"),
         GrammarUri = new Uri("/HunSpellCheck;component//French/fr-FR.aff", UriKind.Relative),
         DictionaryUri = new Uri("/HunSpellCheck;component//French/fr-FR.dic", UriKind.Relative)
     }
 );
 
 //Add Spanish culture Hunspell dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("es-ES"),
@@ -288,7 +518,7 @@ SpellChecker.Dictionaries.Add(
 );
 
 //Add US culture Hunspell dictionary
-SpellChecker.Dictionaries.Add(
+spellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("en-US"),
@@ -297,8 +527,22 @@ SpellChecker.Dictionaries.Add(
     }
 );
 
-//Setting a French culture for SpellChecker
-SpellChecker.Culture = culture;
+//Setting a required dictionary's french culture for SpellChecker 
+spellChecker.Culture = spellChecker.Dictionaries[0].Culture;;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog(Editor);
+}
 
 {% endhighlight %}
 {% endtabs %}

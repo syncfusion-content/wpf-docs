@@ -501,7 +501,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = AnimationType.Scale;
+badge.BadgeAnimationType = BadgeAnimationType.Scale;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -559,7 +559,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = AnimationType.None;
+badge.BadgeAnimationType = BadgeAnimationType.None;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}

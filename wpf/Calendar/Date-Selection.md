@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Calendar in WPF CalendarEdit | Syncfusion
+title: Date selection in WPF CalendarEdit | Syncfusion
 description: This section explains how to use calendar and what are the features available in the WPF CalendarEdit 
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# Working with WPF CalendarEdit
+# Date selection in WPF CalendarEdit
 
 This section explains how to select a date and custom UI of the WPF [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
@@ -59,7 +59,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 ## Select multiple dates
 
 You can select a multiple dates by drag and move the mouse from required start date to end date.
- You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_SelectedDates) property. You can restrict the multiple date selection by setting [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_AllowMultiplySelection) property as `false`. The default value of `AllowMultiplySelection` property is `true`.
+You can get the selected dates from the [SelectedDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_SelectedDates) property. You can restrict the multiple date selection by setting [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_AllowMultiplySelection) property as `false`. The default value of `AllowMultiplySelection` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -81,6 +81,30 @@ calendarEdit.AllowMultiplySelection = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
+### Select specific multiple dates
+
+You can select a specific multiple dates by pressing the `Ctrl` key and select required dates using mouse click.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting multiple dates-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         AllowMultiplySelection="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting multiple dates
+calendarEdit.AllowMultiplySelection = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit control displaying specifically selected multiple dates](Getting-Started_images/multiple-date-selection_mouse.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
 ### Select a multiple dates programmatically
 
 You can select a multiple dates programmatically by setting the dates to the [SelectedDatesList](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html#Syncfusion_Windows_Shared_CalendarEdit_SelectedDatesList) property.
@@ -89,7 +113,7 @@ You can select a multiple dates programmatically by setting the dates to the [Se
 {% highlight XAML %}
 
 <!-- Selecting date -->
-<syncfusion:CalendarEdit Date="25/08/2020" 
+<syncfusion:CalendarEdit Date="08/25/2020" 
                          AllowMultiplySelection="True"
                          Name="calendarEdit"/>
 {% endhighlight %}
@@ -98,27 +122,69 @@ You can select a multiple dates programmatically by setting the dates to the [Se
 //Selecting multiple date programmatically
 calendarEdit.AllowMultiplySelection = true;
 calendarEdit.SelectedDatesList = new List<Date>();
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 01));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 02));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 03));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 04));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 05));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 06));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 07));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 08));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 01));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 05));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 10));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 15));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 20));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 29));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Multiple dates selected programmatically from the CalendarEdit](Getting-Started_images/MultipleDate_programmatically.png)
 
-### Select multiple dates using key navigation
+## Select multiple dates using key navigation
 
 You can select a multiple dates by pressing the `Shift` with `Arrow` keys. If you want to select multiple dates in forward direction, press the `Shift + Down` or  `Shift + Right` keys. If you want to select a date in backward direction, press the `Shift + UP` or  `Shift + Left` keys. You can get the selected dates from the `SelectedDates` property.
 
 For example, if you start selecting the date from `18 Nov 2020` using key navigation, it will be select the dates as follows,
 
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting multiple dates-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         AllowMultiplySelection="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting multiple dates
+calendarEdit.AllowMultiplySelection = true;
+
+{% endhighlight %}
+{% endtabs %}
+
 ![Multiple dates selected by key navigation in CalendarEdit](Working-with-Calendar_images/Multipledates_keynavigation.png)
+
+### Select specific multiple dates using key navigation
+
+You can select or unselect the specific multiple dates by using the `Ctrl`, `Arrow` keys and `Space` bar.
+
+* `Ctrl + Arrow` keys → To move the focus to the top, left, bottom and right cells with maintaining the old selection.
+* `Space` bar → To select the currently focused item.
+* `Ctrl + Space` bar → To remove an item from multiple selection that is already selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<!-- Selecting multiple dates-->
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         AllowMultiplySelection="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Selecting multiple dates
+calendarEdit.AllowMultiplySelection = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CalendarEdit control displaying specifically selected multiple dates](Getting-Started_images/multiple-date-selection_keys.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
 ## Highlight selected date
 
