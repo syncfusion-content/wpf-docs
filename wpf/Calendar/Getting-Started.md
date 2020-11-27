@@ -186,7 +186,7 @@ You can select a multiple dates programmatically by setting the dates to the [Se
 {% highlight XAML %}
 
 <!-- Selecting date -->
-<syncfusion:CalendarEdit Date="25/08/2020" 
+<syncfusion:CalendarEdit Date="08/25/2020" 
                          AllowMultiplySelection="True"
                          Name="calendarEdit"/>
 {% endhighlight %}
@@ -195,14 +195,12 @@ You can select a multiple dates programmatically by setting the dates to the [Se
 //Selecting multiple date programmatically
 calendarEdit.AllowMultiplySelection = true;
 calendarEdit.SelectedDatesList = new List<Date>();
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 01));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 02));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 03));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 04));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 05));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 06));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 07));
-calendarEdit.SelectedDatesList.Add(new Date(2020, 09, 08));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 01));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 05));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 10));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 15));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 20));
+calendarEdit.SelectedDatesList.Add(new Date(2020, 08, 29));
 
 {% endhighlight %}
 {% endtabs %}

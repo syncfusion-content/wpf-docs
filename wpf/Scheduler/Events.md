@@ -30,9 +30,37 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 * [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_TimeInterval)- gets the date-time interval of the tapped cell. It is not applicable for month view.
 * [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Resource) - gets the resource associated with the timeslot cell where user tapped.
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" CellTapped="Scheduler_CellTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Scheduler_CellTapped(object sender, CellTappedEventArgs e)
+{
+    var dateTime = e.DateTime.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## CellDoubleTapped
 
 The [CellDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user double clicks the cell in Scheduler. This event receives two arguments namely `this` that handles `SfScheduler` and [CellDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html) as objects.The base class of the [CellDoubleTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html)
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" CellTapped="Scheduler_CellDoubleTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Scheduler_CellDoubleTapped(object sender, CellDoubleTappedEventArgs e)
+{
+    var dateTime = e.DateTime.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## CellLongPressed
 
