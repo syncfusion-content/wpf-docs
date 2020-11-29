@@ -29,12 +29,11 @@ Spell checking operation can be done on text editor controls through `SfSpellChe
 
 You can add the `SfSpellChecker` to an application by the following steps,
 
-1. Create a WPF project in Visual Studio and include following assemblies.
+1. Create a WPF project in Visual Studio and include following assembly.
 
-    * Syncfusion.SpellChecker.Base
     * Syncfusion.SfSpellChecker.WPF
 
-2. Add the `SfSpellChecker` inside the `TextBox` control to perform spell check.
+2. Add `TextBox` control and set `SfSpellChecker.SpellChecker` attached property to perform spell check.
 
 {% tabs %}
 {% highlight XAML %}
@@ -161,9 +160,9 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
 
-## Restrict the spell check operation
+## Disable spell checking
 
-If you want to restrict the spell check operation, use the `EnableSpellCheck` property value as `false`.If the `EnableSpellCheck` property value is `false`, you will not be able to use both the context menu and SpellCheck dialogue to perform spell checking operations. The default value of `EnableSpellCheck` property is `true`.
+If you want to disable the spell check operation, use the `EnableSpellCheck` property value as `false`.If the `EnableSpellCheck` property value is `false`, you will not be able to use both the context menu and SpellCheck dialogue to perform spell checking operations. The default value of `EnableSpellCheck` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
