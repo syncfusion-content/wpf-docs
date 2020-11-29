@@ -7,7 +7,7 @@ control: Featured Samples
 documentation: ug
 ---
 
-# Featured Samples 
+# Featured Samples for Syncfusion WPF Controls
 
 ## Syncfusion WPF Controls Panel
 
@@ -37,7 +37,7 @@ C:\Users\Public\Documents\Syncfusion\WPF\{{ site.releaseversion }}\
 
 ## Online Samples
 
-To explore the online [samples](https://wpf.syncfusion.com/samples.html) click `Ru Online Demos` in `Syncfusion WPF Controls Panel` that navigates to `ClickOnce` download. 
+Download or install [online samples](https://www.syncfusion.com/demos) from [here](https://www.syncfusion.com/demos)
 
 ## GitHub Demos
 
