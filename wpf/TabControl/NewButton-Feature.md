@@ -61,7 +61,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Select a new tab item while creating it by new button
 
-If you want to change the recently creating tab item as the selected item that is created by the new button click, use [SelectOnCreatingNewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectOnCreatingNewItemProperty) property value as `true`. You can restrict it by setting the `SelectOnCreatingNewItem` property value as `false`. The default value of `SelectOnCreatingNewItem` property is `true`.
+If you want to select the recently creating tab item as the selected item that is created by the new button click, use [SelectOnCreatingNewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_SelectOnCreatingNewItemProperty) property value as `true`. You can restrict it by setting the `SelectOnCreatingNewItem` property value as `false`. The default value of `SelectOnCreatingNewItem` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
