@@ -83,7 +83,7 @@ A mind map is a diagram that displays the nodes as a spider diagram that organiz
 <syncfusion:LayoutManager x:Key="layoutManager" 
                           Layout="{StaticResource Mindmaplayout}"/>                                           
 
-{% endlight %}
+{% endhighlight %}
 
 {% highlight c# %}
 
