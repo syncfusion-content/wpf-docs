@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vertical Charts feature of Syncfusion SfChart.
-description: Explains the parts of Vertical Charts and its feature, it's behavior and customization options in WPF Chart (SfChart).
+description: Explains the parts of Vertical Charts and their features, it's behavior, and customization options in WPF Chart (SfChart).
 platform: wpf
 control: SfChart
 documentation: ug

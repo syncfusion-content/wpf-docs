@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting Syncfusion SfChart to an image.
-description: Exporting chart to any standard image formats like JPG, PNG, Gif, BMP, TIFF, JPG-XG in WPF Chart (SfChart)
+description: Exporting the chart to any standard image formats like JPG, PNG, Gif, BMP, TIFF, and JPG-XG in WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug

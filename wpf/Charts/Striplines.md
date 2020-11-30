@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Striplines| SfChart | Wpf | Syncfusion
-description: Explains the parts of striplines, specific region or range, it's behavior and customization options in WPF Chart (SfChart) 
+description: Explains the parts of striplines, specific region or range, it's behavior, and customization options in WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
