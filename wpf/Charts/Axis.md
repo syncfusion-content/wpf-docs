@@ -5509,3 +5509,4 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 
 [`How to define ticker labels of custom axis`](https://www.syncfusion.com/kb/2588/how-to-define-ticker-labels-of-custom-axis)
 
+[`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)

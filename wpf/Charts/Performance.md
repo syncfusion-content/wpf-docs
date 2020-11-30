@@ -14,7 +14,7 @@ documentation: ug
 * In case of a Column Series, when you have large number of points to plot, you can make use of FastColumnBitmapSeries.
 * You also have Fast Series types for financial charts like HiLo and HiLoOpenClose and they are named as FastHiLoBitmapSeries and FastHiLoOpenCloseBitmapSeries respectively.
 
-N> DirectX support is not provided in latest version.
+N> Stopped to provide support for the DirectX series. Instead of that, use FastLineBitmapSeries to render a large amount of data with good performance.
 
 ## Deferred real-time updates
 

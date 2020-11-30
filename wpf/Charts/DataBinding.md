@@ -359,3 +359,7 @@ N> By default, the property change was disabled. So the dynamic updates will not
 [`How to bind the series collection property using MVVM pattern`](https://www.syncfusion.com/kb/9406/how-to-bind-the-series-collection-property-using-mvvm-pattern)
 
 [`How to bind data table in the Chart`](https://www.syncfusion.com/kb/5515/how-to-bind-data-table-in-the-sfchart)
+
+[`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+
+[`How to bind the array property in Chart`](https://www.syncfusion.com/kb/4923/how-to-bind-the-array-property-in-sfchart)
