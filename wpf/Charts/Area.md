@@ -378,11 +378,9 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`ValueToPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ValueToPoint_Syncfusion_UI_Xaml_Charts_ChartAxis_System_Double_)
 
-[`Save`](https://help.syncfusion.com/wpf/sfchart/exporting#)
+[`How to export chart as Image`](https://help.syncfusion.com/wpf/sfchart/exporting#)
 
-[`Print`](https://help.syncfusion.com/wpf/sfchart/printing#)
-
-[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+[`How to print the chart`](https://help.syncfusion.com/wpf/sfchart/printing#)
 
 [`How to add space between multiple columns in a Chart segment`](https://www.syncfusion.com/kb/5500/how-to-add-space-between-multiple-columns-in-a-chart-segment)
 
@@ -392,9 +390,6 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
 
-[`How to create separate columns StackedGroup in stacking series`](https://www.syncfusion.com/kb/4730/how-to-create-separate-columns-stackedgroup-in-stacking-series)
-
-[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-nan-in-sfchart)
 
 [`How to set the Z Index to the series`](https://www.syncfusion.com/kb/2681/how-to-set-the-z-index-to-the-series)
 
@@ -402,4 +397,5 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-itemwidthpercent-before-drawing-chart)
 
+[`How to view corner segments without cutting in edge of WPF Chart`](https://www.syncfusion.com/kb/10728/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
 

@@ -5487,8 +5487,6 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 
 [`How to get axis range in chart`](https://www.syncfusion.com/kb/10818/how-to-get-axis-range-in-chart)
 
-[`How to view corner segments without cutting in edge of WPF Chart`](https://www.syncfusion.com/kb/10728/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
-
 [`How to wrap the multi-level axis label's text in WPF Chart`](https://www.syncfusion.com/kb/10167/how-to-wrap-the-multi-level-axis-labels-text-in-wpf-chart)
 
 [`How to use the DateTimeAxis as SecondaryAxis in WPF Chart`](https://www.syncfusion.com/kb/9737/how-to-use-the-datetimeaxis-as-secondaryaxis-in-wpf-sfchart)
@@ -5510,3 +5508,5 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 [`How to define ticker labels of custom axis`](https://www.syncfusion.com/kb/2588/how-to-define-ticker-labels-of-custom-axis)
 
 [`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
+
+[`How to set the custom labels with auto range for axis`](https://www.syncfusion.com/kb/5907/how-to-set-the-custom-labels-with-auto-range-for-axis)

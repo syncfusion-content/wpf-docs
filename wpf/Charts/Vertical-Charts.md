@@ -277,7 +277,3 @@ chart.Series.Add(series2);
 {% endtabs %}
 
 ![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_3.png)
-
-## See also
-
-[`How to draw horizontal line in chart`]( https://www.syncfusion.com/kb/2850/how-to-draw-horizontal-line-in-chart)

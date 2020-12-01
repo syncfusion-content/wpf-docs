@@ -1028,8 +1028,6 @@ Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>());
 
 [`How to get a notification when the legend items are clicked in WPF Chart`](https://www.syncfusion.com/kb/10169/how-to-get-a-notification-when-the-legend-items-are-clicked-in-wpf-chart)
 
-[`How to set the custom labels with auto range for axis`](https://www.syncfusion.com/kb/5907/how-to-set-the-custom-labels-with-auto-range-for-axis)
-
 [`How to add multiple legend items in scroll viewer`](https://www.syncfusion.com/kb/4846/how-to-add-multiple-legend-items-in-scroll-viewer)
 
 [`How to format the legend text`](https://www.syncfusion.com/kb/4691/how-to-format-the-legend-text)
