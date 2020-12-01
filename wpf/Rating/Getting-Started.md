@@ -20,10 +20,10 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Creating Application with SfRating control
 In this walk through, user will create a WPF application that contains [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control.
-1. [Creating project](#Creating-the-project)
-2. [Adding control via designer](#Adding-control-via-designer)
-3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-4. [Adding control manually in C#](#Adding-control-manually-in-C#)
+1. [Creating project](#creating-project)
+2. [Adding control via designer](#adding-control-via-designer)
+3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
+4. [Adding control manually in C#](#add-control-manually-in-c)
 
 ## Creating project
 
