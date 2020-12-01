@@ -173,7 +173,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
 
-## ShowOutlier
+**ShowOutlier**
 
 The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
 
