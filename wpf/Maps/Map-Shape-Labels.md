@@ -49,7 +49,7 @@ The labels can also be customized by modifying the [`ItemsTemplate`](https://hel
                     <syncfusion:ShapeFileLayer.ItemsTemplate>
                         <DataTemplate>
                             <Grid Background="Gray" Opacity="0.75">
-                                <TextBlock Text="{Binding DBFData[NAME]}"
+                                <TextBlock Text="{Binding DbfData[NAME]}"
                                        FontSize="14" Margin="10 5"/>
                             </Grid>
                         </DataTemplate>
