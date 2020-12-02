@@ -344,8 +344,6 @@ N> By default, the property change was disabled. So the dynamic updates will not
 
 ## See also
 
-[`How to create Chart in F# WPF`](https://www.syncfusion.com/kb/11663/how-to-create-chart-in-f-wpf)
-
 [`How to bind a list of Tuple in WPF Charts`](https://www.syncfusion.com/kb/11645/how-to-bind-a-list-of-tuple-in-wpf-charts)
 
 [`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://www.syncfusion.com/kb/11603/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)

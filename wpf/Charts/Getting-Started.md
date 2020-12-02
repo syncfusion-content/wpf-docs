@@ -692,6 +692,8 @@ You can find the complete getting started sample from this [link](https://www.sy
 
 [`How to create chart in C# WPF`](https://www.syncfusion.com/kb/10783/how-to-create-chart-in-c-wpf)
 
+[`How to create Chart in F# WPF`](https://www.syncfusion.com/kb/11663/how-to-create-chart-in-f-wpf)
+
 [`How to add Context Menu for WPF Chart`](https://www.syncfusion.com/kb/10726/how-to-add-contextmenu-for-wpf-chart)
 
 [`How to add WPF SfChart inside the SfDataGrid`](https://www.syncfusion.com/kb/10386/how-to-add-wpf-sfchart-inside-the-sfdatagrid)
@@ -713,4 +715,5 @@ You can find the complete getting started sample from this [link](https://www.sy
 [`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
 
 [`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
+
 

@@ -105,4 +105,8 @@ chart.Save("Chart.png");
 
 ## See also
 
+[`How to export chart as Image`](https://help.syncfusion.com/wpf/sfchart/exporting#)
+
+[`How to print the chart`](https://help.syncfusion.com/wpf/sfchart/printing#)
+
 [`How to read image byte while rendering chart`](https://www.syncfusion.com/kb/2584/how-to-read-image-byte-while-rendering-chart)

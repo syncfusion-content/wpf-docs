@@ -378,10 +378,6 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`ValueToPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ValueToPoint_Syncfusion_UI_Xaml_Charts_ChartAxis_System_Double_)
 
-[`How to export chart as Image`](https://help.syncfusion.com/wpf/sfchart/exporting#)
-
-[`How to print the chart`](https://help.syncfusion.com/wpf/sfchart/printing#)
-
 [`How to add space between multiple columns in a Chart segment`](https://www.syncfusion.com/kb/5500/how-to-add-space-between-multiple-columns-in-a-chart-segment)
 
 [`How to allot space between the segments`](https://www.syncfusion.com/kb/5485/how-to-allot-space-between-the-segments)
