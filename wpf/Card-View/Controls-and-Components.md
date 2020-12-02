@@ -111,35 +111,126 @@ cardview.CanSort = false;
 
 {% endhighlight %}
 
-## Editing
+## Card editing using keyboard and mouse interaction
 
-More attractive feature in the CardView control is editing. [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property allows the user to edit the fields available in the cards. Moreover we can customize the Item template while editing by using the property called [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate).
+You can edit the selected `CardViewItem` value by double-clicking on that item or by pressing the `F2` key. You can enable the editing by setting the value of the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property as `true`. Otherwise, you will not be able to perform the edit operation. To get out from the editing mode, you need to press the `Esc` or `Enter` key. The default value of `CanEdit` property is `false`. 
 
-### Adding editing to an Application 
+N> To perform an edit operation on selected `CardViewItem`, you need to define the `CardViewItem` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate). `EditItemTemplate` is applied to the selected item in the edit mode, and `ItemTemplate` is applied to the selected item in the view mode.
 
-[CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_CanEdit) property can be added directly to an application using the following code example:
+{% tabs %}
+{% highlight C# %}
 
-{% highlight xaml %}
+//Model.cs
+public class CardViewModel {
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
 
-<syncfusion:CardView CanEdit="False">        
+//ViewModel.cs
+public class ViewModel : NotificationObject {
+    private ObservableCollection<CardViewModel> cardViewItems;
+    public ObservableCollection<CardViewModel> CardViewItems {
+        get { return cardViewItems; }
+        set { cardViewItems = value;
+            this.RaisePropertyChanged("CardViewItems"); 
+        }
+    }
+    public ViewModel() {
+        CardViewItems = new ObservableCollection<CardViewModel>();
+        populateItems();
+    }
+    private void populateItems() {
+        CardViewItems.Add(new CardViewModel() { Name = "John", Age = 23 });
+        CardViewItems.Add(new CardViewModel() { Name = "Mark", Age = 26 });
+        CardViewItems.Add(new CardViewModel() { Name = "Steven", Age = 25 });
+    }
+}
 
-</syncfusion:CardView>
+{% endhighlight %}
+{% endtabs %}
 
-{% endhighlight  %}
+{% tabs %}
+{% highlight XAML %}
 
-{% highlight c# %}
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
+<Grid>
+    <StackPanel>
+        <syncfusion:CardView CanEdit="True"
+                             Name="cardView" 
+                             ItemsSource="{Binding CardViewItems}">
+            <syncfusion:CardView.EditItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name:"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"    
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                        <TextBlock Text="Age:" 
+                                   Grid.Row="1"
+                                   Grid.Column="0"/>
+                        <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"
+                                 Grid.Row="1" 
+                                 Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:CardView.EditItemTemplate>
+            <syncfusion:CardView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name:"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <TextBlock Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                        <TextBlock Text="Age:"
+                                   Grid.Row="1"
+                                   Grid.Column="0"/>
+                        <TextBlock Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"
+                                 Grid.Row="1" 
+                                 Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:CardView.ItemTemplate>
+            <syncfusion:CardView.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </syncfusion:CardView.HeaderTemplate>
+        </syncfusion:CardView>
+    </StackPanel>    
+</Grid>
 
-CardView cardview = new CardView();       
+{% endhighlight %}
+{% endtabs %}
 
-cardview.CanEdit = false;
+![Editing cardview items using key pressing and mouse interaction](Controls-and-Components_images/CardEditMode.png)
 
-{% endhighlight  %}
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CardView-EditMode) in GitHub
 
 ## Start card editing programmatically
 
-By default, editing mode can be started by double-clicking the `CardViewItem` or by pressing the `F2` key and can stop the editing to putting selected `CardViewItem` into view mode by clicking the `Esc` or `Enter` key. 
-
-You can use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit) and [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) methods to make the selected item to editing mode and change the edit mode to view mode for the selected item. In the edit mode, `EditItemTemplate` is applied and in the view mode `ItemTemplate` is applied to the selected item.
+If you want to programmatically start the edit mode of selected `CardViewItem`, use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_BeginEdit)  method. You can also programmatically change the edit mode to view mode by using the [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EndEdit) method.
 
 N> You must set the `CanEdit` property as `true` to perform `BeginEdit` or `EndEdit`.
 

@@ -7,13 +7,13 @@ control: Featured Samples
 documentation: ug
 ---
 
-# Featured Samples 
+# Featured Samples for Syncfusion WPF Controls
 
 ## Syncfusion WPF Controls Panel
 
 To explore Syncfusion WPF controls and components, Open `Syncfusion WPF Controls Panel` by searching it from start and open. 
 
-![WFP Control Panel Search](Guidetorunthesamples_images/wpf-control-panel-search.png)
+![WPF Control Panel Search](Guidetorunthesamples_images/wpf-control-panel-search.png)
 
 In another way, Open the Control Panel from the following installed location,
 
@@ -25,22 +25,37 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## WPF Sample Browser
 
-To explore the locally installed demos, click `Run Local Demos` which will open `WPF Sample Browser`.
+To explore the locally installed demos, click `Run Local Demos` and select either `.NET Core` or `.NET FrameWork` which will open `WPF Sample Browser`.
 
 ![Syncfusion WPF Sample Browser](Guidetorunthesamples_images/syncfusion-wpf-sample-browser.PNG)
 
 ## Offline Samples
 
-`Syncfusion WPF Sample Browser` compile and launch the samples installed by Syncfusion installer. The samples are available in the following installed location where you can make changes and further exploration of controls.
+The Offline samples are available in the following installed location where you can make changes and further exploration of controls.
 
 C:\Users\Public\Documents\Syncfusion\WPF\{{ site.releaseversion }}\
 
+The offline samples can also be explored directly from `Syncfusion WPF Sample Browser` and opened in Visual Studio by run the required sample and click `Open source code in visual studio` button.
+
+![Exploring Syncfusion WPF Samples from Syncfusion WPF Sample Browser](Guidetorunthesamples_images/Exploring-syncfusion-wpf-Showcase-sample-from-SB.PNG)
+
+### Offline Showcase Samples
+
+To explore any individual showcase sample from `Syncfusion WPF Sample Browser`, Click `Explore Demo Source` and navigate to `showcase` folder.
+
+![Exploring Syncfusion WPF Showcase Samples](Guidetorunthesamples_images/Exploring-syncfusion-wpf-Showcase-sample.PNG)
+
+N> To run the individual control demos, please refer the instruction from [Running Individual Control Demos](https://github.com/syncfusion/wpf-demos#running-individual-control-demos). 
+
 ## Online Samples
 
-To explore the online [samples](https://wpf.syncfusion.com/samples.html) click `Ru Online Demos` in `Syncfusion WPF Controls Panel` that navigates to `ClickOnce` download. 
+* Download and install `.NetCore` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/wpf-demos/distribution_groups/release).
+* Download and install `.Net Framework` demos from [Microsoft Store](https://www.microsoft.com/en-us/p/syncfusion-wpf-controls-examples/9n99kdhrff6g?activetab=pivot:overviewtab).
 
-## GitHub Demos
+## Download demos from online (Clone from github repository)
 
-You can explore Syncfusion WPF controls using [GitHub WPF demos](https://github.com/syncfusion/wpf-demos) where all wpf demos are configured using `NuGet` to run without installing Syncfusion WPF Studio. 
+You can explore Syncfusion WPF controls using [GitHub WPF demos](https://github.com/syncfusion/wpf-demos) where all wpf demos are configured using `NuGet` to run without installing Syncfusion WPF Studio.
 
-N> Explore Syncfusion Controls in [GitHub](https://github.com/syncfusion/wpf-demos).
+### Download showcase demos from online
+
+You can explore showcase demos from [GitHub WPF demos](https://github.com/syncfusion/wpf-demos/tree/master/showcase).

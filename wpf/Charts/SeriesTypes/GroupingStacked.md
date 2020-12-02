@@ -80,3 +80,9 @@ The following code example shows how to group the stacking series.
 {% endtabs %}
 
 ![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
+
+## See also
+
+[`How to render the stacked step line series in WPF Chart`](https://www.syncfusion.com/kb/10155/how-to-render-the-stacked-step-line-series-in-wpf-chart)
+
+[`How to create separate columns StackedGroup in stacking series`](https://www.syncfusion.com/kb/4730/how-to-create-separate-columns-stackedgroup-in-stacking-series)

@@ -103,16 +103,92 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
  Here, `Age`, `Experience` and `ID` properties is a `int` type properties, they allow only the whole number inputs. `EmployeeName` is a string type property, so `TextBox` is assigned as a value editor and all the text will be allowed.
 
-## Built-in mask attribute to restrict user input 
+## Built-in mask to restrict user input
 
-You can restrict the user from providing invalid input for the one or more specific property by setting the `Regex` based mask to the `MaskAttribute`. For example emails, phone numbers, zip codes, currency, etc.
+You can restrict the user to enter valid value such as alphanumeric, binary, email-Id, IPv4, product Key, positive number, and etc by using the built-in [MaskAttribute](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.MaskAttribute.html#fields). 
 
 N> You can apply mask attribute to property of type `Object` or `string` only.
+
+S_No | Mask Type | Example 
+--- | --- | ---
+1 | Alphanumeric | ![Value editor allows only the alphanumeric values](Attribute-Images/Alphanumeric.png)
+2 | Binary | ![Value editor allows only the binary values](Attribute-Images/Binary.png)
+3 | CardNumber | ![Value editor allows only the credit or debit card number values](Attribute-Images/CardNumber.png) 
+4 | EmailId | ![Value editor allows only the email-Id values](Attribute-Images/EmailId.png)
+5 | Fraction | ![Value editor allows only the fraction values](Attribute-Images/Fraction.png) 
+6 | HexaDecimal | ![Value editor allows only the hexa decimal values](Attribute-Images/HexaDecimal.png)
+7 | IPv4 | ![Value editor allows only the IPv4 values](Attribute-Images/IPv4.png)
+8 | IPv6 | ![Value editor allows only the IPv6 values](Attribute-Images/IPv6.png)
+9 | MobileNumber | ![Value editor allows only the mobile number values](Attribute-Images/MobileNumber.png) 
+10 | Number | ![Value editor allows only the number values](Attribute-Images/Number.png) 
+11 | Octal | ![Value editor allows only the octal values](Attribute-Images/Octal.png)
+12 | PositiveNumber | ![Value editor allows only the positive number values](Attribute-Images/PositiveNumber.png)
+13 | ProductKey | ![Value editor allows only the valid product key values](Attribute-Images/ProductKey.png)
 
 {% tabs %}
 {% highlight C# %}
 
 using Syncfusion.Windows.PropertyGrid;
+
+//EmailId mask for multiple properties
+[Mask(MaskAttribute.EmailId,"EmailID_1, EmailID_2")]
+[Mask(MaskAttribute.CardNumber, "CardNumberMask")]
+public class Masks{
+    [Mask(MaskAttribute.Binary)]
+    public string BinaryMask { get; set; }        
+    public string CardNumberMask { get; set; }       
+    public string EmailID_1 { get; set; }
+    public string EmailID_2 { get; set; }
+
+    [Mask(MaskAttribute.PositiveNumber)]
+    public string PositiveNumberMask { get; set; }
+
+    [Mask(MaskAttribute.ProductKey)]
+    public string ProductKeyMask { get; set; }
+}
+
+//ViewModel.cs
+public class ViewModel {
+    public object BuiltInMasks { get; set; }
+    public ViewModel() {
+        BuiltInMasks = new Masks()
+        {
+            BinaryMask = "0111",
+            CardNumberMask = "X984DH51837RD846362JH38",
+            EmailID_1 = "johnabc@",
+            EmailID_2 = "peter123@gta.co",
+            PositiveNumberMask = "-39479",
+            ProductKeyMask = "HTY23OPY678GR56R01G564GH"
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding BuiltInMasks}"
+                         Name="propertyGrid" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel/>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% endtabs %}
+
+![Restrict user input using built-in mask attributes](Attribute-Images\AllMaskAttributes.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Built-in-Mask)
+
+## Mask attribute with custom mask to restrict user input
+
+You can restrict the user from providing invalid input for the one or more specific property by setting your custom `Regex` based mask to the `MaskAttribute`. For example emails, phone numbers, zip codes, currency, etc.
+
+{% tabs %}
+{% highlight C# %}
 
 //Setting mask option for two specific properties
 [MaskAttribute("[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}", "Email_1,Email_2")]
