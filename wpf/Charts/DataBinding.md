@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataBinding| SfChart | Wpf | Syncfusion
-description: databinding
+description: Explains the parts of chart databinding, it's behavior and customization options in WPF Chart (SfChart) 
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding in WPF Chart (SfChart)
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
@@ -342,3 +342,26 @@ Also, When enabling this property to the series you need to implements INotifyPr
 
 N> By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 
+## See also
+
+[`How to bind a list of Tuple in WPF Charts`](https://www.syncfusion.com/kb/11645/how-to-bind-a-list-of-tuple-in-wpf-charts)
+
+[`How to bind the underlying DataTable model to the DataMarker Template in WPF Charts`](https://www.syncfusion.com/kb/11603/how-to-bind-the-underlying-datatable-model-to-the-datamarker-template-in-wpf-charts)
+
+[`How to bind the SQL Database to WPF Charts`](https://www.syncfusion.com/kb/11595/how-to-bind-the-sql-database-to-wpf-charts)
+
+[`How to bind the JSON data in WPF Chart`](https://www.syncfusion.com/kb/10929/how-to-bind-the-json-data-in-wpf-chart)
+
+[`How to bind KeyValuePair collection in WPF Chart`](https://www.syncfusion.com/kb/10449/how-to-bind-keyvaluepair-collection-in-wpf-sfchart)
+
+[`How to bind the series collection property using MVVM pattern`](https://www.syncfusion.com/kb/9406/how-to-bind-the-series-collection-property-using-mvvm-pattern)
+
+[`How to bind data table in the Chart`](https://www.syncfusion.com/kb/5515/how-to-bind-data-table-in-the-sfchart)
+
+[`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+
+[`How to bind the array property in Chart`](https://www.syncfusion.com/kb/4923/how-to-bind-the-array-property-in-sfchart)
+
+[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+
+[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-nan-in-sfchart)

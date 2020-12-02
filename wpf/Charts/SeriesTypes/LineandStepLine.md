@@ -104,3 +104,13 @@ SteplineChart.Series.Add(stepLine);
 {% endtabs %}
 
 ![StepLine Chart type in WPF](Series_images/stepLine.png)
+
+## See also
+
+[`How to remove the blended color effect in multiple line series of Chart`](https://www.syncfusion.com/kb/10463/how-to-remove-the-blended-color-effect-in-multiple-line-series-of-sfchart)
+
+[`Comparison between line series and fast line series`](https://www.syncfusion.com/kb/6609/comparison-between-line-series-and-fast-line-series)
+
+[`How to bind the array property in Chart`](https://www.syncfusion.com/kb/4923/how-to-bind-the-array-property-in-sfchart)
+
+[`How to draw dotted line using line series in Chart`](https://www.syncfusion.com/kb/2550/how-to-draw-dotted-line-using-line-series-in-sfchart)

@@ -330,3 +330,7 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Gap ratio between segments in WPF Chart](Series_images/funnelexplode_2.png)
+
+## See also
+
+[`How to add gaps between segments in a pyramid or funnel series`](https://www.syncfusion.com/kb/2708/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series)

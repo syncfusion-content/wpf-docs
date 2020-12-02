@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Trendlines| SfChart | Wpf | Syncfusion
-description: trendlines
+description: Explains the parts of trendlines, types of trendlines, it's behavior and customization options in WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines in WPF Chart (SfChart)
 
 Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 
@@ -784,4 +784,6 @@ chart.Series.Add(fastSeries);
 
 ![Customization of trendlines in WPF Chart](Trendlines_images/trendline_11.png)
 
+## See also
 
+[`Chart with average line`](https://www.syncfusion.com/kb/2558/chart-with-average-line)
