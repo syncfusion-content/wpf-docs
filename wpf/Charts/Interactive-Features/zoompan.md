@@ -701,3 +701,13 @@ The [`ResetZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 * [`Axis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ResetZoomEventArgs_Axis) - Gets an instance of the axis whose range is changed when panning. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ResetZoomEventArgs_Cancel) - Gets or Sets a value that indicates whether the panning should be canceled.
 * [`PreviousZoomRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ResetZoomEventArgs_PreviousZoomRange) - Gets the previous visible range of the axis.
+
+## See also
+
+[`How to improve performance while zooming by using scrollbar`](https://www.syncfusion.com/kb/5489/how-to-improve-performance-while-zooming-by-using-scrollbar)
+
+[`How to set default zoom/pan position for charts`](https://www.syncfusion.com/kb/2904/how-to-set-default-zoom-pan-position-for-charts)
+
+[`How to display the visible range of labels while zooming`](https://www.syncfusion.com/kb/2712/how-to-display-the-visible-range-of-labels-while-zooming )
+
+[`How to reset zooming `](https://www.syncfusion.com/kb/2562/how-to-reset-zooming)

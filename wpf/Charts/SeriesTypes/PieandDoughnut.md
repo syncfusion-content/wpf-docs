@@ -638,3 +638,7 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Exploding all the segments of accumlation series in WPF Chart](Series_images/explodeall.png)
+
+## See also
+
+[`How to create Pie Chart in C# WPF`](https://www.syncfusion.com/kb/10789/how-to-create-pie-chart-in-c-wpf)

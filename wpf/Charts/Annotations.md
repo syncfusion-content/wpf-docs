@@ -1073,3 +1073,15 @@ SfChart provides the following events in [`Annotation`](https://help.syncfusion.
 * [`MouseRightButtonUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the right mouse button is released while the mouse pointer is over the annotation.
 * [`MouseMove`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the mouse pointer moves while over the annotation.
 * [`MouseLeave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the mouse pointer leaves the bounds of the annotation.
+
+## See also
+
+[`How to display trackball label or tooltip over chart annotation`](https://www.syncfusion.com/kb/10791/how-to-display-trackball-label-or-tooltip-over-chart-annotation)
+
+[`How to add annotations by using MVVM binding`](https://www.syncfusion.com/kb/4867/how-to-add-annotations-by-using-mvvm-binding)
+
+[`How to change the cursor of the annotation`](https://www.syncfusion.com/kb/4848/how-to-change-the-cursor-of-the-annotation)
+
+[`How to bind the ViewModel property to content template of a TextAnnotation`](https://www.syncfusion.com/kb/2639/how-to-bind-the-viewmodel-property-to-content-template-of-a-textannotation)
+
+[`How to draw horizontal line in chart`]( https://www.syncfusion.com/kb/2850/how-to-draw-horizontal-line-in-chart)

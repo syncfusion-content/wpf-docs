@@ -781,3 +781,10 @@ The [`ChartPointInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 * [`X`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_X) - Gets the x-coordinate of the trackball label.
 * [`Y`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html#Syncfusion_UI_Xaml_Charts_ChartPointInfo_Y) - Gets the y-coordinate of the trackball label.
 
+## See also
+
+[`How to disable a trackball for a specific series`](https://www.syncfusion.com/kb/11291/how-to-disable-a-trackball-for-a-specific-series)
+
+[`How to customize the trackball appearance in WPF Chart`](https://www.syncfusion.com/kb/11020/how-to-customize-the-trackball-appearance-in-wpf-chart)
+
+[`How to apply label formatting to the trackball labels`](https://www.syncfusion.com/kb/5362/how-to-apply-label-formatting-to-the-trackball-labels)

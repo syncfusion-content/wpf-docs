@@ -637,3 +637,11 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.C
 * [`IsSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_IsSelected) - Gets a value that indicates whether the segment or series is being selected.
 * [`IsDataPointSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_IsDataPointSelection) - Gets a value that indicates whether the selection is segment selection or series selection.
 * [`SelectedSeriesCollection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSeriesCollection) - Gets the series collection that has been selected through rectangle selection or mouse interaction.
+
+## See also
+
+[`How to change the series selection when clicking the legend items in WPF Chart`](https://www.syncfusion.com/kb/10461/how-to-change-the-series-selection-when-clicking-the-legend-items-in-wpf-chart)
+
+[`How to deselect the chart segment by using code behind`](https://www.syncfusion.com/kb/5473/how-to-deselect-the-chart-segment-by-using-code-behind)
+
+[`How to achieve series drilldown behavior in Chart`](https://www.syncfusion.com/kb/2692/how-to-achieve-series-drilldown-behaviour-in-sfchart)
