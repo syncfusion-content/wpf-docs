@@ -45,9 +45,12 @@ To explore any individual showcase sample from `Syncfusion WPF Sample Browser`, 
 
 ![Exploring Syncfusion WPF Showcase Samples](Guidetorunthesamples_images/Exploring-syncfusion-wpf-Showcase-sample.PNG)
 
+N> To run the individual control demos, please refer the instruction from [Running Individual Control Demos](https://github.com/syncfusion/wpf-demos#running-individual-control-demos). 
+
 ## Online Samples
 
-Download or install online samples from [.Net Framework demos](https://www.microsoft.com/en-us/p/syncfusion-wpf-controls-examples/9n99kdhrff6g?activetab=pivot:overviewtab) and [.NetCore Framework demos](https://install.appcenter.ms/orgs/syncfusion-demos/apps/wpf-demos/distribution_groups/release) links.
+* Download and install `.NetCore` demos from [App Center](https://install.appcenter.ms/orgs/syncfusion-demos/apps/wpf-demos/distribution_groups/release).
+* Download and install `.Net Framework` demos from [Microsoft Store](https://www.microsoft.com/en-us/p/syncfusion-wpf-controls-examples/9n99kdhrff6g?activetab=pivot:overviewtab).
 
 ## Download demos from online (Clone from github repository)
 
