@@ -197,7 +197,7 @@ boxAndWhisker.ShowOutlier = false;
 
 {% endtabs %}
 
-![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
+![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/ShowOutlier.png)
 
 ## Waterfall Series
 
