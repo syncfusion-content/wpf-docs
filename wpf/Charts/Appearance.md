@@ -684,4 +684,15 @@ chart.Series.Add(series);
 
 ![Customizing tooltip in WPF Chart](Styling-and-Customization_images/palette_8.png)
 
+## See also
+
+[`How to apply gradient colors for each series in WPF Chart`](https://www.syncfusion.com/kb/11849/how-to-apply-gradient-colors-for-each-series-in-wpf-chart)
+
+[`How to change colors of specific data points in the chart`](https://www.syncfusion.com/kb/10928/how-to-change-colors-of-specific-data-points-in-the-chart)
+
+[`How to set color for the series ColorModel property`](https://www.syncfusion.com/kb/5496/how-to-set-color-for-the-series-colormodel-property)
+
+[`How to add custom color model to series`](https://www.syncfusion.com/kb/5480/how-to-add-custom-color-model-to-series)
+
+[`How to define the fill color for each datapoint from ItemsSource`](https://www.syncfusion.com/kb/5124/how-to-define-the-fill-color-for-each-datapoint-from-itemssource)
 

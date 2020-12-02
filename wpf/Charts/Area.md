@@ -378,7 +378,19 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 [`ValueToPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ValueToPoint_Syncfusion_UI_Xaml_Charts_ChartAxis_System_Double_)
 
-[`Save`](https://help.syncfusion.com/wpf/sfchart/exporting#)
+[`How to add space between multiple columns in a Chart segment`](https://www.syncfusion.com/kb/5500/how-to-add-space-between-multiple-columns-in-a-chart-segment)
 
-[`Print`](https://help.syncfusion.com/wpf/sfchart/printing#)
+[`How to allot space between the segments`](https://www.syncfusion.com/kb/5485/how-to-allot-space-between-the-segments)
+
+[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-sfchart)
+
+[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
+
+[`How to set the Z Index to the series`](https://www.syncfusion.com/kb/2681/how-to-set-the-z-index-to-the-series)
+
+[`How to get coordinates of x and y in MouseDown event`](https://www.syncfusion.com/kb/2566/how-to-get-coordinates-of-x-and-y-in-mousedown-event)
+
+[`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-itemwidthpercent-before-drawing-chart)
+
+[`How to view corner segments without cutting in edge of WPF Chart`](https://www.syncfusion.com/kb/10728/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
 

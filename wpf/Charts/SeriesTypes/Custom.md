@@ -120,3 +120,9 @@ chart.Series.Add(series);
 The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries have been customized using the [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property. Refer to this [`sample`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart) for complete series CustomTemplate.
 
 ![Customizing series in Syncfusion WPF SfChart](Series_images/CustomTemplate.png)
+
+## See also
+
+[`How to customize the default shape of any series with the required shapes`](https://www.syncfusion.com/kb/3853/how-to-customize-the-default-shape-of-any-series-with-the-required-shapes)
+
+[`How to create the Tornado Chart in WPF Charts`](https://www.syncfusion.com/kb/11657/how-to-create-the-tornado-chart-in-wpf-charts)
