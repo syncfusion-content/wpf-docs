@@ -275,7 +275,7 @@ This will populate the Step ProgressBar control.
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/MarkerTemplateSelector).
 
-## SecondaryContentTemplate for Step ProgressBar
+## Secondary content in Step Progressbar
 You can gets or sets the data template used to display the secondary content of `StepViewItem` by using the `SecondaryContentTemplate` property. The following example shows how to customize the step view item's secondary content with DataTemplate.
 
 {% highlight xaml %}
@@ -438,7 +438,7 @@ Using the SecondaryContentTemplateSelector, you can use the different templates 
 This will generate the following Step ProgressBar control.
 ![Item Template Selector image](Customizing-Data-Templates_images/SecondaryContentTemplateSelector.png)
 
-## SecondaryContentTemplate for Step View Item
+## SecondaryContentTemplate in Step View Item
 
 You can gets or sets the data template used to display the secondary content of `StepViewItem` by using the `SecondaryContentTemplate` property. The following example shows how to customize the step view item's secondary content with DataTemplate.
 

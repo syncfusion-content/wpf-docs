@@ -137,36 +137,16 @@ grid.Children.Add(stepProgressBar);
 
 You can get the `StepViewItem` values when the marker of step view item is clicked. The following example shows this.
 
-Define the data templates in the Window’s resources.
-
- ~~~xaml
-   
-<Window.Resources>
-    <DataTemplate x:Key="FirstStepSecondaryContentTemplate">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 1"/>
-    </DataTemplate>
-    <DataTemplate x:Key="SecondStepSecondaryContentTemplate">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 2"/>
-    </DataTemplate>
-    <DataTemplate x:Key="ThirdStepSecondaryContentTemplate">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 3"/>
-    </DataTemplate>
-    <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 4"/>
-    </DataTemplate>
-</Window.Resources>
-   ~~~
 {% tabs %}
 {% highlight xaml %}
 
 <Syncfusion:SfStepProgressBar
     SelectedIndex="2"
-    MarkerClicked="SfStepProgressBar_MarkerClicked"
-    SelectedItemStatus="Indeterminate">
-    <Syncfusion:StepViewItem Content="Ordered" SecondaryContentTemplate="{StaticResource FirstStepSecondaryContentTemplate}" />
-    <Syncfusion:StepViewItem Content="Packed" SecondaryContentTemplate="{StaticResource SecondStepSecondaryContentTemplate}" />
-    <Syncfusion:StepViewItem Content="Shipped" SecondaryContentTemplate="{StaticResource ThirdStepSecondaryContentTemplate}" />
-    <Syncfusion:StepViewItem Content="Delivered" SecondaryContentTemplate="{StaticResource FourthStepSecondaryContentTemplate}" />
+    MarkerClicked="SfStepProgressBar_MarkerClicked">
+    <Syncfusion:StepViewItem Content="Ordered" />
+    <Syncfusion:StepViewItem Content="Packed" />
+    <Syncfusion:StepViewItem Content="Shipped" />
+    <Syncfusion:StepViewItem Content="Delivered" />
 </Syncfusion:SfStepProgressBar>
 {% endhighlight %}
 

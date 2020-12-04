@@ -105,30 +105,38 @@ Define the data templates in the Window’s resources.
 
    ~~~xaml
 
-	 <DataTemplate x:Key="FirstStepContentTemplate">
-            <TextBlock Width="100" Text="The SfStepProgressBar control is used to show the progress of a multiple-step process." TextWrapping="Wrap"/>
-        </DataTemplate>
-        <DataTemplate x:Key="SecondStepContentTemplate">
-            <TextBlock Width="100" Text="Visualize the step progress markers with different shapes." TextWrapping="Wrap"/>
-        </DataTemplate>
-        <DataTemplate x:Key="SecondStepSecondaryContentTemplate">
-            <TextBlock Width="100" Text="Step 2." TextWrapping="Wrap"/>
-        </DataTemplate>
-        <DataTemplate x:Key="ThirdStepContentTemplate">
-            <TextBlock Width="100" Text="Supports active, inactive, and indeterminate statuses to show progress." TextWrapping="Wrap"/>
-        </DataTemplate>
-        <DataTemplate x:Key="FourthStepContentTemplate">
-            <TextBlock Width="100" Text="Customize the progress bar styles, markers, and contents using the templates." TextWrapping="Wrap"/>
-        </DataTemplate>
-        <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
-            <TextBlock Width="100" Text="Step 4." TextWrapping="Wrap"/>
-        </DataTemplate>
+    <DataTemplate x:Key="FirstStepContentTemplate">
+        <TextBlock Width="100" Text="The SfStepProgressBar control is used to show the progress of a multiple-step process." TextWrapping="Wrap">
+        <LineBreak/>
+        </TextBlock>
+    </DataTemplate>
+    <DataTemplate x:Key="SecondStepContentTemplate">
+        <TextBlock Width="100" Text="Visualize the step progress markers with different shapes." TextWrapping="Wrap">
+        <LineBreak/>
+        </TextBlock>
+    </DataTemplate>
+    <DataTemplate x:Key="SecondStepSecondaryContentTemplate">
+        <TextBlock Width="100" Text="Step 2" TextWrapping="Wrap"/>
+    </DataTemplate>
+    <DataTemplate x:Key="ThirdStepContentTemplate">
+        <TextBlock Width="100" Text="Supports active, inactive, and indeterminate statuses to show progress." TextWrapping="Wrap">
+        <LineBreak/>
+        </TextBlock>
+    </DataTemplate>
+    <DataTemplate x:Key="FourthStepContentTemplate">
+        <TextBlock Width="100" Text="Customize the progress bar styles, markers, and contents using the templates." TextWrapping="Wrap">
+        <LineBreak/>
+        </TextBlock>
+    </DataTemplate>
+    <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
+        <TextBlock Width="100" Text="Step 4" TextWrapping="Wrap"/>
+    </DataTemplate>
 
    ~~~
 
 {% tabs %}
 {% highlight XAML %}      
-  <Grid Name="grid">
+    <Grid Name="grid">
         <syncfusion:SfStepProgressBar SelectedIndex="2" Margin="20" Orientation="Vertical" ItemsStretch="Auto">
             <syncfusion:StepViewItem Content="Ordered" SecondaryContentTemplate="{StaticResource FirstStepContentTemplate}"/>
             <syncfusion:StepViewItem ContentTemplate="{StaticResource SecondStepContentTemplate}" SecondaryContentTemplate="{StaticResource SecondStepSecondaryContentTemplate}"/>
@@ -138,32 +146,32 @@ Define the data templates in the Window’s resources.
     </Grid>
 {% endhighlight %}
 {% highlight C# %}
- SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-            stepProgressBar.Orientation = Orientation.Vertical;
-            StepViewItem orderedStepViewItem = new StepViewItem();
-            StepViewItem shippedStepViewItem = new StepViewItem();
-            StepViewItem packedStepViewItem = new StepViewItem();
-            StepViewItem deliveredStepViewItem = new StepViewItem();
+SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+stepProgressBar.Orientation = Orientation.Vertical;
+StepViewItem orderedStepViewItem = new StepViewItem();
+StepViewItem shippedStepViewItem = new StepViewItem();
+StepViewItem packedStepViewItem = new StepViewItem();
+StepViewItem deliveredStepViewItem = new StepViewItem();
 
-            orderedStepViewItem.Content = "Ordered";
-            shippedStepViewItem.ContentTemplate = FindResource("SecondStepContentTemplate") as DataTemplate;
-            packedStepViewItem.Content = "Packed";
-            deliveredStepViewItem.ContentTemplate = FindResource("FourthStepContentTemplate") as DataTemplate;
+orderedStepViewItem.Content = "Ordered";
+shippedStepViewItem.ContentTemplate = FindResource("SecondStepContentTemplate") as DataTemplate;
+packedStepViewItem.Content = "Packed";
+deliveredStepViewItem.ContentTemplate = FindResource("FourthStepContentTemplate") as DataTemplate;
 
-            orderedStepViewItem.SecondaryContentTemplate = FindResource("FirstStepContentTemplate") as DataTemplate;
-            shippedStepViewItem.SecondaryContentTemplate = FindResource("SecondStepSecondaryContentTemplate") as DataTemplate;
-            packedStepViewItem.SecondaryContentTemplate = FindResource("ThirdStepContentTemplate") as DataTemplate;
-            deliveredStepViewItem.SecondaryContentTemplate = FindResource("FourthStepSecondaryContentTemplate") as DataTemplate;
+orderedStepViewItem.SecondaryContentTemplate = FindResource("FirstStepContentTemplate") as DataTemplate;
+shippedStepViewItem.SecondaryContentTemplate = FindResource("SecondStepSecondaryContentTemplate") as DataTemplate;
+packedStepViewItem.SecondaryContentTemplate = FindResource("ThirdStepContentTemplate") as DataTemplate;
+deliveredStepViewItem.SecondaryContentTemplate = FindResource("FourthStepSecondaryContentTemplate") as DataTemplate;
 
-            stepProgressBar.Items.Add(orderedStepViewItem);
-            stepProgressBar.Items.Add(shippedStepViewItem);
-            stepProgressBar.Items.Add(packedStepViewItem);
-            stepProgressBar.Items.Add(deliveredStepViewItem);
+stepProgressBar.Items.Add(orderedStepViewItem);
+stepProgressBar.Items.Add(shippedStepViewItem);
+stepProgressBar.Items.Add(packedStepViewItem);
+stepProgressBar.Items.Add(deliveredStepViewItem);
 
-            stepProgressBar.SelectedIndex = 2;
-            stepProgressBar.ItemsStretch = ItemsStretch.Fill;
+stepProgressBar.SelectedIndex = 2;
+stepProgressBar.ItemsStretch = ItemsStretch.Fill;
 
-            grid.Children.Add(stepProgressBar);           
+grid.Children.Add(stepProgressBar);           
 {% endhighlight %}
 {% endtabs %}
 ![Items auto image](Layout_images/Itemsauto.png)
@@ -195,7 +203,7 @@ You can customize the value that indicates the minimum space between the step vi
 Implementing the above code will create the following Step ProgressBar control.
 ![MinimumItemSpacing image](Customizing-Data-Templates_images/MinimumItemSpacing.png)
 
-## Flow Direction RTL
+## RTL
 
 you can customize the flow direction of `SfStepProgressBar` by using `FlowDirection` property.
 
