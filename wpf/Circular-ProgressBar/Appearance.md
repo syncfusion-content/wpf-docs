@@ -196,3 +196,98 @@ grid.Children.Add(circular);
 {% endtabs %}
 ![Gradient image](Appearance_images/Gradient.png)
 
+## Corner radius
+The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property is used to frame rounded edges in the circular progressbar as demonstrated in the following code sample.
+
+{% tabs %}
+{% highlight XAML %}
+<Grid Name="grid">
+    <Syncfusion:SfCircularProgressBar
+    Width="150"
+    Height="150"
+    Margin="5"
+    EndAngle="410"
+    IndicatorCornerRadius="5"
+    Progress="50"
+    ShowProgressValue="False"
+    StartAngle="130" />
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+SfCircularProgressBar circular = new SfCircularProgressBar();
+circular.Width = 150;
+circular.Height = 150;
+circular.IndicatorCornerRadius = 5;
+circular.Progress = 50;
+circular.ShowProgressValue = false;
+circular.StartAngle = 130;
+circular.EndAngle = 410;
+grid.Children.Add(circular);
+{% endhighlight %}
+{% endtabs %}
+
+![Corner radius image](Appearance_images/CornerRadius.png)
+
+## AnimationDuration
+You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is 3000 milli seconds.
+{% tabs %}
+{% highlight XAML %}
+<Grid Name="grid">
+    <Syncfusion:SfCircularProgressBar
+    Width="150"
+    Height="150"
+    AnimationDuration="00:00:01"
+    IsIndeterminate="True"
+    Progress="50"
+    ShowProgressValue="False" />
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+SfCircularProgressBar circular = new SfCircularProgressBar();
+circular.Width = 150;
+circular.Height = 150;
+circular.AnimationDuration = new TimeSpan(0, 0, 1);
+circular.IsIndeterminate = true;
+circular.Progress = 50;
+circular.ShowProgressValue = false;
+grid.Children.Add(circular);
+{% endhighlight %}
+{% endtabs %}
+![AnimationDuration image](Appearance_images/CircularAnimation.gif)
+
+## AnimationEasing
+You can customize the easing function to apply for linear and circular progress bar animation and it applies when the `IsIndeterminate` is true. T
+{% tabs %}
+{% highlight XAML %}
+<Grid Name="grid">
+    <Syncfusion:SfCircularProgressBar
+        Width="150"
+        Height="150"
+        IsIndeterminate="True"
+        Progress="50"
+        ShowProgressValue="False">
+        <Syncfusion:SfCircularProgressBar.AnimationEasing>
+            <BounceEase
+                Bounces="20"
+                Bounciness="5"
+                EasingMode="EaseOut" />
+        </Syncfusion:SfCircularProgressBar.AnimationEasing>
+    </Syncfusion:SfCircularProgressBar>
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+SfCircularProgressBar circular = new SfCircularProgressBar();
+circular.Width = 150;
+circular.Height = 150;
+circular.IsIndeterminate = true;
+circular.Progress = 50;
+circular.ShowProgressValue = false;
+BounceEase bounceEase = new BounceEase();
+bounceEase.Bounces = 20;
+bounceEase.Bounciness = 5;
+bounceEase.EasingMode = EasingMode.EaseOut;
+circular.AnimationEasing = bounceEase;
+grid.Children.Add(circular);
+{% endhighlight %}
+{% endtabs %}
+![AnimationEasing image](Appearance_images/CircularEasing.gif)
