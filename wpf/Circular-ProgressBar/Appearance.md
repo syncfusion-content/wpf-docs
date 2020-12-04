@@ -199,7 +199,7 @@ grid.Children.Add(circular);
 ## Corner radius
 The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property is used to frame rounded edges in the circular progressbar as demonstrated in the following code sample.
 
-N> Proper IndicatorConerRadius value can be set using the formula IndicatorOuterRadius * 10 = IndicatorCornerRadius.
+N> Proper IndicatorCornerRadius value can be set using the formula IndicatorOuterRadius * 10 = IndicatorCornerRadius.
 
 {% tabs %}
 {% highlight XAML %}
