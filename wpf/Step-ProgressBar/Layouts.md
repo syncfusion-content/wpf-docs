@@ -99,7 +99,7 @@ grid.Children.Add(stepProgressBar);
 ![Items stretch image](Layout_images/ItemsStretch.png)
 
 ### Auto
-The step view item size is determined by the size of the content and secondary content. It is applicable only when the `Orientation` is `Vertical`. If the size of content and secondary content is less than the `StepViewItem.MarkerHeight`, then the `SfStepProgressBar.MinimumItemSpacing` is used.
+The step view item size is determined by the size of the content and secondary content. It is applicable only when the `Orientation` is `Vertical.` If the size of the content and secondary content is less than the `StepViewItem.MarkerHeight,` then the `SfStepProgressBar.MinimumItemSpacing` is used.
 
 Define the data templates in the Window’s resources.
 
@@ -177,7 +177,7 @@ grid.Children.Add(stepProgressBar);
 ![Items auto image](Layout_images/Itemsauto.png)
 
 ## MinimumItemSpacing
-You can customize the value that indicates the minimum space between the step view items when `ItemStretch` is `Fill`. The following example shows how to customize the step view item's minimum space.
+You can customize the value that indicates the minimum space between the step view items when the `ItemStretch` is `Fill.` The following example shows how to customize the step view item's minimum space.
 
 {% highlight xaml %}
 
@@ -205,7 +205,7 @@ Implementing the above code will create the following Step ProgressBar control.
 
 ## RTL
 
-you can customize the flow direction of `SfStepProgressBar` by using `FlowDirection` property.
+You can customize the flow direction of the `SfStepProgressBar` by using the `FlowDirection` property.
 
 Define the data templates in the Window’s resources.
 

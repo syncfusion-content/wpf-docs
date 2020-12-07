@@ -197,9 +197,9 @@ grid.Children.Add(circular);
 ![Gradient image](Appearance_images/Gradient.png)
 
 ## Corner radius
-The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property is used to frame rounded edges in the circular progressbar as demonstrated in the following code sample.
+The [IndicatorCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_IndicatorCornerRadiusProperty) property is used to frame the rounded edges in the circular progress bar as shown in the following code sample.
 
-N> Proper IndicatorCornerRadius value can be set using the formula IndicatorOuterRadius * 10 = IndicatorCornerRadius.
+N> The proper IndicatorCornerRadius value can be set using the formula IndicatorOuterRadius * 10 = IndicatorCornerRadius.
 
 {% tabs %}
 {% highlight XAML %}
@@ -231,7 +231,7 @@ grid.Children.Add(circular);
 ![Corner radius image](Appearance_images/CornerRadius.png)
 
 ## AnimationDuration
-You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is `3000ms`.
+You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is `3000ms.`
 {% tabs %}
 {% highlight XAML %}
 <Grid Name="grid">
@@ -258,7 +258,7 @@ grid.Children.Add(circular);
 ![AnimationDuration image](Appearance_images/CircularAnimation.gif)
 
 ## AnimationEasing
-You can customize the easing function to apply for linear and circular progress bar animation and it applies when the `IsIndeterminate` is true.
+You can customize the easing function to apply for the linear and circular progress bar animation and it applies when the `IsIndeterminate` is true.
 {% tabs %}
 {% highlight XAML %}
 <Grid Name="grid">

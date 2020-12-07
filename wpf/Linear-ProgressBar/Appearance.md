@@ -134,7 +134,7 @@ grid.Children.Add(linear);
 ![RangeColorsimage](Appearance_images/Gradient.png)
 
 ## AnimationDuration
-You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is `3000ms`.
+You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is `3000ms.`
 {% tabs %}
 {% highlight XAML %}
 <Grid Name="grid">
@@ -159,7 +159,7 @@ grid.Children.Add(linear);
 ![AnimationDuration image](Appearance_images/LinearAnimation.gif)
 
 ## AnimationEasing
-You can customize the easing function to apply for linear and circular progress bar animation and it applies when the `IsIndeterminate` is true.
+You can customize the easing function to apply for the linear and circular progress bar animation and it applies when the `IsIndeterminate` is true.
 {% tabs %}
 {% highlight XAML %}
 <Grid Name="grid">
