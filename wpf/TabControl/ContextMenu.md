@@ -131,7 +131,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ### Check or uncheck the custom context menu items
 
-You can check or uncheck the custom menu items by using `CustomMenuItem.IsChecked` property. You can disable the cheakable functionalities of the custom context menu item by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`. 
+You can check or uncheck the custom menu items by using `CustomMenuItem.IsChecked` property. You can disable the checkable functionalities of the custom context menu item by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -478,7 +478,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ### Check or uncheck the custom tab list menu items
 
-You can check or uncheck the custom tab list menu items by using `CustomMenuItem.IsChecked` property. You can disable the cheakable functionalities of the tab list menu items by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`.
+You can check or uncheck the custom tab list menu items by using `CustomMenuItem.IsChecked` property. You can disable the checkable functionalities of the tab list menu items by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`.
 
 {% tabs %}
 {% highlight XAML %}

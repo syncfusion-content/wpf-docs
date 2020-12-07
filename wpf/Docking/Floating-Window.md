@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Floating Window
+# Floating Window in WPF DockingManager
 
 Floating window is one of the state in the DockingManager. To make children of the DockingManager as Float, set its [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) values as `Float`.
 
