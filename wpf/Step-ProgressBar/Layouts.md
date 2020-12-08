@@ -116,7 +116,7 @@ Define the data templates in the Window’s resources.
         </TextBlock>
     </DataTemplate>
     <DataTemplate x:Key="SecondStepSecondaryContentTemplate">
-        <TextBlock Width="100" Text="Step 2" TextWrapping="Wrap"/>
+        <TextBlock Width="100" Text="Step 2" Margin="120,0,0,0" TextWrapping="Wrap"/>
     </DataTemplate>
     <DataTemplate x:Key="ThirdStepContentTemplate">
         <TextBlock Width="100" Text="Supports active, inactive, and indeterminate statuses to show progress." TextWrapping="Wrap">
@@ -129,7 +129,7 @@ Define the data templates in the Window’s resources.
         </TextBlock>
     </DataTemplate>
     <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
-        <TextBlock Width="100" Text="Step 4" TextWrapping="Wrap"/>
+        <TextBlock Width="100" Text="Step 4" Margin="120,0,0,0" TextWrapping="Wrap"/>
     </DataTemplate>
 
    ~~~
