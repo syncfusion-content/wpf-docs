@@ -30,6 +30,18 @@ Sets the visual style for the NotifyIcon control. The options provided are as fo
 
 {% tabs %}
 
+{% highlight XAML %}
+
+<Button x:Name="button" Height="30" Width="100" Click="Button_Click" Content="Notify show">
+</Button>
+
+<syncfusion:NotifyIcon Name="notifyIcon" Header="NotifyIcon" BalloonTipTitle="Default NotifyIcon" syncfusion:SkinStorage.VisualStyle="Office2007Blue"
+                               BalloonTipText="Custom NotifyIcon" BalloonTipIcon="Info"
+                               ShowBalloonTipTime="1000" HideBalloonTipTime="1000" >
+</syncfusion:NotifyIcon>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 //For Office2007Blue
@@ -85,8 +97,11 @@ You can customize the background and foreground for the BalloonTipHeader by usin
 
 {% highlight c# %}
 
-notifyIcon.HeaderBackground = Brushes.Blue;
-notifyIcon.HeaderForeground = Brushes.White;
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    notifyIcon.HeaderBackground = Brushes.Blue;
+    notifyIcon.HeaderForeground = Brushes.White;
+}
 
 {% endhighlight %}
 {% endtabs %}
