@@ -3897,35 +3897,13 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% tabs %}
 
-{% highlight xaml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-<syncfusion:NumericalAxis x:Name="primaryAxis" ActualRangeChanged="primaryAxis_ActualRangeChanged" />
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
 {% highlight c# %}
 
 NumericalAxis primaryAxis = new NumericalAxis();
-primaryAxis.ActualRangeChanged += primaryAxis_ActualRangeChanged;
-chart.PrimaryAxis = primaryAxis;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight c# %}
-
-private void primaryAxis_ActualRangeChanged(object sender, ActualRangeChangedEventArgs e)
-{
-   //Gets the start value of the selected range.
-   var startRange = primaryAxis.VisibleRange.Start
-   // Gets the End value of the selected range.
-   var endRange = primaryAxis.VisibleRange.End;
-}
+//Gets the start value of the selected range.
+var startRange = primaryAxis.VisibleRange.Start
+// Gets the End value of the selected range.
+var endRange = primaryAxis.VisibleRange.End;
 
 {% endhighlight %}
 
