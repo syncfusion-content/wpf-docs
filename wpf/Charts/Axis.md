@@ -22,7 +22,6 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 The following are the API’s in ChartAxis
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
-* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.
 * [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
 
 The following topics explains in detail about the axis and its parts
@@ -3884,6 +3883,53 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ![Auto interval on zooming support in WPF](Axis_images/Axis_img71.jpeg)
 
+## VisibleRange
+
+[`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.
+ The following are the options for [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange). 
+ 
+  * [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start) - Gets the start value of the selected range.
+  * [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End) - Gets the end value of the selected range.
+  * [`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta) - Gets the Delta value of the selected range.
+  * [`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty) - Gets the Empty value of the selected range.
+  * [`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty) - Gets a value indicating whether IsEmpty.
+  * [`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median) - Gets the Median value of the selected range.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+<syncfusion:NumericalAxis x:Name="primaryAxis" ActualRangeChanged="primaryAxis_ActualRangeChanged" />
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+NumericalAxis primaryAxis = new NumericalAxis();
+primaryAxis.ActualRangeChanged += primaryAxis_ActualRangeChanged;
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+private void primaryAxis_ActualRangeChanged(object sender, ActualRangeChangedEventArgs e)
+{
+   //Gets the start value of the selected range.
+   var startRange = primaryAxis.VisibleRange.Start
+   // Gets the End value of the selected range.
+   var endRange = primaryAxis.VisibleRange.End;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Multiple Axes
 
@@ -5482,31 +5528,3 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 * [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets the position of label.
 * [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PrefixLabelTemplate) - Gets the prefix template of label.
 * [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PostfixLabelTemplate) - Gets the postfix template of label.
-
-## See also
-
-[`How to get axis range in chart`](https://www.syncfusion.com/kb/10818/how-to-get-axis-range-in-chart)
-
-[`How to wrap the multi-level axis label's text in WPF Chart`](https://www.syncfusion.com/kb/10167/how-to-wrap-the-multi-level-axis-labels-text-in-wpf-chart)
-
-[`How to use the DateTimeAxis as SecondaryAxis in WPF Chart`](https://www.syncfusion.com/kb/9737/how-to-use-the-datetimeaxis-as-secondaryaxis-in-wpf-sfchart)
-
-[`How to apply the custom labels in WPF Logarithmic Axis`](https://www.syncfusion.com/kb/9504/how-to-apply-the-custom-labels-in-wpf-logarithmicaxis)
-
-[`How to customize label formats of date-time axis during the interval transitions`](https://www.syncfusion.com/kb/6940/how-to-customize-label-formats-of-date-time-axis-during-the-interval-transitions)
-
-[`How to rotate axis label in the Chart`](https://www.syncfusion.com/kb/5239/how-to-rotate-axis-label-in-the-sfchart)
-
-[`How to hide axis in chart`](https://www.syncfusion.com/kb/5236/how-to-hide-axis-in-chart)
-
-[`How to position the primary and secondary axes as the center of chart`](https://www.syncfusion.com/kb/3833/how-to-position-the-primary-and-secondary-axes-as-the-center-of-chart)
-
-[`How to display the axis labels in a particular format`](https://www.syncfusion.com/kb/3318/how-to-display-the-axis-labels-in-a-particular-format)
-
-[`How to display the axis labels for all datapoints`](https://www.syncfusion.com/kb/2989/how-to-display-the-axis-labels-for-all-datapoints)
-
-[`How to define ticker labels of custom axis`](https://www.syncfusion.com/kb/2588/how-to-define-ticker-labels-of-custom-axis)
-
-[`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
-
-[`How to set the custom labels with auto range for axis`](https://www.syncfusion.com/kb/5907/how-to-set-the-custom-labels-with-auto-range-for-axis)
