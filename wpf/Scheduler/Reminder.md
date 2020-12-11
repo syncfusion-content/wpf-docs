@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Reminder in scheduler | WPF| Syncfusion
-description: WPF scheduler allows you to display reminder alert with collection of reminders of an appointment.
+description: WPF scheduler allows you to display reminder alert with collection of reminders for a particular appointments.
 platform: WPF
 control: SfScheduler
 documentation: ug
@@ -53,7 +53,7 @@ scheduleAppointments.Add(new ScheduleAppointment
 {% endtabs %}
 
 ## Create a custom binding for reminder   
-Reminders suppors to map your custom object with `ScheduleAppointment.Reminders`.
+Reminders supports to map your custom object with `ScheduleAppointment.Reminders`.
 
 {% tabs %}
 {% highlight c#%}
