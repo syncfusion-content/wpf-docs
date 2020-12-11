@@ -684,3 +684,36 @@ The following chart is created as a result of the previous codes.
 
 You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
 
+## See also
+
+[`How to create chart in VB .NET WPF`]( https://www.syncfusion.com/kb/10796/how-to-create-chart-in-vb-net-wpf)
+
+[`How to create a chart control in WPF application using XAML`](https://www.syncfusion.com/kb/10786/how-to-create-a-chart-control-in-wpf-application-using-xaml)
+
+[`How to create chart in C# WPF`](https://www.syncfusion.com/kb/10783/how-to-create-chart-in-c-wpf)
+
+[`How to create Chart in F# WPF`](https://www.syncfusion.com/kb/11663/how-to-create-chart-in-f-wpf)
+
+[`How to add Context Menu for WPF Chart`](https://www.syncfusion.com/kb/10726/how-to-add-contextmenu-for-wpf-chart)
+
+[`How to add WPF SfChart inside the SfDataGrid`](https://www.syncfusion.com/kb/10386/how-to-add-wpf-sfchart-inside-the-sfdatagrid)
+
+[`How to add footer content to WPF Chart`](https://www.syncfusion.com/kb/10201/how-to-add-footer-content-to-wpf-sfchart)
+
+[`How to access data from Meta Trader to chart using TradePlatform.Net in WPF`](https://www.syncfusion.com/kb/7932/how-to-access-data-from-metatrader-to-sfchart-using-tradeplatform-net-in-wpf)
+
+[`How to synchronize the selection between the chart and data grid`](https://www.syncfusion.com/kb/3579/how-to-synchronize-the-selection-between-the-chart-and-data-grid)
+
+[`How to achieve series drilldown behavior in Chart`](https://www.syncfusion.com/kb/2692/how-to-achieve-series-drilldown-behaviour-in-sfchart)
+
+[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+
+[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-sfchart)
+
+[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
+
+[`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+
+[`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
+
+

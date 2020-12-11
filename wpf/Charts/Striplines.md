@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Striplines| SfChart | Wpf | Syncfusion
-description: striplines
+description: Explains the parts of striplines, specific region or range, it's behavior, and customization options in WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Striplines
+# Striplines in WPF Chart (SfChart)
 
 SfChart allows you to add Striplines to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 
@@ -759,4 +759,6 @@ chart.Watermark.Content = textBlock;
 
 ![Transparency of striplines in WPF Chart](Striplines_images/stripline_10.png)
 
+## See also
 
+[`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)

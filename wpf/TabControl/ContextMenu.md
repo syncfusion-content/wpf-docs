@@ -93,7 +93,7 @@ private void TabControlExt_OnCloseOtherTabs(object sender, CloseTabEventArgs e) 
 {% endhighlight %}
 {% endtabs %}
 
-### Adding custom context menu item for the tab items
+## Custom context menu item for the tab items
 
 You can add the custom context menu item for the tab item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ContextMenuItems) property. You can perform any operation by handling the `CustomMenuItem.Click` event. You can enable it by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsCustomTabItemContextMenuEnabled) property to `true`. The default value of `TabControlExt.IsCustomTabItemContextMenuEnabled` property is `false`.
 
@@ -129,7 +129,116 @@ tabItemExt1.ContextMenuItems.Add(customMenuItem);
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
-### Hide default context menu items
+### Check or uncheck the custom context menu items
+
+You can check or uncheck the custom menu items by using `CustomMenuItem.IsChecked` property. You can disable the checkable functionalities of the custom context menu item by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsCustomTabItemContextMenuEnabled="True"
+                          Name="tabControlExt" >
+    <syncfusion:TabItemExt Header="tabItem1">
+        
+        <!--Adding custom context menu items-->
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Edit"
+                                       IsChecked="True"
+                                       IsCheckable="True" />
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Enable custom tabitem context menu
+tabControlExt.IsCustomTabItemContextMenuEnabled = true;
+
+// Adding custom context menu for the tabitem
+CustomMenuItem customMenuItem = new CustomMenuItem();
+customMenuItem.Header = "Edit";
+customMenuItem.IsCheckable = true;
+customMenuItem.IsChecked = true;
+tabItemExt1.ContextMenuItems.Add(customMenuItem);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Checked custom context menu for tabitem in TabControl](Contextmenu_images/checkedcustomcontextmenu.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
+
+### Adding sub menu items for custom context menu item
+
+You can add sub menu items for custom context menu item with any level by adding that sub `CustomMenuItem` to the parent `CustomMenuItem`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsCustomTabItemContextMenuEnabled="True"
+                          Name="tabControlExt" >
+    <syncfusion:TabItemExt Name="tabItem1" Header="tabItem1">
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Edit">
+
+                <!--Adding sub custom context menu items-->
+                <syncfusion:CustomMenuItem Header="SubItem0"/>
+                <syncfusion:CustomMenuItem Header="SubItem1"/>
+                <syncfusion:CustomMenuItem Header="SubItem2">
+                    <syncfusion:CustomMenuItem Header="Level 2"/>
+                </syncfusion:CustomMenuItem>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+    <syncfusion:TabItemExt Name="tabItem2" Header="tabItem2">
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Edit">
+
+                <!--Adding sub custom context menu items-->
+                <syncfusion:CustomMenuItem Header="SubItem0"/>
+                <syncfusion:CustomMenuItem Header="SubItem1"/>
+                <syncfusion:CustomMenuItem Header="SubItem2">
+                    <syncfusion:CustomMenuItem Header="Level 2"/>
+                </syncfusion:CustomMenuItem>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Enable custom tabitem context menu
+tabControlExt.IsCustomTabItemContextMenuEnabled = true;
+
+CustomMenuItem editMenuItem = new CustomMenuItem() { Header = "Edit" };
+
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubItem1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubItem2" };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubItem3" };
+
+//Adding sub menu items for 'SubItem3' custom menu item
+CustomMenuItem level2_customMenuItem = new CustomMenuItem() { Header = "Level 2" };
+customMenuItem3.Items.Add(level2_customMenuItem);
+
+//Adding sub menu items
+editMenuItem.Items.Add(customMenuItem1);
+editMenuItem.Items.Add(customMenuItem2);
+editMenuItem.Items.Add(customMenuItem3);
+
+tabItem1.ContextMenuItems.Add(editMenuItem);
+tabItem2.ContextMenuItems.Add(editMenuItem);
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom context menu with sub items for tabitem in TabControl](Contextmenu_images/subcustomcontextmenu.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
+
+## Hide default context menu items
 
 If you want to show only custom context menu items in the default context menu, then you can hide the default context menu item using [TabControlExt.DefaultContextMenuItemVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_DefaultContextMenuItemVisibility) property value as `false`. The default value of `TabControlExt.DefaultContextMenuItemVisibility` property is `true`.
 
@@ -170,7 +279,7 @@ tabItemExt1.ContextMenuItems.Add(customMenuItem3);
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
-### Custom template for default tab item context menu
+## Custom template for default tab item context menu
 
 You can customize the default tab item context menu appearance for the each tab items by using the [TabItemExt.TabItemContextMenuItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_TabItemContextMenuItemTemplate) property.
 
@@ -233,7 +342,7 @@ tabControlExt.ShowTabListContextMenu = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
-### Show hidden tab items in tab list context menu
+## Show hidden tab items in tab list context menu
 
 By default, all the tab items except hidden items are listed in the tab list context menu. If you wants to show the hidden tab items into tab list context menu to navigate, use the [TabListContextMenuOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabListContextMenuOptions) property value as `Default, ShowHiddenItems`. 
 
@@ -265,7 +374,7 @@ tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.Default |
 
 ![TabControl shows hidden tab items in tab list context menu](Tab-Item-Header_images/HiddenItems.png)
 
-### Show specific type tab items in tab list context menu
+## Show specific type tab items in tab list context menu
 
 If you want to show the specific type tab items in tab list context menu, set the single option to the `TabListContextMenuOptions` property. If you wants to show only the hidden tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowHiddenItems`. If you wants to show only the enabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowEnabledItems`. If you wants to show only the disabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowDisabledItems`.
 
@@ -296,7 +405,7 @@ tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowEnabledI
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions) in GitHub
 
-### Show multi-type tab items in tab list context menu
+## Show multi-type tab items in tab list context menu
 
 If you want to show the multiple type of tab items like enabled, disabled or hidden tab items together in tab list context menu, set the multiple options for the `TabListContextMenuOptions` property.
 
@@ -326,7 +435,261 @@ tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowDisabled
 
 ![TabControl multiple type of tab items on tab list context menu](Tab-Item-Header_images/MultiOption.png)
 
-### Custom template for the tab list context menu
+## Custom tab list context menu item
+
+You can add the custom tab list context menu items by using the [TabControlExt.TabListContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabcontrolExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabListContextMenuItems) property. You can show only the custom tab list context menu items by setting the [CollapseDefaultTabListContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_CollapseDefaultTabListContextMenuItems) property to `true`. The default value of `CollapseDefaultTabListContextMenuItems` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CollapseDefaultTabListContextMenuItems="True"
+                          Name="tabControlExt" >
+    <syncfusion:TabControlExt.TabListContextMenuItems>
+        
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1" />
+        <syncfusion:CustomMenuItem Header="Menu 2" />
+    </syncfusion:TabControlExt.TabListContextMenuItems>
+    <syncfusion:TabItemExt Header="tabItem1"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Display only the custom tab list context menu items
+tabControlExt.CollapseDefaultTabListContextMenuItems = true;
+
+// Adding custom tab list context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem();
+customMenuItem1.Header = "Menu 1";
+CustomMenuItem customMenuItem2 = new CustomMenuItem();
+customMenuItem2.Header = "Menu 2";
+
+tabControlExt.TabListContextMenuItems.Add(customMenuItem1);
+tabControlExt.TabListContextMenuItems.Add(customMenuItem2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom tab list context menu item in TabControl](Tab-Item-Header_images/tablistcustomcontextmenu.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions)
+
+### Check or uncheck the custom tab list menu items
+
+You can check or uncheck the custom tab list menu items by using `CustomMenuItem.IsChecked` property. You can disable the checkable functionalities of the tab list menu items by using the `CustomMenuItem.IsCheckable` property value as `false`. The default value of `CustomMenuItem.IsCheckable` property is `true` and `CustomMenuItem.IsChecked` property value is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CollapseDefaultTabListContextMenuItems="True"
+                          Name="tabControlExt" >
+        
+    <!--Adding custom tab list context menu items-->
+    <syncfusion:TabControlExt.TabListContextMenuItems>
+        
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1"
+                                   IsCheckable="True"
+                                   IsChecked="True"/>
+        <syncfusion:CustomMenuItem Header="Menu 2"
+                                   IsCheckable="False"/>
+    </syncfusion:TabControlExt.TabListContextMenuItems>
+    <syncfusion:TabItemExt Header="tabItem1"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Disaply only the custom tab list context menu
+tabControlExt.CollapseDefaultTabListContextMenuItems = true;
+
+// Adding custom tab list context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem();
+customMenuItem1.Header = "Menu 1";
+customMenuItem1.IsCheckable = true;
+customMenuItem1.IsChecked = true;
+CustomMenuItem customMenuItem2 = new CustomMenuItem();
+customMenuItem2.Header = "Menu 2";
+customMenuItem2.IsCheckable = false;
+
+tabControlExt.TabListContextMenuItems.Add(customMenuItem1);
+tabControlExt.TabListContextMenuItems.Add(customMenuItem2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Checked custom tab list context menu in TabControl](Tab-Item-Header_images/checkedcustomtablistcontextmenu.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions)
+
+### Adding sub menu items for custom context menu item
+
+You can add sub menu items for custom context menu item with any level by adding that sub `CustomMenuItem` to the parent `CustomMenuItem`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CollapseDefaultTabListContextMenuItems="True"
+                          Name="tabControlExt" >
+        
+    <!--Adding custom tab list context menu items-->
+    <syncfusion:TabControlExt.TabListContextMenuItems>
+
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2">
+
+                <!--Adding sub custom context menu items for 'SubMenu 2'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+            <syncfusion:CustomMenuItem Header="SubMenu 3"/>
+        </syncfusion:CustomMenuItem>
+        <syncfusion:CustomMenuItem Header="Menu 2">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 3">
+
+                <!--Adding sub custom context menu items for 'SubMenu 3'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:CustomMenuItem>
+    </syncfusion:TabControlExt.TabListContextMenuItems>
+    <syncfusion:TabItemExt Header="tabItem1"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>    
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Disaply only the custom tab list context menu
+tabControlExt.CollapseDefaultTabListContextMenuItems = true;
+
+// Adding custom tab list context menu items
+CustomMenuItem menu1 = new CustomMenuItem();
+menu1.Header = "Menu 1";
+CustomMenuItem menu2 = new CustomMenuItem();
+menu2.Header = "Menu 2";
+
+// Creating custom sub menu tab list context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubMenu 1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubMenu 2" };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubMenu 3" };
+
+//Adding sub menu items for 'SubMenu 2' and 'SubMenu 3' custom tablist menu item
+CustomMenuItem level2_customMenuItem = new CustomMenuItem() { Header = "Level 2" };
+customMenuItem3.Items.Add(level2_customMenuItem);
+
+menu2.Items.Add(customMenuItem1);
+menu2.Items.Add(customMenuItem2);
+menu2.Items.Add(customMenuItem3);
+
+tabControlExt.TabListContextMenuItems.Add(menu1);
+tabControlExt.TabListContextMenuItems.Add(menu2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom tab list context menu with sub items in TabControl](Tab-Item-Header_images/subcustomtablistcontextmenu.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions)
+
+## CustomMenuItem as Separator
+
+You can display the separator between custom menu items by using [CustomMenuItem.IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomMenuItem.html#Syncfusion_Windows_Tools_Controls_CustomMenuItem_IsSeparator) property. If  `IsSeparator` property is set to `true`, the `CustomMenuItem` will act as separator. The default value of `CustomMenuItem.IsSeparator` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CollapseDefaultTabListContextMenuItems="True"
+                          Name="tabControlExt" >
+        
+    <!--Adding custom tab list context menu items-->
+    <syncfusion:TabControlExt.TabListContextMenuItems>
+
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2">
+
+                <!--Adding sub custom context menu items for 'SubMenu 2'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+            <syncfusion:CustomMenuItem Header="SubMenu 3"/>
+        </syncfusion:CustomMenuItem>
+
+        <!--Adding custom context menu item as Seperator-->
+        <syncfusion:CustomMenuItem IsSeparator="True"
+                                   Height="1"/>
+
+        <syncfusion:CustomMenuItem Header="Menu 2">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 3">
+
+                <!--Adding sub custom context menu items for 'SubMenu 3'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:CustomMenuItem>
+    </syncfusion:TabControlExt.TabListContextMenuItems>
+    <syncfusion:TabItemExt Header="tabItem1"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>    
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Disaply only the custom tab list context menu
+tabControlExt.CollapseDefaultTabListContextMenuItems = true;
+
+// Adding custom tab list context menu items
+CustomMenuItem menu1 = new CustomMenuItem();
+menu1.Header = "Menu 1";
+CustomMenuItem menu2 = new CustomMenuItem();
+menu2.Header = "Menu 2";
+
+// Adding custom tab list context menu item as Seperator
+CustomMenuItem seperator = new CustomMenuItem();
+seperator.Seperator = true;
+seperator.Height = 1;
+
+// Creating custom sub menu tab list context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubMenu 1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubMenu 2" };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubMenu 3" };
+
+//Adding sub menu items for 'SubMenu 2' and 'SubMenu 3' custom tablist menu item
+CustomMenuItem level2_customMenuItem = new CustomMenuItem() { Header = "Level 2" };
+customMenuItem3.Items.Add(level2_customMenuItem);
+
+menu2.Items.Add(customMenuItem1);
+menu2.Items.Add(customMenuItem2);
+menu2.Items.Add(customMenuItem3);
+
+tabControlExt.TabListContextMenuItems.Add(menu1);
+tabControlExt.TabListContextMenuItems.Add(seperator);
+tabControlExt.TabListContextMenuItems.Add(menu2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom menu item as seperator](Tab-Item-Header_images/Seperatorsubcustomtablistcontextmenu.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions)
+
+## Custom template for the tab list context menu
 
 You can customize the tab list menu appearance by using the [TabListContextMenuTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabListContextMenuTemplate) property.
 
@@ -357,7 +720,7 @@ You can customize the tab list menu appearance by using the [TabListContextMenuT
 
 ![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style5.png)
 
-### Custom template for the tab list menu item
+## Custom template for the tab list menu item
 
 You can customize the tab list menu items appearance by using the [TabListContextMenuItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_TabListContextMenuItemTemplate) property.
 
