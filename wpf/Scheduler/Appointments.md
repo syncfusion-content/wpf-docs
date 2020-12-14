@@ -593,7 +593,7 @@ Schedule.AppointmentTapped += Schedule_AppointmentTapped;
 {% endtabs %}
 
 N> The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
-If an specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appoinmnment exception.
+If an specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment exception.
 
 ## RecurrenceHelper.GetOccurrenceAppointment(Scheduler,Appointment)
 Gets an occurrence at the specified date within a series of recurring appointments.
@@ -615,7 +615,7 @@ Schedule.AppointmentTapped += Schedule_AppointmentTapped;
 {% endhighlight %}
 {% endtabs %}
 
-N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (appointment Exceptiondates).
+N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (Recurrence Exception dates).
  If an occurrence at the specified date is deleted or not present, the `GetOccurrenceAppointment` method returns null.
 
 ## Appearance customization
