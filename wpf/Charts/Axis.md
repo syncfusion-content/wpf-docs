@@ -74,8 +74,6 @@ Gets a value indicating whether IsEmpty.
 Gets the Median value of the selected range.
 </td>
 </tr>
-<tr>
-<td>
 </table>
 
 * [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
@@ -3893,7 +3891,6 @@ chart.PrimaryAxis = new DateTimeAxis()
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Auto Interval Calculation on Zooming
 
