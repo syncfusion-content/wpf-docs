@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Timeline month View in WPF Scheduler (SfScheduler)
-`TimelineMonth` view of scheduler displays days of a specific  month in horizontal axis and current month will be visible intially by default. You can see the past or future dates by scrolling to the right or left. The current date color is differentiated from other dates of the current month.
+`TimelineMonth` view of scheduler displays days of a specific  month in horizontal axis and current month will be visible initially by default. You can see the past or future dates by scrolling to the right or left. The current date color is differentiated from other dates of the current month.
 
 ## Change time interval size
 You can customize the interval size of timeslots in `TimelineMonth` view by setting `TimeIntervalSize` property of `TimelineViewSettings`. By default time interval size for timeline month view is 150.
