@@ -28,27 +28,27 @@ The following are the API’s in ChartAxis
 <table>
 <tr>
 <td>
-[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)<br/><br/></td><td>
+{{[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)| markdownify}}<br/><br/></td><td>
 Gets the start value of the selected range.<br/><br/></td><td>
 <tr>
 <td>
-[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)<br/><br/></td><td>
+{{[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)| markdownify}}<br/><br/></td><td>
 Gets the end value of the selected range.<br/><br/></td><td>
 <tr>
 <td>
-[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)<br/><br/></td><td>
+{{[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)| markdownify}}<br/><br/></td><td>
 Gets the Delta value of the selected range.<br/><br/></td><td>
 <tr>
 <td>
-[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)<br/><br/></td><td>
+{{[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)| markdownify}}<br/><br/></td><td>
 Gets the Empty value of the selected range.<br/><br/></td><td>
 <tr>
 <td>
-[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)<br/><br/></td><td>
+{{[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)| markdownify}}<br/><br/></td><td>
 Gets a value indicating whether IsEmpty.<br/><br/></td><td>
 <tr>
 <td>
-[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)<br/><br/></td><td>
+{{[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)| markdownify}}<br/><br/></td><td>
 Gets the Median value of the selected range.<br/><br/></td><td>
 <tr>
 <td>
