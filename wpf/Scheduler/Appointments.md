@@ -577,7 +577,7 @@ SfScheduler has `RecurrenceHelper` static class present in `Syncfusion.UI.Xaml.S
 Gets the pattern appointment for the specified occurrence.
 
 ### Example: You can find a pattern appointment for the specified occurrence.
-To get pattern appointment by using the following event and pass parameter as `Scheduler` and Specified `Appointment`.
+To get pattern appointment by using the following event and passing parameter as `Scheduler` and Specified `Appointment`.
 {% tabs %}
 {% highlight c# %}
 Schedule.AppointmentTapped += Schedule_AppointmentTapped;
@@ -599,7 +599,7 @@ If an specified occurrence is changed, the `GetPatternAppointment` method return
 Gets an occurrence at the specified date within a series of recurring appointments.
 
 ### Example: You can find a specific appointment in a recurring appointment series.
-To get specific appointment by using the following event and pass parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
+To get specific appointment by using the following event and passing parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
 
 {% tabs %}
 {% highlight c# %}
@@ -616,7 +616,7 @@ Schedule.AppointmentTapped += Schedule_AppointmentTapped;
 {% endtabs %}
 
 N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (appointment Exceptiondates).
- If an occurrence at the specified date is deleted, the `GetOccurrenceAppointment` method returns null.
+ If an occurrence at the specified date is deleted or not present, the `GetOccurrenceAppointment` method returns null.
 
 ## Appearance customization
 The default appearance of schedule appointment can be customized in all views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). You can use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all day appointments in day, week and work week views.
