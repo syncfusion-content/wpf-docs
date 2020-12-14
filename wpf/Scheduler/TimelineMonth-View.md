@@ -7,8 +7,9 @@ control: SfScheduler
 documentation: ug
 ---
 # Timeline month View in WPF Scheduler (SfScheduler)
-`TimelineMonth` view of scheduler displays days of a specific  month in horizontal axis and current month will be visible initially by default. You can see the past or future dates by scrolling to the right or left. The current date color is differentiated from other dates of the current month.
+`TimelineMonth` view of scheduler displays days of a specific  month in horizontal axis and current month will be visible initially by default. You can see the past or future dates by scrolling to the right or left. The current date color is differentiated from other dates of the current month. The default appearance of `TimelineMonth` view is shown in below figure,
 
+![Default appearance of TimelineMonth view WPF scheduler](TimelineMonth_Images/DefaultView.png)
 ## Change time interval size
 You can customize the interval size of timeslots in `TimelineMonth` view by setting `TimeIntervalSize` property of `TimelineViewSettings`. By default time interval size for timeline month view is 150.
 
@@ -27,6 +28,8 @@ Scheduler.TimelineViewSettings.TimeIntervalSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
+![Changed TimeIntervalSize in TimelineMonth view WPF scheduler](TimelineMonth_Images/TimeIntervalSize.png)
+
 ## Full screen scheduler
 Scheduler time interval size can be adjusted based on screen height by changing the value of `TimeIntervalSize` property to -1. It will auto-fit to the screen height and width.
 {% tabs %}
@@ -44,6 +47,7 @@ Scheduler.TimelineViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
 
+![FullScreenScheduler in TimelineMonth view WPF scheduler](TimelineMonth_Images/FullScreenScheduler.png)
 ## Appointment height
 You can customize the height of the appointment in `TimelineMonth` view using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of `TimelineViewSettings`. By default, its value is 20.
 {% tabs %}
@@ -62,6 +66,7 @@ Schedule.TimelineViewSettings.TimelineAppointmentHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
+![Changed AppointmentHeight in TimelineMonth view WPF Scheduler](TimelineMonth_Images/AppointmentHeight.png)
 ## Blackout dates
 You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the `BlackoutDates` collection property of `SfScheduler`. Using this, you can allocate or restrict specific dates for predefined events.
 
@@ -86,6 +91,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
+![WPF Scheduler TimelineMonth view BlackoutDates](TimelineMonth_Images/BlackoutDates.png)
 ## View header
 You can customize the default appearance of view header in `TimelineMonth` view by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) properties of `TimelineViewSettings`.
 
@@ -105,6 +111,7 @@ Scheduler.TimelineViewSettings.ViewHeaderDateFormat="dd/dddd";
 {% endhighlight %}
 {% endtabs %}
 
+![WPF Scheduler TimelineMonth ViewHeaderText](TimelineMonth_Images/ViewHeaderText.png)
 ### View header height
 You can customize the height of the ViewHeader in `TimelineMonth` view by setting `ViewHeaderHeight` property of `TimelineViewSettings`.
 
@@ -123,6 +130,7 @@ Scheduler.TimelineViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
+![WPF Scheduler TimelineMonth ViewHeaderHeight](TimelineMonth_Images/ViewHeaderHeight.png)
 ### View header appearance customization
 You can customize the default appearance of view header by setting `ViewHeaderTemplate` property of `TimelineViewSettings` in `SfScheduler`.
 
@@ -154,3 +162,5 @@ You can customize the default appearance of view header by setting `ViewHeaderTe
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
+
+![WPF Scheduler TimelineMonth ViewHeaderTemplate](TimelineMonth_Images/ViewHeaderTemplate.png)
