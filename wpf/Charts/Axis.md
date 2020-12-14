@@ -22,6 +22,38 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 The following are the API’s in ChartAxis
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
+
+* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values as shown below, 
+
+<table>
+<tr>
+<td>
+[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)<br/><br/></td><td>
+Gets the start value of the selected range.<br/><br/></td><td>
+<tr>
+<td>
+[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)<br/><br/></td><td>
+Gets the end value of the selected range.<br/><br/></td><td>
+<tr>
+<td>
+[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)<br/><br/></td><td>
+Gets the Delta value of the selected range.<br/><br/></td><td>
+<tr>
+<td>
+[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)<br/><br/></td><td>
+Gets the Empty value of the selected range.<br/><br/></td><td>
+<tr>
+<td>
+[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)<br/><br/></td><td>
+Gets a value indicating whether IsEmpty.<br/><br/></td><td>
+<tr>
+<td>
+[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)<br/><br/></td><td>
+Gets the Median value of the selected range.<br/><br/></td><td>
+<tr>
+<td>
+</table>
+
 * [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
 
 The following topics explains in detail about the axis and its parts
@@ -3882,32 +3914,6 @@ chart.PrimaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Auto interval on zooming support in WPF](Axis_images/Axis_img71.jpeg)
-
-## VisibleRange
-
-[`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.
- The following are the options for [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange). 
- 
-  * [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start) - Gets the start value of the selected range.
-  * [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End) - Gets the end value of the selected range.
-  * [`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta) - Gets the Delta value of the selected range.
-  * [`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty) - Gets the Empty value of the selected range.
-  * [`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty) - Gets a value indicating whether IsEmpty.
-  * [`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median) - Gets the Median value of the selected range.
-
-{% tabs %}
-
-{% highlight c# %}
-
-NumericalAxis primaryAxis = new NumericalAxis();
-//Gets the start value of the selected range.
-var startRange = primaryAxis.VisibleRange.Start
-// Gets the End value of the selected range.
-var endRange = primaryAxis.VisibleRange.End;
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## Multiple Axes
 
