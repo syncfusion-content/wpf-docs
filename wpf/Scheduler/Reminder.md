@@ -114,7 +114,7 @@ public class CustomReminder : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can map those properties of `Meeting` class with our `SfScheduler` control by using `AppointmentMapping` and also map `CustomReminder` properties with `SchedulerReminder` by using `ReminderMapping`.
+You can map those properties of `Meeting` class with our [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and also map `CustomReminder` properties with `SchedulerReminder` by using `ReminderMapping`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -155,7 +155,7 @@ Meetings.Add(new Meeting
 ### ReminderAlertOpening event
 Scheduler notifies by `ReminderAlertOpening` event when appearing the reminder window. `ReminderAlertOpeningEventArgs` has following properties.
 * `Reminders` - Gets a list of reminders that are used to display the appointment reminders in the reminder alert window.
-* `Cancel` - To avoid reminder window opening by enabling this property.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid reminder window opening by enabling this property.
 
 {% tabs %}
 {% highlight c#%}

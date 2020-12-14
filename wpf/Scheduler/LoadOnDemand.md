@@ -11,19 +11,21 @@ The scheduler supports to loading appointment on-demand and its improves the loa
 
 ## Load on demand event
 `QueryAppointments` event is used to load appointment in on-demand for visible date range. `QueryAppointments` will be raised once any one of the following action will be taken.
- * `ViewChanged` event is raised
- * `ResourceCollection` is updated 
- * `ResourceGroupType` is changed. 
+ * [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is raised
+ * [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) is updated 
+ * [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceGroupType) is changed. 
+
 If an appointment has been added, edited or deleted within the visible date range, then the `QueryAppointments` event will not be triggered.
 
 ### QueryAppointments
 Scheduler notifies by `QueryAppointments` event, when user change visible date range.
 `QueryAppointmentsEventArgs` has following members which provides information for `QueryAppointments` event.
-`VisibleDateRange` -  Gets the current visible date range of scheduler that is used to load the appointments.
 
-The recurrence appointment should be added to the Scheduler `ItemsSource` until the date of recurrence ends.
+[VisibleDateRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DateRange.html) -  Gets the current visible date range of scheduler that is used to load the appointments.
 
-If `RecurrenceRule` added with count or end date, you can use the `GetRecurrenceDateTimeCollection` method to get recurrence date collection and compare recursive dates in the current visible date range. Then add recurrence appointment in scheduler `ItemsSource`, if recursive dates in current visible date range. 
+The recurrence appointment should be added to the Scheduler [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) until the date of recurrence ends.
+
+If [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) added with count or end date, you can use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) method to get recurrence date collection and compare recursive dates in the current visible date range. Then add recurrence appointment in scheduler [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource), If recursive dates in current visible date range. 
 
 If `RecurrenceRule` added with no end date , then recurrence appointment should be added in the Scheduler `ItemsSource` when all visible date changed from the recurrence start date.
 
@@ -44,9 +46,9 @@ private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventAr
 
 ## Load on demand command
 Scheduler notifies by `LoadOnDemandCommand` when user change visible date range. You can get visible date range from `QueryAppointmentsEventArgs`. The default value for this ICommand is null. The `QueryAppointmentsEventArgs` passed as a command parameter. It will be invoked once any one of the following action will be taken.
- * `ViewChanged` event is raised
- * `ResourceCollection` is updated 
- * `ResourceGroupType` is changed.
+* [ViewChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewChanged) event is raised
+ * [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) is updated 
+ * [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceGroupType) is changed. 
 
 If an appointment has been added, deleted or updated within the visible date range, then the `LoadOnDemandCommand` will not be invoked.
 
