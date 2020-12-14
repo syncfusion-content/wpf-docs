@@ -135,11 +135,11 @@ boxAndWhisker.ShowMedian = true;
 
 ## Outlier
 
-The outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
+The outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line and it is an observation that is numerically distant from the rest of the data.
 
 **ShowOutlier**
 
-The [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) are are used to customize the visible of the outlier. By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to disable the [`ShowOutlier`] property.
 
 {% tabs %}
 
