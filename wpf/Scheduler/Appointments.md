@@ -422,7 +422,7 @@ You can also change any occurrence appointment which is exception from recurrenc
 You can add the recurrence exception appointments and recurrence exception dates to `ScheduleAppointment`  or remove them from the `ScheduleAppointment` by using its [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates) property.
 
 ### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any of occurrence which is exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` of `Id` of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception date.
+You can delete any of occurrence which is exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception date.
 
 {% tabs %}
 {% highlight c# %}
