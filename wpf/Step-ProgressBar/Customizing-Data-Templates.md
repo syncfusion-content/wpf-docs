@@ -289,7 +289,7 @@ You can get or set the data template used to display the secondary content of `S
             <Setter Property="Content" Value="{Binding Text}" />
         </Style>
     </syncfusion:SfStepProgressBar.ItemContainerStyle>
-    <syncfusion:SfStepProgressBar.SecondaryItemTemplate>
+    <syncfusion:SfStepProgressBar.SecondaryContentTemplate>
         <DataTemplate>
             <TextBlock
             HorizontalAlignment="Center"
@@ -297,7 +297,7 @@ You can get or set the data template used to display the secondary content of `S
             Text="{Binding SecondaryText}"
             TextWrapping="Wrap" />
         </DataTemplate>
-    </syncfusion:SfStepProgressBar.SecondaryItemTemplate>
+    </syncfusion:SfStepProgressBar.SecondaryContentTemplate>
     <syncfusion:SfStepProgressBar.DataContext>
         <local:ViewModel />
     </syncfusion:SfStepProgressBar.DataContext>
@@ -422,7 +422,7 @@ Using the SecondaryContentTemplateSelector, you can use the different templates 
 
 	<syncfusion:SfStepProgressBar
         ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
-        SecondaryItemTemplateSelector="{StaticResource stepViewItemTemplateSelector}"
+        SecondaryContentTemplateSelector="{StaticResource stepViewItemTemplateSelector}"
         SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}"
         SelectedItemStatus="Indeterminate">
         <syncfusion:SfStepProgressBar.ItemContainerStyle>
