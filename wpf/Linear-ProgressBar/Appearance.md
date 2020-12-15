@@ -7,7 +7,7 @@ control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Linear ProgressBar
 You can highly customize the appearance of the linear progressbar in the following ways.
 
 ## Corner radius
@@ -132,3 +132,64 @@ grid.Children.Add(linear);
 {% endhighlight %}
 {% endtabs %}
 ![RangeColorsimage](Appearance_images/Gradient.png)
+
+## AnimationDuration
+You can customize the duration for completing one animation cycle and it applies when the `IsIndeterminate` is true. The default value is `3000ms.`
+{% tabs %}
+{% highlight XAML %}
+<Grid Name="grid">
+    <Syncfusion:SfLinearProgressBar
+        Width="250"
+        Height="4"
+        AnimationDuration="00:00:01"
+        IsIndeterminate="True"
+        Progress="50" />
+</Grid> 
+{% endhighlight %}
+{% highlight C# %}
+SfLinearProgressBar linear = new SfLinearProgressBar();
+linear.Progress = 50;
+linear.IsIndeterminate = true;
+linear.Width = 250;
+linear.Height = 4;
+linear.AnimationDuration= new TimeSpan(0,0,1);
+grid.Children.Add(linear);
+{% endhighlight %}
+{% endtabs %}
+![AnimationDuration image](Appearance_images/LinearAnimation.gif)
+
+## AnimationEasing
+You can customize the easing function to apply for the linear and circular progress bar animation and it applies when the `IsIndeterminate` is true.
+{% tabs %}
+{% highlight XAML %}
+<Grid Name="grid">
+    <Syncfusion:SfLinearProgressBar
+    Width="250"
+    Height="4"
+    IndicatorCornerRadius="10"
+    IsIndeterminate="True"
+    Progress="50">
+    <Syncfusion:SfLinearProgressBar.AnimationEasing>
+        <BounceEase
+        Bounces="20"
+        Bounciness="5"
+        EasingMode="EaseOut" />
+    </Syncfusion:SfLinearProgressBar.AnimationEasing>
+    </Syncfusion:SfLinearProgressBar>
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+SfLinearProgressBar linear = new SfLinearProgressBar();
+linear.Progress = 50;
+linear.IsIndeterminate = true;
+linear.Width = 250;
+linear.Height = 4;
+BounceEase bounceEase = new BounceEase();
+bounceEase.Bounces = 20;
+bounceEase.Bounciness = 5;
+bounceEase.EasingMode = EasingMode.EaseOut;
+linear.AnimationEasing = bounceEase;
+grid.Children.Add(linear);
+{% endhighlight %}
+{% endtabs %}
+![AnimationDuration image](Appearance_images/LinearEasing.gif)

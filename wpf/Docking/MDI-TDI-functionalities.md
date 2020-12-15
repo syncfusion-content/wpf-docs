@@ -1074,3 +1074,158 @@ The following images illustrates the same,
 
 ![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\unpintab-option-contextmenu.png)
 
+## Custom context menu items for tab item
+
+You can add the custom context menu items for tab item by using the [DocumentTabItemContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabItemContextMenuItemsProperty) property. You can also add any level of sub menu items for custom context menu item by adding that sub `CustomMenuItem` to the parent [CustomMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomMenuItem.html). You can check or uncheck the `CustomMenuItem` interactively or programmatically by using the `CustomMenuItem.IsChecked` property. 
+
+You can collapse the default tab item context menu and show only the custom context menu items by setting the [CollapseDefaultContextMenuItemsInDocumentTab](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CollapseDefaultContextMenuItemsInDocumentTabProperty) property to `true`. The default value of `CollapseDefaultContextMenuItemsInDocumentTab` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager
+    UseDocumentContainer="True"
+    ContainerMode="TDI"
+    Name="dockingManager" >
+    
+    <!--Adding custom context menu items for tab items-->
+    <syncfusion:DockingManager.DocumentTabItemContextMenuItems>
+
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1"/>
+        <syncfusion:CustomMenuItem Header="Menu 2">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2" IsChecked="True"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 3">
+
+                <!--Adding sub custom context menu items for 'SubMenu 3'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:CustomMenuItem>
+    </syncfusion:DockingManager.DocumentTabItemContextMenuItems>
+
+    <ContentControl syncfusion:DockingManager.Header="Document.xaml"
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document.xaml.cs"
+                    syncfusion:DockingManager.State="Document"
+                    syncfusion:DockingManager.ShowCloseAllButThisMenuItem="False"
+                    syncfusion:DockingManager.ShowCloseAllMenuItem="False"
+                    syncfusion:DockingManager.ShowCloseMenuItem="False"
+                    syncfusion:DockingManager.CollapseDefaultContextMenuItemsInDocumentTab="True"/>
+    <ContentControl syncfusion:DockingManager.Header="Toolbox"
+                    syncfusion:DockingManager.State="Dock"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Creating custom context menu items
+CustomMenuItem menu1 = new CustomMenuItem();
+menu1.Header = "Menu 1";
+CustomMenuItem menu2 = new CustomMenuItem();
+menu2.Header = "Menu 2";
+
+//Creating custom sub context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubMenu 1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubMenu 2", IsChecked = true };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubMenu 3" };
+
+//Adding sub menu items for 'SubMenu 3' custom context menu item
+CustomMenuItem level2_customMenuItem = new CustomMenuItem() { Header = "Level 2" };
+customMenuItem3.Items.Add(level2_customMenuItem);
+
+menu2.Items.Add(customMenuItem1);
+menu2.Items.Add(customMenuItem2);
+menu2.Items.Add(customMenuItem3);
+
+//Adding custom context menu items with sub menu items
+dockingManager.DocumentTabItemContextMenuItems.Add(menu1);
+dockingManager.DocumentTabItemContextMenuItems.Add(menu2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom context menu with sub items in DockingManager](MDI_TDIfunctionalities_images\CustomTabItemContextMenuItems.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
+
+## Custom tab list context menu item
+
+You can add the custom tab list context menu items by using the [TabListContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_TabListContextMenuItemsProperty) property. You can also add any level of sub menu items for custom tab list context menu item by adding that sub `CustomMenuItem` to the parent `CustomMenuItem`.  You can check or uncheck the `CustomMenuItem` interactively or programmatically by using the `CustomMenuItem.IsChecked` property. 
+
+You can collapse the default tab list context menu items and show only the custom tab list context menu items by setting the [CollapseDefaultTabListContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CollapseDefaultTabListContextMenuItemsProperty) property to `true`. The default value of `CollapseDefaultTabListContextMenuItems` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager
+    UseDocumentContainer="True"
+    ContainerMode="TDI"
+    CollapseDefaultTabListContextMenuItems="True"
+    Name="dockingManager" >
+    
+    <!--Adding custom tab list context menu items-->
+    <syncfusion:DockingManager.TabListContextMenuItems>
+
+        <!--Adding custom context menu items-->
+        <syncfusion:CustomMenuItem Header="Menu 1"/>
+        <syncfusion:CustomMenuItem Header="Menu 2">
+
+            <!--Adding sub custom context menu items-->
+            <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 2"/>
+            <syncfusion:CustomMenuItem Header="SubMenu 3">
+
+                <!--Adding sub custom context menu items for 'SubMenu 3'-->
+                <syncfusion:CustomMenuItem Header="Level 2"/>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:CustomMenuItem>
+    </syncfusion:DockingManager.TabListContextMenuItems>
+
+    <ContentControl syncfusion:DockingManager.Header="Document.xaml"
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Document.xaml.cs"
+                    syncfusion:DockingManager.State="Document"/>
+    <ContentControl syncfusion:DockingManager.Header="Toolbox"
+                    syncfusion:DockingManager.State="Dock"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Disaply only the custom tab list context menu
+dockingManager.CollapseDefaultTabListContextMenuItems = true;
+
+//Creating custom tab list context menu items
+CustomMenuItem menu1 = new CustomMenuItem();
+menu1.Header = "Menu 1";
+CustomMenuItem menu2 = new CustomMenuItem();
+menu2.Header = "Menu 2";
+
+//Creating custom sub menu tab list context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubMenu 1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubMenu 2" };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubMenu 3" };
+
+//Adding sub menu items for 'SubMenu 3' custom tablist menu item
+CustomMenuItem level2_customMenuItem = new CustomMenuItem() { Header = "Level 2" };
+customMenuItem3.Items.Add(level2_customMenuItem);
+
+menu2.Items.Add(customMenuItem1);
+menu2.Items.Add(customMenuItem2);
+menu2.Items.Add(customMenuItem3);
+
+//Adding custom sub menu tab list context menu items
+dockingManager.TabListContextMenuItems.Add(menu1);
+dockingManager.TabListContextMenuItems.Add(menu2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom tab list context menu with sub items in DockingManager](MDI_TDIfunctionalities_images\CustomTabListContextMenuItems.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
+
+
