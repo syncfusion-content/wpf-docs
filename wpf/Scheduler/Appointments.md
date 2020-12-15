@@ -366,6 +366,49 @@ var date0 = 6/27/2020;
 var date1 = 6/28/2020;
 var date2 = 6/29/2020;
 
+### How to get pattern appointment for the specified occurrence?
+Gets the pattern appointment for the specified occurrence.
+
+To get pattern appointment by using the following event and passing parameter as `Scheduler` and Specified `Appointment`.
+{% tabs %}
+{% highlight c# %}
+Schedule.AppointmentTapped += Schedule_AppointmentTapped;
+
+private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
+{
+    if (e.Appointment != null)
+    {
+        var patternAppointment = RecurrenceHelper.GetPatternAppointment(this.Schedule, e.Appointment);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
+If an specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment exception.
+
+## How to get occurrence appointment at the specified date?
+Gets an occurrence at the specified date within a series of recurring appointments.
+
+To get specific appointment by using the following event and passing parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
+
+{% tabs %}
+{% highlight c# %}
+Schedule.AppointmentTapped += Schedule_AppointmentTapped;
+
+private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
+{
+    if (e.Appointment != null)
+    {
+        var occurrenceAppointment = RecurrenceHelper.GetOccurrenceAppointment(this.Schedule, e.Appointment, new DateTime(2020,12,20));
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (Recurrence Exception dates).
+ If an occurrence at the specified date is deleted or not present, the `GetOccurrenceAppointment` method returns null.
+
 ## Recurrence pattern exceptions
 You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
@@ -617,54 +660,6 @@ N> `RecurrenceId` of exception appointment and the `Id` of its pattern appointme
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
 
 ![Custom Exception Appointment in WPF Scheduler](appointments_images/Adding-CustomExceptionAppointment.png)
-
-## Recurrence Helper
-SfScheduler has `RecurrenceHelper` static class present in `Syncfusion.UI.Xaml.SfScheduler` namespace that has some extension method used to get occurrence appointment and pattern appointment.
-
-### RecurrenceHelper.GetPatternAppointment(Schedule, Appointment) Method
-Gets the pattern appointment for the specified occurrence.
-
-### Example: You can find a pattern appointment for the specified occurrence.
-To get pattern appointment by using the following event and passing parameter as `Scheduler` and Specified `Appointment`.
-{% tabs %}
-{% highlight c# %}
-Schedule.AppointmentTapped += Schedule_AppointmentTapped;
-
-private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
-{
-    if (e.Appointment != null)
-    {
-        var patternAppointment = RecurrenceHelper.GetPatternAppointment(this.Schedule, e.Appointment);
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-N> The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
-If an specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment exception.
-
-## RecurrenceHelper.GetOccurrenceAppointment(Scheduler,Appointment)
-Gets an occurrence at the specified date within a series of recurring appointments.
-
-### Example: You can find a specific appointment in a recurring appointment series.
-To get specific appointment by using the following event and passing parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
-
-{% tabs %}
-{% highlight c# %}
-Schedule.AppointmentTapped += Schedule_AppointmentTapped;
-
-private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
-{
-    if (e.Appointment != null)
-    {
-        var occurrenceAppointment = RecurrenceHelper.GetOccurrenceAppointment(this.Schedule, e.Appointment, new DateTime(2020,12,20));
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (Recurrence Exception dates).
- If an occurrence at the specified date is deleted or not present, the `GetOccurrenceAppointment` method returns null.
 
 ## Appearance customization
 The default appearance of schedule appointment can be customized in all views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). You can use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all day appointments in day, week and work week views.
