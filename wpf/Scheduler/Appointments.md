@@ -681,7 +681,8 @@ The default appearance of schedule appointment can be customized in all views by
             VerticalAlignment="Center"
             Text="Meeting" 
             TextTrimming="CharacterEllipsis"
-            Foreground="{Binding Data.ForegroundColor}"        TextWrapping="Wrap"
+            Foreground="{Binding Data.ForegroundColor}"        
+            TextWrapping="Wrap"
             FontStyle="Italic"                       
             TextAlignment="Left"
             FontWeight="Bold"/>
