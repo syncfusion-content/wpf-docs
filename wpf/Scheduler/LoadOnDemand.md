@@ -84,46 +84,71 @@ You can load appointments for scheduler itemsource in `Execute` method of `LoadO
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c#%}
-public ICommand LoadOnDemandCommand { get; set; }
-public IEnumerable Events
-        {
-            get { return events; }
-            set
-            {
-                events = value;
-                this.RaisePropertyChanged("Events");
-            }
-        }
-public bool ShowBusyIndicator
+
+public class LoadOnDemandViewModel : INotifyPropertyChanged
+  {
+    public ICommand LoadOnDemandCommand { get; set; }
+    private IEnumerable events;
+    public IEnumerable Events
       {
-          get { return showBusyIndicator; }
-          set
-           {
-              showBusyIndicator = value;
-              this.RaisePropertyChanged("ShowBusyIndicator");
+        get { return events; }
+        set
+          {
+            events = value;
+            this.RaisePropertyChanged("Events");
           }
       }
-this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
+    private bool showBusyIndicator;
+    public bool ShowBusyIndicator
+    {
+      get { return showBusyIndicator; }
+      set
+          {
+            showBusyIndicator = value;
+            this.RaisePropertyChanged("ShowBusyIndicator");
+          }
+    }
+    
+    public ObservableCollection<SchedulerResource> ResourceCollection
+    {
+      get { return resourceCollection; }
+      set
+        {
+         resourceCollection = value;
+         this.RaisePropertyChanged("ResourceCollection");
+        }
+    }
+    public SchedulerViewModel()
+    {
+       this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
+    }
+       
+    public event PropertyChangedEventHandler PropertyChanged;
+    public async void ExecuteOnDemandLoading(object parameter)
+    {
+      this.ShowBusyIndicator = true;
+      await Task.Delay(1000);
+      await Application.Current.MainWindow.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new Action(() =>
+            {
+                this.Events = this.GetAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
+            }));
+      this.ShowBusyIndicator = false;
+    }
 
-/// <summary>
-/// Execute method is called when any item is requested for load-on-demand items.
-/// </summary>
-/// <param name="parameter">QueryAppointmentsEventArgs is passed as parameter </param>
-private async void ExecuteOnDemandLoading(object parameter)
-{
-  this.ShowBusyIndicator = true;
-  this.Events = this.GetAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
-  this.ShowBusyIndicator = false;
-}
+    private bool CanExecuteOnDemandLoading(object sender)
+    {
+      return true;
+    }
 
-private bool CanExecuteOnDemandLoading(object sender)
-{
-  return true;
-}
+    private IEnumerable GetAppointments(DateRange dateRange)
+    {
+      // Add Codes to generate appointments
+    }
 
-private IEnumerable GetAppointments(DateRange dateRange)
-  {
-    // Add codes to generate appointments from the date renage
+    private void RaisePropertyChanged(string propertyName)
+    {
+        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    } 
   }
 {% endhighlight %}
 {% endtabs %}
