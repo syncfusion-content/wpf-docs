@@ -159,13 +159,17 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 });
 {% endhighlight %}
 {% endtabs %}
-![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Recurringtimeregion.png)
+![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurringtimeregion.png)
+
+If set `CanMergeAdjacentRegions` of `SpecialTimeRegion` is false. SpecialTimeRegion will be rendering on Date basis.
+
+![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurringtimeregion.png)
 
 ### Recurrence exception dates
 You can delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
- Schedule.ViewType = SchedulerViewType.Week;
+Schedule.ViewType = SchedulerViewType.Week;
 DateTime recurrenceExceptionDates = DateTime.Now.Date.AddDays(-1);
 DateTime recurrenceExceptionDates1 = DateTime.Now.Date.AddDays(2);
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
@@ -187,7 +191,11 @@ RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {% endhighlight %}
 {% endtabs %}
 
-![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Recurrenceexceptiondates.png)
+![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurrenceexceptiondates.png)
+
+`SpecialTimeRegion` in Date basis by setting value of     `CanMergeAdjacentRegions` is false.
+
+![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurrenceexceptiondates.png)
 
 ### Special time region customization
 The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of `SpecialTimeRegion` that is used to customize the text style for the image of the `SpecialTimeRegion`.
@@ -226,7 +234,11 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 {% endhighlight %}
 {% endtabs %}
 
-![Special time region customization in WPF Scheduler](DaysView_Images/adding-Specialtimeregioncustomization.png)
+![Special time region customization in WPF Scheduler](DaysView_Images/adding-Timebasis_Specialtimeregioncustomization.png)
+
+`SpecialTimeRegion` can be customized in Date basis by setting value of `CanMergeAdjacentRegions` is false.
+
+![Special time region customization in WPF Scheduler](DaysView_Images/adding-datebasis_Specialtimeregioncustomization.png)
 
 ## Full screen scheduler
 Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
