@@ -9,7 +9,7 @@ documentation: ug
 # Reminder in WPF Scheduler (SfScheduler)
 Scheduler alerts you for particular appointment with reminder window when enable the `EnableReminder` property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 
-## Setting reminder for an appointment
+## Enable reminder for an appointment
 Reminder can be set by setting the `EnableReminder` property is `true`.The reminder time can be set using the `Reminders` property of ScheduleAppointment.
 
 {% tabs %}
@@ -24,16 +24,41 @@ Reminder can be set by setting the `EnableReminder` property is `true`.The remin
 ![WPF Scheduler reminder alert window](Reminder_Images/ReminderWindow.png)
 
 
-## Configuring scheduler reminder
+## Add reminders for the appointments
 You can configure appointment reminders with ScheduleReminder.
 `SchedulerReminder` has the following properties for reminder alert,
 
-* `ReminderTimeInterval` - Gets or sets the time interval that decides to open the reminder alert window before the appointment’s start time.
-* `ReminderAlertTime` - Gets the reminder time that decides when to show a reminder alert of the appointment.
-* `Appointment` - Gets the appointment details for which the reminder is created.
-* `Data` - Gets the reminder data object associated with `SchedulerReminder`.
-* `IsDismissed` - Gets or sets whether the reminder is dismissed. 
-* `IsSnoozed` - Gets or sets whether the reminder is snoozed.
+<table>
+<tr>
+<th>Properties</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>ReminderTimeInterval</td>
+<td>Gets or sets the time interval that decides to open the reminder alert window before the appointment’s start time.
+</td>
+</tr>
+<tr>
+<td>ReminderAlertTime</td>
+<td>Gets the reminder time that decides when to show a reminder alert of the appointment.</td>
+</tr>
+<tr>
+<td>Appointment</td>
+<td>Gets the appointment details for which the reminder is created.</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>Gets the reminder data object associated with `SchedulerReminder`.</td>
+</tr>
+<tr>
+<td>IsDismissed</td>
+<td> Gets or sets whether the reminder is dismissed. </td>
+</tr>
+<tr>
+<td>IsSnoozed</td>
+<td> Gets or sets whether the reminder is snoozed. </td>
+</tr>
+</table>
 
 {% tabs %}
 {% highlight c#%}
@@ -52,7 +77,7 @@ scheduleAppointments.Add(new ScheduleAppointment
 {% endhighlight %}
 {% endtabs %}
 
-## Create a custom binding for reminder   
+## Create business object for reminder  
 Reminders supports to map your custom object with `ScheduleAppointment.Reminders`.
 
 {% tabs %}
@@ -151,8 +176,7 @@ Meetings.Add(new Meeting
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Reminder events
-### ReminderAlertOpening event
+## ReminderAlertOpening event
 Scheduler notifies by `ReminderAlertOpening` event when appearing the reminder window. `ReminderAlertOpeningEventArgs` has following properties.
 * `Reminders` - Gets a list of reminders that are used to display the appointment reminders in the reminder alert window.
 * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid reminder window opening by enabling this property.

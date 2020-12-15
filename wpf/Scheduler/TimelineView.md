@@ -7,14 +7,15 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Timeline View in WPF Scheduler (SfSchedule)
-`TimelineView` displays the dates in horizontal time axis with the desired day’s count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. It provides support to highlight the selected region of time slots and handle interaction.
+# Timeline Views in WPF Scheduler (SfSchedule)
+`TimelineView` displays the dates in horizontal time axis with the desired day’s count. Scheduler supports to display the `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek` and `TimelineMonth` views. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. It provides support to highlight the selected region of time slots and handle interaction.
 
 ## Change time interval
-You can customize the interval of timeslots in the timeline view by using the [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html).
+You can customize the interval of timeslots in the timeline views by using the [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html). This property will be applicable to `TimelineDay`, `TimelineWeek`and `TimelineWorkWeek` views.
+
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -23,11 +24,12 @@ Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 
 N>If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
-## Change time interval height
-You can customize the interval height of timeslots in Timeline view by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of `TimelineViewSettings`.
+## Change time interval width
+You can customize the interval width of timeslots in Timeline views by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of `TimelineViewSettings`. This property will be applicable to all timeline views. By default, Its value is 50 for `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule"
+ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             TimeIntervalHeight="120"/>
@@ -35,7 +37,7 @@ You can customize the interval height of timeslots in Timeline view by setting [
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeIntervalHeight = 120;
 {% endhighlight %}
 {% endtabs %}
@@ -43,11 +45,11 @@ Schedule.TimelineViewSettings.TimeIntervalHeight = 120;
 ![Change time interval height in WPF Scheduler](Timeline_images/adding-Changetimeintervalheight.png)
 
 ## Flexible working days and working hours
-The default values for [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) are 0 and 24 to show all the time slots in timeline view. You can to set the `StartHour` and `EndHour` properties of `TimelineViewSettings` to show only the required time duration for users. You can set `StartHour` and `EndHour` in time duration to show the required time duration in minutes.
+The default values for [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) are 0 and 24 to show all the time slots in timeline view. You can to set the `StartHour` and `EndHour` properties of `TimelineViewSettings` to show only the required time duration for users. You can set `StartHour` and `EndHour` in time duration to show the required time duration in minutes. `StartHour` and `EndHour` properties are not applicable to `TimelineMonth` view.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             StartHour="8"
@@ -56,7 +58,7 @@ The default values for [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.StartHour = 8;
 Schedule.TimelineViewSettings.EndHour = 15;
 {% endhighlight %}
@@ -72,14 +74,60 @@ N>
 * If custom timeInterval is given, then the number of time slots calculated based on the given `TimeInterval` should result in integer value (total minutes % timeInterval = 0), otherwise next immediate time interval that result in integer value when divide total minutes of a day will be considered. For example, if TimeInterval=2 Hours 15 minutes and total minutes = 1440 (24 Hours per day), then `TimeInterval` will be changed to ‘144’ (1440%144=0) by considering (total minutes % TimeInterval = 0), it will return integer value for time slots rendering.
 * If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to ’37 minutes’ (555%37=0) by considering (total minutes % timeInterval = 0). it will return integer value for time slots rendering.
 
+## Change days count
+You can change days count of timeslots in timeline view by setting `DaysCount` property of `TimelineViewSettings`. This property is only applicable for `TimelineDay` view. By dafault, its value is 1.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineDay">
+    <syncfusion:SfScheduler.TimelineViewSettings>
+        <syncfusion:TimelineViewSettings 
+            DaysCount="2"/>
+    </syncfusion:SfScheduler.TimelineViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.ViewType = SchedulerViewType.TimelineDay;
+Schedule.TimelineViewSettings.DaysCount = 2;
+{% endhighlight %}
+{% endtabs %}
+
+![DaysCount in TimelineDay WPF Scheduler](Timeline_images/DaysCount.png)
+
+## Blackout dates
+You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the `BlackoutDates` collection property of `SfScheduler`. Using this, you can allocate or restrict specific dates for predefined events. This property is won't be applicable for `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views.
+
+{% tabs %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Month;
+
+this.Schedule.BlackoutDates = GetBlackoutDates();
+
+private ObservableCollection<DateTime> GetBlackoutDates()
+        {
+            var blackoutDateCollection = new ObservableCollection<DateTime>()
+            {
+                DateTime.Now.Date.AddDays(1),
+                DateTime.Now.Date.AddDays(3),
+                DateTime.Now.Date.AddDays(5),
+                DateTime.Now.Date.AddDays(7),
+                DateTime.Now.Date.AddDays(9)
+            };
+            return blackoutDateCollection;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler TimelineMonth view BlackoutDates](Timeline_Images/BlackoutDates.png)
+
 ## Special time regions
-You can restrict the user interaction such as selection and highlights specific regions of time in timeline view by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html)). You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.
+You can restrict the user interaction such as selection and highlights specific regions of time in timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html)). You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.  This property will be applicable to `TimelineDay`, `TimelineWeek`and `TimelineWorkWeek` views.
 
 ### Selection restriction in timeslots
 You can enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, its value is true.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline" >
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings>
             <syncfusion:TimelineViewSettings.SpecialTimeRegions>
@@ -96,7 +144,7 @@ You can enable or disable the touch interaction of `SpecialTimeRegion` using the
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
     StartTime = new System.DateTime(2020, 07, 08, 13, 0, 0),
@@ -124,7 +172,7 @@ in the region
 The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline" >
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWorkWeek" >
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings>
             <syncfusion:TimelineViewSettings.SpecialTimeRegions>
@@ -142,7 +190,7 @@ The recurring time region on a daily, weekly, monthly, or yearly interval. The r
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWorkWeek;
 Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
     StartTime = new System.DateTime(2020, 07, 08, 13, 0, 0),
@@ -160,7 +208,7 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 You can delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 DateTime recurrenceExceptionDates = new DateTime(2020, 07, 06, 10, 0, 0);
 DateTime recurrenceExceptionDates1 = new DateTime(2020, 07, 08, 10, 0, 0);
 DateTime recurrenceExceptionDates2 = new DateTime(2020, 07, 10, 10, 0, 0);
@@ -204,7 +252,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings                 SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
             <syncfusion:TimelineViewSettings.SpecialTimeRegions>
@@ -229,7 +277,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property to -1. It will auto-fit to the screen height and width.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             TimeIntervalHeight="-1"/>
@@ -237,7 +285,7 @@ Scheduler time interval height can be adjusted based on screen height by changin
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeIntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
@@ -245,10 +293,10 @@ Schedule.TimelineViewSettings.TimeIntervalHeight = -1;
 ![Full screen scheduler in WPF Scheduler](Timeline_images/adding-Fullscreenscheduler.png)
 
 ## Change time ruler size
-You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of `TimelineViewSettings`.
+You can customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of `TimelineViewSettings`. This property will be applicable to `TimelineDay`, `TimelineWeek`and `TimelineWorkWeek` views.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline" >
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek" >
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings   
             TimeRulerSize="100">
@@ -257,7 +305,7 @@ You can customize the size of the time ruler view where the labels mentioning th
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeRulerSize = 100;
 {% endhighlight %}
 {% endtabs %}
@@ -265,10 +313,10 @@ Schedule.TimelineViewSettings.TimeRulerSize = 100;
 ![Change time ruler size in WPF Scheduler](Timeline_images/adding-Changetimerulersize.png)
 
 ## Minimum appointment duration
-The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in `TimelineViewSettings` is to set an arbitrary height to appointments when it has minimum duration, in timeline view, so that the subject can be readable.
+The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_MinimumAppointmentDuration) property in `TimelineViewSettings` is to set an arbitrary height to appointments when it has minimum duration in timeline view, so that the subject can be readable. This property won't be applicable for `TimelineMonth` view.
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.MinimumAppointmentDuration = new System.TimeSpan(0, 120, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -280,10 +328,10 @@ N>NOTE
 * All day Appointment does not support `MinimumAppointmentDuration`.
 
 ## Time text formatting
-You can customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `TimelineViewSettings` in `Scheduler`.
+You can customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `TimelineViewSettings` in `Scheduler`. This property won't be applicable for `TimelineMonth` view.
 {% tabs %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimeRulerFormat = "hh mm";
 Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
@@ -292,13 +340,13 @@ Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 ![Time text formatting in WPF Scheduler](Timeline_images/adding-Timetextformatting.png)
 
 ## View header
-You can customize the default appearance of view header in timeline view by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `TimelineViewSettings`.
+You can customize the default appearance of view header in timeline views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `TimelineViewSettings`.
 
 ### View header text formatting
 You can customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `TimelineViewSettings`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             ViewHeaderDateFormat="dd/MMMM"/>
@@ -306,17 +354,17 @@ You can customize the date and day format of ViewHeader by using the `ViewHeader
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.ViewHeaderDateFormat="dd/MMMM";
 {% endhighlight %}
 {% endtabs %}
 ![View header text formatting in WPF Scheduler](Timeline_images/adding-Viewheadertextformatting.png)
 
 ### View header height
-You can customize the height of the ViewHeader in timeline view by setting `ViewHeaderHeight` property of `TimelineViewSettings` in `SfScheduler`.
+You can customize the height of the ViewHeader in timeline views by setting `ViewHeaderHeight` property of `TimelineViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings
             ViewHeaderHeight="100"/>
@@ -324,7 +372,7 @@ You can customize the height of the ViewHeader in timeline view by setting `View
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
@@ -367,7 +415,7 @@ You can customize the default appearance of view header by setting `ViewHeaderTe
 {% endtabs %}
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
@@ -379,10 +427,10 @@ You can customize the default appearance of view header by setting `ViewHeaderTe
 ![ViewHeader appearance customization in WPF Scheduler](Timeline_images/adding-ViewHeaderappearancecustomization.png)
 
 ## Appointment height
-You can customize the height of the appointment in `TimelineView` using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of `TimelineViewSettings`. By default, its value is 50.
+You can customize the height of the appointment in `TimelineView` using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of `TimelineViewSettings`. By default, its value is 50 for `TimelineWeek`, `TimelineWorkWeek` and `TimelineDay` views and 20 for `TimelineMonth` view.
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline"> 
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek"> 
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
             TimelineAppointmentHeight="100">
@@ -391,7 +439,7 @@ You can customize the height of the appointment in `TimelineView` using the [Tim
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Timeline;
+Schedule.ViewType = SchedulerViewType.TimelineWeek;
 Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 {% endhighlight %}
 {% endtabs %}

@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Load on demand in WPF Scheduler (SfScheduler)
-The scheduler supports to loading appointment on-demand and its improves the loading performance when you have appointments range for multiple years.
+The scheduler supports to loading appointment on-demand with loading indicator and its improves the loading performance when you have appointments range for multiple years.
 
 ## Load on-demand on recurring appointment
  A recurring appointment series is never stored in the underlying data source. The data source only contains records for the pattern and changed appointments. For example, you have 2 pattern appointments, where each appointment generates a series of 10 regular appointments. Thus, only 2 pattern appointments are stored in the underlying data source, in place of 20 appointments. When a pattern appointment is loaded into the Schedule, the control calculates the recurring series and displays appointments from the series in the active view.
@@ -30,7 +30,7 @@ The scheduler supports to loading appointment on-demand and its improves the loa
 * QueryAppointments event will be triggered on [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceGroupType) changed.
 
 ### QueryAppointments
-Scheduler notifies by `QueryAppointments` event, when user change visible date range.
+Scheduler notifies by `QueryAppointments` event, when user change visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using ShowBusyIndicator.
 `QueryAppointmentsEventArgs` has following members which provides information for `QueryAppointments` event.
 
 [VisibleDateRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DateRange.html) -  Gets the current visible date range of scheduler that is used to load the appointments.
@@ -45,7 +45,9 @@ Scheduler notifies by `QueryAppointments` event, when user change visible date r
 Scheduler.QueryAppointments += Scheduler_QueryAppointments;
 private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
 {
+ Scheduler.ShowBusyIndicator = true;
  Scheduler.ItemsSource = this.GetAppointments(e.VisibleDateRange);
+ Scheduler.ShowBusyIndicator = false;
 }
 
 private IEnumerable GetAppointments(DateRange dateRange)
@@ -69,13 +71,14 @@ Scheduler notifies by `LoadOnDemandCommand` when user change visible date range.
  ### On-demand loading of appointments
 You can load appointments for scheduler itemsource in `Execute` method of `LoadOnDemandCommand`. In execute method, you have can perform following operations,
 
-* Show or hide busy indicator in execute method until get appointment collection.
+* You might start and stop the loading indicator animation before and after the appointments loaded  using ShowBusyIndicator.
 * Once got appointment collection, You can load into scheduler itemsource.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Scheduler"
                         ViewType="Month" 
+                        ShowBusyIndicator="{Binding ShowBusyIndicator}"
                         LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
                         ItemsSource="{Binding Events}">
 </syncfusion:SfScheduler>
@@ -91,7 +94,15 @@ public IEnumerable Events
                 this.RaisePropertyChanged("Events");
             }
         }
-
+public bool ShowBusyIndicator
+      {
+          get { return showBusyIndicator; }
+          set
+           {
+              showBusyIndicator = value;
+              this.RaisePropertyChanged("ShowBusyIndicator");
+          }
+      }
 this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecuteOnDemandLoading);
 
 /// <summary>
@@ -100,7 +111,9 @@ this.LoadOnDemandCommand = new DelegateCommand(ExecuteOnDemandLoading, CanExecut
 /// <param name="parameter">QueryAppointmentsEventArgs is passed as parameter </param>
 private async void ExecuteOnDemandLoading(object parameter)
 {
+  this.ShowBusyIndicator = true;
   this.Events = this.GetAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
+  this.ShowBusyIndicator = false;
 }
 
 private bool CanExecuteOnDemandLoading(object sender)
