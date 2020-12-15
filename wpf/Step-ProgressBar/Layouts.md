@@ -177,7 +177,7 @@ grid.Children.Add(stepProgressBar);
 ![Items auto image](Layout_images/Itemsauto.png)
 
 ## MinimumItemSpacing
-You can customize the value that indicates the minimum space between the step view items when the `ItemStretch` is `Fill.` The following example shows how to customize the step view item's minimum space.
+You can customize the value that indicates the minimum space between the step view items when the `ItemStretch` is `Fill.` The default value of this property is `40.` The following example shows how to customize the step view item's minimum space.
 
 {% highlight xaml %}
 
