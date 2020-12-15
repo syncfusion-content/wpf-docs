@@ -384,10 +384,10 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
+N> For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from `Data` property of `ScheduleAppointment`.
 If an specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment exception.
 
-## How to get occurrence appointment at the specified date?
+### How to get occurrence appointment at the specified date?
 Gets an occurrence at the specified date within a series of recurring appointments.
 
 To get specific appointment by using the following event and passing parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
@@ -597,8 +597,8 @@ N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
  
 ## Add an exception appointment to the recurrence pattern
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
-You should map the equivalent properties of  `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact `Id` recurrence pattern appointment.
+You should map the equivalent properties of 1Id`, `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
 
 You should add the created exception recurrence appointment to the SfScheduler `ItemsSource`.
 {% tabs %}
