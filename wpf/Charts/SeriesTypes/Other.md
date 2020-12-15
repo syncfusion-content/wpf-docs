@@ -133,6 +133,36 @@ boxAndWhisker.ShowMedian = true;
 
 ![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
 
+## Outlier
+
+The outlier is used to display the outlier point that lies either below the lower whisker or above the upper whisker line and it is an observation that is numerically distant from the rest of the data.
+
+**ShowOutlier**
+
+The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`] property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to disable the [`ShowOutlier`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:BoxAndWhiskerSeries ShowOutlier="False">
+
+</chart:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowOutlier = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowOutlier support for Box and Whisker series in WPF Chart](Series_images/ShowOutlier.png)
+
 **Outlier Template**
 
 The default appearance of the outlier symbol can be customized by using the [`OutlierTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_OutlierTemplateProperty) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The following code illustrates how to customize the outlier symbol.
