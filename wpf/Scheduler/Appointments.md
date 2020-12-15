@@ -588,7 +588,7 @@ Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endtabs %}
 
 N> `RecurrenceId` of exception appointment and the `Id` of its pattern appointment should have same value. 
-• Exception recurrence appointment does not have `RucurrenceRule`, so for an exception appointment, it will be reset to empty.
+• Exception recurrence appointment does not have `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
 • `Id` should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
