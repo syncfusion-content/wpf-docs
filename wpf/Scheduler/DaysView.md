@@ -193,7 +193,7 @@ RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 
 ![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurrenceexceptiondates.png)
 
-`SpecialTimeRegion` in Date basis by setting value of     `CanMergeAdjacentRegions` is false.
+`SpecialTimeRegion` in Date basis by setting value of `CanMergeAdjacentRegions` is false.
 
 ![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurrenceexceptiondates.png)
 
