@@ -21,7 +21,7 @@ Reminder can be set by setting the `EnableReminder` property is `true`.The remin
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler reminder alert window](Reminder_Images/ReminderAlertWindow.png)
+![WPF Scheduler reminder alert window](Reminder_Images/ReminderWindow.png)
 
 
 ## Configuring scheduler reminder
