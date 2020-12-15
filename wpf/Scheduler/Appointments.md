@@ -117,23 +117,23 @@ You can schedule meetings for a day by setting `From` and `To` of Meeting class.
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for custom appointment class
+//Creating an instance for custom appointment class
 Meeting meeting = new Meeting();
-// Setting start time of an event
+//Setting start time of an event
 meeting.From = new DateTime(2020, 12, 15, 10, 0, 0);
-// Setting end time of an event
+//Setting end time of an event
 meeting.To = meeting.From.AddHours(2);
-// Setting start time for an event
+//Setting start time for an event
 meeting.EventName = "Meeting";
-// Setting background color for an event
+//Setting background color for an event
 meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
-// Setting foreground color for an event
+//Setting foreground color for an event
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
-// Creating an instance for collection of custom appointments
+//Creating an instance for collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
-// Adding a custom appointment in the CustomAppointmentCollection
+//Adding a custom appointment in the CustomAppointmentCollection
 Meetings.Add(meeting);
-// Adding custom appointments in the ItemsSource of SfScheduler
+//Adding custom appointments in the ItemsSource of SfScheduler
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -368,16 +368,16 @@ var date2 = 6/29/2020;
 You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
 ### Recurrence exception dates
-You can delete any occurrence appointment, which is exception from the recurrence pattern appointment by adding exception dates and `RecurrenceId` to the recurring appointment `Id`.
+You can delete any occurrence appointment, which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.
 
 ### Recurrence exception appointment
-You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment and `RecurrenceId` to the recurring appointment `Id` in the SfScheduler `ItemsSource`.
+You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the SfScheduler `ItemsSource`.
 
 ### Creating the recurrence exceptions for schedule appointment
-You can add the recurrence exception appointments and recurrence exception dates to `ScheduleAppointment`  or remove them from the `ScheduleAppointment` by using its [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates) and  `RecurrenceId` properties.
+You can add the recurrence exception appointments and recurrence exception dates to `ScheduleAppointment`  or remove them from the `ScheduleAppointment` by using its [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates).
 
 ### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any of occurrence which is exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` and  `RecurrenceId` properties of `Id` of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception date.
+You can delete any of occurrence which is exception from recurrence pattern appointment by using the `RecurrenceExceptionDates` of `Id` of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception date.
 
 {% tabs %}
 {% highlight c# %}
@@ -473,7 +473,7 @@ N>• `RecurrenceId` of exception appointment and the `Id` of its pattern appoin
 You can add the recurrence exception appointments and recurrence exception dates to the CustomAppointment or remove them from CustomAppointment, you can create a custom class `Meeting` with mandatory fields `RecurrenceExceptionDates` and `RecurrenceId`.
 
 ### Delete occurrence from the recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any occurrence which is an exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates`  and `RecurrenceId`properties of `AppointmentMapping` class which is used to map the exception dates to the `Id` of schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception date.
+You can delete any occurrence which is an exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the `Id` of schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception date.
 To add the exception dates in the recurrence series of custom appointment, add the `RecurrenceExceptionDates`,`EventName`,`From`,`To`,`Color`,`RecurrenceRule` and `RecurrenceId` properties to the custom class `Meeting`.
 
 {% tabs %}
@@ -493,7 +493,7 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property `RecurrenceExceptionDates` and `RecurrenceId` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
+You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
 
 {% tabs %}
 {% highlight xaml %}
@@ -681,8 +681,7 @@ The default appearance of schedule appointment can be customized in all views by
             VerticalAlignment="Center"
             Text="Meeting" 
             TextTrimming="CharacterEllipsis"
-            Foreground="{Binding Data.ForegroundColor}"        
-            TextWrapping="Wrap"
+            Foreground="{Binding Data.ForegroundColor}"        TextWrapping="Wrap"
             FontStyle="Italic"                       
             TextAlignment="Left"
             FontWeight="Bold"/>
