@@ -128,4 +128,6 @@ private IEnumerable GetAppointments(DateRange dateRange)
 {% endhighlight %}
 {% endtabs %}
 
+![Load on-demand in WPF Scheduler](LoadOnDemand_Images/LoadOnDemand.mp4)
+
 N> [View sample in GitHub]

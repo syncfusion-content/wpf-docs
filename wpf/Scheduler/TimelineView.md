@@ -75,7 +75,7 @@ N>
 * If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to ’37 minutes’ (555%37=0) by considering (total minutes % timeInterval = 0). it will return integer value for time slots rendering.
 
 ## Change days count
-You can change days count of timeslots in timeline view by setting `DaysCount` property of `TimelineViewSettings`. This property is only applicable for `TimelineDay` view. By dafault, its value is 1.
+You can change days count of timeslots in timeline view by setting `DaysCount` property of `TimelineViewSettings`. This property is only applicable for `TimelineDay` view. By default, its value is 1.
 
 {% tabs %}
 {% highlight xaml %}

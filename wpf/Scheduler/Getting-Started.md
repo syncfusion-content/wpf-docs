@@ -94,7 +94,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 ![WPF scheduler Month view](GettingStarted_images/month-view.png)
 
 ## Setting busy indicator
-Scheduler supports to provide busy indicator by setting `ShowBusyIndicator` propery as `true`. `DotCircle` type of indicator animation will be visible when current view changed in scheduler. You might start and stop the animation before and after the appointments loaded in `SfScheduler.QueryAppointments` and  `SfScheduler.LoadOnDemandCommand`.
+Scheduler supports to provide busy indicator by setting `ShowBusyIndicator` property as `true`. `DotCircle` type of indicator animation will be visible when current view changed in scheduler. You might start and stop the animation before and after the appointments loaded in `SfScheduler.QueryAppointments` and  `SfScheduler.LoadOnDemandCommand`.
 
 {% tabs %}   
 {% highlight xaml %}
