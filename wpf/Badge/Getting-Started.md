@@ -473,7 +473,7 @@ badge.VerticalPosition = 0.8;
 
 ## Animate when content changes
 
-You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [BadgeAnimationType]() property. You can only see the animation when you change the text of the `Badge`. The default value of `BadgeAnimationType` property is `None`.
+You can enable the `Scale` or `Opacity` based animation for displaying the `Badge` text by using [AnimationType]() property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -482,7 +482,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
         Height="50" 
         Content="Inbox">
     <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge BadgeAnimationType="Scale"
+        <syncfusion:SfBadge AnimationType="Scale"
                             x:Name="badge"/>
     </syncfusion:SfBadge.Badge>
 </Button>
@@ -501,7 +501,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = BadgeAnimationType.Scale;
+badge.AnimationType = BadgeAnimationType.Scale;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -540,7 +540,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
         Content="Inbox">
     <syncfusion:SfBadge.Badge>
         <syncfusion:SfBadge x:Name="badge"
-                            BadgeAnimationType="None"/>
+                            AnimationType="None"/>
     </syncfusion:SfBadge.Badge>
 </Button>
 
@@ -559,7 +559,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 {% endhighlight %}
 {% highlight C# %}
 
-badge.BadgeAnimationType = BadgeAnimationType.None;
+badge.AnimationType = BadgeAnimationType.None;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
