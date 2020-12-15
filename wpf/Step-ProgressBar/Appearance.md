@@ -132,3 +132,31 @@ grid.Children.Add(stepProgressBar);
 {% endhighlight %}
 {% endtabs %}
 ![ColorCutomization Image](Appearance_images/ConnectorCustomization.png)
+
+## MarkerClicked Event
+
+You can get the `StepViewItem` values when the marker of step view item is clicked. The following example shows this.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfStepProgressBar
+    SelectedIndex="2"
+    MarkerClicked="SfStepProgressBar_MarkerClicked">
+    <Syncfusion:StepViewItem Content="Ordered" />
+    <Syncfusion:StepViewItem Content="Packed" />
+    <Syncfusion:StepViewItem Content="Shipped" />
+    <Syncfusion:StepViewItem Content="Delivered" />
+</Syncfusion:SfStepProgressBar>
+{% endhighlight %}
+
+{% highlight C# %}
+private void SfStepProgressBar_MarkerClicked(object sender, MarkerClickedEventArgs e)
+{
+    ItemsControl itemsControl = ItemsControl.ItemsControlFromItemContainer(e.StepViewItem);
+    int index = itemsControl.ItemContainerGenerator.IndexFromContainer(e.StepViewItem);
+    (sender as SfStepProgressBar).SelectedIndex = index;
+}
+{% endhighlight %}
+{% endtabs %}
+![MarkerClicked image](Appearance_images/MarkerClicked.png)
