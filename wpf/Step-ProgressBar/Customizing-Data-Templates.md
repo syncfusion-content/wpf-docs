@@ -307,7 +307,7 @@ You can get or set the data template used to display the secondary content of `S
 Implementing the above code will create the following Step ProgressBar control.
 ![SecondaryContentTemplate image](Customizing-Data-Templates_images/SecondaryContentTemplate1.png)
 
-## SecondaryContentTemplateSelector
+## Secondary Content Template Selector
 
 Using the SecondaryContentTemplateSelector, you can use the different templates for the step secondary content depends on the step view item status. The following example shows this.
 
@@ -438,7 +438,7 @@ Using the SecondaryContentTemplateSelector, you can use the different templates 
 This will generate the following Step ProgressBar control.
 ![Item Template Selector image](Customizing-Data-Templates_images/SecondaryContentTemplateSelector.png)
 
-## SecondaryContentTemplate in Step View Item
+## Secondary Content Template in Step View Item
 
 You can get or set the data template used to display the secondary content of the `StepViewItem` by using the `SecondaryContentTemplate` property. The following example shows how to customize the step view item's secondary content with the DataTemplate.
 
