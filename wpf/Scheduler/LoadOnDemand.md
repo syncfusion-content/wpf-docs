@@ -10,7 +10,7 @@ documentation: ug
 The scheduler supports to loading appointment on-demand with loading indicator and its improves the loading performance when you have appointments range for multiple years.
 
 ## Load on-demand on recurring appointment
- A recurring appointment series is never stored in the underlying data source. The data source only contains records for the pattern and changed appointments. For example, you have 2 pattern appointments, where each appointment generates a series of 10 regular appointments. Thus, only 2 pattern appointments are stored in the underlying data source, in place of 20 appointments. When a pattern appointment is loaded into the Schedule, the control calculates the recurring series and displays appointments from the series in the active view.
+  Scheduler control calculates the recurring series and displays appointments from the series in the active view. You can get pattern appointment from `RecurrenceHelper.GetPatternAppointment` method, If recurrence appointment in visible date range. 
 
 * The recurrence appointment should be added to the Scheduler [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) until the date of recurrence ends.
 
