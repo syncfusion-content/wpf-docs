@@ -1,14 +1,14 @@
 ---
 layout: post
-title: SimpleMenuButton for Syncfusion's Ribbon control for WPF
-description: SimpleMenuButton for Syncfusion's Ribbon control for WPF
+title: SimpleMenuButton in Syncfusion Ribbon control
+description: This section briefly describes the various functionalities in SimpleMenuButton in Syncfusion Ribbon control.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# SimpleMenuButton
+# SimpleMenuButton in WPF Ribbon
 
-`SimpleMenuButton` provides functionality similar to other menu button and it doesn't carries a sub menu. It can be used with `ApplicationMenu`.
+`SimpleMenuButton` provides functionality similar to other menu button and it doesn't carries a sub menu. It can be used with `ApplicationMenu` and can be placed inside the **RibbonBar** in Ribbon control.
 
 ## Setting Icon
 
