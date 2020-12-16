@@ -39,6 +39,33 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 
 You can decides whether the automatic completion of text and the filtering are case-sensitive or not by setting [AllowCaseSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowCaseSensitiveFiltering) as true.
 
+## Diacritic Sensitivity
+
+You can filter only the diacritics letters contains data in SfMultiColumnDropDownControl by set the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property value as true.
+
+{% tabs %}
+{% highlight xml %}
+<Syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+										 HorizontalAlignment="Left"
+										 AutoGenerateColumns="False"
+										 AllowIncrementalFiltering="True"
+										 AllowImmediatePopup="True"    
+										 AllowDiacriticSensitiveFiltering="True"   
+										 VerticalAlignment="Top"
+										 DisplayMember="Continent"
+										 ItemsSource="{Binding PopulationDetails}">
+</Syncfusion:SfMultiColumnDropDownControl>
+{% endhighlight %}
+{% endtabs %}
+
+![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img3.gif)
+
+If you want to filter the both diacritics contains data and diacritics not contains data by set false to the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property. 
+
+![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img4.gif)
+ 
+N> The defult value of AllowDiacriticSensitiveFiltering property is true.
+
 ## How to filter SfMultiColumnDropDownControl based on various column values
 
 By default, SfMultiColumnDropDownControl filter the text based on `DisplayMember` (considers single column text only). You can also filter the text based on multiple columns by overriding the [FilterRecord](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_FilterRecord_System_Object_) method in `SfMultiColumnDropDownControl` and use the [SearchText](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_SearchText) property to get the entered text in editor.
