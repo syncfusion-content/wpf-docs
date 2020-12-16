@@ -9,7 +9,7 @@ documentation: ug
 
 # CRUD operations in WPF TreeView (SfTreeView)
 
-TreeView listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/treeview/editing), [delete]() by pressing <kbd>Delete</kbd> key.
+TreeView listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/treeview/editing), `delete` by pressing <kbd>Delete</kbd> key.
 
 ## Add Nodes
 
@@ -27,14 +27,14 @@ this.treeView.Nodes.Add(new TreeViewNode(){ Content = "NewlyAddedNode" });
 
 ## Delete Nodes
 
-TreeView provides built-in support to delete the selected nodes in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the SfTreeView.AllowDeleting property to true.
+TreeView provides built-in support to delete the selected nodes in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the `SfTreeView.AllowDeleting` property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeView  
                 x:Name="sfTreeView" 
 				AllowDeleting="True"
-				ChildPropertyName="Files"
+				ChildPropertyName="States"
                 ItemsSource="{Binding Countries}"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ sfTreeView.View.Nodes.RemoveAt(2);
 
 #### Conditionally deleting nodes when pressing Delete key
 
-You can cancel the node deletion by using the [ItemDeletingEventArgs.Cancel]() of [ItemDeleting]() event. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes]().
+You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of `ItemDeleting` event. You can skip certain nodes when deleting more than one node by removing items from `ItemDeletingEventArgs.Nodes`.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void TreeView_ItemDeleting (object sender, ItemDeletingEventArgs e)
 
 #### Handling selection after deleting the node from SfTreeView
 
-You can handle the selection after remove the nodes through [SelectedItem]() property of [ItemDeleted]() event.
+You can handle the selection after remove the nodes through `SfTreeView.SelectedItem` property in `ItemDeleted` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -110,4 +110,4 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 
 ## Modify Nodes
 
-Treeview allows user to modify the data in a node by [editing]().
+Treeview allows user to modify the data in a node by [editing](https://help.syncfusion.com/wpf/treeview/editing).
