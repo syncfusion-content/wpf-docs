@@ -1621,7 +1621,7 @@ Syncfusion.SfRichTextRibbon.WPF
 <td> 
 Syncfusion.SfScheduler.WPF <br/>
 Syncfusion.SfInput.WPF<br/>
-Syncfusion.SfBusyIndicator.WPF<br/>
+Syncfusion.SfBusyIndicator.WPF<br//>
 Syncfusion.SfSkinManager.WPF<br/>
 Syncfusion.SfShared.WPF <br/>
 Syncfusion.Shared.WPF<br/>
