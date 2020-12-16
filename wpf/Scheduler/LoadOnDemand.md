@@ -9,7 +9,7 @@ documentation: ug
 # Load On Demand in WPF Scheduler (SfScheduler)
 The scheduler supports to loading appointment on-demand with loading indicator and its improves the loading performance when you have appointments range for multiple years.
 
-![Load on-demand in WPF Scheduler](LoadOnDemand_Images/LoadOnDemand.mp4)
+![Load on-demand in WPF Scheduler](LoadOnDemand_Images/LoadOnDemand.gif)
 
 ## QueryAppointments event
 `QueryAppointments` event is used to load appointment in on-demand for visible date range. You might start and stop the loading indicator animation before and after the appointments loaded using `ShowBusyIndicator`.
