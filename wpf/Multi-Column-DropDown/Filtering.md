@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Filtering
+# Filtering in SfMultiColumnDropDownControl
 
 SfMultiColumnDropDownControl provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
 
@@ -41,7 +41,10 @@ You can decides whether the automatic completion of text and the filtering are c
 
 ## Ignore Diacritic Sensitivity
 
-By default you can filter the diacritic letters contains data in SfMultiColumnDropDownControl by type the diacritic letter in the editor of SfMultiColumnDropDownControl.You can ignore the diacritic sensitivity while filtering by set false to the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property.Then you can get the filter result as both diacritic contains data and diacritic not contains data.  
+[5:10 PM] Amal Raj Umapathy Selvam
+    
+
+By default, SfMultiColumnDropDownControl filters or auto completes the diacritic letters contains data by typing the diacritic letter in the editor. You can ignore the diacritic sensitive filtering or auto complete by disabling the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property.
 
 {% tabs %}
 {% highlight xml %}
