@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-# EditControl Members
+# WPF EditControl Members
 
 EditControl class contains variety of properties, methods and events to enable the developers utilize this control easily. It is enhanced with maximum possible level of customization and facilities that are provided for the developers to use these controls effectively. This topic discusses about the properties, methods and events available in the EditControl class.
 
