@@ -64,7 +64,7 @@ If you want to filter the both diacritics contains data and diacritics not conta
 
 ![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img4.gif)
  
-N> The defult value of AllowDiacriticSensitiveFiltering property is true.
+N> The default value of AllowDiacriticSensitiveFiltering property is true.
 
 ## How to filter SfMultiColumnDropDownControl based on various column values
 
