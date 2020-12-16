@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support of Syncfusion WPF Controls
 
 ## Gesture
 
