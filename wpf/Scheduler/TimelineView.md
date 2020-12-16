@@ -121,7 +121,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 ![WPF Scheduler TimelineMonth view BlackoutDates](Timeline_Images/BlackoutDates.png)
 
 ## Special time regions
-You can restrict the user interaction such as selection and highlights specific regions of time in timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html)). You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.  This property will be applicable to `TimelineDay`, `TimelineWeek`and `TimelineWorkWeek` views.
+You can restrict the user interaction such as selection and highlights specific regions of time in timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.  This property will be applicable to `TimelineDay`, `TimelineWeek`and `TimelineWorkWeek` views.
 
 ### Selection restriction in timeslots
 You can enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, its value is true.
@@ -159,7 +159,7 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![Selection restriction in timeslots in WPF Scheduler](Timeline_images/adding-Selectionrestrictionintimeslots.png)
 
-N>NOTE
+N>
 This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically)
 * Does not clear the selection when the user selects the region and dynamically change
@@ -321,7 +321,7 @@ Schedule.TimelineViewSettings.MinimumAppointmentDuration = new System.TimeSpan(0
 {% endhighlight %}
 {% endtabs %}
 
-N>NOTE
+N>
 * The `MinimumAppointmentDuration` value will be set, when an appointment duration value lesser than `MinimumAppointmentDuration`.
 * Appointment duration value will be set, when the appointment duration value greater than `MinimumAppointmentDuration`.
 * `TimeInterval` value will be set, when `MinimumAppointmentDuration` greater than `TimeInterval` with lesser appointment duration.
