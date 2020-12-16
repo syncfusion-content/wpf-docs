@@ -286,4 +286,9 @@ A PropertyChangedCallback gets raised when the text in the EditControl is select
 TextChanged<br/><br/></td><td>
 PropertyChangedCallback<br/><br/></td><td>
 A PropertyChangedCallback get raised when the text in the EditControl gets changed.<br/><br/></td></tr>
+<tr>
+<td>
+CaretPositionChanged<br/><br/></td><td>
+EventHandler<br/><br/></td><td>
+This event will be raised when the caret index of the text in the EditControl is changed.<br/><br/></td></tr>
 </table>
