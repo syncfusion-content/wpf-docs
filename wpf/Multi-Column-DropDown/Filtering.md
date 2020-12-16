@@ -40,10 +40,7 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 You can decides whether the automatic completion of text and the filtering are case-sensitive or not by setting [AllowCaseSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowCaseSensitiveFiltering) as true.
 
 ## Ignore Diacritic Sensitivity
-
-[5:10 PM] Amal Raj Umapathy Selvam
     
-
 By default, SfMultiColumnDropDownControl filters or auto completes the diacritic letters contains data by typing the diacritic letter in the editor. You can ignore the diacritic sensitive filtering or auto complete by disabling the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property.
 
 {% tabs %}
