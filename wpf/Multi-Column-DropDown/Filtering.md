@@ -39,9 +39,9 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 
 You can decides whether the automatic completion of text and the filtering are case-sensitive or not by setting [AllowCaseSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowCaseSensitiveFiltering) as true.
 
-## Diacritic Sensitivity
+## Ignore Diacritic Sensitivity
 
-You can filter only the diacritics letters contains data in SfMultiColumnDropDownControl by set the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property value as true.
+By default you can filter the diacritic letters contains data in SfMultiColumnDropDownControl by type the diacritic letter in the editor of SfMultiColumnDropDownControl.You can ignore the diacritic sensitivity while filtering by set false to the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property.Then you can get the filter result as both diacritic contains data and diacritic not contains data.  
 
 {% tabs %}
 {% highlight xml %}
@@ -50,7 +50,7 @@ You can filter only the diacritics letters contains data in SfMultiColumnDropDow
 										 AutoGenerateColumns="False"
 										 AllowIncrementalFiltering="True"
 										 AllowImmediatePopup="True"    
-										 AllowDiacriticSensitiveFiltering="True"   
+										 AllowDiacriticSensitiveFiltering="False"   
 										 VerticalAlignment="Top"
 										 DisplayMember="Continent"
 										 ItemsSource="{Binding PopulationDetails}">
@@ -59,10 +59,6 @@ You can filter only the diacritics letters contains data in SfMultiColumnDropDow
 {% endtabs %}
 
 ![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img3.gif)
-
-If you want to filter the both diacritics contains data and diacritics not contains data by set false to the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property. 
-
-![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img4.gif)
  
 N> The default value of AllowDiacriticSensitiveFiltering property is true.
 
