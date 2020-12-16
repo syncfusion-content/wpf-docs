@@ -55,6 +55,8 @@ SkinStorage.SetVisualStyle(notifyIcon, "Office2007Silver");
 
 {% endhighlight %}
 
+{% endtabs %}
+
 **Office2007Blue**
 
 ![Apply Office2007Blue theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-office2007Blue.png)
