@@ -10,9 +10,120 @@ documentation: ug
 
 `SimpleMenuButton` provides functionality similar to other menu button and it doesn't carries a sub menu. It can be used with `ApplicationMenu` and it can also be placed inside the `RibbonBar` in Ribbon control.
 
-## Setting Icon
+{% tabs %}
 
-[`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) allows to set image path using [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon) property as below.
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="TemplateSupport.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateSupport"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"                 
+        mc:Ignorable="d"
+        skinManager:SfSkinManager.VisualStyle="MaterialLight"
+         Height="450" Width="800">
+    <Grid>
+        <syncfusion:Ribbon Name="_Ribbon1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <syncfusion:RibbonTab Name="_RibbonTab1" Caption="HOME"  IsChecked="False">
+            <syncfusion:RibbonBar Name="_RibbonBar1" Header="RibbonBar1">
+            <syncfusion:SimpleMenuButton Icon="/Resources/Copy16.png" Label="Open"/>
+            </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="EDIT"  IsChecked="False"/>
+               <syncfusion:Ribbon.ApplicationMenu>
+                    <syncfusion:ApplicationMenu Name="_ApplicationMenu" Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" IsPopupOpen="False" ApplicationButtonImage="/Resources/App.ico">
+                        <syncfusion:SimpleMenuButton Label="File"/>
+                        <syncfusion:SimpleMenuButton Label="Open"/>
+                    </syncfusion:ApplicationMenu>
+                </syncfusion:Ribbon.ApplicationMenu>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Create an instance of SimpleMenuButton and add it to ApplicationMenu through code behind.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.SfSkinManager;
+using Syncfusion.Windows.Tools.Controls;
+using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
+
+namespace TemplateSupport
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : RibbonWindow
+    {
+        public MainWindow()
+        {
+            InitializeComponent(); 
+            Ribbon ribbon = new Ribbon();
+            ribbon.VerticalAlignment = VerticalAlignment.Top;
+            // Creating new tabs
+            RibbonTab homeTab = new RibbonTab();
+            homeTab.Caption = "Home";
+            homeTab.IsChecked = true;
+            RibbonTab editTab = new RibbonTab();
+            editTab.Caption = "Edit";
+            // Creating new bar
+            RibbonBar ribbonBar = new RibbonBar();
+            ribbonBar.Header = "Clipboard";
+            // Creating items
+            ApplicationMenu _ApplicationMenu = new ApplicationMenu();
+            ribbon.ApplicationMenu = _ApplicationMenu;
+            SimpleMenuButton _SimpleMenuButton = new SimpleMenuButton() { Label = "File", Width = 100 };        
+            SimpleMenuButton _SimpleMenuButton1 = new SimpleMenuButton() { Label = "Open", Width = 100 };
+            SimpleMenuButton _SimpleMenuButton2 = new SimpleMenuButton() { Label = "Menu", Width = 100 };
+            _ApplicationMenu.Items.Add(_SimpleMenuButton);
+            _ApplicationMenu.Items.Add(_SimpleMenuButton1);
+            ribbonBar.Items.Add(_SimpleMenuButton2);
+            homeTab.Items.Add(ribbonBar);
+            ribbon.Items.Add(homeTab);
+            ribbon.Items.Add(editTab);
+            grid.Children.Add(ribbon);
+            SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim _SimpleMenuButton As New SimpleMenuButton() With {
+	.Label = "File",
+	.Width = 100
+}
+Dim _SimpleMenuButton1 As New SimpleMenuButton() With {
+	.Label = "Open",
+	.Width = 100
+}
+_ApplicationMenu.Items.Add(_SimpleMenuButton)
+_ApplicationMenu.Items.Add(_SimpleMenuButton1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Setting image to SimpleMenuButton
+
+The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) allows to display any type of image such as glyph, font or any custom content using `IconTemplate` property.  It also allows to display a normal image using [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon) property.
+
+### Setting Icon
+
+The [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon) property is used to set the image path directly to the `SimpleMenuButton`.
 
 {% tabs %}
 
@@ -101,21 +212,6 @@ namespace TemplateSupport
         }
     }
 }
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim _SimpleMenuButton As New SimpleMenuButton() With {
-	.Label = "File",
-	.Width = 100
-}
-Dim _SimpleMenuButton1 As New SimpleMenuButton() With {
-	.Label = "Open",
-	.Width = 100
-}
-_ApplicationMenu.Items.Add(_SimpleMenuButton)
-_ApplicationMenu.Items.Add(_SimpleMenuButton1)
 
 {% endhighlight %}
 
