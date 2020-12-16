@@ -21,7 +21,7 @@ Treeview allows user to add new node directly to the underlying collection using
 (sfTreeView.DataContext as ViewModel).Countries.Add(new Country() { Name = "Newly added country"});
 
 // For Unbound mode
-this.treeView.Nodes.Add(new TreeViewNode(){ Content = "NewlyAddedNode" });
+sfTreeView.Nodes.Add(new TreeViewNode(){ Content = "NewlyAddedNode" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,9 +100,9 @@ sfTreeView.ItemDeleted += TreeView_ItemDeleted;
 
 private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 {
-    if(this.treeView.Nodes.Count > 0)
+    if(sfTreeView.Nodes.Count > 0)
     {
-        this.treeView.SelectedItem = this.treeView.Nodes[0].Content;
+        sfTreeView.SelectedItem = sfTreeView.Nodes[0].Content;
     }
 }
 {% endhighlight %}
