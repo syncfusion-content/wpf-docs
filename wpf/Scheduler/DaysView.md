@@ -236,7 +236,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-Timebasis_Specialtimeregioncustomization.png)
 
-The `SpecialTimeRegion` can be customized in Date basis by setting the value of `CanMergeAdjacentRegions` is false.
+The `SpecialTimeRegion` can be customized in a Date basis by setting the value of `CanMergeAdjacentRegions` is false.
 
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-datebasis_Specialtimeregioncustomization.png)
 
