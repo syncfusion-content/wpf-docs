@@ -1051,56 +1051,69 @@ SyncDockingManager.DockFillDocumentMode = DockFillDocumentMode.Normal;
 
 ## Applying Context Menu
 
-DockingManager allows to add  CustomContextMenuItems for Dock and Float windows through an attached property [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems). 
+You can add custom context menu items for dock and float windows through an attached property [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_CustomMenuItems) property. You can also add sub menu items for custom context menu item by adding that sub `CustomMenuItem` to the parent [CustomMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CustomMenuItem.html). You can check or uncheck the `CustomMenuItem` interactively or programmatically by using the `CustomMenuItem.IsChecked` property. 
+
+You can collapse the default context menu and show only the custom context menu items by setting the [CollapseDefaultContextMenuItemsInFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CollapseDefaultContextMenuItemsInFloatProperty) property to `true`. The default value of `CollapseDefaultContextMenuItemsInFloat` property is `false`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="DockingManager1">  
-	
-<syncfusion:DockingManager.CustomMenuItems>
-	
-<syncfusion:CustomMenuItemCollection>
-	
-<syncfusion:CustomMenuItem Header="CustomItem1"/>
-	
-<syncfusion:CustomMenuItem Header="CustomItem2"/>
-	
-</syncfusion:CustomMenuItemCollection>
+<syncfusion:DockingManager
+    DockFill="True"
+    Name="dockingManager" >
+    
+    <!--Adding custom context menu items for float windows-->
+    <syncfusion:DockingManager.FloatWindowContextMenuItems>
+        <syncfusion:CustomMenuItemCollection>
+            <!--Adding custom context menu items-->
+            <syncfusion:CustomMenuItem Header="Menu 1"/>
+            <syncfusion:CustomMenuItem Header="Menu 2">
 
-</syncfusion:DockingManager.CustomMenuItems>    
+                <!--Adding sub custom context menu items-->
+                <syncfusion:CustomMenuItem Header="SubMenu 1"/>
+                <syncfusion:CustomMenuItem Header="SubMenu 2"/>
+                <syncfusion:CustomMenuItem Header="SubMenu 3" IsChecked="True"/>
+            </syncfusion:CustomMenuItem>
+        </syncfusion:CustomMenuItemCollection>
+    </syncfusion:DockingManager.FloatWindowContextMenuItems>
 
-<ContentControl syncfusion:DockingManager.Header="Item1"/> 
-	               
+    <ContentControl syncfusion:DockingManager.Header="Item 1"
+                    syncfusion:DockingManager.State="Dock"/>
+    <ContentControl syncfusion:DockingManager.Header="Item 2"
+                    syncfusion:DockingManager.State="Dock"/>
+    <ContentControl syncfusion:DockingManager.Header="Float Window"
+                    syncfusion:DockingManager.CollapseDefaultContextMenuItemsInFloat="True"
+                    syncfusion:DockingManager.State="Float"/>
 </syncfusion:DockingManager>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-CustomMenuItemCollection collection = new CustomMenuItemCollection();
+//Creating custom context menu items
+CustomMenuItem menu1 = new CustomMenuItem();
+menu1.Header = "Menu 1";
+CustomMenuItem menu2 = new CustomMenuItem();
+menu2.Header = "Menu 2";
 
-CustomMenuItem item1 = new CustomMenuItem();
+//Creating custom sub context menu items
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "SubMenu 1" };
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "SubMenu 2" };
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "SubMenu 3", IsChecked = true };
 
-CustomMenuItem item2 = new CustomMenuItem();
+menu2.Items.Add(customMenuItem1);
+menu2.Items.Add(customMenuItem2);
+menu2.Items.Add(customMenuItem3);
 
-item1.Header = "CustomItem1";
-
-item2.Header = "CustomItem2";
-
-collection.Add(item1);
-
-collection.Add(item2);
-
-DockingManager.SetCustomMenuItems(DockingManager1, collection);
+//Adding custom context menu items with sub menu items
+dockingManager.FloatWindowContextMenuItems.Add(menu1);
+dockingManager.FloatWindowContextMenuItems.Add(menu2);
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![Adding Custom ContextMenuItems](Dealing-with-Windows_images/Dealing-with-Windows_img23.jpeg)
+![Added custom context menu with sub items for dock and float windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img23.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu) 
 
 ### Adding CustomContextMenuItems to Document window
 
