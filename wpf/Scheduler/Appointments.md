@@ -385,7 +385,7 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endtabs %}
 
 N> For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment`.
-If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment exception.
+If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
 
 ### How to get occurrence appointment at the specified date?
 Gets an occurrence at the specified date within a series of recurring appointments.
@@ -406,8 +406,7 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> If an occurrence at the specified date is changed, the `GetOccurrenceAppointment` method returns the changed occurrence (Recurrence Exception dates).
- If an occurrence at the specified date is deleted or not present,then the `GetOccurrenceAppointment` method returns null.
+N> If an occurrence at the specified date is deleted or not present,then the `GetOccurrenceAppointment` method returns null.
 
 ## Recurrence pattern exceptions
 You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
