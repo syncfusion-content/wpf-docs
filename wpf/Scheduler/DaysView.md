@@ -75,7 +75,7 @@ N>
 ## Special time regions
 You can restrict the user interaction such as selection and highlights specific regions of time in day, week, work week views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of `SfScheduler`. You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of `SpecialTimeRegion` to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.
 
-You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using `CanMergeAdjacentRegions` property of `SpecialTimeRegion`in the week and workweek views. By default, its value is false.
+You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the `CanMergeAdjacentRegions` property of `SpecialTimeRegion`in the week and workweek views. By default, its value is false.
 
 ### Selection restriction in timeslots
 You can enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, its value is true.
@@ -124,7 +124,7 @@ in the region
 ### Recurring time region
 The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in `SpecialTimeRegion`.
 
-You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using `CanMergeAdjacentRegions` property of `SpecialTimeRegion` in the week and workweek views. By default, its value is false.
+You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the `CanMergeAdjacentRegions` property of `SpecialTimeRegion` in the week and workweek views. By default, its value is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +161,7 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endtabs %}
 ![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurringtimeregion.png)
 
-If set `CanMergeAdjacentRegions` of `SpecialTimeRegion` is false. SpecialTimeRegion will be rendering on Date basis.
+If the `CanMergeAdjacentRegions` of `SpecialTimeRegion` is set to false. The SpecialTimeRegion will be rendering on Date basis.
 
 ![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurringtimeregion.png)
 
@@ -193,7 +193,7 @@ RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 
 ![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurrenceexceptiondates.png)
 
-`SpecialTimeRegion` in Date basis by setting value of `CanMergeAdjacentRegions` is false.
+The `SpecialTimeRegion` in Date basis by setting the value of `CanMergeAdjacentRegions` is false.
 
 ![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurrenceexceptiondates.png)
 
@@ -236,7 +236,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-Timebasis_Specialtimeregioncustomization.png)
 
-`SpecialTimeRegion` can be customized in Date basis by setting value of `CanMergeAdjacentRegions` is false.
+The `SpecialTimeRegion` can be customized in Date basis by setting the value of `CanMergeAdjacentRegions` is false.
 
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-datebasis_Specialtimeregioncustomization.png)
 
