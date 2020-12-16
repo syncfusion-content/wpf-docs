@@ -9,7 +9,7 @@ documentation: ug
 # Reminder in WPF Scheduler (SfScheduler)
 Scheduler alerts you for particular appointment with reminder window when enable the `EnableReminder` property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 
-## Enable reminder for an appointment
+## Enable reminder
 Reminder can be set by setting the `EnableReminder` property is `true`.The reminder time can be set using the `Reminders` property of ScheduleAppointment.
 
 {% tabs %}
@@ -24,7 +24,7 @@ Reminder can be set by setting the `EnableReminder` property is `true`.The remin
 ![WPF Scheduler reminder alert window](Reminder_Images/ReminderWindow.png)
 
 
-## Add reminders for the appointments
+## Adding reminders
 You can configure appointment reminders with ScheduleReminder.
 `SchedulerReminder` has the following properties for reminder alert,
 
@@ -77,7 +77,7 @@ scheduleAppointments.Add(new ScheduleAppointment
 {% endhighlight %}
 {% endtabs %}
 
-## Create business object for reminder  
+## Creating business object for reminder  
 Reminders supports to map your custom object with `ScheduleAppointment.Reminders`.
 
 {% tabs %}
