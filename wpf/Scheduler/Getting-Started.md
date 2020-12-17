@@ -94,7 +94,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 ![WPF scheduler Month view](GettingStarted_images/month-view.png)
 
 ## Show busy indicator
-Scheduler supports to show the busy indicator by using the `ShowBusyIndicator` property . Its value is `true` will load on view or visible date changed by default.
+The Scheduler supports to show the busy indicator by using the `ShowBusyIndicator` property. Its value will be set to `true` by default when the load on view or visible date changed.
 
 {% tabs %}   
 {% highlight xaml %}

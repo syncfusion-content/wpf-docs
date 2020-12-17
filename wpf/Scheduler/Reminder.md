@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Appointment Reminder in scheduler | WPF| Syncfusion
-description: WPF scheduler allows you to display reminder alert with collection of reminders for a particular appointments.
+description: WPF scheduler allows you to display reminder alert with the collection of reminders for particular appointments.
 platform: WPF
 control: SfScheduler
 documentation: ug
 ---
 # Reminder in WPF Scheduler (SfScheduler)
-Scheduler alerts you for particular appointment with reminder window when enable the `EnableReminder` property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
+Scheduler alerts you for a particular appointment with a reminder window when enabling the `EnableReminder` property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
 
 ## Enable reminder
-Reminder can be set by setting the `EnableReminder` property is `true`.The reminder time can be set using the `Reminders` property of ScheduleAppointment.
+Reminder can be set by setting the `EnableReminder` property is `true.` The reminder time can be set using the `Reminders` property of ScheduleAppointment.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,8 +25,7 @@ Reminder can be set by setting the `EnableReminder` property is `true`.The remin
 
 
 ## Adding reminders
-You can configure appointment reminders with ScheduleReminder.
-`SchedulerReminder` has the following properties for reminder alert,
+You can configure the appointment reminders with ScheduleReminder. The `SchedulerReminder` has the following properties for reminder alert,
 
 <table>
 <tr>
@@ -48,7 +47,7 @@ You can configure appointment reminders with ScheduleReminder.
 </tr>
 <tr>
 <td>Data</td>
-<td>Gets the reminder data object associated with `SchedulerReminder`.</td>
+<td>Gets the reminder data object associated with the `SchedulerReminder.`</td>
 </tr>
 <tr>
 <td>IsDismissed</td>
@@ -78,7 +77,7 @@ scheduleAppointments.Add(new ScheduleAppointment
 {% endtabs %}
 
 ## Creating business object for reminder  
-Reminders supports to map your custom object with `ScheduleAppointment.Reminders`.
+Reminders supports to map your custom object with the `ScheduleAppointment.Reminders.`
 
 {% tabs %}
 {% highlight c#%}
@@ -95,10 +94,10 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-`ReminderMapping` provides the mapping information about `SchedulerReminder` properties to `Data` object.ReminderMapping has the following properties for reminder alert,
+The `ReminderMapping` provides the mapping information about the `SchedulerReminder` properties to the `Data` object.ReminderMapping has the following properties for reminder alert,
 
-* `ReminderTimeInterval` - Maps the property name of custom class, which is equivalent for `SchedulerReminder.ReminderTimeInterval`.
-* `IsDismissed` -  Maps the property name of custom class, which is equivalent for `SchedulerReminder.IsDismissed`.
+* `ReminderTimeInterval` - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
+* `IsDismissed` - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
 
 {% tabs %}
 {% highlight c#%}
@@ -139,7 +138,7 @@ public class CustomReminder : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can map those properties of `Meeting` class with our [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and also map `CustomReminder` properties with `SchedulerReminder` by using `ReminderMapping`.
+You can map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -177,9 +176,9 @@ Meetings.Add(new Meeting
 {% endtabs %}
 
 ## ReminderAlertOpening event
-Scheduler notifies by `ReminderAlertOpening` event when appearing the reminder window. `ReminderAlertOpeningEventArgs` has following properties.
+Scheduler notifies by the `ReminderAlertOpening` event when appearing in the reminder window. The `ReminderAlertOpeningEventArgs` has following properties,
 * `Reminders` - Gets a list of reminders that are used to display the appointment reminders in the reminder alert window.
-* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid reminder window opening by enabling this property.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid the reminder window opening by enabling this property.
 
 {% tabs %}
 {% highlight c#%}

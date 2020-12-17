@@ -140,7 +140,7 @@ Port: Drag, Connect.</td>
 <td>Scheduler</td>
 <td>View swiping, Scrolling and Dragging </td>
 <td>-</td>
-<td>Tap support for Cell selection , Appointment selection and Double tap support to appointment editor.</td>
+<td>Tap support for the Cell selection, Appointment selection, and Double-tap support to the appointment editor.</td>
 <td>-</td>
 </tr>
 
