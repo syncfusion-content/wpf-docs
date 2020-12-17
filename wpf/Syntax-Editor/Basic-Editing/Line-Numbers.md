@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Numbers property of the Edit Control for WPF
-description: Line Numbers property of the Edit Control for WPF
+title: Line Numbers property of the Syncfusion Edit Control for WPF
+description: Line Numbers property of the Syncfusion Edit Control for WPF used to show the line numbers for the content in the EditControl.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -36,7 +36,7 @@ The following image displays hidden line numbers.
 
 
 
-![](Line-Numbers_images/Line-Numbers_img1.jpeg)
+![Line Number](Line-Numbers_images/Line-Numbers_img1.jpeg)
 
 ## Events
 
