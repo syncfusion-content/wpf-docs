@@ -11,6 +11,8 @@ documentation: ug
 
 The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped onto the diagram surface at any number of times.
 
+**ComboBox View**
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -37,12 +39,43 @@ Stencil stencil = new Stencil()
 
 ![StencilDiagram](Stencil_images/Stencil_img1.PNG)
 
-## How to add Symbol into the Stencil
+**ListView**
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Namespace for stencil-->
+xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
+
+<!--Define the Stencil-->
+<stencil:Stencil x:Name="stencil" ExpandMode="All" SymbolFilterDisplayMode="List" BorderBrush="Black" BorderThickness="0,0,2,0" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Define Stencil
+Stencil stencil = new Stencil()
+{
+    ExpandMode = ExpandMode.All,
+    BorderThickness = new Thickness(0,0,1,0),
+    BorderBrush = new SolidColorBrush(Colors.Black),
+    SymbolFilterDisplayMode = SymbolFilterDisplayMode.List
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+![StencilDiagram](Stencil_images/Stencil_List.PNG)
+
+## Add Symbols in Stencil 
 
 The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in Stencil that can be created using the following ways:
  
  * Using the Diagram Elements 
- * SymbolViewModel
+ * Using the SymbolViewModel
+ * Customize the Symbol appearance
+ * Add name and tooltip to the Symbol 
  
  The Stencil's [SymbolSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) property is used to define the data source as a collection of objects (symbol,node,connector....) that needs to be populated as Symbols.
  
@@ -236,7 +269,7 @@ public class SymbolCollection : ObservableCollection<Object>
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-symbols)
 
-### How to customize the Symbol appearance
+### Customize the Symbol appearance
 
 You can customize the appearance of a `Symbol` by changing its Style (Background,BorderThickness,BorderBrush,and Padding). The following code explains how to customize the appearance of the symbol.
 
@@ -263,7 +296,10 @@ The width and height properties of symbol enables you to define the size of the 
 
 ![Symbol](Stencil_images/imagenode1.PNG) 
 
-### How to add tooltip to the Symbol 
+### Add tooltip to the Symbol
+By default, ["Name"](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) property of the diagramming objects(Node, Connector, Group...) have bound with ToolTip of the Symbol. So we just mentioned the tooltip content to name property. 
+
+The data context of the symbol is diagramming objects. So if we add any property in the diagramming objects, we can bind into symbol.
 
 {% tabs %}
 
@@ -272,7 +308,7 @@ The width and height properties of symbol enables you to define the size of the 
  <!--Style for Symbol-->
         <Style TargetType="stencil:Symbol">
             <Setter Property="ToolTip"
-                        Value="{Binding Symbol}"></Setter>
+                        Value="{Binding Name}"></Setter>
             <Setter Property="Width" Value="100" />
             <Setter Property="Height" Value="100" />
             <Setter Property="BorderThickness" Value="1" />
@@ -294,7 +330,31 @@ The [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 {% tabs %}
 {% highlight xaml %}
 
-<stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" x:Name="stencil">
+<Style TargetType="sync:Node">
+ <Setter Property="ShapeStyle">
+ <Setter.Value>
+    <Style TargetType="Path">
+      <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+      <Setter Property="Stretch" Value="Fill"></Setter>
+    </Style>
+ </Setter.Value>
+ </Setter>
+</Style>
+<Style TargetType="sync:Connector">
+   <Setter Property="ConnectorGeometryStyle">
+   <Setter.Value>
+     <Style TargetType="Path">
+       <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+     </Style>
+   </Setter.Value>
+  </Setter>
+</Style>
+
+<DataTemplate x:Key="TitleTemplate">
+   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" />
+</DataTemplate>
+
+<stencil:Stencil Grid.Column="0" BorderThickness="1" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" BorderBrush="#dfdfdf" x:Name="stencil">
     <!--Initialize the SymbolSource-->
     <stencil:Stencil.SymbolSource>
     <!--Define the SymbolCollection-->
@@ -458,8 +518,24 @@ You can customize the appearance of a `SymbolGroup` by changing its Style. The f
  
 {% endtabs %}
 
+## SymbolFilterProvider
+[SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is a collection of filters in stencil. 
 
-## Symbol Filters
+### Content 
+ The [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) property of the SymbolFilterProvider is used to update the content of the symbol filter.
+
+### ContentTemplate 
+ The [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the SymbolFilterProvider is a data template used to display the content of the ContentControl.
+
+ ### IsChecked
+ The [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the SymbolFilterProvider is used to add/remove the filters in the List. Checkmarks indicate the filters added in the List.
+
+ ![Symbol](Stencil_images/stencil_ischecked.PNG) 
+
+ ### SymbolFilter
+ The [SymbolFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) property of the SymbolFilterProvider is used to filter or hide the symbols. 
+
+## Filter the symbols based on groups/category 
 
 The [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is used to filter or hide the symbols by using the delegates. The [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) are the collection of SymbolFilterProvider.
 
@@ -483,15 +559,14 @@ private bool Filter(SymbolFilterProvider sender, object symbol)
 
 ![SymbolFilter](Stencil_images/Stencil_img12.PNG)
 
-### SelectedFilter
-
-There can be multiple SymbolFilters but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
-
-![SelectedFilter](Stencil_images/Stencil_img13.PNG)
-
-## ExpandMode
-
-The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
+### Appearance of symbol filters
+we have a support to visualize the symbol filters either a combobox or list. The [SymbolFilterDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the stencil is used to display the symbol filter in a combobox or list view.
+ 
+ #### ComboBox
+  This symbol filter display mode is visually represented in a combo box. 
+  
+  * ExpandMode-
+  The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
 
 |ExpandMode|Description|
 |----------|-----------|
@@ -500,52 +575,63 @@ The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.E
 |OneOrMore |    Enables or disables one or more symbol group can be expand |
 |ZeroOrMore|    Enables or disables none or more symbol group can be expand |
 |ZeroOrOne |    Enables or disables none or one symbol group can be expand |
+ 
+ #### List
+  This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by clik the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
 
-## Preview for Drag and Drop
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
-When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. Preview of the item can be enabled or disabled by using the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) `ShowPreview`.
+ ![Symbol](Stencil_images/stencil_ischecked.PNG) 
 
-{% highlight C# %}
 
-//Enables the drag and drop preview.
-stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
+### SelectedFilter
 
-//Disables the drag and drop preview.
-stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
+There can be multiple SymbolFilters but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-{% endhighlight %}
+## Add Title to Stencil
+The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the stencil is used to add the title to stencil.
 
-Here, stencil is an instance of Stencil.
+### Customize Title using TitleTemplate 
+The appearace of the title can be customized by using [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) propery of the Stencil.
 
-![Preview](Stencil_images/Stencil_img14.PNG)
+ Please find the code example to illustrate how to add title and its customization.
 
-#### Customization of Preview for Drag and Drop
+ {% tabs %}
+{% highlight xaml %}
+<DataTemplate x:Key="TitleTemplate">
+   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" />
+</DataTemplate>
 
-You can customize the preview content by overriding the [PrepareDragDropPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareDragDropPreview) method of the Stencil. You can define your own customized preview to the [SymbolPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolPreview) property of the stencil.
-
-{% tabs %}
-{% highlight C# %}
-public class CustomStencil : Stencil
-{
-    //Virtual method to customize the preview of dragging the symbol from Stencil.
-    protected override void PrepareDragDropPreview()
-    {
-        this.SymbolPreview = new ContentPresenter()
-        {
-            Content = new Rectangle()
-            {
-                Width = 50,
-                Height = 50,
-                Fill = new SolidColorBrush(Colors.SteelBlue)
-            }
-        };
-    }
-}
+<stencil:Stencil Grid.Column="0" BorderThickness="1" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" BorderBrush="#dfdfdf" x:Name="stencil">
+</stencil:Stencil>
 
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPreview](Stencil_images/Stencil_img16.jpeg)
+## Find the symbols from stencil 
+The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the searchbox in stencil.
+* We can search a shape by its [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) as specified in the diagramming elements(e.g:"rectangle").
+* Enter a name in the search textbox and clik on the search icon or press the enter key, the shapes whose name does match the string are filtered out.  The search results are displayed and categorized by their mapping key.
+* To reset the search in the stencil, delete the search string in the search box so that it displays shapes based on the selected filter.
+* The dropdown button shows the list of the most recently used search strings.
+
+The following image illustrate the search resut of the symbol.
+
+**Combobox view:**
+
+ ![Symbol](Stencil_images/Stencil_ComboBox_Search.PNG) 
+
+**List view:**
+
+ ![Symbol](Stencil_images/Stencil_List_Search.PNG) 
+
+## Stencil display mode
+We can click the expander button to toggle between expanded and compact modes. 
+To change the display mode at run-time, use the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_DisplayMode) property of the stencil. The image below shows the stencil in compact mode.
+
+We can show/hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the stencil.
+
+![Symbol](Stencil_images/Stencil_Compact.PNG) 
 
 ## Symbol categories
 
@@ -556,6 +642,7 @@ There are plenty of shapes available in the diagram resource dictionary. It take
 * Keys – Specifies the static resource key name value of the category collection.
 * Title – Specifies the title that should be displayed as a header of the category collection.
 
+### Built-in symbol categories 
 The following are the built-in categories being available in the diagram resource dictionary,
 
 * BasicShapes
@@ -586,7 +673,7 @@ The following are the built-in categories being available in the diagram resourc
 
 ![Basic Shapes](Stencil_images/CategoryBasicShapes.png)
 
-### How to add custom shapes categories into the stencil
+### Add custom shapes categories
 
 The custom symbol collections can be added to the stencil by defining the custom symbol's resource collection.
 
@@ -624,7 +711,7 @@ The custom symbol collections can be added to the stencil by defining the custom
 
 N> Custom symbol collections should be added in the App.xaml file.
 
-### How to customize the default appearance of the symbols in the built-in categories
+### Customize the appearance of the symbols in the built-in categories 
 
 Built-in symbol categories symbol sizes are equivalent to Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of  `PrepareSymbolViewModel` method,
 
@@ -682,6 +769,52 @@ public class StencilViewModel : Stencil
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
+## Preview for Drag and Drop
+
+When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. Preview of the item can be enabled or disabled by using the [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) `ShowPreview`.
+
+{% highlight C# %}
+
+//Enables the drag and drop preview.
+stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
+
+//Disables the drag and drop preview.
+stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
+
+{% endhighlight %}
+
+Here, stencil is an instance of Stencil.
+
+![Preview](Stencil_images/Stencil_img14.PNG)
+
+#### Customization of Preview for Drag and Drop
+
+You can customize the preview content by overriding the [PrepareDragDropPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareDragDropPreview) method of the Stencil. You can define your own customized preview to the [SymbolPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolPreview) property of the stencil.
+
+{% tabs %}
+{% highlight C# %}
+public class CustomStencil : Stencil
+{
+    //Virtual method to customize the preview of dragging the symbol from Stencil.
+    protected override void PrepareDragDropPreview()
+    {
+        this.SymbolPreview = new ContentPresenter()
+        {
+            Content = new Rectangle()
+            {
+                Width = 50,
+                Height = 50,
+                Fill = new SolidColorBrush(Colors.SteelBlue)
+            }
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![CustomPreview](Stencil_images/Stencil_img16.jpeg)
+
 ## Events
 
 * The `Expanded Event` and `Collapsed Event` are notified to provide interactions in the SymbolGroup. To explore about arguments refer to the [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html)
@@ -694,7 +827,7 @@ public class StencilViewModel : Stencil
 To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
 
 
-## How to restrict node dropped on Diagram
+## Restrict node dropped on Diagram
 
 The diagram provides support to cancel the drag and drop operation from the stencil to the diagram in two ways.
 * Using the `Cancel` argument of `ItemDropEventArgs`. For example, if you need to restrict drop for a particular node or based on some condition, then this argument will allow you to achieve the same. To explore about arguments refer to the [ItemDropEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html)
