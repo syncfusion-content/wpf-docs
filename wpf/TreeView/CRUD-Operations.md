@@ -57,7 +57,7 @@ You can delete node directly in underlying collection also using Remove () or Re
 sfTreeView.Nodes.Remove(sfTreeView.Nodes[0]);
 
 //OR
-sfTreeView.View.Nodes.RemoveAt(2);
+sfTreeView.Nodes.RemoveAt(2);
 {% endhighlight %}
 {% endtabs %}
 
