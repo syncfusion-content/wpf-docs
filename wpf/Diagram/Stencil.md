@@ -586,7 +586,7 @@ we have a support to visualize the symbol filters either a combobox or list. The
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
- ![Symbol](Stencil_images/stencil_ischecked.PNG) 
+ ![Symbol](Stencil_images/StencilImprovement.GIF) 
 
 ### SelectedFilter
 
