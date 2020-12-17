@@ -9,11 +9,11 @@ documentation: ug
 
 # Saving PDF Files in WPF Pdf Viewer
 
-The PDF Viewer allows you to save the PDF document that is being displayed. It helps you to keep the file up to date with any modifications and prevent your work from being lost. You can save the changes in the PDF document using the “Save” and “Save As” options available in the toolbar.
+The PDF Viewer allows you to save the PDF document that is being displayed. It helps you to keep the file up to date with any modifications and prevent your work from being lost. You can save the changes in the PDF document using the "Save" and "Save As" options available in the toolbar.
 
 ![Save PDF files](Concept-and-Features_images\save_files.png)
 
-N> The “Save” option in the toolbar will not be enabled if the file is not edited, or if the file is loaded using the Stream and `PdfLoadedDocument` objects. In these cases, you can use the “Save As” option.
+N> The "Save" option in the toolbar will not be enabled if the file is not edited, or if the file is loaded using the Stream and `PdfLoadedDocument` objects. In these cases, you can use the "Save As" option.
 
 You can also call the [Save](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Save_System_String_) method to silently save the modified PDF file to a specific path in the local disk. Refer to the following code to perform the same from the application level.
 
@@ -116,5 +116,5 @@ namespace SaveEvents
 ## Keyboard shortcuts
 
 The following keyboard shortcuts can be used to save the files when the toolbar is enabled:
-* `Ctrl + S`: If the “Save” option is enabled in the PDF Viewer, it performs “Save” in the PDF document. Else, it performs “Save As” in the PDF document.
-* `Shift + Ctrl + S`: Performs “Save As” in the PDF document.
+* `Ctrl + S`: If the "Save" option is enabled in the PDF Viewer, it performs "Save" in the PDF document. Else, it performs "Save As" in the PDF document.
+* `Shift + Ctrl + S`: Performs "Save As" in the PDF document.
