@@ -38,4 +38,14 @@ The following image displays hidden line numbers.
 
 ![](Line-Numbers_images/Line-Numbers_img1.jpeg)
 
+## Events
 
+### CaretPositionChanged
+
+[CaretPositionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged) event occurs when the caret position of the text in the `EditControl` is changed.
+This event receives two arguments namely `sender` that handles `EditControl` and [CaretPositionEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html) as objects.
+
+The [CaretPositionEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html) object contains the following properties:
+
+* [LineNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber) - Gets the current line number value of the EditControl.
+* [CursorIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex) - Gets the current cursor index value of the EditControl.

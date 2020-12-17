@@ -290,10 +290,10 @@ A PropertyChangedCallback get raised when the text in the EditControl gets chang
 <td>
 CaretPositionChanged<br/><br/></td><td>
 EventHandler<br/><br/></td><td>
-This event will be raised when the caret position of the text in the EditControl is changed. The <code>CaretPositionChanged</code> event receives the <code>CaretPositionEventArgs</code> as argument which has the following properties.
+This event will be raised when the caret position of the text in the EditControl is changed. The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged">CaretPositionChanged </a> event receives the `sender` and <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html">CaretPositionEventArgs </a> as argument which has the following properties.
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number :</a> Gets the current line number value of the EditControl.</li>
-<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index :</a> Gets the current cursor index of the EditControl.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number </a> : Gets the current line number value of the EditControl.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the EditControl.</li>
 </ul>
 <br/><br/></td></tr>
 </table>
