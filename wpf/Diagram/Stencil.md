@@ -527,12 +527,12 @@ You can customize the appearance of a `SymbolGroup` by changing its Style. The f
 ### ContentTemplate 
  The [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the SymbolFilterProvider is a data template used to display the content of the ContentControl.
 
- ### IsChecked
- The [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the SymbolFilterProvider is used to add/remove the filters in the List. Checkmarks indicate the filters added in the List.
+### IsChecked
+ The [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the SymbolFilterProvider is used to add/remove the filters in the List. Check marks indicate the filters added in the List.
 
  ![Symbol](Stencil_images/stencil_ischecked.PNG) 
 
- ### SymbolFilter
+### SymbolFilter
  The [SymbolFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) property of the SymbolFilterProvider is used to filter or hide the symbols. 
 
 ## Filter the symbols based on groups/category 
@@ -562,7 +562,7 @@ private bool Filter(SymbolFilterProvider sender, object symbol)
 ### Appearance of symbol filters
 we have a support to visualize the symbol filters either a combobox or list. The [SymbolFilterDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the stencil is used to display the symbol filter in a combobox or list view.
  
- #### ComboBox
+ **1.ComboBox**
   This symbol filter display mode is visually represented in a combo box. 
   
   * ExpandMode-
@@ -576,7 +576,7 @@ we have a support to visualize the symbol filters either a combobox or list. The
 |ZeroOrMore|    Enables or disables none or more symbol group can be expand |
 |ZeroOrOne |    Enables or disables none or one symbol group can be expand |
  
- #### List
+ **2.List**
   This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by clik the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
