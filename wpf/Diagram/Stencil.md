@@ -615,7 +615,7 @@ The appearance of the title can be customized by using [TitleTemplate](https://h
 ## Find the symbols from stencil 
 The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the search box in stencil.
 * We can search a shape by its [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) as specified in the diagramming elements(e.g:"rectangle").
-* Enter a name in the search textbox and clik on the search icon or press the enter key, the shapes whose name does match the string are filtered out.  The search results are displayed and categorized by their mapping key.
+* Enter a name in the search textbox and click on the search icon or press the enter key, the shapes whose name does match the string are filtered out.  The search results are displayed and categorized by their mapping key.
 * To reset the search in the stencil, delete the search string in the search box so that it displays shapes based on the selected filter.
 * The dropdown button shows the list of the most recently used search strings.
 
