@@ -579,10 +579,14 @@ we have a support to visualize the symbol filters either a combobox or list. The
  **2.List**
   This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by clik the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
 
+|SymbolFilterDisplayMode|Description|
+|----------|-----------|
+| ComboBox | Specifies to display the symbol group headers in ComboBox view in the Stencil |
+| List | Specifies to display the symbol group headers in List view in the Stencil |
+
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
  ![Symbol](Stencil_images/stencil_ischecked.PNG) 
-
 
 ### SelectedFilter
 
@@ -632,6 +636,11 @@ To change the display mode at run-time, use the [DisplayMode](https://help.syncf
 We can show/hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the stencil.
 
 ![Symbol](Stencil_images/Stencil_Compact.PNG) 
+
+|DisplayMode|Description|
+|----------|-----------|
+| Compact | The stencil always shows as a narrow sliver which can be opened to full width |
+| Expanded | Specifies to update the Expanded state of the stencil |
 
 ## Symbol categories
 
