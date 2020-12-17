@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load appointments on-demand in SfScheduler| WPF| Syncfusion
-description: This section explains how to load appointments on-demand from visible date ranges in the WPF Scheduler.  
+title: Load appointments on demand in SfScheduler| WPF| Syncfusion
+description: This section explains how to load appointments on demand from visible date ranges in the WPF Scheduler.  
 platform: wpf
 control: SfScheduler
 documentation: ug
