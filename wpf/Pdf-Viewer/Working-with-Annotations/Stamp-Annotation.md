@@ -207,16 +207,16 @@ The following image illustrates how to delete the included annotation from the P
 
 ![Delete stamp annotation](Annotation-images\Stamp-Annotation-6.png)
 
-## Adding your own standard stamps in the toolbar
+## Adding your standard stamps in the toolbar
 
-You can add your own standard stamps from images in the toolbar using the [StampAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerToolbarSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerToolbarSettings_StampAnnotations) collection. This stamp will be added to the existing standard stamps collection in the toolbar. You can select and include the stamp at the required location of the page using a mouse-tap. Refer to the following code to clear the existing standard stamps and to add a custom stamp in the toolbar.
+You can add your standard stamps from images in the toolbar using the [StampAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerToolbarSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerToolbarSettings_StampAnnotations) collection. This stamp will be added to the existing standard stamps collection in the toolbar. You can select and include the stamp at the required location of the page using a mouse-tap. Refer to the following code to clear the existing standard stamps and to add a custom stamp in the toolbar.
 
 {% tabs %}
 {% highlight C# %}
 
 private void AddStandardStamp()
 {
-    // Clear the existing standard stamps if not needed.
+    // Clear the existing standard stamps if it is not needed.
     pdfViewer.ToolbarSettings.StampAnnotations.Clear();
 
     //Load the custom image from the local disk.
@@ -235,7 +235,7 @@ private void AddStandardStamp()
 
 ## Adding custom stamps in the toolbar
 
-You can create and add your custom stamps from the images available in the disk, using the “Add Stamp” option available in the "Custom Stamps" category of the toolbar (as shown in the following screenshot). It allows you to browse the image from the disk, creates custom stamp from the image and allows you to include the stamp at the required location of the page using a mouse-tap. It also adds the stamp to the custom stamp collection for the future use.
+You can create and add your custom stamps from the images available on the disk using the “Add Stamp” option available in the custom stamps’ category of the toolbar (as shown in the following screenshot). It allows you to browse the image from the disk and creates a custom stamp from the image and allows you to include the stamp at the required location of the page using a mouse-tap. It also adds the stamp to the custom stamp collection for future use.
 
 ![Custom stamps](Annotation-images\custom-stamp.png)
 
