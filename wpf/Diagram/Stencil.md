@@ -577,7 +577,7 @@ we have a support to visualize the symbol filters either a combobox or list. The
 |ZeroOrOne |    Enables or disables none or one symbol group can be expand |
  
  **2.List**
-  This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by clik the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
+  This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by click the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
 
 |SymbolFilterDisplayMode|Description|
 |----------|-----------|
@@ -596,7 +596,7 @@ There can be multiple SymbolFilters but only one filter can be selected at a tim
 The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the stencil is used to add the title to stencil.
 
 ### Customize Title using TitleTemplate 
-The appearace of the title can be customized by using [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) propery of the Stencil.
+The appearance of the title can be customized by using [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) property of the Stencil.
 
  Please find the code example to illustrate how to add title and its customization.
 
@@ -613,13 +613,13 @@ The appearace of the title can be customized by using [TitleTemplate](https://he
 {% endtabs %}
 
 ## Find the symbols from stencil 
-The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the searchbox in stencil.
+The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the search box in stencil.
 * We can search a shape by its [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) as specified in the diagramming elements(e.g:"rectangle").
 * Enter a name in the search textbox and clik on the search icon or press the enter key, the shapes whose name does match the string are filtered out.  The search results are displayed and categorized by their mapping key.
 * To reset the search in the stencil, delete the search string in the search box so that it displays shapes based on the selected filter.
 * The dropdown button shows the list of the most recently used search strings.
 
-The following image illustrate the search resut of the symbol.
+The following image illustrate the search result of the symbol.
 
 **Combobox view:**
 
