@@ -15,12 +15,12 @@ The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 { 
-	StartTime = new DateTime(2020, 07, 01, 10, 0, 0),
-    EndTime = new DateTime(2020, 07, 01, 12, 0, 0), 
+	StartTime = new DateTime(2020, 12, 15, 10, 0, 0),
+    EndTime = new DateTime(2020, 12, 15, 12, 0, 0),
 	Subject = "Client Meeting", 
 	Location = "Hutchison road", 
 }); 
@@ -38,31 +38,35 @@ The `Scheduler` supports to bind any collection that implements the IEnumerable 
 <table>
 <tr><th>Property Name</th><th>Description</th></tr>
 <tr><td>{{'[StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for StartTime of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the StartTime of ScheduleAppointment.</td></tr>
 <tr><td>{{'[EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for EndTime of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the EndTime of ScheduleAppointment.</td></tr>
 <tr><td>{{'[StartTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for StartTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent for the StartTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[EndTimeZone](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for EndTimeZone of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the EndTimeZone of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for Subject of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the Subject of ScheduleAppointment.</td></tr>
+<tr><td>{{'[Id](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Id)'| markdownify }}</td>
+<td>Maps the property name of a custom class, which is equivalent to the Id of ScheduleAppointment.</td></tr>
 <tr><td>{{'[AppointmentBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_AppointmentBackground)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for AppointmentBackground of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the AppointmentBackground of ScheduleAppointment.</td></tr>
+<tr><td>{{'[Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Foreground)'| markdownify }}</td>
+<td>Maps the property name of a custom class, which is equivalent to the  Foreground of ScheduleAppointment.</td></tr>
 <tr><td>{{'[IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for IsAllDay of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the IsAllDay of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for RecurrenceRule of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the RecurrenceRule of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for RecurrenceId of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the RecurrenceId of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for Notes of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the Notes of ScheduleAppointment.</td></tr>
 <tr><td>{{'[Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for Location of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the Location of ScheduleAppointment.</td></tr>
 <tr><td>{{'[RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceExceptionDates)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the RecurrenceExceptionDates of ScheduleAppointment.</td></tr>
 <tr><td>{{'[ResourceIdCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection)'| markdownify }}</td>
-<td>Maps the property name of custom class, which is equivalent for ResourceIdCollection of ScheduleAppointment.</td></tr>
+<td>Maps the property name of a custom class, which is equivalent to the ResourceIdCollection of ScheduleAppointment.</td></tr>
 </table>
 
 N>The CustomAppointment class should contain event start and end date time fields as mandatory
@@ -80,22 +84,23 @@ public class Meeting
 	public string EventName { get; set; }
 	public DateTime From { get; set; }
 	public DateTime To { get; set; }
+    public Brush BackgroundColor { get; set; }
+    public Brush ForegroundColor { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
-N>You can inherit this class from the INotifyPropertyChanged for dynamic changes in custom data.
-You can map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
+N> You can map those properties of the `Meeting` class to schedule appointment by using the `AppointmentMapping` properties.
 {%tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
-         <syncfusion:SfScheduler.AppointmentMapping>
-            <syncfusion:AppointmentMapping
+ <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.AppointmentMapping>
+        <syncfusion:AppointmentMapping
             Subject="EventName"
             StartTime="From"
             EndTime="To"
-            AppointmentBackground="Color"
-            IsAllDay="IsAllDay"/>
-        </syncfusion:SfScheduler.AppointmentMapping>
+            AppointmentBackground="BackgroundColor"
+            Foreground="ForegroundColor"/>
+    </syncfusion:SfScheduler.AppointmentMapping>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
@@ -104,8 +109,8 @@ AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
 dataMapping.EndTime = "To";
-dataMapping.AppointmentBackground = "Color";
-dataMapping.IsAllDay = "IsAllDay";
+dataMapping.AppointmentBackground = "BackgroundColor";
+dataMapping.Foreground = "ForegroundColor";
 Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
@@ -114,21 +119,23 @@ You can schedule meetings for a day by setting `From` and `To` of Meeting class.
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for custom appointment class
+//Creating an instance for the custom appointment class
 Meeting meeting = new Meeting();
-// Setting start time of an event
-meeting.From = new DateTime(2020, 07, 01, 10, 0, 0);
-// Setting end time of an event
-meeting.To = meeting.From.AddHours(1);
-// Setting start time for an event
+//Setting the start time of an event
+meeting.From = new DateTime(2020, 12, 15, 10, 0, 0);
+//Setting the end time of an event
+meeting.To = meeting.From.AddHours(2);
+//Setting the subject for an event
 meeting.EventName = "Meeting";
-// Setting color for an event
-meeting.Color = new SolidColorBrush(Colors.Green);
-// Creating an instance for collection of custom appointments
+//Setting the background color for an event
+meeting.BackgroundColor = new SolidColorBrush(Colors.Green);
+//Setting the foreground color for an event
+meeting.ForegroundColor = new SolidColorBrush(Colors.White);
+//Creating an instance for the collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
-// Adding a custom appointment in the CustomAppointmentCollection
+//Adding a custom appointment in the CustomAppointmentCollection
 Meetings.Add(meeting);
-// Adding custom appointments in the ItemsSource of SfScheduler
+//Adding custom appointments in the ItemsSource of SfScheduler
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}
@@ -141,18 +148,20 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for collection of custom appointments
+// Creating an instance for the collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
-// Creating an instance for custom appointment class
+// Creating an instance for the custom appointment class
 Meeting meeting = new Meeting();
-// Setting start time of an event
-meeting.From = new DateTime(2020, 06, 30, 10, 0, 0);
-// Setting end time of an event
+// Setting the start time of an event
+meeting.From = new DateTime(2020, 12, 15, 10, 0, 0);
+// Setting the end time of an event
 meeting.To = meeting.From.AddDays(2).AddHours(1);
-// Setting start time for an event
- meeting.EventName = "Meeting";
-// Setting color for an event
-meeting.Color = new SolidColorBrush(Colors.SlateBlue);
+// Setting the subject for an event
+meeting.EventName = "Meeting";
+// Setting the background color for an event
+meeting.BackgroundColor = new SolidColorBrush(Colors.SlateBlue);
+// Setting the foreground color for an event
+meeting.ForegroundColor = new SolidColorBrush(Colors.White);
 // Adding a custom appointment in the CustomAppointmentCollection
 Meetings.Add(meeting);
 //Adding schedule appointment collection to the  ItemsSource of SfSchedule
@@ -168,14 +177,16 @@ The all-Day appointment is an appointment that is scheduled for a whole day. It 
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
-    StartTime = new DateTime(2020, 07, 07, 10, 0, 0),
-    EndTime = new DateTime(2020, 07, 07, 12, 0, 0),
+    StartTime = new DateTime(2020, 12, 15, 10, 0, 0),
+    EndTime = new DateTime(2020, 12, 15, 12, 0, 0),
     Subject = "Client Meeting",
     Location = "Hutchison road",
+    AppointmentBackground = Brushes.Orange,
+    Foreground = Brushes.White,
     IsAllDay = true,
 });
 //Adding the schedule appointment collection to the ItemsSource of SfScheduler
@@ -220,20 +231,22 @@ The SfScheduler appointment recurrenceRule is used to populate the required recu
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in schedule appointment collection 
 var scheduleAppointment = new ScheduleAppointment()
 {
-    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
-    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
+    Id = 1,
+    StartTime = new DateTime(2020, 12, 13, 11, 0, 0),
+    EndTime = new DateTime(2020, 12, 13, 12, 0, 0),
     Subject = "Occurs every alternate day",
-    AppointmentBackground = new SolidColorBrush(Colors.RoyalBlue),
+    AppointmentBackground = Brushes.RoyalBlue,
+    Foreground = Brushes.White,
 };
 //Creating recurrence rule
 scheduleAppointment.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
-//Adding schedule appointment in the schedule appointment collection
+//Adding schedule appointment to the schedule appointment collection
 scheduleAppointmentCollection.Add(scheduleAppointment);
-//Adding schedule appointment collection to the ItemsSource of SfScheduler
+//Setting the schedule appointment collection to the ItemsSource of SfScheduler
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
@@ -253,15 +266,15 @@ public class Meeting
     public string EventName { get; set; }
     public DateTime From { get; set; }
     public DateTime To { get; set; }
-    public Brush Color { get; set; }
+    public Brush BackgroundColor { get; set; }
+    public Brush ForegroundColor { get; set; }
     public string RecurrenceRule { get; set; }
+    public object Id {get; set;}
 }
 {% endhighlight %}
 {% endtabs %}
 
-N>You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
-
-You can map those properties of Meeting class to schedule appointment by using the `AppointmentMapping` properties.
+N> You can map those properties of Meeting class to schedule appointment by using the `AppointmentMapping` properties.
 
 {%tabs %}
 {% highlight xaml %}
@@ -271,7 +284,9 @@ You can map those properties of Meeting class to schedule appointment by using t
             	Subject="EventName"
            		StartTime="From"
             	EndTime="To"
-            	AppointmentBackground="BackColor"
+                Id="Id"
+            	AppointmentBackground="BackgroundColor"
+                Foreground="ForegroundColor"
             	RecurrenceRule="RecurrenceRule"
             	IsAllDay="IsAllDay"/>
         </syncfusion:SfScheduler.AppointmentMapping>
@@ -283,7 +298,9 @@ AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
 dataMapping.StartTime = "From";
 dataMapping.EndTime = "To";
-dataMapping.AppointmentBackground = "Color";
+dataMapping.Id = "Id";
+dataMapping.AppointmentBackground = "BackgroundColor";
+dataMapping.Foreground = "ForegroundColor";
 dataMapping.RecurrenceRule = "RecurrenceRule";
 Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
@@ -293,16 +310,20 @@ You can schedule the recurring meetings for daily, weekly, monthly, or yearly in
 
 {% tabs %}
 {% highlight c# %}
-// Creating an instance for custom appointment class
+// Creating an instance for the custom appointment class
 Meeting meeting = new Meeting();
-// Setting start time of an event
-meeting.From = new DateTime(2020, 06, 28, 10, 0, 0);
-// Setting end time of an event
+// Setting the start time of an event
+meeting.From = new DateTime(2020, 12, 13, 10, 0, 0);
+// Setting the end time of an event
 meeting.To = meeting.From.AddHours(2);
-// Setting start time for an event
+// Setting the Id for an event
+meeting.Id = 1;
+// Setting the subject for an event
 meeting.EventName = "Client Meeting";
-// Setting color for an event
-meeting.Color = new SolidColorBrush(Colors.Gray);
+// Setting the background color for an event
+meeting.BackgroundColor = new SolidColorBrush(Colors.Gray);
+ // Setting the foreground color for an event
+meeting.ForegroundColor = new SolidColorBrush(Colors.White);
 // Creating recurrence rule
 meeting.RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10";
 // Creating an instance for collection of custom appointments
@@ -345,6 +366,48 @@ var date0 = 6/27/2020;
 var date1 = 6/28/2020;
 var date2 = 6/29/2020;
 
+### How to get pattern appointment for the specified occurrence?
+Gets the pattern appointment for the specified occurrence.
+
+To get the pattern appointment by using the following event and passing a parameter as `Scheduler` and Specified `Appointment`.
+{% tabs %}
+{% highlight c# %}
+Schedule.AppointmentTapped += Schedule_AppointmentTapped;
+
+private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
+{
+    if (e.Appointment != null)
+    {
+        var patternAppointment = RecurrenceHelper.GetPatternAppointment(this.Schedule, e.Appointment);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment`.
+If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
+
+### How to get occurrence appointment at the specified date?
+Gets an occurrence at the specified date within a series of recurring appointments.
+
+To get a specific appointment by using the following event and passing a parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
+
+{% tabs %}
+{% highlight c# %}
+Schedule.AppointmentTapped += Schedule_AppointmentTapped;
+
+private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
+{
+    if (e.Appointment != null)
+    {
+        var occurrenceAppointment = RecurrenceHelper.GetOccurrenceAppointment(this.Schedule, e.Appointment, new DateTime(2020,12,20));
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> If an occurrence at the specified date is deleted or not present,then the `GetOccurrenceAppointment` method returns null.
+
 ## Recurrence pattern exceptions
 You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
@@ -363,27 +426,30 @@ You can delete any of occurrence which is exception from recurrence pattern appo
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
-ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding recurrence appointment in the schedule appointment collection 
-var recurrenceAppointment = new ScheduleAppointment()
+var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+
+// Recurrence and exception appointment
+var scheduleAppointment = new ScheduleAppointment
 {
-    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
-    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
-    Subject = "Occurs Daily",
-    AppointmentBackground = new SolidColorBrush(Colors.LimeGreen)
+    Id = 1,
+    Subject = "Daily scrum meeting",
+    StartTime = new DateTime(2020, 12, 13, 11, 0, 0),
+    EndTime = new DateTime(2020, 12, 13, 12, 0, 0),
+    AppointmentBackground = new SolidColorBrush(Colors.LimeGreen),
+    Foreground = new SolidColorBrush(Colors.White),
+    RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10"
 };
-//Adding recurrence appointment in the schedule appointment collection
-scheduleAppointmentCollection.Add(recurrenceAppointment);
-// Creating the recurrence rule
-recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-// Create the new exception date.
-var exceptionDate = new DateTime(2020, 07, 08);
-// Add RecurrenceExceptionDates to appointment.
-recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+//Adding the recurring or pattern appointment to the Schedule AppointmentCollection.
+scheduleAppointmentCollection.Add(scheduleAppointment);
+
+//Add the ExceptionDates to avoid occurrence on specific dates.
+DateTime exceptionDate = scheduleAppointment.StartTime.AddDays(3).Date;
+scheduleAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {
-     exceptionDate
+    exceptionDate,
 };
-//Adding schedule appointment collection to the ItemsSource of SfScheduler
+
+//Setting AppointmentCollection as ItemSource of SfScheduler.
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -393,46 +459,55 @@ N>Exception dates should be Universal Time Coordinates (UTC) time zone.
 ![Schedule Recurrring Appointment in  WPF Scheduler](appointments_images/adding-ScheduleRecurringAppointment.png)
 
 ### Add exception appointment to the recurrence pattern
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set [RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId) of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add a changed occurrence, ensure to set the [RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId) of that occurrence and add the date of that occurrence to the `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern `Id` of the appointment.
 
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
-ScheduleAppointmentCollection RecursiveAppointmentCollection = new ScheduleAppointmentCollection();
-//Adding schedule appointment in the schedule appointment collection 
+var appointmentCollection = new ScheduleAppointmentCollection();
+// Recurrence and exception appointment
 var scheduleAppointment = new ScheduleAppointment
 {
+    Id = 1,
     Subject = "Daily scrum meeting",
-    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
-    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
+    StartTime = new DateTime(2020, 12, 13, 11, 0, 0),
+    EndTime = new DateTime(2020, 12, 13, 12, 0, 0),
     AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00BFFF")),
+    Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFF")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10"
 };
-//Adding schedule appointment in the schedule appointment collection
-RecursiveAppointmentCollection.Add(scheduleAppointment);
+//Adding the recurring or pattern appointment to the AppointmentCollection.
+appointmentCollection.Add(scheduleAppointment);
+
 //Add ExceptionDates to avoid occurrence on specific dates.
 DateTime changedExceptionDate = scheduleAppointment.StartTime.AddDays(3).Date;
 scheduleAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {
     changedExceptionDate,
 };
-//Change start time or end time of an occurrence.
+
+//Creating an exception occurence appointment by changing the start time or end time. 
+// RecurrenceId is set to 1, so it will be the changed occurence for the above-created pattern appointment. 
 var exceptionAppointment = new ScheduleAppointment()
 {
+    Id = 2,
     Subject = "Scrum meeting - Changed Occurrence",
-    StartTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 12, 0, 0),
-    EndTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
+    StartTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
+    EndTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 14, 0, 0),
     AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF1493")),
-    RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
-    RecurrenceId = scheduleAppointment
+    Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFF")),
+    RecurrenceId = 1
 };
-RecursiveAppointmentCollection.Add(exceptionAppointment);
-//Adding schedule appointment collection to the ItemsSource of SfScheduler
-Schedule.ItemsSource = RecursiveAppointmentCollection;
+// Adding an exception occurence appointment to the AppointmentCollection.
+appointmentCollection.Add(exceptionAppointment);
+//Setting the AppointmentCollection as a ItemSource of SfScheduler.
+Schedule.ItemsSource = appointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N>• RecurrenceId should be a recurrence pattern appointment object.
+N>• The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
+• The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
+• `Id` should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 • The recurrenceExceptionDates should be in a Universal Time Coordinates (UTC) time zone.
 
@@ -453,8 +528,11 @@ public class Meeting
     public string EventName { get; set; }
     public DateTime From { get; set; }
     public DateTime To { get; set; }
-    public Brush Color { get; set; }
+    public object Id { get; set; }
+    public Brush BackgroundColor { get; set; }
+    public Brush ForegroundColor { get; set; }
     public string RecurrenceRule { get; set; }
+    public object RecurrenceId { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -469,12 +547,15 @@ You should map this custom property `RecurrenceExceptionDates` of custom class w
             Subject="EventName"
             StartTime="From"
             EndTime="To"
-            AppointmentBackground="Color"
+            Id="Id"
+            AppointmentBackground="BackgroundColor"
+            Foreground="ForegroundColor"
             IsAllDay="IsAllDay"
             StartTimeZone="StartTimeZone"
             RecurrenceRule="RecurrenceRule"
             RecurrenceExceptionDates="RecurrenceExceptions"
-            EndTimeZone="EndTimeZone"/>
+            EndTimeZone="EndTimeZone"
+            RecurrenceId="RecurrenceId"/>
     </syncfusion:SfScheduler.AppointmentMapping>
 </syncfusion:SfScheduler>
 {% endhighlight %}
@@ -492,7 +573,9 @@ var recurrenceAppointment = new Meeting()
     From = new DateTime(2020, 07, 05, 10, 0, 0),
     To = new DateTime(2020, 07, 05, 11, 0, 0),
     EventName = "Occurs Daily",
-    Color = new SolidColorBrush(Colors.LightSeaGreen),
+    BackgroundColor = new SolidColorBrush(Colors.LightSeaGreen),
+    ForegroundColor = new SolidColorBrush(Colors.White),
+    Id = 1
 };
 // Creating recurrence rule
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
@@ -513,8 +596,8 @@ N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
  
 ## Add an exception appointment to the recurrence pattern
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
-You should map the equivalent properties of  `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to `RecurrenceId` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add the changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact `Id` recurrence pattern appointment.
+You should map the equivalent properties of `Id`, `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to the `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
 
 You should add the created exception recurrence appointment to the SfScheduler `ItemsSource`.
 {% tabs %}
@@ -535,28 +618,33 @@ this.RecursiveAppointmentCollection = new ObservableCollection<Meeting>();
 Meeting dailyEvent = new Meeting
 {
     EventName = "Daily scrum meeting",
-    From = new DateTime(2020, 07, 05, 10, 0, 0),
-    To = new DateTime(2020, 07, 05, 11, 0, 0),
-    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00BFFF")),
-    RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10"
+    From = new DateTime(2020, 12, 13, 11, 0, 0),
+    To = new DateTime(2020, 12, 13, 12, 0, 0),
+    BackgroundColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00BFFF")),
+    ForegroundColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFF")),
+    RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
+    Id = 1
 };
 //Adding custom appointment in the custom appointment collection
 RecursiveAppointmentCollection.Add(dailyEvent);
+
 //Add ExceptionDates to avoid occurrence on specific dates.
-DateTime changedExceptionDate = dailyEvent.From.AddDays(2).Date;
+DateTime changedExceptionDate = DateTime.Now.AddDays(-1).Date;
 dailyEvent.RecurrenceExceptions = new ObservableCollection<DateTime>()
 {
-    changedExceptionDate,
+    changedExceptionDate
 };
 //Change start time or end time of an occurrence.
 Meeting changedEvent = new Meeting
 {
     EventName = "Scrum meeting - Changed Occurrence",
-    From = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 12, 0, 0),
-    To = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
-    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF1493")),
+    From = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
+    To = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 14, 0, 0),
+    BackgroundColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF1493")),
+    ForegroundColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFFF")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
-    RecurrenceId = dailyEvent,
+    Id = 2,
+    RecurrenceId = 1
 };
 RecursiveAppointmentCollection.Add(changedEvent);
 //Adding custom appointment collection to the ItemsSource of SfScheduler
@@ -564,7 +652,9 @@ Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N>RecurrenceId should be a recurrence pattern appointment object.
+N> The `RecurrenceId` of exception appointment and the `Id` of its pattern appointment should have same value. 
+• The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
+• The `Id` should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
 
@@ -574,28 +664,27 @@ N>RecurrenceId should be a recurrence pattern appointment object.
 The default appearance of schedule appointment can be customized in all views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). You can use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all day appointments in day, week and work week views.
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
-<DataTemplate x:Key="appointmentTemplate">
-<StackPanel Background="{Binding Background}"  
-VerticalAlignment="Stretch" 
-HorizontalAlignment="Stretch"
-Orientation="Horizontal">
-<TextBlock Margin="5"
-    VerticalAlignment="Center"
-    Text="Meeting" 
-    TextTrimming="CharacterEllipsis"
-    TextWrapping="Wrap"
-    TextAlignment="Left"
-    FontWeight="Bold"
-/>
-</StackPanel>
-</DataTemplate>
-</Window.Resources>
-
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
 <syncfusion:SfScheduler.DaysViewSettings>
-    <syncfusion:DaysViewSettings 
-        AppointmentTemplate="{StaticResource appointmentTemplate}"/>
+<syncfusion:DaysViewSettings>
+    <syncfusion:DaysViewSettings.AppointmentTemplate>
+        <DataTemplate>
+            <StackPanel Background="{Binding Data.BackgroundColor}"  
+            VerticalAlignment="Stretch" 
+            HorizontalAlignment="Stretch"
+            Orientation="Horizontal">
+        <TextBlock Margin="5"
+            VerticalAlignment="Center"
+            Text="Meeting" 
+            TextTrimming="CharacterEllipsis"
+            Foreground="{Binding Data.ForegroundColor}"        TextWrapping="Wrap"
+            FontStyle="Italic"                       
+            TextAlignment="Left"
+            FontWeight="Bold"/>
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:DaysViewSettings.AppointmentTemplate>
+    </syncfusion:DaysViewSettings>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}

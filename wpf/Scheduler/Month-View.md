@@ -436,22 +436,23 @@ You can customize the default appearance of the month cell appointment by using 
 
  {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings>
-            <syncfusion:MonthViewSettings.AppointmentTemplate>
-                <DataTemplate >
-                    <TextBlock Margin="5,0,0,0"
-                                Foreground="White"
-                                FontStyle="Italic"
-                                HorizontalAlignment="Stretch"
-                                Text="{Binding Subject}" 
-                                TextTrimming="CharacterEllipsis"/>
-                </DataTemplate>
-            </syncfusion:MonthViewSettings.AppointmentTemplate>
-        </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings>
+                    <syncfusion:MonthViewSettings.AppointmentTemplate>
+                        <DataTemplate>
+                        <TextBlock 
+                        Background="{Binding Data.BackgroundColor}"
+                        Text="{Binding Data.EventName}" 
+                        HorizontalAlignment="Stretch"
+                        TextTrimming="CharacterEllipsis"
+                        Foreground="{Binding Data.ForegroundColor}"        
+                        TextWrapping="Wrap"
+                        FontStyle="Italic" />
+                        </DataTemplate>
+                    </syncfusion:MonthViewSettings.AppointmentTemplate>
+                </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
