@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support of Syncfusion WPF Controls
 
 ## Gesture
 
@@ -138,9 +138,9 @@ Port: Drag, Connect.</td>
 <tr>
 <td></td>
 <td>Scheduler</td>
-<td>View swiping (By enabling EnableTouch property to true)</td>
+<td>View swiping, Scrolling and Dragging </td>
 <td>-</td>
-<td>Tap support for Cell selection , appointment selection , display context menu. Double tap support to appointment editor.</td>
+<td>Tap support for the Cell selection, Appointment selection, and Double-tap support to the appointment editor.</td>
 <td>-</td>
 </tr>
 
