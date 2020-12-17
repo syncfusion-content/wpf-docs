@@ -459,7 +459,7 @@ N>Exception dates should be Universal Time Coordinates (UTC) time zone.
 ![Schedule Recurrring Appointment in  WPF Scheduler](appointments_images/adding-ScheduleRecurringAppointment.png)
 
 ### Add exception appointment to the recurrence pattern
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add a changed occurrence, ensure to set the [RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId) of that occurrence and add the date of that occurrence to the `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern `Id` of the appointment.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add a changed occurrence, ensure to set the [RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceId) of that occurrence and add the date of that occurrence to the `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`.
 
 {% tabs %}
 {% highlight c# %}
@@ -507,7 +507,7 @@ Schedule.ItemsSource = appointmentCollection;
 
 N>• The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
 • The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
-• `Id` should be a recurrence pattern appointment object.
+• The exception appointment should have different `Id` with original pattern appointment `Id`.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 • The recurrenceExceptionDates should be in a Universal Time Coordinates (UTC) time zone.
 
@@ -596,7 +596,7 @@ N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
  
 ## Add an exception appointment to the recurrence pattern
-You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add the changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact `Id` recurrence pattern appointment.
+You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add the changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`
 You should map the equivalent properties of `Id`, `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to the `Id` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
 
 You should add the created exception recurrence appointment to the SfScheduler `ItemsSource`.
@@ -654,7 +654,7 @@ Schedule.ItemsSource = RecursiveAppointmentCollection;
 
 N> The `RecurrenceId` of exception appointment and the `Id` of its pattern appointment should have same value. 
 • The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
-• The `Id` should be a recurrence pattern appointment object.
+• The exception appointment should have different `Id` with original pattern appointment `Id`.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
 
