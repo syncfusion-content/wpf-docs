@@ -690,6 +690,10 @@ The default appearance of schedule appointment can be customized in all views by
 {% endhighlight %}
 {% endtabs %}
 
+>**Note**
+•   By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` and `AppointmentTemplateSelector` for both `ScheduleAppointment` and custom data object in the `ItemsSource` of `SfScheduler`.
+•   The custom data object can be bound in the `AppointmentTemplate` and `AppointmentTemplateSelector` by using the property of [ScheduleAppointment.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Data).   
+
 ![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
