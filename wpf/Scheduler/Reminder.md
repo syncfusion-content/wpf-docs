@@ -33,29 +33,25 @@ You can configure the appointment reminders with [SchedulerReminder](https://hel
 <th>Description</th>
 </tr>
 <tr>
-<td>ReminderTimeInterval</td>
+<td>{{'[ReminderTimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderTimeInterval)'| markdownify }}</td>
 <td>Gets or sets the time interval that decides to open the reminder alert window before the appointment’s start time.
 </td>
 </tr>
 <tr>
-<td>ReminderAlertTime</td>
+<td>{{'[ReminderAlertTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_ReminderAlertTime)'| markdownify }}</td>
 <td>Gets the reminder time that decides when to show a reminder alert of the appointment.</td>
 </tr>
 <tr>
-<td>Appointment</td>
+<td>{{'[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_Appointment)'| markdownify }}</td>
 <td>Gets the appointment details for which the reminder is created.</td>
 </tr>
 <tr>
-<td>Data</td>
+<td>{{'[Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_Data)'| markdownify }}</td>
 <td>Gets the reminder data object associated with the `SchedulerReminder.`</td>
 </tr>
 <tr>
-<td>IsDismissed</td>
+<td>{{'[IsDismissed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html#Syncfusion_UI_Xaml_Scheduler_SchedulerReminder_IsDismissed)' | markdownify }}</td>
 <td> Gets or sets whether the reminder is dismissed. </td>
-</tr>
-<tr>
-<td>IsSnoozed</td>
-<td> Gets or sets whether the reminder is snoozed. </td>
 </tr>
 </table>
 
