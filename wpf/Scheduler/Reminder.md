@@ -10,7 +10,7 @@ documentation: ug
 Scheduler alerts you for a particular appointment with a reminder window when enabling the `EnableReminder` property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
 
 ## Enable reminder
-Reminder can be set by setting the `EnableReminder` property is `true.` The reminder time can be set using the `Reminders` property of ScheduleAppointment.
+Reminder can be set by setting the `EnableReminder` property is `true.` The reminder time can be set using the `Reminders` property of `ScheduleAppointment`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ Reminder can be set by setting the `EnableReminder` property is `true.` The remi
 
 
 ## Adding reminders
-You can configure the appointment reminders with ScheduleReminder. The `SchedulerReminder` has the following properties for reminder alert,
+You can configure the appointment reminders with `SchedulerReminder`. The `SchedulerReminder` has the following properties for reminder alert,
 
 <table>
 <tr>
