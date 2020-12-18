@@ -90,7 +90,7 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Horizontal Scrolling
+## Horizontal scrolling
 
 By default, horizontal scrollbar is not enabled in the TreeView. If you want to enable horizontal scrolling based on the content, you should set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.horizontalscrollbarvisibility?view=netcore-3.1) as `Auto`. 
 
