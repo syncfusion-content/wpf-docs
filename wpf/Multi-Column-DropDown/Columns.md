@@ -51,7 +51,7 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 
 ![Manually generated the columns in WPF SfMultiColumnDropDown](Columns_images/Columns_img1.png)
 
-### Customize auto-generated columns in SfMultiColumnDropDownControl
+### Customize auto-generated columns
 
 You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGeneratingColumn) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
@@ -70,7 +70,7 @@ private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingCol
 
 ### Cancel column generation for particular property
 
-You can cancel the specific column adding to the InternalGrid of SfMultiColumnDropDownControl by handling `AutoGeneratingColumn` event.
+You can cancel the auto generation of specific column by handling `AutoGeneratingColumn` event.
 
 In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`. 
 
@@ -81,14 +81,16 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
 	if (e.Column.MappingName == "OrderID")
-        e.Cancel = true;	
+	{
+		e.Cancel = true;
+    }		
 }
 {% endhighlight %}
 {% endtabs %}
 
 ### Changing column type
 
-You can change the type of column adding to InternalGrid of SfMultiColumnDropDownControl by setting the instance of column you want to add in `AutoGeneratingColumn` event. 
+You can change the column type while auto generation by setting the instance of column with type you want to add in `AutoGeneratingColumn` event.
 
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property. 
 
@@ -99,14 +101,12 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
 	if (e.Column.MappingName == "UnitPrice")
-    {
-
-        if (e.Column is GridNumericColumn)
+	{
+		if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
         }       
     }
-}
 }     
 {% endhighlight %}
 {% endtabs %}
@@ -121,17 +121,17 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
-	if(e.Column.MappingName=="OrderID")
-    {
-        e.Column.AllowEditing = false;
-        e.Column.AllowSorting = true;
-        e.Column.AllowFiltering = true;
-        e.Column.AllowGrouping = false;
-        e.Column.AllowFocus = true;
-        e.Column.AllowResizing = false;
-        e.Column.ColumnSizer = GridLengthUnitType.Auto;
-        e.Column.AllowDragging = true;        
-    }	
+	if (e.Column.MappingName=="OrderID")
+	{
+		e.Column.AllowEditing = false;
+		e.Column.AllowSorting = true;
+		e.Column.AllowFiltering = true;
+		e.Column.AllowGrouping = false;
+		e.Column.AllowFocus = true;
+		e.Column.AllowResizing = false;
+		e.Column.ColumnSizer = GridLengthUnitType.Auto;
+		e.Column.AllowDragging = true;        
+	}	
 }
 {% endhighlight %}
 {% endtabs %}
@@ -153,11 +153,10 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
-
-    if (e.Column.MappingName == "Country")
-    {
-        e.Column.HeaderTemplate = this.FindResource("headerTemplate") as DataTemplate;
-    }
+	if (e.Column.MappingName == "Country")
+	{
+		e.Column.HeaderTemplate = this.FindResource("headerTemplate") as DataTemplate;
+	}
 }
 {% endhighlight %}
 {% endtabs %}
