@@ -12,9 +12,9 @@ keywords: Automatic Suggestion
 SfRichTextBoxAdv control shows an inline dropdown with a list of suggested names while type the given mention character (ex: @ symbol). The list of names will filter as you type more letters. You can hit the Tab or Enter key on your keyboard to select the top option, use the arrow keys to highlight other options then hit Tab or Enter, or use your mouse to click any option in the list.
 The selected item from the suggestion list will be inserted as hyperlink with the display text and its respective link.
 
-The following sample code demonstrates how to enable spell checker in SfRichTextBoxAdv.
 ![Enable Spell Checker](Automatic-Suggestion_images/autosuggestion1.PNG)
 
+The following sample code demonstrates how to enable spell checker in SfRichTextBoxAdv.
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
@@ -37,7 +37,6 @@ The following sample code demonstrates how to enable spell checker in SfRichText
         </RichTextBoxAdv:SfRichTextBoxAdv>
     </Grid>
 {% endhighlight %}
-
 {% highlight C# %}
 ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
             List<NameSuggestionItem> suggestionItems = new List<NameSuggestionItem>();
@@ -66,7 +65,6 @@ ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
             (suggestionProvider as NameSuggestionProvider).ItemsSource = suggestionItems;
             richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 {% endhighlight %}
-
 {% highlight VB %}
 Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
 	Dim suggestionItems As List<NameSuggestionItem> = New List<NameSuggestionItem>()
@@ -101,6 +99,7 @@ N> [Automatic suggestion sample Hithub]()
 
 ## Customize the SuggestionBox ItemTemplate and Style
 By default, the drop-down window lists the filtered items as an image, display text and link. If you want to remove the image or link. You can write your own item Template.
+
 ![Modify Suggestion Box Item](Automatic-Suggestion_images/autosuggestion2.PNG)
 
 The following sample code demonstrates how to modify the suggestion box item template and style.
@@ -147,8 +146,10 @@ The following sample code demonstrates how to modify the suggestion box item tem
 
 ## Custom mention character
 By default, @ is a mention character. But any character can be used as mention character.
+
 ![Mention Character](Automatic-Suggestion_images/autosuggestion3.PNG)
 
+The following sample code demonstrates how to use ‘#’ as mention character.
 {% tabs %}
 {% highlight xaml %}
 <Grid>
@@ -165,7 +166,6 @@ By default, @ is a mention character. But any character can be used as mention c
         </RichTextBoxAdv:SfRichTextBoxAdv>
     </Grid>
 {% endhighlight %}
-
 {% highlight C# %}
 ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
 suggestionProvider.MentionCharacter = '#';
@@ -176,8 +176,9 @@ richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 
 ## Multiple Suggestion provider
 Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestion box style.
-![Multiple Suggestion](Automatic-Suggestion_images/autosuggestion6.PNG)
-![Multiple Suggestion](Automatic-Suggestion_images/autosuggestion7.PNG)
+
+<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion6.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion7.PNG"/><br/></td></tr></table>
+
 
 The following sample code demonstrates how to use two suggestion providers. Here we have used ‘@’ and ‘#’ as mentions characters.
 {% tabs %}
@@ -228,7 +229,6 @@ The following sample code demonstrates how to use two suggestion providers. Here
         </RichTextBoxAdv:SfRichTextBoxAdv>
     </Grid>
 {% endhighlight %}
-
 {% highlight C# %}
 ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
             List<NameSuggestionItem> suggestionItems = new List<NameSuggestionItem>();
@@ -292,9 +292,8 @@ When the entered item is not in the suggestion list, suggestionbox displays a te
 •	Right click your project and add new folder named Resources.
 •	Add default resource file of SfRichTextBoxAdv control into Resources folder.
 
-![Multiple Mention Character](Automatic-Suggestion_images/autosuggestion4.PNG)
+<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion4.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion5.PNG"/><br/></td></tr></table>
 
-![suggestion empty](Automatic-Suggestion_images/autosuggestion5.PNG)
 
 ## Custom suggestion provider
 By default, we have implemented ‘NameSuggestionProvider’ as suggestion provider. But you can implement your own suggestion provider inheriting from ISuggestionProvider. Which helps you to customizing the search and insert selected item functionalities.
@@ -423,10 +422,9 @@ N> [Custom suggestion provider Github link]()
 
 ## Custom Search
 In default searching, it lists the items which contains the typed text. But you can modify the searching like lists the items starts or ends with typed text, by implementing your own suggestion provider and overriding the Search method.
-Search – contains
-![Custom Search](Automatic-Suggestion_images/autosuggestion8.PNG)
-Search – starts with
-![Custom Search](Automatic-Suggestion_images/autosuggestion9.PNG)
+
+<table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion8.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion0.PNG"/></td></tr></table>
+
 
 The following sample code demonstrates how to override search operation in your suggestion provider.
 {% tabs %}
@@ -448,6 +446,7 @@ public List<object> Search(string searchText)
 
 ## Custom insert selected item
 By default, the selected item from the suggestions list is inserted as hyperlink. But you can insert it as plain text or without hyperlink, by implementing your own suggestion provider and overriding the “InsertSelectedItem” method.
+
 ![Custom Insert](Automatic-Suggestion_images/autosuggestion10.PNG)
 
 The following sample code demonstrates how to override insert selected item operation in your suggestion provider.
