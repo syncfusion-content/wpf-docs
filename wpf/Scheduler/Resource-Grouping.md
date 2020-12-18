@@ -448,6 +448,11 @@ Resource UI customization using a template and template selectors support.
 {% endhighlight %}
 {% endtabs %}
 
+>**Note**
+• ResourceHeaderTemplate: 
+    •   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplate` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+    •   The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of `SchedulerResource.Data`.
+
 ![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
 N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateDemo)
@@ -553,6 +558,11 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
     }
 {% endhighlight %}
 {% endtabs %}
+
+>**Note**
+ ResourceHeaderTemplateSelector: 
+    •   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplateSelector` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+    •   The custom data object can be bound in the `ResourceHeaderTemplateSelector` by using the property of `SchedulerResource.Data`.
 
 ![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
 
