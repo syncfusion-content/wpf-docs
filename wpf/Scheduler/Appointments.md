@@ -691,12 +691,8 @@ The default appearance of schedule appointment can be customized in all views by
 {% endtabs %}
 
 >**Note**
- • AppointmentTemplate: 
-    •   By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` for both `ScheduleAppointment` and custom data object in the `ItemsSource` of `SfScheduler`.
-    •   The custom data object can be bound in the `AppointmentTemplate` by using the property of `ScheduleAppointment.Data`.
- • AppointmentTemplateSelector: 
-    •   By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplateSelector` for both `ScheduleAppointment` and custom data object in the `ItemsSource` of `SfScheduler`.
-    •   The custom data object can be bound in  `AppointmentTemplateSelector` by using the property of `ScheduleAppointment.Data`.   
+•   By default, the `ScheduleAppointment` is set as the `DataContext` for the `AppointmentTemplate` and `AppointmentTemplateSelector` for both `ScheduleAppointment` and custom data object in the `ItemsSource` of `SfScheduler`.
+•   The custom data object can be bound in the `AppointmentTemplate` and `AppointmentTemplateSelector` by using the property of `ScheduleAppointment.Data`.   
 
 ![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
