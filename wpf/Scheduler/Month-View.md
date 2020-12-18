@@ -241,7 +241,7 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Collapsed.Collapsed;
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/LeadingAndTrailingDay.png)
 
 ## Blackout dates
-You can disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_BlackoutDates) collection property of the `SfScheduler.` Using this, you can allocate or restrict specific dates for the predefined events.
+You can disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html?tabs=tabid-1#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of the `SfScheduler.` Using this, you can allocate or restrict specific dates for the predefined events.
 
 {% tabs %}
 {% highlight c#%}
