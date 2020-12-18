@@ -535,7 +535,7 @@ SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
 
 ### Override syncfusion themes in application
 
-All Syncfusion theme [supported in themestudio](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list) control styles can be overridden by a common naming convention. A unique key is given to each and every style, so that you can override the styles using the `BasedOn` property.
+All Syncfusion theme [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list) control styles can be overridden by a common naming convention. A unique key is given to each and every style, so that you can override the styles using the `BasedOn` property.
 
 The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
 
