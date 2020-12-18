@@ -507,7 +507,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 To apply custom theme in application, export custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
 
-For demonstration purpose, we have used exported theme name as `MaterialDarkYellow` and exported theme assembly name as ``Syncfusion.Themes.MaterialDarkYellow.WPF`.
+For demonstration purpose, we have used exported theme name as `MaterialDarkYellow` and exported theme assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
 
 Now, register the instance of generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from exported theme project using [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method and pass the exported custom theme name and respective theme assembly instance as parameters.
 
