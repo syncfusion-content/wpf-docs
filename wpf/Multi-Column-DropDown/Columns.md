@@ -81,9 +81,7 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
 	if (e.Column.MappingName == "OrderID")
-	{
-		e.Cancel = true;
-    }		
+		e.Cancel = true;		
 }
 {% endhighlight %}
 {% endtabs %}
@@ -103,10 +101,8 @@ private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingCol
 	if (e.Column.MappingName == "UnitPrice")
 	{
 		if (e.Column is GridNumericColumn)
-        {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
-        }       
-    }
+	}
 }     
 {% endhighlight %}
 {% endtabs %}

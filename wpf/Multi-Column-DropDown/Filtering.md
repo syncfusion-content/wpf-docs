@@ -40,9 +40,9 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 You can decides whether the automatic completion of text and the filtering are case-sensitive or not by setting [AllowCaseSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowCaseSensitiveFiltering) as true.
 
 ## Ignore Diacritic Sensitivity
-    
-By default, SfMultiColumnDropDownControl filters or auto completes the data based on input character only. For example, if we type normal character in editor, the record which contains diacritic character will not be filtered or auto completed. If you want to filter or auto complete data that contains diacritic character also while typing normal character in editor, you can disable the diacritic sensitive filtering or auto complete by disabling the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property.
 
+By default, SfMultiColumnDropDownControl filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the AllowDiacriticSensitiveFiltering [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
+    
 {% tabs %}
 {% highlight xml %}
 <Syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
