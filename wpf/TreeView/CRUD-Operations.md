@@ -27,7 +27,7 @@ sfTreeView.Nodes.Add(new TreeViewNode(){ Content = "NewlyAddedNode" });
 
 ## Delete Nodes
 
-TreeView provides built-in support to delete the selected nodes in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the `SfTreeView.AllowDeleting` property to `true`.
+TreeView provides built-in support to delete the selected nodes in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ sfTreeView.Nodes.RemoveAt(2);
 
 #### Conditionally deleting nodes when pressing Delete key
 
-You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of `ItemDeleting` event. You can skip certain nodes when deleting more than one node by removing items from `ItemDeletingEventArgs.Nodes`.
+You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of [ItemDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleting) event. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.ItemDeletingEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemDeletingEventArgs_Nodes).
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void TreeView_ItemDeleting (object sender, ItemDeletingEventArgs e)
 
 #### Handling selection after deleting the node from SfTreeView
 
-You can handle the selection after remove the nodes through `SfTreeView.SelectedItem` property in `ItemDeleted` event.
+You can handle the selection after remove the nodes through [SfTreeView.SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property in [ItemDeleted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleted) event.
 
 {% tabs %}
 {% highlight c# %}
