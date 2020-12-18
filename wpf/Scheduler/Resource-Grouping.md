@@ -375,7 +375,7 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Datebasis_SpecialTimeRegion_DayView.png)
 
-The `SpecialTimeRegion` in a Time basis by setting the value of `CanMergeAdjacentRegions` to True.
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in a Time basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to True.
 
 ![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Timebasis_SpecialTimeRegion_DayView.png)
 
