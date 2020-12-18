@@ -357,22 +357,27 @@ Special time region can be created based on the resources in day, week, work wee
 {% tabs %}
 {% highlight c# %}
 
-this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
+Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-   StartTime = new System.DateTime(2020, 09, 27, 1, 0, 0),
-   EndTime = new System.DateTime(2020, 09, 27, 2, 0, 0),
-   Text = "Lunch",
-   CanEdit = false,
-   Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#D3D3D3"),
-   Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#000000"),
-   RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
-   ResourceIdCollection = new ObservableCollection<object>() {"1001", "1002", "1003"}
+    StartTime = new System.DateTime(2020, 12, 13, 13, 0, 0),
+    EndTime = new System.DateTime(2020, 12, 13, 14, 0, 0),
+    Text = "Lunch",
+    CanEdit = false,
+    Background = Brushes.Black,
+    Foreground = Brushes.White,
+    RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+    CanMergeAdjacentRegions =false,
+    ResourceIdCollection = new ObservableCollection<object>() { "0", "1", "2" }
 });
 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler resource Special Time Region in Day View ](Resource_Images/SpecialTimeRegion_DayView.png)
+![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Datebasis_SpecialTimeRegion_DayView.png)
+
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in a Time basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to True.
+
+![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Timebasis_SpecialTimeRegion_DayView.png)
 
 ### Assign resources to special time regions in timeline view
 
@@ -406,23 +411,22 @@ Resource UI customization using a template and template selectors support.
 
 {% tabs %}
 {% highlight xaml %}
-
 <Window.Resources>
 <DataTemplate  x:Key="DayViewResourceTemplate">
-   <Grid Background="Transparent">
-      <Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
-         <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-            <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
+    <Grid Background="Transparent">
+        <Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
+            <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
                 <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
-                   <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
-                          Height="55" Source="{Binding ImageSource}" />
+                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                          Height="55" Source="{Binding Data.ImageSource}" />
                 </Border>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
-                   Foreground="Black” Text="{Binding Name}" />
-         </StackPanel>
-      </Border>
-   </Grid>
+                </Border>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                Foreground="Black" Text="{Binding Data.Name}" />
+            </StackPanel>
+        </Border>
+    </Grid>
 </DataTemplate>
 </Window.Resources>
 
@@ -435,11 +439,18 @@ Resource UI customization using a template and template selectors support.
 <Grid Name="grid">
    <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
                            ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
+                           <syncfusion:SfScheduler.ResourceMapping>
+        <syncfusion:ResourceMapping Id="Id" Name="Name" Background="BackgroundBrush" Foreground="ForegroundBrush"/>
+        </syncfusion:SfScheduler.ResourceMapping>
    </syncfusion:SfScheduler>
 </Grid>
 
 {% endhighlight %}
 {% endtabs %}
+
+>**Note** 
+•   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplate` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+•   The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data).
 
 ![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
@@ -451,40 +462,38 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 {% highlight xaml %}
 
     <Window.Resources>
-        <DataTemplate x:Key="DaysViewResourceTemplate">
+        <DataTemplate  x:Key="DayViewResourceTemplate">
             <Grid Background="Transparent">
-                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
-                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
-                            <Image HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   Width="55"
-                                   Height="55"
-                                   Source="{Binding ImageSource}" />
+                <Border BorderThickness="0.3,0.3,0,0.3" BorderBrush="Gray" >
+                    <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                        <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                            <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                          Height="55" Source="{Binding Data.ImageSource}" />
+                            </Border>
                         </Border>
-                    </Border>
-                    <TextBlock HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontSize="15"
-                               Text="{Binding Name}"/>
-                </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                   Foreground="Black" Text="{Binding Data.Name}" />
+                    </StackPanel>
+                </Border>
             </Grid>
         </DataTemplate>
 
-        <DataTemplate x:Key="TimelineResourceTemplate">
+        <DataTemplate x:Key="TimelineViewResourceTemplate">
             <Grid Background="Transparent">
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding BackgroundBrush}">
+                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
                         <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
                             <Image HorizontalAlignment="Center" VerticalAlignment="Center"
                                    Width="55"
                                    Height="55"
-                                   Source="{Binding ImageSource}" />
+                                   Source="{Binding Data.ImageSource}" />
                         </Border>
                     </Border>
                     <TextBlock HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontSize="15"
-                               Text="{Binding Name}"/>
+                               Text="{Binding Data.Name}"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
@@ -540,7 +549,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
             var schedule = Syncfusion.Windows.Shared.VisualUtils.FindVisualParent<SfScheduler>(container);
 			if (schedule == null)
                 return null;
-			if (schedule.ViewType != SchedulerViewType.Timeline)
+			if (schedule.ViewType == SchedulerViewType.Day || schedule.ViewType == SchedulerViewType.Week || schedule.ViewType == SchedulerViewType.WorkWeek)
                 return DayViewResourceTemplate;
             else
                 return TimelineViewResourceTemplate;
@@ -548,6 +557,10 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
     }
 {% endhighlight %}
 {% endtabs %}
+
+>**Note**
+•   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplateSelector` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+•   The custom data object can be bound in the `ResourceHeaderTemplateSelector` by using the property of [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data).
 
 ![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
 

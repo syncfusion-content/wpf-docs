@@ -15,7 +15,7 @@ The WPF SfScheduler control is used to schedule and manage appointments through 
 
 ## Key features
 
-**Built-in Views** — SfScheduler provides five different types of views such as Day, WorkWeek, Week, Timeline, and Month.
+**Built-in Views** - The SfScheduler provides eight different types of views such as Day, WorkWeek, Week, TimelineDay, TimelineWeek, TimelineWorkWeek, TimelineMonth, and Month.
 
 ![Views in WPF Scheduler](Overview_Images/views.png)
 
@@ -40,3 +40,7 @@ The WPF SfScheduler control is used to schedule and manage appointments through 
 **Appearance Customization** — Provide a unique look to your scheduler with the event appearance customization.
 
 **Localization** — Display the current date and time by following the globalized date and time formats, and localize all available static texts in the SfScheduler.
+
+**Reminder** - You can use reminders to organize your appointments in your scheduler. The Scheduler reminds you of the appointment at the specified time.
+
+**LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
