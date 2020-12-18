@@ -33,6 +33,10 @@ The WPF Theme Studio comes with the following set of themes,
 
 * Office 2019 High Contrast
 
+* Office 2019 High Contrast White
+
+* System Theme
+
 ## Creating custom theme
 
 ### Customizing theme color from theme studio
@@ -115,23 +119,23 @@ Solution Project</th></tr>
 <tr>
 <td>
 .Net Framework 4.6</td><td>
-Syncfusion.Themes.MaterialDark.WPF_2015.csproj</td></tr>
+Syncfusion.Themes.MaterialDarkYellow.WPF_2015.csproj</td></tr>
 <tr>
 <td>
 .Net Framework 4.5.1</td><td>
-Syncfusion.Themes.MaterialDark.WPF_2013.csproj</td></tr>
+Syncfusion.Themes.MaterialDarkYellow.WPF_2013.csproj</td></tr>
 <tr>
 <td>
 .Net Framework 4.5 </td><td>
-Syncfusion.Themes.MaterialDark.WPF_2012.csproj</td></tr>
+Syncfusion.Themes.MaterialDarkYellow.WPF_2012.csproj</td></tr>
 <tr>
 <td>
 .Net Framework 4.0</td><td>
-Syncfusion.Themes.MaterialDark.WPF_2010.csproj</td></tr>
+Syncfusion.Themes.MaterialDarkYellow.WPF_2010.csproj</td></tr>
 <tr>
 <td>
 .Net Core 3</td><td>
-Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td></tr>
+Syncfusion.Themes.MaterialDarkYellow.WPF_NETCore.csproj</td></tr>
 </table>
 
 
@@ -175,15 +179,40 @@ Add reference of **Syncfusion.SfSkinManager.Wpf.dll** to the WPF application and
 
 **Step 3:**
 
-The appearance of any Syncfusion UI controls for WPF can be customized by using [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
+The appearance of any Syncfusion UI controls for WPF can be customized by using [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). 
 
-Now, set the `SfSkinManager` attached property `VisualStyle` as `MaterialDark` for the Docking Manager control since we have generated MaterialDark (`Syncfusion.Themes.MaterialDark.WPF`) assembly from exported theme project for demonstration purpose.
+Now, register the instance of generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from exported theme project for demonstration purpose using [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method and pass the exported custom theme name and respective theme assembly instance as parameters.
+
+{% tabs %}
+
+{% highlight C# %}
+
+string style = "MaterialDarkYellow";
+SkinHelper styleInstance = null;
+var skinHelpterStr = "Syncfusion.Themes." + style + ".WPF." + style + "SkinHelper, Syncfusion.Themes." + style + ".WPF";
+Type skinHelpterType = Type.GetType(skinHelpterStr);
+if (skinHelpterType != null)
+    styleInstance = Activator.CreateInstance(skinHelpterType) as SkinHelper;
+if (styleInstance != null)
+{
+    SfSkinManager.RegisterTheme("MaterialDarkYellow", styleInstance);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step4:**
+
+Now, set the `SfSkinManager` attached property `Theme` as `MaterialDarkYellow;MaterialDark` for the Docking Manager control since we have generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from exported theme project for demonstration purpose.
+
+N> we are providing custom theme name in this format: `CustomTheme1;BaseThemeName` where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example `MaterialDarkYellow;MaterialDark`.
 
 {% tabs %}
 {% highlight XAML %}
 
     <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True"
-    PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="MaterialDark">
+    PersistState="True">
                            
     <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
     syncfusion:DockingManager.SideInDockedMode="Right"/>
@@ -195,11 +224,30 @@ Now, set the `SfSkinManager` attached property `VisualStyle` as `MaterialDark` f
     syncfusion:DockingManager.SideInDockedMode="Tabbed"
 	syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
 
+    <ContentControl x:Name="EndPage" syncfusion:DockingManager.Header="End Page"
+     syncfusion:DockingManager.State="Document" >
+                <TextBlock Text="Any built-in themes can applied to the required control by VisualStyle attached property of the SfSkinManager." />
+    </ContentControl>
     <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page"
      syncfusion:DockingManager.State="Document" >
-       <TextBlock Text="Any built-in themes can applied to the required control by VisualStyle attached property of the SfSkinManager." />                           
+                <TextBlock Text="Any built-in themes can applied to the required control by VisualStyle attached property of the SfSkinManager." />
     </ContentControl>
     </syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+string style = "MaterialDarkYellow";
+SkinHelper styleInstance = null;
+var skinHelpterStr = "Syncfusion.Themes." + style + ".WPF." + style + "SkinHelper, Syncfusion.Themes." + style + ".WPF";
+Type skinHelpterType = Type.GetType(skinHelpterStr);
+if (skinHelpterType != null)
+    styleInstance = Activator.CreateInstance(skinHelpterType) as SkinHelper;
+if (styleInstance != null)
+{
+    SfSkinManager.RegisterTheme("MaterialDarkYellow", styleInstance);
+}
+SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
 
 {% endhighlight %}
 {% endtabs %}
