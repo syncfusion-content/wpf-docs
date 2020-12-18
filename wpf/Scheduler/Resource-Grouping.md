@@ -375,7 +375,7 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Datebasis_SpecialTimeRegion_DayView.png)
 
-The `SpecialTimeRegion` in a Time basis by setting the value of `CanMergeAdjacentRegions` to True.
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) in a Time basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) to True.
 
 ![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Timebasis_SpecialTimeRegion_DayView.png)
 
@@ -447,6 +447,10 @@ Resource UI customization using a template and template selectors support.
 
 {% endhighlight %}
 {% endtabs %}
+
+>**Note** 
+•   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplate` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+•   The custom data object can be bound in the `ResourceHeaderTemplate` by using the property of [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data).
 
 ![WPF scheduler custom ResourceHeaderTemplate](Resource_Images/CustomDataTemplate.png)
 
@@ -553,6 +557,10 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
     }
 {% endhighlight %}
 {% endtabs %}
+
+>**Note**
+•   By default, the `SchedulerResource` is set as the `DataContext` for the `ResourceHeaderTemplateSelector` for both `SchedulerResource` and custom data object in the `ResourceCollection`.
+•   The custom data object can be bound in the `ResourceHeaderTemplateSelector` by using the property of [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data).
 
 ![WPF scheduler custom ResourceHeaderTemplateSelector ](Resource_Images/CustomDataTemplateSelecor.png)
 

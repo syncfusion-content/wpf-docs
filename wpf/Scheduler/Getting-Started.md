@@ -416,7 +416,7 @@ Schedule.FirstDayOfWeek = DayOfWeek.Tuesday;
 ![WPF scheduler FirstDayOfWeek](GettingStarted_images/change-first-day.png)
 
 ## Show busy indicator
-The Scheduler supports to show the busy indicator by using the `ShowBusyIndicator` property. The default value is set to false, If the value will be set to `true` then the busy indicator will be load on view or visible date changed.
+The Scheduler supports to show the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to false, If the value will be set to `true` then the busy indicator will be load on view or visible date changed.
 
 {% tabs %}   
 {% highlight xaml %}
