@@ -916,3 +916,208 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2019Colorful" Width="820" Height
 ![BackStage items with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img19.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Positioning-BackStageItems)
+
+## Different types of Animation
+
+The BackStage  animation can be achieved by using the AnimationType enumeration property. The below AnimationType can be used to animate the BackStage.
+
+* None
+* Slide
+* Fade
+* Zoom
+
+## Animation duration
+
+The AnimationDuration property is used to set the duration for animation in milli seconds.
+
+The following code example illustrates how to animate the BackStage using the AnimationType property.
+
+{% tabs %}
+
+ {% highlight XAML %}
+
+ <syncfusion:RibbonWindow
+    x:Class="BackStage.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:local="clr-namespace:BackStage"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:tools="clr-namespace:Syncfusion.Windows.Tools;assembly=Syncfusion.Tools.Wpf"
+    Width="900"
+    Height="600"
+    syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=Office2016Colorful}"
+    WindowStartupLocation="CenterScreen">
+    <syncfusion:RibbonWindow.Resources>
+        <ObjectDataProvider
+            x:Key="Animation"
+            MethodName="GetValues"
+            ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="tools:BackStageAnimationType" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </syncfusion:RibbonWindow.Resources>
+    <syncfusion:RibbonWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:RibbonWindow.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <syncfusion:Ribbon
+                x:Name="_ribbon"
+                VerticalAlignment="Top"
+                local:ViewModel.Ribbon="{Binding ElementName=_ribbon}"
+                IsBackStageVisible="True">
+                <syncfusion:Ribbon.QuickAccessToolBar>
+                    <syncfusion:QuickAccessToolBar>
+                        <syncfusion:RibbonButton SizeForm="ExtraSmall" />
+                        <syncfusion:RibbonButton SizeForm="ExtraSmall" />
+                        <syncfusion:QuickAccessToolBar.QATMenuItems>
+                            <syncfusion:RibbonButton Label="Send" />
+                            <syncfusion:RibbonButton Label="Forward" />
+                            <syncfusion:RibbonButton Label="ReplyAll" />
+                            <syncfusion:RibbonButton Label="Delete" />
+                            <syncfusion:RibbonButton Label="Print" />
+                        </syncfusion:QuickAccessToolBar.QATMenuItems>
+                    </syncfusion:QuickAccessToolBar>
+                </syncfusion:Ribbon.QuickAccessToolBar>
+                <syncfusion:Ribbon.BackStage>
+                    <syncfusion:Backstage AnimationType="{Binding ElementName=AnimationTypes, Path=SelectedItem, UpdateSourceTrigger=PropertyChanged}">
+                        <syncfusion:BackstageTabItem Header="Info">
+                            <StackPanel>
+                                <TextBlock
+                                    Margin="10"
+                                    FontSize="20"
+                                    Text="Account Information" />
+                                <TextBlock
+                                    Margin="10"
+                                    FontSize="12"
+                                    Text="Employ1@syncfusion.com" />
+                            </StackPanel>
+                        </syncfusion:BackstageTabItem>
+                        <syncfusion:BackstageTabItem Header="Open" />
+                        <syncfusion:BackStageCommandButton Header="Save" />
+                        <syncfusion:BackStageCommandButton Header="SaveAs" />
+                        <syncfusion:BackStageSeparator />
+                        <syncfusion:BackstageTabItem Header="Print" />
+                        <syncfusion:BackstageTabItem Header="Share" />
+                        <syncfusion:BackStageSeparator Position="Bottom" />
+                        <syncfusion:BackstageTabItem Header="Options" Position="Bottom" />
+                        <syncfusion:BackStageCommandButton Header="Feedback" Position="Bottom" />
+                        <syncfusion:BackStageCommandButton Header="Exit" Position="Bottom" />
+                    </syncfusion:Backstage>
+                </syncfusion:Ribbon.BackStage>
+                <syncfusion:RibbonTab Caption="HOME" IsChecked="True">
+                    <syncfusion:RibbonBar Name="New" Header="New">
+                        <syncfusion:RibbonButton Label="New Email" SizeForm="Large" />
+                        <syncfusion:DropDownButton Label="New Items" SizeForm="Large">
+                            <syncfusion:DropDownMenuItem Header="E-mail Message" />
+                            <syncfusion:DropDownMenuItem Header="Appointment" />
+                            <syncfusion:DropDownMenuItem Header="Meeting" />
+                            <syncfusion:DropDownMenuItem Header="Contact" />
+                            <syncfusion:DropDownMenuItem Header="Task" />
+                        </syncfusion:DropDownButton>
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar Name="Delete" Header="Delete">
+                        <syncfusion:RibbonButton Label="Ignore" />
+                        <syncfusion:SplitButton Label="Clean Up">
+                            <syncfusion:DropDownMenuItem Header="Clean Up Folder" />
+                            <syncfusion:DropDownMenuItem Header="Clean Up Conversation" />
+                            <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder" />
+                        </syncfusion:SplitButton>
+                        <syncfusion:SplitButton
+                            Width="76"
+                            Margin="0,0,12,0"
+                            Label="Junk" />
+                        <syncfusion:RibbonButton Label="Delete" SizeForm="Large" />
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar Name="Respond" Header="Respond">
+                        <syncfusion:RibbonButton Label="Reply" SizeForm="Large" />
+                        <syncfusion:RibbonButton Label="Reply All" SizeForm="Large" />
+                        <syncfusion:RibbonButton Label="Forward" SizeForm="Large" />
+                        <syncfusion:RibbonButton Label="Meeting" />
+                        <syncfusion:SplitButton
+                            Width="68"
+                            Margin="-2,0,6,0"
+                            Label="IM" />
+                        <syncfusion:SplitButton
+                            Width="68"
+                            Margin="-2,0,6,0"
+                            Label="More" />
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar Name="QuickSteps" Header="Quick Steps">
+                        <syncfusion:RibbonGallery
+                            Width="160"
+                            ItemHeight="20"
+                            ItemWidth="70"
+                            VisualMode="InRibbon">
+                            <syncfusion:RibbonGalleryItem Content="Move to?" />
+                            <syncfusion:RibbonGalleryItem Content="Team Email" />
+                            <syncfusion:RibbonGalleryItem Content="ReplyDelete" />
+                            <syncfusion:RibbonGalleryItem Content="To Manager" />
+                            <syncfusion:RibbonGalleryItem Content="Done" />
+                            <syncfusion:RibbonGalleryItem Content="Create New" />
+                        </syncfusion:RibbonGallery>
+                    </syncfusion:RibbonBar>
+                    <syncfusion:RibbonBar Header="Animation">
+                        <StackPanel>
+                            <TextBlock
+                                Margin="10,10,10,10"
+                                VerticalAlignment="Center"
+                                Text="Animation Type" />
+                            <TextBlock
+                                Margin="10,5,10,10"
+                                VerticalAlignment="Center"
+                                Text="Animation Duration in (ms)" />
+                        </StackPanel>
+                        <StackPanel>
+                            <syncfusion:RibbonComboBox
+                                Name="AnimationTypes"
+                                Width="60"
+                                Margin="10,5,10,10"
+                                ItemsSource="{Binding Source={StaticResource ResourceKey=Animation}}"
+                                SelectedIndex="1"
+                                SelectedItem="{Binding SelectedModeProperty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            <syncfusion:RibbonComboBox
+                                Name="AnimationDuration"
+                                Width="60"
+                                Margin="10,5,10,10"
+                                SelectedIndex="0">
+                                <syncfusion:RibbonComboBoxItem>250</syncfusion:RibbonComboBoxItem>
+                                <syncfusion:RibbonComboBoxItem>300</syncfusion:RibbonComboBoxItem>
+                                <syncfusion:RibbonComboBoxItem>350</syncfusion:RibbonComboBoxItem>
+                                <syncfusion:RibbonComboBoxItem>400</syncfusion:RibbonComboBoxItem>
+                                <syncfusion:RibbonComboBoxItem>450</syncfusion:RibbonComboBoxItem>
+                                <interactivity:Interaction.Triggers>
+                                    <interactivity:EventTrigger EventName="SelectionChanged">
+                                        <interactivity:InvokeCommandAction Command="{Binding AnimationDurationCommand}" CommandParameter="{Binding ElementName=AnimationDuration, Path=SelectedItem}" />
+                                    </interactivity:EventTrigger>
+                                </interactivity:Interaction.Triggers>
+                            </syncfusion:RibbonComboBox>
+                        </StackPanel>
+                    </syncfusion:RibbonBar>
+                </syncfusion:RibbonTab>
+                <syncfusion:RibbonTab Caption="SEND/RCEIVE" IsChecked="False" />
+                <syncfusion:RibbonTab Caption="FOLDER" IsChecked="False" />
+                <syncfusion:RibbonTab Caption="VIEW" IsChecked="False" />
+            </syncfusion:Ribbon>
+        </Grid>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+ {% endhighlight %}
+
+{% highlight c# %}
+
+ ribbon.BackStage.AnimationDuration = TimeSpan.FromMilliseconds(250);
+
+ {% endhighlight %}
+
+ {% endtabs %}
+
