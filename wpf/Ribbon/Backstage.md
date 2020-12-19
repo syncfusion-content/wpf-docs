@@ -928,7 +928,7 @@ The BackStage  animation can be achieved by using the AnimationType enumeration 
 
 ## Animation duration
 
-The AnimationDuration property is used to set the duration for animation in milli seconds.
+The AnimationDuration property is used to set the duration for animation in milliseconds.
 
 The following code example illustrates how to animate the BackStage using the AnimationType property.
 
