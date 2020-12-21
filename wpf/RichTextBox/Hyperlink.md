@@ -1,6 +1,6 @@
 ---
 title: Hyperlink | WPF RichTextBox| Syncfusion
-description: This section illustrates about hyperlink support in WPF RichTextBox(SfRichTextBoxAdv) control.
+description: This section illustrates about hyperlink field support in WPF RichTextBox(SfRichTextBoxAdv) control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
@@ -150,10 +150,6 @@ paragraphAdv.Inlines.Add(New FieldEndAdv())
 
 The following code example illustrates how to insert hyperlink field with ScreenTip into SfRichTextBoxAdv Document through UI command.
 {% tabs %}
-{% highlight xaml %}
-<Button Content="Insert Hyperlink" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertHyperlinkCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="www.syncfusion.com"/>
-
-{% endhighlight %}
 {% highlight C# %}
 SfRichTextBoxAdv.InsertHyperlinkCommand.Execute(new string[3] { "www.syncfusion.com", "SfRichTextBoxAdv", "SfRichTextBox" }, richTextBoxAdv);
 
