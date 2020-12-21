@@ -255,7 +255,6 @@ Please find the complete list of controls with their xaml path and current statu
 <tr>
 <td>Controls/BusyIndicator/Themes/VS2010Style.xaml</td>
 <td>Moved to Shared.WPF.Classic</td></tr>
-</tr>
 </table>
 
 ## Button
@@ -312,7 +311,6 @@ Please find the complete list of controls with their xaml path and current statu
 <tr>
 <td>Controls/ButtonControls/Button/Themes/VS2010Style.xaml</td>
 <td>Moved to Shared.WPF.Classic</td></tr>
-</tr>
 </table>
 
 ## DropDownButton
@@ -445,7 +443,7 @@ Please find the complete list of controls with their xaml path and current statu
 <td>Not changed</td>
 </tr>
 <tr><td>Controls/ColorBar/Themes/BlendStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
-<li>MainTemplate.xaml</li>
+<tr><td>Controls/ColorBar/Themes/MainTemplate.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2003Style.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2007BlackStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2007BlueStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
