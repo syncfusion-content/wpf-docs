@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SkinStorage based theme xaml path changes | SkinStorage | WPF | Syncfusion
+title: SkinStorage theme xaml path changes | SkinStorage | WPF | Syncfusion
 description: Changes of SkinStorage based theme xaml path moved from shared and tools project to classic shared and tools project.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Xaml Path Changes
+# SkinStorage theme xaml path changes
 
 Changes of SkinStorage based theme xaml path moved from `Syncfusion.Shared.WPF` and `Syncfusion.Tools.WPF` project to classic projects `Syncfusion.Shared.WPF.Classic` and `Syncfusion.Tools.WPF.Classic`.
 
