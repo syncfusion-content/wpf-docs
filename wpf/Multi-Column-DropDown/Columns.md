@@ -98,11 +98,11 @@ this.SfMultiColumn.AutoGeneratingColumn += SfMultiColumn_AutoGeneratingColumn;
 
 private void SfMultiColumn_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
-	if (e.Column.MappingName == "UnitPrice")
-	{
-		if (e.Column is GridNumericColumn)
+    if (e.Column.MappingName == "UnitPrice")
+    {
+        if (e.Column is GridNumericColumn)
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
-	}
+    }
 }     
 {% endhighlight %}
 {% endtabs %}
