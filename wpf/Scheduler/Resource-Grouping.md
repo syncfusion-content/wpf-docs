@@ -9,7 +9,7 @@ documentation: ug
 
 # Resource Grouping in WPF Scheduler (SfScheduler)
 
-The scheduler resource view will allow you to group appointments based on the resources or dates, arranged by the column or row in the day, week, workweek, and timeline views. It also allows you to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor.
+The scheduler resource view will allow you to group appointments based on the resources or dates, arranged by the column or row in the Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views. It also allows you to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor.
 
 ## Grouping by Resources
 
@@ -42,7 +42,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 You can group the resource order by `Date` or order by `Resource` using the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property of `SfScheduler`.
 
-N>You can group the resource order only in the day, week, and work week views.
+N>You can group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
 
 ### Resource
 
@@ -126,7 +126,7 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![WPF scheduler Multiple resources appointment sharing in day view ](Resource_Images/ResourceSharing_DayView.png)
 
-![WPF scheduler Multiple resources appointment sharing in day view ](Resource_Images/ResourceSharing_TimelineView.png)
+![WPF scheduler Multiple resources appointment sharing in timeline view ](Resource_Images/ResourceSharing_TimelineView.png)
 
 ## Scheduler Resource Mapping
 
@@ -270,7 +270,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 ## Resource header size 
 
-You can customize the resource header size in the day, week, work week and timeline views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
+You can customize the resource header size in the Day, Week, WorkWeek and TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
 
 ### Resource header size in days view
 
@@ -291,11 +291,11 @@ schedule.DaysViewSettings.ResourceHeaderSize = 100;
 
 ### Resource header size in timeline view
 
-`TimelineViewSettings` applicable for Timeline views. By default, value of this property is set to 50.
+`TimelineViewSettings` applicable for TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views. By default, value of this property is set to 50.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
+<Schedule:SfScheduler Name="schedule" ViewType="TimelineWeek" ResourceGroupType="Resource">
    <Schedule:SfScheduler.TimelineViewSettings>
       <Schedule:TimelineViewSettings ResourceHeaderSize="100"/>
    </Schedule:SfScheduler.TimelineViewSettings>
@@ -308,7 +308,7 @@ schedule.DaysViewSettings.ResourceHeaderSize = 100;
 
 ## Visible resource count
 
-You can customize the number of visible resources in the day, week, work week and timeline views by using the [VisibleResourceCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
+You can customize the number of visible resources in Day, Week, WorkWeek and TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views by using the [VisibleResourceCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
 
 N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed. 
 
@@ -330,12 +330,12 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 
 ![WPF scheduler Visible resource count in day view ](Resource_Images/VisibleResourceCout_DayView.png)
 
-### Visible resource count in timeline view
+### Visible resource count in timeline views
 
-`TimelineViewSettings` applicable for Timeline views. By default, value of this property is set to 3.
+`TimelineViewSettings` applicable for TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views. By default, value of this property is set to 3.
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfScheduler Name="schedule" ViewType="Timeline" ResourceGroupType="Resource">
+<Schedule:SfScheduler Name="schedule" ViewType="TimelineDay" ResourceGroupType="Resource">
    <Schedule:SfScheduler.TimelineViewSettings>
       <Schedule:TimelineViewSettings VisibleResourceCount="2"/>
    </Schedule:SfScheduler.TimelineViewSettings>
@@ -346,11 +346,11 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler Visible resource count in timeline view ](Resource_Images/VisibleResourceCout_TimelineView.png)
+![WPF scheduler Visible resource count in timelineDay view ](Resource_Images/VisibleResourceCout_TimelineView.png)
 
 ## Assign resources to special time regions 
 
-Special time region can be created based on the resources in day, week, work week and timeline views.
+Special time region can be created based on the resources in Day, Week, WorkWeek and TimelineDay, TimelineWeek, TimelineWorkWeek and TimelineMonth views.
 
 ### Assign resources to special time regions in days view
 
@@ -399,7 +399,7 @@ this.schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler resource Special Time Region in Timeline View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
+![WPF scheduler resource Special Time Region in TimelineDay View ](Resource_Images/SpecialTimeRegion_TimelineView.png)
 
 N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceGroupTypeDemo)
 
