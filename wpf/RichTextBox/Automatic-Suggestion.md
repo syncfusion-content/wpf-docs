@@ -95,7 +95,7 @@ Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
 {% endhighlight %}
 {% endtabs %}
 
-N> [Automatic suggestion sample Hithub]()
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Automatic%20Suggestion)
 
 ## Customize the SuggestionBox ItemTemplate and Style
 By default, the drop-down window lists the filtered items as an image, display text and link. If you want to remove the image or link. You can write your own item Template.
@@ -285,14 +285,16 @@ ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
 {% endhighlight %}
 {% endtabs %}
 
-N> [Multiple suggestion provider sample Github]()
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
 
 ## Display a message when suggestions are empty
 When the entered item is not in the suggestion list, suggestionbox displays a text indicating that “We couldn’t find the person you were looking for.”. The text to be displayed for this can be customized using the SuggestionBoxErrorMessage property in resource file (.resx). 
 •	Right click your project and add new folder named Resources.
 •	Add default resource file of SfRichTextBoxAdv control into Resources folder.
 
-<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion4.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion5.PNG"/><br/></td></tr></table>
+![Display message](Automatic-Suggestion_images/autosuggestion5.PNG)
+
+![Display message](Automatic-Suggestion_images/autosuggestion4.PNG)
 
 
 ## Custom suggestion provider
@@ -418,12 +420,12 @@ internal class AppTypeSuggestionProvider : DependencyObject, ISuggestionProvider
 {% endhighlight %}
 {% endtabs %}
 
-N> [Custom suggestion provider Github link]()
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
 
 ## Custom Search
 In default searching, it lists the items which contains the typed text. But you can modify the searching like lists the items starts or ends with typed text, by implementing your own suggestion provider and overriding the Search method.
 
-<table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion8.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion0.PNG"/></td></tr></table>
+<table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion8.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion9.PNG"/></td></tr></table>
 
 
 The following sample code demonstrates how to override search operation in your suggestion provider.
@@ -460,7 +462,9 @@ public void InsertSelectedItem(SfRichTextBoxAdv richTextBoxAdv, object selectedI
 {% endhighlight %}
 {% endtabs %}
 
-N> Supported from V18.4.0.30  [View Sample in GitHub]()
+N> This feature is supported from V18.4.0.30
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
  
 
 
