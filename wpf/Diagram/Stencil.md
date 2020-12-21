@@ -11,8 +11,6 @@ documentation: ug
 
 The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped onto the diagram surface at any number of times.
 
-**ComboBox View**
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -39,43 +37,12 @@ Stencil stencil = new Stencil()
 
 ![StencilDiagram](Stencil_images/Stencil_img1.PNG)
 
-**ListView**
-
-{% tabs %}
-{% highlight xaml %}
-
-<!--Namespace for stencil-->
-xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
-
-<!--Define the Stencil-->
-<stencil:Stencil x:Name="stencil" ExpandMode="All" SymbolFilterDisplayMode="List" BorderBrush="Black" BorderThickness="0,0,2,0" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//Define Stencil
-Stencil stencil = new Stencil()
-{
-    ExpandMode = ExpandMode.All,
-    BorderThickness = new Thickness(0,0,1,0),
-    BorderBrush = new SolidColorBrush(Colors.Black),
-    SymbolFilterDisplayMode = SymbolFilterDisplayMode.List
-};
-
-{% endhighlight %}
-{% endtabs %}
-
-![StencilDiagram](Stencil_images/Stencil_List.PNG)
-
 ## Add Symbols in Stencil 
 
 The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in Stencil that can be created using the following ways:
  
  * Using the Diagram Elements 
  * Using the SymbolViewModel
- * Customize the Symbol appearance
- * Add name and tooltip to the Symbol 
  
  The Stencil's [SymbolSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolSource) property is used to define the data source as a collection of objects (symbol,node,connector....) that needs to be populated as Symbols.
  
@@ -296,7 +263,32 @@ The width and height properties of symbol enables you to define the size of the 
 
 ![Symbol](Stencil_images/imagenode1.PNG) 
 
-### Add tooltip to the Symbol
+### Add name and tooltip to the Symbol
+we can use the name property of the diagramming objects to add the tooltip to the symbol. Please find the code example as below.
+
+{% tabs %}
+
+{% highlight xaml %}
+<Stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
+    <Stencil:Stencil.SymbolSource>
+       <Syncfusion:SymbolCollection>
+        <Syncfusion:NodeViewModel Key="Basic Shapes" UnitHeight="100" UnitWidth="100" Name="Triangle" Shape="{StaticResource Triangle}"></Syncfusion:NodeViewModel>
+        <Syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
+          SymbolTemplate="{StaticResource symboltemplate}" />
+      </Syncfusion:SymbolCollection>
+    </Stencil:Stencil.SymbolSource>
+    <Stencil:Stencil.SymbolGroups>
+      <Stencil:SymbolGroups>
+      <!--Separate groups based on the key-->
+         <Stencil:SymbolGroupProvider MappingName="Key" />
+       </Stencil:SymbolGroups>
+    </Stencil:Stencil.SymbolGroups>
+</Stencil:Stencil>
+
+{% endhighlight %}
+ 
+{% endtabs %}
+
 By default, ["Name"](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) property of the diagramming objects(Node, Connector, Group...) have bound with ToolTip of the Symbol. So we just mentioned the tooltip content to name property. 
 
 The data context of the symbol is diagramming objects. So if we add any property in the diagramming objects, we can bind into symbol.
@@ -306,24 +298,47 @@ The data context of the symbol is diagramming objects. So if we add any property
 {% highlight xaml %}
 
  <!--Style for Symbol-->
-        <Style TargetType="stencil:Symbol">
-            <Setter Property="ToolTip"
-                        Value="{Binding Name}"></Setter>
-            <Setter Property="Width" Value="100" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="Blue" />            
-            <Setter Property="Padding" Value="5"></Setter>
-        </Style>
-
+<Style TargetType="stencil:Symbol">
+ <Setter Property="ToolTip" Value="{Binding Symbol}"></Setter>
+ <Setter Property="Width" Value="100" />
+ <Setter Property="Height" Value="100" />
+ <Setter Property="BorderThickness" Value="1" />
+ <Setter Property="Background" Value="Transparent" />
+ <Setter Property="BorderBrush" Value="Blue" />            
+ <Setter Property="Padding" Value="5"></Setter>
+</Style>
+<Stencil:Stencil x:Name="stencil" ExpandMode="ZeroOrMore">
+    <Stencil:Stencil.SymbolSource>
+       <Syncfusion:SymbolCollection>
+        <Syncfusion:SymbolViewModel Symbol="User" Key="Image" Name="User"
+          SymbolTemplate="{StaticResource symboltemplate}" />
+        <Syncfusion:SymbolViewModel  Key="Template" Name="Diamond"
+             SymbolTemplate="{StaticResource Diamond}" >
+         <Syncfusion:SymbolViewModel.Symbol>
+            <StackPanel Orientation="Vertical">
+                <TextBlock   FontSize="14" FontWeight="Bold" Foreground="Black" Text="Diamond" Margin="0,0,0,10">
+                </TextBlock>
+                <TextBlock FontStyle="Italic" FontSize="12" Foreground="Black" Text="Drag onto the Page">
+                </TextBlock>
+            </StackPanel>
+        </Syncfusion:SymbolViewModel.Symbol>
+        </Syncfusion:SymbolViewModel>
+      </Syncfusion:SymbolCollection>
+    </Stencil:Stencil.SymbolSource>
+    <Stencil:Stencil.SymbolGroups>
+      <Stencil:SymbolGroups>
+      <!--Separate groups based on the key-->
+         <Stencil:SymbolGroupProvider MappingName="Key" />
+       </Stencil:SymbolGroups>
+    </Stencil:Stencil.SymbolGroups>
+</Stencil:Stencil>
 {% endhighlight %}
  
 {% endtabs %}
 
 ![Symbol](Stencil_images/imagenode.PNG) 
 
-## Symbol Groups
+## Group symbols into category
 
 The [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html) groups the set of symbols into [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroups.html) based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property.
 
@@ -480,7 +495,7 @@ stencil.SymbolGroups = new SymbolGroups()
 
 ![Symbol](Stencil_images/stencil2.PNG) 
 
-### How to customize the appearance of SymbolGroup header
+### Customize the appearance of SymbolGroup header
 
 You can customize the appearance of a `SymbolGroup` by changing its Style. The following code explains how to customize the appearance of the symbol group.
 
@@ -521,126 +536,12 @@ You can customize the appearance of a `SymbolGroup` by changing its Style. The f
 ## SymbolFilterProvider
 [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is a collection of filters in stencil. 
 
-### Content 
- The [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) property of the SymbolFilterProvider is used to update the content of the symbol filter.
+   * The [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_Content) property of the SymbolFilterProvider is used to update the content of the symbol filter.
+ 
+   * The [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the SymbolFilterProvider is a data template used to display the content of the ContentControl.
 
-### ContentTemplate 
- The [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_ContentTemplate) property of the SymbolFilterProvider is a data template used to display the content of the ContentControl.
-
-### IsChecked
- The [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the SymbolFilterProvider is used to add/remove the filters in the List. Check marks indicate the filters added in the List.
-
- ![Symbol](Stencil_images/stencil_ischecked.PNG) 
-
-### SymbolFilter
+## SymbolFilter
  The [SymbolFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_SymbolFilter) property of the SymbolFilterProvider is used to filter or hide the symbols. 
-
-## Filter the symbols based on groups/category 
-
-The [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is used to filter or hide the symbols by using the delegates. The [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) are the collection of SymbolFilterProvider.
-
-{% tabs %}
-{% highlight C# %}
-
-// Define filtering of Symbols
-private bool Filter(SymbolFilterProvider sender, object symbol)
-{
-    if (symbol is NodeViewModel)
-    {
-        if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
-            return true;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolFilters-sample)
-
-![SymbolFilter](Stencil_images/Stencil_img12.PNG)
-
-### Appearance of symbol filters
-we have a support to visualize the symbol filters either a combobox or list. The [SymbolFilterDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the stencil is used to display the symbol filter in a combobox or list view.
- 
- **1.ComboBox**
-  This symbol filter display mode is visually represented in a combo box. 
-  
-  * ExpandMode-
-  The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
-
-|ExpandMode|Description|
-|----------|-----------|
-|All       |    Enables or disables all the symbol group can be expand |
-|One       |    Enables or disables only one symbol group can be expand |
-|OneOrMore |    Enables or disables one or more symbol group can be expand |
-|ZeroOrMore|    Enables or disables none or more symbol group can be expand |
-|ZeroOrOne |    Enables or disables none or one symbol group can be expand |
- 
- **2.List**
-  This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by click the moreshapes button and checked/unchecked the items in the filters. Checkmarks indicate the filters added in the List.
-
-|SymbolFilterDisplayMode|Description|
-|----------|-----------|
-| ComboBox | Specifies to display the symbol group headers in ComboBox view in the Stencil |
-| List | Specifies to display the symbol group headers in List view in the Stencil |
-
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
-
- ![Symbol](Stencil_images/StencilImprovement.GIF) 
-
-### SelectedFilter
-
-There can be multiple SymbolFilters but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
-
-## Add Title to Stencil
-The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the stencil is used to add the title to stencil.
-
-### Customize Title using TitleTemplate 
-The appearance of the title can be customized by using [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) property of the Stencil.
-
- Please find the code example to illustrate how to add title and its customization.
-
- {% tabs %}
-{% highlight xaml %}
-<DataTemplate x:Key="TitleTemplate">
-   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" />
-</DataTemplate>
-
-<stencil:Stencil Grid.Column="0" BorderThickness="1" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" BorderBrush="#dfdfdf" x:Name="stencil">
-</stencil:Stencil>
-
-{% endhighlight %}
-{% endtabs %}
-
-## Find the symbols from stencil 
-The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the search box in stencil.
-* We can search a shape by its [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) as specified in the diagramming elements(e.g:"rectangle").
-* Enter a name in the search textbox and click on the search icon or press the enter key, the shapes whose name does match the string are filtered out.  The search results are displayed and categorized by their mapping key.
-* To reset the search in the stencil, delete the search string in the search box so that it displays shapes based on the selected filter.
-* The dropdown button shows the list of the most recently used search strings.
-
-The following image illustrate the search result of the symbol.
-
-**Combobox view:**
-
- ![Symbol](Stencil_images/Stencil_ComboBox_Search.PNG) 
-
-**List view:**
-
- ![Symbol](Stencil_images/Stencil_List_Search.PNG) 
-
-## Stencil display mode
-We can click the expander button to toggle between expanded and compact modes. 
-To change the display mode at run-time, use the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_DisplayMode) property of the stencil. The image below shows the stencil in compact mode.
-
-We can show/hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the stencil.
-
-![Symbol](Stencil_images/Stencil_Compact.PNG) 
-
-|DisplayMode|Description|
-|----------|-----------|
-| Compact | The stencil always shows as a narrow sliver which can be opened to full width |
-| Expanded | Specifies to update the Expanded state of the stencil |
 
 ## Symbol categories
 
@@ -652,7 +553,7 @@ There are plenty of shapes available in the diagram resource dictionary. It take
 * Title – Specifies the title that should be displayed as a header of the category collection.
 
 ### Built-in symbol categories 
-The following are the built-in categories being available in the diagram resource dictionary,
+we have a built-in shapes that are grouped by categories.The following are the built-in categories being available in the diagram resource dictionary,
 
 * BasicShapes
 * FlowShapes
@@ -777,6 +678,276 @@ public class StencilViewModel : Stencil
 {% endtabs %}
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
+
+## Filter the symbols based on groups/category 
+
+The [SymbolFilterProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html) is used to filter or hide the symbols by using the delegates. The [SymbolFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilters) are the collection of SymbolFilterProvider.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+   <viewmodel:StencilVM></viewmodel:StencilVM>
+</Window.DataContext>
+<Window.Resources>
+        <DataTemplate x:Key="TitleTemplate">
+            <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
+            </TextBlock>
+        </DataTemplate>
+        <!--Style for Node-->
+        <Style TargetType="{x:Type syncfusion:Node}">
+            <Setter Property="ShapeStyle">
+                <Setter.Value>
+                    <Style  TargetType="Path">
+                        <Setter Property="Fill" Value="#FF5B9BD5"/>
+                        <Setter Property="Stroke" Value="#FFEDF1F6"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                        <Setter Property="Stretch" Value="Fill"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--Style for Connector-->
+            <Style TargetType="{x:Type syncfusion:Connector}">
+            <Setter Property="ConnectorGeometryStyle">
+                <Setter.Value>
+                    <Style TargetType="Path">
+                        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+                        <Setter Property="StrokeThickness" Value="1"></Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="TargetDecoratorStyle">
+                <Setter.Value>
+                    <Style TargetType="Path">
+                        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+                        <Setter Property="StrokeThickness" Value="1"></Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--Style for Symbol-->
+        <Style TargetType="stencil:Symbol">
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="100" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Margin" Value="4"></Setter>
+        </Style>
+        <!--Style for Symbol Group-->
+        <Style TargetType="stencil:SymbolGroup">
+            <Setter Property="FontFamily" Value="Regular"/>
+            <Setter Property="Background" Value="#ffffff"/>
+            <Setter Property="Foreground" Value="#222222"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <stencil:Header>
+                            <stencil:Header.Template>
+                                <ControlTemplate TargetType="stencil:Header">
+                                    <Grid>
+                                        <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" 
+                                                BorderThickness="1">
+                                            <ContentPresenter Margin="10" Content="{Binding}"/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </stencil:Header.Template>
+                        </stencil:Header>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+</Window.Resources>
+<Grid>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="2*"/>
+    <ColumnDefinition Width="8*"/>
+  </Grid.ColumnDefinitions>
+  <!--Define the Stencil-->
+   <stencil:Stencil Grid.Column="0" BorderThickness="1" BorderBrush="#dfdfdf" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}"  x:Name="stencil" ExpandMode="All" SymbolFilters="{Binding Symbolfilters}" SelectedFilter="{Binding Selectedfilter}">
+     <!--Initialize the SymbolSource-->
+     <stencil:Stencil.SymbolSource>
+      <!--Initialize the SymbolCollection-->
+      <local:SymbolCollection>
+       <!--Define the DiagramElement-Node-->
+        <syncfusion:NodeViewModel x:Name="node" UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" Key="Nodes">
+          </syncfusion:NodeViewModel>
+       <!--Define the DiagramElement- Connector-->
+         <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" Key="Connector">
+          </syncfusion:ConnectorViewModel>
+      </local:SymbolCollection>
+      </stencil:Stencil.SymbolSource>
+       <!--Initialize the SymbolGroup-->
+       <stencil:Stencil.SymbolGroups>
+        <stencil:SymbolGroups>
+         <!--Map Symbols Using MappingName-->
+         <stencil:SymbolGroupProvider MappingName="Key"></stencil:SymbolGroupProvider>
+        </stencil:SymbolGroups>
+       </stencil:Stencil.SymbolGroups>
+     </stencil:Stencil>
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+
+public class StencilVM : INotifyPropertyChanged
+{
+   public StencilVM()
+   {
+     Symbolfilters = new SymbolFilters();
+     SymbolFilterProvider all = new SymbolFilterProvider { Content = "All",  SymbolFilter = Filter };
+     SymbolFilterProvider Node = new SymbolFilterProvider { Content = "Nodes", SymbolFilter = Filter };
+     SymbolFilterProvider Con = new SymbolFilterProvider { Content = "Connector", SymbolFilter = Filter };
+
+      this.Symbolfilters.Add(all);
+      this.Symbolfilters.Add(Node);
+      this.Symbolfilters.Add(Con);
+      this.Selectedfilter = Symbolfilters[0];
+   }
+
+   // Define filtering of Symbols
+   private bool Filter(SymbolFilterProvider sender, object symbol)
+   {
+      if (symbol is NodeViewModel)
+       {
+         if (sender.Content.ToString() == (symbol as NodeViewModel).Key.ToString())
+             return true;
+       }
+
+       if (symbol is ConnectorViewModel)
+       {
+        if (sender.Content.ToString() == (symbol as ConnectorViewModel).Key.ToString())
+               return true;
+        }
+        if (sender.Content.ToString() == "All")
+        {
+          return true;
+        }
+        return false;
+    }
+   public ObservableCollection<SymbolFilterProvider> Symbolfilters { get; set; } 
+
+   public SymbolFilterProvider Selectedfilter { get; set; }
+
+   public event PropertyChangedEventHandler PropertyChanged;
+}
+{% endhighlight %}
+{% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolFilters-sample)
+
+![SymbolFilter](Stencil_images/Stencil_img12.PNG)
+
+### Appearance of symbol filters
+we have a support to visualize the symbol filters either a combobox or list. The [SymbolFilterDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolFilterDisplayMode) property of the stencil is used to display the symbol filter in a combobox or list view.
+ 
+ **1.ComboBox**
+  This symbol filter display mode is visually represented in a combo box. 
+  
+  * ExpandMode-
+  The [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandMode.html) property of stencil allows us to decide the number of symbol group expanded in stencil.
+
+|ExpandMode|Description|
+|----------|-----------|
+|All       |    Enables or disables all the symbol group can be expand |
+|One       |    Enables or disables only one symbol group can be expand |
+|OneOrMore |    Enables or disables one or more symbol group can be expand |
+|ZeroOrMore|    Enables or disables none or more symbol group can be expand |
+|ZeroOrOne |    Enables or disables none or one symbol group can be expand |
+ 
+ **2.List**
+  This symbol filter display mode is visually represented in a ListView. we able to add or remove the filters from the list by click the moreshapes button and checked/unchecked the items in the filters. The [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the SymbolFilterProvider is used to add/remove the filters in the List. Check marks indicate the filters added in the List.
+
+|SymbolFilterDisplayMode|Description|
+|----------|-----------|
+| ComboBox | Specifies to display the symbol group headers in ComboBox view in the Stencil |
+| List | Specifies to display the symbol group headers in List view in the Stencil |
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
+
+ ![Symbol](Stencil_images/StencilImprovement.GIF) 
+
+### SelectedFilter
+
+There can be multiple SymbolFilters but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
+
+## Add Title to Stencil
+The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Title) property of the stencil is used to add the title to stencil. Please find the below code example to illustrate how to provide the content to the stenil.
+
+{% tabs %}
+
+{% highlight xaml %}
+<!--Initialize the stencil-->
+<Stencil:Stencil x:Name="stencil" Title="Shapes">
+    <!--Initialize the stencil categories-->
+    <Stencil:Stencil.Categories>
+        <Stencil:StencilCategoryCollection>
+            <!--Specify the basic shapes category with title and resource key-->
+            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </Stencil:StencilCategoryCollection>
+    </Stencil:Stencil.Categories>
+</Stencil:Stencil>
+
+{% endhighlight %}
+ 
+{% endtabs %}
+
+![Symbol](Stencil_images/Stencil_Title.PNG) 
+
+### Customize Title using TitleTemplate 
+The appearance of the title can be customized by using [TitleTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_TitleTemplate) property of the Stencil.
+
+ Please find the code example to illustrate how to add title and its customization.
+
+ {% tabs %}
+{% highlight xaml %}
+<DataTemplate x:Key="TitleTemplate">
+  <StackPanel Orientation="Horizontal">
+   <Image Source="/Image/Shapes.png"
+      Width="15" Height="15" />
+   <TextBlock Margin="5,0,0,0" HorizontalAlignment="Center"
+    VerticalAlignment="Center"                        Text="Shapes" />
+  </StackPanel>
+</DataTemplate>
+
+<!--Initialize the stencil-->
+<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}>
+    <!--Initialize the stencil categories-->
+    <Stencil:Stencil.Categories>
+        <Stencil:StencilCategoryCollection>
+            <!--Specify the basic shapes category with title and resource key-->
+            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </Stencil:StencilCategoryCollection>
+    </Stencil:Stencil.Categories>
+</Stencil:Stencil>
+{% endhighlight %}
+{% endtabs %}
+
+![Symbol](Stencil_images/Stencil_TitleTemplate.PNG) 
+
+## Browse the symbols from stencil 
+We can search a shape by its [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupableViewModel.html#Syncfusion_UI_Xaml_Diagram_GroupableViewModel_Name) as specified in the diagramming elements(e.g:"rectangle"). The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the stencil is used to show or hide the search box in stencil. 
+
+The search textbox has 2 button, one is used to search the shapes whose name does match the string are filtered out, once click on the search button, enables the clear button, its used to  reset the search in the stencil, delete the search string in the search box so that it displays shapes based on the selected filter. Another button is a dropdown button, it shows the list of the most recently used search strings.
+
+The following image illustrate the search result of the symbol.
+
+ ![Symbol](Stencil_images/Stencil_ComboBox_Search.PNG) 
+ 
+
+## Stencil display mode
+We can click the expander button to toggle between expanded and compact modes. 
+To change the display mode at run-time, use the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_DisplayMode) property of the stencil. The image below shows the stencil in compact mode.
+
+We can show/hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the stencil.
+
+![Symbol](Stencil_images/Stencil_Compact.PNG) 
+
+|DisplayMode|Description|
+|----------|-----------|
+| Compact | The stencil always shows as a narrow sliver which can be opened to full width |
+| Expanded | Specifies to update the Expanded state of the stencil |
 
 ## Preview for Drag and Drop
 
