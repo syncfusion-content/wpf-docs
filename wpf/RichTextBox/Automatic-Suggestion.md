@@ -176,7 +176,7 @@ richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 ## Multiple Suggestion provider
 Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestion box style.
 
-<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion7.PNG"/><br/></td></tr></table>
+<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion3.PNG"/><br/></td></tr></table>
 
 
 The following sample code demonstrates how to use two suggestion providers. Here we have used ‘@’ and ‘#’ as mentions characters.
@@ -463,7 +463,7 @@ public void InsertSelectedItem(SfRichTextBoxAdv richTextBoxAdv, object selectedI
 
 N> This feature is supported from V18.4.0.30.
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
+[View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
  
 
 
