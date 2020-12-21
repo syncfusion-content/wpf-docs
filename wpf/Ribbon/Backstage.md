@@ -919,7 +919,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Different types of Animation
 
-The BackStage  animation can be achieved by using the AnimationType enumeration property. The below AnimationType can be used to animate the BackStage.
+Backstage provides different types of animations such as fade, scale, and zoom by using the [`AnimationType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_AnimationType) enumeration property.
 
 * None
 * Slide
@@ -928,9 +928,9 @@ The BackStage  animation can be achieved by using the AnimationType enumeration 
 
 ## Animation duration
 
-The AnimationDuration property is used to set the duration for animation in milliseconds.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_AnimationDuration) property is used to set the duration for animation in milliseconds.
 
-The following code example illustrates how to animate the BackStage using the AnimationType property.
+The following code example illustrates how to animate the BackStage using the [`AnimationType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Backstage.html#Syncfusion_Windows_Tools_Controls_Backstage_AnimationType) property.
 
 {% tabs %}
 
