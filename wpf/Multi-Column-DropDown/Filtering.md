@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Filtering
+# Filtering in SfMultiColumnDropDownControl
 
 SfMultiColumnDropDownControl provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
 
@@ -38,6 +38,27 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 ## Case-Sensitive Filtering
 
 You can decides whether the automatic completion of text and the filtering are case-sensitive or not by setting [AllowCaseSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowCaseSensitiveFiltering) as true.
+
+## Ignore Diacritic Sensitivity
+
+By default, SfMultiColumnDropDownControl filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
+    
+{% tabs %}
+{% highlight xml %}
+<Syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
+                                         HorizontalAlignment="Left"
+                                         AutoGenerateColumns="False"
+                                         AllowIncrementalFiltering="True"
+									     AllowImmediatePopup="True"    
+                                         AllowDiacriticSensitiveFiltering="False"   
+                                         VerticalAlignment="Top"
+                                         DisplayMember="Continent"
+                                         ItemsSource="{Binding PopulationDetails}">
+</Syncfusion:SfMultiColumnDropDownControl>
+{% endhighlight %}
+{% endtabs %}
+
+![The image describes the AllowDiacriticSensitiveFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img3.gif)
 
 ## How to filter SfMultiColumnDropDownControl based on various column values
 

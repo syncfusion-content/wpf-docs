@@ -25,7 +25,7 @@ Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 N>If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
 ## Change time interval width
-You can customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of `TimelineViewSettings.` This property will be applicable to all timeline views. By default, its value is fifty for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
+You can customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of `TimelineViewSettings.` This property will be applicable to all timeline views. By default, its value is fifty for the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views and 150 for `TimelineMonth` view.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
@@ -75,7 +75,7 @@ N>
 * If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to ’37 minutes’ (555%37=0) by considering (total minutes % timeInterval = 0). it will return integer value for time slots rendering.
 
 ## Change days count
-You can change the day's count of timeslots in the timeline view by setting the `DaysCount` property of `TimelineViewSettings.` This property is only applicable for the `TimelineDay` view. By default, its value is set to 1.
+You can change the day's count of timeslots in the timeline view by setting the [DaysCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_DaysCount) property of `TimelineViewSettings.` This property is only applicable for the `TimelineDay` view. By default, its value is set to 1.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ Schedule.TimelineViewSettings.DaysCount = 2;
 ![DaysCount in TimelineDay WPF Scheduler](Timeline_images/DaysCount.png)
 
 ## Blackout dates
-You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the `BlackoutDates` collection property of `SfScheduler`. Using this, you can allocate or restrict the specific dates for predefined events. This property is not applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+You can disable the interaction for certain dates in the scheduler `TimelineMonth` view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of `SfScheduler`. Using this, you can allocate or restrict the specific dates for predefined events. This property is not applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 {% tabs %}
 {% highlight c#%}
