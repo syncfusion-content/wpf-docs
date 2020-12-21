@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: getting started
+title: Getting Started | WPF RichTextBox | Syncfusion
+description: This section illustrates about get started with WPF RichTextBox control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
@@ -35,7 +35,7 @@ N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies
 
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfRichTextBoxAdv control](Getting-Started_images/Getting-Started_img1.jpeg)
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,6 +149,8 @@ This section discusses about how to use the SfRichTextBoxAdv control as a standa
 
 {% endtabs %}
 
+N> [View Standard RichTextBox Sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Standard%20RichTextBox)
+
 ## Creating Document editor with Ribbon
 
 This section discusses about how to create document editor with ribbon similar to Microsoft Word. The SfRichTextRibbon is a Ribbon control customized to work with SfRichTextBoxAdv control, which gives you the look and feel of Microsoft Word.
@@ -167,15 +169,15 @@ The following assembly reference are additionally required to deploy SfRichTextR
 
 2.Use the Syncfusion RibbonWindow instead of Window
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Use RibbonWindow](Getting-Started_images/Getting-Started_img2.jpeg)
 
 3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Drag SfRichTextBoxAdv control](Getting-Started_images/Getting-Started_img3.jpeg)
 
 4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![Drag SfRichTextRibbon control](Getting-Started_images/Getting-Started_img4.jpeg)
 
 5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
 
@@ -220,4 +222,4 @@ You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by u
 N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
 
 Finally, you can get the following output similar to Microsoft Word on executing the application
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![RichTextBox Window](Getting-Started_images/Getting-Started_img5.jpeg)
