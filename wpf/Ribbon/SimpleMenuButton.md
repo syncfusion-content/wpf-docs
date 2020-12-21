@@ -119,15 +119,15 @@ _ApplicationMenu.Items.Add(_SimpleMenuButton1)
 
 ## Setting image to SimpleMenuButton
 
-The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) allows to display any type of image such as glyph, font or any custom content using `IconTemplate` property.  It also allows to display a normal image using [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon) property.
+The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) allows to display any type of image such as glyph, font or any custom content using [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_IconTemplate) property.  It also allows to display a normal image using [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon) property.
 
 N> The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) loads icon in the following priority order,
- * `IconTemplate`
+ * [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_IconTemplate)
  * [`Icon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_Icon)
 
 ### Setting icon template
 
-The `IconTemplate` property provides support to set any type of image such as glyph, font or any custom content to the [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html). The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) will automatically resize the template content.
+The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html#Syncfusion_Windows_Tools_Controls_SimpleMenuButton_IconTemplate) property provides support to set any type of image such as glyph, font or any custom content to the [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html). The [`SimpleMenuButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SimpleMenuButton.html) will automatically resize the template content.
 
 {% tabs %}
 
