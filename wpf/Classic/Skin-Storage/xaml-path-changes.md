@@ -21,12 +21,10 @@ Hence need to change the resource dictionary path based on usage of SkinStorage 
 <tr>
 <td>&lt;ResourceDictionary Source="/<b>Syncfusion.Shared.WPF</b>;component/SkinManager/BlendStyle.xaml</td>
 <td>&lt;ResourceDictionary Source="/<b>Syncfusion.Shared.WPF.Classic</b>;component/SkinManager/BlendStyle.xaml</td>
-<td>
 </tr>
 <tr>
 <td>&lt;ResourceDictionary Source="/<b>Syncfusion.Tools.WPF</b>;component/Framework/DockingManager/Themes/BlendStyle.xaml</td>
 <td>&lt;ResourceDictionary Source="/<b>Syncfusion.Tools.WPF.Classic</b>;component/Framework/DockingManager/Themes/BlendStyle.xaml</td>
-<td>
 </tr>
 </table>
 
@@ -247,18 +245,16 @@ Please find the complete list of controls with their xaml path and current statu
 <tr>
 <td>Controls/BusyIndicator/Themes/Office2010BlueStyle.xaml</td>
 <td>Moved to Shared.WPF.Classic</td>
+</tr>
 <tr>
 <td>Controls/BusyIndicator/Themes/Office2010SilverStyle.xaml</td>
-<td>Moved to Shared.WPF.Classic</td>
-</tr>
+<td>Moved to Shared.WPF.Classic</td></tr>
 <tr>
 <td>Controls/BusyIndicator/Themes/TransparentStyle.xaml</td>
-<td>Moved to Shared.WPF.Classic</td>
-</tr>
+<td>Moved to Shared.WPF.Classic</td></tr>
 <tr>
 <td>Controls/BusyIndicator/Themes/VS2010Style.xaml</td>
-<td>Moved to Shared.WPF.Classic</td>
-</tr>
+<td>Moved to Shared.WPF.Classic</td></tr>
 </table>
 
 ## Button
@@ -315,7 +311,6 @@ Please find the complete list of controls with their xaml path and current statu
 <tr>
 <td>Controls/ButtonControls/Button/Themes/VS2010Style.xaml</td>
 <td>Moved to Shared.WPF.Classic</td></tr>
-</tr>
 </table>
 
 ## DropDownButton
@@ -448,7 +443,7 @@ Please find the complete list of controls with their xaml path and current statu
 <td>Not changed</td>
 </tr>
 <tr><td>Controls/ColorBar/Themes/BlendStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
-<li>MainTemplate.xaml</li>
+<tr><td>Controls/ColorBar/Themes/MainTemplate.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2003Style.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2007BlackStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
 <tr><td>Controls/ColorBar/Themes/Office2007BlueStyle.xaml</td><td>Moved to Shared.WPF.Classic</td></tr>
