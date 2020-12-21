@@ -1,12 +1,12 @@
 ---
-title: Hyperlink
-description: hyperlink
+title: Hyperlink | WPF RichTextBox| Syncfusion
+description: This section illustrates about hyperlink support in WPF RichTextBox(SfRichTextBoxAdv) control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: hyperlink
 ---
-# Hyperlink
+# Hyperlink in WPF RichTextBox
 
 The SfRichTextBoxAdv supports hyperlink field similar to the Microsoft Word. You can link part of the document content to Internet or file location, mail address or any text.
 The following code example illustrates how to insert a hyperlink field.
