@@ -149,7 +149,7 @@ This section discusses about how to use the SfRichTextBoxAdv control as a standa
 
 {% endtabs %}
 
-N> [View Standard RichTextBox Sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Standard%20RichTextBox)
+N> [View Standard RichTextBox example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Standard%20RichTextBox)
 
 ## Creating Document editor with Ribbon
 

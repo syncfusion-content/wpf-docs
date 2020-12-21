@@ -94,7 +94,7 @@ Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Automatic%20Suggestion)
+N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Automatic%20Suggestion)
 
 ## Customize the SuggestionBox ItemTemplate and Style
 By default, the drop-down window lists the filtered items as an image, display text and link. If you want to remove the image or link. You can write your own item Template.
@@ -176,7 +176,7 @@ richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 ## Multiple Suggestion provider
 Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestion box style.
 
-<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion6.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion7.PNG"/><br/></td></tr></table>
+<table><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion7.PNG"/><br/></td></tr></table>
 
 
 The following sample code demonstrates how to use two suggestion providers. Here we have used ‘@’ and ‘#’ as mentions characters.
@@ -284,7 +284,7 @@ ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
+N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
 
 ## Display a message when suggestions are empty
 When the entered item is not in the suggestion list, suggestion box displays a text indicating that “We couldn’t find the person you were looking for.”. The text to be displayed for this can be customized using the SuggestionBoxErrorMessage property in resource file (.resx). 
@@ -419,12 +419,12 @@ internal class AppTypeSuggestionProvider : DependencyObject, ISuggestionProvider
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
+N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
 
 ## Custom Search
 In default searching, it lists the items which contains the typed text. But you can modify the searching like lists the items starts or ends with typed text, by implementing your own suggestion provider and overriding the Search method.
 
-<table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion8.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion9.PNG"/></td></tr></table>
+<table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion6.PNG"/></td></tr></table>
 
 
 The following sample code demonstrates how to override search operation in your suggestion provider.
@@ -448,7 +448,7 @@ public List<object> Search(string searchText)
 ## Custom insert selected item
 By default, the selected item from the suggestions list is inserted as hyperlink. But you can insert it as plain text or without link, by implementing your own suggestion provider and overriding the “InsertSelectedItem” method.
 
-![Custom Insert](Automatic-Suggestion_images/autosuggestion10.PNG)
+![Custom Insert](Automatic-Suggestion_images/autosuggestion3.PNG)
 
 The following sample code demonstrates how to override insert selected item operation in your suggestion provider.
 {% tabs %}
