@@ -1,6 +1,6 @@
 ---
 title: Automatic Suggestion | WPF RichTextBox| Syncfusion
-description: This section illustrates about automatic suggestion support in WPF RichTextBox control.
+description: This section illustrates about automatic suggestion support in WPF RichTextBox(SfRichTextBoxAdv) control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
@@ -101,7 +101,7 @@ By default, the drop-down window lists the filtered items as an image, display t
 
 ![Modify Suggestion Box Item](Automatic-Suggestion_images/autosuggestion2.PNG)
 
-The following sample code demonstrates how to modify the suggestionbox item template and style.
+The following sample code demonstrates how to modify the suggestion box item template and style.
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
@@ -174,7 +174,7 @@ richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 
 
 ## Multiple Suggestion provider
-Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestionbox style.
+Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestion box style.
 
 <table><tr><td><img src="Automatic-Suggestion_images/autosuggestion6.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion7.PNG"/><br/></td></tr></table>
 
@@ -287,7 +287,7 @@ ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
 
 ## Display a message when suggestions are empty
-When the entered item is not in the suggestion list, suggestionbox displays a text indicating that “We couldn’t find the person you were looking for.”. The text to be displayed for this can be customized using the SuggestionBoxErrorMessage property in resource file (.resx). 
+When the entered item is not in the suggestion list, suggestion box displays a text indicating that “We couldn’t find the person you were looking for.”. The text to be displayed for this can be customized using the SuggestionBoxErrorMessage property in resource file (.resx). 
 •	Right click your project and add new folder named Resources.
 •	Add [default resource file](https://github.com/syncfusion/wpf-controls-localization-resx-files/tree/master/Syncfusion.SfRichTextBoxAdv.WPF) of SfRichTextBoxAdv control into Resources folder.
 
