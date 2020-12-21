@@ -41,19 +41,19 @@ You can decides whether the automatic completion of text and the filtering are c
 
 ## Ignore Diacritic Sensitivity
 
-By default, SfMultiColumnDropDownControl filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the AllowDiacriticSensitiveFiltering [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
+By default, SfMultiColumnDropDownControl filter or auto-complete the data based on an input character only. For example, if we type normal character in editor, it will not filter or auto-complete the record containing a diacritic character. You can disable the [AllowDiacriticSensitiveFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowDiacriticSensitiveFiltering) property if you want to filter or auto-complete data that also contains a diacritic character while typing normal character in the editor.
     
 {% tabs %}
 {% highlight xml %}
 <Syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumn"
-										 HorizontalAlignment="Left"
-										 AutoGenerateColumns="False"
-										 AllowIncrementalFiltering="True"
-										 AllowImmediatePopup="True"    
-										 AllowDiacriticSensitiveFiltering="False"   
-										 VerticalAlignment="Top"
-										 DisplayMember="Continent"
-										 ItemsSource="{Binding PopulationDetails}">
+                                         HorizontalAlignment="Left"
+                                         AutoGenerateColumns="False"
+                                         AllowIncrementalFiltering="True"
+									     AllowImmediatePopup="True"    
+                                         AllowDiacriticSensitiveFiltering="False"   
+                                         VerticalAlignment="Top"
+                                         DisplayMember="Continent"
+                                         ItemsSource="{Binding PopulationDetails}">
 </Syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% endtabs %}
