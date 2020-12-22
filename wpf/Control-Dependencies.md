@@ -1276,6 +1276,29 @@ Syncfusion.SfShared.WPF
 </tr>
 </table>
 
+### Diagram Ribbon
+
+For Diagram with its Diagram Ribbbon, the below assembly need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfDiagramRibbon.WPF
+Syncfusion.Compression.Base
+Syncfusion.Pdf.Base
+Syncfusion.Shared.WPF
+Syncfusion.Tools.WPF
+</td>
+<td> 
+Syncfusion.SfDiagramRibbon.WPF
+</td>
+</tr>
+</table>
+
 ## SfDomainUpDown
 
 <table>
