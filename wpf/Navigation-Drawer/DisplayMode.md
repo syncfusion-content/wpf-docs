@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# DisplayMode
+#  SfNavigationDrawer control DisplayMode
 
 The layout of the NavigationDrawer can be adjust by size of the window. There are three modes to change the layout Default, Compact and Expanded. 
 

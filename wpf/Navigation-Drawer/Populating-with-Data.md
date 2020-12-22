@@ -17,7 +17,7 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 
    * DrawerHeaderView: Gets or sets the DrawerHeaderView of the DrawerView panel in the SfNavigationDrawer control.
    
-   * DrawerContentView: The SfNavigationDrawer control contains the DrawerContentView, a part of the DrawerView panel. The DrawerContentView displays the navigation items that you need to jump to.
+   * DrawerContentView: The SfNavigationDrawer control contains the DrawerContentView, a part of the DrawerView panel. The DrawerContentView displays the navigation items that needs to jump to.
    
    * DrawerFooterView: Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer control.  
 

@@ -7,6 +7,6 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Selection
+# SfNavigationDrawer control Selection
 
 This section explains the selection of SfNavigationDrawer.  SelectedItem property used to get or set the currently selected item from the items. 

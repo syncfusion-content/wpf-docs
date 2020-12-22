@@ -7,15 +7,15 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-#  Commands and events
+#  Commands and events in SfNavigationDrawer
 
 This section describes how to performs the events, command and command parameter in NavigationDrawer.
 
 ## Opening event
 
-You can perform an operation before opening the DrawerView panel using the `Opening` event. This `Opening` event get triggered before the DrawerView panel is opened in SfNavigationDrawer.
+This `Opening` event get triggered before the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation before opening the DrawerView panel using the `Opening` event. 
 
-To restrict the opening of DrawerView panel, you can set e.Cancel to true.
+To restrict the opening of DrawerView panel, by setting the e.Cancel value to true.
 
 {% tabs %}
 {% highlight xml %}
@@ -91,7 +91,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Opening(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            // To restrict drawer opening, you can set e.Cancel to true.
+            // To restrict drawer opening, by setting the e.Cancel value true.
         }
     }
 }
@@ -102,7 +102,7 @@ namespace NavigationDrawerWPF
 
 ## Opened event
 
-You can perform an operation after opening the DrawerView panel using the `Opened` event. This `Opened` event get triggered after the DrawerView panel is opened in SfNavigationDrawer.
+This `Opened` event get triggered after the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation after opening the DrawerView panel using the `Opened` event. 
 
 {% tabs %}
 {% highlight xml %}
@@ -178,7 +178,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Opened(object sender, System.EventArgs e)
         {
-            // you can perform the action here
+            //Necessary action perform here
         }
     }
 }
@@ -189,9 +189,9 @@ namespace NavigationDrawerWPF
 
 ## Closing event
 
-You can perform an operation before closing the DrawerView panel using the `Closing` event. This `Closing` event get triggered before the DrawerView panel is closed in SfNavigationDrawer.
+This `Closing` event get triggered before the DrawerView panel is closed in SfNavigationDrawer. It can perform an operation before closing the DrawerView panel using the `Closing` event. 
 
-To restrict the closing of DrawerView panel, you can set e.Cancel to true.
+To restrict the closing of DrawerView panel, by setting the e.Cancel value to true.
 
 {% tabs %}
 {% highlight xml %}
@@ -267,7 +267,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-           // To restrict drawer closing, you can set e.Cancel to true.
+           // To restrict drawer closing, by setting the e.Cancel value to true.
         }
     }
 }
@@ -278,7 +278,7 @@ namespace NavigationDrawerWPF
 
 ## Closed event
 
-You can perform an operation after closing the DrawerView panel using the `Closed` event. This `Closed` event get triggered after the DrawerView panel is Closed in SfNavigationDrawer.
+This `Closed` event get triggered after the DrawerView panel is Closed in SfNavigationDrawer. It can perform an operation after closing the DrawerView panel using the `Closed` event. 
 
 {% tabs %}
 {% highlight xml %}
@@ -354,7 +354,7 @@ namespace NavigationDrawerWPF
 
         private void NavigationDrawer_Closed(object sender, System.EventArgs e)
         {
-            // you can perform the action here
+            // Necessary action perform here
         }
     }
 }
@@ -364,15 +364,15 @@ namespace NavigationDrawerWPF
 {% endtabs %}
 
 
-## ItemClicked
+## ItemClicked event
 
 This ItemClicked event gets triggered, when item clicked in each time.  The event argument is NavigationItemClickedEventArgs, it holds the currently clicked item.
 
-## ItemCollapsed
+## ItemCollapsed event
 
 This ItemCollapsed event gets triggered, when sub items get collapsed.  The event argument is NavigationItemCollapsedEventArgs, it holds the currently collapsed item.
 
-## ItemExpanded
+## ItemExpanded event
 
 This ItemExpanded event gets triggered, when sub items get expanded.  The event argument is NavigationItemExpandedEventArgs, it holds the currently expanded item.
 

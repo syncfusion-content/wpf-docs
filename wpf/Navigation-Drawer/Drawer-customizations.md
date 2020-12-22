@@ -254,7 +254,7 @@ namespace NavigationDrawerWPF
 
 ### Swipe sensitivity
 
-In smaller screens, users may find it difficult to swipe the drawer from the edge, in such cases you can increase the swipe region using the `TouchThreshold` property. It can be set as below:
+In smaller screens, may find it difficult to swipe the drawer from the edge, in such cases it can increase the swipe region using the `TouchThreshold` property. It can be set as below:
 
 {% tabs %}
 
