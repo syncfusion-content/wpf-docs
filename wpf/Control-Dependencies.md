@@ -1278,7 +1278,7 @@ Syncfusion.SfShared.WPF
 
 ### Diagram Ribbon
 
-For Diagram with its Diagram Ribbbon, the below assembly need to be added in your application.
+For Diagram with its Diagram Ribbon, the below assembly need to be added in your application.
 
 <table>
 <tr>

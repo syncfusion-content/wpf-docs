@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a Diagram Ribbon to interact with the most common features and settings of the Syncfusion Essential Diagram for WPF.
+title: Create a Diagram Ribbon to interact with the SfDiagram | Syncfusion.
 description: Diagram Ribbon walk through the usage of the Diagram Ribbon and the items present in Diagram Ribbon to interact with the Diagram.
 platform: wpf
 control: SfDiagram
