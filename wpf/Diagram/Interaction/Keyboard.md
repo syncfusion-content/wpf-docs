@@ -39,22 +39,15 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl - | Zoom | Zoom out the diagram. |
 | Ctrl + 0 (number 0) | Reset | To reset horizontal Offset, vertical Offset, and zoom level of the Diagram. |
 | Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
-| Fn + F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
+| F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
+| Ctrl + 1 | Pointer Tool | It is used to select the elements in the diagram.|
+| Ctrl + 2 | Text Tool | It is used to create text node. |
+| Ctrl + 3 | Connector Tool | It is used to create orthogonal connector by click and drag on the diagram.|
+| Ctrl + 5 | Freehand Tool | It is used to create Free hand drawing connections.|
+| Ctrl + 6 | Line Tool | It is used to create a straight line connector by click and drag on the diagram.|
+| Ctrl + 8 | Rectangle Tool |It is used to create a rectangle shaped Node by click and drag on the diagram.|
+| Ctrl + 9 | Ellipse Tool | It is used to create an ellipse shaped Node by click and drag on the diagram.|
 | Esc | Cancel | Stop the annotation editing and accept the curent value,Clear the Keyboard focus,Clear the selection of the diagram elements,reset the diagram tool to select tool |
-
-### SelectTool
-
-`SelectTool` command of the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) helps to change the `SelectTool` and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to specified values.This command will receive `SelectToolCommandParameter` as command which contains the `Tool`, `DrawingTool` and `ConnectorType` informations to enable drawing tool option in diagram.
-
-| Shortcut Key | Tool | Description |
-|---|---|---|
-| Ctrl + 1 | PointerTool | Allows us to select the elements in the diagram.|
-| Ctrl + 2 | TextTool | Allows you to create text node. |
-| Ctrl + 3 | ConnectorTool |Allows you to create orthogonal connector by click and drag on the diagram.|
-| Ctrl + 5 | FreedomTool |Allows you to create Free hand drawing connections.|
-| Ctrl + 6 | LineTool |Allows you to create a straight line connector by click and drag on the diagram.|
-| Ctrl + 8 | RectangleTool | Allows you to create a rectangle shaped Node by click and drag on the diagram.|
-| Ctrl + 9 | EllipseTool | Allows you to create an ellipse shaped Node by click and drag on the diagram.|
 
 To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/sfdiagram/commands#command-manager "Command Manager")
 

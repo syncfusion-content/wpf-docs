@@ -11,7 +11,7 @@ documentation: ug
 
 ## EditAnnotation
 
-`EditAnnotation` command enables annotation editing mode of the first selected diagram element.
+The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_EditAnnotation) command enables annotation editing mode of the first selected diagram element.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ graphinfo.Commands.EditAnnotation.Execute(null);
 
 ## ToggleBold Command
 
-ToggleBold Command toggle the bold style for the annotation of the selected elements in the diagram.
+The [ToggleBold](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ToggleBold) command is used to toggle the bold style for the annotation of the selected element in the diagram.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ graphinfo.Commands.ToggleBold.Execute(null);
 
 ## ToggleItalic Command
 
-ToggleItalic Command toggle the italic style for the annotation of the selected elements in the diagram.
+The [ToggleItalic](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ToggleItalic) command is used to toggle the italic style for the annotation of the selected element in the diagram.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ graphinfo.Commands.ToggleItalic.Execute(null);
 
 ## ToggleUnderline Command
 
-ToggleUnderline Command toggle the underline for the annotation of the selected elements in the diagram.
+The [ToggleUnderline](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ToggleUnderline) command is used to toggle the underline for the annotation of the selected elements in the diagram.
 
 {% tabs %}
 
@@ -91,8 +91,7 @@ graphinfo.Commands.ToggleUnderline.Execute(null);
 
 ## ToggleStrikeThrough Command
 
-ToggleStrikeThrough Command toggle the strikethrough style for the annotation of the selected elements in the diagram.
-
+The [ToggleStrikeThrough](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ToggleStrikeThrough) command is used to toggle the strikethrough style for the annotation of the selected elements in the diagram.
 
 {% tabs %}
 
@@ -112,7 +111,11 @@ graphinfo.Commands.ToggleStrikeThrough.Execute(null);
 
 ## Cancel command 
 
-`Cancel` command stops the annotation editing and accept the curent value, clear the Keyboard focus, clear the selection of the diagram elements,reset the diagram tool to select tool.
+The [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Cancel) command is used to perform either any of the below action.
+* Stops the annotation editing and accept the current value.
+* Clear the Keyboard focus.
+* Clear the selection of the diagram elements.
+* Reset the diagram tool to select tool.
 
 {% tabs %}
 

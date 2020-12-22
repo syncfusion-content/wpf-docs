@@ -9,36 +9,36 @@ documentation: ug
 
 # SelectTool command in WPF Diagram(SfDiagram)
 
-[SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectTool) command of the diagram helps to change the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to specified values. [SelectToolCommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectToolCommandParameter.html) of `SelectTool` command contains the `Tool`, `DrawingTool` and `ConnectorType` informations to enable drawing tool option in diagram.
+The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SelectTool) command of the diagram helps to change the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to specified values. [SelectToolCommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectToolCommandParameter.html) of `SelectTool` command contains the `Tool`, `DrawingTool` and `ConnectorType` informations to enable drawing tool option in diagram.
 
-| Tool | Description |
+| Property | Tool | DrawingTool | ConnectorType  |Description |
 |---|---|
-| PointerTool | Allows us to select the elements in the diagram.|
-| TextTool | Allows you to create text nodee. |
-| ConnectorTool |Allows you to create orthogonal connector by click and drag on the diagram.|
-| FreedomTool |Allows you to create Free hand drawing connections.|
-| LineTool |Allows you to create a straight line connector by click and drag on the diagram.|
-| RectangleTool | Allows you to create a rectangle shaped Node by click and drag on the diagram.|
-| EllipseTool | Allows you to create an ellipse shaped Node by click and drag on the diagram.|
+| Pointer Tool |--- |--- |--- |It is used to select the elements in the diagram.If parameter is not specified , it acts as pointer tool|
+| Text Tool | ContinuesDraw |TextNode|---|It is used to create text nodee. |
+| Connector Tool| ContinuesDraw |Connector|---| It is used to create orthogonal connector by click and drag on the diagram.If connectortype is not specified , orthogonal connector will be drawn|
+| Freehand Tool | ContinuesDraw |FreeHand|---|It is used to create Free hand drawing connections.|
+| Line Tool | ContinuesDraw |Connector|Line|It is used to create a straight line connector by click and drag on the diagram.|
+| Rectangle Tool| ContinuesDraw |Rectangle|---|It is used to create a rectangle shaped Node by click and drag on the diagram.|
+| Ellipse Tool| ContinuesDraw |Ellipse|---|It is used to create an ellipse shaped Node by click and drag on the diagram.|
+
+For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/diagram/tools) 
 
 {% tabs %}
 
 {% highlight Xaml%}
 
  <Syncfusion:SelectToolCommandParameter DrawingTool="Ellipse" Tool="ContinuesDraw"  x:Key="SelectToolEllipseCommandParameter"/>
- <Syncfusion:SelectToolCommandParameter DrawingTool="Rectangle" Tool="ContinuesDraw"  x:Key="SelectToolRectangleCommandParameter"/>
+ 
  <Syncfusion:SelectToolCommandParameter DrawingTool="Connector" Tool="ContinuesDraw"  x:Key="SelectToolConnectorCommandParameter"/>
- <Syncfusion:SelectToolCommandParameter DrawingTool="FreeHand" Tool="ContinuesDraw"  x:Key="SelectToolFreehandCommandParameter"/>
+ 
  <Syncfusion:SelectToolCommandParameter DrawingTool="TextNode" Tool="ContinuesDraw"  x:Key="SelectToolTextCommandParameter"/>
- <Syncfusion:SelectToolCommandParameter DrawingTool="Connector" Tool="ContinuesDraw" ConnectorType="Line"  x:Key="SelectToolLineCommandParameter"/>
+ 
 
 <Button Height="50" Content="ConnectorTool" Name="Connector" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolConnectorCommandParameter}"></Button>
+
 <Button Height="50" Content="EllipseTool" Name="Ellipse" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolEllipseCommandParameter}"></Button>
-<Button Height="50" Content="FreedomTool" Name="Freehand" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolFreehandCommandParameter}"></Button>
-<Button Height="50" Content="PointerTool" Name="Select" Command="Syncfusion:DiagramCommands.SelectTool"></Button>
+
 <Button Height="50" Content="TextTool" Name="TextNode" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolTextCommandParameter}"></Button>
-<Button Height="50" Content="LineTool" Name="Line" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolLineCommandParameter}"></Button>
-<Button Height="50" Content="RectangleTool" Name="Rectangle" Command="Syncfusion:DiagramCommands.SelectTool" CommandParameter="{StaticResource SelectToolRectangleCommandParameter}"></Button>
 
 {% endhighlight %}
 
