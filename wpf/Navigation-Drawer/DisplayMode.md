@@ -363,4 +363,4 @@ When enabling the AutoChangeDisplayMode, the drawer will auto change the display
 
 {% endtabs %}
 
-![DisplayMode](DisplayMode_images/AutoChangeDisplayMode.png)
+![DisplayMode](DisplayMode_images/AutoChangeDisplayMode.gif)
