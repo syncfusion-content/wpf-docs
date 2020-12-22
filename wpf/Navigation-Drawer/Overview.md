@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# NavigationDrawer 
+# WPF NavigationDrawer (SfNavigationDrawer) Overview
 
 The NavigationDrawer is a sliding panel menu that allows you to navigate between major application modules. It is usually in hidden state, and appears when you drag the screen from any of the four edges or tap the app icon, if available.
 

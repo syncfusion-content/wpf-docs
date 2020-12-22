@@ -129,7 +129,7 @@ A drawer always shows as a narrow bar based on  property which can be opened to 
 
 ### Expanded
 
-A drawer stays open alongside of the content to the width of  property. When toggled the drawer switches to the narrow bar and the toggled backstays open alongside of the content.
+A drawer stays open alongside of the content to the width of  property. When toggled the drawer switches to the narrow bar and the toggled back stays open alongside of the content.
 
 {% tabs %}
 {% highlight xaml %}
