@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the SelectByType command.
-description: SelectByType Command is used to select the specified type of elements in diagram.
+description: SelectByType Command is used to select the specified type of elements(NodeViewModel,BpmnNodeViewModel) in diagram.
 platform: wpf
 control: SfDiagram
 documentation: ug

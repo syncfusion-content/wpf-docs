@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the Rotate command.
-description: Rotate Command is used to rotate the selected element in specified angle in diagram.
+description: Rotate Command is used to rotate the selected element (Node, Group,...) in specified direction and angle in diagram.
 platform: wpf
 control: SfDiagram
 documentation: ug

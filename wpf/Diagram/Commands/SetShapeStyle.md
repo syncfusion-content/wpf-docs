@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the SetShapeStyle command.
-description: SetShapeStyle Command is used to set specified style for the selected element in diagram.
+description: The SetShapeStyle Command is used to set the specified style for the selected element(Node,Group,..) in diagram.
 platform: wpf
 control: SfDiagram
 documentation: ug

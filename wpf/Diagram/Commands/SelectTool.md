@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the SelectTool commands.
-description: SelectTool Commands are used to enable drawing tool option in diagram.
+description: SelectTool Commands are used to enable drawing tool options such as ConnectorTool, Node (Rectangel, Ellipse) in diagram.
 platform: wpf
 control: SfDiagram
 documentation: ug
