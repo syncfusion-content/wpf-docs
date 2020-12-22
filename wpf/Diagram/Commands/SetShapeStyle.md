@@ -1,0 +1,42 @@
+---
+layout: post
+title: Syncfusion | Explore the SetShapeStyle command.
+description: SetShapeStyle Command is used to set specified style for the selected element in diagram.
+platform: wpf
+control: SfDiagram
+documentation: ug
+---
+
+# SetShapeStyle command in WPF Diagram(SfDiagram)
+
+`SetShapeStyle` command invokes to apply specified style for the selected elements in the diagram.
+
+{% tabs %}
+
+{% highlight Xaml%}
+
+<Style TargetType="Path" x:Key="SetShapeStyleParameter">
+  <Setter Property="Stretch" Value="Fill"></Setter>
+  <Setter Property="Fill" Value="Green"></Setter>
+</Style>
+
+<Button Height="50" Content="SetShapeStyle" Name="SetShapeStyle" Command="Syncfusion:DiagramCommands.SetShapeStyle" CommandParameter="{StaticResource SetShapeStyleParameter}"></Button>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+Style style = new Style();
+style.Setters.Add(new Setter() { Property = System.Windows.Shapes.Path.FillProperty, Value = new SolidColorBrush(Colors.Green) });
+style.Setters.Add(new Setter() { Property = System.Windows.Shapes.Path.StretchProperty, Value = Stretch.Fill });
+
+IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
+graphinfo.Commands.SetShapeStyle.Execute(style);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Gif for SelectByType command](Commands_Images/Commands_SetShapeStyle.gif)
+
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)

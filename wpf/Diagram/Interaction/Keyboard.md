@@ -30,16 +30,31 @@ The following table illustrates list of Commands with key Gesture.
 | DownArrow | MoveDown | MoveDown (move the selected elements towards up by one pixel). |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |
 | Ctrl + G | Group | Grouping the element in the diagram. |
-| Ctrl + G | UnGroup | UnGrouping the element in the diagram. |
-| Ctrl + Shift + [ | SendToBack | Moves the selected element behind all the other overlapped elements. |
+| Ctrl + Shift + U | UnGroup | UnGrouping the element in the diagram. |
+| Ctrl + Shift + B | SendToBack | Moves the selected element behind all the other overlapped elements. |
 | Ctrl + [ | SendBackward | Moves the selected element behind the underlying element. |
-| Ctrl + Shift + ] | BringFront | Brings the selected element to front over all the other overlapped elements. |
+| Ctrl + Shift + F | BringFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 | Ctrl + |Zoom | Zoom in the diagram. |
 | Ctrl - | Zoom | Zoom out the diagram. |
 | Ctrl + 0 (number 0) | Reset | To reset horizontal Offset, vertical Offset, and zoom level of the Diagram. |
-| Ctrl + Alt + 0 (number zero) | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
+| Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
+| Fn + F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
+| Esc | Cancel | Stop the annotation editing and accept the curent value,Clear the Keyboard focus,Clear the selection of the diagram elements,reset the diagram tool to select tool |
 
+### SelectTool
+
+`SelectTool` command of the [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_DrawingTool) helps to change the `SelectTool` and [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_Tool) properties to specified values.This command will receive `SelectToolCommandParameter` as command which contains the `Tool`, `DrawingTool` and `ConnectorType` informations to enable drawing tool option in diagram.
+
+| Shortcut Key | Tool | Description |
+|---|---|---|
+| Ctrl + 1 | PointerTool | Allows us to select the elements in the diagram.|
+| Ctrl + 2 | TextTool | Allows you to create text node. |
+| Ctrl + 3 | ConnectorTool |Allows you to create orthogonal connector by click and drag on the diagram.|
+| Ctrl + 5 | FreedomTool |Allows you to create Free hand drawing connections.|
+| Ctrl + 6 | LineTool |Allows you to create a straight line connector by click and drag on the diagram.|
+| Ctrl + 8 | RectangleTool | Allows you to create a rectangle shaped Node by click and drag on the diagram.|
+| Ctrl + 9 | EllipseTool | Allows you to create an ellipse shaped Node by click and drag on the diagram.|
 
 To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/sfdiagram/commands#command-manager "Command Manager")
 
