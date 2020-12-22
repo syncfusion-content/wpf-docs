@@ -15,9 +15,9 @@ This section explains how to show the drawer view.
 
 The DrawerView is a panel that is the hidden content, brought to the view by manipulations like panning or swiping through the edges. The DrawerView has three sections namely:
 
-   * DrawerHeaderView: Gets or sets the DrawerHeaderView of the DrawerView panel in the SfNavigationDrawer control.
+   * DrawerHeaderView: Gets or sets the [DrawerHeaderView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerHeaderView) of the DrawerView panel in the SfNavigationDrawer control.
    
-   * DrawerContentView: The SfNavigationDrawer control contains the DrawerContentView, a part of the DrawerView panel. The DrawerContentView displays the navigation items that needs to jump to.
+   * DrawerContentView: The SfNavigationDrawer control contains the [DrawerContentView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerContentView), a part of the DrawerView panel. The `DrawerContentView` displays the navigation items that needs to jump to.
    
    * DrawerFooterView: Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer control.  
 
@@ -171,7 +171,7 @@ namespace NavigationDrawerWPF
 
 ## Data Binding
 
-The drawer content view can be populated by ItemsSource property. It can support, bound collection of objects through the ItemsSource. 
+The drawer content view can be populated by [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It can support, bound collection of objects through the `ItemsSource`. 
 
 ### Model
 
@@ -335,7 +335,7 @@ The drawer content view can be populated by ItemsSource property. It can support
 
 ## Hierarchical Data Binding
 
-The control populates the items using the ItemsSource, also it allows the sub items. It can be achieved by using the DisplayMemberPath, IconMemberPath and ItemsContainerStyle. 
+The control populates the items using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource), also it allows the sub items. It can be achieved by using the [DisplayMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMemberPath), [IconMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IconMemberPath) and [ItemsContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemContainerStyle). 
 
                                    
 ### Model
@@ -503,19 +503,19 @@ The control populates the items using the ItemsSource, also it allows the sub it
 
 ## NavigationItem 
 
-NavigationItem below properties used to representation of each item, selection and population of sub items. 
+[NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) below properties used to representation of each item, selection and population of sub items. 
 
-* **Header** — Represent the content of the NavigationItem.
-* **Icon** — Represent the icon in the NavigationItem.
-* **IconMemberPath** — Used to display the icon for sub items, while providing the ItemsSource. 
+* **Header** — Represent the content of the `NavigationItem`.
+* **Icon** — Represent the icon in the `NavigationItem`.
+* **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
 * **ExpanderTemplate** — It can be used to provide the different view for expander in both collapsed and expanded state.
-* **Command** — It will execute while items have been clicked.  NavigationDrawer have four NavigationItemType. In this only Tab and Button types supports the Command. When using the tab ItemType and command binds into NavigationItem the item behave like button. 
-* **CommandParameter** — CommandParameter is user defined data value that can be passed to the Command when it is executed.
+* **Command** — It will execute while items have been clicked.  NavigationDrawer have four `NavigationItemType`. In this only Tab and Button types supports the [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_Command). When using the tab [ItemType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_ItemType) and command binds into `NavigationItem` the item behave like button. 
+* **CommandParameter** — [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
 * **IsChildSelected** — It can be used to find the sub item is whether selected or not. 
-* **ItemType** — It can be used for defining the NavigationItem representation. It has the four type like Tab, Button, Header and Seperator. Tab and Button have the interaction support. 
+* **ItemType** — It can be used for defining the `NavigationItem` representation. It has the four type like `Tab`, `Button`, `Header` and `Seperator`. `Tab` and `Button` have the interaction support. 
 * **IsExpanded** — It can be used to find the sub items in whether expanded or collapsed state.
 * **IsSelected** — It can be used to whether the item has selected or not.
-* **SelectionBackground** — It can be used customize the selection strip in NavigationItem.
+* **SelectionBackground** — It can be used customize the selection strip in`NavigationItem`.
 * **Items** — It can be used to populate the sub items.
 
 
@@ -853,7 +853,7 @@ NavigationItem below properties used to representation of each item, selection a
 
 ## IndentationWidth
 
-This property used to change the horizontal position of sub items. Left margin of the sub items depends on the IndentationWidth property.
+This property used to change the horizontal position of sub items. Left margin of the sub items depends on the [IndentationWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IndentationWidth) property.
 
 {% tabs %}
 {% highlight xaml %}

@@ -248,7 +248,7 @@ A drawer stays open alongside of the content to the width of  property. When tog
 
 ### AutoChangeDisplayMode
 
-When enabling the AutoChangeDisplayMode, the drawer will auto change the display modes depending on the size of the window.
+When enabling the [AutoChangeDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_AutoChangeDisplayMode), the drawer will auto change the display modes depending on the size of the window.
 
 {% tabs %}
 {% highlight xaml %}

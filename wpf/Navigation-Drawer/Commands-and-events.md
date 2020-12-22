@@ -13,7 +13,7 @@ This section describes how to performs the events, command and command parameter
 
 ## Opening event
 
-This `Opening` event get triggered before the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation before opening the DrawerView panel using the `Opening` event. 
+This [Opening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opening) event get triggered before the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation before opening the DrawerView panel using the `Opening` event. 
 
 To restrict the opening of DrawerView panel, by setting the e.Cancel value to true.
 
@@ -102,7 +102,7 @@ namespace NavigationDrawerWPF
 
 ## Opened event
 
-This `Opened` event get triggered after the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation after opening the DrawerView panel using the `Opened` event. 
+This [Opened](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Opened) event get triggered after the DrawerView panel is opened in SfNavigationDrawer. It can perform an operation after opening the DrawerView panel using the `Opened` event. 
 
 {% tabs %}
 {% highlight xml %}
@@ -189,7 +189,7 @@ namespace NavigationDrawerWPF
 
 ## Closing event
 
-This `Closing` event get triggered before the DrawerView panel is closed in SfNavigationDrawer. It can perform an operation before closing the DrawerView panel using the `Closing` event. 
+This[Closing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closing) event get triggered before the DrawerView panel is closed in SfNavigationDrawer. It can perform an operation before closing the DrawerView panel using the `Closing` event. 
 
 To restrict the closing of DrawerView panel, by setting the e.Cancel value to true.
 
@@ -278,7 +278,7 @@ namespace NavigationDrawerWPF
 
 ## Closed event
 
-This `Closed` event get triggered after the DrawerView panel is Closed in SfNavigationDrawer. It can perform an operation after closing the DrawerView panel using the `Closed` event. 
+This [Closed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Closed) event get triggered after the DrawerView panel is Closed in SfNavigationDrawer. It can perform an operation after closing the DrawerView panel using the `Closed` event. 
 
 {% tabs %}
 {% highlight xml %}
@@ -367,9 +367,9 @@ N> The above events Opening, Opened, Closing and Closed only applicable for defa
 
 ## ItemClicked event
 
-ItemClicked event occurs when the NavigationItem clicked on each time. NavigationItemClickedEventArgs has the following members which provide information for the ItemClicked event.
+[ItemClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemClicked) event occurs when the NavigationItem clicked on each time. [NavigationItemClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItemClickedEventArgs.html) has the following members which provide information for the `ItemClicked` event.
 
-* Item - Gets the clicked NavigationItem
+* `Item` - Gets the clicked `NavigationItem`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -497,9 +497,9 @@ ItemClicked event occurs when the NavigationItem clicked on each time. Navigati
 
 ## ItemCollapsed event
 
-‘ItemCollapsed’ event occurs when the sub ‘NavigationItem‘ gets collapsed. NavigationItemCollapsedEventArgs has the following members which provide information for the ‘ItemCollapsed‘ event.
+[ItemCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemCollapsed) event occurs when the sub `NavigationItem` gets collapsed. [NavigationItemCollapsedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItemCollapsedEventArgs.html) has the following members which provide information for the `ItemCollapsed` event.
 
-* Item - Gets the collapsed NavigationItem
+* `Item` - Gets the collapsed `NavigationItem`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -712,7 +712,7 @@ ItemClicked event occurs when the NavigationItem clicked on each time. Navigati
 
 ## ItemExpanded event
 
-‘ItemExpanded’ event occurs when the sub ‘NavigationItem‘ gets expanded. NavigationItemExpandedEventArgs has the following members which provide information for the ‘ItemExpanded‘ event.
+[ItemExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemExpanded) event occurs when the sub `NavigationItem` gets expanded. [NavigationItemExpandedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItemExpandedEventArgs.html) has the following members which provide information for the `ItemExpanded` event.
 
 * Item - Gets the expanded NavigationItem
 
@@ -927,9 +927,12 @@ ItemClicked event occurs when the NavigationItem clicked on each time. Navigati
 
 ## Commands
 
-The command binds into NavigationItem, it will execute while items has been clicked.  NavigationDrawer have four NavigationItemType. In this only Tab and Button types supports the Command. CommandParameter is user defined data value that can be passed to the Command when it is executed.
+The command binds into `NavigationItem`, it will execute while items has been clicked. `NavigationDrawer` have four `NavigationItemType`. In this only `Tab` and `Button` types supports the [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_Command). [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
 
 ### DelegateCommand class
+
+{% tabs %}
+{% highlight c# %}
 
 public class DelegateCommand<T> : ICommand
     {
@@ -1010,7 +1013,9 @@ public class DelegateCommand<T> : ICommand
 
         #endregion
     }
-
+	
+{% endhighlight %}
+{% endtabs %}
 
 ### ViewModel
 
@@ -1147,4 +1152,4 @@ public class DelegateCommand<T> : ICommand
 
 ![Commands](Command_image/Command.png)
 
-N> ItemClicked, ItemCollapsed, ItemExpanded events and Commands only applicable for compact and expanded display mode.
+N> `ItemClicked`, `ItemCollapsed`, `ItemExpanded` events and `Command` only applicable for compact and expanded display mode.

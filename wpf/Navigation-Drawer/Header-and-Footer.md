@@ -13,7 +13,7 @@ This section explains the customization of header and footer.
 
 ### Customizing the Header
 
-Drawer header customization achieved by using the ToggleButtonContentTemplate, ToggleButtonIconTemplate, IsToggleButtonVisible.
+Drawer header customization achieved by using the [ToggleButtonContentTemplate[(https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonContentTemplate), [ToggleButtonIconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ToggleButtonIconTemplate), [IsToggleButtonVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IsToggleButtonVisible).
 
 {% tabs %}
 {% highlight xaml %}
@@ -166,7 +166,7 @@ Drawer header customization achieved by using the ToggleButtonContentTemplate, T
 
 ### Customizing the Footer
 
-Drawer Footer customization achieved by using the FooterItems. FooterItems support the collection of NavigationItem. 
+Drawer Footer customization achieved by using the [FooterItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_FooterItems). `FooterItems` support the collection of NavigationItem. 
 
 {% tabs %}
 {% highlight xaml %}

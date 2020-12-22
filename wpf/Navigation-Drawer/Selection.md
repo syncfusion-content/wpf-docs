@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection with SfNavigationDrawer control 
 
-This section explains the selection of SfNavigationDrawer.  SelectedItem property used to get or set the currently selected item from the items. 
+This section explains the selection of SfNavigationDrawer. [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_SelectedItem) property used to get or set the currently selected item from the items. 
 
 ### Model
 
