@@ -9,7 +9,7 @@ documentation: ug
 
 # Rotate command in WPF Diagram(SfDiagram)
 
-Rotate Command invokes to rotate the elements in diagram.This command will receive `RotateParameter` as command which contains `RotationDirection` and `Angle` informations set the direction and angle to rotate the element in diagram.
+[Rotate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Rotate) Command is used to rotate the elements in diagram.[RotateParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html) is used to represent [RotationDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotationDirection.html) and [Angle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.RotateParameter.html#Syncfusion_UI_Xaml_Diagram_RotateParameter_Angle) to rotate the element in diagram.
 
 {% tabs %}
 
