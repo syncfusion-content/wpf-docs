@@ -26,7 +26,7 @@ N> The [`BackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% tabs %}
 
  {% highlight XAML %}
- 
+
 <syncfusion:Ribbon.ApplicationMenu>
     <syncfusion:ApplicationMenu
         Name="_applicationMenu"
@@ -124,4 +124,6 @@ N> The [`BackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
-  ![Application menu in WPF Ribbon](ApplicationMenu-images/ApplicationMenu.png)
+![Application menu in WPF Ribbon](ApplicationMenu-images/ApplicationMenu.png)
+
+N> View [sample](https://github.com/SyncfusionExamples/How-to-set-application-menu-in-Ribbon) in GitHub.
