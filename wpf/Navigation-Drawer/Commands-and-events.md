@@ -1145,4 +1145,6 @@ public class DelegateCommand<T> : ICommand
 
 {% endtabs %}
 
+![Commands](Command_image/Command.png)
+
 N> ItemClicked, ItemCollapsed, ItemExpanded events and Commands only applicable for compact and expanded display mode.

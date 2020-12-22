@@ -126,6 +126,8 @@ A drawer always shows as a narrow bar based on  property which can be opened to 
 
 {% endtabs %}
 
+![DisplayMode](DisplayMode_images/Compact.png)
+
 
 ### Expanded
 
@@ -242,6 +244,7 @@ A drawer stays open alongside of the content to the width of  property. When tog
 
 {% endtabs %}
 
+![DisplayMode](DisplayMode_images/Expanded.png)
 
 ### AutoChangeDisplayMode
 
@@ -359,3 +362,5 @@ When enabling the AutoChangeDisplayMode, the drawer will auto change the display
 {% endhighlight %}
 
 {% endtabs %}
+
+![DisplayMode](DisplayMode_images/AutoChangeDisplayMode.png)

@@ -162,6 +162,8 @@ Drawer header customization achieved by using the ToggleButtonContentTemplate, T
 
 {% endtabs %}
 
+![Header](Header_and_Footer_images/Header.png)
+
 ### Customizing the Footer
 
 Drawer Footer customization achieved by using the FooterItems. FooterItems support the collection of NavigationItem. 
@@ -326,3 +328,5 @@ Drawer Footer customization achieved by using the FooterItems. FooterItems suppo
 {% endhighlight %}
 
 {% endtabs %}
+
+![Footer](Header_and_Footer_images/Footer.png)
