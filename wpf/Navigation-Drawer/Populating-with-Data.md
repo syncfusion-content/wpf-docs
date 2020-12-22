@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to show the drawer view. 
 
-### Setting Panel content in default mode
+## Setting Panel content in default mode
 
 The DrawerView is a panel that is the hidden content, brought to the view by manipulations like panning or swiping through the edges. The DrawerView has three sections namely:
 
@@ -169,7 +169,7 @@ namespace NavigationDrawerWPF
 ![Drawer View Image](Getting-Started_images/Drawer_View_Image.png)   
 
 
-### Data Binding
+## Data Binding
 
 The drawer content view can be populated by ItemsSource property. It can support, bound collection of objects through the ItemsSource. 
 
@@ -331,7 +331,7 @@ The drawer content view can be populated by ItemsSource property. It can support
 
 {% endtabs %}
 
-### Hierarchical Data Binding
+## Hierarchical Data Binding
 
 The control populates the items using the ItemsSource, also it allows the sub items. It can be achieved by using the DisplayMemberPath, IconMemberPath and ItemsContainerStyle. 
 
@@ -496,3 +496,8 @@ The control populates the items using the ItemsSource, also it allows the sub it
 {% endhighlight %}
 
 {% endtabs %}
+
+
+## IndentationWidth
+
+This property used to change the horizontal position of sub items. Left margin of the sub items depends on the IndentationWidth property.

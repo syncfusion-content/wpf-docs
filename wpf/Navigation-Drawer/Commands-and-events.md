@@ -1066,8 +1066,7 @@ public class DelegateCommand<T> : ICommand
     </Window.DataContext>
     <syncfusion:SfNavigationDrawer
         x:Name="navigationDrawer"
-        DisplayMode="Compact"
-        ItemExpanded="NavigationDrawer_ItemExpanded">
+        DisplayMode="Compact">
         <syncfusion:NavigationItem
             Command="{Binding ClickCommand}"
             CommandParameter="Inbox"
