@@ -9,11 +9,11 @@ documentation: ug
 
 # DisplayMode with SfNavigationDrawer control 
 
-The layout of the NavigationDrawer can be adjust by size of the window. There are three modes to change the layout Default, Compact and Expanded. 
+The NavigationDrawer control provides top-level navigation for your app. It adapts to a variety of screen sizes and supports left navigation styles. There are three modes to change the layout.
 
 ### Compact
 
-In compact mode drawer shown with CompactModeWidth, Drawer overlap the content view, when open the drawer.
+A drawer always shows as a narrow bar based on  property which can be opened to full width. When expanded the drawer appears as an overlay above the content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ In compact mode drawer shown with CompactModeWidth, Drawer overlap the content v
 
 ### Expanded
 
-In expanded mode drawer shown with ExpandedModeWidth. Drawer push the content view into right side, when open the drawer. 
+A drawer stays open alongside of the content to the width of  property. When toggled the drawer switches to the narrow bar and the toggled backstays open alongside of the content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ In expanded mode drawer shown with ExpandedModeWidth. Drawer push the content vi
 
 ### AutoChangeDisplayMode
 
-When enable the AutoChangeDisplayMode, the layout has been changed automatically depends on the ExpandedModeThresholdWidth, when change the size of the window.
+When enabling the AutoChangeDisplayMode, the drawer will auto change the display modes depending on the size of the window.
 
 {% tabs %}
 {% highlight xaml %}

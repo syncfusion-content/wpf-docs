@@ -14,7 +14,7 @@ This section describes the visual elements of the NavigationDrawer control and d
 ![VisualStructure](Overview_images/VisualStructure.png)
 
 
-* **Pane Header** —  Represent the header of the drawer. It has shown nearby toggle button. 
-* **Pane Footer** — Represent the footer of the drawer. It has shown bottom of the drawer. 
+* **Header** —  Represent the header of the drawer. It has shown nearby toggle button. 
+* **Footer** — Represent the footer of the drawer. It has shown bottom of the drawer. 
 * **NavigationDrawer Items** — Used this and populate the items in drawer content view.
-* **PaneToggleButton** — It can be used for the drawer closing and opening. 
+* **ToggleButton** — It can be used for the drawer closing and opening. 

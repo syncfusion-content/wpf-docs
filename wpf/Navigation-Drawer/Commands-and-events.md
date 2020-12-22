@@ -363,10 +363,13 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
+N> The above events Opening, Opened, Closing and Closed only applicable for default display mode.
 
 ## ItemClicked event
 
-This ItemClicked event gets triggered, when item clicked in each time.  The event argument is NavigationItemClickedEventArgs, it holds the currently clicked item.
+ItemClicked event occurs when the NavigationItem clicked on each time. NavigationItemClickedEventArgs has the following members which provide information for the ItemClicked event.
+
+* Item - Gets the clicked NavigationItem
 
 {% tabs %}
 {% highlight xaml %}
@@ -494,7 +497,9 @@ This ItemClicked event gets triggered, when item clicked in each time.  The even
 
 ## ItemCollapsed event
 
-This ItemCollapsed event gets triggered, when sub items get collapsed.  The event argument is NavigationItemCollapsedEventArgs, it holds the currently collapsed item.
+‘ItemCollapsed’ event occurs when the sub ‘NavigationItem‘ gets collapsed. NavigationItemCollapsedEventArgs has the following members which provide information for the ‘ItemCollapsed‘ event.
+
+* Item - Gets the collapsed NavigationItem
 
 {% tabs %}
 {% highlight xaml %}
@@ -707,7 +712,9 @@ This ItemCollapsed event gets triggered, when sub items get collapsed.  The even
 
 ## ItemExpanded event
 
-This ItemExpanded event gets triggered, when sub items get expanded.  The event argument is NavigationItemExpandedEventArgs, it holds the currently expanded item.
+‘ItemExpanded’ event occurs when the sub ‘NavigationItem‘ gets expanded. NavigationItemExpandedEventArgs has the following members which provide information for the ‘ItemExpanded‘ event.
+
+* Item - Gets the expanded NavigationItem
 
 {% tabs %}
 {% highlight xaml %}
@@ -920,8 +927,7 @@ This ItemExpanded event gets triggered, when sub items get expanded.  The event 
 
 ## Commands
 
-NavigationItemType have the four types, so the command will support for Tab and Button type. If the command binds into item, it will execute while items has been clicked. CommandParameter is user defined data value. Parameter to pass to the Command property.
-
+The command binds into NavigationItem, it will execute while items has been clicked.  NavigationDrawer have four NavigationItemType. In this only Tab and Button types supports the Command. CommandParameter is user defined data value that can be passed to the Command when it is executed.
 
 ### DelegateCommand class
 
@@ -1138,3 +1144,5 @@ public class DelegateCommand<T> : ICommand
 {% endhighlight %}
 
 {% endtabs %}
+
+N> ItemClicked, ItemCollapsed, ItemExpanded events and Commands only applicable for compact and expanded display mode.

@@ -32,3 +32,9 @@ The Navigation Drawers are used in applications where navigating to the major mo
 * Animated transitions: Supports opening/closing of pane due to the transition SlideOnTop, Push, and Reveal.
 
 * Changeable swipe sensitivity: Flexible for the users to update touch threshold based on their device screen size.
+
+* Providing a consistent navigational experience throughout your app
+
+* Preserving screen real estate on smaller windows.
+
+* Organizing access to many navigation categories.
