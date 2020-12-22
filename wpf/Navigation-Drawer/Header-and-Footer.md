@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# SfNavigationDrawer control Header and Footer support
+# Header and Footer support in SfNavigationDrawer control 
 
 This section explains the customization of header and footer. 
 

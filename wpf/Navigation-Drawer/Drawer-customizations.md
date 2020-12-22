@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drawer customizations | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to customization of drawer in NavigationDrawer.
+description: This section describes how to customization of drawer in NavigationDrawer control like panel size, animation, swipe gesture and sensitivity.
 platform: WPF
 control: NavigationDrawer
 documentation: ug

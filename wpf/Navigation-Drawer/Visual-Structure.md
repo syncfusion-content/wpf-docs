@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Structure | NavigationDrawer | WPF | Syncfusion
-description: This section describes the visual elements of the SfNavigationDrawer control in WPF platform.
+description: This section describes the visual elements of the Syncfusion WPF NavigationDrawer(SfNavigationDrawer) control.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
