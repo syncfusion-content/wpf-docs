@@ -48,7 +48,7 @@ The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenc
  
 ### Using the Diagram Elements
 
-Diagram elements such as [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [Connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), and [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) can be used to visualize the Symbol.
+Diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), and [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) can be used to visualize the Symbol.
  
 {% tabs %} 
 {% highlight xaml %}
@@ -264,7 +264,7 @@ The width and height properties of symbol enables you to define the size of the 
 ![Symbol](Stencil_images/imagenode1.PNG) 
 
 ### Add name and tooltip to the Symbol
-You can use the `Name` property of the [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [Connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html), and [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html) to specify the identifying name to that element. Please find the code example as below.
+You can use the `Name` property of the [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html), and [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html) to specify the identifying name to that element. Please find the code example as below.
 
 {% tabs %}
 
@@ -289,7 +289,7 @@ You can use the `Name` property of the [Node](https://help.syncfusion.com/cr/wpf
  
 {% endtabs %}
 
-By default, `Name` property of the diagramming objects(Node, Connector, Group...) is ddisplayed as tooltip of that symbol while moving mouse hover that symbol but you can give your custom tooltip to that symbol also. Please find the code example as below.
+By default, `Name` property of the diagramming elements(NodeViewModel, ConnectorViewModel, GroupViewModel...) is displayed as tooltip of that symbol while moving mouse hover that symbol but you can give your custom tooltip to that symbol also. Please find the code example as below.
 
 {% tabs %}
 
@@ -336,7 +336,7 @@ By default, `Name` property of the diagramming objects(Node, Connector, Group...
 
 ![Symbol](Stencil_images/imagenode.PNG) 
 
-N> The data context of the symbol is diagramming objects. So if we add any property in the diagramming objects, we can bind into symbol.
+N> The `DataContext` of the `Symbol` will be any diagramming elements such as `NodeViewModel`, `ConnectorViewModel`, `GroupViewModel` and `SymbolViewModel`.
 
 ## Group symbols into category
 
@@ -533,8 +533,6 @@ You can customize the appearance of a `SymbolGroup` header by changing its Style
  
 {% endtabs %}
 
-//Output image
-
 ### Expand and collapse symbol group
 
 When there are more number of symbol groups in the stencil then you can expand and collapse the symbol groups using [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil`. The `ExpandMode` property allows us to decide the number of symbol groups can be expanded in stencil.
@@ -546,8 +544,6 @@ When there are more number of symbol groups in the stencil then you can expand a
 |OneOrMore |    Enables or disables one or more symbol group can be expand |
 |ZeroOrMore|    Enables or disables none or more symbol group can be expand |
 |ZeroOrOne |    Enables or disables none or one symbol group can be expand |
-
-// Output gif image
 
 ## Symbol categories
 
@@ -576,14 +572,22 @@ The built-in shape paths available in the diagram resource dictionary are groupe
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil">
-    <!--Initialize the stencil categories-->
+<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}"
+ExpandMode="ZeroOrMore"                         BorderBrush="#dfdfdf"
+BorderThickness="1">
+   <!--Initialize the stencil categories-->
     <Stencil:Stencil.Categories>
-        <Stencil:StencilCategoryCollection>
-            <!--Specify the basic shapes category with title and resource key-->
-            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+     <Stencil:StencilCategoryCollection>
+       <!--Specify the basic shapes category with title and resource key-->
+       <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
         </Stencil:StencilCategoryCollection>
-    </Stencil:Stencil.Categories>
+        </Stencil:Stencil.Categories>
+        <Stencil:Stencil.SymbolGroups>
+        <Stencil:SymbolGroups>
+          <!--Separate groups based on the key-->
+          <Stencil:SymbolGroupProvider MappingName="Key" />
+        </Stencil:SymbolGroups>
+    </Stencil:Stencil.SymbolGroups>
 </Stencil:Stencil>
 {% endhighlight %}
 {% endtabs %}
@@ -610,9 +614,14 @@ The custom symbol collections can be added to the stencil by defining the custom
     <sys:String>Ellipse</sys:String>
     <sys:String>CustomPath</sys:String>
 </x:Array>
-
+<DataTemplate x:Key="TitleTemplate">
+   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
+   </TextBlock>
+</DataTemplate>
 <!--Initialize the stencil-->
-<Stencil:Stencil x:Name="stencil">
+<Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" ExpandMode="ZeroOrMore"
+BorderBrush="#dfdfdf"
+BorderThickness="1">
     <!--Initialize the stencil categories-->
     <Stencil:Stencil.Categories>
         <Stencil:StencilCategoryCollection>
@@ -620,6 +629,12 @@ The custom symbol collections can be added to the stencil by defining the custom
             <Stencil:StencilCategory Title="Custom shapes" Keys="{StaticResource customShapeCollection}"/>
         </Stencil:StencilCategoryCollection>
     </Stencil:Stencil.Categories>
+    <Stencil:Stencil.SymbolGroups>
+        <Stencil:SymbolGroups>
+        <!--Separate groups based on the key-->
+        <Stencil:SymbolGroupProvider MappingName="Key" />
+        </Stencil:SymbolGroups>
+    </Stencil:Stencil.SymbolGroups>
 </Stencil:Stencil>
 {% endhighlight %}
 {% endtabs %}
@@ -867,7 +882,7 @@ In `List` display mode,  filters will be added in list view only when you set th
 
 ### SelectedFilter
 
-There can be multiple SymbolFilters but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
+There can be multiple SymbolFilters but only one filter can be selected at a time. You can select the filter from the collection of filters using the [SelectedFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SelectedFilter) of the stencil. In combo box, the perticular item will be selected and updated that item to the SelectedFilter. In List view, the selected item will be updated as a SelectedFilter.
 
 ## Add Title to Stencil
 
