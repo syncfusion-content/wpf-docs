@@ -324,6 +324,45 @@ control.ScheduleRangePadding = 5;
 
 {% endtabs %}
 
+## ScheduleType
+
+By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the GanttControl, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
+
+* HoursWithSeconds
+* MinutesWithSeconds
+* WeekWithDays
+* DayWithHours
+* DayWithMinutes
+* MonthWithHours
+* MonthWithDays
+* YearWithDays
+* YearWithMonths
+* CustomDateTime
+* CustomNumeric
+
+The following code sample demonstrates how to set **ScheduleType** for GanttControl.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"           ScheduleType="YearWithMonths" >
+</Sync:GanttControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Initializing Gantt
+GanttControl control = new GanttControl();
+control.DataContext = new ViewModel();
+control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
+control.ScheduleType = ScheduleType.YearWithMonths;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
 ## Showing date with time in GanttGrid
 
 To show the date with time in the GanttGrid, enable the ShowDateWithTime property as shown in the following code sample.
