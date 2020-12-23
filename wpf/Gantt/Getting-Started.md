@@ -324,9 +324,9 @@ control.ScheduleRangePadding = 5;
 
 {% endtabs %}
 
-## Schedule type
+## ScheduleType
 
-Using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the GanttControl, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
+By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the GanttControl, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
 
 * HoursWithSeconds
 * MinutesWithSeconds
@@ -340,7 +340,7 @@ Using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 * CustomDateTime
 * CustomNumeric
 
-The following code sample demonstrates how to set ScheduleType for GanttControl.
+The following code sample demonstrates how to set **ScheduleType** for GanttControl.
 
 {% tabs %}
 
