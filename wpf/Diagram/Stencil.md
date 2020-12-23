@@ -340,7 +340,7 @@ N> The `DataContext` of the `Symbol` will be any diagramming elements such as `N
 
 ## Group symbols into category
 
-The symbols of the same category can be grouped using [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html).  The `SymbolGroupProvider` groups based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property which has the name of the property whose value will be the group category. In the below code example, `MappingName` has value of "Key" and `SymbolGroupProvider` will create the group based on the value of the `Key` property. The symbols with same category name could be grouped under that catergory.
+The symbols of the same category can be grouped using [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html).  The `SymbolGroupProvider` groups based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property which has the name of the property whose value will be the group category. In the below code example, `MappingName` has value of "Key" and `SymbolGroupProvider` will create the group based on the value of the `Key` property. The symbols with same category name could be grouped under that category.
 
 {% tabs %}
 {% highlight xaml %}
@@ -872,9 +872,9 @@ The visual appearance of the symbol filters can be customized to either combobox
 |SymbolFilterDisplayMode|Description|
 |----------|-----------|
 | ComboBox | The symbol filter are visually represented in a combobox.  |
-| List | The symbol filter are visually represented in a istview |
+| List | The symbol filter are visually represented in a listview |
 
-In `List` display mode,  filters will be added in list view only when you set the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` as `true`. You can dynamically add or remove the filter from listview, by clicking the **moreshapes** option and checked/unchecked the filter to add or remove that filter from the list view.  Check marks indicate the filters added in the List.
+In `List` display mode,  filters will be added in list view only when you set the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` as `true`. You can dynamically add or remove the filter from listview, by clicking the **more shapes** option and checked/unchecked the filter to add or remove that filter from the list view.  Check marks indicate the filters added in the List.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
@@ -882,7 +882,7 @@ In `List` display mode,  filters will be added in list view only when you set th
 
 ### SelectedFilter
 
-There can be multiple SymbolFilters but only one filter can be selected at a time. You can select the filter from the collection of filters using the [SelectedFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SelectedFilter) of the stencil. In combo box, the perticular item will be selected and updated that item to the SelectedFilter. In List view, the selected item will be updated as a SelectedFilter.
+There can be multiple SymbolFilters but only one filter can be selected at a time. You can select the filter from the collection of filters using the [SelectedFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SelectedFilter) of the stencil. In combo box, the particular item will be selected and updated that item to the SelectedFilter. In List view, the selected item will be updated as a SelectedFilter.
 
 ## Add Title to Stencil
 
@@ -946,7 +946,7 @@ You can search for symbols in the stencil by entering symbol name (e.g:"rectangl
 
 The following image illustrate the search result of the symbol.
 
- ![Symbol](Stencil_images/Stencil_ComboBox_Search.PNG) 
+ ![Symbol](Stencil_images/Stencil_Search_Textbox.GIF) 
 
 ## Stencil display mode
 
