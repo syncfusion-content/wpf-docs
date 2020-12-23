@@ -11,7 +11,7 @@ documentation: ug
 
 Diagram Ribbon Control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for WPF Diagram. The Diagram Ribbon Control contains UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform copy/paste operations.
 
-![DiagramRibbon](Diagram-Ribbon_images\DiagramRibbon.png)
+![DiagramRibbon](Diagram-Ribbon_images/DiagramRibbon.png)
 
 The table below lists actions end-users can perform using the Diagram Ribbon.
 
@@ -44,7 +44,7 @@ The following section helps you to add SfDiagramRibbon in your application with 
 
 SfDiagramRibbon control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![DiagramRibbonfromToolbox](Diagram-Ribbon_images\DiagramRibbonToolbox.png)
+![DiagramRibbonfromToolbox](Diagram-Ribbon_images/DiagramRibbonToolbox.png)
 
 Steps to add Diagram Ribbon control manually is given below with its code example.
 
@@ -124,7 +124,7 @@ namespace SfDiagram_WPF
 
 This section describes how to build a simple Diagram Designer application with Diagram Ribbon, and Diagram Controls.
 
-N> We have to set the Diagram as DataContext for the Diagram Ribbon control, which will help the users to interact with the Diagram by using Diagram Ribbon control.
+N> You have to set the Diagram as DataContext for the Diagram Ribbon control, which will help the users to interact with the Diagram by using Diagram Ribbon control.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ N> We have to set the Diagram as DataContext for the Diagram Ribbon control, whi
 
 {% endtabs %}
 
-![DiagramRibbonfromToolbox](Diagram-Ribbon_images\DiagramDesigner.gif)
+![DiagramRibbonfromToolbox](Diagram-Ribbon_images/DiagramDesigner.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Diagram%20Ribbon)
 
@@ -210,7 +210,7 @@ User can customize the ribbon items by overriding the template of the [SfDiagram
 
 ### Using Tabs property in Events
 
-By invoking SfSpreadsheetRibbon Loaded Event, User can add/delete the ribbon tabs, and ribbon items with the help of [Tabs Property](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html#Syncfusion_UI_Xaml_DiagramRibbon_SfDiagramRibbon_Tabs) in the `SfDiagramRibbon`.
+By invoking SfDiagramRibbon Loaded Event, User can add/delete the ribbon tabs, and ribbon items with the help of [Tabs Property](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html#Syncfusion_UI_Xaml_DiagramRibbon_SfDiagramRibbon_Tabs) in the `SfDiagramRibbon`.
 
 #### Adding RibbonTab
 

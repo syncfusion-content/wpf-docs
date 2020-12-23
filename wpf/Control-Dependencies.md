@@ -1278,7 +1278,7 @@ Syncfusion.SfShared.WPF
 
 ### Diagram Ribbon
 
-For Diagram with its Diagram Ribbon, the below assembly need to be added in your application.
+When your application already having SfDiagram and you need the enhanced ribbon to work with the most important Setting and features of the Diagram, the below assemblies need to be added in your application.
 
 <table>
 <tr>
