@@ -33,21 +33,21 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + Shift + U | UnGroup | UnGrouping the element in the diagram. |
 | Ctrl + Shift + B | SendToBack | Moves the selected element behind all the other overlapped elements. |
 | Ctrl + [ | SendBackward | Moves the selected element behind the underlying element. |
-| Ctrl + Shift + F | BringFront | Brings the selected element to front over all the other overlapped elements. |
+| Ctrl + Shift + F | BringToFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 | Ctrl + |Zoom | Zoom in the diagram. |
 | Ctrl - | Zoom | Zoom out the diagram. |
 | Ctrl + 0 (number 0) | Reset | To reset horizontal Offset, vertical Offset, and zoom level of the Diagram. |
 | Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
 | F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
-| Ctrl + 1 | Pointer Tool | It is used to select the elements in the diagram.|
-| Ctrl + 2 | Text Tool | It is used to create text node. |
-| Ctrl + 3 | Connector Tool | It is used to create orthogonal connector by click and drag on the diagram.|
-| Ctrl + 5 | Freehand Tool | It is used to create Free hand drawing connections.|
-| Ctrl + 6 | Line Tool | It is used to create a straight line connector by click and drag on the diagram.|
-| Ctrl + 8 | Rectangle Tool |It is used to create a rectangle shaped Node by click and drag on the diagram.|
-| Ctrl + 9 | Ellipse Tool | It is used to create an ellipse shaped Node by click and drag on the diagram.|
-| Esc | Cancel | Stop the annotation editing and accept the curent value,Clear the Keyboard focus,Clear the selection of the diagram elements,reset the diagram tool to select tool |
+| Ctrl + 1 | Pointer Tool | To select, move or resize the elements in the diagram. |
+| Ctrl + 2 | Text Tool | To draw a text node. |
+| Ctrl + 3 | Connector Tool | To draw a orthogonal connector. |
+| Ctrl + 5 | Freehand Tool | To draw a free hand connections. |
+| Ctrl + 6 | Line Tool | To draw a straight line connector. |
+| Ctrl + 8 | Rectangle Tool | To draw a rectangle shaped node. |
+| Ctrl + 9 | Ellipse Tool | To draw an ellipse shaped node.|
+| Esc | Cancel | Stops the annotation editing or clears the selection of a diagram element. |
 
 To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/sfdiagram/commands#command-manager "Command Manager")
 

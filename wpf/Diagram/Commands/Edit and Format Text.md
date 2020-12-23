@@ -11,7 +11,7 @@ documentation: ug
 
 ## EditAnnotation
 
-The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_EditAnnotation) command enables annotation editing mode of the first selected diagram element.
+The [EditAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_EditAnnotation) command is used to enable editing mode for the annotation of the selected element. And in the case of multiple selection, editing will be enabled for the first selected element.
 
 {% tabs %}
 
@@ -111,11 +111,9 @@ graphinfo.Commands.ToggleStrikeThrough.Execute(null);
 
 ## Cancel command 
 
-The [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Cancel) command is used to perform either any of the below action.
-* Stops the annotation editing and accept the current value.
-* Clear the Keyboard focus.
-* Clear the selection of the diagram elements.
-* Reset the diagram tool to select tool.
+The [Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Cancel) command is used to perform either one of the below action with higher priority.
+* Stops the annotation editing and accepts the current value.
+* Clears the selection of or keyboard focus on the diagram elements.
 
 {% tabs %}
 

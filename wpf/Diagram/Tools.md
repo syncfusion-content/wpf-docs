@@ -161,20 +161,20 @@ Diagram allows you to establish connection with Node/Port as soon as you click o
 
 ### FreeHand drawing
 
-Free hand drawing connections will be drawn by using `DrawingTool` property.
+Free hand connections will be drawn by using `DrawingTool` property.
 
 {% tabs %}
 
 {% highlight %}
 
-<Syncfusion:SfDiagram x:Name="diagram" DrawingTool="FreeHand" Tool="ContinuesDraw">           
-            <Syncfusion:SfDiagram.Nodes>
-                <Syncfusion:NodeCollection></Syncfusion:NodeCollection>
-            </Syncfusion:SfDiagram.Nodes>
-            <Syncfusion:SfDiagram.Connectors>
-                <Syncfusion:ConnectorCollection></Syncfusion:ConnectorCollection>
-            </Syncfusion:SfDiagram.Connectors>
-        </Syncfusion:SfDiagram>
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="FreeHand">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -192,20 +192,20 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ### Ellipse 
 
-Diagram allows you to create a ellipse shaped Node as soon as you click on the Diagram page. The following code illustrates how to draw an ellipse shaped node.
+Diagram allows you to create a ellipse shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw an ellipse shaped node.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <Syncfusion:SfDiagram x:Name="diagram" DrawingTool="Ellipse" Tool="ContinuesDraw">           
-            <Syncfusion:SfDiagram.Nodes>
-                <Syncfusion:NodeCollection></Syncfusion:NodeCollection>
-            </Syncfusion:SfDiagram.Nodes>
-            <Syncfusion:SfDiagram.Connectors>
-                <Syncfusion:ConnectorCollection></Syncfusion:ConnectorCollection>
-            </Syncfusion:SfDiagram.Connectors>
-        </Syncfusion:SfDiagram>
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="Ellipse">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -214,40 +214,35 @@ Diagram allows you to create a ellipse shaped Node as soon as you click on the D
 diagram.DrawingTool = DrawingTool.Ellipse;
 diagram.Tool = Tool.ContinuesDraw;
 
-
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Rectangle
 
-Diagram allows you to create a rectangle shaped Node as soon as you click on the Diagram page. The following code illustrates how to draw a rectangle shaped node.
+Diagram allows you to create a rectangle shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw a rectangle shaped node.
 
 {% tabs %}
 
 {% highlight %}
 
-<Syncfusion:SfDiagram x:Name="diagram" DrawingTool="Rectangle" Tool="ContinuesDraw">           
-            <Syncfusion:SfDiagram.Nodes>
-                <Syncfusion:NodeCollection></Syncfusion:NodeCollection>
-            </Syncfusion:SfDiagram.Nodes>
-            <Syncfusion:SfDiagram.Connectors>
-                <Syncfusion:ConnectorCollection></Syncfusion:ConnectorCollection>
-            </Syncfusion:SfDiagram.Connectors>
-        </Syncfusion:SfDiagram>
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="Rectangle">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-
 diagram.DrawingTool = DrawingTool.Rectangle;
 diagram.Tool = Tool.ContinuesDraw;
 
-
 {% endhighlight %}
 {% endtabs %}
-
 
 ## How to override the default tool of diagram elements
 

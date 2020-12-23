@@ -13,9 +13,9 @@ The [SelectTool](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.I
 
 | Property | Description |
 |---|---|
-| Tool |It is used customize the tools of the diagram.|
-| DrawingTool | It is used to specify the drawing tool, which is valid only if the Tool is set as either ContinuesDraw or DrawOnce. |
-| ConnectorType | It is used to specify the type (such as Orthogonal, Straight and CubicCurve etc)  of the connector to be drawn. |
+| Tool | It is used to customize the tools of the diagram.|
+| DrawingTool | It is used to specify the drawing tool, which is valid only if the `Tool` is set as either `ContinuesDraw` or `DrawOnce`. |
+| ConnectorType | It is used to specify the type (such as Orthogonal, Straight and Cubic-Curve etc.) of the connector to be drawn. |
 
 For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/diagram/tools) 
 
@@ -23,7 +23,7 @@ For details , refer [Tools and DrawingTools](https://help.syncfusion.com/wpf/dia
 
 {% highlight Xaml%}
 
-<!-- To draw an ellipse node-->
+ <!-- To draw an ellipse node-->
  <Syncfusion:SelectToolCommandParameter DrawingTool="Ellipse" Tool="ContinuesDraw"  x:Key="SelectToolEllipseCommandParameter"/>
  
  <!-- To draw a straight line connector-->
