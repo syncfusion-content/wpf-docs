@@ -65,41 +65,41 @@ Layer shape type legends can be different shapes for the legend. The shapes can 
 
 ### Arranging the Legends 
 
-Legends are arranged in matrix format. The number of columns in the arranging matrix can be set by setting the LegendColumnSplit property of the int type. 
+Legends are arranged in matrix format. The number of columns in the arranging matrix can be set by setting the [`LegendColumnSplit`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LegendColumnSplit) property of the int type. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-      <syncfusion:SfMap>
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer 
+    <syncfusion:SfMap>
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer 
                     LegendType="Layers" LegendHeader="LegendHeader"
                     LegendColumnSplit="2" LegendPositionX="10"
-                    LegendPositionY="200" LegendVisibility="Visible"
+                    LegendPositionY="300" LegendVisibility="Visible"
                     LegendIcon="Rectangle" ItemsSource="{Binding Countries}" ShapeIDPath="Name"  
                     ShapeIDTableField="NAME" Uri="DataMarkers.ShapeFiles.world1.shp">
-                    <syncfusion:ShapeFileLayer.ShapeSettings>
-                        <syncfusion:ShapeSetting ShapeColorValuePath="Population" ShapeFill="#E5E5E5" 
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeColorValuePath="Population" ShapeFill="#E5E5E5" 
                                                  ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" 
                                                  ShapeValuePath="Population" >
-                            <syncfusion:ShapeSetting.FillSetting>
-                                <syncfusion:ShapeFillSetting AutoFillColors="False">
-                                    <syncfusion:ShapeFillSetting.ColorMappings>
-                                        <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
-                                        <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
-                                        <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
-                                        <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
-                                        <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-                                        <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
-                                    </syncfusion:ShapeFillSetting.ColorMappings>
-                                </syncfusion:ShapeFillSetting>
-                            </syncfusion:ShapeSetting.FillSetting>
-                        </syncfusion:ShapeSetting>
-                    </syncfusion:ShapeFileLayer.ShapeSettings>
-                </syncfusion:ShapeFileLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
+                        <syncfusion:ShapeSetting.FillSetting>
+                            <syncfusion:ShapeFillSetting AutoFillColors="False">
+                                <syncfusion:ShapeFillSetting.ColorMappings>
+                                    <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
+                                    <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
+                                    <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
+                                    <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
+                                    <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
+                                    <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
+                                </syncfusion:ShapeFillSetting.ColorMappings>
+                            </syncfusion:ShapeFillSetting>
+                        </syncfusion:ShapeSetting.FillSetting>
+                    </syncfusion:ShapeSetting>
+                </syncfusion:ShapeFileLayer.ShapeSettings>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
 
 {% endhighlight %}
 
@@ -156,31 +156,37 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 {% highlight xaml %}
 
-       <syncfusion:SfMap>
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer 
-                    LegendType="Bubbles" LegendHeader="LegendHeader"
-                    LegendColumnSplit="2" LegendPositionX="10"
-                    LegendPositionY="200" LegendVisibility="Visible"
+     <syncfusion:SfMap>
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer 
+                    LegendType="Bubbles" LegendHeader="Legend Header"
+                    LegendColumnSplit="1" LegendPositionX="5"
+                    LegendPositionY="100" LegendVisibility="Visible"
                     LegendIcon="Rectangle" ItemsSource="{Binding Countries}" ShapeIDPath="Name"  
                     ShapeIDTableField="NAME" Uri="DataMarkers.ShapeFiles.world1.shp">
-                    <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-                        <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="50" 
+                <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                    <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="50" 
                                                         MinSize="20" StrokeThickness="0" 
-                                                        ValuePath="Population">
-                            <syncfusion:BubbleMarkerSetting.ColorMappings>
-                                <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
-                                <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
-                                <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
-                                <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
-                                <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-                                <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
-                            </syncfusion:BubbleMarkerSetting.ColorMappings>
-                        </syncfusion:BubbleMarkerSetting>
-                    </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-                </syncfusion:ShapeFileLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
+                                                ColorValuePath="Population"  ValuePath="Population">
+                        <syncfusion:BubbleMarkerSetting.ColorMappings>
+                            <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
+                            <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
+                            <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
+                            <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
+                            <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
+                            <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
+                          
+                        </syncfusion:BubbleMarkerSetting.ColorMappings>
+                    </syncfusion:BubbleMarkerSetting>
+                </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                <syncfusion:ShapeFileLayer.ItemsTemplate>
+                    <DataTemplate>
+                            <TextBlock Text=""/>
+                    </DataTemplate>
+                </syncfusion:ShapeFileLayer.ItemsTemplate>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
 
 {% endhighlight %}
 
