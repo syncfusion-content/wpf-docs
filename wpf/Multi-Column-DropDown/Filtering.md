@@ -49,7 +49,7 @@ By default, SfMultiColumnDropDownControl filter or auto-complete the data based 
                                          HorizontalAlignment="Left"
                                          AutoGenerateColumns="False"
                                          AllowIncrementalFiltering="True"
-									     AllowImmediatePopup="True"    
+                                         AllowImmediatePopup="True"    
                                          AllowDiacriticSensitiveFiltering="False"   
                                          VerticalAlignment="Top"
                                          DisplayMember="Continent"
