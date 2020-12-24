@@ -984,6 +984,24 @@ Syncfusion.SfChart.WPF
 </tr>
 </table>
 
+## SfBadge
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF <br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.Tools.WPF
+</td>
+</tr>
+</table>
+
 ## SfBarcode
 
 <table>

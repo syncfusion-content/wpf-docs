@@ -89,7 +89,7 @@ Description</th></tr>
 <td>Gets or sets the mapping to the appointment.</td></tr>
 <tr>
 <td>{{'[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource)'| markdownify }}</td>
-<td>-</td>
+<td>{{'[ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection)'| markdownify }}</td>
 <td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
@@ -97,10 +97,9 @@ The following table compares the [ScheduleAppointment](https://help.syncfusion.c
 
 <table>
 <tr>
-<th>
-SfSchedule(ScheduleAppointment)</th><th>
-SfScheduler(ScheduleAppointment)</th><th>
-Description</th></tr>
+<th>SfSchedule(ScheduleAppointment)</th>
+<th>SfScheduler(ScheduleAppointment)</th>
+<th>Description</th></tr>
 <tr>
 <td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Subject)'| markdownify }}</td></td>
 <td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject)'| markdownify }}</td></td>
@@ -175,10 +174,9 @@ The following table compares the [AppointmentMapping](https://help.syncfusion.co
 
 <table>
 <tr>
-<th>
-SfSchedule(AppointmentMapping)</th><th>
-SfScheduler(AppointmentMapping)</th><th>
-Description</th></tr>
+<th>SfSchedule(AppointmentMapping)</th>
+<th>SfScheduler(AppointmentMapping)</th>
+<th>Description</th></tr>
 <tr>
 <td>{{'[SubjectMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_SubjectMappingProperty)'| markdownify }}</td>
 <td>{{'[Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Subject)'| markdownify }}</td>

@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-# EditControl Members
+# WPF EditControl Members
 
 EditControl class contains variety of properties, methods and events to enable the developers utilize this control easily. It is enhanced with maximum possible level of customization and facilities that are provided for the developers to use these controls effectively. This topic discusses about the properties, methods and events available in the EditControl class.
 
@@ -286,4 +286,14 @@ A PropertyChangedCallback gets raised when the text in the EditControl is select
 TextChanged<br/><br/></td><td>
 PropertyChangedCallback<br/><br/></td><td>
 A PropertyChangedCallback get raised when the text in the EditControl gets changed.<br/><br/></td></tr>
+<tr>
+<td>
+CaretPositionChanged<br/><br/></td><td>
+EventHandler<br/><br/></td><td>
+This event will be raised when the caret position of the text in the EditControl is changed. The <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CaretPositionChanged">CaretPositionChanged </a> event receives the `sender` and <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.CaretPositionEventArgs.html">CaretPositionEventArgs </a> as argument which has the following properties.
+<ul>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_LineNumber">Line Number </a> : Gets the current line number value of the EditControl.</li>
+<li> <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_CursorIndex">Cursor Index </a> : Gets the current cursor index value of the EditControl.</li>
+</ul>
+<br/><br/></td></tr>
 </table>
