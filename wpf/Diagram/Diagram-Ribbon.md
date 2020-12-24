@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Create a Diagram Ribbon to interact with the SfDiagram | Syncfusion.
-description: Diagram Ribbon walk through the usage of the Diagram Ribbon and the items present in Diagram Ribbon to interact with the Diagram.
+description: A walk through the usage of the Diagram ribbon and the items present in a Diagram ribbon to interact with the diagram.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# WPF Diagram Ribbon (SfDiagramRibbon) in WPF Diagram (SfDiagram)
+# WPF Diagram Ribbon (SfDiagramRibbon) in the WPF Diagram (SfDiagram)
 
-Diagram Ribbon Control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for WPF Diagram. The Diagram Ribbon Control contains UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform copy/paste operations.
+The diagram ribbon control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for the WPF Diagram. The diagram ribbon control contains the UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform a copy and paste operations.
 
 ![DiagramRibbon](Diagram-Ribbon_images/DiagramRibbon.png)
 
-The table below lists actions end-users can perform using the Diagram Ribbon.
+The following table lists actions that end-users can perform using the Diagram Ribbon.
 
 | Ribbon Tab | Ribbon Bar | Actions |
 |---|---|---|
@@ -22,7 +22,7 @@ The table below lists actions end-users can perform using the Diagram Ribbon.
 |  | Alignment | Realign the text within the selected shape. |
 |  | Tools | Select a tool. |
 |  | Shape Styles | Change the background and border colors for the currently selected shape using a palette of predefined patterns or by selecting the colors individually using color pickers. |
-|  | Arrange | Change the position/alignment of the selected shapes and move the selected shapes in and out in the Z-order. |
+|  | Arrange | Change the position or alignment of the selected shapes and move the selected shapes in and out in the Z-order.
 |  | Select | Select all the diagram items or by specific type. |
 | Insert | Diagram Parts | Allows you to add an image item or connection line to the canvas. |
 | Design | Page Setup | Toggle between portrait and landscape page orientation, set the page size. |
@@ -40,19 +40,19 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding Diagram Ribbon
 
-The following section helps you to add SfDiagramRibbon in your application with SfDiagram.
+The following section helps you to add the SfDiagramRibbon in your application with the SfDiagram.
 
-SfDiagramRibbon control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+The SfDiagramRibbon control can be added to the application by dragging it from the toolbox and dropping it in the designer view. The required assembly references will be added automatically.
 
 ![DiagramRibbonfromToolbox](Diagram-Ribbon_images/DiagramRibbonToolbox.png)
 
-Steps to add Diagram Ribbon control manually is given below with its code example.
+Steps to add the Diagram ribbon control manually is given below with its code example.
 
 1. Add the following required assembly reference to the project `Syncfusion.SfDiagramRibbon.WPF`.
 
-2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or SfDiagramRibbon control namespace `Syncfusion.UI.Xaml.DiagramRibbon` in your application.
+2. Import the Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the SfDiagramRibbon control namespace `Syncfusion.UI.Xaml.DiagramRibbon` in your application.
 
-3. Declare SfDiagramRibbon control in your application.
+3. Declare the SfDiagramRibbon control in your application.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ namespace SfDiagram_WPF
         {
             InitializeComponent();
 
-            // Initialize, Arrange and Add Diagram and Diagram Ribbon in the Application
+            // Initialize, arrange and add a diagram and Diagram ribbon in the application
             
             SfDiagram Sfdiagram = new SfDiagram() { Theme = new OfficeTheme(), Nodes = new NodeCollection(), Connectors = new ConnectorCollection() };
             SfDiagramRibbon sfDiagramRibbon = new SfDiagramRibbon() { DataContext = Sfdiagram };
@@ -122,9 +122,9 @@ namespace SfDiagram_WPF
 
 ## Simple Diagram Designer
 
-This section describes how to build a simple Diagram Designer application with Diagram Ribbon, and Diagram Controls.
+This section describes how to build a simple diagram designer application with diagram ribbon, and diagram control.
 
-N> You have to set the Diagram as DataContext for the Diagram Ribbon control, which will help the users to interact with the Diagram by using Diagram Ribbon control.
+N> You have to set the diagram as DataContext for the Diagram ribbon control, which will help the users to interact with the diagram by using the Diagram ribbon control.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ N> You have to set the Diagram as DataContext for the Diagram Ribbon control, wh
 
             SfSkinManager.SetTheme(this, new Syncfusion.SfSkinManager.Theme() { ThemeName = "Office2019Colorful" });
 
-            // Initialize, Arrange and Add Diagram and Diagram Ribbon in the Application
+            // Initialize, arrange and add a diagram and Diagram ribbon in the application
 
             SfDiagram Sfdiagram = new SfDiagram()
             {
@@ -202,19 +202,19 @@ N> You have to set the Diagram as DataContext for the Diagram Ribbon control, wh
 
 ## Ribbon Customization
 
-Ribbon Customization can be done in two ways.
+The Ribbon customization can be done in two ways.
 
 ### Using Control Template
 
-User can customize the ribbon items by overriding the template of the [SfDiagramRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html).
+An user can customize the ribbon items by overriding the template of the [SfDiagramRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html).
 
 ### Using Tabs property in Events
 
-By invoking SfDiagramRibbon Loaded Event, User can add/delete the ribbon tabs, and ribbon items with the help of [Tabs Property](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html#Syncfusion_UI_Xaml_DiagramRibbon_SfDiagramRibbon_Tabs) in the `SfDiagramRibbon`.
+By invoking the SfDiagramRibbon loaded event, a user can add or delete the ribbon tabs, and ribbon items with the help of [Tabs Property](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.DiagramRibbon.SfDiagramRibbon.html#Syncfusion_UI_Xaml_DiagramRibbon_SfDiagramRibbon_Tabs) in the `SfDiagramRibbon`.
 
 #### Adding RibbonTab
 
-To add a custom ribbon tab with the default tabs in `SfDiagramRibbon`.
+To add a custom ribbon tab with the default tabs in the `SfDiagramRibbon`.
 
 {% tabs %}
 
@@ -224,7 +224,7 @@ To add a custom ribbon tab with the default tabs in `SfDiagramRibbon`.
 
         private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
         {
-            // Add new Ribbon Tab.
+            // Add a new Ribbon tab.
             RibbonTab FormatTab = new RibbonTab() { Caption = "Format" };
             (sender as SfDiagramRibbon).Tabs.Add(FormatTab);
         }
@@ -245,7 +245,7 @@ To remove a ribbon tab from the default tabs in `SfDiagramRibbon`.
 
         private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
         {
-            // Remove Insert Tab.
+            // Remove the Insert tab.
             (sender as SfDiagramRibbon).Tabs.RemoveAt(1);
         }
 
@@ -286,7 +286,7 @@ To remove an already existing ribbon item from the ribbon tab.
 
         private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
         {
-            // Remove Alignment Bar from Home Tab.
+            // Remove the alignment bar from the Home Tab.
             RibbonTab HomeTab = (sender as SfDiagramRibbon).Tabs.ElementAt(0);
             HomeTab.Items.RemoveAt(2);
         }
