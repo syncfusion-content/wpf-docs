@@ -367,6 +367,8 @@ control.ScheduleType = ScheduleType.YearWithMonths;
 
 To show the date with time in the GanttGrid, enable the ShowDateWithTime property as shown in the following code sample.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <sync:GanttControl x:Name="control" ShowDateWithTime="True" ItemsSource="{Binding TaskCollection}"> 
