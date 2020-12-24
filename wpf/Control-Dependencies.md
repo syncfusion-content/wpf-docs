@@ -1294,6 +1294,29 @@ Syncfusion.SfShared.WPF
 </tr>
 </table>
 
+### Diagram Ribbon
+
+When your application already having SfDiagram and you need the enhanced ribbon to work with the most important settings and features of the Diagram, then the  following assemblies need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfDiagramRibbon.WPF
+Syncfusion.Compression.Base
+Syncfusion.Pdf.Base
+Syncfusion.Shared.WPF
+Syncfusion.Tools.WPF
+</td>
+<td> 
+Syncfusion.SfDiagramRibbon.WPF
+</td>
+</tr>
+</table>
+
 ## SfDomainUpDown
 
 <table>
