@@ -14,7 +14,7 @@ documentation: ug
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdiagram) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 
 The following section helps you to build your application with SfDiagram.
