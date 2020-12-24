@@ -874,7 +874,7 @@ The visual appearance of the symbol filters can be customized to either a combo 
 | ComboBox | The symbol filter is visually represented in a combo box.  |
 | List | The symbol filter are visually represented in a listview |
 
-In `List` display mode,  the filters will be added in the list view only when you set the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` to `true.` You can dynamically add or remove the filter from the list view, by clicking the **more shapes** option and checked or unchecked the filter to add or remove that filter from the list view.  Checkmarks indicate the filters added to the List.
+In `List` display mode,  the filters will be added in the list view only when you set the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolFilterProvider_IsChecked) property of the `SymbolFilterProvider` to `true.` You can dynamically add or remove the filter from the list view, by clicking the **more shapes** option and checked or unchecked the filter to add or remove that filter from the list view.  Check marks indicate the filters added to the List.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
