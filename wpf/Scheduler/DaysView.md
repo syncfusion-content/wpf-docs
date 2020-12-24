@@ -24,7 +24,7 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 N>If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
 ## Change time interval height
-You can customize the interval height of timeslots in day, week, work week views by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of `DaysViewSettings`.
+You can customize the interval height of timeslots in day, week, work week views by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings).
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
@@ -73,34 +73,35 @@ N>
 * If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to ’37 minutes’ (555%37=0) by considering (total minutes % timeInterval = 0). it will return integer value for time slots rendering.
 
 ## Special time regions
-You can restrict the user interaction such as selection and highlights specific regions of time in day, week, work week views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of `SfScheduler`. You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of `SpecialTimeRegion` to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.
+You can restrict the user interaction such as selection and highlights specific regions of time in day, week, work week views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of `SfScheduler`. You need to set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion`, you can use the timeZone property to set the specific timezone for Start and end time of `SpecialTimeRegion`. The `SpecialTimeRegion` will display the text or image on it that set to the text or icon property of `SpecialTimeRegion`.
+
+You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) in the week and workweek views. By default, its value is false.
 
 ### Selection restriction in timeslots
-You can enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, its value is true.
+You can enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties). By default, its value is true.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings>
-            <syncfusion:DaysViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="2020/07/07 13:0:0"
-                    EndTime="2020/07/07 14:0:0"
-                    CanEdit="False"
-                    Text="Lunch"
-                    Background="Black"
-                    Foreground="White"/>
+<syncfusion:SfScheduler.DaysViewSettings>
+    <syncfusion:DaysViewSettings>
+        <syncfusion:DaysViewSettings.SpecialTimeRegions>
+            <syncfusion:SpecialTimeRegion
+                StartTime="2020/12/15 13:0:0"
+                EndTime="2020/12/15 14:0:0"
+                CanEdit="False"
+                Text="Lunch"
+                Background="Gray"
+                Foreground="White"/>
             </syncfusion:DaysViewSettings.SpecialTimeRegions>
         </syncfusion:DaysViewSettings>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
-Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-    StartTime = new System.DateTime(2020, 07, 07, 13, 0, 0),
-    EndTime = new System.DateTime(2020, 07, 07, 14, 0, 0),
+    StartTime = new System.DateTime(2020,12,15,13,0,0),
+    EndTime = new System.DateTime(2020,12,15,14,0,0),
     Text = "Lunch",
     CanEdit = false,
     Background = Brushes.Black,
@@ -111,7 +112,7 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 ![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Selectionrestrictionintimeslots.png)
 
-N>NOTE
+N> NOTE
 This property only restricts the interaction on region and it does not restrict the following:
 * Programmatic selection (if the user updates the selected date value dynamically)
 * Does not clear the selection when the user selects the region and dynamically change
@@ -121,21 +122,23 @@ in the region
 * It does not restrict the appointment rendering on a region, when appointments are loaded from data services or adding programmatically.
 
 ### Recurring time region
-The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in `SpecialTimeRegion`.
+The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties).
+
+You can enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) in the week and workweek views. By default, its value is false.
+
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings>
-            <syncfusion:DaysViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="2020/07/05 13:0:0"
-                    EndTime="2020/07/05 14:0:0"
-                    CanEdit="False"
-                    Text="Lunch"
-                    Background="Black"
-                    Foreground="White"
-                    RecurrenceRule="FREQ=DAILY;INTERVAL=1"/>
+ <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+<syncfusion:SfScheduler.DaysViewSettings>
+    <syncfusion:DaysViewSettings>
+        <syncfusion:DaysViewSettings.SpecialTimeRegions>
+            <syncfusion:SpecialTimeRegion
+                StartTime="2020/12/13 13:0:0"
+                EndTime="2020/12/13 14:0:0"
+                CanEdit="False"
+                Text="Lunch"
+                CanMergeAdjacentRegions="True"
+                RecurrenceRule="FREQ=DAILY;INTERVAL=1"/>
             </syncfusion:DaysViewSettings.SpecialTimeRegions>
         </syncfusion:DaysViewSettings>
     </syncfusion:SfScheduler.DaysViewSettings>
@@ -145,60 +148,66 @@ The recurring time region on a daily, weekly, monthly, or yearly interval. The r
 Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-    StartTime = new System.DateTime(2020, 07, 05, 13, 0, 0),
-    EndTime = new System.DateTime(2020, 07, 05, 14, 0, 0),
+    StartTime = new System.DateTime(2020, 12, 13, 13, 0, 0),
+    EndTime = new System.DateTime(2020, 12, 13, 14, 0, 0),
     Text = "Lunch",
     CanEdit = false,
     Background = Brushes.Black,
     Foreground = Brushes.White,
-    RecurrenceRule= "FREQ=DAILY;INTERVAL=1"
+    CanMergeAdjacentRegions=true,
+    RecurrenceRule = "FREQ=DAILY;INTERVAL=1"
 });
 {% endhighlight %}
 {% endtabs %}
-![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Recurringtimeregion.png)
+![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurringtimeregion.png)
+
+If the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) is set to false. The SpecialTimeRegion will be rendering on Date basis.
+
+![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurringtimeregion.png)
 
 ### Recurrence exception dates
-You can delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
+You can delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties). The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Week;
-DateTime recurrenceExceptionDates = new DateTime(2020, 07, 06, 10, 0, 0);
-DateTime recurrenceExceptionDates1 = new DateTime(2020, 07, 08, 10, 0, 0);
-DateTime recurrenceExceptionDates2 = new DateTime(2020, 07, 10, 10, 0, 0);
+DateTime recurrenceExceptionDates = DateTime.Now.Date.AddDays(-1);
+DateTime recurrenceExceptionDates1 = DateTime.Now.Date.AddDays(2);
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-    StartTime = new System.DateTime(2020, 05, 05, 12, 0, 0),
-    EndTime = new System.DateTime(2020, 05, 05, 13, 0, 0),
+    StartTime = new System.DateTime(2020, 12, 13, 13, 0, 0),
+    EndTime = new System.DateTime(2020, 12, 13, 14, 0, 0),
     Text = "Lunch",
     CanEdit = false,
+    RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
+    CanMergeAdjacentRegions= true,
     Background = Brushes.Black,
     Foreground = Brushes.White,
-    RecurrenceRule = "FREQ=DAILY;INTERVAL=1",
-    RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {
     recurrenceExceptionDates,
     recurrenceExceptionDates1,
-    recurrenceExceptionDates2,
 }
 });
 {% endhighlight %}
 {% endtabs %}
 
-![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Recurrenceexceptiondates.png)
+![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Timebasis_Recurrenceexceptiondates.png)
+
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) in Date basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) is false.
+
+![Recurrence exception dates in WPF Scheduler](DaysView_Images/adding-Datebasis_Recurrenceexceptiondates.png)
 
 ### Special time region customization
-The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of `SpecialTimeRegion` that is used to customize the text style for the image of the `SpecialTimeRegion`.
+The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) that is used to customize the text style for the image of the `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
- <Window.Resources>
+<Window.Resources>
     <DataTemplate x:Key="specialRegionTemplate">
         <Grid Background="{Binding Background}"
+            Opacity="0.5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch">
-        <Image x:Name="Image"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Source="../Image/Fork.png"/>
+        <Path x:Name="Fork" Data="M11,0 C11.553001,0 12,0.4469986 12,1 L12,15 C12,15.553001 11.553001,16 11,16 10.446999,16 10,15.553001 10,15 L10,7 9,7 C8.4469986,7 8,6.5530014 8,6 L8,3 C8,1.3429985 9.3429985,0 11,0 z M0,0 L1,0 1.2340002,4 1.7810001,4 2,0 3,0 3.2340002,4 3.7810001,4 4,0 5,0 5,4 C5,4.9660001 4.3140001,5.7727499 3.4029064,5.9593439 L3.4007993,5.9597201 3.9114671,14.517 C3.9594617,15.321 3.3195295,16 2.5136147,16 L2.5076156,16 C1.6937013,16 1.0517693,15.309 1.1107631,14.497 L1.7400641,5.9826035 1.6955509,5.9769421 C0.73587513,5.8301721 0,5.0005002 0,4 z" Fill="Black" HorizontalAlignment="Center" Height="16"  Stretch="Fill" VerticalAlignment="Center" Width="12"/>
         </Grid>
     </DataTemplate>
 </Window.Resources>
@@ -208,25 +217,28 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings                 SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
-            <syncfusion:DaysViewSettings.SpecialTimeRegions>
-                <syncfusion:SpecialTimeRegion
-                    StartTime="01/01/2020 13:0:0"
-                    EndTime="01/01/2020 14:0:0"
-                    CanEdit="False"
-                    Text="LUNCH"
-                    RecurrenceRule="FREQ=DAILY;INTERVAL=1"
-                    Foreground="Black"
-                    Background="#FFF5F5F5"/>
-            </syncfusion:DaysViewSettings.SpecialTimeRegions>
-        </syncfusion:DaysViewSettings>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
+<syncfusion:SfScheduler.DaysViewSettings>
+    <syncfusion:DaysViewSettings  SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
+        <syncfusion:DaysViewSettings.SpecialTimeRegions>
+            <syncfusion:SpecialTimeRegion
+                StartTime="2020/12/13 13:0:0"
+                EndTime="2020/12/13 14:0:0"
+                CanEdit="False"
+                RecurrenceRule="FREQ=DAILY;INTERVAL=1"
+                CanMergeAdjacentRegions="True"
+                Foreground="Black"
+                Background="#FFF5F5F5"/>
+        </syncfusion:DaysViewSettings.SpecialTimeRegions>
+    </syncfusion:DaysViewSettings>
+</syncfusion:SfScheduler.DaysViewSettings>
 {% endhighlight %}
 {% endtabs %}
 
-![Special time region customization in WPF Scheduler](DaysView_Images/adding-Specialtimeregioncustomization.png)
+![Special time region customization in WPF Scheduler](DaysView_Images/adding-Timebasis_Specialtimeregioncustomization.png)
+
+The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) can be customized in a Date basis by setting the value of [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) is false.
+
+![Special time region customization in WPF Scheduler](DaysView_Images/adding-datebasis_Specialtimeregioncustomization.png)
 
 ## Full screen scheduler
 Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.

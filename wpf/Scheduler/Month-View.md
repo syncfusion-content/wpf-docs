@@ -241,12 +241,12 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Collapsed.Collapsed;
 ![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/LeadingAndTrailingDay.png)
 
 ## Blackout dates
-You can disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_BlackoutDates) collection property of `MonthViewSettings`. Using this, you can allocate or restrict specific dates for predefined events.
+You can disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html?tabs=tabid-1#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of the `SfScheduler.` Using this, you can allocate or restrict specific dates for the predefined events.
 
 {% tabs %}
 {% highlight c#%}
 this.Schedule.ViewType = SchedulerViewType.Month;
-this.Schedule.MonthViewSettings.BlackoutDates = GetBlackoutDates();
+this.Schedule.BlackoutDates = GetBlackoutDates();
 
 private ObservableCollection<DateTime> GetBlackoutDates()
         {
@@ -436,22 +436,23 @@ You can customize the default appearance of the month cell appointment by using 
 
  {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings>
-            <syncfusion:MonthViewSettings.AppointmentTemplate>
-                <DataTemplate >
-                    <TextBlock Margin="5,0,0,0"
-                                Foreground="White"
-                                FontStyle="Italic"
-                                HorizontalAlignment="Stretch"
-                                Text="{Binding Subject}" 
-                                TextTrimming="CharacterEllipsis"/>
-                </DataTemplate>
-            </syncfusion:MonthViewSettings.AppointmentTemplate>
-        </syncfusion:MonthViewSettings>
-    </syncfusion:SfScheduler.MonthViewSettings>
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
+            <syncfusion:SfScheduler.MonthViewSettings>
+                <syncfusion:MonthViewSettings>
+                    <syncfusion:MonthViewSettings.AppointmentTemplate>
+                        <DataTemplate>
+                        <TextBlock 
+                        Background="{Binding Data.BackgroundColor}"
+                        Text="{Binding Data.EventName}" 
+                        HorizontalAlignment="Stretch"
+                        TextTrimming="CharacterEllipsis"
+                        Foreground="{Binding Data.ForegroundColor}"        
+                        TextWrapping="Wrap"
+                        FontStyle="Italic" />
+                        </DataTemplate>
+                    </syncfusion:MonthViewSettings.AppointmentTemplate>
+                </syncfusion:MonthViewSettings>
+            </syncfusion:SfScheduler.MonthViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}

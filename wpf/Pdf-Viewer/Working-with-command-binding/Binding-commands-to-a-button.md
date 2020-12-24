@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding PDF Viewer commands to button 
 
-## Magnification operations:
+## Magnification operations
 
 The PdfViewerControl provides the following set of commands to perform magnification.
 
@@ -181,7 +181,7 @@ N>
 *	If the AnnotationCommandParameter value of AnnotationCommand is not equivalent to above mentioned any one of the text, then the annotation mode is set as none. 
 *	The AnnotationCommandParameter is not a case sensitive.
 
-### Line Annotation:
+### Line Annotation
 
 The following XAML code shows how to bind the annotation command for line annotation to a Button.
 
@@ -195,7 +195,7 @@ The following XAML code shows how to bind the annotation command for line annota
 {% endhighlight %}
 {% endtabs %}
 
-### Circle Annotation:
+### Circle Annotation
 
 The following XAML code shows how to bind the annotation command for circle annotation to a Button.
 
@@ -209,7 +209,7 @@ The following XAML code shows how to bind the annotation command for circle anno
 {% endhighlight %}
 {% endtabs %}
 
-### Rectangle Annotation:
+### Rectangle Annotation
 
 The following XAML code shows how to bind the annotation command for rectangle annotation to a Button.
 
@@ -223,7 +223,7 @@ The following XAML code shows how to bind the annotation command for rectangle a
 {% endhighlight %}
 {% endtabs %}
 
-### Ink Annotation:
+### Ink Annotation
 
 The following XAML code shows how to bind the annotation command for ink annotation to a Button.
 
@@ -237,7 +237,7 @@ The following XAML code shows how to bind the annotation command for ink annotat
 {% endhighlight %}
 {% endtabs %}
 
-### Strikethrough Annotation:
+### Strikethrough Annotation
 
 The following XAML code shows how to bind the annotation command for strikethrough annotation to a Button.
 
@@ -250,7 +250,7 @@ The following XAML code shows how to bind the annotation command for strikethrou
 {% endhighlight %}
 {% endtabs %}
 
-### Highlight Annotation:
+### Highlight Annotation
 
 The following XAML code shows how to bind the annotation command for highlight annotation to a Button.
 
@@ -263,7 +263,7 @@ The following XAML code shows how to bind the annotation command for highlight a
 {% endhighlight %}
 {% endtabs %}
 
-### Underline Annotation:
+### Underline Annotation
 
 The following XAML code shows how to bind the annotation command for underline annotation to a Button.
 
@@ -273,6 +273,18 @@ The following XAML code shows how to bind the annotation command for underline a
 	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
 	
     <Button Content="Underline" Height="20" Width="60" CommandParameter="Underline" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
+{% endhighlight %}
+{% endtabs %}
+
+## Save Document Command
+
+You can save the PDF file in the given file path using the `SaveDocumentCommand`. The following code shows how to save the PDF file by executing the command and to the pass the file path as command parameter.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.SaveDocumentCommand.Execute(@"C:\temp\Output.pdf");
+
 {% endhighlight %}
 {% endtabs %}
 
