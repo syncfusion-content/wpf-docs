@@ -9,7 +9,7 @@ documentation: ug
 
 # Alignment and positioning of WPF Badge (SfBadge)
 
-This section explains the alignment and positioning functionalities available in the WPF [Badge]() control.
+This section explains the alignment and positioning functionalities available in the WPF [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control.
 
 ## Alignment of Badge
 
@@ -74,12 +74,12 @@ table, td, th {
 <Button Width="100"
         Height="50" 
         Content="Inbox">
-    <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Content="99+"
-                            x:Name="badge"/>
-    </syncfusion:SfBadge.Badge>
+    <notification:SfBadge.Badge>
+        <notification:SfBadge HorizontalAlignment="Left"
+                              VerticalAlignment="Center"
+                              Content="99+"
+                              x:Name="badge"/>
+    </notification:SfBadge.Badge>
 </Button>
 
 {% endhighlight %}
@@ -94,11 +94,11 @@ badge.Content = "99+";
 
 ![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
 ## Positioning of Badge
 
-You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor]() and [VerticalAnchor]() properties. It will be placed based on the value of `HorizontalAlignment` and `VerticalAlignment` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
+You can change the horizontal or vertical position of the `Badge` either inside, outside or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchor) properties. It will be placed based on the value of `HorizontalAlignment` and `VerticalAlignment` properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
 For example, you will change the `HorizontalAnchor` and `VerticalAnchor` property values on when the value of `HorizontalAlignment` properties is `Right` and `VerticalAlignment` property is `Top`. `Badge` will be positioned as follows,
 
@@ -149,12 +149,12 @@ table, td, th {
 <Button Width="100"
         Height="50" 
         Content="Inbox">
-    <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge HorizontalAnchor="Outside"
-                            VerticalAnchor="Center"
+    <notification:SfBadge.Badge>
+        <notification:SfBadge HorizontalAnchor="Outside"
+                              VerticalAnchor="Center"
                             Content="10"
                             x:Name="badge"/>
-    </syncfusion:SfBadge.Badge>
+    </notification:SfBadge.Badge>
 </Button>
 
 {% endhighlight %}
@@ -169,11 +169,11 @@ badge.Content = "10";
 
 ![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
 ## Place the Badge any where on the container
 
-If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition]() or [VerticalPosition]() properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
+If you want to place the `Badge` anywhere on any shaped container, use the [HorizontalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to`1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
 For example, if you use any circular containers, you can easily place the `Badge` anywhere by using the `HorizontalPosition` and `VerticalPosition` properties.
 
@@ -183,18 +183,18 @@ For example, if you use any circular containers, you can easily place the `Badge
 <Image Source="/Images/avatar.png"
        Width="100"
        Height="100" >
-    <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge Shape="None"
-                            HorizontalPosition="0.9"
-                            VerticalPosition="0.8"
-                            x:Name="badge">
-            <syncfusion:SfBadge.Content>
+    <notification:SfBadge.Badge>
+        <notification:SfBadge Shape="None"
+                              HorizontalPosition="0.9"
+                              VerticalPosition="0.8"
+                              x:Name="badge">
+            <notification:SfBadge.Content>
                 <Ellipse Width="20"
                          Height="20"
                          Fill="LimeGreen"/>
-            </syncfusion:SfBadge.Content>
-        </syncfusion:SfBadge>
-    </syncfusion:SfBadge.Badge>
+            </notification:SfBadge.Content>
+        </notification:SfBadge>
+    </notification:SfBadge.Badge>
 </Image>
 
 
@@ -209,9 +209,11 @@ badge.VerticalPosition = 0.8;
 
 ![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
+
 ## Custom alignment and positioning of Badge
 
-You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition]() & [VerticalAnchorPosition]() properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+You can customize the horizontal or vertical position of the `Badge` either inside, outside or in the middle with any point by using the `HorizontalPosition` & `VerticalPosition` properties and [HorizontalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_HorizontalAnchorPosition) & [VerticalAnchorPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_VerticalAnchorPosition) properties. This will effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`.  The value range for `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
 
 <style>
 table, td, th { 
@@ -265,14 +267,14 @@ VerticalAnchorPosition</th>
 <Button Width="100"
         Height="50" 
         Content="Inbox">
-    <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge HorizontalAnchor="Custom"
-                            VerticalAnchor="Custom"
-                            HorizontalAnchorPosition="0.2"
-                            VerticalAnchorPosition="0.4"
-                            Content="99+"
-                            x:Name="badge2"/>
-    </syncfusion:SfBadge.Badge>
+    <notification:SfBadge.Badge>
+        <notification:SfBadge HorizontalAnchor="Custom"
+                              VerticalAnchor="Custom"
+                              HorizontalAnchorPosition="0.2"
+                              VerticalAnchorPosition="0.4"
+                              Content="99+"
+                              x:Name="badge2"/>
+    </notification:SfBadge.Badge>
 </Button>
 
 {% endhighlight %}
@@ -289,6 +291,8 @@ badge.Content = "99+";
 
 ![Custom position of the Badge control is changed](Getting-Started_images/Custom_Anchor.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
+
 ## Badge content alignment
 
 you can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
@@ -299,12 +303,12 @@ you can place the `Badge` content either horizontally or vertically by using the
 <Button Width="100"
         Height="50" 
         Content="Inbox">
-    <syncfusion:SfBadge.Badge>
-        <syncfusion:SfBadge HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center"
-                            Content="10"
-                            x:Name="badge"/>
-    </syncfusion:SfBadge.Badge>
+    <notification:SfBadge.Badge>
+        <notification:SfBadge HorizontalContentAlignment="Right"
+                              VerticalContentAlignment="Center"
+                              Content="10"
+                              x:Name="badge"/>
+    </notification:SfBadge.Badge>
 </Button>
 
 {% endhighlight %}
@@ -319,4 +323,4 @@ badge.Content = "99+";
 
 ![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
 
-N> Download demo application from [GitHub]()
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
