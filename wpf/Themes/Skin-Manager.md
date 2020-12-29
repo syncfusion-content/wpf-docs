@@ -231,7 +231,7 @@ Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016DarkGray.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019DarkGray</td></tr>
 <tr>
 <td>
 VisualStudio2015</td><td>
