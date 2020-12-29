@@ -203,8 +203,8 @@ The maps control provides options to design your own template for tooltip using 
 
 {% highlight xaml %}
 
-          <maps:SfMap x:Name="map">
-            <maps:SfMap.Layers>               
+       <maps:SfMap x:Name="map">
+            <maps:SfMap.Layers>
                 <maps:ShapeFileLayer Uri="MapsZoom.ShapeFiles.usa_state.shp" ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME" EnableSelection="False" LabelPath="State">
                     <maps:ShapeFileLayer.ItemsTemplate>
                         <DataTemplate>
@@ -231,7 +231,7 @@ The maps control provides options to design your own template for tooltip using 
                         </maps:BubbleMarkerSetting>
                     </maps:ShapeFileLayer.BubbleMarkerSetting>
                 </maps:ShapeFileLayer>
-			</maps:SfMap.Layers>
+            </maps:SfMap.Layers>
         </maps:SfMap>
 
 {% endhighlight %}
@@ -308,31 +308,31 @@ The maps control provides options to design your own template for tooltip using 
 
 {% highlight xaml %}
 
-          <maps:SfMap>
-            <maps:SfMap.Layers>
-                <maps:ShapeFileLayer Uri="MapsZoom.ShapeFiles.usa_state.shp" ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME" EnableSelection="False" LabelPath="State">
-                   <maps:ShapeFileLayer.ItemsTemplate>
-                        <DataTemplate>
-                            <Border >
-                                <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#FF333333"  Text=""/>
-                            </Border>
-                        </DataTemplate>
-                    </maps:ShapeFileLayer.ItemsTemplate>
-                    <maps:ShapeFileLayer.MarkerToolTipSettings>
-                        <maps:ToolTipSetting  ValuePath="Name"></maps:ToolTipSetting>
-                    </maps:ShapeFileLayer.MarkerToolTipSettings>
-                     <maps:ShapeFileLayer.MarkerTemplate>
-                        <DataTemplate>
-                            <Grid Margin="-12,-30,0,0">
-                                <Canvas>
-                                    <Image Source="pin.png" Height="30"/>
-                                </Canvas>
-                            </Grid>
-                        </DataTemplate>
-                    </maps:ShapeFileLayer.MarkerTemplate>
-                </maps:ShapeFileLayer>
-            </maps:SfMap.Layers>
-        </maps:SfMap>
+    <maps:SfMap>
+        <maps:SfMap.Layers>
+            <maps:ShapeFileLayer Uri="MapsZoom.ShapeFiles.usa_state.shp" Markers="{Binding Models}" >
+                <maps:ShapeFileLayer.ItemsTemplate>
+                    <DataTemplate>
+                        <Border >
+                            <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#FF333333"  Text=""/>
+                        </Border>
+                    </DataTemplate>
+                </maps:ShapeFileLayer.ItemsTemplate>
+                <maps:ShapeFileLayer.MarkerToolTipSettings>
+                    <maps:ToolTipSetting  ValuePath="Name"></maps:ToolTipSetting>
+                </maps:ShapeFileLayer.MarkerToolTipSettings>
+                <maps:ShapeFileLayer.MarkerTemplate>
+                    <DataTemplate>
+                        <Grid Margin="-12,-30,0,0">
+                            <Canvas>
+                                <Image Source="pin.png" Height="30"/>
+                            </Canvas>
+                        </Grid>
+                    </DataTemplate>
+                </maps:ShapeFileLayer.MarkerTemplate>
+            </maps:ShapeFileLayer>
+        </maps:SfMap.Layers>
+    </maps:SfMap>
 
 {% endhighlight %}
 
