@@ -156,18 +156,21 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 {% highlight xaml %}
 
-     <syncfusion:SfMap>
+    <syncfusion:SfMap>
         <syncfusion:SfMap.Layers>
             <syncfusion:ShapeFileLayer 
-                    LegendType="Bubbles" LegendHeader="Legend Header"
-                    LegendColumnSplit="1" LegendPositionX="5"
-                    LegendPositionY="100" LegendVisibility="Visible"
+                    LegendType="Bubbles" LegendHeader="LegendHeader"
+                    LegendColumnSplit="2" LegendPositionX="10"
+                    LegendPositionY="300" LegendVisibility="Visible"
                     LegendIcon="Rectangle" ItemsSource="{Binding Countries}" ShapeIDPath="Name"  
                     ShapeIDTableField="NAME" Uri="DataMarkers.ShapeFiles.world1.shp">
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeValuePath="Population"/>
+                </syncfusion:ShapeFileLayer.ShapeSettings>
                 <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
                     <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="50" 
-                                                        MinSize="20" StrokeThickness="0" 
-                                                ColorValuePath="Population"  ValuePath="Population">
+                                                    MinSize="20" StrokeThickness="0" 
+                                                    ColorValuePath="Population" ValuePath="Population">
                         <syncfusion:BubbleMarkerSetting.ColorMappings>
                             <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
                             <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
@@ -175,15 +178,9 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
                             <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
                             <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
                             <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
-                          
                         </syncfusion:BubbleMarkerSetting.ColorMappings>
                     </syncfusion:BubbleMarkerSetting>
                 </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
-                <syncfusion:ShapeFileLayer.ItemsTemplate>
-                    <DataTemplate>
-                            <TextBlock Text=""/>
-                    </DataTemplate>
-                </syncfusion:ShapeFileLayer.ItemsTemplate>
             </syncfusion:ShapeFileLayer>
         </syncfusion:SfMap.Layers>
     </syncfusion:SfMap>
