@@ -9,15 +9,12 @@ documentation: ug
 
 # Themes in WPF Button (ButtonAdv)
 
-Button supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio).
-
-## Applying themes using SkinManager
-
-Button control themes can be customized using SkinManager. Refer the documentation [link](https://help.syncfusion.com/wpf/themes/getting-started) for more information.
-
-![Theme](Theme-Support_images/Theme-Support_img1.png)
+Button supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) and `ThemeStudio`.
 
 
-## Applying themes using Theme Studio
+  * [Apply built-in themes using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Customize button theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
 
-Button control themes can be customized using theme studio. Refer the documentation [link](https://help.syncfusion.com/wpf/themes/theme-studio) for more information.
+  ![Theme](Theme-Support_images/Theme-Support_img1.png)
