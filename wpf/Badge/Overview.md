@@ -7,9 +7,9 @@ control: SfBadge
 documentation: ug
 ---
 
-# WPF Badge control Overview
+# WPF Badge (SfBadge) control Overview
 
-[Badge]() control used to notify users of new or unread messages, notifications, or the status of something. 
+[Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control used to notify users of new or unread messages, notifications, or the status of something. 
 
 ## Badge control
 

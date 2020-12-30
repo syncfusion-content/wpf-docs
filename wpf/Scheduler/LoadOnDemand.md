@@ -28,13 +28,28 @@ Scheduler.QueryAppointments += Scheduler_QueryAppointments;
 private void Scheduler_QueryAppointments(object sender, QueryAppointmentsEventArgs e)
 {
  Scheduler.ShowBusyIndicator = true;
- Scheduler.ItemsSource = this.GetAppointments(e.VisibleDateRange);
+ Scheduler.ItemsSource = this.GenerateSchedulerAppointments(e.VisibleDateRange);
  Scheduler.ShowBusyIndicator = false;
 }
 
-private IEnumerable GetAppointments(DateRange dateRange)
- {
-  // Add codes to generate appointments from the date range.
+private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
+{
+  Random ran = new Random();
+  int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
+  var appointments = new ObservableCollection<SchedulerModel>();
+      
+  for (int i = 0; i < 50; i++)
+  {
+    var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));
+    appointments.Add(new SchedulerModel
+    {
+    From = startTime,
+    To = startTime.AddHours(1),
+    EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
+    Color = brush[ran.Next(0, brush.Count)],
+    });
+  }
+  return appointments;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +82,7 @@ You can define a ViewModel class that implements command and handle it by the Ca
 {% endhighlight %}
 {% highlight c#%}
 
-public class LoadOnDemandViewModel : INotifyPropertyChanged
+public class LoadOnDemandViewModel : NotificationObject
   {
     public ICommand LoadOnDemandCommand { get; set; }
     private IEnumerable events;
@@ -80,6 +95,7 @@ public class LoadOnDemandViewModel : INotifyPropertyChanged
             this.RaisePropertyChanged("Events");
           }
       }
+
     private bool showBusyIndicator;
     public bool ShowBusyIndicator
     {
@@ -89,16 +105,6 @@ public class LoadOnDemandViewModel : INotifyPropertyChanged
             showBusyIndicator = value;
             this.RaisePropertyChanged("ShowBusyIndicator");
           }
-    }
-    
-    public ObservableCollection<SchedulerResource> ResourceCollection
-    {
-      get { return resourceCollection; }
-      set
-        {
-         resourceCollection = value;
-         this.RaisePropertyChanged("ResourceCollection");
-        }
     }
     public SchedulerViewModel()
     {
@@ -112,7 +118,7 @@ public class LoadOnDemandViewModel : INotifyPropertyChanged
       await Task.Delay(1000);
       await Application.Current.MainWindow.Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new Action(() =>
             {
-                this.Events = this.GetAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
+                this.Events = this.GenerateSchedulerAppointments((parameter as QueryAppointmentsEventArgs).VisibleDateRange);
             }));
       this.ShowBusyIndicator = false;
     }
@@ -122,15 +128,23 @@ public class LoadOnDemandViewModel : INotifyPropertyChanged
       return true;
     }
 
-    private IEnumerable GetAppointments(DateRange dateRange)
+    private IEnumerable GenerateSchedulerAppointments(DateRange dateRange)
     {
-      // Add Codes to generate appointments
+      Random ran = new Random();
+      int daysCount = (dateRange.ActualEndDate - dateRange.ActualStartDate).Days;
+      var appointments = new ObservableCollection<SchedulerModel>();
+      for (int i = 0; i < 50; i++)
+      {
+        var startTime = dateRange.ActualStartDate.AddDays(ran.Next(0, daysCount + 1)).AddHours(ran.Next(0, 24));appointments.Add(new SchedulerModel
+        {
+          From = startTime,
+          To = startTime.AddHours(1),
+          EventName = subjectCollection[ran.Next(0, subjectCollection.Count)],
+          Color = brush[ran.Next(0, brush.Count)],
+        });
+      }
+      return appointments;
     }
-
-    private void RaisePropertyChanged(string propertyName)
-    {
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    } 
   }
 {% endhighlight %}
 {% endtabs %}

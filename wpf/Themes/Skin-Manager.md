@@ -119,7 +119,7 @@ Syncfusion.Themes.Metro.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Metro.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Metro.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Lime</td><td>
@@ -127,7 +127,7 @@ Syncfusion.Themes.Lime.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Lime.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Lime.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Saffron</td><td>
@@ -135,7 +135,7 @@ Syncfusion.Themes.Saffron.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Saffron.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Saffron.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Blend</td><td>
@@ -151,7 +151,7 @@ Syncfusion.Themes.Office2013White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013White.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-Office2019Colorful</td></tr>
+Office2019White</td></tr>
 <tr>
 <td>
 Office2013LightGray</td><td>
@@ -159,7 +159,7 @@ Syncfusion.Themes.Office2013LightGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013LightGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013LightGray.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019Colorful</td></tr>
 <tr>
 <td>
 Office2013DarkGray</td><td>
@@ -167,7 +167,7 @@ Syncfusion.Themes.Office2013DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013DarkGray.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019DarkGray</td></tr>
 <tr>
 <td>
 VisualStudio2013</td><td>
@@ -223,7 +223,7 @@ Syncfusion.Themes.Office2016White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016White.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-Office2019Colorful</td></tr>
+Office2019White</td></tr>
 <tr>
 <td>
 Office2016DarkGray</td><td>
@@ -231,7 +231,7 @@ Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016DarkGray.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
--</td></tr>
+Office2019DarkGray</td></tr>
 <tr>
 <td>
 VisualStudio2015</td><td>
@@ -509,24 +509,12 @@ To apply custom theme in application, export custom theme project from ThemeStud
 
 For demonstration purpose, we have used exported theme name as `MaterialDarkYellow` and exported theme assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
 
-Now, register the instance of generated MaterialDarkYellow (`Syncfusion.Themes.MaterialDarkYellow.WPF`) assembly from exported theme project using [RegisterTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterTheme_System_String_Syncfusion_SfSkinManager_SkinHelper_) method and pass the exported custom theme name and respective theme assembly instance as parameters.
-
-Then, set the `SfSkinManager` attached property `Theme` as `MaterialDarkYellow;MaterialDark` for the control used in application. Since custom theme name should be updated in this format: `CustomTheme1;BaseThemeName` where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example `MaterialDarkYellow;MaterialDark`.
+Now, set the `SfSkinManager` attached property `Theme` as `MaterialDarkYellow;MaterialDark` for the control used in application. Since custom theme name should be updated in this format: `CustomTheme1;BaseThemeName` where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example `MaterialDarkYellow;MaterialDark`.
 
 {% tabs %}
 
 {% highlight C# %}
 
-string style = "MaterialDarkYellow";
-SkinHelper styleInstance = null;
-var skinHelpterStr = "Syncfusion.Themes." + style + ".WPF." + style + "SkinHelper, Syncfusion.Themes." + style + ".WPF";
-Type skinHelpterType = Type.GetType(skinHelpterStr);
-if (skinHelpterType != null)
-    styleInstance = Activator.CreateInstance(skinHelpterType) as SkinHelper;
-if (styleInstance != null)
-{
-    SfSkinManager.RegisterTheme("MaterialDarkYellow", styleInstance);
-}
 SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
 
 {% endhighlight %}
