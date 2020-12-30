@@ -1306,9 +1306,13 @@ When your application already having SfDiagram and you need the enhanced ribbon 
 <tr>
 <td> 
 Syncfusion.SfDiagramRibbon.WPF
+<br/>
 Syncfusion.Compression.Base
+<br/>
 Syncfusion.Pdf.Base
+<br/>
 Syncfusion.Shared.WPF
+<br/>
 Syncfusion.Tools.WPF
 </td>
 <td> 
