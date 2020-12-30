@@ -16,6 +16,13 @@ Spacing commands are used to place selected objects on the page at equal interva
 The [SpaceAcross](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SpaceAcross) command is used to place selected objects on the page at equal intervals from each other horizontally.
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="SpaceAcross" Name="SpaceAcross" Command="Syncfusion:DiagramCommands.SpaceAcross"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -33,6 +40,13 @@ graphinfo.Commands.SpaceAcross.Execute(null);
 The [SpaceDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SpaceDown) command is used to place selected objects on the page at equal intervals from each other vertically.
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="SpaceDown" Name="SpaceDown" Command="Syncfusion:DiagramCommands.SpaceDown"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

@@ -16,6 +16,13 @@ Z – Order commands are used to visually arrange the selected objects such as N
 The [BringToFront](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringToFront) command is used to visually brings the selected element to the front over all other overlapped elements. 
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="BringToFront" Name="BringToFront" Command="Syncfusion:DiagramCommands.BringToFront"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -31,6 +38,13 @@ graphinfo.Commands.BringToFront.Execute(null);
 The [SendToBack](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendToBack) command visually moves the selected elements behind all the other overlapped elements. 
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="SendToBack" Name="SendToBack" Command="Syncfusion:DiagramCommands.SendToBack"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -48,6 +62,13 @@ graphinfo.Commands.SendToBack.Execute(null);
 The [SendBackward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_SendBackward) command visually moves the selected elements behind the underlying element.
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="SendBackward" Name="SendBackward" Command="Syncfusion:DiagramCommands.SendBackward"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -63,6 +84,13 @@ graphinfo.Commands.SendBackward.Execute(null);
 The [BringForward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_BringForward) command visually moves the selected element over the nearest overlapping element.
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="BringForward" Name="BringForward" Command="Syncfusion:DiagramCommands.BringForward"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;

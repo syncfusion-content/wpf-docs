@@ -101,21 +101,25 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="TextNode">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
-diagram.DrawingTool = DrawingTool.Node;
+diagram.DrawingTool = DrawingTool.TextNode;
 diagram.Tool = Tool.ContinuesDraw;
-
-private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
-{
-	args.DrawItem = new TextBlock()
-	{
-		Text="text",
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center
-	};
-}
 
 {% endhighlight %}
 {% endtabs %}
