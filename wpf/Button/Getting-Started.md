@@ -515,7 +515,7 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 
 {% endtabs %}
 
-## Setting Theme
+## Theme
 
 Button supports various built-in themes. Refer to the below links to apply themes for the Button,
 

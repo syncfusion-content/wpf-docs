@@ -113,6 +113,14 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 
 ![ImageEditor](Images/ImageEditor.png)   
 
+## Theme
+
+ Image editor control supports various built-in themes. Refer to the below links to apply themes for the  Image editor control,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
 ## See also
 
 [How to retrieve a edited image as a stream in an image editor](https://www.syncfusion.com/kb/11214/how-to-retrieve-a-edited-image-as-a-stream-in-an-image-editor)

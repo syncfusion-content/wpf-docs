@@ -11,36 +11,13 @@ documentation: ug
 
 Styling can be applied to the CardView control and its items. 
 
-## Visual Styles
+## Theme
 
-The CardView control has the following built-in styles:
+CardView supports various built-in themes. Refer to the below links to apply themes for the CardView,
 
-1. Office2007Blue
-2. Office2007Black
-3. Office2007Silver
-4. Office2010Blue
-5. Office2010Black
-6. Office2010Silver
-7. Blend
-8. Metro
-9. Transparent
-
-
-These visual styles can be applied to the CardView control through XAML. The following example illustrates how to apply Office2007Blue style to the CardView control.
-
-{% highlight xaml %}
-
-<syncfusion:CardView syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>  
-
-{% endhighlight %}
-
-These styles can also be applied to the CardView control through C#. The following code example illustrates this.
-
-{% highlight C# %}
-
-SkinStorage.SetVisualStyle(cardViewInstance, "Office2010Blue");
-
-{% endhighlight %}
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ## ItemContainerStyle
 

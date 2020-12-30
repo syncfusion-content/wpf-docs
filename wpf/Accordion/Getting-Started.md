@@ -267,3 +267,11 @@ You can set content to SfAccordionItem using the [Content](https://docs.microsof
 {% endtabs %}
 
 ![wpf accordion item content](Getting-Started_images/wpf-accordion-item-content.png)
+
+## Theme
+
+SfAccordion supports various built-in themes. Refer to the below links to apply themes for the SfAccordion,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

@@ -466,6 +466,14 @@ The following screenshot illustrates the result of the previous codes.
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).
 
+## Theme
+
+SfCircularGauge supports various built-in themes. Refer to the below links to apply themes for the SfCircularGauge,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
 ## See also
 
 [How to apply themes for SfCircularGauge](https://www.syncfusion.com/kb/2514/how-to-apply-themes-for-sfcirculargauge)

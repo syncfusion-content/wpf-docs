@@ -79,57 +79,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-You can customize the appearance of the `SfRadialSlider` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `SfRadialSlider` control.
+SfRadialSlider supports various built-in themes. Refer to the below links to apply themes for the SfRadialSlider,
 
-* Blend
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* VisualStudio2013
-* VisualStudio2015
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:SfRadialSlider syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                   Name="radialSlider" />
-    </Grid>
-</Window>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-SfRadialSlider radialSlider = new SfRadialSlider();
-SfSkinManager.SetVisualStyle(radialSlider, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ![SfRadialSlider with Blend visual style](Appearance_images/blend.png)
-
-Here, the `Blend` style is applied to the `SfRadialSlider`.
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Themes)

@@ -482,3 +482,11 @@ You can customize the header and content of `TileViewItem` appearance by using t
 ![Custom UI of the TileViewItems](Getting-Started_images/TileViewItem_UI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
+
+## Theme
+
+TileViewControl supports various built-in themes. Refer to the below links to apply themes for the TileViewControl,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

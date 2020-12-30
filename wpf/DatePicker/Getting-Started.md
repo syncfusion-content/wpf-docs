@@ -223,3 +223,11 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Ok` and `Cancel` button text in `SfDatePicker` control by adding resource file for each language.
 
 N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `SfDatePicker`.
+
+## Theme
+
+SfDatePicker supports various built-in themes. Refer to the below links to apply themes for the SfDatePicker,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

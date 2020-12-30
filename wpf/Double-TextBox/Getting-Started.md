@@ -297,3 +297,11 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 ![Setting DoubleTextBox Culture](Getting-Started_images/Getting-Started_img4.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
+
+## Theme
+
+DoubleTextBox supports various built-in themes. Refer to the below links to apply themes for the DoubleTextBox,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

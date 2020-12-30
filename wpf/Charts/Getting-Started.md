@@ -716,4 +716,10 @@ You can find the complete getting started sample from this [link](https://www.sy
 
 [`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
 
+## Theme
 
+SfChart supports various built-in themes. Refer to the below links to apply themes for the SfChart,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

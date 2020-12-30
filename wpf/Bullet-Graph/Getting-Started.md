@@ -261,4 +261,10 @@ SfBulletGraph ranges are displayed as follows.
 
 ![](Getting-Started_images/Getting-Started_img10.jpg)
 
+## Theme
 
+bullet graph supports various built-in themes. Refer to the below links to apply themes for the bullet graph,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

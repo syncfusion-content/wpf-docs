@@ -287,3 +287,11 @@ groupBar.VisualMode = Syncfusion.Windows.Tools.VisualMode.MultipleExpansion;
 {% endtabs %}
 
 ![wpf group bar items expanded](Getting-Started_images/wpf-group-bar-item-expansion.png)
+
+## Theme
+
+GroupBar supports various built-in themes. Refer to the below links to apply themes for the GroupBar,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

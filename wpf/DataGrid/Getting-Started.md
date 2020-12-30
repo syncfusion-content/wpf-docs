@@ -592,7 +592,7 @@ Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 You can customize the editing operations by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
 
-## Setting Theme
+## Theme
 
 SfDataGrid supports various built-in themes. Refer to the below links to apply themes for the SfDataGrid,
 

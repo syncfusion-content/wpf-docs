@@ -207,3 +207,11 @@ updown.Culture = cultureInfo;
 {% endtabs %}
 
 ![Applied latin culture into WPF UpDown](GettingStarted-images/wpf-updown-culture.png)
+
+## Theme
+
+UpDown supports various built-in themes. Refer to the below links to apply themes for the UpDown,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

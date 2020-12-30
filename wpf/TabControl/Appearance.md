@@ -38,59 +38,10 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Theme
 
-You can customize the appearance of the `TabControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TabControl` control.
+TabControl supports various built-in themes. Refer to the below links to apply themes for the TabControl,
 
-* Blend
-* Default
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* SystemTheme
-* VisualStudio2013
-* VisualStudio2015
-
-Here, the `Blend` style is applied to the `TabControl`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                  Name="tabControlExt"/>
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-TabControlExt tabControlExt = new TabControlExt();
-SfSkinManager.SetVisualStyle(tabControlExt, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ![TabControl with Blend visual style](Tab-Item-Header_images/BlendTheme.png)
-
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Themes) in GitHub

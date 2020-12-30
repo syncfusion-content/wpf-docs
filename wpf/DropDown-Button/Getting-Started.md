@@ -604,3 +604,11 @@ public class CountryViewModel
 ![Drop-Down-item](Getting-Started_images/Getting-Started_img11.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Add-Menu-Items) in GitHub.
+
+## Theme
+
+Dropdown Button supports various built-in themes. Refer to the below links to apply themes for the Dropdown Button,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

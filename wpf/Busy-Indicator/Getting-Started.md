@@ -41,3 +41,11 @@ SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Getting-Started) in GitHub
+
+## Theme
+
+SfBusyIndicator supports various built-in themes. Refer to the below links to apply themes for the SfBusyIndicator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

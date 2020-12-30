@@ -98,3 +98,10 @@ Run the project, and check if you get following output to make sure that the pro
 
 ![Adding hint](Images/hintlabel.gif)
 
+## Theme
+
+SfTextInputLayout supports various built-in themes. Refer to the below links to apply themes for the SfTextInputLayout,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

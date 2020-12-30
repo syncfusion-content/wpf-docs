@@ -319,3 +319,11 @@ The following screenshot illustrates the result of the above code sample.
 ![Content for WPF SfDateTimeRangNavigator](Getting-Started_images/Getting-Started_img3.png)
 
 N> The [`SelectedData`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_SelectedData) property of the date-time range navigator control returns the collection that represents the data between the selected ranges.
+
+## Theme
+
+SfDateTimeRangeNavigator supports various built-in themes. Refer to the below links to apply themes for the SfDateTimeRangeNavigator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

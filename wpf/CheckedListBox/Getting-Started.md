@@ -282,3 +282,11 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 ![CheckListBox with checked items count](Getting-Started_images/CheckItems_Count.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started)
+
+## Theme
+
+CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

@@ -511,3 +511,11 @@ Following is the final output screenshot,
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
 
 You can find the complete getting started sample from this [`link.`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started2023483097)
+
+## Theme
+
+Sunburst chart supports various built-in themes. Refer to the below links to apply themes for the Sunburst chart,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

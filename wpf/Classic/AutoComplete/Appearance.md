@@ -9,35 +9,14 @@ documentation: ug
 
 # Appearance of WPF AutoComplete
 
-The Appearance of the AutoComplete control can be changed using the VisualStyle property. The following styles are supported by AutoComplete control.
+## Theme
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent 
+AutoComplete supports various built-in themes. Refer to the below links to apply themes for the AutoComplete,
 
-The following code example illustrates how different visual styles can be applied to the control.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:AutoComplete Height="25" Width="200" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");
-
-{% endhighlight %}
-{% endtabs %}
 
 ![Set Windows theme to WPF AutoComplete](Appearance_images/Appearance_img1.png)
 

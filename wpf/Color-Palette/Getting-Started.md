@@ -196,3 +196,11 @@ You can navigate and select a different colors from the different swatches by cl
 ![Navigate and changes the color swatches in ColorPalette](Getting-Started_images/Navigate_swatches.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding).
+
+## Theme
+
+ColorPalette supports various built-in themes. Refer to the below links to apply themes for the ColorPalette,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

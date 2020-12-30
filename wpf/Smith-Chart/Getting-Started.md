@@ -591,5 +591,11 @@ The following output is displayed as the result of above code example.
 
 ![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
+## Theme
 
+Smith chart supports various built-in themes. Refer to the below links to apply themes for the Smith chart,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 

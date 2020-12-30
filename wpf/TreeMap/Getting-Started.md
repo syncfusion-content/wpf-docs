@@ -217,6 +217,14 @@ this.TreeMap.DataContext = new PopulationViewModel();
 
 ![SfTreeMap_images](Getting-Started_images/Getting-Started_img3.png)
 
+## Theme
+
+TreeMaps supports various built-in themes. Refer to the below links to apply themes for the TreeMaps,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
 ## see also
 
 [How to apply gradient color mapping to SfTreeMap](https://www.syncfusion.com/kb/9802/how-to-apply-gradientcolormapping-to-sftreemap)

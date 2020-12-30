@@ -506,3 +506,11 @@ private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e)
 ![Block particular dates in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/BlackOutDays.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/BlackOutdates).
+
+## Theme
+
+DateTimeEdit supports various built-in themes. Refer to the below links to apply themes for the DateTimeEdit,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

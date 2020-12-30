@@ -117,43 +117,14 @@ updown.FocusedBorderBrush = Brushes.Green;
 
 N> The positive, negative and zero value colors get default color of the control while focusing the Updown control.
 
-## Visual styles
+## Theme
 
-The skins can be applied to the UpDown control by setting the `VisualStyle` property defined in SkinStorage class, refer [here](https://help.syncfusion.com/wpf/skinmanager/overview).
+UpDown supports various built-in themes. Refer to the below links to apply themes for the UpDown,
 
-Below example explains how to apply the `Blend` theme or style for `UpDown` control.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-1) Add the following reference **Syncfusion.Shared.WPF.dll**.
-
-2) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or add namespace **Syncfusion.Windows.Shared** and set `SkinStorage.VisualStyle` attached property to window or UpDown.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="Application_New.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:shared="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Shared.Wpf"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-syncfusion:SkinStorage.VisualStyle="Blend"
-Title="MainWindow" Height="350" Width="525">
-
-<Grid x:Name="grid">
-    <syncfusion:UpDown x:Name="upDown" Width="100" Height="23"/>
-</Grid>
-
-</Window>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SkinStorage.SetVisualStyle(updown, "Blend");
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ![Applied Blend style into WPF UpDown](StylesandTemplates-images/wpf-updown-blendstyle.jpeg)
 

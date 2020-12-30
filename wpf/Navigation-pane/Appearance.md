@@ -185,51 +185,14 @@ groupBar.VisualMode = VisualMode.StackMode;
 
 
 
-## Visual Style
+## Theme
 
-The appearance of the GroupBar control can be controlled using the VisualStyle property. VisualStyle is an attached property, which gets or sets the value for visual style. Styling can be applied to both the GroupBar control and its items. Nine built-in styles have been provided. These styles can be implemented at run time based on specified conditions.
+GroupBar supports various built-in themes. Refer to the below links to apply themes for the GroupBar,
 
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Sets the visual style for the GroupBar control. The options provided are as follows.* Office2007Blue* Office2007Black* Office2007Silver* Office2010Blue* Office2010Black* Office2010Silver* Blend* Metro* Transparent<br></td></tr>
-</table>
-
-
-These styles can be applied in XAML as follows. The example below styles the GroupBar control with the Office 2010 Blue theme.
-
-
-
-{% highlight xaml %}
-
-<syncfusion:GroupBar         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
-
-
-{% endhighlight %}
-
-
-Visual styles can be set in C# as follows.
-
-
-
-{% highlight C# %}
-
-SkinStorage.SetVisualStyle(groupBarInstance, "Office2010Blue");
-
-
-{% endhighlight %}
-
-
-
-
-
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
 
 ![](Appearance_images/Appearance_img4.jpeg)
 

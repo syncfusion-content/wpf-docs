@@ -224,3 +224,11 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endtabs %}
 
 ![wpf hierarchy navigator control items added by data binding](Getting-Started_images/wpf-hierarchy-navigator-control-data-binding.png)
+
+## Theme
+
+HierarchyNavigator supports various built-in themes. Refer to the below links to apply themes for the HierarchyNavigator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

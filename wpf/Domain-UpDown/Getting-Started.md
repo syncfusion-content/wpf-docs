@@ -222,3 +222,11 @@ domainUpDown1.SpinButtonsAlignment = Syncfusion.Windows.Controls.SpinButtonsAlig
 3.Both
 
 ![SpinButton aligned both](Getting-Started_images/Spin-Button-Alignment_img5.png)
+
+## Theme
+
+SfDomainUpDown supports various built-in themes. Refer to the below links to apply themes for the SfDomainUpDown,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)

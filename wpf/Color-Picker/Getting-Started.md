@@ -294,3 +294,11 @@ colorPicker.EnableSolidToGradientSwitch = false;
 ![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Over%20all%20features) to download the sample that showcases the `ColorPicker` overall features.
+
+## Theme
+
+ColorPicker supports various built-in themes. Refer to the below links to apply themes for the ColorPicker,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
