@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfTreeNavigator | wpf | Syncfusion
-description: getting started 
+description: This section explain about how to integrate WPF Tree Navigator(SfTreeNavigator) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with WPF Tree Navigator (SfTreeNavigator)
 
 Namespace : Syncfusion.Windows.Controls.Navigation 
 

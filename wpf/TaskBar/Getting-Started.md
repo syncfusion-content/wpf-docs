@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | TaskBar | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF TaskBar into an applicationl and enable its basic features with example.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF TaskBar
 
 This section guides you on getting started with TaskBar control. It covers the following topics:
 

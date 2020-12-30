@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for the SfSmithChart.
-description: Getting start with simple application using SfSmithChart in WPF.
+title: Getting Started | SfSmithChart | WPF | Syncfusion 
+description: This section explain about how to integrate WPF Smith Chart (SfSmithChart) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Smith Chart (SfSmithChart)
 
 This section explains the steps required to build the application with SfSmithChart.
 

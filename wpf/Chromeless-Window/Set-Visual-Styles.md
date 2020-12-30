@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Set Visual Styles
-description: Set Visual Styles
+title: Set Visual Styles in Syncfusion WPF ChromelessWindow| ChromelessWindow | Wpf | Syncfusion
+description: This section explain about how to Set Visual Styles of Syncfusion WPF ChromelessWindow. 
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Set Visual Styles
+# Set Visual Styles in WPF ChromelessWindow
 
 ## Theme
 

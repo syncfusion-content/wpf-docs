@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfDataPagerControl | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF DataPager (SfDataPager) into an applicationl and enable its basic features with example.. 
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF DataPager (SfDataPager)
 
 This section describes about the assembly that is required for SfDataPagerControl in your WPF application.The following assemblies are required in your application.
 

@@ -7,7 +7,7 @@ control: GroupBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Navigation Pane (GroupBar)
 
 ## Assembly deployment
 

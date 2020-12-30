@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF TextInputLayout (SfTextInputLayout)
 
 This section explains the steps needed to configure the control of the text input layout.
 

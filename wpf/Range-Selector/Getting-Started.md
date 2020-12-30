@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF Range Selector (SfDateTimeRangeNavigator) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Range Selector (SfDateTimeRangeNavigator)
 
 ## Visual structure
 

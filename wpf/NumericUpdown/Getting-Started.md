@@ -6,7 +6,7 @@ platform: wpf
 control: UpDown
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF NumericUpdown (UpDown)
 
 This section explains how to create WPF UpDown control and its structure.
 

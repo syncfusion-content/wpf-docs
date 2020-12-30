@@ -7,7 +7,7 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Layout Related Features
+# Layout Related Features in WPF (DocumentContainer)
 
 This section illustrates the following Layout-related feature of Document Container control.
 

@@ -1,12 +1,12 @@
 ---
-title: Getting Started
-description: getting started
+title: Getting Started | SfRichTextBoxAdv | WPF | Syncfusion   
+description: This section explain about how to integrate WWPF RichTextBox (SfRichTextBoxAdv) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: getting started
 ---
-# Getting Started
+# Getting Started with WPF RichTextBox (SfRichTextBoxAdv)
 
 This section describes how to get started with SfRichTextBoxAdv control.
 

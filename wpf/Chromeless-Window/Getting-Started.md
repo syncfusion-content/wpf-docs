@@ -6,7 +6,7 @@ platform: WPF
 control: ChromelessWindow
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF ChromelessWindow
 
 This section explains how to implement the ChromelessWindow control. It describes the following:
 

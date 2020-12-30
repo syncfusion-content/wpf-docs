@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance| GroupBar | Wpf | Syncfusion
-description: appearance
+description: This section explain about how to customize the appearance of Syncfusion WPF GroupBar. 
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF Navigation Pane (GroupBar)
 
 This section deals with the appearance of GroupBar control and contains the following topics:
 

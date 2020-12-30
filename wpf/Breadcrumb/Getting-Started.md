@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started| Hierarchical Navigator | Wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF Breadcrumb (HierarchyNavigator) into an applicationl and enable its basic features with example.. 
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Breadcrumb (HierarchyNavigator)
 
 ## Assembly deployment
 
