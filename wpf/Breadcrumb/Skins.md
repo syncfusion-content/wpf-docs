@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Skins| Hierarchical Navigator | Wpf | Syncfusion
-description: This section explain about how to apply the corresponding theme for Hierarchy Navigator control.
+title: Skins in Syncfusion WPF Hierarchical Navigator | Hierarchical Navigator | Wpf | Syncfusion
+description: This section explain about how to apply the corresponding theme of Syncfusion WPF Hierarchy Navigator control.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
