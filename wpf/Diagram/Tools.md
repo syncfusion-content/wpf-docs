@@ -101,21 +101,24 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="TextNode">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
-(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
-diagram.DrawingTool = DrawingTool.Node;
+diagram.DrawingTool = DrawingTool.TextNode;
 diagram.Tool = Tool.ContinuesDraw;
-
-private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
-{
-	args.DrawItem = new TextBlock()
-	{
-		Text="text",
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center
-	};
-}
 
 {% endhighlight %}
 {% endtabs %}
@@ -161,9 +164,23 @@ Diagram allows you to establish connection with Node/Port as soon as you click o
 
 ### FreeHand drawing
 
-Free hand drwing connections will be drawn by using `DrawingTool` property.
+Free hand connections will be drawn by using `DrawingTool` property.
 
 {% tabs %}
+
+{% highlight %}
+
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="FreeHand">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 // Enable the FreeHand drawing
@@ -175,6 +192,60 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 ![free hand drawing](Tools_images/FreeHand_img1.gif)
 
 [FreeFormEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs.html). 
+
+### Ellipse 
+
+Diagram allows you to create a ellipse shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw an ellipse shaped node.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="Ellipse">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+diagram.DrawingTool = DrawingTool.Ellipse;
+diagram.Tool = Tool.ContinuesDraw;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Rectangle
+
+Diagram allows you to create a rectangle shaped node as soon as you click and drag on the Diagram page. The following code illustrates how to draw a rectangle shaped node.
+
+{% tabs %}
+
+{% highlight %}
+
+<Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="Rectangle">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection />
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection />
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+diagram.DrawingTool = DrawingTool.Rectangle;
+diagram.Tool = Tool.ContinuesDraw;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## How to override the default tool of diagram elements
 

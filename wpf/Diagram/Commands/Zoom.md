@@ -29,6 +29,15 @@ The [ZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 For ZoomIn operation
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ZoomPositionParameter ZoomCommand="ZoomIn" ZoomFactor="0.2" x:Key="ZoomInParameter"/>
+
+<Button Height="50" Content="ZoomIn" Name="ZoomIn" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource ZoomInParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -46,6 +55,15 @@ For ZoomIn operation
 For ZoomOut operation
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ZoomPositionParameter ZoomCommand="ZoomOut" ZoomFactor="0.2" x:Key="ZoomOutParameter"/>
+
+<Button Height="50" Content="ZoomOut" Name="ZoomOut" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource ZoomOutParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -65,6 +83,15 @@ For ZoomOut operation
 For ZoomTo speciffic value
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ZoomPositionParameter ZoomCommand="Zoom" ZoomTo="2" x:Key="ZoomToParameter"/>
+
+<Button Height="50" Content="ZoomTo" Name="ZoomTo" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource ZoomToParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -102,6 +129,15 @@ For Panning
 For HorizontalScroll
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ZoomPositionParameter ZoomCommand="HorizondalScroll" ScrollDelta="5" x:Key="HorizontalScrollParameter"/>
+
+<Button Height="50" Content="HorizontalScroll" Name="HorizontalScroll" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource HorizontalScrollParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -119,6 +155,15 @@ For HorizontalScroll
 For VerticalScroll
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ZoomPositionParameter ZoomCommand="VerticalScroll" ScrollDelta="50"  x:Key="ZoomPositionCommandParameter"/>
+
+<Button Height="50" Content="VerticalScroll" Name="VerticalScroll" Command="Syncfusion:DiagramCommands.Zoom" CommandParameter="{StaticResource ZoomPositionCommandParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = Diagram.Info as IGraphInfo;
@@ -152,6 +197,15 @@ The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ResetP
 
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Syncfusion:ResetParameter Reset="ZoomPan" x:Key="ResetParameterCommandParameter"/>
+
+<Button Height="50" Content="Reset" Name="Reset" Command="Syncfusion:DiagramCommands.Reset" CommandParameter="{StaticResource ResetParameterCommandParameter}"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
