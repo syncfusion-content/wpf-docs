@@ -168,10 +168,10 @@ The maps control provides options to design your own template for tooltip using 
 {% highlight xaml %}
 
       <maps:ShapeFileLayer.ToolTipSettings>
-          <maps:ToolTipSetting ValuePath="Candidate" ShowDuration="3000">
+          <maps:ToolTipSetting ShowDuration="3000">
                <maps:ToolTipSetting.ToolTipTemplate>
                   <DataTemplate>
-                       <TextBlock Foreground="Yellow" Text="{Binding Value}"></TextBlock>
+                       <TextBlock Foreground="Yellow" Text="{Binding Data.Candidate}"></TextBlock>
                   </DataTemplate>
                </maps:ToolTipSetting.ToolTipTemplate>
          </maps:ToolTipSetting>
@@ -183,11 +183,13 @@ The maps control provides options to design your own template for tooltip using 
 
             ToolTipSetting toolTipSetting = new ToolTipSetting();
             toolTipSetting.ShowDuration = 3000;
-            toolTipSetting.ValuePath = "Candidate";
             DataTemplate template = new DataTemplate();
-            TextBlock textBlock = new TextBlock();
-            textBlock.Foreground = new SolidColorBrush(Colors.Red);
-            textBlock.SetBinding(TextBlock.TextProperty, "Candidate");
+            FrameworkElementFactory frameworkElementFactory = new FrameworkElementFactory(typeof(StackPanel));
+            template.VisualTree = frameworkElementFactory;
+            FrameworkElementFactory textBlock = new FrameworkElementFactory(typeof(TextBlock));
+            textBlock.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red));
+            textBlock.SetBinding(TextBlock.TextProperty, new Binding("Data.Candidate"));
+            frameworkElementFactory.AppendChild(textBlock);
             toolTipSetting.ToolTipTemplate = template;
             shapefile.ToolTipSettings = toolTipSetting;
 
