@@ -34,4 +34,4 @@ graphinfo.Commands.Rotate.Execute(new RotateParameter()
 
 ![Gif for Rotate command](Commands_Images/Commands_Rotate.gif)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)

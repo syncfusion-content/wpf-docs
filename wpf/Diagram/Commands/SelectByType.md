@@ -30,4 +30,4 @@ graphinfo.Commands.SelectByType.Execute(typeof(NodeViewModel));
 ![Gif for SelectByType command](Commands_Images/Commands_SelectByType.gif)
 
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Rotate%20Command)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)

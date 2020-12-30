@@ -67,4 +67,4 @@ graphinfo.Commands.SelectTool.Execute(new SelectToolCommandParameter()
 
 ![Gif for SelectTool command](Commands_Images/Commands_SelectTool.gif)
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/SelectToolCommand)
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Commands%20Sample)
