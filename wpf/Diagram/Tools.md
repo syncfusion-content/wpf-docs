@@ -117,7 +117,6 @@ Diagram allows you to create a text Node as soon as you click on the Diagram pag
 
 {% highlight C# %}
 
-(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.TextNode;
 diagram.Tool = Tool.ContinuesDraw;
 
