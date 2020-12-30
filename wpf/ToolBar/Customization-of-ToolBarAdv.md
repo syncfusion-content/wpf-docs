@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | ToolBarAdv | Wpf | Syncfusion
-description: This section explain about how to customize the appearance of Syncfusion WPF ToolBarAdv. 
+description: This section explain about how to customize the appearance and set different themes for Syncfusion WPF ToolBarAdv. 
 platform: wpf
 control: ToolBarAdv
 documentation: ug
