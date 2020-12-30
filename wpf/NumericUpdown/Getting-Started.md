@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF UpDown control | Syncfusion
-description: This section describes about how to add UpDown control in WPF application.
+description: This section describes about how to integrate UpDown control into an applicationl and enable its basic features with example.
 platform: wpf
 control: UpDown
 documentation: ug

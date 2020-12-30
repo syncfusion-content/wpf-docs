@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Layout Related Features| DocumentContainer | Wpf | Syncfusion
-description: layout related features
+description: This section explain about  how to apply different themes for DocumentContainer control and how to implement those themes to the control.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
 # Layout Related Features in WPF (DocumentContainer)
-
-This section illustrates the following Layout-related feature of Document Container control.
 
 ## Theme
 

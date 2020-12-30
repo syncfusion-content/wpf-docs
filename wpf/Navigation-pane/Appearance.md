@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance| GroupBar | Wpf | Syncfusion
-description: This section explain about how to customize the appearance of Syncfusion WPF GroupBar. 
+description: This section explain about how to customize appearance and apply different themes for the Syncfusion WPF GroupBar. 
 platform: wpf
 control: GroupBar
 documentation: ug
@@ -285,7 +285,7 @@ GroupBar supports various built-in themes. Refer to the below links to apply the
 
 3. This will generate the following GroupBar control.
 
-   ![](Appearance_images/Appearance_img8.png)
+   ![Set style for GroupBarItem](Appearance_images/Appearance_img8.png)
 
 
 

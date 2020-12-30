@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Styling | CardView | wpf | Syncfusion
-description: This section explain about how to apply Styling to the CardView control and its items.
+description: This section explain about how to apply Styling to the Syncfusion WPF CardView control and its items.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Styling in WPF Bullet Graph (SfBulletGraph)
+# Styling in WPF Card View
 
 Styling can be applied to the CardView control and its items. 
 

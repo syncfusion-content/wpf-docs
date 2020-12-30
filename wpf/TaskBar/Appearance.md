@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | TaskBar | wpf | Syncfusion
-description: This section explain about how to customize theappearance of Syncfusion WPF TaskBar. 
+title: Appearance | TaskBar | WPF | Syncfusion
+description: This section explain about how to customize the appearance and set different themes for TaskBarcontrol and how to implement those themes to the control.
 platform: wpf
 control: TaskBar
 documentation: ug

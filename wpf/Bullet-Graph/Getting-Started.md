@@ -115,7 +115,7 @@ Create a namespace reference to the SfBulletGraph control using Syncfusion’s g
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img7.jpg)
+![[Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
 As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
 

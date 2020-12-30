@@ -35,7 +35,7 @@ N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies
 
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Adding SfRichTextBoxAdv control via Designer](Getting-Started_images/Getting-Started_img1.jpeg)
 
 {% tabs %}
 {% highlight xaml %}
