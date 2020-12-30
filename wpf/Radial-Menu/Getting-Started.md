@@ -70,7 +70,7 @@ radialMenu.Items.Add(paste);
 
 ## Theme
 
-Radial menu supports various built-in themes. Refer to the below links to apply themes for the Radial menu,
+Radial Menu supports various built-in themes. Refer to the below links to apply themes for the Radial Menu,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

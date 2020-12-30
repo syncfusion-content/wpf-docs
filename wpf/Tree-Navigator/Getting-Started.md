@@ -45,7 +45,7 @@ sfToolkit.Items.Add(metroStudio);
 
 ## Theme
 
-Tree navigator supports various built-in themes. Refer to the below links to apply themes for the Tree navigator,
+Tree Navigator supports various built-in themes. Refer to the below links to apply themes for the Tree Navigator,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
