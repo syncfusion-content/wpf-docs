@@ -145,11 +145,6 @@ public class LoadOnDemandViewModel : NotificationObject
       }
       return appointments;
     }
-
-    private void RaisePropertyChanged(string propertyName)
-    {
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    } 
   }
 {% endhighlight %}
 {% endtabs %}
