@@ -19,25 +19,25 @@ Follow the below steps to add **SfBulletGraph** Control using Syncfusion Referen
 
 Create a simple WPF application using Visual Studio.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Create new WPF Project in Visual Studio](Getting-Started_images/Getting-Started_img1.jpeg)
 
 Right Click on the Project and select Syncfusion Reference Manager.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![selecting Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img2.jpeg)
 
 The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Opening Syncfusion Reference Manager Wizard](Getting-Started_images/Getting-Started_img3.jpeg)
 
 Search for **SfBulletGraph** using SearchBox and select SfBulletGraph Control. Click on done to add selected SfBulletGraph control.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![Selecting SfBulletGraph Control in Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img4.jpeg)
 
 The **SfBulletGraph** assemblies will be automatically added to the Project after Clicking **OK**.
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![Adding SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img5.jpeg)
 
-![](Getting-Started_images/Getting-Started_img6.jpeg)
+![Added SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img6.jpeg)
 
 Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.Syncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
@@ -77,7 +77,7 @@ Add the following code to create a simple SfBulletGraph control.
 
 The SfBulletGraph control will be created as shown in the figure below.
 
-![](Getting-Started_images/Getting-Started_img7.jpg)
+![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
 >**Note:- The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, 2013 and 2015.**
 
@@ -141,7 +141,7 @@ You can assign a caption to **SfBulletGraph** by making use of “Caption” pro
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img8.jpg)
+![Adding Caption to SfBulletGraph control](Getting-Started_images/Getting-Started_img8.jpg)
 
 ## Configuring Ticks and Labels 
 
@@ -193,7 +193,7 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img9.jpg)
+![Configuring Ticks and Labels](Getting-Started_images/Getting-Started_img9.jpg)
 
 ## Adding Ranges 
 
@@ -259,7 +259,7 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
 
 SfBulletGraph ranges are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img10.jpg)
+![Adding Ranges to SfBulletGraph control](Getting-Started_images/Getting-Started_img10.jpg)
 
 ## Theme
 

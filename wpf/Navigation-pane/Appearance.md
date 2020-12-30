@@ -53,7 +53,7 @@ groupBar.VisualMode = VisualMode.Default;
 
 
 
-![](Appearance_images/Appearance_img1.jpeg)
+![Displaying Outlook GroupBar](Appearance_images/Appearance_img1.jpeg)
 
 
 
@@ -116,7 +116,7 @@ Use the following code snippet to set VisualMode property to Multiple Expansion.
 
 
 
-![](Appearance_images/Appearance_img2.jpeg)
+![Multiple Expansion mode in WPF GroupBar ](Appearance_images/Appearance_img2.jpeg)
 
 
 
@@ -181,7 +181,7 @@ groupBar.VisualMode = VisualMode.StackMode;
 {% endhighlight %} 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.jpeg)
+![Stack Mode in WPF GroupBar](Appearance_images/Appearance_img3.jpeg)
 
 
 
@@ -193,31 +193,6 @@ GroupBar supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-
-![](Appearance_images/Appearance_img4.jpeg)
-
-
-
-
-
-![](Appearance_images/Appearance_img5.jpeg)
-
-
-
-
-
-
-
-![](Appearance_images/Appearance_img6.png)
-
-
-
-
-
-![](Appearance_images/Appearance_img7.png)
-
-
-
 ## Item Container Style
 
 1. The ItemContainerStyle property of GroupBar sets the style for GroupBarItem. This style will be applied to all items in the GroupBar control.style for GroupBarItem.
@@ -516,7 +491,7 @@ This will generate the following GroupBar control.
 
 
 
-![](Appearance_images/Appearance_img9.png)
+![Style in WPF GroupBar control](Appearance_images/Appearance_img9.png)
 
    
 
@@ -712,7 +687,4 @@ Group Bar header can be customized in a required manner. Customized background c
 
 
 
-![](Appearance_images/Appearance_img10.jpeg)
-
-
-
+![Customizing Group Bar Header](Appearance_images/Appearance_img10.jpeg)

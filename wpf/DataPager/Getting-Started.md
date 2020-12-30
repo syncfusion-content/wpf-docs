@@ -47,7 +47,7 @@ Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 
 The following screenshot describes the elements of the DataPager control.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Displaying DataPager control](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -69,7 +69,7 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Displaying the WPF SfDataPager control in designer](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -234,7 +234,7 @@ public class ViewModel
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Displaying the SfDataPager in the SfDataGrid Control ](Getting-Started_images/Getting-Started_img3.png)
 
 ## Theme
 

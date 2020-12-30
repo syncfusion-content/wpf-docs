@@ -167,15 +167,15 @@ The following assembly reference are additionally required to deploy SfRichTextR
 
 2.Use the Syncfusion RibbonWindow instead of Window
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Adding the Control via Designer](Getting-Started_images/Getting-Started_img2.jpeg)
 
 3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Displaying the SfRichTextRibbon Control](Getting-Started_images/Getting-Started_img3.jpeg)
 
 4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![Displaying the SfRichTextBoxAdv Control](Getting-Started_images/Getting-Started_img4.jpeg)
 
 5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
 
@@ -220,7 +220,7 @@ You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by u
 N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
 
 Finally, you can get the following output similar to Microsoft Word on executing the application
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![Adding the SfRichTextRibbon Control via code](Getting-Started_images/Getting-Started_img5.jpeg)
 
 ## Theme
 

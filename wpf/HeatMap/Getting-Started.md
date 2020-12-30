@@ -143,7 +143,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 * This will show a grid with data as in following image.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Showing grid with data](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Color Mapping
 
@@ -172,7 +172,7 @@ Next we can configure color range for these values using color mapping
 
 * This will show the grid data with color based on the range given.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Legend
 

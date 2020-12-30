@@ -75,7 +75,7 @@ Now, the Syncfusion.SfSmithChart.WPF reference has been added to the application
 ![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
 
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusion.SfSmithChart.WPF" in MainWindow](Getting-Started_images/Getting-Started_img4.png)
+![Added namespace for SfSmithChart control in MainWindow](Getting-Started_images/Getting-Started_img4.png)
 
 
 In this section, the data in the following table is used for demonstration.

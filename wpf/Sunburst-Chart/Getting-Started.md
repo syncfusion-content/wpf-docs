@@ -30,7 +30,7 @@ Now the Syncfusion.SfSunburstChart.WPF reference is added to the application ref
 
 ![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted3.png)
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SunburstChart;assembly=Syncfusion.SfSunburstChart.WPF" in MainWindow](Getting-Started_images/gettingstarted4.png)
+![Added namespace for SfSunburstChart control in MainWindow](Getting-Started_images/gettingstarted4.png)
 
 ## Initialize view model
 

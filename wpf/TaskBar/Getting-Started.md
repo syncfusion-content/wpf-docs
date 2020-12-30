@@ -15,13 +15,7 @@ This section guides you on getting started with TaskBar control. It covers the f
 
 TaskBar control has the capability to provide a UI that is similar to the Windows Explorer TaskBar. It provides a consistent UI for placing commonly used functionalities as grouped items. You can place any Container Panel control inside the TaskBar. For example, when the customized Grid Panel with other controls are placed inside the TaskBar Item, it will be automatically arranged inside the TaskBar Items collection. TaskBar supports the Office2007Black, Office2007Blue, Office2007Silver, Office2003 and Blend themes.
 
-
-
-![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-
-
-
+![Displaying Taskbar control](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Why to use our TaskBar control
 
@@ -48,7 +42,7 @@ To create the TaskBar control through designer, do the following steps:
 
 
 
-     ![](Getting-Started_images/Getting-Started_img2.jpeg)
+     ![Adding TaskBar control via designer](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -99,7 +93,7 @@ The following screen shot shows the TaskBar control.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Programmatically adding TaskBar control](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 ## Theme
