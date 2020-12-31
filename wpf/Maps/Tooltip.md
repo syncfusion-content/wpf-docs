@@ -167,15 +167,17 @@ The maps control provides options to design your own template for tooltip using 
 
 {% highlight xaml %}
 
-      <maps:ShapeFileLayer.ToolTipSettings>
-          <maps:ToolTipSetting ShowDuration="3000">
-               <maps:ToolTipSetting.ToolTipTemplate>
-                  <DataTemplate>
-                       <TextBlock Foreground="Yellow" Text="{Binding Data.Candidate}"></TextBlock>
-                  </DataTemplate>
-               </maps:ToolTipSetting.ToolTipTemplate>
-         </maps:ToolTipSetting>
-     </maps:ShapeFileLayer.ToolTipSettings>
+        <Grid x:Name="grid">
+            <Grid.Resources>
+                <DataTemplate x:Key="toolTipTemplate">
+                    <TextBlock Foreground="Yellow" Text="{Binding Data.Candidate}"/>
+                </DataTemplate>
+            </Grid.Resources>
+			
+            <maps:ShapeFileLayer.ToolTipSettings>
+                <maps:ToolTipSetting ShowDuration="3000" ToolTipTemplate="{StaticResource ResourceKey=toolTipTemplate}"/>
+            </maps:ShapeFileLayer.ToolTipSettings>
+	    </Grid>
 
 {% endhighlight %}
 
@@ -183,15 +185,9 @@ The maps control provides options to design your own template for tooltip using 
 
             ToolTipSetting toolTipSetting = new ToolTipSetting();
             toolTipSetting.ShowDuration = 3000;
-            DataTemplate template = new DataTemplate();
-            FrameworkElementFactory frameworkElementFactory = new FrameworkElementFactory(typeof(StackPanel));
-            template.VisualTree = frameworkElementFactory;
-            FrameworkElementFactory textBlock = new FrameworkElementFactory(typeof(TextBlock));
-            textBlock.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red));
-            textBlock.SetBinding(TextBlock.TextProperty, new Binding("Data.Candidate"));
-            frameworkElementFactory.AppendChild(textBlock);
+            DataTemplate template = this.grid.Resources["toolTipTemplate"] as DataTemplate;
             toolTipSetting.ToolTipTemplate = template;
-            shapefile.ToolTipSettings = toolTipSetting;
+            shapeFile.ToolTipSettings = toolTipSetting;
 
 {% endhighlight %}
 
