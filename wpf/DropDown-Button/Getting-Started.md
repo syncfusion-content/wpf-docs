@@ -612,3 +612,5 @@ Dropdown Button supports various built-in themes. Refer to the below links to ap
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Theme](Theme-Support_images/Theme-Support_img1.png)

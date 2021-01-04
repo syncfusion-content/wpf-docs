@@ -44,4 +44,4 @@ TabControl supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![TabControl with Blend visual style](Tab-Item-Header_images/BlendTheme.png)
+  ![Setting theme in WPF TabControl](Getting-Started_images/wpf-tabcontrol-theme.png)

@@ -19,4 +19,4 @@ SfTreeGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-![Themes in WPF SfTreeGrid](Themes_images/themes_img1.png)
+  ![Setting theme in SfTreeGrid](Getting-Started_images/Theme.png)
