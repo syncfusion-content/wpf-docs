@@ -12,6 +12,13 @@ documentation: ug
 The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Flip) command is used to mirror the selected object's content and port in the diagram page in both horizontal and vertical direction. 
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="Flip" Name="Flip" Command="Syncfusion:DiagramCommands.Flip"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
             IGraphInfo graphinfo = Diagram.Info as IGraphInfo;

@@ -130,68 +130,68 @@ N> You have to set the diagram as DataContext for the Diagram ribbon control, wh
 
 {% highlight xaml %}
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+<Grid>
 
-        <syncfusion:SfDiagramRibbon x:Name="DiagramRibbon" Grid.Row="0" DataContext="{Binding ElementName=Diagram}"/>
-        <syncfusion:SfDiagram x:Name="Diagram" Grid.Row="1" Constraints="Undoable,Default">
-            <syncfusion:SfDiagram.Theme>
-                <syncfusion:OfficeTheme/>                
-            </syncfusion:SfDiagram.Theme>
-            <syncfusion:SfDiagram.Nodes>
-                <syncfusion:NodeCollection/>
-            </syncfusion:SfDiagram.Nodes>
-            <syncfusion:SfDiagram.Connectors>
-                <syncfusion:ConnectorCollection/>
-            </syncfusion:SfDiagram.Connectors>
-            <syncfusion:SfDiagram.Groups>
-                <syncfusion:GroupCollection/>
-            </syncfusion:SfDiagram.Groups>
-            <syncfusion:SfDiagram.SnapSettings>
-                <syncfusion:SnapSettings SnapConstraints="All"/>
-            </syncfusion:SfDiagram.SnapSettings>
-            <syncfusion:SfDiagram.HorizontalRuler>
-                <syncfusion:Ruler Orientation="Horizontal"/>
-            </syncfusion:SfDiagram.HorizontalRuler>
-            <syncfusion:SfDiagram.VerticalRuler>
-                <syncfusion:Ruler Orientation="Vertical"/>
-            </syncfusion:SfDiagram.VerticalRuler>
-        </syncfusion:SfDiagram>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
 
-    </Grid>
-
+    <syncfusion:SfDiagramRibbon x:Name="DiagramRibbon" Grid.Row="0" DataContext="{Binding ElementName=Diagram}"/>
+    <syncfusion:SfDiagram x:Name="Diagram" Grid.Row="1" Constraints="Undoable,Default">
+        <syncfusion:SfDiagram.Theme>
+            <syncfusion:OfficeTheme/>                
+        </syncfusion:SfDiagram.Theme>
+        <syncfusion:SfDiagram.Nodes>
+            <syncfusion:NodeCollection/>
+        </syncfusion:SfDiagram.Nodes>
+        <syncfusion:SfDiagram.Connectors>
+            <syncfusion:ConnectorCollection/>
+        </syncfusion:SfDiagram.Connectors>
+        <syncfusion:SfDiagram.Groups>
+            <syncfusion:GroupCollection/>
+        </syncfusion:SfDiagram.Groups>
+        <syncfusion:SfDiagram.SnapSettings>
+            <syncfusion:SnapSettings SnapConstraints="All"/>
+        </syncfusion:SfDiagram.SnapSettings>
+        <syncfusion:SfDiagram.HorizontalRuler>
+            <syncfusion:Ruler Orientation="Horizontal"/>
+        </syncfusion:SfDiagram.HorizontalRuler>
+        <syncfusion:SfDiagram.VerticalRuler>
+            <syncfusion:Ruler Orientation="Vertical"/>
+        </syncfusion:SfDiagram.VerticalRuler>
+    </syncfusion:SfDiagram>
+    
+</Grid>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-            SfSkinManager.SetTheme(this, new Syncfusion.SfSkinManager.Theme() { ThemeName = "Office2019Colorful" });
+SfSkinManager.SetTheme(this, new Syncfusion.SfSkinManager.Theme() { ThemeName = "Office2019Colorful" });
 
-            // Initialize, arrange and add a diagram and Diagram ribbon in the application
+// Initialize, arrange and add a diagram and Diagram ribbon in the application
 
-            SfDiagram Sfdiagram = new SfDiagram()
-            {
-                Theme = new OfficeTheme(),
-                Nodes = new NodeCollection(),
-                Connectors = new ConnectorCollection(),
-                Groups = new GroupCollection(),
-                Constraints = GraphConstraints.Default | GraphConstraints.Undoable,
-                SnapSettings = new SnapSettings() { SnapConstraints = SnapConstraints.All },
-                HorizontalRuler = new Syncfusion.UI.Xaml.Diagram.Controls.Ruler() { Orientation = Orientation.Horizontal },
-                VerticalRuler = new Syncfusion.UI.Xaml.Diagram.Controls.Ruler() { Orientation = Orientation.Vertical },
-            };
+SfDiagram Sfdiagram = new SfDiagram()
+{
+    Theme = new OfficeTheme(),
+    Nodes = new NodeCollection(),
+    Connectors = new ConnectorCollection(),
+    Groups = new GroupCollection(),
+    Constraints = GraphConstraints.Default | GraphConstraints.Undoable,
+    SnapSettings = new SnapSettings() { SnapConstraints = SnapConstraints.All },
+    HorizontalRuler = new Syncfusion.UI.Xaml.Diagram.Controls.Ruler() { Orientation = Orientation.Horizontal },
+    VerticalRuler = new Syncfusion.UI.Xaml.Diagram.Controls.Ruler() { Orientation = Orientation.Vertical },
+};
 
-            SfDiagramRibbon sfDiagramRibbon = new SfDiagramRibbon() { DataContext = Sfdiagram };
+SfDiagramRibbon sfDiagramRibbon = new SfDiagramRibbon() { DataContext = Sfdiagram };
 
-            Sfdiagram.SetValue(Grid.RowProperty, 1);
-            sfDiagramRibbon.SetValue(Grid.RowProperty, 0);
+Sfdiagram.SetValue(Grid.RowProperty, 1);
+sfDiagramRibbon.SetValue(Grid.RowProperty, 0);
 
-            Root_Grid.Children.Add(Sfdiagram);
-            Root_Grid.Children.Add(sfDiagramRibbon);
-
+Root_Grid.Children.Add(Sfdiagram);
+Root_Grid.Children.Add(sfDiagramRibbon);
+    
 {% endhighlight %}
 
 {% endtabs %}
@@ -220,14 +220,14 @@ To add a custom ribbon tab with the default tabs in the `SfDiagramRibbon`.
 
 {% highlight C# %}
 
-        DiagramRibbon.Loaded += DiagramRibbon_Loaded;
+DiagramRibbon.Loaded += DiagramRibbon_Loaded;
 
-        private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Add a new Ribbon tab.
-            RibbonTab FormatTab = new RibbonTab() { Caption = "Format" };
-            (sender as SfDiagramRibbon).Tabs.Add(FormatTab);
-        }
+private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
+{
+    // Add a new Ribbon tab.
+    RibbonTab FormatTab = new RibbonTab() { Caption = "Format" };
+    (sender as SfDiagramRibbon).Tabs.Add(FormatTab);
+}
 
 {% endhighlight %}
 
@@ -241,13 +241,13 @@ To remove a ribbon tab from the default tabs in `SfDiagramRibbon`.
 
 {% highlight C# %}
 
-        DiagramRibbon.Loaded += DiagramRibbon_Loaded;
+DiagramRibbon.Loaded += DiagramRibbon_Loaded;
 
-        private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Remove the Insert tab.
-            (sender as SfDiagramRibbon).Tabs.RemoveAt(1);
-        }
+private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
+{
+    // Remove the Insert tab.
+    (sender as SfDiagramRibbon).Tabs.RemoveAt(1);
+}
 
 {% endhighlight %}
 
@@ -261,14 +261,14 @@ To add a custom ribbon item with the default items in an already existing ribbon
 
 {% highlight C# %}
 
-        DiagramRibbon.Loaded += DiagramRibbon_Loaded;
+DiagramRibbon.Loaded += DiagramRibbon_Loaded;
 
-        private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Add new Ribbon Item.
-            RibbonTab InsertTab = (sender as SfDiagramRibbon).Tabs.ElementAt(1);
-            InsertTab.Items.Add(new RibbonBar() { Header = "Links" });
-        }
+private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
+{
+    // Add new Ribbon Item.
+    RibbonTab InsertTab = (sender as SfDiagramRibbon).Tabs.ElementAt(1);
+    InsertTab.Items.Add(new RibbonBar() { Header = "Links" });
+}
 
 {% endhighlight %}
 
@@ -282,14 +282,14 @@ To remove an already existing ribbon item from the ribbon tab.
 
 {% highlight C# %}
 
-        DiagramRibbon.Loaded += DiagramRibbon_Loaded;
+DiagramRibbon.Loaded += DiagramRibbon_Loaded;
 
-        private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Remove the alignment bar from the Home Tab.
-            RibbonTab HomeTab = (sender as SfDiagramRibbon).Tabs.ElementAt(0);
-            HomeTab.Items.RemoveAt(2);
-        }
+private void DiagramRibbon_Loaded(object sender, RoutedEventArgs e)
+{
+    // Remove the alignment bar from the Home Tab.
+    RibbonTab HomeTab = (sender as SfDiagramRibbon).Tabs.ElementAt(0);
+    HomeTab.Items.RemoveAt(2);
+}
 
 {% endhighlight %}
 

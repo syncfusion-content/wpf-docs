@@ -13,6 +13,13 @@ The [FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ID
 If the parameter is null, entire diagram is fit into the view.
 
 {% tabs %}
+
+{% highlight Xaml%}
+
+<Button Height="50" Content="FitToPage" Name="FitToPage" Command="Syncfusion:DiagramCommands.FitToPage"></Button>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
