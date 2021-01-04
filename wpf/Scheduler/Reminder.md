@@ -151,8 +151,7 @@ You can map those properties of the `Meeting` class with the [SfScheduler](https
 {% highlight xaml %}
  <syncfusion:SfScheduler x:Name="Schedule" 
                 ItemsSource="{Binding Events}"
-                EnableReminder="True"
-                ViewType="{Binding ElementName=viewtypecombobox, Path=SelectedValue,Mode=TwoWay}">
+                EnableReminder="True">
             <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
                     Subject="EventName"
