@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfSparkline | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF TaskBar SfSparkline an applicationl and enable its basic features with example.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Getting started
+# Getting started with WPF SfSparkline
 
 ## Creating sparkline
 
