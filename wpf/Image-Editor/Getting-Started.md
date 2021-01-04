@@ -121,6 +121,8 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![ImageEditor](Images/Theme.png)   
+
 ## See also
 
 [How to retrieve a edited image as a stream in an image editor](https://www.syncfusion.com/kb/11214/how-to-retrieve-a-edited-image-as-a-stream-in-an-image-editor)

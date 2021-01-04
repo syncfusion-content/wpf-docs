@@ -113,4 +113,4 @@ DateTimeEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![DateTimeEdit with Blend visual style](appearance-images/BlendTheme.png)
+![Set theme to WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-theme-support.png)

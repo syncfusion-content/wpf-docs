@@ -268,3 +268,5 @@ Bullet Graph supports various built-in themes. Refer to the below links to apply
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Bullet Graph](Getting-Started_images/Theme.png)

@@ -115,4 +115,4 @@ SfMaskedEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-![SfMaskedEdit with Blend visual style](Appearence_Images/Theme.png)
+  ![Setting theme to WPF SfMaskedEdit](Getting-Started_images/SfMaskedEdit_theme.png)

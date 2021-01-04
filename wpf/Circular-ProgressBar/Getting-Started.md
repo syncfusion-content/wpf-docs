@@ -90,8 +90,10 @@ namespace SfProgressBar
 
 ## Theme
 
-circular ProgressBar supports various built-in themes. Refer to the below links to apply themes for the circular ProgressBar,
+Circular ProgressBar supports various built-in themes. Refer to the below links to apply themes for the Circular ProgressBar,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Set theme to wpf Circular ProgressBar control](Getting-Started_images/wpf-SfCircularProgressBar-theme-support.png)

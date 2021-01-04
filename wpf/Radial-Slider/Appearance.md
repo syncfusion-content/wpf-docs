@@ -85,4 +85,4 @@ SfRadialSlider supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![SfRadialSlider with Blend visual style](Appearance_images/blend.png)
+  ![Setting theme to WPF SfRadialSlider](GettingStarted_images/Theme.png)

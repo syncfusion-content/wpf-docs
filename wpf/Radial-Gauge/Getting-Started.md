@@ -474,6 +474,8 @@ SfCircularGauge supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Setting theme to WPF SfCircularGauge](Getting-Started_images/Theme.png)
+
 ## See also
 
 [How to apply themes for SfCircularGauge](https://www.syncfusion.com/kb/2514/how-to-apply-themes-for-sfcirculargauge)

@@ -309,3 +309,4 @@ Kanban control supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Setting theme to WPF SfKanban](SfKanban_images/Theme.png)

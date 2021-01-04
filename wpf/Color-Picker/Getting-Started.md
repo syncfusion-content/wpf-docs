@@ -302,3 +302,5 @@ ColorPicker supports various built-in themes. Refer to the below links to apply 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Set theme to WPF ColorPicker](Getting-Started_images/ColorPicker_theme_Support.png)

@@ -366,6 +366,8 @@ LinearGauge supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Setting theme to WPF LinearGauge](Getting-Started_images/Theme.png)
+
 ## See also
 
 [How to apply themes for SfLinearGauge](https://www.syncfusion.com/kb/2534/how-to-apply-themes-for-sflineargauge)

@@ -45,4 +45,4 @@ ColorPickerPalette supports various built-in themes. Refer to the below links to
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![ColorPickerPalette with Blend visual style](Appearance_images/blend.png)
+ ![Set theme to WPF ColorPickerPalette](Getting-Started_images/Theme.png)

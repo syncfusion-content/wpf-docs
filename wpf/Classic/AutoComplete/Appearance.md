@@ -17,61 +17,8 @@ AutoComplete supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+   ![Set theme to WPF AutoComplete](Getting-Started_images/Getting-Started_img15.png)
 
-![Set Windows theme to WPF AutoComplete](Appearance_images/Appearance_img1.png)
-
-Windows7
-{:.caption}
-
-![Set Blend theme to WPF AutoComplete](Appearance_images/Appearance_img2.png)
-
-Blend
-{:.caption}
-
-![Set Office2007Blue theme to WPF AutoComplete](Appearance_images/Appearance_img3.png)
-
-Office2007Blue
-{:.caption}
-
-![Set Office2007Black theme to WPF AutoComplete](Appearance_images/Appearance_img4.png)
-
-Office2007Black
-{:.caption}
-
-![Set Office2007Silver theme to WPF AutoComplete](Appearance_images/Appearance_img5.png)
-
-Office2007Silver
-{:.caption}
-
-![Set Office2003 theme to WPF AutoComplete](Appearance_images/Appearance_img6.png)
-
-Office2003
-{:.caption}
-
-![Set ShinyRed theme to WPF AutoComplete](Appearance_images/Appearance_img7.png)
-
-ShinyRed
-{:.caption}
-
-![Set ShinyBlue theme to WPF AutoComplete](Appearance_images/Appearance_img8.png)
-
-ShinyBlue
-{:.caption}
-
-![Set SyncOrange theme to WPF AutoComplete](Appearance_images/Appearance_img9.png)
-
-SyncOrange
-{:.caption}
-
-![Set Metro theme to WPF AutoComplete](Appearance_images/Appearance_img10.png)
-
-Metro
-{:.caption}
-
-![Set the Transparent theme to AutoComplete](Appearance_images/Appearance_img11.png)
-
-Transparent
-{:.caption}
 
 ## Show the shadow effect
 

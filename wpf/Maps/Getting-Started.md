@@ -573,6 +573,8 @@ SfMap supports various built-in themes. Refer to the below links to apply themes
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Getting started imgage](Getting-Started_images/Theme.png)
+
 ## See also
 
 [How to show google map in WPF SfMap](https://www.syncfusion.com/kb/11928/how-to-show-google-map-in-wpf-map-sfmap)

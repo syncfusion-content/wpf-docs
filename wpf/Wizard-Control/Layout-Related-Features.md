@@ -148,4 +148,5 @@ WizardControl supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Blend appearance of WizardControl](Layout-Related-Features_images/Layout-Related-Features_img5.png)
+
+ ![Setting theme to WPF WizardControl](Getting-Started_images/Theme.png)

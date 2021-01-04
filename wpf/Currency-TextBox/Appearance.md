@@ -211,4 +211,4 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![CurrencyTextBox Blend visual style](Appearance_images/blend-theme.png)
+ ![Set theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-text-box-theme-support.png)

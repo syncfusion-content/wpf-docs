@@ -311,3 +311,5 @@ SfMultiColumnDropDownControl supports various built-in themes. Refer to the belo
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF MultiColumnDropDown](Getting-Started_images/Theme.png)

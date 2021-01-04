@@ -20,25 +20,7 @@ DockingManager supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Blend VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
-
-![Office2007Blue VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
-
-![Office2007Black VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
-
-![Office2007Silver VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
-
-![Office2010Blue VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
-
-![Office2010Black VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img6.jpeg)
-
-![Office2010Silver VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
-
-![VS2010 VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
-
-![Metro VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
-
-![Transparent VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
+  ![Set theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)
 
 ## Dock Window Style
 

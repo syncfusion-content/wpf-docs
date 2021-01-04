@@ -200,6 +200,8 @@ SfDigitalGauge supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Set theme to WPFSfDigitalGauge ](Getting-Started_images/Theme.png)
+
 ## See also
 
 [How to apply themes for SfDigitalGauge](https://www.syncfusion.com/kb/2535/how-to-apply-themes-for-sfdigitalgauge)

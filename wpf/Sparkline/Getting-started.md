@@ -157,4 +157,15 @@ N> if we do not map the XBindingPath means sparkline data positioned as indexed.
 
 The following illustrates the result of the above code sample,
 
-![](Getting-started_images/Getting-started_img1.png)
+![Binding Data to WPF sparkline](Getting-started_images/Getting-started_img1.png)
+
+## Theme
+
+SfSparkline supports various built-in themes. Refer to the below links to apply themes for the SfSparkline,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to wpf document container](Getting-started_images/Theme.png)
+   

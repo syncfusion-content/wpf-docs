@@ -88,4 +88,4 @@ ColorPalette supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![ColorPalette with Blend visual style](Appearance_images/theme.png)
+  ![Set theme to WPF ColorPalette](Getting-Started_images/ColorPalette_theme_Support.png)

@@ -96,4 +96,4 @@ TimeSpanEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![TimeSpanEdit with Blend visual style](Apperance_images/BlendTheme.png)
+ ![Setting theme to WPF TimeSpanEdit](Getting-Started_images/Theme.png)
