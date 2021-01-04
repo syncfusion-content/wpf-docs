@@ -914,4 +914,4 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Theme](Getting-Started_images\theme.png)
+  ![Theme](Getting-Started_images\theme.jpg)
