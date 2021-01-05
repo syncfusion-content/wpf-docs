@@ -8,8 +8,8 @@ keywords: automatic-suggestion, @mentions
 ---
 # Automatic Suggestion
 
-## Automatic Suggestion functionality for using @mentions in SfRichTextBoxAdv control
-SfRichTextBoxAdv control shows an inline dropdown with a list of suggested names while type the mention character (ex: @ symbol). The list of names will filter as you type more letters. You can use up or down arrow key to move selection and Tab or Enter key to insert selected item in keyboard or use mouse to click any option in the list. The selected item from the suggestion list will be inserted as hyperlink with the display text and its respective link.
+### Automatic Suggestion functionality for using @mentions
+SfRichTextBoxAdv control shows an inline dropdown with a list of suggested names while type the mention character (@ symbol). The list of names will filter as you type more letters. You can use up or down arrow key to move selection and Tab or Enter key to insert selected item in keyboard or use mouse to click any option in the list. The selected item from the suggestion list will be inserted as hyperlink with the display text and its respective link.
 
 ![Automatic Suggestion](Automatic-Suggestion_images/autosuggestion1.PNG)
 
@@ -96,7 +96,7 @@ Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
 
 N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Automatic%20Suggestion)
 
-## Customize the SuggestionBox ItemTemplate and Style
+### Customize the SuggestionBox ItemTemplate and Style
 By default, the drop-down window lists the filtered items as an image, display text and link. If you want to remove the image or link. You can write your own item Template.
 
 ![Modify Suggestion Box Item](Automatic-Suggestion_images/autosuggestion2.PNG)
@@ -143,8 +143,8 @@ The following sample code demonstrates how to modify the suggestion box item tem
 {% endtabs %}
 
 
-## Custom mention character
-By default, @ is a mention character. But any character can be used as mention character.
+### Custom mention character
+By default, **@** is a mention character. But any character can be used as mention character.
 
 ![Mention Character](Automatic-Suggestion_images/autosuggestion3.PNG)
 
@@ -173,7 +173,7 @@ richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 {% endtabs %}
 
 
-## Multiple Suggestion provider
+### Multiple Suggestion provider
 Two or more suggestion providers can be used at a time but, each suggestion provider should have different mention character. And each suggestion provider can have different item source and suggestion box style.
 
 <table><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/><br/></td><td><img src="Automatic-Suggestion_images/autosuggestion3.PNG"/><br/></td></tr></table>
@@ -286,7 +286,7 @@ ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
 
 N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
 
-## Display a message when suggestions are empty
+### Display a message when suggestions are empty
 When the entered item is not in the suggestion list, suggestion box displays a text indicating that “We couldn’t find the person you were looking for.”. The text to be displayed for this can be customized using the SuggestionBoxErrorMessage property in resource file (.resx). 
 •	Right click your project and add new folder named Resources.
 •	Add [default resource file](https://github.com/syncfusion/wpf-controls-localization-resx-files/tree/master/Syncfusion.SfRichTextBoxAdv.WPF) of SfRichTextBoxAdv control into Resources folder.
@@ -296,8 +296,8 @@ When the entered item is not in the suggestion list, suggestion box displays a t
 ![Display message](Automatic-Suggestion_images/autosuggestion4.PNG)
 
 
-## Custom suggestion provider
-By default, we have implemented ‘NameSuggestionProvider’ as suggestion provider. But you can implement your own suggestion provider inheriting from [ISuggestionProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.ISuggestionProvider.html). Which helps you to customizing the search and insert selected item functionalities.
+### Custom suggestion provider
+By default, we have implemented [NameSuggestionProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.NameSuggestionProvider.html) as suggestion provider. But you can implement your own suggestion provider inheriting from [ISuggestionProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.ISuggestionProvider.html). Which helps you to customizing the search and insert selected item functionalities.
 
 The following sample code demonstrates how to create own suggestion provider inherited from ISuggestionProvider.
 {% tabs %}
@@ -421,7 +421,7 @@ internal class AppTypeSuggestionProvider : DependencyObject, ISuggestionProvider
 
 N> [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
 
-## Custom Search
+### Custom Search
 In default searching, it lists the items which contains the typed text. But you can modify the searching like lists the items starts or ends with typed text, by implementing your own suggestion provider and overriding the Search method.
 
 <table><tr><td>Search – contains</td><td>Search – starts with</td></tr><tr><td><img src="Automatic-Suggestion_images/autosuggestion1.PNG"/></td><td><img src="Automatic-Suggestion_images/autosuggestion6.PNG"/></td></tr></table>
@@ -445,7 +445,7 @@ public List<object> Search(string searchText)
 {% endhighlight %}
 {% endtabs %}
 
-## Custom insert selected item
+### Custom insert selected item
 By default, the selected item from the suggestions list is inserted as hyperlink. But you can insert it as plain text or without link, by implementing your own suggestion provider and overriding the “InsertSelectedItem” method.
 
 ![Custom Insert](Automatic-Suggestion_images/autosuggestion3.PNG)
@@ -463,7 +463,7 @@ public void InsertSelectedItem(SfRichTextBoxAdv richTextBoxAdv, object selectedI
 
 N> This feature is supported from V18.4.0.30.
 
-[View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Multiple%20Suggestion%20Provider)
+[View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
  
 
 
