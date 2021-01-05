@@ -168,7 +168,7 @@ Free hand connections will be drawn by using `DrawingTool` property.
 
 {% tabs %}
 
-{% highlight xaml%}
+{% highlight xaml %}
 
 <Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="FreeHand">
     <Syncfusion:SfDiagram.Nodes>
