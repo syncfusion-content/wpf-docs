@@ -225,3 +225,160 @@ propertyGrid1.DescriptionPanelHeight = new GridLength(60);
 {% endtabs %}
 
 ![Description panel height is manually changed](Attribute-Images\DescriptionPanelHeight.png)
+
+## Custom UI for description panel
+
+You can customize the UI of description panel by using the [DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_DescriptionTemplate) property. The `DataContext` of `` property is `PropertyItem`.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Employee
+{
+    [Description("Name of the employee")]
+    public string Name { get; set; }
+    [Description("ID of the employee")]
+    public string ID { get; set; }
+    [Description("Birth date of the employee")]
+    public DateTime DOB { get; set; }
+    [Description("Age of the employee")]
+    public int Age { get; set; }
+    public Employee()
+    {
+        Name = "John";
+        ID = "381";
+        DOB = new DateTime(1995, 12, 24);
+        Age = 26;
+    }
+}
+      
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid DescriptionPanelVisibility="Visible"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DescriptionTemplate>
+        <DataTemplate>
+            <StackPanel>
+                <TextBlock 
+                    Text="{Binding Name}" 
+                    FontSize="16" 
+                    Foreground="Red" 
+                    TextWrapping="Wrap"/>
+                <TextBlock 
+                    Text="{Binding Description}"
+                    FontSize="14" 
+                    Foreground="Green" 
+                    TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </syncfusion:PropertyGrid.DescriptionTemplate>
+    <syncfusion:PropertyGrid.SelectedObject>
+        <local:Employee></local:Employee>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% endtabs %}
+
+![Custom UI of Description panel](Attribute-Images\DescriptionTemplate.png)
+
+## Different custom UI for specific property's description panel
+
+You can customize the different UI for specific property's description panel by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event and using the [DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) property. You can also use the `DescriptionTemplateSelector` property to customize the UI for specific property's description panel.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Employee
+{
+    [Description("Name of the employee")]
+    public string Name { get; set; }
+    [Description("ID of the employee")]
+    public string ID { get; set; }
+    [Description("Birth date of the employee")]
+    public DateTime DOB { get; set; }
+    [Description("Age of the employee")]
+    public int Age { get; set; }
+    public Employee()
+    {
+        Name = "John";
+        ID = "381";
+        DOB = new DateTime(1995, 12, 24);
+        Age = 26;
+    }
+}
+      
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid x:Name="grid">
+    <Grid.Resources>
+        <DataTemplate x:Key="template1">
+            <StackPanel>
+                <TextBlock 
+                        Text="{Binding Name}" 
+                        FontSize="16" 
+                        Foreground="Red" 
+                        TextWrapping="Wrap"/>
+                <TextBlock 
+                        Text="{Binding Description}"
+                        FontSize="14" 
+                        Foreground="Green" 
+                        TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="template2">
+            <StackPanel>
+                <TextBlock 
+                        Text="{Binding Name}" 
+                        FontSize="16" 
+                        Foreground="BlueViolet" 
+                        TextWrapping="Wrap"/>
+                <TextBlock 
+                        Text="{Binding Description}"
+                        FontSize="14" 
+                        Foreground="DarkCyan" 
+                        TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </Grid.Resources>
+    <syncfusion:PropertyGrid AutoGeneratingPropertyGridItem="propertyGrid1_AutoGeneratingPropertyGridItem"
+                             DescriptionPanelVisibility="Visible"
+                             x:Name="propertyGrid1">
+        <syncfusion:PropertyGrid.SelectedObject>
+            <local:Employee></local:Employee>
+        </syncfusion:PropertyGrid.SelectedObject>
+    </syncfusion:PropertyGrid>
+</Grid>
+
+{% endhighlight %} 
+{% endtabs %}
+
+You can handle the event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
+{
+    if (e.DisplayName == "Name" || e.DisplayName == "DOB")
+    {
+        e.DescriptionTemplate = grid.TryFindResource("template1") as DataTemplate;
+    }
+    else if (e.DisplayName == "ID" || e.DisplayName == "Age")
+    {
+        e.DescriptionTemplate = grid.TryFindResource("template2") as DataTemplate;
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %}
+
+![Different custom UI for specific property's description panel](Attribute-Images\CustomDescriptionTemplate.png)
