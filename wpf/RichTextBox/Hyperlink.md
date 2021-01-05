@@ -163,6 +163,7 @@ The following section illustrates how to insert hyperlink field with ScreenTip i
 <Button Content="Insert Hyperlink" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertHyperlinkCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 2.	Enter the display text, URL link and ScreenTip text.
 3.	Click on OK to close the dialog box.
