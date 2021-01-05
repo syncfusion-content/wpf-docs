@@ -226,7 +226,7 @@ Diagram allows you to create a rectangle shaped node as soon as you click and dr
 
 {% tabs %}
 
-{% highlight %}
+{% highlight xaml %}
 
 <Syncfusion:SfDiagram x:Name="diagram" Tool="ContinuesDraw" DrawingTool="Rectangle">
     <Syncfusion:SfDiagram.Nodes>
