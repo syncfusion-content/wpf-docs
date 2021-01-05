@@ -286,9 +286,11 @@ public class Employee
 
 ![Custom UI of Description panel](Attribute-Images\DescriptionTemplate.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Name-Description)
+
 ## Different custom UI for specific property's description panel
 
-You can customize the different UI for specific property's description panel by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event and using the [DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) property. You can also use the `DescriptionTemplateSelector` property to customize the UI for specific property's description panel.
+You can customize the different UI for specific property's description panel by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event and using the [AutoGeneratingPropertyGridItemEventArgs.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) property. You can also use the `DescriptionTemplateSelector` property to customize the UI for specific property's description panel.
 
 {% tabs %}
 {% highlight C# %}
@@ -382,3 +384,7 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 {% endtabs %}
 
 ![Different custom UI for specific property's description panel](Attribute-Images\CustomDescriptionTemplate.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event)
+
+N> If you use `DescriptionTemplate` and `AutoGeneratingPropertyGridItemEventArgs.DescriptionTemplate` properties to customize the description panel. Then, `AutoGeneratingPropertyGridItemEventArgs.DescriptionTemplate` have higher priority.
