@@ -383,7 +383,7 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGen
 {% endhighlight %} 
 {% endtabs %}
 
-![Different custom UI for specific property's description panel](Attribute-Images\CustomDescriptionTemplate.png)
+![Different custom UI for specific property description panel](Attribute-Images\CustomDescriptionTemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event)
 
