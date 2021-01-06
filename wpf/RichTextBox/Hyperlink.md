@@ -82,7 +82,7 @@ The following code example illustrates how to insert hyperlink field into SfRich
 
 ## Hyperlink ScreenTip
 
-In SfRichTextBoxAdv control ToolTip (ScreenTip) shows some information or navigation link, when the mouse hovers over that hyperlink and it disappears when the mouse is moved away from that hyperlink. By default, it shows navigation link of that hyperlink and you can set the text you want to use for your ScreenTip.
+In RichTextBox control ToolTip (ScreenTip) shows some information or navigation link, when the mouse hovers over that hyperlink and it disappears when the mouse is moved away from that hyperlink. By default, it shows navigation link of that hyperlink and you can set the text you want to use for your ScreenTip.
 
 <table><tr><td>Without ScreenTipText</td><td>With ScreenTipText</td></tr><tr><td><img src="Hyperlink_images/screentip_ug1.PNG"/></td><td><img src="Hyperlink_images/screentip_ug2.PNG"/></td></tr></table>
 
@@ -148,7 +148,7 @@ paragraphAdv.Inlines.Add(New FieldEndAdv())
 {% endhighlight %}
 {% endtabs %}
 
-The following code example illustrates how to insert hyperlink field with ScreenTip into SfRichTextBoxAdv Document through UI command.
+The following code example illustrates how to insert hyperlink field with ScreenTip into RichTextBox Document through UI command.
 {% tabs %}
 {% highlight C# %}
 SfRichTextBoxAdv.InsertHyperlinkCommand.Execute(new string[3] { "www.syncfusion.com", "SfRichTextBoxAdv", "SfRichTextBox" }, richTextBoxAdv);
@@ -156,11 +156,12 @@ SfRichTextBoxAdv.InsertHyperlinkCommand.Execute(new string[3] { "www.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-The following section illustrates how to insert hyperlink field with ScreenTip in SfRichTextBoxAdv Document through built-in hyperlink dialog UI command like Microsoft Word application.
+The following section illustrates how to insert hyperlink field with ScreenTip in RichTextBox Document through built-in hyperlink dialog UI command like Microsoft Word application.
 1.	Open insert hyperlink dialog.
 {% tabs %}
 {% highlight xaml %}
-<Button Content="Insert Hyperlink" Command="RichTextBoxAdv:SfRichTextBoxAdv.InsertHyperlinkCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"/>
+<!-- Binds button to the ShowHyperlinkDialogCommand -->
+<Button Content="Hyperlink" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowHyperlinkDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 
 {% endhighlight %}
 {% endtabs %}
