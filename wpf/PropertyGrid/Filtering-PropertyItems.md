@@ -309,53 +309,74 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Searching the Properties
 
-If the `PropertyGrid.SelectedObject` contains more properties, it is difficult to find the specific property. Now, we can easily get the required properties by searching the property name in the SearchBox. SearchBox will be filter and display the properties which are contains the searched text. SearchBox is shown by default, we can hide it by setting [SearchBoxVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SearchBoxVisibility) property as `Collapsed`.
+If the `PropertyGrid.SelectedObject` contains more properties, it is difficult to find the individual property and nested properties. Now, you can easily get the required properties by searching the property name in the SearchBox. SearchBox will be filter and display the properties which are contains the searched text. SearchBox is shown by default, you can hide it by setting [SearchBoxVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SearchBoxVisibility) property as `Collapsed`.
 
 {% tabs %}
 {% highlight C# %}
 
+// A Class that represents the nested properties
+public class Address {
+    public string State { get; set; }        
+    public string StreetName { get; set; }
+    public string DoorNo { get; set; }
+    public override string ToString() {
+        return DoorNo + ", " + StreetName + ", " + State;
+    }
+}
+
 public class Employee {
-    public int Age { get; set; }
     public string Name { get; set; }
-    public string EmailID { get; set; }
     public string ID { get; set; }
+    public int Age { get; set; }
+    // Property contains the nested properties
+    public Address Address { get; set; }
 }
 
 public class ViewModel {
     public object SelectedEmployee { get; set; }
+    public PropertyExpandModes PropertyExpandMode { get; set; }
     public ViewModel() {
-        SelectedEmployee = new Employee()
-        { 
-            EmailID="johnson@gta.com",
-            Age = 23, 
-            ID = "1207", 
-            Name = "John Son"
+        SelectedEmployee = new Employee() {                
+            Age = 23,
+            ID = "1207",
+            Name = "Mark",
+            Address = new Address()
+            {
+                State = "New Yark",
+                DoorNo = "10",
+                StreetName = "Martin street"
+            }
         };
+        PropertyExpandMode = PropertyExpandModes.FlatMode;
     }
 }
 
-{% endhighlight %} 
+{% endhighlight  %}
 {% endtabs %}
-
-**SearchBoxVisibility = Visible**
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee }" SearchBoxVisibility="Visible" />
+<syncfusion:PropertyGrid PropertyExpandMode="NestedMode"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
 
 {% endhighlight %} 
 {% highlight C# %}
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
-propertyGrid1.SearchBoxVisibility = Visibility.Visible;
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.PropertyExpandMode = PropertyExpandModes.NestedMode;
 
 {% endhighlight %} 
 {% endtabs %}
 
-![SearchBox filter the Age property in PropertyGrid](Filtering-Images\Searching.png)
+![SearchBox filter the nested property in PropertyGrid](Filtering-Images\Searching.png)
 
 Here, The `Age` property is searched in the SearchBox.                                             
 
@@ -382,6 +403,8 @@ propertyGrid1.SearchBoxVisibility = Visibility.Collapsed;
 Here, The SearchBox is hidden in the `PropertyGrid`.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property searching in the SearchBox support.
+
+## 
 
                                            
 

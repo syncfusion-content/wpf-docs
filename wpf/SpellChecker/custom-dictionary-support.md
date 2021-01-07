@@ -114,7 +114,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -213,7 +213,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -312,7 +312,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -423,7 +423,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -539,7 +539,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
