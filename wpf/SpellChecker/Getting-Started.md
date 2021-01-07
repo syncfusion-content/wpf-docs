@@ -25,7 +25,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF SfSpellChecker to an application
 
-Spell checking operation can be done on text editor controls through `SfSpellChecker` in WPF application by implementing `IEditorProperties` interface. 
+Spell checking operation can be done on text editor controls through `SfSpellChecker` in WPF application.
 
 You can add the `SfSpellChecker` to an application by the following steps,
 
@@ -33,7 +33,7 @@ You can add the `SfSpellChecker` to an application by the following steps,
 
     * Syncfusion.SfSpellChecker.WPF
 
-2. Add `TextBox` control and set `SfSpellChecker.SpellChecker` attached property to perform spell check.
+2. Add `TextBox` control and set [SfSpellChecker.SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_SpellCheckerProperty) attached property to perform spell check.
 
 {% tabs %}
 {% highlight XAML %}
@@ -81,7 +81,7 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -150,7 +150,7 @@ spellChecker.EnableSpellCheck = true;
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -204,7 +204,7 @@ spellChecker.EnableSpellCheck = false;
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -263,7 +263,7 @@ spellChecker.EnableContextMenu = true;
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -331,7 +331,7 @@ spellChecker.IgnoreHtmlTags = true;
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -398,7 +398,7 @@ spellChecker.SpellCheckCompleted += SpellChecker_SpellCheckCompleted;
 
 //Call SpellCheck method to open SpellCheck on button click
 private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-    spellChecker.PerformSpellCheckUsingDialog(Editor);
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 private void SpellChecker_SpellCheckCompleted(object sender, EventArgs e) {

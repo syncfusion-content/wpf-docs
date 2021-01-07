@@ -13,11 +13,11 @@ You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Data binding to Objects
 
-The `SfStepProgressBar` can bound to an external source to auto-create `StepViewItem` and display the data using the `ItemsSource` property.   
+The [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html) can bound to an external source to auto-create [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) and display the data using the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property.   
 
-N> To bind the `ItemsSource` to `SfStepProgressBar`, you need to have a collection with a data object which holds the step view item details.
+N> To bind the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) to [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html), you need to have a collection with a data object which holds the step view item details.
 
-Here, the `StepItem` class defined with `Content` and its properties, and the `ViewModel` class has the `ItemsSource` property of type `ObservableCollection<StepItem>`.
+Here, the `StepItem` class defined with [Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=net-5.0) and its properties, and the `ViewModel` class has the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property of type `ObservableCollection<StepItem>`.
 
 {% tabs %}
 {% highlight C# %}
@@ -159,43 +159,44 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgre
 
 ## Data-Binding with XML
 
-An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example shows this.
+An XML file can also be used as the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) for the Step Progress Bar control. The following example shows this.
 
-1. Create an XML file with the following information and name it Data.xml.
+Create an XML file with the following information and name it Data.xml.
 
-   ~~~xaml
+{% tabs %}
+{% highlight XAML %}
+<?xml version="1.0" encoding="utf-8" ?>
 
-	<?xml version="1.0" encoding="utf-8" ?>
+<StepItems SelectedIndex="3">
 
-    <StepItems SelectedIndex="3">
+<Step Name="Ordered"/>
+<Step Name="Shipped"/>
+<Step Name="Packed"/>
+<Step Name="Delivered"/>
 
-     <Step Name="Ordered"/>
-     <Step Name="Shipped"/>
-     <Step Name="Packed"/>
-     <Step Name="Delivered"/>
+</StepItems>
+{% endhighlight %}
+{% endtabs %}			
 
-    </StepItems>
-   ~~~			
+The ItemsSource property for the Step ProgressBar control.
 
-2. The ItemsSource property for the Step ProgressBar control.
+{% tabs %}
+{% highlight XAML %}
+<Window.Resources>
+<XmlDataProvider x:Key="xmlSource" Source="Data.xml" XPath="StepItems" />
+</Window.Resources>
 
-   ~~~xaml
-   
-    <Window.Resources>
-    <XmlDataProvider x:Key="xmlSource" Source="Data.xml" XPath="StepItems" />
-    </Window.Resources>
-
-	<syncfusion:SfStepProgressBar x:Name="stepperControlName"
-        ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
-        SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
-            <syncfusion:SfStepProgressBar.ItemContainerStyle>
-                <Style TargetType="syncfusion:StepViewItem">
-                    <Setter Property="Content" Value="{Binding XPath=@Name}" />
-                </Style>
-            </syncfusion:SfStepProgressBar.ItemContainerStyle>
-    </syncfusion:SfStepProgressBar>
-
-   ~~~
+<syncfusion:SfStepProgressBar x:Name="stepperControlName"
+    ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
+    SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
+    <syncfusion:SfStepProgressBar.ItemContainerStyle>
+        <Style TargetType="syncfusion:StepViewItem">
+            <Setter Property="Content" Value="{Binding XPath=@Name}" />
+        </Style>
+    </syncfusion:SfStepProgressBar.ItemContainerStyle>
+</syncfusion:SfStepProgressBar>
+{% endhighlight %}
+{% endtabs %}
 		
 This will create the following Step ProgressBar control.
 
