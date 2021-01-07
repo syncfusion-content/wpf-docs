@@ -61,10 +61,10 @@ You can change the progress value of the last active (selected) step view item b
 {% highlight XAML %}      
 <Grid x:Name="grid">
     <syncfusion:SfStepProgressBar SelectedIndex="2" SelectedItemProgress="50" SelectedItemStatus="Indeterminate">
-            <syncfusion:StepViewItem Content="Ordered" />
-            <syncfusion:StepViewItem Content="Shipped" />
-            <syncfusion:StepViewItem Content="Packed" />
-            <syncfusion:StepViewItem Content="Delivered" />
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
     </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
