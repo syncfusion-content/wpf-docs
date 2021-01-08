@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET Framework and .NET Core Compatibility of Syncfusion WPF controls
+title: .NET Framework & .NET Core Compatibility- Syncfusion WinForms controls
 description: Learn here about the history of .NET Framework and .NET Core support for the Syncfusion WPF controls
 platform: wpf
 control: .Net Framework support History
