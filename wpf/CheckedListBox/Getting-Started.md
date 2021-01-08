@@ -283,7 +283,6 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started)
 
-
 ## Localization support
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Select All` CheckListBoxItem in `CheckListBox` control by adding resource file for each language.
@@ -301,3 +300,5 @@ N> Refer [Localization of Syncfusion WPF Controls](https://help.syncfusion.com/w
 The following screenshot shows the localized `CheckListBox` control.
 
 ![WPF CheckListBox contain localized SelectAll item](Getting-Started_images/localized.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Localization)
