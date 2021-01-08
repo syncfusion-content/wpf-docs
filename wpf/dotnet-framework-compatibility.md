@@ -61,7 +61,7 @@ No<br/></td>
 
 <tr>
 <td>
-From 17.1 (2019 Vol1) <br/></td><td>
+From 17.2 (2019 Vol2) <br/></td><td>
 Yes<br/></td><td>
 Yes<br/></td><td>
 Yes<br/></td><td>
