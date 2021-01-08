@@ -23,7 +23,7 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <th>.NET 4.0<br/></th>
 <th>.NET 4.5<br/></th>
 <th>.NET 4.6 & above<br/></th>
-<th>.NET Core 3.0<br/></th>
+<th>.NET Core 3.1<br/></th>
 <th>.NET5<br/></th>
 </tr>
 
