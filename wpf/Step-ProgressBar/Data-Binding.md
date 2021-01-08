@@ -13,11 +13,11 @@ You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Data binding to Objects
 
-The `SfStepProgressBar` can bound to an external source to auto-create `StepViewItem` and display the data using the `ItemsSource` property.   
+The [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html) can bound to an external source to auto-create [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) and display the data using the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property.   
 
-N> To bind the `ItemsSource` to `SfStepProgressBar`, you need to have a collection with a data object which holds the step view item details.
+N> To bind the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) to [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html), you need to have a collection with a data object which holds the step view item details.
 
-Here, the `StepItem` class defined with `Content` and its properties, and the `ViewModel` class has the `ItemsSource` property of type `ObservableCollection<StepItem>`.
+Here, the `StepItem` class defined with [Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?view=net-5.0) and its properties, and the `ViewModel` class has the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) property of type `ObservableCollection<StepItem>`.
 
 {% tabs %}
 {% highlight C# %}
@@ -45,86 +45,86 @@ public class StepItem
 /// </summary>
 public class ViewModel : INotifyPropertyChanged
 {
-        /// <summary>
-        /// Represents the step view items.
-        /// </summary>
-        private ObservableCollection<StepItem> m_stepViewItems;
+    /// <summary>
+    /// Represents the step view items.
+    /// </summary>
+    private ObservableCollection<StepItem> m_stepViewItems;
 
-        /// <summary>
-        /// Represents the property changed event.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
+    /// <summary>
+    /// Represents the property changed event.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
 
-        /// <summary>
-        /// Gets or sets the step view items.
-        /// </summary>
-        public ObservableCollection<StepItem> StepViewItems
+    /// <summary>
+    /// Gets or sets the step view items.
+    /// </summary>
+    public ObservableCollection<StepItem> StepViewItems
+    {
+        get
         {
-            get
-            {
-                return m_stepViewItems;
-            }
-            set
-            {
-                m_stepViewItems = value;
-                OnPropertyChanged(new PropertyChangedEventArgs("StepViewItems"));
-            }
+            return m_stepViewItems;
         }
-
-        /// <summary>
-        /// Trigress the on property changed event.
-        /// </summary>
-        /// <param name="e"></param>
-        public void OnPropertyChanged(PropertyChangedEventArgs e)
+        set
         {
-            if (PropertyChanged != null)
-                PropertyChanged(this, e);
+            m_stepViewItems = value;
+            OnPropertyChanged(new PropertyChangedEventArgs("StepViewItems"));
         }
+    }
 
-        /// <summary>
-        /// Initialize the instance of <see cref="ViewModel"/> class.
-        /// </summary>
-        public ViewModel()
+    /// <summary>
+    /// Trigress the on property changed event.
+    /// </summary>
+    /// <param name="e"></param>
+    public void OnPropertyChanged(PropertyChangedEventArgs e)
+    {
+        if (PropertyChanged != null)
+            PropertyChanged(this, e);
+    }
+
+    /// <summary>
+    /// Initialize the instance of <see cref="ViewModel"/> class.
+    /// </summary>
+    public ViewModel()
+    {
+        StepViewItems = new ObservableCollection<StepItem>();
+        PopulateData();
+    }
+
+    /// <summary>
+    /// Populates the data.
+    /// </summary>
+    private void PopulateData()
+    {
+        //Adding the step view items into the collection
+        StepItem orderedStepViewItem = new StepItem()
         {
-            StepViewItems = new ObservableCollection<StepItem>();
-            PopulateData();
-        }
+            ModelText = "Ordered",
+            TitleSpace = 8
+        };
 
-        /// <summary>
-        /// Populates the data.
-        /// </summary>
-        private void PopulateData()
+        StepItem shippedStepViewItem = new StepItem()
         {
-            //Adding the step view items into the collection
-            StepItem orderedStepViewItem = new StepItem()
-            {
-                ModelText = "Ordered",
-                TitleSpace = 8
-            };
+            ModelText = "Shipped",
+            TitleSpace = 8
+        };
 
-            StepItem shippedStepViewItem = new StepItem()
-            {
-                ModelText = "Shipped",
-                TitleSpace = 8
-            };
+        StepItem packedStepViewItem = new StepItem()
+        {
+            ModelText = "Packed",
+            TitleSpace = 8
+        };
 
-            StepItem packedStepViewItem = new StepItem()
-            {
-                ModelText = "Packed",
-                TitleSpace = 8
-            };
+        StepItem deliveredStepViewItem = new StepItem()
+        {
+            ModelText = "Delivered",
+            TitleSpace = 8
+        };
 
-            StepItem deliveredStepViewItem = new StepItem()
-            {
-                ModelText = "Delivered",
-                TitleSpace = 8
-            };
-
-            StepViewItems.Add(orderedStepViewItem);
-            StepViewItems.Add(shippedStepViewItem);
-            StepViewItems.Add(packedStepViewItem);
-            StepViewItems.Add(deliveredStepViewItem);
-        }
+        StepViewItems.Add(orderedStepViewItem);
+        StepViewItems.Add(shippedStepViewItem);
+        StepViewItems.Add(packedStepViewItem);
+        StepViewItems.Add(deliveredStepViewItem);
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -139,15 +139,15 @@ public class ViewModel : INotifyPropertyChanged
         ItemsSource="{Binding StepViewItems}"
         Orientation="Horizontal"
         SelectedIndex="2">
-            <syncfusion:SfStepProgressBar.ItemContainerStyle>
-                <Style TargetType="syncfusion:StepViewItem">
-                    <Setter Property="Content" Value="{Binding ModelText}" />
-                    <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
-                </Style>
-            </syncfusion:SfStepProgressBar.ItemContainerStyle>
-            <syncfusion:SfStepProgressBar.DataContext>
-                <local:ViewModel />
-            </syncfusion:SfStepProgressBar.DataContext>
+        <syncfusion:SfStepProgressBar.ItemContainerStyle>
+            <Style TargetType="syncfusion:StepViewItem">
+                <Setter Property="Content" Value="{Binding ModelText}" />
+                <Setter Property="TextSpacing" Value="{Binding TitleSpace}" />
+            </Style>
+        </syncfusion:SfStepProgressBar.ItemContainerStyle>
+        <syncfusion:SfStepProgressBar.DataContext>
+            <local:ViewModel />
+        </syncfusion:SfStepProgressBar.DataContext>
     </syncfusion:SfStepProgressBar>
 </Grid>
 {% endhighlight %}
@@ -159,47 +159,44 @@ Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgre
 
 ## Data-Binding with XML
 
-An XML file can also be used as the ItemsSource for the Step Progress Bar control. The following example shows this.
+An XML file can also be used as the [ItemsSource](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms593015(v=vs.95)#:~:text=You%20can%20add%20items%20to,items%20property%20are%20read%2Donly.) for the Step Progress Bar control. The following example shows this.
 
-1. Create an XML file with the following information and name it Data.xml.
+Create an XML file with the following information and name it Data.xml.
 
-   ~~~xaml
+{% tabs %}
+{% highlight XAML %}
+<?xml version="1.0" encoding="utf-8" ?>
 
-	<?xml version="1.0" encoding="utf-8" ?>
+<StepItems SelectedIndex="3">
 
-    <StepItems SelectedIndex="3">
+<Step Name="Ordered"/>
+<Step Name="Shipped"/>
+<Step Name="Packed"/>
+<Step Name="Delivered"/>
 
-     <Step Name="Ordered"/>
-     <Step Name="Shipped"/>
-     <Step Name="Packed"/>
-     <Step Name="Delivered"/>
+</StepItems>
+{% endhighlight %}
+{% endtabs %}			
 
-    </StepItems>
-   ~~~
-			
-2. Add the XmlDataProvider for the XML document.
+The ItemsSource property for the Step ProgressBar control.
 
-   ~~~xaml
+{% tabs %}
+{% highlight XAML %}
+<Window.Resources>
+<XmlDataProvider x:Key="xmlSource" Source="Data.xml" XPath="StepItems" />
+</Window.Resources>
 
-    <XmlDataProvider x:Key="xmlSource" Source="Data.xml" XPath="StepItems" />
-			
-   ~~~
-
-3. The ItemsSource property for the Step ProgressBar control.
-
-   ~~~xaml
-   
-	<syncfusion:SfStepProgressBar x:Name="stepperControlName"
-        ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
-        SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
-            <syncfusion:SfStepProgressBar.ItemContainerStyle>
-                <Style TargetType="syncfusion:StepViewItem">
-                    <Setter Property="Content" Value="{Binding XPath=@Name}" />
-                </Style>
-            </syncfusion:SfStepProgressBar.ItemContainerStyle>
-    </syncfusion:SfStepProgressBar>
-
-   ~~~
+<syncfusion:SfStepProgressBar x:Name="stepperControlName"
+    ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Step}"
+    SelectedIndex="{Binding Source={StaticResource xmlSource}, XPath=@SelectedIndex}">
+    <syncfusion:SfStepProgressBar.ItemContainerStyle>
+        <Style TargetType="syncfusion:StepViewItem">
+            <Setter Property="Content" Value="{Binding XPath=@Name}" />
+        </Style>
+    </syncfusion:SfStepProgressBar.ItemContainerStyle>
+</syncfusion:SfStepProgressBar>
+{% endhighlight %}
+{% endtabs %}
 		
 This will create the following Step ProgressBar control.
 

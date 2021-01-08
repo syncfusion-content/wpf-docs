@@ -18,7 +18,7 @@ The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Sten
 xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
 
 <!--Define a Stencil-->
-<stencil:Stencil x:Name="stencil" ExpandMode="All" BorderBrush="Black" BorderThickness="0,0,2,0" />
+<stencil:Stencil x:Name="stencil" ExpandMode="All" BorderBrush="Black" BorderThickness="0,0,1,0" />
 
 {% endhighlight %}
 
@@ -111,37 +111,37 @@ ConnectorViewModel cvm = new ConnectorViewModel()
 };
 
 GroupViewModel grp = new GroupViewModel()
-            {
-                Nodes = new NodeCollection()
-                {
-                    new NodeViewModel()
-                    {
-                        ID="srcnode",
-                        UnitHeight=70,
-                        UnitWidth=100,
-                        OffsetX=0,
-                        OffsetY=300,
-                        Shape=App.Current.Resources["Rectangle"]
-                    },
-                    new NodeViewModel()
-                    {
-                        ID="tarnode",
-                        UnitHeight=70,
-                        UnitWidth=100,
-                        OffsetX=100,
-                        OffsetY=500,
-                        Shape=App.Current.Resources["Rectangle"]
-                    }
-                },
-                Connectors = new ConnectorCollection()
-                {
-                    new ConnectorViewModel()
-                    {
-                        SourceNodeID="srcnode", 
-                        TargetNodeID="tarnode"
-                    }
-                }
-            };
+{
+    Nodes = new NodeCollection()
+    {
+       new NodeViewModel()
+       {
+         ID="srcnode",
+         UnitHeight=70,
+         UnitWidth=100,
+         OffsetX=0,
+         OffsetY=300,
+         Shape=App.Current.Resources["Rectangle"]
+        },
+       new NodeViewModel()
+       {
+        ID="tarnode",
+        UnitHeight=70,
+        UnitWidth=100,
+        OffsetX=100,
+        OffsetY=500,
+        Shape=App.Current.Resources["Rectangle"]
+        }
+    },
+    Connectors = new ConnectorCollection()
+    {
+      new ConnectorViewModel()
+      {
+        SourceNodeID="srcnode", 
+        TargetNodeID="tarnode"
+      }
+    }
+};
 //Adding an element to the collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
 (stencil.SymbolSource as SymbolCollection).Add(cvm);
@@ -175,20 +175,14 @@ The [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
               Fill="White"
               Stroke="Black"
               StrokeThickness="1" />
-        <TextBlock HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   Text="Diamond" />
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Diamond" />
     </StackPanel>
 </DataTemplate>
- <DataTemplate x:Key="symboltemplate">
-            <StackPanel>
-                <Image Source="/Image/user_image.png"
-                       Width="100"
-                       Height="80" />
-                <TextBlock HorizontalAlignment="Center"
-                           VerticalAlignment="Center"
-                           Text="User" />
-            </StackPanel>
+<DataTemplate x:Key="symboltemplate">
+    <StackPanel>
+       <Image Source="/Image/user_image.png" Width="100" Height="80" />
+       <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="User" />
+    </StackPanel>
 </DataTemplate>
 
 <stencil:Stencil.SymbolSource>
@@ -248,14 +242,14 @@ The width and height properties of the symbol enable you to define the size of t
 {% highlight xaml %}
 
  <!--Style for Symbol-->
-        <Style TargetType="stencil:Symbol">
-            <Setter Property="Width" Value="100" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="Blue" />            
-            <Setter Property="Padding" Value="5"></Setter>
-        </Style>
+<Style TargetType="stencil:Symbol">
+    <Setter Property="Width" Value="100" />
+    <Setter Property="Height" Value="100" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Blue" />            
+    <Setter Property="Padding" Value="5"></Setter>
+</Style>
 
 {% endhighlight %}
  
@@ -443,38 +437,38 @@ ConnectorViewModel cvm = new ConnectorViewModel()
 };
 
 GroupViewModel grp = new GroupViewModel()
-            {
-                Key="Group",
-                Nodes = new NodeCollection()
-                {
-                    new NodeViewModel()
-                    {
-                        ID="srcnode",
-                        UnitHeight=70,
-                        UnitWidth=100,
-                        OffsetX=0,
-                        OffsetY=300,
-                        Shape=App.Current.Resources["Rectangle"]
-                    },
-                    new NodeViewModel()
-                    {
-                        ID="tarnode",
-                        UnitHeight=70,
-                        UnitWidth=100,
-                        OffsetX=100,
-                        OffsetY=500,
-                        Shape=App.Current.Resources["Rectangle"]
-                    }
-                },
-                Connectors = new ConnectorCollection()
-                {
-                    new ConnectorViewModel()
-                    {
-                        SourceNodeID="srcnode", 
-                        TargetNodeID="tarnode"
-                    }
-                }
-            };
+{
+    Key="Group",
+    Nodes = new NodeCollection()
+    {
+       new NodeViewModel()
+       {
+        ID="srcnode",
+        UnitHeight=70,
+        UnitWidth=100,
+        OffsetX=0,
+        OffsetY=300,
+        Shape=App.Current.Resources["Rectangle"]
+       },
+       new NodeViewModel()
+       {
+        ID="tarnode",
+        UnitHeight=70,
+        UnitWidth=100,
+        OffsetX=100,
+        OffsetY=500,
+        Shape=App.Current.Resources["Rectangle"]
+        }
+    },
+    Connectors = new ConnectorCollection()
+    {
+      new ConnectorViewModel()
+      {
+        SourceNodeID="srcnode", 
+        TargetNodeID="tarnode"
+       }
+    }
+};
 
 //Add the element to the symbol collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
@@ -504,30 +498,29 @@ You can customize the appearance of a `SymbolGroup` header by changing its style
 {% highlight xaml %}
 
  <!--Style for Symbol Group-->
-        <Style TargetType="stencil:SymbolGroup">
-            <Setter Property="FontFamily" Value="Regular"/>
-            <Setter Property="Background" Value="#ffffff"/>
-            <Setter Property="Foreground" Value="#222222"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="HeaderTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <stencil:Header>
-                            <stencil:Header.Template>
-                                <ControlTemplate TargetType="stencil:Header">
-                                    <Grid>
-                                        <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" 
-                                                BorderThickness="1">
-                                            <ContentPresenter Margin="10" Content="{Binding}"/>
-                                        </Border>
-                                    </Grid>
-                                </ControlTemplate>
-                            </stencil:Header.Template>
-                        </stencil:Header>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+<Style TargetType="stencil:SymbolGroup">
+    <Setter Property="FontFamily" Value="Regular"/>
+    <Setter Property="Background" Value="#ffffff"/>
+    <Setter Property="Foreground" Value="#222222"/>
+    <Setter Property="FontSize" Value="14"/>
+    <Setter Property="HeaderTemplate">
+    <Setter.Value>
+      <DataTemplate>
+        <stencil:Header>
+           <stencil:Header.Template>
+              <ControlTemplate TargetType="stencil:Header">
+                <Grid>
+                  <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" BorderThickness="1">
+                    <ContentPresenter Margin="10" Content="{Binding}"/>
+                  </Border>
+                </Grid>
+               </ControlTemplate>
+           </stencil:Header.Template>
+        </stencil:Header>
+      </DataTemplate>
+    </Setter.Value>
+   </Setter>
+</Style>
 
 {% endhighlight %}
  
@@ -573,8 +566,7 @@ The built-in shape paths available in the diagram resource dictionary are groupe
 {% highlight xaml %}
 <!--Initialize the stencil-->
 <Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}"
-ExpandMode="ZeroOrMore"                         BorderBrush="#dfdfdf"
-BorderThickness="1">
+ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
    <!--Initialize the stencil categories-->
     <Stencil:Stencil.Categories>
      <Stencil:StencilCategoryCollection>
@@ -620,8 +612,7 @@ The custom symbol collections can be added to the stencil by defining the custom
 </DataTemplate>
 <!--Initialize the stencil-->
 <Stencil:Stencil x:Name="stencil" Title="Shapes" TitleTemplate="{StaticResource TitleTemplate}" ExpandMode="ZeroOrMore"
-BorderBrush="#dfdfdf"
-BorderThickness="1">
+BorderBrush="#dfdfdf" BorderThickness="1">
     <!--Initialize the stencil categories-->
     <Stencil:Stencil.Categories>
         <Stencil:StencilCategoryCollection>
@@ -715,76 +706,75 @@ The following code explains how to create a symbol filter in the stencil.
    <viewmodel:StencilVM></viewmodel:StencilVM>
 </Window.DataContext>
 <Window.Resources>
-        <DataTemplate x:Key="TitleTemplate">
-            <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
-            </TextBlock>
-        </DataTemplate>
-        <!--Style for Node-->
-        <Style TargetType="{x:Type syncfusion:Node}">
-            <Setter Property="ShapeStyle">
-                <Setter.Value>
-                    <Style  TargetType="Path">
-                        <Setter Property="Fill" Value="#FF5B9BD5"/>
-                        <Setter Property="Stroke" Value="#FFEDF1F6"/>
-                        <Setter Property="StrokeThickness" Value="1"/>
-                        <Setter Property="Stretch" Value="Fill"/>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <!--Style for Connector-->
-            <Style TargetType="{x:Type syncfusion:Connector}">
-            <Setter Property="ConnectorGeometryStyle">
-                <Setter.Value>
-                    <Style TargetType="Path">
-                        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
-                        <Setter Property="StrokeThickness" Value="1"></Setter>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="TargetDecoratorStyle">
-                <Setter.Value>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
-                        <Setter Property="StrokeThickness" Value="1"></Setter>
-                    </Style>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <!--Style for Symbol-->
-        <Style TargetType="stencil:Symbol">
-            <Setter Property="Width" Value="100" />
-            <Setter Property="Height" Value="100" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderBrush" Value="Transparent" />
-            <Setter Property="Margin" Value="4"></Setter>
-        </Style>
-        <!--Style for Symbol Group-->
-        <Style TargetType="stencil:SymbolGroup">
-            <Setter Property="FontFamily" Value="Regular"/>
-            <Setter Property="Background" Value="#ffffff"/>
-            <Setter Property="Foreground" Value="#222222"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="HeaderTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <stencil:Header>
-                            <stencil:Header.Template>
-                                <ControlTemplate TargetType="stencil:Header">
-                                    <Grid>
-                                        <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" 
-                                                BorderThickness="1">
-                                            <ContentPresenter Margin="10" Content="{Binding}"/>
-                                        </Border>
-                                    </Grid>
-                                </ControlTemplate>
-                            </stencil:Header.Template>
-                        </stencil:Header>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+<DataTemplate x:Key="TitleTemplate">
+   <TextBlock x:Name="HeaderText" Text="{Binding}" FontSize="15" FontWeight="SemiBold"  Foreground="#2b579a" >
+   </TextBlock>
+</DataTemplate>
+<!--Style for Node-->
+<Style TargetType="{x:Type syncfusion:Node}">
+    <Setter Property="ShapeStyle">
+     <Setter.Value>
+       <Style  TargetType="Path">
+         <Setter Property="Fill" Value="#FF5B9BD5"/>
+         <Setter Property="Stroke" Value="#FFEDF1F6"/>
+         <Setter Property="StrokeThickness" Value="1"/>
+         <Setter Property="Stretch" Value="Fill"/>
+       </Style>
+     </Setter.Value>
+    </Setter>
+</Style>
+<!--Style for Connector-->
+<Style TargetType="{x:Type syncfusion:Connector}">
+   <Setter Property="ConnectorGeometryStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+        <Setter Property="StrokeThickness" Value="1"></Setter>
+      </Style>
+    </Setter.Value>
+   </Setter>
+   <Setter Property="TargetDecoratorStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+        <Setter Property="StrokeThickness" Value="1"></Setter>
+      </Style>
+    </Setter.Value>
+   </Setter>
+</Style>
+<!--Style for Symbol-->
+<Style TargetType="stencil:Symbol">
+  <Setter Property="Width" Value="100" />
+  <Setter Property="Height" Value="100" />
+  <Setter Property="BorderThickness" Value="1" />
+  <Setter Property="Background" Value="Transparent" />
+  <Setter Property="BorderBrush" Value="Transparent" />
+  <Setter Property="Margin" Value="4"></Setter>
+</Style>
+<!--Style for Symbol Group-->
+<Style TargetType="stencil:SymbolGroup">
+  <Setter Property="FontFamily" Value="Regular"/>
+  <Setter Property="Background" Value="#ffffff"/>
+  <Setter Property="Foreground" Value="#222222"/>
+  <Setter Property="FontSize" Value="14"/>
+  <Setter Property="HeaderTemplate">
+    <Setter.Value>
+      <DataTemplate>
+        <stencil:Header>
+          <stencil:Header.Template>
+            <ControlTemplate TargetType="stencil:Header">
+              <Grid>
+                <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" BorderThickness="1">
+                  <ContentPresenter Margin="10" Content="{Binding}"/>
+                </Border>
+               </Grid>
+            </ControlTemplate>
+          </stencil:Header.Template>
+        </stencil:Header>
+      </DataTemplate>
+    </Setter.Value>
+  </Setter>
+</Style>
 </Window.Resources>
 <Grid>
   <Grid.ColumnDefinitions>
@@ -920,8 +910,7 @@ Please find the code example that explains how to add a title and its customizat
   <StackPanel Orientation="Horizontal">
    <Image Source="/Image/Shapes.png"
       Width="15" Height="15" />
-   <TextBlock Margin="5,0,0,0" HorizontalAlignment="Center"
-    VerticalAlignment="Center"                        Text="Shapes" />
+   <TextBlock Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Shapes" />
   </StackPanel>
 </DataTemplate>
 

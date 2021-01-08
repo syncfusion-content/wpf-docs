@@ -13,11 +13,11 @@ In this section, let us see how to configure properties manually in (`xaml` or `
 
 ## Define PropertyItem manually 
 
-By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the `PropertyGridItem`.
+By default, property items of `PropertyGrid.SelectedObject` are automatically generated in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. Now, you can restrict the auto generated items and manually define a property items through the `XAML` by using the [PropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem).
 
 ### Adding defined PropertyGridItems into PropertyGrid
 
-If you want to load the manually defined property items into the `PropertyGrid`, add that `Items` collection property. You can enable it only by setting the `AutoGenerateItems` property value as `false`. The default value of `AutoGenerateItems` property is `true`.
+If you want to load the manually defined property items into the `PropertyGrid`, add that `Items` collection property. You can enable it only by setting the [AutoGenerateItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGenerateItems) property value as `false`. The default value of `AutoGenerateItems` property is `true`.
 
 N> When `AutoGenerateItems` is `false`, `AutoGeneratingPropertyGridItem` event will not be triggered.
 
@@ -90,7 +90,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-gr
 
 ## Add or remove PropertyItem at runtime
 
-You can manually add or remove the property item at runtime by adding or removing that item from the `Items` collection property. You can also clear all the property items from the `PropertyGrid`.
+You can manually add or remove the property item at runtime by adding or removing that item from the [Items](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Items) collection property. You can also clear all the property items from the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -204,19 +204,19 @@ private void ClearItems_Click(object sender, RoutedEventArgs e) {
 
 You can customize the display name, description, category, nested mode, readonly state and value editor for any property items.
 
-* `PropertyGridItem.DisplayName` - To customize the display name for the property items.
+* [PropertyGridItem.DisplayName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_DisplayName) - To customize the display name for the property items.
 
-* `PropertyGridItem.Description`- To customize the description for the property items.
+* [PropertyGridItem.Description](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Description)- To customize the description for the property items.
 
-* `PropertyGridItem.CategoryName` - To customize the category for the property items.
+* [PropertyGridItem.CategoryName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_CategoryName) - To customize the category for the property items.
 
-* `PropertyGridItem.IsReadOnly` - To customize the readonly state for the property items.
+* [PropertyGridItem.IsReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_IsReadOnly) - To customize the readonly state for the property items.
 
-* `PropertyGridItem.Editor` - To customize the own value editor for the property items.
+* [PropertyGridItem.Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Editor) - To customize the own value editor for the property items.
 
-* `PropertyGridItem.NestedPropertyDisplayMode` - To customize the nested mode of the property items.
+* [PropertyGridItem.NestedPropertyDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_NestedPropertyDisplayMode) - To customize the nested mode of the property items.
 
-* `PropertyGridItem.Visibility` - To customize the visibility for the property items.
+* [PropertyGridItem.Visibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_Visibility) - To customize the visibility for the property items.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Custom-PropertyDefinition)
 
@@ -443,3 +443,104 @@ propertyGrid1.Items.Add(new PropertyGridItem()
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Custom-PropertyDefinition)
 
+## Manually customize the UI of description panel
+
+You can customize the different UI for specific property's description panel by using the [PropertyGridItem.DescriptionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGridItem.html#Syncfusion_Windows_PropertyGrid_PropertyGridItem_DescriptionTemplate) property. The `DataContext` of `PropertyGridItem.DescriptionTemplate` property is `PropertyGridItem`.
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+
+public enum Gender {
+    Male,
+    Female
+}
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    public Gender Gender { get; set; }
+    public string EmailID { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Gender = Gender.Male,
+            EmailID = "john@123.c"
+        };
+    }
+}
+      
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid x:Name="grid">
+    <Grid.Resources>
+        <DataTemplate x:Key="template1">
+            <StackPanel>
+                <TextBlock 
+                    Text="{Binding Name}" 
+                    FontSize="16" 
+                    Foreground="Red" 
+                    TextWrapping="Wrap"/>
+                <TextBlock 
+                    Text="{Binding Description}"
+                    FontSize="14" 
+                    Foreground="Green" 
+                    TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="template2">
+            <StackPanel>
+                <TextBlock 
+                    Text="{Binding Name}" 
+                    FontSize="16" 
+                    Foreground="BlueViolet" 
+                    TextWrapping="Wrap"/>
+                <TextBlock 
+                    Text="{Binding Description}"
+                    FontSize="14" 
+                    Foreground="DarkCyan" 
+                    TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </Grid.Resources>
+    <syncfusion:PropertyGrid
+        DescriptionPanelVisibility="Visible"
+        AutoGenerateItems="False" 
+        x:Name="propertyGrid1">
+        <syncfusion:PropertyGrid.SelectedObject>
+            <local:Employee></local:Employee>
+        </syncfusion:PropertyGrid.SelectedObject>
+        <syncfusion:PropertyGrid.Items>
+            <syncfusion:PropertyGridItem PropertyName="Name"
+                                         Description="Name of the Employee"
+                                         DescriptionTemplate="{StaticResource template1}" >
+            </syncfusion:PropertyGridItem>
+            <syncfusion:PropertyGridItem PropertyName="ID"
+                                         Description="ID of the Employee"
+                                         DescriptionTemplate="{StaticResource template2}"/>
+            <syncfusion:PropertyGridItem PropertyName="DOB"
+                                         Description="Date o Birth of the Employee"/>
+        </syncfusion:PropertyGrid.Items>
+    </syncfusion:PropertyGrid>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGridItem with different custom description panel](Property_definition_images\DescriptionPanel.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Custom-PropertyDefinition)

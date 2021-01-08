@@ -56,21 +56,36 @@ You can configure the appointment reminders with [SchedulerReminder](https://hel
 </table>
 
 {% tabs %}
+{% highlight xaml %}
+ <Grid.DataContext>
+    <local:ReminderViewModel/>
+ </Grid.DataContext>
+ <syncfusion:SfScheduler x:Name="Schedule" 
+                ItemsSource="{Binding Events}"
+                EnableReminder="True">
+  </syncfusion:SfScheduler>
+{% endhighlight %}
 {% highlight c#%}
- ScheduleAppointmentCollection scheduleAppointments = new ScheduleAppointmentCollection();
-scheduleAppointments.Add(new ScheduleAppointment
-{
-    StartTime = DateTime.Now.Date.AddHours(9),
-    EndTime = DateTime.Now.Date.AddHours(10),
-    Subject = "Appointment",
-    Reminders = new ObservableCollection<SchedulerReminder>()
-                {
-                    new SchedulerReminder(){ReminderTimeInterval = new TimeSpan(5, 0, 0, 0)},
-                    new SchedulerReminder(){ReminderTimeInterval = new TimeSpan(10, 0, 0, 0)}
-                },
-});
+ public class ReminderViewModel 
+ {
+    ...
+    public ScheduleAppointmentCollection Events { get; set; } = new ScheduleAppointmentCollection();
+    this.Events.Add(new ScheduleAppointment()
+    {
+        StartTime = DateTime.Now,
+        EndTime = DateTime.Now.AddHours(1),
+        AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
+        Subject = "Conference",
+        Reminders = new ObservableCollection<SchedulerReminder>
+        {
+            new SchedulerReminder { ReminderTimeInterval = new TimeSpan(0)},
+        }
+    });
+ }
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-reminders-wpf-scheduler)
 
 ## Creating business object for reminder  
 `Reminders` supports to map your custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
@@ -80,13 +95,26 @@ scheduleAppointments.Add(new ScheduleAppointment
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
-public class Meeting
-{
-    public string EventName { get; set; }
-    public DateTime From { get; set; }
-    public DateTime To { get; set; }
-    public ObservableCollection<CustomReminder> Alerts { get; set; }
-}
+ public class Event
+    {
+        public Event()
+        {
+        }
+
+        public DateTime From { get; set; }
+        public DateTime To { get; set; }
+        public bool IsAllDay { get; set; }
+        public string EventName { get; set; }
+        public string Notes { get; set; }
+        public string StartTimeZone { get; set; }
+        public string EndTimeZone { get; set; }
+        public Brush Color { get; set; }
+        public object RecurrenceId { get; set; }
+        public object Id { get; set; }
+        public string RecurrenceRule { get; set; }
+        public ObservableCollection<DateTime> RecurrenceExceptions { get; set; }
+        public ObservableCollection<Reminder> Reminders { get; set; }
+    }
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,35 +128,18 @@ The [ReminderMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sche
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
-public class CustomReminder : INotifyPropertyChanged
+public class Reminder
 {
-    private TimeSpan reminderTimeInterval;
-    private bool dissmis;
-    public TimeSpan ReminderInterval
-    {
-        get { return reminderTimeInterval; }
-        set
-        {
-            reminderTimeInterval = value;
-            this.RaisePropertyChange("ReminderInterval");
-        }
-    }
-    public bool Dismiss
-        {
-        get { return dissmis; }
-        set
-        {
-            dissmis = value;
-            this.RaisePropertyChange("Dismiss");
-        }
-    }
+    /// <summary>
+    /// Gets or sets the value indicating whether the reminder is dismissed or not. 
+    /// </summary>
+    public bool Dismissed { get; set; }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+    /// <summary>
+    /// Gets or sets the value to display reminder alert before appointment start time.
+    /// </summary>
+    public TimeSpan TimeInterval { get; set; }
 
-    private void RaisePropertyChange(string propName)
-    {
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
-    }
 }
 
 {% endhighlight %}
@@ -138,38 +149,51 @@ You can map those properties of the `Meeting` class with the [SfScheduler](https
 
 {% tabs %}
 {% highlight xaml %}
-<scheduler:SfScheduler
-x:Name="scheduler" ViewType="Week" 
-EnableReminder="True" >
-    <scheduler:SfScheduler.AppointmentMapping>
-        <scheduler:AppointmentMapping
-         StartTime="From"
-         EndTime="To"
-         Subject="EventName"
-         Reminders="Alerts">
-        <scheduler:AppointmentMapping.ReminderMapping>
-        <scheduler:ReminderMapping IsDismissed="Dismiss"
-        ReminderTimeInterval="ReminderInterval"/>
-        </scheduler:AppointmentMapping.ReminderMapping>
-        </scheduler:AppointmentMapping>
-    </scheduler:SfScheduler.AppointmentMapping>
-</scheduler:SfScheduler>
+ <syncfusion:SfScheduler x:Name="Schedule" 
+                ItemsSource="{Binding Events}"
+                EnableReminder="True">
+            <syncfusion:SfScheduler.AppointmentMapping>
+                <syncfusion:AppointmentMapping
+                    Subject="EventName"
+                    StartTime="From"
+                    EndTime="To"
+                    AppointmentBackground="Color"
+                    IsAllDay="IsAllDay"
+                    StartTimeZone="StartTimeZone"
+                    EndTimeZone="EndTimeZone"
+                    RecurrenceExceptionDates="RecurrenceExceptions"
+                    RecurrenceRule="RecurrenceRule"
+                    RecurrenceId="RecurrenceId"
+                    Reminders="Reminders">
+                    <syncfusion:AppointmentMapping.ReminderMapping>
+                        <syncfusion:ReminderMapping IsDismissed="Dismissed"
+                                                    ReminderTimeInterval="TimeInterval"/>
+                    </syncfusion:AppointmentMapping.ReminderMapping>
+                </syncfusion:AppointmentMapping>
+            </syncfusion:SfScheduler.AppointmentMapping>
+        </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c#%}
-ObservableCollection<Meeting> Meetings = new ObservableCollection<Meeting>();
-Meetings.Add(new Meeting
+public class ReminderViewModel 
 {
-    From = DateTime.Now.Date.AddHours(9),
-    To = DateTime.Now.Date.AddHours(10),
-    EventName = "Appointment",
-    Alerts = new ObservableCollection<CustomReminder>()
+  ...
+  public ObservableCollection<Event> Events { get; set; } = new ObservableCollection<Event>();
+  this.Events.Add(new Event()
+  {
+    From = DateTime.Now,
+    To = DateTime.Now.AddHours(1),
+    Color = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
+    EventName = "Conference",
+    Reminders = new ObservableCollection<Reminder>
     {
-        new CustomReminder() { ReminderInterval = new TimeSpan(5, 0, 0) },
-        new CustomReminder() { ReminderInterval = new TimeSpan(10, 0, 0) }
-     }
-});
+        new Reminder { TimeInterval = new TimeSpan(0)},
+    }
+    });
+}
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-reminders-wpf-scheduler)
 
 ## ReminderAlertOpening event
 Scheduler notifies by the [ReminderAlertOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertOpening) event when appearing in the reminder window. The [ReminderAlertOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderAlertOpeningEventArgs.html) has following properties,

@@ -11,7 +11,7 @@ documentation: ug
 You can highly customize the appearance of the Step progress bar in the following ways.
 
 ## Step Shape
-You can change the shape of a step marker by using the [MarkerShapeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MarkerShapeType) property. The default value of this property is `Circle.`
+You can change the shape of a step marker by using the [MarkerShapeType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MarkerShapeType) property. The default value of this property is [Circle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MarkerShapeType_Circle).
 
 {% tabs %}
 {% highlight XAML %}
@@ -25,33 +25,40 @@ You can change the shape of a step marker by using the [MarkerShapeType](https:/
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.Content = "Shipped";
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.Content = "Delivered";
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 3;
-stepProgressBar.MarkerShapeType = MarkerShapeType.Square;
+        stepProgressBar.SelectedIndex = 3;
+        stepProgressBar.MarkerShapeType = MarkerShapeType.Square;
 
-grid.Children.Add(stepProgressBar);
+        grid.Children.Add(stepProgressBar);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
 ![Marker shape type image](Appearance_images/MarkerShapeType.png)
 
 ## Orientation
-You can change the orientation of step progressbar by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is `Horizontal.`
+You can change the orientation of step progressbar by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property. The default value of this property is [Horizontal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation_Horizontal).
 {% tabs %}
 {% highlight XAML %}      
 <Grid x:Name="grid">
@@ -64,26 +71,33 @@ You can change the orientation of step progressbar by using the [Orientation](ht
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.Content = "Shipped";
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.Content = "Delivered";
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 3;
-stepProgressBar.Orientation = Orientation.Vertical;
+        stepProgressBar.SelectedIndex = 3;
+        stepProgressBar.Orientation = Orientation.Vertical;
 
-grid.Children.Add(stepProgressBar);            
+        grid.Children.Add(stepProgressBar); 
+    }
+}           
 {% endhighlight %}
 {% endtabs %}
 ![Orientation image](Appearance_images/Orientation.png)
@@ -107,35 +121,42 @@ You can customize the color and thickness of the Step progressbar using the foll
 </syncfusion:SfStepProgressBar>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.Content = "Shipped";
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.Content = "Delivered";
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 3;
-stepProgressBar.ActiveConnectorColor =new SolidColorBrush(Colors.Coral);
-stepProgressBar.ConnectorColor = new SolidColorBrush(Colors.Crimson);
-stepProgressBar.ConnectorThickness = 4;
+        stepProgressBar.SelectedIndex = 3;
+        stepProgressBar.ActiveConnectorColor =new SolidColorBrush(Colors.Coral);
+        stepProgressBar.ConnectorColor = new SolidColorBrush(Colors.Crimson);
+        stepProgressBar.ConnectorThickness = 4;
 
-grid.Children.Add(stepProgressBar);
+        grid.Children.Add(stepProgressBar);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 ![ColorCutomization Image](Appearance_images/ConnectorCustomization.png)
 
 ## MarkerClicked Event
 
-You can get the `StepViewItem` values when the marker of step view item is clicked. The following example shows this.
+You can get the [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) values when the marker of step view item is clicked. The following example shows this.
 
 {% tabs %}
 {% highlight xaml %}
