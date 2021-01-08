@@ -23,7 +23,7 @@ The following are the API’s in ChartAxis
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
 
-* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values as shown below, 
+* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end visible values as shown below,
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ The following are the API’s in ChartAxis
 [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)
 </td>
 <td>
-Gets the start value of the selected range.
+Gets the start value of the visible range.
 </td>
 </tr>
 <tr>
@@ -39,7 +39,7 @@ Gets the start value of the selected range.
 [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)
 </td>
 <td>
-Gets the end value of the selected range.
+Gets the end value of the visible range.
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ Gets the end value of the selected range.
 [`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)
 </td>
 <td>
-Gets the Delta value of the selected range.
+Gets the delta value of the visible range.
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Gets the Delta value of the selected range.
 [`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)
 </td>
 <td>
-Gets the Empty value of the selected range.
+Gets the empty value of the visible range.
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Gets a value indicating whether IsEmpty.
 [`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)
 </td>
 <td>
-Gets the Median value of the selected range.
+Gets the median value of the visible range.
 </td>
 </tr>
 </table>
