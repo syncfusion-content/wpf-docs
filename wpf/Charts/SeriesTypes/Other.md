@@ -134,9 +134,9 @@ boxAndWhisker.ShowMedian = true;
 ![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
 
 N>
-* The median is the middle number of an ordered data set if there is an odd number of data points in the original ordered data set.
+* The middle number of data points is the median for the odd number of data points.
 
-* If the original ordered data set includes an even number of data points, the median is the sum of the two numbers in the center.
+* The average of the middle two numbers is a median for even numbers of data points.
 
 
 ### Outlier
