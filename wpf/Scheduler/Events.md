@@ -33,8 +33,9 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" CellTapped="Scheduler_CellTapped">
-</syncfusion:SfScheduler>
+                        ViewType="Month"
+                        CellTapped="Scheduler_CellTapped" >
+</syncfusion:SfScheduler>  
 {% endhighlight %}
 {% highlight c#%}
 private void Scheduler_CellTapped(object sender, CellTappedEventArgs e)
@@ -51,7 +52,8 @@ The [CellDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" CellTapped="Scheduler_CellDoubleTapped">
+                        ViewType="Month" 
+						CellDoubleTapped="Scheduler_CellDoubleTapped">
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c#%}
@@ -66,9 +68,40 @@ private void Scheduler_CellDoubleTapped(object sender, CellDoubleTappedEventArgs
 
 The [CellLongPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user long presses the cell in Scheduler. This event receives two arguments namely `this` that handles `SfScheduler` and [CellLongPressedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellLongPressedEventArgs.html) as objects.The base class of the [CellLongPressedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellLongPressedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html)
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						CellLongPressed="Schedule_CellLongPressed">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_CellLongPressed(object sender, CellLongPressedEventArgs e)
+{
+    var dateTime = e.DateTime.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## SelectionChanged
 
 The [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs after the selection is changed in Scheduler. This event receives two arguments namely `this` that handles `SfScheduler` and [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html) as objects.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						SelectionChanged="Schedule_SelectionChanged">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_SelectionChanged(object sender, SelectionChangedEventArgs e)
+{
+    var newdate = e.NewValue.ToString();
+    var olddate = e.OldValue.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
 
 The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html) object contains the following properties:
 
@@ -84,6 +117,22 @@ The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.S
 * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_OldValue) - gets an old selected date.
 * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_NewValue)- gets a new selected date.
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						SelectionChanging="Schedule_SelectionChanging">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_SelectionChanging(object sender, SelectionChangingEventArgs e)
+{
+    var newdate = e.NewValue.ToString();
+    var olddate = e.OldValue.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## ViewHeaderCellTapped
 
 The [ViewHeaderCellTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user clicks or touches the view header in Scheduler. This event receives two arguments namely `this` that handles `SfScheduler` and [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html) as objects.
@@ -93,6 +142,21 @@ The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusi
 * [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewHeaderCellTappedEventArgs_DateTime) - gets the corresponding date time.
 * [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewHeaderCellTappedEventArgs_Resource) - gets the resource when tapped on view header in day, week, work week and timeline views.
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						ViewHeaderCellTapped="Schedule_ViewHeaderCellTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_ViewHeaderCellTapped(object sender, ViewHeaderCellTappedEventArgs e)
+{
+    var dateTime = e.DateTime.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## HeaderTapped
 
 The [HeaderTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when the user clicks or touches the Scheduler header. This event receives two arguments namely `this` that handles `SfScheduler` and [HeaderTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.HeaderTappedEventArgs.html) as objects.
@@ -100,6 +164,21 @@ The [HeaderTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedul
 The [HeaderTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.HeaderTappedEventArgs.html) object contains the following properties:
 
 * [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.HeaderTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_HeaderTappedEventArgs_DateTime) - gets the corresponding date time.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						HeaderTapped="Schedule_HeaderTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_HeaderTapped(object sender, HeaderTappedEventArgs e)
+{
+    var dateTime = e.DateTime.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## WeekNumberTapped
 
@@ -111,6 +190,21 @@ The [WeekNumberTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 * [WeekNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_WeekNumberTappedEventArgs_WeekNumber)- gets the corresponding week number.
 * [Year](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_WeekNumberTappedEventArgs_Year)- gets the corresponding year.
 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						WeekNumberTapped="Schedule_WeekNumberTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_WeekNumberTapped(object sender, WeekNumberTappedEventArgs e)
+{
+    var weeknumber = e.WeekNumber.ToString();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## AppointmentTapped
 
 The [AppointmentTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event occurs when schedule appointments get tapped in all views. This event receives two arguments namely `this` that handles `SfScheduler` and [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html) as objects.
@@ -120,3 +214,18 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 * [Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_Appointment)- gets the custom appointment details
 * [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_SelectedDate)- gets the SelectedDate details
 * [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_Resource) - gets the resource details under which the appointment is located.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" 
+						AppointmentTapped="Schedule_AppointmentTapped">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
+{
+    var appointment = e.Appointment.ToString();
+}
+{% endhighlight %}
+{% endtabs %}

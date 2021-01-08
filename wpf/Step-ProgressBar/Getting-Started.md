@@ -34,25 +34,71 @@ To add control manually in the XAML, follow the given steps:
 2.	Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3.	Declare the SfStepProgressBar control in the XAML page.
 
+## Select item using Selected Index
+You can change the index of the last active (selected) item where items before this index will move to the active status by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedIndex) property. 
+
+{% tabs %}
+{% highlight XAML %}
+<Grid x:Name="grid">
+    <syncfusion:SfStepProgressBar SelectedIndex="3">
+        <syncfusion:StepViewItem Content="Ordered" />
+        <syncfusion:StepViewItem Content="Shipped" />
+        <syncfusion:StepViewItem Content="Packed" />
+        <syncfusion:StepViewItem Content="Delivered" />
+    </syncfusion:SfStepProgressBar>
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
+
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
+
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
+
+        stepProgressBar.SelectedIndex = 3;
+
+        grid.Children.Add(stepProgressBar);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Selected index image](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
+
 {% tabs %}
 {% highlight XAML %}
 <Window
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp4"
-        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="StepProgressBar.MainWindow"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-        <Grid x:Name="grid">
-            <Syncfusion:SfStepProgressBar SelectedIndex="3">
-                <Syncfusion:StepViewItem Content="Ordered" />
-                <Syncfusion:StepViewItem Content="Shipped" />
-                <Syncfusion:StepViewItem Content="Packed" />
-                <Syncfusion:StepViewItem Content="Delivered" />
-            </Syncfusion:SfStepProgressBar>       
-        </Grid>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WpfApp4"
+    xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="StepProgressBar.MainWindow"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <Syncfusion:SfStepProgressBar SelectedIndex="3">
+            <Syncfusion:StepViewItem Content="Ordered" />
+            <Syncfusion:StepViewItem Content="Shipped" />
+            <Syncfusion:StepViewItem Content="Packed" />
+            <Syncfusion:StepViewItem Content="Delivered" />
+        </Syncfusion:SfStepProgressBar>       
+    </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}

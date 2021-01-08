@@ -25,125 +25,63 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF SfSpellChecker to an application
 
-Spell checking operation can be done on text editor controls through `SfSpellChecker` in WPF application by implementing `IEditorProperties` interface. 
+Spell checking operation can be done on text editor controls through `SfSpellChecker` in WPF application.
 
-You can add the `SfSpellChecker` and text editor to an application by the following steps,
+You can add the `SfSpellChecker` to an application by the following steps,
 
-1. Create a WPF project in Visual Studio and include following assemblies.
+1. Create a WPF project in Visual Studio and include following assembly.
 
-* Syncfusion.SpellChecker.Base
-* Syncfusion.SfSpellChecker.WPF
+    * Syncfusion.SfSpellChecker.WPF
 
-2. Create a `TextSpellEditor` by implementing the [IEditorProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IEditorProperties.html) interface members.
-
-{% tabs %}
-{% highlight C# %}
-
-//Creating TextSpell Editor
-
-public class TextSpellEditor : IEditorProperties {
-    TextBox textbox;
-    public TextSpellEditor(Control control) {
-        ControlToSpellCheck = control;
-    }
-    public Control ControlToSpellCheck {
-        get {
-            return textbox;
-        }
-        set {
-            textbox = value as TextBox;
-        }
-    }
-
-    public string SelectedText {
-        get {
-            return textbox.SelectedText;
-        }
-        set {
-            textbox.SelectedText = value;
-        }
-    }
-
-    public string Text {
-        get {
-            return textbox.Text;
-        }
-        set {
-            textbox.Text = value;
-        }
-    }
-
-    public void Select(int selectionStart, int selectionLength) {
-        textbox.Select(selectionStart, selectionLength);
-    }
-
-    public bool HasMoreTextToCheck() {
-        return false;
-    }
-
-    public void Focus() {
-        textbox.Focus();
-    }
-
-    public void UpdateTextField() {
-        throw new NotImplementedException();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-3. Create instance of `Button` and `TextBox` to input control for SpellCheck.
+2. Add `TextBox` control and set [SfSpellChecker.SpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_SpellCheckerProperty) attached property to perform spell check.
 
 {% tabs %}
 {% highlight XAML %}
 
-<Grid VerticalAlignment="Center">
+<Grid>
     <StackPanel>
-        <TextBox Text="Natusre is an importsant and integral part of mankind. 
-                       It is one of the greattest blessings for human lifve.
-                       Howeverq, nowadays humans fail to recognize it as one.
-                       Nature has been an inspiration for numerous poets,
-                       writeqrs, artists and more of yesteryears."
-                 Name="textbox"
-                 TextWrapping="Wrap"                
-                 VerticalContentAlignment="Top"/>
-        <Button HorizontalAlignment="Center"
-                Content="Spell Check"
-                Click="SpellCheck_ButtonClick">
-        </Button>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+                    EnableSpellCheck="True"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
     </StackPanel>
 </Grid>
 
 {% endhighlight %}
+{% highlight c# %}
+
+//Creating a spell checker instance
+SfSpellChecker spellChecker = new SfSpellChecker();
+
+//Enabling the spell check
+spellChecker.EnableSpellCheck = true;
+
+//Assigning a spellchecker to the TextBox
+SfSpellChecker.SetSpellChecker(textbox, spellChecker);
+
+{% endhighlight %}
 {% endtabs %}
 
-4. Create a instance for `SfSpellChecker` and `TextSpellEditor`, then load the spell checker on button click by calling the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingDialog_Syncfusion_Windows_Controls_IEditorProperties_) method.
+3. If you want to open the `SfSpellChecker` while clicking on the `Spell Check button`, call the [PerformSpellCheckUsingDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingDialog_Syncfusion_Windows_Controls_IEditorProperties_) method inside the `SpellCheck ButtonClick` method.
 
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    TextSpellEditor SpellEditor;
-    public IEditorProperties Editor {
-        get;
-        set;
-    }
-    public SfSpellChecker SpellChecker {
-        get;
-        set;
-    }
-    public MainWindow() {
-        SpellChecker = new SfSpellChecker();
-        InitializeComponent();
-        SpellEditor = new TextSpellEditor(txtbx);
-        Editor = SpellEditor;
-    }
-    
-    //Call SpellCheck method to open SpellCheck on button click
-    private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
-        SpellChecker.PerformSpellCheckUsingDialog(Editor);
-    }
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -167,41 +105,112 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Fix spelling mistakes using context menu
 
-You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can enable context menu suggestion by using the [PerformSpellCheckUsingContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_PerformSpellCheckUsingContextMenu_Syncfusion_Windows_Controls_IEditorProperties_) method and can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining.
+You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining. You can disable the context menu suggestion by using the `EnableContextMenu` property value as `false`. The default value of `EnableContextMenu` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap"                
+            VerticalContentAlignment="Top">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+
+                    <!--Enable Contextmenu to spellcheck-->
+                    EnableContextMenu="True"
+                    EnableSpellCheck="True"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+//Enable Contextmenu to spellcheck
+spellChecker.EnableContextMenu = true;
+spellChecker.EnableSpellCheck = true;
+
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    TextSpellEditor SpellEditor;
-    public IEditorProperties Editor {
-        get;
-        set;
-    }
-    public SfSpellChecker SpellChecker {
-        get;
-        set;
-    }
-    public MainWindow() {
-        SpellChecker = new SfSpellChecker();
-        InitializeComponent();
-        SpellEditor = new TextSpellEditor(txtbx);
-        Editor = SpellEditor;
-
-        //Enable Contextmenu to spellcheck
-        SpellChecker.PerformSpellCheckUsingContextMenu(Editor);
-    }
-    
-    //Call SpellCheck method to open SpellCheck on button click
-    private void Button_Click(object sender, RoutedEventArgs e) {
-        SpellChecker.PerformSpellCheckUsingDialog(Editor);
-    }
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 ![SpeckCheck using contextmenu](gettingstarted-images/contextmenu.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
+
+## Disable spell checking
+
+If you want to disable the spell check operation, use the `EnableSpellCheck` property value as `false`.If the `EnableSpellCheck` property value is `false`, you will not be able to use both the context menu and SpellCheck dialogue to perform spell checking operations. The default value of `EnableSpellCheck` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+
+                    <!--Restrict the  spell check operation-->
+                    EnableSpellCheck="False"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+//Restrict the  spell check operation
+spellChecker.EnableSpellCheck = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restricing the SpeckCheck operation](gettingstarted-images/RestrictSpellcheck.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
 
@@ -214,29 +223,47 @@ You can get the suggestion list by passing the error word in the below methods.
 * [GetAnagrams](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html#Syncfusion_Windows_Controls_SfSpellChecker_GetAnagrams_System_String_) - To get a list of anagram words for an error word
 
 {% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+
+                    <!--Enable Contextmenu to spellcheck-->
+                    EnableContextMenu="True"
+                    EnableSpellCheck="True"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+//Enable Contextmenu to spellcheck
+spellChecker.EnableContextMenu = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    TextSpellEditor SpellEditor;
-    public IEditorProperties Editor {
-        get;
-        set;
-    }
-    public SfSpellChecker SpellChecker {
-        get;
-        set;
-    }
-    public MainWindow() {
-        SpellChecker = new SfSpellChecker();
-        InitializeComponent();
-        SpellEditor = new TextSpellEditor(txtbx);
-        Editor = SpellEditor;
-    }
-    
-    //Call SpellCheck method to open SpellCheck on button click
-    private void Button_Click(object sender, RoutedEventArgs e) {
-        SpellChecker.PerformSpellCheckUsingDialog(Editor);
-    }
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -246,102 +273,65 @@ public partial class MainWindow : Window {
 
 If you want to ignore the error words such a format like email id's and link addresses, HTML tags, combination of words and numbers, combination of upper and lower case words, use the respective property value as `true` from the following table,
 
-<table>
-<tr>
-<td>
-Property<br/><br/></td><td>
-Description<br/><br/></td><td>
-Example<br/><br/></td>
-</tr>
-<tr>
-<td>
-IgnoreEmailAddress<br/><br/></td><td>
-Specifies whether or not to ignore email address during Spell Check. 
+Property | Description | Example
+--- | --- | --- 
+IgnoreEmailAddress  | Specifies whether or not to ignore email address during Spell Check. The Default value is False. | Ex: john@abc.com
+IgnoreHtmlTags | Specifies whether or not to ignore HTML tags during Spell Check. The Default value is False. | Ex: < html></ html>
+IgnoreUrl | Specifies whether or not to ignore Internet address during Spell Check. The Default value is False. | Ex: https://help.syncfusion.com
+IgnoreMixedCaseWords | Specifies whether or not to ignore mixed case words during Spell Check. The Default value is False. | Ex: AbCDeFH
+IgnoreUpperCaseWords | Specifies whether or not to ignore uppercase words during Spell Check. The Default value is False. | Ex: ABCDE >
+IgnoreAlphaNumericWords | Specifies whether or not to Spell Check numbers or words with numbers during Spell Check. The Default value is False.  | Ex: A*&%#9ACe&981
 
+{% tabs %}
+{% highlight xaml %}
 
-The Default value is False.<br/><br/></td><td>
-Ex: 
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap">
 
-john@abc.com<br/><br/></td></tr>
-<tr>
-<td>
-IgnoreHtmlTags<br/><br/></td><td>
-Specifies whether or not to ignore HTML tags during Spell Check. 
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+                    EnableContextMenu="True"
+                    EnableSpellCheck="True"
+                    IgnoreUrl="True"
+                    IgnoreUpperCaseWords="True"
+                    IgnoreAlphaNumericWords="True"
+                    IgnoreEmailAddress="True"
+                    IgnoreMixedCaseWords="True"
+                    IgnoreHtmlTags="True"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
 
-The Default value is False.<br/><br/></td><td>
-Ex: 
+{% endhighlight %}
+{% highlight c# %}
 
-< html></ html> <br/><br/></td></tr>
-<tr>
-<td>
-IgnoreUrl<br/><br/></td><td>
-Specifies whether or not to ignore Internet address during Spell Check.
+spellChecker.IgnoreUrl = true;
+spellChecker.IgnoreUpperCaseWords = true;
+spellChecker.IgnoreAlphaNumericWords = true;
+spellChecker.IgnoreEmailAddress = true;
+spellChecker.IgnoreMixedCaseWords = true;
+spellChecker.IgnoreHtmlTags = true;  
 
-The Default value is False.<br/><br/></td><td>
-Ex:
-
- https://help.syncfusion.com/<br/><br/></td></tr>
-<tr>
-<td>
-IgnoreMixedCaseWords<br/><br/></td><td>
-Specifies whether or not to ignore mixed case words during Spell Check.
-
-The Default value is False.<br/><br/></td><td>
-Ex:
-
-AbCDeFH <br/><br/></td></tr>
-<tr>
-<td>
-IgnoreUpperCaseWords<br/><br/></td><td>
-Specifies whether or not to ignore uppercase words during Spell Check.
-
-The Default value is False.<br/><br/></td><td>
-Ex:
-
-ABCDE <br/><br/></td></tr>
-<tr>
-<td>
-IgnoreAlphaNumericWords<br/><br/></td><td>
-Specifies whether or not to Spell Check numbers or words with numbers during Spell Check.
-
-The Default value is False.<br/><br/></td><td>
-Ex:
-
-A*&%#9
-
-ACe&981 <br/><br/></td></tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    TextSpellEditor SpellEditor;
-    public IEditorProperties Editor {
-        get;
-        set;
-    }
-    public SfSpellChecker SpellChecker {
-        get;
-        set;
-    }
-    public MainWindow() {
-        SpellChecker = new SfSpellChecker();
-        InitializeComponent();
-        SpellEditor = new TextSpellEditor(txtbx);
-        Editor = SpellEditor;
-        SpellChecker.IgnoreUrl = true;
-        SpellChecker.IgnoreUpperCaseWords = true;
-        SpellChecker.IgnoreAlphaNumericWords = true;
-        SpellChecker.IgnoreEmailAddress = true;
-        SpellChecker.IgnoreMixedCaseWords = true;
-        SpellChecker.IgnoreHtmlTags = true;
-    }
-    
-    //Call SpellCheck method to open SpellCheck on button click
-    private void Button_Click(object sender, RoutedEventArgs e) {
-        SpellChecker.PerformSpellCheckUsingDialog(Editor);
-    }
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
 }
 
 {% endhighlight %}
@@ -357,8 +347,7 @@ The following dictionary types are used for spell-checking,
  * Ispell
  * OpenOffice
 
- N> Refer the [Load your own dictionaries for any language]
-(https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#load-your-own-dictionaries-for-any-language) page to know more about how to add and use the Dictionary for any culture to an application.
+ N> Refer the [Load your own dictionaries for any language](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#load-your-own-dictionaries-for-any-language) page to know more about how to add and use the Dictionary for any culture to an application.
 
 ## Add custom words to dictionary
 
@@ -371,36 +360,51 @@ N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellche
 By default, when the spell check is completed, it will be notified by using the message box that showing the `Spell check is completed` message. If you want to restrict that message box, you can handle the [SpellCheckCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) event and set the [SpellCheckCompletedEventArgs.ShowMessageBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SpellCheckCompletedEventArgs.html#Syncfusion_Windows_Controls_SpellCheckCompletedEventArgs_ShowMessageBox) to `false`.
 
 {% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <StackPanel>
+        <TextBox 
+            Text="Natusre is an importsant and integral part of mankind. It is one of the greattest blessings for human lifve. Howeverq, nowadays humans fail to recognize it as one. Nature has been an inspiration for numerous poets, writeqrs, artists and more of yesteryears."
+            Name="textbox"
+            TextWrapping="Wrap">
+
+            <!--Adding Spellchecker to the TextBox-->
+            <syncfusion:SfSpellChecker.SpellChecker>
+                <syncfusion:SfSpellChecker 
+                    x:Name="spellChecker"
+                    SpellCheckCompleted="SpellChecker_SpellCheckCompleted"
+                    EnableContextMenu="True"
+                    EnableSpellCheck="True"/>
+            </syncfusion:SfSpellChecker.SpellChecker>
+        </TextBox>
+        <Button 
+            Content="Spell Check"
+            Click="SpellCheck_ButtonClick"                
+            HorizontalAlignment="Center"></Button>
+    </StackPanel>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+spellChecker.SpellCheckCompleted += SpellChecker_SpellCheckCompleted;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    TextSpellEditor SpellEditor;
-    public IEditorProperties Editor {
-        get;
-        set;
-    }
-    public SfSpellChecker SpellChecker {
-        get;
-        set;
-    }
-    public MainWindow() {
-        SpellChecker = new SfSpellChecker();
-        InitializeComponent();
-        SpellEditor = new TextSpellEditor(txtbx);
-        Editor = SpellEditor;
-        SpellChecker.SpellCheckCompleted += SpellChecker_SpellCheckCompleted;
-    }
+//Call SpellCheck method to open SpellCheck on button click
+private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
+    spellChecker.PerformSpellCheckUsingDialog();
+}
 
-    //Call SpellCheck method to open SpellCheck on button click
-    private void Button_Click(object sender, RoutedEventArgs e) {
-        SpellChecker.PerformSpellCheckUsingDialog(Editor);
-    }
-
-    private void SpellChecker_SpellCheckCompleted(object sender, EventArgs e) {
+private void SpellChecker_SpellCheckCompleted(object sender, EventArgs e) {
         //Restrict the message box showing
         (e as SpellCheckCompletedEventArgs).ShowMessageBox = false;
     }
-}
 
 {% endhighlight %}
 {% endtabs %}

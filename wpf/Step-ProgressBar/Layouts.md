@@ -11,7 +11,7 @@ documentation: ug
 You can customize the layout of the Step progress bar in the following ways.
 
 ## ItemsStretch
-Represents how the item size is increased to fill the unused space. The default value of [ItemsStretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemsStretch) property is `None`.
+Represents how the item size is increased to fill the unused space. The default value of [ItemsStretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemsStretch) property is [None](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ItemsStretch.html#Syncfusion_UI_Xaml_ProgressBar_ItemsStretch_None).
 
 ### Types:
 * None
@@ -19,7 +19,7 @@ Represents how the item size is increased to fill the unused space. The default 
 * Auto
 
 ### None
-The step view items retain their its natural size. You can change the spacing between the adjacent step view items by using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is 80.
+The step view items retain their its natural size. You can change the spacing between the adjacent step view items by using the [ItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemSpacing) property. The default value of this property is `80.`
 
 N> The single step size is calculated using the ItemSpacing and MarkerWidth or MarkerHeight based on the Orientation. The ItemSpacing applies between the current step view item and the previous step view item.
 
@@ -35,26 +35,33 @@ N> The single step size is calculated using the ItemSpacing and MarkerWidth or M
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.Content = "Shipped";
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.Content = "Delivered";
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 2;
-stepProgressBar.ItemSpacing = 150;
+        stepProgressBar.SelectedIndex = 2;
+        stepProgressBar.ItemSpacing = 150;
 
-grid.Children.Add(stepProgressBar);
+        grid.Children.Add(stepProgressBar);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,37 +81,43 @@ The step view items are sized to fill the available space.
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.Content = "Shipped";
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.Content = "Delivered";
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.Content = "Shipped";
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.Content = "Delivered";
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 2;
-stepProgressBar.ItemsStretch = ItemsStretch.Fill;
+        stepProgressBar.SelectedIndex = 2;
+        stepProgressBar.ItemsStretch = ItemsStretch.Fill;
 
-grid.Children.Add(stepProgressBar);           
+        grid.Children.Add(stepProgressBar);     
+    }
+}      
 {% endhighlight %}
 {% endtabs %}
 ![Items stretch image](Layout_images/ItemsStretch.png)
 
 ### Auto
-The step view item size is determined by the size of the content and secondary content. It is applicable only when the `Orientation` is `Vertical.` If the size of the content and secondary content is less than the `StepViewItem.MarkerHeight,` then the `SfStepProgressBar.MinimumItemSpacing` is used.
+The step view item size is determined by the size of the content and secondary content. It is applicable only when the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation) property is [Vertical](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_Orientation_Vertical). If the size of the content and secondary content is less than the [MarkerHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html#Syncfusion_UI_Xaml_ProgressBar_StepViewItem_MarkerHeight), then the [MinimumItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_MinimumItemSpacing) is used.
 
-Define the data templates in the Window’s resources.
-
-   ~~~xaml
-
+{% tabs %}
+{% highlight XAML %}  
+<Window.Resources>
     <DataTemplate x:Key="FirstStepContentTemplate">
         <TextBlock Width="100" Text="The SfStepProgressBar control is used to show the progress of a multiple-step process." TextWrapping="Wrap">
         <LineBreak/>
@@ -131,54 +144,58 @@ Define the data templates in the Window’s resources.
     <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
         <TextBlock Width="100" Text="Step 4" Margin="120,0,0,0" TextWrapping="Wrap"/>
     </DataTemplate>
-
-   ~~~
-
-{% tabs %}
-{% highlight XAML %}      
-    <Grid Name="grid">
-        <syncfusion:SfStepProgressBar SelectedIndex="2" Margin="20" Orientation="Vertical" ItemsStretch="Auto">
-            <syncfusion:StepViewItem Content="Ordered" SecondaryContentTemplate="{StaticResource FirstStepContentTemplate}"/>
-            <syncfusion:StepViewItem ContentTemplate="{StaticResource SecondStepContentTemplate}" SecondaryContentTemplate="{StaticResource SecondStepSecondaryContentTemplate}"/>
-            <syncfusion:StepViewItem Content="Packed" SecondaryContentTemplate="{StaticResource ThirdStepContentTemplate}"/>
-            <syncfusion:StepViewItem ContentTemplate="{StaticResource FourthStepContentTemplate}" SecondaryContentTemplate="{StaticResource FourthStepSecondaryContentTemplate}"/>
-        </syncfusion:SfStepProgressBar>
-    </Grid>
+</Window.Resources>    
+<Grid Name="grid">
+    <syncfusion:SfStepProgressBar SelectedIndex="2" Margin="20" Orientation="Vertical" ItemsStretch="Auto">
+        <syncfusion:StepViewItem Content="Ordered" SecondaryContentTemplate="{StaticResource FirstStepContentTemplate}"/>
+        <syncfusion:StepViewItem ContentTemplate="{StaticResource SecondStepContentTemplate}" SecondaryContentTemplate="{StaticResource SecondStepSecondaryContentTemplate}"/>
+        <syncfusion:StepViewItem Content="Packed" SecondaryContentTemplate="{StaticResource ThirdStepContentTemplate}"/>
+        <syncfusion:StepViewItem ContentTemplate="{StaticResource FourthStepContentTemplate}" SecondaryContentTemplate="{StaticResource FourthStepSecondaryContentTemplate}"/>
+    </syncfusion:SfStepProgressBar>
+</Grid>
 {% endhighlight %}
 {% highlight C# %}
-SfStepProgressBar stepProgressBar = new SfStepProgressBar();
-stepProgressBar.Orientation = Orientation.Vertical;
-StepViewItem orderedStepViewItem = new StepViewItem();
-StepViewItem shippedStepViewItem = new StepViewItem();
-StepViewItem packedStepViewItem = new StepViewItem();
-StepViewItem deliveredStepViewItem = new StepViewItem();
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        SfStepProgressBar stepProgressBar = new SfStepProgressBar();
+        stepProgressBar.Orientation = Orientation.Vertical;
+        StepViewItem orderedStepViewItem = new StepViewItem();
+        StepViewItem shippedStepViewItem = new StepViewItem();
+        StepViewItem packedStepViewItem = new StepViewItem();
+        StepViewItem deliveredStepViewItem = new StepViewItem();
 
-orderedStepViewItem.Content = "Ordered";
-shippedStepViewItem.ContentTemplate = FindResource("SecondStepContentTemplate") as DataTemplate;
-packedStepViewItem.Content = "Packed";
-deliveredStepViewItem.ContentTemplate = FindResource("FourthStepContentTemplate") as DataTemplate;
+        orderedStepViewItem.Content = "Ordered";
+        shippedStepViewItem.ContentTemplate = FindResource("SecondStepContentTemplate") as DataTemplate;
+        packedStepViewItem.Content = "Packed";
+        deliveredStepViewItem.ContentTemplate = FindResource("FourthStepContentTemplate") as DataTemplate;
 
-orderedStepViewItem.SecondaryContentTemplate = FindResource("FirstStepContentTemplate") as DataTemplate;
-shippedStepViewItem.SecondaryContentTemplate = FindResource("SecondStepSecondaryContentTemplate") as DataTemplate;
-packedStepViewItem.SecondaryContentTemplate = FindResource("ThirdStepContentTemplate") as DataTemplate;
-deliveredStepViewItem.SecondaryContentTemplate = FindResource("FourthStepSecondaryContentTemplate") as DataTemplate;
+        orderedStepViewItem.SecondaryContentTemplate = FindResource("FirstStepContentTemplate") as DataTemplate;
+        shippedStepViewItem.SecondaryContentTemplate = FindResource("SecondStepSecondaryContentTemplate") as DataTemplate;
+        packedStepViewItem.SecondaryContentTemplate = FindResource("ThirdStepContentTemplate") as DataTemplate;
+        deliveredStepViewItem.SecondaryContentTemplate = FindResource("FourthStepSecondaryContentTemplate") as DataTemplate;
 
-stepProgressBar.Items.Add(orderedStepViewItem);
-stepProgressBar.Items.Add(shippedStepViewItem);
-stepProgressBar.Items.Add(packedStepViewItem);
-stepProgressBar.Items.Add(deliveredStepViewItem);
+        stepProgressBar.Items.Add(orderedStepViewItem);
+        stepProgressBar.Items.Add(shippedStepViewItem);
+        stepProgressBar.Items.Add(packedStepViewItem);
+        stepProgressBar.Items.Add(deliveredStepViewItem);
 
-stepProgressBar.SelectedIndex = 2;
-stepProgressBar.ItemsStretch = ItemsStretch.Fill;
+        stepProgressBar.SelectedIndex = 2;
+        stepProgressBar.ItemsStretch = ItemsStretch.Fill;
 
-grid.Children.Add(stepProgressBar);           
+        grid.Children.Add(stepProgressBar); 
+    }
+}          
 {% endhighlight %}
 {% endtabs %}
 ![Items auto image](Layout_images/Itemsauto.png)
 
 ## MinimumItemSpacing
-You can customize the value that indicates the minimum space between the step view items when the `ItemStretch` is `Fill.` The default value of this property is `40.` The following example shows how to customize the step view item's minimum space.
+You can customize the value that indicates the minimum space between the step view items when the [ItemStretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemsStretch) is [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ItemsStretch.html#Syncfusion_UI_Xaml_ProgressBar_ItemsStretch_Fill). The default value of this property is `40.` The following example shows how to customize the step view item's minimum space.
 
+{% tabs %}
 {% highlight xaml %}
 
 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
@@ -199,45 +216,7 @@ You can customize the value that indicates the minimum space between the step vi
     </Grid>
 </ScrollViewer>
 {% endhighlight %}
+{% endtabs %}
 
 Implementing the above code will create the following Step ProgressBar control.
 ![MinimumItemSpacing image](Customizing-Data-Templates_images/MinimumItemSpacing.png)
-
-## RTL
-
-You can customize the flow direction of the `SfStepProgressBar` by using the `FlowDirection` property.
-
-Define the data templates in the Window’s resources.
-
- ~~~xaml
-   
-    <Window.Resources>
-        <DataTemplate x:Key="FirstStepSecondaryContentTemplate">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 1"/>
-        </DataTemplate>
-        <DataTemplate x:Key="SecondStepSecondaryContentTemplate">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 2"/>
-        </DataTemplate>
-        <DataTemplate x:Key="ThirdStepSecondaryContentTemplate">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 3"/>
-        </DataTemplate>
-        <DataTemplate x:Key="FourthStepSecondaryContentTemplate">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Step 4"/>
-        </DataTemplate>
-    </Window.Resources>
-   ~~~
-   
-{% highlight xaml %}
-
-<Syncfusion:SfStepProgressBar
-    SelectedIndex="2"
-    FlowDirection="RightToLeft"
-    SelectedItemStatus="Indeterminate">
-        <Syncfusion:StepViewItem Content="Ordered" SecondaryContentTemplate="{StaticResource FirstStepSecondaryContentTemplate}" />
-        <Syncfusion:StepViewItem Content="Packed" SecondaryContentTemplate="{StaticResource SecondStepSecondaryContentTemplate}" />
-        <Syncfusion:StepViewItem Content="Shipped" SecondaryContentTemplate="{StaticResource ThirdStepSecondaryContentTemplate}" />
-        <Syncfusion:StepViewItem Content="Delivered" SecondaryContentTemplate="{StaticResource FourthStepSecondaryContentTemplate}" />
-</Syncfusion:SfStepProgressBar>
-{% endhighlight %}
-
-![Flow direction image](Layout_images/FlowDirection.png)

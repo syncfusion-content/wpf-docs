@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| Gantt | Wpf | Syncfusion
-description: This section describes the appearance and structure of Gantt, adding Gantt to an application, adjusting chart and grid size, and schedule padding in WPF Gantt.
+description: A quick tour to the initial users on the Syncfusion Gantt control for WPF Platform and also explains how to adjust the size of GanttChart and GanttGrid
 platform: wpf
 control: Gantt
 documentation: ug
@@ -324,6 +324,75 @@ control.ScheduleRangePadding = 5;
 
 {% endtabs %}
 
+## ScheduleType
+
+By using the [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) enum in the GanttControl, you can define the specific schedule range. The [`ScheduleType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ScheduleType) is an enum, which contains the following schedule types: 
+
+* HoursWithSeconds
+* MinutesWithSeconds
+* WeekWithDays
+* DayWithHours
+* DayWithMinutes
+* MonthWithHours
+* MonthWithDays
+* YearWithDays
+* YearWithMonths
+* CustomDateTime
+* CustomNumeric
+
+The following code sample demonstrates how to set **ScheduleType** for GanttControl.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"           ScheduleType="YearWithMonths" >
+</Sync:GanttControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Initializing Gantt
+GanttControl control = new GanttControl();
+control.DataContext = new ViewModel();
+control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
+control.ScheduleType = ScheduleType.YearWithMonths;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+## Showing date with time in GanttGrid
+
+To show the date with time in the GanttGrid, enable the ShowDateWithTime property as shown in the following code sample.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sync:GanttControl x:Name="control" ShowDateWithTime="True" ItemsSource="{Binding TaskCollection}"> 
+ <sync:GanttControl.DataContext>
+    <local:ViewModel/>
+ </sync:GanttControl.DataContext>          
+</Sync:GanttControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    //Initializing Gantt
+    GanttControl control = new GanttControl();
+    control.DataContext = new ViewModel();
+    control.SetBinding(GanttControl.ItemsSourceProperty,"TaskCollection");
+    control.ShowDateWithTime = true;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+N> By default, GanttGrid will show the date alone.
+
 ## see also
 
 [How to show horizontal and vertical grid lines in WPF gantt control]( https://www.syncfusion.com/kb/11800/how-to-show-horizontal-and-vertical-grid-lines-in-wpf-gantt-control)
@@ -335,7 +404,3 @@ control.ScheduleRangePadding = 5;
 [How to create a gantt chart by hiding the gantt grid](https://www.syncfusion.com/kb/10157/how-to-create-a-ganttchart-by-hiding-the-ganttgrid)
 
 [How to wrap WPF gantt in Windows Forms]( https://www.syncfusion.com/kb/9464/how-to-wrap-wpf-gantt-in-windows-forms)
-
-
-
-   

@@ -16,14 +16,24 @@ Undo and Redo actions are disabled by default, to enable this you can use the `C
 {% tabs %}
 {% highlight C# %}
 
-// To enable the Undo and Redo action
-diagram.Constraints |= GraphConstraints.Undoable;
+{% highlight Xaml%}
+
+<Syncfusion:SfDiagram x:Name="diagramcontrol" Constraints="Default,Undoable"/>
+
+<Button Height="50" Content="Undo" Name="Undo" Command="Syncfusion:DiagramCommands.Undo"></Button>
+
+<Button Height="50" Content="Redo" Name="Redo" Command="Syncfusion:DiagramCommands.Redo"></Button>
+
+{% endhighlight %}
 
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight C# %}
+
+// To enable the Undo and Redo action
+diagramcontrol.Constraints |= GraphConstraints.Undoable;
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
