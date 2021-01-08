@@ -295,7 +295,7 @@ N> Refer [Localization of Syncfusion WPF Controls](https://help.syncfusion.com/w
 
 2. After creating `.resx` file, add the Name/Value pair in Resource Designer of created `.resx` file and change its corresponding value to corresponding culture.
 
-![Added string property of `CheckListBox` which need to localized in resource file](Getting-Started_images/addlanguage.png)
+![Added string property of CheckListBox which need to localized in resource file](Getting-Started_images/addlanguage.png)
 
 The following screenshot shows the localized `CheckListBox` control.
 
