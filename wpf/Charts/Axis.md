@@ -63,7 +63,7 @@ Gets the empty value of the visible range.
 [`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)
 </td>
 <td>
-Gets a value indicating whether IsEmpty or not.
+Gets a value indicating whether the visible range is empty or not.
 </td>
 </tr>
 <tr>
