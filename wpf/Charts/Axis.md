@@ -22,7 +22,60 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 The following are the API’s in ChartAxis
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
-* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represent the axis start and end values.
+
+* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represents the axis start and end visible values as follows.
+
+<table>
+<tr>
+<td>
+[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)
+</td>
+<td>
+Gets the start value of the visible range.
+</td>
+</tr>
+<tr>
+<td>
+[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)
+</td>
+<td>
+Gets the end value of the visible range.
+</td>
+</tr>
+<tr>
+<td>
+[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)
+</td>
+<td>
+Gets the delta value of the visible range.
+</td>
+</tr>
+<tr>
+<td>
+[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)
+</td>
+<td>
+Gets the empty value of the visible range.
+</td>
+</tr>
+<tr>
+<td>
+[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)
+</td>
+<td>
+Gets a value indicating whether the visible range is empty or not.
+</td>
+</tr>
+<tr>
+<td>
+[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)
+</td>
+<td>
+Gets the median value of the visible range.
+</td>
+</tr>
+</table>
+
 * [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
 
 The following topics explains in detail about the axis and its parts
@@ -3839,7 +3892,6 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-
 ## Auto Interval Calculation on Zooming
 
 [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
@@ -3883,7 +3935,6 @@ chart.PrimaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Auto interval on zooming support in WPF](Axis_images/Axis_img71.jpeg)
-
 
 ## Multiple Axes
 
