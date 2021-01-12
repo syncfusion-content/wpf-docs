@@ -9,13 +9,13 @@ documentation: ug
 
 # Data Binding and Customization in WPF CardView
 
-This section describes the data binding support and control cutomization supports available in the [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
+This section describes the data binding support and control customization supports available in the [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
 ## Data binding to objects
 
 The `CardView` control can bound to an external source to auto create [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardViewItem.html) and display the data using `ItemsSource` property. When you are auto generating the `CardViewItem` using `ItemsSource`, you need to use [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) or `ItemContainerStyle` to define header and use the `ItemTemplate` or  `ItemContainerStyle` to display the content of the `CardViewItem` item.
 
-N> You can use the grouping, sorting, filtering and editing functionalites only by populating the card items through the `ItemsSource` property.
+N> You can use the grouping, sorting, filtering and editing functionalities only by populating the card items through the `ItemsSource` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -407,7 +407,7 @@ cardView.FlowDirection = FlowDirection.RightToLeft;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
-# Theme
+## Theme
 
 You can customize the appearance of the `CardView` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CardView` control.
 

@@ -117,7 +117,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Reset the filter
 
-If you want to reset the filtered card selection, click the `Clear Filter` button that is placed in the bottom of field's value list popup. Then, it will remove the filered items and shows all card items
+If you want to reset the filtered card selection, click the `Clear Filter` button that is placed in the bottom of field's value list popup. Then, it will remove the filtered items and shows all card items
 
 ![wpf card view control clears the created filtered items](Grouping-Sorting-Filtering_images/clearfilter.gif)
 

@@ -163,7 +163,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can populate the card items to the `CardView` control by using the `ItemsSource` property. You need to use [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_HeaderTemplate) and `ItemTemplate` to populate the items into the view.
 
-N> You can use the grouping, sorting, filtering and editing functionalites only by populating the card items through the `ItemsSource` property.
+N> You can use the grouping, sorting, filtering and editing functionalities only by populating the card items through the `ItemsSource` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -547,7 +547,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can arrange the cards either vertically or horizontally by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_Orientation) property. The default value of `Orientation` property is `Vertical`.
 
-N> If there is no enough space to arrange the cards either vertically or horizontally that is assigned by `Orientation` property, then `CardView` will automatically arange the cards at available position.
+N> If there is no enough space to arrange the cards either vertically or horizontally that is assigned by `Orientation` property, then `CardView` will automatically arrange the cards at available position.
 
 {% tabs %}
 {% highlight XAML %}
