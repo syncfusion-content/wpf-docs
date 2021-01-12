@@ -9,7 +9,7 @@ documentation: ug
 
 # Multi-path search in Autocomplete
 
-Multi-path search can be achieved using the custom search feature by setting the `SuggestionMode` property as `Custom`. Users can define a custom filter and can be assigned to the `Filter` property.
+Multi-path search can be achieved using the custom search feature by setting the [SuggestionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SuggestionMode) property as `Custom`. Users can define a custom filter and can be assigned to the [Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Filter) property.
 
 **Model**
 
