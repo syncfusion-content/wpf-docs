@@ -6,7 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: Word count, paragraph count, page count, current page number
 ---
-# Document Properties
+# Document Properties in WPF RichTextBox
 RichTexBox keep tracking the statistics about your documents. These statistics contains information about word count, paragraph count and pages count.
 
 ## Word Count
