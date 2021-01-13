@@ -13,7 +13,7 @@ This section describes how to enable or disable the filtering mode and perform f
 
 ## Filter the CardViewItems
 
-Cards can be filtered by the values which are given for the fields. To filter the cards, just check the values in the listed popup that opens when you click the button which is available in front of the fields list.
+Cards can be filtered by the values which are given for the fields. To filter the cards, just check the values that is listed in the popup.
 
 {% tabs %}
 {% highlight c# %}

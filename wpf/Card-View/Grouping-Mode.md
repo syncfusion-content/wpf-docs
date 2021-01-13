@@ -145,18 +145,19 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Group the cards programmatically
 
-You can group the cards programmatically by passing the specific field name into the [GroupCards(String)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_GroupCards_System_String_) method. Based on the field name, cards are grouped programmatically.
+You can group the cards programmatically by passing the specific field name into the [GroupCards(String)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_GroupCards_System_String_) method. Based on the field name, cards are grouped programmatically. You can also make the multi-level grouping programmatically.
 
 {% tabs %}
 {% highlight c# %}
 
 cardView.CanGroup = true;
 cardView.GroupCards("Age");
+cardView.GroupCards("FirstName");
 
 {% endhighlight %}
 {% endtabs %}
 
-Here, the cards are grouped programmatically based on the `Age` field.
+Here, the cards are grouped programmatically based on the `Age` and `FirstName` fields.
 
 ![wpf card view items grouped programmatically](Grouping-Sorting-Filtering_images/porgrammaticgrouping.png)
 
