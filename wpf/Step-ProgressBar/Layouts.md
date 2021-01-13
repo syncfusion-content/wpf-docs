@@ -195,6 +195,7 @@ public partial class MainWindow : Window
 ## MinimumItemSpacing
 You can customize the value that indicates the minimum space between the step view items when the [ItemStretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_ItemsStretch) is [Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ItemsStretch.html#Syncfusion_UI_Xaml_ProgressBar_ItemsStretch_Fill). The default value of this property is `40.` The following example shows how to customize the step view item's minimum space.
 
+{% tabs %}
 {% highlight xaml %}
 
 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
@@ -215,6 +216,7 @@ You can customize the value that indicates the minimum space between the step vi
     </Grid>
 </ScrollViewer>
 {% endhighlight %}
+{% endtabs %}
 
 Implementing the above code will create the following Step ProgressBar control.
 ![MinimumItemSpacing image](Customizing-Data-Templates_images/MinimumItemSpacing.png)
