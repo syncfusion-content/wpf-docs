@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Custom Chart in WPF (SfChart)
+## Custom Charts in WPF (SfChart)
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 
