@@ -203,7 +203,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
 
-## Waterfall Series
+## Waterfall Chart
 
 [`WaterfallSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
 
