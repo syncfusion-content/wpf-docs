@@ -1,28 +1,25 @@
 ---
 layout: post
-title: Overview | Card View | WPF | Syncfusion
+title: About WPF Card View control | Syncfusion
 description: WPF Card View is a panel that helps to organize a list of items in cards with grouping, sorting, and filtering options.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Overview
+# WPF Card View Overview
 
-The CardView control can display the given data in the format of cards. These cards can be grouped, sorted and filtered.
+The WPF [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control is a panel that helps organize a list of items in cards. It supports grouping, sorting, filtering, and editing options. Also, supports listing the grouped items in a tree structure.
 
 ## Control Structure
 
-![wpf card view control structure](Getting-Started_images/Getting-Started_img1.png)
+![wpf card view control structure](Getting-Started_images/overview.png)
 
-Structure of the CardView Control
-{:.caption}
+## Key features
 
-## Feature Summary
-
-Features of the CardView control are as follows:
-
-* CanEdit	: Allows editing the fields in the GroupViewItems
-* CanGroup: Allows Grouping between the CardViewItems
-* CanSort: Allows Sorting between the CardViewItems
-* ShowHeader: Shows or hides the CardView Header panel
+* Editing - Allows to editing the fields in the GroupViewItems.
+* Grouping - Allows to Grouping between the CardViewItems.
+* Filtering - Allows to filtering based on the field's values in the GroupViewItems.
+* Sorting - Allows Sorting between the CardViewItems.
+* Header - Shows or hides the CardView Header panel.
+* Custom UI - Allows to customize the CardViewItems.
