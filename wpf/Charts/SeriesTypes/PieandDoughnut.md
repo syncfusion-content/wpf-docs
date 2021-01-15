@@ -9,7 +9,7 @@ documentation: ug
 
 # Pie and Doughnut Charts in WPF Chart (SfChart)
 
-## Pie
+## Pie Chart
 
 [`PieSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the PieSeries.
 
@@ -224,7 +224,7 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 ![Pie series with grouping feature in percentage mode](Series_images/GroupingPie.png)
 
-## Doughnut
+## Doughnut Chart
 
 [`DoughnutSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
 

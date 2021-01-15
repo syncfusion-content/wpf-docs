@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacking Charts in WPF Chart (SfChart)
 
-## Stacked Line
+## Stacked Line Chart
 
 [`StackingLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) resembles multiple types of series of the [`LineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.LineSeries.html). 
 
@@ -104,7 +104,7 @@ chart.Series.Add(series3);
 
 ![StackingLine chart type in WPF](Series_images/stackingline.png)
 
-## Stacked Line 100
+## Stacked Line100 Chart
 
 [`StackingLine100Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingLine100Series.html) resembles [`StackingLinenSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -192,7 +192,7 @@ chart.Series.Add(series3);
 
 ![StackingLine100 chart type in WPF](Series_images/stackingLine100.png)
 
-## Stacked Column
+## Stacked Column Chart
 
 [`StackingColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
@@ -285,7 +285,7 @@ chart.Series.Add(series3);
 
 ![StackingColumn chart type in WPF](Series_images/stackingcolumn.png)
 
-## Stacked Column 100
+## Stacked Column100 Chart
 
 [`StackingColumn100Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html#) resembles StackingColumnSeries but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -362,7 +362,7 @@ chart.Series.Add(series3);
 
 ![StackingColumn100 chart type in WPF](Series_images/stackingcolumn100.png)
 
-## Stacked Bar
+## Stacked Bar Chart
 
 [`StackingBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBarSeries.html#) is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. 
 
@@ -456,7 +456,7 @@ chart.Series.Add(series3);
 ![StackingBar chart type in WPF](Series_images/stackingbar.png)
 
 
-## Stacked Bar 100
+## Stacked Bar100 Chart
 
 [`StackingBar100Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingBar100Series.html#) resembles a StackingBarSeries. StackingBar100Series displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
 
@@ -543,7 +543,7 @@ chart.Series.Add(series3);
 
 ![StackingBar100 chart type in WPF](Series_images/stackingbar100.png)
 
-## Stacked Area
+## Stacked Area Chart
 
 [`StackingAreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html#) is representing areas stacked vertically one above the other. 
 
@@ -626,7 +626,7 @@ chart.Series.Add(series3);
 
 ![StackingArea chart type in WPF](Series_images/stackingarea.png)
 
-## Stacked Area 100
+## Stacked Area100 Chart
 
 StackingArea100Series is similar to StackingAreaSeries, but the cumulative portion of each stacked element always totals 100%. 
 

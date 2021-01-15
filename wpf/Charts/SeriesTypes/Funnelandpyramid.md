@@ -9,7 +9,7 @@ documentation: ug
 
 # Funnel and pyramid Charts in WPF Chart (SfChart)
 
-## Pyramid
+## Pyramid Chart
 
 PyramidSeries has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
 
@@ -128,7 +128,7 @@ chart.Series.Add(series);
 
 ![Pyramid modes in WPF Chart](Series_images/pyramidlinear.png)
 
-## Funnel
+## Funnel Chart
 
 FunnelSeries is similar to PyramidSeries, displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Other Charts in WPF Chart (SfChart)
 
-## Box and Whisker 
+## Box and Whisker Chart
 
 [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
 
