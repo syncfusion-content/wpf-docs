@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Spline and Spline Area Charts in WPF Chart (SfChart)
+# Spline and Spline Area Charts in WPF (SfChart)
 
 ## Spline Chart
 

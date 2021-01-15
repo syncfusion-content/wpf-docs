@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Area Charts in WPF Chart (SfChart)
+# Area Charts in WPF (SfChart)
 
 ## Area Chart
 [`AreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AreaSeries.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.

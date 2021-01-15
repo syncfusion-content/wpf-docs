@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Funnel and pyramid Charts in WPF Chart (SfChart)
+# Funnel and pyramid Charts in WPF (SfChart)
 
 ## Pyramid Chart
 

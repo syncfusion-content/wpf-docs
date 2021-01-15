@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Other Charts in WPF Chart (SfChart)
+# Other Charts in WPF (SfChart)
 
 ## Box and Whisker Chart
 

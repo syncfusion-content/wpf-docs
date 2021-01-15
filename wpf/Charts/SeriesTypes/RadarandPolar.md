@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Radar and Polar Charts in WPF Chart (SfChart)
+# Radar and Polar Charts in WPF (SfChart)
 
 ## Radar Chart
 

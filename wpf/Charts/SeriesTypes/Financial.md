@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Financial Charts in WPF Chart (SfChart)
+# Financial Charts in WPF (SfChart)
 
 The APIs present in the financial series are,
 
