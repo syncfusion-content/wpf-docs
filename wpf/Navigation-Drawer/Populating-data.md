@@ -9,24 +9,26 @@ documentation: ug
 
 # Populating with Data
 
-This section explains how to show the drawer view. 
+This section explains how to populate the drawer menu. 
 
 ## Populating with items
 
-Populating the items with [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html), below properties used to representation of each item, selection and population of sub items. 
+The WPF Navigation Drawer sidebar provides a built-in items support of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) that can be populated using the [Items] property.
 
-* **Header** — Represent the content of the `NavigationItem`.
-* **Icon** — Represent the icon in the `NavigationItem`.
+The below properties are available in the `NavigationItem` and can be used to define each item of the navigation menu.
+
+* **Header** — Represents the content of the `NavigationItem`.
+* **Icon** — Represents the icon in the `NavigationItem`.
 * **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
-* **ExpanderTemplate** — It can be used to provide the different view for expander in both collapsed and expanded state.
-* **Command** — It will execute while items have been clicked.  NavigationDrawer have four `NavigationItemType`. In this only Tab and Button types supports the [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_Command). When using the tab [ItemType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_ItemType) and command binds into `NavigationItem` the item behave like button. 
+* **ExpanderTemplate** — Used to provide a custom view for the expander icon in both collapsed and expanded state.
+* **Command** — Executes when the item gets clicked. See also [Commands](https://help.syncfusion.com/wpf/navigation-drawer/commands-and-events) section. 
 * **CommandParameter** — [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
-* **IsChildSelected** — It can be used to find the sub item is whether selected or not. 
-* **ItemType** — It can be used for defining the `NavigationItem` representation. It has the four type like `Tab`, `Button`, `Header` and `Seperator`. `Tab` and `Button` have the interaction support. 
-* **IsExpanded** — It can be used to find the sub items in whether expanded or collapsed state.
-* **IsSelected** — It can be used to whether the item has selected or not.
-* **SelectionBackground** — It can be used customize the selection strip in `NavigationItem`.
-* **Items** — It can be used to populate the sub items.
+* **IsChildSelected** — Gets whether any sub item is selected or not. 
+* **ItemType** — Defines the type of navigation item. See also [Different item types](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#different-item-types) section.
+* **IsExpanded** — Gets whether the item is in expanded or collapsed state.
+* **IsSelected** — Gets whether the item is selected or not.
+* **SelectionBackground** — Used to customize the selection indicator in `NavigationItem`.
+* **Items** — Used to populate the sub items.
 
 
 {% tabs %}
@@ -235,12 +237,12 @@ Populating the items with [NavigationItem](https://help.syncfusion.com/cr/wpf/Sy
 
 ### Different item types
 
-NavigationItem supports the below four types.
+The WPF Navigation Drawer has four built-in item types that can be set to each `NavigationItem`.
 
-* **Tab** — When the item type is Tab the item has interaction and selection support. When provide the command behaves like the button.  It supports the sub-items. 
-* **Button** — When the item type is Button, the item behaves like a button, and command support also provided.  It supports the sub-items. 
-* **Header** — When the item type is Header, the item behaves like the header. The item does not have selection support. Also, the header only showing when the drawer is in an open state. The header can be used in one of the sub-item but it does not have the sub-items support. 
-* **Separator** — When the item type is Separator, the item behaves like Separator. The separator can be used in one of the sub-item but it does not have the sub-items support. 
+* **Tab** — Interactions can be performed in this type and can have selection. This type supports multi-level population having an expand and collapse icon. 
+* **Button** — This type is similar to a button control behavior.Interactions can be performed and does not have selection. This type supports multi-level population having an expand and collapse icon.
+* **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a subitem also but cannot have a subitem. 
+* **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a subitem also but cannot have a subitem. 
 
 See also [Populating with items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-with-items) section.
 
@@ -248,7 +250,7 @@ N> ItemType default value is Tab.
 
 ## Data Binding
 
-The drawer content view can be populated by [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It can support, bound collection of objects through the `ItemsSource`. 
+The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It can support, bound collection of objects through the `ItemsSource`. 
 
 ### Model
 
