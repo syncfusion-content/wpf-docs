@@ -32,7 +32,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![ScheduleAppointment in  WPF Scheduler](appointments_images/adding-appointments.png)
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ## Scheduler item source and Mapping
 The `Scheduler` supports to bind any collection that implements the IEnumerable interface to populate appointments. You can map properties in business object to [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property. The following table that property shows mapping property details to `ScheduleAppointment`.
@@ -144,7 +144,7 @@ Schedule.ItemsSource = Meetings;
 
 ![Custom Appointment in  WPF Scheduler](appointments_images/Adding-customappointments.png)
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ## Spanned appointments
 
@@ -175,7 +175,7 @@ Schedule.ItemsSource = Meetings;
 
 ![Spanned Appointment in  WPF Scheduler](appointments_images/adding-spannedappointments.png)
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ## All day appointments
 The all-Day appointment is an appointment that is scheduled for a whole day. It can be set by using the [IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) property in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
@@ -202,7 +202,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![AllDay Appointment in  WPF Scheduler](appointments_images/adding-alldayappointments.png)
 
-You can download the entire source code here
+N> View sample in GitHub
 
 N>Appointment that lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting IsAllDay property. For example 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 
@@ -259,7 +259,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ![Recurring Appointment in  WPF Scheduler](appointments_images/adding-recurringappointments.png)
 
@@ -345,7 +345,7 @@ Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ### How to get the Recurrence editor field values from RRULE?
 You can get the Recurrence properties from the [RRULE](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_CreateRRule_Syncfusion_UI_Xaml_Scheduler_RecurrenceProperties_System_DateTime_System_DateTime_) using the [RRuleParser](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_RRuleParser_System_String_System_DateTime_) method of `SfScheduler`.
@@ -466,7 +466,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code here
+N> View sample in GitHub
 
 N>Exception dates should be Universal Time Coordinates (UTC) time zone.
 
@@ -525,7 +525,7 @@ N>• The `RecurrenceId` of an exception appointment and the `Id` of its pattern
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 • The recurrenceExceptionDates should be in a Universal Time Coordinates (UTC) time zone.
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ![Schedule Exception Appointment in  WPF Scheduler](appointments_images/Adding-ScheduleExceptionAppointment.png)
 
@@ -609,7 +609,7 @@ Schedule.ItemsSource = customAppointmentCollection;
  
 N> Exception dates should be Universal Time Coordinates (UTC) time zone.
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
  
@@ -676,7 +676,7 @@ N> The `RecurrenceId` of exception appointment and the `Id` of its pattern appoi
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
 
-You can download the entire source code here
+N> View sample in GitHub
 
 ![Custom Exception Appointment in WPF Scheduler](appointments_images/Adding-CustomExceptionAppointment.png)
 
