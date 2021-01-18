@@ -49,8 +49,6 @@ Basically the sidebar will be in hidden state and can be displayed by swipe gest
                     <Button x:Name="hamburgerButton" 
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
-                            HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -63,8 +61,7 @@ Basically the sidebar will be in hidden state and can be displayed by swipe gest
                            Height="50" 
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
-                           Content="Home" 
-                           FontSize="16" 
+                           Content="Home"    
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -73,14 +70,12 @@ Basically the sidebar will be in hidden state and can be displayed by swipe gest
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -92,9 +87,6 @@ Basically the sidebar will be in hidden state and can be displayed by swipe gest
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -104,8 +96,6 @@ Basically the sidebar will be in hidden state and can be displayed by swipe gest
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
                 <Label Content="Footer View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -376,7 +366,6 @@ The default position is Left.
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -390,7 +379,6 @@ The default position is Left.
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -399,14 +387,12 @@ The default position is Left.
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
-                <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
+                <Label Content="Header View"  
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -418,9 +404,6 @@ The default position is Left.
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -430,8 +413,6 @@ The default position is Left.
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
                 <Label Content="Footer View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -529,7 +510,6 @@ The following code example shows how to set the SfNavigationDrawer to the right.
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -543,7 +523,6 @@ The following code example shows how to set the SfNavigationDrawer to the right.
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -552,14 +531,12 @@ The following code example shows how to set the SfNavigationDrawer to the right.
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
-                <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
+                <Label Content="Header View"  
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -571,9 +548,6 @@ The following code example shows how to set the SfNavigationDrawer to the right.
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -583,8 +557,6 @@ The following code example shows how to set the SfNavigationDrawer to the right.
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
                 <Label Content="Footer View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -681,7 +653,6 @@ The following code example shows how to set the SfNavigationDrawer at the top.
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -695,7 +666,6 @@ The following code example shows how to set the SfNavigationDrawer at the top.
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -704,14 +674,12 @@ The following code example shows how to set the SfNavigationDrawer at the top.
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -723,9 +691,6 @@ The following code example shows how to set the SfNavigationDrawer at the top.
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -735,8 +700,6 @@ The following code example shows how to set the SfNavigationDrawer at the top.
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
                 <Label Content="Footer View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -833,7 +796,6 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -847,7 +809,6 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -856,14 +817,12 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -875,9 +834,6 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -887,8 +843,6 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
                 <Label Content="Footer View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -980,8 +934,6 @@ N> This property is applicable only when the DisplayMode is Default.
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1021,8 +973,6 @@ namespace NavigationDrawerWPF
             Label label = new Label()
             {
                 Content = "Header View",
-                FontSize = 20,
-                FontWeight = FontWeights.Bold,
                 HorizontalContentAlignment = HorizontalAlignment.Center,
                 VerticalContentAlignment = VerticalAlignment.Center
             };
@@ -1064,8 +1014,6 @@ N> The TouchThreshold property is applicable only when the DisplayMode is Defaul
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1106,8 +1054,6 @@ namespace NavigationDrawerWPF
             Label label = new Label()
             {
                 Content = "Header View",
-                FontSize = 20,
-                FontWeight = FontWeights.Bold,
                 HorizontalContentAlignment = HorizontalAlignment.Center,
                 VerticalContentAlignment = VerticalAlignment.Center
             };
@@ -1168,7 +1114,6 @@ N> The Transition property is applicable only when the DisplayMode is Default.
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -1182,7 +1127,6 @@ N> The Transition property is applicable only when the DisplayMode is Default.
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -1191,14 +1135,12 @@ N> The Transition property is applicable only when the DisplayMode is Default.
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1210,9 +1152,6 @@ N> The Transition property is applicable only when the DisplayMode is Default.
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -1316,7 +1255,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -1330,7 +1268,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -1339,14 +1276,12 @@ The following code example shows how to set [Transition](https://help.syncfusion
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1358,9 +1293,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -1465,7 +1397,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                             BorderBrush="Transparent" 
                             Height="50" Width="50" 
                             HorizontalAlignment="Left"  
-                            FontSize="16" 
                             Background="#1aa1d6" Foreground="White" 
                             Click="HamburgerButton_Click">
                         <Image Source="hamburger_icon.png" 
@@ -1479,7 +1410,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                            HorizontalContentAlignment="Center" 
                            VerticalContentAlignment="Center" 
                            Content="Home" 
-                           FontSize="16" 
                            Foreground="White" 
                            Background="#1aa1d6"/>
                 </StackPanel>
@@ -1488,14 +1418,12 @@ The following code example shows how to set [Transition](https://help.syncfusion
                        VerticalContentAlignment="Center" 
                        HorizontalContentAlignment="Center" 
                        Content="Content View" 
-                       FontSize="14" Foreground="Black"/>
+                       Foreground="Black"/>
             </Grid>
         </syncfusion:SfNavigationDrawer.ContentView>
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1507,9 +1435,6 @@ The following code example shows how to set [Transition](https://help.syncfusion
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock  Text="{Binding Name}" 
-                                        Padding="15" 
-                                        TextAlignment="Center" 
-                                        FontSize="18" 
                                         Foreground="Black"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -1601,8 +1526,6 @@ N> The AnimationDuration property is applicable only when the DisplayMode is Def
         <syncfusion:SfNavigationDrawer.DrawerHeaderView>
             <Grid Background="#31ade9">
                 <Label Content="Header View" 
-                       FontSize="20" 
-                       FontWeight="Bold" 
                        HorizontalContentAlignment="Center" 
                        VerticalContentAlignment="Center"/>
             </Grid>
@@ -1642,8 +1565,6 @@ namespace NavigationDrawerWPF
             Label label = new Label()
             {
                 Content = "Header View",
-                FontSize = 20,
-                FontWeight = FontWeights.Bold,
                 HorizontalContentAlignment = HorizontalAlignment.Center,
                 VerticalContentAlignment = VerticalAlignment.Center
             };
