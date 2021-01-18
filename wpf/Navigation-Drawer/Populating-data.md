@@ -241,8 +241,8 @@ The WPF Navigation Drawer has four built-in item types that can be set to each `
 
 * **Tab** — Interactions can be performed in this type and can have selection. This type supports multi-level population having an expand and collapse icon. 
 * **Button** — This type is similar to a button control behavior.Interactions can be performed and does not have selection. This type supports multi-level population having an expand and collapse icon.
-* **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a subitem also but cannot have a subitem. 
-* **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a subitem also but cannot have a subitem. 
+* **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a sub item also but cannot have a sub item. 
+* **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a sub item also but cannot have a sub item. 
 
 See also [Populating with items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-with-items) section.
 

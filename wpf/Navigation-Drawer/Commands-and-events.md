@@ -445,7 +445,7 @@ N> This event will get triggered only when the display mode is either compact or
 
 ## ItemCollapsed event
 
-The [ItemCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemCollapsed) event gets triggered when the subitems gets collapsed.
+The [ItemCollapsed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemCollapsed) event gets triggered when the sub items gets collapsed.
 
 N> This event will get triggered only when the display mode is either compact or expanded.
 
@@ -594,7 +594,7 @@ N> This event will get triggered only when the display mode is either compact or
 
 ## ItemExpanded event
 
-The [ItemExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemExpanded) event gets triggered when the subitems gets expanded.
+The [ItemExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemExpanded) event gets triggered when the sub items gets expanded.
 
 N> This event will get triggered only when the display mode is either compact or expanded.
 
