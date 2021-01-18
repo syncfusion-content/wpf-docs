@@ -252,6 +252,10 @@ N> ItemType default value is Tab.
 
 The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource) property. It can support, bound collection of objects through the `ItemsSource`. 
 
+[ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemTemplate) property used to customize the content of the item, while using the ItemsSource. Alternativly it can be showing by the [DisplayMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMemberPath).
+
+See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section.
+
 ### Model
 
 {% tabs %}
@@ -347,10 +351,14 @@ The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr
     </Window.DataContext>
     <syncfusion:SfNavigationDrawer
             x:Name="navigationDrawer"
-            DisplayMemberPath="Item"
             DisplayMode="Compact"
             IconMemberPath="Icon"
             ItemsSource="{Binding Items}">
+        <syncfusion:SfNavigationDrawer.ItemTemplate>
+            <DataTemplate>
+                <Label Content="{Binding Item}"/>
+            </DataTemplate>
+        </syncfusion:SfNavigationDrawer.ItemTemplate>
         <syncfusion:SfNavigationDrawer.ContentView>
             <Label
                 Width="150"
@@ -369,8 +377,11 @@ The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr
             this.DataContext = viewModel;
             SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
             navigationDrawer.DisplayMode = DisplayMode.Compact;
-            navigationDrawer.DisplayMemberPath = "Item";
             navigationDrawer.IconMemberPath = "Icon";
+            FrameworkElementFactory textBlock = new FrameworkElementFactory(typeof(TextBlock));
+            textBlock.SetBinding(TextBlock.TextProperty, new Binding("Item"));
+            DataTemplate template = new DataTemplate { VisualTree = textBlock };
+            navigationDrawer.ItemTemplate = template;
             navigationDrawer.ItemsSource = viewModel.Items;
             Label label = new Label();
             label.Content = "Content View";
@@ -390,8 +401,9 @@ The drawer menu can be populated by [ItemsSource](https://help.syncfusion.com/cr
 
 ## Hierarchical Data Binding
 
-The control populates the items using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource), also it allows the sub items. It can be achieved by using the [DisplayMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMemberPath), [IconMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IconMemberPath) and [ItemsContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemContainerStyle). 
+The control populates the items using the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemsSource), also it allows the sub items. 
 
+When using the ItemsSource to show the content of the item acheived by [DisplayMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMemberPath) and the icon of the item showing by used the [IconMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IconMemberPath). Alternatively [ItemsContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_ItemContainerStyle) used to customize the items and allows the sub items.  
                                   
 ### Model
 
