@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter Charts in WPF Chart (SfChart)
+# Bubble and Scatter Charts in WPF (SfChart)
 
-## Bubble 
+## Bubble Chart
 
 [`BubbleSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#) is represented by closely packed circles, whose areas are proportional to the quantities. 
 
@@ -107,7 +107,7 @@ series.ShowZeroBubbles = false;
 
 ![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
 
-## Scatter
+## Scatter Chart
 
 [`ScatterSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series when each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterWidth) properties.
 
