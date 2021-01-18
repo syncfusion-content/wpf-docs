@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
 
 This section helps you to build your application with SfNavigationDrawer.
 
