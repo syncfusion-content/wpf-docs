@@ -258,3 +258,5 @@ Similarly, other file menu items can be disabled. The following table lists the 
 <td>System.Windows.Controls.MenuItem</td>
 </tr>
 </table>
+
+N> The present UI design is subject to change, based on the inclusion of new features, enhancements and the user convenience.
