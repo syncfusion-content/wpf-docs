@@ -38,3 +38,15 @@ The Navigation Drawers are used in applications where navigating to the major mo
 * Preserving screen real estate on smaller windows.
 
 * Organizing access to many navigation categories.
+
+### Visual Structure
+
+This section describes the visual elements of the NavigationDrawer control and defines terms and concepts used in the DisplayMode.
+
+![VisualStructure](Overview_images/VisualStructure.png)
+
+
+* **Header** —  Represent the header of the drawer. It has shown nearby toggle button. 
+* **Footer** — Represent the footer of the drawer. It has shown bottom of the drawer. 
+* **NavigationDrawer Items** — Used this and populate the items in drawer content view.
+* **ToggleButton** — It can be used for the drawer closing and opening. 
