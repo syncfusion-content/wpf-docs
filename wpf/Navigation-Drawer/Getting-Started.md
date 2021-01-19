@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
 
 This section helps you to build your application with SfNavigationDrawer.
 
@@ -132,7 +132,7 @@ namespace NavigationDrawerWPF
 				<Button BorderBrush="#393939" BorderThickness="2" VerticalAlignment="Center" Click="ButtonBase_OnClick" HorizontalAlignment="Center" >
 					<StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
 						<Image Source="/Assets/NavigationDrawer/User.png" Height="80" Width="100"/>
-						<TextBlock HorizontalAlignment="Center" Margin="0 10 0 0" Text="James Pollock"/>
+						<TextBlock HorizontalAlignment="Center" Text="James Pollock"/>
 					</StackPanel>
 				</Button>
 			</Grid>
@@ -245,7 +245,7 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
                 <ListBox x:Name="list" ItemsSource="{Binding Contents}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock  Text="{Binding Name}" Padding="15" TextAlignment="Center" FontSize="23" Foreground="White"/>
+                            <TextBlock  Text="{Binding Name}" Foreground="White"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
@@ -253,7 +253,7 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
         </syncfusion:SfNavigationDrawer.DrawerContentView>
         <syncfusion:SfNavigationDrawer.DrawerFooterView>
             <Grid Background="#31ade9">
-                <Image Source="User.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 5" />
+                <Image Source="User.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center"  />
             </Grid>
         </syncfusion:SfNavigationDrawer.DrawerFooterView>
     </syncfusion:SfNavigationDrawer>
