@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Overview | SfRating | wpf | Syncfusion
-description: Overview and key features of Rating control
+description: This section describes the overview and key features provided on the WPF platform in the Rating control
 platform: wpf
 control: Rating
 documentation: ug
 ---
 
-# Overview
+# WPF Rating (SfRating) Overview
+
 
 The SfRating control for WPF provides the number of stars that represent a rating. It is used to configure the item size, and the number of displayed items in the SfRating control. The SfRating control can be used in various scenarios such as rating movies, rating applications, etc.
 
