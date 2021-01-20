@@ -479,8 +479,6 @@ You can edit the selected `CardViewItem` value by double-clicking on that item o
 N> To perform an edit operation on selected `CardViewItem`, you need to define the `CardViewItem` edit mode UI with editable functionalities by using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_EditItemTemplate).
 
 {% tabs %}
-
-{% tabs %}
 {% highlight XAML %}
 
 <syncfusion:CardView CanEdit="True" 
