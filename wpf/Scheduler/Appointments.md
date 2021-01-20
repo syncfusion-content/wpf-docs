@@ -682,7 +682,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Week" 
-						ItemsSource="{Binding RecursiveAppointmentCollection}">
+					    ItemsSource="{Binding RecursiveAppointmentCollection}">
     <syncfusion:SfScheduler.AppointmentMapping>
         <syncfusion:AppointmentMapping
             Subject="EventName"
