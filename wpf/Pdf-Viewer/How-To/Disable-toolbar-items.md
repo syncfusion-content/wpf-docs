@@ -9,29 +9,29 @@ documentation: ug
 
 # Disable toolbar items
 
-To remove the default toolbar completely, use [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) as described in the [View PDF files without using the toolbar](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#view-pdf-files-without-using-the-toolbar) section. 
+To remove the default toolbar completely, use the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) as described in the [section](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#view-pdf-files-without-using-the-toolbar). 
 
-However, an individual toolbar item can also be removed from the default toolbar of PDF Viewer using the toolbar template. The following code snippet illustrates disabling the <b>text search tool</b> from the default toolbar.
+However, an individual toolbar item can also be removed from the default toolbar of PDF Viewer using the toolbar template. The following code sample explains disabling the text search tool from the default toolbar.
 
 {% tabs %}
 {% highlight c# %}
 
-        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            //Get the instance of the toolbar using its template name
-            DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
+private void HideTextSearchTool()
+{
+	//Get the instance of the toolbar using its template name.
+	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
 
-            //Get the instance of the open file button using its template name
-            Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
+	//Get the instance of the open file button using its template name.
+	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
 
-            //Set the visibility of the button to collapsed 
-            textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
-        }
+	//Set the visibility of the button to collapsed.
+	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, other toolbar items can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar.
+Similarly, other toolbar items also can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar.
 
 <table>
 <tr>
@@ -201,26 +201,26 @@ Similarly, other toolbar items can be disabled. The following table lists the te
 </tr>
 </table>
 
-N> From v18.4.0.x onwards, the file menu items such as the Open, Save, Save As, and Print are not directly present in the toolbar and they are present in the context menu of File tools toggle button.
+N> From the v18.4.0.x onwards, the file menu items such as Open, Save, Save As, and Print are not directly present in the toolbar and they are present in the context menu of the File tools toggle button.
 
-The following code snippet illustrates disabling the Open tool from the menu.
+The following code sample explains disabling the Open tool from the menu.
 
 {% tabs %}
 {% highlight c# %}
 
-private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+private void HideOpenTool(object sender, RoutedEventArgs e)
 {
-	//Get the instance of the toolbar using its template name
+	//Get the instance of the toolbar using its template name.
 	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
 
-	//Get the instance of the file menu button using its template name
+	//Get the instance of the file menu button using its template name.
 	ToggleButton FileButton = (ToggleButton)toolbar.Template.FindName("PART_FileToggleButton", toolbar);
 
-	//Get the instance of the file menu button context menu and the item collection
+	//Get the instance of the file menu button context menu and the item collection.
 	ContextMenu FileContextMenu = FileButton.ContextMenu;
 	foreach (MenuItem FileMenuItem in FileContextMenu.Items)
 	{
-		//Get the instance of the open menu item using its template name and disable its visibility
+		//Get the instance of the open menu item using its template name and disable its visibility.
 		if (FileMenuItem.Name == "PART_OpenMenuItem")
 			FileMenuItem.Visibility = System.Windows.Visibility.Collapsed;
 	}
@@ -259,4 +259,4 @@ Similarly, other file menu items can be disabled. The following table lists the 
 </tr>
 </table>
 
-N> The present UI design is subject to change, based on the inclusion of new features, enhancements and the user convenience.
+N> The present UI design is subject to change, based on the inclusion of new features, enhancements, and user convenience.
