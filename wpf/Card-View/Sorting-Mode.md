@@ -147,6 +147,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can sort the grouped items either default order, ascending or descending order by directly clicking the grouped fields that is available in the dropping region of the `CardView` header.
 
+{% tabs %}
+{% highlight XAML %}
+
 <syncfusion:CardView CanSort="True"
                      CanGroup="True"
                      ItemsSource="{Binding CardViewItems}"
