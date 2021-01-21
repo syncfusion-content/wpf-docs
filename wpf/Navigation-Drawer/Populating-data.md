@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to populate the drawer menu. 
 
-## Populating with items
+## Populating using built-in items
 
 The WPF Navigation Drawer sidebar provides a built-in items support of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) that can be populated using the [Items] property.
 
