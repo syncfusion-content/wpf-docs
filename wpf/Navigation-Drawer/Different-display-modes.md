@@ -9,7 +9,7 @@ documentation: ug
 
 # DisplayMode with SfNavigationDrawer (Sidebar) control 
 
-The sidebar of the navigation menu has three built-in layouts that dynamically adjusts its layout depending on its size. The display mode can be set using the [DisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) property. The recommended mode to have an elegant and more organized content UI is the Compact mode.
+The WPF Navigation drawer provides default, compact and extended [display modes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) to create navigation menu for an application. Compact and Extended display modes support to populate the navigation menu using built items with different types. 
 
 ## Compact display mode
 
