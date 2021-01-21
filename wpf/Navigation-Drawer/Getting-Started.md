@@ -136,7 +136,7 @@ namespace NavigationDrawerWPF
 
 ## Adding sidebar menu items
 
-The sidebar menu populated by built-in items in SfNavigationDrawer. 
+The sidebar menu can be populated using the built-in items. The items will be of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) having many properties for customization. 
 
 See also [Different display modes](https://help.syncfusion.com/wpf/navigation-drawer/different-display-modes) topic in SfNavigationDrawer.
 
