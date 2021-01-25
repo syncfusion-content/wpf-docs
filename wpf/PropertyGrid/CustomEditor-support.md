@@ -9,13 +9,13 @@ documentation: ug
 
 # Custom Editor in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties. You can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection).
+The [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties. You can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection).
 
- For example, if you creates an `EmailID` property as a string type, `TextBox` is assigned as a value editor and all the text will be allowed. If you want to accept the input that is only in the mail id format, you can assign [MaskedEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with email-id mask as the value editor for the `EmailID` property. 
+ For example, if you creates an `EmailID` property as a string type, `TextBox` is assigned as a value editor and all the text will be allowed. If you want to accept the input that is only in the mail id format, you can assign [SfMaskedEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with email-id mask as the value editor for the `EmailID` property. 
 
 ## Creating the Custom Editor
 
-To create `CustomEditor`, we need to implement `ITypeEditor` interface. Here, `SfMaskedEdit` control is assigned with mail id mask as `EmailEditor` and `UpDown` control is assigned with min, max value as `IntegerEditor`. `EmailEditor` and `IntegerEditor` are the custom editors.
+To create [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html), we need to implement [ITypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html) interface. Here, `SfMaskedEdit` control is assigned with mail id mask as `EmailEditor` and `UpDown` control is assigned with min, max value as `IntegerEditor`. `EmailEditor` and `IntegerEditor` are the custom editors.
 
 {% tabs %}
 {% highlight C# %}
@@ -97,9 +97,11 @@ public class IntegerEditor : ITypeEditor {
 {% endhighlight  %}
 {% endtabs %}
 
+N> To assign a created custom editor to a properties, refer the [Assigning a Custom Editor](https://help.syncfusion.com/wpf/propertygrid/customeditor-support#assigning-a-custom-editor-using-editor-attribute) topic.
+
 ## Creating Custom Editor for a dynamic property.
 
-If the `SelectedObject` has a property of type `dynamic`, `ExpandoObject` or `ICustomTypeDescriptor`, we can create `CustomEditor` class by inheriting [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html). You can initialize a new instance of the custom editor using the `BaseTypeEditor.Create(PropertyDescriptor propertyDescriptor)` function. Below example shows, how to get the value of dynamic properties using its PropertyDescriptor and apply the value in `ComboEditor` to ComboBox objects.
+If the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_SelectedObject) has a property of type `dynamic`, `ExpandoObject` or `ICustomTypeDescriptor`, we can create `CustomEditor` class by inheriting [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html). You can initialize a new instance of the custom editor using the [BaseTypeEditor.Create(PropertyDescriptor)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html#Syncfusion_Windows_PropertyGrid_BaseTypeEditor_Create_System_ComponentModel_PropertyDescriptor_) function. Below example shows, how to get the value of dynamic properties using its PropertyDescriptor and apply the value in `ComboEditor` to ComboBox objects.
 
 {% tabs %}
 
