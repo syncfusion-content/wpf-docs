@@ -16,6 +16,8 @@ I> The Syncfusion WPF templates are available from v16.1.0.24.
 
 Use the following steps to create the Syncfusion WPF project through the Visual Studio Project Template. 
 
+> Before use the Syncfusion WPF Project Template, check whether the **WPF Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+
 1. To create a Syncfusion WPF project, follow either one of the options below:
 
    **Option 1:**  
