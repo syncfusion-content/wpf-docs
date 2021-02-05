@@ -25,6 +25,7 @@ GRIDS
     <th></th>
     <th>.NET Framework</th>
     <th>.NET Core & .NET 5</th>
+    <th></th>
 </tr>
 <tr>
 <td>SfDataGrid</td>
