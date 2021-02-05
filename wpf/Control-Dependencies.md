@@ -19,11 +19,39 @@ GRIDS
 <table>
 <tr>
 <th>Control</th>
-<th>Assembly References
-<td><tr><td>.NET Framework</td>
-<td>.NET Core and .NET5</td></tr></td>
-</th>
-<th>NuGet</th>
+<th colspan=2>Assembly dependencies</th>
+<td>NuGet</td>
+<tr>
+    <th></th>
+    <th>.NET Framework</th>
+    <th>.NET Core & .NET 5</th>
+</tr>
+<tr>
+<td>SfDataGrid</td>
+<td>
+Syncfusion.SfGrid.WPF<br/>
+Syncfusion.Data.WPF<br/>
+Syncfusion.Shared.WPF<br/>
+</td>
+<td>
+Syncfusion.Data.WPF<br/>
+Syncfusion.Shared.WPF<br/>
+</td>
+<td><a href="https://www.nuget.org/packages/Syncfusion.SfGrid.WPF/">Syncfusion.SfGrid.WPF</a></td>
+</tr>
+<tr>
+<td>SfTreeGrid</td>
+<td>
+Syncfusion.SfGrid.WPF<br/>
+Syncfusion.Data.WPF<br/>
+Syncfusion.Shared.WPF<br/>
+</td>
+<td>
+Syncfusion.Data.WPF<br/>
+Syncfusion.Shared.WPF<br/>
+</td>
+<td><a href="https://www.nuget.org/packages/Syncfusion.SfGrid.WPF/">Syncfusion.SfGrid.WPF</a></td>
+</tr>
 </tr>
 </table>
 
