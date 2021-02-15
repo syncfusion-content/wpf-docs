@@ -107,3 +107,67 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Interval customization support for histogram series in WPF Chart](Series_images/histogram_interval.png)
+
+**CurveColor**
+
+This property is used to set the color of curve.
+
+{% tabs %}
+
+{% highlight xaml %}
+...
+<Style TargetType="Polyline" x:Key="CurveColorStyle">
+    <Setter Property="Stroke" Value="LightSeaGreen"/>
+    <Setter Property="StrokeThickness" Value="3"/>
+    <Setter Property="StrokeDashArray" Value="1,2" />
+</Style>
+...
+
+<chart:HistogramSeries x:Name="histogramSeries" 
+
+HistogramInterval="5"
+
+ShowNormalDistributionCurve="True"
+
+CurveLineStyle="{StaticResource CurveColorStyle}"
+
+Interior="LightSkyBlue"
+
+ItemsSource="{Binding Product}"
+
+XBindingPath="Price" 
+
+YBindingPath="Value"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+...
+...
+HistogramSeries series = new HistogramSeries()
+{
+
+    ItemsSource = new ViewModel().Product,
+
+    XBindingPath = "Price",
+
+    YBindingPath = "Value",
+
+    HistogramInterval = 5,
+
+    ShowNormalDistributionCurve = True,
+
+    CurveLineStyle = AreaChart.Resources["CurveColorStyle"] as Style,
+
+    Interior = new SolidColorBrush(new SolidColorBrush(Colors.LightSkyBlue))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding CurveColor in WPF Chart](Series_images/CurveColor.png)
