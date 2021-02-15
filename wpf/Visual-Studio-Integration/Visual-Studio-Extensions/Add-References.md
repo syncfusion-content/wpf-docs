@@ -15,6 +15,8 @@ N> This Reference Manager can be applied to a project for Syncfusion assembly ve
 
 Follow the given steps to add the Syncfusion references in Visual Studio:
 
+> Before use the Syncfusion WPF Reference Manager, check whether the **WPF Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+
 1. Open a new or existing **WPF** application.
 
 2. To open Syncfusion Reference Manager Wizard, follow either one of the options below:

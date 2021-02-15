@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Other Charts in WPF Chart (SfChart)
+# Other Charts in WPF (SfChart)
 
-## Box and Whisker 
+## Box and Whisker Chart
 
 [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
 
@@ -209,7 +209,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
 
-## Waterfall Series
+## Waterfall Chart
 
 [`WaterfallSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
 

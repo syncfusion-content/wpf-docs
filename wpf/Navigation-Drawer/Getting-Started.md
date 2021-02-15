@@ -7,60 +7,30 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Navigation Drawer (SfNavigationDrawer)
 
 This section helps you to build your application with SfNavigationDrawer.
 
-## Steps
+## Assembly Deployment
 
-* Create new WPF project using Visual Studio.
-* Add the SfNavigationDrawer assembly to your application.
-* Initialize the NavigationDrawer control.
-* Adding content view to the NavigationDrawer control.
-* Adding drawer view to the NavigationDrawer control.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfnavigationdrawer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-These steps are explained below for XAML.
+Refer to this documentation to find more details about installing nuget packages in a WPF application.
 
-## Create a simple NavigationDrawer from XAML
+## Creating simple application with SfNavigationDrawer
 
-### Adding assembly reference
+* Creating the project
+* Adding SfNavigationDrawer from Toolbox
+* Adding SfNavigationDrawer control from XAML
+* Adding control manually in C#
+* Adding content to the control
+* Adding sidebar menu items
 
-1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions > Syncfusion.SfNavigationDrawer.WPF.
+### Creating the project
 
-![Assembly Image](Getting-Started_images/Getting-Started_img1.png)
+Create new WPF Project in Visual Studio to display SfNavigationDrawer with data objects.
 
-
-This window differs for the Visual Basic project.
-
-Select the .NET Framework version respective to your application. The version can be identified as below:
-
-<table>
-<tr>
-<td>XX.X450.0.X</td>
-<td>4.5 Framework</td>
-</tr>
-<tr>
-<td>XX.X451.0.X</td>
-<td>4.5.1 Framework</td>
-</tr>
-<tr>
-<td>XX.X460.0.X</td>
-<td>4.6 Framework</td>
-</tr>
-</table>
-
-
-Add the following namespace in your XAML window.
-
-{% highlight xml %}
-      
-      xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-{% endhighlight %}
-
-
-## Add SfNavigationDrawer from Toolbox
+### Adding SfNavigationDrawer from Toolbox
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
@@ -72,15 +42,17 @@ Now, the SyncfusionControls for UWP XAML reference is added to the application r
 
 ![Namespace image](Getting-Started_images/Getting-Started_img4.png)
 
+### Adding control manually in XAML
 
-## Initialize the NavigationDrawer
+In order to add control manually in XAML, do the below steps,
 
-You need to initialize the NavigationDrawer represented by the following class Syncfusion.UI.Xaml.NavigationDrawer.
+1. Add the below required assembly references to the project,
+	* Syncfusion.SfNavigationDrawer.WPF 
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3. Declare SfNavigationDrawer control in XAML page.
 
 {% tabs %}
-
-{% highlight xml %}
-
+{% highlight xaml %}
 <Window x:Class="NavigationDrawerWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -92,11 +64,20 @@ You need to initialize the NavigationDrawer represented by the following class S
         Title="MainWindow" Height="450" Width="800">
     <syncfusion:SfNavigationDrawer x:Name="navigationDrawer"/>
 </Window>
-
 {% endhighlight %}
+{% endtabs %}
 
+### Adding control manually in C#
+
+In order to add control manually in C#, do the below steps,
+
+1. Add the below required assembly references to the project,
+	* Syncfusion.SfNavigationDrawer.WPF 
+2. Import SfTreeView namespace **Syncfusion.UI.Xaml.NavigationDrawer** .
+3. Create SfNavigationDrawer control instance and add it to the Page.
+
+{% tabs %}
 {% highlight c# %}
-
 using Syncfusion.UI.Xaml.NavigationDrawer;
 using System.Windows;
 
@@ -115,199 +96,251 @@ namespace NavigationDrawerWPF
         }
     }
 }
-
 {% endhighlight %}
-
 {% endtabs %}
 
-## Adding content view to the NavigationDrawer
+## Adding content to the control
 
 {% tabs %}
 
 {% highlight xml %}
 
-	<syncfusion:SfNavigationDrawer x:Name="drawer">
-		<syncfusion:SfNavigationDrawer.ContentView>
-			<Grid Background="Black">
-				<Button BorderBrush="#393939" BorderThickness="2" VerticalAlignment="Center" Click="ButtonBase_OnClick" HorizontalAlignment="Center" >
-					<StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-						<Image Source="/Assets/NavigationDrawer/User.png" Height="80" Width="100"/>
-						<TextBlock HorizontalAlignment="Center" Margin="0 10 0 0" Text="James Pollock"/>
-					</StackPanel>
-				</Button>
-			</Grid>
-		</syncfusion:SfNavigationDrawer.ContentView>
+	<syncfusion:SfNavigationDrawer>
+            <syncfusion:SfNavigationDrawer.ContentView>
+               <Label
+                Width="150"
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="Content View" />
+           </syncfusion:SfNavigationDrawer.ContentView>
 	</syncfusion:SfNavigationDrawer>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.UI.Xaml.NavigationDrawer;
-using System;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-
-namespace NavigationDrawerWPF
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
             SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
-            Grid grid = new Grid()
-            {
-                Background = new SolidColorBrush(Colors.Black)
-            };
-
-            Button button = new Button()
-            {
-                BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#393939")),
-                BorderThickness = new Thickness(2),
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Center
-            };
-
-            StackPanel stackPanel = new StackPanel()
-            {
-                Orientation = Orientation.Vertical,
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Center
-            };
-
-            Image image = new Image()
-            {
-                Source = new BitmapImage(new Uri("User.png", UriKind.Relative)),
-                Height = 80,
-                Width = 100
-            };
-
-            TextBlock textBlock = new TextBlock()
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                Margin = new Thickness(0, 10, 0, 0),
-                Text = "James Pollock"
-            };
-
-            stackPanel.Children.Add(image);
-            stackPanel.Children.Add(textBlock);
-            button.Content = stackPanel;
-            grid.Children.Add(button);
-            navigationDrawer.ContentView = grid;
+            Label label = new Label();
+            label.Content = "Content View";
+            label.HorizontalAlignment = HorizontalAlignment.Center;
+            label.VerticalAlignment = VerticalAlignment.Center;
+            label.Height = 30;
+            label.Width = 150;
+            navigationDrawer.ContentView = label;
             this.Content = navigationDrawer;
-        }
-    }
-}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding drawer view to the NavigationDrawer
+## Adding sidebar menu items
 
-The DrawerView is a panel that is the hidden content, brought to the view by manipulations like panning or swiping through the edges. The DrawerView has three sections namely:
+The sidebar menu can be populated using the built-in items. The items will be of type [NavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html) having many properties for customization. 
 
-   * DrawerHeaderView
-   
-   * DrawerContentView
-   
-   * DrawerFooterView
+See also [Different display modes](https://help.syncfusion.com/wpf/navigation-drawer/different-display-modes) topic in SfNavigationDrawer.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
-	<Window x:Class="NavigationDrawerWPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:NavigationDrawerWPF"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.DataContext>
-        <local:ViewModel/>
-    </Window.DataContext>
-    <syncfusion:SfNavigationDrawer x:Name="navigationDrawer">
-        <syncfusion:SfNavigationDrawer.DrawerHeaderView>
-            <Grid Background="#31ade9">
-                <Image Source="User.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 5" />
-            </Grid>
-        </syncfusion:SfNavigationDrawer.DrawerHeaderView>
-        <syncfusion:SfNavigationDrawer.DrawerContentView>
-            <Grid Background="Black">
-                <ListBox x:Name="list" ItemsSource="{Binding Contents}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock  Text="{Binding Name}" Padding="15" TextAlignment="Center" FontSize="23" Foreground="White"/>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </Grid>
-        </syncfusion:SfNavigationDrawer.DrawerContentView>
-        <syncfusion:SfNavigationDrawer.DrawerFooterView>
-            <Grid Background="#31ade9">
-                <Image Source="User.png" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 5" />
-            </Grid>
-        </syncfusion:SfNavigationDrawer.DrawerFooterView>
+    <syncfusion:SfNavigationDrawer
+        x:Name="navigationDrawer"
+        DisplayMode="Expanded">
+        <syncfusion:NavigationItem
+                Header="Inbox"
+                IsExpanded="True"
+                IsSelected="True">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M32.032381, 16.445429 L25.410999, ... />
+            </syncfusion:NavigationItem.Icon>
+            <syncfusion:NavigationItem Header="Primary">
+                <syncfusion:NavigationItem.Icon>
+                    <Path Data="M9.5189972,7.3780194C8.3389893,.../>
+                </syncfusion:NavigationItem.Icon>
+            </syncfusion:NavigationItem>
+            <syncfusion:NavigationItem Header="Social">
+                <syncfusion:NavigationItem.Icon>
+                    <Path Data="M22.133972,14.194015C17.582977,... />
+                </syncfusion:NavigationItem.Icon>
+            </syncfusion:NavigationItem>
+            <syncfusion:NavigationItem Header="Promotions">
+                <syncfusion:NavigationItem.Icon>
+                    <Path Data="M9.4614787,7.2521966C8.897512,.../>
+                </syncfusion:NavigationItem.Icon>
+            </syncfusion:NavigationItem>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="Sent mail">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M42.128046,6.7269681 L18.53705,..../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="Important">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M25.085007,5.9780004 L20.577011,...../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="Drafts">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M6.9999996,48.353 L19,48.353 19,..../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem ItemType="Separator" />
+        <syncfusion:NavigationItem Header="All Labels" ItemType="Header" />
+        <syncfusion:NavigationItem Header="Starred">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M25.085007,5.9780004 L20.577011,.../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="All mail">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M12,32.999999 L26,32.999999 26,.../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="Trash">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M17,12 L19,12 19,42 17,42z M10.998,.../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:NavigationItem Header="Spam">
+            <syncfusion:NavigationItem.Icon>
+                <Path Data="M33.671003,29.293001 L39.214003,.../>
+            </syncfusion:NavigationItem.Icon>
+        </syncfusion:NavigationItem>
+        <syncfusion:SfNavigationDrawer.ContentView>
+            <Label
+                Width="150"
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="Content View" />
+        </syncfusion:SfNavigationDrawer.ContentView>
     </syncfusion:SfNavigationDrawer>
-</Window>
 
-    
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System.Collections.Generic;
-using System.Windows;
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            navigationDrawer.DisplayMode = DisplayMode.Expanded;
+            NavigationItemsCollection navigationSubItems = new NavigationItemsCollection();
+            navigationSubItems.Add(new NavigationItem()
+            {
+                Header = "Primary",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M9.5189972,7.3780194C8.3389893,...),
+                    ......
+                },
 
-namespace NavigationDrawerWPF
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-    }
+            });
+            navigationSubItems.Add(new NavigationItem()
+            {
+                Header = "Social",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M22.133972,14.194015C17.582977,....),
+                    .....
+                },
 
-    public class ViewModel
-    {
-        public ViewModel()
-        {
-            Contents = new List<Model>();
+            });
+            navigationSubItems.Add(new NavigationItem()
+            {
+                Header = "Promotions",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M9.4614787,7.2521966C8.897512,....),
+                    .....
+                },
 
-            Contents.Add(new Model() { Name = "Home" });
-            Contents.Add(new Model() { Name = "Profile" });
-            Contents.Add(new Model() { Name = "Inbox" });
-            Contents.Add(new Model() { Name = "Outbox" });
-            Contents.Add(new Model() { Name = "Sent" });
-            Contents.Add(new Model() { Name = "Trash" });
-            Contents.Add(new Model() { Name = "Sign Out" });
-        }
-
-        public List<Model> Contents { get; set; }
-    }
-
-    public class Model
-    {
-        public string Name { get; set; }
-    }
-}
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Inbox",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M32.032381, 16.445429 L25.410999, ....),
+                    ......
+                },
+                Items = navigationSubItems,
+                IsExpanded = true,
+                IsSelected=true
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Sent mail",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M42.128046,6.7269681 L18.53705,....),
+                    ......
+                }
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Drafts",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M6.9999996,48.353 L19,....),
+                    ....
+                }
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                ItemType = ItemType.Separator
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                ItemType = ItemType.Header,
+                Header= "All Labels"
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Starred",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M25.085007,5.9780004 L20.577011,....),
+                    .....
+                }
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "All mail",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M12,32.999999 L26,32.999999 26,....),
+                    ......
+                }
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Trash",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M17,12 L19,12 19,42 17,42z M10.998,....),
+                    ......
+                }
+            });
+            navigationDrawer.Items.Add(new NavigationItem()
+            {
+                Header = "Spam",
+                Icon = new Path()
+                {
+                    Data = Geometry.Parse("M33.671003,29.293001 L39.214003,....),
+                    .........
+                }
+            });
+            Label label = new Label();
+            label.Content = "Content View";
+            label.HorizontalAlignment = HorizontalAlignment.Center;
+            label.VerticalAlignment = VerticalAlignment.Center;
+            label.Height = 30;
+            label.Width = 150;
+            navigationDrawer.ContentView = label;
+            this.Content = navigationDrawer;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![DrawerContentView image](Getting-Started_images/Getting-Started_img5.png)
+![Getting started image](Getting-Started_images/Getting-Started_img5.png)
                    
 
