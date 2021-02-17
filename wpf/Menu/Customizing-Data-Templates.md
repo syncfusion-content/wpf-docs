@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing Data Templates| MenuAdv | Wpf | Syncfusion
-description: customizing data templates
+description: Customize the menuitemadv using ItemTemplate and Hierarchical datatemplate that represent how a business object is displayed as MenuItemAdv.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -52,11 +52,12 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 {% endhighlight %}
 
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-data-templates-in-menuadv)
 
 
 Implementing the above code will generate the following MenuAdv control.
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![Image showing the menu with ItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
