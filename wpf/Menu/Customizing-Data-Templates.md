@@ -57,7 +57,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/customizing-dat
 
 Implementing the above code will generate the following MenuAdv control.
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![Image showing the menu with ItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
