@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing Data Templates| MenuAdv | Wpf | Syncfusion
-description: customizing data templates
+description: Customizing data templates to customize apperance of MenuItemAdv.
 platform: wpf
 control: MenuAdv
 documentation: ug
