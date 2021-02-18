@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF TextInputLayout (SfTextInputLayout)
 
 This section explains the steps needed to configure the control of the text input layout.
 
@@ -98,3 +98,12 @@ Run the project, and check if you get following output to make sure that the pro
 
 ![Adding hint](Images/hintlabel.gif)
 
+## Theme
+
+SfTextInputLayout supports various built-in themes. Refer to the below links to apply themes for the SfTextInputLayout,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF TextInputLayout](Images/Theme.png)

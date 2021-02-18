@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for SfSunburstChart
+title: Getting Started | SfSunburstChart | WPF | Syncfusion 
 description: This section explains the steps required to populate the sunburst chart with data, add data labels, legends and header.
 platform: wpf
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Sunburst Chart (SfSunburstChart)
 
 This section explains you the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
 
@@ -30,7 +30,7 @@ Now the Syncfusion.SfSunburstChart.WPF reference is added to the application ref
 
 ![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted3.png)
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SunburstChart;assembly=Syncfusion.SfSunburstChart.WPF" in MainWindow](Getting-Started_images/gettingstarted4.png)
+![Added namespace for SfSunburstChart control in MainWindow](Getting-Started_images/gettingstarted4.png)
 
 ## Initialize view model
 
@@ -511,3 +511,13 @@ Following is the final output screenshot,
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
 
 You can find the complete getting started sample from this [`link.`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started2023483097)
+
+## Theme
+
+Sunburst chart supports various built-in themes. Refer to the below links to apply themes for the Sunburst chart,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfSunburstChart](Getting-Started_images/Theme.jpg)

@@ -184,3 +184,13 @@ N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine t
 The sample project for displaying PDF files using the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/DisplayPDF).
 
 N> Alternatively, the Open button in the toolbar can also be used to load and display the PDF documents at runtime. Refer to this [link](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#open-pdf-file-from-the-local-disk-using-toolbar) for more details.
+
+## Theme
+
+PdfViewerControl supports various built-in themes. Refer to the below links to apply themes for the PdfViewerControl,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme in WPF PDFViewer](Getting-Started_images/Theme.png)

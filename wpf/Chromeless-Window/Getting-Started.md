@@ -6,7 +6,7 @@ platform: WPF
 control: ChromelessWindow
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF ChromelessWindow
 
 This section explains how to implement the ChromelessWindow control. It describes the following:
 
@@ -262,3 +262,13 @@ You can change the border color of the chromeless window by setting the [ResizeB
 {% endtabs %}
 
 ![wpf chromeless window border color](Getting-Started_images/wpf-chromeless-window-border-color.png)
+
+## Theme
+
+ChromelessWindow supports various built-in themes. Refer to the below links to apply themes for the ChromelessWindow,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF ChromelessWindow](Getting-Started_images/wpf-chromeless-window-theme-support.png)

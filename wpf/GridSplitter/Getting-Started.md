@@ -641,3 +641,12 @@ If we want resize the merged columns or rows, place the grid splitter on next or
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
+## Theme
+
+SfGridSplitter supports various built-in themes. Refer to the below links to apply themes for the SfGridSplitter,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfGridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)

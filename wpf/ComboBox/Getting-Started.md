@@ -335,6 +335,17 @@ You can customize the visualization of data object using the [ItemTemplate](http
 
 ![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
 
+## Theme
+
+ComboBoxAdv supports various built-in themes. Refer to the below links to apply themes for the ComboBoxAdv,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+ 
+  ![Setting theme to WPF comboBoxAdv](Getting-Started_images/ComboBoxAdv_Theme_Support.png)
+
+
 ## See Also
 [How to filter dropdown items in WPF editable ComboBoxAdv?](https://www.syncfusion.com/kb/11499/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
 

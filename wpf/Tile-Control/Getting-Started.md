@@ -131,9 +131,12 @@ Pulsing Tile
 
 N> The title will be displayed at the top of the tile. The header will be displayed at the bottom of the tile. The image will be displayed at the center of the tile.
 
+## Theme
 
+Hub Tile and Pulsing Tile controls supports various built-in themes. Refer to the below links to apply themes for the Hub Tile and Pulsing Tile,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
-
-
+  ![Setting theme to WPF Hub Tile and Pulsing Tile controls](Getting-Started_images/Theme.png)

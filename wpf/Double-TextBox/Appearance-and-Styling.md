@@ -201,57 +201,10 @@ doubleTextBox.ToolTip = "Enter Double value";
 
 ## Theme
 
-The appearance of the `DoubleTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `DoubleTextBox` control.
+DoubleTextBox supports various built-in themes. Refer to the below links to apply themes for the DoubleTextBox,
 
-* Blend
-* Default
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* SystemTheme
-* VisualStudio2013
-* VisualStudio2015
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-For example, the `Blend` style applied to the `DoubleTextBox` as shown in the following example code:
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:DoubleTextBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                  Name="doubleTextBox" />
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-SfSkinManager.SetVisualStyle(doubleTextBox, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
-
-![DoubleTextBox Blend visual style](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
+![Setting theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-text-box-theme-support.png)

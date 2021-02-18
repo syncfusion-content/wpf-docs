@@ -139,3 +139,13 @@ sfCalculator.DefaultValue = 30;
 {% endtabs %}
 
 ![WaterMark for SfCalculator](Getting-Started_images/GettingStarted_img2.png)
+
+## Theme
+
+SfCalculator supports various built-in themes. Refer to the below links to apply themes for the SfCalculator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfCalculator](Getting-Started_images/wpf-sfcalculator-control-theme.png)
