@@ -192,7 +192,7 @@ SfRating rating = new SfRating()
 
 {% endtabs %}
 
-![SfRating Getting Started](images/gettingstarted.jpg)
+![SfRating Getting Started](images/gettingstarted.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/SfRating-getting-started)
 
