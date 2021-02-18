@@ -81,57 +81,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker
 
 ## Theme
 
-You can customize the appearance of the `SfDatePicker` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `SfDatePicker` control.
+SfDatePicker supports various built-in themes. Refer to the below links to apply themes for the SfDatePicker,
 
-* Blend
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* VisualStudio2013
-* VisualStudio2015
-
-{% tabs %}
-{% highlight XAML %}
-
-<Window>
-    <!--Theme Namespace-->
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:SfDatePicker syncfusionskin:SfSkinManager.VisualStyle="MaterialDark" 
-                                 Name="sfDatePicker" />
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-SfDatePicker sfDatePicker = new SfDatePicker();
-SfSkinManager.SetVisualStyle(sfDatePicker, VisualStyles.MaterialDark);
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfDatePicker with MaterialDark visual style](Appearance-and-Styling_images/Theme.png)
-
-Here, the `MaterialDark` style is applied to the `SfDatePicker`.
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Themes)
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+![Setting theme to WPF DatePicker](Appearance-and-Styling_images/Theme.png)

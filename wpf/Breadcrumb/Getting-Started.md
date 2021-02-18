@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started| Hierarchical Navigator | Wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF Breadcrumb (HierarchyNavigator) into an applicationl and enable its basic features with example.. 
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Breadcrumb (HierarchyNavigator)
 
 ## Assembly deployment
 
@@ -224,3 +224,13 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endtabs %}
 
 ![wpf hierarchy navigator control items added by data binding](Getting-Started_images/wpf-hierarchy-navigator-control-data-binding.png)
+
+## Theme
+
+HierarchyNavigator supports various built-in themes. Refer to the below links to apply themes for the HierarchyNavigator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Hierarchical Navigator control](Getting-Started_images/wpf-hierarchy-navigator-control-theme.png)

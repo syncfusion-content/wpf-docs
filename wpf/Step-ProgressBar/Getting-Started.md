@@ -154,3 +154,13 @@ namespace SfProgressBar
 {% endtabs %}
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/GettingStarted).
+
+## Theme
+
+SfStepProgressBar supports various built-in themes. Refer to the below links to apply themes for the SfStepProgressBar,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfStepProgressBar](Getting-Started_images/wpf-StepProgressBar-control-Theme.png)

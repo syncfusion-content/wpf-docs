@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for the SfSmithChart.
-description: Getting start with simple application using SfSmithChart in WPF.
+title: Getting Started | SfSmithChart | WPF | Syncfusion 
+description: This section explain about how to integrate WPF Smith Chart (SfSmithChart) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Smith Chart (SfSmithChart)
 
 This section explains the steps required to build the application with SfSmithChart.
 
@@ -75,7 +75,7 @@ Now, the Syncfusion.SfSmithChart.WPF reference has been added to the application
 ![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
 
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusion.SfSmithChart.WPF" in MainWindow](Getting-Started_images/Getting-Started_img4.png)
+![Added namespace for SfSmithChart control in MainWindow](Getting-Started_images/Getting-Started_img4.png)
 
 
 In this section, the data in the following table is used for demonstration.
@@ -591,5 +591,12 @@ The following output is displayed as the result of above code example.
 
 ![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
+## Theme
 
+Smith chart supports various built-in themes. Refer to the below links to apply themes for the Smith chart,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+![Setting theme to WPF SfSmithChart](Getting-Started_images/Theme.png)

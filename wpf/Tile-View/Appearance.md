@@ -182,63 +182,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Theme
 
-You can customize the appearance of the `TileViewControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `TileViewControl` control.
+TileViewControl supports various built-in themes. Refer to the below links to apply themes for the TileViewControl,
 
-* Blend
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* VisualStudio2013
-* VisualStudio2015
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-{% tabs %}
-{% highlight xaml %}
-
-<Window>
-    <!--Theme Namespace-->
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-          <syncfusion:TileViewControl syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                      Name="tileViewControl" >
-               <syncfusion:TileViewItem Header="Item1" Content="Content1"/>
-               <syncfusion:TileViewItem Header="Item2" Content="Content2"/>
-               <syncfusion:TileViewItem Header="Item3" Content="Content3"/>
-               <syncfusion:TileViewItem Header="Item4" Content="Content4"/>
-          </syncfusion:TileViewControl>
-     </Grid>
-</Window>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-TileViewControl tileViewControl = new TileViewControl();
-SfSkinManager.SetVisualStyle(tileViewControl, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
-
-![TileViewControl with Blend visual style](Appearance_images/blend.png)
-
-Here, the `Blend` style is applied to the `TileViewControl`.
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Themes)
+  ![Setting theme in wpf TileViewControl](Getting-Started_images/Theme.png)

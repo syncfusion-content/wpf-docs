@@ -11,73 +11,16 @@ documentation: ug
 
 This section illustrates the following Layout-related feature of NotifyIcon control.
 
-## Setting VisualStyle for NotifyIcon
+## Theme
 
-The [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control supports different visual styles to enhance its look and feel. The visual style for the NotifyIcon is set by using the [SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.SkinStorage.html#Syncfusion_Windows_Shared_SkinStorage_SetVisualStyle_System_Windows_DependencyObject_System_String_) property.
+NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
 
-### Property table
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+  ![Setting theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SetVisualStyle</td><td>
-Sets the visual style for the NotifyIcon control. The options provided are as follows. Blend, Office2003, Office2007Blue, Office2007Black, Office2007Silver, ShinyBlue, ShinyRed, SyncOrange, VS2010, Metro and Transparent</td></tr>
-</table>
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Button x:Name="button" Height="30" Width="100" Click="Button_Click" Content="Notify show">
-</Button>
-
-<syncfusion:NotifyIcon Name="notifyIcon" Header="NotifyIcon" BalloonTipTitle="Default NotifyIcon" syncfusion:SkinStorage.VisualStyle="Office2007Blue"
-                               BalloonTipText="Custom NotifyIcon" BalloonTipIcon="Info"
-                               ShowBalloonTipTime="1000" HideBalloonTipTime="1000" >
-</syncfusion:NotifyIcon>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//For Office2007Blue
-SkinStorage.SetVisualStyle(notifyIcon, "Office2007Blue");
-
-//For Blend
-SkinStorage.SetVisualStyle(notifyIcon, "Blend");
-
-//For Office2007Silver
-SkinStorage.SetVisualStyle(notifyIcon, "Office2007Silver");
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Office2007Blue**
-
-![Apply Office2007Blue theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-office2007Blue.png)
-
-
-**Blend**
-
-![Apply Blend theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-blend.png)
-
-**Office2007Silver**
-
-![Apply Office2007Silver theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-office2007silver.png)
-
-
-**Metro**
-
-![Apply Metro theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-metro.png)
-
-**Transparent**
-
-![Apply Transparent theme to WPF NotifyIcon](Layout-Related-Features_images/wpf-notifyicon-transparent.png)
 
 ## Customizing the Header of the NotifyIcon
 

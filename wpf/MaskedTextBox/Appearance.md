@@ -109,59 +109,10 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Theme
 
-You can customize the appearance of the `SfMaskedEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfMaskedEdit` control.
+SfMaskedEdit supports various built-in themes. Refer to the below links to apply themes for the SfMaskedEdit,
 
-* Blend
-* Default
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* SystemTheme
-* VisualStudio2013
-* VisualStudio2015
-
-Here, the `Blend` style is applied to the `SfMaskedEdit`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:SfMaskedEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                   Name="sfMaskedEdit" />
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-SfMaskedEdit sfMaskedEdit = new SfMaskedEdit();
-SfSkinManager.SetVisualStyle(sfMaskedEdit, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfMaskedEdit with Blend visual style](Appearence_Images/Theme.png)
-
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Themes) in GitHub
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+  ![Setting theme to WPF SfMaskedEdit](Getting-Started_images/SfMaskedEdit_theme.png)

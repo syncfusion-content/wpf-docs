@@ -1,181 +1,22 @@
 ---
 layout: post
-title: Appearance | TaskBar | wpf | Syncfusion
-description: appearance
+title: Appearance | TaskBar | WPF | Syncfusion
+description: This section explain about how to customize the appearance and set different themes for TaskBarcontrol and how to implement those themes to the control.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF TaskBar
 
 This section deals with the appearance of TaskBar control and contains the following topic:
 
-## Setting Visual Styles
+## Theme
 
-The appearance of the TaskBar control is customized by using the VisualStyle property. The various built-in visual styles are listed below.
+TaskBar supports various built-in themes. Refer to the below links to apply themes for the TaskBar,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Sets the visual style for the TaskBar control. The options provided are as follows. 
-* Blend <br/>
-* Office2003 <br/>
-* Office2007 <br/>
-* BlueOffice2007 <br/>
-* BlackOffice2007Silver <br/>
-* ShinyBlue <br/>
-* ShinyRed <br/>
-* SyncOrange <br/>
-* VS2010 <br/>
-* Metro <br/>
-* Transparent</td></tr>
-</table>
-
-
-
-
-To set the visual style for the TaskBar, use the below code.
-
-
-{%tabs%}
-
-{% highlight xaml %}
-
-
-
-<!-- Adding TaskBar -->
-
-<syncfusion:TaskBar Name="taskBar" >
-
-
-
-    <!-- Adding TaskBarItem -->
-
-    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
-
-
-
-        <!-- Adding content to TaskBarItem -->
-
-        <StackPanel Margin="10" HorizontalAlignment="Center" 										VerticalAlignment="Stretch">
-
-            <TextBlock TextWrapping="Wrap">
-
-This TaskBar that have a TaskBarItem.
-
-            </TextBlock>
-
-        </StackPanel>
-
-    </syncfusion:TaskBarItem>
-
-</syncfusion:TaskBar>
-
-{% endhighlight %}
-
-
-
-{% highlight c# %}
-
-
-
-// Setting the visual style as Office2007Blue
-
-SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
-
-{% endhighlight %}
-
-{%endtabs%}
-
-![](Appearance_images/Appearance_img1.png)
-
-
-TaskBar with "Office2007Blue" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img2.png)
-
-
-TaskBar with "Office2007Black" Visual Style
-{:.caption}
-
-
-![](Appearance_images/Appearance_img3.png)
-
-TaskBar with "Office2007Silver" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img4.png)
-
-
-TaskBar with "Office2010Blue" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img5.png)
-
-
-TaskBar with "Office2010Black" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img6.png)
-
-
-
-TaskBar with "Office2010Silver" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img7.png)
-
-
-
-TaskBar with "Blend" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img8.png)
-
-
-TaskBar with "VS2010" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img9.png)
-
-
-
-TaskBar with "Metro" Visual Style
-{:.caption}
-
-
-
-![](Appearance_images/Appearance_img10.png)
-
-
-TaskBar with "Transparent" Visual Style
-{:.caption}
-
-
-
-
+  ![Setting theme to WPF TaskBar control](Getting-Started_images/Theme.png)

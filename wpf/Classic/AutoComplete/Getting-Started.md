@@ -1,13 +1,13 @@
 ---
 layout: post 
 title: Getting-Started | AutoComplete | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF AutoComplete into an applicationl and enable its basic features with example.. 
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF AutoComplete
 
 ## Structure of the AutoComplete control
 
@@ -199,3 +199,13 @@ productSource.Add("Pdf");
 
 AutoComplete Created Using Blend
 {:.caption}
+
+## Theme
+
+AutoComplete supports various built-in themes. Refer to the below links to apply themes for the AutoComplete,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+ 
+   ![Setting theme to WPF AutoComplete](Getting-Started_images/Getting-Started_img15.png)
