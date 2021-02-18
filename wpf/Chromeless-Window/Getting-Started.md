@@ -271,4 +271,4 @@ ChromelessWindow supports various built-in themes. Refer to the below links to a
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Set theme to WPF ChromelessWindow](Getting-Started_images/wpf-chromeless-window-theme-support.png)
+  ![Setting theme to WPF ChromelessWindow](Getting-Started_images/wpf-chromeless-window-theme-support.png)

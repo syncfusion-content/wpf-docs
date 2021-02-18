@@ -425,4 +425,4 @@ DockingManager supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Set theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)
+  ![Setting theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)

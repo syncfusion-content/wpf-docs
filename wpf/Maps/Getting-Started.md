@@ -573,7 +573,7 @@ SfMap supports various built-in themes. Refer to the below links to apply themes
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Getting started imgage](Getting-Started_images/Theme.jpg)
+  ![Setting theme to WPF Map](Getting-Started_images/Theme.jpg)
 
 ## See also
 

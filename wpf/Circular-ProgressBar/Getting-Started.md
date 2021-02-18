@@ -96,4 +96,4 @@ Circular ProgressBar supports various built-in themes. Refer to the below links 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Set theme to wpf Circular ProgressBar control](Getting-Started_images/wpf-SfCircularProgressBar-theme-support.png)
+  ![Setting theme to wpf Circular ProgressBar control](Getting-Started_images/wpf-SfCircularProgressBar-theme-support.png)

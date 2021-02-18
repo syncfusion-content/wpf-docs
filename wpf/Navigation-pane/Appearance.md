@@ -193,7 +193,7 @@ GroupBar supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to WPF Group Bar](Getting-Started_images/wpf-group-bar-control-theme.png)
+   ![Setting theme to WPF GroupBar](Getting-Started_images/wpf-group-bar-control-theme.png)
   
 ## Item Container Style
 

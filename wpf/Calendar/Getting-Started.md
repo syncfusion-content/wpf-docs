@@ -489,5 +489,4 @@ CalendarEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
-   ![Set theme to WPF CalendarEdit](Getting-Started_images/wpf-calendar-theme.png)
+   ![Setting theme to WPF CalendarEdit](Getting-Started_images/wpf-calendar-theme.png)

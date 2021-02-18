@@ -83,4 +83,4 @@ SfTimePicker supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![SfTimePicker with MaterialDark visual style](Features_images/Theme.png)
+![Setting theme to WPF TimePicker](Features_images/Theme.png)

@@ -106,4 +106,4 @@ SfTextInputLayout supports various built-in themes. Refer to the below links to 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Theme](Images/Theme.png)
+  ![Setting theme to WPF TextInputLayout](Images/Theme.png)

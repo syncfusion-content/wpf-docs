@@ -598,7 +598,9 @@ private void CardView_SelectedItemChanged(DependencyObject d, DependencyProperty
 }
 
 {% endhighlight %}
-{% endtabs %}## Theme
+{% endtabs %}
+
+## Theme
 
 CardView supports various built-in themes. Refer to the below links to apply themes for the CardView,
 
@@ -606,4 +608,4 @@ CardView supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Set theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
+  ![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)

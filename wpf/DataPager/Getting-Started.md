@@ -244,6 +244,6 @@ SfDataPager supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme in the SfDataGrid Control ](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF DataPager](Getting-Started_images/Theme.png)
 
 

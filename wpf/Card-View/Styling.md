@@ -19,6 +19,8 @@ CardView supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
+  ![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
+  
 ## ItemContainerStyle
 
 The [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.7.2) property of CardView is used to set the styles for CardViewItem. This style can be applied to all items available in the CardView control.

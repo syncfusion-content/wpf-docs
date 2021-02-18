@@ -18,9 +18,8 @@ NotifyIcon supports various built-in themes. Refer to the below links to apply t
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
-
   
-  ![Set theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
+  ![Setting theme to WPF NotifyIcon](Getting-Started_images/wpf-notifyicon-theme.png)
 
 
 ## Customizing the Header of the NotifyIcon

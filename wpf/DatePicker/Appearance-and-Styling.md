@@ -87,4 +87,4 @@ SfDatePicker supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-![SfDatePicker with MaterialDark visual style](Appearance-and-Styling_images/Theme.png)
+![Setting theme to WPF DatePicker](Appearance-and-Styling_images/Theme.png)

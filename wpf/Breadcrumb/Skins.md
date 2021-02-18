@@ -17,5 +17,4 @@ HierarchyNavigator supports various built-in themes. Refer to the below links to
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
   ![Setting theme to WPF Hierarchical Navigator control](Getting-Started_images/wpf-hierarchy-navigator-control-theme.png)

@@ -15,4 +15,4 @@ Split Button supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Theme](Theme-Support_images/Theme-Support_img1.png)
+![Setting theme to WPF SplitButton](Theme-Support_images/Theme-Support_img1.png)

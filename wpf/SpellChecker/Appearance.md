@@ -19,4 +19,4 @@ SfSpellChecker supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![SfSpellChecker with Office2019Black visual style](gettingstarted-images/Theme.png)
+![Setting theme to WPF SpellChecker](gettingstarted-images/Theme.png)

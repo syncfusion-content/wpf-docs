@@ -232,5 +232,4 @@ SfDatePicker supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
-![Set theme to WPF SfDatePicker](GettingStarted_images/wpf-date-picker.png)
+![Setting theme to WPF SfDatePicker](Appearance-and-Styling_images/Theme.png)
