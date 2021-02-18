@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Radar and Polar Charts in WPF Chart (SfChart)
+# Radar and Polar Charts in WPF (SfChart)
 
-## Radar
+## Radar Chart
 
 [`RadarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes is not uniform. 
 
@@ -55,7 +55,7 @@ chart.Series.Add(series);
 ![Radar chart type in WPF](Series_images/radar.png)
 
 
-## Polar
+## Polar Chart
 
 [`PolarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
 

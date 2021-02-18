@@ -9,44 +9,29 @@ documentation: ug
 
 # Disable toolbar items
 
-To remove the toolbar altogether use PdfDocumentView control instead of PdfViewerControl as described in the [Load PDF without ToolStrip in viewer](https://help.syncfusion.com/wpf/pdfviewer/how-to/load-pdf-without-toolstrip-in-viewer) section. Individual toolbar items from the default toolbar of PDF Viewer can be removed selectively. The following code snippet illustrates disabling the open file button. 
+To remove the default toolbar completely, use the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control instead of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) as described in the [section](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#view-pdf-files-without-using-the-toolbar). 
+
+However, an individual toolbar item can also be removed from the default toolbar of PDF Viewer using the toolbar template. The following code sample explains disabling the text search tool from the default toolbar.
 
 {% tabs %}
 {% highlight c# %}
 
-private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+private void HideTextSearchTool()
 {
-	//Get the instance of the toolbar using its template name
-	DocumentToolbar toolbar = pdfViewerControl.Template.FindName("PART_Toolbar", pdfViewerControl) as DocumentToolbar;
+	//Get the instance of the toolbar using its template name.
+	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
 
-	//Get the instance of the open file button using its template name
-	Button openButton = (Button)toolbar.Template.FindName("PART_ButtonOpen", toolbar);
+	//Get the instance of the open file button using its template name.
+	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
 
-	//Set the visibility of the button to collapsed 
-	openButton.Visibility = System.Windows.Visibility.Collapsed;
+	//Set the visibility of the button to collapsed.
+	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
 }
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
-
-    'Get the instance of the toolbar using its template name
-    Dim toolbar As DocumentToolbar = CType(pdfViewerControl.Template.FindName("PART_Toolbar", pdfViewerControl), DocumentToolbar)
-
-    'Get the instance of the open file button using its template name
-    Dim openButton As Button = CType(toolbar.Template.FindName("PART_ButtonOpen", toolbar), Button)
-
-    'Set the visibility of the button to collapsed 
-    openButton.Visibility = Visibility.Collapsed
-
-End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-Similarly other toolbar items can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar. 
+Similarly, other toolbar items also can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar.
 
 <table>
 <tr>
@@ -55,19 +40,9 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 <th>Type</th>
 </tr>
 <tr>
-<td>Open tool</td>
-<td>PART_ButtonOpen</td>
-<td>System.Windows.Controls.Button</td>
-</tr>
-<tr>
-<td>Save tool</td>
-<td>PART_ButtonSave</td>
-<td>System.Windows.Controls.Button</td>
-</tr>
-<tr>
-<td>Print tool</td>
-<td>PART_ButtonPrint</td>
-<td>System.Windows.Controls.Button</td>
+<td>File tool</td>
+<td>PART_FileToggleButton</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
 <td>Navigation tools separator</td>
@@ -226,19 +201,62 @@ Similarly other toolbar items can be disabled. The following table lists the tem
 </tr>
 </table>
 
-The bookmark button on the left pane will be hidden when bookmark navigation feature is disabled using the below code snippet
+N> From the v18.4.0.x onwards, the file menu items such as Open, Save, Save As, and Print are not directly present in the toolbar and they are present in the context menu of the File tools toggle button.
+
+The following code sample explains disabling the Open tool from the menu.
 
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.IsBookmarkEnabled = false;
+private void HideOpenTool(object sender, RoutedEventArgs e)
+{
+	//Get the instance of the toolbar using its template name.
+	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
 
-{% endhighlight %}
+	//Get the instance of the file menu button using its template name.
+	ToggleButton FileButton = (ToggleButton)toolbar.Template.FindName("PART_FileToggleButton", toolbar);
 
-
-{% highlight vbnet %}
-
-pdfViewerControl.IsBookmarkEnabled = false;
+	//Get the instance of the file menu button context menu and the item collection.
+	ContextMenu FileContextMenu = FileButton.ContextMenu;
+	foreach (MenuItem FileMenuItem in FileContextMenu.Items)
+	{
+		//Get the instance of the open menu item using its template name and disable its visibility.
+		if (FileMenuItem.Name == "PART_OpenMenuItem")
+			FileMenuItem.Visibility = System.Windows.Visibility.Collapsed;
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
+
+Similarly, other file menu items can be disabled. The following table lists the template names along with their respective types in the order they appear in the context menu.
+
+<table>
+<tr>
+<th>Toolbar item</th>
+<th>Template name</th>
+<th>Type</th>
+</tr>
+<tr>
+<td>Open tool</td>
+<td>PART_OpenMenuItem</td>
+<td>System.Windows.Controls.MenuItem</td>
+</tr>
+<tr>
+<td>Save tool</td>
+<td>PART_SaveMenuItem</td>
+<td>System.Windows.Controls.MenuItem</td>
+</tr>
+<tr>
+<td>SaveAs tool</td>
+<td>PART_SaveAsMenuItem</td>
+<td>System.Windows.Controls.MenuItem</td>
+</tr>
+<tr>
+<td>Print tool</td>
+<td>PART_PrintMenuItem</td>
+<td>System.Windows.Controls.MenuItem</td>
+</tr>
+</table>
+
+N> The present UI design is subject to change, based on the inclusion of new features, enhancements, and user convenience.

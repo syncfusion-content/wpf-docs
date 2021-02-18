@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Getting Started | TabNavigation | wpf | Syncfusion
-description: This section describes how to add the tab navigation control into application.
+description: This section describes how to add the tab navigation control into application and its basic functionalities.
+platform: wpf
 control: TabNavigation
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with TabNavigation
 
 ## Assembly deployment
 

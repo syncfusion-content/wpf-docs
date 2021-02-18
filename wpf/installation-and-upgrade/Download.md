@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation and Deployment for Syncfusion WPF products
-description: Learn here about how to install and deploy the trail or license version of Syncfusion WPF components
+description: Learn here about how to install and deploy the trial or license version of Syncfusion WPF components
 platform: wpf
 control: Installation and Deployment
 documentation: ug
@@ -25,14 +25,14 @@ There are two ways to download our 30-day trial.
 4. You can unlock the installer using the unlock key, also you can unlock the installer using the Syncfusion registered login credential.
 5. You can download the trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page under your registered account at any time before the trial expire. (Refer the below screenshot).
  
-    ![Trail and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
+    ![Trial and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
 
 ### Start Trial Page
 1. You can evaluate our 30-day free trial from [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
 2. You should login using your Syncfusion account to access this page.
-3. You can start your trail by clicking on the required product. 
+3. You can start your trial by clicking on the required product. 
 
-    N> If you already using the trail products and it’s not expired, you couldn’t start the trial again for same product.
+    N> If you already using the trial products and it’s not expired, you couldn’t start the trial again for same product.
 
 4. After you started the trial, you can download the latest version trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. 
 5. In [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page, you can find your current active trial products. Trials, which you done in both Free Trial Page and Start trial pages are listed here.

@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Column and Bar Charts in WPF Chart (SfChart)
+# Column and Bar Charts in WPF (SfChart)
 
-## Column
+## Column Chart
 
 Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#).
 
@@ -46,7 +46,7 @@ chart.Series.Add(series);
 
 ![Column chart type in WPF](Series_images/column.png)
 
-## Bar
+## Bar Chart
 
 Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#).
 
