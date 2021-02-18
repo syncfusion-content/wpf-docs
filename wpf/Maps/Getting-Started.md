@@ -565,6 +565,16 @@ The following screenshot illustrates the result of the above code sample.
 
 You can download the complete [`Getting started`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedMap) sample.
 
+## Theme
+
+SfMap supports various built-in themes. Refer to the below links to apply themes for the SfMap,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Map](Getting-Started_images/Theme.jpg)
+
 ## See also
 
 [How to show google map in WPF SfMap](https://www.syncfusion.com/kb/11928/how-to-show-google-map-in-wpf-map-sfmap)

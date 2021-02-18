@@ -428,3 +428,13 @@ The Scheduler supports to show the busy indicator by using the [ShowBusyIndicato
 {% endtabs %} 
 
 ![WPF scheduler BusyIndicator](GettingStarted_images/BusyIndicator.png)
+
+## Theme
+
+SfScheduler supports various built-in themes. Refer to the below links to apply themes for the SfScheduler,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF scheduler](GettingStarted_images/Theme.png)

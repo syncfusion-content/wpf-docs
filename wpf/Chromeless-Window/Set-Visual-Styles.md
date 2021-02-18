@@ -1,60 +1,19 @@
 ---
 layout: post
-title: Set Visual Styles
-description: Set Visual Styles
+title: Set Visual Styles | ChromelessWindow | WPF| Syncfusion
+description:  This section explain about how to apply different themes for ChromelessWindow and how to implement those themes to the control.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Set Visual Styles
+# Set Visual Styles in WPF ChromelessWindow
 
-The visual style for the ChromelessWindow control is set using the VisualStyle property. ChromelessWindow supports the following built-in visual styles.
+## Theme
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* Default
-* Transparent
-* Metro
+ChromelessWindow supports various built-in themes. Refer to the below links to apply themes for the ChromelessWindow,
 
-In the below code example, metro theme is applied to the ChromelessWindow control.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Metro"    
-xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
-</syncfusion:ChromelessWindow>
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-{% tabs %}
-
-{% highlight c# %}
-
-SkinStorage.SetVisualStyle(this, "Metro");
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-SkinStorage.SetVisualStyle(Me, "Metro")
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-![](Set-Visual-Styles_images/Set-Visual-Styles_img1.jpeg)
-
-N> Metro theme supports customization of Brushes and fonts. For example to change the Background color of the Window Icon ,use SetMetroBrush method
+ ![Setting theme to WPF ChromelessWindow](Getting-Started_images/wpf-chromeless-window-theme-support.png)

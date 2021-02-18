@@ -568,3 +568,13 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
+
+## Theme
+
+Badge supports various built-in themes. Refer to the below links to apply themes for the Badge,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Badge](Getting-Started_images/Theme.png)

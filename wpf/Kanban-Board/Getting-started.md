@@ -301,5 +301,12 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
+## Theme
 
+Kanban control supports various built-in themes. Refer to the below links to apply themes for the Kanban control,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfKanban](SfKanban_images/Theme.jpg)
