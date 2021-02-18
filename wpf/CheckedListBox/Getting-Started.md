@@ -302,3 +302,13 @@ The following screenshot shows the localized `CheckListBox` control.
 ![WPF CheckListBox contain localized SelectAll item](Getting-Started_images/localized.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Localization)
+
+## Theme
+
+CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF CheckListBox](Getting-Started_images/wpf-checklistbox-theme.png)

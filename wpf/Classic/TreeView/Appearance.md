@@ -86,128 +86,16 @@ treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold
 ![Applied back and fore color on selected item in WPF TreeView](Appearance_images/Appearance_img1.jpeg)
 
 
-## Setting Visual Style
+## Theme
 
-The appearance of the TreeViewAdv control is customized by using the VisualStyle property. It gets or sets the visual style for the TreeViewAdv control.
+TreeViewAdv supports various built-in themes. Refer to the below links to apply themes for the TreeViewAdv,
 
-The various built-in visual styles are listed below.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<!-- Adding TreeViewAdv with visual style -->
-<syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Transparent">
-<!-- Adding TreeViewItemAdv -->
-<syncfusion:TreeViewItemAdv Header="Marital Status">
-<syncfusion:TreeViewItemAdv Header="Single"/>
-<syncfusion:TreeViewItemAdv Header="Married"/>
-<syncfusion:TreeViewItemAdv Header="Married with Children"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Baby Vaccines">
-<syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
-<syncfusion:TreeViewItemAdv Header="Tetanus"/>
-<syncfusion:TreeViewItemAdv Header="Polio"/>
-<syncfusion:TreeViewItemAdv Header="Measles"/>
-</syncfusion:TreeViewItemAdv>
-<syncfusion:TreeViewItemAdv Header="Country Information">
-<syncfusion:TreeViewItemAdv Header="Canada"/>
-<syncfusion:TreeViewItemAdv Header="France"/>
-<syncfusion:TreeViewItemAdv Header="Germany"/>
-<syncfusion:TreeViewItemAdv Header="UK"/>
-<syncfusion:TreeViewItemAdv Header="USA"/>
-</syncfusion:TreeViewItemAdv>
-</syncfusion:TreeViewAdv>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Setting the visual style as Blend
-SkinStorage.SetVisualStyle(treeViewAdv, "Blend");
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'Setting the visual style as Blend
-SkinStorage.SetVisualStyle(treeViewAdv, "Blend")
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-**Blend theme**
-
-![Applied Blend theme to WPF TreeView](Appearance_images/Appearance_img2.jpeg)
-
-**Office2003 theme**
-
-![Applied Office2003 theme to WPF TreeView](Appearance_images/Appearance_img3.jpeg)
-
-**Office2007Blue theme**
-
-![Applied Office2007Blue theme to WPF TreeView](Appearance_images/Appearance_img4.jpeg)
-
-**Office2007Black theme**
-
-![Applied Office2007Black theme to WPF TreeView](Appearance_images/Appearance_img5.jpeg)
-
-**Office2007Silver theme**
-
-![Applied Office2007Silver theme to WPF TreeView](Appearance_images/Appearance_img6.jpeg)
-
-**Office2010Blue theme**
-
-![Applied Office2007Blue theme to WPF TreeView](Appearance_images/Appearance_img7.jpeg)
-
-**Office2010Black theme**
-
-![Applied Office2010Black theme to WPF TreeView](Appearance_images/Appearance_img8.jpeg)
-
-**Office2010Silver theme**
-
-![Applied Office2010Silver theme to WPF TreeView](Appearance_images/Appearance_img9.jpeg)
-
-**ShinyBlue theme**
-
-![Applied ShinyBlue theme to WPF TreeView](Appearance_images/Appearance_img10.jpeg)
-
-**ShinyRed theme**
-
-![Applied ShinyRed theme to WPF TreeView](Appearance_images/Appearance_img11.jpeg)
-
-**ShinyOrange theme**
-
-![Applied ShinyOrange theme to WPF TreeView](Appearance_images/Appearance_img12.jpeg)
-
-**VS2010 theme**
-
-![Applied VS2010 theme to WPF TreeView](Appearance_images/Appearance_img13.jpeg)
-
-**Metro theme**
-
-![Applied Metro theme to WPF TreeView](Appearance_images/Appearance_img14.jpeg)
-
-**Transparent theme**
-
-![Applied Transparent theme to WPF TreeView](Appearance_images/Appearance_img15.jpeg)
-
+   ![Setting theme to WPF TreeViewAdv](Getting_Started_images/Theme.png)
+  
 ## Customizing root lines
 
 You can customize the Root lines color and pen of the TreeViewAdv.

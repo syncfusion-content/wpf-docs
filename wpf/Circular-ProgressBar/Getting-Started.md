@@ -87,3 +87,13 @@ namespace SfProgressBar
 {% endtabs %}
 
 ![wpf Circular ProgressBar control added through code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
+
+## Theme
+
+Circular ProgressBar supports various built-in themes. Refer to the below links to apply themes for the Circular ProgressBar,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to wpf Circular ProgressBar control](Getting-Started_images/wpf-SfCircularProgressBar-theme-support.png)

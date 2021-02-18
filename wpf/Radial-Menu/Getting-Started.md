@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfRadialMenu  | wpf | Syncfusion
-description: getting started 
+description: This section explain about how to integrate WPF Radial Menu (SfRadialMenu) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with WPF Radial Menu (SfRadialMenu)
 
 Namespace : Syncfusion.Windows.Controls.Navigation 
 
@@ -68,4 +68,12 @@ radialMenu.Items.Add(paste);
 {%endhighlight%}
 {%endtabs%}
 
+## Theme
 
+Radial Menu supports various built-in themes. Refer to the below links to apply themes for the Radial Menu,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+![Setting theme in WPF Radial Menu](Appearance-and-Styling_images/Theme.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfDataPagerControl | wpf | Syncfusion
-description: getting started
+description: This section explain about how to integrate WPF DataPager (SfDataPager) into an applicationl and enable its basic features with example.. 
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF DataPager (SfDataPager)
 
 This section describes about the assembly that is required for SfDataPagerControl in your WPF application.The following assemblies are required in your application.
 
@@ -47,7 +47,7 @@ Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 
 The following screenshot describes the elements of the DataPager control.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Displaying DataPager control](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -69,7 +69,7 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Displaying the WPF SfDataPager control in designer](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -234,7 +234,16 @@ public class ViewModel
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Displaying the SfDataPager in the SfDataGrid Control ](Getting-Started_images/Getting-Started_img3.png)
 
+## Theme
+
+SfDataPager supports various built-in themes. Refer to the below links to apply themes for the SfDataPager,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF DataPager](Getting-Started_images/Theme.png)
 
 

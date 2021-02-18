@@ -227,4 +227,12 @@ Localization is the process of translating the application resources into differ
 
 N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `SfTimePicker`.
 
+## Theme
 
+SfTimePicker supports various built-in themes. Refer to the below links to apply themes for the SfTimePicker,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF TimePicker](GettingStarted_images/Theme.png)

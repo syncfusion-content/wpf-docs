@@ -309,3 +309,13 @@ By enabling the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 TreeView control can be created with multiple columns by setting the [MultiColumnEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewAdv_MultiColumnEnable) property to true. Click [here](https://help.syncfusion.com/wpf/treeview/creating-a-multicolumn-treeview) to get detailed information on how to create MultiColumn TreeViewAdv.
 
 ![MultiColumnTreeView in TreeViewAdv](Getting_Started_images/Getting_Started_img5.png)
+
+## Theme
+
+TreeViewAdv supports various built-in themes. Refer to the below links to apply themes for the TreeViewAdv,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF TreeViewAdv](Getting_Started_images/Theme.png)

@@ -9,90 +9,16 @@ documentation: ug
 
 # Appearance of WPF AutoComplete
 
-The Appearance of the AutoComplete control can be changed using the VisualStyle property. The following styles are supported by AutoComplete control.
+## Theme
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent 
+AutoComplete supports various built-in themes. Refer to the below links to apply themes for the AutoComplete,
 
-The following code example illustrates how different visual styles can be applied to the control.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-{% tabs %}
-{% highlight xaml %}
+   ![Setting theme to WPF AutoComplete](Getting-Started_images/Getting-Started_img15.png)
 
-<syncfusion:AutoComplete Height="25" Width="200" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");
-
-{% endhighlight %}
-{% endtabs %}
-
-![Set Windows theme to WPF AutoComplete](Appearance_images/Appearance_img1.png)
-
-Windows7
-{:.caption}
-
-![Set Blend theme to WPF AutoComplete](Appearance_images/Appearance_img2.png)
-
-Blend
-{:.caption}
-
-![Set Office2007Blue theme to WPF AutoComplete](Appearance_images/Appearance_img3.png)
-
-Office2007Blue
-{:.caption}
-
-![Set Office2007Black theme to WPF AutoComplete](Appearance_images/Appearance_img4.png)
-
-Office2007Black
-{:.caption}
-
-![Set Office2007Silver theme to WPF AutoComplete](Appearance_images/Appearance_img5.png)
-
-Office2007Silver
-{:.caption}
-
-![Set Office2003 theme to WPF AutoComplete](Appearance_images/Appearance_img6.png)
-
-Office2003
-{:.caption}
-
-![Set ShinyRed theme to WPF AutoComplete](Appearance_images/Appearance_img7.png)
-
-ShinyRed
-{:.caption}
-
-![Set ShinyBlue theme to WPF AutoComplete](Appearance_images/Appearance_img8.png)
-
-ShinyBlue
-{:.caption}
-
-![Set SyncOrange theme to WPF AutoComplete](Appearance_images/Appearance_img9.png)
-
-SyncOrange
-{:.caption}
-
-![Set Metro theme to WPF AutoComplete](Appearance_images/Appearance_img10.png)
-
-Metro
-{:.caption}
-
-![Set the Transparent theme to AutoComplete](Appearance_images/Appearance_img11.png)
-
-Transparent
-{:.caption}
 
 ## Show the shadow effect
 

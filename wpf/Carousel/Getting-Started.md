@@ -592,3 +592,13 @@ private void Carousel_SelectionChanged(DependencyObject d, DependencyPropertyCha
 
 {% endhighlight %}
 {% endtabs %}
+
+## Theme
+
+Carousel supports various built-in themes. Refer to the below links to apply themes for the Carousel,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+   ![Setting theme to WPF Carousel](Getting-Started_images/wpf-Carousel-with-theme.jpg)
