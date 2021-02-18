@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Distribution charts in WPF Chart (SfChart)
+# Distribution chart in WPF (SfChart)
 
-## Histogram 
+## Histogram Chart
 
 [`HistogramSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control to Visualize the frequency distribution of data over a certain time period. HistogramSeries is often used to plot the density of data.
  

@@ -34,7 +34,7 @@ To add control manually in the XAML, follow the given steps:
 2.	Import the Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3.	Declare the SfStepProgressBar control in the XAML page.
 
-## SelectedIndex
+## Select item using Selected Index
 You can change the index of the last active (selected) item where items before this index will move to the active status by using the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html#Syncfusion_UI_Xaml_ProgressBar_SfStepProgressBar_SelectedIndex) property. 
 
 {% tabs %}

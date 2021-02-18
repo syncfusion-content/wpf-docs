@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF NavigationDrawer (SfNavigationDrawer) Overview
 
-The NavigationDrawer is a sliding panel menu that allows you to navigate between major application modules. It is usually in hidden state, and appears when you drag the screen from any of the four edges or tap the app icon, if available.
+The WPF Navigation Drawer control is a sidebar navigation view that is used to create a navigation menu for easy navigation. It provides compact and extended display modes with built-in navigation view items with ability to switch between both modes based on available size. It also provides default mode which allows to have a custom pane view.
 
 ![Overview image of NavigationDrawer](Overview_images/Overview_img1.png) 
                                               
@@ -27,14 +27,21 @@ The Navigation Drawers are used in applications where navigating to the major mo
 
 ### Key features
 
-* Pane positions: Supports pane position in all four directions such as Left, Right, Top, and Bottom. 
+* A sidebar menu to provide Modern UI navigation for application. 
+* Navigation menu can be placed on any side of the screen.
+* Compact and extended display modes with support to best fit the content based on available size. 
+* Built-in navigation menu items: tab, button, header, multi-level hierarchal items and footer items. 
+* Custom views also can be added as the header and footer of the drawer.
 
-* Animated transitions: Supports opening/closing of pane due to the transition SlideOnTop, Push, and Reveal.
 
-* Changeable swipe sensitivity: Flexible for the users to update touch threshold based on their device screen size.
+### Visual Structure
 
-* Providing a consistent navigational experience throughout your app
+This section describes the visual elements of the NavigationDrawer control and defines terms and concepts used in the DisplayMode.
 
-* Preserving screen real estate on smaller windows.
+![VisualStructure](Overview_images/VisualStructure.png)
 
-* Organizing access to many navigation categories.
+
+* **Header** —  Represents the header of the drawer 
+* **Footer** — Represents the footer of the drawer. 
+* **NavigationDrawer Items** — Built-in items used to populate the items in the drawer pane body and footer.
+* **ToggleButton** — Built-in toggle button used to collapse and expand the drawer menu. 

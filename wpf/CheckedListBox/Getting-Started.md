@@ -283,6 +283,26 @@ The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started)
 
+## Localization support
+
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Select All` CheckListBoxItem in `CheckListBox` control by adding resource file for each language.
+
+To localize the `CheckListBox` based on culture using resource files, follow the below steps.
+
+1. Change application culture and create `.resx` files.
+
+N> Refer [Localization of Syncfusion WPF Controls](https://help.syncfusion.com/wpf/localization#changing-application-culture) page to know more about how to Change application culture and create `.resx` files into a application.
+
+2. After creating `.resx` file, add the Name/Value pair in Resource Designer of created `.resx` file and change its corresponding value to corresponding culture.
+
+![Added string property of CheckListBox which need to localized in resource file](Getting-Started_images/addlanguage.png)
+
+The following screenshot shows the localized `CheckListBox` control.
+
+![WPF CheckListBox contain localized SelectAll item](Getting-Started_images/localized.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Localization)
+
 ## Theme
 
 CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,

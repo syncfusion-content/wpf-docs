@@ -204,7 +204,7 @@ The control returns all possible matches that equals the typed text based on the
 Custom
 </td>
 <td>
-The control returns all possible matches based on the [Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_Filter) property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+The control returns all possible matches based on the Filter property. Filter property is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
 </td>
 </tr>
 <tr>
