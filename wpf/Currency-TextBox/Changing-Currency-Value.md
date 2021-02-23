@@ -132,7 +132,8 @@ currencyTextBox.Value = 12345.67;
 
 ## Changing currency value by SpinButton
 
-The `CurrencyTextBox` control supports SpinButton to change the value by using [ShowSpinButton] property. The current value can be incremented by clicking on UpButton and decremented by clicking on DownButton after enabling the [ShowSpinButton] property.
+You can increment or decrement the currency value of `CurrencyTextBox` by enabling the `ShowSpinButton` property. Click UpButton to increment the currency value or DownButton to decrement the currency value.
+The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
 {% highlight xaml %}
