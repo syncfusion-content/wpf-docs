@@ -130,6 +130,26 @@ currencyTextBox.Value = 12345.67;
 
 ![CurrencyTextBox pasting the copied value in specific place](Changing-Currency-Value_images/Pasting.png)
 
+## Changing currency value by SpinButton
+
+The `CurrencyTextBox` control supports SpinButton to change the value by using [ShowSpinButton] property. The current value can be incremented by clicking on UpButton and decremented by clicking on DownButton after enabling the [ShowSpinButton] property.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:CurrencyTextBox Height="30" Width="150" ShowSpinButton="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.ShowSpinButton = true;
+
+{% endhighlight %}
+{%endtabs%}
+
+![Changing currency value by SpinButton in CurrencyTextBox](Changing-Currency-Value_images/SpinButton.gif)
+
 ## Value Changed Event
 
 The `CurrencyTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
