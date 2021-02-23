@@ -35,6 +35,32 @@ tabControlExt.AllowDragDrop = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
+### Rearrange position of tab items with auto scrolling
+
+In [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) when you want to move tab items to position beyond the items not in visual, enable the [EnableAutoScroll]() property and drag the respective item over the Overflow button (with three dots) to auto scroll to required position.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt EnableAutoScroll="True">
+    <syncfusion:TabItemExt Header="tabItem 1" />
+    <syncfusion:TabItemExt Header="tabItem 2" />
+    <syncfusion:TabItemExt Header="tabItem 3" />
+    <syncfusion:TabItemExt Header="tabItem 4" />
+    <syncfusion:TabItemExt Header="tabItem 5" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TabControlExt tabControlExt = new TabControlExt();
+tabControlExt.EnableAutoScroll = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items are rearranged by drag and drop](Tab-Item-Header_images/EnableAutoScroll.gif)
+
 ### change drag marker color
 
 You can change the drag marker color by setting the color value for the [DragMarkerColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_DragMarkerColor) property. The default value of `DragMarkerColor` property is `Black`.
