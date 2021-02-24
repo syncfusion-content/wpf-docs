@@ -157,7 +157,7 @@ Validate assertion property by using comparators. Also we can add assertion fail
 ![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img9.jpeg)
 
 
-Another way for adding assertion by click the cross hair icon in CodedUITestBuilder, here list out all identified controls and select the control we want to validate.
+Another way for adding assertion by clicking the cross hair icon in CodedUITestBuilder, here list out all identified controls and select the control we want to validate.
 
 ![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img10.jpeg)
 
