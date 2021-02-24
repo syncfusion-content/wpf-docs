@@ -21,6 +21,9 @@ If you want to rearrange the tab items position, drag that item and drop to anyw
 <syncfusion:TabControlExt AllowDragDrop="True" >
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+    <syncfusion:TabItemExt Header="tabItem4" />
+    <syncfusion:TabItemExt Header="tabItem5" />
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
@@ -32,6 +35,8 @@ tabControlExt.AllowDragDrop = true;
 {% endtabs %}
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
+
+![Tab items are rearranged by drag and drop](Tab-Item-Header_images/AllowDragAndDrop.png)
 
 ### Rearrange position of tab items with auto scrolling
 
