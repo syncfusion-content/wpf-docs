@@ -130,7 +130,7 @@ integerTextBox.Value = 12345;
 
 ## Changing integer value by SpinButton
 
-You can increment or decrement the integer value of `IntegerTextBox` by enabling the `ShowSpinButton` property. Click UpButton to increment the integer value or DownButton to decrement the integer value.
+You can increment or decrement the integer value of `IntegerTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the integer value.
 The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}

@@ -132,7 +132,7 @@ percentTextBox.PercentValue = 12345.67;
 
 ## Changing percent value by SpinButton
 
-You can increment or decrement the percent value of `PercentTextBox` by enabling the `ShowSpinButton` property. Click UpButton to increment the percent value or DownButton to decrement the percent value.
+You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the percent value.
 The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
