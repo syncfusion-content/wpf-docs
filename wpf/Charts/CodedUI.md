@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Coded UI support for Syncfusion WPF Chart.
-description: Coded UI support for SfChart.
+description: Learn here about the WPF chart (SfChart) control support for Coded UI automation testing with more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Coded UI Test
+# Coded UI Test for WPF Chart (SfChart)
 
 Automated tests that drive your application through its user interface (UI) are known as **coded** **UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
