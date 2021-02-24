@@ -305,6 +305,31 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endtabs %}
 ![Time text formatting in WPF Scheduler](DaysView_Images/adding-Timetextformatting.png)
 
+## How to show time indicator on a specific time when dragging an appointment
+You can show the popup on specific time when do drag and drop the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragandDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
+
+{% tabs %}
+{% highlight c# %}
+Schedule.ViewType = SchedulerViewType.Week;
+Schedule.DragDropSettings.ShowTimeIndicator = true;
+{% endhighlight %}
+{% endtabs %}
+![ShowTimeIndicator in WPF Scheduler](DaysView_Images/adding-ShowTimeIndicator.png)
+
+## Dragging time indicator text formatting
+You can customize the format for the labels mentioning the time, by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragandDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
+
+{% tabs %}
+{% highlight c# %}
+Schedule.ViewType = SchedulerViewType.Week;
+Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
+{% endhighlight %}
+{% endtabs %}
+![TimeIndicatorFormat in WPF Scheduler](DaysView_Images/adding-TimeIndicatorFormat.png)
+
+N>NOTE
+* when drag the appointment,the time indicator overlaps with the time ruler label position in day, week and workweek views. 
+
 ## View header
 You can customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.
 
