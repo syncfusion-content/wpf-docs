@@ -714,7 +714,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% endhighlight %}
 {% endtabs %}
 
-You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
+You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
 ![Resizing cursor shown in between columns of WPF datagrid](Columns_images/Columns_img3.png)
 
