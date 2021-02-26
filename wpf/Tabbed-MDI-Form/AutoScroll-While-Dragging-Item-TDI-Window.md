@@ -9,7 +9,7 @@ documentation: ug
 
 # Rearrange position of TDI items 
 
-## Rearrange position of docment items by drag and drop
+## Rearrange position of document items by drag and drop
 
 You can rearrange the position of the TDI items in DocumentContainer by setting the [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property value as `true` and dragging and dropping the respective item in the required position. This feature works only when [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_Mode) property value is `TDI`.
 
