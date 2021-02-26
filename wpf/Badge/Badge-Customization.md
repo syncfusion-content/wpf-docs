@@ -189,7 +189,7 @@ You can change the appearance of `Badge` content by using `ContentTemplate` prop
                 <DataTemplate>
                     <Grid>
                         <TextBlock Text="{Binding}" 
-                                   Foreground="Red"/>
+                                   Foreground="Yellow"/>
                     </Grid>
                 </DataTemplate>
             </notification:SfBadge.ContentTemplate>
@@ -442,6 +442,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
         Content="Inbox">
     <notification:SfBadge.Badge>
         <notification:SfBadge x:Name="badge"
+                              Shape="Ellipse"
                               AnimationType="None"/>
     </notification:SfBadge.Badge>
 </Button>
@@ -462,6 +463,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 
 
 badge.AnimationType = BadgeAnimationType.None;
+badge.Shape = BadgeShape.Ellipse;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -518,7 +520,7 @@ You can change the size of `Badge` by using the `Width` and `Height` properties.
         Content="Inbox">
     <notification:SfBadge.Badge>
         <notification:SfBadge Width="50"
-                              Height="50"
+                              Height="30"
                               Content="99+"
                               x:Name="badge"/>
     </notification:SfBadge.Badge>
@@ -528,7 +530,7 @@ You can change the size of `Badge` by using the `Width` and `Height` properties.
 {% highlight C# %}
 
 badge.Width = 50;
-badge.Height = 50;
+badge.Height = 30;
 badge.Content = "99+";
 
 {% endhighlight %}
@@ -551,6 +553,7 @@ You can change the style, size and font family of the `Badge` display content by
     <notification:SfBadge.Badge>
         <notification:SfBadge FontFamily="Perpetua"
                               FontStyle="Oblique" 
+                              Shape="Ellipse"
                               FontSize="20"
                               Content="99+"
                               x:Name="badge"/>
@@ -562,6 +565,7 @@ You can change the style, size and font family of the `Badge` display content by
 
 badge.FontFamily = new FontFamily("Perpetua");
 badge.FontSize = 20;
+badge.Shape = BadgeShape.Ellipse;
 badge.Content = "99+";
 
 {% endhighlight %}
