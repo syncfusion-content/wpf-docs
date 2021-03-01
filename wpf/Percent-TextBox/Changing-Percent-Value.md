@@ -130,6 +130,27 @@ percentTextBox.PercentValue = 12345.67;
 
 ![PercentTextBox pasting the copied value in specific place](Changing-Percent-Value_images/Pasting.png)
 
+## Changing percent value by SpinButton
+
+You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the percent value.
+The default value of `ShowSpinButton` property is `false`.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox Height="30" Width="150" ShowSpinButton="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.ShowSpinButton = true;
+
+{% endhighlight %}
+{%endtabs%}
+
+![Changing percent value by SpinButton in PercentTextBox](Changing-Percent-Value_images/SpinButton.gif)
+
 ## Value Changed Event
 
 The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html) event. In `PercentValueChanged` event, you can get old percent value and new percent value from the `OldValue` and  `NewValue` properties.
