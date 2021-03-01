@@ -306,7 +306,7 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 ![Time text formatting in WPF Scheduler](DaysView_Images/adding-Timetextformatting.png)
 
 ## How to show time indicator on a specific time when dragging an appointment
-You can show the popup on specific time when do drag and drop the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragandDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
+You can show the popup on specific time when do drag the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragandDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
 
 {% tabs %}
 {% highlight c# %}
