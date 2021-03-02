@@ -511,7 +511,7 @@ SyncDockingManager.IsTDIDragDropEnabled = true;
 
 ## Rearrange position of document items with auto scrolling
 
-You can move TDI document items to position beyond the non-visual items by setting the `EnableAutoScroll` property value as `true` and dragging the respective item over the overflow button (with three dots) or beyond the overflow button to auto scroll to the required position.
+You can move TDI document items beyond the non-visual items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) or beyond the overflow button to control's end width.
 The default value of `EnableAutoScroll` property is `false`.
 
 {% tabs %}
