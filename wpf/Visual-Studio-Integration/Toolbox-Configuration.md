@@ -13,7 +13,7 @@ The Syncfusion Toolbox Installer utility adds the Syncfusion WPF controls into t
 
 N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
-Syncfusion controls will be automatically configured in Visual Studio toolbox while installing the Syncfusion WPF installer, if <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox selected from installer UI.
+Syncfusion controls will be automatically configured in the Visual Studio toolbox, while installing the Syncfusion WPF installer, if the <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox is selected from installer UI.
 
 Use the following steps to adds the Syncfusion WPF controls through the Syncfusion Toolbox Installer:
 
