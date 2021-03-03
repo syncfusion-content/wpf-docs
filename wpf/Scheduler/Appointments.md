@@ -154,6 +154,21 @@ Schedule.ItemsSource = Meetings;
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/adding-custom-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
+## Exact Time Rendering
+`Scheduler` supports functionality to arrange appointments according to their start time and duration.
+
+### Week View
+![Appointment rendering in week view](appointments_images/adding-appointmentrendering-Week.png)
+
+### Month View
+![Appointment rendering in Timeline view](appointments_images/adding-appointmentrendering-Month.png)
+
+### Timeline View
+![Appointment rendering in Timeline view](appointments_images/adding-appointmentrendering-Timeline.png)
+
+N> Note
+Agenda view doesn't support exact time rendering since it uses GridView to display appointments.
+
 ## Spanned appointments
 
 Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’t block out time slots in the `SfScheduler`, it will render in [AllDayAppointmentPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AllDayAppointmentPanel.html) exclusively.
