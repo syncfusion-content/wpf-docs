@@ -70,7 +70,7 @@ For example, To use custom appointment editor window instead of default appointm
 * `Resource` - gets the resource of an appointment under which the appointment is located. 
 
 ### Support to collapse the editor fields in appointment editor window
-You can programmatically visible or collapse the editors by setting `AppointmentEditorOptions` property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). The default value of `AppointmentEditorOptions` is `AppointmentEditorOptions.All` in `SchedulerAppointmentEditorWindow`.  The following code shows how to visble the editors by handling  [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
+You can programmatically visible or collapse the editors by setting `AppointmentEditorOptions` property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). The default value of `AppointmentEditorOptions` is `AppointmentEditorOptions.All` in `SchedulerAppointmentEditorWindow`.  The following code shows how to visible the editors by handling  [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
 
 {% tabs %}
 {% highlight c# %}
