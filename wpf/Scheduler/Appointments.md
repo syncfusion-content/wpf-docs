@@ -155,7 +155,7 @@ Schedule.ItemsSource = Meetings;
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/adding-custom-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
 ## Exact Time Rendering
-`Scheduler` supports functionality to arrange appointments according to their start time and duration.
+`Scheduler` supports functionality to arrange appointments according to their start time and duration. Due to the great difference in the amount of time, which different time scales represent, appointments might become too small to render accurately in larger time scales.
 
 ### Week View
 ![Appointment rendering in week view](appointments_images/adding-appointmentrendering-Week.png)
