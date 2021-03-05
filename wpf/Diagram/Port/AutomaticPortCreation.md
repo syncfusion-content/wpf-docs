@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automatic port creation | Syncfusion
-description: How to create port at runtime by click and drag over the node or connector without initializing the port collection?
+description: How to create port at runtime by clicking and drag over the node or connector without initializing the port collection?
 platform: wpf
 control: SfDiagram
 documentation: ug
