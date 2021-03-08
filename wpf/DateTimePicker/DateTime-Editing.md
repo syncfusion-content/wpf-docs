@@ -701,6 +701,24 @@ dateTimeEdit.OnFocusBehavior = OnFocusBehavior.CursorAtEnd;
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
+## Restrict changing focus to next field 
+
+You can prevent the focus in `DateTimeEdit` automatically moving from one field to another by setting the `AutoForwarding` property value as `false`. By default the value of `AutoForwarding` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" AutoForwarding="False" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.AutoForwarding = false;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Value Changed Notification
 
 The selected datetime changed in `DateTimeEdit` can be examined using [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) event. The `DateTimeChanged` event contains the old and newly selected date time values in the `OldValue` and `NewValue` properties.
