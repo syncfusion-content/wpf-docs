@@ -19,6 +19,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 * **Header** — Represents the content of the `NavigationItem`.
 * **Icon** — Represents the icon in the `NavigationItem`.
+* **IconTemplate** — Used to display the custom icon in the `NavigationItem`.
 * **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
 * **DisplayMemberPath** — Used to display the content for sub items, while providing the `ItemsSource`. See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section. 
 * **ExpanderTemplate** — Used to provide a custom view for the expander icon in both collapsed and expanded state.
@@ -30,6 +31,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 * **IsSelected** — Gets whether the item is selected or not.
 * **SelectionBackground** — Used to customize the selection indicator in `NavigationItem`.
 * **Items** — Used to populate the sub items.
+
 
 
 {% tabs %}
@@ -234,6 +236,119 @@ The below properties are available in the `NavigationItem` and can be used to de
 {% endtabs %}
 
 ![Populating with Data](Populating_Data_images/NavigationItem.png)
+
+### IconTemplate
+
+IconTemplate used to provide the custom icon for the NavigationItem. 
+
+### Model
+
+{% tabs %}
+{% highlight c# %}
+
+    public class Category
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        private object icon;
+        public object Icon
+        {
+            get { return icon; }
+            set { icon = value; }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+### ViewModel
+
+{% tabs %}
+{% highlight c# %}
+
+    public class ViewModel
+    {
+        public ObservableCollection<Category> Categories { get; set; }
+        public ViewModel()
+        {
+            Categories = new ObservableCollection<Category>();
+            Categories.Add(new Category()
+            {
+                Name = "Inbox",
+                Icon = "Inbox.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Sent",
+                Icon = "Sent.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Draft",
+                Icon = "Draft.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Spam",
+                Icon = "Spam.png"
+            });
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <Style x:Key="ItemStyle" TargetType="syncfusion:NavigationItem">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="{Binding}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <syncfusion:SfNavigationDrawer
+        x:Name="navigationDrawer"
+        DisplayMemberPath="Name"
+        DisplayMode="Compact"
+        IconMemberPath="Icon"
+        ItemContainerStyle="{StaticResource ItemStyle}"
+        ItemsSource="{Binding Categories}">
+        <syncfusion:SfNavigationDrawer.ContentView>
+            <Label
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="ContentView" />
+        </syncfusion:SfNavigationDrawer.ContentView>
+    </syncfusion:SfNavigationDrawer>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![IconTemplate](Populating_Data_images/IconTemplate.png)
+
 
 ### Different item types
 
@@ -675,3 +790,9 @@ This property used to change the horizontal position of sub items. Left margin o
 
 
 ![Populating with Data](Populating_Data_images/IndentationWidth.png)
+
+## Popup support
+
+The subitems will be displayed in the popup when the drawer menu is collapsed in compact and expanded display modes.
+
+![Popup_Menu](Populating_Data_images/Popup_Menu.png)
