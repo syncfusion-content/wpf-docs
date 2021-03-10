@@ -1210,7 +1210,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ## Setting animation for pointer
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_EnableAnimation) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_EnableAnimation) property is a Boolean property that enables or disables the animation of the pointers in circular gauge and defining the corresponding animation speed with `AnimationDuration` property.
 
 {% tabs %}
 
@@ -1224,7 +1224,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
+    <gauge:CircularPointer EnableAnimation="True" PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
     NeedlePointerType="Triangle" KnobStroke="#39B2C6" PointerCapDiameter="20"/>
 
     <gauge:CircularPointer PointerType="RangePointer"  Value="100" RangePointerStroke="#39B2C6"/>

@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip Support
 
-You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified.
+You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified and also you can set the `ToolTipShowDuration` property to define the animation speed.
 
 
 {% highlight xaml %}

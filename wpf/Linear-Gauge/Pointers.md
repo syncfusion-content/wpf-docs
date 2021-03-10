@@ -522,3 +522,87 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 {% endtabs %}
 
 ![Pointers - Linear Gauge](Pointers_images/Pointers_img7.png)
+
+## Setting animation for pointer
+
+The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) property is a Boolean property that enables or disables the animation of the pointers in circular gauge and defining the corresponding animation speed with `AnimationDuration` property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+            <gauge:SfLinearGauge.MainScale>
+
+                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+                    MinorTickStroke="Gray" LabelStroke="#424242"
+                    ScaleBarSize="20" MinorTicksPerInterval="3">
+
+                    <gauge:LinearScale.Pointers>
+
+                        <gauge:LinearPointer EnableAnimation="True" PointerType="SymbolPointer" Value="60"
+                        SymbolPointerHeight="15" SymbolPointerWidth="15" SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
+
+                        <gauge:LinearPointer EnableAnimation="True" PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC" BarPointerStrokeThickness="10"/>
+
+                    </gauge:LinearScale.Pointers>
+
+                </gauge:LinearScale>
+
+            </gauge:SfLinearGauge.MainScale>
+
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+             SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale()
+            {
+
+                ScaleBarStroke = new SolidColorBrush(Color.FromRgb(224, 224, 224)),
+                MajorTickStroke = new SolidColorBrush(Colors.Gray),
+                MinorTickStroke = new SolidColorBrush(Colors.Gray),
+                LabelStroke = new SolidColorBrush(Color.FromRgb(66, 66, 66)),
+                ScaleBarSize = 20,
+                MinorTicksPerInterval = 3,
+            };
+
+            LinearPointer linearPointer1 = new LinearPointer()
+            {
+
+                PointerType = LinearPointerType.BarPointer,
+                Value = 75,
+                BarPointerStroke = new SolidColorBrush(Color.FromRgb(54, 209, 220)),
+                BarPointerStrokeThickness = 10,
+                EnableAnimation = true
+            };
+
+            linearScale.Pointers.Add(linearPointer1);
+
+            LinearPointer linearPointer = new LinearPointer()
+            {
+
+                PointerType = LinearPointerType.SymbolPointer,
+                Value = 60,
+                SymbolPointerHeight = 15,
+                SymbolPointerWidth = 15,
+                SymbolPointerPosition = LinearSymbolPointersPosition.Above,
+                SymbolPointerStroke = new SolidColorBrush(Color.FromRgb(91, 134, 229)),
+                EnableAnimation = true
+            };
+
+            linearScale.Pointers.Add(linearPointer);
+
+            sfLinearGauge.MainScale = linearScale;
+
+            this.Content = sfLinearGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)

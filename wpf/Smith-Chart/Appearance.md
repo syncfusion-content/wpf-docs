@@ -124,3 +124,34 @@ this.Grid1.Children.Add(chart);
 {% endtabs %}
 
 ![](Appearance_images/Appearance_img4.png)
+
+## Get smith chart area bounds
+
+You can get the area bounds of the smith chart by using the `AreaBounds` property in `ChartAreaInfo`.
+
+{% highlight C# %}
+
+Rect areaBounds = smithChart.ChartAreaInfo.AreaBounds;
+
+{% endhighlight %}
+
+## Get smith chart center point
+
+You can get the center point (X and Y) of the smith chart by using the `CenterPoint` property in the `ChartAreaInfo`.
+
+{% highlight C# %}
+
+Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
+
+{% endhighlight %}
+
+## Get the smith chart radius
+
+You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`
+Code
+
+{% highlight C# %}
+
+double radiuss = smithChart.ChartAreaInfo.Radius;
+
+{% endhighlight %}

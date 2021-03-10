@@ -15,6 +15,12 @@ Input views can be added to the text input layout control by setting the [InputV
 
 * PasswordBox
 
+* ComboBox
+
+* [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview)
+
+* [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview)
+
 ## TextBox
 
 You can enter the text as an input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
@@ -70,3 +76,86 @@ You can enter the password characters as an input by adding the [PasswordBox](ht
 {% endtabs %}
 
 ![Image for PasswordBox](Images/PasswordBox_Img.PNG)
+
+## ComboBox
+
+You can use the `ComboBox` control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <ComboBox x:Name="comboBox" ItemsSource="{Binding MyItems}"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+        ComboBox comboBox = new ComboBox();
+        comboBox.ItemsSource = MyItems;
+        sfTextInputLayout.InputView = comboBox;
+        this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for ComboBox](Images/ComboBox_Image.PNG)
+
+## ComboBoxAdv
+
+You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <inputLayout:ComboBoxAdv x:Name="comboBox" ItemsSource="{Binding MyItems}"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+        ComboBoxAdv comboBox = new ComboBoxAdv();
+        comboBox.ItemsSource = MyItems;
+        sfTextInputLayout.InputView = comboBox;
+        this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for ComboBoxAdv](Images/ComboBoxAdv_Image.PNG)
+
+## SfTextBoxExt
+
+You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <inputLayout:SfTextBoxExt Text="SfTextInputLayout"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+        SfTextBoxExt sfTextBoxExt = new SfTextBoxExt() { Text = "SfTextInputLayout" };
+        sfTextInputLayout.InputView = sfTextBoxExt;
+        this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for SfTextBoxExt_Image](Images/ComboBoxAdv_Image.PNG)

@@ -36,6 +36,10 @@ The following screenshot illustrates the image taken after performing cropping o
 
 ![Cropped image](Images/CroppedImage.jpg) 
 
+An image can be cropped in rectangle and circle format, by default we have enabled the rectangle format in the toolbar. You can enable the circle format in the toolbar by using the drop-down button in crop icon.
+
+![Circle cropping toolbar image](Images/CircleCropping_Toolbar_Img.png) 
+
 ## Programmatic cropping
 
 Cropping can be done programmatically using  the following two methods in image editor:
@@ -89,6 +93,20 @@ editor.ToggleCropping(rect);
 {% endtabs %} 
 
 ![Rect cropping](Images/CroppingRect.png) 
+
+To specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) parameter as shown in the below code sample to enable the circle or elliptical format.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+editor.ToggleCropping(new Rect(25, 25, 50, 50), true);
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Circle cropping](Images/CircleCropping_Img.png) 
 
 ### Crop
 
