@@ -9,7 +9,19 @@ documentation: ug
 
 # Themes in WPF Spreadsheet (SfSpreadsheet)
 
-SfSpreadsheet supports various built-in themes. Refer to the below links to apply themes for the SfSpreadsheet,
+SfSpreadsheet supports the following built-in themes.
+•	MaterialLight
+•	MaterialDark
+•	Office2019Colorful
+•	Office2019Black
+•	Office2019White
+•	Office2019DarkGray
+•	FluentLight
+•	FluentDark
+•	SystemTheme
+
+
+Refer to the below links to apply themes for the SfSpreadsheet,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
