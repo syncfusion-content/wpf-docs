@@ -20,7 +20,6 @@ SfSpreadsheet supports the following built-in themes.
 *	FluentDark
 *	SystemTheme
 
-
 Refer to the below links to apply themes for the SfSpreadsheet,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
