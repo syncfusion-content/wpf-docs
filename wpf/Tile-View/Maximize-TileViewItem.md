@@ -13,7 +13,7 @@ You can maximize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 ## Maximize the TileViewItem
 
-You can maximize the `TileViewItem` by click on the maximize button.
+You can maximize the `TileViewItem` by clicking on the maximize button.
 
 {% tabs %}
 {% highlight XAML %}
