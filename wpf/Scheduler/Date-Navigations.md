@@ -41,7 +41,7 @@ this.Schedule.MaximumDate = new DateTime(2020, 10, 05, 10, 0, 0);
 {% endtabs %}
 
 ## Programmatic date navigation
-You can programmatically navigate dates in scheduler by using the [DisplayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property of SfScheduler.
+You can programmatically navigate the dates in scheduler by using the [DisplayDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,7 +54,7 @@ this.Schedule.DisplayDate = new DateTime(2020, 07, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
-N>Date navigation before the minimum date will be reset to the scheduler minimum date and date navigation beyond the maximum date will be rest to the scheduler maximum date.
+N>Date navigation before the minimum date will be reset to the scheduler minimum date and date navigation beyond the maximum date will be reset to the scheduler maximum date.
 
 ## Programmatic date selection
 You can programmatically select the dates in scheduler by using the [SelectedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectedDate) property of SfScheduler.
