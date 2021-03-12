@@ -34,4 +34,4 @@ propertyGrid.SelectedObject = new Button();
 
 ![PropertyGrid in the Virtualization mode](Virtualization-images/Virtualization.png)
 
-N> You can only load a set of items in view at a time when Virtualization is enabled. If you want to modify items that are not in view, then disable the virtualization, otherwise the items will not be updated until they are in view. 
+N> When Virtualization is enabled, you can only load a set of items in view at a time.  
