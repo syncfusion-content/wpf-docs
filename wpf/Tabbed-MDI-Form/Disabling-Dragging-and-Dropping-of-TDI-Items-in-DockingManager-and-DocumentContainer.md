@@ -43,7 +43,7 @@ documentcontainer1.IsTDIDragDropEnabled=false;
 {% endtabs %}
 
 ## Rearrange position of document items with auto scrolling
-You can move document items beyond the non-visual items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) or beyond the overflow button to control's end width.
+You can easily move or rearrange document items when there are several document items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) to autoscroll.
 The default value of `EnableAutoScroll` property is `false`.
 
 {% tabs %}
