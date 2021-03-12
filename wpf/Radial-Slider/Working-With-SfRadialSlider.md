@@ -15,7 +15,7 @@ This section explains different UI customization and common features available i
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of `Value` property is `0`.
 
-![Selecting a value by click and draging](GettingStarted_images/SelectValue.gif)
+![Selecting a value by clicking and draging](GettingStarted_images/SelectValue.gif)
 
 ### Select tick value programmatically
 
