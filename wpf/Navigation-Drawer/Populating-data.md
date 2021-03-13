@@ -19,7 +19,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 * **Header** — Represents the content of the `NavigationItem`.
 * **Icon** — Represents the icon in the `NavigationItem`.
-* **IconTemplate** — Used to display the custom icon in the `NavigationItem`.
+* **IconTemplate** — Used to display the custom icon in the `NavigationItem`. See also [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section.
 * **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
 * **DisplayMemberPath** — Used to display the content for sub items, while providing the `ItemsSource`. See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section. 
 * **ExpanderTemplate** — Used to provide a custom view for the expander icon in both collapsed and expanded state.
@@ -793,6 +793,6 @@ This property used to change the horizontal position of sub items. Left margin o
 
 ## Popup support
 
-The subitems will be displayed in the popup when the drawer menu is collapsed in compact and expanded display modes.
+The sub-items will be displayed in the popup when the drawer menu is collapsed in compact and expanded display modes.
 
 ![Popup_Menu](Populating_Data_images/Popup_Menu.png)

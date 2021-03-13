@@ -9,9 +9,11 @@ documentation: ug
 
 #  Keyboard Support in WPF NavigationDrawer (SfNavigationDrawer)
 
-* **Tab** - When press the tab key Toggle button initially focused then can be navigate the items.   
+This section describes the keyboard support in SfNavigationDrawer.
+
+* **Tab** - When press the tab key Navigation started from the toggle button in drawer.   
 * **Up** - This key used to Navigate the previous NavigationItem.
 * **Down** - This key used to Navigate the next NavigationItem. 
-* **Enter** - When press enter key focused item getting selection.
+* **Enter** - This key used to select the currently focused item.
 
 ![Keyboard_Support](Keyboard_Support_images/Keyboard_Support.gif)
