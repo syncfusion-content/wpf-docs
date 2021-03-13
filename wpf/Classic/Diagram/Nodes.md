@@ -1316,7 +1316,7 @@ RotateAngle with 180 degree
 
 ## Node Resize
 
-Nodes can be resized to desired Width and Height by click and dragging the Resizer, based on the content alignment setting. The node’s content will also be resized accordingly. Resizing is supported in eight directions.
+Nodes can be resized to desired Width and Height by clicking and dragging the Resizer, based on the content alignment setting. The node’s content will also be resized accordingly. Resizing is supported in eight directions.
 
 
 

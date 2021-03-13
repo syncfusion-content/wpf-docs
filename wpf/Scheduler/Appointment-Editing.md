@@ -11,10 +11,10 @@ documentation: ug
 This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing.
 
 ## Adding appointments
-Scheduler supports to add new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. You can open this window by double click a time cell.
+Scheduler supports to add new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. You can open this window by double clicking on a time cell.
 
 ## Editing appointment
-Scheduler supports to edit the appointment by using `Appointment Editor` UI window. You can open this window by double click over the appointment.
+Scheduler supports to edit the appointment by using `Appointment Editor` UI window. You can open this window by double clicking on the appointment.
 
 Appointment editor window
 
