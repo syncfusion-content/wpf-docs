@@ -107,7 +107,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ## How to add or remove the straight segments at run time
 
-Straight segments can be split into multiple straight segments interactively by click on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
+Straight segments can be split into multiple straight segments interactively by clicking on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
 
 `AddRemoveStraightSegmentArgs` class is having below properties,
 

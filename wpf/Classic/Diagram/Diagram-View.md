@@ -4509,7 +4509,7 @@ diagramView.DrawingTool = DrawingTools.Rectangle
 
 ### Steps for Drawing 
 
- You can draw on a page by click and drag on the page.
+ You can draw on a page by clicking and drag on the page.
 
  Follow are the below steps to draw a shape or a line: 
 
