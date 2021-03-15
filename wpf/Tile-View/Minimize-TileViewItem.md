@@ -13,7 +13,7 @@ You can minimize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 ## Minimize the TileViewItem
 
-You can minimize the maximized `TileViewItem` by click on the minimize button.
+You can minimize the maximized `TileViewItem` by clicking on the minimize button.
 
 {% tabs %}
 {% highlight XAML %}

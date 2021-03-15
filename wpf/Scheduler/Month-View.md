@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Month View in WPF Scheduler (SfScheduler)
-The month view of the scheduler displays  days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
+The month view of the scheduler displays the days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
 
 ## Month agenda view
 The scheduler month view displays a divided agenda view that is used to show the selected date’s appointments below the month. You can show the agenda view by setting the [ShowAgendaView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowAgendaView) property to `true` in the [MonthViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
@@ -58,7 +58,7 @@ this.Schedule.MonthViewSettings.AgendaViewHeight = 300;
 ![WPF Scheduler month view AgendaViewHeight](Month-View_Images/AgendaViewHeight.png)
 
 ## Appointment display mode
-You can handle the Scheduler month view appointment display by using the [AppointmentDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) property of `MonthViewSettings`. By default, the `AppointmentDisplayMode` is set to `Appointment` Using the `AppointmentDisplayMode`, you can set the month view appointments display as follows.
+You can handle the Scheduler month view appointment display by using the [AppointmentDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) property of `MonthViewSettings`. By default, the `AppointmentDisplayMode` is set to `Appointment`. By using the `AppointmentDisplayMode`, you can set the month view appointments display as follows.
 * `None`:  Appointment will not be displayed.
 * `Indicator`:  Appointment will be denoted as the circle.
 * `Appointment`:  Appointment subject will be displayed in the month cell.
@@ -218,7 +218,7 @@ You can customize the default appearance of the month view header by using the [
 ![WPF Scheduler month view ViewHeadeTemplate](Month-View_Images/ViewHeaderTemplate.png)
 
 ## Leading and Trailing days visibility
-You can customize the leading and trailing days’_ visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) property of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` is set to `Visible`.
+You can customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) property of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` is set to `Visible`.
 
 {% tabs %}
 {% highlight xaml %}
