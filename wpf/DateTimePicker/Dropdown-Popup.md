@@ -282,7 +282,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Hide Today button
 
- Today button in the dropdown of DateTimeEdit can collapsed by setting the visibility by retrieving it using code in loaded event.
+Today button in the dropdown of DateTimeEdit can collapsed by setting the visibility by retrieving it using code in loaded event.
 
 {% tabs %}
 
