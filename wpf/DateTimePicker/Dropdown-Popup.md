@@ -282,7 +282,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Hide Today button
 
- TodayButton of DateTimeEdit can be hidden by retrieving the TodayButton Template using FindName() and collapsing the Visibility of TodayButton. Refer the code snippet below for reference. 
+ Today button in the dropdown of DateTimeEdit can collapsed by setting the visibility by retrieving it using code in loaded event.
 
 {% tabs %}
 
