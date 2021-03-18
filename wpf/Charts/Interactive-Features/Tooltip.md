@@ -12,6 +12,222 @@ documentation: ug
 
 The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
+## ChartTooltipBehavior
+
+Adding chart TooltipBehavior to SfChart:
+
+You can create an instance ChartTooltipBehavior and add it to the Behaviors collection.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior/>                                                  
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ChartTooltipBehavior behavior = new ChartTooltipBehavior();
+
+chart.Behaviors.Add(behavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The ChartTooltipBehavior is commonly used for all series to customize the tooltip.
+
+Following properties are used to customize the tooltip which are available in ChartTooltipBehavior.
+
+* EnableAnimation - used to enable the animation when showing tooltip.
+* HorizontalOffset - used to position the tooltip at a distance from the data point or cursor position horizontally.
+* VerticalOffset - used to position the tooltip at a distance from the data point or cursor positionvertically.
+* HorizontalAlignment - used for horizontal alignment of tooltip label with respect to the cursor position.
+* VerticalAlignment - used for vertical alignment of tooltip label with respect to the cursor position.
+* Position - used to position the tooltip at data point position or at cursor position.
+* ShowDuration - used to set the amount of time that the tooltip remains visible in milliseconds.
+* InitialShowDelay  - used to delay in milliseconds to show the tooltip once user interact with series.
+* Style - used to customize the fill and stroke of tooltip.
+* LabelStyle - used to customize the tooltip label.
+
+## Positioning the Tooltip
+
+Tooltip position can be positioned at data point position or at cursor position using the Position proeprty. The Auto will position the tooltip at data point when hover mouse inside any chart segment and the Pointer will display the tooltip in conjunction with the mouse pointer itself
+
+N> By default the tooltip position is set as Auto.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer"/>                                               
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.Position = TooltipPosition.Pointer;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Aligning the tooltip using ChartTootipBehavior
+
+**VerticalOffset and HorizontalOffset**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" VerticalOffset="10" HorizontalOffset="10"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.HorizontalOffset = 10;
+chartTooltipBehavior.VerticalOffset = 10;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**HorizontalAlignment**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" HorizontalAlignment="Right"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.HorizontalAlignment = HorizontalAlignment.Right;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**VerticalAlignment**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" VerticalAlignment="Bottom"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Apply tooltip style**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.Resources>
+    <Style TargetType="Path" x:Key="style">
+       <Setter Property="Stroke" Value="Gray"/>
+       <Setter Property="Fill" Value="Black"/>
+    </Style>
+</syncfusion:SfChart.Resources>
+<syncfusion:SfChart.Behaviors>
+    <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+</syncfusion:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style style = new Style(typeof(Path));
+style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Gray)));
+style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Black)));
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.Style = style;
+chart.Behaviors.Add(tooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Apply tooltip label style**
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.Resources>
+    <Style TargetType="TextBlock" x:Key="labelStyle">
+       <Setter Property="FontSize" Value="14"/>
+       <Setter Property="Foreground" Value="Red"/>
+    </Style>
+</syncfusion:SfChart.Resources>
+<syncfusion:SfChart.Behaviors>
+   <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+</syncfusion:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style labelStyle = new Style(typeof(TextBlock));
+labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.LabelStyle = labelStyle;
+chart.Behaviors.Add(tooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Define Tooltip
 
 By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in ToolTip. 
