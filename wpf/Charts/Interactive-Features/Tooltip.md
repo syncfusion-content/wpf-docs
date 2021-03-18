@@ -14,9 +14,24 @@ The ToolTip feature allows you to display any information over a [`ChartSeries`]
 
 ## ChartTooltipBehavior
 
-Adding chart TooltipBehavior to SfChart:
+Adding chart `ChartTooltipBehavior` to SfChart:
 
-You can create an instance ChartTooltipBehavior and add it to the Behaviors collection.
+You can create an instance `ChartTooltipBehavior` and add it to the Behaviors collection.
+
+The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip.
+
+Following properties are used to customize the tooltip which are available in ChartTooltipBehavior.
+
+* `EnableAnimation` - used to enable the animation when showing tooltip.
+* `HorizontalOffset` - used to position the tooltip at a distance from the data point or cursor position horizontally.
+* `VerticalOffset` - used to position the tooltip at a distance from the data point or cursor positionvertically.
+* `HorizontalAlignment` - used for horizontal alignment of tooltip label with respect to the cursor position.
+* `VerticalAlignment` - used for vertical alignment of tooltip label with respect to the cursor position.
+* `Position` - used to position the tooltip at data point position or at cursor position.
+* `ShowDuration` - used to set the amount of time that the tooltip remains visible in milliseconds.
+* `InitialShowDelay`  - used to delay in milliseconds to show the tooltip once user interact with series.
+* `Style` - used to customize the fill and stroke of tooltip.
+* `LabelStyle` - used to customize the tooltip label.
 
 {% tabs %}
 
@@ -42,26 +57,13 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-The ChartTooltipBehavior is commonly used for all series to customize the tooltip.
-
-Following properties are used to customize the tooltip which are available in ChartTooltipBehavior.
-
-* EnableAnimation - used to enable the animation when showing tooltip.
-* HorizontalOffset - used to position the tooltip at a distance from the data point or cursor position horizontally.
-* VerticalOffset - used to position the tooltip at a distance from the data point or cursor positionvertically.
-* HorizontalAlignment - used for horizontal alignment of tooltip label with respect to the cursor position.
-* VerticalAlignment - used for vertical alignment of tooltip label with respect to the cursor position.
-* Position - used to position the tooltip at data point position or at cursor position.
-* ShowDuration - used to set the amount of time that the tooltip remains visible in milliseconds.
-* InitialShowDelay  - used to delay in milliseconds to show the tooltip once user interact with series.
-* Style - used to customize the fill and stroke of tooltip.
-* LabelStyle - used to customize the tooltip label.
-
 ## Positioning the Tooltip
 
-Tooltip position can be positioned at data point position or at cursor position using the Position proeprty. The Auto will position the tooltip at data point when hover mouse inside any chart segment and the Pointer will display the tooltip in conjunction with the mouse pointer itself
+Tooltip position can be positioned at data point position or at cursor position using the Position property. The `Auto` will position the tooltip at data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hover mouse inside any chart segment.
 
-N> By default the tooltip position is set as Auto.
+N> By default the tooltip `Position` is set as Auto.
+
+The following code example explains the positioning the tooltip at `Pointer` position
 
 {% tabs %}
 
@@ -90,6 +92,10 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 **VerticalOffset and HorizontalOffset**
 
+The HorizontalOffset property and the VerticalOffset property values provide additional adjustment to position the tooltip.
+
+The following code example explains the positioning the tooltip using VerticalOffset and HorizontalOffset.
+
 {% tabs %}
 
 {% highlight xml %}
@@ -114,7 +120,11 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-**HorizontalAlignment**
+**HorizontalAlignment and VerticalAlignment**
+
+The tooltip can be aligned with respect to the cursor or data point position using the HorizontalAlignment and VerticalAlignment properties.
+
+The following code example explains the positioning the tooltip at right with respect to data point position.
 
 {% tabs %}
 
@@ -141,6 +151,8 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 **VerticalAlignment**
 
+The following code example explains the positioning the tooltip at Bottom with respect to data point position.
+
 {% tabs %}
 
 {% highlight xml %}
@@ -164,7 +176,13 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-**Apply tooltip style**
+##Customizing the tooltip appearance using ChartTooltipBehavior
+
+**Apply tooltip style using ChartTooltipBehavior**
+
+The tooltip fill and stroke color can be customized using the `Style` property. To define a Style for tooltip, specify the style of TargetType as Path.
+
+The following code example explains applying style for the tooltip.
 
 {% tabs %}
 
@@ -198,6 +216,10 @@ chart.Behaviors.Add(tooltipBehavior);
 
 **Apply tooltip label style**
 
+The tooltip label style can be customized using the `LabelStyle` property. To define a Style for tooltip label, specify the style of TargetType as TextBlock.
+
+The following code example explains applying style for the tooltip label.
+
 {% tabs %}
 
 {% highlight xml %}
@@ -227,6 +249,93 @@ chart.Behaviors.Add(tooltipBehavior);
 {% endhighlight %}
 
 {% endtabs %}
+
+**ShowDuration**
+
+ShowDuration property defines the time that a tooltip remains visible while the user pauses the mouse pointer over the chart series area that defines the tooltip.
+
+The following code example demonstrates the duration of the tooltip set as 3 seconds.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" ShowDuration="3000"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.ShowDuration = 3000;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**InitialShowDelay**
+
+Used to specify the amount of time before the user has to wait when hover the mouse or touch on chart series in milliseconds before tooltip display.
+
+The following code example demonstrates the tooltip will be delayed for 1 second before display.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" InitialShowDelay="1000"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.InitialShowDelay = 1000;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Enable tooltip animation**
+
+`EnableAnimation` property used to enable the animation when showing tooltip.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" EnableAnimation="true"/>
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.EnableAnimation = true;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default vlaue for `EnableAnimation` is `true`.
 
 ## Define Tooltip
 
