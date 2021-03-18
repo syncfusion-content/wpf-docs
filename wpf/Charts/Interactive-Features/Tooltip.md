@@ -12,11 +12,69 @@ documentation: ug
 
 The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
-## ChartTooltipBehavior
+## Define Tooltip
 
-Adding chart `ChartTooltipBehavior` to SfChart:
+By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in ToolTip. 
 
-You can create an instance `ChartTooltipBehavior` and add it to the Behaviors collection.
+The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:ColumnSeries  ShowTooltip="True"                                                  
+
+ItemsSource="{Binding Demands}" 
+
+XBindingPath="Demand"  YBindingPath="Year2010"/>
+
+<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
+
+ShowTooltip="True"                           
+
+XBindingPath="Demand"  YBindingPath="Year2011"/>           
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series1 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2010",
+
+    ShowTooltip = true
+
+};
+
+ColumnSeries series2 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    ShowTooltip = true
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+
+## Cutomize tooltip using ChartTooltipBehavior
 
 The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip.
 
@@ -32,6 +90,10 @@ Following properties are used to customize the tooltip which are available in Ch
 * `InitialShowDelay`  - used to delay in milliseconds to show the tooltip once user interact with series.
 * `Style` - used to customize the fill and stroke of tooltip.
 * `LabelStyle` - used to customize the tooltip label.
+
+Adding chart `ChartTooltipBehavior` to SfChart:
+
+You can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
 
 {% tabs %}
 
@@ -337,68 +399,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 N> The default vlaue for `EnableAnimation` is `true`.
 
-## Define Tooltip
-
-By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in ToolTip. 
-
-The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:ColumnSeries  ShowTooltip="True"                                                  
-
-ItemsSource="{Binding Demands}" 
-
-XBindingPath="Demand"  YBindingPath="Year2010"/>
-
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
-
-ShowTooltip="True"                           
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>           
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ColumnSeries series1 = new ColumnSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2010",
-
-    ShowTooltip = true
-
-};
-
-ColumnSeries series2 = new ColumnSeries()
-{
-
-    ItemsSource = new ViewModel().Demands,
-
-    XBindingPath = "Demand",
-
-    YBindingPath = "Year2011",
-
-    ShowTooltip = true
-
-};
-
-chart.Series.Add(series1);
-
-chart.Series.Add(series2);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
-
+## Customize Tooltip using the ChartTooltip attached properties
 
 ## Aligning the ToolTip
 
@@ -959,6 +960,9 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 {% endtabs %}
 
 ![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+
+
+N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties is considered as high precedence.
 
 ## See also
 
