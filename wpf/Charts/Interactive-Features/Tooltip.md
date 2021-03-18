@@ -8,9 +8,9 @@ documentation: ug
 
 ---
 
-# ToolTip in WPF Charts (SfChart)
+# Tooltip in WPF Charts (SfChart)
 
-The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
+The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer or at data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 ## Define Tooltip
 
@@ -23,7 +23,6 @@ The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusio
 {% highlight xaml %}
 
 <syncfusion:ColumnSeries  ShowTooltip="True"                                                  
-
 ItemsSource="{Binding Demands}" 
 
 XBindingPath="Demand"  YBindingPath="Year2010"/>
@@ -74,26 +73,24 @@ chart.Series.Add(series2);
 
 ![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
-## Cutomize tooltip using ChartTooltipBehavior
+## Customizing tooltip using ChartTooltipBehavior
 
 The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip.
 
-Following properties are used to customize the tooltip which are available in ChartTooltipBehavior.
+Following properties are used to customize and configure tooltip which are available in `ChartTooltipBehavior`.
 
 * `EnableAnimation` - used to enable the animation when showing tooltip.
-* `HorizontalOffset` - used to position the tooltip at a distance from the data point or cursor position horizontally.
-* `VerticalOffset` - used to position the tooltip at a distance from the data point or cursor positionvertically.
-* `HorizontalAlignment` - used for horizontal alignment of tooltip label with respect to the cursor position.
-* `VerticalAlignment` - used for vertical alignment of tooltip label with respect to the cursor position.
 * `Position` - used to position the tooltip at data point position or at cursor position.
-* `ShowDuration` - used to set the amount of time that the tooltip remains visible in milliseconds.
-* `InitialShowDelay`  - used to delay in milliseconds to show the tooltip once user interact with series.
 * `Style` - used to customize the fill and stroke of tooltip.
 * `LabelStyle` - used to customize the tooltip label.
+* `HorizontalOffset` - used to position the tooltip at a distance from the data point or cursor position horizontally.
+* `VerticalOffset` - used to position the tooltip at a distance from the data point or cursor position vertically.
+* `HorizontalAlignment` - used for horizontal alignment of tooltip label with respect to the cursor position.
+* `VerticalAlignment` - used for vertical alignment of tooltip label with respect to the cursor position.
+* `ShowDuration` - used to set the amount of time that the tooltip remains visible in milliseconds.
+* `InitialShowDelay`  - used to delay in milliseconds to show the tooltip once user interact with series.
 
-Adding chart `ChartTooltipBehavior` to SfChart:
-
-You can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
+For customizing tooltip, you can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
 
 {% tabs %}
 
@@ -119,13 +116,13 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-## Positioning the Tooltip
+### Positioning the tooltip
 
-Tooltip position can be positioned at data point position or at cursor position using the Position property. The `Auto` will position the tooltip at data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hover mouse inside any chart segment.
+Tooltip can be positioned at data point position or at cursor position using the `Position` property. The `Auto` will position the tooltip at data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hover mouse inside any chart segment.
 
 N> By default the tooltip `Position` is set as Auto.
 
-The following code example explains the positioning the tooltip at `Pointer` position
+The following code example explains positioning the tooltip at `Pointer` position
 
 {% tabs %}
 
@@ -150,101 +147,11 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-## Aligning the tooltip using ChartTootipBehavior
+### Customizing the tooltip background
 
-**VerticalOffset and HorizontalOffset**
+The tooltip fill and stroke color can be customized using the `Style` property. To define a `Style` for tooltip, specify the style of `TargetType` as `Path`.
 
-The HorizontalOffset property and the VerticalOffset property values provide additional adjustment to position the tooltip.
-
-The following code example explains the positioning the tooltip using VerticalOffset and HorizontalOffset.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" VerticalOffset="10" HorizontalOffset="10"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.HorizontalOffset = 10;
-chartTooltipBehavior.VerticalOffset = 10;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**HorizontalAlignment and VerticalAlignment**
-
-The tooltip can be aligned with respect to the cursor or data point position using the HorizontalAlignment and VerticalAlignment properties.
-
-The following code example explains the positioning the tooltip at right with respect to data point position.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" HorizontalAlignment="Right"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.HorizontalAlignment = HorizontalAlignment.Right;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**VerticalAlignment**
-
-The following code example explains the positioning the tooltip at Bottom with respect to data point position.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" VerticalAlignment="Bottom"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-##Customizing the tooltip appearance using ChartTooltipBehavior
-
-**Apply tooltip style using ChartTooltipBehavior**
-
-The tooltip fill and stroke color can be customized using the `Style` property. To define a Style for tooltip, specify the style of TargetType as Path.
-
-The following code example explains applying style for the tooltip.
+The following code example explains applying the style for tooltip.
 
 {% tabs %}
 
@@ -276,11 +183,11 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-**Apply tooltip label style**
+### Customizing the tooltip label style
 
-The tooltip label style can be customized using the `LabelStyle` property. To define a Style for tooltip label, specify the style of TargetType as TextBlock.
+The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for tooltip label, specify the style of TargetType as `TextBlock`.
 
-The following code example explains applying style for the tooltip label.
+The following code example explains applying the style for tooltip label.
 
 {% tabs %}
 
@@ -312,96 +219,9 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-**ShowDuration**
+## Customizing tooltip using ChartTooltip attached properties
 
-ShowDuration property defines the time that a tooltip remains visible while the user pauses the mouse pointer over the chart series area that defines the tooltip.
-
-The following code example demonstrates the duration of the tooltip set as 3 seconds.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" ShowDuration="3000"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.ShowDuration = 3000;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**InitialShowDelay**
-
-Used to specify the amount of time before the user has to wait when hover the mouse or touch on chart series in milliseconds before tooltip display.
-
-The following code example demonstrates the tooltip will be delayed for 1 second before display.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" InitialShowDelay="1000"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.InitialShowDelay = 1000;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Enable tooltip animation**
-
-`EnableAnimation` property used to enable the animation when showing tooltip.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<chart:SfChart.Behaviors>
-
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" EnableAnimation="true"/>
-
-</chart:SfChart.Behaviors>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
-chartTooltipBehavior.EnableAnimation = true;
-chart.Behaviors.Add(chartTooltipBehavior);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> The default vlaue for `EnableAnimation` is `true`.
-
-## Customize Tooltip using the ChartTooltip attached properties
-
-## Aligning the ToolTip
+### Aligning the ToolTip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -535,7 +355,6 @@ chart.Series.Add(series2);
 
 ![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
-
 **ToolTipMargin**
 
 You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
@@ -611,7 +430,6 @@ chart.Series.Add(series2);
 {% endtabs %}
 
 ![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
-
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -697,7 +515,7 @@ chart.Series.Add(series2);
 
 ![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
-## ToolTip duration
+### ToolTip duration
 
 This property [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
@@ -795,7 +613,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-## Animation for ToolTip
+### Animation for ToolTip
 
 You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true as shown in the following code snippet.
 
@@ -960,7 +778,6 @@ The [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 {% endtabs %}
 
 ![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
-
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties is considered as high precedence.
 
