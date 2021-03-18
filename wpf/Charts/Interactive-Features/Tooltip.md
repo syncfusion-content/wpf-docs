@@ -221,7 +221,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ## Customizing tooltip using ChartTooltip attached properties
 
-### Aligning the ToolTip
+### Aligning the Tooltip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -355,7 +355,7 @@ chart.Series.Add(series2);
 
 ![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
-**ToolTipMargin**
+**TooltipMargin**
 
 You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
 
@@ -515,7 +515,7 @@ chart.Series.Add(series2);
 
 ![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
-### ToolTip duration
+### Tooltip duration
 
 This property [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
@@ -613,7 +613,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-### Animation for ToolTip
+### Animation for Tooltip
 
 You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true as shown in the following code snippet.
 
@@ -662,7 +662,7 @@ chart.Series.Add(series);
 
 ## Customizing the Appearance
 
-The [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
+The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
 
 {% tabs %}
 
