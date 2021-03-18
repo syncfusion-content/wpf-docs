@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Download and Installation | Wpf | Syncfusion
-description: Explain how to download and install the syncfusion wpf extension
+description: How to download and install the Syncfusion WPF Visual Studio Extensions from Visual Studio Market Place
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
