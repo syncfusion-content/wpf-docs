@@ -1,6 +1,7 @@
+---
 layout: post
 title: Create a preview of the entire content of the Diagram | syncfusion.
-description: How to see the preview of the large Diagrams and to ease navigations within that Diagram and how to custimize the appearance and its behaviour?
+description: How to see the preview of the large Diagrams and to ease navigations within that Diagram and how to customize the appearance and its behaviour?
 platform: wpf
 control: SfDiagram
 documentation: ug
