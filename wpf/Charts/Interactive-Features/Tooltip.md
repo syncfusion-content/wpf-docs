@@ -139,6 +139,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 {% highlight c# %}
 
 SfChart chart = new SfChart();
+...
 ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
 chartTooltipBehavior.Position = TooltipPosition.Pointer;
 chart.Behaviors.Add(chartTooltipBehavior);
@@ -163,6 +164,7 @@ The following code example explains applying the style for tooltip.
        <Setter Property="Fill" Value="Gray"/>
     </Style>
 </syncfusion:SfChart.Resources>
+...
 <syncfusion:SfChart.Behaviors>
     <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
 </syncfusion:SfChart.Behaviors>
@@ -175,9 +177,11 @@ SfChart chart = new SfChart();
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
+...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
+...
 
 {% endhighlight %}
 
@@ -199,6 +203,7 @@ The following code example explains applying the style for tooltip label.
        <Setter Property="Foreground" Value="Red"/>
     </Style>
 </syncfusion:SfChart.Resources>
+...
 <syncfusion:SfChart.Behaviors>
    <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
 </syncfusion:SfChart.Behaviors>
@@ -211,9 +216,11 @@ SfChart chart = new SfChart();
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.Behaviors.Add(tooltipBehavior);
+...
 
 {% endhighlight %}
 
@@ -708,7 +715,7 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
         </DataTemplate>
     </syncfusion:ColumnSeries.TooltipTemplate>
 </syncfusion:ColumnSeries>
-
+...
 <chart:SfChart.Behaviors>
         <chart:ChartTooltipBehavior Style="{StaticResource style}" />
 </chart:SfChart.Behaviors>
