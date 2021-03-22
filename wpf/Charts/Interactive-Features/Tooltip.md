@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip feature in Syncfusion SfChart WPF
+title: Tooltip feature in Syncfusion SfChart WPF
 description: How to enable, customize the tooltip position, duration and appearance in Essential WPF Chart (SfChart)
 platform: wpf
 control: SfChart
@@ -14,7 +14,7 @@ The Tooltip feature allows you to display any information over a [`ChartSeries`]
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in ToolTip. 
+By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in Tooltip. 
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
@@ -159,8 +159,8 @@ The following code example explains applying the style for tooltip.
 
 <syncfusion:SfChart.Resources>
     <Style TargetType="Path" x:Key="style">
-       <Setter Property="Stroke" Value="Gray"/>
-       <Setter Property="Fill" Value="Black"/>
+       <Setter Property="Stroke" Value="Black"/>
+       <Setter Property="Fill" Value="Gray"/>
     </Style>
 </syncfusion:SfChart.Resources>
 <syncfusion:SfChart.Behaviors>
@@ -173,8 +173,8 @@ The following code example explains applying the style for tooltip.
 
 SfChart chart = new SfChart();
 Style style = new Style(typeof(Path));
-style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Gray)));
-style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
@@ -185,7 +185,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Customizing the tooltip label style
 
-The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for tooltip label, specify the style of TargetType as `TextBlock`.
+The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for tooltip label, specify the style of `TargetType` as `TextBlock`.
 
 The following code example explains applying the style for tooltip label.
 
@@ -357,7 +357,7 @@ chart.Series.Add(series2);
 
 **TooltipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
+You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code snippet.
 
 {% tabs %}
 
