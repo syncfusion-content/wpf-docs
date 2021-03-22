@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtualization in WPF PropertyGrid
 
-You can reduce the loading time of `PropertyGrid` items regardless of items count by UI Virtualization support which is enabled by default in `PropertyGrid`. It allows the users to load large sets of data without affecting loading or scrolling performance.
+By loading only items that are within viewport, UI virtualization allows `PropertyGrid` to load faster. Virtualization is enabled by default.
 
 {% tabs %}
 {% highlight C# %}
@@ -34,4 +34,4 @@ propertyGrid.SelectedObject = new Button();
 
 ![PropertyGrid in the Virtualization mode](Virtualization-images/Virtualization.png)
 
-N> When Virtualization is enabled, you can only load a set of items in view at a time.  
+N> When Virtualization is enabled, only properties that are in viewport will be in loaded state.  
