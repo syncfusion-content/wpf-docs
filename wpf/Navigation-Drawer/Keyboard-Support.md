@@ -15,5 +15,6 @@ This section describes the keyboard support in SfNavigationDrawer.
 * **Up** - This key used to Navigate the previous NavigationItem.
 * **Down** - This key used to Navigate the next NavigationItem. 
 * **Enter** - This key used to select the currently focused item.
+* **Space** - This key also used to select the currently focused item.
 
 ![Keyboard_Support](Keyboard_Support_image/Keyboard_Support.gif)

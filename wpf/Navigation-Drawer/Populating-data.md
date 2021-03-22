@@ -239,7 +239,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 ### IconTemplate
 
-IconTemplate used to provide the custom icon for the NavigationItem. 
+IconTemplate used to provide the custom icon for the NavigationItem.
 
 ### Model
 
@@ -342,6 +342,29 @@ IconTemplate used to provide the custom icon for the NavigationItem.
 
 {% highlight c# %}
 
+            ViewModel viewModel = new ViewModel();
+            DataContext = viewModel;
+
+            Style navigationItemStyle = new Style(typeof(NavigationItem));
+            FrameworkElementFactory image = new FrameworkElementFactory(typeof(Image));
+            image.SetValue(Image.WidthProperty, (double)16);
+            image.SetValue(Image.HeightProperty, (double)16);
+            image.SetValue(Image.SourceProperty, new Binding());
+            DataTemplate dataTemplate = new DataTemplate { VisualTree = image };
+            navigationItemStyle.Setters.Add(new Setter(NavigationItem.IconTemplateProperty, dataTemplate));
+
+            SfNavigationDrawer navigationDrawer =new SfNavigationDrawer();
+            navigationDrawer.DisplayMemberPath = "Name";
+            navigationDrawer.DisplayMode = DisplayMode.Compact;
+            navigationDrawer.IconMemberPath = "Icon";
+            navigationDrawer.ItemContainerStyle = navigationItemStyle;
+            navigationDrawer.ItemsSource = viewModel.Categories;
+            Label label = new Label();
+            label.Content = "ContentView";
+            label.HorizontalAlignment = HorizontalAlignment.Center;
+            label.VerticalAlignment = VerticalAlignment.Center;
+            navigationDrawer.ContentView = label;
+            this.Content = navigationDrawer;
 
 {% endhighlight %}
 
