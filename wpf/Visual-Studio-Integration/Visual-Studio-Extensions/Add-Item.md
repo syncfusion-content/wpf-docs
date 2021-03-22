@@ -10,7 +10,7 @@ documentation: ug
 
 # Add Syncfusion window to WPF application
 
-Syncfusion provides the Visual Studio Item Templates support to add Syncfusion WPF Window into the WPF application with Syncfusion WPF references. Syncfusion WPF window provides an option to customize the window title bar most quickly and comes with various built-in themes to present an appealing User Interface.
+Syncfusion provides the Visual Studio Item Templates support to add Syncfusion WPF Window into the WPF application with Syncfusion WPF references. Syncfusion WPF window provides an option to customize the window title bar quickly and comes with various built-in themes to present an appealing User Interface.
 
 I> The Syncfusion WPF item templates are available from v19.1.0.xx. 
 
