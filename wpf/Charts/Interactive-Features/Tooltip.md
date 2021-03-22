@@ -158,16 +158,16 @@ The following code example explains applying the style for tooltip.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Resources>
+<chart:SfChart.Resources>
     <Style TargetType="Path" x:Key="style">
        <Setter Property="Stroke" Value="Black"/>
        <Setter Property="Fill" Value="Gray"/>
     </Style>
-</syncfusion:SfChart.Resources>
+</chart:SfChart.Resources>
 ...
-<syncfusion:SfChart.Behaviors>
-    <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
-</syncfusion:SfChart.Behaviors>
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+</chart:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -197,16 +197,16 @@ The following code example explains applying the style for tooltip label.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Resources>
+<chart:SfChart.Resources>
     <Style TargetType="TextBlock" x:Key="labelStyle">
        <Setter Property="FontSize" Value="14"/>
        <Setter Property="Foreground" Value="Red"/>
     </Style>
-</syncfusion:SfChart.Resources>
+</chart:SfChart.Resources>
 ...
-<syncfusion:SfChart.Behaviors>
-   <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
-</syncfusion:SfChart.Behaviors>
+<chart:SfChart.Behaviors>
+   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+</chart:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -684,10 +684,9 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 </chart:SfChart.Resources>
 ...
 
-<syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
-    syncfusion:ChartTooltip.VerticalAlignment="Top" 
+<chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
     XBindingPath="Demand" YBindingPath="Year2010" >
-    <syncfusion:ColumnSeries.TooltipTemplate>
+    <chart:ColumnSeries.TooltipTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Demand}"
@@ -697,13 +696,12 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
                     Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-    </syncfusion:ColumnSeries.TooltipTemplate>
-</syncfusion:ColumnSeries>
+    </chart:ColumnSeries.TooltipTemplate>
+</chart:ColumnSeries>
 
-<syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-    syncfusion:ChartTooltip.VerticalAlignment="Top"
+<chart:ColumnSeries  ItemsSource="{Binding Demands}"
     ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011">
-    <syncfusion:ColumnSeries.TooltipTemplate>
+    <chart:ColumnSeries.TooltipTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Demand}"
@@ -713,8 +711,8 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
                     Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-    </syncfusion:ColumnSeries.TooltipTemplate>
-</syncfusion:ColumnSeries>
+    </chart:ColumnSeries.TooltipTemplate>
+</chart:ColumnSeries>
 ...
 <chart:SfChart.Behaviors>
         <chart:ChartTooltipBehavior Style="{StaticResource style}" />
