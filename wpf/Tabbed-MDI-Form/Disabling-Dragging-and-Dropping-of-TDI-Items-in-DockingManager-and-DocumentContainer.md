@@ -43,7 +43,7 @@ documentcontainer1.IsTDIDragDropEnabled=false;
 {% endtabs %}
 
 ## Rearrange position of document items with auto scrolling
-You can easily move or rearrange document items when there are several document items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) to autoscroll.
+You can easily move or rearrange document items when there are several document items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) or tab scroll buttons to autoscroll.
 The default value of `EnableAutoScroll` property is `false`.
 
 {% tabs %}
@@ -55,6 +55,8 @@ The default value of `EnableAutoScroll` property is `false`.
     <ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Document3" />
     <ContentControl x:Name="Content4" syncfusion:DockingManager.Header="Document4" />
     <ContentControl x:Name="Content5" syncfusion:DockingManager.Header="Document5" />
+    <ContentControl x:Name="Content6" syncfusion:DockingManager.Header="Document6" />
+    <ContentControl x:Name="Content7" syncfusion:DockingManager.Header="Document7" />
 </syncfusion:DocumentContainer>
 
 {% endhighlight %}
