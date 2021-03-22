@@ -10,7 +10,7 @@ documentation: ug
 
 # Add Syncfusion window to WPF application
 
-Syncfusion provides the Visual Studio Item Templates support to add Syncfusion WPF Window into the WPF application with add Syncfusion WPF assemblies/NuGet packages. Syncfusion WPF window provides an option to customize the window title bar most quickly and comes with various built-in themes to present an appealing User Interface.
+Syncfusion provides the Visual Studio Item Templates support to add Syncfusion WPF Window into the WPF application with Syncfusion WPF references. Syncfusion WPF window provides an option to customize the window title bar most quickly and comes with various built-in themes to present an appealing User Interface.
 
 I> The Syncfusion WPF item templates are available from v19.1.0.xx. 
 
@@ -18,7 +18,7 @@ The following steps help you to add the Syncfusion WPF window in the Visual Stud
 
 > Before using the Syncfusion WPF Item Template, check whether the WPF **Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If It is not installed, then install the [Syncfusion WPF Extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation).
 
-1.	Open a new or existing WPF application.
+1. Open a new or existing WPF application.
 2. Right-click on the WPF application from the Solution Explorer. Select the Add Syncfusion Item… option.
 
       ![Choose Add Syncfusion Item option from right click project](Add-Item-images\Add-syncfusion-item.png)
@@ -55,7 +55,7 @@ The Syncfusion Item Template can also be added from the Visual Studio Add New It
 
       **Option 2:**
 
-      Right-click the WPF application in solution explorer, select Add > New Item, and then navigate to Visual C# Items or VB Items. Refer to the following screenshot for more information.
+      Right-click the WPF application in Solution Explorer, select Add > New Item, and then navigate to Visual C# Items or VB Items. Refer to the following screenshot for more information.
 
       ![Add New Item Dialog](Add-Item-images\AddNewMenu.png)
 
