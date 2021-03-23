@@ -77,57 +77,10 @@ Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree
 
 ## Theme
 
-You can customize the appearance of the `SfTimePicker` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `SfTimePicker` control.
+SfTimePicker supports various built-in themes. Refer to the below links to apply themes for the SfTimePicker,
 
-* Blend
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* VisualStudio2013
-* VisualStudio2015
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-{% tabs %}
-{% highlight XAML %}
-
-<Window>
-    <!--Theme Namespace-->
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:SfTimePicker syncfusionskin:SfSkinManager.VisualStyle="MaterialDark" 
-                                 Name="sfTimePicker" />
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-SfTimePicker sfTimePicker = new SfTimePicker();
-SfSkinManager.SetVisualStyle(sfTimePicker, VisualStyles.MaterialDark);
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfTimePicker with MaterialDark visual style](Features_images/Theme.png)
-
-Here, the `MaterialDark` style is applied to the `SfTimePicker`.
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Themes)
+![Setting theme to WPF TimePicker](Features_images/Theme.png)

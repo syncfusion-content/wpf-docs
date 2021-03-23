@@ -356,3 +356,13 @@ Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palet
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `ColorPickerPalette` control by adding resource file for each language.
 
 N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `ColorPickerPalette`.
+
+## Theme
+
+ColorPickerPalette supports various built-in themes. Refer to the below links to apply themes for the ColorPickerPalette,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF ColorPickerPalette](Getting-Started_images/Theme.png)

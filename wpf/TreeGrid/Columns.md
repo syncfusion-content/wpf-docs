@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Columns
+# Columns in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 
@@ -612,7 +612,7 @@ N> Resizing considers MinWidth and MaxWidth of column.
 {% endhighlight %}
 {% endtabs %}
 
-You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
+You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
 ![Resizing Columns](Columns_images/Columns_img3.jpeg)
 

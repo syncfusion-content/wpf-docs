@@ -376,6 +376,14 @@ ToolBarState<br/><br/></td><td>
 Gets or sets the state of the toolbar.<br/><br/></td><td>
 Attached Property<br/><br/></td><td>
 ToolBarState<br/><br/></td><td>
+</table>
 
+## Theme
 
+ToolBarAdv supports various built-in themes. Refer to the below links to apply themes for the ToolBarAdv,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+   ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)

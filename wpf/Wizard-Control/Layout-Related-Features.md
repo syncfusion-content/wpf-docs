@@ -140,45 +140,12 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 ![ExteriorPageBannerImageMinWidth in Wizard Control](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
 
-## Setting Visual Styles for Wizard Control
+## Theme
 
-The appearance of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) can be customized by [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.VisualStyles.html). You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
+WizardControl supports various built-in themes. Refer to the below links to apply themes for the WizardControl,
 
-Below example explains how to apply blend theme for [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) using SfSkinManager in an existing application.
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-1. Add reference to **Syncfusion.SfSkinManager.Wpf.dll** and **Syncfusion.Themes.Blend.Wpf.dll** assembly.
-2. Now add reference to SfSkinManager namespace and set SfSkinManager.VisualStyle attached property to window or [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html). Setting VisualStyle property to window will apply blend theme for all controls in Windows.
-
-{%tabs%}
-
-{% highlight xaml %}
-
-<Window
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="clr-namespace:WPF_ForDocumentation"
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-    x:Class="WPF_ForDocumentation.MainWindow"
-    xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF" 
-    mc:Ignorable="d"
-    Name="mainWindow"
-    Title="MainWindow" Height="350" Width="500" >
-    <syncfusion:WizardControl Name="wizard" skinManager:SfSkinManager.VisualStyle="Blend">
-        <syncfusion:WizardPage>
-           <TextBlock Text="This is an example project for themes in Wizard control" />
-        </syncfusion:WizardPage>
-        <syncfusion:WizardPage />
-    </syncfusion:WizardControl>
-</Window>
-
-
-{% endhighlight %}
-
-{%endtabs%}
-
-![Blend appearance of WizardControl](Layout-Related-Features_images/Layout-Related-Features_img5.png)
-
-
-
+ ![Setting theme to WPF WizardControl](Getting-Started_images/Theme.png)

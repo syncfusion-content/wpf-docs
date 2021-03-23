@@ -112,7 +112,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of `Value` property is `0`.
 
-![Selecting a value by click and draging](GettingStarted_images/SelectValue.gif)
+![Selecting a value by clicking and draging](GettingStarted_images/SelectValue.gif)
 
 ### Select tick value programmatically
 
@@ -405,3 +405,13 @@ private void RadialSlider_ValueChanged(object sender, RoutedPropertyChangedEvent
 
 {% endhighlight %}
 {% endtabs %}
+
+## Theme
+
+SfRadialSlider supports various built-in themes. Refer to the below links to apply themes for the SfRadialSlider,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfRadialSlider](GettingStarted_images/Theme.png)

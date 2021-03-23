@@ -514,3 +514,13 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 {% endhighlight %}
 
 {% endtabs %}
+
+## Theme
+
+Button supports various built-in themes. Refer to the below links to apply themes for the Button,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+   ![Setting theme to WPF Button](Theme-Support_images/Theme-Support_img1.png)

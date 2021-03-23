@@ -415,3 +415,14 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 {% endtabs %}
 
 ![Docking Manager displays tooltip when hovering mouse over child window header](Getting-Started_images/ToolTip.png)
+
+
+## Theme
+
+DockingManager supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)

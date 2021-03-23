@@ -1,11 +1,12 @@
 ---
-title: Getting Started | WPF RichTextBox | Syncfusion
+title: Getting Started | SfRichTextBoxAdv | WPF | Syncfusion   
 description: This section illustrates about how to getting started with WPF RichTextBox(SfRichTextBoxAdv) control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: getting started
 ---
+
 # Getting Started in WPF RichTextBox
 
 This section describes how to get started with SfRichTextBoxAdv control.
@@ -35,6 +36,7 @@ N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies
 
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
+
 ![SfRichTextBoxAdv control](Getting-Started_images/Getting-Started_img1.jpeg)
 
 {% tabs %}
@@ -222,4 +224,15 @@ You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by u
 N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
 
 Finally, you can get the following output similar to Microsoft Word on executing the application
+
 ![RichTextBox Window](Getting-Started_images/Getting-Started_img5.jpeg)
+
+## Theme
+
+SfRichTextBoxAdv supports various built-in themes. Refer to the below links to apply themes for the SfRichTextBoxAdv,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+![Setting theme to WPF RichTextBox](Getting-Started_images/Theme.png)
