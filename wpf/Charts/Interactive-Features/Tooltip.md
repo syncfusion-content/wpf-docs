@@ -85,8 +85,8 @@ The following properties are used to customize and configure tooltip which is av
 * `LabelStyle`: Used to customize the tooltip label.
 * `HorizontalOffset`: Used to position the tooltip at a distance from the data point or cursor position horizontally.
 * `VerticalOffset`: Used to position the tooltip at a distance from the data point or cursor position vertically.
-* `HorizontalAlignment`: Used to align the tooltip label at left, right and center of data point position or cursor position horizontally.
-* `VerticalAlignment`: Used to align the tooltip label at top, center and bottom of data point position or cursor position vertically.
+* `HorizontalAlignment`: Used to align the tooltip label at left, right and center of the data point position or cursor position horizontally.
+* `VerticalAlignment`: Used to align the tooltip label at top, center and bottom of the data point position or cursor position vertically.
 * `ShowDuration`: Used to set the amount of time that the tooltip remains visible in milliseconds.
 * `InitialShowDelay`: Used to delay in milliseconds to show the tooltip once the user interacts with series.
 
