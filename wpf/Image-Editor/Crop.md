@@ -94,7 +94,9 @@ editor.ToggleCropping(rect);
 
 ![Rect cropping](Images/CroppingRect.png) 
 
-To specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) parameter as shown in the below code sample to enable the circle or elliptical format.
+### Circle cropping
+
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) parameter as shown in the below code sample to enable the circle or elliptical format.
 
 {% tabs %} 
 

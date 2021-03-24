@@ -133,7 +133,7 @@ You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overvie
 
 ![Image for ComboBoxAdv](Images/ComboBoxAdv_Image.PNG)
 
-## SfTextBoxExt
+## Autocomplete (SfTextBoxExt)
 
 You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
 

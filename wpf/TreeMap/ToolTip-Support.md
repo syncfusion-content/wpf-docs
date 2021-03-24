@@ -9,12 +9,10 @@ documentation: ug
 
 # ToolTip Support
 
-You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified and also you can set the `ToolTipShowDuration` property to define the animation speed.
+You can enable tooltip for TreeMap by setting [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ShowToolTip) to “True”. For modifying default appearance of tooltip, [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ToolTipTemplate) can be specified and also you can set the `ToolTipShowDuration` property to define the animation speed.
 
 
 {% highlight xaml %}
-
-
 
 <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
