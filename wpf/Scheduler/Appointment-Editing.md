@@ -69,8 +69,8 @@ For example, To use custom appointment editor window instead of default appointm
 
 * `Resource` - gets the resource of an appointment under which the appointment is located. 
 
-### Support to collapse the editor fields in appointment editor window
-You can programmatically visible or collapse the editors by setting `AppointmentEditorOptions` property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). The default value of `AppointmentEditorOptions` is `AppointmentEditorOptions.All` in `SchedulerAppointmentEditorWindow`.  The following code shows how to visible the editors by handling  [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
+## Visible/Collapse the built-in editors in appointment editor window
+You can programmatically visible or collapse the editors by setting `AppointmentEditorOptions` property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). The default value of `AppointmentEditorOptions` is `AppointmentEditorOptions.All` in `SchedulerAppointmentEditorWindow` and it will display the basic editors such as subject, location, start date, end date and Reminder editor. The following code shows how to collapse the editors by handling  [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,16 +78,15 @@ this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
 
 private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
 {
-    e.AppointmentEditorOptions = AppointmentEditorOptions.AllDay | AppointmentEditorOptions.Recurrence | AppointmentEditorOptions.Resource;
+    e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
 }
-
 {% endhighlight %}
 {% endtabs %}
 
 ![WPF Scheduler deleting recurrence appointment](Appointment-Editing_Images/Collapse_AppointmentEditors.png)
 
 Note>
-* By programmatically, you couldn't able to collapse the following fields are `Subject`, `Location`, `Start Hour` and `End Hour`.
+* The following properties will not programmatically to collapse from the basic editors such as `Subject`, `Location`, `Start Hour`and `End Hour`.
 
 ### AppointmentEditorClosing event
 When you close the appointment editor window after added or edited the schedule appointment, Scheduler notifies by [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
