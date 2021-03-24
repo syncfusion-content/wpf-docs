@@ -23,6 +23,35 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 {% endhighlight %}
 {% endtabs %}
 
+## Show/Hide the time indicator on appointment dragging
+You can show the time indicator on specific time when do drag the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
+
+{% tabs %}
+{% highlight c# %}
+Schedule.ViewType = SchedulerViewType.Week;
+Schedule.DragDropSettings.ShowTimeIndicator = true;
+{% endhighlight %}
+{% endtabs %}
+![ShowTimeIndicator in WPF Scheduler](DaysView_Images/adding-ShowTimeIndicator.png)
+
+N>
+* Applicable only for timeslot views and not applicable for Month and Timeline Month view. 
+* If collapsed the time ruler property label, the time indicator will not be shown.
+
+## Appointment dragging time indicator text formatting
+You can customize the format for the labels mentioning the time, by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
+
+{% tabs %}
+{% highlight c# %}
+Schedule.ViewType = SchedulerViewType.Week;
+Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
+{% endhighlight %}
+{% endtabs %}
+![TimeIndicatorFormat in WPF Scheduler](DaysView_Images/adding-TimeIndicatorFormat.png)
+
+N>NOTE
+* when drag the appointment,the time indicator overlaps with the time ruler label position in day, week and workweek views. 
+
 ## AppointmentDragOver event
 Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) when drag the appointment. [AppointmentDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
 
