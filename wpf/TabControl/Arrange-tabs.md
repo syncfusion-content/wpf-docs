@@ -40,7 +40,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ### Rearrange position of tab items with auto scrolling
 
-You can move tab items to position beyond the non-visual items by setting the `EnableAutoScroll` property as `true` and dragging the respective item over the overflow button (with three dots) or beyond the overflow button to auto scroll to the required position.
+You can easily move or rearrange tab items when there are several tab items by setting the `EnableAutoScroll` property as `true` and dragging the respective item over the overflow button (with three dots) or tab scroll buttons to autoscroll.
 The default value of `EnableAutoScroll` property is `false`.
 
 {% tabs %}
@@ -52,6 +52,8 @@ The default value of `EnableAutoScroll` property is `false`.
     <syncfusion:TabItemExt Header="tabItem 3" />
     <syncfusion:TabItemExt Header="tabItem 4" />
     <syncfusion:TabItemExt Header="tabItem 5" />
+    <syncfusion:TabItemExt Header="tabItem 6" />
+    <syncfusion:TabItemExt Header="tabItem 7" />
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
