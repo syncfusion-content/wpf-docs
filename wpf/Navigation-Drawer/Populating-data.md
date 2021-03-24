@@ -17,12 +17,12 @@ The WPF Navigation Drawer sidebar provides a built-in items support of type [Nav
 
 The below properties are available in the `NavigationItem` and can be used to define each item of the navigation menu.
 
-* **Header** — Represents the content of the `NavigationItem`.
-* **Icon** — Represents the icon in the `NavigationItem`.
-* **IconTemplate** — Used to display the custom icon in the `NavigationItem`. See also [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section.
-* **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
-* **DisplayMemberPath** — Used to display the content for sub items, while providing the `ItemsSource`. See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section. 
-* **ExpanderTemplate** — Used to provide a custom view for the expander icon in both collapsed and expanded state.
+* **Header** - Represents the content of the `NavigationItem.`
+* **Icon** - Represents the icon in the `NavigationItem.`
+* **IconTemplate** - Used to display the custom icon in the `NavigationItem.` Also see the [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section.
+* **IconMemberPath** - Used to display the icon for sub-items, while providing the `ItemsSource.`
+* **DisplayMemberPath** - Used to display the content for sub-items, while providing the `ItemsSource.` Also see the [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section.
+* **ExpanderTemplate** - Used to provide a custom view for the expander icon in both collapsed and expanded state.
 * **Command** — Executes when the item gets clicked. See also [Commands](https://help.syncfusion.com/wpf/navigation-drawer/commands-and-events) section. 
 * **CommandParameter** — [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
 * **IsChildSelected** — Gets whether any sub item is selected or not. 
@@ -30,7 +30,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 * **IsExpanded** — Gets whether the item is in expanded or collapsed state.
 * **IsSelected** — Gets whether the item is selected or not.
 * **SelectionBackground** — Used to customize the selection indicator in `NavigationItem`.
-* **Items** — Used to populate the sub items.
+* **Items** - Used to populate the sub-items.
 
 
 
@@ -239,7 +239,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 ### IconTemplate
 
-IconTemplate used to provide the custom icon for the NavigationItem.
+The IconTemplate is used to provide the custom icon for the NavigationItem.
 
 ### Model
 
@@ -816,6 +816,6 @@ This property used to change the horizontal position of sub items. Left margin o
 
 ## Popup support
 
-The sub-items will be displayed in the popup when the drawer menu is collapsed in compact and expanded display modes.
+The sub-items will be displayed in the popup when the drawer menu is collapsed in the compact and expanded display modes.
 
 ![Popup_Menu](Populating_Data_images/Popup_Menu.png)
