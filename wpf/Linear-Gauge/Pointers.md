@@ -606,3 +606,5 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 {% endhighlight %}
 
 {% endtabs %}
+
+![Pointer animation](Pointers_images/PointerAnimation.gif)
