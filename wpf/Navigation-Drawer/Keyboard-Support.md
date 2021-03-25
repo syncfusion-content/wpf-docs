@@ -11,10 +11,9 @@ documentation: ug
 
 This section describes the keyboard support in SfNavigationDrawer.
 
-* **Tab** - When pressing the tab key, Navigation will be started from the toggle button in the drawer.   
+* **Tab** - This key can be used to navigate between the toggle button, navigation items and footer items and the main content view.   
 * **Up** - This key is used to Navigate to the previous NavigationItem.
 * **Down** - This key is used to Navigate to the next NavigationItem. 
-* **Enter** - This key is used to select the currently focused item.
-* **Space** - This key is also used to select the currently focused item.
+* **Enter and Space** - This key is used to select the currently focused item.
 
 ![Keyboard_Support](Keyboard_Support_image/Keyboard_Support.gif)
