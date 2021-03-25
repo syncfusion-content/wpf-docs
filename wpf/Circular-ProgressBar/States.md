@@ -27,3 +27,16 @@ grid.Children.Add(Circular);
 {% endhighlight %}
 {% endtabs %}
 ![InDeterminate image](States_images/InDeterminate.png)
+
+## Buffer
+Buffer is used as a secondary progress indicator when the primary task depends on the secondary task. This will allow users to visualize both primary and secondary tasks progress simultaneously. The `SecondaryProgress` property can be set to visualize secondary progress and  separate color for the secondary progress can bet set by `SecondaryProgressColor` property.
+{% tabs %}
+{% highlight XAML %}      
+<Syncfusion:SfCircularProgressBar Progress="65" SecondaryProgress="75"/>      
+{% endhighlight %}
+{% highlight C# %}
+SfCircularProgressBar Circular = new SfCircularProgressBar { Progress = 65, SecondaryProgress = 75 };
+grid.Children.Add(Circular);      
+{% endhighlight %}
+{% endtabs %}
+![Buffer image](States_images/BufferState.png)
