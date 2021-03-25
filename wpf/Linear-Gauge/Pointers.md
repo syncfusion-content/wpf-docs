@@ -606,5 +606,3 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 {% endhighlight %}
 
 {% endtabs %}
-
-![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)
