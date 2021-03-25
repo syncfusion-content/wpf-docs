@@ -85,19 +85,23 @@ You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf
 
 {% highlight xaml %} 
 
-        <inputLayout:SfTextInputLayout Hint="Name">
-            <ComboBox x:Name="comboBox" ItemsSource="{Binding MyItems}"/>
+        <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ComboBox x:Name="comboBox" Width="150" Height="10"  ItemsSource="{Binding Countries}"/>
         </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
-        ComboBox comboBox = new ComboBox();
-        comboBox.ItemsSource = MyItems;
-        sfTextInputLayout.InputView = comboBox;
-        this.Content = sfTextInputLayout;
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            ComboBox comboBox = new ComboBox();
+            comboBox.Width = 150;
+            comboBox.Height = 10;
+            comboBox.ItemsSource = viewModel.Countries;
+            sfTextInputLayout.InputView = comboBox;
+            this.Content = sfTextInputLayout;
 
 {% endhighlight %}
 
@@ -113,19 +117,23 @@ You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overvie
 
 {% highlight xaml %} 
 
-        <inputLayout:SfTextInputLayout Hint="Name">
-            <inputLayout:ComboBoxAdv x:Name="comboBox" ItemsSource="{Binding MyItems}"/>
+        <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:ComboBoxAdv x:Name="comboBox" ItemsSource="{Binding Countries}" Width="150" Height="10"/>
         </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
-        ComboBoxAdv comboBox = new ComboBoxAdv();
-        comboBox.ItemsSource = MyItems;
-        sfTextInputLayout.InputView = comboBox;
-        this.Content = sfTextInputLayout;
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            ComboBoxAdv comboBox = new ComboBoxAdv();
+            comboBox.Width = 150;
+            comboBox.Height = 10;
+            comboBox.ItemsSource = viewModel.Countries;
+            sfTextInputLayout.InputView = comboBox;
+            this.Content = sfTextInputLayout;
 
 {% endhighlight %}
 
@@ -141,21 +149,30 @@ You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/ov
 
 {% highlight xaml %} 
 
-        <inputLayout:SfTextInputLayout Hint="Name">
-            <inputLayout:SfTextBoxExt Text="SfTextInputLayout"/>
+       <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:SfTextBoxExt AutoCompleteMode="Suggest" Width="250" 
+                                      AutoCompleteSource="{Binding Countries}">
+
+            </inputLayout:SfTextBoxExt>
         </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-        SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
-        SfTextBoxExt sfTextBoxExt = new SfTextBoxExt() { Text = "SfTextInputLayout" };
-        sfTextInputLayout.InputView = sfTextBoxExt;
-        this.Content = sfTextInputLayout;
+       SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+
+            SfTextBoxExt sfTextBoxExt = new SfTextBoxExt();
+            sfTextBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
+            sfTextBoxExt.Width = 250;
+            sfTextBoxExt.AutoCompleteSource = viewModel.Countries;
+            sfTextInputLayout.InputView = sfTextBoxExt;
+            this.Content = sfTextInputLayout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Image for SfTextBoxExt_Image](Images/ComboBoxAdv_Image.PNG)
+![Image for SfTextBoxExt_Image](Images/SfTextboxExt.PNG)
