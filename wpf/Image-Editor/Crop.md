@@ -13,9 +13,9 @@ An image can be cropped using toolbar and programmatically.
 
 ## Toolbar cropping
 
-To crop an image, click the Crop icon in the toolbar. Cropping handles will be added on the image. You can resize the handles to crop the required portion.
+To crop an image, click the `Crop` icon in the toolbar. Cropping handles will be added on the image. You can resize the handles to crop the required portion.
 
-Upon clicking the Crop icon, sub toolbar will be displayed below the main toolbar. After selecting the cropping portion, click OK in the sub toolbar to crop that selected portion.
+Upon clicking the `Crop` icon, sub toolbar will be displayed below the main toolbar. After selecting the cropping portion, click `OK` in the sub toolbar to crop that selected portion.
 
 The sub toolbar contains the following the icons:
 
@@ -96,7 +96,7 @@ editor.ToggleCropping(rect);
 
 ### Circle cropping
 
-Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) parameter as shown in the below code sample to enable the circle or elliptical format.
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) optional parameter is true as shown in the below code sample to enable the circle or elliptical format.
 
 {% tabs %} 
 
