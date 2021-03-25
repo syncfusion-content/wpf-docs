@@ -26,4 +26,4 @@ Refer to the below links to apply themes for the SfSpreadsheet,
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
  
-  ![Setting theme to WPF SfSpreadsheet](Getting-Started_images/Theme.png)
+  ![WPF Spreadsheet with Office2019Black theme](Getting-Started_images/WPF-Spreadsheet-Office2019Black.png)
