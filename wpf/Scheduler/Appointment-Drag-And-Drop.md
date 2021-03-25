@@ -37,7 +37,7 @@ Schedule.DragDropSettings.ShowTimeIndicator = true;
 
 N>
 * Not applicable for Month and Timeline Month views. 
-* If collapsed the [time ruler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property label, the time indicator will not be shown.
+* If collapsed the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property label, the time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
 You can customize the format for the labels mentioning the time, by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
