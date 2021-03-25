@@ -1224,10 +1224,10 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer EnableAnimation="True" PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
+    <gauge:CircularPointer EnableAnimation="True" PointerType="NeedlePointer" AnimationDuration="500" NeedleLengthFactor="0.4" Value="60"
     NeedlePointerType="Triangle" KnobStroke="#39B2C6" PointerCapDiameter="20"/>
 
-    <gauge:CircularPointer PointerType="RangePointer"  Value="100" RangePointerStroke="#39B2C6"/>
+    <gauge:CircularPointer PointerType="RangePointer" AnimationDuration="1000" Value="100" RangePointerStroke="#39B2C6"/>
 
     </gauge:CircularScale.Pointers>
 
@@ -1255,6 +1255,8 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
             circularPointer.NeedleLengthFactor = 0.4;
 
+            circularPointer.AnimationDuration = 500;
+
             circularPointer.Value = 60;
 
             circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
@@ -1272,6 +1274,8 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
             circularPointer1.RangePointerStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
 
             circularPointer1.EnableAnimation = true;
+
+            circularPointer1.AnimationDuration = 1000;
 
             circularPointer1.Value = 100;
 

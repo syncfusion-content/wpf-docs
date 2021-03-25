@@ -525,13 +525,13 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 ## Setting animation for pointer
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) property is a Boolean property that enables or disables the animation of the pointers in circular gauge and defining the corresponding animation speed with `AnimationDuration` property.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) a bool property used to enable or disable the animation of the pointers in linear gauge and the animation speed can be controlled with `AnimationDuration` property.
 
 {% tabs %}
 
 {% highlight xml %}
 
-    <gauge:SfLinearGauge>
+        <gauge:SfLinearGauge>
 
             <gauge:SfLinearGauge.MainScale>
 
@@ -541,10 +541,10 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
                     <gauge:LinearScale.Pointers>
 
-                        <gauge:LinearPointer EnableAnimation="True" PointerType="SymbolPointer" Value="60"
+                        <gauge:LinearPointer EnableAnimation="True" AnimationDuration="500" PointerType="SymbolPointer" Value="60"
                         SymbolPointerHeight="15" SymbolPointerWidth="15" SymbolPointerPosition="Above" SymbolPointerStroke="#5B86E5"/>
 
-                        <gauge:LinearPointer EnableAnimation="True" PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC" BarPointerStrokeThickness="10"/>
+                        <gauge:LinearPointer EnableAnimation="True" AnimationDuration="1000" PointerType="BarPointer" Value="75" BarPointerStroke="#36D1DC" BarPointerStrokeThickness="10"/>
 
                     </gauge:LinearScale.Pointers>
 
@@ -578,7 +578,8 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
                 Value = 75,
                 BarPointerStroke = new SolidColorBrush(Color.FromRgb(54, 209, 220)),
                 BarPointerStrokeThickness = 10,
-                EnableAnimation = true
+                EnableAnimation = true,
+                AnimationDuration = 1000
             };
 
             linearScale.Pointers.Add(linearPointer1);
@@ -592,7 +593,8 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
                 SymbolPointerWidth = 15,
                 SymbolPointerPosition = LinearSymbolPointersPosition.Above,
                 SymbolPointerStroke = new SolidColorBrush(Color.FromRgb(91, 134, 229)),
-                EnableAnimation = true
+                EnableAnimation = true,
+                AnimationDuration = 500
             };
 
             linearScale.Pointers.Add(linearPointer);
