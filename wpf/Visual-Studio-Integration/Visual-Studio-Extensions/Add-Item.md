@@ -12,11 +12,11 @@ documentation: ug
 
 Syncfusion provides the Visual Studio Item Templates support to add Syncfusion WPF Window into the WPF application with Syncfusion WPF references. Syncfusion WPF window provides an option to customize the window title bar quickly and comes with various built-in themes to present an appealing User Interface.
 
-I> The Syncfusion WPF item templates are available from v19.1.0.xx. 
+I> The Syncfusion WPF item templates are available from v19.1.0.54. 
 
 The following steps help you to add the Syncfusion WPF window in the Visual Studio WPF application. 
 
-> Before using the Syncfusion WPF Item Template, check whether the WPF **Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If It is not installed, then install the [Syncfusion WPF Extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation).
+> Before using the Syncfusion WPF Item Template, check whether the **WPF Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If It is not installed, then install the [Syncfusion WPF Extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation).
 
 1. Open a new or existing WPF application.
 2. Right-click on the WPF application from the Solution Explorer. Select the Add Syncfusion Item… option.
