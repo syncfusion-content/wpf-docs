@@ -279,3 +279,25 @@ dateTimeEdit.IsButtonPopUpEnabled = false;
 ![DateTimeEdit disables the dropdown date time selector](Dropdown-Popup_images/IsButtonPopUpEnabled.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
+
+## Hide Today button
+
+Today button in the dropdown of DateTimeEdit can collapsed by setting the visibility by retrieving it using code in loaded event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e)
+        {
+            Button button = dateTimeEdit.Template.FindName("todayButton", dateTimeEdit) as Button;
+            if (button != null)
+            {
+                button.Visibility = Visibility.Collapsed;
+            }
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Hide Today Button of DateTimeEdit](Dropdown-Popup_images/HideTodayButton.png)

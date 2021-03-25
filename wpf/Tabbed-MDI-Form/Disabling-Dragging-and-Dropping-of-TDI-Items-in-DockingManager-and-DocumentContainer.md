@@ -9,7 +9,7 @@ documentation: ug
 
 # Disabling Drag-Drop of TDI Items in DockingManager & DocumentContainer
 
-By default, TDI items in DockingManager and DocumentContainer are can be dragged. The IsTDIDragDropEnabled property is available to disable the dragging and dropping of TDI items, as demonstrated in the following code:
+ You can disable the dragging and dropping of TDI items in DocumentContainer and DockingManager by setting the [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property value as `false`. By default, [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property value is `true`.
 
 {% tabs %}
 {% highlight xaml %}        
@@ -41,6 +41,35 @@ This property is also applicable to DocumentContainer, as shown in the following
 documentcontainer1.IsTDIDragDropEnabled=false;
 {% endhighlight %}
 {% endtabs %}
+
+## Rearrange position of document items with auto scrolling
+You can easily move or rearrange document items when there are several document items by setting the `EnableAutoScroll` property value as `true`. Drag the required item over the overflow button (with three dots) or tab scroll buttons to autoscroll.
+The default value of `EnableAutoScroll` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DocumentContainer x:Name="documentContainer" EnableAutoScroll="True" Mode="TDI" >
+    <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Document1" />
+    <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Document2" />
+    <ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Document3" />
+    <ContentControl x:Name="Content4" syncfusion:DockingManager.Header="Document4" />
+    <ContentControl x:Name="Content5" syncfusion:DockingManager.Header="Document5" />
+    <ContentControl x:Name="Content6" syncfusion:DockingManager.Header="Document6" />
+    <ContentControl x:Name="Content7" syncfusion:DockingManager.Header="Document7" />
+</syncfusion:DocumentContainer>
+
+{% endhighlight %}
+{% highlight C# %}
+
+DocumentContainer documentContainer = new DocumentContainer();
+documentContainer.EnableAutoScroll = true;
+documentContainer.Mode = DocumentContainerMode.TDI;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Document items are rearranged by drag and drop with AutoScroll](Creating-Tab-Groups_images/EnableAutoScroll.gif)
 
 ## TDI item's order changed notification in DocumentContainer
 

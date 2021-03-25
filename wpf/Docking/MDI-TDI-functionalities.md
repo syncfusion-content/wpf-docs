@@ -509,6 +509,36 @@ SyncDockingManager.IsTDIDragDropEnabled = true;
 
 {% endtabs %}
 
+## Rearrange position of document items with auto scrolling
+
+You can easily move or rearrange TDI document items when there are several document items by setting the `EnableAutoScroll` property value as `true`. Drag the required document item to overflow button (with three dots) or tab scroll buttons to autoscroll.
+The default value of `EnableAutoScroll` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" EnableAutoScroll="True" UseDocumentContainer="True" >
+    <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Document3" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content4" syncfusion:DockingManager.Header="Document4" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content5" syncfusion:DockingManager.Header="Document5" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content6" syncfusion:DockingManager.Header="Document6" syncfusion:DockingManager.State="Document" />
+    <ContentControl x:Name="Content7" syncfusion:DockingManager.Header="Document7" syncfusion:DockingManager.State="Document" />
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+DockingManager dockingManager = new DockingManager();
+dockingManager.UseDocumentContainer = true;
+dockingManager.EnableAutoScroll = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![First Document is arranged at zeroth based on the TDIIndex value](MDI_TDIfunctionalities_images/AutoScrollTabItems.gif)
+
 ## TDI window's order changed notification
 
 You will be notified when the TDI item's order is changed by using the [DocumentTabOrderChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_DocumentTabOrderChanged) event. You can get the order changed TDI window with its old and new index values by using the [SourceTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabItem), [OldIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_OldIndex) and [NewIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_NewIndex) properties. You can also get old and new tab group of the order changed item by using the the [SourceTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_SourceTabGroup) and [TargetTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentTabOrderChangedEventArgs.html#Syncfusion_Windows_Tools_Controls_DocumentTabOrderChangedEventArgs_TargetTabGroup) properties. 

@@ -457,7 +457,7 @@ DockingManager.SetCanAutoHide(ToolBox, true);
 
 ## Change AutoHide behavior like Visual Studio 2013
 
-AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by click on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its [IsVs2013SidePanelEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2013SidePanelEnable) property to `True` and [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver) property to `False`. 
+AutoHide panel open and close behavior can be changed as Visual Studio 2013. SidePanel can be opened by clicking on SideTabItem and already opened side panel can be closed by again click on the same item.  This behavior of DockingManager can be enabled by setting its [IsVs2013SidePanelEnable](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2013SidePanelEnable) property to `True` and [IsAnimationEnabledOnMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsAnimationEnabledOnMouseOver) property to `False`. 
 
 {% tabs %}
 
@@ -652,3 +652,8 @@ DockingManager.UnPinAllAutoHide();
 
 {% endtabs %}
 
+## Changing dock state using context menu
+
+You can change the dock state of AutoHidden window by opening the context menu and selecting the required state in context menu items. The items in context menu is enabled and disabled based on [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanDockProperty), [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanFloatProperty) and [CanDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanDocumentProperty) properties value.
+
+![Change dock state of AutoHide window by context menu item click](Auto-Hide-Window_images/AutoHide-Window-Dock-State-Change.png)

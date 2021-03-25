@@ -430,7 +430,7 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 
 ## Header Selection and Resize
 
- * You can select the individual lane header by click on the header twice. For first click, the respective lane can select. 
+ * You can select the individual lane header by clicking on the header twice. For first click, the respective lane can select. 
 
  * You can support to resize the individual lane  header. While resizing lane, it has maintain 20px distances from the Lane children.
  * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
