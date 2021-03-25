@@ -40,8 +40,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 N> 
 * The Scheduler supports functionality to arrange appointments according to their start time and duration for normal appointments in day, week and work week views.
-* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on start date time of appointment, followed by time duration of appointment, followed by IsSpanned, followed by IsAllDay and normal appointments.
-* Agenda view doesn't support exact time rendering since it uses GridView to display appointments.
+* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on start date time of appointment, followed by time duration of appointment, followed by `IsSpanned`, followed by `IsAllDay` and normal appointments.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/adding-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
@@ -204,7 +203,7 @@ Schedule.ItemsSource = Meetings;
 ![Spanned Appointment in  WPF Scheduler](appointments_images/adding-spannedappointments.png)
 
 N> 
-* In all day panel of day, week and work week views, Span appointments are ordered and rendered based on start date time of appointment, followed by time duration of appointment and followed by IsSpanned appointments.
+* In all day panel of day, week and work week views, Span appointments are ordered and rendered based on start date time of appointment, followed by time duration of appointment and followed by `IsSpanned `appointments.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/spanned-appointment-scheduler-wpf)
 
@@ -243,7 +242,7 @@ N>
 
 * Appointment that lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting IsAllDay property. For example 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 
-* In all day panel of day, week and work week views, AllDay appointments are ordered and rendered based on start date time of appointment,followed by time duration of appointment and followed by IsAllDay appointments.
+* In all day panel of day, week and work week views, AllDay appointments are ordered and rendered based on start date time of appointment,followed by time duration of appointment and followed by `IsAllDay` appointments.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/all-day-appointments-scheduler-xamarin)
 
