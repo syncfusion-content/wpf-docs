@@ -78,13 +78,25 @@ You can upgrade the Syncfusion WPF toolbox for .NET 5.O control with NuGet packa
 	
 	![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_Extract.png)
 	
-	**Step 2:** 
+**Step 2:** 
 	
 	1. Open <b>"Syncfusion Toolbox for WPF.config"</b> file from the following location.
 	
 	<b>Location:</b> "C:\Program Files (x86)\NuGet\Config\Syncfusion Toolbox for WPF.config"
 	
 	![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox.png)
+
+    Or you can create this file in the same location by using the XML format given below
+    
+    {% tabs %}
+    {% highlight XML %}
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <fallbackPackageFolders>
+        <add key="Syncfusion Toolbox Local NuGet Packages {version}" value="F:\Syncfusion" />
+      </fallbackPackageFolders>
+    </configuration>
+    {% endhighlight %}
 	
 	2. Update extracted Syncfusion NuGet package path in <b>value</b> attribute.
 	
