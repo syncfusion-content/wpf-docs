@@ -175,4 +175,4 @@ You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/ov
 
 {% endtabs %}
 
-![Image for Autocomplete (SfTextBoxExt)](Images/SfTextboxExt.PNG)
+![Image for Autocomplete](Images/SfTextboxExt.PNG)
