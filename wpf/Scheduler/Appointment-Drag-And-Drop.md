@@ -24,7 +24,7 @@ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFla
 {% endtabs %}
 
 ## Show/Hide the time indicator on appointment dragging
-You can show the time indicator on specific time when do drag the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
+You can show or hide the time indicator on specific time when do drag the appointment by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_ShowTimeIndicator) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) is set to true. 
 
 {% tabs %}
 {% highlight c# %}
@@ -40,7 +40,7 @@ N>
 * If collapsed the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property label, the time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
-You can customize the format for the labels mentioning the time, by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
+You can customize the format for the appointment dragging time indicator format, by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
 
 {% tabs %}
 {% highlight c# %}

@@ -83,7 +83,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 {% endhighlight %}
 {% endtabs %}
 
-![collapse-in-build-editors-of-appointment-editor-window](Appointment-Editing_Images/collapse-in-build-editors-of-appointment-editor-window.png)
+![collapse-build-in-editors-of-appointment-editor-window-in-wpf-scheduler](Appointment-Editing_Images/collapse-build-in-editors-of-appointment-editor-window.png)
 
 N>
 * The basic editors such that `Subject`, `Location`, `Start Hour` and `End Hour` of scheduler appointment editor will not be collapsed.

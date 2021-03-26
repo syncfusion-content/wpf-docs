@@ -20,9 +20,10 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/context-menu-sup
 
 You can set the context menu for time slot and month cells by using the [SfScheduler.CellContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellContextMenu) property. The `CellContextMenu` will appear only when the time slot or month cells are right-clicked.
 
->**NOTE**
-The menu items which bind the [SchedulerCommands.Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Edit) and [SchedulerCommands.Delete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Delete) built-in commands will be disabled in the `CellContextMenu`.
-The `DataContext` for the context menu is [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html) `CommandParameter` of menu item should bound to context menu's data context when using the commands in [SchedulerCommands](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html).
+N>
+* The menu items which bind the [SchedulerCommands.Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Edit) and [SchedulerCommands.Delete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Delete) built-in commands will be disabled in the `CellContextMenu`.
+* The `DataContext` for the context menu is [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html) `CommandParameter` of menu item should bound to context menu's data context when using the commands in [SchedulerCommands](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html).
+* By default, hold on any timeslot or month cell, The cell context menu will be opened, The appointment context menu will be open on holding if appointment drag and drop disabled by using the property [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag).
 
 {% tabs %}
 {% highlight xaml %}
