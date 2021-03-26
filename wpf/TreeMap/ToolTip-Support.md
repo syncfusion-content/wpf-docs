@@ -1,20 +1,18 @@
 ---
 layout: post
 title: ToolTip Support | TreeMap | wpf | Syncfusion
-description: tooltip support
+description: Tooltip support with its customization such as tooltip template and tooltip show duration of syncfusion tree map control.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# ToolTip Support
+# ToolTip Support of TreeMap control
 
-You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified.
+You can enable tooltip for TreeMap by setting [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ShowToolTip) to “True”. For modifying default appearance of tooltip, [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ToolTipTemplate) can be specified and also you can set the `ToolTipShowDuration` property to define the animation speed.
 
 
 {% highlight xaml %}
-
-
 
 <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -108,7 +106,7 @@ The following screenshot shows a tree map with a tool tip.
 
 
 
-![](ToolTip-Support_images/ToolTip-Support_img1.png)
+![Tree map with tooltip](ToolTip-Support_images/ToolTip-Support_img1.png)
 
 
 
