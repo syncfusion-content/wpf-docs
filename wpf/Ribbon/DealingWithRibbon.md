@@ -412,8 +412,6 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
 The RibbonItemHost control allows to add any kind of custom control, such as combo box, text box, radio button, check box, and more to be displayed on the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html). The RibbonItemHost contains a ContentTemplate property of DataTemplate type which enables us to define any custom control.
 
-* ContentTemplate - Gets or sets the template that used to display the content of the RibbonItemHost.
-
 In the below example, MS CheckBox is set to the ContentTemplate property of the RibbonItemHost within the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). 
 
 {% tabs %}
@@ -668,9 +666,9 @@ public class ViewModel : NotificationObject
 
 The custom item present in the RibbonBar can be added to the [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html) using ribbon context menu or through QAT customization dialog. In the QAT customization dialog, all the ribbon items are displayed using its Label and Icon properties. As like other ribbon items, the RibbonItemHost also allows us to set the label and icon using its Label and IconTemplate properties respectively.
 
-* Label - Gets or sets the string that used to display the text of RibbonItemHost inside the QAT customization dialog.
+* Label - Used to display the text of RibbonItemHost inside the QAT customization dialog.
 
-* IconTemplate - Gets or sets the template that used to display the icon of RibbonItemHost inside the QAT customization dialog.
+* IconTemplate - Gets or sets the template that is used to display the icon of RibbonItemHost inside the QAT customization dialog.
 
 In the below example, the Label and IconTemplate are set for the RibbonItemHost controls which will be used when the items are displayed in the QAT customization dialog. 
 
