@@ -1042,6 +1042,7 @@ public class ViewModel : NotificationObject
 
 ![Custom items in RibbonBar](RibbonCustomItem_images/CustomItemsInQAT.png)
 
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Adding-custom-items-to-the-ribbon)
 
 ## Grouping RibbonTabs using ContextTabGroups
 
