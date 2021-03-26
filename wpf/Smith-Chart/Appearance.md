@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance | SfSmithChart | Wpf | Syncfusion
-description: appearance
+description: Appearance and its customization such as palette and chart area properties of syncfusion smith chart control.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Appearance
+# Appearance and its customization of smith chart
 
 ## SmithChart Palette
 
@@ -35,7 +35,7 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Smith chart palette](Appearance_images/Appearance_img1.png)
 
 **Series Palette**
 
@@ -66,7 +66,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![Series palette](Appearance_images/Appearance_img2.png)
 
 ## Chart Area Customization
 
@@ -95,7 +95,7 @@ chart.ChartAreaBorderThickness = new Thickness(2);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![Area customization](Appearance_images/Appearance_img3.png)
 
 ## Circle Radius
 
@@ -123,4 +123,37 @@ this.Grid1.Children.Add(chart);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![Circle radius](Appearance_images/Appearance_img4.png)
+
+## Get smith chart properties
+
+### Area bounds
+
+You can get the area bounds of the smith chart by using the `AreaBounds` property in `ChartAreaInfo`.
+
+{% highlight C# %}
+
+Rect areaBounds = smithChart.ChartAreaInfo.AreaBounds;
+
+{% endhighlight %}
+
+### Center point
+
+You can get the center point (X and Y) of the smith chart by using the `CenterPoint` property in the `ChartAreaInfo`.
+
+{% highlight C# %}
+
+Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
+
+{% endhighlight %}
+
+### Radius
+
+You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`
+Code.
+
+{% highlight C# %}
+
+double radiuss = smithChart.ChartAreaInfo.Radius;
+
+{% endhighlight %}
