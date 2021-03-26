@@ -525,7 +525,7 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 ## Setting animation for pointer
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) a bool property used to enable or disable the animation of the pointers in linear gauge and the animation speed can be controlled with `AnimationDuration` property.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) is a Boolean property, which is used to enable or disable the animation of the pointers in linear gauge and the animation speed can be controlled with `AnimationDuration` property.
 
 {% tabs %}
 

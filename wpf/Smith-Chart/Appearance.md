@@ -150,7 +150,7 @@ Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
 ### Radius
 
 You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`
-Code
+Code.
 
 {% highlight C# %}
 
