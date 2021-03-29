@@ -53,14 +53,17 @@ N> You can also configure Syncfusion controls from a lower version Framework ass
 ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
    
-N> * You must reset the toolbox, when the installed controls are not reflected properly in the Toolbox. * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}.
+N> * You must reset the toolbox, when the installed controls are not reflected properly in the Toolbox. 
+* This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}. 
 
    
 ## Configuring toolbox for WPF .NET 5.0 projects
 
 From 2021 Volume 1, Syncfusion started providing toolbox support for WPF .NET 5.0 framework in Visual Studio 2019. Syncfusion controls will be automatically configured in the Visual Studio 2019 toolbox for WPF .NET 5.0 project, after installing the Syncfusion WPF installer.
 
-N> * Syncfusion included this toolbox support for .NET 5.0 WPF platform from 2021 Volume 1 release version v19.1.0.54 only. * After installing the WPF setup, if the project created with TargetFramework .NET Core 3.1 and changed to .NET 5.0, you need to restart Visual Studio to get the Syncfusion controls in Visual Studio Toolbox.* Visual Studio 2019 16.7 Preview 2 and later is required
+N> * Syncfusion included this toolbox support for .NET 5.0 WPF platform from 2021 Volume 1 release version v19.1.0.54 only. 
+* After installing the WPF setup, if the project created with TargetFramework .NET Core 3.1 and changed to .NET 5.0, you need to restart Visual Studio to get the Syncfusion controls in Visual Studio Toolbox. 
+* Visual Studio 2019 16.7 Preview 2 and later is required
 
 ### Upgrading the Syncfusion WPF toolbox .NET 5.0 controls without installing the build
 
