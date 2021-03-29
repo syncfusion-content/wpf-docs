@@ -17,7 +17,7 @@ The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
  <syncfusion:SfScheduler x:Name="Schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding scheduleAppointmentCollection}">
- </syncfusion:SfScheduler
+ </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
@@ -38,7 +38,12 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![ScheduleAppointment in  WPF Scheduler](appointments_images/adding-appointments.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/adding-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
+N> 
+* The Scheduler supports the functionality that arranges the appointments based on their start time and duration for the normal appointments in a day, week and work week views.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` appointments respectively.
+* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/adding-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
 ## Scheduler item source and Mapping
 The `Scheduler` supports to bind any collection that implements the IEnumerable interface to populate appointments. You can map properties in business object to [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property. The following table that property shows mapping property details to `ScheduleAppointment`.
@@ -198,7 +203,10 @@ Schedule.ItemsSource = Meetings;
 
 ![Spanned Appointment in  WPF Scheduler](appointments_images/adding-spannedappointments.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/spanned-appointment-scheduler-wpf)
+N> 
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/spanned-appointment-scheduler-wpf)
 
 ## All day appointments
 The all-Day appointment is an appointment that is scheduled for a whole day. It can be set by using the [IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) property in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
@@ -231,9 +239,13 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 ![AllDay Appointment in  WPF Scheduler](appointments_images/adding-alldayappointments.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/all-day-appointments-scheduler-xamarin)
+N> 
 
-N>Appointment that lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting IsAllDay property. For example 06/29/2020 12:00AM to 06/30/2020 12:00AM.
+* Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the `IsAllDay` property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
+
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/all-day-appointments-scheduler-xamarin)
 
 ## Recurrence Appointment
 The recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule) property in [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
