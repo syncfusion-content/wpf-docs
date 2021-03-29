@@ -23,6 +23,7 @@ Use the following steps to adds the Syncfusion WPF controls through the Syncfusi
 To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
    
 ![Add On and Utilities](Toolbox-Configuration_images/Toolbox-Configuration_img1.png)
+![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_update.png)
    
 **Option 2:**  
 Click **Syncfusion menu** and choose **Essential Studio for WPF > Toolbox Configuration...** in **Visual Studio**
