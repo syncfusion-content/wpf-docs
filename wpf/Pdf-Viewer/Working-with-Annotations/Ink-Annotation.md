@@ -230,6 +230,8 @@ The Eraser tool in the toolbar helps you to erase (remove) the unwanted parts in
 
 ![Erase ink annotation](Annotation-images\Ink-Eraser.png)
 
+After the tool is enabled, you can erase the unwanted parts by holding the mouse button down and drag over the parts of an ink annotation.
+
 The Eraser tool can also be enabled programmatically using the [AnnotationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_AnnotationMode) property of the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) and [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Please refer to the following code.
 
 {% tabs %}
