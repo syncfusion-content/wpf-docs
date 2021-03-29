@@ -15,6 +15,12 @@ Input views can be added to the text input layout control by setting the [InputV
 
 * PasswordBox
 
+* ComboBox
+
+* [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview)
+
+* [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview)
+
 ## TextBox
 
 You can enter the text as an input by adding the [TextBox](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/textbox-overview?view=netframeworkdesktop-4.8) in the [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
@@ -70,3 +76,103 @@ You can enter the password characters as an input by adding the [PasswordBox](ht
 {% endtabs %}
 
 ![Image for PasswordBox](Images/PasswordBox_Img.PNG)
+
+## ComboBox
+
+You can use the [`ComboBox`](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/combobox?view=netframeworkdesktop-4.8) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ComboBox x:Name="comboBox" Width="150" Height="10"  ItemsSource="{Binding Countries}"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            ComboBox comboBox = new ComboBox();
+            comboBox.Width = 150;
+            comboBox.Height = 10;
+            comboBox.ItemsSource = viewModel.Countries;
+            sfTextInputLayout.InputView = comboBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for ComboBox](Images/ComboBox_Image.PNG)
+
+## ComboBoxAdv
+
+You can use the [`ComboBoxAdv`](https://help.syncfusion.com/wpf/combobox/overview) control as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:ComboBoxAdv x:Name="comboBox" ItemsSource="{Binding Countries}" Width="150" Height="10"/>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+            ComboBoxAdv comboBox = new ComboBoxAdv();
+            comboBox.Width = 150;
+            comboBox.Height = 10;
+            comboBox.ItemsSource = viewModel.Countries;
+            sfTextInputLayout.InputView = comboBox;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for ComboBoxAdv](Images/ComboBoxAdv_Image.PNG)
+
+## Autocomplete (SfTextBoxExt)
+
+You can use the [`SfTextBoxExt`](https://help.syncfusion.com/wpf/autocomplete/overview) control to enter the text as an input in the [`SfTextInputLayout`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+       <inputLayout:SfTextInputLayout Hint="Name" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <inputLayout:SfTextBoxExt AutoCompleteMode="Suggest" Width="250" 
+                                      AutoCompleteSource="{Binding Countries}">
+
+            </inputLayout:SfTextBoxExt>
+        </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+       SfTextInputLayout sfTextInputLayout = new SfTextInputLayout() { Hint = "Name" };
+            sfTextInputLayout.HorizontalAlignment = HorizontalAlignment.Center;
+            sfTextInputLayout.VerticalAlignment = VerticalAlignment.Center;
+
+            SfTextBoxExt sfTextBoxExt = new SfTextBoxExt();
+            sfTextBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
+            sfTextBoxExt.Width = 250;
+            sfTextBoxExt.AutoCompleteSource = viewModel.Countries;
+            sfTextInputLayout.InputView = sfTextBoxExt;
+            this.Content = sfTextInputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image for Autocomplete](Images/SfTextboxExt.PNG)
