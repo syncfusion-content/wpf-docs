@@ -16,7 +16,7 @@ I> The Syncfusion WPF item templates are available from v19.1.0.54.
 
 The following steps help you to add the Syncfusion WPF window in the Visual Studio WPF application. 
 
-> Before using the Syncfusion WPF Item Template, check whether the **WPF Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If It is not installed, then install the [Syncfusion WPF Extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation).
+> Before using the Syncfusion WPF Item Template, check whether the **WPF Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools > Extensions and Updates > Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions > Manage Extensions > Installed. If It is not installed, then install the [Syncfusion WPF Extensions](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/download-and-installation).
 
 1. Open a new or existing WPF application.
 2. Right-click on the WPF application from the Solution Explorer. Select the Add Syncfusion Item… option.
@@ -47,7 +47,7 @@ The Syncfusion Item Template can also be added from the Visual Studio Add New It
 
       **Option 1:**
 
-      Click Extensions ->Syncfusion Menu and choose Essential Studio for WPF > Add ChromelessWindow… or any other window in Visual Studio.    
+      Click Extensions >Syncfusion Menu and choose Essential Studio for WPF > Add ChromelessWindow… or any other window in Visual Studio.    
 
       ![Syncfusion Menu](Add-Item-images\SyncfusionMenu.png)
 
@@ -59,7 +59,7 @@ The Syncfusion Item Template can also be added from the Visual Studio Add New It
 
       ![Add New Item Dialog](Add-Item-images\AddNewMenu.png)
 
-      > The Syncfusion WPF Item Templates are available under the Syncfusion -> WPF tab. It is available for both C# Items and VB Items.
+      > The Syncfusion WPF Item Templates are available under the Syncfusion > WPF tab. It is available for both C# Items and VB Items.
 
       ![Add New Item Dialog](Add-Item-images\AddNewItemDialog.png)
 
