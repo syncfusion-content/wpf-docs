@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF DockingManager
 
-This section explains how to implement a similar UI as Visual Studio by using the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in your project. 
+This section explains how to implement a similar UI as Visual Studio by using the [WPF DockingManager](https://www.syncfusion.com/wpf-controls/docking) in your project. 
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
