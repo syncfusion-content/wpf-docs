@@ -66,23 +66,23 @@ N> * Syncfusion included this toolbox support for .NET 5.0 WPF platform from 202
 
 You can upgrade the Syncfusion WPF toolbox for .NET 5.O control with NuGet packages downloaded from [nuget.org](https://www.nuget.org/). Download ["Syncfusion.UI.WPF.NET"](https://www.nuget.org/packages/Syncfusion.UI.WPF.NET/) package from nuget.org in your machine.
 
-    <b>Step 1:</b>
+    **Step 1:**
 	
 	Extract "Syncfusion.UI.WPF.NET" package by using the below commands.
 	
 	Open Command prompt from nuget.exe path and run the following commands
 	
-	<b>Command:</b> {nuget.exe path} add "F:\Syncfusion\Syncfusion.UI.WPF.NET.{version}.nupkg" -Source "F:\Syncfusion\Expand" -expand
+	**Command:** {nuget.exe path} add "F:\Syncfusion\Syncfusion.UI.WPF.NET.{version}.nupkg" -Source "F:\Syncfusion\Expand" -expand
 	
-	<b>Example:</b> F:\Syncfusion>nuget.exe add "F:\Syncfusion\Syncfusion.UI.WPF.NET.19.1.0.50.nupkg" -Source "F:\Syncfusion" -expand
+	**Example:** F:\Syncfusion>nuget.exe add "F:\Syncfusion\Syncfusion.UI.WPF.NET.19.1.0.50.nupkg" -Source "F:\Syncfusion" -expand
 	
 	![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_Extract.png)
 	
-    <b>Step 2:</b>
+    **Step 2:**
 	
-	1. Open <b>"Syncfusion Toolbox for WPF.config"</b> file from the following location.
+	1. Open **"Syncfusion Toolbox for WPF.config"** file from the following location.
 	
-	<b>Location:</b> "C:\Program Files (x86)\NuGet\Config\Syncfusion Toolbox for WPF.config"
+	**Location:** "C:\Program Files (x86)\NuGet\Config\Syncfusion Toolbox for WPF.config"
 	
 	![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox.png)
 
