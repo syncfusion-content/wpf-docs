@@ -33,11 +33,11 @@ Schedule.DragDropSettings.ShowTimeIndicator = true;
 {% endhighlight %}
 {% endtabs %}
 
-![show-appointment-dragging-time-indicator-wpf-scheduler](DaysView_Images/show-appointment-dragging-time-indicator.png)
+![show-appointment-dragging-time-indicator-wpf-scheduler](DaysView_Images/adding-show-appointment-dragging-time-indicator-wpf-scheduler.png)
 
 N>
 * Not applicable for Month and Timeline Month views. 
-* If the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property label is collapsed, the time indicator will not be shown.
+* If the [TimeRulerSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property value is zero to collapse the time ruler labels, then drag time indicator will not be shown.
 
 ## Appointment dragging time indicator text formatting
 You can customize the format for the appointment dragging time indicator format by setting the [TimeIndicatorFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html#Syncfusion_UI_Xaml_Scheduler_DragDropSettings_TimeIndicatorFormat) property of [DragDropSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DragDropSettings.html) in Scheduler.
@@ -48,7 +48,7 @@ Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DragDropSettings.TimeIndicatorFormat = "HH mm tt";
 {% endhighlight %}
 {% endtabs %}
-![customize-appointment-dragging-time-indicator-format-wpf-scheduler](DaysView_Images/adding-customize-appointment-dragging-time-indicator-format.png)
+![customize-appointment-dragging-time-indicator-format-wpf-scheduler](DaysView_Images/adding-customize-appointment-dragging-time-indicator-format-wpf-scheduler.png)
 
 N>
 * when dragging the appointment, the time indicator overlaps with the time ruler label position in the day, week and workweek views. 
