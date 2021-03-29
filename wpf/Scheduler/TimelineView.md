@@ -32,13 +32,13 @@ You can customize the interval width of timeslots in the Timeline views by setti
 ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
-            TimeIntervalHeight="120"/>
+            TimeIntervalSize="120"/>
     </syncfusion:SfScheduler.TimelineViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
-Schedule.TimelineViewSettings.TimeIntervalHeight = 120;
+Schedule.TimelineViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
@@ -274,19 +274,19 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 ![Special time region customization in WPF Scheduler](Timeline_images/adding-Specialtimeregioncustomization.png)
 
 ## Full screen scheduler
-Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property to -1. It will auto-fit to the screen height and width.
+Scheduler time interval height can be adjusted based on screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to -1. It will auto-fit to the screen height and width.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
     <syncfusion:SfScheduler.TimelineViewSettings>
         <syncfusion:TimelineViewSettings 
-            TimeIntervalHeight="-1"/>
+            TimeIntervalSize="-1"/>
     </syncfusion:SfScheduler.TimelineViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.TimelineWeek;
-Schedule.TimelineViewSettings.TimeIntervalHeight = -1;
+Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
 
