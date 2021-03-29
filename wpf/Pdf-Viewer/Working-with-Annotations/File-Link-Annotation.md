@@ -17,12 +17,9 @@ The `FileLinkAnnotationClicked` event will be raised when you click the annotati
 
 {% tabs %}
 {% highlight C# %}
-public MainWindow()
-{
-    InitializeComponent();
-    pdfViewer.Load("../../Annotations.pdf");
-    pdfViewer.FileLinkAnnotationClicked += PdfViewer_FileLinkAnnotationClicked;
-}
+
+pdfViewer.FileLinkAnnotationClicked += PdfViewer_FileLinkAnnotationClicked;
+	
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,14 +52,6 @@ You can open the file externally from the application level, by passing the `Fil
 {% highlight C# %}
 private void PdfViewer_FileLinkAnnotationClicked(object sender, FileLinkAnnotationClickedEventArgs e)
 {
-    //Page index in which this file link annotation was clicked 
-    int pageNumber = e.PageNumber;
-
-    //Annotation's region.
-    RectangleF bounds = e.Bounds;
-
-    FileLinkAnnotationSettings settings = e.Settings;
-    //External file path which was linked. 
     string filePath = settings.FileName;
 
     Process.Start(filePath);
