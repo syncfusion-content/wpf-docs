@@ -99,6 +99,7 @@ You can upgrade the Syncfusion WPF toolbox for .NET 5.O control with NuGet packa
       </fallbackPackageFolders>
     </configuration>
     {% endhighlight %}
+    {% endtabs %}
 	
 	2. Update extracted Syncfusion NuGet package path in <b>value</b> attribute.
 	
