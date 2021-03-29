@@ -17,7 +17,7 @@ The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
  <syncfusion:SfScheduler x:Name="Schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding scheduleAppointmentCollection}">
- </syncfusion:SfScheduler
+ </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 // Creating an instance for schedule appointment collection
