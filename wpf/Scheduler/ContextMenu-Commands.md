@@ -22,8 +22,10 @@ You can set the context menu for time slot and month cells by using the [SfSched
 
 N>
 * The menu items which bind the [SchedulerCommands.Edit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Edit) and [SchedulerCommands.Delete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Delete) built-in commands will be disabled in the `CellContextMenu`.
-* The `DataContext` for the context menu is [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html) `CommandParameter` of menu item should bound to context menu's data context when using the commands in [SchedulerCommands](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html).
-* By default, the cell context menu will be opened when holding on any timeslot or month cell. The appointment context menu will be opened by holding only if the appointment drag and drop is disabled using the  [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property..
+* While binding the menu item using the CommandBinding, you can get the command parameter as
+[SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html)
+that contains the Appointment or DateTime of the corresponding cell.
+* By default, the cell context menu will be opened when holding on any timeslot or month cell. The appointment context menu will be opened by holding, only if the appointment's drag and drop is disabled using the [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,7 +49,9 @@ You can set the context menu for schedule appointments by using the [SfScheduler
 
 >**NOTE**
 * The menu item which binds the [SchedulerCommands.Add](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html#Syncfusion_UI_Xaml_Scheduler_SchedulerCommands_Add) command will be disabled in the [SfScheduler.AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu).
-* The `DataContext` for the context menu is [SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html) Command parameter of menu item should bound to context menu's data context when using the commands in [SchedulerCommands](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerCommands.html).
+* While binding the menu item using the CommandBinding, you can get the command parameter as
+[SchedulerContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuInfo.html)
+that contains the Appointment or DateTime of the corresponding cell.
 * In the month view, the `AppointmentContextMenu` opens when the [MonthViewSettings.AppointmentDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) is set to `AppointmentDisplayMode.Appointment.`.
 * To enable the touch context menu for appointments in the scheduler by disabling the appointment drag and drop by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except for DragDrop. In this case, you will not be able to perform the appointment drag & drop. The [AppointmentContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentContextMenu) will be displayed only on appointments and the appointment selection should be performed.
 
