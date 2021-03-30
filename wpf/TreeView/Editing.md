@@ -43,6 +43,27 @@ sfTreeView.AllowEditing = true;
 
 ![WPF TreeView in Edit Mode](Editing_images/Editing_image1.png)
 
+## EditMode
+
+By default, you can move to editmode by pressing `F2` key. TreeView allows you to edit the node in single click(Tap) or double click(DoubleTap) by setting `EditTrigger` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeView x:Name="sfTreeView" 
+                       ItemsSource="{Binding Countries}"
+                       AutoExpandMode="RootNodes"
+                       EditTrigger="DoubleTap"
+                       AllowEditing="True"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.sfTreeView.EditTrigger = Syncfusion.UI.Xaml.TreeView.TreeViewEditTrigger.DoubleTap;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Programmatic Editing
 
 ### Begin the editing
