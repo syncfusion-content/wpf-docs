@@ -24,19 +24,19 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
 N>If you modify the timeInterval value (in minutes), you need to change the time labels format by setting the timeFormat value to hh:mm.
 
 ## Change time interval height
-You can customize the interval height of timeslots in day, week, work week views by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalHeight) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings).
+You can customize the interval height of timeslots in day, week, work week views by setting [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings).
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>
         <syncfusion:DaysViewSettings 
-            TimeIntervalHeight="120"/>
+            TimeIntervalSize="120"/>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Week;
-Schedule.DaysViewSettings.TimeIntervalHeight = 120;
+Schedule.DaysViewSettings.TimeIntervalSize = 120;
 {% endhighlight %}
 {% endtabs %}
 
@@ -241,19 +241,19 @@ The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sc
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-datebasis_Specialtimeregioncustomization.png)
 
 ## Full screen scheduler
-Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
+Scheduler time interval height can be adjusted based on screen height by changing the value of `TimeIntervalSize` property to -1. It will auto-fit to the screen height and width.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>
         <syncfusion:DaysViewSettings 
-            TimeIntervalHeight="-1"/>
+            TimeIntervalSize="-1"/>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Week;
-Schedule.DaysViewSettings.TimeIntervalHeight = -1;
+Schedule.DaysViewSettings.TimeIntervalSize = -1;
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,14 +21,14 @@ The following steps explain how to install the extensions for Syncfusion WPF fro
    > In Visual Studio 2017 or lower, goto Tools -> Extensions and Updates
 3. Select the Online tab on the left and type “Syncfusion WPF” in the search box.
 
-      ![Manage Extension](Download-and-Installation\ManageExtension.png)
+      ![Manage Extension](Download-and-Installation-images\ManageExtension.png)
 4. In the “WPF Extensions - Syncfusion” extensions, click the Download button.
 5. Once the extensions have been downloaded, close all Visual Studio instances to start the installation process. You will see the following VSIX installation prompt.
-      ![Vsix Modify Window](Download-and-Installation\VSIXModify.png)
+      ![Vsix Modify Window](Download-and-Installation-images\VSIXModify.png)
 6. Click the Modify button.
 7. After the installation is complete, open Visual Studio.
 8. Now, under the menu Extensions, you can use the Syncfusion extensions from the Visual Studio application.
-      ![Syncfusion WPF Menu](Download-and-Installation\SyncfusionWpfMenu.png)
+      ![Syncfusion WPF Menu](Download-and-Installation-images\SyncfusionWpfMenu.png)
 
 ## Install from the Visual Studio Marketplace
 
@@ -37,7 +37,7 @@ The following steps explain how to download and install the Syncfusion WPF exten
 1. Download the [Syncfusion WPF Extensions](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension) from the Visual Studio Marketplace.
 2. Close all Visual Studio instances running, if any.
 3. Double-click to install the downloaded VSIX file. You will see the VSIX installation prompts. If Visual Studio is not installed, it will not be possible to install the extension.
-      ![Vsix Modify Window](Download-and-Installation\VSIXInstall.png)
+      ![Vsix Modify Window](Download-and-Installation-images\VSIXInstall.png)
 4. Click the Install button.
 5. After the installation is complete, open Visual Studio 2019. You can now use Syncfusion extensions from the Visual Studio under the Extensions menu.
-      ![Syncfusion WPF Menu](Download-and-Installation\SyncfusionWpfMenu.png)
+      ![Syncfusion WPF Menu](Download-and-Installation-images\SyncfusionWpfMenu.png)

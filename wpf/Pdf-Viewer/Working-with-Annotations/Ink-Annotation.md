@@ -224,23 +224,44 @@ The following image illustrates how to delete the included annotation from the P
 
 ![Ink deletion](Annotation-images\Ink-Annotation-10.png)
 
+### Erase ink annotation
+
+The Eraser tool in the toolbar helps you to erase (remove) the unwanted parts in an ink annotation. You can enable the eraser tool by simply clicking the tool.
+
+![Erase ink annotation](Annotation-images\Ink-Eraser.png)
+
+After the tool is enabled, you can erase the unwanted parts by holding the mouse button down and drag over the parts of an ink annotation.
+
+The Eraser tool can also be enabled programmatically using the [AnnotationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_AnnotationMode) property of the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) and [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). Please refer to the following code.
+
+{% tabs %}
+{% highlight C# %}
+
+pdfViewer.AnnotationMode = PdfViewerAnnotationMode.InkEraser;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> This tool can be used to erase the ink annotation only and not applicable for other annotations.
+
 ### Keyboard shortcuts
 
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
 
-*	Delete key – Deletes the selected annotation from the PDF document.
-*	Ctrl + Z – Performs undo functionality for recently performed operations.
-*	Ctrl + Y – Performs redo functionality for recently performed operations.
+*	Delete key: Deletes the selected annotation from the PDF document.
+*	Ctrl + Z: Performs undo functionality for recently performed operations.
+*	Ctrl + Y: Performs redo functionality for recently performed operations.
+*	Esc key: To exit from the annotation mode.
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies through events, when [AnnotationChangedAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
 
 ### InkAnnotationChanged Event
 
-The `InkAnnotationChanged` event occurs when the `Action` performed in ink annotation. It provides the common information and annotation properties which are available in `Settings` through the `InkAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
+The [InkAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_InkAnnotationChanged) event occurs when the [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Action) performed in ink annotation. It provides the common information and annotation properties which are available in `Settings` through the [InkAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.InkAnnotationChangedEventArgs.html). The user can modify the annotation properties through [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.InkAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_InkAnnotationChangedEventArgs_Settings).
 
-The following code shows how to write the InkAnnotationChanged event in PdfViewerControl
+The following code shows how to write the `InkAnnotationChanged` event in `PdfViewerControl`
 
 {% tabs %}
 {% highlight C# %}
