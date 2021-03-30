@@ -87,7 +87,6 @@ In the below code snippet explains the simple implementation of IEditableObject.
 
 {% tabs %}
 {% highlight c# %}
-{% endhighlight %}
 public class Country : INotifyPropertyChanged, IEditableObject
 {
     private bool isSelected;
@@ -163,7 +162,7 @@ public class Country : INotifyPropertyChanged, IEditableObject
 
     public void BeginEdit()
     {
-        Console.WriteLine("BeginEdit is Called.");
+        Debug.WriteLine("BeginEdit is Called.");
         backUpData = new Country();
         backUpData.name = this.currentData.name;
         backUpData.isSelected = this.currentData.isSelected;
@@ -171,15 +170,16 @@ public class Country : INotifyPropertyChanged, IEditableObject
 
     public void CancelEdit()
     {
-        Console.WriteLine("CancelEdit is Called.");
+        Debug.WriteLine("CancelEdit is Called.");
         this.currentData = backUpData;
     }
 
     public void EndEdit()
     {
-        Console.WriteLine("EndEdit is Called.");
+        Debug.WriteLine("EndEdit is Called.");
     }
 }
+{% endhighlight %}
 {% endtabs %}
 
 
