@@ -77,6 +77,112 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Working with IEditableObject interface
+
+ByDefault SfTreeView does not have support for roll back the changes while editing the Treeview node. But you achieve this in SfTreeView When an underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. Then pressing the <kbd>ESC</Kbd> key to commit your roll back changes to the tree view node while editing.
+
+The user should take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method than should revert the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method. 
+
+In the below code snippet explains the simple implementation of IEditableObject.
+
+{% tabs %}
+{% highlight c# %}
+{% endhighlight %}
+public class Country : INotifyPropertyChanged, IEditableObject
+{
+    private bool isSelected;
+    internal string name;
+    private ObservableCollection<State> states;
+    internal Country backUpData;
+    private Country currentData;
+
+    public Country()
+    {
+	
+    }
+
+    public Country(string name):base()
+    {
+	    this.currentData = new Country();
+	    this.currentData.name = name;
+	    this.currentData.isSelected = false;
+    }
+
+
+    public ObservableCollection<State> States
+    {
+	    get 
+        { 
+            return states; 
+		}
+	    set
+	    {
+		    states = value;
+		    RaisedOnPropertyChanged("States");
+	    }
+    }
+
+    public string Name
+    {
+        get
+        { 
+            return this.currentData.name; 
+        }
+        set
+        {
+            this.currentData.name = value;
+            RaisedOnPropertyChanged("Name");
+        }
+    }
+
+    public bool IsSelected
+    {
+        get 
+        { 
+	        return this.currentData.isSelected; 
+        }
+        set
+        {
+            this.currentData.isSelected = value;
+            RaisedOnPropertyChanged("IsSelected");
+        }
+    }
+
+
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+	    if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+
+
+    public void BeginEdit()
+    {
+        Console.WriteLine("BeginEdit is Called.");
+        backUpData = new Country();
+        backUpData.name = this.currentData.name;
+        backUpData.isSelected = this.currentData.isSelected;
+    }
+
+    public void CancelEdit()
+    {
+        Console.WriteLine("CancelEdit is Called.");
+        this.currentData = backUpData;
+    }
+
+    public void EndEdit()
+    {
+        Console.WriteLine("EndEdit is Called.");
+    }
+}
+{% endtabs %}
+
+
 ## Events
 
 ### ItemBeginEdit Event
