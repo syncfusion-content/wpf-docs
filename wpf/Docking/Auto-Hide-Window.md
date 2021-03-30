@@ -652,3 +652,8 @@ DockingManager.UnPinAllAutoHide();
 
 {% endtabs %}
 
+## Changing dock state using context menu
+
+You can change the dock state of AutoHidden window by opening the context menu and selecting the required state in context menu items. The items in context menu is enabled and disabled based on [CanDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanDockProperty), [CanFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanFloatProperty) and [CanDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanDocumentProperty) properties value.
+
+![Change dock state of AutoHide window by context menu item click](Auto-Hide-Window_images/AutoHide-Window-Dock-State-Change.png)

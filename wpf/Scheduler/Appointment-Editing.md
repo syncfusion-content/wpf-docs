@@ -69,6 +69,25 @@ For example, To use custom appointment editor window instead of default appointm
 
 * `Resource` - gets the resource of an appointment under which the appointment is located. 
 
+## Visible/Collapse the built-in editors in appointment editor window
+You can programmatically visible or collapse the editors by setting the `AppointmentEditorOptions` property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). By default, the value of `AppointmentEditorOptions` is set to `AppointmentEditorOptions.All` in the `SchedulerAppointmentEditorWindow` that displays all the appointment editors. The following code shows how to collapse the `Reminder` and `Resource`editors by handling the[AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
+
+private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
+{
+    e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
+}
+{% endhighlight %}
+{% endtabs %}
+
+![collapse-build-in-editors-of-appointment-editor-window-in-wpf-scheduler](Appointment-Editing_Images/collapse-build-in-editors-of-appointment-editor-window-in-wpf-scheduler.png)
+
+N>
+* The basic editors such that `Subject`, `Location`, `Start Hour` and `End Hour` of the scheduler appointment editor will not be collapsed.
+
 ### AppointmentEditorClosing event
 When you close the appointment editor window after added or edited the schedule appointment, Scheduler notifies by [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 

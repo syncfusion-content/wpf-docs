@@ -156,9 +156,19 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 {% endtabs %}
 
 ## Resize Ribbon Window
-The ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed Ribbon bar, the total Ribbon bar will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
+The ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed Ribbon bar, the Ribbon will begin to resize its elements with the following priority.
 
-The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_SetIsAutoSizeFormEnabled_System_Windows_DependencyObject_System_Boolean_) property must be set to True to get responsive ribbon window. Same behavior will be continued to every Ribbon bar while minimized continuously. Again, the Ribbon bar will be visible if the spacing between window border and Ribbon bar has enough space to allocate all the items in that Ribbon bar. The following snippet is used for resize the ribbon window.
+1. **Compress Gallery** - If there is a [`RibbonGallery`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonGallery.html) in a [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html), it will be resized until it is converted to a dropdown button. Once it is converted into dropdown button, then the Ribbon will begin to resize the [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
+
+2. **Compress Large items** - When there are three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then Ribbon will reduce each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then Ribbon will begin to resize the [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items.
+
+3. **Compress Small items** - When there are three or more continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) items, then Ribbon will reduce each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items, starting from the right side, into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items. Once each pair of three continuous [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items are converted into [`ExtraSmall`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form, then Ribbon will begin convert the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) into dropdown button.
+
+4. **Collapsing the RibbonBar** - When there are no three or more continuous [`Large`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) or [`Small`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.SizeForm.html) size form items and when there are other ribbon items such as CheckBox, RadioButton, ComboBox, TextBox, ListBox or any other custom items, then, starting with the last bar, each [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will be converted into a dropdown button, with its items accessible by clicking on the dropdown arrow.
+
+When the size of the window is increased, the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will become visible if the spacing between the window border and the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) is large enough to accommodate its items. These items will then be expanded in the order, starting with the most recently collapsed item and ending with the initially collapsed item.
+
+The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_SetIsAutoSizeFormEnabled_System_Windows_DependencyObject_System_Boolean_) property must be set to True to get responsive ribbon window. The following snippet is used for resize the ribbon window.
 
 {% tabs %}
 
@@ -407,6 +417,642 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
  ![Resize Ribbon Window](RibbonResizeWindow-images/RibbonBar_CollapseImage.png)
+
+## Adding custom items to the Ribbon
+
+The RibbonItemHost control allows to add any kind of custom control, such as combo box, text box, radio button, check box, and more to be displayed on the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html). The RibbonItemHost contains a ContentTemplate property of DataTemplate type which enables us to define any custom control.
+
+In the below example, MS CheckBox is set to the ContentTemplate property of the RibbonItemHost within the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="Ribbon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ribbon"
+        mc:Ignorable="d"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.Theme="{skin:SkinManagerExtension ThemeName=FluentLight}"
+        WindowStartupLocation="CenterScreen" 
+        Title="Custom items demo" Height="450" Width="650">
+    <syncfusion:RibbonWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:RibbonWindow.DataContext>
+    <Grid>
+        <syncfusion:Ribbon x:Name="mainRibbon">
+            <syncfusion:RibbonTab Caption="Design">
+                <syncfusion:RibbonBar Header="Table Style Options">
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Header Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsHeaderRowChecked , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Total Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsTotalRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Banded Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="First Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsFirstColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="Last Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsLastColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost>
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="Banded Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:Ribbon.QuickAccessToolBar>
+                <syncfusion:QuickAccessToolBar/>
+            </syncfusion:Ribbon.QuickAccessToolBar>
+            <syncfusion:Ribbon.BackStage>
+                <syncfusion:Backstage>
+                    <syncfusion:BackStageCommandButton Header="Save" >
+                        <syncfusion:BackStageCommandButton.IconTemplate>
+                            <DataTemplate>
+                                <Path Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center"
+                         Data="M5.0000019,11 L5.0000019,15 11.000002,15 11.000002,11 z M4.0000019,1 L4.0000019,6 12.000002,6 12.000002,1 z M1,1 L1,13.174 2.7160001,15 4.0000019,15 4.0000019,10 12.000002,10 12.000002,15 15,15 15,1 13.000002,1 13.000002,7 3.0000019,7 3.0000019,1 z M0,0 L3.0000019,0 13.000002,0 16,0 16,16 12.000002,16 4.0000019,16 2.2840004,16 0,13.57 z"
+                         Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" Stretch="Uniform" />
+                            </DataTemplate>
+                        </syncfusion:BackStageCommandButton.IconTemplate>
+                    </syncfusion:BackStageCommandButton>
+                    <syncfusion:BackStageCommandButton Header="Close" >
+                        <syncfusion:BackStageCommandButton.IconTemplate>
+                            <DataTemplate>
+                                <Grid Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="true">
+                                    <Path
+                                        Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                        Data="M1.4139423,0L7.0029922,5.5845888 12.592018,0 14.006015,1.4149939 8.4180527,6.9985202 14.006,12.582007 12.591996,13.997001 7.0030056,8.4124444 1.4140122,13.997001 1.5026823E-05,12.582007 5.5879484,6.9985092 0,1.4149939z "
+                                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" 
+                                        SnapsToDevicePixels="True" Stretch="Fill" />
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:BackStageCommandButton.IconTemplate>
+                    </syncfusion:BackStageCommandButton>
+                </syncfusion:Backstage>
+            </syncfusion:Ribbon.BackStage>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public class ViewModel : NotificationObject
+{
+    #region Fields
+    /// <summary>
+    /// Maintains the Header Row selection.
+    /// </summary>
+    private bool isHeaderRowChecked = true;
+
+    /// <summary>
+    /// Maintains the Total Row selection.
+    /// </summary>
+    private bool isTotalRowChecked = false;
+
+    /// <summary>
+    /// Maintains the Banded Row selection.
+    /// </summary>
+    private bool isBandedRowChecked = false;
+
+    /// <summary>
+    /// Maintains the First Column selection.
+    /// </summary>
+    private bool isFirstColumnChecked = true;
+
+    /// <summary>
+    /// Maintains the Last Column selection.
+    /// </summary>
+    private bool isLastColumnChecked = false;
+
+    /// <summary>
+    /// Maintains the Banded Column selection.
+    /// </summary>
+    private bool isBandedColumnChecked = false;
+    #endregion
+
+    #region Constructor
+
+    public ViewModel()
+    {
+
+    }
+    #endregion
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets whether the Header Row is checked.
+    /// </summary>
+    public bool IsHeaderRowChecked
+    {
+        get
+        {
+            return isHeaderRowChecked;
+        }
+        set
+        {
+            isHeaderRowChecked = value;
+            RaisePropertyChanged("IsHeaderRowChecked");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets whether the Total Row is checked.
+    /// </summary>
+    public bool IsTotalRowChecked
+    {
+        get
+        {
+            return isTotalRowChecked;
+        }
+        set
+        {
+            isTotalRowChecked = value;
+            RaisePropertyChanged("IsTotalRowChecked");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets whether the Banded Row is checked.
+    /// </summary>
+    public bool IsBandedRowChecked
+    {
+        get
+        {
+            return isBandedRowChecked;
+        }
+        set
+        {
+            isBandedRowChecked = value;
+            RaisePropertyChanged("IsBandedRowChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the First Column is checked.
+    /// </summary>
+    public bool IsFirstColumnChecked
+    {
+        get
+        {
+            return isFirstColumnChecked;
+        }
+        set
+        {
+            isFirstColumnChecked = value;
+            RaisePropertyChanged("IsFirstColumnChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the Last Column is checked.
+    /// </summary>
+    public bool IsLastColumnChecked
+    {
+        get
+        {
+            return isLastColumnChecked;
+        }
+        set
+        {
+            isLastColumnChecked = value;
+            RaisePropertyChanged("IsLastColumnChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the Banded Column is checked.
+    /// </summary>
+    public bool IsBandedColumnChecked
+    {
+        get
+        {
+            return isBandedColumnChecked;
+        }
+        set
+        {
+            isBandedColumnChecked = value;
+            RaisePropertyChanged("IsBandedColumnChecked");
+        }
+    }
+    #endregion
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Custom items in RibbonBar](RibbonCustomItem_images/CustomItemsInRibbonBar.png)
+
+### Adding the custom item to the QAT
+
+The custom item present in the RibbonBar can be added to the [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html) using ribbon context menu or through QAT customization dialog. In the QAT customization dialog, all the ribbon items are displayed using its Label and Icon properties. As like other ribbon items, the RibbonItemHost also allows us to set the label and icon using its Label and IconTemplate properties respectively.
+
+* Label - Used to display the text of RibbonItemHost inside the QAT customization dialog.
+
+* IconTemplate - Gets or sets the template that is used to display the icon of RibbonItemHost inside the QAT customization dialog.
+
+In the below example, the Label and IconTemplate are set for the RibbonItemHost controls which will be used when the items are displayed in the QAT customization dialog. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="Ribbon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ribbon"
+        mc:Ignorable="d"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.Theme="{skin:SkinManagerExtension ThemeName=FluentLight}"
+        WindowStartupLocation="CenterScreen" 
+        Title="Custom items demo" Height="450" Width="650">
+    <syncfusion:RibbonWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:RibbonWindow.DataContext>
+    <syncfusion:RibbonWindow.Resources>
+        <DataTemplate x:Key="OnePage">
+            <Grid>
+                <Path
+                        Width="13"
+                        Height="16"
+                        Margin="0.5"
+                        Data="M0,0 L11,0 11,15 0,15 z"
+                        Fill="White"
+                        Stretch="Fill" />
+                <Path
+                         Margin="1"
+                         Data="M1,1 L1,15 11,15 11,1 z M0,0 L12,0 12,4.158 12,5.0689998 12,16 0,16 z"
+                         Fill="#FF3A3A38"
+                         Stretch="Fill" />
+                <Path
+                         Margin="3"
+                         Data="M0,8.9999991 L5.9999999,8.9999991 5.9999999,9.999999 0,9.999999 z M3.2782552E-06,5.9999998 L6.0000033,5.9999998 6.0000033,6.9999996 3.2782552E-06,6.9999996 z M3.2782552E-06,2.9999995 L6.0000033,2.9999995 6.0000033,3.9999995 3.2782552E-06,3.9999995 z M3.4272668E-06,0 L6.0000033,0 6.0000033,0.99999952 3.4272668E-06,0.99999952 z"
+                         Fill="#FF797774"
+                         Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="TwoPages">
+            <Grid>
+                <Path
+                         Margin="0.5"
+                         Data="M8.0000038,6.7055242E-07 L15.000004,6.7055242E-07 15.000004,9.0000009 8.0000038,9.0000009 z M0,0 L7,0 7,9 0,9 z"
+                         Fill="White"
+                         Stretch="Fill" />
+                <Path
+                         Margin="1"
+                         Data="M9.0000038,1.0000005 L9.0000038,9.000001 15.000004,9.000001 15.000004,1.0000005 z M1,1 L1,9 7,9 7,1 z M8.0000038,7.1525591E-07 L16.000004,7.1525591E-07 16.000004,10.000001 8.0000038,10.000001 z M0,0 L8,0 8,10 0,10 z"
+                         Fill="#FF3A3A38"
+                         Stretch="Fill" />
+                <Path
+                         Margin="2,4"
+                         Data="M0,3 L4,3 4,3.9999998 0,3.9999998 z M7.9999967,2.9999993 L11.999997,2.9999993 11.999997,3.9999992 7.9999967,3.9999992 z M8.0000001,0 L12,0 12,1 8.0000001,1 z M0,0 L4,0 4,0.99999976 0,0.99999976 z"
+                         Fill="#FF797774"
+                         Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="PageWidth">
+            <Grid>
+                <Path Data="M2,9.0000019L2,24 30,24 30,9.0000019z M13.498982,2.9999743C14.326982,2.9999743 14.998982,3.6719742 14.998982,4.4999743 14.998982,5.3279743 14.326982,5.9999743 13.498982,5.9999743 12.670982,5.9999743 11.998982,5.3279743 11.998982,4.4999743 11.998982,3.6719742 12.670982,2.9999743 13.498982,2.9999743z M9.4989824,2.9999743C10.326982,2.9999743 10.998982,3.6719742 10.998982,4.4999743 10.998982,5.3279743 10.326982,5.9999743 9.4989824,5.9999743 8.6709824,5.9999743 7.9989824,5.3279743 7.9989824,4.4999743 7.9989824,3.6719742 8.6709824,2.9999743 9.4989824,2.9999743z M5.4989824,2.9999743C6.3269825,2.9999743 6.9989824,3.6719742 6.9989824,4.4999743 6.9989824,5.3279743 6.3269825,5.9999743 5.4989824,5.9999743 4.6709824,5.9999743 3.9989824,5.3279743 3.9989824,4.4999743 3.9989824,3.6719742 4.6709824,2.9999743 5.4989824,2.9999743z M2,2L2,7.0000014 30,7.0000014 30,2z M0,0L32,0 32,26 0,26z"
+                  Stretch="Uniform"
+                  Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                  Width="16" Height="16" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="AlignLeft">
+            <Path
+                        x:Name="Align_Left1"
+                        Width="14"
+                        Height="13"
+                        Margin="2,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        Data="M0,12 L10,12 10,13 0,13 z M0,8 L14,8 14,9 0,9 z M0,4 L10,4 10,5 0,5 z M0,0 L14,0 14,1 0,1 z"
+                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                        Stretch="Fill" />
+        </DataTemplate>
+        <DataTemplate x:Key="AlignRight">
+            <Path
+                        x:Name="Align_Right1"
+                        Width="14"
+                        Height="13"
+                        Margin="2,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        Data="M4,12 L14,12 14,13 4,13 z M0,8 L14,8 14,9 0,9 z M4,4 L14,4 14,5 4,5 z M0,0 L14,0 14,1 0,1 z"
+                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                        Stretch="Fill" />
+        </DataTemplate>
+        <DataTemplate x:Key="AlignJustify">
+            <Path
+                        x:Name="Justify1"
+                        Width="14"
+                        Height="13"
+                        Margin="2,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        Data="M0,12 L14,12 14,13 0,13 z M0,8 L14,8 14,9 0,9 z M0,4 L14,4 14,5 0,5 z M0,0 L14,0 14,1 0,1 z"
+                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                        Stretch="Fill" />
+        </DataTemplate>
+        <DataTemplate x:Key="Tables">
+            <Grid MaxHeight="32" MaxWidth="32">
+                <Path
+                          Margin="0.5,4.5,0.5,0.5"
+                          Data="M0,0 L27,0 27,23 0,23 z"
+                          Fill="White"
+                          Stretch="Fill" />
+                <Path
+                          Height="4"
+                          Margin="0.5,0.5,0.5,0"
+                          VerticalAlignment="Top"
+                          Data="M0,0 L27,0 27,4 0,4 z"
+                          Fill="#FFC8C6C4"
+                          Stretch="Fill" />
+                <Path
+                          Margin="1,5,1,1"
+                          Data="M9,8 L9,14 17,14 17,8 z M8,0 L9,0 9,7 17,7 17,0 18,0 18,7 26,7 26,8 18,8 18,14 26,14 26,15 18,15 18,22 17,22 17,15 9,15 9,22 8,22 8,15 0,15 0,14 8,14&#xa;8,8 0,8 0,7 8,7 z"
+                          Fill="#FF797774"
+                          Stretch="Fill" />
+                <Path
+                          Data="M0.99999994,5.0000001 L0.99999994,27 27,27 27,5.0000001 z M0.99999994,1 L0.99999994,4.0000002 27,4.0000002 27,1 z M0,0 L28,0 28,4.0000002 28,5.0000001 28,28 0,28 0,5.0000001 0,4.0000002 z"
+                          Fill="#FF3A3A38"
+                          Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+    </syncfusion:RibbonWindow.Resources>
+    <Grid>
+        <syncfusion:Ribbon x:Name="mainRibbon">
+            <syncfusion:RibbonTab Caption="Design">
+                <syncfusion:RibbonBar Header="Table Style Options" IconTemplate="{StaticResource Tables}">
+                    <syncfusion:RibbonItemHost Label="Header Row" IconTemplate="{StaticResource OnePage}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Header Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsHeaderRowChecked , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost  Label="Total Row" IconTemplate="{StaticResource TwoPages}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Total Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsTotalRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost Label="Banded Row" IconTemplate="{StaticResource PageWidth}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="Banded Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost Label="First Column" IconTemplate="{StaticResource AlignLeft}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="First Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsFirstColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost Label="Last Column" IconTemplate="{StaticResource AlignRight}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="Last Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsLastColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                    <syncfusion:RibbonItemHost Label="Banded Column" IconTemplate="{StaticResource AlignJustify}">
+                        <syncfusion:RibbonItemHost.ContentTemplate>
+                            <DataTemplate>
+                                <RadioButton Margin="4,0,0,0" Content="Banded Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                            </DataTemplate>
+                        </syncfusion:RibbonItemHost.ContentTemplate>
+                    </syncfusion:RibbonItemHost>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:Ribbon.QuickAccessToolBar>
+                <syncfusion:QuickAccessToolBar/>
+            </syncfusion:Ribbon.QuickAccessToolBar>
+            <syncfusion:Ribbon.BackStage>
+                <syncfusion:Backstage>
+                    <syncfusion:BackStageCommandButton Header="Save" >
+                        <syncfusion:BackStageCommandButton.IconTemplate>
+                            <DataTemplate>
+                                <Path Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center"
+                         Data="M5.0000019,11 L5.0000019,15 11.000002,15 11.000002,11 z M4.0000019,1 L4.0000019,6 12.000002,6 12.000002,1 z M1,1 L1,13.174 2.7160001,15 4.0000019,15 4.0000019,10 12.000002,10 12.000002,15 15,15 15,1 13.000002,1 13.000002,7 3.0000019,7 3.0000019,1 z M0,0 L3.0000019,0 13.000002,0 16,0 16,16 12.000002,16 4.0000019,16 2.2840004,16 0,13.57 z"
+                         Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" Stretch="Uniform" />
+                            </DataTemplate>
+                        </syncfusion:BackStageCommandButton.IconTemplate>
+                    </syncfusion:BackStageCommandButton>
+                    <syncfusion:BackStageCommandButton Header="Close" >
+                        <syncfusion:BackStageCommandButton.IconTemplate>
+                            <DataTemplate>
+                                <Grid Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="true">
+                                    <Path
+                                        Width="12" Height="12" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                        Data="M1.4139423,0L7.0029922,5.5845888 12.592018,0 14.006015,1.4149939 8.4180527,6.9985202 14.006,12.582007 12.591996,13.997001 7.0030056,8.4124444 1.4140122,13.997001 1.5026823E-05,12.582007 5.5879484,6.9985092 0,1.4149939z "
+                                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" 
+                                        SnapsToDevicePixels="True" Stretch="Fill" />
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:BackStageCommandButton.IconTemplate>
+                    </syncfusion:BackStageCommandButton>
+                </syncfusion:Backstage>
+            </syncfusion:Ribbon.BackStage>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public class ViewModel : NotificationObject
+{
+    #region Fields
+    /// <summary>
+    /// Maintains the Header Row selection.
+    /// </summary>
+    private bool isHeaderRowChecked = true;
+
+    /// <summary>
+    /// Maintains the Total Row selection.
+    /// </summary>
+    private bool isTotalRowChecked = false;
+
+    /// <summary>
+    /// Maintains the Banded Row selection.
+    /// </summary>
+    private bool isBandedRowChecked = false;
+
+    /// <summary>
+    /// Maintains the First Column selection.
+    /// </summary>
+    private bool isFirstColumnChecked = true;
+
+    /// <summary>
+    /// Maintains the Last Column selection.
+    /// </summary>
+    private bool isLastColumnChecked = false;
+
+    /// <summary>
+    /// Maintains the Banded Column selection.
+    /// </summary>
+    private bool isBandedColumnChecked = false;
+    #endregion
+
+    #region Constructor
+
+    public ViewModel()
+    {
+
+    }
+    #endregion
+    #region Properties
+
+    /// <summary>
+    /// Gets or sets whether the Header Row is checked.
+    /// </summary>
+    public bool IsHeaderRowChecked
+    {
+        get
+        {
+            return isHeaderRowChecked;
+        }
+        set
+        {
+            isHeaderRowChecked = value;
+            RaisePropertyChanged("IsHeaderRowChecked");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets whether the Total Row is checked.
+    /// </summary>
+    public bool IsTotalRowChecked
+    {
+        get
+        {
+            return isTotalRowChecked;
+        }
+        set
+        {
+            isTotalRowChecked = value;
+            RaisePropertyChanged("IsTotalRowChecked");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets whether the Banded Row is checked.
+    /// </summary>
+    public bool IsBandedRowChecked
+    {
+        get
+        {
+            return isBandedRowChecked;
+        }
+        set
+        {
+            isBandedRowChecked = value;
+            RaisePropertyChanged("IsBandedRowChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the First Column is checked.
+    /// </summary>
+    public bool IsFirstColumnChecked
+    {
+        get
+        {
+            return isFirstColumnChecked;
+        }
+        set
+        {
+            isFirstColumnChecked = value;
+            RaisePropertyChanged("IsFirstColumnChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the Last Column is checked.
+    /// </summary>
+    public bool IsLastColumnChecked
+    {
+        get
+        {
+            return isLastColumnChecked;
+        }
+        set
+        {
+            isLastColumnChecked = value;
+            RaisePropertyChanged("IsLastColumnChecked");
+        }
+    }
+    /// <summary>
+    /// Gets or sets whether the Banded Column is checked.
+    /// </summary>
+    public bool IsBandedColumnChecked
+    {
+        get
+        {
+            return isBandedColumnChecked;
+        }
+        set
+        {
+            isBandedColumnChecked = value;
+            RaisePropertyChanged("IsBandedColumnChecked");
+        }
+    }
+    #endregion
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Custom items in MoreCommands window](RibbonCustomItem_images/CustomItemsInMoreCommands.png)
+
+![Custom items in RibbonBar](RibbonCustomItem_images/CustomItemsInQAT.png)
+
+ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Adding-custom-items-to-the-ribbon)
 
 ## Grouping RibbonTabs using ContextTabGroups
 

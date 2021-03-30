@@ -21,6 +21,9 @@ If you want to rearrange the tab items position, drag that item and drop to anyw
 <syncfusion:TabControlExt AllowDragDrop="True" >
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+    <syncfusion:TabItemExt Header="tabItem4" />
+    <syncfusion:TabItemExt Header="tabItem5" />
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
@@ -31,9 +34,38 @@ tabControlExt.AllowDragDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Tab items are rearranged by drag and drop](Tab-Item-Header_images/ChangePosition.gif)
-
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
+
+![Tab items are rearranged by drag and drop](Tab-Item-Header_images/AllowDragAndDrop.png)
+
+### Rearrange position of tab items with auto scrolling
+
+You can easily move or rearrange tab items when there are several tab items by setting the `EnableAutoScroll` property as `true` and dragging the respective item over the overflow button (with three dots) or tab scroll buttons to autoscroll.
+The default value of `EnableAutoScroll` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt EnableAutoScroll="True">
+    <syncfusion:TabItemExt Header="tabItem 1" />
+    <syncfusion:TabItemExt Header="tabItem 2" />
+    <syncfusion:TabItemExt Header="tabItem 3" />
+    <syncfusion:TabItemExt Header="tabItem 4" />
+    <syncfusion:TabItemExt Header="tabItem 5" />
+    <syncfusion:TabItemExt Header="tabItem 6" />
+    <syncfusion:TabItemExt Header="tabItem 7" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+TabControlExt tabControlExt = new TabControlExt();
+tabControlExt.EnableAutoScroll = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items are rearranged by drag and drop](Tab-Item-Header_images/EnableAutoScroll.gif)
 
 ### change drag marker color
 
