@@ -132,8 +132,7 @@ doubleTextBox.Value = 12345.67;
 
 ## Changing double value by SpinButton
 
-You can increment or decrement the double value of `DoubleTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the double value.
-The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the double value of `DoubleTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the double value. The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
 {% highlight xaml %}

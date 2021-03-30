@@ -518,13 +518,13 @@ The default value of `EnableAutoScroll` property is `false`.
 {% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="dockingManager" EnableAutoScroll="True" UseDocumentContainer="True" >
-    <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Document3" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content4" syncfusion:DockingManager.Header="Document4" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content5" syncfusion:DockingManager.Header="Document5" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content6" syncfusion:DockingManager.Header="Document6" syncfusion:DockingManager.State="Document" />
-    <ContentControl x:Name="Content7" syncfusion:DockingManager.Header="Document7" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document3" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document4" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document5" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document6" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document7" syncfusion:DockingManager.State="Document" />
 </syncfusion:DockingManager>
 
 {% endhighlight %}
