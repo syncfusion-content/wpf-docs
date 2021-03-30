@@ -205,6 +205,7 @@ Schedule.ItemsSource = Meetings;
 
 N> 
 * In an all-day panel of the day, week and workweek views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
+
 [View sample in GitHub](https://github.com/SyncfusionExamples/spanned-appointment-scheduler-wpf)
 
 ## All day appointments
@@ -239,8 +240,11 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 ![AllDay Appointment in  WPF Scheduler](appointments_images/adding-alldayappointments.png)
 
 N> 
+
 * Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the `IsAllDay` property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
+
 * In an all-day panel of the day, week and workweek views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
+
 [View sample in GitHub](https://github.com/SyncfusionExamples/all-day-appointments-scheduler-xamarin)
 
 ## Recurrence Appointment

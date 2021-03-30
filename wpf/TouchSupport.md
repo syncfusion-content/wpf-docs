@@ -141,7 +141,7 @@ Port: Drag, Connect.</td>
 <td>View swiping, Scrolling and Dragging </td>
 <td>-</td>
 <td>Tap support for the Cell selection, Appointment selection, and Double-tap support to the appointment editor.</td>
-<td>By default, the cell context menu will be opened when holding on any timeslot or month cell. The appointment context menu will be opened by holding, only if the appointment's drag and drop is disabled using the {{'[AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag)'| markdownify }} property.</td>
+<td>By default, the cell context menu will be opened when holding on any timeslot or month cell. The appointment context menu will be opened by holding, only if the appointment's drag and drop is disabled using the [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property.</td>
 </tr>
 
 <tr>
