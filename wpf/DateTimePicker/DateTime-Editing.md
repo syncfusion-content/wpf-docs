@@ -703,7 +703,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Restrict automatic focus to next field
 
-You can prevent the focus in `DateTimeEdit` automatically moving from one field to another by setting the `AutoForwarding` property value as `false`. By default the value of `AutoForwarding` property is `true`.
+You can prevent the focus in `DateTimeEdit` automatically moving from one field to another by setting the `AutoForwarding` property value as `false`. By default, the value of `AutoForwarding` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
