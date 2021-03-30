@@ -77,13 +77,13 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Working with IEditableObject interface
+## Revert the edited changes while pressing Escape key
 
-ByDefault SfTreeView does not have support for roll back the changes while editing the Treeview node. But you achieve this in SfTreeView When an underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. Then pressing the <kbd>ESC</Kbd> key to commit your roll back changes to the tree view node while editing.
+By default, TreeView does not have support for rollback the changes while pressing the <kbd>ESC</kbd> key while editing the TreeView node. But it supports to rollback the changes when an underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
-The user should take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method than should revert the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method. 
+The user can take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method and can change the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method to rollback the changes.
 
-In the below code snippet explains the simple implementation of IEditableObject.
+The below code snippet explains the simple implementation of IEditableObject interface to rollback the changes.
 
 {% tabs %}
 {% highlight c# %}
@@ -181,7 +181,6 @@ public class Country : INotifyPropertyChanged, IEditableObject
 }
 {% endhighlight %}
 {% endtabs %}
-
 
 ## Events
 
