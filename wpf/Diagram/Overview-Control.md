@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a preview of the entire content of the Diagram | syncfusion.
-description: How to see the preview of the large Diagrams and to ease navigations within that Diagram and how to custimize the appearance and its behaviour?
+description: How to see the preview of the large Diagrams and to ease navigations within that Diagram and how to customize the appearance and its behaviour?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -49,9 +49,40 @@ Steps to add Overview control manually in XAML:
 {% endhighlight %}	
 {% endtabs %}
 
-![Overview](Overview-Control_images/Overview-Control_img1.jpeg)
+![Overview](Overview-Control_images/Overview-Control_img1.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Overview).
+
+## ZoomSlider
+
+The [ShowZoomSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ShowZoomSliderProperty) property is used to show or hide the zoom slider in the overview control. By default, the ShowZoomSlider is true.
+
+You can zoom in or zoom out the overview as well as the diagram by changing the slider or click on the zoom in or zoom out button.
+
+ The following code example explains how to hide the zoom slider.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="UserInteraction_Overview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        WindowStartupLocation="CenterScreen"
+        Title="Overview" Height="720" Width="1200">
+    
+    <!--Initialize the overview control and bind the diagram control elements to overview-->
+    <syncfusion:Overview Source="{Binding ElementName=diagram}" Height="300" Margin="0,25,0,0" ShowZoomSlider="False"/>
+
+    <!--Initialize the SfDiagram-->
+    <syncfusion:SfDiagram x:Name="diagram"/>
+</Window>
+	
+{% endhighlight %}	
+{% endtabs %}
+
+![Overview](Overview-Control_images/Overview-Control_img.png)
+
 
 ## Interaction
 
@@ -71,7 +102,7 @@ Overview control allows Zoom and Pan interactions. The red rectangle indicates t
 {% endhighlight %}	
 {% endtabs %}
 
-The `Constraint` property of the Overview class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
+The [Constraint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.Overview.html#Syncfusion_UI_Xaml_Diagram_Controls_Overview_ConstraintProperty) property of the Overview class allows you to control the Pan and Zoom interactions based the value assigned to that property. The following table explains the various values and their behaviors:
 
 | OverviewConstraints | Description | Output |
 |---|---|---|
