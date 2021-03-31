@@ -81,7 +81,7 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 	
    **Example:** F:\Syncfusion>nuget.exe add "F:\Syncfusion\Syncfusion.UI.WPF.NET.19.1.0.50.nupkg" -Source "F:\Syncfusion" -expand
 	
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_Extract.png)
+   ![Toolbox Installer](Toolbox-Configuration_images/NET_50_Toolbox_Package_Extract.png)
 	
 **step 2:** 
 
@@ -89,7 +89,7 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 	
    **Location:** "C:\Program Files (x86)\NuGet\Config\Syncfusion Toolbox for WPF.config"
 	
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox.png)
+   ![Toolbox Installer](Toolbox-Configuration_images/NET_50_Toolbox.png)
 
    Or you can create this file in the same location by using the XML format given below
     
@@ -109,7 +109,7 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
    Update extracted Syncfusion NuGet package path in **value** attribute.
 	
    **Example:**
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_update.png)
+   ![Toolbox Installer](Toolbox-Configuration_images/NET_50_Toolbox_Package_update.png)
 	
 **step 4:**
    
