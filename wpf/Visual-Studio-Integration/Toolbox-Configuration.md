@@ -71,8 +71,9 @@ You can upgrade the Syncfusion WPF toolbox for .NET 5.O control with NuGet packa
 
 Use the following steps to add the Syncfusion WPF controls through Syncfusion NuGet packages:
 
-    
-1. Extract **"Syncfusion.UI.WPF.NET"** package by using the below commands.
+**step 1:** 
+   
+   Extract **"Syncfusion.UI.WPF.NET"** package by using the below commands.
 	
    Open Command prompt from nuget.exe path and run the following commands
 	
@@ -80,34 +81,39 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 	
    **Example:** F:\Syncfusion>nuget.exe add "F:\Syncfusion\Syncfusion.UI.WPF.NET.19.1.0.50.nupkg" -Source "F:\Syncfusion" -expand
 	
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_Extract.PNG)
+   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_Extract.png)
 	
-    
-2. Open **"Syncfusion Toolbox for WPF.config"** file from the following location.
+**step 2:** 
+
+   Open **"Syncfusion Toolbox for WPF.config"** file from the following location.
 	
    **Location:** "C:\Program Files (x86)\NuGet\Config\Syncfusion Toolbox for WPF.config"
 	
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox.PNG)
+   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox.png)
 
    Or you can create this file in the same location by using the XML format given below
     
    {% tabs %}
    {% highlight XML %}
-   <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <fallbackPackageFolders>
-        <add key="Syncfusion Toolbox Local NuGet Packages {version}" value="F:\Syncfusion" />
-      </fallbackPackageFolders>
-    </configuration>
+     <?xml version="1.0" encoding="utf-8"?>
+      <configuration>
+        <fallbackPackageFolders>
+          <add key="Syncfusion Toolbox Local NuGet Packages {version}" value="F:\Syncfusion" />
+        </fallbackPackageFolders>
+      </configuration>
    {% endhighlight %}
    {% endtabs %}
 	
-3. Update extracted Syncfusion NuGet package path in **value** attribute.
+**step 3:**
+   
+   Update extracted Syncfusion NuGet package path in **value** attribute.
 	
    **Example:**
-   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_update.PNG)
+   ![Toolbox Installer](Toolbox-Configuration_images/.NET_5.0_Toolbox_Package_update.png)
 	
-4. Now restart the Visual Studio 2019 to get populate the latest Syncfusion controls in Toolbox.
+**step 4:**
+   
+   Now restart the Visual Studio 2019 to get populate the latest Syncfusion controls in Toolbox.
 
 
 ## Configuring toolbox for .NET Core 3.1 projects
