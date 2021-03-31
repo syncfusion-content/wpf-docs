@@ -285,7 +285,7 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 ### Add theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window.
 
 ![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
 
@@ -539,7 +539,7 @@ SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
 
 ### Override syncfusion themes in application
 
-All Syncfusion theme [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager?#themes-list) control styles can be overridden by a common naming convention. A unique key is given to each and every style, so that you can override the styles using the `BasedOn` property.
+All Syncfusion theme [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list) control styles can be overridden by a common naming convention. A unique key is given to each and every style, so that you can override the styles using the `BasedOn` property.
 
 The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
 
