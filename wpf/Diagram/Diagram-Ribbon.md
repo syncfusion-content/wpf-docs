@@ -26,7 +26,8 @@ The following table lists actions that end-users can perform using the Diagram R
 |  | Select | Select all the diagram items or by specific type. |
 | Insert | Diagram Parts | Allows you to add an image item or connection line to the canvas. |
 | Design | Page Setup | Toggle between portrait and landscape page orientation, set the page size. |
-|  | Background | Apply a background style to the page. |
+|  | Themes | The diagram theme give your diagram a variety of dynamic looks, ranging from professional and modern to stylish. By combining  colors, fonts, and effects in a unified and purposeful manner, each theme to make the diagram polished look. |
+|  | Variants | Variant styles are set of styles that are applied to the Diagram elements. |
 |  | Connectors | Change the appearance of the connection lines in the canvas. |
 | View | Show | Toggle the visibility of the Zoom Pan window, Rulers, Gridlines, and Page Breaks. |
 |  | Zoom | Zoom the diagram so that the entire page either fits the window or is as wide as the window. |
