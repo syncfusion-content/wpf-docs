@@ -112,13 +112,13 @@ public class Country : INotifyPropertyChanged, IEditableObject
     {
         get 
         { 
-		    return states; 
+            return states; 
         }
         set
         {
             states = value;
             RaisedOnPropertyChanged("States");
-	    }
+        }
     }
 
     public string Name
