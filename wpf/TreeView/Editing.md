@@ -102,22 +102,22 @@ public class Country : INotifyPropertyChanged, IEditableObject
 
     public Country(string name):base()
     {
-	    this.currentData = new Country();
-	    this.currentData.name = name;
-	    this.currentData.isSelected = false;
+        this.currentData = new Country();
+        this.currentData.name = name;
+        this.currentData.isSelected = false;
     }
 
 
     public ObservableCollection<State> States
     {
-	    get 
+        get 
         { 
-            return states; 
-		}
-	    set
-	    {
-		    states = value;
-		    RaisedOnPropertyChanged("States");
+		    return states; 
+        }
+        set
+        {
+            states = value;
+            RaisedOnPropertyChanged("States");
 	    }
     }
 
@@ -138,7 +138,7 @@ public class Country : INotifyPropertyChanged, IEditableObject
     {
         get 
         { 
-	        return this.currentData.isSelected; 
+            return this.currentData.isSelected; 
         }
         set
         {
@@ -153,7 +153,7 @@ public class Country : INotifyPropertyChanged, IEditableObject
 
     public void RaisedOnPropertyChanged(string _PropertyName)
     {
-	    if (PropertyChanged != null)
+        if (PropertyChanged != null)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
         }
