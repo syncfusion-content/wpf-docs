@@ -11,7 +11,7 @@ documentation: ug
 
 ## SmithChart Palette
 
-The Smith chart displays different series in different color by using *Palette* property of **ColorModel**. By default, Metro palette color has been applied.
+The Smith chart displays different series in different color by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel). By default, Metro palette color has been applied.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
 
 **Series Palette**
 
-The palette color to each data points of specific series can be defined by using *Palette* property of **ColorModel** in the Series.
+The palette color to each data points of specific series can be defined by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SmithChartColorModel.html#Syncfusion_UI_Xaml_SmithChart_SmithChartColorModel_Palette) property of [`ColorModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel) in the Series.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ chart.Series.Add(series);
 
 ## Chart Area Customization
 
-Chart and chart area (circle plotting area) can be customized by using the below properties in SmithChart.
+Chart and chart area (circle plotting area) can be customized by using the below properties in [`SfSmithChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html).
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ chart.ChartAreaBorderThickness = new Thickness(2);
 
 ## Circle Radius
 
-To change the diameter of the Smith chart circle with respect to the plot area, use the Radius property. It ranges from 0.1 to 1 and the default value is 0.95.
+To change the diameter of the Smith chart circle with respect to the plot area, use the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_Radius) property. It ranges from 0.1 to 1 and the default value is 0.95.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ this.Grid1.Children.Add(chart);
 
 ### Area bounds
 
-You can get the area bounds of the smith chart by using the `AreaBounds` property in `ChartAreaInfo`.
+You can get the area bounds of the smith chart by using the [`AreaBounds`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_AreaBounds) property in [`ChartAreaInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 
@@ -139,7 +139,7 @@ Rect areaBounds = smithChart.ChartAreaInfo.AreaBounds;
 
 ### Center point
 
-You can get the center point (X and Y) of the smith chart by using the `CenterPoint` property in the `ChartAreaInfo`.
+You can get the center point (X and Y) of the smith chart by using the [`CenterPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_CenterPoint) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 
@@ -149,7 +149,7 @@ Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
 
 ### Radius
 
-You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`
+You can get the radius of the smith chart by using the [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_Radius) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html)
 Code.
 
 {% highlight C# %}
