@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WPF TreeView (SfTreeView)
 
-The TreeView provides support for editing and it can be enabled or disabled by using [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property.You can enter edit mode in a node by pressing <kbd>F2</kbd> key and also by single click or double click by setting `EditTrigger` property. The editing changes in a node will be committed only when user move to next node or pressing <kbd>Enter</kbd> key.
+The TreeView provides support for editing and it can be enabled or disabled by using [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing <kbd>F2</kbd> key and also by single click or double click by setting `EditTrigger` property. The editing changes in a node will be committed only when user move to next node or pressing <kbd>Enter</kbd> key.
 
 It is necessary to define [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplate) / [EditTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplateSelector) for bound mode, to enable editing. For UnboundMode, textbox will be loaded in edit mode by default.
 
@@ -43,7 +43,7 @@ sfTreeView.AllowEditing = true;
 
 ![WPF TreeView in Edit Mode](Editing_images/Editing_image1.png)
 
-## Edit Mode
+## Edit mode
 
 By default, you can move to edit mode by pressing <kbd>F2</kbd> key. TreeView allows you to edit the node in single click(Tap) or double click(DoubleTap) by setting `EditTrigger` property.
 
