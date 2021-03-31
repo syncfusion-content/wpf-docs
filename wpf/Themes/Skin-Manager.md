@@ -26,6 +26,22 @@ Supported in ThemeStudio</th><th>
 Alternative theme suggestion to use</th></tr>
 <tr>
 <td>
+FluentLight</td><td>
+Syncfusion.Themes.FluentLight.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.FluentLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentLight.WPF/)'| markdownify }}
+</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+FluentDark</td><td>
+Syncfusion.Themes.FluentDark.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.FluentDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentDark.WPF/)'| markdownify }}
+</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
 MaterialLight</td><td>
 Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)'| markdownify }}
