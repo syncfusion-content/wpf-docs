@@ -43,9 +43,9 @@ sfTreeView.AllowEditing = true;
 
 ![WPF TreeView in Edit Mode](Editing_images/Editing_image1.png)
 
-## Editmode
+## Edit Mode
 
-By default, you can move to editmode by pressing <kbd>F2</kbd> key. TreeView allows you to edit the node in single click(Tap) or double click(DoubleTap) by setting `EditTrigger` property.
+By default, you can move to edit mode by pressing <kbd>F2</kbd> key. TreeView allows you to edit the node in single click(Tap) or double click(DoubleTap) by setting `EditTrigger` property.
 
 {% tabs %}
 {% highlight xaml %}
