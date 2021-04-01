@@ -9,7 +9,7 @@ documentation: ug
 
 # Pointers support in WPF Linear Gauge (SfLinearGauge)
 
-The `LinearGauge` provides support to mark values using the `BarPointer` and `SymbolPointer`.
+The [`LinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) provides support to mark values using the `BarPointer` and `SymbolPointer`.
 
 ## Bar pointer
 
@@ -437,7 +437,7 @@ The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 ### Adding multiple pointers
 
-In addition to the default pointer, you can add "n" number of pointers to a linear scale using the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Pointers) property.
+In addition to the default pointer, you can add "n" number of [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Pointers) to a linear scale using the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Pointers) property.
 
 {% tabs %}
 
@@ -525,7 +525,7 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 ## Setting animation for pointer
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) is a Boolean property, which is used to enable or disable the animation of the pointers in linear gauge and the animation speed can be controlled with `AnimationDuration` property.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_EnableAnimationProperty) is a Boolean property, which is used to enable or disable the animation of the [`Pointers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Pointers) in linear gauge and the animation speed can be controlled with [`AnimationDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_AnimationDuration) property.
 
 {% tabs %}
 

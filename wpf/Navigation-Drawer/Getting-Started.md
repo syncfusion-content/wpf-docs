@@ -343,4 +343,4 @@ See also [Different display modes](https://help.syncfusion.com/wpf/navigation-dr
 
 ![Getting started image](Getting-Started_images/Getting-Started_img5.png)
                    
-
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Getting_Started) in GitHub

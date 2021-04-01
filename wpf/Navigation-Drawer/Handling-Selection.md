@@ -36,3 +36,6 @@ var selectedItem = this.navigationDrawer.SelectedItem as NavigationModel;
 {% endhighlight %}
 
 {% endtabs %}
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Handling_Selection) in GitHub
