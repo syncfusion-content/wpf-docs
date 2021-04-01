@@ -44,12 +44,12 @@ An image can be cropped in rectangle and circle format. By default, rectangle fo
 
 Cropping can be done programmatically using  the following two methods in image editor:
 
-* ToggleCropping - Selects the cropping area.
-* Crop - Crops the selected area in an image.
+* [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) - Selects the cropping area.
+* [`Crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) - Crops the selected area in an image.
 
 ### Toggle cropping
 
-Toggle cropping method selects the cropping area based on the specified parameters.
+[`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) method selects the cropping area based on the specified parameters.
 
 ### Crop area selection
 
@@ -112,7 +112,7 @@ editor.ToggleCropping(new Rect(25, 25, 50, 50), true);
 
 ### Crop
 
-After selecting the crop area, use the crop method in the image editor to crop the selected portion as demonstrated in the following method.
+After selecting the crop area, use the [`crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method in the image editor to crop the selected portion as demonstrated in the following method.
 
 {% tabs %} 
 
@@ -126,7 +126,7 @@ editor.Crop(new Rect(0, 0, 0, 0)
 
 ### Manual cropping
 
-To manually select and crop the location, use the same Crop method, but specify the portion to be cropped in terms of rect as in the following code.
+To manually select and crop the location, use the same [`Crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method, but specify the portion to be cropped in terms of rect as in the following code.
 
 {% tabs %} 
 

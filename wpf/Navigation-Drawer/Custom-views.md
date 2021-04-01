@@ -1579,3 +1579,5 @@ namespace NavigationDrawerWPF
 
 {% endhighlight %}
 {% endtabs %}
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Custom_View) in GitHub

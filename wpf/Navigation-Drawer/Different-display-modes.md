@@ -255,6 +255,9 @@ This switches the display mode to compact when the application window size is le
 
 ![DisplayMode](DisplayMode_images/AutoChangeDisplayMode.gif)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Display_Mode) in GitHub
+
+
 ## Collapsible drawer mode
 
 A collapsible drawer can be achieved using the Navigation Drawer by setting the display mode to [Default mode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.DisplayMode.html). In this display mode, the drawer menu is populated using [custom views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views).
