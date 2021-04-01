@@ -237,6 +237,8 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 ![Populating with Data](Populating_Data_images/NavigationItem.png)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Populating_With_Items) in GitHub
+
 ### IconTemplate
 
 The IconTemplate is used to provide the custom icon for the NavigationItem.
@@ -382,7 +384,7 @@ The WPF Navigation Drawer has four built-in item types that can be set to each `
 * **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a sub item also but cannot have a sub item. 
 * **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a sub item also but cannot have a sub item. 
 
-See also [Populating with items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-with-items) section.
+See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 N> ItemType default value is Tab.
 
@@ -681,6 +683,9 @@ When using the `ItemsSource` to show the content of the item achieved by [Displa
 
 ![Populating with Data](Populating_Data_images/Hierarchical_Data_Binding.png)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Hierarchical_Data_Binding) in GitHub
+
+
 ## IndentationWidth
 
 This property used to change the horizontal position of sub items. Left margin of the sub items depends on the [IndentationWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IndentationWidth) property.
@@ -811,6 +816,7 @@ This property used to change the horizontal position of sub items. Left margin o
 
 {% endtabs %}
 
+See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 ![Populating with Data](Populating_Data_images/IndentationWidth.png)
 

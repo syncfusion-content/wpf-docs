@@ -41,7 +41,7 @@ The `AutoExpandMode` property is only applicable for bound mode. For Unbound mod
 
 ## Saving and loading expand state of node from the property in data object
 
-You can bind expand state of node to the bool property in underlying data object by using `IsExpandedPropertyName` property. TreeView updates the expanded of node when underlying data object property gets changed and vice versa.
+You can bind expand state of node to the bool property in underlying data object by using [IsExpandedPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_Engine_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. TreeView updates the expanded of node when underlying data object property gets changed and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
