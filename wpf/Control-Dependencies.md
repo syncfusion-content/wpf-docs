@@ -15,47 +15,6 @@ You can refer to the [syncfusion controls section](https://help.syncfusion.com/w
 
 N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
-## GRIDS
-<table>
-<tr>
-<th>Control</th>
-<th colspan=2>Assembly dependencies</th>
-<td>NuGet</td>
-<tr>
-    <th></th>
-    <th>.NET Framework</th>
-    <th>.NET Core & .NET 5</th>
-    <th></th>
-</tr>
-<tr>
-<td>SfDataGrid</td>
-<td>
-Syncfusion.SfGrid.WPF<br/>
-Syncfusion.Data.WPF<br/>
-Syncfusion.Shared.WPF<br/>
-</td>
-<td>
-Syncfusion.Data.WPF<br/>
-Syncfusion.Shared.WPF<br/>
-</td>
-<td><a href="https://www.nuget.org/packages/Syncfusion.SfGrid.WPF/">Syncfusion.SfGrid.WPF</a></td>
-</tr>
-<tr>
-<td>SfTreeGrid</td>
-<td>
-Syncfusion.SfGrid.WPF<br/>
-Syncfusion.Data.WPF<br/>
-Syncfusion.Shared.WPF<br/>
-</td>
-<td>
-Syncfusion.Data.WPF<br/>
-Syncfusion.Shared.WPF<br/>
-</td>
-<td><a href="https://www.nuget.org/packages/Syncfusion.SfGrid.WPF/">Syncfusion.SfGrid.WPF</a></td>
-</tr>
-</tr>
-</table>
-
 ## AutoComplete
 
 <table>
