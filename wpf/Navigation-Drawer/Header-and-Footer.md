@@ -203,3 +203,7 @@ The Navigation Drawer's Footer can be customized using the [FooterItems](https:/
 The header and footer part can also be customized by loading a custom view. This can be achieved in `Default` display mode. Using the [DrawerFooterView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerHeaderView) and [DrawerFooterView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerFooterView) properties, custom views can be loaded to the header and footer.
 
 See also [Custom views](https://help.syncfusion.com/wpf/navigation-drawer/custom-views) section for creating a custom navigation menu.
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Header_and_Footer) in GitHub
+

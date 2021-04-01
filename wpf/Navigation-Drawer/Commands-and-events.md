@@ -938,3 +938,6 @@ public class DelegateCommand<T> : ICommand
 ![Commands](Command_image/Command.png)
 
 N> The `Command` execution is only applicable for compact and expanded display mode.
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Commands) in GitHub
