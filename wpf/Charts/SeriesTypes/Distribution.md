@@ -110,7 +110,7 @@ chart.Series.Add(series);
 
 **CurveLineStyle**
 
-You can customize the normal distribution curve by using the [`CurveLineStyle`] property.
+You can customize the normal distribution curve by using the [`CurveLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_CurveLineStyle) property.
 
 {% tabs %}
 

@@ -15,6 +15,10 @@ The Theme Studio helps users transform their visual presentation into a new them
 
 The WPF Theme Studio comes with the following set of themes,
 
+* Fluent Light
+
+* Fluent Dark
+
 * Material Light
 
 * Material Dark
