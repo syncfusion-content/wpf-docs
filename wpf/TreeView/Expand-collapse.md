@@ -58,110 +58,110 @@ xmlns:treeviewengine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=
 {% endhighlight %}
 {% highlight c# %}
 
-    public class FileManager : INotifyPropertyChanged
+public class FileManager : INotifyPropertyChanged
+{
+    private string fileName;        
+    private ObservableCollection<FileManager> subFiles;
+    private bool isExpanded;
+
+    public ObservableCollection<FileManager> SubFiles
     {
-        private string fileName;        
-        private ObservableCollection<FileManager> subFiles;
-        private bool isExpanded;
-
-        public ObservableCollection<FileManager> SubFiles
+        get { return subFiles; }
+        set
         {
-            get { return subFiles; }
-            set
-            {
-                subFiles = value;
-                RaisedOnPropertyChanged("SubFiles");
-            }
-        }
-
-        public string ItemName
-        {
-            get { return fileName; }
-            set
-            {
-                fileName = value;
-                RaisedOnPropertyChanged("ItemName");
-            }
-        }
-       
-        public bool IsExpanded
-        {
-            get { return isExpanded; }
-            set
-            {
-                isExpanded = value;
-                RaisedOnPropertyChanged("IsExpanded");
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void RaisedOnPropertyChanged(string _PropertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
-            }
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
         }
     }
 
-
-    public class FileManagerViewModel
+    public string ItemName
     {
-        private ObservableCollection<FileManager> folders;
-
-        public FileManagerViewModel()
+        get { return fileName; }
+        set
         {
-            GenerateSource();            
+            fileName = value;
+            RaisedOnPropertyChanged("ItemName");
         }
+    }
 
-        public ObservableCollection<FileManager> Folders
+    public bool IsExpanded
+    {
+        get { return isExpanded; }
+        set
         {
-            get { return folders; }
-            set { this.folders = value; }
+            isExpanded = value;
+            RaisedOnPropertyChanged("IsExpanded");
         }
+    }
 
-        private void GenerateSource()
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
         {
-            var fileManager = new ObservableCollection<FileManager>();
-            
-            var doc = new FileManager() { ItemName = "Documents", IsExpanded = true };
-            var download = new FileManager() { ItemName = "Downloads",  IsExpanded = false };
-            
-            var pollution = new FileManager() { ItemName = "Environmental Pollution.docx"};
-            var globalWarming = new FileManager() { ItemName = "Global Warming.ppt" };
-            var sanitation = new FileManager() { ItemName = "Sanitation.docx"};
-            var socialNetwork = new FileManager() { ItemName = "Social Network.pdf" };
-            var youthEmpower = new FileManager() { ItemName = "Youth Empowerment.pdf" };
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
 
-            var games = new FileManager() { ItemName = "Game.exe" };
-            var tutorials = new FileManager() { ItemName = "Tutorials.zip" };
-            var TypeScript = new FileManager() { ItemName = "TypeScript.7z"};
-            var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf"};
-            
-            doc.SubFiles = new ObservableCollection<FileManager>
-            {
-                pollution,
-                globalWarming,
-                sanitation,
-                socialNetwork,
-                youthEmpower
-            };
-         
-            download.SubFiles = new ObservableCollection<FileManager>
-            {
-                games,
-                tutorials,
-                TypeScript,
-                uiGuide
-            };
+
+public class FileManagerViewModel
+{
+    private ObservableCollection<FileManager> folders;
+
+    public FileManagerViewModel()
+    {
+        GenerateSource();            
+    }
+
+    public ObservableCollection<FileManager> Folders
+    {
+        get { return folders; }
+        set { this.folders = value; }
+    }
+
+    private void GenerateSource()
+    {
+        var fileManager = new ObservableCollection<FileManager>();
         
-            fileManager.Add(doc);
-            fileManager.Add(download);
-         
-            folders = fileManager;
-        }
+        var doc = new FileManager() { ItemName = "Documents", IsExpanded = true };
+        var download = new FileManager() { ItemName = "Downloads",  IsExpanded = false };
+        
+        var pollution = new FileManager() { ItemName = "Environmental Pollution.docx"};
+        var globalWarming = new FileManager() { ItemName = "Global Warming.ppt" };
+        var sanitation = new FileManager() { ItemName = "Sanitation.docx"};
+        var socialNetwork = new FileManager() { ItemName = "Social Network.pdf" };
+        var youthEmpower = new FileManager() { ItemName = "Youth Empowerment.pdf" };
+
+        var games = new FileManager() { ItemName = "Game.exe" };
+        var tutorials = new FileManager() { ItemName = "Tutorials.zip" };
+        var TypeScript = new FileManager() { ItemName = "TypeScript.7z"};
+        var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf"};
+        
+        doc.SubFiles = new ObservableCollection<FileManager>
+        {
+            pollution,
+            globalWarming,
+            sanitation,
+            socialNetwork,
+            youthEmpower
+        };
+     
+        download.SubFiles = new ObservableCollection<FileManager>
+        {
+            games,
+            tutorials,
+            TypeScript,
+            uiGuide
+        };
+    
+        fileManager.Add(doc);
+        fileManager.Add(download);
+     
+        folders = fileManager;
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
