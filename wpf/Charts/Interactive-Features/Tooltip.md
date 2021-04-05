@@ -150,7 +150,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 ### Customizing the tooltip background
 
-The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for tooltip, specify the style of `TargetType` as `Path.`
+The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a style for the tooltip background, specify the style of `TargetType` as `Path.`
 
 The following code example explains applying the style for tooltip.
 
@@ -191,7 +191,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Customizing the tooltip label style
 
-The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for the tooltip label, specify the style of `TargetType` as `TextBlock.`
+The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a style for the tooltip label, specify the style of `TargetType` as `TextBlock.`
 
 The following code example explains applying the style for a tooltip label.
 
