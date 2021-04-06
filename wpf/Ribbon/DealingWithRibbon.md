@@ -420,9 +420,9 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
 ## Adding custom items to the Ribbon
 
-The RibbonItemHost control allows to add any kind of custom control, such as combo box, text box, radio button, check box, and more to be displayed on the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html). The RibbonItemHost contains a ContentTemplate property of DataTemplate type which enables us to define any custom control.
+The [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) control allows hosting any control, such as Combobox, Textbox, Radio button, Checkbox, and more to be displayed on the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) and also allows to add in [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html). The [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_ContentTemplate) property can be used to host any control.
 
-In the below example, MS CheckBox is set to the ContentTemplate property of the RibbonItemHost within the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). 
+In the below example, MS CheckBox is set to the [`ContentTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_ContentTemplate) property of the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) within the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). 
 
 {% tabs %}
 
@@ -450,42 +450,42 @@ In the below example, MS CheckBox is set to the ContentTemplate property of the 
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <CheckBox Content="Header Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsHeaderRowChecked , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <CheckBox Content="Header Row" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <CheckBox Content="Total Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsTotalRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <CheckBox Content="Total Row" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <CheckBox Content="Banded Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <CheckBox Content="Banded Row" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="First Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsFirstColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <RadioButton Margin="4,0,0,0" Content="First Column" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="Last Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsLastColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <RadioButton Margin="4,0,0,0" Content="Last Column" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost>
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="Banded Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <RadioButton Margin="4,0,0,0" Content="Banded Column" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
@@ -526,161 +526,19 @@ In the below example, MS CheckBox is set to the ContentTemplate property of the 
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-public class ViewModel : NotificationObject
-{
-    #region Fields
-    /// <summary>
-    /// Maintains the Header Row selection.
-    /// </summary>
-    private bool isHeaderRowChecked = true;
-
-    /// <summary>
-    /// Maintains the Total Row selection.
-    /// </summary>
-    private bool isTotalRowChecked = false;
-
-    /// <summary>
-    /// Maintains the Banded Row selection.
-    /// </summary>
-    private bool isBandedRowChecked = false;
-
-    /// <summary>
-    /// Maintains the First Column selection.
-    /// </summary>
-    private bool isFirstColumnChecked = true;
-
-    /// <summary>
-    /// Maintains the Last Column selection.
-    /// </summary>
-    private bool isLastColumnChecked = false;
-
-    /// <summary>
-    /// Maintains the Banded Column selection.
-    /// </summary>
-    private bool isBandedColumnChecked = false;
-    #endregion
-
-    #region Constructor
-
-    public ViewModel()
-    {
-
-    }
-    #endregion
-    #region Properties
-
-    /// <summary>
-    /// Gets or sets whether the Header Row is checked.
-    /// </summary>
-    public bool IsHeaderRowChecked
-    {
-        get
-        {
-            return isHeaderRowChecked;
-        }
-        set
-        {
-            isHeaderRowChecked = value;
-            RaisePropertyChanged("IsHeaderRowChecked");
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets whether the Total Row is checked.
-    /// </summary>
-    public bool IsTotalRowChecked
-    {
-        get
-        {
-            return isTotalRowChecked;
-        }
-        set
-        {
-            isTotalRowChecked = value;
-            RaisePropertyChanged("IsTotalRowChecked");
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets whether the Banded Row is checked.
-    /// </summary>
-    public bool IsBandedRowChecked
-    {
-        get
-        {
-            return isBandedRowChecked;
-        }
-        set
-        {
-            isBandedRowChecked = value;
-            RaisePropertyChanged("IsBandedRowChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the First Column is checked.
-    /// </summary>
-    public bool IsFirstColumnChecked
-    {
-        get
-        {
-            return isFirstColumnChecked;
-        }
-        set
-        {
-            isFirstColumnChecked = value;
-            RaisePropertyChanged("IsFirstColumnChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the Last Column is checked.
-    /// </summary>
-    public bool IsLastColumnChecked
-    {
-        get
-        {
-            return isLastColumnChecked;
-        }
-        set
-        {
-            isLastColumnChecked = value;
-            RaisePropertyChanged("IsLastColumnChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the Banded Column is checked.
-    /// </summary>
-    public bool IsBandedColumnChecked
-    {
-        get
-        {
-            return isBandedColumnChecked;
-        }
-        set
-        {
-            isBandedColumnChecked = value;
-            RaisePropertyChanged("IsBandedColumnChecked");
-        }
-    }
-    #endregion
-}
-
-{% endhighlight %}
-
 {% endtabs %}
 
-![Custom items in RibbonBar](RibbonCustomItem_images/CustomItemsInRibbonBar.png)
+![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-RibbonBar.png)
 
 ### Adding the custom item to the QAT
 
-The custom item present in the RibbonBar can be added to the [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html) using ribbon context menu or through QAT customization dialog. In the QAT customization dialog, all the ribbon items are displayed using its Label and Icon properties. As like other ribbon items, the RibbonItemHost also allows us to set the label and icon using its Label and IconTemplate properties respectively.
+The control hosted in [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) can be added to the [`QuickAccessToolBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html) using ribbon context menu or through QAT customization dialog. In the QAT customization dialog, all the ribbon items are displayed using its [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_Label) and [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemsControl.html#Syncfusion_Windows_Tools_Controls_RibbonItemsControl_IconTemplate) properties. Similarly, the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) also allows us to set the label and icon using its [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_Label) and [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate) properties respectively.
 
-* Label - Used to display the text of RibbonItemHost inside the QAT customization dialog.
+* [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_Label) - Used to display the text of [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) inside the QAT customization dialog.
 
-* IconTemplate - Gets or sets the template that is used to display the icon of RibbonItemHost inside the QAT customization dialog.
+* [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate) - Gets or sets the template that is used to display the icon of [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) inside the QAT customization dialog.
 
-In the below example, the Label and IconTemplate are set for the RibbonItemHost controls which will be used when the items are displayed in the QAT customization dialog. 
+In the below example, the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_Label) and [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html#Syncfusion_Windows_Tools_Controls_RibbonItemHost_IconTemplate) are set for the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html) controls which will be used when the items are displayed in the QAT customization dialog. 
 
 {% tabs %}
 
@@ -723,42 +581,6 @@ In the below example, the Label and IconTemplate are set for the RibbonItemHost 
                          Stretch="Fill" />
             </Grid>
         </DataTemplate>
-        <DataTemplate x:Key="TwoPages">
-            <Grid>
-                <Path
-                         Margin="0.5"
-                         Data="M8.0000038,6.7055242E-07 L15.000004,6.7055242E-07 15.000004,9.0000009 8.0000038,9.0000009 z M0,0 L7,0 7,9 0,9 z"
-                         Fill="White"
-                         Stretch="Fill" />
-                <Path
-                         Margin="1"
-                         Data="M9.0000038,1.0000005 L9.0000038,9.000001 15.000004,9.000001 15.000004,1.0000005 z M1,1 L1,9 7,9 7,1 z M8.0000038,7.1525591E-07 L16.000004,7.1525591E-07 16.000004,10.000001 8.0000038,10.000001 z M0,0 L8,0 8,10 0,10 z"
-                         Fill="#FF3A3A38"
-                         Stretch="Fill" />
-                <Path
-                         Margin="2,4"
-                         Data="M0,3 L4,3 4,3.9999998 0,3.9999998 z M7.9999967,2.9999993 L11.999997,2.9999993 11.999997,3.9999992 7.9999967,3.9999992 z M8.0000001,0 L12,0 12,1 8.0000001,1 z M0,0 L4,0 4,0.99999976 0,0.99999976 z"
-                         Fill="#FF797774"
-                         Stretch="Fill" />
-            </Grid>
-        </DataTemplate>
-        <DataTemplate x:Key="PageWidth">
-            <Grid>
-                <Path Data="M2,9.0000019L2,24 30,24 30,9.0000019z M13.498982,2.9999743C14.326982,2.9999743 14.998982,3.6719742 14.998982,4.4999743 14.998982,5.3279743 14.326982,5.9999743 13.498982,5.9999743 12.670982,5.9999743 11.998982,5.3279743 11.998982,4.4999743 11.998982,3.6719742 12.670982,2.9999743 13.498982,2.9999743z M9.4989824,2.9999743C10.326982,2.9999743 10.998982,3.6719742 10.998982,4.4999743 10.998982,5.3279743 10.326982,5.9999743 9.4989824,5.9999743 8.6709824,5.9999743 7.9989824,5.3279743 7.9989824,4.4999743 7.9989824,3.6719742 8.6709824,2.9999743 9.4989824,2.9999743z M5.4989824,2.9999743C6.3269825,2.9999743 6.9989824,3.6719742 6.9989824,4.4999743 6.9989824,5.3279743 6.3269825,5.9999743 5.4989824,5.9999743 4.6709824,5.9999743 3.9989824,5.3279743 3.9989824,4.4999743 3.9989824,3.6719742 4.6709824,2.9999743 5.4989824,2.9999743z M2,2L2,7.0000014 30,7.0000014 30,2z M0,0L32,0 32,26 0,26z"
-                  Stretch="Uniform"
-                  Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
-                  Width="16" Height="16" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <TransformGroup.Children>
-                                <RotateTransform Angle="0" />
-                                <ScaleTransform ScaleX="1" ScaleY="1" />
-                            </TransformGroup.Children>
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-            </Grid>
-        </DataTemplate>
         <DataTemplate x:Key="AlignLeft">
             <Path
                         x:Name="Align_Left1"
@@ -768,30 +590,6 @@ In the below example, the Label and IconTemplate are set for the RibbonItemHost 
                         HorizontalAlignment="Left"
                         VerticalAlignment="Bottom"
                         Data="M0,12 L10,12 10,13 0,13 z M0,8 L14,8 14,9 0,9 z M0,4 L10,4 10,5 0,5 z M0,0 L14,0 14,1 0,1 z"
-                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
-                        Stretch="Fill" />
-        </DataTemplate>
-        <DataTemplate x:Key="AlignRight">
-            <Path
-                        x:Name="Align_Right1"
-                        Width="14"
-                        Height="13"
-                        Margin="2,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Bottom"
-                        Data="M4,12 L14,12 14,13 4,13 z M0,8 L14,8 14,9 0,9 z M4,4 L14,4 14,5 4,5 z M0,0 L14,0 14,1 0,1 z"
-                        Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
-                        Stretch="Fill" />
-        </DataTemplate>
-        <DataTemplate x:Key="AlignJustify">
-            <Path
-                        x:Name="Justify1"
-                        Width="14"
-                        Height="13"
-                        Margin="2,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Bottom"
-                        Data="M0,12 L14,12 14,13 0,13 z M0,8 L14,8 14,9 0,9 z M0,4 L14,4 14,5 0,5 z M0,0 L14,0 14,1 0,1 z"
                         Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
                         Stretch="Fill" />
         </DataTemplate>
@@ -828,42 +626,14 @@ In the below example, the Label and IconTemplate are set for the RibbonItemHost 
                     <syncfusion:RibbonItemHost Label="Header Row" IconTemplate="{StaticResource OnePage}">
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <CheckBox Content="Header Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsHeaderRowChecked , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
-                            </DataTemplate>
-                        </syncfusion:RibbonItemHost.ContentTemplate>
-                    </syncfusion:RibbonItemHost>
-                    <syncfusion:RibbonItemHost  Label="Total Row" IconTemplate="{StaticResource TwoPages}">
-                        <syncfusion:RibbonItemHost.ContentTemplate>
-                            <DataTemplate>
-                                <CheckBox Content="Total Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsTotalRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
-                            </DataTemplate>
-                        </syncfusion:RibbonItemHost.ContentTemplate>
-                    </syncfusion:RibbonItemHost>
-                    <syncfusion:RibbonItemHost Label="Banded Row" IconTemplate="{StaticResource PageWidth}">
-                        <syncfusion:RibbonItemHost.ContentTemplate>
-                            <DataTemplate>
-                                <CheckBox Content="Banded Row" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedRowChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <CheckBox Content="Header Row" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
                     <syncfusion:RibbonItemHost Label="First Column" IconTemplate="{StaticResource AlignLeft}">
                         <syncfusion:RibbonItemHost.ContentTemplate>
                             <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="First Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsFirstColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
-                            </DataTemplate>
-                        </syncfusion:RibbonItemHost.ContentTemplate>
-                    </syncfusion:RibbonItemHost>
-                    <syncfusion:RibbonItemHost Label="Last Column" IconTemplate="{StaticResource AlignRight}">
-                        <syncfusion:RibbonItemHost.ContentTemplate>
-                            <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="Last Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsLastColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
-                            </DataTemplate>
-                        </syncfusion:RibbonItemHost.ContentTemplate>
-                    </syncfusion:RibbonItemHost>
-                    <syncfusion:RibbonItemHost Label="Banded Column" IconTemplate="{StaticResource AlignJustify}">
-                        <syncfusion:RibbonItemHost.ContentTemplate>
-                            <DataTemplate>
-                                <RadioButton Margin="4,0,0,0" Content="Banded Column" IsChecked="{Binding ElementName=mainRibbon, Path=DataContext.IsBandedColumnChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="22"/>
+                                <RadioButton Margin="4,0,0,0" Content="First Column" Height="22"/>
                             </DataTemplate>
                         </syncfusion:RibbonItemHost.ContentTemplate>
                     </syncfusion:RibbonItemHost>
@@ -904,153 +674,11 @@ In the below example, the Label and IconTemplate are set for the RibbonItemHost 
 
 {% endhighlight %}
 
-{% highlight C# %}
-
-public class ViewModel : NotificationObject
-{
-    #region Fields
-    /// <summary>
-    /// Maintains the Header Row selection.
-    /// </summary>
-    private bool isHeaderRowChecked = true;
-
-    /// <summary>
-    /// Maintains the Total Row selection.
-    /// </summary>
-    private bool isTotalRowChecked = false;
-
-    /// <summary>
-    /// Maintains the Banded Row selection.
-    /// </summary>
-    private bool isBandedRowChecked = false;
-
-    /// <summary>
-    /// Maintains the First Column selection.
-    /// </summary>
-    private bool isFirstColumnChecked = true;
-
-    /// <summary>
-    /// Maintains the Last Column selection.
-    /// </summary>
-    private bool isLastColumnChecked = false;
-
-    /// <summary>
-    /// Maintains the Banded Column selection.
-    /// </summary>
-    private bool isBandedColumnChecked = false;
-    #endregion
-
-    #region Constructor
-
-    public ViewModel()
-    {
-
-    }
-    #endregion
-    #region Properties
-
-    /// <summary>
-    /// Gets or sets whether the Header Row is checked.
-    /// </summary>
-    public bool IsHeaderRowChecked
-    {
-        get
-        {
-            return isHeaderRowChecked;
-        }
-        set
-        {
-            isHeaderRowChecked = value;
-            RaisePropertyChanged("IsHeaderRowChecked");
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets whether the Total Row is checked.
-    /// </summary>
-    public bool IsTotalRowChecked
-    {
-        get
-        {
-            return isTotalRowChecked;
-        }
-        set
-        {
-            isTotalRowChecked = value;
-            RaisePropertyChanged("IsTotalRowChecked");
-        }
-    }
-
-    /// <summary>
-    /// Gets or sets whether the Banded Row is checked.
-    /// </summary>
-    public bool IsBandedRowChecked
-    {
-        get
-        {
-            return isBandedRowChecked;
-        }
-        set
-        {
-            isBandedRowChecked = value;
-            RaisePropertyChanged("IsBandedRowChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the First Column is checked.
-    /// </summary>
-    public bool IsFirstColumnChecked
-    {
-        get
-        {
-            return isFirstColumnChecked;
-        }
-        set
-        {
-            isFirstColumnChecked = value;
-            RaisePropertyChanged("IsFirstColumnChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the Last Column is checked.
-    /// </summary>
-    public bool IsLastColumnChecked
-    {
-        get
-        {
-            return isLastColumnChecked;
-        }
-        set
-        {
-            isLastColumnChecked = value;
-            RaisePropertyChanged("IsLastColumnChecked");
-        }
-    }
-    /// <summary>
-    /// Gets or sets whether the Banded Column is checked.
-    /// </summary>
-    public bool IsBandedColumnChecked
-    {
-        get
-        {
-            return isBandedColumnChecked;
-        }
-        set
-        {
-            isBandedColumnChecked = value;
-            RaisePropertyChanged("IsBandedColumnChecked");
-        }
-    }
-    #endregion
-}
-
-{% endhighlight %}
-
 {% endtabs %}
 
-![Custom items in MoreCommands window](RibbonCustomItem_images/CustomItemsInMoreCommands.png)
+![WPF Ribbon Custom Items in MoreCommands window](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-MoreCommands-window.png)
 
-![Custom items in RibbonBar](RibbonCustomItem_images/CustomItemsInQAT.png)
+![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-QAT.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Adding-custom-items-to-the-ribbon)
 
