@@ -203,6 +203,8 @@ public class Country : INotifyPropertyChanged, IEditableObject
 {% endhighlight %}
 {% endtabs %}
 
+N> View sample in [GitHub](https://github.com/syncfusion/wpf-demos/blob/master/treeview/Views/EditingDemo.xaml)
+
 ## Events
 
 ### ItemBeginEdit Event
