@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfDatePicker
 
-This section explains how to create a WPF [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) and explains about its structure.
+This section explains how to create a [WPF DatePicker](https://www.syncfusion.com/wpf-controls/datepicker) and explains about its structure.
 
 ## Structure of SfDatePicker
 
