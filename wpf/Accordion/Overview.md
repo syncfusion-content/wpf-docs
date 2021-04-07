@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of WPF Accordion Control | WPF | Syncfusion
+title: Overview of WPF Accordion Control | Syncfusion
 description: The WPF Accordion control is a container that expands and collapses the specific content from a stacked list of items.
 platform: WPF
 control: SfAccordion
