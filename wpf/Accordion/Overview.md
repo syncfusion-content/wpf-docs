@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The [SfAccordion](https://www.syncfusion.com/wpf-controls/accordion) control organizes content into multiple collapsible sections that can be expanded on demand. Single or multiple content can be expanded at a time.
+The [WPF Accordion](https://www.syncfusion.com/wpf-controls/accordion) control organizes content into multiple collapsible sections that can be expanded on demand. Single or multiple content can be expanded at a time.
 
 ## Features
 
