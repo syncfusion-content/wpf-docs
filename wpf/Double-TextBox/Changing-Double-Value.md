@@ -130,7 +130,7 @@ doubleTextBox.Value = 12345.67;
 
 ![DoubleTextBox pasting the copied value in specific place](Changing-Double-Value_images/Pasting.png)
 
-## Changing double value by SpinButton
+## Show UpDown Button
 
 You can increment or decrement the double value of `DoubleTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the double value. The default value of `ShowSpinButton` property is `false`.
 
