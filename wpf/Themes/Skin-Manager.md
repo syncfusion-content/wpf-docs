@@ -135,7 +135,7 @@ Syncfusion.Themes.Metro.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Metro.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Metro.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-Office2019Colorful</td></tr>
+FluentLight, Office2019Colorful</td></tr>
 <tr>
 <td>
 Lime</td><td>
@@ -143,7 +143,7 @@ Syncfusion.Themes.Lime.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Lime.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Lime.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-Office2019Colorful</td></tr>
+FluentLight, Office2019Colorful</td></tr>
 <tr>
 <td>
 Saffron</td><td>
@@ -151,7 +151,7 @@ Syncfusion.Themes.Saffron.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Saffron.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Saffron.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-Office2019Colorful</td></tr>
+FluentLight, Office2019Colorful</td></tr>
 <tr>
 <td>
 Blend</td><td>
@@ -159,7 +159,7 @@ Syncfusion.Themes.Blend.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Blend.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Blend.WPF/)'| markdownify }}
 </td><td>
 -</td><td>
-MaterialDark, Office2019Black</td></tr>
+FluentDark, MaterialDark, Office2019Black</td></tr>
 <tr>
 <td>
 Office2013White</td><td>
@@ -267,7 +267,7 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 1) Add reference to `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
 2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
 
-![Add SfSkinManager Reference](Skin-Manager_images/Skin-Manager_img1.png)
+![Add SfSkinManager Reference](Skin-Manager_images/WPF-SkinManager-Reference.png)
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in application, you need to add reference to corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. When you are applying theme to a Window, SkinManager inherits the same theme to all the elements inside window.
 
-![Add theme assembly reference](Skin-Manager_images/Skin-Manager_img2.png)
+![Add theme assembly reference](Skin-Manager_images/Add-MaterialDark-Theme-Assembly-Reference.png)
 
 
 ### Set theme
@@ -336,7 +336,7 @@ SfSkinManager.SetTheme(this, new Theme("MaterialDark"));
 
 {% endtabs %}
 
-![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Skin-Manager_img3.jpg)
+![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Applied-SkinManager-Theme-WPF-ChromelessWindow-DataGrid.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
@@ -371,6 +371,18 @@ Please find the complete list of theme name and respective theme settings class.
 <th>
 Styles/Theme name</th><th>
 Respective theme settings class to customize</th></tr>
+<tr>
+<td>
+FluentLight</td><td>
+{{'[FluentLightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentLight.WPF.FluentLightThemeSettings.html)'| markdownify }}
+</td></tr>
+<tr>
+<tr>
+<td>
+FluentDark</td><td>
+{{'[FluentDarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentDarkThemeSettings.html)'| markdownify }}
+</td></tr>
+<tr>
 <tr>
 <td>
 MaterialLight</td><td>
@@ -432,21 +444,23 @@ SystemTheme</td><td>
 
 {% highlight C# %}
 
-MaterialDarkThemeSettings themeSettings = new MaterialDarkThemeSettings();
+FluentDarkThemeSettings themeSettings = new FluentDarkThemeSettings();
 themeSettings.PrimaryBackground = new SolidColorBrush(Colors.Red);
-themeSettings.PrimaryForeground = new SolidColorBrush(Colors.AntiqueWhite);themeSettings.BodyFontSize = 15;
+themeSettings.PrimaryForeground = new SolidColorBrush(Colors.AntiqueWhite); 
+themeSettings.BodyFontSize = 15;
 themeSettings.HeaderFontSize = 18;
 themeSettings.SubHeaderFontSize = 17;
 themeSettings.TitleFontSize = 17;
 themeSettings.SubTitleFontSize = 16;
+themeSettings.BodyAltFontSize = 15;
 themeSettings.FontFamily = new FontFamily("Callibri");
-SfSkinManager.RegisterThemeSettings("MaterialDark", themeSettings);
+SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Applied custom theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Skin-Manager_img5.png)
+![Applied custom theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Custom-Theme-WPF-ChromelessWindow-DataGrid.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customize-themes-using-theme-settings).
 
@@ -588,13 +602,13 @@ The following code snippet overrides the Syncfusion style for the ButtonAdv Cont
 
 {% endtabs %}
 
-![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/Skin-Manager_img6.png)
+![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/WPF-ButtonAdv-Overridden-foreground-style.png)
 
 ### Change visual style at runtime
 
 Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure the new theme assembly is attached as reference in application when applying theme.
 
-![Added references for SkinManager and visual style](Skin-Manager_images/Skin-Manager_img4.jpg)
+![Added references for WPF SkinManager and visual style](Skin-Manager_images/WPF-SkinManager-References.jpg)
 
 {% tabs %}
 
