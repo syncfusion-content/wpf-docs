@@ -18,59 +18,20 @@ N>
 
 ## Silent Printing
 
-The [PrintDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrintDocument) property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. This type of printing can be used when trying to print the PDF document with the custom printer settings. The following code sample demonstrates this:
+The Print[https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Print] method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) allows you to print PDF files silently to the system’s default printer, without any user interaction. You can enable the preferred settings for silent printing using the [PrinterSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrinterSettings) property. The following code example shows how to perform silent printing in WPF PDF Viewer.
 
 {% tabs %}
-{% highlight c# %}
-
-PrintDialog dialog = new PrintDialog();
-dialog.PrintDocument(pdfViewerControl.PrintDocument.DocumentPaginator, "Essential PDF Viewer");
-
-{% endhighlight %}
-
-
-{% highlight vbnet %}
-
-Dim dialog As New PrintDialog()
-dialog.PrintDocument(pdfViewerControl.PrintDocument.DocumentPaginator, "Essential PDF Viewer")
-
-{% endhighlight %}
-{% endtabs %}
-
-When you prefer to perform Silent printing with the default printer settings, then using [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Print().html) method in the PDF Viewer control is the best approach. The following code example illustrates the same.
-
-{% tabs %}
-{% highlight c# %}
-
-//Initialize PDF Viewer.
-
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
-
-//Load the PDF.
-
-pdfViewer1.Load("Sample.pdf");
-
-// Printing document using Print method
+{%highlight c#%}
 
 pdfviewer1.Print();
 
-{% endhighlight %}
+{%endhighlight%}
 
-{% highlight vbnet %}
-
-'Initialize PDF Viewer.
-
-Private pdfViewer1 As New PdfViewerControl()
-
-'Load the PDF.
-
-pdfViewer1.Load("Sample.pdf")
-
-' Printing document using Print method
+{%highlight vb%}
 
 pdfviewer1.Print()
 
-{% endhighlight %}
+{%endhighlight%}
 {% endtabs %}
 
 ## Customizing print size
