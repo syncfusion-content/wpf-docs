@@ -10,6 +10,33 @@ documentation: ug
 
 The [FluentTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI with reveal animation for interactive elements and acrylic effect for windows.
 
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:DataGrid_Themes"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+                             Icon="App.ico"
+                             Title="Getting Started"
+                             WindowStartupLocation="CenterScreen"
+                             syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentDark}">
+
+</syncfusion:ChromelessWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfSkinManager.SetTheme(this, new FluentTheme("FluentDark"));
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Reveal animation
 
 The reveal animation for WPF controls can be enabled/disabled using [HoverEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_HoverEffectMode) and [PressedEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_PressedEffectMode) properties. 
@@ -34,6 +61,23 @@ N> The default value is `HoverEffect.BackgroundAndBorder`.
 
 {% tabs %}
 
+{% highlight XAML %}
+
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:DataGrid_Themes"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+                             Icon="App.ico"
+                             Title="Getting Started"
+                             WindowStartupLocation="CenterScreen"
+                             syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentDark, FluentHoverEffectMode=Border}">
+
+</syncfusion:ChromelessWindow>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
     SfSkinManager.SetTheme(this, new FluentTheme() { ThemeName = "FluentDark", HoverEffectMode = HoverEffect.Border });
@@ -55,6 +99,23 @@ The [PressedEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.
 N> The default value is `PressedEffect.Reveal`. 
 
 {% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ChromelessWindow x:Class="DataGrid_Themes.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:DataGrid_Themes"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+							 xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+                             Icon="App.ico"
+                             Title="Getting Started"
+                             WindowStartupLocation="CenterScreen"
+                             syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentDark, FluentPressedEffectMode=Reveal}">
+
+</syncfusion:ChromelessWindow>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
