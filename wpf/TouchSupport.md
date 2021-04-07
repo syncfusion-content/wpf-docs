@@ -9,6 +9,26 @@ documentation: ug
 
 # Touch Support of Syncfusion WPF Controls
 
+## Size Mode
+
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to render in different size modes for both syncfusion and framework controls using [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
+
+The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum has below values,
+
+* `Default` - The default size will be updated for control and its inner elements.
+* `Touch` - The touch interactive size mode will be applied for control. In this mode, more space is added around the inner elements, to make them easier to tap. 
+
+N> The default value is `SizeMode.Default`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox syncfusion:SfSkinManager.SizeMode="Touch">
+</syncfusion:IntegerTextBox >
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Gesture
 
 Gestures determine whether a finger or stylus has moved over a control. Syncfusion WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
@@ -963,23 +983,3 @@ Port: Drag, Connect</td>
 <td>Right click</td>
 </tr>
 </table>
-
-## SizeMode
-
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to render in different size modes for both syncfusion and framework controls using [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property which will be available only in [13 themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
-
-The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum has below values,
-
-* `Default` - The default size will be updated for control and its inner elements.
-* `Touch` - The touch interactive size mode will be applied for control. In this mode, more space is added around the inner elements, to make them easier to tap. 
-
-N> The default value is `SizeMode.Default`. 
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:IntegerTextBox syncfusion:SfSkinManager.SizeMode="Touch">
-</syncfusion:IntegerTextBox >
-
-{% endhighlight %}
-{% endtabs %}
