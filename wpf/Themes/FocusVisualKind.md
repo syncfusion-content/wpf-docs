@@ -17,7 +17,7 @@ The [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManage
 
 N> The `HighVisibility` scrollbar mode is enabled by default in fluent theme. 
 
-![WPF SfSkinManager FocusVisualKind](Skin-Manager_images/WPF-SkinManager-FocusVisualKind.png)
+![WPF SfSkinManager FocusVisualKind](Skin-Manager_images/WPF-SkinManager-FocusVisualKind.gif)
 
 ## Change focus visual style
 
