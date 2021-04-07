@@ -377,12 +377,10 @@ FluentLight</td><td>
 {{'[FluentLightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentLight.WPF.FluentLightThemeSettings.html)'| markdownify }}
 </td></tr>
 <tr>
-<tr>
 <td>
 FluentDark</td><td>
 {{'[FluentDarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentDarkThemeSettings.html)'| markdownify }}
 </td></tr>
-<tr>
 <tr>
 <td>
 MaterialLight</td><td>
