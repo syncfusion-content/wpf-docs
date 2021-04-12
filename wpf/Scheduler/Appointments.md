@@ -439,8 +439,9 @@ private void Schedule_AppointmentTapped(object sender, AppointmentTappedArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment`.
-If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
+N> 
+* For custom appointment, You can pass e.Appointment.Data as a param, you can get the custom appointment details from the `Data` property of `ScheduleAppointment`.
+* If a specified occurrence is changed, the `GetPatternAppointment` method returns the pattern appointment of exception appointment.
 
 ### How to get occurrence appointment at the specified date?
 Gets an occurrence at the specified date within a series of recurring appointments.
