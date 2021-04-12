@@ -80,7 +80,7 @@ namespace GettingStarted
 
 ## Change different SfScheduler Views  
     
-[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control provides five different types of views to display dates and it can be assigned to the control by using [ViewType]((https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType) property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
+[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control provides five different types of views to display dates and it can be assigned to the control by using [ViewType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType) property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
 
 {% tabs %}   
 {% highlight xaml %}
@@ -428,3 +428,13 @@ The Scheduler supports to show the busy indicator by using the [ShowBusyIndicato
 {% endtabs %} 
 
 ![WPF scheduler BusyIndicator](GettingStarted_images/BusyIndicator.png)
+
+## Theme
+
+SfScheduler supports various built-in themes. Refer to the below links to apply themes for the SfScheduler,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF scheduler](GettingStarted_images/Theme.png)

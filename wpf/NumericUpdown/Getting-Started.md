@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started with WPF UpDown control | Syncfusion
-description: This section describes about how to add UpDown control in WPF application.
+description: This section describes about how to integrate UpDown control into an applicationl and enable its basic features with example.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF NumericUpdown (UpDown)
 
 This section explains how to create WPF UpDown control and its structure.
 
@@ -207,3 +207,13 @@ updown.Culture = cultureInfo;
 {% endtabs %}
 
 ![Applied latin culture into WPF UpDown](GettingStarted-images/wpf-updown-culture.png)
+
+## Theme
+
+UpDown supports various built-in themes. Refer to the below links to apply themes for the UpDown,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+![Setting theme to WPF UpDown control](GettingStarted-images/wpf-updown-theme.png)

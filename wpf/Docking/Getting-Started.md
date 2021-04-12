@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF DockingManager
 
-This section explains how to implement a similar UI as Visual Studio by using the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) in your project. 
+This section explains how to implement a similar UI as Visual Studio by using the [WPF DockingManager](https://www.syncfusion.com/wpf-controls/docking) in your project. 
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
@@ -415,3 +415,14 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 {% endtabs %}
 
 ![Docking Manager displays tooltip when hovering mouse over child window header](Getting-Started_images/ToolTip.png)
+
+
+## Theme
+
+DockingManager supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip feature in Syncfusion SfChart WPF
+title: Tooltip feature in Syncfusion SfChart WPF
 description: How to enable, customize the tooltip position, duration and appearance in Essential WPF Chart (SfChart)
 platform: wpf
 control: SfChart
@@ -8,13 +8,13 @@ documentation: ug
 
 ---
 
-# ToolTip in WPF Charts (SfChart)
+# Tooltip in WPF Charts (SfChart)
 
-The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
+The Tooltip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 ## Define Tooltip
 
-By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in ToolTip. 
+By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeries.html#). For example, a single y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#). In the [`FinancialSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#), high, low, open, and close values are displayed in Tooltip.
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
@@ -23,7 +23,6 @@ The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusio
 {% highlight xaml %}
 
 <syncfusion:ColumnSeries  ShowTooltip="True"                                                  
-
 ItemsSource="{Binding Demands}" 
 
 XBindingPath="Demand"  YBindingPath="Year2010"/>
@@ -72,10 +71,168 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_image1.png)
 
+## Customizing tooltip using ChartTooltipBehavior
 
-## Aligning the ToolTip
+The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the SfChart [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
+
+The following properties are used to customize and configure tooltip which is available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html).
+
+* [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) - Used to enable the animation when showing the tooltip.
+* [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) - Used to position the tooltip at the data point position or the cursor position.
+* [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
+* [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
+* [`HorizontalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) - Used to position the tooltip at a distance from the data point or cursor position horizontally.
+* [`VerticalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) - Used to position the tooltip at a distance from the data point or cursor position vertically.
+* [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
+* [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
+* [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* [`InitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) - Used to delay in milliseconds to show the tooltip once the user interacts with series.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior/>                                                  
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ChartTooltipBehavior behavior = new ChartTooltipBehavior();
+
+chart.Behaviors.Add(behavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Positioning the tooltip
+
+Tooltip can be positioned at the data point position or the cursor position using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) property. The `Auto` will position the tooltip at the data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hovering the mouse inside any chart segment.
+
+N> By default, the tooltip [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) is set to Auto.
+
+The following code example explains positioning the tooltip at `Pointer` position.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Behaviors>
+
+<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer"/>                                               
+
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
+chartTooltipBehavior.Position = TooltipPosition.Pointer;
+chart.Behaviors.Add(chartTooltipBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+
+### Customizing the tooltip background
+
+The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a style for the tooltip background, specify the style of `TargetType` as `Path.`
+
+The following code example explains applying the style for tooltip.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Resources>
+    <Style TargetType="Path" x:Key="style">
+       <Setter Property="Stroke" Value="Black"/>
+       <Setter Property="Fill" Value="Gray"/>
+    </Style>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style style = new Style(typeof(Path));
+style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
+...
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.Style = style;
+chart.Behaviors.Add(tooltipBehavior);
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+
+### Customizing the tooltip label style
+
+The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a style for the tooltip label, specify the style of `TargetType` as `TextBlock.`
+
+The following code example explains applying the style for a tooltip label.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<chart:SfChart.Resources>
+    <Style TargetType="TextBlock" x:Key="labelStyle">
+       <Setter Property="FontSize" Value="14"/>
+       <Setter Property="Foreground" Value="Red"/>
+    </Style>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+</chart:SfChart.Behaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+Style labelStyle = new Style(typeof(TextBlock));
+labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+...
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+tooltipBehavior.LabelStyle = labelStyle;
+chart.Behaviors.Add(tooltipBehavior);
+...
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
+
+## Customizing tooltip using ChartTooltip attached properties
+
+### Aligning the Tooltip
 
 The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) properties.
 
@@ -141,7 +298,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image5.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -207,12 +364,11 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
 
+**TooltipMargin**
 
-**ToolTipMargin**
-
-You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
+You can also set the distance for the margin to be positioned from the cursor using the TooltipMargin property as in the following code sample.
 
 {% tabs %}
 
@@ -284,8 +440,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
-
+![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -369,9 +524,9 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image8.png)
 
-## ToolTip duration
+### Tooltip duration
 
 This property [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetShowDuration_System_Windows_DependencyObject_System_Int32_) in [`ChartToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
@@ -469,7 +624,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-## Animation for ToolTip
+### Animation for Tooltip
 
 You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_System_Windows_UIElement_System_Boolean_) property to true as shown in the following code snippet.
 
@@ -518,122 +673,117 @@ chart.Series.Add(series);
 
 ## Customizing the Appearance
 
-The [`ToolTipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
+The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code sample.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-        ...
+<chart:SfChart.Resources>
+    <Style TargetType="Path" x:Key="style">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Fill" Value="LightGreen"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+    </Style>
+</chart:SfChart.Resources>
+...
 
-        <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
-            syncfusion:ChartTooltip.VerticalAlignment="Top" 
-            XBindingPath="Demand" YBindingPath="Year2010" >
-            <syncfusion:ColumnSeries.TooltipTemplate>
-                <DataTemplate>
-                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
-                        <TextBlock Text="{Binding Item.Year2010}"
-                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </DataTemplate>
-            </syncfusion:ColumnSeries.TooltipTemplate>
-        </syncfusion:ColumnSeries>
+<chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
+    XBindingPath="Demand" YBindingPath="Year2010" >
+    <chart:ColumnSeries.TooltipTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Item.Demand}"
+                    Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Year2010}"
+                    Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </chart:ColumnSeries.TooltipTemplate>
+</chart:ColumnSeries>
 
-        <syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-            syncfusion:ChartTooltip.VerticalAlignment="Top"
-            ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011">
-            <syncfusion:ColumnSeries.TooltipTemplate>
-                <DataTemplate>
-                    <Border   Background="DarkGreen" CornerRadius="5" BorderThickness="2" BorderBrush="Black" Width="50" Height="30">
-                        <TextBlock Text="{Binding Item.Year2011}"
-                               Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </DataTemplate>
-            </syncfusion:ColumnSeries.TooltipTemplate>
-        </syncfusion:ColumnSeries>
-
-        ...
+<chart:ColumnSeries  ItemsSource="{Binding Demands}"
+    ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011">
+    <chart:ColumnSeries.TooltipTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Item.Demand}"
+                    Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Item.Year2011}"
+                    Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </chart:ColumnSeries.TooltipTemplate>
+</chart:ColumnSeries>
+...
+<chart:SfChart.Behaviors>
+        <chart:ChartTooltipBehavior Style="{StaticResource style}" />
+</chart:SfChart.Behaviors>
+...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-         ...
+...
 
-            DataTemplate tooltip = new DataTemplate();
-            FrameworkElementFactory border = new FrameworkElementFactory(typeof(Border));
+    DataTemplate tooltip = new DataTemplate();
 
-            border.SetValue(Border.BackgroundProperty, new SolidColorBrush(Colors.DarkGreen));
-            border.SetValue(Border.CornerRadiusProperty, new CornerRadius(5));
-            border.SetValue(Border.BorderThicknessProperty, new Thickness(2));
-            border.SetValue(Border.BorderBrushProperty, new SolidColorBrush(Colors.Black));
-            border.SetValue(Border.WidthProperty, 50d);
-            border.SetValue(Border.HeightProperty, 30d);
+    FrameworkElementFactory stackpanel = new FrameworkElementFactory(typeof(StackPanel));
+    stackpanel.SetValue(StackPanel.OrientationProperty, Orientation.Horizontal);
 
-            FrameworkElementFactory textblock = new FrameworkElementFactory(typeof(TextBlock));
+    FrameworkElementFactory textblock = new FrameworkElementFactory(typeof(TextBlock));
+    textblock.SetBinding(TextBlock.TextProperty, new Binding("Item.Demand"));
+    textblock.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+    textblock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+    textblock.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+    textblock.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
 
-            textblock.SetBinding(TextBlock.TextProperty,new Binding("Item.Year2010"));
-            textblock.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
-            textblock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-            textblock.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+    stackpanel.AppendChild(textblock);
 
-            border.AppendChild(textblock);
-            tooltip.VisualTree = border;
+    FrameworkElementFactory textblock1 = new FrameworkElementFactory(typeof(TextBlock));
+    textblock1.SetValue(TextBlock.TextProperty, " : ");
+    textblock1.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+    textblock1.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+    textblock1.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+    textblock1.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
 
-            DataTemplate tooltip1 = new DataTemplate();
-            FrameworkElementFactory border1 = new FrameworkElementFactory(typeof(Border));
+    stackpanel.AppendChild(textblock1);
 
-            border1.SetValue(Border.BackgroundProperty, new SolidColorBrush(Colors.DarkGreen));
-            border1.SetValue(Border.CornerRadiusProperty, new CornerRadius(5));
-            border1.SetValue(Border.BorderThicknessProperty, new Thickness(2));
-            border1.SetValue(Border.BorderBrushProperty, new SolidColorBrush(Colors.Black));
-            border1.SetValue(Border.WidthProperty, 50d);
-            border1.SetValue(Border.HeightProperty, 30d);
+    FrameworkElementFactory textblock2 = new FrameworkElementFactory(typeof(TextBlock));
+    textblock2.SetBinding(TextBlock.TextProperty, new Binding("Item.Year2010"));
+    textblock2.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
+    textblock2.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+    textblock2.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+    textblock2.SetValue(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Black));
 
-            FrameworkElementFactory textblock1 = new FrameworkElementFactory(typeof(TextBlock));
+    stackpanel.AppendChild(textblock2);
+    tooltip.VisualTree = stackpanel;
 
-            textblock1.SetBinding(TextBlock.TextProperty, new Binding("Item.Year2011"));
-            textblock1.SetValue(TextBlock.FontWeightProperty, FontWeights.Bold);
-            textblock1.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-            textblock1.SetValue(TextBlock.VerticalAlignmentProperty, VerticalAlignment.Center);
+    ColumnSeries series1 = new ColumnSeries()
+    {
 
-            border1.AppendChild(textblock1);
-            tooltip1.VisualTree = border1;
+        ItemsSource = Demands,
+        XBindingPath = "Demand",
+        YBindingPath = "Year2010",
+        Label = "2010",
+        ShowTooltip = true,
+        TooltipTemplate = tooltip
 
-            ColumnSeries series1 = new ColumnSeries()
-            {
+    };
 
-                ItemsSource = Demands,
-                XBindingPath = "Demand",
-                YBindingPath = "Year2010",
-                Label = "2010",
-                ShowTooltip = true,
-                TooltipTemplate = tooltip
-
-            };
-
-            ColumnSeries series2 = new ColumnSeries()
-            {
-
-                ItemsSource = Demands,
-                XBindingPath = "Demand",
-                YBindingPath = "Year2011",
-                Label = "2011",
-                ShowTooltip = true,
-                TooltipTemplate = tooltip1,
-
-            };
-
-            chart.Series.Add(series1);
-            chart.Series.Add(series2);
-
-        ...
+    chart.Series.Add(series1);
+...
         
 {% endhighlight %}
 
 {% endtabs %}
 
-![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
+
+N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
 ## See also
 

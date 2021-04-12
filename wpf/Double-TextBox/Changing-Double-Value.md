@@ -130,6 +130,26 @@ doubleTextBox.Value = 12345.67;
 
 ![DoubleTextBox pasting the copied value in specific place](Changing-Double-Value_images/Pasting.png)
 
+## Show UpDown Button
+
+You can increment or decrement the double value of `DoubleTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the double value. The default value of `ShowSpinButton` property is `false`.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:DoubleTextBox Height="30" Width="150" ShowSpinButton="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.ShowSpinButton = true;
+
+{% endhighlight %}
+{%endtabs%}
+
+![Changing double value by SpinButton in DoubleTextBox](Changing-Double-Value_images/SpinButton.gif)
+
 ## Value Changed Event
 
 The `DoubleTextbox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.

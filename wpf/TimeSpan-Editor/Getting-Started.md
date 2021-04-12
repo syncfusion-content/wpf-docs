@@ -220,3 +220,12 @@ Refer the following links to know more about how provide a localization support 
 * [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
 * [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)
 
+## Theme
+
+TimeSpanEdit supports various built-in themes. Refer to the below links to apply themes for the TimeSpanEdit,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF TimeSpanEdit](Getting-Started_images/Theme.png)

@@ -192,6 +192,16 @@ The following screenshot illustrates the result of the previous codes.
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
 
+## Theme
+
+SfDigitalGauge supports various built-in themes. Refer to the below links to apply themes for the SfDigitalGauge,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfDigitalGauge](Getting-Started_images/Theme.png)
+
 ## See also
 
 [How to apply themes for SfDigitalGauge](https://www.syncfusion.com/kb/2535/how-to-apply-themes-for-sfdigitalgauge)

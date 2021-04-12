@@ -90,59 +90,10 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Theme
 
-You can customize the appearance of the `TimeSpanEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TimeSpanEdit` control.
+TimeSpanEdit supports various built-in themes. Refer to the below links to apply themes for the TimeSpanEdit,
 
-* Blend
-* Default
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* SystemTheme
-* VisualStudio2013
-* VisualStudio2015
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-Here, the `Blend` style is applied to the `TimeSpanEdit`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:TimeSpanEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                   Name="timeSpanEdit" />
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
-SfSkinManager.SetVisualStyle(timeSpanEdit, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
-
-![TimeSpanEdit with Blend visual style](Apperance_images/BlendTheme.png)
-
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Themes) in GitHub
+ ![Setting theme to WPF TimeSpanEdit](Getting-Started_images/Theme.png)

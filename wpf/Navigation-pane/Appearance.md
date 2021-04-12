@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance| GroupBar | Wpf | Syncfusion
-description: appearance
+description: This section explain about how to customize appearance and apply different themes for the Syncfusion WPF GroupBar. 
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF Navigation Pane (GroupBar)
 
 This section deals with the appearance of GroupBar control and contains the following topics:
 
@@ -53,7 +53,7 @@ groupBar.VisualMode = VisualMode.Default;
 
 
 
-![](Appearance_images/Appearance_img1.jpeg)
+![Displaying Outlook GroupBar](Appearance_images/Appearance_img1.jpeg)
 
 
 
@@ -116,7 +116,7 @@ Use the following code snippet to set VisualMode property to Multiple Expansion.
 
 
 
-![](Appearance_images/Appearance_img2.jpeg)
+![Multiple Expansion mode in WPF GroupBar ](Appearance_images/Appearance_img2.jpeg)
 
 
 
@@ -181,80 +181,20 @@ groupBar.VisualMode = VisualMode.StackMode;
 {% endhighlight %} 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.jpeg)
+![Stack Mode in WPF GroupBar](Appearance_images/Appearance_img3.jpeg)
 
 
 
-## Visual Style
+## Theme
 
-The appearance of the GroupBar control can be controlled using the VisualStyle property. VisualStyle is an attached property, which gets or sets the value for visual style. Styling can be applied to both the GroupBar control and its items. Nine built-in styles have been provided. These styles can be implemented at run time based on specified conditions.
+GroupBar supports various built-in themes. Refer to the below links to apply themes for the GroupBar,
 
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Sets the visual style for the GroupBar control. The options provided are as follows.* Office2007Blue* Office2007Black* Office2007Silver* Office2010Blue* Office2010Black* Office2010Silver* Blend* Metro* Transparent<br></td></tr>
-</table>
-
-
-These styles can be applied in XAML as follows. The example below styles the GroupBar control with the Office 2010 Blue theme.
-
-
-
-{% highlight xaml %}
-
-<syncfusion:GroupBar         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
-
-
-{% endhighlight %}
-
-
-Visual styles can be set in C# as follows.
-
-
-
-{% highlight C# %}
-
-SkinStorage.SetVisualStyle(groupBarInstance, "Office2010Blue");
-
-
-{% endhighlight %}
-
-
-
-
-
-
-![](Appearance_images/Appearance_img4.jpeg)
-
-
-
-
-
-![](Appearance_images/Appearance_img5.jpeg)
-
-
-
-
-
-
-
-![](Appearance_images/Appearance_img6.png)
-
-
-
-
-
-![](Appearance_images/Appearance_img7.png)
-
-
-
+   ![Setting theme to WPF GroupBar](Getting-Started_images/wpf-group-bar-control-theme.png)
+  
 ## Item Container Style
 
 1. The ItemContainerStyle property of GroupBar sets the style for GroupBarItem. This style will be applied to all items in the GroupBar control.style for GroupBarItem.
@@ -347,7 +287,7 @@ SkinStorage.SetVisualStyle(groupBarInstance, "Office2010Blue");
 
 3. This will generate the following GroupBar control.
 
-   ![](Appearance_images/Appearance_img8.png)
+   ![Set style for GroupBarItem](Appearance_images/Appearance_img8.png)
 
 
 
@@ -553,7 +493,7 @@ This will generate the following GroupBar control.
 
 
 
-![](Appearance_images/Appearance_img9.png)
+![Style in WPF GroupBar control](Appearance_images/Appearance_img9.png)
 
    
 
@@ -749,7 +689,4 @@ Group Bar header can be customized in a required manner. Customized background c
 
 
 
-![](Appearance_images/Appearance_img10.jpeg)
-
-
-
+![Customizing Group Bar Header](Appearance_images/Appearance_img10.jpeg)

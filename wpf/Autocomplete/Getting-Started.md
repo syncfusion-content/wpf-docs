@@ -296,3 +296,13 @@ The selected values of the AutoComplete can be retrieved using the [SelectedValu
 For further details, refer to the [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#retrieving-selectedvalue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#setting-and-retrieving-selecteditem).
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Getting-Started) in GitHub
+
+## Theme
+
+SfTextBoxExt supports various built-in themes. Refer to the below links to apply themes for the SfTextBoxExt,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Set theme to WPF AutoComplete](GettingStarted_images/Theme_Support_AutoComplete.png)

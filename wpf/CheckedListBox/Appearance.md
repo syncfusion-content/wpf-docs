@@ -579,60 +579,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-lis
 
 ## Theme
 
-We can customize the appearance of the `CheckListBox` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinmanager.SfSkinmanager.html#Syncfusion_SfSkinManager_SfSkinManager_SetVisualStyle_System_Windows_DependencyObject_Syncfusion_SfSkinManager_VisualStyles_) method. The following are the various built-in visual styles for `CheckListBox` control.
+CheckListBox supports various built-in themes. Refer to the below links to apply themes for the CheckListBox,
 
-* Blend
-* Default
-* Lime
-* MaterialDark
-* MaterialDarkBlue
-* MaterialLight
-* MaterialLightBlue
-* Metro
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013DarkGray
-* Office2013LightGray
-* Office2013White
-* Office2016Colorful
-* Office2016DarkGray
-* Office2016White
-* Office2019Black
-* Office2019Colorful
-* Office365
-* Saffron
-* SystemTheme
-* VisualStudio2013
-* VisualStudio2015
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-Here, the `Blend` style is applied to the `CheckListBox`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF">
-    <Grid>
-        <syncfusion:CheckListBox syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                                 Name="checkListBox" >
-    </Grid>
-</Window>
-
-{% endhighlight %}
-{% highlight C# %}
-
-//Namespace for the SfSkinManager.
-using Syncfusion.SfSkinManager;
-
-CheckListBox checkListBox = new CheckListBox();
-SfSkinManager.SetVisualStyle(checkListBox, VisualStyles.Blend);
-
-{% endhighlight %}
-{% endtabs %}
-
-![CheckListBox with Blend visual style](Appearance_images/blend.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Themes)
-
+  ![Setting theme to WPF CheckListBox](Getting-Started_images/wpf-checklistbox-theme.png)

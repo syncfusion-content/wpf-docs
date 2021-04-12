@@ -128,6 +128,26 @@ integerTextBox.Value = 12345;
 
 ![IntegerTextBox pasting the copied value in specific place](Changing-Integer-Value_images/Pasting.png)
 
+## Show UpDown Button
+
+You can increment or decrement the integer value of `IntegerTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the integer value. The default value of `ShowSpinButton` property is `false`.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:IntegerTextBox Height="30" Width="150" ShowSpinButton="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.ShowSpinButton = true;
+
+{% endhighlight %}
+{%endtabs%}
+
+![Changing percent value by SpinButton in IntegerTextBox](Changing-Integer-Value_images/SpinButton.gif)
+
 ## Value Changed Event
 
 The `IntegerTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential SfHeatMap for WPF.
-description: Getting started walk through to create heatmap and mapping data source and colors.  
+description: This section explain about how to integrate WPF HeatMap (SfHeatMap) into an applicationl and enable its basic features with example. 
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF HeatMap (SfHeatMap)
 
 ## Initialize the SfHeatMap
 
@@ -143,7 +143,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 * This will show a grid with data as in following image.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Showing grid with data](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Color Mapping
 
@@ -172,7 +172,7 @@ Next we can configure color range for these values using color mapping
 
 * This will show the grid data with color based on the range given.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Legend
 
@@ -300,3 +300,12 @@ Final MainPage.xaml looks like this.
 	
 {% endhighlight %}
 
+## Theme
+
+SfHeatMap supports various built-in themes. Refer to the below links to apply themes for the SfHeatMap,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF SfHeatMap](Getting-Started_images/Theme.png)

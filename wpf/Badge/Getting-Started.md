@@ -417,7 +417,7 @@ You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by u
         Height="50" 
         Content="Inbox">
     <notification:SfBadge.Badge>
-        <notification:SfBadge Shape="Ellipse"
+        <notification:SfBadge Shape="Oval"
                               Content="99+"
                               x:Name="badge"/>
     </notification:SfBadge.Badge>
@@ -426,7 +426,7 @@ You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by u
 {% endhighlight %}
 {% highlight C# %}
 
-badge.Shape = BadgeShape.Ellipse;
+badge.Shape = BadgeShape.Oval;
 badge.Content = "99+";
 
 {% endhighlight %}
@@ -448,6 +448,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
         Content="Inbox">
     <notification:SfBadge.Badge>
         <notification:SfBadge AnimationType="Scale"
+                              Shape="Ellipse"
                               x:Name="badge"/>
     </notification:SfBadge.Badge>
 </Button>
@@ -467,6 +468,7 @@ You can enable the `Scale` or `Opacity` based animation for displaying the `Badg
 {% highlight C# %}
 
 badge.AnimationType = BadgeAnimationType.Scale;
+badge.Shape = BadgeShape.Ellipse;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -505,6 +507,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
         Content="Inbox">
     <notification:SfBadge.Badge>
         <notification:SfBadge x:Name="badge"
+                              Shape="Ellipse"
                               AnimationType="None"/>
     </notification:SfBadge.Badge>
 </Button>
@@ -525,6 +528,7 @@ You can format the numbers which are displayed in the `Badge` content by using t
 {% highlight C# %}
 
 badge.AnimationType = BadgeAnimationType.None;
+badge.Shape = BadgeShape.Ellipse;
 badgeContent.ValueChanged += BadgeContent_ValueChanged;
 
 {% endhighlight %}
@@ -568,3 +572,13 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
+
+## Theme
+
+Badge supports various built-in themes. Refer to the below links to apply themes for the Badge,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Badge](Getting-Started_images/Theme.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SfDatePicker
 
-This section explains how to create a WPF [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) and explains about its structure.
+This section explains how to create a [WPF DatePicker](https://www.syncfusion.com/wpf-controls/datepicker) and explains about its structure.
 
 ## Structure of SfDatePicker
 
@@ -223,3 +223,13 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `Ok` and `Cancel` button text in `SfDatePicker` control by adding resource file for each language.
 
 N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to know more about how to provide a localization support for the `SfDatePicker`.
+
+## Theme
+
+SfDatePicker supports various built-in themes. Refer to the below links to apply themes for the SfDatePicker,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+![Setting theme to WPF SfDatePicker](Appearance-and-Styling_images/Theme.png)

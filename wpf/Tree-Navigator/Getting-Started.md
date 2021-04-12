@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfTreeNavigator | wpf | Syncfusion
-description: getting started 
+description: This section explain about how to integrate WPF Tree Navigator(SfTreeNavigator) into an applicationl and enable its basic features with example.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with WPF Tree Navigator (SfTreeNavigator)
 
 Namespace : Syncfusion.Windows.Controls.Navigation 
 
@@ -42,3 +42,13 @@ sfToolkit.Items.Add(winrt);
 sfToolkit.Items.Add(metroStudio);
 {% endhighlight %}
 {%endtabs%}
+
+## Theme
+
+Tree Navigator supports various built-in themes. Refer to the below links to apply themes for the Tree Navigator,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+
+  ![Setting theme to WPF Tree Navigator](Populating-Items_images/Theme.png)

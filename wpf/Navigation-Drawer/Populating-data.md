@@ -17,11 +17,12 @@ The WPF Navigation Drawer sidebar provides a built-in items support of type [Nav
 
 The below properties are available in the `NavigationItem` and can be used to define each item of the navigation menu.
 
-* **Header** — Represents the content of the `NavigationItem`.
-* **Icon** — Represents the icon in the `NavigationItem`.
-* **IconMemberPath** — Used to display the icon for sub items, while providing the `ItemsSource`. 
-* **DisplayMemberPath** — Used to display the content for sub items, while providing the `ItemsSource`. See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section. 
-* **ExpanderTemplate** — Used to provide a custom view for the expander icon in both collapsed and expanded state.
+* **Header** - Represents the content of the `NavigationItem.`
+* **Icon** - Represents the icon in the `NavigationItem.`
+* **IconTemplate** - Used to display the custom icon in the `NavigationItem.` Also see the [IconTemplate](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#icontemplate) section.
+* **IconMemberPath** - Used to display the icon for sub-items, while providing the `ItemsSource.`
+* **DisplayMemberPath** - Used to display the content for sub-items, while providing the `ItemsSource.` Also see the [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#hierarchical-data-binding) section.
+* **ExpanderTemplate** - Used to provide a custom view for the expander icon in both collapsed and expanded state.
 * **Command** — Executes when the item gets clicked. See also [Commands](https://help.syncfusion.com/wpf/navigation-drawer/commands-and-events) section. 
 * **CommandParameter** — [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem.html#Syncfusion_UI_Xaml_NavigationDrawer_NavigationItem_CommandParameter) is user defined data value that can be passed to the `Command` when it is executed.
 * **IsChildSelected** — Gets whether any sub item is selected or not. 
@@ -29,7 +30,8 @@ The below properties are available in the `NavigationItem` and can be used to de
 * **IsExpanded** — Gets whether the item is in expanded or collapsed state.
 * **IsSelected** — Gets whether the item is selected or not.
 * **SelectionBackground** — Used to customize the selection indicator in `NavigationItem`.
-* **Items** — Used to populate the sub items.
+* **Items** - Used to populate the sub-items.
+
 
 
 {% tabs %}
@@ -235,6 +237,144 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 ![Populating with Data](Populating_Data_images/NavigationItem.png)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Populating_With_Items) in GitHub
+
+### IconTemplate
+
+The IconTemplate is used to provide the custom icon for the NavigationItem.
+
+### Model
+
+{% tabs %}
+{% highlight c# %}
+
+    public class Category
+    {
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        private object icon;
+        public object Icon
+        {
+            get { return icon; }
+            set { icon = value; }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+### ViewModel
+
+{% tabs %}
+{% highlight c# %}
+
+    public class ViewModel
+    {
+        public ObservableCollection<Category> Categories { get; set; }
+        public ViewModel()
+        {
+            Categories = new ObservableCollection<Category>();
+            Categories.Add(new Category()
+            {
+                Name = "Inbox",
+                Icon = "Inbox.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Sent",
+                Icon = "Sent.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Draft",
+                Icon = "Draft.png"
+            });
+            Categories.Add(new Category()
+            {
+                Name = "Spam",
+                Icon = "Spam.png"
+            });
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <Style x:Key="ItemStyle" TargetType="syncfusion:NavigationItem">
+            <Setter Property="IconTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Source="{Binding}" />
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <syncfusion:SfNavigationDrawer
+        x:Name="navigationDrawer"
+        DisplayMemberPath="Name"
+        DisplayMode="Compact"
+        IconMemberPath="Icon"
+        ItemContainerStyle="{StaticResource ItemStyle}"
+        ItemsSource="{Binding Categories}">
+        <syncfusion:SfNavigationDrawer.ContentView>
+            <Label
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="ContentView" />
+        </syncfusion:SfNavigationDrawer.ContentView>
+    </syncfusion:SfNavigationDrawer>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            ViewModel viewModel = new ViewModel();
+            DataContext = viewModel;
+
+            Style navigationItemStyle = new Style(typeof(NavigationItem));
+            FrameworkElementFactory image = new FrameworkElementFactory(typeof(Image));
+            image.SetValue(Image.WidthProperty, (double)16);
+            image.SetValue(Image.HeightProperty, (double)16);
+            image.SetValue(Image.SourceProperty, new Binding());
+            DataTemplate dataTemplate = new DataTemplate { VisualTree = image };
+            navigationItemStyle.Setters.Add(new Setter(NavigationItem.IconTemplateProperty, dataTemplate));
+
+            SfNavigationDrawer navigationDrawer =new SfNavigationDrawer();
+            navigationDrawer.DisplayMemberPath = "Name";
+            navigationDrawer.DisplayMode = DisplayMode.Compact;
+            navigationDrawer.IconMemberPath = "Icon";
+            navigationDrawer.ItemContainerStyle = navigationItemStyle;
+            navigationDrawer.ItemsSource = viewModel.Categories;
+            Label label = new Label();
+            label.Content = "ContentView";
+            label.HorizontalAlignment = HorizontalAlignment.Center;
+            label.VerticalAlignment = VerticalAlignment.Center;
+            navigationDrawer.ContentView = label;
+            this.Content = navigationDrawer;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![IconTemplate](Populating_Data_images/IconTemplate.png)
+
+
 ### Different item types
 
 The WPF Navigation Drawer has four built-in item types that can be set to each `NavigationItem`.
@@ -244,7 +384,7 @@ The WPF Navigation Drawer has four built-in item types that can be set to each `
 * **Header** — This item type does not have any interaction or selection and acts like a header label. This item will gets visible only in drawer menu expanded state. This item can be added as a sub item also but cannot have a sub item. 
 * **Separator** — This item type does not have any interaction or selection and acts a separator line. This item can be added as a sub item also but cannot have a sub item. 
 
-See also [Populating with items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-with-items) section.
+See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 N> ItemType default value is Tab.
 
@@ -543,6 +683,9 @@ When using the `ItemsSource` to show the content of the item achieved by [Displa
 
 ![Populating with Data](Populating_Data_images/Hierarchical_Data_Binding.png)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Hierarchical_Data_Binding) in GitHub
+
+
 ## IndentationWidth
 
 This property used to change the horizontal position of sub items. Left margin of the sub items depends on the [IndentationWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_IndentationWidth) property.
@@ -673,5 +816,12 @@ This property used to change the horizontal position of sub items. Left margin o
 
 {% endtabs %}
 
+See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
 ![Populating with Data](Populating_Data_images/IndentationWidth.png)
+
+## Popup support
+
+The sub-items will be displayed in the popup when the drawer menu is collapsed in the compact and expanded display modes.
+
+![Popup_Menu](Populating_Data_images/Popup_Menu.png)

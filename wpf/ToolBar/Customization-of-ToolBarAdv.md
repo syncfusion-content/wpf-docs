@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of ToolBarAdv
-description: Describes about customization of ToolBarAdv
+title: Customization | ToolBarAdv | Wpf | Syncfusion
+description: This section explain about how to customize the appearance and set different themes for Syncfusion WPF ToolBarAdv. 
 platform: wpf
 control: ToolBarAdv
 documentation: ug
@@ -90,91 +90,13 @@ Source = new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
 {% endtabs %}
 
-## Visual Styles
+## Theme
 
-SkinManager provides rich and professional look and feel UI for the ToolBarAdv control. Some of the available visual style are as follows:
+ToolBarAdv supports various built-in themes. Refer to the below links to apply themes for the ToolBarAdv,
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-For example, the Blend style applied for the ToolBarAdv control shows in the following code example:
-
-{% tabs %}
-
-{% highlight XAML %}
-<Window x:Class="WpfApplication4.MainWindow"
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-Title="MainWindow" Height="350" Width="525" syncfusion:SkinStorage.VisualStyle="Blend">
-
-<Grid x:Name="Grid1">
-
-<syncfusion:ToolBarManager  >
-
-<syncfusion:ToolBarTrayAdv >
-
-<syncfusion:ToolBarAdv x:Name="Tooladv" ToolBarName="Standard" >
-
-<Button syncfusion:ToolBarAdv.Icon="Images\NewDocumentHS.png" >
-
-<Image Source="Images\NewDocumentHS.png" Width="16" Height="16"/>
-
-</Button>
-
-<Button>
-
-<Image Source="Images\openHS.png" Width="16" Height="16" />
-
-</Button>
-
-<Button>
-
-<Image Source="Images\InsertPictureHS.png" Width="16" Height="16"/>
-
-</Button>
-
-<Button>
-
-<Image Source="Images\InsertHyperlinkHS.png" Width="16" Height="16"/>
-
-</Button>
-
-<Button>
-
-<Image Source="Images\TableHS.png" Width="16" Height="16"/>
-
-</Button>
-
-</syncfusion:ToolBarAdv>
-
-</syncfusion:ToolBarTrayAdv>
-
-</syncfusion:ToolBarManager>
-
-</Grid>
-
-</Window>
-
-
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Customization-of-ToolBarAdv-images/Customization-of-ToolBarAdv-img1.jpeg)
-
+  ![Setting theme to WPF ToolBarAdv](Getting-Started-images/Theme.png)
 

@@ -465,4 +465,12 @@ The following code example gives you the complete code of above configurations.
 
 You can find the complete getting started sample : [`GettingStarted`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-3DCharts1840393114)
 
+## Theme
 
+SfChart3D supports various built-in themes. Refer to the below links to apply themes for the SfChart3D,
+
+  * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
+	
+  * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+   
+   ![Setting theme to WPF SfChart3D](3D-Charts_images/Chart-3D-Theme.png)
