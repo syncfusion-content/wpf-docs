@@ -218,7 +218,7 @@ You can customize the default appearance of the month view header by using the [
 ![WPF Scheduler month view ViewHeadeTemplate](Month-View_Images/ViewHeaderTemplate.png)
 
 ## Leading and Trailing days visibility
-You can customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) property of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` is set to `Visible`.
+You can customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` are set to `Visible`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -233,8 +233,8 @@ You can customize the leading and trailing days visibility of the scheduler mont
 {% endhighlight %}
 {% highlight c#%}
 this.Schedule.ViewType = SchedulerViewType.Month;
-this.Schedule.MonthViewSettings.LeadingDaysVisibility = Collapsed.
-this.Schedule.MonthViewSettings.TrailingDaysVisibility = Collapsed.Collapsed;
+this.Schedule.MonthViewSettings.LeadingDaysVisibility = Visibility.Collapsed;
+this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
