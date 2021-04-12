@@ -69,7 +69,7 @@ The following procedure illustrates how to install Essential Studio WPF platform
 6.  If any previous version installed for current platform, Click Next in the same Advanced Options screen to select the versions to be uninstalled.
 
 
-    ![Advanced options](Platform_images/Step-by-Step-Installation_img5.png)
+    ![Advanced options](Platform_images/Step-by-Step-Installation_img7.png)
 	
 	
 	N> From the 2021 Volume 1 release, Syncfusion has provided option to uninstall the previous versions from 18.1 while installing the new version.
