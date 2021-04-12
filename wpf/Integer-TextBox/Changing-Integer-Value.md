@@ -128,10 +128,9 @@ integerTextBox.Value = 12345;
 
 ![IntegerTextBox pasting the copied value in specific place](Changing-Integer-Value_images/Pasting.png)
 
-## Changing integer value by SpinButton
+## Show UpDown Button
 
-You can increment or decrement the integer value of `IntegerTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the integer value.
-The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the integer value of `IntegerTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the integer value. The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
 {% highlight xaml %}

@@ -130,10 +130,9 @@ percentTextBox.PercentValue = 12345.67;
 
 ![PercentTextBox pasting the copied value in specific place](Changing-Percent-Value_images/Pasting.png)
 
-## Changing percent value by SpinButton
+## Show UpDown Button
 
-You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the percent value.
-The default value of `ShowSpinButton` property is `false`.
+You can increment or decrement the percent value of `PercentTextBox` by setting the `ShowSpinButton` property value as `true`. Click UpButton to increment or DownButton to decrement the percent value. The default value of `ShowSpinButton` property is `false`.
 
 {%tabs%}
 {% highlight xaml %}

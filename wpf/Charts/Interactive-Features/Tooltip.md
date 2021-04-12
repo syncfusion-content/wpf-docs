@@ -71,24 +71,24 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_image1.png)
 
 ## Customizing tooltip using ChartTooltipBehavior
 
-The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance `ChartTooltipBehavior` and add it to the SfChart [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
+The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the SfChart [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
 
-The following properties are used to customize and configure tooltip which is available in the `ChartTooltipBehavior.`
+The following properties are used to customize and configure tooltip which is available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html).
 
-* `EnableAnimation` - Used to enable the animation when showing the tooltip.
-* `Position` - Used to position the tooltip at the data point position or the cursor position.
-* `Style` - Used to customize the fill and stroke of the tooltip.
-* `LabelStyle` - Used to customize the tooltip label.
-* `HorizontalOffset` - Used to position the tooltip at a distance from the data point or cursor position horizontally.
-* `VerticalOffset` - Used to position the tooltip at a distance from the data point or cursor position vertically.
-* `HorizontalAlignment` - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
-* `VerticalAlignment` - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
-* `ShowDuration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
-* `InitialShowDelay` - Used to delay in milliseconds to show the tooltip once the user interacts with series.
+* [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_EnableAnimation) - Used to enable the animation when showing the tooltip.
+* [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) - Used to position the tooltip at the data point position or the cursor position.
+* [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
+* [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
+* [`HorizontalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) - Used to position the tooltip at a distance from the data point or cursor position horizontally.
+* [`VerticalOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) - Used to position the tooltip at a distance from the data point or cursor position vertically.
+* [`HorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) - Used to align the tooltip label at left, right, and center of the data point position or cursor position horizontally.
+* [`VerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) - Used to align the tooltip label at top, center, and bottom of the data point position or cursor position vertically.
+* [`ShowDuration`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* [`InitialShowDelay`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) - Used to delay in milliseconds to show the tooltip once the user interacts with series.
 
 {% tabs %}
 
@@ -116,9 +116,9 @@ chart.Behaviors.Add(behavior);
 
 ### Positioning the tooltip
 
-Tooltip can be positioned at the data point position or the cursor position using the `Position` property. The `Auto` will position the tooltip at the data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hovering the mouse inside any chart segment.
+Tooltip can be positioned at the data point position or the cursor position using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) property. The `Auto` will position the tooltip at the data point position and the `Pointer` will display the tooltip in conjunction with the mouse pointer itself when hovering the mouse inside any chart segment.
 
-N> By default, the tooltip `Position` is set to Auto.
+N> By default, the tooltip [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Position) is set to Auto.
 
 The following code example explains positioning the tooltip at `Pointer` position.
 
@@ -146,9 +146,11 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
+![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+
 ### Customizing the tooltip background
 
-The tooltip's fill and stroke color can be customized using the `Style` property. To define a `Style` for tooltip, specify the style of `TargetType` as `Path.`
+The tooltip's fill and stroke color can be customized using the [`Style`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a style for the tooltip background, specify the style of `TargetType` as `Path.`
 
 The following code example explains applying the style for tooltip.
 
@@ -185,9 +187,11 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
+![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+
 ### Customizing the tooltip label style
 
-The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock.`
+The tooltip label style can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a style for the tooltip label, specify the style of `TargetType` as `TextBlock.`
 
 The following code example explains applying the style for a tooltip label.
 
@@ -223,6 +227,8 @@ chart.Behaviors.Add(tooltipBehavior);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
 
 ## Customizing tooltip using ChartTooltip attached properties
 
@@ -292,7 +298,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_image5.png)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -358,7 +364,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_image6.png)
 
 **TooltipMargin**
 
@@ -434,7 +440,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_image7.png)
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
 
@@ -518,7 +524,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_image8.png)
 
 ### Tooltip duration
 
@@ -775,7 +781,7 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ch
 
 {% endtabs %}
 
-![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_image9.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
