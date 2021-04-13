@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Keyboard Focus Visual like Fluent Theme | High Visibility Keyboard Visual Effect
+title: Getting Started with Keyboard Focus Visual for WPF Controls
 description: This article explains how apply High visibility keyboard visual feedback followed in fluent design for WPF Controls and Syncfusion Controls.
 platform: wpf
 control: Themes
 documentation: ug
 ---
 
-# Keyboard Focus Visual - A High Visibility Keyboard Visual Effect for WPF Controls
+# Getting Started with Keyboard Focus Visual for WPF Controls
 
 The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply various keyboard focus visual styles for both syncfusion and framework controls using [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
 
