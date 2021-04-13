@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Header | Busy Indicator | wpf | Syncfusion
 description: This section describes how to use the header and header template support in Syncfusion SfBusyIndicator control.
