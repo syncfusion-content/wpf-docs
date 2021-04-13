@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Apply various scrollbar styles like windows 10 compact scrollbar for Syncfusion Essential WPF controls
-description: Learn here about how to apply various scrollbar styles like windows 10 compact scrollbar for Syncfusion Essential WPF controls and framework controls using SfSkinManager
+title: Windows 10 Compact ScrollBar | Touch ScrollBars
+description: This article explains how to enable windows 10 like compact scrollbars in WPF applications.
 platform: wpf
 control: Themes
 documentation: ug
 ---
-# Windows 10 compact Scrollbar
+# Windows 10 Compact ScrollBar - Touch ScrollBars
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply various scrollbar styles like windows 10 compact scrollbar for both syncfusion and framework controls using [ScrollBarMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_ScrollBarMode) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
 
@@ -15,7 +15,7 @@ The [ScrollBarMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.
 * `Default` - The ScrollBar will be displayed with default look of thumb along with up/down arrow to scroll.
 * `Compact` - The window 10 like compact scrollbar will have look of thin layer of thumb until user hover the scrollbar area. 
 
-N> The `Compact` scrollbar mode is enabled by default in fluent theme. 
+N> The `Compact` scrollbar mode is enabled by default in [WPF Fluent Theme](https://help.syncfusion.com/wpf/themes/fluent-theme). 
 
 {% tabs %}
 
