@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TickLines | Axis| SfChart | WPF | Syncfusion 
-description: This section explains about chart axis ticklines, it's type majorticklinestyle and minorticklinestyle, customize appearance of the majorticklines and minorticklines in chart axis in WPF chart
+description: This section explains about chart axis ticklines, customize appearance of the major ticklines and minor ticklines in chart axis in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug

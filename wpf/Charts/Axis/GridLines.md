@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GridLines | Axis| SfChart | WPF | Syncfusion 
-description: This section explains about chart axis gridlines, it's type majorgridLinestyle and minorgridlinestyle of chart axis in WPF chart
+description: This section explains about chart axis gridlines, it's type major gridLinestyle and minor gridlinestyle of chart axis in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
@@ -71,7 +71,7 @@ Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyl
 
 ## MajorGridLineStyle
 
-[`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) in chart axis is used to customize the appearance of majorgridlines. The following code example illustrates customize appearance of majorgridlines in the primary axis.
+[`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) in chart axis is used to customize the appearance of major gridlines. The following code example illustrates customize appearance of major gridlines in the primary axis.
 
 {% tabs %}
 
