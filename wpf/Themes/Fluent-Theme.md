@@ -1,14 +1,19 @@
 ---
 layout: post
-title: Steps to explore various settings in Fluent theme for Syncfusion Essential WPF controls
-description: Learn here about how to explore various settings in Fluent theme for Syncfusion Essential WPF controls and framework controls using SfSkinManager
+title: WPF Fluent Theme | WPF Themes
+description: Learn how to apply fluent theme for WPF Controls and Syncfusion Controls. Fluent Light and Fluent Dark themes support along with reveal animations.
 platform: wpf
 control: Themes
 documentation: ug
 ---
 # Fluent Theme
 
-The [FluentTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI with reveal animation for interactive elements and acrylic effect for windows.
+[Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation for interactive elements and acrylic effect for windows. Below theme varients are supported,
+
+* Fluent Light Theme
+* Fluent Dark Theme
+
+Below example shows how to apply fluent dark theme for wpf window using [skin manager](https://help.syncfusion.com/wpf/themes/skin-manager). When applying theme to window, the same theme will get applied to all its child elements.  
 
 {% tabs %}
 
@@ -41,7 +46,7 @@ SfSkinManager.SetTheme(this, new FluentTheme("FluentDark"));
 
 The reveal animation for WPF controls can be enabled/disabled using [HoverEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_HoverEffectMode) and [PressedEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_PressedEffectMode) properties. 
 
-N> The reveal animation is enabled by default in fluent theme. 
+N> The reveal animation is enabled by default. 
 
 ### Hover reveal effect
 
