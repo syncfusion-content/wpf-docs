@@ -142,7 +142,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![HeaderStyle for header support in WPF](Axis_image/WPF_HeaderStyle.png)
+![HeaderStyle for header support in WPF](Axis_image/WPF_Chart_Axis_HeaderStyle.png)
 
 ## Customize Header Appearance
 
