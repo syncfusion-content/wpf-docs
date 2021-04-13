@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WPF Fluent Theme | Fluent Light and Dark Themes for WPF Application
+title: WPF Fluent Theme | Fluent Light & Dark Themes for WPF | Syncfusion
 description: Learn how to apply fluent theme for WPF Controls and Syncfusion Controls. Fluent Light and Fluent Dark themes support along with reveal animations.
 platform: wpf
 control: Themes

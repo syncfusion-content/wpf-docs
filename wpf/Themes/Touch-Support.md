@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch Support in Syncfusion WPF controls
-description: This article exaplins how to enable touch design for Syncfusion WPF Controls. 
+description: This article exaplins how to enable touch design for Syncfusion WPF Controls using SizeMode property in SkinManager. 
 platform: WPF
 control: General
 documentation: ug
