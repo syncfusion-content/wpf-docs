@@ -17,16 +17,12 @@ You can style the DataGrid and its inner elements (cells, rows and columns) cond
 
 <table>
 <tr>
-<td>
 <th>
 Approach
 </th>
-</td>
-<td>
 <th>
 Performance
 </th>
-</td>
 </tr>
 <tr>
 <td>
