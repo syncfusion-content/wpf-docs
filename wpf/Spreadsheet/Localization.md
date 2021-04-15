@@ -7,7 +7,7 @@ control: SfSpreadsheet
 documentation: ug
 ---
 
-# Localization in SfSpreadsheet for WPF
+# Localization in WPF SfSpreadsheet
 
 Localization is the process of configuring the application to a specific language. SfSpreadsheet provides support to localize all the static text in a Ribbon and all dialogs to any desired language. Localization can be done by adding resource file and setting the specific culture in the application.
 
