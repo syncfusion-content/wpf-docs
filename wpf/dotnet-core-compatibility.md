@@ -18,7 +18,7 @@ N> All Syncfusion WPF controls supports .NET Core and .NET 5.0 Framework except 
 you can add the Syncfusion assembly references in one of the following ways.
 
 * NuGet
-* Adding assembly refernces from installed location
+* Adding assembly references from installed location
 
 ### NuGet
 
@@ -26,7 +26,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 [Click here](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in your application.
 
-### Adding assembly refernces from installed location
+### Adding assembly references from installed location
 
 You can also add the Syncfusion WPF (.NET Core and .NET 5.0) controls assemblies from `precompiledassemblies` folder in the following location.
 
