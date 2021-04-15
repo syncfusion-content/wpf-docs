@@ -661,7 +661,7 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 {% seealso %}
 
-[How to add annotations for connectors](/wpf/sfdiagram/annotation)
+[How to add annotations for connectors](/wpf/diagram/annotation)
 
 [How to add or remove connector constraints](/wpf/sfdiagram/constraints#connector-constraints)
 
