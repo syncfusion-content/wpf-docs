@@ -1017,7 +1017,7 @@ The diagram provides support to cancel the drag and drop operation from the sten
 
 ## Symbol dragging outside diagram bounds
 
-By default, the cursor appears as a block cursor when dragging the symbol (from stencil) outside the diagram bounds. The SfDiagram provides supports to drag the elements within the given limitations. For details, please refer to the [Dragging based on DragLimit](https://help.syncfusion.com/wpf/diagram/interaction/drag#dragging-based-on-draglimit)
+By default, the cursor appears as a block cursor when dragging the symbol (from stencil) outside the diagram bounds. The SfDiagram provides supports to drag the elements within the given limitations. For details, please refer to the [Dragging based on DragLimit](https://help.syncfusion.com/wpf/diagram/interaction/dragging/drag#dragging-based-on-draglimit)
 
 ## Preserving the node template when drag and drop
 
