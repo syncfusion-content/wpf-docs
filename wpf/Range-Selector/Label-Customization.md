@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
+title: Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
 description: This section explores how to customize the label with Intervals, Formatters and also visibility of label bars in DateTimeRangeNavigator
 platform: wpf
 control: SfDateTimeRangeNavigator
