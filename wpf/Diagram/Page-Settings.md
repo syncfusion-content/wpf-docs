@@ -316,7 +316,7 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 {% seealso %}
 
-[How to add or remove grid lines for diagram page](/wpf/sfdiagram/gridlines)
+[How to add or remove grid lines for diagram page](/wpf/diagram/gridlines)
 
 [How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
 
