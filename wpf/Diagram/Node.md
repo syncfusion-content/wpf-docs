@@ -694,7 +694,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
 
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping "Snapping").
 
 * The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
@@ -734,7 +734,7 @@ The `Constraints` property of node allows you to enable or disable certain featu
 
 ## See Also
  
-* [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/sfdiagram/annotation)
+* [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/diagram/annotation)
 * [How to add Port to the Node?](https://help.syncfusion.com/wpf/sfdiagram/port#node-port)
 * [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements)
 * [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
