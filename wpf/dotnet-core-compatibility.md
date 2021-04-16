@@ -69,7 +69,7 @@ To create the .NET Core 3.1 or .NET 5 project by using the following ways.
 
 **Step 3**: Select the **.NET 5** in Target Framework.
 
-![Change the target framework for WPF NET 5.0](NETcore_WPF_images/wpf-netcore-framework.png)
+![Change the target framework for WPF NET 5](NETcore_WPF_images/wpf-netcore-framework.png)
 
 **Step 4**: Now, the .NET 5 application was created.
 
@@ -101,13 +101,13 @@ In **Solution Explorer**, right-click on **Dependencies** and select **Add Refer
 
 Now, **Reference Manager** dialog will be opened. Here click **Browse** and can select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **OK**. Now, required assemblies are added in to the project, like in the below screenshot.
 
-N> You can get Syncfusion WPF (.NET Core or .NET 5.0) controls assemblies from `netcoreapp3.1` or `net 5.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\x.x.x.x\precompiledassemblies
+N> You can get Syncfusion WPF (.NET Core or .NET 5) controls assemblies from `netcoreapp3.1` or `net 5.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies
 
 ![NETcore showing assembly](NETcore_WPF_images/NETcore_assembly.jpeg)
 
 ### Example: Adding ButtonAdv control
 
-We are now going to see a demo on how to add **ButtonAdv** control in WPF (.NET Core or .NET 5.0) application.
+We are now going to see a demo on how to add **ButtonAdv** control in WPF (.NET Core or .NET 5) application.
 
 **Step 1**:	Add the following dependent assembly for the inclusion of **ButtonAdv** control.
 
