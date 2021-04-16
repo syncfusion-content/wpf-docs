@@ -81,7 +81,7 @@ The below section explains how to add controls in WPF (.NET Core 3.1 or .NET 5) 
 
 ### Through NuGet Package
 
-In **Solution Explorer**, right-click on **Dependencies** and select **Mangage NuGet Packages...**.
+In **Solution Explorer**, right-click on **Dependencies** and select **Manage NuGet Packages...**.
 
 ![WPF NET core showing NuGet Packages](NETcore_WPF_images/wpf-netcore-nuget-package.png)
 
