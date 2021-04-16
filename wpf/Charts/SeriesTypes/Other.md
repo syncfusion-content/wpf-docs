@@ -135,7 +135,6 @@ boxAndWhisker.ShowMedian = true;
 
 N>
 * The middle number of data points is the median for the odd number of data points.
-
 * The average of the middle two numbers is a median for the even number of data points.
 
 
