@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tick lines | Axis | SfChart | WPF | Syncfusion 
-description: This section explains about chart axis ticklines, customize appearance of the major ticklines and minor ticklines in chart axis in WPF chart
+title: Tick Lines | Axis | SfChart | WPF | Syncfusion 
+description: This section explains about chart axis tick lines, customize appearance of the major tick lines and minor tick lines in chart axis in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
@@ -74,7 +74,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
+![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
 
 ## Positioning the MajorTickLines
 
@@ -139,7 +139,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
+![Tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
 
 ## Customize MajorTickLineStyle Appearance
 
@@ -204,7 +204,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
+![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
 
 ## MinorTickLines
 
@@ -270,7 +270,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
+![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
 
 ## Positioning the MinorTickLines
 
@@ -337,7 +337,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
+![Tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
 
 ## Customization MinorTickLines Appearance
 
@@ -402,7 +402,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
+![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
 
 Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
 
@@ -468,7 +468,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
+![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
 
 N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
 
