@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Ticklines in WPF Chart
+# Tick Lines in WPF Chart
 
-## Ticklines
+## Tick Lines
 
 Tickline are the small lines which is drawn on the axis line representing the axis labels. Ticklines will be drawn outside of the axis by default. 
 
@@ -76,7 +76,7 @@ this.Content = chart;
 
 ![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
 
-## Positioning the MajorTicklines
+## Positioning the MajorTickLines
 
 Ticklines can be positioned inside or outside of the chart area using [`TickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
 
@@ -206,7 +206,7 @@ this.Content = chart;
 
 ![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
 
-## MinorTicklines
+## MinorTickLines
 
 Minor tick lines can be added by defining [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines  to every interval.
 
@@ -272,7 +272,7 @@ this.Content = chart;
 
 ![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
 
-## Positioning the MinorTicklines
+## Positioning the MinorTickLines
 
 Minor tick lines can be positioned inside or outside using [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) property. By default the minor tick lines will be positioned outside.
 
@@ -339,7 +339,7 @@ this.Content = chart;
 
 ![Ticklines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
 
-## Customization MinorTicklines Appearance
+## Customization MinorTickLines Appearance
 
 The thickness of the minor tick lines can be customized using [`SmallTickLineSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the below code snippet.
 
