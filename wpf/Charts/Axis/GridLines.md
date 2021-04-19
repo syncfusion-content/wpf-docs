@@ -1,15 +1,15 @@
 ---
 layout: post
-title: GridLines | Axis| SfChart | WPF | Syncfusion 
-description: This section explains about chart axis gridlines, it's type major gridLinestyle and minor gridlinestyle of chart axis in WPF chart
+title: Gridlines | Axis | SfChart | WPF | Syncfusion 
+description: This section explains about chart axis gridlines, it's type major gridlinestyle and minor gridlinestyle of chart axis in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# GridLines in WPF Chart
+# Gridlines in WPF Chart
 
-## GridLines
+## Gridlines
 
 By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals. The chart axis supports customization of gridline. The visibility of the gridlines can be controlled using the [`ShowGridLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowGridLines) property.
 
@@ -46,7 +46,7 @@ SfChart chart = new SfChart()
     Palette = ChartColorPalette.BlueChrome
 };
 
-chart.PrimaryAxis = new NumericalAxis()
+chart.PrimaryAxis = new CategoryAxis()
 {
     Interval = 1,
     ShowGridLines = false, 
