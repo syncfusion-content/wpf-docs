@@ -133,6 +133,11 @@ boxAndWhisker.ShowMedian = true;
 
 ![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
 
+N>
+* The middle number of data points is the median for the odd number of data points.
+* The average of the middle two numbers is a median for the even number of data points.
+
+
 ### Outlier
 
 The outlier is used to display the outlier point that lies either below the lower whisker or above the upper whisker line and it is an observation that is numerically distant from the rest of the data.
