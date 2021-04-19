@@ -30,7 +30,7 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -56,7 +56,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -65,11 +65,11 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gridlines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_ShowGridLines.png)
+![Gridlines support in WPF Chart](Axis_image/WPF_Chart_Axis_ShowGridLines.png)
 
-Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
+Style can also be applied to major and minor gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
 
-## MajorGridLineStyle
+## Style for MajorGridLineStyle
 
 [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) in chart axis is used to customize the appearance of major gridlines. The following code example illustrates customize appearance of major gridlines in the primary axis.
 
@@ -96,7 +96,7 @@ Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyl
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -137,7 +137,7 @@ this.Content = chart;
 
 ![MajorGridLineStyle support in WPF Chart](Axis_image/WPF_Chart_Axis_MajorGridLineStyle.png)
 
-## MinorGridLineStyle
+## Style for MinorGridLineStyle
 
 [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) will be added automatically when the small tick lines is defined inside the chart area.
 
@@ -164,7 +164,7 @@ this.Content = chart;
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -196,7 +196,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -205,4 +205,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Gridlines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorGridLineStyle.png)
+![MinorGridLineStyle customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorGridLineStyle.png)

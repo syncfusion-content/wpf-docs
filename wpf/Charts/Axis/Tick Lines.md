@@ -30,7 +30,7 @@ Tick lines thickness can be customized using [`TickLineSize`](https://help.syncf
 </chart:SfChart.Resources>
 
 <chart:SfChart.PrimaryAxis>
-<chart:NumericalAxis TickLineSize="10" ShowGridLines="False"  MajorTickLineStyle="{StaticResource lineStyle}" />
+<chart:NumericalAxis TickLineSize="10" ShowGridLines="False" MajorTickLineStyle="{StaticResource lineStyle}" />
 </chart:SfChart.PrimaryAxis>
           
 <chart:SfChart.SecondaryAxis>
@@ -38,7 +38,7 @@ Tick lines thickness can be customized using [`TickLineSize`](https://help.syncf
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
         
 </chart:SfChart>
@@ -65,7 +65,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -74,7 +74,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
+![Tick line size support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
 
 ## Positioning the MajorTickLines
 
@@ -101,7 +101,7 @@ Tick lines can be positioned inside or outside of the chart area using [`TickLin
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -130,7 +130,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -139,9 +139,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
+![Major tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
 
-## Customize MajorTickLineStyle Appearance
+## Customize MajorTickLines Appearance
 
 Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property . The following code snippet demonstrates the styling of major tick lines.
 
@@ -167,7 +167,7 @@ Style can be applied to major tick lines using [`MajorTickLineStyle`](https://he
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -195,7 +195,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -204,7 +204,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
+![Major tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
 
 ## MinorTickLines
 
@@ -233,7 +233,7 @@ The following code example demonstrates the small ticks set for every interval.
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -270,7 +270,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
+![Minor tick lines support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
 
 ## Positioning the MinorTickLines
 
@@ -299,7 +299,7 @@ The following code example demonstrates the positioning of minor tick lines insi
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -328,7 +328,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -337,7 +337,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
+![Minor tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
 
 ## Customization MinorTickLines Appearance
 
@@ -364,7 +364,7 @@ The thickness of the minor tick lines can be customized using [`SmallTickLineSiz
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -393,7 +393,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -402,7 +402,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
+![Minor tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
 
 Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
 
@@ -428,7 +428,7 @@ Styling customization of minor tick lines can be defined using [`MinorTickLineSt
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="Month" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -459,7 +459,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
@@ -468,7 +468,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
+![Minor tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
 
 N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
 
