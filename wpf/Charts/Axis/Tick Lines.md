@@ -74,7 +74,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Tick line size support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
+![TickLineSize support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
 
 ## Positioning the MajorTickLines
 

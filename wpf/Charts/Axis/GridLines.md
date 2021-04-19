@@ -69,7 +69,7 @@ this.Content = chart;
 
 Style can also be applied to major and minor gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
 
-## Style for MajorGridLineStyle
+## Style for MajorGridLines
 
 [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) in chart axis is used to customize the appearance of major gridlines. The following code example illustrates customize appearance of major gridlines in the primary axis.
 
@@ -137,7 +137,7 @@ this.Content = chart;
 
 ![MajorGridLineStyle support in WPF Chart](Axis_image/WPF_Chart_Axis_MajorGridLineStyle.png)
 
-## Style for MinorGridLineStyle
+## Style for MinorGridLines
 
 [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) will be added automatically when the small tick lines is defined inside the chart area.
 
