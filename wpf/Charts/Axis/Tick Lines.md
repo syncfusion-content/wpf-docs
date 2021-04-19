@@ -468,7 +468,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Minor tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
+![MinorTickLineStyle customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
 
 N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
 

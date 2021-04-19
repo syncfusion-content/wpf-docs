@@ -205,4 +205,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![MinorGridLineStyle customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorGridLineStyle.png)
+![MinorGridLineStyle support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorGridLineStyle.png)
