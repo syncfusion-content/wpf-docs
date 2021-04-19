@@ -30,11 +30,11 @@ Tick lines thickness can be customized using [`TickLineSize`](https://help.syncf
 </chart:SfChart.Resources>
 
 <chart:SfChart.PrimaryAxis>
-<chart:NumericalAxis TickLineSize="10" ShowGridLines="False" MajorTickLineStyle="{StaticResource lineStyle}" />
+<chart:NumericalAxis TickLineSize="10" ShowGridLines="False" MajorTickLineStyle="{StaticResource lineStyle}"/>
 </chart:SfChart.PrimaryAxis>
           
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -97,7 +97,7 @@ Tick lines can be positioned inside or outside of the chart area using [`TickLin
 </chart:SfChart.PrimaryAxis>
            
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -143,13 +143,13 @@ this.Content = chart;
 
 ## Customize MajorTickLines Appearance
 
-Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property . The following code snippet demonstrates the styling of major tick lines.
+Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property. The following code snippet demonstrates the styling of major tick lines.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
            
 <chart:SfChart.Resources>
 <Style TargetType="Line" x:Name="lineStyle">
@@ -163,7 +163,7 @@ Style can be applied to major tick lines using [`MajorTickLineStyle`](https://he
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -208,7 +208,7 @@ this.Content = chart;
 
 ## MinorTickLines
 
-Minor tick lines can be added by defining [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines  to every interval.
+Minor tick lines can be added by defining [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines to every interval.
 
 The following code example demonstrates the small ticks set for every interval.
 
@@ -216,7 +216,7 @@ The following code example demonstrates the small ticks set for every interval.
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.Resources>
 <Style TargetType="Line" x:Name="lineStyle">
@@ -229,7 +229,7 @@ The following code example demonstrates the small ticks set for every interval.
 </chart:SfChart.PrimaryAxis>
            
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis  />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -295,7 +295,7 @@ The following code example demonstrates the positioning of minor tick lines insi
 </chart:SfChart.PrimaryAxis>
            
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -347,7 +347,7 @@ The thickness of the minor tick lines can be customized using [`SmallTickLineSiz
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.Resources>
 <Style TargetType="Line" x:Name="lineStyle">

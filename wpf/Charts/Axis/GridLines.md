@@ -19,14 +19,14 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.PrimaryAxis>
-<chart:CategoryAxis Interval="1" ShowGridLines="False" />
+<chart:CategoryAxis Interval="1" ShowGridLines="False"/>
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis />
+<chart:NumericalAxis/>
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
@@ -77,7 +77,7 @@ Style can also be applied to major and minor gridlines using [`MajorGridLineStyl
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.Resources>
 <Style TargetType="Line" x:Key="lineStyle">          
@@ -126,7 +126,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
