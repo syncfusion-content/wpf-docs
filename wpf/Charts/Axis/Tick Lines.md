@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ticklines | Axis | SfChart | WPF | Syncfusion 
+title: Tick lines | Axis | SfChart | WPF | Syncfusion 
 description: This section explains about chart axis ticklines, customize appearance of the major ticklines and minor ticklines in chart axis in WPF chart
 platform: wpf
 control: SfChart
@@ -11,11 +11,11 @@ documentation: ug
 
 ## Tick Lines
 
-Tickline are the small lines which is drawn on the axis line representing the axis labels. Ticklines will be drawn outside of the axis by default. 
+Tick line are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
 **TickLineSize**
 
-Ticklines thickness can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
+Tick lines thickness can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ this.Content = chart;
 
 ## Positioning the MajorTickLines
 
-Ticklines can be positioned inside or outside of the chart area using [`TickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
+Tick lines can be positioned inside or outside of the chart area using [`TickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
 
 {% tabs %}
 
@@ -470,5 +470,5 @@ this.Content = chart;
 
 ![Ticklines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLineStyle.png)
 
-N> For category axis, small ticklines is not applicable since it is rendered based on index positions.
+N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
 
