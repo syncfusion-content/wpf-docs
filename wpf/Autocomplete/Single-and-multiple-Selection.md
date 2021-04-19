@@ -378,8 +378,8 @@ public class EmployeeViewModel
             set { employees = value; }
         }
 
-        private List<object> selectedItems;
-        public List<object> SelectedItems
+        private ObservableCollection<object> selectedItems;
+        public ObservableCollection<object> SelectedItems
         {
             get { return selectedItems; }
 
@@ -389,7 +389,7 @@ public class EmployeeViewModel
         public EmployeeViewModel()
         {
             Employees = new List<Employee>();
-            SelectedItems = new List<object>();
+            SelectedItems = new ObservableCollection<object>();
             Employees.Add(new Employee() { Name = "Eric", Email = "Eric@syncfusion.com" });
             Employees.Add(new Employee() { Name = "James", Email = "James@syncfusion.com" });
             Employees.Add(new Employee() { Name = "Jacob", Email = "Jacob@syncfusion.com" });
