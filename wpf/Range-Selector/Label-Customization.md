@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: This section explores how to customize the label with Intervals, Formatters and also visibility of label bars in DateTimeRangeNavigator
+description: This section explores how to customize the label with intervals, formatters, visibility and range padding in DateTimeRangeNavigator
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 The date-time range navigator control helps users to visualize large data in a simplified manner. The timespan of data is represented in the higher level bar and lower level bar. The timespan calculates data smartly and provides suitable date-time format and interval, by default.
 
-Users can also set the interval as needed for their data. This can be done by using the Interval property as demonstrated in the following code sample. 
+Users can also set the interval as needed for their data. This can be done by using the interval as demonstrated in the following code sample. 
 
 **Properties**
 
@@ -257,7 +257,7 @@ The date-time range navigator supports the following types of padding.
 
 ### None
 
-When the value of the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) is `None`, padding is not applied to the axis.
+When the value of the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) is `None`, padding is not applied to the range.
 
 The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) set to `None`. 
 
@@ -275,7 +275,6 @@ The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion
 
  SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
         RangePadding = NavigatorRangePadding.None
 };
 
@@ -287,7 +286,7 @@ The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion
 
 ### Round
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) property is Round, axis range will be rounded to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) property is Round, range will be rounded to the nearest possible value by the interval.
 
 {% tabs %}
 
