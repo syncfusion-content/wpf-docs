@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header| Axis| SfChart | WPF | Syncfusion 
+title: Header | Axis | SfChart | WPF | Syncfusion 
 description: This section explains about chart axis header, header style, it's behavior and customization header apperance of chart axis in WPF chart
 platform: wpf
 control: SfChart
@@ -20,7 +20,7 @@ In chart axis you can define any object as header using [`Header`](https://help.
 <chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.PrimaryAxis>
-<chart:CategoryAxis Header="Metals"  ShowGridLines="False" />
+<chart:CategoryAxis Header="Metals"  ShowGridLines="False"/>
 </chart:SfChart.PrimaryAxis>        
 
 <chart:SfChart.SecondaryAxis>
@@ -75,8 +75,7 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfChart Width="500" Height="300"
-Palette="BlueChrome">
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
 
 <chart:SfChart.PrimaryAxis>
 <chart:CategoryAxis Header="Metals" 
@@ -177,7 +176,7 @@ Default appearance of the header can be customized using [`HeaderTemplate`](http
 
 <syncfusion:SfChart.SecondaryAxis>
 <syncfusion:NumericalAxis Header="Values(In Tonnes)"
-  HeaderTemplate="{StaticResource secondaryHeaderTemplate}"/>
+HeaderTemplate="{StaticResource secondaryHeaderTemplate}"/>
 </syncfusion:SfChart.SecondaryAxis>
    
 <chart:SfChart.Series>
@@ -199,11 +198,13 @@ SfChart chart = new SfChart()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
+    ShowGridLines = false,
     HeaderTemplate = chart.Resources["primaryHeaderTemplate"] as DataTemplate
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
+    Header = "Values(In Tonnes)",
     HeaderTemplate = chart.Resources["secondaryHeaderTemplate"] as DataTemplate
 };
 

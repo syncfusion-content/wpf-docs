@@ -261,7 +261,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "Month";
+series.XBindingPath = "XValue";
 series.YBindingPath = "Profit";
 chart.Series.Add(series);
 this.Content = chart;
