@@ -275,8 +275,7 @@ The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion
 
  SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-        RangePadding = NavigatorRangePadding.None
-		
+    RangePadding = NavigatorRangePadding.None
 };
 
 {% endhighlight %}
@@ -303,9 +302,7 @@ When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion
 
  SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
-        RangePadding = NavigatorRangePadding.Round
-
+    RangePadding = NavigatorRangePadding.Round
 };
 
 {% endhighlight %}
