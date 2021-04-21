@@ -277,6 +277,7 @@ The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion
 {
 
         RangePadding = NavigatorRangePadding.None
+		
 };
 
 {% endhighlight %}
@@ -305,6 +306,7 @@ When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion
 {
 
         RangePadding = NavigatorRangePadding.Round
+
 };
 
 {% endhighlight %}
