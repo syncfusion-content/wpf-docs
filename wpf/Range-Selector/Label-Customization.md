@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Label Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: This section explores how to customize the label with Intervals, Formatters and also visibility of label bars in DateTimeRangeNavigator
+title: Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
+description: This section explores how to customize the label with intervals, formatters, visibility and range padding in DateTimeRangeNavigator
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Label Customization in DateTimeRangeNavigator
+# Customization in DateTimeRangeNavigator
+
+## Interval customization
 
 The date-time range navigator control helps users to visualize large data in a simplified manner. The timespan of data is represented in the higher level bar and lower level bar. The timespan calculates data smartly and provides suitable date-time format and interval, by default.
 
-Users can also set the interval as needed for their data. This can be done by using the Interval property as demonstrated in the following code sample. 
+Users can also set the interval as needed for their data. This can be done by using the interval as demonstrated in the following code sample. 
 
 **Properties**
 
@@ -46,7 +48,7 @@ Gets or sets string collection to set the label format for the navigator labels.
 
 	<syncfusion:SfDateTimeRangeNavigator.Content>
 
-		<syncfusion:SfChart   >
+		<syncfusion:SfChart>
 
 			<syncfusion:SfChart.PrimaryAxis>
 
@@ -120,7 +122,7 @@ The interval can be set in the following types:
 
 * [`Year`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 * [`Quarter`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Month`(https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 * [`Week`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 * [`Day`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 * [`Hour`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
@@ -161,7 +163,7 @@ YearInterval</td><td>
 </table>
 
 
-**Label style customization**
+## Label style customization
 
 <table>
 <tr>
@@ -171,6 +173,7 @@ Description</th></tr>
 <tr>
 <td>
 LabelBarStyle</td><td>
+
 Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle) or [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle).</td></tr>
 <tr>
 <td>
@@ -188,7 +191,7 @@ Positions the upper and lower labels inside or outside the label bar.</td></tr>
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="navigator">
 
-    syncfusion:SfRangeNavigator.Resources>
+    <syncfusion:SfRangeNavigator.Resources>
 
         <Style TargetType="TextBlock" x:Key="labelStyle">
 
@@ -244,3 +247,67 @@ The following screenshot illustrates setting the Label HorizontalAlignment to le
 ### Visibility of label bar 
  
 SfDateTimeRangeNavigator provides support to customize the visibility of lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
+
+## RangePadding Customization
+
+The date-time range navigator supports the following types of padding.
+
+* None
+* Round
+
+### None
+
+When the value of the [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) is `None`, padding is not applied to the range.
+
+The following screenshot demonstrates a [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) set to `None`. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:SfDateTimeRangeNavigator RangePadding="None">
+
+</Syncfusion:SfDateTimeRangeNavigator >
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+    RangePadding = NavigatorRangePadding.None
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Navigator range padding support in WPF](Label-Customization_images/rangePadding_None.png)
+
+### Round
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RangePadding) property is Round, range will be rounded to the nearest possible value by the interval.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:SfDateTimeRangeNavigator RangePadding="Round">
+
+</Syncfusion:SfDateTimeRangeNavigator >
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+    RangePadding = NavigatorRangePadding.Round
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Navigator range padding support in WPF](Label-Customization_images/rangePadding_Round.png)
+
