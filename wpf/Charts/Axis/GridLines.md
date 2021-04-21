@@ -139,7 +139,7 @@ this.Content = chart;
 
 ## Style for minor gridlines
 
-Minor gridlines will be added automatically when the small tick lines is defined inside the chart area. [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) in chart axis is used to customize the apperance of minor gridlines. The following code example illustrates customize appearance of minor gridlines in the secondary axis.
+Minor gridlines will be added automatically when the small tick lines is defined inside the chart area. [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) in chart axis is used to customize the appearance of minor gridlines. The following code example illustrates customize appearance of minor gridlines in the secondary axis.
 
 {% tabs %}
 
