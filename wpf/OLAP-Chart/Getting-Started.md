@@ -20,7 +20,7 @@ Open the Visual Studio IDE and navigate to File > New > Project > WPF Applicatio
 
 After the WPF application is created, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP chart under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies to the application.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 Add a **Name** to the OLAP chart component for accessing it through code-behind as shown in the following code sample.
 
@@ -159,7 +159,7 @@ End Namespace
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF OLAP Chart Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
    
 ## Through expression blend
 
@@ -178,7 +178,7 @@ N> You can also get the assemblies by browsing to the default assembly location:
 
 On adding the above assemblies, the OLAP chart control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP chart to the designer.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF OLAP Chart Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 Add a **Name** to the OLAP chart component for accessing it through the code-behind as shown in the following code sample.
 
@@ -317,7 +317,7 @@ End Namespace
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF OLAP Chart Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 ## Through code-behind
 
@@ -467,7 +467,7 @@ End Namespace
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF OLAP Chart Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 ## Design-time binding
 
@@ -475,15 +475,15 @@ Design-time binding support for OLAP chart allows you to reduce the time spent o
 
 First drag the OLAP chart control from the toolbox to the Visual Studio designer surface.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAP Chart Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 Right-click the OLAP chart available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![WPF OLAP Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 From the **Data Source Properties** wizard, select the connection type. If you want to connect to SSAS, select **Use server name and database to connect to a server** and specify the necessary information to connect to the server. If you want to connect to an Offline cube, select **Use a connection string to connect to a server** and enter your connection string path.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF OLAP Chart Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 If you want to test the connection, click the **Test Connection** button that is displayed on the bottom-left corner of the window. Click **Next** to proceed.
 
@@ -491,11 +491,11 @@ N> The Next button is enabled only when any one of the connection option is fill
 
 When the connection is valid, it displays the summary page of the **Data Source Properties** wizard. When you create a query for the first time, the MDX query text box in the summary page is empty. When you edit an existing query, it displays the current query in the text box.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![WPF OLAP Chart Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 For creating or editing a query, click the **Create/Edit** link that is displayed on the top-right side of the MDX query text box. This opens a **Query Designer** dialog. 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![WPF OLAP Chart Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 When you edit an existing query, it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in the chart control.
    
@@ -503,13 +503,13 @@ N> It does not display any style/formatting applied to the chart. It only displa
 
 Drag the dimensions to frame a new query. Then, click OK to save the query or click Cancel to revert the changes made during this session.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![WPF OLAP Chart Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 The summary page of the **Data Source Properties** wizard displays the resultant MDX query.
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![WPF OLAP Chart Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
 
 Click **Finish** and run the application.
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![WPF OLAP Chart Getting-Started Image10](Getting-Started_images/Getting-Started_img10.png)
 

@@ -20,7 +20,7 @@ Open the Visual Studio IDE and navigate to File > New > Project > WPF applicatio
 
 After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP client under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies to the application.
    
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAP Client Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
 
@@ -92,7 +92,7 @@ End Namespace
  
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF OLAP Client Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 ## Through expression blend
 
@@ -114,7 +114,7 @@ N> You can also get the assemblies by browsing to the default assembly location 
 
 On adding the above assemblies, the OLAP client control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP client to the designer.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF OLAP Client Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
 
@@ -187,7 +187,7 @@ End Namespace
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![WPF OLAP Client Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 ## Through code-behind
 
@@ -274,4 +274,4 @@ End Namespace
    
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF OLAP Client Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)

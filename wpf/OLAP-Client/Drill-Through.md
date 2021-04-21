@@ -42,17 +42,17 @@ End Sub
 
 {% endtabs %}
 
-![](Drill-Through_images/Drill-Through_img1.png)
+![WPF OLAP Client Drill-Through Image1](Drill-Through_images/Drill-Through_img1.png)
 
 Hyperlink Cell Click
 {:.caption}
 
-![](Drill-Through_images/Drill-Through_img2.png)
+![WPF OLAP Client Drill-Through Image2](Drill-Through_images/Drill-Through_img2.png)
 
 Attribute Hierarchy Selector
 {:.caption}
 
-![](Drill-Through_images/Drill-Through_img3.png)
+![WPF OLAP Client Drill-Through Image3](Drill-Through_images/Drill-Through_img3.png)
 
 Grid with drill-through information
 {:.caption}

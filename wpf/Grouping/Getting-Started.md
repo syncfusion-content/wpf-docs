@@ -15,7 +15,7 @@ This section will show you how easy it is to get started using Essential Groupin
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![WPF Grouping Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer WPF topic for detailed info.

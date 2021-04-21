@@ -33,7 +33,7 @@ In the Grid control, each cell acts as a single entity, which is suitable for ap
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF GridTree Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -45,7 +45,7 @@ For more detailed information about data source connections, refer to the Data B
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF GridTree Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -55,7 +55,7 @@ The GridTree control serves as a multicolumn tree control that is optimized to d
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF GridTree Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -65,13 +65,13 @@ The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
 ### Control Hierarchy
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![WPF GridTree Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 ### Model Hierarchy
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF GridTree Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -92,7 +92,7 @@ This section demonstrates how to add a GridTree control to a WPF application and
    * Syncfusion.GridCommon.Wpf.dll
    * Syncfusion.Shared.Wpf.dll
    
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![WPF GridTree Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 3. Name the root grid as layoutRoot in the application’s XAML page.		
 
@@ -387,7 +387,7 @@ To populate data using this event, follow these steps:
      When the application runs, the following output will be generated.
 
 
-     ![](Getting-Started_images/Getting-Started_img9.png)
+     ![WPF GridTree Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
 
 
 ### Samples
@@ -711,7 +711,7 @@ A self-relational collection is a collection of objects in which each object has
 
 
 
-   ![](Getting-Started_images/Getting-Started_img10.png)
+   ![WPF GridTree Getting-Started Image10](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -916,7 +916,7 @@ The following steps explain how to bind a data view from a database to the GridT
 
 
 
-   ![](Getting-Started_images/Getting-Started_img11.png)
+   ![WPF GridTree Getting-Started Image11](Getting-Started_images/Getting-Started_img11.png)
 	 
 
 ### Sample

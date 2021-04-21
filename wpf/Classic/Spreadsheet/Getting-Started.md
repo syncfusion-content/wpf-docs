@@ -17,11 +17,11 @@ documentation: ug
 
 2. Click File tab and navigate to New > Project.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![WPF Spreadsheet Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 3. In the New Project dialog box, select WPF Application, enter a name for the application in the Name field and click OK.
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![WPF Spreadsheet Getting-Started Image2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 4. Now, a new WPF application will be created.
 
@@ -35,7 +35,7 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 2. In Visual Studio Toolbox, click Syncfusion WPF Toolbox tab.
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![WPF Spreadsheet Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png) 
    
 3. Drag SpreadsheetControl to the Designer area.
 
@@ -103,11 +103,11 @@ N> You can also open the Excel document using ImportFromExcelCommand. When you e
 
 ### Structure of the SpreadsheetRibbon Control
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![WPF Spreadsheet Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 ### Structure of the Spreadsheet Control
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF Spreadsheet Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 ## Architecture
 
@@ -115,7 +115,7 @@ The Spreadsheet control supports ControlTemplate to define its content. By defau
 
 The following sketch illustrates the Spreadsheet control architecture.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![WPF Spreadsheet Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 ### Accessing the Underlying Grid control
 

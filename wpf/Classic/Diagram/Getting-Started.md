@@ -54,7 +54,7 @@ Rulers display the coordinates of elements on the diagram page. Negative label v
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF Diagram Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -64,7 +64,7 @@ The class diagram for Essential Diagram WPF is as follows.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF Diagram Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -76,7 +76,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![WPF Diagram Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -84,7 +84,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![WPF Diagram Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
    
 
@@ -359,7 +359,7 @@ diagramgrid.Children.Add(dc)
 
 
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![WPF Diagram Getting-Started Image5](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 
@@ -379,28 +379,28 @@ Following are the steps to create Diagram Control through Designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![WPF Diagram Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 2. Select Diagram Control from ToolBox.
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![WPF Diagram Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 3. Drag the Diagram Control onto the Designer.
 
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![WPF Diagram Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 
 
 4. DiagramControl is added to the Page and also the assembly reference is added to the Project file.
 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![WPF Diagram Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
 
    
 
@@ -869,7 +869,7 @@ diagramModel.Connections.Add(connection)
 
 
 {% endhighlight  %}
-![](Getting-Started_images/Getting-Started_img10.jpeg)
+![WPF Diagram Getting-Started Image10](Getting-Started_images/Getting-Started_img10.jpeg)
 
 
 
@@ -1327,7 +1327,7 @@ The following code shows how the automatic layout can be generated.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img11.jpeg)
+   ![WPF Diagram Getting-Started Image11](Getting-Started_images/Getting-Started_img11.jpeg)
 
    
 
@@ -1820,7 +1820,7 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 
 
-   ![](Getting-Started_images/Getting-Started_img12.jpeg)
+   ![WPF Diagram Getting-Started Image12](Getting-Started_images/Getting-Started_img12.jpeg)
 
    
 
@@ -2432,7 +2432,7 @@ diagramModel.ColumnCount = 3
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img14.jpeg)
+![WPF Diagram Getting-Started Image14](Getting-Started_images/Getting-Started_img14.jpeg)
 
 
 
@@ -2846,7 +2846,7 @@ The following code illustrates how to generate the BowTie layout:
        {%endhighlight%}
 	   
 	   
-   ![](Getting-Started_images/Getting-Started_img15.png)
+   ![WPF Diagram Getting-Started Image15](Getting-Started_images/Getting-Started_img15.png)
 
    
 
@@ -2967,7 +2967,7 @@ N> If the OrderNodes property is set to null, then the table layout will be appl
 
 
 
-![](Getting-Started_images/Getting-Started_img16.png)
+![WPF Diagram Getting-Started Image16](Getting-Started_images/Getting-Started_img16.png)
 
 
 

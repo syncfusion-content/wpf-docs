@@ -20,7 +20,7 @@ Open Visual Studio IDE and go to File > New > Project > WPF Application (inside 
   
 After creating the WPF application, go to View menu and select Toolbox option. Now, the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OLAP grid under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies into the application.
 
-![](Getting-Started_images/Getting-Started_img0.png)
+![WPF OLAPGrid Getting-Started Image0](Getting-Started_images/Getting-Started_img0.png)
 
 Add a **Name** to the OLAP grid component for accessing it through code-behind as shown in the following code sample.
 
@@ -151,7 +151,7 @@ End Class
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 ## Through Expression Blend
 
@@ -169,7 +169,7 @@ N> You can also get the assemblies by browsing to the default assembly location:
   
 On adding the above assemblies, the OLAP grid control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP grid to the designer.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF OLAPGrid Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 Add a **Name** to the OLAP grid component for accessing it through code-behind as shown in the following code sample.
 
@@ -304,7 +304,7 @@ End Class
     
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 ## Through code-behind
 
@@ -445,7 +445,7 @@ End Class
 
 Run the application. The following output will be generated.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAPGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 ## Design-time binding
 
@@ -453,15 +453,15 @@ Design-time binding support for OLAP grid allows you to reduce the time spent on
 
 First drag the OLAP grid control from the toolbox to the Visual Studio designer surface.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF OLAPGrid Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 Right-click the OLAP grid available in the designer and go to **Configure data source > Create/Edit data source…** option in the context menu. Now, the **Data Source Properties** wizard opens.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![WPF OLAPGrid Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 From the **Data Source Properties** wizard, select the connection type. If you want to connect to SSAS, select **Use server name and database to connect to a server** and specify the necessary information to connect to the server. If you want to connect to an offline cube, select **Use a connection string to connect to a server** and enter your connection string path.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF OLAPGrid Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 If you want to test the connection, click the **Test Connection** button that is displayed on the bottom-left corner of the window. Click the **Next** button, to proceed.
 
@@ -469,11 +469,11 @@ N> The next button is enabled only when any one of the connection options is fil
 
 When the connection is valid, it displays the summary page of the **Data Source Properties** wizard. When you create a query for the first time, the MDX query textbox in the summary page is empty. When you edit an existing query, it displays the current query in the text box.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![WPF OLAPGrid Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
  
 For creating or editing a query, click the **Create/Edit** link that is displayed on the top-right side of the MDX query textbox. This opens a **Query Designer** dialog.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![WPF OLAPGrid Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 When you edit an existing query, it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a grid control.
    
@@ -483,10 +483,10 @@ Drag and drop dimensions to frame a new query. Then, click OK, to save the query
  
 The summary page of the **Data Source Properties** wizard displays the resultant MDX query.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![WPF OLAPGrid Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
 Click **Finish** and run the application.
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![WPF OLAPGrid Getting-Started Image9](Getting-Started_images/Getting-Started_img9.png)
 
     
