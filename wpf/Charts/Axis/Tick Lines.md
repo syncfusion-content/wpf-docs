@@ -1,19 +1,66 @@
 ---
 layout: post
 title: Tick Lines | Axis | SfChart | WPF | Syncfusion 
-description: This section explains about chart axis tick lines, customize appearance of the major tick lines and minor tick lines in chart axis in WPF chart
+description: This section explains about chart axis major tick lines, minor tick lines, positioning the tick lines and its customization in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Tick Lines in WPF Chart
+# Tick lines in WPF Chart
 
-## Tick Lines
+Tick lines are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
-Tick line are the small lines which is drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
+## Major tick lines
 
-**TickLineSize**
+By default, major tick lines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) in its defined intervals to representing axis labels.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart Width="500" Height="300" Palette="BlueChrome">
+
+<chart:SfChart.PrimaryAxis>
+<chart:NumericalAxis />
+</chart:SfChart.PrimaryAxis>
+          
+<chart:SfChart.SecondaryAxis>
+<chart:NumericalAxis/>
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.Series>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
+</chart:SfChart.Series>
+        
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart() 
+{ 
+    Height = 300,
+    Width = 500, 
+    Palette = ChartColorPalette.BlueChrome
+};
+
+chart.PrimaryAxis = new NumericalAxis();
+chart.SecondaryAxis = new NumericalAxis();
+
+ColumnSeries series = new ColumnSeries();
+series.ItemsSource = (new ViewModel()).NumericalData;
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+chart.Series.Add(series);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Major tick line size
 
 Tick lines thickness can be customized using [`TickLineSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLineSize) property as shown in the below code snippet.
 
@@ -38,7 +85,7 @@ Tick lines thickness can be customized using [`TickLineSize`](https://help.syncf
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
         
 </chart:SfChart>
@@ -66,7 +113,7 @@ chart.SecondaryAxis = new NumericalAxis();
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -76,7 +123,7 @@ this.Content = chart;
 
 ![TickLineSize support in WPF Chart](Axis_image/WPF_Chart_Axis_TickLineSize.png)
 
-## Positioning the MajorTickLines
+## Positioning the major tick lines
 
 Tick lines can be positioned inside or outside of the chart area using [`TickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TickLinesPosition) property. By default the tick lines will positioned outside of the chart area. The following code example demonstrates the positioning tick lines inside chart area.
 
@@ -101,7 +148,7 @@ Tick lines can be positioned inside or outside of the chart area using [`TickLin
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -131,7 +178,7 @@ chart.SecondaryAxis = new NumericalAxis();
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -139,9 +186,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Major tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
+![Major tick lines positioning in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MajorTickLines.png)
 
-## Customize MajorTickLines Appearance
+## Style for major tick lines
 
 Style can be applied to major tick lines using [`MajorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorTickLineStyle) property. The following code snippet demonstrates the styling of major tick lines.
 
@@ -167,7 +214,7 @@ Style can be applied to major tick lines using [`MajorTickLineStyle`](https://he
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -196,7 +243,7 @@ chart.SecondaryAxis = new NumericalAxis();
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -206,7 +253,7 @@ this.Content = chart;
 
 ![Major tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MajorTickLines.png)
 
-## MinorTickLines
+## Minor tick lines
 
 Minor tick lines can be added by defining [`SmallTicksPerInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTicksPerInterval) property. This property will add the tick lines to every interval.
 
@@ -233,7 +280,7 @@ The following code example demonstrates the small ticks set for every interval.
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -262,7 +309,7 @@ chart.SecondaryAxis = new NumericalAxis();
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -272,74 +319,7 @@ this.Content = chart;
 
 ![Minor tick lines support in WPF Chart](Axis_image/WPF_Chart_Axis_MinorTickLines.png)
 
-## Positioning the MinorTickLines
-
-Minor tick lines can be positioned inside or outside using [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) property. By default the minor tick lines will be positioned outside.
-
-The following code example demonstrates the positioning of minor tick lines inside the chart area.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
-
-<chart:SfChart.Resources>
-<Style TargetType="Line" x:Name="lineStyle">
-<Setter Property="Stroke" Value="Red"/>
-</Style>
-</chart:SfChart.Resources>
-            
-<chart:SfChart.PrimaryAxis>
-<chart:NumericalAxis Interval="1"  ShowGridLines="False"                  SmallTicksPerInterval="5" SmallTickLinesPosition="Inside" MinorTickLineStyle="{StaticResource lineStyle}"/>
-</chart:SfChart.PrimaryAxis>
-           
-<chart:SfChart.SecondaryAxis>
-<chart:NumericalAxis/>
-</chart:SfChart.SecondaryAxis>
-
-<chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
-</chart:SfChart.Series>
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart() 
-{ 
-    Height = 300,
-    Width = 500, 
-    Palette = ChartColorPalette.BlueChrome
-};
-
-chart.PrimaryAxis = new NumericalAxis()
-{
-    Interval = 1,
-    ShowGridLines= false,           
-    SmallTicksPerInterval = 5,
-    SmallTickLinesPosition = AxisElementPosition.Inside,
-    MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
-};
-
-chart.SecondaryAxis = new NumericalAxis();
-
-SplineSeries series = new SplineSeries();
-series.ItemsSource = (new ViewModel()).NumericalData;
-series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
-chart.Series.Add(series);
-this.Content = chart;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Minor tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
-
-## Customization MinorTickLines Appearance
+## Minor tick line size
 
 The thickness of the minor tick lines can be customized using [`SmallTickLineSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLineSize) property as shown in the below code snippet.
 
@@ -364,7 +344,7 @@ The thickness of the minor tick lines can be customized using [`SmallTickLineSiz
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -394,7 +374,7 @@ chart.SecondaryAxis = new NumericalAxis();
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -402,9 +382,79 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Minor tick lines customization support in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
+![Minor tick line size in WPF Chart](Axis_image/WPF_Chart_Axis_Customize_MinorTickLines.png)
 
-Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
+## Positioning the minor tick lines
+
+Minor tick lines can be positioned inside or outside using [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_SmallTickLinesPosition) property. By default the minor tick lines will be positioned outside.
+
+The following code example demonstrates the positioning of minor tick lines inside the chart area.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart Width="500" Height="300"  Palette="BlueChrome">
+
+<chart:SfChart.Resources>
+<Style TargetType="Line" x:Name="lineStyle">
+<Setter Property="Stroke" Value="Red"/>
+</Style>
+</chart:SfChart.Resources>
+            
+<chart:SfChart.PrimaryAxis>
+<chart:NumericalAxis Interval="1" ShowGridLines="False" SmallTicksPerInterval="5" 
+ SmallTickLinesPosition="Inside" MinorTickLineStyle="{StaticResource lineStyle}"/>
+</chart:SfChart.PrimaryAxis>
+           
+<chart:SfChart.SecondaryAxis>
+<chart:NumericalAxis/>
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.Series>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
+</chart:SfChart.Series>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart() 
+{ 
+    Height = 300,
+    Width = 500, 
+    Palette = ChartColorPalette.BlueChrome
+};
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+    Interval = 1,
+    ShowGridLines= false,           
+    SmallTicksPerInterval = 5,
+    SmallTickLinesPosition = AxisElementPosition.Inside,
+    MinorTickLineStyle = chart.Resources["lineStyle"] as Style 
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+SplineSeries series = new SplineSeries();
+series.ItemsSource = (new ViewModel()).NumericalData;
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+chart.Series.Add(series);
+this.Content = chart;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Minor tick lines positioning support in WPF Chart](Axis_image/WPF_Chart_Axis_Positioning_MinorTickLines.png)
+
+## Style for minor tick lines
+
+Minor tick lines can be customized by using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
 
 {% tabs %}
 
@@ -428,7 +478,7 @@ Styling customization of minor tick lines can be defined using [`MinorTickLineSt
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -460,7 +510,7 @@ chart.SecondaryAxis = new NumericalAxis();
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
