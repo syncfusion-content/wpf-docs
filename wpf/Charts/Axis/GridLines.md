@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gridlines | Axis | SfChart | WPF | Syncfusion 
-description: This section explains about chart axis gridlines, it's type major gridlinestyle and minor gridlinestyle of chart axis in WPF chart
+description: This section explains about the chart axis major gridlines, minor gridlines and it customization in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
@@ -30,7 +30,7 @@ The following code example illustrates the [`ShowGridLines`](https://help.syncfu
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:ColumnSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -57,7 +57,7 @@ chart.SecondaryAxis = new NumericalAxis();
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -69,7 +69,7 @@ this.Content = chart;
 
 Style can also be applied to major and minor gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
 
-## Style for MajorGridLines
+## Style for major gridlines
 
 [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) in chart axis is used to customize the appearance of major gridlines. The following code example illustrates customize appearance of major gridlines in the primary axis.
 
@@ -96,7 +96,7 @@ Style can also be applied to major and minor gridlines using [`MajorGridLineStyl
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -127,7 +127,7 @@ chart.SecondaryAxis = new NumericalAxis()
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -137,9 +137,9 @@ this.Content = chart;
 
 ![MajorGridLineStyle support in WPF Chart](Axis_image/WPF_Chart_Axis_MajorGridLineStyle.png)
 
-## Style for MinorGridLines
+## Style for minor gridlines
 
-[`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) will be added automatically when the small tick lines is defined inside the chart area.
+Minor gridlines will be added automatically when the small tick lines is defined inside the chart area. [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) in chart axis is used to customize the apperance of minor gridlines. The following code example illustrates customize appearance of minor gridlines in the secondary axis.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ this.Content = chart;
 </chart:SfChart.SecondaryAxis>
 
 <chart:SfChart.Series>
-<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="Profit"/>
+<chart:SplineSeries ItemsSource="{Binding NumericData}" XBindingPath="XValue" YBindingPath="YValue"/>
 </chart:SfChart.Series>
 
 </chart:SfChart>
@@ -197,7 +197,7 @@ chart.SecondaryAxis = new NumericalAxis()
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).NumericalData;
 series.XBindingPath = "XValue";
-series.YBindingPath = "Profit";
+series.YBindingPath = "YValue";
 chart.Series.Add(series);
 this.Content = chart;
 
