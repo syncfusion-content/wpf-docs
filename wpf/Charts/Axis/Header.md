@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header | Axis | SfChart | WPF | Syncfusion 
-description: This section explains about chart axis header, header style, it's behavior and customization header apperance of chart axis in WPF chart
+description: This section explains about chart axis header, header style, header template and customization header apperance of chart axis in WPF chart
 platform: wpf
 control: SfChart
 documentation: ug
@@ -67,7 +67,7 @@ this.Content = chart;
 
 ![Header support for ChartAxis in WPF](Axis_image/WPF_Chart_Axis_Header.png)
 
-## HeaderStyle
+## Style for header
 
 [`HeaderStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header. The following code example explains header style customization.
 
@@ -141,9 +141,9 @@ this.Content = chart;
 
 {% endtabs %}
 
-![HeaderStyle for header support in WPF](Axis_image/WPF_Chart_Axis_HeaderStyle.png)
+![Axis header style in WPF chart](Axis_image/WPF_Chart_Axis_HeaderStyle.png)
 
-## Customize Header Appearance
+## Customization of header by HeaderTemplate
 
 Default appearance of the header can be customized using [`HeaderTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderTemplate) property. The following code snippet demonstrates the header customization.
 
@@ -219,4 +219,4 @@ this.Content = chart;
 
 {% endtabs %}
 
-![Header customization apperance for ChartAxis in WPF](Axis_image/WPF_Chart_Axis_Customize_Header_Appearence.png)
+![HeaderTemplate support for ChartAxis in WPF](Axis_image/WPF_Chart_Axis_Customize_Header_Appearence.png)
