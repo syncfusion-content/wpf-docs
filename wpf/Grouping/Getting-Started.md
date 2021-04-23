@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for  Syncfusion Essential WPF 
-description: getting started
+title: Getting Started with WPF Grouping Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF Grouping control, its elements, and more.
 platform: WPF
 control: Grouping
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Grouping
 
 This section will show you how easy it is to get started using Essential Grouping. It will give you a basic introduction to the concepts you need to know before getting started with the product and some tips and ideas on how to implement Grouping into your projects to improve customization and increase efficiency. It shows how to create an IList data source and use it with Grouping. The datasource is an ArrayList of custom objects. As part of this lesson, you will see how to iterate through the data in the GroupingEngine.
 
@@ -15,7 +15,7 @@ This section will show you how easy it is to get started using Essential Groupin
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![WPF Grouping Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer WPF topic for detailed info.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| RichTextBoxAdv | Wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF RichTextBoxAdv Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF RichTextBoxAdv control, its elements, and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF RichTextBoxAdv
 
 ## Adding RichTextBoxAdv to an Application 
 
@@ -30,7 +30,7 @@ To create a RichTextBoxAdv instance in Visual Studio:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img1.png)         
+   ![WPF RichTextBoxAdv Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)         
 
 
 
@@ -39,7 +39,7 @@ To create a RichTextBoxAdv instance in Visual Studio:
 5. Click OK.                    
 
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![WPF RichTextBoxAdv Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -49,7 +49,7 @@ To create a RichTextBoxAdv instance in Visual Studio:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![WPF RichTextBoxAdv Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -64,7 +64,7 @@ To create a RichTextBoxAdv instance in Expression Blend:
 
 
 
-    ![](Getting-Started_images/Getting-Started_img4.png)
+    ![WPF RichTextBoxAdv Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -73,7 +73,7 @@ To create a RichTextBoxAdv instance in Expression Blend:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img5.png)    
+   ![WPF RichTextBoxAdv Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)    
 
 
 
@@ -83,7 +83,7 @@ To create a RichTextBoxAdv instance in Expression Blend:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![WPF RichTextBoxAdv Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -102,7 +102,7 @@ You can edit the style of the RichTextBoxAdv control by using Expression Blend. 
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![WPF RichTextBoxAdv Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 
 
