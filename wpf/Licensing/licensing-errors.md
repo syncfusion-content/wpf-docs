@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Licensing Errors
+# Common Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 
