@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfBarcode | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF SfBarcode Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF SfBarcode control, its elements, and more.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF SfBarcode
 
 ## Add Barcode control to an Application 
 
@@ -27,7 +27,7 @@ To create the SfBarcode control in Visual Studio:
 
 2. Drag the SfBarcode control from the Toolbox window to the Design View. An instance of the SfBarcode control is created in the Design view.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![WPF SfBarcode Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
    SfBarcode Control after Dragging to Design View
    {:.caption}
