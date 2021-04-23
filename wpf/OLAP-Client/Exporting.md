@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting OLAP Chart and OLAP Grid to various forms
-description: Exporting OLAP Chart and OLAP Grid to various forms
+title: About WPF Exporting OLAP Client Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Exporting OLAP Client control, its features, and more.
 platform: wpf
 control: OLAP Client
 documentation: ug

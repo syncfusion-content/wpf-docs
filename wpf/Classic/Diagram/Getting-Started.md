@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Diagram | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF Diagram Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF Diagram control, its elements, and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Diagram
 
 This section helps you to get started with Essential Diagram and has the following topics:
 
@@ -2187,7 +2187,7 @@ N/A</td></tr>
 
            {%endhighlight%}
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+   ![WPF Diagram Getting-Started Image13](Getting-Started_images/Getting-Started_img13.png)
 
    
 

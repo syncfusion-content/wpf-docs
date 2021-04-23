@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| RichTextBoxAdv | Wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF RichTextBoxAdv Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF RichTextBoxAdv control, its elements, and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF RichTextBoxAdv
 
 ## Adding RichTextBoxAdv to an Application 
 

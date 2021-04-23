@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Chart(Classic) | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF Chart Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF Chart (Classic) control, its elements, and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Chart
 
 ## Feature Summary
 
@@ -86,19 +86,19 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
    
 3. Click the Expand button at the right corner of the chart area in the designer. It generates the Smart Tag for the chart area.
 
-   ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/st.png](Getting-Started_images/Getting-Started_img4.png)
+   ![WPF Chart Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 4. You can reuse this default series or else you can delete them and add a new series using the Smart Tag. Use DataSource property of ChartSeries to have the data collection bound to chart series, and to visualize the data in various forms such as bar chart, column chart, pie, pyramid, or other chart types. Refer to the section Chart Series to know more about data-binding to a chart series.
 
 5. To add a title to the chart area, select the Properties tab in the chart area and enter a title for the chart area in the Header field.
 
-   ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/HeaderProperty_HL.png](Getting-Started_images/Getting-Started_img5.png)
+   ![WPF Chart Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
    ![WPF Chart Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 6. To set the axis header, expand the PrimaryAxis and enter the axis header in the Header field. Similarly, you can do this for the SecondaryAxis.
 
-   ![C:/Users/johnbowlinboscok/Desktop/UG Images/PrimaryAxisHeader_HL.png](Getting-Started_images/Getting-Started_img7.png)
+   ![WPF Chart Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
    ![WPF Chart Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
@@ -174,15 +174,15 @@ Smart Tag appears for the chart, chart area and chart legend. By using the Smart
 
 The following screenshot illustrates the Smart Tag for chart.
 
-![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/Chart_ST.png](Getting-Started_images/Getting-Started_img16.png)
+![WPF Chart Getting-Started Image16](Getting-Started_images/Getting-Started_img16.png)
 
 The following screenshot illustrates the Smart Tag for chart area.
 
-![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartArea_ST.png](Getting-Started_images/Getting-Started_img17.png)
+![WPF Chart Getting-Started Image17](Getting-Started_images/Getting-Started_img17.png)
 
 The following screenshot illustrates the Smart Tag for chart legend.
 
-![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartLegend_ST.png](Getting-Started_images/Getting-Started_img18.png)
+![WPF Chart Getting-Started Image18](Getting-Started_images/Getting-Started_img18.png)
 
 
 

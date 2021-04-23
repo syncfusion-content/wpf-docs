@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| GridTree | Wpf | Syncfusion
-description: getting started	
+title: Getting Started with WPF GridTree Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF GridTree control, its elements, and more.
 platform: wpf
 control: GridTree
 documentation: ug
 ---
 
-# Getting Started	
+# Getting Started with WPF GridTree
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application. Control appearance and structure are defined and the Essential Grid’s relevant classes are depicted.
 

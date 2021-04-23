@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Spreadsheet | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF Spreadsheet Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF Spreadsheet control, its elements, and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Spreadsheet
 
 ## Creating a WPF Application
 
