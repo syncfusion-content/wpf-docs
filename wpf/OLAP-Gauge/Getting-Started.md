@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started
-description: Getting started
+title: Getting Started with WPF OLAP Gauge Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential WPF OLAP Gauge control, its elements, and more.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF OLAP Gauge
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.
@@ -30,7 +30,7 @@ The OLAP gauge control can be initialized and added to an application through th
 
 3. From the toolbox, select the OLAP gauge control under “Syncfusion BI WPF” group, and then drag it to the designer section of the MainPage.xaml file.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF OLAP Gauge Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 4. Then, name the added OLAP gauge control as “OlapGauge1” in MainPage.xaml to refer it in code-behind as follows:
 
@@ -197,7 +197,7 @@ On adding the above assemblies, the OLAP gauge control will be added under the *
 
 4. Now, choose the **Assets** tab and drag the OLAP gauge control to the designer.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF OLAP Gauge Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 5. Then, name the added OLAP gauge control as "OlapGauge1" in MainPage.xaml to refer it in code-behind as follows:
 
@@ -381,4 +381,4 @@ End Namespace
 
 Finally, run the application. The OLAP gauge control is rendered as follows.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![WPF OLAP Gauge Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
