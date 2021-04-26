@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion UWP products
-description: this section provides information regarding the Syncfusion UWP Offline installer and steps for installing it
+title: Installation and Deployment process for Syncfusion WPF products
+description: this section provides information regarding the Syncfusion WPF Offline installer and steps for installing it
 platform: wpf
 control: Installation and Deployment
 documentation: ug
@@ -10,13 +10,13 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/wpf/installation-and-upgrade/download) section to learn how to get the UWP trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/wpf/installation-and-upgrade/download) section to learn how to get the WPF trial or licensed installer.
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio UWP installer.
+The steps below show how to install the Essential Studio WPF installer.
 
-1.	Open the Syncfusion UWP offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+1.	Open the Syncfusion WPF offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
     ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
@@ -40,7 +40,7 @@ The steps below show how to install the Essential Studio UWP installer.
 
     **Use Unlock Key**
    
-    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion UWP installer.
+    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion WPF installer.
    
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key. 
    
@@ -92,24 +92,24 @@ The steps below show how to install the Essential Studio UWP installer.
 	
 	![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
 
-    N> The Completed screen is displayed once the UWP product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+    N> The Completed screen is displayed once the WPF product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 	
 	![Completed wizard](Platform_images/Step-by-Step-Installation_img10.png)
 	
 7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
-8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio UWP product.
+8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio WPF product.
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio UWP Installer supports installation and uninstallation via the command line.
+The Syncfusion Essential Studio WPF Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
-1.	Run the Syncfusion UWP installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.	Run the Syncfusion WPF installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialwpf_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialwpf_(version).exe file will be located in one of the folders.
 4.	Copy the extracted syncfusionessentialwpf_(version).exe file in local drive.
@@ -125,16 +125,16 @@ To install through the Command Line in Silent mode, follow the steps below.
    **Example:** “D:\Temp\syncfusionessentialwpf_x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
-7.  Essential Studio for UWP is installed.
+7.  Essential Studio for WPF is installed.
 
     N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
 
-Syncfusion Essential UWP can be uninstalled silently using the Command Line.
+Syncfusion Essential WPF can be uninstalled silently using the Command Line.
 
-1.	Run the Syncfusion UWP installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.	Run the Syncfusion WPF installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialwpf_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialwpf_(version).exe file will be located in one of the folders.
 4.	Copy the extracted syncfusionessentialwpf_(version).exe file in local drive.
@@ -146,6 +146,6 @@ Syncfusion Essential UWP can be uninstalled silently using the Command Line.
    **Example:** “D:\Temp\syncfusionessentialwpf_x.x.x.x.exe" /uninstall silent
 
 
-7.  Essential Studio for UWP is uninstalled.
+7.  Essential Studio for WPF is uninstalled.
    
    

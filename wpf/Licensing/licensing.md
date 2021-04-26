@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Essential Studio UWP Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio UWP license key, how to generate the license key, how to register the license key, and more details.
-platform: UWP
+title: About Essential Studio WPF Licensing | Syncfusion
+description: Learn here about Syncfusion Essential Studio WPF license key, how to generate the license key, how to register the license key, and more details.
+platform: WPF
 control: Essential Studio
 documentation: ug
 ---
 
 
-# Syncfusion Licensing in UWP
+# Syncfusion Licensing in WPF
 
 We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio. These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
 

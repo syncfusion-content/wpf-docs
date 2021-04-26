@@ -1,16 +1,16 @@
 ---
 layout: post
-title: System Requirements | UWP | Syncfusion
-description: this section provides the information about the system requirements for UWP platform with supported browsers
+title: System Requirements | WPF | Syncfusion
+description: this section provides the information about the system requirements for WPF platform with supported browsers
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements for UWP
+# System Requirements for WPF
 
-The following topic describes the system requirements for Syncfusion UWP platform.
+The following topic describes the system requirements for Syncfusion WPF platform.
 
 ### Operating Systems
 
