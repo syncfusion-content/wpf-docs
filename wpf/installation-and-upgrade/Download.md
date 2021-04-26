@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Installation and Deployment for Syncfusion UWP products
-description: Learn here about how to install and deploy the trial or license version of Syncfusion UWP components
+title: Installation and Deployment for Syncfusion WPF products
+description: Learn here about how to install and deploy the trial or license version of Syncfusion WPF components
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Download UWP Installer
+# Download WPF Installer
 
-The Syncfusion UWP installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/wpf-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
+The Syncfusion WPF installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/wpf-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
    -	Trial Installer
    -	Licensed Installer
@@ -24,19 +24,19 @@ Our 30-day trial can be downloaded in two ways.
 
 ### Download Free Trial Setup
 
-1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the UWP platform.
-2. After completing the required form or logging in with your registered Syncfusion account, you can download the UWP trial installer from the confirmation page. (See the screenshot below.) 
+1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the WPF platform.
+2. After completing the required form or logging in with your registered Syncfusion account, you can download the WPF trial installer from the confirmation page. (See the screenshot below.) 
    
    ![Trial and downloads of Syncfusion Essential Studio](download-images/trial-confirmation.png)
    
 3. With a trial license, only the latest version’s trial installer can be downloaded.
-4. After downloading, the Syncfusion UWP trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
+4. After downloading, the Syncfusion WPF trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
 5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (See the screenshot below.)
-6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio UWP web installer.
+6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio WPF web installer.
  
    ![Trial and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
 
-7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio UWP Offline trial installer which is available in EXE and ZIP format.
+7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio WPF Offline trial installer which is available in EXE and ZIP format.
 
    ![License and downloads of Syncfusion Essential Studio](download-images/start-trial-download-offline-installer.png)
 
@@ -44,14 +44,14 @@ Our 30-day trial can be downloaded in two ways.
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
-1. You can start your 30-day free trial for UWP from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
+1. You can start your 30-day free trial for WPF from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
 
    N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 	
    ![Trial and downloads of Syncfusion Essential Studio](download-images/start-trial-download.png)
    
 2. To access this page, you must sign up\log in with your Syncfusion account.
-3. Begin your trial by selecting the UWP product. 
+3. Begin your trial by selecting the WPF product. 
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 

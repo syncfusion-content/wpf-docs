@@ -1,8 +1,8 @@
 ---
 layout: post
-title: About Essential Studio UWP Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio UWP license key, how to generate the license key, how to register the license key, and more details.
-platform: UWP
+title: About Essential Studio WPF Licensing | Syncfusion
+description: Learn here about Syncfusion Essential Studio WPF license key, how to generate the license key, how to register the license key, and more details.
+platform: WPF
 control: Essential Studio
 documentation: ug
 ---

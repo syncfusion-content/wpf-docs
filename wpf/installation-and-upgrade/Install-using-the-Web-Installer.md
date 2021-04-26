@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion ES UWP products
-description: This section provides information regarding learn how to install and deploy the Syncfusion UWP component
+title: Installation and Deployment process for Syncfusion ES WPF products
+description: This section provides information regarding learn how to install and deploy the Syncfusion WPF component
 platform: wpf
 control: Installation and Deployment
 documentation: ug
@@ -9,25 +9,25 @@ documentation: ug
 
 # Installation using Web Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/wpf/installation-and-upgrade/download) section to learn how to get the UWP trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/wpf/installation-and-upgrade/download) section to learn how to get the WPF trial or licensed installer.
 
 ### Overview
 
-For the Essential Studio UWP product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
+For the Essential Studio WPF product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
  
 ## Installation
 
-The steps below show how to install Essential Studio UWP Web Installer.
+The steps below show how to install Essential Studio WPF Web Installer.
 
-1.  Open the Syncfusion Essential Studio UWP Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.  Open the Syncfusion Essential Studio WPF Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Installer Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
 
     
     N> The installer wizard extracts the syncfusionessentialwpfwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
-2. 	The Syncfusion UWP Web Installer's welcome wizard will be displayed. Click the Next button.
+2. 	The Syncfusion WPF Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Welcome wizard](WebInstaller/Step-by-Step-Installation_img2.png)
 
@@ -111,33 +111,33 @@ The steps below show how to install Essential Studio UWP Web Installer.
 	
 ## Uninstallation
 
-Syncfusion UWP installer can be uninstalled in two ways.
+Syncfusion WPF installer can be uninstalled in two ways.
 
-   * Uninstall the UWP using the Syncfusion UWP web installer
-   * Uninstall the UWP from Windows Control Panel
+   * Uninstall the WPF using the Syncfusion WPF web installer
+   * Uninstall the WPF from Windows Control Panel
 
-Follow either one of the option below to uninstall Syncfusion Essential Studio UWP installer.
+Follow either one of the option below to uninstall Syncfusion Essential Studio WPF installer.
   
-**Option 1: Uninstall the UWP using the Syncfusion UWP web installer**
+**Option 1: Uninstall the WPF using the Syncfusion WPF web installer**
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion Essential Studio UWP Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
+Open the Syncfusion Essential Studio WPF Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
 ![Installer Extraction Wizard uninstall](WebInstaller/Step-by-Step-Installation_img1.png)
 	
-The Syncfusion UWP Web Installer's welcome wizard will be displayed. Click the Next button
+The Syncfusion WPF Web Installer's welcome wizard will be displayed. Click the Next button
 	
 ![Welcome wizard uninstall](WebInstaller/Step-by-Step-Installation_img2.png)
 	
 	
-**Option 2: Uninstall the UWP from Windows Control Panel**  
+**Option 2: Uninstall the WPF from Windows Control Panel**  
 	
-You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall UWP alone by selecting the **Syncfusion Essential Studio for UWP {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall WPF alone by selecting the **Syncfusion Essential Studio for WPF {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
 ![Control Panel](WebInstaller/Step-by-Step-Installation_img22.png)
 	
-N> If the **Syncfusion Essential Studio for UWP {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio UWP alone will be removed and the below default MSI uninstallation window will be displayed.	
+N> If the **Syncfusion Essential Studio for WPF {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio WPF alone will be removed and the below default MSI uninstallation window will be displayed.	
 
 1.  The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
     
