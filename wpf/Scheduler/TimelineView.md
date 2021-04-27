@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline day, week, workweek, month views in WPF Scheduler control | Syncfusion
-description: Learn here all about to customize the Timeline day, week, workweek, month views settings and its appearance in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Timeline views in WPF Scheduler control | Syncfusion
+description: Learn here all about to customize the Timeline day, week, workweek, month views settings in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug

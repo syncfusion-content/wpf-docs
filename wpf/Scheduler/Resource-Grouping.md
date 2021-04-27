@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Grouping in WPF Scheduler control | Syncfusion
-description: Learn here all about resource grouping allows you to define resources that can be assigned to appointments in a day, week, workweek, and timeline views in Syncfusion WPF Scheduler (SfScheduler) control and more.
+description: Learn here all about to group the appointments based on the resources in a day, week, workweek, and timeline views in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: WPF
 control: SfScheduler
 documentation: ug
