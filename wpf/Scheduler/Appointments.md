@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appointments | events in Syncfusion WPF SfScheduler | Scheduler
-description: Learn how to plan, configure and manage all day, recurrence and spanning appointments in Syncfusion WPF Scheduler.
+title: Appointments in WPF Scheduler control | Syncfusion
+description: Learn here all about to plan, configure and manage all day, recurrence and spanning appointments in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
