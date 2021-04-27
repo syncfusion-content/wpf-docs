@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating from WPF classic Schedule to Scheduler control |Syncfusion|
-description: Learn here all about to migrating from classic WPF Schedule to new WPF Scheduler control and the rich set of features of Scheduler control and more.
+description: Learn here all about to migrating from classic WPF SfSchedule to new WPF SfScheduler control and the rich set of features of SfScheduler control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
