@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migrating from SfSchedule to SfScheduler|SfScheduler| Wpf| Syncfusion
-description: This section explains how to migrating from  WPF SfSchedule to SfScheduler control and the rich set of features of SfScheduler control.
+title: Migrating from classic WPF Schedule to new WPF Scheduler control |Syncfusion |SfScheduler| 
+description: Learn here all about to migrating from classic WPF Schedule to new WPF Scheduler control and the rich set of features of Scheduler control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
