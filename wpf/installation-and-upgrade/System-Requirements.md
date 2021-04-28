@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for WPF
 
-The following topic describes the system requirements for Syncfusion WPF platform.
+The system requirements for using our Syncfusion WPF platform are as follows
 
 ### Operating Systems
 
