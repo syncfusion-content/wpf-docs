@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: TimeZone support in Syncfusion Scheduler control for WPF
-description: This topic explains how to Use various TimeZones for Appointments and other functionalities in Scheduler control in WPF
+title: Time Zone support in WPF Scheduler control | Syncfusion
+description: Learn here all about to use various Time Zones for Appointments and other functionalities in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
 
 ---
 
-# Time Zone in WPF Scheduler (SfSchedule)
+# Time Zone in WPF Scheduler (SfScheduler)
 Scheduler allows you create appointments in various time zones and display them in yours time zone or any other time zone. You can use  time zone in the following four different ways:
 * Create appointments in different  time zones
 * Display appointments based on the client’s  time zone

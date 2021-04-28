@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Day, Week, Work Week views of Syncfusion WPF Scheduler | Scheduler
-description: Learn how to customize the Scheduler Day,Week, Work Week views settings and its appearance in SfScheduler in WPF
+title: Day, Week and Work Week views in WPF Scheduler control | Syncfusion
+description: Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
 ---
 
-# Day View in WPF Scheduler (SfSchedule)
+# Day and Week Views in WPF Scheduler (SfScheduler)
 [Scheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) supports to display the day, week, work week views and current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
 ## Change time interval

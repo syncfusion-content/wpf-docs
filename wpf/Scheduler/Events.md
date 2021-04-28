@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in WPF SfScheduler control | Syncfusion
-description: This section explain about Events in the Syncfusion WPF Scheduler (SfScheduler) control and more details. 
+title: Events in WPF Scheduler control | Syncfusion
+description: Learn here all about the Events support in Syncfusion WPF Scheduler (SfScheduler) control and more details.
 platform: wpf
 control: SfScheduler
 documentation: ug

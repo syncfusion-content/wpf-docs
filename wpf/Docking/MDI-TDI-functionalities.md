@@ -770,13 +770,13 @@ SyncDockingManager.TabGroupEnabled = false;
 
 ## VS2010 Behavior of TDI
 
-TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `False`. 
+TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `True`. 
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager UseDocumentContainer="True" IsVS2010DraggingEnabled="True">
+<syncfusion:DockingManager UseDocumentContainer="True" IsVS2010DraggingEnabled="False">
 
 <ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
 
@@ -786,7 +786,7 @@ TDI document of DockingManager can be changed to Float while dragging its TDI he
 
 {% highlight C# %}
 
-SyncDockingManager.IsVS2010DraggingEnabled = true;
+SyncDockingManager.IsVS2010DraggingEnabled = false;
 
 {% endhighlight %}
 
