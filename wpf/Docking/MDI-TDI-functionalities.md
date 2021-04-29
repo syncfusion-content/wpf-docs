@@ -772,14 +772,16 @@ SyncDockingManager.TabGroupEnabled = false;
 
 TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `True`. 
 
+![First Document window is floated by dragging the document window](MDI_TDIfunctionalities_images/IsVS2010DraggingEnabled_true.png)
+
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager UseDocumentContainer="True" IsVS2010DraggingEnabled="False">
-
-<ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
-
+<syncfusion:DockingManager Name="SyncDockingManager" UseDocumentContainer="True" IsVS2010DraggingEnabled="False">
+    <ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document" />
+    <ContentControl syncfusion:DockingManager.Header="Document3" syncfusion:DockingManager.State="Document" />
 </syncfusion:DockingManager>
 
 {% endhighlight %}
@@ -792,7 +794,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = false;
 
 {% endtabs %}
 
-![First Document window is floated by dragging the document window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
+![First Document window is dragged with drag marker in the document window](MDI_TDIfunctionalities_images/IsVS2010DraggingEnabled.png)
 
 
 ## TDI Header Renaming Support
