@@ -22,7 +22,7 @@ You can add the Syncfusion assembly references in one of the following ways.
 
 ### NuGet
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies) section to find out what NuGet assemblies to use a particular control in your application. After that, add the required NuGet as reference and then you can use the control from ToolBox. The ToolBox will show a list of available controls once you have installed the NuGet package.
+Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies) section to know control and its NuGet to use in the application. After that, add the required NuGet as reference and then you can use the control from ToolBox. The ToolBox will show a list of available controls once you have installed the NuGet package.
 
 [Click here](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in your application.
 
@@ -59,11 +59,11 @@ To create the .NET Core 3.1 or .NET 5 project by using the following ways.
 
 ![WPF NETCore application](NETcore_WPF_images/wpf-netcore-application.png)
 
-**Step 4**: Now, you can add your controls. To do so, follow the immediate section **Adding controls in WPF (.NET Core 3.1 or .NET 5) application** for more details. 
+**Step 4**: Now, you can add your controls. To do so, follow the immediate section [Adding controls in WPF (.NET Core 3.1 or .NET 5) application](https://help.syncfusion.com/wpf/dotnet-core-compatibility#adding-controls-in-wpf-net-core-31-or-net-5-application) for more details. 
 
 ### Create a .NET 5 project
 
-**Step 1**: Repeat the first three steps of Create a .NET Core project section.
+**Step 1**: Create a WPF .NET Core project.
 
 **Step 2**: In Solution Explorer, right-click on project and select `Properties`. Now, the project window dialog will be opened.
 
@@ -73,11 +73,13 @@ To create the .NET Core 3.1 or .NET 5 project by using the following ways.
 
 **Step 4**: Now, the .NET 5 application was created.
 
-**Step 5**: Now, you can add your controls. To do so, follow the immediate section **Adding controls in WPF (.NET Core 3.1 or .NET 5) application** for more details. 
+**Step 5**: Now, you can add your controls. To do so, follow the immediate section [Adding controls in WPF (.NET Core 3.1 or .NET 5) application](https://help.syncfusion.com/wpf/dotnet-core-compatibility#adding-controls-in-wpf-net-core-31-or-net-5-application) for more details.
 
 ## Adding controls in WPF (.NET Core 3.1 or .NET 5) application
 
 The below section explains how to add controls in WPF (.NET Core 3.1 or .NET 5) application.
+
+For example, let see how to create `ButtonAdv` control in WPF (.NET core 3.1 or .NET 5) application using NuGet package or assembly reference.
 
 ### Through NuGet Package
 
@@ -105,17 +107,11 @@ N> You can get Syncfusion WPF (.NET Core or .NET 5) controls assemblies from `ne
 
 ![NETcore showing assembly](NETcore_WPF_images/NETcore_assembly.jpeg)
 
-### Example: Adding ButtonAdv control
+### Adding ButtonAdv control
 
-We are now going to see a demo on how to add **ButtonAdv** control in WPF (.NET Core or .NET 5) application.
+You can add `ButtonAdv` control either using code behind or through XAML code in your WPF (. NET core 3.1 or .NET 5) application.
 
-**Step 1**:	Add the following dependent assembly for the inclusion of **ButtonAdv** control.
-
-•	Syncfusion.Shared.WPF
-
-**Step 2**:	We can add button either using code behind or through XAML code. Both methods are explained below.
-
-a.	Following code explains how to declare the **ButtonAdv** control through XAML.
+a.	Following code explains how to create the **ButtonAdv** control through XAML.
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,7 +133,7 @@ a.	Following code explains how to declare the **ButtonAdv** control through XAML
 {% endhighlight %}
 {% endtabs %}
 
-b.	Following code explains how to declare the **ButtonAdv** control through code.
+b.	Following code explains how to create the **ButtonAdv** control through code behind.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,6 +149,4 @@ ROOT_Grid.Children.Add(button);
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3**: Run the application.
-
-![NETcore showing control output](NETcore_WPF_images/NETcore_controloutput.jpeg)
+![WPF ButtonAdv](NETcore_WPF_images/NETcore_controloutput.jpeg)
