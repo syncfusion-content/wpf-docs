@@ -223,20 +223,6 @@ background-color:transparent!important;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
 
 ## Licensing
