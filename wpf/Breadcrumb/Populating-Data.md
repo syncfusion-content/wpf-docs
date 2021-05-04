@@ -3,7 +3,7 @@ layout: post
 title: Populating Data in WPF Breadcrumb control | Syncfusion
 description: Learn here all about Populating Data support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
-control: Breadcrumb
+control: Hierarchical Navigator
 documentation: ug
 ---
 

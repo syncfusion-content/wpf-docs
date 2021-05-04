@@ -3,7 +3,7 @@ layout: post
 title: Command Binding in WPF Breadcrumb control | Syncfusion
 description: Learn here all about Command Binding support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
-control: Breadcrumb
+control: Hierarchical Navigator
 documentation: ug
 ---
 

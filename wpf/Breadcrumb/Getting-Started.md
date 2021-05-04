@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WPF Breadcrumb control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Breadcrumb (HierarchyNavigator) control, its elements and more details.
 platform: wpf
-control: Breadcrumb
+control: Hierarchical Navigator
 documentation: ug
 ---
 
