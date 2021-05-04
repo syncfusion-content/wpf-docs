@@ -3,7 +3,7 @@ layout: post
 title: Keyboard Support in WPF Breadcrumb control | Syncfusion
 description: Learn here all about Keyboard Support support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
-control: Hierarchical Navigator
+control: Breadcrumb
 documentation: ug
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perform multi-path search in WPF Autocomplete | Syncfusion
-description: Learn here all about Perform multi-path search in Autocomplete support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
+description: Learn here all about Perform multi-path search in Syncfusion WPF Autocomplete (SfTextBoxExt) control, its elements and more.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
