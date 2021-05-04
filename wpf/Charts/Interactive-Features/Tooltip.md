@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip feature in Syncfusion SfChart WPF
-description: How to enable, customize the tooltip position, duration and appearance in Essential WPF Chart (SfChart)
+title: Tooltip in WPF Charts control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

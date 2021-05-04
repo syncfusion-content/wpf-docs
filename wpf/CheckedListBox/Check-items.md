@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check an item in WPF CheckListBox control | Syncfusion
-description: This section describes about different ways available to check an item present in the CheckListBox control.
+title: Check Items in WPF CheckedListBox control | Syncfusion
+description: Learn here all about Check Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Check the items in WPF CheckListBox
+# Check Items in WPF CheckedListBox (CheckListBox)
 
 In [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), items present in the control can be checked or unchecked either by using any one of the following ways:
 

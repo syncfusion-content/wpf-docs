@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Button | Toggle Button | WPF | Syncfusion
-description: This section explores how to use button control as a toggle button, similar to the on/off view, based on the requirement.
+title: Toggle State in WPF Button control | Syncfusion
+description: Learn here all about Toggle State support in Syncfusion WPF Button (ButtonAdv) control and more.
 platform: wpf
 control: ButtonAdv
 documentation: ug

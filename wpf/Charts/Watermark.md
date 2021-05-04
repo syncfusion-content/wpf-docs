@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Watermark support of the Syncfusion SfChart.
-description: Explains the watermark support in chart, it's behavior and customization options in WPF Chart (SfChart).
+title: Watermark in WPF Charts control | Syncfusion
+description: Learn here all about Watermark support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Watermark in WPF Chart (SfChart)
+# Watermark in WPF Charts (SfChart)
 
 SfChart provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion WPF Chart Area and its properties. 
-description: Guide (Virtual rectangular area) for plotting area properties and it's behaviors in WPF Chart (SfChart).
+title: Header in WPF Charts control | Syncfusion
+description: Learn here all about Header support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Header in WPF Chart (SfChart)
+# Header in WPF Charts (SfChart)
 
 [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
 

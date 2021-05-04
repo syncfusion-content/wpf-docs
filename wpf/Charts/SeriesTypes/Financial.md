@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Financial Charts | SfChart | Wpf | Syncfusion
-description: This section explains Financial Chart types and its properties for customization in WPF Charts (SfChart)
+title: Financial Chart in WPF Charts control | Syncfusion
+description: Learn here all about Financial Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Financial Charts in WPF (SfChart)
+# Financial Chart in WPF Charts (SfChart)
 
 The APIs present in the financial series are,
 

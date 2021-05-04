@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfChart WPF.
-description: Overview and the highlighting features (Chart elements and interactive features) of the Essential WPF Chart (SfChart) control.
+title: About WPF Charts control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug

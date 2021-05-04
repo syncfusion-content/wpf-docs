@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Charts | SfChart | Wpf | Syncfusion
-description: This section explains Range Chart types and its properties for customization in WPF Charts (SfChart)
+title: Range Chart in WPF Charts control | Syncfusion
+description: Learn here all about Range Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Range Charts in WPF (SfChart)
+# Range Chart in WPF Charts (SfChart)
 
 ## HiLo Chart
 

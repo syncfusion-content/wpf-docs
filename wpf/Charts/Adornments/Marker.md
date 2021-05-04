@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfChart WPF.
-description: Essental WPF Chart (SfChart) supports serialization and deserialization to save the settings of the chart and reload.
+title: Data Marker in WPF Charts control | Syncfusion
+description: Learn here all about Data Marker support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

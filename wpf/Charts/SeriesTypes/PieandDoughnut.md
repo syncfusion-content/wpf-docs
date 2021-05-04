@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pie and Doughnut Charts | SfChart | Wpf | Syncfusion
-description: This section explains Pie and Doughnut Charts and its properties for customization in WPF Charts (SfChart)
+title: Pie and Doughnut Chart in WPF Charts control | Syncfusion
+description: Learn here all about Pie and Doughnut Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Pie and Doughnut Charts in WPF (SfChart)
+# Pie and Doughnut Chart in WPF Charts (SfChart)
 
 ## Pie Chart
 

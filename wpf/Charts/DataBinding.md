@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding| SfChart | Wpf | Syncfusion
-description: Explains the parts of chart databinding, it's behavior and customization options in WPF Chart (SfChart) 
+title: Data Binding in WPF Charts control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# DataBinding in WPF Chart (SfChart)
+# Data Binding in WPF Charts (SfChart)
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 

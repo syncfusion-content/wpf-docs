@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigate to day, month or year in WPF CalendarEdit | Syncfusion
-description: Learn here about how to navigate to day, month or year in Syncfusion WPF CalendarEdit and its basic features.
+title: Date Navigation in WPF Calendar control | Syncfusion
+description: Learn here all about Date Navigation support in Syncfusion WPF Calendar (CalendarEdit) control and more.
 platform: WPF
 control: CalendarEdit
 documentation: ug
 ---
 
-# Navigation support in WPF CalendarEdit
+# Date Navigation in WPF Calendar (CalendarEdit)
 
 This section explains navigation between day, month or year mode in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and Customization| SfChart | Wpf | Syncfusion
-description: Explains the customizing and styling options to apply different kinds of themes or palettes to WPF Chart (SfChart)
+title: Appearance in WPF Charts control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Styling and Customization
+# Appearance in WPF Charts (SfChart)
 
 SfChart supports various customizing and styling options that allows you to enrich the application.
 

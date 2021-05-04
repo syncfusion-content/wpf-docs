@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend | SfChart | Wpf | Syncfusion
-description: How to configure the chart legend and customize the appearance of the legend title, Icons, labels, and ItemTemplate in WPF Chart (SfChart)
+title: Legend in WPF Charts control | Syncfusion
+description: Learn here all about Legend support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

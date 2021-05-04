@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Memory feature | SfCalculator | wpf | Syncfusion
-description: This section gives the detailed description on how to use the Memory feature of SfCalculator in WPF application.
+title: Memory in WPF Calculator control | Syncfusion
+description: Learn here all about Memory support in Syncfusion WPF Calculator (SfCalculator) control and more.
 platform: wpf
 control: SfCalculator
 documentation: ug
 ---
 
-# Memory in SfCalculator
+# Memory in WPF Calculator (SfCalculator)
 
 [Memory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html#Syncfusion_Windows_Controls_Input_SfCalculator_Memory) property in the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control is used to determine the value stored in the memory. The following buttons are available in the SfCalculator control to perform memory related operations.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing support in Syncfusion WPF Chart control.
-description: Printing or exporting to XPS feature of SfChart.
+title: Printing in WPF Charts control | Syncfusion
+description: Learn here all about Printing support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Printing
+# Printing in WPF Charts (SfChart)
 
 SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
 

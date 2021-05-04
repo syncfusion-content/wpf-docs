@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Waterfall, Box and Whisker charts | SfChart | Wpf | Syncfusion
-description: This section explains Waterfall, Box and Whisker charts and its properties for customization in WPF Charts (SfChart)
+title: Other Chart Types in WPF Charts control | Syncfusion
+description: Learn here all about Other Chart Types support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Other Charts in WPF (SfChart)
+# Other Chart Types in WPF Charts (SfChart)
 
 ## Box and Whisker Chart
 

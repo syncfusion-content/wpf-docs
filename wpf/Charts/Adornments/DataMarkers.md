@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments| SfChart | Wpf | Syncfusion
-description: Learn how to add markers, data point labels, connector lines, event, formatting label content and configure the custom templates to the SfChart Adornments.
+title: Data Markers in WPF Charts control | Syncfusion
+description: Learn here all about Data Markers support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

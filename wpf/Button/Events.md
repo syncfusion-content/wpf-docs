@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event | ButtonAdv | WPF | Syncfusion
-description: This section explores how to use the button control events such as click and checked in-order to perform the required action.
+title: Events in WPF Button control | Syncfusion
+description: Learn here all about Events support in Syncfusion WPF Button (ButtonAdv) control and more.
 platform: wpf
 control: ButtonAdv
 documentation: ug

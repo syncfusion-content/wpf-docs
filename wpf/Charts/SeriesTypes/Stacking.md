@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacking Charts | SfChart | Wpf | Syncfusion
-description: This section explains Stacking Chart types and its properties for customization in WPF Charts (SfChart)
+title: Stacked Chart in WPF Charts control | Syncfusion
+description: Learn here all about Stacked Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Stacking Charts in WPF (SfChart)
+# Stacked Chart in WPF Charts (SfChart)
 
 ## Stacked Line Chart
 

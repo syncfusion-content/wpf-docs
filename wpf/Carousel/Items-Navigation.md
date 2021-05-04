@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation support in WPF Carousel control | Syncfusion
-description: Learn about the various Navigation support in Syncfusion WPF Carousel control and more feature details.
+title: Items Navigation in WPF Carousel control | Syncfusion
+description: Learn about Items Navigation support in Syncfusion WPF Carousel control and more.
 platform: wpf
 control: Carousel 
 documentation: ug
 ---
 
-# Navigation support in WPF Carousel
+# Items Navigation in WPF Carousel
 
 You can navigate to the carousel items by using the mouse or key navigation in the [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control. 
 

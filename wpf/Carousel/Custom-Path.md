@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom path supports in WPF Carousel control | Syncfusion
-description: This section explains about scaling, skewing and opacity supports in custom path mode and how to use that supports in WPF Carousel control.
+title: Custom Path in WPF carousel control | Syncfusion
+description: Learn here all about Custom Path support in Syncfusion WPF carousel (Carousel) control and more.
 platform: wpf
 control: Carousel
 documentation: ug
 ---
 
-# Custom path customization in WPF Carousel
+# Custom Path in WPF carousel (Carousel)
 
 This section explains about resizing, skewing, page customization and opacity supports available in WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control's custom path mode.
 
