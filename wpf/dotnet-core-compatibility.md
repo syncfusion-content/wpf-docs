@@ -45,7 +45,7 @@ You can also add the Syncfusion WPF (.NET Core 3.1 and .NET 5) controls assembli
 
 To create the .NET Core 3.1 or .NET 5 project by using the following ways.
 
-### Create a .NET Core project
+### Create a .NET 5 project
 
 **Step 1**: Open Visual Studio 2019 and click **Create a new project**. Here, select **WPF App (.NET Core)** template and click **Next**.
 
@@ -55,31 +55,15 @@ To create the .NET Core 3.1 or .NET 5 project by using the following ways.
 
 ![Configure the project for WPF NETCore](NETcore_WPF_images/wpf-netcore-configure-project.png)
 
-**Step 3**: Finally, WPF (.NET Core 3.1) sample project was created.
+**Step 3**: Finally, WPF (.NET 5) sample project was created.
 
 ![WPF NETCore application](NETcore_WPF_images/wpf-netcore-application.png)
 
-**Step 4**: Now, you can add your controls. To do so, follow the immediate section [Adding controls in WPF (.NET Core 3.1 or .NET 5) application](https://help.syncfusion.com/wpf/dotnet-core-compatibility#adding-controls-in-wpf-net-core-31-or-net-5-application) for more details. 
-
-### Create a .NET 5 project
-
-**Step 1**: Create a WPF .NET Core project.
-
-**Step 2**: In Solution Explorer, right-click on project and select `Properties`. Now, the project window dialog will be opened.
-
-**Step 3**: Select the **.NET 5** in Target Framework.
-
-![Change the target framework for WPF NET 5](NETcore_WPF_images/wpf-netcore-framework.png)
-
-**Step 4**: Now, the .NET 5 application was created.
-
-**Step 5**: Now, you can add your controls. To do so, follow the immediate section [Adding controls in WPF (.NET Core 3.1 or .NET 5) application](https://help.syncfusion.com/wpf/dotnet-core-compatibility#adding-controls-in-wpf-net-core-31-or-net-5-application) for more details.
+**Step 4**: Now, you can add your controls. To do so, follow the immediate section [Adding controls in WPF (.NET Core 3.1 or .NET 5) application](https://help.syncfusion.com/wpf/dotnet-core-compatibility#adding-controls-in-wpf-net-core-31-or-net-5-application) for more details.
 
 ## Adding controls in WPF (.NET Core 3.1 or .NET 5) application
 
-The below section explains how to add controls in WPF (.NET Core 3.1 or .NET 5) application.
-
-For example, let see how to create `ButtonAdv` control in WPF (.NET core 3.1 or .NET 5) application using NuGet package or assembly reference.
+Let see how to add `ButtonAdv` control in WPF (.NET core 3.1 or .NET 5) application using NuGet package or assembly reference.
 
 ### Through NuGet Package
 
