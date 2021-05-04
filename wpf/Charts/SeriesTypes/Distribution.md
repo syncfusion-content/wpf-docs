@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Histogram Chart in WPF Charts (SfChart)
+# Histogram in WPF Charts (SfChart)
 
 ## Histogram Chart
 

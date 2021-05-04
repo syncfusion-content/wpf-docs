@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Range Chart in WPF Charts (SfChart)
+# Range in WPF Charts (SfChart)
 
 ## HiLo Chart
 

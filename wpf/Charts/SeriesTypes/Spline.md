@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Spline Chart in WPF Charts (SfChart)
+# Spline in WPF Charts (SfChart)
 
 ## Spline Chart
 

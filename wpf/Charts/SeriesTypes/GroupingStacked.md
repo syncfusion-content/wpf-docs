@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Grouping Stacked Chart in WPF Charts (SfChart)
+# Grouping Stacked in WPF Charts (SfChart)
 
 You can group the stacked similar series using [`GroupingLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) property of stacked series. The stacked series which contains the same [`GroupingLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) will be stacked in a single group.
 

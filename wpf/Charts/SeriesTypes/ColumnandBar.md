@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Column and Bar Chart in WPF Charts (SfChart)
+# Column and Bar in WPF Charts (SfChart)
 
 ## Column Chart
 

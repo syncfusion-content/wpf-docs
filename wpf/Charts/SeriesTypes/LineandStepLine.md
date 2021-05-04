@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Line and StepLine Chart in WPF Charts (SfChart)
+# Line and StepLine in WPF Charts (SfChart)
 
 ## Line Chart
 

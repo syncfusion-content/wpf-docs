@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Pie and Doughnut Chart in WPF Charts (SfChart)
+# Pie and Doughnut in WPF Charts (SfChart)
 
 ## Pie Chart
 

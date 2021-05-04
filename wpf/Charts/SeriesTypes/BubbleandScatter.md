@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter Chart in WPF Charts (SfChart)
+# Bubble and Scatter in WPF Charts (SfChart)
 
 ## Bubble Chart
 

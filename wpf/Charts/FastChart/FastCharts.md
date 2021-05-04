@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Fast Chart in WPF Charts (SfChart)
+# Fast in WPF Charts (SfChart)
 
 SfChart includes functionality for fast-plotting more than 10 fast chart types. Each chart type is easily configurable with built-in support for creating stunning visual effects.
 
