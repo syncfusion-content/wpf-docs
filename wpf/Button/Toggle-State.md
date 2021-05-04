@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toggle State in WPF Button control | Syncfusion
-description: Learn here all about Toggle State support in Syncfusion WPF Button (ButtonAdv) control and more.
+description: Learn here all about Toggle State support in Syncfusion WPF Button (ButtonAdv) control, its elements and more details.
 platform: wpf
 control: ButtonAdv
 documentation: ug

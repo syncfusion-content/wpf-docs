@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Standard Path in WPF Carousel control | Syncfusion
-description: Learn about Standard Path support in Syncfusion WPF Carousel control and more.
+description: Learn about Standard Path support in Syncfusion Essential Studio WPF Carousel control, its elements and more details.
 platform: wpf
 control: Carousel
 documentation: ug

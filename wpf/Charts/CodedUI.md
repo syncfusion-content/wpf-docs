@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coded UI in WPF Charts control | Syncfusion
-description: Learn here all about Coded UI support in Syncfusion WPF Charts (SfChart) control and more.
+description: Learn here all about Coded UI support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
