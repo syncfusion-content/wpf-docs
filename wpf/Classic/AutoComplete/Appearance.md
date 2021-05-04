@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of WPF AutoComplete | Syncfusion
-description: Learn here about how to set the different style of theme to the Syncfusion WPF AutoComplete control.
+title: Appearance in WPF Wizard Control control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Appearance of WPF AutoComplete
+# Appearance in WPF AutoComplete (Classic)
 
 ## Theme
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto Append Support | AutoComplete | wpf | Syncfusion
-description: auto append support
+title: Auto Append Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Auto Append Support support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Auto Append Support
+# Auto Append Support in WPF AutoComplete (Classic)
 
 Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsAutoAppend) property.
 

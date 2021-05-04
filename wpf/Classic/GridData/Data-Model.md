@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Model
-description: Data Model | GridData (Classic) | WPF | Syncfusion
+title: Data-Model in WPF Wizard Control control | Syncfusion
+description: Learn here all about Data-Model support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
 
-# Data Model
+# Data-Model in WPF GridDataControl (Classic)
 
 
 This section has the following topics:
@@ -25,13 +25,13 @@ The ICollectionViewAdv interface is an extended ICollectionView interface that i
 
 ICollectionViewAdv interface implements the following:
 
-![](Getting-Started_images/Getting-Started_img22.jpeg)
+![Getting-Started_img22](Getting-Started_images/Getting-Started_img22.jpeg)
 
 
 
 ICollectionViewAdv is implemented as two parts in Syncfusion.Linq.Base library, as shown below:
 
-![](Getting-Started_images/Getting-Started_img23.jpeg)
+![Getting-Started_img23](Getting-Started_images/Getting-Started_img23.jpeg)
 
 
 
@@ -67,7 +67,7 @@ queryableCollectionView.GroupDescriptions.Add(new PropertyGroupDescription("Ship
 
 The grouping values are stored in a binary tree structure in the ICollectionViewAdv.TopLevelGroup. The visual graph of the TopLevelGroup is as follows:
 
-![](Getting-Started_images/Getting-Started_img24.jpeg)
+![Getting-Started_img24](Getting-Started_images/Getting-Started_img24.jpeg)
 
 
 
@@ -75,7 +75,7 @@ The grouping values are stored in a binary tree structure in the ICollectionView
 
 The class diagram for the structure above is as follows:
 
-![](Getting-Started_images/Getting-Started_img25.jpeg)
+![Getting-Started_img25](Getting-Started_images/Getting-Started_img25.jpeg)
 
 
 
@@ -110,7 +110,7 @@ foreach (var nodeEntry in queryableCollectionView.TopLevelGroup)
 
 The ICollectionViewAdv interface exposes an ObservableCollection<ISummaryRow> and CaptionSummary.
 
-![](Getting-Started_images/Getting-Started_img26.jpeg)
+![Getting-Started_img26](Getting-Started_images/Getting-Started_img26.jpeg)
 
 
 

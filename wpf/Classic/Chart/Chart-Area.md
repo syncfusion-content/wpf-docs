@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Area | Chart(Classic) | wpf | Syncfusion
-description: Chart Area
+title: Chart-Area in WPF Wizard Control control | Syncfusion
+description: Learn here all about Chart-Area support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Area
+# Chart-Area in WPF Chart (Classic)
 
 ## Adding Chart Area
 
@@ -42,7 +42,7 @@ area.Series.Add(series);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img6.jpeg)
+![Chart-Controls_img6](Chart-Controls_images/Chart-Controls_img6.jpeg)
 
 
 ## Multiple Areas
@@ -95,11 +95,11 @@ Chart1.Areas.Add(area1);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img7.jpeg)
+![Chart-Controls_img7](Chart-Controls_images/Chart-Controls_img7.jpeg)
 
 
 
-## Chart Area Header
+## Chart-Area in WPF Chart (Classic) Header
 
 Chart enables you to add headers to the Chart Area object. Any element can be added as a Chart Area header by using the Header property of the ChartArea class.
 
@@ -141,7 +141,7 @@ Chart enables you to add headers to the Chart Area object. Any element can be ad
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img8.jpeg)
+![Chart-Controls_img8](Chart-Controls_images/Chart-Controls_img8.jpeg)
 
 
 ## Chart Header
@@ -190,7 +190,7 @@ chart1.Header = " Sales and Month "
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img9.png)
+![Chart-Controls_img9](Chart-Controls_images/Chart-Controls_img9.png)
 
 
 
@@ -215,11 +215,11 @@ Customize the chart header by using the following code.
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img10.png)
+![Chart-Controls_img10](Chart-Controls_images/Chart-Controls_img10.png)
 
 
 
-## Chart Area Context Menu
+## Chart-Area in WPF Chart (Classic) Context Menu
 
 WPF Chart has a built-in context menu which can be enabled by setting the ChartArea.IsContextMenuEnabled property to _true_. This context menu lets you change the Chart Type of a series and Color Palettes, and enable Zooming.
 
@@ -246,7 +246,7 @@ area.IsContextMenuEnabled = true;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img11.jpeg)
+![Chart-Controls_img11](Chart-Controls_images/Chart-Controls_img11.jpeg)
 
 
 
@@ -267,7 +267,7 @@ Chart1.Areas[0].ContextMenu = contextMenu;
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img12.jpeg)
+![Chart-Controls_img12](Chart-Controls_images/Chart-Controls_img12.jpeg)
 
 
 
@@ -302,7 +302,7 @@ Chart1.Areas.Add(area);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img13.jpeg)
+![Chart-Controls_img13](Chart-Controls_images/Chart-Controls_img13.jpeg)
 
 ### Grid Background
 
@@ -338,7 +338,7 @@ Chart1.Areas.Add(area);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img14.jpeg)
+![Chart-Controls_img14](Chart-Controls_images/Chart-Controls_img14.jpeg)
 
 
 
@@ -401,7 +401,7 @@ Chart1.Areas.Add(area);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img15.jpeg)
+![Chart-Controls_img15](Chart-Controls_images/Chart-Controls_img15.jpeg)
 
 
 
@@ -491,7 +491,7 @@ To access the chart watermark demo:
 
 
 
-## Chart Area Layout Customization
+## Chart-Area in WPF Chart (Classic) Layout Customization
 
 Upon adding multiple Chart Areas to Chart, you may want to customize the layout in which these multiple Chart Areas are rendered. You can do so by specifying a custom container for these Chart Areas through the AreasPanel property of the Chart control. Any container such as Grid, Stack Panel, Dock Panel, Canvas or Wrap Panel can be used.
 
@@ -499,7 +499,7 @@ Upon adding multiple Chart Areas to Chart, you may want to customize the layout 
 
 ChartGrid is the container that is used by Chart, by default, to host the Chart Areas. The following screenshot illustrates the default settings of ChartGrid in which all the Chart Areas are arranged one after the other.
 
-![](Chart-Controls_images/Chart-Controls_img18.jpeg)
+![Chart-Controls_img18](Chart-Controls_images/Chart-Controls_img18.jpeg)
 
 However, the default settings of the ChartGrid can be customized to display the Chart Areas side by side. The following code example illustrates how this can be done by using the Orientation and AutoRowsCount properties.
 {% highlight xaml %}
@@ -521,7 +521,7 @@ However, the default settings of the ChartGrid can be customized to display the 
 
 
 {% endhighlight  %}
-![](Chart-Controls_images/Chart-Controls_img19.jpeg)
+![Chart-Controls_img19](Chart-Controls_images/Chart-Controls_img19.jpeg)
 
 The ChartGrid also provides options to control the aspect ratio (number of rows / number of columns) of the layout grid. Take a look at the ChartGrid class reference for more information.
 
@@ -597,7 +597,7 @@ Chart1.Areas.Add(area2);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img20.jpeg)
+![Chart-Controls_img20](Chart-Controls_images/Chart-Controls_img20.jpeg)
 
 
 A sample which demonstrates how to use different containers as the Areas Panel is available in the following sample installation path.
@@ -681,7 +681,7 @@ syncAreas.Areas.Add(area2);
 
 Run the code. The following output is displayed.
 
-![](Chart-Controls_images/Chart-Controls_img21.jpeg)
+![Chart-Controls_img21](Chart-Controls_images/Chart-Controls_img21.jpeg)
 
 
 
@@ -708,7 +708,7 @@ syncArea.IsContextMenuEnabled = true;
 
 When the code runs, the following output displays.
 
-![](Chart-Controls_images/Chart-Controls_img22.jpeg)
+![Chart-Controls_img22](Chart-Controls_images/Chart-Controls_img22.jpeg)
 
 
 
@@ -889,7 +889,7 @@ CameraProjection.Orthographic;
 
 When the code runs, the following output displays.
 
-![](Chart-Controls_images/Chart-Controls_img23.jpeg)
+![Chart-Controls_img23](Chart-Controls_images/Chart-Controls_img23.jpeg)
 
 
 
@@ -1322,7 +1322,7 @@ syncArea.IsContextMenuEnabled = true;
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img24.png)
+![Chart-Controls_img24](Chart-Controls_images/Chart-Controls_img24.png)
 
 
 
@@ -1332,7 +1332,7 @@ SyncChartArea also has support for sector zooming as in ordinary chart areas.
 
 * SyncChart can be zoomed in using sector zooming instead of the Zoom In icon from the Zooming toolkit.
 
-![](Chart-Controls_images/Chart-Controls_img25.png)
+![Chart-Controls_img25](Chart-Controls_images/Chart-Controls_img25.png)
 
 
 

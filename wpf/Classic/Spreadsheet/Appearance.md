@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | Spreadsheet | wpf | Syncfusion
-description: appearance
+title: Appearance in WPF Wizard Control control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF SpreadsheetControl (Classic)
 
 ## Fonts
 
@@ -93,7 +93,7 @@ spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = Tru
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Appearance_img1](Appearance_images/Appearance_img1.png)
 
 ### Using Command 
 
@@ -133,7 +133,7 @@ The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img2.png)
+![Appearance_img2](Appearance_images/Appearance_img2.png)
 
 ## Borders
 
@@ -165,7 +165,7 @@ The following code illustrates, how to add and remove the cell border in Spreads
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img3.png)
+![Appearance_img3](Appearance_images/Appearance_img3.png)
 
 ## Freeze Panes
 
@@ -192,7 +192,7 @@ The following code illustrates this:
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img4.png)
+![Appearance_img4](Appearance_images/Appearance_img4.png)
 
 ## Wrap Text Support
 
@@ -204,7 +204,7 @@ You can manually wrap text and resize cells when the text or cell value exceeds 
 
 Users can wrap text for a selected range of cells by just calling a method.
 
-![](Appearance_images/Appearance_img5.png)
+![Appearance_img5](Appearance_images/Appearance_img5.png)
 
 
 ### Methods

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Month view in WPF Scheduler | Syncfusion.
-description: This section explains about how to customize the appearance and change the date format for Month view in WPF Scheduler.
+title: Month View in WPF Wizard Control control | Syncfusion
+description: Learn here all about Month View support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Month view Of WPF SfSchedule
+# Month View in WPF Schedule (Classic)
 Scheduler used to display entire dates of the specific month, current month will be displayed by default initially. `Month` view displays the month of dates similar to calendar and displays appointments for each day in a cell similar to outlook. 
 
 ## Change header date format

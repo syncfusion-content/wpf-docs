@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Set VisualStyle for Derived Controls| SkinStorage | Wpf | Syncfusion
-description: When an user control derived from the existing control is added, a style based on the base class should be defined in the application.
+title: Set VisualStyle for Derived in SkinStorage | Wpf | Syncfusion
+description: Learn here all about Set Visual Style for dynamically added Derived Controls support in Syncfusion WPF SkinStorage (Classic) control and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Set Visual Style for dynamically added Derived Controls
+# Set VisualStyle for Derived in SkinStorage
+
+This page explains Set VisualStyle for Derived in SkinStorage and more details.
+
+## Set Visual Style for dynamically added Derived Controls in WPF SkinStorage (Classic)
 
 Normally, a control added to an application will dynamically pick up the existing style using the SkinStorage. But when an user control derived from the existing control is added to an application, a style based on the Base class should be defined in the application. 
 

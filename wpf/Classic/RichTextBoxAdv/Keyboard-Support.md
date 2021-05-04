@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Support| RichTextBoxAdv | Wpf | Syncfusion
-description: keyboard support
+title: Keyboard-Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Keyboard-Support support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Keyboard Support
+# Keyboard-Support in WPF RichTextBoxAdv (Classic)
 
 RichTextBoxAdv provides some shortcut keys for ease of use. The following table gives the list of supported shortcuts. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF ColorPickerPalette control | Syncfusion
-description: Learn about UI customization, styling, theme support in Syncfusion WPF ColorPickerPalette control and more details about the control features.
+title: Appearance in WPF Color Picker Palette control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF Color Picker Palette control and more.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
 ---
 
-# Appearance in WPF ColorPickerPalette
+# Appearance in WPF Color Picker Palette
 
 This section explains different UI customization, styling, theming options available in [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control.
 

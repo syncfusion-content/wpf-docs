@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Appointments in WPF Scheduler | Syncfusion
-description: This section explains about the populating the appointments and appointments custiomization in WPF Scheduler.
+title: Appointments in WPF Wizard Control control | Syncfusion
+description: Learn here all about Appointments support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Appointments in WPF Scheduler
+# Appointments in WPF Schedule (Classic)
 
 Scheduler control displays appointments based on details such as `StartTime`, `EndTime`, `Subject` and etc in `ScheduleAppointment` class. Also, it support to bind any collection and allows to render appointments based on data object in collection using mapping concept which explained under data binding section. 
 

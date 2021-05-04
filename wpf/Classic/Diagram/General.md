@@ -1,13 +1,13 @@
 ---
 layout: post
-title: General | Diagram | wpf | Syncfusion
-description: general
+title: General in WPF Wizard Control control | Syncfusion
+description: Learn here all about General support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# General
+# General in WPF Diagram (classic)
 
 This section illustrates the general features pertaining to both Node and LineConnector.
 
@@ -21,7 +21,7 @@ The corresponding node or connector is selected by moving the mouse pointer to t
 
 
 
-![](Diagram-View_images/Diagram-View_img86.jpeg)
+![Diagram-View_img86](Diagram-View_images/Diagram-View_img86.jpeg)
 
 
 
@@ -40,7 +40,7 @@ To move the connector, follow these steps.
 
 
 
-![](Diagram-View_images/Diagram-View_img87.jpeg)
+![Diagram-View_img87](Diagram-View_images/Diagram-View_img87.jpeg)
 
 
 
@@ -313,7 +313,7 @@ line.LabelBackground = Brushes.Yellow
 {% endhighlight %}
 The following output is generated using the code snippets above:
 
-![](Diagram-View_images/Diagram-View_img88.jpeg)
+![Diagram-View_img88](Diagram-View_images/Diagram-View_img88.jpeg)
 
 
 
@@ -434,7 +434,7 @@ line.ContextMenu = menu
 
 
 {% endhighlight  %}
-![](Diagram-View_images/Diagram-View_img89.jpeg)
+![Diagram-View_img89](Diagram-View_images/Diagram-View_img89.jpeg)
 
 
 Custom Context Menu

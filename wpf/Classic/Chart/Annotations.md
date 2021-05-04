@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotations | Chart(Classic) | wpf | Syncfusion
-description: Annotations
+title: Annotations in WPF Wizard Control control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Annotations
+# Annotations in WPF Chart (Classic)
 
-## Annotations at X-Y Coordinates
+## Annotations in WPF Chart (Classic) at X-Y Coordinates
 
 Annotations at specific X-Y coordinates can be added to the chart programmatically. The ChartSeriesAnnotation type used to define an annotation provides these properties:
 
@@ -121,10 +121,10 @@ this.Chart1.Areas[0].Series[0].Annotations.Items.Add(ser1HighPoint);
 
 The resultant annotations look like this.
 
-![](Chart-Controls_images/Chart-Controls_img229.jpeg)
+![Chart-Controls_img229](Chart-Controls_images/Chart-Controls_img229.jpeg)
 
 
-## Annotations At Control Coordinates
+## Annotations in WPF Chart (Classic) At Control Coordinates
 
 Chart for WPF also lets you add some annotations to the chart at specific control coordinates. By default, these annotations appear as simple text labels. But, their look and feel can be fully customized using custom templates.
 
@@ -212,7 +212,7 @@ Here is some code example that shows how to add annotations at Chart coordinates
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img230.jpeg)
+![Chart-Controls_img230](Chart-Controls_images/Chart-Controls_img230.jpeg)
 
 
 ## Annotation Shapes
@@ -298,7 +298,7 @@ Chart1.AnnotationsLabel[0].AnnotationShape = Red;
 
 Run the code. The following output is displayed.
 
-![](Chart-Controls_images/Chart-Controls_img231.jpeg)
+![Chart-Controls_img231](Chart-Controls_images/Chart-Controls_img231.jpeg)
 
 
 

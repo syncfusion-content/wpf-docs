@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting | Spreadsheet | wpf | Syncfusion
-description: formatting
+title: Formatting in WPF Wizard Control control | Syncfusion
+description: Learn here all about Formatting support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Formatting
+# Formatting in WPF SpreadsheetControl (Classic)
 
 ## Conditional Formatting 
 
@@ -23,19 +23,19 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 * Greater than
 
-![](Formatting_images/Formatting_img1.png)
+![Formatting_img1](Formatting_images/Formatting_img1.png)
 
 * Less Than
 
-![](Formatting_images/Formatting_img2.png)
+![Formatting_img2](Formatting_images/Formatting_img2.png)
 
 * Between
 
-![](Formatting_images/Formatting_img3.png)
+![Formatting_img3](Formatting_images/Formatting_img3.png)
 
 * Equal to 
 
-![](Formatting_images/Formatting_img4.png)
+![Formatting_img4](Formatting_images/Formatting_img4.png)
 
 The following code illustrates how to bind the ConditionalFormatCommand to a button: 
 
@@ -53,7 +53,7 @@ The following code illustrates how to bind the ConditionalFormatCommand to a but
 
 {% endhighlight %}
 
-![](Formatting_images/Formatting_img5.png)
+![Formatting_img5](Formatting_images/Formatting_img5.png)
 
 ## Number formatting
 
@@ -77,7 +77,7 @@ You can define the number formatting using the NumberFormattingCommand. Number f
 
 {% endhighlight %}
 
-![](Formatting_images/Formatting_img6.png)
+![Formatting_img6](Formatting_images/Formatting_img6.png)
 
 ## Center Across Selection
 
@@ -85,7 +85,7 @@ You can define the number formatting using the NumberFormattingCommand. Number f
 
 This feature center aligns the cell value in Spreadsheet, across the range of selected cells. 
 
-![](Formatting_images/Formatting_img7.png)
+![Formatting_img7](Formatting_images/Formatting_img7.png)
 
 
 ### Properties, Methods and Events
@@ -140,4 +140,4 @@ The following code snippet manually sets the center across selection by calling 
 
 The output displayed is shown in the following screenshot:
 
-![](Formatting_images/Formatting_img8.png)
+![Formatting_img8](Formatting_images/Formatting_img8.png)

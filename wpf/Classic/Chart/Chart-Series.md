@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Series | Chart(Classic) | wpf | Syncfusion
-description: Chart Series
+title: Chart-Series in WPF Wizard Control control | Syncfusion
+description: Learn here all about Chart-Series support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Series
+# Chart-Series in WPF Chart (Classic)
 
 ## Populating Chart Series
 
@@ -144,7 +144,7 @@ The following code example illustrates how to bind the Chart control to an XMLDa
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img26.jpeg)
+![Chart-Controls_img26](Chart-Controls_images/Chart-Controls_img26.jpeg)
 
 
 
@@ -201,7 +201,7 @@ The interior of the Chart Series can be set by using the Interior property.
 
 The following screenshot illustrates Chart Series Interior settings.
 
-![](Chart-Controls_images/Chart-Controls_img27.jpeg)
+![Chart-Controls_img27](Chart-Controls_images/Chart-Controls_img27.jpeg)
 
 
 
@@ -239,7 +239,7 @@ series.IsVisible = false;
 
 The following screenshot illustrates Chart with Series 1 invisible.
 
-![](Chart-Controls_images/Chart-Controls_img28.jpeg)
+![Chart-Controls_img28](Chart-Controls_images/Chart-Controls_img28.jpeg)
 
 
 
@@ -277,7 +277,7 @@ area.Series[0].IsRotated = true;
 
 The following screenshot illustrates Chart with Series 1 rotated.
 
-![](Chart-Controls_images/Chart-Controls_img29.jpeg)
+![Chart-Controls_img29](Chart-Controls_images/Chart-Controls_img29.jpeg)
 
 
 
@@ -311,12 +311,12 @@ area.Series[1].Label = "Series 2";
 
 The following screenshot illustrates Chart with customized Series Labels.
 
-![](Chart-Controls_images/Chart-Controls_img30.jpeg)
+![Chart-Controls_img30](Chart-Controls_images/Chart-Controls_img30.jpeg)
 
 
 
 
-## Chart Series Types
+## Chart-Series in WPF Chart (Classic) Types
 
 Chart control supports 34 types of charts, among which 12 types are supported in 3D mode as well. The Type property is used to specify the Chart Type.
 
@@ -357,11 +357,11 @@ Chart1.Areas[0].Series.Add(series);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img31.jpeg)
+![Chart-Controls_img31](Chart-Controls_images/Chart-Controls_img31.jpeg)
 
 
 
-## Chart Series Look and Feel
+## Chart-Series in WPF Chart (Classic) Look and Feel
 
 Chart for WPF provides various options to customize the look and feel of the Chart Series. The following are some of the properties that are used for this purpose.
 
@@ -436,11 +436,11 @@ Chart1.Areas[0].Series.Add(series);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img32.jpeg)
+![Chart-Controls_img32](Chart-Controls_images/Chart-Controls_img32.jpeg)
 
 
 
-## Chart Series Template
+## Chart-Series in WPF Chart (Classic) Template
 
 Chart for WPF enables you to apply custom Data Templates to the Chart Series. By applying the custom data templates, the Chart Series Segments can be altered. The following code example illustrates how to create a sample data template to draw a Line Chart.
 
@@ -498,11 +498,11 @@ N> Data templates cannot be customized for a single segment in a series. As eac
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img33.jpeg)
+![Chart-Controls_img33](Chart-Controls_images/Chart-Controls_img33.jpeg)
 
 
 
-## Chart Series Adornments
+## Chart-Series in WPF Chart (Classic) Adornments
 
 Chart Series Adornments are used to display values in a Chart Segment related to it. Values from data points (x value, y value) or other properties from a data source can be displayed. ChartAdornmentsInfo class is used to display Chart Series Adornments. ChartAdornmentsInfo class provides the following properties to customize the chart series adornments.
 
@@ -642,7 +642,7 @@ adornments.VerticalAlignment = VerticalAlignment.Top;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img34.jpeg)
+![Chart-Controls_img34](Chart-Controls_images/Chart-Controls_img34.jpeg)
 
 
 
@@ -706,7 +706,7 @@ series1.AdornmentsInfo.SymbolWidth = 25;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img35.jpeg)
+![Chart-Controls_img35](Chart-Controls_images/Chart-Controls_img35.jpeg)
 
 
 
@@ -795,7 +795,7 @@ adornments.SymbolTemplate = this.Resources["SymbolTemplate"] as DataTemplate;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img36.jpeg)
+![Chart-Controls_img36](Chart-Controls_images/Chart-Controls_img36.jpeg)
 
 
 
@@ -817,19 +817,19 @@ This feature helps the user use adornments in fastchart types too. Considering t
 
 Most fastchart types are used in stock market charts. Users can display the data of the point in the adornment.
 
-![](Chart-Controls_images/Chart-Controls_img37.png)
+![Chart-Controls_img37](Chart-Controls_images/Chart-Controls_img37.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img38.png)
+![Chart-Controls_img38](Chart-Controls_images/Chart-Controls_img38.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img39.png)
+![Chart-Controls_img39](Chart-Controls_images/Chart-Controls_img39.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img40.png)
+![Chart-Controls_img40](Chart-Controls_images/Chart-Controls_img40.png)
 
 
 
@@ -896,7 +896,7 @@ Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Fu
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img41.jpeg)
+![Chart-Controls_img41](Chart-Controls_images/Chart-Controls_img41.jpeg)
 
 
 
@@ -944,7 +944,7 @@ BindingPathsY="Sales" Type="Pie">
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img42.jpeg)
+![Chart-Controls_img42](Chart-Controls_images/Chart-Controls_img42.jpeg)
 
 
 
@@ -1056,7 +1056,7 @@ N> To show the segment lines, the SegmentShowLine property must be set to true a
  
 
 
-## Chart Series Empty Points
+## Chart-Series in WPF Chart (Classic) Empty Points
 
 Essential Chart provides support for Empty Points. The data collection that is passed to the chart can have NaN or infinite values that will be considered as Empty Points. You can also hide the empty points by setting the ShowEmptyPoints property to _false_.
 
@@ -1126,7 +1126,7 @@ public IList products()
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img43.jpeg)
+![Chart-Controls_img43](Chart-Controls_images/Chart-Controls_img43.jpeg)
 
 
 
@@ -1173,7 +1173,7 @@ You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ pro
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img44.png)
+![Chart-Controls_img44](Chart-Controls_images/Chart-Controls_img44.png)
 
 
 
@@ -1242,7 +1242,7 @@ series1.EmptyPointValue = EmptyPointValue.Zero;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img45.png)
+![Chart-Controls_img45](Chart-Controls_images/Chart-Controls_img45.png)
 
 
 
@@ -1268,7 +1268,7 @@ series1.EmptyPointValue = EmptyPointValue.Average;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img46.png)
+![Chart-Controls_img46](Chart-Controls_images/Chart-Controls_img46.png)
 
 
 
@@ -1344,7 +1344,7 @@ Adding Colorful Chart Series Segments to an Application
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img47.png)
+![Chart-Controls_img47](Chart-Controls_images/Chart-Controls_img47.png)
 
 
 
@@ -1363,7 +1363,7 @@ this.Series1.ColorEach = true;this.Series1.Palette = ChartColorPalette.Custom;th
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img48.png)
+![Chart-Controls_img48](Chart-Controls_images/Chart-Controls_img48.png)
 
 
 
@@ -1459,7 +1459,7 @@ public class HighlightedToOpacityConverter : IValueConverter
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img49.jpeg)
+![Chart-Controls_img49](Chart-Controls_images/Chart-Controls_img49.jpeg)
 
 
 
@@ -1585,7 +1585,7 @@ Stroke="Black" StrokeThickness="1.5" />
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img50.jpeg)
+![Chart-Controls_img50](Chart-Controls_images/Chart-Controls_img50.jpeg)
 
 
 
@@ -1767,7 +1767,7 @@ area.SideBySideSeriesPlacement = true;
 
 The following screenshot illustrates Chart Series placed side by side.
 
-![](Chart-Controls_images/Chart-Controls_img52.jpeg)
+![Chart-Controls_img52](Chart-Controls_images/Chart-Controls_img52.jpeg)
 
 
 
@@ -1847,7 +1847,7 @@ Chart1.Areas[0].Series[0].VisibilityOnLegend = Visibility.Hidden;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img53.png)
+![Chart-Controls_img53](Chart-Controls_images/Chart-Controls_img53.png)
 
 
 
@@ -1992,7 +1992,7 @@ Chart1.Areas[0].Series[0].Annotations.Items[0].Stroke = Brushes.Black;
 
 Run the sample. The following output is provided.
 
-![](Chart-Controls_images/Chart-Controls_img54.jpeg)
+![Chart-Controls_img54](Chart-Controls_images/Chart-Controls_img54.jpeg)
 
 
 ## Empty point support for FastLine Chart type
@@ -2031,7 +2031,7 @@ Series1.ShowEmptyPoints = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img55.jpeg)
+![Chart-Controls_img55](Chart-Controls_images/Chart-Controls_img55.jpeg)
 
 
 
@@ -2071,7 +2071,7 @@ series1.FastSegmentProperties= list;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img56.jpeg)
+![Chart-Controls_img56](Chart-Controls_images/Chart-Controls_img56.jpeg)
 
 
 
@@ -2159,7 +2159,7 @@ series.ShowSmartLabels = true;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img57.png)
+![Chart-Controls_img57](Chart-Controls_images/Chart-Controls_img57.png)
 
 
 
@@ -2198,7 +2198,7 @@ AdornemntIntersectActions.AdjustAcrossPoints;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img58.png)
+![Chart-Controls_img58](Chart-Controls_images/Chart-Controls_img58.png)
 
 
 
@@ -2239,7 +2239,7 @@ AdornemntIntersectActions.None;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img59.png)
+![Chart-Controls_img59](Chart-Controls_images/Chart-Controls_img59.png)
 
 
 
@@ -2303,7 +2303,7 @@ Specifies the color for the signal line of the Accumulation Distribution technic
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img60.png)
+![Chart-Controls_img60](Chart-Controls_images/Chart-Controls_img60.png)
 
 
 
@@ -2378,7 +2378,7 @@ Indicates the identification of a trend.</td></tr>
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img61.png)
+![Chart-Controls_img61](Chart-Controls_images/Chart-Controls_img61.png)
 
 
 
@@ -2463,7 +2463,7 @@ Indicates the identification of a trend.</td></tr>
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img62.png)
+![Chart-Controls_img62](Chart-Controls_images/Chart-Controls_img62.png)
 
 
 
@@ -2555,7 +2555,7 @@ Specifies the color for the divergence line of the MACD technical indicator.</td
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img63.png)
+![Chart-Controls_img63](Chart-Controls_images/Chart-Controls_img63.png)
 
 
 
@@ -2596,7 +2596,7 @@ Measures the amount that a security's price has changed over a given time span.<
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img64.png)
+![Chart-Controls_img64](Chart-Controls_images/Chart-Controls_img64.png)
 
 
 
@@ -2644,7 +2644,7 @@ Specifies the color for the lower line of the Stochastic technical indicator.</
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img65.png)
+![Chart-Controls_img65](Chart-Controls_images/Chart-Controls_img65.png)
 
 
 
@@ -2670,4 +2670,4 @@ The Relative Strength Index (RSI) is a well-versed momentum-based oscillator whi
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img66.png)
+![Chart-Controls_img66](Chart-Controls_images/Chart-Controls_img66.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu Support| RichTextBoxAdv | Wpf | Syncfusion
-description: context menu support
+title: Context-Menu-Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Context-Menu-Support support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Context Menu Support
+# Context-Menu-Support in WPF RichTextBoxAdv (Classic)
 
 RichTextBoxAdv supports a context menu similar to Microsoft Word. It supports the following list of features in its context menu:
 
@@ -25,7 +25,7 @@ RichTextBoxAdv supports a context menu similar to Microsoft Word. It supports th
 
 
 
-![](Context-Menu-Support_images/Context-Menu-Support_img1.png)
+![Context-Menu-Support_img1](Context-Menu-Support_images/Context-Menu-Support_img1.png)
 
 
 

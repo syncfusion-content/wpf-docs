@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of TimeLine view in WPF Scheduler | Syncfusion.
-description: This section explains about how to customize the appearance and change the date format for TimeLine view in WPF Scheduler.
+title: Timeline View in WPF Wizard Control control | Syncfusion
+description: Learn here all about Timeline View support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# TimeLine view Of WPF SfSchedule
+# Timeline View in WPF Schedule (Classic)
 `Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
 
 {% tabs %}

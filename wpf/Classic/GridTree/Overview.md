@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| GridTree | WPF | Syncfusion
-description: WPF GridTree control is a dynamic data-bound control used to present data in hierarchical manner.
+title: About WPF GridTree Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF GridTreeControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# GridTree 
+# Overview in WPF GridTreeControl (Classic)
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 
@@ -107,7 +107,7 @@ Represents additional information on the corresponding topic.</td></tr>
 
 This section provides basic information, such as definitions and usage, regarding important features of EssentialGrid.
 
-## GridTree Control 
+## Overview in WPF GridTreeControl (Classic)Control 
 
 The GridTree control is a dynamic data-bound control used to present hierarchical data.
 

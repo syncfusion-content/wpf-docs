@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Import and Export| RichTextBoxAdv | Wpf | Syncfusion
-description:  import and export
+title: Import-and-Export in WPF Wizard Control control | Syncfusion
+description: Learn here all about Import-and-Export support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug

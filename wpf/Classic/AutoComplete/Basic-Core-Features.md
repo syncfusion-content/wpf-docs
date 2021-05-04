@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic Core Features | AutoComplete | wpf | Syncfusion
-description: basic core features
+title: Basic Core Features in WPF Wizard Control control | Syncfusion
+description: Learn here all about Basic Core Features support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Basic Core Features
+# Basic Core Features in WPF AutoComplete (Classic)
 
 AutoComplete supports basic core features which are listed as follows.
 

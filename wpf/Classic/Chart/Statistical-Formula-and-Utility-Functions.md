@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Statistical Formula and Utility Functions | Chart(Classic) | wpf | Syncfusion
-description: Statistical Formula and Utility Functions
+title: Statistical-Formula-and-Utility-Functions in WPF Wizard Control control | Syncfusion
+description: Learn here all about Statistical-Formula-and-Utility-Functions support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Statistical Formula and Utility Functions
+# Statistical-Formula-and-Utility-Functions in WPF Chart (Classic)
 
 This feature allows the user to calculate basic statistical functions that include mean, median, standard deviation, variance, variance based estimator, variance unbased estimator, correlation coefficient and covariance, ANOVA, T-test, Z-test, and F-test performed based on sample series, and utility functions like normal distribution, T-cumulative distribution and F-cumulative distribution.
 
@@ -254,7 +254,7 @@ string val = "";
 
 
 
-![](Chart-Controls_images/Chart-Controls_img239.png)
+![Chart-Controls_img239](Chart-Controls_images/Chart-Controls_img239.png)
 
 
 
@@ -287,7 +287,7 @@ AnovaResult anova = BasicStatisticalFormulas.Anova(0.05, new ChartSeries[] { ser
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img240.png)
+![Chart-Controls_img240](Chart-Controls_images/Chart-Controls_img240.png)
 
 
 
@@ -317,7 +317,7 @@ FTestResult ftest = BasicStatisticalFormulas.FTest(0.05, series1, series2);
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img241.png)
+![Chart-Controls_img241](Chart-Controls_images/Chart-Controls_img241.png)
 
 
 
@@ -348,7 +348,7 @@ TTestResult ttest = BasicStatisticalFormulas.TTestEqualVariances(meandiff.Value,
 
 
 {% endhighlight  %}
-![](Chart-Controls_images/Chart-Controls_img242.png)
+![Chart-Controls_img242](Chart-Controls_images/Chart-Controls_img242.png)
 
 
 ## Perform Z-Test
@@ -379,7 +379,7 @@ ZTestResult ztest = BasicStatisticalFormulas.ZTest(meandiff.Value, 10, 5, 0.5, s
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img243.png)
+![Chart-Controls_img243](Chart-Controls_images/Chart-Controls_img243.png)
 
 
 ## Normal Distribution
@@ -391,7 +391,7 @@ value.Text = UtilityFunctions.NormalDistribution((double)probability.SelectedIte
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img244.png)
+![Chart-Controls_img244](Chart-Controls_images/Chart-Controls_img244.png)
 
 
 
@@ -404,7 +404,7 @@ value.Text = UtilityFunctions.FCumulativeDistribution((double)probability.Select
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img245.png)
+![Chart-Controls_img245](Chart-Controls_images/Chart-Controls_img245.png)
 
 
 
@@ -417,4 +417,4 @@ value.Text = UtilityFunctions.TCumulativeDistribution((double)probability.Select
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img246.png)
+![Chart-Controls_img246](Chart-Controls_images/Chart-Controls_img246.png)

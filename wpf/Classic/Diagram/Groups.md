@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Groups | Diagram | wpf | Syncfusion
-description: groups
+title: Groups in WPF Wizard Control control | Syncfusion
+description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Groups
+# Groups in WPF Diagram (classic)
 
 Essential Diagram WPF provides support to group and ungroup nodes. Grouping feature comes in handy when you want to apply the same edits to a number of objects and yet retain their individuality. All the operations performed on the group also affect the individual items in the group. However any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities.
 
@@ -261,7 +261,7 @@ The following screenshot illustrates a group of two nodes created by using code 
 
 
 
-![](Groups_images/Groups_img1.jpeg)
+![Groups_img1](Groups_images/Groups_img1.jpeg)
 
 
 
@@ -400,7 +400,7 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-![](Groups_images/Groups_img9.jpeg)
+![Groups_img9](Groups_images/Groups_img9.jpeg)
 
 
 
@@ -411,7 +411,7 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-![](Groups_images/Groups_img10.jpeg)
+![Groups_img10](Groups_images/Groups_img10.jpeg)
 
 
 
@@ -422,7 +422,7 @@ Once a group is edited, the group's selection rectangle updates its area to fit 
 
 
 
-![](Groups_images/Groups_img11.jpeg)
+![Groups_img11](Groups_images/Groups_img11.jpeg)
 
 
 
@@ -1270,7 +1270,7 @@ Lan1.Visible = False
 
 {% endhighlight  %}
 
-![](Groups_images/Groups_img19.png)
+![Groups_img19](Groups_images/Groups_img19.png)
 
 
 
@@ -1279,7 +1279,7 @@ Before hiding the layer
 
 
 
-![](Groups_images/Groups_img20.png)
+![Groups_img20](Groups_images/Groups_img20.png)
 
 
 

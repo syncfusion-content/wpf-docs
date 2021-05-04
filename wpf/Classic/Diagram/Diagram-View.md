@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diagram View | Diagram | wpf | Syncfusion
-description: diagram view
+title: Diagram View in WPF Wizard Control control | Syncfusion
+description: Learn here all about Diagram View support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram View
+# Diagram View in WPF Diagram (classic)
 
 The Diagram View is responsible for bringing the objects and data which are added into the view through the model. In other words, it deals with the visual representation of data. Zooming and panning are done with respect to the view. 
 
@@ -359,7 +359,7 @@ TryCast(diagramView.VerticalRuler, VerticalRuler())
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img1.png)
+![Diagram-View_img1](Diagram-View_images/Diagram-View_img1.png)
 
 
 
@@ -368,7 +368,7 @@ Rulers
 
 
 
-![](Diagram-View_images/Diagram-View_img2.png)
+![Diagram-View_img2](Diagram-View_images/Diagram-View_img2.png)
 
 
 
@@ -446,7 +446,7 @@ No</td></tr>
 </table>
 
 
-![](Diagram-View_images/Diagram-View_img3.png)
+![Diagram-View_img3](Diagram-View_images/Diagram-View_img3.png)
 
 
 
@@ -506,7 +506,7 @@ TryCast(diagramView.VerticalRuler, VerticalRuler).LabelFontColor = Brushes.Green
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img4.jpeg)
+![Diagram-View_img4](Diagram-View_images/Diagram-View_img4.jpeg)
 
 
 
@@ -1036,7 +1036,7 @@ diagramView.EnableFitToPage = true;
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img6.png)
+![Diagram-View_img6](Diagram-View_images/Diagram-View_img6.png)
 
 
 
@@ -1045,7 +1045,7 @@ Fit-to-Page Disabled
 
 
 
-![](Diagram-View_images/Diagram-View_img7.png)
+![Diagram-View_img7](Diagram-View_images/Diagram-View_img7.png)
 
 
 
@@ -1171,7 +1171,7 @@ N> If the OrderNodes property is set to null, then the table layout will be appl
 
 
 
-![](Diagram-View_images/Diagram-View_img8.png)
+![Diagram-View_img8](Diagram-View_images/Diagram-View_img8.png)
 
 
 
@@ -1326,7 +1326,7 @@ diagramView.PageMargin = New Thickness(10, 20, 10, 20)
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img9.png)
+![Diagram-View_img9](Diagram-View_images/Diagram-View_img9.png)
 
 
 
@@ -1660,7 +1660,7 @@ You can also dynamically change the units at runtime. The ruler values get chang
 
 
 
-![](Diagram-View_images/Diagram-View_img10.jpeg)
+![Diagram-View_img10](Diagram-View_images/Diagram-View_img10.jpeg)
 
 
 
@@ -1729,7 +1729,7 @@ diagramView.DateTimeSettings=New DateTimeSettings(New TimeSpan(1,0,0,0,0),50)
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img11.png)
+![Diagram-View_img11](Diagram-View_images/Diagram-View_img11.png)
 
 
 
@@ -1755,7 +1755,7 @@ diagramView.DateTimeSettings.RulerInterval = new TimeSpan(2, 0, 0, 0, 0);
 {% endhighlight %}
 
 
-![](Diagram-View_images/Diagram-View_img12.png)
+![Diagram-View_img12](Diagram-View_images/Diagram-View_img12.png)
 
 
 
@@ -2101,7 +2101,7 @@ diagramgrid.Children.Add(dc)
 {% endhighlight %}
 
 
-![](Diagram-View_images/Diagram-View_img13.jpeg)
+![Diagram-View_img13](Diagram-View_images/Diagram-View_img13.jpeg)
 
 
 
@@ -2240,7 +2240,7 @@ diagramgrid.Children.Add(dc)
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img14.jpeg)
+![Diagram-View_img14](Diagram-View_images/Diagram-View_img14.jpeg)
 
 
 
@@ -2324,7 +2324,7 @@ Users can snap objects with respect to grid lines in the Design environment by u
 
 
 
-![](Diagram-View_images/Diagram-View_img15.png)
+![Diagram-View_img15](Diagram-View_images/Diagram-View_img15.png)
 
 
 
@@ -2333,7 +2333,7 @@ Node Before Snapping
 
 
 
-![](Diagram-View_images/Diagram-View_img16.png)
+![Diagram-View_img16](Diagram-View_images/Diagram-View_img16.png)
 
 
 
@@ -2382,7 +2382,7 @@ diagramView.SnapToHorizontalGrid = True
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img17.png)
+![Diagram-View_img17](Diagram-View_images/Diagram-View_img17.png)
 
 
 
@@ -2828,7 +2828,7 @@ diagramView.IsZoomEnabled = True
 
 N> All other operations can be performed on page elements while IsZoomEnabled is set to True.
 
-![](Diagram-View_images/Diagram-View_img18.jpeg)
+![Diagram-View_img18](Diagram-View_images/Diagram-View_img18.jpeg)
 
 
 
@@ -2959,7 +2959,7 @@ DiagramCommandManager.NudgeRight.Execute(diagramView.Page, diagramView)
 
 The corresponding arrow keys can be used to move the selected objects to top, bottom, left or right. 
 
-![](Diagram-View_images/Diagram-View_img19.jpeg)
+![Diagram-View_img19](Diagram-View_images/Diagram-View_img19.jpeg)
 
 
 
@@ -3186,7 +3186,7 @@ DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img20.jpeg)
+![Diagram-View_img20](Diagram-View_images/Diagram-View_img20.jpeg)
 
 
 
@@ -3205,7 +3205,7 @@ DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img21.jpeg)
+![Diagram-View_img21](Diagram-View_images/Diagram-View_img21.jpeg)
 
 
 
@@ -3224,7 +3224,7 @@ DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img22.jpeg)
+![Diagram-View_img22](Diagram-View_images/Diagram-View_img22.jpeg)
 
 
 
@@ -3244,7 +3244,7 @@ DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img23.jpeg)
+![Diagram-View_img23](Diagram-View_images/Diagram-View_img23.jpeg)
 
 
 
@@ -3432,7 +3432,7 @@ DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView)
 
 The following screenshot illustrates how the last two nodes are aligned to the left with respect to the first node.
 
-![](Diagram-View_images/Diagram-View_img24.jpeg)
+![Diagram-View_img24](Diagram-View_images/Diagram-View_img24.jpeg)
 
 
 
@@ -3457,7 +3457,7 @@ The following screenshot illustrates how the last two nodes are aligned to the c
 
 
 
-![](Diagram-View_images/Diagram-View_img25.jpeg)
+![Diagram-View_img25](Diagram-View_images/Diagram-View_img25.jpeg)
 
 
 
@@ -3482,7 +3482,7 @@ The following screenshot illustrates how the last two nodes are aligned to the r
 
 
 
-![](Diagram-View_images/Diagram-View_img26.jpeg)
+![Diagram-View_img26](Diagram-View_images/Diagram-View_img26.jpeg)
 
 
 
@@ -3503,7 +3503,7 @@ DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView)
 
 The following screenshot illustrates how the last two nodes are aligned to the top with respect to the first node.
 
-![](Diagram-View_images/Diagram-View_img27.jpeg)
+![Diagram-View_img27](Diagram-View_images/Diagram-View_img27.jpeg)
 
 
 
@@ -3524,7 +3524,7 @@ DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView)
 
 The following screenshot illustrates how the last two nodes are aligned to the center with respect to the vertical axis of the first node.
 
-![](Diagram-View_images/Diagram-View_img28.jpeg)
+![Diagram-View_img28](Diagram-View_images/Diagram-View_img28.jpeg)
 
 
 
@@ -3545,7 +3545,7 @@ DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView)
 
 The following screenshot illustrates how the last two nodes are aligned to the bottom with respect to the first node.
 
-![](Diagram-View_images/Diagram-View_img29.jpeg)
+![Diagram-View_img29](Diagram-View_images/Diagram-View_img29.jpeg)
 
 
 
@@ -3578,7 +3578,7 @@ DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView)
 
 The following screenshot illustrates horizontally spaced objects.
 
-![](Diagram-View_images/Diagram-View_img30.jpeg)
+![Diagram-View_img30](Diagram-View_images/Diagram-View_img30.jpeg)
 
 
 
@@ -3603,7 +3603,7 @@ The following screenshot illustrates vertically spaced objects.
 
 
 
-![](Diagram-View_images/Diagram-View_img31.jpeg)
+![Diagram-View_img31](Diagram-View_images/Diagram-View_img31.jpeg)
 
 
 
@@ -3664,7 +3664,7 @@ DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
-![](Diagram-View_images/Diagram-View_img32.jpeg)
+![Diagram-View_img32](Diagram-View_images/Diagram-View_img32.jpeg)
 
 
 
@@ -3685,7 +3685,7 @@ DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView)
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img33.jpeg)
+![Diagram-View_img33](Diagram-View_images/Diagram-View_img33.jpeg)
 
 
 
@@ -3709,7 +3709,7 @@ DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView)
 
 
 
-![](Diagram-View_images/Diagram-View_img34.jpeg)
+![Diagram-View_img34](Diagram-View_images/Diagram-View_img34.jpeg)
 
 
 
@@ -3963,7 +3963,7 @@ The following custom options can be customized using PrintPreview.
 * Different modes—To select printing such as Color, and Black and White
 * Stretch—To adjust the fit of the image on the page
 
-![](Diagram-View_images/Diagram-View_img35.png)
+![Diagram-View_img35](Diagram-View_images/Diagram-View_img35.png)
 
 
 
@@ -4079,7 +4079,7 @@ diagramModel.Nodes.Add(node)
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img36.png)
+![Diagram-View_img36](Diagram-View_images/Diagram-View_img36.png)
 
 
 
@@ -4364,7 +4364,7 @@ diagramview.ZOrderMode = DrawingMode.Default;
 {% endhighlight %}
 
 
-![](Diagram-View_images/Diagram-View_img37.png)
+![Diagram-View_img37](Diagram-View_images/Diagram-View_img37.png)
 
 
 
@@ -4437,7 +4437,7 @@ diagramview.ZOrderMode = DrawingMode.Continous;
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img38.png)
+![Diagram-View_img38](Diagram-View_images/Diagram-View_img38.png)
 
 
 
@@ -4526,7 +4526,7 @@ N> These steps are common for all shapes and lines drawing, except Polygon and P
 
 Preview Ellipse – while Drawing 
 
-![](Diagram-View_images/Diagram-View_img39.png)
+![Diagram-View_img39](Diagram-View_images/Diagram-View_img39.png)
 
 
 
@@ -4537,7 +4537,7 @@ Ellipse – After Drawing.
 
 
 
-![](Diagram-View_images/Diagram-View_img40.png)
+![Diagram-View_img40](Diagram-View_images/Diagram-View_img40.png)
 
 
 
@@ -4548,7 +4548,7 @@ Line Drawing
 
 Bezier Line Preview – While Drawing 
 
-![](Diagram-View_images/Diagram-View_img41.png)
+![Diagram-View_img41](Diagram-View_images/Diagram-View_img41.png)
 
 
 
@@ -4557,7 +4557,7 @@ Bezier Line Preview
 
 Bezier Line – After Drawing
 
-![](Diagram-View_images/Diagram-View_img42.png)
+![Diagram-View_img42](Diagram-View_images/Diagram-View_img42.png)
 
 
 
@@ -4577,7 +4577,7 @@ Steps for drawing a Polygon and Polyline Drawing:
 
 Preview Polygon – While Drawing 
 
-![](Diagram-View_images/Diagram-View_img43.png)
+![Diagram-View_img43](Diagram-View_images/Diagram-View_img43.png)
 
 
 
@@ -4585,7 +4585,7 @@ Polygon Preview
 
 Polygon – After Drawing
 
-![](Diagram-View_images/Diagram-View_img44.png)
+![Diagram-View_img44](Diagram-View_images/Diagram-View_img44.png)
 
 
 
@@ -4670,7 +4670,7 @@ View1.CustomPathStyle = this.Resources["MyStyle"] as Style
 {% endhighlight %}
 The CustomPathStyle property of DiagramView applies the style that is assigned to the preview of the drawing objects.
 
-![](Diagram-View_images/Diagram-View_img45.png)
+![Diagram-View_img45](Diagram-View_images/Diagram-View_img45.png)
 
 
 
@@ -5304,7 +5304,7 @@ diagramView.BackgroundEffect = drop
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img46.png)
+![Diagram-View_img46](Diagram-View_images/Diagram-View_img46.png)
 
 
 
@@ -5353,7 +5353,7 @@ This dragging gesture is used to perform the following operation.
 
 
 
-![](Diagram-View_images/Diagram-View_img47.png)
+![Diagram-View_img47](Diagram-View_images/Diagram-View_img47.png)
 
 
 
@@ -5376,7 +5376,7 @@ This spread and pinch gesture is used to perform, zooming and resizing operation
 * Zooming the DiagramView with two fingers can be done
 * Resizing the Node with two fingers can be done
 
-![](Diagram-View_images/Diagram-View_img48.png)
+![Diagram-View_img48](Diagram-View_images/Diagram-View_img48.png)
 
 
 
@@ -5385,7 +5385,7 @@ Spread
 
 
 
-![](Diagram-View_images/Diagram-View_img49.png)
+![Diagram-View_img49](Diagram-View_images/Diagram-View_img49.png)
 
 
 
@@ -5462,7 +5462,7 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img50.png)
+![Diagram-View_img50](Diagram-View_images/Diagram-View_img50.png)
 
 
 
@@ -5666,7 +5666,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img51.png)
+![Diagram-View_img51](Diagram-View_images/Diagram-View_img51.png)
 
 
 
@@ -5737,7 +5737,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img52.png)
+![Diagram-View_img52](Diagram-View_images/Diagram-View_img52.png)
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WPF TreeView Appearance | Syncfusion
-description: This section describes how to customize the appearance of Syncfusion WPF TreeView(TreeViewAdv) in various scenarios.
+title: Appearance in WPF Wizard Control control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Appearance in WPF TreeView (TreeViewAdv)
+# Appearance in WPF TreeViewAdv (Classic)
 
 This section deals with the appearance of TreeViewAdv control and contains the following topics:
 

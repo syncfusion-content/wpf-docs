@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Styling the ChromelessWindow
-description: Styling the ChromelessWindow
+title: Styling the ChromelessWindow in WPF Chromeless Window control | Syncfusion
+description: Learn about Styling the ChromelessWindow support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Styling the ChromelessWindow
+# Styling the ChromelessWindow in WPF Chromeless Window
 
 This section deals with the Styles and Templates supported by ChromelessWindow control.
 
@@ -50,7 +50,7 @@ For example, use the following code for a TitleBarTemplate.
 
 N> The drag and drop feature for the ChromelessWindow is available only with the TitleBar,to incorporate this feature,include a TitleBar into your ChromelessWindow.Also it is necessary to specify the name of the TitleBar as PART_TitleBar",to enable the drag and drop feature.
 
-![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
+![Styling-the-ChromelessWindow_img1](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img1.jpeg)
 
 ## Custom template for the TitleButton
 
@@ -96,7 +96,7 @@ HorizontalAlignment="Center" VerticalAlignment="Center"  Width="9" Height="8">
 
 {% endtabs %}
 
-![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img2.jpeg)
+![Styling-the-ChromelessWindow_img2](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img2.jpeg)
 
 Similarly, the template for the desired button can be changed by using the corresponding button property
 
@@ -168,4 +168,4 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Sh
 
 The following screen shot shows the Custom ChromelessWindow control created using the preceding code.
 
-![](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img3.jpeg)
+![Styling-the-ChromelessWindow_img3](Styling-the-ChromelessWindow_images/Styling-the-ChromelessWindow_img3.jpeg)

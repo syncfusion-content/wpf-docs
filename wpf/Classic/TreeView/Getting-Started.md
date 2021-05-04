@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started of TreeViewAdv | Syncfusion
-description: Getting Started of TreeViewAdv explains how to implement the TreeViewAdv control to the application and its basic functions
+title: Getting Started with WPF TreeViewAdv Control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF TreeViewAdv (Classic) control, its elements and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Getting Started with WPF TreeView (TreeViewAdv)
+# Getting Started with WPF TreeViewAdv (Classic)
 
 This section explains how to create Tree layout using [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control.
 

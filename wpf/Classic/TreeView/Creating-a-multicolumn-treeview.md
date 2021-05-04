@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating a MultiColumn TreeView in WPF | Syncfusion
-description: This section explains how to create the WPF MultiColumn TreeView, and how to use its different properties.
+title: Creating a MultiColumnTreeView in WPF Wizard Control control | Syncfusion
+description: Learn here all about Creating a MultiColumnTreeView support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Creating a MultiColumnTreeView
+# Creating a MultiColumnTreeView in WPF TreeViewAdv (Classic)
 
 TreeView control can be created with multiple columns by setting the MultiColumnEnable property to __true__. This is dependency property, which gets or sets the value defining whether items are in multicolumn mode. The default value is __false______
 

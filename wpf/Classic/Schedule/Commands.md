@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands| SfSchedule | Wpf | Syncfusion
-description: This section explain about how to use the commands of Syncfusion WPF Scheduler control and more details. 
+title: Commands in WPF Wizard Control control | Syncfusion
+description: Learn here all about Commands support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Commands with WPF Scheduler
+# Commands in WPF Schedule (Classic)
 
 Operations that are done by context menu can be performed using Schedule commands. The following actions of context menu can be handled by executing schedule commands in the application.
 

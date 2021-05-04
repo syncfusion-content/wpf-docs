@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Links | Spreadsheet | wpf | Syncfusion
-description: links
+title: Links in WPF Wizard Control control | Syncfusion
+description: Learn here all about Links support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Links
+# Links in WPF SpreadsheetControl (Classic)
 
 ## Bookmarks and Hyperlinks
 
@@ -17,7 +17,7 @@ A hyperlink is a convenient way to navigate from one workbook to another workboo
 
 You can add the hyperlink to the spreadsheet cell using the Insert Hyperlink dialog box. You can open the Insert Hyperlink dialog using the HyperlinkCommand.
 
-![](Links_images/Links_img1.png)
+![Links_img1](Links_images/Links_img1.png)
 
 The following code illustrates how to bind the HyperlinkCommand__a button: 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance| ColorPicker | wpf | Syncfusion
-description: This page includes a brief description of ColorEdit, the ColoPicker Header customization options and themes.
+title: Appearance in WPF color picker control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF color picker (ColorPicker) control and more.
 platform: wpf
 control: ColorPicker
 documentation: ug
 ---
 
-# Appearance in WPF ColorPicker
+# Appearance in WPF color picker (ColorPicker)
 
 This section explains different UI customization, styling, theming options available in [ColoPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) control.
 

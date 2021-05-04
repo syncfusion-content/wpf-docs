@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Resources in WPF Scheduler | Syncfusion
-description: This section explains about how to group the appointment based on the associated resource with an appointment.
+title: Resources in WPF Wizard Control control | Syncfusion
+description: Learn here all about Resources support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Resources in WPF Scheduler
+# Resources in WPF Schedule (Classic)
 
 The Scheduler allows to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. Appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) properties are set, and also when the value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
 For example, end user can create appointments for different doctors.

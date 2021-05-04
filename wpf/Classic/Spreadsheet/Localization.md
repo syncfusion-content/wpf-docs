@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | Spreadsheet | wpf | Syncfusion
-description: localization
+title: Localization in WPF Wizard Control control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Localization
+# Localization in WPF SpreadsheetControl (Classic)
 
 Localization is the process of customizing the application to culture-specific. This involves configuring the application for the specific languages. Culture is the combination of Language and the Location (e.g. En-US is the Culture for English spoken at United States; En-GB is the Culture for English spoken at Great Britain). 
 

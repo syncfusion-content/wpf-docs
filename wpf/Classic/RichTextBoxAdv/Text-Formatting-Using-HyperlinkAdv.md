@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Formatting Using HyperlinkAdv| RichTextBoxAdv | Wpf | Syncfusion
-description: text formatting using hyperlinkadv
+title: Text-Formatting-Using-HyperlinkAdv in WPF Wizard Control control | Syncfusion
+description: Learn here all about Text-Formatting-Using-HyperlinkAdv support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Text Formatting Using HyperlinkAdv
+# Text-Formatting-Using-HyperlinkAdv in WPF RichTextBoxAdv (Classic)
 
 HyperlinkAdv can be kept only inside the ParagraphAdv since the content property of ParagraphAdv is Inline. It allows you to display the formatted text using advanced features like NavigationUrl and TargetType. It simply differs by these properties when compared to SpanAdv.
 

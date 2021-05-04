@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Line Connectors | Diagram | wpf | Syncfusion
-description: line connectors
+title: Line Connectors in WPF Wizard Control control | Syncfusion
+description: Learn here all about Line Connectors support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Line Connectors
+# Line Connectors in WPF Diagram (classic)
 
 Connectors are objects that are used to create a link between two nodes. Each connector has two ends whose position can be specified as point or directly connected to Node. One end of the connector can be defined either by using the ‘Start Point Position’ or ‘Head Node’, similarly other end can be defined using ‘End Point Position’ or ‘Tail Node’. 
 
 
 
-![](Line-Connectors_images/Line-Connectors_img1.png)
+![Line-Connectors_img1](Line-Connectors_images/Line-Connectors_img1.png)
 
 
 
@@ -338,7 +338,7 @@ AutoAdjustPoints enables the Orthogonal LineConnector to adjust the intermediate
 
 
 
-![](Line-Connectors_images/Line-Connectors_img2.png)
+![Line-Connectors_img2](Line-Connectors_images/Line-Connectors_img2.png)
 
 
 
@@ -569,7 +569,7 @@ N> If a node is not hit while making a connection, then no connector gets added.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img3.jpeg)
+![Line-Connectors_img3](Line-Connectors_images/Line-Connectors_img3.jpeg)
 
 
 
@@ -577,7 +577,7 @@ N> If a node is not hit while making a connection, then no connector gets added.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img4.jpeg)
+![Line-Connectors_img4](Line-Connectors_images/Line-Connectors_img4.jpeg)
 
 
 
@@ -585,7 +585,7 @@ N> If a node is not hit while making a connection, then no connector gets added.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img5.jpeg)
+![Line-Connectors_img5](Line-Connectors_images/Line-Connectors_img5.jpeg)
 
 
 
@@ -704,7 +704,7 @@ This creates a connection between the two specified nodes.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img9.jpeg)
+![Line-Connectors_img9](Line-Connectors_images/Line-Connectors_img9.jpeg)
 
 
 
@@ -1026,11 +1026,11 @@ diagramModel1.Connections.Add(l)
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img11.png)
+![Line-Connectors_img11](Line-Connectors_images/Line-Connectors_img11.png)
 
 
 
-![](Line-Connectors_images/Line-Connectors_img12.png)
+![Line-Connectors_img12](Line-Connectors_images/Line-Connectors_img12.png)
 
 
 
@@ -1063,7 +1063,7 @@ Straight line connectors can be used as poly line by using IntermediatePoints pr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img13.jpeg)
+![Line-Connectors_img13](Line-Connectors_images/Line-Connectors_img13.jpeg)
 
 
 
@@ -1073,7 +1073,7 @@ Orthogonal lines can have more than two intermediate points. All these Intermedi
 
 
 
-![](Line-Connectors_images/Line-Connectors_img14.jpeg)
+![Line-Connectors_img14](Line-Connectors_images/Line-Connectors_img14.jpeg)
 
 
 
@@ -1131,7 +1131,7 @@ lc.IntermediatePoints.Add(New Point(200,300))
 {% endhighlight   %}
 
 
-![](Line-Connectors_images/Line-Connectors_img15.jpeg)
+![Line-Connectors_img15](Line-Connectors_images/Line-Connectors_img15.jpeg)
 
 
 
@@ -1189,7 +1189,7 @@ lc.IntermediatePoints(1) = New Point(200,200))
 
 
 {% endhighlight  %}
-![](Line-Connectors_images/Line-Connectors_img16.jpeg)
+![Line-Connectors_img16](Line-Connectors_images/Line-Connectors_img16.jpeg)
 
 
 
@@ -1245,7 +1245,7 @@ lc.IntermediatePoints.RemoveAt(1)
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img17.jpeg)
+![Line-Connectors_img17](Line-Connectors_images/Line-Connectors_img17.jpeg)
 
 
 
@@ -1371,7 +1371,7 @@ lc.VertexStyle = TryCast(Me.Resources("vertexStyle"), Style)
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img18.jpeg)
+![Line-Connectors_img18](Line-Connectors_images/Line-Connectors_img18.jpeg)
 
 
 
@@ -1480,7 +1480,7 @@ lc.DecoratorAdornerStyle = TryCast(Me.Resources("decorator"), Style)
 
 
 {% endhighlight   %}
-![](Line-Connectors_images/Line-Connectors_img19.jpeg)
+![Line-Connectors_img19](Line-Connectors_images/Line-Connectors_img19.jpeg)
 
 
 
@@ -1549,7 +1549,7 @@ lc.IsVertexVisible = False
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img20.jpeg)
+![Line-Connectors_img20](Line-Connectors_images/Line-Connectors_img20.jpeg)
 
 
 
@@ -1732,7 +1732,7 @@ diagramModel.Connections.Add(l1)
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img21.jpeg)
+![Line-Connectors_img21](Line-Connectors_images/Line-Connectors_img21.jpeg)
 
 
 
@@ -2324,7 +2324,7 @@ Appearance
 
 
 
-![](Line-Connectors_images/Line-Connectors_img26.png)
+![Line-Connectors_img26](Line-Connectors_images/Line-Connectors_img26.png)
 
 
 {% highlight html  %}
@@ -2356,7 +2356,7 @@ Appearance
 
 
 
-![](Line-Connectors_images/Line-Connectors_img27.png)
+![Line-Connectors_img27](Line-Connectors_images/Line-Connectors_img27.png)
 
 
 
@@ -2388,7 +2388,7 @@ Appearance
 
 
 
-![](Line-Connectors_images/Line-Connectors_img28.png)
+![Line-Connectors_img28](Line-Connectors_images/Line-Connectors_img28.png)
 
 
 
@@ -2420,7 +2420,7 @@ Appearance
 {% endhighlight  %}
 
 
-![](Line-Connectors_images/Line-Connectors_img29.png)
+![Line-Connectors_img29](Line-Connectors_images/Line-Connectors_img29.png)
 
 
 
@@ -2516,7 +2516,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-![](Line-Connectors_images/Line-Connectors_img30.jpeg)
+![Line-Connectors_img30](Line-Connectors_images/Line-Connectors_img30.jpeg)
 
 
 
@@ -2691,7 +2691,7 @@ diagramModel.Connections.Add(l1)
 
 
 {% endhighlight  %}
-![](Line-Connectors_images/Line-Connectors_img32.jpeg)
+![Line-Connectors_img32](Line-Connectors_images/Line-Connectors_img32.jpeg)
 
 
 
@@ -2756,7 +2756,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Auto
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img33.png)
+![Line-Connectors_img33](Line-Connectors_images/Line-Connectors_img33.png)
 
 
 
@@ -2781,7 +2781,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Horizontal
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img34.png)
+![Line-Connectors_img34](Line-Connectors_images/Line-Connectors_img34.png)
 
 
 
@@ -2806,7 +2806,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Vertical
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img35.png)
+![Line-Connectors_img35](Line-Connectors_images/Line-Connectors_img35.png)
 
 
 
@@ -2985,7 +2985,7 @@ diagramModel.Connections.Add(l1)
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img36.jpeg)
+![Line-Connectors_img36](Line-Connectors_images/Line-Connectors_img36.jpeg)
 
 
 
@@ -3072,7 +3072,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight  %}
 The following screenshot illustrates "Hello" text on an Alice Blue background with an image on the left.
 
-![](Line-Connectors_images/Line-Connectors_img37.jpeg)
+![Line-Connectors_img37](Line-Connectors_images/Line-Connectors_img37.jpeg)
 
 
 
@@ -3115,7 +3115,7 @@ l.IsLabelEditable = True
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img38.png)
+![Line-Connectors_img38](Line-Connectors_images/Line-Connectors_img38.png)
 
 
 
@@ -3156,7 +3156,7 @@ You can specify a label at run time by following the below mentioned steps.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img39.jpeg)
+![Line-Connectors_img39](Line-Connectors_images/Line-Connectors_img39.jpeg)
 
 
 
@@ -3243,7 +3243,7 @@ diagramModel.Connections.Add(line1)
 
 
 {% endhighlight   %}
-![](Line-Connectors_images/Line-Connectors_img40.png)
+![Line-Connectors_img40](Line-Connectors_images/Line-Connectors_img40.png)
 
 
 
@@ -3399,7 +3399,7 @@ N> When this property is set to Auto, the label will be positioned along the ang
 
 
 
-![](Line-Connectors_images/Line-Connectors_img41.png)
+![Line-Connectors_img41](Line-Connectors_images/Line-Connectors_img41.png)
 
 
 
@@ -3422,7 +3422,7 @@ LineConnector line = new LineConnector();
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Horizontal;
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img42.png)
+![Line-Connectors_img42](Line-Connectors_images/Line-Connectors_img42.png)
 
 
 
@@ -3447,7 +3447,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Vertical
 
 
 {% endhighlight   %}
-![](Line-Connectors_images/Line-Connectors_img43.png)
+![Line-Connectors_img43](Line-Connectors_images/Line-Connectors_img43.png)
 
 
 
@@ -3500,7 +3500,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 {% endhighlight %}
 
-![](Line-Connectors_images/Line-Connectors_img44.png)
+![Line-Connectors_img44](Line-Connectors_images/Line-Connectors_img44.png)
 
 
 
@@ -3529,7 +3529,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 {% endhighlight  %}
 
-![](Line-Connectors_images/Line-Connectors_img45.png)
+![Line-Connectors_img45](Line-Connectors_images/Line-Connectors_img45.png)
 
 
 
@@ -3558,7 +3558,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-![](Line-Connectors_images/Line-Connectors_img46.png)
+![Line-Connectors_img46](Line-Connectors_images/Line-Connectors_img46.png)
 
 
 
@@ -3587,7 +3587,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 {% endhighlight  %}
 
 
-![](Line-Connectors_images/Line-Connectors_img47.png)
+![Line-Connectors_img47](Line-Connectors_images/Line-Connectors_img47.png)
 
 
 
@@ -3644,7 +3644,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 
-![](Line-Connectors_images/Line-Connectors_img48.png)
+![Line-Connectors_img48](Line-Connectors_images/Line-Connectors_img48.png)
 
 
 
@@ -3673,7 +3673,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 {% endhighlight  %}
-![](Line-Connectors_images/Line-Connectors_img49.png)
+![Line-Connectors_img49](Line-Connectors_images/Line-Connectors_img49.png)
 
 
 
@@ -3701,7 +3701,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 {% endhighlight   %}
 
-![](Line-Connectors_images/Line-Connectors_img50.png)
+![Line-Connectors_img50](Line-Connectors_images/Line-Connectors_img50.png)
 
 
 
@@ -3735,7 +3735,7 @@ Only Straight and Orthogonal Connector type supports line bridging.
 
 
 
-![](Line-Connectors_images/Line-Connectors_img51.jpeg)
+![Line-Connectors_img51](Line-Connectors_images/Line-Connectors_img51.jpeg)
 
 
 
@@ -3913,7 +3913,7 @@ protected override IEnumerable<PathSegment> CreateSegments(Point start, Point en
 {% endhighlight  %}
 
 
-![](Line-Connectors_images/Line-Connectors_img53.png)
+![Line-Connectors_img53](Line-Connectors_images/Line-Connectors_img53.png)
 
 
 
@@ -3951,7 +3951,7 @@ diagramview.BridgeDirection=BridgeDirection.Top;
 {% endhighlight  %}
 
 
-![](Line-Connectors_images/Line-Connectors_img54.png)
+![Line-Connectors_img54](Line-Connectors_images/Line-Connectors_img54.png)
 
 
 
@@ -3968,7 +3968,7 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 
 {% endhighlight %}
-![](Line-Connectors_images/Line-Connectors_img55.png)
+![Line-Connectors_img55](Line-Connectors_images/Line-Connectors_img55.png)
 
 
 
@@ -3976,7 +3976,7 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 When a link is drawn between two nodes, by enabling the LineRoutingEnabled property of that link and the diagram view, and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 
-![](Line-Connectors_images/Line-Connectors_img56.png)
+![Line-Connectors_img56](Line-Connectors_images/Line-Connectors_img56.png)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Formatting Using SpanAdv| RichTextBoxAdv | Wpf | Syncfusion
-description: text formatting using spanadv
+title: Text-Formatting-Using-SpanAdv in WPF Wizard Control control | Syncfusion
+description: Learn here all about Text-Formatting-Using-SpanAdv support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Text Formatting Using SpanAdv
+# Text-Formatting-Using-SpanAdv in WPF RichTextBoxAdv (Classic)
 
 As Inline will be the content property of ParagraphAdv, SpanAdv can be added only inside the ParagraphAdv. Every ParagraphAdv can keep _n_ number of inline elements inside it. It allows you to display the formatted text using advanced features like font size, font family, strikethrough, and baseline.
 

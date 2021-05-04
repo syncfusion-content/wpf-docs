@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Diagram | wpf | Syncfusion
-description: overview
+title: About WPF Diagram Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Overview
+# Overview in WPF Diagram (classic)
 
 Essential Diagram WPF is an extensible and high-performance diagramming Framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 
@@ -30,7 +30,7 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-![](Overview_images/Overview_img1.jpeg)
+![Overview_img1](Overview_images/Overview_img1.jpeg)
 
 
 
@@ -40,7 +40,7 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-![](Overview_images/Overview_img2.jpeg)
+![Overview_img2](Overview_images/Overview_img2.jpeg)
 
 
 
@@ -50,7 +50,7 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-![](Overview_images/Overview_img3.jpeg)
+![Overview_img3](Overview_images/Overview_img3.jpeg)
 
 
 
@@ -60,7 +60,7 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-![](Overview_images/Overview_img4.jpeg)
+![Overview_img4](Overview_images/Overview_img4.jpeg)
 
 
 
@@ -72,7 +72,7 @@ _Swim Lane Diagram_
 
 
 
-![](Overview_images/Overview_img5.png)
+![Overview_img5](Overview_images/Overview_img5.png)
 
 
 
@@ -82,7 +82,7 @@ _Swim Lane Diagram_
 
 
 
-![](Overview_images/Overview_img6.png)
+![Overview_img6](Overview_images/Overview_img6.png)
 
 
 

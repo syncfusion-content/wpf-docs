@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Events | Chart(Classic) | wpf | Syncfusion
-description: Chart Events
+title: Chart-Events in WPF Wizard Control control | Syncfusion
+description: Learn here all about Chart-Events support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Events
+# Chart-Events in WPF Chart (Classic)
 
 ## Chart Axis Events
 
@@ -166,6 +166,6 @@ MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString()
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img221.jpeg)
+![Chart-Controls_img221](Chart-Controls_images/Chart-Controls_img221.jpeg)
 
 

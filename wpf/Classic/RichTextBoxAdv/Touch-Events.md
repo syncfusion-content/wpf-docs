@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Events| RichTextBoxAdv | Wpf | Syncfusion
-description: touch events
+title: Touch-Events in WPF Wizard Control control | Syncfusion
+description: Learn here all about Touch-Events support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Touch Events
+# Touch-Events in WPF RichTextBoxAdv (Classic)
 
 The RichTextBoxAdv control provides support for touch manipulation like panning, zooming, and selecting the content of the document.
 

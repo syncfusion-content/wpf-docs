@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diagram Model | Diagram | wpf | Syncfusion
-description: diagram model
+title: Diagram Model in WPF Wizard Control control | Syncfusion
+description: Learn here all about Diagram Model support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Diagram Model
+# Diagram Model in WPF Diagram (classic)
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel. The position of the nodes can be manually specified.
 
@@ -184,7 +184,7 @@ Horizontal Spacing refers to the spaces between the edges of the adjacent nodes 
 
 
 
-![](Diagram-Model_images/Diagram-Model_img1.png)
+![Diagram-Model_img1](Diagram-Model_images/Diagram-Model_img1.png)
 
 
 
@@ -197,7 +197,7 @@ SpaceBetweenSubTrees refers to the spaces between adjacent Subtrees.
 
 
 
-![](Diagram-Model_images/Diagram-Model_img2.png)
+![Diagram-Model_img2](Diagram-Model_images/Diagram-Model_img2.png)
 
 
 
@@ -342,7 +342,7 @@ TryCast(diagramView.Page, DiagramPage).InvalidateArrange()
 
 The orientations are illustrated below.
 
-![](Diagram-Model_images/Diagram-Model_img3.jpeg)
+![Diagram-Model_img3](Diagram-Model_images/Diagram-Model_img3.jpeg)
 
 
 
@@ -351,7 +351,7 @@ BottomTop Orientation
 
 
 
-![](Diagram-Model_images/Diagram-Model_img4.jpeg)
+![Diagram-Model_img4](Diagram-Model_images/Diagram-Model_img4.jpeg)
 
 
 
@@ -360,7 +360,7 @@ TopBottom Orientation
 
 
 
-![](Diagram-Model_images/Diagram-Model_img5.jpeg)
+![Diagram-Model_img5](Diagram-Model_images/Diagram-Model_img5.jpeg)
 
 
 
@@ -368,7 +368,7 @@ LeftRight Orientation
 {:.caption}
 
 
-![](Diagram-Model_images/Diagram-Model_img6.jpeg)
+![Diagram-Model_img6](Diagram-Model_images/Diagram-Model_img6.jpeg)
 
 
 
@@ -565,7 +565,7 @@ Me(0).RegionalSales.Add(New RegionSale() With {.Name = "San Fransico", .Revenue 
 
 
 
-![](Diagram-Model_images/Diagram-Model_img7.jpeg)
+![Diagram-Model_img7](Diagram-Model_images/Diagram-Model_img7.jpeg)
 
 
 
@@ -681,7 +681,7 @@ The following screenshot illustrates Cyclic Paths in the Hierarchical-Tree layou
 
 
 
-![](Diagram-Model_images/Diagram-Model_img8.jpeg)
+![Diagram-Model_img8](Diagram-Model_images/Diagram-Model_img8.jpeg)
 
 
 
@@ -805,7 +805,7 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
 
 
-![](Diagram-Model_images/Diagram-Model_img9.jpeg)
+![Diagram-Model_img9](Diagram-Model_images/Diagram-Model_img9.jpeg)
 
 
 
@@ -814,7 +814,7 @@ Table layout with TableExpandMode as Horizontal and ColumnCount
 
 
 
-![](Diagram-Model_images/Diagram-Model_img10.jpeg)
+![Diagram-Model_img10](Diagram-Model_images/Diagram-Model_img10.jpeg)
 
 
 
@@ -940,7 +940,7 @@ diagramModel.ColumnCount=5
 
 
 
-![](Diagram-Model_images/Diagram-Model_img11.jpeg)
+![Diagram-Model_img11](Diagram-Model_images/Diagram-Model_img11.jpeg)
 
 
 
@@ -949,7 +949,7 @@ RowCount specified as 3
 
 
 
-![](Diagram-Model_images/Diagram-Model_img12.jpeg)
+![Diagram-Model_img12](Diagram-Model_images/Diagram-Model_img12.jpeg)
 
 
 
@@ -1059,7 +1059,7 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
 {% endhighlight  %}
 
-![](Diagram-Model_images/Diagram-Model_img13.jpeg)
+![Diagram-Model_img13](Diagram-Model_images/Diagram-Model_img13.jpeg)
 
 
 
@@ -1068,7 +1068,7 @@ EnableLayoutWithVariedSize set to false
 
 
 
-![](Diagram-Model_images/Diagram-Model_img14.jpeg)
+![Diagram-Model_img14](Diagram-Model_images/Diagram-Model_img14.jpeg)
 
 
 

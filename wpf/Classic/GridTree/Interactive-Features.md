@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features| GridTree  | Wpf | Syncfusion
-description: interactive features
+title: Interactive Features in WPF Wizard Control control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in WPF GridTreeControl (Classic)
 
 This section elaborates on the following run time interactive features:
 
@@ -193,7 +193,7 @@ The following screenshot shows the GridTree control enabled with multicolumn sor
 
 
 
-![](Interactive-Features_images/Interactive-Features_img1.png)
+![Interactive-Features_img1](Interactive-Features_images/Interactive-Features_img1.png)
 
 
 
@@ -420,7 +420,7 @@ The following screen shot shows the back color set on a level-by-level basis, wi
 
 
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Interactive-Features_img2](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 
 
@@ -453,7 +453,7 @@ The following screen shot shows the StyleInfo property applied to the “Departm
 
 
 
-![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Interactive-Features_img3](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 
@@ -538,7 +538,7 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 {% endhighlight %}
 
-![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Interactive-Features_img4](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 
@@ -700,7 +700,7 @@ args.NodeImage = employees.GetItemBitmap(args.Item as Employee);
 
 Here is a screen shot that shows custom glyphs and node images.
 
-![](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![Interactive-Features_img5](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
 
@@ -751,7 +751,7 @@ The appearance of the GridTree control can be customized using Microsoft Express
 
 
 
-![](Interactive-Features_images/Interactive-Features_img6.png)
+![Interactive-Features_img6](Interactive-Features_images/Interactive-Features_img6.png)
 
 
 
@@ -767,7 +767,7 @@ GridTreeStyleManager properties are organized under different groups, each repre
 
 
 
-![](Interactive-Features_images/Interactive-Features_img7.png)
+![Interactive-Features_img7](Interactive-Features_images/Interactive-Features_img7.png)
 
 
 
@@ -808,7 +808,7 @@ CellMarginsInfo type property describes cell text margins in the cell</td></tr>
 </table>
 
 
-![](Interactive-Features_images/Interactive-Features_img8.png)
+![Interactive-Features_img8](Interactive-Features_images/Interactive-Features_img8.png)
 
 
 
@@ -817,7 +817,7 @@ Before Cell Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img9.png)
+![Interactive-Features_img9](Interactive-Features_images/Interactive-Features_img9.png)
 
 
 
@@ -890,7 +890,7 @@ After Cell Appearance Applied
 
 {% endhighlight %}
 
-![](Interactive-Features_images/Interactive-Features_img10.png)
+![Interactive-Features_img10](Interactive-Features_images/Interactive-Features_img10.png)
 
 
 
@@ -946,7 +946,7 @@ Geometry type used to display different types of plus glyph</td></tr>
 </table>
 
 
-![](Interactive-Features_images/Interactive-Features_img11.png)
+![Interactive-Features_img11](Interactive-Features_images/Interactive-Features_img11.png)
 
 
 
@@ -955,7 +955,7 @@ Before Expander Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img12.png)
+![Interactive-Features_img12](Interactive-Features_images/Interactive-Features_img12.png)
 
 
 
@@ -1016,7 +1016,7 @@ After Expander Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img13.png)
+![Interactive-Features_img13](Interactive-Features_images/Interactive-Features_img13.png)
 
 
 
@@ -1075,7 +1075,7 @@ Used to change the sort icon background color</td></tr>
 </table>
 
 
-![](Interactive-Features_images/Interactive-Features_img14.png)
+![Interactive-Features_img14](Interactive-Features_images/Interactive-Features_img14.png)
 
 
 
@@ -1084,7 +1084,7 @@ Before Header Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img15.png)
+![Interactive-Features_img15](Interactive-Features_images/Interactive-Features_img15.png)
 
 
 
@@ -1171,7 +1171,7 @@ After Header Appearance Applied
 {% endhighlight %}
 
 
-![](Interactive-Features_images/Interactive-Features_img16.png)
+![Interactive-Features_img16](Interactive-Features_images/Interactive-Features_img16.png)
 
 
 
@@ -1239,7 +1239,7 @@ Used to change the hover foreground color of the GridTree control</td></tr>
 </table>
 
 
-![](Interactive-Features_images/Interactive-Features_img17.png)
+![Interactive-Features_img17](Interactive-Features_images/Interactive-Features_img17.png)
 
 
 
@@ -1248,7 +1248,7 @@ Before Row Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img18.png)
+![Interactive-Features_img18](Interactive-Features_images/Interactive-Features_img18.png)
 
 
 
@@ -1297,7 +1297,7 @@ After Row Appearance Applied
 
 
 
-![](Interactive-Features_images/Interactive-Features_img19.png)
+![Interactive-Features_img19](Interactive-Features_images/Interactive-Features_img19.png)
 
 
 

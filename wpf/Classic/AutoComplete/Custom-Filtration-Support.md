@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Filtration Support | AutoComplete | wpf | Syncfusion
-description: custom filtration support
+title: Custom Filtration Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Custom Filtration Support support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Custom Filtration Support
+# Custom Filtration Support in WPF AutoComplete (Classic)
 
 AutoComplete supports Custom Filtration of items, which allows you to specify three different search modes for displaying the drop-down list. The [StringMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_StringMode) property is used to specify the search mode.
 

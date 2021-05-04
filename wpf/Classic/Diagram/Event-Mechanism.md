@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event Mechanism | Diagram | wpf | Syncfusion
-description: event mechanism
+title: Event Mechanism in WPF Wizard Control control | Syncfusion
+description: Learn here all about Event Mechanism support in Syncfusion WPF Diagram (classic) control and more.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Event Mechanism
+# Event Mechanism in WPF Diagram (classic)
 
 This section describes several events triggered and handled while using Essential Diagram WPF in the following topic:
 

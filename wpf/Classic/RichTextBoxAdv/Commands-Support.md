@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands Support| RichTextBoxAdv | Wpf | Syncfusion
-description: commands support
+title: Commands-Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Commands-Support support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Commands Support
+# Commands-Support in WPF RichTextBoxAdv (Classic)
 
 The RichTextBoxAdv control provides built-in static commands that showcase the features available in RichTextBoxAdv.
 

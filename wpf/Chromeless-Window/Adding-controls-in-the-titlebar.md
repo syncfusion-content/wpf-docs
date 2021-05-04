@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Adding controls in Syncfusion Chromeless Window Title Bar
-description: This section briefly describes the ability to add controls in Syncfusion Chromeless Window Title Bar.
+title: Adding controls in the Title bar in WPF Chromeless Window control | Syncfusion
+description: Learn about Adding controls in the Title bar support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Adding controls in the Title bar
+# Adding controls in the Title bar in WPF Chromeless Window
 
 Provided the option to add adaptive controls such as Button, TextBox, Label, etc on either side of the title bar in the Chromeless Window. The [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_LeftHeaderItemsSource) property holds the controls to be shown on the left side of the title bar likewise the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_RightHeaderItemsSource) property holds the controls to be shown on the right side of the title bar.
 

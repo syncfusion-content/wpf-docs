@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection-Mode-Support | AutoComplete | wpf | Syncfusion
-description: selection mode support
+title: Selection Mode Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Selection Mode Support support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Selection Mode Support
+# Selection Mode Support in WPF AutoComplete (Classic)
 
 AutoComplete supports two kinds of Selection Mode namely Single and Multiple. You can select the Mode using the [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_SelectionMode) property. 
 

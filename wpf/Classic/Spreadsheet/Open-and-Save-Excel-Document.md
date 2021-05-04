@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Open and Save Excel Document | Spreadsheet | wpf | Syncfusion
-description: open and save excel document
+title: Open and Save Excel Document in WPF Wizard Control control | Syncfusion
+description: Learn here all about Open and Save Excel Document support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Open and Save Excel Document
+# Open and Save Excel Document in WPF SpreadsheetControl (Classic)
 
 You can open and save the Excel document that is compatible with following Excel versions:
 
@@ -98,7 +98,7 @@ spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)
 
 You can also open the Excel document by using the ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will open the Open dialog box. Using that dialog you can open the Excel document. 
 
-![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png)
+![Open-and-Save-Excel-Document_img1](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png)
 
 The following code illustrates how to bind the ImportFromExcelCommand__to a button: 
 
@@ -130,7 +130,7 @@ spreadControl.SaveAs()
 
 Save As dialog box will open. Save the document at the required location.  
 
-![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png)
+![Open-and-Save-Excel-Document_img2](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png)
 
 ### Using Command
 

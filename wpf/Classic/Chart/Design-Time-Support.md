@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Design Time Support | Chart(Classic) | wpf | Syncfusion
-description: Design-Time Support
+title: Design-Time-Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Design-Time-Support support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Design-Time Support
+# Design-Time-Support in WPF Chart (Classic)
 
 ## Chart Control Smart Tag Support
 
@@ -14,16 +14,16 @@ Smart Tag appears for the Chart, Chart Area and Chart Legend. By using the Smart
 
 The following screenshot illustrates Smart Tag support in Chart.
 
-![](Chart-Controls_images/Chart-Controls_img192.jpeg)
+![Chart-Controls_img192](Chart-Controls_images/Chart-Controls_img192.jpeg)
 
 
 
 The following screenshot illustrates Smart Tag support in Chart Area.
 
-![](Chart-Controls_images/Chart-Controls_img193.jpeg)
+![Chart-Controls_img193](Chart-Controls_images/Chart-Controls_img193.jpeg)
 
 
 
 The following screenshot illustrates Smart Tag support in Chart Legend.
 
-![](Chart-Controls_images/Chart-Controls_img194.jpeg)
+![Chart-Controls_img194](Chart-Controls_images/Chart-Controls_img194.jpeg)

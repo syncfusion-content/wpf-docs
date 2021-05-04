@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sparkline | Chart(Classic) | wpf | Syncfusion
-description: Sparkline
+title: Sparkline in WPF Wizard Control control | Syncfusion
+description: Learn here all about Sparkline support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Sparkline
+# Sparkline in WPF Chart (Classic)
 
 A Sparklinecontrolis a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 
@@ -16,7 +16,7 @@ A sparkline can display a trend based on adjacent data in a clear and compact gr
 
 The following screenshot shows three  types of sparklines, which are  drawn inside the grid control cell, based on row values.
 
-![](Chart-Controls_images/Chart-Controls_img247.png)
+![Chart-Controls_img247](Chart-Controls_images/Chart-Controls_img247.png)
 
 
 
@@ -190,7 +190,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType.Line
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img248.png)
+![Chart-Controls_img248](Chart-Controls_images/Chart-Controls_img248.png)
 
 
 
@@ -231,7 +231,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. Column
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img249.png)
+![Chart-Controls_img249](Chart-Controls_images/Chart-Controls_img249.png)
 
 
 
@@ -268,7 +268,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. WinLoss
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img250.png)
+![Chart-Controls_img250](Chart-Controls_images/Chart-Controls_img250.png)
 
 
 
@@ -300,7 +300,7 @@ Me.sparkLine1.Markers.ShowMarker  =True
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img251.png)
+![Chart-Controls_img251](Chart-Controls_images/Chart-Controls_img251.png)
 
 
 
@@ -382,7 +382,7 @@ Me.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img252.png)
+![Chart-Controls_img252](Chart-Controls_images/Chart-Controls_img252.png)
 
 
 
@@ -426,7 +426,7 @@ Me.sparkLine1.IsNegativePointHighlighted = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img253.png)
+![Chart-Controls_img253](Chart-Controls_images/Chart-Controls_img253.png)
 
 
 
@@ -475,7 +475,7 @@ The following code example shows how to configure the range band.
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img254.png)
+![Chart-Controls_img254](Chart-Controls_images/Chart-Controls_img254.png)
 
 
 

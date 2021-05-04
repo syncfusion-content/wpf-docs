@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Set Visual Styles | ChromelessWindow | WPF| Syncfusion
-description:  This section explain about how to apply different themes for ChromelessWindow and how to implement those themes to the control.
+title: Set Visual Styles in WPF Chromeless Window control | Syncfusion
+description: Learn about Set Visual Styles support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Set Visual Styles in WPF ChromelessWindow
+# Set Visual Styles in WPF Chromeless Window
 
 ## Theme
 

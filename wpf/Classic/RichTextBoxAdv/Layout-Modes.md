@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Modes| RichTextBoxAdv | Wpf | Syncfusion
-description: layout modes
+title: Layout-Modes in WPF Wizard Control control | Syncfusion
+description: Learn here all about Layout-Modes support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Layout Modes
+# Layout-Modes in WPF RichTextBoxAdv (Classic)
 
 The layout mode feature allows choosing several layouts in the document. They are:
 
