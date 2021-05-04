@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quantitative Scale  | SfBulletGraph | Wpf | Syncfusion
-description: Quantitative Scale  
+title: Quantitative Scale in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Quantitative Scale support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Quantitative Scale 
+# Quantitative Scale in WPF Bullet Graph (SfBulletGraph)
 
 Quantitative scale contains two major components such as ticks and labels which gives the looks of bar graph. It defines the frequency of labels and tick marks with overall Minimum and Maximum values for declared Interval. The length of the quantitative scale can be customized by using the **QuantitativeScaleLength** property.
 
@@ -30,4 +30,4 @@ Quantitative scale contains two major components such as ticks and labels which 
 {% endhighlight %}
 {% endtabs %}
 
-![](Quantitative-scale_images/Quantitative-scale_img1.jpeg)
+![Quantitative-scale_img1](Quantitative-scale_images/Quantitative-scale_img1.jpeg)

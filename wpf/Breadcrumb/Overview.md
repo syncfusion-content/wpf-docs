@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| Hierarchical Navigator | WPF | Syncfusion
-description: The Hierarchical Navigator in WPF enables user to navigate through pages, forward and backward, as described.
+title: About WPF Breadcrumb control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Breadcrumb (HierarchyNavigator) control, its elements and more details.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Hierarchical Navigator
+# WPF Breadcrumb (HierarchyNavigator) Overview
 
 The HierarchyNavigator control in WPF provides a bread-crumb interface, similar to the Windows Explorer address bar in Windows 7, which enables hierarchical navigation. 
 

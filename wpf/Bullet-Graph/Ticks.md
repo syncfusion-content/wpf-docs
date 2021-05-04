@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks  | SfBulletGraph | Wpf | Syncfusion
-description: Ticks 
+title: Ticks in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ticks
+# Ticks in WPF Bullet Graph (SfBulletGraph)
 
 Quantitative scale is displayed with two types of ticks: 
 
@@ -46,7 +46,7 @@ The stroke of the major and minor ticks is customized by setting the **MajorTick
 {% endhighlight %}
 {% endtabs %}
 
-![](Ticks_images/Ticks_img.jpg)
+![Ticks_img](Ticks_images/Ticks_img.jpg)
 
 ## TickPosition
 
@@ -75,4 +75,4 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.jpeg)
+![Ticks_img1](Ticks_images/Ticks_img1.jpeg)

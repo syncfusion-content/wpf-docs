@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Features | SfBulletGraph | Wpf | Syncfusion
-description: Key Features 
+title: Key Features in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Key Features support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Key Features
+# Key Features in WPF Bullet Graph (SfBulletGraph)
 
 **SfBulletGraph** is Composite UI element with following sub-parts:
 
@@ -61,4 +61,4 @@ The Model-View-ViewModel (MVVM) pattern is to be followed to get better control 
 
 **SfBulletGraph Elements**
 
-![](Key-features_images/Key-features_img1.jpeg)
+![Key-features_img1](Key-features_images/Key-features_img1.jpeg)
