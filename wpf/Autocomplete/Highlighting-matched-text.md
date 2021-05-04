@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MatchHighlighting of AutoComplete in Syncfusion SfTextBoxExt.
-description: Learn how to highlight the text matched at the first position of the text or anywhere in the AutoComplete suggestion list.
+title: Highlighting Matched Text in WPF Autocomplete control | Syncfusion
+description: Learn here all about Highlighting Matched Text support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Highlighting matched text
+# Highlighting Matched Text in WPF Autocomplete (SfTextBoxExt)
 
 Highlight matching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is None. The matching text can be highlighted in the following two ways:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sizing | Busy Indicator | wpf | Syncfusion
-description: This section describes how to renderer the Syncfusion SfBusyIndicator control with perticular height and width. 
+title: Sizing in WPF Busy Indicator control | Syncfusion
+description: Learn here all about Sizing support in Syncfusion WPF Busy Indicator (SfBusyIndicator) control and more.
 platform: wpf
 control: Busy Indicator
 documentation: ug

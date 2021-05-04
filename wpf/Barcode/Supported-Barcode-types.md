@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported-Barcode-types | SfBarcode | wpf | Syncfusion
-description: Supported Barcode types
+title: Supported Barcode types in WPF Barcode control | Syncfusion
+description: Learn here all about Supported Barcode types support in Syncfusion WPF Barcode (SfBarcode) control and more.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Supported Barcode types
+# Supported Barcode types in WPF Barcode (SfBarcode)
 
 The following table contains the supported types and associated valid characters.
 

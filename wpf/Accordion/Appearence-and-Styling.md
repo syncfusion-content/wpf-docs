@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance and Styling | SfAccordion | WPF | Syncfusion
-description: This section explains how to customize the appearance and styling of SfAccordion control.
+title: Appearance and Styling in WPF Accordion control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
 documentation: ug
 
 ---
 
-# Appearance and Styling 
+# Appearance and Styling in WPF Accordion (SfAccordion)
 
 ## Applying accent colors
 
