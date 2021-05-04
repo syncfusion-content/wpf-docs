@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels  | SfBulletGraph | Wpf | Syncfusion
-description: Labels 
+title: Labels in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Labels support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Labels
+# Labels in WPF Bullet Graph (SfBulletGraph)
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
@@ -39,7 +39,7 @@ The Labels can be positioned far away from the Quantitative scale by using the *
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img1.jpg)
+![Labels_img1](Labels_images/Labels_img1.jpg)
 
 ## Label Position
 
@@ -65,4 +65,4 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img2.jpg)
+![Labels_img2](Labels_images/Labels_img2.jpg)

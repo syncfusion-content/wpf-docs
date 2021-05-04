@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles and Templates | ButtonAdv | WPF | Syncfusion
-description: This section explores how to customize the button control styles and templates using Blend and Visual Studio.
+title: Styles and Templates in WPF Button control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion WPF Button (ButtonAdv) control and more.
 platform: WPF
 control: ButtonAdv
 documentation: ug

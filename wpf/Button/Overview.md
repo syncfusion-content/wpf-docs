@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Button | WPF | Syncfusion
-description: The WPF Button control provides different size modes, image sizing options, and multiline support to meet various requirements in an application.
+title: About WPF Button control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Button (ButtonAdv) control, its elements and more.
 platform: wpf
 control: ButtonAdv
 documentation: ug

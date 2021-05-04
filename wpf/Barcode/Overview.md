@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF Barcode Control | Syncfusion
-description: WPF Barcode control or generator helps to embed barcodes into your .NET application. It is fully customizable and supports all barcode formats.
+title: About WPF Barcode control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Barcode (SfBarcode) control, its elements and more details.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Overview
+# WPF Barcode (SfBarcode) Overview
 
 The Barcode control helps rendering bar codes in desktop (WPF) application. The control can be merged with into any desktop application and easy to encode text using the supported symbol types. The basic structure of a bar code consists of a leading and trailing quiet zone, a start pattern, one or more data characters, optionally one or two check characters, and a stop pattern. 
 

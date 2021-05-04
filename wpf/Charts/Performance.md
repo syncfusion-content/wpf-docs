@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance| SfChart | Wpf | Syncfusion
-description: How to boost the performance of Essential WPF Chart (SfChart) when there is a need to plot high volume data.
+title: Performance in WPF Charts control | Syncfusion
+description: Learn here all about Performance support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug

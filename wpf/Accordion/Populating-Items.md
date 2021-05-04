@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items | SfAccordion | WPF | Syncfusion
-description: Explains about Populating Items of SfAccordion control for WPF
+title: Populating Items in WPF Accordion control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in WPF Accordion (SfAccordion)
 
 `SfAccordionItem` are added as items of `SfAccordion`. Items can be added using `Items` or `ItemSource` property.
 

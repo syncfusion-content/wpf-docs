@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides details about AutoComplete and how to populate the strings or objects in AutoComplete of SfTextBoxExt control.
+title: Autocomplete and filtering in WPF Autocomplete control | Syncfusion
+description: Learn here all about Autocomplete and filtering support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete and filtering 
+# Autocomplete and filtering in WPF Autocomplete (SfTextBoxExt)
 
 The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or can be displayed in a drop-down list so that searched item can be chosen based on the filtering option set.
 

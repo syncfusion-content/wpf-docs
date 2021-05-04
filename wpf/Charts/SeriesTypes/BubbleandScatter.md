@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubble and Scatter Charts| SfChart | Wpf | Syncfusion
-description: This section explains Bubble and Scatter Charts and its properties for customization in WPF Charts (SfChart)
+title: Bubble and Scatter Chart in WPF Charts control | Syncfusion
+description: Learn here all about Bubble and Scatter Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Bubble and Scatter Charts in WPF (SfChart)
+# Bubble and Scatter in WPF Charts (SfChart)
 
 ## Bubble Chart
 
