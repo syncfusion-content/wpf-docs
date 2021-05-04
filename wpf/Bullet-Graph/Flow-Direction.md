@@ -33,10 +33,10 @@ By default the flow direction of SfBulletGraph is Left to Right. It can be custo
 <table>
 <tr>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
+{{'![Flow-Direction_images1](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
 </td>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
+{{'![Flow-Direction_images2](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
 {{'____'| markdownify }}
 </td></tr>
 </table>

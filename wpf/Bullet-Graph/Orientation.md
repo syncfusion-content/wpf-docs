@@ -31,8 +31,8 @@ By default orientation of SfBulletGraph is horizontal. It can be customized by u
 <table>
 <tr>
 <td>
-{{'![](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
+{{'![Orientation_images1](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
 </td><td>
-{{'![](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
+{{'![Orientation_images2](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
 </td></tr>
 </table>
