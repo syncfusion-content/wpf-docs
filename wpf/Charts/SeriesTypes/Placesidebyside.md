@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Side By Side Placement | SfChart | Wpf | Syncfusion
-description: This section explains about placement pattern of bar type series like Column, Bar and RangeColumn in WPF Charts (SfChart)
+title: Side By Side Placement in WPF Charts control | Syncfusion
+description: Learn here all about Side By Side Placement support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Side By Side Placement in WPF Chart (SfChart) 
+# Side By Side Placement in WPF Charts (SfChart)
 
 It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. 
 

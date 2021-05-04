@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF CalendarEdit control | Syncfusion
-description: Learn about styling, theme support in Syncfusion WPF CalendarEdit control and more details about the control features.
+title: Appearance in WPF Calendar control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF Calendar (CalendarEdit) control, its elements and more details.
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# Appearance in WPF CalendarEdit
+# Appearance in WPF Calendar (CalendarEdit)
 
 This section explains different styling, theming options available in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 

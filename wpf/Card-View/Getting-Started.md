@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF CardView control | Syncfusion
-description: This section describes how to add cardview control into wpf application and explains data binding, grouping, sorting, filtering and editing features.
+title: Getting Started with WPF Card View control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Card View control, its elements and more.
 platform: WPF
 control: CardView
 documentation: ug
 ---
 
-# Getting Started with WPF CardView
+# Getting Started with WPF Card View
 
 This section describes how to create a [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control in a WPF application and overview of its basic functionalities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sorting Mode in WPF Card View control | Syncfusion
-description: This section describes how to enable or disable the sorting mode and perform sort operations in WPF CardView control.
+description: Learn about Sorting Mode support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Sorting Mode in WPF CardView
+# Sorting Mode in WPF Card View
 
 This section describes how to enable or disable the sorting mode and perform sort operations in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 
