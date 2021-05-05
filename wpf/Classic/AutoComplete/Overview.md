@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Overview in WPF AutoComplete (Classic)
+# WPF AutoComplete (Classic) Overview
 
 W> This control has been marked as classic, please use [SfTextBoxExt (AutoComplete)](/wpf/SfTextBoxExt/Overview) "AutoComplete") instead.
 

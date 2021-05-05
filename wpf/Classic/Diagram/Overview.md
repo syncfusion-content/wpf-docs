@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Overview in WPF Diagram (classic)
+# WPF Diagram (classic) Overview
 
 Essential Diagram WPF is an extensible and high-performance diagramming Framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 

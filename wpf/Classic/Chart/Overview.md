@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-# Overview in WPF Chart (Classic)
+# WPF Chart (Classic) Overview
 
 Essential Chart for WPF is a feature rich, highly customizable and presentable business Chart control. It can be used for easy understanding of large quantities of data and relationship between the data. Essential Chart enhances the readability and understandability of the raw data. With pre-built support for all kinds of list-based data sources and a very flexible template model, the control offers maximum flexibility with a very simple and straight-forward object model. The Chart control allows you to implement animations and user-interactions easily. 
 

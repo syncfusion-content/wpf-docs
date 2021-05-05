@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FilePath Registry in WPF AutoComplete Control | Syncfusion
-description: Learn here all about FilePath Registry Custom Data Source Support support in Syncfusion WPF AutoComplete (Classic) control and more.
+description: Learn here all about FilePath Registry Custom Data Source Support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
