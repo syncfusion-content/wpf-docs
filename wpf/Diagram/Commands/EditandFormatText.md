@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the SelectTool commands.
-description: EditAnnotation,ToggleBold,ToggleItalic,ToggleStrikeThrough and ToggleUnderline Commands are used to edit and style annotations in diagram.
+title: Edit and Format Text Commands in WPF Diagram control | Syncfusion
+description: Learn here all about Edit and Format Text Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Edit and Format Annotation in WPF Diagram(SfDiagram)
+# Edit and Format Text Commands in WPF Diagram (SfDiagram)
 
 ## EditAnnotation
 

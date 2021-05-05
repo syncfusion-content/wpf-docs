@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN Gateway | Syncfusion 
-description: How th eBPMN Gateway is used to control the flow of a business process and how to customize their appearance?
+title: Gateway in WPF Diagram control | Syncfusion
+description: Learn here all about Gateway support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN gateway and its customization
+# Gateway in WPF Diagram (SfDiagram)
 
 Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway shape, the `Type` property of the `BpmnNodeViewModel` should be set to [Gateway](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#GateWay) and the `GatewayType` property can be set to any of the appropriate [[GatewayType]](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.GatewayType.html). The default[GatewayType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_GatewayType) will be **None**. The following code example explains how to create a BPMN Gateway.
 

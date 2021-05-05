@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save the Diagram and load Diagram from serialized file | Syncfusion.
-description: How to perform serialize and deserialize operation (save and load) with Diagram and custom classes with custom properties.
+title: Serialization in WPF Diagram control | Syncfusion
+description: Learn here all about Serialization support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

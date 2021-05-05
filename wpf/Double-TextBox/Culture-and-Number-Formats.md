@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Culture and Formatting in WPF DoubleTextBox control | Syncfusion
-description: Learn about Culture and Formatting support in Syncfusion WPF DoubleTextBox control and more details about the control features.
+title: Culture and Formatting in WPF Double TextBox control | Syncfusion
+description: Learn about Culture and Formatting support in Syncfusion WPF Double TextBox control and more.
 platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
 
-# Culture and Formatting in WPF DoubleTextBox
+# Culture and Formatting in WPF Double TextBox
 
 Value of `DoubleTextBox` can be formatted in following ways:
 

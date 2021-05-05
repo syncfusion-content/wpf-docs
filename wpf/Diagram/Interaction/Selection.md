@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supports to select nodes and connectors at runtime | Syncfusion.
-description: Support to select or multiselect the diagram elements such as the nodes and connectors during runtime?
+title: Selection in WPF Diagram control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

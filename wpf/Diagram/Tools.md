@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Diagram allows to draw, select or pan with click and drag.
-description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface how to enable or disbale the single and multiple tools to diagram?
+title: Tools in WPF Diagram control | Syncfusion
+description: Learn here all about Tools support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Drawing tools and tool selection
+# Tools in WPF Diagram (SfDiagram)
 
 ## Tool Selection
 

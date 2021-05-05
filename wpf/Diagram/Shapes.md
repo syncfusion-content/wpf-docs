@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic Shapes Essential Diagram for WPF | Syncfusion.
-description: How to create collection of symbol pallate to have different shapes to diagram and how to use them in the diagram page?
+title: Shapes in WPF Diagram control | Syncfusion
+description: Learn here all about Shapes support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Shapes Resource Dictionary
+# Shapes in WPF Diagram (SfDiagram)
 
 We have provided some basic built-in shapes as ResourceDictionary.
 

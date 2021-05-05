@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN DataObject | Syncfusion 
-description: How the BPMN DataObject represents information flowing through the process and how to customize their appearance?
+title: Data Object in WPF Diagram control | Syncfusion
+description: Learn here all about Data Object support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# BPMN DataObject and its customization
+# Data Object in WPF Diagram (SfDiagram)
 
 A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`DataObject`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataObject), the `Type` property of the `BpmnNodeViewModel` should be set to **DataObject** and the [DataObjectType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_DataObjectType) property defines whether the data is an input or output.
 You can indicate the collection of data object by setting the `IsCollectiveData` property to `true`.

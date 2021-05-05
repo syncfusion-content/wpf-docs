@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supports to edit nodes, connectors and page at runtime | Syncfusion.
-description: How to select, delete, zoompan and edit the user handles of the nodes and connectors during runtime?
+title: Keyboard in WPF Diagram control | Syncfusion
+description: Learn here all about Keyboard support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

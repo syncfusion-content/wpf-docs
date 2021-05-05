@@ -1,7 +1,7 @@
 ---
 layout: post
-title: To ease the execution of frequently used commands | Syncfusion.
-description: Support to execute the frequently used commands of the Diagram control as menu items of the context menu.
+title: Context Menu in WPF Diagram control | Syncfusion
+description: Learn here all about Context Menu support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Getting Started with Syncfusion digital gauge control.
-description: A quick tour to adding gauge reference, initial users for getting started with Syncfusion digital gauge control for WPF platform.
+title: Getting Started with WPF Digital Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Digital Gauge (SfDigitalGauge) control, its elements and more details.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug

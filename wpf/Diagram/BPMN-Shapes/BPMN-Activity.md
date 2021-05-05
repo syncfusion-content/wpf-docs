@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using BPMNNode Activity | Syncfusion 
-description: BPMNNode Activity is a task that is performed in a business process and shows how to customize their appearance.
+title: Activity in WPF Diagram control | Syncfusion
+description: Learn here all about Activity support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMNNode Activity and its customization
+# Activity in WPF Diagram (SfDiagram)
 
 The [`Activity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#Activity) is a task that is performed in a business process. It is represented by a rounded rectangle.
 

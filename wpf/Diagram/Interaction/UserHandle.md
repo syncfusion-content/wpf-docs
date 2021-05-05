@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supports to edit and customize the user handle of nodes | Syncfusion.
-description: Support to define edit and customize the user handles such as Quick Commands of the nodes during runtime?
+title: Quick Command in WPF Diagram control | Syncfusion
+description: Learn here all about Quick Command support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

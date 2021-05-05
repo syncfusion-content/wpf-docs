@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spin Button Alignment | DomainUpDown | wpf | Syncfusion
-description: spin button alignment
+title: Spin Button Alignment in WPF Domain Updown control | Syncfusion
+description: Learn here all about Spin Button Alignment support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# Spin Button Alignment
+# Spin Button Alignment in WPF Domain Updown (SfDomainUpDown)
 
 The spin button’s position in the DomainUpDown control can be changed using SpinButtonsAlignment. It contains three modes for positioning spin buttons:
 
@@ -33,9 +33,9 @@ Spin buttons will be aligned on the right side of the control.
 {%endhighlight%}
 {% endtabs %}
 
-![](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)
+![Spin-Button-Alignment_img1](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)
 
-![](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)
+![Spin-Button-Alignment_img2](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)
 
 ## Left
 
@@ -54,9 +54,9 @@ Spin buttons will be aligned on the left side of the control.
 {%endhighlight%}
 {% endtabs %}
 
-![](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)
+![Spin-Button-Alignment_img3](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)
 
-![](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)
+![Spin-Button-Alignment_img4](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)
 
 ## Both
 
@@ -76,4 +76,4 @@ The spin button’s decrement button will be aligned on the left side of the con
 {%endhighlight%}
 {% endtabs %}
 
-![](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)
+![Spin-Button-Alignment_img5](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)

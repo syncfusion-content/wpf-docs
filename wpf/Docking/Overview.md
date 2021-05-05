@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of DockingManager | WPF | Syncfusion
-description: WPF DockingManager control provides an interface to create a Visual Studio-like dock windows and provides the floating panels, autohide, and tabbed documents.
+title: About WPF Docking control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Docking (DockingManager) control, its elements and more details.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Overview of WPF DockingManager
+# WPF Docking (DockingManager) Overview
 
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
 

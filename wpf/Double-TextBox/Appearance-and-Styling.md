@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF DoubleTextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF DoubleTextBox control and more details about the control features.
+title: Appearance in WPF Double TextBox control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF Double TextBox control and more.
 platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
 
-# Appearance in WPF DoubleTextBox
+# Appearance in WPF Double TextBox
 
 This section deals with the appearance of `DoubleTextBox` control and contains the following topics.
 

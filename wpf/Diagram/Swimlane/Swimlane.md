@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion
-description: How to visually represent the geometrical information and process flows as swimlanes and how to customize their appearance?
+title: Swimlane in WPF Diagram control | Syncfusion
+description: Learn here all about Swimlane support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Swimlane in WPF Diagram(SfDiagram)
+# Swimlane in WPF Diagram (SfDiagram)
 
 A [Swimlane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 

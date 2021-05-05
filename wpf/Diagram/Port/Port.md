@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connect specific point of node using ports | Syncfusion
-description: How to draw connections to a specific point on the node or on the connector using ports (Nodeport, Connectorport, Dockport)?
+title: Port in WPF Diagram control | Syncfusion
+description: Learn here all about Port support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Ports creation and customization 
+# Port in WPF Diagram (SfDiagram)
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 

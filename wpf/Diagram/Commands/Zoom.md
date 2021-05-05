@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the zooming functionalities with zoom command.
-description: Zoom command is used to do zoom-in, zoom-out, and zoom to certain zoom operations on the diagram view. It can be done by zoom command parameters.
+title: Zoom Command in WPF Diagram control | Syncfusion
+description: Learn here all about Zoom Command support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Zoom command in WPF Diagram(SfDiagram)
+# Zoom Command in WPF Diagram (SfDiagram)
 
 The [Zoom](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Zoom) commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 

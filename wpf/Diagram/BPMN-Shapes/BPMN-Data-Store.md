@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN DataStore | Syncfusion 
-description: How the DataStore is used to store or access the data associated with a business process and how to customize their appearance?
+title: Data Store in WPF Diagram control | Syncfusion
+description: Learn here all about Data Store support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN DataStore and its customization
+# Data Store in WPF Diagram (SfDiagram)
 
 DataStore is used to store or access the data associated with a business process. To create a [DataStore](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Controls.BpmnShapeType.html#fields#DataStore), set the Type property of the `BpmnNodeViewModel` should be set to **DataStore**. The following code example explains how to create a DataStore.
 

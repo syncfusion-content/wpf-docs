@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN Connectors | Syncfusion 
-description: How the BPMN connector are used to establish the connection between the BPMN flow objects and how to customize their appearance?
+title: Connectors in WPF Diagram control | Syncfusion
+description: Learn here all about Connectors support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN shape Connectors and its customization
+# Connectors in WPF Diagram (SfDiagram)
 
 The [BpmnFlowViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnFlowViewModel.html) are lines that used to connection between the BPMN flow objects.
 

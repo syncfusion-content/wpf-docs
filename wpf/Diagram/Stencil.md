@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Define and add the Nodes or Connectors to the Stencil | Syncfusion.
-description: How to add the Symbol and Nodes or Connectors to the Stencil and drag and drop them over the drawing area?
+title: Stencil in WPF Diagram control | Syncfusion
+description: Learn here all about Stencil support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil in the WPF Diagram (SfDiagram)
+# Stencil in WPF Diagram (SfDiagram)
 
 The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the diagram surface many times.
 

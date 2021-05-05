@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Settings| SfDigitalGauge | Wpf | Syncfusion
-description:  This section describes customization options available in WPF Digital Gauge control with spacing, stroke opacity properties.
+title: Settings in WPF Digital Gauge control | Syncfusion
+description: Learn here all about Settings support in Syncfusion WPF Digital Gauge (SfDigitalGauge) control and more.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Settings options available in Digital Gauge (SfDigitalGauge)
+# Settings in WPF Digital Gauge (SfDigitalGauge)
 
 There are some other elements/behavior in SfDigitalGauge also can be customized. 
 

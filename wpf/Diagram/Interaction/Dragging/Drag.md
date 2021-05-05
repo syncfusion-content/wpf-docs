@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supports to drag nodes, connectors and page at runtime | Syncfusion.
-description: How to drag the nodes and connectors and avoid overlapping of the nodes with connectors during runtime?
+title: Dragging in WPF Diagram control | Syncfusion
+description: Learn here all about Dragging support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

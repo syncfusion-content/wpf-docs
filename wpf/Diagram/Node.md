@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Nodes | Syncfusion
-description: How to visually represent the geometrical information and process flows as nodes and how to customize their appearance?
+title: Node in WPF Diagram control | Syncfusion
+description: Learn here all about Node support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Node and its customization
+# Node in WPF Diagram (SfDiagram)
 
 The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and it represents the functions of a complete system in regards of how it interacts with external entities.
 

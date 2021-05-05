@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the Z-order usage with the Z-order commands.
-description: Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the diagram page with its Z-order values.
+title: Z-Order Commands in WPF Diagram control | Syncfusion
+description: Learn here all about Z-Order Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Z – Order in WPF Diagram(SfDiagram)
+# Z-Order Commands in WPF Diagram (SfDiagram)
 
 Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the diagram page with its Z-order values.
 

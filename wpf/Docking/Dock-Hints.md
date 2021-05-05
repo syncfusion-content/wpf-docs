@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dock Hints | DockAbility | DockingManager | WPF | Syncfusion
-description: This section explains how the state of the window changed through dock hints of the DockingManager and how it can be enabled/disabled
+title: Interaction with DragProvider in WPF Docking control | Syncfusion
+description: Learn here all about Interaction with DragProvider support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Guidance to place the window in desired place
+# Interaction with DragProvider in WPF Docking (DockingManager)
 
 State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 

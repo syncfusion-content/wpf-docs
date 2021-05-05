@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Floating window feature in Syncfusion Docking Manager
-description: This section explains about the floating window feature and its functionalities available in Docking Manager
+title: Floating Window in WPF Docking control | Syncfusion
+description: Learn here all about Floating Window support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Floating Window in WPF DockingManager
+# Floating Window in WPF Docking (DockingManager)
 
 Floating window is one of the state in the DockingManager. To make children of the DockingManager as Float, set its [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_State) values as `Float`.
 

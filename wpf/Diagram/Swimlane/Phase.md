@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion
-description: How to visually represent the subprocess which will split each lanes as horizontally or vertically for Phase and how to customize their appearance?
+title: Phase in WPF Diagram control | Syncfusion
+description: Learn here all about Phase support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Phase in WPF Diagram(SfDiagram)
+# Phase in WPF Diagram (SfDiagram)
 
  The [Phase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) is the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of phase can be added to swimlane.
 

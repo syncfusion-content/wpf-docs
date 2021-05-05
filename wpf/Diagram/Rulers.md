@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Provides guide for measuring in the Diagram Control | Syncfusion. 
-description: how to draw rulers over the diagrma page and how measure the distance of Nodes and Connectors using different scales of rulers? 
+title: Rulers in WPF Diagram control | Syncfusion
+description: Learn here all about Rulers support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

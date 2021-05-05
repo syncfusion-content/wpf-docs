@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Digital Characters | SfDigitalGauge | Wpf | Syncfusion
-description:  This section describes Digital Characters support in WPF SfDigitalGauge control with CharacterType property.
+title: Digital Characters in WPF Digital Gauge control | Syncfusion
+description: Learn here all about Digital Characters support in Syncfusion WPF Digital Gauge (SfDigitalGauge) control and more.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Digital Characters in Digital Gauge (SfDigitalGauge)
+# Digital Characters in WPF Digital Gauge (SfDigitalGauge)
 
 The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string.
 
