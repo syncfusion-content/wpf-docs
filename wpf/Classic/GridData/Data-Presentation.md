@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Presentation in WPF Wizard Control control | Syncfusion
+title: Data-Presentation in WPF GridData Control | Syncfusion
 description: Learn here all about Data-Presentation support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Popup Resize Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about Popup Resize Support support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: Popup Resize Support in WPF AutoComplete Control | Syncfusion
+description: Learn here all about Popup Resize Support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug

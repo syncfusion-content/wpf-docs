@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Model in WPF Wizard Control control | Syncfusion
-description: Learn here all about Data-Model support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Data Model in WPF GridData Control | Syncfusion
+description: Learn here all about Data Model support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
 
-# Data-Model in WPF GridDataControl (Classic)
+# Data Model in WPF GridDataControl (Classic)
 
 
 This section has the following topics:

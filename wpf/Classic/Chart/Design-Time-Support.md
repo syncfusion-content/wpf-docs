@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Design-Time-Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about Design-Time-Support support in Syncfusion WPF Chart (Classic) control and more.
+title: Design Time Support in WPF Chart Control | Syncfusion
+description: Learn here all about Design Time Support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Design-Time-Support in WPF Chart (Classic)
+# Design Time Support in WPF Chart (Classic)
 
 ## Chart Control Smart Tag Support
 

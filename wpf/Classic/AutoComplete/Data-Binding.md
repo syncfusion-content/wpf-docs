@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in WPF Wizard Control control | Syncfusion
+title: Data Binding in WPF AutoComplete Control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete

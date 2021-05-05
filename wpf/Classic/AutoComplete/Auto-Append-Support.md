@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto Append Support in WPF Wizard Control control | Syncfusion
+title: Auto Append Support in WPF AutoComplete Control | Syncfusion
 description: Learn here all about Auto Append Support support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete

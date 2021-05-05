@@ -1,7 +1,7 @@
 ---
 layout: post
-title: History Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about History Support support in Syncfusion WPF AutoComplete (Classic) control and more.
+title: History Support in WPF AutoComplete Control | Syncfusion
+description: Learn here all about History Support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
