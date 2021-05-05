@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fast Chart | SfChart | Wpf | Syncfusion
-description: Fast Chart support which render collection data points using polyline segment in WPF Charts (SfChart)
+title: Fast Bitmap Series in WPF Charts control | Syncfusion
+description: Learn here all about Fast Bitmap Series support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

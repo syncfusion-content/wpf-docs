@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfAccordion | WPF | Syncfusion
-description: This section explain about how to integrate WPF Accordion(SfAccordion) into an applicationl and enable its basic features with example.
+title: Getting Started with WPF Accordion control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Accordion (SfAccordion) control, its elements and more.
 platform: WPF
 control: SfAccordion
 documentation: ug

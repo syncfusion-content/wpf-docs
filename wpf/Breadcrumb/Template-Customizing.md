@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Template Customizing| Hierarchical Navigator | Wpf | Syncfusion
-description: template customizing
+title: Template Customizing in WPF Breadcrumb control | Syncfusion
+description: Learn here all about Template Customizing support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Template Customizing
+# Template Customizing in WPF Breadcrumb (HierarchyNavigator)
 
 When Business Objects are used for data binding, ItemTemplate should be used to determine how the user interface will be displayed. A HierarchicalDataTemplate can be used as an ItemTemplate specifying the template for each item.
 
@@ -96,4 +96,4 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endhighlight %}
 {% endtabs %}
 
-![](Template-Customizing_images/Template-Customizing_img1.png)
+![Template-Customizing_img1](Template-Customizing_images/Template-Customizing_img1.png)

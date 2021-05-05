@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Token support in AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides the details about how to enable multi selection mode in AutoComplete in SfTextBoxExt.
+title: Single and multiple selection in WPF Autocomplete control | Syncfusion
+description: Learn here all about Single and multiple selection support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
 platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Single and multiple selection 
+# Single and multiple selection in WPF Autocomplete (SfTextBoxExt)
 
 In AutoComplete selection can be performed using single selection or multi-selection. This can be handled by [MultiSelectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MultiSelectMode) property. The default value of `MultiSelectMode` is `None` which performs single selection.
 

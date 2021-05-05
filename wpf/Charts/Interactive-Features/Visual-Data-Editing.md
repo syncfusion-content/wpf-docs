@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfChart WPF.
-description: Essental WPF Chart (SfChart) supports serialization and deserialization to save the settings of the chart and reload.
+title: Visual Data Editing in WPF Charts control | Syncfusion
+description: Learn here all about Visual Data Editing support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Visual data editing in WPF Charts (SfChart)
+# Visual Data Editing in WPF Charts (SfChart)
 
 SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 

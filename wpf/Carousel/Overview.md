@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Carousel control | Syncfusion
-description: This section describes about overview of the carousel control and its basic feature supports and its structure.
+description: Learn here all about introduction of Syncfusion WPF Carousel control, its elements and more details.
 platform: wpf
 control: Carousel
 documentation: ug

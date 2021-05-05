@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restrict date selction in WPF CalendarEdit | Syncfusion
-description: Learn here about how to restrict date selction in Syncfusion WPF CalendarEdit and its basic features.
+title: Restrict Date Selection in WPF Calendar control | Syncfusion
+description: Learn here all about Restrict Date Selection support in Syncfusion WPF Calendar (CalendarEdit) control and more.
 platform: WPF
 control: CalendarEdit
 documentation: ug
 ---
 
-# Restricting date selection in WPF CalendarEdit
+# Restrict Date Selection in WPF Calendar (CalendarEdit)
 
 This section explains how to restrict a date within a particular range by using [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control.
 

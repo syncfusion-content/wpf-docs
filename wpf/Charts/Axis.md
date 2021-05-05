@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis| SfChart | Wpf | Syncfusion 
-description: Explains the parts of axis, types of axis, it's behavior and customization options in WPF Chart (SfChart)
+title: Axis in WPF Charts control | Syncfusion
+description: Learn here all about Axis support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
 
-# Axis in WPF Chart (SfChart)
+# Axis in WPF Charts (SfChart)
 
 [`ChartAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 

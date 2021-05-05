@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip  | SfBulletGraph | Wpf | Syncfusion
-description: Tooltip 
+title: Tooltip in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in WPF Bullet Graph (SfBulletGraph)
 
 Tooltip in SfBulletGraph is used to view the values of FeaturedMeasure, ComparativeMeasure and QualitativeRange in required design.
 
@@ -31,7 +31,7 @@ The SfBulletGraph tooltip is displayed only when the **ShowToolTip** property is
 {% endhighlight %}
 {% endtabs %}
 
-![](Tooltip_images/Tooltip_img1.jpeg)
+![Tooltip_img1](Tooltip_images/Tooltip_img1.jpeg)
 
 ## Customizing FeaturedMeasureToolTip
 
@@ -52,7 +52,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.jpeg)
+![Tooltip_img2](Tooltip_images/Tooltip_img2.jpeg)
 
 
 ## Customizing ComparativeMeasureToolTip
@@ -73,7 +73,7 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img3.jpeg)
+![Tooltip_img3](Tooltip_images/Tooltip_img3.jpeg)
 
 
 ## Customizing QualitativeRangeToolTip
@@ -100,4 +100,4 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip that i
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img4.jpeg)
+![Tooltip_img4](Tooltip_images/Tooltip_img4.jpeg)

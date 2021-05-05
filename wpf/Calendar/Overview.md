@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF CalendarEdit control | Syncfusion
-description: WPF Calendar control allows users to easily select one or more dates. This control supports month, year, and decade views, blackout dates, and more.
+title: About WPF Calendar control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Calendar (CalendarEdit) control, its elements and more details.
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# WPF CalendarEdit Overview
+# WPF Calendar (CalendarEdit) Overview
 
 The [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CalendarEdit.html) control provides implementation of DateTime values in a calendar form. It therefore supports full range of dates allowed by that object. Effectively, any date ranging from year 0 to year 9999 A.D. can be displayed. It displays a calendar through where you can navigate to any day in a selected year. Its template can be easily modified just like any other WPF control. It is added with in-built animation to navigate between months.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series | SfChart | Wpf | Syncfusion
-description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
+title: Series in WPF Charts control | Syncfusion
+description: Learn here all about Series support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Series in WPF Chart (SfChart)
+# Series in WPF Charts (SfChart)
 
 ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection support in Syncfusion Chart WPF
-description: How to select the segment, series, adornment and customize the appearance of selection in WPF Chart (SfChart).
+title: Selection in WPF Charts control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: IsBusy | Busy Indicator | wpf | Syncfusion
-description: This section describes whether an animation needs to be executed or not in Syncfusion SfBusyIndicator control.
+title: IsBusy in WPF Busy Indicator control | Syncfusion
+description: Learn here all about IsBusy support in Syncfusion WPF Busy Indicator (SfBusyIndicator) control and more.
 platform: wpf
 control: Busy Indicator
 documentation: ug
