@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced
-description: Advanced
+title: Advanced support in WPF Diagram Control | Syncfusion
+description: Learn here all about Advanced support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-#  Advanced
+#  Advanced support in WPF Diagram (Classic)
 
 This section answers the following questions that are in an advanced level, meant for experts.
 
@@ -478,7 +478,7 @@ node.LabelVerticalTextAlignment = VerticalAlignment.Top;
 
 
 {% endhighlight %}
-![](Diagram-View_images/Diagram-View_img92.jpeg)
+![Diagram-View_img92](Diagram-View_images/Diagram-View_img92.jpeg)
 
 
 
@@ -526,7 +526,7 @@ node.Label = "LabelEditor";
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img93.jpeg)
+![Diagram-View_img93](Diagram-View_images/Diagram-View_img93.jpeg)
 
 
 
@@ -550,7 +550,7 @@ conn.LabelHeight = 100;
 conn.Label = "LabelEditor";
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img94.jpeg)
+![Diagram-View_img94](Diagram-View_images/Diagram-View_img94.jpeg)
 
 
 

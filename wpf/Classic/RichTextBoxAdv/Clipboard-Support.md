@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard Support| RichTextBoxAdv | Wpf | Syncfusion
-description: clipboard support
+title: Clipboard-Support in WPF RichTextBoxAdv Control | Syncfusion
+description: Learn here all about Clipboard-Support in Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Clipboard Support
+# Clipboard-Support in WPF RichTextBoxAdv (Classic)
 
 Clipboard support in the RichTextBoxAdv control allows you to cut, copy, and paste the selected text inside the RichTextBoxAdv. These can be executed by the built-in commands.
 

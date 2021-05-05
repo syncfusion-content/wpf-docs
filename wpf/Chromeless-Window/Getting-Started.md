@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | ChromelessWindow | WPF | Syncfusion
-description: This section briefly describes how to create WPF Chromeless Window application and how to customize it
+title: Getting Started with WPF Chromeless Window control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: WPF
 control: ChromelessWindow
 documentation: ug
 ---
-# Getting Started with WPF ChromelessWindow
+# Getting Started with WPF Chromeless Window
 
 This section explains how to implement the ChromelessWindow control. It describes the following:
 

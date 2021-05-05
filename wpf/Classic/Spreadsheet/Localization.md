@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | Spreadsheet | wpf | Syncfusion
-description: localization
+title: Localization in WPF Wizard Control control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Localization
+# Localization in WPF SpreadsheetControl (Classic)
 
 Localization is the process of customizing the application to culture-specific. This involves configuring the application for the specific languages. Culture is the combination of Language and the Location (e.g. En-US is the Culture for English spoken at United States; En-GB is the Culture for English spoken at Great Britain). 
 
@@ -27,17 +27,17 @@ The following are steps to implementation Localization support to an application
 
    N> It is mandatory to use this naming convention.
 
-   ![](Localization_images/Localization_img1.png)
+   ![Localization_images1](Localization_images/Localization_img1.png)
 
 4. Select the String option in the Resource file. 
 
-   ![](Localization_images/Localization_img2.png)
+   ![Localization_images2](Localization_images/Localization_img2.png)
 
 5. Resource table will open.
 
 6. Enter the UI name in the Name column and the equivalent term you want in the Value column. 
 
-   ![](Localization_images/Localization_img3.png)
+   ![Localization_images3](Localization_images/Localization_img3.png)
 
    localizing the application to the Japanese Culture
    {:.caption}
@@ -89,7 +89,7 @@ The following are the steps to add Supported Cultures:
 
 7. Right click the <ProjectName>.csproj and choose Reload <ProjectName>.csproj. Project will be added with specific culture. 
 
-   ![](Localization_images/Localization_img4.png)
+   ![Localization_images4](Localization_images/Localization_img4.png)
 
 #### Sample Link
 

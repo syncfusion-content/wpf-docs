@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart and ChartArea Legends | Chart(Classic) | wpf | Syncfusion
-description: Chart and ChartArea Legends
+title: Chart and ChartArea Legends in WPF Chart Control | Syncfusion
+description: Learn here all about Chart and ChartArea Legends support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart and ChartArea Legends
+# Chart and ChartArea Legends in WPF Chart (Classic)
 
 ## Legend Label
 
@@ -106,6 +106,6 @@ The legend icon can be customized by using the following code exaples.
    ~~~
    Run the code. The following output is displayed.
 
-   ![](Chart-Controls_images/Chart-Controls_img195.jpeg)
+   ![Chart-Controls_images195](Chart-Controls_images/Chart-Controls_img195.jpeg)
 
    

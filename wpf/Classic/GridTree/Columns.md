@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns| GridTree  | Wpf | Syncfusion
-description: columns
+title: Columns in WPF GridTree Control | Syncfusion
+description: Learn here all about Columns support in Syncfusion WPF GridTreeControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# Columns
+# Columns in WPF GridTreeControl (Classic)
 
 The GridTree control’s columns are divided into two types. They are:
 
@@ -332,7 +332,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Address")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img1.png)
+![Columns_img1](Columns_images/Columns_img1.png)
 
 
 
@@ -393,7 +393,7 @@ The following screenshot shows a simple demo of this cell type.
 
 
 
-![](Columns_images/Columns_img2.png)
+![Columns_img2](Columns_images/Columns_img2.png)
 
 
 
@@ -449,7 +449,7 @@ The following screenshot shows a simple demo of TextBox cell type.
 
 
 
-![](Columns_images/Columns_img3.png)
+![Columns_img3](Columns_images/Columns_img3.png)
 
 
 
@@ -545,7 +545,7 @@ emp.Document = doc;
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img4.png)
+![Columns_img4](Columns_images/Columns_img4.png)
 
 
 
@@ -600,7 +600,7 @@ private void treeGrid_RequestNodeImage(object sender, GridTreeRequestNodeImageEv
 {% endhighlight %}
 
 
-![](Columns_images/Columns_img5.png)
+![Columns_img5](Columns_images/Columns_img5.png)
 
 
 
@@ -736,7 +736,7 @@ CellEditTemplateKey = "sliderTemplate",
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img6.png)
+![Columns_img6](Columns_images/Columns_img6.png)
 
 
 
@@ -858,7 +858,7 @@ We can change the combo box drop-down list style by using the GridDropDownStyle 
 * Exclusive_—_non-editable combo box where the user is allowed to select only the options that are available in the drop-down list.
 
 
-![](Columns_images/Columns_img7.png)
+![Columns_img7](Columns_images/Columns_img7.png)
 
 
 
@@ -1016,7 +1016,7 @@ The following screenshot shows a simple demo of the DropDownList cell type.
 
 
 
-![](Columns_images/Columns_img8.png)
+![Columns_img8](Columns_images/Columns_img8.png)
 
 
 
@@ -1090,7 +1090,7 @@ The following screenshot shows a simple demo of CheckBox cell type.
 
 
 
-![](Columns_images/Columns_img9.png)
+![Columns_img9](Columns_images/Columns_img9.png)
 
 
 
@@ -1195,7 +1195,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img10.png)
+![Columns_img10](Columns_images/Columns_img10.png)
 
 
 
@@ -1286,7 +1286,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img11.png)
+![Columns_img11](Columns_images/Columns_img11.png)
 
 
 
@@ -1384,7 +1384,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img12.png)
+![Columns_img12](Columns_images/Columns_img12.png)
 
 
 
@@ -1509,7 +1509,7 @@ treeGrid.Columns.Add(percentColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img13.png)
+![Columns_img13](Columns_images/Columns_img13.png)
 
 
 
@@ -1675,7 +1675,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Birth Date")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img14.png)
+![Columns_img14](Columns_images/Columns_img14.png)
 
 
 
@@ -1754,7 +1754,7 @@ treeGrid.Columns.Add(new GridTreeColumn("LastName")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img15.png)
+![Columns_img15](Columns_images/Columns_img15.png)
 
 
 
@@ -1855,7 +1855,7 @@ treeGrid.Columns.Add(updownColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img16.png)
+![Columns_img16](Columns_images/Columns_img16.png)
 
 
 
@@ -1924,7 +1924,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Time")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img17.png)
+![Columns_img17](Columns_images/Columns_img17.png)
 
 
 
@@ -2004,7 +2004,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Image")
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img18.png)
+![Columns_img18](Columns_images/Columns_img18.png)
 
 
 
@@ -2078,7 +2078,7 @@ this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 
 The following screenshot shows a simple demo of Hyperlink cell.
 
-![](Columns_images/Columns_img19.png)
+![Columns_img19](Columns_images/Columns_img19.png)
 
 
 
@@ -2152,7 +2152,7 @@ The following screenshot shows a simple demo of Button cell type.
 
 
 
-![](Columns_images/Columns_img20.png)
+![Columns_img20](Columns_images/Columns_img20.png)
 
 
 
@@ -2322,7 +2322,7 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img21.png)
+![Columns_img21](Columns_images/Columns_img21.png)
 
 
 
@@ -2468,7 +2468,7 @@ Expression = "Quantity*Cost" });
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img22.png)
+![Columns_img22](Columns_images/Columns_img22.png)
 
 
 Using Expressions in the GridTree Control

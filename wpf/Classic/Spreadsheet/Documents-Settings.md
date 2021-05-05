@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Documents Settings | Spreadsheet | wpf | Syncfusion
-description: documents settings
+title: Documents Settings in WPF Wizard Control control | Syncfusion
+description: Learn here all about Documents Settings support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Documents Settings
+# Documents Settings in WPF SpreadsheetControl (Classic)
 
 ## Protect and unprotect workbook
 
@@ -23,7 +23,7 @@ Spreadsheet control provides support to protect and unprotect the workbook with 
 
 You can protect the workbook using the Protect Structure and Windows dialog box. You can open the Protect Structure and Windows dialog using the ProtectWorkbookCommand.
 
-![](Documents-Settings_images/Documents-Settings_img1.png)
+![Documents-Settings_img1](Documents-Settings_images/Documents-Settings_img1.png)
 
 The following code illustrates how to bind the ProtectWorkbookCommand__to a button: 
 
@@ -41,7 +41,7 @@ N> The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the
 
 You can unprotect the workbook using the Unprotect Workbook dialog box. You can open the Unprotect Workbook dialog using the ProtectWorkbookCommand.
 
-![](Documents-Settings_images/Documents-Settings_img2.png)
+![Documents-Settings_img2](Documents-Settings_images/Documents-Settings_img2.png)
 
 ## Protect and unprotect worksheet
 
@@ -98,7 +98,7 @@ spreadControl.UnProtectSheet("Sheet1", "asd123");
 
 You can protect/unprotect the current worksheet using the Protect Sheet dialog box. You can open the Protect Sheet dialog using the ProtectCurrentSheetCommand_. If the current worksheet is already protected_ Protect Sheet dialog box will unprotect the worksheet after confirming the password.
 
-![](Documents-Settings_images/Documents-Settings_img3.png)
+![Documents-Settings_img3](Documents-Settings_images/Documents-Settings_img3.png)
 
 
 The following code illustrates how to bind the ProtectCurrentSheetCommand__to a button: 
@@ -146,7 +146,7 @@ spreadControl.EncryptWorkBook("asd123");
 
 You can also encrypt the workbook using the Encrypt Document dialog box. You can open the Encrypt Document dialog using the EncryptCommand.
 
-![](Documents-Settings_images/Documents-Settings_img4.png)
+![Documents-Settings_img4](Documents-Settings_images/Documents-Settings_img4.png)
 
 The following code illustrates how to bind the EncryptCommand__to a button: 
 
@@ -162,7 +162,7 @@ The following code illustrates how to bind the EncryptCommand__to a button:
 
 When you open encrypted document Password dialog box will open. Enter password to decrypt the data. 
 
-![](Documents-Settings_images/Documents-Settings_img5.png)
+![Documents-Settings_img5](Documents-Settings_images/Documents-Settings_img5.png)
 
 ## Hide and Unhide Worksheet
 
@@ -233,7 +233,7 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 You can unhide the worksheet by using the Unhide dialog box. To open the Unhide dialog box, pass the command parameter as false in the HideCurrentSheetCommand.
 
-![](Documents-Settings_images/Documents-Settings_img6.png)
+![Documents-Settings_img6](Documents-Settings_images/Documents-Settings_img6.png)
 
 The following code illustrates how to bind the HideCurrentSheetCommand__to a button for unhide worksheet: 
 
@@ -348,7 +348,7 @@ Document properties are named values that provide information about the document
 
 When importing and exporting and the Excel sheet, users can get and set the values of the Excel properties.
 
-![](Documents-Settings_images/Documents-Settings_img7.png)
+![Documents-Settings_img7](Documents-Settings_images/Documents-Settings_img7.png)
 
 ### Properties
 

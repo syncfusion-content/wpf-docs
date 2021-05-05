@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Management | Spreadsheet | wpf | Syncfusion
-description: data management
+title: Data Management in WPF Wizard Control control | Syncfusion
+description: Learn here all about Data Management support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Data Management
+# Data Management in WPF SpreadsheetControl (Classic)
 
 ## Formulas
 
@@ -22,7 +22,7 @@ supported formula refer to [Grid Control UG](http://help.syncfusion.com/wpf/grid
 
 The Data Validation enables you to dynamically validate the data entered in a cell. You can specify the validation rules in the Data Validation dialog box. Spreadsheet control supports the various validation types for each data type. This also enables you to show the error message for invalid data.
 
-![](Data-Management_images/Data-Management_img1.png)
+![Data-Management_img1](Data-Management_images/Data-Management_img1.png)
 
 ###Data Validation in Spreadsheet control
 
@@ -58,19 +58,19 @@ NA </td></tr>
 
 You can define the data validation to the Spreadsheet cells using the Data Validation dialog box. You have to specify the validation rule in the Settings tab, tooltip content in the Input Message tab and error message in Error Alert tab. You can open the data validation dialog using the DataValidationCommand. 
 
-![](Data-Management_images/Data-Management_img2.png)
+![Data-Management_img2](Data-Management_images/Data-Management_img2.png)
 
-![](Data-Management_images/Data-Management_img3.png)
+![Data-Management_img3](Data-Management_images/Data-Management_img3.png)
 
-![](Data-Management_images/Data-Management_img4.png)
+![Data-Management_img4](Data-Management_images/Data-Management_img4.png)
 
 The input message will be displayed as tooltip, when the particular cell is in active state. 
 
-![](Data-Management_images/Data-Management_img5.png)
+![Data-Management_img5](Data-Management_images/Data-Management_img5.png)
 
 The error message will be display only when you enter the value beyond the data validation limit.
 
-![](Data-Management_images/Data-Management_img6.png)
+![Data-Management_img6](Data-Management_images/Data-Management_img6.png)
 
 
 When you click OK, the cell value will not be committed and when you click Cancel, it will revert the cell value.
@@ -103,9 +103,9 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 {% endhighlight %}
 
-![](Data-Management_images/Data-Management_img7.png)
+![Data-Management_img7](Data-Management_images/Data-Management_img7.png)
 
-![](Data-Management_images/Data-Management_img8.png)
+![Data-Management_img8](Data-Management_images/Data-Management_img8.png)
 
 N> You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment.
 
@@ -113,7 +113,7 @@ N> You can insert only one comment for a cell. The InsertCommentCommand will ope
 
 You can edit the existing comments using the Edit Comment dialog box. You can open the Edit comment dialog using the InsertCommentCommand.
 
-![](Data-Management_images/Data-Management_img9.png)
+![Data-Management_img9](Data-Management_images/Data-Management_img9.png)
 
 The following code illustrates how to bind the InsertCommentCommand__to a button: 
 
@@ -143,7 +143,7 @@ The following code illustrates how to bind the DeleteCommentCommand__to a button
 
 Spreadsheet offers some helper methods that enable you to import and export data form ADO.NET data sources very easily. The ImportDataTable and ExportDataTable methods allow you to use one line of code to import data from a DataTable to a SpreadSheet and export data from a SpreadSheet to a DataTable respectively.
 
-![](Data-Management_images/Data-Management_img10.png)
+![Data-Management_img10](Data-Management_images/Data-Management_img10.png)
 
 #### Samples Link
 
@@ -267,7 +267,7 @@ The Spreadsheet control provides support for clipboard operations. When you copy
 
 By default, the normal copy and paste option is enabled in the Spreadsheet control. When you copy the cells from Spreadsheet control, it will copy the cell text to the clipboard. Then you can paste the text in other applications. While copying the call text to clipboard spreadsheet will add the tab symbol (“/t”) as a delimiter.
 
-![](Data-Management_images/Data-Management_img11.png)
+![Data-Management_img11](Data-Management_images/Data-Management_img11.png)
 
 
 ## Relative reference Copy and paste
@@ -276,9 +276,9 @@ If you copy and paste cells within the Spreadsheet control, then the cell styles
 
 If you are pasting the date in the spreadsheet cells, it will show this small pop-up with two options: one for pasting the formula, and one for pasting the value. By default, when you paste the copied formula cell, it will paste the formula in that cell. By using this pop-up, you can change this formula to a value.
 
-![](Data-Management_images/Data-Management_img12.png)
+![Data-Management_img12](Data-Management_images/Data-Management_img12.png)
 
-![](Data-Management_images/Data-Management_img13.png)
+![Data-Management_img13](Data-Management_images/Data-Management_img13.png)
 
 ### How to Disable the Relative Reference Copy and Paste
 

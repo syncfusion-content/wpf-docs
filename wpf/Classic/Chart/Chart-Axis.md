@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Axis | Chart(Classic) | wpf | Syncfusion
-description: Chart Axis
+title: Chart-Axis in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Axis support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Axis
+# Chart-Axis in WPF Chart (Classic)
 
 ## Indexed X Values
 
@@ -32,11 +32,11 @@ series.IsIndexed = true;
 
 In the following figure, the first chart shows a column chart that is not-indexed while the second chart shows a column chart whose x-axis is indexed.
 
-![](Chart-Controls_images/Chart-Controls_img129.jpeg)
+![Chart-Controls_img129](Chart-Controls_images/Chart-Controls_img129.jpeg)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img130.jpeg)
+![Chart-Controls_img130](Chart-Controls_images/Chart-Controls_img130.jpeg)
 
 
 
@@ -133,15 +133,15 @@ Chart1.Areas[0].SecondaryAxis.DesiredIntervalsCount = 5;
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img131.png)
+![Chart-Controls_img131](Chart-Controls_images/Chart-Controls_img131.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img132.png)
+![Chart-Controls_img132](Chart-Controls_images/Chart-Controls_img132.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img133.png)
+![Chart-Controls_img133](Chart-Controls_images/Chart-Controls_img133.png)
 
 
 
@@ -224,7 +224,7 @@ Chart1.Areas[0].SecondaryAxis.MinimumInterval = 25;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img134.png)
+![Chart-Controls_img134](Chart-Controls_images/Chart-Controls_img134.png)
 
 
 
@@ -287,11 +287,11 @@ chart.Areas[0].PrimaryAxis.RangeCalculationMode = RangeCalculationMode.Consisten
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img135.png)
+![Chart-Controls_img135](Chart-Controls_images/Chart-Controls_img135.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img136.png)
+![Chart-Controls_img136](Chart-Controls_images/Chart-Controls_img136.png)
 
 
 
@@ -357,11 +357,11 @@ Open the Sample Browser and select the following,
 
 {% endtabs %}
 
-![C:/Users/ganesan/Desktop/Before.png](Chart-Controls_images/Chart-Controls_img137.png)
+![Chart-Controls_images137](Chart-Controls_images/Chart-Controls_img137.png)
 
 
 
-![C:/Users/ganesan/Desktop/After.png](Chart-Controls_images/Chart-Controls_img138.png)
+![Chart-Controls_images138](Chart-Controls_images/Chart-Controls_img138.png)
 
 
 
@@ -414,7 +414,7 @@ ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img139.jpeg)
+![Chart-Controls_img139](Chart-Controls_images/Chart-Controls_img139.jpeg)
 
 
 
@@ -493,7 +493,7 @@ ChartArea.SetGridLineStroke(Chart1.Areas[0].SecondaryAxis, pen1);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img140.jpeg)
+![Chart-Controls_img140](Chart-Controls_images/Chart-Controls_img140.jpeg)
 
 
 
@@ -542,7 +542,7 @@ Chart1.Areas[0].SecondaryAxis.SmallTicksPerInterval = 6;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img141.jpeg)
+![Chart-Controls_img141](Chart-Controls_images/Chart-Controls_img141.jpeg)
 
 
 ## ChartAxis Lines
@@ -628,7 +628,7 @@ ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img142.jpeg)
+![Chart-Controls_img142](Chart-Controls_images/Chart-Controls_img142.jpeg)
 
 ## Chart Striplines
 
@@ -782,7 +782,7 @@ strip3.Text = new FormattedText("High", CultureInfo.CurrentCulture, FlowDirectio
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img143.jpeg)
+![Chart-Controls_img143](Chart-Controls_images/Chart-Controls_img143.jpeg)
 
 
 ### Stripline Customization
@@ -839,13 +839,13 @@ ChartStripLine csY = new ChartStripLine();
 
 Before setting the offset:
 
-![](Chart-Controls_images/Chart-Controls_img144.png)
+![Chart-Controls_img144](Chart-Controls_images/Chart-Controls_img144.png)
 
 
 
 After setting the offset:
 
-![](Chart-Controls_images/Chart-Controls_img145.png)
+![Chart-Controls_img145](Chart-Controls_images/Chart-Controls_img145.png)
 
 
 
@@ -928,9 +928,9 @@ Chart1.Areas[0].SecondaryAxis.Origin = 2;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img146.jpeg)
+![Chart-Controls_img146](Chart-Controls_images/Chart-Controls_img146.jpeg)
 
-## Chart Axis Ticks
+## Chart-Axis in WPF Chart (Classic) Ticks
 
 Chart for WPF allows to customize the length of the Axis Ticks and SmallTicks by using the ChartAxis.TickSize and ChartAxis.SmallTicksize properties.
 
@@ -976,7 +976,7 @@ area.PrimaryAxis.SmallTickSize = 3;
 
 The following image illustrates Chart with Axis TickSize and SmallTickSize set.
 
-![](Chart-Controls_images/Chart-Controls_img147.jpeg)
+![Chart-Controls_img147](Chart-Controls_images/Chart-Controls_img147.jpeg)
 
 
 ### Support for customizing the Label position and TickLines along with the OrginAxis
@@ -1062,7 +1062,7 @@ The following code illustrates this:
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img148.png)
+![Chart-Controls_img148](Chart-Controls_images/Chart-Controls_img148.png)
 
 
 
@@ -1074,7 +1074,7 @@ To view samples:
 2. Click the WPF drop-down list and select Run Locally Installed Samples.
 3. Navigate to Chart Axis > Chart Axis Configuration > Demo.
 
-## Chart Axis Orientation
+## Chart-Axis in WPF Chart (Classic) Orientation
 
 
 WPF Chart enables to set the orientation of the ChartAxis. The default orientation of the ChartAxis is Horizontal. This property is mostly used in Multiple Axes Scenarios.
@@ -1114,7 +1114,7 @@ gets / sets the orientation of the axis.</td></tr>
 
 The following image illustrates Chart with Y-axis orientation set as Horizontal.
 
-![](Chart-Controls_images/Chart-Controls_img149.jpeg)
+![Chart-Controls_img149](Chart-Controls_images/Chart-Controls_img149.jpeg)
 
 
 ## Inverted Axis
@@ -1167,7 +1167,7 @@ chart.Areas[0].SecondaryAxis.IsInversed = true;
 
 The following image illustrates Chart with an Inversed Axis.
 
-![](Chart-Controls_images/Chart-Controls_img150.png)
+![Chart-Controls_img150](Chart-Controls_images/Chart-Controls_img150.png)
 
 
 ## Opposed Axis
@@ -1206,7 +1206,7 @@ Gets / sets a value indicating whether axis should be in opposed position.</td><
 {% endhighlight  %}
 The following image illustrates Chart with Opposed Axis.
 
-![](Chart-Controls_images/Chart-Controls_img151.jpeg)
+![Chart-Controls_img151](Chart-Controls_images/Chart-Controls_img151.jpeg)
 
 ## Multiple Axes
 
@@ -1254,7 +1254,7 @@ Chart is capable of rendering multiple axes in the same plot. Different series c
 {% endhighlight  %}
 
 
-![](Chart-Controls_images/Chart-Controls_img152.jpeg)
+![Chart-Controls_img152](Chart-Controls_images/Chart-Controls_img152.jpeg)
 
 
 
@@ -1296,7 +1296,7 @@ chart1.Areas[0].EnableRangeSelection = true;
 
 When the code runs, the following output displays.
 
-![C:/Users/sujithas/Desktop/Assigned wrk/VOl2_2010/Feature/WPF/RangeSalection/sshot-1.png](Chart-Controls_images/Chart-Controls_img153.png)
+![Chart-Controls_images153](Chart-Controls_images/Chart-Controls_img153.png)
 
 
 
@@ -1362,7 +1362,7 @@ area.SecondaryAxis.LogarithmicBase = Math.E;
 
 The following image illustrates Log chart with various LogarithmicBase values.
 
-![](Chart-Controls_images/Chart-Controls_img154.png)
+![Chart-Controls_img154](Chart-Controls_images/Chart-Controls_img154.png)
 
 
 
@@ -1430,7 +1430,7 @@ Chart1.Areas[0].PrimaryAxis.IsLogarithmic = true;
 
 When the code runs, the following output displays.
 
-![](Chart-Controls_images/Chart-Controls_img155.jpeg)
+![Chart-Controls_img155](Chart-Controls_images/Chart-Controls_img155.jpeg)
 
 
 
@@ -1484,11 +1484,11 @@ NA</td></tr>
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img156.png)
+![Chart-Controls_img156](Chart-Controls_images/Chart-Controls_img156.png)
 
 
 
-## Chart Axis Header
+## Chart-Axis in WPF Chart (Classic) Header
 
 Chart for WPF provides support for Chart Axis Titles with the help of the attached property ChartAxis.Header. Its position can be adjusted by using the HeaderAlignment property of the ChartAxis class.
 
@@ -1547,7 +1547,7 @@ area.SecondaryAxis.HeaderAlignment = ChartAlignment.Far;
 
 The following image illustrates Chart with Axis HeaderAlignment set.
 
-![](Chart-Controls_images/Chart-Controls_img157.jpeg)
+![Chart-Controls_img157](Chart-Controls_images/Chart-Controls_img157.jpeg)
 
 
 ## Chart Striplines
@@ -1600,7 +1600,7 @@ sp.Text = new FormattedText(item.Production.ToString(), CultureInfo.CurrentCultu
 
 Run the code. The following output is displayed.
 
-![](Chart-Controls_images/Chart-Controls_img158.jpeg)
+![Chart-Controls_img158](Chart-Controls_images/Chart-Controls_img158.jpeg)
 
 
 
@@ -1627,15 +1627,15 @@ There are three possible modes. They are,
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Manual.png](Chart-Controls_images/Chart-Controls_img159.png)
+![Chart-Controls_images159](Chart-Controls_images/Chart-Controls_img159.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Auto.png](Chart-Controls_images/Chart-Controls_img160.png)
+![Chart-Controls_images160](Chart-Controls_images/Chart-Controls_img160.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_None.png](Chart-Controls_images/Chart-Controls_img161.png)
+![Chart-Controls_images161](Chart-Controls_images/Chart-Controls_img161.png)
 
 
 
@@ -1749,13 +1749,13 @@ Set the IsRetainAxisPosition propertyto True to add axesin the order they are ad
 {% endhighlight  %}
 When the code runs, the following output displays. 
 
-![](Chart-Controls_images/Chart-Controls_img162.png)
+![Chart-Controls_img162](Chart-Controls_images/Chart-Controls_img162.png)
 
 
 
 Set IsRetainAxisPosition is False to add axes in reverse order.
 
-![](Chart-Controls_images/Chart-Controls_img163.png)
+![Chart-Controls_img163](Chart-Controls_images/Chart-Controls_img163.png)
 
 
 <table>
@@ -1775,7 +1775,7 @@ Bool or True/False.</td><td>
 IsRetainAxisPosition="True"</td></tr>
 </table>
 
-## Chart Axis Improvements
+## Chart-Axis in WPF Chart (Classic) Improvements
 
 Essential Chart provides support for some improvements in the existing chart axis by implementing the following features.
 
@@ -1869,19 +1869,19 @@ To access the chart axis improvement demo:
 {% endhighlight  %}
 {% endtabs %}
 
-![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisHeader.png](Chart-Controls_images/Chart-Controls_img164.png)
+![Chart-Controls_images164](Chart-Controls_images/Chart-Controls_img164.png)
 
 
 
 _Primary Axis Labels with Postfix (GHZ) and Secondary Axis Labels withPrefix ($)_
 
-![](Chart-Controls_images/Chart-Controls_img165.png)
+![Chart-Controls_img165](Chart-Controls_images/Chart-Controls_img165.png)
 
 
 
 _Secondary Axis EdgeLabelsDrawingMode [Shift]_
 
-![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisLabelAligns.png](Chart-Controls_images/Chart-Controls_img166.png)
+![Chart-Controls_images166](Chart-Controls_images/Chart-Controls_img166.png)
 
 
 
@@ -1903,13 +1903,13 @@ Smart axis labels are useful in the following scenarios:
 Axis Type Double: In cases where axis ranges have values that are so large (e.g., millions or trillions) that the labels use too much room on the axis. Smart axis labels are rendered with suffixes based on the data range value. For example, “M” will be appended to all labels with million values—1,000,000 will be displayed as 1M.
 
 Axis Type DateTime: In cases where LabelDateTimeFormat is set to Default, the labels will appear too large displaying “MM/dd/yyyy hh:mm tt”. Smart labels calculate the data range and reduce the labels. For example, only “MM/dd” would be displayed depending upon the interval between two labels. 
-![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img167.png)
+![Chart-Controls_images167](Chart-Controls_images/Chart-Controls_img167.png)
 
 
 
 Axis Type TimeSpan: In cases where the time span is set with intervals of hours, smart labels can convert and display when there is a change with the hours. For example, 12:00  to 15:00 will be displayed as 12:00:00. … 1 … 2 … … … 12 … 13 … 14 … 15:00:00 
 
-![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img168.png)
+![Chart-Controls_images168](Chart-Controls_images/Chart-Controls_img168.png)
 
 
 
@@ -1979,13 +1979,13 @@ Provide the option to position the segments between axis lines and on the axis l
 
 The following screenshot depicts the segments between TickLine
 
-![](Chart-Controls_images/Chart-Controls_img169.png)
+![Chart-Controls_img169](Chart-Controls_images/Chart-Controls_img169.png)
 
 
 
 The following screenshot depicts the segments on TickLine
 
-![](Chart-Controls_images/Chart-Controls_img170.png)
+![Chart-Controls_img170](Chart-Controls_images/Chart-Controls_img170.png)
 
 
 

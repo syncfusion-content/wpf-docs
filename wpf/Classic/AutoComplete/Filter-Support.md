@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter support | AutoComplete | WPF | Syncfusion
-description: filter support
+title: Filter Support in WPF AutoComplete Control | Syncfusion
+description: Learn here all about Filter Support in Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Filter Support
+# Filter Support in WPF AutoComplete (Classic)
 
 Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsFilter) property.
 

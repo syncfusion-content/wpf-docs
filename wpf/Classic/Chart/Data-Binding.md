@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Binding | Chart(Classic) | wpf | Syncfusion
-description: Data-Binding
+title: Data Binding in WPF Chart Control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Data Binding
+# Data Binding in WPF Chart (Classic)
 
 ## IList Data Source
 
@@ -46,12 +46,12 @@ public IList marks()
 {% endhighlight  %}
 The following screenshot illustrates how a Chart Series is associated to the Chart by using IList-based instances.
 
-![](Chart-Controls_images/Chart-Controls_img1.jpeg)
+![Chart-Controls_img1](Chart-Controls_images/Chart-Controls_img1.jpeg)
 
 
 
 
-### Data Binding for Child Level Properties
+### Data-Binding in WPF Chart (Classic) for Child Level Properties
 
 ## XML Data Source
 
@@ -108,7 +108,7 @@ chart1.Areas[0].Series[0].BindingPathsY = new string[] { "Sales" };
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img2.jpeg)
+![Chart-Controls_img2](Chart-Controls_images/Chart-Controls_img2.jpeg)
 
 
 ## ObservableCollection Data Source
@@ -302,7 +302,7 @@ Add(new Sport(108, "Tennis", 10));
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using ObservableCollection data source.
 
-![](Chart-Controls_images/Chart-Controls_img3.jpeg)
+![Chart-Controls_img3](Chart-Controls_images/Chart-Controls_img3.jpeg)
 
 
 
@@ -497,7 +497,7 @@ class SalesinLocation : ObservableCollection<Production>
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using CollectionViewSource data source.
 
-![](Chart-Controls_images/Chart-Controls_img4.jpeg)
+![Chart-Controls_img4](Chart-Controls_images/Chart-Controls_img4.jpeg)
 
 
 ## LINQ Data Source
@@ -671,10 +671,10 @@ this.Mileage = mileage;
 {% endhighlight  %}
 The following screenshot illustrates how a Chart Series is associated to the Chart by using LINQ results.
 
-![](Chart-Controls_images/Chart-Controls_img5.jpeg)
+![Chart-Controls_img5](Chart-Controls_images/Chart-Controls_img5.jpeg)
 
 
-## Data Binding for Child Level Properties
+## Data-Binding in WPF Chart (Classic) for Child Level Properties
 
 The child level properties can be bound to the chart series using BindingPathX and BindingPathsY values. BindingPathX and BindingPathsY are the properties that belong to chart series which holds the x-axis and y-axis binding path values.
 

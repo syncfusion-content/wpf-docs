@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior-Changes
-description: behavior changes
+title: Behavior Changes in WPF Diagram Control | Syncfusion
+description: Learn here all about Behavior Changes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Behavior Changes
+# Behavior Changes in WPF Diagram (classic)
 
 The following are the changes made from version 10.1.0.44: 
 
