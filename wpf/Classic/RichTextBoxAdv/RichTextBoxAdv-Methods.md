@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RichTextBoxAdv-Methods in WPF Wizard Control control | Syncfusion
+title: RichTextBoxAdv-Methods in WPF RichTextBoxAdv Control | Syncfusion
 description: Learn here all about RichTextBoxAdv-Methods support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv

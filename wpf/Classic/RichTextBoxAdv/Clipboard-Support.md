@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard-Support in WPF Wizard Control control | Syncfusion
+title: Clipboard-Support in WPF RichTextBoxAdv Control | Syncfusion
 description: Learn here all about Clipboard-Support in Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more.
 platform: wpf
 control: RichTextBoxAdv
