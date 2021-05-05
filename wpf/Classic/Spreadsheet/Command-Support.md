@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Command Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about Command Support support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
+description: Learn here all about Command Support in Syncfusion WPF SpreadsheetControl (Classic) control, its elements and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug

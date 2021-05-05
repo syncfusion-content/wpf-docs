@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context-Menu-Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about Context-Menu-Support support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
+description: Learn here all about Context-Menu-Support in Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
