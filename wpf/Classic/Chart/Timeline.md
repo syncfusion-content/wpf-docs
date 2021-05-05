@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline in WPF Wizard Control control | Syncfusion
-description: Learn here all about Timeline support in Syncfusion WPF Chart (Classic) control and more.
+title: Timeline in WPF Chart Control | Syncfusion
+description: Learn here all about Timeline support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -25,7 +25,7 @@ TimeLine Control has been designed to visualize large number of data and to hand
 
 ## Appearance and Structure
 
-![C:/Users/riaj/Desktop/Timenavigator.png](Chart-Controls_images/Chart-Controls_img255.png)
+![Chart-Controls_images255](Chart-Controls_images/Chart-Controls_img255.png)
 
 
 

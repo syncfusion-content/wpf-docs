@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Area in WPF Wizard Control control | Syncfusion
-description: Learn here all about Chart-Area support in Syncfusion WPF Chart (Classic) control and more.
+title: Chart-Area in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Area support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -469,7 +469,7 @@ To access the chart watermark demo:
 
 {% endtabs %}
 
-![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/ImageWatermark.png](Chart-Controls_images/Chart-Controls_img16.png)
+![Chart-Controls_images16](Chart-Controls_images/Chart-Controls_img16.png)
 
 
 
@@ -487,7 +487,7 @@ To access the chart watermark demo:
 
 {% endtabs %}
 
-![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/TextWatermark.png](Chart-Controls_images/Chart-Controls_img17.png)
+![Chart-Controls_images17](Chart-Controls_images/Chart-Controls_img17.png)
 
 
 

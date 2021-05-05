@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline View in WPF Wizard Control control | Syncfusion
-description: Learn here all about Timeline View support in Syncfusion WPF Schedule (Classic) control and more.
+title: Timeline View in WPF SfSchedule Control | Syncfusion
+description: Learn here all about Timeline View support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug

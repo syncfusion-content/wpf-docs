@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Appearance in WPF Wizard Control control | Syncfusion
-description: Learn here all about Chart-Appearance support in Syncfusion WPF Chart (Classic) control and more.
+title: Chart-Appearance in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Appearance support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -349,6 +349,6 @@ The chart series effects can be applied to the chart by using the following code
 
     Run the code. The following output is displayed.
 
-    ![](Chart-Controls_images/Chart-Controls_img191.jpeg)
+    ![Chart-Controls_images191](Chart-Controls_images/Chart-Controls_img191.jpeg)
 
 

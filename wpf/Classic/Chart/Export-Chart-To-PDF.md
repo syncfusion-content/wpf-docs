@@ -49,7 +49,7 @@ The following steps explain how to convert a chart to PDF.
    1. Syncfusion.Chart.WPF.dll
    2. Syncfusion.ChartConverter.WPF.dll
 
-   ![](Chart-Controls_images/Chart-Controls_img235.png)
+   ![Chart-Controls_images235](Chart-Controls_images/Chart-Controls_img235.png)
 
 
 
@@ -65,4 +65,4 @@ The following steps explain how to convert a chart to PDF.
    ~~~
 4. The PDF file is generated as follows.
 
-   ![](Chart-Controls_images/Chart-Controls_img236.png)
+   ![Chart-Controls_images236](Chart-Controls_images/Chart-Controls_img236.png)

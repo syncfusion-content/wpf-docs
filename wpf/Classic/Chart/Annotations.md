@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Annotations in WPF Wizard Control control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion WPF Chart (Classic) control and more.
+title: Annotations in WPF Chart Control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug

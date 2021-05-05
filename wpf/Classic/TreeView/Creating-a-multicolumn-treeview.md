@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating a MultiColumnTreeView in WPF Wizard Control control | Syncfusion
+title: Creating a MultiColumnTreeView in WPF TreeViewAdv | Syncfusion
 description: Learn here all about Creating a MultiColumnTreeView support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv

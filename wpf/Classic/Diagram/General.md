@@ -1,7 +1,7 @@
 ---
 layout: post
-title: General in WPF Wizard Control control | Syncfusion
-description: Learn here all about General support in Syncfusion WPF Diagram (classic) control and more.
+title: General in WPF Diagram Control | Syncfusion
+description: Learn here all about General support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Images for items in TreeViewAdv in WPF Wizard Control control | Syncfusion
-description: Learn here all about Images for items in TreeViewAdv support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: Images for items in WPF TreeViewAdv Control | Syncfusion
+description: Learn here all about Images for items in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Images for items in TreeViewAdv in WPF TreeViewAdv (Classic)
+# Images for items in WPF TreeViewAdv (Classic)
 
 ## Node image
 

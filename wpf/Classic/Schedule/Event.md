@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event in WPF Wizard Control control | Syncfusion
-description: Learn here all about Event support in Syncfusion WPF Schedule (Classic) control and more.
+title: Event in WPF SfSchedule Control | Syncfusion
+description: Learn here all about Event support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug

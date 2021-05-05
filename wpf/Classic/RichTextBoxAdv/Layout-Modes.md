@@ -15,7 +15,7 @@ The layout mode feature allows choosing several layouts in the document. They ar
 
 
 
-   ![](Layout-Modes_images/Layout-Modes_img1.jpeg)
+   ![Layout-Modes_images1](Layout-Modes_images/Layout-Modes_img1.jpeg)
 
 
 
@@ -25,7 +25,7 @@ The layout mode feature allows choosing several layouts in the document. They ar
 
 
 
-   ![](Layout-Modes_images/Layout-Modes_img2.png)
+   ![Layout-Modes_images2](Layout-Modes_images/Layout-Modes_img2.png)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing Border of the ChromelessWindow in WPF Chromeless Window control | Syncfusion
+title: Customizing Border in WPF Chromeless Window | Syncfusion
 description: Learn about Customizing Border of the ChromelessWindow support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow

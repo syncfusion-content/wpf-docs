@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Connectors in WPF Wizard Control control | Syncfusion
-description: Learn here all about Line Connectors support in Syncfusion WPF Diagram (classic) control and more.
+title: Line Connectors in WPF Diagram Control | Syncfusion
+description: Learn here all about Line Connectors support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -597,7 +597,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-   ![](Line-Connectors_images/Line-Connectors_img6.jpeg)
+   ![Line-Connectors_images6](Line-Connectors_images/Line-Connectors_img6.jpeg)
 
 
 
@@ -605,7 +605,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-   ![](Line-Connectors_images/Line-Connectors_img7.jpeg)
+   ![Line-Connectors_images7](Line-Connectors_images/Line-Connectors_img7.jpeg)
 
 
 
@@ -613,7 +613,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-   ![](Line-Connectors_images/Line-Connectors_img8.jpeg)
+   ![Line-Connectors_images8](Line-Connectors_images/Line-Connectors_img8.jpeg)
 
    
 
@@ -929,7 +929,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight  %}
 
 
-![Description: C:/Users/jeganr/Desktop/New Images/New Images/ConnectorTypes.png](Line-Connectors_images/Line-Connectors_img10.png)
+![Line-Connectors_images10](Line-Connectors_images/Line-Connectors_img10.png)
 
 
 
@@ -1823,7 +1823,7 @@ diagramModel.Connections.Add(l1)
 
 {% endhighlight   %}
 
-![Description: C:/Users/karthikeyanp/Pictures/images/customhead.png](Line-Connectors_images/Line-Connectors_img22.png)
+![Line-Connectors_images22](Line-Connectors_images/Line-Connectors_img22.png)
 
 
 
@@ -1902,7 +1902,7 @@ diagramModel.Connections.Add(l1)
 
 {% endhighlight  %}
 
-![Description: C:/Users/karthikeyanp/Pictures/images/customtailDecoratorstyle.png](Line-Connectors_images/Line-Connectors_img23.png)
+![Line-Connectors_images23](Line-Connectors_images/Line-Connectors_img23.png)
 
 
 
@@ -1983,7 +1983,7 @@ diagramModel.Connections.Add(line1)
 {% endhighlight   %}
 
 
-![Description: C:/Users/karthikeyanp/Pictures/images/headdeco.png](Line-Connectors_images/Line-Connectors_img24.png)
+![Line-Connectors_images24](Line-Connectors_images/Line-Connectors_img24.png)
 
 
 
@@ -2062,7 +2062,7 @@ diagramModel.Connections.Add(line1)
 
 {% endhighlight  %}
 
-![Description: C:/Users/karthikeyanp/Pictures/images/taildeco.png](Line-Connectors_images/Line-Connectors_img25.png)
+![Line-Connectors_images25](Line-Connectors_images/Line-Connectors_img25.png)
 
 
 
@@ -2628,7 +2628,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight   %}
 
 
-![Description: C:/Users/sundarm/Desktop/line.PNG](Line-Connectors_images/Line-Connectors_img31.png)
+![Line-Connectors_images31](Line-Connectors_images/Line-Connectors_img31.png)
 
 
 
@@ -3861,7 +3861,7 @@ Example1: Draw an invisible segment, by setting IsStroked to false.
 
 {% endhighlight  %}
 
-![C:/Users/saranya/Desktop/style.jpg](Line-Connectors_images/Line-Connectors_img52.jpeg)
+![Line-Connectors_images52](Line-Connectors_images/Line-Connectors_img52.jpeg)
 
 
 

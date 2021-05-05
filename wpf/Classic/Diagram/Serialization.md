@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in WPF Wizard Control control | Syncfusion
-description: Learn here all about Serialization support in Syncfusion WPF Diagram (classic) control and more.
+title: Serialization in WPF Diagram Control | Syncfusion
+description: Learn here all about Serialization support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug

@@ -106,6 +106,6 @@ The legend icon can be customized by using the following code exaples.
    ~~~
    Run the code. The following output is displayed.
 
-   ![](Chart-Controls_images/Chart-Controls_img195.jpeg)
+   ![Chart-Controls_images195](Chart-Controls_images/Chart-Controls_img195.jpeg)
 
    

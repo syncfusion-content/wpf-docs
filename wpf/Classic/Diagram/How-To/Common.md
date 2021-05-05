@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Common
-description: Learn here all about Common support in Syncfusion WPF Diagram (classic) control and more.
+title: Common in WPF Diagram (classic) Control | Syncfusion
+description: Learn here all about Common support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
 
-# Common in WPF Diagram (classic) in WPF Diagram (classic)
+# Common in WPF Diagram (classic)
 
 This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
 
@@ -16,7 +16,7 @@ Common—Answers common questions that arises in minds of fresh users of Essenti
 
 Advanced—Answers questions that are in an advanced level, meant for experts.
 
-# Common in WPF Diagram (classic)
+## Common in WPF Diagram (classic)
 
 This section answers the following common question that arises in the minds of fresh users of Essential Diagram WPF. 
 

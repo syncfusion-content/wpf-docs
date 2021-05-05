@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Corner Radius in WPF Chromeless Window control | Syncfusion
-description: Learn about Corner Radius support in Syncfusion WPF Chromeless Window control and more.
+description: Learn about Corner Radius support in Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
@@ -40,4 +40,4 @@ _chromelessWindow.CornerRadius = New CornerRadius(8)
 
 {% endtabs %}
 
-![C:/Users/Sugapriya.Mariappan/Desktop/chromelesswindow/cornerrad.png](Corner-Radius_images/Corner-Radius_img1.jpeg)
+![Corner-Radius_images1](Corner-Radius_images/Corner-Radius_img1.jpeg)

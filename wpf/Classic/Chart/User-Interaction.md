@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User-Interaction in WPF Wizard Control control | Syncfusion
-description: Learn here all about User-Interaction support in Syncfusion WPF Chart (Classic) control and more.
+title: User-Interaction in WPF Chart Control | Syncfusion
+description: Learn here all about User-Interaction support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -937,7 +937,7 @@ The following code example illustrates selection of zoomed area in a chart.
 
    ~~~
 
-   ![](Chart-Controls_images/Chart-Controls_img211.jpeg)
+   ![Chart-Controls_images211](Chart-Controls_images/Chart-Controls_img211.jpeg)
 
   
 
@@ -1043,7 +1043,7 @@ This feature helps the user to drag the Chart point from one location to another
 
 
 
-![C:/Users/sujithas/Desktop/UG/sshot-3.png](Chart-Controls_images/Chart-Controls_img214.png)
+![Chart-Controls_images214](Chart-Controls_images/Chart-Controls_img214.png)
 
 
 
@@ -1194,7 +1194,7 @@ N> The given points of the rectangle region can internally convert to the relati
 
 ChartAreaBounds is used in obtaining the list of points bound to a user-given rectangle .i.e. viewing the survey details in the area selected by the user.
 
-![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img215.png)
+![Chart-Controls_images215](Chart-Controls_images/Chart-Controls_img215.png)
 
 
 
@@ -1221,7 +1221,7 @@ chartpoints.ItemsSource = chart.Areas[0].BoundsToPoints(rect, chart.Areas[0].Ser
 {% endhighlight  %}
 
 
-![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img216.png)
+![Chart-Controls_images216](Chart-Controls_images/Chart-Controls_img216.png)
 
 
 
@@ -1356,7 +1356,7 @@ string Serializedstring =  Chart1.Serialize();
 
 The Chart1 in above code example represents the Chart object, and Serializedstring in above code example has the serialized string (XAML string) while execution. 
 
-![Description: C:/Users/Abdulrahman/Desktop/serialization.png](Chart-Controls_images/Chart-Controls_img217.png)
+![Chart-Controls_images217](Chart-Controls_images/Chart-Controls_img217.png)
 
 
 
@@ -1516,8 +1516,7 @@ Chart1.ShowPropertyDialog();
 {% endhighlight  %}
 
 
-![C:/Users/Abdulrahman/AppData/Local/Syncfusion/EssentialStudio/9.1.0.117/WPF/Chart.WPF/Samples/3.5/WindowsSamples/User Interaction/Property Dialog Demo/Images/PropertyDialog.png](Chart-Controls_images/Chart-Controls_img218.png)
-
+![Chart-Controls_images218](Chart-Controls_images/Chart-Controls_img218.png)
 
 
 ### Using Toolbar
@@ -1594,7 +1593,7 @@ Automatic scrolling ensures that the specified data always remains visible in th
 
 While adding huge amount of data to the chart in real time, the autoscrolling functionality helps us to view a particular set of data in the chart at a given time. This makes the scroll bar to display the recently added data and the set of newly added data to be viewed clearly, according to the AutoScrollingDelta specified for the axis in the chart.
 
-![C:/Users/riaj/Desktop/AutoScrolling.png](Chart-Controls_images/Chart-Controls_img220.png)
+![Chart-Controls_images220](Chart-Controls_images/Chart-Controls_img220.png)
 
 
 

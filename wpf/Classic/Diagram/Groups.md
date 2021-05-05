@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Groups in WPF Wizard Control control | Syncfusion
-description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control and more.
+title: Groups in WPF Diagram Control | Syncfusion
+description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -301,7 +301,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img2.jpeg)
+   ![Groups_images2](Groups_images/Groups_img2.jpeg)
 
 
 
@@ -310,7 +310,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img3.jpeg)
+   ![Groups_images3](Groups_images/Groups_img3.jpeg)
 
 
 
@@ -323,7 +323,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img4.jpeg)
+   ![Groups_images4](Groups_images/Groups_img4.jpeg)
 
 
 
@@ -336,7 +336,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img5.jpeg)
+   ![Groups_images5](Groups_images/Groups_img5.jpeg)
 
 
 
@@ -362,7 +362,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img6.jpeg)
+   ![Groups_images6](Groups_images/Groups_img6.jpeg)
 
 
 
@@ -373,7 +373,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img7.jpeg)
+   ![Groups_images7](Groups_images/Groups_img7.jpeg)
 
 
 
@@ -384,7 +384,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img8.jpeg)
+   ![Groups_images8](Groups_images/Groups_img8.jpeg)
 
 
 
@@ -453,7 +453,7 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   ![](Groups_images/Groups_img12.jpeg)
+   ![Groups_images12](Groups_images/Groups_img12.jpeg)
 
 
 
@@ -464,7 +464,7 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   ![](Groups_images/Groups_img13.jpeg)
+   ![Groups_images13](Groups_images/Groups_img13.jpeg)
 
 
 
@@ -482,7 +482,7 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   ![](Groups_images/Groups_img14.jpeg)
+   ![Groups_images14](Groups_images/Groups_img14.jpeg)
 
 
 
@@ -493,7 +493,7 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   ![](Groups_images/Groups_img15.jpeg)
+   ![Groups_images15](Groups_images/Groups_img15.jpeg)
 
 
 
@@ -715,7 +715,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img16.jpeg)
+   ![Groups_images16](Groups_images/Groups_img16.jpeg)
 
 
 
@@ -728,7 +728,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img17.jpeg)
+   ![Groups_images17](Groups_images/Groups_img17.jpeg)
 
 
 
@@ -741,7 +741,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img18.jpeg)
+   ![Groups_images18](Groups_images/Groups_img18.jpeg)
 
 
 

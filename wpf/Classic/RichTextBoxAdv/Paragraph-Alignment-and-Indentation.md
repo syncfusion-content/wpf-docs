@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paragraph-Alignment-and-Indentation in WPF Wizard Control control | Syncfusion
-description: Learn here all about Paragraph-Alignment-and-Indentation support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
+title: Paragraph Alignment and Indentation in WPF RichTextBoxAdv | Syncfusion
+description: Learn here all about Paragraph Alignment and Indentation support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Paragraph-Alignment-and-Indentation in WPF RichTextBoxAdv (Classic)
+# Paragraph Alignment and Indentation in WPF RichTextBoxAdv (Classic)
 
 The paragraph alignment and indentation features allow you to define content in paragraphs. They can be added only inside the sections. We can keep _n_ number of paragraphs inside SectionAdv. Each paragraph may contain inline elements such as SpanAdv, HyperlinkAdv, ImageContainerAdv, and UIContainerAdv. 
 

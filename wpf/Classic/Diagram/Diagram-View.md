@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram View in WPF Wizard Control control | Syncfusion
-description: Learn here all about Diagram View support in Syncfusion WPF Diagram (classic) control and more.
+title: Diagram View in WPF Diagram Control | Syncfusion
+description: Learn here all about Diagram View support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -670,7 +670,7 @@ diagramView.IsPanEnabled = True
 
 
 
-   ![](Diagram-View_images/Diagram-View_img5.jpeg)
+   ![Diagram-View_images5](Diagram-View_images/Diagram-View_img5.jpeg)
    
    Pan
    {:.caption}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Loclization in WPF Wizard Control control | Syncfusion
-description: Learn here all about Loclization support in Syncfusion WPF Schedule (Classic) control and more.
+title: Loclization in WPF SfSchedule Control | Syncfusion
+description: Learn here all about Loclization support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Loclization in WPF Schedule (Classic)
+# Localization in WPF Schedule (Classic)
 
 Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data. The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr‖ for French (common).
 

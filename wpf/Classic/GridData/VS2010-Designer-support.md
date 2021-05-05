@@ -21,7 +21,7 @@ The grid designer is populated with numerous options when ItemsSource assigned t
 
    N> An edit menu opens.
 
-   ![](Getting-Started_images/Getting-Started_img149.jpeg)
+   ![Getting-Started_images149](Getting-Started_images/Getting-Started_img149.jpeg)
 
 3. Select Designer View -> Show Designer. 
 
@@ -34,7 +34,7 @@ The grid designer is populated with numerous options when ItemsSource assigned t
    * Basic Properties - Modify the overall settings of the grid.
    * Visible Columns - Automatically generates a property list for each visible column in the grid.
 
-   ![](Getting-Started_images/Getting-Started_img150.jpeg)
+   ![Getting-Started_images150](Getting-Started_images/Getting-Started_img150.jpeg)
 
 ## Basic Properties
 
@@ -91,12 +91,12 @@ This section automatically generates a property list for each visible column in 
    
    N> Property list for visible column in the grid displays.
 
-   ![](Getting-Started_images/Getting-Started_img156.jpeg)
+   ![Getting-Started_images156](Getting-Started_images/Getting-Started_img156.jpeg)
 
 
 2. Select as you require. 
 
-   ![](Getting-Started_images/Getting-Started_img157.jpeg)
+   ![Getting-Started_images157](Getting-Started_images/Getting-Started_img157.jpeg)
 
 ## Special Cell Types
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resources in WPF Wizard Control control | Syncfusion
-description: Learn here all about Resources support in Syncfusion WPF Schedule (Classic) control and more.
+title: Resources in WPF SfSchedule Control | Syncfusion
+description: Learn here all about Resources support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug

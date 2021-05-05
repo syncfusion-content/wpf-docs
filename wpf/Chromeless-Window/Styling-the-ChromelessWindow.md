@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling the ChromelessWindow in WPF Chromeless Window control | Syncfusion
+title: Styling the ChromelessWindow in WPF Chromeless Window | Syncfusion
 description: Learn about Styling the ChromelessWindow support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow

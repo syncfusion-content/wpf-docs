@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Series in WPF Wizard Control control | Syncfusion
-description: Learn here all about Chart-Series support in Syncfusion WPF Chart (Classic) control and more.
+title: Chart-Series in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Series support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -1735,7 +1735,7 @@ Chart for WPF lets you implement list box-like selection of data point segments 
 
    ~~~
 
-   ![](Chart-Controls_images/Chart-Controls_img51.jpeg)
+   ![Chart-Controls_images51](Chart-Controls_images/Chart-Controls_img51.jpeg)
 
 
    

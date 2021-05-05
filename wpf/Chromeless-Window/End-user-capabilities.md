@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End user capabilities in WPF Chromeless Window control | Syncfusion
-description: Learn about End user capabilities support in Syncfusion WPF Chromeless Window control and more.
+description: Learn about End user capabilities support in Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
@@ -22,7 +22,7 @@ The user can perform the below listed operations through the UI provided by the 
 
 The end user can maximize or minimize the buttons by using the Maximize and Minimize Buttons at the Top-Right corner of the ChromelessWindow
 
-![C:/Users/Sugapriya.Mariappan/Desktop/chromelesswindow/m1.png](End-user-capabilities_images/End-user-capabilities_img1.jpeg)
+![End-user-capabilities_images1](End-user-capabilities_images/End-user-capabilities_img1.jpeg)
 
 ## Restore
 
@@ -34,7 +34,7 @@ After minimized or maximized the respective button is replaced by a **Restore**
 
 The user can close the Window by using the Close Button at the Top-Right Corner of the ChromelessWindow
 
-![C:/Users/Sugapriya.Mariappan/Desktop/chromelesswindow/m3.png](End-user-capabilities_images/End-user-capabilities_img3.jpeg)
+![End-user-capabilities_images3](End-user-capabilities_images/End-user-capabilities_img3.jpeg)
 
 ## Resize
 

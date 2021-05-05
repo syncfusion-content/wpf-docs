@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SymbolPalette in WPF Wizard Control control | Syncfusion
-description: Learn here all about SymbolPalette support in Syncfusion WPF Diagram (classic) control and more.
+title: SymbolPalette in WPF Diagram Control | Syncfusion
+description: Learn here all about SymbolPalette support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -656,7 +656,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 1. Open the Symbol Designer tool which is available in the software path given above.
 2. If you want to create a new symbol, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
-   ![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png)
+   ![Diagram-View_images60](Diagram-View_images/Diagram-View_img60.png)
 
 
 
@@ -665,7 +665,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 3. A new symbol palette is created with the given name after which, you can design your own symbol.
 
-   ![](Diagram-View_images/Diagram-View_img61.png)
+   ![Diagram-View_images61](Diagram-View_images/Diagram-View_img61.png)
 
 
 
@@ -674,7 +674,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 4. Draw the desired shapes using drawing tool in the work area.
 
-   ![](Diagram-View_images/Diagram-View_img62.png)
+   ![Diagram-View_images62](Diagram-View_images/Diagram-View_img62.png)
 
 
 
@@ -692,7 +692,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
    The node label can also be customized.
 
-   ![](Diagram-View_images/Diagram-View_img63.png)
+   ![Diagram-View_images63](Diagram-View_images/Diagram-View_img63.png)
 
 
 
@@ -701,7 +701,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 5. After creating required symbols, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPaletteGroup dialog will appear as in the following screen shot.
 
-   ![](Diagram-View_images/Diagram-View_img64.png)
+   ![Diagram-View_images64](Diagram-View_images/Diagram-View_img64.png)
 
 
 
@@ -710,7 +710,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 6. Give a relevant file name for the palette and click Save. As the PaletteGroup is saved, preview of the symbol will be shown in Symbol Palette.
 
-   ![](Diagram-View_images/Diagram-View_img65.png)
+   ![Diagram-View_images65](Diagram-View_images/Diagram-View_img65.png)
 
 
 
@@ -719,7 +719,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 7. Repeat the steps 3 to 7 for creating more symbols.
 
-   ![](Diagram-View_images/Diagram-View_img66.png)
+   ![Diagram-View_images66](Diagram-View_images/Diagram-View_img66.png)
 
 
 
@@ -727,13 +727,13 @@ To create your own custom symbols in the symbol designer, follow the procedure g
    
    {:.caption}
 
-   ![](Diagram-View_images/Diagram-View_img67.png)
+   ![Diagram-View_images67](Diagram-View_images/Diagram-View_img67.png)
 
 
 
 
 
-   ![](Diagram-View_images/Diagram-View_img68.png)
+   ![Diagram-View_images68](Diagram-View_images/Diagram-View_img68.png)
 
 
 
@@ -880,7 +880,7 @@ To Create SymbolPaletteItem Content
 
 
 
-   ![](Diagram-View_images/Diagram-View_img70.png)
+   ![Diagram-View_images70](Diagram-View_images/Diagram-View_img70.png)
 
 
 
@@ -889,7 +889,7 @@ To Create SymbolPaletteItem Content
 
 7. Design the content as required.
 
-   ![](Diagram-View_images/Diagram-View_img71.png)
+   ![Diagram-View_images71](Diagram-View_images/Diagram-View_img71.png)
 
 
 
@@ -910,14 +910,14 @@ To Create SymbolPaletteItem Content
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
     </table>
 
-    ![](Diagram-View_images/Diagram-View_img72.png)
+    ![Diagram-View_images72](Diagram-View_images/Diagram-View_img72.png)
 
 
 
     Syncfusion Symbol Exporter
 	{:.caption}
  
-    ![](Diagram-View_images/Diagram-View_img73.png)
+    ![Diagram-View_images73](Diagram-View_images/Diagram-View_img73.png)
 
 
 
@@ -928,7 +928,7 @@ To Create SymbolPaletteItem Content
 14. The Save SymbolPaletteItem dialog opens.
 15. Name the file and save this as XAML file in the desired location.
 
-    ![](Diagram-View_images/Diagram-View_img74.png)
+    ![Diagram-View_images74](Diagram-View_images/Diagram-View_img74.png)
 
 
 

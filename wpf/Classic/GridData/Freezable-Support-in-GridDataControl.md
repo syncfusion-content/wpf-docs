@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Freezable-Support-in-GridDataControl in WPF Wizard Control control | Syncfusion
-description: Learn here all about Freezable-Support-in-GridDataControl support in Syncfusion WPF GridDataControl (Classic) control and more.
+title: Freezable Support in WPF GridData Control | Syncfusion
+description: Learn here all about Freezable Support in Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Freezable-Support-in-GridDataControl in WPF GridDataControl (Classic)
+# Freezable Support in WPF GridDataControl (Classic)
 
 GridDataControl now supports inheritance context using Freezable. Developers can use this feature to bind values to elements not present in the Visual Tree. Usually, the ElementName and DataContext bindings are resolved based on the target dependency object’s position within the element tree (or the name scope to which the target dependency object belongs).  But in case, if the target dependency object is not in the tree such as HeaderText in GridDataVisibleColumn, then having an inheritance context for DependencyObjects external to an element tree is the solution. We can achieve this by using Freezable.
 

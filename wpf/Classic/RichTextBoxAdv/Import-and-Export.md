@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Import-and-Export in WPF Wizard Control control | Syncfusion
-description: Learn here all about Import-and-Export support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
+title: Import and Export in WPF RichTextBoxAdv Control | Syncfusion
+description: Learn here all about Import and Export support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-#  Import and Export
+#  Import and Export in WPF RichTextBoxAdv
 
 This feature lets you use several file formats, namely .doc, .docx, .html, .xaml, and .txt, inside the RichTextBoxAdv control. Using any one format allows the use of the other formats.
 

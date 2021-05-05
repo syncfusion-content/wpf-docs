@@ -1,7 +1,7 @@
 ---
 layout: post
-title: LoadOnDemand in WPF Wizard Control control | Syncfusion
-description: Learn here all about LoadOnDemand support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: LoadOnDemand in WPF TreeViewAdv Control | Syncfusion
+description: Learn here all about LoadOnDemand support in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug

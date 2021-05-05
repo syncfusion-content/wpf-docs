@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Types in WPF Wizard Control control | Syncfusion
-description: Learn here all about Chart-Types support in Syncfusion WPF Chart (Classic) control and more.
+title: Chart-Types in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Types support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -731,7 +731,7 @@ To add FastBar ChartType to the application:
    ~~~
 
 
-   ![Description: C:/Users/sujithas/Desktop/DesktopFiles/Assigned wrk/2011/Images/sshot-2.png](Chart-Controls_images/Chart-Controls_img75.png)
+   ![Chart-Controls_images75](Chart-Controls_images/Chart-Controls_img75.png)
 
    
 
@@ -760,7 +760,7 @@ To run the UI WPF sample
 
    The following image shows a sample Stacking Bar Chart.
 
-   ![](Chart-Controls_images/Chart-Controls_img76.jpeg)
+   ![Chart-Controls_images76](Chart-Controls_images/Chart-Controls_img76.jpeg)
 
    
 
@@ -2100,7 +2100,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 100% stacked area charts are similar to regular area charts except that the y values stack to 100% on top of each other in the specified series order. In the 100% stacked area charts, the cumulative proportion of each stacked element always totals 100%. This type of chart is great to visualize the relative contribution of each series’ values to the whole.
 
-![C:/Users/michaelprabhu/Desktop/StackingArea100_WPF.png](Chart-Controls_images/Chart-Controls_img90.png)
+![Chart-Controls_images90](Chart-Controls_images/Chart-Controls_img90.png)
 
 
 
@@ -4594,15 +4594,15 @@ Chart types are:
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingBar.png](Chart-Controls_images/Chart-Controls_img118.png)
+![Chart-Controls_images118](Chart-Controls_images/Chart-Controls_img118.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingArea.png](Chart-Controls_images/Chart-Controls_img119.png)
+![Chart-Controls_images119](Chart-Controls_images/Chart-Controls_img119.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingColumn.png](Chart-Controls_images/Chart-Controls_img120.png)
+![Chart-Controls_images120](Chart-Controls_images/Chart-Controls_img120.png)
 
 
 
@@ -4776,7 +4776,7 @@ This feature automatically resizes the content to fit inside the HeatMap item, s
 
 It is used in the field where data are represented in a two dimensional map namely Population Survey. The data of the survey will automatically fit into the HeatMap item by resizing its font size.
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/HeatMap.png](Chart-Controls_images/Chart-Controls_img123.png)
+![Chart-Controls_images123](Chart-Controls_images/Chart-Controls_img123.png)
 
 
 
@@ -4909,7 +4909,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 
 {% endtabs %}
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png)
+![Chart-Controls_images126](Chart-Controls_images/Chart-Controls_img126.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -4934,7 +4934,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastColumn;
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastColumn.png](Chart-Controls_images/Chart-Controls_img127.png)
+![Chart-Controls_images127](Chart-Controls_images/Chart-Controls_img127.png)
 
 
 
@@ -5094,7 +5094,7 @@ To set the Custom type feature in chart application:
    ~~~
 
 
-   ![](Chart-Controls_images/Chart-Controls_img128.png)
+   ![Chart-Controls_images128](Chart-Controls_images/Chart-Controls_img128.png)
 
 
 Sample Link

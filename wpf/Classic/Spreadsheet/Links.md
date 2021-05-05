@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Links in WPF Wizard Control control | Syncfusion
-description: Learn here all about Links support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
+title: Links in WPF Spreadsheet Control | Syncfusion
+description: Learn here all about Links support in Syncfusion WPF SpreadsheetControl (Classic) control, its elements and more details.
 platform: wpf
 control: Spreadsheet
 documentation: ug

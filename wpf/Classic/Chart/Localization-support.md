@@ -33,7 +33,7 @@ Use the prescribed naming convention as it is mandatory.
 
 The following screenshot explains the addition of a Resource file to the application. 
 
-![C:/Users/murugavelp/Pictures/doc.png](Chart-Controls_images/Chart-Controls_img232.png)
+![Chart-Controls_images232](Chart-Controls_images/Chart-Controls_img232.png)
 
 
 
@@ -41,7 +41,7 @@ Enter the “Name” and “Value” in the Resource file.
 
 The String Property names used in the  Chart are given in the Properties table. This is explained in the following screenshot.
 
-![C:/Users/murugavelp/Pictures/doc1.png](Chart-Controls_images/Chart-Controls_img233.png)
+![Chart-Controls_images233](Chart-Controls_images/Chart-Controls_img233.png)
 
 
 

@@ -27,7 +27,7 @@ To create a Resource file:
 3. Use the prescribed naming convention as it is mandatory. 
 4. The following screenshot explains the addition of a Resource File to the application. 
 
-   ![](Getting-Started_images/Getting-Started_img159.png)
+   ![Getting-Started_images159](Getting-Started_images/Getting-Started_img159.png)
 
 5. Select the String option in the Resource file. This is explained in the following screenshot.
 
@@ -37,7 +37,7 @@ To create a Resource file:
 
    The String Property names used in the Grid are given in the Property table. This is explained in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img161.png)
+   ![Getting-Started_images161](Getting-Started_images/Getting-Started_img161.png)
 
    
 ### Setting the Culture Information in the Application

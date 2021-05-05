@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diagram Model in WPF Wizard Control control | Syncfusion
-description: Learn here all about Diagram Model support in Syncfusion WPF Diagram (classic) control and more.
+title: Diagram Model in WPF Diagram Control | Syncfusion
+description: Learn here all about Diagram Model support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug

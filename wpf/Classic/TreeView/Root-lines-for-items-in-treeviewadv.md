@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Root lines for Items in TreeViewAdv in WPF Wizard Control control | Syncfusion
-description: Learn here all about Root lines for Items in TreeViewAdv support in Syncfusion WPF TreeViewAdv (Classic) control and more.
+title: Root lines for Items in WPF TreeViewAdv | Syncfusion
+description: Learn here all about Root lines for Items in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Root lines for Items in TreeViewAdv in WPF TreeViewAdv (Classic)
+# Root lines for Items in WPF TreeViewAdv (Classic)
 
 The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code
 

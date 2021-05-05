@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Axis in WPF Wizard Control control | Syncfusion
-description: Learn here all about Chart-Axis support in Syncfusion WPF Chart (Classic) control and more.
+title: Chart-Axis in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Axis support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -357,11 +357,11 @@ Open the Sample Browser and select the following,
 
 {% endtabs %}
 
-![C:/Users/ganesan/Desktop/Before.png](Chart-Controls_images/Chart-Controls_img137.png)
+![Chart-Controls_images137](Chart-Controls_images/Chart-Controls_img137.png)
 
 
 
-![C:/Users/ganesan/Desktop/After.png](Chart-Controls_images/Chart-Controls_img138.png)
+![Chart-Controls_images138](Chart-Controls_images/Chart-Controls_img138.png)
 
 
 
@@ -1296,7 +1296,7 @@ chart1.Areas[0].EnableRangeSelection = true;
 
 When the code runs, the following output displays.
 
-![C:/Users/sujithas/Desktop/Assigned wrk/VOl2_2010/Feature/WPF/RangeSalection/sshot-1.png](Chart-Controls_images/Chart-Controls_img153.png)
+![Chart-Controls_images153](Chart-Controls_images/Chart-Controls_img153.png)
 
 
 
@@ -1627,15 +1627,15 @@ There are three possible modes. They are,
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Manual.png](Chart-Controls_images/Chart-Controls_img159.png)
+![Chart-Controls_images159](Chart-Controls_images/Chart-Controls_img159.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Auto.png](Chart-Controls_images/Chart-Controls_img160.png)
+![Chart-Controls_images160](Chart-Controls_images/Chart-Controls_img160.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_None.png](Chart-Controls_images/Chart-Controls_img161.png)
+![Chart-Controls_images161](Chart-Controls_images/Chart-Controls_img161.png)
 
 
 
@@ -1869,7 +1869,7 @@ To access the chart axis improvement demo:
 {% endhighlight  %}
 {% endtabs %}
 
-![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisHeader.png](Chart-Controls_images/Chart-Controls_img164.png)
+![Chart-Controls_images164](Chart-Controls_images/Chart-Controls_img164.png)
 
 
 
@@ -1881,7 +1881,7 @@ _Primary Axis Labels with Postfix (GHZ) and Secondary Axis Labels withPrefix ($)
 
 _Secondary Axis EdgeLabelsDrawingMode [Shift]_
 
-![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisLabelAligns.png](Chart-Controls_images/Chart-Controls_img166.png)
+![Chart-Controls_images166](Chart-Controls_images/Chart-Controls_img166.png)
 
 
 
@@ -1903,13 +1903,13 @@ Smart axis labels are useful in the following scenarios:
 Axis Type Double: In cases where axis ranges have values that are so large (e.g., millions or trillions) that the labels use too much room on the axis. Smart axis labels are rendered with suffixes based on the data range value. For example, “M” will be appended to all labels with million values—1,000,000 will be displayed as 1M.
 
 Axis Type DateTime: In cases where LabelDateTimeFormat is set to Default, the labels will appear too large displaying “MM/dd/yyyy hh:mm tt”. Smart labels calculate the data range and reduce the labels. For example, only “MM/dd” would be displayed depending upon the interval between two labels. 
-![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img167.png)
+![Chart-Controls_images167](Chart-Controls_images/Chart-Controls_img167.png)
 
 
 
 Axis Type TimeSpan: In cases where the time span is set with intervals of hours, smart labels can convert and display when there is a change with the hours. For example, 12:00  to 15:00 will be displayed as 12:00:00. … 1 … 2 … … … 12 … 13 … 14 … 15:00:00 
 
-![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img168.png)
+![Chart-Controls_images168](Chart-Controls_images/Chart-Controls_img168.png)
 
 
 

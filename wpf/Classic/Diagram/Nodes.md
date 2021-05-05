@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes in WPF Wizard Control control | Syncfusion
-description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control and more.
+title: Nodes in WPF Diagram Control | Syncfusion
+description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
@@ -1975,7 +1975,7 @@ diagramModel.Nodes.Add(node1)
 
 
 {% endhighlight   %}
-![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png)
+![Nodes_images19](Nodes_images/Nodes_img19.png)
 
 
 
