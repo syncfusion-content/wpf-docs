@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Button | WPF | Syncfusion
-description: Learn how to add WPF Button (ButtonAdv) control and its basic features like image sizing options and size modes to an application here. 
+title: Getting Started with WPF Button control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Button (ButtonAdv) control, its elements and more.
 platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
 
-# Getting Started with Button
+# Getting Started with WPF Button (ButtonAdv)
 
 This section provides an overview of how to work with Button control. It describes the control structure, the control initialization  and the image setting to the control.
 

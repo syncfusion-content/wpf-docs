@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping the items in WPF CheckListBox control | Syncfusion
-description: This section describes how to group the Checklistbox items present in the CheckListBox and its basic features.
+title: Grouping Items in WPF CheckedListBox control | Syncfusion
+description: Learn here all about Grouping Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Grouping in WPF CheckListBox
+# Grouping Items in WPF CheckedListBox (CheckListBox)
 
  By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are in the listed view. We can group the `CheckListBox` items by adding the group description to the `CollectionView.GroupDescriptions` collection.
 

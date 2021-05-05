@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfChart WPF.
-description: Essental WPF Chart (SfChart) supports serialization and deserialization to save the settings of the chart and reload.
+title: Positioning Data Markers in WPF Charts control | Syncfusion
+description: Learn here all about Positioning Data Markers support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Positioning the Data Markers in WPF Charts (SfChart)
+# Positioning Data Markers in WPF Charts (SfChart)
 
 The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zooming and Panning support in Syncfusion SfChart WPF
-description: This section explains how to add ZoomPanBehavior to the chart and its features such as zooming types, zooming modes, events, and methods.
+title: Zooming and Panning in WPF Charts control | Syncfusion
+description: Learn here all about Zooming and Panning support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

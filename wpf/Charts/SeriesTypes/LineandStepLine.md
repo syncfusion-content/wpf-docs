@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line and Step Line Charts| SfChart | Wpf | Syncfusion
-description: This section explains Line and Area Charts and its properties for customization in WPF Charts (SfChart)
+title: Line and StepLine Chart in WPF Charts control | Syncfusion
+description: Learn here all about Line and StepLine Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Line and Step Line Charts in WPF (SfChart)
+# Line and StepLine in WPF Charts (SfChart)
 
 ## Line Chart
 

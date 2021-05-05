@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Annotation| SfChart | Wpf | Syncfusion
-description: Annotation feature is to mark the specific area of interest in the chart area in WPF Chart (SfChart).
+title: Annotations in WPF Charts control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
-# Annotations in WPF Chart (SfChart)
+# Annotations in WPF Charts (SfChart)
 
 SfChart supports Annotations, which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using Annotations. 
 
