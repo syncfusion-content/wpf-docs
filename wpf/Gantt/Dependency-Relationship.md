@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dependency Relationship| Gantt | Wpf | Syncfusion
-description: dependency relationship
+title: Dependency Relationship in WPF Gantt control | Syncfusion
+description: Learn about Dependency Relationship support in Syncfusion WPF Gantt control and more.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Dependency Relationship
+# Dependency Relationship in WPF Gantt
 
 Dependency relationship is the relationship between two tasks. These relationship has been categorized into four types based on the start and finish date of the task. They are:
 
@@ -20,7 +20,7 @@ Finish-to-start—You cannot start a task until the other task is completed.
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img1.png)
+![Dependency-Relationship_img1](Dependency-Relationship_images/Dependency-Relationship_img1.png)
 
 
 
@@ -28,7 +28,7 @@ Finish-to-finish—You cannot finish a task until the other task is completed.
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img2.png)
+![Dependency-Relationship_img2](Dependency-Relationship_images/Dependency-Relationship_img2.png)
 
 
 
@@ -36,7 +36,7 @@ Start-to-start—You cannot start a task until the other task is also started.
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img3.png)
+![Dependency-Relationship_img3](Dependency-Relationship_images/Dependency-Relationship_img3.png)
 
 
 
@@ -44,7 +44,7 @@ Start-to-Finish—You cannot finish a task until another the other task is start
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img4.png)
+![Dependency-Relationship_img4](Dependency-Relationship_images/Dependency-Relationship_img4.png)
 
 
 
@@ -118,7 +118,7 @@ The following image shows the Dependency Relationship:
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img5.png)
+![Dependency-Relationship_img5](Dependency-Relationship_images/Dependency-Relationship_img5.png)
 
 
 
@@ -173,11 +173,11 @@ NA</td></tr>
 
 The following image shows the Predecessor in Manual Mode:
 
-![](Dependency-Relationship_images/Predecessors ManualMode.png)
+![Predecessors ManualMode](Dependency-Relationship_images/Predecessors ManualMode.png)
 
 The following image shows the Predecessor in Auto Mode:
 
-![](Dependency-Relationship_images/Predecessors AutoMode.png)
+![Predecessors AutoMode](Dependency-Relationship_images/Predecessors AutoMode.png)
 
 ### Editing Predecessors
 
@@ -215,7 +215,7 @@ This helps to change the dependency relationships and resources of the tasks dyn
 
 
 
-![](Dependency-Relationship_images/Dependency-Relationship_img6.png)
+![Dependency-Relationship_img6](Dependency-Relationship_images/Dependency-Relationship_img6.png)
 
 
 

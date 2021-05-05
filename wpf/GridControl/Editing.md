@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in GridControl | WPF | Syncfusion
-description: Learn here about how to support clipboard operation, undo or redo operation in Syncfusion WPF GridControl.
+title: Editing in WPF GridControl control | Syncfusion
+description: Learn about Editing support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Editing in GridControl
+# Editing in WPF GridControl
 
 This section explains the clipboard and undo redo support of Grid control.
 

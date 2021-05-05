@@ -1,7 +1,7 @@
 ---
 layout: post
-title: InputMessageTip in WPF GridControl | Syncfusion
-description: Learn here about how to set the input message tip of Syncfusion WPF GridControl for specific cell and row and column.
+title: Input Message Tip in WPF GridControl control | Syncfusion
+description: Learn about Input Message Tip support in Syncfusion WPF GridControl control and more.
 platform: WPF
 control: GridControl
 documentation: ug

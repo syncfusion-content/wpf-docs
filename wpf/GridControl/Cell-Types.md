@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell-Types | GridControl | wpf | Syncfusion
-description: Learn here about the list of different cell types (built-in, custom) of the grid for Syncfusion Essential WPF.
+title: Cell Types in WPF GridControl control | Syncfusion
+description: Learn about Cell Types support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: Grid Control
 documentation: ug
 ---
 
-# Cell Types in GridControl
+# Cell Types in WPF GridControl
 
 Essential Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 

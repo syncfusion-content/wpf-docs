@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTime Indicator Customization| | Wpf | Syncfusion
-description: datetime indicator customization
+title: DateTime Indicator Customization in WPF Gantt control | Syncfusion
+description: Learn about DateTime Indicator Customization support in Syncfusion WPF Gantt control and more.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# DateTime Indicator Customization
+# DateTime Indicator Customization in WPF Gantt
 
 Essential Gantt provides support for indicating the current date or time in the Gantt chart region. You can choose the following positions in the Gantt chart region for the DateTime indicator:
 
@@ -111,7 +111,7 @@ The following image shows the resultant output:
 
 
 
-![](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png)
+![DateTime-Indicator-Customization_img1](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png)
 
 
 

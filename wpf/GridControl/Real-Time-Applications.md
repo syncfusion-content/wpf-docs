@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Real Time Applications in WPF GridControl | Syncfusion
-description: Learn here about how to use the application with high frequency updates in the Syncfusion WPF GridControl.
+title: Real Time Applications in WPF GridControl control | Syncfusion
+description: Learn about Real Time Applications support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: Grid
 documentation: ug
 ---
 
-# Real Time Applications
+# Real Time Applications in WPF GridControl
 
 Grids can be adopted in many real time applications where the database is of crucial importance. As such applications are widely spread; the grids are indispensably used world-wide.  This section elaborates on some of the real time applications which can use Essential Grid.
 

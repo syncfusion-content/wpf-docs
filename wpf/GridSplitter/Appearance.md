@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF SfGridSplitter control | Syncfusion
-description: Learn about UI customization and  styling support in Syncfusion WPF SfGridSplitter control and more details about the control features.
+title: Appearance in WPF GridSplitter control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF GridSplitter (SfGridSplitter) control and more.
 platform: wpf
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Appearance in WPF SfGridSplitter
+# Appearance in WPF GridSplitter (SfGridSplitter)
 
 This section explains different UI customization and styling support available in [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) control.
 

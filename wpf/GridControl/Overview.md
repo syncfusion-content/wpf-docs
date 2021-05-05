@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF Grid Control | Excel like Grid | Syncfusion
-description: This section provides an overview of the cell grid and it's key features for Syncfusion Essential WPF.
+title: About WPF GridControl control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF GridControl control, its elements and more details.
 platform: wpf
 control: Grid
 documentation: ug
 ---
 
-# GridControl (Cell Grid)
+# WPF GridControl Overview
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 

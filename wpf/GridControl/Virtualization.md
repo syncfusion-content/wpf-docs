@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization of GridControl | wpf | Syncfusion
-description: Learn here about how grid works in virtualize the cells and its modes of the Syncfusion WPF GridControl.
+title: Virtualization in WPF GridControl control | Syncfusion
+description: Learn about Virtualization support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: Grid Control
 documentation: ug
 ---
 
-# Virtualization of the Grid
+# Virtualization in WPF GridControl
 
 This section covers the below grid virtualization topics:
 

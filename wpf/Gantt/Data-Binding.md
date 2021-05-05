@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding| Gantt | Wpf | Syncfusion
-description: data binding
+title: Data Binding in WPF Gantt control | Syncfusion
+description: Learn about Data Binding support in Syncfusion WPF Gantt control and more.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF Gantt
 
 ## TaskDetails Binding
 
@@ -112,7 +112,7 @@ The following image shows the BindingTask Details:
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data-Binding_img1](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -417,7 +417,7 @@ The following image shows the External Property Binding:
 
 
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![Data-Binding_img2](Data-Binding_images/Data-Binding_img2.png)
 
 
 

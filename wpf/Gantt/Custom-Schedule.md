@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Schedule| Gantt | Wpf | Syncfusion
-description: custom schedule
+title: Custom Schedule in WPF Gantt control | Syncfusion
+description: Learn about Custom Schedule support in Syncfusion WPF Gantt control and more.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Custom Schedule
+# Custom Schedule in WPF Gantt
 
 Essential Gantt provides the custom schedule support that allows you to define your own schedule for Gantt to track the progress of projects. You can define the schedule for any measurement unit or for different types of date time formats namely quarterly basis scale and so on.
 
@@ -212,7 +212,7 @@ The following image shows Custom Schedule:
 
 
 
-![](Custom-Schedule_images/Custom-Schedule_img1.png)
+![Custom-Schedule_img1](Custom-Schedule_images/Custom-Schedule_img1.png)
 
 
 

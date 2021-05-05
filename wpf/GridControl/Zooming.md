@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zoom In and Zoom Out | GridControl | wpf | Syncfusion
-description: Learn here about how to change the zooming levels of the Syncfusion WPF GridControl and its property.
+title: Zooming in WPF GridControl control | Syncfusion
+description: Learn about Zooming support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Zoom In and Zoom Out
+# Zooming in WPF GridControl
 
 This feature enables the user to change the zoom level of the Grid control that brings either more or fewer cells into the view. By zooming in you can get a magnified view of the grid cells, and by zooming out you can bring more cells in to the view. This does not change the underlying size of Grid control, and the printout of the Grid control remains constant, regardless of the selected zoom scale.
 

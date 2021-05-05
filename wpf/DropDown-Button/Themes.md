@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Themes | Dropdown Button Control | WPF | Syncfusion
-description: This section explains about different themes for dropdown button control and how to implement those themes to the control.
+title: Themes in WPF Dropdown Button control | Syncfusion
+description: Learn here all about Themes support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

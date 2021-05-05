@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdown Menu Items | Dropdown Button Control | WPF | Syncfusion
-description: This section explores how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
+title: Dropdown Menu Items in WPF Dropdown Button control | Syncfusion
+description: Learn here all about Dropdown Menu Items support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

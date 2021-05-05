@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of GridControl | WPF | Syncfusion
-description: Learn here about customize the appearance of grid in the Syncfusion WPF GridControl and different cell styles.
+title: Appearance in WPF GridControl control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Appearance of GridControl
+# Appearance in WPF GridControl
 
 You can customize the appearance of the grid to the cell-level using our Grid properties.
 

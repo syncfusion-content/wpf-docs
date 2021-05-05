@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Covered Ranges of WPF GridControl | Syncfusion
-description: Learn here about how to set the covered ranges in the Syncfusion WPF GridControl and its functionalities.
+title: Covered Ranges in WPF GridControl control | Syncfusion
+description: Learn about Covered Ranges support in Syncfusion WPF GridControl control and more.
 platform: WPF
 control: GridControl
 documentation: ug
 ---
 
-# Covered cells in GridControl
+# Covered Ranges in WPF GridControl
 
 This section explains the covered range of cells in WPF GridControl.
 

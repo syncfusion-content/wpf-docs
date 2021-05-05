@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range and Record selection in WPF Grid | Syncfusion
-description: This section will explains about the range and record selection options and different selection modes available in WPF GridControl.
+title: Selection in WPF GridControl control | Syncfusion
+description: Learn about Selection support in Syncfusion WPF GridControl control and more.
 platform: wpf
 control: GridControl
 documentation: ug

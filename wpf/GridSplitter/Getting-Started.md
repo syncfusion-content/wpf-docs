@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF SfGridSplitter control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF SfGridSplitter control and more details about the control features.
+title: Getting Started with WPF GridSplitter control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF GridSplitter (SfGridSplitter) control, its elements and more details.
 platform: WPF
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Getting Started with WPF SfGridSplitter
+# Getting Started with WPF GridSplitter (SfGridSplitter)
 
 This section explains how to create a WPF [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) and explains about its structure.
 

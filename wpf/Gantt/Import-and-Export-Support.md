@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Import and Export Support| Gantt | Wpf | Syncfusion
-description: import and export support
+title: Import and Export Support in WPF Gantt control | Syncfusion
+description: Learn about Import and Export Support support in Syncfusion WPF Gantt control and more.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Import and Export Support
+# Import and Export Support in WPF Gantt
 
 Essential Gantt allows you to export and import the task details. You can export the task details as XML files and import them again when needed. You can open the exported XML files in MS Project too. The XML file, exported from MS Project can also be opened in Gantt control. You can import and export the details using the provided APIs.
 
@@ -116,7 +116,7 @@ The following image shows XML Export Import:
 
 
 
-![](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)
+![Import-and-Export-Support_img1](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)
 
 
 
@@ -129,7 +129,7 @@ The following image shows Importing the exported document in MS Project:
 
 
 
-![](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)
+![Import-and-Export-Support_img2](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)
 
 
 
