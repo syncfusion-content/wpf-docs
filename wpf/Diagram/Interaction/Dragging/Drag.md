@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dragging in WPF Diagram control | Syncfusion
-description: Learn here all about Dragging support in Syncfusion WPF Diagram (SfDiagram) control and more.
+description: Learn here all about Dragging support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
