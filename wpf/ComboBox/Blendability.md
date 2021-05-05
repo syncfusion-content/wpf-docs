@@ -16,18 +16,18 @@ To create ComboBoxAdv instance in Expression Blend:
 1. Open Expression Blend.
 2. On the File menu, select New Project. The New Project dialog box opens.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
+   ![ComboBoxAdv_images5](ComboBoxAdv_images/ComboBoxAdv_img5.png)
 
 3. In the Project type’s pane, select WPF,and then select WPF Application.
 4. In the Name field, type the name of the project, and then click OK.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
+   ![ComboBoxAdv_images6](ComboBoxAdv_images/ComboBoxAdv_img6.png)
 
 5. On the Window menu, select Assets. The Assets Library dialog box opens.
 6. In the Search box, type ComboBoxAdv. The search results are displayed.
 7. Drag the ComboBoxAdv control to Design view. An instance of the ComboBoxAdv control is created. 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img7.png)
+   ![ComboBoxAdv_images7](ComboBoxAdv_images/ComboBoxAdv_img7.png)
 
 ## Appearance
 

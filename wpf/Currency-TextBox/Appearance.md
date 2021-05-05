@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF Currency TextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF Currency TextBox control and more.
+description: Learn about Appearance support in Syncfusion WPF Currency TextBox control, its elements and more details.
 platform: wpf
 control: CurrencyTextBox
 documentation: ug

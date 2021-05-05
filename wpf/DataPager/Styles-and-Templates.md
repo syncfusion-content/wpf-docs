@@ -26,7 +26,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/expressionblend.png](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+![Styles-and-Templates_images1](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 
 
@@ -36,7 +36,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/object.png](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+![Styles-and-Templates_images2](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
 
 
@@ -45,7 +45,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+![Styles-and-Templates_images3](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
 
 
@@ -67,7 +67,7 @@ This section explains how to edit the style of SfDataPager in Visual Studio Desi
 
 
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/edittemplate.png](Styles-and-Templates_images/Styles-and-Templates_img4.png)
+![Styles-and-Templates_images4](Styles-and-Templates_images/Styles-and-Templates_img4.png)
 
 
 
@@ -76,7 +76,7 @@ This section explains how to edit the style of SfDataPager in Visual Studio Desi
 
 
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopyvisual.png](Styles-and-Templates_images/Styles-and-Templates_img5.png)
+![Styles-and-Templates_images5](Styles-and-Templates_images/Styles-and-Templates_img5.png)
 
 
 
