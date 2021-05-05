@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpreadsheetRibbon Support in WPF Wizard Control control | Syncfusion
-description: Learn here all about SpreadsheetRibbon Support support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
+description: Learn here all about SpreadsheetRibbon support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
