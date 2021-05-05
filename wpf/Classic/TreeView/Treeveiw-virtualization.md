@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TreeViewVirtualization | Syncfusion
-description: This section explains about how to reduce the loading time of the treeviewitems in TreeView for syncfusion Essential Wpf. 
+title: TreeViewVirtualization in WPF Wizard Control control | Syncfusion
+description: Learn here all about TreeViewVirtualization support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Virtualization in WPF TreeView(TreeViewAdv).
+# TreeViewVirtualization in WPF TreeViewAdv (Classic)
 
 The TreeViewVirtualization feature enables users to reduce the loading time of TreeViewItems regardless of the items count.
 

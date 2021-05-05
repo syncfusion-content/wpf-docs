@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time Zone| SfSchedule | Wpf | Syncfusion
-description: This section explains about how to use the time zone for ScheduleAppointment in WPF Scheduler control
+title: Time-Zone in WPF SfSchedule Control | Syncfusion
+description: Learn here all about Time-Zone support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Time Zone Of WPF SfSchedule
+# Time-Zone in WPF Schedule (Classic)
 
 In Schedule, appointments can be created at various time zones using the properties StartTimeZone and EndTimeZone of the ScheduleAppointment.
 {% highlight c# %}

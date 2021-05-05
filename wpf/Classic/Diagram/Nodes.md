@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nodes | Diagram | wpf | Syncfusion
-description: nodes
+title: Nodes in WPF Diagram Control | Syncfusion
+description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Nodes
+# Nodes in WPF Diagram (classic)
 
 Nodes are graphical objects that can be placed on the page. It is usually used to represent visual data to be placed on the page.
 
@@ -384,7 +384,7 @@ Steps for adding a node to the diagram using the SymbolPalette.
 
 
 
-![](Nodes_images/Nodes_img1.jpeg)
+![Nodes_img1](Nodes_images/Nodes_img1.jpeg)
 
 
 
@@ -396,7 +396,7 @@ Item Selected
 
 
 
-![](Nodes_images/Nodes_img2.jpeg)
+![Nodes_img2](Nodes_images/Nodes_img2.jpeg)
 
 
 
@@ -407,7 +407,7 @@ Item Dragged
 
 
 
-![](Nodes_images/Nodes_img3.jpeg)
+![Nodes_img3](Nodes_images/Nodes_img3.jpeg)
 
 
 
@@ -606,7 +606,7 @@ The following is a list of built-in shapes.
 
 
 
-![](Nodes_images/Nodes_img4.jpeg)
+![Nodes_img4](Nodes_images/Nodes_img4.jpeg)
 
 
 
@@ -615,7 +615,7 @@ Built-in Shapes
 
 
 
-![](Nodes_images/Nodes_img5.jpeg)
+![Nodes_img5](Nodes_images/Nodes_img5.jpeg)
 
 
 
@@ -753,7 +753,7 @@ diagramModel.Nodes.Add(n)
 
 {% endhighlight   %}
 
-![](Nodes_images/Nodes_img6.jpeg)
+![Nodes_img6](Nodes_images/Nodes_img6.jpeg)
 
 
 
@@ -883,7 +883,7 @@ TryCast(n.Content, Button).IsHitTestVisible = True
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img7.jpeg)
+![Nodes_img7](Nodes_images/Nodes_img7.jpeg)
 
 
 
@@ -1024,7 +1024,7 @@ Specify ContentTemplate for node.
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img8.png)
+![Nodes_img8](Nodes_images/Nodes_img8.png)
 
 
 
@@ -1232,7 +1232,7 @@ The steps to rotate a node are as follows.
 
 
 
-![](Nodes_images/Nodes_img9.jpeg)
+![Nodes_img9](Nodes_images/Nodes_img9.jpeg)
 
 
 
@@ -1296,7 +1296,7 @@ No</td></tr>
 
 
 
-![](Nodes_images/Nodes_img10.png)
+![Nodes_img10](Nodes_images/Nodes_img10.png)
 
 
 
@@ -1307,7 +1307,7 @@ After rotating the Group
 
 
 
-![](Nodes_images/Nodes_img11.png)
+![Nodes_img11](Nodes_images/Nodes_img11.png)
 
 
 
@@ -1348,7 +1348,7 @@ Resizing a node affects the node's width and height. To resize a node, follow th
 
 
 
-![](Nodes_images/Nodes_img12.jpeg)
+![Nodes_img12](Nodes_images/Nodes_img12.jpeg)
 
 
 
@@ -1461,7 +1461,7 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img13.jpeg)
+![Nodes_img13](Nodes_images/Nodes_img13.jpeg)
 
 
 
@@ -1663,7 +1663,7 @@ diagramModel.Nodes.Add(n)
 
 {% endhighlight   %}
 
-![](Nodes_images/Nodes_img14.jpeg)
+![Nodes_img14](Nodes_images/Nodes_img14.jpeg)
 
 
 
@@ -1709,7 +1709,7 @@ A user can specify a label at run time by following the below mentioned steps.
 
 
 
-![](Nodes_images/Nodes_img15.jpeg)
+![Nodes_img15](Nodes_images/Nodes_img15.jpeg)
 
 
 
@@ -1770,7 +1770,7 @@ n.IsLabelEditable = True
 
 
 {% endhighlight  %}
-![](Nodes_images/Nodes_img16.png)
+![Nodes_img16](Nodes_images/Nodes_img16.png)
 
 
 
@@ -1857,7 +1857,7 @@ This will place the label at the center of the node.
 
 
 
-![](Nodes_images/Nodes_img17.jpeg)
+![Nodes_img17](Nodes_images/Nodes_img17.jpeg)
 
 
 
@@ -1909,7 +1909,7 @@ n.Label = 45
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img18.png)
+![Nodes_img18](Nodes_images/Nodes_img18.png)
 
 
 
@@ -1975,7 +1975,7 @@ diagramModel.Nodes.Add(node1)
 
 
 {% endhighlight   %}
-![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png)
+![Nodes_images19](Nodes_images/Nodes_img19.png)
 
 
 
@@ -2100,7 +2100,7 @@ diagramModel.Nodes.Add(n)
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img20.jpeg)
+![Nodes_img20](Nodes_images/Nodes_img20.jpeg)
 
 
 
@@ -2183,7 +2183,7 @@ diagramModel.Nodes.Add(node)
 
 {% endhighlight  %}
 
-![](Nodes_images/Nodes_img21.jpeg)
+![Nodes_img21](Nodes_images/Nodes_img21.jpeg)
 
 
 
@@ -2229,7 +2229,7 @@ Node can be selected at run time just by clicking on the node.
 
 
 
-![](Nodes_images/Nodes_img22.png)
+![Nodes_img22](Nodes_images/Nodes_img22.png)
 
 
 
@@ -2238,7 +2238,7 @@ Node before selection
 
 
 
-![](Nodes_images/Nodes_img23.png)
+![Nodes_img23](Nodes_images/Nodes_img23.png)
 
 
 
@@ -2301,7 +2301,7 @@ Items can be deselected by clicking on any part of the drawing area other than t
 
 
 
-![](Nodes_images/Nodes_img24.jpeg)
+![Nodes_img24](Nodes_images/Nodes_img24.jpeg)
 
 
 
@@ -2886,7 +2886,7 @@ Following is a sample screenshot of customized resizer that has only four corner
 
 
 
-![](Nodes_images/Nodes_img25.png)
+![Nodes_img25](Nodes_images/Nodes_img25.png)
 
 
 
@@ -3189,7 +3189,7 @@ Essential Diagram for WPF provides layout representation for nodes. Numerous nod
 
 
 
-![](Nodes_images/Nodes_img26.png)
+![Nodes_img26](Nodes_images/Nodes_img26.png)
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization Support | Chart(Classic) | wpf | Syncfusion
-description: Localization Support
+title: Localization Support in WPF Chart Control | Syncfusion
+description: Learn here all about Localization Support in Syncfusion WPF Chart (Classic) control, its elements and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Localization Support
+# Localization Support in WPF Chart (Classic)
 
 Localization is the process of making your application multi-lingual, by formatting content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location (e.g. En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain). Syncfusion Chart allows you to set custom resource through the Resx file. You can simply give the string values in the resource file for a specific culture and set the culture in the application. The given string values are set to the Chart that does not affect the Code Block of the chart.  
 
@@ -33,7 +33,7 @@ Use the prescribed naming convention as it is mandatory.
 
 The following screenshot explains the addition of a Resource file to the application. 
 
-![C:/Users/murugavelp/Pictures/doc.png](Chart-Controls_images/Chart-Controls_img232.png)
+![Chart-Controls_images232](Chart-Controls_images/Chart-Controls_img232.png)
 
 
 
@@ -41,7 +41,7 @@ Enter the “Name” and “Value” in the Resource file.
 
 The String Property names used in the  Chart are given in the Properties table. This is explained in the following screenshot.
 
-![C:/Users/murugavelp/Pictures/doc1.png](Chart-Controls_images/Chart-Controls_img233.png)
+![Chart-Controls_images233](Chart-Controls_images/Chart-Controls_img233.png)
 
 
 
@@ -55,7 +55,7 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img234.png)
+![Chart-Controls_img234](Chart-Controls_images/Chart-Controls_img234.png)
 
 
 <table>

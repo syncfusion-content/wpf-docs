@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Groups | Diagram | wpf | Syncfusion
-description: groups
+title: Groups in WPF Diagram Control | Syncfusion
+description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Groups
+# Groups in WPF Diagram (classic)
 
 Essential Diagram WPF provides support to group and ungroup nodes. Grouping feature comes in handy when you want to apply the same edits to a number of objects and yet retain their individuality. All the operations performed on the group also affect the individual items in the group. However any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities.
 
@@ -261,7 +261,7 @@ The following screenshot illustrates a group of two nodes created by using code 
 
 
 
-![](Groups_images/Groups_img1.jpeg)
+![Groups_img1](Groups_images/Groups_img1.jpeg)
 
 
 
@@ -301,7 +301,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img2.jpeg)
+   ![Groups_images2](Groups_images/Groups_img2.jpeg)
 
 
 
@@ -310,7 +310,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img3.jpeg)
+   ![Groups_images3](Groups_images/Groups_img3.jpeg)
 
 
 
@@ -323,7 +323,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img4.jpeg)
+   ![Groups_images4](Groups_images/Groups_img4.jpeg)
 
 
 
@@ -336,7 +336,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img5.jpeg)
+   ![Groups_images5](Groups_images/Groups_img5.jpeg)
 
 
 
@@ -362,7 +362,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img6.jpeg)
+   ![Groups_images6](Groups_images/Groups_img6.jpeg)
 
 
 
@@ -373,7 +373,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img7.jpeg)
+   ![Groups_images7](Groups_images/Groups_img7.jpeg)
 
 
 
@@ -384,7 +384,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img8.jpeg)
+   ![Groups_images8](Groups_images/Groups_img8.jpeg)
 
 
 
@@ -400,7 +400,7 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-![](Groups_images/Groups_img9.jpeg)
+![Groups_img9](Groups_images/Groups_img9.jpeg)
 
 
 
@@ -411,7 +411,7 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-![](Groups_images/Groups_img10.jpeg)
+![Groups_img10](Groups_images/Groups_img10.jpeg)
 
 
 
@@ -422,7 +422,7 @@ Once a group is edited, the group's selection rectangle updates its area to fit 
 
 
 
-![](Groups_images/Groups_img11.jpeg)
+![Groups_img11](Groups_images/Groups_img11.jpeg)
 
 
 
@@ -453,7 +453,7 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   ![](Groups_images/Groups_img12.jpeg)
+   ![Groups_images12](Groups_images/Groups_img12.jpeg)
 
 
 
@@ -464,7 +464,7 @@ The following steps illustrate how to create connections to a group.
 
 
 
-   ![](Groups_images/Groups_img13.jpeg)
+   ![Groups_images13](Groups_images/Groups_img13.jpeg)
 
 
 
@@ -482,7 +482,7 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   ![](Groups_images/Groups_img14.jpeg)
+   ![Groups_images14](Groups_images/Groups_img14.jpeg)
 
 
 
@@ -493,7 +493,7 @@ The following steps illustrate how to create connections to individual objects i
 
 
 
-   ![](Groups_images/Groups_img15.jpeg)
+   ![Groups_images15](Groups_images/Groups_img15.jpeg)
 
 
 
@@ -715,7 +715,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img16.jpeg)
+   ![Groups_images16](Groups_images/Groups_img16.jpeg)
 
 
 
@@ -728,7 +728,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img17.jpeg)
+   ![Groups_images17](Groups_images/Groups_img17.jpeg)
 
 
 
@@ -741,7 +741,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img18.jpeg)
+   ![Groups_images18](Groups_images/Groups_img18.jpeg)
 
 
 
@@ -1270,7 +1270,7 @@ Lan1.Visible = False
 
 {% endhighlight  %}
 
-![](Groups_images/Groups_img19.png)
+![Groups_img19](Groups_images/Groups_img19.png)
 
 
 
@@ -1279,7 +1279,7 @@ Before hiding the layer
 
 
 
-![](Groups_images/Groups_img20.png)
+![Groups_img20](Groups_images/Groups_img20.png)
 
 
 

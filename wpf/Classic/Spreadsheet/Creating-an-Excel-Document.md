@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating an Excel Document | Spreadsheet | wpf | Syncfusion
-description: creating an excel document 
+title: Creating an Excel Document in WPF Wizard Control control | Syncfusion
+description: Learn here all about Creating an Excel Document support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Creating an Excel Document 
+# Creating an Excel Document in WPF SpreadsheetControl (Classic)
 
 When you add the Spreadsheet control to the application, it will be loaded with a blank workbook. You can save this as an Excel document. You can also create new workbooks if required.
 

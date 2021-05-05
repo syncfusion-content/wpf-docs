@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Command Support | Spreadsheet | wpf | Syncfusion
-description: command support
+title: Command Support in WPF Wizard Control control | Syncfusion
+description: Learn here all about Command Support in Syncfusion WPF SpreadsheetControl (Classic) control, its elements and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Command Support
+# Command Support in WPF SpreadsheetControl (Classic)
 
 The Spreadsheet control provides the built-in commands to show case the features available in Spreadsheet. It can be executed in the Spreadsheet whenever it is bound to Command Property. 
 

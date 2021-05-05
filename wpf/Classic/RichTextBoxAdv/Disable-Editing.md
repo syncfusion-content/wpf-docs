@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Disable Editing| RichTextBoxAdv | Wpf | Syncfusion
-description: disable editing
+title: Disable-Editing in WPF Wizard Control control | Syncfusion
+description: Learn here all about Disable-Editing support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Disable Editing
+# Disable-Editing in WPF RichTextBoxAdv (Classic)
 
 You can disable editing in RichTextBoxAdv by enabling the property called IsReadOnly.It will not allow the user to edit the content.
 

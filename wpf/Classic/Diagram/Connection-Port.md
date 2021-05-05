@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connection Port | Diagram | wpf | Syncfusion
-description: connection port
+title: Connection Port in WPF Diagram Control | Syncfusion
+description: Learn here all about Connection Port support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Connection Port
+# Connection Port in WPF Diagram (classic)
 
 Essential Diagram WPF provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
 
@@ -207,7 +207,7 @@ This adds a port to the node at the location (50,0) with respect to the node.
 
 
 
-![](Connection-Port_images/Connection-Port_img1.jpeg)
+![Connection-Port_img1](Connection-Port_images/Connection-Port_img1.jpeg)
 
 
 
@@ -428,7 +428,7 @@ diagramModel.Nodes.Add(node)
 
 {% endhighlight  %}
 
-![](Connection-Port_images/Connection-Port_img2.jpeg)
+![Connection-Port_img2](Connection-Port_images/Connection-Port_img2.jpeg)
 
 Port Shapes
 
@@ -596,7 +596,7 @@ diagramModel.Nodes.Add(node)
 {% endhighlight %}
 
 
-![](Connection-Port_images/Connection-Port_img3.jpeg)
+![Connection-Port_img3](Connection-Port_images/Connection-Port_img3.jpeg)
 
 Port Style
 
@@ -662,7 +662,7 @@ Appearance of the ConnectionPort can be customized by applying style for the Cus
 
 {% endhighlight  %}
 
-![](Connection-Port_images/Connection-Port_img4.png)
+![Connection-Port_img4](Connection-Port_images/Connection-Port_img4.png)
 
 Custom ConnectionPort using CustomPathStyle
 {:.caption}
@@ -923,7 +923,7 @@ diagramModel.Connections.Add(o1)
 
 {% endhighlight  %}
 
-![](Connection-Port_images/Connection-Port_img5.jpeg)
+![Connection-Port_img5](Connection-Port_images/Connection-Port_img5.jpeg)
 
 Connecting to Port
 {:.caption}

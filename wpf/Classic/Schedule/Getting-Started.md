@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF Scheduler | Syncfusion
-description: This section explains how to integrate WPF Scheduler into an application and enable its basic features with example.
+title: Getting Started with WPF SfSchedule Control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Getting Started of WPF SfSchedule control
+# Getting Started with WPF Schedule (Classic)
 This section gives you an overview of how to work with [SfSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) and also includes a walk-through to configure real-time `SfSchedule` command.
 
 ## Assembly deployment

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bind the content of the RichTextBoxAdv By Using MVVM| RichTextBoxAdv | Wpf | Syncfusion
-description: bind the content of the richtextboxadv by using mvvm
+title: Bind the content in RichTextBoxAdv By Using MVVM | Syncfusion
+description: Learn here all about Bind the content of the RichTextBoxAdv By Using MVVM support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Bind the content of the RichTextBoxAdv By Using MVVM
+# Bind the content of the WPF RichTextBoxAdv (Classic) By Using MVVM
 
 You can bind the content of a RichTextBoxAdv control in XAML (designer) by defining a MVVM extension for the XAMLText or HTMLText property. You cannot update the XAMLText or HTMLText property dynamically by modifying content in the RichTextBoxAdv, but you can update it by accessing the XAMLText or HTMLText property (In Getter method).
 

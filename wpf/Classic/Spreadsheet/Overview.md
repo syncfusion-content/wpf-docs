@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Spreadsheet | wpf | Syncfusion
-description: overview
+title: About WPF Spreadsheet Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF SpreadsheetControl (Classic) control, its elements and more.
 platform: wpf
 control: Spreadsheet
 documentation: ug
 ---
 
-# Overview
+# WPF SpreadsheetControl (Classic) Overview
 
 Spreadsheet control enables you to create, manipulate and save an Excel document with the native excel format, without depending on Microsoft Excel. It does not require Microsoft Excel to be installed in the machine. 
 

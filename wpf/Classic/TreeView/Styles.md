@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Styles in TreeViewAdv | Syncfusion
-description: This section explains about the styling customization of elements in TreeView control for syncfusion Essential Wpf.
+title: Styles in WPF TreeViewAdv Control | Syncfusion
+description: Learn here all about Styles support in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Styling in WPF TreeView(TreeViewAdv)
+# Styles in WPF TreeViewAdv (Classic)
 
 This section deals with the following Styles supported by TreeViewAdv control
 

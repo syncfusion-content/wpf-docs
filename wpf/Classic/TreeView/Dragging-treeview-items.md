@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WPF TreeView Items Dragging | Syncfusion
-description: This section describes about how to perform drag and drop operations in Syncfusion WPF TreeView(TreeViewAdv).
+title: Dragging TreeView items in WPF Wizard Control control | Syncfusion
+description: Learn here all about Dragging TreeView items support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Dragging TreeView Items
+# Dragging TreeView items in WPF TreeViewAdv (Classic)
 
 TreeViewAdv control enables to drag TreeView items from one location to another. This is done by enabling the AllowDragDrop property.
 

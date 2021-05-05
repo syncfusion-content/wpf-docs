@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Types | Chart(Classic) | wpf | Syncfusion
-description: Chart Types
+title: Chart-Types in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Types support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Types
+# Chart-Types in WPF Chart (Classic)
 
 ## Line Charts
 
@@ -18,7 +18,7 @@ When rendered in 3D the plot looks like a ribbon and hence such types are also r
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
-![](Chart-Controls_images/Chart-Controls_img67.jpeg)
+![Chart-Controls_img67](Chart-Controls_images/Chart-Controls_img67.jpeg)
 
 
 
@@ -96,7 +96,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Use a Fast Line chart instead of a Line chart when displaying a large number of data points in the chart. This chart type improves performance by foregoing some features in the Line chart.
 
-![](Chart-Controls_images/Chart-Controls_img68.jpeg)
+![Chart-Controls_img68](Chart-Controls_images/Chart-Controls_img68.jpeg)
 
 
 
@@ -223,7 +223,7 @@ The following code illustrates this:
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img69.png)
+![Chart-Controls_img69](Chart-Controls_images/Chart-Controls_img69.png)
 
 
 
@@ -266,7 +266,7 @@ Pie, Bar, Stacked Bar, Polar, Radar.</td></tr>
 </table>
 The following screenshot depicts a FastSpline chart:
 
-![](Chart-Controls_images/Chart-Controls_img70.png)
+![Chart-Controls_img70](Chart-Controls_images/Chart-Controls_img70.png)
 
 
 
@@ -346,7 +346,7 @@ When rendered in 3D the plot looks like a ribbon and hence such types are also r
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
-![](Chart-Controls_images/Chart-Controls_img71.jpeg)
+![Chart-Controls_img71](Chart-Controls_images/Chart-Controls_img71.jpeg)
 
 
 
@@ -449,7 +449,7 @@ A Rotated Spline Chart is similar to a Spline Chart. The only difference is that
 
 The following image shows a sample Rotated Spline Chart.
 
-![](Chart-Controls_images/Chart-Controls_img72.jpeg)
+![Chart-Controls_img72](Chart-Controls_images/Chart-Controls_img72.jpeg)
 
 
 
@@ -501,7 +501,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-![](Chart-Controls_images/Chart-Controls_img73.jpeg)
+![Chart-Controls_img73](Chart-Controls_images/Chart-Controls_img73.jpeg)
 
 
 
@@ -602,7 +602,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-![](Chart-Controls_images/Chart-Controls_img74.jpeg)
+![Chart-Controls_img74](Chart-Controls_images/Chart-Controls_img74.jpeg)
 
 
 
@@ -731,7 +731,7 @@ To add FastBar ChartType to the application:
    ~~~
 
 
-   ![Description: C:/Users/sujithas/Desktop/DesktopFiles/Assigned wrk/2011/Images/sshot-2.png](Chart-Controls_images/Chart-Controls_img75.png)
+   ![Chart-Controls_images75](Chart-Controls_images/Chart-Controls_img75.png)
 
    
 
@@ -760,7 +760,7 @@ To run the UI WPF sample
 
    The following image shows a sample Stacking Bar Chart.
 
-   ![](Chart-Controls_images/Chart-Controls_img76.jpeg)
+   ![Chart-Controls_images76](Chart-Controls_images/Chart-Controls_img76.jpeg)
 
    
 
@@ -866,7 +866,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Frequently used in project management, a Gantt chart provides a graphical illustration of a schedule to help plan, coordinate, and track specific tasks in a project.
 
-![](Chart-Controls_images/Chart-Controls_img77.jpeg)
+![Chart-Controls_img77](Chart-Controls_images/Chart-Controls_img77.jpeg)
 
 
 
@@ -960,7 +960,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 The Tornado chart is a bar chart which shows the variability of an output to several different inputs. Variability is displayed using relative lengths of bars across a range. It is mainly used in sensitivity analysis. It shows how different random factors can influence the prognostic outcome.
 
-![](Chart-Controls_images/Chart-Controls_img78.jpeg)
+![Chart-Controls_img78](Chart-Controls_images/Chart-Controls_img78.jpeg)
 
 
 
@@ -1057,7 +1057,7 @@ In the 100 percent Stacked Bar Chart, the cumulative proportion of each stacked 
 
 The following image shows a sample Stacking Bar 100 Chart.
 
-![](Chart-Controls_images/Chart-Controls_img79.jpeg)
+![Chart-Controls_img79](Chart-Controls_images/Chart-Controls_img79.jpeg)
 
 
 
@@ -1099,7 +1099,7 @@ It is used for comparing the frequency, count, total or average of data in diffe
 
 The following image shows a multi series Column Chart.
 
-![](Chart-Controls_images/Chart-Controls_img80.jpeg)
+![Chart-Controls_img80](Chart-Controls_images/Chart-Controls_img80.jpeg)
 
 
 
@@ -1199,7 +1199,7 @@ Column Range Chart is similar to the Column Chart except that each column is ren
 
 The following figure shows a Column Range Chart.
 
-![](Chart-Controls_images/Chart-Controls_img81.jpeg)
+![Chart-Controls_img81](Chart-Controls_images/Chart-Controls_img81.jpeg)
 
 
 
@@ -1297,7 +1297,7 @@ Stacking Column Charts are similar to regular column charts except that the Y va
 
 The following image shows a sample Stacking Column Chart.
 
-![](Chart-Controls_images/Chart-Controls_img82.jpeg)
+![Chart-Controls_img82](Chart-Controls_images/Chart-Controls_img82.jpeg)
 
 
 
@@ -1417,7 +1417,7 @@ In the 100 % Stacked Column Chart, the cumulative proportion of each stacked ele
 
 The following image shows a sample Stacking Column 100 Chart.
 
-![](Chart-Controls_images/Chart-Controls_img83.jpeg)
+![Chart-Controls_img83](Chart-Controls_images/Chart-Controls_img83.jpeg)
 
 
 
@@ -1541,7 +1541,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-![](Chart-Controls_images/Chart-Controls_img84.jpeg)
+![Chart-Controls_img84](Chart-Controls_images/Chart-Controls_img84.jpeg)
 
 
 
@@ -1656,7 +1656,7 @@ The Chart type Fast Column is added in the Enum of type ChartTypes.
 
 
 
-![](Chart-Controls_images/Chart-Controls_img85.jpeg)
+![Chart-Controls_img85](Chart-Controls_images/Chart-Controls_img85.jpeg)
 
 
 
@@ -1770,7 +1770,7 @@ Run the sample.
 
 A Fast Column chart is displayed pertaining to the data source it is bound to.
 
-![](Chart-Controls_images/Chart-Controls_img86.jpeg)
+![Chart-Controls_img86](Chart-Controls_images/Chart-Controls_img86.jpeg)
 
 
 ## Area Charts
@@ -1783,7 +1783,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-![](Chart-Controls_images/Chart-Controls_img87.jpeg)
+![Chart-Controls_img87](Chart-Controls_images/Chart-Controls_img87.jpeg)
 
 
 
@@ -1876,7 +1876,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Spline Area Chart. 
 
-![](Chart-Controls_images/Chart-Controls_img88.jpeg)
+![Chart-Controls_img88](Chart-Controls_images/Chart-Controls_img88.jpeg)
 
 
 
@@ -1989,7 +1989,7 @@ Stacking Area Charts are similar to regular area charts except that the Y values
 
 The following image shows a sample Stacking Area Chart.
 
-![](Chart-Controls_images/Chart-Controls_img89.jpeg)
+![Chart-Controls_img89](Chart-Controls_images/Chart-Controls_img89.jpeg)
 
 
 
@@ -2100,7 +2100,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 100% stacked area charts are similar to regular area charts except that the y values stack to 100% on top of each other in the specified series order. In the 100% stacked area charts, the cumulative proportion of each stacked element always totals 100%. This type of chart is great to visualize the relative contribution of each series’ values to the whole.
 
-![C:/Users/michaelprabhu/Desktop/StackingArea100_WPF.png](Chart-Controls_images/Chart-Controls_img90.png)
+![Chart-Controls_images90](Chart-Controls_images/Chart-Controls_img90.png)
 
 
 
@@ -2228,7 +2228,7 @@ Reference to series owner</td></tr>
 
 Step Area Charts are similar to regular area charts except that instead of a straight line tracing the shortest path between points, the values are connected by continuous vertical and horizontal lines forming a step-like progression. Also, step area charts contain only one segment for each series.
 
-![](Chart-Controls_images/Chart-Controls_img91.jpeg)
+![Chart-Controls_img91](Chart-Controls_images/Chart-Controls_img91.jpeg)
 
 
 
@@ -2329,7 +2329,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Range Area Chart is a variation of Area Chart type that lets you plot bands of data in a chart, like Bollinger bands, weather patterns, etc. Each point in the chart is specified by 2 Y values – the lower and higher end of the band. 
 
-![](Chart-Controls_images/Chart-Controls_img92.jpeg)
+![Chart-Controls_img92](Chart-Controls_images/Chart-Controls_img92.jpeg)
 
 
 
@@ -2423,7 +2423,7 @@ The Funnel chart is a single series chart representing the data as portions of 1
 
 Funnel charts are often used to represent stages in a sales process and show the amount of potential revenue for each stage. This type of chart can be useful also in identifying potential problem areas in an organization's sales processes, for example. A funnel chart is similar to a stacked percent bar chart.
 
-![](Chart-Controls_images/Chart-Controls_img93.jpeg)
+![Chart-Controls_img93](Chart-Controls_images/Chart-Controls_img93.jpeg)
 
 
 
@@ -2537,7 +2537,7 @@ Pyramid chart is similar to the funnel chart. It is often used for geographical 
 
 The following images are some sample Pyramid Charts.
 
-![](Chart-Controls_images/Chart-Controls_img94.jpeg)
+![Chart-Controls_img94](Chart-Controls_images/Chart-Controls_img94.jpeg)
 
 
 
@@ -2652,7 +2652,7 @@ It is used to display numerical data, either discrete or continuous. Scatter cha
 
 The following image shows a multi series Scatter Chart.
 
-![](Chart-Controls_images/Chart-Controls_img95.jpeg)
+![Chart-Controls_img95](Chart-Controls_images/Chart-Controls_img95.jpeg)
 
 
 
@@ -2749,7 +2749,7 @@ The following points mark the advantages of Fast Scatter Charts over Scatter Cha
 
 The Chart type Fast Scatter is added in the Enum of type ChartTypes.
 
-![](Chart-Controls_images/Chart-Controls_img96.jpeg)
+![Chart-Controls_img96](Chart-Controls_images/Chart-Controls_img96.jpeg)
 
 
 
@@ -2824,7 +2824,7 @@ Run the sample.
 
 A Fast Scatter chart is displayed.
 
-![](Chart-Controls_images/Chart-Controls_img97.jpeg)
+![Chart-Controls_img97](Chart-Controls_images/Chart-Controls_img97.jpeg)
 
 
 
@@ -2865,7 +2865,7 @@ Though it's called a bubble chart, the data marker can be rendered as either a c
 
 The following image shows a multi series Bubble Chart.
 
-![](Chart-Controls_images/Chart-Controls_img98.jpeg)
+![Chart-Controls_img98](Chart-Controls_images/Chart-Controls_img98.jpeg)
 
 
 
@@ -2974,7 +2974,7 @@ A Candle Chart displays stock information using the High, Low, Open and Close va
 
 The following image shows a CandleChart displaying a single series. 
 
-![](Chart-Controls_images/Chart-Controls_img99.jpeg)
+![Chart-Controls_img99](Chart-Controls_images/Chart-Controls_img99.jpeg)
 
 
 
@@ -3090,7 +3090,7 @@ Hi Lo Chart is a special kind of chart that is normally used in stock analysis. 
 
 The Hi Lo Chart expect 2 Y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
-![](Chart-Controls_images/Chart-Controls_img100.jpeg)
+![Chart-Controls_img100](Chart-Controls_images/Chart-Controls_img100.jpeg)
 
 
 
@@ -3167,7 +3167,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Hi Lo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects 4 Y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-![](Chart-Controls_images/Chart-Controls_img101.jpeg)
+![Chart-Controls_img101](Chart-Controls_images/Chart-Controls_img101.jpeg)
 
 
 
@@ -3286,7 +3286,7 @@ Kagi Charts are a Japanese invention and date since the late 1870's, but were po
 
 The penetration of a prior column's high or low, by the latest closing price, alters the colors of the lines. These colors depict either a bullish or bearish pattern. Use the PriceUpColor and PriceDownColor properties to specify the colors for these two patterns. The wider the columns, the stronger the pattern.
 
-![](Chart-Controls_images/Chart-Controls_img102.jpeg)
+![Chart-Controls_img102](Chart-Controls_images/Chart-Controls_img102.jpeg)
 
 ### Data Requirements
 
@@ -3376,7 +3376,7 @@ This is a chart that plots the day-to-day increment and decrement in price. It u
 
 This chart requires 2 Y values, the high value and the low value for the specified period.
 
-![](Chart-Controls_images/Chart-Controls_img103.jpeg)
+![Chart-Controls_img103](Chart-Controls_images/Chart-Controls_img103.jpeg)
 
 
 
@@ -3488,7 +3488,7 @@ If the new closing price penetrates the previous bricks closing price in the opp
 
 Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.  
 
-![](Chart-Controls_images/Chart-Controls_img104.jpeg)
+![Chart-Controls_img104](Chart-Controls_images/Chart-Controls_img104.jpeg)
 
 
 
@@ -3598,7 +3598,7 @@ The three-line break chart looks like a series of rising and falling lines of va
 
 The ReversalAmount specifies the threshold amount by which the price should change to begin rendering a new vertical box in the appropriate direction.
 
-![](Chart-Controls_images/Chart-Controls_img105.jpeg)
+![Chart-Controls_img105](Chart-Controls_images/Chart-Controls_img105.jpeg)
 
 
 
@@ -3710,7 +3710,7 @@ In 1977, John Tukey published an efficient method for displaying a five-number d
 
 The following is an example of a Box and Whisker plot.
 
-![](Chart-Controls_images/Chart-Controls_img106.jpeg)
+![Chart-Controls_img106](Chart-Controls_images/Chart-Controls_img106.jpeg)
 
 
 
@@ -3882,7 +3882,7 @@ The Fast High Low (HiLo) Open Close charts have the following advantages:
 
 The Chart type HiLo Open Close is added in the Enum of type ChartTypes.
 
-![](Chart-Controls_images/Chart-Controls_img107.jpeg)
+![Chart-Controls_img107](Chart-Controls_images/Chart-Controls_img107.jpeg)
 
 
 
@@ -4011,7 +4011,7 @@ series.Type = ChartTypes.HiLoOpenClose;
 
 Run the sample. The following output is provided.
 
-![](Chart-Controls_images/Chart-Controls_img108.jpeg)
+![Chart-Controls_img108](Chart-Controls_images/Chart-Controls_img108.jpeg)
 
 ## Pie Charts
 
@@ -4019,7 +4019,7 @@ Run the sample. The following output is provided.
 
 A Pie Chart renders Y values as slices in a pie. These slices are rendered in proportion to the whole which is simply the sum of all the Y values in the series. Consequently, Pie Charts are used to visualize the proportional contribution (in terms of percentage or fraction) of categories of data to the whole data set. The X values in the data series will only be treated as nominal (categorical, qualitative) data. The Pie Chart can display only one DataSeries at a time.
 
-![](Chart-Controls_images/Chart-Controls_img109.jpeg)
+![Chart-Controls_img109](Chart-Controls_images/Chart-Controls_img109.jpeg)
 
 
 ### Data Requirements
@@ -4131,7 +4131,7 @@ _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Sample
 
 Doughnut charts are pie charts with a hole, whose value is specified as the doughnut coefficient. The Doughnut Chart is best suited for presenting data in proportions.
 
-![](Chart-Controls_images/Chart-Controls_img110.jpeg)
+![Chart-Controls_img110](Chart-Controls_images/Chart-Controls_img110.jpeg)
 
 
 ### Data Requirements
@@ -4243,7 +4243,7 @@ APolar Chart is a circular graph on which data is displayed in terms of values a
 
 It is a form of graph that allows a visual comparison between several quantitative or qualitative aspects of a situation and also allows a visual comparison between several situations that are drawn using the same axes (poles).
 
-![](Chart-Controls_images/Chart-Controls_img111.jpeg)
+![Chart-Controls_img111](Chart-Controls_images/Chart-Controls_img111.jpeg)
 
 
 
@@ -4324,7 +4324,7 @@ Following are the different DrawType categories for radar and polar charts
 
 When the DrawType is Line, the series is drawn as a line segment connecting each point in the chart. The following image illustrates this.
 
-![](Chart-Controls_images/Chart-Controls_img112.png)
+![Chart-Controls_img112](Chart-Controls_images/Chart-Controls_img112.png)
 
 
 
@@ -4332,7 +4332,7 @@ When the DrawType is Line, the series is drawn as a line segment connecting each
 
 When the DrawType is Area, the series is drawn as a single area segment connecting each point in the chart. The following image illustrates this.
 
-![](Chart-Controls_images/Chart-Controls_img113.png)
+![Chart-Controls_img113](Chart-Controls_images/Chart-Controls_img113.png)
 
 
 
@@ -4340,17 +4340,17 @@ When the DrawType is Area, the series is drawn as a single area segment connecti
 
 When the DrawType is Symbol, the series is drawn as separate points as a symbol without connecting each point in the chart. The following image illustrates this.
 
-![](Chart-Controls_images/Chart-Controls_img114.png)
+![Chart-Controls_img114](Chart-Controls_images/Chart-Controls_img114.png)
 
 
 
 Following are the screenshots of the chart when IsClosed is set to True and False:
 
-![](Chart-Controls_images/Chart-Controls_img115.png)
+![Chart-Controls_img115](Chart-Controls_images/Chart-Controls_img115.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img116.png)
+![Chart-Controls_img116](Chart-Controls_images/Chart-Controls_img116.png)
 
 
 
@@ -4574,7 +4574,7 @@ Run the sample.
 
 A Fast Stacking Column chart is displayed pertaining to the data source it is bound to.
 
-![](Chart-Controls_images/Chart-Controls_img117.jpeg)
+![Chart-Controls_img117](Chart-Controls_images/Chart-Controls_img117.jpeg)
 
 
 
@@ -4594,15 +4594,15 @@ Chart types are:
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingBar.png](Chart-Controls_images/Chart-Controls_img118.png)
+![Chart-Controls_images118](Chart-Controls_images/Chart-Controls_img118.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingArea.png](Chart-Controls_images/Chart-Controls_img119.png)
+![Chart-Controls_images119](Chart-Controls_images/Chart-Controls_img119.png)
 
 
 
-![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingColumn.png](Chart-Controls_images/Chart-Controls_img120.png)
+![Chart-Controls_images120](Chart-Controls_images/Chart-Controls_img120.png)
 
 
 
@@ -4647,7 +4647,7 @@ ChartLineType.SetBreakLineForDoublePointsDistanceMoreThan(Chart1.Areas[0].Series
 
 If the data given are 1, 2, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17 and the SetBreakLineForDoublePointsDistanceMoreThan is passed with a value 1, all points that don't have a point after 1 will not be drawn. Following screenshot shows the output for this data.
 
-![](Chart-Controls_images/Chart-Controls_img121.jpeg)
+![Chart-Controls_img121](Chart-Controls_images/Chart-Controls_img121.jpeg)
 
 
 N> This feature can be applied for both Line and Spline type charts. This can be applied for both Double and DateTime type axis values.
@@ -4764,7 +4764,7 @@ MedianWeightGradient="{StaticResource SeriesAInterior}"                         
 
 When the code runs, the following output displays.
 
-![](Chart-Controls_images/Chart-Controls_img122.png)
+![Chart-Controls_img122](Chart-Controls_images/Chart-Controls_img122.png)
 
 
 
@@ -4776,7 +4776,7 @@ This feature automatically resizes the content to fit inside the HeatMap item, s
 
 It is used in the field where data are represented in a two dimensional map namely Population Survey. The data of the survey will automatically fit into the HeatMap item by resizing its font size.
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/HeatMap.png](Chart-Controls_images/Chart-Controls_img123.png)
+![Chart-Controls_images123](Chart-Controls_images/Chart-Controls_img123.png)
 
 
 
@@ -4838,7 +4838,7 @@ To add the text wrapping support to the HeatMapItem:
 {% endhighlight  %}
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img124.png)
+![Chart-Controls_img124](Chart-Controls_images/Chart-Controls_img124.png)
 
 
 
@@ -4863,7 +4863,7 @@ To shrink the text for the HeatMapItem.
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img125.png)
+![Chart-Controls_img125](Chart-Controls_images/Chart-Controls_img125.png)
 
 
 
@@ -4909,7 +4909,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 
 {% endtabs %}
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png)
+![Chart-Controls_images126](Chart-Controls_images/Chart-Controls_img126.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -4934,7 +4934,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastColumn;
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastColumn.png](Chart-Controls_images/Chart-Controls_img127.png)
+![Chart-Controls_images127](Chart-Controls_images/Chart-Controls_img127.png)
 
 
 
@@ -5094,7 +5094,7 @@ To set the Custom type feature in chart application:
    ~~~
 
 
-   ![](Chart-Controls_images/Chart-Controls_img128.png)
+   ![Chart-Controls_images128](Chart-Controls_images/Chart-Controls_img128.png)
 
 
 Sample Link

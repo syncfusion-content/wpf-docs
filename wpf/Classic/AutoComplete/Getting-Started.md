@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: Getting-Started | AutoComplete | wpf | Syncfusion
-description: This section explain about how to integrate WPF AutoComplete into an applicationl and enable its basic features with example.. 
+title: Getting Started with WPF AutoComplete Control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Getting Started with WPF AutoComplete
+# Getting Started with WPF AutoComplete (Classic)
 
 ## Structure of the AutoComplete control
 

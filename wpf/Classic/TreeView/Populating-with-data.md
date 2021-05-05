@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Populating WPF TreeView with Data | Syncfusion
-description: This section describes about how to populate wpf TreeViewAdv using TreeViewItemAdv and data binding. 
+title: Populating with Data in WPF Wizard Control control | Syncfusion
+description: Learn here all about Populating with Data support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Populating with Data
+# Populating with Data in WPF TreeViewAdv (Classic)
 
 This section explains about populating TreeViewAdv with TreeView items using several ways.
 

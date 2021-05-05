@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with WPF Chart Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential WPF Chart (Classic) control, its elements, and more.
+description: Learn here about getting started with Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Getting Started with WPF Chart
+# Getting Started with WPF Chart (Classic)
 
 ## Feature Summary
 

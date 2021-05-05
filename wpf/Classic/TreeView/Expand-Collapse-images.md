@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Expand/Collapse Images | Syncfusion.
-description: This section describes about the expand and collapse features in the Wpf Syncfusion TreeView(TreeViewAdv).
+title: Expand/Collapse Images in WPF Wizard Control control | Syncfusion
+description: Learn here all about Expand/Collapse Images support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Expand/Collapse Images
+# Expand/Collapse Images in WPF TreeViewAdv (Classic)
 
 The tree nodes in TreeViewAdv control can have sub nodes or items. On clicking the parent node, it expands to show child nodes. Hence, the nodes switch between collapsed and expanded states, on mouse-click. TreeViewAdv control lets you specify separate images for the expanded and collapsed nodes. You can add images to the TreeViewItemAdv to indicate the state of an item by using the ExpandedImageSource and CollapsedImageSource properties. Images are displayed based on the state of the item.
 
