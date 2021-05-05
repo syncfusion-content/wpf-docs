@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Expand the item | TreeViewAv | Wpf | Syncfusion
-description: TreeViewAdv allow user to expand or collapse each item by enabling or disabling the IsExpanded property.
+title: Expand the item in WPF Wizard Control control | Syncfusion
+description: Learn here all about Expand the item support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Expand the Item in WPF TreeView (TreeViewAdv)
+# Expand the item in WPF TreeViewAdv (Classic)
 
 TreeViewAdv allows to expand or collapse each node by setting [IsExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html#Syncfusion_Windows_Tools_Controls_TreeViewItemAdv_IsExpanded) property. 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WPF TreeView Selection | Syncfusion
-description: This section explains about the selection feature and it's customization in TreeViewcontrol for syncfusion Essential Wpf.
+title: Selecting a Node in WPF Wizard Control control | Syncfusion
+description: Learn here all about Selecting a Node support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Selecting a Node in WPF TreeView(TreeViewAdv)
+# Selecting a Node in WPF TreeViewAdv (Classic)
 
 TreeViewAdv allow user to select single or multiple node by setting AllowMultiSelect property.
 

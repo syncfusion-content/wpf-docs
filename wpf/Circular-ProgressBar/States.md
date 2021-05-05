@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States of the WPF Circular ProgressBar control | Syncfusion
-description: Learn here about states like determinate and indeterminate in the Syncfusion WPF Circular ProgressBar control and more details.
+title: States in WPF circular progressbar control | Syncfusion
+description: Learn here all about States support in Syncfusion WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# Different states in Circular ProgressBar
+# States in WPF circular progressbar (SfCircularProgressBar)
 States help to visualize the progress of a task in different modes. You can configure states of the circular progressbar control depending on its usage in following ways.
 
 ## Determinate

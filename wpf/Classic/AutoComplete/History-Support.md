@@ -1,13 +1,13 @@
 ---
 layout: post
-title: History-Support | AutoComplete | wpf | Syncfusion
-description: history support
+title: History Support in WPF AutoComplete Control | Syncfusion
+description: Learn here all about History Support in Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# History Support
+# History Support in WPF AutoComplete (Classic)
 
 History support in AutoComplete means, reuse of the items which are already used in the AutoComplete textbox. AutoComplete allows you to enable this history support by setting the value of the [IsHistory](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_IsHistory) property to True. AutoComplete guides you to select an item from the list of items which are added to the history, by using the drop-down button to open the drop-down list.
 

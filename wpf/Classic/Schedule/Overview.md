@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| Schedule | WPF | Syncfusion
-description: This section describes about the quick overview and Key features of Scehduler (SfScheduler) control in WPF platform.
+title: About WPF SfSchedule Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# SfSchedule of WPF SfSchedule
+# WPF Schedule (Classic) Overview
 
 ## Introduction
 

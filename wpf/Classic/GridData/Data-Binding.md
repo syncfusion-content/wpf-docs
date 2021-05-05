@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Binding | GridData (Classic) | WPF | Syncfusion
-description: Learn here about Data Binding support in Syncfusion WPF GridData control and how to bind the properties.
+title: Data Binding in WPF GridData Control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Data Binding in WPF GridData
+# Data Binding in WPF GridDataControl (Classic)
 
 Data binding is the master feature of the GridData control. Grid must be bound to an external data source to display the data. GDC supports the following data sources such as, Data Tables, Data Sets or Custom collections of type List, Binding List, Observable Collection or Collection View Source. These data source can have multiple nested tables that is displayed hierarchically by the grouping grid. 
 

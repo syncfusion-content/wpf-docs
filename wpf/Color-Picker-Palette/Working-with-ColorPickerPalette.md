@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with WPF ColorPickerPalette control | Syncfusion
-description: Learn about selecting a different types of colors in Syncfusion WPF ColorPickerPalette control and more details about the control features.
+title: Working with ColorPickerPalette in WPF | Syncfusion
+description: Learn about Working with ColorPickerPalette support in Syncfusion WPF Color Picker Palette control and more.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
 ---
 
-# Working with WPF ColorPickerPalette
+# Working with ColorPickerPalette in WPF
 
 This section explains the different types of colors available in the [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) and  how to choose the colors and its panel customizations.
 

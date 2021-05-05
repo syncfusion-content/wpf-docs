@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Population| GridTree | Wpf | Syncfusion
-description: data population
+title: Data Population in WPF Wizard Control control | Syncfusion
+description: Learn here all about Data Population support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# Data Population
+# Data Population in WPF GridTreeControl (Classic)
 
 The primary requirement of the data displayed in the GridTree control is that the parent node and the child node share the same schema (i.e. have the same columns to display). To populate the GridTree control, you need to handle the RequestTreeItems event (This event gets fired for every tree node that is being populated in order to retrieve its child nodes). In the event arguments, the ParentItem property indicates the item whose children are being requested. The list of children can be set using this property. If this property is empty, it implies that the event is requesting the root nodes. The following code example illustrates a minimal RequestTreeItems handler.
 

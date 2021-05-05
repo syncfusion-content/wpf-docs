@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Overview| RichTextBoxAdv | Wpf | Syncfusion
-description: overview
+title: About WPF RichTextBoxAdv Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more details.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# RichTextBoxAdv
+# WPF RichTextBoxAdv (Classic) Overview
 
 RichTextBoxAdv is a control for formatting text, such as aligning and indenting paragraphs, and displaying the content in pages or in a Web layout mode.
 
 
 
-![](Overview_images/Overview_img1.png)
+![Overview_img1](Overview_images/Overview_img1.png)
 
 
 
