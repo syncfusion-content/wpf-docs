@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DateTimeEdit Editing modes | Syncfusion
-description: Editing mode supports default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
+title: DateTime Editing in WPF DateTimePicker control | Syncfusion
+description: Learn here all about DateTime Editing support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# Change DateTime in WPF DateTimePicker (DateTimeEdit)
+# DateTime Editing in WPF DateTimePicker (DateTimeEdit)
 
 The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free form editing and mask based editing. 
 

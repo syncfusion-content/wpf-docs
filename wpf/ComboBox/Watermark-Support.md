@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DefaultText Support | wpf | Syncfusion
-description: Learn here about watermark support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details. 
+title: Watermark Support in WPF ComboBox control | Syncfusion
+description: Learn here all about Watermark Support support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Default Watermark Text in WPF Combobox
+# Watermark Support in WPF ComboBox (ComboBoxAdv)
 
 It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
 

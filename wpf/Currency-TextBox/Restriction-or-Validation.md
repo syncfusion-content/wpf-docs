@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restriction or Validation in WPF CurrencyTextBox control | Syncfusion
-description: Learn about Restriction or Validation support in Syncfusion WPF CurrencyTextBox control and more details about the control features.
+title: Restriction or Validation in WPF Currency TextBox control | Syncfusion
+description: Learn about Restriction or Validation support in Syncfusion WPF Currency TextBox control and more.
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Restriction or Validation in WPF CurrencyTextBox
+# Restriction or Validation in WPF Currency TextBox
 
 This section explains how to validate or restrict the `CurrencyTextBox` control value.
 

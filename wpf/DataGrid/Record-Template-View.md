@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Record Template View in WPF DataGrid control | Syncfusion
-description: Learn about record (row) template view support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Record Template View support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

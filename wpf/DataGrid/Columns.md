@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WPF DataGrid control | Syncfusion
-description: Learn about columns and its auto generate support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Columns support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

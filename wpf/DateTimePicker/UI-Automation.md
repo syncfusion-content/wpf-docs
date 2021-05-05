@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF DateTimeEdit UI Automation | Syncfusion
-description: This section explains about the Quick Test Professional (QTP) and Coded UI support of DateTimeEdit control.
+title: UI Automation in WPF DateTimePicker control | Syncfusion
+description: Learn here all about UI Automation support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

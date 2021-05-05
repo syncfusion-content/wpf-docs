@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in WPF DataGrid control | Syncfusion
-description: Learn about data virtualization support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Data Virtualization support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

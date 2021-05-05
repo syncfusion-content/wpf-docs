@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | SfDataPagerControl | wpf | Syncfusion
-description: appearance
+title: Appearance in WPF DataPager control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF DataPager (SfDataPager)
 
 SfDataPager supports appearance styles by using the following properties.
 

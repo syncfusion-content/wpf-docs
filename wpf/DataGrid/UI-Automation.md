@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Automation in WPF DataGrid control | Syncfusion
-description: Learn about UI automation (Coded UI and UFT/QTP) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about UI Automation support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

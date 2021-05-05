@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding | AccentBrushpropertiesareusedtodecoratetheSfDataPagercontrolwithasolidcolor.TherearetwoAccentBrushpropertiesintheSfDataPager | wpf | Syncfusion
-description: databinding
+title: DataBinding in WPF DataPager control | Syncfusion
+description: Learn here all about DataBinding support in Syncfusion WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding in WPF DataPager (SfDataPager)
 
 
 Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 

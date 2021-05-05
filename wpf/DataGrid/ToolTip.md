@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WPF DataGrid control | Syncfusion
-description: Learn about ToolTip support and its customization in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about ToolTip support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

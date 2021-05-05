@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blendability | Blendability | wpf | Syncfusion
-description: blendability 
+title: Blendability in WPF ComboBox control | Syncfusion
+description: Learn here all about Blendability support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Blendability
+# Blendability in WPF ComboBox (ComboBoxAdv)
 
 ### Creating the ComboBoxAdv control in expression blend
 
@@ -43,4 +43,4 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 1. Drag the ComboBoxAdv control to the Design view. The ComboBoxAdv control will appear as shown in the screen shot displayed below.
 2. Right-click the ComboBoxAdv control, select Edit Template, and then select Edit a Copy.
 
-![](ComboBoxAdv_images/ComboBoxAdv_img8.png)
+![ComboBoxAdv_img8](ComboBoxAdv_images/ComboBoxAdv_img8.png)

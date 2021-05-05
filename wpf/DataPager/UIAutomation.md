@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UIAutomation | SfDataPagerControl | wpf | Syncfusion
-description: uiautomation
+title: UIAutomation in WPF DataPager control | Syncfusion
+description: Learn here all about UIAutomation support in Syncfusion WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# UIAutomation
+# UIAutomation in WPF DataPager (SfDataPager)
 
 SfDataPager supports the following UIAutomation,
 
