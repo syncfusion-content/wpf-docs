@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data| Hierarchical Navigator | Wpf | Syncfusion
-description: This section deals with explains about the Populating Data in WPF Breadcrumb (HierarchyNavigator) control
+title: Populating Data in WPF Breadcrumb control | Syncfusion
+description: Learn here all about Populating Data support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

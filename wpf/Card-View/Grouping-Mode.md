@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping Mode in WPF Card View control | Syncfusion
-description: This section describes how to enable or disable the group mode and perform group operations in WPF CardView control.
+description: Learn about Grouping Mode support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Grouping Mode in WPF CardView
+# Grouping Mode in WPF Card View
 
 This section describes how to enable or disable the grouping mode and perform group operations in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 

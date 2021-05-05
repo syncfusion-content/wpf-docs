@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Command Binding| Hierarchical Navigator | Wpf | Syncfusion
-description: command binding
+title: Command Binding in WPF Breadcrumb control | Syncfusion
+description: Learn here all about Command Binding support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Command Binding
+# Command Binding in WPF Breadcrumb (HierarchyNavigator)
 
 The HierarchyNavigator control enables command binding when a selected item is changed. There are two properties that occur when this happens.
 

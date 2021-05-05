@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF Badge | Syncfusion
-description: WPF Badge control used to notify users of new or unread messages, notifications, or the status of something and different features.
+title: About WPF Badge control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Badge (SfBadge) control, its elements and more details.
 platform: WPF
 control: SfBadge
 documentation: ug
 ---
 
-# WPF Badge (SfBadge) control Overview
+# WPF Badge (SfBadge) Overview
 
 [Badge](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html) control used to notify users of new or unread messages, notifications, or the status of something. 
 

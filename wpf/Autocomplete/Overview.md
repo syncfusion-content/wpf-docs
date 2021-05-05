@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | TextBoxExt | WPF | Syncfusion
-description: Quickly go through to learn about the SfTextBoxExt(AutoComplete) control and the key features available in it.
+title: About WPF Autocomplete control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Autocomplete (SfTextBoxExt) control, its elements and more details.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# WPF SfTextBoxExt (AutoComplete) Overview.
+# WPF Autocomplete (SfTextBoxExt) Overview
 
 ### Description 
 

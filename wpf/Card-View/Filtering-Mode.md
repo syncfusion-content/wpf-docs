@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering Mode in WPF Card View control | Syncfusion
-description: This section describes how to enable or disable the filtering mode and perform filter operations in WPF CardView control.
+description: Learn about Filtering Mode support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Filtering Mode in WPF CardView
+# Filtering Mode in WPF Card View
 
 This section describes how to enable or disable the filtering mode and perform filter operations in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) control.
 

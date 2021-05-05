@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfBulletGraph | Wpf | Syncfusion
-description: This section explain about how to integrate WPF Bullet Graph (SfBulletGraph) into an applicationl and enable its basic features with example.. 
+title: Getting Started with WPF Bullet Graph control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Bullet Graph (SfBulletGraph) control, its elements and more details.
 platform: wpf
 control: SfBulletGraph
 documentation: ug

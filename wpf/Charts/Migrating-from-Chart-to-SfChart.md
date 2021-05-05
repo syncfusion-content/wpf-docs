@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Migrating from Chart to SfChart| SfChart | Wpf | Syncfusion
-description: migrating from chart to sfchart
+title: Migrating from Chart to SfChart in WPF Charts control | Syncfusion
+description: Learn here all about Migrating from Chart to SfChart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Migrating from Chart to SfChart
+# Migrating from Chart to SfChart in WPF Charts (SfChart)
 
 SfChart is a new chart introduced in 11.1 version. SfChart is a very high performance chart enriched with several business features. This section helps you to identify equivalent Chart features/ APIs in SfChart.
 

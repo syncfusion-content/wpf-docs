@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Caption  | SfBulletGraph | Wpf | Syncfusion
-description: Caption 
+title: Caption in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Caption support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Caption
+# Caption in WPF Bullet Graph (SfBulletGraph)
 
 The **Caption** for a bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
 
@@ -41,7 +41,7 @@ The **Caption** for a bullet graph is used to specify a unique label describing 
 {% endhighlight %}
 {% endtabs %}
 
-![](Caption_images/Caption_img1.jpg)
+![Caption_img1](Caption_images/Caption_img1.jpg)
 
 ## Caption Position
 
@@ -68,4 +68,4 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 {% endhighlight %}
 {% endtabs %}
 
-![](Caption_images/Caption_img2.jpg)
+![Caption_img2](Caption_images/Caption_img2.jpg)

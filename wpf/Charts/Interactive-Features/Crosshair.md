@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfChart WPF.
-description: Essental WPF Chart (SfChart) supports CrossHair to view the values at mouse point or touch contact point.
+title: Crosshair in WPF Charts control | Syncfusion
+description: Learn here all about Crosshair support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# CrossHair in WPF Charts (SfChart)
+# Crosshair in WPF Charts (SfChart)
 
 ChartCrossHairBehavior is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 

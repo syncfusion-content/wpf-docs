@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF CheckListBox control | Syncfusion
-description: Learn about UI customization, styling, theme support in Syncfusion WPF CheckListBox control and more details about the control features.
+title: Appearance in WPF CheckedListBox control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Appearance in WPF CheckListBox
+# Appearance in WPF CheckedListBox (CheckListBox)
 
 This section explains different UI customization, styling, theming options available in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control.
 

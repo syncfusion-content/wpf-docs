@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | CardView | WPF | Syncfusion
-description: How to localize the CardView control.
+title: Localization in WPF Card View control | Syncfusion
+description: Learn about Localization support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
 documentation: ug
 ---
 
-# Localization 
+# Localization in WPF Card View
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the CardView by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture]([CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2)) after `InitializeComponent` method. 
 
