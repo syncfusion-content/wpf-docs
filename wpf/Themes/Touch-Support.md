@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch Support in Syncfusion WPF controls
-description: This article exaplins how to enable touch design for Syncfusion WPF Controls using SizeMode property in SkinManager. 
+description: This article explains how to enable touch design for Syncfusion WPF Controls using SizeMode property in SkinManager. 
 platform: WPF
 control: General
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Size Mode
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to render in different size modes for both syncfusion and framework controls using [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to render in different size modes for both Syncfusion and framework controls using [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
 
-The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum has below values,
+The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum has the below values,
 
 * `Default` - The default size will be updated for control and its inner elements.
 * `Touch` - The touch interactive size mode will be applied for control. In this mode, more space is added around the inner elements, to make them easier to tap. 
@@ -203,7 +203,7 @@ Port: Drag, Connect.</td>
 <tr>
 <td></td>
 <td>Gantt</td>
-<td>Selection and drag and drop</td>
+<td>Selection, drag and drop</td>
 <td>-</td>
 <td>Click and Select</td>
 <td>Select</td>
@@ -278,7 +278,7 @@ Port: Drag, Connect.</td>
 <td>Swipe to rearrange Tab order in Tabbed and Document state windows.</td>
 <td>-</td>
 <td>Tap to select the active window of DockingManager.<br/>
-Double tab to float the active window</td>
+Double tap to float the active window</td>
 <td>Hold any docking window header Context menu opened</td>
 </tr>
 
@@ -368,7 +368,7 @@ Double tab to float the active window</td>
 <td>Textbox</td>
 <td>Move</td>
 <td>-</td>
-<td>double tab to select the word</td>
+<td>double tap to select the word</td>
 <td>Hold to open the default context menu</td>
 </tr>
 
@@ -377,7 +377,7 @@ Double tab to float the active window</td>
 <td>Currency Textbox</td>
 <td>Move</td>
 <td>-</td>
-<td>double tab to select the word</td>
+<td>double tap to select the word</td>
 <td>Hold to open the default context menu</td>
 </tr>
 
@@ -386,7 +386,7 @@ Double tab to float the active window</td>
 <td>Double Textbox</td>
 <td>Move</td>
 <td>-</td>
-<td>double tab to select the word</td>
+<td>double tap to select the word</td>
 <td>Hold to open the default context menu</td>
 </tr>
 
@@ -395,7 +395,7 @@ Double tab to float the active window</td>
 <td>Integer Textbox</td>
 <td>Move</td>
 <td>-</td>
-<td>double tab to select the word</td>
+<td>double tap to select the word</td>
 <td>Hold to open the default context menu</td>
 </tr>
 
@@ -449,7 +449,7 @@ Double tab to float the active window</td>
 <td>Percent Textbox</td>
 <td>-</td>
 <td>-</td>
-<td>double tab to select the word</td>
+<td>double tap to select the word</td>
 <td>Hold to open the default context menu</td>
 </tr>
 
@@ -502,16 +502,16 @@ Swipe up/down to scroll the pages vertically</td>
 <tr>
 <td></td>
 <td>Range Slider</td>
-<td>Swipe horizontally or vertically to change minimum and maximum range values</td>
+<td>Swipe horizontally or vertically to change the minimum and maximum range values</td>
 <td>-</td>
-<td>Tap to increase or decrease the values based on step value.</td>
+<td>Tap to increase or decrease the values based on the step value.</td>
 <td>-<</td>
 </tr>
 
 <tr>
 <td></td>
 <td>Radial Slider</td>
-<td>Swipe to change change the slider positions</td>
+<td>Swipe to change the slider positions</td>
 <td>-</td>
 <td>Tap to update the selected value</td>
 <td>-</td>
@@ -549,7 +549,7 @@ Swipe up/down to scroll the pages vertically</td>
 <td>Calculator</td>
 <td>-</td>
 <td>-</td>
-<td>Tab to enter the values in text area</td>
+<td>Tap to enter the values in text area</td>
 <td>-</td>
 </tr>
 
@@ -567,7 +567,7 @@ Swipe up/down to scroll the pages vertically</td>
 <td>Checked Listbox</td>
 <td>Scrolling</td>
 <td>-</td>
-<td>Tab to select the item</td>
+<td>Tap to select the item</td>
 <td>-</td>
 </tr>
 
@@ -660,7 +660,7 @@ double tab to select the current word of cursor placed index </td>
 <td>-</td>
 <td>Tap to select the groupbar item.<br/>
 Expand or collapse the item.</td>
-<td>Hold to open Context menu</td>
+<td>Hold to open the Context menu</td>
 </tr>
 
 <tr>
@@ -669,7 +669,7 @@ Expand or collapse the item.</td>
 <td>Change the Tab index positions</td>
 <td>-</td>
 <td>Tap to select the item</td>
-<td>Hold to open the context menus</td>
+<td>Hold to open the Context menu</td>
 </tr>
 
 <tr>
@@ -867,7 +867,7 @@ FILE FORMAT LIBRARY</td>
 <td>SpellChecker</td>
 <td>-</td>
 <td>-</td>
-<td>Tab to perform the spell check operations in spell check dialog window</td>
+<td>Tap to perform the spell check operations in spell check dialog window</td>
 <td>Hold to open the suggestion context menu</td>
 </tr>
 
@@ -923,7 +923,7 @@ Port: Drag, Connect</td>
 <tr>
 <td></td>
 <td>GridDataControl</td>
-<td>Scrolling, Drag and drop and Resizing</td>
+<td>Scrolling, Drag and drop, and Resizing</td>
 <td>-</td>
 <td>Click and Selection</td>
 <td>Right click</td>
