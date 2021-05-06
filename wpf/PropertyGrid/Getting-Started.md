@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF PropertyGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF PropertyGrid control and more details about the control features.
+title: Getting Started with WPF PropertyGrid control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF PropertyGrid control, its elements and more details.
 platform: WPF
 control: PropertyGrid
 documentation: ug
 ---
 
-# Getting started with WPF PropertyGrid
+# Getting Started with WPF PropertyGrid
 
 This section explains how to explore and edit the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control.
 

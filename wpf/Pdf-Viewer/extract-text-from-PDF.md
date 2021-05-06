@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Extract Text from PDF Files | PDF Viewer | WPF | Syncfusion
-description: This section explains how to extract text and its bounds from a particular page or the entire PDF file.
+title: Extract Text from PDF Files in WPF Pdf Viewer control | Syncfusion
+description: Learn about Extract Text from PDF Files support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Extract Text from PDF Files
+# Extract Text from PDF Files in WPF Pdf Viewer
 
 PDF Viewer allows you to extract the text from a particular page or from the entire PDF file using the [ExtractText](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) methods of [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html). 
 

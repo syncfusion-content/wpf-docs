@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GetRawItem | PivotGrid | Syncfusion
-description: Method definition to get the raw items at run-time for value cells and total cells in PivotGrid control | Syncfusion
+title: GetRawItem in WPF Pivot Grid control | Syncfusion
+description: Learn about GetRawItem support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# GetRawItem
+# GetRawItem in WPF Pivot Grid
 
 GetRawItemFor method is used to obtain the list of raw items for value cell, total cell, or grand total cell in the pivot grid.
 

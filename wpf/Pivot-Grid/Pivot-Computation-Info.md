@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotComputationInfo | PivotGrid | Syncfusion
-description: Information about pivot calculation item in pivot grid control which allows to define various properties of PivotComputationInfo.
+title: PivotComputationInfo in WPF Pivot Grid control | Syncfusion
+description: Learn about PivotComputationInfo support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# PivotComputationInfo
+# PivotComputationInfo in WPF Pivot Grid
 
 Pivot computation holds the information needed for calculations that appear in the pivot grid control. For each calculation, there is an associated `PivotComputationInfo` object added to the PivotCalculations collection.
 

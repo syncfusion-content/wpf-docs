@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Freeze Headers | PivotGrid | Syncfusion
-description: Built-in support for freezing column and row headers for better viewing of value cells in PivotGrid control.
+title: Freeze Headers in WPF Pivot Grid control | Syncfusion
+description: Learn about Freeze Headers support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Freeze Headers
+# Freeze Headers in WPF Pivot Grid
 
 The pivot grid provides built-in support for freezing column and row headers for better viewing of value cells.
 

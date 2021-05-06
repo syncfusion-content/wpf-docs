@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Custom Property Definition in WPF PropertyGrid control | Syncfusion
-description: This section explains how to customize the property definition of the property item in PropertyGrid control.
+description: Learn about Custom Property Definition support in Syncfusion WPF PropertyGrid control and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Custom definition of the properties in WPF PropertyGrid
+# Custom Property Definition in WPF PropertyGrid
 
 In this section, let us see how to configure properties manually in (`xaml` or `C#`) instead of event or attributes.
 

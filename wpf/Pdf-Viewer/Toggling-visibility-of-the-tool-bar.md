@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toggling visibility of the tool bar| PDF Viewer | Wpf | Syncfusion
-description: This section explains how to disable the horizontal toolbar of PDF Viewer and how to disable the vertical toolbar by hiding the items in the toolbar.
+title: Toggle visibility of the tool bar in WPF Pdf Viewer control | Syncfusion
+description: Learn about Toggle visibility of the tool bar support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Toggling visibility of the tool bar
+# Toggle visibility of the tool bar in WPF Pdf Viewer
 
 PDF Viewer supports showing and hiding toolbar, when you feel to customize the toolbar, you can hide the default toolbar of the PDF Viewer using the [ShowToolbar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShowToolbar) property. The following code example hides the default toolbar in the PDF Viewer control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select and Copy Text | PDF Viewer | Wpf | Syncfusion
-description: Select and copy text support allows user to select the text in the PDF document and copy it to the clipboard using PDF Viewer WPF.
+title: Select and Copy Text in WPF Pdf Viewer control | Syncfusion
+description: Learn about Select and Copy Text support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Text selection
+# Select and Copy Text in WPF Pdf Viewer
 
 In PDF Viewer, text can be selected by clicking the mouse left button and dragging the mouse pointer over the text in any direction.
 

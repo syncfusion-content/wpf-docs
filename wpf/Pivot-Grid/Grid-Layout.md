@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layout | PivotGrid | Syncfusion
-description: Different grid layouts including normal and top summary layouts with respect to summaries for PivotGrid control.
+title: Grid Layout in WPF Pivot Grid control | Syncfusion
+description: Learn about Grid Layout support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Grid Layout
+# Grid Layout in WPF Pivot Grid
 
 The pivot grid supports for two different types of layout options with respect to summaries. That is, whether to display the summary data of each pivot item at the top or at the bottom of value cells.
 

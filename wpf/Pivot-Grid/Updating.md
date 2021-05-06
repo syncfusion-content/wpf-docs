@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Updating Values | Pivot Grid | Syncfusion
-description: Support to perform the real time updates for the values at run-time in pivot grid control. | Syncfusion
+title: Updating in WPF Pivot Grid control | Syncfusion
+description: Learn about Updating support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Updating Values in Pivot Grid
+# Updating in WPF Pivot Grid
 
 The pivot grid supports updating the values in the pivot grid in real time and it can be achieved through the `EnableUpdating` property. While handling the updating operations, the values will be calculated automatically and its total values will be reflected.
 

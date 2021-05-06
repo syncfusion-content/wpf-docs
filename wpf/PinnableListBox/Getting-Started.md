@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | PinnableListBox | WPF | Syncfusion
-description: A quick tour to initial users on Syncfusion PinnableListBox control for WPF
+title: Getting Started with WPF PinnableListBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF PinnableListBox control, its elements and more details.
 platform: WPF
 control: PinnableListBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF PinnableListBox
 
 ## Assembly deployment
 

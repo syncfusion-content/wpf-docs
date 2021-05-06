@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ReadyOnly and Editable attributes in WPF PropertyGrid | Syncfusion
-description: Learn about make the properties of selected object as readonly in Syncfusion WPF PropertyGrid control and more details.
+title: ReadOnly Properties in WPF PropertyGrid control | Syncfusion
+description: Learn about ReadOnly Properties support in Syncfusion WPF PropertyGrid control and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# ReadOnly properties in WPF PropertyGrid
+# ReadOnly Properties in WPF PropertyGrid
 
 We can display the readonly properties with its value editor in the non editable state by default. If we want to change any property as readonly, it can be achieved by attributes and event in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
 

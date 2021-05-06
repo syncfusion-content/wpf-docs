@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with PDF Layers | PDF Viewer | WPF | Syncfusion
-description: Toggling the visibility of PDF layers using PDF viewer, grouping, saving, printing and exporting as images. 
+title: Working with PDF Layers in WPF Pdf Viewer control | Syncfusion
+description: Learn about Working with PDF Layers support in Syncfusion WPF Pdf Viewer control and more.
 platform: WPF
 control: PDF Viewer
 documentation: UG
 ---
 
-# Working with PDF Layers
+# Working with PDF Layers in WPF Pdf Viewer
 
 The layer support in PDF viewer allows users to toggle the visibility of individual and group of layers in the PDF document to view, print, save, and export as image.
 

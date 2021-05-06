@@ -1,13 +1,13 @@
 ---
 layout: post
-title: File Link Annotation in PDF Viewer WPF | Syncfusion
-description: PDF Viewer WPF detects file link annotation present in PDF and on tapping it, can obtain the details of the file linked with the annotation.
+title: File Link Annotation in WPF Pdf Viewer control | Syncfusion
+description: Learn about File Link Annotation support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# File link annotation in WPF Pdf Viewer
+# File Link Annotation in WPF Pdf Viewer
 
 The PDF viewer supports file link annotations, which means that if you open a PDF document that contains file link annotations, you can click them to get the details of file linked with the annotation, through its clicked event. You can open the file externally from the application, using the details of the file obtained from the event.
 

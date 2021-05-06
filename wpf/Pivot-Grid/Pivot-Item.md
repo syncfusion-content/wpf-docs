@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Item | PivotGrid | Syncfusion
-description: Information about pivot items used in pivot grid control which in a pivot table field provides the information needed to define an item.
+title: PivotItem in WPF Pivot Grid control | Syncfusion
+description: Learn about PivotItem support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Pivot Item
+# PivotItem in WPF Pivot Grid
 
 A pivot item is a container for items in the pivot grid control. An item in a pivot table field provides the information needed to define an item. The items are individual data entries in a field category. The pivot item object is a member of the pivot items collection and consists of the following fields.
 

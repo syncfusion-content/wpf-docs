@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Markup Annotations in PDF Viewer WPF | Syncfusion
-description: PDF Viewer provides the ability to add, move, edit, resize and deleting text markup annotations in PDF document.
+title: TextMarkup Annotations in WPF Pdf Viewer control | Syncfusion
+description: Learn about TextMarkup Annotations support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Text Markup Annotation 
+# TextMarkup Annotations in WPF Pdf Viewer
 
 PDF viewer WPF includes the following text markup annotations,
 

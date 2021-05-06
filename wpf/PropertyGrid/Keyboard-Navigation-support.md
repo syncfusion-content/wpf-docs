@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Keyboard Navigation in WPF PropertyGrid control | Syncfusion
-description: This section explains about how the keyboard navigation works between the property items of PropertyGrid
+description: Learn about Keyboard Navigation support in Syncfusion WPF PropertyGrid control and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Keyboard Navigation in WPF PropertyGrid control
+# Keyboard Navigation in WPF PropertyGrid
 
 In this section, we will see available keyboard shortcuts and how to override the default navigation.
 

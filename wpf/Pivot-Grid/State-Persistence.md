@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence | PivotGrid | Syncfusion
-description: Support to maintain the collapsed or expanded state when the corresponding schema items are changed in PivotGrid control.
+title: State Persistence in WPF Pivot Grid control | Syncfusion
+description: Learn about State Persistence support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# State Persistence
+# State Persistence in WPF Pivot Grid
 
 The pivot grid allows you to maintain the collapsed or expanded state when the corresponding schema items are changed. This can be achieved using the `StatePersistence` property of the pivot grid control.
 

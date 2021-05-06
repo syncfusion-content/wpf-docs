@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Organize Pages using PDF Viewer WPF | Syncfusion
-description: Rotate, rearrange, and delete pages in a PDF file using a miniature preview of the PDF pages with PDF Viewer WPF.
+title: Organize Pages in WPF Pdf Viewer control | Syncfusion
+description: Learn about Organize Pages support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Organize pages in WPF Pdf Viewer
+# Organize Pages in WPF Pdf Viewer
 
 Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
 

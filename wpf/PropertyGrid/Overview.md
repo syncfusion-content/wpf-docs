@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF PropertyGrid control | Syncfusion
-description: Learn about introduction of Syncfusion WPF PropertyGrid control and more details about the control features.
+description: Learn here all about introduction of Syncfusion WPF PropertyGrid control, its elements and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

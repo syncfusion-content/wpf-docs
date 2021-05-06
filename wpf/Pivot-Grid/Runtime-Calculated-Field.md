@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculated Field | PivotGrid | Syncfusion
-description: Support to insert a new calculated field at run-time based on existing calculation items | PivotGrid | Syncfusion
+title: Calculated Field in WPF Pivot Grid control | Syncfusion
+description: Learn about Calculated Field support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Calculated Field
+# Calculated Field in WPF Pivot Grid
 
 The pivot grid inserts a new calculated field based on the existing calculated items using the calculated field window. This option is available as a menu item in the grouping bar context menu.
 

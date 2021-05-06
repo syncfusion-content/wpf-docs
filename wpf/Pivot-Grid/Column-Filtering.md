@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Filtering in Pivot Grid | PivotGrid | Syncfusion
-description: Support to extract a subset of records that meet certain criteria for column fields in PivotGrid control.
+title: Filtering in WPF Pivot Grid control | Syncfusion
+description: Learn about Filtering support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Column Filtering
+# Filtering in WPF Pivot Grid
 
 The pivot grid allows you to restrict the display of records by using a mechanism called filter. A filter enables you to extract a subset of records that meet certain criteria.
 

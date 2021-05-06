@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Redaction in PDF Viewer WPF | Syncfusion
-description: Redact sensitive/confidential content in in text, images, and graphics from a PDF file using Syncfusion PDF Viewer WPF
+title: Redaction in WPF Pdf Viewer control | Syncfusion
+description: Learn about Redaction support in Syncfusion WPF Pdf Viewer control and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Redact PDF contents in WPF Pdf Viewer
+# Redaction in WPF Pdf Viewer
 
 Redaction support allows you to remove sensitive/confidential information in text, images, and graphics from a PDF document.
 

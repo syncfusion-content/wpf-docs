@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Description settings in WPF PropertyGrid control | Syncfusion
-description: This section explains how a description of the property item has been added through attributes in the WPF PropertyGrid control.
+title: Property Description in WPF PropertyGrid control | Syncfusion
+description: Learn about Property Description support in Syncfusion WPF PropertyGrid control and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Describe the Properties
+# Property Description in WPF PropertyGrid
 
 You can display the description about the property using the  description panel which is placed on the bottom of the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. Description panel visibility can be managed by [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property . The default value of the `DescriptionPanelVisibility` is `Collapsed`. To display the description panel, you should set `DescriptionPanelVisibility`  property value as `Visible`.
 

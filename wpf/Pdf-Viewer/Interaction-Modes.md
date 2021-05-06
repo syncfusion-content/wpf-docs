@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Interaction Modes | PDF Viewer | WPF | Syncfusion
-description: This section describes about how to work with various interaction modes that are supported in PDF viewer.
+title: Interaction Modes in WPF Pdf Viewer control | Syncfusion
+description: Learn about Interaction Modes support in Syncfusion WPF Pdf Viewer control and more.
 platform: WPF
 control: PDF Viewer
 documentation: UG
 ---
 
-# Working with Interaction Modes
+# Interaction Modes in WPF Pdf Viewer
 
 The PDF Viewer supports following cursor modes for easy interaction with the PDF documents: 
 

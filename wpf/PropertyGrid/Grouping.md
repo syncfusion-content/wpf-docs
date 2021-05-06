@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping the Properties in WPF PropertyGrid control | Syncfusion
-description: Learn about grouping the properties of selected object in Syncfusion WPF PropertyGrid control and more details.
+title: Grouping in WPF PropertyGrid control | Syncfusion
+description: Learn about Grouping support in Syncfusion WPF PropertyGrid control and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Grouping the Properties
+# Grouping in WPF PropertyGrid
 
 We can combine the properties and club them into expandable groups according to our needs by  `Category` attribute and `Display.GroupName` field. By default, the grouped properties are displayed in sorted view. If we want to display the property in grouped view, we can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_EnableGrouping) property to `true`. 
 

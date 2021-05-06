@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right to Left Support | PivotGrid | Syncfusion
-description: Right to left support helps to display the contents of the grid from right-to-left in PivotGrid control.
+title: RTL Support in WPF Pivot Grid control | Syncfusion
+description: Learn about RTL Support support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Right to Left Support
+# RTL Support in WPF Pivot Grid
 
 The pivot grid displays the contents of the grid from right-to-left. It can be achieved by setting the `FlowDirection` property of the pivot grid control to "RightToLeft".
 
