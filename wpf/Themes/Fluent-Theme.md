@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with WPF Fluent Theme
 
-[Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual) and acrylic effect for windows in WPF application. Below theme variants are supported,
+[Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual) and acrylic effect for Windows in WPF application. The below theme variants are supported:
 
 * Fluent Light Theme
 * Fluent Dark Theme
 
-Below example shows how to apply fluent dark theme for wpf window using [skin manager](https://help.syncfusion.com/wpf/themes/skin-manager). When applying theme to window, the same theme will get applied to all its child elements.  
+Below example shows how to apply fluent dark theme for WPF Window using [skin manager](https://help.syncfusion.com/wpf/themes/skin-manager). When applying the theme to Window, the same theme will get applied to all its child elements.  
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ N> The reveal animation is enabled by default.
 
 The reveal animation while hovering the controls can be enabled/disabled using [HoverEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_HoverEffectMode) property.
 
-The [HoverEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.HoverEffect.html) enum has following values
+The [HoverEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.HoverEffect.html) enum has the following values:
 
 * `Background` - The hover reveal animation effect will be applied only for control Background.
 
@@ -96,7 +96,7 @@ N> The default value is `HoverEffect.BackgroundAndBorder`.
 
 The reveal animation when pressed using mouse/touch on controls can be enabled/disabled using [PressedEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_PressedEffectMode) property.
 
-The [PressedEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.PressedEffect.html) enum has following values
+The [PressedEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.PressedEffect.html) enum has the following values:
 
 * `Glow` - The glow animation effect will be applied when pressed using mouse/touch.
 * `Reveal` - The reveal animation effect will be applied when pressed using mouse/touch.

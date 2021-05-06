@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Export Chart to PDF | Chart(Classic) | wpf | Syncfusion
-description: Export Chart to PDF
+title: Export Chart To PDF in WPF Chart Control | Syncfusion
+description: Learn here all about Export Chart To PDF support in Syncfusion WPF Chart (Classic) control, its elements and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Export Chart to PDF
+# Export Chart To PDF in WPF Chart (Classic)
 
 
 Essential Chart for WPF now comes with the support to export the chart to a PDF file; this conversion can be done using the Syncfusion.ChartConversion.WPF assembly.
@@ -49,7 +49,7 @@ The following steps explain how to convert a chart to PDF.
    1. Syncfusion.Chart.WPF.dll
    2. Syncfusion.ChartConverter.WPF.dll
 
-   ![](Chart-Controls_images/Chart-Controls_img235.png)
+   ![Chart-Controls_images235](Chart-Controls_images/Chart-Controls_img235.png)
 
 
 
@@ -65,4 +65,4 @@ The following steps explain how to convert a chart to PDF.
    ~~~
 4. The PDF file is generated as follows.
 
-   ![](Chart-Controls_images/Chart-Controls_img236.png)
+   ![Chart-Controls_images236](Chart-Controls_images/Chart-Controls_img236.png)

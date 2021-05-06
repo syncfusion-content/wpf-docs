@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Inserting Images| RichTextBoxAdv | Wpf | Syncfusion
-description: inserting images
+title: Inserting-Images in WPF Wizard Control control | Syncfusion
+description: Learn here all about Inserting-Images support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Inserting Images
+# Inserting-Images in WPF RichTextBoxAdv (Classic)
 
 In order to insert an image in the document, ParagraphAdv provides an inline called ImageContainerAdv. 
 

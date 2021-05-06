@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Mode | SfAccordion | WPF | Syncfusion
-description: Selection Mode of SfAccordion control for WPF
+title: Selection Mode in WPF Accordion control | Syncfusion
+description: Learn here all about Selection Mode support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
 documentation: ug
 ---
 
-# Expansion Modes
+# Selection Mode in WPF Accordion (SfAccordion)
 
 `SfAccordion` provides a property [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) that helps to decide the number of items that can be expanded or selected at a time. The values of [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_SelectionMode) are
 

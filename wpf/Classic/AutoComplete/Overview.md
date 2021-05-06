@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | AutoComplete | WPF | Syncfusion
-description: WPF AutoComplete allows user to select an item from live drop-down which hints as you enter the input text.
+title: About WPF AutoComplete Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF AutoComplete (Classic) control, its elements and more details.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Overview
+# WPF AutoComplete (Classic) Overview
 
 W> This control has been marked as classic, please use [SfTextBoxExt (AutoComplete)](/wpf/SfTextBoxExt/Overview) "AutoComplete") instead.
 

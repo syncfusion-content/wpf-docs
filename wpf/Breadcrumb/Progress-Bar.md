@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Progress Bar| Hierarchical Navigator | Wpf | Syncfusion
-description: progress bar
+title: Progress Bar in WPF Breadcrumb control | Syncfusion
+description: Learn here all about Progress Bar support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Progress Bar
+# Progress Bar in WPF Breadcrumb (HierarchyNavigator)
 
 The progress bar for the HierarchyNavigator control can be displayed or removed.
 
-![](Progress-Bar_images/Progress-Bar_img1.png)
+![Progress-Bar_img1](Progress-Bar_images/Progress-Bar_img1.png)
 
 
 

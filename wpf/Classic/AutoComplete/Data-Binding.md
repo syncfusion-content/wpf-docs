@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | AutoComplete | wpf | Syncfusion
-description: Learn about data binding support in Syncfusion WPF AutoComplete control and more details about the control features.
+title: Data Binding in WPF AutoComplete Control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
 documentation: ug
 ---
 
-# Data Binding in WPF AutoComplete
+# Data Binding in WPF AutoComplete (Classic)
 
 Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CustomSource) property. While binding the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CustomSource) to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
 

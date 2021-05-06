@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Labels | Chart(Classic) | wpf | Syncfusion
-description: Chart Labels
+title: Chart-Labels in WPF Chart Control | Syncfusion
+description: Learn here all about Chart-Labels support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Labels
+# Chart-Labels in WPF Chart (Classic)
 
 ## Chart Font Settings
 
@@ -25,7 +25,7 @@ N> Font settings set to the Chart will be applied to all the units of chart. How
 
 
 
-![](Chart-Controls_images/Chart-Controls_img171.png)
+![Chart-Controls_img171](Chart-Controls_images/Chart-Controls_img171.png)
 
 
 ## Chart Axis Label
@@ -123,7 +123,7 @@ The following code example could be used to customize the Chart Axis Labels.
 
 Following given figure illustrates Chart with customized Primary Axis labels.
 
-![](Chart-Controls_images/Chart-Controls_img172.jpeg)
+![Chart-Controls_img172](Chart-Controls_images/Chart-Controls_img172.jpeg)
 
 
 ## Customizing Label Text
@@ -238,7 +238,7 @@ The following screenshot illustrates Chart PrimaryAxis with Custom Labels.
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img173.jpeg)
+![Chart-Controls_img173](Chart-Controls_images/Chart-Controls_img173.jpeg)
 
 
 
@@ -285,7 +285,7 @@ area.PrimaryAxis.ContentPath = "Content";
 
 The following screenshot illustrates Chart PrimaryAxis with Labels from Data Source.
 
-![](Chart-Controls_images/Chart-Controls_img174.jpeg)
+![Chart-Controls_img174](Chart-Controls_images/Chart-Controls_img174.jpeg)
 
 
 
@@ -318,7 +318,7 @@ The following code example could be used to customize the labels to be rotated w
 
 The following figure illustrates Chart with Primary Axis labels rotated with 90' angle
 
-![](Chart-Controls_images/Chart-Controls_img175.jpeg)
+![Chart-Controls_img175](Chart-Controls_images/Chart-Controls_img175.jpeg)
 
 
 N> LabelRotateAngle property will not have effect when the Axis.IntersectAction property is set as Rotate.
@@ -374,15 +374,15 @@ Chart1.Areas[0].PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 The following screenshot illustrates various techniques for avoiding the Label intersection.
 
-![](Chart-Controls_images/Chart-Controls_img176.jpeg)
+![Chart-Controls_img176](Chart-Controls_images/Chart-Controls_img176.jpeg)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img177.jpeg)
+![Chart-Controls_img177](Chart-Controls_images/Chart-Controls_img177.jpeg)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img178.jpeg)
+![Chart-Controls_img178](Chart-Controls_images/Chart-Controls_img178.jpeg)
 
 
 ## Legend Panel Customization 
@@ -420,7 +420,7 @@ You can customize the legend panel using the _LegendItemsPanel_ property of Char
 
 {% endhighlight %}
 
-![](Chart-Controls_images/Chart-Controls_img179.png)
+![Chart-Controls_img179](Chart-Controls_images/Chart-Controls_img179.png)
 
 
 

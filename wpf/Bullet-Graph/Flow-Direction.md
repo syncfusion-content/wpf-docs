@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flow Direction | SfBulletGraph | Wpf | Syncfusion
-description: Flow Direction 
+title: Flow Direction in WPF Bullet Graph control | Syncfusion
+description: Learn here all about Flow Direction support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
@@ -33,10 +33,10 @@ By default the flow direction of SfBulletGraph is Left to Right. It can be custo
 <table>
 <tr>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
+{{'![Flow-Direction_images1](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
 </td>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
+{{'![Flow-Direction_images2](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
 {{'____'| markdownify }}
 </td></tr>
 </table>

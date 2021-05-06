@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfColorPalette Control | Syncfusion
-description: Learn about introduction of Syncfusion WPF SfColorPalette control, available features and more details.
+title: About WPF Color Palette control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Color Palette (SfColorPalette) control, its elements and more.
 platform: wpf
 control: SfColorPalette
 documentation: ug
 ---
 
-# Overview of WPF ColorPalette (SfColorPalette)
+# WPF Color Palette (SfColorPalette) Overview
 
 The various elements of the [sfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
 

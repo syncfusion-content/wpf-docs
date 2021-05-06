@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Error Bars charts | SfChart | Wpf | Syncfusion
-description: This section explains Error Bars charts and its properties for customization in WPF Charts (SfChart)
+title: ErrorBar Chart in WPF Charts control | Syncfusion
+description: Learn here all about ErrorBar Chart support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Error Bar Chart in WPF (SfChart)
+# ErrorBar in WPF Charts (SfChart)
 
 [ErrorBarSeries](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 

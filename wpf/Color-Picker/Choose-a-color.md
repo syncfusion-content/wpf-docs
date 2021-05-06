@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Choose a color | ColorPicker | wpf | Syncfusion
-description: This section explains basic color editing options, such as different color modes, eye dropper support, and tooltip support.
+title: Select solid color in WPF color picker control | Syncfusion
+description: Learn here all about Select solid color support in Syncfusion WPF color picker (ColorPicker) control and more.
 platform: wpf
 control: ColorPicker
 documentation: ug
 ---
 
-# Select solid color with WPF ColorPicker
+# Select solid color in WPF color picker (ColorPicker)
 
 This section explains how to select a solid color from different color models, how to modify their individual properties and also gives brief information about eye dropper, standard colors.
 

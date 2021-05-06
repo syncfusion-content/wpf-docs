@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation| SfChart | Wpf | Syncfusion
-description: Animation support for SfChart
+title: Animation in WPF Charts control | Syncfusion
+description: Learn here all about Animation support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Animation
+# Animation in WPF Charts (SfChart)
 
 SfChart allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the EnableAnimation property as True and defining the corresponding animation speed with AnimationDuration property.
 

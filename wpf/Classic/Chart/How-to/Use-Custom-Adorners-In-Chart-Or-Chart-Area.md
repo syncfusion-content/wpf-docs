@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Custom Adorners In Chart Or Chart Area | wpf | Syncfusion
-description: use custom adorners in chart or chart area
+description: Learn here all about Use Custom Adorners In Chart Or Chart Area support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -135,7 +135,7 @@ internal class CustomAdorner : Adorner
 {% endhighlight  %}
 {% endtabs %}
 
-![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)
+![Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)
 
 
 

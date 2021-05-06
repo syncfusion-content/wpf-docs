@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Chart(Classic) | wpf | Syncfusion
-description: overview
+title: About WPF Chart Control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
 
-# Overview
+# WPF Chart (Classic) Overview
 
 Essential Chart for WPF is a feature rich, highly customizable and presentable business Chart control. It can be used for easy understanding of large quantities of data and relationship between the data. Essential Chart enhances the readability and understandability of the raw data. With pre-built support for all kinds of list-based data sources and a very flexible template model, the control offers maximum flexibility with a very simple and straight-forward object model. The Chart control allows you to implement animations and user-interactions easily. 
 
@@ -15,7 +15,7 @@ Essential Chart for WPF is intended for developers looking to add advanced, feat
 
 The following image shows an example of a Chart control (line chart):
 
-![](Overview_images/Overview_img1.jpeg)
+![Overview_img1](Overview_images/Overview_img1.jpeg)
 
 
 ## Real World Scenarios

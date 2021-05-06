@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Set and Override Visual Style | SkinStorage | Wpf | Syncfusion
-description: The VisualStyles can be defined and VisualStyle property cannot be set at application level. Need to merge the resource dictionary at application level.
+title: Set and Override Visual Style in SkinStorage | Wpf | Syncfusion
+description: Learn here all about Set and Override Visual Style at Application Level support in Syncfusion WPF SkinStorage (Classic) control and more.
 platform: wpf
 control: SkinStorage
 documentation: ug
 ---
 
-# Set and Override Visual Style at Application Level
+# Set and Override Visual Style in SkinStorage
+
+This page explains Set and Override Visual Style in SkinStorage and more details.
+
+## Set and Override Visual Style at Application Level in WPF SkinStorage (Classic)
 
 The Visual Styles can also be defined at application level. The VisualStyle property cannot be set at the application level. You have to merge the appropriate Resource Dictionary on Application resources which will cause all the controls to pick up the particular style.
 

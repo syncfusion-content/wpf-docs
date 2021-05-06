@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Radar and Polar Charts | SfChart | Wpf | Syncfusion
-description: This section explains Radar and Polar Charts and its properties for customization in WPF Charts (SfChart)
+title: Radar and Polar Chart in WPF Charts control | Syncfusion
+description: Learn here all about Radar and Polar Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Radar and Polar Charts in WPF (SfChart)
+# Radar and Polar in WPF Charts (SfChart)
 
 ## Radar Chart
 

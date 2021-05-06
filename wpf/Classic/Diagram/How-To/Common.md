@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Common
-description: Common
+title: Common in WPF Diagram (classic) Control | Syncfusion
+description: Learn here all about Common support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
 
-# Frequently Asked Questions
+# Common in WPF Diagram (classic)
 
 This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
 
@@ -16,7 +16,7 @@ Common—Answers common questions that arises in minds of fresh users of Essenti
 
 Advanced—Answers questions that are in an advanced level, meant for experts.
 
-# Common
+## Common in WPF Diagram (classic)
 
 This section answers the following common question that arises in the minds of fresh users of Essential Diagram WPF. 
 
@@ -123,7 +123,7 @@ TryCast(n.Content, Button).IsHitTestVisible = True
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img90.jpeg)
+![Diagram-View_img90](Diagram-View_images/Diagram-View_img90.jpeg)
 
 
 
@@ -183,7 +183,7 @@ diagramModel.Nodes.Add(n)
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img91.jpeg)
+![Diagram-View_img91](Diagram-View_images/Diagram-View_img91.jpeg)
 
 
 

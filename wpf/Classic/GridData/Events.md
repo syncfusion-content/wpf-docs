@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events | GridData (Classic) | wpf | Syncfusion
-description: Learn here about how to use the subscribe and unsubscribe the events in the Syncfusion WPF GridData control.
+title: Events in WPF GridData Control | Syncfusion
+description: Learn here all about Events support in Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Events in GridDataControl
+# Events in WPF GridDataControl (Classic)
 
 The GridData control declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
 

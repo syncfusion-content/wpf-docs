@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context View | Diagram | wpf | Syncfusion
-description: context view
+title: Context View in WPF Diagram Control | Syncfusion
+description: Learn here all about Context View support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Context View
+# Context View in WPF Diagram (classic)
 
 A context view is a small view of an entire diagram with a new arrangement, where the small view and the arrangement are based on a particular view of the selected node. It provides three views:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Suggestion box AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides the details of the suggestion box and their placement in AutoComplete in `SfTextBoxExt`.
+title: Dropdown customization in WPF Autocomplete control | Syncfusion
+description: Learn here all about Dropdown customization support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Drop-down customization 
+# Dropdown customization in WPF Autocomplete (SfTextBoxExt)
 
 Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties and customizations that deals with drop-down list in the `AutoComplete` control.
 

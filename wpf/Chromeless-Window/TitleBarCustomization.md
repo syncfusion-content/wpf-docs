@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Title bar Customization | ChromelessWindow | WPF | Syncfusion
-description: This section briefly describes the various customizations such as background, height, font size and much more in Title bar in Syncfusion's Chromeless Window
+title: Title bar Customization in WPF Chromeless Window control | Syncfusion
+description: Learn about Title bar Customization support in Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Title bar Customization
+# Title bar Customization in WPF Chromeless Window
 
  ## Customizing the background
  

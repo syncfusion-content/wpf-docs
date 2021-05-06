@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Standard path supports in WPF Carousel control | Syncfusion
-description: This section explains about scaling, skewing and opacity supports in standard path mode and how to use that supports in WPF Carousel control.
+title: Standard Path in WPF Carousel control | Syncfusion
+description: Learn about Standard Path support in Syncfusion Essential Studio WPF Carousel control, its elements and more details.
 platform: wpf
 control: Carousel
 documentation: ug
 ---
 
-# Standard path customization in WPF Carousel
+# Standard Path in WPF Carousel
 
 This section explains about resizing, skewing, rotation animation and opacity supports available in WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control's standard path mode.
 

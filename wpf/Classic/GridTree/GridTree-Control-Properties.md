@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GridTree Control Properties| GridTree  | Wpf | Syncfusion
-description: gridtree control properties
+title: GridTree Control Properties in WPF Wizard Control control | Syncfusion
+description: Learn here all about GridTree Control Properties support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# GridTree Control Properties
+# GridTree Control Properties in WPF GridTreeControl (Classic)
 
 The GridTree control has the following properties that allow you to control much of the behavior available within the control. Here is a list of these properties along with some discussion of each. 
 

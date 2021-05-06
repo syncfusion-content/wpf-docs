@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization of the items in WPF CheckListBox control | Syncfusion
-description: This section describes how large sets of data can be loaded in CheckListBox control using Virtualization.
+title: Virtualization in WPF CheckedListBox control | Syncfusion
+description: Learn here all about Virtualization support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
 documentation: ug
 ---
 
-# Virtualization in WPF CheckListBox
+# Virtualization in WPF CheckedListBox (CheckListBox)
 
 UI Virtualization support is enabled by default in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of `CheckListBox` items regardless of items count.
 

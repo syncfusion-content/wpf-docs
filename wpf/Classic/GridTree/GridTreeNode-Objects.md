@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GridTreeNode Objects| GridTree  | Wpf | Syncfusion
-description: gridtreenode objects
+title: GridTreeNode Objects in WPF Wizard Control control | Syncfusion
+description: Learn here all about GridTreeNode Objects support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
 documentation: ug
 ---
 
-# GridTreeNode Objects
+# GridTreeNode Objects in WPF GridTreeControl (Classic)
 
 The GridTreeControl.InternalGrid.Nodes collection holds the GridTreeNodes that represents the visible nodes in the GridTree control. The GridTreeNode object has the following properties:
 
