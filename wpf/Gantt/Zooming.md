@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming in WPF Gantt control | Syncfusion
-description: Learn about Zooming support in Syncfusion WPF Gantt control and more.
+description: Learn about Zooming support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

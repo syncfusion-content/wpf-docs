@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in WPF GridControl control | Syncfusion
-description: Learn about Cell Types support in Syncfusion WPF GridControl control and more.
+title: Cell Types in WPF GridControl | Syncfusion
+description: Learn about Cell Types support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug

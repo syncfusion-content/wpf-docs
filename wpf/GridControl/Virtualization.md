@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in WPF GridControl control | Syncfusion
-description: Learn about Virtualization support in Syncfusion WPF GridControl control and more.
+title: Virtualization in WPF GridControl | Syncfusion
+description: Learn about Virtualization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug

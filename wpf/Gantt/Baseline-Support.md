@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Baseline Support in WPF Gantt control | Syncfusion
-description: Learn about Baseline Support support in Syncfusion WPF Gantt control and more.
+description: Learn about Baseline Support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -365,7 +365,7 @@ Sample Project Statistic Visual:
 
 
 
-![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)
+![Baseline-Support_images3](Baseline-Support_images/Baseline-Support_img3.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Style in WPF Gantt control | Syncfusion
-description: Learn about Visual Style support in Syncfusion WPF Gantt control and more.
+description: Learn about Visual Style support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

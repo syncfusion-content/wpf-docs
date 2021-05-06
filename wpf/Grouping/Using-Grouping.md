@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Grouping in WPF Grouping control | Syncfusion
-description: Learn about Using Grouping support in Syncfusion WPF Grouping control and more.
+description: Learn about Using Grouping support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug

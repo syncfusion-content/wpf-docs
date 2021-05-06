@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance in WPF GridControl control | Syncfusion
-description: Learn about Performance support in Syncfusion WPF GridControl control and more.
+title: Performance in WPF GridControl | Syncfusion
+description: Learn about Performance support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug

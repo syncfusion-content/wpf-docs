@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency Relationship in WPF Gantt control | Syncfusion
-description: Learn about Dependency Relationship support in Syncfusion WPF Gantt control and more.
+description: Learn about Dependency Relationship support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

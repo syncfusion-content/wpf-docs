@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WPF Gantt control | Syncfusion
-description: Learn about Localization support in Syncfusion WPF Gantt control and more.
+description: Learn about Localization support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

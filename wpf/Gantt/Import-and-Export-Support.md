@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import and Export Support in WPF Gantt control | Syncfusion
-description: Learn about Import and Export Support support in Syncfusion WPF Gantt control and more.
+description: Learn about Import and Export Support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

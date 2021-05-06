@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Manipulation in WPF Grouping control | Syncfusion
-description: Learn about Data Manipulation support in Syncfusion WPF Grouping control and more.
+description: Learn about Data Manipulation support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -300,7 +300,7 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Data-Manipulation_images/Data-Manipulation_img3.png)
+   ![Data-Manipulation_images3](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 
 Filtering is applied to the data displayed in the console.

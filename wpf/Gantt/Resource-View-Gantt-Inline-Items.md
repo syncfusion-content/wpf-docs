@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource View Gantt Inline Items in WPF Gantt control | Syncfusion
-description: Learn about Resource View Gantt Inline Items support in Syncfusion WPF Gantt control and more.
+description: Learn about Resource View Gantt Inline Items support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug

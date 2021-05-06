@@ -393,7 +393,7 @@ The following image shows Custom DateTime Schedule:
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/custom.png](Custom-Schedule_images/Custom-Schedule_img2.png)
+![Custom-Schedule_images2](Custom-Schedule_images/Custom-Schedule_img2.png)
 
 
 
