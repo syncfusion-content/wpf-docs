@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbars in GroupBar| GroupBar | Wpf | Syncfusion
-description: toolbars in groupbar
+title: Toolbars in GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Toolbars in GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Toolbars in GroupBar
+# Toolbars in GroupBar in WPF Navigation Pane (GroupBar)
 
 We can hide the toolbar that is displayed in the GroupBar using the IsToolBarEnabled property. This dependency property sets the value indicating whether to hide the toolbar and items in stacked mode. It returns the bool value that indicates the state of toolbar that is hidden or visible. This property works only in stacked mode. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WPF Multi Column DropDown | Syncfusion.
-description: Learn about single and multiple row selection support in Syncfusion WPF Multi Column DropDown and more details.
+title: Selection in WPF Multi Column Dropdown control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MenuItemSeparator Support | Seperator | MenuAdv | Wpf | Syncfusion
-description: MenuItemSeparator support | Menu Seperator in WPF MenuAdv
+title: MenuItemSeparator Support in WPF Menu control | Syncfusion
+description: Learn here all about MenuItemSeparator Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# MenuItemSeparator Support
+# MenuItemSeparator Support in WPF Menu (MenuAdv)
 
 MenuItemSeparator is a line, which is used to separate MenuItemAdv’s. MenuItemSeparator can be included in the items list of MenuItemAdv.  
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF SfMaskedEdit | Syncfusion
-description: WPF MaskedEdit control restricts the input with the mask symbol along with its built-in features like validation, watermark, etc...
+title: About WPF MaskedTextBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
 platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Overview of WPF SfMaskedEdit
+# WPF MaskedTextBox (SfMaskedEdit) Overview
 
 The [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html)  is an advanced version of the input control that restricts your input of certain types such as characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 

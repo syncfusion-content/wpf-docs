@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DisplayMode | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to control layout shown with mode of the DisplayMode like default, compact or expanded in SfNavigationDrawer.
+title: Different display modes in WPF Navigation Drawer control | Syncfusion
+description: Learn here all about Different display modes support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# DisplayMode with SfNavigationDrawer (Sidebar) control 
+# Different display modes in WPF Navigation Drawer (SfNavigationDrawer)
 
 The WPF Navigation drawer provides default, compact and extended [display modes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DisplayMode) to create navigation menu for an application. Compact and Extended display modes support to populate the navigation menu using built items with different types. 
 

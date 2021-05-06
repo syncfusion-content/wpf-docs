@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Annotations | SfMap | wpf | Syncfusion
-description: This section describes annotation usages with its customization by using defined properties in WPF SfMaps control.
+title: Annotations in WPF Maps control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

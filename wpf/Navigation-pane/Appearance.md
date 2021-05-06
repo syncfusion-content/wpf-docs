@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance| GroupBar | Wpf | Syncfusion
-description: This section explain about how to customize appearance and apply different themes for the Syncfusion WPF GroupBar. 
+title: Appearance in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug

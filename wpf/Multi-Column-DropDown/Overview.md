@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfMultiColumnDropDownControl | Syncfusion
-description: Learn about introduction of Syncfusion WPF SfMultiColumnDropDownControl, its feature and more details.
+title: About WPF Multi Column Dropdown control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# SfMultiColumnDropDownControl
+# WPF Multi Column Dropdown (SfMultiColumnDropDown) Overview
 
 Syncfusion's MultiColumnDropDown control is combined with an Editor (TextBox Control) and powerful SfDataGrid (DataGrid Control) to search and select items by using the DropDownGrid. The Editor accepts free-flow text that is used to filter the DropDownGrid.
 

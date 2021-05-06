@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NavigationDrawer | NavigationDrawer | WPF | Syncfusion
-description: This section describes the overview and key features provided on the WPF platform in the SfNavigationDrawer. 
+title: About WPF Navigation Drawer control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control, its elements and more details.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# WPF NavigationDrawer (SfNavigationDrawer) Overview
+# WPF Navigation Drawer (SfNavigationDrawer) Overview
 
 The WPF Navigation Drawer control is a sidebar navigation view that is used to create a navigation menu for easy navigation. It provides compact and extended display modes with built-in navigation view items with ability to switch between both modes based on available size. It also provides default mode which allows to have a custom pane view.
 

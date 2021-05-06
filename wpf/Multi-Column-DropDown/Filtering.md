@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering in WPF Multi Column Dropdown control | Syncfusion
-description: Learn about the various filtering like case-sensitive filtering, custom filtering and filtering delay in WPF Multi Column Dropdown control and more details.
+description: Learn here all about Filtering support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Filtering in SfMultiColumnDropDownControl
+# Filtering in WPF Multi Column Dropdown (SfMultiColumnDropDown)
 
 SfMultiColumnDropDownControl provides support to filter the drop down display list based on typed text by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) as `true`. The records are filter based on `DisplayMember`. 
 

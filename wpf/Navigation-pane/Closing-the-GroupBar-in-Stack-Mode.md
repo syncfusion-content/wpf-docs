@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Closing the GroupBar in Stack Mode| GroupBar | Wpf | Syncfusion
-description: Learn about Closing the GroupBar in Stack Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more details.
+title: Closing the GroupBar in Stack Mode in WPF Navigation Pane | Syncfusion
+description: Learn here all about Closing the GroupBar in Stack Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Closing the GroupBar in Stack Mode
+# Closing the GroupBar in Stack Mode in WPF Navigation Pane (GroupBar)
 
 You can close the GroupBar in stack mode by enabling the close button. This is done by using the IsCloseButtonEnabled property. This dependency property sets the value indicating whether the close button is visible on the header of the item in stack mode when IsToolBarEnabled property is set to _false_. That is close button is visible only if toolbar is disabled. This property can work only in stack mode.
 
