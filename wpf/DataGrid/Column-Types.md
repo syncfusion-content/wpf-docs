@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column types in WPF DataGrid control | Syncfusion
-description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+title: Column Types in WPF DataGrid control | Syncfusion
+description: Learn here all about Column Types support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column types in WPF DataGrid (SfDataGrid)
+# Column Types in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 
