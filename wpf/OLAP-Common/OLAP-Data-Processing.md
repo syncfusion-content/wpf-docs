@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Data Processing
-description: OLAP data processing
+title: OLAP Data Processing in WPF OLAP Common control | Syncfusion
+description: Learn about OLAP Data Processing support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# OLAP Data Processing
+# OLAP Data Processing in WPF OLAP Common
 
 The OlapDataManager accepts an input from a user and processes the data based on the supplied input and generates the formatted output which Syncfusion OLAP controls can understand. The OlapDataManager can process the OLAP data (cube).
 

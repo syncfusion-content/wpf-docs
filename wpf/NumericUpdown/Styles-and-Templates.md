@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates of WPF UpDown control | Syncfusion
-description: This section describes about how to change the background and foreground color in WPF UpDown control.
+title: Styles and Templates in WPF NumericUpdown control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion WPF NumericUpdown (UpDown) control and more.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Styles and Templates
+# Styles and Templates in WPF NumericUpdown (UpDown)
 
 
 The background and foreground of the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control can be customized by editing its style or by using the properties exposed by the `UpDown` control.

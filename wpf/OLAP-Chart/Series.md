@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series | OLAP Chart | Syncfusion
-description: Information about the data points plotted in the rectangular co-ordinate system in OLAP Chart control.
+title: Series in WPF Olap Chart control | Syncfusion
+description: Learn about Series support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Series
+# Series in WPF Olap Chart
 
 Series are the data points plotted in the rectangular co-ordinate system.
 

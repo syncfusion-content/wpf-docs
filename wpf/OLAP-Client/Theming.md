@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming | OLAP Client | Syncfusion
-description: Support to apply various visual styles such as Office 2010, Office 2007, Blend, Metro, Office 2003, etc., | Syncfusion
+title: Theming in WPF Olap Client control | Syncfusion
+description: Learn about Theming support in Syncfusion Essential Studio WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Theming
+# Theming in WPF Olap Client
 
 Theming is the process of applying particular settings to visual elements of a product. This feature provides the following theming options:
 

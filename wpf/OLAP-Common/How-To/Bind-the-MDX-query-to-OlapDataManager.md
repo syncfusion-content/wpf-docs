@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind the MDX query to OlapDataManager| OLAPCommon | Wpf | Syncfusion
-description: bind the mdx query to olapdatamanager
+description: bind the mdx query to olapdatamanager in Syncfusion WPF OLAPCommon control, its elements and more details.
 platform: wpf
 control: OLAPCommon
 documentation: ug
@@ -140,7 +140,7 @@ The following sequential diagram is matching when user gives input as MDX query:
 
 
 
-![](Bind-the-MDX-query-to-OlapDataManager_images/Bind-the-MDX-query-to-OlapDataManager_img1.png)
+![Bind-the-MDX-query-to-OlapDataManager_img1](Bind-the-MDX-query-to-OlapDataManager_images/Bind-the-MDX-query-to-OlapDataManager_img1.png)
 
 
 

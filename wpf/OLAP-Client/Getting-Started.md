@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF OLAP Client Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential WPF OLAP Client control, its elements, and more.
+title: Getting Started with WPF Olap Client control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Getting Started with WPF OLAP Client
+# Getting Started with WPF Olap Client
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.
