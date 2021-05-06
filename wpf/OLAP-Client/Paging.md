@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in WPF Olap Client control | Syncfusion
-description: Learn about Paging support in Syncfusion WPF Olap Client control and more.
+description: Learn about Paging support in Syncfusion Essential Studio WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug

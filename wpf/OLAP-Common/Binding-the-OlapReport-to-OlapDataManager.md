@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding OlapReport to OlapDataManager in WPF OLAP Common control | Syncfusion
+title: Binding OlapReport to OlapDataManager in WPF OLAP Common | Syncfusion
 description: Learn about Binding OlapReport to OlapDataManager support in Syncfusion WPF OLAP Common control and more.
 platform: wpf
 control: OLAP Common

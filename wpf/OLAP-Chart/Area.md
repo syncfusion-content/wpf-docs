@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Area in WPF Olap Chart control | Syncfusion
-description: Learn about Area support in Syncfusion WPF Olap Chart control and more.
+description: Learn about Area support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug

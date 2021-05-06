@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Business Intelligence BI in WPF OLAP Common control | Syncfusion
-description: Learn about Business Intelligence BI support in Syncfusion WPF OLAP Common control and more.
+description: Learn about Business Intelligence BI support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug

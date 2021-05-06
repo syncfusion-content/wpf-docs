@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculated Members in WPF Olap Client control | Syncfusion
-description: Learn about Calculated Members support in Syncfusion WPF Olap Client control and more.
+description: Learn about Calculated Members support in Syncfusion Essential Studio WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
