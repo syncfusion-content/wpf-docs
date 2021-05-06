@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiline Text | Dropdown Button Control | WPF | Syncfusion
-description: This section explains how to display multiple lines of text along with image and large size mode of a dropdown button control.
+title: Multiline Text in WPF Dropdown Button control | Syncfusion
+description: Learn here all about Multiline Text support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug

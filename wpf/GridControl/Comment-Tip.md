@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CommentTip in WPF GridControl | Syncfusion
-description: Learn here about how to set CommentTip of Syncfusion WPF GridControl and specific cell or row and column.
+title: Comment Tip in WPF GridControl | Syncfusion
+description: Learn about Comment Tip support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: WPF
 control: GridControl
 documentation: ug
 ---
 
-# Comment Tip in GridControl
+# Comment Tip in WPF GridControl
 
 Comment Tip can be added to individual cells, rows and columns to show more information about the particular cell on mouse hover. You can set the comment indicator at any position (TopLeft, TopRight, BottomLeft and BottomRight) in a specific cell or row or column by using [GridCommentStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo.html). Comment Tip service can be enabled by setting [GridCommentService.SetShowComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridCommentService.html#Syncfusion_Windows_Controls_Grid_GridCommentService_SetShowComment_System_Windows_DependencyObject_System_Boolean_) attached property to `true`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming| Gantt | Wpf | Syncfusion
-description: zooming
+title: Zooming in WPF Gantt control | Syncfusion
+description: Learn about Zooming support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Zooming
+# Zooming in WPF Gantt
 
 Zooming allows you to zoom in and zoom out of the schedule and chart of the Gantt control between year and minute time units. On zooming, the schedule’s time unit and schedule cell size will be dynamically changed based on the zoom factor. You can increase/decrease the width of the tasks in the chart based on the schedule’s time unit. Zooming can be categorized into two types: 
 
@@ -72,7 +72,7 @@ The following image shows Built-in Zooming in Gantt:
 
 
 
-![](Zooming_images/Zooming_img1.png)
+![Zooming_img1](Zooming_images/Zooming_img1.png)
 
 
 
@@ -239,7 +239,7 @@ The following image shows Custom Zooming in Gantt:
 
 
 
-![](Zooming_images/Zooming_img2.png)
+![Zooming_img2](Zooming_images/Zooming_img2.png)
 
 
 

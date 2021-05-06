@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance of WPF GridControl | Syncfusion
-description: Learn here about how to handles the Syncfusion WPF GridControl features and its records, testing process.
+title: Performance in WPF GridControl | Syncfusion
+description: Learn about Performance support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Performance of GridControl
+# Performance in WPF GridControl
 
 Essential Grid is well known for its optimized performance. This section points out a sample that illustrates how to do high frequency updates in Grid control.
 
