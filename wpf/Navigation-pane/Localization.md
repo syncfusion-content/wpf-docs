@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization| GroupBar | Wpf | Syncfusion
-description: localization
+title: Localization in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Localization
+# Localization in WPF Navigation Pane (GroupBar)
 
 Localization involves the customization of the application for a specific language. It translates string values according to the specific culture.  In the following table, the language is English and French
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check Box and Radio Button Support| MenuAdv | Wpf | Syncfusion
-description: check box and radio button support in WPF MenuAdv
+title: Check Box and Radio Button Support in WPF Menu control | Syncfusion
+description: Learn here all about Check Box and Radio Button Support support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Check Box and Radio Button Support in WPF MenuAdv 
+# Check Box and Radio Button Support in WPF Menu (MenuAdv)
 
 MenuAdv provides a support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to “true”. You can change the icon type (Check Box or Radio Button) by using the CheckIcon property also it can be checked by using the IsChecked property.
 

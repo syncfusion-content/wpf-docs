@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started| GroupBar | WPF | Syncfusion
-description: This section describes how to add group bar control into wpf application and its basic functionalities.
+title: Getting Started with WPF Navigation Pane control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Navigation Pane (GroupBar) control, its elements and more details.
 platform: WPF
 control: GroupBar
 documentation: ug

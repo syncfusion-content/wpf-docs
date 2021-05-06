@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Side-Pane-Content | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to set the view of the drawer header, the view of the drawer footer and the view of the drawer content of the NavigationDrawer.
+title: Custom views in WPF Navigation Drawer control | Syncfusion
+description: Learn here all about Custom views support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Custom view in Navigation Drawer
+# Custom views in WPF Navigation Drawer (SfNavigationDrawer)
 
 ## Populating the with custom views
 

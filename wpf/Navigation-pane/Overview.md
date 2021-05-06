@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| GroupBar | WPF | Syncfusion
-description: WPF GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar.
+title: About WPF Navigation Pane control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Navigation Pane (GroupBar) control, its elements and more details.
 platform: WPF
 control: GroupBar
 documentation: ug
 ---
 
-# GroupBar
+# WPF Navigation Pane (GroupBar) Overview
 
 The GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar. It has a container to host controls within it. Use it to host a categorized collection of command items and custom controls wired to execute custom commands. It includes several customizable features which can be easily implemented in WPF applications.
 

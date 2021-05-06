@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Navigation Support| MenuAdv | Wpf | Syncfusion
-description: keyboard navigation support
+title: Keyboard Navigation Support in WPF Menu control | Syncfusion
+description: Learn here all about Keyboard Navigation Support support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Keyboard Navigation Support
+# Keyboard Navigation Support in WPF Menu (MenuAdv)
 
 The MenuAdv control supports keyboard navigation, which allows users to select MenuItemAdv to open and close the submenu. The following keys are used for keyboard navigation:
 

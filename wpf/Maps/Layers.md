@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Layers in Syncfusion Map control in WPF
-description: This section describes the Sfmap control shapefile layer, imagery layer and shapefile layer customization in WPF platform.
+title: Layers in WPF Maps control | Syncfusion
+description: Learn here all about Layers support in Syncfusion WPF Maps (SfMap) control and more.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Layers in syncfusion SfMap control
+# Layers in WPF Maps (SfMap)
 
 The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 

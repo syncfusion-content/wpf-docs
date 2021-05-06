@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Blendability Support| MenuAdv | Wpf | Syncfusion
-description: blendability support
+title: Blendability Support in WPF Menu control | Syncfusion
+description: Learn here all about Blendability Support support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Blendability Support
+# Blendability Support in WPF Menu (MenuAdv)
 
 You can customize MenuAdv and MenuItemAdv in Expression Blend. After adding MenuAdv and MenuItemAdv to the design view, you can see MenuAdv and MenuItemAdv in the Objects and Timeline window.
 
-![](Blendability-Support_images/Blendability-Support_img1.png)
+![Blendability-Support_img1](Blendability-Support_images/Blendability-Support_img1.png)
 
 
 
-![](Blendability-Support_images/Blendability-Support_img2.png)
+![Blendability-Support_img2](Blendability-Support_images/Blendability-Support_img2.png)
 
 
 
 Right-click MenuAdv and in EditTemplate option select Edit a Copy and assign the key name to the resource edited. The same process can be repeated to edit the MenuItemAdv style.
 
-![](Blendability-Support_images/Blendability-Support_img3.png)
+![Blendability-Support_img3](Blendability-Support_images/Blendability-Support_img3.png)
 
 
 
-![](Blendability-Support_images/Blendability-Support_img4.png)
+![Blendability-Support_img4](Blendability-Support_images/Blendability-Support_img4.png)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting ToolTip for GroupBar| GroupBar | Wpf | Syncfusion
-description: setting tooltip for groupbar
+title: Setting ToolTip for GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Setting ToolTip for GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Setting ToolTip for GroupBar
+# Setting ToolTip for GroupBar in WPF Navigation Pane (GroupBar)
 
 ToolTip is one of the important user interactive feature available in GroupBar control. You can set the tooltip for the collapse button and expand button using the properties listed below.
 

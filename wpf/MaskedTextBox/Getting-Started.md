@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF SfMaskedEdit control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF SfMaskedEdit control and more details about the control features.
+title: Getting Started with WPF MaskedTextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF MaskedTextBox (SfMaskedEdit) control, its elements and more details.
 platform: WPF
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Getting started with WPF SfMaskedEdit
+# Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
 This section explains how to create a WPF [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) and explains about its structure and features.
 

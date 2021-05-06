@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation support | GroupBar | WPF | Syncfusion
-description: changing the orientations of groupbar, groupbar items,groupview, groupviewitems
+title: Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Changing the orientations of GroupBar, GroupBar items,GroupView, GroupViewItems
+# Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems in WPF Navigation Pane (GroupBar)
 
 You can change the layout of the entire GroupBar. GroupBar control has the Orientation property, which lets you place the contents of GroupBar either vertically or horizontally. It provides the following options.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting the FlowDirection for GroupBar| GroupBar | Wpf | Syncfusion
-description: setting the flowdirection for groupbar
+title: Setting the FlowDirection for GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Setting the FlowDirection for GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Setting the FlowDirection for GroupBar
+# Setting the FlowDirection for GroupBar in WPF Navigation Pane (GroupBar)
 
 Flow Direction of the GroupBar is set by using the FlowDirection property. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bubbles | SfMap | wpf | Syncfusion
-description: This section explores how to add Bubbles, customizing bubble symbols and applying range color mapping in Maps.
+title: Bubbles in WPF Maps control | Syncfusion
+description: Learn here all about Bubbles support in Syncfusion WPF Maps (SfMap) control and more.
 platform: wpf
 control: SfMap
 documentation: ug

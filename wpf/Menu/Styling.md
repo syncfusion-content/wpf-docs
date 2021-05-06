@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styling| MenuAdv | Wpf | Syncfusion
-description: This section explains about different themes for MenuAdv control and how to implement those themes to the control.
+title: Styling in WPF Menu control | Syncfusion
+description: Learn here all about Styling support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug

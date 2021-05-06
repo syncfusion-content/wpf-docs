@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup customization in SfMultiColumnDropDownControl.
-description: How to handle the popup customizations, popupsizing in SfMultiColumnDropDownControl.
+title: Popup customization in WPF Multi Column Dropdown control | Syncfusion
+description: Learn here all about Popup customization support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Popup customization
+# Popup customization in WPF Multi Column Dropdown (SfMultiColumnDropDown)
 SfMultiColumnDropDownControl allows you to customize the Popup appearance by setting [PopupBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBackground), [PopupBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderBrush), [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground) and [PopupBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupBorderThickness) properties.
 
 {% tabs %}
@@ -31,7 +31,7 @@ SfMultiColumnDropDownControl allows you to customize the Popup appearance by set
 {% endhighlight %}
 {% endtabs %}
 
-![](Popup-customization_images/Popup-customization_img1.png)
+![Popup-customization_img1](Popup-customization_images/Popup-customization_img1.png)
 
 You can change the drop down grid background by setting [PopupDropDownGridBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_PopupDropDownGridBackground).
 
@@ -54,7 +54,7 @@ You can change the drop down grid background by setting [PopupDropDownGridBackgr
 {% endhighlight %}
 {% endtabs %}
 
-![](Popup-customization_images/Popup-customization_img2.png)
+![Popup-customization_img2](Popup-customization_images/Popup-customization_img2.png)
 
 ## Popup sizing
 

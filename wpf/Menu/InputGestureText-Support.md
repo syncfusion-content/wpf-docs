@@ -1,13 +1,13 @@
 ---
 layout: post
-title: InputGestureText Support| MenuAdv | Wpf | Syncfusion
-description: inputgesturetext support
+title: InputGestureText Support in WPF Menu control | Syncfusion
+description: Learn here all about InputGestureText Support support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# InputGestureText Support
+# InputGestureText Support in WPF Menu (MenuAdv)
 
 InputGestureText is used to set MenuItemAdv to display shortcut keys along with its Header. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of MenuItemAdv. Also, InputGestureText can be displayed in MenuItemAdv by using the command support. If you set the value of the Command property by using ApplicationCommands the corresponding InputGestureText will be displayed along with its header value automatically.
 
@@ -104,7 +104,7 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 {% endhighlight %}
 
-![](InputGestureText-Support_images/InputGestureText-Support_img1.png)
+![InputGestureText-Support_img1](InputGestureText-Support_images/InputGestureText-Support_img1.png)
 
 
 

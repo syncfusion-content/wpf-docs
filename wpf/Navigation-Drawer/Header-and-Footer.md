@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header and Footer | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to set the view of the drawer header, the view of the drawer footer NavigationDrawer.
+title: Header and Footer in WPF Navigation Drawer control | Syncfusion
+description: Learn here all about Header and Footer support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Header and Footer support in SfNavigationDrawer control 
+# Header and Footer in WPF Navigation Drawer (SfNavigationDrawer)
 
 The Navigation menu's header and footer parts are fully customizable. This section explains the customization of header and footer. 
 

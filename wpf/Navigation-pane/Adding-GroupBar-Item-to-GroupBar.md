@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding GroupBar Item to GroupBar| GroupBar | Wpf | Syncfusion
-description: adding groupbar item to groupbar
+title: Adding GroupBar Item to GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Adding GroupBar Item to GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Adding GroupBar Item to GroupBar
+# Adding GroupBar Item to GroupBar in WPF Navigation Pane (GroupBar)
 
 GroupBar Item is added to the GroupBar using XAML or C# code. The following code illustrates this. 
 
@@ -38,7 +38,7 @@ this.Content = groupBar;
 
 
 
-![](Adding-GroupBar-Item-to-GroupBar_images/Adding-GroupBar-Item-to-GroupBar_img1.jpeg)
+![Adding-GroupBar-Item-to-GroupBar_img1](Adding-GroupBar-Item-to-GroupBar_images/Adding-GroupBar-Item-to-GroupBar_img1.jpeg)
 
 
 

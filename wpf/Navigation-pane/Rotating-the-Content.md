@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rotating the Content| GroupBar | Wpf | Syncfusion
-description: rotating the content
+title: Rotating the Content in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Rotating the Content support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Rotating the Content
+# Rotating the Content in WPF Navigation Pane (GroupBar)
 
 The position of the content can be changed by setting an angle to the ContentRotationAngle property. This dependency property sets the angle of rotation for displaying item contents. 
 

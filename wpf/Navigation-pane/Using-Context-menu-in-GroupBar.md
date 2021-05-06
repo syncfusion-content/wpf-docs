@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Context menu in GroupBar| GroupBar | Wpf | Syncfusion
-description: using context menu in groupbar
+title: Using Context menu in GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Using Context menu in GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Using Context menu in GroupBar
+# Using Context menu in GroupBar in WPF Navigation Pane (GroupBar)
 
 To enable the context menu support in the GroupBar, set IsEnabledContextMenu property to _true_. This dependency property sets the value that indicates whether the context menu is enabled. 
 
@@ -61,7 +61,7 @@ groupBar.IsEnabledContextMenu = true;
 
 
 
-![](Using-Context-menu-in-GroupBar_images/Using-Context-menu-in-GroupBar_img1.jpeg)
+![Using-Context-menu-in-GroupBar_img1](Using-Context-menu-in-GroupBar_images/Using-Context-menu-in-GroupBar_img1.jpeg)
 
 
 

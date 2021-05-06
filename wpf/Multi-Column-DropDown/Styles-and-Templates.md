@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: styles and templates
+title: Styles and Templates in WPF Multi Column Dropdown control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Styles and Templates
+# Styles and Templates in WPF Multi Column Dropdown (SfMultiColumnDropDown)
 
 WPF styles and templates refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
 

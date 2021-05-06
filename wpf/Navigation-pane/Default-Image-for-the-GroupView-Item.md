@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Default Image for the GroupView Item| GroupBar | Wpf | Syncfusion
-description: default image for the groupview item
+title: Default Image for the GroupView Item in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Default Image for the GroupView Item support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Default Image for the GroupView Item
+# Default Image for the GroupView Item in WPF Navigation Pane (GroupBar)
 
 You can set the default item image for the GroupView item using the DefaultItemImage property. This dependency property sets the default image for GroupView item. It returns the default image of GroupView item.
 
