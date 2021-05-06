@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF OlapGrid Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential WPF OlapGrid control, its elements, and more.
+title: Getting Started with WPF Olap Grid control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Getting Started with WPF OlapGrid
+# Getting Started with WPF Olap Grid
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.

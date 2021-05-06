@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Tooltip in WPF Olap Chart control | Syncfusion
+description: Learn about Tooltip support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in WPF Olap Chart
 
 The OLAP chart provides the series information such as measure, primary x-axis and y-axis values, and series name through the series tooltip, when the mouse pointer is moved over chart points.
 
@@ -29,7 +29,7 @@ Me.olapChart.Series(0).ShowToolTip = False
 
 {% endtabs %}
   
-![](Tooltip_images/Tooltip_img1.png)
+![Tooltip_img1](Tooltip_images/Tooltip_img1.png)
   
 The following code sample shows how to enable the series tooltip using the `ShowToolTip` property.
 
@@ -49,4 +49,4 @@ Me.olapChart.Series(0).ShowToolTip = True
 
 {% endtabs %}
   
-![](Tooltip_images/Tooltip_img2.png)
+![Tooltip_img2](Tooltip_images/Tooltip_img2.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding the OLAP Report to OLAP Data Manager
-description: Binding the OLAP report to OLAP data manager
+title: Binding OlapReport to OlapDataManager in WPF OLAP Common control | Syncfusion
+description: Learn about Binding OlapReport to OlapDataManager support in Syncfusion WPF OLAP Common control and more.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Binding the OLAP Report to OLAP Data Manager
+# Binding OlapReport to OlapDataManager in WPF OLAP Common
 
 After creating the report, it is set to the current report property of the OLAP data manager. Further, data processing, query creation, and cell set creation are started from the OLAP data manager.
 

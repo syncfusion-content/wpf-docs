@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Report Serialization | OLAP Client | Syncfusion
-description: Support to store the current session as a stream anywhere and load the saved stream back to populate the OLAP client control.
+title: Serialization in WPF Olap Client control | Syncfusion
+description: Learn about Serialization support in Syncfusion WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Report Serialization
+# Serialization in WPF Olap Client
 
 This feature allows users to store the current session as a stream anywhere and load the saved stream back to populate the OLAP client control.
 

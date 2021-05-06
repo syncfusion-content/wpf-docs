@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding
-description: Binding OLAP chart to OLAP cube
+title: Data Binding in WPF Olap Chart control | Syncfusion
+description: Learn about Data Binding support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF Olap Chart
 
 ## Binding OLAP chart to offline cube
 

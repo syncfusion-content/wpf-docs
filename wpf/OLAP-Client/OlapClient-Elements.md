@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Elements | OLAP Client | WPF | Syncfusion
-description: You can learn here about OLAP elements support in Syncfusion WPF OLAP Client control and more details.
+title: OlapClient: Elements in WPF Olap Client control | Syncfusion
+description: Learn about OlapClient: Elements support in Syncfusion WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Elements in WPF OLAP Client
+# OlapClient: Elements in WPF Olap Client
 
 ## Cube Selector
 

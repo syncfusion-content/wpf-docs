@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Styling| OlapGrid | Wpf | Syncfusion
-description: Support to format the cells including header, value and summary cells using style dialog in OLAP Grid control.
+title: Grid Style Dialog in WPF Olap Grid control | Syncfusion
+description: Learn about Grid Style Dialog support in Syncfusion WPF Olap Grid control and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Appearance
+# Grid Style Dialog in WPF Olap Grid
 
 The OLAP grid can be formatted the following ways:
 

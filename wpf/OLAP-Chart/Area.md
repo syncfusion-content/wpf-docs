@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Chart Area
-description: OLAP chart area
+title: Area in WPF Olap Chart control | Syncfusion
+description: Learn about Area support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Area
+# Area in WPF Olap Chart
 
 The OLAP area is a chart area, which contains the chart series and chart axes.
 
@@ -15,7 +15,7 @@ The OLAP area is a chart area, which contains the chart series and chart axes.
 
 The chart header is the title of the chart, which is usually displayed at the top center of the chart area. The following illustration displays the chart header displayed in the chart area.
 
-![](Area_images/Area_img1.png)
+![Area_img1](Area_images/Area_img1.png)
 
 In general, chart series contains a chart area instance, which can be used to customize the OLAP area. The following code sample describes how to add a chart header to an OLAP chart.
 

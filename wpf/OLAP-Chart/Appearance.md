@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance
-description: Customize the appearance of OLAP chart
+title: Appearance in WPF Olap Chart control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF Olap Chart
 
 The OLAP chart supports customizing the appearance of charts. You can customize the chart style, legend style, border and background style, point label style, and label style of the primary and secondary axes.
 
@@ -67,7 +67,7 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Floating)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Appearance_img1](Appearance_images/Appearance_img1.png)
 
 ## Chart border and background style
 
@@ -106,7 +106,7 @@ Me.olapChart.GridBackground = Brushes.LightGray
 
 {% endtabs %}
  
-![](Appearance_images/Appearance_img2.png)
+![Appearance_img2](Appearance_images/Appearance_img2.png)
 
 ## Chart points labels
 
@@ -147,7 +147,7 @@ Next series
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![Appearance_img3](Appearance_images/Appearance_img3.png)
 
 ## Chart axis labels
 
@@ -225,7 +225,7 @@ Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.Bold
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![Appearance_img4](Appearance_images/Appearance_img4.png)
 
 A sample demo is available at the following location.
 

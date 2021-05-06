@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Freeze Headers| OlapGrid | Wpf | Syncfusion
-description: Built-in support to freeze the column and row headers while performing scroll operations to have a precise view of the content.
+title: Freeze Headers in WPF Olap Grid control | Syncfusion
+description: Learn about Freeze Headers support in Syncfusion WPF Olap Grid control and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Freeze Headers
+# Freeze Headers in WPF Olap Grid
 
 The OLAP grid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of OLAP grid to **"true"**.
 

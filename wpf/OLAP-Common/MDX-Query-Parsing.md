@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MDX Query Parsing
-description: MDX query parsing
+title: MDX Query Parsing in WPF OLAP Common control | Syncfusion
+description: Learn about MDX Query Parsing support in Syncfusion WPF OLAP Common control and more.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# MDX Query Parsing
+# MDX Query Parsing in WPF OLAP Common
 
 ## MDX Query binding with drill-up and drill-down operations
 

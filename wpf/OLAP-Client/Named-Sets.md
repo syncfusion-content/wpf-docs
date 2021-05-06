@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Named Sets | OLAP Client | Syncfusion
-description: Information about a collection of tuples and members, which can be defined and saved as a part of the cube definition.
+title: Named Set in WPF Olap Client control | Syncfusion
+description: Learn about Named Set support in Syncfusion WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Named Sets
+# Named Set in WPF Olap Client
 
 The OLAP client supports the binding of OLAP data with named set records pre-defined in the cube. A named set is a collection of tuples and members, which can be defined and saved as a part of the cube definition. Named set records reside inside the sets folder, which is under a dimension element. These elements can be dragged to categories/series/slicer axis of the axis element builder. To easily work with a lengthy, complex, or commonly used expression, use Multidimensional Expressions (MDX) that allows you to define a named set.
 

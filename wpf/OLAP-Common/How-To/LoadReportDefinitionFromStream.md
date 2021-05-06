@@ -1,13 +1,13 @@
 ---
 layout: post
-title: LoadReportDefinitionFromStream| OLAPCommon | Wpf | Syncfusion
-description: loadreportdefinitionfromstream
+title: Load Report Definition From Stream| OLAPCommon | Wpf | Syncfusion
+description: load report definition from stream in Syncfusion WPF OLAPCommon control, its elements and more details.
 platform: wpf
 control: OLAPCommon
 documentation: ug
 ---
 
-# LoadReportDefinitionFromStream
+# Load Report Definition From Stream
 
 
 
@@ -39,7 +39,7 @@ olapDataManager.LoadReport("SalesOn2003")
 
 The following sequential diagram shows the workflow of OlapBase when user gives input as OlapReport.
 
-![](LoadReportDefinitionFromStream_images/LoadReportDefinitionFromStream_img1.png)
+![LoadReportDefinitionFromStream_img1](LoadReportDefinitionFromStream_images/LoadReportDefinitionFromStream_img1.png)
 
 
 

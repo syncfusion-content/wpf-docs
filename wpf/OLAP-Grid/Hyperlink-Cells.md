@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hyperlink Cells| OlapGrid | Wpf | Syncfusion
-description: Support to hyperlinking of cells to retrieve a detailed information about a particular cell in OLAP Grid control.
+title: Hyperlink Cells in WPF Olap Grid control | Syncfusion
+description: Learn about Hyperlink Cells support in Syncfusion WPF Olap Grid control and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Hyperlink Cells
+# Hyperlink Cells in WPF Olap Grid
 
 The OLAP grid allows hyperlinking of cells to retrieve a detailed information about a particular cell. The OLAP grid generates a separate event called **"LinkClick"** for the clicked hyperlink cell and the **"LinkLabelClickEventHander"** will return the clicked OlapGridCellInfo.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: XAML Configuration| OlapGrid | Wpf | Syncfusion
-description: xaml configuration
+title: XAML Configuration in WPF Olap Grid control | Syncfusion
+description: Learn about XAML Configuration support in Syncfusion WPF Olap Grid control and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# XAML Configuration
+# XAML Configuration in WPF Olap Grid
 
 XAML configuration is one of the most important features of the OLAP grid, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
@@ -51,7 +51,7 @@ Adding an OLAP report to the OLAP grid in design time is described in the follow
 
 Run the application. The following output will be generated.
 
-![](XAML-Configuration_images/XAML-Configuration_img1.png)
+![XAML-Configuration_img1](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 A sample demo is available in the following location.
 

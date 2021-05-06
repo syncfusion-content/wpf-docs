@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing | OLAP Chart | Syncfusion
-description: Support to print the control in various modes such as black, color or white along with cropping feature.
+title: Printing in WPF Olap Chart control | Syncfusion
+description: Learn about Printing support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Printing OLAP Chart
+# Printing in WPF Olap Chart
 
 The OLAP chart can be printed in black, color, or white modes. It supports the cropping feature used to print a particular part of the chart.
 

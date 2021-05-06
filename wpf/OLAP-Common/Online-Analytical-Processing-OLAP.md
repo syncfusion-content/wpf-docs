@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Online Analytical Processing (OLAP)
-description: Online analytical processing (OLAP)
+title: Online Analytical Processing (OLAP) in WPF OLAP Common control | Syncfusion
+description: Learn about Online Analytical Processing (OLAP) support in Syncfusion WPF OLAP Common control and more.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Online Analytical Processing (OLAP)
+# Online Analytical Processing (OLAP) in WPF OLAP Common
 
 Online Analytical Processing (OLAP) is a service that performs a real time, multi-dimensional analysis of complex data stored in a database. The OLAP typically consists of a server component that uses specialized algorithms, indexing tools to efficiently process data mining tasks and an OLAP client that efficiently allows you visualize the OLAP data pertaining to your business needs.
 

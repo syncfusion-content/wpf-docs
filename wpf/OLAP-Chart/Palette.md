@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Palette
-description: Chart palette
+title: Palette in WPF Olap Chart control | Syncfusion
+description: Learn about Palette support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Chart Palette
+# Palette in WPF Olap Chart
 
 The chart palette is a pre-defined collection of a set of colors that can be applied to a chart series. The OLAP chart supports 23 chart palettes, which is used to provide rich look for your business applications.
 
@@ -57,7 +57,7 @@ Me.olapChart.ColorModel.Palette = CType(System.Enum.Parse(GetType(Syncfusion.Win
 
 The following image shows before and after applying the *EarthTone* palette.
 
-![](Palette_images/Palette_img1.png)
+![Palette_img1](Palette_images/Palette_img1.png)
 
 ## Custom palette
 
@@ -75,19 +75,19 @@ The following are the available types of Excel-like palettes:
 
 **GrayScale, BlueScale**
 
-![](Palette_images/Palette_img2.png)
+![Palette_img2](Palette_images/Palette_img2.png)
 
 **MaroonRed, GreenScale**
 
-![](Palette_images/Palette_img3.png)
+![Palette_img3](Palette_images/Palette_img3.png)
 
 **MixedViolet, CoolBlueScale**
 
-![](Palette_images/Palette_img4.png)
+![Palette_img4](Palette_images/Palette_img4.png)
 
 **ChocolateOrange, MixedFantasy**
 
-![](Palette_images/Palette_img5.png)
+![Palette_img5](Palette_images/Palette_img5.png)
 
 The following code sample shows how to apply Excel-like palettes.
 

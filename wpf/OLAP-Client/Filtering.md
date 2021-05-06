@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering | OLAP Client | Syncfusion
-description: Support to create a new view for end users by selecting limited dimensions and measures from the cube and filtering them.
+title: Filtering in WPF Olap Client control | Syncfusion
+description: Learn about Filtering support in Syncfusion WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Filtering
+# Filtering in WPF Olap Client
 
 ## Filtering by member
 

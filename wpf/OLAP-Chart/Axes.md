@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes of OLAP Chart Area | OLAP Chart | Syncfusion
-description: Information about primary axis and secondary axis support provided in OLAP Chart control | Syncfusion
+title: Axes in WPF Olap Chart control | Syncfusion
+description: Learn about Axes support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Axes of OLAP Chart Area
+# Axes in WPF Olap Chart
 
 An OLAP area contains two axes, the primary axis and secondary axis, in an OLAP chart control. Values or data in the chart are plotted against these axes.
 

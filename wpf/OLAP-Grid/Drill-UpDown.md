@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill UpDown| OlapGrid | Wpf | Syncfusion
-description: Support to access the detailed view of data (drill down) or to access the summarized view of data (drill up) in OLAP Grid control.
+title: Drill Down/Up in WPF Olap Grid control | Syncfusion
+description: Learn about Drill Down/Up support in Syncfusion WPF Olap Grid control and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Drill Up/Down
+# Drill Down/Up in WPF Olap Grid
 
 This is the basic feature of OLAP grid through which the amount of information can be limited. It allows you to drill down to access the detailed level of data, or drill up to see the summarized data using the expanders present in the grid. The expander here refers to the plus or minus or arrow sign present in the grid prior to a member. The expanders can be made hidden by setting the `ShowExpander` property of the OLAP report to **"false"**.
 

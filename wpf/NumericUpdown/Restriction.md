@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF UpDown control | Minimum and Maximum values | Syncfusion
-description: This section describes about restrict the maximum and minimum value for WPF UpDown control.
+title: Restriction in WPF NumericUpdown control | Syncfusion
+description: Learn here all about Restriction support in Syncfusion WPF NumericUpdown (UpDown) control and more.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Restriction
+# Restriction in WPF NumericUpdown (UpDown)
 
 This section explains about how to set the value and restrict the minimum and maximum value in WPF UpDown control.
 

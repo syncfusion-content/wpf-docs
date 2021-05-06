@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF OLAP Client Control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF OLAP Client control, its features, and more.
+title: Drill Through in WPF Olap Client control | Syncfusion
+description: Learn about Drill Through support in Syncfusion WPF Olap Client control and more.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Drill-Through with WPF OLAP Client
+# Drill Through in WPF Olap Client
 
 Drill-through retrieves raw data that are used to create a specified cell in a cube. You can enable or disable the drill-through action using the `EnableDrillThrough` property.
 

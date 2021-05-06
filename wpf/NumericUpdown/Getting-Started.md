@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF UpDown control | Syncfusion
-description: This section describes about how to integrate UpDown control into an applicationl and enable its basic features with example.
+title: Getting Started with WPF NumericUpdown control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF NumericUpdown (UpDown) control, its elements and more details.
 platform: wpf
 control: UpDown
 documentation: ug

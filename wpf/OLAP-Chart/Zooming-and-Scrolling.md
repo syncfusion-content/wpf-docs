@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Zooming Support in OLAP Chart
-description: Zooming support in OLAP chart
+title: Zooming and Scrolling in WPF Olap Chart control | Syncfusion
+description: Learn about Zooming and Scrolling support in Syncfusion WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Zooming Support in OLAP Chart
+# Zooming and Scrolling in WPF Olap Chart
 
 The OLAP chart for WPF allows you to zoom in to a narrower range within the OLAP chart.
 
 In the zooming mode, a zooming toolkit is displayed at the top-left corner of the OLAP chart. Using the buttons in the zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
 
-![](Zooming-and-scrolling_images/Zooming-and-scrolling_img1.png)
+![Zooming-and-scrolling_img1](Zooming-and-scrolling_images/Zooming-and-scrolling_img1.png)
 
 The visibility of the zooming toolkit or individual buttons in the toolkit can be controlled by using the following properties:
 
