@@ -31,13 +31,13 @@ Right-click MenuAdv and in EditTemplate option select Edit a Copy and assign the
 
 User can also customize the appearance of the TopScrollButtonStyle, BottomScrollButtonStyle, CheckBoxStyle & RadioButtonStyle using the Edit Additional Templates option by doing right click on the MenuItemAdv and selecting the respective styles from the option.
 
-![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/EditAdditionalTemplates.png](Blendability-Support_images/Blendability-Support_img5.png)
+![Blendability-Support_img5](Blendability-Support_images/Blendability-Support_img5.png)
 
 
 
 The following screen shot shows the MenuAdv and MenuItemAdv templates edited and customized by using Expression Blend.
 
-![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Blendability.png](Blendability-Support_images/Blendability-Support_img6.png)
+![Blendability-Support_img6](Blendability-Support_images/Blendability-Support_img6.png)
 
 
 

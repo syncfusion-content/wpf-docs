@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation Support in WPF Menu control | Syncfusion
-description: Learn here all about Animation Support support in Syncfusion WPF Menu (MenuAdv) control and more.
+description: Learn here all about Animation Support support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug

@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Styles and Templates in WPF Multi Column Dropdown (SfMultiColumnDropDown)
+# Styles and Templates in WPF Multi Column Dropdown
 
 WPF styles and templates refer to a suite of features (styles and templates) that allows you to create visually compelling effects and to create consistent appearance for the products.
 
@@ -22,13 +22,13 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 
 
-   ![](Styles-and-Templates_images/Styles-and-Templates_img1.png)          
+   ![Styles-and-Templates_images1](Styles-and-Templates_images/Styles-and-Templates_img1.png)          
 
 
 
 3. Go to the Menu bar and Choose Object > EditStyle.                     
 
-   ![](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+   ![Styles-and-Templates_images2](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
 
 
@@ -39,7 +39,7 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 
 
-   ![](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+   ![Styles-and-Templates_images3](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
 
 	The Create style Resources dialog prompts you to enter the name or change the name for your style, as well as to choose the location for the Style.
@@ -59,7 +59,7 @@ This section explain you how to edit a SfMultiColumnDropDownControl style in Vis
 
 
 
-   ![](Styles-and-Templates_images/Styles-and-Templates_img4.png)
+   ![Styles-and-Templates_images4](Styles-and-Templates_images/Styles-and-Templates_img4.png)
 
 
 
@@ -67,7 +67,7 @@ This section explain you how to edit a SfMultiColumnDropDownControl style in Vis
       
 1. Edit a Copy –Edit a copy of the default style, when you select this option, a new dialog window opens as follows.    
 
-   ![](Styles-and-Templates_images/Styles-and-Templates_img5.png) 
+   ![Styles-and-Templates_images5](Styles-and-Templates_images/Styles-and-Templates_img5.png) 
 
 
 

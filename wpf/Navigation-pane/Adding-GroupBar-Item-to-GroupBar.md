@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Adding GroupBar Item to GroupBar in WPF Navigation Pane control | Syncfusion
+title: Adding GroupBar Item to GroupBar in WPF Navigation Pane | Syncfusion
 description: Learn here all about Adding GroupBar Item to GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 

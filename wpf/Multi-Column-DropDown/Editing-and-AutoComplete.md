@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing and AutoComplete in WPF Multi Column Dropdown control | Syncfusion
+title: Editing and AutoComplete in WPF Multi Column Dropdown | Syncfusion
 description: Learn here all about Editing and AutoComplete support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Editing and AutoComplete in WPF Multi Column Dropdown (SfMultiColumnDropDown)
+# Editing and AutoComplete in WPF Multi Column Dropdown
 
 SfMultiColumnDropDownControl allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropDownControl.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ReadOnly) property as `true`.
 

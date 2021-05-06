@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Adjusting the GroupBar width in WPF Navigation Pane control | Syncfusion
+title: Adjusting the GroupBar width in WPF Navigation Pane | Syncfusion
 description: Learn here all about Adjusting the GroupBar width support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 

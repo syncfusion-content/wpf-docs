@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Map Selection in WPF Maps control | Syncfusion
-description: Learn here all about Map Selection support in Syncfusion WPF Maps (SfMap) control and more.
+description: Learn here all about Map Selection support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

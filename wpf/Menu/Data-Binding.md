@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF Menu control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion WPF Menu (MenuAdv) control and more.
+description: Learn here all about Data Binding support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -207,7 +207,7 @@ The MenuAdv control also supports binding to objects. The following example show
 
    Implementing the above code will generate the following control.
 
-   ![](Data-Binding_images/Data-Binding_img1.png)
+   ![Data-Binding_images1](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -348,6 +348,6 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
    This will create the following MenuAdv control.
 
-   ![](Data-Binding_images/Data-Binding_img2.png)
+   ![Data-Binding_images2](Data-Binding_images/Data-Binding_img2.png)
 
 
