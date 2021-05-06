@@ -3,7 +3,7 @@ layout: post
 title: Rotating the Content in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Rotating the Content support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 

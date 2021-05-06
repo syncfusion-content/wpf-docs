@@ -3,7 +3,7 @@ layout: post
 title: Populating-Data in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Populating-Data support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 

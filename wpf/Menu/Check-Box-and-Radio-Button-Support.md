@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check Box and Radio Button Support in WPF Menu control | Syncfusion
-description: Learn here all about Check Box and Radio Button Support support in Syncfusion WPF Menu (MenuAdv) control and more.
+description: Learn here all about Check Box and Radio Button Support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug

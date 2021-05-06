@@ -3,7 +3,7 @@ layout: post
 title: Toolbars in GroupBar in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Toolbars in GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
