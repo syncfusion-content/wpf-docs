@@ -72,7 +72,7 @@ The OLAP Silverlight base wrapper is a class library, which contains several nam
 
 
 
-![C:/Users/dwarageshmb/Desktop/Doc Images/OlapSilverlight Base/SIlverlight.png](OLAP-Silverlight-Base-Wrapper_images/OLAP-Silverlight-Base-Wrapper_img1.png)
+![OLAP-Silverlight-Base-Wrapper_images1](OLAP-Silverlight-Base-Wrapper_images/OLAP-Silverlight-Base-Wrapper_img1.png)
 
 
 

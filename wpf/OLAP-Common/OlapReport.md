@@ -574,7 +574,7 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 
 
 
-![C:/Documents and Settings/jananit/Local Settings/Temporary Internet Files/Content.Word/After appying range filter.png](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img2.png)
+![Filtering-slicer-elements-by-range_images2](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img2.png)
 
 ## Creating the OLAP report
 
