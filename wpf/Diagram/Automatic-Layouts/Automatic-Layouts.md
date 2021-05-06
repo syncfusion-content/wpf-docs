@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion | Layout nodes and connectors in an organized structure
-description: The SfDiagram Control provides the ability to automatically arrange nodes using one of the predefined layouts. 
+title: Automatic Layout in WPF Diagram control | Syncfusion
+description: Learn here all about Automatic Layout support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

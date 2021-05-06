@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion | Layout nodes and connectors in an organized structure
-description: The SfDiagram Control provides the ability to automatically arrange nodes using one of the predefined layouts. 
+title: Flowchart layout in WPF Diagram control | Syncfusion
+description: Learn here all about Flowchart layout support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
 
-# Flowchart layout in WPF Diagram
+# Flowchart layout in WPF Diagram (SfDiagram)
 
 The flowchart layout is a diagrammatic representation of a process, workflow, system, or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
 

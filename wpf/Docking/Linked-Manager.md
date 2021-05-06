@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Linked and Nested functionalities | DockingManager | WPF | Syncfusion
-description: Learn how to form the Linked Manager and Nested DockingManager
+title: Linked Manager and Nested Docking in WPF Docking control | Syncfusion
+description: Learn here all about Linked Manager and Nested Docking support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Linked Manager and Nested Docking
+# Linked Manager and Nested Docking in WPF Docking (DockingManager)
 
 ## Linked Manager
 

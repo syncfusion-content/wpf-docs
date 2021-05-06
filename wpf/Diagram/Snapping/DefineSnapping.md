@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Snap to gridlines or adjecent objects | Syncfusion.
-description: How to snapping diagramming objects of nodes, connectors, ports over gridlines with its adjecent object?
+title: Snapping in WPF Diagram control | Syncfusion
+description: Learn here all about Snapping support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Snapping and customization
+# Snapping in WPF Diagram (SfDiagram)
 
 When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of SfDiagram.
 

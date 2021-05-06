@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation Positioning and Appearance | Syncfusion 
-description: How to positioning the annotations of nodes and connectors and how to change the appearance of the annotation
+title: Positioning and Appearance in WPF Diagram control | Syncfusion
+description: Learn here all about Positioning and Appearance support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation Positioning and Appearance 
+# Positioning and Appearance in WPF Diagram (SfDiagram)
 
 Diagram allows you to customize the position and appearance of the annotation efficiently.
 

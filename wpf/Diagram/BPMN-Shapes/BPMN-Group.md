@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN Group | Syncfusion 
-description: A group is used to frame a part of the diagram, shows that the elements included in it are logically belong together.
+title: Group in WPF Diagram control | Syncfusion
+description: Learn here all about Group support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN Group and its customization
+# Group in WPF Diagram (SfDiagram)
 
 Groups organize tasks or processes that have significance in the overall process.
 A group may control the flow of a process and describe shared goals. A group is denoted by dashes and dots.

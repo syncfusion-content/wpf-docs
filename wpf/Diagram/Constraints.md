@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable/Disable the optional features | Syncfusion.
-description: How to enable or disable the optional features, behaviours of diagram and how to enable single or multiple feature at a time?
+title: Constraints in WPF Diagram control | Syncfusion
+description: Learn here all about Constraints support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

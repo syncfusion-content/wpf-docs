@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using BPMN shapes with Palette | Syncfusion
-description: How to add the BPMN shapes to the stencil and drag and drop them over the drawing area and its interaction?
+title: Shapes Palette in WPF Diagram control | Syncfusion
+description: Learn here all about Shapes Palette support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN items in Stencil
+# Shapes Palette in WPF Diagram (SfDiagram)
   Diagram provides the support to add BPMN shapes to Stencil. 
 
 ## Add BPMN shapes into stencil

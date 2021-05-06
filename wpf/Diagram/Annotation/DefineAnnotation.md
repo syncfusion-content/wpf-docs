@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation Definition | Syncfusion 
-description: how to define basic annotations for Node and Connectors and how to create multiple annotation in various position for nodes and connectors.
+title: Annotation in WPF Diagram control | Syncfusion
+description: Learn here all about Annotation support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Define Annotation and multiple annotations
+# Annotation in WPF Diagram (SfDiagram)
 
 Annotation is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at run time. Multiple annotations can be added to a node or connector.
 
