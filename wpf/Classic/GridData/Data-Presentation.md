@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Presentation | GridData (Classic) | wpf | Syncfusion
-description: Learn here about how the data is grouping, sorting, summaried and its features of the Syncfusion WPF GridDataControl.
+title: Data-Presentation in WPF GridData Control | Syncfusion
+description: Learn here all about Data-Presentation support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Data Presentation of GridData
+# Data-Presentation in WPF GridDataControl (Classic)
 
 GridData control data can be presented in several ways. 
 

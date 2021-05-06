@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | GridData (Classic) | wpf | Syncfusion
-description: Getting Started with WPF GridData Control that acts as an efficient display engine for tabular data that can be customized down to the cell level.
+title: Getting Started with WPF GridData Control | Syncfusion
+description: Learn here all about getting started with Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
 
-# Getting Started with GridData
+# Getting Started with WPF GridDataControl (Classic)
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application. Control appearance and structure are defined and the Essential Grid’s relevant classes are depicted.
 

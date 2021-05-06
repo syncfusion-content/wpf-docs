@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Zooming and Printing| RichTextBoxAdv | Wpf | Syncfusion
-description: zooming and printing
+title: Zooming-and-Printing in WPF Wizard Control control | Syncfusion
+description: Learn here all about Zooming-and-Printing support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Zooming and Printing
+# Zooming-and-Printing in WPF RichTextBoxAdv (Classic)
 
 RichTextBoxAdv allows you to zoom in and out on the content of the document. CTRL + mouse wheel will zoom in and zoom out the content of the RichTextBoxAdv control.
 
 
 
-![](Zooming-and-Printing_images/Zooming-and-Printing_img1.png)
+![Zooming-and-Printing_img1](Zooming-and-Printing_images/Zooming-and-Printing_img1.png)
 
 
 

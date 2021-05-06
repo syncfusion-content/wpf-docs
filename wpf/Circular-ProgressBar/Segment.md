@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Segment support in the WPF Circular ProgressBar control | Syncfusion
-description: Learn here about segment support in the Syncfusion WPF Circular ProgressBar control and more details.
+title: Segment in WPF circular progressbar control | Syncfusion
+description: Learn here all about Segment support in Syncfusion WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug
 ---
-# Segments in Circular ProgressBar
+# Segment in WPF circular progressbar (SfCircularProgressBar)
 Segmentation helps to divide the progressbar into multiple potions. To visualize the progress of multiple sequential tasks, split the progressbar into multiple segments by setting the [SegmentCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.ProgressBarBase.html#Syncfusion_UI_Xaml_ProgressBar_ProgressBarBase_SegmentCountProperty) property.
 
 {% tabs %}

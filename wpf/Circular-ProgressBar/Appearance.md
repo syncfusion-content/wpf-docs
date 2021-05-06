@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF Circular ProgressBar control | Syncfusion
-description: Learn here about angle, radius (or) thickness and color customization of the Syncfusion WPF Circular ProgressBar control and more details.
+title: Appearance in WPF circular progressbar control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug
 ---
 
-# Appearance in Circular ProgressBar
+# Appearance in WPF circular progressbar (SfCircularProgressBar)
 You can highly customize the appearance of the circular progressbar in the following ways.
 
 ## Angle

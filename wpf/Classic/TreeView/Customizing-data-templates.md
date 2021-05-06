@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customizing Data Templates | Syncfusion
-description: This section describes how to customize the syncfusion treeview(TreeViewAdv) control using the data templates.
+title: Customizing Data Templates in WPF Wizard Control control | Syncfusion
+description: Learn here all about Customizing Data Templates support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Customizing Data Templates
+# Customizing Data Templates in WPF TreeViewAdv (Classic)
 
 This section explains about customizing the TreeViewItemAdv using DataTemplate
 

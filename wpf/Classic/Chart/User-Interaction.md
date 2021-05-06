@@ -1,12 +1,12 @@
 ---
 layout: post
-title: User Interaction | Chart(Classic) | wpf | Syncfusion
-description: User Interaction
+title: User-Interaction in WPF Chart Control | Syncfusion
+description: Learn here all about User-Interaction support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# User Interaction
+# User-Interaction in WPF Chart (Classic)
 
 ## Zooming
 
@@ -16,7 +16,7 @@ Chart for WPF lets you zoom into a narrower range within the chart area. This se
 
 You can switch to the zooming mode in the Chart by using the built-in context menu. Users can choose to zoom a specific series, if they do so, the rest of the series will be rendered semi-transparently, based on the InactiveSeriesOpacityOnZoom property (discussed later in this section).
 
-![](Chart-Controls_images/Chart-Controls_img196.jpeg)
+![Chart-Controls_img196](Chart-Controls_images/Chart-Controls_img196.jpeg)
 
 
 
@@ -24,7 +24,7 @@ You can switch to the zooming mode in the Chart by using the built-in context me
 
 In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of the ChartArea. Using the buttons in the Zooming toolkit, ChartSeries can be zoomed in, out, reset or closed (to exit zoom mode).
 
-![](Chart-Controls_images/Chart-Controls_img197.jpeg)
+![Chart-Controls_img197](Chart-Controls_images/Chart-Controls_img197.jpeg)
 
 
 
@@ -92,7 +92,7 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(chartArea, Visibility.Visible);
 
 You can also manually drag-select an area to perform the zoom operation.
 
-![](Chart-Controls_images/Chart-Controls_img198.jpeg)
+![Chart-Controls_img198](Chart-Controls_images/Chart-Controls_img198.jpeg)
 
 
 
@@ -193,7 +193,7 @@ this.Chart1.Areas[0].PrimaryAxis.ZoomPosition = 5;
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img199.jpeg)
+![Chart-Controls_img199](Chart-Controls_images/Chart-Controls_img199.jpeg)
 
 
 
@@ -271,7 +271,7 @@ Chart1.Areas[0].Series[1].IsZoomable = true;
 {% endhighlight  %}
 The following screenshot illustrates this.
 
-![](Chart-Controls_images/Chart-Controls_img200.jpeg)
+![Chart-Controls_img200](Chart-Controls_images/Chart-Controls_img200.jpeg)
 
 
 
@@ -288,7 +288,7 @@ The following lines of code can be used to change the opacity of an inactive ser
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img201.jpeg)
+![Chart-Controls_img201](Chart-Controls_images/Chart-Controls_img201.jpeg)
 
 
 
@@ -359,7 +359,7 @@ ChartArea area = this.Chart1.Areas[0];
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img202.jpeg)
+![Chart-Controls_img202](Chart-Controls_images/Chart-Controls_img202.jpeg)
 
 
 ## Highlighting And Selection
@@ -392,7 +392,7 @@ ToolTip can be shown on various sections of a chart control such as chart, chart
 
 The following image illustrates the tooltip feature in various sections of the chart.
 
-![](Chart-Controls_images/Chart-Controls_img203.jpeg)
+![Chart-Controls_img203](Chart-Controls_images/Chart-Controls_img203.jpeg)
 
 ### Default ToolTips for a Chart
 
@@ -435,7 +435,7 @@ Series.ShowToolTip = true;
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img204.png)
+![Chart-Controls_img204](Chart-Controls_images/Chart-Controls_img204.png)
 
 
 ### Custom ToolTip for a Series
@@ -509,7 +509,7 @@ You can set custom tooltips for the chart series. Associate a custom tooltip tex
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img205.jpeg)
+![Chart-Controls_img205](Chart-Controls_images/Chart-Controls_img205.jpeg)
 
 
 
@@ -544,7 +544,7 @@ The code as follows illustrates how a ToolBar could be added to the Chart contro
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img206.jpeg)
+![Chart-Controls_img206](Chart-Controls_images/Chart-Controls_img206.jpeg)
 
 
 
@@ -631,7 +631,7 @@ There are two ways to invoke this dialog. They are, Using Tool Bar and ShowPrope
 
 By clicking the Properties Tool Item in the Toolbar, the property settings dialog can be invoked.
 
-![](Chart-Controls_images/Chart-Controls_img207.jpeg)
+![Chart-Controls_img207](Chart-Controls_images/Chart-Controls_img207.jpeg)
 
 ### Using ShowPropertyDialog
 
@@ -718,7 +718,7 @@ contains the properties specific to Secondary axis of the Chart, which is simila
 </table>
 
 
-![](Chart-Controls_images/Chart-Controls_img208.jpeg)
+![Chart-Controls_img208](Chart-Controls_images/Chart-Controls_img208.jpeg)
 
 
 
@@ -766,7 +766,7 @@ End Sub
 {% endtabs %}
 
 
-![](Chart-Controls_images/Chart-Controls_img209.jpeg)
+![Chart-Controls_img209](Chart-Controls_images/Chart-Controls_img209.jpeg)
 
 
 {% highlight csharp %}
@@ -780,7 +780,7 @@ Chart1.AddCustomTabs(tabItem);
 
 You can hide the tab that is not required using the Chart.HideTabItem(tabIndex) method. 
 
-![](Chart-Controls_images/Chart-Controls_img210.jpeg)
+![Chart-Controls_img210](Chart-Controls_images/Chart-Controls_img210.jpeg)
 
 {% highlight csharp %}
 
@@ -937,7 +937,7 @@ The following code example illustrates selection of zoomed area in a chart.
 
    ~~~
 
-   ![](Chart-Controls_images/Chart-Controls_img211.jpeg)
+   ![Chart-Controls_images211](Chart-Controls_images/Chart-Controls_img211.jpeg)
 
   
 
@@ -971,7 +971,7 @@ The following code illustrates this.
 
 
 
-![](Chart-Controls_images/Chart-Controls_img212.png)
+![Chart-Controls_img212](Chart-Controls_images/Chart-Controls_img212.png)
 
 
 
@@ -992,7 +992,7 @@ By setting ContextMenuType to Custom, menu items are added as a new list.
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img213.png)
+![Chart-Controls_img213](Chart-Controls_images/Chart-Controls_img213.png)
 
 
 <table>
@@ -1043,7 +1043,7 @@ This feature helps the user to drag the Chart point from one location to another
 
 
 
-![C:/Users/sujithas/Desktop/UG/sshot-3.png](Chart-Controls_images/Chart-Controls_img214.png)
+![Chart-Controls_images214](Chart-Controls_images/Chart-Controls_img214.png)
 
 
 
@@ -1194,7 +1194,7 @@ N> The given points of the rectangle region can internally convert to the relati
 
 ChartAreaBounds is used in obtaining the list of points bound to a user-given rectangle .i.e. viewing the survey details in the area selected by the user.
 
-![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img215.png)
+![Chart-Controls_images215](Chart-Controls_images/Chart-Controls_img215.png)
 
 
 
@@ -1221,7 +1221,7 @@ chartpoints.ItemsSource = chart.Areas[0].BoundsToPoints(rect, chart.Areas[0].Ser
 {% endhighlight  %}
 
 
-![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img216.png)
+![Chart-Controls_images216](Chart-Controls_images/Chart-Controls_img216.png)
 
 
 
@@ -1356,7 +1356,7 @@ string Serializedstring =  Chart1.Serialize();
 
 The Chart1 in above code example represents the Chart object, and Serializedstring in above code example has the serialized string (XAML string) while execution. 
 
-![Description: C:/Users/Abdulrahman/Desktop/serialization.png](Chart-Controls_images/Chart-Controls_img217.png)
+![Chart-Controls_images217](Chart-Controls_images/Chart-Controls_img217.png)
 
 
 
@@ -1516,15 +1516,14 @@ Chart1.ShowPropertyDialog();
 {% endhighlight  %}
 
 
-![C:/Users/Abdulrahman/AppData/Local/Syncfusion/EssentialStudio/9.1.0.117/WPF/Chart.WPF/Samples/3.5/WindowsSamples/User Interaction/Property Dialog Demo/Images/PropertyDialog.png](Chart-Controls_images/Chart-Controls_img218.png)
-
+![Chart-Controls_images218](Chart-Controls_images/Chart-Controls_img218.png)
 
 
 ### Using Toolbar
 
 By clicking the Properties Tool Item in the Toolbar, the property settings dialog can be invoked.
 
-![](Chart-Controls_images/Chart-Controls_img219.png)
+![Chart-Controls_img219](Chart-Controls_images/Chart-Controls_img219.png)
 
 
 
@@ -1594,7 +1593,7 @@ Automatic scrolling ensures that the specified data always remains visible in th
 
 While adding huge amount of data to the chart in real time, the autoscrolling functionality helps us to view a particular set of data in the chart at a given time. This makes the scroll bar to display the recently added data and the set of newly added data to be viewed clearly, according to the AutoScrollingDelta specified for the axis in the chart.
 
-![C:/Users/riaj/Desktop/AutoScrolling.png](Chart-Controls_images/Chart-Controls_img220.png)
+![Chart-Controls_images220](Chart-Controls_images/Chart-Controls_img220.png)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Inserting a UI Element| RichTextBoxAdv | Wpf | Syncfusion
-description: inserting a ui element
+title: Inserting-a-UI-Element in WPF Wizard Control control | Syncfusion
+description: Learn here all about Inserting-a-UI-Element support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Inserting a UI Element
+# Inserting-a-UI-Element in WPF RichTextBoxAdv (Classic)
 
 In order to insert a UI element in the document, ParagraphAdv provides an inline called UIContainerAdv.
 

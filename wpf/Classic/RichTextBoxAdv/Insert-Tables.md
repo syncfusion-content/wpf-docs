@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Insert Tables| RichTextBoxAdv | Wpf | Syncfusion
-description: insert tables
+title: Insert-Tables in WPF Wizard Control control | Syncfusion
+description: Learn here all about Insert-Tables support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
 documentation: ug
 ---
 
-# Insert Tables
+# Insert-Tables in WPF RichTextBoxAdv (Classic)
 
 Table support for the RichTextBoxAdv control has been implemented as in Microsoft Word. This is used to insert tables with user-defined rows and columns, and it also allows the user to insert multiple tables for every cell.
 

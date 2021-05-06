@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment Editing in WPF Scheduler | Syncfusion
-description: This section explains how to edit, resize and rearrange an appointment in WPF Scheduler. Also, explains how to handle recurring appointments while editing.
+title: Appointment Editing in WPF Wizard Control control | Syncfusion
+description: Learn here all about Appointment Editing support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Appointment Editing Of WPF SfSchedule
+# Appointment Editing in WPF Schedule (Classic)
 This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing and drag drop operations.
 
 ## Editing Appointment

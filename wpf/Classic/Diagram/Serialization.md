@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization | Diagram | wpf | Syncfusion
-description: serialization
+title: Serialization in WPF Diagram Control | Syncfusion
+description: Learn here all about Serialization support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# Serialization
+# Serialization in WPF Diagram (classic)
 
 Serialization is the process of saving and retrieving the Essential Diagram file. Essential Diagram WPF supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
 
@@ -102,7 +102,7 @@ dc.Save()
 {% endhighlight  %}
 The Save Dialog box will appear. Select the 'Save as Type' as XAML and select the location at which the file is to be saved and click the save button in the dialog box after specifying a name for the file.
 
-![](Diagram-View_images/Diagram-View_img80.jpeg)
+![Diagram-View_img80](Diagram-View_images/Diagram-View_img80.jpeg)
 
 
 
@@ -200,7 +200,7 @@ dc.Load()
 {% endhighlight  %}
 The Load Dialog box will appear. Select the 'Files of Type' as XAML and specify the path of the file to be loaded and click the Open button in the dialog box. The selected page gets loaded in the current view and the page is ready to be edited.
 
-![](Diagram-View_images/Diagram-View_img81.jpeg)
+![Diagram-View_img81](Diagram-View_images/Diagram-View_img81.jpeg)
 
 
 
@@ -269,7 +269,7 @@ Use Case Scenarios
 
 Localization is the process of customizing the User Interface (UI) in a language and culture specific to a particular country or region to display regional data. Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by controls.
 
-![](Diagram-View_images/Diagram-View_img82.png)
+![Diagram-View_img82](Diagram-View_images/Diagram-View_img82.png)
 
 
 
@@ -360,7 +360,7 @@ End Sub
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img83.png)
+![Diagram-View_img83](Diagram-View_images/Diagram-View_img83.png)
 
 
 
@@ -387,7 +387,7 @@ diagramControl.LocalizationPath = "Resources.Controls"
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img84.png)
+![Diagram-View_img84](Diagram-View_images/Diagram-View_img84.png)
 
 
 
@@ -412,7 +412,7 @@ diagramControl.LocalizationPath = "Resources.X.Y.Z"
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img85.png)
+![Diagram-View_img85](Diagram-View_images/Diagram-View_img85.png)
 
 
 

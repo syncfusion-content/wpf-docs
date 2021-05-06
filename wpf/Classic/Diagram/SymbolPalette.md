@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SymbolPalette | Diagram | wpf | Syncfusion
-description: symbolpalette
+title: SymbolPalette in WPF Diagram Control | Syncfusion
+description: Learn here all about SymbolPalette support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
 documentation: ug
 ---
 
-# SymbolPalette
+# SymbolPalette in WPF Diagram (classic)
 
 The SymbolPalette control displays node shapes and allows you to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows you to classify items as groups so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
 
@@ -148,7 +148,7 @@ diagramcontrol.IsSymbolPaletteEnabled = True
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img54.jpeg)
+![Diagram-View_img54](Diagram-View_images/Diagram-View_img54.jpeg)
 
 
 
@@ -217,7 +217,7 @@ diagramControl1.SymbolPalette.ShowPreview = true;
 
 {% endhighlight %}
 
-![](Diagram-View_images/Diagram-View_img55.png)
+![Diagram-View_img55](Diagram-View_images/Diagram-View_img55.png)
 
 
 
@@ -249,7 +249,7 @@ TryCast(diagramControl1.SymbolPalette.SymbolGroups(0).Items(0),  SymbolPaletteIt
 {% endhighlight  %}
 
 
-![](Diagram-View_images/Diagram-View_img56.png)
+![Diagram-View_img56](Diagram-View_images/Diagram-View_img56.png)
 
 
 
@@ -305,7 +305,7 @@ dc.SymbolPalette.SymbolGroups.Add(s)
 {% endhighlight %}
 This adds a new empty group named "Custom" and creates a filter for it.
 
-![](Diagram-View_images/Diagram-View_img57.jpeg)
+![Diagram-View_img57](Diagram-View_images/Diagram-View_img57.jpeg)
 
 
 
@@ -407,7 +407,7 @@ Run the application. The following output is displayed and the groups and filter
 
 
 
-![](Diagram-View_images/Diagram-View_img58.jpeg)
+![Diagram-View_img58](Diagram-View_images/Diagram-View_img58.jpeg)
 
 
 
@@ -597,7 +597,7 @@ Run the application. The following output is displayed and the groups and filter
 
 
 
-![](Diagram-View_images/Diagram-View_img59.png)
+![Diagram-View_img59](Diagram-View_images/Diagram-View_img59.png)
 
 
 
@@ -656,7 +656,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 1. Open the Symbol Designer tool which is available in the software path given above.
 2. If you want to create a new symbol, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
-   ![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png)
+   ![Diagram-View_images60](Diagram-View_images/Diagram-View_img60.png)
 
 
 
@@ -665,7 +665,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 3. A new symbol palette is created with the given name after which, you can design your own symbol.
 
-   ![](Diagram-View_images/Diagram-View_img61.png)
+   ![Diagram-View_images61](Diagram-View_images/Diagram-View_img61.png)
 
 
 
@@ -674,7 +674,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 4. Draw the desired shapes using drawing tool in the work area.
 
-   ![](Diagram-View_images/Diagram-View_img62.png)
+   ![Diagram-View_images62](Diagram-View_images/Diagram-View_img62.png)
 
 
 
@@ -692,7 +692,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
    The node label can also be customized.
 
-   ![](Diagram-View_images/Diagram-View_img63.png)
+   ![Diagram-View_images63](Diagram-View_images/Diagram-View_img63.png)
 
 
 
@@ -701,7 +701,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 5. After creating required symbols, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPaletteGroup dialog will appear as in the following screen shot.
 
-   ![](Diagram-View_images/Diagram-View_img64.png)
+   ![Diagram-View_images64](Diagram-View_images/Diagram-View_img64.png)
 
 
 
@@ -710,7 +710,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 6. Give a relevant file name for the palette and click Save. As the PaletteGroup is saved, preview of the symbol will be shown in Symbol Palette.
 
-   ![](Diagram-View_images/Diagram-View_img65.png)
+   ![Diagram-View_images65](Diagram-View_images/Diagram-View_img65.png)
 
 
 
@@ -719,7 +719,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 
 7. Repeat the steps 3 to 7 for creating more symbols.
 
-   ![](Diagram-View_images/Diagram-View_img66.png)
+   ![Diagram-View_images66](Diagram-View_images/Diagram-View_img66.png)
 
 
 
@@ -727,13 +727,13 @@ To create your own custom symbols in the symbol designer, follow the procedure g
    
    {:.caption}
 
-   ![](Diagram-View_images/Diagram-View_img67.png)
+   ![Diagram-View_images67](Diagram-View_images/Diagram-View_img67.png)
 
 
 
 
 
-   ![](Diagram-View_images/Diagram-View_img68.png)
+   ![Diagram-View_images68](Diagram-View_images/Diagram-View_img68.png)
 
 
 
@@ -745,7 +745,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 9. Finally, Save the NewSymbol Group. Now the above symbols will be available in the SymbolPaletteGroup. The saved SymbolPaletteGroup can be loaded back later.
    
    
-### SymbolPalette Item
+### SymbolPalette in WPF Diagram (classic) Item
 
 SymbolPaletteItems are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
 
@@ -828,7 +828,7 @@ group.Items.Add(item)
 
 This adds the image content to the newly created SymbolPaletteitem that belongs to the SymbolPalettegroup named "Custom".
 
-![](Diagram-View_images/Diagram-View_img69.jpeg)
+![Diagram-View_img69](Diagram-View_images/Diagram-View_img69.jpeg)
 
 
 
@@ -880,7 +880,7 @@ To Create SymbolPaletteItem Content
 
 
 
-   ![](Diagram-View_images/Diagram-View_img70.png)
+   ![Diagram-View_images70](Diagram-View_images/Diagram-View_img70.png)
 
 
 
@@ -889,7 +889,7 @@ To Create SymbolPaletteItem Content
 
 7. Design the content as required.
 
-   ![](Diagram-View_images/Diagram-View_img71.png)
+   ![Diagram-View_images71](Diagram-View_images/Diagram-View_img71.png)
 
 
 
@@ -910,14 +910,14 @@ To Create SymbolPaletteItem Content
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
     </table>
 
-    ![](Diagram-View_images/Diagram-View_img72.png)
+    ![Diagram-View_images72](Diagram-View_images/Diagram-View_img72.png)
 
 
 
     Syncfusion Symbol Exporter
 	{:.caption}
  
-    ![](Diagram-View_images/Diagram-View_img73.png)
+    ![Diagram-View_images73](Diagram-View_images/Diagram-View_img73.png)
 
 
 
@@ -928,7 +928,7 @@ To Create SymbolPaletteItem Content
 14. The Save SymbolPaletteItem dialog opens.
 15. Name the file and save this as XAML file in the desired location.
 
-    ![](Diagram-View_images/Diagram-View_img74.png)
+    ![Diagram-View_images74](Diagram-View_images/Diagram-View_img74.png)
 
 
 
@@ -950,7 +950,7 @@ The following steps demonstrate how to specify a Node or Node with Ports in Symb
 
 At runtime, Nodes that are added in SymbolPalette can be dragged and dropped on the page. All the ports, and their properties will be cloned and a new copy of the node will be created.
 
-![](Diagram-View_images/Diagram-View_img75.png)
+![Diagram-View_img75](Diagram-View_images/Diagram-View_img75.png)
 
 
 
@@ -1047,7 +1047,7 @@ The groups can be given as SymbolPaletteItem’s content. At runtime, they can b
 
 
 
-![](Diagram-View_images/Diagram-View_img76.png)
+![Diagram-View_img76](Diagram-View_images/Diagram-View_img76.png)
 
 
 
@@ -1428,7 +1428,7 @@ The following screenshot illustrates the various customization options that are 
 
 
 
-![](Diagram-View_images/Diagram-View_img77.jpeg)
+![Diagram-View_img77](Diagram-View_images/Diagram-View_img77.jpeg)
 
 
 
@@ -1440,7 +1440,7 @@ The following screenshot illustrates the various customization options available
 
 
 
-![](Diagram-View_images/Diagram-View_img78.jpeg)
+![Diagram-View_img78](Diagram-View_images/Diagram-View_img78.jpeg)
 
 
 
@@ -1562,7 +1562,7 @@ When you drag and drop the custom SymbolPaletteItem, the content that is assigne
 
 Thereby, the performance of dragging the SymbolPaletteItem is improved by 40%. If the default base method is returned in the CloneContent method, the default content is dragged and dropped.
 
-## SymbolPalette Serialization
+## SymbolPalette in WPF Diagram (classic) Serialization
 
 Serialization is the process of saving and retrieving the SymbolPalette groups and items. Essential DiagramWPF supports saving the SymbolPalette as an XAML file. This load and save feature allows you to save the SymbolPalette for future use. You can continue working on their page by loading the appropriate XAML file.
 
@@ -1795,7 +1795,7 @@ public string Content { get; set; }
 
 {% endhighlight  %}
 
-![](Diagram-View_images/Diagram-View_img79.png)
+![Diagram-View_img79](Diagram-View_images/Diagram-View_img79.png)
 
 
 

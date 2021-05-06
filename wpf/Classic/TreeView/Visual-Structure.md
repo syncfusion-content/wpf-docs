@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Visual Structure in TreeView | Syncfusion
-description: This section explains about how to display hierarchical data in a tree structure in TreeView for syncfusion Essential Wpf.
+title: Visual Structure in WPF Wizard Control control | Syncfusion
+description: Learn here all about Visual Structure support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Visual Structure in WPF TreeView(TreeViewAdv). 
+# Visual Structure in WPF TreeViewAdv (Classic)
 
 TreeViewAdv control displays hierarchical data in a tree structure, and has items that can be expanded and collapsed
 

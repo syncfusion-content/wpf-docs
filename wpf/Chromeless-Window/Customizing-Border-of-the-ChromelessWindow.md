@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Border customization of ChromelessWindow | WPF | Syncfusion 
-description: This section illustrates how to customize the border and border's thickness of wpf Chromeless Window.
+title: Customizing Border in WPF Chromeless Window | Syncfusion
+description: Learn about Customizing Border of the ChromelessWindow support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Border Customization
+# Customizing Border of the ChromelessWindow in WPF Chromeless Window
 
 **BorderBrush**
 

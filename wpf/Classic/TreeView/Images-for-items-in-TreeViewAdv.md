@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Images for items in TreeViewAdv | Syncfusion.
-description: This section describes how to load and customize the images in the items of Treeview for syncfusion Essential Wpf.
+title: Images for items in WPF TreeViewAdv Control | Syncfusion
+description: Learn here all about Images for items in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Images for Items in TreeViewAdv
+# Images for items in WPF TreeViewAdv (Classic)
 
 ## Node image
 

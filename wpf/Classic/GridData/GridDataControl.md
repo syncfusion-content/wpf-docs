@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GridData Control | GridData (Classic) | wpf | Syncfusion
-description: Learn here about usage of the Syncfusion WPF GridData Control and its designed scenarios and its key features.
+title: GridDataControl  in WPF Wizard Control control | Syncfusion
+description: Learn here all about GridDataControl  support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# WPF GridData Control
+# GridDataControl  in WPF GridDataControl (Classic)
 
 
 The GridData control is specifically designed for the scenarios, where you need to bound the grid to an external data source and customize the data view by performing the operations such as grouping, sorting, summarizing, filtering, conditional formats and unbound fields. It attains the fundamental features by deriving from the GridControlBase class and hence adapts most of the features of Grid control, which are discussed in the previous sections. It can display nested grids with hierarchical data and can also display multiple unrelated tables in one grid.

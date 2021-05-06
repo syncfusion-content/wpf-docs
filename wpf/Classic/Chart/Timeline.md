@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TimeLine | Chart(Classic) | wpf | Syncfusion
-description: TimeLine
+title: Timeline in WPF Chart Control | Syncfusion
+description: Learn here all about Timeline support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# TimeLine
+# Timeline in WPF Chart (Classic)
 
 
 TimeLine control can be added to other controls like Chart, Grid, etc. It is mainly used to set the ViewPort for a limited time to view the selected data. Following are the list of characteristics of TimeLine Control:
@@ -25,7 +25,7 @@ TimeLine Control has been designed to visualize large number of data and to hand
 
 ## Appearance and Structure
 
-![C:/Users/riaj/Desktop/Timenavigator.png](Chart-Controls_images/Chart-Controls_img255.png)
+![Chart-Controls_images255](Chart-Controls_images/Chart-Controls_img255.png)
 
 
 
@@ -190,7 +190,7 @@ TimeLineControl.SetEndDate(timelineControl, datalist[40].TimeStamp);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img256.png)
+![Chart-Controls_img256](Chart-Controls_images/Chart-Controls_img256.png)
 
 
 
@@ -221,4 +221,4 @@ TimeLineControl.SetEndValue(timelineControl, 20);
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img257.png)
+![Chart-Controls_img257](Chart-Controls_images/Chart-Controls_img257.png)

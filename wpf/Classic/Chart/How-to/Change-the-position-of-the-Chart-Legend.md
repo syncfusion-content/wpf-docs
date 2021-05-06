@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change the position of the Chart Legend | wpf | Syncfusion
-description: change the position of the chart legend
+description: Learn here all about Change the position of the Chart Legend support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
@@ -50,9 +50,9 @@ ChartDockPanel.SetDock(Legend1, ChartDock.Left);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img1.png)
+![Change-the-position-of-the-Chart-Legend_img1](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img1.png)
 
-![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img2.png)
+![Change-the-position-of-the-Chart-Legend_img2](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img2.png)
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MVVM Enhancements | GridData (Classic) | wpf | Syncfusion
-description: Learn here about how to bind the Syncfusion WPF GridData control using the MVVM enhancements and its commands.
+title: MVVM-Enhancements in WPF Wizard Control control | Syncfusion
+description: Learn here all about MVVM-Enhancements support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# MVVM Enhancements in GridDataControl
+# MVVM-Enhancements in WPF GridDataControl (Classic)
 
 ## View – View Model Communication
 
