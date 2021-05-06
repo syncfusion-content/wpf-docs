@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hyperlink Cells in WPF Olap Grid control | Syncfusion
-description: Learn about Hyperlink Cells support in Syncfusion WPF Olap Grid control and more.
+description: Learn about Hyperlink Cells support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug

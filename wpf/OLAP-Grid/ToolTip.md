@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WPF Olap Grid control | Syncfusion
-description: Learn about Tooltip support in Syncfusion WPF Olap Grid control and more.
+description: Learn about Tooltip support in Syncfusion Essential Studio WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug

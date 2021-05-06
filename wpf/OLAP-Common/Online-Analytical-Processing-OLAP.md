@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Online Analytical Processing (OLAP) in WPF OLAP Common control | Syncfusion
+title: Online Analytical Processing (OLAP) in WPF OLAP Common | Syncfusion
 description: Learn about Online Analytical Processing (OLAP) support in Syncfusion WPF OLAP Common control and more.
 platform: wpf
 control: OLAP Common

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Source in WPF Olap Grid control | Syncfusion
-description: Learn about Data Source support in Syncfusion WPF Olap Grid control and more.
+description: Learn about Data Source support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
