@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ProceduralLanguageBase Class of the Edit Control for WPF
-description: ProceduralLanguageBase Class of the Edit Control for WPF
+title: ProceduralLanguageBase Class in WPF Syntax Editor control | Syncfusion
+description: Learn about ProceduralLanguageBase Class support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formulas in SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This section provides the list of formulas supported by SfSpreadsheet with example for Syncfusion Essential WPF.
+title: Formulas in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Formulas support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Formulas
+# Formulas in WPF Spreadsheet (SfSpreadsheet)
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 

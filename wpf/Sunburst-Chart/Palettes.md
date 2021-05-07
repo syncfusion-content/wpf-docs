@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Palettes of Sunburst.
-description: This section explains how to change the appearance of the SunburstChart.
+title: Palette in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Palette support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Palettes
+# Palette in WPF Sunburst Chart (SfSunburstChart)
 
 Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 
@@ -51,7 +51,7 @@ sunburstChart.Palette = SunburstColorPalette.SandyBeach;
 
 {% endtabs %}
 
-![](Palettes_images/Palettes_img1.jpeg)
+![Palettes_img1](Palettes_images/Palettes_img1.jpeg)
 
 
 ## Custom Palette
@@ -132,7 +132,7 @@ Sunburst chart provides option which enables you to define your own color brushe
 
 {% endtabs %}
 
-![](Palettes_images/Palettes_img2.jpeg)
+![Palettes_img2](Palettes_images/Palettes_img2.jpeg)
 
 N> Before applying the color model, you need to set the palette value as Custom.
 

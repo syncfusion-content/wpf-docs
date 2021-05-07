@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Zoooming behavior of Sunburst.
-description: To virtualize large sets of data into minimum data view.
+title: Zooming in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Zooming support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Zooming
+# Zooming in WPF Sunburst Chart (SfSunburstChart)
 
 Sunburst chart provides zooming (drill down) experience with animation for both mouse and touch enabled devices. It allows you to virtualize large sets of data into minimum data view. 
 
@@ -38,7 +38,7 @@ chart.Behaviors.Add(zoom);
 
 N> You can enable or disable the zooming by using EnableZooming property. By default, EnableZooming property value is True.
 
-![](Zooming_images/Zooming_img1.gif)
+![Zooming_img1](Zooming_images/Zooming_img1.gif)
 
 
 ## Zooming Toolbar
@@ -78,6 +78,6 @@ You can customize the zooming toolbar using the following properties.
 
 {% endhighlight %}
 
-![](Zooming_images/Zooming_img2.jpeg)
+![Zooming_img2](Zooming_images/Zooming_img2.jpeg)
 
 

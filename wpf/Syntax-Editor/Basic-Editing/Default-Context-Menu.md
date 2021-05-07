@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Default ContextMenu of the Edit Control for WPF
-description: Default ContextMenu of the Edit Control for WPF
+title: Default Context Menu in WPF Syntax Editor control | Syncfusion
+description: Learn about Default Context Menu support in Syncfusion WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -34,7 +34,7 @@ editControl.ShowDefaultContextMenu = true;
 
 The following image displays the Outlining Menu Expanded window.
 
-![](Default-Context-Menu_images/Default-Context-Menu_img1.jpeg)
+![Default-Context-Menu_img1](Default-Context-Menu_images/Default-Context-Menu_img1.jpeg)
 
 
 **Functionalities supported by EditControl’s ContextMenu**

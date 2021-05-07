@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Surface Types | SfSurfaceChart | wpf | Syncfusion
-description: surface types
+title: Surface Types in WPF Surface Chart control | Syncfusion
+description: Learn here all about Surface Types support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Surface Types
+# Surface Types in WPF Surface Chart (SfSurfaceChart)
 
 Essential Surface Chart provides the following types to plot three dimensional data points.
 
@@ -40,7 +40,7 @@ chart.Type = SurfaceType.Surface;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img8.jpeg)
+![surface_chart_img8](surface_chart_images/surface_chart_img8.jpeg)
 
 
 ### WireframeSurface
@@ -65,7 +65,7 @@ chart.Type = SurfaceType.WireframeSurface;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img9.jpeg)
+![surface_chart_img9](surface_chart_images/surface_chart_img9.jpeg)
 
 
 ### Contour
@@ -90,7 +90,7 @@ chart.Type = SurfaceType.Contour;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img10.jpeg)
+![surface_chart_img10](surface_chart_images/surface_chart_img10.jpeg)
 
 
 ### WireframeContour
@@ -115,4 +115,4 @@ chart.Type = SurfaceType.WireframeContour;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img11.jpeg)
+![surface_chart_img11](surface_chart_images/surface_chart_img11.jpeg)

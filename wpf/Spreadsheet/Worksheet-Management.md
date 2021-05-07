@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Worksheet Management in WPF Spreadsheet | Syncfusion
-description: This document explains how to perform worksheet related operations(insert, delete, hide, etc.) in Spreadsheet
+title: Worksheet Management in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Worksheet Management support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Worksheet Management
+# Worksheet Management in WPF Spreadsheet (SfSpreadsheet)
 This section explains about the operations that are performed with the worksheet.
 
 ## Insert and Delete worksheet

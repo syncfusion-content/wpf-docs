@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfSurfaceChart | wpf | Syncfusion
-description: This section explains about how to getting started with Syncfusion WPF SfSurfaceChart and its key feature like Add Header to the surface chart.
+title: Getting Started with WPF Surface Chart control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Surface Chart (SfSurfaceChart) control, its elements and more.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Getting Started with WPF SfSurfaceChart
+# Getting Started with WPF Surface Chart (SfSurfaceChart)
 
 This section helps you get started with SfSurfaceChart control.
 

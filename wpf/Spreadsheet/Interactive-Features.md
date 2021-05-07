@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF Spreadsheet | Syncfusion
-description: How to work woth the clipboard operations, undo/redo, cell comments and other functionalities of WPF Spreadsheet.
+title: Interactive Features in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in WPF Spreadsheet (SfSpreadsheet)
 
  This section explains about the interactive operations with SfSpreadsheet
 
