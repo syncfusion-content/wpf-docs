@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling in WPF TreeView | Syncfusion
-description: Learn here about how to achieve programmatic scrolling in Syncfusion WPF SfTreeView and more details.
+title: Scrolling in WPF TreeView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Scrolling in in WPF TreeView(SfTreeView)
+# Scrolling in WPF TreeView (SfTreeView)
 The TreeView provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
 
 ## Bring Into View

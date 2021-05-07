@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF TreeView control | Syncfusion
-description: This section describes about the Appearance support in Syncfusion Wpf TreeView (SfTreeView) control and more details. 
+description: Learn here all about Appearance support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

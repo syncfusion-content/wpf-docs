@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF TreeView control | Syncfusion
-description: WPF TreeView control displays hierarchical data with rich features like binding, load-on-demand, editing, checkbox selection, drag-and-drop, and more.
+description: Learn here all about introduction of Syncfusion Essential Studio WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

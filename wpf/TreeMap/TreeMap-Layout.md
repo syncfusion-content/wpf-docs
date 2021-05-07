@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Layout | TreeMap | wpf | Syncfusion
-description: treemap layout
+title: TreeMap Layout in WPF TreeMap control | Syncfusion
+description: Learn here all about TreeMap Layout support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Layout
+# TreeMap Layout in WPF TreeMap (SfTreeMap)
 
 The ItemsLayoutMode for SfTreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts such as,
 
@@ -46,7 +46,7 @@ The following code illustrates how to set a squarified layout in Treemap.
 
 The following screenshot illustrates a squarified layout.
 
-![](TreeMap-Layout_images/TreeMap-Layout_img1.png)
+![TreeMap-Layout_img1](TreeMap-Layout_images/TreeMap-Layout_img1.png)
 
 
 
@@ -134,7 +134,7 @@ The following code illustrates how to set a slice and dice layout horizontally i
 
 The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
 
-![](TreeMap-Layout_images/TreeMap-Layout_img3.png)
+![TreeMap-Layout_img3](TreeMap-Layout_images/TreeMap-Layout_img3.png)
 
 
 
@@ -173,7 +173,7 @@ The following screenshot shows a Slice-and-dice TreeMap in vertical layout.
 
 
 
-![](TreeMap-Layout_images/TreeMap-Layout_img4.png)
+![TreeMap-Layout_img4](TreeMap-Layout_images/TreeMap-Layout_img4.png)
 
 
 

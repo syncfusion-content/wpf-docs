@@ -1,13 +1,13 @@
 ---
 layout: post
-title: LeafItemSettings | TreeMap | wpf | Syncfusion
-description: leafitemsettings
+title: LeafItemSettings in WPF TreeMap control | Syncfusion
+description: Learn here all about LeafItemSettings support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# LeafItemSettings
+# LeafItemSettings in WPF TreeMap (SfTreeMap)
 
 LeafItemSettings of SfTreeMap is a setting by which we can settings the template for the leafNode.
 
@@ -194,7 +194,7 @@ BorderBrush provides the border color for the leafNodes and BorderThickness prov
 
 
 
-![](LeafItemSettings_images/LeafItemSettings_img1.png)
+![LeafItemSettings_img1](LeafItemSettings_images/LeafItemSettings_img1.png)
 
 
 

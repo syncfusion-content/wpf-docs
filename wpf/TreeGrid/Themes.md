@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes in Syncfusion WPF SfTreeGrid| SfTreeGrid | Wpf | Syncfusion
-description: This section explain about how to apply different themes for SfTreeGrid control and how to implement those themes to the control.
+title: Themes in WPF TreeGrid control | Syncfusion
+description: Learn here all about Themes support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Themes in WPF SfTreeGrid
+# Themes in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Levels | TreeMap | wpf | Syncfusion
-description: treemap levels
+title: TreeMap Levels in WPF TreeMap control | Syncfusion
+description: Learn here all about TreeMap Levels support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Levels
+# TreeMap Levels in WPF TreeMap (SfTreeMap)
 
 The levels of TreeMap can be categorized into two types such as,
 
@@ -651,7 +651,7 @@ You can specify ChildGap for separating the child items of every level and it is
 
 
 
-![](TreeMap-Levels_images/TreeMap-Levels_img2.png)
+![TreeMap-Levels_img2](TreeMap-Levels_images/TreeMap-Levels_img2.png)
 
 
 

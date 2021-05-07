@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates in SfTreeGrid.
-description: How to apply styles and templates in SfTreeGrid | SfTreeGrid | ToolTip 
+title: Styles and Templates in WPF TreeGrid control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Styles and Templates
+# Styles and Templates in WPF TreeGrid (SfTreeGrid)
 
 ## Styling Column Header
 
@@ -36,7 +36,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+![Styles-and-Templates_img3](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
 ### Styling Stacked Headers
 
@@ -54,7 +54,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+![Styles-and-Templates_img1](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 ### Setting Different Style for Each Stacked Header
 
@@ -108,4 +108,4 @@ public class TreeGridCustomStackedRenderer : TreeGridStackedHeaderCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+![Styles-and-Templates_img2](Styles-and-Templates_images/Styles-and-Templates_img2.png)

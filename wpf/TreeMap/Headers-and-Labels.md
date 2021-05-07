@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Headers and Labels | TreeMap | wpf | Syncfusion
-description: headers and labels
+title: Headers and Labels in WPF TreeMap control | Syncfusion
+description: Learn here all about Headers and Labels support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Headers and Labels
+# Headers and Labels in WPF TreeMap (SfTreeMap)
 
 ## Headers
 
@@ -48,7 +48,7 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 {% endhighlight %}
 
 
-![](Headers-and-Labels_images/Headers-and-Labels_img1.png)
+![Headers-and-Labels_img1](Headers-and-Labels_images/Headers-and-Labels_img1.png)
 
 
 
@@ -125,7 +125,7 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 
 
-![](Headers-and-Labels_images/Headers-and-Labels_img2.png)
+![Headers-and-Labels_img2](Headers-and-Labels_images/Headers-and-Labels_img2.png)
 
 
 ### TreeMap with Hierarchical Collection:

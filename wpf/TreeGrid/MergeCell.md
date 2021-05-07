@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge cells | TreeGrid | WPF | Syncfusion
-description: How to merge the cells in column wise of SfTreeGrid
+title: Merge Cells in WPF TreeGrid control | Syncfusion
+description: Learn here all about Merge Cells support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Merge Cells 
+# Merge Cells in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
 

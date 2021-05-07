@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Rows | TreeGrid | WPF | Syncfusion
-description: This section explains about the various row types in TreeGrid
+title: Rows in WPF TreeGrid control | Syncfusion
+description: Learn here all about Rows support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Rows
+# Rows in WPF TreeGrid (SfTreeGrid)
 
 This section explains about various row types in treegrid and its customization.
 
-# RowHeader
+# Rows in WPF TreeGrid (SfTreeGrid)
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
@@ -109,7 +109,7 @@ You can display the row index value in row header by customizing the `Tr
 {% endhighlight %}
 {% endtabs %}
 
-# HeaderRow
+# Rows in WPF TreeGrid (SfTreeGrid)
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 

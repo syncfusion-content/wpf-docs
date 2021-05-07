@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WeightValuePath | TreeMap | wpf | Syncfusion
-description: weightvaluepath
+title: WeightValuePath in WPF TreeMap control | Syncfusion
+description: Learn here all about WeightValuePath support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# WeightValuePath
+# WeightValuePath in WPF TreeMap (SfTreeMap)
 
 The WeightValuePath ofSfTreeMap is a path to a field on the source object, which serve as the "weight" of the object. 
 
@@ -36,7 +36,7 @@ The WeightValuePath ofSfTreeMap is a path to a field on the source object, which
 
 N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
-![](WeightValuePath_images/WeightValuePath_img1.png)
+![WeightValuePath_img1](WeightValuePath_images/WeightValuePath_img1.png)
 
 
 

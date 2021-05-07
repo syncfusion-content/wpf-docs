@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | TreeMap | WPF | Syncfusion
-description: WPF TreeMap control can be used to visualize the hierarchical data in the form of nested rectangles. It supports data binding, legends, selection, and more.
+title: About WPF TreeMap control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# Overview
+# WPF TreeMap (SfTreeMap) Overview
 
 TreeMaps are ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 

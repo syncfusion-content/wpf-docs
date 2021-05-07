@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-left in WPF TreeView | Syncfusion
-description: Learn here about Right-to-left FlowDirection support in Syncfusion WPF TreeView (SfTreeView) control and more details. 
+title: Right to left(RTL) in WPF TreeView control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
