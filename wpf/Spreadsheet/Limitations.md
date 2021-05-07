@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Limitations in SfSpreadsheet
-description: Limitations in SfSpreadsheet
+title: Limitations in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Limitations support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Limitation
+# Limitations in WPF Spreadsheet (SfSpreadsheet)
 
 ## Release memory held by AutomationPeer
 

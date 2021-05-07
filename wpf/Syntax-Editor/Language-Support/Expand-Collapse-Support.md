@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand-Collapse support Provided by Edit Control
-description: Expand-Collapse support Provided by Edit Control
+title: Expand-Collapse Support in WPF Syntax Editor control | Syncfusion
+description: Learn about Expand-Collapse Support support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -38,12 +38,12 @@ editControl.EnableOutlining = false;
 
 The following image displays the EnableOutlining Is Set to False Window.
 
-![](Expand-Collapse-Support_images/Expand-Collapse-Support_img1.jpeg)
+![Expand-Collapse-Support_img1](Expand-Collapse-Support_images/Expand-Collapse-Support_img1.jpeg)
 
 
 The following image displays EnableOutlining Set to True Window.
 
-![](Expand-Collapse-Support_images/Expand-Collapse-Support_img2.jpeg)
+![Expand-Collapse-Support_img2](Expand-Collapse-Support_images/Expand-Collapse-Support_img2.jpeg)
 
 
 ## ToolTip and selection support
@@ -53,16 +53,16 @@ The EditControl is enhanced with ToolTip displaying the collapsed lines of text 
 
 The following screenshot displays the Tooltip.
 
-![](Expand-Collapse-Support_images/Expand-Collapse-Support_img3.jpeg)
+![Expand-Collapse-Support_img3](Expand-Collapse-Support_images/Expand-Collapse-Support_img3.jpeg)
 
 
 The following screenshot displays the Collapsed Region Window.
 
-![](Expand-Collapse-Support_images/Expand-Collapse-Support_img4.jpeg)
+![Expand-Collapse-Support_img4](Expand-Collapse-Support_images/Expand-Collapse-Support_img4.jpeg)
 
 
 The following screenshot displays the Text Selection Window.
 
-![](Expand-Collapse-Support_images/Expand-Collapse-Support_img5.jpeg)
+![Expand-Collapse-Support_img5](Expand-Collapse-Support_images/Expand-Collapse-Support_img5.jpeg)
 
 

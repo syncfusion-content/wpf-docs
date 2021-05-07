@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: File Support Provided by Edit Control | WPF | Syncfusion 
-description: File Support Provided by Edit Control
+title: File Support in WPF Syntax Editor control | Syncfusion
+description: Learn about File Support support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# File Support
+# File Support in WPF Syntax Editor
 
 Essential Edit WPF facilitates users to create, open, modify and save text files and programming language files. EditControl provides built-in support for a variety of text based file formats such as txt, cs, VB, SQL, XAML, and XML. It also enables to specify custom file types in the custom language configurations.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Language support Provided by Edit Control
-description: Custom Language support Provided by Edit Control
+title: Custom Language Support in WPF Syntax Editor control | Syncfusion
+description: Learn about Custom Language Support support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -752,7 +752,7 @@ return true;
 
 The following screenshot displays IronPython Demo Window.
 
-![](CustomLanguageSupport_images/CustomLanguageSupport_img4.jpeg)
+![CustomLanguageSupport_img4](CustomLanguageSupport_images/CustomLanguageSupport_img4.jpeg)
 
 
 N> Refer to IronPython Demo in the Essential Studio WPF SampleBrowser to view its functionality or debug the application.

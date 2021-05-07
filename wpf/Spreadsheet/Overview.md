@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This section provides an overview about SfSpreadsheet and it's important key features for Syncfusion Essential WPF.
+title: About WPF Spreadsheet control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Overview
+# WPF Spreadsheet (SfSpreadsheet) Overview
 
 The SfSpreadsheet is excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dropdown Menu Items | Split Button Control | WPF | Syncfusion
-description: This section explores how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
+title: Dropdown Menu Items in WPF Split Button control | Syncfusion
+description: Learn about Dropdown Menu Items support in Syncfusion WPF Split Button control and more.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Dropdown Menu Items in WPF Split Button (SplitButtonAdv)
+# Dropdown Menu Items in WPF Split Button
 
 ## Setting icon for dropdown menu items
 

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Events of Sunburst.
-description: This section explains about the events used in the SunburstChart.
+title: Events in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Events support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Events
+# Events in WPF Sunburst Chart (SfSunburstChart)
 
 ## SegmentCreated Event
 
@@ -43,7 +43,7 @@ private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs
 
 {% endhighlight %}
 
-![](Events_images/Events_img1.jpeg)
+![Events_img1](Events_images/Events_img1.jpeg)
 
 
 ## SelectionChanged
@@ -115,6 +115,6 @@ private void chart_SelectionChanged(object sender, SunburstSelectionChangedEvent
 
 {% endtabs %}
 
-![](Events_images/Events_img2.jpeg)
+![Events_img2](Events_images/Events_img2.jpeg)
 
 

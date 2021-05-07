@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MarkupLanguageBase Class of the Edit Control for WPF
-description: MarkupLanguageBase Class of the Edit Control for WPF
+title: MarkupLanguageBase Class in WPF Syntax Editor control | Syncfusion
+description: Learn about MarkupLanguageBase Class support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

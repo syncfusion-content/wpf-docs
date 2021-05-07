@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | Split Button Control | WPF | Syncfusion
-description: This section explores how to use Split Button events available for dropdown opening, closing, etc. operations in-order to perform the required action.
+title: Events in WPF Split Button control | Syncfusion
+description: Learn about Events support in Syncfusion WPF Split Button control and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Events in WPF Split Button (SplitButtonAdv)
+# Events in WPF Split Button
 
 The Split Button comprises of various pre-defined events to perform any required action that are illustrated below.
 

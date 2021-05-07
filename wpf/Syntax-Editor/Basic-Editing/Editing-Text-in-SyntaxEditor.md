@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing Text of the Edit Control | Syncfusion
-description: This section gives detailed description on Editing Text and Indentation feature in the EditControl WPF.
+title: Editing Text in Syntax Editor in WPF Syntax Editor control | Syncfusion
+description: Learn about Editing Text in Syntax Editor support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

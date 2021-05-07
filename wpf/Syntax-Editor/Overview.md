@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Syntax Editor | WPF | Syncfusion
-description: The WPF Syntax Editor is a code editor similar to Visual Studio Editor that supports syntax highlighting, code outlining, IntelliSense,  etc.
+title: About WPF Syntax Editor control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Overview
+# WPF Syntax Editor Overview
 
 This section covers information on the Essential Edit for WPF, its key features and prerequisites, compatibility with various operating systems and browsers, and the documentation details to use the control. It comprises the following sub sections.
 

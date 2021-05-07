@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Line Background support of the Edit Control for WPF
-description: Line Background support of the Edit Control for WPF
+title: Line Background Customization in WPF Syntax Editor control | Syncfusion
+description: Learn about Line Background Customization support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Line Background Customization
+# Line Background Customization in WPF Syntax Editor
 
 ## Applying line background customization
 
@@ -45,7 +45,7 @@ this.editControl1.SetLineBackground(this.editControl1.LineNumber, true, Brushes.
 
 {% endtabs %}
 
-![](Line-Background-Customization_images/SetLineBackground.png)
+![SetLineBackground](Line-Background-Customization_images/SetLineBackground.png)
 
 ## Resetting line background customization
 
@@ -155,5 +155,5 @@ public MainWindow()
 
 N> The on demand line background customization is recommended when the `EditControl` is loaded with huge data.
 
-![](Line-Background-Customization_images/OnBeforeEvent.png)
+![OnBeforeEvent](Line-Background-Customization_images/OnBeforeEvent.png)
 

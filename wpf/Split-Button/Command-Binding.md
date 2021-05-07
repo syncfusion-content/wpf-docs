@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Command Binding | Split Button Control | WPF | Syncfusion
-description: This section explores how to provide command binding for both split button and dropdown menu items to perform any action while clicking the same.
+title: Command Binding in WPF Split Button control | Syncfusion
+description: Learn about Command Binding support in Syncfusion WPF Split Button control and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Command Binding in WPF Split Button (SplitButtonAdv)
+# Command Binding in WPF Split Button
 
 The command and command parameter properties allow to execute any action on clicking either the button or the dropdown menu items.
 

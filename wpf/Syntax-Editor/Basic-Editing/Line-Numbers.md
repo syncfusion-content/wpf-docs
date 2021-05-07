@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Numbers property of the Syncfusion Edit Control for WPF
-description: Line Numbers property of the Syncfusion Edit Control for WPF used to show the line numbers for the content in the EditControl.
+title: Line Numbers in WPF Syntax Editor control | Syncfusion
+description: Learn about Line Numbers support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

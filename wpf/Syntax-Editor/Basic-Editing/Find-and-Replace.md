@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Find and Replace support of the Edit Control for WPF
-description: Find and Replace support of the Edit Control for WPF
+title: Find and Replace in WPF Syntax Editor control | Syncfusion
+description: Learn about Find and Replace support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -42,7 +42,7 @@ editControl.ShowFindAndReplace = true;
 
 The following image displays the Find and Replace Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
+![Find-and-Replace_img1](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
 
 
 The Find and Replace dialog provides the basic search functionality as mentioned below. 
@@ -63,7 +63,7 @@ Quick Find tab enables users to search all the occurrences of a text in an open 
 
 The following image displays Quick Find Tab.
 
-![](Find-and-Replace_images/Find-and-Replace_img2.jpeg)
+![Find-and-Replace_img2](Find-and-Replace_images/Find-and-Replace_img2.jpeg)
 
 
 **Find** **what**: Enter the search text in Find what field to search the text in the document.
@@ -74,7 +74,7 @@ N> Select an area in the document before opening Find and Replace dialog,Selecti
 
 The following image displays look in field in Find and Replace Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img4.jpeg)
+![Find-and-Replace_img4](Find-and-Replace_images/Find-and-Replace_img4.jpeg)
 
 
 **Find** **options**: Find options are placed under collapsible GroupBox control to have a compact view of the Find and Replace window.
@@ -88,14 +88,14 @@ Find and Replace window facilitates you to search the text based on the followin
 
 The following image displays Find Options Collapsed window.
 
-![](Find-and-Replace_images/Find-and-Replace_img5.jpeg)
+![Find-and-Replace_img5](Find-and-Replace_images/Find-and-Replace_img5.jpeg)
 
 
 Click the Find Next or Enter to search the text in document. The Find Next Button will be enabled only when the search text is entered in Find what field.
 
 The following image displays EditControl Sample Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img6.jpeg)
+![Find-and-Replace_img6](Find-and-Replace_images/Find-and-Replace_img6.jpeg)
 
 
 **Find** **symbol**
@@ -104,12 +104,12 @@ Find symbol tab in Find and Replace window facilitates the users to find all the
 
 The following image displays Find and Replace Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img7.jpeg)
+![Find-and-Replace_img7](Find-and-Replace_images/Find-and-Replace_img7.jpeg)
 
 
 The following image displays Find Symbol Tab in Find and Replace Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img8.jpeg)
+![Find-and-Replace_img8](Find-and-Replace_images/Find-and-Replace_img8.jpeg)
 
 
 Find Symbol tab supports the following search options to refine the search results.
@@ -125,7 +125,7 @@ Find symbol results tab lists all the occurrences of the search text with additi
 
 The following image displays EditControl Sample Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img9.jpeg)
+![Find-and-Replace_img9](Find-and-Replace_images/Find-and-Replace_img9.jpeg)
 
 
 Click the Find All or Enter to search the text in document.
@@ -134,13 +134,13 @@ N> Find Symbol results tab is a dockable so that it can be hidden,pinned or clos
 
 The following image displays Find Symbol Results.
 
-![](Find-and-Replace_images/Find-and-Replace_img11.jpeg)
+![Find-and-Replace_img11](Find-and-Replace_images/Find-and-Replace_img11.jpeg)
 
 
 
 The following image displays Find Symbol Results tab in Hidden State Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img12.jpeg)
+![Find-and-Replace_img12](Find-and-Replace_images/Find-and-Replace_img12.jpeg)
 
 
 **Quick** **replace**
@@ -152,7 +152,7 @@ The following image shows Quick Replace Tab in Find and Replace Window.
 
 
 
-![](Find-and-Replace_images/Find-and-Replace_img13.jpeg)
+![Find-and-Replace_img13](Find-and-Replace_images/Find-and-Replace_img13.jpeg)
 
 
 
@@ -231,7 +231,7 @@ editcontrol.ShowGoToLine()
 
 The following output shows the GoToLine Dialog Window.
 
-![](Find-and-Replace_images/Find-and-Replace_img14.jpg)
+![Find-and-Replace_img14](Find-and-Replace_images/Find-and-Replace_img14.jpg)
 
 **ShowGoToLine with LineNumber**
 
@@ -254,7 +254,7 @@ editcontrol.ShowGoToLine(1000)
 
 {% endtabs %}
 
-![](Find-and-Replace_images/Find-and-Replace_img15.jpg)
+![Find-and-Replace_img15](Find-and-Replace_images/Find-and-Replace_img15.jpg)
 
 **Localization support**
 
@@ -293,7 +293,7 @@ Helps to localize the Cancel Button Text.
 </td></tr>
 </table>
 
-![](Find-and-Replace_images/Find-and-Replace_img16.jpg)
+![Find-and-Replace_img16](Find-and-Replace_images/Find-and-Replace_img16.jpg)
 
 
 {% tabs %}
@@ -324,7 +324,7 @@ End Sub
 The following output shows the GoToLine Window localized in French culture.
 
 
-![](Find-and-Replace_images/Find-and-Replace_img17.jpg)
+![Find-and-Replace_img17](Find-and-Replace_images/Find-and-Replace_img17.jpg)
 
 
 

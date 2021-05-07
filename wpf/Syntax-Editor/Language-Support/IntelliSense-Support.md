@@ -1,13 +1,13 @@
 ---
 layout: post
-title: IntelliSense support | Syntax Editor | WPF | Syncfusion
-description: Edit control provides intellisense support that prompt possible words while typing text in the control.
+title: IntelliSense Support in WPF Syntax Editor control | Syncfusion
+description: Learn about IntelliSense Support support in Syncfusion WPF Syntax Editor control and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# IntelliSense Support
+# IntelliSense Support in WPF Syntax Editor
 
 The Essential Edit for WPF provides Visual Studio like IntelliSense support. With IntelliSense support users can quickly choose the possible words while typing text in the control.
 
