@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles and Templates in WPF DataGrid control | Syncfusion
-description: Learn about styles and templates support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Styles and Templates support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug

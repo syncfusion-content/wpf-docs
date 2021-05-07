@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restriction or Validation in WPF DoubleTextBox control | Syncfusion
-description: Learn about Restriction or Validation support in Syncfusion WPF DoubleTextBox control and more details about the control features.
+title: Restriction or Validation in WPF Double TextBox control | Syncfusion
+description: Learn about Restriction or Validation support in Syncfusion WPF Double TextBox control, its elements and more.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---
 
-# Restriction or Validation in WPF DoubleTextBox
+# Restriction or Validation in WPF Double TextBox
 
 This section explains how to validate or restrict the `DoubleTextBox` control value.
 

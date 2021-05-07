@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rotating the GroupBar| GroupBar | Wpf | Syncfusion
-description: rotating the groupbar
+title: Rotating the GroupBar in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Rotating the GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Rotating the GroupBar
+# Rotating the GroupBar in WPF Navigation Pane (GroupBar)
 
 You can rotate the GroupBar in any direction by setting a suitable angle to the RotationAngle property. This dependency property sets the angle of displaying GroupBar. It returns the angle of rotation used for displaying the GroupBar. The default value is _0_.
 

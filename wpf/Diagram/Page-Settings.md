@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Size and appearance customization of Diagram pages | Syncfusion
-description: How to customize the size and appearance of the Diagram pages and how to split the single page into multiple pages?
+title: Page Settings in WPF Diagram control | Syncfusion
+description: Learn here all about Page Settings support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

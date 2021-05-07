@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Port to port connection | Syncfusion
-description: How to create connection between ports (Nodeport, Connectorport, Dockport) interactively as well as programmatically ?
+title: Port-to-port-creation in WPF Diagram control | Syncfusion
+description: Learn here all about Port-to-port-creation support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Port to Port Connection
+# Port-to-port-creation in WPF Diagram (SfDiagram)
 
 The connector’s `SourcePort` or `SourcePortID` and `TargetPort` or `TargetPortID` properties allows you to create connections between two specific points of same or different nodes and connectors.
 

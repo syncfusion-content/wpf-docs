@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Grid Field List | PivotGrid | Syncfusion
-description: Pivot grid field list allows end users to drag fields, filter and sort them, and create a pivot report at runtime.
+title: PivotGrid Field List in WPF Pivot Grid control | Syncfusion
+description: Learn about PivotGrid Field List support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Pivot Grid Field List
+# PivotGrid Field List in WPF Pivot Grid
 
 With the current implementation of grouping bar, you cannot add the deleted items to the pivot grid. The delete operation can be easily performed in the grouping bar by using its "AllowRemoving" feature, but there is no possibility to add again the deleted items. To achieve this, maintain a separate window called **PivotTable Field List**, which holds the fields that are not present in the pivot grid but available in the ItemSource. You can bind a collection of PivotItems as **PivotFields** which gets included in the field list window but not present in the pivot grid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Query Builder Engine
-description: Query builder engine
+title: QueryBuilderEngine in WPF OLAP Common control | Syncfusion
+description: Learn about QueryBuilderEngine support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Query Builder Engine
+# QueryBuilderEngine in WPF OLAP Common
 
 This class generates the query from the MDXQuerySpecification by invoking the GenerateQueryEx() static method of QueryBuilderEngineVersion3, the inner class of QueryBuilderEngine class.
 
@@ -27,7 +27,7 @@ The elements in the given report are iterated and stored according to the specif
 
 Based on the current report, the TogglePivot value and axis position of each item will be assigned before it is stored in the appropriate clauses.
 
-![](MDXQuerySpecification_images/MDXQuerySpecification_img1.png)
+![MDXQuerySpecification_img1](MDXQuerySpecification_images/MDXQuerySpecification_img1.png)
 
 
 

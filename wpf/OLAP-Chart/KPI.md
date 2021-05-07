@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Performance Indicator (KPI)
-description: KPI
+title: KPI in WPF Olap Chart control | Syncfusion
+description: Learn about KPI support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Key Performance Indicator (KPI)
+# KPI in WPF Olap Chart
 
 KPI is a collection of calculations that are associated with a measure group in a cube, which is used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
 
@@ -92,4 +92,4 @@ End Function
 
 {% endtabs %}
 
-![](Kpi_images/Kpi_img1.png)
+![Kpi_img1](Kpi_images/Kpi_img1.png)

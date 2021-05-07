@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtual Key Performance Indicator (KPI) Element
-description: Virtual KPI element
+title: Virtual KPI Element in WPF OLAP Common control | Syncfusion
+description: Learn about Virtual KPI Element support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Virtual Key Performance Indicator (KPI) Element
+# Virtual KPI Element in WPF OLAP Common
 
 KPI can be virtually defined during runtime. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is useful when users want to define KPIs at runtime and also minimize the time necessary to create KPIs.
 

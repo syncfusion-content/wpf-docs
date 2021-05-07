@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Delimiter Support | wpf | Syncfusion
-description: delimiter support in comboboxadv 
+title: Delimiter Support in WPF ComboBox control | Syncfusion
+description: Learn here all about Delimiter Support in Syncfusion WPF ComboBox (ComboBoxAdv) control, its elements and more.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
@@ -47,4 +47,4 @@ comboBox.SelectedValueDelimiter = "#";
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAdv_images/ComboBoxAdv_img11.png)
+![ComboBoxAdv_img11](ComboBoxAdv_images/ComboBoxAdv_img11.png)

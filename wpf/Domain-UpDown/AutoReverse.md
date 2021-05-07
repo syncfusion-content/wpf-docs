@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoReverse | DomainUpDown | wpf | Syncfusion
-description: autoreverse
+title: AutoReverse in WPF Domain Updown control | Syncfusion
+description: Learn here all about AutoReverse support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
 platform: wpf
 control: DomainUpDown
 documentation: ug
 ---
 
-# AutoReverse
+# AutoReverse in WPF Domain Updown (SfDomainUpDown)
 
 Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
 

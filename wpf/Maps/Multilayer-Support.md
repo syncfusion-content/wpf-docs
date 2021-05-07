@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multilayer Support | SfMap | wpf | Syncfusion
-description: This section describes about multi layer support in WPF `SfMap` control by using ShapeFileLayer and SubShapeFileLayer.
+title: Multilayer Support in WPF Maps control | Syncfusion
+description: Learn here all about Multilayer Support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

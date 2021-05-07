@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell layout customization of GridControl | WPF | Syncfusion
-description: Learn here about how to customize the cell layout in the Syncfusion WPF GridControl and its behaviors.
+title: Cell Layout Customization in WPF GridControl | Syncfusion
+description: Learn about Cell Layout Customization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Cell layout customization
+# Cell Layout Customization in WPF GridControl
 
 This section explains the Covered Cells, Banner Cells, Overlapping Cells and Graphic cell of the WPF GridControl.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Support for All Level Type Member| OlapGrid | Wpf | Syncfusion
-description: support for "all" level type member 
+title: All-Level Type Member in WPF Olap Grid control | Syncfusion
+description: Learn about All-Level Type Member support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -29,7 +29,7 @@ OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
 
 {% endtabs %}
 
-![](Support-for-All-Level-Type-Member_images/Support-for-All-Level-Type-Member_img1.png)
+![Support-for-All-Level-Type-Member_img1](Support-for-All-Level-Type-Member_images/Support-for-All-Level-Type-Member_img1.png)
 
 A sample demo is available in the following location.
 

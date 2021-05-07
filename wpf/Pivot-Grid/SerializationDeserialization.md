@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Serialization and Deserialization in WPF Pivot Grid | Syncfusion
-description: Support to save the structure and data of pivot grid control to an XML file and it can be loaded at any time.
+description: Learn about Serialization and Deserialization support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Serialization/Deserialization
+# Serialization and Deserialization in WPF Pivot Grid
 
 Serialization can be implemented for applications that need to save their data and structure after closed. Serialization supports saving the structure and data of pivot grid control to an XML file and it can be loaded at any time.
 

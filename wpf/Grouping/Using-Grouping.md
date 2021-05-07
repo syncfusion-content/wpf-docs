@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Grouping for  Syncfusion Essential WPF 
-description: using grouping
+title: Using Grouping in WPF Grouping control | Syncfusion
+description: Learn about Using Grouping support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Using Grouping
+# Using Grouping in WPF Grouping
 
 The Grouping of data is one type of data analysis technique. It is natural to organize data into groups. For example, you may want to group your sales details by months and get the total sales on a month-by-month basis. The following sections elaborates on this:
 
@@ -82,7 +82,7 @@ Next rec
 
 
 
-![](Using-Grouping_images/Using-Grouping_img2.png)
+![Using-Grouping_img2](Using-Grouping_images/Using-Grouping_img2.png)
 
 
 
@@ -289,7 +289,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Using-Grouping_images/Using-Grouping_img3.png)
+![Using-Grouping_img3](Using-Grouping_images/Using-Grouping_img3.png)
 
 
 
@@ -419,7 +419,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Using-Grouping_images/Using-Grouping_img5.png)
+![Using-Grouping_img5](Using-Grouping_images/Using-Grouping_img5.png)
 
 
 

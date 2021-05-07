@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Populate Diagram from external data sources.
-description: How to populate an automatic layout with nodes and connectors in diagram area with local business objects and nodes collection?
+title: DataSource in WPF Diagram control | Syncfusion
+description: Learn here all about DataSource support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Data Binding in WPF Diagram (SfDiagram)
+# DataSource in WPF Diagram (SfDiagram)
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 

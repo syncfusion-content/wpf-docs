@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Node Style| Gantt | Wpf | Syncfusion
-description: custom node style
+title: Custom Node Style in WPF Gantt control | Syncfusion
+description: Learn about Custom Node Style support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Custom Node Style
+# Custom Node Style in WPF Gantt
 
 Custom node style enables you to design your own style to the nodes that will be displayed in the Gantt. You can also customize the progress bar of the Task Node.Currently Gantt Control supports three types of node. They are:
 
@@ -281,7 +281,7 @@ The following code illustrates how to add the styles to the application:
 
 {% endhighlight  %}
 
-![](Custom-Node-Style_images/Custom-Node-Style_img1.png)
+![Custom-Node-Style_img1](Custom-Node-Style_images/Custom-Node-Style_img1.png)
 
 
 
@@ -289,7 +289,7 @@ _Custom Node Style_
 
 
 
-![](Custom-Node-Style_images/Custom-Node-Style_img2.png)
+![Custom-Node-Style_img2](Custom-Node-Style_images/Custom-Node-Style_img2.png)
 
 
 

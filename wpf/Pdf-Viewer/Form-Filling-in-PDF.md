@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Furm Filling in PDF Files | PDF Viewer | WPF | Syncfusion
-description: PDF Viewer provides the ability to Fill, Edit, Flatten, and Save the AcroForm fields in PDF files. It helps automate data collection and processing.
+title: Form Filling in PDF Files in WPF Pdf Viewer control | Syncfusion
+description: Learn about Form Filling in PDF Files support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Form Filling in PDF Files
+# Form Filling in PDF Files in WPF Pdf Viewer
 
 PDF Viewer provides the ability to Fill, Edit, Flatten, and Save the `AcroForm` fields in PDF files.
 
@@ -71,7 +71,7 @@ namespace PdfViewer
 {% endhighlight %}
 {% endtabs %}
 
-N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/PDF%20Viewer/Form%20Filling/Pdf%20Viewer%20Form%20Filling).
+N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/pdfviewer).
 
 ## Import and Export Form Data
 

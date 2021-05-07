@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summaries in WPF DataGrid control | Syncfusion
-description: Learn about summary row (table, group and caption) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Summaries support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

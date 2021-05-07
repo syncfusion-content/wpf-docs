@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Style| Gantt | Wpf | Syncfusion
-description: visual style
+title: Visual Style in WPF Gantt control | Syncfusion
+description: Learn about Visual Style support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Visual Style
+# Visual Style in WPF Gantt
 
 Essential Gantt enables you to customize the appearance of the control. This supports the following themes:
 
@@ -61,7 +61,7 @@ The following shows Office 2010 Blue:
 
 
 
-![](Visual-Style_images/Visual-Style_img1.png)
+![Visual-Style_img1](Visual-Style_images/Visual-Style_img1.png)
 
 
 
@@ -72,7 +72,7 @@ The following image shows Office 2010 silver:
 
 
 
-![](Visual-Style_images/Visual-Style_img2.png)
+![Visual-Style_img2](Visual-Style_images/Visual-Style_img2.png)
 
 
 
@@ -83,7 +83,7 @@ The following image shows Office 2010Silver:
 
 
 
-![](Visual-Style_images/Visual-Style_img3.png)
+![Visual-Style_img3](Visual-Style_images/Visual-Style_img3.png)
 
 
 Office2010Black
@@ -93,7 +93,7 @@ The following image shows Office 2010Metro:
 
 
 
-![](Visual-Style_images/Visual-Style_img4.png)
+![Visual-Style_img4](Visual-Style_images/Visual-Style_img4.png)
 
 
 

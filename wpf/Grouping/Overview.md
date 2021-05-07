@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview for Grouping Syncfusion Essential WPF 
-description: WPF Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute.
+title: About WPF Grouping control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Overview
+# WPF Grouping Overview
 
 This section covers information on Essential Grouping, its key features, prerequisites to use the control, its compatibility with various OS and browsers, and finally the documentation details complimentary with the product. It comprises the following subsections:
 

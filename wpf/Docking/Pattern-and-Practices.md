@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Patterns and Practices of Syncfusion DockingManager control for WPF
-description: Learn here about the MVVM and PRISM support with Essential studio Windows Forms DockingManager control
+title: Patterns and Practices in WPF Docking control | Syncfusion
+description: Learn here all about Patterns and Practices support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Patterns and Practices
+# Patterns and Practices in WPF Docking (DockingManager)
 
 ## MVVM 
 

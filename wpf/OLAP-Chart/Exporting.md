@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | OLAP Chart | Syncfusion
-description: Support to export the chart data into various formats such as image, Word and PDF in OLAP Chart control.
+title: Exporting in WPF Olap Chart control | Syncfusion
+description: Learn about Exporting support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Exporting OLAP Chart
+# Exporting in WPF Olap Chart
 
 An OLAP chart can be exported to various image and document formats. The following topics illustrate this in detail:
 

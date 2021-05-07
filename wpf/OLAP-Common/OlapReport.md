@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Report
-description: OLAP report
+title: OlapReport in WPF OLAP Common control | Syncfusion
+description: Learn about OlapReport support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# OLAP Report
+# OlapReport in WPF OLAP Common
 
 The OLAP report is an object that contains information about the cube element that has to be included for processing along its axis position and filter and sorting constraints. The OLAP report has categorized the elements based on their characteristics as follows:
 
@@ -49,7 +49,7 @@ All the elements are internally maintained as items.
 * **TogglePivot**: Swaps the elements in the column axis and row axis.
 * **Tag**: Holds the backup information of the OLAP report.
 
-![](OlapReport_images/OlapReport_img1.png)
+![OlapReport_img1](OlapReport_images/OlapReport_img1.png)
 
 Architecture of Items
 {:.caption}
@@ -80,7 +80,7 @@ Member element represents a member of level in a cube, the children of a member 
 
 Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, the number of children, and so on. The member properties are available for all members at a given level.
 
-![](Dimension-Element_images/Dimension-Element_img1.png)
+![Dimension-Element_img1](Dimension-Element_images/Dimension-Element_img1.png)
 
 The following code illustrates the creation of different types of dimensions.
 
@@ -566,7 +566,7 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 {% endhighlight  %}
 {% endtabs %}
 
-![](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img1.png)
+![Filtering-slicer-elements-by-range_img1](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img1.png)
 
 
 
@@ -574,7 +574,7 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 
 
 
-![C:/Documents and Settings/jananit/Local Settings/Temporary Internet Files/Content.Word/After appying range filter.png](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img2.png)
+![Filtering-slicer-elements-by-range_images2](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img2.png)
 
 ## Creating the OLAP report
 

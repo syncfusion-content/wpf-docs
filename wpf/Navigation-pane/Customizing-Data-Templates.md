@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing Data Templates| GroupBar | Wpf | Syncfusion
-description: customizing data templates
+title: Customizing-Data-Templates in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Customizing-Data-Templates support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Customizing Data Templates
+# Customizing-Data-Templates in WPF Navigation Pane (GroupBar)
 
 Data templates can be customized for items, headers, and content. The next sections explain how to customize data templates.
 
@@ -43,7 +43,7 @@ Implementing the above code will create the following GroupBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![Customizing-Data-Templates_img1](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
@@ -177,7 +177,7 @@ This will generate the following GroupBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+![Customizing-Data-Templates_img2](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
   
 
@@ -292,7 +292,7 @@ This will populate the GroupBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+![Customizing-Data-Templates_img3](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
   
 
@@ -542,7 +542,7 @@ This will populate the GroupBar control.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)
+![Customizing-Data-Templates_img4](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)
 
   
 

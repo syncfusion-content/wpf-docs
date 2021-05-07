@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MapPopup | SfMap | wpf | Syncfusion
-description: This section describes WPF SfMaps control MapPopup support usage with customization by using PopupCustomTemplate.
+title: MapPopup in WPF Maps control | Syncfusion
+description: Learn here all about MapPopup support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of OLAP Gauge Control for WPF | Syncfusion
-description: The olag gauge control is used to highlight the busines information in executive dashboards and report cards.
+title: About WPF Olap Gauge control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Olap Gauge control, its elements and more details.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# Overview for OLAP Gauge
+# WPF Olap Gauge Overview
 
 The OLAP gauge control for WPF is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It allows you to present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind an OLAP gauge to a KPI result from your OLAP database. The OLAP gauge control with sophisticated customization support provides endless possibility for control customization.
 

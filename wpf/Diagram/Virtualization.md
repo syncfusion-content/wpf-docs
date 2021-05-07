@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quick rendering by loading object lies in viewport alone | Syncfusion.
-description: How to enable faster rendering when diagram is too large and how to customize the rendering visibility of the diagram objects?
+title: Virtualization in WPF Diagram control | Syncfusion
+description: Learn here all about Virtualization support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization and customization
+# Virtualization in WPF Diagram (SfDiagram)
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 

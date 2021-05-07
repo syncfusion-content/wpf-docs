@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding PivotSchemaDesigner to Pivot Grid | PivotGrid | Syncfusion
-description: Binding PivotSchemaDesigner which allows end users to drag fields, filter and sort them, and create a pivot report at runtime.
+title: Binding PivotSchemaDesigner in WPF Pivot Grid control | Syncfusion
+description: Learn about Binding PivotSchemaDesigner support in Syncfusion WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Binding PivotSchemaDesigner to Pivot Grid
+# Binding PivotSchemaDesigner in WPF Pivot Grid
 
 The pivot schema designer can be bound to the pivot grid with the help of the `PivotControl` property. After creating a pivot grid, a new pivot schema designer is created using the `PivotSchemaDesigner` class and bound to the pivot grid control using the `PivotControl` property. This can be achieved either in XAML or code-behind.
 

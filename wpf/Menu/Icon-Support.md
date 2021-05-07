@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Icon Support| MenuAdv | Wpf | Syncfusion
-description: icon support
+title: Icon Support in WPF Menu control | Syncfusion
+description: Learn here all about Icon Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Icon Support
+# Icon Support in WPF Menu (MenuAdv)
 
 MenuItemAdv allows users to display an image on the left of the control. Icon for MenuItemAdv can be set by providing the image source as a value for the Icon property of the MenuItemAdv class.
 
@@ -68,7 +68,7 @@ The Icon support can be added to an application by using the Icon property of Me
 {% endhighlight %}
 
 
-![](Icon-Support_images/Icon-Support_img1.png)
+![Icon-Support_img1](Icon-Support_images/Icon-Support_img1.png)
 
 
 ### Properties

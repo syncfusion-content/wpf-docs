@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| Gantt | Wpf | Syncfusion
-description: A quick tour to the initial users on the Syncfusion Gantt control for WPF Platform and also explains how to adjust the size of GanttChart and GanttGrid
+title: Getting Started with WPF Gantt control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Getting Started with Gantt
+# Getting Started with WPF Gantt
 
 ## Appearance and structure of Gantt
 

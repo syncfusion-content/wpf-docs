@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding Groupview in ListView Mode| GroupBar | WPF | Syncfusion
-description: This section describes how to arrange group view items in list view mode of GroupBar Control using programmatically.
+title: Adding Groupview in ListView Mode in WPF Navigation Pane | Syncfusion
+description: Learn here all about Adding Groupview in ListView Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Add GroupView in ListView Mode
+# Adding Groupview in ListView Mode in WPF Navigation Pane (GroupBar)
 
 You can arrange GroupView Items in list view mode by using the IsListViewMode property. This property is used to enable or disable the layout of items in a GroupView in the ListView mode.
 

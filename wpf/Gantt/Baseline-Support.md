@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Baseline Support| Gantt | Wpf | Syncfusion
-description: baseline support
+title: Baseline Support in WPF Gantt control | Syncfusion
+description: Learn about Baseline Support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Baseline Support
+# Baseline Support in WPF Gantt
 
 ## Baseline Table View
 
@@ -110,7 +110,7 @@ The following image shows the BaseLine Table View:
 
 
 
-![](Baseline-Support_images/Baseline-Support_img1.png)
+![Baseline-Support_img1](Baseline-Support_images/Baseline-Support_img1.png)
 
 
 BaseLine Table View
@@ -174,7 +174,7 @@ NA</td></tr>
 
 The following image shows the BaseLine Chart View:
 
-![](Baseline-Support_images/Baseline-Chart_img4.png)
+![Baseline-Chart_img4](Baseline-Support_images/Baseline-Chart_img4.png)
 
 ## Samples
 
@@ -199,7 +199,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-![](Baseline-Support_images/Baseline-Support_img2.png)
+![Baseline-Support_img2](Baseline-Support_images/Baseline-Support_img2.png)
 
 
 
@@ -365,7 +365,7 @@ Sample Project Statistic Visual:
 
 
 
-![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)
+![Baseline-Support_images3](Baseline-Support_images/Baseline-Support_img3.png)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: XAML Configuration
-description: XAML configuration
+title: XAML Configuration in WPF Olap Gauge control | Syncfusion
+description: Learn about XAML Configuration support in Syncfusion WPF Olap Gauge control, its elements and more details.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
 ---
 
-# XAML Configuration
+# XAML Configuration in WPF Olap Gauge
 
 XAML configuration is one of the important features of the OLAP gauge, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
@@ -50,7 +50,7 @@ The following code snippet illustrates about adding an OLAP report to OLAP gauge
 
 {% endtabs %}
 
-![](XAML-Configuration_images/XAML-Configuration_img1.png)
+![XAML-Configuration_img1](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 A demo sample is available at the following location.
 

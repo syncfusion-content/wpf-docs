@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Dropdown Button | WPF | Syncfusion
-description: The WPF dropdown button (or DropDownButtonAdv) provides advanced menu-like appearance to the button UI.
+title: About WPF Dropdown Button control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Dropdown Button (DropDownButtonAdv) control, its elements and more details.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug
 ---
 
-# WPF Dropdown Button Overview
+# WPF Dropdown Button (DropDownButtonAdv) Overview
 
 The WPF dropdown button (or DropDownButtonAdv) provides advanced menu-like appearance to the button UI. When the arrow is clicked, it displays a dropdown list with various options for selection.
 

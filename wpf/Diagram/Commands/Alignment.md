@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the Alignment commands.
-description: Alignment Commands are used to align the selected objects on a page with respect to a reference object(first item in the selection list).
+title: Alignment Commands in WPF Diagram control | Syncfusion
+description: Learn here all about Alignment Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Alignment commands in WPF Diagram(SfDiagram)
+# Alignment Commands in WPF Diagram (SfDiagram)
 
 Alignment commands are used to align the selected objects such as Nodes and Connectors on a page with respect to a reference object(first item in the selection list).
 

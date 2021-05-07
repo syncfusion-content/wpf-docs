@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Data Binding | SfMap | wpf | Syncfusion
-description: This section describes Custom Data Binding in WPF SfMaps control with CustomDataSource property ShapeFileLayer.
+title: Custom Data Binding in WPF Maps control | Syncfusion
+description: Learn here all about Custom Data Binding support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

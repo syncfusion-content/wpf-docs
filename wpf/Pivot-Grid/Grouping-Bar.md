@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping Bar | PivotGrid | Syncfusion
-description: Grouping bar which allows to slice and dice the fields between column, row, value, and filter dynamically in PivotGrid control.
+title: Grouping Bar in WPF Pivot Grid control | Syncfusion
+description: Learn about Grouping Bar support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Grouping Bar
+# Grouping Bar in WPF Pivot Grid
 
 Grouping bar allows you to slice and dice the fields between column, row, value, and filter. This allows you to add, rearrange, or remove the fields to show data in the pivot grid as desired. It consists of the following areas:
 

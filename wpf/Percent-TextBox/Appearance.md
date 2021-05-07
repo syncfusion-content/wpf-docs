@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF PercentTextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF PercentTextBox control and more details about the control features.
+title: Appearance in WPF Percent TextBox control | Syncfusion
+description: Learn about Appearance support in Syncfusion Essential Studio WPF Percent TextBox control, its elements and more.
 platform: wpf
 control: PercentTextBox
 documentation: ug
 ---
 
-# Appearance in WPF PercentTextBox
+# Appearance in WPF Percent TextBox
 
 This section deals with the appearance of `PercentTextBox` control and contains the following topics.
 

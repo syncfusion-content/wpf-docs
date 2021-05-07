@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Key Features| SfDigitalGauge | Wpf | Syncfusion
-description: This section describes types of segment display available in WPF Digital Gauge (SfDigitalGauge) control.
+title: Key Features in WPF Digital Gauge control | Syncfusion
+description: Learn here all about Key Features support in Syncfusion WPF Digital Gauge (SfDigitalGauge) control and more.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug

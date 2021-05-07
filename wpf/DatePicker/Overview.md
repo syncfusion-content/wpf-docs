@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfDatePicker control | Syncfusion
-description: This page explains about overview of the WPF SfDatePicker control and its overall customazation features.
+title: About WPF DatePicker control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF DatePicker (SfDatePicker) control, its elements and more.
 platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
 
-# WPF SfDatePicker Overview
+# WPF DatePicker (SfDatePicker) Overview
 
 The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) control allows the user to select date values in a touch friendly manner.
 

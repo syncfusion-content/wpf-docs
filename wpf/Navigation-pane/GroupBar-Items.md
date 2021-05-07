@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GroupBar Items| GroupBar | Wpf | Syncfusion
-description: groupbar items
+title: GroupBar Items in WPF Navigation Pane control | Syncfusion
+description: Learn here all about GroupBar Items support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# GroupBar Items
+# GroupBar Items in WPF Navigation Pane (GroupBar)
 
 This topic illustrates the how to work with group-bar items.
 
@@ -200,7 +200,7 @@ Run the code. The following output is displayed.
 
 
 
-![](GroupBar-Items_images/GroupBar-Items_img1.jpeg)
+![GroupBar-Items_img1](GroupBar-Items_images/GroupBar-Items_img1.jpeg)
 
 
 
