@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch Support in WPF Themes control | Syncfusion
-description: Learn here all about Touch Support support in Syncfusion WPF Themes (Themes and Appearance) control and more.
+description: Learn here all about Touch Support in Syncfusion WPF Themes (Themes and Appearance) control and more.
 platform: WPF
 control: General
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pulsing Tile in WPF Tile Control control | Syncfusion
+title: Pulsing Tile in WPF Tile Control | Syncfusion
 description: Learn about Pulsing Tile support in Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfPulsingTile
