@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers | DataLabel | SfSmithChart | Wpf | Syncfusion
-description: Data-Markers
+title: Data Markers in WPF Smith Chart control | Syncfusion
+description: Learn here all about Data Markers support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in WPF Smith Chart (SfSmithChart)
 
 Data markers are used to provide information about data point to the user. You can add a shape and label to adorn each data point.
 
@@ -39,7 +39,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img1.png)
+![Data-Markers_img1](Data-Markers_images/Data-Markers_img1.png)
 
 ## Customizing Marker
 
@@ -71,7 +71,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img2.png)
+![Data-Markers_img2](Data-Markers_images/Data-Markers_img2.png)
 
 **MarkerTemplate**
 
@@ -107,7 +107,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img3.png)
+![Data-Markers_img3](Data-Markers_images/Data-Markers_img3.png)
 
 ## Add Labels
 
@@ -141,7 +141,7 @@ N> The position changed data label will be connected by using connector line and
 
 The following screenshot illustrates how the data labels can be positioned.
 
-![](Data-Markers_images/Data-Markers_img4.png)
+![Data-Markers_img4](Data-Markers_images/Data-Markers_img4.png)
 
 **LabelStyle**
 
@@ -181,7 +181,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img5.png)
+![Data-Markers_img5](Data-Markers_images/Data-Markers_img5.png)
 
 **LabelTemplate**
 
@@ -226,4 +226,4 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img6.png)
+![Data-Markers_img6](Data-Markers_images/Data-Markers_img6.png)

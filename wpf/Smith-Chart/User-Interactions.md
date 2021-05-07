@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Interactions| ToolTip | SfSmithChart | Wpf | Syncfusion
-description: user interactions
+title: User Interactions in WPF Smith Chart control | Syncfusion
+description: Learn here all about User Interactions support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# User Interaction
+# User Interactions in WPF Smith Chart (SfSmithChart)
 
 ## ToolTip
 
@@ -35,7 +35,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](User-Interactions_images/User-Interactions_img1.png)
+![User-Interactions_img1](User-Interactions_images/User-Interactions_img1.png)
 
 **ToolTipTemplate**
 
@@ -88,4 +88,4 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](User-Interactions_images/User-Interactions_img2.png)
+![User-Interactions_img2](User-Interactions_images/User-Interactions_img2.png)

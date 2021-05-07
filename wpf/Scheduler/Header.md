@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header in WPF Scheduler control | Syncfusion
-description: Learn here all about to customize header height, date format and appearance of Syncfusion WPF Scheduler (SfScheduler) control and more. 
+description: Learn here all about Header support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug

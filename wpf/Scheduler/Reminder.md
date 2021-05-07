@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appointment Reminder in WPF Scheduler control | Syncfusion
-description: Learn here all about to display the appointments reminders alert in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Reminder in WPF Scheduler control | Syncfusion
+description: Learn here all about Reminder support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: WPF
 control: SfScheduler
 documentation: ug

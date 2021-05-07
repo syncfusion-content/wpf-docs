@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers | SfSparkline | wpf | Syncfusion
-description: markers
+title: Markers in WPF Sparkline control | Syncfusion
+description: Learn here all about Markers support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Markers
+# Markers in WPF Sparkline (SfSparkline)
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.
 
@@ -46,4 +46,4 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 Following is the snapshot for markers,
 
-![](Markers_images/Markers_img1.png)
+![Markers_img1](Markers_images/Markers_img1.png)

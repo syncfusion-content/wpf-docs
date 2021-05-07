@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with wpf SfSpellChecker control | Syncfusion
-description: This section describes about how to create a WPF SfSpellChecker and how to spell check the text using it.
+title: Getting Started with WPF SpellChecker control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF SpellChecker (SfSpellChecker) control, its elements and more.
 platform: WPF
 control: SfSpellChecker
 documentation: ug
 --- 
 
-# Getting Started with WPF SfSpellChecker
+# Getting Started with WPF SpellChecker (SfSpellChecker)
 
 This section explains how to create a WPF [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) and spell check the text.
 

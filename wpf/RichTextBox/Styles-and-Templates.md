@@ -1,12 +1,12 @@
 ---
-title: Styles and Templates
-description: styles and templates
+title: Styles and Templates in WPF RichTextBox control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: styles-and-templates, custom-style
 ---
-# Styles and Templates
+# Styles and Templates in WPF RichTextBox (SfRichTextBoxAdv)
 
 This section describes the styles and templates for the SfRichTextBoxAdv control. The Template defines the structure of the SfRichTextBoxAdv control and the Style defines its visual appearance. You can modify the default Control template to define a unique appearance for the control.
 The following XAML shows the default style and template for the SfRichTextBoxAdv control.

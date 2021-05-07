@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the marker for specific data point | SfSparkline | wpf | Syncfusion
-description: customize the marker for specific data point
+description: customize the marker for specific data point in Syncfusion WPF SfSparkline control, its elements and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
@@ -64,4 +64,4 @@ We can customize the marker for specific data point with custom template for Lin
 
 Following is the snapshot for custom marker position,
 
-![](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)
+![Customize-the-marker-for-specific-data-point_img1](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)

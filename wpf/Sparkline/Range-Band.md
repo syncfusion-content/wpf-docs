@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Band | SfSparkline | wpf | Syncfusion
-description: range band
+title: Range Band in WPF Sparkline control | Syncfusion
+description: Learn here all about Range Band support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Range Band
+# Range Band in WPF Sparkline (SfSparkline)
 
 Range band feature used to highlight the particular mentioned range along Y axis.
 
@@ -52,4 +52,4 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 Following is the snapshot for range band,
 
-![](Range-Band_images/Range-Band_img1.png)
+![Range-Band_img1](Range-Band_images/Range-Band_img1.png)

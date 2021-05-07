@@ -1,12 +1,12 @@
 ---
-title: MVVM
-description: mvvm
+title: MVVM in WPF RichTextBox control | Syncfusion
+description: Learn here all about MVVM support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: mvvm
 ---
-# MVVM
+# MVVM in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv control can be used with Model-View-View Model (MVVM) pattern. This section will demonstrate how to use the SfRichTextBoxAdv control with MVVM pattern.
 

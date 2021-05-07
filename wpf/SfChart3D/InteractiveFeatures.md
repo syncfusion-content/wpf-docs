@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF 3D Charts| SfChart3D | Wpf | Syncfusion
-description: Explains the interactive options such as dynamic rotation, segment selection, and dynamic segment explode for circular series in WPF Chart (SfChart3D)
+title: Interactive Features in WPF SfChart3D control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion WPF SfChart3D control and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Interactive Features in WPF 3D Charts (SfChart3D)
+# Interactive Features in WPF SfChart3D
 
 3D charts provide interactive features such as dynamic rotation, segment selection, and dynamic segment explode for circular series.
 

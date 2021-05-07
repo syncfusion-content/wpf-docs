@@ -1,12 +1,12 @@
 ---
-title: Layout Types
-description: layout types
+title: Layout Types in WPF RichTextBox control | Syncfusion
+description: Learn here all about Layout Types support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: layout-types
 ---
-# Layout Types
+# Layout Types in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv control allows you to choose between the following layout types.
 
@@ -45,7 +45,7 @@ richTextBoxAdv.LayoutType = LayoutType.Pages
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img1.jpeg)
+![Layout-Types_img1](Layout-Types_images/Layout-Types_img1.jpeg)
 
 ## Continuous
 
@@ -75,7 +75,7 @@ richTextBoxAdv.LayoutType = LayoutType.Continuous
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img2.jpeg)
+![Layout-Types_img2](Layout-Types_images/Layout-Types_img2.jpeg)
 
 ## Block
 
@@ -105,5 +105,5 @@ richTextBoxAdv.LayoutType = LayoutType.Block
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img3.jpeg)
+![Layout-Types_img3](Layout-Types_images/Layout-Types_img3.jpeg)
 

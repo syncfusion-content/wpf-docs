@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Track ball | SfSparkline | wpf | Syncfusion
-description: track ball
+title: Track ball in WPF Sparkline control | Syncfusion
+description: Learn here all about Track ball support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Track ball
+# Track ball in WPF Sparkline (SfSparkline)
 
 This is used to indicate the value point on mouse move and this feature is applicable for line and area sparkline.
 
@@ -46,7 +46,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 Following is the snapshot for track ball,
 
-![](Track-ball_images/Track-ball_img1.png)
+![Track-ball_img1](Track-ball_images/Track-ball_img1.png)
 
 **Customizing TrackBall**
 

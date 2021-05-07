@@ -1,12 +1,12 @@
 ---
-title: Dialogs | WPF RichTextBox | Syncfusion
-description: This section illustrates how to use built-in dialogs of WPF RichTextBox control
+title: Dialogs in WPF RichTextBox control | Syncfusion
+description: Learn here all about Dialogs support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: dialogs
 ---
-# Dialogs
+# Dialogs in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv provides support for the following built-in dialogs similar to Microsoft Word application.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Markers in WPF 3D Charts (SfChart3D) |SfChart3D |Wpf | Syncfusion
-description: This section explains about adornments behavior and its customization properties in WPF Chart (SfChart3D)
+title: Data Markers in WPF SfChart3D control | Syncfusion
+description: Learn about Data Markers support in Syncfusion WPF SfChart3D control and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Data Markers in WPF 3D Charts (SfChart3D)
+# Data Markers in WPF SfChart3D
 
 Adornments (Data Markers) are used to provide information about the data points to the user. Values from data point(x, y) or other custom properties from a data source can be displayed.You can add a shape and label to adorn each data point.
 

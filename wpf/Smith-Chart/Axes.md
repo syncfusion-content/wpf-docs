@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis and its types. 
-description: Axis behavior and its types.
+title: Axes in WPF Smith Chart control | Syncfusion
+description: Learn here all about Axes support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Axes
+# Axes in WPF Smith Chart (SfSmithChart)
 
 Typically, SmithChart  has been used two axes that are used to measure and categorize the data. 
 
@@ -48,7 +48,7 @@ chart.HorizontalAxis.ShowMajorGridlines = false;
 
 {% endtabs %}
 
-![](Axes_images/Axes_img1.png)
+![Axes_img1](Axes_images/Axes_img1.png)
 
 **MajorGridlineStyle**
 
@@ -81,7 +81,7 @@ chart.HorizontalAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 {% endtabs %}
 
-![](Axes_images/Axes_img2.png)
+![Axes_img2](Axes_images/Axes_img2.png)
 
 ### MinorGridlines
 
@@ -110,7 +110,7 @@ chart.HorizontalAxis.ShowMinorGridlines = true;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img3.png)
+![Axes_img3](Axes_images/Axes_img3.png)
 
 **MinorGridlinesCount**
 
@@ -140,7 +140,7 @@ chart.HorizontalAxis.MinorGridlinesCount = 12;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img4.png)
+![Axes_img4](Axes_images/Axes_img4.png)
 
 **MinorGridlineStyle**
 
@@ -174,7 +174,7 @@ chart.HorizontalAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 {% endtabs %}
 
-![](Axes_images/Axes_img5.png)
+![Axes_img5](Axes_images/Axes_img5.png)
 
 ## AxisLine
 
@@ -208,7 +208,7 @@ chart.HorizontalAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img6.png)
+![Axes_img6](Axes_images/Axes_img6.png)
 
 ### LabelPlacement
 
@@ -236,7 +236,7 @@ chart.HorizontalAxis.LabelPlacement = LabelPlacement.Inside;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img7.png)
+![Axes_img7](Axes_images/Axes_img7.png)
 
 ### LabelIntersectAction
 
@@ -264,7 +264,7 @@ chart.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.None;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img8.png)
+![Axes_img8](Axes_images/Axes_img8.png)
 
 ## Radial Axis
 
@@ -297,7 +297,7 @@ chart.RadialAxis.ShowMajorGridlines = false;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img9.png)
+![Axes_img9](Axes_images/Axes_img9.png)
 
 **MajorGridlineStyle**
 
@@ -330,7 +330,7 @@ chart.RadialAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
     
 {% endtabs %}
 
-![](Axes_images/Axes_img10.png)
+![Axes_img10](Axes_images/Axes_img10.png)
 
 ### MinorGridlines
 
@@ -359,7 +359,7 @@ chart.RadialAxis.ShowMinorGridlines = true;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img11.png)
+![Axes_img11](Axes_images/Axes_img11.png)
 
 **MinorGridlinesCount**
 
@@ -389,7 +389,7 @@ chart.RadialAxis.MinorGridlinesCount = 12;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img12.png)
+![Axes_img12](Axes_images/Axes_img12.png)
 
 **MinorGridlineStyle**
 
@@ -423,7 +423,7 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
     
 {% endtabs %}
 
-![](Axes_images/Axes_img13.png)
+![Axes_img13](Axes_images/Axes_img13.png)
 
 ### AxisLine
 
@@ -457,7 +457,7 @@ chart.RadialAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img14.png)
+![Axes_img14](Axes_images/Axes_img14.png)
 
 ### LabelPlacement
 
@@ -485,7 +485,7 @@ chart.RadialAxis.LabelPlacement = LabelPlacement.Inside;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img15.png)
+![Axes_img15](Axes_images/Axes_img15.png)
 
 ### LabelIntersectAction
 
@@ -513,7 +513,7 @@ chart.RadialAxis.LabelIntersectAction = LabelIntersectActions.None;
     
 {% endtabs %}
 
-![](Axes_images/Axes_img16.png)
+![Axes_img16](Axes_images/Axes_img16.png)
 
 ## Events
 
@@ -539,4 +539,4 @@ chart.RadialAxis.LabelCreated += RadialAxis_LabelCreated;
 
 {% endhighlight %}
 
-![](Axes_images/Axes_img17.png)
+![Axes_img17](Axes_images/Axes_img17.png)

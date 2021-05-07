@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Marker in WPF 3D Charts (SfChart3D) | SfChart3D | Wpf | Syncfusion
-description: Learn how to create the 3D charts and their features such as types, axis, data binding, dynamic rotation, interactivity and depth axis.
+title: Data Marker in WPF SfChart3D control | Syncfusion
+description: Learn about Data Marker support in Syncfusion WPF SfChart3D control and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Data Marker in WPF 3D Charts (SfChart3D) 
+# Data Marker in WPF SfChart3D
 
 Data Marker is used to mark the data points with built-in available shapes.
 
