@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Maximizing MDI window in WPF DocumentContainer control | Syncfusion
-description: Learn about Maximizing the MDI window support in Syncfusion WPF DocumentContainer control and more details.
+title: Maximizing MDI window in WPF Tabbed MDI Form control | Syncfusion
+description: Learn here all about Maximizing MDI window support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Maximizing MDI window
+# Maximizing MDI window in WPF Tabbed MDI Form (DocumentContainer)
 
 You can maximize the `MDI` window by setting the [CanMDIMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_CanMDIMaximize) property as `true`. The default value of `CanMDIMaximize` property is `false`.
 

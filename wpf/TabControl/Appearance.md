@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance of the WPF TabControlExt control | Syncfusion
-description: Learn about UI customization, theme support in Syncfusion WPF TabControlExt control and more details about the control features.
+title: Appearance in WPF TabControl control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControlExt
 documentation: ug

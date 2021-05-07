@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Header Image | TaskBar | wpf | Syncfusion
-description: setting header image
+title: Setting Header Image in WPF TaskBar control | Syncfusion
+description: Learn about Setting Header Image support in Syncfusion WPF TaskBar control and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Setting Header Image
+# Setting Header Image in WPF TaskBar
 
 You can set a custom header image for the TaskBarItem. Use the following code snippet to set an image for the header.
 
@@ -57,7 +57,7 @@ You can set a custom header image for the TaskBarItem. Use the following code sn
 {% endhighlight %}
 
 
-![](Setting-Header-Image_images/Setting-Header-Image_img1.jpeg)
+![Setting-Header-Image_img1](Setting-Header-Image_images/Setting-Header-Image_img1.jpeg)
 
 
 

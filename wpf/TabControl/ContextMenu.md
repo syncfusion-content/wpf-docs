@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Contextmenu in WPF TabControlExt | Syncfusion
-description: Learn about tab list menu and tabitem context menu in WPF TabControlExt and how to add custom context menu.
+title: Context menu in WPF TabControl control | Syncfusion
+description: Learn here all about Context menu support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControlExt
 documentation: ug

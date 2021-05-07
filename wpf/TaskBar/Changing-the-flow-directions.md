@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Changing the flow directions | TaskBar | wpf | Syncfusion
-description: changing the flow directions
+title: Changing the flow directions in WPF TaskBar control | Syncfusion
+description: Learn about Changing the flow directions support in Syncfusion WPF TaskBar control and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Changing the flow directions
+# Changing the flow directions in WPF TaskBar
 
 The flow direction for the TaskBar is set through the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_FrameworkElement_FlowDirection) property.
 

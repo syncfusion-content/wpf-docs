@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| DocumentContainer | WPF | Syncfusion
-description: This section describes how to add document container control into wpf application and its basic functionalities.
+title: Getting Started with WPF Tabbed MDI Form control | Syncfusion
+description: Learn here all about getting started with Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Getting Started with WPF DocumentContainer
+# Getting Started with WPF Tabbed MDI Form (DocumentContainer)
 
 This section describes how to add [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) control into wpf application and its basic functionalities.
 

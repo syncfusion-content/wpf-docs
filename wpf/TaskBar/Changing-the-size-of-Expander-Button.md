@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expander Button Size | TaskBar | wpf | Syncfusion
-description: Changing the size of expander button in WPF Taskbar
+title: Changing the size of Expander Button in WPF TaskBar control | Syncfusion
+description: Learn about Changing the size of Expander Button support in Syncfusion WPF TaskBar control and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Changing the size of Expander Button in WPF Taskbar
+# Changing the size of Expander Button in WPF TaskBar
 
 You can change the size of the Expander button in the TaskBar control. This is achieved by using the [ButtonSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_ButtonSizeProperty) attached property, which sets the height of the Expander button in the TaskBar by handling the [SetButtonSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_SetButtonSize_System_Windows_DependencyObject_System_Double_) method.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Related Features | TabSplitter | wpf | Syncfusion
-description: This section gives detailed description on customizing TabSplitter control using layout related features.
+title: Layout Related Features in WPF Tab Splitter control | Syncfusion
+description: Learn about Layout Related Features support in Syncfusion WPF Tab Splitter control and more.
 platform: wpf
 control: TabSplitter
 documentation: ug
 ---
 
-# Layout Related Features
+# Layout Related Features in WPF Tab Splitter
 
 This section illustrates the following Layout-related feature of [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control.
 
