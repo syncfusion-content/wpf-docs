@@ -1384,7 +1384,7 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ### Value change started
 
-Called when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events ([`ValueChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanging), [`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanged) and [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted)) will be followed after this event.
+Called when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events ([`ValueChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanging), [`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanged) and [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted))) will be followed after this event.
 
 The [`ValueChangeStarted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeStarted) event contains the following arguments.
 

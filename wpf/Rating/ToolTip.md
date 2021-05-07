@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WPF Rating control | Syncfusion
-description: Learn here all about ToolTip support in Syncfusion WPF Rating (SfRating) control and more.
+description: Learn here all about ToolTip support in Syncfusion WPF Rating (SfRating) control, its elements and more.
 platform: wpf
 control: SfRating
 documentation: ug

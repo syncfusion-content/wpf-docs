@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icon in WPF Radial Menu control | Syncfusion
-description: Learn here all about Icon support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
+description: Learn here all about Icon support in Syncfusion WPF Radial Menu (SfRadialMenu) control, its elements and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

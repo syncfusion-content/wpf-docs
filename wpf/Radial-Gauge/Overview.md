@@ -32,7 +32,7 @@ The [`Scales`](https://help.syncfusion.com/wpf/sfcirculargauge/scales) contain l
 
 ### Ranges
 
-The [`Ranges`](https://help.syncfusion.com/wpf/sfcirculargauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
+The [`Ranges`](https://help.syncfusion.com/wpf/radial-gauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
 
 ### Pointers
 

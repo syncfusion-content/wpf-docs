@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# WPF Ribbon Overview
+# WPF Ribbon control Overview
 
 The [WPF Ribbon](https://www.syncfusion.com/wpf-controls/ribbon) illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonWindow has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Key tips are provided for access to items present in the ribbon. 
 
