@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asynchronous Data Loading in WPF Pivot Grid control | Syncfusion
-description: Learn about Asynchronous Data Loading support in Syncfusion WPF Pivot Grid control and more.
+description: Learn about Asynchronous Data Loading support in Syncfusion WPF Pivot Grid control, its elements and more details.
 platform: wpf
 control: Pivot grid
 documentation: ug

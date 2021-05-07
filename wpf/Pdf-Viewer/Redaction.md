@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redaction in WPF Pdf Viewer control | Syncfusion
-description: Learn about Redaction support in Syncfusion WPF Pdf Viewer control and more.
+description: Learn about Redaction support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more details.
 platform: wpf
 control: PDF Viewer
 documentation: ug

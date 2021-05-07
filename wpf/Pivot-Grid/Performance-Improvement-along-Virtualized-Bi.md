@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualized Binding (Performance Improvement) in WPF Pivot Grid control | Syncfusion
+title: Virtualized Binding in WPF Pivot Grid control | Syncfusion
 description: Learn about Virtualized Binding (Performance Improvement) support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid

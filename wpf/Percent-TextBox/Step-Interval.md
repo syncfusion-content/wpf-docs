@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Step Interval in WPF Percent TextBox control | Syncfusion
-description: Learn about Step Interval support in Syncfusion WPF Percent TextBox control and more.
+description: Learn about Step Interval support in Syncfusion Essential Studio WPF Percent TextBox control, its elements and more details.
 platform: wpf
 control: PercentTextBox 
 documentation: ug

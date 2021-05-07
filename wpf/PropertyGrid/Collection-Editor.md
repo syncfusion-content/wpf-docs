@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Collection Editor in WPF PropertyGrid control | Syncfusion
-description: Learn about Collection Editor support in Syncfusion WPF PropertyGrid control and more.
+description: Learn about Collection Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

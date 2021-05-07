@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interaction Modes in WPF Pdf Viewer control | Syncfusion
-description: Learn about Interaction Modes support in Syncfusion WPF Pdf Viewer control and more.
+description: Learn about Interaction Modes support in Syncfusion WPF Pdf Viewer control, its elements and more details.
 platform: WPF
 control: PDF Viewer
 documentation: UG

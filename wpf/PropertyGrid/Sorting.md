@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WPF PropertyGrid control | Syncfusion
-description: Learn about Sorting support in Syncfusion WPF PropertyGrid control and more.
+description: Learn about Sorting support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Range Adorner in WPF Percent TextBox control | Syncfusion
-description: Learn about Range Adorner support in Syncfusion WPF Percent TextBox control and more.
+description: Learn about Range Adorner support in Syncfusion Essential Studio WPF Percent TextBox control, its elements and more details.
 platform: wpf
 control: PercentTextBox 
 documentation: ug

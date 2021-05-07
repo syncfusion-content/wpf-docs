@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File Link Annotation in WPF Pdf Viewer control | Syncfusion
-description: Learn about File Link Annotation support in Syncfusion WPF Pdf Viewer control and more.
+description: Learn about File Link Annotation support in Syncfusion WPF Pdf Viewer control, its elements and more details.
 platform: wpf
 control: PDF Viewer
 documentation: ug
