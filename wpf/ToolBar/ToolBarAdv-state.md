@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ToolBarAdv state
-description: Description about ToolBarAdv state for WPF
+title: ToolBarAdv State in WPF ToolBar control | Syncfusion
+description: Learn here all about ToolBarAdv State support in Syncfusion WPF ToolBar (ToolBarAdv) control and more.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
-# ToolBarAdv state
+# ToolBarAdv State in WPF ToolBar (ToolBarAdv)
 
 ToolBarAdv provides different states such as Docking, Floating or Hidden. It can be change using the property `ToolBarState` of the ToolBarManager. 
 
@@ -125,7 +125,7 @@ Grid1.Children.Add(toolBar);
 
 {% endtabs %}
 
-![](ToolBarAdv-state-images/ToolBarAdv-state-img1.jpeg)
+![ToolBarAdv-state-img1](ToolBarAdv-state-images/ToolBarAdv-state-img1.jpeg)
 
 
 ToolBarAdv can be floated only when it is hosted in ToolBarManager.

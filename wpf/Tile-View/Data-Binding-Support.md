@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF TileViewControl | Syncfusion
-description: Learn here about the Data Binding support in Syncfusion WPF TileViewControl and how to bind the properties.
+title: Data Binding in WPF Tile View control | Syncfusion
+description: Learn about Data Binding support in Syncfusion WPF Tile View control and more.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Binding TileViewItems in WPF TileViewControl
+# Data Binding in WPF Tile View
 
 You can add a [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) using data binding in the WPF [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 

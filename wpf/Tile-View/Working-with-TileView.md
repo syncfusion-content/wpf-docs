@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with with WPF TileView control | Syncfusion
-description: Learn here about working of Syncfusion WPF TileView control and more details about the control features.
+title: Working with TileView in WPF Tile View control | Syncfusion
+description: Learn about Working with TileView support in Syncfusion WPF Tile View control and more.
 platform: WPF
 control: TileViewControl
 documentation: ug
 ---
 
-# Working with WPF TileViewControl
+# Working with TileView in WPF Tile View
 
 This section explains different UI customization and common features available in [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html) control.
 
