@@ -34,4 +34,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating read only](images/readOnly.jpg)
+![SfRating read only](images/readOnly.png)

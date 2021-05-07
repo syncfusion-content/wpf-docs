@@ -70,4 +70,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![SfRating tooltip precision](images/toolTipPrecision.jpg)
+![SfRating tooltip precision](images/toolTipPrecision.png)
