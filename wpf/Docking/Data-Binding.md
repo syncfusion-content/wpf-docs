@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | DockingManager | WPF | Syncfusion
-description: Learn how to configure the DockingManager child through ItemsSource 
+title: Data Binding in WPF Docking control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF Docking (DockingManager)
 
 Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> Target or Target -> Source) or bidirectional (Source &lt;-&gt; target). 
 

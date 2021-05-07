@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handle Drill DownUp Process| OLAPCommon | Wpf | Syncfusion
-description: handle drill down/up process
+description: handle drill down/up process in Syncfusion Essential Studio WPF OLAPCommon control, its elements and more details.
 platform: wpf
 control: OLAPCommon
 documentation: ug
@@ -45,7 +45,7 @@ The following screen shot explains sequential diagram for drill/down process:
 
 
 
-![](Handle-Drill-DownUp-Process_images/Handle-Drill-DownUp-Process_img1.png)
+![Handle-Drill-DownUp-Process_img1](Handle-Drill-DownUp-Process_images/Handle-Drill-DownUp-Process_img1.png)
 
 OLAP base sequential diagram
 {:.caption}

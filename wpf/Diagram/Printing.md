@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Print Diagram content as image files | Syncfusion.
-description: How to Print the Diagram with printing customization and explain detaily about the print preview window options?
+title: Printing in WPF Diagram control | Syncfusion
+description: Learn here all about Printing support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Printing and its customization
+# Printing in WPF Diagram (SfDiagram)
 
 SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.PrintingService.html#Syncfusion_UI_Xaml_Diagram_PrintingService_Print().html "PrintingService.Print") method.
 

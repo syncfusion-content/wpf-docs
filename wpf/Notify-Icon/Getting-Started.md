@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | NotifyIcon | Wpf | Syncfusion
-description: This section gives a detailed description of how to implement the NotifyIcon control in a WPF application.
+title: Getting Started with WPF Notify Icon control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Notify Icon control, its elements and more details.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# Getting Started with WPF NotifyIcon
+# Getting Started with WPF Notify Icon
 
 This section provides you an overview of working with [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
 

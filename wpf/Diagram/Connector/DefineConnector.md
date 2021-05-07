@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion diagram supports to connect two points, nodes or ports.
-description: How to draw a connection using two points, nodes, ports, data source, stencil and drawing connectors from Tools.
+title: Connector in WPF Diagram control | Syncfusion
+description: Learn here all about Connector support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector types and creation
+# Connector in WPF Diagram (SfDiagram)
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 

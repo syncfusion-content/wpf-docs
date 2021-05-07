@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF DateTimeEdit | Syncfusion
-description: Learn here about getting started with Syncfusion WPF DateTimeEdit and its basic features and structure.
+title: Getting Started with WPF DateTimePicker control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF DateTimePicker (DateTimeEdit) control, its elements and more.
 platform: WPF
 control: DateTimeEdit
 documentation: ug

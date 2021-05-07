@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion OLAP Architecture
-description: Syncfusion OLAP architecture
+title: Syncfusion OLAP Architecture in WPF OLAP Common control | Syncfusion
+description: Learn about Syncfusion OLAP Architecture support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Syncfusion OLAP Architecture
+# Syncfusion OLAP Architecture in WPF OLAP Common
 
 Syncfusion OLAP architecture allows you to build a full life cycle reporting solution for your enterprise. Here are the important pieces of the architecture:
 
@@ -23,7 +23,7 @@ The following screenshot shows how the Syncfusion OLAP components allow you to b
 
 
 
-![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)
+![Syncfusion-OLAP-Architecture_img1](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)
 
 
 
@@ -40,7 +40,7 @@ Syncfusion OLAP controls communicate to the OLAP cube through the OlapDataManage
 
 
 
-![](OLAP-Base_images/OLAP-Base_img1.png)
+![OLAP-Base_img1](OLAP-Base_images/OLAP-Base_img1.png)
 
 
 
@@ -72,7 +72,7 @@ The OLAP Silverlight base wrapper is a class library, which contains several nam
 
 
 
-![C:/Users/dwarageshmb/Desktop/Doc Images/OlapSilverlight Base/SIlverlight.png](OLAP-Silverlight-Base-Wrapper_images/OLAP-Silverlight-Base-Wrapper_img1.png)
+![OLAP-Silverlight-Base-Wrapper_images1](OLAP-Silverlight-Base-Wrapper_images/OLAP-Silverlight-Base-Wrapper_img1.png)
 
 
 

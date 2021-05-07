@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OLAP Data Manager
-description: OLAP data manager
+title: OlapDataManager in WPF OLAP Common control | Syncfusion
+description: Learn about OlapDataManager support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# OLAP Data Manager
+# OlapDataManager in WPF OLAP Common
 
 OlapDataManager is the most important class in the whole OLAP base. All the information are transferred from the control to OLAP base through this class and this will retain the current state of the base objects. The connection is established in the data provider of the OLAP base, but the information required in establishing the connection is given to the data provider through the OlapDataManager.
 

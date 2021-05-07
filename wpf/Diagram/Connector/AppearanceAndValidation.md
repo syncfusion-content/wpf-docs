@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connector Appearance and Validation | Syncfusion
-description: How to customize the basic appearance of the connectors and its decorators and how to validate the connectors in diagram control
+title: Appearance and Validation in WPF Diagram control | Syncfusion
+description: Learn here all about Appearance and Validation support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector's Appearance and Validation
+# Appearance and Validation in WPF Diagram (SfDiagram)
 
 The source point, target point, and segements path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Replace
-description: Drill replace
+title: Drill Replace in WPF OLAP Common control | Syncfusion
+description: Learn about Drill Replace support in Syncfusion WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
 ---
 
-# Drill Replace
+# Drill Replace in WPF OLAP Common
 
 Drill replace displays only the immediate child members and ancestors on drill-down and drill-up respectively.
 

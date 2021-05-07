@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Create a Diagram Ribbon to interact with the SfDiagram | Syncfusion.
-description: A walk through the usage of the Diagram ribbon and the items present in a Diagram ribbon to interact with the diagram.
+title: Diagram Ribbon in WPF Diagram control | Syncfusion
+description: Learn here all about Diagram Ribbon support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# WPF Diagram Ribbon (SfDiagramRibbon) in the WPF Diagram (SfDiagram)
+# Diagram Ribbon in WPF Diagram (SfDiagram)
 
 The diagram ribbon control is a user interface that hosts a Quick Access Toolbar, Application Menu, and Tabs to provide the most common features and settings for the WPF Diagram. The diagram ribbon control contains the UI elements that allow end-users to load and save diagrams, add diagram items to the canvas, format text within the diagram items, rearrange and recolor shapes, change the canvas size and orientation, and perform a copy and paste operations.
 

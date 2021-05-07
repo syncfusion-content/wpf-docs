@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supports to delete the nodes and connectors at runtime | Syncfusion.
-description: Support to delete the diagram elements such as the nodes and connectors during runtime using built in commands?
+title: Deletion in WPF Diagram control | Syncfusion
+description: Learn here all about Deletion support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

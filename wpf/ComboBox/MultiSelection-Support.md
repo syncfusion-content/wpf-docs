@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MultiSelection Support | wpf | Syncfusion
-description: Learn here about how to select the multiple items in the Syncfusion WPF ComboBoxAdv control and more details.
+title: MultiSelection Support in WPF ComboBox control | Syncfusion
+description: Learn here all about MultiSelection Support in Syncfusion WPF ComboBox (ComboBoxAdv) control, its elements and more.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Multiple Selections in ComboBoxAdv
+# MultiSelection Support in WPF ComboBox (ComboBoxAdv)
 
 This section explains how to select the multiple items and select the items programmatically in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 

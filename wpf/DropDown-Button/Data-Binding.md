@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | Dropdown Button Control | WPF | Syncfusion
-description: This section explores how to create model, view model and bind data to dropdown menu group using XAML data binding.
+title: Data Binding in WPF Dropdown Button control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

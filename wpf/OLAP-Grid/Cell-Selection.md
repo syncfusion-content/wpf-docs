@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Selection| OlapGrid | Wpf | Syncfusion
-description: Support to select grid value cells as in the Microsoft Excel (Excel - like selection) in OLAP Grid control | Syncfusion
+title: Cell Selection in WPF Olap Grid control | Syncfusion
+description: Learn about Cell Selection support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Cell Selection
+# Cell Selection in WPF Olap Grid
 
 The OLAP grid supports Excel-like cell selection, where you can select grid value cells as in the Microsoft Excel. This can be achieved by setting the `AllowSelection` property of the OLAP grid to true.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export to excel in WPF GridControl | Syncfusion
-description: Learn here about how to export the data from Syncfusion WPF GridControl to Excel sheet and its features.
+title: Export to Excel in WPF GridControl | Syncfusion
+description: Learn about Export to Excel support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Export to Excel in Grid
+# Export to Excel in WPF GridControl
 
 This section explains about Exporting to Excel and its features of WPF GridControl
 

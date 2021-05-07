@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource View Gantt Inline Items| Gantt | Wpf | Syncfusion
-description: resource view gantt (inline items)
+title: Resource View Gantt Inline Items in WPF Gantt control | Syncfusion
+description: Learn about Resource View Gantt Inline Items support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Resource View Gantt (Inline Items)
+# Resource View Gantt Inline Items in WPF Gantt
 
 By default, the Gantt chart will display a single node in a row. This helps you to manage the project. When you want to manage the resources in a project, you need multiple nodes in a single row. A Resource view Gantt enables you to manage the resources involved in a project.
 
@@ -112,7 +112,7 @@ The following shows the Resultant output:
 
 
 
-![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)
+![Resource-View-Gantt-Inline-Items_img1](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)
 
 
 
@@ -178,7 +178,7 @@ The following image shows the resultant output:
 
 
 
-![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)
+![Resource-View-Gantt-Inline-Items_img2](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)
 
 
 
@@ -190,7 +190,7 @@ The following is the data structure used to build a Resource view Gantt:
 
 
 
-![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)
+![Resource-View-Gantt-Inline-Items_img3](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)
 
 
 

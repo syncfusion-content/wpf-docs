@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands for Zooming and Panning | SfMap | wpf | Syncfusion
-description: This section describes Zooming and Panning Commands in WPF SfMaps control with simple exercise sample.
+title: Commands in WPF Maps control | Syncfusion
+description: Learn here all about Commands support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Commands for Zooming and Panning
+# Commands in WPF Maps (SfMap)
 
 The Map control contains the following commands:
 

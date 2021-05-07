@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization| GroupBar | Wpf | Syncfusion
-description: localization
+title: Localization in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
 documentation: ug
 ---
 
-# Localization
+# Localization in WPF Navigation Pane (GroupBar)
 
 Localization involves the customization of the application for a specific language. It translates string values according to the specific culture.  In the following table, the language is English and French
 
@@ -42,9 +42,9 @@ GroupbarMItemMoveDown</td><td>
 Sets the string for the context menu item in GroupBar.</td></tr>
 <tr>
 <td colspan = "1">
-{{ '![](Localization_images/Localization_img1.png)' | markdownify}}
+{{ '![Localization_images1](Localization_images/Localization_img1.png)' | markdownify}}
 
-{{ '![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/30.png](Localization_images/Localization_img2.png)' | markdownify}}
+{{ '![Localization_images2](Localization_images/Localization_img2.png)' | markdownify}}
 
 {{ '_ContextMenu(en-US)  ContextMenu(en-US)_' | markdownify }}</td></tr>
 <tr>
@@ -54,9 +54,9 @@ Show more buttonsButtons</td><td>
 Sets the string for the Dropdown Menu Item in GroupBar.</td></tr>
 <tr>
 <td colspan = "1">
-{{ '![](Localization_images/Localization_img3.png)' | markdownify}}
+{{ '![Localization_images3](Localization_images/Localization_img3.png)' | markdownify}}
 
-{{ '![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/32.png](Localization_images/Localization_img4.png)' | markdownify}}
+{{ '![Localization_images4](Localization_images/Localization_img4.png)' | markdownify}}
 
 {{ '_Dropdown Menu Item(en-US)                                                             Dropdown Menu Item(fr-FR)_' | markdownify }}</td></tr>
 </table>

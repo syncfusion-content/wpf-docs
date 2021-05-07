@@ -34,7 +34,7 @@ Our 30-day trial can be downloaded in two ways.
 5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (See the screenshot below.)
 6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio WPF web installer.
  
-   ![Trial and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
+   ![Trial and downloads of Syncfusion Essential Studio](download-images/trial-download.png)
 
 7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio WPF Offline trial installer which is available in EXE and ZIP format.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Animation for GroupBar expansioncollapse| GroupBar | Wpf | Syncfusion
-description: setting animation for groupbar expansion/collapse
+title: Setting Animation for GroupBar expansioncollapse in WPF | Syncfusion
+description: Learn here all about Setting Animation for GroupBar expansioncollapse support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Setting Animation for GroupBar expansion/collapse
+# Setting Animation for GroupBar expansion collapse in WPF
 
 ## Animation Speed
 

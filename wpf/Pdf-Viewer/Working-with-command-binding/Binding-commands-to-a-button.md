@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding PDF Viewer WPF commands to button | Syncfusion
-description: Inclusion of annotations in to the PDF document, performs zooming and performs page navigation through XAML binding.
+title: Working with Commands in WPF Pdf Viewer control | Syncfusion
+description: Learn about Working with Commands support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Binding PDF Viewer commands to button 
+# Working with Commands in WPF Pdf Viewer
 
 ## Magnification operations
 

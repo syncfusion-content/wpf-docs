@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Manipulation for  Syncfusion Essential WPF 
-description: data manipulation
+title: Data Manipulation in WPF Grouping control | Syncfusion
+description: Learn about Data Manipulation support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Data Manipulation
+# Data Manipulation in WPF Grouping
 
 In addition to grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
 
@@ -231,7 +231,7 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img2.png)
+![Data-Manipulation_img2](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 6.You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
@@ -300,7 +300,7 @@ Dim obj As MyObject = CType(rec.GetData(), MyObject)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Data-Manipulation_images/Data-Manipulation_img3.png)
+   ![Data-Manipulation_images3](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 
 Filtering is applied to the data displayed in the console.
@@ -478,7 +478,7 @@ Next rec
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img4.png)
+![Data-Manipulation_img4](Data-Manipulation_images/Data-Manipulation_img4.png)
 
 
 ## Sorting
@@ -642,7 +642,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img5.png)
+![Data-Manipulation_img5](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 
 
@@ -1001,7 +1001,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img7.png)
+![Data-Manipulation_img7](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
 

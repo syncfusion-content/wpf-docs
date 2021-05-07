@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpers in WPF DataGrid control | Syncfusion
-description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Helpers support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

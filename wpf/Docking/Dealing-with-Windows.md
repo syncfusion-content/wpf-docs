@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Windows in WPF Docking Manager | Syncfusion
-description: This section describes how to deal with windows of DockingManager progrmmatically and customize the windows.
+title: Dealing with Windows in WPF Docking control | Syncfusion
+description: Learn here all about Dealing with Windows support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Dealing with Windows
+# Dealing with Windows in WPF Docking (DockingManager)
 
 ## Activating a window
 

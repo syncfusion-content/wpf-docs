@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about DateSelector in WPF SfDatePicker control | Syncfusion
-description: This page explains about how to customize the date selector and select a date in various ways from the WPF SfDatePicker control.
+title: Date Selector in WPF DatePicker control | Syncfusion
+description: Learn here all about Date Selector support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
 platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
 
-# DateSelector in WPF SfDatePicker
+# Date Selector in WPF DatePicker (SfDatePicker)
 
 The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_Value) property. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation Support| MenuAdv | Wpf | Syncfusion
-description: animation support
+title: Animation Support in WPF Menu control | Syncfusion
+description: Learn here all about Animation Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Animation Support
+# Animation Support in WPF Menu (MenuAdv)
 
 MenuAdv supports animation types to open the submenu pop-up. The following animation types are supported by MenuAdv:
 

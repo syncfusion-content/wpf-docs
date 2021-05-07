@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation of Characters | SfDigitalGauge | Wpf | Syncfusion
-description:  This section describes Transformation of Characters support in WPF SfDigitalGauge control with its customization.
+title: Transformation of Characters in WPF Digital Gauge control | Syncfusion
+description: Learn here all about Transformation of Characters support in Syncfusion WPF Digital Gauge (SfDigitalGauge) control and more.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Transformation of Characters support in Digital Gauge (SfDigitalGauge)
+# Transformation of Characters in WPF Digital Gauge (SfDigitalGauge)
 
 The digital characters in the digital gauge can be transformed by setting certain properties in the digital gauge. Two kinds of transformations are done using this property. They are:
 

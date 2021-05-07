@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Grid | WPF | Syncfusion
-description: Learn here about how to manage the rows and columns, drag and drop and selection modes in WPF GridControl.
+title: Managing Rows and Columns in WPF GridControl | Syncfusion
+description: Learn about Managing Rows and Columns support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Managing Rows and Columns
+# Managing Rows and Columns in WPF GridControl
 
 This section explains about Managing the rows and columns of WPF GridControl.
 

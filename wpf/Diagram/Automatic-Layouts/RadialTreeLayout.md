@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Layout nodes and connectors in an organized structure
-description: The SfDiagram Control provides the ability to automatically arrange nodes using one of the predefined layouts. 
+title: Radial-Tree layout in WPF Diagram control | Syncfusion
+description: Learn here all about Radial-Tree layout support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Radial-Tree layout in WPF Diagram
+# Radial-Tree layout in WPF Diagram (SfDiagram)
 
 The Radial-Tree layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes.  
 

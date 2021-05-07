@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DateTimeEdit Localization | Syncfusion
-description: DateTimeEdit control provides localization support to translate the application resources into different language for the specific cultures.
+title: Localization in WPF DateTimePicker control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# Localizing WPF DateTimePicker (DateTimeEdit)
+# Localization in WPF DateTimePicker (DateTimeEdit)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) after `InitializeComponent` method. 
 

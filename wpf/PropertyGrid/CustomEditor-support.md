@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CustomEditor support in WPF PropertyGrid control | Syncfusion
-description: Learn about CustomEditor for the Properties of selected object in Syncfusion WPF PropertyGrid control and more details.
+title: Custom Editor in WPF PropertyGrid control | Syncfusion
+description: Learn about Custom Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

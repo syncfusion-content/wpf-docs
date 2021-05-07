@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the Group and UnGroup commands.
-description: The Grouping commands are used to group or ungroup the selected diagramming objects (node or connector) in the diagram page.
+title: Grouping Commands in WPF Diagram control | Syncfusion
+description: Learn here all about Grouping Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Grouping commands in WPF Diagram(SfDiagram)
+# Grouping Commands in WPF Diagram (SfDiagram)
 
 The Grouping commands are used to group or ungroup the selected diagramming objects such as node and connector in the diagram.
 

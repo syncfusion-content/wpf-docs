@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the sizing functionalities Sizing commands.
-description: Sizing commands are used to resize all selected object based on width, height, and size of the reference object (FirstSelectedItem). 
+title: Sizing Commands in WPF Diagram control | Syncfusion
+description: Learn here all about Sizing Commands support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Sizing commands in WPF Diagram(SfDiagram)
+# Sizing Commands in WPF Diagram (SfDiagram)
 
 Sizing commands are used to resize all selected object based on width, height, and size of the reference object (FirstSelectedItem).
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation Pane in GroupBar| GroupBar | Wpf | Syncfusion
-description: navigation pane in groupbar
+title: Navigation Pane in GroupBar in WPF Navigation Pane | Syncfusion
+description: Learn here all about GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control, its elements and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Navigation Pane in GroupBar
+# Navigation Pane in GroupBar in WPF Navigation Pane (GroupBar)
 
 Resizing the Navigation Pane Pop-up
 

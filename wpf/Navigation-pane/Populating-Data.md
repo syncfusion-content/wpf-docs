@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Data| GroupBar | Wpf | Syncfusion
-description: populating data
+title: Populating-Data in WPF Navigation Pane control | Syncfusion
+description: Learn here all about Populating-Data support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# Populating Data
+# Populating-Data in WPF Navigation Pane (GroupBar)
 
 Data can be populated in the GroupBar control thought XAML, C#, or XML. The GroupBar control also supports binding to objects. The following sections describe how to implement these different forms of data population.
 
@@ -107,7 +107,7 @@ This will generate the following GroupBar control.
 
 
 
-![](Populating-Data_images/Populating-Data_img1.png)
+![Populating-Data_img1](Populating-Data_images/Populating-Data_img1.png)
 
 
 

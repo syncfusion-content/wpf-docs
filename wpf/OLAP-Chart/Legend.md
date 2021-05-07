@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | OLAP Chart | Syncfusion
-description: Information about legends which are used to display the name of data series defined in OLAP Chart control.
+title: Legend in WPF Olap Chart control | Syncfusion
+description: Learn about Legend support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Legend
+# Legend in WPF Olap Chart
 
 Legends are used to display the name of data series. The chart legend can be added to an OLAP chart by adding the chart legend of the chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explains how to add a legend to an OLAP chart.
 

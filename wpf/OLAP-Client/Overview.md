@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of OLAP Client Control for WPF | Syncfusion
-description: The olap client control is used to visualize the multi-dimensional data from OLAP data source in graphical and tabular formats.
+title: About WPF Olap Client control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# OLAP Client
+# WPF Olap Client Overview
 
 The OLAP client control for WPF supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPI (key performance indicators) in a cube format. You can visualize the results in graphical and tabular formats (chart and grid). The OLAP client control is also used to create and edit a report on-the-fly that is stored for later use.
 

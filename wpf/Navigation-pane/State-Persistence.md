@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence| GroupBar | Wpf | Syncfusion
-description: state persistence
+title: State Persistence in WPF Navigation Pane control | Syncfusion
+description: Learn here all about State Persistence support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
-control: GroupBar
+control: Navigation Pane
 documentation: ug
 ---
 
-# State Persistence
+# State Persistence in WPF Navigation Pane (GroupBar)
 
 The bar state can be persisted in the GroupBar control using the bar state methods available. You can set three different state persistence in the GroupBar. The three state persistence are as follows.
 
