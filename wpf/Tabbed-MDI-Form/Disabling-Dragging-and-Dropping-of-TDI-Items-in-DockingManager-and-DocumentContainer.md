@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer in WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
+title: Disabling Dragging and Dropping in Tabbed MDI Form | Syncfusion
+description: Learn here all about Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer support in Syncfusion WPF Tabbed MDI Form and more.
 platform: wpf
-control: DocumentContainer
+control: Tabbed MDI Form
 documentation: ug
 ---
 
-# Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer in WPF Tabbed MDI Form (DocumentContainer)
+# Disabling Dragging and Dropping in Tabbed MDI Form control
+
+This page explains Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer in WPF Tabbed MDI Form (DocumentContainer) and more details.
+
+## Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer in WPF Tabbed MDI Form (DocumentContainer)
 
  You can disable the dragging and dropping of TDI items in DocumentContainer and DockingManager by setting the [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property value as `false`. By default, [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_IsTDIDragDropEnabled) property value is `true`.
 

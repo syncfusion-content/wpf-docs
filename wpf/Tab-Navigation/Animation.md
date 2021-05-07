@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation in WPF Tab Navigation control | Syncfusion
-description: Learn about Animation support in Syncfusion WPF Tab Navigation control and more.
+description: Learn about Animation support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
 platform: wpf
 control: TabNavigation
 documentation: ug

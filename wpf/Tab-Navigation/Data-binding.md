@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in WPF Tab Navigation control | Syncfusion
-description: Learn about Data binding support in Syncfusion WPF Tab Navigation control and more.
+description: Learn about Data binding support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
 platform: WPF
 control: TabNavigation
 documentation: ug
