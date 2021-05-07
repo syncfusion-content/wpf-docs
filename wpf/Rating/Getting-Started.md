@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfRating | wpf | Syncfusion
-description: This section gives the detailed description on getting started with the SfRating and its basic features.
+title: Getting Started with WPF Rating control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Rating (SfRating) control, its elements and more details.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Getting Started of SfRating
+# Getting Started with WPF Rating (SfRating)
 
 This section explains how to configure the [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 

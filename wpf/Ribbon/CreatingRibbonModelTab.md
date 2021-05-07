@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating Ribbon ModalTab in Syncfusion Ribbon control
-description: This section briefly describes the steps involved in creating Ribbon ModalTab in Syncfusion Ribbon control.
+title: Ribbon ModelTab in WPF Ribbon control | Syncfusion
+description: Learn about Ribbon ModelTab support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Creating Ribbon Model Tab
+# Ribbon ModelTab in WPF Ribbon
 
 Modal Tab in Ribbon Control are used to display a collection of commands other than the commands which are available in the core tabs. At this point, the core tab gets disabled.
 

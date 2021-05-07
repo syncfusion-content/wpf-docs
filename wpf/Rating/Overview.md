@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfRating | wpf | Syncfusion
-description: This section describes the overview and key features provided on the WPF platform in the Rating control
+title: About WPF Rating control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Rating (SfRating) control, its elements and more details.
 platform: wpf
 control: Rating
 documentation: ug

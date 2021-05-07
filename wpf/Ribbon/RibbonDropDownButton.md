@@ -1,12 +1,12 @@
 ---
 layout: post
-title: RibbonDropDownButton in Syncfusion Ribbon control
-description: This section briefly describes the functionalities of RibbonDropDownButton in Syncfusion Ribbon control
+title: RibbonDropDownButton in WPF Ribbon control | Syncfusion
+description: Learn about RibbonDropDownButton support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonDropDownButton
+# RibbonDropDownButton in WPF Ribbon
 
 DropDownButton appears like normal button that contains a drop arrow. It displays some items, while click on it. It accepts `DropDownMenuItem` as its children.
 

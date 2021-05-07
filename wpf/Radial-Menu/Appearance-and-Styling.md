@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling | SfRadialMenu  | wpf | Syncfusion
-description: appearance and styling 
+title: Appearance and Styling in WPF Radial Menu control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
@@ -35,7 +35,7 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance-and-Styling_img1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
@@ -52,7 +52,7 @@ RimBackground property used to fill the outer rim (outer circle).
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Appearance-and-Styling_img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -76,7 +76,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Appearance-and-Styling_img3](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 ##RimInactiveBrush
@@ -102,7 +102,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
+![Appearance-and-Styling_img7](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 ## RimHoverBrush
 
@@ -119,7 +119,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Appearance-and-Styling_img4](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 ## IsExpanderVisible
 
@@ -147,7 +147,7 @@ Expander arrow in the OuterRim of `SfRadialMenu` visibility can be changed by `I
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
+![Appearance-and-Styling_img8](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 ## RimRadiusFactor
 
@@ -162,7 +162,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![Appearance-and-Styling_img5](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 
@@ -227,7 +227,7 @@ Each `SfRadialMenuItem` can be set a different background color using `MenuBackg
 
 {% endtabs %}
 
-![](menu-item-customization-images/menubackground.png)
+![menubackground](menu-item-customization-images/menubackground.png)
 
 ## MenuMouseOverBackgroundColor
 
@@ -258,7 +258,7 @@ Each SfRadialMenuItem can be set with a different background color on mouse over
 
 {%endhighlight%}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![Appearance-and-Styling_img6](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
 

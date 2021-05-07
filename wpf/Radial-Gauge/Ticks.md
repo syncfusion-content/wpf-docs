@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks | SfCircularGauge | Wpf | Syncfusion
-description: This section describes Ticks customization, MajorTickSetting, MinorTickSetting, Setting position for tick, Setting shape for tick in WPF platform.
+title: Ticks in WPF Radial Gauge control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# CircularScale Ticks customization
+# Ticks in WPF Radial Gauge (SfCircularGauge)
 
 Ticks help you identify the gauge’s data value by marking the gauge scale in regular increments.
 

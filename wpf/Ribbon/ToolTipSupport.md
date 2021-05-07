@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ToolTip support in Syncfusion Ribbon control
-description: This section briefly describes the functionalities of Tool Tip support in Syncfusion's Ribbon control for WPF.
+title: ToolTip in WPF Ribbon control | Syncfusion
+description: Learn about ToolTip support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# UI for ToolTip in WPF Ribbon
+# ToolTip in WPF Ribbon
 
 Tooltip is used to display small information about the specific element while hovering mouse on it and it is implemented as like in MS Outlook. 
 

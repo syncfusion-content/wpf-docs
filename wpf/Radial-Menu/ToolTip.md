@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip | SfRadialMenu  | wpf | Syncfusion
-description: tooltip 
+title: ToolTip in WPF Radial Menu control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in WPF Radial Menu (SfRadialMenu)
 
 Tooltip support available for the radial menu items. This will show when mouse over the corresponding item. 
 
@@ -29,7 +29,7 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 
 {%endhighlight%}
 
-![](Concepts_images/Concepts_img6.png)
+![Concepts_img6](Concepts_images/Concepts_img6.png)
 
 
 

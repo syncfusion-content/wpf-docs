@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonRadioButton in Syncfusion Ribbon control
-description: This section briefly describes the functionalities of RibbonRadioButton in Syncfusion Ribbon control
+title: RibbonRadioButton in WPF Ribbon control | Syncfusion
+description: Learn about RibbonRadioButton support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug

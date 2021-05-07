@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF SfRadialSlider control | Syncfusion
-description: Learn about styling, theme support in Syncfusion WPF SfRadialSlider control and more details about the control features.
+title: Appearance in WPF Radial Slider control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF Radial Slider (SfRadialSlider) control and more.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
 ---
 
-# Appearance in WPF SfRadialSlider
+# Appearance in WPF Radial Slider (SfRadialSlider)
 
 This section explains different styling, theming options available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 

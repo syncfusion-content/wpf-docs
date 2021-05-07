@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Report Designer | WPF | Syncfusion
-description: WPF Report Designer is used to design SSR, RDL, and RDLC reports using parameter, drill through, sub report, nested region with sort and filter.
+title: About WPF Report Designer control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Report Designer control, its elements and more details.
 platform: wpf
 control: Report Designer
 documentation: ug
 ---
 
-# Overview in Essential Report Designer
+# WPF Report Designer Overview
 
 The Essential Report Designer helps you design and easily organize the data from a database. With the Report Designer, you can quickly build the needed reports and display the data in both tabular and visualization formats.
 

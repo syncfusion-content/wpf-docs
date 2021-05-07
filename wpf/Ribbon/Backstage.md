@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Backstage | WindowsForms | Syncfusion
-description: This section briefly describes the functionalities of RibbonComboBox in Syncfusion Ribbon control for WPF.
+title: Backstage in WPF Ribbon control | Syncfusion
+description: Learn about Backstage support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonButton in Syncfusion Ribbon control
-description: This section briefly describes the various functionalities in RibbonButton in Syncfusion Ribbon control.
+title: RibbonButton in WPF Ribbon control | Syncfusion
+description: Learn about RibbonButton support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug

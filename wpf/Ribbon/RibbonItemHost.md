@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonItemHost in Syncfusion Ribbon control
-description: The RibbonItemHost control and its functionalities in the Syncfusion WPF Ribbon control are briefly explained in this section.
+title: RibbonItemHost in WPF Ribbon control | Syncfusion
+description: Learn about RibbonItemHost support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug

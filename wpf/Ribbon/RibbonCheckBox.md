@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonCheckBox in Syncfusion Ribbon control
-description: This section deals with explain about the RibbonCheckBox support in Syncfusion Ribbon control on WPF platform
+title: RibbonCheckBox in WPF Ribbon control | Syncfusion
+description: Learn about RibbonCheckBox support in Syncfusion WPF Ribbon control and more.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip | SfRating | wpf | Syncfusion
-description: tooltip
+title: ToolTip in WPF Rating control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WPF Rating (SfRating) control and more.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Tooltip
+# ToolTip in WPF Rating (SfRating)
 
 Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the WPF SfRating control, tooltip shows the data of `Value` property. It will be displayed when the mouse is hovered over the rating items, and it will be disappeared when the mouse is moved from the rating items. The tooltip is enabled or disabled using the `ShowToolTip` property. The default value of this property is true.
 

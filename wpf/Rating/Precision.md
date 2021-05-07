@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Precision | SfRating | wpf | Syncfusion
-description: precision
+title: Precision in WPF Rating control | Syncfusion
+description: Learn here all about Precision support in Syncfusion WPF Rating (SfRating) control and more.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Precision
+# Precision in WPF Rating (SfRating)
 
 The precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. By default, the precision mode of the SfRating control is set to `Standard`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with with WPF SfRadialSlider control | Syncfusion
-description: Learn here about working of Syncfusion WPF SfRadialSlider control and more details about the control features.
+title: Working With RadialSlider in WPF Radial Slider control | Syncfusion
+description: Learn here all about Working With RadialSlider support in Syncfusion WPF Radial Slider (SfRadialSlider) control and more.
 platform: WPF
 control: SfRadialSlider
 documentation: ug
 ---
 
-# Working with WPF SfRadialSlider
+# Working With RadialSlider in WPF Radial Slider (SfRadialSlider)
 
 This section explains different UI customization and common features available in [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) control.
 

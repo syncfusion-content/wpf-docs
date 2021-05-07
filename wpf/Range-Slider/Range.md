@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range | SfRangeSlider | wpf | Syncfusion
-description: This section explains how to set the starting range, the end range and the drag range of the Syncfusion WPF SfRangeSlider.
+title: Range in WPF Range Slider control | Syncfusion
+description: Learn here all about Range support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Range in WPF RangeSlider(SfRangeSlider)
+# Range in WPF Range Slider (SfRangeSlider)
 
 The [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control provides support to select the range of value using two thumbs.  
 
