@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF ReportWriter control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF ReportWriter control, its elements and more details.
+description: Learn here all about introduction of Syncfusion Essential Studio WPF ReportWriter control, its elements and more.
 platform: wpf
 control: ReportWriter
 documentation: ug

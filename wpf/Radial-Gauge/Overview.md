@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Radial Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug

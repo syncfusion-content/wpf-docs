@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Support in WPF Range Slider control | Syncfusion
-description: Learn here all about Label Support support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
+description: Learn here all about Label Support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

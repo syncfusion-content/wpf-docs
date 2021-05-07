@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Radial Menu control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Radial Menu (SfRadialMenu) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion WPF Radial Menu (SfRadialMenu) control, its elements and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

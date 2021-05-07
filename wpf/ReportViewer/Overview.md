@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF ReportViewer control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF ReportViewer control, its elements and more details.
+description: Learn here all about introduction of Syncfusion Essential Studio WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
 documentation: ug

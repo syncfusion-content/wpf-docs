@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Radial Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Radial Slider (SfRadialSlider) control, its elements and more details.
+description: Learn here all about introduction of Syncfusion WPF Radial Slider (SfRadialSlider) control, its elements and more.
 platform: wpf
 control: SfRadialSlider
 documentation: ug

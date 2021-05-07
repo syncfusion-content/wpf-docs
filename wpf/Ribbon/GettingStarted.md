@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Ribbon control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio WPF Ribbon control, its elements and more details.
+description: Learn here about getting started with Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
