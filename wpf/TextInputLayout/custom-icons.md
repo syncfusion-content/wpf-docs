@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Syncfusion TextInputLayout custom icons.
-description: This section describes how to add custom icons for leading and trailing view in Syncfusion TextInputLayout.
+title: Custom Icons in WPF TextInputLayout control | Syncfusion
+description: Learn here all about Custom Icons support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Adding custom icons
+# Custom Icons in WPF TextInputLayout (SfTextInputLayout)
 
 Any custom icons can be added to the leading edge or the trailing edge of the input view in the text input layout control. Events and commands linked to custom icons should be handled at the application level.
 

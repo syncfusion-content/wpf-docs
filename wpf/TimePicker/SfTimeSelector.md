@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about TimeSelector in WPF SfTimePicker control | Syncfusion
-description: This page explains about how to customize the time selector and select a time in various ways from the WPF SfTimePicker control.
+title: Time Selector in WPF TimePicker control | Syncfusion
+description: Learn here all about Time Selector support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
 platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
-# TimeSelector in WPF SfTimePicker
+# Time Selector in WPF TimePicker (SfTimePicker)
 
 The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for select the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) property. 
 

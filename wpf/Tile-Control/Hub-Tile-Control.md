@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hub Tile  | SfHubTile | WPF | Syncfusion
-description: This section briefly demonstrates how to customize the hub tile control and its supporting features.
+title: Hub Tile in WPF Tile Control | Syncfusion
+description: Learn about Hub Tile support in Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfHubTile
 documentation: ug
 ---
 
-# WPF Hub Tile control
+# Hub Tile in WPF Tile Control
 
 The Hub Tile control supports the tile feature similar to the live tile feature of Windows Desktop and Windows Phone. This section explains about the supporting features of Hub Tile control.
 

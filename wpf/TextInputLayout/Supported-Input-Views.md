@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported input views in the Syncfusion SfTexInputLayout
-description: This section describes the supported input views in the Syncfusion SfTextInputLayout control in WPF.
+title: Supported Input Views in WPF TextInputLayout control | Syncfusion
+description: Learn here all about Supported Input Views support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Supported input views
+# Supported Input Views in WPF TextInputLayout (SfTextInputLayout)
 
 Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, the [InputView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.SfTextInputLayout.html#Syncfusion_UI_Xaml_TextInputLayout_SfTextInputLayout_InputView) property is applied with the ContentPropertyAttribute. The [SfTextInputLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TextInputLayout.html) has the following controls as the supported input views.
 

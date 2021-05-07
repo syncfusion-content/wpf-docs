@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF Fluent Theme | Fluent Light & Dark Themes for WPF | Syncfusion
-description: Learn how to apply fluent theme for WPF Controls and Syncfusion Controls. Fluent Light and Fluent Dark themes support along with reveal animations.
+title: Fluent Theme in WPF Themes control | Syncfusion
+description: Learn here all about Fluent Theme support in Syncfusion WPF Themes (Themes and Appearance) control and more.
 platform: wpf
 control: Themes
 documentation: ug
 ---
 
-# Getting Started with WPF Fluent Theme
+# Fluent Theme in WPF Themes (Themes and Appearance)
 
 [Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual) and acrylic effect for windows in WPF application. Below theme variants are supported,
 

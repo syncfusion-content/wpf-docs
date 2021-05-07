@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TileView item Header in WPF TileViewControl | Syncfusion
-description: Learn here about how to add the tile view item header into Syncfusion WPF TileViewControl and add image to the header.
+title: TileViewItem Header in WPF Tile View control | Syncfusion
+description: Learn about TileViewItem Header support in Syncfusion Essential Studio WPF Tile View control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# TileViewItem header in WPF TileViewControl
+# TileViewItem Header in WPF Tile View
 
 This section explains how to set header text and UI customization of the `TileViewItem` header in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 

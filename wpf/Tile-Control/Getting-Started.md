@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Tile | WPF | Syncfusion
-description: This section briefly describes how to add the SfHubTile and SfPulsingTile controls in the application.
+title: Getting Started with WPF Tile Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfHubTile
 documentation: ug
 ---
 
-# Getting Started with Hub Tile and Pulsing Tile
+# Getting Started with WPF Tile Control
 
 This section gives an overview for working with the Hub Tile and Pulsing Tile controls.
 
