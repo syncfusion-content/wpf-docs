@@ -14,7 +14,7 @@ Syncfusion provides patch installer for major version or service pack version, e
 
 ## Installing the Patch installer
 
-The following procedure illustrates how to install a patch.
+The steps below show how to install a patch.
 
 
 I> Before installing the patch, ensure that corresponding Essential Studio version platform has been installed in your machine.
