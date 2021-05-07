@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items | SfRadialMenu | wpf | Syncfusion
-description: populating items 
+title: Populating Items in WPF Radial Menu control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Populating Items 
+# Populating Items in WPF Radial Menu (SfRadialMenu)
 
 ## Items Source  
 
@@ -102,7 +102,7 @@ This will populate the RadialMenu as shown in the image below.
 
 
 
-![](Concepts_images/Concepts_img1.png)
+![Concepts_img1](Concepts_images/Concepts_img1.png)
 
 
 
@@ -127,7 +127,7 @@ DisplayMemberPath="Name"
 
 {%endhighlight%}
 
-![](Concepts_images/Concepts_img2.png)
+![Concepts_img2](Concepts_images/Concepts_img2.png)
 
 
 
@@ -182,7 +182,7 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 {%endhighlight%}
 
-![](Concepts_images/Concepts_img3.png)
+![Concepts_img3](Concepts_images/Concepts_img3.png)
 
 
 

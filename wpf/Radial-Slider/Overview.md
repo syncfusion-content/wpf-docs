@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Radial Slider  | WPF | Syncfusion
-description: WPF Radial Slider or CircularSlider is a slider control. It provides intuitive touch interface for selecting a numeric value on a circular display.
+title: About WPF Radial Slider control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Radial Slider (SfRadialSlider) control, its elements and more.
 platform: wpf
 control: SfRadialSlider
 documentation: ug
 ---
 
-# WPF SfRadialSlider Overview  
+# WPF Radial Slider (SfRadialSlider) Overview
 
 The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) provides an optimized interface for selecting a numeric value within the minimum and maximum range in the circular track.
 

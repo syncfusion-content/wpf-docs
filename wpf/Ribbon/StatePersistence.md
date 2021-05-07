@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence support in Syncfusion Ribbon control
-description: This section briefly describes the functionalities of State Persistence support in Syncfusion Ribbon control
+title: Serialization and Deserialization in WPF Ribbon control | Syncfusion
+description: Learn about Serialization and Deserialization support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# State Persistence in WPF Ribbon
+# Serialization and Deserialization in WPF Ribbon
 
 State persistence is a combined process of serialization and deserialization. Serialization is the process of converting the state of the object to the format in which it can be stored as a file in the memory. Deserialization is a complement process of serialization that converts into the object from the stored state information.
 

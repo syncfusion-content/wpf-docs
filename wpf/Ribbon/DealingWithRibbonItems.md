@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Dealing with Ribbon Items in WPF Ribbon control | Syncfusion
-description: This topic deal with arranging Ribbon items, changing size of item, adding LaunchButton to RibbonBar
+description: Learn about Dealing with Ribbon Items support in Syncfusion WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Arranging Ribbon items using ButtonPanel
+# Dealing with Ribbon Items in WPF Ribbon
 
 Button Panel represents a panel control that can display horizontal row of Ribbon Items in a single border. It is used to manage the place for the controls.
 

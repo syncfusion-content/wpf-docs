@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Range Slider | WPF | Syncfusion
-description: WPF Range Slider control allows users to select a range of values between the minimum and maximum. It supports horizontal and vertical orientation.
+title: About WPF Range Slider control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# WPF RangeSlider(SfRangeSlider) Overview 
+# WPF Range Slider (SfRangeSlider) Overview
 
 [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) control allows the value range to be selected within the defined minimum and maximum limit. The range can be selected by moving the Thumb control along a track. In terms of appearance, this control is highly customizable and offers many options such as orientation, selection range, custom label support, touch support, snap to tick, tick placement, tooltip support etc.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Label Support | SfRangeSlider | wpf | Syncfusion
-description: label support for the Syncfusion wpf range slider controls provide customization for the values which used in the slider.
+title: Label Support in WPF Range Slider control | Syncfusion
+description: Learn here all about Label Support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Label Support in WPF RangeSlider(SfRangeSlider)
+# Label Support in WPF Range Slider (SfRangeSlider)
 
 This feature allows the display of labels for custom values given in the collection of CustomLabels when the ShowCustomLabels property is set to true. When ShowValueLabels is set to true, it also displays labels for all the tick values.
 

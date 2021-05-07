@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Report Viewer | WPF | Syncfusion
-description: WPF Report Viewer is a .NET reporting tool and it displays SSRS, RDL, and RDLC reports containing parameters, tables, charts, and more.
+title: About WPF ReportViewer control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
 documentation: ug
 ---
 
-# Overview
+# WPF ReportViewer Overview
 
 Essential ReportViewer is a rendering component to display reports defined in the Microsoft’s RDL format (2008 or 2008 R2) on both WPF and Silverlight applications. By using the ReportViewer, you can display tabular, graphical or free-form reports that make use of relational, multi-dimensional, XML and object data source.  It supports both Server and Client reports.
 

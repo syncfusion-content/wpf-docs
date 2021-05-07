@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SimpleMenuButton in Syncfusion Ribbon control
-description: This section briefly describes the various functionalities in SimpleMenuButton in Syncfusion Ribbon control.
+title: SimpleMenuButton in WPF Ribbon control | Syncfusion
+description: Learn about SimpleMenuButton support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges| Circular Gauge | WPF | Syncfusion
-description: Ranges in WPF Circular Gauge are used to specify or group the scale values. It specifies a start value and end value in the CircularGauge within a scale.
+title: Ranges in WPF Radial Gauge control | Syncfusion
+description: Learn here all about Ranges support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Range support in SfCircularGauge
+# Ranges in WPF Radial Gauge (SfCircularGauge)
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 

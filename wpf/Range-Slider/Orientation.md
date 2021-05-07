@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation | SfRangeSlider | wpf | Syncfusion
-description: This section provides how to use the Orientation property in Syncfusion WPF RangeSlider (SfRangeSlider) control.  
+title: Orientation in WPF Range Slider control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Orientation in WPF RangeSlider(SfRangeSlider) 
+# Orientation in WPF Range Slider (SfRangeSlider)
 
 The [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~Orientation.html) property has the following two options.  
 

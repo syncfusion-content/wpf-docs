@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumb ToolTip | SfRangeSlider | wpf | Syncfusion
-description: This section explains how to set the ToolTip placement and ToolTip precision in the Syncfusion WPF SfRangeSlider..
+title: Thumb ToolTip in WPF Range Slider control | Syncfusion
+description: Learn here all about Thumb ToolTip support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Thumb ToolTip in WPF RangeSlider(SfRangeSlider) 
+# Thumb ToolTip in WPF Range Slider (SfRangeSlider)
 
 The Thumb tooltip displays the current value where the Thumb stands. 
 

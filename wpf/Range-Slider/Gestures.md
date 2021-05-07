@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gestures | SfRangeSlider | wpf | Syncfusion
-description: This section provides how to use both KeyGesture and MouseGesture in Syncfusion WPF RangeSlider (SfRangeSlider).   
+title: Gestures in WPF Range Slider control | Syncfusion
+description: Learn here all about Gestures support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Gestures in WPF RangeSlider(SfRangeSlider) 
+# Gestures in WPF Range Slider (SfRangeSlider)
 
 ### Keyboard 
 
