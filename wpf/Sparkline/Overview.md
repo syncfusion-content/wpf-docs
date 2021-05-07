@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Sparkline | WPF | Syncfusion
-description: WPF Sparkline control allows users to visualize trends and variations in a small amount of space. It supports line, column, and win or loss.
+title: About WPF Sparkline control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Sparkline (SfSparkline) control, its elements and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Overview
+# WPF Sparkline (SfSparkline) Overview
 
 A sparkline is a very small chart, typically drawn without axes or coordinates. It presents the general shape of data’s in a simple and highly condensed way.
 

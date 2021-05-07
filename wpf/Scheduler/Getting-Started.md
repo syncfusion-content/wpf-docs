@@ -1,13 +1,13 @@
 ---
 layout: post   
-title: Getting started with WPF Scheduler control | Syncfusion 
-description: Learn here about getting started with Syncfusion WPF Scheduler (SfScheduler) control, its elements, and more. 
+title: Getting Started with WPF Scheduler control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: WPF   
 control: SfScheduler   
 documentation: ug   
 ---   
     
-# Getting Started with WPF Scheduler (SfScheduler)   
+# Getting Started with WPF Scheduler (SfScheduler)
     
 This section provides you an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in real time scenario.   
 

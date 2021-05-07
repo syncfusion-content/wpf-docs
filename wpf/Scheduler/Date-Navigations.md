@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date navigations in WPF Scheduler control | Syncfusion
-description: Learn here all about to use Date Navigations in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Date Navigations in WPF Scheduler control | Syncfusion
+description: Learn here all about Date Navigations support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug

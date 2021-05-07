@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sparkline Types | SfSparkline | wpf | Syncfusion
-description: sparkline types
+title: Sparkline Types in WPF Sparkline control | Syncfusion
+description: Learn here all about Sparkline Types support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Sparkline Types
+# Sparkline Types in WPF Sparkline (SfSparkline)
 
 ## Line Sparkline
 
@@ -46,7 +46,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 The following illustrates the result of the above code sample,
 
-![](Sparkline-Types_images/Sparkline-Types_img1.png)
+![Sparkline-Types_img1](Sparkline-Types_images/Sparkline-Types_img1.png)
 
 
 ## Column Sparkline
@@ -80,7 +80,7 @@ SfColumnSparkline sparkline = new SfColumnSparkline()
 
 Following is the snapshot for Column Sparkline,
 
-![](Sparkline-Types_images/Sparkline-Types_img2.png)
+![Sparkline-Types_img2](Sparkline-Types_images/Sparkline-Types_img2.png)
 
 ## Area sparkline
 
@@ -113,7 +113,7 @@ SfAreaSparkline sparkline = new SfAreaSparkline()
 
 Following is the snapshot for area sparkline,
 
-![](Sparkline-Types_images/Sparkline-Types_img3.png)
+![Sparkline-Types_img3](Sparkline-Types_images/Sparkline-Types_img3.png)
 
 ## WinLoss Sparkline
 
@@ -190,4 +190,4 @@ public class MatchDetailsViewModel
 
 Execute the above code to render the following output.
 
-![](Sparkline-Types_images/Sparkline-Types_img4.png)
+![Sparkline-Types_img4](Sparkline-Types_images/Sparkline-Types_img4.png)

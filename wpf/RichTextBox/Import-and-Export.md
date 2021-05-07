@@ -1,12 +1,12 @@
 ---
-title: Import and Export |  SfRichTextBoxAdv | WPF | Syncfusion
-description: This section describes how to perform the import/export word, rich text format, HTML, XAML and text documents in WPF SfRichTextBoxAdv Control.
+title: Import and Export in WPF RichTextBox control | Syncfusion
+description: Learn here all about Import and Export support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: import, export, load, save
 ---
-# Import and Export in WPF RichTextBox
+# Import and Export in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv allows you to import/export word documents (.docx, .doc), rich text format documents (.rtf), HTML documents (.htm, .html), XAML documents (.xaml) and text documents (.txt).
 The following sample code demonstrates how to import contents from a file into SfRichTextBoxAdv.

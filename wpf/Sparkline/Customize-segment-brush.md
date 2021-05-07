@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize segment brush | SfSparkline | wpf | Syncfusion
-description: customize segment brush
+title: Customize segment brush in WPF Sparkline control | Syncfusion
+description: Learn here all about Customize segment brush support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Customize segment brush
+# Customize segment brush in WPF Sparkline (SfSparkline)
 
 We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
 
@@ -57,4 +57,4 @@ sparkline.SegmentTemplateSelector = selector;
 
 Following is the snapshot for customize segment,
 
-![](Customize-segment-brush_images/Customize-segment-brush_img1.png)
+![Customize-segment-brush_img1](Customize-segment-brush_images/Customize-segment-brush_img1.png)
