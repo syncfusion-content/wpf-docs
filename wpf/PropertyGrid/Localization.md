@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF PropertyGrid Localization | Syncfusion
-description: PropertyGrid control provides localization support to translate the application resources into different language for the specific cultures.
+title: Localization in WPF PropertyGrid control | Syncfusion
+description: Learn about Localization support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Saving PDF Files | PDF Viewer | Wpf | Syncfusion
-description: The PDF Viewer supports saving a PDF file loaded in it. It keeps the file up to date with any modifications by allowing you to save the file in the local disk.
+title: Saving PDF Files in WPF Pdf Viewer control | Syncfusion
+description: Learn about Saving PDF Files support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

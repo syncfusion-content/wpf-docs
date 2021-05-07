@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restrict Auto Resizing of Row Header | PivotGrid | Syncfusion
-description: Support to restrict the row header items from being stretched when there are too many PivotCalculation items in the data header area.
+title: Restrict Resizing of Row Header in WPF Pivot Grid control | Syncfusion
+description: Learn about Restrict Resizing of Row Header support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Restrict Auto Resizing of Row Header
+# Restrict Resizing of Row Header in WPF Pivot Grid
 
 The pivot grid supports restricting the row header items from being stretched when there are too many PivotCalculation items in the data header area. When you click the **ShowFields** button in the data header area of the grouping bar, the pivot computation list window appears with the PivotCalculation fields.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Skin Customization | PivotGrid | Syncfusion
-description: Support to apply various visual styles Office2010, Office2007, Trasparent, Blend, Metro, etc., in PivotGrid control.
+title: Skin Customization in WPF Pivot Grid control | Syncfusion
+description: Learn about Skin Customization support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Skin Customization
+# Skin Customization in WPF Pivot Grid
 
 Skin customization applies particular style settings to the visual elements of a component. The pivot grid provides the following skin options:
 

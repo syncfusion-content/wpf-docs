@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Hyperlinks | PDF Viewer | Wpf | Syncfusion
-description: Hyperlink navigation support in PDF Viewer WPF detects hyperlinks present in PDF and on tapping it, will open the URL in the browser. 
+title: Hyperlink Navigation in WPF Pdf Viewer control | Syncfusion
+description: Learn about Hyperlink Navigation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Working with Hyperlinks 
+# Hyperlink Navigation in WPF Pdf Viewer
 
 Essential PDF Viewer provides support for URI annotations (hyperlinks) in the PDF document that enables the URI available in the PDF document to be opened in the default browser just by clicking on it. This also supports a few events that are listed in the previous table.
 

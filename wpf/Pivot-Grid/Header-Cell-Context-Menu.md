@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expand/Collapse Rows and Columns | Syncfusion
-description: Support to view the detailed data (drill down) or to view the summarized data (drill up) in PivotGrid control.
+title: Expand/Collapse Headers in WPF Pivot Grid control | Syncfusion
+description: Learn about Expand/Collapse Headers support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Expand/Collapse Rows and Columns
+# Expand/Collapse Headers in WPF Pivot Grid
 
 Expand/collapse operations can be done at both UI and programmatic level.
 

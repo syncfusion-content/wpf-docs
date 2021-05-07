@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualized Binding with Improved Performance | PivotGrid | Syncfusion
-description: Virtualized binding with improved performance support to load a large set of records with high loading performance.
+title: Virtualized Binding in WPF Pivot Grid control | Syncfusion
+description: Learn about Virtualized Binding (Performance Improvement) support in Syncfusion WPF Pivot Grid control and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Virtualized Binding with Improved Performance
+# Virtualized Binding (Performance Improvement) in WPF Pivot Grid
 
 It provides high loading performance for a large set of records. This feature helps to load data in the pivot grid on-demand using the **Index Engine**.
 

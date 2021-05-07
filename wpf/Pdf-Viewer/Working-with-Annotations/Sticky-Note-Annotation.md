@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sticky note Annotation in PDF Viewer WPF | Syncfusion
-description: Adding, modifying and deleting sticky note annotation in PDF document using Syncfusion PDF Viewer WPF.
+title: Sticky Note Annotation in WPF Pdf Viewer control | Syncfusion
+description: Learn about Sticky Note Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Sticky note annotation
+# Sticky Note Annotation in WPF Pdf Viewer
 
 PDF Viewer provides an option to include, edit, or remove the sticky note annotation in a PDF document.
 

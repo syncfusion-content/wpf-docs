@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ordering the Properties in WPF PropertyGrid control | Syncfusion
-description: Learn about ordering the properties of selected object in Syncfusion WPF PropertyGrid control and more details.
+title: Ordering in WPF PropertyGrid control | Syncfusion
+description: Learn about Ordering support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Ordering using attribute
+# Ordering in WPF PropertyGrid
 
 We can order the properties according to our needs. We can change the order of the properties by attributes and event.
 
