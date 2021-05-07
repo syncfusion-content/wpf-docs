@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arrange TileViewItem in WPF Tile View control | Syncfusion
-description: Learn about Arrange TileViewItem support in Syncfusion WPF Tile View control and more.
+description: Learn about Arrange TileViewItem support in Syncfusion WPF Tile View control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug

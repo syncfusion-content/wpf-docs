@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF Tile View control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF Tile View control and more.
+description: Learn about Appearance support in Syncfusion Essential Studio WPF TileView Control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug

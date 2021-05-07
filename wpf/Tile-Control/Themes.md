@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes in WPF Tile Control control | Syncfusion
-description: Learn about Themes support in Syncfusion WPF Tile Control control and more.
+description: Learn about Themes support in Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfHubTile
 documentation: ug
