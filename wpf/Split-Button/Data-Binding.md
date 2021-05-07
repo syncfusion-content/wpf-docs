@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF Split Button control | Syncfusion
-description: Learn about Data Binding support in Syncfusion WPF Split Button control and more.
+description: Learn about Data Binding support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug

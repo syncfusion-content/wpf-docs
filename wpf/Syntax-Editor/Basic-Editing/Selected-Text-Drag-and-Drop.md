@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selected Text Drag and Drop in WPF Syntax Editor control | Syncfusion
-description: Learn about Selected Text Drag and Drop support in Syncfusion WPF Syntax Editor control and more.
+description: Learn about Selected Text Drag and Drop support in Syncfusion WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

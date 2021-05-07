@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiline Text in WPF Split Button control | Syncfusion
-description: Learn about Multiline Text support in Syncfusion WPF Split Button control and more.
+description: Learn about Multiline Text support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug

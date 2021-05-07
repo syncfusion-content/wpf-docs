@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Background Customization in WPF Syntax Editor control | Syncfusion
-description: Learn about Line Background Customization support in Syncfusion WPF Syntax Editor control and more.
+title: Line Background Customization in WPF Syntax Editor | Syncfusion
+description: Learn about Line Background Customization support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
