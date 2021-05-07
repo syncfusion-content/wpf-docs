@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Migrating from SfSchedule to SfScheduler in WPF Scheduler control | Syncfusion
+title: Migrating from SfSchedule to SfScheduler in WPF Scheduler | Syncfusion
 description: Learn here all about Migrating from SfSchedule to SfScheduler support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug
 ---
 
-# Migrating from SfSchedule to SfScheduler in WPF Scheduler (SfScheduler)
+# Migrating from SfSchedule to SfScheduler in WPF Scheduler
 
 SfScheduler is a new Scheduler control introduced in 18.2.0.45 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
 

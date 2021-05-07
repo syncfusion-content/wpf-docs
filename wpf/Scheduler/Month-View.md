@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Month View in WPF Scheduler control | Syncfusion
-description: Learn here all about Month View support in Syncfusion WPF Scheduler (SfScheduler) control and more.
+description: Learn here all about Month View support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: wpf
 control: SfScheduler
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the marker for specific data point | SfSparkline | wpf | Syncfusion
+title: Customize the marker for data point in SfSparkline | Syncfusion
 description: customize the marker for specific data point in Syncfusion WPF SfSparkline control, its elements and more.
 platform: wpf
 control: SfSparkline
