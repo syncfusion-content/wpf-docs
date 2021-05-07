@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF TabControl | Syncfusion
-description: Learn here about the Data Binding support in Syncfusion WPF TabControl and how to bind the properties.
+title: DataBinding in WPF TabControl control | Syncfusion
+description: Learn here all about DataBinding support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControl
 documentation: ug
 ---
 
-# Binding tab items in WPF TabControl
+# DataBinding in WPF TabControl (TabControlExt)
 
 You can add a tab item using data binding in the WPF [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 

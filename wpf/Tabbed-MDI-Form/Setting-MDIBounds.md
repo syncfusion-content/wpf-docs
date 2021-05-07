@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting MDIBounds| DocumentContainer | Wpf | Syncfusion
-description: setting mdibounds
+title: Setting MDIBounds in WPF Tabbed MDI Form control | Syncfusion
+description: Learn here all about Setting MDIBounds support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Setting MDIBounds
+# Setting MDIBounds in WPF Tabbed MDI Form (DocumentContainer)
 
 This property helps the Document Container control in properly placing its elements within the container.
 
@@ -48,7 +48,7 @@ To set the MDI Bounds, use the following code snippet.
 
 {% endhighlight %}
 
-![](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
+![Setting-MDIBounds_img1](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
 
 
 
