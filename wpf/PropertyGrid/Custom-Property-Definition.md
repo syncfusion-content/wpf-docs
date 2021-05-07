@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Property Definition in WPF PropertyGrid control | Syncfusion
-description: Learn about Custom Property Definition support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more details.
+description: Learn about Custom Property Definition support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

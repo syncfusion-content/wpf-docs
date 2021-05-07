@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Acquire total number of pages in WPF Pdf Viewer control | Syncfusion
-description: Learn about Acquire total number of pages support in Syncfusion WPF Pdf Viewer control, its elements and more details.
+description: Learn about Acquire total number of pages support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Options in WPF Pivot Grid control | Syncfusion
-description: Learn about Display Options support in Syncfusion WPF Pivot Grid control, its elements and more details.
+description: Learn about Display Options support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug

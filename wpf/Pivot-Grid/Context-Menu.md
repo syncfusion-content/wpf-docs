@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in WPF Pivot Grid control | Syncfusion
-description: Learn about Context Menu support in Syncfusion WPF Pivot Grid control, its elements and more details.
+description: Learn about Context Menu support in Syncfusion WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug

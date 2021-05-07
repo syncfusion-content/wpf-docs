@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sticky Note Annotation in WPF Pdf Viewer control | Syncfusion
-description: Learn about Sticky Note Annotation support in Syncfusion WPF Pdf Viewer control, its elements and more details.
+description: Learn about Sticky Note Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

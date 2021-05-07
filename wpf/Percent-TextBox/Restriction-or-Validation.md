@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restriction or Validation in WPF Percent TextBox control | Syncfusion
-description: Learn about Restriction or Validation support in Syncfusion WPF Percent TextBox control, its elements and more details.
+description: Learn about Restriction or Validation support in Syncfusion WPF Percent TextBox control, its elements and more.
 platform: wpf
 control: PercentTextBox 
 documentation: ug

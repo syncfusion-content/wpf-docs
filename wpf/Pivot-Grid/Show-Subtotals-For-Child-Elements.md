@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sub-Totals for Child Elements in WPF Pivot Grid control | Syncfusion
-description: Learn about Sub-Totals for Child Elements support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more details.
+description: Learn about Sub-Totals for Child Elements support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug

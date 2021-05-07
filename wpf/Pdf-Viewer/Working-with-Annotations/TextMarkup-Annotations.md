@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TextMarkup Annotations in WPF Pdf Viewer control | Syncfusion
-description: Learn about TextMarkup Annotations support in Syncfusion WPF Pdf Viewer control, its elements and more details.
+description: Learn about TextMarkup Annotations support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug

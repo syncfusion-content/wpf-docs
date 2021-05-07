@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Excel-Like Filtering in WPF Pivot Grid control | Syncfusion
-description: Learn about Excel-Like Filtering support in Syncfusion WPF Pivot Grid control, its elements and more details.
+description: Learn about Excel-Like Filtering support in Syncfusion WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
