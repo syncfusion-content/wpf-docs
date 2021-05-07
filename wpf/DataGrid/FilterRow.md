@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter row in WPF DataGrid control | Syncfusion
-description: Learn about filter data using built-in filter row support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+title: Filter Row in WPF DataGrid control | Syncfusion
+description: Learn here all about Filter Row support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

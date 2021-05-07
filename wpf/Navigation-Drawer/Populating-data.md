@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating with Data | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to set the view of the drawer content in default mode and populate the items in compact and expanded mode in SfNavigationDrawer.
+title: Populating data in WPF Navigation Drawer control | Syncfusion
+description: Learn here all about Populating data support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Populating with Data
+# Populating data in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section explains how to populate the drawer menu. 
 

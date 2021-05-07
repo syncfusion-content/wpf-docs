@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval in WPF PercentTextBox control | Syncfusion
-description: Learn about Step Interval support in Syncfusion WPF PercentTextBox control and more details about the control features.
+title: Step Interval in WPF Percent TextBox control | Syncfusion
+description: Learn about Step Interval support in Syncfusion Essential Studio WPF Percent TextBox control, its elements and more.
 platform: wpf
 control: PercentTextBox 
 documentation: ug
 ---
 
-# Step Interval in WPF PercentTextBox
+# Step Interval in WPF Percent TextBox
 
 The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control allows you to increase or decrease the percent value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 

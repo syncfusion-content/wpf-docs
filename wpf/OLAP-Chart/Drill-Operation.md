@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Operation | OLAP Chart | Syncfusion
-description: Support to access the detailed level of data (drill down) or to access the summarized data (drill up) in OLAP Chart control.
+title: Drill Operation in WPF Olap Chart control | Syncfusion
+description: Learn about Drill Operation support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
 documentation: ug
 ---
 
-# Drill Operation
+# Drill Operation in WPF Olap Chart
 
 This is a basic feature of OLAP chart through which the amount of information can be limited, for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the context menu present in the OLAP chart.
 

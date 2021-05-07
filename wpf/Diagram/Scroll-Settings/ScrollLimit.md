@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll Limit and Scrollable area | Syncfusion
-description: What are the different typs of scroll limit values and how to scroll the diagram page in a specified region? 
+title: Scroll Limit in WPF Diagram control | Syncfusion
+description: Learn here all about Scroll Limit support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Scroll limit in WPF Diagram (SfDiagram)
+# Scroll Limit in WPF Diagram (SfDiagram)
 
 The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
 

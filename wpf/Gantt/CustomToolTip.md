@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CustomToolTip| Gantt | Wpf | Syncfusion
-description: customtooltip
+title: CustomToolTip in WPF Gantt control | Syncfusion
+description: Learn about CustomToolTip support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# CustomToolTip
+# CustomToolTip in WPF Gantt
 
 Essential Gantt provides tooltip support for the TaskBar. Tooltip is a small pop-up box, which is usually displayed on mouse hover. This is used to display additional information about the elements without increasing the window size. Essential Gantt provides support to add customizable tooltip. You can add text or image to your tooltip as needed. 
 
@@ -124,7 +124,7 @@ The following image shows Custom ToolTip:
 
 
 
-![](CustomToolTip_images/CustomToolTip_img1.png)
+![CustomToolTip_img1](CustomToolTip_images/CustomToolTip_img1.png)
 
 
 

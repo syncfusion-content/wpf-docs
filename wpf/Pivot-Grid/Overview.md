@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview | PivotGrid | Syncfusion
-description: Overview of the PivotGrid control which allows to learn about the working mechanism of control | Syncfusion
+title: About WPF Pivot Grid control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Overview
+# WPF Pivot Grid Overview
 
 The pivot grid is a powerful cell-oriented, extensible grid control which works with relational data. It simulates the pivot table feature of Microsoft Excel. The pivot grid pivots, summarizes, and groups data to organize it in a cross-tabulated form. It is used in financial domains to organize and analyze the business data.

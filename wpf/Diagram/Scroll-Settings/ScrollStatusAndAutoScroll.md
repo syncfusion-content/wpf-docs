@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll settings status and Auto-scrolling of diagram page | Syncfusion
-description: How to auto-scroll on Diagram page , How to customize the auto-scroll settings for diagram page and how to pan the diagrma page
+title: Scroll-Settings in WPF Diagram control | Syncfusion
+description: Learn here all about Scroll-Settings support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Scroll Settings and customization
+# Scroll-Settings in WPF Diagram (SfDiagram)
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
 

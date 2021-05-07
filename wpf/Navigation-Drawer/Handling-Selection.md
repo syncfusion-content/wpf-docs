@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | NavigationDrawer | WPF | Syncfusion
-description: This section describes how to selection perfoms in the expanded and compact mode in SfNavigationDrawer.
+title: Handling Selection in WPF Navigation Drawer control | Syncfusion
+description: Learn here all about Handling Selection support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Selection with SfNavigationDrawer control 
+# Handling Selection in WPF Navigation Drawer (SfNavigationDrawer)
 
 This section explains the handling of selection in SfNavigationDrawer. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF SfMaskedEdit control | Syncfusion
-description: Learn about UI customization, theme support in Syncfusion WPF SfMaskedEdit control and more details about the control features.
+title: Appearance in WPF MaskedTextBox control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF MaskedTextBox (SfMaskedEdit) control and more.
 platform: wpf
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Appearance in WPF SfMaskedEdit
+# Appearance in WPF MaskedTextBox (SfMaskedEdit)
 
 This section explains different UI customization and theming options available in [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html).
 

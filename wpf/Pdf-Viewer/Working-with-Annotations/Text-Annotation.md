@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Text Annotation in PDF Viewer WPF | Syncfusion
-description: PDF Viewer provides the ability to add, move, edit, resize and deleting free text annotations in PDF document.
+title: Text Annotation in WPF Pdf Viewer control | Syncfusion
+description: Learn about Text Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
-# Text annotation in WPF Pdf Viewer
+# Text Annotation in WPF Pdf Viewer
 
 The text annotation support in PDF viewer allows you to include text anywhere in the PDF document pages through a text box. You can also edit, modify, delete, and load existing text annotations. 
 

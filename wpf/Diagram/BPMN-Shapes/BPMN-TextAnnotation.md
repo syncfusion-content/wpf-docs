@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using the BPMN Event| Syncfusion 
-description: How the event is notated with a circle and it represents an event in a business process and how to customize their appearance?
+title: TextAnnotation in WPF Diagram control | Syncfusion
+description: Learn here all about TextAnnotation support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# BPMN text annotation
+# TextAnnotation in WPF Diagram (SfDiagram)
 
 * A TextAnnotation points at or references the another BPMN shape, which we call the [TextAnnotationTarget](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.BpmnNodeViewModel.html#Syncfusion_UI_Xaml_Diagram_BpmnNodeViewModel_TextAnnotationTarget) of the TextAnnotation. When a target shape is moved, copied, or deleted, any TextAnnotations attached to the shape will be moved, copied, or deleted too.  Thus, the TextAnnotations stay with their target shapes though you can reposition the TextAnnotation to any offset from its target. The TextAnnotationTarget property of the BpmnNodeViewModel is used to connect an annotation element to the BpmnNodeViewModel.
 

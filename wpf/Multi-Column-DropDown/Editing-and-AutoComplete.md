@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing and autocompletion in SfMultiColumnDropDownControl.
-description: How to handle editing and autocompletion support in SfMultiColumnDropDownControl.
+title: Editing and AutoComplete in WPF Multi Column Dropdown | Syncfusion
+description: Learn here all about Editing and AutoComplete support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Editing and Auto complete
+# Editing and AutoComplete in WPF Multi Column Dropdown
 
 SfMultiColumnDropDownControl allows you to edit via TextBox. You can make the editor as read-only by setting [SfMultiColumnDropDownControl.ReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ReadOnly) property as `true`.
 
@@ -15,7 +15,7 @@ SfMultiColumnDropDownControl allows you to edit via TextBox. You can make the ed
 
 SfMultiColumnDropDownControl auto append the text based on `ItemsSource` when end-user edits in the TextBox when setting [AllowAutoComplete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`.
  
-![](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img1.png)
+![Editing-and-AutoComplete_img1](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img1.png)
 
 ### Limitations
 When setting DataTable as `ItemsSource`, `AllowAutoComplete` is not supported.
@@ -138,7 +138,7 @@ var text = this.sfMultiColumn.Text;
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img2.png)
+![Editing-and-AutoComplete_img2](Editing-and-AutoComplete_images/Editing-and-AutoComplete_img2.png)
 
 ## Selecting text when editor got focus
 

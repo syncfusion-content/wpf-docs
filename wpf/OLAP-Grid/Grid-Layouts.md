@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layouts| OlapGrid | Wpf | Syncfusion
-description: Information about various grid layouts such as Normal, Excel-like, Top summary and No summaries in OLAP Grid control.
+title: Grid Layout in WPF Olap Grid control | Syncfusion
+description: Learn about Grid Layout support in Syncfusion Essential Studio WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Layouts
+# Grid Layout in WPF Olap Grid
 
 The position of summary cells in the OLAP grid can be customized with the help of grid layouts. It can be positioned at the top or bottom of each parent member.
 

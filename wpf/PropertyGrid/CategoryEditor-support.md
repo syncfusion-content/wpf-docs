@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CategoryEditor support in WPF PropertyGrid control | Syncfusion
-description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application using CustomEditors or CategoryEditors.
+title: Category Editor in WPF PropertyGrid control | Syncfusion
+description: Learn about Category Editor support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Tooltip feature of Syncfusion Maps in WPF
-description: This section describes the tooltip feature for Shapes, Bubbles, Markers and its customizations in Sfmaps WPF platform.
+title: Tooltip in WPF Maps control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Tooltip support for SfMaps control
+# Tooltip in WPF Maps (SfMap)
 
 Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the `ShowTooltip` property to true, and set the ValuePath property of tooltip.
 

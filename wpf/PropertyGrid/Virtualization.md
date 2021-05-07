@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization of the items in WPF PropertyGrid control | Syncfusion
-description: This section describes how large sets of data can be loaded in PropertyGrid control using Virtualization.
+title: Virtualization in WPF PropertyGrid control | Syncfusion
+description: Learn about Virtualization support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: CheckListBox
 documentation: ug

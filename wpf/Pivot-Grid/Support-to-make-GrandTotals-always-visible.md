@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grand Total Row Visibility | PivotGrid | Syncfusion
-description: Support to make the grand total row always visible in row pivots only mode in pivot grid control. | Syncfusion
+title: Show/Hide Grand Total in WPF Pivot Grid control | Syncfusion
+description: Learn about Show/Hide Grand Total support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Grand Total Row Visibility
+# Show/Hide Grand Total in WPF Pivot Grid
 
 The pivot grid provides support to make the grand total row always visible in RowPivotsOnly mode.
 

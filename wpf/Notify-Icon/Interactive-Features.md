@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features| NotifyIcon | Wpf | Syncfusion
-description: interactive features
+title: Interactive Features in WPF Notify Icon control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion WPF Notify Icon control, its elements and more details.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in WPF Notify Icon
 
 This section illustrates the following interactive features of NotifyIcon control. 
 
@@ -48,11 +48,11 @@ notifyIcon.BalloonTipHeaderVisibility = Visibility.Collapsed;
 {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Interactive-Features_img1](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Interactive-Features_img2](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 
 
@@ -79,7 +79,7 @@ notifyIcon.BalloonTipTitle = "AntiVirus Software";
 {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Interactive-Features_img3](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 
@@ -116,7 +116,7 @@ notifyIcon.BalloonTipIcon = BalloonTipIcon.Warning;
 {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Interactive-Features_img4](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 
@@ -235,10 +235,10 @@ notifyIcon.BalloonTipShape = BalloonTipShapes.RoundedRectangle;
 
 
 
-![](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![Interactive-Features_img5](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
-![](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Interactive-Features_img6](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connector Selection, Dragging and Routing | Syncfusion
-description: How to select and drag the connector and How routing is happened when connector is intersecting with Node?
+title: Interactions in WPF Diagram control | Syncfusion
+description: Learn here all about Interactions support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Interactions on connectors
+# Interactions in WPF Diagram (SfDiagram)
 
 Connectors can be selected, dragged and routed over the diagram page. 
 

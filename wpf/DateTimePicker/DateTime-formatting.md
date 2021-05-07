@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF DateTimeEdit DateTime Format | Syncfusion
-description: This section describes how to display the date time information in the DateTimeEdit control using predefined patterns and custom pattern.
+title: DateTime formatting in WPF DateTimePicker control | Syncfusion
+description: Learn here all about DateTime formatting support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

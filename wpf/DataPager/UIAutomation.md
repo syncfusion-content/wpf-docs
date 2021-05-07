@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UIAutomation | SfDataPagerControl | wpf | Syncfusion
-description: uiautomation
+title: UIAutomation in WPF DataPager control | Syncfusion
+description: Learn here all about UIAutomation support in Syncfusion WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# UIAutomation
+# UIAutomation in WPF DataPager (SfDataPager)
 
 SfDataPager supports the following UIAutomation,
 
@@ -21,7 +21,7 @@ SfDataPager supports CodedUITest automation that helps you to create an automati
 
 There are three levels of support in CodedUITest for SfDataPager
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png)
+![Features_images25](Features_images/Features_img25.png)
 
 
 
@@ -51,7 +51,7 @@ To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/w
 
 The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png)
+![Features_images26](Features_images/Features_img26.png)
 
 
 
@@ -77,7 +77,7 @@ with Syncfusion namespace. To know more about QTP test, refer to the [link](http
 
 The following screenshot displays the QTP Test for SfDataPager
 
-![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)
+![Features_images27](Features_images/Features_img27.png)
 
 
 

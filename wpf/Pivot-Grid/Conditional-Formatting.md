@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Formatting using data conditions in WPF Pivot Grid | Syncfusion
-description: Support to apply conditional formatting to format the value cells which meets given data condition in PivotGrid control.
+description: Learn about Formatting using data conditions support in Syncfusion WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Formatting using data conditions
+# Formatting using data conditions in WPF Pivot Grid
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions.
 

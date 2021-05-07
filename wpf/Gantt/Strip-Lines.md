@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Strip Lines| Gantt | Wpf | Syncfusion
-description: This section describes repeat behavior, style selector, template selector, types of strip lines in Syncfusion WPF Gantt.
+title: Strip Lines in WPF Gantt control | Syncfusion
+description: Learn about Strip Lines support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Strip Lines in Syncfusion Gantt
+# Strip Lines in WPF Gantt
 
 The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Diagram Control | WPF | Syncfusion
-description: WPF Diagram allows user to create and edit flow charts, organizational charts, UML, swim lanes, mind maps, entity relationships, and more.
+title: About WPF Diagram control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Diagram (SfDiagram) control, its elements and more details.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Overview
+# WPF Diagram (SfDiagram) Overview
 
 **Essential Diagram WPF** is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 

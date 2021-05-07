@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding | AccentBrushpropertiesareusedtodecoratetheSfDataPagercontrolwithasolidcolor.TherearetwoAccentBrushpropertiesintheSfDataPager | wpf | Syncfusion
-description: databinding
+title: DataBinding in WPF DataPager control | Syncfusion
+description: Learn here all about DataBinding support in Syncfusion WPF DataPager (SfDataPager) control and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding in WPF DataPager (SfDataPager)
 
 
 Data binding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
@@ -43,7 +43,7 @@ The following screenshot displays the output of the above code.
 
 ### PageIndex
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png)
+![Features_images1](Features_images/Features_img1.png)
 
 SfDataPager exposes the PageIndex property. It contains the index of the currently selected page.You can use this property to set or get the current page of the SfDataPager. 
 
@@ -115,7 +115,7 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 The following screenshot displays the output for ListView binded with PagedCollection.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png)
+![Features_images2](Features_images/Features_img2.png)
 
 ## On DemandPaging
 
@@ -173,7 +173,7 @@ void OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
 
 The following screenshot displays the output for OnDemandPaging,
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)
+![Features_images3](Features_images/Features_img3.png)
 
 
 ## Page Size
@@ -202,7 +202,7 @@ The following code example explains how to use PageSize property in SfDataPager.
 
 The following screenshot displays the output for PageSize set as 5.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png)
+![Features_images4](Features_images/Features_img4.png)
 
 ## How To
 
@@ -241,5 +241,5 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 The following screenshot displays the output for changing the PageSize value during runtime. 
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)
+![Features_images5](Features_images/Features_img5.png)
 

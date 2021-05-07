@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion
-description: How to visually represent the geometrical information and process flows as Lanes and how to customize their appearance?
+title: Lane in WPF Diagram control | Syncfusion
+description: Learn here all about Lane support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Lanes in WPF Diagram(SfDiagram)
+# Lane in WPF Diagram (SfDiagram)
 
 A [Lane](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 

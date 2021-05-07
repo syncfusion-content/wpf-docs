@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Map Selection | SfMap | wpf | Syncfusion
-description: This section describes how to use Selection support WPF SfMaps control with SelectedShapeColor, SelectedMapShapes properties.
+title: Map Selection in WPF Maps control | Syncfusion
+description: Learn here all about Map Selection support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
 documentation: ug

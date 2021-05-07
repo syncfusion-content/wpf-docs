@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting options in SfDatePicker control | Syncfusion
-description: This page explain about how to display the date in various format in the WPF SfDatePicker control and items features.
+title: Date Formatting in WPF DatePicker control | Syncfusion
+description: Learn here all about Date Formatting support in Syncfusion WPF DatePicker (SfDatePicker) control and more.
 platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
 
-# Date Formatting in WPF SfDatePicker
+# Date Formatting in WPF DatePicker (SfDatePicker)
 
 The [SfDatePicker](https://www.syncfusion.com/wpf-ui-controls/datepicker) control allows the user to select and display the date in various formats.
 

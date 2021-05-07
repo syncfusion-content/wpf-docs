@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WPF DateTimeEdit  Control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF DateTimeEdit  control and more details about the control features.
+title: Appearance in WPF DateTimePicker control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF DateTimePicker (DateTimeEdit) control and more.
 platform: wpf
 control: DateTimeEdit 
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calendar Customization| Gantt | Wpf | Syncfusion
-description: calendar customization
+title: Calendar Customization in WPF Gantt control | Syncfusion
+description: Learn about Calendar Customization support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
 documentation: ug
 ---
 
-# Calendar Customization
+# Calendar Customization in WPF Gantt
 
 This feature allows you to set your own schedule for the entire project. Using this feature you can customize the calendar as per the organization’s requirement. 
 
@@ -191,7 +191,7 @@ The following image shows Customized Calender and Weekends:
 
 
 
-![](Calendar-Customization_images/Calendar-Customization_img1.png)
+![Calendar-Customization_img1](Calendar-Customization_images/Calendar-Customization_img1.png)
 
 
 

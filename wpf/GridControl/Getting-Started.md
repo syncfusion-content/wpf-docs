@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF Grid Control | Syncfusion
-description: Getting Started with WPF Grid Control that acts as an efficient display engine for tabular data that can be customized down to the cell level.
+title: Getting Started with WPF GridControl | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
 documentation: ug
 ---
 
-# Getting Started with Grid
+# Getting Started with WPF GridControl
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application.
 

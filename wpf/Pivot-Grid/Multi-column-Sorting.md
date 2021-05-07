@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multicolumn Sorting | PivotGrid | Syncfusion
-description: Multicolumn sorting support in pivot grid control which allows to sort the fields one after the other.
+title: Multi-Column Sorting in WPF Pivot Grid control | Syncfusion
+description: Learn about Multi-Column Sorting support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Multicolumn Sorting
+# Multi-Column Sorting in WPF Pivot Grid
 
 Multicolumn sorting allows you to sort the fields one after the other. For example, if a user has three different fields rendered in the pivot grid, then it is possible to sort like: **OrderBy(field1).ThenBy(field2).ThenBy(field3).**.
 

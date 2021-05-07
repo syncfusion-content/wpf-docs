@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Command Binding and Command Target Support| MenuAdv | Wpf | Syncfusion
-description: Command binding and command target support in WPF MenuAdv
+title: Command Binding and Command Target Support in WPF Menu | Syncfusion
+description: Learn here all about Command Binding and Command Target Support in Syncfusion WPF Menu (MenuAdv) control and more.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Command Binding and Command Target Support in WPF MenuAdv
+# Command Binding and Command Target Support in WPF Menu (MenuAdv)
 
 Commands are a way to bind the UI to the logic that performs the action, which is to be executed. MenuAdv supports command binding. When users press the Enter key or click to select an item, the command will be triggered. This can be attained by using the Command and CommandParameter properties of MenuItemAdv.
 

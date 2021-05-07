@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the ExpandCollapse command.
-description: Expand and Collapse command is used to show or hide children with IsExpanded property in ExpandCollapseParameter.
+title: Expand Collapse Command in WPF Diagram control | Syncfusion
+description: Learn here all about Expand Collapse Command support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# ExpandCollapse command in WPF Diagram(SfDiagram)
+# Expand Collapse Command in WPF Diagram (SfDiagram)
 
 The [ExpandCollapse](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_ExpandCollapse) command is used to show or hide children and view only the relevant nodes in the diagram. The ExpandCollapse command will be executed with the [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html) where the parameter contains the information about node that need to be expanded or collapsed. The IsExpanded property of node is used to expand or collapse the children nodes. 
 

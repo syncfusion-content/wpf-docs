@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| Notify Icon | WPF | Syncfusion
-description: The Notify Icon (also known as system tray or task bar icon) for WPF displays information from notification area of desktop.
+title: About WPF Notify Icon control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Notify Icon control, its elements and more details.
 platform: wpf
 control: NotifyIcon
 documentation: ug
 ---
 
-# NotifyIcon
+# WPF Notify Icon Overview
 
 Notify Icon control is implemented with different animations and shape support. It allows you to add a icon in the notification tray of the system.
 

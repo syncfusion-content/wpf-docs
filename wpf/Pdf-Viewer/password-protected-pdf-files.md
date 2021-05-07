@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Viewing password protected PDF Files | PDF Viewer | WPF | Syncfusion
-description: Viewing password protected PDF files section explains about displaying password protected PDF files and it hide the buil-in password dialog of PDF Viewer.
+title: Viewing Password protected PDF Files in WPF Pdf Viewer | Syncfusion
+description: Learn about Viewing Password protected PDF Files support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Viewing password protected PDF Files in WPF Pdf Viewer
+# Viewing Password protected PDF Files in WPF Pdf Viewer
 
 PDF Viewer allows you to view the password-protected PDF files by passing the file name and the correct password as parameters to the [Load](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Load_System_String_System_String_) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Load_System_String_System_String_). Refer to the following code to perform the same.
 

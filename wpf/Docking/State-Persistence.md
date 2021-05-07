@@ -1,12 +1,12 @@
 ---
 layout: post
-title: State Persistence in DockingManager | Docking Manager | Syncfusion
-description: Learn how to serialize and de-serialize the state of DockingManager child windows using various functionalities.
+title: State Persistence in WPF Docking control | Syncfusion
+description: Learn here all about State Persistence support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started of State Persistence
+# State Persistence in WPF Docking (DockingManager)
 
 State persistence is the combined process of serialization and deserialization. 
 

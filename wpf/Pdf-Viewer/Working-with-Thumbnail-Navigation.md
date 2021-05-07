@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumbnail navigation | PDF Viewer | Wpf | Syncfusion
-description: Navigating through the pages using thumbnails, enlarging and reducing page thumbnails, expanding and disabling.
+title: Thumbnail Navigation in WPF Pdf Viewer control | Syncfusion
+description: Learn about Thumbnail Navigation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Thumbnail navigation
+# Thumbnail Navigation in WPF Pdf Viewer
 
 The thumbnail navigation support in PDF viewer allows users to view a miniature preview of the PDF pages for fast scrolling and easy navigation purpose.
 

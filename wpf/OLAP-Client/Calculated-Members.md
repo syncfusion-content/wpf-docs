@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculated Members and Measures | OLAP Client | Syncfusion
-description: Support to users to define measures and members using the calculated member editor in OLAP Client | Syncfusion
+title: Calculated Members in WPF Olap Client control | Syncfusion
+description: Learn about Calculated Members support in Syncfusion Essential Studio WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
 ---
 
-# Calculated Members and Measures
+# Calculated Members in WPF Olap Client
 
 This feature allows users to define measures and members using the calculated member editor. The calculated member editor can be opened just by clicking the respective icon available in the OLAP client toolbar. The icon will be visible only by setting the `IsCalculatedMembersEnabled` property to true.
 

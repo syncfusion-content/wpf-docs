@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF CurrencyTextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF CurrencyTextBox control and more details about the control features.
+title: Getting Started with WPF Currency TextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Currency TextBox control, its elements and more.
 platform: WPF
 control: CurrencyTextBox
 documentation: ug
 ---
 
-# Getting started with WPF CurrencyTextBox
+# Getting Started with WPF Currency TextBox
 
 This section explains how to create a WPF `CurrencyTextBox` control and its features.
 

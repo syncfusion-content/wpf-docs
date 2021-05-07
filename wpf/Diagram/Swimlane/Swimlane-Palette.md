@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visualize graphical object using Swimlanes | Syncfusion
-description: How to add the lanes and phases to the stencil and drag and drop them over the drawing area and its interaction?
+title: Swimlane-Stencil in WPF Diagram control | Syncfusion
+description: Learn here all about Swimlane-Stencil support in Syncfusion WPF Diagram (SfDiagram) control and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Swimlane items in Stencil
+# Swimlane-Stencil in WPF Diagram (SfDiagram)
   Diagram provides support to add lanes and phases to Stencil. 
 
 ## Add lanes and phases into stencil

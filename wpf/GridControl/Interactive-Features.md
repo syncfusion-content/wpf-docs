@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive features in GridControl | WPF | Syncfusion
-description: Learn here about how to drag and drop rows and columns, resizing the columns in Syncfusion WPF GridControl.
+title: Interactive Features in WPF GridControl | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in WPF GridControl
 
 This section explains the Resizing the columns, Drag and drop the columns and cells of WPF GridControl.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WPF DataGrid control | Syncfusion
-description: Learn about cell or row selection support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
+description: Learn here all about Selection support in Syncfusion WPF DataGrid (SfDataGrid) control, its elements and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

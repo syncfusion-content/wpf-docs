@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling and Templates in WPF DockingManager | Syncfusion
-description: Learn how to customize difference elements of windows in DockingManager by editing Style and Template
+title: Styling and Templates in WPF Docking control | Syncfusion
+description: Learn here all about Styling and Templates support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
 
-# Styling and Templates in WPF DockingManager
+# Styling and Templates in WPF Docking (DockingManager)
 
 The UI for Dock, Float and Document windows of DockingManager can be changed using different Styles and Templates.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: History Manager support for diagram control | syncfusion.
-description: How to store the action made in diagram control and how to retrieve the action stored in diagram control again?
+title: Undo and Redo in WPF Diagram control | Syncfusion
+description: Learn here all about Undo and Redo support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Undo/Redo and its Customization 
+# Undo and Redo in WPF Diagram (SfDiagram)
 
 Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
