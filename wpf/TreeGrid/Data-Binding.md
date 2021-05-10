@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | TreeGrid | WPF | Syncfusion
-description: This section explains about the DataBinding support in in Syncfusion WPF TreeGrid (SfTreeGrid) control
+title: Data Binding in WPF TreeGrid control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

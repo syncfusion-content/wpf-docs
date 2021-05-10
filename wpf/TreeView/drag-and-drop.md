@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and drop with WPF TreeView control | Syncfusion
-description: Learn here about drag and drop between the TreeViewNodes with Syncfusion WPF TreeView (SfTreeView) control and  drag and drop related events. 
+title: Drag and drop in WPF TreeView control | Syncfusion
+description: Learn here all about Drag and drop support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
