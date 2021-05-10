@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Support | SfRangeSlider | wpf | Syncfusion
-description: This section explains how to move the thumb by tapping or clicking in the Syncfusion WPF SfRangeSlider.
+title: Touch Support in WPF Range Slider control | Syncfusion
+description: Learn here all about Touch Support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Touch Support in WPF RangeSlider(SfRangeSlider)
+# Touch Support in WPF Range Slider (SfRangeSlider)
 
 [MoveToPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~MoveToPoint.html) API allows the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) to move the thumb by tapping or clicking the track of the [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html). This property provides the following options:
 

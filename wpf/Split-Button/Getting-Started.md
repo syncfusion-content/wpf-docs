@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Split Button | WPF | Syncfusion
-description: Learn how to add WPF Split Button (SplitButtonAdv) control and its basic features like image sizing options and size modes to an application here
+title: Getting Started with WPF Split Button control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Getting Started with Split Button
+# Getting Started with WPF Split Button
 
 This section provides an overview of how to work with Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
 

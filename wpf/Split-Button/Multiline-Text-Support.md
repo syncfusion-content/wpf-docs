@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiline Text | Split Button Control | WPF | Syncfusion
-description: This section explains how to display multiple lines of text along with image and large size mode in a Split Button control.
+title: Multiline Text in WPF Split Button control | Syncfusion
+description: Learn about Multiline Text support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug

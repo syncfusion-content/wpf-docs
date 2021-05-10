@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting options in SfTimePicker control | Syncfusion
-description: This page explain about how to display the time in various format in the WPF SfTimePicker control and items features.
+title: Time Formatting in WPF TimePicker control | Syncfusion
+description: Learn here all about Time Formatting support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
 platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
-# Time Formatting in WPF SfTimePicker
+# Time Formatting in WPF TimePicker (SfTimePicker)
 
 The [SfTimePicker](https://www.syncfusion.com/wpf-ui-controls/timepicker) control allows the user to select and display the time in various formats.
 

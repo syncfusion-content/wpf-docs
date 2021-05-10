@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Selection behavior of Sunburst.
-description: This section explains the selection behavior of the SunburstChart.
+title: Selection in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Selection
+# Selection in WPF Sunburst Chart (SfSunburstChart)
 
 Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 
@@ -36,7 +36,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Selection_images/Selection_img1.jpeg)
+![Selection_img1](Selection_images/Selection_img1.jpeg)
 
 
 ## SelectionDisplayMode
@@ -74,7 +74,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Selection_images/Selection_img2.jpeg)
+![Selection_img2](Selection_images/Selection_img2.jpeg)
 
 
 N> The default value of SelectionDisplayMode is HighlightByOpacity.
@@ -146,7 +146,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Selection_images/Selection_img3.jpeg)
+![Selection_img3](Selection_images/Selection_img3.jpeg)
 
 
 ### Group
@@ -163,7 +163,7 @@ The following code shows, how to set the selection type as group.
 
 {% endhighlight %}
 
-![](Selection_images/Selection_img4.jpeg)
+![Selection_img4](Selection_images/Selection_img4.jpeg)
 
 
 ### Parent
@@ -180,7 +180,7 @@ The following code shows, how to set the selection type as parent.
 
 {% endhighlight %}
 
-![](Selection_images/Selection_img5.jpeg)
+![Selection_img5](Selection_images/Selection_img5.jpeg)
 
 ### Single
 
@@ -196,7 +196,7 @@ The following code shows, how to set the selection type as single.
 
 {% endhighlight %}
 
-![](Selection_images/Selection_img6.jpeg)
+![Selection_img6](Selection_images/Selection_img6.jpeg)
 
 ## Selection Cursor
 
@@ -228,6 +228,6 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Selection_images/Selection_img7.jpeg)
+![Selection_img7](Selection_images/Selection_img7.jpeg)
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks | SfRangeSlider | wpf | Syncfusion
-description: This section explains the ticks, placement, tick frequency, and step frequency in the Syncfusion WPF SfRangeSlider. 
+title: Ticks in WPF Range Slider control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Ticks in WPF RangeSlider(SfRangeSlider)
+# Ticks in WPF Range Slider (SfRangeSlider)
 
 RangeSlider makes it possible to place tick marks along the track in a uniform manner and also to customize the position of the tick marks.
 

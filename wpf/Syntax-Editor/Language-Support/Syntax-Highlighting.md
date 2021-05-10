@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syntax Highlighting of the Edit Control for WPF
-description: Syntax Highlighting of the Edit Control for WPF
+title: Syntax Highlighting in WPF Syntax Editor control | Syncfusion
+description: Learn about Syntax Highlighting support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -13,5 +13,5 @@ EditControl is enhanced with the Syntax highlighting support. This applies diffe
 
 The following image displays the EditControl with DocumentLanguage.
 
-![](Syntax-Highlighting_images/Syntax-Highlighting_img1.jpeg)
+![Syntax-Highlighting_img1](Syntax-Highlighting_images/Syntax-Highlighting_img1.jpeg)
 

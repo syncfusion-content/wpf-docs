@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in SfTreeGrid
-description: How to sort the data in SfTreeGrid
+title: Sorting in WPF TreeGrid control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Sorting
+# Sorting in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
@@ -60,7 +60,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![](Sorting_images/Sorting_img1.png)
+![Sorting_img1](Sorting_images/Sorting_img1.png)
 
 ## Sort column in double click
 
@@ -100,7 +100,7 @@ Following are the sequence of sorting orders when clicking column header,
 SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![](Sorting_images/Sorting_img2.png)
+![Sorting_img2](Sorting_images/Sorting_img2.png)
 
 ### Display sort order
 
@@ -124,7 +124,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img3.png)
+![Sorting_img3](Sorting_images/Sorting_img3.png)
 
 ## Programmatic Sorting
 
@@ -274,7 +274,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![](Sorting_images/Sorting_img4.png)
+![Sorting_img4](Sorting_images/Sorting_img4.png)
 
 ## Handling events
 

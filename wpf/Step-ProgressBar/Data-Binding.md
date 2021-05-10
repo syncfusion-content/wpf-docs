@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF Step ProgressBar Control | Syncfusion
-description: Learn about the Data Binding support in Syncfusion WPF Step ProgressBar control and how to bind the properties.
+title: Data Binding in WPF Step ProgressBar control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more.
 platform: wpf
 control: Step ProgressBar
 documentation: ug
 ---
 
-# Binding the StepViewItems in the WPF Step ProgressBar
+# Data Binding in WPF Step ProgressBar (SfStepProgressBar)
 
 You can add a [StepViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.StepViewItem.html) using the data binding in the WPF [SfStepProgressBar](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ProgressBar.SfStepProgressBar.html).
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Closing TileView item in WPF TileViewControl | Syncfusion
-description: This section explains how to control CloseButton behavior available in TileViewItem in Syncfusion TileViewControl
+title: Close TileViewItem in WPF Tile View control | Syncfusion
+description: Learn about Close TileViewItem support in Syncfusion Essential Studio WPF Tile View control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Closing or hiding TileViewItem
+# Close TileViewItem in WPF Tile View
 
 This section explains how to closing the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and its functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 

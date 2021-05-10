@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dropdown Direction | Split Button Control | WPF | Syncfusion
-description: This section explores how to change the popup direction in the Split Button control while clicking the dropdown arrow.
+title: Dropdown Direction in WPF Split Button control | Syncfusion
+description: Learn about Dropdown Direction support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Dropdown Direction in WPF Split Button (SplitButtonAdv)
+# Dropdown Direction in WPF Split Button
 
 Dropdown direction is used to change the position of the popup being loaded while pressing dropdown arrow. The direction can be changed using the [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButtonAdv.html#Syncfusion_Windows_Tools_Controls_DropDownButtonAdv_DropDirection) enumeration.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: On-demand Loading in TreeGrid | Syncfusion.
-description: This section explains how to load the data in on-demand using the command or using the event in TreeGrid for syncfusion Essential Wpf. 
+title: Load On Demand in WPF TreeGrid control | Syncfusion
+description: Learn here all about Load On Demand support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Status Bar | Syntax Editor | WPF | Syncfusion
-description: The status bar helps to show information about file path, encoding type, line number and column number in Edit Control.
+title: Status Bar in WPF Syntax Editor control | Syncfusion
+description: Learn about Status Bar support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: WPF
 control: Syntax Editor
 documentation: ug
 ---
 
-# Status Bar
+# Status Bar in WPF Syntax Editor
 
  The status bar option is used to view primary information such as the loaded document's path, encoding type, line number and column number based on the cursor position. By default, [Visibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.StatusBarSettings.html#Syncfusion_Windows_Edit_StatusBarSettings_Visibility) property for status bar is set to be **Collapsed**. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Text Input Layout
-description: The text input layout control adds decorative elements such as floating labels, icons, and assistive labels on the top of the input views.
+title: About WPF TextInputLayout control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF TextInputLayout (SfTextInputLayout) control, its elements and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Overview
+# WPF TextInputLayout (SfTextInputLayout) Overview
 
 The text input layout control for WPF adds decorative elements such as floating labels, icons, and assistive labels on the top of [`TextBox`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox)control.
 

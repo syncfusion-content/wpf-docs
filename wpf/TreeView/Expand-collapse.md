@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and Collapse in WPF TreeView | Syncfusion
-description: Learn here about expanding and collapsing treeview nodes in WPF. And also explains about events associated with expanding and collapsing.
+title: Expand and Collapse in WPF TreeView control | Syncfusion
+description: Learn here all about Expand and Collapse support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug

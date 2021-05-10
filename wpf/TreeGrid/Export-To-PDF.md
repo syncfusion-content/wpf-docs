@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To PDF in SfTreeGrid.
-description: How to export the SfTreeGrid to pdf.
+title: Export To PDF in WPF TreeGrid control | Syncfusion
+description: Learn here all about Export To PDF support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Export to PDF
+# Export To PDF in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support to export the data to PDF file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 
@@ -145,7 +145,7 @@ e.PdfDocumentTemplate.Top = header;
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img1.png)
+![Export-To-PDF_img1](Export-To-PDF_images/Export-To-PDF_img1.png)
 
 Here, `string` is inserted in the header of the exported PDF file using the [DrawString](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert any image, line, etc., using [DrawImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_), etc., methods respectively.
 
@@ -255,7 +255,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img2.png)
+![Export-To-PDF_img2](Export-To-PDF_images/Export-To-PDF_img2.png)
 
 ## Cell appearance customization when exporting
 
@@ -283,7 +283,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img3.png)
+![Export-To-PDF_img3](Export-To-PDF_images/Export-To-PDF_img3.png)
 
 ### Cell styling based on the TreeGridPdfExportingOptions in PDF
 
@@ -350,7 +350,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img4.png)
+![Export-To-PDF_img4](Export-To-PDF_images/Export-To-PDF_img4.png)
 
 ### Export images to PDF 
 
@@ -398,7 +398,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img5.png)
+![Export-To-PDF_img5](Export-To-PDF_images/Export-To-PDF_img5.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
 
@@ -498,6 +498,6 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img6.png)
+![Export-To-PDF_img6](Export-To-PDF_images/Export-To-PDF_img6.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).

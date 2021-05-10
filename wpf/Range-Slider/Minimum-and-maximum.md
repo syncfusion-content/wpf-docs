@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Minimum | SfRangeSlider | wpf | Syncfusion
-description: This section provides how to use the Minimum and Maximum properties in WPF RangeSlider (SfRangeSlider).
+title: Minimum and Maximum in WPF Range Slider control | Syncfusion
+description: Learn here all about Minimum and Maximum support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Minimum and Maximum in WPF RangeSlider(SfRangeSlider)
+# Minimum and Maximum in WPF Range Slider (SfRangeSlider)
 
 Gets or sets the minimum and maximum possible value of the range.
 

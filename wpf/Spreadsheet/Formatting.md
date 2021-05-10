@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Formatting in SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This section explains that how to apply the styles and formats in SfSpreadsheet for Syncfusion Essential WPF.
+title: Formatting in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Formatting support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Formatting
+# Formatting in WPF Spreadsheet (SfSpreadsheet)
 
 This section explains about the formatting options similar to excel in SfSpreadsheet.
 

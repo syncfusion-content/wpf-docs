@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conversion in SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This section explains that how to convert the workbook in SfSpreadsheet to image, pdf and html for Syncfusion Essential WPF.
+title: Conversion in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Conversion support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Conversion
+# Conversion in WPF Spreadsheet (SfSpreadsheet)
 This section explains about the conversion of workbook in SfSpreadsheet into image, PDF and HTML
 
 ## Convert to Image

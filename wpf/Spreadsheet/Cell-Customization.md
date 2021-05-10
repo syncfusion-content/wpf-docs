@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Customization in SfSpreadsheet
-description: How to customize a cell in SfSpreadsheet
+title: Cell Customization in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Cell Customization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Cell Customization
+# Cell Customization in WPF Spreadsheet (SfSpreadsheet)
 
 SfSpreadsheet provides support to customize the cell with Data template. It allows to load any WPF control or custom control into the cell. 
 

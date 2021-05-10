@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Value in WPF SfTimePicker control | Syncfusion
-description: This page explains about how to set or select a time in various ways from the WPF SfTimePicker control.
+title: Setting Time in WPF TimePicker control | Syncfusion
+description: Learn here all about Setting Time support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
 platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
-# Setting time in WPF SfTimePicker
+# Setting Time in WPF TimePicker (SfTimePicker)
 
 We can change the value of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) by using the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimeSelector.html) and keyboard interaction.
 

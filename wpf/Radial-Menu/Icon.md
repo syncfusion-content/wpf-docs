@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Icon | SfRadialMenu  | wpf | Syncfusion
-description: icon
+title: Icon in WPF Radial Menu control | Syncfusion
+description: Learn here all about Icon support in Syncfusion WPF Radial Menu (SfRadialMenu) control, its elements and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Icon  
+# Icon in WPF Radial Menu (SfRadialMenu)
 
 The Icon property of the RadialMenu is used to customize the icon displayed in the center of RadialMenu circle.   
 
@@ -39,6 +39,6 @@ The Icon property of the RadialMenu is used to customize the icon displayed in t
 
 
 
-![](Concepts_images/Concepts_img4.png)
+![Concepts_img4](Concepts_images/Concepts_img4.png)
 
 

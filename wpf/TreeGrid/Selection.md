@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | TreeGrid | WPF | Syncfusion
-description: This section explains about the selection of the rows and its customization
+title: Selection in WPF TreeGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Selection
+# Selection in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you select one or more rows. 
 

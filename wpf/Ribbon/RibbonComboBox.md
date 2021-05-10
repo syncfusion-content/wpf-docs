@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RibbonComboBox in Syncfusion Ribbon control
-description: This section briefly describes the functionalities of RibbonComboBox in Syncfusion Ribbon control for WPF.
+title: RibbonComboBox in WPF Ribbon control | Syncfusion
+description: Learn about RibbonComboBox support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug

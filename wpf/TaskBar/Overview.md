@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | TaskBar | WPF | Syncfusion
-description: WPF TaskBar is a navigation control like Windows Explorer. It provides group and display views with expand, collapse, and office styles.
+title: About WPF TaskBar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Overview
+# WPF TaskBar Overview
 
 TaskBar control has the capability to provide an UI that is similar to the Windows Explorer TaskBar. It provides a consistent UI for placing commonly used functionalities as grouped items. You can place any Container Panel control inside the TaskBar. For example, when the customized Grid Panel with other controls are placed inside the TaskBar Item, it will be automatically arranged inside the TaskBar Items collection. TaskBar supports the Office2007Black, Blue, Silver, Office2003 and Blend themes.
 

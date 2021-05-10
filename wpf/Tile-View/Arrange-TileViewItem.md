@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Arranging the TileView items in WPF TileViewControl | Syncfusion
-description: Learn about arranging TileView items in Syncfusion WPF TileView Control and more details about the control features.
+title: Arrange TileViewItem in WPF Tile View control | Syncfusion
+description: Learn about Arrange TileViewItem support in Syncfusion WPF Tile View control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Arrange and navigate items in TileViewControl
+# Arrange TileViewItem in WPF Tile View
 
 This section explains how to arrange and navigate to the TileView item and its alignment functionalities in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 

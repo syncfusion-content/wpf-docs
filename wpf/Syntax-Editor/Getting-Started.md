@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Editcontrol | WPF | Syncfusion
-description: This section includes a comprehensive overview of how the Edit control can be applied in the project and how to use it.
+title: Getting Started with WPF Syntax Editor control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Getting Started with WPF EditControl
+# Getting Started with WPF Syntax Editor
 
 This section explains how to create an interactive code editor application like Microsoft Visual Studio Editor using the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html).
 

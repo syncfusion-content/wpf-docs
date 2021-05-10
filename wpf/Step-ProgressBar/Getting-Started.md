@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF Step ProgressBar control | Syncfusion
-description: Learn about getting started with the Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more details.
+title: Getting Started with WPF Step ProgressBar control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Step ProgressBar (SfStepProgressBar) control, its elements and more.
 platform: WPF
 control: SfStepProgressBar
 documentation: ug
 ---
 
-# Creating a simple application with Step ProgressBar
+# Getting Started with WPF Step ProgressBar (SfStepProgressBar)
 
 You can create a WPF application with the SfStepProgressBar control using the following steps:
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Windows 10 Compact ScrollBar | Touch ScrollBars | Syncfusion
-description: This article explains how to enable windows 10 like compact scrollbars (touch scrollbars) in WPF applications.
+title: ScrollBar Mode in WPF Themes control | Syncfusion
+description: Learn here all about ScrollBar Mode support in Syncfusion WPF Themes (Themes and Appearance) control and more.
 platform: wpf
 control: Themes
 documentation: ug
 ---
-# Getting Started with Windows 10 Compact ScrollBar (Touch ScrollBars)
+# ScrollBar Mode in WPF Themes (Themes and Appearance)
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply various scrollbar styles like windows 10 compact scrollbar for both syncfusion and framework controls using [ScrollBarMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_ScrollBarMode) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
 

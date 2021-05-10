@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Highlight Segment | SfSparkline | wpf | Syncfusion
-description: highlight segment
+title: Highlight Segment in WPF Sparkline control | Syncfusion
+description: Learn here all about Highlight Segment support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Highlight Segment
+# Highlight Segment in WPF Sparkline (SfSparkline)
 
 This feature enable to highlight the column segments on mouse move and this is applicable for column and win-loss sparkline.
 
@@ -40,4 +40,4 @@ SfColumnSparkline sparkline = new SfColumnSparkline()
 
 Following is the snapshot for highlight segment,
 
-![](Highlight-Segment_images/Highlight-Segment_img1.png)
+![Highlight-Segment_img1](Highlight-Segment_images/Highlight-Segment_img1.png)

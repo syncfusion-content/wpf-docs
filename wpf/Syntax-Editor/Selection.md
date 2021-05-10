@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Selection | Syntax Editor | WPF | Syncfusion 
-description: Edit control provides an option to select content in different ways such as mouse, keyboard, and touch interactions.
+title: Text Selection in WPF Syntax Editor control | Syncfusion
+description: Learn about Text Selection support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Text Selection
+# Text Selection in WPF Syntax Editor
 
 The `SyntaxEditor` control supports the selection of content through mouse, keyboard, and touch interactions. 
 

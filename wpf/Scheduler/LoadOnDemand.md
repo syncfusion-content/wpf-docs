@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load appointments on demand in WPF Scheduler control | Syncfusion
-description: Learn here all about to load appointments on demand from visible date ranges in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Load On Demand in WPF Scheduler control | Syncfusion
+description: Learn here all about Load On Demand support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
 documentation: ug

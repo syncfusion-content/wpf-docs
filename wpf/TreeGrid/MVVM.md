@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MVVM approach | TreeGrid | WPF | Syncfusion
-description: This section explains about binding the data to TreeGrid control using MVVM pattern
+title: MVVM in WPF TreeGrid control | Syncfusion
+description: Learn here all about MVVM support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# MVVM
+# MVVM in WPF TreeGrid (SfTreeGrid)
 
 This section explains various MVVM requirements using SfTreeGrid.
 

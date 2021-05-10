@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | Split Button Control | WPF | Syncfusion
-description: This section explores how to create model, view model and bind data to dropdown menu group using XAML data binding.
+title: Data Binding in WPF Split Button control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Data Binding in WPF Split Button (SplitButtonAdv)
+# Data Binding in WPF Split Button
 
 Data binding provides an easier way to assign, visualize and interact with the collection of predefined data. The data binding can be achieved by populating the [DropDownMenuGroup.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource) property.
 

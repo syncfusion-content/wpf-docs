@@ -1,13 +1,13 @@
 ---
-title: Document styles | WPF RichTextBox | Syncfusion
-description: This section illustrates how to create, modify, and apply style in a Word document. Supports character, paragraph and linked style types.
+title: Document Styles in WPF RichTextBox control | Syncfusion
+description: Learn here all about Document Styles support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: styles
 ---
 
-# Document Styles
+# Document Styles in WPF RichTextBox (SfRichTextBoxAdv)
 
 A style is a predefined set of table, numbering, paragraph, and character formatting properties that can be applied to regions within a document.
 In RichTextBoxAdv, styles are created and added to a document programmatically or using the built-in Styles dialog.

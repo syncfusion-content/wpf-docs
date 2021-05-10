@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About WPF SfTreeGrid Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential WPF Node Checkbox support in SfTreeGrid control, its elements, and more.
+title: Node CheckBox in WPF TreeGrid control | Syncfusion
+description: Learn here all about Node CheckBox support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
-# Node Checkbox in WPF SfTreeGrid
+# Node CheckBox in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support for loading `CheckBox` in the expander cell of each node, which allows the user to check/uncheck the corresponding node. You can display check box in each node by setting [SfTreeGrid.ShowCheckBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ShowCheckBox) property as `true`. It also provides support to process the selection in the context of state of the checkbox based on [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Direction Reversed | SfRangeSlider | wpf | Syncfusion
-description: This section provides how to use DirectionReversed property in Syncfusion WPF RangeSlider (SfRangeSlider).   
+title: Direction Reversed in WPF Range Slider control | Syncfusion
+description: Learn here all about Direction Reversed support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# DirectionReversed in WPF RangeSlider(SfRangeSlider)   
+# Direction Reversed in WPF Range Slider (SfRangeSlider)
 
 The direction of increasing value can be changed using [IsDirectionReversed](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~IsDirectionReversed.html) property. When this property is set to True, the direction of increasing value is towards left in the horizontal orientation and down in the vertical orientation. The default is false. 
 

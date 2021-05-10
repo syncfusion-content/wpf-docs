@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview | Circular Gauge | WPF | Syncfusion
-description: Numeric values can be visualized on a circular scale using WPF Circular Gauge control with built-in animations and tooltips.
+title: About WPF Radial Gauge control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
-# Overview
+# WPF Radial Gauge (SfCircularGauge) Overview
 
 The circular gauge helps to visualize numeric values on a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 
@@ -32,7 +32,7 @@ The [`Scales`](https://help.syncfusion.com/wpf/sfcirculargauge/scales) contain l
 
 ### Ranges
 
-The [`Ranges`](https://help.syncfusion.com/wpf/sfcirculargauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
+The [`Ranges`](https://help.syncfusion.com/wpf/radial-gauge/ranges) are visual elements that depict the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.
 
 ### Pointers
 

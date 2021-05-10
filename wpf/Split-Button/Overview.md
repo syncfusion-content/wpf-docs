@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Split Button | WPF | Syncfusion
-description: The WPF split button itself provides a default selection, or when the arrow is clicked, displays a drop-down list for other possible selections.
+title: About WPF Split Button control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
