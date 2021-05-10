@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | TabSplitter | wpf | Syncfusion
-description: Learn here about this section explains about how to add the TabSpliiter control in to WPF application.
+title: Getting Started with WPF Tab Splitter control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Tab Splitter control, its elements and more.
 platform: wpf
 control: TabSplitter
 documentation: ug
 ---
 
-# Getting Started with TabSplitter
+# Getting Started with WPF Tab Splitter
 
 This section explains about how to create [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabSplitter.html) control.
 

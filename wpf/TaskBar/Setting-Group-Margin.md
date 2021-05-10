@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Group Margin | TaskBar | wpf | Syncfusion
-description: setting group margin
+title: Setting Group Margin in WPF TaskBar control | Syncfusion
+description: Learn about Setting Group Margin support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Setting Group Margin
+# Setting Group Margin in WPF TaskBar
 
 You can set the margin for the items in the TaskBar control by using the [GroupMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GroupMargin) property. This is a dependency property, which sets the margin for all TaskBar Items in the TaskBar control. You can enhance the appearance of the TaskBar Items by using this property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Syncfusion ToolBarAdv control for WPF
-description: Learn how to deal with ToolBarAdv control
+title: Dealing with ToolBarAdv control in WPF ToolBar control | Syncfusion
+description: Learn here all about Dealing with ToolBarAdv control support in Syncfusion WPF ToolBar (ToolBarAdv) control and more.
 platform: wpf
 control: ToolBarAdv
 documentation: ug
 ---
 
-# Dealing with ToolBarAdv control
+# Dealing with ToolBarAdv control in WPF ToolBar (ToolBarAdv)
 
 ## Specifying the Position of ToolBarAdv's in a ToolBarTrayAdv
 
@@ -134,7 +134,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img1.jpeg)
+![Dealing-with-ToolBarAdv-control-img1](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img1.jpeg)
 
 
 ## ToolBarAdv with Overflow items
@@ -147,7 +147,7 @@ ToolBarAdv enables to set the overflow mode for each item.
 * OverflowMode.Never - Specified item will never be moved to the Overflow popup.
 * OverflowMode.AsNeeded - Specified item will be listed in the Overflow popup if required.
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
+![Dealing-with-ToolBarAdv-control-img2](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img2.jpeg)
 
 
 ## Show or hide Gripper
@@ -179,7 +179,7 @@ toolBar.GripperVisibility = Visibility.Collapsed;
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
+![Dealing-with-ToolBarAdv-control-img3](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img3.jpeg)
 
 
 ## Orientation of ToolBarTrayAdv
@@ -271,7 +271,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
+![Dealing-with-ToolBarAdv-control-img4](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img4.jpeg)
 
 
 ## Add or Remove buttons
@@ -358,7 +358,7 @@ Grid1.Children.Add(tray);
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
+![Dealing-with-ToolBarAdv-control-img5](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img5.jpeg)
 
 
 ## Hiding the ToolBarItem
@@ -414,6 +414,6 @@ To hide the particular ToolBarItem, the `IsAvailable` an attached property of th
 
 {% endtabs %}
 
-![](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)
+![Dealing-with-ToolBarAdv-control-img6](Dealing-with-ToolBarAdv-control-images/Dealing-with-ToolBarAdv-control-img6.jpeg)
 
 

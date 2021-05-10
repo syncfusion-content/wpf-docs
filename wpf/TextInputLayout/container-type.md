@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Syncfusion TextInputLayout Container Type.
-description: It describes that the background of the input view for text input layout can be changed by setting the ContainerType property.
+title: Container Type in WPF TextInputLayout control | Syncfusion
+description: Learn here all about Container Type support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Container type
+# Container Type in WPF TextInputLayout (SfTextInputLayout)
 
 Containers enhance the discoverability of the input view by creating a contrast between the input view and the assistive elements.
 

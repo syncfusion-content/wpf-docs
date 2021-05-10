@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion TextInputLayout States and Colors
-description: This section describes how to customize the colors based on its states in Syncfusion TextInputLayout control.
+title: Customization in WPF TextInputLayout control | Syncfusion
+description: Learn here all about Customization support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Customization
+# Customization in WPF TextInputLayout (SfTextInputLayout)
 
 Based on the text input layout state, the colors will be applied to the hint label, base line, border and assistive labels.
 

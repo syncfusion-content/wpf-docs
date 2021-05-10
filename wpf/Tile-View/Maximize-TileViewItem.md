@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Maximize the TileViewItem in WPF TileView control | Syncfusion
-description: Learn about how to maximizing the TileViewItems in Syncfusion WPF TileView control and more details about the control features.
+title: Maximize TileViewItem in WPF Tile View control | Syncfusion
+description: Learn about Maximize TileViewItem support in Syncfusion Essential Studio WPF Tile View control, its elements and more.
 platform: wpf
 control: TileViewControl
 documentation: ug
 ---
 
-# Maximizing TileViewItem
+# Maximize TileViewItem in WPF Tile View
 
 You can maximize the [TileViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewItem.html) and change its appearance in the [TileViewControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html).
 

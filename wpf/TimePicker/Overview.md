@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfTimePicker control | Syncfusion
-description: This page explains about overview of the WPF SfTimePicker control and its overall customazation features.
+title: About WPF TimePicker control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF TimePicker (SfTimePicker) control, its elements and more.
 platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
-# WPF SfTimePicker Overview
+# WPF TimePicker (SfTimePicker) Overview
 
 The [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) control allows the user to select time values in a touch friendly manner.
 
