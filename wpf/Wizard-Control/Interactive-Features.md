@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in WPF Wizard Control control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion WPF Wizard Control control and more.
+title: Interactive Features in WPF Wizard Control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Essential Studio WPF Wizard Control, its elements and more.
 platform: wpf
 control: Wizard
 documentation: ug

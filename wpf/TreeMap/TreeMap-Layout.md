@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TreeMap Layout in WPF TreeMap control | Syncfusion
-description: Learn here all about TreeMap Layout support in Syncfusion WPF TreeMap (SfTreeMap) control and more.
+description: Learn here all about TreeMap Layout support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
 platform: wpf
 control: TreeMap
 documentation: ug
@@ -97,7 +97,7 @@ The following screenshot illustrates a slice-and-dice layout.
 
 _Slice-and-dice layout_
 
-![C:/Users/MageshyadavM/Downloads/image250_3.jpg](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)
+![TreeMap-Layout_images2](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)
 
 
 

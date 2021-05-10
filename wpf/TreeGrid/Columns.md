@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WPF TreeGrid control | Syncfusion
-description: Learn here all about Columns support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Columns support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
