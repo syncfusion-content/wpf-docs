@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows | SfKanban | wpf | Syncfusion
-description: The following section describes about the workflows in the Kanban.
+title: Workflows in WPF Kanban Board control | Syncfusion
+description: Learn here all about Workflows support in Syncfusion WPF Kanban Board (SfKanban) control, its elements and more.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Workflow configuration
+# Workflows in WPF Kanban Board (SfKanban)
 
 A Kanban [`Workflows`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 

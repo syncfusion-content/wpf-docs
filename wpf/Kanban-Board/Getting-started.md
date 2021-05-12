@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | SfKanban | WPF| Syncfusion
-description: Learn here about getting started with simple application using WPF Kanban (SfKanban) control and more details.
+title: Getting Started with WPF Kanban Board control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Kanban Board (SfKanban) control, its elements and more.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
-# Getting Started with WPF Kanban(SfKanban)
+# Getting Started with WPF Kanban Board (SfKanban)
 
 The following section provides an assistance to create a simple Kanban application and to configure it. 
 

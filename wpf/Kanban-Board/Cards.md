@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cards | SfKanban | wpf | Syncfusion
-description: This section describes about cards and it's customization. 
+title: Cards in WPF Kanban Board control | Syncfusion
+description: Learn here all about Cards support in Syncfusion WPF Kanban Board (SfKanban) control, its elements and more.
 platform: wpf
 control: SfKanban
 documentation: ug
 ---
 
-# Cards
+# Cards in WPF Kanban Board (SfKanban)
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 

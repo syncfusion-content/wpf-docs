@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization support in syncfusion SfImageEditor WPF.
-description: This section describes on how to localize the SfImageEditor resources with their corresponding culture.
+title: Localization in WPF Image Editor control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF Image Editor (SfImageEditor) control and more.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Localization in WPF ImageEditor (SfImageEditor)
+# Localization in WPF Image Editor (SfImageEditor)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfImageEditor by adding resource file. Application culture can be changed by setting `CurrentUICulture` before `InitializeComponent()` method.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and panning support in syncfusion SfImageEditor WPF.
-description: Zooming and panning support.
+title: Zooming in WPF Image Editor control | Syncfusion
+description: Learn here all about Zooming support in Syncfusion WPF Image Editor (SfImageEditor) control and more.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming in WPF Image Editor (SfImageEditor)
 
 ## Zooming
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Image transformation in syncfusion SfImageEditor WPF.
-description: Image transformation
+title: Transformation in WPF Image Editor control | Syncfusion
+description: Learn here all about Transformation support in Syncfusion WPF Image Editor (SfImageEditor) control and more.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Transformation
+# Transformation in WPF Image Editor (SfImageEditor)
 
 The image editor control provides the following two transformations:
 

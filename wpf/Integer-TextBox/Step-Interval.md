@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval in  control | Syncfusion
-description: Learn about Step Interval support in Syncfusion WPF IntegerTextBox control and more details about the control features.WPF IntegerTextBox
+title: Step Interval in WPF Integer TextBox control | Syncfusion
+description: Learn about Step Interval support in Syncfusion WPF Integer TextBox control, its elements and more details.
 platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Step Interval in WPF IntegerTextBox
+# Step Interval in WPF Integer TextBox
 
 The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_ScrollInterval) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Culture and Formatting in WPF IntegerTextBox control | Syncfusion
-description: Learn about Culture and Formatting support in Syncfusion WPF IntegerTextBox control and more details about the control features.
+title: Culture and Formatting in WPF Integer TextBox control | Syncfusion
+description: Learn about Culture and Formatting support in Syncfusion WPF Integer TextBox control, its elements and more.
 platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Culture and Formatting in WPF IntegerTextBox
+# Culture and Formatting in WPF Integer TextBox
 
 Value of `IntegerTextBox` can be formatted in following ways:
 

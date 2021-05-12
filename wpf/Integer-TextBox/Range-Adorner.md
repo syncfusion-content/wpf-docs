@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Adorner in WPF IntegerTextBox control | Syncfusion
-description: Learn about Range Adorner support in Syncfusion WPF IntegerTextBox control and more details about the control features.
+title: Range Adorner in WPF Integer TextBox control | Syncfusion
+description: Learn about Range Adorner support in Syncfusion WPF Integer TextBox control, its elements and more details.
 platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Range Adorner in WPF IntegerTextBox 
+# Range Adorner in WPF Integer TextBox
 
 [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.IntegerTextBox.html#Syncfusion_Windows_Shared_IntegerTextBox_Value) of [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `IntegerTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.EditorBase.html#Syncfusion_Windows_Shared_EditorBase_EnableRangeAdorner) property to `true`. Default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value.  Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 

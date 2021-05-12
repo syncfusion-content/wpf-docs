@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WPF IntegerTextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF IntegerTextBox control and more details about the control features.
+title: Appearance in WPF Integer TextBox control | Syncfusion
+description: Learn about Appearance support in Syncfusion WPF Integer TextBox control, its elements and more details.
 platform: wpf
 control: IntegerTextBox
 documentation: ug
 ---
 
-# Appearance in WPF IntegerTextBox
+# Appearance in WPF Integer TextBox
 
 This section deals with the appearance of `IntegerTextBox` control and contains the following topics.
 

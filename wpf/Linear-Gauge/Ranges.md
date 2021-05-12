@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges| Linear Gauge | WPF | Syncfusion
-description: Ranges in WPF Linear Gauge are used to specify or group the scale values. It specifies a start value and end value in the LinearGauge within a scale.
+title: Ranges in WPF Linear Gauge control | Syncfusion
+description: Learn here all about Ranges support in Syncfusion WPF Linear Gauge (SfLinearGauge) control and more.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Ranges support in WPF Linear Gauge (SfLinearGauge)
+# Ranges in WPF Linear Gauge (SfLinearGauge)
 
 Range is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using the array of range objects.
 

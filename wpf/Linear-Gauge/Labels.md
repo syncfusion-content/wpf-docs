@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels | SfLinearGauge | Wpf | Syncfusion
-description: This section describes Labels support with its customization by using LabelStroke, LabelSize and other properties in WPF SfLinearGauge control.
+title: Labels in WPF Linear Gauge control | Syncfusion
+description: Learn here all about Labels support in Syncfusion WPF Linear Gauge (SfLinearGauge) control and more.
 platform: wpf
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Labels support in WPF Linear Gauge (SfLinearGauge)
+# Labels in WPF Linear Gauge (SfLinearGauge)
 
 `Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 
