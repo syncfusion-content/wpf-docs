@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Integer TextBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Integer TextBox control, its elements and more details.
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Integer TextBox control, its elements and more.
 platform: WPF
 control: IntegerTextBox 
 documentation: ug
