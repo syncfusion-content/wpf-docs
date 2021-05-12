@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling | SfRating | wpf | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in WPF Rating control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion WPF Rating (SfRating) control and more.
 platform: wpf
 control: SfRating
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in WPF Rating (SfRating)
 
 When the default view is not needed, you can customize the view of WPF SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 

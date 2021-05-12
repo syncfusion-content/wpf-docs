@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: This section explores how to customize the label with intervals, formatters, visibility and range padding in DateTimeRangeNavigator
+title: Customization in WPF Range Selector control | Syncfusion
+description: Learn here all about Customization support in Syncfusion WPF Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Customization in DateTimeRangeNavigator
+# Customization in WPF Range Selector (SfDateTimeRangeNavigator)
 
 ## Interval customization
 

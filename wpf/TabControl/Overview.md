@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WPF TabControlExt | Syncfusion
-description: WPF TabControlExt provides a tab based navigation functionality. It provides close button for tabs, tab ordering, and editable tab headers.
+title: About WPF TabControl control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF TabControl (TabControlExt) control, its elements and more.
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# WPF TabControl(TabControlExt) Overview
+# WPF TabControl (TabControlExt) Overview
 
 The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using `TabControl`, an application can define multiple pages for the same area of a window. `TabControl` contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `TabControl`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
 

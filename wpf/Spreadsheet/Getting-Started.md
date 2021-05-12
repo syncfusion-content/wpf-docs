@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfSpreadsheet Control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential WPF SfSpreadsheet control, its elements, and more.
+title: Getting Started with WPF Spreadsheet control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Getting Started with WPF SfSpreadsheet
+# Getting Started with WPF Spreadsheet (SfSpreadsheet)
 This section helps you to get started with the SfSpreadsheet
 
 ## Assemblies Deployment

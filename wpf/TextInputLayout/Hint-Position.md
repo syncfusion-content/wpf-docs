@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion text input layout hint position
-description: It describes that the hint position for text input layout can be fixed always at the top by setting the HintFloatMode property.
+title: Hint Position in WPF TextInputLayout control | Syncfusion
+description: Learn here all about Hint Position support in Syncfusion WPF TextInputLayout (SfTextInputLayout) control and more.
 platform: wpf
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Fixed hint position
+# Hint Position in WPF TextInputLayout (SfTextInputLayout)
 
 We can decide how the floating label will display by setting the `HintFloatMode` property.
 

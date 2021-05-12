@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip of SfTreeGrid.
-description: ToolTip of SfTreeGrid | SfTreeGrid | ToolTip 
+title: ToolTip in WPF TreeGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in WPF TreeGrid (SfTreeGrid)
 
 Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
 
@@ -51,7 +51,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowToolTip).
 
-![](Interactive-Features_images/InteractiveFeatures_img1.png)
+![InteractiveFeatures_img1](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 ## Header tooltip
 
@@ -72,7 +72,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img2.png)
+![InteractiveFeatures_img2](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 ## Tooltip customization
 
@@ -96,7 +96,7 @@ You can change appearance of the tooltip by customizing the style with TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img3.png)
+![InteractiveFeatures_img3](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 You can customize the template of the tooltip by using the [TreeGridColumn.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplate) and [TreeGridColumn.ToolTipTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplateSelector) properties. 
 
@@ -152,7 +152,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img4.png)
+![InteractiveFeatures_img4](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
@@ -231,11 +231,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The following image shows the DefaultTemplate applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img5.png)
+![InteractiveFeatures_img5](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 The following image shows the AlternateTemplate applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img6.png)
+![InteractiveFeatures_img6](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
 

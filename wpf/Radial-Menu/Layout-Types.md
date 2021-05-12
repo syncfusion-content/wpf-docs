@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Layout Types | SfRadialMenu  | wpf | Syncfusion
-description: layout types
+title: Layout Types in WPF Radial Menu control | Syncfusion
+description: Learn here all about Layout Types support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
-# Layout Types
+# Layout Types in WPF Radial Menu (SfRadialMenu)
 
 There are two different layout types available for SfRadialMenu.
 
@@ -75,7 +75,7 @@ radialMenu.Items.Add(item6); radialMenu.Items.Add(item3); </td></tr>
 
 {%endtabs%}
 
-![](Concepts_images/Concepts_img7.png)
+![Concepts_img7](Concepts_images/Concepts_img7.png)
 
 
 

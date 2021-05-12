@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | SfSmithChart | Wpf | Syncfusion
-description: Appearance and its customization such as palette and chart area properties of syncfusion smith chart control.
+title: Appearance in WPF Smith Chart control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Appearance and its customization of smith chart
+# Appearance in WPF Smith Chart (SfSmithChart)
 
 ## SmithChart Palette
 

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: ChartArea of Sunburst.
-description: This section explains entire chart properties and all its elements. 
+title: Region in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Region support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Sunburst Region
+# Region in WPF Sunburst Chart (SfSunburstChart)
 
 Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels etc. It has some major properties as
 
@@ -49,7 +49,7 @@ sunburstChart.EndAngle = 360;
 
 {% endtabs %}
 
-![](Region_images/Region_img1.jpeg)
+![Region_img1](Region_images/Region_img1.jpeg)
 
 
 ## Sunburst radius
@@ -74,7 +74,7 @@ chart.Radius = 0.6;
 
 {% endtabs %}
 
-![](Region_images/Region_img2.jpeg)
+![Region_img2](Region_images/Region_img2.jpeg)
 
 
 ## Sunburst inner radius
@@ -99,6 +99,6 @@ chart.InnerRadius = 0.5;
 
 {% endtabs %}
 
-![](Region_images/Region_img3.jpeg)
+![Region_img3](Region_images/Region_img3.jpeg)
 
 

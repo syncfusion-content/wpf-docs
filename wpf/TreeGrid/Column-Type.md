@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types | TreeGrid | WPF | Syncfusion
-description: How to use different column types in SfTreeGrid.
+title: Column Types in WPF TreeGrid control | Syncfusion
+description: Learn here all about Column Types support in Syncfusion WPF TreeGrid (SfTreeGrid) control, its elements and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Column Types
+# Column Types in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.

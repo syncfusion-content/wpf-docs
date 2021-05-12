@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items | SfTreeNavigator | wpf | Syncfusion
-description: This section deals with explain about the populating items in WPF Tree Navigator (SfTreeNavigator) control 
+title: Populating Items in WPF Tree Navigator control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion WPF Tree Navigator (SfTreeNavigator) control and more.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
 ---
 
-# Populating Items in WPF Tree Navigator (SfTreeNavigator)s
+# Populating Items in WPF Tree Navigator (SfTreeNavigator)
 
 ## Items source 
 

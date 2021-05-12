@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header | SfCircularGauge | Wpf | Syncfusion
-description: Header in WPF Circular Gauge are used to show the label inside on the scale. The header also be customized with its properties. 
+title: Header in WPF Radial Gauge control | Syncfusion
+description: Learn here all about Header support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Header support in SfCircularGauge
+# Header in WPF Radial Gauge (SfCircularGauge)
 
 Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader) option. This provides information about the data that is being plotted in the circular gauge.
 

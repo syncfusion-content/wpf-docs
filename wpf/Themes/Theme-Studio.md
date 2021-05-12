@@ -7,7 +7,7 @@ control: ThemeStudio
 documentation: ug
 ---
 
-# Getting Started with WPF Theme Studio
+# Theme Studio in WPF Themes (Themes and Appearance)
 
 The Theme Studio helps users to transform their visual presentation into a new theme in minutes. End users can select an appropriate base theme, change its primary color, preview and export it as a theme project, and utilize it in their applications for a rich user interface experience.
 

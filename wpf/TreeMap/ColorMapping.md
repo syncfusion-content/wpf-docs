@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorMapping | TreeMap | wpf | Syncfusion
-description: This section describes uni color, range brush color, desaturation color, palette color, group color mapping in WPF TreeMap (SfTreeMap) 
+title: ColorMapping in WPF TreeMap control | Syncfusion
+description: Learn here all about ColorMapping support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
 platform: wpf
 control: TreeMap
 documentation: ug
 ---
 
-# ColorMapping in SfTreeMap
+# ColorMapping in WPF TreeMap (SfTreeMap)
 
 ColorMapping is categorized into four different types such as,
 

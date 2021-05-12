@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ApplicationMenu | WindowsForms | Syncfusion
-description: This section briefly describes the functionalities of Application Menu support in Syncfusion Ribbon control for WPF.
+title: Application Menu in WPF Ribbon control | Syncfusion
+description: Learn about Application Menu support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug

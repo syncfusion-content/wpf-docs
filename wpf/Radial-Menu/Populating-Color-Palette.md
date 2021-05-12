@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Color Palette | SfRadialMenu | wpf | Syncfusion
-description: populating color palette
+title: Populating Color Palette in WPF Radial Menu control | Syncfusion
+description: Learn here all about Populating Color Palette support in Syncfusion WPF Radial Menu (SfRadialMenu) control and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug
 ---
 
-# Populating Color Palette
+# Populating Color Palette in WPF Radial Menu (SfRadialMenu)
 
 Color Palette can be formed in Radial Menu with the Radial Color Items. 
 
@@ -53,5 +53,5 @@ Color Palette can be formed in Radial Menu with the Radial Color Items.
 
 
 
-![](Concepts_images/Concepts_img5.png)
+![Concepts_img5](Concepts_images/Concepts_img5.png)
 

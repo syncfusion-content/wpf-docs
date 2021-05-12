@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels | SfCircularGauge | Wpf | Syncfusion
-description: This section describes the label stroke customization, label font customization, setting position for labels, setting smart labels for SfCircularGauge control.
+title: Labels in WPF Radial Gauge control | Syncfusion
+description: Learn here all about Labels support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Labels support in SfCircularGauge
+# Labels in WPF Radial Gauge (SfCircularGauge)
 
 The `Scale` labels associate numeric values with major scale tick marks.
 

@@ -1,12 +1,12 @@
 ---
-title: Clipboard
-description: clipboard
+title: Clipboard in WPF RichTextBox control | Syncfusion
+description: Learn here all about Clipboard support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: clipboard
 ---
-# Clipboard
+# Clipboard in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv takes advantage of the clipboard support and allows you to copy or paste contents to and from the clipboard in the following formats.
 

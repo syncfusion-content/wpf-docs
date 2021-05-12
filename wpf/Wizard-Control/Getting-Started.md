@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WizardControl | wpf | Syncfusion
-description: This section gives the detailed description on how to implement the WizardControl in WPF application.
+title: Getting Started with WPF Wizard Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Wizard control, its elements and more.
 platform: wpf
 control: Wizard
 documentation: ug
 ---
 
-# Getting  with WizardControl
+# Getting Started with WPF Wizard Control
 
 This section gives a quick overview for working with the [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 

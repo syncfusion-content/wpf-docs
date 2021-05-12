@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF SfTimePicker control | Syncfusion
-description: Learn about UI customization, styling, theme support in Syncfusion WPF SfTimePicker control and more details about the control features.
+title: Appearance in WPF TimePicker control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF TimePicker (SfTimePicker) control and more.
 platform: wpf
 control: SfTimePicker
 documentation: ug
 ---
 
-# Appearance and Styling in WPF SfTimePicker
+# Appearance in WPF TimePicker (SfTimePicker)
 
 This section explains different UI customization, styling, theming options available in [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) control.
 

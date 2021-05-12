@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization Support | SfRangeSlider | wpf | Syncfusion
-description: This section describes how to change the appearance of the active and inactive track, thumb, and TickBarItem.
+title: Styling and Appearance in WPF Range Slider control | Syncfusion
+description: Learn here all about Styling and Appearance support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Customization in WPF RangeSlider(SfRangeSlider) 
+# Styling and Appearance in WPF Range Slider (SfRangeSlider)
 
 [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) makes it possible to change the appearance by providing certain properties.
 

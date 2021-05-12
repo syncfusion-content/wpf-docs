@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF TimeSpanEdit control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF TimeSpanEdit control and more details about the control features.
+title: Getting Started with WPF TimeSpan Editor control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF TimeSpan Editor (TimeSpanEdit) control, its elements and more.
 platform: WPF
 control: TimeSpanEdit
 documentation: ug
 ---
 
-# Getting started with WPF TimeSpanEdit
+# Getting Started with WPF TimeSpan Editor (TimeSpanEdit)
 
 This section explains how to create a WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) and explains about its structure and features.
 

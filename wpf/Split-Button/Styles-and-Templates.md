@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates | Split Button Control | WPF | Syncfusion
-description: This section explores how to customize the Split Button styles and templates using Blend and Visual Studio.
+title: Styles and Templates in WPF Split Button control | Syncfusion
+description: Learn about Styles and Templates support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Styles and Templates in WPF Split Button (SplitButtonAdv)
+# Styles and Templates in WPF Split Button
 
 WPF styles and templates is a suite of features that allow developers and designers to create visual compelling effects and consistent appearance of the products. 
 

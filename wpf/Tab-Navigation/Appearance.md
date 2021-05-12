@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | TabNavigation | WPF | Syncfusion
-description: This section describes how to customize the visibility of header, navigation button and tab strip on tab navigation control.
+title: Appearance in WPF Tab Navigation control | Syncfusion
+description: Learn about Appearance support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
 platform: WPF
 control: TabNavigation
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF Tab Navigation
 
 ## Show/hide the Header
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Group Padding | TaskBar | wpf | Syncfusion
-description: setting group padding
+title: Setting Group Padding in WPF TaskBar control | Syncfusion
+description: Learn about Setting Group Padding support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Setting Group Padding
+# Setting Group Padding in WPF TaskBar
 
 You can set the padding for the TaskBar Items by using the [GroupPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_GroupPaddingProperty) property. This is an attached property, which sets the padding for adjusting the TaskBarItems by using the [SetGroupPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TaskBar.html#Syncfusion_Windows_Tools_Controls_TaskBar_SetGroupPadding_System_Windows_DependencyObject_System_Windows_Thickness_) method. You can enhance the appearance of the content in the taskbar items by using this property.
 

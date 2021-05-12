@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series| SfSmithChart | Wpf | Syncfusion
-description: Rendering type SfSmithChart control.
+title: Series in WPF Smith Chart control | Syncfusion
+description: Learn here all about Series support in Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
 platform: wpf
 control: series
 documentation: ug
 ---
 
-# Series
+# Series in WPF Smith Chart (SfSmithChart)
 
 Chart series is the visual representation of the given data.
 
@@ -51,7 +51,7 @@ The below code example explains how to create a simple `LineSeries` by using giv
     
 {% endtabs %}
 
-![](Series_images/Series_img1.png)
+![Series_img1](Series_images/Series_img1.png)
 
 **Customizing LineSeries**
 
@@ -80,7 +80,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Series_images/Series_img2.png)
+![Series_img2](Series_images/Series_img2.png)
 
 ## Animation
 
@@ -143,4 +143,4 @@ chart.Series.Add(series2);
     
 {% endtabs %}
 
-![](Series_images/Series_img3.png)
+![Series_img3](Series_images/Series_img3.png)

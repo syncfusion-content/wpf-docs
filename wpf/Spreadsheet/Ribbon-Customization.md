@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF Spreadsheet Ribbon customization | Syncfusion
-description: This section explains that how to customize the SfSpreadsheet with SfSpreadsheetRibbon for Syncfusion Essential WPF.
+title: Ribbon Customization in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Ribbon Customization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Ribbon Customization
+# Ribbon Customization in WPF Spreadsheet (SfSpreadsheet)
 
 Ribbon Customization can be done in two ways,
 

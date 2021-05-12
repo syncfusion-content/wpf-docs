@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and Customization| SfChart3D | Wpf | Syncfusion
-description: Explains the customizing and styling options to apply the different kinds of themes or palettes to WPF Chart (SfChart 3D)
+title: Appearance in WPF SfChart3D control | Syncfusion
+description: Learn about Appearance support in Syncfusion Essential Studio WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Styling and Customization
+# Appearance in WPF SfChart3D
 
 SfChart3D supports various customizing and styling options that allow you to enrich the application.
 

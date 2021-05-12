@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Structure | SfRangeSlider | wpf | Syncfusion
-description: This section describes the visual elements of the Syncfusion WPF RangeSlider (SfRangeSlider) control.
+title: Visual Structure in WPF Range Slider control | Syncfusion
+description: Learn here all about Visual Structure support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
 ---
 
-# Visual Structure of WPF RangeSlider(SfRangeSlider)
+# Visual Structure in WPF Range Slider (SfRangeSlider)
 
 This section describes the visual elements of the RangeSlider control and defines terms and concepts used in the RangeSlider.
 

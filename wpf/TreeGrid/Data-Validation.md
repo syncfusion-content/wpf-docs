@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Validation support in SfTreeGrid.
-description: How to validate the data in SfTreeGrid.
+title: Data Validation in WPF TreeGrid control | Syncfusion
+description: Learn here all about Data Validation support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Data Validation
+# Data Validation in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
@@ -83,7 +83,7 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
 
 ### INotifyDataErrorInfo
 You can validate the data by implementing the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in model class.
@@ -139,7 +139,7 @@ Enable built-in validation support by setting `SfTreeGrid.GridValidationMode` or
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
 
 ## Built-in validation using Data Annotation
 
@@ -380,7 +380,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
 
 #### Change the color of error icon
 
@@ -472,7 +472,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
 
 #### Change the cursor on error icon
 
@@ -565,7 +565,7 @@ You can change the validation error template cursor of the `TreeGridCell` by c
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
 
 ### Customizing error tip
 
@@ -656,7 +656,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img6.png)
+![Data-Validation_img6](Data-Validation_images/Data-Validation_img6.png)
 
 ### Showing error details in RowHeader
 
@@ -683,7 +683,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img7.png)
+![Data-Validation_img7](Data-Validation_images/Data-Validation_img7.png)
 
 #### Using INotifyDataErrorInfo
 
@@ -706,7 +706,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img8.png)
+![Data-Validation_img8](Data-Validation_images/Data-Validation_img8.png)
 
 ## Validation with CheckBox column
 
@@ -758,7 +758,7 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img9.png)
+![Data-Validation_img9](Data-Validation_images/Data-Validation_img9.png)
 
 ## Limitations 
 
