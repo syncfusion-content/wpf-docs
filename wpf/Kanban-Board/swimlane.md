@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Swimlane support in WPF kanban board | Syncfusion
-description: This documentation explains the swimlane support and its customization in WPF Kanban board. 
+title: Swimlane in WPF Kanban Board control | Syncfusion
+description: Learn here all about Swimlane support in Syncfusion WPF Kanban Board (SfKanban) control, its elements and more.
 platform: WPF
 control: SfKanban
 documentation: ug
 ---
-# Swim lanes
+# Swimlane in WPF Kanban Board (SfKanban)
 
 Swim lanes are horizontal categorizations; they allow you to categorize your current workflow by different projects, teams, users, or whatever you need. 
 

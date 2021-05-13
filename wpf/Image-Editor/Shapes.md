@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes of syncfusion SfImageEditor WPF.
-description: This section explains how the image can be annotated by adding default shapes such as Circle, Rectangle, Arrow on it.
+title: Shapes in WPF Image Editor control | Syncfusion
+description: Learn here all about Shapes support in Syncfusion WPF Image Editor (SfImageEditor) control and more.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Shapes in SfImageEditor
+# Shapes in WPF Image Editor (SfImageEditor)
 
 You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also image editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation | SfLinearGauge | Wpf | Syncfusion
-description: This section describes Orientation customization support with Orientation property in WPF SfLinearGauge control.
+title: Orientation in WPF Linear Gauge control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion WPF Linear Gauge (SfLinearGauge) control and more.
 platform: wpf
 control: Orientation
 documentation: ug
 ---
 
-# Orientation customization in WPF Linear Gauge (SfLinearGauge)
+# Orientation in WPF Linear Gauge (SfLinearGauge)
 
 The `LinearGauge` control supports horizontal and vertical orientations. By default, the `LinearGauge` is rendered with horizontal orientation. You can change the orientation using the [`Orientation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Orientation) property.
 

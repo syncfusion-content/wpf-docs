@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Segment of the WPF Linear ProgressBar control | Syncfusion
-description: Learn here about segment support with corner radius in the Syncfusion WPF Linear ProgressBar control and more details.
+title: Segments in WPF linear progressbar control | Syncfusion
+description: Learn here all about Segments support in Syncfusion WPF linear progressbar (SfLinearProgressBar) control and more.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
 ---
-# Segments in Linear ProgressBar
+# Segments in WPF linear progressbar (SfLinearProgressBar)
 Divides the progressbar into multiple segements using the API.
 
 ## Segment

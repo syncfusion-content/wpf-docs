@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance of the WPF Linear ProgressBar control | Syncfusion
-description: Learn here about appearance and look of the Syncfusion WPF Linear ProgressBar control and more details.
+title: Appearance in WPF linear progressbar control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion WPF linear progressbar (SfLinearProgressBar) control and more.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Appearance in Linear ProgressBar
+# Appearance in WPF linear progressbar (SfLinearProgressBar)
 You can highly customize the appearance of the linear progressbar in the following ways.
 
 ## Corner radius

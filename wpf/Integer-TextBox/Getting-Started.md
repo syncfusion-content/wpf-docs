@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF IntegerTextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF IntegerTextBox control and more details about the control features.
+title: Getting Started with WPF Integer TextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Integer TextBox control, its elements and more.
 platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Getting started with WPF IntegerTextBox
+# Getting Started with WPF Integer TextBox
 
 This section explains how to create a WPF `IntegerTextBox` control and its features.
 
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet packages in a WPF application in the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF IntegerTextBox via designer
 
