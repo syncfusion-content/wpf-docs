@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Editing behavior in SfSpreadsheet | SfSpreadsheet | syncfusion
-description: This section provides a basic ideas of Editing behavior in SfSpreadsheet for Syncfusion Essential WPF.
+title: Editing in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Editing support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Editing
+# Editing in WPF Spreadsheet (SfSpreadsheet)
 
 This section explains about the Editing behavior, Data Validation and Hyperlinks in SfSpreadsheet.
 

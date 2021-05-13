@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfRadialMenu  | wpf | Syncfusion
-description: This section explain about how to integrate WPF Radial Menu (SfRadialMenu) into an applicationl and enable its basic features with example.
+title: Getting Started with WPF Radial Menu control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Radial Menu (SfRadialMenu) control, its elements and more.
 platform: wpf
 control: SfRadialMenu 
 documentation: ug

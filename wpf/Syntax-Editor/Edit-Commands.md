@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Edit Commands | Syntax Editor | WPF | Syncfusion
-description: This section briefly explains how the Edit Command works in Syntax Editor for Syncfusion Essential WPF.
+title: Edit Commands in WPF Syntax Editor control | Syncfusion
+description: Learn about Edit Commands support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Edit Commands
+# Edit Commands in WPF Syntax Editor
 
 Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, save as and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
 

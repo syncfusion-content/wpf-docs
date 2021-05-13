@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This sections explains that how to print the workbooks and its sheets in SfSpreadsheet for Syncfusion Essential WPF.
+title: Printing in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Printing support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Printing
+# Printing in WPF Spreadsheet (SfSpreadsheet)
 
 SfSpreadsheet control allows you to print the data in the workbook with the help of PDF Conversion. To provide the printing support in SfSpreadsheet, you need to convert the workbook into PDF document using ExcelToPdfConverter.
 

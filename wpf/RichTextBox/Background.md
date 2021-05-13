@@ -1,6 +1,6 @@
 ---
-title: Document background | WPF RichTextBox | Syncfusion
-description: This section illustrates about how to apply page and control background color in WPF RichTextBox control.
+title: Background in WPF RichTextBox control | Syncfusion
+description: Learn here all about Background support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug

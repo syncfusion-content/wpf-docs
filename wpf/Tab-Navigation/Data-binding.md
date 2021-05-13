@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data binding | TabNavigation | WPF | Syncfusion
-description: This section describes how to add tabnavigation items through items source in tab navigation control.
+title: Data binding in WPF Tab Navigation control | Syncfusion
+description: Learn about Data binding support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
 platform: WPF
 control: TabNavigation
 documentation: ug
 ---
 
-# Data binding
+# Data binding in WPF Tab Navigation
 
 Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
 

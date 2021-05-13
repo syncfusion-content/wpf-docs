@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Tile | WPF | Syncfusion
-description: WPF Tile Control provides the application with live updates and notifications similar to Windows Desktop and Windows Phone.
+title: About WPF Tile Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfHubTile
 documentation: ug

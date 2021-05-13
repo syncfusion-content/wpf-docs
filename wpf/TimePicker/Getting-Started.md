@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WPF SfTimePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF SfTimePicker control and more details about the control features.
+title: Getting Started with WPF TimePicker control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF TimePicker (SfTimePicker) control, its elements and more.
 platform: WPF
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with WPF SfTimePicker
+# Getting Started with WPF TimePicker (SfTimePicker)
 
 This section explains how to create a WPF [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) and explains about its structure.
 

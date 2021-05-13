@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows and Columns Operations | SfSpreadsheet | Syncfusion
-description: This section explains that the operations involved with rows and columns in SfSpreadsheet for Syncfusion Essential WPF.
+title: Rows and Columns in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Rows and Columns support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Rows and Columns
+# Rows and Columns in WPF Spreadsheet (SfSpreadsheet)
 This section explains about the operations related with rows and columns in SfSpreadsheet
 
 ## Insert Rows and Columns

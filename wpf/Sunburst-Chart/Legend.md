@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Legend of Sunburst.
-description: It is used to dispaly the information about the segment.
+title: Legend in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Legend support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Legend
+# Legend in WPF Sunburst Chart (SfSunburstChart)
 
 The Legend is used to represent the first level of categories in sunburst chart. 
 
@@ -37,7 +37,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/Legend_img1.jpeg)
+![Legend_img1](Legend_images/Legend_img1.jpeg)
 
 
 ## Legend Icon
@@ -75,7 +75,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/Legend_img2.jpeg)
+![Legend_img2](Legend_images/Legend_img2.jpeg)
 
 
 The following properties are used to customize the legend icons size.
@@ -108,7 +108,7 @@ You can customize your own legend shape by applying custom template using [`Lege
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.jpeg)
+![Legend_img3](Legend_images/Legend_img3.jpeg)
 
 
 Note: You need to set [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply custom template.
@@ -142,7 +142,7 @@ chart.Legend = legend;
 {% endtabs %}
 
 
-![](Legend_images/Legend_img4.jpeg)
+![Legend_img4](Legend_images/Legend_img4.jpeg)
 
 
 ## Customize the Legend
@@ -181,7 +181,7 @@ You can arrange the legend items smartly by using ItemPanelTemplate and ItemTemp
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.jpeg)
+![Legend_img5](Legend_images/Legend_img5.jpeg)
 
 
 ## Legend Interactivity
@@ -220,7 +220,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/Legend_img6.jpeg)
+![Legend_img6](Legend_images/Legend_img6.jpeg)
 
 
 ### ToggleSegmentVisibility
@@ -251,6 +251,6 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/Legend_img7.jpeg)
+![Legend_img7](Legend_images/Legend_img7.jpeg)
 
 

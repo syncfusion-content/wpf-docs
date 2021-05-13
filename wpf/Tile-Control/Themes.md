@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes | Tile control | WPF | Syncfusion
-description: This section explains about the various themes support provided for the Hub Tile and Pulsing Tile control.
+title: Themes in WPF Tile Control | Syncfusion
+description: Learn here about Themes support in Syncfusion Essential Studio WPF Tile Control, its elements and more.
 platform: WPF
 control: SfHubTile
 documentation: ug
 ---
 
-# Themes support in Hub Tile and Pulsing Tile
+# Themes in WPF Tile Control
 
 Hub Tile and Pulsing Tile supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 

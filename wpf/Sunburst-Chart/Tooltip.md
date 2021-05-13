@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Tooltip behavior of Sunburst.
-description: This section explains the tooltip behavior of the SunburstChart.
+title: Tooltip in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# ToolTip
+# Tooltip in WPF Sunburst Chart (SfSunburstChart)
 
 ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value.
 
@@ -36,7 +36,7 @@ chart.Behaviors.Add(tooltip);
 {% endtabs %}
 
 
-![](Tooltip_images/Tooltip_img1.jpeg)
+![Tooltip_img1](Tooltip_images/Tooltip_img1.jpeg)
 
 
 ## Aligning the ToolTip
@@ -69,7 +69,7 @@ sunburstChart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-![](Tooltip_images/Tooltip_img2.jpeg)
+![Tooltip_img2](Tooltip_images/Tooltip_img2.jpeg)
 
 
 ### VerticalAlignment
@@ -86,7 +86,7 @@ The following code shows, how to position the tooltip to bottom of the cursor.
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img3.jpeg)
+![Tooltip_img3](Tooltip_images/Tooltip_img3.jpeg)
 
 
 ## VerticalOffset and HorizontalOffset
@@ -118,7 +118,7 @@ sunburstChart.Behaviors.Add(tooltip);
 {% endtabs %}
 
 
-![](Tooltip_images/Tooltip_img4.jpeg)
+![Tooltip_img4](Tooltip_images/Tooltip_img4.jpeg)
 
 
 ### TooltipDuration
@@ -232,6 +232,6 @@ You can customize the default appearance of the tooltip by applying the [`Toolti
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img5.jpeg)
+![Tooltip_img5](Tooltip_images/Tooltip_img5.jpeg)
 
 

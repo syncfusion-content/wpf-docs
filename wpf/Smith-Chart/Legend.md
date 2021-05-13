@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | SfSmithChart | Wpf | Syncfusion
-description: legend
+title: Legend in WPF Smith Chart control | Syncfusion
+description: Learn here all about Legend support in Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug
 ---
 
-# Legend
+# Legend in WPF Smith Chart (SfSmithChart)
 
 The legend contains the list of chart series that appear in a SmithChart. It can be defined by using the following code example.
 
@@ -65,7 +65,7 @@ this.Grid1.Children.Add(chart);
     
 {% endtabs %}
 
-![](Legend_images/Legend_img1.png)
+![Legend_img1](Legend_images/Legend_img1.png)
 
 ## Positioning the Legend
 
@@ -102,7 +102,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img2.png)
+![Legend_img2](Legend_images/Legend_img2.png)
 
 **Floating Legends**
 
@@ -137,7 +137,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img3.png)
+![Legend_img3](Legend_images/Legend_img3.png)
 
 ## Legend Icon
 
@@ -170,7 +170,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img4.png)
+![Legend_img4](Legend_images/Legend_img4.png)
 
 **Custom Legend Icon**
 
@@ -207,7 +207,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img5.png)
+![Legend_img5](Legend_images/Legend_img5.png)
 
 ## Customizing Legend
 
@@ -252,7 +252,7 @@ The following code example illustrates the customization of legend icon and text
     
 {% endtabs %}
 
-![](Legend_images/Legend_img6.png)
+![Legend_img6](Legend_images/Legend_img6.png)
 
 ## VisibilityOnLegend
 
@@ -300,7 +300,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img7.png)
+![Legend_img7](Legend_images/Legend_img7.png)
 
 ## Series Visibility
 
@@ -347,4 +347,4 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img8.png)
+![Legend_img8](Legend_images/Legend_img8.png)

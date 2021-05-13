@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: DataLabels of Sunburst.
-description: It is used to display the data releated to the chart segment. 
+title: Data Label in WPF Sunburst Chart control | Syncfusion
+description: Learn here all about Data Label support in Syncfusion WPF Sunburst Chart (SfSunburstChart) control and more.
 platform: wpf 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Data Labels
+# Data Label in WPF Sunburst Chart (SfSunburstChart)
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users. 
 
@@ -39,7 +39,7 @@ chart.DataLabelInfo = dataLabelInfo;
 
 {% endtabs %}
 
-![](DataLabel_images/DataLabel_img1.jpeg)
+![DataLabel_img1](DataLabel_images/DataLabel_img1.jpeg)
 
 N> By default, the ShowLabel property value is True.
 
@@ -81,7 +81,7 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 
 {% endtabs %}
 
-![](DataLabel_images/DataLabel_img2.jpeg)
+![DataLabel_img2](DataLabel_images/DataLabel_img2.jpeg)
 
 ### Trim
 
@@ -112,7 +112,7 @@ chart.DataLabelInfo = dataLabelInfo;
 
 {% endtabs %}
 
-![](DataLabel_images/DataLabel_img3.jpeg)
+![DataLabel_img3](DataLabel_images/DataLabel_img3.jpeg)
 
 ## LabelRotationMode
 
@@ -146,7 +146,7 @@ chart.DataLabelInfo = dataLabelInfo;
 
 {% endtabs %}
 
-![](DataLabel_images/DataLabel_img4.jpeg)
+![DataLabel_img4](DataLabel_images/DataLabel_img4.jpeg)
 
 
 N> By default, LabelRotationMode value is Angle.
@@ -171,6 +171,6 @@ You can customize the default appearance or display information about the data p
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img5.jpeg)
+![DataLabel_img5](DataLabel_images/DataLabel_img5.jpeg)
 
 

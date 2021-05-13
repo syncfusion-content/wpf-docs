@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Outlines support in SfSpreadsheet | Syncfusion
-description: This section explains that how to group/ungroup the rows and columns in SfSpreadsheet for Syncfusion Essential WPF.
+title: Outline in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Outline support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Outline (Group)
+# Outline in WPF Spreadsheet (SfSpreadsheet)
 
 SfSpreadsheet provides support for outlines like in excel which makes your data easier to view. You can group or ungroup the data’s either by rows or columns.
 

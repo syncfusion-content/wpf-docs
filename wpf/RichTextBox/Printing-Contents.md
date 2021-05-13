@@ -1,12 +1,12 @@
 ---
-title: Printing Contents
-description: printing contents
+title: Printing Contents in WPF RichTextBox control | Syncfusion
+description: Learn here all about Printing Contents support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: printing
 ---
-# Printing Contents
+# Printing Contents in WPF RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports API to print the rich text content rendered as pages using the print dialog.
 The following sample code demonstrates how to print the document content as pages.

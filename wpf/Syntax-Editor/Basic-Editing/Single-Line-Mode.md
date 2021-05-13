@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Single Line Mode | Syntax Editor | WPF | Syncfusion
-description: This section briefly explains how the Single Line Mode works in Syntax Editor for Syncfusion Essential WPF.
+title: Single Line Mode in WPF Syntax Editor control | Syncfusion
+description: Learn about Single Line Mode support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug

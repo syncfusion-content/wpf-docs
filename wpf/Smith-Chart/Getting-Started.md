@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfSmithChart | WPF | Syncfusion 
-description: This section explain about how to integrate WPF Smith Chart (SfSmithChart) into an applicationl and enable its basic features with example.
+title: Getting Started with WPF Smith Chart control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
 platform: wpf
 control: SfSmithChart
 documentation: ug

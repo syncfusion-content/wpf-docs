@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Merging in Syncfusion Ribbon control
-description: This section briefly describes the options to merge two different Ribbon controls in WPF Ribbon Merge support.
+title: Ribbon Merge in WPF Ribbon control | Syncfusion
+description: Learn about Ribbon Merge support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon Merging for MDI Applications
+# Ribbon Merge in WPF Ribbon
 
 WPF [Ribbon](https://help.syncfusion.com/wpf/ribbon/gettingstarted) allows merging of [RibbonTab](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) and [RibbonBar](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) of two different Ribbon controls in MDI applications. [DocumentContainer.MDIParentRibbon](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~MDIParentRibbon.html), [RibbonTab.MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) and [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeOrder.html) properties helps to perform menu merging.
 

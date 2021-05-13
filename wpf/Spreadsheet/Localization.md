@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in SfSpreadsheet | wpf | Syncfusion
-description: This section explains that how to localize the default strings of SfSpreadsheet to any language settings for Syncfusion Essential WPF.
+title: Localization in WPF Spreadsheet control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Localization in WPF SfSpreadsheet
+# Localization in WPF Spreadsheet (SfSpreadsheet)
 
 Localization is the process of configuring the application to a specific language. SfSpreadsheet provides support to localize all the static text in a Ribbon and all dialogs to any desired language. Localization can be done by adding resource file and setting the specific culture in the application.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CRUD Operations with WPF TreeView control | Syncfusion
-description: Learn about CRUD operations to manipulate the data in Syncfusion WPF TreeView (SfTreeView) control and more details.
+title: CRUD Operations in WPF TreeView control | Syncfusion
+description: Learn here all about CRUD Operations support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# CRUD operations in WPF TreeView (SfTreeView)
+# CRUD Operations in WPF TreeView (SfTreeView)
 
 TreeView listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/treeview/editing), `delete` by pressing <kbd>Delete</kbd> key.
 

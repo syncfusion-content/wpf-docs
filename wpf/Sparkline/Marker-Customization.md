@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Marker Customization | SfSparkline | wpf | Syncfusion
-description: marker customization
+title: Marker Customization in WPF Sparkline control | Syncfusion
+description: Learn here all about Marker Customization support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
 documentation: ug
 ---
 
-# Marker Customization
+# Marker Customization in WPF Sparkline (SfSparkline)
 
 We can customize the markers by initializing the marker template selector class, and we can differentiate the first, last, high, low, negative points.
 
@@ -73,7 +73,7 @@ sparkline.MarkerTemplateSelector = selector;
 
 Following is the snapshot above code,
 
-![](Marker-Customization_images/Marker-Customization_img1.png)
+![Marker-Customization_img1](Marker-Customization_images/Marker-Customization_img1.png)
 
 **Marker Template**
 

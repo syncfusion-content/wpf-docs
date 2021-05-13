@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Palettes | SfSurfaceChart | wpf | Syncfusion
-description: palettes
+title: Palettes in WPF Surface Chart control | Syncfusion
+description: Learn here all about Palettes support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Palettes
+# Palettes in WPF Surface Chart (SfSurfaceChart)
 
 Surface chart provides options to apply different kinds of palettes.
 
@@ -48,7 +48,7 @@ chart.Palette = ChartColorPalette.Metro;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img12.jpeg)
+![surface_chart_img12](surface_chart_images/surface_chart_img12.jpeg)
 
 
 ### Applying Custom Brushes
@@ -119,4 +119,4 @@ chart.ColorModel = colorModel;
 
 {% endtabs %}
 
-![](surface_chart_images/surface_chart_img13.jpeg)
+![surface_chart_img13](surface_chart_images/surface_chart_img13.jpeg)

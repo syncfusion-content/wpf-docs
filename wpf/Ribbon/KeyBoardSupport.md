@@ -1,12 +1,12 @@
 ---
 layout: post
-title: KeyBoard support in Syncfusion Ribbon control
-description: This section briefly describes the KeyBoard access of all the items in Syncfusion WPF Ribbon using KeyTip support.
+title: KeyBoard Support in WPF Ribbon control | Syncfusion
+description: Learn about KeyBoard Support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# KeyBoard access using KeyTip
+# KeyBoard Support in WPF Ribbon
 
 To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
 

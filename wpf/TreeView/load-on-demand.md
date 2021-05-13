@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load On-demand in WPF TreeView | Syncfusion
-description: Learn here about loading nodes on demand on Syncfusion WPF TreeView (SfTreeView) control and more details..
+title: Load On Demand in WPF TreeView control | Syncfusion
+description: Learn here all about Load On Demand support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Load on demand in WPF TreeView(SfTreeView)
+# Load On Demand in WPF TreeView (SfTreeView)
 
 TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LoadOnDemandCommand). Load on-demand is applicable for bound mode only.
 

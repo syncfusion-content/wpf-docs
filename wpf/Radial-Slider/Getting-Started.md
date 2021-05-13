@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF SfRadialSlider control | Syncfusion
-description: This section describes about how to add the SfRadialSlider control into wpf application and its basic features.
+title: Getting Started with WPF Radial Slider control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Radial Slider (SfRadialSlider) control, its elements and more.
 platform: WPF
 control: SfRadialSlider
 documentation: ug
 ---
 
-# Getting Started with WPF SfRadialSlider
+# Getting Started with WPF Radial Slider (SfRadialSlider)
 
 This section explains how to create a WPF [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfRadialSlider.html) and explains about its structure.
 

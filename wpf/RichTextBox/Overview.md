@@ -1,12 +1,12 @@
 ---
-title: Overview of RichTextBox | WPF | Syncfusion
-description: WPF RichTextBox control, also known as WYSIWYG rich text editor, allows users to create, view, edit, and print rich text documents same as in Microsoft Word.
+title: About WPF RichTextBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: overview, richtextboxadv, sfrichtextboxadv
 ---
-# Overview
+# WPF RichTextBox (SfRichTextBoxAdv) Overview
 
 The SfRichTextBoxAdv control allows you to view, edit and print rich text content including text, images, hyperlink etc. arranged in sections, tables, paragraphs, headers, footers and comments. You can perform all editing operations using keyboard, mouse and touch.
 ![RichTextBox - Overview](Overview_images/Overview_img1.jpeg)

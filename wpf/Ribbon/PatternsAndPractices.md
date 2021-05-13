@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Patterns and Practices with Syncfusion Ribbon control
-description: MVVM and PRISM support with Ribbon control
+title: Patterns and Practices in WPF Ribbon control | Syncfusion
+description: Learn about Patterns and Practices support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Patterns and Practices
+# Patterns and Practices in WPF Ribbon
 
 ## Ribbon with MVVM
 
@@ -399,7 +399,7 @@ End Class
 
 Now the output displays the Ribbon control with the populated items
 
-![](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
+![PatternsandPractices_img1](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
 
 
 ## Practice with PRISM
@@ -740,4 +740,4 @@ End Class
 
 Now run the project. RibbonTabModule get added as one of the Module in the Shell. Similarly any number of Modules can be added based on the complexity of the project.
 
-![](PatternsandPractices_images/PatternsandPractices_img2.jpeg)
+![PatternsandPractices_img2](PatternsandPractices_images/PatternsandPractices_img2.jpeg)

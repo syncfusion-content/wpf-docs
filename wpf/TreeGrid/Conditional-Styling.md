@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Styling | TreeGrid | WPF | Syncfusion
-description: This section explains about style the TreeGrid cells/rows based on conditions.
+title: Conditional Styling in WPF TreeGrid control | Syncfusion
+description: Learn here all about Conditional Styling support in Syncfusion WPF TreeGrid (SfTreeGrid) control and more.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Conditional styling
+# Conditional Styling in WPF TreeGrid (SfTreeGrid)
 
 You can style the treegrid and its inner elements conditionally based on data in three ways,
 
@@ -50,7 +50,7 @@ It affects scrolling performance while styling more number of columns based on n
 </tr>
 </table>
 
-# Cells
+## Conditional Styling in WPF TreeGrid (SfTreeGrid)
 
 ## Style cells using converter
 
@@ -253,7 +253,7 @@ public class StringToImageConverter : IValueConverter
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/WPF).
 
-# Rows
+## Conditional Styling in WPF TreeGrid (SfTreeGrid)
 
 ## Style rows using converter
 
@@ -331,7 +331,7 @@ public class SelectorClass : StyleSelector
 
 ![Styling rows using style selector in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
 
-# Row Header
+## Conditional Styling in WPF TreeGrid (SfTreeGrid)
 
 The appearance of row header ([GridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter,where converter returns the value based on Underlying record.
 

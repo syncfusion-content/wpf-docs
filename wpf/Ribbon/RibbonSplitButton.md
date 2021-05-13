@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SplitButton for Syncfusion's Ribbon control for WPF
-description: This section briefly describes the functionalities of SplitButton for Syncfusion's Ribbon control for WPF
+title: RibbonSplitButton in WPF Ribbon control | Syncfusion
+description: Learn about RibbonSplitButton support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# SplitButton in WPF Ribbon     
+# RibbonSplitButton in WPF Ribbon
 
 SplitButton can perform like both normal Button as well as DropDownButton. It allow to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow.
 

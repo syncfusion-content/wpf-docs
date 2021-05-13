@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfCircularGauge control.
-description: A quick tour to adding gauge reference, initial users for getting started with Syncfusion circular gauge control for WPF platform.
+title: Getting Started with WPF Radial Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
-# Getting Started with SfCircularGauge
+# Getting Started with WPF Radial Gauge (SfCircularGauge)
 
 This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
 

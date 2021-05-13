@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization of WPF RichTextBox | Syncfusion
-description: How to localize the WPF RichTextBox to any language settings.
+title: Localization in WPF RichTextBox control | Syncfusion
+description: Learn here all about Localization support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: localization
 ---
-# Localization
+# Localization in WPF RichTextBox (SfRichTextBoxAdv)
 
 Localization is the process of configuring the application to a specific language. SfRichTextBoxAdv provides support to localize all the static text in ribbon and all its dialogs. Localization can be done by adding resource file (Resx) and setting the specific culture in the application.
 

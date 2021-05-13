@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Setting Window State| DocumentContainer | Wpf | Syncfusion
-description: Explains about window states of MDIWindow in DocumentContainer
+title: Setting Window State in WPF Tabbed MDI Form control | Syncfusion
+description: Learn here all about Setting Window State support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Window States of MDIWindow
+# Setting Window State in WPF Tabbed MDI Form (DocumentContainer)
 
 ## Setting Window State
 

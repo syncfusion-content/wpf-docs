@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion's Ribbon control for WPF
-description: This section briefly describes the basic functions in implementing similar UI as Microsoft Outlook using Syncfusion Ribbon
+title: Getting Started with WPF Ribbon control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug

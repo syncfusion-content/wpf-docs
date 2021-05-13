@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported languages | Syntax Editor | WPF | Syncfusion
-description: Edit control provides built-in support for a procedural and markup languages such as C#, Visual Basic, XAML, etc.,
+title: Supported Languages in WPF Syntax Editor control | Syncfusion
+description: Learn about Supported Languages support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-# Supported Languages
+# Supported Languages in WPF Syntax Editor
 
 Edit for WPF provides built-in support for a procedural and markup languages such as C#, Visual Basic, XAML and XML. It also supports SQL language and facilitates the users to provide custom language configurations.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Dealing with Syncfusion Ribbon control
-description: This topic dealing  with  the Syncfusion WPF Ribbon Control. Defines Ribbon state and grouping RibbonTabs using ContextTabGroups.
+title: Dealing with Ribbon in WPF Ribbon control | Syncfusion
+description: Learn about Dealing with Ribbon support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing with WPF Ribbon 
+# Dealing with Ribbon in WPF Ribbon
 
 Ribbon can be changed into three different states such as `Normal`, `Hide` and `Adorner`
 
