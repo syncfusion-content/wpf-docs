@@ -270,6 +270,36 @@ SwimlaneViewModel swimlane = new SwimlaneViewModel()
 | Vertical | ![Vertical](Swimlane-images/Swimlane_Vertical.PNG) |
 
 
+## Appearance
+
+You can customize the appearance of the swimlane by changing its `ShapeStyle` property. The following code explains how to customize the appearance of the Swimlane.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:Swimlane">
+    <Setter Property="Shape">
+        <Setter.Value>
+            <RectangleGeometry Rect="0,0,100,100"></RectangleGeometry>
+        </Setter.Value>
+    </Setter>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="SandyBrown"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Stroke" Value="#487ca9"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Interaction
 
 ### Select
