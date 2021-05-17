@@ -15,24 +15,24 @@ PDF Viewer supports showing and hiding toolbar, when you feel to customize the t
 {% highlight c# %}
 
 //Initialize PDF Viewer.
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
+PdfViewerControl pdfViewer = new PdfViewerControl();
 
 //Load the PDF.
-pdfViewer1.Load("Sample.pdf");
+pdfViewer.Load("Sample.pdf");
 
 // Hiding the default toolbar of the PDF Viewer
-pdfviewer1.ShowToolbar = false;
+pdfviewer.ShowToolbar = false;
 {% endhighlight %}
 {% highlight vbnet %}
 
 'Initialize PDF Viewer.
-Private pdfViewer1 As New PdfViewerControl()
+Private pdfViewer As New PdfViewerControl()
 
 'Load the PDF.
-pdfViewer1.Load("Sample.pdf")
+pdfViewer.Load("Sample.pdf")
 
 ' Hiding the default toolbar of the PDF Viewer
-pdfViewer1.ShowToolbar = False
+pdfViewer.ShowToolbar = False
 
 {% endhighlight %}
 {% endtabs %}
@@ -43,16 +43,7 @@ You can hide the vertical toolbar which is present in the left side of PDF Viewe
 
 {% tabs %}
 {% highlight c# %}
-//Initialize PDF Viewer.
-PdfViewerControl pdfViewer = new PdfViewerControl();
-
-// Load the PDF document. 
-pdfViewer.Load("Sample.pdf");
-
-// Occurs when the PDF document loaded. 
-pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded; 
- 
-private void PdfViewer_DocumentLoaded(object sender, EventArgs args) 
+private void HideVerticalToolbar() 
 { 
 	// Hides the thumbnail icon. 
 	pdfViewer.ThumbnailSettings.IsVisible = false; 
@@ -72,5 +63,15 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 	// Hides the form icon. 
 	pdfViewer.FormSettings.IsIconVisible = false;
 }
+{% endhighlight %}
+{% highlight vbnet %}
+Private Sub HideVerticalToolbar()
+    pdfViewer.ThumbnailSettings.IsVisible = False
+    pdfViewer.IsBookmarkEnabled = False
+    pdfViewer.EnableLayers = False
+    pdfViewer.PageOrganizerSettings.IsIconVisible = False
+    pdfViewer.EnableRedactionTool = False
+    pdfViewer.FormSettings.IsIconVisible = False
+End Sub
 {% endhighlight %}
 {% endtabs %}
