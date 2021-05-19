@@ -74,7 +74,69 @@ tileViewControl.ColumnCount = 1;
 
 ![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+## Arrange TileViewItem in custom order
+
+You can change the order in which the items are displayed in `TileView` control using the [`CurrentItemsOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_CurrentItemsOrder) list property. By default, the value of `CurrentItemsOrder` property is **null**.
+
+N> `CurrentItemsOrder` property works only when Virtualization is disabled i.e., `IsVirtualizing` property value is **false**.
+
+N> When an item in `TileView` control is maximized, the items in `CurrentItemsOrder` list will be cleared.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.DataContext>
+        <local:ViewModel />
+    </Grid.DataContext>
+    <syncfusion:TileViewControl Height="250" CurrentItemsOrder="{Binding CustomItemOrders, Mode=TwoWay}"
+                                    Width="300">
+        <syncfusion:TileViewItem Header="Item 1"/>
+        <syncfusion:TileViewItem Header="Item 2"/>
+        <syncfusion:TileViewItem Header="Item 3"/>
+        <syncfusion:TileViewItem Header="Item 4"/>
+        <syncfusion:TileViewItem Header="Item 5"/>
+        <syncfusion:TileViewItem Header="Item 6"/>
+    </syncfusion:TileViewControl>
+</Grid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+public class ViewModel : NotificationObject
+{
+    private List<int> customItemOrders;
+
+    public List<int> CustomItemOrders
+    {
+        get { return customItemOrders; }
+        set
+        {
+            customItemOrders = value;
+            this.RaisePropertyChanged(nameof(this.CustomItemOrders));
+        }
+    }
+
+    public ViewModel()
+    {
+        CustomItemOrders = new List<int>();
+        CustomItemOrders.Add(4);
+        CustomItemOrders.Add(5);
+        CustomItemOrders.Add(0);
+        CustomItemOrders.Add(1);
+        CustomItemOrders.Add(2);
+        CustomItemOrders.Add(3);
+    }
+}
+
+N> When an item is maximized, you can add the items for `CurrentItemsOrder` list on runtime in code-behind.
+
+N> When an item is maximized, reordering of TileView items in UI will not be reflected in `CurrentItemsOrder` list property. 
+
+{% endhighlight %}
+{% endtabs %}
+
+![TileViewItems arranged in custom order](Arrange_images/CurrentItemsOrder.png)
 
 ## Change row and column size
 
