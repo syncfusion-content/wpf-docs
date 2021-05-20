@@ -74,6 +74,8 @@ tileViewControl.ColumnCount = 1;
 
 ![TileViewItems arranged in particular rows and cloumns](Arrange_images/RowCount.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Arrange-Items)
+
 ## Arrange TileViewItem in custom order
 
 You can change the order in which the items are displayed in `TileView` control using the [`CurrentItemsOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TileViewControl.html#Syncfusion_Windows_Shared_TileViewControl_CurrentItemsOrder) list property. By default, the value of `CurrentItemsOrder` property is **null**.
