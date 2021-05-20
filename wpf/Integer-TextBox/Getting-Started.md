@@ -25,7 +25,7 @@ You can add the [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/inte
 
 * Syncfusion.Shared.WPF
 
-![IntegerTextBox Control added by designer](Getting-Started_images/wpf-integer-text-box-control-added-by-designer.png)
+![Dragging WPF IntegerTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-integer-textbox-toolbox.png)
 
 ## Adding WPF IntegerTextBox via XAML
 
@@ -90,7 +90,7 @@ this.Content = integerTextBox;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox Control added to Window by code](Getting-Started_images/wpf-integer-text-box-control-added-by-code.png)
+![WPF IntegerTextBox Control](Getting-Started_images/wpf-integer-textbox-control.png)
 
 ## Setting Value
 
@@ -112,7 +112,7 @@ integerTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Set the value for IntegerTextBox](Getting-Started_images/wpf-integer-textbox-value.png)
+![WPF IntegerTextBox displays Value](Getting-Started_images/wpf-integer-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the IntegerTextBox. Use only the `Value` property.
 
@@ -155,7 +155,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox value binding](Getting-Started_images/wpf-integer-text-box-binding.png)
+![WPF IntegerTextBox displays Binding Value](Getting-Started_images/wpf-integer-textbox-binding.png)
 
 ## Value Changed Notification
 
@@ -214,7 +214,7 @@ integerTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the value of IntegerTextBox by the minimum and maximum values](Getting-Started_images/Maximum-Minimum-Value.png)
+![Restricts Minimum and Maximum Value of WPF IntegerTextBox](Getting-Started_images/wpf-integer-textbox-max-and-min-value.png)
 
 ## Step Interval to increase or decrease the value
 
@@ -241,7 +241,7 @@ integerTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+![WPF IntegerTextBox displays Incrementing Interval Value](Getting-Started_images/wpf-integer-textbox-step-interval.png)
 
 ## Formatting the value
 
@@ -268,7 +268,7 @@ NumberGroupSeparator = "/"
 {% endhighlight %}
 {% endtabs %}
 
-![Setting IntegerTextBox Number Format](Getting-Started_images/wpf-integer-textbox-number-format.png)
+![WPF IntegerTextBox with Number Format](Getting-Started_images/wpf-integer-textbox-number-format.png)
 
 ## Setting the Culture
 
@@ -291,7 +291,7 @@ integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![Setting IntegerTextBox Culture](Getting-Started_images/Culture.png)
+![WPF IntegerTextBox with Localization](Getting-Started_images/wpf-integer-textbox-localization.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -303,4 +303,4 @@ IntegerTextBox supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF IntegerTextBox](Getting-Started_images/wpf-integer-text-box-theme.png)
+  ![Applying Theme to WPF IntegerTextBox](Getting-Started_images/wpf-integer-textbox-theme.png)
