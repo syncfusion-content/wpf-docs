@@ -212,6 +212,33 @@ The following code example explains how to customize the swimlane header.
 
 ![Swimlane Header Customization](Swimlane-images/Swimlane_Header_Customization.PNG)
 
+### How to customize the Swimlane Background
+
+You can customize the Swimlane background by changing its `ShapeStyle` property. The following code explains how to customize the Swimlane background.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:Swimlane">
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="SandyBrown"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Stroke" Value="#487ca9"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Swimlane Background Customization](Swimlane-images/Swimlane_Background.PNG)
+
 ### Header editing
 
 The diagram provides the support to edit swimlane headers at runtime. You can achieve the header editing by double clicking on it. Double clicking the header label will enables the editing mode.
@@ -268,7 +295,6 @@ SwimlaneViewModel swimlane = new SwimlaneViewModel()
 |---|---|
 | Horizontal | ![Horizontal](Swimlane-images/Swimlane_Horizontal.PNG) |
 | Vertical | ![Vertical](Swimlane-images/Swimlane_Vertical.PNG) |
-
 
 ## Interaction
 
