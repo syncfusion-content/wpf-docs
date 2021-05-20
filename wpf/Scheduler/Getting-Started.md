@@ -9,14 +9,14 @@ documentation: ug
     
 # Getting Started with WPF Scheduler (SfScheduler)
     
-This section provides you an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in real time scenario.   
+This section provides an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in the real time scenario.   
 
 ## Assembly deployment
-Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
+Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). Use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
 ## Create simple application with SfScheduler
 
-In this section, you will create WPF application with SfScheduler control.
+In this section, create WPF application with SfScheduler control.
 
 * [Creating project](#creating-project)
 * [Adding control via Designer](#adding-control-via-designer)
@@ -32,7 +32,7 @@ Namespace: `Syncfusion.UI.Xaml.Scheduler`
 
 ### Adding control via Designer
 
-[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control can be added to the application by dragging it from Toolbox and dropping it in a Designer view. The required assembly references will be added automatically.
 
 ### Adding control manually in XAML
 
@@ -61,7 +61,7 @@ To add the control manually in XAML page, follow the given steps:
 
 ### Adding control manually in C#
 
-To add the control manually in C# page,Add the `Syncfusion.SfScheduler.WPF` assembly reference to the project.
+To add the control manually in C# page, add the `Syncfusion.SfScheduler.WPF` assembly reference to the project.
 
 {% tabs %}
 {% highlight c#%}
@@ -94,7 +94,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 ![WPF scheduler Month view](GettingStarted_images/month-view.png)
 
 ## Appointments
-[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) collections. You need to allocate the collection generated to `Appointments` property.
+[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) collections. Allocate the collection generated to `Appointments` property.
 
 ### Adding Appointments
 The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Subject), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Location), and [IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) properties.
@@ -120,14 +120,14 @@ Schedule.ItemsSource = appointmentCollection;
 {% endhighlight %}   
 {% endtabs %} 
 
-You can download the entire source code of this demo for WPF from
+Download the entire source code of this demo for WPF from
 here [SchedulerGettingStarted](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started-demo)
 
 ### Events/Appointments data mapping
 
-You can also map custom appointments data to our scheduler.
+Map the custom appointments data to the scheduler.
 
-Here steps to render meetings using [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control with respective custom data properties created in a class `Meeting`.
+Here are the steps to render meetings using [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control with respective custom data properties created in a class `Meeting`.
 
 * [Create an event Data Model](#create-an-event-data-model) 
 * [Create view model](#create-view-model)
@@ -136,7 +136,7 @@ Here steps to render meetings using [SfScheduler](https://help.syncfusion.com/cr
   
 #### Create an event Data Model 
   
-You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`that is used to map the information of the appointment.
+Create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName` that is used to map the information of the appointment.
 
 {% highlight c# %}  
     public class Meeting : INotifyPropertyChanged
@@ -229,7 +229,7 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
 
 #### Create view model 
 
-By setting `From` and `To` of `Meeting` class, you can schedule meetings for a specific day. You can also change the subject and color of appointment using `EventName` and `Color` property. You may define the list of custom appointments in a separate class of `ViewModel`.
+By setting `From` and `To` of the `Meeting` class, schedule the meetings for a specific day. Change the subject and color of the appointment using `EventName` and `Color` property. Define the list of custom appointments in a separate class of `ViewModel`.
 
 {% tabs %}   
 {% highlight c# %} 
@@ -348,7 +348,7 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 #### Bind to SfScheduler appointment
 
-You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMappingProperty) property.
+Map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMappingProperty) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,7 +401,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-d
 
 ## Change first day of week
 
-SfScheduler control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
+SfScheduler control will be rendered with `Sunday` as the first day of the week, but it can be customized to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
     
 {% tabs %}  
 {% highlight xaml %}
@@ -416,7 +416,7 @@ Schedule.FirstDayOfWeek = DayOfWeek.Tuesday;
 ![WPF scheduler FirstDayOfWeek](GettingStarted_images/change-first-day.png)
 
 ## Show busy indicator
-The Scheduler supports to show the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to false, If the value will be set to `true` then the busy indicator will be load on view or visible date changed.
+The Scheduler supports to show the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to false, if the value is set to `true` then the busy indicator will be loaded on view or visible date changed.
 
 {% tabs %}   
 {% highlight xaml %}
