@@ -43,11 +43,11 @@ By default the US culture uses “,” as the `PercentGroupSeparator` and "." as
 
 **Default Culture**
 
-![PercentTextBox with default culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+![WPF PercentTextBox with Default Culture](Culture-and-Number-Formats_images/wpf-percent-textbox-default-culture.png)
 
 **Latin Culture**
 
-![PercentTextBox with Latin-Culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![WPF PercentTextBox with Latin Culture](Culture-and-Number-Formats_images/wpf-percent-textbox-latin-culture.png)
 
 ## NumberFormatInfo based formatting
 
@@ -83,7 +83,7 @@ percentTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting PercentTextBox number format by NumberFormatInfo](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+![WPF PercentTextBox with Formatting](Culture-and-Number-Formats_images/wpf-percent-textbox-formatting.png)
 
 The following code illustrate how to set percent group size by using the `NumberFormat` property.
 
@@ -108,7 +108,7 @@ percentTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting PercentTextBox value group size by NumberFormat](Culture-and-Number-Formats_images/PercentGroupSizes_format.png)
+![WPF PercentTextBox displays Different Group Size between Numbers](Culture-and-Number-Formats_images/wpf-percent-textbox-group-size.png)
 
 ## Formatting with dedicated properties
 
@@ -135,7 +135,7 @@ percentTextBox.PercentGroupSizes = new Int32Collection() { 4, 3, 2};
 {% endhighlight %}
 {% endtabs %}
 
-![Setting PercentTextBox number format by dedicated properties](Culture-and-Number-Formats_images/PercentGroupSizes2.png)
+![WPF PercentTextBox with Formatting](Culture-and-Number-Formats_images/wpf-percent-textbox-number-format.png)
 
 N> When you use both the `NumberFormat` and the dedicated properties (`PercentGroupSeparator`, `PercentageSymbol`, `PercentDecimalDigits`, `PercentDecimalSeparator` and `PercentGroupSizes`) to format the value of `PercentTextBox`, the `PercentGroupSeparator`and `PercentGroupSizes` properties have higher priority.
 
@@ -170,7 +170,7 @@ n%</td></tr>
 % n</td></tr>
 </table>
 
-![PercentTextBox Positive value Patterns](Culture-and-Number-Formats_images/PercentPositivePattern.png)
+![WPF PercentTextBox displays Positive Value Patterns](Culture-and-Number-Formats_images/wpf-percent-textbox-positive-pattern.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,7 +191,7 @@ percentTextBox.PercentPositivePattern = 3;
 
 {% endtabs %}
 
-![PercentTextBox postive value pattern as 3](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+![WPF PercentTextBox with Third Postive Pattern](Culture-and-Number-Formats_images/wpf-percent-textbox-third-positive-pattern.png)
 
 ## Negative Value Pattern
 
@@ -254,7 +254,7 @@ n %-</td></tr>
 n- %</td></tr>
 </table>
 
-![PercentTextBox Negative value Patterns](Culture-and-Number-Formats_images/PercentNegativePattern.png)
+![WPF PercentTextBox displays Negative Value Patterns](Culture-and-Number-Formats_images/wpf-percent-textbox-negative-pattern.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -275,4 +275,4 @@ percentTextBox.PercentNegativePattern = 7;
 
 {% endtabs %}
 
-![PercentTextBox Negative value Pattern as 7](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+![WPF PercentTextBox displays Negative Value Pattern](Culture-and-Number-Formats_images/wpf-percent-textbox-negative-value-pattern.png)

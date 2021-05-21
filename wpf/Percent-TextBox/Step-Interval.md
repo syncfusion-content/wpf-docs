@@ -35,7 +35,7 @@ percentTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the PercentTextBox percent value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![Changing Value by Up and Down Arrow Key in WPF PercentTextBox](Step-Interval_images/wpf-percent-textbox-value.png)
 
 ## Change Value on Mouse Wheel
 
@@ -60,7 +60,7 @@ percentTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the PercentTextBox percent value by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
+![Changing Value by Mouse Wheel in WPF PercentTextBox](Step-Interval_images/wpf-percent-textbox-change-value.png)
 
 ## Change Value on Click and Drag
 
@@ -85,7 +85,7 @@ percentTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the PercentTextBox percent value by clicking and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
+![Changing Value by Clicking and Drag in WPF PercentTextBox](Step-Interval_images/wpf-percent-textbox-drag-and-drop.gif)
 
 ## Allow or restrict selection on focus
 
@@ -107,8 +107,8 @@ percentTextBox.TextSelectionOnFocus = true;
 
 **TextSelectionOnFocus = "False"**
 
-![PercentTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
+![Restrict Text Selection in WPF PercentTextBox](Step-Interval_images/wpf-percent-textbox-restrict-selection.png)
 
 **TextSelectionOnFocus = "True"**
 
-![PercentTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
+![WPF PercentTextBox displays Text Selection](Step-Interval_images/wpf-percent-textbox-text-selection.png)

@@ -28,7 +28,7 @@ percentTextBox.PercentValue = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![PercentTextBox displaying a value](Changing-Percent-Value_images/SettingValue.jpeg)
+![WPF PercentTextBox displays Value](Changing-Percent-Value_images/wpf-percent-textbox-value.jpeg)
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a percent value to the `PercentValue` property by binding, you can change the `PercentTextBox` percent value.
 
@@ -68,7 +68,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Binding a value to PercentTextBox](Changing-Percent-Value_images/ValueBinding.png)
+![WPF PercentTextBox with Binding Value](Changing-Percent-Value_images/wpf-percent-textbox-binding-value.png)
 
 ## Change percent value by pasting the clipboard's text
 
@@ -128,7 +128,7 @@ percentTextBox.PercentValue = 12345.67;
 {% endhighlight %}
 {%endtabs%}
 
-![PercentTextBox pasting the copied value in specific place](Changing-Percent-Value_images/Pasting.png)
+![WPF PercentTextBox displays Pasting Copied Value in Specific Place](Changing-Percent-Value_images/wpf-percent-textbox-paste-value.png)
 
 ## Show UpDown Button
 
@@ -148,7 +148,7 @@ percentTextBox.ShowSpinButton = true;
 {% endhighlight %}
 {%endtabs%}
 
-![Changing percent value by SpinButton in PercentTextBox](Changing-Percent-Value_images/SpinButton.gif)
+![WPF PercentTextBox displays SpinButton](Changing-Percent-Value_images/wpf-percent-textbox-spinbutton.gif)
 
 ## Value Changed Event
 
@@ -209,7 +209,7 @@ percentTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting null as NullValue in PercentTextBox](Changing-Percent-Value_images/NullValue_null.png)
+![WPF PercentTextBox displays Empty Value](Changing-Percent-Value_images/wpf-percent-textbox-empty-value.png)
 
 **NullValue = 10**
 
@@ -231,7 +231,7 @@ percentTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting Null value in PercentTextBox](Changing-Percent-Value_images/NullValue.jpeg)
+![WPF PercentTextBox displays Null Value](Changing-Percent-Value_images/wpf-percent-textbox-null-value.jpeg)
 
 ## Setting Watermark Text
 
@@ -262,7 +262,7 @@ percentTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox displaying a watermark text in red color](Changing-Percent-Value_images/WaterMark-Foreground.jpeg)
+![WPF PercentTextBox displays Watermark Text](Changing-Percent-Value_images/wpf-percent-textbox-watermark.jpeg)
 
 ### Setting Watermark Template
 
@@ -285,7 +285,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 {% endhighlight %}
 
-![PercentTextBox displaying watermark text using a data-template](Changing-Percent-Value_images/WaterMark-Template.png)
+![Customizing Watermark Text in WPF PercentTextBox](Changing-Percent-Value_images/wpf-percent-textbox-watermark-customization.png)
 
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `PercentTextBox` control.
 
