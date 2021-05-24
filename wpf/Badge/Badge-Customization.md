@@ -288,7 +288,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Ellipse`.
 
-![WPF Badge Default Shapes](Getting-Started_images/wpf-badge-default-shapes.png)
+![WPF Badge Default Shapes](Getting-Started_images/wpf-badge-predefined-shapes.png)
 
 {% tabs %}
 {% highlight XAML %}

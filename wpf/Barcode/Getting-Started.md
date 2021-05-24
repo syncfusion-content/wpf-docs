@@ -27,7 +27,7 @@ To create the SfBarcode control in Visual Studio:
 
 2. Drag the SfBarcode control from the Toolbox window to the Design View. An instance of the SfBarcode control is created in the Design view.
 
-   ![WPF Barcode](Getting-Started_images/wpf-barcode.png)
+   ![WPF Barcode Control](Getting-Started_images/wpf-barcode-control.png)
 
    SfBarcode Control after Dragging to Design View
    {:.caption}
