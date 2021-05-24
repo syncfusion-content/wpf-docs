@@ -131,7 +131,7 @@ SfBadge.SetBadge(button, sfBadge);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Badge Button](Getting-Started_images/wpf_badge-button.png)
+![WPF Badge Button](Getting-Started_images/wpf-badge-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -262,7 +262,7 @@ badge.VerticalPosition = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Badge Custom Alignment](Getting-Started_images/WPF-Badge-Custom-Alignment.png)
+![WPF Badge Custom Alignment](Getting-Started_images/wpf-badge-custom-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
 

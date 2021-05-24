@@ -49,7 +49,7 @@ SfBadge.SetBadge(button, sfBadge);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Adding Badge Control ](Getting-Started_images/wpf-adding-badge-control.png)
+![WPF Adding Badge Control ](Getting-Started_images/wpf-badge-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -168,7 +168,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Display Badge Content](Getting-Started_images/wpf-display-badge-content.png)
+![WPF Display Badge Content](Getting-Started_images/wpf-badge-display-content.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -224,7 +224,7 @@ The `Badge` supports the following different essential states :
 
 * Warning - Chocolate background will be applied
 
-![WPF Badge States](Getting-Started_images/wpf-badge-states.png)
+![WPF Badge States](Getting-Started_images/wpf-badge-predefined-colors.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -288,7 +288,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Ellipse`.
 
-![Displaying the different default Badge shapes](Getting-Started_images/Default_Shape.png)
+![WPF Badge Default Shapes](Getting-Started_images/wpf-badge-default-shapes.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -390,7 +390,7 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ### Scaling based animation
 
-![WPF Badge with Scale Based Animation](Getting-Started_images/wpf-badge-with-scale-based-animation.gif)
+![WPF Badge with Scale Based Animation](Getting-Started_images/wpf-badge-scale-based-animation.gif)
 
 ### Opacity based animation
 
