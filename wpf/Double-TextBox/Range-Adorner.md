@@ -28,7 +28,7 @@ doubleTextBox.EnableRangeAdorner =true;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox default background of Range Adorner](Range-Adorner_images/Range-Adorner_img1.png)
+![WPF DoubleTextBox displays RangeAdorner](Range-Adorner_images/wpf-double-textbox-range-adorner.png)
 
 ## Changing background of range-adorner
 
@@ -52,4 +52,4 @@ doubleTextBox.RangeAdornerBackground = Brushes.LightGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)
+![Changing Background of RangeAdorner of WPF DoubleTextBox](Range-Adorner_images/wpf-double-textbox-range-adorner-background.png)
