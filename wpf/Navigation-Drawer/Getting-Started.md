@@ -34,13 +34,13 @@ Create new WPF Project in Visual Studio to display SfNavigationDrawer with data 
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
-![Toolbox Image](Getting-Started_images/Getting-Started_img2.png)
+![WPF NavigationDrawer shows in Toolbox](Getting-Started_images/wpf-navigation-drawer-toolbox.png)
 
 Now, the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Reference in project image](Getting-Started_images/Getting-Started_img3.png)
+![Displaying Reference of WPF NavigationDrawer](Getting-Started_images/wpf-navigation-drawer-reference.png)
 
-![Namespace image](Getting-Started_images/Getting-Started_img4.png)
+![WPF NavigationDrawer with Namespace](Getting-Started_images/wpf-navigation-drawer-namespace.png)
 
 ### Adding control manually in XAML
 
@@ -341,6 +341,6 @@ See also [Different display modes](https://help.syncfusion.com/wpf/navigation-dr
 
 {% endtabs %}
 
-![Getting started image](Getting-Started_images/Getting-Started_img5.png)
+![WPF NavigationDrawer](Getting-Started_images/wpf-navigation-drawer.png)
                    
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Getting_Started) in GitHub
