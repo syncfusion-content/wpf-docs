@@ -13,7 +13,7 @@ This section explains the steps required to add the [Badge](https://help.syncfus
 
 ## Structure of SfBadge control
 
-![Structure of WPF SfBadge control](Getting-Started_images/Structure.png)
+![WPF Badge Structure](Getting-Started_images/wpf-badge-structure.png)
 
 ## Assembly deployment
 
@@ -131,7 +131,7 @@ SfBadge.SetBadge(button, sfBadge);
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added to the Button control](Getting-Started_images/Adding_Badge.png)
+![WPF Badge Button](Getting-Started_images/wpf_badge-button.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -159,7 +159,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Badge display content changed](Getting-Started_images/Change_BadgeContent.png)
+![WPF Badge Display Content](Getting-Started_images/wpf-badge-display-content.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
@@ -191,7 +191,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
+![WPF Badge Alignment](Getting-Started_images/wpf-badge-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -223,7 +223,7 @@ badge.Content = "10";
 {% endhighlight %}
 {% endtabs %}
 
-![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
+![WPF Badge Position](Getting-Started_images/wpf-badge-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -262,7 +262,7 @@ badge.VerticalPosition = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
+![WPF Badge Custom Alignment](Getting-Started_images/WPF-Badge-Custom-Alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
 
@@ -352,7 +352,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added for ListView Items](Getting-Started_images/badge_withoutBadgeContainer.png)
+![WPF Badge ListView Items](Getting-Started_images/wpf-badge-listview-items.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_without_BadgeContainer)
 
@@ -376,7 +376,7 @@ The `Badge` supports the following different essential states :
 
 * Warning - Chocolate background will be applied
 
-![Displaying the various state colors for Badge](Getting-Started_images/States.png)
+![WPF Badge Predefined Colors](Getting-Started_images/wpf-badge-predefined-colors.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -400,7 +400,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Success state of Badge](Getting-Started_images/Information_States.png)
+![WPF Badge Information States](Getting-Started_images/wpf-badge-information-states.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -408,7 +408,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the default shape to either `Rectangle`, `Oval` or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBadge.html#Syncfusion_Windows_Controls_Notification_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes , use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
 
-![Displaying the different default Badge shapes](Getting-Started_images/Default_Shape.png)
+![WPF Badge Predefined Shapes](Getting-Started_images/wpf-badge-predefined-shapes.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -432,7 +432,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the oval shaped Badge](Getting-Started_images/oval_Shape.png)
+![WPF Oval Shaped Badge](Getting-Started_images/wpf-oval-shaped-badge.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -487,11 +487,11 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ### Scaling based animation
 
-![Displaying the Badge with scale based animation](Getting-Started_images/Scale_animation.gif)
+![WPF Badge Scale Based Animation](Getting-Started_images/wpf-badge-scale-based-animation.gif)
 
 ### Opacity based animation
 
-![Displaying the Badge with opacity based animation](Getting-Started_images/Opacity_animation.gif)
+![WPF Badge Opacity Based Animation](Getting-Started_images/wpf-badge-opacity-based-animation.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -569,7 +569,7 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endhighlight %}
 {% endtabs %}
 
-![Number formatting for the Badge content](Getting-Started_images/number.gif)
+![WPF Badge Number Formatting](Getting-Started_images/wpf-badge-number-formatting.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
@@ -581,4 +581,4 @@ Badge supports various built-in themes. Refer to the below links to apply themes
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Badge](Getting-Started_images/Theme.png)
+  ![WPF Badge Theme](Getting-Started_images/wpf-badge-theme.png)

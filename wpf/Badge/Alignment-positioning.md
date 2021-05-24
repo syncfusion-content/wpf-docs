@@ -37,34 +37,34 @@ table, td, th {
 
 <tr>
 <td>Top</td>
-<td><img src="Getting-Started_images/Left-top.png" alt="Left-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Top.png" alt="Center-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Top.png" alt="Right-Top alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Top.png" alt="Stretch-Top alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-left-top.png" alt="WPF Badge Left-Top Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-center-top.png" alt="WPF Badge Center-Top Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-right-top.png" alt="WPF Badge Right-Top Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-stretch-top.png" alt="WPF Badge Stretch-Top Alignment"/></td>
 </tr>
 
 <tr>
 <td>Center</td>
-<td><img src="Getting-Started_images/Left-center.png" alt="Left-center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Center.png" alt="Center-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Center.png" alt="Right-Center alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Center.png" alt="Stretch-Center alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-left-center.png" alt="WPF Badge Left-center Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-center-center.png" alt="WPF Badge Center-Center Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-right-center.png" alt="WPF Badge Right-Center Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-stretch-center.png" alt="WPF Badge Stretch-Center Alignment"/></td>
 </tr>
 
 <tr>
 <td>Bottom</td>
-<td><img src="Getting-Started_images/Left-Bottom.png" alt="Left-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Bottom.png" alt="Center-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Bottom.png" alt="Right-Bottom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Bottom.png" alt="Stretch-Bottom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-left-bottom.png" alt="WPF Badge Left-Bottom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-center-bottom.png" alt="WPF Badge Center-Bottom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-right-bottom.png" alt="WPF Badge Right-Bottom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-stretch-bottom.png" alt="WPF Badge Stretch-Bottom Alignment"/></td>
 </tr>
 
 <tr>
 <td>Stretch</td>
-<td><img src="Getting-Started_images/Left-Stretch.png" alt="Left-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Center-Stretch.png" alt="Center-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Right-Stretch.png" alt="Right-Stretch alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Stretch-Stretch.png" alt="Stretch-Stretch alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-left-stretch.png" alt="WPF Badge Left-Stretch Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-center-stretch.png" alt="WPF Badge Center-Stretch Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-right-stretch.png" alt="WPF Badge Right-Stretch Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-stretch-stretch.png" alt="WPF Badge Stretch-Stretch Alignment"/></td>
 </tr>
 </table>
 
@@ -92,7 +92,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
+![WPF Badge Alignment](Getting-Started_images/wpf-badge-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -123,23 +123,23 @@ table, td, th {
 
 <tr>
 <td>Inside</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Inside.png" alt="Inside-Inside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Inside.png" alt="Center-Inside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Inside.png" alt="Outside-Inside positioning of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-inside-inside.png" alt="WPF Badge Inside-Inside Positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-center-inside.png" alt="WPF Badge Center-Inside Positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-outside-inside.png" alt="WPF Badge Outside-Inside Positioning"/></td>
 </tr>
 
 <tr>
 <td>Center</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Center.png" alt="Inside-Center positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Center.png" alt="Center-Center positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Center.png" alt="Outside-Center positioning of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-inside-center.png" alt="WPF Badge Inside-Center Positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-center-center.png" alt="WPF Badge Center-Center Positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-outside-center.png" alt="WPF Badge Outside-Center Positioning"/></td>
 </tr>
 
 <tr>
 <td>Outside</td>
-<td><img src="Getting-Started_images/Positioning_Inside_Outside.png" alt="Inside-Outside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Center_Outside.png" alt="Center-Outside positioning of Badge"/></td>
-<td><img src="Getting-Started_images/Positioning_Outside_Outside.png" alt="Outside-Outside positioning of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-inside-outside.png" alt="WPF Badge Inside-Outside positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-center-outside.png" alt="WPF Badge Center-Outside positioning"/></td>
+<td><img src="Getting-Started_images/wpf-badge-positioning-outside-outside.png" alt="WPF Badge Outside-Outside positioning"/></td>
 </tr>
 </table>
 
@@ -167,7 +167,7 @@ badge.Content = "10";
 {% endhighlight %}
 {% endtabs %}
 
-![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
+![WPF Badge Position](Getting-Started_images/wpf-badge-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -207,7 +207,7 @@ badge.VerticalPosition = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
+![WPF Badge Custom Alignment](Getting-Started_images/wpf-badge-custom-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
 
@@ -241,23 +241,23 @@ VerticalAnchorPosition</th>
 
 <tr>
 <td>0</td>
-<td><img src="Getting-Started_images/Custom_Left_top.png" alt="Left-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Top.png" alt="Center-Top custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Top.png" alt="Right-Top custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-left-top.png" alt="WPF Badge Left-Top Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-center-top.png" alt="WPF Badge Center-Top Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-right-top.png" alt="WPF Badge Right-Top Custom Alignment"/></td>
 </tr>
 
 <tr>
 <td>0.5</td>
-<td><img src="Getting-Started_images/Custom_Left_center.png" alt="Left-center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Center.png" alt="Center-Center custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Center.png" alt="Right-Center custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-left-center.png" alt="WPF Badge Left-center Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-center-center.png" alt="WPF Badge Center-Center Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-right-center.png" alt="WPF Badge Right-Center Custom Alignment"/></td>
 </tr>
 
 <tr>
 <td>1</td>
-<td><img src="Getting-Started_images/Custom_Left_Bottom.png" alt="Left-Bottom custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Center_Bottom.png" alt="Center-Bottom custom alignment of Badge"/></td>
-<td><img src="Getting-Started_images/Custom_Right_Bottom.png" alt="Right-Bottom custom alignment of Badge"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-left-bottom.png" alt="WPF Badge Left-Bottom Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-center-bottom.png" alt="WPF Badge Center-Bottom Custom Alignment"/></td>
+<td><img src="Getting-Started_images/wpf-badge-custom-right-bottom.png" alt="WPF Badge Right-Bottom Custom Alignment"/></td>
 </tr>
 </table>
 
@@ -289,7 +289,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Custom position of the Badge control is changed](Getting-Started_images/Custom_Anchor.png)
+![WPF Badge Custom Position](Getting-Started_images/wpf-badge-custom-position.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Custom_Alignment)
 
@@ -321,6 +321,6 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
+![WPF Badge Content Alignment](Getting-Started_images/wpf-badge-content-alignment.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)

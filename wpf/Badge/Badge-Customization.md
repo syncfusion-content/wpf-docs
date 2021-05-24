@@ -49,7 +49,7 @@ SfBadge.SetBadge(button, sfBadge);
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added to the Button control](Getting-Started_images/Adding_Badge.png)
+![WPF Adding Badge Control ](Getting-Started_images/wpf-adding-badge-control.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -140,7 +140,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-![Badge added for ListView Items](Getting-Started_images/badge_withoutBadgeContainer.png)
+![WPF Badge ListView Items](Getting-Started_images/wpf-badge-listview-items.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_without_BadgeContainer)
 
@@ -168,7 +168,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Badge display content changed](Getting-Started_images/Change_BadgeContent.png)
+![WPF Display Badge Content](Getting-Started_images/wpf-display-badge-content.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -200,7 +200,7 @@ You can change the appearance of `Badge` content by using `ContentTemplate` prop
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the custom UI of Bagde content](Getting-Started_images/ContentTemplate.png)
+![WPF Badge Content Template](Getting-Started_images/wpf-badge-content-template.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
@@ -224,7 +224,7 @@ The `Badge` supports the following different essential states :
 
 * Warning - Chocolate background will be applied
 
-![Displaying the various state colors for Badge](Getting-Started_images/States.png)
+![WPF Badge States](Getting-Started_images/wpf-badge-states.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -248,7 +248,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Success state of Badge](Getting-Started_images/Information_States.png)
+![WPF Badge Information States](Getting-Started_images/wpf-badge-information-states.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -280,7 +280,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with custom colors](Getting-Started_images/Custom_Color.png)
+![WPF Badge with Custom Colors](Getting-Started_images/wpf-badge-custom-colors.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
@@ -312,7 +312,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the oval shaped Badge](Getting-Started_images/oval_Shape.png)
+![WPF Oval Shaped Badge](Getting-Started_images/wpf-oval-shaped-badge.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -337,7 +337,7 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
+![WPF Custom Shaped Badge](Getting-Started_images/wpf-custom-shaped-badge.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -390,11 +390,11 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ### Scaling based animation
 
-![Displaying the Badge with scale based animation](Getting-Started_images/Scale_animation.gif)
+![WPF Badge with Scale Based Animation](Getting-Started_images/wpf-badge-with-scale-based-animation.gif)
 
 ### Opacity based animation
 
-![Displaying the Badge with opacity based animation](Getting-Started_images/Opacity_animation.gif)
+![WPF Badge Opacity Based Animation](Getting-Started_images/wpf-badge-opacity-based-animation.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Features)
 
@@ -426,7 +426,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with customized stroke](Getting-Started_images/Stroke.png)
+![WPF Badge Stroke Customization](Getting-Started_images/wpf-badge-stroke-customization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
@@ -504,7 +504,7 @@ private void BadgeContent_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endhighlight %}
 {% endtabs %}
 
-![Number formatting for the Badge content](Getting-Started_images/number.gif)
+![WPF Badge Number Formatting](Getting-Started_images/wpf-badge-number-formatting.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Content_CustomUI)
 
@@ -536,7 +536,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Size of the Badge control is changed](Getting-Started_images/size.png)
+![WPF Change Badge Size](Getting-Started_images/wpf-change-badge-size.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Getting_Started)
 
@@ -571,7 +571,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Badge display content text format changed](Getting-Started_images/Text_formatting.png)
+![WPF Badge Text Formatting](Getting-Started_images/wpf-badge-text-formatting.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
@@ -601,7 +601,7 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the Badge with reduced opacity](Getting-Started_images/Opacity.png)
+![WPF Badge Opacity](Getting-Started_images/wpf-badge-opacity.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-badge-control-examples/blob/main/Samples/Badge_Control)
 
@@ -631,4 +631,4 @@ badge.Content = "99+";
 {% endhighlight %}
 {% endtabs %}
 
-![Visibility of the Badge control is restricted](Getting-Started_images/hidden.png)
+![WPF Badge Visibility](Getting-Started_images/wpf-badge-visibility.png)
