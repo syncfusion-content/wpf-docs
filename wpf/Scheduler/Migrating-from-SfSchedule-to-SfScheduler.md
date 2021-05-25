@@ -9,7 +9,7 @@ documentation: ug
 
 # Migrating from SfSchedule to SfScheduler in WPF Scheduler
 
-SfScheduler is a new Scheduler control introduced in 18.2.0.45 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
+SfScheduler is a new Scheduler control introduced in 18.2.0.45 Version. The SfScheduler control is used to schedule and manage the appointments through an intuitive user interface, similar to the Outlook calendar. This section helps to identify the equivalent SfSchedule features or APIs in the SfScheduler.
 
 ## Adding Reference
 
@@ -20,7 +20,7 @@ SfScheduler Assembly Name: Syncfusion.SfScheduler.WPF
 SfScheduler Namespace Name: Syncfusion.UI.Xaml.Scheduler
 
 
-The following code example shows xmlns namespace for SfScheduler control. You can include the Syncfusion schema in WPF and both the charts are available in the WPF schema.
+The following code example shows xmlns namespace for SfScheduler control. Include the Syncfusion schema in WPF and both the charts are available in the WPF schema.
 
 ### SfSchedule
 
@@ -53,7 +53,7 @@ Both [SfSchedule](https://help.syncfusion.com/wpf/schedule/overview) and [SfSche
 * Support Recurrence pattern exception dates and exception appointments.
 * Support special time region for Timeslot views.
 
-N>  In the future, new features & enhancements will be added only in `SfScheduler`. It recommended using the  ` SfScheduler`.
+N>  In the future, new features & enhancements will be added only in `SfScheduler`. It is recommended to use the  ` SfScheduler`.
 
 The following table shows the API comparison between SfSchedule and SfScheduler.
 
@@ -147,7 +147,7 @@ The following table compares the [ScheduleAppointment](https://help.syncfusion.c
 <tr>
 <td>{{'[AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDay)'| markdownify }}</td>
 <td>{{'[IsAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay)'| markdownify }}</td>
-<td>Gets or sets a value indicating whether the appointment's duration is equal one day or not.</td></tr>
+<td>Gets or sets a value indicating whether the appointment's duration is equal to one day or not.</td></tr>
 <tr>
 <td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
 <td>{{'[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_RecurrenceRule)'| markdownify }}</td>
@@ -227,7 +227,7 @@ The following table compares the [AppointmentMapping](https://help.syncfusion.co
 <td>Gets or sets the RecurrenceId property for mapping to the schedule appointment.</td></tr>
 </table>
 
-You can see the list of the rich set of features in `SfScheduler` over `SfSchedule` as follows:
+See the list of the rich set of features in `SfScheduler` over `SfSchedule` as follows:
 
 Rich set of features in `SfScheduler` over `SfSchedule`.
 
@@ -255,7 +255,7 @@ The scheduler control supports to bind any collection that implements the IEnume
 Recurring Events
 </td>
 <td>
-Easily configure recurring events on a daily, weekly, monthly, or yearly basis. You can also skip or change the occurrence of a recurring appointment.
+Easily configure recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
 </td>
 </tr>
 </table>
