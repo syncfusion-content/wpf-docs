@@ -30,7 +30,7 @@ sfDatePicker.FormatString = "M";
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker selected date with month format](Features_images/Features_img1.png)
+![WPF DatePicker FormatString](Features_images/wpf-datepicker-formatstring.png)
 
 ## Specifying format for the DateSelector
 
@@ -51,7 +51,7 @@ sfDatePicker.SelectorFormatString = "M";
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker contains only month selector](Features_images/Features_img2.png)
+![WPF DatePicker Month Selector](Features_images/wpf-datepicker-month-selector.png)
 
 Here, we can only able to select the month value from the `SfDateSelector`
 
