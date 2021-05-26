@@ -37,7 +37,7 @@ The SfTreeView control can be added to project by the following ways.
 
 SfTreeView control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![Displaying the addition of WPF SfTreeView control via the designer](GettingStarted_images/Gettingstarted_image1.png)
+![WPF TreeView Designer](GettingStarted_images/wpf-treeview-designer.png)
 
 #### Adding SfTreeView by XAML.
 
@@ -170,7 +170,7 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 {% endhighlight %}
 {% endtabs %}
 
-![Populating nodes without data source in SfTreeView ](GettingStarted_images/Gettingstarted_image2.png)
+![WPF TreeView Populating Nodes in Unbound Mode](GettingStarted_images/wpf-treeview-populating-nodes-in-unbound-mode.png)
 
 ### Bind to a hierarchical data source - Bound Mode
 
@@ -676,4 +676,4 @@ SfTreeView supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfTreeView ](GettingStarted_images/Theme.png)
+  ![WPF TreeView Theme](GettingStarted_images/wpf-treeview-theme.png)
