@@ -365,7 +365,7 @@ The series can be collapsed by unchecking the CheckBox as below:
 
 ## ToggleSeriesVisibility 
 
-[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is *False*.
+[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/charts/seriestypes/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is *False*.
 
 We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property as in below code example:
 
@@ -395,12 +395,12 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 
-The [`series`](https://help.syncfusion.com/wpf/sfchart/series) can be collapsed, by clicking on the respective legend item,
+The [`series`](https://help.syncfusion.com/wpf/charts/seriestypes/series) can be collapsed, by clicking on the respective legend item,
 
 ![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_1.png)
 
 
-We can also view the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its disabled legend item,
+We can also view the associated [`series`](https://help.syncfusion.com/wpf/charts/seriestypes/series), by clicking on its disabled legend item,
 
 ![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_2.png)
 
