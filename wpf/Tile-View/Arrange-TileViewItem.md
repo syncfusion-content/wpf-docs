@@ -82,7 +82,9 @@ You can change the order in which the items are displayed in `TileView` control 
 
 N> `CurrentItemsOrder` property works only when Virtualization is disabled i.e., `IsVirtualizing` property value is **false**.
 
-N> When an item in `TileView` control is maximized, the items in `CurrentItemsOrder` list will be cleared.
+N> `CurrentItemsOrder` list property should contain position order for all the items in the `TileView` control i.e., the count of `CurrentItemsOrder` list should be same as the count of TileView items.
+
+N> The `CurrentItemsOrder` list property should not contain same position for more than one item.
 
 {% tabs %}
 {% highlight XAML %}
@@ -130,10 +132,6 @@ public class ViewModel : NotificationObject
         CustomItemOrders.Add(3);
     }
 }
-
-N> When an item is maximized, you can add the items for `CurrentItemsOrder` list on runtime in code-behind.
-
-N> When an item is maximized, reordering of TileView items in UI will not be reflected in `CurrentItemsOrder` list property. 
 
 {% endhighlight %}
 {% endtabs %}
