@@ -82,7 +82,7 @@ You can change the order in which the items are displayed in `TileView` control 
 
 N> `CurrentItemsOrder` property works only when Virtualization is disabled i.e., `IsVirtualizing` property value is **false**.
 
-N> `CurrentItemsOrder` list property should contain position order for all the items in the `TileView` control i.e., the count of `CurrentItemsOrder` list should be same as the count of TileView items.
+N> `CurrentItemsOrder` list property should contain position of all the items in the `TileView` control i.e., the count of `CurrentItemsOrder` list should be same as the count of TileView items.
 
 N> The `CurrentItemsOrder` list property should not contain same position for more than one item.
 
