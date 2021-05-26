@@ -23,7 +23,7 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 {% endhighlight %}
 {% endtabs %}
 
-![Accent Colors applied on SfAccordion header](Appearance-and-Styling-images/wpf-accordion-accent-color.png)
+![WPF Accordion Accent Colors](Appearance-and-Styling-images/wpf-accordion-accent-colors.png)
 
 ## Accordion header style
 
@@ -46,7 +46,7 @@ You can customize the appearance of SfAccordionItem header by setting the [Heade
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem header style customized using HeaderTemplate](Appearance-and-Styling-images/wpf-accordion-header-customization.png)
+![WPF Accordion Header Style](Appearance-and-Styling-images/wpf-accordion-header-style.png)
 
 ## Accordion expander style
 
@@ -107,7 +107,7 @@ You can customize the appearance of expander button by writing style of [Accordi
 {% endhighlight %}
 {% endtabs %}
 
-![Expander button customization](Appearance-and-Styling-images/wpf-sfaccordion-expander-button-customization.png)
+![WPF Accordion Expander Style](Appearance-and-Styling-images/wpf-accordion-expander-style.png)
 
 ## AccordionItem header height customization
 
@@ -124,7 +124,7 @@ You can customize the height of SfAccordionItem header by setting the [HeaderTem
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem header height customized](Appearance-and-Styling-images/wpf-accordion-header-height-customization.png)
+![WPF Accordion Header Height Customization](Appearance-and-Styling-images/wpf-accordion-header-height-customization.png)
 
 ## AccordionItem content height customization
 
@@ -141,7 +141,7 @@ You can customize the height of SfAccordionItem content by setting the [ContentT
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem content height customized](Appearance-and-Styling-images/wpf-accordion-content-height-customization.png)
+![WPF Accordion Content Height Customization](Appearance-and-Styling-images/wpf-accordion-content-height-customization.png)
 
 ## Enable or disable the animation behaviour
 
@@ -196,4 +196,4 @@ You can enable or disable the animation behaviour when its item is expanded or c
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem animation](Appearance-and-Styling-images/wpf-accordion-animation.png)
+![WPF Accordion Animation](Appearance-and-Styling-images/wpf-accordion-animation.png)
