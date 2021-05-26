@@ -4,7 +4,7 @@ title: Header in WPF Scheduler control | Syncfusion
 description: Learn here all about Header support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: wpf
 control: SfScheduler
-documentation: ug
+ documentation: ug
 ---
 
 # Header in WPF Scheduler (SfScheduler)

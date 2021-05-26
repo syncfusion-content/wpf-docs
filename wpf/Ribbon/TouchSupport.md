@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Touch Support in WPF Ribbon control | Syncfusion
 description: Learn here about Touch Support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf

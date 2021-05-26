@@ -4,7 +4,7 @@ title: Localization in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Localization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Localization in WPF Spreadsheet (SfSpreadsheet)

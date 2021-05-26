@@ -4,7 +4,7 @@ title: Custom Formula in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Custom Formula support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Custom Formula in WPF Spreadsheet (SfSpreadsheet)

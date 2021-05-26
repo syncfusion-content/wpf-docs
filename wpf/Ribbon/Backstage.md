@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Backstage in WPF Ribbon control | Syncfusion
 description: Learn about Backstage support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf

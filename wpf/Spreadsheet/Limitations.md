@@ -4,7 +4,7 @@ title: Limitations in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Limitations support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Limitations in WPF Spreadsheet (SfSpreadsheet)

@@ -4,7 +4,7 @@ title: Load On Demand in WPF Scheduler control | Syncfusion
 description: Learn here all about Load On Demand support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
-documentation: ug
+ documentation: ug
 ---
 # Load On Demand in WPF Scheduler (SfScheduler)
 The scheduler supports to loading appointment on demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.

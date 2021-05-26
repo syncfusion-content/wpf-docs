@@ -4,7 +4,7 @@ title: Interactive Features in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Interactive Features support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Interactive Features in WPF Spreadsheet (SfSpreadsheet)

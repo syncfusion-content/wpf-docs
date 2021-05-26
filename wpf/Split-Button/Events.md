@@ -4,7 +4,7 @@ title: Events in WPF Split Button control | Syncfusion
 description: Learn about Events support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
-documentation: ug
+ documentation: ug
 ---
 
 # Events in WPF Split Button

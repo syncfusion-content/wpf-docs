@@ -4,7 +4,7 @@ title: Marker Customization in WPF Sparkline control | Syncfusion
 description: Learn here all about Marker Customization support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
-documentation: ug
+ documentation: ug
 ---
 
 # Marker Customization in WPF Sparkline (SfSparkline)

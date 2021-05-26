@@ -4,7 +4,7 @@ title: Timeline Views  in WPF Scheduler control | Syncfusion
 description: Learn here all about Timeline Views  support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
-documentation: ug
+ documentation: ug
 ---
 
 # Timeline Views  in WPF Scheduler (SfScheduler)

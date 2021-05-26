@@ -4,7 +4,7 @@ title: Getting Started with WPF Spreadsheet control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Spreadsheet (SfSpreadsheet)

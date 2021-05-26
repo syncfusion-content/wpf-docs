@@ -3,7 +3,7 @@ title: About WPF RichTextBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
-documentation: ug
+ documentation: ug
 keywords: overview, richtextboxadv, sfrichtextboxadv
 ---
 # WPF RichTextBox (SfRichTextBoxAdv) Overview

@@ -3,7 +3,7 @@ title: Mini Toolbar in WPF RichTextBox control | Syncfusion
 description: Learn here all about Mini Toolbar support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
-documentation: ug
+ documentation: ug
 keywords: mini-toolbar
 ---
 # Mini Toolbar in WPF RichTextBox (SfRichTextBoxAdv)

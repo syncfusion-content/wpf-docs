@@ -4,7 +4,7 @@ title: Find and Replace in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Find and Replace support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Find and Replace in WPF Spreadsheet (SfSpreadsheet)

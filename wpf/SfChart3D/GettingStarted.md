@@ -4,7 +4,7 @@ title: Getting Started with WPF SfChart3D control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF SfChart3D

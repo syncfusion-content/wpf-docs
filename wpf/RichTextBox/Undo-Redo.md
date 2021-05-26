@@ -3,7 +3,7 @@ title: Undo Redo in WPF RichTextBox control | Syncfusion
 description: Learn here all about Undo Redo support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
-documentation: ug
+ documentation: ug
 keywords: undo-redo
 ---
 # Undo Redo in WPF RichTextBox (SfRichTextBoxAdv)

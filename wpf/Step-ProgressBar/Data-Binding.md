@@ -4,7 +4,7 @@ title: Data Binding in WPF Step ProgressBar control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion WPF Step ProgressBar (SfStepProgressBar) control and more.
 platform: wpf
 control: Step ProgressBar
-documentation: ug
+ documentation: ug
 ---
 
 # Data Binding in WPF Step ProgressBar (SfStepProgressBar)

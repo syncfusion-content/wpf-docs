@@ -4,7 +4,7 @@ title: Customize a Cell | SfSpreadsheet | WPF | Syncfusion
 description: customize a cell
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Customize a Cell

@@ -4,7 +4,7 @@ title: Cell Customization in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Cell Customization support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Cell Customization in WPF Spreadsheet (SfSpreadsheet)

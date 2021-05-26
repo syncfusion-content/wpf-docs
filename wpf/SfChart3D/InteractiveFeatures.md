@@ -4,7 +4,7 @@ title: Interactive Features in WPF SfChart3D control | Syncfusion
 description: Learn about Interactive Features support in Syncfusion Essential Studio WPF SfChart3D control, its elements and more.
 platform: wpf
 control: SfChart3D
-documentation: ug
+ documentation: ug
 ---
 
 # Interactive Features in WPF SfChart3D

@@ -4,7 +4,7 @@ title: Highlight Segment in WPF Sparkline control | Syncfusion
 description: Learn here all about Highlight Segment support in Syncfusion WPF Sparkline (SfSparkline) control and more.
 platform: wpf
 control: SfSparkline
-documentation: ug
+ documentation: ug
 ---
 
 # Highlight Segment in WPF Sparkline (SfSparkline)
