@@ -113,7 +113,7 @@ Create new WPF project in Visual Studio to display SfTreeGrid with data objects.
 #### Adding control via Designer
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-![Adding SfTreeGrid through designer](Getting-Started_images/Getting-Started_img1.png)
+![Dragging WPF TreeGrid from Toolbox to Designer](Getting-Started_images/wpf-treegrid-toolbox.png)
 
 #### Adding control manually in XAML
 In order to add control manually in XAML, do the below steps,
@@ -373,7 +373,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Binding self-relational data with SfTreeGrid](Getting-Started_images/Getting-Started_img2.png)
+![WPF TreeGrid with Binding Data](Getting-Started_images/wpf-treegrid-binding-data.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -519,7 +519,7 @@ namespace NestedCollectionDemo
 }
 {% endhighlight %}
 {% endtabs %}
-![Binding nested-collection with SfTreeGrid](Getting-Started_images/Getting-Started_img3.png)
+![WPF TreeGrid with Nested Collection](Getting-Started_images/wpf-treegrid-nested-collection.png)
 
 ### Defining Columns
 
@@ -726,7 +726,7 @@ Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfus
 
 Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events.
 
-![Filtering in SfTreeGrid](Getting-Started_images/Getting-Started_img5.png)
+![WPF TreeGrid with Filtering](Getting-Started_images/wpf-treegrid-filter.png)
 
 ## Theme
 
@@ -736,4 +736,4 @@ SfTreeGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme in SfTreeGrid](Getting-Started_images/Theme.png)
+  ![Applying Theme in WPF TreeGrid](Getting-Started_images/wpf-treegrid-theme.png)

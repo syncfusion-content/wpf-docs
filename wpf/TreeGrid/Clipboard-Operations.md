@@ -48,7 +48,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Copied content pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img1.jpeg)
+![Copy to Clipboard in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy.jpeg)
 
 ## Paste
 
@@ -87,7 +87,7 @@ this.treeGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Copied record pasted in new record](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
+![Paste Clipboard Content in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-paste.jpeg)
 
 ## Cut
 
@@ -122,7 +122,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
+![Cut to Clipboard in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-cut.jpeg)
 
 ## Events
 
@@ -195,7 +195,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
+![Copy to Clipboard based on Cell Value in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy-based-on-cell-value.jpeg)
 
 The following code example demonstrates how to handle the copy operation when MappingName of a column is Id.
 
@@ -209,7 +209,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Copy operation for a column handled through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img5.jpeg)
+![Copy to Clipboard based on Mapping Name in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-copy-based-on-mapping-name.jpeg)
 
 ### PasteCellContent
 
@@ -248,7 +248,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Data of a column customized when pasting through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img6.jpeg)
+![Paste Clipboard Content based on Cell Value in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-paste-based-on-cell-value.jpeg)
 
 The following code example demonstrates how to handle the paste operation when MappingName of column is Id.
 
@@ -262,7 +262,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Paste operation of a column is handled through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img7.jpeg)
+![Paste Clipboard Content based on Mapping Name in WPF TreeGrid](Clipboard-Operations_images/wpf-treegrid-clipboard-paste-based-on-mapping-name.jpeg)
 
 ## Handle the clipboard operations programmatically
 
@@ -564,10 +564,10 @@ private static void OnPasteColumn(object obj)
 
 **Copy the ID column using context menu**
 
-![Context menu shown copy the id column in WPF treegrid](Clipboard-Operations_images/Clipboard-Operations_img8.jpeg)
+![WPF TreeGrid displays Copy ContextMenu](Clipboard-Operations_images/wpf-treegrid-copy-context-menu.jpeg)
 
 **Paste the ID column after ReportsTo column**
 
-![Context menu shown paste the reportsto column in WPF treegrid](Clipboard-Operations_images/Clipboard-Operations_img9.jpeg)
+![WPF TreeGrid displays Paste ContextMenu](Clipboard-Operations_images/wpf-treegrid-paste-context-menu.jpeg)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-copy-a-column-and-paste-it-as-a-new-column-in-wpf-treegrid).

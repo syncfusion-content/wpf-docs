@@ -358,7 +358,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 Below screenshot shows the customized header template loaded on the header of FirstName column.
 
-![Setting template to auto-generated column](Columns_images/Columns_img1.jpg)
+![Customizing Header Template in WPF TreeGrid Column](Columns_images/wpf-treegrid-header-template.jpg)
 
 
 ### Data Annotations with AutoGenerateColumns
@@ -475,7 +475,7 @@ public string LastName
 
 The FirstName and LastName column rearranged based on specified order.
 
-![Change the order of the columns](Columns_images/Columns_img2.jpg)
+![Changing Columns Order of WPF TreeGrid](Columns_images/wpf-treegrid-columns-order.jpg)
 
 #### Customizing data format 
 
@@ -614,13 +614,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![Resizing Columns](Columns_images/Columns_img3.jpeg)
+![Resizing Columns in WPF TreeGrid](Columns_images/wpf-treegrid-column-resizing.jpeg)
 
 ### Hidden column resizing
 
 SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
-![Hidden column resizing](Columns_images/Columns_img4.jpeg)
+![Resizing Hidden Column in WPF TreeGrid](Columns_images/wpf-treegtid-hidden-column-resizing.jpeg)
 
 ### Disable resizing
 
@@ -677,7 +677,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Column drag and drop](Columns_images/Columns_img5.jpg)
+![Drag and Drop Column in WPF TreeGrid](Columns_images/wpf-treegrid-drag-and-drop.jpg)
 
 You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowDragging) property.
 {% tabs %}
@@ -743,7 +743,7 @@ this.treeGrid.FooterColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing Columns](Columns_images/Columns_img6.png)
+![WPF TreeGrid displays Freezing Columns](Columns_images/wpf-treegrid-freeze-columns.png)
 
 ## Stacked Headers
 
@@ -784,7 +784,7 @@ this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![Stacked Headers](Columns_images/Columns_img7.png)
+![WPF TreeGrid with Stacked Headers](Columns_images/wpf-treegrid-stacked-headers.png)
 
 ### Adding ChildColumns
 

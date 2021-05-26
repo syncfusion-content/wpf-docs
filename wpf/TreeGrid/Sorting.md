@@ -60,7 +60,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![Sorting_img1](Sorting_images/Sorting_img1.png)
+![WPF TreeGrid with Sorting](Sorting_images/wpf-treegrid-sorting.png)
 
 ## Sort column in double click
 
@@ -100,7 +100,7 @@ Following are the sequence of sorting orders when clicking column header,
 SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![Sorting_img2](Sorting_images/Sorting_img2.png)
+![Multi Column Sorting in WPF TreeGrid](Sorting_images/wpf-treegrid-multi-column-sorting.png)
 
 ### Display sort order
 
@@ -124,7 +124,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting_img3](Sorting_images/Sorting_img3.png)
+![WPF TreeGrid displays Sorting Order](Sorting_images/wpf-treegrid-sorting-order.png)
 
 ## Programmatic Sorting
 
@@ -274,7 +274,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![Sorting_img4](Sorting_images/Sorting_img4.png)
+![WPF TreeGrid with Custom Sorting](Sorting_images/wpf-treegrid-custom-sorting.png)
 
 ## Handling events
 
