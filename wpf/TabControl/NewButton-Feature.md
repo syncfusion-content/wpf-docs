@@ -4,7 +4,7 @@ title: NewButton Feature in WPF TabControl control | Syncfusion
 description: Learn here all about NewButton Feature support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControlExt
- documentation: ug
+documentation: ug
 ---
 
 # NewButton Feature in WPF TabControl (TabControlExt)

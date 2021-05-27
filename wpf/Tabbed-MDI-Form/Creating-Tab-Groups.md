@@ -4,7 +4,7 @@ title: Creating Tab Groups in WPF Tabbed MDI Form control | Syncfusion
 description: Learn here all about Creating Tab Groups support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: DocumentContainer
- documentation: ug
+documentation: ug
 ---
 
 # Creating Tab Groups in WPF Tabbed MDI Form (DocumentContainer)

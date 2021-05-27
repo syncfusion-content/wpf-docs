@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | TaskBar | wpf | Syncfusion
-description: appearance
+title: Appearance in WPF TaskBar Control | Syncfusion
+description: Learn here about appearance in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF TaskBar Control
 
 This section deals with the appearance of TaskBar control and contains the following topic:
 
@@ -97,7 +97,7 @@ SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
 
 {%endtabs%}
 
-![](Appearance_images/Appearance_img1.png)
+![Appearance_images1](Appearance_images/Appearance_img1.png)
 
 
 TaskBar with "Office2007Blue" Visual Style
@@ -105,21 +105,21 @@ TaskBar with "Office2007Blue" Visual Style
 
 
 
-![](Appearance_images/Appearance_img2.png)
+![Appearance_images2](Appearance_images/Appearance_img2.png)
 
 
 TaskBar with "Office2007Black" Visual Style
 {:.caption}
 
 
-![](Appearance_images/Appearance_img3.png)
+![Appearance_images3](Appearance_images/Appearance_img3.png)
 
 TaskBar with "Office2007Silver" Visual Style
 {:.caption}
 
 
 
-![](Appearance_images/Appearance_img4.png)
+![Appearance_images4](Appearance_images/Appearance_img4.png)
 
 
 TaskBar with "Office2010Blue" Visual Style
@@ -127,7 +127,7 @@ TaskBar with "Office2010Blue" Visual Style
 
 
 
-![](Appearance_images/Appearance_img5.png)
+![Appearance_images5](Appearance_images/Appearance_img5.png)
 
 
 TaskBar with "Office2010Black" Visual Style
@@ -135,7 +135,7 @@ TaskBar with "Office2010Black" Visual Style
 
 
 
-![](Appearance_images/Appearance_img6.png)
+![Appearance_images6](Appearance_images/Appearance_img6.png)
 
 
 
@@ -144,7 +144,7 @@ TaskBar with "Office2010Silver" Visual Style
 
 
 
-![](Appearance_images/Appearance_img7.png)
+![Appearance_images7](Appearance_images/Appearance_img7.png)
 
 
 
@@ -153,7 +153,7 @@ TaskBar with "Blend" Visual Style
 
 
 
-![](Appearance_images/Appearance_img8.png)
+![Appearance_images8](Appearance_images/Appearance_img8.png)
 
 
 TaskBar with "VS2010" Visual Style
@@ -161,7 +161,7 @@ TaskBar with "VS2010" Visual Style
 
 
 
-![](Appearance_images/Appearance_img9.png)
+![Appearance_images9](Appearance_images/Appearance_img9.png)
 
 
 
@@ -170,7 +170,7 @@ TaskBar with "Metro" Visual Style
 
 
 
-![](Appearance_images/Appearance_img10.png)
+![Appearance_images10](Appearance_images/Appearance_img10.png)
 
 
 TaskBar with "Transparent" Visual Style

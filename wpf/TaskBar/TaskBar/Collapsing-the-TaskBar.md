@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Collapsing the TaskBar | TaskBar | wpf | Syncfusion
-description: collapsing the taskbar
+title: Collapsing the WPF TaskBar Control | Syncfusion
+description: Learn here about Collapsing the Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # Collapsing the TaskBar
@@ -75,7 +75,7 @@ TaskBar.SetIsOpened(taskBar, false);
 {%endtabs%}
 
 
-![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
+![Collapsing-the-TaskBar_images1](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
 
 
 

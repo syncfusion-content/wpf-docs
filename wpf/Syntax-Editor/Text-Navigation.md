@@ -4,7 +4,7 @@ title: Text Navigation in WPF Syntax Editor control | Syncfusion
 description: Learn about Text Navigation support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
- documentation: ug
+documentation: ug
 ---
 # Text Navigation in WPF Syntax Editor
 

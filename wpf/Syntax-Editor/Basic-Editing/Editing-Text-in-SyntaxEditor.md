@@ -4,7 +4,7 @@ title: Editing Text in Syntax Editor in WPF Syntax Editor | Syncfusion
 description: Learn about Editing Text in Syntax Editor support in Syncfusion WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
- documentation: ug
+documentation: ug
 ---
 
 ## Editing Text in EditControl WPF

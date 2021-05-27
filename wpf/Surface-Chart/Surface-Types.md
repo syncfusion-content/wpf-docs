@@ -4,7 +4,7 @@ title: Surface Types in WPF Surface Chart control | Syncfusion
 description: Learn here all about Surface Types support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
- documentation: ug
+documentation: ug
 ---
 
 # Surface Types in WPF Surface Chart (SfSurfaceChart)

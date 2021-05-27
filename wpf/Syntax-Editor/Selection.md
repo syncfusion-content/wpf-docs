@@ -4,7 +4,7 @@ title: Text Selection in WPF Syntax Editor control | Syncfusion
 description: Learn about Text Selection support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
- documentation: ug
+documentation: ug
 ---
 
 # Text Selection in WPF Syntax Editor

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting the Animation Speed | TaskBar | wpf | Syncfusion
-description: setting the animation speed
+title: Setting the Animation Speed in WPF TaskBar Control | Syncfusion
+description: Learn here about Setting the Animation Speed in Syncfusion Essential Studio WPF TaskBar Control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
-# Setting the Animation Speed
+# Setting the Animation Speed in WPF TaskBar
 
 You can set the animation speed, which controls the time taken to expand or collapse the taskbar items in the TaskBar, using the Speed property. This is an attached property, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar by using the SetSpeed method.
 

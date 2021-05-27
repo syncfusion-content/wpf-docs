@@ -4,7 +4,7 @@ title: Collapsing the TaskBar in WPF TaskBar control | Syncfusion
 description: Learn about Collapsing the TaskBar support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # Collapsing the TaskBar in WPF TaskBar

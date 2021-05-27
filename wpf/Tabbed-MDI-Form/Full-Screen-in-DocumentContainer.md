@@ -4,7 +4,7 @@ title: Full Screen in DocumentContainer in WPF Tabbed MDI Form | Syncfusion
 description: Learn here all about Full Screen in DocumentContainer support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
 platform: wpf
 control: Tabbed MDI Form
- documentation: ug
+documentation: ug
 ---
 
 # Full Screen in DocumentContainer in WPF Tabbed MDI Form

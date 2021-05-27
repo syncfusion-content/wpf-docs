@@ -4,7 +4,7 @@ title: Getting Started with WPF Syntax Editor control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Syntax Editor

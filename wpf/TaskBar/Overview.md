@@ -4,7 +4,7 @@ title: About WPF TaskBar control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # WPF TaskBar Overview

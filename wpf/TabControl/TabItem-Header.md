@@ -4,7 +4,7 @@ title: TabItem Header in WPF TabControl control | Syncfusion
 description: Learn here all about TabItem Header support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControlExt
- documentation: ug
+documentation: ug
 ---
 
 # TabItem Header in WPF TabControl (TabControlExt)
@@ -72,7 +72,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Restrict header editing for specific tab item
 
-If you want to restrict header editing for specific tab item, handle the []() and setting the []() property as `true` for that specific tab item.
+If you want to restrict header editing for specific tab item, handle the [restrict-header-editing]() and setting the [restrict-header-setting]() property as `true` for that specific tab item.
 
 {% tabs %}
 {% highlight xaml %}

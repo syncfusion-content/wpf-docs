@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Changing the size of Expander Button | TaskBar | wpf | Syncfusion
-description: changing the size of expander button
+title: Changing the size of Expander Button in WPF TaskBar | Syncfusion
+description: Changing the size of expander button in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # Changing the size of Expander Button
@@ -67,7 +67,7 @@ TaskBar.SetButtonSize(taskBar, 20);
 
 {%endtabs%}
 
-![](Changing-the-size-of-Expander-Button_images/Changing-the-size-of-Expander-Button_img1.jpeg)
+![Expander-Button_images1](Changing-the-size-of-Expander-Button_images/Changing-the-size-of-Expander-Button_img1.jpeg)
 
 
 

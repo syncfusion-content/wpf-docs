@@ -4,7 +4,7 @@ title: Changing the flow directions in WPF TaskBar control | Syncfusion
 description: Learn about Changing the flow directions support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # Changing the flow directions in WPF TaskBar

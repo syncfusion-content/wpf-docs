@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Setting Group Padding | TaskBar | wpf | Syncfusion
-description: setting group padding
+title: Setting Group Padding in WPF TaskBar Control | Syncfusion
+description: Learn here about Setting Group Padding in Syncfusion Essential Studio WPF TaskBar Control, its elements and more.
 platform: wpf
 control: TaskBar
- documentation: ug
+documentation: ug
 ---
 
 # Setting Group Padding
@@ -77,7 +77,7 @@ TaskBar.SetGroupPadding(taskBar, new Thickness(20));
 {%endtabs%}
 
 
-![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)
+![Setting-Group-Padding_images1](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)
 
 
 

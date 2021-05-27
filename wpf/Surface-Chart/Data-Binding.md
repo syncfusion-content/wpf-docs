@@ -4,7 +4,7 @@ title: Data Binding in WPF Surface Chart control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
- documentation: ug
+documentation: ug
 ---
 
 # Data Binding in WPF Surface Chart (SfSurfaceChart)
