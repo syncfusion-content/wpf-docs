@@ -126,7 +126,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WPF BoundMode TreeView with CheckBox](Checkbox_images/Checkbox_image2.png)
+![WPF TreeView with CheckBox in BoundMode](Checkbox_images/wpf-treeview-with-checkbox-in-boundmode.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-with-check-boxes-in-bound-mode-in-wpf-treeview)
 
@@ -213,7 +213,7 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
 {% endhighlight %}
 {% endtabs %}
 
-![WPF UnboundMode TreeView with CheckBox](Checkbox_images/Checkbox_image1.png)
+![WPF TreeView with CheckBox in UnboundMode](Checkbox_images/wpf-treeview-with-checkbox-in-unboundmode.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-with-check-boxes-in-unbound-mode-in-wpf-treeview)
 
