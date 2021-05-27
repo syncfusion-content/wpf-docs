@@ -30,7 +30,7 @@ sfDatePicker.Value = new DateTime(2021,5,30);
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker displaying selected value](Features_images/Features_img17.png)
+![WPF DatePicker Date Setting](Features_images/wpf-datepicker-date-setting.png)
 
 ## Setting Null Value
 
@@ -53,7 +53,7 @@ sfDatePicker.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker displaying null value](Features_images/Features_img13.png)
+![WPF DatePicker Display Null Value](Features_images/wpf-datepicker-display-null-value.png)
 
 ## Setting WaterMark text
 
@@ -79,7 +79,7 @@ sfDatePicker.Value = null;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with watermark text](Appearance-and-Styling_images/Watermark.png)
+![WPF DatePicker Watermark Text](Appearance-and-Styling_images/wpf-datepicker-watermark-text.png)
 
 ### Setting WaterMark Template
 
@@ -107,7 +107,7 @@ We can change the template of the `Watermark` by using the [WatermarkTemplate](h
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with watermarktemplate](Appearance-and-Styling_images/WatermarkTemplate.png)
+![WPF DatePicker Watermark Template](Appearance-and-Styling_images/wpf-datepicker-watermark-template.png)
 
 ## Set selected value on lost focus
 
@@ -128,7 +128,7 @@ sfDatePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
+![WPF DatePicker Set Value on Lost Focus](Features_images/wpf-datepicker-set-value-on-lost-focus.gif)
 
 ## Setting the date using editing
 
@@ -151,7 +151,7 @@ sfDatePicker.AllowInlineEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with inline date editing](Features_images/AllowInlineEditing.gif)
+![WPF DatePicker Editing](Features_images/wpf-datepicker-editing.gif)
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
@@ -176,7 +176,7 @@ sfDatePicker.InputScope = InputScopeNameValue.Date;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with Input Scope for the On-Screen Keyboard](Features_images/Features_img14.png)
+![WPF DatePicker with Input Scope for the On-Screen Keyboard](Features_images/wpf-datepicker-input-scope-for-the-on-screen-keyboard.png)
 
 ## Restrict selecting date limit
 
@@ -200,7 +200,7 @@ sfDatePicker.MaxDate = new DateTime(2020, 6, 30);
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker with max-min date range](Features_images/Features_img16.png)
+![WPF DatePicker with Min-Max Date Range](Features_images/wpf-datepicker-min-max-date-range.png)
 
 Here, the users can select the year from `2019` to `2021` only. 
 

@@ -16,4 +16,4 @@ This section describes the keyboard support in SfNavigationDrawer.
 * **Down** - This key is used to Navigate to the next NavigationItem. 
 * **Enter and Space** - This key is used to select the currently focused item.
 
-![Keyboard_Support](Keyboard_Support_image/Keyboard_Support.gif)
+![Keyboard Support in WPF NavigationDrawer](Keyboard_Support_image/Keyboard_Support.gif)

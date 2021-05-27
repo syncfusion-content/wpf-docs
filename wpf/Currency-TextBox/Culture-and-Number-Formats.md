@@ -41,11 +41,11 @@ By default the US culture uses “,” as the `CurrencyGroupSeparator` "$" as `C
 
 **Default Culture**
 
-![CurrencyTextBox with default culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+![WPF CurrencyTextBox with Default Culture](Culture-and-Number-Formats_images/wpf-currency-textbox-culture.png)
 
 **France Culture**
 
-![CurrencyTextBox with France culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![WPF CurrencyTextBox with France Culture](Culture-and-Number-Formats_images/wpf-currency-textbox-france-culture.png)
 
 ## NumberFormatInfo based formatting
 
@@ -82,7 +82,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting CurrencyTextBox number format by NumberFormatInfo](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+![WPF CurrencyTextBox with Formatting](Culture-and-Number-Formats_images/wpf-currency-textbox-formatting.png)
 
 The following code illustrate how to set currency group size by using the `NumberFormat` property.
 
@@ -107,7 +107,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting CurrencyTextBox number group size by NumberFormatInfo](Culture-and-Number-Formats_images/NumberGroupSizes_format.png)
+![WPF CurrencyTextBox displays Different Group Size between Numbers](Culture-and-Number-Formats_images/wpf-currency-textbox-group-size.png)
 
 ## Formatting with dedicated properties
 
@@ -134,7 +134,7 @@ currencyTextBox.CurrencyGroupSizes = new Int32Collection() { 4, 3, 2 };
 {% endhighlight %}
 {% endtabs %}
 
-![Setting CurrencyTextBox number format by dedicated properties](Culture-and-Number-Formats_images/NumberGroupSizes2.png)
+![WPF CurrencyTextBox with Formatting](Culture-and-Number-Formats_images/wpf-currency-textbox-number-format.png)
 
 N> When you use both the `NumberFormat` and the dedicated properties (`CurrencyGroupSeparator`, `CurrencySymbol`, `CurrencyDecimalDigits`, `CurrencyDecimalSeparator` and `CurrencyGroupSizes`) to format the value of `CurrencyTextBox`, the `CurrencyGroupSeparator`and `CurrencyGroupSizes` properties have higher priority.
 
@@ -169,7 +169,7 @@ $ n</td></tr>
 n $</td></tr>
 </table>
 
-![CurrencyTextBox Positive value Patterns](Culture-and-Number-Formats_images/CurrencyPositivePattern.png)
+![WPF CurrencyTextBox displays Positive Value Patterns](Culture-and-Number-Formats_images/wpf-currency-textbox-positive-patterns.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -188,7 +188,7 @@ currencyTextBox.CurrencyPositivePattern = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox postive value pattern as 3](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+![WPF CurrencyTextBox displays Postive Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-positive-value.png)
 
 ###  Negative Value Pattern
 
@@ -267,7 +267,7 @@ n- $</td></tr>
 (n $)</td></tr>
 </table>
 
-![CurrencyTextBox Negative value Patterns](Culture-and-Number-Formats_images/CurrencyNegativePattern.png)
+![WPF CurrencyTextBox displays Negative Value Patterns](Culture-and-Number-Formats_images/wpf-currency-textbox-negative-patterns.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -286,4 +286,4 @@ currencyTextBox.CurrencyNegativePattern = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox negative value pattern as 0](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
+![WPF CurrencyTextBox displays Negative Value Pattern](Culture-and-Number-Formats_images/wpf-currency-textbox-negative-value.png)

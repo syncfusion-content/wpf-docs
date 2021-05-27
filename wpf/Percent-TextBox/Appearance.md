@@ -36,7 +36,7 @@ percentTextBox.PositiveForeground = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox displaying value in positive foreground](Appearance_images/positive-foreground.png)
+![Changing Positive Value Color in WPF PercentTextBox](Appearance_images/wpf-percent-textbox-positive-color.png)
 
 ### Foreground for Negative Value
 
@@ -61,7 +61,7 @@ percentTextBox.NegativeForeground = Brushes.SpringGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox displaying negative value in negative foreground](Appearance_images/negative-foreground.png)
+![Changing Negative Value Color in WPF PercentTextBox](Appearance_images/wpf-percent-textbox-negative-color.png)
 
 ### Foreground for Zero Value
 
@@ -87,7 +87,7 @@ percentTextBox.ZeroColor = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox displaying zero value with zero foreground](Appearance_images/zero-foreground.png)
+![Changing Zero Color in WPF PercentTextBox](Appearance_images/wpf-percent-textbox-zero-color.png)
 
 ## Setting the Background
 
@@ -110,7 +110,7 @@ percentTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox with cyan background](Appearance_images/background.png)
+![WPF PercentTextBox with Cyan Background](Appearance_images/wpf-percent-textbox-background.png)
 
 ## Setting the Corner Radius
 
@@ -134,7 +134,7 @@ percentTextBox.CornerRadius = new CornerRadius(5);
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox with corner radius](Appearance_images/corner-radius.png)
+![WPF PercentTextBox with Corner Radius](Appearance_images/corner-radius.png)
 
 ## Apply Background for Selection
 
@@ -157,7 +157,7 @@ percentTextBox.SelectionOpacity = 0.3;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox with red selection background](Appearance_images/Selection.png)
+![WPF PercentTextBox with Red Selection Background](Appearance_images/wpf-percent-textbox-selection-background.png)
 
 ## Align Value
 
@@ -179,7 +179,7 @@ percentTextBox.TextAlignment = TextAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![Center aligned PercentTextBox Value](Appearance_images/TextAlignment.png)
+![Changing Text Alignment of WPF PercentTextBox](Appearance_images/wpf-percent-textbox-text-alignment.png)
 
 ## Setting ToolTip
 
@@ -201,7 +201,7 @@ percentTextBox.ToolTip = "Enter Percentage value";
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox with tool tip](Appearance_images/ToolTip.png)
+![WPF PercentTextBox with ToolTip](Appearance_images/wpf-percent-textbox-tooltip.png)
 
 ## Theme
 
@@ -211,5 +211,5 @@ PercentTextBox supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-  ![Setting theme to WPF PercentTextBox control ](Getting-Started_images/Theme.png)
+  ![Applying Theme to WPF PercentTextBox](Getting-Started_images/wpf-percent-textbox-theme.png)
 

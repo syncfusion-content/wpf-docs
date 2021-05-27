@@ -90,7 +90,7 @@ N> The navigation menu will get toggled back to compact width when any interacti
 
 {% endtabs %}
 
-![DisplayMode](DisplayMode_images/Compact.png)
+![WPF NavigationDrawer with Compact Mode](DisplayMode_images/wpf-navigation-drawer-compact.png)
 
 
 ## Expanded display mode
@@ -170,7 +170,7 @@ When the drawer menu is toggled using the built-in toggle button, the drawer men
 
 {% endtabs %}
 
-![DisplayMode](DisplayMode_images/Expanded.png)
+![WPF NavigationDrawer with Expanded Mode](DisplayMode_images/wpf-navigation-drawer-expand.png)
 
 ## Auto display mode change
 
@@ -253,7 +253,7 @@ This switches the display mode to compact when the application window size is le
 
 {% endtabs %}
 
-![DisplayMode](DisplayMode_images/AutoChangeDisplayMode.gif)
+![WPF NavigationDrawer with Auto Mode](DisplayMode_images/wpf-navigation-drawer-auto-mode.gif)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Display_Mode) in GitHub
 

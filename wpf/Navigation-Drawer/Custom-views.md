@@ -156,7 +156,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Drawer View Image](Getting-Started_images/Drawer_View_Image.png)                                      
+![WPF NavigationdDrawer displays Custom Views](Getting-Started_images/wpf-navigation-drawer-custom-views.png)                                      
 
 ## Customizing the drawer
 
@@ -474,7 +474,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Left_Position](Concepts-and-features_images/Position_img1.png)                                            
+![WPF NavigationDrawer shows in Left Side](Concepts-and-features_images/wpf-navigation-drawer-left-position.png)                                            
 
 
 The following code example shows how to set the SfNavigationDrawer to the right.  
@@ -618,7 +618,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Right_Position](Concepts-and-features_images/Position_img2.png)
+![WPF NavigationDrawer shows in Right Side](Concepts-and-features_images/wpf-navigation-drawer-right-position.png)
 
 The following code example shows how to set the SfNavigationDrawer at the top.  
 
@@ -761,7 +761,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Top_Position](Concepts-and-features_images/Position_img3.png)   
+![WPF NavigationDrawer shows in Top Position](Concepts-and-features_images/wpf-navigation-drawer-top-position.png)   
 
 The following code example shows how to set the SfNavigationDrawer at the bottom.  
 
@@ -904,7 +904,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Bottom_Position](Concepts-and-features_images/Position_img4.png)   
+![WPF NavigationDrawer shows in Bottom Position](Concepts-and-features_images/wpf-navigation-drawer-bottom-position.png)   
 
 ## Swipe gesture and sensitivity                              
 
@@ -1218,7 +1218,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Transition_SlideOnTop](Concepts-and-features_images/Transition_img1.png)
+![WPF NavigationDrawer with Slidebar at Top Position](Concepts-and-features_images/wpf-navigation-drawer-slide-bar.png)
 
 
 The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Push](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. This transition moves the Drawer and main content simultaneously.
@@ -1359,7 +1359,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Transition_Push](Concepts-and-features_images/Transition_img2.png)                                              
+![WPF NavigationDrawer with Slidebar](Concepts-and-features_images/wpf-navigation-drawer-slidebar-push.png)                                              
 
 
 The following code example shows how to set [Transition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_Transition) as [Reveal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.Transition.html) to SfNavigationDrawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
@@ -1501,7 +1501,7 @@ namespace NavigationDrawerWPF
 
 {% endtabs %}
 
-![Transition_Reveal](Concepts-and-features_images/Transition_img3.png)  
+![WPF NavigationDrawer with Slidebar](Concepts-and-features_images/wpf-navigation-drawer-slidebar-reveal.png)  
 
 ### Animation duration
 

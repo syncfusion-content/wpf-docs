@@ -30,7 +30,7 @@ We can change a foreground of the `SfDatePicker` by using the `Foreground` prope
 
 {% endhighlight  %}
 
-![SfDatePicker with various foreground](Appearance-and-Styling_images/Foreground.png)
+![WPF DatePicker Foreground](Appearance-and-Styling_images/wpf-datepicker-foreground.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Apperance)
 
@@ -53,7 +53,7 @@ We can change a background of the `SfDatePicker` by using the `background` prope
 
 {% endhighlight  %}
 
-![SfDatePicker with various background](Appearance-and-Styling_images/Background.png)
+![WPF DatePicker Background](Appearance-and-Styling_images/wpf-datepicker-background.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Apperance)
 
@@ -75,7 +75,7 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with RightToLeft flow direction](Appearance-and-Styling_images/Appearance-flowdirection.png)
+![WPF DatePicker with Right To Left](Appearance-and-Styling_images/wpf-datepicker-right-to-left.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Apperance)
 
@@ -87,4 +87,4 @@ SfDatePicker supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-![Setting theme to WPF DatePicker](Appearance-and-Styling_images/Theme.png)
+![WPF DatePicker Theme](Appearance-and-Styling_images/wpf-datepicker-theme.png)

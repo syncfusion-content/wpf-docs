@@ -28,7 +28,7 @@ doubleTextBox.Value = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![DoubleTextBox displaying a value](Changing-Double-Value_images/SettingValue.jpeg)
+![WPF DoubleTextBox displays Value](Changing-Double-Value_images/wpf-double-textbox-value.jpeg)
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
 
@@ -68,7 +68,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {%endtabs%}
 
-![Binding a value to DoubleTextBox](Changing-Double-Value_images/ValueBinding.png)
+![WPF DoubleTextBox displays Binding Value](Changing-Double-Value_images/wpf-double-textbox-binding-value.png)
 
 ## Change double value by pasting the clipboard's text
 
@@ -128,7 +128,7 @@ doubleTextBox.Value = 12345.67;
 {% endhighlight %}
 {%endtabs%}
 
-![DoubleTextBox pasting the copied value in specific place](Changing-Double-Value_images/Pasting.png)
+![WPF DoubleTextBox displays Pasting Copied Value in Specific Place](Changing-Double-Value_images/wpf-double-textbox-paste-value.png)
 
 ## Show UpDown Button
 
@@ -148,7 +148,7 @@ doubleTextBox.ShowSpinButton = true;
 {% endhighlight %}
 {%endtabs%}
 
-![Changing double value by SpinButton in DoubleTextBox](Changing-Double-Value_images/SpinButton.gif)
+![WPF DoubleTextBox displays SpinButton](Changing-Double-Value_images/wpf-double-textbox-spin-button.gif)
 
 ## Value Changed Event
 
@@ -209,7 +209,7 @@ doubleTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting null as NullValue in DoubleTextBox](Changing-Double-Value_images/NullValue_null.png)
+![WPF DoubleTextBox displays Empty Value](Changing-Double-Value_images/wpf-double-textbox-empty-value.png)
 
 **NullValue = 10**
 
@@ -231,7 +231,7 @@ doubleTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting Null value in DoubleTextBox](Changing-Double-Value_images/NullValue.jpeg)
+![WPF DoubleTextBox displays Null Value](Changing-Double-Value_images/wpf-double-textbox-null-value.jpeg)
 
 ## Setting Watermark Text
 
@@ -262,7 +262,7 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox displaying a watermark text in red color](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
+![WPF DoubleTextBox displays Watermark Text](Changing-Double-Value_images/wpf-double-textbox-watermark.jpeg)
 
 ### Setting Watermark Template
 
@@ -285,7 +285,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 {% endhighlight %}
 
-![DoubleTextBox displaying watermark text using a data-template](Changing-Double-Value_images/WaterMark-Template.png)
+![Customizing Watermark Text in WPF DoubleTextBox](Changing-Double-Value_images/wpf-double-textbox-watermark-customization.png)
 
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. 
 

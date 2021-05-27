@@ -36,7 +36,7 @@ currencyTextBox.PositiveForeground = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox displaying value in positive foreground](Appearance_images/positive-foreground.png)
+![Changing Positive Value Color in WPF CurrencyTextBox](Appearance_images/wpf-currency-textbox-positive-color.png)
 
 ### Foreground for Negative Value
 
@@ -61,7 +61,7 @@ currencyTextBox.NegativeForeground = Brushes.SpringGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox displaying negative value in negative foreground](Appearance_images/negative-foreground.png)
+![Changing Negative Value Color in WPF CurrencyTextBox](Appearance_images/wpf-currency-textbox-negative-color.png)
 
 ### Foreground for Zero Value
 
@@ -87,7 +87,7 @@ currencyTextBox.ZeroColor = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox displaying zero value with zero foreground](Appearance_images/zero-foreground.png)
+![Changing Zero Value Color in WPF CurrencyTextBox](Appearance_images/wpf-currency-textbox-zero-color.png)
 
 ## Setting the Background
 
@@ -110,7 +110,7 @@ currencyTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with cyan background](Appearance_images/background.png)
+![WPF CurrencyTextBox with Cyan Bbackground](Appearance_images/wpf-currency-textbox-background.png)
 
 ## Setting the Corner Radius
 
@@ -134,7 +134,7 @@ currencyTextBox.CornerRadius = new CornerRadius(5);
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with corner radius](Appearance_images/corner-radius.png)
+![WPF CurrencyTextBox with Corner Radius](Appearance_images/wpf-currency-textbox-corner-radius.png)
 
 ## Apply Background for Selection
 
@@ -157,7 +157,7 @@ currencyTextBox.SelectionOpacity = 0.3;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with red selection background](Appearance_images/Selection.png)
+![WPF CurrencyTextBox with Red Selection Background](Appearance_images/wpf-currency-textbox-selection.png)
 
 ## Align Value
 
@@ -179,7 +179,7 @@ currencyTextBox.TextAlignment = TextAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![Center aligned CurrencyTextBox Value](Appearance_images/TextAlignment.png)
+![Changing Text Alignment of WPF CurrencyTextBox](Appearance_images/wpf-currency-textbox-text-alignment.png)
 
 ## Setting ToolTip
 
@@ -201,7 +201,7 @@ currencyTextBox.ToolTip = "Enter Currency Value";
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with tool tip](Appearance_images/ToolTip.png)
+![WPF CurrencyTextBox with ToolTip](Appearance_images/wpf-currency-textbox-tooltip.png)
 
 ## Theme
 
@@ -211,4 +211,4 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
- ![Setting theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-text-box-theme-support.png)
+ ![Applying Theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-theme.png)

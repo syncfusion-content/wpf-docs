@@ -13,9 +13,9 @@ The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox)
 
 ## Control structure
 
-![Default IntegerTextBox control](Getting-Started_images/Getting-Started_img1.png)
+![WPF PercentTextBox](Getting-Started_images/wpf-percent-textbox.png)
 
-![IntegerTextBox control with watermark text](Getting-Started_images/Getting-Started_img2.png)
+![WPF PercentTextBox with Watermark Text](Getting-Started_images/wpf-percent-textbox-watermark-text.png)
 
 ## Features
 
