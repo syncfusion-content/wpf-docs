@@ -323,4 +323,4 @@ private void ExecuteOnDemandLoading(object obj)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-load-child-items-on-demand-in-wpf-treeview)
 
-![WPF TreeView with Load On-Demand](LoadOnDemand_images/LoadOnDemand.gif)
+![WPF TreeView with Load On Demand](LoadOnDemand_images/wpf-treeview-load-on-demand.gif)
