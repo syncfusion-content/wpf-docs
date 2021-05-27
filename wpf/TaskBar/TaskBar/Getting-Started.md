@@ -4,7 +4,7 @@ title: Getting Started | TaskBar | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started

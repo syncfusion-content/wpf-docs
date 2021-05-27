@@ -4,7 +4,7 @@ title: Changing Orientation of Taskbar | TaskBar | wpf | Syncfusion
 description: changing orientation of taskbar
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Changing Orientation of Taskbar

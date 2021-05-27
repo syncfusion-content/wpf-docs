@@ -4,7 +4,7 @@ title: TabItem Header in WPF TabControl control | Syncfusion
 description: Learn here all about TabItem Header support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControlExt
-documentation: ug
+ documentation: ug
 ---
 
 # TabItem Header in WPF TabControl (TabControlExt)

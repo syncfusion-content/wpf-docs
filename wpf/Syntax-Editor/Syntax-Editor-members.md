@@ -4,7 +4,7 @@ title: Syntax Editor Members in WPF Syntax Editor control | Syncfusion
 description: Learn about Syntax Editor Members support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
-documentation: ug
+ documentation: ug
 ---
 
 # Syntax Editor Members in WPF Syntax Editor

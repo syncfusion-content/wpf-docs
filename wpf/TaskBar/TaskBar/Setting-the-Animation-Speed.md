@@ -4,7 +4,7 @@ title: Setting the Animation Speed | TaskBar | wpf | Syncfusion
 description: setting the animation speed
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting the Animation Speed

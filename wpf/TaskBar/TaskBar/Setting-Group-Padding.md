@@ -4,7 +4,7 @@ title: Setting Group Padding | TaskBar | wpf | Syncfusion
 description: setting group padding
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting Group Padding

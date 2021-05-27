@@ -4,7 +4,7 @@ title: Palettes in WPF Surface Chart control | Syncfusion
 description: Learn here all about Palettes support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
-documentation: ug
+ documentation: ug
 ---
 
 # Palettes in WPF Surface Chart (SfSurfaceChart)

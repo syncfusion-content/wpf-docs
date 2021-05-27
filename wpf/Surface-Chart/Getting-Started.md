@@ -4,7 +4,7 @@ title: Getting Started with WPF Surface Chart control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Surface Chart (SfSurfaceChart) control, its elements and more.
 platform: wpf
 control: SfSurfaceChart
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Surface Chart (SfSurfaceChart)

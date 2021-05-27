@@ -4,7 +4,7 @@ title: Changing the flow directions | TaskBar | wpf | Syncfusion
 description: changing the flow directions
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Changing the flow directions

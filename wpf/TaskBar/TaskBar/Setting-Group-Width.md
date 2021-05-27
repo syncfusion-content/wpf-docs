@@ -4,7 +4,7 @@ title: Setting Group Width | TaskBar | wpf | Syncfusion
 description: setting group width
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting Group Width

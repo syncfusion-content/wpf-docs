@@ -4,7 +4,7 @@ title: Find and Replace in WPF Syntax Editor control | Syncfusion
 description: Learn about Find and Replace support in Syncfusion WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
-documentation: ug
+ documentation: ug
 ---
 
 ## Find and Replace

@@ -4,7 +4,7 @@ title: Appearance in WPF Tab Navigation control | Syncfusion
 description: Learn about Appearance support in Syncfusion Essential Studio WPF Tab Navigation control, its elements and more.
 platform: WPF
 control: TabNavigation
-documentation: ug
+ documentation: ug
 ---
 
 # Appearance in WPF Tab Navigation

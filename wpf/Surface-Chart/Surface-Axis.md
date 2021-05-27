@@ -4,7 +4,7 @@ title: Surface Axis in WPF Surface Chart control | Syncfusion
 description: Learn here all about Surface Axis support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
-documentation: ug
+ documentation: ug
 ---
 
 # Surface Axis in WPF Surface Chart (SfSurfaceChart)

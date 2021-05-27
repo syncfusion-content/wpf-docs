@@ -4,7 +4,7 @@ title: About WPF Sunburst Chart control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Sunburst Chart (SfSunburstChart) control, its elements and more.
 platform: wpf
 control: SfSunburstChart
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Sunburst Chart (SfSunburstChart) Overview

@@ -4,7 +4,7 @@ title: Supported Languages in WPF Syntax Editor control | Syncfusion
 description: Learn about Supported Languages support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: wpf
 control: Syntax Editor
-documentation: ug
+ documentation: ug
 ---
 
 # Supported Languages in WPF Syntax Editor

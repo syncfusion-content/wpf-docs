@@ -4,7 +4,7 @@ title: Status Bar in WPF Syntax Editor control | Syncfusion
 description: Learn about Status Bar support in Syncfusion Essential Studio WPF Syntax Editor control, its elements and more.
 platform: WPF
 control: Syntax Editor
-documentation: ug
+ documentation: ug
 ---
 
 # Status Bar in WPF Syntax Editor

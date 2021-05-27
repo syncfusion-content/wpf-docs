@@ -4,7 +4,7 @@ title: Setting the Animation Speed in WPF TaskBar control | Syncfusion
 description: Learn about Setting the Animation Speed support in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting the Animation Speed in WPF TaskBar

@@ -4,7 +4,7 @@ title: Overview | TaskBar | wpf | Syncfusion
 description: overview
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Overview

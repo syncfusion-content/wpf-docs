@@ -4,7 +4,7 @@ title: Surface Area in WPF Surface Chart control | Syncfusion
 description: Learn here all about Surface Area support in Syncfusion WPF Surface Chart (SfSurfaceChart) control and more.
 platform: wpf
 control: SfSurfaceChart
-documentation: ug
+ documentation: ug
 ---
 
 # Surface Area in WPF Surface Chart (SfSurfaceChart)

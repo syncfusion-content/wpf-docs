@@ -4,7 +4,7 @@ title: Appearance | TaskBar | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Appearance

@@ -4,7 +4,7 @@ title: Adding a TaskBar Item to the TaskBar Control | TaskBar | wpf | Syncfusion
 description: adding a taskbar item to the taskbar control
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Adding a TaskBar Item to the TaskBar Control

@@ -4,7 +4,7 @@ title: DataBinding in WPF TabControl control | Syncfusion
 description: Learn here all about DataBinding support in Syncfusion WPF TabControl (TabControlExt) control and more.
 platform: wpf
 control: TabControl
-documentation: ug
+ documentation: ug
 ---
 
 # DataBinding in WPF TabControl (TabControlExt)

@@ -4,7 +4,7 @@ title: Setting Header Image | TaskBar | wpf | Syncfusion
 description: setting header image
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting Header Image

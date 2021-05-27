@@ -4,7 +4,7 @@ title: Setting Group Margin | TaskBar | wpf | Syncfusion
 description: setting group margin
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Setting Group Margin

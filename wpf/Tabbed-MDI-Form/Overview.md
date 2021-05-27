@@ -4,7 +4,7 @@ title: About WPF Tabbed MDI Form control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Tabbed MDI Form (DocumentContainer) control, its elements and more.
 platform: wpf
 control: DocumentContainer
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Tabbed MDI Form (DocumentContainer) Overview

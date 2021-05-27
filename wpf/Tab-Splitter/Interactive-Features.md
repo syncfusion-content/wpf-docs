@@ -4,7 +4,7 @@ title: Interactive Features in WPF Tab Splitter control | Syncfusion
 description: Learn about Interactive Features support in Syncfusion Essential Studio WPF Tab Splitter control, its elements and more.
 platform: wpf
 control: TabSplitter
-documentation: ug
+ documentation: ug
 ---
 
 # Interactive Features in WPF Tab Splitter

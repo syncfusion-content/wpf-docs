@@ -4,7 +4,7 @@ title: Getting Started with WPF TabControl control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF TabControl (TabControlExt) control, its elements and more.
 platform: WPF
 control: TabControl
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF TabControl (TabControlExt)

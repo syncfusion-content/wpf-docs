@@ -4,7 +4,7 @@ title: Collapsing the TaskBar | TaskBar | wpf | Syncfusion
 description: collapsing the taskbar
 platform: wpf
 control: TaskBar
-documentation: ug
+ documentation: ug
 ---
 
 # Collapsing the TaskBar
