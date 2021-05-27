@@ -72,7 +72,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Restrict header editing for specific tab item
 
-If you want to restrict header editing for specific tab item, handle the [restrict-header-editing]() and setting the [restrict-header-setting]() property as `true` for that specific tab item.
+If you want to restrict header editing for specific tab item, handle the [restrict-header-editing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EnableLabelEdit) and setting the [restrict-header-setting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_EditHeaderItemStyle) property as `true` for that specific tab item.
 
 {% tabs %}
 {% highlight xaml %}
