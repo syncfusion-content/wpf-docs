@@ -211,7 +211,7 @@ class ItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images2.png)
+![WPF TreeView ItemTemplateSelector](Appearance_images/wpf-treeview-itemtemplateselector.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-tree-nodes-using-data-template-selector-in-wpf-treeview)
 
@@ -317,7 +317,7 @@ public class FontAttributeConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images3.png)
+![WPF TreeView Level based Style](Appearance_images/wpf-treeview-level-based-style.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-style-of-tree-nodes-based-on-its-level-using-converter-in-wpf-treeview)
 
@@ -339,4 +339,4 @@ sfTreeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images1.gif)
+![WPF TreeView Animation](Appearance_images/wpf-treeview-animation.gif)

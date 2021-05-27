@@ -99,7 +99,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with MVVM selection](MVVM_images/MVVM_image1.png)
+![WPF TreeView with MVVM Selection](MVVM_images/wpf-treeview-with-MVVM-selection.png)
 
 ### Binding SelectedItems
 
@@ -190,7 +190,7 @@ public class ViewModel : NotificationObject
 {% endtabs %}
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bind-selected-items-in-wpf-treeview).
-![WPF TreeView with MVVM selection](MVVM_images/MVVM_image2.png)
+![WPF TreeView with MVVM SelectedItems Binding](MVVM_images/wpf-treeview-with-MVVM-selecteditems-binding.png)
 
 
 ## Event to command

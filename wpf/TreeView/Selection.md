@@ -29,7 +29,7 @@ sfTreeView.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with Selection](Selection_images/Selection_image1.png)
+![WPF TreeView with Selection](Selection_images/wpf-treeview-selection.png)
 
 ## Programmatic Selection
 
