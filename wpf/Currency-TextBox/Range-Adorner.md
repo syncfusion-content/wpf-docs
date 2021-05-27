@@ -28,7 +28,7 @@ currencyTextBox.EnableRangeAdorner =true;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
+![WPF CurrencyTextBox displays RangeAdorner](Range-Adorner_images/wpf-currency-textbox-range-adorner.png)
 
 ## Changing background of range-adorner
 
@@ -52,4 +52,4 @@ currencyTextBox.RangeAdornerBackground = Brushes.LightGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)
+![Changing Background of RangeAdorner of WPF CurrencyTextBox](Range-Adorner_images/wpf-currency-textbox-range-adorner-background.png)

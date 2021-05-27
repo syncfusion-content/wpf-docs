@@ -79,7 +79,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![Adding items to the control](Populating-Items-images/Populating-Items-img1.jpeg)
+![WPF Accordion Populating Items](Populating-Items-images/wpf-accordion-populating-items.jpeg)
 
 ### Setting Header for items
 
@@ -145,7 +145,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 `SfAccordion` control is populated as follows:
 
-![Setting Header for items](Populating-Items-images/Populating-Items-img2.jpeg)
+![WPF Accordion Setting Header for Items](Populating-Items-images/wpf-accordion-setting-header-for-items.jpeg)
 
 ### Setting Content for items
 
@@ -226,7 +226,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![Setting Content for items](Populating-Items-images/Populating-Items-img3.jpeg)
+![WPF Accordion Setting Content for items](Populating-Items-images/wpf-accordion-setting-content-for-items.jpeg)
 
 ## Using ItemsSource
 
@@ -362,7 +362,7 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 
 `SfAccordion` control is populated as follows:
 
-![Adding items to the control](Populating-Items-images/Populating-Items-img4.jpeg)
+![Adding Items to WPF Accordion](Populating-Items-images/wpf-accordion-adding-items.jpeg)
 
 ### Setting Header for items
 
@@ -378,7 +378,7 @@ Header can be displayed using the property [DisplayMemberPath](https://docs.micr
 
 {% endtabs %}
 
-![Setting Header for items](Populating-Items-images/Populating-Items-img5.jpeg)
+![WPF Accordion Setting Header for Items](Populating-Items-images/wpf-accordion-setting-header-for-items.jpeg)
 
 [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplate) property can also be used to display the header. [HeaderTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Layout.SfAccordion.html#Syncfusion_Windows_Controls_Layout_SfAccordion_HeaderTemplateSelector) property is also provided to apply header template based on the selection logic. 
 
@@ -404,7 +404,7 @@ Header can be displayed using the property [DisplayMemberPath](https://docs.micr
 
 {% endtabs %}
 
-![Setting Header for items](Populating-Items-images/Populating-Items-img6.jpeg)
+![WPF Accordion Header Template](Populating-Items-images/wpf-accordion-header-template.jpeg)
 
 ### Setting Content for items
 
@@ -432,4 +432,4 @@ Content can be displayed using the [ContentTemplate](https://help.syncfusion.com
 
 {% endtabs %}
 
-![Setting Content for items](Populating-Items-images/Populating-Items-img7.jpeg)
+![WPF Accordion Setting Content for Items](Populating-Items-images/wpf-accordion-setting-content-for-items.jpeg)

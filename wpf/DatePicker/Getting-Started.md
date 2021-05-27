@@ -13,7 +13,7 @@ This section explains how to create a [WPF DatePicker](https://www.syncfusion.co
 
 ## Structure of SfDatePicker
 
-![WPF SfDatePicker Control](GettingStarted_images/SfDatePicker.png)
+![WPF DatePicker Control](GettingStarted_images/wpf-datepicker-control.png)
 
 ## Assembly deployment
 
@@ -21,7 +21,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 
 ## Add control through designer
 
@@ -30,7 +30,7 @@ The `SfDatePicker` control can be added to an application by dragging it from th
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![SfDatePicker control added by designer](GettingStarted_images/wpf-date-picker-control-added-by-designer.png)
+![WPF DatePicker Added by Designer](GettingStarted_images/wpf-datepicker-added-by-designer.png)
 
 ## Adding control manually in XAML
 
@@ -91,7 +91,7 @@ namespace SfDatePickerSample {
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker control added by code](GettingStarted_images/wpf-date-picker.png)
+![WPF DatePicker Added by Code](GettingStarted_images/wpf-datepicker-added-by-code.png)
 
 ## Setting the Date
 
@@ -112,7 +112,7 @@ sfDatePicker.Value = new DateTime(2021,5,30);
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker displaying selected value](Features_images/Features_img17.png)
+![WPF DatePicker Date Setting](Features_images/wpf-datepicker-date-setting.png)
 
 ## Date changed notification
 
@@ -169,7 +169,7 @@ sfDatePicker.FormatString = "M";
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker selected date with month format](Features_images/Features_img1.png)
+![WPF DatePicker FormatString](Features_images/wpf-datepicker-formatstring.png)
 
 ## Specifying format for the DateSelector
 
@@ -190,7 +190,7 @@ sfDatePicker.SelectorFormatString = "M";
 {% endhighlight  %}
 {% endtabs %}
 
-![SfDatePicker contains only month selector](Features_images/Features_img2.png)
+![WPF DatePicker Month Selector](Features_images/wpf-datepicker-month-selector.png)
 Here, we can only able to select the month value from the `SfDateSelector`
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the display date formatting and date selection formatting by the `SfDatePicker`.
@@ -214,7 +214,7 @@ sfDatePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
+![WPF DatePicker Set Value on Lost Focus](Features_images/wpf-datepicker-set-value-on-lost-focus.gif)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
 
@@ -232,4 +232,4 @@ SfDatePicker supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF SfDatePicker](Appearance-and-Styling_images/Theme.png)
+![WPF DatePicker Theme](Appearance-and-Styling_images/wpf-datepicker-theme.png)

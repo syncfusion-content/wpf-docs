@@ -28,7 +28,7 @@ integerTextBox.Value = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![IntegerTextBox displaying a value](Changing-Integer-Value_images/SettingValue.png)
+![WPF IntegerTextBox displays Value](Changing-Integer-Value_images/wpf-integer-textbox-value.png)
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `IntegerTextBox` value.
 
@@ -68,7 +68,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Binding a value to IntegerTextBox](Changing-Integer-Value_images/Binding.png)
+![WPF IntegerTextBox with Binding Value](Changing-Integer-Value_images/wpf-integer-textbox-binding-value.png)
 
 ## Change integer value by pasting the clipboard's text
 
@@ -126,7 +126,7 @@ integerTextBox.Value = 12345;
 {% endhighlight %}
 {%endtabs%}
 
-![IntegerTextBox pasting the copied value in specific place](Changing-Integer-Value_images/Pasting.png)
+![WPF IntegerTextBox displays Pasting Copied Value in Specific Place](Changing-Integer-Value_images/wpf-integer-textbox-paste-value.png)
 
 ## Show UpDown Button
 
@@ -146,7 +146,7 @@ integerTextBox.ShowSpinButton = true;
 {% endhighlight %}
 {%endtabs%}
 
-![Changing percent value by SpinButton in IntegerTextBox](Changing-Integer-Value_images/SpinButton.gif)
+![WPF IntegerTextBox displays SpinButton](Changing-Integer-Value_images/wpf-integer-textbox-spinbutton.gif)
 
 ## Value Changed Event
 
@@ -207,7 +207,7 @@ integerTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting null as NullValue in IntegerTextBox](Changing-Integer-Value_images/NullValue_null.png)
+![WPF IntegerTextBox displays Empty Value](Changing-Integer-Value_images/wpf-integer-textbox-empty-value.png)
 
 **NullValue = 10**
 
@@ -229,7 +229,7 @@ integerTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting Null value in IntegerTextBox](Changing-Integer-Value_images/NullValue.png)
+![WPF IntegerTextBox with Null Value](Changing-Integer-Value_images/wpf-integer-textbox-null-value.png)
 
 ## Setting Watermark Text
 
@@ -260,7 +260,7 @@ integerTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox displaying a watermark text in red color](Changing-Integer-Value_images/WaterMark-Foreground.png)
+![WPF IntegerTextBox displays Watermark Text in Red Color](Changing-Integer-Value_images/wpf-integer-textbox-watermark.png)
 
 ### Setting Watermark Template
 
@@ -283,7 +283,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 {% endhighlight %}
 
-![IntegerTextBox displaying watermark text using a data-template](Changing-Integer-Value_images/WaterMark-Template.png)
+![Customizing Watermark Text in WPF IntegerTextBox](Changing-Integer-Value_images/wpf-integer-textbox-watermark-customization.png)
 
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `IntegerTextBox` control.
 

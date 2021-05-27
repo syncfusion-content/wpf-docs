@@ -30,7 +30,7 @@ sfDatePicker.FormatString = "M";
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker selected date with month format](Features_images/Features_img1.png)
+![WPF DatePicker FormatString](Features_images/wpf-datepicker-formatstring.png)
 
 ## Specifying format for the DateSelector
 
@@ -51,11 +51,11 @@ sfDatePicker.SelectorFormatString = "M";
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker contains only month selector](Features_images/Features_img2.png)
+![WPF DatePicker Month Selector](Features_images/wpf-datepicker-month-selector.png)
 
 Here, we can only able to select the month value from the `SfDateSelector`
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display date formatting and date selection formatting by the `SfDatePicker`.
 
-N> A detailed explanation of standard date time formatting is available [here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.
+N> A detailed explanation of standard date time formatting is available [here](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/az4se3k1(v=vs.71)). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.
 

@@ -36,7 +36,7 @@ integerTextBox.PositiveForeground = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox displaying value in positive foreground](Appearance_images/Positive.jpg)
+![Changing Positive Value Color in WPF IntegerTextBox](Appearance_images/wpf-integer-textbox-positive-color.jpg)
 
 ### Foreground for Negative Value 
 
@@ -61,7 +61,7 @@ integerTextBox.NegativeForeground = Brushes.SpringGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox displaying negative value in negative foreground](Appearance_images/Negative.jpg)
+![Changing Negative Value Color in WPF IntegerTextBox](Appearance_images/wpf-integer-textbox-negative-color.jpg)
 
 ### Foreground for Zero Value
 
@@ -87,7 +87,7 @@ integerTextBox.ZeroColor = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox displaying zero value with zero foreground](Appearance_images/ZeroColor.jpg)
+![Changing Zero Color in WPF IntegerTextBox](Appearance_images/wpf-integer-textbox-zero-color.jpg)
 
 ## Setting the Background
 
@@ -110,7 +110,7 @@ integerTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox with cyan background](Appearance_images/Background.png)
+![WPF IntegerTextBox with Cyan Background](Appearance_images/wpf-integer-textbox-cyan-background.png)
 
 ## Setting the Corner Radius
 
@@ -134,7 +134,7 @@ integerTextBox.CornerRadius = new CornerRadius(5);
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox with corner radius](Appearance_images/CornerRadius.png)
+![WPF IntegerTextBox with Corner Radius](Appearance_images/wpf-integer-textbox-corner-radius.png)
 
 ## Apply Background for Selection
 
@@ -157,7 +157,7 @@ integerTextBox.SelectionOpacity = 0.3;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox with red selection background](Appearance_images/Selection.png)
+![WPF IntegerTextBox with Red Selection Background](Appearance_images/wpf-integer-textbox-selection.png)
 
 ## Align Value
 
@@ -179,7 +179,7 @@ integerTextBox.TextAlignment = TextAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![Center aligned IntegerTextBox Value](Appearance_images/TextAlignment.png)
+![Changing Text Alignment of WPF IntegerTextBox](Appearance_images/wpf-integer-textbox-text-alignment.png)
 
 ## Setting ToolTip
 
@@ -201,7 +201,7 @@ integerTextBox.ToolTip = "Enter Integer Value";
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox with tool tip](Appearance_images/ToolTip.png)
+![WPF IntegerTextBox with ToolTip](Appearance_images/wpf-integer-textbox-tooltip.png)
 
 ## Theme
 
@@ -211,4 +211,4 @@ IntegerTextBox supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF IntegerTextBox](Getting-Started_images/wpf-integer-text-box-theme.png)
+  ![Applying Theme to WPF IntegerTextBox](Getting-Started_images/wpf-integer-textbox-theme.png)

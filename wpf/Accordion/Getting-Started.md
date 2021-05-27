@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 
 ## Create a simple application with SfAccordion
 
@@ -29,7 +29,7 @@ Create a new WPF project in Visual Studio to display the SfAccordion with functi
 
 The SfAccordion control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.SfAccordion.WPF** assembly reference will be added automatically to the project.
 
-![wpf accordion control added by designer](Getting-Started_images/wpf-accordion-control-added-by-designer.png)
+![WPF Accordion Control](Getting-Started_images/wpf-accordion-control.png)
 
 ## Add control manually in XAML
 
@@ -126,7 +126,7 @@ this.Content = accordion;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf accordion items](Getting-Started_images/wpf-accordion-control-items-added.png)
+![WPF Accordion Items](Getting-Started_images/wpf-accordion-items.png)
 
 ## Bind data
 
@@ -229,7 +229,7 @@ public class ViewModel
 	</syncfusion:SfAccordion.ContentTemplate>
 </syncfusion:SfAccordion>
 
-![wpf accordion item binding](Getting-Started_images/wpf-accordion-item-binding.png)
+![WPF Accordion Item Binding](Getting-Started_images/wpf-accordion-item-binding.png)
 
 ## Apply template to item header
 
@@ -249,7 +249,7 @@ SfAccordion provides the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![wpf accordion header template](Getting-Started_images/wpf-accordion-header-customization.png)
+![WPF Accordion Header Template](Getting-Started_images/wpf-accordion-header-template.png)
 
 ## Set content to children
 
@@ -266,7 +266,7 @@ You can set content to SfAccordionItem using the [Content](https://docs.microsof
 {% endhighlight %}
 {% endtabs %}
 
-![wpf accordion item content](Getting-Started_images/wpf-accordion-item-content.png)
+![WPF Accordion Item Content](Getting-Started_images/wpf-accordion-item-content.png)
 
 ## Theme
 
@@ -276,4 +276,4 @@ SfAccordion supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Accordion](Getting-Started_images/wpf-accordian-theme-support.png)
+  ![WPF Accordion Themes](Getting-Started_images/wpf-accordion-themes.png)

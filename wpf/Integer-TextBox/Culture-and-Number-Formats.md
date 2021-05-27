@@ -42,11 +42,11 @@ By default the US culture uses “,” as the `NumberGroupSeparator` where as th
 
 **Default Culture**
 
-![IntegerTextBox with Default Culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+![WPF IntegerTextBox with Default Culture](Culture-and-Number-Formats_images/wpf-integer-textbox-default-culture.png)
 
 **Latin Culture**
 
-![IntegerTextBox with Latin culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![WPF IntegerTextBox with Latin culture](Culture-and-Number-Formats_images/wpf-integer-textbox-latin-culture.png)
 
 ## NumberFormatInfo based formatting
 
@@ -79,7 +79,7 @@ NumberGroupSeparator = "/"
 {% endhighlight %}
 {%endtabs%}
 
-![Setting IntegerTextBox number format by NumberFormatInfo](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+![WPF IntegerTextBox with Formatting](Culture-and-Number-Formats_images/wpf-integer-textbox-formatting.png)
 
 The following code illustrate how to set `NumberGroupSizes` by using the `NumberFormat`property.
 
@@ -100,7 +100,7 @@ integerTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting IntegerTextBox number group size by NumberFormatInfo](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+![WPF IntegerTextBox displays Different Group Size between Numbers](Culture-and-Number-Formats_images/wpf-integer-textbox-group-size.png)
 
 ## Formatting with dedicated properties
 
@@ -123,7 +123,7 @@ integerTextBox.NumberGroupSizes = new Int32Collection() { 2, 3, 0 };
 {% endhighlight %}
 {% endtabs %}
 
-![Setting IntegerTextBox number format by dedicated properties](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
+![WPF IntegerTextBox with Formatting](Culture-and-Number-Formats_images/wpf-integer-textbox-number-format.png)
 
 N> When you use both the `NumberFormat` and the dedicated properties (`NumberGroupSeparator` and `NumberGroupSizes`) to format the value of `IntegerTextBox`, the `NumberGroupSeparator`and `NumberGroupSizes` properties have higher priority.
 
