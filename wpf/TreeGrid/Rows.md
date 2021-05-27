@@ -113,7 +113,7 @@ You can display the row index value in row header by customizing the `Tr
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Header row of WPF treegrid](Rows_images/Rows_img5.jpeg)
+![WPF TreeGrid with Header Row](Rows_images/wpf-treegrid-header-row.jpeg)
 
 ## Hiding header row
 
@@ -243,7 +243,7 @@ Orientation of the treegrid column header text can be changed by editing the 
 {% endhighlight %}
 {% endtabs %}
 
-![Orientation of column header changed in WPF treegrid](Rows_images/Rows_img6.jpeg)
+![Changing Column Header Orientation of WPF TreeGrid](Rows_images/wpf-treegrid-column-header.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-change-the-orientation-of-column-header-text-in-wpf-treegrid).
 
@@ -358,7 +358,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 {% endhighlight %}
 {% endtabs %}
 
-![Poistion of sort icon in column header changed in WPF treegrid](Rows_images/Rows_img7.jpeg)
+![Changing Sort Icon Poistion in WPF TreeGrid](Rows_images/wpf-treegrid-sort-icon.jpeg)
 
 ## Customize style of header row
 
@@ -383,7 +383,7 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-![Style of the header row changed in WPF treegrid](Rows_images/Rows_img8.jpeg)
+![Customizing Row Header Style in WPF TreeGrid](Rows_images/wpf-treegrid-row-header-customization.jpeg)
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderStyle) property in column,
 
@@ -393,5 +393,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Style of the single column header changed in WPF treegrid](Rows_images/Rows_img9.jpeg)
+![Customizing Column Header Style in WPF TreeGrid](Rows_images/wpf-treegrid-column-header-customization.jpeg)
 

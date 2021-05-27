@@ -150,7 +150,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for nodes in treegrid WPF](ContextMenu_images/ContextMenu_img1.png)
+![WPF TreeGrid displays ContextMenu for Nodes](ContextMenu_images/wpf-treegrid-node-contextmenu.png)
 
 When binding the menu item using CommandBinding, you can get the command parameter as [TreeGridNodeContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNodeContextMenuInfo.html), which contains nodes of the corresponding row.
 
@@ -207,7 +207,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for header in treegrid WPF ](ContextMenu_images/ContextMenu_img2.png)
+![WPF TreeGrid displays ContextMenu for Header](ContextMenu_images/wpf-treegrid-header-contextmenu.png)
 
 When binding the menu item using CommandBinding, you can get the parameter as [TreeGridColumnContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnContextMenuInfo.html), which contains a particular GridColumn.
 
@@ -342,7 +342,7 @@ void dataGrid_ TreeGridContextMenuOpening (object sender, TreeGridContextMenuEve
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for opening the menu items in WPF treegrid](ContextMenu_images/ContextMenu_img3.png)
+![Customizing ContextMenu in WPF TreeGrid](ContextMenu_images/wpf-treegrid-contextmenu-customization.png)
 
 ####  Changing background to ContextMenu
 
@@ -365,7 +365,7 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the background appearance for ContextMenu in treegrid WPF](ContextMenu_images/ContextMenu_img4.png)
+![Changing Background of WPF TreeGrid ContextMenu](ContextMenu_images/wpf-treegrid-contextmenu-background.png)
 
 
 ## Drag and drop row
@@ -389,11 +389,11 @@ sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop window while dragging in WPF treegrid](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img1.jpeg)
+![Drag and Drop the Row in WPF TreeGrid](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop.jpeg)
 
 When dropping, the dragged node(s) can be added above or below as a child node based on its drop position. For example, if you dropped node at the bottom of the targeted node, it will be added below the targeted node. If you drop over the targeted node, it will be added as a child of that targeted node.
 
-![Drap and drop row as child](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img2.jpeg)
+![Drap and Drop the Row in WPF TreeGrid](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop-child-row.jpeg)
 
 N> Drag indicators will not be shown when drop position is set to “Drop as child”.
 
@@ -401,7 +401,7 @@ N> Drag indicators will not be shown when drop position is set to “Drop as chi
 
 SfTreeGrid allows users to drag multiple selected nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to `Multiple` or `Extended`.
 
-![Drag and drop multiple rows](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img3.jpeg)
+![Dragging Multiple Rows in WPF TreeGrid](Row-Drag-and-Drop_images/wpf-treegrid-drag-multiple-rows.jpeg)
 
 ### Events
 
@@ -698,7 +698,7 @@ private void ListView_PreviewMouseMove(object sender, System.Windows.Input.Mouse
 
 Sample for dragging and dropping the items between list view and treegrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-listview-and-treegrid).
 
-![Drag and drop between treeGrid and listview](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img4.jpeg)
+![Drag and Drop between WPF TreeGrid and Listview Controls](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop-between-controls.jpeg)
 
 #### Drag and drop between TreeViewAdv and SfTreeGrid
 
@@ -860,7 +860,7 @@ private void Treeview_Drop(object sender, DragEventArgs e)
 
 Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-treegrid-and-treeviewadv).
 
-![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
+![Drag and Drop between WPF TreeGrid and TreeViewAdv controls](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop-with-treeview.jpeg)
 
 ### Changing the row drop indicator
 
@@ -886,7 +886,7 @@ sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.png)
+![Changing Row Drop Indicator of WPF TreeGrid](Row-Drag-and-Drop_images/wpf-treegrid-row-drop-indicator.png)
 
 ### Customizing drag-and-drop rows
 
@@ -969,7 +969,7 @@ SfTreeGrid provides the default UI for drag and drop. However, you can customize
 {% endhighlight %}
 {% endtabs %}
 
-![Customized drag and drop window](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img6.jpeg)
+![Customizing Drag and Drop Window in WPF TreeGrid](Row-Drag-and-Drop_images/wpf-treegrid-drag-and-drop-customization.jpeg)
 
 ### Disable dragging of certain nodes
 

@@ -30,7 +30,7 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 2.Add the default resource file of treegrid into `Resources` folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
 
-![Default resouce file of WPF treegrid](Localization_images/Localization_img1.jpeg)
+![WPF TreeGrid with Resouce File](Localization_images/wpf-treegrid-resource-file.jpeg)
 
 3.Right-click on the Resources folder, select `Add` and then `NewItem`.
 
@@ -38,17 +38,17 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 5.The culture name that indicates the name of language and country.
 
-![Creating a resource file](Localization_images/Localization_img2.jpeg)
+![Creating Resource File for WPF TreeGrid](Localization_images/wpf-treegrid-create-resource-file.jpeg)
 
 6.Now, select Add option to add the resource file in `Resources` folder.
 
-![Adding the created resource file as resource](Localization_images/Localization_img3.jpeg)
+![Adding Created Resource File as Resource for WPF TreeGrid](Localization_images/wpf-treegrid-add-resource-file.jpeg)
 
 7.Add the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.de.resx` file and change its corresponding value to corresponding culture.
 
-![Modifying the resource file as per culture](Localization_images/Localization_img4.jpeg)
+![Changing Resource Dile as per Culture in WPF TreeGrid](Localization_images/wpf-treegrid-culture.jpeg)
 
-![WPF treegrid drag and drop window displayed with localized text](Localization_images/Localization_img5.jpeg)
+![WPF TreeGrid displays Drag and Drop Window with Localized Text](Localization_images/wpf-treegrid-drag-and-drop.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-localize-the-drag-and-drop-window-text-in-treegrid/tree/master/WPF).
 
@@ -71,11 +71,11 @@ public MainWindow()
 
 You can edit default resource file by adding it to `Resources` folder of your application where treegrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-804035924.zip).
 
-![Default resource file](Localization_images/Localization_img6.jpeg)
+![WPF TreeGrid with Resource File](Localization_images/wpf-treegrid-edit-resource-file.jpeg)
 
 Now, change the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.resx` file.
 
-![Modifying the default resource file](Localization_images/Localization_img7.jpeg)
+![Changing Default Resource File for WPF TreeGrid](Localization_images/wpf-treegrid-change-default-resource-file.jpeg)
 
-![WPF treegrid shown with modified resource](Localization_images/Localization_img8.jpeg)
+![WPF TreeGrid with Modified Resource File](Localization_images/wpf-treegrid-modified-resource-file.jpeg)
 

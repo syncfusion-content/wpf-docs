@@ -83,7 +83,7 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
+![Data Validation in WPF TreeGrid using IDataErrorInfo](Data-Validation_images/wpf-treegrid-data-validation.png)
 
 ### INotifyDataErrorInfo
 You can validate the data by implementing the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in model class.
@@ -139,7 +139,7 @@ Enable built-in validation support by setting `SfTreeGrid.GridValidationMode` or
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
+![Data Validation in WPF TreeGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -380,7 +380,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
+![Data Validation Error Icon with Custom Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-error-icon.png)
 
 #### Change the color of error icon
 
@@ -472,7 +472,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
+![WPF TreeGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-treegrid-data-validation-error-tip-customization.png)
 
 #### Change the cursor on error icon
 
@@ -565,7 +565,7 @@ You can change the validation error template cursor of the `TreeGridCell` by c
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
+![Changing Cursor on Error Icon of WPF TreeGrid](Data-Validation_images/wpf-treegrid-cursor-style.png)
 
 ### Customizing error tip
 
@@ -656,7 +656,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img6](Data-Validation_images/Data-Validation_img6.png)
+![Changing Error Tip Background Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-error-tip.png)
 
 ### Showing error details in RowHeader
 
@@ -683,7 +683,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img7](Data-Validation_images/Data-Validation_img7.png)
+![WPF TreeGrid displays Error Tip on Row Header](Data-Validation_images/wpf-treegrid-error-tip-on-row-header.png)
 
 #### Using INotifyDataErrorInfo
 
@@ -706,7 +706,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img8](Data-Validation_images/Data-Validation_img8.png)
+![WPF TreeGrid displays Error Tip on Row Header using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-error-tip-on-header-row.png)
 
 ## Validation with CheckBox column
 
@@ -758,7 +758,7 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img9](Data-Validation_images/Data-Validation_img9.png)
+![Data Validation with CheckBox in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-checkbox.png)
 
 ## Limitations 
 
