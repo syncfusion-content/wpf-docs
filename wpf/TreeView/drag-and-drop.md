@@ -317,4 +317,4 @@ AssociatedObject.sfTreeView2.ItemDropped += SfTreeView1_ItemDropped;
 
 ![WPF TreeView Drag and Drop Between Two Views](DragDrop_images/wpf-treeview-drag-and-drop-between-two-views.png)
 
-N> View sample in [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/TreeView/DragAndDrop)
+N> View sample in [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/treeview)
