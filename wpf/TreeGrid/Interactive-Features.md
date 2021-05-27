@@ -370,7 +370,7 @@ You can change the appearance of the context menu by customizing the style with 
 
 ## Drag and drop row
 
-SfTreeGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowDraggingRows) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) properties to true. It is also possible to drag and drop the rows between treegrid and other controls such as ListView and TreeView. SfTreeGrid allows dropping rows when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
+SfTreeGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop?redirectedfrom=MSDN&view=net-5.0#System_Windows_UIElement_AllowDrop) properties to true. It is also possible to drag and drop the rows between treegrid and other controls such as ListView and TreeView. SfTreeGrid allows dropping rows when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
 
 {% tabs %}
 {% highlight xml %}

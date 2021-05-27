@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Localization in WPF TreeGrid (SfTreeGrid)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)?redirectedfrom=MSDN). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 Below application culture changed to German.
 
@@ -54,7 +54,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Localize when the resource file is present in different assembly or different namespace
 
-By default, the treegrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then you can let treegrid know by using [GridResourceWrapper.SetResources](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridResourceWrapper.html#Syncfusion_UI_Xaml_Grid_GridResourceWrapper_SetResources_System_Reflection_Assembly_) method.
+By default, the treegrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?redirectedfrom=MSDN&view=net-5.0#System_Reflection_Assembly_GetExecutingAssembly) method. When the resource file is located at different assembly or namespace, then you can let treegrid know by using [GridResourceWrapper.SetResources](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridResourceWrapper.html#Syncfusion_UI_Xaml_Grid_GridResourceWrapper_SetResources_System_Reflection_Assembly_) method.
 
 {% tabs %}
 {% highlight c# %}
