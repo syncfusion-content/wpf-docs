@@ -80,6 +80,6 @@ Here is an example showing OneOrMore [SelectionMode](https://help.syncfusion.com
 
 {% endtabs %}
 
-![Expansion modes](Selection-Mode-images/Selection-Mode-img1.jpeg)
+![WPF Accordion Selection Mode](Selection-Mode-images/wpf-accordion-selection-mode.jpeg)
 
 
