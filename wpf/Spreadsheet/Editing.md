@@ -4,7 +4,7 @@ title: Editing in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Editing support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # Editing in WPF Spreadsheet (SfSpreadsheet)

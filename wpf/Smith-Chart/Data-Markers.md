@@ -4,7 +4,7 @@ title: Data Markers in WPF Smith Chart control | Syncfusion
 description: Learn here all about Data Markers support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
- documentation: ug
+documentation: ug
 ---
 
 # Data Markers in WPF Smith Chart (SfSmithChart)

@@ -4,7 +4,7 @@ title: Shapes in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Shapes support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # Shapes in WPF Spreadsheet (SfSpreadsheet)

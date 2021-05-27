@@ -5,7 +5,7 @@ title: Time Zone in WPF Scheduler control | Syncfusion
 description: Learn here all about Time Zone support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: wpf
 control: SfScheduler
- documentation: ug
+documentation: ug
 
 ---
 

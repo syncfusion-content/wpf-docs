@@ -4,7 +4,7 @@ title: About WPF Split Button control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: wpf
 control: SplitButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # WPF Split Button Overview

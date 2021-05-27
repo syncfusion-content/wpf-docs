@@ -3,7 +3,7 @@ title: Find and Replace in WPF RichTextBox control | Syncfusion
 description: Learn here all about Find and Replace support in Syncfusion WPF RichTextBox (SfRichTextBoxAdv) control and more.
 platform: wpf
 control: SfRichTextBoxAdv
- documentation: ug
+documentation: ug
 keywords: search,find,replace-text
 ---
 # Find and Replace in WPF RichTextBox (SfRichTextBoxAdv)

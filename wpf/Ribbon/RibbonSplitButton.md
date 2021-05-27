@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: RibbonSplitButton in WPF Ribbon control | Syncfusion
 description: Learn about RibbonSplitButton support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf

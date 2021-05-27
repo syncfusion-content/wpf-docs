@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: SimpleMenuButton in WPF Ribbon control | Syncfusion
 description: Learn about SimpleMenuButton support in Syncfusion Essential Studio WPF Ribbon control, its elements and more.
 platform: wpf

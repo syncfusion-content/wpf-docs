@@ -4,7 +4,7 @@ title: About WPF Spreadsheet control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: wpf
 control: SfSpreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # WPF Spreadsheet (SfSpreadsheet) Overview

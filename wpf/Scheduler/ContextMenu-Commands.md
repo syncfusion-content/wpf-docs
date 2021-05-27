@@ -4,7 +4,7 @@ title: ContextMenu and Commands in WPF Scheduler control | Syncfusion
 description: Learn here all about ContextMenu and Commands support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
- documentation: ug
+documentation: ug
 ---
 
 # ContextMenu and Commands in WPF Scheduler (SfScheduler)

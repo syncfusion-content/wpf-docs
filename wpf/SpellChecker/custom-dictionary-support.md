@@ -4,7 +4,7 @@ title: Custom Dictionary in WPF SpellChecker control | Syncfusion
 description: Learn here all about Custom Dictionary support in Syncfusion WPF SpellChecker (SfSpellChecker) control and more.
 platform: WPF
 control: SfSpellChecker
- documentation: ug
+documentation: ug
 ---
 
 # Custom Dictionary in WPF SpellChecker (SfSpellChecker)

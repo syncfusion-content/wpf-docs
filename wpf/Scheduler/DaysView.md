@@ -4,7 +4,7 @@ title: Day and Week Views in WPF Scheduler control | Syncfusion
 description: Learn here all about Day and Week Views support in Syncfusion WPF Scheduler (SfScheduler) control and more.
 platform: wpf
 control: SfScheduler
- documentation: ug
+documentation: ug
 ---
 
 # Day and Week Views in WPF Scheduler (SfScheduler)

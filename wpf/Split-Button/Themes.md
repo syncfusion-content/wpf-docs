@@ -4,7 +4,7 @@ title: Themes in WPF Split Button control | Syncfusion
 description: Learn about Themes support in Syncfusion Essential Studio WPF Split Button control, its elements and more.
 platform: WPF
 control: SplitButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # Themes in WPF Split Button

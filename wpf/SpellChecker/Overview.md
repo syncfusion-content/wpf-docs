@@ -4,7 +4,7 @@ title: About WPF SpellChecker control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF SpellChecker (SfSpellChecker) control, its elements and more.
 platform: WPF
 control: SfSpellChecker 
- documentation: ug
+documentation: ug
 ---
 
 # WPF SpellChecker (SfSpellChecker) Overview

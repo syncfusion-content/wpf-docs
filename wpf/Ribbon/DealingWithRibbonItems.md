@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Dealing with Ribbon Items in WPF Ribbon control | Syncfusion
 description: Learn about Dealing with Ribbon Items support in Syncfusion WPF Ribbon control, its elements and more.
 platform: wpf

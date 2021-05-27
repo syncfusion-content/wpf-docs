@@ -4,7 +4,7 @@ title: User Interactions in WPF Smith Chart control | Syncfusion
 description: Learn here all about User Interactions support in Syncfusion WPF Smith Chart (SfSmithChart) control and more.
 platform: wpf
 control: SfSmithChart
- documentation: ug
+documentation: ug
 ---
 
 # User Interactions in WPF Smith Chart (SfSmithChart)

@@ -4,7 +4,7 @@ title: Selection in WPF Spreadsheet control | Syncfusion
 description: Learn here all about Selection support in Syncfusion WPF Spreadsheet (SfSpreadsheet) control and more.
 platform: wpf
 control: SfSpreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # Selection in WPF Spreadsheet (SfSpreadsheet)

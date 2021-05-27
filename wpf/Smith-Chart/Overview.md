@@ -4,7 +4,7 @@ title: About WPF Smith Chart control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
 platform: wpf
 control: SfSmithChart
- documentation: ug
+documentation: ug
 ---
 
 # WPF Smith Chart (SfSmithChart) Overview

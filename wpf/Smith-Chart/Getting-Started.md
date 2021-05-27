@@ -4,7 +4,7 @@ title: Getting Started with WPF Smith Chart control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Smith Chart (SfSmithChart) control, its elements and more.
 platform: wpf
 control: SfSmithChart
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Smith Chart (SfSmithChart)
@@ -13,7 +13,7 @@ This section explains the steps required to build the application with SfSmithCh
 
 ## Steps
 
-1. Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+1. Create new WPF project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)?redirectedfrom=MSDN).
 2. Add the SfSmithChart assembly to your application. 
 3. Initialize smith chart control.
 4. Add header to the smith chart control.

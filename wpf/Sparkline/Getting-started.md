@@ -4,7 +4,7 @@ title: Getting Started with WPF Sparkline control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Sparkline (SfSparkline) control, its elements and more.
 platform: wpf
 control: SfSparkline
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Sparkline (SfSparkline)
@@ -15,7 +15,7 @@ Following steps explain how to create sparkline,
 
 ### Adding the assembly reference:
 
-* Open the [Add Reference](http://msdn.microsoft.com/en-us/library/wkze6zky(v=vs.80).aspx) window from your project.
+* Open the [Add Reference](https://www.microsoft.com/en-us/download/details.aspx?id=55984) window from your project.
 * To Choose our assemblies follow the below step depending upon the developing environment. 
 * If using VS 2012 choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll 
 * If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll

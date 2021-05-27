@@ -4,7 +4,7 @@ title: Month View in WPF Scheduler control | Syncfusion
 description: Learn here all about Month View support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: wpf
 control: SfScheduler
- documentation: ug
+documentation: ug
 ---
 # Month View in WPF Scheduler (SfScheduler)
 The month view of the scheduler displays the days of a specific month and current month, by default initially. The current date color is differentiated from other dates of the current month.
