@@ -4,7 +4,7 @@ title: Steps to edit Style and Template with Blend for Syncfusion Essential WPF 
 description: Learn how to edit the Style and Template with Blend for Syncfusion Essential WPF controls
 platform: wpf
 control: Blend Support
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started for Blend Support

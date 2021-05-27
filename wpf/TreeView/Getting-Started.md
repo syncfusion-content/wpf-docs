@@ -4,7 +4,7 @@ title: Getting Started with WPF TreeView control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF TreeView (SfTreeView)

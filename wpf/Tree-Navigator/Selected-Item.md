@@ -4,7 +4,7 @@ title: Selected Item in WPF Tree Navigator control | Syncfusion
 description: Learn here all about Selected Item support in Syncfusion WPF Tree Navigator (SfTreeNavigator) control and more.
 platform: wpf
 control: SfTreeNavigator 
-documentation: ug
+ documentation: ug
 ---
 
 # Selected Item in WPF Tree Navigator (SfTreeNavigator)

@@ -4,7 +4,7 @@ title: MVVM in WPF TreeView control | Syncfusion
 description: Learn here all about MVVM support in Syncfusion WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
-documentation: ug
+ documentation: ug
 ---
 
 # MVVM in WPF TreeView (SfTreeView)

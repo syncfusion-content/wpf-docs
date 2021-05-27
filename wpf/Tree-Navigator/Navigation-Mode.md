@@ -4,7 +4,7 @@ title: Navigation Mode in WPF Tree Navigator control | Syncfusion
 description: Learn here all about Navigation Mode support in Syncfusion WPF Tree Navigator (SfTreeNavigator) control and more.
 platform: wpf
 control: SfTreeNavigator 
-documentation: ug
+ documentation: ug
 ---
 
 # Navigation Mode in WPF Tree Navigator (SfTreeNavigator)

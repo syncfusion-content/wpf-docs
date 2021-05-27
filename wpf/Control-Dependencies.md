@@ -4,7 +4,7 @@ title: Control Dependencies and Dependency assembly | WPF | Syncfusion
 description: Control and it's Dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
-documentation: ug
+ documentation: ug
 ---
 
 # Control Dependencies

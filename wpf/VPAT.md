@@ -4,7 +4,7 @@ title: Section 508 Compliance for Syncfusion Essential Studio WPF products
 description: Section 508 Compliance for WPF
 platform: WPF
 control: Section 508 Compliance
-documentation: ug
+ documentation: ug
 ---
 
 # Section 508 Compliance - Voluntary Product Accessibility Template

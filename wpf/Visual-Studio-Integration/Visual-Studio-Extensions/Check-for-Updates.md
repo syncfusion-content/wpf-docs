@@ -4,7 +4,7 @@ title: Check for Updates | Wpf | Syncfusion
 description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
 platform: wpf
 control: Visual Studio Extensions
-documentation: ug
+ documentation: ug
 ---
 
 # Check for Updates
