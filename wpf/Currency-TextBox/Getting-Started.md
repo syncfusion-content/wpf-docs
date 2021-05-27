@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF CurrencyTextBox via designer
 
@@ -25,7 +25,7 @@ You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/cur
 
 * Syncfusion.Shared.WPF
 
-![CurrencyTextBox Control added by designer](Getting-Started_images/wpf-currency-text-box-control-added-by-designer.png)
+![Dragging WPF CurrencyTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-currency-textbox-toolbox.png)
 
 ## Adding WPF CurrencyTextBox via XAML
 
@@ -90,7 +90,7 @@ this.Content = currencyTextBox;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox control added to Window by code](Getting-Started_images/wpf-currency-text-box-control-added-manually.png)
+![WPF CurrencyTextBox Control](Getting-Started_images/wpf-currency-textbox-control.png)
 
 ## Setting Value
 
@@ -112,7 +112,7 @@ currencyTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Set the value for CurrencyTextBox](Getting-Started_images/SetValue.png)
+![WPF CurrencyTextBox diplays Value](Getting-Started_images/wpf-currency-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the CurrencyTextBox. Use only the `Value` property.
 
@@ -156,7 +156,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox value binding](Getting-Started_images/wpf-currency-text-box-control-binding-value.png)
+![WPF CurrencyTextBox displays Binding Value](Getting-Started_images/wpf-currency-textbox-binding-value.png)
 
 ## Value Changed Notification
 
@@ -214,7 +214,7 @@ currencyTextBox.Value = 455;
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the value of CurrencyTextBox by the minimum and maximum values](Getting-Started_images/max-minvalue.png)
+![Restricts Minimum and Maximum Value of WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-max-and-min-value.png)
 
 ## Step Interval to increase or decrease the value
 
@@ -241,7 +241,7 @@ currencyTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+![WPF CurrencyTextBox displays Incrementing Interval Value](Getting-Started_images/wpf-currency-textbox-step-interval.png)
 
 ## Formatting the value
 
@@ -274,7 +274,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting CurrencyTextBox Number Format](Getting-Started_images/wpf-currency-control-number-format.png)
+![WPF CurrencyTextBox with Formatting](Getting-Started_images/wpf-currency-textbox-number-format.png)
 
 ## Setting the Culture
 
@@ -297,7 +297,7 @@ currencyTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![Setting CurrencyTextBox Culture](Getting-Started_images/Culture.png)
+![WPF CurrencyTextBox with Culture](Getting-Started_images/wpf-currency-textbox-culture.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -309,4 +309,4 @@ CurrencyTextBox supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-text-box-theme-support.png)
+  ![Applying Theme to WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox-theme.png)

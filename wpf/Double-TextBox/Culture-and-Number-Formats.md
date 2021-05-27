@@ -42,11 +42,11 @@ By default the US culture uses “,” as the `NumberGroupSeparator` and "." as 
 
 **Default Culture**
 
-![DoubleTextBox with default culture](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img1.jpeg)
+![WPF DoubleTextBox with Default Culture](Culture-and-Number-Formats-images/wpf-double-textbox-culture.jpeg)
 
 **Latin Culture**
 
-![DoubleTextBox with Latin-Culture](Culture-and-Number-Formats-images/Latin.png)
+![WPF DoubleTextBox with Latin Culture](Culture-and-Number-Formats-images/wpf-double-textbox-latin-culture.png)
 
 ## NumberFormatInfo based formatting
 
@@ -84,7 +84,7 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting DoubleTextBox number format by NumberFormatInfo](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
+![WPF DoubleTextBox with Formatting](Culture-and-Number-Formats-images/wpf-double-textbox-formatting.jpeg)
 
 The following code illustrate how to set number group size by using the `NumberFormat` property.
 
@@ -107,7 +107,7 @@ doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting DoubleTextBox value group size by NumberFormat](Culture-and-Number-Formats-images/NumberGroupSizes_format.png)
+![WPF DoubleTextBox displays Different Group Size between Numbers](Culture-and-Number-Formats-images/wpf-double-textbox-group-size.png)
 
 ## Formatting with dedicated properties
 
@@ -132,7 +132,7 @@ doubleTextBox.NumberGroupSizes = new Int32Collection() { 4, 3, 2};
 {% endhighlight %}
 {% endtabs %}
 
-![Setting DoubleTextBox number format by dedicated properties](Culture-and-Number-Formats-images/NumberGroupSizes2.png)
+![WPF DoubleTextBox with Formatting](Culture-and-Number-Formats-images/wpf-double-textbox-number-format.png)
 
 N> When you use both the `NumberFormat` and the dedicated properties (`NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator`) to format the value of `DoubleTextbox`, the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` properties have higher priority.
 

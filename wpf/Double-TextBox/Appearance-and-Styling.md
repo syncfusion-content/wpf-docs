@@ -35,7 +35,7 @@ doubleTextBox.PositiveForeground = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox displaying value in positive foreground](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+![Changing Positive Value Color in WPF DoubleTextBox](Appearance-and-Styling-images/wpf-double-textbox-positive-value.jpeg)
 
 ### Foreground for Negative Value
 
@@ -59,7 +59,7 @@ doubleTextBox.NegativeForeground = Brushes.SpringGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox displaying negative value in negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![Changing Negative Value Color in WPF DoubleTextBox](Appearance-and-Styling-images/wpf-double-textbox-negative-value.jpeg)
 
 ### Foreground for Zero Value
 
@@ -85,7 +85,7 @@ doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox displaying zero value with zero foreground](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![Changing Zero Value Color in WPF DoubleTextBox](Appearance-and-Styling-images/wpf-double-textbox-zero-value.jpeg)
 
 ## Setting the Background
 
@@ -108,7 +108,7 @@ doubleTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox with cyan background](Appearance-and-Styling-images/Appearance-and-Styling-Background.png)
+![WPF DoubleTextBox with Cyan Background](Appearance-and-Styling-images/wpf-double-textbox-background.png)
 
 ## Setting the Corner Radius
 
@@ -130,7 +130,7 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox with corner radius](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
+![WPF DoubleTextBox with Corner Radius](Appearance-and-Styling-images/wpf-double-textbox-corner-radius.jpeg)
 
 ## Apply Background for Selection
 
@@ -153,7 +153,7 @@ doubleTextBox.SelectionOpacity = 0.3;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox with red selection background](Appearance-and-Styling-images/Selection.png)
+![Highlighting Selected Text Background in WPF DoubleTextBox](Appearance-and-Styling-images/wpf-double-textbox-selection.png)
 
 ## Align Value
 
@@ -175,7 +175,7 @@ doubleTextBox.TextAlignment = TextAlignment.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![Center aligned DoubleTextBox Value](Appearance-and-Styling-images/TextAlignment.png)
+![Changing Text Alignment of WPF DoubleTextBox](Appearance-and-Styling-images/wpf-double-textbox-text-alignment.png)
 
 ## Setting ToolTip
 
@@ -197,7 +197,7 @@ doubleTextBox.ToolTip = "Enter Double value";
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox with tool tip](Appearance-and-Styling-images/ToolTip.png)
+![WPF DoubleTextBox with ToolTip](Appearance-and-Styling-images/wpf-double-textbox-tooltip.png)
 
 ## Theme
 
@@ -207,4 +207,4 @@ DoubleTextBox supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-text-box-theme-support.png)
+![Applying Theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-textbox-theme.png)

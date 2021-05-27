@@ -28,7 +28,7 @@ currencyTextBox.Value = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![CurrencyTextBox displaying a value](Changing-Currency-Value_images/SettingValue.jpeg)
+![WPF CurrencyTextBox displays Value](Changing-Currency-Value_images/wpf-currency-textbox-value.jpeg)
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `CurrencyTextBox` value.
 
@@ -68,7 +68,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![Binding a value to CurrencyTextBox](Changing-Currency-Value_images/ValueBinding.png)
+![WPF CurrencyTextBox displays Binding Value](Changing-Currency-Value_images/wpf-currency-textbox-binding-value.png)
 
 ## Change currency value by pasting the clipboard's text
 
@@ -128,7 +128,7 @@ currencyTextBox.Value = 12345.67;
 {% endhighlight %}
 {%endtabs%}
 
-![CurrencyTextBox pasting the copied value in specific place](Changing-Currency-Value_images/Pasting.png)
+![WPF CurrencyTextBox displays Pasting Copied Value in Specific Place](Changing-Currency-Value_images/wpf-currency-textbox-paste-value.png)
 
 ## Show UpDown Button
 
@@ -148,7 +148,7 @@ currencyTextBox.ShowSpinButton = true;
 {% endhighlight %}
 {%endtabs%}
 
-![Changing currency value by SpinButton in CurrencyTextBox](Changing-Currency-Value_images/SpinButton.gif)
+![WPF CurrencyTextBox displays SpinButton](Changing-Currency-Value_images/wpf-currency-textbox-spinbutton.gif)
 
 ## Value Changed Event
 
@@ -209,7 +209,7 @@ currencyTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting null as NullValue in CurrencyTextBox](Changing-Currency-Value_images/NullValue_null.png)
+![WPF CurrencyTextBox displays Empty Value](Changing-Currency-Value_images/wpf-currency-textbox-empty-value.png)
 
 **NullValue = 10**
 
@@ -231,7 +231,7 @@ currencyTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Setting Null value in CurrencyTextBox](Changing-Currency-Value_images/NullValue.jpeg)
+![WPF CurrencyTextBox displays Null Value](Changing-Currency-Value_images/wpf-currency-textbox-null-value.jpeg)
 
 ## Setting Watermark Text
 
@@ -262,7 +262,7 @@ currencyTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox displaying a watermark text in red color](Changing-Currency-Value_images/WaterMark-Foreground.jpeg)
+![WPF CurrencyTextBox displays Watermark Text](Changing-Currency-Value_images/wpf-currency-textbox-watermark.jpeg)
 
 ### Setting Watermark Template
 
@@ -285,7 +285,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 {% endhighlight %}
 
-![CurrencyTextBox displaying watermark text using a data-template](Changing-Currency-Value_images/WaterMark-Template.png)
+![Customizing Watermark Text in WPF CurrencyTextBox](Changing-Currency-Value_images/wpf-currency-textbox-watermark-customization.png)
 
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `CurrencyTextBox` control.
 
