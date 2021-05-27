@@ -9,7 +9,7 @@ documentation: ug
 
 # Clipboard Operations in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy selected nodes/cells from tree grid by clicking `Ctrl+C` and paste the content from the [Clipboard](https://msdn.microsoft.com/en-us/library/system.windows.clipboard.aspx) to tree grid by clicking `Ctrl+V`.
+SfTreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy selected nodes/cells from tree grid by clicking `Ctrl+C` and paste the content from the [Clipboard](https://docs.microsoft.com/en-us/dotnet/api/system.windows.clipboard?redirectedfrom=MSDN&view=net-5.0) to tree grid by clicking `Ctrl+V`.
 
 ## Copy
 
@@ -101,7 +101,7 @@ The GridCopyOption property provides the following options:
 
 * [IncludeHeaders](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies column header also along with data.
 
-* [IncludeFormat](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html: Cuts the display text with format instead of actual value.
+* [IncludeFormat](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) Cuts the display text with format instead of actual value.
 
 * [IncludeHiddenColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Cuts the hidden column also to the clipboard.
 

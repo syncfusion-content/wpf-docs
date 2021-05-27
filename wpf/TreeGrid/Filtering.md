@@ -307,7 +307,7 @@ The following built-in filter types are supported in SfTreeGrid:
 
 * Number filter: Loads various menu options to filter the numeric data.
 
-* Date filter: Loads various menu options and [DatePicker](https://msdn.microsoft.com/en-in/library/system.windows.controls.datepicker.aspx) to filter date-time type columns.
+* Date filter: Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?redirectedfrom=MSDN&view=net-5.0) to filter date-time type columns.
 
 <table>
 <tr>
@@ -454,7 +454,7 @@ The following screenshot illustrates advanced filter when `AllowBlankFilters` is
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
-By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
+By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
 
 {% tabs %}
 {% highlight c# %}

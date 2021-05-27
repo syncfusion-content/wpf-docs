@@ -99,7 +99,7 @@ In this walk through, you will create WPF application with SfTreeGrid control.
 4. [Adding control manually in C#](#adding-control-manually-in-c)
 5. [Binding self-relational data in SfTreeGrid](#binding-self-relational-data-in-sftreegrid)
 6. [Binding nested collection with SfTreeGrid](#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/on-demand-loading)
+7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/load-on-demand)
 8. [Defining Columns](#defining-columns)
 9. [Selection](#selection)
 10. [Sorting](#sorting)
@@ -239,7 +239,7 @@ public class EmployeeInfo
 {% endtabs %}
 
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface.
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
 
 2. Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 

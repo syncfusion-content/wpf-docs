@@ -363,7 +363,7 @@ Below screenshot shows the customized header template loaded on the header of Fi
 
 ### Data Annotations with AutoGenerateColumns
 
-SfTreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://msdn.microsoft.com/en-us/library/mt185499.aspx). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+SfTreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel?view=dotnet-uwp-10.0&redirectedfrom=MSDN). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
 
 #### Exclude column
 

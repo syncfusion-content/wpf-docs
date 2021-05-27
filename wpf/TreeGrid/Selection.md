@@ -372,7 +372,7 @@ If the {{'[TreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#%22%22"")'| markdownify }}, clicking the Esc key for the second time cancels the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#%22%22%22%22)'| markdownify }}, clicking the Esc key for the second time cancels the edit mode for entire row.
 </td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ public class GridSelectionControllerExt : TreeGridRowSelectionController
 
 ### Change enter key behavior
 
-By default, when pressing the `Enter` key, the current cell will be moved to the next focused cell in the same column. You can change the `Enter` key behavior by overriding the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method in selection controller. In this method, you have to create a new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs), which refers to the `Tab` key and processes the `Tab` key action.
+By default, when pressing the `Enter` key, the current cell will be moved to the next focused cell in the same column. You can change the `Enter` key behavior by overriding the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method in selection controller. In this method, you have to create a new [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyeventargs?redirectedfrom=MSDN&view=net-5.0), which refers to the `Tab` key and processes the `Tab` key action.
 
 
 {% tabs %}

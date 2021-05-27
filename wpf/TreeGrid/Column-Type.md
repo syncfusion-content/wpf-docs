@@ -224,7 +224,7 @@ In the below code snippet, `TreeGridCurrencyColumn` is loaded with `ProgressBar`
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.DataTemplate?redirectedfrom=MSDN&view=winrt-20348) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -264,7 +264,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.  
+`TreeGridColumn` provides support to choose different[DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.DataTemplate?redirectedfrom=MSDN&view=winrt-20348) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.  
 
 For example, two different templates loaded alternatively in `Salary` column. 
 
@@ -468,12 +468,12 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 ### Data Formatting
 
-`TreeGridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
+`TreeGridColumn` supports to format the data using [Converter](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.Binding?redirectedfrom=MSDN&view=winrt-20348#Windows_UI_Xaml_Data_Binding_Converter) properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
 
 
 #### Format column using StringFormat
 
-You can apply format for the column using [StringFormat](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.stringformat.aspx) property by defining `DisplayBinding.StringFormat` applies to `TreeGridTexColumn` alone. Refer the Converter section to format the other column types.
+You can apply format for the column using [StringFormat](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.bindingbase.stringformat?redirectedfrom=MSDN&view=net-5.0#System_Windows_Data_BindingBase_StringFormat) property by defining `DisplayBinding.StringFormat` applies to `TreeGridTexColumn` alone. Refer the Converter section to format the other column types.
 
 {% tabs %}
 {% highlight xaml %}
@@ -782,11 +782,11 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ### TreeGridTextColumnBase properties
 
-* Text decorations - You can [decorate](https://msdn.microsoft.com/en-us/library/system.windows.textdecorations.aspx) column? data using [TextDecorations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextDecorations) property.
+* Text decorations - You can [decorate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textdecorations?redirectedfrom=MSDN&view=net-5.0) column? data using [TextDecorations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextDecorations) property.
 
 * Text trimming - You can [trim]() the column? data using [TextTrimming](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
 
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/system.windows.textwrapping.aspx) the column? data using [TextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
+* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textwrapping?redirectedfrom=MSDN&view=net-5.0) the column? data using [TextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -869,15 +869,15 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" }
 
 `TreeGridNumericColumn` allows you to format the numeric data with culture-specific information.
 
-* [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberDecimalDigits) - You can change the [Number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimaldigits.aspx) to be displayed after the decimal point using `NumberDecimalDigits` property.
+* [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberDecimalDigits) - You can change the [Number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numberdecimaldigits?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_NumberDecimalDigits) to be displayed after the decimal point using `NumberDecimalDigits` property.
 
-* [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimalseparator.aspx) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeparator` property.
+* [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numberdecimalseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_NumberDecimalSeparator) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeparator` property.
 
-* [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberGroupSeparator) - By default, the comma (,) [separates group of digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupseparator.aspx) before the decimal point. You can use any operator as group separator using `NumberGroupSeparator` property.
+* [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberGroupSeparator) - By default, the comma (,) [separates group of digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbergroupseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_NumberGroupSeparator) before the decimal point. You can use any operator as group separator using `NumberGroupSeparator` property.
 
-* [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberGroupSizes) - You can change the [number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupsizes.aspx) before the decimal point on numeric values using `NumberGroupSizes` property.
+* [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberGroupSizes) - You can change the [number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbergroupsizes?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_NumberGroupSizes) before the decimal point on numeric values using `NumberGroupSizes` property.
 
-* `Formatting negative pattern` - You can format the [pattern of negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbernegativepattern.aspx) numeric values using `NumberNegativePattern`.
+* `Formatting negative pattern` - You can format the [pattern of negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbernegativepattern?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_NumberNegativePattern) numeric values using `NumberNegativePattern`.
 
 
 {% tabs %}
@@ -932,15 +932,15 @@ this.treeGrid.Columns.Add(new TreeGridCurrencyColumn() { MappingName = "Salary",
 
 * [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencySymbol) - By default, the currency symbol will be displayed based on culture. You can change the symbol using `CurrencySymbol` property. 
 
-* [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyDecimalDigits) - You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimaldigits.aspx) to be displayed after the decimal point on currency values using `CurrencyDecimalDigits` property. 
+* [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyDecimalDigits) - You can change the [number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencydecimaldigits?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyDecimalDigits) to be displayed after the decimal point on currency values using `CurrencyDecimalDigits` property. 
 
-* [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimalseparator.aspx) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeparator` property. 
+* [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencydecimalseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyDecimalSeparator) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeparator` property. 
 
-* [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyGroupSeparator) - By default, the comma (,) [separates the group](https://msdn.microsoft.com/en-US/library/system.globalization.numberformatinfo.currencygroupseparator(v=vs.110).aspx) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeparator property. 
+* [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyGroupSeparator) - By default, the comma (,) [separates the group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencygroupseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyGroupSeparator) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeparator property. 
 
-* [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyGroupSizes) - You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencygroupsizes.aspx) before the decimal point on currency value using `CurrencyGroupSizes` property. 
+* [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyGroupSizes) - You can specify [the number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencygroupsizes?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyGroupSizes) before the decimal point on currency value using `CurrencyGroupSizes` property. 
 
-* Pattern - You can format the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencypositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencynegativepattern.aspx) currency values through [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyPositivePattern) and [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyNegativePattern). 
+* Pattern - You can format the pattern for both [positive](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencypositivepattern?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyPositivePattern) and [negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencynegativepattern?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_CurrencyNegativePattern) currency values through [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyPositivePattern) and [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrencyColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCurrencyColumn_CurrencyNegativePattern). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -999,15 +999,15 @@ this.treeGrid.Columns.Add(new TreeGridPercentColumn() { MappingName = "Hike", He
 
 * [PercentSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentSymbol) **-** By default, the percent operator (%) will be loaded with the value. You can change the symbol using `PercentSymbol` property. 
 
-* [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentDecimalDigits) **-** You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimaldigits.aspx) to be displayed after the decimal point on percent value can be specified using `PercentDecimalDigits` property. 
+* [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentDecimalDigits) **-** You can change the [number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentdecimaldigits?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentDecimalDigits) to be displayed after the decimal point on percent value can be specified using `PercentDecimalDigits` property. 
 
-* [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentDecimalSeparator) **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimalseparator.aspx) of percent value .You can use any operator as decimal separator using `PercentDecimalSeparator` property.
+* [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentDecimalSeparator) **-** By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentdecimalseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentDecimalSeparator) of percent value .You can use any operator as decimal separator using `PercentDecimalSeparator` property.
 
-* [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentGroupSeparator) **-** By default, the comma (,) operator [separates the group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupseparator.aspx) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeparator` property. 
+* [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentGroupSeparator) **-** By default, the comma (,) operator [separates the group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentgroupseparator?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentGroupSeparator) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeparator` property. 
 
-* [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentGroupSizes) **-** You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupsizes.aspx) before the decimal point through `PercentGroupSizes` property. 
+* [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentGroupSizes) **-** You can specify [the number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentgroupsizes?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentGroupSizes) before the decimal point through `PercentGroupSizes` property. 
 
-* Pattern **-** You can specify the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentpositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentnegativepattern.aspx) percent values through [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentPositivePattern) and [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentNegativePattern).
+* Pattern **-** You can specify the pattern for both [positive](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentpositivepattern?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentPositivePattern) and [negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentnegativepattern?redirectedfrom=MSDN&view=net-5.0#System_Globalization_NumberFormatInfo_PercentNegativePattern) percent values through [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentPositivePattern) and [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPercentColumn_PercentNegativePattern).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1181,7 +1181,7 @@ You can increment or decrement the selected part of date time value by enabling 
 
 ### Format using Converter
 
-`TreeGridDateTimeColumn` allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_DisplayBinding) and [ValueBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ValueBinding).
+`TreeGridDateTimeColumn` allows you to set different cultures by setting [ConverterCulture](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.binding.converterculture?redirectedfrom=MSDN&view=net-5.0#System_Windows_Data_Binding_ConverterCulture) property in [DisplayBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_DisplayBinding) and [ValueBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ValueBinding).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1265,7 +1265,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn() { MappingName = "AvailabilityS
 
 [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) derived from `TreeGridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) and [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTemplateColumn_EditTemplate) properties.
 
-Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://msdn.microsoft.com/en-in/library/system.windows.datatrigger.aspx).
+Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatrigger?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1404,7 +1404,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.DataTemplate?redirectedfrom=MSDN&view=winrt-20348) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -1600,7 +1600,7 @@ You can keep the drop-down control open when start editing on the text box of `C
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.virtualizingstackpanel.aspx) as [ItemsPanelTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.itemspaneltemplate.aspx) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.VirtualizingStackPanel?redirectedfrom=MSDN&view=winrt-20348) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.ItemsPanelTemplate?redirectedfrom=MSDN&view=winrt-20348) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1622,7 +1622,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in [OnEditElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellComboBoxRenderer.html#Syncfusion_UI_Xaml_TreeGrid_Cells_TreeGridCellComboBoxRenderer_OnEditElementLoaded_System_Object_System_Windows_RoutedEventArgs_) method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.ComboBox?redirectedfrom=MSDN&view=winrt-20348#Windows_UI_Xaml_Controls_ComboBox_IsDropDownOpen) property to `true` in [OnEditElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellComboBoxRenderer.html#Syncfusion_UI_Xaml_TreeGrid_Cells_TreeGridCellComboBoxRenderer_OnEditElementLoaded_System_Object_System_Windows_RoutedEventArgs_) method by overriding existing renderer.
 Below code, creates `TreeGridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfTreeGrid.CellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CellRenderers) collection.
 
 {% tabs %}
@@ -1925,7 +1925,7 @@ SfTreeGrid allows you to create your own column by overriding predefined column 
 
 You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/sftreegrid/column-type) column types in SfTreeGrid.
 
-For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
+For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset?redirectedfrom=MSDN&view=net-5.0) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 
 In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DisplayBinding` (non-edit).
 
