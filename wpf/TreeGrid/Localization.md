@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Localization in WPF TreeGrid (SfTreeGrid)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)?redirectedfrom=MSDN). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 Below application culture changed to German.
 

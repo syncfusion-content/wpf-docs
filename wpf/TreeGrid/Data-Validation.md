@@ -147,7 +147,7 @@ You can validate the data using **data annotation attributes** by setting [SfTre
 
 **Using different annotations**
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679261(v=vs.95)?redirectedfrom=MSDN).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679261(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ public decimal Price
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679203(v=vs.95)?redirectedfrom=MSDN), [String Length attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679251(v=vs.95)?redirectedfrom=MSDN)
+The string type property can be validated using [Required](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679203(v=vs.95)), [String Length attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679251(v=vs.95))
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ public string CustomerName
 }
 {% endhighlight %}
 {% endtabs %}
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679267(v=vs.95)?redirectedfrom=MSDN).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679267(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
