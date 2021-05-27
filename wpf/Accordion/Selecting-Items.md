@@ -136,7 +136,7 @@ Here is an example showing the functioning of these properties in which items ar
 
 {% endtabs %}
 
-![Select item customization](Selecting-Items-images/Selecting-Items-img1.jpeg)
+![WPF Accordion Selected Item Customization](Selecting-Items-images/wpf-accordion-selected-item-customization.jpeg)
 
 ## Selecting item using IsSelected
 
@@ -233,7 +233,7 @@ Here is an example showing the behavior of this property by binding [SfAccordion
 
 {% endtabs %}
 
-![Selecting item](Selecting-Items-images/Selecting-Items-img2.jpeg)
+![WPF Accordion Selecting Items](Selecting-Items-images/wpf-accordion-selecting-items.jpeg)
 
 ## Checking the lock state of an item
 
@@ -480,11 +480,11 @@ Here is an example to demonstrate the values of event arguments:
 
 Expand the item with header Windows Phone
 
-![Expand the item with header Windows Phone](Selecting-Items-images/Selecting-Items-img3.jpeg)
+![WPF Accordion Expand Items with Header](Selecting-Items-images/wpf-accordion-expand-items-with-header.jpeg)
 
 Collapse the item with header Windows Phone
 
-![Collapse the item with header Windows Phone](Selecting-Items-images/Selecting-Items-img4.jpeg)
+![WPF Accordion Collapse Items with Header](Selecting-Items-images/wpf-accordion-collapse-items-with-header.jpeg)
 
 ## Notifying an item selection
 
