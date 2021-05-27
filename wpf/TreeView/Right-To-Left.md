@@ -24,6 +24,6 @@ sfTreeView.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with right to left](Right-To-Left_images/Right-To-Left_image1.png)
+![WPF TreeView with Right to Left](Right-To-Left_images/wpf-treeview-right-to-left.png)
 
 
