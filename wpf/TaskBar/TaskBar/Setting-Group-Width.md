@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Group Width | TaskBar | wpf | Syncfusion
-description: setting group width
+title: Setting Group Width in WPF TaskBar Control | Syncfusion
+description: Learn here about Setting Group Width in Syncfusion Essential Studio WPF TaskBar Control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Setting Group Width
+# Setting Group Width in WPF TaskBar Control
 
 The width of the TaskBar is customized by using the GroupWidth property. This is a dependency property, which sets the group width of the TaskBar. It displays all the TaskBar Items in the TaskBar control with the same width. 
 
@@ -153,7 +153,7 @@ this.Content = taskBar;
 {% endhighlight %}
 {%endtabs%}
 
-![](Setting-Group-Width_images/Setting-Group-Width_img1.jpeg)
+![Setting-Group-Width_images1](Setting-Group-Width_images/Setting-Group-Width_img1.jpeg)
 
 
 

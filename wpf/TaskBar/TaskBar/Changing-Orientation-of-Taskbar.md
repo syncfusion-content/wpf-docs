@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Changing Orientation of Taskbar | TaskBar | wpf | Syncfusion
-description: changing orientation of taskbar
+title: Changing Orientation of WPF Taskbar control | Syncfusion
+description: Changing orientation of Syncfusion Essential Studio WPF TaskBar control, its elements, features and more.
 platform: wpf
 control: TaskBar
 documentation: ug
@@ -164,7 +164,7 @@ this.Content = taskBar;
 {%endtabs%}
 
 
-![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)
+![Taskbar_images1](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)
 
 
 

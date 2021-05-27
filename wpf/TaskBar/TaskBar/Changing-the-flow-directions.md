@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Changing the flow directions | TaskBar | wpf | Syncfusion
-description: changing the flow directions
+title: Changing the flow directions in WPF TaskBar Control | Syncfusion
+description: Changing the flow directions in Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
@@ -72,7 +72,7 @@ taskBar.FlowDirection = FlowDirection.RightToLeft;
 {%endtabs%}
 
 
-![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
+![Changing-the-flow-directions_images1](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
 
 
 FlowDirection = "RightToLeft"

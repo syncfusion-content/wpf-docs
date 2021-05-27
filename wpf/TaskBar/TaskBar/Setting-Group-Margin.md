@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Group Margin | TaskBar | wpf | Syncfusion
-description: setting group margin
+title: Setting Group Margin in WPF TaskBar Control | Syncfusion
+description: Learn here about Setting group margin in Syncfusion Essential Studio WPF TaskBar Control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
@@ -161,7 +161,7 @@ this.Content = taskBar;
 {%endtabs%}
 
 
-![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
+![Setting-Group-Margin_images1](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
 
 
 
