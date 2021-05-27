@@ -97,7 +97,7 @@ The Navigation Drawer built-in toggle button and header can be customized using 
 
 {% endtabs %}
 
-![Header](Header_and_Footer_images/Header.png)
+![Customizing Header in WPF NavigationDrawer](Header_and_Footer_images/wpf-navigation-drawer-header-customization.png)
 
 ## Customizing the Footer
 
@@ -196,7 +196,7 @@ The Navigation Drawer's Footer can be customized using the [FooterItems](https:/
 
 {% endtabs %}
 
-![Footer](Header_and_Footer_images/Footer.png)
+![Customizing Footer in WPF NavigationDrawer](Header_and_Footer_images/wpf-navigation-drawer-footer-customization.png)
 
 ## Creating a custom header and footer
 

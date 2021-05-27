@@ -235,7 +235,7 @@ The below properties are available in the `NavigationItem` and can be used to de
 
 {% endtabs %}
 
-![Populating with Data](Populating_Data_images/NavigationItem.png)
+![Populating with Data in WPF NavigationDrawer](Populating_Data_images/wpf-navigation-drawer-item.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Populating_With_Items) in GitHub
 
@@ -372,7 +372,7 @@ The IconTemplate is used to provide the custom icon for the NavigationItem.
 
 {% endtabs %}
 
-![IconTemplate](Populating_Data_images/IconTemplate.png)
+![WPF NavigationDrawer with Custom Icon](Populating_Data_images/wpf-navigation-drawer-custom-icon.png)
 
 
 ### Different item types
@@ -536,7 +536,7 @@ See also [Hierarchical Data Binding](https://help.syncfusion.com/wpf/navigation-
 
 {% endtabs %}
 
-![Populating with Data](Populating_Data_images/Data_Binding.png)
+![Populating with Data in WPF NavigationDrawer](Populating_Data_images/wpf-navigation-drawer-data-binding.png)
 
 
 ## Hierarchical Data Binding
@@ -681,7 +681,7 @@ When using the `ItemsSource` to show the content of the item achieved by [Displa
 
 {% endtabs %}
 
-![Populating with Data](Populating_Data_images/Hierarchical_Data_Binding.png)
+![Hierarchical Data Binding in WPF NavigationDrawer](Populating_Data_images/wpf-navigation-drawer-hierarchical-data-binding.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Hierarchical_Data_Binding) in GitHub
 
@@ -818,10 +818,10 @@ This property used to change the horizontal position of sub items. Left margin o
 
 See also [Populating using built in items](https://help.syncfusion.com/wpf/navigation-drawer/populating-data#populating-using-built-in-items) section.
 
-![Populating with Data](Populating_Data_images/IndentationWidth.png)
+![Changing Horizontal Position of WPF NavigationDrawer Items](Populating_Data_images/wpf-navigation-drawer-position.png)
 
 ## Popup support
 
 The sub-items will be displayed in the popup when the drawer menu is collapsed in the compact and expanded display modes.
 
-![Popup_Menu](Populating_Data_images/Popup_Menu.png)
+![WPF NavigationDrawer with Popup Menu](Populating_Data_images/wpf-navigation-drawer-popup-menu.png)

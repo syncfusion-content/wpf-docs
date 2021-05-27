@@ -11,7 +11,7 @@ documentation: ug
 
 The WPF Navigation Drawer control is a sidebar navigation view that is used to create a navigation menu for easy navigation. It provides compact and extended display modes with built-in navigation view items with ability to switch between both modes based on available size. It also provides default mode which allows to have a custom pane view.
 
-![Overview image of NavigationDrawer](Overview_images/Overview_img1.png) 
+![Overview of WPF NavigationDrawer](Overview_images/wpf-navigation-drawer-overview.png) 
                                               
 SfNavigationDrawer
 {:.caption}
@@ -38,7 +38,7 @@ The Navigation Drawers are used in applications where navigating to the major mo
 
 This section describes the visual elements of the NavigationDrawer control and defines terms and concepts used in the DisplayMode.
 
-![VisualStructure](Overview_images/VisualStructure.png)
+![WPF NavigationDrawer Structure](Overview_images/wpf-navigation-drawer-structure.png)
 
 
 * **Header** —  Represents the header of the drawer 

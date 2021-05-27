@@ -935,7 +935,7 @@ public class DelegateCommand<T> : ICommand
 
 {% endtabs %}
 
-![Commands](Command_image/Command.png)
+![WPF NavigationDrawer displays Command](Command_image/wpf-navigation-drawer-command.png)
 
 N> The `Command` execution is only applicable for compact and expanded display mode.
 
