@@ -51,7 +51,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowToolTip).
 
-![InteractiveFeatures_img1](Interactive-Features_images/InteractiveFeatures_img1.png)
+![WPF TreeGrid displays ToolTip for Record Cell](Interactive-Features_images/wpf-treegrid-record-cell-tooltip.png)
 
 ## Header tooltip
 
@@ -72,7 +72,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![InteractiveFeatures_img2](Interactive-Features_images/InteractiveFeatures_img2.png)
+![WPF TreeGrid displays ToolTip for Header](Interactive-Features_images/wpf-treegrid-header-tooltip.png)
 
 ## Tooltip customization
 
@@ -96,7 +96,7 @@ You can change appearance of the tooltip by customizing the style with TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![InteractiveFeatures_img3](Interactive-Features_images/InteractiveFeatures_img3.png)
+![Customizing ToolTip in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-customization.png)
 
 You can customize the template of the tooltip by using the [TreeGridColumn.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplate) and [TreeGridColumn.ToolTipTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplateSelector) properties. 
 
@@ -152,7 +152,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![InteractiveFeatures_img4](Interactive-Features_images/InteractiveFeatures_img4.png)
+![Customize the ToolTip using ToolTipTemplate in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-template.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
@@ -231,11 +231,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The following image shows the DefaultTemplate applied through ToolTipTemplateSelector.
 
-![InteractiveFeatures_img5](Interactive-Features_images/InteractiveFeatures_img5.png)
+![Customize the ToolTip using ToolTipTemplateSelector in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-template-selector.png)
 
 The following image shows the AlternateTemplate applied through ToolTipTemplateSelector.
 
-![InteractiveFeatures_img6](Interactive-Features_images/InteractiveFeatures_img6.png)
+![Customize the ToolTip using ToolTipTemplateSelector in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-using-template-selector.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
 
