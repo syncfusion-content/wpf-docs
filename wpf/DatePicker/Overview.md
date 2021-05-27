@@ -13,11 +13,11 @@ The [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 
 ### Normal view:
 
-![SfDatePicker with normal view](Overview_images/Overview_img1.png)
+![WPF DatePicker with Normal View](Overview_images/wpf-datepicker-normal-view.png)
 
 ### Expanded view:
 
-![SfDatePicker with dropdown date selector](Overview_images/Overview_img2.png)
+![WPF DatePicker with Expanded View](Overview_images/wpf-datepicker-expanded-view.png)
 
 ### Key Features
 

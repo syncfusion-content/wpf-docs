@@ -30,7 +30,7 @@ sfDatePicker.DropDownHeight = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with DropDownHeight](Customizing-DropDown_images/Customizing-DropDown_img2.png)
+![WPF DatePicker DropdownHeight](Customizing-DropDown_images/wpf-datepicker-dropdownheight.png)
 
 ## Show or hide DropDown button
 
@@ -51,6 +51,6 @@ sfDatePicker.ShowDropDownButton = false;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker hides the drop down button](Customizing-DropDown_images/Customizing-DropDown_img3.png)
+![WPF DatePicker Dropdown Button](Customizing-DropDown_images/wpf-datepicker-dropdown-button.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorItem) to download the sample that showcases the DropDown customization support.
