@@ -4,7 +4,7 @@ title: Virtualization in WPF CheckedListBox control | Syncfusion
 description: Learn here all about Virtualization support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
- documentation: ug
+documentation: ug
 ---
 
 # Virtualization in WPF CheckedListBox (CheckListBox)

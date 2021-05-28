@@ -4,7 +4,7 @@ title: Migrating from Chart to SfChart in WPF Charts control | Syncfusion
 description: Learn here all about Migrating from Chart to SfChart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 # Migrating from Chart to SfChart in WPF Charts (SfChart)
@@ -23,7 +23,7 @@ The following code example illustrates xmlns namespace for Chart. You can includ
 
 {% highlight xaml %}
 
-xmlns:syncfusion=[https://schemas.syncfusion.com/wpf](https://schemas.syncfusion.com/wpf)
+xmlns:syncfusion="https://schemas.syncfusion.com/wpf"
 
 
 {% endhighlight %}

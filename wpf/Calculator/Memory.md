@@ -4,7 +4,7 @@ title: Memory in WPF Calculator control | Syncfusion
 description: Learn here all about Memory support in Syncfusion WPF Calculator (SfCalculator) control, its elements and more details.
 platform: wpf
 control: SfCalculator
- documentation: ug
+documentation: ug
 ---
 
 # Memory in WPF Calculator (SfCalculator)

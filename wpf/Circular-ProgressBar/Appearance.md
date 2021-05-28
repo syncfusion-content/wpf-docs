@@ -4,7 +4,7 @@ title: Appearance in WPF circular progressbar control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: WPF
 control: SfCircularProgressBar
- documentation: ug
+documentation: ug
 ---
 
 # Appearance in WPF circular progressbar (SfCircularProgressBar)

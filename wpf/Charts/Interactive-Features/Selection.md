@@ -4,7 +4,7 @@ title: Selection in WPF Charts control | Syncfusion
 description: Learn here all about Selection support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 # Selection in WPF Charts (SfChart)

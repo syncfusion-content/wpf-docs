@@ -4,7 +4,7 @@ title: Getting Started with WPF Calendar control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Calendar (CalendarEdit) control, its elements and more.
 platform: WPF
 control: CalendarEdit
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Calendar (CalendarEdit)

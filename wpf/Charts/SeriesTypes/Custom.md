@@ -4,7 +4,7 @@ title: Custom Chart in WPF Charts control | Syncfusion
 description: Learn here all about Custom Chart support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 ## Custom Charts in WPF (SfChart)

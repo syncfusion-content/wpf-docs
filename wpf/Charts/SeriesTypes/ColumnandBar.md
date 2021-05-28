@@ -4,7 +4,7 @@ title: Column and Bar Chart in WPF Charts control | Syncfusion
 description: Learn here all about Column and Bar Chart support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 # Column and Bar in WPF Charts (SfChart)

@@ -4,7 +4,7 @@ title: Check Items in WPF CheckedListBox control | Syncfusion
 description: Learn here all about Check Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
- documentation: ug
+documentation: ug
 ---
 
 # Check Items in WPF CheckedListBox (CheckListBox)

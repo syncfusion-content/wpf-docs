@@ -4,7 +4,7 @@ title: About WPF Card View control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
- documentation: ug
+documentation: ug
 ---
 
 # WPF Card View Overview

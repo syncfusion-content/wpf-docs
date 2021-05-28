@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | CheckListBox | wpf | Syncfusion
-description: data binding
+title: Data Binding in WPF CheckListBox Control | Syncfusion
+description: Learn here about Data binding in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
 platform: wpf
 control: CheckListBox
- documentation: ug
+documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF CheckListBox control
 
 The control can be populated using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property and [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2#System_Windows_Controls_ItemsControl_DisplayMemberPath) property used to display the items and IsSelected property used to handle the selection in the CheckListBox. The below code snippet will be used to bind the ItemsSource to the CheckListBox.
 

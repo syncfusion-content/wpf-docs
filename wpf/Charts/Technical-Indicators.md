@@ -4,7 +4,7 @@ title: Technical Indicators in WPF Charts control | Syncfusion
 description: Learn here all about Technical Indicators support in Syncfusion WPF Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 # Technical Indicators in WPF Charts (SfChart)

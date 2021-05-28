@@ -4,7 +4,7 @@ title: Grouping Items in WPF CheckedListBox control | Syncfusion
 description: Learn here all about Grouping Items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
- documentation: ug
+documentation: ug
 ---
 
 # Grouping Items in WPF CheckedListBox (CheckListBox)

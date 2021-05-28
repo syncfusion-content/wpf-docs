@@ -4,7 +4,7 @@ title: About WPF Calculator control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Calculator (SfCalculator) control, its elements and more details.
 platform: wpf
 control: SfCalculator
- documentation: ug
+documentation: ug
 ---
 
 # WPF Calculator (SfCalculator) Overview

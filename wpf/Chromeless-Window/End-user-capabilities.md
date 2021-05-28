@@ -4,7 +4,7 @@ title: End user capabilities in WPF Chromeless Window control | Syncfusion
 description: Learn about End user capabilities support in Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: wpf
 control: ChromelessWindow
- documentation: ug
+documentation: ug
 ---
 # End user capabilities in WPF Chromeless Window
 

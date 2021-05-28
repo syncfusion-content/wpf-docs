@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Add range of points dynamically| SfChart | Wpf | Syncfusion
-description: add range of points dynamically
+description: Add range of points dynamically in Syncfusion Essential Studio WPF Chart (SfChart) control, its elements and more.
 platform: wpf
 control: SfChart
- documentation: ug
+documentation: ug
 ---
 
 ## Add range of points dynamically
