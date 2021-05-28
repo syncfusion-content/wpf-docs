@@ -266,7 +266,7 @@ You can refer to the [XlsIO documentation](http://help.syncfusion.com/file-form
 
 ### Save Excel using File dialog
 
-After exporting to Excel, you can save the exported workbook by opening the [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
+After exporting to Excel, you can save the exported workbook by opening the [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}

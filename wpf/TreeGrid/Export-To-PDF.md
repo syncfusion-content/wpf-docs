@@ -204,7 +204,7 @@ fileStream.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
+After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}

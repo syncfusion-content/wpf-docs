@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the Visibility of the CloseButton | TileView | wpf | Syncfusion
-description: set the visibility of the closebutton
+description: Set the visibility of the closebutton in Syncfusion Essential Studio WPF TileView Control, its elements and more.
 platform: wpf
 control: TileView Control
 documentation: ug

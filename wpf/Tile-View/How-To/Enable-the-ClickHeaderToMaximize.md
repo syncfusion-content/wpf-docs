@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable the ClickHeaderToMaximize | TileView | wpf | Syncfusion
-description: enable the clickheadertomaximize
+description: Enable the clickheadertomaximize in Syncfusion Essential Studio WPF TileView Control, its elements and more.
 platform: wpf
 control: TileView Control
 documentation: ug
