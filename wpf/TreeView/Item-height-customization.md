@@ -4,7 +4,7 @@ title: Item Height Customization in WPF TreeView control | Syncfusion
 description: Learn here all about Item Height Customization support in Syncfusion WPF TreeView (SfTreeView) control and more.
 platform: wpf
 control: SfTreeView
- documentation: ug
+documentation: ug
 ---
 
 # Item Height Customization in WPF TreeView (SfTreeView)

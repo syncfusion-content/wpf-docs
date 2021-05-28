@@ -4,7 +4,7 @@ title: ColorMapping in WPF TreeMap control | Syncfusion
 description: Learn here all about ColorMapping support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
 platform: wpf
 control: TreeMap
- documentation: ug
+documentation: ug
 ---
 
 # ColorMapping in WPF TreeMap (SfTreeMap)

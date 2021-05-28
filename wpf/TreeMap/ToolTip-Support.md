@@ -4,7 +4,7 @@ title: ToolTip Support in WPF TreeMap control | Syncfusion
 description: Learn here all about ToolTip Support in Syncfusion WPF TreeMap (SfTreeMap) control, its elements and more.
 platform: wpf
 control: TreeMap
- documentation: ug
+documentation: ug
 ---
 
 # ToolTip Support in WPF TreeMap (SfTreeMap)

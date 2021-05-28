@@ -4,7 +4,7 @@ title: Editing in WPF TreeView control | Syncfusion
 description: Learn here all about Editing support in Syncfusion WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
- documentation: ug
+documentation: ug
 ---
 
 # Editing in WPF TreeView (SfTreeView)

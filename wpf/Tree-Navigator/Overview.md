@@ -4,7 +4,7 @@ title: About WPF Tree Navigator control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Tree Navigator (SfTreeNavigator) control, its elements and more.
 platform: wpf
 control: SfTreeNavigator 
- documentation: ug
+documentation: ug
 ---
 
 # WPF Tree Navigator (SfTreeNavigator) Overview

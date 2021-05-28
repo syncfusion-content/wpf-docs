@@ -4,7 +4,7 @@ title: WPF NuGet Packages | Syncfusion
 description: This section explains about the installing, managing and upgrading of NuGet packages of Syncfusion WPF Controls.
 platform: wpf
 control: NuGet Packages
- documentation: ug
+documentation: ug
 ---
 
 # NuGet Packages in Syncfusion Essential WPF

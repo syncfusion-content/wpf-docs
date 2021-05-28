@@ -4,7 +4,7 @@ title: Selection in WPF TreeView control | Syncfusion
 description: Learn here all about Selection support in Syncfusion WPF TreeView (SfTreeView) control, its elements and more.
 platform: wpf
 control: SfTreeView
- documentation: ug
+documentation: ug
 ---
 
 # Selection in WPF TreeView (SfTreeView)

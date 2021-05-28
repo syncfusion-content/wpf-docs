@@ -4,7 +4,7 @@ title: Steps to add Syncfusion Essential WPF controls
 description: Learn about the different ways to add Syncfusion Essential WPF controls to the Visual Studio project.
 platform: wpf
 control: common
- documentation: ug
+documentation: ug
 ---
 # Add Syncfusion Controls
 

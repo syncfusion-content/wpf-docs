@@ -4,7 +4,7 @@ title: About WPF Wizard Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF Wizard control, its elements and more.
 platform: wpf
 control: Wizard
- documentation: ug
+documentation: ug
 ---
 
 # WPF Wizard Control Overview
