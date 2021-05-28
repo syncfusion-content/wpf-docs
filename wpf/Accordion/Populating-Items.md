@@ -4,7 +4,7 @@ title: Populating Items in WPF Accordion control | Syncfusion
 description: Learn here all about Populating Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
- documentation: ug
+documentation: ug
 ---
 
 # Populating Items in WPF Accordion (SfAccordion)

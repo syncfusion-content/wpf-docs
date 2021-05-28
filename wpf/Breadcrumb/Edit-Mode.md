@@ -4,7 +4,7 @@ title: Edit Mode in WPF Breadcrumb control | Syncfusion
 description: Learn here all about Edit Mode support in Syncfusion WPF Breadcrumb (HierarchyNavigator) control and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
 # Edit Mode in WPF Breadcrumb (HierarchyNavigator)

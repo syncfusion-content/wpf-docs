@@ -4,7 +4,7 @@ title: About WPF Busy Indicator control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Busy Indicator (SfBusyIndicator) control, its elements and more details.
 platform: wpf
 control: Busy Indicator
- documentation: ug
+documentation: ug
 ---
 
 # WPF Busy Indicator (SfBusyIndicator) Overview

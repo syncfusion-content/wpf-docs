@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Selected Hierarchy Navigator Item Changed| Hierarchical Navigator | Wpf | Syncfusion
-description: selected hierarchy navigator item changed
+title: Selected Hierarchy Navigator Item Changed in WPF | Syncfusion
+description: Selected hierarchy navigator item changed in Syncfusion Essential Studio WPF, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
 ## Selected Hierarchy Navigator Item Changed

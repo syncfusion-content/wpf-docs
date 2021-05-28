@@ -4,7 +4,7 @@ title: Events in WPF Button control | Syncfusion
 description: Learn here all about Events support in Syncfusion WPF Button (ButtonAdv) control, its elements and more details.
 platform: wpf
 control: ButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # Events in WPF Button (ButtonAdv)

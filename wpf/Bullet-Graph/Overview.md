@@ -4,7 +4,7 @@ title: About WPF Bullet Graph control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Bullet Graph (SfBulletGraph) control, its elements and more details.
 platform: wpf
 control: SfBulletGraph
- documentation: ug
+documentation: ug
 ---
 
 # WPF Bullet Graph (SfBulletGraph) Overview

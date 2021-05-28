@@ -4,7 +4,7 @@ title: Alignment and positioning in WPF Badge control | Syncfusion
 description: Learn here all about Alignment and positioning support in Syncfusion WPF Badge (SfBadge) control and more.
 platform: WPF
 control: SfBadge
- documentation: ug
+documentation: ug
 ---
 
 # Alignment and positioning in WPF Badge (SfBadge)

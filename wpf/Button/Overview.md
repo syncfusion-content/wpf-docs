@@ -4,7 +4,7 @@ title: About WPF Button control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Button (ButtonAdv) control, its elements and more.
 platform: wpf
 control: ButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # WPF Button (ButtonAdv) Overview

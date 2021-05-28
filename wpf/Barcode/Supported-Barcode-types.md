@@ -4,7 +4,7 @@ title: Supported Barcode types in WPF Barcode control | Syncfusion
 description: Learn here all about Supported Barcode types support in Syncfusion WPF Barcode (SfBarcode) control and more.
 platform: wpf
 control: SfBarcode
- documentation: ug
+documentation: ug
 ---
 
 # Supported Barcode types in WPF Barcode (SfBarcode)

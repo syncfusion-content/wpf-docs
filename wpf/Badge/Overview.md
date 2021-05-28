@@ -4,7 +4,7 @@ title: About WPF Badge control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Badge (SfBadge) control, its elements and more details.
 platform: WPF
 control: SfBadge
- documentation: ug
+documentation: ug
 ---
 
 # WPF Badge (SfBadge) Overview

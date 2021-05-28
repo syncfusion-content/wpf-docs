@@ -4,7 +4,7 @@ title: Flow Direction in WPF Bullet Graph control | Syncfusion
 description: Learn here all about Flow Direction support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
- documentation: ug
+documentation: ug
 ---
 
 ### Flow Direction

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tooltip| Hierarchical Navigator | Wpf | Syncfusion
-description: tooltip
+description: Learn here about tooltip in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
-# Tooltip
+# Tooltip in WPF Hierarchical Navigator control
 
 A ToolTip can be displayed for each HierarchyNavigator item.
 
@@ -26,7 +26,7 @@ HierarchyNavigator hierarchyNavigatorControl1 = new HierarchyNavigator()
 {% endtabs %}
 
 
-![](Tooltip_images/Tooltip_img1.png)
+![Tooltip_images1](Tooltip_images/Tooltip_img1.png)
 
 
 

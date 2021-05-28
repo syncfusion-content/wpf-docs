@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Using command binding| Hierarchical Navigator | Wpf | Syncfusion
-description: using command binding
+description: Using command binding in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
 ## Using command binding

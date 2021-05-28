@@ -4,7 +4,7 @@ title: Styles and Templates in WPF Button control | Syncfusion
 description: Learn here all about Styles and Templates support in Syncfusion WPF Button (ButtonAdv) control and more.
 platform: WPF
 control: ButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # Styles and Templates in WPF Button (ButtonAdv)

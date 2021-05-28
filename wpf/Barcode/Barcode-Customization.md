@@ -4,7 +4,7 @@ title: Barcode Customization in WPF Barcode control | Syncfusion
 description: Learn here all about Barcode Customization support in Syncfusion WPF Barcode (SfBarcode) control and more.
 platform: wpf
 control: SfBarcode
- documentation: ug
+documentation: ug
 ---
 
 # Barcode Customization in WPF Barcode (SfBarcode)

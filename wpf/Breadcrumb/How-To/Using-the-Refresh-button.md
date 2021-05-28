@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Using the Refresh button| Hierarchical Navigator | Wpf | Syncfusion
-description: using the refresh button
+description: Using the refresh button in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
 ## Using the Refresh button
 
 The Refresh button is on the right side of the HierarchyNavigator control. Clicking the Refresh button will initiate the HierarchyNavigatorRefreshButtonClick event.
 
-![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)
+![Using-the-Refresh-button_images1](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)
 
 {% tabs %}
 {% highlight xaml %}

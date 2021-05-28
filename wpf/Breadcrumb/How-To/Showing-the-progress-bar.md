@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Showing the progress bar| Hierarchical Navigator | Wpf | Syncfusion
-description: showing the progress bar
+description: Showing the progress bar in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
- documentation: ug
+documentation: ug
 ---
 
 ## Showing the progress bar

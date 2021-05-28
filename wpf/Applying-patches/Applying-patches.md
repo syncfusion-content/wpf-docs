@@ -4,7 +4,7 @@ title: Apply the Patch for Major\Service Pack Version | Syncfusion
 description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio.
 platform: wpf
 control: Essential Studio
- documentation: ug
+documentation: ug
 ---
 
 # Applying the Patches
