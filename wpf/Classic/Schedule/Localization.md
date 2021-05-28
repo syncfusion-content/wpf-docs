@@ -14,7 +14,7 @@ Localization is the process of customizing the user interface based on a culture
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The Scheduler supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
 ## Set Current UI Culture to the Application
-Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx)
+Application culture can be changed by setting [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture)
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ public MainWindow()
 To localize the Scheduler based on `CurrentUICulture` using resource files, follow the below steps. 
 
 1.Create new folder and named as **Resources** in your application. 
-2.Add the default resource file of Scheduler into **Resources** folder. You can download the Syncfusion.SfSchedule.WPF.resx [here](https://github.com/syncfusion/wpf-demos/blob/master/Schedule/Localization/CS/Resources/Syncfusion.SfSchedule.WPF.resx).
+2.Add the default resource file of Scheduler into **Resources** folder. You can download the Syncfusion.SfSchedule.WPF.resx [here](https://github.com/syncfusion/wpf-demos/blob/master/scheduler/Properties/Resources.resx).
 
 ![Addition of default resource file of WPF Scheduler into Resources folder](Localization_images/Localization_img1.png)
 
@@ -57,4 +57,4 @@ To localize the Scheduler based on `CurrentUICulture` using resource files, foll
 
 ![Shows the localized in French for WPF Scheduler](Localization_images/Localization.png)
 
-You can get the sample from [here](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/Localization/CS)
+You can get the sample from [here](https://github.com/syncfusion/wpf-demos/tree/master/scheduler)

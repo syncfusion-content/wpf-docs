@@ -564,7 +564,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 <Window x:Class="ItemTemplateSample.MainWindow"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf# "")
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 syncfusion:SkinStorage.VisualStyle="Metro"
 Title="MainWindow" Height="350" Width="525">
 <Window.Resources>
