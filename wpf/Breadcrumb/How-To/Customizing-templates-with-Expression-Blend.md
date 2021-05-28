@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing templates with Expression Blend| Hierarchical Navigator | Wpf | Syncfusion
-description: customizing templates with expression blend
+title: Customizing templates in WPF Hierarchical Navigator | Syncfusion
+description: Customizing templates with expression blend in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
@@ -15,29 +15,29 @@ The steps to customize templates by using Expression Blend are as follows:
 
    The following are the default resources, which are used for HierarchyNavigator control that can be changed in Expression Blend.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img1.png)
+   ![Customizing-templates-Image1](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img1.png)
 
 
 
 2. Right-click the HierarchyNavigator control and select Edit, then select Style, and type a name.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img2.png)
+   ![Customizing-templates-Image2](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img2.png)
 
 
 
 3. Right-click the HierarchyNavigatorItemsControl and select Edit, then select Template, and then select Edit a Copy, to edit the Refresh button, the History button, or the overall content. Additional styles (templates) can be used to edit a template available in the HierarchyNavigatorItemsControl class.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img3.png)
+   ![Customizing-templates-Image3](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img3.png)
 
 
 
 4. Right-click the Part_HierarchyNavigatorItemsControl and select Edit, and then select Additional Templates. A list of additional styles to edit will be displayed. Figure 40 displays the style names.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img4.png)
+   ![Customizing-templates-Image4](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img4.png)
 
 
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img5.png)
+   ![Customizing-templates-Image5](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img5.png)
 
 
 
@@ -45,13 +45,13 @@ The steps to customize templates by using Expression Blend are as follows:
 6. For example, the HierarchyNavigatorItem control has two states: Normal and MouseOver. This is available on the States window, which can be accessed by clicking the Window menu and selecting States.
 
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img6.png)
+   ![Customizing-templates-Image6](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img6.png)
 
 
 
 7. Click the Visual State name, to edit the storyboard.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png)
+   ![Customizing-templates-Image7](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png)
 
 
 
@@ -103,13 +103,13 @@ The steps to customize sample styles are as follows:
 
 4. Right-click the PART_HierarchyNavigatorItemsControl and select Edit Additional Templates, then select Edit Generated Item Container (ItemContainerStyle), and select Edit a Copy, to edit the item-container style.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img8.png)
+   ![Customizing-templates-Image8](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img8.png)
 
 
 
 5. In the Create Style Resource dialog box, type the style name.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png)
+   ![Customizing-templates-Image9](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png)
 
 
 
@@ -526,11 +526,11 @@ The XAML displayed below is used to customize the item-container style.
 
 Each part of a template can be edited. In the output for the above style, as shown in Figure 47 the background has been changed to a gradient and the down arrow has been changed to a square.
 
-![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img10.png)
+![Customizing-templates-Image10](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img10.png)
 
 
 
-![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img11.png)
+![Customizing-templates-Image11](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img11.png)
 
 
 
