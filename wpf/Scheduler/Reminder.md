@@ -10,7 +10,7 @@ documentation: ug
 Scheduler alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for the reminder appointments.
 
 ## Enable reminder
-Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property is `true.` The reminder time can be set using the [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
+Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true.` The reminder time can be set using the [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ Reminder can be set by setting the [EnableReminder](https://help.syncfusion.com/
 
 
 ## Adding reminders
-You can configure the appointment reminders with [SchedulerReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html). The `SchedulerReminder` has the following properties for reminder alert,
+Configure the appointment reminders with [SchedulerReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html). The `SchedulerReminder` has the following properties for reminder alert,
 
 <table>
 <tr>
@@ -88,7 +88,7 @@ You can configure the appointment reminders with [SchedulerReminder](https://hel
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-reminders-wpf-scheduler)
 
 ## Creating business object for reminder  
-`Reminders` supports to map your custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
+`Reminders` supports to map the custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
 
 {% tabs %}
 {% highlight c#%}
@@ -118,7 +118,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-rem
 {% endhighlight %}
 {% endtabs %}
 
-The [ReminderMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html) provides the mapping information about the [SchedulerReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) properties to the `Data` object.ReminderMapping has the following properties for reminder alert,
+The [ReminderMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html) provides the mapping information about the [SchedulerReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) properties to the `Data` object. ReminderMapping has the following properties for reminder alert,
 
 * [ReminderTimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html#Syncfusion_UI_Xaml_Scheduler_ReminderMapping_ReminderTimeInterval) - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.ReminderTimeInterval.`
 * [IsDismissed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html#Syncfusion_UI_Xaml_Scheduler_ReminderMapping_IsDismissed) - Maps the property name of custom class, which is equivalent for the `SchedulerReminder.IsDismissed.`
@@ -145,7 +145,7 @@ public class Reminder
 {% endhighlight %}
 {% endtabs %}
 
-You can map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping.`
+Map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with `SchedulerReminder` by using the `ReminderMapping.`
 
 {% tabs %}
 {% highlight xaml %}
