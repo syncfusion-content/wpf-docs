@@ -4,7 +4,7 @@ title: Data Markers in WPF Charts control | Syncfusion
 description: Learn here all about Data Markers support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
-documentation: ug
+ documentation: ug
 ---
 
 # Data Markers in WPF Charts (SfChart)

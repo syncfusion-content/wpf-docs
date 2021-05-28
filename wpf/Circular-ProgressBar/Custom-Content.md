@@ -4,7 +4,7 @@ title: Custom Content in WPF circular progressbar control | Syncfusion
 description: Learn here all about Custom Content support in Syncfusion WPF circular progressbar (SfCircularProgressBar) control and more.
 platform: WPF
 control: SfCircularProgressBar
-documentation: ug
+ documentation: ug
 ---
 
 # Custom Content in WPF circular progressbar (SfCircularProgressBar)

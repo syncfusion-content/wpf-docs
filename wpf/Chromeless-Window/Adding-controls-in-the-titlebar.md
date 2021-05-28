@@ -4,7 +4,7 @@ title: Adding controls in the Title bar in WPF Chromeless Window | Syncfusion
 description: Learn about Adding controls in the Title bar support in Syncfusion WPF Chromeless Window control and more.
 platform: wpf
 control: ChromelessWindow
-documentation: ug
+ documentation: ug
 ---
 # Adding controls in the Title bar in WPF Chromeless Window
 

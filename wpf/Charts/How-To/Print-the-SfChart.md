@@ -4,7 +4,7 @@ title: Print the SfChart| SfChart | Wpf | Syncfusion
 description: print the sfchart
 platform: wpf
 control: SfChart
-documentation: ug
+ documentation: ug
 ---
 
 ## Print the SfChart

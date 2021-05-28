@@ -4,7 +4,7 @@ title: Serialization in WPF Charts control | Syncfusion
 description: Learn here all about Serialization support in Syncfusion WPF Charts (SfChart) control, its elements and more details.
 platform: wpf
 control: SfChart
-documentation: ug
+ documentation: ug
 ---
 
 # Serialization in WPF Charts (SfChart)

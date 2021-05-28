@@ -4,7 +4,7 @@ title: Data Binding and Customization in WPF Card View control | Syncfusion
 description: Learn about Data Binding and Customization support in Syncfusion WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
-documentation: ug
+ documentation: ug
 ---
 
 # Data Binding and Customization in WPF Card View

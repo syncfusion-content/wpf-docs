@@ -4,7 +4,7 @@ title: Localization in WPF Card View control | Syncfusion
 description: Learn about Localization support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
-documentation: ug
+ documentation: ug
 ---
 
 # Localization in WPF Card View

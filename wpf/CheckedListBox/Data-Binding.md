@@ -4,7 +4,7 @@ title: Data Binding | CheckListBox | wpf | Syncfusion
 description: data binding
 platform: wpf
 control: CheckListBox
-documentation: ug
+ documentation: ug
 ---
 
 # Data Binding

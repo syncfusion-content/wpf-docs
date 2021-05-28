@@ -4,7 +4,7 @@ title: Change SelectedItem position of the Carousel control for WPF
 description: Change SelectedItem position of the Carousel control for WPF
 platform: wpf
 control: Carousel
-documentation: ug
+ documentation: ug
 ---
 
 ## Change SelectedItem Position

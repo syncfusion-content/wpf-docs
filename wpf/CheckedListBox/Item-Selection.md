@@ -4,7 +4,7 @@ title: Item Selection | CheckListBox | wpf | Syncfusion
 description: item selection
 platform: wpf
 control: CheckListBox
-documentation: ug
+ documentation: ug
 ---
 
 # Item Selection

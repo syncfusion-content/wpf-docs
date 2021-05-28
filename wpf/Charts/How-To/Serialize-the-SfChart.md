@@ -4,7 +4,7 @@ title: Serialize the SfChart| SfChart | Wpf | Syncfusion
 description: serialization and deserialization
 platform: wpf
 control: SfChart
-documentation: ug
+ documentation: ug
 ---
 
 # Serialization and Deserialization:

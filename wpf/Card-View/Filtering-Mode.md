@@ -4,7 +4,7 @@ title: Filtering Mode in WPF Card View control | Syncfusion
 description: Learn about Filtering Mode support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
-documentation: ug
+ documentation: ug
 ---
 
 # Filtering Mode in WPF Card View

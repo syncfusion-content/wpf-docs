@@ -4,7 +4,7 @@ title: TitleBarCustomButtons | ChromelessWindow | WPF | Syncfusion
 description: How to use customs buttons on title bar of chromeless window in WPF.
 platform: WPF
 control: ChromelessWindow
-documentation: ug
+ documentation: ug
 ---
 
 #  TitleBarCustomButtons

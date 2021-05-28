@@ -4,7 +4,7 @@ title: Getting Started with WPF Chromeless Window control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: WPF
 control: ChromelessWindow
-documentation: ug
+ documentation: ug
 ---
 # Getting Started with WPF Chromeless Window
 

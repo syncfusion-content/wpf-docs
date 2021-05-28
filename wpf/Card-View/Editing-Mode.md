@@ -4,7 +4,7 @@ title: Editing Mode in WPF Card View control | Syncfusion
 description: Learn about Editing Mode support in Syncfusion Essential Studio WPF Card View control, its elements and more details.
 platform: wpf
 control: CardView
-documentation: ug
+ documentation: ug
 ---
 
 # Editing Mode in WPF Card View

@@ -4,7 +4,7 @@ title: Layout Related Features | CheckListBox | wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: CheckListBox
-documentation: ug
+ documentation: ug
 ---
 
 # Layout Related Features

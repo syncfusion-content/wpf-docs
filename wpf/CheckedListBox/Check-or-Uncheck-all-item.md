@@ -4,7 +4,7 @@ title: Check or uncheck all items in WPF CheckedListBox control | Syncfusion
 description: Learn here all about Check or uncheck all items support in Syncfusion WPF CheckedListBox (CheckListBox) control and more.
 platform: wpf
 control: CheckListBox
-documentation: ug
+ documentation: ug
 ---
 
 # Check or uncheck all items in WPF CheckedListBox (CheckListBox)

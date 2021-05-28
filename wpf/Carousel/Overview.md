@@ -4,7 +4,7 @@ title: About WPF Carousel control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Carousel control, its elements and more details.
 platform: wpf
 control: Carousel
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Carousel Overview

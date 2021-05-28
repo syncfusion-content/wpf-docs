@@ -4,7 +4,7 @@ title: About WPF Chromeless Window control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Chromeless Window control, its elements and more details.
 platform: wpf
 control: ChromelessWindow
-documentation: ug
+ documentation: ug
 ---
 # WPF Chromeless Window Overview
 

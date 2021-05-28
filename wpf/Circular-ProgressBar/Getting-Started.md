@@ -4,7 +4,7 @@ title: Getting Started with WPF Circular ProgressBar control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Circular ProgressBar (SfCircularProgressBar) control, its elements and more details.
 platform: WPF
 control: SfCircularProgressBar
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Circular ProgressBar (SfCircularProgressBar)
