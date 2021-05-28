@@ -1782,7 +1782,7 @@ The CustomFormatString property is used to specify the format of the date-time t
 
 The available standard date and time format strings are explained in the following link:
 
-(https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)
+[https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)
 
 
 {% highlight c# %}
