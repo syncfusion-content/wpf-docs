@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change SelectedItem position of the Carousel control for WPF
-description: Change SelectedItem position of the Carousel control for WPF
+title: Change SelectedItem position in WPF Carousel control | Syncfusion
+description: Change SelectedItem position of the Syncfusion Essential Studio WPF Carousel control, its elements and more.
 platform: wpf
 control: Carousel
 documentation: ug
@@ -117,6 +117,6 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](ChangeSelectedItemPosition_images/ChangeSelectedItemPosition_img1.jpeg)
+![ChangeSelectedItemPosition_images1](ChangeSelectedItemPosition_images/ChangeSelectedItemPosition_img1.jpeg)
 
 

@@ -40,7 +40,7 @@ Coded UI provides support only in,
 * Visual Studio Enterprise
 * Visual Studio Ultimate
 
-For more info about the platforms and configurations refer [here](https://msdn.microsoft.com/en-us/library/dd380742)
+For more info about the platforms and configurations refer [here](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015)
 
 ## Configuration
 
@@ -60,7 +60,7 @@ For Visual Studio 2012: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
 
-N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
+N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)) _installation.
 
 ## Getting Started
 
