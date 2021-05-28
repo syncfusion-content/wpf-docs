@@ -66,7 +66,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img1](Export-To-Excel_images/Export-To-Excel_img1.jpeg)
+![WPF TreeGrid Data Exporting to Excel without Outlines](Export-To-Excel_images/wpf-treegrid-export-to-excel.jpeg)
 
 ### Exclude columns when exporting
 
@@ -229,7 +229,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img2](Export-To-Excel_images/Export-To-Excel_img2.jpeg)
+![Changing Row and Column Index while Exporting from WPF TreeGrid to Excel](Export-To-Excel_images/wpf-treegrid-change-row-column-index.jpeg)
 
 ## Save options
 
@@ -328,7 +328,7 @@ window1.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img3](Export-To-Excel_images/Export-To-Excel_img3.jpeg)
+![WPF TreeGrid Data Exporting to Spreadsheet without Saving](Export-To-Excel_images/wpf-treegrid-export-to-spreadsheet.jpeg)
 
 ## Export to HTML
 
@@ -480,7 +480,7 @@ private static void ExportingHandler(object sender, TreeGridExcelExportingEventA
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img4](Export-To-Excel_images/Export-To-Excel_img4.jpeg)
+![Customizing Cell Style in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-cell-style-customization.jpeg)
 
 ### Customize the exporting content to Excel 
 
@@ -514,7 +514,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img5](Export-To-Excel_images/Export-To-Excel_img5.jpeg)
+![Customizing Exported WPF TreeGrid Content to Excel](Export-To-Excel_images/wpf-treegrid-export-customization.jpeg)
 
 Here, the cell values changed for the IsClosed column are based on the custom condition.
 
@@ -546,7 +546,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img6](Export-To-Excel_images/Export-To-Excel_img6.jpeg)
+![Changing Row Style in Excel Sheet based on WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-row-style.jpeg)
 
 ### Customize the cells based on column name
 
@@ -574,7 +574,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img7](Export-To-Excel_images/Export-To-Excel_img7.jpeg)
+![Customizing Cells based on Column in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-column-cell-customization.jpeg)
 
 ## Customize exported workbook and worksheet
 
@@ -596,7 +596,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img8](Export-To-Excel_images/Export-To-Excel_img8.jpeg)
+![Changing Cell Border Style in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-cell-border-style.jpeg)
 
 ### Enable filters
 
@@ -613,7 +613,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img9](Export-To-Excel_images/Export-To-Excel_img9.jpeg)
+![Displaying Filter in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-filter.jpeg)
 
 When using the `stacked headers`, you can specify the `range` based on the stacked headers count.
 
@@ -647,7 +647,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img10](Export-To-Excel_images/Export-To-Excel_img10.jpeg)
+![Customizing Range of Cells in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-range-of-cells.jpeg)
 
 ## Performance
 
@@ -673,7 +673,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img11](Export-To-Excel_images/Export-To-Excel_img11.jpeg)
+![Formatting Column in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-column-formatting.jpeg)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -702,7 +702,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-Excel_img12](Export-To-Excel_images/Export-To-Excel_img12.jpeg)
+![Changing Style of Alternate Rows in Exported WPF TreeGrid Data](Export-To-Excel_images/wpf-treegrid-changing-row-style.jpeg)
 
 ## How to
 
