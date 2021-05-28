@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apply Skin for Hierarchy Navigator Control| Hierarchical Navigator | Wpf | Syncfusion
-description: apply skin for hierarchy navigator control
+title: Apply Skin for WPF Hierarchy Navigator Control | Syncfusion
+description: Apply skin for Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements, features and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
