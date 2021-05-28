@@ -4,7 +4,7 @@ title: Setting a ToolTip programmatically| Hierarchical Navigator | Wpf | Syncfu
 description: setting a tooltip programmatically
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Setting a ToolTip programmatically

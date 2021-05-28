@@ -4,7 +4,7 @@ title: Apply Skin for Hierarchy Navigator Control| Hierarchical Navigator | Wpf 
 description: apply skin for hierarchy navigator control
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Apply Skin for Hierarchy Navigator Control

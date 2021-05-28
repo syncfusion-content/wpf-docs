@@ -4,7 +4,7 @@ title: Tooltip| Hierarchical Navigator | Wpf | Syncfusion
 description: tooltip
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 # Tooltip

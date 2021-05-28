@@ -4,7 +4,7 @@ title: Selecting Items in WPF Accordion control | Syncfusion
 description: Learn here all about Selecting Items support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
-documentation: ug
+ documentation: ug
 ---
 
 # Selecting Items in WPF Accordion (SfAccordion)

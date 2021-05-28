@@ -4,7 +4,7 @@ title: Using the Refresh button| Hierarchical Navigator | Wpf | Syncfusion
 description: using the refresh button
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Using the Refresh button

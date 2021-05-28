@@ -4,7 +4,7 @@ title: Customizing templates with Expression Blend| Hierarchical Navigator | Wpf
 description: customizing templates with expression blend
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Customizing templates with Expression Blend

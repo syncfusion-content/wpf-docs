@@ -4,7 +4,7 @@ title: Adding items to the HierarchyNavigator control| Hierarchical Navigator | 
 description: adding items to the hierarchynavigator control
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Adding items to the HierarchyNavigator control

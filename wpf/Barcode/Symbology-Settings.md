@@ -4,7 +4,7 @@ title: Symbology Settings in WPF Barcode control | Syncfusion
 description: Learn here all about Symbology Settings support in Syncfusion WPF Barcode (SfBarcode) control and more.
 platform: wpf
 control: SfBarcode
-documentation: ug
+ documentation: ug
 ---
 
 # Symbology Settings in WPF Barcode (SfBarcode)

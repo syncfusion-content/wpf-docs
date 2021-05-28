@@ -4,7 +4,7 @@ title: Selected Hierarchy Navigator Item Changed| Hierarchical Navigator | Wpf |
 description: selected hierarchy navigator item changed
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Selected Hierarchy Navigator Item Changed

@@ -4,7 +4,7 @@ title: Quantitative Scale in WPF Bullet Graph control | Syncfusion
 description: Learn here all about Quantitative Scale support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
-documentation: ug
+ documentation: ug
 ---
 
 # Quantitative Scale in WPF Bullet Graph (SfBulletGraph)

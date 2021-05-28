@@ -4,7 +4,7 @@ title: Tooltip in WPF Bullet Graph control | Syncfusion
 description: Learn here all about Tooltip support in Syncfusion WPF Bullet Graph (SfBulletGraph) control and more.
 platform: wpf
 control: SfBulletGraph
-documentation: ug
+ documentation: ug
 ---
 
 # Tooltip in WPF Bullet Graph (SfBulletGraph)

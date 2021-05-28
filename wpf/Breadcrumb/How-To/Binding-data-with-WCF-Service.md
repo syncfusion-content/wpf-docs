@@ -4,7 +4,7 @@ title: Binding data with WCF Service| Hierarchical Navigator | Wpf | Syncfusion
 description: binding data with wcf service 
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Binding data with WCF Service 

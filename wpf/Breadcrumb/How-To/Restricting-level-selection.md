@@ -4,7 +4,7 @@ title: Restricting level selection| Hierarchical Navigator | Wpf | Syncfusion
 description: restricting level selection
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Restricting level selection

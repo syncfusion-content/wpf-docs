@@ -4,7 +4,7 @@ title: Selection Mode in WPF Accordion control | Syncfusion
 description: Learn here all about Selection Mode support in Syncfusion WPF Accordion (SfAccordion) control and more.
 platform: WPF
 control: SfAccordion
-documentation: ug
+ documentation: ug
 ---
 
 # Selection Mode in WPF Accordion (SfAccordion)

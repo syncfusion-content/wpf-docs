@@ -4,7 +4,7 @@ title: Getting Started with WPF Barcode control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Barcode (SfBarcode) control, its elements and more details.
 platform: wpf
 control: SfBarcode
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Barcode (SfBarcode)

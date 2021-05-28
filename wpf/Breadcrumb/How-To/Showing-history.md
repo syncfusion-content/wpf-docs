@@ -4,7 +4,7 @@ title: Showing history| Hierarchical Navigator | Wpf | Syncfusion
 description: showing history 
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Showing history 

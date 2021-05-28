@@ -4,7 +4,7 @@ title: Dropdown customization in WPF Autocomplete control | Syncfusion
 description: Learn here all about Dropdown customization support in Syncfusion WPF Autocomplete (SfTextBoxExt) control and more.
 platform: wpf
 control: SfTextBoxExt
-documentation: ug
+ documentation: ug
 ---
 
 # Dropdown customization in WPF Autocomplete (SfTextBoxExt)

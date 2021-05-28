@@ -4,7 +4,7 @@ title: Handle Navigation Popup Events| Hierarchical Navigator | Wpf | Syncfusion
 description: handle navigation popup events 
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Handle Navigation Popup Events 

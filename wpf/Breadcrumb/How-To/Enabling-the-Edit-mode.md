@@ -4,7 +4,7 @@ title: Enabling the Edit mode| Hierarchical Navigator | Wpf | Syncfusion
 description: enabling the edit mode
 platform: wpf
 control: Hierarchical Navigator
-documentation: ug
+ documentation: ug
 ---
 
 ## Enabling the Edit mode
