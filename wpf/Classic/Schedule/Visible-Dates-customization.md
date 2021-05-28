@@ -4,7 +4,7 @@ title: Visible-Dates-customization in WPF Wizard Control control | Syncfusion
 description: Learn here all about Visible-Dates-customization support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
-documentation: ug
+ documentation: ug
 ---
 
 # Visible-Dates-customization in WPF Schedule (Classic)

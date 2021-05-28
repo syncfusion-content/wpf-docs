@@ -4,7 +4,7 @@ title: Chart-Labels in WPF Chart Control | Syncfusion
 description: Learn here all about Chart-Labels support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Chart-Labels in WPF Chart (Classic)
 

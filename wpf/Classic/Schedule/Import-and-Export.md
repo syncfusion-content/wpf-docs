@@ -4,7 +4,7 @@ title: Import-and-Export in WPF Wizard Control control | Syncfusion
 description: Learn here all about Import-and-Export support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
-documentation: ug
+ documentation: ug
 ---
 
 # Import-and-Export in WPF Schedule (Classic)

@@ -4,7 +4,7 @@ title: About WPF Chart Control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Chart (Classic) Overview

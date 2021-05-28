@@ -4,7 +4,7 @@ title: Selection Mode Support in WPF AutoComplete Control | Syncfusion
 description: Learn here all about Selection Mode Support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
-documentation: ug
+ documentation: ug
 ---
 
 # Selection Mode Support in WPF AutoComplete (Classic)

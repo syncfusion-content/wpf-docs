@@ -4,7 +4,7 @@ title: About WPF TreeViewAdv Control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF TreeViewAdv (Classic) control, its elements and more.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # WPF TreeViewAdv (Classic) Overview
 

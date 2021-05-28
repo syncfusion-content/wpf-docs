@@ -4,7 +4,7 @@ title: User-Interaction in WPF Chart Control | Syncfusion
 description: Learn here all about User-Interaction support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # User-Interaction in WPF Chart (Classic)
 

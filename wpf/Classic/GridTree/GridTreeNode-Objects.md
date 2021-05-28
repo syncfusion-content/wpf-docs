@@ -4,7 +4,7 @@ title: GridTreeNode Objects in WPF Wizard Control control | Syncfusion
 description: Learn here all about GridTreeNode Objects support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
-documentation: ug
+ documentation: ug
 ---
 
 # GridTreeNode Objects in WPF GridTreeControl (Classic)

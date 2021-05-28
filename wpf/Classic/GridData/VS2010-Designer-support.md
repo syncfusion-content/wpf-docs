@@ -4,7 +4,7 @@ title: VS2010-Designer-support in WPF GridData Control | Syncfusion
 description: Learn here all about VS2010-Designer-support in Syncfusion WPF GridDataControl (Classic) control, its elements and more.
 platform: wpf
 control: GridData (Classic)
-documentation: ug
+ documentation: ug
 ---
 
 # VS2010-Designer-support in WPF GridDataControl (Classic)

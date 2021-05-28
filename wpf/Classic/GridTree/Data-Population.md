@@ -4,7 +4,7 @@ title: Data Population in WPF Wizard Control control | Syncfusion
 description: Learn here all about Data Population support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
-documentation: ug
+ documentation: ug
 ---
 
 # Data Population in WPF GridTreeControl (Classic)

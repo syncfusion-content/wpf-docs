@@ -4,7 +4,7 @@ title: Set and Override Visual Style in SkinStorage | Wpf | Syncfusion
 description: Learn here all about Set and Override Visual Style at Application Level support in Syncfusion WPF SkinStorage (Classic) control and more.
 platform: wpf
 control: SkinStorage
-documentation: ug
+ documentation: ug
 ---
 
 # Set and Override Visual Style in SkinStorage

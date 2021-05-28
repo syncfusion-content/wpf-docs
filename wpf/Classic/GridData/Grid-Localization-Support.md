@@ -4,7 +4,7 @@ title: Grid-Localization-Support in WPF Wizard Control control | Syncfusion
 description: Learn here all about Localization support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Grid-Localization-Support in WPF GridDataControl (Classic)
 

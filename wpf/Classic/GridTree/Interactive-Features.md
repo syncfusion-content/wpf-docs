@@ -4,7 +4,7 @@ title: Interactive Features in WPF Wizard Control control | Syncfusion
 description: Learn here all about Interactive Features support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
-documentation: ug
+ documentation: ug
 ---
 
 # Interactive Features in WPF GridTreeControl (Classic)

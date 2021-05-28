@@ -4,7 +4,7 @@ title: Styles in WPF TreeViewAdv Control | Syncfusion
 description: Learn here all about Styles support in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # Styles in WPF TreeViewAdv (Classic)
 

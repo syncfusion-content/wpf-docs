@@ -4,7 +4,7 @@ title: Override Syncfusion Themes| SkinStorage | Wpf | Syncfusion
 description: Learn here all about Override Syncfusion Themes support in Syncfusion WPF SkinStorage (Classic) control and more.
 platform: wpf
 control: SkinStorage
-documentation: ug
+ documentation: ug
 ---
 
 # Override Syncfusion Themes in WPF SkinStorage (Classic)

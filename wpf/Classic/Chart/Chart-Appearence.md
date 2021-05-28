@@ -4,7 +4,7 @@ title: Chart Appearance
 description: Chart Appearance
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Chart Appearance
 

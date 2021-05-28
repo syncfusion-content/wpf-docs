@@ -4,7 +4,7 @@ title: Root lines for Items in WPF TreeViewAdv | Syncfusion
 description: Learn here all about Root lines for Items in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # Root lines for Items in WPF TreeViewAdv (Classic)
 

@@ -4,7 +4,7 @@ title: About WPF GridData Control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)
-documentation: ug
+ documentation: ug
 ---
 
 # WPF GridDataControl (Classic) Overview

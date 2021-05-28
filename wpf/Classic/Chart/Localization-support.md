@@ -4,7 +4,7 @@ title: Localization Support in WPF Chart Control | Syncfusion
 description: Learn here all about Localization Support in Syncfusion WPF Chart (Classic) control, its elements and more.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Localization Support in WPF Chart (Classic)
 

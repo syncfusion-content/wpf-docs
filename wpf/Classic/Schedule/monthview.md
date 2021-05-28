@@ -4,7 +4,7 @@ title: Month View in WPF SfSchedule Control | Syncfusion
 description: Learn here all about Month View support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
-documentation: ug
+ documentation: ug
 ---
 
 # Month View in WPF Schedule (Classic)

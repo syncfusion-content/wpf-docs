@@ -4,7 +4,7 @@ title: Data Management in WPF Wizard Control control | Syncfusion
 description: Learn here all about Data Management support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Data Management in WPF SpreadsheetControl (Classic)

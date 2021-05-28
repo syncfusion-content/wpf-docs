@@ -4,7 +4,7 @@ title: Data Model in WPF GridData Control | Syncfusion
 description: Learn here all about Data Model support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
-documentation: ug
+ documentation: ug
 ---
 
 # Data Model in WPF GridDataControl (Classic)

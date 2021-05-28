@@ -4,7 +4,7 @@ title: Getting Started with WPF RichTextBoxAdv Control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more details.
 platform: wpf
 control: RichTextBoxAdv
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF RichTextBoxAdv (Classic)

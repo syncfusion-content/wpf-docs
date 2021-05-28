@@ -4,7 +4,7 @@ title: Open and Save Excel Document in WPF Spreadsheet Control | Syncfusion
 description: Learn here all about Open and Save Excel Document support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Open and Save Excel Document in WPF SpreadsheetControl (Classic)

@@ -4,7 +4,7 @@ title: Formatting in WPF Wizard Control control | Syncfusion
 description: Learn here all about Formatting support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
-documentation: ug
+ documentation: ug
 ---
 
 # Formatting in WPF SpreadsheetControl (Classic)

@@ -4,7 +4,7 @@ title: Behaviour-Changes
 description: behaviour changes
 platform: wpf
 control: Diagram
-documentation: ug
+ documentation: ug
 ---
 
 # Behavior Changes

@@ -4,7 +4,7 @@ title: Architecture in WPF Wizard Control control | Syncfusion
 description: Learn here all about Architecture support in Syncfusion WPF GridTreeControl (Classic) control and more.
 platform: wpf
 control: GridTree 
-documentation: ug
+ documentation: ug
 ---
 
 # Architecture in WPF GridTreeControl (Classic)

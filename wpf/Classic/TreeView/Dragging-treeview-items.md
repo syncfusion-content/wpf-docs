@@ -4,7 +4,7 @@ title: Dragging TreeView items in WPF Wizard Control control | Syncfusion
 description: Learn here all about Dragging TreeView items support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # Dragging TreeView items in WPF TreeViewAdv (Classic)
 

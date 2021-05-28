@@ -4,7 +4,7 @@ title: Getting Started with WPF SfSchedule Control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Schedule (Classic)

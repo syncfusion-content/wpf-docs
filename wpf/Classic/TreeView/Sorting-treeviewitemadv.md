@@ -4,7 +4,7 @@ title: Sorting TreeViewItemAdv in WPF Wizard Control control | Syncfusion
 description: Learn here all about Sorting TreeViewItemAdv support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # Sorting TreeViewItemAdv in WPF TreeViewAdv (Classic)
 

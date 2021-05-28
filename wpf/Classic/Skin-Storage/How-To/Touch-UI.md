@@ -4,7 +4,7 @@ title: Touch UI| SkinStorage | Wpf | Syncfusion
 description: Learn here all about Touch UI support in Syncfusion WPF SkinStorage (Classic) control, its elements and more.
 platform: wpf
 control: SkinStorage
-documentation: ug
+ documentation: ug
 ---
 
 # Touch UI in WPF SkinStorage (Classic)

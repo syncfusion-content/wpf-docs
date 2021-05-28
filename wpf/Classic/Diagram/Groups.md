@@ -4,7 +4,7 @@ title: Groups in WPF Diagram Control | Syncfusion
 description: Learn here all about Groups support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
-documentation: ug
+ documentation: ug
 ---
 
 # Groups in WPF Diagram (classic)

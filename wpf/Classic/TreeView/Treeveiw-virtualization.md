@@ -4,7 +4,7 @@ title: TreeViewVirtualization in WPF Wizard Control control | Syncfusion
 description: Learn here all about TreeViewVirtualization support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
-documentation: ug
+ documentation: ug
 ---
 # TreeViewVirtualization in WPF TreeViewAdv (Classic)
 

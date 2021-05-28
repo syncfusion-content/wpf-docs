@@ -4,7 +4,7 @@ title: Design Time Support in WPF Chart Control | Syncfusion
 description: Learn here all about Design Time Support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Design Time Support in WPF Chart (Classic)
 

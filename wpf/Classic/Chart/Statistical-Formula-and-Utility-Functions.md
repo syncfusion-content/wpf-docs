@@ -4,7 +4,7 @@ title: Statistical Formula and Utility Functions in WPF Chart | Syncfusion
 description: Learn here all about Statistical-Formula-and-Utility-Functions support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 # Statistical Formula and Utility Functions in WPF Chart (Classic)
 

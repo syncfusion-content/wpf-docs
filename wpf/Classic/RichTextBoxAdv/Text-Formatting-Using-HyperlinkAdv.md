@@ -4,7 +4,7 @@ title: Text Formatting Using HyperlinkAdv in WPF RichTextBoxAdv | Syncfusion
 description: Learn here all about Text Formatting Using HyperlinkAdv support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
-documentation: ug
+ documentation: ug
 ---
 
 # Text Formatting Using HyperlinkAdv in WPF RichTextBoxAdv (Classic)

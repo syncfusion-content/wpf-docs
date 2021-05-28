@@ -4,7 +4,7 @@ title: Getting Started with WPF GridTree Control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF GridTreeControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridTree
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF GridTreeControl (Classic)

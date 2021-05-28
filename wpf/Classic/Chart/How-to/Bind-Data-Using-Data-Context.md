@@ -4,7 +4,7 @@ title: Bind Data Using Data Context | wpf | Syncfusion
 description: Learn here all about Bind Data Using Data Context support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
-documentation: ug
+ documentation: ug
 ---
 
 ## Bind Data Using Data Context
