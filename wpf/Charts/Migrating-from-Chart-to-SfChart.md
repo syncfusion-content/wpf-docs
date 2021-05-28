@@ -23,7 +23,7 @@ The following code example illustrates xmlns namespace for Chart. You can includ
 
 {% highlight xaml %}
 
-xmlns:syncfusion=[https://schemas.syncfusion.com/wpf](https://schemas.syncfusion.com/wpf)
+xmlns:syncfusion="https://schemas.syncfusion.com/wpf"
 
 
 {% endhighlight %}

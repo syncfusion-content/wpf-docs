@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout Related Features | CheckListBox | wpf | Syncfusion
-description: layout related features
+description: Layout related features in Syncfusion Essential Studio WPF CheckListBox control, its elements and more.
 platform: wpf
 control: CheckListBox
 documentation: ug
