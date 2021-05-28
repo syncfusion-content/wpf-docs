@@ -254,7 +254,7 @@ To create a tree view using data binding, set a hierarchical data collection to 
 {% endhighlight %}
 {% endtabs %}
 
-![Populating Nodes by data binding](DataPopulation_images/DataPopulation_images1.png)
+![Populating Nodes by data binding](DataPopulation_images/wpf-treeview-populating-nodes-by-data-binding.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-populate-nodes-with-binding-to-a-data-in-wpf-treeview).
 
@@ -320,6 +320,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 {% endhighlight %}
 {% endtabs %}
 
-![Populating nodes without data source in SfTreeView ](DataPopulation_images/DataPopulation_images2.png)
+![Populating nodes without data source in SfTreeView ](DataPopulation_images/wpf-treeview-populating-nodes-without-data-source.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-populate-nodes-without-binding-data-as-unbound-mode-in-wpf-treeview).
