@@ -4,7 +4,7 @@ title: Chart-Series in WPF Chart Control | Syncfusion
 description: Learn here all about Chart-Series support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 # Chart-Series in WPF Chart (Classic)
 

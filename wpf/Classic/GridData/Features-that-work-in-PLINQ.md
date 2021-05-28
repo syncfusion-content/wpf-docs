@@ -4,7 +4,7 @@ title: Features-that-work-in-PLINQ in WPF Wizard Control control | Syncfusion
 description: Learn here all about Features-that-work-in-PLINQ support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
- documentation: ug
+documentation: ug
 ---
 # Features-that-work-in-PLINQ in WPF GridDataControl (Classic)
 

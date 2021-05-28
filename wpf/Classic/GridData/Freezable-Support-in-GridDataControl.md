@@ -4,7 +4,7 @@ title: Freezable Support in WPF GridData Control | Syncfusion
 description: Learn here all about Freezable Support in Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)
- documentation: ug
+documentation: ug
 ---
 # Freezable Support in WPF GridDataControl (Classic)
 

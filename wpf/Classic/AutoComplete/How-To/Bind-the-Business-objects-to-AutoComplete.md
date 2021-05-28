@@ -4,7 +4,7 @@ title: Bind the Business objects to AutoComplete | wpf | Syncfusion
 description: Learn here all about Bind the Business objects to AutoComplete support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
- documentation: ug
+documentation: ug
 ---
 
 # Bind the Business objects in WPF AutoComplete (Classic)

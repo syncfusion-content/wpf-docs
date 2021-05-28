@@ -4,7 +4,7 @@ title: About WPF RichTextBoxAdv Control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more details.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # WPF RichTextBoxAdv (Classic) Overview

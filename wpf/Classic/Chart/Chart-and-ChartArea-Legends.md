@@ -4,7 +4,7 @@ title: Chart and ChartArea Legends in WPF Chart Control | Syncfusion
 description: Learn here all about Chart and ChartArea Legends support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 # Chart and ChartArea Legends in WPF Chart (Classic)
 

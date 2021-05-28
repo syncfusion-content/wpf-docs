@@ -4,7 +4,7 @@ title: Custom Filtration Support in WPF AutoComplete Control | Syncfusion
 description: Learn here all about Custom Filtration Support in Syncfusion WPF AutoComplete (Classic) control and more.
 platform: wpf
 control: AutoComplete
- documentation: ug
+documentation: ug
 ---
 
 # Custom Filtration Support in WPF AutoComplete (Classic)

@@ -4,7 +4,7 @@ title: Getting Started with WPF TreeViewAdv Control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF TreeViewAdv (Classic) control, its elements and more.
 platform: wpf
 control: TreeViewAdv
- documentation: ug
+documentation: ug
 ---
 # Getting Started with WPF TreeViewAdv (Classic)
 

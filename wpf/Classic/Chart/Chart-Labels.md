@@ -4,7 +4,7 @@ title: Chart-Labels in WPF Chart Control | Syncfusion
 description: Learn here all about Chart-Labels support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 # Chart-Labels in WPF Chart (Classic)
 
@@ -405,7 +405,7 @@ LegendItemsPanel</td><td>
 Sets a template panel for arranging legend items.  </td><td>
 Dependency Property</td><td>
 ItemsPanelTemplate </td><td>
-{{ '[ItemsPanelTemplate Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx)' | markdownify }}</td></tr>
+{{ '[ItemsPanelTemplate Class](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemspaneltemplate)' | markdownify }}</td></tr>
 </table>
 
 ### Customizing legend Panel

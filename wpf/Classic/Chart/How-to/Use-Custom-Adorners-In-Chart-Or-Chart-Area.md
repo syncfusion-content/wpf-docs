@@ -4,7 +4,7 @@ title: Use Custom Adorners In Chart Or Chart Area | wpf | Syncfusion
 description: Learn here all about Use Custom Adorners In Chart Or Chart Area support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 
 ## Use Custom Adorners In Chart Or Chart Area

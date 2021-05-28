@@ -4,7 +4,7 @@ title: Paragraph Alignment and Indentation in WPF RichTextBoxAdv | Syncfusion
 description: Learn here all about Paragraph Alignment and Indentation support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # Paragraph Alignment and Indentation in WPF RichTextBoxAdv (Classic)

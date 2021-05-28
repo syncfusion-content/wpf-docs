@@ -4,7 +4,7 @@ title: Line Connectors in WPF Diagram Control | Syncfusion
 description: Learn here all about Line Connectors support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
- documentation: ug
+documentation: ug
 ---
 
 # Line Connectors in WPF Diagram (classic)

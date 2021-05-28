@@ -4,7 +4,7 @@ title: Chart-Types in WPF Chart Control | Syncfusion
 description: Learn here all about Chart-Types support in Syncfusion WPF Chart (Classic) control, its elements and more details.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 # Chart-Types in WPF Chart (Classic)
 
@@ -200,7 +200,7 @@ Pen</td><td>
 Gets and sets various types of pen for drawing fastchat type. </td><td>
 Attached property for ChartFastSeriesPresenter </td><td>
 System.Drawing.Pen </td><td>
-{{ '[Pen Class](http://msdn.microsoft.com/en-us/library/system.drawing.pen.aspx)' | markdownify }}</td></tr>
+{{ '[Pen Class](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.pen)' | markdownify }}</td></tr>
 </table>
 
 ### Customizing Fastline

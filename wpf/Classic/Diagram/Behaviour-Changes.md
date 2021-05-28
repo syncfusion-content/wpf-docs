@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behaviour-Changes
-description: behaviour changes
+title: Behaviour Changes in WPF Diagram Control | Syncfusion
+description: Behaviour changes in Syncfusion Essential Studio WPF Diagram Control, its elements, features and more.
 platform: wpf
 control: Diagram
- documentation: ug
+documentation: ug
 ---
 
-# Behavior Changes
+# Behavior Changes in WPF Diagram Control
 
 The following are the changes made from version 10.1.0.44: 
 

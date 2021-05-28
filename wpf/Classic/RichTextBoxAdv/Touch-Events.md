@@ -4,7 +4,7 @@ title: Touch-Events in WPF Wizard Control control | Syncfusion
 description: Learn here all about Touch-Events support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # Touch-Events in WPF RichTextBoxAdv (Classic)

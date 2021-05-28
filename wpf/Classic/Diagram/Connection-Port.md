@@ -4,7 +4,7 @@ title: Connection Port in WPF Diagram Control | Syncfusion
 description: Learn here all about Connection Port support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
- documentation: ug
+documentation: ug
 ---
 
 # Connection Port in WPF Diagram (classic)

@@ -4,7 +4,7 @@ title: Populating with Data in WPF Wizard Control control | Syncfusion
 description: Learn here all about Populating with Data support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
- documentation: ug
+documentation: ug
 ---
 # Populating with Data in WPF TreeViewAdv (Classic)
 

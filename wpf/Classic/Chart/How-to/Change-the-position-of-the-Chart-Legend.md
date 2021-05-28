@@ -4,7 +4,7 @@ title: Change the position of the Chart Legend | wpf | Syncfusion
 description: Learn here all about Change the position of the Chart Legend support in Syncfusion WPF Chart (Classic) control and more.
 platform: wpf
 control: Chart (Classic)
- documentation: ug
+documentation: ug
 ---
 
 ## Change the position of the Chart Legend

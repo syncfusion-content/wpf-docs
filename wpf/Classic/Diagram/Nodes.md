@@ -4,7 +4,7 @@ title: Nodes in WPF Diagram Control | Syncfusion
 description: Learn here all about Nodes support in Syncfusion WPF Diagram (classic) control, its elements and more details.
 platform: wpf
 control: Diagram
- documentation: ug
+documentation: ug
 ---
 
 # Nodes in WPF Diagram (classic)

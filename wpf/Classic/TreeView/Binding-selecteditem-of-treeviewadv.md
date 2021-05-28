@@ -4,7 +4,7 @@ title: Binding SelectedItem in MVVM Pattern in WPF TreeViewAdv | Syncfusion
 description: Learn here all about Binding SelectedItem of TreeViewAdv in MVVM Pattern support in Syncfusion WPF TreeViewAdv (Classic) control and more.
 platform: wpf
 control: TreeViewAdv
- documentation: ug
+documentation: ug
 ---
 # Binding SelectedItem in MVVM Pattern in WPF TreeViewAdv (Classic)
 

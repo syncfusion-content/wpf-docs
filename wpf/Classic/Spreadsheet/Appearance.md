@@ -4,7 +4,7 @@ title: Appearance in WPF Wizard Control control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # Appearance in WPF SpreadsheetControl (Classic)

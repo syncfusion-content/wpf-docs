@@ -4,7 +4,7 @@ title: Events in WPF GridData Control | Syncfusion
 description: Learn here all about Events support in Syncfusion WPF GridDataControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridData (Classic)
- documentation: ug
+documentation: ug
 ---
 # Events in WPF GridDataControl (Classic)
 

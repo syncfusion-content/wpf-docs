@@ -4,7 +4,7 @@ title: About WPF Spreadsheet Control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF SpreadsheetControl (Classic) control, its elements and more.
 platform: wpf
 control: Spreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # WPF SpreadsheetControl (Classic) Overview

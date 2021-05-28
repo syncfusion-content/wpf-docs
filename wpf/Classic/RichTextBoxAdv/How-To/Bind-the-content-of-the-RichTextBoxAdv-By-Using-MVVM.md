@@ -4,7 +4,7 @@ title: Bind the content in RichTextBoxAdv By Using MVVM | Syncfusion
 description: Learn here all about Bind the content of the RichTextBoxAdv By Using MVVM support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # Bind the content of the WPF RichTextBoxAdv (Classic) By Using MVVM

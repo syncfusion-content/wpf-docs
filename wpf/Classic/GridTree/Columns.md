@@ -4,7 +4,7 @@ title: Columns in WPF GridTree Control | Syncfusion
 description: Learn here all about Columns support in Syncfusion WPF GridTreeControl (Classic) control, its elements and more details.
 platform: wpf
 control: GridTree 
- documentation: ug
+documentation: ug
 ---
 
 # Columns in WPF GridTreeControl (Classic)

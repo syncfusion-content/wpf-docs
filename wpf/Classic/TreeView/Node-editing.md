@@ -4,7 +4,7 @@ title: Node editing in WPF TreeViewAdv Control | Syncfusion
 description: Learn here all about Node editing support in Syncfusion WPF TreeViewAdv (Classic) control, its elements and more details.
 platform: wpf
 control: TreeViewAdv
- documentation: ug
+documentation: ug
 ---
 # Node editing in WPF TreeViewAdv (Classic)
 

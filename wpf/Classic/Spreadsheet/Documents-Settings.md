@@ -4,7 +4,7 @@ title: Documents Settings in WPF Wizard Control control | Syncfusion
 description: Learn here all about Documents Settings support in Syncfusion WPF SpreadsheetControl (Classic) control and more.
 platform: wpf
 control: Spreadsheet
- documentation: ug
+documentation: ug
 ---
 
 # Documents Settings in WPF SpreadsheetControl (Classic)

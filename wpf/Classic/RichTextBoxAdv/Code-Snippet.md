@@ -4,7 +4,7 @@ title: Code-Snippet in WPF Wizard Control control | Syncfusion
 description: Learn here all about Code-Snippet support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # Code-Snippet in WPF RichTextBoxAdv (Classic)

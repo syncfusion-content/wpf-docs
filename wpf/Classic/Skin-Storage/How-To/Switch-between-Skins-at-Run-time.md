@@ -4,7 +4,7 @@ title: Switch between Skins | SkinStorage | Wpf | Syncfusion
 description: Learn here all about Switch between Skins at Run time support in Syncfusion WPF SkinStorage (Classic) control and more.
 platform: wpf
 control: SkinStorage
- documentation: ug
+documentation: ug
 ---
 
 # Switch between Skins at Run time in WPF SkinStorage (Classic)

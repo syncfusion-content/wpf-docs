@@ -4,7 +4,7 @@ title: Exporting and Persistence in WPF GridData Control | Syncfusion
 description: Learn here all about Exporting and Persistence support in Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
- documentation: ug
+documentation: ug
 ---
 
 # Exporting and Persistence in WPF GridDataControl (Classic)

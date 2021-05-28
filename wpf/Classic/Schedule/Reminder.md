@@ -4,7 +4,7 @@ title: Reminder in WPF SfSchedule Control | Syncfusion
 description: Learn here all about Reminder support in Syncfusion WPF Schedule (Classic) control, its elements and more details.
 platform: wpf
 control: SfSchedule
- documentation: ug
+documentation: ug
 ---
 
 # Reminder in WPF Schedule (Classic)
@@ -54,7 +54,7 @@ schedule.Appointments.Add(new ScheduleAppointment
 
 ![WPF Scheduler Reminder Window](Reminder_images/Reminder-Window.jpeg)
 
-Download demo from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/ReminderAlert)
+Download demo from [GitHub](https://github.com/syncfusion/wpf-demos/blob/master/scheduler/ViewModel/ReminderViewModel.cs)
 
 ## Configuring Reminder Duration
 Scheduler supports to set the reminder duration time to remind the appointments by using the [ReminderTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTime) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html).

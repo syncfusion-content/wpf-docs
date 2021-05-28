@@ -4,7 +4,7 @@ title: Text Formatting Using SpanAdv in WPF RichTextBoxAdv | Syncfusion
 description: Learn here all about Text Formatting Using SpanAdv support in Syncfusion WPF RichTextBoxAdv (Classic) control and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # Text Formatting Using SpanAdv in WPF RichTextBoxAdv (Classic)

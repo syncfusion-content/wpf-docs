@@ -4,7 +4,7 @@ title: RichTextRibbon-Support in WPF RichTextBoxAdv Control | Syncfusion
 description: Learn here all about RichTextRibbon-Support in Syncfusion WPF RichTextBoxAdv (Classic) control, its elements and more.
 platform: wpf
 control: RichTextBoxAdv
- documentation: ug
+documentation: ug
 ---
 
 # RichTextRibbon-Support in WPF RichTextBoxAdv (Classic)

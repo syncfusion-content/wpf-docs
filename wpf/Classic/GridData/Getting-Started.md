@@ -4,7 +4,7 @@ title: Getting Started with WPF GridData Control | Syncfusion
 description: Learn here all about getting started with Syncfusion WPF GridDataControl (Classic) control and more.
 platform: wpf
 control: GridData (Classic)
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF GridDataControl (Classic)

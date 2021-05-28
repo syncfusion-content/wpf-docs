@@ -4,7 +4,7 @@ title: Appointment-Navigation in WPF Wizard Control control | Syncfusion
 description: Learn here all about Appointment-Navigation support in Syncfusion WPF Schedule (Classic) control and more.
 platform: wpf
 control: SfSchedule
- documentation: ug
+documentation: ug
 ---
 
 # Appointment-Navigation in WPF Schedule (Classic)
