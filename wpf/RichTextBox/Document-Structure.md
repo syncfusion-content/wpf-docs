@@ -8,5 +8,5 @@ keywords: document-structure
 ---
 # Document Structure in WPF RichTextBox (SfRichTextBoxAdv)
 
-![Document-Structure_img1](Document-Structure_images/Document-Structure_img1.jpeg)
+![Document Structure of WPF RichTextBox](Document-Structure_images/wpf-richtextbox-document-structure.jpeg)
 
