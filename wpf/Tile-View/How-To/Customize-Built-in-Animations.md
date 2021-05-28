@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Built-in Animations | TileView | wpf | Syncfusion
-description: customize built-in animations
+description: Customize built-in animations in Syncfusion Essential Studio WPF TileView Control, its elements and more.
 platform: wpf
 control: TileView Control
 documentation: ug
