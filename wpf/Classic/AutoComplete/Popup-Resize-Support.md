@@ -13,7 +13,7 @@ AutoComplete allows you to resize the drop-down list popup using the [CanResizeP
 
 ## Adding pop-up resizing support to an application 
 
-You can use [CanResizePopup]((https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CanResizePopup) property to attain this functionality by setting the value as True.
+You can use [CanResizePopup]((https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.AutoComplete.html#Syncfusion_Windows_Tools_Controls_AutoComplete_CanResizePopup) )property to attain this functionality by setting the value as True.
 
 {% tabs %}
 {% highlight xaml %}

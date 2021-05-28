@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Chart Appearance
-description: Chart Appearance
+title: Chart Appearance in WPF Chart (Classic) Control | Syncfusion
+description: Chart Appearance in Syncfusion Essential Studio WPF Chart (Classic) control, its elements, features and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
 ---
-# Chart Appearance
+# Chart Appearance in WPF Chart (Classic) Control
 
 ## Chart Styles
 
@@ -125,39 +125,39 @@ Various Built-In skins supported are:
 
 The following images illustrate the various skins applied to the Chart.
 
-![](Chart-Controls_images/Chart-Controls_img181.png)
+![Chart-Controls_img181](Chart-Controls_images/Chart-Controls_img181.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img182.png)
+![Chart-Controls_img182](Chart-Controls_images/Chart-Controls_img182.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img183.png)
+![Chart-Controls_img183](Chart-Controls_images/Chart-Controls_img183.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img184.png)
+![Chart-Controls_img184](Chart-Controls_images/Chart-Controls_img184.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img185.png)
+![Chart-Controls_img185](Chart-Controls_images/Chart-Controls_img185.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img186.png)
+![Chart-Controls_img186](Chart-Controls_images/Chart-Controls_img186.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img187.png)
+![Chart-Controls_img187](Chart-Controls_images/Chart-Controls_img187.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img188.png)
+![Chart-Controls_img188](Chart-Controls_images/Chart-Controls_img188.png)
 
 
 
-![](Chart-Controls_images/Chart-Controls_img189.png)
+![Chart-Controls_img189](Chart-Controls_images/Chart-Controls_img189.png)
 
 
 
@@ -288,7 +288,7 @@ chart.Areas[0].Series[0].AnimateOption = AnimationOptions.Rotate;
 
 Run the code. The following output is displayed.
 
-![](Chart-Controls_images/Chart-Controls_img190.jpeg)
+![Chart-Controls_img190](Chart-Controls_images/Chart-Controls_img190.jpeg)
 
 
 
@@ -361,7 +361,7 @@ The chart series effects can be applied to the chart by using the following code
 
     Run the code. The following output is displayed.
 
-    ![](Chart-Controls_images/Chart-Controls_img191.jpeg)
+    ![Chart-Controls_img191](Chart-Controls_images/Chart-Controls_img191.jpeg)
 
 
    {:.prettyprint}

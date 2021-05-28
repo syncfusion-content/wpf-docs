@@ -3585,7 +3585,7 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 ![Applied visual stlyes to custom](Getting-Started_images/Getting-Started_img113.png)
 
-N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager](/wpf/griddata/data-presentation#adding-styles-to-an-application)_class through Microsoft Expression Blend.
+N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager](https://help.syncfusion.com/wpf/classic/griddata/data-presentation#adding-styles-to-an-application)_class through Microsoft Expression Blend.
 
 ### Backward Compatibility
 
@@ -3644,7 +3644,7 @@ GridDataStyleManager properties are organized under the following seven groups, 
 
 
 
-N> Previously, the appearance of the GridDataControl could be customized through the [IGridDataVisualStyle](/wpf/griddata/data-presentation#custom-skin) interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
+N> Previously, the appearance of the GridDataControl could be customized through the [IGridDataVisualStyle](https://help.syncfusion.com/wpf/classic/griddata/data-presentation#custom-skin) interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
 
 ### Customizing the Column Appearance
 
