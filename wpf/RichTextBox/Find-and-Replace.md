@@ -149,5 +149,5 @@ The following code example demonstrates how to show the options pane in SfRichTe
 {% endhighlight %}
 
 {% endtabs %}
-![Shows the find option to navigate the text in WPF SfRichTextBoxAdv](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
+![WPF RichTextBox displays Find option](Find-and-Replace_images/wpf-richtextbox-find-option.jpeg)
 

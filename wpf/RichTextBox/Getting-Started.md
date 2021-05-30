@@ -37,7 +37,7 @@ N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
 
-![SfRichTextBoxAdv control](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF RichTextBox Control](Getting-Started_images/wpf-richtextbox-control.jpeg)
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,15 +171,15 @@ The following assembly reference are additionally required to deploy SfRichTextR
 
 2.Use the Syncfusion RibbonWindow instead of Window
 
-![Use RibbonWindow](Getting-Started_images/Getting-Started_img2.jpeg)
+![WPF RibbonWindow](Getting-Started_images/wpf-ribbonwindow.jpeg)
 
 3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
 
-![Drag SfRichTextBoxAdv control](Getting-Started_images/Getting-Started_img3.jpeg)
+![Dragging RichTextBox Control from Toolbox](Getting-Started_images/wpf-richtextbox-toolbox.jpeg)
 
 4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
 
-![Drag SfRichTextRibbon control](Getting-Started_images/Getting-Started_img4.jpeg)
+![Draggin RichTextRibbon Control from Toolbox](Getting-Started_images/wpf-richtextribbon-toolbox.jpeg)
 
 5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
 
@@ -225,7 +225,7 @@ N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, si
 
 Finally, you can get the following output similar to Microsoft Word on executing the application
 
-![RichTextBox Window](Getting-Started_images/Getting-Started_img5.jpeg)
+![WPF RichTextBox](Getting-Started_images/wpf-richtextbox.jpeg)
 
 ## Theme
 
@@ -235,4 +235,4 @@ SfRichTextBoxAdv supports various built-in themes. Refer to the below links to a
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF RichTextBox](Getting-Started_images/Theme.png)
+![Applying Theme to WPF RichTextBox](Getting-Started_images/wpf-richtextbox-theme.png)

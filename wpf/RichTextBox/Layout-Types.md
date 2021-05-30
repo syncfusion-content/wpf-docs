@@ -45,7 +45,7 @@ richTextBoxAdv.LayoutType = LayoutType.Pages
 
 {% endtabs %}
 
-![Layout-Types_img1](Layout-Types_images/Layout-Types_img1.jpeg)
+![WPF RichTextBox with Page Layout](Layout-Types_images/wpf-richtextbox-page-layout.jpeg)
 
 ## Continuous
 
@@ -75,7 +75,7 @@ richTextBoxAdv.LayoutType = LayoutType.Continuous
 
 {% endtabs %}
 
-![Layout-Types_img2](Layout-Types_images/Layout-Types_img2.jpeg)
+![WPF RichTextBox with Continuous Layout](Layout-Types_images/wpf-richtextbox-continuous-layout.jpeg)
 
 ## Block
 
@@ -105,5 +105,5 @@ richTextBoxAdv.LayoutType = LayoutType.Block
 
 {% endtabs %}
 
-![Layout-Types_img3](Layout-Types_images/Layout-Types_img3.jpeg)
+![WPF RichTextBox with Box Layout](Layout-Types_images/wpf-richtextbox-box-layout.jpeg)
 
