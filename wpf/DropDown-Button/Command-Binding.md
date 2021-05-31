@@ -4,7 +4,7 @@ title: Command Binding in WPF Dropdown Button control | Syncfusion
 description: Learn here all about Command Binding support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: WPF
 control: DropDownButtonAdv
-documentation: ug
+ documentation: ug
 ---
 
 # Command Binding in WPF Dropdown Button (DropDownButtonAdv)

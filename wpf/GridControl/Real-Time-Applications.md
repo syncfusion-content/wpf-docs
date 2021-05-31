@@ -4,7 +4,7 @@ title: Real Time Applications in WPF GridControl | Syncfusion
 description: Learn about Real Time Applications support in Syncfusion Essential Studio Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid
-documentation: ug
+ documentation: ug
 ---
 
 # Real Time Applications in WPF GridControl

@@ -4,7 +4,7 @@ title: Feature to resize the FloatWindow dynamically depend on child size | Dock
 description: feature to resize the floatwindow dynamically depend on child size
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Feature to resize the FloatWindow dynamically depend on child size

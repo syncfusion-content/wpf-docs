@@ -4,7 +4,7 @@ title: Data Manipulation in WPF Grouping control | Syncfusion
 description: Learn about Data Manipulation support in Syncfusion Essential Studio WPF Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
-documentation: ug
+ documentation: ug
 ---
 
 # Data Manipulation in WPF Grouping

@@ -4,7 +4,7 @@ title: Holidays Customization in WPF Gantt control | Syncfusion
 description: Learn about Holidays Customization support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
-documentation: ug
+ documentation: ug
 ---
 
 # Holidays Customization in WPF Gantt

@@ -4,7 +4,7 @@ title: Custom Node Style in WPF Gantt control | Syncfusion
 description: Learn about Custom Node Style support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
-documentation: ug
+ documentation: ug
 ---
 
 # Custom Node Style in WPF Gantt

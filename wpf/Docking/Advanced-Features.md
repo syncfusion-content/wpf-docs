@@ -4,7 +4,7 @@ title: Advanced Features | DockingManager | WPF | Syncfusion
 description: Advanced features of DockingManager
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Advanced Features

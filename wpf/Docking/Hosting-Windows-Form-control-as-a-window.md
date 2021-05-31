@@ -4,7 +4,7 @@ title: Hosting in WPF DockingManager control | Syncfusion
 description: Learn here all about Hosting Windows Form control as a Window support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 # Hosting in WPF Docking (DockingManager)
 

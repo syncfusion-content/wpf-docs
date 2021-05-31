@@ -4,7 +4,7 @@ title: Using of IsDragging | DockingManager | wpf | Syncfusion
 description: using of isdragging
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Using of IsDragging

@@ -4,7 +4,7 @@ title: Activate a particular window | DockingManager | wpf | Syncfusion
 description: activate a particular window
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Activate a particular window

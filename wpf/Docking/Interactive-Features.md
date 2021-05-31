@@ -4,7 +4,7 @@ title: Interactive Features | DockingManager | WPF | Syncfusion
 description: interactive features of DockingManager
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Interactive Features

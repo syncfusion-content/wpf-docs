@@ -4,7 +4,7 @@ title: Appearance in WPF Double TextBox control | Syncfusion
 description: Learn about Appearance support in Syncfusion WPF Double TextBox control, its elements and more details.
 platform: wpf
 control: DoubleTextBox
-documentation: ug
+ documentation: ug
 ---
 
 # Appearance in WPF Double TextBox

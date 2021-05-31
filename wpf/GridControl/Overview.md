@@ -4,7 +4,7 @@ title: About WPF GridControl | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF GridControl control, its elements and more details.
 platform: wpf
 control: Grid
-documentation: ug
+ documentation: ug
 ---
 
 # WPF GridControl Overview

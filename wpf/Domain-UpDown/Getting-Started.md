@@ -4,7 +4,7 @@ title: Getting Started with WPF Domain Updown control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Domain Updown (SfDomainUpDown) control, its elements and more details.
 platform: WPF
 control: DomainUpDown
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Domain Updown (SfDomainUpDown)

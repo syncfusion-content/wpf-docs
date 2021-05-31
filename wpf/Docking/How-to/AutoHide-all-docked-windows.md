@@ -4,7 +4,7 @@ title: AutoHide all docked windows | DockingManager | wpf | Syncfusion
 description: autohide all docked windows
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # AutoHide all docked windows

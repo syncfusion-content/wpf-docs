@@ -4,7 +4,7 @@ title: DateTime Indicator Customization in WPF Gantt control | Syncfusion
 description: Learn about DateTime Indicator Customization support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
-documentation: ug
+ documentation: ug
 ---
 
 # DateTime Indicator Customization in WPF Gantt

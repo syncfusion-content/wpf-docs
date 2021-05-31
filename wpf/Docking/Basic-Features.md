@@ -4,7 +4,7 @@ title: Basic Features | DockingManager | WPF | Syncfusion
 description: Basic features of DockingManager
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Basic Features

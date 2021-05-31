@@ -4,7 +4,7 @@ title: Set splitter background and size | DockingManager | wpf | Syncfusion
 description: set splitter background and size
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 ## Set splitter background and size

@@ -4,7 +4,7 @@ title: Set ActiveWindow using SetNewFocusedElement | DockingManager | wpf | Sync
 description: set activewindow using setnewfocusedelement()
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Set ActiveWindow using SetNewFocusedElement()

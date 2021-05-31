@@ -4,7 +4,7 @@ title: Disable the Resize of FloatWindow | DockingManager | wpf | Syncfusion
 description: disable the resize of floatwindow
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Disable the Resize of FloatWindow

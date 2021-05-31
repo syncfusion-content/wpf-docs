@@ -4,7 +4,7 @@ title: Detect the closing of a DockingManagerchild | DockingManager | wpf | Sync
 description: detect the closing of a dockingmanagerchild
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Detect the closing of a DockingManagerChild

@@ -4,7 +4,7 @@ title: ToolTip in WPF GridControl | Syncfusion
 description: Learn about ToolTip support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: WPF
 control: GridControl
-documentation: ug
+ documentation: ug
 ---
 
 # ToolTip in WPF GridControl

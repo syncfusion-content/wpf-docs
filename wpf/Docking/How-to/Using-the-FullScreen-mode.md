@@ -4,7 +4,7 @@ title: Using the FullScreen mode | DockingManager | wpf | Syncfusion
 description: using the fullscreen mode
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Using the FullScreen mode

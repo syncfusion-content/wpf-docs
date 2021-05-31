@@ -4,7 +4,7 @@ title: Position FloatWindow using FloatWindowRect | DockingManager | wpf | Syncf
 description: position floatwindow using floatwindowrect
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Position FloatWindow using FloatWindowRect

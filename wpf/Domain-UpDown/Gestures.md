@@ -4,7 +4,7 @@ title: Gestures in WPF Domain Updown control | Syncfusion
 description: Learn here all about Gestures support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
 platform: wpf
 control: DomainUpDown
-documentation: ug
+ documentation: ug
 ---
 
 # Gestures in WPF Domain Updown (SfDomainUpDown)

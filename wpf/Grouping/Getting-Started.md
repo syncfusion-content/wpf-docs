@@ -4,7 +4,7 @@ title: Getting Started with WPF Grouping control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Grouping control, its elements and more details.
 platform: WPF
 control: Grouping
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Grouping

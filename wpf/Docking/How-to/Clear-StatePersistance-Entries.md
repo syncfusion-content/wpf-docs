@@ -4,7 +4,7 @@ title: Clear StatePersistance Entries | DockingManager | wpf | Syncfusion
 description:  clear statepersistance entries
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 #  Clear StatePersistence Entries

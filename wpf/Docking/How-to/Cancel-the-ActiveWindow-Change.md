@@ -4,7 +4,7 @@ title: Cancel the ActiveWindow Change | DockingManager | wpf | Syncfusion
 description: cancel the activewindow change
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Cancel the ActiveWindow Change

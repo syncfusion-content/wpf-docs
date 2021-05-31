@@ -4,7 +4,7 @@ title: Retrieve the AutoHidden Window height | DockingManager | wpf | Syncfusion
 description: retrieve the autohidden window height
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Retrieve the AutoHidden Window height

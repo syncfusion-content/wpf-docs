@@ -4,7 +4,7 @@ title: Flow Direction in WPF Gantt control | Syncfusion
 description: Learn about Flow Direction support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
-documentation: ug
+ documentation: ug
 ---
 
 # Flow Direction in WPF Gantt

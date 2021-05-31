@@ -4,7 +4,7 @@ title: Localization | DockingManager | WPF | Syncfusion
 description: localization
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Localization

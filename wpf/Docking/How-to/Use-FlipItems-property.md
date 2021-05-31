@@ -4,7 +4,7 @@ title: Use FlipItems property | DockingManager | wpf | Syncfusion
 description: use flipitems property
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Use FlipItems property

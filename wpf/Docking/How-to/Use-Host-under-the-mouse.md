@@ -4,7 +4,7 @@ title: Use Host under the mouse | DockingManager | wpf | Syncfusion
 description: use host under the mouse
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Use Host under the mouse

@@ -4,7 +4,7 @@ title: Algebra Supported In Expressions Filters in WPF Grouping | Syncfusion
 description: Learn about Algebra Supported In Expressions Filters support in Syncfusion WPF Grouping control and more.
 platform: WindowsForms
 control: Grouping
-documentation: ug
+ documentation: ug
 ---
 
 # Algebra Supported In Expressions Filters in WPF Grouping

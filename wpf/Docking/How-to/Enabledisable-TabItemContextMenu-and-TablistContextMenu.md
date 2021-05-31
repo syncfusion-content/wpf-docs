@@ -4,7 +4,7 @@ title: Enabledisable TabItemContextMenu and TablistContextMenu | DockingManager 
 description: enable/disable tabitemcontextmenu and tablistcontextmenu
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Enable/disable TabItemContextMenu and TabListContextMenu

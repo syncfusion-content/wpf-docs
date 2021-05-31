@@ -4,7 +4,7 @@ title: Calendar Customization in WPF Gantt control | Syncfusion
 description: Learn about Calendar Customization support in Syncfusion WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
-documentation: ug
+ documentation: ug
 ---
 
 # Calendar Customization in WPF Gantt

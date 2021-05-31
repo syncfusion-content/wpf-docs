@@ -4,7 +4,7 @@ title: Managing Rows and Columns in WPF GridControl | Syncfusion
 description: Learn about Managing Rows and Columns support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
-documentation: ug
+ documentation: ug
 ---
 
 # Managing Rows and Columns in WPF GridControl

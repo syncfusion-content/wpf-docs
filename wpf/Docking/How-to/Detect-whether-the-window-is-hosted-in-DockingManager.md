@@ -4,7 +4,7 @@ title: Detect whether the window is hosted in DockingManager | DockingManager | 
 description: detect whether the window is hosted in dockingmanager
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Detect whether the window is hosted in DockingManager

@@ -4,7 +4,7 @@ title: Docking Window in WPF Docking control | Syncfusion
 description: Learn here all about Docking Window support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 # Docking Window in WPF Docking (DockingManager)
 

@@ -4,7 +4,7 @@ title: Populating Data in WPF Domain Updown control | Syncfusion
 description: Learn here all about Populating Data support in Syncfusion WPF Domain Updown (SfDomainUpDown) control and more.
 platform: wpf
 control: DomainUpDown
-documentation: ug
+ documentation: ug
 ---
 
 # Populating Data in WPF Domain Updown (SfDomainUpDown)

@@ -4,7 +4,7 @@ title: Configuring a build machine to compile projects after version V81030 | Do
 description: configuring a build machine to compile projects after version v8.1.0.30  
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 # Configuring a build machine to compile projects after version V8.1.0.30  

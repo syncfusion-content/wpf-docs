@@ -4,7 +4,7 @@ title: Unpin all AutoHide window | DockingManager | wpf | Syncfusion
 description: unpin all autohide window
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 ## Unpin all AutoHide window

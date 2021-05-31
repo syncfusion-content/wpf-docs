@@ -4,7 +4,7 @@ title: Remove Individual Menu Items | DockingManager | wpf | Syncfusion
 description: remove individual menu items
 platform: wpf
 control: DockingManager
-documentation: ug
+ documentation: ug
 ---
 
 ## Remove Individual Menu Items
