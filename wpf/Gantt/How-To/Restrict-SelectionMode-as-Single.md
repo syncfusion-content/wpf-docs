@@ -4,7 +4,7 @@ title: Restrict SelectionMode as Single | Gantt | Wpf | Syncfusion
 description: This section describes how to restrict the SelectionMode behavior as Single in GanttControl for WPF platform.
 platform: wpf
 control: Gantt
- documentation: ug
+documentation: ug
 ---
 
 ## Restrict SelectionMode as Single

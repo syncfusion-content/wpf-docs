@@ -4,7 +4,7 @@ title: Floating Window in WPF Docking control | Syncfusion
 description: Learn here all about Floating Window support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 # Floating Window in WPF Docking (DockingManager)
 

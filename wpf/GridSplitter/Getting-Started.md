@@ -4,7 +4,7 @@ title: Getting Started with WPF GridSplitter control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF GridSplitter (SfGridSplitter) control, its elements and more details.
 platform: WPF
 control: SfGridSplitter
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF GridSplitter (SfGridSplitter)
@@ -25,7 +25,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding control manually in XAML
 

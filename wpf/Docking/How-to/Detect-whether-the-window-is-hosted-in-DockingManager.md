@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Detect whether the window is hosted in DockingManager | DockingManager | wpf | Syncfusion
-description: detect whether the window is hosted in dockingmanager
+title: Detect whether the window is hosted in WPF DockingManager | Syncfusion
+description: Detect whether the window is hosted in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # Detect whether the window is hosted in DockingManager

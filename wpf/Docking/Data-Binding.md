@@ -4,7 +4,7 @@ title: Data Binding in WPF Docking control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # Data Binding in WPF Docking (DockingManager)

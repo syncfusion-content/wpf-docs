@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Set splitter background and size | DockingManager | wpf | Syncfusion
-description: set splitter background and size
+description: Set splitter background and size in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 ## Set splitter background and size
@@ -34,7 +34,7 @@ DockingManager.SplitterBackground = Brushes.Black;
 {% endtabs %}
 
 
-![](Set-splitter-background-and-size_images/Set-splitter-background-and-size_img1.jpeg)
+![Set-splitter-background-and-size_images1](Set-splitter-background-and-size_images/Set-splitter-background-and-size_img1.jpeg)
 
 
 

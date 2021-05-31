@@ -4,7 +4,7 @@ title: Interaction with DragProvider in WPF Docking control | Syncfusion
 description: Learn here all about Interaction with DragProvider support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # Interaction with DragProvider in WPF Docking (DockingManager)

@@ -4,7 +4,7 @@ title: Getting Started with WPF Dropdown Button control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Dropdown Button (DropDownButtonAdv) control, its elements and more details.
 platform: wpf
 control: DropDownButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Dropdown Button (DropDownButtonAdv)

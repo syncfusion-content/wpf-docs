@@ -4,7 +4,7 @@ title: Cell Layout Customization in WPF GridControl | Syncfusion
 description: Learn about Cell Layout Customization support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
- documentation: ug
+documentation: ug
 ---
 
 # Cell Layout Customization in WPF GridControl

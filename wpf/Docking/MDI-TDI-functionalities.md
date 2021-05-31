@@ -4,7 +4,7 @@ title: MDI/TDI functionalities in WPF Docking control | Syncfusion
 description: Learn here all about MDI/TDI functionalities support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # MDI/TDI functionalities in WPF Docking (DockingManager)

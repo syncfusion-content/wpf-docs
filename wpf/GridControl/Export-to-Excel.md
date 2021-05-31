@@ -4,7 +4,7 @@ title: Export to Excel in WPF GridControl | Syncfusion
 description: Learn about Export to Excel support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
- documentation: ug
+documentation: ug
 ---
 
 # Export to Excel in WPF GridControl
@@ -123,7 +123,7 @@ gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sam
 
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Export/Excel%20Export)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Export/ExcelExport)
 
 ## Exporting to CSV
 

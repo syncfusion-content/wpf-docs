@@ -4,7 +4,7 @@ title: Multiline Text in WPF Dropdown Button control | Syncfusion
 description: Learn here all about Multiline Text support in Syncfusion WPF Dropdown Button (DropDownButtonAdv) control and more.
 platform: wpf
 control: DropDownButtonAdv
- documentation: ug
+documentation: ug
 ---
 
 # Multiline Text in WPF Dropdown Button (DropDownButtonAdv)

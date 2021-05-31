@@ -4,7 +4,7 @@ title: State Persistence in WPF Docking control | Syncfusion
 description: Learn here all about State Persistence support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 # State Persistence in WPF Docking (DockingManager)
 

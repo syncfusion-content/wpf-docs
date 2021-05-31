@@ -4,7 +4,7 @@ title: Performance in WPF GridControl | Syncfusion
 description: Learn about Performance support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
- documentation: ug
+documentation: ug
 ---
 
 # Performance in WPF GridControl
@@ -31,7 +31,7 @@ N> Blinking Behavior-You cud see random values get updated frequently and those 
 ![Trader Grid Test Demo in WPF GridControl](Performance_images/Performance_img1.jpeg)
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Performance/TraderGrid%20Test)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Performance/TraderGridTest)
 
 ### Example 
 

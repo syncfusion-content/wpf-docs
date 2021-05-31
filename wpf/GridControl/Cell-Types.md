@@ -4,7 +4,7 @@ title: Cell Types in WPF GridControl | Syncfusion
 description: Learn about Cell Types support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: Grid Control
- documentation: ug
+documentation: ug
 ---
 
 # Cell Types in WPF GridControl
@@ -234,7 +234,7 @@ style.ImageIndex = 0;
 
 {% endtabs %}
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Basic%20Cell%20Type)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/BasicCellType)
 
 ## ComboBox cell type
 
@@ -431,7 +431,7 @@ combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 
 ![Exclusive Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img7.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Combo%20Box%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/ComboBoxCell)
 
 ## DropdownList cell type
 
@@ -504,7 +504,7 @@ dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
 
 ![Exclusive Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img10.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Combo%20Box%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/ComboBoxCell)
 
 ## DateTimeEdit cell type
 
@@ -638,7 +638,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Datetime celltype in WPF GridControl](Cell-Types_images/Cell-Types_img14.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Date%20Time%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DateTimeCell/View)
 
 ## IntegerEdit cell type
 
@@ -726,7 +726,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Integer%20Edit%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/IntegerEditCell)
 
 ## DoubleEdit cell type
 
@@ -854,7 +854,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Double%20Edit%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DoubleEditCell)
 
 ## CurrencyEdit cell type
 
@@ -1025,7 +1025,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Currency%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/CurrencyCell)
 
 ## PercentEdit cell type
 
@@ -1133,7 +1133,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Percentedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img18.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Percent%20Edit%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/PercentEditCell)
 
 ## MaskEdit cell type
 
@@ -1191,7 +1191,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 ![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Mask%20Edit%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/MaskEditCell)
 
 ## UpDownEdit cell type
 
@@ -1318,7 +1318,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 ![Updownedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img20.jpeg)
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Up%20Down%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/UpdownCell)
 
 ## RichText cell type
 
@@ -1364,7 +1364,7 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 
 ![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/RichTextBox%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/RichTextBoxCell)
 
 ## DataTemplate cell type
 
@@ -1396,7 +1396,7 @@ gridcontrol.Model[2, 2].CellValue = gridcontrol.Model[2, 2].RowIndex;
 
 {% endtabs %}
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Data%20Template%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DataTemplateCell)
 
 ## Nested grid cell type
 
@@ -2038,7 +2038,7 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 
 ![Cutom drop-down in WPF GridControl](Cell-Types_images/Cell-Types_img26.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Custom%20Drop%20Down)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/CustomDropDown)
 
 ### Data Template Cells
 
@@ -2157,7 +2157,7 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
 
 ![Data template with cell template assigned in WPF GridControl](Cell-Types_images/Cell-Types_img27.jpeg)
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Data%20Template%20Cell)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Cell%20Types/DataTemplateCell)
 
 ### Rich Text Box Cells
 

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Clear StatePersistance Entries | DockingManager | wpf | Syncfusion
-description:  clear statepersistance entries
+description:  Clear statepersistance entries in Syncfusion Essential Studio WPF DockingManager Control, its elements and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 #  Clear StatePersistence Entries

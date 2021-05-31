@@ -4,7 +4,7 @@ title: About WPF Digital Gauge control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Digital Gauge (SfDigitalGauge) control, its elements and more details.
 platform: wpf
 control: SfDigitalGauge
- documentation: ug
+documentation: ug
 ---
 
 # WPF Digital Gauge (SfDigitalGauge) Overview

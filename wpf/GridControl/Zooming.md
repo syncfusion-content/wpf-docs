@@ -4,7 +4,7 @@ title: Zooming in WPF GridControl | Syncfusion
 description: Learn about Zooming support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
- documentation: ug
+documentation: ug
 ---
 
 # Zooming in WPF GridControl
@@ -35,7 +35,7 @@ Double</td></tr>
 </table>
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Zooming)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Zooming)
 
 ## Change Zoom Scale of the Grid Control
 

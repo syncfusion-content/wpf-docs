@@ -4,7 +4,7 @@ title: Import from Excel in WPF GridControl | Syncfusion
 description: Learn about Import from Excel support in Syncfusion Essential Studio WPF GridControl, its elements and more details.
 platform: wpf
 control: GridControl
- documentation: ug
+documentation: ug
 ---
 
 # Import from Excel in WPF GridControl
@@ -31,7 +31,7 @@ You can get the [GridModelImportExtensions](https://help.syncfusion.com/cr/wpf/S
 
 This feature can be used to view the Excel workbook into applications with the same set of styles and to edit the data in run time. You can also view the Excel workbook into web application with the same set of styles and borders.
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Import/Excel%20Import)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Import/ExcelImport)
 
 
 

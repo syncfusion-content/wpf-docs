@@ -4,7 +4,7 @@ title: Dealing with Windows in WPF Docking control | Syncfusion
 description: Learn here all about Dealing with Windows support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 # Dealing with Windows in WPF Docking (DockingManager)
 

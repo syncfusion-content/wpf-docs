@@ -4,7 +4,7 @@ title: About WPF GridSplitter control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF GridSplitter (SfGridSplitter) control, its elements and more details.
 platform: wpf
 control: SfGridSplitter
- documentation: ug
+documentation: ug
 ---
 
 # WPF GridSplitter (SfGridSplitter) Overview

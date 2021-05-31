@@ -4,13 +4,13 @@ title: Localization in WPF Gantt control | Syncfusion
 description: Learn about Localization support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
 platform: wpf
 control: Gantt
- documentation: ug
+documentation: ug
 ---
 
 
 # Localization in WPF Gantt
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the GanttControl by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before `InitializeComponent()` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the GanttControl by [adding resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting `CurrentUICulture` and `CurrentCulture` before `InitializeComponent()` method. 
 
 In the below application, culture is configured to French language.
 

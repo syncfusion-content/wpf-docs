@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Cancel the ActiveWindow Change | DockingManager | wpf | Syncfusion
-description: cancel the activewindow change
+description: Cancel the activewindow change in Syncfusion Essential Studio WPF DockingManager Control, its elements and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # Cancel the ActiveWindow Change

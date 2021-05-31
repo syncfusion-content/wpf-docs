@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Set ActiveWindow using SetNewFocusedElement | DockingManager | wpf | Syncfusion
-description: set activewindow using setnewfocusedelement()
+title: Set ActiveWindow using SetNewFocused in WPF DockingManager| Syncfusion
+description: Set activewindow using setnewfocusedelement in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
- documentation: ug
+documentation: ug
 ---
 
 # Set ActiveWindow using SetNewFocusedElement()
