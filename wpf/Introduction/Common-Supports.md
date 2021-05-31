@@ -4,7 +4,7 @@ title: Common Supports| Introduction | Wpf | Syncfusion
 description: common supports
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # Common Supports

@@ -4,7 +4,7 @@ title: Swimlane support in WPF kanban board | Syncfusion
 description: This documentation explains the swimlane support and its customization in WPF Kanban board. 
 platform: WPF
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 # Swim lanes
 

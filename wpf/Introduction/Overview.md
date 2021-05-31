@@ -4,7 +4,7 @@ title: Overview| Introduction | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # Introduction

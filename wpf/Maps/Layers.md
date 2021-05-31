@@ -4,7 +4,7 @@ title: Layers in WPF Maps control | Syncfusion
 description: Learn here all about Layers support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
-documentation: ug
+ documentation: ug
 ---
 
 # Layers in WPF Maps (SfMap)

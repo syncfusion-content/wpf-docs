@@ -4,7 +4,7 @@ title: Changing Integer Value in WPF IntegerTextBox control | Syncfusion
 description: Learn here about Changing Integer Value with Syncfusion WPF IntegerTextBox control and more details about the control features.
 platform: wpf
 control: IntegerTextBox 
-documentation: ug
+ documentation: ug
 ---
 
 # Changing Integer Value in WPF IntegerTextBox

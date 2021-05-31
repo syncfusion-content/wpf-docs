@@ -4,7 +4,7 @@ title: Text of Syncfusion SfImageEditor WPF.
 description: This section explains how the image can be annotated by adding the required text on it and also it can be customized.
 platform: wpf
 control: SfImageEditor
-documentation: ug
+ documentation: ug
 ---
 
 # Text in SfImageEditor

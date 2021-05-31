@@ -4,7 +4,7 @@ title: Custom Data Binding in WPF Maps control | Syncfusion
 description: Learn here all about Custom Data Binding support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
-documentation: ug
+ documentation: ug
 ---
 
 # Custom Data Binding in WPF Maps (SfMap)

@@ -4,7 +4,7 @@ title: Workflows | SfKanban | wpf | Syncfusion
 description: The following section describes about the workflows in the Kanban.
 platform: wpf
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 
 # Workflow configuration

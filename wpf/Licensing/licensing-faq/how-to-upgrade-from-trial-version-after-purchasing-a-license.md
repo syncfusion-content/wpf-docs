@@ -4,7 +4,7 @@ title: Licensing FAQ – Upgrade from Trial version | Syncfusion
 description: Learn here some information about upgrading from trial version of Essential Studio to Licensed version.
 platform: common
 control: Essential Studio
-documentation: ug
+ documentation: ug
 ---
 
 # How to upgrade from Trial version after purchasing a license?

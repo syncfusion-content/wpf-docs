@@ -4,7 +4,7 @@ title: Data source given to HeatMap is configured using ItemsMapping
 description: How to populate data for heatmap?
 platform: wpf
 control: SfHeatMap
-documentation: ug
+ documentation: ug
 ---
 
 # Items Mapping

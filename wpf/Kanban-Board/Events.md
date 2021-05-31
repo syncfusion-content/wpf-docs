@@ -4,7 +4,7 @@ title:  Events | SfKanban | wpf | Syncfusion
 description: This section contains the detailed information about the Kanban dragging and column generated events.
 platform: wpf
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 
 # Events

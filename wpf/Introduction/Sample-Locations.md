@@ -4,7 +4,7 @@ title: Sample Locations| Introduction | Wpf | Syncfusion
 description: sample locations
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # Sample Locations

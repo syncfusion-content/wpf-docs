@@ -4,7 +4,7 @@ title: Orientation | SfLinearGauge | Wpf | Syncfusion
 description: This section describes Orientation customization support with Orientation property in WPF SfLinearGauge control.
 platform: wpf
 control: Orientation
-documentation: ug
+ documentation: ug
 ---
 
 # Orientation customization in WPF Linear Gauge (SfLinearGauge)

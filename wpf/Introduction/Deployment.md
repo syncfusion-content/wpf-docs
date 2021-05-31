@@ -4,7 +4,7 @@ title: Deployment| | Wpf | Syncfusion
 description: deployment
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # Deployment

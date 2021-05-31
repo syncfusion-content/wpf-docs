@@ -4,7 +4,7 @@ title: Cards | SfKanban | wpf | Syncfusion
 description: This section describes about cards and it's customization. 
 platform: wpf
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 
 # Cards

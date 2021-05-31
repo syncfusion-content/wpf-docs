@@ -4,7 +4,7 @@ title: MapPopup in WPF Maps control | Syncfusion
 description: Learn here all about MapPopup support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
-documentation: ug
+ documentation: ug
 ---
 
 # MapPopup in WPF Maps (SfMap)

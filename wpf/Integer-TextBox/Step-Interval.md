@@ -4,7 +4,7 @@ title: Step Interval in  control | Syncfusion
 description: Learn about Step Interval support in Syncfusion WPF IntegerTextBox control and more details about the control features.WPF IntegerTextBox
 platform: wpf
 control: IntegerTextBox 
-documentation: ug
+ documentation: ug
 ---
 
 # Step Interval in WPF IntegerTextBox

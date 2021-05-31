@@ -4,7 +4,7 @@ title: Getting Started with WPF Maps control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Maps (SfMap)

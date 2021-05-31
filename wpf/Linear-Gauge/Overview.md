@@ -4,7 +4,7 @@ title: Overview| Linear Gauge | WPF | Syncfusion
 description: WPF Linear Gauge control helps to visualize the numerical values on a linear scale. It supports scales, pointers, etc...
 platform: wpf
 control: SfLinearGauge
-documentation: ug
+ documentation: ug
 ---
 # Overview
 

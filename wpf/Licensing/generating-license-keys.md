@@ -4,7 +4,7 @@ title: About Essential Studio WPF Licensing | Syncfusion
 description: Learn here about Syncfusion Essential Studio WPF license key, how to generate the license key, how to register the license key, and more details.
 platform: WPF
 control: Essential Studio
-documentation: ug
+ documentation: ug
 ---
 
 # License Key Generation

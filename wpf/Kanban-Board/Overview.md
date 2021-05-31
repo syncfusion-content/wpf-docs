@@ -4,7 +4,7 @@ title: Overview | SfKanban | WPF | Syncfusion
 description: This section explains the key features of SfKanban
 platform: wpf
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 
 # Overview

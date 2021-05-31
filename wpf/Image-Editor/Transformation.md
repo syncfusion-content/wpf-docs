@@ -4,7 +4,7 @@ title: Image transformation in syncfusion SfImageEditor WPF.
 description: Image transformation
 platform: wpf
 control: SfImageEditor
-documentation: ug
+ documentation: ug
 ---
 
 # Transformation

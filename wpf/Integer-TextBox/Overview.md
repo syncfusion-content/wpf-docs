@@ -4,7 +4,7 @@ title: About WPF IntegerTextBox control | Syncfusion
 description: Learn about introduction of Syncfusion WPF IntegerTextBox control and more details about the control features.
 platform: WPF
 control: IntegerTextBox 
-documentation: ug
+ documentation: ug
 ---
 
 # WPF IntegerTextBox Overview

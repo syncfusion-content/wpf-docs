@@ -4,7 +4,7 @@ title: System Requirement| Introduction | Wpf | Syncfusion
 description: system requirement
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # System Requirement

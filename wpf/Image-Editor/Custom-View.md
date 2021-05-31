@@ -4,7 +4,7 @@ title: Custom view of Syncfusion SfImageEditor control in WPF.
 description: This section describes how to add custom shapes or views to an image and custom view settings in SfImageEditor control for WPF platform. 
 platform: wpf
 control: SfImageEditor
-documentation: ug
+ documentation: ug
 ---
 # CustomView in SfImageEditor
 

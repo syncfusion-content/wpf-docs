@@ -4,7 +4,7 @@ title:  Placeholderstyle | SfKanban | wpf | Syncfusion
 description: The following section describes the place holders of Kanban card while dragging.
 platform: wpf
 control: SfKanban
-documentation: ug
+ documentation: ug
 ---
 
 # Placeholder

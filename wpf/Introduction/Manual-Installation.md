@@ -4,7 +4,7 @@ title: Manual Installation| Introduction | Wpf | Syncfusion
 description: manual installation
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # Manual Installation

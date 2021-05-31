@@ -4,7 +4,7 @@ title: Explore the features of the HeatMap control.
 description: Explore the features of the HeatMap control.
 platform: wpf
 control: SfHeatMap
-documentation: ug
+ documentation: ug
 ---
 
 # Overview

@@ -4,7 +4,7 @@ title: NET Framework support History| Introduction | Wpf | Syncfusion
 description: .net framework support history
 platform: wpf
 control: Introduction
-documentation: ug
+ documentation: ug
 ---
 
 # .NET Framework support History

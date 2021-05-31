@@ -4,7 +4,7 @@ title: Installation and Deployment for Syncfusion WPF products
 description: Learn here about how to install and deploy the trial or license version of Syncfusion WPF components
 platform: wpf
 control: Installation and Deployment
-documentation: ug
+ documentation: ug
 
 ---
 

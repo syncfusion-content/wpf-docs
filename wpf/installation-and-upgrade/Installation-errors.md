@@ -4,7 +4,7 @@ title: Installation Errors for Syncfusion Essential Studio WPF products
 description: Learn how to install Syncfusion Essential WPF and deploy the Syncfusion Essential Studio WPF component
 platform: wpf
 control: Installation and Deployment
-documentation: ug
+ documentation: ug
 
 ---
 
