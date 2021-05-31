@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remove Individual Menu Items | DockingManager | wpf | Syncfusion
-description: remove individual menu items
+description: Remove individual menu items in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -52,6 +52,6 @@ DockingManager.SetShowTabbedMenuItem(grid1, false);
 
 {% endtabs %}
 
-![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
+![Remove-Individual-Menu-Items_images1](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
 
 Similarly you can use other properties to disable corresponding MenuItems.

@@ -13,7 +13,7 @@ GridControl provides support for UI Automation and VS2010 Coded UI testing. This
 
 ##  Grid Control UI Automation Support
 
-Microsoft UI Automation provides a single, generalized interface that automation clients can examine or use to operate the user interfaces of a variety of platforms and frameworks. For more information, see [http://msdn.microsoft.com/en-us/library/cc165614.aspx](http://msdn.microsoft.com/en-us/library/cc165614.aspx).
+Microsoft UI Automation provides a single, generalized interface that automation clients can examine or use to operate the user interfaces of a variety of platforms and frameworks. For more information, see [https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control).
 
 With the Grid control, UI Automation is enabled for writing testable applications. It involves the patterns below.
 

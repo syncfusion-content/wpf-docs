@@ -251,4 +251,4 @@ ColumnWidths</td><td>
 void</td></tr>
 </table>
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Hidden%20Row%20Column%20Resizing)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/ExcelLikeFeature/HideRowColumnResizing)
