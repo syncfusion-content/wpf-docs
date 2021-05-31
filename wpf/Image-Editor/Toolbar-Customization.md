@@ -4,7 +4,7 @@ title: Toolbar customization in syncfusion SfImageEditor WPF.
 description: This section describes how to customize the toolbar and toolbar item selected event in SfImageEditor control for WPF platform.
 platform: wpf
 control: SfImageEditor
- documentation: ug
+documentation: ug
 ---
 
 # Toolbar Customization

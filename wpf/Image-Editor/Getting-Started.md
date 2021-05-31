@@ -4,7 +4,7 @@ title: Getting Started for the Syncfusion ImageEditor.
 description: This section describes in step by step on how to get start with simple application using SfImageEditor in WPF in detail.
 platform: wpf
 control: SfImageEditor
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with SfImageEditor

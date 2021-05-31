@@ -1,13 +1,13 @@
 ---
 layout: post
 title: System Requirement| Introduction | Wpf | Syncfusion
-description: system requirement
+description: Learn here all about introduction of Syncfusion Essential Studio WPF System Requirement Supports, its elements and more.
 platform: wpf
 control: Introduction
- documentation: ug
+documentation: ug
 ---
 
-# System Requirement
+# System Requirement in WPF Introduction
 
 This section describes the system requirements to use Syncfusion WPFControls for development.
 

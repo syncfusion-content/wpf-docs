@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Overview| Introduction | Wpf | Syncfusion
-description: overview
+title: About WPF Introduction Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF, its elements, features and more.
 platform: wpf
 control: Introduction
- documentation: ug
+documentation: ug
 ---
 
 # Introduction

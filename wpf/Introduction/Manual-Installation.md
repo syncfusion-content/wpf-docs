@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Manual Installation| Introduction | Wpf | Syncfusion
-description: manual installation
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Manual Installation Supports, its elements and more.
 platform: wpf
 control: Introduction
- documentation: ug
+documentation: ug
 ---
 
-# Manual Installation
+# Manual Installation in WPF Introduction
 
 For step-by-step installation procedure for the installation of Essential Studio, you can refer to: Installation->Installation and Deployment in the Common UG or from the following location.
 

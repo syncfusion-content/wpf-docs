@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About WPF Linear ProgressBar control  | Syncfusion
-description: Learn about introduction of Syncfusion WPF Linear ProgressBar control, its feature and more details.
+description: Learn here all about introduction of Syncfusion WPF Linear ProgressBar control, its feature and more details.
 platform: WPF
 control: SfLinearProgressBar
- documentation: ug
+documentation: ug
 ---
 
-# Overview
+# WPF Linear ProgressBar Overview
 
 The SfLinearProgressBar control for WPF provides a customizable visual to indicate the progress of an operation and let users know the remaining time for completion.
 

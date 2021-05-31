@@ -4,7 +4,7 @@ title: Installation and Deployment process for Syncfusion WPF products
 description: this section provides information regarding the Syncfusion WPF Offline installer and steps for installing it
 platform: wpf
 control: Installation and Deployment
- documentation: ug
+documentation: ug
 
 ---
 

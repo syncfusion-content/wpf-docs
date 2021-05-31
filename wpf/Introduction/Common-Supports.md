@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Common Supports| Introduction | Wpf | Syncfusion
-description: common supports
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Common Supports, its elements and more.
 platform: wpf
 control: Introduction
- documentation: ug
+documentation: ug
 ---
 
-# Common Supports
+# Common Supports in WPF Introduction
 
 ## Expression Blend
 
@@ -16,28 +16,28 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
   
    
-   ![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
+   ![Common-Supports_images1](Common-Supports_images/Common-Supports_img1.png)
 
   
 
 2. Search for Control in the Toolbox.
 
   
-   ![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
+   ![Common-Supports_images2](Common-Supports_images/Common-Supports_img2.png)
 
   
 
 3. Drag the control to the designer. It generates the control in designer.
    
 
-   ![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
+   ![Common-Supports_images3](Common-Supports_images/Common-Supports_img3.png)
 
   
    
 
 ## Testing
 
-The following Syncfusion controls come with built in testing support like [Coded UI](https://msdn.microsoft.com/en-us/magazine/hh875174.aspx) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
+The following Syncfusion controls come with built in testing support like [Coded UI](https://docs.microsoft.com/en-us/archive/msdn-magazine/2012/march/coded-ui-test-automation-using-visual-studio-2010-coded-ui) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
 ### Coded UI
 
@@ -79,7 +79,7 @@ To localize WPF controls, the resource file needs to be created as per following
 
 
 
-![](Common-Supports_images/Common-Supports_img4.png)
+![Common-Supports_images4](Common-Supports_images/Common-Supports_img4.png)
 
 
 
@@ -91,7 +91,7 @@ N> In case, the Shared dll controls is used in the application, then create an
 
 The following screenshot explains the addition of a Resource file to the application.
 
-![](Common-Supports_images/Common-Supports_img5.png)
+![Common-Supports_images5](Common-Supports_images/Common-Supports_img5.png)
 
 
 
@@ -104,13 +104,13 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-   ![](Common-Supports_images/Common-Supports_img6.png)
+   ![Common-Supports_images6](Common-Supports_images/Common-Supports_img6.png)
 
 
 
 3. Similarly add all need key (Name) for required assembly for example (Syncfusion.Tools.Wpf.dll). And the following screenshot displays the String property names for Tools.WPF controls with French values.
 
-   ![](Common-Supports_images/Common-Supports_img7.jpeg)
+   ![Common-Supports_images7](Common-Supports_images/Common-Supports_img7.jpeg)
 
   
 

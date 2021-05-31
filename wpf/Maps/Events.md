@@ -4,7 +4,7 @@ title: Events in WPF Maps control | Syncfusion
 description: Learn here all about Events support in Syncfusion WPF Maps (SfMap) control, its elements and more details.
 platform: wpf
 control: SfMap
- documentation: ug
+documentation: ug
 ---
 
 # Events in WPF Maps (SfMap)

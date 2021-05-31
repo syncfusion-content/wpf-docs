@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data source given to HeatMap is configured using ItemsMapping
-description: How to populate data for heatmap?
+title: ItemsMapping in WPF HeatMap (SfHeatMap) control | Syncfusion
+description: Learn here about ItemsMapping in Syncfusion Essential Studio WPF HeatMap (SfHeatMap) control, its elements and more.
 platform: wpf
 control: SfHeatMap
- documentation: ug
+documentation: ug
 ---
 
-# Items Mapping
+# Items Mapping in WPF HeatMap (SfHeatMap) control
 
 External data source can be mapped with HeatMap using `ItemsMapping` property. It supports 2 kind of data source.
 

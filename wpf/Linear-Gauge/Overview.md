@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview| Linear Gauge | WPF | Syncfusion
-description: WPF Linear Gauge control helps to visualize the numerical values on a linear scale. It supports scales, pointers, etc...
+title: About WPF LinearGauge (SfLinearGauge) control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF LinearGauge (SfLinearGauge) control, its elements and more.
 platform: wpf
 control: SfLinearGauge
- documentation: ug
+documentation: ug
 ---
-# Overview
+# WPF LinearGauge (SfLinearGauge) Overview
 
 The [`LinearGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and presents in the horizontal sliding, vertical sliding, or meter.
 

@@ -4,7 +4,7 @@ title: System Requirements | WPF | Syncfusion
 description: this section provides the information about the system requirements for WPF platform with supported browsers
 platform: wpf
 control: Installation and Deployment
- documentation: ug
+documentation: ug
 
 ---
 

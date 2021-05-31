@@ -4,7 +4,7 @@ title: License Key Errors of Essential Studio | Syncfusion
 description: Learn here some information about how to fix Syncfusion license key related errors and more details.
 platform: WPF
 control: Essential Studio
- documentation: ug
+documentation: ug
 ---
 
 # Common Licensing Errors

@@ -4,7 +4,7 @@ title: Appearance in WPF IntegerTextBox control | Syncfusion
 description: Learn about Appearance support in Syncfusion WPF IntegerTextBox control and more details about the control features.
 platform: wpf
 control: IntegerTextBox
- documentation: ug
+documentation: ug
 ---
 
 # Appearance in WPF IntegerTextBox

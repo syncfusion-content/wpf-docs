@@ -4,7 +4,7 @@ title: Major Version to Service Pack Version| WPF | Syncfusion
 description: this section provides the information about upgrading the WPF projects from major version to service pack version
 platform: wpf
 control: Essential Studio
- documentation: ug
+documentation: ug
 ---
 
 # Upgrading Syncfusion WPF

@@ -4,7 +4,7 @@ title: Getting Started with Syncfusion linear gauge control for WPF platform.
 description: A quick tour to adding gauge reference, initial users for getting started with Syncfusion linear gauge control for WPF platform.
 platform: wpf
 control: SfLinearGauge
- documentation: ug
+documentation: ug
 ---
 # Getting Started with SfLinearGauge
 

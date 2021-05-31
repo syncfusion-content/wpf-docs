@@ -4,7 +4,7 @@ title: Image cropping in syncfusion ImageEditor WPF.
 description: This section describes on various ways for selecting the cropping area and also to crop the image with specified bounds SfImageEditor.
 platform: wpf
 control: SfImageEditor
- documentation: ug
+documentation: ug
 ---
 
 # Crop support in SfImageEditor

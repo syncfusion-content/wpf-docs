@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion SfImageEditor WPF.
-description: This section describes in detail about the overview and the highlighting features of the SfImageEditor control in WPF.
+title: About WPF ImageEditor (SfImageEditor) Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control, its elements and more.
 platform: wpf
 control: SfImageEditor
- documentation: ug
+documentation: ug
+---
+
+# WPF ImageEditor (SfImageEditor) Overview
 ---
 
 # SfImageEditor
