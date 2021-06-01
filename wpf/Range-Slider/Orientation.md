@@ -4,7 +4,7 @@ title: Orientation in WPF Range Slider control | Syncfusion
 description: Learn here all about Orientation support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
-documentation: ug
+ documentation: ug
 ---
 
 # Orientation in WPF Range Slider (SfRangeSlider)

@@ -4,7 +4,7 @@ title: Draw Gauge Report Item | ReportDesigner | wpf | Syncfusion
 description: draw gauge report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Gauge Report Item

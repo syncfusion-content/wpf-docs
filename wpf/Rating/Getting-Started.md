@@ -4,7 +4,7 @@ title: Getting Started with WPF Rating control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Rating (SfRating) control, its elements and more.
 platform: wpf
 control: SfRating
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Rating (SfRating)

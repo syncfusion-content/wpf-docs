@@ -4,7 +4,7 @@ title: Saving Reports | ReportWriter | WPF | Syncfusion
 description: saving reports
 platform: wpf
 control: ReportWriter
-documentation: ug
+ documentation: ug
 ---
 
 # Saving reports

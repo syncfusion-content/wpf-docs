@@ -4,7 +4,7 @@ title: Number of Items | SfRating | wpf | Syncfusion
 description: number of items
 platform: wpf
 control: SfRating
-documentation: ug
+ documentation: ug
 ---
 
 # Number of Items

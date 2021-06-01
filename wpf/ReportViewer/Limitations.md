@@ -4,7 +4,7 @@ title: Limitations | ReportViewer | WPF | Syncfusion
 description: limitations
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Limitations

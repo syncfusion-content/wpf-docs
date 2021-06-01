@@ -4,7 +4,7 @@ title: Add DataSource | ReportDesigner | wpf | Syncfusion
 description: add datasource
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Add DataSource

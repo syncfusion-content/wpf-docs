@@ -4,7 +4,7 @@ title: ReportViewer Troubleshooting Errors | ReportViewer | WPF | Syncfusion
 description: How to handle the errors for respective issues.
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 # Troubleshooting Errors
 

@@ -4,7 +4,7 @@ title: Draw Table Report Item | ReportDesigner | wpf | Syncfusion
 description: draw table report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Table Report Item

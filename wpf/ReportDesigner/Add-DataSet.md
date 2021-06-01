@@ -4,7 +4,7 @@ title: Add DataSet | ReportDesigner | wpf | Syncfusion
 description: add dataset
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Add DataSet

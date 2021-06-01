@@ -4,7 +4,7 @@ title: Range in WPF Range Slider control | Syncfusion
 description: Learn here all about Range support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
-documentation: ug
+ documentation: ug
 ---
 
 # Range in WPF Range Slider (SfRangeSlider)

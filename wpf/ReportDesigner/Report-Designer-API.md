@@ -4,7 +4,7 @@ title: Report Designer API | ReportDesigner | wpf | Syncfusion
 description: report designer api
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Report Designer API

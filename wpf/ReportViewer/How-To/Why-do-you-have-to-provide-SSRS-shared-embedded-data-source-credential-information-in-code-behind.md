@@ -4,7 +4,7 @@ title: Why do you have to provide SSRS shared embedded data source credential in
 description: why do you have to provide ssrs shared/embedded data source credential information in code behind? 
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Why do you have to provide SSRS shared/embedded data source credential information in code behind? 

@@ -4,7 +4,7 @@ title: Draw DataBar Report Item | ReportDesigner | wpf | Syncfusion
 description: draw databar report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw DataBar Report Item

@@ -4,7 +4,7 @@ title: Save a report as stream | ReportWriter | WPF | Syncfusion
 description: save a report to stream
 platform: wpf
 control: ReportWriter
-documentation: ug
+ documentation: ug
 ---
 
 # Save a report as stream

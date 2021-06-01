@@ -4,7 +4,7 @@ title: Provide the Report Parameters in code behind | ReportViewer | WPF | Syncf
 description: provide the report parameters in code behind
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Provide the Report Parameters in code behind

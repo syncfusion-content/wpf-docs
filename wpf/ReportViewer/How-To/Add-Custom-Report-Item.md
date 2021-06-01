@@ -4,7 +4,7 @@ title: Custom Report Item
 description: Creating a custom report item run-time component in report viewer
 platform: WPF
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The run-time component allows to render the custom report item in report viewer.

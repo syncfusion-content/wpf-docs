@@ -4,7 +4,7 @@ title: Draw Map Report Item | ReportDesigner | wpf | Syncfusion
 description: draw map report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Map Report Item

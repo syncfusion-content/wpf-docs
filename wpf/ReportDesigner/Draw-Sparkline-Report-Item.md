@@ -4,7 +4,7 @@ title: Draw Sparkline Report Item | ReportDesigner | wpf | Syncfusion
 description: draw sparkline report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Sparkline Report Item

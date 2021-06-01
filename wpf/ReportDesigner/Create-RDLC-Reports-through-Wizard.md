@@ -4,7 +4,7 @@ title: Create RDLC Reports through Wizard | ReportDesigner | wpf | Syncfusion
 description: create rdlc reports through wizard
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Create RDLC Reports through Wizard

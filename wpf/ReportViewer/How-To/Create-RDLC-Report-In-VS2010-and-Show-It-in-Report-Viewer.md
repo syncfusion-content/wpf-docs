@@ -4,7 +4,7 @@ title: Create RDLC Report In VS2010 and Show It in Report Viewer | ReportViewer 
 description: create rdlc report in vs2010 and show it in report viewer
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Create RDLC Report In VS2010 and Show It in Report Viewer

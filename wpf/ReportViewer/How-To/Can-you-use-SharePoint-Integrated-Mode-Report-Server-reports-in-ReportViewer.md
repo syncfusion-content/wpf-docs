@@ -4,7 +4,7 @@ title: Can you use SharePoint Integrated Mode Report Server reports in ReportVie
 description: can you use sharepoint integrated mode report server reports in reportviewer?
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Can you use SharePoint Integrated Mode Report Server reports in ReportViewer?

@@ -4,7 +4,7 @@ title: Touch Support in WPF Range Slider control | Syncfusion
 description: Learn here all about Touch Support in Syncfusion WPF Range Slider (SfRangeSlider) control, its elements and more.
 platform: wpf
 control: SfRangeSlider 
-documentation: ug
+ documentation: ug
 ---
 
 # Touch Support in WPF Range Slider (SfRangeSlider)

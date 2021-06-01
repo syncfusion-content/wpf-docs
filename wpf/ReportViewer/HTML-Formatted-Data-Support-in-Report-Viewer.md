@@ -4,7 +4,7 @@ title: HTML formatted data in Reports | ReportViewer | WPF | Syncfusion
 description: HTML formatted data in Reports
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 ## HTML Formatted Data with Report

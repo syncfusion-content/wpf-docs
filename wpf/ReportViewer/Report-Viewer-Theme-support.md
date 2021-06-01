@@ -4,7 +4,7 @@ title: ReportViewer Theme support | ReportViewer | WPF | Syncfusion
 description: ReportViewer theme support
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # ReportViewer Theme support

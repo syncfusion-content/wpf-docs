@@ -4,7 +4,7 @@ title: Can you use Azure SSRS reports in ReportViewer | ReportViewer | WPF | Syn
 description: can you use azure ssrs reports in reportviewer?
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # Can you use Azure SSRS reports in ReportViewer?

@@ -4,7 +4,7 @@ title: About WPF Report Designer control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF Report Designer control, its elements and more.
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Report Designer Overview

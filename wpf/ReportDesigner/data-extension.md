@@ -4,7 +4,7 @@ title: Data Extension | ReportDesigner | wpf | Syncfusion
 description: data extension
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 ## Data Source Extension

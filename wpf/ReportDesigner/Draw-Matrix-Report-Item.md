@@ -4,7 +4,7 @@ title: Draw Matrix Report Item | ReportDesigner | wpf | Syncfusion
 description: draw matrix report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Matrix Report Item

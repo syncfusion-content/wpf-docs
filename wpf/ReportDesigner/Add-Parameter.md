@@ -4,7 +4,7 @@ title: Add Parameter | ReportDesigner | wpf | Syncfusion
 description: add parameter
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 ## Add Parameter

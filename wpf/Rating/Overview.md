@@ -4,7 +4,7 @@ title: About WPF Rating control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Rating (SfRating) control, its elements and more.
 platform: wpf
 control: Rating
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Rating (SfRating) Overview

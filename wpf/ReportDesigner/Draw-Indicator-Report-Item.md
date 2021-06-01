@@ -4,7 +4,7 @@ title: Draw Indicator Report Item | ReportDesigner | wpf | Syncfusion
 description: draw indicator report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Indicator Report Item

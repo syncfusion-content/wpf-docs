@@ -4,7 +4,7 @@ title: Draw Image Report Item | ReportDesigner | wpf | Syncfusion
 description: draw image report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Image Report Item

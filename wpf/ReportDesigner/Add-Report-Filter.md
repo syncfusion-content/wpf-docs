@@ -4,7 +4,7 @@ title: Add Report Filter | ReportDesigner | wpf | Syncfusion
 description: add report filter
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Add Report Filter

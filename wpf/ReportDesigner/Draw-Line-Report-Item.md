@@ -4,7 +4,7 @@ title: Draw Line Report Item | ReportDesigner | wpf | Syncfusion
 description: draw line report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Line Report Item

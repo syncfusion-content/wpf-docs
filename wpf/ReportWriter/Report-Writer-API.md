@@ -4,7 +4,7 @@ title: Report Writer API | ReportWriter | WPF | Syncfusion
 description: report writer api
 platform: wpf
 control: ReportWriter
-documentation: ug
+ documentation: ug
 ---
 
 # ReportWriter API

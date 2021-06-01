@@ -4,7 +4,7 @@ title: ReportViewer API | ReportViewer | WPF | Syncfusion
 description: List of Reportviewer API
 platform: wpf
 control: ReportViewer
-documentation: ug
+ documentation: ug
 ---
 
 # ReportViewer API

@@ -4,7 +4,7 @@ title: Draw Rectangle Report Item | ReportDesigner | wpf | Syncfusion
 description: draw rectangle report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Rectangle Report Item

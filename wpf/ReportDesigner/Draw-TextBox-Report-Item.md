@@ -4,7 +4,7 @@ title: Draw TextBox Report Item | ReportDesigner | wpf | Syncfusion
 description: draw textbox report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw TextBox Report Item

@@ -4,7 +4,7 @@ title: Draw Chart Report Item | ReportDesigner | wpf | Syncfusion
 description: draw chart report item
 platform: wpf
 control: Report Designer
-documentation: ug
+ documentation: ug
 ---
 
 # Draw Chart Report Item
