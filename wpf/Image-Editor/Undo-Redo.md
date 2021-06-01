@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo, Redo support in syncfusion SfImageEditor WPF.
-description: Undo and Redo support.
+description: Undo and Redo support in Syncfusion Essential Studio WPF ImageEditor (SfImageEditor) control, its elements and more.
 platform: wpf
 control: SfImageEditor
 documentation: ug
