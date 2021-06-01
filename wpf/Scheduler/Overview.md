@@ -19,15 +19,15 @@ The WPF SfScheduler control is used to schedule and manage appointments through 
 
 ![Views in WPF Scheduler](Overview_Images/views.png)
 
-**Events** - Appointments contain information on events scheduled at specific times. In addition to default appointments, the users can use their own collections to connect a business entity to an appointment by mapping their fields, such as start time, end time, subject, notes, and recurrence.
+**Events** - Appointments contain information on events scheduled at specific times. In addition to the default appointments, the users can use their own collections to connect a business entity to an appointment by mapping their fields, such as start time, end time, subject, notes, and recurrence.
 
-**Recurrence Events** — Easily configure recurring events on a daily, weekly, monthly, or yearly basis. You can also skip or change the occurrence of a recurring appointment.
+**Recurrence Events** — Easily configure recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
 
 ![Recurring Events with exceptions in WPF Scheduler](Overview_Images/recurringExceptions.png)
 
 **Appointment Mapping** - SfScheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
 
-**Appointment Editor** - You can easily create, edit, or delete appointments using the built-in appointment editor.
+**Appointment Editor** - Create, edit, or delete appointments using the built-in appointment editor.
 
 ![Appointment editor in WPF Scheduler](Overview_Images/appointmentEditor.png)
 
@@ -37,10 +37,10 @@ The WPF SfScheduler control is used to schedule and manage appointments through 
 
 **Flexible working days** - Customize the workdays in a workweek so that the remaining days will be hidden from view.
 
-**Appearance Customization** — Provide a unique look to your scheduler with the event appearance customization.
+**Appearance Customization** — Provide a unique look to the scheduler with the event appearance customization.
 
 **Localization** — Display the current date and time by following the globalized date and time formats, and localize all available static texts in the SfScheduler.
 
-**Reminder** - You can use reminders to organize your appointments in your scheduler. The Scheduler reminds you of the appointment at the specified time.
+**Reminder** - Use the reminders to organize the appointments in the scheduler. The Scheduler reminds about the appointment at the specified time.
 
-**LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when you have appointments range for multiple years.
+**LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
