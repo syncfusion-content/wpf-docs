@@ -4,7 +4,7 @@ title: Getting Started with WPF PropertyGrid control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: WPF
 control: PropertyGrid
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF PropertyGrid
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF PropertyGrid via designer
 

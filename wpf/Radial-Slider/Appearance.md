@@ -4,7 +4,7 @@ title: Appearance in WPF Radial Slider control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion WPF Radial Slider (SfRadialSlider) control and more.
 platform: wpf
 control: SfRadialSlider
- documentation: ug
+documentation: ug
 ---
 
 # Appearance in WPF Radial Slider (SfRadialSlider)

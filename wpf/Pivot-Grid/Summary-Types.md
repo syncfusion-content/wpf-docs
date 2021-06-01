@@ -4,7 +4,7 @@ title: Summary Types in WPF Pivot Grid control | Syncfusion
 description: Learn about Summary Types support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Summary Types in WPF Pivot Grid
@@ -90,7 +90,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-!PivotGrid shows the values as double total sum and count format[](Summary-Images/PivotGrid shows summary type Double variance.png)
+!PivotGrid shows the values as double total sum and count format[Summary-Images](Summary-Images/PivotGrid shows summary type Double variance.png)
 
 ## DisplayIfDiscreteValuesEqual summary type in pivot grid
 

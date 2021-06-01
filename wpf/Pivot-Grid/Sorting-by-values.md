@@ -4,10 +4,10 @@ title: Sorting by Values | PivotGrid | Syncfusion
 description: Support to sort the specific value columns either in ascending or descending order in PivotGrid control.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
-# Sorting by Values
+# Sorting by Values in WPF Pivot Grid control
 
 Sorting-by-Values provides the following sort options:
 

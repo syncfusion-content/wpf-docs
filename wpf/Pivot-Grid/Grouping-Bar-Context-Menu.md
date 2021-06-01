@@ -4,7 +4,7 @@ title: Grouping Bar Context Menu in WPF Pivot Grid control | Syncfusion
 description: Learn about Grouping Bar Context Menu support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more details.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Grouping Bar Context Menu in WPF Pivot Grid

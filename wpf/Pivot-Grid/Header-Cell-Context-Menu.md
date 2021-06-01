@@ -4,7 +4,7 @@ title: Expand/Collapse Headers in WPF Pivot Grid control | Syncfusion
 description: Learn about Expand/Collapse Headers support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Expand/Collapse Headers in WPF Pivot Grid

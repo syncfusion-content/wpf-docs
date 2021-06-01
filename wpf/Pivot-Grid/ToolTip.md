@@ -4,7 +4,7 @@ title: Tooltip in WPF Pivot Grid control | Syncfusion
 description: Learn about Tooltip support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Tooltip in WPF Pivot Grid

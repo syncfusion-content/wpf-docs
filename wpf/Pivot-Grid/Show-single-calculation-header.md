@@ -4,7 +4,7 @@ title: Single Calculation Header in WPF Pivot Grid control | Syncfusion
 description: Learn about Single Calculation Header support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Single Calculation Header in WPF Pivot Grid

@@ -4,7 +4,7 @@ title: DisplayName of Property in WPF PropertyGrid control | Syncfusion
 description: Learn about DisplayName of Property support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
- documentation: ug
+documentation: ug
 ---
 
 # DisplayName of Property in WPF PropertyGrid

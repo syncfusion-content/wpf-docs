@@ -4,10 +4,10 @@ title: Sorting events | PivotGrid | Syncfusion
 description: Support to keep tracking of the sorter value fields, which is invoked before and after the sort operation.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
-# Sorting Events
+# Sorting Events in WPF Pivot Grid Control
 
 The pivot grid provides certain sorting events to keep track of the sorted value fields, which is invoked before and after the sort operation.
 

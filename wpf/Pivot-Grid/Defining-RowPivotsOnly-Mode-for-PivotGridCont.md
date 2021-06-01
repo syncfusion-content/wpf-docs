@@ -4,7 +4,7 @@ title: RowPivotsOnly Mode in WPF Pivot Grid control | Syncfusion
 description: Learn about RowPivotsOnly Mode support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # RowPivotsOnly Mode in WPF Pivot Grid

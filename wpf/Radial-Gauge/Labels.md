@@ -4,7 +4,7 @@ title: Labels in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Labels support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
- documentation: ug
+documentation: ug
 ---
 
 # Labels in WPF Radial Gauge (SfCircularGauge)

@@ -4,7 +4,7 @@ title: Nested Properties in WPF PropertyGrid control | Syncfusion
 description: Learn about Nested Properties support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
- documentation: ug
+documentation: ug
 ---
 
 # Nested Properties in WPF PropertyGrid

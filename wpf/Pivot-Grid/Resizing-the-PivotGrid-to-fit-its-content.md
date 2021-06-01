@@ -4,7 +4,7 @@ title: Resize to Fit in WPF Pivot Grid control | Syncfusion
 description: Learn about Resize to Fit support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
- documentation: ug
+documentation: ug
 ---
 
 # Resize to Fit in WPF Pivot Grid
