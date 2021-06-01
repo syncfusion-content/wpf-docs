@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sample Locations| Introduction | Wpf | Syncfusion
-description: sample locations
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Sample Locations, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Sample Locations
+# Sample Locations of Essential Studio WPF
 
 ## The Essential WPF samples are installed in the following location:
 
@@ -27,7 +27,7 @@ _C:\Program Files (x86)\Syncfusion\EssentialStudio\XX.X.X.XX\Infrastructure\Dash
 
 The following screenshot displays the Dashboard.
 
-![](Sample-Locations_images/Sample-Locations_img1.png)
+![Sample-Locations_images1](Sample-Locations_images/Sample-Locations_img1.png)
 
 
 Essential Studio Dashboard

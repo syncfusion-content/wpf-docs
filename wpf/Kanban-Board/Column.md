@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Column
+# Column in WPF Kanban (SfKanban) control
 
 ## Customizing column size
 
