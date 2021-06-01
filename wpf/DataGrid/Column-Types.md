@@ -232,7 +232,7 @@ By default, Columns handling the data operations (sorting and grouping) based on
 
 You can load any WPF control in the display mode for all columns by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) property. In edit mode, corresponding editor will be loaded based on column type.
 
-Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://msdn.microsoft.com/en-in/library/system.windows.datatrigger.aspx).
+Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatrigger?view=net-5.0).
 
 In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and TextBlock`. When you start editing `DoubleTextBox` will be loaded as Editor.
 
@@ -276,7 +276,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar and T
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=net-5.0) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -311,7 +311,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/sys
 
 ### Setting CellTemplate based on custom logic using template selector
 
-`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.
+`GridColumn` provides support to choose different [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=net-5.0) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector) property.
 
 For example, two different templates loaded alternatively in `OrderID` column. 
 
@@ -508,11 +508,11 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 ## Column Formatting
 
-`GridColumn` supports to format the data using [StringFormat](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.stringformat.aspx) and [Converter](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converter(v=vs.110).aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [StringFormat](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.bindingbase.stringformat?view=net-5.0) and [Converter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.binding.converter?view=net-5.0) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 ### Column formatting using Binding
 
-You can apply format for the column using [StringFormat](https://msdn.microsoft.com/en-us/library/system.windows.data.bindingbase.stringformat.aspx) property by defining `DisplayBinding`.  `StringFormat` applies to `GridTexColumn` alone. Refer the [Converter](#_Format_column_using) section to format the other column types.
+You can apply format for the column using [StringFormat](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.bindingbase.stringformat?view=net-5.0) property by defining `DisplayBinding`.  `StringFormat` applies to `GridTexColumn` alone. Refer the [Converter](#_Format_column_using) section to format the other column types.
 
 {% tabs %}
 {% highlight xaml %}
@@ -779,11 +779,11 @@ GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell
 
 ### GridTextColumnBase properties
 
-* **Text decorations** - You can [decorate](https://msdn.microsoft.com/en-us/library/system.windows.textdecorations.aspx) column’s data using [TextDecorations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextDecorations) property.
+* **Text decorations** - You can [decorate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textdecorations?view=net-5.0) column’s data using [TextDecorations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextDecorations) property.
 
-* **Text trimming** - You can [trim](https://msdn.microsoft.com/en-us/library/system.windows.texttrimming.aspx) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextTrimming) property.
+* **Text trimming** - You can [trim](https://docs.microsoft.com/en-us/dotnet/api/system.windows.texttrimming?view=net-5.0) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextTrimming) property.
 
-* **Text wrapping** - You can [wrap](https://msdn.microsoft.com/en-us/library/system.windows.textwrapping.aspx) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextWrapping) property.
+* **Text wrapping** - You can [wrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.textwrapping?view=net-5.0) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumnBase.html#Syncfusion_UI_Xaml_Grid_GridTextColumnBase_TextWrapping) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -877,15 +877,15 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 `GridNumericColumn` allows you to format the numeric data with culture-specific information.
 
-* [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberDecimalDigits)  **-** You can change the [Number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimaldigits.aspx) to be displayed after the decimal point using `NumberDecimalDigits` property. 
+* [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberDecimalDigits)  **-** You can change the [Number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numberdecimaldigits?view=net-5.0) to be displayed after the decimal point using `NumberDecimalDigits` property. 
 
-* [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberDecimalSeparator)  **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numberdecimalseparator.aspx) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeparator` property.  
+* [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberDecimalSeparator)  **-** By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numberdecimalseparator?view=net-5.0) of numeric value .You can use any operator as decimal separator using `NumberDecimalSeparator` property.  
 
-* [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberGroupSeparator)  **-** By default, the comma (,) [separates group of digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupseparator.aspx) before the decimal point. You can use any operator as group separator using `NumberGroupSeparator` property.
+* [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberGroupSeparator)  **-** By default, the comma (,) [separates group of digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbergroupseparator?view=net-5.0) before the decimal point. You can use any operator as group separator using `NumberGroupSeparator` property.
 
-* [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberGroupSizes) **-** You can change the [number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbergroupsizes.aspx) before the decimal point on numeric values using `NumberGroupSizes` property.
+* [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html#Syncfusion_UI_Xaml_Grid_GridNumericColumn_NumberGroupSizes) **-** You can change the [number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbergroupsizes?view=net-5.0) before the decimal point on numeric values using `NumberGroupSizes` property.
 
-* `Formatting negative pattern` **-** You can format the [pattern of negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.numbernegativepattern.aspx) numeric values using `NumberNegativePattern`. 
+* `Formatting negative pattern` **-** You can format the [pattern of negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.numbernegativepattern?view=net-5.0) numeric values using `NumberNegativePattern`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -945,15 +945,15 @@ this.dataGrid.Columns.Add(new GridCurrencyColumn() { MappingName = "UnitPrice", 
 
 * [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencySymbol) - By default, the currency symbol will be displayed based on culture. You can change the symbol using `CurrencySymbol` property. 
 
-* [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyDecimalDigits) - You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimaldigits.aspx) to be displayed after the decimal point on currency values using `CurrencyDecimalDigits` property. 
+* [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyDecimalDigits) - You can change the [number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencydecimaldigits?view=net-5.0) to be displayed after the decimal point on currency values using `CurrencyDecimalDigits` property. 
 
-* [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencydecimalseparator.aspx) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeparator` property. 
+* [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyDecimalSeparator) - By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencydecimalseparator?view=net-5.0) of currency value .You can use any operator as decimal separator through `CurrencyDecimalSeparator` property. 
 
-* [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyGroupSeparator) - By default, the comma (,) [separates the group](https://msdn.microsoft.com/en-US/library/system.globalization.numberformatinfo.currencygroupseparator(v=vs.110).aspx) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeparator property. 
+* [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyGroupSeparator) - By default, the comma (,) [separates the group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencygroupseparator?view=net-5.0) of digits before the decimal point on currency value .You can use any operator as group separator through CurrencyGroupSeparator property. 
 
-* [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyGroupSizes) - You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencygroupsizes.aspx) before the decimal point on currency value using `CurrencyGroupSizes` property. 
+* [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyGroupSizes) - You can specify [the number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencygroupsizes?view=net-5.0) before the decimal point on currency value using `CurrencyGroupSizes` property. 
 
-* `Pattern` - You can format the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencypositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencynegativepattern.aspx) currency values through [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyPositivePattern) and [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyNegativePattern). 
+* `Pattern` - You can format the pattern for both [positive](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencypositivepattern?view=net-5.0) and [negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencynegativepattern?view=net-5.0) currency values through [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyPositivePattern) and [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html#Syncfusion_UI_Xaml_Grid_GridCurrencyColumn_CurrencyNegativePattern). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1003,15 +1003,15 @@ this.dataGrid.Columns.Add(new GridPercentColumn() { HeaderText = "Discount", Map
 
 * [PercentSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentSymbol) **-** By default, the percent operator (%) will be loaded with the value. You can change the symbol using `PercentSymbol` property. 
 
-* [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentDecimalDigits) **-** You can change the [number of decimal digits](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimaldigits.aspx) to be displayed after the decimal point on percent value can be specified using `PercentDecimalDigits` property. 
+* [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentDecimalDigits) **-** You can change the [number of decimal digits](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentdecimaldigits?view=net-5.0) to be displayed after the decimal point on percent value can be specified using `PercentDecimalDigits` property. 
 
-* [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentDecimalSeparator) **-** By default, the dot (.) operator [separates the decimal part](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentdecimalseparator.aspx) of percent value .You can use any operator as decimal separator using `PercentDecimalSeparator` property.
+* [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentDecimalSeparator) **-** By default, the dot (.) operator [separates the decimal part](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentdecimalseparator?view=net-5.0) of percent value .You can use any operator as decimal separator using `PercentDecimalSeparator` property.
 
-* [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentGroupSeparator) **-** By default, the comma (,) operator [separates the group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupseparator.aspx) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeparator` property. 
+* [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentGroupSeparator) **-** By default, the comma (,) operator [separates the group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentgroupseparator?view=net-5.0) of digits left to the decimal point on currency value .You can use any operator as group separator using `PercentGroupSeparator` property. 
 
-* [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentGroupSizes) **-** You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupsizes.aspx) before the decimal point through `PercentGroupSizes` property. 
+* [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentGroupSizes) **-** You can specify [the number of digits in each group](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentgroupsizes?view=net-5.0) before the decimal point through `PercentGroupSizes` property. 
 
-* `Pattern` **-** You can specify the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentpositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentnegativepattern.aspx) percent values through [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentPositivePattern) and [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentNegativePattern).
+* `Pattern` **-** You can specify the pattern for both [positive](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentpositivepattern?view=net-5.0) and [negative](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.percentnegativepattern?view=net-5.0) percent values through [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentPositivePattern) and [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html#Syncfusion_UI_Xaml_Grid_GridPercentColumn_PercentNegativePattern).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1240,7 +1240,7 @@ You can increment or decrement the selected part of date time value by enabling 
 
 ### Format using Converter
 
-`GridDateTimeColumn`  allows you to set different cultures by setting [ConverterCulture](https://msdn.microsoft.com/en-us/library/system.windows.data.binding.converterculture.aspx) property in [DisplayBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_DisplayBinding) and [ValueBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ValueBinding).
+`GridDateTimeColumn`  allows you to set different cultures by setting [ConverterCulture](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.binding.converterculture?view=net-5.0) property in [DisplayBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_DisplayBinding) and [ValueBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ValueBinding).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1314,7 +1314,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 `GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any WPF control in the display mode for all columns by setting [CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) and [EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html#Syncfusion_UI_Xaml_Grid_GridTemplateColumn_EditTemplate)   properties.
 
-Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://msdn.microsoft.com/en-in/library/system.windows.datatrigger.aspx).
+Using `CellTemplate`, you can format data or conditionally change the properties using [DataTrigger](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatrigger?view=net-5.0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1440,7 +1440,7 @@ You can allow logical focus to specific UIElement loaded inside `EditTemplate` o
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
+You can use the same [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=net-5.0) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundValue) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -1561,7 +1561,7 @@ You can keep the drop-down control open when start editing on the text box of `C
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://msdn.microsoft.com/en-us/library/system.windows.controls.virtualizingstackpanel.aspx) as [ItemsPanelTemplate](https://msdn.microsoft.com/en-in/library/system.windows.controls.itemspaneltemplate.aspx) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel]https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/ms617901(v=vs.95)) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemspaneltemplate?view=net-5.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1581,7 +1581,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-in/library/system.windows.controls.combobox.isdropdownopen.aspx) property to `true` in [OnEditElementLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellComboBoxRenderer.html#Syncfusion_UI_Xaml_Grid_Cells_GridCellComboBoxRenderer_OnEditElementLoaded_System_Object_System_Windows_RoutedEventArgs_) method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.combobox.isdropdownopen?view=net-5.0) property to `true` in [OnEditElementLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellComboBoxRenderer.html#Syncfusion_UI_Xaml_Grid_Cells_GridCellComboBoxRenderer_OnEditElementLoaded_System_Object_System_Windows_RoutedEventArgs_) method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellRenderers) collection.
 
@@ -2109,7 +2109,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Image", MappingN
 
 * [Stretch](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html#Syncfusion_UI_Xaml_Grid_GridImageColumn_Stretch) **-** The image can be stretch by setting `Stretch` property.
 
-* [Scale](https://msdn.microsoft.com/en-us/library/system.windows.controls.image.stretchdirection.aspx) - You can `scale` the image using [StretchDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html#Syncfusion_UI_Xaml_Grid_GridImageColumn_StretchDirection) property.
+* [Scale](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.image.stretchdirection?view=net-5.0) - You can `scale` the image using [StretchDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html#Syncfusion_UI_Xaml_Grid_GridImageColumn_StretchDirection) property.
 
 ## GridMaskColumn
 
@@ -2373,7 +2373,7 @@ SfDataGrid allows you to create your own column by overriding predefined column 
 
 You can create your own column by overriding the [predefined](#_Overriding_existing_cell) column types in SfDataGrid.
 
-For example, the `GridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `GridDateTimeColumn` class.
+For example, the `GridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset?view=net-5.0) value, you can create a new column by overriding the `GridDateTimeColumn` class.
 
 In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DisplayBinding` (non-edit).
 
