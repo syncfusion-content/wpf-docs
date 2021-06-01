@@ -90,7 +90,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-!PivotGrid shows the values as double total sum and count format[Summary-Images](Summary-Images/PivotGrid shows summary type Double variance.png)
+![PivotGrid shows the values as double total sum and count format](Summary-Images/PivotGrid shows summary type Double variance.png)
 
 ## DisplayIfDiscreteValuesEqual summary type in pivot grid
 
