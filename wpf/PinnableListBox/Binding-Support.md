@@ -90,6 +90,6 @@ public class Model
 
 {% endtabs %}
 
-![](Binding-Support_images/Binding-Support_img1.png)
+![Binding-Support_images](Binding-Support_images/Binding-Support_img1.png)
 
 

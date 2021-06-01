@@ -375,7 +375,7 @@ pdfviewer1.EnableNotificationBar= False
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog opens upon triggering the Print button.
 
-![](Concept-and-Features_images/Concept-and-Features_img1.png)
+![Concept-and-Features_images1](Concept-and-Features_images/Concept-and-Features_img1.png)
 
 
 
@@ -514,7 +514,7 @@ Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 Essential PDF Viewer allows you to search and highlight the text in the PDF document. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
 
-![C:/Users/Suresh/Desktop/UG Pravin/TextSearchWPF.png](Concept-and-Features_images/Concept-and-Features_img2.png)
+![Concept-and-Features_images2](Concept-and-Features_images/Concept-and-Features_img2.png)
 
 
 
