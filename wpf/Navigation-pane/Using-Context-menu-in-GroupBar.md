@@ -4,7 +4,7 @@ title: Using Context menu in GroupBar in WPF Navigation Pane | Syncfusion
 description: Learn here all about Using Context menu in GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
-documentation: ug
+ documentation: ug
 ---
 
 # Using Context menu in GroupBar in WPF Navigation Pane (GroupBar)

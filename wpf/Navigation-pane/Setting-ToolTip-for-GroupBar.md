@@ -4,7 +4,7 @@ title: Setting ToolTip for GroupBar in WPF Navigation Pane | Syncfusion
 description: Learn here all about Setting ToolTip for GroupBar support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
-documentation: ug
+ documentation: ug
 ---
 
 # Setting ToolTip for GroupBar in WPF Navigation Pane (GroupBar)

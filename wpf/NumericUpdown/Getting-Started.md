@@ -4,7 +4,7 @@ title: Getting Started with WPF NumericUpdown control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF NumericUpdown (UpDown) control, its elements and more details.
 platform: wpf
 control: UpDown
-documentation: ug
+ documentation: ug
 ---
 # Getting Started with WPF NumericUpdown (UpDown)
 

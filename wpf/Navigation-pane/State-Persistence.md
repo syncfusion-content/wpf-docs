@@ -4,7 +4,7 @@ title: State Persistence in WPF Navigation Pane control | Syncfusion
 description: Learn here all about State Persistence support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
-documentation: ug
+ documentation: ug
 ---
 
 # State Persistence in WPF Navigation Pane (GroupBar)

@@ -4,7 +4,7 @@ title: Editing and AutoCompletion| SfMultiColumnDropDownControl | Wpf | Syncfusi
 description: editing and autocompletion
 platform: wpf
 control: SfMultiColumnDropDownControl
-documentation: ug
+ documentation: ug
 ---
 
 # Editing and AutoCompletion

@@ -4,7 +4,7 @@ title: Number Formatting in WPF NumericUpdown control | Syncfusion
 description: Learn here all about Number Formatting support in Syncfusion WPF NumericUpdown (UpDown) control and more.
 platform: wpf
 control: UpDown
-documentation: ug
+ documentation: ug
 ---
 
 # Number Formatting in WPF NumericUpdown (UpDown)

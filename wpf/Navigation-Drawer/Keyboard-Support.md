@@ -4,7 +4,7 @@ title: Keyboard Support in WPF Navigation Drawer control | Syncfusion
 description: Learn here all about Keyboard Support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
-documentation: ug
+ documentation: ug
 ---
 
 #  Keyboard Support in WPF NavigationDrawer (SfNavigationDrawer)

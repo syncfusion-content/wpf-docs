@@ -4,7 +4,7 @@ title: Popup Options| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: popup options
 platform: wpf
 control: SfMultiColumnDropDownControl
-documentation: ug
+ documentation: ug
 ---
 
 # Popup Options

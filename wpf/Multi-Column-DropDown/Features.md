@@ -4,7 +4,7 @@ title: Features
 description: features
 platform: wpf
 control: SfMultiColumnDropDownControl
-documentation: ug
+ documentation: ug
 ---
 
 # Features

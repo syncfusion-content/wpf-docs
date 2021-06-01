@@ -4,7 +4,7 @@ title: Keyboard Support| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: keyboard support
 platform: wpf
 control: SfMultiColumnDropDownControl
-documentation: ug
+ documentation: ug
 ---
 
 # Keyboard Support

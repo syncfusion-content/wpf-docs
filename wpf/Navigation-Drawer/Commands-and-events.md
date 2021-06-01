@@ -4,7 +4,7 @@ title: Commands and events in WPF Navigation Drawer control | Syncfusion
 description: Learn here all about Commands and events support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
-documentation: ug
+ documentation: ug
 ---
 
 #  Commands and events in SfNavigationDrawer

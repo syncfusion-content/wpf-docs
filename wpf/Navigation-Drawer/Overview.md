@@ -4,7 +4,7 @@ title: About WPF Navigation Drawer control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control, its elements and more details.
 platform: WPF
 control: NavigationDrawer
-documentation: ug
+ documentation: ug
 ---
 
 # WPF Navigation Drawer (SfNavigationDrawer) Overview
