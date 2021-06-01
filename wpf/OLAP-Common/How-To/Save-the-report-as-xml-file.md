@@ -4,7 +4,7 @@ title: Save the report as xml file| OLAPCommon | Wpf | Syncfusion
 description: save the report as xml file
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Save the report as XML file

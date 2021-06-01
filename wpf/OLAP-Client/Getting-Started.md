@@ -4,7 +4,7 @@ title: Getting Started with WPF Olap Client control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Olap Client

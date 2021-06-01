@@ -4,7 +4,7 @@ title: Showhide the Expander buttons in OLAP controls| OLAPCommon | Wpf | Syncfu
 description: show/hide the expander buttons in olap controls
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Show/hide the Expander buttons in OLAP controls

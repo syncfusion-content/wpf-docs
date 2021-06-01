@@ -4,7 +4,7 @@ title: Create a WCF Service for Silverlight OLAP control| OLAPCommon | Wpf | Syn
 description: create a wcf service for silverlight olap control
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Create a WCF Service for Silverlight OLAP control

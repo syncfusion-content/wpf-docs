@@ -4,7 +4,7 @@ title: Getting Started with WPF Pdf Viewer control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Getting Started with WPF Pdf Viewer

@@ -4,7 +4,7 @@ title: Select and Copy Text in WPF Pdf Viewer control | Syncfusion
 description: Learn about Select and Copy Text support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Select and Copy Text in WPF Pdf Viewer

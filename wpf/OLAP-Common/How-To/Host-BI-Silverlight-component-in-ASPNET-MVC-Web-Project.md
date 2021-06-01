@@ -4,7 +4,7 @@ title: Host BI Silverlight component in ASPNET MVC Web Pr| OLAPCommon | Wpf | Sy
 description: host bi silverlight component in asp.net mvc web project
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Host BI Silverlight component in ASP.NET MVC Web Project

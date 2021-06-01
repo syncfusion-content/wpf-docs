@@ -4,7 +4,7 @@ title: Concept-and-Features
 description: concept and features
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Concept and Features

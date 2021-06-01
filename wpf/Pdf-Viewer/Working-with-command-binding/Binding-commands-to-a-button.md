@@ -4,7 +4,7 @@ title: Working with Commands in WPF Pdf Viewer control | Syncfusion
 description: Learn about Working with Commands support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Working with Commands in WPF Pdf Viewer

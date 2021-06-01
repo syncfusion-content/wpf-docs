@@ -4,7 +4,7 @@ title: LoadOlapDataManager| OLAPCommon | Wpf | Syncfusion
 description: loadolapdatamanager
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # LoadOlapDataManager

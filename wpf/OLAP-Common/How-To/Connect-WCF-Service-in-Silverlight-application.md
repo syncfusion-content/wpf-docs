@@ -4,7 +4,7 @@ title: Connect WCF Service in Silverlight application| OLAPCommon | Wpf | Syncfu
 description: connect wcf service in silverlight application
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Connect WCF Service in Silverlight application

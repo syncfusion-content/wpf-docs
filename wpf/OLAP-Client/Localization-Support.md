@@ -4,7 +4,7 @@ title: Localization Support
 description: Localization support
 platform: wpf
 control: OLAP Client
-documentation: ug
+ documentation: ug
 ---
 
 # Localization Support

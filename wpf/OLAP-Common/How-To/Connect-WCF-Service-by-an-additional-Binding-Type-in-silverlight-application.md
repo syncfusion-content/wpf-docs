@@ -4,7 +4,7 @@ title: Connect WCF Service by an additional Binding Type | OLAPCommon | Wpf | Sy
 description: connect wcf service by an additional binding type in silverlight application
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Connect WCF Service by an additional Binding Type in Silverlight application

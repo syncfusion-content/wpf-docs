@@ -4,7 +4,7 @@ title: Disable toolbar items| PDF Viewer | Wpf | Syncfusion
 description: This section explains how to disable a toolbar item and contains the table showing the complete list of toolbar items and their types.
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Disable toolbar items

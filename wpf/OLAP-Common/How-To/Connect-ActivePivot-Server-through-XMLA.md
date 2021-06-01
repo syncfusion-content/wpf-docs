@@ -4,7 +4,7 @@ title: Connect ActivePivot Server through XMLA| | Wpf | Syncfusion
 description: connect activepivot server through xmla
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Connect ActivePivot Server through XMLA

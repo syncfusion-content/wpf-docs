@@ -4,7 +4,7 @@ title: Styling and formatting using MDX query | OLAP Grid | Syncfusion
 description: Section helps to know how to apply styling and formatting to grid cells using MDX query in OLAP Grid control | Syncfusion
 platform: wpf
 control: OlapGrid
-documentation: ug
+ documentation: ug
 ---
 
 # Styling and formatting using MDX query

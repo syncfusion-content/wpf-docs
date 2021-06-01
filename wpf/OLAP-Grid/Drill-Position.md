@@ -4,7 +4,7 @@ title: Drill Position in WPF Olap Grid control | Syncfusion
 description: Learn about Drill Position support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
-documentation: ug
+ documentation: ug
 ---
 
 # Drill Position in WPF Olap Grid

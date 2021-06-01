@@ -4,7 +4,7 @@ title: Cell Selection in WPF Olap Grid control | Syncfusion
 description: Learn about Cell Selection support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
-documentation: ug
+ documentation: ug
 ---
 
 # Cell Selection in WPF Olap Grid

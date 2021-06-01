@@ -4,7 +4,7 @@ title: Establish the connection for an SSAS Server| OLAPCommon | Wpf | Syncfusio
 description: establish the connection for an ssas server
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Establish the connection for an SSAS Server

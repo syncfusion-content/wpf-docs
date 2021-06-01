@@ -4,7 +4,7 @@ title: SetCurrentReport| OLAPCommon | Wpf | Syncfusion
 description: setcurrentreport 
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # SetCurrentReport 

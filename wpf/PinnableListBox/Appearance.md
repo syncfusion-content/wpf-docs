@@ -4,7 +4,7 @@ title: Appearance | PinnableListBox | wpf | Syncfusion
 description: appearance      
 platform: wpf
 control: PinnableListBox 
-documentation: ug
+ documentation: ug
 ---
 
 # Appearance      

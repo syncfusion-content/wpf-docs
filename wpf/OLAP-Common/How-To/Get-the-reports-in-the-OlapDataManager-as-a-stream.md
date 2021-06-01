@@ -4,7 +4,7 @@ title: Get the reports in the OlapDataManager as a stream| OLAPCommon | Wpf | Sy
 description: get the reports in the olapdatamanager as a stream
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Get the reports in the OlapDataManager as a stream

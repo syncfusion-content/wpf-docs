@@ -4,7 +4,7 @@ title: Binding Support | PinnableListBox | wpf | Syncfusion
 description: binding support
 platform: wpf
 control: PinnableListBox 
-documentation: ug
+ documentation: ug
 ---
 
 # Binding Support

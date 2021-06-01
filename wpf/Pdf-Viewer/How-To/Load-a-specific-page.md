@@ -4,7 +4,7 @@ title: Load a specific page| PDF Viewer | Wpf | Syncfusion
 description: load a specific page
 platform: wpf
 control: PDF Viewer
-documentation: ug
+ documentation: ug
 ---
 
 # Load a specific page

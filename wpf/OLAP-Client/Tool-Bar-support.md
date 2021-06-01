@@ -4,7 +4,7 @@ title: Toolbars
 description: Toolbars in OLAP Client
 platform: wpf
 control: OLAP Client 
-documentation: ug
+ documentation: ug
 ---
 
 # Toolbars

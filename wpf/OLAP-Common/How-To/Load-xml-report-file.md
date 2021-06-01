@@ -4,7 +4,7 @@ title: Load xml report file| OLAPCommon | Wpf | Syncfusion
 description: load xml report file
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Load XML report file

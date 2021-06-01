@@ -4,7 +4,7 @@ title: Storing and Retrieving Report as Stream
 description: Storing and retrieving report as stream
 platform: wpf
 control: OLAP Client
-documentation: ug
+ documentation: ug
 ---
 
 # Storing and Retrieving Report as Stream

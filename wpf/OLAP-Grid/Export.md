@@ -4,7 +4,7 @@ title: Export| OLAP Grid | Wpf | Syncfusion
 description: export
 platform: wpf
 control: OLAP Grid
-documentation: ug
+ documentation: ug
 ---
 
 # Export

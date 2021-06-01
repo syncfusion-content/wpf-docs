@@ -4,7 +4,7 @@ title: Add UseWhereClauseForSlicing to an Application| OLAPCommon | Wpf | Syncfu
 description: add usewhereclauseforslicing to an application
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Add UseWhereClauseForSlicing to an Application

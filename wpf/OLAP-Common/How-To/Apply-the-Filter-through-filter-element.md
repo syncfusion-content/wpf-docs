@@ -4,7 +4,7 @@ title: Apply the Filter through filter element| OLAPCommon | Wpf | Syncfusion
 description: apply the filter through filter element
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Apply the Filter through filter element

@@ -4,7 +4,7 @@ title: KPI in WPF Olap Grid control | Syncfusion
 description: Learn about KPI support in Syncfusion Essential Studio WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
-documentation: ug
+ documentation: ug
 ---
 
 # KPI in WPF Olap Grid

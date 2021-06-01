@@ -4,7 +4,7 @@ title: CurrentReport| OLAPCommon | Wpf | Syncfusion
 description: currentreport
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # CurrentReport

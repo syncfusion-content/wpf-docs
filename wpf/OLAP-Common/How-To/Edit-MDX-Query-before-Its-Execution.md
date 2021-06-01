@@ -4,7 +4,7 @@ title: Edit MDX Query before Its Execution| OLAPCommon | Wpf | Syncfusion
 description: edit mdx query before its execution
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Edit MDX Query before Its Execution

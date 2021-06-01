@@ -4,7 +4,7 @@ title: LoadReportDefinitionFile| OLAPCommon | Wpf | Syncfusion
 description: loadreportdefinitionfile
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # LoadReportDefinitionFile

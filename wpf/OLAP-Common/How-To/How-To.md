@@ -4,7 +4,7 @@ title: How-To
 description: how to
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # How To

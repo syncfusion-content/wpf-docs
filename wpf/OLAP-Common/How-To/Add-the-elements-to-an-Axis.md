@@ -4,7 +4,7 @@ title: Add the elements to an Axis| OLAPCommon | Wpf | Syncfusion
 description: add the elements to an axis
 platform: wpf
 control: OLAPCommon
-documentation: ug
+ documentation: ug
 ---
 
 # Add the elements to an Axis
