@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Other Features | DockingManager | WPF | Syncfusion
-description: Other features of DockingManager
+description: Other features of Syncfusion Essential Studio WPF DockingManager control, its elements, features and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Other Features
+# Other Features in WPF DockingManager Control
 
 ## Using Adorner Drag Provider and Adorner FloatWindow
 

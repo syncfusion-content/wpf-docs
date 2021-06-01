@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restricting level selection| Hierarchical Navigator | Wpf | Syncfusion
-description: restricting level selection
+description: Restricting level selection in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

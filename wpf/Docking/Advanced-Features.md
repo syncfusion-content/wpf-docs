@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Advanced Features | DockingManager | WPF | Syncfusion
-description: Advanced features of DockingManager
+description: Advanced features of Syncfusion Essential Studio WPF DockingManager Control, its elements, features and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-# Advanced Features
+# Advanced Features in WPF DockingManager Control
 
 ## Setting Visual Styles for Document Container
 
@@ -58,59 +58,59 @@ SkinStorage.SetVisualStyle(this.DockingManager, Office2007Silver);
 
 {% endhighlight %}
 
-![](Advanced-Features_images/Advanced-Features_img1.png)
+![Advanced-Features_images1](Advanced-Features_images/Advanced-Features_img1.png)
 
 DockingManager with "Office2007Blue" Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img2.png)
+![Advanced-Features_images2](Advanced-Features_images/Advanced-Features_img2.png)
 
 DockingManager with "Office2007Black" Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img3.png)
+![Advanced-Features_images3](Advanced-Features_images/Advanced-Features_img3.png)
 
 DockingManager with "Office2007Silver" Visual Style
 {:.caption}
 
-![](Advanced-Features_images/Advanced-Features_img4.png)
+![Advanced-Features_images4](Advanced-Features_images/Advanced-Features_img4.png)
 
 DockingManager with "Office2010Blue" Visual Style
 {:.caption}
 
-![](Advanced-Features_images/Advanced-Features_img5.png)
+![Advanced-Features_images5](Advanced-Features_images/Advanced-Features_img5.png)
 
 DockingManager with "Office2010Black" Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img6.png)
+![Advanced-Features_images6](Advanced-Features_images/Advanced-Features_img6.png)
 
 DockingManager with "Office2010Silver" Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img7.png)
+![Advanced-Features_images7](Advanced-Features_images/Advanced-Features_img7.png)
 
 DockingManager with "Blend” Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img8.png)
+![Advanced-Features_images8](Advanced-Features_images/Advanced-Features_img8.png)
 
 DockingManager with “VS2010” Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img9.png)
+![Advanced-Features_images9](Advanced-Features_images/Advanced-Features_img9.png)
 
 DockingManager with “Metro” Visual Style
 {:.caption}
 
 
-![](Advanced-Features_images/Advanced-Features_img10.png)
+![Advanced-Features_images10](Advanced-Features_images/Advanced-Features_img10.png)
 
 DockingManager with “Transparent” Visual Style
 {:.caption}
@@ -157,7 +157,7 @@ DockingManager.UseDocumentContainer = false;
 {% endtabs %} 
 
 
-![](Advanced-Features_images/Advanced-Features_img11.jpeg)
+![Advanced-Features_images11](Advanced-Features_images/Advanced-Features_img11.jpeg)
 
 UseDocumentContainer = "False"
 {:.caption}
@@ -200,7 +200,7 @@ The below code snippet creates a client control for the DockingManager.
 
 {% endhighlight  %}
 
-![](Advanced-Features_images/Advanced-Features_img12.jpeg)
+![Advanced-Features_images12](Advanced-Features_images/Advanced-Features_img12.jpeg)
 
 Client Control Created for the Docking Manager
 {:.caption}
@@ -358,7 +358,7 @@ this.dockingManager.DockFillDocumentMode =DockFillDocumentMode.Normal;
 
 
 
-![](Advanced-Features_images/Advanced-Features_img13.png)
+![Advanced-Features_images13](Advanced-Features_images/Advanced-Features_img13.png)
 
 DockFillDocumentMode = “Normal” (when DockFill is set to True)
 {:.caption}
@@ -503,7 +503,7 @@ public class Person
 
 {% endhighlight  %}
 
-![](Advanced-Features_images/Advanced-Features_img14.jpeg)
+![Advanced-Features_images14](Advanced-Features_images/Advanced-Features_img14.jpeg)
 
 DataBinding Demo
 {:.caption}                                           
@@ -668,7 +668,7 @@ web1.Navigate(new Uri("http://syncfusion.com"));
 
 
 
-![](Advanced-Features_images/Advanced-Features_img15.jpeg)
+![Advanced-Features_images15](Advanced-Features_images/Advanced-Features_img15.jpeg)
 
 WebBrowser as child of DockingManager
 {:.caption}
@@ -683,7 +683,7 @@ Use Case Scenario
 * This Drag and Drop support will enhance the Linked Manager functionality between Docking Managers.
 * It permits the user to have better usability of any windows residing in any Docking Manager.
 
-![](Advanced-Features_images/Advanced-Features_img16.png)
+![Advanced-Features_images16](Advanced-Features_images/Advanced-Features_img16.png)
 
 Linked Manager Support
 {:.caption}
@@ -697,7 +697,7 @@ To view samples:
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 2. In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
-![](Advanced-Features_images/Advanced-Features_img17.png)
+![Advanced-Features_images17](Advanced-Features_images/Advanced-Features_img17.png)
 
 Sample Browser
 {:.caption}
@@ -831,7 +831,7 @@ This feature helps to Maximize/Minimize Docked Windows for better usage of each 
 * It helps a particular docked window to provide a maximized view 
 * It can minimize a docked window and can be restored when needed
 
-![](Advanced-Features_images/Advanced-Features_img18.png)
+![Advanced-Features_images18](Advanced-Features_images/Advanced-Features_img18.png)
 
 Minimize/Maximize Support
 {:.caption}
@@ -843,7 +843,7 @@ To view samples:
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 2. In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
-![](Advanced-Features_images/Advanced-Features_img19.png)
+![Advanced-Features_images19](Advanced-Features_images/Advanced-Features_img19.png)
 
 Sample Browser
 {:.caption}
@@ -1027,12 +1027,12 @@ this.dockingManager.MaximizeMode = MaximizeMode.FullScreen;
 
 
 
-![](Advanced-Features_images/Advanced-Features_img20.png)
+![Advanced-Features_images20](Advanced-Features_images/Advanced-Features_img20.png)
 
 MaximizeMode = “FullScreen” (when MaximizedState is Normal)
 {:.caption}
 
-![](Advanced-Features_images/Advanced-Features_img21.png)
+![Advanced-Features_images21](Advanced-Features_images/Advanced-Features_img21.png)
 
 MaximizeMode = “FullScreen” (when MaximizedState is Maximized)
 {:.caption}
@@ -1047,7 +1047,7 @@ This feature helps the user to have a clear view of the AutoHidden items header 
 
 
 
-![](Advanced-Features_images/Advanced-Features_img22.png)
+![Advanced-Features_images22](Advanced-Features_images/Advanced-Features_img22.png)
 {:.caption}
 
 Excel-like Scrollable View
@@ -1062,7 +1062,7 @@ To view samples:
 
 
 
-![](Advanced-Features_images/Advanced-Features_img23.png)
+![Advanced-Features_images23](Advanced-Features_images/Advanced-Features_img23.png)
 
 Sample Browser
 {:.caption}

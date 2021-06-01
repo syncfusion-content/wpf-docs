@@ -42,7 +42,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Printing support in WPF treegrid](Printing_images/Printing_img1.png)
+![Printing in WPF TreeGrid](Printing_images/wpf-treegrid-printing.png)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-print-wpf-treegrid-with-pdfviewercontrol).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position FloatWindow using FloatWindowRect | DockingManager | wpf | Syncfusion
-description: position floatwindow using floatwindowrect
+title: Position FloatWindow in WPF DockingManager Control | Syncfusion
+description: Position floatwindow using floatwindowrect in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding items to the HierarchyNavigator control| Hierarchical Navigator | Wpf | Syncfusion
-description: adding items to the hierarchynavigator control
+title: Adding items to the WPF HierarchyNavigator control | Syncfusion
+description: Adding items to the Syncfusion Essential Studio WPF hierarchynavigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

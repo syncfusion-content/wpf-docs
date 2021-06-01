@@ -22,5 +22,5 @@ The following code example illustrates how to insert picture into the SfRichText
 ## Image Resizer
 
 The SfRichTextBoxAdv also supports built-in image resizer to resize the images present in the document to your wish. The image resizer accepts both touch and mouse interactions.
-![Image_img1](Image_images/Image_img1.jpeg)
+![WPF RichTextBox with Image](Image_images/wpf-richtextbox-image.jpeg)
 

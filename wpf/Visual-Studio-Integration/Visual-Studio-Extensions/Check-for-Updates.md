@@ -7,7 +7,7 @@ control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Check for Updates
+# Check for Updates in Syncfusion Essential WPF
 
 Syncfusion provides the Extensions to update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
