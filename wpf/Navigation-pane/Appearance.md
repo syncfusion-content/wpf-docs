@@ -4,7 +4,7 @@ title: Appearance in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
- documentation: ug
+documentation: ug
 ---
 
 # Appearance in WPF Navigation Pane (GroupBar)

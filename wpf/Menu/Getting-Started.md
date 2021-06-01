@@ -4,7 +4,7 @@ title: Getting Started with WPF Menu control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Menu (MenuAdv) control, its elements and more details.
 platform: wpf
 control: MenuAdv
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Menu (MenuAdv)

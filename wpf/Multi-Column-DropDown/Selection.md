@@ -4,7 +4,7 @@ title: Selection in WPF Multi Column Dropdown control | Syncfusion
 description: Learn here all about Selection support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
- documentation: ug
+documentation: ug
 ---
 
 # Selection in WPF Multi Column Dropdown (SfMultiColumnDropDown)
@@ -202,7 +202,7 @@ internal class MultiConverter : IMultiValueConverter
 
 ![Loading custom control in dropdown of WPF SfMultiColumnDropDownControl](Selection_images/Selection_img4.png)
 
-You can refer `Search with TextBox in DropDown` section in this [sample](https://github.com/syncfusion/wpf-demos/tree/master/MultiColumn%20Dropdown/MultiColumnDropDownDemo/CS).
+You can refer `Search with TextBox in DropDown` section in this [sample](https://github.com/syncfusion/wpf-demos/tree/master/dropdown/Multi%20Column%20Dropdown).
 
 N> You can load custom control in drop-down only when SelectionMode is Multiple.
 

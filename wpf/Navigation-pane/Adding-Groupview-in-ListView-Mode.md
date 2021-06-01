@@ -4,7 +4,7 @@ title: Adding Groupview in ListView Mode in WPF Navigation Pane | Syncfusion
 description: Learn here all about Adding Groupview in ListView Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
- documentation: ug
+documentation: ug
 ---
 
 # Adding Groupview in ListView Mode in WPF Navigation Pane (GroupBar)

@@ -4,7 +4,7 @@ title: Closing the GroupBar in Stack Mode in WPF Navigation Pane | Syncfusion
 description: Learn here all about Closing the GroupBar in Stack Mode support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
- documentation: ug
+documentation: ug
 ---
 
 # Closing the GroupBar in Stack Mode in WPF Navigation Pane (GroupBar)

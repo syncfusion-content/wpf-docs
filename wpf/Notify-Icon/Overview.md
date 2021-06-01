@@ -4,7 +4,7 @@ title: About WPF Notify Icon control | Syncfusion
 description: Learn here all about introduction of Syncfusion WPF Notify Icon control, its elements and more details.
 platform: wpf
 control: NotifyIcon
- documentation: ug
+documentation: ug
 ---
 
 # WPF Notify Icon Overview

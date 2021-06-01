@@ -4,7 +4,7 @@ title: Getting Started with WPF Navigation Pane control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Navigation Pane (GroupBar) control, its elements and more details.
 platform: WPF
 control: GroupBar
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Navigation Pane (GroupBar)
@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Create a simple application with GroupBar
 

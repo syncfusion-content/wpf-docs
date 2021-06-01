@@ -4,7 +4,7 @@ title: Default Image for the GroupView Item in Navigation Pane | Syncfusion
 description: Learn here all about Default Image for the GroupView Item support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: Navigation Pane
- documentation: ug
+documentation: ug
 ---
 
 # Default Image for the GroupView Item in WPF Navigation Pane (GroupBar)

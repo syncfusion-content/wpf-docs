@@ -4,7 +4,7 @@ title: Filtering in WPF Multi Column Dropdown control | Syncfusion
 description: Learn here all about Filtering support in Syncfusion WPF Multi Column Dropdown (SfMultiColumnDropDown) control and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
- documentation: ug
+documentation: ug
 ---
 
 # Filtering in WPF Multi Column Dropdown (SfMultiColumnDropDown)

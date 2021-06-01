@@ -4,7 +4,7 @@ title: Drag-and-Drop in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Drag-and-Drop support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
- documentation: ug
+documentation: ug
 ---
 
 # Drag-and-Drop in WPF Navigation Pane (GroupBar)

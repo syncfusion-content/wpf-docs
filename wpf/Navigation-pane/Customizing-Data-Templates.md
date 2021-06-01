@@ -4,7 +4,7 @@ title: Customizing-Data-Templates in WPF Navigation Pane control | Syncfusion
 description: Learn here all about Customizing-Data-Templates support in Syncfusion WPF Navigation Pane (GroupBar) control and more.
 platform: wpf
 control: GroupBar
- documentation: ug
+documentation: ug
 ---
 
 # Customizing-Data-Templates in WPF Navigation Pane (GroupBar)

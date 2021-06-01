@@ -4,7 +4,7 @@ title: Handling Selection in WPF Navigation Drawer control | Syncfusion
 description: Learn here all about Handling Selection support in Syncfusion WPF Navigation Drawer (SfNavigationDrawer) control and more.
 platform: WPF
 control: NavigationDrawer
- documentation: ug
+documentation: ug
 ---
 
 # Handling Selection in WPF Navigation Drawer (SfNavigationDrawer)

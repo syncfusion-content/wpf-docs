@@ -4,7 +4,7 @@ title: Styles and Templates in WPF NumericUpdown control | Syncfusion
 description: Learn here all about Styles and Templates support in Syncfusion WPF NumericUpdown (UpDown) control and more.
 platform: wpf
 control: UpDown
- documentation: ug
+documentation: ug
 ---
 
 # Styles and Templates in WPF NumericUpdown (UpDown)

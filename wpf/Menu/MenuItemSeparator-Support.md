@@ -4,7 +4,7 @@ title: MenuItemSeparator Support in WPF Menu control | Syncfusion
 description: Learn here all about MenuItemSeparator Support in Syncfusion WPF Menu (MenuAdv) control, its elements and more.
 platform: wpf
 control: MenuAdv
- documentation: ug
+documentation: ug
 ---
 
 # MenuItemSeparator Support in WPF Menu (MenuAdv)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup Options| SfMultiColumnDropDownControl | Wpf | Syncfusion
-description: popup options
+description: Popup options in Syncfusion WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
- documentation: ug
+documentation: ug
 ---
 
-# Popup Options
+# Popup Options in WPF MultiColumnDropDown control
 
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
@@ -52,7 +52,7 @@ The following code example illustrates how to customize the DropDownPopup.
 {% endhighlight %}
 The following screenshot displays the output for above code example.
 
-![](Features_images/Features_img11.png)
+![Features_images11](Features_images/Features_img11.png)
 
 
 
