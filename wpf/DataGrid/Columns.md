@@ -452,7 +452,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![WPF datagrid shows customized header template loaded on the header of OrderID column](Columns_images/Columns_img1.png)
+![WPF DataGrid Loaded with Customized Header Template](Columns_images/wpf-datagrid-header-template.png)
 
 #### Data Annotations with AutoGenerateColumns
 
@@ -547,7 +547,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![OrderID and CustomerID column rearranged in WPF datagrid ](Columns_images/Columns_img2.png)
+![Changing Columns Order in WPF DataGrid](Columns_images/wpf-datagrid-columns-order.png)
 
 ##### DataGrid column formatting
 
@@ -605,7 +605,7 @@ public DateTime OrderDate
 
 N> The `DataFormatString` attribute will be considered only when the column is auto-generated.
 
-![Columns formatted with DisplayFormatString in WPF datagrid](Columns_images/Columns_img13.png)
+![WPF DataGrid with Columns Formatting](Columns_images/wpf-datagrid-columns-formatting.png)
 
 ### Manually defining columns
 
@@ -716,13 +716,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![Resizing cursor shown in between columns of WPF datagrid](Columns_images/Columns_img3.png)
+![Column Resizing in WPF DataGrid](Columns_images/wpf-datagrid-resize-column.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
-![Hidden column resizing cursor shown on hidden column of WPF datagrid](Columns_images/Columns_img4.png)
+![Resizing Hidden Column in WPF DataGrid](Columns_images/wpf-datagrid-resize-hidden-column.png)
 
 ### Disable resizing
 
@@ -773,7 +773,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid shows the drag window of columns](Columns_images/Columns_img5.png)
+![Drag and Drop Column in WPF DataGrid](Columns_images/wpf-datagrid-drag-and-drop-columns.png)
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowDragging) property.
 
@@ -928,7 +928,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid shown with frozen columns](Columns_images/Columns_img6.png)
+![Frezzing Columns in WPF DataGrid](Columns_images/wpf-datagrid-freezing-column.png)
 
 ### Limitations
 
@@ -971,5 +971,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid shows ViewModel.AllowFiltering property binded to GridColumns.AllowFiltering](Columns_images/Columns_img11.png)
+![WPF DataGrid Column with Data Binding](Columns_images/wpf-datagrid-binding-column.png)
 
