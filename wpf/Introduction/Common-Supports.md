@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Common Supports in WPF Introduction
+# Common Supports in Essential Studio WPF
 
 ## Expression Blend
 

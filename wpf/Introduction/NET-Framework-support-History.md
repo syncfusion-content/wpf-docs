@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NET Framework support History| Introduction | Wpf | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF NET Framework support History, its elements and more.
+description: Learn here all about .NET Framework support History of Syncfusion Essential Studio WPF, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug

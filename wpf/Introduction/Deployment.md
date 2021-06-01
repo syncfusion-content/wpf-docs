@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Deployment| | Wpf | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Deployment Supports, its elements and more.
+description: Learn here all about Deployment of Syncfusion Essential Studio WPF Controls, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Deployment in WPF Introduction control
+# Deployment of Essential Studio WPF
 
 ## Control Dependencies
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sample Locations| Introduction | Wpf | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Sample Locations Supports, its elements and more.
+description: Learn here all about introduction of Syncfusion Essential Studio WPF Sample Locations, its elements and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Sample Locations in WPF Introduction
+# Sample Locations of Essential Studio WPF
 
 ## The Essential WPF samples are installed in the following location:
 
