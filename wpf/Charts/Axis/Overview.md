@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Overview in WPF Chart control | Syncfusion 
-description: Learn here all about the chart axis overview of syncfusion WPF Chart control.
+description: Learn here all about the chart axis overview of syncfusion WPF Chart control and their 
+Key feature.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -83,8 +84,8 @@ Gets the median value of the visible range.
 
 * Axis support different type of axis Category, Numeric, Date time ,Date time category ,Logarithmic and time span axis.
 * Allow you customize the chart axis line GridLine, TickLine and support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
-* Axis allow you to customize the orgin of the axis. 
-* Multiple Axes provide a way to arrange mutiple series inside the same chart area, gives more space for xaxis and yaxis.
+* Axis allow you to customize the origin of the chart axis. 
+* Multiple Axes provide a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
 * Axis can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabels) property. These labels are placed based on the provided Start and End range values. You can add any number of labels to an axis.
  
 
