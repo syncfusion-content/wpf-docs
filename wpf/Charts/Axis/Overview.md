@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Overview in WPF Chart control | Syncfusion 
-description: Learn here all about the chart axis overview of syncfusion WPF Chart control and their 
-Key feature.
+description: Learn here all about the chart axis overview of syncfusion WPF Chart control and their Key feature in WPF chart.
 platform: wpf
 control: SfChart
 documentation: ug
