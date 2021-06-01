@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features
-description: features
+title: Features in WPF MultiColumnDropDown control | Syncfusion
+description: Learn here about features of Syncfusion WPF MultiColumnDropDown (SfMultiColumnDropDown) control, its elements and more.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-# Features
+# Features in WPF MultiColumnDropDown control
 
 This section explains the key properties, behaviors, resizing, and keyboard support assisted by the SfMultiColumnDropDown control. 
 
@@ -41,7 +41,7 @@ The following code example illustrates how bind the itemsSource to the SfMultico
 
 The following screenshot illustrates the output of the above code.
 
-![](Features_images/Features_img1.png)
+![Features_images1](Features_images/Features_img1.png)
 
 
 
@@ -88,7 +88,7 @@ new Data(){Name="Maxwell", Designation= "WebDesigner"}, City="CapeTown",Country=
 
 The following screenshot illustrates the output for SfMultiColumnDropDownControl.
 
-![](Features_images/Features_img2.png)
+![Features_images2](Features_images/Features_img2.png)
 
 
 
@@ -256,7 +256,7 @@ public class Data:INotifyPropertyChanged
 {% endhighlight %}
 The following screenshot illustrates the output for Complex property binding in SfMultiColumnDropDownControl.
 
-![](Features_images/Features_img3.png)
+![Features_images3](Features_images/Features_img3.png)
 
 
 
@@ -317,7 +317,7 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 {% endhighlight %}
 The above code example displays the following output.
 
-![](Features_images/Features_img4.png)
+![Features_images4](Features_images/Features_img4.png)
 
 
 
@@ -364,12 +364,12 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 {% endhighlight %}
 In the above code example, AutoCompletion is enabled .It gives the matching suggestion from the collection based on the input as illustrated in the following screenshot.
 
-![](Features_images/Features_img5.png)
+![Features_images5](Features_images/Features_img5.png)
 
 
 The following screenshot displays the output for AllowAutoCompletion set to False.
 
-![](Features_images/Features_img6.png)
+![Features_images6](Features_images/Features_img6.png)
 
 
 
@@ -415,7 +415,7 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 {% endhighlight %}
 The following screenshot illustrates the output of the above code.
 
-![](Features_images/Features_img7.png)
+![Features_images7](Features_images/Features_img7.png)
 
 
 
@@ -467,7 +467,7 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
 {% endhighlight %}
 The following screenshot displays the SfMultiDropDownControl when setting TextSelectionOnFocus to true.
 
-![](Features_images/Features_img8.png)
+![Features_images8](Features_images/Features_img8.png)
 
 
 
@@ -526,7 +526,7 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Column. The following screenshot displays the output for IncrementalFiltering.
-![](Features_images/Features_img9.png)
+![Features_images9](Features_images/Features_img9.png)
 
 
 
@@ -658,7 +658,7 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
 {% endhighlight %}
 Here, Name is defined as DisplayMember. But it also searches the match case from the City__Column and displays the filtered item as illustrated in the following screenshot.
 
-![](Features_images/Features_img10.png)
+![Features_images10](Features_images/Features_img10.png)
 
 
 
@@ -735,7 +735,7 @@ The following code example illustrates how to customize the DropDownPopup.
 {% endhighlight %}
 The following screenshot displays the output for above code example.
 
-![](Features_images/Features_img11.png)
+![Features_images11](Features_images/Features_img11.png)
 
 
 
@@ -920,7 +920,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
-![](Features_images/Features_img12.png)
+![Features_images12](Features_images/Features_img12.png)
 
 
 
@@ -946,7 +946,7 @@ SfMultiColumnDropDownControl supports for QTP test. You can record the actions p
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
-![](Features_images/Features_img13.png)
+![Features_images13](Features_images/Features_img13.png)
 
 
 
