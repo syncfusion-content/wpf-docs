@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoHide all docked windows | DockingManager | wpf | Syncfusion
-description: autohide all docked windows
+description: Autohide all docked windows in Syncfusion Essential Studio WPF DockingManager Control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug

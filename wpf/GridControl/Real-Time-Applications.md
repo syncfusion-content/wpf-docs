@@ -15,7 +15,7 @@ Grids can be adopted in many real time applications where the database is of cru
 
 Grid can be used in applications with frequent updates, for example stock values in share market. When grid is switched over to virtual mode, it reforms itself as a light weight control that consumes a very little memory and processing power, and provides a very small latency under heavy load. Such virtual grids are typically useful when there is a need to display enormous data very quickly.  
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Performance/TraderGrid%20Test)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Performance/TraderGridTest)
 
 ## Excel-like UI Applications
 
@@ -110,7 +110,7 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 ![Complete application in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
 
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Product%20Showcase/Excel%20Like%20UI)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/gridcontrol/Product%20ShowCase/ExcelLikeUi)
 
 
 

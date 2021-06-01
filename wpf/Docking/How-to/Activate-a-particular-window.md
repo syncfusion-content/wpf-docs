@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Activate a particular window | DockingManager | wpf | Syncfusion
-description: activate a particular window
+description: Activate a particular window in Syncfusion Essential Studio WPF DockingManager Control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug
