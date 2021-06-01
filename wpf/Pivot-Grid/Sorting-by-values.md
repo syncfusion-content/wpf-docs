@@ -117,4 +117,4 @@ public partial class MainWindow: Window {
 
 ## Multi-column sorting
 
-Please [click here](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-normal-mode-of-pivotgrid-control) for more details.
+Please [Multi column sorting](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-normal-mode-of-pivotgrid-control) for more details.
