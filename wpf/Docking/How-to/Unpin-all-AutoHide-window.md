@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unpin all AutoHide window | DockingManager | wpf | Syncfusion
-description: unpin all autohide window
+description: Unpin all autohide window in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug

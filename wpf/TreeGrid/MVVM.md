@@ -74,7 +74,7 @@ In the following example, ViewModel command receives the underlying data object 
 {% endhighlight %}
 {% endtabs %}
 
-![Button command image](MVVM_images/MVVM_img1.jpeg)
+![Binding Button Command to ViewModel in WPF TreeGrid](MVVM_images/wpf-treegrid-binding-command.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-button-command-to-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
@@ -100,7 +100,7 @@ public ObservableCollection<string> TitleList
 {% endhighlight %}
 {% endtabs %}
 
-![ComboBox column image](MVVM_images/MVVM_img2.jpeg)
+![Binding ComboBox Column in WPF TreeGrid](MVVM_images/wpf-treegrid-binding-combobox-column.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-combobox-column-ItemsSource-from-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 
@@ -125,7 +125,7 @@ You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![ComboBox image in template](MVVM_images/MVVM_img3.jpeg)
+![WPF TreeGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/wpf-treegrid-mvvm-data-template-binding.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-view-model-ItemsSource-to-combo-box-inside-template-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/WPF).
 

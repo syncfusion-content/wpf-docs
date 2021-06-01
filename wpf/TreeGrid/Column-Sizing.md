@@ -98,7 +98,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 {% endhighlight %}
 {% endtabs %}
 
-![Columns with Start width in WPF SfTreeGrid](ColumnSizer_images/ColumnSizer_img1.png)
+![Column Sizing in WPF TreeGrid](ColumnSizer_images/wpf-treegrid-column-size.png)
 
 N> The `TreeGridColumn.ColumnSizer` takes higher priority than the `SfTreeGrid.ColumnSizer`.
 
@@ -325,7 +325,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![Column Sizer customization in SfTreeGrid WPF](ColumnSizer_images/ColumnSizer_img2.png)
+![Customizing Column Size in WPF TreeGrid](ColumnSizer_images/wpf-treegrid-column-size-customization.png)
 
 ### Change the width of TreeGridComboBoxColumn based on it&#39;s ItemsSource
 

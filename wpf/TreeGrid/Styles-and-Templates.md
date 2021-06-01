@@ -36,7 +36,7 @@ N> `TreeGridColumn.HeaderStyle` takes higher priority than `SfTreeGrid.HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Styles-and-Templates_img3](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+![Customizing Header Cell in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-header-cell-customization.png)
 
 ### Styling Stacked Headers
 
@@ -54,7 +54,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![Styles-and-Templates_img1](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+![Customizing Stacked Header in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-stacked-headers.png)
 
 ### Setting Different Style for Each Stacked Header
 
@@ -108,4 +108,4 @@ public class TreeGridCustomStackedRenderer : TreeGridStackedHeaderCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Styles-and-Templates_img2](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+![Changing Stacked Header Text Style in WPF TreeGrid Column](Styles-and-Templates_images/wpf-treegrid-stacked-header-text-style.png)

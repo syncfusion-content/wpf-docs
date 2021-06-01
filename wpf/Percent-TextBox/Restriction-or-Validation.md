@@ -54,11 +54,11 @@ percentTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a percent value less than the `MinValue`. If try to enter a percent value less than the `MinValue`, then the `MinValue` will set to the `PercentValue` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of PercentTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![Validating Minimun Value of WPF PercentTextBox](Restriction-or-Validation_images/wpf-percent-textbox-min-value-validation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of PercentTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![Validating Maximum Value of WPF PercentTextBox](Restriction-or-Validation_images/wpf-percent-textbox-max-value-validation.jpeg)
 
 ## Restrict number of decimal digit
 
@@ -85,7 +85,7 @@ percentTextBox.MaxPercentDecimalDigits = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox limits the number of decimal digits](Restriction-or-Validation_images/DecimalDigits.png)
+![Restrict Decimal Digits Count of WPF PercentTextBox](Restriction-or-Validation_images/wpf-percent-textbox-decimal-digits.png)
 
 N> `PercentDecimalDigits` property value will be allows set based on the in-between range of `MinPercentDecimalDigits` and `MaxPercentDecimalDigits` property values.
 
@@ -109,4 +109,4 @@ percentTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![WPF PercentTextBox in Read-only Mode](Restriction-or-Validation_images/wpf-percent-textbox-readonly.jpeg)

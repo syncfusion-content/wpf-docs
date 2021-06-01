@@ -6,7 +6,7 @@ platform: wpf
 control: Testing
 documentation: ug
 ---
-# Overview
+# Coded UI Testing in WPF
 
 Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you to create automated tests for inner elements and records the sequence of actions. When dragging the crosshair shown in Coded UI Test Builder on UI elements, it shows the properties of the respective UI elements. You can also add assertion for each of the properties.
 
@@ -81,7 +81,7 @@ Visual Studio
 
 </td>
 <td>
-Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platforms for Visual Studio 2015 and 2017 supported only in Enterprise platform. For more information about the platforms and configurations supported by Coded UI tests, refer to this {{'[link](https://msdn.microsoft.com/en-us/library/dd380742.aspx#"")'| markdownify }}.
+Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platforms for Visual Studio 2015 and 2017 supported only in Enterprise platform. For more information about the platforms and configurations supported by Coded UI tests, refer to this {{'[link](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings?view=vs-2015&redirectedfrom=MSDN#"")'| markdownify }}.
 </td>
 </tr>
 </table>
@@ -393,7 +393,7 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 </tr>
 </table>
 
-N> The Extension package should be installed(For example, **Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll**) in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
+N> The Extension package should be installed(For example, **Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll**) in GAC location. Refer to the MSDN link for [GAC](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)) installation.
 
 ### UI Elements for supported controls
 

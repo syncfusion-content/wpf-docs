@@ -13,7 +13,7 @@ This section explains how to create a WPF [SfMaskedEdit](https://help.syncfusion
 
 ## Control Structure
 
-![SfMaskedEdit control structure](Getting-Started_images/Control_Structure.png)
+![WPF MaskedEdit](Getting-Started_images/wpf-maskededit-structure.png)
 
 ## Assembly deployment
 
@@ -30,7 +30,7 @@ You can add the `SfMaskedEdit` control to an application by dragging it from the
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![SfMaskedEdit Control added by designer](Getting-Started_images/Getting-Started_img1.png)
+![Dragging WPF MaskedEdit Control from Toolbox to Designer](Getting-Started_images/wpf-maskededit-toolbox.png)
  
 ## Adding WPF SfMaskedEdit via XAML
 
@@ -99,7 +99,7 @@ public partial class MainWindow : Window {
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit control added by xaml and code](Getting-Started_images/Getting-Started_img2.png)
+![WPF MaskedEdit Control](Getting-Started_images/wpf-maskededit-control.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/blob/master/Samples/Getting-Started) in GitHub
 
@@ -124,7 +124,7 @@ sfMaskedEdit.Mask = @"-?\d+\.?\d*";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit accept the positive and negative float or whole number](MaskOptions_images/Positive-Negative.png)
+![WPF MaskedEdit displays Value in RegularExpression](MaskOptions_images/wpf-maskededit-negative-value.png)
 
 Here, the `SfMaskedEdit` accept the positive and negative whole or float type numbers.
 
@@ -155,7 +155,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value without prompt and literals](Working_with_SfMaskedEdit_images/Value.png)
+![WPF MaskedEdit displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -187,7 +187,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value without prompt and literals](Working_with_SfMaskedEdit_images/ExcludePromptAndLiterals.png)
+![WPF MaskedEdit displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -210,7 +210,7 @@ sfMaskedEdit.ErrorBorderBrush = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit indicates the invalid input](Working_with_SfMaskedEdit_images/Errorborder.gif)
+![WPF MaskedEdit displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -237,7 +237,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit shows the prompt character](Working_with_SfMaskedEdit_images/PromptChar.png)
+![WPF MaskedEdit displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -283,4 +283,4 @@ SfMaskedEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfMaskedEdit](Getting-Started_images/SfMaskedEdit_theme.png)
+  ![Applying Theme to WPF MaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)

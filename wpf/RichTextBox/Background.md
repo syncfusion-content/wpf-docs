@@ -39,14 +39,14 @@ richTextBoxAdv.Background = new SolidColorBrush(Color.FromRgb(102, 153, 204))
 {% endtabs %}
 
 Pages layout
-![Pages layout](Image_images/control_page.PNG)
+![Changing Background color of Page Layout in WPF RichTextBox](Image_images/wpf-richtextbox-page-layout-background.PNG)
 
 Continuous layout
-![Continuous layout](Image_images/continous_noBackground.PNG)
+![Changing Background color of Continuous Layout in WPF RichTextBox](Image_images/wpf-richtextbox-continuous-layout-background.PNG)
 
 Block layout
 The block layout always inherits the control background color.
-![Bolck layout](Image_images/Control_background_block.PNG)
+![Changing Background color of Block Layout in WPF RichTextBox](Image_images/wpf-richtextbox-block-layout-background.PNG)
 
 ### How to override the document background in continuous layout type?
 By default, the document background properties will be applied when the `LayoutType` is continuous. You can suppress the document background and apply the control background by setting `OverridesDocumentBackground` property to true. The default value of this property is false.
@@ -89,7 +89,7 @@ richTextBoxAdv.OverridesDocumentBackground = true
 {% endtabs %}
 
 Continuous layout:
-![Continuous layout](Image_images/continous_layout.PNG)
+![Changing Background color of Continuous Layout in WPF RichTextBox](Image_images/wpf-richtextbox-continous-background.PNG)
 
 ## Setting Background for Document Pages
 
@@ -123,9 +123,9 @@ richTextBoxAdv.Document.Background.Color = Color.FromRgb(102, 153, 204)
 
 
 Pages layout:
-![Page background](Image_images/Pages_background.PNG)
+![Changing Background color of Page Layout in WPF RichTextBox](Image_images/wpf-richtextbox-pages-background.PNG)
 
 Continuous layout:
-![Continuos layout](Image_images/continous_layout.PNG)
+![Changing Background color of Continuous Layout in WPF RichTextBox](Image_images/wpf-richtextbox-continous-background.PNG)
 
 N> This API is supported starting from release version v17.4.0.X.

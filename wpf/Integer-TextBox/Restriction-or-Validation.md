@@ -52,11 +52,11 @@ integerTextBox.MaxValueOnExceedMaxDigit = true;
 
 When `MinValidation` value is OnKeyPress, you cannot enter value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of IntegerTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.png)
+![Validating Minimum Value of WPF IntegerTextBox](Restriction-or-Validation_images/wpf-integer-textbox-min-value-validation.png)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of IntegerTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.png)
+![Validating Maximum Value of WPF IntegerTextBox](Restriction-or-Validation_images/wpf-integer-textbox-max-value-validation.png)
 
 ## Read only mode
 
@@ -78,7 +78,7 @@ integerTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.png)
+![WPF IntegerTextBox in Read-only Mode](Restriction-or-Validation_images/wpf-integer-textbox-readonly.png)
 
 ## Customize the behavior for invalid value
 
@@ -117,4 +117,4 @@ DoubleTextBox doubleTextBox1 = new DoubleTextBox()
 {% endhighlight %}
 {% endtabs %}
 
-![ErrorMessage for IntegerTextBox](Restriction-or-Validation_images/Restriction-or-Validation_ErrorMessage.gif)
+![WPF IntegerTextBox displays ErrorMessage](Restriction-or-Validation_images/wpf-integer-textbox-error-message.gif)

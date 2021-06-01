@@ -28,7 +28,7 @@ percentTextBox.EnableRangeAdorner =true;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
+![WPF PercentTextBox displays RangeAdorner](Range-Adorner_images/wpf-percent-textbox-range-adorner.png)
 
 ## Changing background of range-adorner
 
@@ -52,4 +52,4 @@ percentTextBox.RangeAdornerBackground = Brushes.LightGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)
+![Changing RangeAdorner Background of WPF PercentTextBox](Range-Adorner_images/wpf-percent-textbox-range-adorner-background.png)
