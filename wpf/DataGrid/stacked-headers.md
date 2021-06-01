@@ -46,7 +46,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid shown with stacked header rows](Columns_images/Columns_img7.png)
+![WPF DataGrid with Stacked Header Rows](Columns_images/wpf-datagrid-with-stacked-headers.png)
 
 ## Stacked Headers using Data Annotation
 
@@ -103,7 +103,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![Stacked headers shown with defined GroupName properties in WPF datagrid](Columns_images/Columns_img8.png)
+![WPF DataGrid with Stacked Header Columns](Columns_images/wpf-datagrid-with-stacked-header-column.png)
 
 ## Adding ChildColumns
 

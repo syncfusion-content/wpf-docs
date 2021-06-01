@@ -91,7 +91,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endhighlight %}
 {% endtabs %}
 
-![Columns width initialized with GridLengthUnitType.Star in WPF datagrid. ](Columns_images/Columns_img9.png)
+![Autosize Columns in WPF DataGrid](Columns_images/wpf-datagrid-autosize-columns.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
@@ -119,7 +119,7 @@ this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastCo
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid showing OrderID column filled with remaining width instead of last column](Columns_images/Columns_img12.png)
+![Specific Column in WPF DataGrid Fills Remaining Width](Columns_images/wpf-datagrid-specific-column.png)
 
 ## Refreshing autosize calculation at runtime
 
@@ -379,7 +379,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![WPF datagrid shows columns width defined based on ColumnRatio](Columns_images/Columns_img10.png)
+![WPF DataGrid displays ColumnRatio Column Width](Columns_images/wpf-datagrid-column-ratio.png)
 
 ## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
 
