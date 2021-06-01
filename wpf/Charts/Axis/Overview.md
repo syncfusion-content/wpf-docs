@@ -25,6 +25,8 @@ The following are the API’s in ChartAxis
 
 * [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represents the axis start and end visible values as follows.
 
+* [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
+
 <table>
 <tr>
 <td>
@@ -76,13 +78,10 @@ Gets the median value of the visible range.
 </tr>
 </table>
 
-* [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
-
-
 ## Key Feature
 
 
-* Axis support different type of axis Category, Numeric, Date time ,Date time category ,Logarithmic and time span axis.
+* Axis support different type of axis Category, Numeric, Date time, Date time category, Logarithmic and time span axis.
 * Allow you customize the chart axis line GridLine, TickLine and support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
 * Axis allow you to customize the origin of the chart axis. 
 * Multiple Axes provide a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
