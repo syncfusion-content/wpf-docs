@@ -196,11 +196,11 @@ Once you have configured the extension for Report Designer, Extension data sourc
 
 2.	Right Click on DataSources in Report Data to add datasource.
 
-![](Data-Extension_images/Add-Datasource_img1.png)
+![Data-Extension_images](Data-Extension_images/Add-Datasource_img1.png)
 
 3.	Now, in datasource properties dialog you can view added external datasource under connection type.
 
- ![](Data-Extension_images/Select-Datasource_img2.png)
+ ![Data-Extension_images](Data-Extension_images/Select-Datasource_img2.png)
 
 4.	Give connection string to connect with external data source.
 ~~~ xml
@@ -209,15 +209,15 @@ Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventur
 
 ~~~
 
-![](Data-Extension_images/Test-Connection_img3.png)
+![Data-Extension_images](Data-Extension_images/Test-Connection_img3.png)
 
 5.	You can add dataset to external data sources,
  
- ![](Data-Extension_images/Add-Dataset_img4.png)
+ ![Data-Extension_images](Data-Extension_images/Add-Dataset_img4.png)
 
 6.	Provide the query command text in dataset properties dialog.
  
-![](Data-Extension_images/Add-QueryText_img5.png)
+![Data-Extension_images](Data-Extension_images/Add-QueryText_img5.png)
 
-![](Data-Extension_images/DataSet_img5.png)
+![Data-Extension_images](Data-Extension_images/DataSet_img5.png)
  

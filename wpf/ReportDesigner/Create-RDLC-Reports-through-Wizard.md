@@ -38,11 +38,11 @@ The RDLC reports can be created by using ReportDesigner control and an available
 
 5. Select a namespace that contains the business object.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img1.png)
+   ![Create-RDLC-Reports-through-Wizard_images](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img1.png)
 
 6. Select a business object type to design the report by using fields.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img2.png)
+   ![Create-RDLC-Reports-through-Wizard_images](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img2.png)
 
 7. Drag and drop the fields from the data set in the necessary report items. 
 
@@ -50,8 +50,8 @@ The RDLC reports can be created by using ReportDesigner control and an available
 
 9. Select the collection of business objects by selecting the necessary method in the provided assembly.
 
-   ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img3.png)
+   ![Create-RDLC-Reports-through-Wizard_images](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img3.png)
 
 10. The output is displayed as shown in the following figure.
 
-    ![](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img4.png)
+    ![Create-RDLC-Reports-through-Wizard_images](Create-RDLC-Reports-through-Wizard_images/Create-RDLC-Reports-through-Wizard_img4.png)

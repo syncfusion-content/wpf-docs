@@ -17,13 +17,13 @@ Add a data source and dataset to the Report Designer.
 
 1. Click Chart in the Insert Tab,Select Insert Chart in the list and drag it to the Report designer.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img1.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img1.png)
 
 2. A Chart properties wizard opens,Click OK.Then chart will be added with its default properties.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img2.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img2.png)
    
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img3.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img3.png)
 
 3. To change the Values of Value Axis, Area color and Category Axis,Double Click on the chart.
 
@@ -33,7 +33,7 @@ Add a data source and dataset to the Report Designer.
 
 6. To Apply Styles to the Charts,Right Click on the Chart and select the Chart Properties from the context menu.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
 
 7. In the Chart Properties dialog, select any of the following.
 
@@ -49,7 +49,7 @@ Add a data source and dataset to the Report Designer.
 
 9. Right click on the chart and select Legend Properties from the context menu.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
 
 10. The Legend Properties dialog opens. Select any of the following.
 
@@ -59,13 +59,13 @@ Add a data source and dataset to the Report Designer.
 
     * Border - To set the border color and border width of the legend.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
 	
 11. Click OK.Then the values are updated in the Legend.
 
 12. Right click on the chart and select Value Axis Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
 
     * General - To change the direction, line style, line width and line color of the value axis.
 
@@ -73,13 +73,13 @@ Add a data source and dataset to the Report Designer.
 
     * Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
 	
 13. Click OK.Then the values are updated in the Value Axis.
 
 14. Right click on the chart and select Category Axis Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
 
     * General - To change the direction, line style,line width and line color of the category axis.
 	
@@ -87,45 +87,45 @@ Add a data source and dataset to the Report Designer.
 	
 	* Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
 	
 15. Click OK.Then the values are updated in the Category Axis.
 
 16. Right click on the chart and select Chart title Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
 
     * General - To set the chart title options like title, font, color, size, background and style. 
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
 	
 17. Click OK to update the values for Chart title.
 
 18. Right click on the chart and select Category Axis title Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
 
     * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
 
 19. Click OK to update the values for Category Axis title.
 	
 20. Right click on the chart and select Value Axis title Properties from the context menu.	
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
 
     * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
 	
 21. Click OK to update the values for Category Axis title.
 
 22. To delete the chart,Right click and select delete.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
 	
 ## Inserting chart through Chart Wizard
 
@@ -139,23 +139,23 @@ Add a data source and dataset to the Report Designer.
    
 3. If dataset is already added select available datasets and click Next.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img20.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img20.png)
 
 4. Drag to available fields to the corresponding Series,Categories and values and click Next.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img21.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img21.png)
 
 5. Select the Style and Layout of the table and click Finish.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img22.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img22.png)
    
 6. Then the chart will display with the selected fields.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img23.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img23.png)
    
 7. To Apply Styles to the Charts,Right Click on the Chart and select the Chart Properties from the context menu.
 
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img4.png)
 
 8. In the Chart Properties dialog, select any of the following.
 
@@ -165,13 +165,13 @@ Add a data source and dataset to the Report Designer.
 
    * Appearance - To set the Chart name and border options and background options.
    
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
    
 9. Click OK.Then the values are updated in the Chart.
 
 10. Right click on the chart and select Legend Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img6.png)
 
 11. The Legend Properties dialog opens. Select any of the following.
 
@@ -181,13 +181,13 @@ Add a data source and dataset to the Report Designer.
 
     * Border - To set the border color and border width of the legend.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img7.png)
 	
 12. Click OK.Then the values are updated in the Legend.
 
 13. Right click on the chart and select Value Axis Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img8.png)
 
     * General - To change the direction, line style, line width and line color of the value axis.
 
@@ -195,13 +195,13 @@ Add a data source and dataset to the Report Designer.
 
     * Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img9.png)
 	
 14. Click OK.Then the values are updated in the Value Axis.
 
 15. Right click on the chart and select Category Axis Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img10.png)
 
     * General - To change the direction, line style,line width and line color of the category axis.
 	
@@ -209,44 +209,44 @@ Add a data source and dataset to the Report Designer.
 	
 	* Tick - To set the style, width, color, and length of the value axis tick, and set the visibility of the major and minor tick marks.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img11.png)
 	
 16. Click OK.Then the values are updated in the Category Axis.
 
 17. Right click on the chart and select Chart title Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img12.png)
 
     * General - To set the chart title options like title, font, color, size, background and style. 
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img13.png)
 	
 18. Click OK to update the values for Chart title.
 
 19. Right click on the chart and select Category Axis title Properties from the context menu.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img14.png)
 
     * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img15.png)
 
 20. Click OK to update the values for Category Axis title.
 	
 21. Right click on the chart and select Value Axis title Properties from the context menu.	
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img16.png)
 
     * General - To set the chart title options like title, font family, font color, font size, title alignment and font style.
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img17.png)
 	
 22. Click OK to update the values for Category Axis title.
 
 23. To delete the chart,Right click and select delete.
 
-    ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
+    ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img18.png)
 	
-	![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
+	![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img19.png)
 
     

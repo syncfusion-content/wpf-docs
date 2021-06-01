@@ -23,7 +23,7 @@ The following code sample shows how to use the ItemsCount property:
 {%endhighlight%}
 
 
-![](Number-of-Items_images/Number-of-Items_img1.png)
+![Number-of-Items_images](Number-of-Items_images/Number-of-Items_img1.png)
 
 
 
