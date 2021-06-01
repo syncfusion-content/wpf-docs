@@ -4,7 +4,7 @@ title: Displaying Calculations in WPF Pivot Grid control | Syncfusion
 description: Learn about Displaying Calculations support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
-documentation: ug
+ documentation: ug
 ---
 
 # Displaying Calculations in WPF Pivot Grid

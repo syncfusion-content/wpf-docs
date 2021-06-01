@@ -4,7 +4,7 @@ title: Hiding Fields in WPF Pivot Grid control | Syncfusion
 description: Learn about Hiding Fields support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
-documentation: ug
+ documentation: ug
 ---
 
 # Hiding Fields in WPF Pivot Grid

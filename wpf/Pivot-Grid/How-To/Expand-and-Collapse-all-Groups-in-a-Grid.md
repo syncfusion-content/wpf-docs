@@ -4,7 +4,7 @@ title: 141-Expand-and-Collapse-all-Groups-in-a-Grid | Syncfusion
 description: Section that helps to know how to expand or collapse the entire groups programmatically in pivot grid control.
 platform: wpf
 control: PivotGridControl
-documentation: ug
+ documentation: ug
 ---
 
 # How to expand and collapse entire group in PivotGrid?

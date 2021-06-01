@@ -4,7 +4,7 @@ title: 145-Display-the-Calculation-Columns-in-Row | Syncfusion
 description: Section helps to know how to set defer layout update either programmatically or dynamically in pivot grid control | Syncfusion
 platform: wpf
 control: PivotGridControl
-documentation: ug
+ documentation: ug
 ---
 
 # How to set defer layout update in PivotGrid?

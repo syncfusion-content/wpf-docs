@@ -4,7 +4,7 @@ title: 146-Display-the-Count-of-Records-which-are-Current | Syncfusion
 description: Section helps to know how to get the count of records which are currently visible in pivot grid control.
 platform: wpf
 control: PivotGridControl
-documentation: ug
+ documentation: ug
 ---
 
 # How to get the count of records which are currently visible in PivotGrid?

@@ -4,7 +4,7 @@ title: Filtering and Searching in WPF PropertyGrid control | Syncfusion
 description: Learn about Filtering and Searching support in Syncfusion Essential Studio WPF PropertyGrid control, its elements and more.
 platform: wpf
 control: PropertyGrid 
-documentation: ug
+ documentation: ug
 ---
 
 # Filtering and Searching in WPF PropertyGrid

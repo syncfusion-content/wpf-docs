@@ -4,7 +4,7 @@ title: Scales in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Scales support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
-documentation: ug
+ documentation: ug
 ---
 
 # Scales in WPF Radial Gauge (SfCircularGauge)

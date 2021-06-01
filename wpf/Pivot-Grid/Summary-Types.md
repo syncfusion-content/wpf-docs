@@ -4,7 +4,7 @@ title: Summary Types in WPF Pivot Grid control | Syncfusion
 description: Learn about Summary Types support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
-documentation: ug
+ documentation: ug
 ---
 
 # Summary Types in WPF Pivot Grid

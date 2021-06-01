@@ -4,7 +4,7 @@ title: Pointers in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Pointers support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
-documentation: ug
+ documentation: ug
 ---
 
 # Pointers in WPF Radial Gauge (SfCircularGauge)

@@ -4,7 +4,7 @@ title: Rim in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Rim support in Syncfusion WPF Radial Gauge (SfCircularGauge) control, its elements and more.
 platform: wpf
 control: SfCircularGauge
-documentation: ug
+ documentation: ug
 ---
 
 # Rim in WPF Radial Gauge (SfCircularGauge)

@@ -4,7 +4,7 @@ title: Header in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Header support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
-documentation: ug
+ documentation: ug
 ---
 
 # Header in WPF Radial Gauge (SfCircularGauge)

@@ -4,7 +4,7 @@ title: Ticks in WPF Radial Gauge control | Syncfusion
 description: Learn here all about Ticks support in Syncfusion WPF Radial Gauge (SfCircularGauge) control and more.
 platform: wpf
 control: SfCircularGauge
-documentation: ug
+ documentation: ug
 ---
 
 # Ticks in WPF Radial Gauge (SfCircularGauge)

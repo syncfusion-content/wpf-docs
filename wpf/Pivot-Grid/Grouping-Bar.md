@@ -4,7 +4,7 @@ title: Grouping Bar in WPF Pivot Grid control | Syncfusion
 description: Learn about Grouping Bar support in Syncfusion Essential Studio WPF Pivot Grid control, its elements and more.
 platform: wpf
 control: Pivot grid
-documentation: ug
+ documentation: ug
 ---
 
 # Grouping Bar in WPF Pivot Grid
