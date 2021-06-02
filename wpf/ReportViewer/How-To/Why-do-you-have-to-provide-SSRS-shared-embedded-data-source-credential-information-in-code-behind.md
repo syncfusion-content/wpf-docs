@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSRS shared embedded datasource in WPF ReportViewer | Syncfusion
-description: Why do you have to provide ssrs shared/embedded data source credential information in code behind for Syncfusion WPF ReportViewer control, its elements and more.
+description: Why do you have to provide ssrs shared/embedded datasource credential information in code behind for Syncfusion WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
 documentation: ug
