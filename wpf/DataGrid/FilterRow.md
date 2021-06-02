@@ -22,7 +22,7 @@ this.dataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with filter row](FilterRow_images/FilterRow_img1.png)
+![WPF DataGrid with Filter Row](FilterRow_images/wpf-datagrid-filter-row.png)
 
 You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html#Syncfusion_UI_Xaml_Grid_GridIndexResolver_GetFilterRowIndex_Syncfusion_UI_Xaml_Grid_SfDataGrid_)method.
 
@@ -53,7 +53,7 @@ By default, FilterRow loads the editors based on underlying property type to fil
 this.dataGrid.Columns[2].FilterRowEditorType = "MultiSelectComboBox";
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row cell with multi select combobox](FilterRow_images/FilterRow_img2.png)
+![WPF DataGrid Filter Row Cell with MultiSelect ComboBox](FilterRow_images/wpf-datagrid-multiselect-combobox.png)
 
 Below are the built-in FilterRow editor types supported in SfDataGrid. 
 <table>
@@ -171,7 +171,7 @@ Based on the editor type, FilterRowCell displays the filter conditions in dropdo
 this.dataGrid.Columns[0].FilterRowOptionsVisibility = System.Windows.Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row](FilterRow_images/FilterRow_img4.png)
+![WPF DataGrid with Filter Row](FilterRow_images/wpf-datagrid-filter-option.png)
 
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 <table>
@@ -276,7 +276,8 @@ You can change the default FilterRow condition for a corresponding column by usi
 this.dataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqual;
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid shows filter row with numeric editor](FilterRow_images/FilterRow_img3.png)
+
+![Filter Row with Numeric Editor in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-editor.png)
 
 ## Filtering null values
 You can enable or disable filtering of null values by setting [GridColumn.AllowBlankFilters](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowBlankFilters) property. The default value is `true`.
@@ -292,7 +293,7 @@ When null value filtering is enabled, the filter options loaded with two additio
 this.dataGrid.Columns[0].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row handles null value](FilterRow_images/FilterRow_img5.png)
+![Filter Row without Null option in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-without-null.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,7 +305,7 @@ this.dataGrid.Columns[0].AllowBlankFilters = false;
 this.dataGrid.Columns[2].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid loads multi select combobox in filter row cell](FilterRow_images/FilterRow_img6.png)
+![Filter Row with Null option in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-with-null-option.png)
 
 ## Instant Filtering
 By default, filters are applied to the columns when moving to other cells or pressing enter key. You can apply filter when typing or selecting in editor itself by setting [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ImmediateUpdateColumnFilter) as `true`. 
@@ -318,7 +319,7 @@ By default, filters are applied to the columns when moving to other cells or pre
 this.dataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid Filter Row](FilterRow_images/FilterRow_img7.png)
+![Immediate Column Filter with Filter Row in WPF DataGrid](FilterRow_images/wpf-datagrid-immediate-column-filter.png)
 
 ## Disable filtering for a particular FilterRowCell
 By default, you can filter the records by editing filter row cell. You can disable this editing by using [CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
@@ -356,7 +357,7 @@ You can customize the style of filter row by writing style of TargetType [Filte
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row style](FilterRow_images/FilterRow_img8.png)
+![Customizing Filter Row Style in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-style.png)
 
 ### Filter row - cell style
 You can customize the style of filter row cell by writing style of TargetType [GridFilterRowCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html).
@@ -389,7 +390,7 @@ public class FilterRowCellStyleConverter : IValueConverter
 }
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row cell style](FilterRow_images/FilterRow_img9.png)
+![Customizing Filter Row Cell Style in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-cell-style.png)
 
 ## Customizing filter row cell
 You can customize the filter row cell by overriding the [GridFilterRowCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html). You have to override the GetGridCell method in [RowGenerator](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridFilterRowCell`.
@@ -509,7 +510,7 @@ public class CustomRowGenerator : RowGenerator
 }
 {% endhighlight %}
 {% endtabs %}
-![WPF DataGrid filter row cell customization](FilterRow_images/FilterRow_img10.png)
+![Customizing Filter Row Option in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-option.png)
 
 ## Customizing Filter row editors
 
@@ -795,7 +796,7 @@ public class GridFilterRowComboBoxRendererExt : GridFilterRowComboBoxRenderer, I
     }
 {% endhighlight %}
 {% endtabs %}
-![Displaying filter row MultiSelectComboBox editor customization in WPF Sfdatagrid](FilterRow_images/FilterRow_img11.png)
+![WPF DataGrid Filter Row with MultiSelectComboBox](FilterRow_images/wpf-datagrid-filter-row-multiselect-combobox.png)
 
 ### Numeric filter row conditions for string typed column
 By default, TextBox filter is loaded when underlying property type is string which is bound to a column. The below code shows how to apply the numeric filter row conditions for that particular column using converters in [ValueBinding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ValueBinding) property.
@@ -893,7 +894,7 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid filter row](FilterRow_images/FilterRow_img12.png)
+![Customizing Filter Row in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-customization.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
 

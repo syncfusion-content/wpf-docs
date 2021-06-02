@@ -282,7 +282,7 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![WPF DataGrid with add new row](Data-Manipulation_images/Data-Manipulation_img1.png)
+![WPF DataGrid with Add New Row](Data-Manipulation_images/wpf-datagrid-add-new-row.png)
 
 You can get the row row index of AddNewRow using [GridAddNewRowController.GetAddNewRowIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridAddNewRowController.html#Syncfusion_UI_Xaml_Grid_GridAddNewRowController_GetAddNewRowIndex) method.
 
@@ -318,7 +318,7 @@ this.dataGrid.AddNewRowText = "Click here to add new row in datagrid";
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the addnewrow text in datagrid WPF](Data-Manipulation_images/Data-Manipulation_img7.png)
+![Changing the Add New Row Text in WPF DataGrid](Data-Manipulation_images/wpf-datagrid-add-new-row-text.png)
 
 ### Customize the newly added row position
 
@@ -353,7 +353,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid - Add new row with defautl values](Data-Manipulation_images/Data-Manipulation_img2.png)
+![Add New Row with Default Values in WPF DataGrid](Data-Manipulation_images/wpf-datagrid-default-value.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -468,7 +468,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid - New row data validation](Data-Manipulation_images/Data-Manipulation_img3.png)
+![Data Validation in Add New Row in WPF DataGrid](Data-Manipulation_images/wpf-datagrid-data-validation.png)
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
@@ -478,9 +478,9 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/windowsforms/sfdatagrid/localization) to learn more about localization. 
 
-![WPF DataGrid resources](Data-Manipulation_images/Data-Manipulation_img4.png)
+![WPF DataGrid Resource File](Data-Manipulation_images/wpf-datagrid-resource-file.png)
 
-![WPF DataGrid - Add new row text localized](Data-Manipulation_images/Data-Manipulation_img5.png)
+![Localized Add New Row Text in WPF DataGrid](Data-Manipulation_images/wpf-datagrid-localization.png)
 
 ### Customizing AddNewRow text using style
 
@@ -578,7 +578,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% endhighlight %}
 {% endtabs %}
 
-![Image shows the customization of AddNewRow text](Data-Manipulation_images/Data-Manipulation_img6.png)
+![Displaying Add New Row Text as Watermark in WPF DataGrid](Data-Manipulation_images/wpf-datagrid-watermark-text.png)
 
 ### AddNewRow support in Master-Details View
 
@@ -680,7 +680,7 @@ this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child gr
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the addnewrow text in detailsview datagrid WPF](Data-Manipulation_images/Data-Manipulation_img8.png)
+![Changing Add New Row Text in WPF DetailsView DataGrid](Data-Manipulation_images/wpf-datagrid-text-in-detailview.png)
 
 ## Delete row
 
@@ -812,7 +812,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Conditionally deleting records when pressing Delete key
 
-You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
 
 {% tabs %}
 {% highlight c# %}
