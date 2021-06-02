@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Report Filter | ReportDesigner | wpf | Syncfusion
-description: Learn here about Add Report Filter in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
+description: Learn here about Adding Report Filter in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug

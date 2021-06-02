@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Draw Chart Report Item | ReportDesigner | wpf | Syncfusion
-description: Draw chart report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
+description: Draw chart report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug

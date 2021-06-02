@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Saving Reports | ReportWriter | WPF | Syncfusion
-description: Saving reports in Syncfusion Essential Studio WPF ReportWriter control, its elements, features and more.
+description: Saving reports in Syncfusion Essential Studio WPF ReportWriter control, its elements, features, and more.
 platform: wpf
 control: ReportWriter
 documentation: ug

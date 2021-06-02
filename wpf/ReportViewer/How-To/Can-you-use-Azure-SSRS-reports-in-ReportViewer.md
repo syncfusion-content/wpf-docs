@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Can you use Azure SSRS reports in WPF ReportViewer | Syncfusion
-description: Can you use azure ssrs reports in Syncfusion Essential Studio WPF ReportViewer control, its elements and more.
+description: Can you use azure ssrs reports in Syncfusion Essential Studio WPF ReportViewer control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReportViewer API | ReportViewer | WPF | Syncfusion
-description: Learn here about List of Reportviewer API of Syncfusion Essential Studio for WPF, its elements, features and more.
+description: Learn here about List of Reportviewer API of Syncfusion Essential Studio for WPF, its elements, features, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug

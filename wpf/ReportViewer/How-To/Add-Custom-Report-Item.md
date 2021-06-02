@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Report Item in WPF ReportViewer control | Syncfusion
-description: Creating a custom report item run-time component in Syncfusion WPF ReportViewer control, its elements and more.
+description: Creating a custom report item run-time component in Syncfusion WPF ReportViewer control, its elements, and more.
 platform: WPF
 control: ReportViewer
 documentation: ug

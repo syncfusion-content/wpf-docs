@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Draw DataBar Report Item | ReportDesigner | wpf | Syncfusion
-description: Draw databar report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
+description: Draw databar report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug

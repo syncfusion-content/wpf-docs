@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number of Items | SfRating | wpf | Syncfusion
-description: Learn here about Number of items in Syncfusion Essential Studio WPF Rating (SfRating) control, its elements and more.
+description: Learn here about Number of items in Syncfusion Essential Studio WPF Rating (SfRating) control, its elements, and more.
 platform: wpf
 control: SfRating
 documentation: ug

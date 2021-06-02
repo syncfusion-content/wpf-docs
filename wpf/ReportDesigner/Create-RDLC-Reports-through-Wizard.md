@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create RDLC Reports through Wizard | ReportDesigner | wpf | Syncfusion
-description: Create rdlc reports through wizard in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
+description: Create rdlc reports through wizard in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug

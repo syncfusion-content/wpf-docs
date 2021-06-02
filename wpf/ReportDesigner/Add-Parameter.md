@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Parameter | ReportDesigner | wpf | Syncfusion
-description: Learn here about add Parameter in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
+description: Learn here about adding Parameter in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug

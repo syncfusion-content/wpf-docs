@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Report Item in WPF ReportDesigner Control | Syncfusion
-description: Creating a custom report item design-time component in Syncfusion WPF ReportDesigner Control, its elements and more.
+description: Creating a custom report item design-time component in Syncfusion WPF ReportDesigner Control, its elements, and more.
 platform: WPF
 control: ReportDesigner
 documentation: ug

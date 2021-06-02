@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReportViewer Theme support | ReportViewer | WPF | Syncfusion
-description: ReportViewer theme support in Syncfusion Essential Studio WPF ReportViewer Control, its elements and more.
+description: ReportViewer theme support in Syncfusion Essential Studio WPF ReportViewer Control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug
