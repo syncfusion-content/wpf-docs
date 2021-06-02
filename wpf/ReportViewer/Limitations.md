@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Limitations | ReportViewer | WPF | Syncfusion
-description: limitations
+description: Learn here about Limitations in Syncfusion Essential Studio WPF ReportViewer control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug
 ---
 
-# Limitations
+# Limitations in WPF ReportViewer control
 
 ## RDL Specification support
 
