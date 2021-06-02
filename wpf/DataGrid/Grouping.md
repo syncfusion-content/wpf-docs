@@ -60,11 +60,11 @@ this.dataGrid.Columns["CustomerID"].AllowGrouping = true;
 
 N> [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowGroupingProperty) takes higher priority than [SfDataGrid.AllowGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowGrouping).
 
-![WPF DataGrid Grouping](Grouping_images/Grouping_img1.png)
+![WPF DataGrid Grouping](Grouping_images/wpf-datagrid-grouping.png)
 
 The data can be grouped by an unlimited number of columns. To group more than one columns, drag-and-drop the desired columns in to `GroupDropArea`.
 
-![WPF DataGrid grouped by multiple columns](Grouping_images/Grouping_img2.png)
+![Multiple Grouping in WPF DataGrid](Grouping_images/wpf-datagrid-multiple-grouping.png)
 
 Each group is identified by its `CaptionSummaryRows` and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 
@@ -132,7 +132,7 @@ this.datagrid.Columns["OrderID"].GroupMode = DataReflectionMode.Display;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid column grouped based on displat text](Grouping_images/Grouping_img11.png)
+![Grouped Column in WPF DataGrid based on Display Text](Grouping_images/wpf-datagrid-grouped-column.png)
 
 ### Group caption based on DisplayMember when grouping GridComboBoxColumn and GridMultiColumnDropDownList
 
@@ -154,7 +154,7 @@ this.datagrid.Columns.Add(new GridComboBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid grouped based on display member of combobox column](Grouping_images/Grouping_img12.png)
+![Grouped Column in WPF DataGrid based on Display Member](Grouping_images/wpf-datagrid-member-group-column.png)
 
 ## Clearing or removing group
 
@@ -182,7 +182,7 @@ this.dataGrid.View.EndInit();
 
 To ungroup the column in UI, click the close button on column header or drag the column header from the `GroupDropArea` and drop it on the header row.
 
-![Displaying ungrouping of column in UI for WPF SfDataGrid](Grouping_images/Grouping_img3.png)
+![WPF DataGrid Column without Grouping](Grouping_images/wpf-datagrid-without-grouping.png)
 
 
 ## Hiding the column when grouped
@@ -204,7 +204,7 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 {% endtabs %}
 
 
-![Displaying how to hide a grouped column in WPF SfDataGrid](Grouping_images/Grouping_img4.png)
+![Hide Grouping Column in WPF DataGrid](Grouping_images/wpf-datagrid-hide-grouping.png)
 
 ## Freezing caption rows when scrolling 
 
@@ -225,7 +225,7 @@ this.dataGrid.AllowFrozenGroupHeaders = true;
 {% endtabs %}
 
 
-![WPF DataGrid with frozen caption summary rows](Grouping_images/Grouping_img5.png)
+![WPF DataGrid with Frozen Caption Summary Rows](Grouping_images/wpf-datagrid-freeze-caption-rows.png)
 
 ## Expanding or collapsing the groups
 
@@ -324,7 +324,7 @@ You can change the `GroupDropArea’ s` text can by setting [SfDataGrid.GroupDro
 {% endtabs %}
 
 
-![WPF DataGrid with custom group drop area text](Grouping_images/Grouping_img6.png)
+![WPF DataGrid with Custom Group Drop Area Text](Grouping_images/wpf-datagrid-custom-group-text.png)
 
 ### GroupDropArea height and appearance
 
@@ -346,7 +346,7 @@ SfDataGrid allows you to customize the appearance and height of `GroupDropArea` 
 {% endtabs %}
 
 
-![Displaying customization of GroupDropDrea in WPF SfDataGrid](Grouping_images/Grouping_img7.png)
+![Customizing GroupDropDrea Height in WPF DataGrid](Grouping_images/wpf-datagrid-group-drop-area-height.png)
 
 ### Expanding GroupDropArea while loading
 
@@ -447,11 +447,12 @@ Now , assign the `GroupDateTimeConverter` into [GroupColumnDescription.Converter
 {% endtabs %}
 
 
-![WPF DataGrid grouped based on custom logic](Grouping_images/Grouping_img8.png)
+![WPF DataGrid with Custom Grouping](Grouping_images/wpf-datagrid-custom-grouping.png)
 
 You can download samples from below location,
-Custom grouping when ItemsSource is ObservableCollection [click here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo541349132.zip)
-Custom grouping when ItemsSource is DataTable [click here]( http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTableCustomGrouping1799878748.zip)
+Refer [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGroupingDemo541349132.zip) for Custom grouping when ItemsSource is ObservableCollection.
+
+Refer [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTableCustomGrouping1799878748.zip) for Custom grouping when ItemsSource is DataTable.
 
 You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied.
 
@@ -482,7 +483,7 @@ dataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
 In the below screenshot custom grouping is applied based on `SickLeaveHours` column and the inner records in each group are sorted based on `SickLeaveHours` value.
 
 
-![Displaying customization of sorting inner records of groups in WPF SfDataGrid](Grouping_images/Grouping_img10.png)
+![Sorting Inner Records Group in WPF DataGrid](Grouping_images/wpf-datagrid-sort-inner-records.png)
 
 ## Sorting groups based on summary values
 
@@ -550,7 +551,7 @@ Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGrou
 {% endtabs %}
 
 
-![Displaying grouping in WPF SfDataGrid using custom group comparer](Grouping_images/Grouping_img9.png)
+![Displaying Grouping in WPF DataGrid using Custom Group Comparer](Grouping_images/wpf-datagrid-custom-group-comparer.png)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SortBySummaryDemo-355692747.zip).
 
@@ -565,9 +566,9 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
 
 
 {% tabs %}
@@ -600,10 +601,10 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being collapsed.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group collapsing.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
 
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
 
 
 {% tabs %}

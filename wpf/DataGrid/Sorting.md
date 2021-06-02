@@ -51,7 +51,7 @@ N> The [GridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![Sorting in WPF DataGrid](Sorting_images/Sorting_img1.png)
+![Sorting in WPF DataGrid](Sorting_images/wpf-datagrid-sorting.png)
 
 
 ## Sort column in double click
@@ -89,7 +89,7 @@ SfDataGrid control allows you sort more than one column, where sorting is applie
 
 In the below screen shot, the OrderID column sorted. Then the CustomerName column is sorted against the OrderID data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of OrderID column is preserved and CustomerName column sorted against OrderID column.
 
-![Multi column sorting in WPF DataGrid](Sorting_images/Sorting_img2.png)
+![Multi Column Sorting in WPF DataGrid](Sorting_images/wpf-datagrid-multi-column-sorting.png)
 
     
 ### Display sort order
@@ -108,7 +108,7 @@ this.dataGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sort icon with sort order in sorted columns of WPF DataGrid](Sorting_images/Sorting_img3.png)
+![Sorting Orders in WPF DataGrid](Sorting_images/wpf-datagrid-sorting-order.png)
 
 
 ## Programmatic sorting
@@ -277,7 +277,7 @@ this.dataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomCompar
 
 Sorting CustomerName column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
-![Sorting using custom sort comparer in WPF DataGrid](Sorting_images/Sorting_img4.png)
+![Custom Sorting in WPF DataGrid](Sorting_images/wpf-datagrid-custom-sorting.png)
 
 
 ## Sorting the underlying collection
@@ -333,7 +333,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) **–** Gets the action triggered this event. 
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) **–** Setting value to `true`, cancels the triggered action. 
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) **–** Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) **-** Gets the list of new `SortColumnDescription’s` that are added.
 
@@ -341,7 +341,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [CancelScroll](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) **-** Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnsChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}
