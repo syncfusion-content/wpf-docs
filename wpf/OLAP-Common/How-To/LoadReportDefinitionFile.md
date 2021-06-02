@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoadReportDefinitionFile| OLAPCommon | Wpf | Syncfusion
-description: Loadreportdefinitionfile in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Loadreportdefinitionfile in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Host BI Silverlight component in WPF OLAPCommon control | Syncfusion
-description: Host bi silverlight component in asp.net mvc web project in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Host bi silverlight component in asp.net mvc web project in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Storing and Retrieving Report as Stream in WPF OlapClient | Syncfusion
-description: Storing and retrieving report as stream in Syncfusion Essential Studio WPF OlapClient Control, its elements and more.
+description: Storing and retrieving report as stream in Syncfusion Essential Studio WPF OlapClient Control, its elements, and more.
 platform: wpf
 control: OLAP Client
 documentation: ug

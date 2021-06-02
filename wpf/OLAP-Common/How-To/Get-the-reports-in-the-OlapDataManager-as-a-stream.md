@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OlapDataManager as a stream in WPF OLAPCommon control | Syncfusion
-description: Get the reports in the olapdatamanager as a stream in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Get the reports in the olapdatamanager as a stream in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

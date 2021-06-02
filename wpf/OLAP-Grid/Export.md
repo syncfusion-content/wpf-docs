@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export| OLAP Grid | Wpf | Syncfusion
-description: Learn here about Export in Syncfusion Essential Studio WPF OLAP Grid Control, its elements and more.
+description: Learn here about Export in Syncfusion Essential Studio WPF OLAP Grid Control, its elements, and more.
 platform: wpf
 control: OLAP Grid
 documentation: ug

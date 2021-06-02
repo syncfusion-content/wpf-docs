@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | PinnableListBox | wpf | Syncfusion
-description: Learn here about Appearance in Syncfusion Essential Studio WPF PinnableListBox control, its elements and more.
+description: Learn here about Appearance in Syncfusion Essential Studio WPF PinnableListBox control, its elements, and more.
 platform: wpf
 control: PinnableListBox 
 documentation: ug

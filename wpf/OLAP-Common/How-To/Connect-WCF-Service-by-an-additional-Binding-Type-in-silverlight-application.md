@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connect WCF Service by an Binding in WPF OLAPCommon | Syncfusion
-description: Connect wcf service by an additional binding type in silverlight application in Syncfusion WPF OLAPCommon control, its elements and more.
+description: Connect wcf service by an additional binding type in silverlight application in Syncfusion WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

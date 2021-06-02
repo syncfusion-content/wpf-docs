@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind an OlapReport with OlapDataManager| OLAPCommon | Wpf | Syncfusion
-description: Bind an olapreport with olapdatamanager in Syncfusion Essential Studio WPF OLAPCommon control, its elements and more.
+description: Bind an olapreport with olapdatamanager in Syncfusion Essential Studio WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rename and remove a report| OLAPCommon | Wpf | Syncfusion
-description: Rename and remove a report in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Rename and remove a report in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

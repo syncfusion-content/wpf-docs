@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add the elements to an Axis| OLAPCommon | Wpf | Syncfusion
-description: Add the elements to an axis in Syncfusion Essential Studio WPF OLAPCommon control, its elements and more.
+description: Add the elements to an axis in Syncfusion Essential Studio WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

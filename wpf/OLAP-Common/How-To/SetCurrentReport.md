@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SetCurrentReport| OLAPCommon | Wpf | Syncfusion
-description: Setcurrentreport in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Setcurrentreport in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

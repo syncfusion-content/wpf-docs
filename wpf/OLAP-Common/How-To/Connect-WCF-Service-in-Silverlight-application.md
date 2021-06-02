@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Silverlight application in WPF OLAPCommon Control | Syncfusion
-description: Connect wcf service in silverlight application in Syncfusion WPF OLAPCommon Control, its elements and more.
+description: Connect wcf service in silverlight application in Syncfusion WPF OLAPCommon Control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

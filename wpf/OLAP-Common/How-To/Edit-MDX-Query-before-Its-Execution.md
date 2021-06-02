@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Edit MDX Query before Its Execution| OLAPCommon | Wpf | Syncfusion
-description: Edit mdx query before its execution in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
+description: Edit mdx query before its execution in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug
