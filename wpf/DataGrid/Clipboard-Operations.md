@@ -10,7 +10,7 @@ documentation: ug
 
 # Clipboard Operations in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://msdn.microsoft.com/en-us/library/system.windows.clipboard.aspx) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
+SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/dotnet/api/system.windows.clipboard?view=net-5.0) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
 
 N> Clipboard operations is not supported for the summary rows, add new row and unbound rows.
 
