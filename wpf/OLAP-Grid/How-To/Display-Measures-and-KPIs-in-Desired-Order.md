@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Displaying Measures and KPIs in Desired Order | OLAP Grid | Syncfusion
-description: Displaying the measures, KPIs in a given OLAP report that gets tabulated in OlapGrid.
+description: Displaying the measures, KPIs in a given OLAP report that gets tabulated in Syncfusion WPF OlapGrid control, its elements, and more.
 platform: wpf
 control: OlapGrid
 documentation: ug
