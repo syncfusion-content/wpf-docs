@@ -21,35 +21,35 @@ Terminologies:
 4. Dock Hints - Iconic indication of a region
 
 Dock to document window
-![Adding a window to Document window](Dock-hints-images/document-hints-terminologies.png)
+![WPF Docking Dock to Document Window](Dock-hints-images/wpf-docking-dock-to-document-window.png)
 
 Dock to normal window
-![Adding a window to dock window](Dock-hints-images/dock-hints-terminologies.png)
+![WPF Docking Dock to Normal Window](Dock-hints-images/wpf-docking-dock-to-normal-window.png)
 
 
 ## Dock a window to desired direction
 
 When user drag a window over another window, drag provider appears with dock hints. Based on dock hints, the window can be placed(docked or documented) to its desired place. If the window is dragged over the document area drag provider will be displayed with 9 hints, 
 
-![DragProvider with 9 dock hints](Dock-hints-images/dock-hints-8.png)
+![WPF Docking DragProvider with 9 Dock Hints](Dock-hints-images/wpf-docking-dragprovider-with-9-dock-hints.png)
 
 Otherwise the provider will be displayed with 5 hints.
 
-![DragProvider with 4 dock hints](Dock-hints-images/dock-hints-4.png)
+![WPF Docking DragProvider with 5 Dock Hints](Dock-hints-images/wpf-docking-dragprovider-with-5-dock-hints.png)
 
 ### Dock to document window
 1. User can document the dragged window with the existing tab group through the center dock hint. 
 2. New Tab group can be created at any sides(left, top, right and bottom) through the hints which is adjacent to the center dock hint. 
 3. Dragged window can be docked at any side using the hints which is outer side of the drag provider.
 
-![Document area dock hints functionality](Dock-hints-images/dock-hints-8-functionality.png)
+![WPF Docking Dock Hints 8 Functionality](Dock-hints-images/wpf-docking-dock-hints-8-functionality.png)
 
 ### Dock to normal window
 
 1. Using center dock hint, dragged window can be added as a tab to existing dock window. 
 2. Also the window can be docked to any side of the targeted window through the outer side of the drag provider.
 
-![Dock area dock hints functionality](Dock-hints-images/dock-hints-4-functionality.png)
+![WPF Docking Dock Hints 4 Functionality](Dock-hints-images/wpf-docking-dock-hints-4-functionality.png)
 
 ## Restrict docking by disabling inner and outer dock hints
 
@@ -59,7 +59,7 @@ Dock hints of the DragProvider can be disabled / enabled through attached proper
 
 When the DockAbility of the window is set as `All`, all the dock hints of the DockingManager will be enabled in the DockingManager's DragProvider. Default value of the `DockAbility` property is `All`.
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-All.png)
+![WPF Docking DragProvider with all Dock Hints](Dock-hints-images/wpf-docking-dragprovider-with-all-dock-hints.png)
 
 ### DockLeft, DockRight, DockTop, DockBottom, DockTabbed
 
@@ -181,7 +181,7 @@ When the DockAbility is `DockAll`, all the dock hints which allows the window to
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-DockAll1.png)
+![WPF Dock Hints Dockability as DockAl1](Dock-hints-images/wpf-dock-hints-dockability-as-dockall.png)
 
 ### DocumentLeft, DocumentRight, DocumentTop, DocumentBottom, DocumentTabbed
 
@@ -303,7 +303,7 @@ If the DockAbility is `DocumentAll`, all the dock hints which allows the window 
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all document hints](Dock-hints-images/dock-hints-dockability-documentAll.png)
+![WPF Dock Hints Dockability as DocumentAl1](Dock-hints-images/wpf-dock-hints-dockability-as-documentall.png)
 
 ### Left, Right, Top, Bottom, Tabbed
 
@@ -425,7 +425,7 @@ The dock hints which are arranged vertically in the DragProvider will be enabled
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with vertical dock hints](Dock-hints-images/dock-hints-dockability-vertical.png)
+![WPF DragProvider with Vertical Dock Hints](Dock-hints-images/wpf-dragprovider-with-vertical-dock-hints.png)
 
 ### Horizontal
 
@@ -487,7 +487,7 @@ The dock hints which are arranged horizontally in the DragProvider will be enabl
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with horizontal dock hints](Dock-hints-images/dock-hints-dockability-horizontal.png)
+![WPF DragProvider with Horizontal Dock Hints](Dock-hints-images/wpf-dragprovider-with-horizontal-dock-hints.png)
 
 ### None
 
@@ -590,7 +590,7 @@ private void DockingManager_PreviewDockHints(object sender, PreviewDockHintsEven
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-preview-event.png)
+![WPF Docking Restrict at Runtime](Dock-hints-images/wpf-docking-restrict-at-runtime.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 

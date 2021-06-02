@@ -32,7 +32,7 @@ DockingManager1.ActivateWindow("Content1")
 
 {% endtabs %}
 
-![Activating a dock window programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img1.jpeg)
+![WPF Dock Window Activation](Dealing-with-Windows_images/wpf-dock-window-activation.jpeg)
 
 
 ## Adding Window Programmatically
@@ -120,7 +120,7 @@ DockingManager1.Children.Add(content5)
 
 {% endtabs %}
 
-![Adding child elements to DockingManager programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img2.jpeg)
+![WPF Docking Window Adding Programmatically](Dealing-with-Windows_images/wpf-docking-window-adding-programmatically.jpeg)
 
 
 ### Setting State for Window programmatically
@@ -144,7 +144,7 @@ DockingManager.SetState(content1, DockState.Float)
 
 {% endtabs %}
 
-![Setting Float State for child elements of DockingManager programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img3.jpeg)
+![WPF Docking Window States](Dealing-with-Windows_images/wpf-docking-window-states.jpeg)
 
 
 
@@ -170,7 +170,7 @@ DockingManager.SetState(content1, DockState.Document)
 
 {% endtabs %}
 
-![Setting Document State for child elements of DockingManager programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img4.jpeg)
+![WPF Docking Window Document State](Dealing-with-Windows_images/wpf-docking-window-document-state.jpeg)
 
 
 * Setting state as AutoHidden
@@ -191,7 +191,7 @@ DockingManager.SetState(content1, DockState.AutoHidden)
 
 {% endtabs %}
 
-![Changing a window to AutoHidden programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img5.jpeg)
+![WPF Docking Window AutoHidden State](Dealing-with-Windows_images/wpf-docking-window-autohidden-state.jpeg)
 
 #### Making Window AutoHide programmatically
 
@@ -213,7 +213,7 @@ DockingManager1.ExecuteAutoHide(Content1)
 
 {% endtabs %}
 
-![Setting AutoHidden window programmatically](Dealing-with-Windows_images/Dealing-with-Windows_img6.jpeg)
+![WPF Docking Making the Window AutoHide Programmatically](Dealing-with-Windows_images/wpf-docking-making-the-window-autohide-programmatically.jpeg)
 
 #### Making Window Float and Document programmatically
 
@@ -556,7 +556,7 @@ SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOr
 
 {% endtabs %}
 
-![Customizing appearance of Dock windows](Dealing-with-Windows_images/Dealing-with-Windows_img9.jpeg)
+![WPF Docking Window Appearance Customization](Dealing-with-Windows_images/wpf-docking-window-appearance-customization.jpeg)
 
 
 ## Customizing FloatWindow
@@ -599,7 +599,7 @@ SyncDockingManager.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.B
 
 {% endtabs %}
 
-![Customizing appearance of the Float window](Dealing-with-Windows_images/Dealing-with-Windows_img10.jpeg)
+![WPF Docking Float Window Appearance Customization](Dealing-with-Windows_images/wpf-docking-float-window-appearance-customization.jpeg)
 
 
 ## Enable/Disable Dragging a Window
@@ -650,7 +650,7 @@ SyncDockingManager.DraggingType = DraggingType.ShadowDragging;
 
 {% endtabs %}
 
-![Dragging type as ShadowDragging in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img11.jpeg)
+![WPF Docking Drag Shadow of a Window](Dealing-with-Windows_images/wpf-docking-drag-shadow-of-a-window.jpeg)
 
 
 ## Drag Border of a Window
@@ -678,7 +678,7 @@ SyncDockingManager.DraggingType = DraggingType.BorderDragging;
 
 {% endtabs %}
 
-![Border dragging type of the DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img12.jpeg)
+![WPF Docking Window Border Dragging](Dealing-with-Windows_images/wpf-docking-window-border-dragging.jpeg)
 
 
 ## Customizing a resizing behaviors
@@ -792,7 +792,7 @@ DockingManager.SetDesiredMaxWidthInFloatingMode(floatWindow1,600);
 {% endtabs %}
 
 
-![MaxWidth and MaxHeight for Window](Dealing-with-Windows_images/Dealing-with-Windows_img13.jpeg)
+![WPF Docking Window MaxWidth and MaxHeight](Dealing-with-Windows_images/wpf-docking-window-maxwidth-and-maxheight.jpeg)
 
 
 To set the maximum height for the float and dock windows respectively, set their properties [DesiredMaxHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredMaxHeightInDockedMode) and [DesiredMaxHeightInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_DesiredMaxHeightInFloatingMode) with the desired values.
@@ -820,7 +820,7 @@ DockingManager.SetDesiredMaxHeightInFloatingMode(floatWindow1,200);
 {% endtabs %}
 
 
-![Desire height and width of float windows](Dealing-with-Windows_images/Dealing-with-Windows_img14.jpeg)
+![WPF Docking Desired Height and Width of Float Window](Dealing-with-Windows_images/wpf-docking-desired-height-and-width-of-float-window.jpeg)
 
 
 ## Configuring window sizing
@@ -855,7 +855,7 @@ DockingManager.SetDesiredWidthInDockedMode(Content1, 300);
 
 {% endtabs %}
 
-![Desire height and width of Dock windows](Dealing-with-Windows_images/Dealing-with-Windows_img15.jpeg)
+![WPF Docking Desired Height and Width of Dock Window](Dealing-with-Windows_images/wpf-docking-desired-height-and-width-of-dock-window.jpeg)
 
 ### Sizing Based on the Content
 
@@ -878,7 +878,7 @@ DockingManager.SetSizetoContentInFloat(Content1,true);
 
 {% endtabs %}
 
-![Size of the content when the property SizetoContentInFloat is true](Dealing-with-Windows_images/Dealing-with-Windows_img16.jpeg)
+![WPF Docking Float Window Content Sizing](Dealing-with-Windows_images/wpf-docking-float-window-content-sizing.jpeg)
 
 To size the Dock window based on the children window size, set the property [SizeToContentInDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SizetoContentInDock) property for the child window as True. By default, its value is False.
 
@@ -903,7 +903,7 @@ DockingManager.SetSizetoContentInDock(Content1,true);
 
 {% endtabs %}
 
-![Size of the content when the property SizetoContentInDock is true](Dealing-with-Windows_images/Dealing-with-Windows_img17.jpeg)
+![WPF Docking Dock Window Content Sizing](Dealing-with-Windows_images/wpf-docking-dock-window-content-sizing.jpeg)
 
 
 ### Absolute Sizing on Dock to fill
@@ -927,7 +927,7 @@ DockingManager.SetDockFillMode(content1, DockFillModes.Absolute);
 
 {% endtabs %}
 
-![Absolute Sizing on Dock to fill](Dealing-with-Windows_images/Dealing-with-Windows_img18.jpeg)
+![WPF Docking Absolute Sizing](Dealing-with-Windows_images/wpf-docking-absolute-sizing.jpeg)
 
 
 ### Customizing the Splitter appearance
@@ -956,7 +956,7 @@ SyncDockingManager.SplitterSize = 10;
 
 {% endtabs %}
 
-![Customized Splitter appearance](Dealing-with-Windows_images/Dealing-with-Windows_img19.jpeg)
+![WPF Docking Splitter Appearance Customization](Dealing-with-Windows_images/wpf-docking-splitter-appearance-customization.jpeg)
 
 
 ## Occupy whole window
@@ -983,7 +983,7 @@ SyncDockingManager.DockFill = true;
 
 {% endtabs %}
 
-![Dock windows occupy whole window](Dealing-with-Windows_images/Dealing-with-Windows_img20.jpeg)
+![WPF Dock Windows Occupy Whole Window](Dealing-with-Windows_images/wpf-dock-windows-occupy-whole-window.jpeg)
 
 
 And when DockFill functionality is enabled, DockingManager changes the DockWindow to AutoHidden state, if any Document state window is present .
@@ -1016,7 +1016,7 @@ DockingManager.SetState(document1, DockState.Document);
 
 {% endtabs %}
 
-![Dock window is changed to AutoHidden state when the DockingManager has a child in Document state and the property DockFill is true](Dealing-with-Windows_images/Dealing-with-Windows_img21.jpeg)
+![WPF Docking DockFill Functionality](Dealing-with-Windows_images/wpf-docking-dockfill-functionality.jpeg)
 
 
 ### Restrict DockWindow to AutoHide while DockFill
@@ -1046,7 +1046,7 @@ SyncDockingManager.DockFillDocumentMode = DockFillDocumentMode.Normal;
 
 {% endtabs %}
 
-![Restricting DockWindow to AutoHide when DockFill property is true](Dealing-with-Windows_images/Dealing-with-Windows_img22.jpeg)
+![WPF Docking Restrict Dock Window to AutoHide](Dealing-with-Windows_images/wpf-docking-restrict-dock-window-to-autohide.jpeg)
 
 
 ## Applying Context Menu
@@ -1111,7 +1111,7 @@ dockingManager.FloatWindowContextMenuItems.Add(menu2);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom context menu with sub items for dock and float windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img23.png)
+![WPF Docking Custom Context Menu for Dock and Float Windows](Dealing-with-Windows_images/wpf-docking-custom-context-menu-for-dock-and-float-windows.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu) 
 
@@ -1165,7 +1165,7 @@ DockingManager.SetDocumentTabItemContextMenuItems(DockingManager1, collection);
 
 {% endtabs %}
 
-![Adding CustomMenuItem to the Document windows](Dealing-with-Windows_images/Dealing-with-Windows_img24.jpeg)
+![WPF Docking Adding Custom Context Menu to Document Window](Dealing-with-Windows_images/wpf-docking-adding-custom-context-menu-to-document-window.jpeg)
 
 ### CustomMenuItem as Separator
 
@@ -1190,7 +1190,7 @@ The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Co
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/display-separator.png)
+![WPF Docking CustomMenuItems as Separator](Dealing-with-Windows_images/wpf-docking-custom-menu-items-as-separator.png)
 
 ### Customizing ContextMenuItems Visibility
 
@@ -1198,7 +1198,7 @@ The default context menu is visible on right-clicking the different state child 
 
 The default context menu items as shown in the following screenshot:
 
-![Customizing ContextMenuItems Visibility](Dealing-with-Windows_images/Dealing-with-Windows_img25.jpeg)
+![WPF Docking Custom ContextMenuItems Visibility](Dealing-with-Windows_images/wpf-docking-custom-contextmenu-items-visibility.jpeg)
 
 
 To collapse the default context menu, set the property [CollapseDefaultContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CollapseDefaultContextMenuItems) as True.
@@ -1384,9 +1384,9 @@ DockingManager1.DockBehavior = DockBehavior.VS2010;
 
 {% endtabs %}
 
-![Float window with context menu](Dealing-with-Windows_images/Dealing-with-Windows_img28.png)
+![WPF Docking Float Window with Context Menu](Dealing-with-Windows_images/wpf-docking-float-window-with-context-menu.png)
 
-![Auto hide window with context menu](Dealing-with-Windows_images/Dealing-with-Windows_img29.png)
+![WPF Docking Auto Hide Window with Context Menu](Dealing-with-Windows_images/wpf-docking-auto-hide-window-with-context-menu.png)
 
 
 ## Hosting a client control between windows
@@ -1425,7 +1425,7 @@ DockingManager1.ClientControl = new TextBlock() { Text = "ClientControl", Width 
 
 {% endtabs %}
 
-![Hosting a client control between windows](Dealing-with-Windows_images/Dealing-with-Windows_img26.jpeg)
+![WPF Docking Hosting a Client Control Between Windows](Dealing-with-Windows_images/wpf-docking-hosting-a-client-control-between-windows.jpeg)
 
 
 ## DockingManager as FlatLayoutControl
@@ -1482,5 +1482,5 @@ The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Too
 
 {% endtabs %}
 
-![DockingManager acts as layout control](Dealing-with-Windows_images/dockingManager-as-flatlayout.jpeg)
+![WPF Docking acts as Layout Control](Dealing-with-Windows_images/wpf-docking-acts-as-layout-control.jpeg)
 

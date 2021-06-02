@@ -32,7 +32,7 @@ SyncDockingManager.UseNativeFloatWindow = true;
 
 {% endtabs %}
 
-![Floating window](FloatingWindow_images/FloatingWindow_img1.jpeg)
+![WPF Docking Floating Window](FloatingWindow_images/wpf-docking-floating-window.jpeg)
 
 
 ## Rolling Up support
@@ -59,7 +59,7 @@ SyncDockingManager.IsRollupFloatWindow = true;
 
 {% endtabs %}
 
-![Rolling up support](FloatingWindow_images/FloatingWindow_img2.jpeg)
+![WPF Docking Rolling Up Support](FloatingWindow_images/wpf-docking-rolling-up-support.jpeg)
 
 ## Displaying Float Windows in Taskbar
 
@@ -173,7 +173,7 @@ DockingManager.SetCanFloat(Item2, false);
 
 {% endtabs %}
 
-![Enabling or disabling the float functionality](FloatingWindow_images/FloatingWindow_img3.jpeg)
+![WPF Docking Float Functionality](FloatingWindow_images/wpf-docking-float-functionality.jpeg)
 
 
 ## Enabling and Disabling the float functionality Operation on Double Click
@@ -228,7 +228,7 @@ DockingManager.SetCanFloatMaximize(Content1, true);
 
 {% endtabs %}
 
-![Maximize and minimize support](FloatingWindow_images/FloatingWindow_img4.jpeg)
+![WPF Docking Maximize and Minimize Support in Float Window](FloatingWindow_images/wpf-docking-maximize-and-minimize-support-in-float-window.jpeg)
 
 ## Float or Maximize on double clicking the header
 
@@ -277,7 +277,7 @@ DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200))
 {% endhighlight %}
 
 {% endtabs %}
-![Positioning on desire location](FloatingWindow_images/FloatingWindow_img5.jpeg)
+![WPF Docking FloatingWindow Position](FloatingWindow_images/wpf-docking-floatingwindow-position.jpeg)
 
 ## Snapping Float window
 
@@ -318,7 +318,7 @@ DockingManager.SetAllowSnap(Dock4, true);
 {% endtabs %}
 
 
-![Snapping float window](FloatingWindow_images/FloatingWindow_img6.jpeg)
+![WPF Docking Float Window Snapping](FloatingWindow_images/wpf-docking-float-window-snapping.jpeg)
 
 We can get the snapped windows collection for specific float child using [GetSnappedWindows](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_GetSnappedWindows_System_Windows_DependencyObject_) method.
 
@@ -394,6 +394,6 @@ dockingManager.FloatWindowContextMenuItems.Add(menu2);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom context menu with sub items for float window in DockingManager](FloatingWindow_images\CustomFloatContextMenuItems.png)
+![WPF Docking Floating Window with Custom Context Menu](FloatingWindow_images\wpf-docking-floating-window-with-custom-context-menu.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)

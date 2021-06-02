@@ -14,7 +14,7 @@ This section explains how to adapt the Syncfusion docking manager to an MVVM app
 
 Here a simple text-reader application is used to demonstrate this approach.
 
-![MVVM](PatternandPractices_images/PatternandPractices_img1.jpeg)
+![WPF Docking in MVVM Pattern](PatternandPractices_images/wpf-docking-in-MVVM-pattern.jpeg)
 
 
 1. **DocumentsView** - The pane that lists all the available documents and tooltip display the path of the document.
@@ -23,7 +23,7 @@ Here a simple text-reader application is used to demonstrate this approach.
 4. **CommandView** - The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
 5. The project structure looks like this:
 
-![MVVM](PatternandPractices_images/PatternandPractices_img2.jpeg)
+![WPF Docking Pattern and Practices](PatternandPractices_images/wpf-docking-pattern-and-practices.jpeg)
 
 
 ### Docking Adapter
@@ -41,7 +41,7 @@ The adapter is simply a user control that contains DockingManager as its content
 
 {% endtabs %}
 
-![Docking adapter](PatternandPractices_images/PatternandPractices_img3.jpeg)
+![WPF Docking Adapter](PatternandPractices_images/wpf-docking-adapter.jpeg)
 
 
 The text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called `IDockElement` that maintains basic attributes needed for every dock element.
@@ -58,7 +58,7 @@ The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.co
 
 ### Application structure
 
-![Application structure](PatternandPractices_images/PatternandPractices_img4.jpeg)
+![WPF Docking Application Structure](PatternandPractices_images/wpf-docking-application-structure.jpeg)
 
 
 The view model has a collection of workspaces that is data-bound to the [ItemsSource]([ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2)) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
@@ -112,11 +112,11 @@ The following steps explains how to create sample project with MVVMLight templat
 
 2.Create a new WPF project and select MVVMLight WPF template.
 
-![Create a new WPF project](PatternandPractices_images/Patterns-and-Practices-img1.png)
+![WPF Docking MVVMLight](PatternandPractices_images/wpf-docking-MVVMLight.png)
 
 3.Template for MVVMLight sample will be created with required assemblies, Simple IOC container and ViewModelLocator
 
-![Template for MVVMLight](PatternandPractices_images/Patterns-and-Practices-img2.png)
+![WPF Docking MVVMLight Template](PatternandPractices_images/wpf-docking-MVVMLight-template.png)
 
 4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
 
@@ -358,7 +358,7 @@ End Class
 
 Then when run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
-![Prism](PatternandPractices_images/PatternandPractices_img5.jpeg)
+![WPF Docking Prism](PatternandPractices_images/wpf-docking-prism.jpeg)
 
 ## Configuring DockingManager with Prism 6.1
 
@@ -628,7 +628,7 @@ protected override Prism.Regions.RegionAdapterMappings ConfigureRegionAdapterMap
 
 The final output of application is given below:
 
-![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
+![WPF Docking Configure the Region Adapter Mappings](PatternandPractices_images/wpf-docking-configure-the-region-adapter-mappings.jpeg)
 
 N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-6.1)
 
@@ -1003,6 +1003,6 @@ protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings reg
 
 The final output of application is given below:
 
-![WPF DockingManager with prism 7.1](PatternandPractices_images/wpf-docking-manager-prism-7.1.png)
+![WPF Docking with prism 7.1](PatternandPractices_images/wpf-docking-prism-7.1.png)
 
 N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-7.1)

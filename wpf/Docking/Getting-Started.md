@@ -14,7 +14,11 @@ This section explains how to implement a similar UI as Visual Studio by using th
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#dockingmanager) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
+<<<<<<< HEAD
+[How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
+=======
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
+>>>>>>> 75e024c6dd1a443a80d7a9cfa02fb694db1b406a
 
 ## Creating Application with DockingManager control
 In this walk through, user will create a WPF application with [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control.
@@ -30,7 +34,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
-![Adding control via designer](GettingStarted_images/GettingStarted_img6.png)
+![WPF Docking Add via Designer](GettingStarted_images/wpf-docking-add-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
@@ -124,7 +128,7 @@ namespace DockingManager_Sample
 
 {% endtabs %}
 
-![DockingManager in VisualStudio](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF Docking in Visual Studio](Getting-Started_images/wpf-docking-in-visual-studio.jpeg)
 
 ## Set Header for each child window
 
@@ -168,7 +172,7 @@ DockingManager.SetHeader(StartPage, "StartPage");
 
 {% endtabs %}
 
-![Dock child windows in Docking Manager with header](Getting-Started_images/Getting-Started_img2.jpeg)
+![WPF Docking Child Window Header](Getting-Started_images/wpf-docking-child-window-header.jpeg)
 
 ## Set States for each child window
 
@@ -229,7 +233,7 @@ DockingManager.SetState(StartPage, DockState.Document);
 
 {% endtabs %}
 
-![Set different state for child windows in Docking Manager](Getting-Started_images/Getting-Started_img3.jpeg)
+![WPF Docking Child Window States](Getting-Started_images/wpf-docking-child-window-states.jpeg)
 
 
 ## Set Sides for children
@@ -271,7 +275,7 @@ DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 {% endtabs %}
 
-![Dock panels at any side and float the control in Docking Manager](Getting-Started_images/Getting-Started_img4.jpeg)
+![WPF Docking Child Window Sides](Getting-Started_images/wpf-docking-child-window-sides.jpeg)
 
 ## Save / Load the layout 
 
@@ -386,7 +390,7 @@ SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 
 {% endtabs %}
 
-![Visual Studio-style appearances for docking manager](Getting-Started_images/Getting-Started_img5.jpeg)
+![WPF Docking Visual Styles](Getting-Started_images/wpf-docking-visual-styles.jpeg)
 
 ## ToolTip for child window
 
@@ -414,7 +418,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 {% endtabs %}
 
-![Docking Manager displays tooltip when hovering mouse over child window header](Getting-Started_images/ToolTip.png)
+![WPF Docking Child Window ToolTip](Getting-Started_images/wpf-docking-child-window-tooltip.png)
 
 
 ## Theme
@@ -425,4 +429,4 @@ DockingManager supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)
+  ![WPF Docking Theme](Getting-Started_images/wpf-docking-theme.png)
