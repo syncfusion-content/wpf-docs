@@ -152,6 +152,6 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 {% seealso %}
 
-[How to create the sample to know the various functionalities of annotation?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
+[How to add annotations to nodes/connectors and its customization?](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations)
 
 {% endseealso %}
