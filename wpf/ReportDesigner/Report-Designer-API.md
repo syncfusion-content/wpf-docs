@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Report Designer API | ReportDesigner | wpf | Syncfusion
-description: report designer api
+description: Learn here about API of Syncfusion Essential Studio WPF Report Designer control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug
 ---
 
-# Report Designer API
+# Report Designer API in WPF
 
 ## Properties
 

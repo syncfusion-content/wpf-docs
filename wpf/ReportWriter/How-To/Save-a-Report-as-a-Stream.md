@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save a report as stream | ReportWriter | WPF | Syncfusion
-description: save a report to stream
+description: Save a report to stream in Syncfusion Essential Studio WPF ReportWriter Control, its elements, and more.
 platform: wpf
 control: ReportWriter
 documentation: ug
