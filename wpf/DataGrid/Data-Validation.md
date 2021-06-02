@@ -83,7 +83,7 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid using IDataErrorInfo](Data-Validation_images/Data-Validation_img1.png)
+![Data validation in WPF DataGrid using IDataErrorInfo](Data-Validation_images/wpf-datagrid-data-validation.png)
 
 ### INotifyDataErrorInfo
 
@@ -140,7 +140,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img2.png)
+![Data validation in WPF DataGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-with-data-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -435,7 +435,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Customizing error icon](Data-Validation_images/Data-Validation_img3.png)
+![WPF DataGrid displays Data Validation Errors with Error Icon](Data-Validation_images/wpf-datagrid-error-icon.png)
 
 ### Change the color of error icon
 
@@ -583,7 +583,7 @@ You can change the validation error template color of the `GridCell` by changi
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Changing color of error icon](Data-Validation_images/Data-Validation_img4.png)
+![Data Validation Error Icon with Custom Color in WPF DataGrid](Data-Validation_images/wpf-datagrid-error-icon-with-custom-color.png)
 
 ### Change the cursor over error icon
 
@@ -737,7 +737,7 @@ You can change the validation error template cursor of the `GridCell` by chang
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Change the cursor on error icon](Data-Validation_images/Data-Validation_img5.png)
+![Changing Cursor Style on Error Icon in WPF DataGrid](Data-Validation_images/wpf-datagrid-change-cursor-style.png)
 
 ## Data validation error tip (help tip) customization
 
@@ -836,7 +836,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Change the background and foreground color of error tip](Data-Validation_images/Data-Validation_img6.png)
+![WPF DataGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-datagrid-error-tip-color-customization.png)
 
 ## Showing error details in RowHeader
 
@@ -864,7 +864,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Showing error information using IDataErrorInfo](Data-Validation_images/Data-Validation_img7.png)
+![WPF DataGrid displays Error Information of Data Validation using IDataErrorInfo](Data-Validation_images/wpf-datagrid-error-info-in-row-header.png)
 
 ### Using INotifyDataErrorInfo
 
@@ -887,7 +887,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Showing error information using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img8.png)
+![WPF DataGrid displays Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-error-tip.png)
 
 ## Data validation with Master-details view
 
@@ -933,7 +933,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![Built in Data validation in WPF SfDataGrid](Data-Validation_images/Data-Validation_img9.png)
+![Data Validation with Master-DetailsView in WPF SfDataGrid](Data-Validation_images/wpf-datagrid-validation-in-master-details-view.png)
 
 ### Custom validation through events
 
@@ -1149,7 +1149,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Validation with Checkbox column](Data-Validation_images/Data-Validation_img10.png)
+![WPF DataGrid displays Data Validation with CheckBox Column](Data-Validation_images/wpf-datagrid-checkbox-validation.png)
 
 ## Show validation errors when using UseDrawing
 

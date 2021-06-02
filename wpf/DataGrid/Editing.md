@@ -38,7 +38,7 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowEditing) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing).
 
-![WPF DataGrid Cell Editing](Editing_images/Editing_img1.jpeg)
+![WPF DataGrid Cell Editing](Editing_images/wpf-datagrid-cell-editing.jpeg)
 
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) navigation and editing.
@@ -637,7 +637,7 @@ public class CellStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![How to change foreground of edited cells in WPF SfDataGrid](Editing_images/Editing_img2.jpeg)
+![Changing Foreground of Edited Cells in WPF DataGrid](Editing_images/wpf-datagrid-edited-cells.jpeg)
 
 
 ### Allow editing when pressing minus key
