@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apply the Filter through filter element| OLAPCommon | Wpf | Syncfusion
-description: apply the filter through filter element
+description: Apply the filter through filter element in Syncfusion Essential Studio WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

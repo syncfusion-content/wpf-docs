@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connect ActivePivot Server through XMLA| | Wpf | Syncfusion
-description: connect activepivot server through xmla
+description: Connect activepivot server through xmla in Syncfusion WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug
@@ -40,5 +40,5 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endhighlight  %}
 {% endtabs %}
 
-[Click here](http://quartetfs.com/) for more information about Active Pivot server.
+[Refer here](http://quartetfs.com/) for more information about Active Pivot server.
 

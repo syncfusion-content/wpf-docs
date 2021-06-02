@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load xml report file| OLAPCommon | Wpf | Syncfusion
-description: load xml report file
+description: Load xml report file in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

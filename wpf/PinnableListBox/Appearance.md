@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance | PinnableListBox | wpf | Syncfusion
-description: appearance      
+description: Learn here about Appearance in Syncfusion Essential Studio WPF PinnableListBox control, its elements, and more.
 platform: wpf
 control: PinnableListBox 
 documentation: ug
 ---
 
-# Appearance      
+# Appearance in WPF PinnableListBox Control   
 
 ## Setting VisualStyle for PinnableListBox
 
@@ -47,13 +47,13 @@ The steps to edit the PinnableListBox Template by using Expression Blend are as 
 
 
 
-   ![](Appearance_images/Appearance_img1.png)
+   ![Appearance_images1](Appearance_images/Appearance_img1.png)
 
 
 
 3. After creating the PinnableListBox, select the PinnableListBox and navigate to Object > Edit Style > Edit a Copy, to edit the Template of the PinnableListBox.
 
-   ![](Appearance_images/Appearance_img2.png)
+   ![Appearance_images2](Appearance_images/Appearance_img2.png)
 
 
 
@@ -61,13 +61,13 @@ The steps to edit the PinnableListBox Template by using Expression Blend are as 
 
 4. In Object and Timeline, right-click the PinnableListBox control and select the Edit Template option, as displayed below. 
 
-   ![](Appearance_images/Appearance_img3.png)
+   ![Appearance_images3](Appearance_images/Appearance_img3.png)
 
    {:.prettyprint}
 
 This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
 
-![](Appearance_images/Appearance_img4.png)
+![Appearance_images4](Appearance_images/Appearance_img4.png)
 
 
 
@@ -91,7 +91,7 @@ The result of these steps is an XAML, which is placed within your application. T
 
 All template items can now be found in the Objects and Timeline window.
 
-![](Appearance_images/Appearance_img5.png)
+![Appearance_images5](Appearance_images/Appearance_img5.png)
 
 
 
