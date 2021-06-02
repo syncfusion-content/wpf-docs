@@ -13,19 +13,19 @@ You can insert TextBox in the Report Designer and drag report items to the TextB
 
 1. Click Insert Tab, select TextBox from Report Items.
 
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img1.png)
+   ![Draw-TextBox-Report-Item_images1](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img1.png)
    
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img2.png)
+   ![Draw-TextBox-Report-Item_images2](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img2.png)
 
 2. To add value to the TextBox, drag the data field from the DataSets in the Report Data.
 
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img3.png)
+   ![Draw-TextBox-Report-Item_images3](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img3.png)
 
 3. Click on the View report item properties or Right click on the TextBox. Then TextBox Properties wizard opens.
 
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img4.png)
+   ![Draw-TextBox-Report-Item_images4](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img4.png)
    
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img5.png)
+   ![Draw-TextBox-Report-Item_images5](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img5.png)
 
 4. In the TextBox properties dialog, select any of the following:
 
@@ -47,7 +47,7 @@ You can insert TextBox in the Report Designer and drag report items to the TextB
 
    * Actions - To change the hyperlink options.
    
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img6.png)
+   ![Draw-TextBox-Report-Item_images6](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img6.png)
    
 5. Set the desired values, and then click OK to update the values in the TextBox.
 
@@ -55,5 +55,5 @@ You can insert TextBox in the Report Designer and drag report items to the TextB
 
 7. Select TextBox, Right click and select Delete to delete the textbox.
 
-   ![Draw-TextBox-Report-Item_images](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img7.png)
+   ![Draw-TextBox-Report-Item_images7](Draw-TextBox-Report-Item_images/Draw-TextBox-Report-Item_img7.png)
 

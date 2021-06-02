@@ -17,7 +17,7 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 3. Select Add, and then click New Item. 
 
-   ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img1.png)
+   ![Create-RDLC-Report-images1](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img1.png)
 
 4. Then Add New Item dialog opens.
 
@@ -25,77 +25,77 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 6. Click Report, and then click Add. 
 
-   ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img2.png)
+   ![Create-RDLC-Report-images2](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img2.png)
 
 7. The Report Wizard opens.
 
 8. Enter a dataset name in Name field.To choose a data source for the dataset, click New on the right of Data source drop-down combo box. 
 
-   ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img3.png)
+   ![Create-RDLC-Report-images3](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img3.png)
 
 9. Then Data Source Configuration Wizard opens.
 
 10. Click Database under Where will the application get data from? and then click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img4.png)
+    ![Create-RDLC-Report-images4](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img4.png)
 
 11. Click Entity Data Model under What type of database model do you want to use? and click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img5.png)
+    ![Create-RDLC-Report-images5](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img5.png)
 
 12. Then Entity Data Model Wizard opens.
 
 13. Click Generate from database under what should the model contain? and click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img6.png)
+    ![Create-RDLC-Report-images6](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img6.png)
 
 14. Select a data connection from Which data connection should your application use to connect to the database? drop-down combo box. Click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img7.png)
+    ![Create-RDLC-Report-images7](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img7.png)
 
 15. Select the required object and click Next. The Data Source Configuration Wizard opens.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img8.png)
+    ![Create-RDLC-Report-images8](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img8.png)
 
 16. Select Object under Where will the application get data from? and click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img9.png)
+    ![Create-RDLC-Report-images9](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img9.png)
 
 17. Select the object under What objects do you want to bind to? and click Finish. 
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img10.png)
+    ![Create-RDLC-Report-images10](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img10.png)
 
 18. The Report Wizard shows the details of the dataset under Fields and Click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img11.png)
+    ![Create-RDLC-Report-images11](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img11.png)
 
 19. Arrange the available fields to row groups, column groups and values field. Click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img12.png)
+    ![Create-RDLC-Report-images12](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img12.png)
 
 20. Choose the layout design in the next window and click Next.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img13.png)	
+    ![Create-RDLC-Report-images13](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img13.png)	
 
 21. In the next window, choose the style and click Finish.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img14.png)
+    ![Create-RDLC-Report-images14](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img14.png)
 	
 22. On Toolbox window, in Report Items, select Table.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img15.png)
+    ![Create-RDLC-Report-images15](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img15.png)
 
 23. Draw a table on the WPF Designer window.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img16.png)
+    ![Create-RDLC-Report-images16](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img16.png)
 
 24. Drag the dataset field on the Table.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img17.png)
+    ![Create-RDLC-Report-images17](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img17.png)
 
 25. To add Report Viewer in the WPF application, select ReportViewer under Reporting.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img18.png)
+    ![Create-RDLC-Report-images18](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img18.png)
 
 26. Set the ReportPath and the ProcessingMode as local in the Report Viewer.
 
@@ -132,4 +132,4 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 28. Run the application. The following output is displayed.
 
-    ![Create-RDLC-Report-images](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img19.png)
+    ![Create-RDLC-Report-images19](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img19.png)

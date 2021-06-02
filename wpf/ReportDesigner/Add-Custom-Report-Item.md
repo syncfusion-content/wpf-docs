@@ -14,9 +14,9 @@ The design-time component is a control that can be used in the Syncfusion Report
 
 ### Create a report item assembly
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeDesigner" for the design-time component. 
-    ![Add-Custom-Report-Item-images](Add-Custom-Report-Item-images/Custom-Report-Item-4.png)
+    ![Add-Custom-Report-Item-images4](Add-Custom-Report-Item-images/Custom-Report-Item-4.png)
 2.	Add the Syncfusion references "Syncfusion.ReportControls.Wpf", "Syncfusion.ReportDesigner.WPF", "Syncfusion.SfBarcode.WPF" and "Syncfusion.Shared.WPF" to an application.
-    ![Add-Custom-Report-Item-images](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
+    ![Add-Custom-Report-Item-images5](Add-Custom-Report-Item-images/Custom-Report-Item-5.png)
     
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies 
 3.	Add a new class file "BarcodeCRIDesigner" by inheriting the `CustomReportItemDesigner` class.
@@ -264,12 +264,12 @@ For report designer, you need to replace the newly created assemblies and its de
 {% endhighlight %}
 
 Also, you need to add the created/modified "ReportExtensions.config" file in standalone application. Run the application, output with bar code custom report item is rendered as below.
-![Add-Custom-Report-Item-images](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
+![Add-Custom-Report-Item-images1](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows bar code custom report item that is added to built-in report item collections of the report designer.
    {:.caption}
 
-![Add-Custom-Report-Item-images](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
+![Add-Custom-Report-Item-images2](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
 
 Custom property dialog of the bar code custom report item.
    {:.caption}
