@@ -110,7 +110,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 ## Multiple Annotations
 
 You can add any number of annotations to a node or connector.
-For sample, please refer to [MultipleAnnotation](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations/MultipleAnnotation "MultipleAnnotation").
+For sample, please refer to [MultipleAnnotation](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations/MultipleAnnotation).
 
 {% tabs %}
 {% highlight xaml %}
