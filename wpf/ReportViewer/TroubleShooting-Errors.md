@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReportViewer Troubleshooting Errors | ReportViewer | WPF | Syncfusion
-description: How to handle the errors for respective issues.
+description: How to handle the errors for respective issues in Syncfusion Essential Studio WPF ReportViewer Control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug

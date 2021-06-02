@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Draw Gauge Report Item | ReportDesigner | wpf | Syncfusion
-description: draw gauge report item
+description: Draw gauge report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements, and more.
 platform: wpf
 control: Report Designer
 documentation: ug
@@ -17,21 +17,21 @@ You can follow these steps to add a Gauge to the Report Designer.
 
 3. Right click the Gauge and select the Gauge Properties.
 
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img1.png)
+   ![Draw-Gauge-Report-Item_images1](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img1.png)
 
 4. In the Gauge Properties dialog, select the following.
 
    * General - To set the gauge frame thickness, name, tooltip, type and fill options.
    
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img2.png)
+   ![Draw-Gauge-Report-Item_images2](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img2.png)
    
 5. Click Ok.Then the values are updated in the gauge.
 
 6. To change the scale properties of Gauge,Right click on gauge and navigate to the Scale Properties > RadialScale1 or Click on View Report Item Properties.
 
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img3.png)
+   ![Draw-Gauge-Report-Item_images3](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img3.png)
    
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img4.png)
+   ![Draw-Gauge-Report-Item_images4](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img4.png)
 
 7. In the Scale Properties wizard, select any of the following.
 
@@ -45,13 +45,13 @@ You can follow these steps to add a Gauge to the Report Designer.
 
    * MinorTick - To set length, width, shape, color, and placement of the minor ticks.
    
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img5.png)
+   ![Draw-Gauge-Report-Item_images5](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img5.png)
    
 8. Click OK.Then the values are updated in the scale.
 
 9. To change the range properties of the Gauge,Right click the gauge and navigate to the Range Properties > RadialRange1.
 
-   ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img6.png)
+   ![Draw-Gauge-Report-Item_images6](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img6.png)
 
 10. In the Range Properties wizard, select any of the following
 
@@ -59,48 +59,48 @@ You can follow these steps to add a Gauge to the Report Designer.
 
     * Border - To set the border width and border color of the gauge range.
 	
-	![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img7.png)
+	![Draw-Gauge-Report-Item_images7](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img7.png)
 	
 11. Click OK.Then the values are updated in the Range.
 
 12. To change the pointer properties of the Gauge,Right click the gauge and navigate to the Pointer Properties > RadialPointer0.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img8.png)
+    ![Draw-Gauge-Report-Item_images8](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img8.png)
 
     * General - To change the Pointer length, Pointer Width, Pointer type, Needle type, Marker placement, Marker style, Cap radius and Cap color.
 	
 	* Fill - To change the Pointer color, Border width and color.
 	
-	![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img9.png)
+	![Draw-Gauge-Report-Item_images9](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img9.png)
 	
 13. Click Ok.Then the values are updated in the Pointer.
 
 14. To delete Range,Right click on the gauge and select Delete Range.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img10.png)
+    ![Draw-Gauge-Report-Item_images10](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img10.png)
 
 15. To delete Pointer,Right click on the gauge and select Delete Pointer.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img11.png)
+    ![Draw-Gauge-Report-Item_images11](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img11.png)
 
 16. To delete Gauge,Right click on the gauge and select Delete Gauge or Select Delete.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img12.png)
+    ![Draw-Gauge-Report-Item_images12](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img12.png)
 	
-	![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img17.png)
+	![Draw-Gauge-Report-Item_images17](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img17.png)
 
 17. To delete Scale,Right click on the gauge and select Delete Scale.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img13.png)
+    ![Draw-Gauge-Report-Item_images13](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img13.png)
 
 18. To Add Scale,Right click on the gauge and select Add Scale.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img16.png)
+    ![Draw-Gauge-Report-Item_images16](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img16.png)
 
 19. To Add Pointer,Right click on the gauge and select Add Pointer > RadialScale1.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img14.png)
+    ![Draw-Gauge-Report-Item_images14](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img14.png)
 
 20. To Add Range,Right click on the gauge and select Add Range > RadialScale1.
 
-    ![](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img15.png)
+    ![Draw-Gauge-Report-Item_images15](Draw-Gauge-Report-Item_images/Draw-Gauge-Report-Item_img15.png)

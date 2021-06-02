@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Can you use Azure SSRS reports in ReportViewer | ReportViewer | WPF | Syncfusion
-description: can you use azure ssrs reports in reportviewer?
+title: Can you use Azure SSRS reports in WPF ReportViewer | Syncfusion
+description: Can you use azure ssrs reports in Syncfusion Essential Studio WPF ReportViewer control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug
@@ -26,7 +26,7 @@ this.reportViewer1.ReportLoaded += (sen, arg) =>
     this.reportViewer1.SetDataSourceCredentials(credentials);
 };
 this.reportViewer1.ReportPath = " / AzureReportProject / Reports";
-this.reportViewer1.ReportServerUrl = @" [http://ServerName/ReportServer](http://ServerName/ReportServer)";
+this.reportViewer1.ReportServerUrl = @"http://ServerName/ReportServer";
 this.reportViewer1.ReportServerFormsCredential = new System.Net.NetworkCredential("userID", "Password");
 this.reportViewer1.RefreshReport();
 {% endhighlight %}
