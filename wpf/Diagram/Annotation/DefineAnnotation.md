@@ -110,7 +110,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 ## Multiple Annotations
 
 You can add any number of annotations to a node or connector.
-For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/downloads/support/directtrac/239374/ze/MultipleAnnotation-2076131568 "MultipleAnnotation").
+For sample, please refer to [MultipleAnnotation](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F239374%2Fze%2FMultipleAnnotation-2076131568.zip "MultipleAnnotation").
 
 {% tabs %}
 {% highlight xaml %}

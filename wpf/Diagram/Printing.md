@@ -64,7 +64,7 @@ has option to decide how many copies need to be printed.
 
 N> Copies will be effective only for real printers.
 
-For sample, refer to [Printing](https://www.syncfusion.com/downloads/support/directtrac/243873/ze/Printing_Sample-326239405).
+For sample, refer to [Printing](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F243873%2Fze%2FPrinting_Sample-326239405.zip).
 
 ### Printer
 

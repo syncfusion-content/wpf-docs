@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Features | SfDataPagerControl | wpf | Syncfusion
-description: features
+description: Learn here about features of Syncfusion Essential Studio WPF SfDataPagerControl, its elements and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
 ---
 
-# Features
+# Features in WPF DataPager (SfDataPagerControl)
 
 This section explains the key Features of SfDataPager.
 
@@ -74,7 +74,7 @@ The following screenshot displays the output of the above code.
 
 
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png)
+![Features_images1](Features_images/Features_img1.png)
 
 
 
@@ -148,7 +148,7 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 The following screenshot displays the output for ListView binded with PagedCollection.
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png)
+![Features_images2](Features_images/Features_img2.png)
 
 
 
@@ -231,7 +231,7 @@ The following steps help you to achieve an OnDemandLoading with the SfDataPager 
 
 The following screenshot displays the output for OnDemandPaging,
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)
+![Features_images3](Features_images/Features_img3.png)
 
 
 
@@ -280,7 +280,7 @@ The following screenshot displays the output for PageSize set as 5.
 
 
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png)
+![Features_images4](Features_images/Features_img4.png)
 
 
 
@@ -350,7 +350,7 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 The following screenshot displays the output for changing the PageSize value during runtime. 
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)
+![Features_images5](Features_images/Features_img5.png)
 
 
 
@@ -383,19 +383,19 @@ Description</th></tr>
 <tr>
 <td>
  After</td><td>
-Displays the ellipsis button after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/AutoElipseafter.png](Features_images/Features_img6.png)'|markdownify}}
+Displays the ellipsis button after the numeric buttons.{{'![Features_images6](Features_images/Features_img6.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
  Before</td><td>
-Displays the ellipsis button before the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/before.png](Features_images/Features_img7.png)'|markdownify}}
+Displays the ellipsis button before the numeric buttons.{{'![Features_images7](Features_images/Features_img7.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
  Both</td><td>
-Displays the ellipsis button before and after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/both.png](Features_images/Features_img8.png)'|markdownify}}
+Displays the ellipsis button before and after the numeric buttons.{{'![Features_images8](Features_images/Features_img8.png)'|markdownify}}
 
 </td></tr>
 <tr>
@@ -452,7 +452,7 @@ The following code example explains how to change the AutoEllipsisText.
 
 The following screenshot displays the output for AutoEllipsisText changed as …etc.
 
-![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png)
+![Features_images9](Features_images/Features_img9.png)
 
 
 
@@ -502,7 +502,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDataPager.
 
-![B:/Support/2015/Pager.png](Features_images/Features_img10.png)
+![Features_images10](Features_images/Features_img10.png)
 
 
 
@@ -552,7 +552,7 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
 The following screenshot displays the output of NumericButtonStyle.
 
-![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png)
+![Features_images11](Features_images/Features_img11.png)
 
 
 
@@ -570,67 +570,67 @@ Description</th></tr>
 <tr>
 <td>
 FirstLastPreviousNextNumeric</td><td>
-Displays all the navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/1.png](Features_images/Features_img12.png)'|markdownify}}
+Displays all the navigation buttons and numeric page buttons.{{'![Features_images12](Features_images/Features_img12.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 FirstLastNumeric</td><td>
-Displays the first page, last page navigation button and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/2.png](Features_images/Features_img13.png)'|markdownify}}
+Displays the first page, last page navigation button and numeric page buttons.{{'![Features_images13](Features_images/Features_img13.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 PreviousNextNumeric</td><td>
-Displays the previous, next page navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img14.png)'|markdownify}}
+Displays the previous, next page navigation buttons and numeric page buttons.{{'![Features_images14](Features_images/Features_img14.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 FirstLastPreviousNext</td><td>
-Displays only the page navigation buttons. Numeric page buttons are not displayed.{{'![B:/Support/2015/April/24/Image/DataPager/4.png](Features_images/Features_img15.png)'|markdownify}}
+Displays only the page navigation buttons. Numeric page buttons are not displayed.{{'![Features_images15](Features_images/Features_img15.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 FirstLast</td><td>
-Displays only the first and last page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/5.png](Features_images/Features_img16.png)'|markdownify}}
+Displays only the first and last page navigation buttons.{{'![Features_images16](Features_images/Features_img16.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 PreviousNext</td><td>
-Displays only the previous and next page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/6.png](Features_images/Features_img17.png)'|markdownify}}
+Displays only the previous and next page navigation buttons.{{'![Features_images17](Features_images/Features_img17.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Numeric</td><td>
-Displays only the numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/7.png](Features_images/Features_img18.png)'|markdownify}}
+Displays only the numeric page buttons.{{'![Features_images18](Features_images/Features_img18.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 First</td><td>
-Displays only the first page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/8.png](Features_images/Features_img19.png)'|markdownify}}
+Displays only the first page navigation button.{{'![Features_images19](Features_images/Features_img19.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Last</td><td>
-Displays only the last page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/9.png](Features_images/Features_img20.png)'|markdownify}}
+Displays only the last page navigation button.{{'![Features_images20](Features_images/Features_img20.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Previous</td><td>
-Displays only the previous page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/10.png](Features_images/Features_img21.png)'|markdownify}}
+Displays only the previous page navigation button.{{'![Features_images21](Features_images/Features_img21.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Next</td><td>
-Displays only the next page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/11.png](Features_images/Features_img22.png)'|markdownify}}
+Displays only the next page navigation button.{{'![Features_images22](Features_images/Features_img22.png)'|markdownify}}
 
 </td></tr>
 <tr>
@@ -656,13 +656,13 @@ Description</th></tr>
 <tr>
 <td>
 Horizontal</td><td>
-This is the default enum value for Orientation.  Arranges all the Navigation Buttons and Numeric Buttons Horizontally.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img23.png)'|markdownify}}
+This is the default enum value for Orientation.  Arranges all the Navigation Buttons and Numeric Buttons Horizontally.{{'![Features_images23](Features_images/Features_img23.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Vertical</td><td>
-Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![B:/Support/2015/April/24/Image/DataPager/figure12.png](Features_images/Features_img24.png)'|markdownify}}
+Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![Features_images24](Features_images/Features_img24.png)'|markdownify}}
 
 </td></tr>
 </table>
@@ -791,7 +791,7 @@ SfDataPager supports CodedUITest automation that helps you to create an automati
 
 There are three levels of support in CodedUITest for SfDataPager
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png)
+![Features_images25](Features_images/Features_img25.png)
 
 
 
@@ -821,7 +821,7 @@ To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/w
 
 The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
 
-![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png)
+![Features_images26](Features_images/Features_img26.png)
 
 
 
@@ -845,7 +845,7 @@ SfDataPager</td><td>
 SfDataPager supports QTP test. You can record the actions performed in the control by the corresponding method name with Syncfusion namespace. To know more about QTP test, refer to the [link](http://help.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 The following screenshot displays the QTP Test for SfDataPager
 
-![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)
+![Features_images27](Features_images/Features_img27.png)
 
 
 

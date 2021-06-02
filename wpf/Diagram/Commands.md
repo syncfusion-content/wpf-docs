@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Commands
+# Commands in WPF Diagram (SfDiagram) control
 
 Diagram provides set of commands to perform the functionalities in application.
 
@@ -111,13 +111,11 @@ graphinfo.Commands.Paste.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the clipboard](Commands_images/clipboard.jpg)
-
 ## Duplicate
 
 This command copies the selected objects from the diagram and pastes the copied content into the diagram.                           
 
-![Represents the duplicate](Commands_images/Duplicate.jpg)
+![Commands SelectByType Image](Commands/Commands_images/Commands_SelectByType.gif)
 
 ## Grouping
 
@@ -151,7 +149,7 @@ If the parameter is null, the object will be flipped both horizontally and verti
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the flip](Commands_images/Commands_img7.gif)
+![Represents the flip](Commands/Commands_images/Commands_img7.gif)
 
 ## Z – Order
 
@@ -187,7 +185,7 @@ graphinfo.Commands.SendToBack.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the send to back](Commands_images/Commands_img8.gif)
+![Represents the send to back](Commands/Commands_images/Commands_img8.gif)
 
 ### SendBackward
 
@@ -219,7 +217,7 @@ graphinfo.Commands.BringForward.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the bring forward](Commands_images/Commands_img9.gif)
+![Represents the bring forward](Commands/Commands_images/Commands_img9.gif)
 
 ## Zoom
 

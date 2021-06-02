@@ -21,7 +21,7 @@ The following section helps you to build your application with SfDiagram.
 
 ## Creating the project
 
-Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+Create new WPF project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 
 ### Adding control via Designer
 

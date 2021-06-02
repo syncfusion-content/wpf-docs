@@ -15,7 +15,7 @@ DataGrid provides support to represent the hierarchical data in the form of nest
 
 ## Generating Master-Details view from IEnumerable
 
-Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) in the underlying data object contain.
+Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable) in the underlying data object contain.
 
 Follow the below steps to generate the Master-Details View for `IEnumerable`.
 
@@ -27,7 +27,7 @@ Follow the below steps to generate the Master-Details View for `IEnumerable`.
   
 ### Create the data model with relations
 
-Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
+Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -400,11 +400,11 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 
 ## Generating Master-Details view from DataTable
 
-Master-Details View’s relation can be generated for [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx), when [DataRelation](https://msdn.microsoft.com/en-in/library/system.data.datarelation.aspx) is defined between two tables in underlying [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx). 
+Master-Details View’s relation can be generated for [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable), when [DataRelation](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarelation) is defined between two tables in underlying [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset). 
 
 Follow the below steps to generate the Master-Details View’s relation for DataTable,
 
-* Create the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) with relations.
+* Create the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) with relations.
 * Defining relations
   * Auto-generating relations
   * Manually defining relations 
@@ -464,7 +464,7 @@ public class ViewModel
 
 #### Auto-generating relations
 
-SfDataGrid will automatically generate relations and inner relations based on relations defined in [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
+SfDataGrid will automatically generate relations and inner relations based on relations defined in [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
 
 Bind the `Suppliers` table created in the previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) and set the [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`. 
 
@@ -580,7 +580,7 @@ Now the `ItemsSource` for [DetailsViewDataGrid](http://help.syncfusion.com/cr/wp
 
 While populating Master-Details view through events, if the data to be loaded is downloaded from an external source or being read from a file, you may get a time delay. In such case, the `DetailsViewExpanding` event will be executed before the I/O processes get completes.
 
-In this case, you can use [async](https://msdn.microsoft.com/en-us/library/hh156513.aspx) and [await](https://msdn.microsoft.com/en-IN/library/hh156528.aspx) to load the data with a time delay and hold the event from executing before the data gets loaded from an external source gets completed.
+In this case, you can use [async](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) and [await](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) to load the data with a time delay and hold the event from executing before the data gets loaded from an external source gets completed.
 
 {% tabs %}
 {% highlight c# %}
@@ -2000,7 +2000,7 @@ void dataGrid_DetailsViewCollapsed(object sender, GridDetailsViewCollapsedEventA
 
 ### Cancel expanding or collapsing operations through events
 
-You can cancel expanding operation while expanding the [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+You can cancel expanding operation while expanding the [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -2016,7 +2016,7 @@ void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDe
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}

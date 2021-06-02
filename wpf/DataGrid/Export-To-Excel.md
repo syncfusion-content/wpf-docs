@@ -192,7 +192,7 @@ You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsi
 
 ### Save using File dialog
 
-After exporting to excel, you can save exported workbook by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx). 
+After exporting to excel, you can save exported workbook by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog). 
 
 {% tabs %}
 {% highlight c# %}
@@ -668,7 +668,7 @@ By default, [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) .
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) .
 
 {% tabs %}
 {% highlight c# %}

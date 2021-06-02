@@ -46,7 +46,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 {% endhighlight %}
 {% endtabs %}
 
-![Find and position the node without overlapping](Interaction_images/AutomaticAlignment_img1.gif)
+![QuickCommand](Interaction/Interaction_images/QuickCommand_img.png)
 
 In some cases, there may requirement for repositioning overlapping objects, rather than selected object. Using `GetOverlappingObjects` method, you can able to find all overlapping objects(such as Node/Connector/Annotation) for a given node.
 
@@ -90,7 +90,7 @@ private void OnSelectorChangedEvent(object sender, SelectorChangedEventArgs args
 {% endhighlight %}
 {% endtabs %}
 
-![Position the intersection object when currently dragging node get intersected](Interaction_images/AutomaticAlignment_img2.gif)
+![QuickCommand](Interaction/Interaction_images/QuickCommand_img2.png)
 
 ## Spacing
 
@@ -122,6 +122,6 @@ var collisionState = new CollisionState() { Item = selectedNode, IncludeSubEleme
 
 In addition to this,`IgnoreList` property of CollisionState allows you to restrict specific elements as not an intercepts. For example, you can ignore aligning nodes if same shaped node were collided.
 
-![list to ignore for detecting overlapping](Interaction_images/AutomaticAlignment_img3.gif)
+![list to ignore for detecting overlapping](Interaction/Interaction_images/Delete.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Collision%20State)
