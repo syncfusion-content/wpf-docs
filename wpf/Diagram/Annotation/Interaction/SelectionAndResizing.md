@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Selection and Resizing | Syncfusion 
-description: how to define basic annotations for Node and Connectors in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+description: how to define basic annotations for Node and Connectors in Syncfusion WPF Diagram (SfDiagram) control, its elements, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

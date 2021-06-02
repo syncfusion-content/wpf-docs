@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Rotation | Syncfusion 
-description: how to rotate the annotations in Syncfusion Essential Studio WPF Diagram (SfDiagram) control, its elements and more.
+description: how to rotate the annotations in Syncfusion Essential Studio WPF Diagram (SfDiagram) control, its elements, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug

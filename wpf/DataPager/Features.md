@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features | SfDataPagerControl | wpf | Syncfusion
-description: Learn here about features of Syncfusion Essential Studio WPF SfDataPagerControl, its elements and more.
+description: Learn here about features of Syncfusion Essential Studio WPF SfDataPagerControl, its elements, and more.
 platform: wpf
 control: SfDataPager Control
 documentation: ug
