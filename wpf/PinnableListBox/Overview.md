@@ -4,7 +4,7 @@ title: About WPF PinnableListBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio WPF PinnableListBox control, its elements and more.
 platform: wpf
 control: PinnableListBox
- documentation: ug
+documentation: ug
 ---
 
 # WPF PinnableListBox Overview

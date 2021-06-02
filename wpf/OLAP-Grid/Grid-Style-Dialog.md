@@ -4,7 +4,7 @@ title: Grid Style Dialog in WPF Olap Grid control | Syncfusion
 description: Learn about Grid Style Dialog support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
- documentation: ug
+documentation: ug
 ---
 
 # Grid Style Dialog in WPF Olap Grid

@@ -4,7 +4,7 @@ title: Serialization in WPF Olap Client control | Syncfusion
 description: Learn about Serialization support in Syncfusion Essential Studio WPF Olap Client control, its elements and more details.
 platform: wpf
 control: OLAP Client
- documentation: ug
+documentation: ug
 ---
 
 # Serialization in WPF Olap Client

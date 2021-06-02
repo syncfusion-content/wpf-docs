@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Export| OLAP Grid | Wpf | Syncfusion
-description: export
+description: Learn here about Export in Syncfusion Essential Studio WPF OLAP Grid Control, its elements and more.
 platform: wpf
 control: OLAP Grid
- documentation: ug
+documentation: ug
 ---
 
-# Export
+# Export in WPF OLAP Grid Control
 
 The OLAP grid data can be exported to Microsoft Excel, Microsoft Word, and PDF file formats. This can be achieved using the following methods of the OLAP grid.
 

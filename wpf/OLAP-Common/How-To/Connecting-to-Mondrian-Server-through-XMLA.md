@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Connecting to Mondrian Server through XMLA| OLAPCommon | Wpf | Syncfusion
-description: connecting to mondrian server through xmla
+title: Mondrian Server through XMLA in WPF OLAPCommon control | Syncfusion
+description: Connecting to mondrian server through xmla in Syncfusion WPF OLAPCommon control, its elements and more.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
 # Connecting to Mondrian Server through XMLA

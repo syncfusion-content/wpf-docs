@@ -4,7 +4,7 @@ title: Getting Started with WPF Olap Grid control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
- documentation: ug
+documentation: ug
 ---
 
 # Getting Started with WPF Olap Grid

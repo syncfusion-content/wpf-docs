@@ -4,7 +4,7 @@ title: Drill Down/Up in WPF Olap Grid control | Syncfusion
 description: Learn about Drill Down/Up support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
- documentation: ug
+documentation: ug
 ---
 
 # Drill Down/Up in WPF Olap Grid

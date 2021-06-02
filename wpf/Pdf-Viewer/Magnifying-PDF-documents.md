@@ -4,7 +4,7 @@ title: Magnifying PDF documents in WPF Pdf Viewer control | Syncfusion
 description: Learn about Magnifying PDF documents support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
- documentation: ug
+documentation: ug
 ---
 
 # Magnifying PDF documents in WPF Pdf Viewer

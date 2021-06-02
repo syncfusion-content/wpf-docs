@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Process OlapReport Internally| OLAPCommon | Wpf | Syncfusion
-description: process olapreport internally
+description: Process olapreport internally in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
 # Process OlapReport Internally

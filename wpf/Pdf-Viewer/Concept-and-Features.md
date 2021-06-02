@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Concept-and-Features
-description: concept and features
+title: Concept and Features in WPF PdfViewer Control | Syncfusion
+description: Concept and features in Syncfusion Essential Studio WPF PdfViewer Control, its elements, features and more.
 platform: wpf
 control: PDF Viewer
- documentation: ug
+documentation: ug
 ---
 
 # Concept and Features
 
 Essential PDF Viewer can display PDF files, and print and export the pages as raster images. This section explains about the various functionalities available in the Essential PDF viewer for WPF.
 
-# Viewing PDF Files 
+## Viewing PDF Files 
 
 A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 

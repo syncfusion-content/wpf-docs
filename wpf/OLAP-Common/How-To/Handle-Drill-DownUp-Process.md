@@ -4,7 +4,7 @@ title: Handle Drill DownUp Process| OLAPCommon | Wpf | Syncfusion
 description: handle drill down/up process in Syncfusion Essential Studio WPF OLAPCommon control, its elements and more details.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
 # Handle Drill Down/Up Process

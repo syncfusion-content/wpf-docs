@@ -4,7 +4,7 @@ title: Data Binding in WPF Olap Chart control | Syncfusion
 description: Learn about Data Binding support in Syncfusion WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
- documentation: ug
+documentation: ug
 ---
 
 # Data Binding in WPF Olap Chart

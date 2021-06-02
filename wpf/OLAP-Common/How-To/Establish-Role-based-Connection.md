@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Establish Role based Connection| OLAPCommon | Wpf | Syncfusion
-description: establish role-based connection
+description: Establish role-based connection in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
 # Establish Role-based Connection

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: SetCurrentReport| OLAPCommon | Wpf | Syncfusion
-description: setcurrentreport 
+description: Setcurrentreport in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features and more.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
-# SetCurrentReport 
+# SetCurrentReport in WPF OLAPCommon Control
 
 The following code snippet explains setting an OlapReport to CurrentReport of an OlapDataManager using SetCurrentReport method:
 

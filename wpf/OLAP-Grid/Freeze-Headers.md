@@ -4,7 +4,7 @@ title: Freeze Headers in WPF Olap Grid control | Syncfusion
 description: Learn about Freeze Headers support in Syncfusion WPF Olap Grid control, its elements and more details.
 platform: wpf
 control: OlapGrid
- documentation: ug
+documentation: ug
 ---
 
 # Freeze Headers in WPF Olap Grid

@@ -4,7 +4,7 @@ title: Load Report Definition From Stream| OLAPCommon | Wpf | Syncfusion
 description: load report definition from stream in Syncfusion WPF OLAPCommon control, its elements and more details.
 platform: wpf
 control: OLAPCommon
- documentation: ug
+documentation: ug
 ---
 
 # Load Report Definition From Stream

@@ -4,7 +4,7 @@ title: Legend in WPF Olap Chart control | Syncfusion
 description: Learn about Legend support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
- documentation: ug
+documentation: ug
 ---
 
 # Legend in WPF Olap Chart

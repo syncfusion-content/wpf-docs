@@ -4,7 +4,7 @@ title: Watermark in WPF Olap Chart control | Syncfusion
 description: Learn about Watermark support in Syncfusion Essential Studio WPF Olap Chart control, its elements and more details.
 platform: wpf
 control: OLAP Chart
- documentation: ug
+documentation: ug
 ---
 
 # Watermark in WPF Olap Chart

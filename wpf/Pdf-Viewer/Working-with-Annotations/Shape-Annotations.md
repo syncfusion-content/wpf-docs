@@ -4,7 +4,7 @@ title: Shape Annotations in WPF Pdf Viewer control | Syncfusion
 description: Learn about Shape Annotations support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
- documentation: ug
+documentation: ug
 ---
 # Shape Annotations in WPF Pdf Viewer
 

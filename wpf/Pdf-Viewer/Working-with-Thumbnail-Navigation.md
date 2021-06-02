@@ -4,7 +4,7 @@ title: Thumbnail Navigation in WPF Pdf Viewer control | Syncfusion
 description: Learn about Thumbnail Navigation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
- documentation: ug
+documentation: ug
 ---
 
 # Thumbnail Navigation in WPF Pdf Viewer

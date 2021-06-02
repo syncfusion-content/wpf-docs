@@ -4,7 +4,7 @@ title: Paging in WPF OLAP Common control | Syncfusion
 description: Learn about Paging support in Syncfusion Essential Studio WPF OLAP Common control, its elements and more details.
 platform: wpf
 control: OLAP Common
- documentation: ug
+documentation: ug
 ---
 
 # Paging in WPF OLAP Common
