@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Matrix Report Item | ReportDesigner | wpf | Syncfusion
-description: draw matrix report item
+description: Draw matrix report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Matrix Report Item

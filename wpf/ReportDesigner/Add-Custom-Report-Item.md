@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Custom Report Item 
-description: Creating a custom report item design-time component in report designer
+title: Custom Report Item in WPF ReportDesigner Control | Syncfusion
+description: Creating a custom report item design-time component in Syncfusion WPF ReportDesigner Control, its elements and more.
 platform: WPF
 control: ReportDesigner
- documentation: ug
+documentation: ug
 ---
 
 A custom report item allows you to add the functionality that is not natively supported in the RDL or extend the functionality of existing controls in the RDL standard. The design-time component allows the custom report item to be defined and manipulated in the design surface of the report designer.

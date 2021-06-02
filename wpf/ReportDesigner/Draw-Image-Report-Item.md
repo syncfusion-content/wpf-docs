@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Image Report Item | ReportDesigner | wpf | Syncfusion
-description: draw image report item
+description: Draw image report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Image Report Item

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Syncfusion WPF ReportDesigner supported and unsupported items
-description: supported datasources in wpf report designer
+description: Supported datasources in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Supported and Unsupported DataSources

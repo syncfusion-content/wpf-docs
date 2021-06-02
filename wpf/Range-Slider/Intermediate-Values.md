@@ -4,7 +4,7 @@ title: Intermediate Values in WPF Range Slider control | Syncfusion
 description: Learn here all about Intermediate Values support in Syncfusion WPF Range Slider (SfRangeSlider) control and more.
 platform: wpf
 control: SfRangeSlider 
- documentation: ug
+documentation: ug
 ---
 
 # Intermediate Values in WPF Range Slider (SfRangeSlider)

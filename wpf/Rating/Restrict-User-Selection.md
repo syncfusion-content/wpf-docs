@@ -4,7 +4,7 @@ title: Restrict User Selection in WPF Rating control | Syncfusion
 description: Learn here all about Restrict User Selection support in Syncfusion WPF Rating (SfRating) control and more.
 platform: wpf
 control: SfRating
- documentation: ug
+documentation: ug
 ---
 
 # Restrict User Selection in WPF Rating (SfRating)

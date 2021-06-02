@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add DataSource | ReportDesigner | wpf | Syncfusion
-description: add datasource
+description: Learn here about add datasource in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
-# Add DataSource
+# Add DataSource in WPF ReportDesigner Control
 
 This feature allows you to add a DataSource to the Report Designer. It binds the database from the server. The following steps are used to add the DataSource to the Report Designer.
 

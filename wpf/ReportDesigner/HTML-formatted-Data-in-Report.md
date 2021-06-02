@@ -4,7 +4,7 @@ title: HTML formatted data in Reports | ReportDesigner | wpf | Syncfusion
 description: Learn how to implement HTML formatted data in a report and import HTML text in the Syncfusion Report Designer control.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # HTML Formatted Data with Report

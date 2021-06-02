@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Data Extension | ReportDesigner | wpf | Syncfusion
-description: data extension
+description: Learn here about data extension in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 ## Data Source Extension

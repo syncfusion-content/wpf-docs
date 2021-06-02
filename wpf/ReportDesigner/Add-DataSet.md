@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add DataSet | ReportDesigner | wpf | Syncfusion
-description: add dataset
+description: Learn here about add dataset in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
-# Add DataSet
+# Add DataSet in WPF ReportDesigner Control
 
 Data set is a collection of data fields. You can add the data set to the corresponding data source in the Report Designer by using the following steps. 
 

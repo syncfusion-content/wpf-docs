@@ -1,10 +1,10 @@
 ---
 layout: post
 title: HTML formatted data in Reports | ReportViewer | WPF | Syncfusion
-description: HTML formatted data in Reports
+description: HTML formatted data in Reports in Syncfusion Essential Studio WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
- documentation: ug
+documentation: ug
 ---
 
 ## HTML Formatted Data with Report

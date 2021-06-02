@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Gauge Report Item | ReportDesigner | wpf | Syncfusion
-description: draw gauge report item
+description: Draw gauge report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Gauge Report Item

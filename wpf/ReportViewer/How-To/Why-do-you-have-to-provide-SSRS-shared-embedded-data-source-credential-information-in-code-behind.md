@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Why do you have to provide SSRS shared embedded data source credential information in code behind | ReportViewer | WPF | Syncfusion
-description: why do you have to provide ssrs shared/embedded data source credential information in code behind? 
+title: SSRS shared embedded datasource in WPF ReportViewer | Syncfusion
+description: Why do you have to provide ssrs shared/embedded data source credential information in code behind for Syncfusion WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
- documentation: ug
+documentation: ug
 ---
 
-# Why do you have to provide SSRS shared/embedded data source credential information in code behind? 
+# SSRS shared/embedded datasource credential information in ReportViewer
 
 RDL reports have limitations for retrieving a password from the SQL Reporting Service (SSRS) for security reasons. Therefore, the credential information is provided when the data source credential is saved in the Reporting Server for shared or embedded data sources. 
 

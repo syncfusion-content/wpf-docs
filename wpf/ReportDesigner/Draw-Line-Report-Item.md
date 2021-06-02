@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Line Report Item | ReportDesigner | wpf | Syncfusion
-description: draw line report item
+description: Draw line report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Line Report Item

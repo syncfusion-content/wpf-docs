@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Create RDLC Report In VS2010 and Show It in Report Viewer | ReportViewer | WPF | Syncfusion
-description: create rdlc report in vs2010 and show it in report viewer
+title: Create RDLC Report In VS2010 | ReportViewer | WPF | Syncfusion
+description: Create rdlc report in vs2010 and show it in Syncfusion WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
- documentation: ug
+documentation: ug
 ---
 
 # Create RDLC Report In VS2010 and Show It in Report Viewer

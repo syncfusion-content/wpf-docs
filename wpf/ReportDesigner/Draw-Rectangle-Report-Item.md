@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Rectangle Report Item | ReportDesigner | wpf | Syncfusion
-description: draw rectangle report item
+description: Draw rectangle report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Rectangle Report Item

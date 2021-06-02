@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Provide the Data Source credential information in code behind | ReportViewer | WPF | Syncfusion
-description: provide the data source credential information in code behind
+title: Data Source credential information in WPF ReportViewer | Syncfusion
+description: Provide the data source credential information in code behind for Syncfusion WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
- documentation: ug
+documentation: ug
 ---
 
 # Provide the Data Source credential information in code behind

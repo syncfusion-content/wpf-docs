@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Can you use SharePoint Integrated Mode Report Server reports in ReportViewer | ReportViewer | WPF | Syncfusion
-description: can you use sharepoint integrated mode report server reports in reportviewer?
+title: Can you use SharePoint Integrated Mode in WPF ReportViewer| Syncfusion
+description: Can you use sharepoint integrated mode report server reports in Syncfusion WPF ReportViewer control, its elements and more.
 platform: wpf
 control: ReportViewer
- documentation: ug
+documentation: ug
 ---
 
-# Can you use SharePoint Integrated Mode Report Server reports in ReportViewer?
+# Can you use SharePoint Integrated Mode in ReportViewer?
 
 Yes, Syncfusion Report Viewer supports viewing and exporting SharePoint Integrated Mode Reporting Service reports. 
 

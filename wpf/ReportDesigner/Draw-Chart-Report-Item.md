@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Chart Report Item | ReportDesigner | wpf | Syncfusion
-description: draw chart report item
+description: Draw chart report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Chart Report Item
@@ -43,7 +43,7 @@ Add a data source and dataset to the Report Designer.
 
    * Appearance - To set the Chart name and border options and background options.
    
-   ![](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
+   ![Draw-Chart-Report-Item_images](Draw-Chart-Report-Item_images/Draw-Chart-Report-Item_img5.png)
    
 8. Click OK.Then the values are updated in the Chart.
 

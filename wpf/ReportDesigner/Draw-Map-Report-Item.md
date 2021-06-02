@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw Map Report Item | ReportDesigner | wpf | Syncfusion
-description: draw map report item
+description: Draw map report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw Map Report Item

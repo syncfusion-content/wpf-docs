@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Saving Reports | ReportWriter | WPF | Syncfusion
-description: saving reports
+description: Saving reports in Syncfusion Essential Studio WPF ReportWriter control, its elements, features and more.
 platform: wpf
 control: ReportWriter
- documentation: ug
+documentation: ug
 ---
 
-# Saving reports
+# Saving reports in WPF ReportWriter Control
 
 Essential ReportWriter provides support for saving a report as a PDF, Word, Excel and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
 

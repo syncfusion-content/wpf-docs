@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Draw TextBox Report Item | ReportDesigner | wpf | Syncfusion
-description: draw textbox report item
+description: Draw textbox report item in Syncfusion Essential Studio WPF ReportDesigner control, its elements and more.
 platform: wpf
 control: Report Designer
- documentation: ug
+documentation: ug
 ---
 
 # Draw TextBox Report Item
