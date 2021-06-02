@@ -21,7 +21,7 @@ The following code illustrates how to connect to the Mondrian server:
 
 // Connecting to Mondrian Server
 
-OlapDataManager DataManager = new OlapDataManager(@"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog = FoodMart;"); //Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+OlapDataManager DataManager = new OlapDataManager(@"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog = FoodMart;"); //Where localhost is the machine name which has installed Mondrian Services. For example http://bi.syncfusion.com:8080/mondrian/xmla
 
 
 
@@ -37,7 +37,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 ' Connecting to Mondrian Server
 
 Dim DataManager As New OlapDataManager("Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;")
-'Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+'Where localhost is the machine name which has installed Mondrian Services. For example http://bi.syncfusion.com:8080/mondrian/xmla
 
 
 
