@@ -7,7 +7,7 @@ control: Pivot grid
 documentation: ug
 ---
 
-# Sorting Events
+# Sorting Events in WPF Pivot Grid Control
 
 The pivot grid provides certain sorting events to keep track of the sorted value fields, which is invoked before and after the sort operation.
 
