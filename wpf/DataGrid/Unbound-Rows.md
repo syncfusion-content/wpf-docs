@@ -25,7 +25,7 @@ this.dataGrid.UnBoundRows.Add(new GridUnBoundRow() {Position = UnBoundRowsPositi
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound rows in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img1.png)
+![Unbound Rows in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-rows.png)
 
 
 N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders) is not supported with unbound rows.
@@ -96,7 +96,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![Displaying Unbound rows at different positions in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img2.png)
+![WPF DataGrid displays Unbound Rows at Top and Bottom Position](Unbound-Rows_images/wpf-datagrid-unbound-rows-position.png)
 
 ## Populating data for unbound rows
 
@@ -149,7 +149,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound row data population using QueryUnBoundRow event in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img3.png)
+![Populating data with Unbound Row in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-populating-data.png)
 
 ## Refreshing the Unbound Rows at runtime
 
@@ -235,7 +235,7 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound row styling in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img4.png)
+![Customizing Unbound Row Style in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-row-style-customization.png)
 
 ### Unbound row cell’s style
 
@@ -282,7 +282,7 @@ public class UnboundCellStyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound row cell styling in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img5.png)
+![Customizing Unbound Row Cell Style in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-row-cell-style.png)
 
 ## Customize the Unbound Row’s behavior
 
@@ -365,7 +365,7 @@ dataGrid.UnBoundRowCellRenderers.Add("UnBoundTextColumn", new GridUnBoundRowCell
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unboundRow behavior customization for existing cell type in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img6.png)
+![Customizing Unbound Row behavior for Existing CellType in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-rows-cell-type.png)
 
 ### Custom Renderer
 
@@ -556,7 +556,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unboundRow behavior customization with DatePicker in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img7.png)
+![Customizing Unbound Row behavior with DatePicker in WPF DataGrid Cell](Unbound-Rows_images/wpf-datagrid-cell-with-datepicker.png)
 
 ## Templating unbound row cells
 
@@ -609,7 +609,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying customization of unboundRowCell with templates in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img8.png)
+![Customizing Unbound Row Cell in WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-row-cell-customization.png)
 
 ## Changing unbound row height
 
@@ -633,7 +633,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unboundRow height customization in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img9.png)
+![Changing Unbound Row Height of WPF DataGrid](Unbound-Rows_images/wpf-datagrid-unbound-row-height.png)
 
 ## Exporting Unbound rows
 
@@ -695,7 +695,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unboundRowCell merging in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img10.png)
+![WPF DataGrid displays Merged Unbound Row Cell](Unbound-Rows_images/wpf-datagrid-merge-unbound-row-cell.png)
 
 ## Unbound row for Master-details view
 Master-details view also allows you to add [additional rows](#_Unbound_Rows) to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) which are **not bound with data object** from underlying data source. 
@@ -751,4 +751,4 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unboundRow in Master-details View of WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img11.png)
+![WPF DataGrid displays Unbound Rows in Master Details View](Unbound-Rows_images/wpf-datagrid-unbound-row-in-master-details-view.png)

@@ -29,11 +29,11 @@ While dropping, the dragged records can be added above or below to the target re
 
 For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
 
-![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
+![Drag and Drop Rows in WPF DataGrid](Interactive-Features_images/wpf-datgrid-drag-and-drop-rows.png)
 
 If you drop above the targeted record, it will be added above the targeted record
 
-![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img25.png)
+![Drag and Drop Rows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-drag-and-drop-row.png)
 
 ## Dragging multiple rows
 
@@ -41,7 +41,7 @@ SfDataGrid allows to drag multiple selected rows. To enable multiple selection, 
 
 N> The drag selection cannot be performed while the [AllowDraggingRows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) enabled as `true` in the SfDataGrid.
 
-![Dragging multiple rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img26.png)
+![Dragging Multiple Rows in WPF DataGrid](Interactive-Features_images/wpf-datagrid-drag-multiple-rows.png)
 
 ## Drag and drop events
 
@@ -165,7 +165,7 @@ this.dataGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.L
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the row drop indicator in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img32.png)
+![Changing Row Drop Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-drop-indicator.png)
 
 ## Customizing row drag and drop operation
 
@@ -297,7 +297,7 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
+![Customizing Draggable Popup in WPF DataGrid](Interactive-Features_images/wpf-datagrid-draggable-popup.png)
 
 ### Customizing draggable popup to show corresponding dragging row data 
 
@@ -336,7 +336,7 @@ You can customize the dragging popup to show the corresponding drag row data by 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing draggable Popup to show corresponding dragging row data in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img31.png)
+![Customizing Draggable Popup for Corresponding Dragging Row in WPF DataGrid](Interactive-Features_images/wpf-datagrid-draggable-popup-customization.png)
 
 ### Reorder the source collection while drag and drop the rows
 
@@ -559,7 +559,7 @@ private void ListView_Drop(object sender, DragEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Row drag and drop between WPF DataGrid and ListView](Interactive-Features_images/InteractiveFeatures_img28.png)
+![Row Drag and Drop between WPF DataGrid and ListView](Interactive-Features_images/wpf-datagrid-drag-between-grid-and-listview.png)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/WPF).
 
@@ -659,7 +659,7 @@ private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Row drag and drop between two WPF DataGrid](Interactive-Features_images/InteractiveFeatures_img29.png)
+![Row Drag and Drop between WPF DataGrid Controls](Interactive-Features_images/wpf-datagrid-drag-grid-controls.png)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/WPF);
 
@@ -856,6 +856,6 @@ private void sfDataGrid_Drop(object sender, GridRowDropEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Row drag and drop between WPF DataGrid and TreeGrid](Interactive-Features_images/InteractiveFeatures_img30.png)
+![Row Drag and Drop between WPF DataGrid and TreeGrid](Interactive-Features_images/wpf-datagrid-drag-between-different-controls.png)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-treegrid-in-wpf).
