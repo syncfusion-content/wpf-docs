@@ -1075,7 +1075,6 @@ The `HeaderItems` property of the RibbonWindow allows you to load any control di
                 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
             </syncfusion:Ribbon>
         </Grid>
-
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
@@ -1140,7 +1139,6 @@ The `HeaderItemsSource` property of the RibbonWindow allows you to bind a collec
                 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
             </syncfusion:Ribbon>
         </Grid>
-    
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
@@ -1199,7 +1197,6 @@ The RibbonWindow allows you to customize the visual appearance of the items stor
                 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
             </syncfusion:Ribbon>
         </Grid>
-    
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
@@ -1265,7 +1262,6 @@ The RibbonWindow allows you to customize the visual appearance of each item with
                 <syncfusion:RibbonTab Caption="FOLDER"  IsChecked="False"/>
             </syncfusion:Ribbon>
         </Grid>
-    
 </syncfusion:RibbonWindow>
 
 {% endhighlight %}
