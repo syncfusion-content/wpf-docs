@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports to edit nodes and connectors at runtime.
+title: Preview Settings in WPF Diagram Control | Syncfusion
 description: How to select and edit nodes and connectors during runtime and how to arrange the node and connectors while dragging?
 platform: wpf
 control: SfDiagram

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Window Switchers in WPF Tabbed MDI Form control | Syncfusion
-description: Learn here all about Setting Window Switchers support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control and more.
+description: Learn here all about Setting Window Switchers support in Syncfusion WPF Tabbed MDI Form (DocumentContainer) control, its elements and more.
 platform: wpf
 control: DocumentContainer
 documentation: ug
