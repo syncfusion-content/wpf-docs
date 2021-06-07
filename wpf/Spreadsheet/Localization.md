@@ -41,16 +41,16 @@ The following steps show how to implement the localization in SfSpreadsheet,
 * Create Resx(resource) file under the 'Resources' folder and name it as Syncfusion.SfSpreadsheet.WPF.[Culture name].resx. 
   For example, Syncfusion.SfSpreadsheet.WPF.ja.resx for Japanese culture. 
 
-![resource-file-creation](localization_images/Loc_Image1.JPG)
+![WPF Spreadsheet Localization using Resource File](localization_images/wpf-spreadsheet-localization-using-resource-file.JPG)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfSpreadsheet.WPF.ja.resx file.
   For your reference, you can download the Japanese("ja-JP") Resx file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Wpf.ja-JP-601564739)
 
-![adding-resource](localization_images/Loc_Image2.JPG)
+![WPF Spreadsheet Localization with Resource Key](localization_images/wpf-spreadsheet-localization-with-resource-key.JPG)
 
 The following screenshot shows you the localization in SfSpreadsheet,
 
-![localization](localization_images/localization_img1.jpg)
+![WPF Spreadsheet Localization](localization_images/wpf-spreadsheet-localization.jpg)
 
 ## Modifying the localized strings in Resource file
 
@@ -58,4 +58,4 @@ Users can modify the default localized strings in Resource file by adding the de
 
 Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.SfSpreadsheet.WPF.resx file.
 
-![localized-sfspreadsheet](localization_images/Loc_Image3.jpg)
+![WPF Spreadsheet Localized using Resource String](localization_images/wpf-spreadsheet-localized-using-resource-string.jpg)

@@ -83,14 +83,14 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
 
-![WPF SfSpreadsheet Getting-Started Image1](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF Spreadsheet Getting-Started](Getting-Started_images/wpf-spreadsheet-getting-started.jpeg)
 
 Syncfusion Control tab
    {:.caption}
 
 3.Drag `SfSpreadsheet` and drop in the Designer area from the Toolbox
 
-![WPF SfSpreadsheet Getting-Started Image1](Getting-Started_images/Getting-Started_img2.jpeg)
+![WPF Spreadsheet Drag and Drop](Getting-Started_images/wpf-spreadsheet-dragdrop.jpeg)
 
 _For_ _Spreadsheet_
 
@@ -112,7 +112,7 @@ _For_ _Ribbon_
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfSpreadsheet Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
+![WPF Spreadsheet Interaction with Ribbon](Getting-Started_images/wpf-spreadsheet-interaction-with-ribbon.jpeg)
 
 ### Adding Control via Coding
 
@@ -157,7 +157,7 @@ mc:Ignorable="d">
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
-![WPF SfSpreadsheet Getting-Started Image4](Getting-Started_images/Getting-Started_img4.jpeg)
+![WPF Spreadsheet Control](Getting-Started_images/wpf-spreadsheet-control.jpeg)
 
 ## Creating a new Excel Workbook
 
@@ -192,7 +192,7 @@ spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfSpreadsheet Getting-Started Image5](Getting-Started_images/Getting-Started_img5.jpeg)
+![WPF Spreadsheet Excel File Opening](Getting-Started_images/wpf-spreadsheet-excel-file-opening.jpeg)
 
 Opening Excel File in SfSpreadsheet
    {:.caption}
