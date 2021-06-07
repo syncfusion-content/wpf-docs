@@ -35,7 +35,7 @@ dataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
+![WPF DataGrid with RowHeader](Rows_images/wpf-datagrid-row-header.png)
 
 See also.
 
@@ -143,7 +143,7 @@ You can display the corresponding row index in each row header, by customizing t
 {% endhighlight %}
 {% endtabs %}
 
-![Row index displayed in row header cell of wpf datagrid](Interactive-Features_images/InteractiveFeatures_img14.png)
+![WPF DataGrid displays Row Header Cells with Row Index](Interactive-Features_images/wpf-datagrid-row-index.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
@@ -197,7 +197,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid current row indicator customization](Interactive-Features_images/InteractiveFeatures_img16.png)
+![Customizing Current Row Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-indicator.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
 
@@ -248,7 +248,7 @@ public class CustomConverter:IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid row header background](Interactive-Features_images/InteractiveFeatures_img15.png)
+![Changing Row Header Background of WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-header-background.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
 
@@ -256,7 +256,7 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Show the column header in Header row](Rows_images/Rows_img7.png)
+![WPF DataGrid displays Column Header in Header Row](Rows_images/wpf-datagrid-column-header.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) property.
 
@@ -290,7 +290,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding the row header in details view datagrid](Rows_images/Rows_img8.png)
+![Hide Header Row in WPF Details View Datagrid](Rows_images/wpf-datagrid-hide-header-row.png)
 
 ## Freeze panes
 
@@ -357,7 +357,7 @@ dataGrid.FrozenRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Show the Fotter column, Footer rows, Frozen column , Frozen rows in SfDataGrid](Rows_images/Rows_img9.png)
+![WPF DataGrid displays Frozen Rows and columns](Rows_images/wpf-datagrid-freeze-rows-and-columns.png)
 
 ### Differentiate frozen rows from normal rows
 
@@ -439,7 +439,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-![Show the differentiation of Frozen Rows and Fotter Rows from normal rows](Rows_images/Rows_img10.png)
+![WPF DataGrid displays Differentiating Frozen Rows and Footer Rows from Normal Rows](Rows_images/wpf-datagrid-differentiate-frozen-rows-and-columns.png)
 
 ### Disable drag and drop between frozen and non-frozen columns
 

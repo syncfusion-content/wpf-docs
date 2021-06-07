@@ -123,7 +123,7 @@ In the following example, `ViewModel` command receives the underlying data objec
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid button command binding](MVVM_images/MVVM_img1.png)
+![Binding Button Command to ViewModel in WPF DataGrid](MVVM_images/wpf-datagrid-binding-button.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ShowSelectedRowInformation-414969750.zip).
 
@@ -167,7 +167,7 @@ class ViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid combobox column binding MVVM](MVVM_images/MVVM_img2.png)
+![Binding ComboBoxColumn ItemsSource from ViewModel in WPF DataGrid](MVVM_images/wpf-datagrid-binding-combobox-item.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstoComboBoxColumn-223289547.zip). 
 
@@ -199,7 +199,7 @@ You can load the `ComboBox` inside the `GridTemplateColumn` and bind the `ItemsS
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid combobox column binding MVVM](MVVM_images/MVVM_img3.png)
+![WPF DataGrid displays ComboBox with MVVM Data Template Binding](MVVM_images/wpf-datagrid-combobox-item.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstotemplateComboBoxColumn-1705267981.zip).
 

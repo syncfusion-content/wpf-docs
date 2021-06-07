@@ -31,7 +31,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 1.Create new folder and named as **Resources** in your application. 
 2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF71700028.zip).
 
-![Addition of default resource file of WPF DataGrid into Resources folder](Localization_images/Localization_img1.png)
+![Displaying Default Resource File of WPF DataGrid into Resources Folder](Localization_images/wpf-datagrid-default-resource-file.png)
 
 3.Right-click on the Resources folder, select **Add** and then **NewItem**.
 
@@ -39,17 +39,17 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
  
 5.The culture name that indicates the name of language and country. 
 
-![Shows the name of resource file to be added for WPF DataGrid](Localization_images/Localization_img2.png)
+![Changing name of New Resource File for WPF DataGrid](Localization_images/wpf-datagrid-change-resource-file-name.png)
 
 6.Now, select `Add` option to add the resource file in **Resources** folder.
 
-![Shows the added resource file for German language in WPF DataGrid](Localization_images/Localization_img3.png)
+![Displaying Resource File with German Language for WPF DataGrid](Localization_images/wpf-datagrid-with-german-resource-file.png)
 
 7.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.de.resx** file and change its corresponding value to corresponding culture. 
 
-![Shows the added resource file name / value pair in the resource designer in WPF DataGrid](Localization_images/Localization_img4.png)
+![Displaying Added Resource File Name and Value pair in WPF DataGrid](Localization_images/wpf-datagrid-resource-file-name-and-value.png)
 
-![Shows the localized in German for WPF DataGrid](Localization_images/Localization_img5.png)
+![Displaying Localized File in German for WPF DataGrid](Localization_images/wpf-datagrid-localized-file.png)
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization1013710435.zip)
 
@@ -73,12 +73,12 @@ public MainWindow()
 
 You can edit default resource file by adding it to **Resources** folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF71700028.zip).
 
-![Displaying the default culture resource editing for WPF SfDataGrid](Localization_images/Localization_img6.png)
+![Displaying Default Culture Resource File Editing for WPF DataGrid](Localization_images/wpf-datagrid-edit-localized-file.png)
 
 Now, change the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.resx** file.
 
-![Displaying the name / value pair in the resource designer for default culture resource in WPF SfDataGrid](Localization_images/Localization_img4.png)
+![Displaying Name and Value pair in Resource Designer for Default Culture in WPF DataGrid](Localization_images/wpf-datagrid-resource-file-name-and-value.png)
 
 
-![Displaying WPF SfDataGrid with the default culture resource edited](Localization_images/Localization_img8.png)
+![WPF DataGrid displays Editing Default Culture Resource](Localization_images/wpf-datagrid-edit-default-resource.png)
 

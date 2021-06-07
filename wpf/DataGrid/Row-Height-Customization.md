@@ -63,7 +63,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight of particular Row image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
+![Customizing Particular Row Height in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-row-height-customization.png)
 
 ## QueryRowHeight event
 
@@ -95,7 +95,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![OnDemand Changing of RowHeight image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
+![Changing Specific Row Height in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-change-row-height.png)
 
 ### Limitations
 
@@ -147,7 +147,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![AutoFit RowHeight based on content Image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
+![AutoFit RowHeight in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-auto-fit-row-height.png)
 
 #### GridRowSizingOptions
 
@@ -195,7 +195,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![AutoFit RowHeight for specific columns Image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img4.png)
+![AutoFit RowHeight for Specific Columns in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-autofit-height-based-on-column.png)
 
 ## Reset Row Height at runtime
 
@@ -321,7 +321,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit HeaderRowHeight Image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
+![AutoFit Header RowHeight based on Content in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-header-row-height.png)
 
 ## Change StackedHeaderRow Height based on its content
 
@@ -379,7 +379,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit StackedHeaderRow Image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
+![AutoFit Stacked HeaderRow Height based on Content in wpf datagrid](Row-Height-Customization_images/wpf-datagrid-stacked-header-row-height.png)
 
 ## Change TableSummaryRow Height
 
@@ -403,5 +403,5 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized TableSummaryRow height Image in wpf datagrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
+![Customizing TableSummaryRow Height in WPF DataGrid](Row-Height-Customization_images/wpf-datagrid-table-summary-row-height.png)
 

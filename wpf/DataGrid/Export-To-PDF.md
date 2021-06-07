@@ -233,7 +233,7 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported to PDF with Header and Footer](Export-To-PDF_images/Export-To-PDF_img1.png)
+![WPF DataGrid displays Export to PDF with Header and Footer](Export-To-PDF_images/wpf-datagrid-export-to-pdf.png)
 
 Here, `string` is inserted in the header of exported PDF file using [DrawString](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert image, line,etc. using [DrawImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_) methods respectively. 
 
@@ -274,7 +274,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid SelectedItems exported to PDF](Export-To-PDF_images/Export-To-PDF_img2.png)
+![WPF DataGrid SelectedItems Exported to PDF](Export-To-PDF_images/wpf-datagrid-export-selected-items.png)
 
 ## Saving options
 
@@ -355,7 +355,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported to WPF PDF Viewer](Export-To-PDF_images/Export-To-PDF_img3.png)
+![WPF DataGrid Exported to PDF Viewer](Export-To-PDF_images/wpf-datagrid-export-pdf-viewer.png)
 
 ## Exporting Customization
 
@@ -385,7 +385,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported PDF file](Export-To-PDF_images/Export-To-PDF_img4.png)
+![WPF DataGrid displays Exported PDF File](Export-To-PDF_images/wpf-datagrid-export-pdf-file.png)
 
 ### Embedding fonts in PDF file
 
@@ -448,7 +448,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported PDF File](Export-To-PDF_images/Export-To-PDF_img5.png)
+![Customizing Cell Values while Exporting PDF File in WPF DataGrid](Export-To-PDF_images/wpf-datagrid-cell-values-customization.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -480,7 +480,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![PDF Grid row styling when exporting from WPF DataGrid](Export-To-PDF_images/Export-To-PDF_img6.png)
+![Changing PDF Grid Row Style while Exporting from WPF DataGrid](Export-To-PDF_images/wpf-datagrid-row-style.png)
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 
@@ -508,7 +508,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting of middle eastern languages from WPF DataGrid to PDF File](Export-To-PDF_images/Export-To-PDF_img7.png)
+![Exporting Middle Eastern Languages from WPF DataGrid to PDF File](Export-To-PDF_images/wpf-datagrid-export-with-eastern-language.png)
 
 ### Exporting images to PDF document
 
@@ -555,7 +555,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img8.png)
+![WPF DataGrid displays Export to PDF File with Image](Export-To-PDF_images/wpf-datagrid-export-with-image.png)
 
 ## Exporting DetailsView
 
@@ -570,7 +570,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid nested grid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img9.png)
+![WPF DataGrid displays Nested Grid Exported to PDF File](Export-To-PDF_images/wpf-datagrid-export-nested-grid.png)
 
 By default, only expanded DetailsViewDataGrids only will be exported to PDF document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ExportAllDetails) as `true`.
 
@@ -584,7 +584,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Nested DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img10.png)
+![WPF Nested DataGrid Exported to PDF File](Export-To-PDF_images/wpf-datagrid-export-with-multiple-grid.png)
 
 Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
@@ -614,7 +614,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master-details view DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img11.png)
+![Exporting PDF File from WPF MasterDetailsView DataGrid](Export-To-PDF_images/wpf-datagrid-export-with-details-view.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -637,7 +637,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img12.png)
+![Exporting PDF File from WPF DataGrid without DetailsView](Export-To-PDF_images/wpf-datagrid-export-without-details-view.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 
@@ -670,6 +670,6 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img13.png)
+![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](Export-To-PDF_images/wpf-detailsview-datagrid-cells-customization.png)
 
 
