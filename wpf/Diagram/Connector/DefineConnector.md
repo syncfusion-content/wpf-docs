@@ -143,7 +143,7 @@ Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 ## Create connector 
 
-Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/diagram/connector/interaction/segments/straight "Segments").
+Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](https://help.syncfusion.com/wpf/diagram/connector/segments/straight "Segments").
 
 ## Create connectors through connection points
 
