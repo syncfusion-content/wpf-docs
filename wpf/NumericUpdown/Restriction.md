@@ -35,7 +35,7 @@ grid.Children.Add(updown);
 
 {% endtabs %}
 
-![Applied the value in WPF UpDown](Restriction_images/wpf-updown-value.png)
+![Applying Value in WPF UpDown](Restriction_images/wpf-updown-value.png)
 
 ### Value event
 
@@ -89,7 +89,7 @@ updown.NullValue = 2;
 
 {% endtabs %}
 
-![Set the null value in WPF UpDown](Restriction_images/wpf-updown-nullvalue.png)
+![WPF UpDown displays Null Value](Restriction_images/wpf-updown-nullvalue.png)
 
 ## Watermark
 
@@ -112,7 +112,7 @@ updown.NullValueText = "Enter a value";
 
 {% endtabs %}
 
-![Applied null value text in WPF UpDown](Restriction_images/wpf-updown-nullvaluetext.png)
+![WPF UpDown displays Null Value Text](Restriction_images/wpf-updown-nullvaluetext.png)
 
 
 N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in UpDown control. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
@@ -147,7 +147,7 @@ updown.MinValue = 0;
 
 {% endtabs %}
 
-![Show the minimum and maximum value in WPF UpDown](Restriction_images/wpf-updown-min_and_max.png)
+![WPF UpDown displays Minimum and Maximum Value](Restriction_images/wpf-updown-min_and_max-value.png)
 
 
 ### Minimum and Minimum validation

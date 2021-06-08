@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Quick Command in WPF Diagram (SfDiagram)
+# Quick Command in WPF Diagram (SfDiagram)
 
 ### Define QuickCommand
 

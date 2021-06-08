@@ -63,7 +63,7 @@ documentation: ug
 
  {% endtabs %}
 
- ![Switching between Simplified and Normal layout mode](SimplifiedLayout_images/SwitchingSimplifiedAndNormalLayout.gif)
+ ![Switching between Simplified and Normal Layout Mode in WPF Ribbon](SimplifiedLayout_images/wpf-ribbon-layouts.gif)
 
 ## Visibility of the Ribbon items between normal and simplified layout
 
@@ -195,7 +195,7 @@ documentation: ug
 
  The following screenshot shows the simplified layout within the Ribbon control.
 
- ![Setting item location using DisplayMode for Simplified layout](SimplifiedLayout_images/RibbonSimplifiedLayout.png)
+ ![WPF Ribbon with Simplified Layout](SimplifiedLayout_images/wpf-ribbon-simplified-layout.png)
  
  N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-Ribbon) in GitHub.
 
@@ -204,19 +204,19 @@ documentation: ug
  The Ribbon control allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html). The newly added [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) or [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) will only be visible in the respective layout in which items were added originally. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and a new [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html) named *Folder* is created and added using the QAT window. This tab will now be visible only in the simplified layout and not in the normal layout which is the default behavior. 
 
  
- ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItems_NormalLayout.png)
+ ![Customizing WPF Ribbon in Normal Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-customized-in-normal-layout.png)
  *Normal layout*
 
- ![Customizing Ribbon at runtime at Simplified layout](SimplifiedLayout_images/QATItems_SimplifiedLayout.png)
+ ![Customizing WPF Ribbon in Simplified Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-customized-in-simplified-layout.png)
  *Simplified layout*
 
 
  In the meantime, the Ribbon control also allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. In the below example, the [`LayoutMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_LayoutMode) is set as **"Simplified"** and the *Bold* item is added to the QAT through the context menu. This item will now be constantly visible in both normal and simplified layouts.
 
-  ![Customizing Ribbon at runtime at Normal layout](SimplifiedLayout_images/QATItemsThroughContext_NormalLayout.png)
+  ![Customizing WPF Ribbon in Normal Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-qat-items-in-normal-layout.png)
  *Normal layout*
 
- ![Customizing Ribbon at runtime at Simplified layout](SimplifiedLayout_images/QATItemsThroughContext_SimplifiedLayout.png)
+ ![Customizing WPF Ribbon in Simplified Layout at Runtime](SimplifiedLayout_images/wpf-ribbon-qat-items-in-simplified-layout.png)
  *Simplified layout*
  
 
@@ -224,7 +224,7 @@ documentation: ug
 
  While re-sizing the Ribbon, when the width of the window decreases and touches the last positioned item in the Ribbon, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
 
- ![Resizing ribbon window in run time](SimplifiedLayout_images/ResizingWindow-SimplifiedLayout.gif)
+ ![Resizing WPF Ribbon at Runtime](SimplifiedLayout_images/wpf-ribbon-resize-window.gif)
 
 
 

@@ -97,7 +97,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![BackStage as like Microsoft Outlook BackStage](GettingStarted_images/GettingStarted_img11.jpg)
+![WPF Ribbon displays BackStage](GettingStarted_images/wpf-ribbon-backstage.jpg)
 
 ### Customize the BackStage Visibility 
 
@@ -272,7 +272,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![BackStageCommandButton with caption as Save similar to Outlook Save button](GettingStarted_images/GettingStarted_img12.jpg)
+![WPF Ribbon Backstage with BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-commandbutton.jpg)
 
 ## Setting image to BackStageCommandButton
 
@@ -406,7 +406,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set for BackStageCommandButton using IconTemplate property](GettingStarted_images/BackStageCommandButton_IconTemplate.png)
+ ![WPF Ribbon Backstage displays Image for BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-commandbutton-icon.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -480,7 +480,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set using icon property](GettingStarted_images/BackStageCommandButton_Icon.png)
+ ![WPF Ribbon Backstage displays Image for BackStageCommandButton](GettingStarted_images/wpf-ribbon-backstage-icon.png)
 
 ### Setting vector image 
 
@@ -585,7 +585,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
 
- ![Image set using VectorImage property](GettingStarted_images/BackStageCommandButton_VectorImage.png)
+ ![WPF Ribbon Backstage displays Image for BackstageButton using VectorImage](GettingStarted_images/wpf-ribbon-backstage-button-with-image.png)
 
 ## Add BackStageTabItem
 
@@ -691,7 +691,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![BackStageTab with caption as Info similar to Outlook Info tab](GettingStarted_images/GettingStarted_img13.jpg)
+![WPF Ribbon Backstage with BackStageTabItem](GettingStarted_images/wpf-ribbon-backstage-tabitem.jpg)
 
 ## Add BackStage separator			
 
@@ -798,7 +798,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![BackStageSeparator as like Outlook](GettingStarted_images/GettingStarted_img14.jpg)
+![WPF Ribbon Backstage with BackStageSeparator](GettingStarted_images/wpf-ribbon-backstage-with-separator.jpg)
 
 ## BackStage items position
 
@@ -913,7 +913,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2019Colorful" Width="820" Height
 
 {% endtabs %}
 
-![BackStage items with position as bottom similar to outlook](GettingStarted_images/GettingStarted_img19.jpg)
+![Changinh BackStageItems Position in WPF Ribbon Backstage](GettingStarted_images/wpf-ribbon-backstage-item-position.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Positioning-BackStageItems)
 
@@ -1223,7 +1223,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in RibbonWindow as FullScreen](GettingStarted_images/Backstage_FullScreen_RibbonWindow.png)
+![WPF Ribbon BackStage Placed in RibbonWindow as FullScreen](GettingStarted_images/wpf-ribbon-backstage-in-ribbonwindow.png)
 
 #### Backstage placed in MS Window
 
@@ -1437,7 +1437,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in MS Window as FullScreen](GettingStarted_images/Backstage_FullScreen_MSWindow.png)
+![WPF Ribbon BackStage Placed in MS Window as FullScreen](GettingStarted_images/wpf-ribbon-backstage-in-ms-window.png)
 
 #### Backstage placed in Placement target
 
@@ -1657,7 +1657,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in target element as FullScreen](GettingStarted_images/Backstage_FullScreen_PlacementTarget.png)
+![WPF Ribbon BackStage Placed in Target Element as FullScreen](GettingStarted_images/wpf-ribbon-backstage-target-placement.png)
 
 ### Place the backstage in BelowTab
 
@@ -1873,7 +1873,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in RibbonWindow as BelowTab](GettingStarted_images/Backstage_BelowTab_RibbonWindow.png)
+![WPF Ribbon BackStage Placed in RibbonWindow as BelowTab](GettingStarted_images/wpf-ribbon-backstage-in-belowtab.png)
 
 #### Backstage placed in MS Window
 
@@ -2087,7 +2087,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in MS Window as BelowTab](GettingStarted_images/Backstage_BelowTab_MSWindow.png)
+![WPF Ribbon BackStage Placed in MS Window as BelowTab](GettingStarted_images/wpf-ribbon-backstage-belowtab-mswindow.png)
 
 #### Backstage placed in Placement target
 
@@ -2307,7 +2307,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
  {% endtabs %}
 
-![BackStage placed in target element as BelowTab](GettingStarted_images/Backstage_BelowTab_PlacementTarget.png)
+![WPF Ribbon BackStage Placed in Target Element as BelowTab](GettingStarted_images/wpf-ribbon-backstage-belowtab-placement.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type-and-placement-target-for-Backstage) in GitHub.
 
