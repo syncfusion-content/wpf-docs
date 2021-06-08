@@ -756,7 +756,7 @@ N> The [`BackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
-![Application menu in WPF Ribbon](ApplicationMenu-images/ApplicationMenu_MenuItem.png)
+![Application Menu in WPF Ribbon](ApplicationMenu-images/wpf-ribbon-applicationmenu.png)
 
 ## Adding ApplicationItems in ApplicationMenu
 
@@ -1513,6 +1513,6 @@ N> The [`BackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
-![Application menu in WPF Ribbon](ApplicationMenu-images/ApplicationMenu.png)
+![Displaying Application Menu Item in WPF Ribbon](ApplicationMenu-images/wpf-ribbon-application-menu-items.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-application-menu-in-Ribbon) in GitHub.
