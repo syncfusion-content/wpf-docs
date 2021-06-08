@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Custom Language Support
+# Custom Language Support in WPF Syntax Editor
 
 The EditControl provides built-in syntax highlighting and outlining support for common procedural languages such as C# and Visual Basic, markup languages like XAML and XML, and SQL. It also allows the developer to create Custom Language configurations to apply syntax highlighting and outlining.
 
