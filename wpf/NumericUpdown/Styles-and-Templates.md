@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 {% endtabs %}
 
-![Applied background and forecolor to positive value in WPF UpDown](StylesandTemplates-images/wpf-updown-positive.png)
+![Changing Positive Value Color in WPF UpDown](StylesandTemplates-images/wpf-updown-positive.png)
 
 ## Negative color
 
@@ -64,7 +64,7 @@ updown.NegativeForeground = Brushes.BlueViolet;
 
 {% endtabs %}
 
-![Applied background and forecolor to positive value in WPF UpDown](StylesandTemplates-images/wpf-updown-negative.png)
+![Changing Negative Value Color in WPF UpDown](StylesandTemplates-images/wpf-updown-negative.png)
 
 ## Zero color
 
@@ -87,7 +87,7 @@ updown.ZeroColor = Brushes.DarkViolet;
 
 {% endtabs %}
 
-![Applied color to zero value in WPF UpDown](StylesandTemplates-images/wpf-updown-zero.png)
+![Changing Zero Value Color in WPF UpDown](StylesandTemplates-images/wpf-updown-zero.png)
 
 ## Focused color
 
@@ -113,7 +113,7 @@ updown.FocusedBorderBrush = Brushes.Green;
 
 {% endtabs %}
 
-![Applied color to focused value in WPF UpDown](StylesandTemplates-images/wpf-updown-focused.png)
+![Changing Focused Value Color in WPF UpDown](StylesandTemplates-images/wpf-updown-focused.png)
 
 N> The positive, negative and zero value colors get default color of the control while focusing the Updown control.
 
@@ -125,6 +125,6 @@ UpDown supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF UpDown control](GettingStarted-images/wpf-updown-theme.png)
+![Applying Theme to WPF UpDown](GettingStarted-images/wpf-updown-theme.png)
 
 

@@ -35,7 +35,7 @@ grid.Children.Add(updown);
 
 {% endtabs %}
 
-![Set the number decimal digits in WPF UpDown](CultureandNumberFormatting-images/wpf-updown-decimal.png)
+![WPF UpDown displays Value based on Number Decimal Digits](CultureandNumberFormatting-images/wpf-updown-decimal.png)
 
 ## Group separator
 
@@ -58,7 +58,7 @@ updown.GroupSeperatorEnabled = true;
 
 {% endtabs %}
 
-![Enabled the GroupSepartor into WPF UpDown control](CultureandNumberFormatting-images/wpf-updown-groupseparator.png)
+![WPF UpDown displays Value based on GroupSeperator](CultureandNumberFormatting-images/wpf-updown-groupseparator.png)
 
 ## NumberFormatInfo
 
@@ -95,7 +95,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 {% endtabs %} 
 
-![Applied group and decimal separator of number format to WPF UpDown](CultureandNumberFormatting-images/wpf-updown-numberformat.png)
+![WPF UpDown with Number Format](CultureandNumberFormatting-images/wpf-updown-numberformat.png)
 
 ## Culture
 
@@ -121,7 +121,7 @@ updown.Value = 5555555;
 
 {% endtabs %} 
 
-![Applied latin culture into WPF UpDown](CultureandNumberFormatting-images/wpf-updown-latin_culture.png)
+![WPF UpDown with Latin Culture](CultureandNumberFormatting-images/wpf-updown-latin_culture.png)
  
 ## Text alignment
 
@@ -143,4 +143,4 @@ updown.TextAlignment = TextAlignment.Left;
 
 {% endtabs %}
 
-![Applied alignment into WPF UpDown control](CultureandNumberFormatting-images/wpf-updown-alignment.png)
+![Changing Text Alignment in WPF UpDown](CultureandNumberFormatting-images/wpf-updown-alignment.png)
