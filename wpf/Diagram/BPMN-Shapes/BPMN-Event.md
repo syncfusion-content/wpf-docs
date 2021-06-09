@@ -56,7 +56,7 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 {% endhighlight %}
 {%  endtabs %}
 
-![Create Event](BPMN-Shapes-Images/None1.png)
+![WPF Diagram BPMN Event](BPMN-Shapes-Images/wpf-diagram-bpmn-event.png)
 
 ## BPMN event trigger
 
@@ -101,14 +101,14 @@ BpmnNodeViewModel node = new BpmnNodeViewModel()
 {% endhighlight %}
 {%  endtabs %}
 
-![Create Event and Trigger](BPMN-Shapes-Images/Message1.png)
+![WPF Diagram BPMN Event and Trigger](BPMN-Shapes-Images/wpf-diagram-bpmn-event-and-trigger.png)
 
 The following table shows the type of event triggers.
 
 | Event / Trigger | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| None | ![None Trigger Start event BPMN Shape](BPMN-Shapes-Images/None1.png)  | ![None Trigger Interupting event BPMN Shape](BPMN-Shapes-Images/None2.png) | ![None Trigger Intermediate event  BPMN Shape](BPMN-Shapes-Images/None3.png) | ![None Trigger NonInteruptingIntermediate BPMNShape](BPMN-Shapes-Images/None4.png) |![None Trigger Throwing Intermediate event BPMNShape](BPMN-Shapes-Images/None5.png) | ![None Trigger End event  event  BPMNShape](BPMN-Shapes-Images/None6.png) |
-| Message | ![Message Trigger Start Event BPMN Shape](BPMN-Shapes-Images/Message1.png) | ![Message Trigger NonInterupting Event BPMN Shape](BPMN-Shapes-Images/Message2.png) | ![Message Trigger Intermediate Event BPMN Shape](BPMN-Shapes-Images/Message3.png) | ![Message Trigger NonInteruptingIntermediate Event BPMN Shape](BPMN-Shapes-Images/Message4.png) |![Message Trigger ThrowingIntermediate Event BPMNShape](BPMN-Shapes-Images/Message5.png) | ![Message Trigger End Event BPMN EndShape](BPMN-Shapes-Images/Message6.png) |
+| None | ![None Trigger Start event BPMN Shape](BPMN-Shapes-Images/wpf-diagram-bpmn-event.png)  | ![None Trigger Interupting event BPMN Shape](BPMN-Shapes-Images/None2.png) | ![None Trigger Intermediate event  BPMN Shape](BPMN-Shapes-Images/None3.png) | ![None Trigger NonInteruptingIntermediate BPMNShape](BPMN-Shapes-Images/None4.png) |![None Trigger Throwing Intermediate event BPMNShape](BPMN-Shapes-Images/None5.png) | ![None Trigger End event  event  BPMNShape](BPMN-Shapes-Images/None6.png) |
+| Message | ![Message Trigger Start Event BPMN Shape](BPMN-Shapes-Images/wpf-diagram-bpmn-event-and-trigger.png) | ![Message Trigger NonInterupting Event BPMN Shape](BPMN-Shapes-Images/Message2.png) | ![Message Trigger Intermediate Event BPMN Shape](BPMN-Shapes-Images/Message3.png) | ![Message Trigger NonInteruptingIntermediate Event BPMN Shape](BPMN-Shapes-Images/Message4.png) |![Message Trigger ThrowingIntermediate Event BPMNShape](BPMN-Shapes-Images/Message5.png) | ![Message Trigger End Event BPMN EndShape](BPMN-Shapes-Images/Message6.png) |
 | Timer | ![Timer Trigger Start Event BPMNShape](BPMN-Shapes-Images/Timer1.png) | ![Timer Trigger NonInterupting Event BPMN Shape](BPMN-Shapes-Images/Timer2.png) | ![Timer Trigger Intermediate Event BPMN Shape](BPMN-Shapes-Images/Timer3.png)|![Timer Trigger NonInteruptingIntermediate  Event BPMN Shape](BPMN-Shapes-Images/Timer4.png) |![Timer Trigger Throwing Intermediate  Event BPMN Shape](BPMN-Shapes-Images/Timer5.png) |![Timer Trigger End Event BPMN Shape](BPMN-Shapes-Images/Timer6.png) |
 | Conditional | ![Conditional Trigger Start BPMN Shape](BPMN-Shapes-Images/Conditional1.png) | ![Conditional Trigger NonInterupting BPMN Shape](BPMN-Shapes-Images/Conditional2.png) | ![Conditional Trigger Intermediate BPMN Shape](BPMN-Shapes-Images/Conditional3.png) |![Conditional Trigger NonInteruptingIntermediateBPMNShape](BPMN-Shapes-Images/Conditional4.png) |![Conditional Trigger ThrowingIntermediateBPMNShape](BPMN-Shapes-Images/Conditional5.png) |![Conditional Trigger EndBPMNShape](BPMN-Shapes-Images/Conditional6.png) |
 | Link | ![Link Trigger Start BPMN Shape](BPMN-Shapes-Images/Link1.png) | ![Link Trigger NonInterupting BPMN Shape](BPMN-Shapes-Images/Link2.png) |![Link Trigger Intermediate Event BPMNShape](BPMN-Shapes-Images/Link3.png) |![Link Trigger NonInteruptingIntermediateBPMNShape](BPMN-Shapes-Images/Link4.png) | ![Link Trigger ThrowingIntermediate  Event BPMN Shape](BPMN-Shapes-Images/Link5.png) |![Link Trigger EndBPMNShape](BPMN-Shapes-Images/Link6.png) |

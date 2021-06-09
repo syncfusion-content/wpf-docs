@@ -93,7 +93,7 @@ ConnectorViewModel RectangleDecorator = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![source and target of the connector](Connector_images/Decorator.PNG)
+![WPF Diagram Source and Target of the Connector](Connector_images/wpf-diagram-source-and-target-of-the-connector.PNG)
 
 Each decorator shapes can be changed as hollow type shapes, which contains a hole or empty space inside the shape. To change the normal shape as hollow type shape, you should change the style of the decorator shapes. 
 
@@ -161,7 +161,7 @@ ConnectorViewModel HollowRectangleDecorator = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![source and target of the connector](Connector_images/HollowDecorators.PNG)
+![WPF Diagram Connector with HallowDecorators](Connector_images/wpf-diagram-connector-with-hollow-decorators.PNG)
 
 Following table shows available decorators shapes in the diagram control,
 
@@ -309,7 +309,7 @@ ConnectorViewModel SegmentDecorator = new ConnectorViewModel()
  {% endhighlight %}
  {% endtabs %}
  
- ![segment decorator of the connector](Connector_images/SegmentDecorator.PNg)
+ ![WPF Diagram Segment Decorator of the Connector](Connector_images/wpf-diagram-segment-decorator-of-the-connector.PNg)
 
 ## Customizing corners of the connector
 
@@ -340,7 +340,7 @@ ConnectorViewModel cornerRadious = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![arc based corners of the connector](Connector_images/Connector_img21.PNG)
+![WPF Diagram Customizing Corners of the Connector](Connector_images/wpf-diagram-customizing-corners-of-the-connector.PNG)
 
 ## Padding
 
@@ -404,7 +404,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![space between the Connectors end point and the object](Connector_images/ConnectorPadding.PNG)
+![WPF Diagram Connector Padding](Connector_images/wpf-diagram-connector-padding.PNG)
 
 For sample, refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector13218237891750721589 "Decorator")
 
@@ -452,7 +452,7 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![bridge for lines to smartly cross over other lines](Connector_images/defaultBridging.png)
+![WPF Diagram Connector Bridging](Connector_images/wpf-diagram-connector-bridging.png)
 
 ### How to change the bridging direction and size
 
@@ -504,7 +504,7 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![customize the size of bridge in a connector](Connector_images/CustomBridge.png)
+![WPF Diagram Connector Bridging Direction](Connector_images/wpf-diagram-connector-bridging-direction.png)
 
 N> Bezier segments do not support bridging.
 
@@ -555,7 +555,7 @@ ConnectorViewModel customConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![appearance customization](Connector_images/CustomConnector.PNG)
+![WPF Diagram Connector Appearance Customization](Connector_images/wpf-diagram-connector-appearance-customization.PNG)
 
 ## Hit padding
 
@@ -580,7 +580,7 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![vicinity area to make connection](Connector_images/HitPadding.png)
+![WPF Diagram Connector HitPadding](Connector_images/wpf-diagram-connector-hit-padding.png)
 
 ## Events for connectors
 
@@ -651,7 +651,7 @@ public class CustomDiagram : SfDiagram
 {% endhighlight %}
 {% endtabs %}
 
-![Validate whether port already have connection and count of connection](Connector_images/ConnectionParameter.png)
+![WPF Diagram Connection Parameter](Connector_images/wpf-diagram-connection-parameter.png)
 
 ## Constraints
 

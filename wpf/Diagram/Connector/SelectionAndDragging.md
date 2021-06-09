@@ -15,7 +15,7 @@ Connectors can be selected, dragged and routed over the diagram page.
 
 The connector can be selected by tapping it. When the connector is selected, circles will be added on the starting and ending of the connector, which is represented by `Thumbs`. Clicking and dragging those handles helps you to adjust the source and target points.
 
-![Straight segment](Connector_images/Thumb.gif)
+![WPF Diagram Thumb](Connector_images/wpf-diagram-thumb.gif)
 
 ## How to drag the connector
 
@@ -61,7 +61,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Straight segment](Connector_images/Draggable.gif)
+![WPF Diagram Draggable Connector](Connector_images/wpf-diagram-draggable-connector.gif)
 
 ## How to route the connectors
 
@@ -86,7 +86,7 @@ diagram.Constraints.Add(GraphConstraints.Routing);
 {% endhighlight %}
 {% endtabs %}
 
-![Routing](Connector_images/Routing.gif)
+![WPF Diagram Connector Routing](Connector_images/wpf-diagram-connector-routing.gif)
 
 N> Routing is applicable only for orthogonal connectors.
 
@@ -110,7 +110,7 @@ node.Constraints.Remove(NodeConstraints.RoutingObstacle);
 {% endhighlight %}
 {% endtabs %}
 
-![Routing](Connector_images/RoutingObstacle.png)
+![WPF Diagram Connector Routing Obstacles](Connector_images/wpf-diagram-connector-routing-obstacles.png)
 
 ### How to enable or disable routing for connectors
 
