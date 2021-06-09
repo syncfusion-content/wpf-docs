@@ -399,7 +399,7 @@ End Class
 
 Now the output displays the Ribbon control with the populated items
 
-![PatternsandPractices_img1](PatternsandPractices_images/PatternsandPractices_img1.jpeg)
+![WPF Ribbon Items with MVVM](PatternsandPractices_images/wpf-ribbon-items-with-mvvm.jpeg)
 
 
 ## Practice with PRISM
@@ -740,4 +740,4 @@ End Class
 
 Now run the project. RibbonTabModule get added as one of the Module in the Shell. Similarly any number of Modules can be added based on the complexity of the project.
 
-![PatternsandPractices_img2](PatternsandPractices_images/PatternsandPractices_img2.jpeg)
+![WPF Ribbon Items with PRISM](PatternsandPractices_images/wpf-ribbon-item-with-prism.jpeg)
