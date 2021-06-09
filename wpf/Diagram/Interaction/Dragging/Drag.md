@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Dragging based on DragLimit
+# Dragging based on DragLimit in WPF Diagram (SfDiagram)
 
 Diagram provides support to drag the elements within the given limitations using [EditableArea](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ScrollSettings.html#Syncfusion_UI_Xaml_Diagram_ScrollSettings_EditableArea), [ScrollLimit.Limited](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Diagram.ScrollLimit.html) property and based on [SelectorChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) enabling/disabling of dragging within the limits occur.
 

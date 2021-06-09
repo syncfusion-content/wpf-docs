@@ -7,7 +7,7 @@ documentation: ug
 keywords: background
 ---
 
-## Setting Background for RichTextBox
+# Setting Background for WPF RichTextBox
 The RichTextBox control allows you to change background color of the control. A background of a control is represented by `Background` property of `SfRichTextBoxAdv` class. The default value of this property is black.
 
 The following code illustrates how to apply color as background to the document.

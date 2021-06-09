@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports to edit nodes and connectors at runtime.
+title: Preview Settings in WPF Diagram Control | Syncfusion
 description: How to select and edit nodes and connectors during runtime and how to arrange the node and connectors while dragging?
 platform: wpf
 control: SfDiagram
@@ -12,7 +12,7 @@ SfDiagram provides support to drag objects as an outline without affecting origi
 
 Preview Dragging can be enabled by assigning values other than `PreviewMode.Preview` to `SfDiagram.PreviewSettings.PreviewMode`.
 
-![Drag the preview of the node instead of original object](Interaction_images/PreviewDragging_img1.gif)
+![QuickCommand](Interaction/Interaction_images/QuickCommand_img.png)
 
 By default, Outline of the connectors connected to the dragging objects will be in disabled state. But, you can able to view the outline of the connectors, by holding dragging objects for certain time span. `ConnectorRefreshingSpan` property of `PreviewSettings` allows you to specify the time span and the value should be greater than 300ms.
 
@@ -24,7 +24,7 @@ this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode
 {% endhighlight %}
 {% endtabs %}
 
-![Refresh the orginal object with specific time](Interaction_images/PreviewDragging_img2.gif)
+![QuickCommand](Interaction/Interaction_images/QuickCommand_img2.png)
 
 ### Appearance
 
@@ -60,4 +60,4 @@ this.diagram.PreviewSettings = new PreviewSettings()
 {% endhighlight %}
 {% endtabs %}
 
-![customization of drag preview](Interaction_images/PreviewDragging_img3.gif)
+![QuickCommand](Interaction/Interaction_images/QuickCommand_img3.png)

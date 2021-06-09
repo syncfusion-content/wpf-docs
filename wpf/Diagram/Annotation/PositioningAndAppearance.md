@@ -155,7 +155,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Margin](Annotation_images/Margin.jpg)
+![WPF Diagram Annotation Margin](Annotation_images/wpf-diagram-annotation-margin.jpg)
 
 ## How to position connector's annotation 
 
@@ -234,7 +234,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 The following image shows the relationship between the annotation position and Length (fraction values).
 
-![Length](Annotation_images/Length.jpg)
+![WPF Diagram Annotation Length](Annotation_images/wpf-diagram-annotation-length.jpg)
 
 ### Displacement
 
@@ -339,7 +339,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![ConnectorAnnotationMargin](Annotation_images/ConnectorMargin.png)
+![WPF Diagram Annotation Connector Margin](Annotation_images/wpf-diagram-annotation-connector-margin.png)
 
 ## How to set size for annotation
 
@@ -372,7 +372,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![NodeSize](Annotation_images/NodeSize.png) &ensp;&ensp;&ensp;&ensp; ![ConnectorSize](Annotation_images/SizeConnector.png)
+![WPF Diagram Annotation Node Size](Annotation_images/wpf-diagram-annotation-node-size.png) &ensp;&ensp;&ensp;&ensp; ![WPF Diagram Annotation Connector Size](Annotation_images/wpf-diagram-annotation-connector-size.png)
 
 N> Size of the annotation is 100% size of the node.
 
@@ -464,7 +464,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance](Annotation_images/Annotation_img13.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![Appearance](Annotation_images/EditTemplate.png)
+![WPF Diagram Annotation Appearance](Annotation_images/wpf-diagram-annotation-appearance.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![WPF Diagram Annotation EditTemplate](Annotation_images/wpf-diagram-annotation-edittemplate.png)
 
 Also, diagram have `TextAnnotationViewModel` class to customize the appearance of the annotation directly instead of overriding view and edit templates of the annotation. This class customization will be applied for both view and edit mode of annotation.
 
@@ -502,7 +502,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance](Annotation_images/Annotation_img13.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![Appearance](Annotation_images/TextEditor.png)
+![WPF Diagram TextAnnotationViewModel](Annotation_images/wpf-diagram-annotation-appearance.PNG) &ensp;&ensp;&ensp;&ensp;&ensp; ![WPF Diagram Annotation TextEditor](Annotation_images/wpf-diagram-annotation-text-editor.png)
 
 ### How to change the editing mode
 
@@ -534,7 +534,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance](Annotation_images/ContentEditMode.PNG)
+![WPF Diagram Annotation ContentEditMode](Annotation_images/wpf-diagram-content-edit-mode.PNG)
 
 N> Edit mode will be applied to a single element at a time.
 

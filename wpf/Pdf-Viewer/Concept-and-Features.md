@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Concept-and-Features
-description: concept and features
+title: Concept and Features in WPF PdfViewer Control | Syncfusion
+description: Concept and features in Syncfusion Essential Studio WPF PdfViewer Control, its elements, features, and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Essential PDF Viewer can display PDF files, and print and export the pages as raster images. This section explains about the various functionalities available in the Essential PDF viewer for WPF.
 
-# Viewing PDF Files 
+## Viewing PDF Files 
 
 A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 
@@ -375,7 +375,7 @@ pdfviewer1.EnableNotificationBar= False
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog opens upon triggering the Print button.
 
-![](Concept-and-Features_images/Concept-and-Features_img1.png)
+![Concept-and-Features_images1](Concept-and-Features_images/Concept-and-Features_img1.png)
 
 
 
@@ -514,7 +514,7 @@ Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 Essential PDF Viewer allows you to search and highlight the text in the PDF document. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
 
-![C:/Users/Suresh/Desktop/UG Pravin/TextSearchWPF.png](Concept-and-Features_images/Concept-and-Features_img2.png)
+![Concept-and-Features_images2](Concept-and-Features_images/Concept-and-Features_img2.png)
 
 
 

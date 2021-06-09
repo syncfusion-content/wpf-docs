@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Communicate the OLAP control with the base| OLAPCommon | Wpf | Syncfusion
-description: communicate the olap control with the base
+title: Communicate the OLAPCommon control with the base in WPF | Syncfusion
+description: Communicate the OLAPCommon control with the base in Syncfusion Essential Studio for WPF, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

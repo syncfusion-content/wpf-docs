@@ -64,7 +64,7 @@ has option to decide how many copies need to be printed.
 
 N> Copies will be effective only for real printers.
 
-For sample, refer to [Printing](https://www.syncfusion.com/downloads/support/directtrac/243873/ze/Printing_Sample-326239405).
+For sample, refer to [Printing](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Printing).
 
 ### Printer
 

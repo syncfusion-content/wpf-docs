@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Retrieve the MDX Query of a CurrentReport| OLAPCommon | Wpf | Syncfusion
-description: retrieve the mdx query of a currentreport
+title: Retrieve the MDX Query of CurrentReport In WPF OLAPCommon | Syncfusion
+description: Retrieve the mdx query of a currentreport in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

@@ -61,7 +61,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying horizontally merged cells in WPF SfDataGrid](Merge-Cells_images/Merge-Cells_img1.png)
+![Horizontally Merged Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-horizontally-merged-cells.png)
 
 ### Merging cells vertically by fixed range
 
@@ -85,7 +85,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying vertically merged cells in WPF SfDataGrid](Merge-Cells_images/Merge-Cells_img2.png)
+![Vertically Merged Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-vertically-merged-cells.png)
 
 ### Merging range of cells
 
@@ -107,7 +107,7 @@ private void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEven
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying merged range of cells in WPF SfDataGrid](Merge-Cells_images/Merge-Cells_img3.png)
+![Merged Range of Cells in WPF DataGrid](Merge-Cells_images/wpf-datagrid-merge-range-of-cells.png)
 
 ## Merging cells based on the content
 
@@ -337,7 +337,7 @@ private void FirstLevelNestedGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying merged range of cells for Master-Details View in WPF SfDataGrid](Merge-Cells_images/Merge-Cells_img4.png)
+![WPF DataGrid displays Merged Range of Cells in Master Details View](Merge-Cells_images/wpf-datagrid-merge-range-of-cells-in-details-view.png)
 
 ### Merging range of parent cells
 

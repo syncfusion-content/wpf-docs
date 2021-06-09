@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save the report as xml file| OLAPCommon | Wpf | Syncfusion
-description: save the report as xml file
+description: Save the report as xml file in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug

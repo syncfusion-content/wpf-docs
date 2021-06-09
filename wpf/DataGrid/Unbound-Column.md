@@ -28,7 +28,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img1.png)
+![Unbound Column in WPF DataGrid](Unbound-Column_images/wpf-datagrid-unbound-column.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnBoundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -192,7 +192,7 @@ NOT
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column using Expression in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img2.png)
+![WPF DataGrid displays Unbound Column with Expression](Unbound-Column_images/wpf-datagrid-unbound-column-with-expression.png)
 
 ### Using Format
 
@@ -218,7 +218,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column using Format in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img3.png)
+![Formatting Unbound Columns in WPF DataGrid](Unbound-Column_images/wpf-datagrid-unbound-column-format.png)
 
 ### Using QueryUnBoundColumnValue event
 
@@ -247,7 +247,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column with data populated using QueryUnBoundColumnValue event in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img4.png)
+![Populating data with Unbound Column in WPF SfDataGrid](Unbound-Column_images/wpf-datagrid-populating-data.png)
 
 ## Refreshing the unbound column at runtime
 
@@ -366,7 +366,7 @@ public class UnboundCellStyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Unbound column styling in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img5.png)
+![Customizing Unbound Column Style in WPF DataGrid](Unbound-Column_images/wpf-datagrid-unbound-column-style.png)
 
 You can refer the [Styling](http://help.syncfusion.com/wpf/sfdatagrid/column-types#styling-gridcolumn) section of `GridColumn` for more information.
 
@@ -441,7 +441,7 @@ public class GridUnBoundCellTextBoxRendererExt : GridUnBoundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying unbound column behavior customization in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img6.png)
+![Customizing Unbound Column behavior in WPF SfDataGrid](Unbound-Column_images/wpf-datagrid-unbound-column-behavior.png)
 
 ### Custom Renderer
 

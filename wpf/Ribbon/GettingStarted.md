@@ -120,7 +120,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endtabs %}
 
-![Get similar UI as Microsoft Outlook using Ribbon](GettingStarted_images/GettingStarted_img18.jpg)
+![WPF Ribbon Control](GettingStarted_images/wpf-ribbon-control.jpg)
 
 ## Set visual styles
 
@@ -172,7 +172,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Ribbon with VisualStyle as Office2013White as like Microsoft Outlook ](GettingStarted_images/GettingStarted_img1.jpg)
+![WPF Ribbon with Office2013White Style](GettingStarted_images/wpf-ribbon-style.jpg)
 
 ## Add RibbonTab
 
@@ -202,7 +202,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Ribbon with four RibbonTab as like Microsoft Outlook](GettingStarted_images/GettingStarted_img2.jpg)
+![WPF Ribbon with RibbonTab](GettingStarted_images/wpf-ribbon-with-ribbontab.jpg)
 
 ## Add RibbonBar
 
@@ -238,7 +238,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Ribbon with five RibbonBar inside the HOME RibbonTab as like Microsoft Outlook HOME Tab .](GettingStarted_images/GettingStarted_img3.jpg)
+![WPF Ribbon with RibbonBars](GettingStarted_images/wpf-ribbon-with-ribbonbar.jpg)
 
 ## Add RibbonButton
 
@@ -300,7 +300,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![RibbonButton with a caption as New Email similar to Outlook New Email Button](GettingStarted_images/GettingStarted_img4.jpg)
+![WPF Ribbon with RibbonButton](GettingStarted_images/wpf-ribbon-with-ribbonbutton.jpg)
 
 N> Image of any size has been used for `RibbonButton` and also it supports image of all formats.
 
@@ -355,7 +355,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![DropDownButton with a caption as New Items similar to Outlook New Items DropdownButton](GettingStarted_images/GettingStarted_img5.jpg)
+![WPF Ribbon with DropDownButton](GettingStarted_images/wpf-ribbon-with-dropdownbutton.jpg)
 
 ## Add SplitButton
 
@@ -416,7 +416,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![SplitButton with a caption as Clean Up similar to Outlook Clean Up split button](GettingStarted_images/GettingStarted_img6.jpg)
+![WPF Ribbon with SplitButton](GettingStarted_images/wpf-ribbon-with-splitbutton.jpg)
 
 ## Add RibbonGallery
 
@@ -486,7 +486,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Ribbon with RibbonGallery similar to content inside the Quick Steps RibbonBar in Microsoft Outlook](GettingStarted_images/GettingStarted_img7.jpg)
+![WPF Ribbon with RibbonGallery](GettingStarted_images/wpf-ribbon-with-ribbongallery.jpg)
 
 ## Add RibbonComboBox
 
@@ -639,7 +639,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Quick Access toolbar as like Outlook](GettingStarted_images/GettingStarted_img8.jpg)
+![WPF Ribbon displays Quick Access ToolBar](GettingStarted_images/wpf-ribbon-quick-access-toolbar.jpg)
 
 
 ### Add items to Quick Access toolbar	
@@ -729,7 +729,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Quick Access toolbar with some items as like Outlook](GettingStarted_images/GettingStarted_img10.jpg)
+![WPF Ribbon displays Items in Quick Access ToolBar](GettingStarted_images/wpf-ribbon-quick-access-toolbar-items.jpg)
 
 ## Add BackStage
 
@@ -821,7 +821,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![BackStage as like Microsoft Outlook BackStage](GettingStarted_images/GettingStarted_img11.jpg)
+![WPF Ribbon displays RibbonBackStage](GettingStarted_images/wpf-ribbon-backstage.jpg)
 
 ## Add application menu
 
@@ -915,7 +915,7 @@ syncfusion:SkinStorage.VisualStyle="Default" >
 
 {% endtabs %}
 
-![ApplicationMenu as like Microsoft Outlook ](GettingStarted_images/GettingStarted_img15.jpg)
+![WPF Ribbon with ApplicationMenu](GettingStarted_images/wpf-ribbon-with-applicationmenu.jpg)
 
 ### Add application items to the application menu
 
@@ -1017,7 +1017,7 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 {% endtabs %}
 
-![AppicationMenu with ApplicationItems as like Microsoft Outlook](GettingStarted_images/GettingStarted_img17.jpg)
+![WPF Ribbon displays AppicationMenu with ApplicationItems](GettingStarted_images/wpf-ribbon-applicationmenu-items.jpg)
 
 ## Set simplified layout
 
@@ -1031,4 +1031,4 @@ Ribbon supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Ribbon](GettingStarted_images/Theme.png)
+  ![Applying Theme to WPF Ribbon](GettingStarted_images/wpf-ribbon-theme.png)

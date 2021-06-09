@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Expand-Collapse Support
+# Expand Collapse Support in WPF Syntax Editor
 
 The EditControl provides built-in support for outlining. With this support, users can expand or collapse a block of text. EditControl provides expand-collapse support in C#, Visual Basic, XAML and Xml languages. It also provides expand-collapse support for custom languages based on the base class used for custom language (built-in expand and collapse support will be available if the custom language is implemented inheriting from ProceduralLanguageBase or MarkupLanguageBase class). Users can also implement their custom expand-collapse logic using ApplyExpandCollapse override method available in the custom language class. Refer to Creating a custom language topic for more information on expand-collapse implementations for custom languages.
 
