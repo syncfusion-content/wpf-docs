@@ -94,7 +94,7 @@ _dockcollection = value;
 {% endtabs %}
 
 
-![Adding docking child through items source](Data-Binding-images/Data-Binding-img1.jpeg)
+![WPF Docking Data Binding](Data-Binding-images/wpf-docking-data-binding.jpeg)
 
 
 ## Docking Window in Different side
@@ -127,7 +127,7 @@ DockCollections.Add(new DockItem() { Header = "Docking Bottom", SideInDockedMode
 
 
 
-![Docking window in different side](Data-Binding-images/Data-Binding-img2.jpeg)
+![WPF Docking Window in Different Side](Data-Binding-images/wpf-docking-window-in-different-side.jpeg)
 
 
 ## Configure the Docking window through ItemsSource
@@ -169,6 +169,6 @@ DockCollections.Add(new DockItem() { Header = "Find Results", State = DockState.
 {% endtabs %}
 
 
-![Configure the docking window through items source](Data-Binding-images/Data-Binding-img3.jpeg)
+![WPF Docking Window Configuration through Items Source](Data-Binding-images/wpf-docking-window-configuration-through-items-source.jpeg)
 
 
