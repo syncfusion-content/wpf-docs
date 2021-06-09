@@ -43,7 +43,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationSelectable.png)
+![WPF Diagram Annotation Selection](Annotation_images/wpf-diagram-annotation-selection.png)
 
 ## Resizing the annotation
 
@@ -75,4 +75,4 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationResizing.gif)
+![WPF Diagram Annotation Resizing](Annotation_images/wpf-diagram-annotation-resizing.gif)

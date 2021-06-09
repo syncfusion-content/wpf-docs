@@ -11,7 +11,7 @@ documentation: ug
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 
-![Port representation](Port_images/Port_img2.PNG)
+![WPF Diagram Port](Port_images/wpf-diagram-port.PNG)
 
 ## Connections
 
@@ -19,11 +19,11 @@ There are two main types of connections: dynamic and port. The difference betwee
 
 A dynamic connection is one where the connector will move around the node as you move the node. Diagram will always ensure the connector is the shortest, most direct line possible. You can create a dynamic connection by selecting the entire node (rather than the port) and connect it to another shape (rather than to a port).
 
-![Connect without Port](Port_images/dynamicconnection.gif)
+![WPF Diagram Connection without Port](Port_images/wpf-diagram-connection-without-port.gif)
 
 A port connection is one where the connector is glued on the connection point of a node. When you move this node, the connector will always remain attached to the same connection point. You can create a port connection by connecting a specific port on one node to another port on another shape.
 
-![Connecting with port](Port_images/portconnection.gif)
+![WPF Diagram Connection with port](Port_images/wpf-diagram-connection-with-port.gif)
 
 SfDiagram supports three types of ports: Node Port, Connector Port, and DockPort.
 
@@ -120,7 +120,7 @@ RootGrid.Children.Add(diagram);
 {% endhighlight %}		
 {% endtabs %}
 
-![Node port](Port_images/Port_img6.PNG)
+![WPF Diagram Node Port](Port_images/wpf-diagram-node-Port.PNG)
 
 >N By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/sfdiagram/port#portvisibility) 
 
@@ -164,7 +164,7 @@ NodePortViewModel port = new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}	
 
-![Port Displacement](Port_images/Displacement.PNG)
+![WPF Diagram Port Displacement](Port_images/wpf-diagram-port-displacement.PNG)
 
 ## Connector port
 
@@ -254,7 +254,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}			
 
-![Connector Port](Port_images/Port_img7.PNG)
+![WPF Diagram Connector Port](Port_images/wpf-diagram-connector-port.PNG)
 
 ### Length 
 
@@ -270,7 +270,7 @@ The `Length` property of port is used to align the port based on fractions. 0 re
 
 DockPort is different from standard ports like `NodePort` and `ConnectorPort`. It is a placeholder that allows us to create connections at any point within it. Using `DockPort`, you can achieve lines of connecting points within the node boundary as shown in the following image.
 
-![Dock port](Port_images/Port_img17.png)
+![WPF Diagram Dock port](Port_images/wpf-diagram-dock-port.png)
 
 A DockPort on a node can be created using the instance of `DockPort` object. The `SourcePoint` and `TargetPoint` properties of DockPort allows you to define its start and end points. 
 
@@ -329,7 +329,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Dock port](Port_images/Port_img10.png)
+![WPF Diagram Dock Port Properties](Port_images/wpf-diagram-dock-port-properties.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Simple-PortCreation)
 
@@ -354,7 +354,7 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 {% endhighlight %}
 {% endtabs %}
 
-![Port appearance](Port_images/Port_img11.PNG)
+![WPF Diagram Port Geometry Style](Port_images/wpf-diagram-port-geometry-style.PNG)
 
 >N To visualize the DockPort, it is must to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
 
@@ -383,7 +383,7 @@ NodePortViewModel nodePort = new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Port connection padding](Port_images/Port_img15.PNG)
+![WPF Diagram Port Padding](Port_images/wpf-diagram-port-padding.PNG)
 
 ## HitPadding
 
@@ -411,7 +411,7 @@ NodePortViewModel nodePort = new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
  
-![Port hit padding](Port_images/Hitpadding.gif) 
+![WPF Diagram Port Hit Padding](Port_images/wpf-diagram-port-hit-padding.gif) 
 
 ### PortVisibility
 
@@ -453,10 +453,10 @@ port.ConnectionDirection = ConnectionDirection.Right;
 {% endtabs %}
 
 #### Before ConnectionDirection 
-![Before ConnectionDirection](Port_images/direction.PNG)
+![WPF Diagram Before Connection Direction](Port_images/wpf-diagram-before-connection-direction.PNG)
 
 #### After ConnectionDirection
-![After ConnectionDirection](Port_images/rightdirection.PNG)
+![WPF Diagram After Connection Direction](Port_images/wpf-diagram-after-connection-direction.PNG)
 
 For more information , refer to [ConnectionDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectionDirection.html)
 
@@ -510,7 +510,7 @@ NodePortViewModel port = new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Port appearance](Port_images/Port_img8.PNG)
+![WPF Diagram Port Appearance](Port_images/wpf-diagram-port-appearance.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Port-Customization)
 

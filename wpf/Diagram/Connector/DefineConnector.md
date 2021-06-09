@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 
-![point to point connection](Connector_images/Connector_img1.PNG)
+![WPF Diagram Point to Point Connection](Connector_images/wpf-diagram-point-to-point-connection.PNG)
 
 ## Connector types
 
@@ -82,7 +82,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Line connector](Connector_images/ConnectorTypes.PNg)
+![WPF Diagram Connector Types](Connector_images/wpf-diagram-connector-types.PNg)
 
 ### How to draw polyline
 
@@ -111,7 +111,7 @@ diagram.DrawingTool = DrawingTool.Connector;
 {% endhighlight %}
 {% endtabs %}
 
-![Line connector](Connector_images/PloyLineDrawing.gif)
+![WPF Diagram PloyLine Drawing](Connector_images/wpf-diagram-ployline-drawing.gif)
 
 ### Free-hand drawing
 
@@ -135,7 +135,7 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 {% endhighlight %}
 {% endtabs %}
 
-![Line connector](Connector_images/FreeHandDrawing.gif)
+![WPF Diagram FreeHand Drawing](Connector_images/wpf-diagram-freehand-drawing.gif)
 
 For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
 
@@ -186,7 +186,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![point to point connection](Connector_images/Connector_img6.png)
+![WPF Diagram Connectors through Connection Points](Connector_images/wpf-diagram-connectors-through-connection-points.png)
 
 ## Create connection between nodes
 
@@ -266,7 +266,7 @@ ConnectorViewModel nodeToNodeConnection = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![connection between nodes](Connector_images/Connector_img3.PNG)
+![WPF Diagram Connection Between Nodes](Connector_images/wpf-diagram-connection-between-nodes.PNG)
 
 ## Connections with ports
 
@@ -399,7 +399,7 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![connection between ports](Connector_images/PortToPortConnection.PNG)
+![WPF Diagram Connection Between Ports](Connector_images/wpf-diagram-connection-between-ports.PNG)
 
 For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and it represents the functions of a complete system in regards of how it interacts with external entities.
 
-![Node Content](Node_images/Node_Content.PNG)
+![WPF Diagram Node Content](Node_images/wpf-diagram-node-content.PNG)
 
 ## Create node
 
@@ -82,7 +82,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, node will be as follows.
 
-![Add node](Node_images/addNode.png)
+![WPF Diagram Adding Node](Node_images/wpf-diagram-adding-node.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Sample-for-NodeCreation)
 
@@ -293,7 +293,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Path Node](Node_images/Node_Path.png)
+![WPF Diagram Custom Shape Using Path Data](Node_images/wpf-diagram-custom-shape-using-path-data.png)
 
 #### How to add custom shape using data template
 
@@ -338,7 +338,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Path Node](Node_images/Node_DataTemplate.png)
+![WPF Diagram Custom Node using DataTemplate](Node_images/wpf-diagram-custom-node-using-datatemplate.png)
 
 #### How to add image as node shape
 
@@ -383,7 +383,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Path Node](Node_images/Node_user.png)
+![WPF Diagram Add Image as Node Shape](Node_images/wpf-diagram-add-image-as-node-shape.png)
 
 #### How to add framework element as node content
 
@@ -468,7 +468,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Path Node](Node_images/Node_frameworkElements.png)
+![WPF Diagram Framework Elements as Node Content](Node_images/wpf-diagram-framework-elements-as-node-content.png)
 
 ### Built-in resource
 
@@ -519,7 +519,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Node Position](Node_images/Node_img3.PNG)
+![WPF Diagram Node Position](Node_images/wpf-diagram-node-position.PNG)
 
 ## Flip
 
@@ -565,7 +565,7 @@ The flip types are:
 {% endhighlight %}
 {% endtabs %}
 
-![Node Flip](Node_images/Vertical_Flip.PNG)
+![WPF Diagram Node Vertical Flip](Node_images/wpf-diagram-node-vertical-flip.PNG)
 
 ## Padding
 
@@ -632,7 +632,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY,double height,double
 {% endhighlight %}
 {% endtabs %}
 
-![Node Padding](Node_images/Node_img6.PNG)
+![WPF Diagram Node Padding](Node_images/wpf-diagram-node-padding.PNG)
 
 ## Appearance
 
@@ -666,7 +666,7 @@ return style;
 
 {% endtabs %}
 
-![Node appearance](Node_images/Node_img4.PNG)
+![WPF Diagram Custom Node using ShapeStyle](Node_images/wpf-diagram-custom-node-using-shape-style.PNG)
  
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Node-with-properties)
 
@@ -684,7 +684,7 @@ Node can be selected by clicking (tap) it.
 
 * `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
-![Select Node](Node_images/Node_img7.jpg)
+![WPF Diagram Node Selection](Node_images/wpf-diagram-node-selection.jpg)
 
 To explore about selection and selection related events, refer to the [Selection](/wpf/sfdiagram/interaction#selection).
 
@@ -698,7 +698,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![Drag Node](Node_images/Drag.gif)
+![WPF Diagram Drag Node](Node_images/wpf-diagram-drag-node.gif)
 
 ### Resize
 
@@ -709,7 +709,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![Resize Node](Node_images/Resize.gif)
+![WPF Diagram Resize Node](Node_images/wpf-diagram-resize-node.gif)
 
 ### Rotate
 
@@ -719,7 +719,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * The `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![Rotate Node](Node_images/Rotate.gif)
+![WPF Diagram Rotate Node](Node_images/wpf-diagram-rotate-node.gif)
 
 ## Events
 

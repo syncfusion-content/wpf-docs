@@ -76,7 +76,7 @@ NodeViewModel node = new NodeViewModel()
 
 Output Node will be,
 
-![Shapes_image1](Shapes_images\Shapes_image1.PNG)
+![WPF Diagram Shapes](Shapes_images\wpf-diagram-shapes.PNG)
   
 The list of shapes are available in the resource dictionary as follows
  
