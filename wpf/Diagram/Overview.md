@@ -11,7 +11,7 @@ documentation: ug
 
 **Essential Diagram WPF** is a powerful, extensible, and feature-rich library for visualizing, creating, and editing interactive diagrams. It supports creating flowcharts, organizational charts, mind maps, floor plans, UML diagrams, and BPMN charts either through code or a visual interface.
 
-![Diagram - Overview](Overview_images/Overview_img1.png)
+![WPF Diagram Overview](Overview_images/wpf-diagram-overview.png)
 
 ## Key features of SfDiagram are as follows:
 

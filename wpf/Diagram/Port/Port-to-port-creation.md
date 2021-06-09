@@ -136,7 +136,7 @@ public ConnectorViewModel AddConnector(object sourceNode,Point targetPoint,doubl
 {% endhighlight %}
 {% endtabs %}
 
-![Connecting connector port](Port_images/Connector_interactively.gif)
+![WPF Diagram Port Interaction](Port_images/wpf-diagram-port-interaction.gif)
 
 ### Connection for DockPort
 
@@ -209,6 +209,6 @@ public NodeViewModel AddNode(double offsetX, double offsetY, string shape, doubl
 {% endhighlight %}
 {% endtabs %}
 
-![Connecting dock port](Port_images/DockPort.png)
+![WPF Diagram Dock Port Connection](Port_images/wpf-diagram-dock-port-connection.png)
 
 For more information, refer to [Draw Connectors](https://help.syncfusion.com/wpf/sfdiagram/tools#connectors).

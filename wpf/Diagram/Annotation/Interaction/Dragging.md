@@ -43,7 +43,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationDragging.gif)
+![WPF Diagram Annotation Dragging](Annotation_images/wpf-diagram-annotation-dragging.gif)
 
 ## How to restrict the dragging area
 
@@ -81,5 +81,5 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 | Property | Value | Output |
 |---|---|---|---|
-| DragLimit | (10,10,10,10) | ![NoWrap](Annotation_images/DragLimitDefault.gif) |
-| |(40,80,40,40) | ![Wrap](Annotation_images/CustomDragLimit.gif) |
+| DragLimit | (10,10,10,10) | ![WPF Diagram Annotation NoWrap](Annotation_images/wpf-diagram-annotation-drag-limit-default.gif) |
+| |(40,80,40,40) | ![WPF Diagram Annotation Wrap](Annotation_images/wpf-diagram-annotation-custom-drag-limit.gif) |

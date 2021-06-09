@@ -42,7 +42,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationRotation.gif)
+![WPF Diagram Annotation Rotation](Annotation_images/wpf-diagram-annotation-rotation.gif)
 
 ## How to customize the annotation rotation
 
@@ -76,7 +76,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 | Values | Description | Node |
 |---|---|---|---|
-| Page | While rotating the node, annotation will not be rotated. | ![Parent](Annotation_images/RotationPage.gif) |
-| Wrap | While rotating the node, annotation will also be rotated with node. | ![Wrap](Annotation_images/RotationParent.gif) |
+| Page | While rotating the node, annotation will not be rotated. | ![WPF Diagram Annotation Rotation Page](Annotation_images/wpf-diagram-annotation-rotation-page.gif) |
+| Wrap | While rotating the node, annotation will also be rotated with node. | ![WPF Diagram Annotation Rotation Parent](Annotation_images/wpf-diagram-annotation-rotation-parent.gif) |
 
 
