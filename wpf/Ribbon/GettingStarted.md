@@ -1127,8 +1127,8 @@ The `HeaderItemsSource` property of the RibbonWindow allows you to bind a collec
 
         <syncfusion:RibbonWindow.HeaderItemsSource>
             <listCollection:ArrayList>
-                <TextBox x:Name="textBox" Text="Search" Width="70"/>
-                <syncfusion:ButtonAdv x:Name="headerItem" Height="25" Label="Sign-In" SizeMode="Normal" IconTemplate="{StaticResource icontemplate}" />
+                <TextBox x:Name="textBox" Text="Search" Width="100"/>
+                <syncfusion:ButtonAdv x:Name="headerItem" Height="25" Margin="25,0,0,0" Label="Sign-In" SizeMode="Normal" IconTemplate="{StaticResource icontemplate}" />
             </listCollection:ArrayList>
         </syncfusion:RibbonWindow.HeaderItemsSource>
 
@@ -1185,8 +1185,8 @@ The RibbonWindow allows you to customize the visual appearance of the items stor
 
         <syncfusion:RibbonWindow.HeaderItemsSource>
             <listCollection:ArrayList>
-                <system:String>code_1</system:String>
-                <system:String>code_2</system:String>
+                <system:String>Search</system:String>
+                <system:String>Sign-In</system:String>
             </listCollection:ArrayList>
         </syncfusion:RibbonWindow.HeaderItemsSource>
 
@@ -1250,8 +1250,8 @@ The RibbonWindow allows you to customize the visual appearance of each item with
 
         <syncfusion:RibbonWindow.HeaderItemsSource>
             <listCollection:ArrayList>
-                <system:String>code_1</system:String>
-                <system:String>code_2</system:String>
+                <system:String>Search</system:String>
+                <system:String>Sign-In</system:String>
             </listCollection:ArrayList>
         </syncfusion:RibbonWindow.HeaderItemsSource>
 
@@ -1272,11 +1272,11 @@ public class ItemTemplateSelector : DataTemplateSelector
 {
     public override DataTemplate SelectTemplate(object item, DependencyObject container)
     {
-        if (item.ToString() == "code_1")
+        if (item.ToString() == "Search")
         {
             return (container as FrameworkElement).TryFindResource("BlueBorderTemplate") as DataTemplate;
         }
-        if (item.ToString() == "code_2")
+        if (item.ToString() == "Sign-In")
         {
             return (container as FrameworkElement).TryFindResource("OrangeBorderTemplate") as DataTemplate;
         }
