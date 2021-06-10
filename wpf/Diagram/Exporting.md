@@ -83,8 +83,8 @@ diagram.Export();
 
 | ExportMode| Description | Output |
 |---|---|---|
-| PageSettings| Region that fits all pages (single or multiple pages based on page settings) |![ExportingPageSettings](Exporting_images/ExportingPageSettings.png) |
-| Content| Region that fits all nodes and connectors that are added to model | ![ExportingContent](Exporting_images/ExportingContent.png)|
+| PageSettings| Region that fits all pages (single or multiple pages based on page settings) |![WPF Diagram displays Export Page Setting Mode](Exporting_images/wpf-diagram-page-setting-mode.png) |
+| Content| Region that fits all nodes and connectors that are added to model | ![WPF Diagram displays Export Content Mode](Exporting_images/wpf-diagram-content-mode.png)|
 
 {% tabs %}
 {% highlight xaml %}
@@ -165,7 +165,7 @@ diagram.Export();
 {% endhighlight %}
 {% endtabs %}
 
-![ExportingClip](Exporting_images/ExportingClip.png)
+![Export Specific Region in WPF Diagram](Exporting_images/wpf-diagram-export-specific-region.png)
 
 ### Change the background of the exported files
 
@@ -196,7 +196,7 @@ diagram.Export();
 {% endhighlight %}
 {% endtabs %}
 
-![Background](Exporting_images/ExportingBackground.png)
+![Changing Export Files Background in WPF Diagram](Exporting_images/wpf-diagram-export-background.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting)
 
