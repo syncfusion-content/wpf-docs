@@ -185,7 +185,7 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ![Resize Ribbon Window](RibbonResizeWindow-images/ResizeRibbonWindow.gif)
 
-## Right RibbonBar support
+## RibbonBar Positioning
 
 The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned at the right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property.
 In order to position the RibbonBar at right side of the Ribbon, set `Position` property in RibbonBar as `Right`. 
