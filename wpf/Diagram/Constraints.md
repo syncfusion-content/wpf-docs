@@ -195,7 +195,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![GraphConstraints](Constraints_images/ContraintsAll.gif)
+![WPF Diagram displays GraphConstraints](Constraints_images/wpf-diagram-group-contraints.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Constraints-Node-Connector-Graph)
 
@@ -236,7 +236,7 @@ NodePortViewModel port=	new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![GraphConstraints](Constraints_images/portconnect.gif)
+![WPF Diagram displays Port Connection](Constraints_images/wpf-diagram-port-connection.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Port-Constraints-sample)
 
@@ -284,7 +284,7 @@ AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![AnnotationConstraints](Constraints_images/AnnotationDragging.gif)
+![WPF Diagram displays Annotation Constraints](Constraints_images/wpf-diagram-drag-annotation.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Annotation-constraints-sample)
 
@@ -316,7 +316,7 @@ The following code example illustrates how to hide rotator.
 {% endhighlight %}
 {% endtabs %}
 
-![SelectorConstraints](Constraints_images/Selectorimage.png)
+![WPF Diagram displays Selector Constraints](Constraints_images/wpf-diagram-selector-constraints.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Selector-constraints-sample)
 

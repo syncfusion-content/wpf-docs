@@ -49,7 +49,7 @@ Steps to add Overview control manually in XAML:
 {% endhighlight %}	
 {% endtabs %}
 
-![Overview](Overview-Control_images/Overview-Control_img1.png)
+![Overview of WPF Diagram](Overview-Control_images/wpf-diagram-overview.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Overview).
 
@@ -81,7 +81,7 @@ You can zoom in or zoom out the overview as well as the diagram by changing the 
 {% endhighlight %}	
 {% endtabs %}
 
-![Overview](Overview-Control_images/Overview-Control_img.png)
+![WPF Diagram displays ZoomSlider](Overview-Control_images/wpf-diagram-zoom-slider.png)
 
 
 ## Interaction
@@ -106,9 +106,9 @@ The [Constraint](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.C
 
 | OverviewConstraints | Description | Output |
 |---|---|---|
-| Pan | Allows users to pan the diagram page by dragging the focused rectangle. |![Overview pan](Overview-Control_images/OverViewPan.gif) |
-| Zoom | Allows users to perform zoom by resizing the corners of the focused rectangle. |![Overview Resize](Overview-Control_images/OverViewResize.gif) |
-| DrawFocus | Allows users to draw new focused rectangle anywhere within the overview panel, that is corresponding region in the diagram will be brought into the view.|![Overview Draw](Overview-Control_images/OverViewDrawFocus.gif) |
+| Pan | Allows users to pan the diagram page by dragging the focused rectangle. |![Panning WPF Diagram Page by Dragging Focused Rectangle](Overview-Control_images/wpf-diagram-pan.gif) |
+| Zoom | Allows users to perform zoom by resizing the corners of the focused rectangle. |![Zooming WPF Diagram by Resizing Corners of Focused Rectangle](Overview-Control_images/wpf-diagram-resize-rectangle-corner.gif) |
+| DrawFocus | Allows users to draw new focused rectangle anywhere within the overview panel, that is corresponding region in the diagram will be brought into the view.|![WPF Diagram displays Drawing New Focused Rectangle](Overview-Control_images/wpf-diagram-draw-focus.gif) |
 | TapFocus | Allows users move the focused rectangle to any area within the panel by just tapping it.| |
 | Default | Allows users to perform drag, resize, draw, and tap the overview control.| |
 | None |No interaction can be performed on the focused rectangle.||

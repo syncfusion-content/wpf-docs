@@ -35,7 +35,7 @@ Stencil stencil = new Stencil()
 {% endhighlight %}
 {% endtabs %}
 
-![StencilDiagram](Stencil_images/Stencil_img1.PNG)
+![Stencil in WPF Diagram](Stencil_images/wpf-diagram-stencil.PNG)
 
 ## Add symbols in a Stencil 
 
@@ -156,7 +156,7 @@ public class SymbolCollection : ObservableCollection<Object>
 
 {% endtabs %}
 
-![DiagramElements](Stencil_images/stencil1.PNG) 
+![WPF Diagram displays Stencil using Elements](Stencil_images/wpf-diagram-elements.PNG) 
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-node-connector-group)
 
@@ -226,7 +226,7 @@ public class SymbolCollection : ObservableCollection<Object>
 
 {% endtabs %}
 
-![Symbol](Stencil_images/symbolimage.PNG) 
+![WPF Diagram displays Stencil using Symbol](Stencil_images/wpf-diagram-stencil-using-symbol.PNG) 
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-symbols)
 
@@ -255,7 +255,7 @@ The width and height properties of the symbol enable you to define the size of t
  
 {% endtabs %}
 
-![Symbol](Stencil_images/imagenode1.PNG) 
+![Customizing Symbol Appearance in WPF Diagram](Stencil_images/wpf-diagram-symbol-customization.PNG) 
 
 ### Add the name and tooltip to the symbol
 You can use the `Name` property of the [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html), and [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html) to specify the identifying name to that element. Please find the following code example.
@@ -328,7 +328,7 @@ By default, the `Name` property of the diagramming elements(NodeViewModel, Conne
  
 {% endtabs %}
 
-![Symbol](Stencil_images/imagenode.PNG) 
+![WPF Diagram displays ToolTip for Symbol](Stencil_images/wpf-diagram-tooltip.PNG) 
 
 N> The `DataContext` of the `Symbol` will be any diagramming elements such as `NodeViewModel,` `ConnectorViewModel,` `GroupViewModel,` and `SymbolViewModel.`
 
@@ -487,7 +487,7 @@ stencil.SymbolGroups = new SymbolGroups()
 {% endhighlight %}
 {% endtabs %} 
 
-![Symbol](Stencil_images/stencil2.PNG) 
+![WPF Diagram displays Group Symbol](Stencil_images/wpf-diagram-group-symbol.PNG) 
 
 ### Customize the appearance of the symbol group header
 
@@ -584,7 +584,7 @@ ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
 {% endhighlight %}
 {% endtabs %}
 
-![Basic Shapes](Stencil_images/CategoryBasicShapes.png)
+![Basic Shapes in WPF Diagram](Stencil_images/wpf-diagram-basic-shapes.png)
 
 ### Add the custom shapes categories
 
@@ -630,7 +630,7 @@ BorderBrush="#dfdfdf" BorderThickness="1">
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Shapes collection](Stencil_images/CustomShapes.png)
+![Custom Shapes in WPF Diagram](Stencil_images/wpf-diagram-custom-shapes.png)
 
 N> The custom symbol collections should be added in the App.xaml file.
 
@@ -853,7 +853,7 @@ public class StencilVM : INotifyPropertyChanged
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/SymbolFilters-sample)
 
-![SymbolFilter](Stencil_images/Stencil_img12.PNG)
+![WPF Diagram displays Symbol Filter](Stencil_images/wpf-diagram-symbol-filter.PNG)
 
 ### Appearance of symbol filters
 
@@ -868,7 +868,7 @@ In `List` display mode,  the filters will be added in the list view only when yo
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil_ListView)
 
- ![Symbol](Stencil_images/StencilImprovement.GIF) 
+ ![Customizing Symbol Appearance Filter in WPF Diagram](Stencil_images/wpf-diagram-symbol-appearance-customization.GIF) 
 
 ### SelectedFilter
 
@@ -896,7 +896,7 @@ The [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenci
  
 {% endtabs %}
 
-![Symbol](Stencil_images/Stencil_Title.PNG) 
+![WPF Diagram with Symbol Title](Stencil_images/wpf-diagram-symbol-title.PNG) 
 
 ### Customize Stencil title
 
@@ -927,7 +927,7 @@ Please find the code example that explains how to add a title and its customizat
 {% endhighlight %}
 {% endtabs %}
 
-![Symbol](Stencil_images/Stencil_TitleTemplate.PNG) 
+![Customizing Symbol Title in WPF Diagram](Stencil_images/wpf-diagram-symbol-title-customization.PNG) 
 
 ## Browse the symbols from the stencil 
 
@@ -935,7 +935,7 @@ You can search for symbols in the stencil by entering the symbol name (e.g: "rec
 
 The following image shows the search result of the symbol.
 
- ![Symbol](Stencil_images/Stencil_Search_Textbox.GIF) 
+ ![WPF Diagram displays Search TextBox](Stencil_images/wpf-diagram-search-textbox.GIF) 
 
 ## Stencil display mode
 
@@ -948,7 +948,7 @@ The Stencil view can be toggled between the expanded and compact modes by clicki
 
 You can show or hide the expander icon by using the [ShowDisplayModeToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowDisplayModeToggleButton) property of the `Stencil.` 
 
-![Symbol](Stencil_images/Stencil_Compact.PNG) 
+![WPF Diagram with Compact Mode](Stencil_images/wpf-diagram-compact-mode.PNG) 
 
 ## Preview for Drag and Drop
 
@@ -966,7 +966,7 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, the stencil is an instance of Stencil.
 
-![Preview](Stencil_images/Stencil_img14.PNG)
+![WPF Diagram displays Drag and Drop Preview](Stencil_images/wpf-diagram-drag-and-drop-preview.PNG)
 
 #### Customization of Preview for drag and drop
 
@@ -994,7 +994,7 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPreview](Stencil_images/Stencil_img16.jpeg)
+![Customizing Drag and Drop Preview in WPF Digaram](Stencil_images/wpf-diagram-drag-and-drop-preview-customization.jpeg)
 
 ## Events
 
