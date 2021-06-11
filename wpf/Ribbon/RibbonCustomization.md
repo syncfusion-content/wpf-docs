@@ -38,12 +38,12 @@ SmallIcon="/Resources/FormatPainter16.png"  />
 
 The below RibbonContextMenu gets generated when the user right click on the ribbon
 
-![Accessing Ribbon context menu through right click](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img1.jpg)
+![Displaying ContextMenu while Right-clicking on WPF Ribbon](CustomizeRibbonthroughRibbonContextMenu_images/wpf-ribbon-context-menu.jpg)
 
 
 It displays along with "Add to Quick Access ToolBar" function while clicking at the RibbonItem as like in the below screenshot
 
-![Options in Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img2.jpg)
+![WPF Ribbon displays RibbonItems Context Menu](CustomizeRibbonthroughRibbonContextMenu_images/wpf-ribbon-item-context-menu.jpg)
 
 
 ## Adding custom item to the ContextMenu
@@ -69,7 +69,7 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 {% endtabs %}
 
 
-![Adding custom items to the context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpg)
+![Adding Custom Items to WPF Ribbon Context Menu](CustomizeRibbonthroughRibbonContextMenu_images/wpf-ribbon-custom-item-context-menu.jpg)
 
 
 ## How to disable the RibbonContextMenu
@@ -123,12 +123,12 @@ End Sub
 
 The following snapshot gets generated before handling the RibbonContextMenu event
 
-![Before handling the Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img4.jpg)
+![WPF Ribbon with Context menu](CustomizeRibbonthroughRibbonContextMenu_images/wpf-ribbon-menu.jpg)
 
 
 After the event is handled, the output gets display as follows
 
-![Disabling Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img5.jpg)
+![Disabling Context Menu in WPF Ribbon](CustomizeRibbonthroughRibbonContextMenu_images/wpf-ribbon-disabled-context-menu.jpg)
 
 
 ## Add items to QuickAccessToolBar (QAT)
@@ -185,7 +185,7 @@ Ribbon.QuickAccessToolBar = QAT
 
 {% endtabs %}
 
-![Adding default items](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpg)
+![WPF Ribbon with Default Items for QuickAccessToolBar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-quick-access-toolbar-items.jpg)
 
 
 ## Add items to QAT Menu items
@@ -242,24 +242,24 @@ Me.Ribbon.QuickAccessToolBar.QATMenuItems.Add(pasteRibbonButton)
 
 The “Paste” QATMenuItem has been selected and it is displayed as one of the items in the QAT. 
 
-![Adding items to QAT menu items](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img2.jpg)
+![Customizing QuickAccessToolBar Items in WPF Ribbon](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-quick-access-toolbar.jpg)
 
 
-![Item added to the QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img3.jpg)
+![Customizing QuickAccessToolBar Items in WPF Ribbon](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-quick-access-toolbar-item-customization.jpg)
 
 
 ## Add items to QAT customize window
 
 To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
-![Adding items to QAT customize window](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img4.jpg)
+![Adding WPF Ribbon Items to QAT Customize Window](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-items-to-customize-window.jpg)
 
 
-![Adding items to QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img5.jpg)
+![Adding WPF Ribbon Items to QuickAccessToolbar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-item-to-quick-access-toolbar.jpg)
 
 Finally, the Items gets displayed in the QAT
 
-![Items displayed in the QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img6.jpg)
+![Added WPF Ribbon Items in QuickAccessToolbar](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-items-in-quick-access-toolbar.jpg)
 
 ## Add custom QAT items
 
@@ -320,22 +320,22 @@ Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton)
 
 Once the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) are added to the Quick Access Toolbar using the **Add** button, it will be visible in the Ribbon QAT and in the QAT Dropdown menu. The visibility of this item in the Ribbon QAT can be toggled by checking/unchecking from the QAT Dropdown menu. 
 
-![Adding CustomQATItem to the QAT](AddingItemstoQuickAccessToolBar_images/Adding_CustomQATItem_To_QAT.png)
+![Adding CustomQATItem to QAT in WPF Ribbon](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-custom-item.png)
 
-![Accessing the CustomQATItem through QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/CustomQATItem_in_DropDownMenu_QAT.png)
+![Accessing CustomQATItem through QAT DropDownMenu in WPF Ribbon](AddingItemstoQuickAccessToolBar_images/CustomQATItem_in_DropDownMenu_QAT.png)
 
 The added [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.QuickAccessToolBar.html#Syncfusion_Windows_Tools_Controls_QuickAccessToolBar_CustomQATItems) in the QAT Dropdown menu can be removed through the QAT Window using the **Remove** button. 
 
-![Removing CustomQATITem from the QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/Removing_CustomQATItem_from_Dropdown.png)
+![Removing CustomQATITem from QAT DropDownMenu in WPF Ribbon](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-remove-custom-item.png)
 
 
 ## Add items from Ribbon context menu		
 QAT can also customized by adding the items from the Ribbon ContextMenu. Select Add to Quick Access Toolbar by right clicking the Ribbon item required to add to the QAT. Then, the respective item gets added as one of the items in the QAT.
 
-![Accessing items through context menu](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img7.jpg)
+![Accessing Items from WPF Ribbon Context Menu](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-context-menu-item.jpg)
 
 
-![Adding items through context menu](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img8.jpg)
+![Adding Items from WPF Ribbon Context Menu](AddingItemstoQuickAccessToolBar_images/wpf-ribbon-add-context-menu-item.jpg)
 
 ## Add custom items using RibbonItemHost
 
@@ -483,9 +483,9 @@ In the below example, the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 {% endtabs %}
 
-![WPF Ribbon Custom Items in MoreCommands window](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-MoreCommands-window.png)
+![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands.png)
 
-![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-QAT.png)
+![Adding WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/wpf-ribbon-custom-items-with-ribbonbar.png)
 
 
 To know more about the [`RibbonItemHost`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonItemHost.html), refer [here](https://help.syncfusion.com/wpf/ribbon/ribbonitemhost).
@@ -506,31 +506,31 @@ QAT can be Customized further by using the following options
 
 	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click OK. Now, the selected command gets added in the QAT.
 
-	![Adding items to the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img1.jpg)
+	![Adding WPF Ribbon Items to QuickAccessToolBar](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-custom-ribbon-items.jpg)
 
-	![Items displayed in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img2.jpg)
+	![WPF Ribbon Items displayed in QccessAccessToolBar](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-custom-ribbon-items-in-qat.jpg)
 
 2. Remove
 
 	QAT items can be removed at the Run time. In the QAT Customize window, select the Command to be deleted from the QAT Dialog,and then click Remove Button. In the following screenshot, Redo command gets deleted and the output is changed according to it.
 
-	![Removing the items from the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img3.jpg)
+	![Removing WPF Ribbon Items from QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-remove-items.jpg)
 
-	![Item removed from the Ribbon QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img4.jpg)
+	![Removed RibbonItems from WPF Ribbon QuickAccessToolBar](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-removed-ribbonitems-from-qat.jpg)
 
 3. Reset
 
 	To restore the QAT to its default content, use this `Reset` option.
 
-	![Resetting the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img5.jpg)
+	![Resetting WPF Ribbon QuickAccessToolBar](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-reset-qat.jpg)
 
 4. Reorder
 
 	QAT also supports to reorder the items by clicking the Up and down arrow at the left of the QAT Dialog. 
 
-	![Reordering the items in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img6.jpg)
+	![Reordering RibbonItems in WPF Ribbon QuickAccessToolBar](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-removing-ribbonitems.jpg)
 
-	![Items reordered in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img7.jpg)
+	![WPF Ribbon displays Reordered RibbonItems in QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-reorder-ribbonitems.jpg)
 
 
 ### Customize Ribbon with RibbonTab and RibbonBar
@@ -543,25 +543,25 @@ QAT can also support to customize Ribbon Tab and RibbonBar while running. To cus
 
 3. You can add `RibbonTab` and `RibbonBar` by selecting New Tab and New Group Options Respectively.
 
-	![Adding tab and bar from QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img8.jpg)
+	![Customizing WPF Ribbon with RibbonTab and RibbonBar from QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-items-customized-from-qat.jpg)
 
 4. To move the tab up and down, select the tab to be moved and click the button at the right-side corner accordingly. Similarly, the group can be moved within the tab.
 
 5. By using the `Rename` option, rename any particular Tab/Group present in the Ribbon by selecting it.
 
-	![Renaming the tab and bars through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img9.jpg)
+	![Renaming RibbonTab and RibbonBars through QAT in WPF Ribbon](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-rename-ribbonitems-in-qat.jpg)
 
 6. The visibility of any particular Tab can be changed by enabling the checkbox of the corresponding selection.
 
-	![Changing the visibility of the tabs through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img10.jpg)
+	![Changing RibbonTabs Visibility through QAT in WPF Ribbon](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-items-visibility.jpg)
 
 7. By using `Delete` option, the Custom RibbonBar and RibbonTab can be deleted. But, this option does not work in the case of original content.
 
-	![Deleting Tabs and bars through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img11.jpg)
+	![Deleting RibbonTabs and RibbonBars through QAT in WPF Ribbon](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-delete-item-throug-qat.jpg)
 
 8. To delete all the Ribbon Customization, use `Reset All Customization` from the Reset Drop Down Menu.
 
-	![Deleting all the Ribbon customizations done in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img12.jpg)
+	![Reset WPF Ribbon Items in QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-reset-items.jpg)
 
 After customizing the RibbonTab and RibbonBar, RibbonItems can be customized. Customizing Ribbon Item concepts are explained as follows.
 
@@ -573,21 +573,21 @@ The steps to customize the Ribbon Item are as follows
 
 2.  To add the item under the right-side column of a newly added `RibbonBar` and `RibbonTab`, select the item from left-side column and click the `Add` button.
 
-	![Adding items to the newly added tab](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img13.jpg)
+	![WPF Ribbon Items Added to Newly Ribbontab](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-item-added-to-new-tab.jpg)
 
 3. Also, the Ribbon Item from the RibbonBar can be removed that is added recently by using `Remove` option
 
-	![Removing the items from tab through QAT Window](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img14.jpg)
+	![Removing WPF Ribbon Items from Ribbontab through QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-removing-ribbonitem-from-qat.jpg)
 
 4. The order of the RibbonItem within the RibbonBar can be changed by using `Up` and `Down` arrow
 
 5. By using the Rename option,the RibbonItem can be renamed
 
-	![Renaming the ribbon items](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img15.jpg)
+	![Renaming WPF Ribbon Items in QAT](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-rename-ribbonitems.jpg)
 
 6. Click `OK` button. The Changes are reflected in the output window.
 
-	![Clicking Ok reflects the changes to the Ribbon](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img16.jpg)
+	![WPF Ribbon with Changed RibbonItems](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-with-modified-items.jpg)
 
 
 ## How to disable the customization in Ribbon
@@ -627,5 +627,5 @@ In the following screenshot, customizing Ribbon is disabled and it shows only th
 
 
 
-![Disabling the Customize ribbon option](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img17.jpg)
+![Disabling Customize Option in WPF Ribbon](AddingcustomRibbonTabandRibbonBar_images/wpf-ribbon-disable-customize-option.jpg)
 

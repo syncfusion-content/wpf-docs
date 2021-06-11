@@ -228,7 +228,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![OrganizationLayout](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
+![OrganizationLayout in WPF Diagram](Automatic-Layouts_images/wpf-diagram-automatic-layouts.jpeg)
 
 ## How to change the chart type and orientation in organization layout 
 
@@ -248,12 +248,12 @@ The following table explains the different chart orientations and chart types:
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child nodes Horizontally at the Left the of Parent. | ![Left](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
-| | Right | Arranges the child nodes Horizontally at the Right of the Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
-| | Center | Arranges the child nodes horizontally at the Center of the parent. | ![Center](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
-| Vertical | Left | Vertically arranges the children at the Left of the Parent. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
-| | Right | Vertically arranges the children at the Right of the Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
-| | Alternate | Vertically arranges the children at both Left and Right of the Parent. | ![Alternate](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
+| Horizontal | Left | Arranges the child nodes Horizontally at the Left the of Parent. | ![WPF Diagram displays Horizontal Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-left.jpg) |
+| | Right | Arranges the child nodes Horizontally at the Right of the Parent. | ![WPF Diagram displays Horizontally Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-right.jpg) |
+| | Center | Arranges the child nodes horizontally at the Center of the parent. | ![WPF Diagram displays Horizontal Orientation at Center Side](Automatic-Layouts_images/wpf-diagram-horizontal-orientation-at-center.jpg) |
+| Vertical | Left | Vertically arranges the children at the Left of the Parent. | ![WPF Diagram displays Vertical Orientation at Left Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-left.jpg) |
+| | Right | Vertically arranges the children at the Right of the Parent. | ![WPF Diagram displays Vertical Orientation at Right Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-right.jpg) |
+| | Alternate | Vertically arranges the children at both Left and Right of the Parent. | ![WPF Diagram displays Vertical Orientation at Both Side](Automatic-Layouts_images/wpf-diagram-vertical-orientation-at-both-side.jpg) |
 
 {% tabs %}
 {% highlight c# %}
@@ -307,7 +307,7 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![Organization Layout with Assistant](Automatic-Layouts_images/Automatic-Layouts_img10.png)
+![WPF Diagram displays Organization Layout with Assistant](Automatic-Layouts_images/wpf-diagram-organization-layout-with-assistant.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Organization%20Chart)
 
@@ -368,6 +368,6 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![Organization Layout from stencil](Automatic-Layouts_images/AutomaticLayout_Gif1.gif)
+![WPF Diagram with Organization Layout from Stencil](Automatic-Layouts_images/wpf-diagram-stencil-organization-layout.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/OrgChart%20with%20drag%20and%20dropped%20nodes)

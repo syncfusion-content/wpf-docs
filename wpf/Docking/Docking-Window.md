@@ -10,7 +10,7 @@ documentation: ug
 
 Docking windows is one of the state of DockingManager. Since `Dock` is the default value, so initially all the children stay as Docking Window
 
-![Docking Window](DockingWindow_images/DockingWindow_img1.jpeg)
+![WPF Docking Window](DockingWindow_images/wpf-docking-window.jpeg)
 
 ## Configuring window in Different Sides
 
@@ -60,7 +60,7 @@ DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Bottom);
 
 {% endtabs %}
 
-![Docking window in different sides](DockingWindow_images/DockingWindow_img2.jpeg)
+![WPF Docking Window with Different Sides](DockingWindow_images/wpf-docking-window-with-different-sides.jpeg)
 
 
 ## Docking window in various Targets 
@@ -119,7 +119,7 @@ DockingManager.SetSideInDockedMode(dockWindow5, DockSide.Tabbed);
 
 {% endtabs %}
 
-![Docking window in various targets](DockingWindow_images/DockingWindow_img3.jpeg)
+![WPF Docking Window with Various Targets](DockingWindow_images/wpf-docking-window-with-various-targets.jpeg)
 
 N> View [Sample](https://github.com/SyncfusionExamples/how-to-arrange-children-of-docking-containers-like-a-grid-with-3-column-two-row-and-cell-merging/tree/master/DockingManagerTest_C%23) in GitHub
 
@@ -157,7 +157,7 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 {% endtabs %}
 
-![Maximization feature](DockingWindow_images/DockingWindow_img4.jpeg)
+![WPF Docking Maximization Feature](DockingWindow_images/wpf-docking-maximization-feature.jpeg)
 
 
 ### Maximize Docking Window to full screen
@@ -181,7 +181,7 @@ SyncDockingManager.MaximizeMode = MaximizeMode.FullScreen;
 
 {% endtabs %}
 
-![Maximize docking window to full screen](DockingWindow_images/DockingWindow_img5.jpeg)
+![WPF Docking Window Maximize to Full Screen](DockingWindow_images/wpf-docking-window-maximize-to-full-screen.jpeg)
 
 
 ### Enabling Minimization feature
@@ -210,7 +210,7 @@ SyncDockingManager.MinimizeButtonEnabled = true;
 
 {% endtabs %}
 
-![Minimization feature](DockingWindow_images/DockingWindow_img6.jpeg)
+![WPF Docking Minimization Feature](DockingWindow_images/wpf-docking-minimization-feature.jpeg)
 
 ### Restrict Maximization or Minimization for a specific children
 
@@ -248,7 +248,7 @@ DockingManager.SetCanMaximize(Toolbox, false);
 
 {% endtabs %}
 
-![Restrict maximize or minimize for a specific children](DockingWindow_images/DockingWindow_img7.jpeg)
+![WPF Docking Min and Max Restriction for Specific Children](DockingWindow_images/wpf-docking-min-and-max-restriction-for-specific-children.jpeg)
 
 
 ## Hot Drag the window
@@ -314,7 +314,7 @@ DockingManager.SetNoHeader(SolutionExplorer, true);
 
 {% endtabs %}
 
-![Enabling or disabling the header visibility](DockingWindow_images/DockingWindow_img8.jpeg)
+![WPF Docking Header Visibility](DockingWindow_images/wpf-docking-header-visibility.jpeg)
 
 ## Custom context menu items for docking window
 
@@ -394,7 +394,7 @@ dockingManager.FloatWindowContextMenuItems.Add(menu2);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom context menu with sub items for docking window in DockingManager](DockingWindow_images\CustomDockContextMenuItems.png)
+![WPF Docking Custom Context Menu](DockingWindow_images\wpf-docking-custom-context-menu.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
 

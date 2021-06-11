@@ -10,7 +10,7 @@ documentation: ug
 
 Child window can be arranged as Tabbed windows by setting TargetName and side value as `Tabbed` using the property [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockItem.html#Syncfusion_Windows_Tools_Controls_DockItem_SideInDockedMode).
 
-![Tabbed window](TabbedWindow_images/TabbedWindow_img1.jpeg)
+![WPF Docking Tabbed Window](TabbedWindow_images/wpf-docking-tabbed-window.jpeg)
 
 
 ##  Tab alignments
@@ -19,7 +19,7 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 * DockTabAlignment as `Bottom`
 
-![Bottom dock](TabbedWindow_images/TabbedWindow_img2.jpeg)
+![WPF Docking Bottom TabAlignment](TabbedWindow_images/wpf-docking-bottom-tab-alignment.jpeg)
 
 
 * Setting DockTabAlignment as `Left`.
@@ -50,7 +50,7 @@ DockingManager1.DockTabAlignment = Dock.Left;
 {% endtabs %}
 
 
-![Left dock](TabbedWindow_images/TabbedWindow_img3.jpeg)
+![WPF Docking Left TabAlignment](TabbedWindow_images/wpf-docking-left-tab-alignment.jpeg)
 
 
 * Setting DockTabAlignment as `Right`
@@ -80,7 +80,7 @@ DockingManager1.DockTabAlignment = Dock.Right;
 {% endtabs %}
 
 
-![Right dock](TabbedWindow_images/TabbedWindow_img4.jpeg)
+![WPF Docking Right TabAlignment](TabbedWindow_images/wpf-docking-right-tab-alignment.jpeg)
 
 
 * Setting DockTabAlignment as `Top`
@@ -110,7 +110,7 @@ SyncDockingManager.DockTabAlignment = Dock.Top;
 
 {% endtabs %}
 
-![Top dock](TabbedWindow_images/TabbedWindow_img5.jpeg)
+![WPF Docking Top TabAlignment](TabbedWindow_images/wpf-docking-top-tab-alignment.jpeg)
 
 
 ## Closing a Tabbed window
@@ -226,7 +226,7 @@ private void DockingManager1_TabOrderChanged(object sender, TabOrderChangedEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Tabbed windows order changed by drag and drop](TabbedWindow_images/OrderingNotification.png)
+![WPF Docking Tabbed Window Order Changed](TabbedWindow_images/wpf-docking-tabbed-window-order-changed.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)
 
@@ -278,6 +278,6 @@ private void DockingManager1_TabOrderChanging(object sender, Syncfusion.Windows.
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting the tabbed window order changing via drag and drop](TabbedWindow_images/restrictorder.png)
+![WPF Docking Restrict Tabbed Window Reordering](TabbedWindow_images/wpf-docking-restrict-tabbed-window-reordering.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)

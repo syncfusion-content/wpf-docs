@@ -14,10 +14,10 @@ Modal Tab in Ribbon Control are used to display a collection of commands other t
 
 Print Preview is a Modal Tab which displays Print Preview related commands
 
-![Opening modal tab in the run time](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img1.jpeg)
+![WPF Ribbon displays ModelTab](CreatingRibbonModelTab_images/wpf-ribbon-model-tab.jpeg)
 
 
-![Displays modal tab](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img2.jpeg)
+![WPF Ribbon displays ModelTab](CreatingRibbonModelTab_images/wpf-ribbon-with-model-tab.jpeg)
 
 
 ## Adding modal tabs to an application
@@ -161,7 +161,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![ModalTab during simplified layout](CreatingRibbonModelTab_images/ModalTab_Simplified.png)
+![WPF Ribbon ModelTab with Simplified Layout](CreatingRibbonModelTab_images/wpf-ribbon-modeltab-simplified-layout.png)
 
 ## How to handle modal tabs in ribbon
 

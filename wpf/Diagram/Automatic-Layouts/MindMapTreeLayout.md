@@ -177,7 +177,7 @@ A mind map is a diagram that displays the nodes as a spider diagram that organiz
 {% endhighlight %}
 {% endtabs %}
 
-![MindMapTreeLayout](Automatic-Layouts_images/Mindmapdiagram.png)
+![WPF Diagram with MindMapTree Layout](Automatic-Layouts_images/wpf-diagram-mindmaptree-layout.png)
 
 ## Tree orientation in layout
 
@@ -203,7 +203,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![MindMapTreeLayout](Automatic-Layouts_images/Mindmap_orientation.gif)
+![WPF Diagram displays MindMapTreeLayout Direction in Both Direction](Automatic-Layouts_images/wpf-diagram-mindmap-in-both-side.gif)
 
 ## Arrange Layout in a balanced way
 
@@ -290,7 +290,7 @@ diagram.LayoutManager = new LayoutManager()
 ### Custom
 Specifies the mind-map branches should be arranged in a defined direction.
 
-![Split Mode](Automatic-Layouts_images/Mindmap_splitmode.gif)
+![WPF Diagram MindMapTreeLayout with SplitMode](Automatic-Layouts_images/wpf-diagram-mindmap-splitmode.gif)
 
 #### How to create custom MindMap
 
@@ -324,7 +324,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![CustomLayout](Automatic-Layouts_images/CustomLayout.png)
+![WPF Diagram MindMap with CustomLayout](Automatic-Layouts_images/wpf-diagram-mindmap-customlayout.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Mindmap%20Layout)
 
