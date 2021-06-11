@@ -63,7 +63,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 {% endtabs %}
 
-![SfChart with customized plot area](Area_images/Area_img3.jpeg)
+![Customizing Plot Area in WPF Chart](Area_images/wpf-chart-plot-area-customization.jpeg)
 
 
 ## Multiple Area 
@@ -213,7 +213,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![SfChart with multiple panes](Area_images/Area_img4.jpeg)
+![WPF Chart with Multiple Panes](Area_images/wpf-chart-multiple-panes.jpeg)
 
 
 ## Column Span and Row Span
@@ -354,7 +354,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
+![WPF Chart with Multiple Axes](Area_images/wpf-chart-multiple-axes.jpeg)
 
 ## Clone or copy the chart
 

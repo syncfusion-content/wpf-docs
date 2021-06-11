@@ -114,7 +114,7 @@ chart.SecondaryAxis = new NumericalAxis() { Header = "Values(In Tonnes)" };
 
 {% endtabs %}
 
-![Header support for ChartAxis in WPF](Axis_images/Axis_img1.jpeg)
+![WPF ChartAxis with Header](Axis_images/wpf-chart-axis-header.jpeg)
 
 
 **Header** **Customization**
@@ -195,7 +195,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Header customization for ChartAxis in WPF](Axis_images/Axis_img2.jpeg)
+![Customizing Header of WPF ChartAxis](Axis_images/wpf-chart-axis-header-customization.jpeg)
 
 
 **HeaderStyle**
@@ -275,7 +275,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![HeaderStyle for header support in WPF](Axis_images/Axis_img3.jpeg)
+![Changing Header Style in WPF ChartAxis](Axis_images/wpf-chart-axis-header-style.jpeg)
 
 ## Axis Labels
 
@@ -316,7 +316,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Positioning axis labels support in WPF](Axis_images/Axis_img4.jpeg)
+![Changing Axis Label Position in WPF Chart](Axis_images/wpf-chart-axis-label-position.jpeg)
 
 
 **LabelRotationAngle**
@@ -350,7 +350,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis Rotation angle support in WPF Chart](Axis_images/Axis_img5.jpeg)
+![WPF Chart displays Axis Rotation Angle](Axis_images/wpf-chart-axis-rotation-angle.jpeg)
 
 **Custom** **Labels**
 
@@ -408,7 +408,7 @@ chart.PrimaryAxis = axis;
 
 {% endtabs %}
 
-![Axis label customization support in WPF](Axis_images/Axis_img6.jpeg)
+![WPF Chart with Custom Axis Label](Axis_images/wpf-chart-custom-axis-label.jpeg)
 
 
 You can also directly bind the collection of labels to the [`LabelsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsSource) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
@@ -479,7 +479,7 @@ public class LabelItem
 
 {% endtabs %}
 
-![Axis label customization support in WPF](Axis_images/Axis_img7.jpeg)
+![Customizing Axis Label in WPF Chart](Axis_images/wpf-chart-axis-label-customization.jpeg)
 
 
 **Label** **Formatting**
@@ -517,7 +517,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis labels formatting support in WPF Chart](Axis_images/Axis_img8.jpeg)
+![WPF Chart with DateTimeAxis Label](Axis_images/wpf-chart-axis-label-formatting.jpeg)
 
 
 **TimeSpanAxis**
@@ -547,7 +547,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 
 {% endtabs %}
 
-![Axis labels formatting support in WPF Chart](Axis_images/Axis_img9.jpeg)
+![WPF Chart with TimeSpanAxis Label](Axis_images/wpf-chart-time-span-axis-label.jpeg)
 
 
 **NumericalAxis**
@@ -577,7 +577,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis labels formatting support in WPF Chart](Axis_images/Axis_img10.jpeg)
+![WPF Chart with NumericalAxis Label](Axis_images/wpf-chart-numerical-axis-label.jpeg)
 
 
 **Adding** **Units** **to** **Labels**
@@ -629,7 +629,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Adding units to axis labels in WPF Chart](Axis_images/Axis_img11.jpeg)
+![Adding Units to Before Axis Labels in WPF Chart](Axis_images/wpf-chart-units-in-before-axis-label.jpeg)
 
 
 **PostfixLabelTemplate**
@@ -675,7 +675,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Adding units to axis labels in WPF Chart](Axis_images/Axis_img12.jpeg)
+![Adding Units to After Axis Labels in WPF Chart](Axis_images/wpf-chart-units-in-after-axis-label.jpeg)
 
 
 **LabelTemplate**
@@ -739,7 +739,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![LabelTemplate support for ChartAxis in WPF](Axis_images/Axis_img13.jpeg)
+![WPF ChartAxis with Label](Axis_images/wpf-chart-axis-label.jpeg)
 
 
 **LabelExtent**
@@ -773,7 +773,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![LabelExtent support for ChartAxis in WPF](Axis_images/Axis_img14.jpeg)
+![WPF Chart displays Space between Axis Label](Axis_images/wpf-chart-space-between-axis-label.jpeg)
 
 
 **Smart** **Axis** **Labels**
@@ -816,7 +816,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Smart axis labels support in WPF Chart](Axis_images/Axis_img15.jpeg)
+![WPF Chart without Smart Axis Labels](Axis_images/wpf-chart-without-smart-axis-label.jpeg)
 
 
 **Hide**
@@ -848,7 +848,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Smart axis labels support in WPF Chart](Axis_images/Axis_img16.jpeg)
+![Hide Smart Axis Labels in WPF Chart](Axis_images/wpf-chart-hide-smart-axis-label.jpeg)
 
 
 **MultipleRows**
@@ -882,7 +882,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Smart axis labels support in WPF Chart](Axis_images/Axis_img17.jpeg)
+![WPF Chart displays MultipleRows Smart Axis Labels](Axis_images/wpf-chart-multiple-rows-chart-axis-label.jpeg)
 
 
 **Auto**
@@ -912,7 +912,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Smart axis labels support in WPF Chart](Axis_images/Axis_img18.jpeg)
+![WPF Chart displays Rotated Axis Labels](Axis_images/wpf-chart-rotated-axis-label.jpeg)
 
 
 **EdgeLabelsDrawingMode**
@@ -955,7 +955,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis edge label positioning support in WPF Chart](Axis_images/Axis_img19.jpeg)
+![WPF Chart displays Axis Edge Label in Center Position](Axis_images/wpf-chart-axis-edge-label-in-center.jpeg)
 
 **Shift**
 
@@ -984,7 +984,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis edge label positioning support in WPF Chart](Axis_images/Axis_img20.jpeg)
+![WPF Chart displays Axis Edge Label from Left to Right Position](Axis_images/wpf-chart-shift-axis-edge-label.jpeg)
 
 
 **Hide**
@@ -1016,7 +1016,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis edge label positioning support in WPF Chart](Axis_images/Axis_img21.jpeg)
+![Hide Axis Edge Label Position in WPF Chart](Axis_images/wpf-chart-hide-axis-edge-label-position.jpeg)
 
 
 **Fit**
@@ -1048,14 +1048,14 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis edge label positioning support in WPF Chart](Axis_images/Axis_img22.jpeg)
+![Fit Axis Edge Label Position in WPF Chart](Axis_images/wpf-chart-fit-axis-label-position.jpeg)
 
 
 **EdgeLabelsVisibilityMode**
 
 The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) property. By default the [`Default`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsVisibilityMode) while zooming.
 
-![Axis edge label visibility support in WPF Chart](Axis_images/Axis_img23.jpeg)
+![WPF Chart displays Axis Edge Label](Axis_images/wpf-chart-axis-edge-label.jpeg)
 
 
 **Always** **Visible**
@@ -1093,7 +1093,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis edge label visibility support in WPF Chart](Axis_images/Axis_img24.jpeg)
+![WPF Chart displays Axis Edge Label](Axis_images/wpf-chart-always-visible-edge-axis-label.jpeg)
 
 
 **Visible**
@@ -1127,7 +1127,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis edge label visibility support in WPF Chart](Axis_images/Axis_img25.jpeg)
+![WPF Chart displays Axis Edge Label](Axis_images/wpf-chart-visible-edge-axis-label.jpeg)
 
 
 **Axis Label Border**
@@ -1170,7 +1170,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis labels border support in WPF Chart](Axis_images/label1.png)
+![WPF Chart displays Axis Labels Border](Axis_images/wpf-chart-label-axis-border.png)
 
 The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderBrushProperty) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderWidthProperty) properties of chart axis; it can be set as shown in the following code example.
 
@@ -1220,7 +1220,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Axis labels border support in WPF Chart](Axis_images/label2.png)
+![Customizing Axis Labels Border in WPF Chart](Axis_images/wpf-chart-axis-label-border-customization.png)
 
 
 ## Grid lines
@@ -1256,7 +1256,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Gridlines customization support in WPF Chart](Axis_images/Axis_img26.jpeg)
+![WPF Chart without Gridlines](Axis_images/wpf-chart-without-gridlines.jpeg)
 
 
 Style can also be applied to Major and Minor Gridlines using [`MajorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MajorGridLineStyle) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorGridLineStyle) properties.
@@ -1306,7 +1306,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Gridlines customization support in WPF Chart](Axis_images/Axis_img27.jpeg)
+![WPF Chart with Gridlines](Axis_images/wpf-chart-gridlines.jpeg)
 
 
 **MinorGridLineStyle**
@@ -1360,7 +1360,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Gridlines customization support in WPF Chart](Axis_images/Axis_img28.jpeg)
+![WPF Chart displays Minor Gridlines](Axis_images/wpf-chart-minor-gridlines.jpeg)
 
 
 ## Tick lines
@@ -1396,7 +1396,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_images/Axis_img29.jpeg)
+![Changing Ticklines Thickness in WPF Chart](Axis_images/wpf-chart-ticklines-thickness.jpeg)
 
 
 **Positioning** **the** **Major** **Tick** **Lines**
@@ -1430,7 +1430,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines positioning support in WPF Chart](Axis_images/Axis_img30.jpeg)
+![WPF Chart displays Ticklines Inside Area Pane](Axis_images/wpf-chart-ticklines-inside-area-pane.jpeg)
 
 
 **Customization**
@@ -1484,7 +1484,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_images/Axis_img31.jpeg)
+![WPF Chart displays Ticklines at Outside Area Pane](Axis_images/wpf-chart-ticklines-at-outside-area-pane.jpeg)
 
 
 **MinorTickLines**
@@ -1522,7 +1522,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_images/Axis_img32.jpeg)
+![WPF Chart displays Minot Ticklines](Axis_images/wpf-chart-minor-ticklines.jpeg)
 
 
 **Positioning** **the** **minor** **tick** **lines**
@@ -1560,7 +1560,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines positioning support in WPF Chart](Axis_images/Axis_img33.jpeg)
+![WPF Chart displays Minor Ticklines Inside Pane Area](Axis_images/wpf-chart-minor-ticklines-inside-pane-area.jpeg)
 
 
 **Customization** **of** **Minor** **Ticklines**
@@ -1598,7 +1598,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_images/Axis_img34.jpeg)
+![WPF Chart displays Minor Ticklines at Outside Pane Area](Axis_images/wpf-chart-minor-ticklines-at-outside-pane-area.jpeg)
 
 Styling customization of minor tick lines can be defined using [`MinorTickLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_MinorTickLineStyle) property. The following code example and image demonstrates the style for minor tick lines.
 
@@ -1657,7 +1657,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Ticklines customization support in WPF Chart](Axis_images/Axis_img35.jpeg)
+![Customizing Minor Ticklines in WPF Chart](Axis_images/wpf-chart-minor-ticklines-customization.jpeg)
 
 
 N> For category axis, small tick lines is not applicable since it is rendered based on index positions.
@@ -1752,7 +1752,7 @@ The [`RangeStyles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts
 
 {% endtabs %}
 
-![RangeStyle support in WPF Chart](Axis_images/RangeStyle.JPG)
+![Customizing Range Style in WPF Chart](Axis_images/wpf-chart-axis-style-customization.JPG)
 
 ## AxisLine
 
@@ -1801,7 +1801,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![AxisLine customization support in WPF Chart](Axis_images/Axis_img36.jpeg)
+![Customizing AxisLine Style in WPF Chart](Axis_images/wpf-chart-axis-line-style-customization.jpeg)
 
 
 **Applying** **Padding** **to** **the** **Axis** **line**
@@ -1835,7 +1835,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Padding support for axis line in WPF](Axis_images/Axis_img37.jpeg)
+![WPF Chart with Padding for Axis Line](Axis_images/wpf-chart-padding-for-axis-line.jpeg)
 
 
 ## Origin Customization
@@ -1875,14 +1875,14 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Origin customization support in WPF](Axis_images/Axis_img38.jpeg)
+![WPF Chart with Origin](Axis_images/wpf-chart-origin.jpeg)
 
 
 **Positioning** **the** **Header** 
 
 The following image demonstrates the default positioning of header when the axis is moved inside based on the origin value.
 
-![Header positioning support in WPF](Axis_images/Axis_img39.jpeg)
+![Changing Origin Header Position in WPF Chart](Axis_images/wpf-chart-origin-header-position.jpeg)
 
 
 If you want to position the header outside of the chart area then you can set the [`Far`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AxisHeaderPosition.html) option in [`HeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderPosition) property.
@@ -1924,7 +1924,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Header positioning support in WPF](Axis_images/Axis_img40.jpeg)
+![Changing Origin Header Position in WPF Chart](Axis_images/wpf-chart-origin-header.jpeg)
 
 
 **Adding** **Origin** **line**
@@ -1960,7 +1960,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![OriginLine support in WPF](Axis_images/Axis_img41.jpeg)
+![WPF Chart displays OriginLine](Axis_images/wpf-chart-origin-line.jpeg)
 
 **Customizing the OriginLine**
 
@@ -2019,7 +2019,7 @@ chart.SecondaryAxis = numericalAxis;
 
 {% endtabs %}
 
-![OriginLine customization support in WPF](Axis_images/originstyle.png)
+![Customizing OriginLine in WPF Chart](Axis_images/wpf-chart-origin-style.png)
 
 ## Types of Axis
 
@@ -2070,7 +2070,7 @@ chart.SecondaryAxis = new NumericalAxis();
 
 {% endtabs %}
 
-![NumericalAxis support in WPF Chart](Axis_images/Axis_img42.jpeg)
+![WPF Chart with NumericalAxis](Axis_images/wpf-chart-numerical-axis.jpeg)
 
 
 **Customizing** **the** **NumericalAxis** **Range**
@@ -2108,7 +2108,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WPF Chart](Axis_images/Axis_img43.jpeg)
+![Customizing NumericalAxis Range in WPF Chart](Axis_images/wpf-chart-numerical-axis-range.jpeg)
 
 
 N> If  minimum or maximum value is set, the other value is calculated by default internally.
@@ -2144,7 +2144,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis customization support in WPF Chart](Axis_images/Axis_img44.jpeg)
+![WPF Chart displays NumericalAxis Range Start from Zero](Axis_images/wpf-chart-numeric-axis-range.jpeg)
 
 
 N> By default, Range is calculated between the minimum and maximum value of the data points.
@@ -2175,7 +2175,7 @@ chart.PrimaryAxis = new CategoryAxis();
 
 {% endtabs %}
 
-![CategoryAxis support in WPF Chart](Axis_images/Axis_img45.jpeg)
+![WPF Chart with CategoryAxis](Axis_images/wpf-chart-category-axis.jpeg)
 
 
 **LabelPlacement**
@@ -2209,7 +2209,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Axis label placement support in WPF Chart](Axis_images/Axis_img46.jpeg)
+![WPF Chart displays CategoryAxis Label between Ticks](Axis_images/wpf-chart-category-axis-label-between-ticks.jpeg)
 
 
 **IsIndexed**
@@ -2245,11 +2245,11 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The following screenshot illustrates the series with IsIndexed value as False.
 
-![Axis label IsIndexed support in WPF Chart](Axis_images/isindexed_false.png)
+![WPF Chart displays Combined Plots with Same Axis Label](Axis_images/wpf-char-combined-plots-with-axis-label.png)
 
 By default, the IsIndexed property value is true, and it is shown in following screenshot.
 
-![Axis label IsIndexed support in WPF Chart](Axis_images/isindexed_true.png)
+![WPF Chart displays Separated Plots with different Axis Label](Axis_images/wpf-chart-separate-plots-with-axis-label.png)
 
 N> This feature is not applicable for Accumulation series, ErrorBarSeries, RadarSeries, and PolarSeries.
 
@@ -2293,7 +2293,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/isindexed_false.png)
+![WPF Chart displays Combined Plots with Same Axis Label](Axis_images/wpf-char-combined-plots-with-axis-label.png)
 
 **Average**
 
@@ -2327,7 +2327,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/Average.png)
+![WPF Chart displays Plots based on Average Values](Axis_images/wpf-chart-average.png)
 
 **Count**
 
@@ -2361,7 +2361,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/Count.png)
+![WPF Chart displays Plots based on Axis Count](Axis_images/wpf-chart-plots-based-on-axis-count.png)
 
 **Max**
 
@@ -2395,7 +2395,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/Max.png)
+![WPF Chart displays Plots based on Maximum Value of Axis](Axis_images/wpf-chart-plots-based-on-max-axis-value.png)
 
 **Min**
 
@@ -2429,7 +2429,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/Min.png)
+![WPF Chart displays Plots based on Minimum Value of Axis](Axis_images/wpf-chart-plots-based-on-min-axis-value.png)
 
 **Sum**
 
@@ -2463,7 +2463,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![AggregateFunctions support in WPF](Axis_images/Sum.png)
+![WPF Chart displays Plots based on Sum Value of Axis](Axis_images/wpf-chart-plots-based-on-sum-axis-value.png)
 
 ### DateTimeAxis
 
