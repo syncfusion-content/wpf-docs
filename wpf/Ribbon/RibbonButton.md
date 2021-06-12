@@ -134,7 +134,7 @@ documentation: ug
 
  {% endtabs %}
 
- ![Various size forms of RibbonButton](RibbonButton_images/RibbonButton_SizeForm.png)
+ ![WPF Ribbon Button Various Size Forms](RibbonButton_images/wpf-ribbon-button-various-size-forms.png)
 
 N> When **simplified** layout is set, [`RibbonButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
@@ -248,7 +248,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
  {% endtabs %}
 
- ![Image set for RibbonButton using IconTemplateSelector property](RibbonButton_images/RibbonButton_IconTemplateSelector.png)
+ ![WPF Ribbon Button IconTemplateSelector](RibbonButton_images/wpf-ribbon-button-icon-template-selector.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -381,7 +381,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set for RibbonButton using IconTemplate property](RibbonButton_images/RibbonButton_IconTemplate.png)
+ ![WPF Ribbon Button IconTemplate](RibbonButton_images/wpf-ribbon-button-icon-template.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -518,10 +518,10 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set using icon property in normal layout](RibbonButton_images/RibbonButton_ImageNormal.png)
+ ![WPF Ribbon Button Normal Image Layout](RibbonButton_images/wpf-ribbon-button-normal-image-layout.png)
  *Normal layout*
 
- ![Image set using icon property in simplified layout](RibbonButton_images/RibbonButton_ImageSimplified.png)
+ ![WPF Ribbon Button Simplified Image Layout](RibbonButton_images/wpf-ribbon-button-simplified-image-layout.png)
  *Simplified layout*
 
 ### Setting vector image 
@@ -779,10 +779,10 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
  {% endtabs %}
 
 
- ![Image set using VectorImage property in normal layout](RibbonButton_images/RibbonButton_VectorImageNormal.png)
+ ![WPF Ribbon Button VectorImage in Normal Layout](RibbonButton_images/wpf-ribbon-button-vector-image-in-normal-layout.png)
  *Normal layout* 
 
- ![Image set using VectorImage property in simplified layout](RibbonButton_images/RibbonButton_VectorImageSimplified.png)
+ ![WPF Ribbon Button VectorImage in Simplified Layout](RibbonButton_images/wpf-ribbon-button-vector-image-in-simplified-layout.png)
  *Simplified layout*
 
 ## Add RibbonButton to the simplified layout
@@ -914,7 +914,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![RibbonButton during simplified layout](RibbonButton_images/RibbonButton_ImageSimplified.png)
+ ![WPF Ribbon Button during Simplified Layout](RibbonButton_images/wpf-ribbon-button-during-simplified-layout.png)
 
  When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonButton can be ignored as it will be resized automatically to the standard width and height. If the RibbonButton is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

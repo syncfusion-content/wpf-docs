@@ -54,7 +54,7 @@ _ribbonBar1.Items.Add(_ribbonMenuItem)
 
 {% endtabs %}
 
-![Adding ribbon menu item](RibbonMenuItem_images/RibbonMenuItem_img1.jpg)
+![WPF Ribbon Menu Item Header](RibbonMenuItem_images/wpf-ribbon-menuItem-header.jpg)
 
 
 ## RibbonMenuItem icon
@@ -108,7 +108,7 @@ RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem() { Header = "NEW1", Width =
 
 {% endtabs %}
 
-![Setting icon for menu item](RibbonMenuItem_images/RibbonMenuItem_img2.jpg)
+![WPF Ribbon Menu Item Icon](RibbonMenuItem_images/wpf-ribbon-menuItem-icon.jpg)
 
 ## Add MenuItem to the simplified layout
 
@@ -177,7 +177,7 @@ SkinStorage.SetVisualStyle(this, "Office2013");
 
 {% endtabs %}
 
-![RibbonMenuItem during simplified layout](RibbonMenuItem_images/RibbonMenuItem_Simplified.png)
+![WPF Ribbon MenuItem in Simplified Layout](RibbonMenuItem_images/wpf-ribbon-menuItem-in-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonMenuItem can be ignored as it will be resized automatically to the standard width and height. If the RibbonMenuItem is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

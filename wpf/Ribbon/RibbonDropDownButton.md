@@ -67,7 +67,7 @@ _dropDownButton.Items.Add(_dropDownMenuItem2)
 {% endtabs %}
 
 
-![Adding DropDownMenuItems to the DropDownButton](DropDownButton_images/DropDownButton_img1.jpg)
+![WPF Ribbon Adding DropDownMenuItems to the DropDownButton](DropDownButton_images/wpf-ribbon-adding-dropdownmenuitems-to-the-dropdownbutton.jpg)
 
 
 ## Add DropDownMenuItem to DropDownMenuGroup
@@ -144,7 +144,7 @@ _dropDownMenuGroup2.Items.Add(_dropDownMenuItem4)
 
 {% endtabs %}
 
-![Adding DropDownMenuItems to the DropDownMenuGroup](DropDownButton_images/DropDownButton_img2.jpg)
+![WPF Ribbon Adding DropDownMenuItems to the DropDownMenuGroup](DropDownButton_images/wpf-ribbon-adding-dropdownmenuitems-to-the-dropdownmenugroup.jpg)
 
 
 ## Set various sizes for DropDownButton
@@ -207,7 +207,7 @@ _ribbonBar2.Items.Add(_dropDownButton3)
 
 {% endtabs %}
 
-![Various size forms in DropDownButton](DropDownButton_images/DropDownButton_img3.jpg)
+![WPF Ribbon Various Size Forms in DropDownButton](DropDownButton_images/wpf-ribbon-various-size-forms-in-dropdownbutton.jpg)
 
 N>When **simplified** layout is set, [`DropDownButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
@@ -314,7 +314,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
  {% endtabs %}
 
- ![Image set for DropDownButton using IconTemplateSelector property](DropDownButton_images/DropDownButton_IconTemplateSelector.png)
+ ![WPF Ribbon DropDownButton IconTemplateSelector](DropDownButton_images/wpf-ribbon-dropdownbutton-icontemplateselector.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -424,7 +424,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set for DropDownButton using IconTemplate property](DropDownButton_images/DropDownButton_IconTemplate.png)
+ ![WPF Ribbon DropDownButton IconTemplate](DropDownButton_images/wpf-ribbon-dropdownbutton-icontemplate.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -529,10 +529,10 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![DropDownButton image during normal layout](DropDownButton_images/RibbonDropDownButton_Icons.png)
+![WPF Ribbon DropDownButton Normal Image Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-normal-image-layout.png)
 *Normal layout*
 
-![DropDownButton image during simplified layout](DropDownButton_images/RibbonDropDownButton_IconsSimplified.png)
+![WPF Ribbon DropDownButton Simplified Image Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-simplified-image-layout.png)
 *Simplified layout*
 
 ### Setting vector image 
@@ -783,10 +783,10 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![DropDownButton vector image during normal layout](DropDownButton_images/RibbonDropDownButton_Icons.png)
+![WPF Ribbon DropDownButton VectorImage in Normal Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-normal-layout.png)
 *Normal layout*
 
-![DropDownButton vector image during simplified layout](DropDownButton_images/RibbonDropDownButton_IconsSimplified.png)
+![WPF Ribbon DropDownButton VectorImage in Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-simplified-layout.png)
 *Simplified layout*
 
 ## Add DropDownButton to the simplified layout
@@ -886,7 +886,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![DropDownButton during simplified layout](DropDownButton_images/RibbonDropDownButton_IconsSimplified.png)
+![WPF Ribbon DropDownButton during Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the DropDownButton can be ignored as it will be resized automatically to the standard width and height. If the DropDownButton is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 
