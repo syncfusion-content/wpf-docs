@@ -886,7 +886,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![WPF Ribbon DropDownButton during Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-simplified-layout.png)
+![WPF Ribbon DropDownButton during Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-simplified-image-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the DropDownButton can be ignored as it will be resized automatically to the standard width and height. If the DropDownButton is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

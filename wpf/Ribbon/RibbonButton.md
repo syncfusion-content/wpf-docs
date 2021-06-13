@@ -914,7 +914,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![WPF Ribbon Button during Simplified Layout](RibbonButton_images/wpf-ribbon-button-during-simplified-layout.png)
+ ![WPF Ribbon Button during Simplified Layout](RibbonButton_images/wpf-ribbon-button-simplified-image-layout.png)
 
  When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonButton can be ignored as it will be resized automatically to the standard width and height. If the RibbonButton is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 
