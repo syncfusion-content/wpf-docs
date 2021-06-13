@@ -11,7 +11,7 @@ documentation: ug
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog opens upon triggering the Print button.
 
-![PrintDialog Window Image](Concept-and-Features_images/Concept-and-Features_img1.png)
+![WPF PDF Viewer PrintDialog Window](Concept-and-Features_images/wpf-pdf-viewer-print-dialog-window.png)
 
 N> 
 * PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
@@ -186,11 +186,11 @@ pdfviewer1.PrinterSettings.PageOrientation = PdfViewerPrintOrientation.Landscape
 
 PDF viewer allows you to set the custom document name to be displayed when printing the PDF document using the [DocumentName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_DocumentName) property that is available in the [PrinterSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrinterSettings). You can either set the original file name or a custom text to the property for display. Setting the [DocumentName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_DocumentName) property will affect the Document name details in the print status dialog.
 
-![Print Status Dialog Image](printing-images/status_dialog.png)
+![WPF PDF Viewer Print Status Dialog](printing-images/wpf-pdf-viewer-print-status-dialog.png)
 
 The [DocumentName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_DocumentName) property will also affect the Document name details in the print queue information window.
 
-![Print Queue Image](printing-images/print_queue.png)
+![WPF PDF Viewer Print Queue](printing-images/wpf-pdf-viewer-print-queue.png)
 
 The following code shows how to set the original file name to the [DocumentName](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_DocumentName) property.
 
@@ -236,7 +236,7 @@ namespace PdfViewer
 
 PDF Viewer allows you to hide the following print status dialog when printing the PDF files by setting the value `false` to the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property that is available in the [PrinterSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrinterSettings).
 
-![Print Status Dialog Image](printing-images/status_dialog.png)
+![WPF PDF Viewer Hide Print Status Dialog](printing-images/wpf-pdf-viewer-hide-print-status-dialog.png)
 
 It will be helpful if no UI interactions are required when printing. The following code shows how to hide the print status dialog using the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property.
 

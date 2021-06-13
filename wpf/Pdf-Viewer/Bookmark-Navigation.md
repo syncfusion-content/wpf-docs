@@ -18,7 +18,7 @@ PDF Viewer control allows users to navigate to the bookmarks present in the load
 3.	To jump to a specific section, click its name in the bookmark pane.
 4.	If the bookmark has some children, you can explore them by clicking on the “+” button to the left of it.
 
-![Bookmark Button](Bookmark_Navigation_images/Bookmark_Navigation_images2.png)  
+![WPF PDF Viewer Bookmark Button](Bookmark_Navigation_images/wpf-pdf-viewer-bookmark-button.png)  
 
 ## Programmatically navigate to a bookmark destination
 
@@ -114,4 +114,4 @@ pdfViewerControl.IsBookmarkEnabled = false
 
 The following screenshot shown the Bookmark navigation in `PdfViewerControl`,
 
-![Bookmark Navigation](Bookmark_Navigation_images/Bookmark_Navigation_images1.png)
+![WPF PDF Viewer Enabling and Disabling Bookmark Feature](Bookmark_Navigation_images/wpf-pdf-viewer-enabling-and-disabling-bookmark-feature.png)

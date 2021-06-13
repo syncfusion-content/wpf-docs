@@ -17,17 +17,17 @@ Use the following steps to organize the PDF page(s) in `PdfViewerControl`:
 
 2. You can rotate or delete a specific page using context menu that appears when hovering the mouse over the pages.
 
-	![Page toolbar](OrganizePages_Images/OrganizePages_Image_1.png)
+	![WPF PDF Viewer Page Toolbar](OrganizePages_Images/wpf-pdf-viewer-page-toolbar.png)
 
 3. You can rotate or delete multiple pages using the organize pages toolbar.
 
-	![Organize Pages toolbar](OrganizePages_Images/OrganizePages_Image_2.png)
+	![WPF PDF Viewer Organize Pages Toolbar](OrganizePages_Images/wpf-pdf-viewer-organize-pages-toolbar.png)
 
 	N> You can use Ctrl/Shift keys to select multiple pages. Also, you can select all pages using Ctrl+A shortcut key. You cannot delete all the pages from the document. 
 
 4. You can rearrange the page(s) by dragging and dropping them.
 
-	![Rearrange pages](OrganizePages_Images/OrganizePages_Image_3.png)
+	![WPF PDF Viewer Rearrange Pages](OrganizePages_Images/wpf-pdf-viewer-rearrange-pages.png)
 
 ## Rotating PDF page(s)
 

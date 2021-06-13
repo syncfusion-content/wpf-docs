@@ -11,7 +11,7 @@ documentation: ug
 
 The thumbnail navigation support in PDF viewer allows users to view a miniature preview of the PDF pages for fast scrolling and easy navigation purpose.
 
-![Thumbnail navigation](Thumbnail_images\Thumbnail-Navigation_1.png)
+![WPF PDF Viewer Thumbnail Navigation](Thumbnail_images\wpf-pdf-viewer-thumbnail-navigation.png)
 
 ## Displaying page thumbnails
 
@@ -45,7 +45,7 @@ End Sub
 
 Page thumbnails size is enlarged and reduced using the zoom out and zoom in buttons in the Page Thumbnails pane, and also using the magnification slider. 
 
-![Thumbnail navigation](Thumbnail_images\Thumbnail-Navigation_2.png)
+![WPF PDF Viewer Resizing the Thumbnail Navigation](Thumbnail_images\wpf-pdf-viewer-resizing-the-thumbnail-navigation.png)
 
 ## Disabling thumbnails 
 
