@@ -313,7 +313,7 @@ namespace TemplateSupport
 
 {% endtabs %}
 
-![Image set for RibbonButton using IconTemplate property](SimpleMenuButton_images/IconTemplateSupport.png)
+![WPF Ribbon SimpleMenuButton IconTemplate](SimpleMenuButton_images/wpf-ribbon-simplemenubutton-icontemplate.png)
 
 ### Setting image path
 
@@ -405,7 +405,7 @@ namespace TemplateSupport
 
 {% endtabs %}
 
-![Image set using Icon property](SimpleMenuButton_images/Icon.png)
+![WPF Ribbon SimpleMenuButton Image Path](SimpleMenuButton_images/wpf-ribbon-simplemenubutton-image-path.png)
 
 
 

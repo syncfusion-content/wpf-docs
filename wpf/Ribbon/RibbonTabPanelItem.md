@@ -49,7 +49,7 @@ _ribbon.TabPanelItem = _ribbonButton
  
 {% endtabs %}
 
-![Setting TabPanelItem to the ribbon](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpg)
+![WPF Ribbon TabPanelItem](RibbonTabPanelItem_images/wpf-ribbon-tabpanelitem.jpg)
 
 N> 
 Ribbon control supports TabPanelItem for both normal and simplified layout, where the simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact viewing of the content. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).

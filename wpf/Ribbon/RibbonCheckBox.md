@@ -57,7 +57,7 @@ ribbonBar2.Items.Add(ribbonCheckBox)
 
 {% endtabs %}
 
-![Output](RibbonCheckBox_images/RibbonCheckBox_img1.jpg)
+![WPF Ribbon CheckBox](RibbonCheckBox_images/wpf-ribbon-checkbox.jpg)
 
 ## Add CheckBox to the simplified layout
 
@@ -122,7 +122,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonCheckBox during simplified layout](RibbonCheckBox_images/RibbonCheckBox_Simplified.png)
+![WPF Ribbon CheckBox in Simplified Layout](RibbonCheckBox_images/wpf-ribbon-checkbox-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonCheckBox can be ignored as it will be resized automatically to the standard width and height. If the RibbonCheckBox is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

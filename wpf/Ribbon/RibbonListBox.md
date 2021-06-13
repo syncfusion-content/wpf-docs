@@ -69,7 +69,7 @@ _ribbonBar2.Items.Add(_ribbonListBox)
 
 {% endtabs %}
 
-![Adding ribbon list box](RibbonListBox_images/RibbonListBox_img1.jpg)
+![WPF Ribbon ListBox](RibbonListBox_images/wpf-ribbon-listbox.jpg)
 
 ## Add ListBox to the simplified layout
 
@@ -144,7 +144,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonListBox during simplified layout](RibbonListBox_images/RibbonListBox_Simplified.png)
+![WPF Ribbon ListBox in Simplified Layout](RibbonListBox_images/wpf-ribbon-listbox-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonListBox can be ignored as it will be resized automatically to the standard width and height. If the RibbonListBox is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 
