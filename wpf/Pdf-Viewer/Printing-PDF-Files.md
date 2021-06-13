@@ -236,7 +236,7 @@ namespace PdfViewer
 
 PDF Viewer allows you to hide the following print status dialog when printing the PDF files by setting the value `false` to the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property that is available in the [PrinterSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrinterSettings).
 
-![WPF PDF Viewer Hide Print Status Dialog](printing-images/wpf-pdf-viewer-hide-print-status-dialog.png)
+![WPF PDF Viewer Hide Print Status Dialog](printing-images/wpf-pdf-viewer-print-status-dialog.png)
 
 It will be helpful if no UI interactions are required when printing. The following code shows how to hide the print status dialog using the [ShowPrintStatusDialog](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerPrinterSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerPrinterSettings_ShowPrintStatusDialog) property.
 
