@@ -157,7 +157,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![RadialLayout](Automatic-Layouts_images/Automatic-Layouts_img9.png)
+![WPF Diagram with RadialLayout](Automatic-Layouts_images/wpf-diagram-radial-layout.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Radial%20Tree)
 

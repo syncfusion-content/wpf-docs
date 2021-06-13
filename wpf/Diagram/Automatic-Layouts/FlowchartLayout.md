@@ -18,21 +18,21 @@ Different flowchart symbols have different meanings that are used to represent d
 
 |Symbol|Built-in resource key in SfDiagram|Description|
 |---|---|---|
-|![Terminator](Automatic-Layouts_images/Automatic-Layouts_Terminator.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
-|![Data](Automatic-Layouts_images/Automatic-Layouts_Data.png)|Data|Indicates data input or output for a process.|
-|![Process](Automatic-Layouts_images/Automatic-Layouts_Process.png)|Process|Represents an operation or set of operations and data manipulations.|
-|![Decision](Automatic-Layouts_images/Automatic-Layouts_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
-|![Document](Automatic-Layouts_images/Automatic-Layouts_Document.png)|Document|Represents a single document or report in the process.|
-|![SubProcess](Automatic-Layouts_images/Automatic-Layouts_Predefinedprocess.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
-|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
-|![StoredData](Automatic-Layouts_images/Automatic-Layouts_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
-|![ManualInput](Automatic-Layouts_images/Automatic-Layouts_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
-|![ManualOperation](Automatic-Layouts_images/Automatic-Layouts_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
-|![Preparation](Automatic-Layouts_images/Automatic-Layouts_Preparation.png)|Preparation|Represents a setup or initialization process to another step in the process.|
-|![OnPageReference](Automatic-Layouts_images/Automatic-Layouts_OnPageReference.png)|OnPageReference|Represents a pair of labeled connectors used to link long or confusing line on a flowchart.|
-|![OffPageReference](Automatic-Layouts_images/Automatic-Layouts_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
-|![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
-|![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
+|![WPF Diagram displays Terminator Symbol](Automatic-Layouts_images/wpf-diagram-terminator-symbol.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
+|![WPF Diagram displays Data Symbol](Automatic-Layouts_images/wpf-diagram-data-symbol.png)|Data|Indicates data input or output for a process.|
+|![WPF Diagram displays Process Symbol](Automatic-Layouts_images/wpf-diagram-process-symbol.png)|Process|Represents an operation or set of operations and data manipulations.|
+|![WPF Diagram displays Decision Symbol](Automatic-Layouts_images/wpf-diagram-decision-symbol.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
+|![WPF Diagram displays Document Symbol](Automatic-Layouts_images/wpf-diagram-document-symbol.png)|Document|Represents a single document or report in the process.|
+|![WPF Diagram displays SubProcess Symbol](Automatic-Layouts_images/wpf-diagram-subprocess-symbol.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
+|![WPF Diagram displays DirectData Symbol](Automatic-Layouts_images/wpf-diagram-directdata-symbol.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
+|![WPF Diagrma displays StoredData Symbol](Automatic-Layouts_images/wpf-diagram-storeddata-symbol.png)|StoredData|Represents a step where data get stored within a process.|
+|![WPF Diagram displays ManualInput Symbol](Automatic-Layouts_images/wpf-diagram-manualinput-layout.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
+|![WPF Diagram displays ManualOperation Symbol](Automatic-Layouts_images/wpf-diagram-manualoperation-symbol.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
+|![WPF Diagram displays Preparation Symbol](Automatic-Layouts_images/wpf-diagram-preparation-symbol.png)|Preparation|Represents a setup or initialization process to another step in the process.|
+|![WPF Diagram displays OnPageReference Symbol](Automatic-Layouts_images/wpf-diagram-onpagereference-symbol.png)|OnPageReference|Represents a pair of labeled connectors used to link long or confusing line on a flowchart.|
+|![WPF Diagram displays OffPageReference Symbol](Automatic-Layouts_images/wpf-diagram-offpagereference-symbol.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
+|![WPF Diagram displays MultiDocument Symbol](Automatic-Layouts_images/wpf-diagram-multidocument-symbol.png)|MultiDocument|Represents multiple documents or reports in the process.|
+|![WPF Diagram displays Connector Symbol](Automatic-Layouts_images/wpf-diagram-connector-symbol.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
 N> We have provided some more built-in Shapes as ResourceDictionary. For more Shapes, refer to this [page](/wpf/sfdiagram/shapes).
 
@@ -282,7 +282,7 @@ public class DataItems : ObservableCollection<ItemInfo>
 {% endhighlight %}
 {% endtabs %}
 
-![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+![WPF Diagram with Flowchart](Automatic-Layouts_images/wpf-diagram-flowchart.png)
 
 ## Customize flowchart layout orientation
 
@@ -309,13 +309,13 @@ layoutManager.Layout = new FlowchartLayout()
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Vertical.png) 
+![WPF Diagram with FlowChart in Vertical Layout](Automatic-Layouts_images/wpf-diagram-flowchart-in-vertical.png) 
 
 ### LeftToRight orientation
 
 Arranges the element in the layout horizontally from left to right.
 
-![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Horizontal.png) 
+![WPF Diagram with FlowChart in Horizontal Layout](Automatic-Layouts_images/wpf-diagram-flowchart-in-horizontal.png) 
 
 ## Customize the decision output directions
 
@@ -331,10 +331,10 @@ The following table will explain the pictorial representation of the behavior:
 
 |YesBranchDirection| NoBranchDirection | TopToBottom | LeftToRight |
 |---|---|---|---|
-| Left In Flow |Right In Flow|![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesLeft_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesLeft_Horizontal.png)|
-| Right In Flow |Left In Flow |![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesRight_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesRight_Horizontal.png) |
-| Same As Flow |Right In Flow |![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesSame_Horizontal.png) |
-|Same As Flow |Same As Flow|![Vertical](Automatic-Layouts_images/Automatic-Layouts_BothSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_BothSame_Horizontal.png)|
+| Left In Flow |Right In Flow|![WPF Diagram displays Decision Output at Left Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-vertical.png)|![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decison-at-left-side-in-horizontal.png)|
+| Right In Flow |Left In Flow |![WPF Diagram displays Decision Output at Right Flow Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-vertical.png)|![WPF Diagram displays Decision Output at Left Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-in-horizontal.png) |
+| Same As Flow |Right In Flow |![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-both-side.png)|![WPF Diagram displays Decision Output at Right Flow Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-right-side.png) |
+|Same As Flow |Same As Flow|![WPF Diagram displays Decision Output at Both Direction in Vertical](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-vertical.png)|![WPF Diagram displays Decision Output at Both Direction in Horizontal](Automatic-Layouts_images/wpf-diagram-decision-at-both-side-in-horizontal.png)|
 
 N> If both branch directions are same, **Yes** branch will be prioritized.
 
@@ -385,7 +385,7 @@ layoutManager.Layout = new FlowchartLayout()
 {% endhighlight %}
 {% endtabs %}
 
-![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)
+![WPF Diagram with CustomFlowChart](Automatic-Layouts_images/wpf-diagram-custom-flowchart.png)
 
 ## Customize vertical and horizontal spacing 
 
