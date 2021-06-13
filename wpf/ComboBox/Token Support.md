@@ -11,7 +11,7 @@ documentation: ug
 
 Token represents the selected item(s) in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The selected items are displayed in rounded-polygon shape with close icon.
 
-The [EnableToken](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the selected items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) should be displayed as token. 
+The [EnableToken]() property determines whether the selected items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) should be displayed as token. 
 
 In [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) we can achieve this token support only while enabling the following properties. 
 
@@ -72,4 +72,4 @@ N> Typed text will be validated based on the dropdown items.
 
 •	When the **Esc** key is pressed, the drop-down area will be closed if it has been opened already.
 
-View sample in [GitHub]()
+View sample in [GitHub]().
