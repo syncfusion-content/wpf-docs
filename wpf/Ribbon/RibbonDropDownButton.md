@@ -783,10 +783,10 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![WPF Ribbon DropDownButton VectorImage in Normal Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-normal-layout.png)
+![WPF Ribbon DropDownButton VectorImage in Normal Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-normal-image-layout.png)
 *Normal layout*
 
-![WPF Ribbon DropDownButton VectorImage in Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-vector-image-in-simplified-layout.png)
+![WPF Ribbon DropDownButton VectorImage in Simplified Layout](DropDownButton_images/wpf-ribbon-dropdownbutton-simplified-image-layout.png)
 *Simplified layout*
 
 ## Add DropDownButton to the simplified layout
