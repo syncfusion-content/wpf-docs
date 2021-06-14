@@ -120,7 +120,7 @@ In the below example, MS CheckBox is set to the [`ContentTemplate`](https://help
 
 {% endtabs %}
 
-![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-RibbonBar.png)
+![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/wpf-ribbon-custom-items-in-ribbonbar.png)
 
 ## Adding the custom item to the QAT
 
@@ -268,8 +268,8 @@ In the below example, the [`Label`](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 {% endtabs %}
 
-![WPF Ribbon Custom Items in MoreCommands window](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-MoreCommands-window.png)
+![WPF Ribbon Custom Items in MoreCommands Window](RibbonCustomItem_images/wpf-ribbon-custom-items-in-morecommands-window.png)
 
-![WPF Ribbon Custom Items in RibbonBar](RibbonCustomItem_images/WPF-Ribbon-Custom-Items-in-QAT.png)
+![WPF Ribbon Custom Items in QAT](RibbonCustomItem_images/wpf-ribbon-custom-items-in-QAT.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Adding-custom-items-to-the-ribbon)

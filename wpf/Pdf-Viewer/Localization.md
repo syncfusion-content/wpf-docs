@@ -347,11 +347,11 @@ Current zoom level</td></tr>
 * Add the resource key such as `OpenDocument` and its corresponding localized value in Syncfusion.PdfViewer.WPF.fr.resx file. Refer the below screenshot for the same.
 * Execute the application in the French culture to see the changes.
 
-![Resource file](Localization_images/Localization_image2.png)
+![WPF PDF Viewer Resource File](Localization_images/wpf-pdf-viewer-resource-file.png)
 
 The following screenshot shows the `PdfViewerControl` in French language
 
-![Localization](Localization_images/Localization_image1.png)
+![WPF PDF Viewer Localization](Localization_images/wpf-pdf-viewer-localization.png)
 
 ## Localize Resource File with Different Assembly or Namespace
 
