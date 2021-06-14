@@ -18,57 +18,6 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Date time
 * Logarithmic
 
-<table>
-<tr>
-<td>
-[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)
-</td>
-<td>
-Gets the start value of the visible range.
-</td>
-</tr>
-<tr>
-<td>
-[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)
-</td>
-<td>
-Gets the end value of the visible range.
-</td>
-</tr>
-<tr>
-<td>
-[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)
-</td>
-<td>
-Gets the delta value of the visible range.
-</td>
-</tr>
-<tr>
-<td>
-[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)
-</td>
-<td>
-Gets the empty value of the visible range.
-</td>
-</tr>
-<tr>
-<td>
-[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)
-</td>
-<td>
-Gets a value indicating whether the visible range is empty or not.
-</td>
-</tr>
-<tr>
-<td>
-[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)
-</td>
-<td>
-Gets the median value of the visible range.
-</td>
-</tr>
-</table>
-
 ## Key Features
 
 * Axis support different type of axis such as Category, Numeric, Date time, Date time category, Logarithmic and time span axis.
