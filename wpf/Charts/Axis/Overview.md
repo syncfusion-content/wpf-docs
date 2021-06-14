@@ -20,7 +20,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 
 ## Key Features
 
-* Axis support different type of axis such as Category, Numeric, Date time, Date time category, Logarithmic and time span axis.
+* Axis support different type of axis such as Category, Numeric, Date time, Date time category, Logarithmic and Time span axis.
 * Allow you customize the chart axis line such as GridLines, TickLines and support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
 * Axis allow you to customize the origin of the chart axis. 
 * Multiple Axes provide a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
