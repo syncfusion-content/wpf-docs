@@ -11,9 +11,9 @@ documentation: ug
 
 Token represents the selected item(s) in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The selected items are displayed in rounded-polygon shape with close icon.
 
-The EnableToken property determines whether the selected items in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) should be displayed as token. 
+The EnableToken property determines whether the selected items in the `ComboBoxAdv` should be displayed as token. 
 
-In [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) we can achieve this token support only while enabling the following properties. 
+In `ComboBoxAdv` we can achieve this token support only while enabling the following properties. 
 
 {% tabs %}
 {% highlight C# %}
