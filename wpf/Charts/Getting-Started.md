@@ -94,7 +94,7 @@ chart.SecondaryAxis = secondaryAxis
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-![Initializing WPF Chart](Getting-Started_images/img1.png)
+![WPF Chart](Getting-Started_images/wpf-chart.png)
 
 N> [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
@@ -680,7 +680,7 @@ End Class
 
 The following chart is created as a result of the previous codes.
 
-![Tooltip support in WPF Chart](Getting-Started_images/img3.png)
+![WPF Chart Tooltip](Getting-Started_images/wpf-chart-tooltip.png)
 
 You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
 
@@ -704,8 +704,6 @@ You can find the complete getting started sample from this [link](https://www.sy
 
 [`How to synchronize the selection between the chart and data grid`](https://www.syncfusion.com/kb/3579/how-to-synchronize-the-selection-between-the-chart-and-data-grid)
 
-[`How to achieve series drilldown behavior in Chart`](https://www.syncfusion.com/kb/2692/how-to-achieve-series-drilldown-behaviour-in-sfchart)
-
 [`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
 
 [`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-sfchart)
@@ -724,4 +722,4 @@ SfChart supports various built-in themes. Refer to the below links to apply them
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfChart](Getting-Started_images/theme.png)
+  ![Applying Theme to WPF Chart](Getting-Started_images/wpf-chart-theme.png)
