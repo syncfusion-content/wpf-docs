@@ -9,21 +9,23 @@ documentation: ug
 
 # Auto Complete Support in WPF ComboBox (ComboBoxAdv)
 
-Auto complete can be enabled by using the AutoCompleteMode property. It can be used for both single and multiple selections.
+Auto complete can be enabled by using the `AutoCompleteMode` property. It can be used for both single and multiple selections. 
 
  There are three different AutoCompleteModes: 
 
-•	Suggest: Displays suggestion in drop-down list.
+•	`Suggest`: Displays suggestion in drop-down list.
 
-•	Append: Appends the first suggestion to text.
+•	`Append`: Appends the first suggestion to text.
 
-•	None: No suggestion or Append is made.
+•	`None`: No suggestion or Append is made.
+
+Default value is *None*.
 
 ## Auto Complete Modes
 
 ### Suggest
 
-A list of probable matches will be suggested and displayed in the drop-down list by setting the AutoCompleteMode property as Suggest. Suggested items will contain or start with the search text.
+A list of probable matches will be suggested and displayed in the drop-down list by setting the `AutoCompleteMode` property as Suggest. Suggested items will contain or start with the search text.
 
 {% tabs %}
 {% highlight C# %}
@@ -68,5 +70,3 @@ combobox.AutoCompleteMode = AutoCompleModes.Append;
 ![WPF ComboBoxAdv AutoComplete Append Mode](ComboBoxAdv_images/WPF-ComboBoxAdv-AutoComplete-Append-Mode.png)
 
 N> Append will be applied only when drop-down is closed.
-
-View sample in GitHub.
