@@ -11,7 +11,7 @@ documentation: ug
 
 The PDF Viewer allows you to save the PDF document that is being displayed. It helps you to keep the file up to date with any modifications and prevent your work from being lost. You can save the changes in the PDF document using the "Save" and "Save As" options available in the toolbar.
 
-![Save PDF files](Concept-and-Features_images\save_files.png)
+![WPF PDF Viewer Save PDF Files](Concept-and-Features_images\wpf-pdf-viewer-save-pdf-files.png)
 
 N> The "Save" option in the toolbar will not be enabled if the file is not edited, or if the file is loaded using the Stream and `PdfLoadedDocument` objects. In these cases, you can use the "Save As" option.
 

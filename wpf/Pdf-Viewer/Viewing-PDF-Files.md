@@ -30,7 +30,7 @@ You can open a PDF file from the toolbar by browsing it from the local disk. You
 	</Window>
    ~~~
    
-2. Click the <b>Open</b> button in the toolbar, as shown in the following picture. ![Open PDF file](view-pdf-file-images/Openfile.png)
+2. Click the <b>Open</b> button in the toolbar, as shown in the following picture. ![WPF PDF Viewer Open PDF file](view-pdf-file-images/wpf-pdf-viewer-open-file.png)
 3. In the open file dialog, enter the file name or browse the file from the local disk and select <b>Open</b>.
 
 ## View PDF file using the file path
@@ -169,7 +169,7 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfV
    
 3. Run the project.
 
-The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![PDF file in PdfDocumentView](view-pdf-file-images/PdfDocumentView.png)
+The following picture illustrates how the PDF file being displayed in [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control. ![WPF PDF Viewer File in PdfDocumentView](view-pdf-file-images/wpf-pdf-viewer-file-in-pdfdocumentview.png)
 
 ## Obtain the PDF file information
 

@@ -148,6 +148,6 @@ Me.StatusBar = ribbonStatusBar
 
 {% endtabs %}
 
-![Adding statusbar to the ribbon window in WPF Ribbon](RibbonStatusBar_images/wpf-ribbon-statusbar.png)
+![WPF Ribbon StatusBar](RibbonStatusBar_images/wpf-ribbon-statusbar.png)
 
 

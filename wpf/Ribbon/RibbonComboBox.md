@@ -100,7 +100,7 @@ _ribbonBar2.Items.Add(_buttonPanel)
 
 {% endtabs %}
 
-![WPF Ribbon showing added comboboxitems](RibbonComboBox_images/RibbonComboBox_img1.jpg)
+![WPF Ribbon Combobox Items](RibbonComboBox_images/wpf-ribbon-combobox-items.jpg)
 
 ## Add ComboBox to the simplified layout
 
@@ -188,7 +188,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonComboBox during simplified layout](RibbonComboBox_images/RibbonComboBox_Simplified.png)
+![WPF Ribbon ComboBox Simplified Layout](RibbonComboBox_images/wpf-ribbon-combobox-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonComboBox can be ignored as it will be resized automatically to the standard width and height. If the RibbonComboBox is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 
@@ -242,4 +242,4 @@ The following code example demonstrates how to set auto-width to the ComboBoxAdv
 
 {% endtabs %}
 
-![WPF Ribbon showing combobox resize by selected item](RibbonComboBox_images/RibbonComboBox_selecteditem1.png)
+![WPF Ribbon Combobox Resizing](RibbonComboBox_images/wpf-ribbon-combobox-resizing.png)
