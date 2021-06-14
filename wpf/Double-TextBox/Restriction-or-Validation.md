@@ -62,32 +62,54 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digit
 
-The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
-by using [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_NumberDecimalDigits) property.
-The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or minimum digit, the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MinimumNumberDecimalDigits) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MaximumNumberDecimalDigits)
+You can change the decimal digits of text property in the `DoubleTextBox` control using `NumberDecimalDigits` property. You can restrict the decimal digits of `Text` property value within maximum and minimum decimal digits in `DoubleTextBox` control using `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+
+N> If value of `MinimumNumberDecimalDigits` property is greater than `MaximumNumberDecimalDigits` property value, then text of `DoubleTextBox` will be updated based on `MinimumNumberDecimalDigits` property value.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" 
-                          NumberDecimalDigits = "3" MinimumNumberDecimalDigits = "2"
-                          MaximumNumberDecimalDigits = "5"/>
-{% endhighlight %}
+{% highlight XAML %}
 
-{% highlight c# %}
+<syncfusion:DoubleTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumNumberDecimalDigits="4"
+                            MinimumNumberDecimalDigits="1" />
+
+{% endhighlight %}
+{% highlight C# %}
+
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
-doubleTextBox.Height = 25;
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
-doubleTextBox.NumberDecimalDigits = 3;
-doubleTextBox.MinimumNumberDecimalDigits = 2;
-doubleTextBox.MaximumNumberDecimalDigits = 5;
+doubleTextBox.Value = 125.32545;
+doubleTextBox.MaximumNumberDecimalDigits = 4;
+doubleTextBox.MinimumNumberDecimalDigits = 1;
+
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox limits the number of decimal digits](Restriction-or-Validation_images/DecimalDigits.png)
+![DoubleTextBox in read-only mode](Restriction-or-Validation_images/maxandmin_number_decimaldigits.png)
 
-N> `NumberDecimalDigits` property value will be allows set based on the in-between range of `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` property values.
+When `MinimumNumberDecimalDigits`, `MaximumNumberDecimalDigits` and `NumberDecimalDigits` are specified, `NumberDecimalDigits` property takes higher precedence and updates the text of `DoubleTextBox` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumNumberDecimalDigits="4"
+                            MinimumNumberDecimalDigits="1" 
+                            NumberDecimalDigits="3"
+                            />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Value = 125.32545;
+doubleTextBox.MaximumNumberDecimalDigits = 4;
+doubleTextBox.MinimumNumberDecimalDigits = 1;
+doubleTextBox.NumberDecimalDigits = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DoubleTextBox in read-only mode](Restriction-or-Validation_images/number_decimalDigits.png)
 
 ## Read only mode
 
