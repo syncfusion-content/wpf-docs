@@ -162,3 +162,58 @@ public class ViewModel : INotifyPropertyChanged
 ![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
+
+# Token Support in WPF ComboBox (ComboBoxAdv)
+
+Token represents the selected item(s) in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The selected items are displayed in rounded-polygon shape with close icon.
+
+The `EnableToken` property determines whether the selected items in the `ComboBoxAdv` should be displayed as token.
+
+ When an item is selected from the dropdown, it will be added as token in text area. By clicking the close icon, the appropriate item will be removed from the text area.
+
+In `ComboBoxAdv` we can achieve this token support only while enabling the following properties. 
+
+{% tabs %}
+{% highlight C# %}
+
+<syncfusion:ComboBoxAdv 
+      AllowMultiSelect="true"
+      IsEditable="true"
+      EnableToken="true">
+</syncfusion:ComboBoxAdv>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ComboBoxAdv comboBox = new ComboBoxAdv();       
+combobox.AllowMultiSelect = true;
+combobox.IsEditable = true;
+combobox.EnableToken = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF ComboBoxAdv Token support](ComboBoxAdv_images/WPF-ComboBoxAdv-Token-support.gif)
+
+The important characteristics of the token support are as follows.
+
+### Editing
+
+•	On multiselection, we can type any text to add the items.Typed text will be validated based on the dropdown items.
+
+![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/WPF-ComboBoxAdv-Editing-support.gif)
+
+### Keyboard access
+
+•	Using the **Down Arrow**, **Up Arrow**, **Space**, **Enter** and **Tab** keys item can be selected from the combobox.
+
+•	Using the **Enter** and **Tab** keys, typed text will be validated and added as token if it is available in dropdown items.
+
+•	Using the **Backspace** key, the last positioned token will be removed from the text area.
+
+•	When the **Esc** key is pressed, the drop-down area will be closed if it has been opened already.
+
+N> ComboBox's text area height will be increased or decreased automatically based on the placement of the selected items.
+
+
