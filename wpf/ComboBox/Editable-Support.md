@@ -68,7 +68,7 @@ Default value is *None*.
 
 ### Suggest
 
-A list of probable matches will be suggested and displayed in the drop-down list by setting the `AutoCompleteMode` property as Suggest. Suggested items will contain or start with the search text.
+A list of probable matches will be suggested and displayed in the drop-down list by setting the `AutoCompleteMode` property as `Suggest`. Suggested items will contain or start with the search text.
 
 {% tabs %}
 {% highlight C# %}
@@ -91,7 +91,7 @@ N> Suggest mode will be applicable only with ItemSource collection.
 
 ### Append
 
-When entering the text, AutoComplete will guide you to complete the text by appending the suitable text from the data source. 
+When you enter text, `ComboBoxAdv` will now suggest you to complete it by appending the appropriate text from the data source. 
 
 N> Append will be used as *IsTextSearchEnabled* property.
 
