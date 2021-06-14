@@ -2494,7 +2494,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeCategoryAxis support in WPF Chart](Axis_images/Axis_img47.jpeg)
+![WPF Chart displays DateTimeAxis](Axis_images/wpf-chart-datetime-axis.jpeg)
 
 
 **Customizing** **the** **Range**
@@ -2538,7 +2538,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WPF Chart](Axis_images/Axis_img48.jpeg)
+![Customizing DateTimeAxis Range in WPF Chart](Axis_images/wpf-chart-datetime-axis-range-customization.jpeg)
 
 
 **Business** **Hours** **Range** **Calculation**
@@ -2589,7 +2589,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range customization support in WPF Chart](Axis_images/Axis_img49.jpeg)
+![Customizing DateTimeAxis Range in WPF Chart](Axis_images/wpf-chart-range-customization.jpeg)
 
 
 ### DateTimeCategoryAxis
@@ -2623,7 +2623,7 @@ chart.PrimaryAxis = new DateTimeCategoryAxis()
 
 {% endtabs %}
 
-![DateTimeCategoryAxis support in WPF Chart](Axis_images/Axis_img50.jpeg)
+![DateTimeCategoryAxis in WPF Chart](Axis_images/wpf-chart-datetime-category-axis.jpeg)
 
 
 ### TimeSpan Axis
@@ -2652,7 +2652,7 @@ chart.PrimaryAxis = new TimeSpanAxis();
 
 {% endtabs %}
 
-![TimeSpanAxis support in WPF Chart](Axis_images/Axis_img51.jpeg)
+![WPF Chart displays TimeSpanAxis](Axis_images/wpf-chart-timespan-axis.jpeg)
 
 
 **Customizing** **the** **Range**
@@ -2688,7 +2688,7 @@ chart.PrimaryAxis = new TimeSpanAxis()
 
 {% endtabs %}
 
-![TimeSpanAxis range customization support in WPF](Axis_images/Axis_img52.jpeg)
+![Customizing TimeSpanAxis Range in WPF Chart](Axis_images/wpf-chart-timespan-axis-range.jpeg)
 
 
 ### LogarithmicAxis
@@ -2715,7 +2715,7 @@ chart.SecondaryAxis = new LogarithmicAxis();
 
 {% endtabs %}
 
-![LogarithmicAxis support in WPF Chart](Axis_images/Axis_img53.jpeg)
+![WPF Chart displays LogarithmicAxis](Axis_images/wpf-chart-logarithmic-axis.jpeg)
 
 
 **Logarithmic** **Base**
@@ -2749,7 +2749,7 @@ chart.SecondaryAxis = new LogarithmicAxis()
 
 {% endtabs %}
 
-![LogarithmicAxis base support in WPF Chart](Axis_images/Axis_img54.jpeg)
+![Changing LogarithmicAxis Base Value in WPF Chart](Axis_images/wpf-chart-logarithmic-axis-value.jpeg)
 
 
 **Customizing** **the** **Range**
@@ -2785,8 +2785,7 @@ chart.SecondaryAxis = new LogarithmicAxis()
 
 {% endtabs %}
 
-![LogarithmicAxis range customization support in WPF
- Chart](Axis_images/Axis_img55.jpeg)
+![Customizing LogarithmicAxis Range in WPF Chart](Axis_images/wpf-chart-logarithmic-range.jpeg)
 
 The following property is common for all types of axes,
 
@@ -2848,8 +2847,7 @@ ChartStripLine stripline = new ChartStripLine()
 
 {% endtabs %}
 
-![StripLine range customization support in WPF
- Chart](Axis_images/striplineRange.png)
+![Customizing StripLine Range in WPF Chart](Axis_images/wpf-chart-strip-line-range.png)
 
 **IncludeAnnotationRange**
 
@@ -2900,8 +2898,7 @@ chart.Annotations.Add(annotation);
 
 {% endtabs %}
 
-![Annotation range customization support in WPF
- Chart](Axis_images/AnnotationRange.png)
+![Customizing Annotation Range in WPF Chart](Axis_images/wpf-chart-annotation-range.png)
 
 ## Inverting axis
 
@@ -2927,7 +2924,7 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 {% endtabs %}
 
-![Inversed axis support in WPF Chart](Axis_images/InversedAxis.png)
+![WPF Chart displays Inversed Axis](Axis_images/wpf-chart-inversed-axis.png)
 
 
 ## Customizing the Intervals
@@ -2965,7 +2962,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis Interval customization support in WPF Chart](Axis_images/Axis_img56.jpeg)
+![Customizing NumericalAxis Interval in WPF Chart](Axis_images/wpf-chart-numerical-axis-interval.jpeg)
 
 
 **CategoryAxis**
@@ -2999,7 +2996,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![CategoryAxis Interval customization support in WPF Chart](Axis_images/Axis_img57.jpeg)
+![Customizing CategoryAxis Interval in WPF Chart](Axis_images/wpf-chart-category-axis-interval.jpeg)
 
 **DateTimeAxis**
 
@@ -3049,7 +3046,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis Interval customization support in WPF Chart](Axis_images/Axis_img58.jpeg)
+![Customizing DateTimeAxis Interval in WPF Chart](Axis_images/wpf-chart-datetime-axis-interval.jpeg)
 
 
 **DesiredIntervalsCount**
@@ -3083,7 +3080,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Interval customization support in WPF Chart](Axis_images/Axis_img59.jpeg)
+![Customizing Interval Count for NumericalAxis in WPF Chart](Axis_images/wpf-chart-interval-count.jpeg)
 
 
 **Maximum** **Labels**
@@ -3146,7 +3143,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Interval customization support in WPF Chart](Axis_images/Axis_img60.jpeg)
+![WPF Chart with Maximum Label based on Interval Count](Axis_images/wpf-chart-interval-based-on-label.jpeg)
 
 
 ## Apply Padding to the Range
@@ -3170,7 +3167,7 @@ The [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Chart
 
 By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img61.jpeg)
+![WPF Chart with Default DateTimeAxis Range Padding](Axis_images/wpf-chart-default-datetime-range-padding.jpeg)
 
 
 **Additional**
@@ -3204,7 +3201,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img62.jpeg)
+![Changing DateTimeAxis Range Padding in WPF Chart](Axis_images/wpf-chart-change-datetime-range-padding.jpeg)
 
 
 **Round**
@@ -3238,7 +3235,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img63.jpeg)
+![WPF Chart with DateTimeAxis Round Range Padding](Axis_images/wpf-chart-datetime-round-range-padding.jpeg)
 
 
 **None**
@@ -3274,7 +3271,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img64.jpeg)
+![WPF Chart without DateTimeAxis Range Padding](Axis_images/wpf-chart-without-range-padding.jpeg)
 
 **RoundStart**
 
@@ -3307,7 +3304,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundStart.png)
+![WPF Chart with DateTimeAxis RoundStart Range Padding](Axis_images/wpf-chart-datetime-axis-roundstart-padding.png)
 
 
 **RoundEnd**
@@ -3341,7 +3338,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_RoundEnd.png)
+![WPF Chart with DateTimeAxis RoundEnd Range Padding](Axis_images/wpf-chart-datetime-axis-roundend-padding.png)
 
 
 **PrependInterval**
@@ -3375,7 +3372,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_PrependInterval.png)
+![WPF Chart with Prepend DateTimeAxis Range Padding](Axis_images/wpf-chart-datetime-axis-prepend-interval.png)
 
 
 **AppendInterval**
@@ -3409,7 +3406,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![DateTimeAxis range padding support in WPF Chart](Axis_images/DateTimeAxis_AppendInterval.png)
+![WPF Chart with Append DateTimeAxis Range Padding](Axis_images/wpf-chart-datetime-axis-append-interval.png)
 
 
 ### NumericalRangePadding
@@ -3432,7 +3429,7 @@ By default, the default [`RangePadding`](https://help.syncfusion.com/cr/wpf/Sync
 
 The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`Round`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img65.jpeg)
+![WPF Chart with NumericalAxis Round Range Padding](Axis_images/wpf-chart-numericaxis-range-padding.jpeg)
 
 
 **Normal**
@@ -3468,7 +3465,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img66.jpeg)
+![WPF Chart with NumericalAxis Normal Range Padding](Axis_images/wpf-chart-numericaxis-normal-range-padding.jpeg)
 
 
 **Additional**
@@ -3504,7 +3501,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img67.jpeg)
+![WPF Chart with NumericalAxis Additional Range Padding](Axis_images/wpf-chart-additional-range-padding.jpeg)
 
 
 **None**
@@ -3538,7 +3535,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img68.jpeg)
+![WPF Chart without NumericalAxis Range Padding](Axis_images/wpf-chart-without-numericaxis-padding.jpeg)
 
 **RoundStart**
 
@@ -3573,7 +3570,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundStart.png)
+![WPF Chart with NumericalAxis RoundStart Range Padding](Axis_images/wpf-chart-numericalaxis-roundstart-padding.png)
 
 
 **RoundEnd**
@@ -3609,7 +3606,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_RoundEnd.png)
+![WPF Chart with NumericalAxis RoundStart Range Padding](Axis_images/wpf-chart-numericalaxis-roundend-padding.png)
 
 
 **PrependInterval**
@@ -3645,7 +3642,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_PrependInterval.png)
+![WPF Chart with PrependInterval NumericalAxis Padding](Axis_images/wpf-chart-numericalaxis-prepend-interval.png)
 
 
 **AppendInterval**
@@ -3681,7 +3678,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![NumericalAxis range padding support in WPF Chart](Axis_images/NumericalAxis_AppendInterval.png)
+![WPF Chart with AppendInterval NumericalAxis Padding](Axis_images/wpf-chart-numericalaxis-append-interval.png)
 
 
 ##  Applying Padding to the Axis
@@ -3730,7 +3727,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Padding for ChartAxis support in WPF](Axis_images/Axis_img69.jpeg)
+![WPF Chart with ChartAxis Padding](Axis_images/wpf-chart-axis-padding.jpeg)
 
 ### PlotOffsetStart
 
@@ -3778,7 +3775,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![PlotOffsetStart for ChartAxis support in WPF](Axis_images/PlotOffset_Start.png)
+![WPF Chart with PlotOffsetStart for ChartAxis](Axis_images/wpf-chart-axis-plotoffset-start.png)
 
 ### PlotOffsetEnd
 
@@ -3826,7 +3823,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![PlotOffsetEnd for ChartAxis support in WPF](Axis_images/PlotOffset_End.png)
+![WPF Chart with PlotOffsetEnd for ChartAxis](Axis_images/wpf-chart-axis-plotoffset-end.png)
 
 ## AutoScrollingDelta
 
@@ -3896,7 +3893,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
 
-![Auto interval on zooming support in WPF](Axis_images/Axis_img70.jpeg)
+![WPF Chart with Zooming AutoInterval](Axis_images/wpf-chart-auto-interval-zooming.jpeg)
 
 
 If you set [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EnableAutoIntervalOnZooming) as False, the intervals will be calculated on the interval based on the axis while zooming.
@@ -3934,7 +3931,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Auto interval on zooming support in WPF](Axis_images/Axis_img71.jpeg)
+![WPF Chart with Zooming AutoInterval](Axis_images/wpf-chart-interval-zooming.jpeg)
 
 ## Multiple Axes
 
@@ -4019,7 +4016,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Multiple axes support in WPF Chart](Axis_images/Axis_img72.jpeg)
+![WPF Chart with Multiple Axes](Axis_images/wpf-chart-multiple-axes.jpeg)
 
 In the above screenshot, the LineSeries is plotted based on additional X & Y axes, and ColumnSeries (or remaining series) is plotted based on the primary and secondary axes.
 
@@ -4074,7 +4071,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![Multi-level axis labels support in WPF Chart](Axis_images/label3.png)
+![WPF Chart displays Multi-level Axis Labels](Axis_images/wpf-chart-multi-level-axis-labels.png)
 
 **Regarding** **Start** **and** **End** **Properties**
 
@@ -4185,7 +4182,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![Axis border customization support in WPF Chart](Axis_images/label4.png)
+![Customizing Axis Border in WPF Chart](Axis_images/wpf-chart-axis-label-border.png)
 
 
 **Border** **Type**
@@ -4349,7 +4346,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Axis border customization support in WPF Chart](Axis_images/label5.png)
+![WPF Chart displays Rectangel Axis Border Label](Axis_images/wpf-chart-rectangle-axis-border-label.png)
 
 
 **Brace**
@@ -4513,7 +4510,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Axis border customization support in WPF Chart](Axis_images/label6.png)
+![WPF Chart displays Brace Axis Border Label](Axis_images/wpf-chart-brace-axis-border-label.png)
 
 **None**
 
@@ -4680,7 +4677,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Axis border customization support in WPF Chart](Axis_images/label7.png)
+![WPF Chart without Axis Border Label](Axis_images/wpf-chart-without-axis-border-label.png)
 
 **WithoutTopAndBottomBorder**
 
@@ -4845,7 +4842,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Axis border customization support in WPF Chart](Axis_images/label8.png)
+![WPF Chart displays Axis Border Label](Axis_images/wpf-chart-multi-axis-label-border.png)
 
 
 **Text** **Customization**
@@ -4904,7 +4901,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![Multi-level axis labels text customization support in WPF Chart](Axis_images/label9.png)
+![Customizing Multi-level Axis Labels Text in WPF Chart](Axis_images/wpf-chart-multilabel-text-customization.png)
 
 
 **Label** **Alignment**
@@ -5068,7 +5065,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Multi-level axis label alignment support in WPF Chart](Axis_images/label13.png)
+![Changing Multi-level Axis Label Alignment in WPF Chart](Axis_images/wpf-chart-multilabel-axis-alignment.png)
 
 
 **Near**
@@ -5242,7 +5239,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Multi-level axis label alignment support in WPF Chart](Axis_images/label10.png)
+![Changing Multi-level axis label Alignment in WPF Chart](Axis_images/wpf-chart-multilabel-with-near-alignment.png)
 
 
 **Far**
@@ -5416,7 +5413,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![Multi-level axis label alignment support in WPF Chart](Axis_images/label11.png)
+![Changing Multi-level axis label Alignment in WPF Chart](Axis_images/wpf-chart-multilabel-with-far-alignment.png)
 
 The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) will be trimmed automatically when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html), and it is shown below.
 
@@ -5496,7 +5493,7 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 {% endtabs %}
 
-![Multi-level axis label alignment support in WPF Chart](Axis_images/label12.png)
+![Changing Multi-level Axis Label Alignment WPF Chart](Axis_images/wpf-chart-axis-label-alignment.png)
 
 
 ## Events

@@ -16,7 +16,7 @@ SfChart provides [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 
-![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img1.jpeg)
+![WPF Chart displays ScaleBreaks Position](ScaleBreak_images/wpf-chart-scalebreak-position.jpeg)
 
 
 Applying scale breaks helps in proper visualization of all the data points.
@@ -61,7 +61,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img2.jpeg)
+![WPF Chart displays ScaleBreaks Position based on Axis Value](ScaleBreak_images/wpf-chart-scalebreak-based-on-axis.jpeg)
 
 
 ## Break Position Customization
@@ -122,7 +122,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Positioning the scale break based on the data count in WPF Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
+![WPF Chart displays ScaleBreak Position based on Data Count](ScaleBreak_images/wpf-chart-scalebreak-position-based-on-data.jpeg)
 
 
 ### Scale
@@ -171,7 +171,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Positioning the scale break based on the scale in WPF Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
+![WPF Chart displays ScaleBreak Position based on Scale](ScaleBreak_images/wpf-chart-scalebreak-based-on-scale.jpeg)
 
 
 ### Percent
@@ -244,7 +244,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Positioning the scale break based on percent in WPF Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
+![WPF Chart displays ScaleBreak Position based on Percentage](ScaleBreak_images/wpf-chart-scalebreak-based-on-percentage.jpeg)
 
 
 ## Multiple Breaks
@@ -307,7 +307,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Multiple scale breaks support in WPF Chart](ScaleBreak_images/ScaleBreak_img6.jpeg)
+![Multiple ScaleBreaks in WPF Chart](ScaleBreak_images/wpf-chart-multiple-scale-breaks.jpeg)
 
 
 ## Customization
@@ -372,6 +372,6 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Customization of scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img7.jpeg)
+![Customization of ScaleBreaks in WPF Chart](ScaleBreak_images/wpf-chart-scalebreak-customization.jpeg)
 
 
