@@ -54,13 +54,13 @@ N> It can be applied when `AllowMultiSelect` property is not assigned as true.
 
 ## Auto Complete Support in WPF ComboBox
 
-Auto complete can be enabled by using the `AutoCompleteMode` property. It can be used for both single and multiple selections on editable mode. 
+You can able to find the expected item from the dropdown of the `ComboBoxAdv` and it can be enabled by using the `AutoCompleteMode` property. It can be used for both single and multiple selections on editable mode. 
 
- There are three different AutoCompleteModes: 
+ There are three different AutoComplete modes: 
 
-•	`Suggest`: Displays suggestion in drop-down list.
+•	`Suggest`: Suggestions are displayed in a drop-down menu.
 
-•	`Append`: Appends the first suggestion to text.
+•	`Append`: The first suggestion is appended to the text.
 
 •	`None`: No suggestion or Append is made.
 
@@ -93,7 +93,7 @@ N> Suggest mode will be applicable only with ItemSource collection.
 
 When entering the text, AutoComplete will guide you to complete the text by appending the suitable text from the data source. 
 
-N> Append will be used as *IsTextSearchEnabled* property
+N> Append will be used as *IsTextSearchEnabled* property.
 
 {% tabs %}
 {% highlight C# %}
