@@ -163,7 +163,7 @@ public class ViewModel : INotifyPropertyChanged
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
 
-# Token Support in WPF ComboBox (ComboBoxAdv)
+## Token Support in WPF ComboBox (ComboBoxAdv)
 
 Token represents the selected item(s) in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html). The selected items are displayed in rounded-polygon shape with close icon.
 
