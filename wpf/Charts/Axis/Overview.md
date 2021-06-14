@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in WPF Chart control | Syncfusion 
-description: Learn here all about the chart axis overview of syncfusion WPF Chart control and their Key feature in WPF chart.
+description: Learn here all about the chart axis overview of syncfusion WPF Chart control and their Key features in WPF Charts.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -16,15 +16,7 @@ Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the fo
 * Category
 * Numeric
 * Date time
-* Logarithmic Axis
-
-The following are the API’s in ChartAxis
-
-* [`ArrangeRect`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ArrangeRect) – Represents the bounds of chart axis size. 
-
-* [`VisibleRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleRange) – Represents the axis start and end visible values as follows.
-
-* [`VisibleLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_VisibleLabels) – Represents the axis label collection which are visible in axis.
+* Logarithmic
 
 <table>
 <tr>
@@ -77,8 +69,7 @@ Gets the median value of the visible range.
 </tr>
 </table>
 
-## Key Feature
-
+## Key Features
 
 * Axis support different type of axis such as Category, Numeric, Date time, Date time category, Logarithmic and time span axis.
 * Allow you customize the chart axis line such as GridLines, TickLines and support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
