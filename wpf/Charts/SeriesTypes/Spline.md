@@ -67,7 +67,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in WPF](Series_images/spline.png)
+![WPF Spline Chart](Series_images/wpf-spline-chart.png)
 
 **Dashed Lines**
 
@@ -137,7 +137,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in WPF](Series_images/splinearea.png)
+![WPF SplineArea Chart](Series_images/wpf-spline-area-chart.png)
 
 ## Spline Type
 
@@ -172,7 +172,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
+![WPF Chart with Cardinal Spline](Series_images/wpf-chart-cardinal-spline.png)
 
 **Monotonic**
 
@@ -198,7 +198,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
+![WPF Chart with Monotonic Spline](Series_images/wpf-chart-monotonic-spline.png)
 
 **Clamped**
 
@@ -224,4 +224,4 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Clamped spline support in WPF Chart](Series_images/clamped.png)
+![WPF Chart with Clamped Spline](Series_images/wpf-chart-clamped-spline.png)

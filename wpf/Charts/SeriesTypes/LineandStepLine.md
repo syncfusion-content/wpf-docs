@@ -67,7 +67,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Line chart type in WPF](Series_images/line.png)
+![WPF Line Chart](Series_images/wpf-line-chart.png)
 
 ## Step Line Chart
 
@@ -103,7 +103,7 @@ SteplineChart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![StepLine Chart type in WPF](Series_images/stepLine.png)
+![WPF StepLine Chart](Series_images/wpf-stepline-chart.png)
 
 ## See also
 

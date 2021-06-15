@@ -64,7 +64,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![HiLoOpenClose chart type in WPF](Series_images/ohlc.png)
+![WPF OHLC Chart](Series_images/wpf-ohlc-chart.png)
 
 ## Candle Chart
 
@@ -109,7 +109,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Candle chart type in WPF](Series_images/candle.png)
+![WPF Candle Chart](Series_images/wpf-candle-chart.png)
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ chart.Series.Add(series);
 
 {% endtabs %}               
 
-![Candle chart type in WPF](Series_images/candle_1.png)
+![WPF Candle Chart](Series_images/wpf-candle-charts.png)
 
 
 ## Comparison Modes
@@ -177,7 +177,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 {% endtabs %}     
 
-![Comparison Modes support in WPF](Series_images/open.png)
+![WPF Candle Chart displays Comparison between Opened Segment](Series_images/wpf-candle-chart-comparision.png)
 
 In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
@@ -205,7 +205,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 {% endtabs %}   
 
-![Comparison Modes support in WPF](Series_images/Close.png)
+![WPF Candle Chart displays Comparison between Closed Segment](Series_images/wpf-candle-chart-closed-segment-comparison.png)
 
  In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
@@ -233,7 +233,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% endtabs %}   
 
-![Comparison Modes support in WPF](Series_images/high.png)
+![Comparing High Value of WPF Candle Chart](Series_images/wpf-cadle-chart-compare-high-value.png)
 
  In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
@@ -261,6 +261,6 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 {% endtabs %}   
 
-![Comparison Modes support in WPF](Series_images/low.png)
+![Comparing Low Values of WPF Candle Chart](Series_images/wpf-candle-chart-compare-low-value.png)
 
 In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.
