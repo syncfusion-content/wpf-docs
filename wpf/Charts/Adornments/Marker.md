@@ -41,7 +41,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% endtabs %}
 
-![Symbol support in WPF Chart](Adornments_images/Marker.png)
+![WPF Chart Symbol Support](Adornments_images/wpf-chart-symbol-support.png)
 
 
 ### Customizing Symbol
@@ -80,7 +80,7 @@ SfChart provides support more customization for symbols in adornments.
 
 {% endtabs %}
 
-![Symbol customization support in WPF Chart](Adornments_images/Custom_Marker.png)
+![WPF Chart Custom Marker](Adornments_images/wpf-chart-custom-marker.png)
 
 
 **SymbolTemplate**
@@ -159,4 +159,4 @@ The following code example demonstrates how to use SymbolTemplate.
 
 {% endtabs %}
 
-![Template support for symbol in WPF Chart](Adornments_images/Marker_SymbolTemplate.png)
+![WPF Chart Marker SymbolTemplate](Adornments_images/wpf-chart-marker-symboltemplate.png)
