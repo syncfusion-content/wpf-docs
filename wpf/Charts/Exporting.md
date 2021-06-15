@@ -20,7 +20,7 @@ Chart can be exported into image format. The following are the supported image f
 
 The following screenshot illustrates the chart, which has to be exported.
 
-![Chart For Printing](Exporting_images/Exporting.png)
+![WPF Chart For Printing](Exporting_images/wpf-chart-for-printing.png)
 
 ## Methods
 
@@ -72,11 +72,11 @@ private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-![Chart For Printing](Exporting_images/ExportLocation.png)
+![WPF Chart For Export Location](Exporting_images/wpf-chart-for-export-location.png)
 
 The image will be saved in the specified location in the SaveFileDialog.
 
-![Chart For Printing](Exporting_images/Exported.png)
+![WPF Chart Exported](Exporting_images/wpf-chart-exported.png)
 
 ### Export SfChart to image without rendering in UI
 

@@ -52,7 +52,7 @@ chart.Palette = ChartColorPalette.Metro;
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_1.png)
+![WPF Chart Predefined Palettes](Styling-and-Customization_images/wpf-chart-predefined-palettes.png)
 
 
 The following code example defined Palette as [`BlueChrome`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
@@ -73,7 +73,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_2.png)
+![WPF Chart Predefined Palette as BlueChrome](Styling-and-Customization_images/wpf-chart-predefined-palette-as-bluechrome.png)
 
 
 ### Applying Palette to Segment
@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_3.png)
+![WPF Chart Predefined Palette to Segment](Styling-and-Customization_images/wpf-chart-predefined-palette-to-segment.png)
 
 The following code example defined Palette as **AutumnBrights**.
 
@@ -148,7 +148,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_4.png)
+![WPF Chart Predefined Palette as AutumnBrights](Styling-and-Customization_images/wpf-chart-predefined-palette-as-autumnbrights.png)
 
 
 N> Metro palette is the default palette for both Series and Segment.
@@ -214,7 +214,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Custom palette in WPF Chart](Styling-and-Customization_images/palette_5.png)
+![WPF Chart Custom Palette](Styling-and-Customization_images/wpf-chart-custom-palette.png)
 
 
 You can define the custom palette for series as in the below code example:
@@ -265,7 +265,7 @@ chart.ColorModel = colorModel;
 
 {% endtabs %}
 
-![Custom palette in WPF Chart](Styling-and-Customization_images/palette_6.png)
+![WPF Chart Predefined Custom Palette](Styling-and-Customization_images/wpf-chart-predefined-custom-palette.png)
 
 
 ## Gradient Colors
@@ -371,7 +371,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gradient color chart series in WPF Chart](Styling-and-Customization_images/palette_10.png)
+![WPF Gradient Color Chart Series](Styling-and-Customization_images/wpf-gradient-color-chart-series.png)
 
 The following code sample and screenshot illustrates how to apply the gradient color using the [`Interior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) property of series with `LinearGradientBrush`.
 
@@ -432,7 +432,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gradient color in WPF Chart](Styling-and-Customization_images/palette_11.png)
+![WPF Chart Gradient Color](Styling-and-Customization_images/wpf-chart-gradient-color.png)
 
 
 ## SegmentColorPath
@@ -463,7 +463,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![SegmentColorPath in WPF Chart](Styling-and-Customization_images/segmentcolor.png)
+![WPF Chart SegmentColorPath](Styling-and-Customization_images/wpf-chart-segmentcolorpath.png)
 
 N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
 
@@ -555,7 +555,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Customizing legend in WPF Chart](Styling-and-Customization_images/palette_7.png)
+![WPF Chart Customizing Legends](Styling-and-Customization_images/wpf-chart-customizing-legends.png)
 
 
 If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details
@@ -682,7 +682,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing tooltip in WPF Chart](Styling-and-Customization_images/palette_8.png)
+![WPF Chart Customizing ToolTip](Styling-and-Customization_images/wpf-chart-customizing-tooltip.png)
 
 ## See also
 
