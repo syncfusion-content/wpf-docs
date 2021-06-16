@@ -44,7 +44,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Column chart type in WPF](Series_images/column.png)
+![WPF Column Chart](Series_images/wpf-column-chart.png)
 
 ## Bar Chart
 
@@ -79,7 +79,7 @@ BarSeries series = new BarSeries()
 
 {% endtabs %}
 
-![Bar chart type in WPF](Series_images/bar.png)
+![WPF Bar Chart](Series_images/wpf-bar-chart.png)
 
 ### Spacing
 
@@ -103,7 +103,7 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 {% endtabs %}
 
-![Column Spacing support in WPF](Series_images/spacing.png)
+![WPF Chart displays Spacing between Columns](Series_images/wpf-chart-spacing.png)
 
 **Segment Spacing**
 
@@ -151,4 +151,4 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Column SegmentSpacing support in WPF](Series_images/SegmentSpacing.png)
+![WPF Chart displays Column Segment Spacing](Series_images/wpf-chart-segment-spacing.png)

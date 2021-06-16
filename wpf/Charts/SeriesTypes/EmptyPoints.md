@@ -24,13 +24,13 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 By default, ShowEmptyPoints property is false. So the empty points will not be render as in below screenshots:
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_1.png)
+![Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-empty-point.png)
 
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_2.png)
+![Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-with-empty-point.png)
 
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_3.png)
+![Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-emptypoint.png)
 
 
 ## Display Empty Points
@@ -87,7 +87,7 @@ The following code examples shows how to display the empty points:
 
 {% endtabs %}
 
-![Displaying empty points in WPF Chart](EmptyPoints_images/emptypoint_4.png)
+![Highlighting Connected Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-connection.png)
 
 
 Since the [`EmptyPointValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointValue) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoint`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) as True.
@@ -137,7 +137,7 @@ The following code example shows the [`EmptyPointValue`](https://help.syncfusion
 
 {% endtabs %}
 
-![Displaying empty points in WPF Chart](EmptyPoints_images/emptypoint_5.png)
+![Highlighting Connected Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-highlight-emptypoint-connection.png)
 
 
 ## Customizing Empty Points
@@ -181,7 +181,7 @@ The following code example illustrates the use of [`EmptyPointStyle`](https://he
 
 {% endtabs %}
 
-![Customizing empty points in WPF Chart](EmptyPoints_images/emptypoint_6.png)
+![Customizing Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-customization.png)
 
 
 N> This is the default value for [`EmptyPointStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointStyle). So when you enable empty points using [`ShowEmptyPoints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) , empty point segment render with this [`EmptyPointInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointInterior).
@@ -235,7 +235,7 @@ This option is used to add Symbol for the empty points as in the below code exam
 
 {% endtabs %}
 
-![Adding symbol for empty points in WPF Chart](EmptyPoints_images/emptypoint_7.png)
+![Adding Symbol for Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-symbol.png)
 
 
 **Symbol and Interior**
@@ -289,7 +289,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Symbol and interior support in WPF Chart](EmptyPoints_images/emptypoint_8.png)
+![Empty Point with Symbol and Interior in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-symbol-and-interior.png)
 
 
 **Custom Symbol**
@@ -350,7 +350,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Custom symbol for empty points in WPF Chart](EmptyPoints_images/emptypoint_9.png)
+![Custom Symbol for Empty Points in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-custom-symbol.png)
 
 
 ## EmptyPoints and Series
@@ -359,14 +359,14 @@ The following section illustrates few chart types and its behavior with EmptyPoi
 
 **ColumnSeries** **with** **EmptyPoint** **as** **Average**
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_10.png)
+![Customizing Empty Point Column in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-column.png)
 
 
 **SplineSeries** **with** **EmptyPoint** **as** **Average**
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_11.png)
+![Spline with Empty Point in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-with-spline.png)
 
 
 **Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
 
-![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_12.png)
+![Accumulation with Empty Point in WPF Chart](EmptyPoints_images/wpf-chart-empty-point-accumulation.png)

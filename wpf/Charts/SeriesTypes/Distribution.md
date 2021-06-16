@@ -56,7 +56,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Histogram chart type in WPF](Series_images/histogram.png)
+![WPF Histogram Chart](Series_images/wpf-histogram-chart.png)
 
 
 You can customize interval using [`HistogramInterval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_HistogramInterval) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_ShowNormalDistributionCurve).
@@ -106,7 +106,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Interval customization support for histogram series in WPF Chart](Series_images/histogram_interval.png)
+![Customizing Interval for WPF Histogram Chart](Series_images/wpf-histogram-chart-interval.png)
 
 **CurveLineStyle**
 
@@ -169,4 +169,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adding CurveColor in WPF Chart](Series_images/CurveColor.png)
+![Customizing Curve Line Style in WPF Chart](Series_images/wpf-chart-curve-line-style.png)

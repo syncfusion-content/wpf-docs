@@ -45,7 +45,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Area chart type in WPF](Series_images/area.png)
+![WPF Area Chart](Series_images/wpf-area-chart.png)
 
 ## Step Area Chart
 
@@ -84,7 +84,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![StepArea chart type in WPF](Series_images/steparea.png)
+![WPF StepArea Chart](Series_images/wpf-step-area-chart.png)
 
 ## Closed Area Chart
 
@@ -125,4 +125,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed area chart type in WPF](Series_images/closedarea.png)
+![WPF Closed Area Chart](Series_images/wpf-closed-area-chart.png)

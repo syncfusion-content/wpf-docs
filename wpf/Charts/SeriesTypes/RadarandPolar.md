@@ -52,7 +52,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Radar chart type in WPF](Series_images/radar.png)
+![WPF Radar Chart](Series_images/wpf-radar-chart.png)
 
 
 ## Polar Chart
@@ -94,7 +94,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Polar chart type in WPF](Series_images/polar.png)
+![WPF Polar Chart](Series_images/wpf-polar-chart.png)
 
 
 The Radar and Polar charts having the following properties in common:
@@ -152,7 +152,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed polar series in WPF Chart](Series_images/isclosed.png)
+![WPF Polar Chart with Closed Path](Series_images/wpf-chart-closed-path.png)
 
 ### DrawType
 
@@ -199,7 +199,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WPF Chart](Series_images/drawtype_area.png)
+![WPF Polar Chart with Covered Area](Series_images/wpf-polar-chart-covered-area.png)
 
 **DrawType** **as** **Line**
 
@@ -246,7 +246,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WPF Chart](Series_images/drawtype_line.png)
+![Displaying Line Inside WPF Polar Chart](Series_images/wpf-polar-chart-with-line.png)
 
 ### Polar Angle
 
@@ -296,7 +296,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate0.png)
+![WPF Polar Chart with Zero Rotation](Series_images/wpf-polar-chart-with-zero-rotation.png)
 
 
 **Rotate90**
@@ -343,7 +343,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate90.png)
+![WPF Polar Chart with 90 Degree Rotation](Series_images/wpf-polar-chart-90-rotation.png)
 
 
 **Rotate180**
@@ -390,7 +390,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate180.png)
+![WPF Polar Chart with 180 Degree Rotation](Series_images/wpf-polar-chart-180-degree-rotation.png)
 
 
 **Rotate270**
@@ -437,4 +437,4 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate270.png)
+![WPF Polar Chart with 270 Degree Rotation](Series_images/wpf-polar-chart-270-degree-rotation.png)
