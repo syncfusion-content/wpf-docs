@@ -467,10 +467,10 @@ Gets or sets the width of the stroke line used to draw the shapes, in logical pi
 <td>
 Center</td><td>
 Point</td><td>
-Gets or sets the point object that defines the center of the circle, in latitude and longitude. This property only for 'MapCircle'. </td></tr>
+Gets or sets the point object that defines the center of the circle, in latitude and longitude. This property only for <b>MapCircle</b>. </td></tr>
 <tr>
 <td>
 Radius</td><td>
 Double</td><td>
-Gets or sets the value that defines the radius of the circle. This property only for 'MapCircle'.</td></tr>
+Gets or sets the value that defines the radius of the circle. This property only for <b>MapCircle</b>.</td></tr>
 </table>
