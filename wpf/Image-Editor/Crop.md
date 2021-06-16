@@ -110,7 +110,7 @@ editor.ToggleCropping(new Rect(25, 25, 50, 50), true);
 
 ![Circle cropping](Images/CircleCropping_Img.png) 
 
-Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) method with ratio parameter and optional parameter as true like following code sample to enable the circle format.
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) method with ratio parameter and optional parameter as true like following code sample to enable and maintain the circle format.
 
 {% tabs %} 
 
