@@ -87,7 +87,7 @@ private void Button_Click_1(object sender, RoutedEventArgs e)
 
 The following image shows the printing dialog window upon invoking print method.
 
-![SfChart Printing Dialog Window](Printing_images/Printing_img1.jpeg)
+![WPF Chart Printing Dialog Window](Printing_images/wpf-chart-printing-dialog-window.jpeg)
 
 
 

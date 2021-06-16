@@ -98,4 +98,4 @@ Deserialize the XML file from the given stream and returns the SfChart control o
 {% endtabs %} 
 
 
-![Serialization in WPF Charts](Serialization_images/Serialization.png)
+![WPF Chart Serialization](Serialization_images/wpf-chart-serialization.png)

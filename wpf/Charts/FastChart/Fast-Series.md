@@ -48,7 +48,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLine chart type in WPF](FastChart_Images/fastline.png)
+![WPF FastLine Chart Type](FastChart_Images/wpf-fastline-chart-type.png)
 
 The following line properties are available for FastLineSeries:
 
@@ -97,4 +97,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastStackingColumnBitmap chart type in WPF](FastChart_Images/faststackingcolumn.png)
+![ WPF FastStackingColumnBitmap Chart Type](FastChart_Images/wpf-faststackingcolumnbitmap-chart-type.png)
