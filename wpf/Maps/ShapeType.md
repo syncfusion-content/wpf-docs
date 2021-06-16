@@ -17,7 +17,7 @@ This feature provide supports to draw a polygon, polyline and point icon on the 
 
 ## Add shapes using point collection
 
-We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`SubShapeFilelayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
+We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`SubShapeFileLayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
 
     1.Polyline
     2.Polygon
