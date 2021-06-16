@@ -154,5 +154,35 @@ textBoxExt.ShowDropDownButton = true;
 
 ![DropdownIcon](Textbox_customization_images/DropDownIcon.png)
 
+## Setting the ClearButton 
+
+This feature allows to set the ClearButton for the TextBox control using the [ShowClearButton](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_ShowClearButton).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <editors:SfTextBoxExt
+            Width="300"
+            Height="40"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AutoCompleteMode="Suggest"
+            AutoCompleteSource="{Binding Employees}"
+            SearchItemPath="Name"
+            ShowClearButton="True"
+            ShowDropDownButton="True" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.ShowClearButton = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ClearButton](Textbox_customization_images/ClearButton.png)
+
+
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Textbox-customization) in GitHub
