@@ -62,9 +62,9 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digits
 
-You can change the decimal digits of text property in the `CurrencyTextBox` control using `CurrencyDecimalDigits` property. You can restrict the decimal digits of `Text` property value within maximum and minimum decimal digits in `CurrencyTextBox` control using `MinimumCurrencyDecimalDigits` and `MaximumCurrencyDecimalDigits` properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
+You can change the decimal digits format in the `CurrencyTextBox` control using `CurrencyDecimalDigits` property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using `MinimumCurrencyDecimalDigits` and `MaximumCurrencyDecimalDigits` properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
 
-N> If value of `MinimumCurrencyDecimalDigits` property is greater than `MaximumCurrencyDecimalDigits` property value, then text of `CurrencyTextBox` will be updated based on `MinimumCurrencyDecimalDigits` property value.
+N> If the value of `MinimumCurrencyDecimalDigits` property is greater than the value of `MaximumCurrencyDecimalDigits` property, the text of `CurrencyTextBox` will be updated based on value of `MinimumCurrencyDecimalDigits` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -84,9 +84,9 @@ currencyTextBox.MinimumCurrencyDecimalDigits = 1;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with max and min decimal digits](Restriction-or-Validation_images/maxandmin_decimaldigits.png)
+![CurrencyTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/currencytextbox-wpf-restrict-numberof-decimal-digits.png)
 
-When `MinimumCurrencyDecimalDigits`, `MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` are specified, `CurrencyDecimalDigits` property takes higher precedence and updates the text of `CurrencyTextBox` property. 
+When the value of `MinimumCurrencyDecimalDigits`, `MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties are specified, `CurrencyDecimalDigits` property takes higher precedence and updates the text of `CurrencyTextBox` property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -109,7 +109,7 @@ currencyTextBox.CurrencyDecimalDigits = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox with decimal digits](Restriction-or-Validation_images/currency_decimalDigits.png)
+![CurrencyTextBox WPF change decimal digits](Restriction-or-Validation_images/currencytextbox-wpf-decimaldigits.png)
 
 ## Read only mode
 
