@@ -450,7 +450,7 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-Fill</td><td>
+{{'Fill'|markdownify}} </td><td>
 Brush</td><td>
 Gets or sets the color used to fill the shape.</td></tr>
 <tr>
