@@ -346,3 +346,155 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 Here, we assigned the `IntegerEditor` custom editor for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
+
+## Use constructor with parameters in custom editor
+
+By default, `PropertyGrid` control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the `ConstructorParameter` property of `CustomEditor` class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
+
+1. Create a custom editor for the desired property item in `PropertyGrid`. Add constructor with parameters in the custom editor class.
+
+{% tabs %}
+{% highlight C# %}
+
+public class IntegerEditor : ITypeEditor
+{
+    UpDown upDown;
+    int DecimalDigits;
+
+    public IntegerEditor(int decimalDigits)
+    {
+        DecimalDigits = decimalDigits;
+    }
+    public void Attach(PropertyViewItem property, PropertyItem info)
+    {
+        if (info.CanWrite)
+        {
+            var binding = new Binding("Value")
+            {
+                Mode = BindingMode.TwoWay,
+                Source = info,
+                ValidatesOnExceptions = true,
+                ValidatesOnDataErrors = true
+            };
+            BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+        }
+        else
+        {
+            upDown.IsEnabled = false;
+            var binding = new Binding("Value")
+            {
+                Source = info,
+                ValidatesOnExceptions = true,
+                ValidatesOnDataErrors = true
+            };
+            BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+        }
+    }
+    public object Create(PropertyInfo propertyInfo)
+    {
+         upDown = new UpDown()
+        {
+            ApplyZeroColor = false,
+            MinValue = 0,
+            MaxValue = 50,
+            NumberDecimalDigits = DecimalDigits
+        };
+        return upDown;
+    }
+    
+    public void Detach(PropertyViewItem property)
+    {
+
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+2. Create `Employee` and `ViewModel` classes with required properties. Pass the required objects as object array in `ConstructorParameter` property of `CustomEditor` as shown below. 
+
+{% tabs %}
+{% highlight C# %}
+
+public class Employee
+{
+    public string Country { get; set; }
+    public int Experience { get; set; }
+    public string Name { get; set; }
+    public double Age { get; set; }
+}
+
+class ViewModel 
+{
+    public object SelectedEmployee { get; set; }
+
+    private CustomEditorCollection customEditorCollection = new CustomEditorCollection();
+
+    public CustomEditorCollection CustomEditorCollection
+    {
+        get { return customEditorCollection; }
+        set { customEditorCollection = value; }
+    }
+
+    public int DecimalDigits { get; set; }
+
+    public ViewModel()
+    {
+        Initialization();
+    }
+
+    private void Initialization()
+    {
+        SelectedEmployee = new Employee() { Age = 25, Name = "mark",  Country = "United Kingdom" ,Experience = 3 };
+        DecimalDigits = 1;
+        CustomEditor editor1 = new CustomEditor() 
+        {
+            EditorType = typeof(IntegerEditor), 
+            ConstructorParameters = new object[] {DecimalDigits} ,
+            HasPropertyType = true,
+            PropertyType = typeof(double)
+        };
+
+        CustomEditorCollection.Add(editor1);
+
+        }
+    }
+
+{% endhighlight  %}
+{% highlight xaml %}
+<syncfusion:PropertyGrid CustomEditorCollection="{Binding CustomEditorCollection}" SelectedObject="{Binding SelectedEmployee}" 
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight  %}
+{% endtabs %}
+
+Since we have assigned the custom editor for property type **double**, the custom editor will be applied for `Age` property item. You can also create custom editor and set value for ConstructorParameter property in xaml file as shown below.
+
+{% highlight xaml %}
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" 
+                            x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+    <syncfusion:PropertyGrid.CustomEditorCollection>
+            <syncfusion:CustomEditorCollection>
+                <syncfusion:CustomEditor  PropertyType="{x:Type a:Double}" HasPropertyType="True" EditorType="{x:Type local:IntegerEditor}" >
+                    <syncfusion:CustomEditor.ConstructorParameters>
+                        <x:Array Type="{x:Type a:Object}">
+                            <a:Int32>1</a:Int32>
+                        </x:Array>
+                    </syncfusion:CustomEditor.ConstructorParameters>
+                </syncfusion:CustomEditor>
+            </syncfusion:CustomEditorCollection>
+        </syncfusion:PropertyGrid.CustomEditorCollection>
+</syncfusion:PropertyGrid>
+
+{% endhighlight  %}
+{% endtabs %}
+
+![ConstructorParameter passed in CustomEditor](CustomEditor-support_images/propertygrid-wpf-constructor-with-parameter-customeditor.png)
+
