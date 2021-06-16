@@ -110,6 +110,21 @@ editor.ToggleCropping(new Rect(25, 25, 50, 50), true);
 
 ![Circle cropping](Images/CircleCropping_Img.png) 
 
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping) method with ratio parameter and optional parameter as true like following code sample to enable the circle format.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+editor.ToggleCropping(2, 2, true);
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Circle cropping](Images/CircleCroppingRatio.png) 
+
+
 ### Crop
 
 After selecting the crop area, use the [`crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method in the image editor to crop the selected portion as demonstrated in the following method.
