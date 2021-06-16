@@ -306,7 +306,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ## Add shapes using map elements collection
 
-We can provide input as the Geo points collection in sample to draw a multiple shapes in single layer. We can add more number of shapes using MapElements property in layer. There are three type of shapes available in map element.
+We can provide input as the Geo points collection in sample to draw a multiple shapes in single layer. We can add more number of shapes using `MapElements` property in layer. There are three type of shapes available in map element.
 
     1.Polyline
     2.Polygon
