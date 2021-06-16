@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlighting Matched Text in WPF Autocomplete (SfTextBoxExt)
 
-Highlight matching and unmatching characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is None. The matching text can be highlighted in the following two ways:
+Highlight matching and unmatched characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is None. The matching text can be highlighted in the following two ways:
 
 * First occurrence
 * Multiple occurrence
@@ -79,7 +79,7 @@ textBoxExt.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
 
 ## Unmatched
 
-It highlights unmatching characters in the suggestion list.
+It highlights unmatched characters in the suggestion list.
 
 {% tabs %}
 
