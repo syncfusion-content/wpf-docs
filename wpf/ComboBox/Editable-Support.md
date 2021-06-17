@@ -85,7 +85,7 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ComboBoxAdv AutoComplete Suggest Mode](ComboBoxAdv_images/WPF-ComboBoxAdv-AutoComplete-Suggest-Mode.gif)
+![WPF ComboBoxAdv AutoComplete suggest mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-suggest-mode.gif)
 
 N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection.
 
@@ -110,4 +110,4 @@ combobox.AutoCompleteMode = AutoCompleModes.Append;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ComboBoxAdv AutoComplete Append Mode](ComboBoxAdv_images/WPF-ComboBoxAdv-AutoComplete-Append-Mode.gif)
+![WPF ComboBoxAdv AutoComplete append mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-append-mode.gif)
