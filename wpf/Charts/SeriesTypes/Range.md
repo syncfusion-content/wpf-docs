@@ -52,7 +52,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![HiLo Chart support in WPF](Series_images/hilo.png)
+![WPF HiLo Chart](Series_images/wpf-hilo-chart.png)
 
 ## Range Column Chart
 
@@ -91,7 +91,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeColumn chart type in WPF](Series_images/rangeseries.png)
+![WPF Range Column Chart](Series_images/wpf-range-column-chart.png)
 
 ## Range Area Chart
 
@@ -132,7 +132,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in WPF](Series_images/rangearea.png)
+![WPF Range Area Chart](Series_images/wpf-range-area-chart.png)
 
 
 The APIs present in the RangeArea series are,
@@ -179,7 +179,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in WPF](Series_images/rangearea_closed.png)
+![Displaying Closed Range Area in WPF Chart](Series_images/wpf-chart-closed-range-area.png)
 
 ## Spline Range Area Chart
 
@@ -222,4 +222,4 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-![Spline Range Area Series ](Series_images/splinerangearea.png)
+![WPF Spline Range Area Chart](Series_images/wpf-spline-range-area-chart.png)

@@ -50,7 +50,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLineBitmap chart type in WPF](FastChart_Images/fastlinebitmap.png)
+![WPF FastLineBitmap Chart Type](FastChart_Images/wpf-fastlinebitmap-chart-type.png)
 
 Like FastLineSeries, this bitmap series is also having line properties. 
 
@@ -95,7 +95,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastLine Chart in WPF](FastChart_Images/fastlinealiasing.png)
+![WPF AntiAliasing support for FastLine Chart](FastChart_Images/wpf-anti-aliasing-support-for-fastline-chart.png)
 
 
 ## Fast Column Bitmap
@@ -135,7 +135,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastColumnBitmap chart type in WPF](FastChart_Images/fastcolumn.png)
+![WPF FastColumnBitmap Chart Type](FastChart_Images/wpf-fastcolumnbitmap-chart-type.png)
 
 ## Fast Bar Bitmap
 
@@ -174,7 +174,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastBarBitmap chart type in WPF](FastChart_Images/fastbar.png)
+![WPF FastBarBitmap Chart Type](FastChart_Images/wpf-fastbarbitmap-chart-type.png)
 
 
 ## Fast Candle Bitmap
@@ -222,7 +222,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastCandleBitmap chart type in WPF](FastChart_Images/fastcandle.png)
+![WPF FastCandleBitmap Chart Type](FastChart_Images/wpf-fastcandlebitmap-chart-type.png)
 
 
 ## Fast HiLo Bitmap
@@ -264,7 +264,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastHiLoBitmap chart type in WPF](FastChart_Images/fasthilo.png)
+![WPF FastHiLoBitmap Chart Type](FastChart_Images/wpf-fasthilobitmap-chart-type.png)
 
 ## Fast OHLC Bitmap
 
@@ -309,7 +309,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastHiLoOpenCloseBitmap chart type in WPF](FastChart_Images/fastohlc.png)
+![WPF Fast OHLC Bitmap Chart Type](FastChart_Images/wpf-fast-ohlc-bitmap-chart-type.png)
 
 ## Fast Scatter Bitmap
 
@@ -356,7 +356,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastScatterBitmap chart type in WPF](FastChart_Images/fastscatter.png)
+![WPF FastScatterBitmap Chart Type](FastChart_Images/wpf-fastscatterbitmap-chart-type.png)
 
 
 ## Fast Step Line Bitmap
@@ -396,7 +396,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastStepLineBitmap chart type in WPF](FastChart_Images/faststepline.png)
+![WPF FastStepLineBitmap Chart Type](FastChart_Images/wpf-faststepline-bitmap-chart-type.png)
 
 The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of FastStepLineBitmapSeries as in below code snippet:
 
@@ -435,7 +435,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WPF](FastChart_Images/faststepline_alias.png)
+![WPF AntiAliasing support for FastStepLineBitmap Chart Type](FastChart_Images/wpf-antialiasing-support-for-faststeplinebitmap-chart-type.png)
 
 
 ## Fast Range Area
@@ -479,7 +479,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series](FastChart_Images/fastrangeareabitmapseries.png)
+![WPF Chart Fast Range Area Bitmap Series](FastChart_Images/wpf-chart-fast-range-area-bitmap-series.png)
 
 The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastRangeAreaBitmapSeries_EnableAntiAliasing) property of FastRangeAreaBitmapSeries as in below code snippet:
 
@@ -524,4 +524,4 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](FastChart_Images/fastrangeareabitmapantialiasing.png)
+![WPF Chart Fast Range Area Bitmap Series With Anit-Aliasing](FastChart_Images/wpf-chart-fast-range-area-bitmap-with-anti-aliasing.png)

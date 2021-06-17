@@ -44,7 +44,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid chart type in WPF](Series_images/pyramid.png)
+![WPF Pyramid Chart](Series_images/wpf-pyramid-chart.png)
 
 
 The [`PyramidMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) pyramid segments.
@@ -86,7 +86,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in WPF Chart](Series_images/pyramidsurface.png)
+![WPF Chart with Surface Pyramid Mode](Series_images/wpf-chart-pyramid-surface.png)
 
 
 **PyramidMode** **as** **Linear**
@@ -126,7 +126,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in WPF Chart](Series_images/pyramidlinear.png)
+![WPF Chart with Linear Pyramid Mode](Series_images/wpf-chart-pyramid-linear.png)
 
 ## Funnel Chart
 
@@ -163,7 +163,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel chart type in WPF](Series_images/funnel.png)
+![WPF Funnel Chart](Series_images/wpf-funnel-chart.png)
 
 
 ### Funnel Mode
@@ -205,7 +205,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in WPF Chart](Series_images/valueisheight.png)
+![WPF Chart displays Funnel based on Height](Series_images/wpf-funnel-chart-based-on-height.png)
 
 **ValueIsWidth**
 
@@ -242,7 +242,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in WPF Chart](Series_images/valueiswidth.png)
+![WPF Chart displays Funnel based on Width](Series_images/wpf-funnel-chart-based-on-width.png)
 
 ### Explode Segments
 
@@ -290,7 +290,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding the segments of accumlation series in WPF Chart](Series_images/funnelexplode_1.png)
+![WPF Chart displays Exploded Segments of Accumlation Series](Series_images/wpf-funnel-chart-exploded-mode.png)
 
 **Gap** **Ratio**
 
@@ -329,7 +329,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gap ratio between segments in WPF Chart](Series_images/funnelexplode_2.png)
+![WPF Funnel Chart displays Gap between Segments](Series_images/wpf-funnel-chart-with-gaps.png)
 
 ## See also
 

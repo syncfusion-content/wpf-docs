@@ -73,7 +73,7 @@ chart.Watermark.Content = new TextBlock()
 
 {% endtabs %}
 
-![Text watermark support in WPF Chart](Watermark_images/Watermark_1.png)
+![WPF Chart Text Watermark](Watermark_images/wpf-chart-text-watermark.png)
 
 ## Adding image watermark
 
@@ -127,7 +127,7 @@ chart.Watermark.Content = new Image()
 
 {% endtabs %}
 
-![Image watermark support in WPF Chart](Watermark_images/Watermark_2.png)
+![WPF Chart Image Watermark](Watermark_images/wpf-chart-image-watermark.png)
 
 ## See also
 

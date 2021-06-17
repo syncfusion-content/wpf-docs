@@ -79,7 +79,7 @@ The following code example shows how to group the stacking series.
 
 {% endtabs %}
 
-![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
+![WPF Grouping Stacked Chart](Series_images/wpf-grouping-stacked-chart.png)
 
 ## See also
 

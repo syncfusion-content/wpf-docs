@@ -54,7 +54,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WPF](Series_images/bubble.png)
+![WPF Bubble Chart](Series_images/wpf-bubble-chart.png)
 
 **Show Zero Bubbles**
 
@@ -81,7 +81,7 @@ series.ShowZeroBubbles = true;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WPF](Series_images/showBubble_true.png)
+![WPF Chart displays Zero Bubbles](Series_images/wpf-chart-zero-bubble.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubblesProperty) value is false.
 
@@ -105,7 +105,7 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
+![WPF Chart without Zero Bubbles](Series_images/wpf-chart-without-zero-bubbles.png)
 
 ## Scatter Chart
 
@@ -148,7 +148,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Scatter chart type in WPF](Series_images/scatter.png)
+![WPF Scatter Chart](Series_images/wpf-scatter-chart.png)
 
 ## See also
 

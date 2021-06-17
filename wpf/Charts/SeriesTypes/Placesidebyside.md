@@ -13,7 +13,7 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Series_images/Area_img6.jpeg)
+![Column Placed Side by Side in WPF Chart](Series_images/wpf-chart-placed-side-by-side.jpeg)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SideBySideSeriesPlacement) as false.
@@ -141,7 +141,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Series_images/Area_img7.jpeg)
+![Column Placed One over Another in WPF Chart](Series_images/wpf-chart-column-placed-one-over-another.jpeg)
 
 
 N> As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
