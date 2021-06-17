@@ -1081,7 +1081,7 @@ The `HeaderItems` property of the RibbonWindow allows you to load any control di
 
 {% endtabs %}
 
-![Adding items using HeaderItems](GettingStarted_images/HeaderItems.jpg)
+![WPF Ribbon Adding items using headeritems](GettingStarted_images/wpf-ribbon-adding-items-using-headeritems.jpg)
 
 ### Adding items using HeaderItemsSource
 
@@ -1145,7 +1145,7 @@ The `HeaderItemsSource` property of the RibbonWindow allows you to bind a collec
 
 {% endtabs %}
 
-![Adding items using HeaderItemSource](GettingStarted_images/HeaderItemSource.jpg)
+![WPF Ribbon Adding items using headeritemssource](GettingStarted_images/wpf-ribbon-adding-items-using-headeritemssource.jpg)
 
 ### Setting HeaderItemTemplate
 
@@ -1203,7 +1203,7 @@ The RibbonWindow allows you to customize the visual appearance of the items stor
 
 {% endtabs %}
 
-![Setting HeaderItemTemplate](GettingStarted_images/HeaderItemTemplate.jpg)
+![WPF Ribbon Setting headeritemtemplate](GettingStarted_images/wpf-ribbon-setting-headeritemtemplate.jpg)
 
 ### Setting HeaderItemTemplateSelector
 
@@ -1288,7 +1288,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 
 {% endtabs %}
 
-![Setting HeaderItemTemplateSelector](GettingStarted_images/HeaderItemTemplateSelector.jpg)
+![WPF Ribbon Setting headeritemtemplateselector](GettingStarted_images/wpf-ribbon-setting-headeritemtemplateselector.jpg)
 
 N>[View sample in GitHub]()
 
