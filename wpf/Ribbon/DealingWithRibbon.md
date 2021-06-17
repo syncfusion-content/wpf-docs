@@ -631,7 +631,7 @@ this.help.Position = Syncfusion.Windows.Tools.Controls.HorizontalPosition.Right;
 
 {% endtabs %}
 
-![Image set for RibbonBar with Position as Right](RibbonResizeWindow-images/RibbonBar_Position.png)
+![WPF Ribbon RibbonBar positioning](RibbonResizeWindow-images/wpf-ribbon-ribbonbar-positioning.png)
 
 ## Setting collapse image for RibbonBar
 
