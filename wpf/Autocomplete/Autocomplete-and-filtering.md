@@ -392,9 +392,9 @@ When the entered item is not in the suggestion list, AutoComplete displays a tex
 
 ![NoResultsFoundTemplate](AutoComplete_and_filtering_images/NoResultsFoundTemplate.png)
 
-## Restricting the maximum display of item 
+## Restricting the maximum items filtered
 
-[MaximumSuggestionsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaximumSuggestionsCount) property used to restrict the number of suggestions displayed in suggestion box. 
+The [MaximumSuggestionsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MaximumSuggestionsCount) property is used to restrict the number of suggestions displayed in the suggestion box.
 
 {% tabs %}
 {% highlight xaml %}

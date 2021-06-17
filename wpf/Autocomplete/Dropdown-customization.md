@@ -209,9 +209,9 @@ textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 {% endhighlight %}
 {% endtabs %}
 
-## Setting the selected item background
+## Customizing the SelectedItem background
 
-The [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectionBackgroundColor) property is used to set the background color of selected item in suggestion box. 
+The [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectionBackgroundColor) property is used to set the background color of the selected item in the suggestion box.
 
 {% tabs %}
 

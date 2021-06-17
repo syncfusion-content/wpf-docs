@@ -9,13 +9,15 @@ documentation: ug
 
 # Highlighting Matched Text in WPF Autocomplete (SfTextBoxExt)
 
-Highlight matching and unmatched characters in a suggestion list to pick an item with more clarity using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property. The default value is None. The matching text can be highlighted in the following two ways:
+By using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_TextHighlightMode) property, highlight matching and unmatched characters in a suggestion list to pick an item with more clarity. The default value is None. The matching text can be highlighted in the following two ways:
 
 * First occurrence
 * Multiple occurrence
 * Unmatched
 
 The text highlight can be indicated by customizing the color of the characters using [HighlightedTextColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextColor) property and style of the characters using [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property.
+
+N> The [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property style taget type is [Run](https://docs.microsoft.com/en-us/dotnet/api/system.windows.documents.run?view=net-5.0).
 
 ## First occurrence
 
