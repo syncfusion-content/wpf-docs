@@ -347,6 +347,80 @@ Here, we assigned the `IntegerEditor` custom editor for the integer type propert
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
+## Assign custom editor using the editor type
+
+You can also use the `EditorType` property of `CustomEditor` class to apply custom editor for multiple properties which contain the same property type. The default value of the `EditorType` property is **null**. 
+
+You can set the value for `EditorType` property when custom editor is initialized in `ViewModel` class as shown below.
+
+{% tabs %}
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid CustomEditorCollection="{Binding CustomEditorCollection}" 
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+   </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+public class Employee
+{
+    public string Country { get; set; }
+    public double Experience { get; set; }
+    public string Name { get; set; }
+    public double Age { get; set; }
+}
+
+class ViewModel 
+{
+    public object SelectedEmployee { get; set; }
+
+    private CustomEditorCollection customEditorCollection = new CustomEditorCollection();
+    public CustomEditorCollection CustomEditorCollection
+    {
+        get { return customEditorCollection; }
+        set { customEditorCollection = value; }
+    }
+
+    public ViewModel()
+    {
+         SelectedEmployee = new Employee() { Age = 25, Name = "mark", Experience = 5, EmailID = "mark@gt.com" };
+        CustomEditor editor1 = new CustomEditor()
+        {
+            EditorType = typeof(IntegerEditor),
+            HasPropertyType = true,
+            PropertyType = typeof(double)
+        };
+
+        CustomEditorCollection.Add(editor1);
+
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+You can also set value for `CustomEditorType` property in the xaml file as shown below.
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" 
+                            x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+    <syncfusion:PropertyGrid.CustomEditorCollection>
+            <syncfusion:CustomEditorCollection>
+                <syncfusion:CustomEditor  PropertyType="{x:Type a:Double}" HasPropertyType="True" EditorType="{x:Type local:IntegerEditor}" />
+            </syncfusion:CustomEditorCollection>
+        </syncfusion:PropertyGrid.CustomEditorCollection>
+</syncfusion:PropertyGrid>
+
+![CustomEditor applied for integer type properties](CustomEditor-support_images/CustomEditor-Collection2.png)
+
 ## Use constructor with parameters in custom editor
 
 By default, `PropertyGrid` control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the `ConstructorParameter` property of `CustomEditor` class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
@@ -474,7 +548,9 @@ class ViewModel
 
 Since we have assigned the custom editor for property type **double**, the custom editor will be applied for `Age` property item. You can also create custom editor and set value for ConstructorParameter property in xaml file as shown below.
 
+{% tabs %}
 {% highlight xaml %}
+
 <syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" 
                             x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.DataContext>
@@ -485,7 +561,7 @@ Since we have assigned the custom editor for property type **double**, the custo
                 <syncfusion:CustomEditor  PropertyType="{x:Type a:Double}" HasPropertyType="True" EditorType="{x:Type local:IntegerEditor}" >
                     <syncfusion:CustomEditor.ConstructorParameters>
                         <x:Array Type="{x:Type a:Object}">
-                            <a:Int32>1</a:Int32>
+                            <a:Double>1</a:Double>
                         </x:Array>
                     </syncfusion:CustomEditor.ConstructorParameters>
                 </syncfusion:CustomEditor>
