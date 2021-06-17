@@ -1221,7 +1221,7 @@ In the below code snippet, the `SizeReductionOrder` property in the **Home** [`R
 
 {% endtabs %}
 
-![Resize Ribbon Window based on collapse order](RibbonResizeWindow-images/ResizeBasedOnCollapseOrder.gif)
+![WPF Ribbon Resize based on collapse order](RibbonResizeWindow-images/wpf-ribbon-resize-based-on-collapse-order.gif)
 
 N> View sample in GitHub.
 
