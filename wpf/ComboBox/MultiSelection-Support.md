@@ -190,7 +190,7 @@ combobox.EnableToken = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF ComboBoxAdv Token support](ComboBoxAdv_images/WPF-ComboBoxAdv-Token-support.gif)
+![WPF ComboBoxAdv Token support](ComboBoxAdv_images/wpf-comboboxadv-token-support.gif)
 
 N> Only the multiselection mode has token support. ComboBox's text area height will be increased or decreased automatically based on the placement of the selected items.
 
@@ -198,7 +198,7 @@ N> Only the multiselection mode has token support. ComboBox's text area height w
 
 You can type any text in textbox, and it will be added as a token only if it matches the dropdown items.
 
-![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/WPF-ComboBoxAdv-Editing-support.gif)
+![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/wpf-comboboxadv-editing-support.gif)
 
 ### Keyboard access
 
