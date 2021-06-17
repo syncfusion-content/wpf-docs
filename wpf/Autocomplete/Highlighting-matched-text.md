@@ -17,7 +17,7 @@ By using the [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 The text highlight can be indicated by customizing the color of the characters using [HighlightedTextColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextColor) property and style of the characters using [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property.
 
-N> The [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property style taget type is [Run](https://docs.microsoft.com/en-us/dotnet/api/system.windows.documents.run?view=net-5.0).
+N> The [HighlightedTextStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_HighlightedTextStyle) property style target type is [Run](https://docs.microsoft.com/en-us/dotnet/api/system.windows.documents.run?view=net-5.0).
 
 ## First occurrence
 
