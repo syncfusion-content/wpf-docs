@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shape Types in WPF Maps control | Syncfusion
-description: Learn here all about Shape Types support in Syncfusion WPF Maps (SfMaps) control, its elements and more.
+description: Learn about the Shape Types support in the Syncfusion WPF Maps (SfMaps) control, including its elements and more.
 platform: wpf
 control: SfMaps
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Types in WPF Maps (SfMaps)
 
-This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
+This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as Geo points to draw shapes in two different ways:
 
     1.Add shapes using point collection
     2.Add shapes using map elements collection
@@ -17,7 +17,7 @@ This feature provide supports to draw a polygon, polyline and point icon on the 
 
 ## Add shapes using point collection
 
-We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`SubShapeFileLayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
+To draw a shape, you can provide input as a Geo point collection in sample. You can also add more number of shapes by using Maps [`SubShapeFileLayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) support. In shape file layer, there are three type of shapes that can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
 
     1.Polyline
     2.Polygon
@@ -25,7 +25,7 @@ We can provide input as the Geo point collection in sample to draw a shape. We c
     
 ### Polygon
 
-Polygon is a two-dimensional surface stored as a sequence of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Mostly the polygon shape type defines a group of land, water bodies, and other features that have a spatial extent.
+A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -134,7 +134,7 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
 
 ### Polyline
 
-The polyline is a shape that has a dimension of 1. It is called a simple line if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. 
+A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,7 +242,7 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
 
 ### Point icon
 
-A point icon is shape with a dimension of 0 that occupies a single location in coordinate space. A point icon has a single x, y coordinate value. The point icons are often used to define features such as oil wells, landmarks, and elevations.
+A point icon is a shape with a dimension of 0 that occupies a single location in coordinate space. A point icon has a single x, y coordinate value. The point icons are often used to define features such as oil wells, landmarks, and elevations.
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,11 +316,11 @@ A point icon is shape with a dimension of 0 that occupies a single location in c
 
 ### Customization of points
 
-The size, shape, and position of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize) , [`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon) , [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment) and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of shape file layer.
+The size, shape, and position of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize), [`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon), [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment), and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of the shape file layer.
 
 ## Add shapes using map elements collection
 
-We can provide input as the Geo points collection in sample to draw a multiple shapes in single layer. We can add more number of shapes using `MapElements` property in layer. There are three type of shapes available in map element.
+You can provide input as a Geo points collection in sample to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
 
     1.Polyline
     2.Polygon
@@ -437,10 +437,10 @@ We can provide input as the Geo points collection in sample to draw a multiple s
 
 ### Customization of map elements
 
-The following properties are used to customize `MapPolygon`, `MapPolyline` and `MapCircle`.
+The following properties are used to customize `MapPolygon`, `MapPolyline`, and `MapCircle`.
 
 * `Fill` - Gets or sets the color used to fill the shape.
 * `Stroke` - Gets or sets the color used to draw the shape stroke.
 * `StrokeThickness` - Gets or sets the width of the stroke line used to draw the shapes, in logical pixels.
-* `Center` - Gets or sets the point object that defines the center of the circle, in latitude and longitude. This property only for `MapCircle`.
-* `Radius` - Gets or sets the value that defines the radius of the circle. This property only for `MapCircle`.
+* `Center` - Gets or sets the point object in latitude and longitude that defines the center of the circle. This property is only available for `MapCircle`.
+* `Radius` - Gets or sets the value that defines the radius of the circle. This property is only available for `MapCircle`.
