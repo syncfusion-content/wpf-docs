@@ -425,6 +425,8 @@ You can also set value for `CustomEditorType` property in the xaml file as shown
 
 By default, `PropertyGrid` control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the `ConstructorParameter` property of `CustomEditor` class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
 
+N> `ConstructorParameter` property will work only if a value is applied to the `EditorType` property in the `CustomEditor` class, else the default constructor with no parameters will only be invoked.
+
 1. Create a custom editor for the desired property item in `PropertyGrid`. Add constructor with parameters in the custom editor class.
 
 {% tabs %}
