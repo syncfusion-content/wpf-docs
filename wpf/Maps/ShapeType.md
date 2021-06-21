@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Types in WPF Maps (SfMaps)
 
-This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as Geo points to draw shapes in two different ways:
+This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as Geo points to draw shapes in two different ways:
 
     1.Add shapes using map element collection
     2.Add shapes using point collection
@@ -18,26 +18,13 @@ This feature allows you to draw a polygon, polyline, or point icon on the map. Y
 
 You can provide input as a Geo points collection in sample to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
 
-<table>
-<tr>
-<th>
-Shape</th><th>
-Description</th></tr>
-<tr>
-<td>
-Polyline </td><td>
-A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.</td></tr>
-<tr>
-<td>
-Polygon</td><td>
-A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.</td></tr>
-<tr>
-<td>
-Circle</td><td>
-A Circle icon is a shape with a dimension of 0 that occupies a single location in coordinate space. A circle icon has a single x, y coordinate value. The circle icons are often used to define features such as oil wells, landmarks, and elevations.</td></tr>
-</table>
+    1.Polygon
+    2.Polyline
+    3.Circle
 
-Refer to the following code sample for polygon shapes.
+### Polygon
+
+A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -147,20 +134,41 @@ Refer to the following code sample for polygon shapes.
 
 ![Multi polygon shape support in WPF Maps](Shape-Types/PolygonShape.png)
 
-Refer to the following code sample for polyline and circle shapes.
+### Polyline
+
+A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
 
-              <maps:SfMap x:Name="Maps" >
+      <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <Image Source="pin1.png" Height="30" Margin="0,-20,0,0" />
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <maps:SfMap x:Name="Maps" >
             <maps:SfMap.Layers>
                 <maps:ImageryLayer  x:Name="layer">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer">
-                            <maps:SubShapeFileLayer.MapElements>                               
+                        <maps:SubShapeFileLayer x:Name="subLayer" MarkerVerticalAlignment="Near"
+                                                MarkerTemplate="{StaticResource markerTemplate}"
+                                                Markers="{Binding Models}">
+                            <maps:SubShapeFileLayer.MapElements>
 
                                 <maps:MapPolyline Stroke="Black">
                                     <maps:MapPolyline.Points>
+                                        <Point>
+                                            <Point.X>39.6737</Point.X>
+                                            <Point.Y>-100.5</Point.Y>
+                                        </Point>
                                         <Point>
                                             <Point.X>61.35</Point.X>
                                             <Point.Y>18.131</Point.Y>
@@ -172,39 +180,13 @@ Refer to the following code sample for polyline and circle shapes.
                                     </maps:MapPolyline.Points>
                                 </maps:MapPolyline>
 
-                                <maps:MapCircle Fill="Black">
-                                    <maps:MapCircle.Center>
-                                        <Point>
-                                            <Point.X>61.35</Point.X>
-                                            <Point.Y>18.131</Point.Y>
-                                        </Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
-                                <maps:MapCircle Fill="Black">
-                                    <maps:MapCircle.Center>
-                                        <Point>
-                                            <Point.X>-32.259</Point.X>
-                                            <Point.Y>145.4214</Point.Y>
-                                        </Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
-                                <maps:MapCircle Fill="Red">
-                                    <maps:MapCircle.Center>
-                                        <Point>
-                                    <Point.X>36.3305</Point.X>
-                                    <Point.Y>-77.5437</Point.Y>
-                                </Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
                             </maps:SubShapeFileLayer.MapElements>
                         </maps:SubShapeFileLayer>
                     </maps:ImageryLayer.SubShapeFileLayers>
                 </maps:ImageryLayer>
             </maps:SfMap.Layers>
         </maps:SfMap>
+    </Grid>
 
 {% endhighlight %}
 
@@ -217,32 +199,148 @@ Refer to the following code sample for polyline and circle shapes.
         {
             InitializeComponent();
              
-	    SfMap maps = new SfMap();
+	    ViewModel viewModel = new ViewModel();
+            SfMap maps = new SfMap();
             ImageryLayer layer = new ImageryLayer();
             SubShapeFileLayer subLayer = new SubShapeFileLayer();
-
+            subLayer.Markers = viewModel.Models;
+            subLayer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
+            subLayer.MarkerVerticalAlignment = MarkerAlignment.Near;
             MapPolyline mapPolyline = new MapPolyline();
             mapPolyline.Stroke = new SolidColorBrush(Colors.Black);
             mapPolyline.Points = new ObservableCollection<Point>()
             {
+                new Point(39.6737, -100.5),
                 new Point(61.35, 18.131),
                 new Point(-32.259, 145.4214)
             };
             subLayer.MapElements.Add(mapPolyline);
 
+            layer.SubShapeFileLayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+
+    public class ViewModel
+    {
+        public ObservableCollection<Model> Models { get; set; }
+        public ViewModel()
+        {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Label = "USA ", Latitude = "39.6737", Longitude = "-100.5" });
+            this.Models.Add(new Model() { Label = "Swedan ", Latitude = "61.35", Longitude = "18.131" });
+            this.Models.Add(new Model() { Label = "Australia ", Latitude = "-32.259", Longitude = "145.4214" });
+        }
+    }
+
+    public class Model
+    {
+        public string Label { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multi shapes in single layer support in WPF Maps](Shape-Types/PolylineShape.png)
+
+### Circle
+
+A Circle icon is a shape with a dimension of 0 that occupies a single location in coordinate space. A circle icon has a single x, y coordinate value. The circle icons are often used to define features such as oil wells, landmarks, and elevations.
+
+{% tabs %}
+{% highlight xaml %}
+
+             <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <Image Source="pin1.png" Height="30" Margin="0,-20,0,0" />
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <maps:SfMap x:Name="Maps" >
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer  x:Name="layer">
+                    <maps:ImageryLayer.SubShapeFileLayers>
+                        <maps:SubShapeFileLayer x:Name="subLayer" MarkerVerticalAlignment="Near"
+                                                MarkerTemplate="{StaticResource markerTemplate}"
+                                                Markers="{Binding Models}">
+                            <maps:SubShapeFileLayer.MapElements>
+
+                                 <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        <Point>
+                                            <Point.X>39.6737</Point.X>
+                                            <Point.Y>-100.5</Point.Y>
+                                        </Point>
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+                                <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        <Point>
+                                            <Point.X>61.35</Point.X>
+                                            <Point.Y>18.131</Point.Y>
+                                        </Point>
+                                       
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+                                <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        
+                                        <Point>
+                                            <Point.X>-32.259</Point.X>
+                                            <Point.Y>145.4214</Point.Y>
+                                        </Point>
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+
+                            </maps:SubShapeFileLayer.MapElements>
+                        </maps:SubShapeFileLayer>
+                    </maps:ImageryLayer.SubShapeFileLayers>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        
+        public MyPage()
+        {
+            InitializeComponent();
+             
+	    ViewModel viewModel = new ViewModel();
+            SfMap maps = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            SubShapeFileLayer subLayer = new SubShapeFileLayer();
+            subLayer.Markers = viewModel.Models;
+            subLayer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
+            subLayer.MarkerVerticalAlignment = MarkerAlignment.Near;
             MapCircle mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
+            mapCircle.Center = new Point(39.6737, -100.5);
+            subLayer.MapElements.Add(mapCircle);
+
+            mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
             mapCircle.Center = new Point(61.35, 18.131);
-            mapCircle.Fill = new SolidColorBrush(Colors.Black);
             subLayer.MapElements.Add(mapCircle);
 
             mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
             mapCircle.Center = new Point(-32.259, 145.4214);
-            mapCircle.Fill = new SolidColorBrush(Colors.Black);
-            subLayer.MapElements.Add(mapCircle);
-
-            mapCircle = new MapCircle();
-            mapCircle.Center = new Point(36.3305, -77.5437);
-            mapCircle.Fill = new SolidColorBrush(Colors.Red);
             subLayer.MapElements.Add(mapCircle);
 
             layer.SubShapeFileLayers.Add(subLayer);
@@ -256,7 +354,7 @@ Refer to the following code sample for polyline and circle shapes.
 
 {% endtabs %}
 
-![Multi shapes in single layer support in WPF Maps](Shape-Types/MultiShapes.png)
+![Multi shapes in single layer support in WPF Maps](Shape-Types/MultiShapesCircle.png)
 
 ### Customization of map elements
 
@@ -277,6 +375,8 @@ To draw a shape, you can provide input as a Geo point collection in sample. You 
     3.Point icon
     
 ### Polygon
+
+A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -384,6 +484,8 @@ To draw a shape, you can provide input as a Geo point collection in sample. You 
 ![Polygon shape support in WPF Maps](Shape-Types/PolygonShape.png)
 
 ### Polyline
+
+A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
