@@ -11,16 +11,12 @@ documentation: ug
 
 This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as Geo points to draw shapes in two different ways:
 
-    1.Add shapes using map elements collection
+    1.Add shapes using map element collection
     2.Add shapes using point collection
 	
-## Add shapes using map elements collection
+## Add shapes using map element collection
 
 You can provide input as a Geo points collection in sample to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
-
-    1.Polyline - A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.
-    2.Polygon - A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
-    3.Circle - A Circle icon is a shape with a dimension of 0 that occupies a single location in coordinate space. A circle icon has a single x, y coordinate value. The circle icons are often used to define features such as oil wells, landmarks, and elevations.
 
 <table>
 <tr>
