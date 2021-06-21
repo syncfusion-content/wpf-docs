@@ -10,7 +10,7 @@ keywords: text-wrapping, wrapping-style
 Text wrapping refers to how images and shapes are positioned to text in a document. Currently, SfRichTextBoxAdv has only preservation support, for image and textbox shape with below wrapping styles.  The image can be inserted with inline wrapping style alone.
 
 ## In-Line with Text
-This option places an image on the same line as the surrounding text. The image will thus move as text is added or removed, whereas the other options here mean the image stays in one position while texting shifts and wraps around it.
+This option places an image on the same line as the surrounding text. The image will thus move as text is added or removed, whereas the other options here mean the image stays in one position while text is shifts and wraps around it.
 
 ![In Line](Text-Wrapping_images/inline.PNG)
 
