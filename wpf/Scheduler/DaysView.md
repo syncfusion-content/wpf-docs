@@ -294,6 +294,49 @@ N>NOTE
 * `TimeInterval` value will be set, when `MinimumAppointmentDuration` greater than `TimeInterval` with lesser appointment duration.
 * All day Appointment does not support `MinimumAppointmentDuration`.
 
+## All-day appointment display count
+You can Customize the number of appointments displayed in a all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in Scheduler. By default, the appointment display count is 2 and all-day panel have more than 2 appointments, two appointment will be displayed and remaining appointments will be displayed as appointment counts.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings MinimumAllDayAppointmentsCount="3"/>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
+{% endhighlight %}
+{% endtabs %}
+
+### All-day appointment display count appearance customization
+You can customize the default appearance of the appointment display count by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings>
+            <syncfusion:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding StringFormat=+{0}}" Background="LightBlue" Foreground="Black"
+                               HorizontalAlignment="Stretch" TextAlignment="Left" VerticalAlignment="Stretch" Padding="2,3,0,0">
+                    </TextBlock>
+                </DataTemplate>
+            </syncfusion:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+        </syncfusion:DaysViewSettings>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The padding of `MinimumAllDayAppointmentsCount` region end to make touch position for all-day panel by using the `cellEndPadding` property in the scheduler, which allows you to tap the scheduler all-day panel when the panel has appointment display counts. The values of `cellEndPadding` is 10.
+
+![all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views](DaysView_Images/all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views.png)
+
 ## Time text formatting
 Customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `DayViewSettings` in `Scheduler`.
 {% tabs %}

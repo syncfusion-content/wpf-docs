@@ -81,15 +81,15 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 ![WPF Scheduler month view AppointmentDisplayMode](Month-View_Images/AppointmentDisplayMode.png)
 
 ## Appointment display count
-Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in Scheduler. By default, the appointment display count is 3.
+Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in Scheduler. By default, the appointment display count is 3 and month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule"
                         ViewType="Month" >
     <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"    AppointmentDisplayCount="4"
-        />
+        <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"    
+                                      AppointmentDisplayCount="4"/>
     </syncfusion:SfScheduler.MonthViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
@@ -100,7 +100,35 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 {% endhighlight %}
 {% endtabs %}
 
+N> 
+* By clicking more option, scheduler navigates to the day view.
+
 ![WPF Scheduler month view AppointmentDisplayCount](Month-View_Images/AppointmentDisplayCount.png)
+
+### Appointment display count appearance customization
+You can customize the default appearance of the appointment display count by using the `MoreAppointmentsIndicatorTemplate` property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Month">
+    <syncfusion:SfScheduler.MonthViewSettings>
+        <syncfusion:MonthViewSettings>
+            <syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+                <DataTemplate>
+                    <TextBlock Text = "{Binding StringFormat=+{0}}" Background = "LightBlue" Foreground = "Black" Padding="0,5,0,0">
+                    </TextBlock>
+                </DataTemplate>
+            </syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
+         </syncfusion:MonthViewSettings>
+    </syncfusion:SfScheduler.MonthViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The padding of `AppointmentDisplayCount` region end to make touch position for month cell by using the `cellEndPadding` property in the scheduler, which allows you to tap the scheduler month cell when the cell has appointment display counts. The values of `cellEndPadding` is 10.
+
+![appointment-display-count-appearance-customization-in-WPF-scheduler-month-view](Month-View_Images/appointment-display-count-appearance-customization-in-WPF-scheduler-month-view.png)
 
 ## Month navigation direction
 The month view of a Scheduler can be navigated in both horizontal and vertical directions. Change the direction of the navigation using the [MonthNavigationDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthNavigationDirection) property of `MonthViewSettings`. By default, the month navigation direction is set to `Horizontal`.
