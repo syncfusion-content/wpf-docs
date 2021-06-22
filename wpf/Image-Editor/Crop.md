@@ -110,6 +110,23 @@ editor.ToggleCropping(new Rect(25, 25, 50, 50), true);
 
 ![Circle cropping](Images/CircleCropping_Img.png) 
 
+### Circle cropping with a ratio
+
+To crop an image in a circle or an ellipse with a specific ratio, use `ToggleCropping` with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+editor.ToggleCropping(1, 1, true);
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Circle cropping](Images/CircleCroppingRatio.png) 
+
+
 ### Crop
 
 After selecting the crop area, use the [`crop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_Crop_System_Windows_Rect_System_Boolean_) method in the image editor to crop the selected portion as demonstrated in the following method.
