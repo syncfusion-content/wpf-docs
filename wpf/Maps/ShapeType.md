@@ -505,51 +505,39 @@ Polylines are frequently used to define linear features such as roads, rivers, a
 {% tabs %}
 {% highlight xaml %}
 
- <Window.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="markerTemplate">
-                <Grid>
-                    <Image Source="pin1.png" Height="30" Margin="0,-20,0,0" />
-                </Grid>
-            </DataTemplate>
-        </ResourceDictionary>
-    </Window.Resources>
-    <Grid>
-        <Grid.DataContext>
-            <local:ViewModel/>
-        </Grid.DataContext>
-        <maps:SfMap x:Name="Maps" >
+ 
+        <maps:SfMap x:Name="Maps" ZoomLevel="5">
             <maps:SfMap.Layers>
-                <maps:ImageryLayer  x:Name="layer">
+                <maps:ImageryLayer  x:Name="layer" Center="49.9709225,10.2187212">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                       <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline"  
-                                                MarkerVerticalAlignment="Near"
-                                                MarkerTemplate="{StaticResource markerTemplate}"
-                                                Markers="{Binding Models}">
+                        <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline">
                             <maps:SubShapeFileLayer.Points>
                                 <Point>
-                                    <Point.X>39.6737</Point.X>
-                                    <Point.Y>-100.5</Point.Y>
+                                    <Point.X>51.5008</Point.X>
+                                    <Point.Y>-0.1224</Point.Y>
                                 </Point>
                                 <Point>
-                                    <Point.X>61.35</Point.X>
-                                    <Point.Y>18.131</Point.Y>
+                                    <Point.X>48.8567</Point.X>
+                                    <Point.Y>2.3508</Point.Y>
                                 </Point>
                                 <Point>
-                                    <Point.X>-32.259</Point.X>
-                                    <Point.Y>145.4214</Point.Y>
+                                    <Point.X>52.5166</Point.X>
+                                    <Point.Y>13.3833</Point.Y>
+                                </Point>
+                                <Point>
+                                    <Point.X>48.21327949272514</Point.X>
+                                    <Point.Y>16.388290236693138</Point.Y>
                                 </Point>
 
                             </maps:SubShapeFileLayer.Points>
                             <maps:SubShapeFileLayer.ShapeSettings>
-                                <maps:ShapeSetting x:Name="settings" ShapeFill="Gray" ShapeStrokeThickness="2"/>
+                                <maps:ShapeSetting x:Name="settings" ShapeFill="Black" ShapeStrokeThickness="1"/>
                             </maps:SubShapeFileLayer.ShapeSettings>
                         </maps:SubShapeFileLayer>
                     </maps:ImageryLayer.SubShapeFileLayers>
                 </maps:ImageryLayer>
             </maps:SfMap.Layers>
-        </maps:SfMap>
-    </Grid>        
+        </maps:SfMap>    
 
 {% endhighlight %}
 
@@ -557,24 +545,28 @@ Polylines are frequently used to define linear features such as roads, rivers, a
 
     public partial class MyPage : ContentPage
     {
-        ViewModel obj = new ViewModel();
+        
         public MyPage()
         {
             InitializeComponent();
-            this.DataContext = obj;
+            
             SfMap maps = new SfMap();
+            maps.ZoomLevel = 5;
             ImageryLayer layer = new ImageryLayer();
+            layer.Center = new Point(49.9709225, 10.2187212);
             SubShapeFileLayer subLayer = new SubShapeFileLayer();
-            subLayer.Points.Add(new Point(39.6737, -100.5));
-            subLayer.Points.Add(new Point(61.35, 18.131));
-            subLayer.Points.Add(new Point(-32.259, 145.4214));
+            subLayer.Points = new ObservableCollection<Point>()
+            {
+                new Point(51.5008, -0.1224),
+                new Point(48.8567, 2.3508),
+                new Point(52.5166, 13.3833),
+                new Point(48.21327949272514, 16.388290236693138)
+            };
             subLayer.ShapeType = ShapeType.Polyline;
-            subLayer.Markers = obj.Models;
-            subLayer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
-            subLayer.MarkerVerticalAlignment = MarkerAlignment.Near;
+
             ShapeSetting subLayerSetting = new ShapeSetting();
-            subLayerSetting.ShapeStrokeThickness = 2;
-            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Gray);
+            subLayerSetting.ShapeStrokeThickness = 1;
+            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Black);
             subLayer.ShapeSettings = subLayerSetting;
             layer.SubShapeFileLayers.Add(subLayer);
             maps.Layers.Add(layer);
@@ -582,29 +574,12 @@ Polylines are frequently used to define linear features such as roads, rivers, a
         }
     }
     
-    public class ViewModel
-    {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
-        {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Label = "USA ", Latitude = "39.6737", Longitude = "-100.5" });
-            this.Models.Add(new Model() { Label = "Swedan ", Latitude = "61.35", Longitude = "18.131" });
-            this.Models.Add(new Model() { Label = "Australia ", Latitude = "-32.259", Longitude = "145.4214" });
-        }
-    }
-
-    public class Model
-    {
-        public string Label { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
+    
 {% endhighlight %}
 
 {% endtabs %}
 
-![Polyline shape support in WPF Maps](Shape-Types/PolylineShape.png)
+![Polyline shape support in WPF Maps](Shape-Types/MultiShapesPolyline.png)
 
 ### Point icon
 
