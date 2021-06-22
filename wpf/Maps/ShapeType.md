@@ -311,9 +311,9 @@ A circle icon has a single geo coordinate value. The circle icons are often used
 
 The following properties are used to customize `MapPolygon`, `MapPolyline`, and `MapCircle`.
 
-* `Fill`, `Stroke`, `StrokeThickness` - Used to customize map element's shape UI appearance. 
-* `Center` - Holds latitude and longitude value that defines the center of the circle. This property is only available for `MapCircle`.
-* `Radius` - Used to customize radius/range of map circle. This property is only available for `MapCircle`.
+* `Fill`, `Stroke`, `StrokeThickness` - Used to customize the appearance of the map element's shape UI.
+* `Center` - Holds latitude and longitude values that defines the center of the circle. This property is available only for `MapCircle`.
+* `Radius` - Used to customize radius or range of the map circle. This property is available only for `MapCircle`.
 
 {% tabs %}
 {% highlight xaml %}          
