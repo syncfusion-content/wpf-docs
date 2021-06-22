@@ -50,8 +50,6 @@ comboBox.IsEditable = true;
 
 ![Adding IsEditable property to an application](ComboBoxAdv_images/ComboBoxAdv_img12.png)
 
-N> It can be applied when `AllowMultiSelect` property is not assigned as true.
-
 ## Auto Complete Support in WPF ComboBox
 
 You can able to find the expected item from the dropdown of the `ComboBoxAdv` and it can be enabled by using the `AutoCompleteMode` property. It can be used for both single and multiple selections on editable mode. 
@@ -60,9 +58,7 @@ You can able to find the expected item from the dropdown of the `ComboBoxAdv` an
 
 •	`Suggest`: Suggestions are displayed in a drop-down menu.
 
-•	`Append`: The first suggestion is appended to the text.
-
-•	`None`: No suggestion or Append is made.
+•	`None`: No suggestion is made.
 
 Default value is *None*.
 
@@ -89,25 +85,4 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 
 N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection.
 
-### Append
-
-When you enter text, `ComboBoxAdv` now suggest you to complete it by appending the appropriate text from the data source. 
-
-N> Append will be used as *IsTextSearchEnabled* property.
-
-{% tabs %}
-{% highlight C# %}
-
-<syncfusion:ComboBoxAdv AutoCompleteMode="Append"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-ComboBoxAdv comboBox = new ComboBoxAdv();       
-combobox.AutoCompleteMode = AutoCompleModes.Append;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WPF ComboBoxAdv AutoComplete append mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-append-mode.gif)
+N> When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, AutoCompleteMode will take precedence.
