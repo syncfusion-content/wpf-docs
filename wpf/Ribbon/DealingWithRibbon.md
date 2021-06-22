@@ -185,6 +185,454 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ![Resize Ribbon Window](RibbonResizeWindow-images/ResizeRibbonWindow.gif)
 
+## RibbonBar Positioning
+
+The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned at the right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property.
+In order to position the RibbonBar at right side of the Ribbon, set `Position` property in RibbonBar as `Right`. 
+The following code snippet illustrates this right RibbonBar support.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow
+    x:Class="RightRibbonBar.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RightRibbonBar"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    Title="Right RibbonBar"
+    Width="950"
+    Height="475"
+    syncfusion:SfSkinManager.Theme="{syncfusion:SkinManagerExtension ThemeName=FluentLight}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <syncfusion:Ribbon>
+            <syncfusion:RibbonTab Caption="Home" IsChecked="True">
+                <syncfusion:RibbonBar Header="Clipboard">
+                    <syncfusion:RibbonButton
+                        syncfusion:RibbonCommandManager.SynchronizedItem="Paste"
+                        IconType="VectorImage"
+                        Label="Paste"
+                        SizeForm="Large">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Margin="0,4,6,2"
+                                Data="M17,0 L21,0 21,7 20,7 20,1.0000001 17,1.0000001 z M0,0 L4,0 4,1.0000001 1.0000001,1.0000001 1.0000001,23 12,23 12,24 0,24 z"
+                                Fill="#FFED8733"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="13,12,0,0"
+                                Data="M1.0000002,0.99999994 L1.0000002,17 13,17 13,0.99999994 z M0,0 L14,0 14,18 0,18 z"
+                                Fill="#FF3C3B39"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="1,5,7,3"
+                                Data="M16,0 L17,0 19,0 19,6 17,6 17,2 16,2 z M0,0 L2,0 3,0 3,2 2,2 2,20 11,20 11,22 0,22 z"
+                                Fill="#FFF8DB8F"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="3,0.5,1,1"
+                                Data="M10.999956,12.5 L22.999956,12.5 22.999956,28.5 10.999956,28.5 z M7.4999558,0 C9.1569382,0 10.499956,1.3439941 10.499956,3 L13.499956,3 13.499956,6.5 15,6.5 15,10.5 9.0000001,10.5 9.0000001,24.5 0,24.5 0,6.5 1.4999557,6.5 1.4999557,3 4.4999558,3 C4.4999558,1.3439941 5.8439499,0 7.4999558,0 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                            <Path
+                                Height="8"
+                                Margin="4,0,10,0"
+                                VerticalAlignment="Top"
+                                Data="M6.5,0.99999996 C5.1209717,0.99999996 4,2.1209716 4,3.5 L4,4 0.99999994,4 0.99999994,7 12,7 12,4 9,4 9,3.5 C9,2.1209716 7.8790283,0.99999996 6.5,0.99999996 z M6.5,0 C8.2600098,-4.4703484E-08 9.7209473,1.3060302 9.9649658,3 L13,3 13,8 0,8 0,3 3.0350342,3 C3.2790527,1.3060302 4.7399902,-4.4703484E-08 6.5,0 z"
+                                Fill="#FF797774"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                        <syncfusion:RibbonButton.ToolTip>
+                            <syncfusion:ScreenTip Content="Paste the contents of clipboard." Description="Paste (Ctrl+V)" />
+                        </syncfusion:RibbonButton.ToolTip>
+                    </syncfusion:RibbonButton>
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        IconType="VectorImage"
+                        Label="Cut"
+                        SizeForm="Small">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Width="10"
+                                Height="8"
+                                Margin="3.747,0,1.805,4.614"
+                                Data="M0.4800034,0 L3.2370005,5.6329948 5.9950049,0 6.4480002,1.3919982 3.8000043,6.7859942 6.4040015,12.108999 5.4240053,12.385 3.2370005,7.9400011 1.0859987,12.314001 0,12.249991 2.675004,6.7859942 0.027000348,1.3919982 z"
+                                Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                Stretch="Fill" />
+                            <Path
+                                Width="13"
+                                Height="4"
+                                Margin="2,0,0,1"
+                                VerticalAlignment="Bottom"
+                                Data="M2.0000019,1.0000033 C1.4480005,1.0000033 1.0000028,1.4489932 1.0000028,2.0000033 1.0000028,2.5509982 1.4480005,3.0000033 2.0000019,3.0000033 2.5519957,3.0000033 3.0000009,2.5509982 3.0000009,2.0000033 3.0000009,1.4489932 2.5519957,1.0000033 2.0000019,1.0000033 z M7.9999966,0.99999999 C7.4479966,0.99999993 6.9999966,1.449 6.9999966,2 6.9999966,2.5509999 7.4479966,3 7.9999966,3 8.5519962,3 8.9999962,2.5509999 8.9999962,2 8.9999962,1.449 8.5519962,0.99999993 7.9999966,0.99999999 z M2.0000019,3.2782542E-06 C3.1029978,3.3312692E-06 4,0.89700651 4,2.0000033 4,3.1030002 3.1029978,4.0000033 2.0000019,4.0000033 0.8969985,4.0000033 0,3.1030002 0,2.0000033 0,0.89700651 0.8969985,3.3312692E-06 2.0000019,3.2782542E-06 z M7.9999966,0 C9.1029968,-3.7871359E-08 9.9999962,0.89699995 9.9999962,2 9.9999962,3.1029999 9.1029968,4 7.9999966,4 6.8969965,4 5.9999966,3.1029999 5.9999966,2 5.9999966,0.89699995 6.8969965,-3.7871359E-08 7.9999966,0 z"
+                                Fill="#FF1D8BCC"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                        <syncfusion:RibbonButton.ToolTip>
+                            <syncfusion:ScreenTip Description="Cut (Ctrl+X)">
+                                <TextBlock
+                                    Width="130"
+                                    HorizontalAlignment="Left"
+                                    Text="Cut the selection and put it on the clipboard."
+                                    TextWrapping="Wrap" />
+                            </syncfusion:ScreenTip>
+                        </syncfusion:RibbonButton.ToolTip>
+                    </syncfusion:RibbonButton>
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        IconType="VectorImage"
+                        Label="Copy"
+                        SizeForm="Small">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Margin="3,1,0.5,0.5"
+                                Data="M5.5000009,2.500005 L10.500001,2.500005 14.500001,6.500005 14.500001,14.500005 5.5000009,14.500005 z M0,0 L4.0000037,0 4.0000037,12 0,12 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="2,0,0,0"
+                                Data="M9.0000026,11.999999 L13.000003,11.999999 13.000003,12.999999 9.0000026,12.999999 z M9.0000026,9.9999986 L13.000003,9.9999986 13.000003,10.999999 9.0000026,10.999999 z M12,4.7070035 L12,7.0000033 14.293,7.0000033 z M6.9999967,4.0000001 L6.9999967,15 14.999997,15 14.999997,8.0000033 11,8.0000033 11,4.0000001 z M5.9999967,2.9999999 L11.706997,2.9999999 15.999997,7.293 15.999997,16 5.9999967,16 z M0,0 L6.9999967,0 6.9999967,2 5.9999971,2 5.9999971,1 1,1 1,13 4.9999976,13 4.9999976,14 0,14 z"
+                                Fill="#FF3A3939"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                        <syncfusion:RibbonButton.ToolTip>
+                            <syncfusion:ScreenTip Description="Copy (Ctrl+C)">
+                                <TextBlock
+                                    Width="130"
+                                    HorizontalAlignment="Left"
+                                    Foreground="#FF4C4C4C"
+                                    Text="Copy the selection and put it on the clipboard."
+                                    TextWrapping="Wrap" />
+                            </syncfusion:ScreenTip>
+                        </syncfusion:RibbonButton.ToolTip>
+                    </syncfusion:RibbonButton>
+                    <syncfusion:RibbonButton
+                        IconType="VectorImage"
+                        Label="Format Painter"
+                        SizeForm="Small">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Margin="2.048,0.498,0.501,0.705"
+                                Data="M13.434632,4.827646E-05 C13.680801,0.0024180976 13.926775,0.092046673 14.121765,0.27108389 14.544701,0.66010981 14.565695,1.3190858 14.167659,1.7340507 L11.531004,4.480899 13.369993,6.3119885 11.726018,7.9489524 6.8310282,12.794981 0,5.9919826 3.8440161,5.3719827 6.5970273,2.8419837 11.564087,7.7877166 6.5979662,2.8409979 8.2409729,1.2050026 10.105034,3.0610356 12.670845,0.32509833 C12.8764,0.10675568 13.155641,-0.0026375318 13.434632,4.827646E-05 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="7.936,0,0,4.845"
+                                Data="M2.3529817,2.4090486 L1.417989,3.3400479 5.8379548,7.7410448 6.7719474,6.8110455 z M7.5172076,0.99873667 C7.3818266,1.0037418 7.2480633,1.0597443 7.1480229,1.165737 L4.9139335,3.5478707 5.6360054,4.2659228 7.9211223,1.8858034 C8.0180495,1.782771 8.0700533,1.6487924 8.0661471,1.5067568 8.0611417,1.3647821 8.0010812,1.2347711 7.8960969,1.1377204 7.7895868,1.0397238 7.6525886,0.99373155 7.5172076,0.99873667 z M7.5527165,7.1653047E-05 C7.9184291,0.0035863224 8.2838595,0.13640766 8.5721467,0.40172305 8.8770893,0.68072825 9.0521443,1.0617281 9.0650842,1.4747729 9.0791228,1.8877565 8.9290931,2.2788277 8.6430719,2.5777922 L6.3439374,4.9723075 8.1899364,6.8110455 5.8379548,9.153044 0,3.3400479 2.3529817,0.99704962 4.205102,2.8418849 6.4200914,0.48174404 C6.7234051,0.15819254 7.1382422,-0.0039115331 7.5527165,7.1653047E-05 z"
+                                Fill="#FF484644"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="2.049,6.365,4.368,0.705"
+                                Data="M0.77698034,0 L10.585,3.2109802 6.8309581,6.9279997 0,0.12499928 z"
+                                Fill="#FFF8DB8F"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="1,2.648,2.518,0"
+                                Data="M2.3239305,4.4059882 L7.8809197,9.9390366 10.69988,7.1480067 z M7.630995,1.3829954 L5.1189968,3.6919881 3.9397421,3.8823536 11.49895,6.3573499 12.063992,5.7979813 z M7.657995,0 L13.483991,5.7999814 7.9662354,11.262604 7.8789665,11.349017 7.8779948,11.349963 0,3.5039886 4.6639969,2.7519911 z"
+                                Fill="#FFEE9243"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                        <syncfusion:RibbonButton.ToolTip>
+                            <syncfusion:ScreenTip Description="Format painter (Ctrl+Shift+C)" HelpText="Press F1 for more help.">
+                                <TextBlock
+                                    Width="175"
+                                    HorizontalAlignment="Left"
+                                    Foreground="#FF4C4C4C"
+                                    TextWrapping="Wrap">
+                                    <Run Text="Copy formatting from one place and apply it to another." />
+                                    <LineBreak />
+                                    <LineBreak />
+                                    <Run Text="Double-click this button to apply the same formatting to multiple places in the document." />
+                                </TextBlock>
+                            </syncfusion:ScreenTip>
+                        </syncfusion:RibbonButton.ToolTip>
+                    </syncfusion:RibbonButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Header="Font" IsLargeButtonPanel="False">
+                    <syncfusion:ButtonPanel SeparatorVisibility="Collapsed">
+                        <syncfusion:RibbonComboBox Width="100" IsEditable="True">
+                            <syncfusion:RibbonComboBox.ToolTip>
+                                <syncfusion:ScreenTip Description="Font (Ctrl+Shift+F)">
+                                    <TextBlock
+                                        Width="165"
+                                        HorizontalAlignment="Left"
+                                        Foreground="#FF4C4C4C"
+                                        Text="Change the font face."
+                                        TextWrapping="Wrap" />
+                                </syncfusion:ScreenTip>
+                            </syncfusion:RibbonComboBox.ToolTip>
+                        </syncfusion:RibbonComboBox>
+                        <syncfusion:RibbonComboBox Width="40" IsEditable="True" />
+                    </syncfusion:ButtonPanel>
+                    <syncfusion:ButtonPanel SeparatorVisibility="Collapsed">
+                        <syncfusion:RibbonButton
+                            IconType="VectorImage"
+                            Label="Increase Font Size"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:RibbonButton.VectorImage>
+                                <Path
+                                    Width="5.005"
+                                    Height="3.002"
+                                    Margin="3,-1,1,2"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Data="M2.5189795,0 L5.0050001,2.2590036 4.3330035,3.0000011 2.5149817,1.3470006 0.66799865,3.002 0,2.2570047 z"
+                                    Fill="#FF3094D0"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="2,1,4,0"
+                                    Data="M4.4360077,0.8710022 C4.3949921,0.98799133 4.3580048,1.1040039 4.321994,1.2200012 4.2859833,1.3549957 4.2420075,1.4919891 4.1850006,1.6309967 L2.3469865,6.2549896 6.5470016,6.2549896 4.7169835,1.6179962 C4.6359894,1.427002 4.5530121,1.1779938 4.4660065,0.8710022 z M4.0639984,0 L4.7779882,0 8.8869998,10 8.0589959,10 6.8140003,6.8899994 2.0889907,6.8899994 0.84298758,10 0,10 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                    Stretch="Fill" />
+                            </syncfusion:RibbonButton.VectorImage>
+                        </syncfusion:RibbonButton>
+                        <syncfusion:RibbonButton
+                            IconType="VectorImage"
+                            Label="Decrease Font Size"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:RibbonButton.VectorImage>
+                                <Path
+                                    Width="5.006"
+                                    Height="3.002"
+                                    Margin="2,-1,2,2"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Top"
+                                    Data="M4.3379981,0 L5.0059998,0.74500296 2.4870088,3.002 0,0.74300412 0.67199955,0.0019988532 2.4910066,1.6549994 z"
+                                    Fill="#FF3094D0"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="2,1,4,0"
+                                    Data="M4.4360077,0.8710022 C4.3949921,0.98799133 4.3580048,1.1040039 4.321994,1.2200012 4.2859833,1.3549957 4.2420075,1.4919891 4.1850006,1.6309967 L2.3469865,6.2549896 6.5470016,6.2549896 4.7169835,1.6179962 C4.6359894,1.427002 4.5530121,1.1779938 4.4660065,0.8710022 z M4.0639984,0 L4.7779882,0 8.8869998,10 8.0589959,10 6.8140003,6.8899994 2.0889907,6.8899994 0.84298758,10 0,10 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                    Stretch="Fill" />
+                            </syncfusion:RibbonButton.VectorImage>
+                        </syncfusion:RibbonButton>
+                    </syncfusion:ButtonPanel>
+                    <syncfusion:ButtonPanel SeparatorVisibility="Collapsed">
+                        <syncfusion:RibbonButton
+                            IconType="VectorImage"
+                            IsToggle="True"
+                            Label="Bold"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:RibbonButton.VectorImage>
+                                <Path
+                                    Width="10"
+                                    Height="12"
+                                    Margin="4,2,2,2"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Data="M1.3320006,5.8759918 L1.3320006,9.8339996 3.1399993,9.8339996 C3.9220123,9.8339996 4.5279998,9.6549988 4.9589996,9.2969971 5.3899993,8.9389954 5.6040038,8.447998 5.6040038,7.8239899 5.6040038,6.5249939 4.6900024,5.8759918 2.8619995,5.8759918 z M1.3320006,1.1660004 L1.3320006,4.7180023 2.6950073,4.7180023 C3.425003,4.7180023 3.998001,4.5469971 4.4160003,4.2079926 4.8330078,3.8669891 5.0420074,3.3880005 5.0420074,2.769989 5.0420074,1.701004 4.3150024,1.1660004 2.8619995,1.1660004 z M0,0 L3.2340087,0 C4.2180023,0 4.9970092,0.23300171 5.572998,0.69799811 6.149002,1.1629944 6.4370117,1.769989 6.4370117,2.5159912 6.4370117,3.1399994 6.2630004,3.6819916 5.9140014,4.1419983 5.5650024,4.6029968 5.0839996,4.9299927 4.4710082,5.125 L4.4710082,5.1549988 C5.2369995,5.2419891 5.8509979,5.5220032 6.3110046,5.9949951 6.7700042,6.4680023 6.9999999,7.0829926 6.9999999,7.8399963 6.9999999,8.7799988 6.6510009,9.5429993 5.95401,10.125992 5.2560119,10.709 4.376007,11 3.3130035,11 L0,11 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" />
+                            </syncfusion:RibbonButton.VectorImage>
+                        </syncfusion:RibbonButton>
+                        <syncfusion:RibbonButton
+                            IconType="VectorImage"
+                            IsToggle="True"
+                            Label="Italic"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:RibbonButton.VectorImage>
+                                <Path
+                                    Width="10"
+                                    Height="12"
+                                    Margin="4,3,2,1"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Data="M2.000005,0 L6.000005,0 6.000005,1 4.4186966,1 2.4888427,8.9999952 4,8.9999952 4,9.9999952 0,9.9999952 0,8.9999952 1.4594386,8.9999952 3.3901918,1 2.000005,1 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" />
+                            </syncfusion:RibbonButton.VectorImage>
+                        </syncfusion:RibbonButton>
+                        <syncfusion:RibbonButton
+                            IconType="VectorImage"
+                            Label="Underline"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:RibbonButton.VectorImage>
+                                <Path
+                                    Width="10"
+                                    Height="12"
+                                    Margin="4,2,2,2"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Data="M0,10.999995 L9.0000002,10.999995 9.0000002,11.999995 0,11.999995 z M1.000005,0 L2.0000049,0 2.0000049,6.5 C2.000005,7.8779907 3.1210072,9 4.500005,9 5.8790028,9 7.000005,7.8779907 7.000005,6.5 L7.000005,0 8.000005,0 8.000005,6.5 C8.000005,8.4299927 6.4299977,10 4.500005,10 2.5699971,10 1.000005,8.4299927 1.000005,6.5 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}" />
+                            </syncfusion:RibbonButton.VectorImage>
+                        </syncfusion:RibbonButton>
+                    </syncfusion:ButtonPanel>
+                    <syncfusion:ButtonPanel syncfusion:SimplifiedLayoutSettings.DisplayMode="Normal" SeparatorVisibility="Collapsed">
+                        <syncfusion:SplitButton
+                            IconType="VectorImage"
+                            Label="Text Highlight Color"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:SplitButton.VectorImage>
+                                <Path
+                                    Height="4"
+                                    Margin="1"
+                                    VerticalAlignment="Bottom"
+                                    Data="M0,0 L16,0 16,4 0,4 z"
+                                    Fill="Yellow"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="6.5,0.502,1.934,8.048"
+                                    Data="M6.4365052,0.00010436084 C6.6881317,-0.0035195307 6.9411348,0.087229683 7.1381453,0.27322931 L8.254165,1.3292008 C8.6621631,1.7171909 8.6711658,2.3651685 8.2731775,2.763153 L2.5470487,8.4889981 0,6.0360758 5.7431277,0.29321776 C5.9346298,0.10172514 6.1848787,0.0037282004 6.4365052,0.00010436084 z"
+                                    Fill="#FFF3F2F1"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="2.061,0,1.434,5"
+                                    Data="M10.881433,1.0010477 C10.756186,1.0027986 10.631936,1.052303 10.535929,1.1488092 L5.1529995,6.5319232 6.9789655,8.2909641 12.358904,2.9118485 C12.454911,2.815838 12.506913,2.6878447 12.504899,2.55184 12.502915,2.4158355 12.446916,2.2888338 12.347918,2.1958293 L11.232911,1.1398066 C11.132922,1.0452991 11.00668,0.99929665 10.881433,1.0010477 z M10.868932,0.0001521778 C11.245179,-0.005222887 11.623424,0.13178115 11.920921,0.41278561 L13.035898,1.4688085 C13.332891,1.7498205 13.498905,2.1298184 13.504886,2.5378322 13.509891,2.9468378 13.354894,3.329857 13.065897,3.6188647 L6.9929731,9.6919965 6.6261415,9.3388461 5.5570025,10.219989 C4.9130021,10.748988 4.1050018,11.038988 3.2720014,11.038988 L0,11.038988 0.22000027,10.953988 C2.0155009,10.255738 3.3807202,8.7842073 3.9559099,6.9755153 L4.0042109,6.8147053 3.725008,6.5459155 9.8289366,0.44179319 C10.118438,0.15328126 10.492686,0.0055271609 10.868932,0.0001521778 z"
+                                    Fill="#FF3A3937"
+                                    Stretch="Fill" />
+                            </syncfusion:SplitButton.VectorImage>
+                        </syncfusion:SplitButton>
+                        <syncfusion:SplitButton
+                            IconType="VectorImage"
+                            Label="Font Color"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:SplitButton.VectorImage>
+                                <Path
+                                    Height="4"
+                                    VerticalAlignment="Bottom"
+                                    Data="M0,0 L16,0 16,4 0,4 z"
+                                    Fill="#FFFE0000"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="3.344,0,3.352,5"
+                                    Data="M4.6480023,0.95898432 C4.6079937,1.0870056 4.5689923,1.2149963 4.533012,1.34198 4.4980089,1.4909973 4.4510118,1.6419983 4.394005,1.7949829 L2.5330156,6.8809814 6.787006,6.8809814 4.9330055,1.7799988 C4.8510047,1.5699768 4.7659832,1.2969971 4.6790081,0.95898432 z M4.0779959,0 L5.209006,0 9.304,11 8.3170024,11 7.2039977,8.0019836 2.1150171,8.0029907 1.0100081,11 0,11 z"
+                                    Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                    Stretch="Fill" />
+                            </syncfusion:SplitButton.VectorImage>
+                        </syncfusion:SplitButton>
+                        <syncfusion:SplitButton
+                            IconType="VectorImage"
+                            Label="Shading"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:SplitButton.VectorImage>
+                                <Path
+                                    Margin="1"
+                                    Data="M0,12 L15,12 15,15 0,15 z M7.9999695,0 C8.5529652,0 8.9999628,0.44699955 8.9999628,1 L8.9999628,6 10.999949,3.5 11.002948,6.414 6.7919779,10.625 2.5420079,6.375 6.9999766,1.9169998 6.9999766,1 C6.9999766,0.44699955 7.4469733,0 7.9999695,0 z"
+                                    Fill="White"
+                                    Stretch="Fill" />
+                                <Path
+                                    Height="4"
+                                    Margin="1"
+                                    VerticalAlignment="Bottom"
+                                    Data="M1,1 L1,3 15,3 15,1 z M0,0 L16,0 16,4 0,4 z"
+                                    Fill="#FFA1A0A0"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="2.335,0,3.997,4.168"
+                                    Data="M6.1649812,0 C6.9919994,0 7.6649669,0.6729753 7.6649669,1.5000038 L7.6649669,6.5000162 6.6649764,6.5000162 6.6649764,1.5000038 C6.6649764,1.2249787 6.4400027,1.0000025 6.1649812,1.0000025 5.8899591,1.0000025 5.6649859,1.2249787 5.6649859,1.5000038 L5.6649859,2.6240301 1.4140491,6.8750172 4.9569843,10.418056 8.6680091,6.7069869 8.6649573,4.0009866 9.6649478,3.9990335 9.6679995,7.1209893 4.9569843,11.832 0,6.8750172 4.664995,2.2100275 4.664995,1.5000038 C4.664995,0.6729753 5.3379624,0 6.1649812,0 z"
+                                    Fill="#FF505050"
+                                    Stretch="Fill" />
+                                <Path
+                                    Width="2"
+                                    Margin="0,4,2,6"
+                                    HorizontalAlignment="Right"
+                                    Data="M0,0 C1.1040039,0 2,0.89599609 2,2 L2,6 1,6 C1,6 1.1300049,2.6829834 0.68994144,2.1170044 0.53698733,1.9199829 2.9802322E-08,2 0,2 z"
+                                    Fill="#FF135C9A"
+                                    Stretch="Fill" />
+                            </syncfusion:SplitButton.VectorImage>
+                        </syncfusion:SplitButton>
+                        <syncfusion:SplitButton
+                            IconType="VectorImage"
+                            Label="Borders"
+                            SizeForm="ExtraSmall">
+                            <syncfusion:SplitButton.VectorImage>
+                                <Path
+                                    Margin="1"
+                                    Data="M0,0 L15,0 15,14 0,14 z"
+                                    Fill="White"
+                                    Stretch="Fill" />
+                                <Path
+                                    Margin="1"
+                                    Data="M0,14 L15,14 15,15 0,15 z M14,12 L15,12 15,13 14,13 z M7,12 L8,12 8,13 7,13 z M0,12 L1,12 1,13 0,13 z M14,10 L15,10 15,11 14,11 z M7,10 L8,10 8,11 7,11 z M0,10 L1,10 1,11 0,11 z M14,8 L15,8 15,8.9999999 14,8.9999999 z M7,8 L8,8 8,8.9999999 7,8.9999999 z M0,8 L1,8 1,8.9999999 0,8.9999999 z M12,7 L13,7 13,8 12,8 z M10,7 L11,7 11,8 10,8 z M8,7 L8.9999999,7 8.9999999,8 8,8 z M6,7 L7,7 7,8 6,8 z M4,7 L5,7 5,8 4,8 z M2,7 L3,7 3,8 2,8 z M14,6.0000001 L15,6.0000001 15,7 14,7 z M7,6.0000001 L8,6.0000001 8,7 7,7 z M0,6.0000001 L1,6.0000001 1,7 0,7 z M14,4 L15,4 15,5 14,5 z M7,4 L8,4 8,5 7,5 z M0,4 L1,4 1,5 0,5 z M14,2 L15,2 15,3 14,3 z M7,2 L8,2 8,3 7,3 z M0,2 L1,2 1,3 0,3 z M14,0 L15,0 15,1 14,1 z M12,0 L13,0 13,1 12,1 z M10,0 L11,0 11,1 10,1 z M8,0 L8.9999999,0 8.9999999,1 8,1 z M6,0 L7,0 7,1 6,1 z M4,0 L5,0 5,1 4,1 z M2,0 L3,0 3,1 2,1 z M0,0 L1,0 1,1 0,1 z"
+                                    Fill="#FF3A3A38"
+                                    Stretch="Fill" />
+                            </syncfusion:SplitButton.VectorImage>
+                        </syncfusion:SplitButton>
+                    </syncfusion:ButtonPanel>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Name="Delete" Header="Delete">
+                    <syncfusion:RibbonButton Label="Ignore" />
+                    <syncfusion:SplitButton Label="Clean Up">
+                        <syncfusion:DropDownMenuItem Header="Clean Up Folder" />
+                        <syncfusion:DropDownMenuItem Header="Clean Up Conversation" />
+                        <syncfusion:DropDownMenuItem Header="Clean Up Folder/SubFolder" />
+                    </syncfusion:SplitButton>
+                    <syncfusion:SplitButton HorizontalAlignment="Left" Label="Junk" />
+                    <syncfusion:RibbonButton
+                        IconType="VectorImage"
+                        Label="Delete"
+                        SizeForm="Large">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Margin="4"
+                                Data="M1.4139423,0L7.0029922,5.5845888 12.592018,0 14.006015,1.4149939 8.4180527,6.9985202 14.006,12.582007 12.591996,13.997001 7.0030056,8.4124444 1.4140122,13.997001 1.5026823E-05,12.582007 5.5879484,6.9985092 0,1.4149939z "
+                                Fill="Red"
+                                SnapsToDevicePixels="True"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                    </syncfusion:RibbonButton>
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar
+                    x:Name="help"
+                    Header="Help"
+                    Position="Right">
+                    <syncfusion:RibbonButton
+                        IconType="VectorImage"
+                        Label="About"
+                        SizeForm="Large">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Width="18"
+                                Height="18"
+                                Margin="0.5,0.5,8.354,8.353"
+                                Data="M10,0 C15.52301,0 20,4.4769897 20,10 20,15.522003 15.52301,20 10,20 4.4780121,20 0,15.522003 0,10 0,4.4769897 4.4780121,0 10,0 z"
+                                Fill="White"
+                                Stretch="Fill" />
+                            <Path
+                                Margin="4"
+                                Data="M10.5,1 C5.262001,1 1,5.2619991 1,10.499999 1,15.737999 5.262001,19.999999 10.5,19.999999 15.738001,19.999999 20.000001,15.737999 20.000001,10.499999 20.000001,5.2619991 15.738001,1 10.5,1 z M10.5,0 C16.290001,0 21.000001,4.7099991 21.000001,10.499999 21.000001,13.214061 19.965089,15.690819 18.269143,17.556394 L18.266851,17.558856 28.853999,28.146005 28.146998,28.853005 17.559885,18.265892 17.556396,18.269141 C15.690821,19.965087 13.214063,20.999999 10.5,20.999999 4.710001,20.999999 0,16.289999 0,10.499999 0,4.7099991 4.710001,0 10.5,0 z"
+                                Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                    </syncfusion:RibbonButton>
+                    <syncfusion:RibbonButton
+                        IconType="VectorImage"
+                        Label="Help"
+                        SizeForm="Large">
+                        <syncfusion:RibbonButton.VectorImage>
+                            <Path
+                                Margin="6"
+                                Data="M3.9400001,13.238 L5.5349999,13.238 5.5349999,14.833 3.9400001,14.833 z M4.7539988,0 C6.2060028,8.8817842E-16 7.3750015,0.39599991 8.2300044,1.1770003 9.0749989,1.9500008 9.5039998,2.8959999 9.5039998,3.9900017 9.5039998,4.6220016 9.3539982,5.2110023 9.0599995,5.743 8.7549992,6.2900009 8.1419993,6.9750023 7.2350021,7.7770004 6.5800033,8.3570023 6.1620041,8.7770004 5.9580017,9.0590019 5.7429972,9.3530006 5.5830012,9.6930008 5.4789973,10.070999 5.3929988,10.394001 5.3399974,10.871002 5.3170024,11.521999 L4.0500041,11.521999 C4.0479975,11.409 4.0459986,11.316002 4.0459986,11.244999 4.0459986,10.528 4.1480036,9.9029999 4.3499995,9.387001 4.4899989,9.0110016 4.7289973,8.618 5.0599986,8.2180023 5.310998,7.9189987 5.7679992,7.4770012 6.4180008,6.9049988 7.1190048,6.2859993 7.5660034,5.7989998 7.7829991,5.4169998 8.0100032,5.0200005 8.1240016,4.5839996 8.1240016,4.1189995 8.1240016,3.288002 7.796999,2.5480003 7.1510025,1.9220008 6.5110031,1.2989998 5.7139979,0.98400116&#xd;&#xa;4.784997,0.9840011 3.8870018,0.98400116 3.1250005,1.2709999 2.5199972,1.8380011 1.9710011,2.3500004 1.5930027,3.1230011 1.3939974,4.1389999 L0,3.9729996 C0.19999708,2.7350006 0.6869967,1.7670002 1.4499972,1.0950012 2.2720037,0.36900139 3.3850029,8.8817842E-16 4.7539988,0 z"
+                                Fill="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(TextBlock.Foreground)}"
+                                Stretch="Fill" />
+                        </syncfusion:RibbonButton.VectorImage>
+                    </syncfusion:RibbonButton>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="Insert" />
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+this.help.Position = Syncfusion.Windows.Tools.Controls.HorizontalPosition.Right;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon RibbonBar positioning](RibbonResizeWindow-images/wpf-ribbon-ribbonbar-positioning.png)
+
 ## Resize based on collapse order
 
 The Ribbon control provides support to resize the RibbonBar's based on the order specified in the `SizeReductionOrder` property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
