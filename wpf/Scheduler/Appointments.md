@@ -41,7 +41,8 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 N> 
 * The Scheduler supports the functionality that arranges the appointments based on their start time and duration for the normal appointments in a day, week and workweek views.
 * In an all-day panel of the day, week and workweek views, span and all day appointments are ordered and rendered based on the start date-time of an appointment that consists time duration of the appointment, followed by `IsSpanned,` `IsAllDay,` appointments respectively.
-* In Timeline views, all the appointments (span, all day, and normal) are ordered and rendered based on the start date-time of an appointment that consists of time duration of the appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively
+* In Timeline views, all the appointments (span, all day, and normal) are ordered and rendered based on the start date-time of an appointment that consists of time duration of the appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
+* We have updated the padding of appointment view at the right end of a cell to interact when the timeslot or month cells have appointments by using the internal `CellEndPadding` property in the [ViewControlBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewControlBase.html) of the scheduler.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/adding-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
