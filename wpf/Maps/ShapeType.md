@@ -9,14 +9,14 @@ documentation: ug
 
 # Shape Types in WPF Maps (SfMaps)
 
-This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as Geo points to draw shapes in two different ways:
+This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as geo points to draw shapes in two different ways:
 
     1.Add shapes using map element collection
     2.Add shapes using point collection
 	
 ## Add shapes using map element collection
 
-You can provide input as a Geo points collection to draw multiple shapes in a single layer by using the `MapElements` property of shape layer. There are three types of shapes available in map element.
+You can provide input as a geo points collection to add multiple shapes in a single layer by using the `MapElements` property of shape layer. There are three types of shapes available in map element.
 
     1.MapPolygon
     2.MapPolyline
@@ -24,7 +24,7 @@ You can provide input as a Geo points collection to draw multiple shapes in a si
 
 ### MapPolygon
 
-You can add polygon shape on map using `MapPolygon` class and provide Geo points collection to `Points`. Polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
+You can add polygon shape on map using `MapPolygon` class and provide geo points collection to `Points` property. Polygon shape type is used to defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ You can add polygon shape on map using `MapPolygon` class and provide Geo points
 
 ### MapPolyline
 
-You can add polyline shape on map using `MapPolyline` class and provide Geo points collection to `Points`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
+You can add polyline shape on map using `MapPolyline` class and provide geo points collection to `Points`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,7 +217,7 @@ You can add polyline shape on map using `MapPolyline` class and provide Geo poin
 
 ### MapCircle
 
-A circle icon has a single geo coordinate value and it can be positioned on map using `Center` property of `MapCircle`. The circle icons are often used to define features such as oil wells, landmarks, and elevations.
+A circle  has a single geo coordinate value and it can be positioned on map using `Center` property of `MapCircle`. The circles are often used to define features such as oil wells, landmarks, and elevations.
 
 * `Center` - Holds latitude and longitude values that defines the center of the circle.
 
