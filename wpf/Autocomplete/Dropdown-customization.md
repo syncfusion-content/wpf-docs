@@ -209,6 +209,33 @@ textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing the SelectedItem background
 
+The [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_SelectionBackgroundColor) property is used to set the background color of the selected item in the suggestion box.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <editors:SfTextBoxExt
+            Width="300"
+            Height="40"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            AutoCompleteMode="Suggest"
+            AutoCompleteSource="{Binding Employees}"
+            SearchItemPath="Name"
+            SelectionBackgroundColor="Red"
+            ShowDropDownButton="True" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Selected item background color](Dropdown_customization_images/SelectionBackgroundColor.png)
 
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Dropdown-customization) in GitHub
