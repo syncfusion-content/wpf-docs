@@ -7,7 +7,7 @@ documentation: ug
 keywords: text-wrapping, wrapping-style
 ---
 # Text Wrapping in WPF RichTextBox (SfRichTextBoxAdv)
-Text wrapping refers to how images and shapes are positioned to text in a document. Currently, SfRichTextBoxAdv has only preservation support, for image and textbox shape with below wrapping styles.  The image can be inserted with inline wrapping style alone.
+Text wrapping refers to how images and shapes are positioned about to text in a document. Currently, SfRichTextBoxAdv has only preservation support, for image and textbox shape with below wrapping styles. The image can be inserted with inline wrapping style alone.
 
 ## In-Line with Text
 This option places an image on the same line as the surrounding text. The image will thus move as text is added or removed, whereas the other options here mean the image stays in one position while text is shifts and wraps around it.
@@ -31,7 +31,8 @@ Text wraps above and below the image so it is on its own line. This is most usef
 
 ## Square
 This wraps text around an image on all sides at right angles, as if it had a rectangular box around it.
-N> Tight and Through types also preserved as Square wrapping style in SfRichTextBoxAdv.
+
+N> Tight and Through types are also preserved as Square wrapping style in SfRichTextBoxAdv.
 
 ![Square](Text-Wrapping_images/Square.PNG)
 
