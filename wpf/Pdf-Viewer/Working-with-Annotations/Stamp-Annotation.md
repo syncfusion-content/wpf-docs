@@ -239,6 +239,61 @@ You can create and add your custom stamps from the images available on the disk 
 
 ![Custom stamps](Annotation-images\custom-stamp.png)
 
+## How to get stamp annotation’s name programmatically
+
+Stamp annotation’s name can be obtained either from `Stampannotationchanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+
+The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Getting annotation’s name while adding the annotation
+private void PdfViewer_StampAnnotationChanged (object sender, StampAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        stampAnnotationName = e.Name;
+    }
+}
+
+//Getting existing annotation’s name
+private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
+{
+     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+     PdfPageBase page = loadedDocument.Pages[0];
+     stampAnnotationName = page.Annotations[0].Name;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the stamp annotation programmatically
+
+PDF Viewer allows the users to select the stamp annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `Stampannotationchanged` event.
+
+N> For better performance we can also pass the page number of the annotation.
+
+The following code snippet explains how to select annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Selecting stamp annotation with annotation’s name and page number
+private void SelectAnnotation(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(stampAnnotationName, 1);
+}
+
+//Selecting stamp annotation with annotation’s name 
+private void SelectAnnotation1(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(stampAnnotationName);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Keyboard shortcuts
 
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
@@ -282,6 +337,27 @@ private void PdfViewer_StampAnnotationChanged(object sender, StampAnnotationChan
     System.Windows.Media.Color color = settings.Color;
     PdfRubberStampAnnotationIcon stampAnnotationIcon = settings.Icon;
 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to modify the stamp annotation 
+
+Stamp annotation’s properties can be programmatically modify through `Settings` properties in `StampAnnotationChangedEventArgs`.
+
+The following code snippet explains how to modify the selected annotation’s properties.
+
+{% tabs %}
+{% highlight C# %}
+
+//Modifying the selected annotation’s properties. 
+private void PdfViewer_StampAnnotationChanged (object sender, StampAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Select)
+    {
+        (e.Settings as PdfViewerStampSettings).Icon = PdfRubberStampAnnotationIcon.Expired;
+    }
 }
 
 {% endhighlight %}

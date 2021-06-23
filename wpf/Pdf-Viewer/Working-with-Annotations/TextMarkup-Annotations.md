@@ -583,6 +583,69 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 *	Ctrl + Z – Performs undo functionality for recently performed operations.
 *	Ctrl + Y – Performs redo functionality for recently performed operations.
 
+## How to get textmarkup annotation’s name programmatically
+
+Textmarkup annotation’s name can be obtained either from `Textmarkupannotationchanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+
+The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Getting annotation’s name while adding the annotation
+private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        textMarkupAnnotationName = e.Name;
+    }
+}
+
+//Getting existing annotation’s name
+private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
+{
+     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+     PdfPageBase page = loadedDocument.Pages[0];
+     textMarkupAnnotationName = page.Annotations[0].Name;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the textmarkup annotation programmatically
+PDF Viewer allows the users to select the textmarkup annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `Textmarkupannotationchanged` event.
+
+N> For better performance we can also pass the page number of the annotation.
+
+The following code snippet explains how to select annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Getting annotation’s name while adding the annotation
+private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        textMarkupAnnotationName = e.Name;
+    }
+}
+
+//Selecting textmarkup annotation with annotation’s name and page number
+private void SelectAnnotation(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(textMarkupAnnotationName, 1);
+}
+
+//Selecting textmarkup annotation with annotation’s name 
+private void SelectAnnotation1(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(textMarkupAnnotationName);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Events
 
 The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
@@ -619,6 +682,38 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     string Text = settings.Text;
     float opacity = settings.Opacity;
 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to modify the textmarkup annotation 
+
+Textmarkup annotation’s properties can be programmatically modify through `Settings` properties in ` TextMarkupAnnotationChangedEventArgs`. 
+
+The following code snippet explains how to modify the selected annotation’s properties.
+
+{% tabs %}
+{% highlight C# %}
+
+//Modifying the selected annotation’s properties. 
+private void PdfViewer_TextMarkupAnnotationChanged (object sender, TextMarkupAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Select)
+    {
+        if (Settings is PdfViewerHighlightSettings)
+        {
+               (Settings as PdfViewerHighlightSettings).HighlightColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+         }
+         else if (Settings is PdfViewerUnderlineSettings)
+         {
+                (Settings as PdfViewerUnderlineSettings).UnderlineColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+          }
+          else if (Settings is PdfViewerStrikethroughSettings)
+          {
+                 (Settings as PdfViewerStrikethroughSettings).StrikethroughColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+           }   
+     }
 }
 
 {% endhighlight %}
