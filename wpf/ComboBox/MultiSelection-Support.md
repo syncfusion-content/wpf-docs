@@ -163,7 +163,7 @@ public class ViewModel : INotifyPropertyChanged
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
 
-## Token Support in WPF ComboBox
+## Multiselect edit using tokens
 
 The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The EnableToken property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
 
