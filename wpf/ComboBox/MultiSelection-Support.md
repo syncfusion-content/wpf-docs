@@ -162,3 +162,54 @@ public class ViewModel : INotifyPropertyChanged
 ![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
+
+## Multiselect edit using tokens
+
+The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The EnableToken property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
+
+When an item is selected from the dropdown, it is added to the text area as a token. The appropriate item will be removed from the text box when you click the close icon.
+
+{% tabs %}
+{% highlight C# %}
+
+<syncfusion:ComboBoxAdv 
+      AllowMultiSelect="true"
+      IsEditable="true"
+      EnableToken="true">
+</syncfusion:ComboBoxAdv>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ComboBoxAdv comboBox = new ComboBoxAdv();       
+combobox.AllowMultiSelect = true;
+combobox.IsEditable = true;
+combobox.EnableToken = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF ComboBoxAdv Token support](ComboBoxAdv_images/wpf-comboboxadv-token-support.gif)
+
+N> Only the multiselection mode has token support. ComboBox's text area height will be increased or decreased automatically based on the placement of the selected items.
+
+### Editing
+
+You can type any text in textbox, and it will be added as a token only if it matches the dropdown items.
+
+![WPF ComboBoxAdv Editing support](ComboBoxAdv_images/wpf-comboboxadv-editing-support.gif)
+
+### Keyboard access
+
+•	Using the **Down Arrow**, **Up Arrow**, **Space**, **Enter** and **Tab** keys item can be selected from the combobox.
+
+•	Using the **Enter** and **Tab** keys, typed text will be validated and added as token if it is available in dropdown items.
+
+•	Using the **Backspace** key, the last positioned token will be removed from the text area.
+
+•	When the **Esc** key is pressed, the drop-down area will be closed if it has been opened already.
+
+
+
+
