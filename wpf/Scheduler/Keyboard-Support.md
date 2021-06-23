@@ -38,7 +38,7 @@ Selection moves to next appointment or selection moves to next appointment after
 <tr>
 <td>
 Shift + Tap<br/><br></td><td>
-Selection moves to previous appoitment or selection moves to previous appointment after the selected cell.<br/><br/></td></tr>
+Selection moves to previous appointment or selection moves to previous appointment after the selected cell.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 1 => DayView<br/><br/></td><td>

@@ -136,8 +136,6 @@ this.Schedule.AllowViewNavigation = true;
 {% endhighlight %}
 {% endtabs %}
 
-![allow-view-navigation-in-WPF-Scheduler](Date-Navigations_Images/allow-view-navigation-in-WPF-Scheduler.gif)
-
 N>
 *  The `AllowViewNavigation` is not applicable for day and timeline day views.
 * If `ShowAgendaView` is true in month view, the month view should navigate to the day view by single clicking on the agenda date view header, otherwise the month view should navigate to the day view by single clicking on the date in month cell. 
