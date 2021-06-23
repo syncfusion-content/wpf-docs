@@ -66,7 +66,7 @@ In the below example, first two items from the Observable Collection bound to th
 
 ### Creating Model and ViewModel data for DataBinding
 
-1.Create a data object class named **Country** and declare the property as follows.
+1. Create a data object class named **Country** and declare the property as follows.
 
 {% tabs %}
 
@@ -81,7 +81,7 @@ public class Country
 
 {% endtabs %}
 
-2.Create a **ViewModel** class with `SelectedItems`, which are initialized with data objects in constructor.
+2. Create a **ViewModel** class with `SelectedItems`, which are initialized with data objects in constructor.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-3.To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
+3. To bind the `ComboBoxAdv` to data, bind the collection created in the previous step to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netcore-3.1#System_Windows_Controls_ItemsControl_ItemsSource) property in XAML by setting the `ViewModel` as `DataContext`.
 
 {% tabs %}
 
@@ -159,9 +159,74 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/ComboBoxAdv_img14.png)
+![Adding multiple selections to an application in WPF ComboBoxAdv](Comboboxadv_images/wpf-comboboxadv-multiSelection.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv-MultiSelection)
+
+## Override selected items programmatically
+
+
+You can override the selected items programmatically by overriding the `OnItemChecked` and `OnItemUnchecked` method.
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class ComboBoxExt : ComboBoxAdv
+{
+    protected override ObservableCollection<object> OnItemChecked(object checkedItem, ObservableCollection<object> selectedItems)
+    {
+        if (((FrameworkElement)checkedItem).DataContext == this.Items[0])
+        {
+            AddItem(selectedItems, new int[] { 1, 2 });
+        }
+        if (((FrameworkElement)checkedItem).DataContext == this.Items[4])
+        {
+            AddItem(selectedItems, new int[] { 5, 6 });
+        }
+    }
+
+    protected override ObservableCollection<object> OnItemUnchecked(object unCheckedItem, ObservableCollection<object> selectedItems)
+    {
+        if (((FrameworkElement)uncheckedItem).DataContext == this.Items[0])
+        {
+            RemoveItem(selectedItems, new int[] { 1, 2 });
+        }
+        if (((FrameworkElement)uncheckedItem).DataContext == this.Items[4])
+        {
+            RemoveItem(selectedItems, new int[] { 5, 6 });
+        }
+
+        return base.OnItemUnchecked(unCheckedItem, selectedItems);
+    }
+
+    public void AddItem(ObservableCollection<object> selectedItems, int[] index)
+    {
+        foreach (int i in index)
+        {
+            if (!selectedItems.Contains(this.Items[i]))
+                selectedItems.Add(this.Items[i]);
+        }
+    }
+
+    public void RemoveItem(ObservableCollection<object> selectedItems, int[] index)
+    {
+        foreach (int i in index)
+        {
+            if (selectedItems.Contains(this.Items[i]))
+                selectedItems.Remove(this.Items[i]);
+        }
+    }
+}
+
+On selecting the Asia, then India and China will be automatically added into selected items. 
+
+![WPF ComboBoxAdv override checked and unchecked items](Comboboxadv_images/wpf-comboboxadv-override.png)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Multiselect edit using tokens
 
