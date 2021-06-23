@@ -269,7 +269,7 @@ When you place the mouse pointer over the annotation, the tooltip will be displa
 
 ## How to get sticky note annotation’s name programmatically
 
-Sticky note annotation’s name can be obtained either from `Stickynoteannotationchanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+Sticky note annotation’s name can be obtained either from `StickyNoteAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
 
 The following code snippet explains how to get annotation’s name while adding and from exist annotation.
 
@@ -298,7 +298,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the sticky note annotation programmatically
 
-PDF Viewer allows the users to select the sticky note annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `Stampannotationchanged` event.
+PDF Viewer allows the users to select the sticky note annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `StickyNoteAnnotationChanged` event.
 
 N> For better performance we can also pass the page number of the annotation.
 

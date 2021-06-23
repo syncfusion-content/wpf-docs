@@ -583,9 +583,9 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 *	Ctrl + Z – Performs undo functionality for recently performed operations.
 *	Ctrl + Y – Performs redo functionality for recently performed operations.
 
-## How to get textmarkup annotation’s name programmatically
+## How to get text markup annotation’s name programmatically
 
-Textmarkup annotation’s name can be obtained either from `Textmarkupannotationchanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+Text markup annotation’s name can be obtained either from `TextMarkupAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
 
 The following code snippet explains how to get annotation’s name while adding and from exist annotation.
 
@@ -612,8 +612,8 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## How to select the textmarkup annotation programmatically
-PDF Viewer allows the users to select the textmarkup annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `Textmarkupannotationchanged` event.
+## How to select the text markup annotation programmatically
+PDF Viewer allows the users to select the text markup annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `TextMarkupAnnotationChanged` event.
 
 N> For better performance we can also pass the page number of the annotation.
 
@@ -687,9 +687,9 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
 {% endhighlight %}
 {% endtabs %}
 
-### How to modify the textmarkup annotation 
+### How to modify the text markup annotation 
 
-Textmarkup annotation’s properties can be programmatically modify through `Settings` properties in ` TextMarkupAnnotationChangedEventArgs`. 
+Text markup annotation’s properties can be programmatically modify through `Settings` properties in ` TextMarkupAnnotationChangedEventArgs`. 
 
 The following code snippet explains how to modify the selected annotation’s properties.
 

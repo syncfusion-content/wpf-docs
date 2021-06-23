@@ -222,7 +222,7 @@ The following image illustrates how to delete the included annotation from the P
 
 ## How to get text annotation’s name programmatically
 
-Text annotation’s name can be obtained either from `Freetextannotationchanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+Text annotation’s name can be obtained either from `FreeTextAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
 
 The following code snippet explains how to get annotation’s name while adding and from exist annotation.
 
@@ -251,7 +251,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the text annotation programmatically
 
-PDF Viewer allows the users to select the text annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `Freetextannotationchanged` event.
+PDF Viewer allows the users to select the text annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `FreeTextAnnotationChanged` event.
 
 N> For better performance we can also pass the page number of the annotation.
 
