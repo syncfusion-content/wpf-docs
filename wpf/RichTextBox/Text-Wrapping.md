@@ -32,7 +32,7 @@ Text wraps above and below the image so it is on its own line. This is most usef
 ## Square
 This wraps text around an image on all sides at right angles, as if it had a rectangular box around it.
 
-N> Tight and Through types are also preserved as Square wrapping style in SfRichTextBoxAdv.
+N> Tight and Through types are also displayed as Square wrapping style in SfRichTextBoxAdv.
 
 ![Square](Text-Wrapping_images/Square.PNG)
 
