@@ -64,7 +64,7 @@ Default value is *None*.
 
 ### Suggest
 
-By setting the AutoCompleteMode property to Suggest, a list of possible matches will be suggested and displayed in the drop-down list. The search text are included or start with the suggested items.
+By setting the `AutoCompleteMode` property to `Suggest`, a list of possible matches will be suggested and displayed in the drop-down list. The search text are included or start with the suggested items.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,4 +85,4 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 
 N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection.
 
-N> When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, AutoCompleteMode will take precedence.
+N> When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` will take precedence.
