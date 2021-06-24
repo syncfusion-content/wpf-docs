@@ -294,6 +294,46 @@ N>NOTE
 * `TimeInterval` value will be set, when `MinimumAppointmentDuration` greater than `TimeInterval` with lesser appointment duration.
 * All day Appointment does not support `MinimumAppointmentDuration`.
 
+## Minimum display appointments count in all day panel
+You can customize the number of appointments displayed in an all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings MinimumAllDayAppointmentsCount="3"/>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
+{% endhighlight %}
+{% endtabs %}
+
+### Customize more appointments indicator in all day panel
+You can customize the default appearance of more appointments indicator in the all-day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings.`
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.DaysViewSettings>
+        <syncfusion:DaysViewSettings>
+            <syncfusion:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding StringFormat=+{0}}" Background="LightBlue" Foreground="Black"
+                               HorizontalAlignment="Stretch" TextAlignment="Left" VerticalAlignment="Stretch" Padding="2,3,0,0">
+                    </TextBlock>
+                </DataTemplate>
+            </syncfusion:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
+        </syncfusion:DaysViewSettings>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+![all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views](DaysView_Images/all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views.png)
+
 ## Time text formatting
 Customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `DayViewSettings` in `Scheduler`.
 {% tabs %}
@@ -303,7 +343,12 @@ Schedule.DaysViewSettings.TimeRulerFormat = "hh mm";
 Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
+
 ![Time text formatting in WPF Scheduler](DaysView_Images/adding-Timetextformatting.png)
+
+N>
+* You can customize the appointment editor time format based on scheduler time ruler format and culture.
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt.`
 
 ## View header
 Customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.
