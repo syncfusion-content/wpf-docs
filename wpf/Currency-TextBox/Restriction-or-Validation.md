@@ -60,6 +60,57 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 ![Validate maximum value of CurrencyTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
+## Restrict number of decimal digits
+
+You can change the decimal digits format in the `CurrencyTextBox` control using `CurrencyDecimalDigits` property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using `MinimumCurrencyDecimalDigits` and `MaximumCurrencyDecimalDigits` properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
+
+N> If the value of `MinimumCurrencyDecimalDigits` property is greater than the value of `MaximumCurrencyDecimalDigits` property, the text of `CurrencyTextBox` will be updated based on value of `MinimumCurrencyDecimalDigits` property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CurrencyTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumCurrencyDecimalDigits="4"
+                            MinimumCurrencyDecimalDigits="1" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Value = 125.32545;
+currencyTextBox.MaximumCurrencyDecimalDigits = 4;
+currencyTextBox.MinimumCurrencyDecimalDigits = 1;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/currencytextbox-wpf-restrict-numberof-decimal-digits.png)
+
+When the value of `MinimumCurrencyDecimalDigits`, `MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties are specified, `CurrencyDecimalDigits` property takes higher precedence and updates the text of `CurrencyTextBox` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CurrencyTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumCurrencyDecimalDigits="4"
+                            MinimumCurrencyDecimalDigits="1" 
+                            CurrencyDecimalDigits="3"
+                            />
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Value = 125.32545;
+currencyTextBox.MaximumCurrencyDecimalDigits = 4;
+currencyTextBox.MinimumCurrencyDecimalDigits = 1;
+currencyTextBox.CurrencyDecimalDigits = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox WPF change decimal digits](Restriction-or-Validation_images/currencytextbox-wpf-decimaldigits.png)
+
 ## Read only mode
 
 The `CurrencyTextBox` cannot allow the user input, edits when [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) property is sets to `true`. The user can still select text and display the cursor on the `CurrencyTextBox` by setting the [IsReadOnlyCaretVisible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`. However, value can be changed programmatically in readonly mode.
