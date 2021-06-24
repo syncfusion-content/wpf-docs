@@ -272,7 +272,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 PDF Viewer allows the users to select the stamp annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `StampAnnotationChanged` event.
 
-N> For better performance, we can also pass the page number of the annotation.
+N> For better performance, we can use the method `SelectAnnotation` with page number overload.
 
 The following code snippet explains how to select annotation.
 
@@ -344,7 +344,7 @@ private void PdfViewer_StampAnnotationChanged(object sender, StampAnnotationChan
 
 ### How to modify the stamp annotation 
 
-Stamp annotation’s properties can be programmatically modified through `Settings` in `StampAnnotationChangedEventArgs`.
+Stamp annotation’s properties can be programmatically modified through `Settings` in `[StampAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StampAnnotationChangedEventArgs.html)`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 

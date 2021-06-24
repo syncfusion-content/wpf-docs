@@ -181,7 +181,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 PDF Viewer allows the users to select the ink annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `InkAnnotationChanged` event.
 
-N> For better performance, we can also pass the page number of the annotation.
+N> For better performance, we can use the method `SelectAnnotation` with page number overload.
 
 The following code snippet explains how to select annotation.
 
@@ -349,7 +349,7 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 ### How to modify the Ink annotation 
 
-Ink annotation’s properties can be programmatically modified through `Settings` in `InkAnnotationChangedEventArgs`.
+Ink annotation’s properties can be programmatically modified through `Settings` in `[InkAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.InkAnnotationChangedEventArgs.html)`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 
