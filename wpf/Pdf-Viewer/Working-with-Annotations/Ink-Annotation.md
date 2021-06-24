@@ -150,9 +150,9 @@ End Sub
 
 ## How to get Ink annotation’s name programmatically
 
-Ink annotation’s name can be obtained either from `InkAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist in the document.
+Ink annotation’s name can be obtained either from `InkAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
 
-The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+The following code snippet explains how to get annotation’s name while adding and from existing annotation.
 
 {% tabs %}
 {% highlight C# %}
@@ -179,9 +179,9 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the Ink annotation programmatically
 
-PDF Viewer allows the users to select the ink annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `InkAnnotationChanged` event.
+PDF Viewer allows the users to select the ink annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modifiedy using `InkAnnotationChanged` event.
 
-N> For better performance we can also pass the page number of the annotation.
+N> For better performance, we can also pass the page number of the annotation.
 
 The following code snippet explains how to select annotation.
 
@@ -349,7 +349,7 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 ### How to modify the Ink annotation 
 
-Ink annotation’s properties can be programmatically modify through `Settings` properties in `InkAnnotationChangedEventArgs`.
+Ink annotation’s properties can be programmatically modified through `Settings` in `InkAnnotationChangedEventArgs`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 

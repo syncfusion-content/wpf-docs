@@ -454,7 +454,7 @@ The following image illustrates the change in the opacity of the included rectan
 
 ##### Border Styles
 
-PDF viewer allows the users to change annotation border style. Currently it provides support for following border style. 
+PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
 
 * Cloudy
 * Solid
@@ -463,19 +463,19 @@ By default, annotation border style will be solid.
 
 #####Changing the border style from UI
 
-The border style of the selected rectangle annotation will be displayed in the combo box control in the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
+The border style of the selected rectangle annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
 
-The following image illustrates how to change the border style of the rectangle annotation included.
+The following image illustrates how to change the border style of the rectangle annotation.
 
 ![rectangle annotation](Annotation-images\Rectangle-Annotation-11.png)
 
-The following image illustrates the change in thickness of the selected rectangle annotation.
+The following image illustrates the change of thickness in the selected rectangle annotation.
 
 ![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
 
 #####Changing the border style programmatically
 
-The rectangle annotation can be customized at the time of inclusion itself. The following code shows how to set default border style of the included rectangle annotation in code behind by using BorderEffect property.
+The rectangle annotation can be customized at the time of inclusion. The following code shows how to set default border style of the included rectangle annotation by using BorderEffect property.
 
 {% tabs %}
 {% highlight C# %}
@@ -1263,7 +1263,7 @@ The following image illustrates the change in the opacity of the included polygo
 
 ##### Border Styles
 
-PDF viewer allows the users to change annotation border style. Currently it provides support for following border style. 
+PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
 
 * Cloudy
 * Solid
@@ -1274,19 +1274,19 @@ By default, annotation border style will be solid.
 
 #####Changing the border style from UI
 
-The border style of the selected polygon annotation will be displayed in the combo box control in the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
+The border style of the selected polygon annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
 
 The following image illustrates how to change the border style of the polygon annotation included.
 
 ![Before applying polygon border style](Annotation-images\Polygon-Annotation-13.png)
 
-The following image illustrates the change in border style of the selected polygon annotation.
+The following image illustrates the change of border style in the selected polygon annotation.
 
 ![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
 
 #####Changing the border style programmatically
 
-The polygon annotation can be customized at the time of inclusion itself. The following code shows how to set default border style of the included polygon annotation in code behind by using BorderEffect property.
+The polygon annotation can be customized at the time of inclusion. The following code shows how to a set default border style of the included polygon annotation by using BorderEffect property.
 
 {% tabs %}
 {% highlight C# %}
@@ -1545,9 +1545,9 @@ The following image illustrates how to delete the included annotation from the P
 
 ## How to get shape annotation’s name programmatically
 
-Shape annotation’s name can be obtained either from `ShapeAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+Shape annotation’s name can be obtained either from `ShapeAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
 
-The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+The following code snippet explains how to get annotation’s name while adding and from existing annotation.
 
 % tabs %}
 {% highlight C# %}
@@ -1574,9 +1574,9 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the shape annotation programmatically
 
-PDF Viewer allows the users to select the shape annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `ShapeAnnotationChanged` event.
+PDF Viewer allows the users to select the shape annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `ShapeAnnotationChanged` event.
 
-N> For better performance we can also pass the page number of the annotation.
+N> For better performance, we can also pass the page number of the annotation.
 
 The following code snippet explains how to select annotation.
 
@@ -1653,7 +1653,7 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 
 ### How to modify the shape annotation 
 
-Shape annotation’s properties can be programmatically modify through `Settings` properties in `ShapeAnnotationChangedEventArgs`.
+Shape annotation’s properties can be programmatically modified through `Settings` in `ShapeAnnotationChangedEventArgs`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 
