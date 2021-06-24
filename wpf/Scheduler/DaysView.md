@@ -348,7 +348,7 @@ Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 
 N>
 * You can customize the appointment editor time format based on scheduler time ruler format and culture.
-* By default, the scheduler time ruler format is `hh:mm tt` and the appointment editor time picker format is `h tt.` 
+* By default, the scheduler time ruler format is `h tt` and the appointment editor time picker format is `hh:mm tt.`
 
 ## View header
 Customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.

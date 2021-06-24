@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Support in WPF SfScheduler control | Syncfusion
-description: Learn here about Keyboard support with the Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
+title: Accessibility in WPF SfScheduler control | Syncfusion
+description: Learn here about Accessibility support with the Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: WPF
 control: SfScheduler
 documentation: ug
@@ -35,7 +35,7 @@ Up arrow<br/><br/></td><td>
 Moves selection to the previous time slot directly above the currently selected time slot.<br/><br/></td></tr>
 </table>
 
-### Timeline view
+### Timeline views
 
 <table>
 <tr>
