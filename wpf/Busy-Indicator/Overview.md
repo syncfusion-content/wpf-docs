@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Busy Indicator (SfBusyIndicator) Overview
 
-The Busy Indicator control includes over 20 built-in animations that can be displayed within your applications.
+The Busy Indicator control includes over 37 built-in animations that can be displayed within your applications.
 
 ![Busy Indicator - Overview](Overview_images/Overview_img1.png)
 
@@ -21,7 +21,7 @@ Busy Indicator
 * IsBusy – The control will show the animation when this property is set.
 * Header – A user customized string that is displayed while showing animation.
 * Sizing – The control view box height and width can be set.
-* AnimationTypes – There are over 20 built-in animations that can be set with the control.
+* AnimationTypes – There are over 37 built-in animations that can be set with the control.
 
 
 
