@@ -62,32 +62,56 @@ percentTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digit
 
-The `PercentTextBox` allows the user to customize the number of digits to be displayed after the decimal point of `PercentTextBox` percent value
-by using [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits) property.
-The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or minimum digit, the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MinPercentDecimalDigits) and [MaxPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MaxPercentDecimalDigits)
+## Restrict number of decimal digit
+
+You can change the decimal digits format in the `PercentTextBox` control using `PercentDecimalDigits` property. You can restrict the decimal digits of text within maximum and minimum limits in `PercentTextBox` control using `MinPercentDecimalDigits` and `MaxPercentDecimalDigits` properties. The default value of `MinPercentDecimalDigits`,`MaxPercentDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+
+N> If the value of `MinPercentDecimalDigits` property is greater than value of the `MaxPercentDecimalDigits` property, the text of `PercentTextBox` will be updated based on value of `MinPercentDecimalDigits` property.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
-                          PercentDecimalDigits = "3" MinPercentDecimalDigits = "2"
-                          MaxPercentDecimalDigits = "5"/>
-{% endhighlight %}
+{% highlight XAML %}
 
-{% highlight c# %}
+<syncfusion:PercentTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaxPercentDecimalDigits="4"
+                            MinPercentDecimalDigits="1" />
+
+{% endhighlight %}
+{% highlight C# %}
+
 PercentTextBox percentTextBox = new PercentTextBox();
-percentTextBox.Width = 150;
-percentTextBox.Height = 25;
-percentTextBox.MinValue = 0;
-percentTextBox.MaxValue = 100;
-percentTextBox.PercentDecimalDigits = 3;
-percentTextBox.MinPercentDecimalDigits = 2;
-percentTextBox.MaxPercentDecimalDigits = 5;
+percentTextBox.Value = 125.32545;
+percentTextBox.MaxPercentDecimalDigits = 4;
+percentTextBox.MinPercentDecimalDigits = 1;
+
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox limits the number of decimal digits](Restriction-or-Validation_images/DecimalDigits.png)
+![PercentTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/percenttextbox-wpf-restrict-numberof-decimal-digits.png)
 
-N> `PercentDecimalDigits` property value will be allows set based on the in-between range of `MinPercentDecimalDigits` and `MaxPercentDecimalDigits` property values.
+When the value of  `MinPercentDecimalDigits`, `MaxPercentDecimalDigits` and `PercentDecimalDigits` properties are specified, `PercentDecimalDigits` property takes higher precedence and updates the text of `PercentTextBox` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaxPercentDecimalDigits="4"
+                            MinPercentDecimalDigits="1" 
+                            PercentDecimalDigits="3"
+                            />
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Value = 125.32545;
+percentTextBox.MaxPercentDecimalDigits = 4;
+percentTextBox.MinPercentDecimalDigits = 1;
+percentTextBox.PercentDecimalDigits = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox WPF change decimal digits](Restriction-or-Validation_images/percenttextbox-wpf-decimaldigits.png)
 
 ## Read only mode
 
