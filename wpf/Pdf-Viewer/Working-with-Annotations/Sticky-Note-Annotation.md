@@ -281,7 +281,7 @@ private void PdfViewer_StickyNoteAnnotationChanged (object sender, StickyNoteAnn
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        stickyAnnotationName = e.Name;
+        string stickyAnnotationName = e.Name;
     }
 }
 
@@ -290,7 +290,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     stickyAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -384,9 +384,9 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
 {
     if (e.Action == AnnotationChangedAction.Select)
     {
-        PdfViewerStickyNoteSettings setting = (e.Settings as PdfViewerStickyNoteSettings);
-       setting.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-       setting.Icon = PdfPopupIcon.Note; 
+        PdfViewerStickyNoteSettings settings = (e.Settings as PdfViewerStickyNoteSettings);
+        settings.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        settings.Icon = PdfPopupIcon.Note; 
     }
 }
 

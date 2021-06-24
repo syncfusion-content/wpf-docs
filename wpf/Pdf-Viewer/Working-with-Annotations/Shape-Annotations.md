@@ -1557,7 +1557,7 @@ private void PdfViewer_ShapeAnnotationChanged (object sender, ShapeAnnotationCha
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        shapeAnnotationName = e.Name;
+        string shapeAnnotationName = e.Name;
     }
 }
 
@@ -1566,7 +1566,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     shapeAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -1651,7 +1651,7 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 {% endhighlight %}
 {% endtabs %}
 
-### How to modify the shape annotation 
+### How to modify the shape annotation
 
 Shape annotation’s properties can be programmatically modified through `Settings` in `ShapeAnnotationChangedEventArgs`.
 
@@ -1667,37 +1667,37 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     {
         if (e.Settings is PdfViewerLineSettings)
         {
-            PdfViewerLineSettings setting = (e.Settings as PdfViewerLineSettings);
-            setting.LineColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+            PdfViewerLineSettings settings = (e.Settings as PdfViewerLineSettings);
+            settings.LineColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
         }
         else if (e.Settings is PdfViewerRectangleSettings)
         {
-              PdfViewerLineSettings setting = (e.Settings as PdfViewerRectangleSettings);
-      setting.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-      setting.RectangleColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-         }
-         else if (e.Settings is PdfViewerCircleSettings)
-         {
-              PdfViewerCircleSettings setting = (Settings as PdfViewerCircleSettings);
-              setting.CircleColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-         }
-         else if (e.Settings is PdfViewerArrowSettings)
-         {
-             PdfViewerArrowSettings setting = (Settings as PdfViewerArrowSettings);
-             setting.BeginLineStyle = PdfLineEndingStyle.Square;
-             setting.EndLineStyle = PdfLineEndingStyle.Circle;
-         }
-         else if (e.Settings is PdfViewerPolygonSettings)
-         {
-             PdfViewerPolygonSettings setting = (Settings as PdfViewerPolygonSettings);
-             setting.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-             setting.StrokeColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 0); 
-         }
-         else if (e.Settings is PdfViewerPolylineSettings)
-         {
-             PdfViewerPolylineSettings setting = (Settings as PdfViewerPolylineSettings);
-             setting.StrokeColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-         }
+            PdfViewerLineSettings settings = (e.Settings as PdfViewerRectangleSettings);
+            settings.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
+            settings.RectangleColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
+        }
+        else if (e.Settings is PdfViewerCircleSettings)
+        {
+            PdfViewerCircleSettings settings = (Settings as PdfViewerCircleSettings);
+            settings.CircleColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        }
+        else if (e.Settings is PdfViewerArrowSettings)
+        {
+            PdfViewerArrowSettings settings = (Settings as PdfViewerArrowSettings);
+            settings.BeginLineStyle = PdfLineEndingStyle.Square;
+            settings.EndLineStyle = PdfLineEndingStyle.Circle;
+        }
+        else if (e.Settings is PdfViewerPolygonSettings)
+        {
+            PdfViewerPolygonSettings settings = (Settings as PdfViewerPolygonSettings);
+            settings.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+            settings.StrokeColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 0); 
+        }
+        else if (e.Settings is PdfViewerPolylineSettings)
+        {
+            PdfViewerPolylineSettings settings = (Settings as PdfViewerPolylineSettings);
+            settings.StrokeColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        }
     }
 }
 

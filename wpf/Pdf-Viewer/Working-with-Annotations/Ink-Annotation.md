@@ -162,7 +162,7 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        inkAnnotationName = e.Name;
+        string inkAnnotationName = e.Name;
     }
 }
 
@@ -171,7 +171,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     inkAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}

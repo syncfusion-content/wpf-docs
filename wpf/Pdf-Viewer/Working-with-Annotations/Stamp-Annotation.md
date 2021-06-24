@@ -253,7 +253,7 @@ private void PdfViewer_StampAnnotationChanged (object sender, StampAnnotationCha
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        stampAnnotationName = e.Name;
+        string stampAnnotationName = e.Name;
     }
 }
 
@@ -262,7 +262,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     stampAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}

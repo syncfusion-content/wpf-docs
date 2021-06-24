@@ -234,7 +234,7 @@ private void PdfViewer_ FreeTextAnnotationChanged (object sender, FreeTextAnnota
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        textAnnotationName = e.Name;
+        string textAnnotationName = e.Name;
     }
 }
 
@@ -243,7 +243,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     textAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -343,12 +343,12 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
 {
     if (e.Action == AnnotationChangedAction.Select)
     {
-         PdfViewerFreeTextSettings setting = (Settings as PdfViewerFreeTextSettings);
-         setting.Background = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-        setting.BorderColor = System.Windows.Media.Color.FromArgb(255, 255, 255, 0);
-        setting.FontColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        setting.Opacity = 1f;
-         setting.Text = "Syncfusion Testing";    
+        PdfViewerFreeTextSettings settings = (Settings as PdfViewerFreeTextSettings);
+        settings.Background = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
+        settings.BorderColor = System.Windows.Media.Color.FromArgb(255, 255, 255, 0);
+        settings.FontColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        settings.Opacity = 1f;
+        settings.Text = "Syncfusion Testing";    
     }
 }
 

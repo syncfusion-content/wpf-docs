@@ -597,7 +597,7 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        textMarkupAnnotationName = e.Name;
+        string textMarkupAnnotationName = e.Name;
     }
 }
 
@@ -606,7 +606,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     textMarkupAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -703,16 +703,16 @@ private void PdfViewer_TextMarkupAnnotationChanged (object sender, TextMarkupAnn
     {
         if (Settings is PdfViewerHighlightSettings)
         {
-               (Settings as PdfViewerHighlightSettings).HighlightColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
-         }
-         else if (Settings is PdfViewerUnderlineSettings)
-         {
-                (Settings as PdfViewerUnderlineSettings).UnderlineColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
-          }
-          else if (Settings is PdfViewerStrikethroughSettings)
-          {
-                 (Settings as PdfViewerStrikethroughSettings).StrikethroughColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
-           }   
+            (Settings as PdfViewerHighlightSettings).HighlightColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+        }
+        else if (Settings is PdfViewerUnderlineSettings)
+        {
+            (Settings as PdfViewerUnderlineSettings).UnderlineColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+        }
+        else if (Settings is PdfViewerStrikethroughSettings)
+        {
+            (Settings as PdfViewerStrikethroughSettings).StrikethroughColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 255);
+        }
      }
 }
 
