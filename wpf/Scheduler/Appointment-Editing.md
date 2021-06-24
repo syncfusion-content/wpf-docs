@@ -82,7 +82,7 @@ this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
 
 private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
 {
-    e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
+    e.AppointmentEditorOptions = AppointmentEditorOptions.All | (~AppointmentEditorOptions.Background & ~AppointmentEditorOptions.Foreground & ~AppointmentEditorOptions.Reminder & ~AppointmentEditorOptions.Resource);
 }
 {% endhighlight %}
 {% endtabs %}
