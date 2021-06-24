@@ -269,7 +269,7 @@ When you place the mouse pointer over the annotation, the tooltip will be displa
 
 ## How to get sticky note annotation’s name programmatically
 
-Sticky note annotation’s name can be obtained either from `StickyNoteAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+Sticky note annotation’s name can be obtained either from `StickyNoteAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
 
 The following code snippet explains how to get annotation’s name while adding and from exist annotation.
 
@@ -281,7 +281,7 @@ private void PdfViewer_StickyNoteAnnotationChanged (object sender, StickyNoteAnn
 {
     if (e.Action == AnnotationChangedAction.Add)
     {
-        stickyAnnotationName = e.Name;
+        string stickyAnnotationName = e.Name;
     }
 }
 
@@ -290,7 +290,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
      PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
      PdfPageBase page = loadedDocument.Pages[0];
-     stickyAnnotationName = page.Annotations[0].Name;
+     string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -298,9 +298,9 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the sticky note annotation programmatically
 
-PDF Viewer allows the users to select the sticky note annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `StickyNoteAnnotationChanged` event.
+PDF Viewer allows the users to select the sticky note annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `StickyNoteAnnotationChanged` event.
 
-N> For better performance we can also pass the page number of the annotation.
+N> For better performance, we can also pass the page number of the annotation.
 
 The following code snippet explains how to select annotation.
 
@@ -372,7 +372,7 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
 
 ### How to modify the sticky note annotation 
 
-Sticky note annotation’s properties can be programmatically modify through `Settings` properties in ` StickyNoteAnnotationChangedEventArgs`. 
+Sticky note annotation’s properties can be programmatically modified through `Settings` in ` StickyNoteAnnotationChangedEventArgs`. 
 
 The following code snippet explains how to modify the selected annotation’s properties.
 
@@ -384,9 +384,9 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
 {
     if (e.Action == AnnotationChangedAction.Select)
     {
-        PdfViewerStickyNoteSettings setting = (e.Settings as PdfViewerStickyNoteSettings);
-       setting.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-       setting.Icon = PdfPopupIcon.Note; 
+        PdfViewerStickyNoteSettings settings = (e.Settings as PdfViewerStickyNoteSettings);
+        settings.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        settings.Icon = PdfPopupIcon.Note; 
     }
 }
 
