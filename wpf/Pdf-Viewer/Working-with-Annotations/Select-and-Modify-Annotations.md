@@ -7,9 +7,9 @@ control: PDF Viewer
 documentation: ug
 ---
 
-#Select and Modify annotations programmatically.
+#Select and Modify annotations programmatically
 
-##Select an annotation.
+##Select an annotation
 
 PDF Viewer allows the users to select the annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
 
@@ -35,11 +35,12 @@ private void SelectAnnotation1(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### How to obtain the name of an annotation.
+### How to obtain the name of an annotation
 
-Annotation’s name can be obtained either from respective annotation changed event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
+Annotation’s name can be obtained either for newly added annotation or the annotation which was already exist. In the following sections, the ink annotation was explained brevity and similarly we can obtain names for all other annotations.
 
-The following code snippet explains how to get ink annotation’s name in both. Similarly, we can implement for all other annotation.
+#### Getting annotation’s name while adding annotation
+Added annotation’s name can be obtained from respective annotation changed event. The following code snippet explains how to get annotation’s name while adding the annotation in the document.
 
 {% tabs %}
 {% highlight C# %}
@@ -53,6 +54,16 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
     }
 }
 
+{% endhighlight %}
+{% endtabs %}
+
+
+#### Getting annotation’s name for existing annotation
+
+Existing annotation’s name can be obtained from [LoadedDocument]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument). The following code snippet explains how to get existing annotation’s name. 
+
+{% tabs %}
+{% highlight C# %}
 //Getting existing annotation’s name
 private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
@@ -64,11 +75,11 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## Modify an annotation.
+## Modify an annotation
 
 Annotation’s properties can be modified programmatically through `Settings` in respective annotation changed event. 
 
-The following code snippet explains how to modify the selected ink annotation’s properties. Similarly we can implement for all other annotation.
+The following code snippet explains how to modify the selected ink annotation’s properties. Similarly, we can implement for all other annotations.
 
 {% tabs %}
 {% highlight C# %}
