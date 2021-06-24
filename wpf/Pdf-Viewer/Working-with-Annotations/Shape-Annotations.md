@@ -1576,7 +1576,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 PDF Viewer allows the users to select the shape annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `ShapeAnnotationChanged` event.
 
-N> For better performance, we can also pass the page number of the annotation.
+N> For better performance, we can use the method `SelectAnnotation` with page number overload.
 
 The following code snippet explains how to select annotation.
 
@@ -1653,7 +1653,7 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 
 ### How to modify the shape annotation
 
-Shape annotation’s properties can be programmatically modified through `Settings` in `ShapeAnnotationChangedEventArgs`.
+Shape annotation’s properties can be programmatically modified through `Settings` in `[ShapeAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.ShapeAnnotationChangedEventArgs.html)`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 

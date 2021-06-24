@@ -615,7 +615,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 ## How to select the text markup annotation programmatically
 PDF Viewer allows the users to select the text markup annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `TextMarkupAnnotationChanged` event.
 
-N> For better performance, we can also pass the page number of the annotation.
+N> For better performance, we can use the method `SelectAnnotation` with page number overload.
 
 The following code snippet explains how to select annotation.
 
@@ -689,7 +689,7 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
 
 ### How to modify the text markup annotation 
 
-Text markup annotation’s properties can be programmatically modified through `Settings` properties in ` TextMarkupAnnotationChangedEventArgs`. 
+Text markup annotation’s properties can be programmatically modified through `Settings` properties in `[TextMarkupAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html)`. 
 
 The following code snippet explains how to modify the selected annotation’s properties.
 

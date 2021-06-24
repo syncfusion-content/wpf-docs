@@ -253,7 +253,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 PDF Viewer allows the users to select the text annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `FreeTextAnnotationChanged` event.
 
-N> For better performance, we can also pass the page number of the annotation.
+N> For better performance, we can use the method `SelectAnnotation` with page number overload.
 
 The following code snippet explains how to select annotation.
 
@@ -331,7 +331,7 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
 
 ### How to modify the text annotation 
 
-Text annotation’s properties can be programmatically modified through `Settings` in ` FreeTextAnnotationChangedEventArgs`.
+Text annotation’s properties can be programmatically modified through `Settings` in `[FreeTextAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FreeTextAnnotationChangedEventArgs.html)`.
 
 The following code snippet explains how to modify the selected annotation’s properties.
 
