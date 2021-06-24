@@ -28,6 +28,6 @@ The SfRichTextBoxAdv also supports built-in image resizer to resize the images p
 Text wrapping refers to how images are positioned about to text in a document. Please [refer to this page](https://help.syncfusion.com/wpf/richtextbox/text-wrapping) for more information about text wrapping.
 
 ## Positioning
-Currently, SfRichTextBoxAdv doesn’t have support for change or move the position of the image. The image will move as text is added or removed if it is positioned relative to the line or paragraph.
+Currently, SfRichTextBoxAdv does not have support for change or move the position of the image. The image will move as text is added or removed if it is positioned relative to the line or paragraph.
 
 N> The image can be positioned anywhere in the document by drag and drop. if the image’s wrapping style is in line with the text.
