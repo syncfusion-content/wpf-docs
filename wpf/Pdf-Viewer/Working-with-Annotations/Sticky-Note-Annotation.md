@@ -267,61 +267,6 @@ When you place the mouse pointer over the annotation, the tooltip will be displa
  
  ![Display tooltip of the sticky note annotation](Annotation-images\Sticky-Note-Annotation-11.png)
 
-## How to get sticky note annotation’s name programmatically
-
-Sticky note annotation’s name can be obtained either from `StickyNoteAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
-
-The following code snippet explains how to get annotation’s name while adding and from exist annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Getting annotation’s name while adding the annotation
-private void PdfViewer_StickyNoteAnnotationChanged (object sender, StickyNoteAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Add)
-    {
-        string stickyAnnotationName = e.Name;
-    }
-}
-
-//Getting existing annotation’s name
-private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
-{
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to select the sticky note annotation programmatically
-
-PDF Viewer allows the users to select the sticky note annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `StickyNoteAnnotationChanged` event.
-
-N> For better performance, we can use the method `SelectAnnotation` with page number overload.
-
-The following code snippet explains how to select annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Selecting sticky note annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(stickyAnnotationName, 1);
-}
-
-//Selecting sticky note annotation with annotation’s name 
-private void SelectAnnotation1(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(stickyAnnotationName);
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the annotation in the PDF document:
@@ -332,7 +277,7 @@ The following keyboard shortcuts are available to customize the annotation in th
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### StickyNoteAnnotationChanged Event
 
@@ -365,29 +310,6 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
     System.Windows.Media.Color color = settings.Color;
     PdfPopupIcon pdfPopupIcon = settings.Icon;
 
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### How to modify the sticky note annotation 
-
-Sticky note annotation’s properties can be programmatically modified through `Settings` in `[StickyNoteAnnotationChangedEventArgs] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.StickyNoteAnnotationChangedEventArgs.html)`. 
-
-The following code snippet explains how to modify the selected annotation’s properties.
-
-{% tabs %}
-{% highlight C# %}
-
-//Modifying the selected annotation’s properties. 
-private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Select)
-    {
-        PdfViewerStickyNoteSettings settings = (e.Settings as PdfViewerStickyNoteSettings);
-        settings.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        settings.Icon = PdfPopupIcon.Note; 
-    }
 }
 
 {% endhighlight %}
