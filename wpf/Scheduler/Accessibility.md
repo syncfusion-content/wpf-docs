@@ -9,7 +9,9 @@ documentation: ug
 
 #  Keyboard Support in WPF Scheduler (SfScheduler)
 
-This section describes the keyboard support in SfScheduler.
+`SfScheduler` supports selection using keyboard interactions.
+
+### Day, Week and WorkWeek views
 
 <table>
 <tr>
@@ -18,27 +20,83 @@ This section describes the keyboard support in SfScheduler.
 <b> Descriptions </b> <br/><br/></td></tr>
 <tr>
 <td>
-Right arrow<br/><br/></td><td>Moves to next cell on right.<br/><br/></td></tr>
+Right arrow<br/><br/></td><td>Moves selection to the same time slot on the next day.<br/><br/></td></tr>
 <tr>
 <td>
 Left arrow<br/><br/></td><td>
-Moves to previous cell on left.<br/><br/></td></tr>
+Moves selection to the same time slot on the previous day.<br/><br/></td></tr>
 <tr>
 <td>
 Down arrow<br/><br/></td><td>
-Moves to next cell on bottom.<br/><br/></td></tr>
+Moves selection to the next time slot directly below the currently selected time slot.<br/><br/></td></tr>
 <tr>
 <td>
 Up arrow<br/><br/></td><td>
-Moves to previous cell on top. <br/><br/></td></tr>
+Moves selection to the previous time slot directly above the currently selected time slot.<br/><br/></td></tr>
+</table>
+
+### Timeline view
+
+<table>
 <tr>
 <td>
-Tap<br/><br/></td><td>
-Selection moves to next appointment or selection moves to next appointment after the selected cell.<br/><br/></td></tr>
+<b> Navigation Shortcut Keys </b> <br/><br/></td><td>
+<b> Descriptions </b> <br/><br/></td></tr>
 <tr>
 <td>
-Shift + Tap<br/><br></td><td>
-Selection moves to previous appointment or selection moves to previous appointment after the selected cell.<br/><br/></td></tr>
+Right arrow<br/><br/></td><td>Moves selection to the next time slot of the currently selected time slot.<br/><br/></td></tr>
+<tr>
+<td>
+Left arrow<br/><br/></td><td>
+Moves selection to the previous time slot of the currently selected time slot.<br/><br/></td></tr>
+</table>
+
+### Month view
+
+<table>
+<tr>
+<td>
+<b> Navigation Shortcut Keys </b> <br/><br/></td><td>
+<b> Descriptions </b> <br/><br/></td></tr>
+<tr>
+<td>
+Right arrow<br/><br/></td><td>Moves selection to the next date of the currently selected date.<br/><br/></td></tr>
+<tr>
+<td>
+Left arrow<br/><br/></td><td>
+Moves selection to the previous date of the currently selected date.<br/><br/></td></tr>
+<tr>
+<td>
+Down arrow<br/><br/></td><td>
+Moves selection to the date directly below the currently selected date on the next row.<br/><br/></td></tr>
+<tr>
+<td>
+Up arrow<br/><br/></td><td>
+Moves selection to the date directly above the currently selected date on the previous row.<br/><br/></td></tr>
+</table>
+
+### Appointments
+
+<table>
+<tr>
+<td>
+<b> Navigation Shortcut Keys </b> <br/><br/></td><td>
+<b> Descriptions </b> <br/><br/></td></tr>
+<tr>
+<td>
+Tab<br/><br/></td><td>Moves selection to the next appointment of the currently selected appointment.<br/><br/></td></tr>
+<tr>
+<td>
+Shift + Tab<br/><br/></td><td>
+Moves selection to the previous appointment of the currently selected appointment.<br/><br/></td></tr>
+<tr>
+<td>
+Delete<br/><br/></td><td>Deletes the selected appointment from appointments collection.<br/><br/></td></tr>
+</table>
+
+### View navigations
+
+<table>
 <tr>
 <td>
 Ctrl + Alt + 1 => DayView<br/><br/></td><td>
