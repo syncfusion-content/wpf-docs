@@ -137,5 +137,5 @@ this.Schedule.AllowViewNavigation = true;
 {% endtabs %}
 
 N>
-*  The `AllowViewNavigation` is not applicable for day and timeline day views.
+* The `AllowViewNavigation` is not applicable for day and timeline day views.
 * If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise the month view should navigate to the day view by single-clicking on the date in month cell.
