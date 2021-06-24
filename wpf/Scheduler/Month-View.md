@@ -530,7 +530,7 @@ You can customize the default appearance of more appointments indicator in month
         <syncfusion:MonthViewSettings>
             <syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
                 <DataTemplate>
-                    <TextBlock Text = "{Binding StringFormat=+{0}}" Background = "LightBlue" Foreground = "Black" Padding="0,5,0,0">
+                    <TextBlock Text = "{Binding StringFormat=+{0}}" Background = "#EAEAEA" Foreground = "Black" Padding="0,5,0,0">
                     </TextBlock>
                 </DataTemplate>
             </syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
