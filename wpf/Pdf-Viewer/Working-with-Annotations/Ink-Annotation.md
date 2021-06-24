@@ -179,7 +179,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 ## How to select the Ink annotation programmatically
 
-PDF Viewer allows the users to select the ink annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modifiedy using `InkAnnotationChanged` event.
+PDF Viewer allows the users to select the ink annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `InkAnnotationChanged` event.
 
 N> For better performance, we can also pass the page number of the annotation.
 
