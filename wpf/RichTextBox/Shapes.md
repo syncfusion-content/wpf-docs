@@ -27,7 +27,7 @@ The SfRichTextBoxAdv also supports a built-in shape resizer to resize the shapes
 ![Resizing](Shapes_images/Resizer.PNG)
 
 ## Text wrapping
-Text wrapping refers to how shapes are positioned about to text in a document. Please [refer to this page](https://help.syncfusion.com/wpf/richtextbox/text-wrapping) for more information about text wrapping.
+Text wrapping refers to how shapes are positioned about to text in a document. Please [refer to this page](/wpf/richtextbox/text-wrapping) for more information about text wrapping.
 
 ## Positioning
 Currently, SfRichTextBoxAdv does not have support for change or move the position of the shape. The shape will move as text is added or removed if it is positioned relative to the line or paragraph.
