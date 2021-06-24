@@ -452,6 +452,43 @@ The following image illustrates the change in the opacity of the included rectan
 
   ![rectangle annotation](Annotation-images\Rectangle-Annotation-8.png)
 
+##### Border Styles
+
+PDF viewer allows the users to change annotation border style. Currently it provides support for following border style. 
+
+* Cloudy
+* Solid
+
+By default, annotation border style will be solid.
+
+#####Changing the border style from UI
+
+The border style of the selected rectangle annotation will be displayed in the combo box control in the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
+
+The following image illustrates how to change the border style of the rectangle annotation included.
+
+![rectangle annotation](Annotation-images\Rectangle-Annotation-11.png)
+
+The following image illustrates the change in thickness of the selected rectangle annotation.
+
+![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
+
+#####Changing the border style programmatically
+
+The rectangle annotation can be customized at the time of inclusion itself. The following code shows how to set default border style of the included rectangle annotation in code behind by using BorderEffect property.
+
+{% tabs %}
+{% highlight C# %}
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfViewer.RectangleAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 #### General tab
 
 We can add/edit the default Author and Subject to the included rectangle annotation using General tab of the Rectangle Properties window.
@@ -1224,6 +1261,45 @@ The following image illustrates the change in the opacity of the included polygo
 
   ![After applied polygon opacity](Annotation-images\Polygon-Annotation-10.png)
 
+##### Border Styles
+
+PDF viewer allows the users to change annotation border style. Currently it provides support for following border style. 
+
+* Cloudy
+* Solid
+
+By default, annotation border style will be solid.
+
+ N>For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
+
+#####Changing the border style from UI
+
+The border style of the selected polygon annotation will be displayed in the combo box control in the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
+
+The following image illustrates how to change the border style of the polygon annotation included.
+
+![Before applying polygon border style](Annotation-images\Polygon-Annotation-13.png)
+
+The following image illustrates the change in border style of the selected polygon annotation.
+
+![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
+
+#####Changing the border style programmatically
+
+The polygon annotation can be customized at the time of inclusion itself. The following code shows how to set default border style of the included polygon annotation in code behind by using BorderEffect property.
+
+{% tabs %}
+{% highlight C# %}
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfViewer.PolygonAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 #### General tab
 
 You can add/edit the default Author and Subject to the included polygon annotation using General tab of the Properties window.
@@ -1467,6 +1543,61 @@ The following image illustrates how to delete the included annotation from the P
 
   ![polyline annotation](Annotation-images\Polyline-Annotation-11.png)
 
+## How to get shape annotation’s name programmatically
+
+Shape annotation’s name can be obtained either from `ShapeAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+
+The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+
+% tabs %}
+{% highlight C# %}
+
+//Getting annotation’s name while adding the annotation
+private void PdfViewer_ShapeAnnotationChanged (object sender, ShapeAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        shapeAnnotationName = e.Name;
+    }
+}
+
+//Getting existing annotation’s name
+private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
+{
+     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+     PdfPageBase page = loadedDocument.Pages[0];
+     shapeAnnotationName = page.Annotations[0].Name;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the shape annotation programmatically
+
+PDF Viewer allows the users to select the shape annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `ShapeAnnotationChanged` event.
+
+N> For better performance we can also pass the page number of the annotation.
+
+The following code snippet explains how to select annotation.
+
+% tabs %}
+{% highlight C# %}
+
+//Selecting shape annotation with annotation’s name and page number
+private void SelectAnnotation(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(shapeAnnotationName, 1);
+}
+
+//Selecting shape annotation with annotation’s name 
+private void SelectAnnotation1(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(shapeAnnotationName);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the annotation in the PDF document:
@@ -1515,6 +1646,59 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     string Text = settings.Text;
     float thickness = settings.Thickness;
     float opacity = settings.Opacity;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to modify the shape annotation 
+
+Shape annotation’s properties can be programmatically modify through `Settings` properties in `ShapeAnnotationChangedEventArgs`.
+
+The following code snippet explains how to modify the selected annotation’s properties.
+
+{% tabs %}
+{% highlight C# %}
+
+//Modifying the selected annotation’s properties. 
+private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Select)
+    {
+        if (e.Settings is PdfViewerLineSettings)
+        {
+            PdfViewerLineSettings setting = (e.Settings as PdfViewerLineSettings);
+            setting.LineColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+        }
+        else if (e.Settings is PdfViewerRectangleSettings)
+        {
+              PdfViewerLineSettings setting = (e.Settings as PdfViewerRectangleSettings);
+      setting.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
+      setting.RectangleColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
+         }
+         else if (e.Settings is PdfViewerCircleSettings)
+         {
+              PdfViewerCircleSettings setting = (Settings as PdfViewerCircleSettings);
+              setting.CircleColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+         }
+         else if (e.Settings is PdfViewerArrowSettings)
+         {
+             PdfViewerArrowSettings setting = (Settings as PdfViewerArrowSettings);
+             setting.BeginLineStyle = PdfLineEndingStyle.Square;
+             setting.EndLineStyle = PdfLineEndingStyle.Circle;
+         }
+         else if (e.Settings is PdfViewerPolygonSettings)
+         {
+             PdfViewerPolygonSettings setting = (Settings as PdfViewerPolygonSettings);
+             setting.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+             setting.StrokeColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 0); 
+         }
+         else if (e.Settings is PdfViewerPolylineSettings)
+         {
+             PdfViewerPolylineSettings setting = (Settings as PdfViewerPolylineSettings);
+             setting.StrokeColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+         }
+    }
 }
 
 {% endhighlight %}
