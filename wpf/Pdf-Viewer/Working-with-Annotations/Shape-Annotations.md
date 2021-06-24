@@ -1549,7 +1549,7 @@ Shape annotation’s name can be obtained either from `ShapeAnnotationChanged` e
 
 The following code snippet explains how to get annotation’s name while adding and from existing annotation.
 
-% tabs %}
+{%  tabs %}
 {% highlight C# %}
 
 //Getting annotation’s name while adding the annotation
@@ -1580,7 +1580,7 @@ N> For better performance, we can use the method `SelectAnnotation` with page nu
 
 The following code snippet explains how to select annotation.
 
-% tabs %}
+{%  tabs %}
 {% highlight C# %}
 
 //Selecting shape annotation with annotation’s name and page number
