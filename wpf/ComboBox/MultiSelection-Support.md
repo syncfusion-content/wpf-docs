@@ -144,7 +144,7 @@ public class ViewModel : INotifyPropertyChanged
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <Window.DataContext>
     <local:ViewModel />
@@ -171,32 +171,53 @@ You can override the selected items programmatically by overriding the `OnItemCh
 
 {% tabs %}
 
+{% highlight XAML %}
+
+<Window x:Class="ComboBoxExtDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComboBoxExtDemo" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+          <local:ComboBoxExt
+                Width="250"
+                Height="24"
+                AllowMultiSelect="True"
+                AllowSelectAll="True"
+                EnableOKCancel="True"
+                DefaultText="Select continent..."
+                DisplayMemberPath="Name"
+                ItemsSource="{Binding Continent}" />
+    </Grid>
+</Window>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
 public class ComboBoxExt : ComboBoxAdv
 {
     protected override ObservableCollection<object> OnItemChecked(object checkedItem, ObservableCollection<object> selectedItems)
     {
-        if (((FrameworkElement)checkedItem).DataContext == this.Items[0])
-        {
-            AddItem(selectedItems, new int[] { 1, 2 });
-        }
-        if (((FrameworkElement)checkedItem).DataContext == this.Items[4])
-        {
-            AddItem(selectedItems, new int[] { 5, 6 });
-        }
+         var item = ((FrameworkElement)checkedItem).DataContext;
+            if (item == this.Items[0])
+                AddItem(selectedItems, new int[] { 1, 2 });
+            if (item == this.Items[4])
+                AddItem(selectedItems, new int[] { 5, 6 });
+
+        return base.OnItemChecked(checkedItem, selectedItems);      
     }
 
     protected override ObservableCollection<object> OnItemUnchecked(object unCheckedItem, ObservableCollection<object> selectedItems)
     {
-        if (((FrameworkElement)uncheckedItem).DataContext == this.Items[0])
-        {
-            RemoveItem(selectedItems, new int[] { 1, 2 });
-        }
-        if (((FrameworkElement)uncheckedItem).DataContext == this.Items[4])
-        {
-            RemoveItem(selectedItems, new int[] { 5, 6 });
-        }
+        var item = ((FrameworkElement)uncheckedItem).DataContext;
+            if (item == this.Items[0])
+                RemoveItem(selectedItems, new int[] { 1, 2 });
+            if (item == this.Items[4])
+                RemoveItem(selectedItems, new int[] { 5, 6 });
 
         return base.OnItemUnchecked(unCheckedItem, selectedItems);
     }
@@ -220,22 +241,22 @@ public class ComboBoxExt : ComboBoxAdv
     }
 }
 
-On selecting the Asia, then India and China will be automatically added into selected items. 
-
-![WPF ComboBoxAdv override checked and unchecked items](Comboboxadv_images/wpf-comboboxadv-override.png)
-
 {% endhighlight %}
 
 {% endtabs %}
 
+On selecting the Asia, then India and China will be automatically added into selected items. 
+
+![WPF ComboBoxAdv override checked and unchecked items](Comboboxadv_images/wpf-comboboxadv-override.png)
+
 ## Multiselect edit using tokens
 
-The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The EnableToken property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
+The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The `EnableToken` property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
 
 When an item is selected from the dropdown, it is added to the text area as a token. The appropriate item will be removed from the text box when you click the close icon.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight XAML %}
 
 <syncfusion:ComboBoxAdv 
       AllowMultiSelect="true"
@@ -245,7 +266,7 @@ When an item is selected from the dropdown, it is added to the text area as a to
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ComboBoxAdv comboBox = new ComboBoxAdv();       
 combobox.AllowMultiSelect = true;
