@@ -14,7 +14,7 @@ PDF viewer allows the users to import and export information of annotations in P
 * fdf
 * xfdf
 
-The required data format can be chosen from the '[AnnotationDataFormat] (https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Parsing.AnnotationDataFormat.html)' enumeration. In the following sections, the fdf data format is explained for brevity and similarly we can implement for xfdf.
+The required data format can be chosen from the [AnnotationDataFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Parsing.AnnotationDataFormat.html) enumeration. In the following sections, the fdf data format is explained for brevity and similarly we can implement for xfdf.
 
 ## Exporting annotations
 
