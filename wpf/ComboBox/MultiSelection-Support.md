@@ -144,7 +144,7 @@ public class ViewModel : INotifyPropertyChanged
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <Window.DataContext>
     <local:ViewModel />
@@ -171,7 +171,7 @@ You can override the selected items programmatically by overriding the `OnItemCh
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <Window x:Class="ComboBoxExtDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -256,7 +256,7 @@ The selected items are now represented by a rounded-polygon shape with a close i
 When an item is selected from the dropdown, it is added to the text area as a token. The appropriate item will be removed from the text box when you click the close icon.
 
 {% tabs %}
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <syncfusion:ComboBoxAdv 
       AllowMultiSelect="true"
@@ -266,7 +266,7 @@ When an item is selected from the dropdown, it is added to the text area as a to
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ComboBoxAdv comboBox = new ComboBoxAdv();       
 combobox.AllowMultiSelect = true;
