@@ -266,7 +266,62 @@ The following image illustrates how to delete the annotation from the PDF docume
 When you place the mouse pointer over the annotation, the tooltip will be displayed. The tooltip contains the author name and text of the annotation.
  
  ![Display tooltip of the sticky note annotation](Annotation-images\Sticky-Note-Annotation-11.png)
- 
+
+## How to get sticky note annotation’s name programmatically
+
+Sticky note annotation’s name can be obtained either from `StickyNoteAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` when the annotation was already exist in the document.
+
+The following code snippet explains how to get annotation’s name while adding and from exist annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Getting annotation’s name while adding the annotation
+private void PdfViewer_StickyNoteAnnotationChanged (object sender, StickyNoteAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        stickyAnnotationName = e.Name;
+    }
+}
+
+//Getting existing annotation’s name
+private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
+{
+     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+     PdfPageBase page = loadedDocument.Pages[0];
+     stickyAnnotationName = page.Annotations[0].Name;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the sticky note annotation programmatically
+
+PDF Viewer allows the users to select the sticky note annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as parameter which need to be selected. This method returns true, if any annotation is found and selected. Otherwise, it returns false. The selected annotation’s properties can be modify using `StickyNoteAnnotationChanged` event.
+
+N> For better performance we can also pass the page number of the annotation.
+
+The following code snippet explains how to select annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Selecting sticky note annotation with annotation’s name and page number
+private void SelectAnnotation(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(stickyAnnotationName, 1);
+}
+
+//Selecting sticky note annotation with annotation’s name 
+private void SelectAnnotation1(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(stickyAnnotationName);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the annotation in the PDF document:
@@ -310,6 +365,29 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
     System.Windows.Media.Color color = settings.Color;
     PdfPopupIcon pdfPopupIcon = settings.Icon;
 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to modify the sticky note annotation 
+
+Sticky note annotation’s properties can be programmatically modify through `Settings` properties in ` StickyNoteAnnotationChangedEventArgs`. 
+
+The following code snippet explains how to modify the selected annotation’s properties.
+
+{% tabs %}
+{% highlight C# %}
+
+//Modifying the selected annotation’s properties. 
+private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnnotationChangedEventArgs e)
+{
+    if (e.Action == AnnotationChangedAction.Select)
+    {
+        PdfViewerStickyNoteSettings setting = (e.Settings as PdfViewerStickyNoteSettings);
+       setting.Color = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
+       setting.Icon = PdfPopupIcon.Note; 
+    }
 }
 
 {% endhighlight %}
