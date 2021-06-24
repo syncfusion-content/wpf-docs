@@ -1624,8 +1624,8 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
-    //To identify which type shape annotation     
+	
+	//To identify which type shape annotation
     ShapeAnnotationType annotationType = e.Type;
 
     //Page index in which this shape annotation was modified 
