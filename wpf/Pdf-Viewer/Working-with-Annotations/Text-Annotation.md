@@ -220,61 +220,6 @@ The following image illustrates how to delete the included annotation from the P
 
 ![Text Annotation](Annotation-images\FreeText-Annotation_11.png)
 
-## How to get text annotation’s name programmatically
-
-Text annotation’s name can be obtained either from `FreeTextAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
-
-The following code snippet explains how to get annotation’s name while adding and from existing annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Getting annotation’s name while adding the annotation
-private void PdfViewer_ FreeTextAnnotationChanged (object sender, FreeTextAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Add)
-    {
-        string textAnnotationName = e.Name;
-    }
-}
-
-//Getting existing annotation’s name
-private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
-{
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to select the text annotation programmatically
-
-PDF Viewer allows the users to select the text annotation programmatically by using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `FreeTextAnnotationChanged` event.
-
-N> For better performance, we can also pass the page number of the annotation.
-
-The following code snippet explains how to select annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Selecting text annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(textAnnotationName, 1);
-}
-
-//Selecting text annotation with annotation’s name 
-private void SelectAnnotation1(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(textAnnotationName);
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the annotation in the PDF document:
@@ -285,7 +230,7 @@ The following keyboard shortcuts are available to customize the annotation in th
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### FreeTextAnnotationChanged Event
 
@@ -324,32 +269,6 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
     System.Windows.Media.FontFamily fontFamily = settings.FontFamily;
     int size = settings.FontSize;
 
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### How to modify the text annotation 
-
-Text annotation’s properties can be programmatically modified through `Settings` in ` FreeTextAnnotationChangedEventArgs`.
-
-The following code snippet explains how to modify the selected annotation’s properties.
-
-{% tabs %}
-{% highlight C# %}
-
-//Modifying the selected annotation’s properties. 
-private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Select)
-    {
-        PdfViewerFreeTextSettings settings = (Settings as PdfViewerFreeTextSettings);
-        settings.Background = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-        settings.BorderColor = System.Windows.Media.Color.FromArgb(255, 255, 255, 0);
-        settings.FontColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        settings.Opacity = 1f;
-        settings.Text = "Syncfusion Testing";    
-    }
 }
 
 {% endhighlight %}

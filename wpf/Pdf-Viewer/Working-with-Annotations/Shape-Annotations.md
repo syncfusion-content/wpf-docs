@@ -1543,61 +1543,6 @@ The following image illustrates how to delete the included annotation from the P
 
   ![polyline annotation](Annotation-images\Polyline-Annotation-11.png)
 
-## How to get shape annotation’s name programmatically
-
-Shape annotation’s name can be obtained either from `ShapeAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
-
-The following code snippet explains how to get annotation’s name while adding and from existing annotation.
-
-% tabs %}
-{% highlight C# %}
-
-//Getting annotation’s name while adding the annotation
-private void PdfViewer_ShapeAnnotationChanged (object sender, ShapeAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Add)
-    {
-        string shapeAnnotationName = e.Name;
-    }
-}
-
-//Getting existing annotation’s name
-private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
-{
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to select the shape annotation programmatically
-
-PDF Viewer allows the users to select the shape annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which need to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `ShapeAnnotationChanged` event.
-
-N> For better performance, we can also pass the page number of the annotation.
-
-The following code snippet explains how to select annotation.
-
-% tabs %}
-{% highlight C# %}
-
-//Selecting shape annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(shapeAnnotationName, 1);
-}
-
-//Selecting shape annotation with annotation’s name 
-private void SelectAnnotation1(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(shapeAnnotationName);
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available to customize the annotation in the PDF document:
@@ -1608,11 +1553,11 @@ The following keyboard shortcuts are available to customize the annotation in th
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### ShapeAnnotationChanged Event
 
-The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
 
 The following code shows how to write the ShapeAnnotationChanged event in PdfViewerControl
 
@@ -1624,8 +1569,8 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
-    //To identify which type shape annotation     
+	
+	//To identify which type shape annotation
     ShapeAnnotationType annotationType = e.Type;
 
     //Page index in which this shape annotation was modified 
@@ -1646,59 +1591,6 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     string Text = settings.Text;
     float thickness = settings.Thickness;
     float opacity = settings.Opacity;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### How to modify the shape annotation
-
-Shape annotation’s properties can be programmatically modified through `Settings` in `ShapeAnnotationChangedEventArgs`.
-
-The following code snippet explains how to modify the selected annotation’s properties.
-
-{% tabs %}
-{% highlight C# %}
-
-//Modifying the selected annotation’s properties. 
-private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Select)
-    {
-        if (e.Settings is PdfViewerLineSettings)
-        {
-            PdfViewerLineSettings settings = (e.Settings as PdfViewerLineSettings);
-            settings.LineColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        }
-        else if (e.Settings is PdfViewerRectangleSettings)
-        {
-            PdfViewerLineSettings settings = (e.Settings as PdfViewerRectangleSettings);
-            settings.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-            settings.RectangleColor = System.Windows.Media.Color.FromArgb(255, 0, 255, 0);
-        }
-        else if (e.Settings is PdfViewerCircleSettings)
-        {
-            PdfViewerCircleSettings settings = (Settings as PdfViewerCircleSettings);
-            settings.CircleColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        }
-        else if (e.Settings is PdfViewerArrowSettings)
-        {
-            PdfViewerArrowSettings settings = (Settings as PdfViewerArrowSettings);
-            settings.BeginLineStyle = PdfLineEndingStyle.Square;
-            settings.EndLineStyle = PdfLineEndingStyle.Circle;
-        }
-        else if (e.Settings is PdfViewerPolygonSettings)
-        {
-            PdfViewerPolygonSettings settings = (Settings as PdfViewerPolygonSettings);
-            settings.FillColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-            settings.StrokeColor = System.Windows.Media.Color.FromArgb(255, 255, 0, 0); 
-        }
-        else if (e.Settings is PdfViewerPolylineSettings)
-        {
-            PdfViewerPolylineSettings settings = (Settings as PdfViewerPolylineSettings);
-            settings.StrokeColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-        }
-    }
 }
 
 {% endhighlight %}

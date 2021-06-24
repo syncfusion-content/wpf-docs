@@ -147,62 +147,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-
-## How to get Ink annotation’s name programmatically
-
-Ink annotation’s name can be obtained either from `InkAnnotationChanged` event while adding the annotation in the document or from `LoadedDocument` where the annotation was already exist.
-
-The following code snippet explains how to get annotation’s name while adding and from existing annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Getting annotation’s name while adding the annotation
-private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Add)
-    {
-        string inkAnnotationName = e.Name;
-    }
-}
-
-//Getting existing annotation’s name
-private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
-{
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to select the Ink annotation programmatically
-
-PDF Viewer allows the users to select the ink annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. The selected annotation’s properties can be modified using `InkAnnotationChanged` event.
-
-N> For better performance, we can also pass the page number of the annotation.
-
-The following code snippet explains how to select annotation.
-
-{% tabs %}
-{% highlight C# %}
-
-//Selecting ink annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1);
-}
-
-//Selecting ink annotation with annotation’s name 
-private void SelectAnnotation1(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName);
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Working with included/existing ink annotations
 
 Ink annotation supports adding notes along with it, also it allows editing its color, opacity and thickness. To use these options, select the included/existing ink annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
@@ -311,7 +255,7 @@ The below keyboard shortcuts are available to customize the annotation in the PD
 
 ## Events
 
-The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies through events, when [AnnotationChangedAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies through events, when [AnnotationChangedAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### InkAnnotationChanged Event
 
@@ -344,29 +288,5 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
     System.Windows.Media.Color color = settings.InkColor;
     double thickness = settings.Thickness;
 }
-{% endhighlight %}
-{% endtabs %}
-
-### How to modify the Ink annotation 
-
-Ink annotation’s properties can be programmatically modified through `Settings` in `InkAnnotationChangedEventArgs`.
-
-The following code snippet explains how to modify the selected annotation’s properties.
-
-{% tabs %}
-{% highlight C# %}
-
-//Modifying the selected annotation’s properties.
-private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e)
-{
-    if (e.Action == AnnotationChangedAction.Select)
-    {
-		PdfViewerInkSettings pdfViewerInkSettings = (e.Settings as PdfViewerInkSettings);
-		pdfViewerInkSettings.InkColor = System.Windows.Media.Color.FromArgb(255, 0, 0, 255);
-		pdfViewerInkSettings.Opacity = 1f;
-		pdfViewerInkSettings.Thickness = 5;
-    }
-}
-
 {% endhighlight %}
 {% endtabs %}
