@@ -1290,8 +1290,6 @@ public class ItemTemplateSelector : DataTemplateSelector
 
 ![WPF Ribbon Setting headeritemtemplateselector](GettingStarted_images/wpf-ribbon-setting-headeritemtemplateselector.jpg)
 
-N>[View sample in GitHub]()
-
 ## Set simplified layout
 
 The simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact content viewing, while other commands are placed inside the overflow menu. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
