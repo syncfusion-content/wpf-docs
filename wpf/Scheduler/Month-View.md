@@ -81,7 +81,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 ![WPF Scheduler month view AppointmentDisplayMode](Month-View_Images/AppointmentDisplayMode.png)
 
 ## Appointment display count
-Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in Scheduler. By default, the appointment display count is 3 and month cell have more than 3 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments.
+Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, single appointment will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,7 +101,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 {% endtabs %}
 
 N> 
-* By clicking more option, scheduler navigates to the day view.
+* By clicking more option, the scheduler navigates to the day view.
 
 ![WPF Scheduler month view AppointmentDisplayCount](Month-View_Images/AppointmentDisplayCount.png)
 
@@ -521,7 +521,7 @@ public class MonthViewAppointmentTemplateSelector : DataTemplateSelector
 ![WPF Scheduler month view AppointmentTemplateSelector](Month-View_Images/AppointmentTemplateSelector.png)
 
 ## Customize more appointments indicator in month cell
-You can customize the default appearance of more appointments indicator in month cell by using the `MoreAppointmentsIndicatorTemplate` property of `MonthViewSettings`.
+You can customize the default appearance of more appointments indicator in a month cell by using the `MoreAppointmentsIndicatorTemplate` property of the `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}

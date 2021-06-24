@@ -215,12 +215,12 @@ private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningE
 
 ## ReminderAlertActionChanged events
 
-The Scheduler notifies by the `ReminderAlertActionChangedEvent` when an appointment reminder’s dismiss, dismiss all, or snooze action is changed in the Scheduler reminder alert window.
-The `ReminderAlertActionChangedEventArgs` has following properties which provides information for `ReminderAlertActionChanged` event.
+The Scheduler notifies by the `ReminderAlertActionChangedEvent` when appointment reminders' dismiss, dismiss all, or snooze action is changed in the Scheduler reminder alert window.
+The `ReminderAlertActionChangedEventArgs` has following properties which provides information for the `ReminderAlertActionChanged` event.
 
 `ReminderAction`: Gets the appointment reminder actions such as dismiss, dismiss all, and snooze performed in the reminder alert window and specifies the appointment reminder that was dismissed in the reminder alert window, the reminders for all appointments were dismissed in the reminder alert window and the appointment reminder is snoozed in the reminder alert window.
 
-`Reminders`: Gets the reminders collection where dismiss, dismiss all or snooze action is performed in the reminder alert window.
+`Reminders`: Gets the reminders collection where dismiss, dismiss all, or snooze action is performed in the reminder alert window.
 
 `SnoozeTime`: Gets the snooze time value of an appointment in the reminder alert window.
 

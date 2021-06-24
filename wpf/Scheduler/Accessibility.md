@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Support in WPF SfScheduler control | Syncfusion
-description: Learn here about Keyboard support with Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
+description: Learn here about Keyboard support with the Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
 platform: WPF
 control: SfScheduler
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 #  Keyboard Support in WPF Scheduler (SfScheduler)
 
-`SfScheduler` supports selection using keyboard interactions.
+The `SfScheduler` supports selection using keyboard interactions.
 
 ### Day, Week and WorkWeek views
 
