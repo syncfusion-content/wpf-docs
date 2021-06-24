@@ -1612,7 +1612,7 @@ The PdfViewerControl notifies through events, when `AnnotationChangedAction` suc
 
 ### ShapeAnnotationChanged Event
 
-The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
 
 The following code shows how to write the ShapeAnnotationChanged event in PdfViewerControl
 
