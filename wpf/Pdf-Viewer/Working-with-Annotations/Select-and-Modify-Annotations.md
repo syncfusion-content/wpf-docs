@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select and Modify annotations in WPF Pdf Viewer control | Syncfusion
-description: Learn about Select and Modify annotations programmatically support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+description: Learn about Select and Modify annotations programmatically support in WPF Pdf Viewer, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -68,7 +68,7 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
 Annotation’s properties can be modified programmatically through `Settings` in respective annotation changed event. 
 
-The following code snippet explains how to modify the selected ink annotation’s properties. we can implement for all other annotation.
+The following code snippet explains how to modify the selected ink annotation’s properties. Similarly we can implement for all other annotation.
 
 {% tabs %}
 {% highlight C# %}

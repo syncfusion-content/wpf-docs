@@ -33,9 +33,6 @@ Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Stamp
 End Sub
 
-{% endhighlight %}
-{% endtabs %}
-
 The following image shows the stamp annotation being included in the PDF Document.
 
  ![Stamp annotation](Annotation-images\Stamp-Annotation-1.png)
