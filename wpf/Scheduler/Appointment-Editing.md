@@ -11,10 +11,11 @@ documentation: ug
 This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing.
 
 ## Adding appointments
-Scheduler supports to add new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double clicking on a time cell or view header cell.
+Scheduler supports to add new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double clicking on a time cell or month cell or view header.
 
 N>
 * If `AllowViewNavigation` is true, the current view should be navigated to the respective day or timeline day views by single clicking on the date in view header. Other than date by double clicking on view header cell, the appointment editor window will be opened and by default the `AllDay` checkbox will be checked in the appointment editor window.
+* All day appointment can be created by double clicking on view header and not applicable for month view header.
 
 ## Editing appointment
 Scheduler supports to edit the appointment by using `Appointment Editor` UI window. Open this window by double clicking on the appointment.
@@ -90,11 +91,6 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 
 N>
 * The basic editors such that `Subject`, `Location`, `Start Hour` and `End Hour` of the scheduler appointment editor will not be collapsed.
-
-### Support to customize the editors appointment editor window.
-
-* The scheduler provides support to set an appointment background and foreground colors using the appointment editor window.
-* You can customize appointment editor time format based on scheduler time ruler format and culture.
 
 ### AppointmentEditorClosing event
 When the appointment editor window is closed after adding or editing the schedule appointment, Scheduler notifies by [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.

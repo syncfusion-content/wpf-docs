@@ -294,7 +294,7 @@ N>NOTE
 * `TimeInterval` value will be set, when `MinimumAppointmentDuration` greater than `TimeInterval` with lesser appointment duration.
 * All day Appointment does not support `MinimumAppointmentDuration`.
 
-## All-day appointment display count
+## Minimum display appointments count in all day panel
 You can Customize the number of appointments displayed in a all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in Scheduler. By default, the appointment display count is 2 and all-day panel have more than 2 appointments, two appointment will be displayed and remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
@@ -311,8 +311,8 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-### All-day appointment display count appearance customization
-You can customize the default appearance of the appointment display count by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
+### Customize more appointments indicator in all day panel
+You can customize the default appearance of more appointments indicator in all day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -332,9 +332,6 @@ You can customize the default appearance of the appointment display count by usi
 {% endhighlight %}
 {% endtabs %}
 
-N>
-* The padding of `MinimumAllDayAppointmentsCount` region end to make touch position for all-day panel by using the `cellEndPadding` property in the scheduler, which allows you to tap the scheduler all-day panel when the panel has appointment display counts. The values of `cellEndPadding` is 10.
-
 ![all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views](DaysView_Images/all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views.png)
 
 ## Time text formatting
@@ -346,7 +343,12 @@ Schedule.DaysViewSettings.TimeRulerFormat = "hh mm";
 Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 {% endhighlight %}
 {% endtabs %}
+
 ![Time text formatting in WPF Scheduler](DaysView_Images/adding-Timetextformatting.png)
+
+N>
+* You can customize appointment editor time format based on scheduler time ruler format and culture.
+* By default, the scheduler time ruler formar is `hh:mm tt` and appointment editor time picker format `h tt.` 
 
 ## View header
 Customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.

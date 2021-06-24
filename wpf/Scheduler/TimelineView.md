@@ -337,6 +337,10 @@ Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 
 ![Time text formatting in WPF Scheduler](Timeline_images/adding-Timetextformatting.png)
 
+N>
+* You can customize appointment editor time format based on scheduler time ruler format and culture.
+* By default, the scheduler time ruler formar is `hh:mm tt` and appointment editor time picker format `h tt.` 
+
 ## View header
 Customize the default appearance of view header in the timeline views by setting the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat), and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `TimelineViewSettings.`
 
