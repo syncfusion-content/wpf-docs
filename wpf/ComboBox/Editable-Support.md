@@ -67,13 +67,13 @@ Default value is *None*.
 By setting the `AutoCompleteMode` property to `Suggest`, a list of possible matches will be suggested and displayed in the drop-down list. The search text are included or start with the suggested items.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight XAML %}
 
 <syncfusion:ComboBoxAdv AutoCompleteMode="Suggest"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 ComboBoxAdv comboBox = new ComboBoxAdv();       
 combobox.AutoCompleteMode = AutoCompleModes.Suggest;
@@ -83,6 +83,4 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 
 ![WPF ComboBoxAdv AutoComplete suggest mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-suggest-mode.gif)
 
-N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection.
-
-N> When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` will take precedence.
+N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection. When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` will take precedence.
