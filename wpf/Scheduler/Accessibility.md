@@ -162,6 +162,11 @@ Next navigation button<br/><br/></td><td>Next navigation button <br/><br/></td>
 <table>
 <tr>
 <td>
+<b> View </b> <br/><br/></td><td>
+<b> Accessibility Format </b> <br/><br/></td>
+<td> <b> Example </b><br/><br/></td></tr>
+<tr>
+<td>
 Resource header<br/><br/></td><td>Name Id <br/><br/></td>
 <td>Sophia 1000<br/><br></td></tr>
 </table>
