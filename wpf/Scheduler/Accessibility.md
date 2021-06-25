@@ -43,7 +43,7 @@ Spanning Appointment<br/><br/></td><td>Subject dddd, MMMM d, yyyy h:mm:ss tt - d
 <td>Plan Execution Friday, May 28, 2021 10:00:00 AM-Sunday, May 30, 2021 11:00:00 AM<br/><br></td></tr>
 <tr>
 <td>
-Week number<br/><br/></td><td>week number<br/><br/></td>
+Week number<br/><br/></td><td>Week number<br/><br/></td>
 <td>Week Number 22<br/><br></td></tr>
 <tr>
 <td>
