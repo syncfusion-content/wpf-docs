@@ -211,3 +211,38 @@ private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningE
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+## ReminderAlertActionChanged events
+
+The Scheduler notifies by the `ReminderAlertActionChangedEvent` when appointment reminders' dismiss, dismiss all, or snooze action is changed in the Scheduler reminder alert window.
+The `ReminderAlertActionChangedEventArgs` has following properties which provides information for the `ReminderAlertActionChanged` event.
+
+`ReminderAction`: Gets the appointment reminder actions such as dismiss, dismiss all, and snooze performed in the reminder alert window and specifies the appointment reminder that was dismissed in the reminder alert window, the reminders for all appointments were dismissed in the reminder alert window and the appointment reminder is snoozed in the reminder alert window.
+
+`Reminders`: Gets the reminders collection where dismiss, dismiss all, or snooze action is performed in the reminder alert window.
+
+`SnoozeTime`: Gets the snooze time value of an appointment in the reminder alert window.
+
+{% tabs %}
+{% highlight c#%}
+this.Schedule.ReminderAlertActionChanged += OnScheduleReminderAlertActionChanged;
+
+private void OnScheduleReminderAlertActionChanged(object sender, Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs e)
+{
+    if (e.ReminderAction == ReminderAction.Dismiss)
+    {
+        var reminder = e.Reminders[0];
+    }
+    else if (e.ReminderAction == ReminderAction.DismissAll)
+    {
+        var reminders = e.Reminders;
+    }
+    else if (e.ReminderAction == ReminderAction.Snooze)
+    {
+        var reminder = e.Reminders[0];
+        var snoozeTime = e.SnoozeTime;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
