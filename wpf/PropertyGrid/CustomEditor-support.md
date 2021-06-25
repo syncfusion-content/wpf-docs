@@ -354,7 +354,6 @@ You can use the `EditorType` property of `CustomEditor` class to apply the custo
 You can set the value for `EditorType` property when custom editor is initialized in `ViewModel` class as shown below.
 
 {% tabs %}
-{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid CustomEditorCollection="{Binding CustomEditorCollection}" 
