@@ -201,6 +201,10 @@ Timezone/Allday check box<br/><br/></td><td>content checkbox<br/><br/></td>
 <td>
 Date/time picker<br/><br/></td><td>value edit<br/><br/></td>
 <td>12/1/2021 edit <br/><br></td></tr>
+<tr>
+<td>
+Combo box<br/><br/></td><td>content combobox<br/><br/></td>
+<td>Custom<br/><br></td></tr>
 </table>
 
 ### Recurrence editing  window
