@@ -11,7 +11,7 @@ documentation: ug
 
 ## Screen reader support
 
-The SfScheduler can easily be accessed by screen readers. Please find the following table to get spoken feedback about the inner element contents of the screen.
+The SfScheduler can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
 ### Month view
 
