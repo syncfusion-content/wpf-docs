@@ -514,6 +514,36 @@ NodePortViewModel port = new NodePortViewModel()
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Port-Customization)
 
+## Port hovering effect
+
+When establishing a new connection from diagram elements of nodes and ports or dropping a new connector on diagram elements of nodes and ports, connection animation will be shown on the connection object to indicate about new connection. The `PortHoverEffect` property of diagram class helps to change the animation type. It includes the following options:
+
+* Ripple: Specifies the water ripple circles type animtion effect for connection.
+* Shrink: Specifies the plus symbol type animtion effect for connection.
+* Node: Specifies no cnnection animation effect.
+
+The default operation is Ripple.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the Sfdiagram with port hover effect as ripple-->
+<syncfusion:SfDiagram x:Name="diagram" PortHoverEffect="Ripple">
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize the SfDiagram
+SfDiagram diagram = new SfDiagram();
+//defines the port hover connection effect as ripple.
+diagram.PortHoverEffect = PortHoverEffect.Ripple;
+{% endhighlight %}
+{% endtabs %}
+
+| PortHoverEffect | Output |
+|---|---|
+| Ripple |![Ripple aimation](Port_images/RippleAnimation.gif) |
+| Shrink |![shrink diagram](Port_images/ShrinkAnimation.gif) |
+| Node |Connection animation effect does not appeared. |
+
 ## Events
 
 The `PortChangedEvent` will get invoked when you drag the port.
