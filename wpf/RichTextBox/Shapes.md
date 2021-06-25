@@ -27,7 +27,7 @@ The RichTextBox also supports a built-in shape resizer to resize the shapes pres
 ![Shape resizer view in RichTextBox](Shapes_images/Shape_Resizer.PNG)
 
 ## Text wrapping style
-Text wrapping refers to how shapes fit with surrounding text in a document. Please [refer to this page](/wpf/richtextbox/text-wrapping) for more information about text wrapping styles available in Word documents.
+Text wrapping refers to how shapes fit with surrounding text in a document. Please [refer to this page](/wpf/richtextbox/text-wrapping-style) for more information about text wrapping styles available in Word documents.
 
 ## Positioning the shape
 Starting from v19.1.0.x, RichTextBox preserves the position properties of the shape and displays the shape based on position properties. It does not support modifying the position properties. Whereas the shape will be automatically moved along with text edited if it is positioned relative to the line or paragraph.
