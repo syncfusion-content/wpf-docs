@@ -31,7 +31,7 @@ ViewHeader<br/><br/></td><td>dddd<br/><br/></td>
 <td>Sunday<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
+Appointment (all-day)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
@@ -81,7 +81,7 @@ ViewHeader<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Sunday, June 20, 2021<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
+Appointment (all-day)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
@@ -115,7 +115,7 @@ ViewHeader<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Sunday, June 20, 2021<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
+Appointment (all-day)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
