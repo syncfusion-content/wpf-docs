@@ -31,7 +31,7 @@ ViewHeader<br/><br/></td><td>dddd<br/><br/></td>
 <td>Sunday<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject Allday <br/><br/></td>
+Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
@@ -43,7 +43,7 @@ Spanning Appointment<br/><br/></td><td>Subject dddd, MMMM d, yyyy h:mm:ss tt - d
 <td>Plan Execution Friday, May 28, 2021 10:00:00 AM-Sunday, May 30, 2021 11:00:00 AM<br/><br></td></tr>
 <tr>
 <td>
-Week number<br/><br/></td><td>WeekNumber weeknumber <br/><br/></td>
+Week number<br/><br/></td><td>WeekNumber week number <br/><br/></td>
 <td>Week Number 22<br/><br></td></tr>
 <tr>
 <td>
@@ -81,7 +81,7 @@ ViewHeader<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Sunday, June 20, 2021<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject Allday <br/><br/></td>
+Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
@@ -115,7 +115,7 @@ ViewHeader<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Sunday, June 20, 2021<br/><br></td></tr>
 <tr>
 <td>
-Appointment (allday)<br/><br/></td><td>Subject Allday <br/><br/></td>
+Appointment (allday)<br/><br/></td><td>Subject All-day <br/><br/></td>
 <td>Meeting All day <br/><br></td></tr>
 <tr>
 <td>
@@ -131,7 +131,7 @@ Time ruler<br/><br/></td><td>TimeRuler.Content <br/><br/></td>
 <td>12 AM<br/><br></td></tr>
 </table>
 
-### Scheduler and resource header
+### Scheduler header
 
 <table>
 <tr>
@@ -147,6 +147,19 @@ Day, Week, Work week, Month, Timeline day and Timeline month<br/><br/></td><td>M
 <td>
 Timeline week and Timeline work week<br/><br/></td><td>MMMM yyyy - MMMM yyyy<br/><br/></td>
 <td>28 June - 2 July 2021<br/><br></td></tr>
+<tr>
+<td>
+Previous navigation button<br/><br/></td><td>content button <br/><br/></td>
+<td>Previous navigation button<br/><br></td></tr>
+<tr>
+<td>
+Next navigation button<br/><br/></td><td>content button <br/><br/></td>
+<td>Next navigation button<br/><br></td></tr>
+</table>
+
+### Scheduler resource header
+
+<table>
 <tr>
 <td>
 Resource header<br/><br/></td><td>Name Id <br/><br/></td>
@@ -195,7 +208,7 @@ Delete button<br/><br/></td><td>content button<br/><br/></td>
 <td>Delete button<br/><br></td></tr>
 <tr>
 <td>
-Timezone/Allday check box<br/><br/></td><td>content checkbox<br/><br/></td>
+Timezone/All-day check box<br/><br/></td><td>content checkbox<br/><br/></td>
 <td>All day checkbox checked/Unchecked<br/><br></td></tr>
 <tr>
 <td>
@@ -226,7 +239,7 @@ Radio button <br/><br/></td><td>Content ControlType<br/><br/></td>
 <tr>
 <td>
 Button <br/><br/></td><td>Content ControlType<br/><br/></td>
-<td>Ok button / Cancel button <br/><br></td></tr>
+<td>OK button / Cancel button <br/><br></td></tr>
 </table>
 
 ### Reminder window
