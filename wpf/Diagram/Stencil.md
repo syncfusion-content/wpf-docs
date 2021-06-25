@@ -996,6 +996,89 @@ public class CustomStencil : Stencil
 
 ![CustomPreview](Stencil_images/Stencil_img16.jpeg)
 
+## Symbol selection
+
+### Single selection
+
+Stencil symbols can be selected by clicking on that element. During single click, all previously selected items will be cleared. Selected item can be drop on the diagram area by click and drag it.
+
+![Symbol single selection](Stencil_images/SymbolSingleSelection.png)
+
+### Multiple selection
+
+Multiple elements can be selected with the following ways,
+
+1. Ctrl+click
+
+While pressing ctrl key and click on any stencil symbol makes a list of symbol items will be selected that symbol in addition to any items that are already selected.
+
+2. Rubberband selection
+
+Clicking and dragging on the stencil area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end. All the selected items can be click and drop on the diagram area at a time instead of drag and dropping symbols one by one.
+
+![Rubber band selection](Stencil_images/SymbolRubberbandSelection.gif)
+
+## Symbol reordering
+
+Diagram control provides support to reordering the stencil symbols within its group elements. By default, symbols reordering will be enabled. Symbol reordering can be disbaled by removing `AllowDragDrop` constraints from 
+[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property.
+
+{% highlight C# %}
+
+//Enables the the symbols reordering.
+stencil.StencilConstraints |= StencilConstraints.AllowDragDrop;
+
+//Disables the symbols reordering.
+stencil.StencilConstraints &= ~StencilConstraints.AllowDragDrop;
+
+{% endhighlight %}
+
+![Symbol reordering](Stencil_images/SymbolReordering.gif)
+
+## Symbols Display Mode
+
+Diagram control provides support to display symbol names under its icons into the stencil. By default symbols will be displayed only by its icon. This can be changed by using `SymbolsDisplayMode` property of `Stencil` class.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the stencil-->
+<Stencil:Stencil x:Name="stencil" Title="Shapes" SymbolsDisplayMode ="NamesUnderIcons">
+</Stencil:Stencil>
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Defines symbols display mode as name under icons.
+stencil.SymbolsDisplayMode = SymbolsDisplayMode.NamesUnderIcons;
+
+//Defines symbols display mode as icons only.
+stencil.SymbolsDisplayMode = SymbolsDisplayMode.IconsOnly;
+
+{% endhighlight %}
+{% endtabs %}
+
+|SymbolsDisplayMode|Description|Output|
+|----------|-----------|-----------|
+| IconsOnly | Symbols will be displayed only by its icon |![IconsOnly](Stencil_images/IconsOnly.png)|
+| NamesUnderIcons | Symbols will be displayed by its icon under its name |![NamesUnderIcons](Stencil_images/NameUnderIcons.png)|
+
+## Context menu
+
+Diagram provides some default context menu items to ease the execution of some frequently used commands for stencil symbols. Context menu items can be enabled/disbaled by adding or removing `ContextMenu` constraints of 
+[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property when right click on any symbols of the stencil.
+
+{% highlight C# %}
+
+//Enables the the symbols reordering.
+stencil.StencilConstraints |= StencilConstraints.ContextMenu;
+
+//Disables the symbols reordering.
+stencil.StencilConstraints &= ~StencilConstraints.ContextMenu;
+
+{% endhighlight %}
+
+![Symbol ContextMenu](Stencil_images/SymbolsContextmenu.png)
+
 ## Events
 
 * The `Expanded Event` and `Collapsed Event` are notified to provide interactions in the SymbolGroup. To explore about arguments, refer to the [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html)
