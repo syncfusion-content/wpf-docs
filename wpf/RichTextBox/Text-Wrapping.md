@@ -7,38 +7,38 @@ documentation: ug
 keywords: text-wrapping, wrapping-style
 ---
 # Text Wrapping in WPF RichTextBox (SfRichTextBoxAdv)
-Text wrapping refers to how images and shapes are positioned about to text in a document. Currently, SfRichTextBoxAdv has only preservation support for image and textbox shape with below wrapping styles. The image can be inserted with inline wrapping style alone.
+Text wrapping refers to how images and shapes are fit with surrounding text in a document. Currently, RichTextBox has only preservation support for image and textbox shape with below wrapping styles. The image or shape can only be inserted with an `In-Line with Text` wrapping style. 
 
 ## In-Line with Text
-This option places an image on the same line as the surrounding text. The image will thus move as text is added or removed, whereas the other options here mean the image stays in one position while the text shifts and wraps around it.
+In this option, the image or shape is placed on the same line surrounding with text like any other word or letter. This image or shape will be automatically moved along with the text while editing, whereas the other options denote that the image or shape stays in a fixed position while the text shifts and wraps around it.
 
-![In Line](Text-Wrapping_images/inline.PNG)
+![view of image with inline wrapping style in RichTextBox](Text-Wrapping_images/inline-textwrapping.PNG)
 
 ## Behind
-Places an image behind the text, allowing you to add like watermark or background image on a page.
+In this option, the image or shape is placed behind the text. This can be used when you need to add a watermark or background image to a document.
 
-![Behind](Text-Wrapping_images/behind.PNG)
+![view of image with behind wrapping style in RichTextBox](Text-Wrapping_images/behind-textwrapping.PNG)
 
 ## In Front of Text
-Places the picture in front of the text. This can be used to place an image around some text or to add shape to highlight the part of a passage.
+In this option, the image or shape is placed in front of the text. This can be used to place an image around some text or to add shape to highlight the part in a paragraph.
 
-![In Front](Text-Wrapping_images/infront.PNG)
+![view of image with in front of text wrapping style in RichTextBox](Text-Wrapping_images/infront-textwrapping.PNG)
 
-N> In front of and behind text wrapping styles are supported from version 18.3.0. X.
+N> Starting from v18.3.0.x, the in front of and behind text wrapping styles are supported.
 
 ## Top and Bottom
-Text wraps above and below the image so it is on its line. This is most useful for larger images that occupy most of the width of a page.
+In this option, Text wraps above and below the image or shape. No text is to the left or right of the image or shape. This can be used for larger images or shapes that occupy most of the width in a document.
 
-N> Top and bottom wrapping style is supported from the version 19.1.0. X.
+N> Starting from v19.1.0.x, the top and bottom wrapping style is supported.
 
-![Top and Bottom](Text-Wrapping_images/TopandBottom.PNG)
+![view of image with top and bottom wrapping style in RichTextBox](Text-Wrapping_images/topandbottom-textwrapping.PNG)
 
 ## Square
-This wraps text around an image on all sides at right angles, as if it had a rectangular box around it.
+In this option, Text wraps around the image or text box in a square shape.
 
-N> Tight and Through types are also displayed as Square wrapping style in SfRichTextBoxAdv. And it is supported from version 19.2.0. X.
+N> Tight and Through types are also displayed like square wrapping style in RichTextBox which is supported from v19.2.0.x.
 
-![Square](Text-Wrapping_images/Square.PNG)
+![view of shape with square wrapping style in RichTextBox](Text-Wrapping_images/square-textwrapping.PNG)
 
  
 
