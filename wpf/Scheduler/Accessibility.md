@@ -11,7 +11,7 @@ documentation: ug
 
 ## Screen reader support
 
-The `Scheduler` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
+The SfScheduler can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
 ### Month view
 
@@ -43,15 +43,15 @@ Spanning Appointment<br/><br/></td><td>Subject dddd, MMMM d, yyyy h:mm:ss tt - d
 <td>Plan Execution Friday, May 28, 2021 10:00:00 AM-Sunday, May 30, 2021 11:00:00 AM<br/><br></td></tr>
 <tr>
 <td>
-Week number<br/><br/></td><td>WeekNumber week number <br/><br/></td>
+Week number<br/><br/></td><td>week number<br/><br/></td>
 <td>Week Number 22<br/><br></td></tr>
 <tr>
 <td>
-Month agenda view  with No date selected<br/><br/></td><td>NoEventTextBlock.Text <br/><br/></td>
+Month agenda view  with No date selected<br/><br/></td><td>No Date Selected <br/><br/></td>
 <td>No Date Selected<br/><br></td></tr>
 <tr>
 <td>
-Month Agenda view with No events<br/><br/></td><td>dddd, MMMM d, yyyy NoEventTextBlock.Text<br/><br/></td>
+Month Agenda view with No events<br/><br/></td><td>dddd, MMMM d, yyyy No Events<br/><br/></td>
 <td>Wednesday, June 2, 2021 No Events<br/><br></td></tr>
 <tr>
 <td>
@@ -59,7 +59,7 @@ Month Agenda view list appointment<br/><br/></td><td>dddd, dddd, MMMM d, yyyy<br
 <td>Thursday, June 24, 2021<br/><br></td></tr>
 <tr>
 <td>
-BlackoutDates <br/><br/></td><td>BlackoutDay.Text - dddd, MMMM d, yyyy<br/><br/></td>
+BlackoutDates <br/><br/></td><td>Blackout Day dddd, MMMM d, yyyy<br/><br/></td>
 <td>Blackout Day-Saturday, June 26, 2021<br/><br></td></tr>
 </table>
 
@@ -93,7 +93,7 @@ Spanning Appointment<br/><br/></td><td>Subject dddd, MMMM d, yyyy h:mm:ss tt - d
 <td>Plan Execution Friday, May 28, 2021 10:00:00 AM-Sunday, May 30, 2021 11:00:00 AM<br/><br></td></tr>
 <tr>
 <td>
-Time ruler<br/><br/></td><td>TimeRuler.Content <br/><br/></td>
+Time ruler<br/><br/></td><td>Time ruler <br/><br/></td>
 <td>12 AM<br/><br></td></tr>
 </table>
 
@@ -127,7 +127,7 @@ Spanning Appointment<br/><br/></td><td>Subject dddd, MMMM d, yyyy h:mm:ss tt - d
 <td>Plan Execution Friday, May 28, 2021 10:00:00 AM-Sunday, May 30, 2021 11:00:00 AM<br/><br></td></tr>
 <tr>
 <td>
-Time ruler<br/><br/></td><td>TimeRuler.Content <br/><br/></td>
+Time ruler<br/><br/></td><td>Time ruler<br/><br/></td>
 <td>12 AM<br/><br></td></tr>
 </table>
 
