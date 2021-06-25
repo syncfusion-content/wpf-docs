@@ -149,11 +149,11 @@ Timeline week and Timeline work week<br/><br/></td><td>MMMM yyyy - MMMM yyyy<br/
 <td>28 June - 2 July 2021<br/><br></td></tr>
 <tr>
 <td>
-Previous navigation button<br/><br/></td><td>content button <br/><br/></td>
+Previous navigation button<br/><br/></td><td>Previous navigation button <br/><br/></td>
 <td>Previous navigation button<br/><br></td></tr>
 <tr>
 <td>
-Next navigation button<br/><br/></td><td>content button <br/><br/></td>
+Next navigation button<br/><br/></td><td>Next navigation button <br/><br/></td>
 <td>Next navigation button<br/><br></td></tr>
 </table>
 
@@ -184,39 +184,39 @@ Edit appointment <br/><br/></td><td>Title<br/><br/></td>
 <td>Edit event  <br/><br></td></tr>
 <tr>
 <td>
-Title textbox<br/><br/></td><td>Title Edit Text Enter line<br/><br/></td>
+Title textbox<br/><br/></td><td>Title Edit Subject Text Enter line<br/><br/></td>
 <td>Title Edit Meeting Enter line<br/><br></td></tr>
 <tr>
 <td>
-Location textbox<br/><br/></td><td>Title Edit Text  Enter line<br/><br/></td>
+Location textbox<br/><br/></td><td>Title Edit Location Text  Enter line<br/><br/></td>
 <td>Location Edit Chennai Enter line<br/><br></td></tr>
 <tr>
 <td>
-Notes textbox<br/><br/></td><td>Title Edit Text Enter line<br/><br/></td>
+Notes textbox<br/><br/></td><td>Title Edit NotesText Enter line<br/><br/></td>
 <td>Notes Edit (description) Enter line<br/><br></td></tr>
 <tr>
 <td>
-Save button<br/><br/></td><td>content button<br/><br/></td>
+Save button<br/><br/></td><td>Save button<br/><br/></td>
 <td>Save button<br/><br></td></tr>
 <tr>
 <td>
-Cancel button<br/><br/></td><td>content button<br/><br/></td>
+Cancel button<br/><br/></td><td>Cancel button<br/><br/></td>
 <td>Cancel button<br/><br></td></tr>
 <tr>
 <td>
-Delete button<br/><br/></td><td>content button<br/><br/></td>
+Delete button<br/><br/></td><td>Delete button<br/><br/></td>
 <td>Delete button<br/><br></td></tr>
 <tr>
 <td>
-Timezone/All-day check box<br/><br/></td><td>content checkbox<br/><br/></td>
+Timezone/All-day check box<br/><br/></td><td>All day  checkbox<br/><br/></td>
 <td>All day checkbox checked/Unchecked<br/><br></td></tr>
 <tr>
 <td>
-Date/time picker<br/><br/></td><td>value edit<br/><br/></td>
+Date/time picker<br/><br/></td><td>Date/time value edit<br/><br/></td>
 <td>12/1/2021 edit <br/><br></td></tr>
 <tr>
 <td>
-Combo box<br/><br/></td><td>content combobox<br/><br/></td>
+Combo box<br/><br/></td><td>Combobox content<br/><br/></td>
 <td>Custom<br/><br></td></tr>
 </table>
 
@@ -256,15 +256,15 @@ Reminder window <br/><br/></td><td>Title<br/><br/></td>
 <td>4 reminders<br/><br></td></tr>
 <tr>
 <td>
-Dismiss all button<br/><br/></td><td>content button<br/><br></td>
+Dismiss all button<br/><br/></td><td>Dismiss all button<br/><br></td>
 <td>Dismiss all button <br/><br></td></tr>
 <tr>
 <td>
-Snooze button <br/><br/></td><td>content button<br/><br></td>
+Snooze button <br/><br/></td><td>Snooze button<br/><br></td>
 <td>Snooze button  <br/><br></td></tr>
 <tr>
 <td>
-Dismiss button <br/><br/></td><td>content button<br/><br></td>
+Dismiss button <br/><br/></td><td>Dismiss button<br/><br></td>
 <td>Dismiss button  <br/><br></td></tr>
 <tr>
 <td>
