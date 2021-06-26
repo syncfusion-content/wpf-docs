@@ -224,9 +224,6 @@ The following XAML code shows how to bind the annotation command for rectangle a
 {% endhighlight %}
 {% endtabs %}
 
-{% endhighlight %}
-{% endtabs %}
-
 ### Arrow Annotation
 
 The following XAML code shows how to bind the annotation command for arrow annotation to a Button.
