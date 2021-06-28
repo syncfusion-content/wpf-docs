@@ -7,9 +7,9 @@ control: PDF Viewer
 documentation: ug
 ---
 
-#Select and Modify annotations programmatically
+# Select and Modify annotations programmatically
 
-##Select an annotation
+## Select an annotation
 
 PDF Viewer allows the users to select the annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
 
