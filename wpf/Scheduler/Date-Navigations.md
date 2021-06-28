@@ -118,3 +118,24 @@ private void Backward_Click(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Allow view navigation
+
+You can quickly navigate to the respective day or timeline day view by single-clicking on the date in month cell or view header of the following scheduler views such as week, work week, month, timeline week, timeline work week, and timeline month views by using the `AllowViewNavigation` property of the scheduler.
+
+% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" 
+                        ViewType="Week"
+                        AllowViewNavigation="True">
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Week;
+this.Schedule.AllowViewNavigation = true;
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* The `AllowViewNavigation` is not applicable for day and timeline day views.
+* If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise the month view should navigate to the day view by single-clicking on the date in month cell.

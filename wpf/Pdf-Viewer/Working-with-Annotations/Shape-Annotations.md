@@ -452,6 +452,43 @@ The following image illustrates the change in the opacity of the included rectan
 
   ![rectangle annotation](Annotation-images\Rectangle-Annotation-8.png)
 
+##### Border Styles
+
+PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
+
+* Cloudy
+* Solid
+
+By default, annotation border style will be solid.
+
+#####Changing the border style from UI
+
+The border style of the selected rectangle annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
+
+The following image illustrates how to change the border style of the rectangle annotation.
+
+![rectangle annotation](Annotation-images\Rectangle-Annotation-11.png)
+
+The following image illustrates the change of thickness in the selected rectangle annotation.
+
+![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
+
+#####Changing the border style programmatically
+
+The rectangle annotation can be customized at the time of inclusion. The following code shows how to set default border style of the included rectangle annotation by using BorderEffect property.
+
+{% tabs %}
+{% highlight C# %}
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfViewer.RectangleAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 #### General tab
 
 We can add/edit the default Author and Subject to the included rectangle annotation using General tab of the Rectangle Properties window.
@@ -1224,6 +1261,45 @@ The following image illustrates the change in the opacity of the included polygo
 
   ![After applied polygon opacity](Annotation-images\Polygon-Annotation-10.png)
 
+##### Border Styles
+
+PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
+
+* Cloudy
+* Solid
+
+By default, annotation border style will be solid.
+
+ N>For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
+
+#####Changing the border style from UI
+
+The border style of the selected polygon annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
+
+The following image illustrates how to change the border style of the polygon annotation included.
+
+![Before applying polygon border style](Annotation-images\Polygon-Annotation-13.png)
+
+The following image illustrates the change of border style in the selected polygon annotation.
+
+![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
+
+#####Changing the border style programmatically
+
+The polygon annotation can be customized at the time of inclusion. The following code shows how to a set default border style of the included polygon annotation by using BorderEffect property.
+
+{% tabs %}
+{% highlight C# %}
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfViewer.PolygonAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 #### General tab
 
 You can add/edit the default Author and Subject to the included polygon annotation using General tab of the Properties window.
@@ -1477,11 +1553,11 @@ The following keyboard shortcuts are available to customize the annotation in th
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### ShapeAnnotationChanged Event
 
-The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through ‘Settings`.
+The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
 
 The following code shows how to write the ShapeAnnotationChanged event in PdfViewerControl
 
@@ -1493,8 +1569,8 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
-    //To identify which type shape annotation     
+	
+	//To identify which type shape annotation
     ShapeAnnotationType annotationType = e.Type;
 
     //Page index in which this shape annotation was modified 

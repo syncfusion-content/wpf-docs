@@ -11,6 +11,8 @@ documentation: ug
 
 The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator.
 
+N> `AnimationSpeed` property is not applicable for `Fluent` animation type.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -222,6 +224,11 @@ Busy Indicator with Ripple type animation
 ![Message](AnimationTypes_images/Message.png)
 
 Busy Indicator with Message type animation
+{:.caption}
+
+![Message](AnimationTypes_images/Fluent.png)
+
+Busy Indicator with Fluent type animation
 {:.caption}
 
 
