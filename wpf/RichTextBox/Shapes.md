@@ -32,7 +32,7 @@ Text wrapping refers to how shapes fit with surrounding text in a document. Plea
 ## Positioning the shape
 Starting from v19.1.0.x, RichTextBox preserves the position properties of the shape and displays the shape based on position properties. It does not support modifying the position properties. Whereas the shape will be automatically moved along with text edited if it is positioned relative to the line or paragraph.
 
-N> At present, the shape with text wrapping style – `In-Line with Text` can only be dragged and dropped anywhere in the document.
+N> At present, the shape with text wrapping style `In-Line with Text` can only be dragged and dropped anywhere in the document.
 
 
 
