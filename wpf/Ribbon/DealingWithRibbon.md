@@ -187,7 +187,7 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ## RibbonBar Positioning
 
-The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property. The RibbonBar Position property has following two values,
+The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property. The RibbonBar's `Position` property has following two values,
 
 * Left - RibbonBar is placed on the left side of the Ribbon
 * Right - RibbonBar is placed on the right side of the Ribbon
