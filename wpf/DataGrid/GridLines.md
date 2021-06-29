@@ -126,9 +126,9 @@ this.sfDataGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal;
 
 ![Horizontal HeaderLinesVisibility in WPF DataGrid](GridLines_images/GridLines_image5.png)
 
-## DetailsViewDataGrid rows
+## Grid lines for Master-Details view
 
-SfDataGrid allows you to customize the grid lines visibility to DetailsViewDataGrid by setting the GridLinesVisibility and HeaderLinesVisibility properties like parent DataGrid. 
+SfDataGrid allows you to customize the grid lines for Master-Details view also like parent DataGrid by changing the grid lines properties in GridViewDefinition.DataGrid.
 
 {% tabs %}
 {% highlight xaml %}
