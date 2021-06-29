@@ -1087,7 +1087,7 @@ stencil.SymbolsDisplayMode = SymbolsDisplayMode.IconsOnly;
 
 ## Context menu
 
-Diagram provides some default context menu items to ease the execution of some frequently used commands for stencil symbols. Context menu items can be enabled/disbaled by adding or removing `ContextMenu` constraints of 
+Diagram provides some default context menu items to ease the execution of some frequently used commands for stencil symbols. Context menu items can be enabled/disabled by adding or removing `ContextMenu` constraints of 
 [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property when right click on any symbols of the stencil.
 
 {% highlight C# %}
