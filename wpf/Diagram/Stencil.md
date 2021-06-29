@@ -904,7 +904,7 @@ The appearance of the title can be customized by using the  [TitleTemplate](http
 
 Please find the code example that explains how to add a title and its customization.
 
- {% tabs %}
+{% tabs %}
 {% highlight xaml %}
 <DataTemplate x:Key="TitleTemplate">
   <StackPanel Orientation="Horizontal">
@@ -932,6 +932,29 @@ Please find the code example that explains how to add a title and its customizat
 ## Browse the symbols from the stencil 
 
 You can search for symbols in the stencil by entering the symbol name (e.g: "rectangle") in the search text box and start searching. The symbols are resulted by matching the value of the `Name` property with the string entered in the search textbox. The [ShowSearchTextBox](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ShowSearchTextBox) property of the `Stencil` is used to show or hide the search textbox in a stencil. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Initialize the stencil-->
+<syncfusion:Stencil x:Name="stencil" Width="250" ExpandMode="All"  ShowSearchTextBox="True">
+    <!--Initialize the SymbolSource-->
+    <syncfusion:Stencil.SymbolSource>               
+        <!--Define the SymbolCollection-->
+        <syncfusion:SymbolCollection>
+            <syncfusion:NodeViewModel Key = "Basic Shapes" Name="Rectangle" OffsetX="100" OffsetY="100" UnitHeight="100" UnitWidth="100"  Shape="{StaticResource Rectangle}">
+            </syncfusion:NodeViewModel>
+        </syncfusion:SymbolCollection>
+    </syncfusion:Stencil.SymbolSource>
+    <syncfusion:Stencil.SymbolGroups>
+        <syncfusion:SymbolGroups>
+            <!--Separate groups based on the key-->
+            <syncfusion:SymbolGroupProvider MappingName = "Key" />
+        </syncfusion:SymbolGroups>
+    </syncfusion:Stencil.SymbolGroups>
+</syncfusion:Stencil>
+{% endhighlight %}
+{% endtabs %}
 
 The following image shows the search result of the symbol.
 
