@@ -697,7 +697,16 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Arrow
 
-PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document.
+PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document. The following XAML code shows how to bind the annotation command for arrow annotation to a Button.
+
+{% tabs %}
+{% highlight xaml %}
+
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl"/>	
+    <Button Content="Arrow" CommandParameter="Arrow" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
+
+{% endhighlight %}
+{% endtabs %}
 
 ### How to set the stroke color
 

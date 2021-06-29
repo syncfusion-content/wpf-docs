@@ -172,6 +172,7 @@ The following list of AnnotationCommandParameter values to the AnnotationCommand
 *    Line
 *    Circle
 *	 Rectangle
+*	 Arrow
 *	 Ink
 *	 Strikethrough
 *	 Highlight
@@ -219,6 +220,19 @@ The following XAML code shows how to bind the annotation command for rectangle a
 	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl" />
 	
     <Button Content="Rectangle" Height="20" Width="60" CommandParameter="Rectangle" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
+
+{% endhighlight %}
+{% endtabs %}
+
+### Arrow Annotation
+
+The following XAML code shows how to bind the annotation command for arrow annotation to a Button.
+
+{% tabs %}
+{% highlight xaml %}
+
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl"/>	
+    <Button Content="Arrow" CommandParameter="Arrow" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 
 {% endhighlight %}
 {% endtabs %}
