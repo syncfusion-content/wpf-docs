@@ -54,40 +54,62 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validating Minimun Value of WPF DoubleTextBox](Restriction-or-Validation_images/wpf-double-textbox-min-value-validation.jpeg)
+![Validate minimun value of DoubleTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validating Maximum Value of WPF DoubleTextBox](Restriction-or-Validation_images/wpf-double-textbox-max-value-validation.jpeg)
+![Validate maximum value of DoubleTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 ## Restrict number of decimal digit
 
-The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
-by using [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_NumberDecimalDigits) property.
-The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or minimum digit, the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MinimumNumberDecimalDigits) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MaximumNumberDecimalDigits)
+You can change the decimal digits format in the `DoubleTextBox` control using `NumberDecimalDigits` property. You can restrict the decimal digits of the text within maximum and minimum limits in `DoubleTextBox` control using `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+
+N> If the value of `MinimumNumberDecimalDigits` property is greater than the value of `MaximumNumberDecimalDigits` property, the text of `DoubleTextBox` will be updated based on the value of `MinimumNumberDecimalDigits` property.
 
 {% tabs %}
-{% highlight xaml %}
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" 
-                          NumberDecimalDigits = "3" MinimumNumberDecimalDigits = "2"
-                          MaximumNumberDecimalDigits = "5"/>
-{% endhighlight %}
+{% highlight XAML %}
 
-{% highlight c# %}
+<syncfusion:DoubleTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumNumberDecimalDigits="4"
+                            MinimumNumberDecimalDigits="1" />
+
+{% endhighlight %}
+{% highlight C# %}
+
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
-doubleTextBox.Height = 25;
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
-doubleTextBox.NumberDecimalDigits = 3;
-doubleTextBox.MinimumNumberDecimalDigits = 2;
-doubleTextBox.MaximumNumberDecimalDigits = 5;
+doubleTextBox.Value = 125.32545;
+doubleTextBox.MaximumNumberDecimalDigits = 4;
+doubleTextBox.MinimumNumberDecimalDigits = 1;
+
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict Decimal Digits Count of WPF DoubleTextBox](Restriction-or-Validation_images/wpf-double-textbox-decimal-digits.png)
+![DoubleTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/doubletextbox-wpf-restrict-numberof-decimal-digits.png)
 
-N> `NumberDecimalDigits` property value will be allows set based on the in-between range of `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` property values.
+When value of `MinimumNumberDecimalDigits`, `MaximumNumberDecimalDigits` and `NumberDecimalDigits` properties are specified, `NumberDecimalDigits` property takes higher precedence and updates the text of `DoubleTextBox` property. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox Value="125.32545" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            MaximumNumberDecimalDigits="4"
+                            MinimumNumberDecimalDigits="1" 
+                            NumberDecimalDigits="3"
+                            />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Value = 125.32545;
+doubleTextBox.MaximumNumberDecimalDigits = 4;
+doubleTextBox.MinimumNumberDecimalDigits = 1;
+doubleTextBox.NumberDecimalDigits = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DoubleTextBox WPF change decimal digits](Restriction-or-Validation_images/doubletextbox-wpf-decimaldigits.png)
 
 ## Read only mode
 
@@ -109,4 +131,4 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox in Read-only Mode](Restriction-or-Validation_images/wpf-double-textbox-read-only.jpeg)
+![DoubleTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)

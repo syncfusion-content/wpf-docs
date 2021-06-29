@@ -9,11 +9,11 @@ documentation: ug
 
 # Resource Grouping in WPF Scheduler (SfScheduler)
 
-The scheduler resource view will allow you to group appointments based on the resources or dates, arranged by the column or row in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views. It also allows you to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor.
+The scheduler resource view will allow to group appointments based on the resources or dates, arranged by the column or row in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views. It also allows to share the events or appointments to the multiple resources and resource appointment details can be edited by using a built-in appointment editor.
 
 ## Grouping by Resources
 
-Resources can be added to the scheduler by setting the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property as `Resource` in `SfScheduler.` You need to set the [Id](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Id), [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Name), [Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Foreground) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Background) properties of [SchedulerResource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html) to create a resource. You can add the resource to the scheduler by using the [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property of `SfScheduler` and you can also add or remove the scheduler resources dynamically.
+Resources can be added to the scheduler by setting the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property as `Resource` in `SfScheduler.` Set the [Id](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Id), [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Name), [Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Foreground) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Background) properties of [SchedulerResource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html) to create a resource. Add the resource to the scheduler by using the [ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property of `SfScheduler` and also add or remove the scheduler resources dynamically.
 
 N>No resource view will be displayed, even a resource added using the `ResourceCollection` property when the `ResourceGroupType` property value is set to `None`.
 
@@ -40,9 +40,9 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 ## Resource Grouping types
 
-You can group the resource order by `Date` or order by `Resource` using the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property of `SfScheduler`.
+Group the resource order by `Date` or order by `Resource` using the [ResourceGroupType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property of `SfScheduler`.
 
-N>You can group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
+N> Group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
 
 ### Resource
 
@@ -78,7 +78,7 @@ schedule.ResourceGroupType = ResourceGroupType.Date;
 
 ## Assigning resources to appointments
 
-Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by using the [ResourceIdCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection) for `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
+Appointments associated with scheduler `ResourceCollection` will be displayed when set schedule resource `Id` in the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by using the [ResourceIdCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ResourceIdCollection) for `ResourceGroupType` set as `Resource` or `Date`. Also assign the resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment).  
 
 {% tabs %}
 {% highlight c# %}
@@ -97,13 +97,13 @@ this.schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-N>• When `ResourceIdCollection` not added to 'ScheduleAppointment' then the appointment will not be displayed in when `ResourceGroupType` set as `Resource` or `Date`.
-• When `ResourceGroupType` set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
-• You can also add or remove the appointment resources dynamically.
+N>• When `ResourceIdCollection` is not added to 'ScheduleAppointment' then the appointment will not be displayed in, when `ResourceGroupType` is set as `Resource` or `Date`.
+• When `ResourceGroupType` is set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
+• Also add or remove the appointment resources dynamically.
 
 ### Multiple resource sharing
 
-Multiple resources can share the same events or appointments. If the appointment details edited or updated, then the changes will reflect on all other shared instances simultaneously.
+Multiple resources can share the same events or appointments. If the appointment details are edited or updated, then the changes will reflect on all other shared instances simultaneously.
 
 {% tabs %}
 {% highlight c# %}
@@ -134,15 +134,15 @@ Schedule supports full data binding to [ResourceCollection](https://help.syncfus
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Name | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
+| Name | Maps the property name of the custom class, which is equivalent to Name in the ScheduleResource. |
 | Id | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
 | Background | Maps the property name of custom class, which is equivalent to Background in ScheduleResource. |
 | Foreground | Maps the property name of custom class, which is equivalent to Foreground in ScheduleResource. |
 
-N>Custom resource class should contain a mandatory field for resource `Id`.
+N> Custom resource class should contain a mandatory field for resource `Id`.
 
 ## Create business object for Resource
-You can create a custom class `Employee` with mandatory fields `Name`, `Id`, `ForegroundColor` and `BackgroundColor`.You can also assign resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
+Create a custom class `Employee` with mandatory fields `Name`, `Id`, `ForegroundColor` and `BackgroundColor`. Also assign the resources to [recurrence appointments](https://help.syncfusion.com/wpf/scheduler/appointments#recurrence-appointment). 
 
 {% tabs %}
 {% highlight c# %}
@@ -160,10 +160,11 @@ public class Employee
 {% endhighlight %}
 {% endtabs %}
 
-N>• You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
-• [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) property is used to get the deatils of custom data.
+N>  • Inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
+• [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) property is used to get the details of the custom data.
+
+Map the properties of `Employee` class with `SfScheduler` control using Scheduler `ResourceMapping`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -187,7 +188,7 @@ schedule.ResourceMapping = resourceMapping;
 
 ### Assign resource object collection
 
-You can add resources of `Employee` collection that can be assigned to scheduler using the `ResourceCollection` property which is of `IEnumerable` type. You can also add or remove scheduler resources dynamically.
+Add the resources of `Employee` collection that can be assigned to the scheduler using the `ResourceCollection` property which is of `IEnumerable` type. Also add or remove scheduler resources dynamically.
 
 {% tabs %}
 {% highlight c# %}
@@ -207,7 +208,7 @@ schedule.ResourceCollection = ResourceCollection;
 
 ### Assign the resource objects to appointment business object
 
-You can associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html). Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. You can also assign resources to recurrence appointments.
+Associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html). Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. Also assign resources to recurrence appointments.
 
 {% tabs %}
 {% highlight c# %}
@@ -224,9 +225,9 @@ public class Meeting
 {% endhighlight %}
 {% endtabs %}
 
-N>You can inherit this class from the `INotifyPropertyChanged` for dynamic changes in custom data.
+N> Inherit this class from the `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
+Map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
 {%tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
@@ -251,7 +252,7 @@ Schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %}
 
-You can schedule meetings for a Resource by setting `From`, `To` and `Resources` of Meeting class.
+Schedule meetings for a Resource by setting `From`, `To` and `Resources` of Meeting class.
 
 {%tabs %}
 {% highlight c# %}
@@ -270,7 +271,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 ## Resource header size 
 
-You can customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
+Customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
 
 ### Resource header size in days view
 
@@ -308,7 +309,7 @@ schedule.DaysViewSettings.ResourceHeaderSize = 100;
 
 ## Visible resource count
 
-You can customize the number of visible resources in day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [VisibleResourceCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
+Customize the number of visible resources in day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [VisibleResourceCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) property of `DaysViewSettings`  or `TimelineViewSettings` in `SfScheduler`.
 
 N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed. 
 
