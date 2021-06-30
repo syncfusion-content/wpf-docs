@@ -461,7 +461,7 @@ PDF viewer allows the users to change the annotation border style. Currently it 
 
 By default, annotation border style will be solid.
 
-#####Changing the border style from UI
+##### Changing the border style from UI
 
 The border style of the selected rectangle annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
 
@@ -473,7 +473,7 @@ The following image illustrates the change of thickness in the selected rectangl
 
 ![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
 
-#####Changing the border style programmatically
+##### Changing the border style programmatically
 
 The rectangle annotation can be customized at the time of inclusion. The following code shows how to set default border style of the included rectangle annotation by using BorderEffect property.
 
@@ -483,6 +483,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
+	pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Rectangle;
     pdfViewer.RectangleAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
@@ -1281,7 +1282,7 @@ By default, annotation border style will be solid.
 
  N>For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
 
-#####Changing the border style from UI
+##### Changing the border style from UI
 
 The border style of the selected polygon annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
 
@@ -1293,7 +1294,7 @@ The following image illustrates the change of border style in the selected polyg
 
 ![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
 
-#####Changing the border style programmatically
+##### Changing the border style programmatically
 
 The polygon annotation can be customized at the time of inclusion. The following code shows how to a set default border style of the included polygon annotation by using BorderEffect property.
 
@@ -1303,11 +1304,20 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
+	pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon;
     pdfViewer.PolygonAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+##### How to directly include cloud shape from toolbar
+
+We can add a polygon with cloudy border style directly as a cloud shape from the default toolbar.
+
+The following image illustrates the option to set polygon annotation mode with cloudy border style.
+
+![polygon border style](Annotation-images\Polygon-Annotation-15.png)
 
 #### General tab
 
