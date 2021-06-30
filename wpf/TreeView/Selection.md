@@ -60,7 +60,7 @@ W> If an item is selected programmatically when `SelectionMode` is `None` and if
 
 ## Select the nodes based on property of underlying data object
 
-You can bind selection state of node to the bool property in underlying data object by using [IsSelectedPropertyName] property. TreeView updates the selection of node when underlying data object property gets changed and vice versa.
+You can bind selection state of node to the bool property in underlying data object by using [IsSelectedPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_Engine_HierarchyPropertyDescriptor_IsSelectedPropertyName) property. TreeView updates the selection of node when underlying data object property gets changed and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
