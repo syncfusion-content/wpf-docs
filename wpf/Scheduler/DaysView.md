@@ -295,7 +295,7 @@ N>NOTE
 * All day Appointment does not support `MinimumAppointmentDuration`.
 
 ## Minimum display appointments count in all day panel
-You can customize the number of appointments displayed in an all-day panel using the `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
+You can customize the number of appointments displayed in an all-day panel using the [MinimumAllDayAppointmentsCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_MinimumAllDayAppointmentsCount) property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2, and all-day panels have more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as appointment counts.
 
 {% tabs %}
 {% highlight xaml %}
@@ -312,7 +312,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endtabs %}
 
 ### Customize more appointments indicator in all day panel
-You can customize the default appearance of more appointments indicator in the all-day panel by using the `AllDayMoreAppointmentsIndicatorTemplate` property of `DaysViewSettings.`
+You can customize the default appearance of more appointments indicator in the all-day panel by using the [AllDayMoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayMoreAppointmentsIndicatorTemplate) property of `DaysViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}

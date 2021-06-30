@@ -521,7 +521,7 @@ public class MonthViewAppointmentTemplateSelector : DataTemplateSelector
 ![WPF Scheduler month view AppointmentTemplateSelector](Month-View_Images/AppointmentTemplateSelector.png)
 
 ## Customize more appointments indicator in month cell
-You can customize the default appearance of more appointments indicator in a month cell by using the `MoreAppointmentsIndicatorTemplate` property of the `MonthViewSettings.`
+You can customize the default appearance of more appointments indicator in a month cell by using the [MoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MoreAppointmentsIndicatorTemplate) property of the `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
