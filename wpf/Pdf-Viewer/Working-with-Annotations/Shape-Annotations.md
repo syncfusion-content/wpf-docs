@@ -1313,9 +1313,9 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ##### How to directly include cloud shape from toolbar
 
-Polygon with cloudy border style can be added directly as a cloud shape from the default toolbar.
+Using the default toolbar of PDF Viewer, you can directly enable the mode to add cloud shapes in PDF pages
 
-The following image illustrates the option to set polygon annotation mode with cloudy border style.
+The following image illustrates how to select the cloud shape from the toolbar.
 
 ![polygon border style](Annotation-images\Polygon-Annotation-15.png)
 
