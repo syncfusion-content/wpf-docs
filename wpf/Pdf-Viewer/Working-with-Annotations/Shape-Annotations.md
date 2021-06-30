@@ -483,7 +483,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-	pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Rectangle;
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Rectangle;
     pdfViewer.RectangleAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
@@ -1304,7 +1304,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-	pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon;
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon;
     pdfViewer.PolygonAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
@@ -1313,7 +1313,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ##### How to directly include cloud shape from toolbar
 
-We can add a polygon with cloudy border style directly as a cloud shape from the default toolbar.
+Polygon with cloudy border style can be added directly as a cloud shape from the default toolbar.
 
 The following image illustrates the option to set polygon annotation mode with cloudy border style.
 
