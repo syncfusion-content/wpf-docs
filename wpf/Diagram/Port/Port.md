@@ -518,11 +518,11 @@ NodePortViewModel port = new NodePortViewModel()
 
 When establishing a new connection from diagram elements of nodes and ports or dropping a new connector on diagram elements of nodes and ports, connection animation will be shown on the connection object to indicate about new connection. The `PortHoverEffect` property of diagram class helps to change the animation type. It includes the following options:
 
-* Ripple: Specifies the water ripple circles type animtion effect for connection.
-* Shrink: Specifies the plus symbol type animtion effect for connection.
-* Node: Specifies no cnnection animation effect.
+* Ripple: Specifies the water ripple circles type animation effect for connection.
+* Shrink: Specifies the plus symbol type animation effect for connection.
+* None: Specifies no connection animation effect.
 
-The default operation is Ripple.
+The default effect is Ripple.
 
 {% tabs %}
 {% highlight xaml %}
