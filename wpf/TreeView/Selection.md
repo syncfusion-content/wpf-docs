@@ -275,6 +275,49 @@ The [FocusBorderColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Tre
 ## FocusBorderThickness
 The [FocusBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. The default thickness is `1`.
 
+## How to add selection on right click
+By default, TreeView doesn't allow selection on right click. However, selection can be added in application level by adding the tree node content to `TreeView.SelectedItems` collection, for this we retrieve the node at the specified mouse point using [GetNodeAt](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt_System_Windows_Point_) method. 
+
+Below is the code example, which adds the node content to selected items upon right click on the tree node by checking the exact behavior of `FullRowSelect` support.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeView:SfTreeView x:Name="treeView" 
+                     AutoExpandMode="RootNodes"
+                     ItemsSource="{Binding Countries}"
+                     SelectionMode="Multiple"
+                     MouseRightButtonDown="treeView_MouseRightButtonDown">
+</treeView:SfTreeView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+private bool IsMouseOverOnExpander(Syncfusion.UI.Xaml.TreeView.TreeViewItem treeViewItem, Point point)
+{
+    if (treeViewItem.TreeViewItemInfo.TreeView.ExpanderPosition == ExpanderPosition.Start)
+        return point.X < treeViewItem.IndentationWidth + treeViewItem.ExpanderWidth;
+    else
+        return point.X > (treeViewItem.ActualWidth - treeViewItem.ExpanderWidth);
+}
+
+private void treeView_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+{
+    var treeViewNode = this.treeView.GetNodeAt(e.GetPosition(this.treeView));
+    var itemInfo = treeView.GetItemInfo(treeViewNode.Content);
+    var itemPoint = e.GetPosition(itemInfo.Element);
+
+    if (!this.treeView.FullRowSelect && IsMouseOverOnExpander(itemInfo.Element, itemPoint))
+        return;
+
+    if (this.treeView.SelectedItems == null)
+        this.treeView.SelectedItems = new System.Collections.ObjectModel.ObservableCollection<object>();
+    this.treeView.SelectedItems.Add(treeViewNode.Content);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitation
 * When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of grid in the  `ItemTemplate`.
 * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
