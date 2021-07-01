@@ -187,7 +187,7 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 ## RibbonBar Positioning
 
-The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property. The RibbonBar's `Position` property has following two values,
+The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_Position) property. The RibbonBar's `Position` property has following two values,
 
 * Left - RibbonBar is placed on the left side of the Ribbon
 * Right - RibbonBar is placed on the right side of the Ribbon
@@ -636,9 +636,11 @@ this.help.Position = Syncfusion.Windows.Tools.Controls.HorizontalPosition.Right;
 
 ![WPF Ribbon RibbonBar positioning](RibbonResizeWindow-images/wpf-ribbon-ribbonbar-positioning.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/RibbonBar-positioning)
+
 ## Resize based on collapse order
 
-The Ribbon control provides support to resize the RibbonBar's based on the order specified in the `SizeReductionOrder` property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
+The Ribbon control provides support to resize the RibbonBar's based on the order specified in the [`SizeReductionOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html#Syncfusion_Windows_Tools_Controls_RibbonTab_SizeReductionOrder) property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
 
 1. **Compressing the RibbonBar specified in the SizeReductionOrder:**
 
@@ -1674,7 +1676,7 @@ In the below code snippet, the `SizeReductionOrder` property in the **Home** [`R
 
 ![WPF Ribbon Resize based on collapse order](RibbonResizeWindow-images/wpf-ribbon-resize-based-on-collapse-order.gif)
 
-N> View sample in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Resize-based-on-specific-order)
 
 ## Setting collapse image for RibbonBar
 
