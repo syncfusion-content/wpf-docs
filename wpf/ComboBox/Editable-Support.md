@@ -52,7 +52,7 @@ comboBox.IsEditable = true;
 
 ## Auto Complete Support in WPF ComboBox
 
-You can able to find the expected item from the dropdown of the `ComboBoxAdv` and it can be enabled by using the `AutoCompleteMode` property. It can be used for both single and multiple selections on editable mode. 
+You can able to find the expected item from the dropdown of the [`ComboBoxAdv`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) and it can be enabled by using the [`AutoCompleteMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AutoCompleteMode) property. It can be used for both single and multiple selections on editable mode. 
 
  There are three different AutoComplete modes: 
 
@@ -84,3 +84,5 @@ combobox.AutoCompleteMode = AutoCompleModes.Suggest;
 ![WPF ComboBoxAdv AutoComplete suggest mode](ComboBoxAdv_images/wpf-comboboxadv-autocomplete-suggest-mode.gif)
 
 N> Suggest mode will be applicable only when the `ComboBoxAdv` is populated with `ItemSource` collection. When `AutoCompleteMode` is set to `Suggest` and `IsTextSearchEnabled` is set to `True` in editable mode, `AutoCompleteMode` will take precedence.
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Autocomplete)
