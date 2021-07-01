@@ -29,7 +29,7 @@ The system requirements for using our Syncfusion WPF platform are as follows
 
 ### Development Environment
 
-* Microsoft Visual Studio 2008/2010/2012/2013/2015/2017/2019
+* Microsoft Visual Studio 2008/2010/2012/2013/2015/2017/2019/2022
 * .NET Framework 3.5/4.0/4.5/4.5.1/4.6
 * .NET Core 3.1
 * .NET 5.0

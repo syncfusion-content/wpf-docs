@@ -58,6 +58,133 @@ sfTreeView.SelectedItems.Add(viewModel.Items[3]);
 
 W> If an item is selected programmatically when `SelectionMode` is `None` and if multiple items are programmatically selected when `SelectionMode` is `Single` or `SingleDeselect`, then exception will be thrown internally.
 
+## Select the nodes based on property of underlying data object
+
+You can bind selection state of node to the bool property in underlying data object by using [IsSelectedPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.Engine.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_Engine_HierarchyPropertyDescriptor_IsSelectedPropertyName) property. TreeView updates the selection of node when underlying data object property gets changed and vice versa.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeView:SfTreeView x:Name="treeView"
+         ItemsSource="{Binding Folders}">
+    <treeView:SfTreeView.HierarchyPropertyDescriptors>        
+        <treeView:HierarchyPropertyDescriptor IsSelectedPropertyName="IsSelected" ChildPropertyName="SubFiles" TargetType="local:FileManager" />
+    </treeView:SfTreeView.HierarchyPropertyDescriptors>
+</treeView:SfTreeView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class FileManager : INotifyPropertyChanged
+{
+    private string fileName;        
+    private ObservableCollection<FileManager> subFiles;
+    private bool isSelected;
+
+    public ObservableCollection<FileManager> SubFiles
+    {
+        get { return subFiles; }
+        set
+        {
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string ItemName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("ItemName");
+        }
+    }
+
+    public bool IsSelected
+    {
+        get { return isSelected; }
+        set
+        {
+            isSelected = value;
+            RaisedOnPropertyChanged("IsSelected");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+
+public class FileManagerViewModel
+{
+    private ObservableCollection<FileManager> folders;
+
+    public FileManagerViewModel()
+    {
+        GenerateSource();            
+    }
+
+    public ObservableCollection<FileManager> Folders
+    {
+        get { return folders; }
+        set { this.folders = value; }
+    }
+
+    private void GenerateSource()
+    {
+        var fileManager = new ObservableCollection<FileManager>();
+        
+        var doc = new FileManager() { ItemName = "Documents", IsSelected = true };
+        var download = new FileManager() { ItemName = "Downloads",  IsSelected = false };
+        
+        var pollution = new FileManager() { ItemName = "Environmental Pollution.docx"};
+        var globalWarming = new FileManager() { ItemName = "Global Warming.ppt" };
+        var sanitation = new FileManager() { ItemName = "Sanitation.docx"};
+        var socialNetwork = new FileManager() { ItemName = "Social Network.pdf", IsSelected = true };
+        var youthEmpower = new FileManager() { ItemName = "Youth Empowerment.pdf" };
+
+        var games = new FileManager() { ItemName = "Game.exe" };
+        var tutorials = new FileManager() { ItemName = "Tutorials.zip" };
+        var TypeScript = new FileManager() { ItemName = "TypeScript.7z"};
+        var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf"};
+        
+        doc.SubFiles = new ObservableCollection<FileManager>
+        {
+            pollution,
+            globalWarming,
+            sanitation,
+            socialNetwork,
+            youthEmpower
+        };
+     
+        download.SubFiles = new ObservableCollection<FileManager>
+        {
+            games,
+            tutorials,
+            TypeScript,
+            uiGuide
+        };
+    
+        fileManager.Add(doc);
+        fileManager.Add(download);
+     
+        folders = fileManager;
+    }
+}    
+
+{% endhighlight %}
+{% endtabs %}
+
+N> `IsSelectedPropertyName` property is not supported for unbound mode and it accepts only boolean type property.
+
 ## Selected items 
 
 ### Gets selected Items
