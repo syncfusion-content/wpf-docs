@@ -364,79 +364,123 @@ Each theme supported in the theme studio has respective theme settings class wit
 
 N> Need to register theme settings before setting respective theme for window/control.
 
-Please find the complete list of theme names and respective theme settings class.
+Please find the complete list of theme names, respective theme settings class and supported palette.
 
 <table>
 <tr>
 <th>
 Styles/Theme name</th><th>
-Respective theme settings class to customize</th></tr>
+Respective theme settings class to customize</th>
+<th>Supported palette</th>
+</tr>
 <tr>
 <td>
 FluentLight</td><td>
 {{'[FluentLightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentLight.WPF.FluentLightThemeSettings.html)'| markdownify }}
-</td></tr>
+</td>
+<td>
+{{'[FluentPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentLight.WPF.FluentPalette.html)'| markdownify }}
+</td>
+</tr>
 <tr>
 <td>
 FluentDark</td><td>
 {{'[FluentDarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentDarkThemeSettings.html)'| markdownify }}
-</td></tr>
+</td>
+<td>
+{{'[FluentPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.FluentDark.WPF.FluentPalette.html)'| markdownify }}
+</td>
+</tr>
 <tr>
 <td>
 MaterialLight</td><td>
 {{'[MaterialLightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLight.WPF.MaterialLightThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[MaterialPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLight.WPF.MaterialPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 MaterialDark</td><td>
 {{'[MaterialDarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDark.WPF.MaterialDarkThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[MaterialPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDark.WPF.MaterialPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 MaterialLightBlue</td><td>
 {{'[MaterialLightBlueThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLightBlue.WPF.MaterialLightBlueThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[MaterialPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialLightBlue.WPF.MaterialPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 MaterialDarkBlue</td><td>
 {{'[MaterialDarkBlueThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDarkBlue.WPF.MaterialDarkBlueThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[MaterialPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.MaterialDarkBlue.WPF.MaterialPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019Colorful</td><td>
 {{'[Office2019ColorfulThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Colorful.WPF.Office2019ColorfulThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Office2019Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Colorful.WPF.Office2019Palette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019Black</td><td>
 {{'[Office2019BlackThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Black.WPF.Office2019BlackThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Office2019Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019Black.WPF.Office2019Palette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019White</td><td>
 {{'[Office2019WhiteThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019White.WPF.Office2019WhiteThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Office2019Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019White.WPF.Office2019Palette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019DarkGray</td><td>
 {{'[Office2019DarkGrayThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019DarkGray.WPF.Office2019DarkGrayThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Office2019Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019DarkGray.WPF.Office2019Palette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019HighContrast</td><td>
 {{'[Office2019HighContrastThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019HighContrast.WPF.Office2019HighContrastThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[HighContrastPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019HighContrast.WPF.HighContrastPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2019HighContrastWhite</td><td>
 {{'[Office2019HighContrastWhiteThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019HighContrastWhite.WPF.Office2019HighContrastWhiteThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[HighContrastPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Office2019HighContrastWhite.WPF.HighContrastPalette.html)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 SystemTheme</td><td>
 {{'[SystemThemeThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.SystemTheme.WPF.SystemThemeThemeSettings.html)'| markdownify }}
-</td></tr>
+</td>
+<td>-</td>
+</tr>
 </table>
+
+Customize theme colors and fonts in the application
 
 {% tabs %}
 
@@ -459,6 +503,20 @@ SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 {% endtabs %}
 
 ![Applied custom theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Custom-Theme-WPF-ChromelessWindow-DataGrid.png)
+
+Customize theme colors using predefined palette
+
+{% tabs %}
+
+{% highlight C# %}
+
+FFluentDarkThemeSettings themeSettings = new FluentDarkThemeSettings();
+themeSettings.Palette = FluentPalette.PinkRed;
+SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customize-themes-using-theme-settings).
 
