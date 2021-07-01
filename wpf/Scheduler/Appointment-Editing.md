@@ -14,7 +14,7 @@ This section explains how to handle appointment editing in WPF scheduler and als
 Scheduler supports to add a new appointment by using the [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double-clicking on a time cell or month cell or view header.
 
 N>
-* If `AllowViewNavigation` is true, the current view should be navigated to the respective day or timeline day views by single-clicking on the date in the view header. Other than the date by double-clicking on the view header cell, the appointment editor window will be opened, and by default, the `AllDay` checkbox will be checked in the appointment editor window.
+* If [AllowViewNavigation](https://help.syncfusion.com/wpf/scheduler/date-navigations#allow-view-navigation) is true, the current view should be navigated to the respective day or timeline day views by single-clicking on the date in the view header. Other than the date by double-clicking on the view header cell, the appointment editor window will be opened, and by default, the `AllDay` checkbox will be checked in the appointment editor window.
 * All-day appointments can be created by double-clicking on the view header and not applicable for the month view header.
 
 ## Editing appointment
