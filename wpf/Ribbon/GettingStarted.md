@@ -1021,11 +1021,11 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 ## Adding custom controls to the title bar
 
-The RibbonWindow allows to load any custom controls into the right side of the title bar by using both `HeaderItems` and `HeaderItemsSource` property.
+The RibbonWindow allows to load any custom controls into the right side of the title bar by using both [`HeaderItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItems) and [`HeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItemsSource) property.
 
 ### Adding items using HeaderItems
 
-The `HeaderItems` property of the RibbonWindow allows you to load any controls directly into the title bar.
+The [`HeaderItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItems) property of the RibbonWindow allows you to load any controls directly into the title bar.
 
 {% tabs %}
 
@@ -1085,7 +1085,7 @@ The `HeaderItems` property of the RibbonWindow allows you to load any controls d
 
 ### Adding items using HeaderItemsSource
 
-The `HeaderItemsSource` property of the RibbonWindow allows you to bind a collection of objects which used to load custom controls into the right side of the title bar. 
+The [`HeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItemsSource) property of the RibbonWindow allows you to bind a collection of objects which used to load custom controls into the right side of the title bar. 
 
 {% tabs %}
 
@@ -1149,7 +1149,7 @@ The `HeaderItemsSource` property of the RibbonWindow allows you to bind a collec
 
 ### Setting HeaderItemTemplate
 
-The RibbonWindow allows you to customize the visual appearance of the custom items stored in the `HeaderItemsSource` using `HeaderItemTemplate` property.
+The RibbonWindow allows you to customize the visual appearance of the custom items stored in the [`HeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItemsSource) using [`HeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItemTemplate) property.
 
 {% tabs %}
 
@@ -1207,7 +1207,7 @@ The RibbonWindow allows you to customize the visual appearance of the custom ite
 
 ### Setting HeaderItemTemplateSelector
 
-The RibbonWindow allows you to customize the visual appearance of each item with different templates based on specific constraints by using the `HeaderItemTemplateSelector`.
+The RibbonWindow allows you to customize the visual appearance of each item with different templates based on specific constraints by using the [`HeaderItemTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonWindow.html#Syncfusion_Windows_Tools_Controls_RibbonWindow_HeaderItemTemplateSelector).
 
 {% tabs %}
 
