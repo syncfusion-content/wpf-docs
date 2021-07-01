@@ -38,6 +38,10 @@ sfDiagram.Save(str);
 {% endhighlight %}
 {% endtabs %}
 
+### How to save the diagram changes automatically?
+
+`HasChanges` property of diagram control is used to notify that the diagram has any unsaved changes from last save. This property tracks all changes that are done on the diagram page, either programmatically or mannual. It will promote a save option when you are creating new page or loading a existing diagram or close the currently working diagram page with out save.
+
 ## Load
 
 On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
