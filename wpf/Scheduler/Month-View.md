@@ -27,7 +27,7 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view ShowAgendaView](Month-View_Images/showAgendaView.png)
+![WPF Scheduler month view ShowAgendaView](Month-View_Images/wpf-scheduler-agenda-view.png)
 
 >**NOTE**
 * An agenda view displays text as **No Selected Date** until a date is selected.
@@ -55,7 +55,7 @@ this.Schedule.MonthViewSettings.AgendaViewHeight = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view AgendaViewHeight](Month-View_Images/AgendaViewHeight.png)
+![WPF Scheduler month view AgendaViewHeight](Month-View_Images/wpf-scheduler-agenda-view-height.png)
 
 ## Appointment display mode
 Handle the Scheduler month view appointment display by using the [AppointmentDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode) property of `MonthViewSettings`. By default, the `AppointmentDisplayMode` is set to `Appointment`. By using the `AppointmentDisplayMode`, set the month view appointments display as follows.
@@ -78,7 +78,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view AppointmentDisplayMode](Month-View_Images/AppointmentDisplayMode.png)
+![WPF Scheduler month view AppointmentDisplayMode](Month-View_Images/wpf-scheduler-appointment-display-mode.png)
 
 ## Appointment display count
 Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, single appointment will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
@@ -103,7 +103,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 N> 
 * By clicking more option, the scheduler navigates to the day view.
 
-![WPF Scheduler month view AppointmentDisplayCount](Month-View_Images/AppointmentDisplayCount.png)
+![WPF Scheduler month view AppointmentDisplayCount](Month-View_Images/wpf-scheduler-appointment-display-count.png)
 
 ## Month navigation direction
 The month view of a Scheduler can be navigated in both horizontal and vertical directions. Change the direction of the navigation using the [MonthNavigationDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthNavigationDirection) property of `MonthViewSettings`. By default, the month navigation direction is set to `Horizontal`.
@@ -123,7 +123,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = MonthNavigationDirect
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view MonthNavigationDirection](Month-View_Images/MonthNavigationDirection.png)
+![WPF Scheduler month view MonthNavigationDirection](Month-View_Images/wpf-scheduler-month-navigation-direction.png)
 
 ## Date format
 Customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_DateFormat) property of `MonthViewSettings`. By default, the month date format is `d`.
@@ -143,7 +143,7 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view DateFormat](Month-View_Images/DateFormat.png)
+![WPF Scheduler month view DateFormat](Month-View_Images/wpf-scheduler-date-formatting.png)
 
 ## View header
 Customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
@@ -166,7 +166,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/ViewHeaderDayFormat.png)
+![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/wpf-scheduler-viewheader-text-formatting.png)
 
 ### View header height
 Customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of `MonthViewSettings`. By default, the `ViewHeaderHeight` is set to 50.
@@ -186,7 +186,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view ViewHeaderHeight](Month-View_Images/ViewHeaderHeight.png)
+![WPF Scheduler month view ViewHeaderHeight](Month-View_Images/wpf-scheduler-viewheader-height.png)
 
 ### View header appearance customization
 Customize the default appearance of the month view header by using the [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of `MonthViewSettings`.
@@ -218,7 +218,7 @@ Customize the default appearance of the month view header by using the [ViewHead
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view ViewHeadeTemplate](Month-View_Images/ViewHeaderTemplate.png)
+![WPF Scheduler month view ViewHeadeTemplate](Month-View_Images/wpf-scheduler-viewheader-template.png)
 
 ## Leading and Trailing days visibility
 Customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` are set to `Visible`.
@@ -241,7 +241,7 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/LeadingAndTrailingDay.png)
+![WPF Scheduler month view Leading and Trailing Days Visibility](Month-View_Images/wpf-scheduler-leading-and-trailing-days-visibility.png)
 
 ## Blackout dates
 Disable the interaction for certain dates in the scheduler month view by adding those specific dates to the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html?tabs=tabid-1#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) collection property of the `SfScheduler.` Using this, allocate or restrict specific dates for the predefined events.
@@ -266,7 +266,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view BlackoutDates](Month-View_Images/BlackoutDates.png)
+![WPF Scheduler month view BlackoutDates](Month-View_Images/wpf-scheduler-blackoutdates.png)
 
 ### Customize blackout dates appearance 
  Customize the blacked out dates (trailing, leading, normal days, and current date) by using the setting style.
@@ -298,7 +298,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view BlackoutDatesCustomization](Month-View_Images/BlackoutDatesCustomization.png)
+![WPF Scheduler month view BlackoutDatesCustomization](Month-View_Images/wpf-scheduler-blackoutdates-appearance-customization.png)
 
 ## Show week number
 Display the week number of a year in the scheduler month view by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowWeekNumber) property of `MonthViewSettings` to `true`. By default, it is set to `false`.
@@ -318,7 +318,7 @@ this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view ShowWeekNumber](Month-View_Images/ShowWeekNumber.png)
+![WPF Scheduler month view ShowWeekNumber](Month-View_Images/wpf-scheduler-showweeknumber.png)
 
 ## Customize week number template
 Customize the default appearance of a week number template in the month view by using the [WeekNumberTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_WeekNumberTemplate) property of `MonthViewSettings`.
@@ -345,7 +345,7 @@ Customize the default appearance of a week number template in the month view by 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view WeekNumberTemplate](Month-View_Images/WeekNumberTemplate.png)
+![WPF Scheduler month view WeekNumberTemplate](Month-View_Images/wpf-scheduler-weeknumber-template.png)
 
 ## Customize month cell appearance 
 
@@ -371,7 +371,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view MonthCellTemplate](Month-View_Images/MonthCellTemplate.png)
+![WPF Scheduler month view MonthCellTemplate](Month-View_Images/wpf-scheduler-monthcell-template.png)
 
 ### Using the DataTemplateSelector 
 Customize the default appearance of the month cell by using the [MonthCellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplateSelector) property of `MonthViewSettings`.
@@ -430,7 +430,7 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view MonthCellTemplateSelector](Month-View_Images/MonthCellTemplateSelector.png)
+![WPF Scheduler month view MonthCellTemplateSelector](Month-View_Images/wpf-scheduler-monthcell-template-selector.png)
 
 ## Customize month view appointments
 
@@ -460,7 +460,7 @@ Customize the default appearance of the month cell appointment by using the [App
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view AppointmentTemplate](Month-View_Images/AppointmentTemplate.png)
+![WPF Scheduler month view AppointmentTemplate](Month-View_Images/wpf-scheduler-appointment-template.png)
 
 ### Using the DataTemplateSelector
 Customize the default appearance of the month view appointments by using the [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) property of `MonthViewSettings`.
@@ -518,10 +518,10 @@ public class MonthViewAppointmentTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler month view AppointmentTemplateSelector](Month-View_Images/AppointmentTemplateSelector.png)
+![WPF Scheduler month view AppointmentTemplateSelector](Month-View_Images/wpf-scheduler-appointment-template-selector.png)
 
 ## Customize more appointments indicator in month cell
-You can customize the default appearance of more appointments indicator in a month cell by using the `MoreAppointmentsIndicatorTemplate` property of the `MonthViewSettings.`
+You can customize the default appearance of more appointments indicator in a month cell by using the [MoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MoreAppointmentsIndicatorTemplate) property of the `MonthViewSettings.`
 
 {% tabs %}
 {% highlight xaml %}
