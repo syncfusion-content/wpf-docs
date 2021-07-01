@@ -40,7 +40,7 @@ sfDiagram.Save(str);
 
 ### How to save the diagram changes automatically?
 
-`HasChanges` property of diagram control is used to notify that the diagram has any unsaved changes from last save. This property tracks all changes that are done on the diagram page, either programmatically or mannual. It will promote a save option when you are creating new page or loading a existing diagram or close the currently working diagram page with out save.
+`HasChanges` property of diagram control is used to notify that the diagram has any unsaved changes from last save. This property tracks all changes that are done on the diagram page, either programmatically or manual. It will promote a save option when you are creating new page or loading a existing diagram or close the currently working diagram page with out save.
 
 ## Load
 
