@@ -18,13 +18,24 @@ The required data format can be chosen from the [AnnotationDataFormat](https://h
 
 ## Exporting annotations
 
-The ExportAnnotations method exports the annotations added in the document to a file or stream in specified file format. The annotation data format should be given as an arguments.
+### Exporting annotations from file
+
+The [ExportAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAnnotations_System_String_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) method exports the annotations added in the document to a file in specified file format. The annotation data format should be given as an arguments.
 
 {% tabs %}
 {% highlight C# %}
 //Export annotations to "fdf" data format to file 
 pdfViewer.ExportAnnotations("Annotation.fdf", AnnotationDataFormat.Fdf);
 
+{% endhighlight %}
+{% endtabs %}
+
+### Exporting annotations from stream
+
+The [ExportAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAnnotations_System_IO_Stream_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) method also exports the annotations added in the document to a stream in specified file format. The annotation data format should be given as an arguments.
+
+{% tabs %}
+{% highlight C# %}
 //Export annotations to "fdf" data format to stream
 Stream stream = new MemoryStream();
 pdfViewer.ExportAnnotations(stream, AnnotationDataFormat.Fdf);
@@ -34,15 +45,27 @@ pdfViewer.ExportAnnotations(stream, AnnotationDataFormat.Fdf);
 
 ## Importing annotations
 
-The ImportAnnotations method imports the annotations from the file or file stream of a specified type and fills the annotations into the loaded PDF document. The full path of file or file stream contains the annotation information. The annotation data format should be given as the arguments.
+### Importing annotations from file
+
+The [ImportAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ImportAnnotations_System_String_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) method imports the annotations from the file of a specified type and fills the annotations into the loaded PDF document. The full path of file contains the annotation information. The annotation data format should be given as the arguments.
 
 {% tabs %}
 {% highlight C# %}
 //Import annotations to "fdf " data format
 pdfViewer.ImportAnnotations("Annotation.fdf", AnnotationDataFormat.Fdf);
 
-//Export annotations to "fdf" data format to stream
-pdfViewer.ImportAnnotations (stream, AnnotationDataFormat.Fdf);
+{% endhighlight %}
+{% endtabs %}
+
+### Importing annotations from stream
+
+The [ImportAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ImportAnnotations_System_IO_Stream_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) method imports the annotations from the file stream of a specified type and fills the annotations into the loaded PDF document. The file stream contains the annotation information. The annotation data format should be given as the arguments.
+
+{% tabs %}
+{% highlight C# %}
+//Import annotations to "fdf" data format to stream
+FileStream stream = File.OpenRead("Annotation.fdf");
+pdfViewer.ImportAnnotations(stream, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
