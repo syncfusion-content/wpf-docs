@@ -23,11 +23,11 @@ The ExportAnnotations method exports the annotations added in the document to a 
 {% tabs %}
 {% highlight C# %}
 //Export annotations to "fdf" data format to file 
-pdfViewer.ExportAnnotations("Annotation.fdf ", AnnotationDataFormat.fdf);
+pdfViewer.ExportAnnotations("Annotation.fdf", AnnotationDataFormat.Fdf);
 
 //Export annotations to "fdf" data format to stream
 Stream stream = new MemoryStream();
-pdfViewer.ExportAnnotations(stream, AnnotationDataFormat.fdf);
+pdfViewer.ExportAnnotations(stream, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,10 +39,10 @@ The ImportAnnotations method imports the annotations from the file or file strea
 {% tabs %}
 {% highlight C# %}
 //Import annotations to "fdf " data format
-pdfViewer.ImportAnnotations("Annotation.fdf ", AnnotationDataFormat.fdf);
+pdfViewer.ImportAnnotations("Annotation.fdf", AnnotationDataFormat.Fdf);
 
 //Export annotations to "fdf" data format to stream
-pdfViewer.ImportAnnotations (stream, AnnotationDataFormat.fdf);
+pdfViewer.ImportAnnotations (stream, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
