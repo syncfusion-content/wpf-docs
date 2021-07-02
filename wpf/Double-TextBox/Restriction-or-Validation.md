@@ -62,7 +62,7 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digit
 
-You can change the decimal digits format in the `DoubleTextBox` control using `NumberDecimalDigits` property. You can restrict the decimal digits of the text within maximum and minimum limits in `DoubleTextBox` control using `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+You can change the format of decimal digits in the `DoubleTextBox` control using `NumberDecimalDigits` property. You can restrict the decimal digits of the text within maximum and minimum limits in `DoubleTextBox` control using `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
 
 N> If the value of `MinimumNumberDecimalDigits` property is greater than the value of `MaximumNumberDecimalDigits` property, the text of `DoubleTextBox` will be updated based on the value of `MinimumNumberDecimalDigits` property.
 
@@ -86,7 +86,7 @@ doubleTextBox.MinimumNumberDecimalDigits = 1;
 
 ![DoubleTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/doubletextbox-wpf-restrict-numberof-decimal-digits.png)
 
-When value of `MinimumNumberDecimalDigits`, `MaximumNumberDecimalDigits` and `NumberDecimalDigits` properties are specified, `NumberDecimalDigits` property takes higher precedence and updates the text of `DoubleTextBox` property. 
+When value of `MinimumNumberDecimalDigits`, `MaximumNumberDecimalDigits` and `NumberDecimalDigits` properties are specified, `NumberDecimalDigits` property takes high precedence and updates the text of `DoubleTextBox` property. 
 
 {% tabs %}
 {% highlight XAML %}
