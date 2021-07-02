@@ -54,11 +54,11 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of CurrencyTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![Validate minimun value of CurrencyTextBox on pressing a key](Restriction-or-Validation_images/wpf-currency-textbox-min-value-validation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of CurrencyTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![Validate maximum value of CurrencyTextBox when keyboard focus is lost](Restriction-or-Validation_images/wpf-currency-textbox-max-value-validation.jpeg)
 
 ## Restrict number of decimal digits
 
@@ -131,4 +131,4 @@ currencyTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![CurrencyTextBox in read-only mode](Restriction-or-Validation_images/wpf-currency-textbox-readonly.jpeg)

@@ -54,11 +54,11 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of DoubleTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![Validate minimun value of DoubleTextBox on pressing a key](Restriction-or-Validation_images/wpf-double-textbox-min-value-validation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of DoubleTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![Validate maximum value of DoubleTextBox when keyboard focus is lost](Restriction-or-Validation_images/wpf-double-textbox-max-value-validation.jpeg)
 
 ## Restrict number of decimal digit
 
@@ -131,4 +131,4 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![DoubleTextBox in read-only mode](Restriction-or-Validation_images/wpf-double-textbox-read-only.jpeg)
