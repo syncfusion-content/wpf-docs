@@ -30,4 +30,4 @@ Text wrapping refers to how images are fit with surrounding text in a document. 
 ## Positioning the image
 Starting from v19.1.0.x, RichTextBox preserves the position properties of the image and displays the image based on position properties. It does not support modifying the position properties. Whereas the image will be automatically moved along with text edited if it is positioned relative to the line or paragraph.
 
-N> At present, the image with text wrapping style – `In-Line with Text` can only be dragged and dropped anywhere in the document.
+N> At present, the image with text wrapping style `In-Line with Text` can only be dragged and dropped anywhere in the document.

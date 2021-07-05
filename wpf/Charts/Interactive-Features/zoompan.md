@@ -417,7 +417,7 @@ chart.Behaviors.Add(zooming);
 
 The following image depicts the default view of the zooming toolbar.
 
-![Zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![Zooming toolbar in WPF Chart](Interactive-Features_images/zooming_toolbar.png)
 
 
 **Positioning** **the** **zooming** **toolbar**
@@ -457,7 +457,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Positioning the zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
+![Positioning the zooming toolbar in WPF Chart](Interactive-Features_images/positioning_zooming_toolbar.png)
 
 
 **Customization** **of** **Zooming** **Toolbar**
@@ -476,11 +476,11 @@ Zooming Toolbar can be customized using the following APIs:
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItemHeight="15" 
+<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItemHeight="20" 
 
-ToolBarItemWidth="15" ToolBarBackground="Black" 
+ToolBarItemWidth="20" ToolBarBackground="AliceBlue" 
 
-ToolBarItems="All" ToolBarItemMargin="10">                                              
+ToolBarItems="All" ToolBarItemMargin="2">                                              
 
 </syncfusion:ChartZoomPanBehavior>
 
@@ -495,13 +495,13 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 
     EnableZoomingToolBar = true,
 
-    ToolBarBackground = new SolidColorBrush(Colors.Black),
+    ToolBarBackground = new SolidColorBrush(Colors.AliceBlue),
 
-    ToolBarItemHeight = 15,
+    ToolBarItemHeight = 20,
 
-    ToolBarItemWidth = 15,
+    ToolBarItemWidth = 20,
 
-    ToolBarItemMargin = new Thickness(10),
+    ToolBarItemMargin = new Thickness(2),
 
     ToolBarItems = ZoomToolBarItems.All
 
@@ -513,7 +513,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Customization of zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img31.jpeg)
+![Customization of zooming toolbar in WPF Chart](Interactive-Features_images/customization_zooming_toolbar.png)
 
 
 **Orientation** **of** **Zooming** **Toolbar**
@@ -555,7 +555,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Orientation of zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img32.jpeg)
+![Orientation of zooming toolbar in WPF Chart](Interactive-Features_images/toolbar_orientation.png)
 
 
 ## Panning the ChartArea
