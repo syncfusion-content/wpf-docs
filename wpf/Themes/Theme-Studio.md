@@ -73,7 +73,7 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <ul>
 <li>FluentLight</li>
 <li>FluentDark</li>
-<ul>
+</ul>
 </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <li>MaterialDark</li>
 <li>MaterialLightBlue</li>
 <li>MaterialDarkBlue</li>
-<ul>
+</ul>
 </td>
 </tr>
 </table>
