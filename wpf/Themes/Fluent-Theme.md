@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Fluent Theme in WPF Themes control | Syncfusion
-description: Learn here all about Fluent Theme support in Syncfusion WPF Themes (Themes and Appearance) control and more.
+title: WPF Fluent Theme | Fluent Light & Dark Themes for WPF | Syncfusion
+description: Learn how to apply fluent theme for WPF Controls and Syncfusion Controls. Fluent Light and Fluent Dark themes support along with reveal animations.
 platform: wpf
 control: Themes
 documentation: ug
 ---
 
-# Fluent Theme in WPF Themes (Themes and Appearance)
+# Getting Started with WPF Fluent Theme
 
-[Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual) and acrylic effect for Windows in WPF application. The below theme variants are supported:
+[Fluent Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html) provides an elegant UI design with reveal animation, [high visibility keyboard visual](https://help.syncfusion.com/wpf/themes/keyboard-focus-visual) and acrylic effect for Windows in WPF application. Below theme variants are supported,
 
 * Fluent Light Theme
 * Fluent Dark Theme
@@ -96,7 +96,7 @@ N> The default value is `HoverEffect.BackgroundAndBorder`.
 
 The reveal animation when pressed using mouse/touch on controls can be enabled/disabled using [PressedEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_PressedEffectMode) property.
 
-The [PressedEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.PressedEffect.html) enum has the following values:
+The [PressedEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.PressedEffect.html) enum has the following values
 
 * `Glow` - The glow animation effect will be applied when pressed using mouse/touch.
 * `Reveal` - The reveal animation effect will be applied when pressed using mouse/touch.

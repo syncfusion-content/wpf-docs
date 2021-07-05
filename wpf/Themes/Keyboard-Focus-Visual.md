@@ -7,7 +7,7 @@ control: Themes
 documentation: ug
 ---
 
-# Keyboard Focus Visual in WPF Themes (Themes and Appearance)
+# Getting Started with Keyboard Focus Visual for WPF Controls
 
 The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply various keyboard focus visual styles for both Syncfusion and framework controls using [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
 
