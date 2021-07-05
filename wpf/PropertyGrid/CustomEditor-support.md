@@ -349,7 +349,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Assigning a Custom Editor by the editor type
 
-By default, when we use the `CustomEditor.Editor` to target multiple properties in `PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the editor for multiple properties, use `CustomEditor.EditorType`. Dedicated custom editors will be created for each property in `PropertyGrid` when `CustomEditor.EditorType` is used. The default value of the `EditorType` property is **null**. 
+By default, when we use the `CustomEditor.Editor` to target multiple properties in `PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the custom editor for each property, use `CustomEditor.EditorType`. The default value of the `EditorType` property is **null**. 
 
 You can set the value for `EditorType` property when custom editor is initialized in `ViewModel` class as shown below.
 

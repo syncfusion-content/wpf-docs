@@ -11,8 +11,8 @@ documentation: ug
 
 SfTreeGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
-`SfTreeGrid.GridLinesVisibility`: To set the border lines for the cells other than header and stacked header cells.
-`SfTreeGrid.HeaderLinesVisibility`: To set the border lines only for header and stacked header cells.
+[SfTreeGrid.GridLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridLinesVisibility): To set the border lines for the cells other than header and stacked header cells.
+[SfTreeGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderLinesVisibility): To set the border lines only for header and stacked header cells.
 
 The following are the list of options available to customize grid lines visibility,
 
@@ -25,7 +25,7 @@ The following are the list of options available to customize grid lines visibili
 
 ### Both
 
-The `GridLinesVisibility.Both` displays the TreeGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grid_GridLinesVisibility_Both) displays the TreeGrid with both horizontal and vertical grid lines. By default GridLinesVisibility value set as Both.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Both;
 
 ### Horizontal
 
-The `GridLinesVisibility.Horizontal` displays the TreeGrid with horizontal grid lines only.
+The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grid_GridLinesVisibility_Horizontal) displays the TreeGrid with horizontal grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,7 +73,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Horizontal;
 
 ### Vertical
 
-The `GridLinesVisibility.Vertical` displays the TreeGrid with vertical grid lines only.
+The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grid_GridLinesVisibility_Vertical) displays the TreeGrid with vertical grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,7 +96,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.Vertical;
 ![Vertical GridLinesVisibility in WPF TreeGrid](GridLines_images/GridLines_image3.png)
 
 ### None
-`GridLinesVisibility.None` displays the TreeGrid without grid lines.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grid_GridLinesVisibility_None) displays the TreeGrid without grid lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -120,7 +120,7 @@ this.sfTreeGrid.GridLinesVisibility = GridLinesVisibility.None;
 
 ## Header rows
 
-You can customize the TreeGrid header lines visibility by using the `SfTreeGrid.HeaderLinesVisibility` property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
+You can customize the TreeGrid header lines visibility by using the [SfTreeGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderLinesVisibility) property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
 
 {% tabs %}
 {% highlight xaml %}
