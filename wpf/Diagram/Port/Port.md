@@ -516,15 +516,11 @@ NodePortViewModel port = new NodePortViewModel()
 
 ## Port hovering effect
 
-When establishing a new connection or modifying the endpoint of existing connection, animation will be shown over the connecting objects. `PortHoverEffect` property of `Sfdiagram` class allows you to change the animation type.
-
-It includes the following options:
+When establishing a new connection or modifying the endpoint of existing connection, animation will be shown over the connecting objects. And `PortHoverEffect` property of `SfDiagram` class allows you to change the animation effect. The default effect is Ripple.
 
 * Ripple: Specifies the water ripple circles type animation effect for connection.
 * Shrink: Specifies the plus symbol type animation effect for connection.
 * None: Specifies no connection animation effect.
-
-The default effect is Ripple.
 
 {% tabs %}
 {% highlight xaml %}
