@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with WPF Theme Studio | WPF | Syncfusion
-description: Learn all about how to create customized themes for Syncfusion WPF Controls and integrate it into the WPF Application. 
+description: Learn how to create customized themes for Syncfusion WPF Controls and integrate to your WPF Application.
 platform: WPF
 control: ThemeStudio
 documentation: ug
 ---
 
-# Theme Studio in WPF Themes (Themes and Appearance)
+# Getting Started with WPF Theme Studio
 
 The Theme Studio helps users to transform their visual presentation into a new theme in minutes. End users can select an appropriate base theme, change its primary color, preview and export it as a theme project, and utilize it in their applications for a rich user interface experience.
 

@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Touch Support in WPF Themes (Themes and Appearance)
+# Touch Support in Syncfusion WPF Controls
 
 ## Size Mode
 
