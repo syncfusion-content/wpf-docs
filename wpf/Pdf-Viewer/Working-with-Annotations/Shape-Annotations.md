@@ -454,12 +454,12 @@ The following image illustrates the change in the opacity of the included rectan
 
 ##### Border Styles
 
-PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
+PDF viewer allows the users to change the annotation border style. Currently, it provides support for following border style. 
 
 * Cloudy
 * Solid
 
-By default, annotation border style will be solid.
+By default, the annotation border style will be solid.
 
 ##### Changing the border style from UI
 
@@ -475,7 +475,7 @@ The following image illustrates the change of thickness in the selected rectangl
 
 ##### Changing the border style programmatically
 
-The rectangle annotation can be customized at the time of inclusion. The following code shows how to set default border style of the included rectangle annotation by using BorderEffect property.
+The rectangle annotation can be customized at the time of inclusion. The following code shows how to set the default border style of the included rectangle annotation by using the [BorderEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerRectangleSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerRectangleSettings_BorderEffect) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -1296,7 +1296,7 @@ The following image illustrates the change of border style in the selected polyg
 
 ##### Changing the border style programmatically
 
-The polygon annotation can be customized at the time of inclusion. The following code shows how to a set default border style of the included polygon annotation by using BorderEffect property.
+The polygon annotation can be customized at the time of inclusion. The following code shows how to set the default border style of the included polygon annotation by using the BorderEffect property.
 
 {% tabs %}
 {% highlight C# %}
