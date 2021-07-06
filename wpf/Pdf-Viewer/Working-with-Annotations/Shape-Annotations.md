@@ -467,11 +467,11 @@ The border style of the selected rectangle annotation will be displayed in the c
 
 The following image illustrates how to change the border style of the rectangle annotation.
 
-![Before applying rectangle annotation border style](Annotation-images\Rectangle-Annotation-11.png)
+![WPF PDFViewer Before applying border style](Annotation-images\Rectangle-Annotation-11.png)
 
 The following image illustrates the change of thickness in the selected rectangle annotation.
 
-![After applying rectangle annotation border style](Annotation-images\Rectangle-Annotation-12.png)
+![WPF PDFViewer After applying border style](Annotation-images\Rectangle-Annotation-12.png)
 
 ##### Changing the border style programmatically
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select and Modify annotations using WPF PDF Viewer | Syncfusion
+title: Select and Modify annotations programmatically using WPF PDF Viewer | Syncfusion
 description: Learn about Select and Modify annotations programmatically support in WPF PDF Viewer.
 platform: wpf
 control: PDF Viewer
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Select an annotation
 
-### Select an annotation with its name 
+### Select an annotation in the PDF file
 
 PDF Viewer allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_) method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
 
@@ -21,7 +21,7 @@ The following code snippet explains how to select ink annotation and similarly, 
 {% highlight C# %}
 
 //Selecting ink annotation with annotation’s name 
-private void SelectAnnotation1()
+private void SelectAnnotation()
 { 
     bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName);
 }
@@ -29,7 +29,7 @@ private void SelectAnnotation1()
 {% endhighlight %}
 {% endtabs %}
 
-### Select annotations at specific pages 
+### Select an annotations at specific page
 
 PDF Viewer also allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) method with page number overload. The annotation’s name and its page number should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
 
