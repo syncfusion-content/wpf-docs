@@ -11,20 +11,14 @@ documentation: ug
 
 ## Select an annotation
 
-PDF Viewer allows the users to select the annotation programmatically using SelectAnnotation method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
+### Select an annotation with the annotation's name 
 
-N> For better performance, we can use the method `SelectAnnotation` with page number overload.
+PDF Viewer allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_) method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
 
-The following code snippet explains how to select ink annotation and similarly we can implement for all other annotation.
+The following code snippet explains how to select ink annotation and similarly, we can implement it for all other annotation.
 
 {% tabs %}
 {% highlight C# %}
-
-//Selecting ink annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
-{ 
-    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1);
-}
 
 //Selecting ink annotation with annotation’s name 
 private void SelectAnnotation1(object sender, RoutedEventArgs e)
@@ -35,12 +29,32 @@ private void SelectAnnotation1(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+### Select an annotation with the annotation's name and page number 
+
+PDF Viewer also allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) method with page number overload. The annotation’s name and its page number should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
+
+N> For better performance, we can use the method [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) with page number overload.
+
+The following code snippet explains how to select ink annotation with page number overload and similarly, we can implement it for all other annotation.
+
+{% tabs %}
+{% highlight C# %}
+
+//Selecting ink annotation with annotation’s name and page number
+private void SelectAnnotation(object sender, RoutedEventArgs e)
+{ 
+    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ### How to obtain the name of an annotation
 
-Annotation’s name can be obtained either for newly added annotation or the annotation which was already exist. In the following sections, the ink annotation was explained brevity and similarly we can obtain names for all other annotations.
+Annotation’s name can be obtained either for newly added annotation or the annotation which already exist. In the following sections, the ink annotation was explained brevity and similarly, we can obtain names for all other annotations.
 
 #### Getting annotation’s name while adding annotation
-Added annotation’s name can be obtained from respective annotation changed event. The following code snippet explains how to get annotation’s name while adding the annotation in the document.
+Added annotation’s name can be obtained from respective annotation changed event. The following code snippet explains how to get the annotation’s name while adding the annotation to the document.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +74,7 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 #### Getting annotation’s name for existing annotation
 
-Existing annotation’s name can be obtained from [LoadedDocument]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument). The following code snippet explains how to get existing annotation’s name. 
+The existing annotation’s name can be obtained from [LoadedDocument]( https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_LoadedDocument). The following code snippet explains how to get the existing annotation’s name. 
 
 {% tabs %}
 {% highlight C# %}
