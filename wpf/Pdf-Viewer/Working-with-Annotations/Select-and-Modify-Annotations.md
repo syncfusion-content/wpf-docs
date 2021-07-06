@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select and Modify annotations programmatically using WPF PDF Viewer | Syncfusion
-description: Learn about Select and Modify annotations programmatically support in WPF PDF Viewer.
+description: Learn about Select and Modify annotations programmatically support in WPF Pdf Viewer, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
