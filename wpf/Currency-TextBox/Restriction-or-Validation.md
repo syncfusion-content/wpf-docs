@@ -62,7 +62,7 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digits
 
-You can format the decimal digits in the `CurrencyTextBox` control using `CurrencyDecimalDigits` property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using `MinimumCurrencyDecimalDigits` and `MaximumCurrencyDecimalDigits` properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
+You can format the decimal digits in the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control using [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalDigits) property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using [MinimumCurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_MinimumCurrencyDecimalDigits) and [MaximumCurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_MaximumCurrencyDecimalDigits) properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
 
 N> If the value of `MinimumCurrencyDecimalDigits` property is greater than the value of `MaximumCurrencyDecimalDigits` property, the text of `CurrencyTextBox` will be updated based on value of `MinimumCurrencyDecimalDigits` property.
 
