@@ -11,7 +11,7 @@ documentation: ug
 
 ## Select an annotation
 
-PDF Viewer allows the users to select the annotation programmatically. This functionality returns true, if any annotation is found to be selected. Otherwise, it returns false.
+PDF Viewer allows the users to select the annotation programmatically without user interaction. This functionality returns true, if any annotation is found to be selected. Otherwise, it returns false.
 
 ### Select an annotation in the PDF file
 

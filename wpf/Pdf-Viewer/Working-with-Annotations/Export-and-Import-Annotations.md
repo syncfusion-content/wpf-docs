@@ -18,7 +18,7 @@ The required data format can be chosen from the [AnnotationDataFormat](https://h
 
 ## Exporting annotations
 
-Export information about annotations in files/stream in FDF and XFDF formats.
+Export information about annotations to files/stream in FDF and XFDF formats.
 
 ### Exporting annotations from file
 
