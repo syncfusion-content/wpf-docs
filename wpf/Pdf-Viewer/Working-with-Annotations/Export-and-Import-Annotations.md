@@ -18,6 +18,8 @@ The required data format can be chosen from the [AnnotationDataFormat](https://h
 
 ## Exporting annotations
 
+Export information about annotations to files/stream in FDF and XFDF formats.
+
 ### Exporting annotations from file
 
 The [ExportAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ExportAnnotations_System_String_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) method exports the annotations added in the document to a file in a specified file format. The annotation data format should be given as an argument.
@@ -44,6 +46,8 @@ pdfViewer.ExportAnnotations(stream, AnnotationDataFormat.Fdf);
 {% endtabs %}
 
 ## Importing annotations
+
+Import information about annotations from files/stream in FDF and XFDF formats.
 
 ### Importing annotations from file
 
