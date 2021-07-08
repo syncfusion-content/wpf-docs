@@ -62,7 +62,7 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digit
 
-You can format the decimal digits in the `DoubleTextBox` control using `NumberDecimalDigits` property. You can restrict the decimal digits of the text within maximum and minimum limits in `DoubleTextBox` control using `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+You can format the decimal digits in the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control using [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_NumberDecimalDigits) property. You can restrict the decimal digits of the text within maximum and minimum limits in `DoubleTextBox` control using [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MinimumNumberDecimalDigits) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DoubleTextBox.html#Syncfusion_Windows_Shared_DoubleTextBox_MaximumNumberDecimalDigits) properties. The default value of `MinimumNumberDecimalDigits`,`MaximumNumberDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
 
 N> If the value of `MinimumNumberDecimalDigits` property is greater than the value of `MaximumNumberDecimalDigits` property, the text of `DoubleTextBox` will be updated based on the value of `MinimumNumberDecimalDigits` property.
 

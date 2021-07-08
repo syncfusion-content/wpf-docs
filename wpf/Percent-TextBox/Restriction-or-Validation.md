@@ -63,7 +63,7 @@ percentTextBox.MaxValueOnExceedMaxDigit = true;
 
 ## Restrict number of decimal digit
 
-You can format the decimal digits in the `PercentTextBox` control using `PercentDecimalDigits` property. You can restrict the decimal digits of text within maximum and minimum limits in `PercentTextBox` control using `MinPercentDecimalDigits` and `MaxPercentDecimalDigits` properties. The default value of `MinPercentDecimalDigits`,`MaxPercentDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+You can format the decimal digits in the [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control using [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits) property. You can restrict the decimal digits of text within maximum and minimum limits in `PercentTextBox` control using [MinPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MinPercentDecimalDigits) and [MaxPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MaxPercentDecimalDigits) properties. The default value of `MinPercentDecimalDigits`,`MaxPercentDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
 
 N> If the value of `MinPercentDecimalDigits` property is greater than value of the `MaxPercentDecimalDigits` property, the text of `PercentTextBox` will be updated based on value of `MinPercentDecimalDigits` property.
 

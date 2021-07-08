@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select and Modify annotations in WPF Pdf Viewer control | Syncfusion
-description: Learn about Select and Modify annotations programmatically support in WPF Pdf Viewer, its elements and more.
+title: Select and Modify annotations using WPF PDF Viewer | Syncfusion
+description: Learn about Selecting and Modifying the annotation's properties programmatically using WPF Pdf Viewer.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -11,17 +11,19 @@ documentation: ug
 
 ## Select an annotation
 
-### Select an annotation with the annotation's name 
+PDF Viewer allows the users to select the annotation programmatically without user interaction. This functionality returns true, if any annotation is found to be selected. Otherwise, it returns false.
 
-PDF Viewer allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_) method. The annotation’s name should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
+### Select an annotation in the PDF file
 
-The following code snippet explains how to select ink annotation and similarly, we can implement it for all other annotation.
+PDF Viewer allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_) method. The annotation’s name should pass as a parameter that needs to be selected.  
+
+The following code snippet explains how to select an ink annotation using the annotation name.
 
 {% tabs %}
 {% highlight C# %}
 
 //Selecting ink annotation with annotation’s name 
-private void SelectAnnotation1(object sender, RoutedEventArgs e)
+private void SelectAnnotation()
 { 
     bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName);
 }
@@ -29,25 +31,29 @@ private void SelectAnnotation1(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Select an annotation with the annotation's name and page number 
+Similarly, we can implement it for all other annotations.
 
-PDF Viewer also allows the users to select the annotation programmatically using [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) method with page number overload. The annotation’s name and its page number should pass as a parameter which needs to be selected. This method returns true, if any annotation is found to be selected. Otherwise, it returns false. 
+### Select an annotations at specific page
+
+PDF Viewer also allows the users to select the annotation programmatically using overload [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) method with specified the page number on which the annotation is located. The annotation’s name and its page number should pass as a parameter that needs to be selected. 
 
 N> For better performance, we can use the method [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_) with page number overload.
 
-The following code snippet explains how to select ink annotation with page number overload and similarly, we can implement it for all other annotation.
+The following code snippet explains how to select an ink annotation on the first page of the document using the annotation name.
 
 {% tabs %}
 {% highlight C# %}
 
 //Selecting ink annotation with annotation’s name and page number
-private void SelectAnnotation(object sender, RoutedEventArgs e)
+private void SelectAnnotation()
 { 
     bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1);
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+Similarly, we can implement it for all other annotations.
 
 ### How to obtain the name of an annotation
 

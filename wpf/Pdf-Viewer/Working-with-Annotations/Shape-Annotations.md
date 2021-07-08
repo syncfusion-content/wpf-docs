@@ -467,11 +467,11 @@ The border style of the selected rectangle annotation will be displayed in the c
 
 The following image illustrates how to change the border style of the rectangle annotation.
 
-![rectangle annotation](Annotation-images\Rectangle-Annotation-11.png)
+![WPF PDFViewer Before applying rectangle annotation border style](Annotation-images\WPF-PDFViewer-Before-applying-rectangle-annotation-border-style.png)
 
 The following image illustrates the change of thickness in the selected rectangle annotation.
 
-![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
+![WPF PDFViewer After applying rectangle annotation border style](Annotation-images\WPF-PDFViewer-After-applying-rectangle-annotation-border-style.png)
 
 ##### Changing the border style programmatically
 
@@ -1288,11 +1288,11 @@ The border style of the selected polygon annotation will be displayed in the com
 
 The following image illustrates how to change the border style of the polygon annotation included.
 
-![Before applying polygon border style](Annotation-images\Polygon-Annotation-13.png)
+![WPF PDFViewer Before applying polygon border style](Annotation-images\WPF-PDFViewer-Before-applying-polygon-border-style.png)
 
 The following image illustrates the change of border style in the selected polygon annotation.
 
-![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
+![WPF PDFViewer After applying polygon border style](Annotation-images\WPF-PDFViewer-After-applying-polygon-border-style.png)
 
 ##### Changing the border style programmatically
 
@@ -1317,7 +1317,7 @@ Using the default toolbar of PDF Viewer, you can directly enable the mode to add
 
 The following image illustrates how to select the cloud shape from the toolbar.
 
-![polygon border style](Annotation-images\Polygon-Annotation-15.png)
+![WPF PDFViewer Cloud shape option in toolbar](Annotation-images\WPF-PDFViewer-Cloud-shape-option-in-toolbar.png)
 
 #### General tab
 
