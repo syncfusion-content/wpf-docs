@@ -42,6 +42,50 @@ sfDiagram.Save(str);
 
 `HasChanges` property of diagram control is used to notify that the diagram has any unsaved changes from last save. This property tracks all changes that are done on the diagram page, either programmatically or manual. It will promote a save option when you are creating new page or loading a existing diagram or close the currently working diagram page with out save.
 
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the stencil-->
+<Syncfusion:SfDiagram x:Name="diagram">
+</Syncfusion:SfDiagram>
+<!--Initialize the stencil-->
+<Button x:Name="SaveButton" Content="Save" Click="SaveButton_Click">
+</Button>
+{% endhighlight %}
+{% highlight C# %}
+//Method to promote save dialouge box when diagram has any unsaved changes.
+private void SaveButton_Click(object sender, RoutedEventArgs e)
+{
+    if (diagram != null && diagram.HasChanges)
+    {
+        MessageBoxResult messageBoxResult = MessageBox.Show(
+                            "Do you want to save Diagram?",
+                            "SfDiagramRibbon",
+                            MessageBoxButton.YesNo);
+        if (messageBoxResult == MessageBoxResult.Yes)
+        {
+            SaveDiagram();
+        }
+    }
+}
+
+//Method to save the diagram.
+private void SaveDiagram()
+{
+    SaveFileDialog dialog = new SaveFileDialog();
+    dialog.Title = "Save XAML";
+    dialog.Filter = "XAML File (*.xaml)|*.xaml";
+    if (dialog.ShowDialog() == true)
+    {
+        File.Delete(dialog.FileName);
+        using (Stream s = File.Open(dialog.FileName, FileMode.OpenOrCreate))
+        {
+            diagram.Save(s);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Load
 
 On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
