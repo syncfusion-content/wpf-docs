@@ -58,8 +58,8 @@ private void SaveButton_Click(object sender, RoutedEventArgs e)
     if (diagram != null && diagram.HasChanges)
     {
         MessageBoxResult messageBoxResult = MessageBox.Show(
-                            "Do you want to save Diagram?",
-                            "SfDiagramRibbon",
+                            "Do you want to save the Diagram?",
+                            "SfDiagram",
                             MessageBoxButton.YesNo);
         if (messageBoxResult == MessageBoxResult.Yes)
         {
