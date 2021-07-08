@@ -41,6 +41,126 @@ The WPF Theme Studio comes with the following set of themes:
 
 * System Theme
 
+## Supported Palettes
+
+The WPF Theme Studio comes with various set of palettes for each theme variant.
+
+<table>
+<tr>
+<th>Theme variant</th>
+<th>Palette list</th>
+<th>Supported themes</th>
+</tr>
+<tr>
+<td>Fluent</td>
+<td>
+<ul>
+<li>PinkRed</li>
+<li>Red</li>
+<li>RedOrange</li>
+<li>Orange</li>
+<li>Green</li>
+<li>GreenCyan</li>
+<li>Cyan</li>
+<li>CyanBlue</li>
+<li>Blue</li>
+<li>BlueMegenta</li>
+<li>Megenta</li>
+<li>MegentaPink</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>FluentLight</li>
+<li>FluentDark</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Office 2019</td>
+<td>
+<ul>
+<li>Red</li>
+<li>Blue</li>
+<li>Green</li>
+<li>RedOrange</li>
+<li>Violet</li>
+<li>DeepGreen</li>
+<li>DeepViolet</li>
+<li>RedBrown</li>
+<li>GreenCyan</li>
+<li>DeepGreenCyan</li>
+<li>LightViolet</li>
+<li>MarinerBlue</li>
+<li>DeepBlue</li>
+<li>LightBlue</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Office2019Colorful</li>
+<li>Office2019Black</li>
+<li>Office2019White</li>
+<li>Office2019DarkGray</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>High Contrast</td>
+<td>
+<ul>
+<li>Red</li>
+<li>Blue</li>
+<li>Green</li>
+<li>RedOrange</li>
+<li>Violet</li>
+<li>DeepGreen</li>
+<li>DeepViolet</li>
+<li>RedBrown</li>
+<li>GreenCyan</li>
+<li>DeepGreenCyan</li>
+<li>LightViolet</li>
+<li>MarinerBlue</li>
+<li>DeepBlue</li>
+<li>LightBlue</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Office2019HighContrast</li>
+<li>Office2019HighContrastWhite</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>
+<ul>
+<li>Red</li>
+<li>Pink</li>
+<li>Purple</li>
+<li>DeepPurple</li>
+<li>Indigo</li>
+<li>Blue</li>
+<li>LightBlue</li>
+<li>Cyan</li>
+<li>Green</li>
+<li>Orange</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>MaterialLight</li>
+<li>MaterialDark</li>
+<li>MaterialLightBlue</li>
+<li>MaterialDarkBlue</li>
+</ul>
+</td>
+</tr>
+</table>
+
+![WPF Theme Studio Palette](ThemeStudio_images/ThemeStudio-Palette.gif)
+
 ## Creating custom theme
 
 ### Customizing theme color from theme studio
