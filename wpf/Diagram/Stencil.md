@@ -1021,9 +1021,11 @@ public class CustomStencil : Stencil
 
 ## Symbol selection
 
+Stencil provides support to select single symbol or multiple symbols at a time that can be drag and drop on the diagram surface.
+
 ### Single selection
 
-Stencil symbols can be selected by clicking on that element. During single click, all previously selected items will be cleared. Selected item can be drop on the diagram area by click and drag it.
+A symbol can be selected by clicking on that symbol. During single click, all previously selected items will be cleared.
 
 ![Symbol single selection](Stencil_images/SymbolSingleSelection.png)
 
@@ -1033,18 +1035,18 @@ Multiple elements can be selected with the following ways,
 
 1. Ctrl+click
 
-While pressing ctrl key and click on any stencil symbol makes a list of symbol items will be selected that symbol in addition to any items that are already selected.
+You can select or unselect multiple symbols by holding down the Ctrl key and clicking each symbol that you want to select or deselect.
 
 2. Rubberband selection
 
-Clicking and dragging on the stencil area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end. All the selected items can be click and drop on the diagram area at a time instead of drag and dropping symbols one by one.
+Clicking and dragging on the stencil area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 ![Rubber band selection](Stencil_images/SymbolRubberbandSelection.gif)
 
 ## Symbol reordering
 
-Diagram control provides support to reordering the stencil symbols within its group elements. By default, symbols reordering will be enabled. Symbol reordering can be disbaled by removing `AllowDragDrop` constraints from 
-[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property.
+Stencil provides support to reorder the symbols within the specfic `SymbolGroup`. And by default, symbols reordering will be enabled. Symbol reordering can be disbaled by removing `AllowDragDrop` constraint from
+[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property of stencil.
 
 {% highlight C# %}
 
@@ -1060,7 +1062,7 @@ stencil.StencilConstraints &= ~StencilConstraints.AllowDragDrop;
 
 ## Symbols Display Mode
 
-Diagram control provides support to display symbol names under its icons into the stencil. By default symbols will be displayed only by its icon. This can be changed by using `SymbolsDisplayMode` property of `Stencil` class.
+Stencil has option to control how the symbols should be displayed. By default, symbols will be displayed only by its icon. This can be changed by using `SymbolsDisplayMode` property of `Stencil` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1087,8 +1089,8 @@ stencil.SymbolsDisplayMode = SymbolsDisplayMode.IconsOnly;
 
 ## Context menu
 
-Diagram provides some default context menu items to ease the execution of some frequently used commands for stencil symbols. Context menu items can be enabled/disabled by adding or removing `ContextMenu` constraints of 
-[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property when right click on any symbols of the stencil.
+Stencil provides some default context menu items to ease the execution of some frequently used commands for stencil symbols. Context menu items can be enabled/disabled by adding or removing `ContextMenu` constraint from
+[StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property.
 
 {% highlight C# %}
 
@@ -1101,6 +1103,25 @@ stencil.StencilConstraints &= ~StencilConstraints.ContextMenu;
 {% endhighlight %}
 
 ![Symbol ContextMenu](Stencil_images/SymbolsContextmenu.png)
+
+## Search Tags
+
+Stencil provides support to add keywords for a symbol that can be used when you search for it.
+
+{% highlight C# %}
+
+// Defining tags to a symbol to make search easier
+var tags = new List() { "Process", "Input" };
+var symbol1 = new SymbolViewModel()
+{
+    Name = "Source",
+    SymbolTemplate = App.Current.Resources["Source"] as DataTemplate,
+    SearchTags = tags
+};
+(stencil.SymbolSource as SymbolCollection).Add(symbol1);
+
+{% endhighlight %}
+
 
 ## Events
 
