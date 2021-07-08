@@ -291,7 +291,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the author and subject of the underline annotation?
+### How to set the author and subject of the underline annotation?
 
 The author and subject fields of the underline annotation can be added for the underline annotation to be added to the PDF document. The following code shows how to set default Author and subject of the included underline annotation in code behind.
 
@@ -421,7 +421,7 @@ The following image shows the strikethrough annotation being included in the PDF
 
  ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-1.png)
 
-## How to set the color of the strikethrough annotation?
+### How to set the color of the strikethrough annotation?
 
 The following code shows how to set default color of the included strikethrough annotation in code behind.
 
