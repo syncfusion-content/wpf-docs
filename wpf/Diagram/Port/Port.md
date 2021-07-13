@@ -516,7 +516,7 @@ NodePortViewModel port = new NodePortViewModel()
 
 ## Port hovering effect
 
-When establishing a new connection or modifying the endpoint of existing connection, animation will be shown over the connecting objects. And `PortHoverEffect` property of `SfDiagram` class allows you to change the animation effect. The default effect is Ripple.
+When establishing a new connection or modifying the start/end points of the existing connector over port, an animation will be shown while hovering on port. This animation is used to indicate that the user is moved the mouse hover the tiny port which helps to start/end the connection to the ports.  The [PortHoverEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html#Syncfusion_UI_Xaml_Diagram_SfDiagram_PortHoverEffect) property of [SfDiagram](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) class allows you to specify the any one of the following animation effect. The default effect is `Ripple`.
 
 * Ripple: Specifies the water ripple circles type animation effect for connection.
 * Shrink: Specifies the plus symbol type animation effect for connection.
@@ -540,7 +540,7 @@ diagram.PortHoverEffect = PortHoverEffect.Ripple;
 |---|---|
 | Ripple |![Ripple aimation](Port_images/RippleAnimation.gif) |
 | Shrink |![shrink diagram](Port_images/ShrinkAnimation.gif) |
-| Node |Connection animation effect does not appeared. |
+| None |Connection animation effect does not appeared. |
 
 ## Events
 
