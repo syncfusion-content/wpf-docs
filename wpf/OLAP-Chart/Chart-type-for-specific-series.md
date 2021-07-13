@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Type for Specific Series in WPF Olap Chart control | Syncfusion
+title: Chart Type for Specific Series in WPF Olap Chart| Syncfusion
 description: Learn about Chart Type for Specific Series support in Syncfusion Essential Studio WPF Olap Chart control and more.
 platform: wpf
 control: OLAP Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing the orientations of GroupBar in Navigation Pane | Syncfusion
+title: Changing the orientations in WPF Navigation Pane| Syncfusion
 description: Learn here all about Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems support in Syncfusion WPF Navigation Pane control and more.
 platform: wpf
 control: Navigation Pane

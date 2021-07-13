@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Linked Manager and Nested Docking in WPF Docking control | Syncfusion
+title: Linked Manager and Nested Docking in WPF Docking| Syncfusion
 description: Learn here all about Linked Manager and Nested Docking support in Syncfusion WPF Docking (DockingManager) control and more.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Linked Manager and Nested Docking in WPF Docking (DockingManager)
+# Linked Manager and Nested Docking in WPF Docking
 
 ## Linked Manager
 
