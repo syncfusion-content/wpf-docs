@@ -16,7 +16,7 @@ This feature allows you to draw a polygon, polyline, or circle on the map. You c
 	
 ## Add shapes using map element collection
 
-You can provide input as a geo points collection to add multiple shapes in a single layer by using the `MapElements` property of shape layer. There are three types of shapes available in map element.
+You can provide input as a geo points collection to add multiple shapes in a single layer by using the [`MapElements`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapElements) property of shape layer. There are three types of shapes available in map element.
 
     1.MapPolygon
     2.MapPolyline
@@ -24,7 +24,7 @@ You can provide input as a geo points collection to add multiple shapes in a sin
 
 ### MapPolygon
 
-You can add polygon shape on map using `MapPolygon` class and provide geo points collection to `Points` property. Polygon shape type is used to defines a group of land, water bodies, and other features with a spatial extent.
+You can add polygon shape on map using [`MapPolygon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapPolygon.html) class and provide geo points collection to `Points` property. Polygon shape type is used to defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ You can add polygon shape on map using `MapPolygon` class and provide geo points
 
 ### MapPolyline
 
-You can add polyline shape on map using `MapPolyline` class and provide geo points collection to `Points`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
+You can add polyline shape on map using [`MapPolyline`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapPolyline.html) class and provide geo points collection to `Points`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,9 +217,9 @@ You can add polyline shape on map using `MapPolyline` class and provide geo poin
 
 ### MapCircle
 
-A circle  has a single geo coordinate value and it can be positioned on map using `Center` property of `MapCircle`. The circles are often used to define features such as oil wells, landmarks, and elevations.
+A circle  has a single geo coordinate value and it can be positioned on map using [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html#Syncfusion_UI_Xaml_Maps_MapCircle_Center) property of [`MapCircle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html). The circles are often used to define features such as oil wells, landmarks, and elevations.
 
-* `Center` - Holds latitude and longitude values that defines the center of the circle.
+* [`Center`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html#Syncfusion_UI_Xaml_Maps_MapCircle_Center) - Holds latitude and longitude values that defines the center of the circle.
 
 {% tabs %}
 {% highlight xaml %}          
@@ -311,10 +311,10 @@ A circle  has a single geo coordinate value and it can be positioned on map usin
 
 ### Customization of map elements
 
-The following properties are used to customize `MapPolygon`, `MapPolyline`, and `MapCircle`.
+The following properties are used to customize [`MapPolygon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapPolygon.html), [`MapPolyline`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapPolyline.html), and [`MapCircle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html).
 
-* `Fill`, `Stroke`, `StrokeThickness` - Used to customize the appearance of the map element's shape UI.
-* `Radius` - Used to customize radius or range of the map circle. This property is available only for `MapCircle`.
+* [`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapElement.html#Syncfusion_UI_Xaml_Maps_MapElement_Fill), [`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapElement.html#Syncfusion_UI_Xaml_Maps_MapElement_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapElement.html#Syncfusion_UI_Xaml_Maps_MapElement_StrokeThickness) - Used to customize the appearance of the map element's shape UI.
+* [`Radius`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html#Syncfusion_UI_Xaml_Maps_MapCircle_Radius) - Used to customize radius or range of the map circle. This property is available only for [`MapCircle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapCircle.html).
 
 {% tabs %}
 {% highlight xaml %}          
