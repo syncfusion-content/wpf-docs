@@ -38,9 +38,34 @@ sfDiagram.Save(str);
 {% endhighlight %}
 {% endtabs %}
 
+## Load
+
+On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
+
+{% tabs %}
+{% highlight C# %}
+
+//Load from saved XAML file
+OpenFileDialog dialog = new OpenFileDialog();
+if (dialog.ShowDialog() == true)
+{
+    using (Stream myStream = dialog.OpenFile())
+    {
+        sfDiagram.Load(myStream);
+    }
+}
+
+//Load from saved memory stream
+str.Position = 0;
+sfDiagram.Load(str);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Has the diagram modified?
 
-`HasChanges` property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
+[HasChanges](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,31 +109,6 @@ private void SaveDiagram()
     }
 }
 {% endhighlight %}
-{% endtabs %}
-
-## Load
-
-On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
-
-{% tabs %}
-{% highlight C# %}
-
-//Load from saved XAML file
-OpenFileDialog dialog = new OpenFileDialog();
-if (dialog.ShowDialog() == true)
-{
-    using (Stream myStream = dialog.OpenFile())
-    {
-        sfDiagram.Load(myStream);
-    }
-}
-
-//Load from saved memory stream
-str.Position = 0;
-sfDiagram.Load(str);
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ## How to serialize custom properties 
