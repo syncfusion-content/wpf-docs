@@ -558,7 +558,7 @@ chart.Legend = new ChartLegend()
 ![WPF Chart Customizing Legends](Styling-and-Customization_images/wpf-chart-customizing-legends.png)
 
 
-If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details
+If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/4846/how-to-add-multiple-legend-items-in-scroll-viewer-of-wpf-chart-sfchart) kb for more details
 ## Customize ToolTip
 
 SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
