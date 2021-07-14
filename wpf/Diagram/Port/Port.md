@@ -514,34 +514,6 @@ NodePortViewModel port = new NodePortViewModel()
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Port-Customization)
 
-## Port hovering effect
-
-When establishing a new connection or modifying the endpoint of existing connection, animation will be shown over the connecting objects. And `PortHoverEffect` property of `SfDiagram` class allows you to change the animation effect. The default effect is Ripple.
-
-* Ripple: Specifies the water ripple circles type animation effect for connection.
-* Shrink: Specifies the plus symbol type animation effect for connection.
-* None: Specifies no connection animation effect.
-
-{% tabs %}
-{% highlight xaml %}
-<!--Initialize the Sfdiagram with port hover effect as ripple-->
-<syncfusion:SfDiagram x:Name="diagram" PortHoverEffect="Ripple">
-</syncfusion:SfDiagram>
-{% endhighlight %}
-{% highlight C# %}
-//Initialize the SfDiagram
-SfDiagram diagram = new SfDiagram();
-//defines the port hover connection effect as ripple.
-diagram.PortHoverEffect = PortHoverEffect.Ripple;
-{% endhighlight %}
-{% endtabs %}
-
-| PortHoverEffect | Output |
-|---|---|
-| Ripple |![Ripple aimation](Port_images/RippleAnimation.gif) |
-| Shrink |![shrink diagram](Port_images/ShrinkAnimation.gif) |
-| Node |Connection animation effect does not appeared. |
-
 ## Events
 
 The `PortChangedEvent` will get invoked when you drag the port.
@@ -564,7 +536,7 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 
 * [How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
-* [How to validate the connection and port visibility (in-port and out-port) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+* [How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
 
 * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
 
