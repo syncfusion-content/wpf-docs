@@ -242,6 +242,11 @@ Target Framework</th><th>
 Solution Project</th></tr>
 <tr>
 <td>
+.Net 5.0</td><td>
+Syncfusion.Themes.MaterialDarkYellow.WPF_NET50.csproj</td>
+</tr>
+<tr>
+<td>
 .Net Framework 4.6</td><td>
 Syncfusion.Themes.MaterialDarkYellow.WPF_2015.csproj</td></tr>
 <tr>
