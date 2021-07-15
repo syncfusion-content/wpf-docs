@@ -147,3 +147,5 @@ public partial class MainWindow: Window {
 Similarly, you can perform 'n' number of sorting in RowPivotsOnly mode by pressing the Ctrl key.
 
 ![Multicolumn sorting in row pivots only mode](Features-in-RowPivotsOnly-images/Multi column sort in RowPivots.png)
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

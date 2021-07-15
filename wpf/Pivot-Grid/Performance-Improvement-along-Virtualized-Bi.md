@@ -128,3 +128,5 @@ To achieve this, after defining the pivot grid control, set the `EnableOnDemandC
 {% endhighlight %}
 
 ![Loads the pivot grid using Index Engine](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
