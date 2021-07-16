@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu in WPF Pivot Grid
 
-The pivot grid supports the context menu option in RowPivotsOnly mode. Following are the available options.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports the context menu option in RowPivotsOnly mode. Following are the available options.
 
 * **Allow Filtering**: Enables or disables filtering in the selected pivot computation column.
 * **Allow Sorting**: Enables or disables sorting in the selected pivot computation column.
@@ -39,3 +39,5 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![Displaying the context menu](Features-in-RowPivotsOnly-images/PivotGrid shows Context menu.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

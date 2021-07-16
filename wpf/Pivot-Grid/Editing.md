@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WPF Pivot Grid
 
-The pivot grid supports editing the value and total cells, and this can be achieved by using the `EnableValueEditing` property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted accordingly.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports editing the value and total cells, and this can be achieved by using the `EnableValueEditing` property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted accordingly.
 
 ## Enable editing for value cells
 
@@ -201,3 +201,5 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![To customize the edited cell values in PivotGrid](Editing-Images/PivotGrid shows edited Custom Editing.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
