@@ -53,6 +53,21 @@ SfChart provides support more customization for symbols in adornments.
 * [`SymbolInterior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior)- used to change the color of symbol.
 * [`SymbolStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke)- used to change the stroke color of symbol.
 * [`SymbolTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate)- used to customize the appearance of symbol.
+* [`Symbol`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) - used to display various types of symbols as adornment.
+
+We have some predefined symbol such as
+
+* Cross	 
+* Diamond
+* Ellipse	
+* Hexagon	
+* HorizontalLine	
+* InvertedTriangle	
+* Pentagon	
+* Plus	
+* Square	
+* Triangle
+* VerticalLine	
 
 {% tabs %}
 
