@@ -1014,6 +1014,8 @@ Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>());
 
 {% endhighlight %}
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [`How to customize the legend Icon based on series appearance in WPF Chart`](https://www.syncfusion.com/kb/11672/how-to-customize-the-legend-icon-based-on-series-appearance-in-wpf-chart)

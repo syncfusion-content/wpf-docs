@@ -420,3 +420,4 @@ chart.Series.Add(columnSeries);
 ![WPF Chart Sorting y-axis in Descending Order](sorting_chart_images/wpf-chart-sorting-linear-y-axis-in-descending-order.png)
 
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

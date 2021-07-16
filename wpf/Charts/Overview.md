@@ -27,3 +27,4 @@ SfChart provides a perfect way to visualize data with a high level of user inter
 * SfChart provides support for rendering multiple series at same time, with options to compare and visualize two different chart series simultaneously.
 * User friendly and provides various options for you to customize chart features like [axis](https://help.syncfusion.com/wpf/sfchart/axis), [labels](https://help.syncfusion.com/wpf/sfchart/adornments), [legends](https://help.syncfusion.com/wpf/sfchart/legend), [series](https://help.syncfusion.com/wpf/charts/seriestypes/series) etc and visualize them accordingly. 
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

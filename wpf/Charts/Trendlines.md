@@ -784,6 +784,8 @@ chart.Series.Add(fastSeries);
 
 ![Customization of Trendlines in WPF Chart](Trendlines_images/wpf-chart-trendline-customization.png)
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [`Chart with average line`](https://www.syncfusion.com/kb/2558/chart-with-average-line)
