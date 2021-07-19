@@ -9,7 +9,7 @@ documentation: ug
 
 # Symbol groups of Stencil in WPF Diagram (SfDiagram)
 
-A set of stencil symbols can be combined together to create a group and many numbers of group can be created. This helps you to look overall stencil symbols into spllitted view and it is easy to find specific or particular shape category into stencil. 
+A set of stencil symbols can be combined together to create a group and many numbers of group can be created. This helps you to look overall stencil symbols into split view and it is easy to find specific or particular shape category into stencil. 
 
 ## Group symbols into a category
 

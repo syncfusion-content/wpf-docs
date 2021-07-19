@@ -29,7 +29,7 @@ Multiple elements can be selected with the following ways,
 
 You can select or unselect multiple symbols by holding down the Ctrl key and clicking each symbol that you want to select or deselect.
 
-2. Rubberband selection
+2. Rubber band selection
 
 Clicking and dragging on the stencil area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
@@ -37,7 +37,7 @@ Clicking and dragging on the stencil area allows to create a rectangular region.
 
 ## Symbol reordering
 
-Stencil provides support to reorder the symbols within the specfic [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html). And by default, symbols reordering will be enabled. Symbol reordering can be disbaled by removing `AllowDragDrop` constraint from
+Stencil provides support to reorder the symbols within the specific [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html). And by default, symbols reordering will be enabled. Symbol reordering can be disabled by removing `AllowDragDrop` constraint from
 [StencilConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.StencilConstraints.html) property of stencil class.
 
 {% highlight C# %}

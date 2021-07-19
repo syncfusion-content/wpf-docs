@@ -209,4 +209,4 @@ stencil.SymbolsDisplayMode = SymbolsDisplayMode.IconsOnly;
 | IconsOnly | Symbols will be displayed only by its icon |![IconsOnly](Stencil_images/IconsOnly.png)|
 | NamesUnderIcons | Symbols will be displayed by its icon under its name |![NamesUnderIcons](Stencil_images/NameUnderIcons.png)|
 
-N> `Name` property value will be disaplyed as tool tip of the symbols when `SymbolsDisplayMode` is IconsOnly.
+N> `Name` property value will be displayed as tool tip of the symbols when `SymbolsDisplayMode` is IconsOnly.
