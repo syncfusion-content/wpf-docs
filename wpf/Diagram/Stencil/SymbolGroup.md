@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbol grouping into stencil categories in WPF Diagram control | Syncfusion
+title: Stencil Symbol grouping in WPF Diagram control | Syncfusion
 description: Learn here all about Port hovering animation effect support in Syncfusion WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram

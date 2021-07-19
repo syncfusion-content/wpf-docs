@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbol fillters of stencil in WPF Diagram control | Syncfusion
-description: Learn here all about symbol filtering support of stencil in Syncfusion WPF Diagram (SfDiagram).
+description: Learn here all about symbol filtering and appearance of symbol filtering support of stencil in Syncfusion WPF Diagram (SfDiagram).
 platform: wpf
 control: SfDiagram
 documentation: ug
