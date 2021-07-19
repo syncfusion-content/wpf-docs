@@ -77,7 +77,7 @@ sfDiagram.Load(str);
 </Button>
 {% endhighlight %}
 {% highlight C# %}
-//Method to promote save dialouge box when diagram has any unsaved changes.
+//Method to promote the save dialouge box when diagram has any unsaved changes.
 private void SaveButton_Click(object sender, RoutedEventArgs e)
 {
     if (diagram != null && diagram.HasChanges)
