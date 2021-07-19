@@ -9,7 +9,7 @@ documentation: ug
 
 # Excel-Like Filtering in WPF Pivot Grid
 
-The pivot grid control provides Excel-like sorting and filtering features applied to a pivot item. You can enable or disable the Excel-like sorting and filtering pop-up in the pivot grid by setting the `AllowMultiFunctionalSortFilter` property of grouping bar in the pivot grid control.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides Excel-like sorting and filtering features applied to a pivot item. You can enable or disable the Excel-like sorting and filtering pop-up in the pivot grid by setting the `AllowMultiFunctionalSortFilter` property of grouping bar in the pivot grid control.
 
 To do so, define the pivot grid control and raise the loaded event for pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value of the `AllowMultiFunctionalSortFilter` property to "true".
 
@@ -123,3 +123,5 @@ _Value Filter window for filtering "Alberta" using its Quantity value "677" in S
 ![PivotGrid with Label Filter or Value Filter applied](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
 
 _PivotGrid with Label Filter or Value Filter applied_
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

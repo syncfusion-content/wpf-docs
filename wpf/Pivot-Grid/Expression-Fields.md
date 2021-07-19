@@ -9,7 +9,7 @@ documentation: ug
 
 # Expression Fields in WPF Pivot Grid
 
-The pivot grid supports adding expression fields and handles other features similar to normal fields. You can add new expression field information by using the `AllowedFields` class in the pivot grid control and you can use the following property to load the allowed fields in the pivot grid:
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports adding expression fields and handles other features similar to normal fields. You can add new expression field information by using the `AllowedFields` class in the pivot grid control and you can use the following property to load the allowed fields in the pivot grid:
 
 * **LoadWithDefaultPropertyFields**: Gets or sets a value indicating whether the pivot grid control loads with default property fields for expression support.
 
@@ -163,3 +163,5 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![Adding the expression fields in PivotGrid](Expression-Field-Images/PivotGrid shows expression fields.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

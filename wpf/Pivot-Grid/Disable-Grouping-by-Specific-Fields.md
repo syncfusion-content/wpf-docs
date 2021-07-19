@@ -9,7 +9,7 @@ documentation: ug
 
 # Prevent Grouping of Specific Pivot Item
 
-The pivot grid control allows preventing the drag and drop of certain pivot items in the pivot schema designer or grouping bar.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control allows preventing the drag and drop of certain pivot items in the pivot schema designer or grouping bar.
 
 **AllowRunTimeGroupByField**
 
@@ -85,3 +85,5 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![To disable the background color of specific grouping bar items](Grouping-Bar-Images/Grouping bar with disabled grouping fields.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.
