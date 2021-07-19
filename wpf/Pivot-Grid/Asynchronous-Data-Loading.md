@@ -9,7 +9,7 @@ documentation: ug
 
 # Asynchronous Data Loading in WPF Pivot Grid
 
-The pivot grid control supports loading data in a unique UI thread. That is, it can perform long running operations asynchronously on a background thread. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the pivot schema designer. This can be achieved by setting the `LoadInBackground` property of the pivot grid control.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control supports loading data in a unique UI thread. That is, it can perform long running operations asynchronously on a background thread. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the pivot schema designer. This can be achieved by setting the `LoadInBackground` property of the pivot grid control.
 
 The `LoadInBackground` property can be defined in XAML or code-behind. For XAML, refer to the following code sample.
 
@@ -85,3 +85,5 @@ _UI Thread Loading_
 ![Asynchronously loaded data](Asynchronous-data-loading-images/Asynchronously loaded data.png)
 
 _Asynchronously Loaded Data_
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

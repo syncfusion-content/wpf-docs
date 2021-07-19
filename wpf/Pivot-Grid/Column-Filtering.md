@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in WPF Pivot Grid
 
-The pivot grid allows you to restrict the display of records by using a mechanism called filter. A filter enables you to extract a subset of records that meet certain criteria.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) allows you to restrict the display of records by using a mechanism called filter. A filter enables you to extract a subset of records that meet certain criteria.
 
 Property
 
@@ -49,3 +49,5 @@ Refer to the following code sample.
 {% endhighlight %}
 
 ![To filter the records using column filter popup](Features-in-RowPivotsOnly-images/Filtering Enable in RowPivotsOnly.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

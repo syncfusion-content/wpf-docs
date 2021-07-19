@@ -90,4 +90,4 @@ The following image shows the printing dialog window upon invoking print method.
 ![SfChart Printing Dialog Window](Printing_images/Printing_img1.png)
 
 
-
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
