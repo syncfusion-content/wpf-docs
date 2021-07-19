@@ -69,10 +69,10 @@ sfDiagram.Load(str);
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the stencil-->
+<!--Initialize the diagram-->
 <Syncfusion:SfDiagram x:Name="diagram">
 </Syncfusion:SfDiagram>
-<!--Initialize the stencil-->
+<!--Initialize the button to save the diagram-->
 <Button x:Name="SaveButton" Content="Save" Click="SaveButton_Click">
 </Button>
 {% endhighlight %}
