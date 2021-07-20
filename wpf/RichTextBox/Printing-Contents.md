@@ -70,3 +70,4 @@ The following code example demonstrates how to bind UI Command to invoke printin
 {% endtabs %}
 
 N> In order to invoke printing, the standard keyboard shortcut CTRL + P can also be used.
+You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

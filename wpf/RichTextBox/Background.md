@@ -8,7 +8,7 @@ keywords: background
 ---
 
 # Setting Background for WPF RichTextBox
-The RichTextBox control allows you to change background color of the control. A background of a control is represented by `Background` property of `SfRichTextBoxAdv` class. The default value of this property is black.
+The [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) control allows you to change background color of the control. A background of a control is represented by `Background` property of `SfRichTextBoxAdv` class. The default value of this property is black.
 
 The following code illustrates how to apply color as background to the document.
 
@@ -128,4 +128,5 @@ Pages layout:
 Continuous layout:
 ![Changing Background color of Continuous Layout in WPF RichTextBox](Image_images/wpf-richtextbox-continous-background.PNG)
 
-N> This API is supported starting from release version v17.4.0.X.
+N> This API is supported starting from release version v17.4.0.X. 
+You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
