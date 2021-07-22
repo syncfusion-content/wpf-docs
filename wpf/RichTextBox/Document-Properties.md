@@ -7,7 +7,7 @@ documentation: ug
 keywords: Word count, paragraph count, page count, current page number.
 ---
 # Document Properties in WPF RichTextBox (SfRichTextBoxAdv)
-RichTexBox keep tracking the statistics about your documents. These statistics contains information about word count, paragraph count and pages count.
+[WPF RichTexBox](https://www.syncfusion.com/wpf-controls/richtextbox) keep tracking the statistics about your documents. These statistics contains information about word count, paragraph count and pages count.
 
 ## Word Count
 RichTextBox automatically counts the number of words in a document while you type. You can get the words count from [WordCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.SfRichTextBoxAdv.html#Syncfusion_Windows_Controls_RichTextBoxAdv_SfRichTextBoxAdv_WordCount.html) property. The default value of this property is 0. 
@@ -100,4 +100,5 @@ End Sub
 
 N> The above PageCount and CurrentPageNumber properties are not a dependency property. And it is not notifying for dynamic changes. So, get these properties value in
 selection changed event.
+You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools. 
 

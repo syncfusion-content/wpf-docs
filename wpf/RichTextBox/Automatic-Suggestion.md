@@ -9,7 +9,7 @@ keywords: automatic-suggestion, @mentions
 # Automatic Suggestion in WPF RichTextBox (SfRichTextBoxAdv)
 
 ### Automatic Suggestion functionality for using @mentions
-RichTextBox control shows an inline dropdown with a list of suggested names while type the mention character (@ symbol). The list of names will filter as you type more letters. You can use up or down arrow key to move selection and Tab or Enter key to insert selected item in keyboard or use mouse to click any option in the list. The selected item from the suggestion list will be inserted as hyperlink with the display text and its respective link.
+[WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) control shows an inline dropdown with a list of suggested names while type the mention character (@ symbol). The list of names will filter as you type more letters. You can use up or down arrow key to move selection and Tab or Enter key to insert selected item in keyboard or use mouse to click any option in the list. The selected item from the suggestion list will be inserted as hyperlink with the display text and its respective link.
 
 ![WPF RichTextBox displays Automatic Suggestion](Automatic-Suggestion_images/wpf-richtextbox-auto-suggestion.PNG)
 
@@ -464,6 +464,7 @@ public void InsertSelectedItem(SfRichTextBoxAdv richTextBoxAdv, object selectedI
 N> This feature is supported from V18.4.0.30.
 
 [View example in GitHub](https://github.com/SyncfusionExamples/WPF-RichTextBox-Examples/tree/main/Samples/Automatic%20Suggestion/Custom%20Suggestion%20Provider)
- 
+
+N> You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools. 
 
 

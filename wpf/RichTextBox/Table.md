@@ -247,4 +247,4 @@ The following code example illustrates how to Button UI Command for deleting a r
 
 {% endtabs %}
 
-
+N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
