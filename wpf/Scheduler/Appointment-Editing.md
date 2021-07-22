@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Appointment Editing in WPF Scheduler (SfScheduler)
-This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing.
+This section explains how to handle appointment editing in [WPF scheduler](https://www.syncfusion.com/wpf-controls/scheduler) and also explains about the appointment resizing.
 
 ## Adding appointments
 Scheduler supports to add a new appointment by using the [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. Open this window by double-clicking on a time cell or month cell or view header.
@@ -229,3 +229,5 @@ this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
 {% endhighlight %}
 {% endtabs %}
 * `Resource` - gets the resource of an appointment under which the appointment is located.
+
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
