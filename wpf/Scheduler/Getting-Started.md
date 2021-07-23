@@ -91,7 +91,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 {% endhighlight %}   
 {% endtabs %}   
 
-![WPF scheduler Month view](GettingStarted_images/month-view.png)
+![WPF scheduler Month view](GettingStarted_images/wpf-scheduler-month-view.png)
 
 ## Appointments
 [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) collections. Allocate the collection generated to `Appointments` property.
@@ -413,7 +413,7 @@ Schedule.FirstDayOfWeek = DayOfWeek.Tuesday;
 {% endhighlight %}  
 {% endtabs %}   
 
-![WPF scheduler FirstDayOfWeek](GettingStarted_images/change-first-day.png)
+![WPF scheduler FirstDayOfWeek](GettingStarted_images/wpf-scheduler-firstdayofweek.png)
 
 ## Show busy indicator
 The Scheduler supports to show the busy indicator by using the [ShowBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowBusyIndicator) property. The default value is set to false, if the value is set to `true` then the busy indicator will be loaded on view or visible date changed.
@@ -427,7 +427,7 @@ The Scheduler supports to show the busy indicator by using the [ShowBusyIndicato
 {% endhighlight %}  
 {% endtabs %} 
 
-![WPF scheduler BusyIndicator](GettingStarted_images/BusyIndicator.png)
+![WPF scheduler BusyIndicator](GettingStarted_images/wpf-scheduler-busyindicator.png)
 
 ## Theme
 
@@ -437,7 +437,7 @@ SfScheduler supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF scheduler](GettingStarted_images/Theme.png)
+  ![Setting theme to WPF scheduler](GettingStarted_images/wpf-scheduler-theme.png)
   
   
 N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
