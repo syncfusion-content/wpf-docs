@@ -8,7 +8,7 @@ documentation: ug
 
 # WPF Scheduler (SfScheduler) Overview
 
-The WPF SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 
 ![WPF scheduler FirstDayOfWeek](GettingStarted_images/wpf-scheduler-firstdayofweek.png)
 
@@ -44,3 +44,6 @@ The WPF SfScheduler control is used to schedule and manage appointments through 
 **Reminder** - Use the reminders to organize the appointments in the scheduler. The Scheduler reminds about the appointment at the specified time.
 
 **LoadOnDemand** - The SfScheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
+
+
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
