@@ -571,3 +571,6 @@ private static void OnPasteColumn(object obj)
 ![WPF TreeGrid displays Paste ContextMenu](Clipboard-Operations_images/wpf-treegrid-paste-context-menu.jpeg)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-copy-a-column-and-paste-it-as-a-new-column-in-wpf-treegrid).
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

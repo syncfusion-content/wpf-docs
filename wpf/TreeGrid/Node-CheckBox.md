@@ -404,3 +404,6 @@ If you want to get all the checked nodes even though they are not in view, you c
 var nodes = treeGrid.GetCheckedNodes(true);
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
