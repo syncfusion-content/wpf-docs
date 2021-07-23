@@ -63,4 +63,4 @@ The labels can also be customized by modifying the [`ItemsTemplate`](https://hel
 
 ![Maps control Shape labels](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
 
-
+N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Bubbles in WPF Maps (SfMap)
 
-Bubbles in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes that contain bound values.
+Bubbles in the [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes that contain bound values.
 
 Bubbles are included when data binding is set as mentioned above and the BubbleMarkerSetting is set. 
 
@@ -274,3 +274,5 @@ When the under-bound value is under any of the given sorted range or above the s
 
 `AutoFillColor` must be set as `false` to enable range color mapping.
 ![RangeColorMapping](Bubbles_images/Bubbles_img3.png)
+
+N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.

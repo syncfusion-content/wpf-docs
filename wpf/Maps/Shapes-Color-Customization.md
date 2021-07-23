@@ -9,7 +9,7 @@ documentation: ug
 
 # Shapes Color Customization in WPF Maps (SfMap)
 
-Maps highly support the customization of the shape’s color. The shape’s color can be customized by using the following methods:
+[WPF Maps](https://www.syncfusion.com/wpf-controls/map) highly support the customization of the shape’s color. The shape’s color can be customized by using the following methods:
 
 1. Using the ShapeFill, ShapeStroke and ShapeStrokeThickness properties.
 2. Using tree map-like support.
@@ -248,5 +248,6 @@ MapColorPalette contains a property named `FillBrush`. This property sets the fi
 
 ![Maps controls Shapes color with custom palette](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)
 
+N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
 
