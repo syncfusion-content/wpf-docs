@@ -192,6 +192,8 @@ To show the custom data on the map, the CustomDataSourceTemplate must be specifi
 
 ![Maps control with custom Data Binding](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)
 
+N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
+
 ## See Also
 
 [How to render CustomDataSource in SfMap?](https://www.syncfusion.com/kb/3237/how-to-render-customdatasource-in-sfmap)

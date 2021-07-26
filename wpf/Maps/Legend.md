@@ -189,4 +189,4 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 ![Maps control legend with Bubble type](Legend_images/Legend_img2.png)
 
-
+N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
