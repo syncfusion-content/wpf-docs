@@ -395,3 +395,6 @@ You can change the style of the particular column header by using the [HeaderSty
 
 ![Customizing Column Header Style in WPF TreeGrid](Rows_images/wpf-treegrid-column-header-customization.jpeg)
 
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

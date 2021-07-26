@@ -567,3 +567,4 @@ treeGrid.View.EndInit();
 N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.
 
 
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

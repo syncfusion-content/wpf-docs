@@ -370,3 +370,5 @@ public class StyleConverter : IValueConverter
 
 ![Customizing Row Header Style in WPF TreeGrid](Conditional-Styling_images/wpf-treegrid-row-style-customization.jpeg)
 
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
