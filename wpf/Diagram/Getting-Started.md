@@ -191,7 +191,7 @@ NodeViewModel Begin = new NodeViewModel()
 #### Adding shape and style to node
 
 We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
-Please refer to [Shapes](/wpf/sfdiagram/shapes) to know about built-in Shapes.
+Please refer to [Shapes](https://help.syncfusion.com/wpf/diagram/shapes) to know about built-in Shapes.
  
 {% tabs %}
 {% highlight xaml %}  
@@ -722,7 +722,7 @@ We have represented the steps to interact with stencil such as drag and drop ele
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
-For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements). 
+For more information about stencil, please [refer](https://help.syncfusion.com/wpf/diagram/stencil#using-the-diagram-elements). 
 
 ## Organization layout
 

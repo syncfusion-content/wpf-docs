@@ -2793,7 +2793,7 @@ The following property is common for all types of axes,
 
 **IncludeStripLineRange**
 
-By default, [`striplines`](https://help.syncfusion.com/wpf/sfchart/striplines) are drawn up to the chart axis range, if the provided values (Start and Width) exceed the actual range of chart axis. It can be avoided by using [`IncludeStripLineRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_IncludeStriplineRangeProperty) property. While enabling [`IncludeStripLineRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_IncludeStriplineRangeProperty) property, the axis range will be extended up to the provided stripline range. The property can be set as shown in the following code example.
+By default, [`striplines`](https://help.syncfusion.com/wpf/charts/striplines) are drawn up to the chart axis range, if the provided values (Start and Width) exceed the actual range of chart axis. It can be avoided by using [`IncludeStripLineRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_IncludeStriplineRangeProperty) property. While enabling [`IncludeStripLineRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_IncludeStriplineRangeProperty) property, the axis range will be extended up to the provided stripline range. The property can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -2851,7 +2851,7 @@ ChartStripLine stripline = new ChartStripLine()
 
 **IncludeAnnotationRange**
 
-By default, [`annotations`](https://help.syncfusion.com/wpf/sfchart/annotations) are drawn up to the chart axis range, if the provided values (X1, X2, Y1, and Y2) exceed the actual range of [`chart axis`](https://help.syncfusion.com/wpf/sfchart/axis). It can be avoided by using [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property. While enabling [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property, the axis range will be extended up to the provided annotation range.
+By default, [`annotations`](https://help.syncfusion.com/wpf/charts/annotations) are drawn up to the chart axis range, if the provided values (X1, X2, Y1, and Y2) exceed the actual range of [`chart axis`](https://help.syncfusion.com/wpf/sfchart/axis). It can be avoided by using [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property. While enabling [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property, the axis range will be extended up to the provided annotation range.
 The property is applicable only for linear axes, and it can be set as shown in the following code example.
 
 {% tabs %}
