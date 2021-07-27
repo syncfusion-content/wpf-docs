@@ -904,7 +904,7 @@ The output will be as follows.
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-OrganizationLayout-Creation)
 
-For more information about Layout, [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
+For more information about Layout, [refer](https://help.syncfusion.com/wpf/diagram/automatic-layouts/automatic-layouts)
 
 ## Theme
 

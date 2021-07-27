@@ -18,7 +18,7 @@ The following are the major properties of chart(SfChart):
 * [`Legend`](https://help.syncfusion.com/wpf/charts/legend#) –  Gets or sets the legend for the chart.
 * [`Series`](https://help.syncfusion.com/wpf/charts/seriestypes/series) –  Gets or sets the list of series in the chart.
 * [`TechnicalIndicators`](https://help.syncfusion.com/wpf/charts/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
+* [`Behaviors`](https://help.syncfusion.com/wpf/charts/interactive-features/interactivefeatures)–  Used to add one more interactive features to the chart.
 
 
 ## Customization

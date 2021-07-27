@@ -350,7 +350,7 @@ chart.Header = "Chart"
 
 {% endtabs %}  
 
-Refer to [`this`](https://help.syncfusion.com/wpf/sfchart/area#chart-header) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
+Refer to [`this`](https://help.syncfusion.com/wpf/charts/area) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
 
 
 ## Enable data labels

@@ -1132,7 +1132,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 **Axis Label Border**
 
-[`ChartAxis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to place the border around its label. To place the border around axis, enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ShowLabelBorderProperty) property of axis; it can be set as shown in the following code example.
+[`ChartAxis`](https://help.syncfusion.com/wpf/charts/axis) provides support to place the border around its label. To place the border around axis, enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ShowLabelBorderProperty) property of axis; it can be set as shown in the following code example.
 
 {% tabs %}
 
@@ -2851,7 +2851,7 @@ ChartStripLine stripline = new ChartStripLine()
 
 **IncludeAnnotationRange**
 
-By default, [`annotations`](https://help.syncfusion.com/wpf/charts/annotations) are drawn up to the chart axis range, if the provided values (X1, X2, Y1, and Y2) exceed the actual range of [`chart axis`](https://help.syncfusion.com/wpf/sfchart/axis). It can be avoided by using [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property. While enabling [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property, the axis range will be extended up to the provided annotation range.
+By default, [`annotations`](https://help.syncfusion.com/wpf/charts/annotations) are drawn up to the chart axis range, if the provided values (X1, X2, Y1, and Y2) exceed the actual range of [`chart axis`](https://help.syncfusion.com/wpf/charts/axis). It can be avoided by using [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property. While enabling [`IncludeAnnotationRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_IncludeAnnotationRangeProperty) property, the axis range will be extended up to the provided annotation range.
 The property is applicable only for linear axes, and it can be set as shown in the following code example.
 
 {% tabs %}
@@ -4022,7 +4022,7 @@ In the above screenshot, the LineSeries is plotted based on additional X & Y axe
 
 ## Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabels) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) range values. You can add any number of labels to an axis. The following code example illustrates how to set a multilevel label.
+[`Axis`](https://help.syncfusion.com/wpf/charts/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabels) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) range values. You can add any number of labels to an axis. The following code example illustrates how to set a multilevel label.
 
 {% tabs %}
 
