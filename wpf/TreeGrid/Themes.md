@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
+SfTreeGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/treegrid/themes) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 
 ## Built-in Themes
 
