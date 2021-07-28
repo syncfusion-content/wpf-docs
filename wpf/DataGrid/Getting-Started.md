@@ -415,7 +415,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridNumericColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[DoubleTextBox](http://help.syncfusion.com/wpf/doubletextbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
+Represents SfDataGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ Represents SfDataGrid column that hosts {{'[DoubleTextBox](http://help.syncfusio
 GridCurrencyColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[CurrencyTextBox](http://help.syncfusion.com/wpf/currencytextbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with currency format.
+Represents SfDataGrid column that hosts {{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with currency format.
 </td>
 </tr>
 <tr>
@@ -431,7 +431,7 @@ Represents SfDataGrid column that hosts {{'[CurrencyTextBox](http://help.syncfus
 GridPercentColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[PercentTextBox](http://help.syncfusion.com/wpf/percenttextbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with percent format.
+Represents SfDataGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with percent format.
 </td>
 </tr>
 <tr>
@@ -447,7 +447,7 @@ Represents SfDataGrid column that hosts <b>MaskedTextBox</b> controls in its cel
 GridTimeSpanColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[TimeSpanEdit](http://help.syncfusion.com/wpf/timespanedit/overview)'|markdownify}} controls in its cells which is used to display format and display TimeSpan values.
+Represents SfDataGrid column that hosts {{'[TimeSpanEdit](https://help.syncfusion.com/wpf/timespan-editor/overview)'|markdownify}} controls in its cells which is used to display format and display TimeSpan values.
 </td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ Represents SfDataGrid column that hosts {{'[TimeSpanEdit](http://help.syncfusion
 GridDateTimeColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[DateTimeEdit](http://help.syncfusion.com/wpf/datetimeedit/overview)'|markdownify}} controls in its cells which is used to display and format DateTime values.
+Represents SfDataGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimepicker/overview)'|markdownify}} controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>

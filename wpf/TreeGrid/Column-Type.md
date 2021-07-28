@@ -744,7 +744,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_IsHidden) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/wpf/sftreegrid/columns#resizing-columns) section.
+You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_IsHidden) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/wpf/treegrid/column-sizing) section.
 
 #### Disable column
 
@@ -1923,7 +1923,7 @@ SfTreeGrid allows you to create your own column by overriding predefined column 
 
 ### Creating column from existing column
 
-You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/sftreegrid/column-type) column types in SfTreeGrid.
+You can create your own column by overriding the [predefined](https://help.syncfusion.com/wpf/treegrid/column-type) column types in SfTreeGrid.
 
 For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset?redirectedfrom=MSDN&view=net-5.0) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 
