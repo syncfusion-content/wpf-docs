@@ -12,9 +12,9 @@ SfChart supports Annotations, which allows you to mark the specific area of inte
 
 The following annotations are supported in SfChart
 
-* [Text Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#text-annotation)
-* [Shape Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#shape-annotation)
-* [Image Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#image-annotation)
+* [Text Annotation](https://help.syncfusion.com/wpf/charts/annotations#text-annotation)
+* [Shape Annotation](https://help.syncfusion.com/wpf/charts/annotations#shape-annotation)
+* [Image Annotation](https://help.syncfusion.com/wpf/charts/annotations#image-annotation)
 
 ## Adding Annotation
 
