@@ -210,7 +210,7 @@ The above code example results in the following output
 
 Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ItemsSource), [`ShapeIDPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDPath), and [`ShapeIDTableField`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeIDTableField) properties.
 
-The [`Populate data`](https://help.syncfusion.com/wpf/maps/PopulateData) section gives the detailed explanation of data binding.
+The [`Populate data`](https://help.syncfusion.com/wpf/maps/populatedata) section gives the detailed explanation of data binding.
 
 {%tabs%}
 

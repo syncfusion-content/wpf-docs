@@ -317,7 +317,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer to [`this`](https://help.syncfusion.com/wpf/charts/area#multiple-area) for details.
 
 ## Add title
 
@@ -350,7 +350,7 @@ chart.Header = "Chart"
 
 {% endtabs %}  
 
-Refer to [`this`](https://help.syncfusion.com/wpf/sfchart/area#chart-header) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
+Refer to [`this`](https://help.syncfusion.com/wpf/charts/area) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart header.
 
 
 ## Enable data labels
@@ -391,7 +391,7 @@ series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}
 
 {% endtabs %}  
 
-Refer to [`this`](https://help.syncfusion.com/uwp/sfchart/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
+Refer to [`this`](https://help.syncfusion.com/uwp/charts/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
 
 ## Enable legend
 
@@ -471,7 +471,7 @@ series.Label = "Heights"
 
 {% endtabs %}  
 
-Refer to this [`link`](https://help.syncfusion.com/uwp/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
+Refer to this [`link`](https://help.syncfusion.com/uwp/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
 
 ## Enable tooltip
 
@@ -515,7 +515,7 @@ series.ShowTooltip = True
 
 {% endtabs %}
 
-Refer to [`this`](https://help.syncfusion.com/uwp/sfchart/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
+Refer to [`this`](https://help.syncfusion.com/uwp/charts/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 
