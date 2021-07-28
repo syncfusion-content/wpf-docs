@@ -87,3 +87,6 @@ Currently SfSpreadsheet does not have support for following features.
 
 * If the filter applied in Microsoft Excel, then the filter will be cleared from all columns while clearing the filter from any one column Because unable to fetch the filtering order.
 * While importing the workbook, checked and unchecked items are only displayed in the right most filtered column. Because unable to fetch the filtering order.
+
+
+N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.

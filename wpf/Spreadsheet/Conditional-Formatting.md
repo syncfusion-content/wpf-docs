@@ -154,3 +154,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 Sample Output
 
 ![WPF Spreadsheet Conditional Formatting with Icon Sets](Conditional-Formatting_images/wpf-spreadsheet-conditional-formatting-with-icon-sets.jpeg)
+
+
+N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.
