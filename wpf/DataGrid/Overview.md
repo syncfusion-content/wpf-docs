@@ -40,7 +40,7 @@ Syncfusion WPF suite comes up with following different Grid’s namely,
 
 ### GridControl
 
-[GridControl](http://help.syncfusion.com/wpf/grid/overview) is designed based on the cell-oriented architecture that does not make any assumptions about the structure of the data and provides support for Excel-like features. This control can be used when the data is populated in on demand using virtualization or its internal storage. It is not possible to bind the data source directly. 
+[GridControl](https://help.syncfusion.com/wpf/gridcontrol/overview) is designed based on the cell-oriented architecture that does not make any assumptions about the structure of the data and provides support for Excel-like features. This control can be used when the data is populated in on demand using virtualization or its internal storage. It is not possible to bind the data source directly. 
 
 ### GridTreeControl and SfTreeGrid
 

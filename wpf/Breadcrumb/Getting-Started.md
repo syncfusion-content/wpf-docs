@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet packages in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Create a simple application with HierarchyNavigator
 
@@ -145,7 +145,7 @@ this.Content = hierarchyNavigator1;
 
 ## Bind data
 
-HierarchyNavigator accepts any business object collection to be bound to its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. Refer [Data binding](https://help.syncfusion.com/wpf/hierarchynavigator/populating-data) section for more details.
+HierarchyNavigator accepts any business object collection to be bound to its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. Refer [Data binding](https://help.syncfusion.com/wpf/breadcrumb/populating-data) section for more details.
 
 The steps to bind to a Business Object collection are as follows:
 
