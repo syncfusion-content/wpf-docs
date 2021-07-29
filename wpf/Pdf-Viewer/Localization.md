@@ -25,7 +25,7 @@ We are using `en-US` culture-based resource file as default in PDF Viewer. This 
 
 The following screenshot shows the `PdfViewerControl` in French language
 
-![Localization](wpf-pdf-viewer-localization.png)
+![Localization](Localization_images/wpf-pdf-viewer-localization.png)
 
 ## Localize Resource File with Different Assembly or Namespace
 
