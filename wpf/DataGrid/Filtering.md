@@ -11,7 +11,7 @@ Filtering is the process of retrieving the values from the collection which sati
 
 ## Programmatic filtering
   
-DataGrid allows you to filter the data programmatically in below ways,
+The WPF DataGrid Filter allows you to filter the data programmatically in below ways,
 
 * Through View Predicate
 * Through Column Filter
@@ -64,6 +64,7 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 {% endtabs %}
 
 #### Filter Behavior
+The [FilterBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterBehavior.html) property is used to specify whether to consider the [FilterValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) as the string or specific data type.
 
 * **StringTyped** - Records are filtered without considering the type and it takes [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) type as string.
 * **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.

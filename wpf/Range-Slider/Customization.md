@@ -673,7 +673,7 @@ Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 ### Value label customization
 
-Customize the value label using the `TickBarItem` style.
+Customize the value label using the [TickBarItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.TickBarItem.html) style.
 
 {% tabs %}
 
