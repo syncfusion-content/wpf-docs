@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Context menu support for Stencil in WPF Diagram (SfDiagram)
+# Context menu support for Stencil in WPF Diagram (SfDiagram)
 
 Stencil provides some default context menu items to ease the execution of some frequently used commands for stencil symbols.
 
