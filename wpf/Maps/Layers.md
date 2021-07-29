@@ -9,7 +9,7 @@ documentation: ug
 
 # Layers in WPF Maps (SfMap)
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
+The [WPF Maps](https://www.syncfusion.com/wpf-controls/map) control is maintained through [`Layers`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html), a map can accommodate one or more layers.
 
 The maps control consists the following two layers:
 
@@ -371,6 +371,8 @@ The [`ShapesUnSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.M
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 
 ## see also
 

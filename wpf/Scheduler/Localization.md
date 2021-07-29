@@ -58,4 +58,4 @@ N> [View **Syncfusion.SfScheduler.WPF.resx** in GitHub](https://github.com/syncf
 
 ![Shows the localized strings in French for WPF Scheduler](Localization_images/Localized_Scheduler.png)
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-localization)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-localization). You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations.

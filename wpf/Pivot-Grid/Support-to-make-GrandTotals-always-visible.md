@@ -53,3 +53,5 @@ public partial class MainWindow: Window {
 {% endhighlight %}
 
 ![PivotGrid shows the GrandTotals always](GrandTotalRows-always-visible-images/PivotGrid shows the GrandTotals at all the times.png)
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

@@ -9,8 +9,8 @@ documentation: ug
 
 # Legend in WPF Charts (SfChart)
 
-[`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/sfchart/series), 
-[technical indicators](https://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/sfchart/trendlines). 
+[`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/charts/seriestypes/series), 
+[technical indicators](https://help.syncfusion.com/wpf/charts/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/charts/trendlines). 
 You can define the legend using the following code example.
 
 {% tabs %}
@@ -1013,6 +1013,8 @@ Action action = chartWindow.Show;
 Application.Current.Dispatcher.BeginInvoke(action, Array.Empty<object>()); 
 
 {% endhighlight %}
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

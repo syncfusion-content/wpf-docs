@@ -11,7 +11,7 @@ documentation: ug
 
 ## Screen reader support
 
-The `Scheduler` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
+The `[WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler)` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
 ### Month view
 
@@ -400,3 +400,5 @@ Moves the view to Timeline work week view.<br/><br/></td></tr>
 Ctrl + Alt + 8 => TimelineMonthView<br/><br/></td><td>
 Moves the view to Timeline month view.<br/><br/></td></tr>
 </table>
+
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

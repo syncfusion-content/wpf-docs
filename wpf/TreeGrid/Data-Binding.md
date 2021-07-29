@@ -14,8 +14,8 @@ If the data source implements [INotifyCollectionChanged](https://docs.microsoft.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
-* [Populate data using self-relational binding](https://help.syncfusion.com/wpf/sftreegrid/getting-started#binding-self-relational-data-in-sftreegrid)
-* [Populate data using nested collection](https://help.syncfusion.com/wpf/sftreegrid/getting-started#binding-nested-collection-with-sftreegrid)
+* [Populate data using self-relational binding](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
+* [Populate data using nested collection](https://help.syncfusion.com/wpf/treegrid/getting-started#binding-nested-collection-with-sftreegrid)
 * [Populate data with `RequestTreeItems` event](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-requesttreeitems-event)
 * [Populate data with `LoadOnDemandCommand`](https://help.syncfusion.com/wpf/treegrid/load-on-demand#using-loadondemandcommand)
 
@@ -567,3 +567,4 @@ treeGrid.View.EndInit();
 N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.
 
 
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

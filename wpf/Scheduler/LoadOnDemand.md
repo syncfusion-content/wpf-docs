@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 # Load On Demand in WPF Scheduler (SfScheduler)
-The scheduler supports to load appointment on demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
+The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) supports to load appointment on demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
 
 ![Load on-demand in WPF Scheduler](LoadOnDemand_Images/LoadOnDemand.gif)
 

@@ -30,3 +30,6 @@ Click **Add** to add the calculated field and **OK** to populate the pivot grid 
 ![PivotGrid with newly added Calculated Field](Calculated-Field-images/PivotGrid shows the newly added calculated field.png)
 
 _PivotGrid with newly added Calculated Field_
+
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

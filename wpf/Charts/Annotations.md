@@ -12,9 +12,9 @@ SfChart supports Annotations, which allows you to mark the specific area of inte
 
 The following annotations are supported in SfChart
 
-* [Text Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#text-annotation)
-* [Shape Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#shape-annotation)
-* [Image Annotation](https://help.syncfusion.com/wpf/sfchart/annotations#image-annotation)
+* [Text Annotation](https://help.syncfusion.com/wpf/charts/annotations#text-annotation)
+* [Shape Annotation](https://help.syncfusion.com/wpf/charts/annotations#shape-annotation)
+* [Image Annotation](https://help.syncfusion.com/wpf/charts/annotations#image-annotation)
 
 ## Adding Annotation
 
@@ -1073,6 +1073,8 @@ SfChart provides the following events in [`Annotation`](https://help.syncfusion.
 * [`MouseRightButtonUp`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the right mouse button is released while the mouse pointer is over the annotation.
 * [`MouseMove`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the mouse pointer moves while over the annotation.
 * [`MouseLeave`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the mouse pointer leaves the bounds of the annotation.
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 # Time Zone in WPF Scheduler (SfScheduler)
-Scheduler allows to create appointments in various time zones and display them in the respective time zone or any other time zone. Use the time zone in the following four different ways:
+[WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) allows to create appointments in various time zones and display them in the respective time zone or any other time zone. Use the time zone in the following four different ways:
 * Create appointments in different time zones.
 * Display appointments based on the client’s time zone.
 * Display appointments based on scheduler time zone.
@@ -1210,3 +1210,6 @@ For an example, consider the local time zone is `India Standard Time`, if you dr
 
 If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and the appointment’s `StartTimeZone` and `EndTimeZone` as `Central Standard Time (Mexico)` then the appointment’s start time and end time value has converted from scheduler’s time zone to appointment time zone and the appointment’s start time will be saved at 3.30 AM of next day.
 If you set scheduler’s `TimeZone` as `AUS Central Standard Time (Darwin)` and appointment’s time zone was not set then the appointment’s start time and end time value converted from scheduler time zone to `UTC time zone` and the appointment’s start time will be saved at 10.30 PM.
+
+
+N> You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

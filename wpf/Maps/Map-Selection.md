@@ -51,4 +51,5 @@ Multiple shapes in the map can be selected when [`EnableMultiSelection`](https:/
 
 ![Maps control selection](Map-Selection_images/Map-Selection_img2.png)
 
+N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.
 

@@ -541,3 +541,5 @@ You can customize the default appearance of more appointments indicator in a mon
 {% endtabs %}
 
 ![appointment-display-count-appearance-customization-in-WPF-scheduler-month-view](Month-View_Images/appointment-display-count-appearance-customization-in-WPF-scheduler-month-view.png)
+
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

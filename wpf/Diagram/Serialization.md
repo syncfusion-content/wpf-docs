@@ -63,6 +63,54 @@ sfDiagram.Load(str);
 
 {% endtabs %}
 
+### Has the diagram modified?
+
+[HasChanges](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramViewModel.html#Syncfusion_UI_Xaml_Diagram_DiagramViewModel_HasChanges) property of diagram control is used to notify that the diagram has any unsaved changes. This property track all changes that are made through interaction and through the public APIs.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the diagram-->
+<Syncfusion:SfDiagram x:Name="diagram">
+</Syncfusion:SfDiagram>
+<!--Initialize the button to save the diagram-->
+<Button x:Name="SaveButton" Content="Save" Click="SaveButton_Click">
+</Button>
+{% endhighlight %}
+{% highlight C# %}
+//Method to promote the save dialouge box when diagram has any unsaved changes.
+private void SaveButton_Click(object sender, RoutedEventArgs e)
+{
+    if (diagram != null && diagram.HasChanges)
+    {
+        MessageBoxResult messageBoxResult = MessageBox.Show(
+                            "Do you want to save the Diagram?",
+                            "SfDiagram",
+                            MessageBoxButton.YesNo);
+        if (messageBoxResult == MessageBoxResult.Yes)
+        {
+            SaveDiagram();
+        }
+    }
+}
+
+//Method to save the diagram.
+private void SaveDiagram()
+{
+    SaveFileDialog dialog = new SaveFileDialog();
+    dialog.Title = "Save XAML";
+    dialog.Filter = "XAML File (*.xaml)|*.xaml";
+    if (dialog.ShowDialog() == true)
+    {
+        File.Delete(dialog.FileName);
+        using (Stream s = File.Open(dialog.FileName, FileMode.OpenOrCreate))
+        {
+            diagram.Save(s);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## How to serialize custom properties 
 
 In SfDiagram, you cannot serialize Content, ContentTemplate, Shape, and ShapeStyle of each and every diagramming objects. If you want to preserve the ShapeStyle and ContentTemplate of diagramming objects, keep them in resources and apply once the diagramming objects are added to the Diagram page.  

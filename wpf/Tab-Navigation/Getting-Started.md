@@ -162,7 +162,7 @@ tabNavigation.Items.Add(item4);
 
 ### Binding ItemsSource
 
-TabNavigationControl supports binding data to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. Refer [Data binding](https://help.syncfusion.com/wpf/tabnavigation/data-binding) section for more details.
+TabNavigationControl supports binding data to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. Refer [Data binding](https://help.syncfusion.com/wpf/tab-navigation/data-binding) section for more details.
 
 {% tabs %}
 {% highlight XAML %}

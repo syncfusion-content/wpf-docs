@@ -435,4 +435,6 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
 {% endhighlight %}
 {% endtabs %}
 
-![ViewHeader appearance customization in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-style.png)
+![ViewHeader appearance customization in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-style.png)\
+
+N> You can refer to our [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Scheduler example](https://github.com/syncfusion/wpf-demos) to knows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
