@@ -51,7 +51,7 @@ N> The reveal animation is enabled by default.
 
 ### Hover reveal effect
 
-By using the [HoverEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_HoverEffectMode) property, you can enable or disale the reveal animation while hovering over the controls.
+By using the [HoverEffectMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FluentTheme.html#Syncfusion_SfSkinManager_FluentTheme_HoverEffectMode) property, you can enable or disable the reveal animation while hovering over the controls.
 
 The [HoverEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.HoverEffect.html) enum contains following values:
 
