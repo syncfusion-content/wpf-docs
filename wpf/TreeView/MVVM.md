@@ -308,5 +308,5 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview). You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
 
