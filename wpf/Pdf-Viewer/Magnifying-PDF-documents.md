@@ -163,3 +163,6 @@ namespace ZoomPercentDemo
 {% endtabs %}
 
 N> The allowed value of this property ranges from the value of [MinimumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MinimumZoomPercentage) of the PDF Viewer to 800.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

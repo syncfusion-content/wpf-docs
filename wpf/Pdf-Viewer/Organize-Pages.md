@@ -292,3 +292,6 @@ The following keyboard shortcuts are available at miniature preview mode to orga
 •	Ctrl+A: Selects all pages in the PDF document.
 •	Shift+Arrow/MouseButton: Selects a set of consecutive pages in the PDF document.
 •	Ctrl+MouseButton: Selects the clicked pages in the PDF document.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
