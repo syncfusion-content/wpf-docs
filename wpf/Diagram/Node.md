@@ -686,7 +686,7 @@ Node can be selected by clicking (tap) it.
 
 ![Select Node](Node_images/Node_img7.jpg)
 
-To explore about selection and selection related events, refer to the [Selection](/wpf/sfdiagram/interaction#selection).
+To explore about selection and selection related events, refer to the [Selection](https://help.syncfusion.com/wpf/diagram/interaction/selection).
 
 ### Drag  
 
