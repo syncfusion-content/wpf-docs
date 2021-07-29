@@ -60,6 +60,7 @@ BasicStencil.Menu = new DiagramMenu()
         new DiagramMenuItem()
         {
             Content = "Cut",
+            IsSeparator = true,
             Command = StencilCommands.Cut,
             Icon = @"pack://application:,,,/Icons/Cut.png",
         },
@@ -67,6 +68,7 @@ BasicStencil.Menu = new DiagramMenu()
         new DiagramMenuItem()
         {
             Content = "Copy",
+            IsSeparator = true,
             Command = StencilCommands.Copy,
             Icon = @"pack://application:,,,/Icons/Copy.png"
         },
@@ -74,6 +76,7 @@ BasicStencil.Menu = new DiagramMenu()
         new DiagramMenuItem()
         {
             Content = "Paste",
+            IsSeparator = true,
             Command = StencilCommands.Paste,
             CommandParameter = this,
             Icon = @"pack://application:,,,/Icons/Paste.png"
@@ -82,8 +85,17 @@ BasicStencil.Menu = new DiagramMenu()
         new DiagramMenuItem()
         {
             Content = "Delete",
+            IsSeparator = true,
             Command = StencilCommands.Delete,
             Icon = @"pack://application:,,,/Icons/Delete.png"            
+        },
+
+        new DiagramMenuItem()
+        {
+            Content = "Rename",
+            IsSeparator = true,
+            Command = RenameCommand,
+            Icon = @"pack://application:,,,/Icons/Rename.png",
         },
     },
 };
@@ -98,18 +110,17 @@ BasicStencil.SymbolSource = new SymbolCollection()
         Key = "Basic Shapes",
     },
                       
-    new NodeViewModel()
-    {
-        UnitWidth = 100,
-        UnitHeight = 100,
-        Shape = this.Resources["Rectangle"],
+   new SymbolViewModel()
+   {
+        Symbol = "Diamond",
         Key = "Basic Shapes",
+        SymbolTemplate = this.Resources["Diamond"] as DataTemplate,
     },
 };
 
 {% endhighlight %}
 
-![Symbol Custom ContextMenu](Stencil_images/SymbolsCustomContextMenu.png)
+![Symbol Custom ContextMenu](Stencil_images/CustomContextMenu.gif)
 
 ## Menu for symbols
 
@@ -126,7 +137,27 @@ BasicStencil.SymbolSource = new SymbolCollection()
         UnitHeight = 100,
         Shape = this.Resources["Ellipse"],
         Key = "Basic Shapes",
-        Menu = DiagramMenu()
+        Menu = new DiagramMenu()
+        {
+            MenuItems = new ObservableCollection<DiagramMenuItem>()
+            {
+                new DiagramMenuItem()
+                {
+                    Content = "Cut",
+                    Command = StencilCommands.Cut,
+                    CommandParameter = this,
+                    Icon = @"pack://application:,,,/Icons/Cut.png",
+                },
+            },
+        },
+    },
+                      
+    new SymbolViewModel()
+    {
+        Symbol = "Diamond",
+        Key = "Basic Shapes",
+        SymbolTemplate = this.Resources["Diamond"] as DataTemplate,
+        Menu = new DiagramMenu()
         {
             MenuItems = new ObservableCollection<DiagramMenuItem>()
             {
@@ -134,25 +165,18 @@ BasicStencil.SymbolSource = new SymbolCollection()
                 {
                     Content = "Delete",
                     Command = StencilCommands.Delete,
+                    CommandParameter = this,
                     Icon = @"pack://application:,,,/Icons/Delete.png",
                 },
             },
         },
-    },
-                      
-    new NodeViewModel()
-    {
-        UnitWidth = 100,
-        UnitHeight = 100,
-        Shape = this.Resources["Rectangle"],
-        Key = "Basic Shapes",
     },
 
     new NodeViewModel()
     {
         UnitWidth = 100,
         UnitHeight = 100,
-        Shape = this.Resources["Plus"],
+        Shape = this.Resources["Rectangle"],
         Key = "Basic Shapes",
     },
 };

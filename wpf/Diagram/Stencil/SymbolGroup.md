@@ -178,9 +178,9 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
 
  <!--Style for Symbol Group-->
 <Style TargetType="stencil:SymbolGroup">
-    <Setter Property="FontFamily" Value="Regular"/>
+    <Setter Property="FontFamily" Value="Comic Sans MS"/>
     <Setter Property="Background" Value="#ffffff"/>
-    <Setter Property="Foreground" Value="#222222"/>
+    <Setter Property="Foreground" Value="Brown"/>
     <Setter Property="FontSize" Value="14"/>
     <Setter Property="HeaderTemplate">
     <Setter.Value>
@@ -189,7 +189,7 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
            <stencil:Header.Template>
               <ControlTemplate TargetType="stencil:Header">
                 <Grid>
-                  <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" BorderThickness="1">
+                  <Border x:Name="header" Background="#ffffff" BorderBrush="#Brown" BorderThickness="1">
                     <ContentPresenter Margin="10" Content="{Binding}"/>
                   </Border>
                 </Grid>
@@ -205,17 +205,19 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
  
 {% endtabs %}
 
+![Custom Header](Stencil_images/CustomHeader.png) 
+
 ## Expand and collapse the symbol group
 
 When there is more number of symbol groups in the stencil then you can expand and collapse the symbol groups using the [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
 
-|ExpandMode|Description|
-|----------|-----------|
-|All       | Enables or disables all the symbol group that can be expanded |
-|One       | Enables or disables only one symbol group that can be expanded |
-|OneOrMore | Enables or disables one or more symbol group that can be expanded |
-|ZeroOrMore| Enables or disables none or more symbol group that can be expanded |
-|ZeroOrOne | Enables or disables none or one symbol group that can be expanded |
+|ExpandMode|Description|Output|
+|----------|-----------|-----------|
+|All       | Enables all the symbol group that can be expanded |![ExpandMode All](Stencil_images/ExpandModeAll.png) |
+|One       | Enables only one symbol group that can be expanded |![ExpandMode One](Stencil_images/ExpandModeOne.Gif)|
+|OneOrMore | Enables one or more symbol group that can be expanded |![ExpandMode OneOrMore](Stencil_images/ExpandModeOneOrMore.Gif)|
+|ZeroOrMore| Enables none or more symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrMore.Gif)|
+|ZeroOrOne | Enables none or one symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrOne.Gif)|
 
 ## Symbol categories
 
@@ -369,8 +371,10 @@ public class StencilViewModel : Stencil
 {% endhighlight %}
 {% endtabs %}
 
+![Custom Category collection](Stencil_images/CustomCategory.gif)
+
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
 ## See Also
 
-* [How to expand all SymbolGroups ?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)
+* [How to expand all SymbolGroups?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)

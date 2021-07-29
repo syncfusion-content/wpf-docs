@@ -122,7 +122,9 @@ You can use the `Name` property of the [NodeViewModel](https://help.syncfusion.c
 
 ### Custom tool tip to the symbol
 
-By default, the `Name` property of the diagramming elements(NodeViewModel, ConnectorViewModel, GroupViewModel, and more) is displayed as a tooltip of that symbol while moving the mouse over that symbol but you can give your custom tooltip to that symbol also. Please find the following code example.
+When [SymbolsDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) as `IconsOnly`, the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolViewModel.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolViewModel_Name) property of the diagramming elements(NodeViewModel, ConnectorViewModel, GroupViewModel, and more) is displayed as a tooltip of that symbol while moving the mouse over that symbol but you can give your custom tooltip to that symbol also.
+
+Please find the following code example.
 
 {% tabs %}
 
@@ -184,7 +186,7 @@ You can show or hide the expander icon by using the [ShowDisplayModeToggleButton
 
 ## Symbols Display Mode
 
-Stencil has option to control how the symbols should be displayed. By default, symbols will be displayed only by its icon. This can be changed by using `SymbolsDisplayMode` property of `Stencil` class.
+Stencil has option to control how the symbols should be displayed. By default, symbols will be displayed only by its icon. This can be changed by using [SymbolsDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_SymbolsDisplayMode) property of `Stencil` class.
 
 {% tabs %}
 {% highlight xaml %}

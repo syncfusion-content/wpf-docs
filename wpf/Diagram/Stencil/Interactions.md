@@ -79,7 +79,7 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, the stencil is an instance of Stencil.
 
-![Preview](Stencil_images/Stencil_img14.PNG)
+![Preview](Stencil_images/ShowPreview.gif)
 
 ### Customization of Preview for drag and drop
 
@@ -107,7 +107,7 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPreview](Stencil_images/Stencil_img16.jpeg)
+![CustomPreview](Stencil_images/CustomShowPreview.gif)
 
 ## Restrict the node dropped on Diagram
 
@@ -116,13 +116,43 @@ The diagram provides support to cancel the drag and drop operation from the sten
  
 * When the ESC key is pressed.
 
+Below code example explains how to cancel item drop of basic shapes from stencil, 
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the custom stencil-->
+<local:CustomStencil x:Name="stencil" Title="Shapes"
+ExpandMode="ZeroOrMore" BorderBrush="#dfdfdf" BorderThickness="1">
+</local:CustomStencil>
+{% endhighlight %}
+{% highlight C# %}
+//Creating the diagram instance.
+SfDiagram diagram = new SfDiagram();
+//Hook the item drop event of diagram.
+(diagram.Info as IGraphInfo).ItemDropEvent += MainWindow_ItemDropEvent;
+private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
+{
+    //To cancel item drop if symbols are basic shapes.
+    if (args.ItemSource == Cause.Stencil && args.Source is INode && (args.Source as INode).Key.ToString() == "Basic Shapes")
+    {
+        args.Cancel = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Item drop cancel](Stencil_images/ItemDropCancel.gif)
+
 ## Symbol dragging outside diagram bounds
 
 By default, the cursor appears as a block cursor when dragging the symbol (from stencil) outside the diagram bounds. The SfDiagram provides supports to drag the elements within the given limitations. For details, please refer to the [DragLimit](https://help.syncfusion.com/wpf/diagram/scroll-settings/draglimit) to restrict the symbol dragging outside limited area.
 
+![Block cursor](Stencil_images/BlockCursor.gif)
+
 ## Preserving the node template when drag and drop
 
-Diagram control allows to using the serialization and deserialization approach for drag and drop the element from a stencil and it did not serialize the framework properties like the `Content` and `ContentTemplate` properties. So, you need to retain templates as a resource and reassign them once it loaded back in the diagram. This can be achieved by using the `ItemAddedEvent` to restore the `Content` and `ContentTemplate` property values.
+Diagram control allows to using the serialization and deserialization approach for drag and drop the element from a stencil and it did not serialize the framework properties like the [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_Content) and [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html#Syncfusion_UI_Xaml_Diagram_NodeViewModel_ContentTemplate) properties. So, you need to retain templates as a resource and reassign them once it loaded back in the diagram. This can be achieved by using the `ItemAddedEvent` to restore the `Content` and `ContentTemplate` property values.
 
 {% tabs %}
 {% highlight C# %}
@@ -131,11 +161,14 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 { 
     if(args.Item is CustomNode) 
     { 
-        CustomNode node = args.Item as CustomNode; 
+        CustomNode node = args.Item as CustomNode;
+        //content and contenttemplate returns null, so we have used the CustomContent and CustomContentTemplate properties to restore its values. 
         node.Content = node.CustomContent; 
-        node.ContentTemplate = App.Current.MainWindow.Resources[node.CustomContentTemplate] asDataTemplate; 
+        node.ContentTemplate = App.Current.MainWindow.Resources[node.CustomContentTemplate] as DataTemplate; 
     } 
 } 
+
+![Content Template](Stencil_images/SymbolContentTemplate.gif)
 
 {% endhighlight %}
 {% endtabs %}
