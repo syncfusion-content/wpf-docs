@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Print the SfChart
+# Print the SfChart in WPF
 
 To print the SfChart, call the Print method.
 
