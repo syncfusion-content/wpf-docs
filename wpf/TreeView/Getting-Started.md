@@ -27,7 +27,7 @@ Refer to this documentation to find more details about installing nuget packages
 
 ### Creating the project
 
-Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF.html) with data objects.
+Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.html) with data objects.
 
 ### Add SfTreeView to Project
 
