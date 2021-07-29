@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Print the SfChart
+# Print the SfChart
 
 To print the SfChart, call the Print method.
 
