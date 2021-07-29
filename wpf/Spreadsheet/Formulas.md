@@ -1663,3 +1663,6 @@ Returns data from XML content, using a specified XPath<br/><br/></td></tr>
 WEBSERVICE<br/><br/></td><td>
 Returns data from a web service on the Internet or Intranet<br/><br/></td></tr>
 </table>
+
+
+N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.
