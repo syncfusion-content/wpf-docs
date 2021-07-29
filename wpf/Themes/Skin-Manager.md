@@ -1,20 +1,20 @@
 ---
 layout: post
 title: WPF Skin Manager | Apply Themes for Syncfusion WPF controls
-description: Learn about how to apply the themes for Syncfusion WPF controls and Framework controls using skin manager.
+description: Learn about how to apply the themes for Syncfusion WPF controls and Framework controls using the skin manager.
 platform: wpf
 control: Themes
 documentation: ug
 ---
 # Getting Started with WPF Skin Manager
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply the themes for both Syncfusion and Framework controls. There are 27 built-in themes that can be applied using `SfSkinManager` for rich user interface experience. Some of the built-in themes color derivations can be customized using [WPF Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio).
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you to apply the themes for both Syncfusion and Framework controls. There are 27 built-in themes that can be applied using the `SfSkinManager` for a rich user interface experience. Some of the built-in themes color derivations can be customized using [WPF Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
-N> Theme Studio based themes provides improved consistency and uniqueness among various controls compared to other themes. It is recommended to use Theme Studio based themes in the application over other themes. 
+N> Theme Studio-based themes provide improved consistency and uniqueness among various controls when compared to other themes. It is preferable to use Theme Studio-based themes in the application over other themes. 
 
-## Themes List
+## Themes list
 
-The below table lists the available themes and assembly or nuget reference to be used in the application. 
+The following table lists the available themes as well as the assembly or NuGet reference to be used in the application. 
 
 <table>
 <tr>
@@ -262,10 +262,10 @@ Syncfusion.Themes.VisualStudio2015.Wpf.dll</td><td>
 
 ### Add SkinManager reference
 
-There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) reference in Visual Studio WPF project. The following steps will help to add through `XAML` Code,
+There are several ways for including the Syncfusion [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) reference in the Visual Studio WPF project. The following steps will help you to add by `XAML` Code:
 
-1) Add reference to `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
-2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` in XAML page.
+1) Add a reference to the `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
+2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` into a XAML page.
 
 ![Add SfSkinManager Reference](Skin-Manager_images/WPF-SkinManager-Reference.png)
 
@@ -283,16 +283,16 @@ There are several ways to add the Syncfusion [SfSkinManager](https://help.syncfu
 
 {% endtabs %}
 
-### Add theme assembly reference
+### Add a theme assembly reference
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in the application, add Reference to the corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. While applying theme to a Window, SkinManager inherits the same theme to all the elements inside Window.
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in the application, add Reference to the corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. While applying a theme to a Window, SkinManager inherits the same theme to all the elements inside the Window.
 
 ![Add theme assembly reference](Skin-Manager_images/Add-MaterialDark-Theme-Assembly-Reference.png)
 
 
 ### Set theme
 
-Themes will be applied to both Syncfusion and Framework controls by using [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). The theme assemblies have resource dictionaries with styles of controls. So, while setting the `Theme` property, the skin manager merges the theme resource dictionaries of an element to which the theme is applied and its descendants into the resource dictionary of the element to which the theme is applied or `Application.Current.Resource`.
+Themes will be applied to both Syncfusion and Framework controls by using [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_ThemeProperty) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html). The theme assemblies have resource dictionaries with styles of controls. Thus, when the `Theme` property is set, the skin manager merges the theme resource dictionaries of an element to which the theme is applied and its descendants into the resource dictionary of the element to which the theme is applied or `Application.Current.Resource`.
 
 N> While applying the theme to a Window or any element, `SkinManager` inherits the same theme to all its descendants.
 
@@ -344,7 +344,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo
 
 By default, [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) merges the required resource files from the theme assembly to the element to which the theme is applied. To apply a theme globally in an application, set the `ApplyStylesOnApplication` property to `True`. It merges all the theme resource files to `Application.Current.Resources`.
 
-N> The `SfSkinManager.ApplyStylesOnApplication` static property should be set before `InitializeComponent` of the window or in the application start up, while applying for multiple windows. 
+N> The `SfSkinManager.ApplyStylesOnApplication` static property should be set before `InitializeComponent` of the window or during application start up, when applying for multiple windows. 
 
 {% tabs %}
 
@@ -360,11 +360,11 @@ SfSkinManager.ApplyStylesOnApplication = true;
 
 To customize the theme colors and fonts in the application, call [RegisterThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_RegisterThemeSettings_System_String_Syncfusion_SfSkinManager_IThemeSetting_) method and pass the theme name and respective theme setting instance as parameters.
 
-Each theme supported in the theme studio has respective theme settings class with prefix of the theme name. For example, if `MaterialDark` is the theme name, then there will be theme settings class with the name `MaterialDarkThemeSettings`. 
+Each theme supported by the theme studio has its own theme settings class, which begins with the prefix of the themes' name. For example, if the theme name is `MaterialDark`, then there will be theme settings class called `MaterialDarkThemeSettings`. 
 
-N> Need to register theme settings before setting respective theme for window/control.
+N> Need to register theme settings before setting respective theme for window or control.
 
-Please find the complete list of theme names, respective theme settings class and supported palette.
+Please find the complete list of theme names, respective theme settings class, and supported palette.
 
 <table>
 <tr>
@@ -504,7 +504,7 @@ SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 
 ![Applied custom theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Custom-Theme-WPF-ChromelessWindow-DataGrid.png)
 
-Customize theme colors using predefined palette
+Customize theme colors using the predefined palette
 
 {% tabs %}
 
@@ -571,7 +571,7 @@ To apply themes to the derived control using `SfSkinManager`, call [SetResourceR
 
 ## Clearing SkinManager instance in an application
 
-The `SfSkinManager` will hold some instance to use it further while applying theme. But this can be cleared using the function named `Dispose(object)` that needs to be called when the theme applied from `SfSkinManager` is to be cleared as in the below code. Here **object** refers to the element whose instance needs to be cleared.
+The `SfSkinManager` will hold some instances to use it further when applying the theme. However, this can be cleared using the function named `Dispose(object)`, which must be called when the theme applied by `SfSkinManager` is to be cleared, as shown in the following code. **Object** refers to the element whose instance needs to be cleared.
 
 
 {% tabs %}
@@ -587,15 +587,15 @@ private void Window_Closed(object sender, EventArgs e)
 
 {% endtabs %}
 
-## How To
+## How to
 
-### Apply custom theme in application
+### Apply custom theme in the application
 
-To apply custom theme in the application, export custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
+To apply a custom theme in the application, export the custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
 
-For demonstration purpose, the exported theme name has been used as `MaterialDarkYellow` and exported theme assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
+For demonstration purposes, the exported theme name has been used as `MaterialDarkYellow` and assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
 
-Now, set the `SfSkinManager` attached property `Theme` as `MaterialDarkYellow;MaterialDark` for the control used in application. Since custom theme name should be updated in this format: `CustomTheme1;BaseThemeName` where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example `MaterialDarkYellow;MaterialDark`.
+Now, for the control used in the application, set the `SfSkinManager` attached property `Theme` to `MaterialDarkYellow;MaterialDark`. Since, custom theme name should be updated in the following format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `MaterialDarkYellow;MaterialDark`.
 
 {% tabs %}
 
@@ -607,19 +607,19 @@ SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
 
 {% endtabs %}
 
-### Override syncfusion themes in application
+### Override syncfusion themes in the application
 
-All Syncfusion theme [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list) control styles can be overridden by a common naming convention. A unique key is given to each and every style, so that the styles can be overridden using the `BasedOn` property.
+All Syncfusion themes are [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). A common naming convention can be used to override control styles. A unique key is given to every style so that the styles can be overridden using the `BasedOn` property.
 
 The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
 
-The following steps explain how to override the Syncfusion Themes.
+The following steps explain how to override the Syncfusion themes:
 
 **Step1:**
 
 Add respective resource dictionary from the themes assembly to the application.
 
-The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.WPF;component/<ControlName>/<ControlName>.xaml` where `ThemeName` denotes the theme name for which overridden style is going to be applied and `ControlName` denotes the control name. For example, `/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml`.
+The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.WPF;component/<ControlName>/<ControlName>.xaml`, where `ThemeName` denotes the theme name for which overridden style is going to be applied and `ControlName` denotes the control name. For example, `/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml`.
 
 {% tabs %}
 
@@ -639,7 +639,7 @@ The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.
 
 Define the new style using the `BasedOn` property.
 
-The following code snippet overrides the Syncfusion style for the ButtonAdv Control.
+The following code sample overrides the Syncfusion style for the `ButtonAdv` Control.
 
 {% tabs %}
 
@@ -662,7 +662,7 @@ The following code snippet overrides the Syncfusion style for the ButtonAdv Cont
 
 ### Change visual style at runtime
 
-Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure the new theme assembly is attached as reference in application when applying theme.
+Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure that the new theme assembly is attached as reference in the application when applying theme.
 
 ![Added references for WPF SkinManager and visual style](Skin-Manager_images/WPF-SkinManager-References.jpg)
 
