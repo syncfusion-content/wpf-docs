@@ -224,6 +224,8 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 ![WPF Pie Chart with Grouping in Percentage Mode](Series_images/wpf-pie-chart-grouping.png)
 
+N> You can explore our [WPF Pie Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pie-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pie Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml) to know how to render and configure the pie chart.
+
 ## Doughnut Chart
 
 [`DoughnutSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 

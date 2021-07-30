@@ -430,3 +430,4 @@ series.ConnectorLineStyle = style;
 
 ![Customizing Connector Line in WPF Waterfall Chart](Series_images/wpf-waterfall-chart-connector-line-customization.png)
 
+N> You can explore our [WPF Waterfall Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-waterfall-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Waterfall Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/Waterfall.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.

@@ -128,6 +128,8 @@ chart.Series.Add(series);
 
 ![WPF Chart with Linear Pyramid Mode](Series_images/wpf-chart-pyramid-linear.png)
 
+N> You can explore our [WPF Pyramid Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pyramid-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pyramid Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Funnel%20and%20Pyramid%20Chart/PyramidChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Funnel Chart
 
 FunnelSeries is similar to PyramidSeries, displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 

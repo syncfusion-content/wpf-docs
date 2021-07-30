@@ -54,6 +54,7 @@ chart.Series.Add(series);
 
 ![WPF Radar Chart](Series_images/wpf-radar-chart.png)
 
+N> You can explore our [WPF Radar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-radar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Radar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Polar%20and%20Radar%20Chart/RadarChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Polar Chart
 
@@ -438,3 +439,5 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![WPF Polar Chart with 270 Degree Rotation](Series_images/wpf-polar-chart-270-degree-rotation.png)
+
+N> You can explore our [WPF Polar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-polar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Polar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Polar%20and%20Radar%20Chart/PolarChart.xaml) to know how to render and configure the polar line type charts.
