@@ -66,7 +66,7 @@ chart.Series.Add(series);
 
 ![WPF OHLC Chart](Series_images/wpf-ohlc-chart.png)
 
-N> You can explore our [WPF OHLC Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-ohlc-chart) feature tour page for its groundbreaking features.You can also explore our [WPF OHLC Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoOpenCloseChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF OHLC Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-ohlc-chart) feature tour page for its groundbreaking features. You can also explore our [WPF OHLC Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoOpenCloseChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Candle Chart
 

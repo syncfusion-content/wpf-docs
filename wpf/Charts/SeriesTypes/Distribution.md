@@ -171,4 +171,4 @@ chart.Series.Add(series);
 
 ![Customizing Curve Line Style in WPF Chart](Series_images/wpf-chart-curve-line-style.png)
 
-N> You can explore our [WPF Histogram Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-histogram-chart) feature tour page for its groundbreaking features.You can also explore our [WPF Histogram Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/Histogram.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF Histogram Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-histogram-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Histogram Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/Histogram.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.

@@ -54,7 +54,7 @@ chart.Series.Add(series);
 
 ![WPF HiLo Chart](Series_images/wpf-hilo-chart.png)
 
-N> You can explore our [WPF HiLo Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-hilo-chart) feature tour page for its groundbreaking features.You can also explore our [WPF HiLo Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF HiLo Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-hilo-chart) feature tour page for its groundbreaking features. You can also explore our [WPF HiLo Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Range Column Chart
 

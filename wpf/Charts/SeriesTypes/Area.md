@@ -86,7 +86,7 @@ chart.Series.Add(series);
 
 ![WPF StepArea Chart](Series_images/wpf-step-area-chart.png)
 
-N> You can explore our [WPF Step Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-step-area-chart) feature tour page for its groundbreaking features.You can also explore our [WPF Step Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/StepArea.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can explore our [WPF Step Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-step-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Step Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/StepArea.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Closed Area Chart
 
