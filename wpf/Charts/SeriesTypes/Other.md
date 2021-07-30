@@ -47,6 +47,8 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 N>By default, the `BoxPlotMode` property value is Exclusive.
 
+N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-box-and-whisker-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Box and Whisker Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/BoxAndWhiskerChart.xaml) to know how to render and configure the box and whisker chart.
+
 **Customize the series Box mode**
 
 The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotModeProperty) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:

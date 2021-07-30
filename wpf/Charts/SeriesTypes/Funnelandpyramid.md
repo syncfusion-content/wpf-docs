@@ -331,6 +331,8 @@ chart.Series.Add(series);
 
 ![WPF Funnel Chart displays Gap between Segments](Series_images/wpf-funnel-chart-with-gaps.png)
 
+N> You can refer to our [WPF Funnel Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-funnel-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Funnel Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Funnel%20and%20Pyramid%20Chart/FunnelChart.xaml) to know how to render and configure the funnel chart.
+
 ## See also
 
 [`How to add gaps between segments in a pyramid or funnel series`](https://www.syncfusion.com/kb/2708/how-to-add-gaps-between-segments-in-a-pyramid-or-funnel-series)
