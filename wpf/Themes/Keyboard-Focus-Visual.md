@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Keyboard Focus Visual | Syncfusion WPF Controls
-description: This article explains how to apply High visibility keyboard visual feedback followed in fluent design for WPF Controls and Syncfusion Controls.
+description: This article explains how to apply high visibility keyboard visual feedback followed in fluent design for WPF controls and Syncfusion controls.
 platform: wpf
 control: Themes
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with Keyboard Focus Visual for WPF Controls
 
-The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to apply various keyboard focus visual styles for both Syncfusion and framework controls using [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
+The [WPF Skin Manager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) allows you to apply various keyboard focus visual styles for both Syncfusion and Framework controls using the [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html#Syncfusion_SfSkinManager_Theme_FocusVisualKind) property. 
 
-The [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FocusVisualKind.html) enum has the below values:
+The [FocusVisualKind](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.FocusVisualKind.html) enum contains the following values:
 
 * `Default` - The default keyboard focus visual style will be applied.
-* `HighVisibility` - High visibility keyboard visual feedback is an effect that shows a border for focusable elements when user moves keyboard focus to that element. 
+* `HighVisibility` - High visibility keyboard visual feedback is an effect that shows a border for focusable elements when the user moves the keyboard focus to that element. 
 
-N> The `HighVisibility` keyboard focus visual is enabled by default in Fluent theme.
+N> The `HighVisibility` keyboard focus visual is enabled by default in the Fluent theme.
 
 {% tabs %}
 

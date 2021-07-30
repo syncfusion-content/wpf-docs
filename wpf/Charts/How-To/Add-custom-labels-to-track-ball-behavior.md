@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Add custom labels to track ball behavior
+# Add custom labels to track ball behavior
 
 In the ChartTrackBallBehavior, each data point will have a label aligned vertically and horizontally using the LabelVerticalAlignment and LabelHorizontalAlignment properties by default. However, you can also add custom labels to the ChartTrackBallBehavior.
 

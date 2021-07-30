@@ -29,3 +29,6 @@ The PDF Viewer control supports viewing, reviewing, and printing PDF files in th
 * **Redaction**: Allows you to remove the sensitive text and graphics from a PDF file.
 * **PDF Layers**: Supports displaying the layer contents (adding, modifying, or deleting annotations) over the layers and adding, modifying, or deleting layers in a PDF file.
 * **Exporting**: Supports exporting the PDF pages to image and exporting form data.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

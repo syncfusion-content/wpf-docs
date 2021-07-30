@@ -118,3 +118,6 @@ namespace SaveEvents
 The following keyboard shortcuts can be used to save the files when the toolbar is enabled:
 * `Ctrl + S`: If the "Save" option is enabled in the PDF Viewer, it performs "Save" in the PDF document. Else, it performs "Save As" in the PDF document.
 * `Shift + Ctrl + S`: Performs "Save As" in the PDF document.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

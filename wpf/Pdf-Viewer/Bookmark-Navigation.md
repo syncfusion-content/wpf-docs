@@ -115,3 +115,6 @@ pdfViewerControl.IsBookmarkEnabled = false
 The following screenshot shown the Bookmark navigation in `PdfViewerControl`,
 
 ![WPF PDF Viewer Enabling and Disabling Bookmark Feature](Bookmark_Navigation_images/wpf-pdf-viewer-enabling-and-disabling-bookmark-feature.png)
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
