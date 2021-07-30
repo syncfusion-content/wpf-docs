@@ -69,6 +69,8 @@ chart.Series.Add(series2);
 
 ![WPF Line Chart](Series_images/wpf-line-chart.png)
 
+N> You can explore our [WPF Line Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-line-chart) feature tour page for its groundbreaking features.You can also explore our [WPF Line Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Line.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Step Line Chart
 
 [`StepLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect data points resulting in a step line progression. The following code illustrates how to initialize the [`StepLineSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) in chart.
@@ -104,6 +106,8 @@ SteplineChart.Series.Add(stepLine);
 {% endtabs %}
 
 ![WPF StepLine Chart](Series_images/wpf-stepline-chart.png)
+
+N> You can explore our [WPF Step Line Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-step-line-chart) feature tour page for its groundbreaking features.You can also explore our [WPF Step Line Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/StepLine.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## See also
 
