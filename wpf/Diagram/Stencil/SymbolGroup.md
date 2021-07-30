@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stencil Symbol grouping in WPF Diagram control | Syncfusion
-description: Learn here all about Port hovering animation effect support in Syncfusion WPF Diagram (SfDiagram) control ports.
+description: Learn here all about port hovering animation effect support in Syncfusion WPF Diagram (SfDiagram) control ports.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -13,7 +13,7 @@ A set of stencil symbols can be combined together to create a group and many num
 
 ## Group symbols into a category
 
-The symbols of the same category can be grouped using the [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html). The `SymbolGroupProvider` groups based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property, which has the name of the property whose value will be in the group category. In the following code example, the `MappingName` has a value of "Key" and the `SymbolGroupProvider` will create the group based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
+The symbols of the same category can be grouped using the [SymbolGroupProvider](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html). The `SymbolGroupProvider` groups based on the [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupProvider.html#Syncfusion_UI_Xaml_Diagram_Stencil_SymbolGroupProvider_MappingName) property, which has the name of the property whose value will be in the group category. In the following code example, the `MappingName` has a value of "Key" and the `SymbolGroupProvider` will create the group, based on the value of the `Key` property. The symbols with the same category name could be grouped under that category.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ You can customize the appearance of each [SymbolGroup](https://help.syncfusion.c
 
 ## Expand and collapse the symbol group
 
-When there is more number of symbol groups in the stencil then you can expand and collapse the symbol groups using the [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
+When there is more number of symbol groups in the stencil, then you can expand and collapse the symbol groups using the [ExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_ExpandMode) property of `Stencil` class. The `ExpandMode` property allows you to decide the number of symbol groups that can be expanded in a stencil.
 
 |ExpandMode|Description|Output|
 |----------|-----------|-----------|
@@ -223,7 +223,7 @@ When there is more number of symbol groups in the stencil then you can expand an
 
 There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code samples to add all symbols to the stencil. To avoid this, the shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory.html ) class. You can add more than one category using the [Categories](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_Categories) property of the stencil class.
 
-The `Categories` can be mentioned by using the following properties of the `StencilCategory` class,
+The `Categories` can be mentioned by using the following properties of the `StencilCategory` class:
 
 * Keys: Specifies the static resource key name value of the category collection.
 * Title: Specifies the title that should be displayed as a header of the category collection.
@@ -317,13 +317,13 @@ N> The custom symbol collections should be added in the App.xaml file.
 
 ## Customize the appearance of the symbols in the built-in categories 
 
-The built-in symbol categories symbol sizes are equivalent to the Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of the `PrepareSymbolViewModel` method,
+The symbol sizes for the built-in symbol categories are equivalent to the Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_PrepareSymbolViewModel_System_Object_System_String_System_String_) virtual method of the stencil class. Symbols can be modified by using the following properties of the `PrepareSymbolViewModel` method:
 
 * `Item`: To modify the symbol and its properties.
 * `SymbolName`: To know the name of the symbol.
 * `CategoryName`: To know the name of the category.
 
-Also, you can decide whether a symbol can be added to the stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_) the virtual method of stencil class. 
+Also, you can decide whether a symbol can be added to the stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Stencil.html#Syncfusion_UI_Xaml_Diagram_Stencil_Stencil_CanAddSymbol_System_String_System_String_), the virtual method of stencil class. 
 
 {% tabs %}
 {% highlight C# %}
@@ -375,6 +375,6 @@ public class StencilViewModel : Stencil
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
-## See Also
+## See also
 
 * [How to expand all SymbolGroups?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)

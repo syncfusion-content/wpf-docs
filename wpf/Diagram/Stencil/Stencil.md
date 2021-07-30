@@ -9,7 +9,7 @@ documentation: ug
 
 # Stencil in WPF Diagram (SfDiagram)
 
-The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the diagram surface many times.
+The [Stencil](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.html) is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the diagram surface multiple times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,7 +39,7 @@ Stencil stencil = new Stencil()
 
 ## Add symbols in a Stencil 
 
-The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in a Stencil that can be created using the following ways:
+The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.Symbol.html) is used to visualize the elements in a stencil that can be created using the following ways:
  
  * Using the diagram elements. 
  * Using the SymbolViewModel.
@@ -233,7 +233,7 @@ The `Constraints` property of stencil allows you to enable or disable certain fe
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-symbols)
 
-## See Also
+## See also
 
 * [How to drag and drop elements from a treeview ?](https://www.syncfusion.com/kb/10574/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagramsfdiagram)
 * [How to refresh the stencil when adding a new symbol in the symbol source ?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
