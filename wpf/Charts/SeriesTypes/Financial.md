@@ -149,6 +149,8 @@ chart.Series.Add(series);
 
 ![WPF Candle Chart](Series_images/wpf-candle-charts.png)
 
+N> You can refer to our [WPF Candlestick Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-candlestick-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Candlestick Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/CandleChart.xaml) to know how to render and configure the candle chart.
+
 
 ## Comparison Modes
 

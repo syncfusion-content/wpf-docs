@@ -56,6 +56,8 @@ chart.Series.Add(series);
 
 ![WPF Bubble Chart](Series_images/wpf-bubble-chart.png)
 
+N> You can refer to our [WPF Bubble Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Bubble Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Bubble.xaml) to know how to render and configure the bubble chart.
+
 **Show Zero Bubbles**
 
 The zero size bubble segments can be enabled or disabled by using the [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubblesProperty) property. By default, the property value is True.
