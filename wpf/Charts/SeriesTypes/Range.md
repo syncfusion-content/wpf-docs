@@ -183,6 +183,8 @@ chart.Series.Add(series);
 
 ![Displaying Closed Range Area in WPF Chart](Series_images/wpf-chart-closed-range-area.png)
 
+N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Area Chart example](https://github.com/syncfusion/wpf-demos) to know how to displays multiple series of data as range area.
+
 ## Spline Range Area Chart
 
 [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html#) is used to display continuous data points as smooth Bezier curves that vary between [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_Low) values over intervals of time and across different categories. 
@@ -225,3 +227,5 @@ chart.Series.Add(splineRangeAreaSeries);
 {% endtabs %}
 
 ![WPF Spline Range Area Chart](Series_images/wpf-spline-range-area-chart.png)
+
+N> You can explore our [WPF Spline Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Range Area Chart example](https://github.com/syncfusion/wpf-demos) to know how to displays multiple series of data as spline range area.

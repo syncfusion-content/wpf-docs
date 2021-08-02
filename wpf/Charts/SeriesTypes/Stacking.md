@@ -635,6 +635,8 @@ chart.Series.Add(series3);
 
 ![WPF Stacked Area Chart](Series_images/wpf-stacked-area-chart.png)
 
+N> You can explore our [WPF Stacked Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts/StackingAreaChart.xaml) to know how to displays multiple series of data as stacked area.
+
 ## Stacked Area100 Chart
 
 StackingArea100Series is similar to StackingAreaSeries, but the cumulative portion of each stacked element always totals 100%. 
@@ -828,3 +830,5 @@ chart.Series.Add(series3);
 {% endtabs %}
 
 ![WPF Chart with Closed Stacked area](Series_images/wpf-chart-stacked-closed-area.png)
+
+N> You can explore our [WPF Stacked Area 100 Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-area-100-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Area 100 Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts%20100/StackingArea.xaml) to know how to displays multiple series of data as stacked area.

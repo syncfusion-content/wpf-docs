@@ -100,6 +100,8 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
+N> You can explore our [WPF Spline Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Chart example](https://github.com/syncfusion/wpf-demos) to know how to displays multiple series of data as spline.
+
 ## Spline Area Chart
 
 [`SplineAreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html#) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
@@ -138,6 +140,8 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![WPF SplineArea Chart](Series_images/wpf-spline-area-chart.png)
+
+N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Area Chart example](https://github.com/syncfusion/wpf-demos) to know how to displays multiple series of data as spline area.
 
 ## Spline Type
 
