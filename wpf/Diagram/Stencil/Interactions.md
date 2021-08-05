@@ -79,7 +79,7 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, the stencil is an instance of Stencil.
 
-![Preview](Stencil_images/ShowPreview.gif)
+![Preview](Stencil_images/ShowPreview.png)
 
 ### Customization of preview for drag and drop
 
@@ -107,7 +107,7 @@ public class CustomStencil : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPreview](Stencil_images/CustomShowPreview.gif)
+![CustomPreview](Stencil_images/CustomShowPreview.png)
 
 ## Restrict the node dropped on Diagram
 
@@ -143,7 +143,7 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![Item drop cancel](Stencil_images/ItemDropCancel.gif)
+Nodes that are added in the Basic Shapes category will not be added on the diagram page when it dropped.
 
 ## Symbol dragging outside diagram bounds
 
@@ -169,7 +169,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
     } 
 } 
 
-![Content Template](Stencil_images/SymbolContentTemplate.gif)
+![Content Template](Stencil_images/SymbolContentTemplate.png)
 
 {% endhighlight %}
 {% endtabs %}
