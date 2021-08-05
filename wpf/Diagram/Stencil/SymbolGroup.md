@@ -214,7 +214,7 @@ When there is more number of symbol groups in the stencil, then you can expand a
 |ExpandMode|Description|Output|
 |----------|-----------|-----------|
 |All       | Enables all the symbol group that can be expanded |![ExpandMode All](Stencil_images/ExpandModeAll.png) |
-|One       | Enables only one symbol group that can be expanded |![ExpandMode One](Stencil_images/ExpandModeOne.Gif)|
+|One       | Enables only one symbol group that can be expanded |![ExpandMode One](Stencil_images/ExpandModeOne.png)|
 |OneOrMore | Enables one or more symbol group that can be expanded |![ExpandMode OneOrMore](Stencil_images/ExpandModeOneOrMore.Gif)|
 |ZeroOrMore| Enables none or more symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrMore.Gif)|
 |ZeroOrOne | Enables none or one symbol group that can be expanded |![ExpandMode ZeroOrMore](Stencil_images/ExpandModeZeroOrOne.Gif)|
@@ -371,7 +371,7 @@ public class StencilViewModel : Stencil
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Category collection](Stencil_images/CustomCategory.gif)
+![Custom Category collection](Stencil_images/CustomCateogry.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
 
