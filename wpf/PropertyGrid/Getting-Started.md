@@ -431,6 +431,60 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) in GitHub
 
+## Notification when property items are generated
+
+The `PropertyGrid` control notifies the users when a property item is created and is being added in the property collection of the control by using the `AutoGeneratingPropertyGridItem` event. The 
+AutoGeneratingPropertyGridItem event contains the following properties and allows us to change their value if required.
+* **Cancel**  - Allows users to prevent or allow adding the current property item in PropertyGrid.
+* [**Category**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) - Gets or sets the name of the category for the property item.
+* [**Description**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Description) - Gets or sets a desciption of the property item.
+* [**DescriptionTemplate**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) - Gets or sets the template used to display the description of SelectedItem.
+* [**DisplayName**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DisplayName) - Gets or sets a display name to the property item.
+* [**ExpandMode**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ExpandMode) - Gets or sets whether to populate nested properties of PropertyItem or not.
+* [**Order**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Order) - Gets or sets a value to arrange the property item into the property collection when the value of `SortDirection` property is **null**. 
+* [**OriginalSource**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_OriginalSource) - Gets the PropertyItem that is being added to the property collection of PropertyGrid.
+* [**ReadOnly**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ReadOnly) - Gets or sets a value indicating whether the property item is ready only or not.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                        AutoGeneratingPropertyGridItem="propertyGrid1_AutoGeneratingPropertyGridItem"
+                        Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.AutoGeneratingPropertyGridItem += propertyGrid1_AutoGeneratingPropertyGridItem;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle this event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs e)
+{
+    var categoryName = e.Category;
+    var description = e.Description;
+    var propertyItemDisplayName = e.DisplayName;
+    bool isReadOnly = e.ReadOnly;
+    bool isCancel = e.Cancel;
+    var itemOrder = e.Order;
+    var propertyItem = e.OriginalSource;
+    var descriptionTemplate = e.DescriptionTemplate;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Property item value changed notification
 
 The property item value changed in `PropertyGrid` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html) event. The `ValueChanged` event contains the old and newly changed property values by the `OldValue` and `NewValue` properties and `Property` contains the property item whose values is changed.
