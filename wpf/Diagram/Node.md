@@ -96,7 +96,7 @@ Nodes can be generated automatically with the information provided through data 
 
 ### Draw nodes
 
-Nodes can be drawn interactively by clicking and dragging the Diagram surface by using the **Drawing Tool**. For more information about drawing nodes, refer to the [Draw Nodes](/wpf/sfdiagram/tools#drawing-tools:shapes "Draw Nodes").
+Nodes can be drawn interactively by clicking and dragging the Diagram surface by using the **Drawing Tool**. For more information about drawing nodes, refer to the [Draw Nodes](https://help.syncfusion.com/wpf/diagram/tools#shapes).
 
 ## Visualize a node
 
@@ -472,7 +472,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Built-in resource
 
-Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to the [Shapes](/wpf/sfdiagram/shapes). 
+Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to the [Shapes](https://help.syncfusion.com/wpf/diagram/shapes). 
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Node-with-CustomShapes)
 
@@ -686,13 +686,13 @@ Node can be selected by clicking (tap) it.
 
 ![Select Node](Node_images/Node_img7.jpg)
 
-To explore about selection and selection related events, refer to the [Selection](/wpf/sfdiagram/interaction#selection).
+To explore about selection and selection related events, refer to the [Selection](https://help.syncfusion.com/wpf/diagram/interaction/selection).
 
 ### Drag  
 
 * Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 
-* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
+* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/diagram/interaction/dragging/previewsettings/preview-settings). 
 
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping "Snapping").
 
@@ -715,7 +715,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [Position](/wpf/sfdiagram/node#position "Position").
+* Pivot thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [Position](https://help.syncfusion.com/wpf/diagram/node#position)
 
 * The `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
@@ -730,13 +730,13 @@ To explore about selection and selection related events, refer to the [Selection
 
 ## Constraints
 
-The `Constraints` property of node allows you to enable or disable certain features. For more information about node constraints, refer to the [Node Constraints](/wpf/sfdiagram/constraints#node-constraints "Node Constraints").
+The `Constraints` property of node allows you to enable or disable certain features. For more information about node constraints, refer to the [Node Constraints](https://help.syncfusion.com/wpf/diagram/constraints#node-constraints).
 
 ## See Also
  
 * [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/diagram/annotation)
-* [How to add Port to the Node?](https://help.syncfusion.com/wpf/sfdiagram/port#node-port)
-* [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements)
+* [How to add Port to the Node?](https://help.syncfusion.com/wpf/diagram/port/port#node-port)
+* [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/diagram/stencil#using-the-diagram-elements)
 * [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
 * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
 * [How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagramsfdiagram)
