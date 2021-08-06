@@ -431,7 +431,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) in GitHub
 
-## The final point to override the property items
+## Override the property items
 
 The `PropertyGrid` control notifies the users when a property item is created and is being added in the property collection of the control by using the `AutoGeneratingPropertyGridItem` event. The 
 AutoGeneratingPropertyGridItem event contains the following properties and allows us to change their value if required.
