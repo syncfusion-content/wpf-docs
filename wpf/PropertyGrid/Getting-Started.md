@@ -485,6 +485,8 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfus
 {% endhighlight %}
 {% endtabs %}
 
+## Override editor
+
 You can also apply a custom editor or change an existing custom editor of the property items in `PropertyGrid` in the `AutoGeneratingPropertyGridItem` event as shown below.
 
 {% tabs %}
