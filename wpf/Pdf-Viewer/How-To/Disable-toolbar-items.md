@@ -31,7 +31,7 @@ private void HideTextSearchTool()
 {% endhighlight %}
 {% endtabs %}
 
-N> Apply the changes of hiding toollbar items, only after when the application window is loaded.
+N> Apply the changes of hiding toolbar items, only after when the application window is loaded.
 N> The sample project for disabling toolbar item is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Toolbar/HideToolbarItems).
 
 Similarly, other toolbar items also can be disabled. The following table lists the template names of the rest of the toolbar items along with their respective types in the order they appear in the toolbar.
