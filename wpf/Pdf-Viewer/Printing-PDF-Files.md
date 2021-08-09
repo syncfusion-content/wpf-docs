@@ -13,8 +13,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 ![PrintDialog Window Image](Concept-and-Features_images/Concept-and-Features_img1.png)
 
-N> 
-* PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
+N> PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
 
 ## Silent Printing
 
