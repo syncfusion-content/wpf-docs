@@ -31,8 +31,8 @@ You can retrieve the details of a text box form field through the [FormFieldClic
 {% tabs %}
 {% highlight c# %}
 
-	//Wire the `FormFieldClicked` event.
-	pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
+//Wire the `FormFieldClicked` event.
+pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
 
 private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs args)
 {
