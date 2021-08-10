@@ -11,7 +11,7 @@ documentation: ug
 
 ## Column Chart
 
-Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#).
+[Column Charts](https://www.syncfusion.com/wpf-controls/charts/wpf-column-chart) plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#).
 
 {% tabs %}
 
@@ -44,11 +44,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Column chart type in WPF](Series_images/column.png)
+![WPF Column Chart](Series_images/wpf-column-chart.png)
+
+N> You can also explore our [WPF Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Column.xaml) to know how to render and configure the column chart.
 
 ## Bar Chart
 
-Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#).
+[Bar Charts](https://www.syncfusion.com/wpf-controls/charts/wpf-bar-chart) are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BarSeries.html#).
 
 {% tabs %}
 
@@ -79,7 +81,9 @@ BarSeries series = new BarSeries()
 
 {% endtabs %}
 
-![Bar chart type in WPF](Series_images/bar.png)
+![WPF Bar Chart](Series_images/wpf-bar-chart.png)
+
+N> You can also explore our [WPF Bar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Bar.xaml) to know how to render and configure the bar chart.
 
 ### Spacing
 
@@ -103,7 +107,7 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 {% endtabs %}
 
-![Column Spacing support in WPF](Series_images/spacing.png)
+![WPF Chart displays Spacing between Columns](Series_images/wpf-chart-spacing.png)
 
 **Segment Spacing**
 
@@ -151,4 +155,4 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Column SegmentSpacing support in WPF](Series_images/SegmentSpacing.png)
+![WPF Chart displays Column Segment Spacing](Series_images/wpf-chart-segment-spacing.png)

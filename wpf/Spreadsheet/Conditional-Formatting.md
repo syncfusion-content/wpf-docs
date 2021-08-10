@@ -91,7 +91,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![To apply the color for conditional format based on time period in WPF SfSpreadsheet](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
+![WPF Spreadsheet Conditional Formatting with Time Period](Conditional-Formatting_images/wpf-spreadsheet-conditional-formatting-with-time-period.jpeg)
 
 ## Data Bars
 
@@ -112,7 +112,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![To apply the color for conditional format based on data bars in WPF SfSpreadsheet](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
+![WPF Spreadsheet Conditional Formatting with Data Bars](Conditional-Formatting_images/wpf-spreadsheet-conditional-formatting-with-data-bars.jpeg)
 
 ## Color Scales
 
@@ -133,7 +133,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![To apply the color for conditional format based on color scales in WPF SfSpreadsheet](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
+![WPF Spreadsheet Conditional Formatting with Color Scales](Conditional-Formatting_images/wpf-spreadsheet-conditional-formatting-with-color-scales.jpeg)
 
 
 ## Icon Sets
@@ -153,4 +153,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![To apply the conditional format for icon sets in WPF SfSpreadsheet](Conditional-Formatting_images/Conditional-Formatting_img4.jpeg)
+![WPF Spreadsheet Conditional Formatting with Icon Sets](Conditional-Formatting_images/wpf-spreadsheet-conditional-formatting-with-icon-sets.jpeg)
+
+
+N> You can refer to our [WPF Spreadsheet](https://www.syncfusion.com/wpf-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Spreadsheet example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the spreadsheet.

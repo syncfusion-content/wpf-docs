@@ -67,7 +67,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in WPF](Series_images/spline.png)
+![WPF Spline Chart](Series_images/wpf-spline-chart.png)
 
 **Dashed Lines**
 
@@ -99,6 +99,8 @@ chart.Series.Add(series);
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can explore our [WPF Spline Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Spline.xaml) to know how to displays multiple series of data as spline.
 
 ## Spline Area Chart
 
@@ -137,7 +139,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in WPF](Series_images/splinearea.png)
+![WPF SplineArea Chart](Series_images/wpf-spline-area-chart.png)
+
+N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/SplineArea.xaml) to know how to displays multiple series of data as spline area.
 
 ## Spline Type
 
@@ -172,7 +176,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
+![WPF Chart with Cardinal Spline](Series_images/wpf-chart-cardinal-spline.png)
 
 **Monotonic**
 
@@ -198,7 +202,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
+![WPF Chart with Monotonic Spline](Series_images/wpf-chart-monotonic-spline.png)
 
 **Clamped**
 
@@ -224,4 +228,4 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Clamped spline support in WPF Chart](Series_images/clamped.png)
+![WPF Chart with Clamped Spline](Series_images/wpf-chart-clamped-spline.png)

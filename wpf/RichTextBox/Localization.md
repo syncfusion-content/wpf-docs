@@ -46,16 +46,16 @@ End Class
 * Add default English(“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579) (resource) file of SfRichTextBoxAdv and SfRichTextRibbon in the ‘Resources’ folder named as Syncfusion.SfRichTextBoxAdv.WPF.resx and Syncfusion.SfRichTextRibbon.WPF.resx respectively
 * Create Resx (resource) files and named as Syncfusion.SfRichTextBoxAdv.WPF. [Culture name].resx and Syncfusion.SfRichTextRibbon.WPF. [Culture name].resx. For example, Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx for French culture. For your reference, French(“fr-FR”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile-912008822) file.
 
-![Shows the added resource file for WPF SfRichTExtBoxAdv](Localization_images/Localization_img1.jpeg)
+![Displaying Added Resource File for WPF RichTextBox](Localization_images/wpf-richtextbox-resource-file.jpeg)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.WPF.fr.resx and Syncfusion.SfRichTextRibbon.WPF.fr.resx file.
 
-![Shows the resource file property items of WPF SfRichTextBoxAdv](Localization_images/Localization_img2.jpeg)
+![Displaying Resource File Property Items of WPF RichTextBox](Localization_images/wpf-richtextbox-property-values.jpeg)
 
 N> If you have not used SfRichTextRibbon in your application, you can skip Syncfusion.SfRichTextRibbon.WPF.[Culture name].resx file mentioned above.
 
 The following screenshot shows the localization in SfRichTextBoxAdv and SfRichTextRibbon
 
-![Shows the localization of text in WPF SfRichTextBoxAdv and SfRichTextRibbon](Localization_images/Localization_img3.jpeg)
+![Displaying Localized Text in WPF RichTextBoxAdv and RichTextRibbon](Localization_images/wpf-richtextbox-localized-text.jpeg)
 
-
+N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

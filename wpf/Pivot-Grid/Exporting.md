@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in WPF Pivot Grid
 
-The pivot grid provides an option to export its content to various formats. It provides the following exporting options.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) provides an option to export its content to various formats. It provides the following exporting options.
 
 * Microsoft Excel format - Cell and pivot table mode
 * Microsoft Word format
@@ -197,3 +197,5 @@ The following table represents the number of rows and columns to be taken in acc
                 No threshold limit</td>
         </tr>
     </table>
+	
+	N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

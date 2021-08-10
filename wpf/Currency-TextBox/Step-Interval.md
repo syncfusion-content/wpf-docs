@@ -35,7 +35,7 @@ currencyTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the CurrencyTextBox value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![Changing Value by Up and Down Arrow Key in WPF CurrencyTextBox](Step-Interval_images/wpf-currency-textbox-value.png)
 
 ## Change Value on Mouse Wheel
 
@@ -60,7 +60,7 @@ currencyTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the CurrencyTextBox value by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
+![Changing Value by Mouse Wheel in WPF CurrencyTextBox](Step-Interval_images/wpf-currency-textbox-changing-value.png)
 
 ## Change Value on Click and Drag
 
@@ -85,7 +85,7 @@ currencyTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the CurrencyTextBox value by clicking and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
+![Changing Value by Clicking and Drag in WPF CurrencyTextBox](Step-Interval_images/wpf-currency-textbox-drag-and-drop.gif)
 
 ## Allow or restrict selection on focus
 
@@ -107,8 +107,8 @@ currencyTextBox.TextSelectionOnFocus = true;
 
 **TextSelectionOnFocus = "False"**
 
-![CurrencyTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
+![Restrict Text Selection in WPF CurrencyTextBox](Step-Interval_images/wpf-currency-textbox-restrict-selection.png)
 
 **TextSelectionOnFocus = "True"**
 
-![CurrencyTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
+![WPF CurrencyTextBox displays Text Selection](Step-Interval_images/wpf-currency-textbox-text-selection.png)

@@ -11,7 +11,7 @@ documentation: ug
 
 Essential PDF Viewer allows you to search and highlight the text in the PDF document. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
 
-![Concept and Features](Concept-and-Features_images/Concept-and-Features_img2.png)
+![WPF PDF Viewer Concept and Features](Concept-and-Features_images/wpf-pdf-viewer-concept-and-features.png)
 
 N>
 * PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to search the text using search box.
@@ -61,3 +61,6 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

@@ -65,7 +65,7 @@ _ribbonBar2.Items.Add(_ribbonRadioButton2)
 
 {% endtabs %}
 
-![Adding radio button](RibbonRadioButton_images/RibbonRadioButton_img1.jpg)
+![WPF Ribbon Radio Button](RibbonRadioButton_images/wpf-ribbon-radio-button.jpg)
 
 ## Add RadioButton to the simplified layout
 
@@ -133,7 +133,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonRadioButton during simplified layout](RibbonRadioButton_images/RibbonRadioButton_Simplified.png)
+![WPF Ribbon RadioButton in Simplified Layout](RibbonRadioButton_images/wpf-ribbon-radio-button-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonRadioButton can be ignored as it will be resized automatically to the standard width and height. If the RibbonRadioButton is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

@@ -166,7 +166,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-ComboBoxAdv
 ## Override selected items programmatically
 
 
-You can override the selected items programmatically by overriding the `OnItemChecked` and `OnItemUnchecked` method.
+You can override the selected items programmatically by overriding the [`OnItemChecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemChecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) and [`OnItemUnchecked`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_OnItemUnchecked_System_Object_System_Collections_ObjectModel_ObservableCollection_System_Object__) method.
 
 
 {% tabs %}
@@ -249,9 +249,11 @@ On selecting the Asia, then India and China will be automatically added into sel
 
 ![WPF ComboBoxAdv override checked and unchecked items](Comboboxadv_images/wpf-comboboxadv-override.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Dynamic-checked-items)
+
 ## Multiselect edit using tokens
 
-The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The `EnableToken` property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
+The selected items are now represented by a rounded-polygon shape with a close icon, which can be interacted with by pressing the close button. The [`EnableToken`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_EnableToken) property determines whether the ComboBoxAdv's selected items should be displayed as tokens.
 
 When an item is selected from the dropdown, it is added to the text area as a token. The appropriate item will be removed from the text box when you click the close icon.
 
@@ -296,6 +298,7 @@ You can type any text in textbox, and it will be added as a token only if it mat
 
 •	When the **Esc** key is pressed, the drop-down area will be closed if it has been opened already.
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-combobox-examples/tree/main/Samples/Token-support)
 
 
 

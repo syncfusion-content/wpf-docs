@@ -38,7 +38,7 @@ grid.Children.Add(updown);
 
 {% endtabs %}
 
-![Change the WPF UpDown value by scrolling the mouse](Interaction_images/wpf-updown-scrolling.gif)
+![Changing value by scrolling Mouse in WPF UpDown](Interaction_images/wpf-updown-scrolling.gif)
 
 ## Step
 
@@ -67,7 +67,7 @@ updown.Step = 5;
 
 {% endtabs %}
 
-![Set the step value to WPF UpDown](Interaction_images/wpf-updown-step.gif)
+![Changing Step Value in WPF UpDown by clicking Spinbutton](Interaction_images/wpf-updown-step.gif)
 
 ## Animation speed
 
@@ -94,7 +94,7 @@ updown.AnimationSpeed = 0.5;
 
 {% endtabs %}
 
-![Animation speed of WPF UpDown](Interaction_images/wpf-updown-speed1.gif)
+![Animation Speed of WPF UpDown](Interaction_images/wpf-updown-speed1.gif)
 
 ## Range Adorner
 

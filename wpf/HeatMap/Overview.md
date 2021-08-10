@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Explore the features of the HeatMap control.
-description: Explore the features of the HeatMap control.
+title: About WPF HeatMap (SfHeatMap) Control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio WPF HeatMap (SfHeatMap) control, its elements and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Overview
+# WPF HeatMap (SfHeatMap) Overview
 
 **Essential HeatMap WPF** represents tabular data values as gradient colors instead of numbers. Low and high values are different colors with different gradients.
 
-![](Images/Overview_img1.jpeg)
+![Overview_Image](Images/Overview_img1.jpeg)
 
 **Key features:**
 

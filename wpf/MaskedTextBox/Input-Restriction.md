@@ -126,7 +126,7 @@ sfMaskedEdit.Mask = @"(?=123)\d{3}";
 
 For the input mask `(?=123)\d{3}`. It allows first two digit. While entering the third digit, it will validate the regex and restrict the input. It allows the output only when the MaskText is “123” for this given input.
 
-![SfMaskedEdit allow the specific values with the mask](MaskOptions_images/mask_option_image7.jpg)
+![WPF MaskedEdit displays Specific Values with Mask](MaskOptions_images/wpf-maskededit-mask-value.jpg)
 
 ### Restrict specific values
 
@@ -151,7 +151,7 @@ sfMaskedEdit.Mask = @"(?!55)(?!000)(?!666)\d{3}";
 
 For the input mask `(?!55)(?!000)(?!666)\d{3}` – `\d{3}` denotes that the output will be of 3 character length. `(?55)` denotes the value will not begin with `55`. `(?!000)(?!666)` denotes the output cannot be `000` or `666`.
 
-![SfMaskedEdit restrict the specific values with the mask](MaskOptions_images/mask_option_image8.jpg)
+![Restrict Specific Values with Mask in WPF MaskedEdit](MaskOptions_images/wpf-maskededit-value-restriction.jpg)
 
 ### Basic Mask examples
 
@@ -285,7 +285,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value without prompt and literals](Working_with_SfMaskedEdit_images/Value.png)
+![WPF MaskedEdit displays Value without Prompt and Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-value.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -321,7 +321,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value without prompt and literals](Working_with_SfMaskedEdit_images/ExcludePromptAndLiterals.png)
+![WPF MaskedEdit displays Value in Various Formats](Working_with_SfMaskedEdit_images/wpf-maskededit-value-format.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -348,7 +348,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value with Literals](Working_with_SfMaskedEdit_images/IncludeLiterals.png)
+![WPF MaskedEdit displays Value with Literals](Working_with_SfMaskedEdit_images/wpf-maskededit-with-literals.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -375,7 +375,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value with prompt character](Working_with_SfMaskedEdit_images/IncludePrompt.png)
+![WPF MaskedEdit displays Value with Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-with-prompt.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -402,7 +402,7 @@ sfMaskedEdit.Mask = @"\([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit value with prompt character and literals](Working_with_SfMaskedEdit_images/IncludePromptAndLiterals.png)
+![WPF MaskedEdit displays Value with Prompt and Literals Character](Working_with_SfMaskedEdit_images/wpf-maskededit-with-prompt-and-iterals.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -433,7 +433,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit validate the input on key press](Working_with_SfMaskedEdit_images/Validation_keypress.png)
+![Validating Input on Key Press in WPF MaskedEdit](Working_with_SfMaskedEdit_images/wpf-maskededit-input-validation.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -460,7 +460,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit indicates the invalid input](Working_with_SfMaskedEdit_images/Validation_lostfocus.png)
+![Validating Input without Focus in WPF MaskedEdit](Working_with_SfMaskedEdit_images/wpf-maskededit-lostfocus.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -506,7 +506,7 @@ private void SfMaskedEdit_LostFocus(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit contains the validation result](Working_with_SfMaskedEdit_images/Validation_result.png)
+![WPF MaskedEdit displays Validation Result](Working_with_SfMaskedEdit_images/wpf-maskededit-validation-result.png)
 
 ## Indicates error on invalid input
 
@@ -527,7 +527,7 @@ sfMaskedEdit.ErrorBorderBrush = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit indicates the invalid input](Working_with_SfMaskedEdit_images/Errorborder.gif)
+![WPF MaskedEdit displays Error Validation](Working_with_SfMaskedEdit_images/wpf-maskededit-error-validation.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -554,7 +554,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit shows the prompt character](Working_with_SfMaskedEdit_images/PromptChar.png)
+![WPF MaskedEdit displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt-char.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -584,7 +584,7 @@ sfMaskedEdit.Mask = @"\+1 [0-9]\d{2}-[0-9]\d{2}-[0-9]\d{3}";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit shows the prompt character on got focus](Working_with_SfMaskedEdit_images/ShowPromptChar.png)
+![WPF MaskedEdit displays Prompt Character](Working_with_SfMaskedEdit_images/wpf-maskededit-prompt.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -607,7 +607,7 @@ sfMaskedEdit.Watermark = "Type here";
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with watermark text](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img4.jpg)
+![WPF MaskedEdit with Watermark Text](Working_with_SfMaskedEdit_images/wpf-maskededit-watermark-text.jpg)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 
@@ -635,7 +635,7 @@ You can change the template of the `Watermark` by using the [WatermarkTemplate](
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with custom watermark template](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img5.png)
+![Customizing Watermark Text in WPF MaskedEdit](Working_with_SfMaskedEdit_images/wpf-maskededit-watermark-customization.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/InputOptions) in GitHub
 

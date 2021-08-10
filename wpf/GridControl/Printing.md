@@ -46,7 +46,7 @@ N> The paper sizes are also marked in the following way:
 * Extra-Extra increases the space in addition to the predefined size of the paper, for example- A3._
 * Rotated -The output is rotated by a defined angle for the selected page size._
 
-For more information, check the following link: [http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx](http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx)
+For more information, check the following link: [https://docs.microsoft.com/en-us/dotnet/api/system.printing.pagemediasizename](https://docs.microsoft.com/en-us/dotnet/api/system.printing.pagemediasizename)
 
 ![Page size drop down in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
 

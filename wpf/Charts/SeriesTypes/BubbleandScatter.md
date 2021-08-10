@@ -54,7 +54,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Bubble chart type in WPF](Series_images/bubble.png)
+![WPF Bubble Chart](Series_images/wpf-bubble-chart.png)
+
+N> You can refer to our [WPF Bubble Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Bubble Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/Bubble.xaml) to know how to render and configure the bubble chart.
 
 **Show Zero Bubbles**
 
@@ -81,7 +83,7 @@ series.ShowZeroBubbles = true;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WPF](Series_images/showBubble_true.png)
+![WPF Chart displays Zero Bubbles](Series_images/wpf-chart-zero-bubble.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_ShowZeroBubblesProperty) value is false.
 
@@ -105,7 +107,7 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
+![WPF Chart without Zero Bubbles](Series_images/wpf-chart-without-zero-bubbles.png)
 
 ## Scatter Chart
 
@@ -148,7 +150,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Scatter chart type in WPF](Series_images/scatter.png)
+![WPF Scatter Chart](Series_images/wpf-scatter-chart.png)
 
 ## See also
 

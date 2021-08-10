@@ -43,7 +43,7 @@ The TreeView provides support for the following built-in commands
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with ContextMenu using built-in commands](ContextMenu_images/ContextMenu_image1.png)
+![WPF TreeView with ContextMenu using Built-in Commands](ContextMenu_images/wpf-treeview-with-contextmenu-using-built-in-commands.png)
 
 ## Custom Commands
 
@@ -152,7 +152,7 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with ContextMenu using custom commands](ContextMenu_images/ContextMenu_image2.png)
+![WPF TreeView with ContextMenu Using Custom Commands](ContextMenu_images/wpf-treeview-with-contextmenu-using-custom-commands.png)
 
 ## Events
 
@@ -179,6 +179,6 @@ private void TreeView_ItemContextMenuOpening(object sender, Syncfusion.UI.Xaml.T
 {% endhighlight %}
 {% endtabs %}
 
-
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
 
 

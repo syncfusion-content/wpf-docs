@@ -27,7 +27,7 @@ N> From v16.3.0.x onwards, this PDFium rendering engine is the default rendering
 * Next, it creates another subfolder named “x64” or “x86” based on the machine architecture.
 * Extracts the PDFium binary (PDFium.dll) into the subfolder (x64 or x86) and consumes it to render PDF files.
 
-![Pdfium Folder Structure](pdf-rendering-engines_images/pdfium folder structure.png)
+![WPF PDF Viewer Folder Structure](pdf-rendering-engines_images/wpf-pdf-viewer-folder-structure.png)
 
 N> PDFium rendering is not supported in Windows XP operating system.
 
@@ -103,3 +103,6 @@ namespace PdfViewerDemo
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

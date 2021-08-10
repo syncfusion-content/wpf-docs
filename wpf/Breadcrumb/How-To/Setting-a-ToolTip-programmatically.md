@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting a ToolTip programmatically| Hierarchical Navigator | Wpf | Syncfusion
-description: setting a tooltip programmatically
+title: ToolTip programmatically in WPF Hierarchical Navigator | Syncfusion
+description: Setting a tooltip programmatically in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

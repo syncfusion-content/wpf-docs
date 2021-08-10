@@ -7,7 +7,7 @@ control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages in Syncfusion Essential WPF
 
 [NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion WPF NuGet packages without installing the Essential Studio or WPF platform installation to development with the Syncfusion WPF controls. 
 

@@ -52,8 +52,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Radar chart type in WPF](Series_images/radar.png)
+![WPF Radar Chart](Series_images/wpf-radar-chart.png)
 
+N> You can explore our [WPF Radar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-radar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Radar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Polar%20and%20Radar%20Chart/RadarChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Polar Chart
 
@@ -94,7 +95,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Polar chart type in WPF](Series_images/polar.png)
+![WPF Polar Chart](Series_images/wpf-polar-chart.png)
 
 
 The Radar and Polar charts having the following properties in common:
@@ -152,7 +153,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed polar series in WPF Chart](Series_images/isclosed.png)
+![WPF Polar Chart with Closed Path](Series_images/wpf-chart-closed-path.png)
 
 ### DrawType
 
@@ -199,7 +200,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WPF Chart](Series_images/drawtype_area.png)
+![WPF Polar Chart with Covered Area](Series_images/wpf-polar-chart-covered-area.png)
 
 **DrawType** **as** **Line**
 
@@ -246,11 +247,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Draw type support for polar series in WPF Chart](Series_images/drawtype_line.png)
+![Displaying Line Inside WPF Polar Chart](Series_images/wpf-polar-chart-with-line.png)
 
 ### Polar Angle
 
-[`Chart axis`](https://help.syncfusion.com/wpf/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported values of `PolarAngle`. Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
+[`Chart axis`](https://help.syncfusion.com/wpf/charts/axis) provides support to render polar and radar series on 0,90,180 and 270 degrees. It can be achieved by its `PolarAngle` property.The `PolarAngle` is type of `ChartPolarAngle` and its default value is `Rotate270`.`Rotate0`, `Rotate90` and `Rotate180` are another supported values of `PolarAngle`. Both the primary and secondary axes can be rotated individually based on its `PolarAngle` value.
 
 **Rotate0**
 
@@ -296,7 +297,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate0.png)
+![WPF Polar Chart with Zero Rotation](Series_images/wpf-polar-chart-with-zero-rotation.png)
 
 
 **Rotate90**
@@ -343,7 +344,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate90.png)
+![WPF Polar Chart with 90 Degree Rotation](Series_images/wpf-polar-chart-90-rotation.png)
 
 
 **Rotate180**
@@ -390,7 +391,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate180.png)
+![WPF Polar Chart with 180 Degree Rotation](Series_images/wpf-polar-chart-180-degree-rotation.png)
 
 
 **Rotate270**
@@ -437,4 +438,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in WPF Chart](Series_images/Rotate270.png)
+![WPF Polar Chart with 270 Degree Rotation](Series_images/wpf-polar-chart-270-degree-rotation.png)
+
+N> You can explore our [WPF Polar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-polar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Polar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Polar%20and%20Radar%20Chart/PolarChart.xaml) to know how to render and configure the polar line type charts.

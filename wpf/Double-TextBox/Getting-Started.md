@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF DoubleTextBox via designer
 
@@ -25,7 +25,7 @@ You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/doubl
 
 * Syncfusion.Shared.WPF
 
-![DoubleTextBox Control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
+![Dragging WPF DoubleTextBox Control from Toolbox to Designer](Getting-Started_images/wpf-double-textbox-toolbox.png)
 
 ## Adding WPF DoubleTextBox via XAML
 
@@ -90,7 +90,7 @@ this.Content = doubleTextBox;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox control added to Window by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
+![WPF DoubleTextBox Control](Getting-Started_images/wpf-double-textbox-control.png)
 
 ## Setting Value
 
@@ -112,7 +112,7 @@ doubleTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Set the value for DoubleTextBox](Getting-Started_images/Getting-Started-img3.jpeg)
+![WPF DoubleTextBox displays Value](Getting-Started_images/wpf-double-textbox-value.jpeg)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the `Value` property.
 
@@ -158,7 +158,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
+![WPF DoubleTextBox displays Binding Value](Getting-Started_images/wpf-double-textbox-binding-value.png)
 
 ## Value Changed Notification
 
@@ -216,7 +216,7 @@ doubleTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
+![Restricts Minimum and Maximum Value of WPF DoubleTextBox](Getting-Started_images/wpf-double-textbox-value.jpeg)
 
 ## Step Interval to increase or decrease the value
 
@@ -243,7 +243,7 @@ doubleTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+![WPF DoubleTextBox displays Incrementing Interval Value](Getting-Started_images/wpf-double-textbox-step-interval.png)
 
 ## Formatting the value
 
@@ -271,7 +271,7 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![Setting DoubleTextBox Number Format](Getting-Started_images/wpf-double-text-box-number-format.png)
+![WPF DoubleTextBox with Formatting](Getting-Started_images/wpf-double-textbox-formatting.png)
 
 ## Setting the Culture
 
@@ -294,7 +294,7 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![Setting DoubleTextBox Culture](Getting-Started_images/Getting-Started_img4.png)
+![WPF DoubleTextBox with Culture](Getting-Started_images/wpf-double-textbox-culture.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -306,4 +306,4 @@ DoubleTextBox supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-text-box-theme-support.png)
+  ![Applying Theme to WPF DoubleTextBox](Getting-Started_images/wpf-double-textbox-theme.png)

@@ -405,6 +405,9 @@ public class ViewModel
 {% endtabs %}
 
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
-![Populating SfTreeGrid](Getting-Started_images/Getting-Started_img4.gif)
+![WPF TreeGrid Load Items in on-demand - TreeGrid Lazy Loading](Getting-Started_images/wpf-treegrid-on-demand-load.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-events-in-wpf-treegrid).
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

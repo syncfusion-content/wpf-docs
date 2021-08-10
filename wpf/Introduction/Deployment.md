@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Deployment| | Wpf | Syncfusion
-description: deployment
+description: Learn here all about Deployment of Syncfusion Essential Studio WPF Controls, its elements, features and more.
 platform: wpf
 control: Introduction
 documentation: ug
 ---
 
-# Deployment
+# Deployment of Essential Studio WPF
 
 ## Control Dependencies
 
@@ -430,16 +430,16 @@ Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.Pivo
 
 ## ClickOnce Deployment
 
-While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
+While processing [ClickOnce](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms996413(v=msdn.10)) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
-![](Deployment_images/Deployment_img1.png)
+![Deployment_images1](Deployment_images/Deployment_img1.png)
 
 Selecting Application Files for changing the status
 {:.caption}
 
 
 
-![](Deployment_images/Deployment_img2.png)
+![Deployment_images2](Deployment_images/Deployment_img2.png)
 
 Publish Status option changed as Include
 {:.caption}
@@ -460,14 +460,14 @@ Signing ClickOnce involves two steps,
 
 Navigate to project properties and select Signing tab. In the tab check “Sign the ClickOnce manifests” and select “Select From File” option and sign the application with the attached .pfx file.
 
-![](Deployment_images/Deployment_img3.png)
+![Deployment_images3](Deployment_images/Deployment_img3.png)
 
  ClickOnce signing
  {:.caption}
 
 In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
 
-![](Deployment_images/Deployment_img4.png)
+![Deployment_images4](Deployment_images/Deployment_img4.png)
 
 Publish options dialog box
 {:caption}

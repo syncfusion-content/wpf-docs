@@ -9,7 +9,7 @@ documentation: ug
 
 # Commands in WPF Maps (SfMap)
 
-The Map control contains the following commands:
+The [WPF Map](https://www.syncfusion.com/wpf-controls/map) control contains the following commands:
 
 * ZoomIn Command
 * ZoomOut Command
@@ -77,3 +77,4 @@ The [`PanResetCommand`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ma
 
 {% endhighlight %}
 
+N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.

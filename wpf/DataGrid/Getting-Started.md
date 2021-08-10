@@ -114,7 +114,7 @@ Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
 ### Adding control via Designer
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Displaying the addition of WPF Sfdatagrid control via the designer](Getting-Started_images/Getting-started_img1.png)
+    ![Dragging WPF DataGrid Control from Toolbox to Designer](Getting-Started_images/wpf-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -302,7 +302,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![Simple WPF DataGrid](Getting-Started_images/WPF-DataGrid.png)
+![WPF DataGrid](Getting-Started_images/WPF-DataGrid.png)
 
 ## Defining Columns
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
@@ -415,7 +415,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridNumericColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[DoubleTextBox](http://help.syncfusion.com/wpf/doubletextbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
+Represents SfDataGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ Represents SfDataGrid column that hosts {{'[DoubleTextBox](http://help.syncfusio
 GridCurrencyColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[CurrencyTextBox](http://help.syncfusion.com/wpf/currencytextbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with currency format.
+Represents SfDataGrid column that hosts {{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with currency format.
 </td>
 </tr>
 <tr>
@@ -431,7 +431,7 @@ Represents SfDataGrid column that hosts {{'[CurrencyTextBox](http://help.syncfus
 GridPercentColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[PercentTextBox](http://help.syncfusion.com/wpf/percenttextbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with percent format.
+Represents SfDataGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)'|markdownify}} controls in its cells which is used to display numeric values with percent format.
 </td>
 </tr>
 <tr>
@@ -447,7 +447,7 @@ Represents SfDataGrid column that hosts <b>MaskedTextBox</b> controls in its cel
 GridTimeSpanColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[TimeSpanEdit](http://help.syncfusion.com/wpf/timespanedit/overview)'|markdownify}} controls in its cells which is used to display format and display TimeSpan values.
+Represents SfDataGrid column that hosts {{'[TimeSpanEdit](https://help.syncfusion.com/wpf/timespan-editor/overview)'|markdownify}} controls in its cells which is used to display format and display TimeSpan values.
 </td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ Represents SfDataGrid column that hosts {{'[TimeSpanEdit](http://help.syncfusion
 GridDateTimeColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[DateTimeEdit](http://help.syncfusion.com/wpf/datetimeedit/overview)'|markdownify}} controls in its cells which is used to display and format DateTime values.
+Represents SfDataGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimepicker/overview)'|markdownify}} controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -543,7 +543,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Sorted by Column](Getting-Started_images/WPF-DataGrid-Sorting.png)
+![WPF DataGrid Sorting](Getting-Started_images/WPF-DataGrid-Sorting.png)
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -575,13 +575,13 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Grouped by Column](Getting-Started_images/WPF-DataGrid-Grouping.png)
+![WPF DataGrid Grouping](Getting-Started_images/WPF-DataGrid-Grouping.png)
 
 ### Filtering
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true` , where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
 
-![Excel like Filter in WPF DataGrid](Getting-Started_images/Excel-like-Filter-in-WPF-DataGrid.png)
+![WPF DataGrid Filtering](Getting-Started_images/wpf-datagrid-filter.png)
 
 
 ## Editing
@@ -600,4 +600,4 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfDataGrid](Getting-Started_images/Theme.png)
+  ![Applying Theme to WPF DataGrid](Getting-Started_images/wpf-datagrid-theme.png)

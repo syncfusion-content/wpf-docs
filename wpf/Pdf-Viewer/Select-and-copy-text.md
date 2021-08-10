@@ -33,6 +33,9 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 
 The selected text can be copied by clicking the copy from the context menu, which appears when clicking the right mouse button after the text is selected.
 
-![Copying the selected text](Select_and_copy_text_images/wpf_selectandcopytext.png)
+![WPF PDF Viewer Copying the Selected Text](Select_and_copy_text_images/wpf-pdf-viewer-copying-the-selected-text.png)
 
 The selected text can also be copied using the keyboard shortcut Ctrl + C.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

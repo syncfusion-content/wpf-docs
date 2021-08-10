@@ -70,7 +70,7 @@ _RibbonBar2.Items.Add(_splitbutton)
 
 {% endtabs %}
 
-![Adding DropDownMenuItem to the SplitButton](SplitButton_images/SplitButton_img1.jpg)
+![WPF Ribbon SplitButton with DropDownMenuItem](SplitButton_images/wpf-ribbon-splitbutton-with-dropdownmenuitem.jpg)
 
 
 ## Set various sizes for SplitButton
@@ -128,7 +128,7 @@ _ribbonBar2.Items.Add(_splitbutton3)
 
 {% endtabs %}
 
-![Various size forms in SplitButton](SplitButton_images/SplitButton_img2.jpg)
+![WPF Ribbon SplitButton Various Size Forms](SplitButton_images/wpf-ribbon-splitbutton-various-size-forms.jpg)
 
 N> When **simplified** layout is set, [`SplitButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.SplitButton.html) displays the image in 20 * 20 size irrespective of the size form. Also, the text in the **Large** size form will appear to the right of the image.
 
@@ -245,7 +245,7 @@ The [`IconTemplateSelector`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
  {% endtabs %}
 
- ![Image set for SplitButton using IconTemplateSelector property](SplitButton_images/SplitButton_IconTemplateSelector.png)
+ ![WPF Ribbon SplitButton IconTemplateSelector](SplitButton_images/wpf-ribbon-splitbutton-icon-template-selector.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -341,7 +341,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set for SplitButton using IconTemplate property](SplitButton_images/SplitButton_IconTemplate.png)
+ ![WPF Ribbon SplitButton IconTemplate](SplitButton_images/wpf-ribbon-splitbutton-icon-template.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -446,10 +446,10 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![SplitButton image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
+![WPF Ribbon SplitButton Normal Image Layout](SplitButton_images/wpf-ribbon-splitbutton-normal-image-layout.png)
 *Normal layout*
 
-![SplitButton image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
+![WPF Ribbon SplitButton Simplified Image Layout](SplitButton_images/wpf-ribbon-splitbutton-simplified-image-layout.png)
 *Simplified layout*
 
 ### Setting vector image 
@@ -725,10 +725,10 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![SplitButton vector image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
+![WPF Ribbon SplitButton VectorImage in Normal Layout](SplitButton_images/wpf-ribbon-splitbutton-normal-image-layout.png)
 *Normal layout*
 
-![SplitButton vector image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
+![WPF Ribbon SplitButton VectorImage in Simplified Layout](SplitButton_images/wpf-ribbon-splitbutton-simplified-image-layout.png)
 *Simplified layout*
 
 ## Add SplitButton to the simplified layout
@@ -822,7 +822,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![SplitButton during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
+![WPF Ribbon SplitButton during Simplified Layout](SplitButton_images/wpf-ribbon-splitbutton-simplified-image-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the SplitButton can be ignored as it will be resized automatically to the standard width and height. If the SplitButton is to be shown in both normal and simplified layout, **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

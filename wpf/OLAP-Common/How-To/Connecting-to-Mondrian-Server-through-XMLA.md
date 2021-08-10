@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting to Mondrian Server through XMLA| OLAPCommon | Wpf | Syncfusion
-description: connecting to mondrian server through xmla
+title: Mondrian Server through XMLA in WPF OLAPCommon control | Syncfusion
+description: Connecting to mondrian server through xmla in Syncfusion WPF OLAPCommon control, its elements, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug
@@ -21,7 +21,7 @@ The following code illustrates how to connect to the Mondrian server:
 
 // Connecting to Mondrian Server
 
-OlapDataManager DataManager = new OlapDataManager("Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog = FoodMart;"); //Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+OlapDataManager DataManager = new OlapDataManager(@"Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog = FoodMart;"); //Where localhost is the machine name which has installed Mondrian Services. For example http://bi.syncfusion.com:8080/mondrian/xmla
 
 
 
@@ -36,7 +36,8 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 ' Connecting to Mondrian Server
 
-Dim DataManager As OlapDataManager = New OlapDataManager("Datasource = [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla); Initial Catalog=FoodMart;") ’Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+Dim DataManager As New OlapDataManager("Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog =FoodMart;")
+'Where localhost is the machine name which has installed Mondrian Services. For example http://bi.syncfusion.com:8080/mondrian/xmla
 
 
 
@@ -46,7 +47,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 {% endhighlight  %}
 {% endtabs %}
 
-[Click here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
+[Refer here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
 
 
 

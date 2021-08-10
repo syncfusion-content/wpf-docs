@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handle Navigation Popup Events| Hierarchical Navigator | Wpf | Syncfusion
-description: handle navigation popup events 
+title: Handle Navigation Popup in WPF Hierarchical Navigator | Syncfusion
+description: Handle navigation popup events in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

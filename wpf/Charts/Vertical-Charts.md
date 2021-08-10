@@ -62,7 +62,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Opposed position support in WPF Chart](Vertical-Charts_images/VerticalCharts_1.png)
+![WPF Chart in Vertical Position](Vertical-Charts_images/wpf-vertical-chart.png)
 
 
 ## IsTransposed
@@ -100,7 +100,7 @@ LineSeries series = new LineSeries()
 
 {% endtabs %}
 
-![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_2.png)
+![Transposing WPF Chart to Vertical Position](Vertical-Charts_images/wpf-transposing-chart.png)
 
 
 The following example demonstrates the vertical charts.
@@ -276,4 +276,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_3.png)
+![Transposing WPF chart to Vertical Position](Vertical-Charts_images/wpf-transposing-chart-in-vertical.png)
+
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

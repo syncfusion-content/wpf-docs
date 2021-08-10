@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OlapReport in WPF OLAP Common control | Syncfusion
-description: Learn about OlapReport support in Syncfusion WPF OLAP Common control, its elements and more details.
+description: Learn about OlapReport support in Syncfusion WPF OLAP Common control, its elements, and more details.
 platform: wpf
 control: OLAP Common
 documentation: ug
@@ -170,7 +170,7 @@ dimensionElementSlicer.Hierarchy.LevelElements("Category").IncludeAvailableMembe
 
 ## Measure element
 
-In a cube, a measure is a set of values that are based on a column in the cube's [fact table](http://msdn.microsoft.com/en-us/library/aa178239(SQL.80).aspx) and are usually numeric. The measures are the central values of a cube that are analyzed. That is, measures are the numeric data of primary interest to users browsing a cube. You can select measures depend on the types of users request. Some common measures are sales, costs, expenditures, and production count.
+In a cube, a measure is a set of values that are based on a column in the cube's [fact table](https://www.microsoft.com/en-us/download/details.aspx?id=51958) and are usually numeric. The measures are the central values of a cube that are analyzed. That is, measures are the numeric data of primary interest to users browsing a cube. You can select measures depend on the types of users request. Some common measures are sales, costs, expenditures, and production count.
 
 You can create a measure element by specifying its name. The following code illustrates the creation of a measure element.
 

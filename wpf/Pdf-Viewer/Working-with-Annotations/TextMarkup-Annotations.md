@@ -49,7 +49,7 @@ The following image shows the highlight annotation being included in the PDF Doc
 
  ![highlight annotation](Annotation-images\Highlight-Annotation-1.png)
 
-## How to set the color of the highlight annotation?
+### How to set the color of the highlight annotation?
 
 The following code shows how to set default color of the included highlight annotation in code behind.
 
@@ -77,7 +77,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the opacity of the highlight annotation?
+### How to set the opacity of the highlight annotation?
 
 The following code shows how to set default opacity value of the included highlight annotation in code behind.
 
@@ -105,7 +105,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the author and subject of the highlight annotation?
+### How to set the author and subject of the highlight annotation?
 
 The following code shows how to set default Author and subject of the included highlight annotation in code behind.
 
@@ -135,7 +135,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Working with included/existing highlight annotations
+### Working with included/existing highlight annotations
 
 Highlight annotation supports adding notes along with it, also it allows editing its color and opacity. To use these options, select the included/existing highlight annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
 
@@ -143,24 +143,24 @@ Highlight annotation supports adding notes along with it, also it allows editing
 *	Properties
 *	Delete
 
-### Open Pop-up notes
+#### Open Pop-up notes
 
 We can add notes to the highlight annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected highlight annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
  ![highlight annotation](Annotation-images\Highlight-Annotation-2.png)
 
-### Properties
+#### Properties
 
 Selecting properties from the context menu will display the Highlight Properties window, which would consist of two tabs
 
 *	Appearance
 *	General 
 
-### Appearance tab
+#### Appearance tab
 
 The color and opacity of the highlight annotation can be edited using Appearance tab of Highlight Properties window.
 
-#### Editing color of the annotation
+##### Editing color of the annotation
 
 The color of the selected highlight annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the highlight annotation.
 
@@ -172,7 +172,7 @@ The following image illustrates the change in the color of the included highligh
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-4.png)
 
-#### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 The slider displayed in the Appearance tab will allow us to modify the opacity of the selected highlight annotation. You can also modify the opacity of the selected highlight annotation by giving numeric value in the opacity text box.
 
@@ -184,7 +184,7 @@ The following image illustrates the change in the opacity of the included highli
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-6.png)
 
-### General tab
+#### General tab
 
 We can add/edit the default Author and Subject to the included highlight annotation using General tab of the Highlight Properties window.
 
@@ -192,7 +192,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-7.png)
 
-### Deleting an annotation
+#### Deleting an annotation
 
 Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
 
@@ -235,7 +235,7 @@ The following image shows the underline annotation being included in the PDF Doc
 
  ![underline annotation](Annotation-images\Underline-Annotation-1.png)
 
-## How to set the color of the underline annotation?
+### How to set the color of the underline annotation?
 
 The following code shows how to set default color of the included underline annotation in code behind.
 
@@ -263,7 +263,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the opacity of the underline annotation?
+### How to set the opacity of the underline annotation?
 
 The following code shows how to set default opacity value of the included underline annotation in code behind.
 
@@ -291,7 +291,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the author and subject of the underline annotation?
+### How to set the author and subject of the underline annotation?
 
 The author and subject fields of the underline annotation can be added for the underline annotation to be added to the PDF document. The following code shows how to set default Author and subject of the included underline annotation in code behind.
 
@@ -321,7 +321,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Working with included/existing underline annotations
+### Working with included/existing underline annotations
 
 Underline annotation supports adding notes along with it, also it allows editing its color and opacity. To use these options, select the included/existing underline annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
 
@@ -329,24 +329,24 @@ Underline annotation supports adding notes along with it, also it allows editing
 *	Properties
 *	Delete
 
-### Open Pop-up notes
+#### Open Pop-up notes
 
 We can add notes to the underline annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected underline annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
 ![underline annotation](Annotation-images\Underline-Annotation-2.png)
 
-### Properties
+#### Properties
 
 Selecting properties from the context menu will display the Underline Properties window, which would consist of two tabs
 
 *	Appearance
 *	General 
 
-### Appearance tab
+#### Appearance tab
 
 The color and opacity of the underline annotation can be edited using Appearance tab of Underline Properties window.
 
-#### Editing color of the annotation
+##### Editing color of the annotation
 
 The color of the selected underline annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the underline annotation.
 
@@ -358,7 +358,7 @@ The following image illustrated the change in color of the included underline an
 
 ![underline annotation](Annotation-images\Underline-Annotation-4.png)
 
-#### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 The slider displayed in the Appearance tab will allow us to modify the opacity of the selected underline annotation. You can also modify the opacity of the selected underline annotation by giving numeric value in the opacity text box.
 
@@ -370,7 +370,7 @@ The following image illustrates the change in opacity of the included underline 
 
 ![underline annotation](Annotation-images\Underline-Annotation-6.png)
 
-### General tab
+#### General tab
 
 We can add/edit the default Author and Subject to the included underline annotation using General tab of the Underline Properties window.
 
@@ -378,7 +378,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![underline annotation](Annotation-images\Underline-Annotation-7.png)
 
-### Deleting an annotation
+#### Deleting an annotation
 
 Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
 
@@ -421,7 +421,7 @@ The following image shows the strikethrough annotation being included in the PDF
 
  ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-1.png)
 
-## How to set the color of the strikethrough annotation?
+### How to set the color of the strikethrough annotation?
 
 The following code shows how to set default color of the included strikethrough annotation in code behind.
 
@@ -449,7 +449,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the opacity of the strikethrough annotation?
+### How to set the opacity of the strikethrough annotation?
 
 The following code shows how to set default opacity value of the included strikethrough annotation in code behind.
 
@@ -477,7 +477,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the author and subject of the strikethrough annotation?
+### How to set the author and subject of the strikethrough annotation?
 
 The author and subject fields of the strikethrough annotation can be added for the strikethrough annotation to be added to the PDF document.
 The following code shows how to set default Author and subject of the included strikethrough annotation in code behind.
@@ -508,7 +508,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Working with included/existing strikethrough annotations
+### Working with included/existing strikethrough annotations
 
 
 Strikethrough annotation supports adding notes along with it, also it allows editing its color and opacity. To use these options, select the included/existing strikethrough annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
@@ -517,24 +517,24 @@ Strikethrough annotation supports adding notes along with it, also it allows edi
 *	Properties
 *	Delete
 
-### Open Pop-up notes
+#### Open Pop-up notes
 
 We can add notes to the strikethrough annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected strikethrough annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-2.png)
 
-### Properties
+#### Properties
 
 Selecting properties from the context menu will display the Strikethrough Properties window, which would consist of two tabs
 
 *	Appearance
 *	General 
 
-### Appearance tab
+#### Appearance tab
 
 The color and opacity of the strikethrough annotation can be edited using Appearance tab of StrikeOut Properties window.
 
-#### Editing color of the annotation
+##### Editing color of the annotation
 
 The color of the selected strikethrough annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the strikethrough annotation.
 
@@ -546,7 +546,7 @@ The following image illustrates the change in color of the included Strikethroug
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-4.png)
 
-#### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 
 The slider displayed in the Appearance tab will allow us to modify the opacity of the selected strikethrough annotation. You can also modify the opacity of the selected strikethrough annotation by giving numeric value in the opacity text box.
@@ -559,7 +559,7 @@ The following image illustrates the change in opacity of the included Strikethro
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-6.png)
 
-### General tab
+#### General tab
 
 We can add/edit the default Author and Subject of the included strikethrough annotation using General tab of the Underline Properties window.
 
@@ -567,7 +567,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-7.png)
 
-### Deleting an annotation
+#### Deleting an annotation
 
 Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
 
@@ -575,7 +575,7 @@ The following image illustrates how to delete the included annotation from the P
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-8.png)
 
-### Keyboard shortcuts
+## Keyboard shortcuts
 
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
 
@@ -623,3 +623,6 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

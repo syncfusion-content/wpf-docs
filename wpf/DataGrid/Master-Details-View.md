@@ -11,11 +11,11 @@ documentation: ug
 
 DataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![WPF DataGrid displaying Master-Details view](Master-Details-View_images/Master-Details-View_img1.png)
+![WPF DataGrid with Master Details View](Master-Details-View_images/wpf-datagrid-master-details-view.png)
 
 ## Generating Master-Details view from IEnumerable
 
-Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) in the underlying data object contain.
+Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable) in the underlying data object contain.
 
 Follow the below steps to generate the Master-Details View for `IEnumerable`.
 
@@ -27,7 +27,7 @@ Follow the below steps to generate the Master-Details View for `IEnumerable`.
   
 ### Create the data model with relations
 
-Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
+Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![Auto generation of two relations for WPF DataGrid](Master-Details-View_images/Master-Details-View_img2.png)
+![WPF DataGrid displays Master Details View based on Auto Generated Relations](Master-Details-View_images/wpf-datagrid-auto-generated-columns.png)
 
 #### Manually defining Relations
 
@@ -344,7 +344,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![Shows the manual generation of two relations for WPF DataGrid](Master-Details-View_images/Master-Details-View_img3.png)
+![WPF DataGrid displays Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-manual-relations.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) of first level nested grid.
 
@@ -396,15 +396,15 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displaying nested relations](Master-Details-View_images/Master-Details-View_img4.png)
+![WPF DataGrid displays Nested Relations](Master-Details-View_images/wpf-datagrid-nested-relations.png)
 
 ## Generating Master-Details view from DataTable
 
-Master-Details View’s relation can be generated for [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx), when [DataRelation](https://msdn.microsoft.com/en-in/library/system.data.datarelation.aspx) is defined between two tables in underlying [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx). 
+Master-Details View’s relation can be generated for [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable), when [DataRelation](https://docs.microsoft.com/en-us/dotnet/api/system.data.datarelation) is defined between two tables in underlying [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset). 
 
 Follow the below steps to generate the Master-Details View’s relation for DataTable,
 
-* Create the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) with relations.
+* Create the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable) with relations.
 * Defining relations
   * Auto-generating relations
   * Manually defining relations 
@@ -464,7 +464,7 @@ public class ViewModel
 
 #### Auto-generating relations
 
-SfDataGrid will automatically generate relations and inner relations based on relations defined in [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
+SfDataGrid will automatically generate relations and inner relations based on relations defined in [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset). This can be enabled by setting [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`.
 
 Bind the `Suppliers` table created in the previous step to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) and set the [SfDataGrid.AutoGenerateRelations](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AutoGenerateRelations) to `true`. 
 
@@ -484,7 +484,7 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, Master-Details View relation is auto generated based on the `Supplier_Product` relation.
 
-![WPF DataGrid displays Nested DataGrid](Master-Details-View_images/Master-Details-View_img5.png)
+![WPF DataGrid displays Nested DataGrid](Master-Details-View_images/wpf-datagrid-nested-collection.png)
 
 #### Manually defining Relations
 
@@ -518,7 +518,7 @@ this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays the hierarchical grid](Master-Details-View_images/Master-Details-View_img6.png)
+![WPF DataGrid displays Master Details View based on Manual Relations](Master-Details-View_images/wpf-datagrid-hierarchical-view.png)
 
 ## Populating Master-Details view through events
 
@@ -580,7 +580,7 @@ Now the `ItemsSource` for [DetailsViewDataGrid](http://help.syncfusion.com/cr/wp
 
 While populating Master-Details view through events, if the data to be loaded is downloaded from an external source or being read from a file, you may get a time delay. In such case, the `DetailsViewExpanding` event will be executed before the I/O processes get completes.
 
-In this case, you can use [async](https://msdn.microsoft.com/en-us/library/hh156513.aspx) and [await](https://msdn.microsoft.com/en-IN/library/hh156528.aspx) to load the data with a time delay and hold the event from executing before the data gets loaded from an external source gets completed.
+In this case, you can use [async](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) and [await](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) to load the data with a time delay and hold the event from executing before the data gets loaded from an external source gets completed.
 
 {% tabs %}
 {% highlight c# %}
@@ -753,7 +753,7 @@ Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,
 
 N> When you make any change in one [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), that change will be applied to all [DetailsViewDataGrid’s](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in the same level. For example, when you resize the first column in one [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), the same column width is applied to all [DetailsViewDataGrid’s](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) at that level. This is applicable for features like filtering, sorting, grouping and re-ordering columns also. 
 
-![WPF master details view DataGrid](Master-Details-View_images/Master-Details-View_img7.png)
+![WPF DataGrid in Master Details View](Master-Details-View_images/wpf-datagrid-details-view.png)
 
 Here, `SalesID` column is sorted in all DetailsViewDataGrid at the same level.
 
@@ -892,7 +892,7 @@ Now, you can add the custom column to `Columns` collection of [ViewDefinition.Da
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Master-details view editing](Master-Details-View_images/Master-Details-View_img8.png)
+![WPF DataGrid with Editing in Master Details View](Master-Details-View_images/wpf-datagrid-editing.png)
 
 ## Handling events for DetailsViewDataGrid
 
@@ -1674,7 +1674,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master-Details View DataGrid Customization](Master-Details-View_images/Master-Details-View_img9.png)
+![Changing Header Appearance of WPF Master Details View DataGrid](Master-Details-View_images/wpf-datagrid-header-customization.png)
 
 ### Hiding header row of Master-Details View
 
@@ -1702,7 +1702,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Nested DataGrid without Header](Master-Details-View_images/Master-Details-View_img10.png)
+![WPF Nested DataGrid without Header](Master-Details-View_images/wpf-nested-datagrid-without-header.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -1730,7 +1730,7 @@ this.dataGrid.DetailsViewPadding = new Thickness(15);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Nested DataGrid padding customization](Master-Details-View_images/Master-Details-View_img11.png)
+![Customized Padding of WPF Nested DataGrid](Master-Details-View_images/wpf-datagrid-padding-customization.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties-for-detailsviewdatagrid).
 
@@ -1804,13 +1804,13 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Master-details view DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
+![WPF Master Details View DataGrid displays Expander View](Master-Details-View_images/wpf-datagrid-expander-view.png)
 
 ## Hiding GridDetailsViewIndentCell in SfDataGrid
 
 [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowDetailsViewIndentCell) property to `False` for the respective parent grid.
 
-![WPF Master-details view DataGrid](Master-Details-View_images/Master-Details-View_img13.png)
+![WPF DataGrid displays Master Details View with Indent Cells](Master-Details-View_images/wpf-datagrid-indent-cell.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1834,7 +1834,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master-details view in DataGrid](Master-Details-View_images/Master-Details-View_img14.png)
+![WPF DataGrid displays Master Details View without Indentation](Master-Details-View_images/wpf-datgrid-without-indent-cell.png)
 
 ## Hiding the details view expander icon based on child items count
 
@@ -1861,7 +1861,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI
 {% endtabs %} 
 
 The following screenshot illustrates how to hide the state of expander icon based on child items count.
-![Image used to display hidden expander icon state of DataGird WPF](Master-Details-View_images/Master-Details-View_img15.png)
+![Hidw Expander Icon in WPF Master Details View DataGird](Master-Details-View_images/wpf-datagrid-hide-expander-icon.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
@@ -2000,7 +2000,7 @@ void dataGrid_DetailsViewCollapsed(object sender, GridDetailsViewCollapsedEventA
 
 ### Cancel expanding or collapsing operations through events
 
-You can cancel expanding operation while expanding the [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+You can cancel expanding operation while expanding the [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -2016,7 +2016,7 @@ void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDe
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}

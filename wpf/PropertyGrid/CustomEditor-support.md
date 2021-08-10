@@ -349,7 +349,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tr
 
 ## Assigning a Custom Editor by the editor type
 
-By default, when we use the `CustomEditor.Editor` to target multiple properties in `PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the editor for multiple properties, use `CustomEditor.EditorType`. Dedicated custom editors will be created for each property in `PropertyGrid` when `CustomEditor.EditorType` is used. The default value of the `EditorType` property is **null**. 
+By default, when we use the [CustomEditor.Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_Editor) to target multiple properties in `PropertyGrid`, the same custom editor instance is used for all those properties. To maintain a dedicated or separate instance of the custom editor for each property, use [CustomEditor.EditorType](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType). The default value of the `EditorType` property is **null**. 
 
 You can set the value for `EditorType` property when custom editor is initialized in `ViewModel` class as shown below.
 
@@ -422,7 +422,7 @@ You can also set value for `CustomEditorType` property for `CustomEditor` class 
 
 ## Use constructor with parameters in custom editor
 
-By default, `PropertyGrid` control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the `ConstructorParameter` property of `CustomEditor` class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
+By default, [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control only invokes the constructor without parameter in custom editor. You can invoke and pass arguments to the constructors with any number of parameters in custom editor using the [ConstructorParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_ConstructorParameters) property of [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor) class. The default value of `ConstructorParameter` is **null**. This can be achieved by following the below steps.
 
 N> `ConstructorParameter` property will work only if a value is assigned for the `EditorType` property in the `CustomEditor` class.
 

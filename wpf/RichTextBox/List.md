@@ -14,16 +14,16 @@ The SfRichTextBoxAdv supports both the single-level and multilevel lists similar
 
 Single level means that all the items in the list have the same hierarchy and indentation. It can be a numbered or a bulleted list.
 The following screenshot shows single level bulleted list.
-![Single level bulleted list](List_images/List_img1.jpeg)
+![WPF RichTexBox with Bullet List](List_images/wpf-richtextbox-bullet-list.jpeg)
 
 The following screenshot shows single level numbered list.
-![Single level numbered list](List_images/List_img2.jpeg)
+![WPF RichTextBox with Number List](List_images/wpf-richtextbox-number-list.jpeg)
 
 ## Multilevel List
 
 Multilevel means defining a list within a list where up to nine levels can be defined similar to the Microsoft Word. A multilevel list can be bulleted or numbered and also mixed with numbers, letters, and bullets. For example, one level can be bulleted and next level can be a numbered list inside it.
 The following screenshot shows multilevel list.
-![Multilevel list](List_images/List_img3.jpeg)
+![WPF RichTextBox displays Multilevel List](List_images/wpf-richtextbox-multilevel-list.jpeg)
 
 ## Adding List
 
@@ -332,3 +332,5 @@ richTextBoxAdv.Selection.ParagraphFormat.ListLevelNumber = 0
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

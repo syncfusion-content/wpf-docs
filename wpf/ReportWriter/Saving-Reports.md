@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Saving Reports | ReportWriter | WPF | Syncfusion
-description: saving reports
+description: Saving reports in Syncfusion Essential Studio WPF ReportWriter control, its elements, features, and more.
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
 
-# Saving reports
+# Saving reports in WPF ReportWriter Control
 
 Essential ReportWriter provides support for saving a report as a PDF, Word, Excel and HTML documents with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature. 
 
@@ -28,7 +28,7 @@ reportWriter.Save("Sample.pdf", WriterFormat.PDF)
 {% endhighlight %}
 {% endtabs %}
 
-![](Saving-Reports_images/Saving-Reports_img1.png) 
+![Saving-Reports_images1](Saving-Reports_images/Saving-Reports_img1.png) 
 
 ## Saving report as Excel 
 
@@ -47,7 +47,7 @@ reportWriter.Save("Sample.xls", WriterFormat.Excel)
 {% endhighlight %}
 {% endtabs %}
 
-![](Saving-Reports_images/Saving-Reports_img2.png) 
+![Saving-Reports_images2](Saving-Reports_images/Saving-Reports_img2.png) 
 
 ## Saving report as Word 
 
@@ -66,7 +66,7 @@ reportWriter.Save("Sample.doc", WriterFormat.WORD)
 {% endhighlight %}
 {% endtabs %}
 
-![](Saving-Reports_images/Saving-Reports_img3.png) 
+![Saving-Reports_images3](Saving-Reports_images/Saving-Reports_img3.png) 
 
 ## Saving report as an HTML 
 
@@ -85,4 +85,4 @@ reportWriter.Save("Sample.html", WriterFormat.HTML)
 {% endhighlight %}
 {% endtabs %}
 
-![](Saving-Reports_images/Saving-Reports_img4.png) 
+![Saving-Reports_images4](Saving-Reports_images/Saving-Reports_img4.png) 

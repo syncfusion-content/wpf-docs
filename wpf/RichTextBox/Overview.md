@@ -9,7 +9,7 @@ keywords: overview, richtextboxadv, sfrichtextboxadv
 # WPF RichTextBox (SfRichTextBoxAdv) Overview
 
 The SfRichTextBoxAdv control allows you to view, edit and print rich text content including text, images, hyperlink etc. arranged in sections, tables, paragraphs, headers, footers and comments. You can perform all editing operations using keyboard, mouse and touch.
-![RichTextBox - Overview](Overview_images/Overview_img1.jpeg)
+![WPF RichTextBox](Overview_images/wpf-richtextbox.jpeg)
 
 ## Features
 
@@ -33,3 +33,4 @@ The SfRichTextBoxAdv control supports basic features for editing rich text conte
 
 
 N> Currently, the SfRichTextBoxAdv cannot edit rich text in headers and footers.
+ You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enabling the Edit mode| Hierarchical Navigator | Wpf | Syncfusion
-description: enabling the edit mode
+description: Enabling the edit mode in Syncfusion Essential Studio WPF Hierarchy Navigator control, its elements and more.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug
@@ -23,7 +23,7 @@ hierarchyNavigator.IsEnableEditMode = true;
 {% endhighlight  %}
 
 
-![](Enabling-the-Edit-mode_images/Enabling-the-Edit-mode_img1.png)
+![Enabling-the-Edit-mode_images1](Enabling-the-Edit-mode_images/Enabling-the-Edit-mode_img1.png)
 
 
 

@@ -40,6 +40,4 @@ N> Tight and Through styles are also displayed like square wrapping style in Ric
 
 ![view of shape with square wrapping style in RichTextBox](Text-Wrapping-Style_images/square-textwrapping.PNG)
 
- 
-
-
+N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

@@ -54,15 +54,15 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of CurrencyTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![Validate minimun value of CurrencyTextBox on pressing a key](Restriction-or-Validation_images/wpf-currency-textbox-min-value-validation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of CurrencyTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![Validate maximum value of CurrencyTextBox when keyboard focus is lost](Restriction-or-Validation_images/wpf-currency-textbox-max-value-validation.jpeg)
 
 ## Restrict number of decimal digits
 
-You can change the decimal digits format in the `CurrencyTextBox` control using `CurrencyDecimalDigits` property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using `MinimumCurrencyDecimalDigits` and `MaximumCurrencyDecimalDigits` properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
+You can format the decimal digits in the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control using [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_CurrencyDecimalDigits) property. You can also restrict the decimal digits of the text within minimum and maximum limit in `CurrencyTextBox` control using [MinimumCurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_MinimumCurrencyDecimalDigits) and [MaximumCurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.CurrencyTextBox.html#Syncfusion_Windows_Shared_CurrencyTextBox_MaximumCurrencyDecimalDigits) properties. The default value of `MinimumCurrencyDecimalDigits`,`MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties is **-1**.
 
 N> If the value of `MinimumCurrencyDecimalDigits` property is greater than the value of `MaximumCurrencyDecimalDigits` property, the text of `CurrencyTextBox` will be updated based on value of `MinimumCurrencyDecimalDigits` property.
 
@@ -86,7 +86,7 @@ currencyTextBox.MinimumCurrencyDecimalDigits = 1;
 
 ![CurrencyTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/currencytextbox-wpf-restrict-numberof-decimal-digits.png)
 
-When the value of `MinimumCurrencyDecimalDigits`, `MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties are specified, `CurrencyDecimalDigits` property takes higher precedence and updates the text of `CurrencyTextBox` property. 
+When the value of `MinimumCurrencyDecimalDigits`, `MaximumCurrencyDecimalDigits` and `CurrencyDecimalDigits` properties are specified, `CurrencyDecimalDigits` property takes high precedence and updates the text of `CurrencyTextBox` property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -131,4 +131,4 @@ currencyTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![CurrencyTextBox in read-only mode](Restriction-or-Validation_images/wpf-currency-textbox-readonly.jpeg)

@@ -13,7 +13,7 @@ Essential ReportViewer is a rendering component to display reports defined in th
 
 The important features of WPF ReportViewer are listed as follows:
 
-* RDL Specification - Supports RDL Specification for SQL Server 2008 and RDL Specification for SQL Server 2008 R2 only. You can refer MSDN for list of available specifications - [msdn.microsoft.com/library/dd297486(SQL.100)](https://msdn.microsoft.com/library/dd297486(SQL.100).aspx).
+* RDL Specification - Supports RDL Specification for SQL Server 2008 and RDL Specification for SQL Server 2008 R2 only. You can refer MSDN for list of available specifications - [msdn.microsoft.com/library/dd297486(SQL.100)](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/dd297486(v=sql.100)).
 * Data sources - You can use advanced Database server data sources in the ReportViewer (SQL, Oracle and Azure).
 * Charts - Show all basic types of Charts that are available in Microsoft RDL reports.
 * Tablix - Shows the summaries and simple tables.

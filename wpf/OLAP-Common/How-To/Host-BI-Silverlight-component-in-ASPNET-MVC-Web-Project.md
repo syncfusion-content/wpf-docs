@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Host BI Silverlight component in ASPNET MVC Web Pr| OLAPCommon | Wpf | Syncfusion
-description: host bi silverlight component in asp.net mvc web project
+title: Host BI Silverlight component in WPF OLAPCommon control | Syncfusion
+description: Host bi silverlight component in asp.net mvc web project in Syncfusion Essential Studio WPF OLAPCommon control, its elements, features, and more.
 platform: wpf
 control: OLAPCommon
 documentation: ug
@@ -16,7 +16,7 @@ The following steps explain how to add the Silverlight components in MVC project
 
    A dialog window opens as shown below: 
 
-   ![](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img1.png)
+   ![Host-BI-Silverlight-component-image1](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img1.png)
 
 
 
@@ -28,13 +28,13 @@ The following steps explain how to add the Silverlight components in MVC project
 
    The New Silverlight Application dialog opens as shown in the following screenshot:
 
-   ![](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img2.png)
+   ![Host-BI-Silverlight-component-image2](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img2.png)
 
 
 
    The Solution Explorer window shows the Silverlight application with MVC project.
 
-   ![](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img3.png)
+   ![Host-BI-Silverlight-component-image3](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img3.png)
 
 
 
@@ -42,13 +42,13 @@ The following steps explain how to add the Silverlight components in MVC project
 
 4. Double-click to open the Main.xaml which is found under the Silverlight project in Solution Explorer as shown below:
 
-   ![](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img4.png)
+   ![Host-BI-Silverlight-component-image4](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img4.png)
 
 
 
 5. 	Drag and drop the OlapGrid from the toolbox to the MainPage.xaml. 
 
-   ![C:/Users/rajaduraic/Desktop/ScreenShot.png](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img5.png)
+   ![Host-BI-Silverlight-component-image5](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img5.png)
 
 
 
@@ -65,7 +65,7 @@ The following steps explain how to add the Silverlight components in MVC project
 
 
 
-   ![Description: C:/Users/dwarageshmb/Desktop/Doc Images/OlapGrid Silverlight/Service.png](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img6.png)
+   ![Host-BI-Silverlight-component-image6](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img6.png)
 
 
 
@@ -488,7 +488,7 @@ The following steps explain how to add the Silverlight components in MVC project
 
 
 
-     ![](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img7.png)
+     ![Host-BI-Silverlight-component-image7](Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_images/Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr_img7.png)
 
 
    

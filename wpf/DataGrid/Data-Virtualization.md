@@ -172,7 +172,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
+You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method call, using [BackgroundWorker](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.backgroundworker). 
 
 In the below code snippet data fetched from service using `BackgroundWorker` and [SfBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html) displayed over SfDataGrid based on [IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html#Syncfusion_Windows_Controls_Notification_SfBusyIndicator_IsBusy) property in `ViewModel`, until `BackgroundWorker` completes its action.
 
@@ -272,7 +272,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![wpf datagrid shows incremental loading of data](Data-Virtualization_images/Data-Virtualization_img1.png)
+![WPF DataGrid displays Incremental Data Loading](Data-Virtualization_images/wpf-datagrid-loading-data.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
 

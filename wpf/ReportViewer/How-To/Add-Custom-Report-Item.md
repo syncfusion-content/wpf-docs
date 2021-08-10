@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Report Item
-description: Creating a custom report item run-time component in report viewer
+title: Custom Report Item in WPF ReportViewer control | Syncfusion
+description: Creating a custom report item run-time component in Syncfusion WPF ReportViewer control, its elements, and more.
 platform: WPF
 control: ReportViewer
 documentation: ug
@@ -16,9 +16,9 @@ The run-time component of the custom report item is implemented by using CLS-com
 ### Create report item assembly
 
 1.	Open the Visual Studio and select the class library project type, then name the project as "Syncfusion.Extensions.BarcodeCRI" for the run-time component.
-    ![](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
+    ![Add-Custom-Report-Item-images2](Add-Custom-Report-Item-images/Custom-Report-Item-2.png)
 2.	Add the reference "Syncfusion.ReportControls.Wpf", "Syncfusion.SfBarcode.WPF" and "Syncfusion.Shared.WPF" for the extension project.
-    ![](Add-Custom-Report-Item-images/Custom-Report-Item-3.png)
+    ![Add-Custom-Report-Item-images3](Add-Custom-Report-Item-images/Custom-Report-Item-3.png)
     
     N> Refer the above assemblies from the below installed location.For Essential Studio: C:\Program Files (x86)\Syncfusion\Essential Studio{{ site.releaseversion }}\Assemblies   
 3.  Add a class "BarcodeCustomReportItem" by inheriting the `ICustomReportItem` interface.
@@ -205,7 +205,7 @@ You must add the `ReportItem` tag for all newly added custom report item with th
 
 After creating the config file, add it to the report viewer application. Run the application, output with the barcode custom report item is rendered as below.
 
-![](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
+![Add-Custom-Report-Item-images1](Add-Custom-Report-Item-images/Custom-Report-Item-1.png)
 
 Shows the invoice report rendered with the barcode custom report item.
    {:.caption}	

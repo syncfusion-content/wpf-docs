@@ -62,7 +62,7 @@ void treeGrid_QueryCoveredRange(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeG
 {% endhighlight %}
 {% endtabs %}
 
-![Merging in WPF treegrid](MergeCells_images/MergeCells_img1.png)
+![WPF TreeGrid with Merged Cells](MergeCells_images/wpf-treegrid-merge-cells.png)
 
 ## Merge all cells in an entire parent node
 
@@ -168,6 +168,9 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-![Merging in WPF treegrid](MergeCells_images/MergeCells_img2.png)
+![WPF TreeGrid with Merged Parent Nodes](MergeCells_images/wpf-treegrid-merge-parent-nodes.png)
 
 Refer to [Sample](https://github.com/SyncfusionExamples/how-to-merge-cells-in-a-row-in-wpf-treegrid).
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

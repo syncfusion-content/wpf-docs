@@ -33,6 +33,7 @@ Text wrapping refers to how shapes fit with surrounding text in a document. Plea
 Starting from v19.1.0.x, RichTextBox preserves the position properties of the shape and displays the shape based on position properties. It does not support modifying the position properties. Whereas the shape will be automatically moved along with text edited if it is positioned relative to the line or paragraph.
 
 N> At present, the shape with text wrapping style `In-Line with Text` can only be dragged and dropped anywhere in the document.
+You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Report Writer API | ReportWriter | WPF | Syncfusion
-description: report writer api
+description: Learn here about List of ReportWriter API of Syncfusion Essential Studio for WPF, its elements, features, and more.
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
 
-# ReportWriter API
+# ReportWriter API of Essential Studio WPF
 
 ## Constructors
 

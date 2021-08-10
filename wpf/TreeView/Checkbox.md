@@ -126,7 +126,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![WPF BoundMode TreeView with CheckBox](Checkbox_images/Checkbox_image2.png)
+![WPF TreeView with CheckBox in BoundMode](Checkbox_images/wpf-treeview-with-checkbox-in-boundmode.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-with-check-boxes-in-bound-mode-in-wpf-treeview)
 
@@ -213,7 +213,7 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
 {% endhighlight %}
 {% endtabs %}
 
-![WPF UnboundMode TreeView with CheckBox](Checkbox_images/Checkbox_image1.png)
+![WPF TreeView with CheckBox in UnboundMode](Checkbox_images/wpf-treeview-with-checkbox-in-unboundmode.png)
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-work-with-check-boxes-in-unbound-mode-in-wpf-treeview)
 
@@ -275,4 +275,4 @@ private void SfTreeView_NodeChecked(object sender, NodeCheckedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> `NodeChecked` event occurs only in UI interactions.
+N> `NodeChecked` event occurs only in UI interactions. You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

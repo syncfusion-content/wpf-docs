@@ -40,7 +40,7 @@ namespace PdfViewerDemo
 
 When opening a password protected PDF file in run time using the Open button available in the toolbar, the following built-in password dialog window helps to to view the file contents, requesting the correct password from the user. In the password textbox, enter the correct password and click `OK`.
 
-![Password dialog window](password-images/password_window.png)
+![WPF PDF Viewer Password Dialog Window](password-images/wpf-pdf-viewer-password-dialog-window.png)
 
 ## Hide the built-in password dialog
 
@@ -84,3 +84,6 @@ namespace PasswordPDFDemo
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

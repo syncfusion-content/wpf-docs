@@ -169,7 +169,7 @@ The following section illustrates how to insert hyperlink field with ScreenTip i
 2.	Enter the display text, URL link and ScreenTip text.
 3.	Click on OK to close the dialog box.
 
-![Hyperlink](Hyperlink_images/screentip_ug3.PNG)
+![Adding Hyperlink to WPF RichTextBox](Hyperlink_images/wpf-richtextbox-insert-hyperlink.PNG)
 
 N> ScreenTip option is supported from V18.4.0.30
 
@@ -224,3 +224,5 @@ RemoveHandler richTextBoxAdv.RequestNavigate, AddressOf RichTextBoxAdv_RequestNa
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.

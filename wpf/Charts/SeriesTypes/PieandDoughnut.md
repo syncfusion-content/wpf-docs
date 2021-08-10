@@ -44,7 +44,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pie chart type in WPF](Series_images/pie.png)
+![WPF Pie Chart](Series_images/wpf-pie-chart.png)
 
 The rendering size of the PieSeries can be controlled using [`PieCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_PieCoefficient) property as in below code example.
 
@@ -83,7 +83,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![PieCoefficient support in WPF Chart](Series_images/pie_1.png)
+![WPF Chart with PieCoefficient](Series_images/wpf-chart-with-pie-coefficient.png)
 
 ### Group small data points into “others”
 The small segments in the pie chart can be grouped into the “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_GroupMode) properties of PieSeries.
@@ -92,7 +92,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 **Pie series without grouping**
 
-![Pie series without grouping feature](Series_images/NonGroupingPie.png)
+![WPF Pie Chart without Grouping](Series_images/wpf-chart-non-grouping-pie.png)
 
 **Pie series with grouping (Mode - Value)**
 
@@ -135,7 +135,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% endtabs %}
 
-![Pie series with grouping feature in value mode](Series_images/GroupingPie.png)
+![WPF Pie Chart with Grouping](Series_images/wpf-pie-chart-grouping.png)
 
 **Pie series with grouping (Mode - Angle)**
 
@@ -178,7 +178,7 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Pie series with grouping feature in angle mode](Series_images/GroupingPie.png)
+![WPF Pie Chart with Grouping in Angle Mode](Series_images/wpf-pie-chart-grouping.png)
 
 **Pie series with grouping (Mode - Percentage)**
 
@@ -222,7 +222,9 @@ pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Pie series with grouping feature in percentage mode](Series_images/GroupingPie.png)
+![WPF Pie Chart with Grouping in Percentage Mode](Series_images/wpf-pie-chart-grouping.png)
+
+N> You can explore our [WPF Pie Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-pie-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Pie Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Circular%20Charts/PieChart.xaml) to know how to render and configure the pie chart.
 
 ## Doughnut Chart
 
@@ -260,7 +262,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut chart type in WPF](Series_images/doughnut.png)
+![WPF Doughnut Chart](Series_images/wpf-doughnut-chart.png)
 
 The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_PieCoefficient) in PieSeries.
 
@@ -296,7 +298,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![DoughnutCoefficient support in WPF Chart](Series_images/doughnut_1.png)
+![WPF Chart with Doughnut Coefficient](Series_images/wpf-chart-with-doughnut-coefficient.png)
 
 **Size**
 
@@ -335,7 +337,7 @@ chart.Series.Add(doughnut1);
 
 {% endtabs %}
 
-![DoughnutSize support in WPF Chart](Series_images/HoleSize.png)
+![Customizing Doughnut Size in WPF Chart](Series_images/wpf-chart-doughnut-size.png)
 
 **Hole Size**
 
@@ -361,7 +363,7 @@ DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 {% endtabs %}
 
-![DoughnutHoleSize support in WPF Chart](Series_images/doughnutHole.png)
+![Customizing Doughnut HoleSize in WPF Chart](Series_images/wpf-chart-doughnut-hole-size.png)
 
 
 ## Semi Pie and Doughnut
@@ -405,7 +407,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi pie support in WPF Chart](Series_images/semipie.png)
+![WPF Semi Pie Chart](Series_images/wpf-semipie-chart.png)
 
 {% tabs %}
 
@@ -444,7 +446,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi doughnut support in WPF Chart](Series_images/semidoughnut.png)
+![WPF Semi Doughnut Chart](Series_images/wpf-semi-doughnut-chart.png)
 
 ## Stacked doughnut
 
@@ -493,7 +495,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![Stacked doughnut chart in WPF](Series_images/StackedDoughnut.png)
+![WPF Stacked Doughnut Chart](Series_images/wpf-stacked-doughnut-chart.png)
 
 ### Add content to the center of doughnut chart
 You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CenterView) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html). The binding context of the [`CenterView`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CenterView) will be the respective [`DoughnutSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
@@ -540,7 +542,7 @@ doughnutSeries.CenterView = centerView;
 
 {% endtabs %}	
 
-![Stacked doughnut chart with center view](Series_images/StackedDoughnutCenterView.png)
+![WPF Stacked Doughnut Chart with Center View](Series_images/wpf-stacked-doughnut-chart-center-view.png)
 
 ## Explode Segments
 
@@ -592,7 +594,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding a segment of accumlation series in WPF Chart](Series_images/exploderadius.png)
+![WPF Chart displays Exploded Segment of Accumulation Series](Series_images/wpf-pie-chart-exploded-segment.png)
 
 N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
@@ -637,7 +639,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding all the segments of accumlation series in WPF Chart](Series_images/explodeall.png)
+![WPF Chart displays Exploded Segments of Accumlation Series](Series_images/wpf-chart-exploded-segments.png)
+
+N> You can refer to our [WPF Doughnut Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-doughnut-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Doughnut Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Circular%20Charts/DoughnutChart.xaml) to know how to render and configure the doughnut chart.
 
 ## See also
 

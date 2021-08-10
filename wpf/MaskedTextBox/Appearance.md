@@ -32,7 +32,7 @@ sfMaskedEdit.SelectionBrush = Brushes.Green;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with yellow background](Appearence_Images/Background.png)
+![Changing Background Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-background.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -57,7 +57,7 @@ sfMaskedEdit.CaretBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with red foreground](Appearence_Images/Foreground.png)
+![Changing Foreground Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-foreground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -80,7 +80,7 @@ sfMaskedEdit.BorderBrush = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with yellow background](Appearence_Images/BorderColor.png)
+![Changing Border Color of WPF MaskedEdit](Appearence_Images/wpf-maskededit-border-color.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -103,7 +103,7 @@ sfMaskedEdit.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-![SfMaskedEdit with RightToLeft flow direction](Appearence_Images/FlowDirection.png)
+![Changing Flow Direction of WPF MaskedEdit](Appearence_Images/wpf-maskededit-flow-direction.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Appearance) in GitHub
 
@@ -115,4 +115,4 @@ SfMaskedEdit supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
   
-  ![Setting theme to WPF SfMaskedEdit](Getting-Started_images/SfMaskedEdit_theme.png)
+  ![Applying Theme to WPF SfMaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)

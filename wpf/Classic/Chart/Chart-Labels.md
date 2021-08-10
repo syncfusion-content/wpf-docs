@@ -405,7 +405,7 @@ LegendItemsPanel</td><td>
 Sets a template panel for arranging legend items.  </td><td>
 Dependency Property</td><td>
 ItemsPanelTemplate </td><td>
-{{ '[ItemsPanelTemplate Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx)' | markdownify }}</td></tr>
+{{ '[ItemsPanelTemplate Class](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemspaneltemplate)' | markdownify }}</td></tr>
 </table>
 
 ### Customizing legend Panel

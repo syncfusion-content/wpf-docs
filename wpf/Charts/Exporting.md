@@ -20,7 +20,7 @@ Chart can be exported into image format. The following are the supported image f
 
 The following screenshot illustrates the chart, which has to be exported.
 
-![Chart For Printing](Exporting_images/Exporting.png)
+![WPF Chart For Printing](Exporting_images/wpf-chart-for-printing.png)
 
 ## Methods
 
@@ -72,11 +72,11 @@ private void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-![Chart For Printing](Exporting_images/ExportLocation.png)
+![WPF Chart For Export Location](Exporting_images/wpf-chart-for-export-location.png)
 
 The image will be saved in the specified location in the SaveFileDialog.
 
-![Chart For Printing](Exporting_images/Exported.png)
+![WPF Chart Exported](Exporting_images/wpf-chart-exported.png)
 
 ### Export SfChart to image without rendering in UI
 
@@ -103,10 +103,12 @@ chart.Save("Chart.png");
 
 {% endhighlight  %}
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
-[`How to export chart as Image`](https://help.syncfusion.com/wpf/sfchart/exporting#)
+[`How to export chart as Image`](https://help.syncfusion.com/wpf/charts/exporting)
 
-[`How to print the chart`](https://help.syncfusion.com/wpf/sfchart/printing#)
+[`How to print the chart`](https://help.syncfusion.com/wpf/charts/printing)
 
 [`How to read image byte while rendering chart`](https://www.syncfusion.com/kb/2584/how-to-read-image-byte-while-rendering-chart)

@@ -20,13 +20,13 @@ The color of the barcode can be customized by modifying the DarkBarBrush and Lig
 
 The DarkBarBrush represents the color of the dark bar (Black color usually) and the LightBarBrush represents the color of the gap between two adjacent black bars (White color usually).
 
-![Barcode-Customization_img1](Barcode-Customization_images/Barcode-Customization_img1.png)
+![WPF-Barcode-Red-Color-Combination](Barcode-Customization_images/wpf-barcode-red-color-combination.png)
 
 Barcode color combinations- Red
 {:.caption}
 
 
-![Barcode-Customization_img2](Barcode-Customization_images/Barcode-Customization_img2.png)
+![WPF-Barcode-Blue-Color-Combination](Barcode-Customization_images/wpf-barcode-blue-color-combination.png)
 
 Barcode color combinations- Blue
 {:.caption}

@@ -145,7 +145,7 @@ e.PdfDocumentTemplate.Top = header;
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img1](Export-To-PDF_images/Export-To-PDF_img1.png)
+![WPF TreeGrid Data Exporting to PDF Page](Export-To-PDF_images/wpf-treegrid-export-to-pdf.png)
 
 Here, `string` is inserted in the header of the exported PDF file using the [DrawString](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert any image, line, etc., using [DrawImage](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_), etc., methods respectively.
 
@@ -204,7 +204,7 @@ fileStream.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
+After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -255,7 +255,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img2](Export-To-PDF_images/Export-To-PDF_img2.png)
+![WPF TreeGrid Data Exporting to PDF without Saving](Export-To-PDF_images/wpf-treegrid-export-data-without-saving.png)
 
 ## Cell appearance customization when exporting
 
@@ -283,7 +283,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img3](Export-To-PDF_images/Export-To-PDF_img3.png)
+![Customizing Cell Style based on CellType in Exported WPF TreeGrid Data](Export-To-PDF_images/wpf-treegrid-cell-style.png)
 
 ### Cell styling based on the TreeGridPdfExportingOptions in PDF
 
@@ -350,7 +350,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img4](Export-To-PDF_images/Export-To-PDF_img4.png)
+![Customizing Exported WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-customize-exported-content.png)
 
 ### Export images to PDF 
 
@@ -398,7 +398,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img5](Export-To-PDF_images/Export-To-PDF_img5.png)
+![Exporting Image to PDF page from WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-export-with-image.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
 
@@ -498,6 +498,9 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-![Export-To-PDF_img6](Export-To-PDF_images/Export-To-PDF_img6.png)
+![Exporting with Arabic Language Text from WPF TreeGrid to PDF Page](Export-To-PDF_images/wpf-treegrid-export-arabic-text.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

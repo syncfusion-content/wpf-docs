@@ -217,3 +217,5 @@ public partial class MainWindow: Window {
 Similarly, you can define the custom tooltip to specific areas with respect to individual cell styles using the `CustomToolTipTemplateKey` property of row, column, summary header, and value cell styles.
 
 ![PivotGrid shows custom ToolTip](ToolTip-Images/PivotGrid shows CustomToolTip.png)
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

@@ -98,3 +98,5 @@ Displays the summary data of rows or columns at the beginning of value cells.
 Displays the summary cells at the bottom alone and child members that appear below the parent member with some indent space.
 
 ![Displaying the PivotGrid in Excel-like layout](Grid-Layout-Images/PivotGrid with excel like layout.png)
+
+N> You can refer to our [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

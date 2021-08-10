@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Host under the mouse | DockingManager | wpf | Syncfusion
-description: use host under the mouse
+description: Use host under the mouse in Syncfusion Essential Studio WPF DockingManager control, its elements and more.
 platform: wpf
 control: DockingManager
 documentation: ug

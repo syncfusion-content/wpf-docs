@@ -23,11 +23,11 @@ Built-in validations through `IDataErrorInfo`, `INotifyDataErrorInfo` and Data a
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) / [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx).
+SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0).
  
 ### Using IDataErrorInfo
  
-You can validate the data by inheriting the [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) interface in model class.
+You can validate the data by inheriting the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,11 +83,11 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid using IDataErrorInfo](Data-Validation_images/Data-Validation_img1.png)
+![Data validation in WPF DataGrid using IDataErrorInfo](Data-Validation_images/wpf-datagrid-data-validation.png)
 
 ### INotifyDataErrorInfo
 
-You can validate the data by inheriting the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in model class.
+You can validate the data by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,7 +140,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img2.png)
+![Data validation in WPF DataGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-with-data-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -148,7 +148,7 @@ You can validate the data using **data annotation attributes** by setting [SfDat
 
 ### Using different annotations
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +172,7 @@ public decimal Price
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
+The string type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [String Length attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0)
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ public string CustomerName
 {% endhighlight %}
 {% endtabs %}
 
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -435,7 +435,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Customizing error icon](Data-Validation_images/Data-Validation_img3.png)
+![WPF DataGrid displays Data Validation Errors with Error Icon](Data-Validation_images/wpf-datagrid-error-icon.png)
 
 ### Change the color of error icon
 
@@ -583,7 +583,7 @@ You can change the validation error template color of the `GridCell` by changi
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Changing color of error icon](Data-Validation_images/Data-Validation_img4.png)
+![Data Validation Error Icon with Custom Color in WPF DataGrid](Data-Validation_images/wpf-datagrid-error-icon-with-custom-color.png)
 
 ### Change the cursor over error icon
 
@@ -737,7 +737,7 @@ You can change the validation error template cursor of the `GridCell` by chang
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Change the cursor on error icon](Data-Validation_images/Data-Validation_img5.png)
+![Changing Cursor Style on Error Icon in WPF DataGrid](Data-Validation_images/wpf-datagrid-change-cursor-style.png)
 
 ## Data validation error tip (help tip) customization
 
@@ -836,15 +836,15 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Change the background and foreground color of error tip](Data-Validation_images/Data-Validation_img6.png)
+![WPF DataGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-datagrid-error-tip-color-customization.png)
 
 ## Showing error details in RowHeader
 
-SfDataGrid support to show the error icon in [GridRowHeaderCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx) or [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
+SfDataGrid support to show the error icon in [GridRowHeaderCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) or [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0) property.
 
 ### Using IDataErrorInfo
 
-You can show the error information in row header by setting [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
+You can show the error information in row header by setting [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
 
 {% tabs %}
 {% highlight c# %}
@@ -864,11 +864,11 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Showing error information using IDataErrorInfo](Data-Validation_images/Data-Validation_img7.png)
+![WPF DataGrid displays Error Information of Data Validation using IDataErrorInfo](Data-Validation_images/wpf-datagrid-error-info-in-row-header.png)
 
 ### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default error message **Row Containing Error** will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message **Row Containing Error** will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}
@@ -887,7 +887,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Showing error information using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img8.png)
+![WPF DataGrid displays Error Information of Data Validation using INotifyDataErrorInfo](Data-Validation_images/wpf-datagrid-error-tip.png)
 
 ## Data validation with Master-details view
 
@@ -896,7 +896,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) / [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) property of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid).
+You can validate the bound data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) or [Data Annotation](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations?view=net-5.0) Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) property of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid).
 
 {% tabs %}
 {% highlight xaml %}
@@ -933,7 +933,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![Built in Data validation in WPF SfDataGrid](Data-Validation_images/Data-Validation_img9.png)
+![Data Validation with Master-DetailsView in WPF SfDataGrid](Data-Validation_images/wpf-datagrid-validation-in-master-details-view.png)
 
 ### Custom validation through events
 
@@ -1149,7 +1149,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![Data validation in WPF SfDataGrid Validation with Checkbox column](Data-Validation_images/Data-Validation_img10.png)
+![WPF DataGrid displays Data Validation with CheckBox Column](Data-Validation_images/wpf-datagrid-checkbox-validation.png)
 
 ## Show validation errors when using UseDrawing
 

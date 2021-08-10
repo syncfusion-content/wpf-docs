@@ -259,7 +259,7 @@ In the example both the MDI parent ribbon and child view1's ribbon has ribbon ta
 
 If you change the [MergeType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonTab~MergeType.html) of ribbon tab in child view1 as `Add`, then `Home` tab will be added as new tab like `View1 Tab2` 
 
-![Changing the MergeType in Ribbon Merging](menu-merging-images/wpf-ribbon-mdi-merging2.png)
+![Changing MergeType in WPF Ribbon Merging](menu-merging-images/wpf-ribbon-mdi-merging2.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-and-TDI-merging)
 
@@ -310,7 +310,7 @@ In the below code, the [RibbonTab.MergeOrder](https://help.syncfusion.com/cr/wpf
 
 {% endtabs %}
 
-![Setting ribbon merge order](menu-merging-images/wpf-ribbon-merge-order.PNG)
+![Changing WPF Ribbon Merge Order](menu-merging-images/wpf-ribbon-merge-order.PNG)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-ribbon-MDI-and-TDI-merging)
 

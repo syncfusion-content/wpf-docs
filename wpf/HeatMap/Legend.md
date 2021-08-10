@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend gives visual guideline for mapping between value and color.
-description: How to create and configure legend for HeatMap
+title: Legend in WPF HeatMap (SfHeatMap) control | Syncfusion
+description: How to create and configure legend for Syncfusion Essential Studio WPF HeatMap (SfHeatMap) control, its elements and more.
 platform: wpf
 control: SfHeatMap
 documentation: ug
 ---
 
-# Legend
+# Legend in WPF HeatMap (SfHeatMap) control
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
 ## Create Legend
@@ -28,7 +28,7 @@ Legend can be created with color mapping as shown below,
 
 Resultant legend will be like following image,
 
-![](Images/Legend.png)
+![Legend_Image](Images/Legend.png)
 
 ## Legend Mode
 There are two modes for Legend
@@ -44,7 +44,7 @@ There are two modes for Legend
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
 
-![](Images/Legend_Gradient.png)
+![Legend_Image](Images/Legend_Gradient.png)
 
 ### List:
 {% highlight xaml %}
@@ -53,7 +53,7 @@ There are two modes for Legend
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
 
-![](Images/Legend_List.png)
+![Legend_Image](Images/Legend_List.png)
 
 ## Orientation
 There are 2 types of Orientation, applicable for Gradient and List Mode
@@ -68,7 +68,7 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
 
-![](Images/Legend_Horizontal.png)
+![Legend_Image](Images/Legend_Horizontal.png)
 
 ### Vertical:
 {% highlight xaml %}
@@ -78,4 +78,4 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
 
-![](Images/Legend_Vertical.png)
+![Legend_Image](Images/Legend_Vertical.png)

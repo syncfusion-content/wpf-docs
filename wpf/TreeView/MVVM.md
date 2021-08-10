@@ -99,7 +99,7 @@ sfTreeView.SetBinding(SfTreeView.SelectedItemProperty, new Binding("SelectedNode
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TreeView with MVVM selection](MVVM_images/MVVM_image1.png)
+![WPF TreeView with MVVM Selection](MVVM_images/wpf-treeview-with-MVVM-selection.png)
 
 ### Binding SelectedItems
 
@@ -190,7 +190,7 @@ public class ViewModel : NotificationObject
 {% endtabs %}
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bind-selected-items-in-wpf-treeview).
-![WPF TreeView with MVVM selection](MVVM_images/MVVM_image2.png)
+![WPF TreeView with MVVM SelectedItems Binding](MVVM_images/wpf-treeview-with-MVVM-selecteditems-binding.png)
 
 
 ## Event to command
@@ -308,5 +308,5 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview). You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.
 

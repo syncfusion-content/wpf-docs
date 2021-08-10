@@ -13,12 +13,12 @@ Chart area represents the entire chart and all its elements. It’s a virtual re
 
 The following are the major properties of chart(SfChart):
 
-* [`PrimaryAxis`](https://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the horizontal x axis for the chart.
-* [`SecondaryAxis`](https://help.syncfusion.com/wpf/sfchart/axis#) –  Gets or sets the vertical y axis for the chart.
-* [`Legend`](https://help.syncfusion.com/wpf/sfchart/legend#) –  Gets or sets the legend for the chart.
-* [`Series`](https://help.syncfusion.com/wpf/sfchart/series#) –  Gets or sets the list of series in the chart.
-* [`TechnicalIndicators`](https://help.syncfusion.com/wpf/sfchart/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
+* [`PrimaryAxis`](https://help.syncfusion.com/wpf/charts/axis#) –  Gets or sets the horizontal x axis for the chart.
+* [`SecondaryAxis`](https://help.syncfusion.com/wpf/charts/axis#) –  Gets or sets the vertical y axis for the chart.
+* [`Legend`](https://help.syncfusion.com/wpf/charts/legend#) –  Gets or sets the legend for the chart.
+* [`Series`](https://help.syncfusion.com/wpf/charts/seriestypes/series) –  Gets or sets the list of series in the chart.
+* [`TechnicalIndicators`](https://help.syncfusion.com/wpf/charts/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
+* [`Behaviors`](https://help.syncfusion.com/wpf/charts/interactive-features/interactivefeatures)–  Used to add one more interactive features to the chart.
 
 
 ## Customization
@@ -63,7 +63,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 {% endtabs %}
 
-![SfChart with customized plot area](Area_images/Area_img3.jpeg)
+![Customizing Plot Area in WPF Chart](Area_images/wpf-chart-plot-area-customization.jpeg)
 
 
 ## Multiple Area 
@@ -213,7 +213,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![SfChart with multiple panes](Area_images/Area_img4.jpeg)
+![WPF Chart with Multiple Panes](Area_images/wpf-chart-multiple-panes.jpeg)
 
 
 ## Column Span and Row Span
@@ -354,7 +354,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
+![WPF Chart with Multiple Axes](Area_images/wpf-chart-multiple-axes.jpeg)
 
 ## Clone or copy the chart
 
@@ -371,6 +371,9 @@ grid.Children.Add(chartCopy as SfChart);
 {% endhighlight %}
 
 T> You can use this method for copy and paste like requirement, by cloning chart upon copy and reload while pasting.
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 
 **See also**
 
@@ -393,4 +396,3 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 [`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-itemwidthpercent-before-drawing-chart)
 
 [`How to view corner segments without cutting in edge of WPF Chart`](https://www.syncfusion.com/kb/10728/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)
-

@@ -40,4 +40,4 @@ SkinStorage.SetEnableTouch(_ribbonWindow, True)
 
 {% endtabs %}
 
-![Enabling touch mode for ribbon](TouchSupport_images/TouchSupport_img1.jpeg)
+![WPF Ribbon with Touch Mode](TouchSupport_images/wpf-ribbon-touch-mode.jpeg)

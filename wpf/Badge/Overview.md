@@ -13,7 +13,7 @@ documentation: ug
 
 ## Badge control
 
-![Displaying the Badge control](Getting-Started_images/Overview.gif)
+![WPF Badge Control](Getting-Started_images/wpf-badge-control.gif)
 
 ## Key features
 

@@ -121,7 +121,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistributionIndicator type in WPF Chart](Technical-Indicators_images/overview_1.png)
+![AccumulationDistribution Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-accumulation-indicator.png)
 
 
 The following sections covers all the different types of technical indicators available in SfChart.
@@ -175,7 +175,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AverageTrueRangeIndicator type in WPF Chart](Technical-Indicators_images/atr.png)
+![AverageTrueRange Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-average-range-indicator.png)
 
 
 ## Simple Average 
@@ -227,7 +227,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![SimpleAverageIndicator type in WPF Chart](Technical-Indicators_images/sa.png)
+![SimpleAverage Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-simple-average-indicator.png)
 
 
 ## RSI 
@@ -287,7 +287,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![RSITechnicalIndicator type in WPF Chart](Technical-Indicators_images/rsi.png)
+![RSI Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-rsi-technical-indicator.png)
 
 
 ## Momentum 
@@ -341,7 +341,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![MomentumTechnicalIndicator type in WPF Chart](Technical-Indicators_images/momentum.png)
+![Momentum Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-momentum-technical-indicator.png)
 
 
 ## Stochastic 
@@ -403,7 +403,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![StochasticTechnicalIndicator type in WPF Chart](Technical-Indicators_images/stochastic.png)
+![Stochastic Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-stochastic-technical-indicator.png)
 
 
 ## Exponential Average
@@ -453,7 +453,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![ExponentialAverageIndicator type in WPF Chart](Technical-Indicators_images/exponential.png)
+![Exponential Average Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-exponential-average-indicator.png)
 
 
 ## Triangular Average 
@@ -503,7 +503,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![TriangularAverageIndicator type in WPF Chart](Technical-Indicators_images/ta.png)
+![Triangular Average Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-triangular-average-indicator.png)
 
 
 ## Accumulation Distribution 
@@ -557,7 +557,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistributionIndicator type in WPF Chart](Technical-Indicators_images/accumulation.png)
+![AccumulationDistribution Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-accumulation-distribution-indicator.png)
 
 
 ## Bollinger Band
@@ -615,7 +615,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![BollingerBandIndicator type in WPF Chart](Technical-Indicators_images/bollinger.png)
+![Bollinger Band Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-bollinger-indicator.png)
 
 
 ## MACD 
@@ -681,6 +681,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![MACDTechnicalIndicator type in WPF Chart](Technical-Indicators_images/macd.png)
+![MACD Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-macd-indicator.png)
 
 
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

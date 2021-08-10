@@ -38,7 +38,7 @@ End Sub
 
 Moving to `HandwrittenSignature` mode will open the signature pad, requesting the user to draw the signature. Clicking on apply will add the signature in the PDF Document, this can then be resized and moved to appropriate location.
 
- ![Handwritten Signature](Handwritten-Signature_images\Handwritten-Signature-1.png)
+ ![WPF PDF Viewer Handwritten Signature](Handwritten-Signature_images\wpf-pdf-viewer-handwritten-signature.png)
 
 ## How to set the opacity of the handwritten signature?
 
@@ -144,19 +144,19 @@ The color of the selected handwritten signature will be displayed in the color r
 
 The following image illustrates how to change the color of the handwritten signature.
 
-![Edit color of the signature](Handwritten-Signature_images\Handwritten-Signature-2.png)
+![WPF PDF Viewer Edit Color of the Signature](Handwritten-Signature_images\wpf-pdf-viewer-edit-color-of-the-signature.png)
 
 ##### Editing opacity of the signature
 
 The slider displayed in the Appearance tab allows modifying opacity of the selected handwritten signature. You can also modify the opacity of the selected handwritten signature by giving numeric value in the opacity text box.
 
-![Edit opacity of the signature](Handwritten-Signature_images\Handwritten-Signature-3.png)
+![WPF PDF Viewer Edit Opacity of the Signature](Handwritten-Signature_images\wpf-pdf-viewer-edit-opacity-of-the-signature.png)
 
 ### Deleting a signature
 
 Selecting delete option from the context menu which is displayed when clicking right on the selected signature would delete the respective signature from the PDF document.
 
-![Delete a signature](Handwritten-Signature_images\Handwritten-Signature-4.png)
+![WPF PDF Viewer Delete a Signature](Handwritten-Signature_images\wpf-pdf-viewer-delete-a-signature.png)
 
 ## Track the changes in a handwritten signature
 
@@ -383,3 +383,6 @@ The below keyboard shortcuts are available to customize the handwritten signatur
 *	Delete key – Deletes the selected signature from the PDF document.
 *	Ctrl + Z – Performs undo functionality for recently performed operations.
 *	Ctrl + Y – Performs redo functionality for recently performed operations.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

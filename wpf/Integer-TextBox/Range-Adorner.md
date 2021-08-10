@@ -28,7 +28,7 @@ integerTextBox.EnableRangeAdorner =true;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
+![WPF IntegerTextBox displays Range Adorner](Range-Adorner_images/wpf-integer-textbox-range-adorner.png)
 
 ## Changing background of range-adorner
 
@@ -52,4 +52,4 @@ integerTextBox.RangeAdornerBackground = Brushes.LightGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner-Background_img1.png)
+![Changing Background of RangeAdorner of WPF IntegerTextBox](Range-Adorner_images/wpf-integer-textbox-range-adorner-background.png)

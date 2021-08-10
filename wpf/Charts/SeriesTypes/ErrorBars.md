@@ -84,7 +84,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Error bars support in WPF Chart](ErrorBar_images/ErrorBar_1.png)
+![ErrorBars in WPF Chart](ErrorBar_images/wpf-chart-errorbar.png)
 
 
 ## Mode
@@ -134,7 +134,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Mode for error bars in WPF Chart](ErrorBar_images/ErrorBar_2.png)
+![WPF Chart with Horizontal ErrorBars](ErrorBar_images/wpf-chart-horizontal-errorbar.png)
 
 
 **Vertical**
@@ -180,7 +180,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Mode for error bars in WPF Chart](ErrorBar_images/ErrorBar_3.png)
+![WPF Chart with Vertical ErrorBars](ErrorBar_images/wpf-chart-vertical-errorbar.png)
 
 
 ## Direction
@@ -221,7 +221,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_both.png)
+![WPF Chart displays ErrorBars in Both Direction](ErrorBar_images/wpf-chart-errorbars-in-both-direction.png)
 
 **Minus**
 
@@ -249,7 +249,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_minus.png)
+![WPF Chart displays ErrorBars in Horizontal Minus Direction](ErrorBar_images/wpf-chart-errorbars-in-horizontal-minus.png)
 
 **Plus**
 
@@ -277,7 +277,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/horizontal_plus.png)
+![WPF Chart displays ErrorBars in Horizontal Plus Direction](ErrorBar_images/wpf-chart-errorbars-horizontal-plus-direction.png)
 
 **Vertical direction**
 
@@ -313,7 +313,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/vertical_both.png)
+![WPF Chart displays ErrorBars in Both Vertical Direction](ErrorBar_images/wpf-chart-errorbars-in-vertical-direction.png)
 
 **Minus**
 
@@ -341,7 +341,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/vertical_minus.png)
+![WPF Chart displays ErrorBars in Vertical Minus Direction](ErrorBar_images/wpf-chart-errorbars-vertical-minus-direction.png)
 
 **Plus**
 
@@ -369,7 +369,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Direction for error bars in WPF Chart](ErrorBar_images/vertical_plus.png)
+![WPF Chart displays ErrorBars in Vertical Plus Direction](ErrorBar_images/wpf-chart-errorbars-vertical-plus-direction.png)
 
 
 ## Type
@@ -430,7 +430,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Fixed error bar type in WPF Chart](ErrorBar_images/ErrorBar_4.png)
+![WPF Chart with Fixed ErrorBar](ErrorBar_images/wpf-chart-fixed-errorbar.png)
 
 ### Percentage
 
@@ -480,7 +480,7 @@ chart.Series.Add(errorBar);
 {% endtabs %}
 
 
-![Percentage error bar type in WPF Chart](ErrorBar_images/ErrorBar_5.png)
+![WPF Chart with Percentage ErrorBar](ErrorBar_images/wpf-chart-percentage-errorbar.png)
 
 
 ### Standard Deviation
@@ -530,7 +530,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Standard deviation error bar type in WPF Chart](ErrorBar_images/ErrorBar_6.png)
+![WPF Chart with Standard Deviation ErrorBar](ErrorBar_images/wpf-chart-standard-deviation-errorbar.png)
 
 ### Standard Errors
 
@@ -579,7 +579,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Standard deviation error bar type in WPF Chart](ErrorBar_images/ErrorBar_7.png)
+![WPF Chart with Standard Deviation ErrorBar](ErrorBar_images/wpf-chart-standard-errorbar.png)
 
 
 ## Custom
@@ -633,7 +633,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![Custom error bar type in WPF Chart](ErrorBar_images/ErrorBar_8.png)
+![WPF Chart with Custom ErrorBar](ErrorBar_images/wpf-chart-custom-errorbar.png)
 
 
 
@@ -674,7 +674,7 @@ errorBarSeries.HorizontalLineStyle = new LineStyle()
 
 {% endtabs %}
 
-![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_9.png)
+![Customizing ErrorBar Lines in WPF Chart](ErrorBar_images/wpf-chart-errorbar-line-customization.png)
 
 {% tabs %}
 
@@ -705,7 +705,7 @@ errorBarSeries.VerticalLineStyle = new LineStyle()
 
 {% endtabs %}
 
-![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_10.png)
+![Customizing ErrorBar Lines in WPF Chart](ErrorBar_images/wpf-chart-errorbar-line-style.png)
 
 
 ### Line Cap Style
@@ -743,7 +743,7 @@ errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
 
 {% endtabs %}
 
-![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_11.png)
+![Customizing Horizontal ErrorBar Gap Line in WPF Chart](ErrorBar_images/wpf-chart-horizontal-errorbar-line.png)
 
 {% tabs %}
 
@@ -776,4 +776,4 @@ errorBarSeries.VerticalCapLineStyle = new CapLineStyle()
 
 {% endtabs %}
 
-![Error bar lines customization support in WPF Chart](ErrorBar_images/ErrorBar_12.png)
+![Customizing Vertical ErrorBar Gap Line in WPF Chart](ErrorBar_images/wpf-chart-vertical-errorbar-line.png)

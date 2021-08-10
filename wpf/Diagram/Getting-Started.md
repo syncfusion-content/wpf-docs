@@ -21,13 +21,13 @@ The following section helps you to build your application with SfDiagram.
 
 ## Creating the project
 
-Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+Create new WPF project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 
 ### Adding control via Designer
 
 SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![DiagramfromDesigner](Getting-Started_images\DiagramfromDesigner.png)
+![WPF Diagram from Designer](Getting-Started_images\wpf-diagram-from-designer.png)
 
 ### Adding control manually in XAML
 
@@ -191,7 +191,7 @@ NodeViewModel Begin = new NodeViewModel()
 #### Adding shape and style to node
 
 We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
-Please refer to [Shapes](/wpf/sfdiagram/shapes) to know about built-in Shapes.
+Please refer to [Shapes](https://help.syncfusion.com/wpf/diagram/shapes) to know about built-in Shapes.
  
 {% tabs %}
 {% highlight xaml %}  
@@ -232,7 +232,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, the node will be as follows.
    
-![AddNode](Getting-Started_images\addNode.png)
+![WPF Diagram Adding Shape and Style to Node](Getting-Started_images\wpf-diagram-adding-shape-and-style-to-node.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -285,7 +285,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, the node will be as follows.
  
-![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
+![WPF Diagram Node Annotation](Getting-Started_images\wpf-diagram-node-annotation.PNG)
 
 N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector. By default, `Annotations` property of Node and Connector is null.
  
@@ -369,7 +369,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY, double width, doubl
 
 Finally, all the nodes are added to diagram and they will be as follows.
 
-![CompleteNodes](Getting-Started_images\completeNodes.png)
+![WPF Diagram Complete Nodes](Getting-Started_images\wpf-diagram-complete-nodes.png)
 
 ### Add connectors
 
@@ -437,7 +437,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Now, the output will be as follows.
 
-![NodewithConnector](Getting-Started_images\nodewithConnector.png)
+![WPF Diagram Node with Connector](Getting-Started_images\wpf-diagram-node-with-connector.png)
  
 ### Connectors for flow diagram
 
@@ -479,7 +479,7 @@ private ConnectorViewModel CreateConnector(string source, string target)
 
 Now, the output will be as follows.
 
-![CompleteDiagram](Getting-Started_images\completeDiagram.png)
+![WPF Connectors for Flow Diagram](Getting-Started_images\wpf-connectors-for-flow-diagram.png)
     
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-FlowChart-Creation)
 
@@ -712,17 +712,17 @@ Declare the style for node, connector, symbol, and symbol group to visualize the
 
 The output will be as follows.
 
-![Stencil output](Getting-Started_images\Stencil_output.PNG)
+![WPF Diagram Stencil Output](Getting-Started_images\wpf-diagram-stencil-output.PNG)
 
 #### Interaction with stencil
 
 We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
-![StencilDiagram](Getting-Started_images\StencilDiagram.gif)
+![WPF Diagram Interact with Stencil](Getting-Started_images\wpf-diagram-interact-with-stencil.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
-For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements). 
+For more information about stencil, please [refer](https://help.syncfusion.com/wpf/diagram/stencil#using-the-diagram-elements). 
 
 ## Organization layout
 
@@ -900,11 +900,11 @@ RootGrid.Children.Add(diagram);
 
 The output will be as follows.
 
-![OrgLayout](Getting-Started_images\orglayout.PNG)
+![WPF Diagram Organization Layout](Getting-Started_images\wpf-diagram-organization-layout.PNG)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-OrganizationLayout-Creation)
 
-For more information about Layout, [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
+For more information about Layout, [refer](https://help.syncfusion.com/wpf/diagram/automatic-layouts/automatic-layouts)
 
 ## Theme
 
@@ -914,4 +914,4 @@ SfDiagram supports various built-in themes. Refer to the below links to apply th
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Diagram](Getting-Started_images\theme.jpg)
+  ![WPF Diagram Theme](Getting-Started_images\wpf-diagram-theme.jpg)

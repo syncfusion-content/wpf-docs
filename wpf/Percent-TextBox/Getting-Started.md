@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF PercentTextBox via designer
 
@@ -25,7 +25,7 @@ You can add the [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/perc
 
 * Syncfusion.Shared.WPF
 
-![PercentTextBox control added by designer](Getting-Started_images/wpf-percent-text-box-added-by-designer.png)
+![Dragging WPF PercentTextBox from Toolbox to Designer](Getting-Started_images/wpf-percent-textbox-from-toolbox.png)
 
 ## Adding WPF PercentTextBox via XAML
 
@@ -90,7 +90,7 @@ this.Content = percentTextBox;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox control added to Window by code](Getting-Started_images/wpf-percent-text-box-control-added-manually.png)
+![WPF PercentTextBox Control](Getting-Started_images/wpf-percent-textbox-control.png)
 
 ## Setting Value
 
@@ -112,7 +112,7 @@ percentTextBox.PercentValue = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Set the percent value for PercentTextBox](Getting-Started_images/wpf-percent-text-box-value.png)
+![WPF PercentTextBox displays Percent Value](Getting-Started_images/wpf-percent-textbox-value.png)
 
 N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the percent value for the PercentTextBox. Use only the `PercentValue` property.
 
@@ -156,7 +156,7 @@ class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox percent value binding](Getting-Started_images/ValueBinding.png)
+![WPF PercentTextBox with Binding Percent Value](Getting-Started_images/wpf-percent-textbox-value-binding.png)
 
 ## Value Changed Notification
 
@@ -214,7 +214,7 @@ percentTextBox.PercentValue = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the percent value of PercentTextBox by the minimum and maximum values](Getting-Started_images/wpf-percent-text-box-value.png)
+![Restricts Minimum and Maximum Value of WPF PercentTextBox](Getting-Started_images/wpf-percent-textbox-value.png)
 
 ## Step Interval to increase or decrease the value
 
@@ -241,7 +241,7 @@ percentTextBox.ScrollInterval = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox percent value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+![WPF PercentTextBox displays Incrementing Percent Value](Getting-Started_images/wpf-percent-textbox-step-interval.png)
 
 ## Formatting the value
 
@@ -263,7 +263,7 @@ percentTextBox.PercentGroupSeparator = "*";
 {% endhighlight %}
 {% endtabs %}
 
-![Setting PercentTextBox Number Format](Getting-Started_images/wpf-percent-textbox-number-format.png)
+![WPF PercentTextBox with Formatting](Getting-Started_images/wpf-percent-textbox-number-format.png)
 
 ## Setting the Culture
 
@@ -286,7 +286,7 @@ percentTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![Setting PercentTextBox Culture](Getting-Started_images/Getting-Started_culture.png)
+![WPF PercentTextBox with Localization](Getting-Started_images/wpf-percent-textbox-localization.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
@@ -298,4 +298,4 @@ PercentTextBox supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF PercentTextBox control](Getting-Started_images/Theme.png)
+  ![Applying Theme to WPF PercentTextBox](Getting-Started_images/wpf-percent-textbox-theme.png)

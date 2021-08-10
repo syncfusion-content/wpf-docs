@@ -43,9 +43,11 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 {% endtabs %}
 
-![Box and Whisker Chart type in WPF](Series_images/boxAndWhisker1.png)
+![WPF Box and Whisker Chart](Series_images/wpf-box-and-whisker-chart.png)
 
 N>By default, the `BoxPlotMode` property value is Exclusive.
+
+N> You can refer to our [WPF Box and Whisker Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-box-and-whisker-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Box and Whisker Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/BoxAndWhiskerChart.xaml) to know how to render and configure the box and whisker chart.
 
 **Customize the series Box mode**
 
@@ -79,7 +81,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
 
 {% endtabs %}
 
-![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker2.png)
+![WPF Box and Whisker Chart with Normal Mode](Series_images/wpf-box-and-whisker-chart-normal-mode.png)
 
 **Inclusive**
 
@@ -105,7 +107,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 {% endtabs %}
 
-![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker3.png)
+![WPF Box and Whisker Chart with Inclusive Mode](Series_images/wpf-box-and-whisker-chart-inclusive-mode.png)
 
 **ShowMedian**
 
@@ -131,7 +133,7 @@ boxAndWhisker.ShowMedian = true;
 
 {% endtabs %}
 
-![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
+![WPF Box and Whisker Chart displays based on Median Value](Series_images/wpf-box-and-whisker-chart-median-value.png)
 
 N>
 * The middle number of data points is the median for the odd number of data points.
@@ -166,7 +168,7 @@ boxAndWhisker.ShowOutlier = false;
 
 {% endtabs %}
 
-![ShowOutlier support for Box and Whisker series in WPF Chart](Series_images/ShowOutlier.png)
+![Hide Outlier Symbol for Box and Whisker series in WPF Chart](Series_images/wpf-box-and-whisker-chart-without-outlier.png)
 
 **Outlier Template**
 
@@ -206,7 +208,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 {% endtabs %}
 
-![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
+![ WPF Box and Whisker Chart with Outlier Symbol](Series_images/wpf-box-and-whisker-chart-with-outlier.png)
 
 ## Waterfall Chart
 
@@ -245,7 +247,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![Waterfall Chart type in WPF](Series_images/waterfall1.png)
+![WPF Waterfall Chart](Series_images/wpf-waterfall-chart.png)
 
 **SummarySegmentPath and SummarySegmentBrush**
 
@@ -291,7 +293,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![Waterfall Chart type in WPF](Series_images/waterfall2.png)
+![WPF Waterfall Chart with Summary Segment](Series_images/wpf-waterfall-chart-segment.png)
 
 **NegativeSegmentBrush**
 
@@ -320,7 +322,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 {% endtabs %}
 
-![Waterfall Chart type in WPF](Series_images/waterfall3.png)
+![WPF Waterfall Chart displays Negative Segment](Series_images/wpf-waterfall-chart-negative-segment.png)
 
 **AllowAutoSum**
 
@@ -358,7 +360,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![Waterfall Chart type in WPF](Series_images/waterfall4.png)
+![WPF Waterfall Chart with Summary Segments](Series_images/wpf-waterfall-chart-with-summary.png)
 
 ### ConnectorLine
 
@@ -384,7 +386,7 @@ waterfallSeries.ShowConnector = false;
 
 {% endtabs %}
 
-![Connector Line support for Waterfall Chart in WPF](Series_images/waterfall5.png)
+![WPF Waterfall Chart without Connector Line](Series_images/wpf-waterfall-chart-without-connector-line.png)
 
 **Connector line customization**
 
@@ -428,5 +430,6 @@ series.ConnectorLineStyle = style;
 
 {% endtabs %}
 
-![Connector line customization support in WPF](Series_images/waterfall6.png)
+![Customizing Connector Line in WPF Waterfall Chart](Series_images/wpf-waterfall-chart-connector-line-customization.png)
 
+N> You can explore our [WPF Waterfall Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-waterfall-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Waterfall Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Other%20Charts/Waterfall.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.

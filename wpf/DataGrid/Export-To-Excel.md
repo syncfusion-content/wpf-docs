@@ -65,7 +65,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting to excel with outlines for groups in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img1.png)
+![Exporting to Excel with Outlines for Groups in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-to-excel.png)
 
 ### Exclude columns while exporting
 
@@ -155,7 +155,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting to excel with custom start row index and column index in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img2.png)
+![Exporting to Excel with Custom Row and Column Index in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-with-row-column-index.png)
 
 ## Saving options
 
@@ -192,7 +192,7 @@ You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsi
 
 ### Save using File dialog
 
-After exporting to excel, you can save exported workbook by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx). 
+After exporting to excel, you can save exported workbook by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog). 
 
 {% tabs %}
 {% highlight c# %}
@@ -253,7 +253,7 @@ window1.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![Opening exported excel without saving in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img3.png)
+![Exported Excel without Saving in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-excel-without-saving.png)
 
 ## Export DataGrid pages to Excel
 
@@ -299,7 +299,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting the selected items only to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img4.png)
+![Exporting Selected Items only to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-selected-item.png)
 
 ## Export DataGrid to HTML
 
@@ -453,7 +453,7 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells based on CellType in exported excel for WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img5.png)
+![WPF DataGrid displays Customized Cell Style based on CellType in Exported Excel](Export-to-Excel_images/wpf-datagrid-cell-style-customization.png)
 
 ## Cell customization in Excel while exporting
 
@@ -492,7 +492,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of cell values while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img6.png)
+![Customizing Cell Values while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-cell-value-customization.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -524,7 +524,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Row styling based on data while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img7.png)
+![Customizing Row Style based on Data while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-row-style-customization.png)
 
 Here, records having the `Country` name as `Mexico` are customized.
 
@@ -553,7 +553,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of cell values based on column name while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img8.png)
+![Customizing Cell Values based on Column name while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-cell-value-based-on-column.png)
 
 Here, `OrderID` column cells are customized while exporting.
 
@@ -608,7 +608,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Change the borders in exported excel for WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img9.png)
+![Changing Border Style in Exported Excel for WPF DataGrid](Export-to-Excel_images/wpf-datagrid-change-border-style.png)
 
 #### Enabling Filters
 
@@ -625,7 +625,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Shows enabling filters on exported excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img10.png)
+![Filters on Exported Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-filter-on-exported-excel.png)
 
 While using `stacked headers`, you can specify the `range` based on Stacked headers count.
 
@@ -660,7 +660,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of range of cells in exported excel for WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img11.png)
+![Customizing Range of Cells in Exported Excel for WPF DataGrid](Export-to-Excel_images/wpf-datagrid-range-of-cells-customization.png)
 
 ## Exporting DetailsView
 
@@ -668,7 +668,7 @@ By default, [DetailsViewDataGrid](http://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) .
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) .
 
 {% tabs %}
 {% highlight c# %}
@@ -688,7 +688,7 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Excluding the particular DetailsView while exporting to excel in WPF DataGrid ](Export-to-Excel_images/Export-to-Excel_img12.png)
+![Excluding Specific DetailsView while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-data-in-detailsview.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -711,7 +711,7 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Excluding the columns in DetailsViewDataGrid while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img13.png)
+![Excluding Columns in DetailsViewDataGrid while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-export-without-column.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to excel.
 
@@ -743,7 +743,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of DetailsViewDataGrid cells while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img14.png)
+![Customizing DetailsViewDataGrid Cells while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-exported-cell-customization.png)
 
 
 ## Performance
@@ -771,7 +771,7 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 {% endtabs %}
 
 
-![Formatting the column without CellExportingEventHandler while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img15.png)
+![Formatting the Column while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-column-formatting.png)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -800,6 +800,6 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endhighlight %}
 {% endtabs %}
 
-![Shows the row styling without using CellExportingEventHandler while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img16.png)
+![Displaying Row Style while Exporting to Excel in WPF DataGrid](Export-to-Excel_images/wpf-datagrid-row-style.png)
 
 

@@ -99,6 +99,6 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![HierarchicalLayout](Automatic-Layouts_images/Automatic-Layouts_img8.png)
+![WPF Diagram with HierarchicalLayout](Automatic-Layouts_images/wpf-diagram-hierarchical-layout.png)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Hierarchical%20Tree)

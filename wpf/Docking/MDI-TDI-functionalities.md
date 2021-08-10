@@ -45,7 +45,7 @@ DockingManager.SetState(Document2, DockState.Document);
 
 {% endtabs %}
 
-![Displays Document tab item in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
+![WPF Docking Displays Document Tab Item](MDI_TDIfunctionalities_images/wpf-docking-displays-document-tab-item.jpeg)
 
 To make the document child window as MDI document, set the [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_ContainerMode) as `MDI`
 
@@ -73,7 +73,7 @@ SyncDockingManager.ContainerMode = DocumentContainerMode.MDI;
 
 {% endtabs %}
 
-![Document Items are rendered is MDI state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
+![WPF Docking MDI Document](MDI_TDIfunctionalities_images/wpf-docking-MDI-document.jpeg)
 
 
 ## Setting MDI Window state
@@ -98,7 +98,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
 
 {% endtabs %}
 
-![MDI window is rendered in minimized state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
+![WPF Docking Minimized MDI Window State](MDI_TDIfunctionalities_images/wpf-docking-minimized-MDI-window-state.jpeg)
 
 
 
@@ -120,7 +120,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized)
 
 {% endtabs %}
 
-![MDI window is rendered in maximized state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_max.jpg)
+![WPF Docking Maximized MDI Window State](MDI_TDIfunctionalities_images/wpf-docking-maximized-MDI-window-state.jpg)
 
 ## Getting state of the MDI window
 
@@ -238,7 +238,7 @@ DockingManager1.SwitchMode =SwitchMode.Immediate
 
 {% endtabs %}
 
-![SwitchMode of DockingManager is set as Immediate, so the MDI windows are activated while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
+![WPF Docking Switch Mode as Immediate](MDI_TDIfunctionalities_images/wpf-docking-switch-mode-as-immediate.jpeg)
 
 
 ### List – Switch the MDI document windows in list format.
@@ -260,7 +260,7 @@ DockingManager1.SwitchMode =SwitchMode.List
 
 {% endtabs %}
 
-![SwitchMode of DockingManager is set as List, so the header of MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
+![WPF Docking Switch Mode as List](MDI_TDIfunctionalities_images/wpf-docking-switch-mode-as-list.jpeg)
 
 
 ### QuickTabs
@@ -282,7 +282,7 @@ DockingManager1.SwitchMode =SwitchMode.QuickTabs
 
 {% endtabs %}
 
-![SwitchMode of DockingManager is set as QuickTabs, so the MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
+![WPF Docking Switch Mode as QuickTabs](MDI_TDIfunctionalities_images/wpf-docking-switch-mode-as-quicktabs.jpeg)
 
 
 ### VistaFlip
@@ -304,7 +304,7 @@ DockingManager1.SwitchMode =SwitchMode.VistaFlip
 
 {% endtabs %}
 
-![SwitchMode of DockingManager is set as VistaFlip, so the active MDI window is brought into view while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
+![WPF Docking Switch Mode as VistaFlip](MDI_TDIfunctionalities_images/wpf-docking-switch-mode-as-vistaflip.jpeg)
 
 
 ### VS2005
@@ -326,7 +326,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 {% endtabs %}
 
-![SwitchMode of DockingManager is set as VS2005, Selected MDI window and the header of MDI windows andare listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
+![WPF Docking Switch Mode as VS2005](MDI_TDIfunctionalities_images/wpf-docking-switch-mode-as-VS2005.jpeg)
 
 
 ## Setting MDI Layout
@@ -357,7 +357,7 @@ End Sub
 
 {% endtabs %}
 
-![MDI windows are arranged horizontally](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
+![WPF Docking Horizontal MDI Layout](MDI_TDIfunctionalities_images/wpf-docking-horizontal-MDI-layout.jpeg)
 
 
  `Vertical` – Arranges the MDI windows vertically.
@@ -383,7 +383,7 @@ End Sub
 
 {% endtabs %}
 
-![MDI windows are arranged vertically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
+![WPF Docking Vertical MDI Layout](MDI_TDIfunctionalities_images/wpf-docking-vertical-MDI-layout.jpeg)
 
 
 `Cascade` - Arranges the layout in a cascade manner.
@@ -409,7 +409,7 @@ End Sub
 
 {% endtabs %}
 
-![MDI windows are arranged vertically in cascade layout](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
+![WPF Docking MDI Layout in Cascade Manner](MDI_TDIfunctionalities_images/wpf-docking-MDI-layout-in-cascade-manner.jpeg)
 
 
 
@@ -439,7 +439,7 @@ DockingManager.SetCanClose(Content1, false);
 
 {% endtabs %}
 
-![Closebutton of the MDI window is disaled when CanClose proeprty is false](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
+![WPF Docking Close MDI Window Functionality](MDI_TDIfunctionalities_images/wpf-docking-close-MDI-window-functionality.jpeg)
 
 
 ## Indexing an Item in TDI
@@ -478,7 +478,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 {% endtabs %}
 
-![First Document is arranged at zeroth based on the TDIIndex value](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
+![WPF Docking Indexing an Item in TDI](MDI_TDIfunctionalities_images/wpf-docking-indexing-an-item-in-TDI.jpeg)
 
 
 ## Drag / Drop support in TDI
@@ -537,7 +537,7 @@ dockingManager.EnableAutoScroll = true;
 {% endhighlight %}
 {% endtabs %}
 
-![First Document is arranged at zeroth based on the TDIIndex value](MDI_TDIfunctionalities_images/AutoScrollTabItems.gif)
+![WPF Docking Auto Scrolling of Tab Items](MDI_TDIfunctionalities_images/wpf-docking-auto-scrolling-of-tab-items.gif)
 
 ## TDI window's order changed notification
 
@@ -592,7 +592,7 @@ private void DockingManager_DocumentTabOrderChanged(object sender, DocumentTabOr
 {% endhighlight %}
 {% endtabs %}
 
-![TDI window order changed by drag and drop](MDI_TDIfunctionalities_images/TabOrderChangeNotification.png)
+![WPF Docking TDI Window Order Changed by Drag and Drop](MDI_TDIfunctionalities_images/wpf-docking-TDI-window-order-changed-by-drag-and-drop.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)
 
@@ -639,7 +639,7 @@ private void DockingManager_DocumentTabOrderChanging(object sender, DocumentTabO
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting the TDI window order changing via drag and drop](MDI_TDIfunctionalities_images/Restrictordering.png)
+![WPF Docking Restrict TDI Window Reordering](MDI_TDIfunctionalities_images/wpf-docking-restrict-TDI-window-reordering.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/TabbedWindowOrdering)
 
@@ -686,7 +686,7 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 
 {% endtabs %}
 
-![MenuItems which are related to Close functionlities are collapsed](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
+![WPF Docking Close Menu Customization](MDI_TDIfunctionalities_images/wpf-docking-close-menu-customization.jpeg)
 
 
 ## Creating Document Tab Group
@@ -741,10 +741,10 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 In TDI document, new tab group can be created by dragging the tab item into the Document area and click the "New Tab Group" menu item from context menu item.
 
-![ContextMenu is displayed with New Tab Group and Cancel items, when the Documenttab item is dragged and dropped](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
+![WPF Docking Context Menu with New Tab Group](MDI_TDIfunctionalities_images/wpf-docking-context-menu-with-new-tab-group.jpeg)
 
 
-![Using the ContextMenu,  first item has been inserted to Next Tab group](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
+![WPF Docking First Item Inserted to Next Tab Group by using Context Menu](MDI_TDIfunctionalities_images/wpf-docking-first-item-inserted-to-next-tab-group-by-using-context-menu.jpeg)
 
 ## Disable TabGroups
 
@@ -772,7 +772,7 @@ SyncDockingManager.TabGroupEnabled = false;
 
 TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsVS2010DraggingEnabled). By default, its value is `True`. 
 
-![First Document window is floated by dragging the document window](MDI_TDIfunctionalities_images/IsVS2010DraggingEnabled_true.png)
+![WPF Docking Document Window Floated by Dragging](MDI_TDIfunctionalities_images/wpf-docking-document-window-floated-by-dragging.png)
 
 {% tabs %}
 
@@ -794,7 +794,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = false;
 
 {% endtabs %}
 
-![First Document window is dragged with drag marker in the document window](MDI_TDIfunctionalities_images/IsVS2010DraggingEnabled.png)
+![WPF Docking Dragged the Document Window Using Drag Marker](MDI_TDIfunctionalities_images/wpf-docking-dragged-the-document-window-using-drag-marker.png)
 
 
 ## TDI Header Renaming Support
@@ -841,7 +841,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 {% endtabs %}
 
-![Document tab item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
+![WPF Docking Hiding the TDI Header](MDI_TDIfunctionalities_images/wpf-docking-hiding-the-TDI-header.jpeg)
 
 
 ## Add New button in Header Panel
@@ -877,7 +877,7 @@ End If
 {% endtabs %}
 
 
-![Add New Tab button is displaying in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
+![WPF Docking Add New Button in Header Panel](MDI_TDIfunctionalities_images/wpf-docking-add-new-button-in-header-panel.jpeg)
 
 ## Pin and Unpin tab items
 
@@ -996,7 +996,7 @@ The PinButton will be visible in the document tabs only when the property [ShowP
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](MDI_TDIfunctionalities_images\display-pinbutton.png)
+![WPF Docking Display PinButton to Specific Items](MDI_TDIfunctionalities_images\wpf-docking-display-pinbutton-to-specific-items.png)
 
 If the property [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) is true, the pin button will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_ShowPinProperty) is true and [AllowPin](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html#Syncfusion_Windows_Tools_Controls_DocumentContainer_AllowPinProperty) is false, pin button will be displayed as disabled button. 
 
@@ -1102,9 +1102,9 @@ The pin or unpin operations can be done through document tab item's ContextMenu 
 
 The following images illustrates the same,
 
-![Displays option in ContextMenu to pin the tab itemExt](MDI_TDIfunctionalities_images\pintab-option-contextmenu.png)
+![WPF Docking Pin Tab Option in ContextMenu](MDI_TDIfunctionalities_images\wpf-docking-pin-tab-option-in-contextmenu.png)
 
-![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\unpintab-option-contextmenu.png)
+![WPF Docking UnPin Tab Option in ContextMenu](MDI_TDIfunctionalities_images\wpf-docking-unpin-tab-option-in-contextmenu.png)
 
 ## Custom context menu items for tab item
 
@@ -1179,7 +1179,7 @@ dockingManager.DocumentTabItemContextMenuItems.Add(menu2);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom context menu with sub items in DockingManager](MDI_TDIfunctionalities_images\CustomTabItemContextMenuItems.png)
+![WPF Docking Custom Context Menu for Tab Items](MDI_TDIfunctionalities_images\wpf-docking-custom-context-menu-for-tab-items.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
 
@@ -1256,7 +1256,7 @@ dockingManager.TabListContextMenuItems.Add(menu2);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom tab list context menu with sub items in DockingManager](MDI_TDIfunctionalities_images\CustomTabListContextMenuItems.png)
+![WPF Docking Custom Tab List ContextMenu Items](MDI_TDIfunctionalities_images\wpf-docking-custom-tab-list-contextmenu-items.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/blob/master/Samples/Custom-ContextMenu)
 

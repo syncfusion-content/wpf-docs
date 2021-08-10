@@ -40,7 +40,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![RibbonStates](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
+![WPF Ribbon with Normal RibbonState](ThreetypesofRibbonState_images/wpf-ribbon-with-normal-state.jpeg)
 
 **Hide** - RibbonTab content gets hidden in this state
 
@@ -70,7 +70,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![RibbonStates](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
+![WPF Ribbon with Hide RibbonState](ThreetypesofRibbonState_images/wpf-ribbon-wth-hide-state.jpeg)
 
 
 **Adorner** – In this state, RibbonTab content adorned above the window content
@@ -101,7 +101,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![Ribbon Adorner state](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
+![WPF Ribbon with Adorner RibbonState](ThreetypesofRibbonState_images/wpf-ribbon-with-adorner-state.jpeg)
 
 ## How to change the RibbonState in run time
 
@@ -183,11 +183,11 @@ The [`IsAutoSizeFormEnabled`](https://help.syncfusion.com/cr/wpf/Syncfusion.Wind
 
 {% endtabs %}
 
-![Resize Ribbon Window](RibbonResizeWindow-images/ResizeRibbonWindow.gif)
+![Resizing WPF Ribbon Window](RibbonResizeWindow-images/wpf-ribbon-resizing.gif)
 
 ## RibbonBar Positioning
 
-The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the `Position` property. The RibbonBar's `Position` property has following two values,
+The [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) can be positioned either at the left or right side of the [`Ribbon`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html) by using the [`Position`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html#Syncfusion_Windows_Tools_Controls_RibbonBar_Position) property. The RibbonBar's `Position` property has following two values,
 
 * Left - RibbonBar is placed on the left side of the Ribbon
 * Right - RibbonBar is placed on the right side of the Ribbon
@@ -636,9 +636,11 @@ this.help.Position = Syncfusion.Windows.Tools.Controls.HorizontalPosition.Right;
 
 ![WPF Ribbon RibbonBar positioning](RibbonResizeWindow-images/wpf-ribbon-ribbonbar-positioning.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/RibbonBar-positioning)
+
 ## Resize based on collapse order
 
-The Ribbon control provides support to resize the RibbonBar's based on the order specified in the `SizeReductionOrder` property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
+The Ribbon control provides support to resize the RibbonBar's based on the order specified in the [`SizeReductionOrder`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html#Syncfusion_Windows_Tools_Controls_RibbonTab_SizeReductionOrder) property in the [`RibbonTab`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonTab.html). The `SizeReductionOrder` property accepts the names of the [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) that determines the order in which [`RibbonBar`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonBar.html) size is reduced. The Ribbon will begin to resize its elements with the following priority. 
 
 1. **Compressing the RibbonBar specified in the SizeReductionOrder:**
 
@@ -1674,7 +1676,7 @@ In the below code snippet, the `SizeReductionOrder` property in the **Home** [`R
 
 ![WPF Ribbon Resize based on collapse order](RibbonResizeWindow-images/wpf-ribbon-resize-based-on-collapse-order.gif)
 
-N> View sample in GitHub.
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Resize-based-on-specific-order)
 
 ## Setting collapse image for RibbonBar
 
@@ -1841,7 +1843,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Image set for RibbonBar using IconTemplate](RibbonResizeWindow-images/RibbonBar_IconTemplate.png)
+ ![Adding Image for RibbonBar in WPF Ribbon](RibbonResizeWindow-images/wpf-ribbon-image-in-ribbonbar.png)
 
  N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-ribbon-examples/tree/main/Samples/Setting-icons-using-IconTemplate)
 
@@ -1907,7 +1909,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools
 
  {% endtabs %}
 
- ![Resize Ribbon Window](RibbonResizeWindow-images/RibbonBar_CollapseImage.png)
+ ![Resizing Image Size for RibbonBar in WPF Ribbon](RibbonResizeWindow-images/wpf-ribbon-collapseimage-in-ribbonbar.png)
 
 ## Grouping RibbonTabs using ContextTabGroups
 
@@ -1933,7 +1935,7 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 {% endtabs %}
 
-![ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img1.jpeg)
+![WPF Ribbon displays ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group.jpeg)
 
 ## Add ContextTabGroup to the simplified layout
 
@@ -2058,7 +2060,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![ContextTabGroup during simplified layout](GroupingRibbonTabsusingContextTabGroups_images/ContextTabGroup_Simplified.png)
+![WPF Ribbon displays ContextTabGroup with Simplified Layout](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group-in-simplify-layout.png)
 
 
 ## Multiple ContextTabs
@@ -2084,7 +2086,7 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 
 {% endtabs %}
 
-![Multiple ContextTabs](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img2.jpeg)
+![WPF Ribbon displays Multiple ContextTabGroups](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-multiple-context-tab-group.jpeg)
 
 
 ## ContextTabGroup heading
@@ -2106,7 +2108,7 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
  
 {% endtabs %}
 
-![ContextTabGroup heading](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img3.jpeg)
+![WPF Ribbon displays ContextTabGroup Heading](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group-heading.jpeg)
 
 
 
@@ -2155,12 +2157,12 @@ End Sub
  
 {% endtabs %}
 
-![Changing the visibility at run time](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
+![Changing ContextTabGroup visibility at Runtime in WPF Ribbon](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group-visibility.jpeg)
 
 
 After the Button is clicked, the ContextTabGroup visibility changes as follows
 
-![Changing the visibility at run time](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img5.jpeg)
+![Changing ContextTabGroup visibility at Runtime in WPF Ribbon](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-change-tab-group-visibility.jpeg)
 
 
 ## Creating ContextTabGroup in MVVM
@@ -2847,7 +2849,7 @@ End Class
 
 {% endtabs %}
 
-![RibbonContextTabGroupMVVM](GroupingRibbonTabsusingContextTabGroups_images/RibbonContextTabGroupMVVM.png)
+![WPF Ribbon with ContextTabGroup in MVVM](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group-mvvm.png)
 
 ## Detecting selection changes in RibbonTab
 

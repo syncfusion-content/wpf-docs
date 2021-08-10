@@ -27,7 +27,7 @@ Refer to this documentation to find more details about installing nuget packages
 
 ### Creating the project
 
-Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF.html) with data objects.
+Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.html) with data objects.
 
 ### Add SfTreeView to Project
 
@@ -37,7 +37,7 @@ The SfTreeView control can be added to project by the following ways.
 
 SfTreeView control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![Displaying the addition of WPF SfTreeView control via the designer](GettingStarted_images/Gettingstarted_image1.png)
+![WPF TreeView Designer](GettingStarted_images/wpf-treeview-designer.png)
 
 #### Adding SfTreeView by XAML.
 
@@ -170,7 +170,7 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 {% endhighlight %}
 {% endtabs %}
 
-![Populating nodes without data source in SfTreeView ](GettingStarted_images/Gettingstarted_image2.png)
+![WPF TreeView Populating Nodes in Unbound Mode](GettingStarted_images/wpf-treeview-populating-nodes-in-unbound-mode.png)
 
 ### Bind to a hierarchical data source - Bound Mode
 
@@ -676,4 +676,6 @@ SfTreeView supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfTreeView ](GettingStarted_images/Theme.png)
+  ![WPF TreeView Theme](GettingStarted_images/wpf-treeview-theme.png)
+
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

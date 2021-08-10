@@ -35,7 +35,7 @@ integerTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the IntegerTextBox value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![Changing Value by Up and Down Arrow Key in WPF IntegerTextBox](Step-Interval_images/wpf-integer-textbox-value.png)
 
 ## Change Value on Mouse Wheel
 
@@ -60,7 +60,7 @@ integerTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the IntegerTextBox value by Mouse Wheel](Step-Interval_images/Step-Interval_MouseWheel.png)
+![Changing Value by Mouse Wheel in WPF IntegerTextBox](Step-Interval_images/wpf-integer-textbox-change-value.png)
 
 ## Change Value on Click and Drag
 
@@ -85,7 +85,7 @@ integerTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the IntegerTextBox value by clicking and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
+![Changing Value by Clicking and Drag in WPF IntegerTextBox](Step-Interval_images/wpf-integer-textbox-drag-and-drop.gif)
 
 ## Allow or restrict selection on focus
 
@@ -107,8 +107,8 @@ integerTextBox.TextSelectionOnFocus = true;
 
 ### TextSelectionOnFocus = "False"
 
-![IntegerTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_SelectionFalse.png)
+![Restrict Text Selection in WPF IntegerTextBox](Step-Interval_images/wpf-integer-textbox-restrict-selection.png)
 
 ### TextSelectionOnFocus = "True"
 
-![IntegerTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_SelectionTrue.png)
+![WPF IntegerTextBox displays Text Selection](Step-Interval_images/wpf-integer-textbox-text-selection.png)

@@ -454,28 +454,28 @@ The following image illustrates the change in the opacity of the included rectan
 
 ##### Border Styles
 
-PDF viewer allows the users to change the annotation border style. Currently it provides support for following border style. 
+PDF viewer allows the users to change the annotation border style. Currently, it provides support for following border style. 
 
 * Cloudy
 * Solid
 
-By default, annotation border style will be solid.
+By default, the annotation border style will be solid.
 
-#####Changing the border style from UI
+##### Changing the border style from UI
 
 The border style of the selected rectangle annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected rectangle shape.
 
 The following image illustrates how to change the border style of the rectangle annotation.
 
-![rectangle annotation](Annotation-images\Rectangle-Annotation-11.png)
+![WPF PDFViewer Before applying rectangle annotation border style](Annotation-images\WPF-PDFViewer-Before-applying-rectangle-annotation-border-style.png)
 
 The following image illustrates the change of thickness in the selected rectangle annotation.
 
-![rectangle annotation](Annotation-images\Rectangle-Annotation-12.png)
+![WPF PDFViewer After applying rectangle annotation border style](Annotation-images\WPF-PDFViewer-After-applying-rectangle-annotation-border-style.png)
 
-#####Changing the border style programmatically
+##### Changing the border style programmatically
 
-The rectangle annotation can be customized at the time of inclusion. The following code shows how to set default border style of the included rectangle annotation by using BorderEffect property.
+The rectangle annotation can be customized at the time of inclusion. The following code shows how to set the default border style of the included rectangle annotation by using the [BorderEffect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerRectangleSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerRectangleSettings_BorderEffect) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -483,6 +483,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Rectangle;
     pdfViewer.RectangleAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
@@ -734,7 +735,16 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Arrow
 
-PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document.
+PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document. The following XAML code shows how to bind the annotation command for arrow annotation to a Button.
+
+{% tabs %}
+{% highlight xaml %}
+
+	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl"/>	
+    <Button Content="Arrow" CommandParameter="Arrow" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
+
+{% endhighlight %}
+{% endtabs %}
 
 ### How to set the stroke color
 
@@ -1272,21 +1282,21 @@ By default, annotation border style will be solid.
 
  N>For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
 
-#####Changing the border style from UI
+##### Changing the border style from UI
 
 The border style of the selected polygon annotation will be displayed in the combo box control of the appearance tab. This combo box will allow us to modify the border style of the selected polygon shape.
 
 The following image illustrates how to change the border style of the polygon annotation included.
 
-![Before applying polygon border style](Annotation-images\Polygon-Annotation-13.png)
+![WPF PDFViewer Before applying polygon border style](Annotation-images\WPF-PDFViewer-Before-applying-polygon-border-style.png)
 
 The following image illustrates the change of border style in the selected polygon annotation.
 
-![Before applying polygon border style](Annotation-images\Polygon-Annotation-14.png)
+![WPF PDFViewer After applying polygon border style](Annotation-images\WPF-PDFViewer-After-applying-polygon-border-style.png)
 
-#####Changing the border style programmatically
+##### Changing the border style programmatically
 
-The polygon annotation can be customized at the time of inclusion. The following code shows how to a set default border style of the included polygon annotation by using BorderEffect property.
+The polygon annotation can be customized at the time of inclusion. The following code shows how to set the default border style of the included polygon annotation by using the BorderEffect property.
 
 {% tabs %}
 {% highlight C# %}
@@ -1294,11 +1304,20 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon;
     pdfViewer.PolygonAnnotationSettings.BorderEffect = BorderEffect.Cloudy;
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+##### How to directly include cloud shape from toolbar
+
+Using the default toolbar of PDF Viewer, you can directly enable the mode to add cloud shapes in PDF pages
+
+The following image illustrates how to select the cloud shape from the toolbar.
+
+![WPF PDFViewer Cloud shape option in toolbar](Annotation-images\WPF-PDFViewer-Cloud-shape-option-in-toolbar.png)
 
 #### General tab
 
@@ -1595,3 +1614,6 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

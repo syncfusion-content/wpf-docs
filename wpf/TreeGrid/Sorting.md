@@ -60,7 +60,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusio
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![Sorting_img1](Sorting_images/Sorting_img1.png)
+![WPF TreeGrid with Sorting](Sorting_images/wpf-treegrid-sorting.png)
 
 ## Sort column in double click
 
@@ -100,7 +100,7 @@ Following are the sequence of sorting orders when clicking column header,
 SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-![Sorting_img2](Sorting_images/Sorting_img2.png)
+![Multi Column Sorting in WPF TreeGrid](Sorting_images/wpf-treegrid-multi-column-sorting.png)
 
 ### Display sort order
 
@@ -124,7 +124,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting_img3](Sorting_images/Sorting_img3.png)
+![WPF TreeGrid displays Sorting Order](Sorting_images/wpf-treegrid-sorting-order.png)
 
 ## Programmatic Sorting
 
@@ -274,7 +274,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-![Sorting_img4](Sorting_images/Sorting_img4.png)
+![WPF TreeGrid with Custom Sorting](Sorting_images/wpf-treegrid-custom-sorting.png)
 
 ## Handling events
 
@@ -284,7 +284,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) - Gets the action triggered this event. 
 
-[Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) - Setting value to `true`, cancels the triggered action. 
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) - Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescriptions` that are added.
 
@@ -292,7 +292,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [CancelScroll](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) property of `SortColumnChanging` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -314,3 +314,6 @@ private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChanging
 ### SortColumnChanged event
 
 [SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the sorting is applied to the column. [GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnChanged` event. 
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

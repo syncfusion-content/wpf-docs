@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 ## Adding WPF PropertyGrid via designer
 
@@ -63,7 +63,7 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Adding WPF PropertyGrid via C\#
+## Adding WPF PropertyGrid via C#
 
 To add the `PropertyGrid` control manually in C#, follow these steps:
 
@@ -72,7 +72,7 @@ To add the `PropertyGrid` control manually in C#, follow these steps:
 2. Add the  following assembly references to the project,
     * Syncfusion.PropertyGrid.Wpf
     * Syncfusion.Shared.WPF
-    *  Syncfusion.Tools.Wpf
+    * Syncfusion.Tools.Wpf
 
 3. Include the required namespace and create an instance of `PropertyGrid` and add it to the window.
 
@@ -430,6 +430,84 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 ![Tooltip show the property description](Getting-Started_images/EnableTooltip.gif)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) in GitHub
+
+## Override the property items
+
+The `PropertyGrid` control notifies the users when a property item is created and is being added in the property collection of the control by using the [`AutoGeneratingPropertyGridItem`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event. The 
+`AutoGeneratingPropertyGridItem` event contains the following properties and allows us to change their value if required.
+* **Cancel**  - Allows users to skip adding the current property item in the `PropertyGrid`.
+* [**Category**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Category) - Gets or sets the name of the category for the property item.
+* [**Description**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Description) - Gets or sets a description of the property item.
+* [**DescriptionTemplate**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DescriptionTemplate) - Gets or sets the template used to display the description of SelectedItem.
+* [**DisplayName**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_DisplayName) - Gets or sets a display name to the property item.
+* [**ExpandMode**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ExpandMode) - Gets or sets whether to populate nested properties of PropertyItem or not.
+* [**Order**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_Order) - Gets or sets a value to arrange the property item into the property collection when the value of `SortDirection` property is **null**. 
+* [**OriginalSource**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_OriginalSource) - Gets the PropertyItem that is being added to the property collection of PropertyGrid.
+* [**ReadOnly**](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html#Syncfusion_Windows_PropertyGrid_AutoGeneratingPropertyGridItemEventArgs_ReadOnly) - Gets or sets a value indicating whether the property item is ready only or not.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                        AutoGeneratingPropertyGridItem="propertyGrid1_AutoGeneratingPropertyGridItem"
+                        Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.AutoGeneratingPropertyGridItem += propertyGrid1_AutoGeneratingPropertyGridItem;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle this event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs e)
+{
+    var categoryName = e.Category;
+    var description = e.Description;
+    var propertyItemDisplayName = e.DisplayName;
+    bool isReadOnly = e.ReadOnly;
+    bool isCancel = e.Cancel;
+    var itemOrder = e.Order;
+    var propertyItem = e.OriginalSource;
+    var descriptionTemplate = e.DescriptionTemplate;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Override editor
+
+You can also apply a custom editor or change an existing custom editor of the property items in `PropertyGrid` in the [`AutoGeneratingPropertyGridItem`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_AutoGeneratingPropertyGridItem) event as shown below.
+
+{% tabs %}
+{% highlight C# %}
+
+private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs e)
+{
+    if(e.DisplayName == "Age")
+    {
+        PropertyItem propertyItem = e.OriginalSource as PropertyItem;
+        if(propertyItem.PropertyType == typeof(long))
+        {
+            propertyItem.Editor = new IntegerTextBoxEditor();
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](Getting-Started_images/Getting-Started-AutoGeneratingPropertyGridItems.png)
 
 ## Property item value changed notification
 

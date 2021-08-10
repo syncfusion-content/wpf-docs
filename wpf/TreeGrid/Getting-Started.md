@@ -99,7 +99,7 @@ In this walk through, you will create WPF application with SfTreeGrid control.
 4. [Adding control manually in C#](#adding-control-manually-in-c)
 5. [Binding self-relational data in SfTreeGrid](#binding-self-relational-data-in-sftreegrid)
 6. [Binding nested collection with SfTreeGrid](#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/on-demand-loading)
+7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/load-on-demand)
 8. [Defining Columns](#defining-columns)
 9. [Selection](#selection)
 10. [Sorting](#sorting)
@@ -113,7 +113,7 @@ Create new WPF project in Visual Studio to display SfTreeGrid with data objects.
 #### Adding control via Designer
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-![Adding SfTreeGrid through designer](Getting-Started_images/Getting-Started_img1.png)
+![Dragging WPF TreeGrid from Toolbox to Designer](Getting-Started_images/wpf-treegrid-toolbox.png)
 
 #### Adding control manually in XAML
 In order to add control manually in XAML, do the below steps,
@@ -239,7 +239,7 @@ public class EmployeeInfo
 {% endtabs %}
 
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface.
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
 
 2. Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 
@@ -373,7 +373,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Binding self-relational data with SfTreeGrid](Getting-Started_images/Getting-Started_img2.png)
+![WPF TreeGrid with Binding Data](Getting-Started_images/wpf-treegrid-binding-data.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -519,7 +519,7 @@ namespace NestedCollectionDemo
 }
 {% endhighlight %}
 {% endtabs %}
-![Binding nested-collection with SfTreeGrid](Getting-Started_images/Getting-Started_img3.png)
+![WPF TreeGrid with Nested Collection](Getting-Started_images/wpf-treegrid-nested-collection.png)
 
 ### Defining Columns
 
@@ -638,7 +638,7 @@ Represents SfTreeGrid column that hosts textual content in its cells.
 {{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/doubletextbox/overview)'| markdownify }} control in its cells which is used to format and display Numeric values.
+Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusion.com/wpf/double-textbox/overview)'| markdownify }} control in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -646,7 +646,7 @@ Represents SfTreeGrid column that hosts {{'[DoubleTextBox](https://help.syncfusi
 {{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimeedit/overview)'| markdownify }} control in its cells which is used to display and format DateTime values.
+Represents SfTreeGrid column that hosts {{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimepicker/overview)'| markdownify }} control in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -679,7 +679,7 @@ Represents SfTreeGrid column that hosts `MaskedTextBox` control in its cells wh
 </td>
 <td>
 Represents SfTreeGrid column that hosts 
-{{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currencytextbox/overview)'| markdownify }} control in its cells which is used to display numeric values with currency format.
+{{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currency-textbox/overview)'| markdownify }} control in its cells which is used to display numeric values with currency format.
 </td>
 </tr>
 <tr>
@@ -687,7 +687,7 @@ Represents SfTreeGrid column that hosts
 {{'[TreeGridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPercentColumn.html)'| markdownify }}
 </td>
 <td>
-Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)'| markdownify }} control in its cells which is used to display numeric values with percent format.
+Represents SfTreeGrid column that hosts {{'[PercentTextBox](https://help.syncfusion.com/wpf/percent-textbox/overview)'| markdownify }} control in its cells which is used to display numeric values with percent format.
 </td>
 </tr>
 <tr>
@@ -726,7 +726,7 @@ Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfus
 
 Filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in SfTreeGrid. The filtering operations can be customized by handling the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events.
 
-![Filtering in SfTreeGrid](Getting-Started_images/Getting-Started_img5.png)
+![WPF TreeGrid with Filtering](Getting-Started_images/wpf-treegrid-filter.png)
 
 ## Theme
 
@@ -736,4 +736,7 @@ SfTreeGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme in SfTreeGrid](Getting-Started_images/Theme.png)
+  ![Applying Theme in WPF TreeGrid](Getting-Started_images/wpf-treegrid-theme.png)
+
+
+  N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

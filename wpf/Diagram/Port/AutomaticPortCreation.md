@@ -32,7 +32,7 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 {% endhighlight %}
 {% endtabs %}
 
-![AutomaticPortCreation](Port_images/AutomaticPortCreation.gif)
+![WPF Diagram Automatic Port Creation](Port_images/wpf-diagram-automatic-port-creation.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/AutomaticPortCreation)
 
@@ -43,7 +43,7 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 * For `NodePort` and `DockPort`, port can be dragged within the node bounds.
 * For `ConnectorPort`, port can be dragged anywhere on the connector.
  
- ![Port dragging](Port_images/Interaction.gif)
+ ![WPF Diagram Port Dragging](Port_images/wpf-port-dragging.gif)
 
 ## See Also
 

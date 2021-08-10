@@ -20,7 +20,7 @@ DockingManager supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF DockingManager](Getting-Started_images/Getting-Started_img_theme.png)
+  ![WPF Docking Theme](Getting-Started_images/wpf-docking-theme.png)
 
 ## Dock Window Style
 
@@ -72,7 +72,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 
 {% endtabs %}
 
-![Dock window with customized AutoHide button template](StylingandTemplates_images/StylingandTemplates_img14.jpeg)
+![WPF Docking AWL Button Template](StylingandTemplates_images/wpf-docking-AWL-button-template.jpeg)
 
 ### CloseButtonTemplate
 
@@ -116,7 +116,7 @@ syncfusion:DockingManager.Header="Child2"/>
 
 {% endtabs %}
 
-![Dock window with customized close button template](StylingandTemplates_images/StylingandTemplates_img15.jpeg)
+![WPF Docking Close Button Template](StylingandTemplates_images/wpf-docking-close-button-template.jpeg)
 
 ### MenuButtonTemplate
 
@@ -168,7 +168,7 @@ The context menu button appearance in the Dock window header can be customized u
 
 {% endtabs %}
 
-![Dock window with customized menu button template](StylingandTemplates_images/StylingandTemplates_img16.jpeg)
+![WPF Docking Menu Button Template](StylingandTemplates_images/wpf-docking-menu-button-template.jpeg)
 
 ### MinimizeButton Template
 
@@ -214,7 +214,7 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 
 {% endtabs %}
 
-![Dock window with customized minimize button template](StylingandTemplates_images/StylingandTemplates_img17.jpeg)
+![WPF Docking Minimize Button Template](StylingandTemplates_images/wpf-docking-minimize-button-template.jpeg)
 
 ### MaximizeButtonTemplate
 
@@ -261,7 +261,7 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 
 {% endtabs %}
 
-![Dock window with customized maximize button template](StylingandTemplates_images/StylingandTemplates_img18.jpeg)
+![WPF Docking Maximize Button Template](StylingandTemplates_images/wpf-docking-maximize-button-template.jpeg)
 
 
 ### RestoreButtonTemplate 
@@ -314,7 +314,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 
 {% endtabs %}
 
-![Dock window with restore AutoHide button template](StylingandTemplates_images/StylingandTemplates_img19.jpeg)
+![WPF Docking Restore Button Template](StylingandTemplates_images/wpf-docking-restore-button-template.jpeg)
 
 
 ### TabItemTemplate
@@ -411,7 +411,7 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 
 {% endtabs %}
 
-![Tabbed windows with customized template](StylingandTemplates_images/StylingandTemplates_img20.jpeg)
+![WPF Docking Tab Item Template](StylingandTemplates_images/wpf-docking-tab-item-template.jpeg)
 
 
 ### DockedElementTabbedHostStyle
@@ -478,7 +478,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 {% endtabs %}
 
-![Background of the dock children has been changed to pink color](StylingandTemplates_images/StylingandTemplates_img21.jpeg)
+![WPF Docked Element Tabbed Host Style](StylingandTemplates_images/wpf-docked-element-tabbed-host-style.jpeg)
 
 
 ### Custom header for all child
@@ -510,7 +510,7 @@ A common header style for all dock window can be customized using the property `
 
 {% endtabs %}
 
-![HeaderStyle which is applied to all dock children of DockingManager](StylingandTemplates_images/StylingandTemplates_img22.jpeg)
+![WPF Docking Custom Header for all Child](StylingandTemplates_images/wpf-docking-custom-header-for-all-child.jpeg)
 
 ### Custom header for individual child
 
@@ -566,7 +566,7 @@ Header of individual dock child can be customized through the [HeaderStyle](http
 
 {% endtabs %}
 
-![Child windows with customized header](StylingandTemplates_images/Dock-Window-Header-Style.jpg)
+![WPF Docking Custom Header for Individual Child](StylingandTemplates_images/wpf-docking-custom-header-for-individual-child.jpg)
 
 Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-HeaderStyle-for-individual-dockchild) to know how the header of the dock windows are customized through style of the Header.
 
@@ -616,7 +616,7 @@ The context menu of DockingManager can be customized using the `DockWindowContex
 
 {% endtabs %}
 
-![ContextMenuItem with customized style](StylingandTemplates_images/StylingandTemplates_img23.jpeg)
+![WPF Docking ContextMenuItem with Customized Style](StylingandTemplates_images/wpf-docking-contextmenuitem-with-customized-style.jpeg)
 
 
 ## Float Window Style
@@ -712,7 +712,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 {% endtabs %}
 
-![Float window with customized template](StylingandTemplates_images/StylingandTemplates_img24.jpeg)
+![WPF Docking Float Window Template](StylingandTemplates_images/wpf-docking-float-window-template.jpeg)
 
 
 ### FloatWindowStyle
@@ -778,7 +778,7 @@ The NativeFloatWindow of DockingManager can be customized using the `NativeWindo
 
 {% endtabs %}
 
-![Floatwindow with customized style](StylingandTemplates_images/StylingandTemplates_img25.jpeg)
+![WPF Docking Float Window Style](StylingandTemplates_images/wpf-docking-float-window-style.jpeg)
 
 
 ## Auto Hide Window Style
@@ -832,7 +832,7 @@ The template of the SideTabItem of the DockingManager can be customized using th
 
 {% endtabs %}
 
-![SideTabItem with customized template](StylingandTemplates_images/StylingandTemplates_img26.jpeg)
+![WPF Docking SideTabItem Template](StylingandTemplates_images/wpf-docking-sidetabitem-template.jpeg)
 
 
 ### SideItemStyle
@@ -871,7 +871,7 @@ The style for the sideTabItem can be changed using `SideItemStyle` by settings i
 
 {% endtabs %}
 
-![SideTabItem with customized style](StylingandTemplates_images/StylingandTemplates_img27.jpeg)
+![WPF Docking SideTabItem Style](StylingandTemplates_images/wpf-docking-sidetabitem-style.jpeg)
 
 
 ### SidePanelTemplate
@@ -913,7 +913,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 
 {% endtabs %}
 
-![SidePanel with customized template](StylingandTemplates_images/StylingandTemplates_img28.jpeg)
+![WPF Docking SidePanel Template](StylingandTemplates_images/wpf-docking-sidepanel-template.jpeg)
 
 
 ###  SidePanelStyle
@@ -948,7 +948,7 @@ The style for the SidePanel of the DockingManager can be customized using the `S
 
 {% endtabs %}
 
-![SidePanel with customized style](StylingandTemplates_images/StylingandTemplates_img29.jpeg)
+![WPF Docking SidePanel Style](StylingandTemplates_images/wpf-docking-sidepanel-style.jpeg)
 
 ## Drag Provider Style
 
@@ -994,7 +994,7 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 {% endtabs %}
 
-![Customized bottom drag provider](StylingandTemplates_images/StylingandTemplates_img30.jpeg)
+![WPF Docking Bottom Drag Provider](StylingandTemplates_images/wpf-docking-bottom-drag-provider.jpeg)
 
 
 ### LeftDragProvider
@@ -1036,7 +1036,7 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 {% endtabs %}
 
-![Customized left drag provider](StylingandTemplates_images/StylingandTemplates_img31.jpeg)
+![WPF Docking Left Drag Provider](StylingandTemplates_images/wpf-docking-left-drag-provider.jpeg)
 
 
 ### RightDragProvider
@@ -1079,7 +1079,7 @@ To dock the DockWindow to the right side, RightDragProvider is used. It can be c
 
 {% endtabs %}
 
-![Customized right drag provider](StylingandTemplates_images/StylingandTemplates_img32.jpeg)
+![WPF Docking Right Drag Provider](StylingandTemplates_images/wpf-docking-right-drag-provider.jpeg)
 
 
 ### TopDragProvider
@@ -1122,7 +1122,7 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 {% endtabs %}
 
-![Customized top drag provider](StylingandTemplates_images/StylingandTemplates_img33.jpeg)
+![WPF Docking Top Drag Provider](StylingandTemplates_images/wpf-docking-top-drag-provider.jpeg)
 
 
 ### CenterDragProvider
@@ -1165,7 +1165,7 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 {% endtabs %}
 
-![Customized center drag provider](StylingandTemplates_images/StylingandTemplates_img34.jpeg)
+![WPF Docking Center Drag Provider](StylingandTemplates_images/wpf-docking-center-drag-provider.jpeg)
 
 
 ## DocumentTabControlStyle
@@ -1200,7 +1200,7 @@ Document state in DockingManager used the DocumentTabControl and its style can b
 
 {% endtabs %}
 
-![DocumentTabControl with customized style](StylingandTemplates_images/StylingandTemplates_img35.jpeg)
+![WPF Docking DocumentTabControl Style](StylingandTemplates_images/wpf-docking-document-tab-control-style.jpeg)
 
 
 ## DocumentTabItemStyle
@@ -1236,7 +1236,7 @@ Each Document TabItem in DockingManager constructed by the TabItemExt and its st
 
 {% endtabs %}
 
-![DocumentTabItem with customized style](StylingandTemplates_images/StylingandTemplates_img36.jpeg)
+![WPF Docking DocumentTabItem Style](StylingandTemplates_images/wpf-docking-document-tab-item-style.jpeg)
 
 
 ## DocumentMDIHeaderStyle
@@ -1288,7 +1288,7 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 
 {% endtabs %}
 
-![MDI window with customized style](StylingandTemplates_images/StylingandTemplates_img37.jpeg)
+![WPF Docking DocumentMDIHeader Style](StylingandTemplates_images/wpf-docking-document-MDI-header-style.jpeg)
 
 
 ## TabControl style
@@ -1328,7 +1328,7 @@ TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle
 {% endhighlight %}
 
 {% endtabs %}
-![TabControl in tabbed windows  with customized style](StylingandTemplates_images/StylingandTemplates_img38.jpeg)
+![WPF Docking TabControl Style](StylingandTemplates_images/wpf-docking-tab-control-style.jpeg)
 
 
 ### TabItemStyle
@@ -1365,6 +1365,6 @@ The style for the Tabbed children of DockingManager can be customized using the 
 
 {% endtabs %}
 
-![Tabitem in tabbed windows  with customized style](StylingandTemplates_images/StylingandTemplates_img39.jpeg)
+![WPF Docking TabItem Style](StylingandTemplates_images/wpf-docking-tab-item-style.jpeg)
 
 

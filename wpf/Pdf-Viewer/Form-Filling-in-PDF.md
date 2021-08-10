@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Filling in PDF Files in WPF Pdf Viewer control | Syncfusion
+title: Form Filling in PDF Files in WPF Pdf Viewer | Syncfusion
 description: Learn about Form Filling in PDF Files support in Syncfusion WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
@@ -11,7 +11,7 @@ documentation: ug
 
 PDF Viewer provides the ability to Fill, Edit, Flatten, and Save the `AcroForm` fields in PDF files.
 
-![Form Filing](form-filling-images/form-filling.png)
+![WPF PDF Viewer Form Filling](form-filling-images/wpf-pdf-viewer-form-filling.png)
 
 ## Supported form fields
 
@@ -61,7 +61,7 @@ Follow the below steps to import date to PDF document with `AcroForm`.
 1.	Click the form data tool button in the left pane, the form data toolbar will appear as a secondary toolbar in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 2.	Select **Import** option in form data toolbar to import the PDF form data.
 
-![Import Form Data](form-filling-images/Import-Export-1.png)  
+![WPF PDF Viewer Import Form Data](form-filling-images/wpf-pdf-viewer-import-form-data.png)  
 
 The following code shows how to import form data in code behind.
 
@@ -115,3 +115,6 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

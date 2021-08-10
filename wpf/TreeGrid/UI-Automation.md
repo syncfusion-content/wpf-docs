@@ -54,7 +54,7 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPa
 For Visual Studio 2017: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
 
-N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll needs to be installed in GAC location. Please refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
+N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll needs to be installed in GAC location. Please refer to the MSDN link for [GAC](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/ex0ss12c(v=vs.80)) installation.
 
 ### Steps to work with Coded UI
 
@@ -330,3 +330,5 @@ SfTreeGridExpanderCellPropertyProvider
 </tr>
 </table>
 
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

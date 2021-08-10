@@ -79,7 +79,7 @@ _ribbonBar.Items.Add(_ribbonButton6)
 
 {% endtabs %}
 
-![Adding separator to the ribbon bar](RibbonSeparator_images/RibbonSeparator_img1.jpg)
+![WPF Ribbon Separator](RibbonSeparator_images/wpf-ribbon-separator.jpg)
 
 ## Add Separator to the simplified layout
 
@@ -154,7 +154,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 {% endtabs %}
 
-![RibbonSeparator during simplified layout](RibbonSeparator_images/RibbonSeparator_Simplified.png)
+![WPF Ribbon Separator in Simplified Layout](RibbonSeparator_images/wpf-ribbon-separator-in-simplified-layout.png)
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonSeparator can be ignored as it will be resized automatically to the standard width and height. If the RibbonSeparator is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

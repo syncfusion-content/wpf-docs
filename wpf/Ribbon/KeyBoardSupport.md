@@ -40,7 +40,7 @@ syncfusion:Ribbon.KeyTip="CR" />
 
 {% endtabs %}
 
-![Displays key tips for the ribbon items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img1.jpeg)
+![WPF Ribbon displays KeyTips for RibbonItems](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip.jpeg)
 
 
 ## KeyTip for QAT items
@@ -74,7 +74,7 @@ syncfusion:RibbonCommandManager.SynchronizedItem="Save" SmallIcon="/Resources/Sa
 
 {% endtabs %}
 
-![Displays key tips for QAT items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img2.jpeg)
+![WPF Ribbon displays KeyTips for QAT Items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-qat-items.jpeg)
 
 
 ## How to access particular item in ribbon using KeyTip
@@ -110,17 +110,17 @@ The below example illustrates how to access particular Ribbon item using KeyTip
 
 The below screenshot displays the steps involved to access RibbonComboBox. When Alt key is pressed, KeyTip for the RibbonTab gets displayed. Then choose the desired RibbonTab with the KeyTip
 
-![Displays key tip for selecting ribbon tab](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img3.jpeg)
+![WPF Ribbon displays KeyTip for Specific RibbonTab](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-ribbontab.jpeg)
 
 
 In the Next Step, all the KeyTips under RibbonTab gets displayed 
 
-![Displays key tip for ribbon items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img4.jpeg)
+![WPF Ribbon displays KeyTip for RibbonItems](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-ribbonitem.jpeg)
 
 
 Finally, Press the RibbonComboBox KeyTip to access it
 
-![Press the combo box key tip to access it](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img5.jpeg)
+![WPF Ribbon displays KeyTip RibbonComboBox](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-combobox.jpeg)
 
 
 ## How does BackStage can be accessed using KeyTip
@@ -146,11 +146,11 @@ The backstage feature of the Ribbon control provides KeyTip support to display K
 
 In the below screenshot, “B” is set as KeyTip for the Backstage. So when the user press “B”, it automatically open the BackStage
 
-![Displays key tip to navigate to backstage](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img6.jpeg)
+![WPF Ribbon displays KeyTip for RibbonBackStage](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-backstage.jpeg)
 
 
 The following screenshot display the KeyTip for the BackStageCommand and BackStageTabItem
 
-![Displays key tip for backstage items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/KeyBoardaccesstoallRibbonitemsusingKeyTip_img7.jpeg)
+![WPF Ribbon displays KeyTip for RibbonBackStage Items](KeyBoardaccesstoallRibbonitemsusingKeyTip_images/wpf-ribbon-keytip-for-backstage-items.jpeg)
 
 

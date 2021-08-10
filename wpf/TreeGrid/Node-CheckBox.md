@@ -24,7 +24,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfTreeGrid Node-CheckBox Image1](Node-CheckBox_images/Node-CheckBox_img1.png)
+![Node with CheckBox in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-node-checkbox.png)
 
 ## Indeterminate State Support
 
@@ -64,7 +64,7 @@ treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfTreeGrid Node-CheckBox Image2](Node-CheckBox_images/Node-CheckBox_img2.png)
+![Recursive Checking in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-recursive-checking.png)
 
 N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
@@ -117,7 +117,7 @@ You can disable CheckBox by writing style for [TreeGridExpanderCell](https://hel
 
 In the below screenshot, node CheckBox is disabled for leaf nodes.
 
-![WPF SfTreeGrid Node-CheckBox Image3](Node-CheckBox_images/Node-CheckBox_img3.png)
+![Disabling Node CheckBox in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-disable-node-checkbox.png)
 
 ## Collapsing CheckBox for certain nodes
 
@@ -276,7 +276,7 @@ public class BoolToVisibilityConverter : IValueConverter
 
 Here, node CheckBox is collapsed for leaf nodes.
 
-![WPF SfTreeGrid Node-CheckBox Image4](Node-CheckBox_images/Node-CheckBox_img4.png)
+![Collapsing Node CheckBox in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-collapse-node-checkbox.png)
 
 ## Handling Selection based on CheckBox State
 
@@ -305,7 +305,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfTreeGrid Node-CheckBox Image5](Node-CheckBox_images/Node-CheckBox_img5.png)
+![Default CheckBox Selection in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-checkbox-selection.png)
 
 **SelectOnCheck**
 
@@ -325,7 +325,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfTreeGrid Node-CheckBox Image6](Node-CheckBox_images/Node-CheckBox_img6.png)
+![Row Selection with CheckBox in WPF TreeGrid](Node-CheckBox_images/wpf-treegrid-row-selection-with-checkbox.png)
 
 **SynchronizeSelection**
 
@@ -344,7 +344,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfTreeGrid Node-CheckBox Image7](Node-CheckBox_images/Node-CheckBox_img7.png)
+![WPF TreeGrid Synchronize Row Selection with CheckBox](Node-CheckBox_images/wpf-treegrid-synchronize-row-selection-checkbox.png)
 
 N>
 * Recursive checking is not supported when selection mode is single.
@@ -404,3 +404,6 @@ If you want to get all the checked nodes even though they are not in view, you c
 var nodes = treeGrid.GetCheckedNodes(true);
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

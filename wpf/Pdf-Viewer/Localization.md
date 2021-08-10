@@ -21,11 +21,11 @@ We are using `en-US` culture-based resource file as default in PDF Viewer. This 
 * Add the resource key such as `OpenDocument` and its corresponding localized value in Syncfusion.PdfViewer.WPF.fr.resx file. Refer the below screenshot for the same.
 * Execute the application in French culture to see the changes.
 
-![Resource file](Localization_images/Localization_image2.png)
+![Resource file](Localization_images/wpf-pdf-viewer-resource-file.png)
 
 The following screenshot shows the `PdfViewerControl` in French language
 
-![Localization](Localization_images/Localization_image1.png)
+![Localization](Localization_images/wpf-pdf-viewer-localization.png)
 
 ## Localize Resource File with Different Assembly or Namespace
 
@@ -43,3 +43,6 @@ public MainWindow()
 }    
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Display Options in WPF Pivot Grid
 
-The pivot grid control provides support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid using the `DisplayOption` property.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid using the `DisplayOption` property.
 
 For XAML, refer to the following code sample.
 
@@ -106,3 +106,5 @@ Data actually presents in the PivotEngine, but displays the calculation values o
 Data actually presents in the PivotEngine, but hides all the calculation values in all columns of the pivot grid.
 
 ![To hide the calculation values in all columns](Display-options-Images/PivotComputationinfo using none option.png)
+
+N> You can also explore our [WPF Pivot Grid example](https://github.com/syncfusion/wpf-demos) to knows how to organizes and summarizes business data and displays the result in a cross-table format.

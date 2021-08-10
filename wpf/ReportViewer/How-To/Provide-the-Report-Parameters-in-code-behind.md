@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Provide the Report Parameters in code behind | ReportViewer | WPF | Syncfusion
-description: provide the report parameters in code behind
+title: Report Parameters in code behind | ReportViewer | WPF | Syncfusion
+description: Provide the report parameters in code behind for Syncfusion WPF ReportViewer control, its elements, and more.
 platform: wpf
 control: ReportViewer
 documentation: ug

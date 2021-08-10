@@ -54,17 +54,16 @@ percentTextBox.MaxValueOnExceedMaxDigit = true;
 
 `MinValidation` is set to OnKeyPress, it cannot let to enter a percent value less than the `MinValue`. If try to enter a percent value less than the `MinValue`, then the `MinValue` will set to the `PercentValue` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![Validate minimun value of PercentTextBox on pressing a key](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![Validate minimun value of PercentTextBox on pressing a key](Restriction-or-Validation_images/wpf-percent-textbox-min-value-validation.jpeg)
 
 `MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
-![Validate maximum value of PercentTextBox when keyboard focus is lost](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![Validate maximum value of PercentTextBox when keyboard focus is lost](Restriction-or-Validation_images/wpf-percent-textbox-max-value-validation.jpeg)
+
 
 ## Restrict number of decimal digit
 
-## Restrict number of decimal digit
-
-You can change the decimal digits format in the `PercentTextBox` control using `PercentDecimalDigits` property. You can restrict the decimal digits of text within maximum and minimum limits in `PercentTextBox` control using `MinPercentDecimalDigits` and `MaxPercentDecimalDigits` properties. The default value of `MinPercentDecimalDigits`,`MaxPercentDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
+You can format the decimal digits in the [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control using [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_PercentDecimalDigits) property. You can restrict the decimal digits of text within maximum and minimum limits in `PercentTextBox` control using [MinPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MinPercentDecimalDigits) and [MaxPercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.PercentTextBox.html#Syncfusion_Windows_Shared_PercentTextBox_MaxPercentDecimalDigits) properties. The default value of `MinPercentDecimalDigits`,`MaxPercentDecimalDigits` and `DoubleDecimalDigits` properties is **-1**.
 
 N> If the value of `MinPercentDecimalDigits` property is greater than value of the `MaxPercentDecimalDigits` property, the text of `PercentTextBox` will be updated based on value of `MinPercentDecimalDigits` property.
 
@@ -88,7 +87,7 @@ percentTextBox.MinPercentDecimalDigits = 1;
 
 ![PercentTextBox WPF restricts the number of decimal digits](Restriction-or-Validation_images/percenttextbox-wpf-restrict-numberof-decimal-digits.png)
 
-When the value of  `MinPercentDecimalDigits`, `MaxPercentDecimalDigits` and `PercentDecimalDigits` properties are specified, `PercentDecimalDigits` property takes higher precedence and updates the text of `PercentTextBox` property. 
+When the value of  `MinPercentDecimalDigits`, `MaxPercentDecimalDigits` and `PercentDecimalDigits` properties are specified, `PercentDecimalDigits` property takes high precedence and updates the text of `PercentTextBox` property. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -133,4 +132,4 @@ percentTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![PercentTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![PercentTextBox in read-only mode](Restriction-or-Validation_images/wpf-percent-textbox-readonly.jpeg)

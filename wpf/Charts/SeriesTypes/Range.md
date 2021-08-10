@@ -52,7 +52,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![HiLo Chart support in WPF](Series_images/hilo.png)
+![WPF HiLo Chart](Series_images/wpf-hilo-chart.png)
+
+N> You can explore our [WPF HiLo Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-hilo-chart) feature tour page for its groundbreaking features. You can also explore our [WPF HiLo Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Range Column Chart
 
@@ -91,7 +93,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeColumn chart type in WPF](Series_images/rangeseries.png)
+![WPF Range Column Chart](Series_images/wpf-range-column-chart.png)
+
+N> You can explore our [WPF Range Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/RangeColumn.xaml) to know how to displays multiple series of data as range column.
+
 
 ## Range Area Chart
 
@@ -132,7 +137,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in WPF](Series_images/rangearea.png)
+![WPF Range Area Chart](Series_images/wpf-range-area-chart.png)
 
 
 The APIs present in the RangeArea series are,
@@ -179,7 +184,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in WPF](Series_images/rangearea_closed.png)
+![Displaying Closed Range Area in WPF Chart](Series_images/wpf-chart-closed-range-area.png)
+
+N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/RangeArea.xaml) to know how to displays multiple series of data as range area.
 
 ## Spline Range Area Chart
 
@@ -222,4 +229,6 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-![Spline Range Area Series ](Series_images/splinerangearea.png)
+![WPF Spline Range Area Chart](Series_images/wpf-spline-range-area-chart.png)
+
+N> You can explore our [WPF Spline Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Range Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/SplineRangeArea.xaml) to know how to displays multiple series of data as spline range area.

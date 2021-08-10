@@ -37,7 +37,7 @@ diagram.PrintingService.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![Printing](Printing_images/printing_1.png)
+![Printing in WPF Diagram](Printing_images/wpf-diagram-printing.png)
 
 ## Print settings
 
@@ -60,11 +60,11 @@ diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
 To print a diagram from the selected printer, click the Print button at the top left corner of the Print Preview window. Also, Print Preview window
 has option to decide how many copies need to be printed. 
 
-![Printing](Printing_images/print.png)
+![Printing in WPF Diagram](Printing_images/wpf-diagram-print.png)
 
 N> Copies will be effective only for real printers.
 
-For sample, refer to [Printing](https://www.syncfusion.com/downloads/support/directtrac/243873/ze/Printing_Sample-326239405).
+For sample, refer to [Printing](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Printing).
 
 ### Printer
 
@@ -75,7 +75,7 @@ The printer option will list all the installed printers in your system. You can 
 To save a diagram as PDF, choose any PDF printer (like “Microsoft Print To PDF”) under
 Printer section. 
 
-![Printer List](Printing_images/printerlist.png)
+![Printer List in WPF Diagram](Printing_images/wpf-diagram-printer-list.png)
 
 ### Scaling 
  SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex`
@@ -91,7 +91,7 @@ diagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
 {% endhighlight %}
 {% endtabs %}
 
-![Print Scale](Printing_images/print_scale.png)
+![WPF Diagram displays Printing Scale](Printing_images/wpf-diagram-print-scale.png)
 
 ### PageRangeSelection
  When the page scaling is multiple page, then you can decide whether to print all the pages or selected page range. Find the PageRangeSelection options below:
@@ -107,7 +107,7 @@ diagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
         2) ToPage: Specifies the end page of printing.
 
     
-![PrintPageRange](Printing_images/printpagerange.png) 
+![WPF Diagram displays PrintPageRange](Printing_images/wpf-diagram-print-page-range.png) 
 
 N> Based on the FromPage and ToPage values, the PageRangeSelection option will change.
 
@@ -138,7 +138,7 @@ The orientation can be changed in print preview window at runtime using orientat
     1) Portrait - Standard Orientation.
     2) Landscape - Content of the imageable area is rotated on the page 90 degrees counterclockwise from standard (portrait) orientation.
 
-![Print Orientation](Printing_images/print_orientation.png)
+![WPD Diagram displays Print Orientation](Printing_images/wpf-diagram-print-orientation.png)
 
 ### Paper size 
 
@@ -156,7 +156,7 @@ diagram.PageSettings.PageHeight = 800;
 
 Page size can be changed in print preview window also by selecting any value from the page-size drop-down, which displays the supported page sizes of a selected printer.
 
-![Print Size](Printing_images/print_size.png)
+![WPF Diagram displays Print Paper Size](Printing_images/wpf-diagram-print-paper-size.png)
 
  ### Page margin
 
@@ -172,7 +172,7 @@ diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
 
 Page margin can be changed in print preview also by selecting from predefined page margin from margin drop-down. You can manually enter custom margins in the editors below margin drop-down and press OK to apply the custom margin.
 
-![Print Margin](Printing_images/print_margin.png)
+![WPF Diagram displays Print Page Margin](Printing_images/wpf-diagram-print-page-margin.png)
 
 ## Header and Footer
 
@@ -218,7 +218,7 @@ diagram.PrintingService.PrintSettings.PageFooterTemplate =this.Resources["PrintF
 
 3.Now, run the application and you can see page header and footer in all the pages. 
 
-![HeaderAndFooter](Printing_images/headerandfooter.png) 
+![WPF Diagram with Print Header and Footer](Printing_images/wpf-diagram-header-and-footer.png) 
  
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Printing/CustomHeaderFooter)
 
@@ -275,7 +275,7 @@ private void MainWindow_Printing(object sender, PrintingEventArgs args)
 
 Print preview window's page size drop down will display only the suported paper sizes of the selected printer. When the Diagram page size is not supported by the selected printer, then the Print button will be disabled and Page Size drop-down will ask you to choose the supported page size.
 
-![CustomPaperSize](Printing_images/unsupportedpapersize.png) 
+![WPF Diagram displays Custom Paper Size](Printing_images/wpf-diagram-custom-paper-size.png) 
 
 Using the `OnSelectedPrinterChanged` virtual method of `DiagramPrintManager`, you can add the custom pager sizes to the selected printer apart from the default supported paper sizes. Refer to the following code example.
 
@@ -380,7 +380,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Classic Print](Printing_images/classic.png)
+![WPF Diagram displays Classic Print Preview](Printing_images/wpf-diagram-classic-print-preview.png)
 
 ## See Also
 

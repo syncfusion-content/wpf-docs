@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Custom Charts in WPF (SfChart)
+# Custom Charts in WPF (SfChart)
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 
@@ -115,11 +115,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing series in WPF Chart](Series_images/palette_9.png)
+![WPF Custom Chart](Series_images/wpf-custom-chart.png)
 
 The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries have been customized using the [`CustomTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_CustomTemplate) property. Refer to this [`sample`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart) for complete series CustomTemplate.
 
-![Customizing series in Syncfusion WPF SfChart](Series_images/CustomTemplate.png)
+![Customizing WPF Chart Series](Series_images/wpf-chart-series-customization.png)
 
 ## See also
 

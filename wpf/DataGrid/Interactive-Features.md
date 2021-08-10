@@ -38,7 +38,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Opening column chooser in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img10.png)
+![WPF DataGrid displays Column Chooser](Interactive-Features_images/wpf-datagrid-column-chooser.png)
 
 ### Custom Column Chooser
 
@@ -220,7 +220,7 @@ viewModel.ShowColumnChooser = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Customized column chooser in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img12.png)
+![Customizing Column Chooser in WPF DataGrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
 
 
 ### Appearance Customization
@@ -248,6 +248,6 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized column chooser appearance in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img12.png)
+![Customizing Column Chooser Appearance in wpf datagrid](Interactive-Features_images/wpf-datagrid-column-chooser-customization.png)
 
 

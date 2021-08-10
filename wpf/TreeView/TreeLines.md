@@ -26,7 +26,7 @@ sfTreeView.ShowLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image1.png)
+![WPF TreeView TreeLines](TreeLine_images/wpf-treeview-treelines.png)
 
 ## Enable tree line for root nodes
 
@@ -49,7 +49,7 @@ sfTreeView.ShowRootLines = true;
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image2.png)
+![WPF TreeView TreeLine for Root Nodes](TreeLine_images/wpf-treeview-treeline-for-root-nodes.png)
 
 ## Customizing the tree lines
 
@@ -74,7 +74,7 @@ sfTreeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image3.png)
+![WPF TreeView Custom TreeLines](TreeLine_images/wpf-treeview-custom-treelines.png)
 
 ### Customizing the line thickness
 TreeView allows to change the thickness of tree lines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_LineStrokeThickness) property. The default value is `1`.
@@ -97,4 +97,6 @@ sfTreeView.LineStrokeThickness = 1.5;
 {% endhighlight %}
 {% endtabs %}
 
-![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image4.png)
+![WPF TreeView TreeLines Thickness](TreeLine_images/wpf-treeview-custom-treelines-thickness.png)
+
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

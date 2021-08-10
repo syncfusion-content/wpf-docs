@@ -20,4 +20,6 @@ The Syncfusion [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) 
 * Templating: Provides complete UI customization using the template and template selectors.
 * Root lines: Support to show the lines between tree nodes.
 
-![Overview in WPF TreeView](Overview_images/Overview.png)
+![WPF TreeView Control](Overview_images/wpf-treeview-control.png)
+
+N> You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

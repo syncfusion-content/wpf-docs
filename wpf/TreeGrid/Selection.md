@@ -34,7 +34,7 @@ The [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.S
 {% endhighlight %}
 {% endtabs %}
 
-![Row selected in WPF treegrid](Selection_images/Selection_img1.jpeg)
+![Row Selection in WPF TreeGrid](Selection_images/wpf-treegrid-row-selection.jpeg)
 
 ## Disable selection for rows and columns
 
@@ -61,7 +61,7 @@ When using Extended, you can select multiple rows by pressing the key modifiers 
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple rows selected in WPF treegrid](Selection_images/Selection_img2.jpeg)
+![Multiple Row Selection in WPF TreeGrid](Selection_images/wpf-treegrid-multiple-row-selection.jpeg)
 
 N> When [SelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is [Multiple](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective row. In multiple selection, pressing the navigation keys moves only the current cell, and you can select or deselect by pressing the `Space` key.
 
@@ -116,7 +116,7 @@ foreach (var order in viewModel.PersonDetails)
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
+![Programmatic Record Selection in WPF TreeGrid](Selection_images/wpf-treegrid-record-selection.jpeg)
 
 ### Process selection using methods
 
@@ -130,7 +130,7 @@ this.treeGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
+![WPF TreeGrid displays Multiple Row Selection](Selection_images/wpf-treegrid-rows-selection.jpeg)
 
 ### Process current cell
 
@@ -372,7 +372,7 @@ If the {{'[TreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#%22%22"")'| markdownify }}, clicking the Esc key for the second time cancels the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#%22%22%22%22)'| markdownify }}, clicking the Esc key for the second time cancels the edit mode for entire row.
 </td>
 </tr>
 <tr>
@@ -658,7 +658,7 @@ You can change the selection background and foreground using the [SelectionBackG
 {% endhighlight %}
 {% endtabs %}
 
-![Background and foreground of the selected rows are changed in WPF treegrid](Selection_images/Selection_img5.jpeg)
+![Customizing Rows Selection in WPF TreeGrid](Selection_images/wpf-treegrid-row-selection-customization.jpeg)
 
 ### Change current cell border style
 
@@ -683,7 +683,7 @@ You can change the current cell border thickness and border color using the [Cur
 {% endhighlight %}
 {% endtabs %}
 
-![Style of current cell border is customized in WPF treegrid](Selection_images/Selection_img6.jpeg)
+![Customizing Cell Selection Border in WPF TreeGrid](Selection_images/wpf-treegrid-cell-selection.jpeg)
 
 ### Customize row selection border
 
@@ -793,7 +793,7 @@ public class GridSelectionControllerExt : TreeGridRowSelectionController
 
 ### Change enter key behavior
 
-By default, when pressing the `Enter` key, the current cell will be moved to the next focused cell in the same column. You can change the `Enter` key behavior by overriding the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method in selection controller. In this method, you have to create a new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs), which refers to the `Tab` key and processes the `Tab` key action.
+By default, when pressing the `Enter` key, the current cell will be moved to the next focused cell in the same column. You can change the `Enter` key behavior by overriding the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method in selection controller. In this method, you have to create a new [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyeventargs?redirectedfrom=MSDN&view=net-5.0), which refers to the `Tab` key and processes the `Tab` key action.
 
 
 {% tabs %}
@@ -1059,3 +1059,6 @@ private void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

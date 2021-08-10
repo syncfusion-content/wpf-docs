@@ -29,7 +29,7 @@ chart.Header = "Usage of Metals";
 
 {% endtabs %}
 
-![SfChart with header.](Area_images/Area_img1.jpeg)
+![WPF Chart with Header](Area_images/wpf-chart-header.jpeg)
 
 
 Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property.
@@ -107,8 +107,10 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Header customization in SfChart](Area_images/Area_img2.jpeg)
+![Customizing Header of WPF Chart](Area_images/wpf-chart-header-customization.jpeg)
 
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 

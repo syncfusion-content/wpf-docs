@@ -74,12 +74,15 @@ chart.Series.Add(columnSeries);
 
 **Column** **Series**
 
-![Animation support in WPF SfChart](Animation_images/column.gif)
+![WPF Chart Column Animation](Animation_images/wpf-chart-column-animation.gif)
 
 **SplineArea** **Series**
 
-![Animation support in WPF SfChart](Animation_images/spline.gif)
+![WPF Chart Spline Animation](Animation_images/wpf-chart-spline-animation.gif)
 
 **Scatter** **Series**
 
-![Animation support in WPF SfChart](Animation_images/scatter.gif)
+![WPF Chart Scatter Animation](Animation_images/wpf-chart-scatter-animation.gif)
+
+
+N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

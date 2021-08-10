@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Serialization and Deserialization in WPF DataGrid control | Syncfusion
+title: Serialization in WPF DataGrid Control | Syncfusion
 description: Learn here all about Serialization and Deserialization support in Syncfusion WPF DataGrid (SfDataGrid) control and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization in WPF DataGrid (SfDataGrid)
+# Serialization and Deserialization in WPF DataGrid
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer).
  
 ## Serialization 
 You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current DataGrid control properties to an XML file.
@@ -26,7 +26,7 @@ using (var file = File.Create("DataGrid.xml"))
 
 ### Serialize as Stream
 
-You can store the SfDataGrid settings as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
+You can store the SfDataGrid settings as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Serialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -181,7 +181,7 @@ using (var file = File.Open("DataGrid.xml", FileMode.Open))
 
 ### Deserialize from Stream
 
-You can deserialize the SfDataGrid settings from [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
+You can deserialize the SfDataGrid settings from [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) using [Deserialize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}

@@ -14,7 +14,7 @@ SfTreeGrid allows you to validate the data and display hints in case of validati
 
 ## Built-in validations
 
-Built-in validations through[IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and Data annotation attributes, can be enabled by setting [SfTreeGrid.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [TreeGridColumn.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) properties. ` TreeGridColumn.GridValidationMode ` takes priority than ` SfTreeGrid.GridValidationMode`.
+Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0), [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and Data annotation attributes, can be enabled by setting [SfTreeGrid.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [TreeGridColumn.GridValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) properties. ` TreeGridColumn.GridValidationMode ` takes priority than ` SfTreeGrid.GridValidationMode`.
 
 * `GridValidation.InEdit` - display error icon & tips and doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
 * `GridValidation.InView` - displays error icons and tips alone.
@@ -22,11 +22,11 @@ Built-in validations through[IDataErrorInfo](https://msdn.microsoft.com/en-us/li
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-SfTreeGrid provides support to validate the data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)/[INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx).
+SfTreeGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0)/[INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0).
 
 ### Using IDataErrorInfo 
 
-You can validate the data by inheriting the [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) interface in model class.
+You can validate the data by inheriting the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,10 +83,10 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
+![Data Validation in WPF TreeGrid using IDataErrorInfo](Data-Validation_images/wpf-treegrid-data-validation.png)
 
 ### INotifyDataErrorInfo
-You can validate the data by implementing the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in model class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ Enable built-in validation support by setting `SfTreeGrid.GridValidationMode` or
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
+![Data Validation in WPF TreeGrid using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-validation.png)
 
 ## Built-in validation using Data Annotation
 
@@ -147,7 +147,7 @@ You can validate the data using **data annotation attributes** by setting [SfTre
 
 **Using different annotations**
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute(v=vs.95).aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679261(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
@@ -171,7 +171,7 @@ public decimal Price
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute(v=vs.95).aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute(v=vs.95).aspx)
+The string type property can be validated using [Required](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679203(v=vs.95)), [String Length attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679251(v=vs.95))
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ public string CustomerName
 }
 {% endhighlight %}
 {% endtabs %}
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute(v=vs.95).aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679267(v=vs.95)).
 
 {% tabs %}
 {% highlight c# %}
@@ -380,7 +380,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
+![Data Validation Error Icon with Custom Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-error-icon.png)
 
 #### Change the color of error icon
 
@@ -472,7 +472,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
+![WPF TreeGrid - Error Tip Foreground and Background Customization](Data-Validation_images/wpf-treegrid-data-validation-error-tip-customization.png)
 
 #### Change the cursor on error icon
 
@@ -565,7 +565,7 @@ You can change the validation error template cursor of the `TreeGridCell` by c
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
+![Changing Cursor on Error Icon of WPF TreeGrid](Data-Validation_images/wpf-treegrid-cursor-style.png)
 
 ### Customizing error tip
 
@@ -656,15 +656,15 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img6](Data-Validation_images/Data-Validation_img6.png)
+![Changing Error Tip Background Color in WPF TreeGrid](Data-Validation_images/wpf-treegrid-error-tip.png)
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx) or [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
+SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
 
 #### Using IDataErrorInfo
 
-You can show the error information in row header by setting [IDataErrorInfo.Error](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.error.aspx). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
+You can show the error information in row header by setting [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
 
 {% tabs %}
 {% highlight c# %}
@@ -683,11 +683,11 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img7](Data-Validation_images/Data-Validation_img7.png)
+![WPF TreeGrid displays Error Tip on Row Header](Data-Validation_images/wpf-treegrid-error-tip-on-row-header.png)
 
 #### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}
@@ -706,7 +706,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img8](Data-Validation_images/Data-Validation_img8.png)
+![WPF TreeGrid displays Error Tip on Row Header using INotifyDataErrorInfo](Data-Validation_images/wpf-treegrid-error-tip-on-header-row.png)
 
 ## Validation with CheckBox column
 
@@ -758,9 +758,12 @@ void treeGrid_CurrentCellValueChanged(object sender, TreeGridCurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-![Data-Validation_img9](Data-Validation_images/Data-Validation_img9.png)
+![Data Validation with CheckBox in WPF TreeGrid](Data-Validation_images/wpf-treegrid-data-validation-checkbox.png)
 
 ## Limitations 
 
 1. Non-editable columns will not support custom validation except [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html).
 2. [CurrentCellValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event will not triggered for [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html).
+
+
+N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.

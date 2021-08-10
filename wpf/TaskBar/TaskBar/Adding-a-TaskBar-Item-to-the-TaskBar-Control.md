@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding a TaskBar Item to the TaskBar Control | TaskBar | wpf | Syncfusion
-description: adding a taskbar item to the taskbar control
+title: Adding a TaskBar Item to the WPF TaskBar Control | Syncfusion
+description: Adding a taskbar item to the Syncfusion Essential Studio WPF TaskBar Control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
@@ -73,7 +73,7 @@ this.Content = taskBar;
 The following screen shot shows the TaskBar control with TaskBar Item.
 
 
-![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg)
+![TaskBar-Control_images1](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg)
 
 
 
@@ -173,7 +173,7 @@ The following screen shot illustrates how text has been added to the TaskBar Ite
 
 
 
-![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg)
+![TaskBar-Control_images2](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg)
 
 
 

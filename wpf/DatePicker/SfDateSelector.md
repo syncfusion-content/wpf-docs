@@ -11,7 +11,7 @@ documentation: ug
 
 The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_Value) property. 
 
-![SfDateSelector](Features_images/Features_img3.png)
+![WPF DatePicker Date Selector](Features_images/wpf-datepicker-date-selector.png)
 
 The visual elements of the date selector can be customized using the [SelectorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDatePicker.html#Syncfusion_Windows_Controls_Input_SfDatePicker_SelectorStyle) property.
 
@@ -59,7 +59,7 @@ We can change the day selector template by using the [DayCellTemplate](https://h
 
 {% endhighlight %}
 
-![SfSpellChecker with Day cell template](Features_images/Features_img7.png)
+![WPF DatePicker with Day Cell Template](Features_images/wpf-datepicker-day-cell-template.png)
 
 
 ## Change the MonthCell Template
@@ -100,7 +100,7 @@ We can change the month selector template by using the [MonthCellTemplate](https
 
 {% endhighlight %}
 
-![SfSpellChecker with Month cell template](Features_images/Features_img8.png)
+![WPF DatePicker with Month Cell Template](Features_images/wpf-datepicker-month-cell-template.png)
 
 ## Change the YearCell Template
 
@@ -140,7 +140,7 @@ We can change the year selector template by using the [YearCellTemplate](https:/
 
 {% endhighlight %}
 			
-![SfSpellChecker with Year cell template](Features_images/Features_img9.png)
+![WPF DatePicker with Year Cell Template](Features_images/wpf-datepicker-year-cell-template.png)
 
 ## Change size of cells
 
@@ -163,7 +163,7 @@ sfDatePicker.SelectorItemHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDateSelector item width and height changed](Customizing-DropDown_images/SelectorItemWidth.png)
+![WPF DatePicker Cells Size](Customizing-DropDown_images/wpf-datepicker-cells-size.png)
 
 ## DateSelector item spacing
  
@@ -184,6 +184,6 @@ sfDatePicker.SelectorItemSpacing = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDateSelector item with custom spacing](Customizing-DropDown_images/SelectorItemSpacing.png)
+![WPF DatePicker Item Spacing](Customizing-DropDown_images/wpf-datepicker-item-spacing.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorTemplates) to download the sample that showcases the `SfDateSelector` template customization. 

@@ -35,7 +35,7 @@ doubleTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the DoubleTextBox value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![Changing Value by Up and Down Arrow Key in WPF DoubleTextBox](Step-Interval_images/wpf-double-textbox-value.png)
 
 ## Change Value on Mouse Wheel
 
@@ -60,7 +60,7 @@ doubleTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the DoubleTextBox value by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
+![Changing Value by Mouse Wheel in WPF DoubleTextBox](Step-Interval_images/wpf-double-textbox-changing-value.png)
 
 ## Change Value on Click and Drag
 
@@ -85,7 +85,7 @@ doubleTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the DoubleTextBox value by clicking and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
+![Changing Value by Clicking and Drag in WPF DoubleTextBox](Step-Interval_images/wpf-double-textbox-drag-and-drop.gif)
 
 ## Allow or restrict selection on focus
 
@@ -107,8 +107,8 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 **TextSelectionOnFocus = "False"**
 
-![DoubleTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
+![Restrict Text Selection in WPF DoubleTextBox](Step-Interval_images/wpf-double-textbox-restrict-selection.png)
 
 **TextSelectionOnFocus = "True"**
 
-![DoubleTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
+![WPF DoubleTextBox displays Text Selection](Step-Interval_images/wpf-double-textbox-text-selection.png)

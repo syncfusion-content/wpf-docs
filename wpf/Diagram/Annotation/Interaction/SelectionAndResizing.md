@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Selection and Resizing | Syncfusion 
-description: how to define basic annotations for Node and Connectors
+description: how to define basic annotations for Node and Connectors in Syncfusion WPF Diagram (SfDiagram) control, its elements, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -43,7 +43,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationSelectable.png)
+![WPF Diagram Annotation Selection](Annotation_images/wpf-diagram-annotation-selection.png)
 
 ## Resizing the annotation
 
@@ -75,4 +75,4 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-![Interaction](Annotation_images/AnnotationResizing.gif)
+![WPF Diagram Annotation Resizing](Annotation_images/wpf-diagram-annotation-resizing.gif)

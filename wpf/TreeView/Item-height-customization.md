@@ -99,9 +99,10 @@ private void SfTreeView_QueryNodeSize(object sender, Syncfusion.UI.Xaml.TreeView
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-autofit-item-height-based-on-content-in-wpf-treeview).
 
-![AutoFit items](ItemHeight_images/ItemHeight_image1.png)
+![WPF TreeView with AutoFit Items](ItemHeight_images/wpf-treeview-with-autofit-items.png)
 
 ## Limitations
 
  * Define the size of the image when loading image in the [SfTreeView.ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate). Because, it does not return actual measured size when measuring before item layout.
  
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

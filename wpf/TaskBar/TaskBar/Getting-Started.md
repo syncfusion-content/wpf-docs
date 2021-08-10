@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | TaskBar | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF TaskBar control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio WPF TaskBar control, its elements and more.
 platform: wpf
 control: TaskBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF TaskBar
 
 This section guides you on getting started with TaskBar control. It covers the following topics:
 
@@ -17,7 +17,7 @@ TaskBar control has the capability to provide a UI that is similar to the Window
 
 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -48,7 +48,7 @@ To create the TaskBar control through designer, do the following steps:
 
 
 
-     ![](Getting-Started_images/Getting-Started_img2.jpeg)
+     ![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -99,7 +99,7 @@ The following screen shot shows the TaskBar control.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 
