@@ -83,7 +83,7 @@ N> You must create a model that contains properties such as Latitude and Longitu
 
 ## Add a custom marker
 
-The maps control provides the support for defining the custom markers using the `MarkerTemplate` property.
+The maps control provides the support for defining the custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MarkerTemplate) property.
 
 {% tabs %}
 
@@ -214,7 +214,7 @@ You can set the image as marker icon by setting the icon type as an Image and se
 
 ## Customizing labels
 
-You can customize the marker labels using the `FontSize`, `LabelForeground`, `FontStyle`, and `FontWeight` properties.
+You can customize the marker labels using the [`MarkerLabelFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontSize), [`MarkerLabelForeground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelForeground), [`MarkerLabelFontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontStyle), and [`MarkerLabelFontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontWeight) and [`MarkerLabelFontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerLabelFontFamily) properties.
 
 {% tabs %}
 
@@ -423,11 +423,13 @@ If you add any view for marker using the [`MarkerTemplate`](https://help.syncfus
 
 The [`MarkerSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapLayer.html) event is fired when a marker is selected. The `MarkerTemplate`, `SelectedMarker`, and `IsSelected` will be passed to MarkerSelectedEventArgs.
 
-If you set any view for the `MarkerTemplate` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+If you set any view for the [`MarkerTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_MarkerTemplate) property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
 
-`SelectedMarker`: Contains selected marker data.
+[`SelectedMarker`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_SelectedMarker): Contains selected marker data.
 
-`IsSelected`: Used to identify whether the marker is selected or unselected.
+[`IsSelected`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_IsSelected): Used to identify whether the marker is selected or unselected.
+
+[`CanBringToTop`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_CanBringToTop) : Used to bring the selected marker to the top position.
 
 {% tabs %}
 

@@ -64,8 +64,6 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 
 ![Maps Annotation with Customization](Annotations_images/Annotations_img1.png)
 
-
-
 ## Positioning a MapAnnotation
 
 MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Latitude) and [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Longitude) that are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude. 

@@ -75,17 +75,17 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-From </td><td>
+[`From`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.RangeColorMapping.html#Syncfusion_UI_Xaml_Maps_RangeColorMapping_From) </td><td>
 Double</td><td>
 Gets or sets the From value of ColorValuePath</td></tr>
 <tr>
 <td>
-To</td><td>
+[`To`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.RangeColorMapping.html#Syncfusion_UI_Xaml_Maps_RangeColorMapping_To)</td><td>
 Double</td><td>
 Gets or sets the To value of ColorValuePath</td></tr>
 <tr>
 <td>
-Color</td><td>
+[`Color`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ColorMapping.html#Syncfusion_UI_Xaml_Maps_ColorMapping_Color)</td><td>
 Color</td><td>
 Gets or sets the color values for the given range based on the From and To .</td></tr>
 </table>
