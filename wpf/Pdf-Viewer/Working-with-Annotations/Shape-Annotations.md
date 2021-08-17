@@ -735,13 +735,22 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Arrow
 
-PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document. The following XAML code shows how to bind the annotation command for arrow annotation to a Button.
+PDF Viewer provides an option to include, edit, or remove the arrow in a PDF document. The following code shows how to execute the annotation command for arrow annotation.
 
 {% tabs %}
 {% highlight xaml %}
 
 	<Syncfusion:PdfViewerControl x:Name="pdfViewerControl"/>	
     <Button Content="Arrow" CommandParameter="Arrow" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void GoToArrowAnnotationMode()
+{
+	pdfViewer.AnnotationCommand.Execute("Arrow");
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -761,8 +770,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -1572,44 +1579,44 @@ The following keyboard shortcuts are available to customize the annotation in th
 
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when [AnnotationChangedAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
 
 ### ShapeAnnotationChanged Event
 
-The `ShapeAnnotationChanged` event occurs when the `Action` performed in shape annotation. It provides the common information, `Type` and its annotation properties which are available in `Settings` through the `ShapeAnnotationChangedEventArgs`. The user can modify the annotation properties through `Settings`.
+The [ShapeAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShapeAnnotationChanged) event occurs when the [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Action) performed in shape annotation. It provides the common information, [Type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.ShapeAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_ShapeAnnotationChangedEventArgs_Type) and its annotation properties which are available in [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.ShapeAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_ShapeAnnotationChangedEventArgs_Settings) through the [ShapeAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.ShapeAnnotationChangedEventArgs.html). The user can modify the annotation properties through [Settings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.ShapeAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_ShapeAnnotationChangedEventArgs_Settings).
 
-The following code shows how to write the ShapeAnnotationChanged event in PdfViewerControl
+The following code shows how to write the [ShapeAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShapeAnnotationChanged) event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight C# %}
 
 private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChangedEventArgs e)
 {
-    //COMMON PROPERTIES
-    //AnnotationChangedAction to identify action performed for annotation 
-    AnnotationChangedAction action = e.Action;
-	
+	//COMMON PROPERTIES
+	//AnnotationChangedAction to identify action performed for annotation 
+	AnnotationChangedAction action = e.Action;
+
 	//To identify which type shape annotation
-    ShapeAnnotationType annotationType = e.Type;
+	ShapeAnnotationType annotationType = e.Type;
 
-    //Page index in which this shape annotation was modified 
-    int pageNumber = e.PageNumber;
+	//Page index in which this shape annotation was modified 
+	int pageNumber = e.PageNumber;
 
-    //Shape annotation's previous position and current position 
-    RectangleF currentBound = e.NewBounds;
-    RectangleF previousBound = e.NewBounds;
+	//Get Shape annotation's position and size 
+	System.Drawing.PointF position = e.NewBounds.Location;
+	System.Drawing.SizeF size = e.NewBounds.Size;
 
-    //For Polygon and Polyline annotations collection of points   
-    ReadOnlyCollection<System.Windows.Point> points = e.Points;
+	//For Polygon and Polyline annotations collection of points   
+	ReadOnlyCollection<System.Windows.Point> points = e.Points;
 
-    ShapeAnnotationSettings settings = e.Settings;
+	ShapeAnnotationSettings settings = e.Settings;
 
-    //SHAPES PROPERTIES which can be get/modify 
-    string author = settings.Author;
-    string subject = settings.Subject;
-    string Text = settings.Text;
-    float thickness = settings.Thickness;
-    float opacity = settings.Opacity;
+	//SHAPES PROPERTIES can be get/set. 
+	string author = settings.Author;
+	string subject = settings.Subject;
+	string Text = settings.Text;
+	float thickness = settings.Thickness;
+	float opacity = settings.Opacity;
 }
 
 {% endhighlight %}
