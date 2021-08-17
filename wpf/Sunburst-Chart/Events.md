@@ -17,6 +17,26 @@ This event occurs when segment is created. You can get the segment details as ar
 
 The following example shows how to set the color for each level after creating the segment. 
 
+{% tabs %}
+
+{% highlight xaml %}
+
+
+     <sunburst:SfSunburstChart ItemsSource="{Binding Data}"               ValueMemberPath="EmployeesCount" 
+                SegmentCreated="chart_SegmentCreated">
+          
+            <sunburst:SfSunburstChart.Levels>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+            </sunburst:SfSunburstChart.Levels>
+           
+        </sunburst:SfSunburstChart>
+
+     
+{% endhighlight %}
+
 {% highlight c# %}
 
 private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs e)
@@ -43,6 +63,8 @@ private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![Events_img1](Events_images/Events_img1.jpeg)
 
 
@@ -56,11 +78,16 @@ The following examples shows how to set the selected segment information.
 
 {% highlight xaml %}
 
-  <sunburst:SfSunburstChart.Behaviors>
+     <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
+                                  SelectionChanged="chart_SelectionChanged">
+
+          <sunburst:SfSunburstChart.Behaviors>
 
         <sunburst:SunburstSelectionBehavior EnableSelection="True" 
                                             SelectionCursor="Hand"/>               
-   </sunburst:SfSunburstChart.Behaviors>
+          </sunburst:SfSunburstChart.Behaviors>
+
+     </sunburst:SfSunburstChart>
 
 <Popup x:Name="popup" Placement="MousePoint" Height="180" Width="180" >
 
@@ -101,10 +128,9 @@ The following examples shows how to set the selected segment information.
 {% highlight c# %}
 
 private void chart_SelectionChanged(object sender, SunburstSelectionChangedEventArgs e)
-
 {
 
-       popup.IsOpen = true;
+      popup.IsOpen = true;
       category.Text = e.SelectedSegment.Category.ToString();
       value.Text = e.SelectedSegment.Value.ToString();
       level.Text = e.SelectedSegment.CurrentLevel.ToString();
