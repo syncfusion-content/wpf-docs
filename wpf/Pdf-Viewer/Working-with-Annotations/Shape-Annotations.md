@@ -1603,7 +1603,7 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
     int pageNumber = e.PageNumber;
 
     //Get Shape annotation's position and size 
-    System.Drawing.PointF position = e.NewBounds.Location;
+	System.Drawing.PointF position = e.NewBounds.Location;
 	System.Drawing.SizeF size = e.NewBounds.Size;
 
     //For Polygon and Polyline annotations collection of points   
