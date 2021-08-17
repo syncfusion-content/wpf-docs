@@ -1592,31 +1592,31 @@ The following code shows how to write the [ShapeAnnotationChanged](https://help.
 
 private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChangedEventArgs e)
 {
-    //COMMON PROPERTIES
-    //AnnotationChangedAction to identify action performed for annotation 
-    AnnotationChangedAction action = e.Action;
-	
+	//COMMON PROPERTIES
+	//AnnotationChangedAction to identify action performed for annotation 
+	AnnotationChangedAction action = e.Action;
+
 	//To identify which type shape annotation
-    ShapeAnnotationType annotationType = e.Type;
+	ShapeAnnotationType annotationType = e.Type;
 
-    //Page index in which this shape annotation was modified 
-    int pageNumber = e.PageNumber;
+	//Page index in which this shape annotation was modified 
+	int pageNumber = e.PageNumber;
 
-    //Get Shape annotation's position and size 
+	//Get Shape annotation's position and size 
 	System.Drawing.PointF position = e.NewBounds.Location;
 	System.Drawing.SizeF size = e.NewBounds.Size;
 
-    //For Polygon and Polyline annotations collection of points   
-    ReadOnlyCollection<System.Windows.Point> points = e.Points;
+	//For Polygon and Polyline annotations collection of points   
+	ReadOnlyCollection<System.Windows.Point> points = e.Points;
 
-    ShapeAnnotationSettings settings = e.Settings;
+	ShapeAnnotationSettings settings = e.Settings;
 
-    //SHAPES PROPERTIES can be get/set. 
-    string author = settings.Author;
-    string subject = settings.Subject;
-    string Text = settings.Text;
-    float thickness = settings.Thickness;
-    float opacity = settings.Opacity;
+	//SHAPES PROPERTIES can be get/set. 
+	string author = settings.Author;
+	string subject = settings.Subject;
+	string Text = settings.Text;
+	float thickness = settings.Thickness;
+	float opacity = settings.Opacity;
 }
 
 {% endhighlight %}
