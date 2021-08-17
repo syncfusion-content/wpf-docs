@@ -28,6 +28,8 @@ A map contains a set of elements, including shapes, bubbles, annotations, and da
 
 Tree map-like support provides rich UI for shapes and bubbles. Annotation and CustomDataBinding items shows additional information on the map.
 
+Maps also provide multilayer support which can be added as a sublayer and shapes such as polygon, polyline, points can be added on it.
+
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
 ![Maps - Overview](Overview_images/Overview_img1.png)
