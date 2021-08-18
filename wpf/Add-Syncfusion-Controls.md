@@ -6,7 +6,7 @@ platform: wpf
 control: common
 documentation: ug
 ---
-# Add Syncfusion Controls
+# Add Syncfusion WPF Controls
 
 The Syncfusion WPF controls can be added in a Visual Studio projects by using either of the following ways,
 
