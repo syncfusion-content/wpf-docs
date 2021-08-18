@@ -320,13 +320,13 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
 
-[How to add rulers for diagram page](/wpf/sfdiagram/rulers)
+[How to add rulers for diagram page](/wpf/diagram/rulers)
 
-[How to print the diagram pages](/wpf/sfdiagram/printing)
+[How to print the diagram pages](/wpf/diagram/printing)
 
-[How to export the diagram page](/wpf/sfdiagram/exporting)
+[How to export the diagram page](/wpf/diagram/exporting)
 
-[How to interact with diagram page ](/wpf/sfdiagram/interaction)
+[How to interact with diagram page ](/wpf/diagram/interaction)
 
 [How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagramsfdiagram)
 
