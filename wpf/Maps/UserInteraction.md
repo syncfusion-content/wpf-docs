@@ -7,7 +7,9 @@ control: SfMap
 documentation: ug
 ---
 
-# Tooltip in WPF Maps (SfMap)
+# User interaction in WPF Maps (SfMap)
+
+## Tooltip
 
 Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ToolTipSettings`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ToolTipSettings) property in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) and set the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html#Syncfusion_UI_Xaml_Maps_ToolTipSetting_ValuePath) property of [`ToolTipSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ToolTipSetting.html).
 
@@ -206,7 +208,7 @@ The maps control provides options to design your own template for tooltip using 
 
        <maps:SfMap x:Name="map">
             <maps:SfMap.Layers>
-                <maps:ShapeFileLayer Uri="/WpfUG;component/Assets/ShapeFiles/usa_state.shp"  ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME" EnableSelection="False" LabelPath="State">
+                <maps:ShapeFileLayer Uri="MapsZoom.ShapeFiles.usa_state.shp"  ItemsSource="{Binding Data}" ShapeIDPath="State" ShapeIDTableField="STATE_NAME" EnableSelection="False" LabelPath="State">
                     <maps:ShapeFileLayer.ItemsTemplate>
                         <DataTemplate>
                             <Border >
@@ -428,7 +430,7 @@ The maps control provides options to design your own template for tooltip using 
 
 ![WPF SfMaps marker tooltip image](Tooltip_images/ImageryLayer_Tooltip.png)
 
-# Zooming and Panning
+## Zooming and Panning
 
 The Zooming and Panning feature of the Maps control allows you to zoom in and out and navigate the map.
 

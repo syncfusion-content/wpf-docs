@@ -152,7 +152,7 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
 
  <Grid.Resources>
 
-  <DataTemplate x:Key="pointTemplate">
+         <DataTemplate x:Key="pointTemplate">
                 <Ellipse
                                         Width="10"
                                         Height="10"
@@ -191,7 +191,6 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
                             <Grid.RowDefinitions>
                                 <RowDefinition />
                                 <RowDefinition />
-                                <!--<RowDefinition/>-->
                             </Grid.RowDefinitions>
                             <TextBlock
                                                     Grid.Row="0"
@@ -250,7 +249,7 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
            
         </Grid.Resources>
 
- <syncfusion:SfMap x:Name="maps" Margin="10">
+     <syncfusion:SfMap x:Name="maps" Margin="10">
             <syncfusion:SfMap.Layers>
                 <syncfusion:ShapeFileLayer
                     EnableSelection="True"
