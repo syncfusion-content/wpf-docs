@@ -104,6 +104,8 @@ chart.Series.Add(series3);
 
 ![WPF Stacked Line Chart](Series_images/wpf-stacking-line-chart.png)
 
+N> You can explore our [WPF Stacked Line Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-line-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Line Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts/StackingLineChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Stacked Line100 Chart
 
 [`StackingLine100Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingLine100Series.html) resembles [`StackingLinenSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
@@ -191,6 +193,8 @@ chart.Series.Add(series3);
 {% endtabs %}
 
 ![WPF Stacked Line100 Chart](Series_images/wpf-stacking-line-100-chart.png)
+
+N> You can explore our [WPF 100% Stacked Line Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-line-100-chart) feature tour page for its groundbreaking features. You can also explore our [WPF 100% Stacked Line Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts%20100/StackingLine.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Stacked Column Chart
 
@@ -285,6 +289,8 @@ chart.Series.Add(series3);
 
 ![WPF Stacked Column Chart](Series_images/wpf-stacking-column-chart.png)
 
+N> You can explore our [WPF Stacked Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts/StackingColumnChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Stacked Column100 Chart
 
 [`StackingColumn100Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html#) resembles StackingColumnSeries but the cumulative portion of each stacked element always comes to a total of 100%. 
@@ -361,6 +367,8 @@ chart.Series.Add(series3);
 {% endtabs %}
 
 ![WPF Stacked Column100 Chart](Series_images/wpf-stacking-column-100-chart.png)
+
+N> You can explore our [WPF 100% Stacked Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-column-100-chart) feature tour page for its groundbreaking features. You can also explore our [WPF 100% Stacked Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts%20100/StackedColumn.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Stacked Bar Chart
 
@@ -455,6 +463,7 @@ chart.Series.Add(series3);
 
 ![WPF Stacked Bar Chart](Series_images/wpf-stacked-bar-chart.png)
 
+N> You can explore our [WPF Stacked Bar Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-bar-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Bar Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts/StackingBarChart.xaml) to know how to displays multiple series of data as stacked bars.
 
 ## Stacked Bar100 Chart
 
@@ -625,6 +634,8 @@ chart.Series.Add(series3);
 {% endtabs %}
 
 ![WPF Stacked Area Chart](Series_images/wpf-stacked-area-chart.png)
+
+N> You can explore our [WPF Stacked Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts/StackingAreaChart.xaml) to know how to displays multiple series of data as stacked area.
 
 ## Stacked Area100 Chart
 
@@ -819,3 +830,5 @@ chart.Series.Add(series3);
 {% endtabs %}
 
 ![WPF Chart with Closed Stacked area](Series_images/wpf-chart-stacked-closed-area.png)
+
+N> You can explore our [WPF Stacked Area 100 Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-stacked-area-100-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Stacked Area 100 Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Stacked%20Charts%20100/StackingArea.xaml) to know how to displays multiple series of data as stacked area.

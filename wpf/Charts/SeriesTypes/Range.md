@@ -54,6 +54,8 @@ chart.Series.Add(series);
 
 ![WPF HiLo Chart](Series_images/wpf-hilo-chart.png)
 
+N> You can explore our [WPF HiLo Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-hilo-chart) feature tour page for its groundbreaking features. You can also explore our [WPF HiLo Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Range Column Chart
 
 [`RangeColumnSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html#) is a collection of vertical columns where positioning and height depends on the high and low values of each data point. RangeColumnSeries is used when minimum and maximum need to be specified for the ColumnSeries.
@@ -92,6 +94,9 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![WPF Range Column Chart](Series_images/wpf-range-column-chart.png)
+
+N> You can explore our [WPF Range Column Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-column-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Column Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/RangeColumn.xaml) to know how to displays multiple series of data as range column.
+
 
 ## Range Area Chart
 
@@ -181,6 +186,8 @@ chart.Series.Add(series);
 
 ![Displaying Closed Range Area in WPF Chart](Series_images/wpf-chart-closed-range-area.png)
 
+N> You can explore our [WPF Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Range Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/RangeArea.xaml) to know how to displays multiple series of data as range area.
+
 ## Spline Range Area Chart
 
 [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html#) is used to display continuous data points as smooth Bezier curves that vary between [`High`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_Low) values over intervals of time and across different categories. 
@@ -223,3 +230,5 @@ chart.Series.Add(splineRangeAreaSeries);
 {% endtabs %}
 
 ![WPF Spline Range Area Chart](Series_images/wpf-spline-range-area-chart.png)
+
+N> You can explore our [WPF Spline Range Area Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-spline-range-area-chart) feature tour page for its groundbreaking features. You can also explore our [WPF Spline Range Area Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Basic%20Charts/SplineRangeArea.xaml) to know how to displays multiple series of data as spline range area.

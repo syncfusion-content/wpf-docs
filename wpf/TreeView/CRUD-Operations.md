@@ -111,3 +111,5 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 ## Modify nodes
 
 Treeview allows user to modify the data in a node by [editing](https://help.syncfusion.com/wpf/treeview/editing).
+
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

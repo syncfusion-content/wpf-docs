@@ -27,7 +27,7 @@ Refer to this documentation to find more details about installing nuget packages
 
 ### Creating the project
 
-Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF.html) with data objects.
+Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.html) with data objects.
 
 ### Add SfTreeView to Project
 
@@ -677,3 +677,5 @@ SfTreeView supports various built-in themes. Refer to the below links to apply t
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![WPF TreeView Theme](GettingStarted_images/wpf-treeview-theme.png)
+
+N> You can refer to our [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeView example](https://github.com/syncfusion/wpf-demos) to knows how to represents hierarchical data in a tree-like structure with expand and collapse node options.

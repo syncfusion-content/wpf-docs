@@ -63,3 +63,6 @@ You can also achieve the same in XAML using the DependencyProperty illustrated a
 {% endhighlight %}
 
 N> By default, the layer feature is enabled in PDF viewer.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

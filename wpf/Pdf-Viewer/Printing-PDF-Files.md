@@ -13,8 +13,7 @@ PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. Th
 
 ![WPF PDF Viewer PrintDialog Window](Concept-and-Features_images/wpf-pdf-viewer-print-dialog-window.png)
 
-N> 
-* PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
+N> PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
 
 ## Silent Printing
 
@@ -274,3 +273,6 @@ namespace PdfViewer
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

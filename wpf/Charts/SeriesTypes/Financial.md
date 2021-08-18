@@ -66,6 +66,8 @@ chart.Series.Add(series);
 
 ![WPF OHLC Chart](Series_images/wpf-ohlc-chart.png)
 
+N> You can explore our [WPF OHLC Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-ohlc-chart) feature tour page for its groundbreaking features. You can also explore our [WPF OHLC Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoOpenCloseChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Candle Chart
 
 [`CandleSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.CandleSeries.html#) displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
@@ -146,6 +148,8 @@ chart.Series.Add(series);
 {% endtabs %}               
 
 ![WPF Candle Chart](Series_images/wpf-candle-charts.png)
+
+N> You can refer to our [WPF Candlestick Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-candlestick-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Candlestick Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/CandleChart.xaml) to know how to render and configure the candle chart.
 
 
 ## Comparison Modes

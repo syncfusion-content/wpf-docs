@@ -9,11 +9,11 @@ documentation: ug
 
 # Touch Support in Syncfusion WPF Controls
 
-## Size Mode
+## Size mode
 
-The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps to render in different size modes for both Syncfusion and framework controls using [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
+The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) helps you to render in different size modes for both Syncfusion and Framework controls using the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html#Syncfusion_SfSkinManager_SfSkinManager_SizeModeProperty) property, which will be available only in [themes supported from theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list).
 
-The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum has the below values,
+The [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SizeMode.html) enum contains the following values:
 
 * `Default` - The default size will be updated for control and its inner elements.
 * `Touch` - The touch interactive size mode will be applied for control. In this mode, more space is added around the inner elements, to make them easier to tap. 
@@ -31,8 +31,8 @@ N> The default value is `SizeMode.Default`.
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
-This table shows the gesture mappings for each control.
+Gestures determine whether a finger or stylus has moved over a control or not. Syncfusion WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>.
+The following table shows the gesture mappings for each control.
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ This table shows the gesture mappings for each control.
 <tr>
 <td></td>
 <td>Data Grid</td>
-<td>Selection, Scrolling and Drag Drop</td>
+<td>Selection, Scrolling, and Drag-Drop</td>
 <td>-</td>
 <td>Click and Select</td>
 <td>Right-Click</td>
@@ -65,7 +65,7 @@ This table shows the gesture mappings for each control.
 <tr>
 <td></td>
 <td>Tree Grid</td>
-<td>Selection, Scrolling and Drag Drop</td>
+<td>Selection, Scrolling, and Drag-Drop</td>
 <td>-</td>
 <td>Click and Select</td>
 <td>Right-Click</td>
@@ -86,7 +86,7 @@ This table shows the gesture mappings for each control.
 <td>Scrolling and Resizing</td>
 <td>Zoom in & Zoom out</td>
 <td>Click and Selection</td>
-<td>Right Click</td></tr>
+<td>Right-Click</td></tr>
 
 <tr>
 <td>DATA VISUALIZATION</td>
@@ -161,7 +161,7 @@ Port: Drag, Connect.</td>
 <td>View swiping, Scrolling and Dragging </td>
 <td>-</td>
 <td>Tap support for the Cell selection, Appointment selection, and Double-tap support to the appointment editor.</td>
-<td>By default, the cell context menu will be opened when holding on any timeslot or month cell. The appointment context menu will be opened by holding, only if the appointment's drag and drop is disabled using the {{'[AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag)'| markdownify }} property.</td>
+<td>By default, the cell context menu will be opened when you hold down any timeslot or month cell. The appointment context menu will be opened by holding, only if the appointments' drag and drop is disabled using the {{'[AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag)'| markdownify }} property.</td>
 </tr>
 
 <tr>
@@ -556,7 +556,7 @@ Swipe up/down to scroll the pages vertically</td>
 <tr>
 <td></td>
 <td>Rating</td>
-<td>Swipe to change the Rating values</td>
+<td>Swipe to change the rating values</td>
 <td>-</td>
 <td>Tap to increase or decrease the rating values</td>
 <td>-</td>
@@ -613,7 +613,7 @@ Swipe up/down to scroll the pages vertically</td>
 <td>-</td>
 <td>-</td>
 <td>tap to set the cursor index.<br/>
-double tab to select the current word of cursor placed index </td>
+double-tab to select the current word of the cursor-placed index </td>
 <td>Hold to open Context menu</td>
 </tr>
 
@@ -623,7 +623,7 @@ double tab to select the current word of cursor placed index </td>
 <td>Swipe</td>
 <td>-</td>
 <td>Click</td>
-<td>Context Menu, Drag drop</td>
+<td>Context Menu, Drag-drop</td>
 </tr>
 
 <tr>
@@ -666,7 +666,7 @@ Expand or collapse the item.</td>
 <tr>
 <td></td>
 <td>Tabs</td>
-<td>Change the Tab index positions</td>
+<td>Change the tab index positions</td>
 <td>-</td>
 <td>Tap to select the item</td>
 <td>Hold to open the Context menu</td>
@@ -704,7 +704,7 @@ Expand or collapse the item.</td>
 <td>Tree Navigator</td>
 <td>-</td>
 <td>-</td>
-<td>Tab to navigate the item</td>
+<td>Tap to navigate the item</td>
 <td>-</td>
 </tr>
 
@@ -731,7 +731,7 @@ Expand or collapse the item.</td>
 <td>Notify Icon</td>
 <td>-</td>
 <td>-</td>
-<td>Tap to close the notify icon popup</td>
+<td>Tap to close the notification icon pop-up</td>
 <td>-</td>
 </tr>
 
@@ -813,35 +813,35 @@ FILE FORMAT LIBRARY</td>
 <td>Report Designer</td>
 <td>Scrolling, Resizing</td>
 <td>-</td>
-<td>Click and Select</td>
+<td>Click and select</td>
 <td>Right click</td>
 </tr>
 
 <tr>
 <td>BUSINESS INTELLIGENCE</td>
 <td>Olap Grid</td>
-<td>Drag and drop, expand and collapse and resizing</td>
+<td>Drag and drop, expand and collapse, and resize</td>
 <td>-</td>
-<td>Click, hyperlink and selection</td>
+<td>Click, hyperlink, and selection</td>
 <td>Right click and tooltip</td>
 </tr>
 
 <tr>
 <td></td>
 <td>Olap Chart</td>
-<td>Drag and drop, expand and collapse and resizing</td>
+<td>Drag and drop, expand and collapse, and resize</td>
 <td>Zooming and panning</td>
 <td>-</td>
-<td>Right click, tooltip and context menu</td>
+<td>Right-click, tooltip, and context menu</td>
 </tr>
 
 <tr>
 <td></td>
 <td>Olap Client</td>
-<td>Drag and drop, expand and collapse and resizing</td>
+<td>Drag and drop, expand and collapse, and resize</td>
 <td>Zooming and panning</td>
-<td>Click, hyperlink and selection</td>
-<td>Right click, tooltip and context menu</td>
+<td>Click, hyperlink, and selection</td>
+<td>Right-click, tooltip, and context menu</td>
 </tr>
 
 <tr>
@@ -856,10 +856,10 @@ FILE FORMAT LIBRARY</td>
 <tr>
 <td></td>
 <td>Pivot Grid</td>
-<td>Drag and drop, expand and collapse and resizing</td>
+<td>Drag and drop, expand and collapse, and resize</td>
 <td>-</td>
-<td>Click, hyperlink and selection</td>
-<td>Right click, context menu and tooltip</td>
+<td>Click, hyperlink, and selection</td>
+<td>Right-click, context menu, and tooltip</td>
 </tr>
 
 <tr>
@@ -905,7 +905,7 @@ Port: Drag, Connect</td>
 <tr>
 <td></td>
 <td>GridTreeControl</td>
-<td>Scrolling, Drag and drop and Resizing</td>
+<td>Scrolling, Drag and drop, and resize</td>
 <td>-</td>
 <td>Click and Selection</td>
 <td>Right click</td>
@@ -923,7 +923,7 @@ Port: Drag, Connect</td>
 <tr>
 <td></td>
 <td>GridDataControl</td>
-<td>Scrolling, Drag and drop, and Resizing</td>
+<td>Scrolling, Drag and drop, and resize</td>
 <td>-</td>
 <td>Click and Selection</td>
 <td>Right click</td>

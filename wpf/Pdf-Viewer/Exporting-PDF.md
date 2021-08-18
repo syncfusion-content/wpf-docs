@@ -212,3 +212,6 @@ if (images != null)
 {% endtabs %}
 
 N> The complete sample project of exporting the PDF pages to images using the Syncfusion PDF viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Export/PDFToImage).
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

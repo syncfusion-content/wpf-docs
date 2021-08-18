@@ -31,41 +31,18 @@ You can retrieve the details of a text box form field through the [FormFieldClic
 {% tabs %}
 {% highlight c# %}
 
-using Syncfusion.Windows.PdfViewer;
-using System.Windows;
-using System.Windows.Controls;
+//Wire the `FormFieldClicked` event.
+pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
 
-namespace PdfViewer
+private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs args)
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        #region Constructor
-        public MainWindow()
-        {
-            InitializeComponent();
-			
-			//Load the form filling PDF file
-            pdfViewer.Load(@"FormFillingDocument.pdf");
-			
-			//Wire the `FormFieldClicked` event.
-            pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
-        }
-        #endregion
+	//Typecast the `FormField` property to `System.Windows.Controls.TextBox`
+	TextBox textBox = args.FormField as TextBox;
 
-        private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs args)
-        {
-			//Typecast the `FormField` property to `System.Windows.Controls.TextBox`
-            TextBox textBox = args.FormField as TextBox;
-			
-			//Retrive the `Text` property
-            string text = textBox.Text;
-			
-            //Insert your code here.
-        }
-    }
+	//Retrive the `Text` property
+	string text = textBox.Text;
+
+	//{Insert your code here}
 }
 
 {% endhighlight %}
@@ -81,7 +58,7 @@ In WPF, the PDF viewer allows the users to import and export form data to and fr
 
 Follow the below steps to import date to PDF document with `AcroForm`.
 
-1.	Click the form data tool button in the left pane, the form data toolbar will appear as a secondary toolbar in the `PdfViewerControl`.
+1.	Click the form data tool button in the left pane, the form data toolbar will appear as a secondary toolbar in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 2.	Select **Import** option in form data toolbar to import the PDF form data.
 
 ![WPF PDF Viewer Import Form Data](form-filling-images/wpf-pdf-viewer-import-form-data.png)  
@@ -115,7 +92,7 @@ Follow the below steps to export data from PDF document
 1. Select **Export** option in the form data toolbar, to save the completed PDF form data as a file in another file format.
 2. In Export Form Data As dialog box, you can select the desired format to save the form data (FDF, XFDF, XML, and JSON).
 
-N> If the PDF document is loaded as a stream, the `PdfViewerControl` will request for the form name when exporting.
+N> If the PDF document is loaded as a stream, the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) will request for the form name when exporting.
 
 The following code shows how to export form data in code behind.
 
@@ -138,3 +115,6 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

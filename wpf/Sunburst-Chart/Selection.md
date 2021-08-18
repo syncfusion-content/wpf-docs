@@ -19,11 +19,11 @@ The below code shows, how to enable the selection behavior.
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
 
-   <sunburst:SunburstSelectionBehavior/>
+       <sunburst:SunburstSelectionBehavior/>
 
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -52,13 +52,13 @@ The following code shows, how to set the display mode using brush.
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+     <sunburst:SfSunburstChart.Behaviors>
 
                 <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                     SelectionBrush="Black"
                                                     SelectionDisplayMode="HighlightByColor"/>
             
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -91,11 +91,11 @@ Sunburst chart provides support to select or highlight the segment by clicking o
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
+     <sunburst:SfSunburstChart.Behaviors>
 
-     <sunburst:SunburstSelectionBehavior EnableSelection="True"
+        <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                          SelectionMode="MouseClick"/>
-</sunburst:SfSunburstChart.Behaviors>
+     </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -127,11 +127,11 @@ The following code shows, how to set the selection type as child.
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
+     <sunburst:SfSunburstChart.Behaviors>
 
                 <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                     SelectionType="Child"  />
-</sunburst:SfSunburstChart.Behaviors>
+     </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -153,15 +153,28 @@ chart.Behaviors.Add(selection);
 
 The following code shows, how to set the selection type as group.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
 
                 <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                     SelectionType="Group"  />
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
+selection.EnableSelection = true;
+selection.SelectionType = SelectionType.Group;
+chart.Behaviors.Add(selection);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Selection_img4](Selection_images/Selection_img4.jpeg)
 
@@ -170,15 +183,28 @@ The following code shows, how to set the selection type as group.
 
 The following code shows, how to set the selection type as parent.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
 
                 <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                     SelectionType="Parent"  />
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
+selection.EnableSelection = true;
+selection.SelectionType = SelectionType.Parent;
+chart.Behaviors.Add(selection);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Selection_img5](Selection_images/Selection_img5.jpeg)
 
@@ -186,15 +212,28 @@ The following code shows, how to set the selection type as parent.
 
 The following code shows, how to set the selection type as single.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+     <sunburst:SfSunburstChart.Behaviors>
 
                 <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                     SelectionType="Single"  />
-</sunburst:SfSunburstChart.Behaviors>
+     </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SunburstSelectionBehavior selection = new SunburstSelectionBehavior();
+selection.EnableSelection = true;
+selection.SelectionType = SelectionType.Single;
+chart.Behaviors.Add(selection);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Selection_img6](Selection_images/Selection_img6.jpeg)
 
@@ -208,12 +247,12 @@ The following code shows, how to set the selection cursor as hand.
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+      <sunburst:SfSunburstChart.Behaviors>
 
               <sunburst:SunburstSelectionBehavior EnableSelection="True"
                                                   SelectionCursor="Hand" />
 
-</sunburst:SfSunburstChart.Behaviors>
+      </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 

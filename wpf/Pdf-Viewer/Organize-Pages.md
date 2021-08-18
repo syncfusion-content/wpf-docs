@@ -11,9 +11,9 @@ documentation: ug
 
 Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
 
-Use the following steps to organize the PDF page(s) in `PdfViewerControl`:
+Use the following steps to organize the PDF page(s) in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html):
 
-1. Click the organize page button in the left pane, this displays the organize pages pane in the `PdfViewerControl`.
+1. Click the organize page button in the left pane, this displays the organize pages pane in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 2. You can rotate or delete a specific page using context menu that appears when hovering the mouse over the pages.
 
@@ -31,7 +31,7 @@ Use the following steps to organize the PDF page(s) in `PdfViewerControl`:
 
 ## Rotating PDF page(s)
 
-You can rotate PDF page(s) in clockwise, anti-clockwise or to a specific angle using the `Rotate` method. Refer to the following code example to rotate a page from code behind.
+You can rotate PDF page(s) in clockwise, anti-clockwise or to a specific angle using the [Rotate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_Rotate_System_Int32___Syncfusion_Pdf_PdfPageRotateAngle_) method. Refer to the following code example to rotate a page from code behind.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ End Sub
 
 ### Rotating PDF page(s) Clockwise
 
-You can rotate PDF page(s) clockwise using the `PageOrganizer.RotateClockwise` method. 
+You can rotate PDF page(s) clockwise using the [PageOrganizer.RotateClockwise](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotateClockwise_System_Int32___) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ End Sub
 
 ### Rotating PDF page(s) Counterclockwise
 
-You can rotate PDF page(s) in counterclockwise using the `PageOrganizer.RotateCounterclockwise` method. 
+You can rotate PDF page(s) in counterclockwise using the [PageOrganizer.RotateCounterclockwise](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotateCounterclockwise_System_Int32___) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ End Sub
 
 ### Rotating page(s) using command
 
-You can rotate the specific range of pages using the `RotatePagesCommand` of `PdfViewerControl`. The following code shows how to rotate pages by executing the command with the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
+You can rotate the specific range of pages using the [RotatePagesCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotatePagesCommand) of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The following code shows how to rotate pages by executing the command with the index of the pages to be rotated and the angle to which it is rotated as command parameter. In this example the pages at the index 0 and 1, are rotated through 180 degrees.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +113,7 @@ pdfViewerControl.PageOrganizer.RotatePagesCommand.Execute(new object[] { new int
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the `RotatePagesClockwiseCommand` and `RotatePagesCounterclockwiseCommand` of `PdfViewerControl`. The following codes shows how to rotate pages clockwise and counterclockwise respectively, with the index of the pages to be rotated as command parameter.
+Similarly, you can rotate the specific range of pages 90 degrees clockwise and counterclockwise with respect to the current angle using the [RotatePagesClockwiseCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotatePagesClockwiseCommand) and [RotatePagesCounterclockwiseCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RotatePagesCounterclockwiseCommand) of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The following codes shows how to rotate pages clockwise and counterclockwise respectively, with the index of the pages to be rotated as command parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ pdfViewerControl.PageOrganizer.RotatePagesCounterclockwiseCommand.Execute( new i
 
 ## Acquiring page rotation
 
-You can get the rotation angle of a PDF page in terms of `PdfPageRotateAngle` using `PageOrganizer.GetPageRotation()` method.
+You can get the rotation angle of a PDF page in terms of [PdfPageRotateAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Pdf.PdfPageRotateAngle.html) using [PageOrganizer.GetPageRotation()](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_GetPageRotation_System_Int32_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ End Sub
 
 ## Rearranging PDF pages
 
-You can rearrange the existing PDF document pages using the `ReArrange(int[])` method.  This method uses zero based start index. 
+You can rearrange the existing PDF document pages using the [ReArrange(int[])](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_ReArrange_System_Int32___) method.  This method uses zero based start index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -230,7 +230,7 @@ End Sub
 
 ### Remove page(s) using command
 
-You can remove the specific range of pages using the `RemovePagesCommand` of `PdfViewerControl`. The following code shows how to remove pages by executing the command with the index of the pages as command parameter.
+You can remove the specific range of pages using the [RemovePagesCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizer.html#Syncfusion_Windows_PdfViewer_PageOrganizer_RemovePagesCommand) of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html). The following code shows how to remove pages by executing the command with the index of the pages as command parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -242,7 +242,7 @@ pdfViewerControl.PageOrganizer.RemovePagesCommand.Execute(new int[] { 0, 1 });
 
 ## Get the selected page indexes
 
-You can get the selected page indexes of the PDF document in the organizing pages window. The [PageSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event indicates that a page(s) is selected and the [SelectedPages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html#Syncfusion_Windows_PdfViewer_PageSelectedEventArgs_SelectedPages) property of the [PageSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html) provides you the index of the pages that are currently selected. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+You can get the selected page indexes of the PDF document in the organizing pages window. The [PageSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PageSelected) event indicates that a page(s) is selected and the [SelectedPages](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html#Syncfusion_Windows_PdfViewer_PageSelectedEventArgs_SelectedPages) property of the [PageSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html) provides you the index of the pages that are currently selected. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -284,6 +284,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+N> The sample projects for organizing pages using the Syncfusion PDF Viewer are available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/OrganzingPages-Examples/PageOrganizer).
+
 ## Keyboard shortcuts
 
 The following keyboard shortcuts are available at miniature preview mode to organize the PDF pages:
@@ -292,3 +294,6 @@ The following keyboard shortcuts are available at miniature preview mode to orga
 •	Ctrl+A: Selects all pages in the PDF document.
 •	Shift+Arrow/MouseButton: Selects a set of consecutive pages in the PDF document.
 •	Ctrl+MouseButton: Selects the clicked pages in the PDF document.
+
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
