@@ -19,24 +19,45 @@ The default appearance of the MapPoint can be customized by using the [`MapPoint
 
 `MapPointTemplate` is a DataTemplate type, used to customize or override the default template of MapPoints.
 
+{% tabs %}
 {% highlight xaml %}
+
+     <Grid.Resources>
+            <DataTemplate x:Key="itemtemplate">
+                <Ellipse Height="10" Width="10" Stroke="White"      
+                                                 Fill="#8AC63C"/>
+            </DataTemplate>
+        </Grid.Resources>
 
        <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer ShapeIDPath="NAME"  ShapeIDTableField="Continent"                                                         
-                                    EnableSelection="True"                                                                                                                  
-                                    Uri="DataMarkers.ShapeFiles.continent.shp">
-                    <syncfusion:ShapeFileLayer.MapPointTemplate>
-                        <DataTemplate>
-                            <Ellipse Height="10" Width="10" Stroke="White"      
-                                                 Fill="#8AC63C"/>
-                        </DataTemplate>
-                    </syncfusion:ShapeFileLayer.MapPointTemplate>
+                <syncfusion:ShapeFileLayer ShapeIDPath="NAME"  ShapeIDTableField="Continent"         
+                                    EnableSelection="True"    
+                                    Uri="DataMarkers.ShapeFiles.continent.shp" MapPointTemplate="{StaticResource itemtemplate}">
+                   
                 </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>                   
+        </syncfusion:SfMap>                 
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfMap map = new SfMap();
+
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.ShapeIDPath = "NAME";
+            shapeFileLayer.ShapeIDTableField = "Continent";
+            shapeFileLayer.EnableSelection = true;
+            shapeFileLayer.FontSize = 14;
+            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.continent.shp";
+            shapeFileLayer.MapPointTemplate = grid.Resources["itemTemplate"] as DataTemplate;
+            map.Layers.Add(shapeFileLayer);
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## MapPointIcon
 
@@ -52,20 +73,69 @@ The default appearance of the MapPoint can be customized by using the [`MapPoint
 
 * Star
 
+{% tabs %}
+
 {% highlight xaml %}
 
-    <syncfusion:SfMap x:Name="maps">
+  <Grid.Resources>
+            <DataTemplate x:Key="pointTemplate">
+                <Ellipse
+                                        Width="10"
+                                        Height="10"
+                                        Margin="-10,-10,0,0"
+                                        Fill="#8AC63C"
+                                        Stroke="White" />
+            </DataTemplate>
+        </Grid.Resources>
+
+     <syncfusion:SfMap x:Name="maps" Margin="10">
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Background="White" Uri="MapPoints.ShapeFiles.states.shp">
+                <syncfusion:ShapeFileLayer
+                    EnableSelection="True"
+                    Uri="WpfUG.Assets.ShapeFiles.states.shp">
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting 
+                            ShapeStrokeThickness="1"/>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
                     <syncfusion:ShapeFileLayer.SubShapeFileLayers>
-                        <syncfusion:SubShapeFileLayer MapPointMargin="20" MapPointIcon="Diamond" Uri="MapPoints.ShapeFiles.landslide.shp">
+                        <syncfusion:SubShapeFileLayer EnableSelection="True" Uri="WpfUG.Assets.ShapeFiles.landslide.shp"
+                                                      MapPointTemplate="{StaticResource pointTemplate}">
+                          
+                          
                         </syncfusion:SubShapeFileLayer>
                     </syncfusion:ShapeFileLayer.SubShapeFileLayers>
                 </syncfusion:ShapeFileLayer>
-          </syncfusion:SfMap.Layers>
+            </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
 
+
 {% endhighlight %}
+
+{% highlight c# %}
+
+ SfMap map = new SfMap();
+
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            
+            shapeFileLayer.EnableSelection = true;
+            shapeFileLayer.Uri = "WpfUG.Assets.ShapeFiles.states.shp";
+            map.Layers.Add(shapeFileLayer);
+
+            ShapeSetting setting = new ShapeSetting();
+            setting.ShapeStrokeThickness = 1;
+            shapeFileLayer.ShapeSettings = setting;
+
+            SubShapeFileLayer subShapeFileLayer = new SubShapeFileLayer();
+            subShapeFileLayer.EnableSelection = true;
+            subShapeFileLayer.Uri = "WpfUG.Assets.ShapeFiles.landslide.shp";
+            subShapeFileLayer.MapPointTemplate= grid.Resources["pointTemplate"] as DataTemplate;
+
+            shapeFileLayer.SubShapeFileLayers.Add(subShapeFileLayer);
+             this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Map Points icon image in WPF SfMap](Map-Points_images/Map_Points_Icon_image.png)
 
@@ -77,79 +147,156 @@ MapPointPopup is a popup, displayed when the point is moved to MapPoint. It show
 
 [`MapPointPopupTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointPopupTemplate) is a DataTemplate, used to expose the template for the MapPoint. 
 
+{% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfMap>
-     <syncfusion:SfMap.Layers>
-         <syncfusion:ShapeFileLayer Background="White" EnableSelection="True" 
-                                    Uri="MapApp.ShapeFiles.states.shp">
-              <syncfusion:ShapeFileLayer.SubShapeFileLayers>
-                 <syncfusion:SubShapeFileLayer   EnableSelection="True" 
-                                    Uri="MapApp.ShapeFiles.landslide.shp">
-                  <syncfusion:SubShapeFileLayer.MapPointPopupTemplate>
-                        <DataTemplate>
-                             <Border Background="#FF252525" Opacity="0.9"  Height="110"
-                                     BorderThickness="0.5">
-                               <StackPanel Margin="10,5,20,0">
-                                   <StackPanel>
-                                       <TextBlock Text="Landslide Event in USA"  
-                                         Margin="10,5,0,0" Foreground="White" 
-                                         FontSize="20"  FontFamily="Segoe UI" />
-                                    </StackPanel>
-                            <Grid Margin="10,5,10,0">
-                               <Rectangle Stroke="#FF505050" StrokeDashArray="6 2" 
-                                          Height="2"  VerticalAlignment="Center" />
-                            </Grid>
-                            <Grid Margin="10,5,0,0" >
-                               <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.41*"/>
-                                    <ColumnDefinition Width="0.1*"/>
-                                    <ColumnDefinition Width="0.49*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                     <RowDefinition/>
-                                     <RowDefinition/>
-                                </Grid.RowDefinitions>
+ <Grid.Resources>
 
-                             <TextBlock Foreground="#FFACACAC" Grid.Column="0" 
-                                         Grid.Row="0" FontFamily="Segoe UI" 
-                                         FontWeight="Normal" FontSize="18" 
-                                         Text="Location" />
-                             <TextBlock Foreground="#FFACACAC" Grid.Column="1" 
-                                         Grid.Row="0" FontFamily="Segoe UI" 
-                                         FontWeight="Normal" FontSize="18" Text=" : " />
-                             <TextBlock Foreground="#FFACACAC" Margin="5,0,0,0" 
-                                        Grid.Column="2" Grid.Row="0" FontFamily="Segoe 
-                                        UI" FontWeight="Normal" FontSize="18" 
-                                        Text="{Binding [LOCALITY]}" />
-                             <TextBlock Foreground="#FFACACAC" Grid.Column="0" 
-                                        Grid.Row="1" FontFamily="Segoe UI" 
-                                        FontWeight="Normal" FontSize="18" Text="Year" />
-                             <TextBlock Foreground="#FFACACAC" Grid.Column="1" 
-                                        Grid.Row="1" FontFamily="Segoe UI" 
-                                        FontWeight="Normal" FontSize="18" Text=" : " />
-                             <TextBlock Foreground="#FFACACAC" Margin="5,0,0,0" 
-                                        Grid.Column="2" Grid.Row="1" FontFamily="Segoe 
-                                        UI" FontWeight="Normal" FontSize="18" 
-                                        Text="{Binding [YEAR]}" />
-                          </Grid>
-                       </StackPanel>
-                    </Border>
-                  </DataTemplate>
-              </syncfusion:SubShapeFileLayer.MapPointPopupTemplate>
-              <syncfusion:SubShapeFileLayer.MapPointTemplate>
-                 <DataTemplate>
-                      <Ellipse Height="10" Width="10" Margin="-10,-10,0,0" Stroke="White" 
-                                                                         Fill="#8AC63C"/>
-                 </DataTemplate>
-              </syncfusion:SubShapeFileLayer.MapPointTemplate>
-           </syncfusion:SubShapeFileLayer>
-       </syncfusion:ShapeFileLayer.SubShapeFileLayers>
-     </syncfusion:ShapeFileLayer>
-   </syncfusion:SfMap.Layers>
-</syncfusion:SfMap>
+  <DataTemplate x:Key="pointTemplate">
+                <Ellipse
+                                        Width="10"
+                                        Height="10"
+                                        Margin="-10,-10,0,0"
+                                        Fill="#8AC63C"
+                                        Stroke="White" />
+            </DataTemplate>
+            <DataTemplate x:Key="popupTemplate">
+                <Border
+                                        Height="110"
+                                        Background="#FF252525"
+                                        BorderThickness="0.5"
+                                        Opacity="0.9">
+                    <StackPanel Margin="10,5,20,0">
+                        <StackPanel>
+                            <TextBlock
+                                                    Margin="10,5,0,0"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="20"
+                                                    Foreground="White"
+                                                    Text="Landslide Event in USA" />
+                        </StackPanel>
+                        <Grid Margin="10,5,10,0">
+                            <Rectangle
+                                                    Height="2"
+                                                    VerticalAlignment="Center"
+                                                    Stroke="#FF505050"
+                                                    StrokeDashArray="6 2" />
+                        </Grid>
+                        <Grid Margin="10,5,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.41*" />
+                                <ColumnDefinition Width="0.1*" />
+                                <ColumnDefinition Width="0.49*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <!--<RowDefinition/>-->
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                                    Grid.Row="0"
+                                                    Grid.Column="0"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text="Location" />
+                            <TextBlock
+                                                    Grid.Row="0"
+                                                    Grid.Column="1"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text=" : " />
+                            <TextBlock
+                                                    Grid.Row="0"
+                                                    Grid.Column="2"
+                                                    Margin="5,0,0,0"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text="{Binding [LOCALITY]}" />
+                            <TextBlock
+                                                    Grid.Row="1"
+                                                    Grid.Column="0"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text="Year" />
+                            <TextBlock
+                                                    Grid.Row="1"
+                                                    Grid.Column="1"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text=" : " />
+                            <TextBlock
+                                                    Grid.Row="1"
+                                                    Grid.Column="2"
+                                                    Margin="5,0,0,0"
+                                                    FontFamily="Segoe UI"
+                                                    FontSize="18"
+                                                    FontWeight="Normal"
+                                                    Foreground="#FFACACAC"
+                                                    Text="{Binding [YEAR]}" />
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </DataTemplate>
+           
+        </Grid.Resources>
+
+ <syncfusion:SfMap x:Name="maps" Margin="10">
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ShapeFileLayer
+                    EnableSelection="True"
+                    Uri="WpfUG.Assets.ShapeFiles.states.shp">
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting 
+                            ShapeStrokeThickness="1"/>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeFileLayer.SubShapeFileLayers>
+                        <syncfusion:SubShapeFileLayer EnableSelection="True" Uri="WpfUG.Assets.ShapeFiles.landslide.shp"  MapPointTemplate="{StaticResource pointTemplate}"
+                        MapPointPopupTemplate ="{StaticResource popupTemplate}">
+                           
+                                                   </syncfusion:SubShapeFileLayer>
+                    </syncfusion:ShapeFileLayer.SubShapeFileLayers>
+                </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ SfMap map = new SfMap();
+
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            
+            shapeFileLayer.EnableSelection = true;
+            shapeFileLayer.Uri = "WpfUG.Assets.ShapeFiles.states.shp";
+            map.Layers.Add(shapeFileLayer);
+
+            ShapeSetting setting = new ShapeSetting();
+            setting.ShapeStrokeThickness = 1;
+            shapeFileLayer.ShapeSettings = setting;
+
+            SubShapeFileLayer subShapeFileLayer = new SubShapeFileLayer();
+            subShapeFileLayer.EnableSelection = true;
+            subShapeFileLayer.Uri = "WpfUG.Assets.ShapeFiles.landslide.shp";
+            subShapeFileLayer.MapPointTemplate= grid.Resources["pointTemplate"] as DataTemplate;
+            subShapeFileLayer.MapPointPopupTemplate = grid.Resources["popupTemplate"] as DataTemplate;
+
+            shapeFileLayer.SubShapeFileLayers.Add(subShapeFileLayer);
+             this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 

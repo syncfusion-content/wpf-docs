@@ -536,6 +536,7 @@ Properties related to Panning are:
 
 The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_EnablePan) property enables or disables the panning feature of the map. A `True` value enables the panning feature. A `False` value disables the panning feature of the map.
 
+{% tabs %}
 {% highlight xaml %}
 
        <syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">         
@@ -546,6 +547,20 @@ The [`EnablePan`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.SfM
         </syncfusion:SfMap >
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ SfMap map = new SfMap();
+            map.ShowCoords = true;
+            map.LatitudeLongitudeType = LatLonType.Decimal;
+            map.EnablePan = true;
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.Uri = "MapApp.world1.shp";
+            map.Layers.Add(shapeFileLayer);
+            this.Content = map;
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Ways to pan the map
 

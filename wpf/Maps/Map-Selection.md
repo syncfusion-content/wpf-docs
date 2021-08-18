@@ -26,6 +26,8 @@ Single selection allows only one shape to be selected at a time. You can select 
 
 Multiple shapes in the map can be selected when [`EnableMultiSelection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_EnableMultiSelection) of ShapeFileLayer is set to true. When EnableMultiSelection is set to true, a cross-hair cursor appears on the map to guide the selection. When you drag on the map, a rectangle appears. The shapes bound that intersect with the rectangle is selected. When EnableMultiSelection is set to true, the panning does not work through interactions.
 
+{% tabs %}
+
 {% highlight xaml %}
 
         <syncfusion:SfMap >
@@ -44,6 +46,21 @@ Multiple shapes in the map can be selected when [`EnableMultiSelection`](https:/
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+            SfMap map = new SfMap();          
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.EnableMultiSelection = true;
+            shapeFileLayer.EnableSelection = true;
+            shapeFileLayer.CrossCursorStrokeThickness = 0.5;
+            shapeFileLayer.CrossCursorStroke= (SolidColorBrush)(new BrushConverter().ConvertFrom("#686868"));
+            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.world1.shp";
+            map.Layers.Add(shapeFileLayer);
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Maps control selection](Map-Selection_images/Map-Selection_img1.png)
 
