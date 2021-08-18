@@ -34,15 +34,16 @@ Using the above palette you can apply a set of predefined brushes to surface cha
 
 {% highlight xaml %}
 
-<chart:SfSurfaceChart Palette="Metro" />
+	    <chart:SfSurfaceChart Palette="Metro">
+        </chart:SfSurfaceChart>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfSurfaceChart chart = new SfSurfaceChart();
-
 chart.Palette = ChartColorPalette.Metro;
+grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -59,61 +60,63 @@ The custom palette option enables you to define your own color brushes for the
 
 {% highlight xaml %}
 
-<chart:SfSurfaceChart Palette="Custom" >
+	<chart:SfSurfaceChart Palette="Custom" >
 
-	<Syncfusion:SfSurfaceChart.ColorModel>
+	  <chart:SfSurfaceChart.ColorModel>
 
-			<Syncfusion:ChartColorModel>
-			
-				<Syncfusion:ChartColorModel.CustomBrushes>
-				
-					<SolidColorBrush Color="Blue"/>	
-					
-					<SolidColorBrush Color="Lime"/>
-					
-					<SolidColorBrush Color="Yellow"/>
-												
-					<SolidColorBrush Color="Blue"/>
-												
-					<SolidColorBrush Color="Lime"/>
-					
-					<SolidColorBrush Color="Yellow"/>
-					
-					<SolidColorBrush Color="OrangeRed"/>
-					
-				</Syncfusion:ChartColorModel.CustomBrushes>
-				
-			</Syncfusion:ChartColorModel>
-			
-	</Syncfusion:SfSurfaceChart.ColorModel>
+                <chart:ChartColorModel>
+
+                    <chart:ChartColorModel.CustomBrushes>
+
+                        <SolidColorBrush Color="Blue"/>
+
+                        <SolidColorBrush Color="Lime"/>
+
+                        <SolidColorBrush Color="Yellow"/>
+
+                        <SolidColorBrush Color="Blue"/>
+
+                        <SolidColorBrush Color="Lime"/>
+
+                        <SolidColorBrush Color="Yellow"/>
+
+                        <SolidColorBrush Color="OrangeRed"/>
+
+                    </chart:ChartColorModel.CustomBrushes>
+
+                </chart:ChartColorModel>
+
+            </chart:SfSurfaceChart.ColorModel>
 	   
-<chart:SfSurfaceChart />
+	<chart:SfSurfaceChart />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-ChartColorModel colorModel = new ChartColorModel();
+            SfSurfaceChart chart = new SfSurfaceChart();
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
+            chart.Palette = ChartColorPalette.Custom;
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
+            ChartColorModel colorModel = new ChartColorModel();
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Blue));
 
-colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.OrangeRed));
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Lime));
 
-SfSurfaceChart chart = new SfSurfaceChart();
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.Yellow));
 
-chart.Palette = ChartColorPalette.Custom;
+            colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.OrangeRed));
 
-chart.ColorModel = colorModel;
+            chart.ColorModel = colorModel;
+
+			grid.Children.Add(chart);
 
 {% endhighlight %}
 
