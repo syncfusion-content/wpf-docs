@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WPF Bullet Graph (SfBulletGraph)
 
-This section explains you the steps required to configure the **SfBulletGraph** and also explains the steps to add basic elements of **SfBulletGraph** through various API’s available within it.
+This section explains you the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and also explains the steps to add basic elements of `SfBulletGraph` using the various API’s available within it.
 
 ## Configuring SfBulletGraph using Syncfusion Reference Manager
 
-Syncfusion Reference Manager is used to add   Syncfusion Tools.
+Syncfusion Reference Manager is used to add Syncfusion Tools.
 
-Follow the below steps to add **SfBulletGraph** Control using Syncfusion Reference Manager.
+Follow these steps to add `SfBulletGraph` Control using the Syncfusion Reference Manager.
 
 Create a simple WPF application using Visual Studio.
 
@@ -29,11 +29,11 @@ The Syncfusion Reference Manager Wizard will be opened as shown in the figure be
 
 ![Opening Syncfusion Reference Manager Wizard](Getting-Started_images/Getting-Started_img3.jpeg)
 
-Search for **SfBulletGraph** using SearchBox and select SfBulletGraph Control. Click on done to add selected SfBulletGraph control.
+Search for `SfBulletGraph` using SearchBox and select the `SfBulletGraph` Control. Click `Done` to add selected SfBulletGraph control.
 
 ![Selecting SfBulletGraph Control in Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img4.jpeg)
 
-The **SfBulletGraph** assemblies will be automatically added to the Project after Clicking **OK**.
+The `SfBulletGraph` assemblies will be automatically added to the project after clicking `OK`.
 
 ![Adding SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img5.jpeg)
 
@@ -115,33 +115,47 @@ Create a namespace reference to the SfBulletGraph control using Syncfusion’s g
 {% endhighlight %}
 {% endtabs %}
 
-![[Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
+![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
 
 As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
 
 ## Adding Caption
 
-You can assign a caption to **SfBulletGraph** by making use of “Caption” property and also you can position it either near or far using “**CaptionPosition**” property.
+You can assign a caption to bullet graph by making use of [`Caption`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Caption) property and also you can position it either near or far using the [`CaptionPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_CaptionPosition) property.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph CaptionPosition="Far" Caption="Revenue YTD"
-    </syncfusion:SfBulletGraph>
+    <syncfusion:SfBulletGraph CaptionPosition="Far">
+            <syncfusion:SfBulletGraph.Caption>
+                <StackPanel Margin="0,0,10,0">
+                    <TextBlock Text="Revenue YTD" Foreground="Black"
+                               FontSize="13" HorizontalAlignment="Center"/>
+                    <TextBlock Text="$ in Thousands" Foreground="Black"
+                               FontSize="13" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </syncfusion:SfBulletGraph.Caption>
+        </syncfusion:SfBulletGraph>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
     SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.Caption = Revenue YTD;
-    bulletgraph.CaptionPosition  = BulletGraphCaptionPosition.Far;
-    this.Grid.Children.Add(bulletgraph);
+            bulletgraph.CaptionPosition = BulletGraphCaptionPosition.Far;
+            TextBlock textBlock = new TextBlock() { Text = "Revenue YTD" };
+            TextBlock textBlock1 = new TextBlock() { Text = "$ in Thousands" };
+            StackPanel stackPanel = new StackPanel();
+            stackPanel.Children.Add(textBlock);
+            stackPanel.Children.Add(textBlock1);
+            bulletgraph.Caption = stackPanel;
+            grid.Children.Add(bulletgraph);
+
     
 {% endhighlight %}
 {% endtabs %}
 
-![Adding Caption to SfBulletGraph control](Getting-Started_images/Getting-Started_img8.jpg)
+![Adding Caption to SfBulletGraph control](Caption_images/CaptionPosition.png)
 
 ## Configuring Ticks and Labels 
 
@@ -162,12 +176,15 @@ They are:
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph Minimum="0" Maximum="10" Interval="2"   
-                                  QualitativeRangesSize="30" 
-                                  QuantitativeScaleLength="300"    
-                                  MinorTicksPerInterval="3"
-                                  MajorTickSize="15" MinorTickSize="10"
-                                  MajorTickStroke="Red" LabelStroke="Black" MinorTickStroke="Green">
+      <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"
+                                  ComparativeMeasure="7" FeaturedMeasure="5" FeaturedMeasureBarStroke="Black" MajorTickStroke="Red"
+                                  MinorTickStroke="Green" MinorTicksPerInterval="3"
+                                    MajorTickSize="15" MinorTickSize="10">
+            <syncfusion:SfBulletGraph.QualitativeRanges>
+                <syncfusion:QualitativeRange RangeEnd="4.5" RangeStroke="#EBEBEB"></syncfusion:QualitativeRange>
+                <syncfusion:QualitativeRange RangeEnd="10" RangeStroke="#7F7F7F"></syncfusion:QualitativeRange>
+                <syncfusion:QualitativeRange RangeEnd="7.5" RangeStroke="#D8D8D8"></syncfusion:QualitativeRange>
+            </syncfusion:SfBulletGraph.QualitativeRanges>
         </syncfusion:SfBulletGraph>
 
 {% endhighlight %}
@@ -175,38 +192,52 @@ They are:
 {% highlight c# %}
 
     SfBulletGraph bulletgraph = new SfBulletGraph();
-      bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-      bulletgraph.Orientation = Orientation.Horizontal;
-      bulletgraph.QualitativeRangesSize = 30;
-      bulletgraph.QuantitativeScaleLength = 300;
-      bulletgraph.Minimum = 0;
-      bulletgraph.Maximum = 10;
-      bulletgraph.Interval = 2;
-      bulletgraph.MinorTicksPerInterval = 3;
-      bulletgraph.MajorTickSize = 15;
-      bulletgraph.MinorTickSize = 10;
-      bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Red);
-      bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
-      bulletgraph.MinorTickStroke = new SolidColorBrush(Colors.Green);
-      this.Grid.Children.Add(bulletgraph);
+            bulletgraph.Minimum = 0;
+            bulletgraph.Maximum = 10;
+            bulletgraph.Interval = 2;
+            bulletgraph.FeaturedMeasure = 5;
+            bulletgraph.ComparativeMeasure = 7;
+            bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Red);
+            bulletgraph.MinorTickStroke = new SolidColorBrush(Colors.Green);
+            bulletgraph.FeaturedMeasureBarStroke = new SolidColorBrush(Colors.Black);
+            bulletgraph.MinorTicksPerInterval = 3;
+            bulletgraph.MinorTickSize = 10;
+            bulletgraph.MajorTickSize = 15;
+            bulletgraph.Orientation = Orientation.Horizontal;
+            QualitativeRange range1 = new QualitativeRange();
+            range1.RangeEnd = 4.5;
+            range1.RangeStroke = (Brush)new BrushConverter().ConvertFrom("#EBEBEB");
+            QualitativeRange range2 = new QualitativeRange();
+            range2.RangeEnd = 10;
+            range2.RangeStroke = (Brush)new BrushConverter().ConvertFrom("#7F7F7F");
+
+            QualitativeRange range3 = new QualitativeRange();
+            range3.RangeEnd = 7.5;
+            range3.RangeStroke = (Brush)new BrushConverter().ConvertFrom("#D8D8D8");
+
+            bulletgraph.QualitativeRanges.Add(range1);
+            bulletgraph.QualitativeRanges.Add(range2);
+            bulletgraph.QualitativeRanges.Add(range3);
+            grid.Children.Add(bulletgraph);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Configuring Ticks and Labels](Getting-Started_images/Getting-Started_img9.jpg)
 
+
 ## Adding Ranges 
 
-You can add ranges to **SfBulletGraph** by creating ranges collection using **QualitativeRanges**. 
+You can add ranges to bullet graph by creating ranges collection using [`QualitativeRanges`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRanges). 
 
 {% tabs %}
 {% highlight xaml %}
 
-          <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
-                                  QualitativeRangesSize="30" 
-                                  QuantitativeScaleLength="300">
+           <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  
+                                  QualitativeRangesSize="30"  MinorTicksPerInterval="3" ComparativeMeasure="7" FeaturedMeasure="5"
+                                  QuantitativeScaleLength="300" FeaturedMeasureBarStroke="Black"  MinorTickSize="10" MajorTickSize="14">
             <syncfusion:SfBulletGraph.QualitativeRanges>
-                <syncfusion:QualitativeRange RangeEnd="4.5" 
+                <syncfusion:QualitativeRange RangeEnd="4.5" RangeCaption="Bad"
                                              RangeStroke="Red"
                                              RangeOpacity="1">
                 </syncfusion:QualitativeRange>
@@ -226,14 +257,17 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
 
 {% highlight c# %}
 
-           SfBulletGraph bulletgraph = new SfBulletGraph();
-            bulletgraph.QualitativeRangesSize = 30;
-            bulletgraph.QuantitativeScaleLength = 300;
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-            bulletgraph.Orientation = Orientation.Horizontal;
+          SfBulletGraph bulletgraph = new SfBulletGraph();
             bulletgraph.Minimum = 0;
             bulletgraph.Maximum = 10;
+            bulletgraph.FeaturedMeasure = 5;
+            bulletgraph.ComparativeMeasure = 7;
             bulletgraph.Interval = 2;
+            bulletgraph.MinorTickSize = 8;
+            bulletgraph.MinorTicksPerInterval = 3;
+            bulletgraph.QualitativeRangesSize = 30;
+            bulletgraph.QuantitativeScaleLength = 300;
+            bulletgraph.FeaturedMeasureBarStroke = new SolidColorBrush(Colors.Black);
             bulletgraph.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 4.5,
@@ -252,12 +286,14 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Green)
             });
-            this.Grid.Children.Add(bulletgraph);
+            grid.Children.Add(bulletgraph);
             
 {% endhighlight %}
 {% endtabs %}
 
 SfBulletGraph ranges are displayed as follows.
+
+You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BulletGraphDemo-1174716111).
 
 ![Adding Ranges to SfBulletGraph control](Getting-Started_images/Getting-Started_img10.jpg)
 
