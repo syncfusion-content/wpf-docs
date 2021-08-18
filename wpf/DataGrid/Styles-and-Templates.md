@@ -9,7 +9,7 @@ documentation: ug
 
 # Styles and Templates in WPF DataGrid (SfDataGrid)
 
-The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
+The appearance of [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
 
 ## Control Structure of SfDataGrid
 
