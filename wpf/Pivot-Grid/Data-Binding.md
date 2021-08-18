@@ -11,7 +11,7 @@ documentation: ug
 
 ## Binding pivot grid to list
 
-The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) allows binding a list based collection as its item source. Refer to this topic [Binding a data source to pivot grid control](https://help.syncfusion.com/wpf/pivotgrid/pivotgrid-getting-started#binding-a-datasource-to-pivotgridcontrol) to learn more.
+The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) allows binding a list based collection as its item source. Refer to this topic [Binding a data source to pivot grid control](https://help.syncfusion.com/wpf/pivot-grid/pivotgrid-getting-started#binding-a-datasource-to-pivotgridcontrol) to learn more.
 
 ## Binding pivot grid to data table
 
