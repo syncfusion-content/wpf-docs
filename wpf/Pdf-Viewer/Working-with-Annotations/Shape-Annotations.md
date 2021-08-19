@@ -1569,14 +1569,6 @@ The following image illustrates how to delete the included annotation from the P
 
   ![polyline annotation](Annotation-images\Polyline-Annotation-11.png)
 
-## Keyboard shortcuts
-
-The following keyboard shortcuts are available to customize the annotation in the PDF document:
-
-*	Delete key: Deletes the selected annotation from the PDF document.
-*	Ctrl + Z: Performs undo functionality for recently performed operations.
-*	Ctrl + Y: Performs redo functionality for recently performed operations.
-
 ## Events
 
 The PdfViewerControl notifies through events, when [AnnotationChangedAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
