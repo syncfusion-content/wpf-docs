@@ -7,7 +7,7 @@ control: SfBulletGraph
 documentation: ug
 ---
 
-### Flow Direction
+# Flow Direction in WPF Bullet Graph (SfBulletGraph)
 
 By default the flow direction of SfBulletGraph is Left to Right. It can be customized by using **FlowDirection** property respectively.
 
