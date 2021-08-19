@@ -13,7 +13,7 @@ The WPF PDF Viewer allows you to review PDF Files with the rich set of annotatin
 
 * Ink.
 * Text markups (Highlight, Underline and Strikethrough).
-* Shapes (Line, Circle, Rectangle, Arrrow, Polygon and Polyline).
+* Shapes (Line, Circle, Rectangle, Arrow, Polygon and Polyline).
 * Stamp.
 * Text box.
 * Sticky note.
