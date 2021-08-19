@@ -69,7 +69,7 @@ To add the `TabControl` manually in XAML, follow these steps:
 
 ## Adding WPF TabControl via C#
 
-To add the `TabControl` control manually in C#, follow these steps:
+To add the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 
@@ -547,10 +547,12 @@ Refer the following links to know more about how provide a localization support 
 
 ## Theme
 
-TabControl supports various built-in themes. Refer to the below links to apply themes for the TabControl,
+The WPF TabControl supports various built-in themes. Refer to the below links to apply themes for the TabControl,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Themes) in GitHub
 
   ![Setting theme in WPF TabControl](Getting-Started_images/wpf-tabcontrol-theme.png)
