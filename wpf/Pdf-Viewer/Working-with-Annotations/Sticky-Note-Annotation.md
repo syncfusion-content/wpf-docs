@@ -267,14 +267,6 @@ When you place the mouse pointer over the annotation, the tooltip will be displa
  
  ![Display tooltip of the sticky note annotation](Annotation-images\Sticky-Note-Annotation-11.png)
 
-## Keyboard shortcuts
-
-The following keyboard shortcuts are available to customize the annotation in the PDF document:
-
-*	Delete key: Deletes the selected annotation from the PDF document.
-*	Ctrl + Z: Performs undo functionality for recently performed operations.
-*	Ctrl + Y: Performs redo functionality for recently performed operations.
-
 ## Events
 
 The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
