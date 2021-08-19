@@ -13,27 +13,13 @@ PDF Viewer supports showing and hiding toolbar, when you feel to customize the t
 
 {% tabs %}
 {% highlight c# %}
-
-//Initialize PDF Viewer.
-PdfViewerControl pdfViewer = new PdfViewerControl();
-
-//Load the PDF.
-pdfViewer.Load("Sample.pdf");
-
-// Hiding the default toolbar of the PDF Viewer
-pdfviewer.ShowToolbar = false;
+// Hide the default (top) toolbar of the PDF Viewer
+pdfViewer.ShowToolbar = false;
 {% endhighlight %}
+
 {% highlight vbnet %}
-
-'Initialize PDF Viewer.
-Private pdfViewer As New PdfViewerControl()
-
-'Load the PDF.
-pdfViewer.Load("Sample.pdf")
-
 ' Hiding the default toolbar of the PDF Viewer
 pdfViewer.ShowToolbar = False
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,3 +61,5 @@ Private Sub HideVerticalToolbar()
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+N> The sample project for disabling top and left toolbar is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Toolbar/HideToolbar).
