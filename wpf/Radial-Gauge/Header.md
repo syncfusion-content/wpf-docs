@@ -79,6 +79,8 @@ mainscale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(mainscale);
 
+this.Content = sfCircularGauge;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -175,6 +177,8 @@ mainscale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(mainscale);
 
+this.Content = sfCircularGauge;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -189,7 +193,7 @@ The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.6">
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.5,0.8">
 
     <gauge:SfCircularGauge.GaugeHeader>
 
@@ -223,33 +227,35 @@ The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
   SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-  CircularScale mainscale = new CircularScale();
+            CircularScale mainscale = new CircularScale();
 
-  TextBlock textBlock = new TextBlock();
+            TextBlock textBlock = new TextBlock();
 
-  textBlock.Text = "Temperature (K)";
+            textBlock.Text = "Temperature (K)";
 
-  textBlock.Height = 40;
+            textBlock.Height = 40;
 
-  textBlock.Width = 100;
+            textBlock.Width = 100;
 
-  textBlock.FontSize = 13;
+            textBlock.FontSize = 13;
 
-  textBlock.Foreground = new SolidColorBrush(Colors.Black);
+            textBlock.Foreground = new SolidColorBrush(Colors.Black);
 
-  sfCircularGauge.GaugeHeader = textBlock;
+            sfCircularGauge.GaugeHeader = textBlock;
 
-  sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+            sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
 
-  sfCircularGauge.GaugeHeaderPosition = new Point(0.4, 0.6);
+            sfCircularGauge.GaugeHeaderPosition = new Point(0.5, 0.8);
 
-  CircularPointer circularPointer = new CircularPointer();
+            CircularPointer circularPointer = new CircularPointer();
 
-  circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 
-  mainscale.Pointers.Add(circularPointer);
+            mainscale.Pointers.Add(circularPointer);
 
-  sfCircularGauge.Scales.Add(mainscale);
+            sfCircularGauge.Scales.Add(mainscale);
+
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -265,7 +271,7 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.6"
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.5,0.8"
 
      FontFamily="Monotype Corsiva" FontSize="15"
 
@@ -293,46 +299,48 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 
     </gauge:SfCircularGauge.Scales>
 
-    /gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-  CircularScale mainscale = new CircularScale();
+            CircularScale mainscale = new CircularScale();
 
-  TextBlock textBlock = new TextBlock();
+            TextBlock textBlock = new TextBlock();
 
-  textBlock.Text = "Temperature (K)";
+            textBlock.Text = "Temperature (K)";
 
-  textBlock.Height = 40;
+            textBlock.Height = 40;
 
-  textBlock.Width = 100;
+            textBlock.Width = 100;
 
-  sfCircularGauge.GaugeHeader = textBlock;
+            sfCircularGauge.GaugeHeader = textBlock;
 
-  sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+            sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
 
-  sfCircularGauge.GaugeHeaderPosition = new Point(0.4, 0.6);
+            sfCircularGauge.GaugeHeaderPosition = new Point(0.5, 0.8);
 
-  sfCircularGauge.FontSize = 15;
+            sfCircularGauge.FontSize = 15;
 
-  sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
+            sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
 
-  sfCircularGauge.FontStyle = FontStyles.Italic;
+            sfCircularGauge.FontStyle = FontStyles.Italic;
 
-  sfCircularGauge.Foreground = new SolidColorBrush(Colors.Blue);
+            sfCircularGauge.Foreground = new SolidColorBrush(Colors.Blue);
 
-  CircularPointer circularPointer = new CircularPointer();
+            CircularPointer circularPointer = new CircularPointer();
 
-  circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 
-  mainscale.Pointers.Add(circularPointer);
+            mainscale.Pointers.Add(circularPointer);
 
-  sfCircularGauge.Scales.Add(mainscale);
+            sfCircularGauge.Scales.Add(mainscale);
 
+            this.Content = sfCircularGauge;
+  
 {% endhighlight %}
 
 {% endtabs %}
