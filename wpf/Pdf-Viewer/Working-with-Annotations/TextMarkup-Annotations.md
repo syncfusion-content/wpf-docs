@@ -575,14 +575,6 @@ The following image illustrates how to delete the included annotation from the P
 
 ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-8.png)
 
-## Keyboard shortcuts
-
-The below keyboard shortcuts are available to customize the annotation in the PDF document.
-
-*	Delete key – Deletes the selected annotation from the PDF document.
-*	Ctrl + Z – Performs undo functionality for recently performed operations.
-*	Ctrl + Y – Performs redo functionality for recently performed operations.
-
 ## Events
 
 The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
