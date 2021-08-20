@@ -151,6 +151,59 @@ chart.DataLabelInfo = dataLabelInfo;
 
 N> By default, LabelRotationMode value is Angle.
 
+## Font customization
+
+Data label fonts can be customized using [`FontFamily`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontFamily), [`FontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontSize), [`FontStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontStyle), [`FontWeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_FontWeight) properties.
+
+Font color of the label can be customized using the [`Foreground`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_Foreground) property.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" >
+            <sunburst:SfSunburstChart.Levels>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+            </sunburst:SfSunburstChart.Levels>
+
+            <sunburst:SfSunburstChart.DataLabelInfo>
+                <sunburst:SunburstDataLabelInfo ShowLabel="True" FontSize="12" FontFamily="Comic Sans MS"
+                                                FontStyle="Italic" FontWeight="SemiBold"
+                                                Foreground="White"/>
+            </sunburst:SfSunburstChart.DataLabelInfo>
+        </sunburst:SfSunburstChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfSunburstChart sunburst = new SfSunburstChart();
+            sunburst.ValueMemberPath = "EmployeesCount";
+            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+
+            SunburstDataLabelInfo info = new SunburstDataLabelInfo();
+            info.FontSize = 12;
+            info.FontStyle = FontStyles.Italic;
+            info.FontWeight = FontWeights.SemiBold;
+            info.Foreground = new SolidColorBrush(Colors.White);
+            info.FontFamily = new FontFamily("Comic Sans MS");
+            sunburst.DataLabelInfo = info;
+            grid.Children.Add(sunburst);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DataLabel_img4](DataLabel_images/FontCustomization.png)
+
 ## Customizing the data labels
 
 You can customize the default appearance or display information about the data point using the [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelTemplate) property.

@@ -33,7 +33,7 @@ You can change the start and end angle of Sunburst chart using [`StartAngle`](ht
 
 {% highlight xaml %}
 
-   <sunburst:SfSunburstChart StartAngle="180"
+      <sunburst:SfSunburstChart StartAngle="180"
                              EndAngle="360">
 
     </sunburst:SfSunburstChart>
@@ -60,9 +60,9 @@ Sunburst chart allows you to customize the sunburst radius by using [`Radius`](h
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart Radius="0.6">
+    <sunburst:SfSunburstChart Radius="0.6">
 
-</sunburst:SfSunburstChart>
+     </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
@@ -85,9 +85,9 @@ Sunburst chart allows you to customize the inner radius using [`InnerRadius`](ht
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart InnerRadius="0.5">
+    <sunburst:SfSunburstChart InnerRadius="0.5">
 
-</sunburst:SfSunburstChart>
+    </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 

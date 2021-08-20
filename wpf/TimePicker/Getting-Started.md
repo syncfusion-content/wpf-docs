@@ -25,7 +25,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Add control through designer
 
-The `SfTimePicker` control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
@@ -236,3 +236,5 @@ SfTimePicker supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Setting theme to WPF TimePicker](GettingStarted_images/Theme.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Themes).

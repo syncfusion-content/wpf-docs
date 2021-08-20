@@ -36,16 +36,32 @@ Each palette applies a set of predefined brushes to the sunburst chart in a pred
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart ItemsSource="{Binding Data}"
-                          ValueMemberPath="Value" 
-                          Palette="SandyBeach">
-</sunburst:SfSunburstChart>
+        <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
+                                 Palette="SandyBeach" >
+
+            <sunburst:SfSunburstChart.Levels>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+            </sunburst:SfSunburstChart.Levels>
+
+        </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-sunburstChart.Palette = SunburstColorPalette.SandyBeach;
+            SfSunburstChart sunburst = new SfSunburstChart();
+            sunburst.ValueMemberPath = "EmployeesCount";
+            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+
+            sunburst.Palette = SunburstColorPalette.SandyBeach;           
+            grid.Children.Add(sunburst);
 
 {% endhighlight %}
 
@@ -62,12 +78,18 @@ Sunburst chart provides option which enables you to define your own color brushe
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart Palette="Custom">
+     <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" 
+                               Palette="Custom"   >
+
+            <sunburst:SfSunburstChart.Levels>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+            </sunburst:SfSunburstChart.Levels>
 
       <sunburst:SfSunburstChart.ColorModel>
-
-                <sunburst:SunburstColorModel>
-                    
+                <sunburst:SunburstColorModel>                    
                     <sunburst:SunburstColorModel.CustomBrushes>
                         
                         <LinearGradientBrush>
@@ -92,17 +114,23 @@ Sunburst chart provides option which enables you to define your own color brushe
 
                     </sunburst:SunburstColorModel.CustomBrushes>
                     
-                </sunburst:SunburstColorModel>
-                
+                </sunburst:SunburstColorModel>                
             </sunburst:SfSunburstChart.ColorModel>
-
-    </sunburst:SfSunburstChart>
+        </sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            chart.Palette = SunburstColorPalette.Custom;
+            SfSunburstChart sunburst = new SfSunburstChart();
+            sunburst.ValueMemberPath = "EmployeesCount";
+            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+
+            sunburst.Palette = SunburstColorPalette.Custom;
 
             SunburstColorModel colorModel = new SunburstColorModel();
             LinearGradientBrush brush1 = new LinearGradientBrush();
@@ -126,8 +154,9 @@ Sunburst chart provides option which enables you to define your own color brushe
             colorModel.CustomBrushes.Add(brush3);
             colorModel.CustomBrushes.Add(brush4);
 
-            chart.ColorModel = colorModel;
-
+            sunburst.ColorModel = colorModel;
+            grid.Children.Add(sunburst);
+          
 {% endhighlight %}
 
 {% endtabs %}
