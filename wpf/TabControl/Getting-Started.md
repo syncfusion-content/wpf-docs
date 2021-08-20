@@ -69,7 +69,7 @@ To add the `TabControl` manually in XAML, follow these steps:
 
 ## Adding WPF TabControl via C#
 
-To add the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) control manually in C#, follow these steps:
+To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) control manually in C#, follow these steps:
 
 1. Create a new WPF application via Visual Studio.
 

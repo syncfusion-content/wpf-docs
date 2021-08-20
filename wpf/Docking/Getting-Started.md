@@ -423,7 +423,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 ## Theme
 
-[DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
+[DockingManager](https://www.syncfusion.com/wpf-controls/docking) supports various built-in themes. Refer to the below links to apply themes for the DockingManager,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
