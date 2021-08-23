@@ -11,17 +11,17 @@ documentation: ug
 
 # Tooltip in WPF Sunburst Chart (SfSunburstChart)
 
-ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value.
+ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value. Visibility of the tooltip can be controlled using [`ShowToolTip`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_ShowToolTip) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-             
-           <sunburst:SunburstToolTipBehavior />
-                
- </sunburst:SfSunburstChart.Behaviors>
+      <sunburst:SfSunburstChart.Behaviors>
+
+                <sunburst:SunburstToolTipBehavior ShowToolTip="True"/>
+
+            </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -51,11 +51,11 @@ The following code shows, how to position the tooltip to right of the cursor.
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+      <sunburst:SfSunburstChart.Behaviors>
 
-     <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right"/>
+         <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right"/>
 
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -78,11 +78,11 @@ The following code shows, how to position the tooltip to bottom of the cursor.
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
 
      <sunburst:SunburstToolTipBehavior VerticalAlignment="Bottom"  />
 
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -97,12 +97,12 @@ The tooltip position can be customized to a custom position from the cursor usin
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+         <sunburst:SfSunburstChart.Behaviors>
 
        <sunburst:SunburstToolTipBehavior HorizontalOffset="50"
                                          VerticalOffset="50"/>
 
-</sunburst:SfSunburstChart.Behaviors>
+        </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -129,11 +129,11 @@ You can set display duration for tooltip by using the [`ShowDuration`](https://h
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+         <sunburst:SfSunburstChart.Behaviors>
 
             <sunburst:SunburstToolTipBehavior ShowDuration="6000"/>
 
-</sunburst:SfSunburstChart.Behaviors>
+          </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -155,11 +155,11 @@ We can set the initial display delay for Tooltip by using [`InitialShowDelay`](h
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+           <sunburst:SfSunburstChart.Behaviors>
 
             <sunburst:SunburstToolTipBehavior InitialShowDelay="500"/>
                 
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -181,12 +181,12 @@ You can enable the translate animation for Tooltip by using [`EnableAnimation`](
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.Behaviors>
+    <sunburst:SfSunburstChart.Behaviors>
 
      <sunburst:SunburstToolTipBehavior EnableAnimation="True" 
                                        AnimationDuration="5000"/>
 
-</sunburst:SfSunburstChart.Behaviors>
+    </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -207,7 +207,7 @@ You can customize the default appearance of the tooltip by applying the [`Toolti
 
 {% highlight xaml %}
 
-<sunburst:SunburstToolTipBehavior.ToolTipTemplate>
+    <sunburst:SunburstToolTipBehavior.ToolTipTemplate>
                         
         <DataTemplate>
                             
@@ -228,7 +228,7 @@ You can customize the default appearance of the tooltip by applying the [`Toolti
                             
        </DataTemplate>
                         
-</sunburst:SunburstToolTipBehavior.ToolTipTemplate>
+    </sunburst:SunburstToolTipBehavior.ToolTipTemplate>
 
 {% endhighlight %}
 

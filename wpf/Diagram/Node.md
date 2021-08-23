@@ -88,11 +88,11 @@ Now, node will be as follows.
 
 ### Add node from stencil
 
-Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil").
+Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/diagram/stencil "Stencil").
 
 ### Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. For more information about data source, refer to the [Data Source](/wpf/sfdiagram/datasource "DataSource").
+Nodes can be generated automatically with the information provided through data source. For more information about data source, refer to the [Data Source](/wpf/diagram/datasource "DataSource").
 
 ### Draw nodes
 

@@ -655,7 +655,7 @@ public class CustomDiagram : SfDiagram
 
 ## Constraints
 
-The `Constraints` property of connector allows you to enable or disable certain features of connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/constraints#connector-constraints "Connector Constraints").
+The `Constraints` property of connector allows you to enable or disable certain features of connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/diagram/constraints#connector-constraints "Connector Constraints").
 
 Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Appearance) to depict the connector appearance and validation.
 
@@ -663,12 +663,12 @@ Find the [Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tre
 
 [How to add annotations for connectors](/wpf/diagram/annotation)
 
-[How to add or remove connector constraints](/wpf/sfdiagram/constraints#connector-constraints)
+[How to add or remove connector constraints](/wpf/diagram/constraints#connector-constraints)
 
-[How to add ports for connector](/wpf/sfdiagram/port)
+[How to add ports for connector](/wpf/diagram/port)
 
-[How to group other elements with connector](/wpf/sfdiagram/group)
+[How to group other elements with connector](/wpf/diagram/group)
 
-[How to draw connector independently using drawing tool](/wpf/sfdiagram/tools)
+[How to draw connector independently using drawing tool](/wpf/diagram/tools)
 
 {% endseealso %}

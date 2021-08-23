@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Dropdown Button (DropDownButtonAdv)
 
-This section provides an overview of how to work with Dropdown Button control. It describes the control structure, the control initialization, the image setting for the control and adding items to the Dropdown Button control.
+This section provides an overview of how to work with [Dropdown Button](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownButton.html) control. It describes the control structure, the control initialization, the image setting for the control and adding items to the Dropdown Button control.
 
 ## Control structure
 
@@ -493,7 +493,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examp
 
 ## Adding items to Dropdown Button
 
-The DropDownMenuGroup acts as a container for the Dropdown Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
+The [DropDownMenuGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DropDownMenuGroup.html) acts as a container for the Dropdown Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
 
 N> For more information on how to bind data with command actions for Dropdown Button please refer to the topics [Data Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) and [Command Binding](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding).
 

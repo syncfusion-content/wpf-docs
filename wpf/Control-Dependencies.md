@@ -7,7 +7,7 @@ control: Control Dependencies
 documentation: ug
 ---
 
-# Control Dependencies
+# Control Dependencies in Syncfusion's WPF Controls
 
 This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
 

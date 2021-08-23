@@ -58,11 +58,11 @@ diagram.Groups = groups;
 
 Group Nodes can be predefined and added to stencil. You can drop those Groups into Diagram, when required. 
 
-To explore how to add Groups from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
+To explore how to add Groups from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
 
 ## Interaction
 
-You can edit the Group and its children at runtime. For more information about how to interact with a Group, refer to [Interaction](/wpf/sfdiagram/interaction "Interaction").
+You can edit the Group and its children at runtime. For more information about how to interact with a Group, refer to [Interaction](/wpf/diagram/interaction "Interaction").
 
 ## See Also
  
