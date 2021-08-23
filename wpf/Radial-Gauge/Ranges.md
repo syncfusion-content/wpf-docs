@@ -140,27 +140,28 @@ The circular range width is customized by setting the [`StartWidth`](https://hel
 
     <gauge:SfCircularGauge >
 
-    <gauge:SfCircularGauge.Scales>
+            <gauge:SfCircularGauge.Scales>
 
-    <gauge:CircularScale  RangePosition="Inside" Radius="200">
+                <gauge:CircularScale  RangePosition="Inside" Radius="200">
 
-    <gauge:CircularScale.Ranges>
+                    <gauge:CircularScale.Ranges>
 
-    <gauge:CircularRange StartValue="10" EndValue="80" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+                        <gauge:CircularRange StartValue="10" EndValue="80" StrokeThickness ="10" InnerStartOffset="0.95" InnerEndOffset="0.95"
+                                             OuterStartOffset="0.9" OuterEndOffset="0.8"/>
 
-    </gauge:CircularScale.Ranges>
+                    </gauge:CircularScale.Ranges>
 
-    <gauge:CircularScale.Pointers>
-                    
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    <gauge:CircularScale.Pointers>
 
-    </gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
 
-    </gauge:CircularScale>
+                    </gauge:CircularScale.Pointers>
 
-    </gauge:SfCircularGauge.Scales>
+                </gauge:CircularScale>
 
-    </gauge:SfCircularGauge>
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -168,31 +169,39 @@ The circular range width is customized by setting the [`StartWidth`](https://hel
 
   SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-  CircularScale mainscale = new CircularScale();
+            CircularScale mainscale = new CircularScale();
 
-  mainscale.RangePosition = RangePosition.Inside;
+            mainscale.RangePosition = RangePosition.Inside;
 
-  CircularRange circularRange = new CircularRange();
+            CircularRange circularRange = new CircularRange();
 
-  circularRange.StartValue = 10;
+            circularRange.StartValue = 10;
 
-  circularRange.EndValue = 80;
+            circularRange.EndValue = 80;
 
-  circularRange.StrokeThickness = 10;
+            circularRange.StrokeThickness = 10;
 
-  circularRange.StartWidth = 1;
+            circularRange.InnerStartOffset = 0.95;
 
-  circularRange.EndWidth = 10;
+            circularRange.InnerEndOffset = 0.95;
 
-  mainscale.Ranges.Add(circularRange);
+            circularRange.OuterStartOffset = 0.9;
+            
+            circularRange.OuterEndOffset = 0.8;
 
-  CircularPointer circularPointer = new CircularPointer();
+            circularRange.EndWidth = 10;
 
-  circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Ranges.Add(circularRange);
 
-  mainscale.Pointers.Add(circularPointer);
+            CircularPointer circularPointer = new CircularPointer();
 
-  sfCircularGauge.Scales.Add(mainscale);
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+
+            mainscale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(mainscale);
+
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -291,6 +300,8 @@ circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 mainscale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(mainscale);
+
+ this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -399,6 +410,8 @@ mainscale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(mainscale);
 
+this.Content = sfCircularGauge;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -457,6 +470,7 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 			
 {% endhighlight %}
 
@@ -493,8 +507,9 @@ For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterS
 {% highlight c# %}
 
 
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+             SfCircularGauge sfCircularGauge = new SfCircularGauge();
             CircularScale mainscale = new CircularScale();
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
             mainscale.RangePosition = RangePosition.Custom;
             CircularRange circularRange = new CircularRange();
             circularRange.StartValue = 10;
@@ -509,6 +524,8 @@ For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterS
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+
+            this.Content = sfCircularGauge;
 			
 {% endhighlight %}
 
@@ -607,6 +624,8 @@ circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 mainscale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(mainscale);
+
+ this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
