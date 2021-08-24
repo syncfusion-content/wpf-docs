@@ -266,7 +266,7 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gau
 
 ## Setting multiple scales for circular gauge
 
-You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html#Syncfusion_Windows_Gauge_CircularGauge_Scales) collection. Size of the circular gauge can be decided using the [`SpacingMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_SpacingMargin) property and it ranges from 0.1 to 1.
+You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.CircularGauge.html#Syncfusion_Windows_Gauge_CircularGauge_Scales) collection. The [`SpacingMargin`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_SpacingMargin) property determines the size of the circular gauge, which ranges from 0.1 to 1.
 
 {% tabs %}
 
