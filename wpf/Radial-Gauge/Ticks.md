@@ -58,6 +58,7 @@ The length, stroke, and stroke thickness of a major ticks and minor ticks are se
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 			
 {% endhighlight %}
 
@@ -134,25 +135,26 @@ The [`TickShape`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.C
 
 {% highlight c# %}
 
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
+ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-CircularScale mainscale = new CircularScale();
+            CircularScale mainscale = new CircularScale();
 
-mainscale.TickShape = TickShape.Triangle;
+            mainscale.TickShape = TickShape.Triangle;
 
-mainscale.MinorTicksPerInterval = 3;
+            mainscale.MinorTicksPerInterval = 3;
 
-mainscale.MajorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
+            mainscale.MajorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
 
-mainscale.MinorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
+            mainscale.MinorTickSettings.Stroke = new SolidColorBrush(Colors.Blue);
 
-CircularPointer circularPointer = new CircularPointer();
+            CircularPointer circularPointer = new CircularPointer();
 
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 
-mainscale.Pointers.Add(circularPointer);
+            mainscale.Pointers.Add(circularPointer);
 
-sfCircularGauge.Scales.Add(mainscale);
+            sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -208,21 +210,22 @@ Placing the ticks inside or outside the scale, or across the scale by selecting 
 
 {% highlight c# %}
 
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
+ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-CircularScale mainscale = new CircularScale();
+            CircularScale mainscale = new CircularScale();
 
-mainscale.TickPosition = TickPosition.Outside;
+            mainscale.TickPosition = TickPosition.Outside;
 
-mainscale.MinorTicksPerInterval = 3;
+            mainscale.MinorTicksPerInterval = 3;
 
-CircularPointer circularPointer = new CircularPointer();
+            CircularPointer circularPointer = new CircularPointer();
 
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 
-mainscale.Pointers.Add(circularPointer);
+            mainscale.Pointers.Add(circularPointer);
 
-sfCircularGauge.Scales.Add(mainscale);
+            sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -275,6 +278,7 @@ For relative position you can use [`Offset`](https://help.syncfusion.com/cr/wpf/
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -333,6 +337,7 @@ For absolute position you can use [`StartOffset`](https://help.syncfusion.com/cr
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 			
 {% endhighlight %}
 
@@ -364,7 +369,7 @@ N> Default value of the ShowTicks property is true.
 
 {% highlight c# %}
 
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+           SfCircularGauge sfCircularGauge = new SfCircularGauge();
             CircularScale mainscale = new CircularScale();
             mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
             mainscale.ShowTicks = false;
@@ -372,6 +377,7 @@ N> Default value of the ShowTicks property is true.
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
