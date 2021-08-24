@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Keyboard
+# Keyboard support in WPF Diagram
 
 Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
