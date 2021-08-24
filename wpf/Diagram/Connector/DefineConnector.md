@@ -137,7 +137,7 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ![WPF Diagram FreeHand Drawing](Connector_images/wpf-diagram-freehand-drawing.gif)
 
-For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
+For more information about changing drawing tool of diagram, refer to [Tools](/wpf/diagram/tools "Tools").
 
 Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
 

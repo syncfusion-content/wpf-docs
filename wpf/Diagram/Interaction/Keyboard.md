@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Keyboard
+# Keyboard support in WPF Diagram
 
 Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
@@ -49,7 +49,7 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + 9 | Ellipse Tool | To draw an ellipse shaped node.|
 | Esc | Cancel | Stops the annotation editing or clears the selection of a diagram element. |
 
-To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/sfdiagram/commands#command-manager "Command Manager")
+To add custom commands, configure or modify key or mouse gesture through [Command Manager](/wpf/diagram/commands/alignment#command-manager "Command Manager")
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/KeyboardShortcuts-sample)
 
