@@ -81,7 +81,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayMode = AppointmentDisplayMode.
 ![WPF Scheduler month view AppointmentDisplayMode](Month-View_Images/wpf-scheduler-appointment-display-mode.png)
 
 ## Appointment display count
-Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, single appointment will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
+Customize the number of appointments displayed in a month cell using the [AppointmentDisplayCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount) property of `MonthViewSettings` in the Scheduler. By default, the appointment display count is 3, and the month cell has more than 3 appointments, 3 appointments will be displayed and the remaining appointments in the month cell will be displayed as more appointments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -102,6 +102,7 @@ this.Schedule.MonthViewSettings.AppointmentDisplayCount = 4;
 
 N> 
 * By clicking more option, the scheduler navigates to the day view.
+* Appointment height will be increased when appointment display count is 1.
 
 ![WPF Scheduler month view AppointmentDisplayCount](Month-View_Images/wpf-scheduler-appointment-display-count.png)
 
