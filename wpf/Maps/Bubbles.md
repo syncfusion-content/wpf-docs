@@ -75,7 +75,7 @@ Gets or sets the opacity of the bubble in the map.</td></tr>
 <td>
 [`SizeRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_SizeRatio)</td><td>
 double</td><td>
-Gets the Size ratio for the bubbles based on the MinSize and MaxSize</td></tr>
+Gets the Size ratio for the bubbles based on the MinSize and MaxSize.</td></tr>
 </table>
 
 
@@ -393,7 +393,7 @@ The fill color of a particular bubble fill can be determined by its under-bound 
     
 {% endtabs %}          
 
-When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to `#7FEB737C`.  As mentioned earlier, the under-bound value of the bubble is set through the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) in the BubbleMarkerSetting.
+When the under-bound object value is 22789702, the fill color of the corresponding bubble is set to `#7FEB737C`. As mentioned earlier, the under-bound value of the bubble is set using the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) in the BubbleMarkerSetting.
 
 When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as `Black`.
 

@@ -173,7 +173,7 @@ The default view of Bing map style is Road.
 
 ### Aerial View
 
-Aerial view displays satellite images to highlight roads and major landmarks for easy identification. To apply the Aerial view, you need to set [`BingMapStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) as `Aerial`, as shown in the following code.
+Aerial view displays satellite images that highlight roads and major landmarks for easy identification. To apply the Aerial view, set [`BingMapStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) as `Aerial`, as shown in the following code.
 
 {% tabs %}
 
