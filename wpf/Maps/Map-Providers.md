@@ -173,7 +173,9 @@ The default view of Bing map style is Road.
 
 ### Aerial View
 
-Aerial view displays satellite images to highlight roads and major landmarks for easy identification. To apply the Aerial view, you need to set BingMapStyle as `Aerial`, as shown in the following code.
+Aerial view displays satellite images that highlight roads and major landmarks for easy identification. To apply the Aerial view, set [`BingMapStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapStyle) as `Aerial`, as shown in the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
        
@@ -185,6 +187,20 @@ Aerial view displays satellite images to highlight roads and major landmarks for
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+            SfMap map = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            layer.LayerType = LayerType.Bing;
+            layer.BingMapKey = "Your Bing map key";
+            layer.BingMapStyle = BingMapStyle.Aerial;
+            map.Layers.Add(layer);
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 
 The following screenshot illustrates the Aerial View.
@@ -194,6 +210,8 @@ The following screenshot illustrates the Aerial View.
 ### Road View
 
 Road view displays the default map view of roads, buildings, and geography. To apply the Road view, you need to set BingMapStyle as `Road`, as shown in the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -205,6 +223,20 @@ Road view displays the default map view of roads, buildings, and geography. To a
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ SfMap map = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            layer.LayerType = LayerType.Bing;
+            layer.BingMapKey = "Your Bing map key";
+            layer.BingMapStyle = BingMapStyle.Road;
+            map.Layers.Add(layer);
+            this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following screenshot illustrates the Road view.
 
 '![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
@@ -213,6 +245,8 @@ The following screenshot illustrates the Road view.
 ### AerialWithLabelView
 
 AerialWithLabel view displays the Aerial map areas with labels for continent, country, ocean, etc., names. To apply this type of view style, you need to set BingMapStyle as `AerialWithLabel`, as shown in the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -223,6 +257,18 @@ AerialWithLabel view displays the Aerial map areas with labels for continent, co
         </syncfusion:SfMap>
 
 {% endhighlight %}
+
+{% highlight c# %}
+            SfMap map = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            layer.LayerType = LayerType.Bing;
+            layer.BingMapKey = "Your Bing map key";
+            layer.BingMapStyle = BingMapStyle.AerialWithLabels;
+            map.Layers.Add(layer);
+            this.Content = map;
+{% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrates the AerialWithLabel view.
 
