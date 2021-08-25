@@ -9,9 +9,9 @@ documentation: ug
 
 # Rim in WPF Radial Gauge (SfCircularGauge)
 
-Scale determines the structure of a circular gauge by using a circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
+Scale determines the structure of a circular gauge by using a circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle) properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 
-The `StartValue` and `EndValue` properties, determine the overall range of the circular rim.
+The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_EndValue) properties determine the overall range of the circular rim.
 
 {% tabs %}
 
@@ -63,6 +63,8 @@ circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 circularScale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(circularScale);
+
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -117,6 +119,8 @@ circularPointer.NeedlePointerVisibility = Visibility.Hidden;
 circularScale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(circularScale);
+
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -176,6 +180,8 @@ circularScale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(circularScale);
 
+this.Content = sfCircularGauge;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -226,6 +232,8 @@ circularScale.Pointers.Add(circularPointer);
 
 sfCircularGauge.Scales.Add(circularScale);
 
+this.Content = sfCircularGauge;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -263,6 +271,7 @@ N> Default value of the ShowRim property is true.
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -293,7 +302,7 @@ N> Default value of the ShowRim property is true.
 
 {% highlight c# %}
 
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+             SfCircularGauge sfCircularGauge = new SfCircularGauge();
             CircularScale mainscale = new CircularScale();
             mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
             mainscale.RimStartOffset = 0.6;
@@ -302,6 +311,7 @@ N> Default value of the ShowRim property is true.
             circularPointer.NeedlePointerVisibility = Visibility.Hidden;
             mainscale.Pointers.Add(circularPointer);
             sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
 			
 {% endhighlight %}
 
