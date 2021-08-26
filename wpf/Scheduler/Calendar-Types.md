@@ -42,7 +42,7 @@ this.Schedule.CalendarIdentifier = "HebrewCalendar";
 ![Hebrew Calendar](Calendar-Types_Images/CalendarTypes.png)
 
 ## DateTime values in Calendar types
-You can give all the DateTime values such as `DispalyDate`, `SelectedDate`, `BlackoutDates`, Appointment `StartTime` and `EndTime`, `SpecialTimeRegion` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar`.
+You can give all the DateTime values such as `DisplayDate`, `SelectedDate`, `BlackoutDates`, Appointment `StartTime` and `EndTime`, `SpecialTimeRegion` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar`.
 
 * `DateTime` instance without specifying calendar type. Scheduler will handle the `DateTime` value for the specified calendar type.
 
