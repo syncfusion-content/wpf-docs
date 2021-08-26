@@ -23,7 +23,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF Carousel via designer
 
-1) The `Carousel` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1) The [Carousel](https://www.syncfusion.com/wpf-controls/carousel) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -227,7 +227,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Populating items using collection binding
 
-You can populate items to the `Carousel` control by setting the collection value to the `ItemsSource` property. 
+You can populate items to the [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) control by setting the collection value to the `ItemsSource` property. 
 
 {% tabs %}
 {% highlight C# %}

@@ -68,7 +68,7 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
     * Syncfusion.SfInput.WPF
     * Syncfusion.Shared.WPF
 
-2. Import SfCalculator namespace **Syncfusion.Windows.Controls.Input**.
+2. Import [SfCalculator](https://www.syncfusion.com/wpf-controls/calculator) namespace **Syncfusion.Windows.Controls.Input**.
 
 3. Create SfCalculator control instance and add it to the window.
 
@@ -142,7 +142,7 @@ sfCalculator.DefaultValue = 30;
 
 ## Theme
 
-SfCalculator supports various built-in themes. Refer to the below links to apply themes for the SfCalculator,
+[SfCalculator](https://www.syncfusion.com/wpf-controls/calculator) supports various built-in themes. Refer to the below links to apply themes for the SfCalculator,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
