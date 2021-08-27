@@ -138,10 +138,10 @@ this.Schedule.AllowViewNavigation = true;
 
 N>
 * The `AllowViewNavigation` is not applicable for day and timeline day views.
-* If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise the month view should navigate to the day view by single-clicking on the date in month cell.
+* If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
 
 ## Allow date navigation
-You can quickly navigate to the respective date by clicking the date picker in scheduler header. It displays a calendar through where you can navigate to any day in a selected year. You can show the date picker in header by setting the `ShowDatePickerButton` property to `true` in scheduler and the default value is true. Its also allowed today navigation button on header.
+You can quickly navigate to the respective date by clicking the date picker in the scheduler header. It displays a calendar where you can navigate to any day in a selected year. You can show the date picker in the header by setting the `ShowDatePickerButton` property to `true` in the scheduler and the default value is true. Its also allowed today's navigation button on the header.
 
 {% tabs %}
 {% highlight xaml %}
