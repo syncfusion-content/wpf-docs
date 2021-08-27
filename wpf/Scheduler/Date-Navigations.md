@@ -155,3 +155,5 @@ this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.ShowDatePickerButton = true;
 {% endhighlight %}
 {% endtabs %}
+
+N> DatePicker will not be shown if `CalendarIdentifier` is specified other than `GregorianCalendar.`
