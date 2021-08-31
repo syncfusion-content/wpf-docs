@@ -42,19 +42,18 @@ N>
 * When the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence. If you want to override this behavior set `FlowDirection` after `CalendarIdentifier.`
 * The scheduler uses the `CalendarIdentifier` property to determine which calendar to use to localize and format the header date, view header day, and date, time ruler, and DatePicker, and TimePicker in the appointment editor.
 * By default, the scheduler uses the `GregorianCalendar` for the app’s preferred language.
-* If the scheduler is localized with the `CalendarIdentifier,` it will display in the app’s preferred language. For example, if you specify a `KoreanCalendar` and the app language is "en-us," the scheduler will display in English because there are translations applied for the Korean calendar.
 
 {% tabs %}
 {% highlight xaml %}
 <scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HebrewCalendar" />
+                       CalendarIdentifier="HijriCalendar" />
 {% endhighlight %}
 {% highlight c# %}
-this.Schedule.CalendarIdentifier = "HebrewCalendar";
+this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-![Hebrew Calendar](Calendar-Types_Images/CalendarTypes.png)
+![Hijri Calendar](Calendar-Types_Images/CalendarTypes.png)
 
 ## DateTime values in Calendar types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar.`
