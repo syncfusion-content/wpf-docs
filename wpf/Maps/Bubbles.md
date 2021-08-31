@@ -15,8 +15,6 @@ Bubbles are included when data binding is set as mentioned above and the BubbleM
 
 The following properties are available in [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html):
 
-
-
 <table>
 <tr>
 <th>
@@ -25,49 +23,59 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-AutoFillColor</td><td>
+[`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor)</td><td>
 Boolean (true / false)</td><td>
 Gets or sets whether the colors should be automatically filled.</td></tr>
 <tr>
 <td>
-MaxSize</td><td>
+[`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize)</td><td>
 Double</td><td>
 Get or sets the maximum height and width of the bubble.</td></tr>
 <tr>
 <td>
-MinSize</td><td>
+[`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize)</td><td>
 Double</td><td>
 Gets or sets the minimum height and width of the bubble.</td></tr>
 <tr>
 <td>
-StrokeThickness</td><td>
+[`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_StrokeThickness)</td><td>
 Double</td><td>
 Get or sets the border thickness of the bubbles.</td></tr>
 <tr>
 <td>
-ValuePath</td><td>
+[`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath)</td><td>
 String</td><td>
 Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
 <tr>
 <td>
-ColorValuePath</td><td>
+[`ColorValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorValuePath)</td><td>
 String</td><td>
 Gets or sets colors to bubble shape. </td></tr>
 <tr>
 <td>
-ColorMapping</td><td>
+[`ColorMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorMappings)</td><td>
 ObservableCollection&lt;RangeColorMapping&gt;</td><td>
 Gets or sets the tree map colors.</td></tr>
 <tr>
 <td>
-Fill</td><td>
+[`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill)</td><td>
 Brush</td><td>
 Gets or sets the fill brush of the bubble when auto fill color is set to true.</td></tr>
 <tr>
 <td>
-Stroke</td><td>
+[`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Stroke)</td><td>
 Brush</td><td>
 Gets or sets the border color of the bubble.</td></tr>
+<tr>
+<td>
+[`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Opacity)</td><td>
+double</td><td>
+Gets or sets the opacity of the bubble in the map.</td></tr>
+<tr>
+<td>
+[`SizeRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_SizeRatio)</td><td>
+double</td><td>
+Gets the Size ratio for the bubbles based on the MinSize and MaxSize.</td></tr>
 </table>
 
 
@@ -182,6 +190,8 @@ DataTemplate</td><td>
 Gets or sets the template to customize the bubble.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xaml %}
 
          <syncfusion:SfMap>
@@ -223,6 +233,77 @@ Gets or sets the template to customize the bubble.</td></tr>
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ViewModel viewModel = new ViewModel();
+
+            SfMap map = new SfMap();
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.world1.shp";
+            shapeFileLayer.ShapeIDPath = "Name";
+            shapeFileLayer.ShapeIDTableField = "NAME";
+            shapeFileLayer.ItemsSource = viewModel.Countries;
+            map.Layers.Add(shapeFileLayer);
+
+            BubbleMarkerSetting bubbleMarkerSetting = new BubbleMarkerSetting();
+            bubbleMarkerSetting.AutoFillColor = false;
+            bubbleMarkerSetting.MaxSize = 100;
+            bubbleMarkerSetting.MinSize = 50;
+            bubbleMarkerSetting.ColorValuePath = "Population";
+            bubbleMarkerSetting.ValuePath = "Population";
+            bubbleMarkerSetting.BubbleType = BubbleType.Star;
+            shapeFileLayer.BubbleMarkerSetting = bubbleMarkerSetting;
+
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 314623001;
+            rangeColorMapping.To = 1347350000;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7F20BCEE");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 143228301;
+            rangeColorMapping.To = 314623001;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FA7CE38");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 82724090;
+            rangeColorMapping.To = 143228301;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FF1B21A");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 22789702;
+            rangeColorMapping.To = 50586757;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7F1DA249");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 0;
+            rangeColorMapping.To = 22789702;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FEB737C");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 50586757;
+            rangeColorMapping.To = 82724090;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FED2D95");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            shapeFileLayer.ItemsTemplate = grid.Resources["itemTemplate"] as DataTemplate;
+
+            ShapeSetting setting = new ShapeSetting();
+            setting.ShapeStroke= (SolidColorBrush)(new BrushConverter().ConvertFrom("#C1C1C1"));
+            setting.ShapeStrokeThickness = 0.5;
+            setting.ShapeValuePath = "Population";
+            setting.ShapeFill = (SolidColorBrush)(new BrushConverter().ConvertFrom("#E5E5E5"));
+
+            shapeFileLayer.ShapeSettings = setting;
+            grid.Children.Add(map);
+
+{% endhighlight %}
+    
+{% endtabs %}
 
 ![Bubble with Star Symbol](Bubbles_images/Bubbles_img2.png)
 
@@ -252,11 +333,13 @@ Gets or sets the color values for a given range.</td></tr>
 
 The fill color of a particular bubble fill can be determined by its under-bound value and the color range. For example, consider the following color ranges:
 
+{% tabs %}
+
 {% highlight xaml %}
 
  <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" 
                           ColorValuePath="Population"                                                        
-                          ValuePath="Population" BubbleType="Star">
+                          ValuePath="Population" >
           <syncfusion:BubbleMarkerSetting.ColorMappings>
           <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
           <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
@@ -268,11 +351,53 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 {% endhighlight %}
 
-When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to `#7FEB737C`.  As mentioned earlier, the under-bound value of the bubble is set through the `ValuePath` in the BubbleMarkerSetting.
+{% highlight C# %}
+
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 314623001;
+            rangeColorMapping.To = 1347350000;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7F20BCEE");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 143228301;
+            rangeColorMapping.To = 314623001;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FA7CE38");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 82724090;
+            rangeColorMapping.To = 143228301;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FF1B21A");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 22789702;
+            rangeColorMapping.To = 50586757;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7F1DA249");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 0;
+            rangeColorMapping.To = 22789702;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FEB737C");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+            rangeColorMapping = new RangeColorMapping();
+            rangeColorMapping.From = 50586757;
+            rangeColorMapping.To = 82724090;
+            rangeColorMapping.Color = (Color)ColorConverter.ConvertFromString("#7FED2D95");
+            bubbleMarkerSetting.ColorMappings.Add(rangeColorMapping);
+
+{% endhighlight %}
+    
+{% endtabs %}          
+
+When the under-bound object value is 22789702, the fill color of the corresponding bubble is set to `#7FEB737C`. As mentioned earlier, the under-bound value of the bubble is set using the [`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath) in the BubbleMarkerSetting.
 
 When the under-bound value is under any of the given sorted range or above the sorted range, then the fill is set as `Black`.
 
-`AutoFillColor` must be set as `false` to enable range color mapping.
+[`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor) must be set as `false` to enable range color mapping.
 ![RangeColorMapping](Bubbles_images/Bubbles_img3.png)
 
 N> You can also explore our [WPF Map example](https://github.com/syncfusion/wpf-demos/tree/master/map) to know how to render and configure the map.

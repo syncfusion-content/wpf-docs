@@ -26,6 +26,7 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 6. [`Latitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Latitude): Gets or sets the Latitude coordinate of the Annotation.
 7. [`Longitude`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_Longitude): Gets or set the Longitude coordinate of the Annotation.
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -62,9 +63,49 @@ Annotations are notes that are used to leave some message on the map. In Maps, a
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+       SfMap map = new SfMap();
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.Uri = "DataMarkers.ShapeFiles.world1.shp";
+
+            MapAnnotations annotations = new MapAnnotations();
+            annotations.Latitude = -22;
+            annotations.Longitude = 132;
+            annotations.AnnotationLabel = "Australia";
+            annotations.AnnotationLabelFontFamily = new FontFamily("Times New Roman");
+            annotations.AnnotationLabelFontSize = 20;
+            annotations.AnnotationLabelFontStyle = FontStyles.Oblique;
+            annotations.AnnotationLabelForeground = new SolidColorBrush(Colors.Red);
+            Ellipse ellipse = new Ellipse();
+            ellipse.Fill = new SolidColorBrush(Colors.Orange);
+            ellipse.Height = 10;
+            ellipse.Width = 10;
+            annotations.AnnotationSymbol = ellipse;
+            shapeFileLayer.Annotations.Add(annotations);
+
+            MapAnnotations annotations1 = new MapAnnotations();
+            annotations1.Latitude = 40;
+            annotations1.Longitude = -98;
+            annotations1.AnnotationLabel = "Unites States of America";
+            annotations1.AnnotationLabelFontFamily = new FontFamily("Times New Roman");
+            annotations1.AnnotationLabelFontSize = 20;
+            annotations1.AnnotationLabelFontStyle = FontStyles.Oblique;
+            annotations1.AnnotationLabelForeground = new SolidColorBrush(Colors.Red);
+            Ellipse ellipse1 = new Ellipse();
+            ellipse1.Fill = new SolidColorBrush(Colors.Orange);
+            ellipse1.Height = 10;
+            ellipse1.Width = 10;
+            annotations1.AnnotationSymbol = ellipse1;
+            shapeFileLayer.Annotations.Add(annotations1);
+            map.Layers.Add(shapeFileLayer);
+            grid.Children.Add(map);
+          
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Maps Annotation with Customization](Annotations_images/Annotations_img1.png)
-
-
 
 ## Positioning a MapAnnotation
 
@@ -76,11 +117,22 @@ The default appearance of the annotation can be customized by using the [`Annota
 
 AnnotationTemplate is a DataTemplate type, used to customize or override the default template of MapAnnotations.
 
+{% tabs %}
 {% highlight xaml %}
+     <Grid x:Name="grid">
+       <Grid.Resources>
+            <DataTemplate x:Key="annotationTemplate">
+                <Grid >
+                    <ContentPresenter Content="{Binding AnnotationSymbol}"/>
+                    <TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" />
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
 
-       <syncfusion:SfMap >
+      <syncfusion:SfMap >
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer   Uri="DataMarkers.ShapeFiles.world1.shp">
+                <syncfusion:ShapeFileLayer   Uri="DataMarkers.ShapeFiles.world1.shp" AnnotationTemplate="{StaticResource annotationTemplate}">
                     <syncfusion:ShapeFileLayer.Annotations>
                         <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia"  >
                             <syncfusion:MapAnnotations.AnnotationSymbol>
@@ -93,21 +145,50 @@ AnnotationTemplate is a DataTemplate type, used to customize or override the def
                             </syncfusion:MapAnnotations.AnnotationSymbol>
                         </syncfusion:MapAnnotations>
                     </syncfusion:ShapeFileLayer.Annotations>
-                    <syncfusion:ShapeFileLayer.AnnotationTemplate>
-                        <DataTemplate>
-                            <Grid Margin="-50,-20,0,0">
-                                <ContentPresenter Content="{Binding AnnotationSymbol}"/>
-                                <TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" 
-                                       VerticalAlignment="Center"/>
-                            </Grid>
-                        </DataTemplate>
-                    </syncfusion:ShapeFileLayer.AnnotationTemplate>
+                   
                 </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
+    </Grid>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ SfMap map = new SfMap();
+            ShapeFileLayer shapeFileLayer = new ShapeFileLayer();
+            shapeFileLayer.Uri = "WpfUG.Assets.ShapeFiles.world1.shp";
+            shapeFileLayer.AnnotationTemplate = grid.Resources["annotationTemplate"] as DataTemplate;
+
+            MapAnnotations annotations = new MapAnnotations();
+            annotations.Latitude = -22;
+            annotations.Longitude = 132;
+            annotations.AnnotationLabel = "Australia";
+            Image image = new Image();
+            image.Source = new BitmapImage(new Uri(@"/Assets/pin.png", UriKind.Relative));
+            image.Height = 100;
+            image.Width = 100;
+            annotations.AnnotationSymbol = image;
+            shapeFileLayer.Annotations.Add(annotations);
+
+            MapAnnotations annotations1 = new MapAnnotations();
+            annotations1.Latitude = 40;
+            annotations1.Longitude = -98;
+            annotations1.AnnotationLabel = "USA";
+            image = new Image();
+            image.Source = new BitmapImage(new Uri(@"/Assets/pin.png", UriKind.Relative));
+            image.Height = 100;
+            image.Width = 100;
+            annotations1.AnnotationSymbol = image;
+            shapeFileLayer.Annotations.Add(annotations1);
+            map.Layers.Add(shapeFileLayer);
+            grid.Children.Add(map);
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![Maps Annotation with Positioning](Annotations_images/Annotations_img2.png)
