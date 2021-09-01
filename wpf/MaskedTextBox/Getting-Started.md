@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains how to create a WPF [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) and explains about its structure and features.
+This section explains how to create a WPF [MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) and explains about its structure and features.
 
 ## Control Structure
 
@@ -284,3 +284,5 @@ SfMaskedEdit supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Applying Theme to WPF MaskedEdit](Getting-Started_images/wpf-maskededit-theme.png)
+  
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/Themes) in GitHub
