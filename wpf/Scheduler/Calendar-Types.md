@@ -28,10 +28,10 @@ The scheduler control supports the different types of calendars such as Gregoria
 * TaiwanCalendar
 * ThaiCalendar
 * UmAlQuraCalendar
-* PersianCalendar
-* JulianCalendar</td>
+* PersianCalendar </td>
 <td>
 
+* JulianCalendar
 * JapaneseCalendar
 * Lunar type calendars
 </td>
