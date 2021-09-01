@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Carousel
 
-This section explains how to create a WPF [Carousel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.Carousel.html) and explains about its structure.
+This section explains how to create a WPF [Carousel](https://www.syncfusion.com/wpf-controls/carousel) and explains about its structure.
 
 ## Structure of Carousel
 
@@ -23,7 +23,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF Carousel via designer
 
-1) The [Carousel](https://www.syncfusion.com/wpf-controls/carousel) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1) The WPF `Carousel` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.WPF
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with WPF Calculator (SfCalculator)
-This section provides a quick overview for working with the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html).
+This section provides a quick overview for working with the WPF [Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control in any application.
@@ -68,7 +68,7 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
     * Syncfusion.SfInput.WPF
     * Syncfusion.Shared.WPF
 
-2. Import [SfCalculator](https://www.syncfusion.com/wpf-controls/calculator) namespace **Syncfusion.Windows.Controls.Input**.
+2. Import SfCalculator namespace **Syncfusion.Windows.Controls.Input**.
 
 3. Create SfCalculator control instance and add it to the window.
 
@@ -142,7 +142,7 @@ sfCalculator.DefaultValue = 30;
 
 ## Theme
 
-[SfCalculator](https://www.syncfusion.com/wpf-controls/calculator) supports various built-in themes. Refer to the below links to apply themes for the SfCalculator,
+The WPF Calculator (SfCalculator) supports various built-in themes. Refer to the below links to apply themes for the SfCalculator,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

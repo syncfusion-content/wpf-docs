@@ -25,7 +25,7 @@ Create new WPF project using Visual Studio. For more [details](https://docs.micr
 
 ### Adding control via Designer
 
-[SfDiagram](https://www.syncfusion.com/wpf-controls/diagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+WPF [Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF Diagram from Designer](Getting-Started_images\wpf-diagram-from-designer.png)
 
@@ -726,7 +726,7 @@ For more information about stencil, please [refer](https://help.syncfusion.com/w
 
 ## Organization layout
 
-[SfDiagram](https://www.syncfusion.com/wpf-controls/diagram) provides support to auto-arrange the nodes in the diagram area that is referred as Layout.
+WPF Diagram (SfDiagram) provides support to auto-arrange the nodes in the diagram area that is referred as Layout.
 
 #### Business object (employee information)
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF NumericUpdown (UpDown)
 
-This section explains how to create WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control and its structure.
+This section explains how to create WPF [NumericUpdown]((https://www.syncfusion.com/wpf-controls/numericupdown)) (UpDown) control and its structure.
 
 ## Structure of UpDown
 
@@ -70,7 +70,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
 ## Adding WPF UpDown control via C#
 
-In order to add the [UpDown](https://www.syncfusion.com/wpf-controls/numericupdown) control manually in C#, do the below steps,
+In order to add the UpDown control manually in C#, do the below steps,
 
 1) Create a new WPF application via Visual Studio.
 
