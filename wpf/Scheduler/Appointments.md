@@ -807,5 +807,3 @@ You can customize the appointment selection border brush by using the `Selection
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
-
-![Selection border brush in WPF Scheduler](appointments_images/SelectionBorderBrush.png)
