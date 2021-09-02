@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Notify Icon
 
-This section provides you an overview of working with WPF [NotifyIcon](https://www.syncfusion.com/wpf-controls/notify-icon) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
+This section provides you an overview of working with [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) for WPF and provides a walkthrough to configure the NotifyIcon control in a real-time scenario.
 
 ## Assembly deployment
 
@@ -30,7 +30,7 @@ Create a new WPF project to show the [NotifyIcon](https://help.syncfusion.com/cr
 
 ## Adding control via designer
 
-The WPF `NotifyIcon` control can be added to the application by dragging it from toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#notifyicon) will be added automatically.
+The `NotifyIcon` control can be added to the application by dragging it from toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#notifyicon) will be added automatically.
 
 ![Adding WPF NotifyIcon control via designer](Getting-Started_images/wpf-notifyicon-designer.png)
 
@@ -179,7 +179,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-
 
 ## Theme
 
-The WPF NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
+NotifyIcon supports various built-in themes. Refer to the below links to apply themes for the NotifyIcon,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
