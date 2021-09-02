@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping in WPF DataGrid (SfDataGrid)
 
-WPF [DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  
 SfDataGrid allows you to group the data in below ways,
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with WPF Calculator (SfCalculator)
-This section provides a quick overview for working with the WPF [Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
+This section provides a quick overview for working with the [WPF Calculator](https://www.syncfusion.com/wpf-controls/calculator) (SfCalculator).
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfcalculator) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control in any application.

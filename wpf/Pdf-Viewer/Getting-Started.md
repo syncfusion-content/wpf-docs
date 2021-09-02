@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Pdf Viewer
 
-This section explains how to create an application that displays a PDF file using the WPF [PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer).
+This section explains how to create an application that displays a PDF file using the [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer).
 
 To get started quickly with WPF PDF Viewer, you can check on this video:
 <style>#WPFPDFViewerVideoTutorial{width : 90% !important; height: 400px !important }</style>

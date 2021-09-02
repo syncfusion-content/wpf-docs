@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Carousel
 
-This section explains how to create a WPF [Carousel](https://www.syncfusion.com/wpf-controls/carousel) and explains about its structure.
+This section explains how to create a [WPF Carousel](https://www.syncfusion.com/wpf-controls/carousel) and explains about its structure.
 
 ## Structure of Carousel
 

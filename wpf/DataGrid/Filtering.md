@@ -11,7 +11,7 @@ Filtering is the process of retrieving the values from the collection which sati
 
 ## Programmatic filtering
   
-The WPF [DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) Filter allows you to filter the data programmatically in below ways,
+The [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) Filter allows you to filter the data programmatically in below ways,
 
 * Through View Predicate
 * Through Column Filter

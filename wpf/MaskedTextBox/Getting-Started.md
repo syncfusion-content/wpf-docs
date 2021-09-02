@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF MaskedTextBox (SfMaskedEdit)
 
-This section explains how to create a WPF [MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) and explains about its structure and features.
+This section explains how to create a [WPF MaskedTextBox](https://www.syncfusion.com/wpf-controls/maskedtextbox) (SfMaskedEdit) and explains about its structure and features.
 
 ## Control Structure
 

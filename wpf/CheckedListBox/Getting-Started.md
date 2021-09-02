@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF CheckedListBox (CheckListBox)
 
-This section explains how to display and select the required items using the WPF [CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
+This section explains how to display and select the required items using the [WPF CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
 
 ## Control Structure
 
