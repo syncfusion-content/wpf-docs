@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF CheckedListBox (CheckListBox)
 
-This section explains how to display and select the required items using the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control.
+This section explains how to display and select the required items using the [WPF CheckListBox](https://www.syncfusion.com/wpf-controls/checkedlistbox) control.
 
 ## Control Structure
 
@@ -32,13 +32,13 @@ In Visual Studio, create a new WPF project to show the features of the [CheckLis
 
 ## Adding control via designer
 
-The [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) will be added automatically.
+The WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#checklistbox) will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/wpf-checklistbox-control-added-by-designer.png)
 
 ## Adding control manually in XAML
 
-To add the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, follow these steps,
+To add the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control manually in XAML, follow these steps,
 
 1.Add the following assembly references to the project.
 
@@ -116,7 +116,7 @@ namespace ComboBox
  
 ## Populating items using CheckListBoxItem
 
-You can add the items inside the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control using the [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
+You can add the items inside the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control using the [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,7 +157,7 @@ this.Content = checkListBox;
 
 ## Populating items by DataBinding
 
-You can populate the items to the [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
+You can populate the items to the WPF [CheckListBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html) control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
 
 1.Create Model and populate it with required properties. Create the ViewModel class and populate ObservableCollection object with the Model objects.
 
@@ -312,3 +312,5 @@ CheckListBox supports various built-in themes. Refer to the below links to apply
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
   ![Setting theme to WPF CheckListBox](Getting-Started_images/wpf-checklistbox-theme.png)
+  
+[View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Themes)
