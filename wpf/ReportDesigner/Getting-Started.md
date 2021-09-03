@@ -11,7 +11,7 @@ documentation: ug
 
 ## Creating Report Designer through Visual Studio
 
-You can create a simple application through the Visual Studio Designer with the Syncfusion WPF Report Designer control by using the following steps.
+You can create a simple application through the Visual Studio Designer with the Syncfusion [WPF Report Designer](https://www.syncfusion.com/wpf-controls/report-designer) control by using the following steps.
 
 1. Create new WPF application in Visual Studio.
 

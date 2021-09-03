@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in WPF DataGrid (SfDataGrid)
 
-SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,12 +25,12 @@ When you add, remove item in [ObservableCollection](https://docs.microsoft.com/e
 
 ## Binding with IEnumerable
 
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
+WPF DataGrid (SfDataGrid) control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
 
 ## Binding with DataTable
 
-SfDataGrid control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
+WPF DataGrid (SfDataGrid) control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
 
 Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 
@@ -49,7 +49,7 @@ When DataTable is bounded as `SfDataGrid.ItemsSource`, the [DataView.RowFilter](
 
 ## Binding with dynamic data object
 
-SfDataGrid control supports to bind [dynamic data object](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic). Below are the limitations when you are binding dynamic data object,
+WPF DataGrid (SfDataGrid) control supports to bind [dynamic data object](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic). Below are the limitations when you are binding dynamic data object,
 
 1. SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
@@ -134,7 +134,7 @@ The [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/wpf/Syncf
 
 ## View
 
-DataGrid has the View property of type [ICollectionViewAdv](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
+WPF DataGrid has the View property of type [ICollectionViewAdv](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
 
 When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Pdf Viewer
 
-This section explains how to create an application that displays a PDF file using the WPF PDF Viewer.
+This section explains how to create an application that displays a PDF file using the [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer).
 
 To get started quickly with WPF PDF Viewer, you can check on this video:
 <style>#WPFPDFViewerVideoTutorial{width : 90% !important; height: 400px !important }</style>
@@ -187,7 +187,7 @@ N> Alternatively, the Open button in the toolbar can also be used to load and di
 
 ## Theme
 
-PdfViewerControl supports various built-in themes. Refer to the below links to apply themes for the PdfViewerControl,
+The WPF PdfViewer Control supports various built-in themes. Refer to the below links to apply themes for the PdfViewerControl,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
