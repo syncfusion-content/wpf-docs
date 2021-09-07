@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF DataGrid (SfDataGrid)
 
-WPF DataGrid control allows you to search the data displayed in the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid). You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
