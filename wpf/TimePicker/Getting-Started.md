@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF TimePicker (SfTimePicker)
 
-This section explains how to create a WPF [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) and explains about its structure.
+This section explains how to create a [WPF TimePicker](https://www.syncfusion.com/wpf-controls/timepicker) (SfTimePicker) and explains about its structure.
 
 ## Structure of SfTimePicker
 
@@ -25,7 +25,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Add control through designer
 
-The [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The [WPF TimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTimePicker.html) (SfTimePicker) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
@@ -229,7 +229,7 @@ N> Refer [Localization](https://help.syncfusion.com/wpf/localization) page to kn
 
 ## Theme
 
-SfTimePicker supports various built-in themes. Refer to the below links to apply themes for the SfTimePicker,
+WPF TimePicker (SfTimePicker) supports various built-in themes. Refer to the below links to apply themes for the SfTimePicker,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
