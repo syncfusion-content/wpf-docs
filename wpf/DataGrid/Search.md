@@ -9,7 +9,7 @@ documentation: ug
 
 # Search in WPF DataGrid (SfDataGrid)
 
-DataGrid control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_Search_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ this.dataGrid.SearchHelper.AllowCaseSensitiveSearch = true;
 
 ### Changing Search Highlight Background
 
-In SfDatagrid, you can change the search text highlighting color by setting [SearchHelper.SearchBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchBrush) property. 
+In WPF DataGrid (SfDatagrid), you can change the search text highlighting color by setting [SearchHelper.SearchBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchBrush) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 
 ### Changing foreground for search highlight
 
-In SfDatagrid, you can change the foreground color for search text by setting the [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchForegroundBrush) property. 
+In WPF DataGrid (SfDatagrid), you can change the foreground color for search text by setting the [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html#Syncfusion_UI_Xaml_Grid_SearchHelper_SearchForegroundBrush) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ N> It is not possible to Navigate with the two DataGrid at a time.
 
 ## Search customization
 
-SfDataGrid process the search operations in [SearchHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
+WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
 
 {% tabs %}
 {% highlight c# %}
