@@ -103,6 +103,88 @@ chart.Save("Chart.png");
 
 {% endhighlight  %}
 
+### Export SfChart to image without rendering in UI using MVVM pattern
+
+You can export the chart to image without rendering in UI using MVVM pattern with the help of Button and initialize Command property. The following code snippet demonstrates this.
+
+{% highlight xaml %}
+
+ <Button Content="SfChartToImage" Command="{Binding LoadImageCommand}"  />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public class CommandHandler : ICommand
+{    
+    readonly Action<object> _execute;
+    readonly Predicate<object> _canExecute;
+
+    public CommandHandler(Action<object> execute)
+        : this(execute, null)
+    {
+    }
+
+    public CommandHandler(Action<object> execute, Predicate<object> canExecute)
+    {
+        if (execute == null)
+            throw new ArgumentNullException("execute");
+
+        _execute = execute;
+        _canExecute = canExecute;
+    }
+          
+    /// <summary>
+    /// Defines if the current command can be executed or not
+    /// </summary>
+    public bool CanExecute(object parameter)
+    {
+        return _canExecute == null || _canExecute(parameter);
+    }
+
+    public event EventHandler CanExecuteChanged
+    {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
+
+    public void Execute(object parameter)
+    {
+        _execute(parameter);
+    }      
+}
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public class ViewModel 
+{
+    ICommand _loadImageCommand;
+    public ICommand LoadImageCommand
+    {
+        get
+        {
+            if (_loadImageCommand == null)
+            {
+                _loadImageCommand = new CommandHandler(param => LoadImage());
+            }
+            return _loadImageCommand;
+        }
+    }
+
+    private void LoadImage()
+    {
+        SfChart sfChart = new SfChart();
+        ...  
+
+        string filePath = System.IO.Path.GetFullPath(@"../../Output/Chart.png");
+        sfChart.Save(filePath);
+    }
+}
+
+{% endhighlight  %}
+
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
