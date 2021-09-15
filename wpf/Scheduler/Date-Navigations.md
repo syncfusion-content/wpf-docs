@@ -172,3 +172,5 @@ this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/AllowedViews)
