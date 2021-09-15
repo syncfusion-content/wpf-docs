@@ -59,3 +59,5 @@ You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `Bla
 * A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
 
 * `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and scheduler will handle that DateTime.
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)

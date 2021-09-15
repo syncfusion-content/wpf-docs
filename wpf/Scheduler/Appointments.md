@@ -807,3 +807,5 @@ You can customize the appointment selection border brush by using the `Selection
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/AppointmentSelectionBorderBrush)
