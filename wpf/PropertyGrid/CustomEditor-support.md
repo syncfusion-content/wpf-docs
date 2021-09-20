@@ -220,7 +220,7 @@ Here, `EmailID` property value editor changed from `TextBox` to  `MaskedEdit` co
 
 We can assign the `CustomEditor` to any particular property and to multiple properties using the `CustomEditorCollection`. 
 
-### Assigning a Custom Editor to the specific property
+## Assigning a Custom Editor to the specific property
 
 If we want to apply custom editor for any particular property, we need to create the `CustomEditor` instance, assign our own editor to the `CustomEditor.Editor` and add the property name to the `CustomEditor.Properties` collection. Then, add the `CustomEditor` instance to the `PropertyGrid.CustomEditorCollection`.
 

@@ -792,3 +792,20 @@ The default appearance of schedule appointment can be customized in all the view
 ![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization).
+
+### Appointment selection border brush
+You can customize the appointment selection border brush by using the `SelectionBorderBrush` property in the `AppointmentControl.` If the `AppointmentControl` has default style, the appointment selection border color will be updated based on the selected appointment background color.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <Style TargetType="syncfusion:AppointmentControl">
+        <Setter Property="BorderBrush" Value="Blue" />
+        <Setter Property="SelectionBorderBrush" Value="Red"/>
+        <Setter Property="BorderThickness" Value="2"/>
+    </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/AppointmentSelectionBorderBrush)
