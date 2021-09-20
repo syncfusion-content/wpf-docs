@@ -274,5 +274,43 @@ namespace PdfViewer
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing Paper source in Silent Printing
+
+We can customize `PaperSource` in silent printing by changing the `PaperSource` property in `PageSettings` and pass it as a parameter with printer name to the `Print` API. 
+Note: The sample requires the `System.Drawing` assembly to change the paper source. 
+
+Example
+
+The following code example illustrates to set `PaperSource` for Your printer. Pass the required `PaperSource` value which you need in the `PageSettings`. 
+
+{% tabs %}
+{% highlight c# %}
+
+PrinterSettings printerSettings = new PrinterSettings(); 
+PageSettings pageSettings = new PageSettings();
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+
+ //Enter Your Printer’s Name
+ printerSettings.PrinterName = "XXXXX";
+
+ //Changes the papersource in pagesettings
+ pageSettings.PaperSource = printerSettings.PaperSources[3];
+
+ //Prints the PDF with required papersource
+ pdfviewer.Print(printerSettings.PrinterName, pageSettings);
+ 
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+
+
+{% endhighlight %}
+{% endtabs %}
+
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
