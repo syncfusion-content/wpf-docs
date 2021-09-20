@@ -72,7 +72,7 @@ pdfViewer.ZoomMode = ZoomMode.FitWidth;
 
 The default minimum and maximum zoom percentage of the PDF Viewer is 50 and 400 respectively. However, the PDF Viewer allows you to customize the minimum and maximum zoom percentage values based on your requirement.
 
-You can customize the minimum zoom percentage of the PDF viewer using the [MininimumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MinimumZoomPercentage) property. Its default value is 50. Refer to the following code to set the property and apply the customized minimum zoom percent to the PDF Viewer
+You can customize the minimum zoom percentage of the PDF viewer using the [MinimumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MinimumZoomPercentage) property. Its default value is 50. Refer to the following code to set the property and apply the customized minimum zoom percent to the PDF Viewer
 
 N> The allowed value of this property ranges from 10 to the value of the [MaximumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MaximumZoomPercentage) of PDF Viewer.
 
