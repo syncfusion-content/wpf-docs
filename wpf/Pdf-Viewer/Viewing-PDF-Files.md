@@ -114,7 +114,7 @@ namespace PdfViewerDemo
         {
             InitializeComponent();
 
-            //Load PDF file using the` ItemSource` property.
+            //Load PDF file using the `ItemSource` property.
             pdfViewer.ItemSource = @"HTTP Succinctly.pdf";
         }
         #endregion
@@ -125,14 +125,14 @@ namespace PdfViewerDemo
 
 {% tabs %}
 {% highlight c# %}
-//Load PDF file as Stream using the` ItemSource` property.
+//Load PDF file as Stream using the `ItemSource` property.
 pdfViewer.ItemSource = new FileStream(@"HTTP Succinctly.pdf",FileMode.Open); 
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-//Load PDF file as PdfLoadedDocument object using the` ItemSource` property.
+//Load PDF file as PdfLoadedDocument object using the `ItemSource` property.
 PdfLoadedDocument pdfLoadedDocument = new PdfLoadedDocument(@"HTTP Succinctly.pdf"); 
 pdfViewer.ItemSource = pdfLoadedDocument;  
 {% endhighlight %}
