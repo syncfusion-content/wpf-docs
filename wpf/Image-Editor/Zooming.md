@@ -28,12 +28,13 @@ You can also zoom an image using mouse wheel. Based on the mouse wheel, delta im
 ## Panning
 
 ## With toolbar
+
 Zoomed image can be panned to view the hidden portion. To enable pan, click the pan icon in the top toolbar. This enables the panning operation on the image. When panning is enabled, shapes or text added in the image cannot be resized or repositioned. To resize the shape, enable the Select icon in the toolbar; it will disable the pan operation.
 
 Select and Pan operations work like toggle functions.
 
-## Without toolbar
+## Without toolbar (Programmatically)
 
-You can also pan the zoomed image to view the hidden portion and this can be enabled using the property `EnablePanning`. When panning is enabled, shapes or text added in the image cannot be resized or repositioned. When `EnablePanning` is true, shapes or text added in the image cannot be resized or repositioned. By default, the property is set to false.
+Panning can be enabled using the `EnablePanning` property also instead of enabling it using the toolbar icons. When panning is enabled, shapes or text added to the image cannot be resized or repositioned. When `EnablePanning` is true, shapes or text added in the image cannot be resized or repositioned. By default, the property is set to false.
 
 ![ImageEditor](Images/Panning.png) 
