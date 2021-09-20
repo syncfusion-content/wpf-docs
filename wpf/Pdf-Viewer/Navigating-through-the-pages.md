@@ -15,18 +15,12 @@ PDF Viewer allows you to navigate through the pages of the PDF document using th
 {% highlight C# %}
 
 //Initialize PDF Viewer.
-
 PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
-
-
 //Load the PDF.
-
 pdfViewer1.Load("Sample.pdf");
 
-
 //Navigate to page 2
-
 pdfviewer1.GotoPage(2);
 
 {% endhighlight %}
@@ -34,17 +28,12 @@ pdfviewer1.GotoPage(2);
 {% highlight vbnet %}
 
 'Initialize PDF Viewer.
-
 Private pdfViewer1 As New PdfViewerControl()
 
-
-
 'Load the PDF.
-
 pdfViewer1.Load("Sample.pdf")
 
 'Navigate to page 2
-
 pdfviewer1.GotoPage(2)
 
 {% endhighlight %}
@@ -80,6 +69,5 @@ pdfViewerControl.ScrollTo (160, 400)
 
 {% endhighlight %}
 {% endtabs %}
-
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.

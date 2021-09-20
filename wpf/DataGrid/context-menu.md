@@ -9,7 +9,7 @@ documentation: ug
 
 # Context menu in WPF DataGrid (SfDataGrid)
 
-DataGrid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
 
 The below code example shows the context menu with command bindings.
 

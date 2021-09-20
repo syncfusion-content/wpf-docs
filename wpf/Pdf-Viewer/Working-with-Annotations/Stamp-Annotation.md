@@ -33,6 +33,9 @@ Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Stamp
 End Sub
 
+{% endhighlight %}
+{% endtabs %}
+
 The following image shows the stamp annotation being included in the PDF Document.
 
  ![Stamp annotation](Annotation-images\Stamp-Annotation-1.png)
@@ -238,14 +241,6 @@ You can create and add your custom stamps from the images available on the disk 
 
 {% endhighlight %}
 {% endtabs %}
-
-## Keyboard shortcuts
-
-The below keyboard shortcuts are available to customize the annotation in the PDF document.
-
-*	Delete key – Deletes the selected annotation from the PDF document.
-*	Ctrl + Z – Performs undo functionality for recently performed operations.
-*	Ctrl + Y – Performs redo functionality for recently performed operations.
 
 ## Events
 

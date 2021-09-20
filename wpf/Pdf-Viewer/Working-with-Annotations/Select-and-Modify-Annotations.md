@@ -90,7 +90,7 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 {% endhighlight %}
 {% endtabs %}
 
-N>The annotation name must be unique. If there are multiple annotations with the same name in the document, any functions based on the name will only affect the first one identified. 
+N> The annotation name must be unique. If there are multiple annotations with the same name in the document, any functions based on the name will only affect the first one identified. 
 
 
 #### Getting annotation’s name for existing annotation

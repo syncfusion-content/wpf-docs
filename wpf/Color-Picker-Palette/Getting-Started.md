@@ -234,7 +234,7 @@ Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palet
 
 ##  Recently used color items
 
-The recently selected color items are displayed in the RecentlyUsedPanel. If we want to choose a color which are previously selected, use the RecentlyUsedPanel.
+The recently selected color items are displayed in the [RecentlyUsedPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html#Syncfusion_Windows_Tools_Controls_ColorPickerPalette_RecentlyUsedPanelVisibility). If we want to choose a color which are previously selected, use the RecentlyUsedPanel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,7 +310,7 @@ N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-col
 
 ## Selected brush or color changed notification
 
-The selected brush or color changed in `ColorPickerPalette` can be examined using `SelectedBrushChanged` event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties.
+The selected brush or color changed in `ColorPickerPalette` can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) event. The `SelectedBrushChangedEventArgs` contains the old and newly selected brush and its color values in the `OldBrush`,`NewBrush` and `OldColor`, `NewColor` properties.
 
 {% tabs %}
 {% highlight xaml %}

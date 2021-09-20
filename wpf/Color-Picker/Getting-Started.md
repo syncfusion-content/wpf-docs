@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF color picker (ColorPicker)
 
-This section explains how to create a WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ColorPicker.html) and explains about its structure and features.
+This section explains how to create a WPF [ColorPicker](https://www.syncfusion.com/wpf-controls/colorpicker) and explains about its structure and features.
 
 ## Structure of ColorPicker
 

@@ -56,22 +56,48 @@ You can apply the data in surface in two ways.
 
 ### Using ItemsSource
 
-You can bind the IEnumerable collection property to surface chart ItemsSource property. Each item holds the model properties used to map surface XBindingPath, YBindingPath and ZBindingPath property. 
+You can bind the IEnumerable collection property to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ItemsSource) property of a surface chart. Each item holds the model properties that are used to map surface [`XBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_XBindingPath), [`YBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_YBindingPath) and [`ZBindingPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ZBindingPath) property. 
 
-Also you must set the given data row and column size to surface chart RowSize and ColumnSize Property. 
+Also, you must set the given data row and column size to surface chart [`RowSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_RowSize) and [`ColumnSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ColumnSize) Properties. 
 
 {% tabs %}
 
+{% highlight xaml %}
+
+    <Grid.DataContext>
+     <local:ViewModel />	 
+    </Grid.DataContext>
+
+         <chart:SfSurfaceChart ItemsSource="{Binding DataValue}"  XBindingPath="X"  
+                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
+                              ColumnSize="{Binding ColumnSize}">
+        </chart:SfSurfaceChart>    
+
+{% endhighlight %}
+`
 {% highlight c# %}
 
-public class Data
+            SfSurfaceChart chart = new SfSurfaceChart();
+            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValue");
+            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+            chart.XBindingPath = "X";
+            chart.YBindingPath = "Y";
+            chart.ZBindingPath = "Z";
+            ChartColorBar colorBar = new ChartColorBar();
+            colorBar.DockPosition = ChartDock.Right;
+            colorBar.ShowLabel = true;
+            chart.ColorBar = colorBar;
+            grid.Children.Add(chart);
+
+    public class Data
     {
         public double X { get; set; }
         public double Y { get; set; }
         public double Z { get; set; }
     }
 
-public class ViewModel
+    public class ViewModel
     {
         
         public ViewModel()
@@ -92,43 +118,31 @@ public class ViewModel
         public int RowSize = 20;
         public int ColumnSize = 20;
     }
-
-
 {% endhighlight %}
-
-{% highlight xaml %}
-
-<Grid.DataContext>
-
-     <local:ViewModel />
-	 
-</Grid.DataContext>
-
-<chart:SfSurfaceChart  ItemsSource="{Binding DataValue}"   XBindingPath="X" YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}" ColumnSize="{Binding ColumnSize}" />
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ### Using Data.AddPoints method
 
-In this we can directly pass the data points to Data property **AddPoints****(****x****,****y****,****z****)** method. Here we no need to create items source and its member path. But we need to specify provided data rows and column size. 
+In this, you can directly pass the data points to the [`Data`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_Data) property [`AddPoints(x,y,z)`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DataPointCollection.html#Syncfusion_UI_Xaml_Charts_DataPointCollection_AddPoints_System_Double_System_Double_System_Double_) method. Here, you no need to create items source and its member path. But, you need to specify provided data rows and column size.
 
 {% tabs %}
+
+{% highlight xaml %}
+
+    <chart:SfSurfaceChart  x:Name="surface" />
+	
+{% endhighlight %}
 
 {% highlight c# %}
 
 public MainWindow()
-
 {
 	InitializeComponent();
 	
-	SetData();
-	
+	SetData();	
  }
 	 
 private void SetData()
-
 {
 
 for (double x = -10; x < 10; x++) 
@@ -152,12 +166,6 @@ for (double x = -10; x < 10; x++)
  
 }
 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-<chart:SfSurfaceChart  x:Name="surface" />
-	
 {% endhighlight %}
 
 {% endtabs %}
