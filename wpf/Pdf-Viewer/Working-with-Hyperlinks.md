@@ -34,13 +34,13 @@ HyperlinkClickedEventArgs</td></tr>
 
 ## How to disable hyperlink navigation in PDF viewer control?
 
-We can disable the hyperlink navigation in PDF viewer control by setting the value of `Handled` in the `HyperlinkClickedEventArgs` parameter as true in the `HyperlinkClicked` Event which is available in the PdfViewerControl and PdfDocumentView class. 
+We can disable the hyperlink navigation in PDF viewer control by setting the value of `Handled` in the `HyperlinkClickedEventArgs` parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
 Please refer the below example for more details.
 
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `HyperlinkClicked` event.    
+// Wires the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void Pdfviewer_HyperlinkClicked(object sender, Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs args)
@@ -86,13 +86,13 @@ RemoveHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkCl
 
 ## How to retrieve the clicked URI from PDF viewer?
 
-We can acquire the details of the hyperlink which is clicked in the PDF file using the `HyperlinkClickedEventArgs` in the `HyperlinkClicked` event. 
+We can acquire the details of the hyperlink which is clicked in the PDF file using the `HyperlinkClickedEventArgs` in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event. 
 Please refer the below example for more details.
 
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `HyperlinkClicked` event.    
+// Wires the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void Pdfviewer_HyperlinkClicked(object sender, Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs args)
@@ -130,7 +130,7 @@ Please refer the below example for more details.
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `HyperlinkClicked` event.    
+// Wires the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void Pdfviewer_HyperlinkClicked(object sender, Syncfusion.Windows.PdfViewer.HyperlinkClickedEventArgs args)
@@ -172,7 +172,7 @@ End Sub
 {% tabs %}
 {% highlight c# %}
 
-// Hooks the event handler for `HyperlinkMouseOver` event.    
+// Wires the event handler for `HyperlinkMouseOver` event.    
 pdfViewerControl.HyperlinkMouseOver += PdfViewerControl_HyperlinkMouseOver;
 
 private void Pdfviewer_HyperlinkMouseOver(object sender, EventArgs args)

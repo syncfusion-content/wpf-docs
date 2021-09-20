@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# How to lock an annotation in WPF pdf viewer?
+# Locking annotations in WPF PDF Viewer
 
 PDF Viewer provides a support to enable or disable lock option for the annotation in a pdf document. When an annotation is locked, it cannot be moved, resize, removed.
 
@@ -51,12 +51,12 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ### Annotation changed event
 
-We can lock an annotation by setting the value of `IsLocked` in the annotation changed event as true. The following code snippet illustrates locking sticky note annotation by annotation changed event while adding an annotation.
+To lock an annotation by annotation changed event, set the value of `IsLocked` in the annotation changed event as true. The following code snippet illustrates locking sticky note annotation by annotation changed event while adding an annotation.
 
 {% tabs %}
 {% highlight C# %}
 
-//Hooks the event handler for ` StickyNoteAnnotationChanged` event 
+//Wires the event handler for ` StickyNoteAnnotationChanged` event 
 pdfviewer.StickyNoteAnnotationChanged += Pdfviewer_StickyNoteAnnotationChanged;
 
 private void Pdfviewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnnotationChangedEventArgs e)
@@ -65,7 +65,7 @@ private void Pdfviewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
   if (e.Action == AnnotationChangedAction.Add)
    {
 
-    //Sets the value of the locked check box
+    //Sets the value to lock the annotation
     e.Settings.IsLocked = true;
 
    }
