@@ -13,11 +13,11 @@ The WPF PDF Viewer has predefined set of zoom tools in the built-in toolbar, tha
 
 ![Zoom tools of WPF PDF Viewer](images/zoom tools.png)
 
-1.	Combo box: It allows you to select a zoom percentage from the pre-defined set of values listed in the dropdown. Since it is editable, you can also provide your own zoom values by double editing the text area.
-2.	Zoom out button: It allows you to reduce the zoom value 25% from the current zoom percentage.
-3.	Zoom in button: It allows you to increase the zoom value 25% from the current zoom percentage.
-4.	Fit to width button: It allows you to fit the document to the width of the control.
-5.	Fit to page button: It allows you to fit a whole page in the window and to view only one page at a time.
+1.	**Combo box**: It allows you to select a zoom percentage from the pre-defined set of values listed in the dropdown. Since it is editable, you can also provide your own zoom values by double editing the text area.
+2.	**Zoom out button**: It allows you to reduce the zoom value 25% from the current zoom percentage.
+3.	**Zoom in button**: It allows you to increase the zoom value 25% from the current zoom percentage.
+4.	**Fit to width button**: It allows you to fit the document to the width of the control.
+5.	**Fit to page button**: It allows you to fit a whole page in the window and to view only one page at a time.
 
 ## Hide the zoom tools in the toolbar
 
