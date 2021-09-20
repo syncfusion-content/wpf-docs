@@ -1382,13 +1382,66 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ## Events
 
+### Pointer position changed 
+
+When the pointer position changes, this event is raised. Event arguments contain the following properties:
+
+[`PointerValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.PointerPosition.html#Syncfusion_UI_Xaml_Gauges_PointerPosition_PointerValue) - Denotes the pointer value.
+[`PointerValuePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.PointerPosition.html#Syncfusion_UI_Xaml_Gauges_PointerPosition_PointerValuePosition) - Denotes the position of the pointer value.
+[`RangePointerStartPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.PointerPosition.html#Syncfusion_UI_Xaml_Gauges_PointerPosition_RangePointerStartPosition) - Denotes the position of the range start value.
+[`RangeStartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.PointerPosition.html#Syncfusion_UI_Xaml_Gauges_PointerPosition_RangeStartValue) - Denotes the range start value.
+
+{% tabs %}
+{% highlight xaml %}
+
+     <gauge:SfCircularGauge>
+
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                  
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer EnableDragging="True" 
+                                               PointerPositionChanged="CircularPointer_PointerPositionChanged"
+                                               Value="70"  RangeStart="40" 
+                                               PointerType="RangePointer" />
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+{% highlight C# %}
+
+        SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.EnableDragging = true;
+            circularPointer.Value = 70;
+            circularPointer.RangeStart = 40;
+            circularPointer.PointerType = PointerType.RangePointer;
+            circularPointer.PointerPositionChanged += CircularPointer_PointerPositionChanged;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+            this.Content = sfCircularGauge;
+
+  private void CircularPointer_PointerPositionChanged(object sender, PointerPosition pointerPosition)
+        {
+            var pointerValue = pointerPosition.PointerValue;
+            var pointerValuePos = pointerPosition.PointerValuePosition;
+            var rangePointerPos = pointerPosition.RangePointerStartPosition;
+            var rangeStartValue = pointerPosition.RangeStartValue;            
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Value change started
 
 Called when the user starts updating a new value of pointer by initiating the dragging. While dragging the pointer, other events ([`ValueChanging`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanging), [`ValueChanged`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanged) and [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted))) will be followed after this event.
 
 The [`ValueChangeStarted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeStarted) event contains the following arguments.
 
-`Value` : This value will be the last value the pointer had before the changes began.
+[`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value) : This will be the pointers' last value before the changes began.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1426,9 +1479,9 @@ The [`ValueChangeStarted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
 ### Value changing event
 
 Called during a drag when the user is updating before a new value for the pointer by dragging. The [`ValueChangingEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html) contains [`OldValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_OldValue), [`NewValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_NewValue), and [`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangingEventArgs_Cancel) properties.
-`OldValue`: Contains pointer old value.
-`NewValue`: Contains pointer new value.
-`Cancel`: To restrict the update of current drag pointer value, set `ValueChangingArgs.cancel` is true.
+[`OldValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value): Contains pointer old value.
+[`NewValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value): Contains pointer new value.
+[`Cancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value): To restrict the update of the current drag pointer value, set `ValueChangingArgs.Cancel` is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1482,7 +1535,7 @@ Called during a drag when the user is updating before a new value for the pointe
 ### Value changed event
 
 Called during a drag when the user is updating a new value for the pointer by dragging. The [`ValueChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html) contains [`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value) property.
-`Value` : Contains drag pointer value.
+[`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value) : Contains the drag pointer value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1531,7 +1584,7 @@ This event will notify the completion of dragging with a new value being updated
 
 The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted) event contains the following arguments.
 
-`Value` : This value will be the new updated pointer value after dragging.
+[`Value`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.ValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_ValueChangedEventArgs_Value) : After dragging, this value will be the new updated pointer value.
 
 {% tabs %}
 {% highlight xaml %}

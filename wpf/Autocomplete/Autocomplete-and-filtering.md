@@ -264,6 +264,103 @@ textBoxExt.SuggestionMode = SuggestionMode.Contains;
 
 ![Contains](AutoComplete_and_filtering_images/Contains.png)
 
+### Custom
+
+Filter items in the suggestion list based on the users' custom search. This will help you to apply our typo toleration functionality to the control.
+
+![custom filter](AutoComplete_and_filtering_images/Custom.png)
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Window x:Class="AutoCompleteWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteWPF" 
+        xmlns:editors="http://schemas.syncfusion.com/wpf" xmlns:ListCollection="http://schemas.microsoft.com/netfx/2009/xaml/presentation" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <editors:SfTextBoxExt x:Name="autoComplete" 
+                               Width="300"
+                               Height="40"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               AutoCompleteMode="Suggest"
+                               SuggestionMode="Custom">
+            <editors:SfTextBoxExt.AutoCompleteSource>
+                <x:Array Type="{x:Type sys:String}">
+                    <sys:String>Albania</sys:String>
+                    <sys:String>Algeria</sys:String>
+                    <sys:String>American Samoa</sys:String>
+                    <sys:String>Andorra</sys:String>
+                    <sys:String>Angola</sys:String>
+                    <sys:String>Anguilla</sys:String>
+                </x:Array>
+            </editors:SfTextBoxExt.AutoCompleteSource>
+        </editors:SfTextBoxExt>
+    </StackPanel>
+</Window>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    using System;
+    using System.Windows;
+
+    namespace AutoCompleteWPF
+    {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            autoComplete.Filter = ContainingSpaceFilter;
+        }
+
+         public bool ContainingSpaceFilter(string search, object item)
+        {
+            string text = item.ToString().ToLower();
+            if (item != null)
+            {
+                try
+                {
+                    var split = search.Split(' ');
+                    foreach (var results in split)
+                    {
+                        if (!text.Contains(results.ToLower()))
+                        {
+                            return true; 
+                        }
+                        else
+                            return false;
+                    }
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return (text.Contains(search));
+                }
+            }
+            else
+                return false;
+        }
+    }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Prefix characters constraint
 
 Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_MinimumPrefixCharacters) property. By default the constraint is  set for each character entry.

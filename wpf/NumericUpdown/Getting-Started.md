@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with WPF NumericUpdown (UpDown)
 
-This section explains how to create WPF UpDown control and its structure.
+This section explains how to create [WPF NumericUpdown](https://www.syncfusion.com/wpf-controls/numericupdown) (UpDown) control and its structure.
 
 ## Structure of UpDown
 

@@ -84,7 +84,7 @@ The following code example illustrates how to insert hyperlink field into SfRich
 
 In RichTextBox control ToolTip (ScreenTip) shows some information or navigation link, when the mouse hovers over that hyperlink and it disappears when the mouse is moved away from that hyperlink. By default, it shows navigation link of that hyperlink and you can set the text you want to use for your ScreenTip.
 
-<table><tr><td>Without ScreenTipText</td><td>With ScreenTipText</td></tr><tr><td><img src="Hyperlink_images/screentip_ug1.PNG"/></td><td><img src="Hyperlink_images/screentip_ug2.PNG"/></td></tr></table>
+<table><tr><td>Without ScreenTipText</td><td>With ScreenTipText</td></tr><tr><td><img src="Hyperlink_images/screentip_ug1.PNG" alt="Hyperlink_images1"/></td><td><img src="Hyperlink_images/screentip_ug2.PNG" alt="Hyperlink_images2"/></td></tr></table>
 
 The following code example illustrates how to insert a hyperlink field with ScreenTip.
 {% tabs %}

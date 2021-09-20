@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling and Appearance in WPF Range Slider (SfRangeSlider)
 
-[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider.html) makes it possible to change the appearance by providing certain properties.
+[SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html) makes it possible to change the appearance by providing certain properties.
 
 ## InactiveTrackStyle
 
@@ -673,7 +673,7 @@ Use the [MinorTickStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 ### Value label customization
 
-Customize the value label using the `TickBarItem` style.
+Customize the value label using the [TickBarItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.TickBarItem.html) style.
 
 {% tabs %}
 

@@ -568,7 +568,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 ## Selected item changed notification
 
-You will be notified when selected card item changed in `CardView` by using [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItemChanged) event. The `SelectedItemChanged` event contains the old and newly selected card item in the `OldValue` and `NewValue` properties.
+You will be notified when selected card item changed in [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html) by using [SelectedItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CardView.html#Syncfusion_Windows_Tools_Controls_CardView_SelectedItemChanged) event. The `SelectedItemChanged` event contains the old and newly selected card item in the `OldValue` and `NewValue` properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -607,5 +607,7 @@ CardView supports various built-in themes. Refer to the below links to apply the
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
+  
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Themes)
 
   ![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
