@@ -304,12 +304,6 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
-{% highlight vbnet %}
-
-
-
-{% endhighlight %}
 {% endtabs %}
 
 
