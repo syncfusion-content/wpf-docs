@@ -59,8 +59,8 @@ Similarly, we can implement it for all other annotations.
 
 Annotation’s name can be obtained either for newly added annotation or the annotation which already exist. In the following sections, the ink annotation was explained brevity and similarly, we can obtain names for all other annotations.
 
-#### Getting annotation’s name while adding annotation
-Added annotation’s name can be obtained from respective annotation changed event. The following code snippet explains how to get the annotation’s name while adding the annotation to the document.
+####  Get and Set annotation name
+The annotation’s name can be obtained from the annotation changed event. The following code snippet explains how to get the annotation’s name while adding the annotation to the document.
 
 {% tabs %}
 {% highlight C# %}
@@ -76,6 +76,21 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 {% endhighlight %}
 {% endtabs %}
+
+We can also change the name of an annotation. The code snippet below demonstrates how to change the name of an ink annotation. Similarly, we can implement it for all other annotations. 
+{% tabs %}
+{% highlight C# %}
+
+//Set the annotation name 
+private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e) 
+{  
+   e.Name = ”ink_annotation_1”;     
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The annotation name must be unique. If there are multiple annotations with the same name in the document, any functions based on the name will only affect the first one identified. 
 
 
 #### Getting annotation’s name for existing annotation

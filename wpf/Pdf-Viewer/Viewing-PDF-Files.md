@@ -96,7 +96,7 @@ namespace PdfViewerDemo
 
 ## View PDF file using the ItemSource property
 
-You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts the string file path as well as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN&view=netcore-3.1).
+You can also view a PDF file using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource). The property accepts the string file path, [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) and [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ namespace PdfViewerDemo
         {
             InitializeComponent();
 
-            //Load PDF file using the` ItemSource` property.
+            //Load PDF file using the `ItemSource` property.
             pdfViewer.ItemSource = @"HTTP Succinctly.pdf";
         }
         #endregion
@@ -122,6 +122,22 @@ namespace PdfViewerDemo
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+//Load PDF file as Stream using the `ItemSource` property.
+pdfViewer.ItemSource = new FileStream(@"HTTP Succinctly.pdf",FileMode.Open); 
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+//Load PDF file as PdfLoadedDocument object using the `ItemSource` property.
+PdfLoadedDocument pdfLoadedDocument = new PdfLoadedDocument(@"HTTP Succinctly.pdf"); 
+pdfViewer.ItemSource = pdfLoadedDocument;  
+{% endhighlight %}
+{% endtabs %}
+
 
 ## View PDF files without using the toolbar
 
