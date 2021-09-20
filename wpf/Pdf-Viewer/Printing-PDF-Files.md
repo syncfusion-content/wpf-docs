@@ -277,7 +277,8 @@ namespace PdfViewer
 ## Customizing Paper source in Silent Printing
 
 We can customize `PaperSource` in silent printing by changing the `PaperSource` property in `PageSettings` and pass it as a parameter with printer name to the `Print` API. 
-Note: The sample requires the `System.Drawing` assembly to change the paper source. 
+
+N> The sample requires the `System.Drawing` assembly to change the paper source. 
 
 Example
 
