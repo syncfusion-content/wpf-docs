@@ -157,7 +157,7 @@ Diagram.ConnectorSelectionIndicatorStyle = this.Resources["connectorselectionind
 
 ### Selector handle display mode
 
-Diagram control provides support to change the selection handle dislay mode of the Node, Connector, and Group by using `SelectorHandleDisplayMode` property.
+Diagram control provides support to change the selection handle display mode of the Node, Connector, and Group by using `SelectorHandleDisplayMode` property.
 
 |SelectorHandleDisplayMode|Description| Output|
 |--|--|--|

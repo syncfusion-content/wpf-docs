@@ -1,24 +1,24 @@
 ---
 layout: post
 title: Support to restrict dragging at negative axis | Syncfusion.
-description: How to restrict Node, Connectors, Groups, Symbols dragging at negative axis during runtime?
+description: How to restrict diagra control objects of Node, Connectors, Groups, Symbols dragging at negative axis during runtime?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-## Restrict objects dragging at negative axis in WPF Diagram (SfDiagram)
+# Restrict objects dragging at negative axis in WPF Diagram (SfDiagram)
 
 SfDiagram provides support to restrict objects dragging behind the negative axis. It can be achieved by enabling 'RestrictNegativeAxisDragDrop' enum of [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) property. Diagram elements of Node, Connector, Connector end thumbs, Groups, Swim lane objects, stencil symbols can be restricted to dragging when drag enter into negative region when 'RestrictNegativeAxisDragDrop' is enabled.
 
 ![Find and position the node without overlapping](Drag_images/RestrictDragObjects.gif)
 
-While dragging diagram elements and auto-scrolling is running, auto-scrolling will be stopped atomatically when element drag enter into negative region.
+While dragging diagram elements and auto-scrolling is running, auto-scrolling will be stopped automatically when element drag enter into negative region.
 
-If object is placed at negative region and 'RestrictNegativeAxisDragDrop' enabled, then element can be drag from negative to positve region. Once object dragged into positive region, then element can't drag into negative region. 
+If object is placed at negative region and 'RestrictNegativeAxisDragDrop' enabled, then element can be drag from negative to positive region. Once object dragged into positive region, then element can't drag into negative region. 
 
 ![Find and position the node without overlapping](Drag_images/RestrictDragToPositive.gif)
 
-While symbol is dragging from stencil control, it will be added into diagram page once entire symbl is placed at positive region. 
+While symbol is dragging from stencil control, it will be added into diagram page once entire symbol is placed at positive region. 
 
 {% tabs %}
 {% highlight xaml %}
