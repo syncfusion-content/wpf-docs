@@ -574,3 +574,77 @@ Since we have assigned the custom editor for property type **long(Int64)**, the 
 
 ![ConstructorParameter passed in CustomEditor](CustomEditor-support_images/propertygrid-wpf-constructor-with-parameter-customeditor.png)
 
+## Create custom editor control for the property item
+The [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid) control allows users to create their editor controls using the [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class and [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyGrid.html#Syncfusion_Windows_PropertyGrid_PropertyGrid_CustomEditorCollection) property for property items. The custom editors can be inherited from [ITypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html) and [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interfaces. 
+
+The [`Create`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Create_System_Reflection_PropertyInfo_) method in the custom editor class can be used to create and return the required editor control for specific property items. The Create method's PropertyInfo parameter allows users to customize the editor control based on the value of PropertyInfo.
+
+{% tabs %}
+{% highlight C# %}
+
+public object Create(PropertyInfo propertyInfo)
+{
+    textBox = new IntegerTextBox();
+    if (propertyInfo.Name == "Age")
+    {
+        textBox.MinValue = 20;
+        textBox.MaxValue = 50;
+    }
+    if (propertyInfo.CanWrite)
+        textBox.ShowSpinButton = true;
+    
+    return textBox;
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![WPF PropertyGrid custom editor Create method](Editor_images/propertygrid_create_method.png)
+
+N> If a [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class is inherited from [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interface, the Create method will have PropertyDescriptor parameter value which can be used as per requirement.
+
+## Attach the custom editor with property item
+The PropertyGrid control allows users to bind the essential properties of the custom editor control with the properties of the property items using the [`Attach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Attach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_Syncfusion_Windows_PropertyGrid_PropertyItem_) method. You can also customise the property items using the [PropertyItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html) and [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) parameter values in the Attach method.
+
+{% tabs %}
+{% highlight C# %}
+
+public void Attach(PropertyViewItem property, PropertyItem info)
+{
+    if (info.CanWrite)
+    {
+        property.FontFamily = new FontFamily("Comic Sans MS");
+        var binding = new Binding("Value")
+        {
+            Mode = BindingMode.TwoWay,
+            Source = info,
+            ValidatesOnExceptions = true,
+            ValidatesOnDataErrors = true
+        };
+        BindingOperations.SetBinding(textBox, IntegerTextBox.ValueProperty, binding);
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![WPF PropertyGrid custom editor Attach method](Editor_images/propertygrid_attach_method.png)
+
+## Dispose the custom editor
+The PropertyGrid control allows you to dispose the custom editor control and it's dependent properties in CustomEditor class by using the [`Detach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Detach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_) method based on the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) paramater value.
+
+{% tabs %}
+{% highlight C# %}
+
+public void Detach(PropertyViewItem property)
+{
+    if (property != null && this.textBox != null)
+    {
+        this.textBox = null;
+        property.Dispose();
+        property = null;
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
