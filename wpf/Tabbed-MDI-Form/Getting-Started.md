@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Tabbed MDI Form (DocumentContainer)
 
-This section describes how to add [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DocumentContainer.html) control into wpf application and its basic functionalities.
+This section describes how to add [WPF Tabbed MDI Form](https://www.syncfusion.com/wpf-controls/tabbed-mdi-form) (DocumentContainer) control into wpf application and its basic functionalities.
 
 ## Assembly deployment
 
