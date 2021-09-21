@@ -166,7 +166,7 @@ End Sub
 
 ## How to get notified when a mouse pointer moves over a hyperlink? 
 
-`HyperlinkMouseOver` event will be raised when we place the mouse pointer over the URI in the PDF viewer control.
+[HyperlinkMouseOver](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.HyperLinkMouseOverEventHandler.html) event will be raised when we place the mouse pointer over the URI in the PDF viewer control.
  Please refer the below example for more details.
 
 {% tabs %}
