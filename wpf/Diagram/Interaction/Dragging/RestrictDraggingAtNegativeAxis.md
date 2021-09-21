@@ -8,13 +8,11 @@ documentation: ug
 ---
 # Restrict objects dragging at negative axis in WPF Diagram (SfDiagram)
 
-SfDiagram provides support to restrict objects dragging behind the negative axis. It can be achieved by enabling 'RestrictNegativeAxisDragDrop' enum of [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) property. Diagram elements of Node, Connector, Connector end thumbs, Groups, Swim lane objects, stencil symbols can be restricted to dragging when drag enter into negative region when 'RestrictNegativeAxisDragDrop' is enabled.
+SfDiagram provides support to restrict diagram elements dragging behind the negative axis. Diagram elements of Node, Connector, Connector end thumbs, Groups, Swim lane objects, stencil symbols can be restricted to dragging when drag enter into negative region when 'RestrictNegativeAxisDragDrop' is enabled.
 
 ![Find and position the node without overlapping](Drag_images/RestrictDragObjects.gif)
 
-While dragging diagram elements and auto-scrolling is running, auto-scrolling will be stopped automatically when element drag enter into negative region.
-
-If object is placed at negative region and 'RestrictNegativeAxisDragDrop' enabled, then element can be drag from negative to positive region. Once object dragged into positive region, then element can't drag into negative region. 
+N> While dragging diagram elements and auto-scrolling is running, auto-scrolling will be stopped automatically when element drag enter into negative region. If object is placed at negative region and 'RestrictNegativeAxisDragDrop' enabled, then element can be drag from negative to positive region. Once object dragged into positive region, then element can't drag into negative region.
 
 ![Find and position the node without overlapping](Drag_images/RestrictDragToPositive.gif)
 
@@ -37,7 +35,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.RestrictNegati
 
 ## Inherit Restrict dragging
 
-Restrict object dragging at negative region behavior can be defined through both the specific object (Node/Connector) and Diagram. When the behaviors are contradictorily defined through both, the actual behavior is set through inherit options.
+Restrict diagram elements dragging at negative region behavior can be defined through both the specific object (Node/Connector) and Diagram. When the behaviors are contradictorily defined through both, the actual behavior is set through inherit options.
 
 The following code example illustrates how to enable restrict object dragging at negative region behavior for Particular or particular connector.
 
