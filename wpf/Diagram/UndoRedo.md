@@ -78,7 +78,7 @@ History of actions that are performed after initializing the diagram are classif
 
 ## Entry mode
 
-`Mode` property of `HistoryEntry` class allows to know where the changed action comes from. The `Mode` property has following type of soures,
+`Mode` property of `HistoryEntry` class allows to know where the changed action comes from. The `Mode` property has following type of sources,
 
 |EntryMode|Description|
 |--|--|
@@ -87,7 +87,7 @@ History of actions that are performed after initializing the diagram are classif
 
 ## Stack limit
 
-`StackLimit` property of `HistoryManager` class allows to specify stack limit value that is used to limit the maximum number of history entries need to stroed in the Undo and Redo stacks.
+`StackLimit` property of `HistoryManager` class allows to specify stack limit value that is used to limit the maximum number of history entries need to stored in the Undo and Redo stacks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +112,7 @@ diagram.HistoryManager = new HistoryManager()
 
 ## Start group action
 
-`BeginComposite()` method of `HistoryManager` class allows to log multiple actions at a time in the histroy manager stack. It is ease a undo or revert the chnags made in the diagram in a single undo/redo process instead of revert evert action one by one. 
+`BeginComposite()` method of `HistoryManager` class allows to log multiple actions at a time in the history manager stack. It is ease a undo or revert the changes made in the diagram in a single undo/redo process instead of revert every actions one by one. 
 
 {% tabs %}
 {% highlight C# %}
@@ -171,7 +171,7 @@ foreach (NodeVm node in ((IEnumerable<object>)(diagram.SelectedItems as Selector
         (node as NodeVm).Fill = new SolidColorBrush(Colors.CornflowerBlue);
     }
 }
-//To stop the group action stroed in the undo/red stack
+//To stop the group action stored in the undo/red stack
 diagram.HistoryManager.EndComposite(diagram.HistoryManager, end);
 
 //Creating custom node view model to update the fill property to nodes
@@ -384,10 +384,10 @@ public class NodeVm : NodeViewModel, IUndoRedo
         }
     }
 }
-//Create the custom SfDaigram class
+//Create the custom SfDiagram class
 public class CustomDiagram: SfDiagram
 {
-    //Overridding the method to avoid actions stored
+    //Overriding the method to avoid actions stored
     protected override bool CanLogHistoryEntry(LogDataArgs item)
     {
         if (item.Item is NodeVm)
