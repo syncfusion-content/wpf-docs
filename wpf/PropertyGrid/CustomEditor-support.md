@@ -604,7 +604,7 @@ public object Create(PropertyInfo propertyInfo)
 N> If a [CustomEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class is inherited from [BaseTypeEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html) interface, the Create method will have PropertyDescriptor parameter value which can be used as per requirement.
 
 ## Attach the custom editor with property item
-The PropertyGrid control allows users to bind the essential properties of the custom editor control with the properties of the property items using the [`Attach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Attach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_Syncfusion_Windows_PropertyGrid_PropertyItem_) method. You can also customise the property items using the [PropertyItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html) and [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) parameter values in the Attach method.
+The PropertyGrid control allows users to bind the essential properties of the custom editor control with the properties of the property items using the [`Attach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Attach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_Syncfusion_Windows_PropertyGrid_PropertyItem_) method. You can also customize the property items using the [PropertyItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyItem.html) and [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) parameter values in the Attach method.
 
 {% tabs %}
 {% highlight C# %}
@@ -631,7 +631,7 @@ public void Attach(PropertyViewItem property, PropertyItem info)
 ![WPF PropertyGrid custom editor Attach method](Editor_images/propertygrid_attach_method.png)
 
 ## Dispose the custom editor
-The PropertyGrid control allows you to dispose the custom editor control and it's dependent properties in CustomEditor class by using the [`Detach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Detach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_) method based on the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) paramater value.
+The PropertyGrid control allows you to dispose the custom editor control and it's dependent properties in CustomEditor class by using the [`Detach`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Detach_Syncfusion_Windows_PropertyGrid_PropertyViewItem_) method based on the [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) parameter value.
 
 {% tabs %}
 {% highlight C# %}
