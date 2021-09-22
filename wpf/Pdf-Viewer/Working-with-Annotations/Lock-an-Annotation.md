@@ -82,7 +82,7 @@ The check box control as “Locked” will be appear in the annotation propertie
 
 The following image shows how to enable lock option for sticky note annotation in UI.
 
-   ![Lock Annotation](Annotation-images\Lock-Annotation-1.png)
+![Lock Annotation](Annotation-images/Lock-Annotation-1.png)
 	 
 N> Similarly, we can set it for all other annotations in UI.
 
