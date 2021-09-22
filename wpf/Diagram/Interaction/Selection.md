@@ -155,6 +155,15 @@ Diagram.ConnectorSelectionIndicatorStyle = this.Resources["connectorselectionind
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Interaction/IndicatorStyle-sample)
 
+### Selector handle display mode
+
+Diagram control provides support to change the selection handle display mode of the Node, Connector, and Group by using `SelectorHandleDisplayMode` property.
+
+|SelectorHandleDisplayMode|Description| Output|
+|--|--|--|
+|Default| It is used to display selection handle display mode as larger size bubbles. |![Default selection handle display mode](Interaction_images/DefaultSelectorHandleDisplayMode.png)|
+|CompactSelector|It is used to display selection handle display mode as compact size rectangle.|![selectionmode](Interaction_images/CompactSelector.png)|
+
 ## Events
 
 * [ItemSelectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) and [ItemSelectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
