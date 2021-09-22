@@ -9,7 +9,7 @@ documentation: ug
 
 # Locking annotations in WPF PDF Viewer
 
-PDF Viewer provides a support to enable or disable lock option for the annotation in a pdf document. When an annotation is locked, it cannot be moved, resize, removed.
+The WPF PDF Viewer provides a support to enable or disable lock option for the annotation in a pdf document. When an annotation is locked, it cannot be moved, resize, removed.
 
 ## Lock an annotation from code behind
 
@@ -82,7 +82,7 @@ The check box control as “Locked” will be appear in the annotation propertie
 
 The following image shows how to enable lock option for sticky note annotation in UI.
 
-    ![Lock Annotation](Annotation-images\Lock-Annotation-1.png)
+![Locking Annotations using WPF PDF Viewer](Annotation-images\Lock-Annotation-1.png)
 	 
 N> Similarly, we can set it for all other annotations in UI.
 

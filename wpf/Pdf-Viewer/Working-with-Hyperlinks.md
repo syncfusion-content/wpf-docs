@@ -172,7 +172,7 @@ End Sub
 {% tabs %}
 {% highlight c# %}
 
-// Wires the event handler for `HyperlinkMouseOver` event.    
+// Wire the event handler for `HyperlinkMouseOver` event.    
 pdfViewerControl.HyperlinkMouseOver += PdfViewerControl_HyperlinkMouseOver;
 
 private void Pdfviewer_HyperlinkMouseOver(object sender, EventArgs args)
@@ -182,7 +182,7 @@ private void Pdfviewer_HyperlinkMouseOver(object sender, EventArgs args)
             
 }
 
-// Unhooks the event handler for `HyperlinkMouseOver` event.
+// Unwire the event handler for `HyperlinkMouseOver` event.
 pdfViewerControl.HyperlinkMouseOver -= PdfViewerControl_HyperlinkMouseOver;
 
 {% endhighlight %}
