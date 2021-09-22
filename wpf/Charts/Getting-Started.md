@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
-To get start quickly with WPF Chart, you can check this video:
+To get start quickly with [WPF Chart](https://www.syncfusion.com/wpf-controls/charts), you can check this video:
 <style>#WPFChartVideoTutorial{width : 90% !important; height:400px !important }</style>
 <iframe id='WPFChartVideoTutorial' src='https://www.youtube.com/embed/5b8nEevQPC8'></iframe>
 
@@ -21,7 +21,7 @@ Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls)
  
 ## Initialize chart
 
-Import the [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) namespace as follows in your respective Window.
+Import the [WPF Chart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) (SfChart) namespace as follows in your respective Window.
 
 {% tabs %} 
 
@@ -100,7 +100,7 @@ N> [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfCh
 
 ## Initialize view model
 
-Now, let us define a simple data model that represents a data point in [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html).
+Now, let us define a simple data model that represents a data point in [WPF Chart](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) (SfChart).
 
 {% tabs %}  
 
