@@ -33,4 +33,5 @@ diagram.PortHoverEffect = PortHoverEffect.Ripple;
 |---|---|
 | Ripple |![Ripple aimation](Port_images/RippleAnimation.gif) |
 | Shrink |![shrink diagram](Port_images/ShrinkAnimation.gif) |
+| FilledRipple |![Filled Ripple](Port_images/FilledRippleAnimation.gif) |
 | None |Connection animation effect does not appeared. |
