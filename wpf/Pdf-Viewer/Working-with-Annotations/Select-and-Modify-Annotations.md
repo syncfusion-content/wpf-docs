@@ -55,13 +55,13 @@ private void SelectAnnotation()
 
 Similarly, we can implement it for all other annotations.
 
-### How to obtain the name of an annotation
+### How to get and set name of an annotation
 
-Annotation’s name can be obtained either for newly added annotation or the annotation which already exist. In the following sections, the ink annotation was explained brevity and similarly, we can obtain names for all other annotations.
+Annotation’s name can be obtained either for newly added annotation or the annotation that already exist. Also, you can modify the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property to give annotations a unique name. In the following sections, the ink annotation was explained brevity and similarly, you can get and set names for all other annotations.
 
 ####  Get and Set Annotations’ Name
 
-The annotations’ name can be obtained from the annotation changed event. The following code sample explains how to get the annotations’ name while adding the annotation to the document.
+The annotations’ name can be obtained from the annotation changed event. The following code sample explains how to get the annotations’ name when adding it to the document.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,7 +85,7 @@ You can also change the name of an annotation. The following code sample demonst
 //Set the annotation name 
 private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e) 
 {  
-   e.Name = ”ink_annotation_1”;     
+   e.Name = ”YOUR OWN NAME”;     
 } 
 
 {% endhighlight %}
