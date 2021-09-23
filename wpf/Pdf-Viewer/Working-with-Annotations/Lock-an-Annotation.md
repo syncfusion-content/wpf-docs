@@ -78,7 +78,7 @@ N> Similarly, you can implement it for all other annotations in code behind.
 
 ## Lock an annotation in UI
 
-The check box control labelled as “Locked” will appear in the annotation properties window, allowing us to enable or disable lock option for the selected annotation.
+The check box control labeled as “Locked” will appear in the annotation properties window, allowing us to enable or disable lock option for the selected annotation.
 
 The following image shows how to enable lock option for sticky note annotation in UI.
 
