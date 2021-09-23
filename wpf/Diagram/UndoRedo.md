@@ -63,7 +63,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
 ## History actions
 
-History of actions that are performed after initializing the diagram are classified by using `Action` property of `HistoryEntry` class. This `Action` property has following actions,
+The `Action` property of the `HistoryEntry` class is used to store the history of actions performed after initializing the diagram. Changing the size of a node, dragging a connection, deleting a node, clicking and dragging the mouse, and so on are some of the actions. These types of actions are saved as `Action` properties that can be performed. This property has the following actions:
 
 |HistoryAction|Description|
 |--|--|
@@ -80,6 +80,8 @@ History of actions that are performed after initializing the diagram are classif
 
 `Mode` property of `HistoryEntry` class allows to know where the changed action comes from. The `Mode` property has following type of sources,
 
+The `Mode` property of the HistoryEntry class allows you to know whether the source of action entry is internal or external. Internal source action is accomplished by using the SfDiagram control and its elements, while external source action is accomplished by the external application users. This property has following type of sources:
+
 |EntryMode|Description|
 |--|--|
 |Internal|Specifies source of action entry is added internally by SfDiagram to the undo-redo stack |
@@ -87,7 +89,7 @@ History of actions that are performed after initializing the diagram are classif
 
 ## Stack limit
 
-`StackLimit` property of `HistoryManager` class allows to specify stack limit value that is used to limit the maximum number of history entries need to stored in the Undo and Redo stacks.
+The `StackLimit` property of `HistoryManager` class allows you to specify a stack limit value, which is used to limit the maximum number of history entries that can be stored in the Undo and Redo stacks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +114,7 @@ diagram.HistoryManager = new HistoryManager()
 
 ## Start group action
 
-`BeginComposite()` method of `HistoryManager` class allows to log multiple actions at a time in the history manager stack. It is ease a undo or revert the changes made in the diagram in a single undo/redo process instead of revert every actions one by one. 
+The `BeginComposite()` method of `HistoryManager` class allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.
 
 {% tabs %}
 {% highlight C# %}
@@ -129,7 +131,7 @@ diagram.HistoryManager.BeginComposite();
 
 ## End group action
 
-`EndComposite()` method of `HistoryManager` class allows to end the group actions which are stored in the stack history. 
+The `EndComposite()` method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
 
 {% tabs %}
 //Initialize SfDiagram
@@ -147,7 +149,51 @@ diagram.HistoryManager.EndComposite();
 
 ## How to view Undo/Redo stack
 
-History manager class of `SfDiagram` control allows to view the undo/redo stack values where you can get what the actions, values, elements are stored in the history manager stack by using `RedoStack` and `UndoStack` properties.
+History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the `HistoryChangedEventArgs` argument value of `HistoryChangedEvent` event.
+
+{% tabs %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Hook the history changed event.
+(diagram.Info as IGraphInfo).HistoryChangedEvent += HistoryChangedEvent;
+ private void HistoryChangedEvent(object sender, HistoryChangedEventArgs args)
+{
+    UndoText = string.Empty;
+    foreach (HistoryEntry entry in HistoryManager.UndoStack as Stack<HistoryEntry>)
+    {
+        if (UndoText == string.Empty)
+        {
+            UndoText = "Action: " + entry.Action.ToString();
+            UndoText = UndoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+        else
+        {
+            UndoText = UndoText+ "\n" + "Action: " + entry.Action.ToString();
+            UndoText = UndoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+    }
+
+    RedoText = string.Empty;
+    foreach (HistoryEntry entry in HistoryManager.RedoStack as Stack<HistoryEntry>)
+    {
+        if (RedoText == string.Empty)
+        {
+            RedoText = "Action: " + entry.Action.ToString();
+            RedoText = RedoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+        else
+        {
+            RedoText = RedoText + "\n" + "Action: " + entry.Action.ToString();
+            RedoText = RedoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Undo redo stack view](HistoryManager_images/UndoRedoStackView.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/HistoryManagerStackView)
 
 ## How to log custom actions in undo/redo stack
 
@@ -407,7 +453,7 @@ public class CustomDiagram: SfDiagram
 
 ![HistoryManager](HistoryManager_images/Canlog.gif)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/CustomHistoryManger)
 
 ## History changed event
 
@@ -459,6 +505,8 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 }
 {% endhighlight %}
 {% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/HistoryManagerDemoSample)
 
 ## See Also
 
