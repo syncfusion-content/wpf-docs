@@ -2311,5 +2311,19 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type-and-placement-target-for-Backstage) in GitHub.
 
+#### BackStageButton Visibility
 
+The `BackStageButton` in ribbon can be shown or hidden by using the `Visibility` property on window Loaded event. The following code example illustrates how to show or hide BackStageButton.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ ribbon.BackStageButton.Visibility = Visibility.Collapsed;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon BackStageButton collapsed by using Visibility property](GettingStarted_images/wpf-ribbon-backstagebutton-visibility.png)
 
