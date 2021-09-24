@@ -35,6 +35,6 @@ Select and Pan operations work like toggle functions.
 
 ## Without toolbar (Programmatically)
 
-Panning can be enabled using the `EnablePanning` property also instead of enabling it using the toolbar icons. When panning is enabled, shapes or text added to the image cannot be resized or repositioned. When `EnablePanning` is true, shapes or text added in the image cannot be resized or repositioned. By default, the property is set to false.
+Panning can be enabled using the `EnablePanning` property also instead of enabling it using the toolbar icons. When panning is enabled, shapes and test cannot be selected. By default, the property is set to false.
 
 ![ImageEditor](Images/Panning.png) 
