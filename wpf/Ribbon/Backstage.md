@@ -2317,6 +2317,61 @@ The `BackStageButton` in ribbon can be shown or hidden by using the `Visibility`
 
 {% tabs %}
 
+{% highlight XAML %}
+
+<Window
+    x:Class="BackStageButton.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BackStageButton"
+    xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    Title="Ribbon"
+    Width="800"
+    Height="450"
+    skinManager:SfSkinManager.Theme="{skinManager:SkinManagerExtension ThemeName=Office2019Colorful}">
+    <Grid>
+        <syncfusion:Ribbon Name="ribbon" BackStageHeader="File">
+            <syncfusion:Ribbon.BackStage>
+                <syncfusion:Backstage x:Name="ribbonBackStage">
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="I" Header="Info" />
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="R" Header="Recent" />
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="N" Header="New" />
+                </syncfusion:Backstage>
+            </syncfusion:Ribbon.BackStage>
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar
+                    Name="ribbonFormatBar"
+                    syncfusion:Ribbon.KeyTip="FN"
+                    Header="Clipboard">
+                    <syncfusion:RibbonButton
+                        Margin="1"
+                        Label="Paste"
+                        SizeForm="Large" />
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        Label="Cut"
+                        SizeForm="Small" />
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        Label="Copy"
+                        SizeForm="Small" />
+                    <syncfusion:RibbonButton Label="Format Painter" SizeForm="Small" />
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Header="Visibility">
+                    <syncfusion:RibbonCheckBox
+                        Margin="3"
+                        Content="Show File button"
+                        IsChecked="True" />
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="Insert" />
+        </syncfusion:Ribbon>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
  ribbon.BackStageButton.Visibility = Visibility.Collapsed;
