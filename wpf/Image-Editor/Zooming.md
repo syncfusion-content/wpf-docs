@@ -21,7 +21,7 @@ At a time, this Increase/Decrease icon can increase/decrease the level upto 10 p
 
 ## Mouse wheel
 
-You can also zoom an image using mouse wheel. Based on the mouse wheel, delta images will be zoomed from the cursor position.
+You can also zoom an image using the mouse wheel. Based on the mouse wheel, delta images will be zoomed from the cursor position.
 
 ![ImageEditor](Images/ZoomedImage.png) 
 
@@ -35,6 +35,6 @@ Select and Pan operations work like toggle functions.
 
 ## Without toolbar (Programmatically)
 
-Panning can be enabled using the `EnablePanning` property also instead of enabling it using the toolbar icons. When panning is enabled, shapes and test cannot be selected. By default, the property is set to false.
+Panning can be enabled using the `EnablePanning` property rather than the toolbar icons. When panning is enabled, shapes and tests cannot be selected. By default, the property is set to false.
 
 ![ImageEditor](Images/Panning.png) 
