@@ -423,8 +423,8 @@ this.DataContext = new ViewModel();
 
 ## Populate Sunburst chart with data
 
-Now, bind the Data property of the above ViewModel to the `ItemsSource` property. 
-Add `SunburstHierarchicalLevel` to `Levels` property. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
+Now, bind the `Data` property of the above ViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) property. 
+Add `SunburstHierarchicalLevel` to [`Levels`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstHierarchicalLevel.html#Syncfusion_UI_Xaml_SunburstChart_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ValueMemberPath).
 
 {% tabs %}
 
@@ -453,7 +453,7 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"
 
 ## Add header 
 
-You can add header to Sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using `Header` property as shown below.
+You can add header to Sunburst chart to provide quick information to the user about the data being plotted in the chart. ou can also set title using the [`Header`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Header) property as follows.
 
 {% tabs %}
 
@@ -470,7 +470,7 @@ sunburst.FontSize = 22d;
 
 ## Add legend
 
-You can enable legend using `Legend` property as shown below,
+You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Legend) property as follows.
 
 {% tabs %}
 
@@ -489,7 +489,7 @@ legend.DockPosition= ChartDock.Left;
 
 ## Add data labels
 
-You can add data labels to improve the readability of the Sunburst chart. This can be achieved using `DataLabelInfo` property as shown below,
+You can add data labels to improve the readability of the Sunburst chart. This can be achieved using the [`DataLabelInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_DataLabelInfo) property as follows.
 
 {% tabs %}
 
@@ -506,11 +506,60 @@ sunburst.DataLabelInfo = dataLabel;
     
 {% endtabs %}
 
+Below is the complete code to replicate the following output.
+
+{% tabs %}
+
+{% highlight xaml %}
+ <Grid>
+        <Grid.DataContext>
+            <local:ViewModel></local:ViewModel>
+        </Grid.DataContext>
+        <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount" Header="Employees Count" FontSize="22" >
+            <sunburst:SfSunburstChart.Legend>
+                <sunburst:SunburstLegend DockPosition="Left"/>
+            </sunburst:SfSunburstChart.Legend>
+            <sunburst:SfSunburstChart.Levels>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
+                <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+            </sunburst:SfSunburstChart.Levels>
+            <sunburst:SfSunburstChart.DataLabelInfo>
+                <sunburst:SunburstDataLabelInfo />
+            </sunburst:SfSunburstChart.DataLabelInfo>
+        </sunburst:SfSunburstChart>
+    </Grid>
+{% endhighlight %}
+
+{% highlight C# %}
+
+            this.DataContext = new ViewModel();
+            SfSunburstChart sunburst = new SfSunburstChart();
+            sunburst.ValueMemberPath = "EmployeesCount";
+            sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+            sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+            sunburst.Header = "Employees Count";
+            sunburst.FontSize = 22d;
+            SunburstLegend legend = new SunburstLegend();
+            legend.DockPosition = ChartDock.Left;
+            sunburst.Legend = legend;
+            SunburstDataLabelInfo dataLabel = new SunburstDataLabelInfo();
+            sunburst.DataLabelInfo = dataLabel;
+            this.Content = sunburst;
+
+{% endhighlight %}
+    
+{% endtabs %}
+
+You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SunburstChartDemo-1795261164).
+
 Following is the final output screenshot,
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
-
-You can find the complete getting started sample from this [`link.`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started2023483097)
 
 ## Theme
 

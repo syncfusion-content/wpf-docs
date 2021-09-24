@@ -9,14 +9,14 @@ documentation: ug
     
 # Getting Started with WPF Scheduler (SfScheduler)
     
-This section provides an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in the real time scenario.   
+This section provides an overview for working with SfScheduler for WPF and also provides a walk through to configure [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) (SfScheduler) control in the real time scenario.   
 
 ## Assembly deployment
 Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) . Use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
 ## Create simple application with SfScheduler
 
-In this section, create WPF application with SfScheduler control.
+In this section, create WPF application with WPF Scheduler (SfScheduler) control.
 
 * [Creating project](#creating-project)
 * [Adding control via Designer](#adding-control-via-designer)
@@ -24,7 +24,7 @@ In this section, create WPF application with SfScheduler control.
 * [Adding control manually in C#](#adding-control-manually-in-c)  
 
 ### Creating project
-In Visual Studio, create a new WPF project to show the features of the SfScheduler control and add the following namespace to the added assemblies.
+In Visual Studio, create a new WPF project to show the features of the WPF Scheduler (SfScheduler) control and add the following namespace to the added assemblies.
 
 Assembly: `Syncfusion.SfScheduler.WPF`
 
@@ -80,7 +80,7 @@ namespace GettingStarted
 
 ## Change different SfScheduler Views  
     
-[SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) control provides five different types of views to display dates and it can be assigned to the control by using [ViewType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType) property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
+The [WPF Scheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html) (SfScheduler) control provides five different types of views to display dates and it can be assigned to the control by using [ViewType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ViewType) property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
 
 {% tabs %}   
 {% highlight xaml %}
@@ -348,7 +348,7 @@ By setting `From` and `To` of the `Meeting` class, schedule the meetings for a s
 
 #### Bind to SfScheduler appointment
 
-Map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMappingProperty) property.
+Map those properties of the `Meeting` class with our WPF Scheduler (SfScheduler) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentMappingProperty) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,7 +401,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-d
 
 ## Change first day of week
 
-SfScheduler control will be rendered with `Sunday` as the first day of the week, but it can be customized to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
+WPF Scheduler (SfScheduler) control will be rendered with `Sunday` as the first day of the week, but it can be customized to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
     
 {% tabs %}  
 {% highlight xaml %}
@@ -431,7 +431,7 @@ The Scheduler supports to show the busy indicator by using the [ShowBusyIndicato
 
 ## Theme
 
-SfScheduler supports various built-in themes. Refer to the below links to apply themes for the SfScheduler,
+WPF Scheduler (SfScheduler) supports various built-in themes. Refer to the below links to apply themes for the SfScheduler,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

@@ -31,7 +31,7 @@ Create a new WPF project to show the `DateTimeEdit` control in Visual Studio.
 
 ## Adding control via designer
 
-The `DateTimeEdit` control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#datetimeedit) will be added automatically.
+The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#datetimeedit) will be added automatically.
 
 ![Drag and drop WPF DateTimeEdit from toolbox](Getting-Started_images/wpf-datetimeedit-toolbox.png)
 
@@ -509,10 +509,12 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-date-time-e
 
 ## Theme
 
-DateTimeEdit supports various built-in themes. Refer to the below links to apply themes for the DateTimeEdit,
+The WPF DateTimePicker (DateTimeEdit) supports various built-in themes. Refer to the below links to apply themes for the DateTimeEdit,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 ![Setting theme to WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-theme-support.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Themes).

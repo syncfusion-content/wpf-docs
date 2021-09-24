@@ -137,7 +137,7 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ![WPF Diagram FreeHand Drawing](Connector_images/wpf-diagram-freehand-drawing.gif)
 
-For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
+For more information about changing drawing tool of diagram, refer to [Tools](/wpf/diagram/tools "Tools").
 
 Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
 
@@ -401,23 +401,23 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 
 ![WPF Diagram Connection Between Ports](Connector_images/wpf-diagram-connection-between-ports.PNG)
 
-For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
+For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/diagram/port "Port").
 
 Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Create%20Connector) to depict the connector creation.
 
 ## Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/sfdiagram/tools#drawing-tools:connectors "Drawing Tools").
+Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/diagram/tools#drawing-tools:connectors "Drawing Tools").
 
 ## Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/sfdiagram/datasource "DataSource").
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/diagram/datasource "DataSource").
 
 ## Add connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those connectors into the diagram, when required. 
 
-For more information about adding connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
+For more information about adding connectors from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
 
 ## See Also
 

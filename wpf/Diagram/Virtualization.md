@@ -108,10 +108,10 @@ Find the [Virtualization sample](https://github.com/SyncfusionExamples/WPF-Diagr
 
 {% seealso %}
 
-[How to serialize the diagram control](/wpf/sfdiagram/serialization)
+[How to serialize the diagram control](/wpf/diagram/serialization)
 
-[How to localize the diagram control](/wpf/sfdiagram/localization)
+[How to localize the diagram control](/wpf/diagram/localization)
 
-[How to have overview for diagram control](/wpf/sfdiagram/overview-control)
+[How to have overview for diagram control](/wpf/diagram/overview-control)
 
 {% endseealso %}

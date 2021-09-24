@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows in WPF DataGrid (SfDataGrid)
 
-This section explains about various row types in SfDataGrid.
+This section explains about various row types in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
 [StackedHeaderRow](http://help.syncfusion.com/wpf/sfdatagrid/columns#stacked-headers)
 
@@ -254,7 +254,7 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 ## Header Row
 
-Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of the WPF DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
 ![WPF DataGrid displays Column Header in Header Row](Rows_images/wpf-datagrid-column-header.png)
 
@@ -294,7 +294,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 
 ## Freeze panes
 
-DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
+WPF DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>

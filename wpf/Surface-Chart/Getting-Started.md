@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Surface Chart (SfSurfaceChart)
 
-This section helps you get started with SfSurfaceChart control.
+This section helps you get started with [`SfSurfaceChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html) control.
 
 ## Visual Structure
 
@@ -27,7 +27,7 @@ The following image helps you understand various elements in SfSurfaceChart when
 
 ## Create simple surface chart from XAML
 
-This section demonstrates how to create a surface chart using SfSurfaceChart control from XAML. You can add the **SfChart** assembly as a reference to your application to create a surface chart using SfSurfaceChart control from XAML.
+This section demonstrates how to create a surface chart using the `SfSurfaceChart` control from XAML. You can add the [`SfChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) assembly as a reference to your application to create a surface chart using SfSurfaceChart control from XAML.
 
 ### Add Assembly reference
 
@@ -45,19 +45,23 @@ N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF cont
 
 ### Initialize the surface chart
 
-We need to initialize the surface chart from the following namespace Syncfusion.UI.Xaml.SfChart
+You need to initialize the surface chart from the following namespace Syncfusion.UI.Xaml.Charts.
+
+{% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfSurfaceChart>
+       <syncfusion:SfSurfaceChart>
 
- </syncfusion:SfSurfaceChart>
+       </syncfusion:SfSurfaceChart>
  
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Add Surface chart from Toolbox
 
-Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
+Drag the [`SfSurfaceChart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html) control from the Toolbox to the required location, where the surface chart should be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. The Toolbox window appears on the left side of the screen.
 
 ![Add Surface chart from Toolbox](surface_chart_images/surface_chart_img3.jpeg)
 
@@ -163,13 +167,15 @@ ColumnSize = 3;
 {% endhighlight %}
 Now you can add the elements required for the above scenario to the Surface instance created.
 
-### Add Data to surface chart
+### Add data to surface chart
 
-After you populate the data to the chart, you can bind the properties as shown in the following code example.   
+After you populate the data to the chart, you can bind the properties as shown in the following code example. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"   
+       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"   
                            
                  YBindingPath="Y" ZBindingPath="Z" 
 				 
@@ -179,45 +185,57 @@ After you populate the data to the chart, you can bind the properties as shown i
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Add Header to the surface chart
 
 The header acts as the title of the surface chart created, to identify its purpose. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart Header="Simple Surface" FontSize="20" />
+    <syncfusion:SfSurfaceChart Header="Simple Surface" FontSize="20" />
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Add Axes to surface chart
 
 The following code example illustrates how to add XAxis, YAxis and ZAxis to the Surface chart.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart>
+       <syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"  
+                              YBindingPath="Y" ZBindingPath="Z" RowSize="{Binding RowSize}"
+                              ColumnSize="{Binding ColumnSize}">
 
-      <Syncfusion:SfSurfaceChart.XAxis>
-	  
-             <Syncfusion:SurfaceAxis Header="X-Axis" />
-			 
-      </Syncfusion:SfSurfaceChart.XAxis>
+            <syncfusion:SfSurfaceChart.XAxis>
 
-      <Syncfusion:SfSurfaceChart.YAxis>
-	  
-             <Syncfusion:SurfaceAxis Header="Y-Axis" LabelFormat="0.0"/>
-			 
-      </Syncfusion:SfSurfaceChart.YAxis>
-      
-      <Syncfusion:SfSurfaceChart.ZAxis>
-	  
-             <Syncfusion:SurfaceAxis Header="Z-Axis"/>
-			 
-      </Syncfusion:SfSurfaceChart.ZAxis>
-	  
- </Syncfusion:SfSurfaceChart>
+                <syncfusion:SurfaceAxis Header="X-Axis" />
+
+            </syncfusion:SfSurfaceChart.XAxis>
+
+            <syncfusion:SfSurfaceChart.YAxis>
+
+                <syncfusion:SurfaceAxis Header="Y-Axis" LabelFormat="0.0"/>
+
+            </syncfusion:SfSurfaceChart.YAxis>
+
+            <syncfusion:SfSurfaceChart.ZAxis>
+
+                <syncfusion:SurfaceAxis Header="Z-Axis"/>
+
+            </syncfusion:SfSurfaceChart.ZAxis>
+
+        </syncfusion:SfSurfaceChart>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> SfSurfaceChart supports default axes, all the axes are generated automatically, even when it has not been defined explicitly.
 
@@ -225,31 +243,37 @@ N> SfSurfaceChart supports default axes, all the axes are generated automaticall
 
 The following code example illustrates how to add surface type to the surface chart. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart Type="Surface" />
+       <syncfusion:SfSurfaceChart Type="Surface" />
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Add Color bar to the surface chart
 
 The following code example illustrates how to add color bar to the surface chart
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart.ColorBar>    
-      
-         <Syncfusion:ChartColorBar  DockPosition="Right"/>
-		 
-</Syncfusion:SfSurfaceChart.ColorBar>
+         <syncfusion:SfSurfaceChart.ColorBar>
+                <syncfusion:ChartColorBar ShowLabel="True" DockPosition="Right"/>
+         </syncfusion:SfSurfaceChart.ColorBar>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Now you have created a simple surface chart. The following code example is for XAML. 
 
 {% highlight xaml %}
 
-<Syncfusion:SfSurfaceChart Type="Surface"  
+       <syncfusion:SfSurfaceChart Type="Surface"  Tilt="15" Rotate="30"
 
                            ItemsSource="{Binding DataValues}"  XBindingPath="X"    
 						   
@@ -259,31 +283,31 @@ Now you have created a simple surface chart. The following code example is for X
 						   
                            ColumnSize="{Binding ColumnSize}">
 
-    <Syncfusion:SfSurfaceChart.XAxis>
-	
-            <Syncfusion:SurfaceAxis Header="X-Axis" />
-			
-    </Syncfusion:SfSurfaceChart.XAxis>
-	
-    <Syncfusion:SfSurfaceChart.YAxis>
-	
-             <Syncfusion:SurfaceAxis Header="Y-Axis" LabelFormat="0.0"/>
-			 
-    </Syncfusion:SfSurfaceChart.YAxis>
+            <syncfusion:SfSurfaceChart.XAxis>
 
-    <Syncfusion:SfSurfaceChart.ZAxis>
-	
-             <Syncfusion:SurfaceAxis Header="Z-Axis"/>
-			 
-    </Syncfusion:SfSurfaceChart.ZAxis>
+                <syncfusion:SurfaceAxis Header="X-Axis" />
 
-    <Syncfusion:SfSurfaceChart.ColorBar>
-	
-             <Syncfusion:ChartColorBar  DockPosition="Right"/>
-			 
-    </Syncfusion:SfSurfaceChart.ColorBar>
-	
-</Syncfusion:SfSurfaceChart>
+            </syncfusion:SfSurfaceChart.XAxis>
+
+            <syncfusion:SfSurfaceChart.YAxis>
+
+                <syncfusion:SurfaceAxis Header="Y-Axis" LabelFormat="0.0"/>
+
+            </syncfusion:SfSurfaceChart.YAxis>
+
+            <syncfusion:SfSurfaceChart.ZAxis>
+
+                <syncfusion:SurfaceAxis Header="Z-Axis"/>
+
+            </syncfusion:SfSurfaceChart.ZAxis>
+
+            <syncfusion:SfSurfaceChart.ColorBar>
+
+                <syncfusion:ChartColorBar  DockPosition="Right"/>
+
+            </syncfusion:SfSurfaceChart.ColorBar>
+
+        </syncfusion:SfSurfaceChart>
 
 {% endhighlight %}
 
@@ -342,6 +366,7 @@ surface.Data.AddPoints(2, 3, 2);
 
 surface.RowSize = 3;
 surface.ColumnSize = 3;
+grid.Children.Add(surface);
 
 {% endhighlight %}
 
@@ -351,7 +376,10 @@ The header acts as the title of the surface chart created, to identify its purpo
 
 {% highlight c# %}
 
-surface.Header = "Simple Surface";
+            SfSurfaceChart chart = new SfSurfaceChart();
+            chart.Header = "Simple Surface";
+            chart.FontSize = 20;
+            grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -361,20 +389,30 @@ The following code example illustrates how to add XAxis, YAxis and ZAxis to the 
 
 {% highlight c# %}
 
-//Add X axis to surface 
-SurfaceAxis xAxis = new SurfaceAxis();
-xAxis.Header = "X-Axis";
-surface.XAxis = xAxis;
+            SfSurfaceChart chart = new SfSurfaceChart();
+            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+            chart.XBindingPath = "X";
+            chart.YBindingPath = "Y";
+            chart.ZBindingPath = "Z";
+          
+          //Add X axis to surface 
+            SurfaceAxis xAxis = new SurfaceAxis();
+            xAxis.Header = "X-Axis";
+            chart.XAxis = xAxis;
 
-//Add Y axis to surface 
-SurfaceAxis yAxis = new SurfaceAxis();
-yAxis.Header = "Y-Axis";
-surface.YAxis = yAxis;
+          //Add Y axis to surface 
+            SurfaceAxis yAxis = new SurfaceAxis();
+            yAxis.Header = "Y-Axis";
+            yAxis.LabelFormat = "0.0";
+            chart.YAxis = yAxis;
 
-//Add Z axis to surface 
-SurfaceAxis zAxis = new SurfaceAxis();
-zAxis.Header = "Z-Axis";
-surface.ZAxis = zAxis;
+          //Add Z axis to surface 
+            SurfaceAxis zAxis = new SurfaceAxis();
+            zAxis.Header = "Z-Axis";
+            chart.ZAxis = zAxis;
+            grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -386,7 +424,9 @@ The following code example illustrates how to add surface type to the surface ch
 
 {% highlight c# %}
 
-surface.Type = SurfaceType.Surface;
+             SfSurfaceChart chart = new SfSurfaceChart();
+             chart.Type = SurfaceType.Surface;
+             grid.Children.Add(chart);
 
 {% endhighlight %}
 
@@ -396,56 +436,77 @@ The following code example illustrates how to add color bar to the surface chart
 
 {% highlight c# %}
 
-surface.ColorBar = new ChartColorBar() {DockPosition = ChartDock.Right};
+              ChartColorBar colorBar = new ChartColorBar();
+              colorBar.DockPosition = ChartDock.Right;
+              colorBar.ShowLabel = true;
+              chart.ColorBar = colorBar;
 
 {% endhighlight %}
 
-Now you have created a simple surface chart. The following code example is for code behind.
+Now, you have created a simple surface chart. The following code example is for code behind and data can be populated either by using the[`ItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_ItemsSource)  property or by using the [`AddPoints`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DataPointCollection.html#Syncfusion_UI_Xaml_Charts_DataPointCollection_AddPoints_System_Double_System_Double_System_Double_) method of [`Data`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfSurfaceChart.html#Syncfusion_UI_Xaml_Charts_SfSurfaceChart_Data) property in surface chart.
 
 {% highlight c# %}
 
-SfSurfaceChart surface = new SfSurfaceChart();
+            SfSurfaceChart chart = new SfSurfaceChart();
+            chart.SetBinding(SfSurfaceChart.ItemsSourceProperty, "DataValues");
+            chart.SetBinding(SfSurfaceChart.RowSizeProperty, "RowSize");
+            chart.SetBinding(SfSurfaceChart.ColumnSizeProperty, "ColumnSize");
+            chart.XBindingPath = "X";
+            chart.YBindingPath = "Y";
+            chart.ZBindingPath = "Z";          
+            grid.Children.Add(chart);
 
-surface.Header = "Simple Surface";
+             or
 
-surface.Type = SurfaceType.Surface;
+            SfSurfaceChart surface = new SfSurfaceChart();
+            surface.Header = "Simple Surface";
+            surface.Tilt = 15;
+            surface.Rotate = 30;
+            surface.Type = SurfaceType.Surface;
 
-//First Row
-surface.Data.AddPoints(0, 3, 0);
-surface.Data.AddPoints(0, 2, 1);
-surface.Data.AddPoints(0, 2, 2);
+            //First Row
+            surface.Data.AddPoints(0, 3, 0);
+            surface.Data.AddPoints(0, 2, 1);
+            surface.Data.AddPoints(0, 2, 2);
 
-//Second Row
-surface.Data.AddPoints(1, 2, 0);
-surface.Data.AddPoints(1, 1, 1);
-surface.Data.AddPoints(1, 2, 2);
+            //Second Row
+            surface.Data.AddPoints(1, 2, 0);
+            surface.Data.AddPoints(1, 1, 1);
+            surface.Data.AddPoints(1, 2, 2);
 
-//Third Row
-surface.Data.AddPoints(2, 1, 0);
-surface.Data.AddPoints(2, 2, 1);
-surface.Data.AddPoints(2, 3, 2);
+            //Third Row
+            surface.Data.AddPoints(2, 1, 0);
+            surface.Data.AddPoints(2, 2, 1);
+            surface.Data.AddPoints(2, 3, 2);
 
-surface.RowSize = 3;
-surface.ColumnSize = 3;
+            surface.RowSize = 3;
+            surface.ColumnSize = 3;
 
-//Add X axis to surface 
-SurfaceAxis xAxis = new SurfaceAxis();
-xAxis.Header = "X-Axis";
-surface.XAxis = xAxis;
+            //Add X axis to surface 
+            SurfaceAxis xAxis = new SurfaceAxis();
+            xAxis.Header = "X-Axis";
+            surface.XAxis = xAxis;
 
-//Add Y axis to surface 
-SurfaceAxis yAxis = new SurfaceAxis();
-yAxis.Header = "Y-Axis";
-surface.YAxis = yAxis;
+            //Add Y axis to surface 
+            SurfaceAxis yAxis = new SurfaceAxis();
+            yAxis.Header = "Y-Axis";
+            surface.YAxis = yAxis;
 
-//Add Z axis to surface 
-SurfaceAxis zAxis = new SurfaceAxis();
-zAxis.Header = "Z-Axis";
-surface.ZAxis = zAxis;
-surface.ColorBar = new ChartColorBar() {DockPosition = ChartDock.Right};
+            //Add Z axis to surface 
+            SurfaceAxis zAxis = new SurfaceAxis();
+            zAxis.Header = "Z-Axis";
+            surface.ZAxis = zAxis;
+
+            ChartColorBar colorBar = new ChartColorBar();
+            colorBar.DockPosition = ChartDock.Right;
+            colorBar.ShowLabel = true;
+            surface.ColorBar = colorBar;
+            this.Content = surface;
 
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
+
+You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SurfaceChartDemo-1998279060).
 
 ![simple surface from Code behind](surface_chart_images/surface_chart_img7.jpeg)

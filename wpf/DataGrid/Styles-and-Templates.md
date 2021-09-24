@@ -9,14 +9,14 @@ documentation: ug
 
 # Styles and Templates in WPF DataGrid (SfDataGrid)
 
-The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
+The appearance of [WPF DataGrid]((https://www.syncfusion.com/wpf-controls/datagrid)) (SfDataGrid) and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
 
 ## Control Structure of SfDataGrid
 
 ![Structure of WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-structure.png)
 
 ## Customizing Default Containers
-SfDataGrid arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
+WPF DataGrid (SfDataGrid) arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
 
 ![Tree Structure of WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-tree-structure.png)
 
@@ -382,7 +382,7 @@ N> Visual Studio Editing option is available from Visual Studio 2012 and higher 
 
 ## Writing Style by TargetType
 
-The appearance of SfDataGrid and its inner elements can be customized by writing style of TargetType to those control. If the key is not specified, then the style will be applied to all the SfDataGrid in its scope. You can apply specific to SfDataGrid or column or cell using various properties exposed.
+The appearance of WPF DataGrid (SfDataGrid) and its inner elements can be customized by writing style of TargetType to those control. If the key is not specified, then the style will be applied to all the SfDataGrid in its scope. You can apply specific to SfDataGrid or column or cell using various properties exposed.
  
 ## Styling Record cell
 

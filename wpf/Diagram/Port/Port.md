@@ -122,7 +122,7 @@ RootGrid.Children.Add(diagram);
 
 ![WPF Diagram Node Port](Port_images/wpf-diagram-node-Port.PNG)
 
->N By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/sfdiagram/port#portvisibility) 
+>N By default, port will be visible while dragging the connector thumb hover the diagram element where port presents within the diagram element. For more information , refer to the [PortVisibility](https://help.syncfusion.com/wpf/diagram/port#portvisibility) 
 
 ### NodeOffset
 The `NodeOffsetX` and `NodeOffsetY` properties of port is used to position the port based on fractions. 0 represents Node’s top/left corner, 1 represents Node’s bottom/right corner, and 0.5 represents Node’s center point. Default value is (0.5, 0.5).
@@ -462,7 +462,7 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 ## Appearance
 
-* The shape of the port can be changed by using its `shape` property. The shape can be any [Built-In Shapes](https://help.syncfusion.com/wpf/sfdiagram/shapes) or any custom geometric path.
+* The shape of the port can be changed by using its `shape` property. The shape can be any [Built-In Shapes](https://help.syncfusion.com/wpf/diagram/shapes) or any custom geometric path.
 
 * The appearance of ports can be customized by using the `ShapeStyle` property of the port.
 
@@ -470,7 +470,7 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 * The  `PortVisibility` property allows you to define, when the port should be visible.
 
->N For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/sfdiagram/port#geometry-style)
+>N For DockPort customization, refer to [Geometry Style](https://help.syncfusion.com/wpf/diagram/port#geometry-style)
 
 {% tabs %}
 {% highlight xaml %}
@@ -528,7 +528,7 @@ The `PortChangedEvent` will get invoked when you drag the port.
 
 ## Constraints
 
-The `Constraints` property allows you to enable or disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/constraints#port-constraints "Port Constraints").
+The `Constraints` property allows you to enable or disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/diagram/constraints#port-constraints "Port Constraints").
 
 ## See Also
 
