@@ -20,20 +20,19 @@ The scheduler control supports the different types of calendars such as Gregoria
 </tr>
 <tr>
 <td>
-
-* GregorianCalendar
-* HebrewCalendar
-* HijriCalendar
-* KoreanCalendar
-* TaiwanCalendar
-* ThaiCalendar
-* UmAlQuraCalendar
-* PersianCalendar </td>
+<br>* GregorianCalendar</br>
+<br>* HebrewCalendar</br>
+<br>* HijriCalendar</br>
+<br>* KoreanCalendar</br>
+<br>* TaiwanCalendar</br>
+<br>* ThaiCalendar</br>
+<br>* UmAlQuraCalendar</br>
+<br>* PersianCalendar</br>
+</td>
 <td>
-
-* JulianCalendar
-* JapaneseCalendar
-* Lunar type calendars
+<br>* JulianCalendar</br>
+<br>* JapaneseCalendar</br>
+<br>* Lunar type calendars</br>
 </td>
 </tr>
 </table>
