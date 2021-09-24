@@ -25,7 +25,7 @@ Undo/Redo for diagram can be enabled/disabled with the [Constraints](https://hel
 {% tabs %}
 
 {% highlight xaml %}
-<!--Initialize SfDiagram with undo constraint-->
+<!--Initialize SfDiagram with undo/redo constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable">
 </syncfusion:SfDiagram>
 {% endhighlight %}
@@ -50,7 +50,7 @@ Undo/redo actions can be executed using commands of diagram control instead of u
 {% highlight C# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Enable the undo and reso actions
+//Enable the undo and redo actions
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
 //To perform the Undo action in Diagram
@@ -61,7 +61,141 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 {% endhighlight %}
 {% endtabs %}
 
-## How to Customize the Undo Redo process
+## History actions
+
+The `Action` property of the `HistoryEntry` class is used to store the history of actions performed after initializing the diagram. Changing the size of a node, dragging a connection, deleting a node, clicking and dragging the mouse, and so on are some of the actions. These types of actions are saved as `Action` properties that can be performed. This property has the following actions:
+
+|HistoryAction|Description|
+|--|--|
+|None|Specifies the default value for the action type|
+|PositionChanged|Specifies the element's position changed action|
+|RotationChanged|Specifies the rotation value changed action for Node, Group element|
+|SizeChanged|Specifies the element's size changed action|
+|CollectionChanged|Specifies the diagram element's collection changed action that new element added or deleted|
+|ConnectorSourceChanged|Specifies the connector element's source value changed action|
+|ConnectorTargetChanged|Specifies the connector element's target value changed action|
+|CustomAction|Specifies the custom element changed action|
+
+## Entry mode
+
+`Mode` property of `HistoryEntry` class allows to know where the changed action comes from. The `Mode` property has following type of sources,
+
+The `Mode` property of the HistoryEntry class allows you to know whether the source of action entry is internal or external. Internal source action is accomplished by using the SfDiagram control and its elements, while external source action is accomplished by the external application users. This property has following type of sources:
+
+|EntryMode|Description|
+|--|--|
+|Internal|Specifies source of action entry is added internally by SfDiagram to the undo-redo stack |
+|External|Specifies source of action is added externally by the user to the undo-redo stack|
+
+## Stack limit
+
+The `StackLimit` property of `HistoryManager` class allows you to specify a stack limit value, which is used to limit the maximum number of history entries that can be stored in the Undo and Redo stacks.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize SfDiagram with undo and redo constraint-->
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable">
+    <Syncfusion:SfDiagram.HistoryManager>
+        <Syncfusion:HistoryManager StackLimit="3"/>
+    </Syncfusion:SfDiagram.HistoryManager>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Enable the undo and redo actions
+diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+diagram.HistoryManager = new HistoryManager()
+{
+    StackLimit = 3,
+};
+{% endhighlight %}
+{% endtabs %}
+
+## Start group action
+
+The `BeginComposite()` method of `HistoryManager` class allows you to log multiple actions at a time in the history manager stack. It is easier to undo or revert the changes made in the diagram in a single undo/redo process instead of reverting every actions one by one.
+
+{% tabs %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Enable the undo and redo actions
+diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+//Initialize the history manager class
+diagram.HistoryManager = new HistoryManager();
+//method to initiate the group action
+diagram.HistoryManager.BeginComposite();
+{% endhighlight %}
+{% endtabs %}
+
+## End group action
+
+The `EndComposite()` method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
+
+{% tabs %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Enable the undo and redo actions
+diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+//Initialize the history manager class
+diagram.HistoryManager = new HistoryManager();
+//method to stop the group action
+diagram.HistoryManager.EndComposite();
+{% endhighlight %}
+{% endtabs %}
+
+![Start end group action](HistoryManager_images/StartEndGroupAction.gif)
+
+## How to view Undo/Redo stack
+
+History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the `HistoryChangedEventArgs` argument value of `HistoryChangedEvent` event.
+
+{% tabs %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Hook the history changed event.
+(diagram.Info as IGraphInfo).HistoryChangedEvent += HistoryChangedEvent;
+ private void HistoryChangedEvent(object sender, HistoryChangedEventArgs args)
+{
+    UndoText = string.Empty;
+    foreach (HistoryEntry entry in HistoryManager.UndoStack as Stack<HistoryEntry>)
+    {
+        if (UndoText == string.Empty)
+        {
+            UndoText = "Action: " + entry.Action.ToString();
+            UndoText = UndoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+        else
+        {
+            UndoText = UndoText+ "\n" + "Action: " + entry.Action.ToString();
+            UndoText = UndoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+    }
+
+    RedoText = string.Empty;
+    foreach (HistoryEntry entry in HistoryManager.RedoStack as Stack<HistoryEntry>)
+    {
+        if (RedoText == string.Empty)
+        {
+            RedoText = "Action: " + entry.Action.ToString();
+            RedoText = RedoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+        else
+        {
+            RedoText = RedoText + "\n" + "Action: " + entry.Action.ToString();
+            RedoText = RedoText + "\n" + "Mode: " + entry.Mode.ToString();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Undo redo stack view](HistoryManager_images/UndoRedoStackView.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/HistoryManagerStackView)
+
+## How to log custom actions in undo/redo stack
 
 History list allows to revert or restore single and multiple changes through a single undo/redo command. The purpose of custom undo redo process is to store actions which are not done through default undo redo history list. Appearance level changes and its history informations did not stored in the history list.  For example, revert/restore the fill color change of multiple elements at a time. To store multiple actions at a time, actions should be logged using [CompositeTransactions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.CompositeTransactions.html) class.
 
@@ -72,12 +206,10 @@ To achieve this you need to customize the [HistoryManager](https://help.syncfusi
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Assigning the custom history manager class
-diagram.HistoryManager = new customManager();
+diagram.HistoryManager = new HistoryManager();
 
-//To change the nodes fill color into blue and logging the action into composite transactions class.
-CompositeTransactions start = new CompositeTransactions();
-start.State = TransactionState.Start;
-diagram.HistoryManager.BeginComposite(diagram.HistoryManager, start);
+//To change the nodes fill color into blue and logging the action into history manager class.
+diagram.HistoryManager.BeginComposite();
 foreach (NodeVm node in ((IEnumerable<object>)(diagram.SelectedItems as SelectorViewModel).Nodes))
 {
     if (node is NodeVm)
@@ -85,33 +217,8 @@ foreach (NodeVm node in ((IEnumerable<object>)(diagram.SelectedItems as Selector
         (node as NodeVm).Fill = new SolidColorBrush(Colors.CornflowerBlue);
     }
 }
-
-CompositeTransactions end = new CompositeTransactions();
-end.State = TransactionState.End;
+//To stop the group action stored in the undo/red stack
 diagram.HistoryManager.EndComposite(diagram.HistoryManager, end);
-
-//Create Custom history manager class 
-public class customManager : HistoryManager
-{
-    public customManager()
-    {
-    }
-
-    public override object Undo(object data)
-    {
-        return data;
-    }
-
-    public override object Redo(object data)
-    {
-        return data;
-    }
-
-    public override bool CanLogData(IUndoRedo source, object data)
-    {
-        return base.CanLogData(source, data);
-    }
-}
 
 //Creating custom node view model to update the fill property to nodes
 public class NodeVm : NodeViewModel, IUndoRedo
@@ -290,7 +397,7 @@ public struct NodeState
 {% endhighlight %}
 {% endtabs %}
 
-![HistoryManager](HistoryManager_images/FillColorChange.gif)
+![Custom undo redo](HistoryManager_images/CustomUndoRedo.gif)
 
 ## How to restrict Undo/Redo
 
@@ -323,10 +430,10 @@ public class NodeVm : NodeViewModel, IUndoRedo
         }
     }
 }
-//Create the custom SfDaigram class
+//Create the custom SfDiagram class
 public class CustomDiagram: SfDiagram
 {
-    //Overridding the method to avoid actions stored
+    //Overriding the method to avoid actions stored
     protected override bool CanLogHistoryEntry(LogDataArgs item)
     {
         if (item.Item is NodeVm)
@@ -346,17 +453,44 @@ public class CustomDiagram: SfDiagram
 
 ![HistoryManager](HistoryManager_images/Canlog.gif)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/CustomHistoryManger)
+
+## History changed event
+
+History manager class of `SfDiagram` control provides `HistoryChangedEvent` and `HistoryChangedCommand` to notify while there is a change in undo/redo stack values.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize SfDiagram with undo and redo constraint-->
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Undoable" 
+HistoryChangedCommand="{Binding HistoryChangedCommand}">
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Enable the undo and redo actions
+diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
+//Hook history changed event
+(diagram.Info as IGraphInfo).HistoryChangedEvent += HistoryChangedEvent;
+private void HistoryChangedEvent(object sender, HistoryChangedEventArgs args)
+{
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Events for Undo Redo Process
 
 Diagram allows to notify undo/redo action for the below events,
 
-* [NodeChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [ItemDeletedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [ItemAddedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [AnnotationChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [ConnectorSourceChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
-* [ConnectorTargetChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html)
+* [NodeChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_NodeChangedEvent)
+* [ItemDeletedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemDeleted)
+* [ItemAddedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ItemAdded)
+* [PortChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_PortChanged)
+* [AnnotationChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_AnnotationChanged)
+* [ConnectorSourceChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ConnectorSourceChangedEvent)
+* [ConnectorTargetChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ConnectorTargetChangedEvent)
+* [ViewPortChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html#Syncfusion_UI_Xaml_Diagram_IGraphInfo_ViewPortChanged)
 
 {% tabs %}
 {% highlight C# %}
@@ -372,7 +506,7 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 {% endhighlight %}
 {% endtabs %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/HistoryManager/HistoryManagerDemoSample)
 
 ## See Also
 
