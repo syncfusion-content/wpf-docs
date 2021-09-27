@@ -276,13 +276,13 @@ namespace PdfViewer
 
 ## Customizing Paper source in Silent Printing
 
-We can customize `PaperSource` in silent printing by changing the `PaperSource` property in `PageSettings` and pass it as a parameter with printer name to the `Print` API. 
+You can customize [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) in silent printing by changing the [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) property in [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0) and passing it as a parameter with printer name to the `Print` API. 
 
 N> The sample requires the `System.Drawing` assembly to change the paper source. 
 
 Example
 
-The following code example illustrates to set `PaperSource` for Your printer. Pass the required `PaperSource` value which you need in the `PageSettings`. 
+The following code example illustrates how to set [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) for Your printer. In the [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0), pass the required [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) value. 
 
 {% tabs %}
 {% highlight c# %}
@@ -294,7 +294,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {
 
  //Enter Your Printer’s Name
- printerSettings.PrinterName = "XXXXX";
+ printerSettings.PrinterName = "Mention Your printer's name here";
 
  //Changes the papersource in pagesettings
  pageSettings.PaperSource = printerSettings.PaperSources[3];
