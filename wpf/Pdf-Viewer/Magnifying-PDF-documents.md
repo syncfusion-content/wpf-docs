@@ -50,7 +50,7 @@ The [ZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfVi
 {% tabs %}
 {% highlight c# %}
 //Get the current zoom percentage.
-int currentZoomPercnetage = pdfViewer.ZoomPercentage;
+int currentZoomPercentage = pdfViewer.ZoomPercentage;
 {% endhighlight %}
 {% endtabs %}
 
