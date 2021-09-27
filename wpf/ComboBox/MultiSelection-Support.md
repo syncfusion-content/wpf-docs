@@ -9,7 +9,7 @@ documentation: ug
 
 # MultiSelection Support in WPF ComboBox (ComboBoxAdv)
 
-This section explains how to select the multiple items and select the items programmatically in the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
+This section explains how to select the multiple items and select the items programmatically in the [WPF ComboBox](https://www.syncfusion.com/wpf-controls/combobox) (ComboBoxAdv) control.
 
 ## Properties
 
@@ -39,7 +39,7 @@ NA</td></tr>
 
 ## Adding multiple selections to an application
 
-You can select the multiple items in the WPF `ComboBoxAdv` control by setting the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
+You can select the multiple items in the WPF ComboBox (ComboBoxAdv) control by setting the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html#Syncfusion_Windows_Tools_Controls_ComboBoxAdv_AllowMultiSelect) property to `true`.
 
 {% tabs %}
 
