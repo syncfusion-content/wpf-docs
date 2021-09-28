@@ -69,7 +69,7 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 </tr>
 <tr>
 <td>Page count tool</td>
-<td>PART_LableTotalPageCount</td>
+<td>PART_LabelTotalPageCount</td>
 <td>System.Windows.Controls.TextBlock</td>
 </tr>
 <tr>
