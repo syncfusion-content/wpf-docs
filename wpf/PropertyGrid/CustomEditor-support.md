@@ -579,7 +579,7 @@ The [`PropertyGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Prope
 
 The [`Create`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.ITypeEditor.html#Syncfusion_Windows_PropertyGrid_ITypeEditor_Create_System_Reflection_PropertyInfo_) method in the custom editor class can be used to create and assign the required editor controls for specific property items. The Create method's PropertyInfo parameter allows users to customize the editor control based on the value of [`PropertyInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.propertyinfo?view=net-5.0).
 
-N> Only when we assign the custom editor using the [`EditorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType) property of the [`CustomEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class can multiple properties in the `PropertyGrid` have the same custom editor.
+N> When assigning the custom editor using the [`EditorType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html#Syncfusion_Windows_PropertyGrid_CustomEditor_EditorType) property of the [`CustomEditor`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PropertyGrid.CustomEditor.html) class, you can use the same custom editor for multiple properties of the same data type in the `PropertyGrid` using `PropertyType` and `HasPropertyType` properties. Otherwise, you must create a new `CustomEditor` class and assign each property by using `Properties` collection property for proper functionality.
 
 {% tabs %}
 {% highlight C# %}
