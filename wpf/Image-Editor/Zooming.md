@@ -21,14 +21,20 @@ At a time, this Increase/Decrease icon can increase/decrease the level upto 10 p
 
 ## Mouse wheel
 
-You can also zoom an image using mouse wheel. Based on the mouse wheel, delta images will be zoomed.
+You can also zoom an image using the mouse wheel. Based on the mouse wheel, delta images will be zoomed from the cursor position.
 
 ![ImageEditor](Images/ZoomedImage.png) 
 
 ## Panning
 
+## With toolbar
+
 Zoomed image can be panned to view the hidden portion. To enable pan, click the pan icon in the top toolbar. This enables the panning operation on the image. When panning is enabled, shapes or text added in the image cannot be resized or repositioned. To resize the shape, enable the Select icon in the toolbar; it will disable the pan operation.
 
 Select and Pan operations work like toggle functions.
+
+## Without toolbar (Programmatically)
+
+Panning can be enabled using the `EnablePanning` property rather than the toolbar icons. When panning is enabled, shapes and tests cannot be selected. By default, the property is set to false.
 
 ![ImageEditor](Images/Panning.png) 
