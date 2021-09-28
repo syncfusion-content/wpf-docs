@@ -123,8 +123,18 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
+<td>Sticky note tool</td>
+<td>PART_StickyNote</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
 <td>Ink tool</td>
 <td>PART_Ink</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Ink eraser tool</td>
+<td>PART_InkEraser</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
