@@ -141,7 +141,7 @@ N>
 * If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
 
 ## Show date picker
-You can enable the date picker for the calendar by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different calendar views.
+You can enable the date picker for the scheduler by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -155,6 +155,8 @@ this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.ShowDatePickerButton = true;
 {% endhighlight %}
 {% endtabs %}
+
+![Header date picker in WPF scheduler](Date-Navigation_Images/Show-Date-Picker.png)
 
 N> The header DatePicker will not be shown if `CalendarIdentifier` is specified other than `GregorianCalendar.`
 
