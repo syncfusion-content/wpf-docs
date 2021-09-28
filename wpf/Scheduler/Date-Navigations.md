@@ -156,7 +156,7 @@ this.Schedule.ShowDatePickerButton = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Header date picker in WPF scheduler](Date-Navigation_Images/Show-Date-Picker.png)
+![Show date picker in WPF scheduler header](Date-Navigation_Images/Show-Date-Picker.png)
 
 N> The header DatePicker will not be shown if `CalendarIdentifier` is specified other than `GregorianCalendar.`
 
