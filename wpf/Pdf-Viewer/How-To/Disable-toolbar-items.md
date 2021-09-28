@@ -69,7 +69,7 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 </tr>
 <tr>
 <td>Page count tool</td>
-<td>PART_LabelTotalPageCount</td>
+<td>PART_LableTotalPageCount</td>
 <td>System.Windows.Controls.TextBlock</td>
 </tr>
 <tr>
@@ -123,8 +123,18 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Shapes.Rectangle</td>
 </tr>
 <tr>
+<td>Sticky note tool</td>
+<td>PART_StickyNote</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
 <td>Ink tool</td>
 <td>PART_Ink</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+<tr>
+<td>Ink eraser tool</td>
+<td>PART_InkEraser</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
