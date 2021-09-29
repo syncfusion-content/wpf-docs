@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Color Picker Palette
 
-This section explains how to create a WPF [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) and explains about its structure and features.
+This section explains how to create a [WPF ColorPickerPalette](https://www.syncfusion.com/wpf-controls/color-picker-palette) and explains about its structure and features.
 
 ## Control Structure
 
@@ -38,7 +38,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF ColorPickerPalette via designer
 
-You can add the `ColorPickerPalette` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
+You can add the WPF Color Picker Palette control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.Shared.WPF
 
