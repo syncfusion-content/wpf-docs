@@ -9,11 +9,11 @@ keywords: getting started
 
 # Getting Started with WPF RichTextBox (SfRichTextBoxAdv)
 
-This section describes how to get started with SfRichTextBoxAdv control.
+This section describes how to get started with [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) (SfRichTextBoxAdv) control.
 
 ## Assembly Reference
 
-You can find SfRichTextBoxAdv control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
+You can find WPF RichTextBox (SfRichTextBoxAdv) control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
 
 * Syncfusion.SfRichTextBoxAdv.WPF
 
