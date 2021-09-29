@@ -2313,7 +2313,7 @@ N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type
 
 #### BackStageButton Visibility
 
-The `Visibility` property can be used to show or hide the `BackStageButton` in the ribbon.
+The Ribbon control allows to show or hide the `BackStageButton`. The `Visibility` property is used to show or hide the backstagebutton in the ribbon.
 
 The following code example illustrates how to show or hide  the `BackStageButton`.
 
