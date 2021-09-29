@@ -41,6 +41,7 @@ N>
 * When the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence. If you want to override this behavior set `FlowDirection` after `CalendarIdentifier.`
 * The scheduler uses the `CalendarIdentifier` property to determine which calendar to use to localize and format the header date, view header day, and date, time ruler, and DatePicker, and TimePicker in the appointment editor.
 * By default, the scheduler uses the `GregorianCalendar` for the app’s preferred language.
+* The Scheduler Time mode (12 hour or 24 hour) does not change depending on the calendar type; however, the time format can be changed depending on the calendar type by using [Day view time text formatting](https://help.syncfusion.com/wpf/scheduler/daysview#time-text-formatting) and [Timeline view time text formatting](https://help.syncfusion.com/wpf/scheduler/timelineview#time-text-formatting).
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,11 +53,24 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
 
+![Calendar types in WPF scheduler](Calendar-Type_Images/Calendar-type.png)
+
 ## DateTime values in Calendar types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar.`
 
-* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type.
+* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type. For example, DisplayDate = new DateTime(1442, 12, 2);
 
-* `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and scheduler will handle that DateTime.
+* `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and scheduler will handle that DateTime. For example,  DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+
+{% tabs %}
+{% highlight xaml %}
+<scheduler:SfScheduler x:Name="Schedule"
+                       CalendarIdentifier="HijriCalendar" />
+{% endhighlight %}
+{% highlight c# %}
+this.Schedule.CalendarIdentifier = "HijriCalendar";
+this.Schedule.DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+{% endhighlight %}
+{% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)
