@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WPF DataGrid (SfDataGrid)
 
-SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,7 +85,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfDataGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+WPF DataGrid (SfDataGrid) control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
 In the below screen shot, the OrderID column sorted. Then the CustomerName column is sorted against the OrderID data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of OrderID column is preserved and CustomerName column sorted against OrderID column.
 
