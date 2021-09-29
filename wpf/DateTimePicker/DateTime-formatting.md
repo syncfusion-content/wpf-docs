@@ -9,7 +9,7 @@ documentation: ug
 
 # DateTime formatting in WPF DateTimePicker (DateTimeEdit)
 
-you can specify the selected datetime display format in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.DateTimeEdit.html) by using the predefined patterns and custom patterns.
+you can specify the selected datetime display format in the [WPF DateTimePicker](https://www.syncfusion.com/wpf-controls/datetimepicker) (DateTimeEdit) by using the predefined patterns and custom patterns.
 
 ## Predefined display patterns
 

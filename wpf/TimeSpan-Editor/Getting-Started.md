@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF TimeSpan Editor (TimeSpanEdit)
 
-This section explains how to create a WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.TimeSpanEdit.html) and explains about its structure and features.
+This section explains how to create a [WPF TimeSpan Editor](https://www.syncfusion.com/wpf-controls/timespan-editor) (TimeSpanEdit) and explains about its structure and features.
 
 ## Control Structure
 
@@ -25,7 +25,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF TimeSpanEdit via designer
 
-You can add the `TimeSpanEdit` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
+You can add the `WPF TimeSpan Editor` (TimeSpanEdit) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.Shared.WPF
 
