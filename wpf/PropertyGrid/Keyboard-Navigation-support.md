@@ -62,8 +62,18 @@ The following table explains how the navigation performed between properties,
 </tr>
 <tr>
 <td>8</td>
+<td>Shift + Tab</td>
+<td>Selection will move from current Property item to previous property item. It also allows to edit the value in the editor field on other key presses.</td>
+</tr>
+<tr>
+<td>8</td>
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Enter</td>
+<td>If the property’s value field containing the `Collection Editor` is focused, then {{'**CollectionEditor**'| markdownify }} dialog will be opened.</td>
 </tr>
 </table>
 
