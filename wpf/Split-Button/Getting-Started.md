@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Split Button
 
-This section provides an overview of how to work with Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
+This section provides an overview of how to work with WPF Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
 
 ## Control structure
 
@@ -31,7 +31,7 @@ In this walk through, you will create WPF application that contains Split Button
 
 ### Adding control via designer
 
-Split Button control can be added to the application by dragging **SplitButtonAdv** from toolbox and dropping it in designer view. After dropping the controls in designer view, the assemblies such as **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will be added into the XAML.
+WPF Split Button control can be added to the application by dragging **SplitButtonAdv** from toolbox and dropping it in designer view. After dropping the controls in designer view, the assemblies such as **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will be added into the XAML.
 
 {% tabs %}
 {% highlight xaml %}
