@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF TimeSpan Editor (TimeSpanEdit)
 
-This section explains how to create a WPF [TimeSpan Editor](https://www.syncfusion.com/wpf-controls/timespan-editor) (TimeSpanEdit) and explains about its structure and features.
+This section explains how to create a [WPF TimeSpan Editor](https://www.syncfusion.com/wpf-controls/timespan-editor) (TimeSpanEdit) and explains about its structure and features.
 
 ## Control Structure
 
