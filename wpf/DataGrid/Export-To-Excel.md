@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To Excel in WPF DataGrid (SfDataGrid)
 
-DataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
