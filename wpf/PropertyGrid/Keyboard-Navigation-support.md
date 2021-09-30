@@ -63,7 +63,13 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>8</td>
 <td>Shift + Tab</td>
-<td>Selection will move from current Property item to previous property item. It also allows to edit the value in the editor field on other key presses.</td>
+<td>Selection will move from current Property item to previous property item. It also allows to edit the value in the editor field on other key presses.
+<br/> 
+<br/>
+<img src="KeyNavigation-Images/PropertyGrid_CollectionEditor_Navigation.png" alt="Collection editor in PropertyGrid by navigation"/>
+<br/>
+<br/>
+</td>
 </tr>
 <tr>
 <td>8</td>
