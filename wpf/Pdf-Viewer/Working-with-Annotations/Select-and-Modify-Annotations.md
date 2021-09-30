@@ -55,12 +55,13 @@ private void SelectAnnotation()
 
 Similarly, we can implement it for all other annotations.
 
-### How to obtain the name of an annotation
+### How to get and set name of an annotation
 
-Annotation’s name can be obtained either for newly added annotation or the annotation which already exist. In the following sections, the ink annotation was explained brevity and similarly, we can obtain names for all other annotations.
+Annotation’s name can be obtained either for newly added annotation or the annotation that already exist. Also, you can modify the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property to give annotations a unique name. In the following sections, the ink annotation was explained brevity and similarly, you can get and set names for all other annotations.
 
-#### Getting annotation’s name while adding annotation
-Added annotation’s name can be obtained from respective annotation changed event. The following code snippet explains how to get the annotation’s name while adding the annotation to the document.
+####  Get and Set Annotations’ Name
+
+The annotations’ name can be obtained from the annotation changed event. The following code sample explains how to get the annotations’ name when adding it to the document.
 
 {% tabs %}
 {% highlight C# %}
@@ -76,6 +77,21 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
 
 {% endhighlight %}
 {% endtabs %}
+
+You can also change the name of an annotation. The following code sample demonstrates how to change the name of an ink annotation. Similarly, you can implement it for all other annotations. 
+{% tabs %}
+{% highlight C# %}
+
+//Set the annotation name 
+private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e) 
+{  
+   e.Name = ”YOUR OWN NAME”;     
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The annotation name must be unique. If there are multiple annotations with the same name in the document, any functions based on the name will only affect the first one identified. 
 
 
 #### Getting annotation’s name for existing annotation
