@@ -58,18 +58,45 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 ## DateTime values in Calendar types
 You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar.`
 
-* A `DateTime` instance without specifying calendar type. A scheduler will handle the `DateTime` value for the specified calendar type. For example, DisplayDate = new DateTime(1442, 12, 2);
-
-* `DateTime` instance with specified calendar type. If calendar type is mentioned then the date should be respective to that calendar so that the date value will be converted to Gregorian DateTime and scheduler will handle that DateTime. For example,  DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+* Create appointment with start and end time value by declaring the calendar type and respective calendar type date.
 
 {% tabs %}
-{% highlight xaml %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HijriCalendar" />
-{% endhighlight %}
 {% highlight c# %}
-this.Schedule.CalendarIdentifier = "HijriCalendar";
-this.Schedule.DisplayDate = new DateTime(1442, 12, 2, new HijriCalendar());
+// Creating an instance for the schedule appointment collection.
+var appointments = new ScheduleAppointmentCollection();
+
+// Adding schedule appointment in the schedule appointment collection.
+appointments.Add(new ScheduleAppointment()
+{
+   Subject = "Meeting",
+   // StartTime and EndTime value specified with calendar type and respective calendar date.
+   StartTime = new DateTime (1443, 02, 22, 10, 0, 0, new HijriCalendar()),
+   EndTime = new DateTime(1443, 02, 22, 11, 0, 0, new HijriCalendar()),
+});
+
+// Adding the schedule appointment collection to the ItemsSource.
+this.scheduler.ItemsSource = appointments;
+{% endhighlight %}
+{% endtabs %}
+
+* Create an appointment with a start and end time by declaring a local system date; in that case, the system date will be converted to the relevant calendar type date.
+
+{% tabs %}
+{% highlight c# %}
+// Creating an instance for the schedule appointment collection.
+var appointments = new ScheduleAppointmentCollection();
+
+// Adding schedule appointment in the schedule appointment collection.
+appointments.Add(new ScheduleAppointment()
+{
+   Subject = "Meeting",
+  // StartTime and EndTime values specified with local system date will be converted to the Hijiri calendar mentioned.
+   StartTime = new DateTime(2021, 09, 29, 10, 0, 0, 0),
+   EndTime = new DateTime(2021, 09, 29, 11, 0, 0, 0),
+});
+
+// Adding the schedule appointment collection to the ItemsSource.
+this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
 
