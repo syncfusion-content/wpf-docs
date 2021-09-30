@@ -134,6 +134,10 @@ From the 19.3 version, the [MaximumZoomPercentage](https://help.syncfusion.com/c
 //Set the maximum zoom percentage.
 pdfviewer.MaximumZoomPercentage = 6400;
 
+//Magnify the document to the zoom percentage you needed (less than or equal to 6400).
+//In the below example, control will magnify to 1200% zoom.
+pdfviewer.ZoomTo(1200);
+
 {% endhighlight %}
 {% endtabs %}
 
