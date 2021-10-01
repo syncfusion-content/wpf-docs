@@ -123,7 +123,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to load a file stream using `ItemSource` property
+Refer the below code snippet to load a file [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as Stream using the `ItemSource` property.
@@ -131,7 +131,7 @@ pdfViewer.ItemSource = new FileStream(@"HTTP Succinctly.pdf",FileMode.Open);
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to load a `PdfLoadedDocument` object using `ItemSource` property
+Refer the below code snippet to load a [PdfLoadedDocument](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property.
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as PdfLoadedDocument object using the `ItemSource` property.
