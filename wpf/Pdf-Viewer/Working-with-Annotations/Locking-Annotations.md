@@ -13,11 +13,11 @@ The WPF PDF Viewer provides a support to enable or disable lock option for the a
 
 ## Lock an annotation from code behind
 
-The annotation can be locked either by default settings or by annotation changed events using the `IsLocked` API.
+The annotation can be locked either by default settings or by annotation changed events using the [IsLocked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_IsLocked) API.
 
 ### Default settings
 
-To lock an annotation, set the `IsLocked` value in annotation settings as true. The following code sample illustrates how to lock all annotations by default.
+To lock an annotation, set the [IsLocked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_IsLocked) value in annotation settings as true. The following code sample illustrates how to lock all annotations by default.
 
 {% tabs %}
 {% highlight C# %}
@@ -51,7 +51,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ### Annotation changed event
 
-To lock an annotation by annotation changed event, set the value of `IsLocked` in the annotation changed event as true. The following code sample illustrates how to lock sticky note annotation by using the annotation changed event while adding an annotation.
+To lock an annotation by annotation changed event, set the value of [IsLocked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_IsLocked) in the annotation changed event as true. The following code sample illustrates how to lock sticky note annotation by using the annotation changed event while adding an annotation.
 
 {% tabs %}
 {% highlight C# %}
