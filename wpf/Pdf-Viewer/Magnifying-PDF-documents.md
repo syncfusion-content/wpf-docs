@@ -128,6 +128,8 @@ private void PdfViewer_ZoomChanged(object sender, ZoomEventArgs args)
 
 From the 19.3 version, the [MaximumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MaximumZoomPercentage) of the PDF Viewer can be extended up to 6400% with the support of active view port rendering at higher zoom percentages. It renders only the part of the PDF file that is visible on-screen and ignoring the parts that are outside the viewport. The mode is automatically enabled when the page size or zoom increased beyond a specified limit on the zooming.  This approach will be helpful to open the large-size pages containing PDF documents at higher zoom levels.
 
+N> Active view port rendering is supported only for the PDFium (default) rendering engine.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -140,5 +142,3 @@ pdfviewer.ZoomTo(1200);
 
 {% endhighlight %}
 {% endtabs %}
-
-N> This is applicable only for the PDFium (default) rendering engine.
