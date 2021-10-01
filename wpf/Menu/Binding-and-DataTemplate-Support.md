@@ -13,7 +13,7 @@ Data Binding is the process of establishing a connection between the application
 
 ### Use Case Scenario
 
-MenuAdv helps users to bind a collection of business objects to MenuItemAdv and bind hierarchical levels of data to MenuItemAdv.
+[WPF Menu](https://www.syncfusion.com/wpf-controls/menu) (MenuAdv) helps users to bind a collection of business objects to MenuItemAdv and bind hierarchical levels of data to MenuItemAdv.
 
 ## Adding the Binding and DataTemplate Support to an Application
 
