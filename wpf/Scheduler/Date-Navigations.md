@@ -141,7 +141,7 @@ N>
 * If the [ShowAgendaView](https://help.syncfusion.com/wpf/scheduler/month-view#month-agenda-view) is true in a month view, the month view should navigate to the day view by single-clicking on the agenda date view header, otherwise, the month view should navigate to the day view by single-clicking on the date in a month cell.
 
 ## Show date picker
-You can enable the date picker for the scheduler by using the `ShowDatePickerButton` property in the scheduler, which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
+You can enable the date picker for the scheduler by using the [ShowDatePickerButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowDatePickerButton) property in the [SfScheduler,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,10 +158,10 @@ this.Schedule.ShowDatePickerButton = true;
 
 ![Show date picker in WPF scheduler header](Date-Navigation_Images/Show-Date-Picker.png)
 
-N> The header DatePicker will not be shown if `CalendarIdentifier` is specified other than `GregorianCalendar.`
+N> The header DatePicker will not be shown if [CalendarIdentifier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) is specified other than [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
 
 ## Allowed views
-You can quickly navigate to the different scheduler views by using the `AllowedViewTypes` property in the `SfScheduler.` The views set to this property will display as a view button in the scheduler header view. This UI will be responsive as showing more icons and will be updated based on the window size change.
+You can quickly navigate to the different scheduler views by using the [AllowedViewTypes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AllowedViewTypes) property in the [SfScheduler.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The views set to this property will display as a view button in the scheduler header view. This UI will be responsive as showing more icons and will be updated based on the window size change.
 
 {% tabs %}
 {% highlight xaml %}
