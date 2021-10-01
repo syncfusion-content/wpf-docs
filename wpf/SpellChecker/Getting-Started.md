@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF SpellChecker (SfSpellChecker)
 
-This section explains how to create a WPF [SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.SfSpellChecker.html) and spell check the text.
+This section explains how to create a [WPF SpellChecker](https://www.syncfusion.com/wpf-controls/spellchecker) (SfSpellChecker) and spell check the text.
 
 ## Control Structure
 
@@ -415,7 +415,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 ## Theme
 
-SfSpellChecker supports various built-in themes. Refer to the below links to apply themes for the SfSpellChecker,
+WPF SpellChecker (SfSpellChecker) supports various built-in themes. Refer to the below links to apply themes for the SfSpellChecker,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	

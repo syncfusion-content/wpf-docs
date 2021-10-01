@@ -31,11 +31,11 @@ Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syn
 
 ### Add SfTreeView to Project
 
-The SfTreeView control can be added to project by the following ways.
+The WPF TreeView (SfTreeView) control can be added to project by the following ways.
 
 #### Adding SfTreeView by designer.
 
-SfTreeView control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+WPF TreeView (SfTreeView) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![WPF TreeView Designer](GettingStarted_images/wpf-treeview-designer.png)
 
@@ -670,7 +670,7 @@ public class FileManagerViewModel
 
 ## Theme
 
-SfTreeView supports various built-in themes. Refer to the below links to apply themes for the SfTreeView,
+WPF TreeView (SfTreeView) supports various built-in themes. Refer to the below links to apply themes for the SfTreeView,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
