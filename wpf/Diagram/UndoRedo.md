@@ -134,6 +134,7 @@ diagram.HistoryManager.BeginComposite();
 The `EndComposite()` method of the `HistoryManager` class allows you to end the group actions that are stored in the stack history.
 
 {% tabs %}
+{% highlight C# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Enable the undo and redo actions
@@ -152,6 +153,7 @@ diagram.HistoryManager.EndComposite();
 History manager class of SfDiagram control allows you to view the undo and redo stack values where you can get what the actions, values, and elements are stored in the history manager stack by using the `HistoryChangedEventArgs` argument value of `HistoryChangedEvent` event.
 
 {% tabs %}
+{% highlight C# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Hook the history changed event.
