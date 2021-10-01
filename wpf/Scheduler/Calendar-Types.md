@@ -56,9 +56,9 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 ![Calendar types in WPF scheduler](Calendar-Type_Images/Calendar-type.png)
 
 ## DateTime values in Calendar types
-You can give all the DateTime values such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways When calendar identifier is specified other than `GregorianCalendar.`
+All the DateTime values can be given such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways when calendar identifier is specified other than `GregorianCalendar.`
 
-* Create appointment with start and end time value by declaring the calendar type and respective calendar type date.
+* Create an appointment with a start and end time value by declaring the calendar type and respective calendar type date.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
 
-* Create an appointment with a start and end time by declaring a local system date; in that case, the system date will be converted to the relevant calendar type date.
+* Create an appointment with a start and end time by declaring the local system date; in that case, the system date will be converted to the relevant calendar type date.
 
 {% tabs %}
 {% highlight c# %}
