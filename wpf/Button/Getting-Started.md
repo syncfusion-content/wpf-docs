@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF Button (ButtonAdv)
 
-This section provides an overview of how to work with Button control. It describes the control structure, the control initialization  and the image setting to the control.
+This section provides an overview of how to work with [WPF Button](https://www.syncfusion.com/wpf-controls/button) control. It describes the control structure, the control initialization  and the image setting to the control.
 
 ## Control structure
 
@@ -31,7 +31,7 @@ In this walk through, will create WPF application that contains Button control. 
 
 ### Adding control via designer
 
-Button control can be added to the application by dragging **ButtonAdv** from toolbox and dropping it in designer view. After dropping the control in designer view, the assembly **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will also be added into the XAML.
+WPF Button control can be added to the application by dragging **ButtonAdv** from toolbox and dropping it in designer view. After dropping the control in designer view, the assembly **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will also be added into the XAML.
 
 {% tabs %}
 {% highlight xaml %}
@@ -517,7 +517,7 @@ The [IsCancel](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Contr
 
 ## Theme
 
-Button supports various built-in themes. Refer to the below links to apply themes for the Button,
+WPF Button supports various built-in themes. Refer to the below links to apply themes for the Button,
 
   * [Apply theme using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager)
 	
