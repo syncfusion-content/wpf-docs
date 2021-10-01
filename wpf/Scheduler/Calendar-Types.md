@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Calendar Types in WPF Scheduler (SfScheduler)
-This section describes how to change the calendar types of scheduler control using the `CalendarIdentifier.`
+This section describes how to change the calendar types of scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
 
 ## Types of Calendar
-The scheduler control supports the different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the `CalendarIdentifier` property in Scheduler. The default value of the `CalendarIdentifier` property is `GregorianCalendar.`
+The scheduler control supports the different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the [CalendarIdentifier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) property in [Scheduler.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The default value of the `CalendarIdentifier` property is [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
 
 <table>
 <tr>
@@ -38,10 +38,10 @@ The scheduler control supports the different types of calendars such as Gregoria
 </table>
 
 N> 
-* When the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence. If you want to override this behavior set `FlowDirection` after `CalendarIdentifier.`
+* When the [CalendarIdentifier](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) and [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=net-5.0) properties are set, the `FlowDirection` property is given higher precedence. If you want to override this behavior set `FlowDirection` after `CalendarIdentifier.`
 * The scheduler uses the `CalendarIdentifier` property to determine which calendar to use to localize and format the header date, view header day, and date, time ruler, and DatePicker, and TimePicker in the appointment editor.
-* By default, the scheduler uses the `GregorianCalendar` for the app’s preferred language.
-* The Scheduler Time mode (12 hour or 24 hour) does not change depending on the calendar type; however, the time format can be changed depending on the calendar type by using [Day view time text formatting](https://help.syncfusion.com/wpf/scheduler/daysview#time-text-formatting) and [Timeline view time text formatting](https://help.syncfusion.com/wpf/scheduler/timelineview#time-text-formatting).
+* By default, the scheduler uses the [GregorianCalendar](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0) for the app’s preferred language.
+* The Scheduler Time mode (12 hour or 24 hour) does not change depending on the calendar type; however, the time format can be changed depending on the calendar type by using [Day view time text formatting](https://help.syncfusion.com/wpf/scheduler/daysview#time-text-formatting) and [Timeline view time text formatting.](https://help.syncfusion.com/wpf/scheduler/timelineview#time-text-formatting)
 
 {% tabs %}
 {% highlight xaml %}
@@ -56,7 +56,7 @@ this.Schedule.CalendarIdentifier = "HijriCalendar";
 ![Calendar types in WPF scheduler](Calendar-Type_Images/Calendar-type.png)
 
 ## DateTime values in Calendar types
-All the DateTime values can be given such as `DisplayDate,` `SelectedDate,` `BlackoutDates,` Appointment `StartTime,` and `EndTime,` `SpecialTimeRegion,` Start and End time values in two ways when calendar identifier is specified other than `GregorianCalendar.`
+All the DateTime values can be given such as [DisplayDate,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DisplayDate) [SelectedDate,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectedDate) [BlackoutDates,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_BlackoutDates) Appointment [StartTime,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime) and [EndTime,](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime) SpecialTimeRegion [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) values in two ways when calendar identifier is specified other than [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
 
 * Create an appointment with a start and end time value by declaring the calendar type and respective calendar type date.
 
