@@ -130,6 +130,8 @@ From the 19.3 version, the [MaximumZoomPercentage](https://help.syncfusion.com/c
 
 N> Active view port rendering is supported only for the PDFium (default) rendering engine.
 
+You need to set the [MaximumZoomPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_MaximumZoomPercentage) and call [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ZoomTo_System_Int32_) method to achieve it from the application level as shown in the following code example. 
+
 {% tabs %}
 {% highlight c# %}
 
