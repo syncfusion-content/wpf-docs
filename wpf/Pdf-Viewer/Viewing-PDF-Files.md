@@ -123,6 +123,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
+Refer the below code snippet to load a file stream using `ItemSource` property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as Stream using the `ItemSource` property.
@@ -130,6 +131,7 @@ pdfViewer.ItemSource = new FileStream(@"HTTP Succinctly.pdf",FileMode.Open);
 {% endhighlight %}
 {% endtabs %}
 
+Refer the below code snippet to load a `PdfLoadedDocument` object using `ItemSource` property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as PdfLoadedDocument object using the `ItemSource` property.
