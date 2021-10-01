@@ -123,7 +123,7 @@ namespace PdfViewerDemo
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to load a file [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
+Refer the below code snippet to load a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?redirectedfrom=MSDN) using the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) property
 {% tabs %}
 {% highlight c# %}
 //Load PDF file as Stream using the `ItemSource` property.
