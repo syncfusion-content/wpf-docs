@@ -7,6 +7,10 @@ control: Ribbon
 documentation: ug
 ---
 
+# BackStage in WPF Ribbon
+
+Backstage is a separate view containing tabs and buttons that can show an application’s information and basic settings. The backstage items can also be arranged at either the top or bottom. It provides different types of animations such as fade, scale, and zoom as well as support to customize the animation duration.
+
 ## BackStage settings in Ribbon
 
 The BackStage can be added by using [BackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_BackStage) property of Ribbon. To show the BackStage by, click the `FILE` Menu in Ribbon like in Microsoft Outlook. 
@@ -2311,5 +2315,85 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type-and-placement-target-for-Backstage) in GitHub.
 
+#### Customize the BackStageButton visibility
 
+Ribbon control allows to show or hide the `BackStageButton` by using its `Visibility` property.
+
+The following code example illustrates how to show or hide  the `BackStageButton`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window
+    x:Class="BackStageButton.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BackStageButton"
+    xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    Title="Ribbon"
+    Width="800"
+    Height="450"
+    skinManager:SfSkinManager.Theme="{skinManager:SkinManagerExtension ThemeName=Office2019Colorful}">
+    <Grid>
+        <syncfusion:Ribbon Name="ribbon" BackStageHeader="File">
+            <syncfusion:Ribbon.BackStage>
+                <syncfusion:Backstage x:Name="ribbonBackStage">
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="I" Header="Info" />
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="R" Header="Recent" />
+                    <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="N" Header="New" />
+                </syncfusion:Backstage>
+            </syncfusion:Ribbon.BackStage>
+            <syncfusion:RibbonTab Caption="Home">
+                <syncfusion:RibbonBar
+                    Name="ribbonFormatBar"
+                    syncfusion:Ribbon.KeyTip="FN"
+                    Header="Clipboard">
+                    <syncfusion:RibbonButton
+                        Margin="1"
+                        Label="Paste"
+                        SizeForm="Large" />
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        Label="Cut"
+                        SizeForm="Small" />
+                    <syncfusion:RibbonButton
+                        HorizontalAlignment="Left"
+                        Label="Copy"
+                        SizeForm="Small" />
+                    <syncfusion:RibbonButton Label="Format Painter" SizeForm="Small" />
+                </syncfusion:RibbonBar>
+                <syncfusion:RibbonBar Header="Visibility">
+                    <syncfusion:RibbonCheckBox
+                        Margin="3"
+                        Content="Show File button"
+                        IsChecked="True" />
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+            <syncfusion:RibbonTab Caption="Insert" />
+        </syncfusion:Ribbon>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public MainWindow()
+{
+    InitializeComponent();
+    this.Loaded += MainWindow_Loaded;
+}
+
+private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+{
+    ribbon.BackStageButton.Visibility = Visibility.Collapsed;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon BackStageButton collapsed by using Visibility property](GettingStarted_images/wpf-ribbon-backstagebutton-visibility.png)
 
