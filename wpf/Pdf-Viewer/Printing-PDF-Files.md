@@ -276,7 +276,7 @@ namespace PdfViewer
 
 ## Customizing Paper source in Silent Printing
 
-You can customize [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) in silent printing by changing the [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) property in [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0) and passing it as a parameter with printer name to the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_PdfViewer_PdfDocumentView_Print_System_String_System_Drawing_Printing_PageSettings_) API. 
+You can customize [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) in silent printing by changing the [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) property in [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0) and passing it as a parameter with printer name to the `Print` API. 
 
 N> The `System.Drawing` assembly is required. 
 

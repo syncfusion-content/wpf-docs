@@ -9,7 +9,7 @@ documentation: ug
 
 # Palettes in WPF Surface Chart (SfSurfaceChart)
 
-Surface chart provides options to apply different kinds of palettes.
+[WPF Surface Chart](https://www.syncfusion.com/wpf-controls/surface-chart) provides options to apply different kinds of palettes.
 
 Some of the predefined palettes include:
 
