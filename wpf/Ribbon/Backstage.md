@@ -2315,7 +2315,7 @@ When the [`PlacementType`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 N> View [sample](https://github.com/SyncfusionExamples/How-to-set-placement-type-and-placement-target-for-Backstage) in GitHub.
 
-#### Customize the BackStageButton visibility
+## Customize the BackStageButton visibility
 
 Ribbon control allows to show or hide the `BackStageButton` by using its `Visibility` property.
 
