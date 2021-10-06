@@ -33,7 +33,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Once the strikethrough inclusion mode is activated, you can strikethrough the required text by selecting it. You can select the text by holding down the left mouse button and dragging the mouse pointer over the text. The following image shows the striked text in the PDF file.
+Once the strikethrough inclusion mode is activated, you can strikethrough the required text by selecting it. You can select the text by holding down the left mouse button and dragging the mouse pointer over the text. The following image shows the strikethrough text in the PDF file.
 
  ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-1.png)
 
