@@ -31,7 +31,7 @@ This event is triggered when the hyperlink in the PDF document is clicked.</td><
 HyperlinkClickedEventArgs</td></tr>
 </table>
 
-N> In version 19.3.0.43, The API names HyperLinkClicked and HyperLinkMouseOver is renamed to HyperlinkClicked and HyperlinkMouseOver and the HyperLinkClickedEventArgs is renamed to HyperlinkClickedEventArgs.
+N> In version 19.3.0.43, You can use HyperlinkClicked and HyperlinkMouseOver API's and the HyperLinkClickedEventArgs is renamed to HyperlinkClickedEventArgs.
 
 ## How to disable hyperlink navigation in PDF viewer control
 
