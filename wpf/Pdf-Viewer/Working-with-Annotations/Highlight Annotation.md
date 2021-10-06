@@ -170,3 +170,50 @@ Selecting delete option from the context menu which will be displayed by right c
 The following image illustrates how to delete the included annotation from the PDF document.
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-8.png)
+
+## Notification when the highlight has changed
+
+The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a strikethrough annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
+
+The following code shows how to wire and handle the event in PdfViewerControl
+
+{% tabs %}
+{% highlight C# %}
+
+//wire the text markup changed event.
+pdfViewer.TextMarkupAnnotationChanged += PdfViewer_TextMarkupAnnotationChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnnotationChangedEventArgs e)
+{
+    //Get the action performed on the annotation 
+    //AnnotationChangedAction to identify action performed for annotation 
+    AnnotationChangedAction action = e.Action;
+
+    //Page index in which this shape annotation was modified 
+    int pageNumber = e.PageNumber;
+
+    //Get annotation's new and old bounds (position and size). 
+    RectangleF newBounds = e.NewBounds;
+    RectangleF oldBounds = e.OldBounds;
+
+    //To identify which type text markup annotation
+    TextMarkupAnnotationType type = e.Type;
+
+    TextMarkupAnnotationSettings settings = e.Settings;
+    //Annotation's properties which can be modify 
+    string author = settings.Author;
+    string subject = settings.Subject;
+    string Text = settings.Text;
+    float opacity = settings.Opacity;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
