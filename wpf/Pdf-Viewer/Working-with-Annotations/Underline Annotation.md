@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Underline text in PDF files using WPF PDF Viewer | Syncfusion
-description: Learn about Underline Annotations support in Syncfusion WPF PDF Viewer control, and the manipulations.
+description: Learn about underline annotation support in Syncfusion WPF PDF Viewer control, and the manipulations.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -20,14 +20,14 @@ If you are using [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 private void EnableUnderlineInclusionMode()
 {
-    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Underline;
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Underline;
 }
 
 {% endhighlight %}
 {% highlight vbnet %}
 
 Private Sub EnableUnderlineInclusionMode()
-    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Underline
+    pdfViewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Underline
 End Sub
 
 {% endhighlight %}
@@ -46,14 +46,14 @@ The underline color is dark green by default. However, you can change the defaul
 
 private void ChangeDefaultUnderlineColor()
 {
-    pdfviewer.UnderlineAnnotationSettings.UnderlineColor = Colors.Blue;
+    pdfViewer.UnderlineAnnotationSettings.UnderlineColor = System.Windows.Media.Colors.Blue;
 }
 
 {% endhighlight %}
 {% highlight vbnet %}
 
 Private Sub ChangeDefaultUnderlineColor()
-    pdfviewer.UnderlineAnnotationSettings.UnderlineColor = Colors.Blue
+    pdfviewer.UnderlineAnnotationSettings.UnderlineColor = System.Windows.Media.Colors.Blue
 End Sub
 
 {% endhighlight %}
@@ -68,7 +68,7 @@ The underline opacity value is 1 by default. However, you can change the default
 
 private void ChangeDefaultUnderlineOpacity()
 {
-    pdfviewer.UnderlineAnnotationSettings.Opacity = 0.5f;
+    pdfViewer.UnderlineAnnotationSettings.Opacity = 0.5f;
 }
 
 {% endhighlight %}
@@ -83,23 +83,23 @@ End Sub
 
 ## Change the default author and subject of the underline annotation
 
-You can change the default Author and subject of the underline annotation programmatically as shown in the following code example.
+You can change the default author and subject of the underline annotation programmatically as shown in the following code example.
 
 {% tabs %}
 {% highlight C# %}
 
 private void ChangeDefaultUnderlineDetails()
 {
-    pdfviewer.UnderlineAnnotationSettings.Author = "your name";
-    pdfviewer.UnderlineAnnotationSettings.Subject = "your subject";
+    pdfViewer.UnderlineAnnotationSettings.Author = "your name";
+    pdfViewer.UnderlineAnnotationSettings.Subject = "your subject";
 }
 
 {% endhighlight %}
 {% highlight vbnet %}
 
 Private Sub ChangeDefaultUnderlineDetails()
-    pdfviewer.UnderlineAnnotationSettings.Author = "your name"
-    pdfviewer.UnderlineAnnotationSettings.Subject = "your subject"
+    pdfViewer.UnderlineAnnotationSettings.Author = "your name"
+    pdfViewer.UnderlineAnnotationSettings.Subject = "your subject"
 End Sub
 
 {% endhighlight %}
@@ -126,11 +126,11 @@ Selecting properties from the context menu will display the Underline Properties
 *	Appearance
 *	General 
 
-### Appearance tab
+#### Appearance tab
 
 The color and opacity of the underline annotation can be edited using Appearance tab of Underline Properties window.
 
-#### Editing color of the annotation
+##### Editing color of the annotation
 
 The color of the selected underline annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the underline annotation.
 
@@ -142,7 +142,7 @@ The following image illustrated the change in color of the included underline an
 
 ![underline annotation](Annotation-images\Underline-Annotation-4.png)
 
-#### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 The slider displayed in the Appearance tab will allow us to modify the opacity of the selected underline annotation. You can also modify the opacity of the selected underline annotation by giving numeric value in the opacity text box.
 
@@ -154,7 +154,7 @@ The following image illustrates the change in opacity of the included underline 
 
 ![underline annotation](Annotation-images\Underline-Annotation-6.png)
 
-### General tab
+#### General tab
 
 We can add/edit the default Author and Subject to the included underline annotation using General tab of the Underline Properties window.
 
@@ -162,7 +162,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![underline annotation](Annotation-images\Underline-Annotation-7.png)
 
-## Deleting an annotation
+### Deleting an annotation
 
 Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
 
@@ -172,9 +172,9 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Notification when the underline has changed
 
-The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a strikethrough annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
+The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when an underline annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
 
-The following code shows how to wire and handle the event in PdfViewerControl
+The following code shows how to wire and handle the event.
 
 {% tabs %}
 {% highlight C# %}

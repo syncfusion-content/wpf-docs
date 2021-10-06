@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highlight text in PDF files using WPF PDF Viewer | Syncfusion
-description: Learn about Highlight Annotations support in Syncfusion WPF PDF Viewer control, and the manipulations.
+description: Learn about highlight annotation support in Syncfusion WPF PDF Viewer control, and the manipulations.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -47,14 +47,14 @@ The highlight color is yellow by default. However, you can change the default co
 
 private void ChangeDefaultHighlightColor()
 {
-    pdfviewer.HighlightAnnotationSettings.HighlightColor= Colors.Green;
+    pdfviewer.HighlightAnnotationSettings.HighlightColor= System.Windows.Media.Colors.Green;
 }
 
 {% endhighlight %}
 {% highlight vbnet %}
 
 Private Sub ChangeDefaultHighlightColor()
-    pdfviewer.HighlightAnnotationSettings.HighlightColor= Colors.Green
+    pdfviewer.HighlightAnnotationSettings.HighlightColor= System.Windows.Media.Colors.Green
 End Sub
 
 {% endhighlight %}
@@ -84,7 +84,7 @@ End Sub
 
 ## Change the default author and subject of the highlight annotation
 
-You can change the default Author and subject of the highlight annotation programmatically as shown in the following code example.
+You can change the default author and subject of the highlight annotation programmatically as shown in the following code example.
 
 {% tabs %}
 {% highlight C# %}
@@ -127,11 +127,11 @@ Selecting properties from the context menu will display the Highlight Properties
 *	Appearance
 *	General 
 
-### Appearance tab
+#### Appearance tab
 
 The color and opacity of the highlight annotation can be edited using Appearance tab of Highlight Properties window.
 
-#### Editing color of the annotation
+##### Editing color of the annotation
 
 The color of the selected highlight annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the highlight annotation.
 
@@ -143,7 +143,7 @@ The following image illustrates the change in the color of the included highligh
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-4.png)
 
-#### Editing opacity of the annotation
+##### Editing opacity of the annotation
 
 The slider displayed in the Appearance tab will allow us to modify the opacity of the selected highlight annotation. You can also modify the opacity of the selected highlight annotation by giving numeric value in the opacity text box.
 
@@ -155,7 +155,7 @@ The following image illustrates the change in the opacity of the included highli
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-6.png)
 
-### General tab
+#### General tab
 
 We can add/edit the default Author and Subject to the included highlight annotation using General tab of the Highlight Properties window.
 
@@ -163,7 +163,7 @@ The following image illustrates the change in Author and Subject of the included
 
 ![highlight annotation](Annotation-images\Highlight-Annotation-7.png)
 
-## Deleting an annotation
+### Deleting an annotation
 
 Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
 
@@ -173,9 +173,9 @@ The following image illustrates how to delete the included annotation from the P
 
 ## Notification when the highlight has changed
 
-The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a strikethrough annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
+The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when a highlight annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
 
-The following code shows how to wire and handle the event in PdfViewerControl
+The following code shows how to wire and handle the event.
 
 {% tabs %}
 {% highlight C# %}
