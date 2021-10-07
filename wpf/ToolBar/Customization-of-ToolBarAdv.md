@@ -64,9 +64,9 @@ The floating ToolBarAdv can be customized using the FloatingToolBarAdvStyle prop
 
 {% endtabs %}
 
-## Customizing Floating ToolBar Text Foreground
+## Customizing Foreground
 
-Floating ToolBar text foreground can be customized by using the Foreground property of ToolBarAdv.
+The Foreground property of [ToolBarAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.ToolBarAdv.html) can be used to customize the floating ToolBar text foreground.
 
 The following code illustrates how to set the value of the foreground property:
 
