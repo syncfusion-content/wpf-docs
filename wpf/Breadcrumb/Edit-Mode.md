@@ -59,4 +59,142 @@ namespace HierarchicalNavigatorSample
 ![Hierarchy Naviagtor with AutoComplete](Edit-Mode_images/AutoComplete_image.png)
 
 
+## Edit Hierarchy Naviagtor with SearchMemberPath
 
+The [SearchMemberPath] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_SearchMemberPath) property allows to easily edit when Hierarchical naviagtor item has multiple string path name and heirarchical data template.The path given in hierarchical data template should be given to the search member path if edit mode is enabled.
+
+The steps to edit Hierarchical naviagtor items in XAML are as follows: 
+
+1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.And bind the string path in hierarchical data template 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:HierarchyNavigator SearchMemberPath="CountryName" ItemsSource="{Binding CloudDirectories}"  Grid.ColumnSpan="3" Grid.Row="1" x:Name="hierarchicalNavigator" IsEnableEditMode="true" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+    <syncfusion:HierarchyNavigator.ItemTemplate>
+        <HierarchicalDataTemplate  ItemsSource="{Binding SubCollections[Directories]}">
+            <TextBlock Text="{Binding Vals[CountryName]}" Margin="2,0" />
+        </HierarchicalDataTemplate>
+    </syncfusion:HierarchyNavigator.ItemTemplate>
+</syncfusion:HierarchyNavigator>
+
+{% endhighlight %}
+{% endtabs %}
+
+2.Create a model class for Key row and added keys to the dictionary.
+
+{% endhighlight %}
+{% highlight C# %}
+
+public class KeyTable : ObservableCollection<KeyRow>
+    {
+        
+    }
+public class KeyRow
+    {
+
+        private void OnPropertyChanged([CallerMemberName] string name = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
+        private Dictionary<string, KeyTable> keyValuePairs = new Dictionary<string, KeyTable>();
+
+        public Dictionary<string, KeyTable> SubCollections
+        {
+            get { return keyValuePairs; }
+            set { keyValuePairs = value; OnPropertyChanged(); }
+        }
+
+
+
+        private Dictionary<string, string> values = new Dictionary<string, string>();
+        public Dictionary<string, string> Country { get { return values; } set { values = value; OnPropertyChanged(); } }
+
+        public string this[string key]
+        {
+            get
+            {
+
+                values.TryGetValue(key, out string value);
+                return value;
+            }
+            set
+            {
+
+                if (Country.ContainsKey(key))
+                {
+                    Country[key] = value;
+                }
+                else
+                {
+                    Country.Add(key, value);
+                }
+                OnPropertyChanged("Item[" + key + "]");
+                OnPropertyChanged("Country");
+            }
+        }
+
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+
+
+3.Create a ViewModel class for KeyPairs and added the KeyRow values to the Key Table
+
+{% endhighlight %}
+{% highlight C# %}
+
+public class ViewModel
+    {
+
+        private KeyTable cloudDirectories;
+        public KeyTable CloudDirectories
+        {
+            get { return cloudDirectories; }
+            set { cloudDirectories = value; OnPropertyChanged(); }
+        }
+
+        private void OnPropertyChanged([CallerMemberName] string name = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public ViewModel()
+        {
+            CloudDirectories = new KeyTable();
+
+            var topLevel = new KeyRow();
+            topLevel["CountryName"] = "Asia";
+            topLevel.SubCollections.Add("Directories", new KeyTable());
+            CloudDirectories.Add(topLevel);
+
+            var provider = new KeyRow();     
+            provider["CountryName"] = "India";
+            provider.SubCollections.Add("Directories", new KeyTable());
+            topLevel.SubCollections["Directories"].Add(provider);
+
+            var folder1 = new KeyRow();
+            folder1["CountryName"] = "TamilNadu";
+          
+            folder1.SubCollections.Add("Directories", new KeyTable());
+            provider.SubCollections["Directories"].Add(folder1);
+
+            var folder2 = new KeyRow();
+            folder2["CountryName"] = "Andra";
+
+            folder2.SubCollections.Add("Directories", new KeyTable());
+            provider.SubCollections["Directories"].Add(folder2);
+
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+N> [View sample in GitHub]()
