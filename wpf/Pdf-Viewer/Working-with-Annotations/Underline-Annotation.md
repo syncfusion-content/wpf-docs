@@ -9,7 +9,7 @@ documentation: ug
 
 # Underline text in PDF files using WPF PDF Viewer
 
-The WPF PDF Viewer allows the user to underline text in PDF files and provides options to edit or remove the existing underlines. The underline inclusion mode can be enabled via the toolbar UI or the API. Once the underline inclusion mode is activated, you can underline the required text by selecting it. You can select the text by holding down the left mouse button and dragging the mouse pointer over the text.
+The WPF PDF Viewer allows the user to underline text in PDF files and provides options to edit or remove the existing underlines. The underline inclusion mode can be enabled via the toolbar UI or the API. Once the underline inclusion mode is activated, you can underline the required text by selecting it. To select the text, hold down the left mouse button and drag the mouse pointer over the text.
 
 To enable the mode from UI, click the below icon in the default toolbar of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
