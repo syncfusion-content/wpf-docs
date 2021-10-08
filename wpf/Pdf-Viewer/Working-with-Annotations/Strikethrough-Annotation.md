@@ -9,7 +9,9 @@ documentation: ug
 
 # Strikethrough text in PDF files using WPF PDF Viewer
 
-The WPF PDF Viewer allows the user to strikethrough text in PDF files and provides options to edit or remove the existing strikethrough. The strikethrough inclusion mode can be enabled via the toolbar UI or the API. To enable the mode from UI, click the below icon in the default toolbar of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+The WPF PDF Viewer allows the user to strikethrough text in PDF files and provides options to edit or remove the existing strikethrough. The strikethrough inclusion mode can be enabled via the toolbar UI or the API. Once the strikethrough inclusion mode is activated, you can strikethrough the required text by selecting it. To select the text, hold down the left mouse button and drag the mouse pointer over the text.
+
+To enable the mode from UI, click the below icon in the default toolbar of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 ![Strikethrough icon in the WPF PDF Viewer toolbar](Annotation-images\strikethrough-icon.png)
 
@@ -33,7 +35,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Once the strikethrough inclusion mode is activated, you can strikethrough the required text by selecting it. You can select the text by holding down the left mouse button and dragging the mouse pointer over the text. The following image shows the strikethrough text in the PDF file.
+The following image shows the strikethrough text in the PDF file.
 
  ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-1.png)
 
