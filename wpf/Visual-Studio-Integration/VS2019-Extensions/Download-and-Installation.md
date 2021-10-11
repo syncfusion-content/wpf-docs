@@ -24,7 +24,7 @@ The steps below assist you to how to install the Syncfusion WPF extensions from 
 	![Manage Extension](Download-and-Installation-images/ManageExtension.PNG)
 4.	Click the Download button in the “WPF Extensions - Syncfusion”.
 5.	Close all Visual Studio instances after downloading the extensions to begin the installation process. You can see the following VSIX installation prompt.
-	![Vsix Modify Window](Download-and-Installation-images/VSIXModify.png)
+	![Vsix Modify Window](Download-and-Installation-images/VSIXModify.PNG)
 6.	Click the **Modify** button.
 7.	When the installation is finished, launch the Visual Studio.
 8.	Now, you can use the Syncfusion extensions from Visual Studio under the Extensions menu.
