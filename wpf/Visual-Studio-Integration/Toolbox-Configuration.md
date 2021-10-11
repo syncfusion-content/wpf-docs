@@ -31,6 +31,8 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
 
    N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
+   ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox_2019.png)
+
 2. Toolbox Installer will be opened.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img2.png)
