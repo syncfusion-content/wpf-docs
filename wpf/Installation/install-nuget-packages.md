@@ -20,11 +20,11 @@ documentation: ug
 
 The NuGet Package Manager UI allows you to search, install, uninstall, and update Syncfusion WPF NuGet packages in your applications and solutions. You can find and install the Syncfusion WPF NuGet packages in your Visual Studio WPF application and this process is easy with the steps below:
 
-1. Right-click on the WPF application or solution in the Solution Explorer, and choose Manage NuGet Packages...
+1. Right-click on the WPF application or solution in the Solution Explorer, and choose **Manage NuGet Packages...**
 
     ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
 
-    As an alternative, after opening the WPF application in Visual Studio, go to the Tools menu and after hovering NuGet Package Manager, select Manage NuGet Packages for Solution...
+    As an alternative, after opening the WPF application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion WPF NuGet packages using a term like "Syncfusion.WPF" and select the appropriate Syncfusion WPF NuGet package for your development.
 
