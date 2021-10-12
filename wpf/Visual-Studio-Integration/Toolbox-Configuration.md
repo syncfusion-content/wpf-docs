@@ -123,5 +123,5 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 
 The Syncfusion NuGet packages must be installed in the WPF.NET Core application before the Syncfusion toolbox can be configured. The corresponding NuGet packages Syncfusion components will be configured in Visual Studio toolbox after installing the Syncfusion NuGet packages in.NET Core application. 
 
-Please refer the documentation [link](https://help.syncfusion.com/wpf/installation/install-nuget-packages), to learn more about how to use the Syncfusion components using the Syncfusion NuGet packages in .NET Core application.
+Please refer the documentation [link](wpf/installation/install-nuget-packages), to learn more about how to use the Syncfusion components using the Syncfusion NuGet packages in .NET Core application.
    
