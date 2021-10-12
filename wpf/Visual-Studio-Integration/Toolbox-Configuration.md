@@ -9,18 +9,18 @@ documentation: ug
 
 # Toolbox Configuration
 
-The Syncfusion Toolbox Installer utility adds the Syncfusion WPF controls into the Visual Studio .NET toolbox.
+The Syncfusion Toolbox Installer utility incorporates the Syncfusion WPF components into the Visual Studio .NET toolbox.
 
 N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
-Syncfusion controls will be automatically configured in the Visual Studio toolbox, while installing the Syncfusion WPF installer, if the <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox is selected from installer UI.
+If the <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox is selected from the installer UI while installing the Syncfusion WPF installer, Syncfusion components will be automatically configured in the Visual Studio toolbox.
 
-Use the following steps to adds the Syncfusion WPF controls through the Syncfusion Toolbox Installer:
+To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perform the following steps:
 
 1. To launch Toolbox configuration utility, follow either one of the options below:
 
    **Option 1:**   
-   To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
+   Open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
    
    ![Add On and Utilities](Toolbox-Configuration_images/Toolbox-Configuration_img1.png)
    
@@ -29,7 +29,9 @@ Use the following steps to adds the Syncfusion WPF controls through the Syncfusi
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+   N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+
+   ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox_2019.png)
 
 2. Toolbox Installer will be opened.
 
@@ -45,10 +47,11 @@ Use the following steps to adds the Syncfusion WPF controls through the Syncfusi
    * Install VS2015 – Configures Framework 4.6 Syncfusion controls in VS 2015 toolbox.
    * Install VS2017 – Configures Framework 4.6 Syncfusion controls in VS 2017 toolbox.
    * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
+   * Install VS2022 – Configures Framework 4.6 Syncfusion controls in VS 2022 toolbox.
    
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
-3. An Information message is displayed indicating the successful configuration of Toolbox. Click OK.
+3. The successful configuration of Toolbox is indicated by an Information message. Click OK.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
@@ -59,15 +62,15 @@ Use the following steps to adds the Syncfusion WPF controls through the Syncfusi
    
 ## Configuring toolbox for WPF .NET 5.0 projects
 
-From 2021 Volume 1, Syncfusion started providing toolbox support for WPF .NET 5.0 framework in Visual Studio 2019. Syncfusion controls will be automatically configured in the Visual Studio 2019 toolbox for WPF .NET 5.0 project, after installing the Syncfusion WPF installer.
+From 2021 Volume 1,Syncfusion started providing toolbox support for the WPF .NET 5.0 framework in Visual Studio. After installing the Syncfusion WPF installer, Syncfusion controls will be automatically configured in the Visual Studio toolbox for WPF.NET 5.0 projects.
 
 N> * Syncfusion included this toolbox support for .NET 5.0 WPF platform from 2021 Volume 1 release version v19.1.0.54 only. 
-* After installing the WPF setup, if the project created with TargetFramework .NET Core 3.1 and changed to .NET 5.0, you need to restart Visual Studio to get the Syncfusion controls in Visual Studio Toolbox. 
-* Visual Studio 2019 16.7 Preview 2 and later is required
+* If the project was created with TargetFramework.NET Core 3.1 and then changed to.NET 5.0 after installing the WPF setup, you must restart Visual Studio to see the Syncfusion controls in the Visual Studio Toolbox. 
+* Visual Studio 2019 16.7 Preview 2 and later is required.
 
 ### Upgrading the Syncfusion WPF toolbox .NET 5.0 controls without installing the build
 
-You can upgrade the Syncfusion WPF toolbox for .NET 5.O control with NuGet packages downloaded from [nuget.org](https://www.nuget.org/). Download ["Syncfusion.UI.WPF.NET"](https://www.nuget.org/packages/Syncfusion.UI.WPF.NET/) package from nuget.org in your machine.
+You can upgrade the Syncfusion WPF toolbox for .NET 5.0 control with NuGet packages downloaded from [nuget.org](https://www.nuget.org/). Download ["Syncfusion.UI.WPF.NET"](https://www.nuget.org/packages/Syncfusion.UI.WPF.NET/) package from nuget.org in your machine.
 
 Use the following steps to add the Syncfusion WPF controls through Syncfusion NuGet packages:
 
@@ -118,7 +121,7 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 
 ## Configuring toolbox for .NET Core 3.1 projects
 
-To configure the Syncfusion toolbox in the WPF .NET Core application, the Syncfusion NuGet packages should be installed in the .NET Core application. After installing the Syncfusion NuGet packages in .NET Core application, the corresponding NuGet packages Syncfusion components will be configured in Visual Studio toolbox. 
+The Syncfusion NuGet packages must be installed in the WPF.NET Core application before the Syncfusion toolbox can be configured. The corresponding NuGet packages Syncfusion components will be configured in Visual Studio toolbox after installing the Syncfusion NuGet packages in.NET Core application. 
 
-Please refer the documentation [link](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages#using-components-from-nuget), to learn more about how to use the Syncfusion components using the Syncfusion NuGet packages in .NET Core application.
+Please refer the documentation [link](wpf/installation/install-nuget-packages), to learn more about how to use the Syncfusion components using the Syncfusion NuGet packages in .NET Core application.
    
