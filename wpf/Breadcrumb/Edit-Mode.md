@@ -61,11 +61,11 @@ namespace HierarchicalNavigatorSample
 
 ## Edit Hierarchy Naviagtor with SearchMemberPath
 
-The [SearchMemberPath] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_SearchMemberPath) property allows to easily edit when Hierarchical naviagtor item has multiple string path name and heirarchical data template.The path given in hierarchical data template should be given to the search member path if edit mode is enabled.
+The [SearchMemberPath] (https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html#Syncfusion_Windows_Tools_Controls_HierarchyNavigator_SearchMemberPath) property allows to easily edit when Hierarchical naviagtor item has multiple path and heirarchical data template.The path given in hierarchical data template should be given to the search member path if edit mode is enabled.
 
 The steps to edit Hierarchical naviagtor items in XAML are as follows: 
 
-1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.And bind the string path in hierarchical data template 
+1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.And bind the path in hierarchical data template 
 
 {% tabs %}
 {% highlight XAML %}
@@ -81,7 +81,7 @@ The steps to edit Hierarchical naviagtor items in XAML are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-2.Create a model class for Key row and added keys to the dictionary.
+2.Create a model class for Key row and added keys to the dictionary.And create a ViewModel class for KeyPairs and added the KeyRow values to the Key Table
 
 {% endhighlight %}
 {% highlight C# %}
@@ -139,15 +139,6 @@ public class KeyRow
 
     }
 
-{% endhighlight %}
-{% endtabs %}
-
-
-
-3.Create a ViewModel class for KeyPairs and added the KeyRow values to the Key Table
-
-{% endhighlight %}
-{% highlight C# %}
 
 public class ViewModel
     {
@@ -193,6 +184,8 @@ public class ViewModel
 
         }
     }
+
+
 
 {% endhighlight %}
 {% endtabs %}
