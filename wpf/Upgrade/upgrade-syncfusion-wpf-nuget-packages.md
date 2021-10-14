@@ -24,7 +24,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     As an alternative, after opening the WPF application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
-2. The Manage NuGet Packages window will open. Navigate to the Updates tab, then search for the Syncfusion WPF NuGet packages using a term like **"Syncfusion"** and and select the appropriate Syncfusion WPF NuGet package for your application.
+2. The Manage NuGet Packages window will open. Navigate to the Updates tab, then search for the Syncfusion WPF NuGet packages using a term like **"Syncfusion.WPF"** and and select the appropriate Syncfusion WPF NuGet package for your application.
 
     > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
@@ -32,7 +32,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     ![WPF Upgrade](Upgrade-images/NuGetUpgrade.png)
 
-    You can choose the multiple NuGet packages by selecting the checkbox like below and click the **Update** button to update the multiple Syncfusion NuGet packages in your application.
+    You can choose the multiple NuGet packages by **selecting the checkbox** like below and click the **Update** button to update the multiple Syncfusion NuGet packages in your application.
 
     ![Winform NuGet Upgrade](Upgrade-images/MultipleNuGetUpgrade.png)
 

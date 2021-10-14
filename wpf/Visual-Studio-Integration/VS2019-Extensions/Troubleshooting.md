@@ -33,7 +33,7 @@ The steps below will assist you in using the Syncfusion Troubleshooter by Visual
 
 
    **Option 2**  
-   Right-click the Project file in Solution Explorer, then select the command Syncfusion Troubleshooter…
+   **Right-click the Project file in Solution Explorer**, then select the command **Syncfusion Troubleshooter…**
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1_2019.png)
 
