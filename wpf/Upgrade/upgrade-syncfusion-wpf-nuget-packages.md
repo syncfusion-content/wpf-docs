@@ -42,7 +42,7 @@ There is no distinct command for the update procedure in the .NET CLI. Unless yo
 
 To specify a version, add the -v parameter:
 
-```dotnet add package Syncfusion.SfGrid.WPF -v 19.3.0.44.```
+```dotnet add package Syncfusion.SfGrid.WPF -v 19.3.0.44```
 
 ## Upgrade NuGet packages through Package Manager Console
 
