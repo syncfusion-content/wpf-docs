@@ -15,7 +15,7 @@ N> This Reference Manager can be applied to a project for Syncfusion assembly ve
 
 To add the Syncfusion assembly references in Visual Studio, follow the steps below:
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](wpf/visual-studio-integration/vs2019-extensions/download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
 
 1. Open a new or existing **WPF** application.
 
@@ -60,6 +60,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
    N> WPF (.NET Core 3.1 and .Net 5.0) application in Visual Studio 2019 is supported from 18.2.0.44 version and Version combo box is not visible for NuGet option. 
 
    **Themes Option:** Choose the necessary themes based on your requirements. To learn more about built-in themes and their available assembly, click the link below.
+
    [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)
 
    ![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
@@ -69,7 +70,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
    ![Themes selection option notification in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
 
 
-4. Select the required controls you want to add in your project. Then click Done to add the project's required assemblies for the specified controls. The list of required assemblies for the selected controls to be added is shown in the screenshot below.
+4. Select the required controls you want to add in your project. Then click ****Done** to add the project's required assemblies for the specified controls. The list of required assemblies for the selected controls to be added is shown in the screenshot below.
 
    ![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
@@ -81,7 +82,7 @@ To add the Syncfusion assembly references in Visual Studio, follow the steps bel
 
    ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 
-N>  Reference Manager support is provided by Syncfusion for select versions of the.NET Framework that are included (as assemblies) in the Syncfusion Essential Studio installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion version assemblies, a dialogue box shows with the message "Current build v{version} isn't compatible with this framework v{Framework} Version".
+N>  Reference Manager support is provided by Syncfusion for select versions of the.NET Framework that are included (as assemblies) in the Syncfusion Essential Studio installation. If you try to add Syncfusion assemblies to a project and the project framework isn't compatible with the specified Syncfusion version assemblies, a dialogue box shows with the message "**Current build v{version} isn't compatible with this framework v{Framework} Version**".
 
 
 

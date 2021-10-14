@@ -15,6 +15,8 @@ Syncfusion publishes the Visual Studio extension in the [Visual Studio marketpla
 
 1. In Visual Studio go to **Extensions -> Manage Extensions -> Updates** and find the Syncfusion WPF extension.
 
+	N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
+
 2.  Then, click on the Update button to update the extension.
 
     ![Update WPF Extensions](Upgrade-images/UpdateExtensionUI.png)

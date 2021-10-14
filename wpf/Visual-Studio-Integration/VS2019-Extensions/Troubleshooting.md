@@ -18,7 +18,7 @@ Troubleshoot the project with the Syncfusion configuration and apply the fix, su
 
 The steps below will assist you in using the Syncfusion Troubleshooter by Visual Studio. 
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](wpf/visual-studio-integration/vs2019-extensions/download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
@@ -33,7 +33,7 @@ The steps below will assist you in using the Syncfusion Troubleshooter by Visual
 
 
    **Option 2**  
-   Right-click the Project file in Solution Explorer, then select the command Syncfusion Troubleshooter…
+   **Right-click the Project file in Solution Explorer**, then select the command **Syncfusion Troubleshooter…**
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1_2019.png)
 
