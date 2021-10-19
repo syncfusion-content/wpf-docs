@@ -91,6 +91,10 @@ Description</th></tr>
 <td>{{'[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource)'| markdownify }}</td>
 <td>{{'[ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection)'| markdownify }}</td>
 <td>Gets or sets the Resource grouping for schedule.</td></tr>
+<tr>
+<td>{{'[EnableReminderTimer]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EnableReminder]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder)'| markdownify }}</td>
+<td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
 The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
@@ -225,6 +229,56 @@ The following table compares the [AppointmentMapping](https://help.syncfusion.co
 <td>-</td>
 <td>{{'[RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceId)'| markdownify }}</td>
 <td>Gets or sets the RecurrenceId property for mapping to the schedule appointment.</td></tr>
+</table>
+
+The following table compares the [DaysViewSettings]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval)'| markdownify }}</td>
+<td> Gets or sets a time interval.</td></tr>
+<tr>
+<td>{{'[IntervalHeight]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeIntervalSize]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize)'| markdownify }}</td>
+<td> Gets or sets a time interval size.</td></tr>
+<tr>
+<td>{{'[WorkStartHour](https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour)'| markdownify }}</td>
+<td> Gets or sets the StartHour.</td></tr>
+<tr>
+<td>{{'[WorkEndHour]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EndHour]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour)'| markdownify }}</td>
+<td> Gets or sets the EndHour.</td></tr>
+</table>
+
+The following table compares the [TimelineViewSettings]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval)'| markdownify }}</td>
+<td> Gets or sets a time interval.</td></tr>
+<tr>
+<td>{{'[IntervalHeight]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeIntervalSize]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize)'| markdownify }}</td>
+<td> Gets or sets a time interval size.</td></tr>
+<tr>
+<td>{{'[WorkStartHour](https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour)'| markdownify }}</td>
+<td> Gets or sets the StartHour.</td></tr>
+<tr>
+<td>{{'[WorkEndHour]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EndHour]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour)'| markdownify }}</td>
+<td> Gets or sets the EndHour.</td></tr>
 </table>
 
 See the list of the rich set of features in `SfScheduler` over `SfSchedule` as follows:
