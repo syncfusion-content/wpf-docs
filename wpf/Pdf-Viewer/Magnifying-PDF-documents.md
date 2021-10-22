@@ -38,6 +38,8 @@ If you are using [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion
 
 You can magnify the document to a given zoom percentage by using the [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ZoomTo_System_Int32_) function of the PDF Viewer. Refer to the following code sample to apply the specific zoom percentage based on the page contents.
 
+N> When the [ZoomTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ZoomTo_System_Int32_) method is used along with the [ScrollTo](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ScrollTo_System_Double_System_Double_) method, the zoom operation will be executed first.
+
 {% tabs %}
 {% highlight c# %}
 //Zoom to 235 percentage.
