@@ -155,6 +155,13 @@ Validates and ends the edit operation of the current cell.</td></tr>
 Validates the current cell in the SpreadsheetGrid.</td></tr>
 </table>
 
+## Fill neighboring cells with formula or data
+
+Fill Command allows you to fill the same text, numbers, formulas or any formatted data into adjacent group of cells. You can achieve this by following these steps :
+ 
+* Select a cell or range that you want to fill it with the data or formulas of its adjacent cells.
+* The Click Home > Fill, and select the Fill options (Down, Right, Up and Left).
+
 ## Data Validation
 
 Data Validation is a list of rules to limit the type of data or the values that can be entered in the cell.
