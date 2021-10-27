@@ -162,6 +162,8 @@ Fill Command allows you to fill the same text, numbers, formulas or any formatte
 * Select a cell or range that you want to fill it with the data or formulas of its adjacent cells.
 * The Click Home > Fill, and select the Fill options (Down, Right, Up and Left).
 
+![WPF Spreadsheet Fill] (Fill_images/wpf-spreadsheet-fill.png)
+
 ## Data Validation
 
 Data Validation is a list of rules to limit the type of data or the values that can be entered in the cell.
