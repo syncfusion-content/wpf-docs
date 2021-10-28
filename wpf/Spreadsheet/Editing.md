@@ -157,10 +157,10 @@ Validates the current cell in the SpreadsheetGrid.</td></tr>
 
 ## Fill neighboring cells with formula or data
 
-Fill Command allows you to fill the same text, numbers, formulas or any formatted data into adjacent group of cells. You can achieve this by following these steps :
+Fill command allows you to fill adjacent groups of cells with the same text, numbers, formulas, or any formatted data. This can be achieved by following these steps:
  
-* Select a cell or range that you want to fill it with the data or formulas of its adjacent cells.
-* The Click Home > Fill, and select the Fill options (Down, Right, Up and Left).
+* Select a cell or a range of cells to fill with data or formulas from nearby cells.
+* Then go to Home > Fill and choose your fill selections (Down, Right, Up and Left).
 
 ![WPF Spreadsheet Fill] (Fill_images/wpf-spreadsheet-fill.png)
 
