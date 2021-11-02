@@ -14,27 +14,21 @@ PDF Viewer allows you to navigate through the pages of the PDF document using th
 {% tabs %}
 {% highlight C# %}
 
-//Initialize PDF Viewer.
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
-
 //Load the PDF.
-pdfViewer1.Load("Sample.pdf");
+pdfViewer.Load("Sample.pdf");
 
 //Navigate to page 2
-pdfviewer1.GotoPage(2);
+pdfViewer.GotoPage(2);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-'Initialize PDF Viewer.
-Private pdfViewer1 As New PdfViewerControl()
-
 'Load the PDF.
-pdfViewer1.Load("Sample.pdf")
+pdfViewer.Load("Sample.pdf")
 
 'Navigate to page 2
-pdfviewer1.GotoPage(2)
+pdfViewer.GotoPage(2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -45,27 +39,32 @@ You can now scroll to the given horizontal and vertical offset of the PDF docume
 {% tabs %}
 {% highlight C# %}
 
-//Initialize PDF Viewer.
-PdfViewerControl pdfViewerControl = new PdfViewerControl();
-
 //Load the PDF.
-pdfViewerControl.Load("Sample.pdf");
+pdfViewer.Load("Sample.pdf");
 
 //Navigate to the horizontal and vertical offset of 160 and 400 respectively
-pdfViewerControl.ScrollTo (160, 400);
+pdfViewer.ScrollTo (160, 400);
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-'Initialize PDF Viewer.
-Private pdfViewerControl As New PdfViewerControl()
-
 'Load the PDF.
-pdfViewerControl.Load("Sample.pdf")
+pdfViewer.Load("Sample.pdf")
 
 'Navigate to the horizontal and vertical offset of 160 and 400 respectively
-pdfViewerControl.ScrollTo (160, 400)
+pdfViewer.ScrollTo (160, 400)
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Internally, the parameters (offset values) of this method will be multiplied by current zoom factor. So, the parameters (offset values) must be specified in terms of default zoom factor of 1, or 100% zoom.
+
+{% tabs %}
+{% highlight C# %}
+
+// If the current zoom percentage is not 100, the parameter values must be divided by the zoom factor.
+pdfViewer.ScrollTo (160d / ((double)pdfViewer.ZoomPercentage / 100d), 400d / ((double)pdfViewer.ZoomPercentage / 100d));
 
 {% endhighlight %}
 {% endtabs %}
