@@ -144,3 +144,12 @@ pdfviewer.ZoomTo(1200);
 
 {% endhighlight %}
 {% endtabs %}
+
+## Pinch to zoom
+
+The WPF PDF Viewer supports pinch-to-zoom, allows users to magnify using touch gestures when working on a device with a touch screen. To use pinch-to-zoom, place two fingers on the control and move them apart to zoom in (or together to zoom out).
+
+## Mouse and keyboard shortcuts
+
+**Ctrl (key) + Scroll the mouse wheel up** - To perform zoom in.
+**Ctrl (key) + Scroll the mouse wheel down** - To perform zoom out.
