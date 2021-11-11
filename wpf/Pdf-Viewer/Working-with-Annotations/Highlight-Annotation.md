@@ -40,6 +40,8 @@ The following image shows the highlighted text in the PDF file.
 
  ![highlight annotation](Annotation-images\Highlight-Annotation-1.png)
 
+N> The left click selection for the highlight annotation is supported from 19.3.0.5X version.
+
 ## Change the default color of the highlight annotation
 
 The highlight color is yellow by default. However, you can change the default color of the highlight programmatically as shown in the following code example.

@@ -24,9 +24,9 @@ You can load and fill the following form fields in a PDF document using the PDF 
 5.	Combo box.
 6.	List box.
 
-## Retrieve the details of text box form field
+## Retrieve the form field details 
 
-You can retrieve the details of a text box form field through the [FormFieldClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) event of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) by simply clicking on the field. The [FormField](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FormFieldClickedEventArgs.html#Syncfusion_Windows_PdfViewer_FormFieldClickedEventArgs_FormField) property of the [FormFieldClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FormFieldClickedEventArgs.html) needs to be typecast to the [TextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox?view=netcore-3.1) control as shown in the following code.
+You can retrieve the details of a form field through the [FormFieldClicked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_FormFieldClicked) event of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) by simply clicking on the field. The [FormField](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FormFieldClickedEventArgs.html#Syncfusion_Windows_PdfViewer_FormFieldClickedEventArgs_FormField) property of the [FormFieldClickedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.FormFieldClickedEventArgs.html) needs to be typecast to the respective control.The following code snippet explains how to retrieve details for all [supported form fields](https://help.syncfusion.com/wpf/pdf-viewer/form-filling-in-pdf#supported-form-fields) using the FormFieldClicked event.
 
 {% tabs %}
 {% highlight c# %}
@@ -36,13 +36,59 @@ pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
 
 private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs args)
 {
-	//Typecast the `FormField` property to `System.Windows.Controls.TextBox`
-	TextBox textBox = args.FormField as TextBox;
+	  //Typecast the `FormField` property to `System.Windows.Controls.TextBox`
+            TextBox textBox = args.FormField as TextBox;
+            if (textBox != null)
+            {
+                //Retrive the `Text` property
+                string text = textBox.Text;
+                //{Insert your code here}
+            }
 
-	//Retrive the `Text` property
-	string text = textBox.Text;
+            //Typecast the `FormField` property to `System.Windows.Controls.PasswordBox`
+            PasswordBox PasstextBox = args.FormField as PasswordBox;
+            if (PasstextBox != null)
+            {
+                //Retrive the `Text` property
+                string password = PasstextBox.Password;
+                //{Insert your code here}
+            }
 
-	//{Insert your code here}
+            //Typecast the `FormField` property to `System.Windows.Controls.ListBox`
+            ListBox listBox = args.FormField as ListBox;
+            if (listBox != null)
+            {
+                //Retrive the `SelectedItem` value
+                object selectedItem = listBox.SelectedItem;
+                //{Insert your code here}
+            }
+
+            //Typecast the `FormField` property to `System.Windows.Controls.ComboBox`
+            ComboBox comboBox = args.FormField as ComboBox;
+            if (comboBox != null)
+            {
+                //Retrive the `SelectedItem` value
+                object selectedItem  =  comboBox.SelectedItem;
+                 //{Insert your code here}
+            }
+
+            //Typecast the `FormField` property to `System.Windows.Controls.CheckBox`
+            CheckBox checkBox = args.FormField as CheckBox;
+            if (checkBox != null)
+            {
+                //Retrive the checkbox `IsChecked` status
+                bool ischecked = (bool)checkBox.IsChecked;
+                //{Insert your code here}
+            }
+
+            //Typecast the `FormField` property to `System.Windows.Controls.RadioButton`
+            RadioButton radiobtn = args.FormField as RadioButton;
+            if (radiobtn != null)
+            {
+                //Retrive the radio button `IsChecked` status
+                bool ischecked =  (bool)radiobtn.IsChecked;
+                //{Insert your code here}
+            }
 }
 
 {% endhighlight %}
