@@ -55,6 +55,49 @@ private void SelectAnnotation()
 
 Similarly, we can implement it for all other annotations.
 
+### Select an annotation in the PDF file and bring it into view
+
+PDF Viewer also allows the user to select and bring an annotation to view programmatically using overload SelectAnnotation method with BringIntoView Parameter. The annotation’s name and true value for BringIntoView should be passed as a parameter to select and bring an annotation into view. 
+
+The following code snippet explains how to select an ink annotation using the annotation name and bring them into view.
+
+{% tabs %}
+{% highlight C# %}
+
+//Selecting ink annotation with the annotation’s name and bring them into view 
+private void SelectAnnotation() 
+{
+    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, true); 
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, we can implement it for all other annotations. 
+
+### Select an annotation at specific page and bring it into view 
+
+PDF Viewer also allows the user to select the annotation programmatically and bring it into view using overload SelectAnnotation method, specifying the page number on which the annotation is located. The annotation’s name, its page number and its “true” value for BringIntoView should be passed as a parameter that needs to be selected. 
+
+The following code snippet explains how to select an ink annotation on the first page of the document using the annotation name and bring it into view.
+
+{% tabs %}
+{% highlight C# %}
+
+//Selecting ink annotation with the annotation’s name, page number and bringing into view parameter 
+
+private void SelectAnnotation() 
+{  
+    bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1, true);
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, we can implement it for all other annotations. 
+
+N> To bring an annotation into view we need to pass a “true” value for the BringIntoView parameter, providing a “false” value will only select the annotation.
+
 ### How to get and set name of an annotation
 
 Annotation’s name can be obtained either for newly added annotation or the annotation that already exist. Also, you can modify the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_AnnotationChangedEventArgs_Name) property to give annotations a unique name. In the following sections, the ink annotation was explained brevity and similarly, you can get and set names for all other annotations.
