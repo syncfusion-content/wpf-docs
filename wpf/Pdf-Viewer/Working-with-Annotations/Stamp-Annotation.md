@@ -239,13 +239,13 @@ You can create and add your custom stamps from the images available on the disk 
 
 ![Custom stamps](Annotation-images\custom-stamp.png)
 
-## Adding custom stamp in the desired page programmatically
+## Adding custom stamp to the desired page programmatically
 
-The Custom stamp can be added in the desired page programmatically either with actual size (the original size of the image) or with desired size (the size in which we need the custom stamp) by using the `AddStamp` API.
+The Custom stamp can be added to the desired page programmatically either with the actual size (the original size of the image) or with the desired size (the size at which we need the custom stamp) by using the `AddStamp` API.
 
 ### Actual size
 
-PDF Viewer allows the user to add custom stamps in the desired page with actual size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number and position where the custom stamp needs to add as parameters to the `AddStamp` method. The following code snippet illustrates adding custom stamp with actual size in the desired page programmatically.
+PDF Viewer allows the user to add custom stamps to the desired page with the actual size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number and position where the custom stamp needs to be added as parameters to the `AddStamp` method. The following code snippet illustrates adding a custom stamp with the actual size to the desired page programmatically.
 
 {% tabs %}
 {% highlight C# %}
@@ -262,7 +262,7 @@ private void AddStamp_Click(object sender, RoutedEventArgs e)
     //Enter the location of the stamp.
     point position = new point(100,100);
 
-    //Adds the custom stamp with actual size.
+    //Adds the custom stamp with the actual size.
     PdfViewer.AddStamp(stamp, pageNumber, position);
 }
 
@@ -271,7 +271,7 @@ private void AddStamp_Click(object sender, RoutedEventArgs e)
 
 ### Desired size
 
-PDF Viewer allows the user to add custom stamps in the desired page with desired size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number, position where the custom stamp needs to add and size of the stamp in System.Windows.Size as parameters to the `AddStamp` method. The following code snippet illustrates adding custom stamp with desired size in the desired page programmatically.
+PDF Viewer allows the user to add custom stamps to the desired page with the desired size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number, position where the custom stamp needs to be added and size of the stamp in the System.Windows.Size as parameters to the `AddStamp` method. The following code snippet illustrates adding a custom stamp with the desired size to the desired page programmatically.
 
 {% tabs %}
 {% highlight C# %}
@@ -291,7 +291,7 @@ private void AddStamp_Click(object sender, RoutedEventArgs e)
     //Enter the required size of the stamp.
     System.Windows.Size stampSize = new System.Windows.Size (200,200);
 
-    //Adds the custom stamp with desired size.
+    //Adds the custom stamp with the desired size.
     PdfViewer.AddStamp(stamp, pageNumber, position, stampSize);
 }
 
