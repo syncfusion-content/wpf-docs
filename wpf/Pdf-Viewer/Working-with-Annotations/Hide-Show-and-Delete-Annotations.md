@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide, Show and Delete annotations using WPF PDF Viewer | Syncfusion
-description: Learn about hide, show and Delete the annotation programmatically using WPF Pdf Viewer.
+description: Learn about hide, show and delete the annotation programmatically in WPF Pdf Viewer.
 platform: wpf
 control: PDF Viewer
 documentation: ug
