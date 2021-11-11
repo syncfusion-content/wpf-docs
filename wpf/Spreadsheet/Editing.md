@@ -155,6 +155,15 @@ Validates and ends the edit operation of the current cell.</td></tr>
 Validates the current cell in the SpreadsheetGrid.</td></tr>
 </table>
 
+## Fill neighboring cells with formula or data
+
+Fill command allows you to fill adjacent groups of cells with the same text, numbers, formulas, or any formatted data. This can be achieved by following these steps:
+ 
+* Select a cell or a range of cells to fill with data or formulas from nearby cells.
+* Then go to Home > Fill and choose your fill selections (Down, Right, Up and Left).
+
+![WPF Spreadsheet Fill] (Fill_images/wpf-spreadsheet-fill.png)
+
 ## Data Validation
 
 Data Validation is a list of rules to limit the type of data or the values that can be entered in the cell.
