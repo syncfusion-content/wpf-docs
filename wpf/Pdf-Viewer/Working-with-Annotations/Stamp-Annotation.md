@@ -239,9 +239,68 @@ You can create and add your custom stamps from the images available on the disk 
 
 ![Custom stamps](Annotation-images\custom-stamp.png)
 
+## Adding custom stamp in the desired page programmatically
+
+The Custom stamp can be added in the desired page programmatically either with actual size (the original size of the image) or with desired size (the size in which we need the custom stamp) by using the `AddStamp` API.
+
+### Actual size
+
+PDF Viewer allows the user to add custom stamps in the desired page with actual size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number and position where the custom stamp needs to add as parameters to the `AddStamp` method. The following code snippet illustrates adding custom stamp with actual size in the desired page programmatically.
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddStamp_Click(object sender, RoutedEventArgs e)
+{
+    //Enter the page number ranges from 1 to page count.
+    int pageNumber = 1;
+
+    //Create the custom stamp with the required image.
+    Image image = new Image() { Source = new BitmapImage(new Uri("//Enter your stamp location", UriKind.RelativeOrAbsolute)) };
+    PdfStampAnnotation stamp = new PdfStampAnnotation(image);
+
+    //Enter the location of the stamp.
+    point position = new point(100,100);
+
+    //Adds the custom stamp with actual size.
+    PdfViewer.AddStamp(stamp, pageNumber, position);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Desired size
+
+PDF Viewer allows the user to add custom stamps in the desired page with desired size by passing the image as [PdfStampAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfStampAnnotation.html), page number, position where the custom stamp needs to add and size of the stamp in System.Windows.Size as parameters to the `AddStamp` method. The following code snippet illustrates adding custom stamp with desired size in the desired page programmatically.
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddStamp_Click(object sender, RoutedEventArgs e)
+{
+    //Enter the page number ranges from 1 to page count.
+    int pageNumber = 1;
+
+    //Create the custom stamp with the required image.
+    Image image = new Image() { Source = new BitmapImage(new Uri("//Enter your stamp location", UriKind.RelativeOrAbsolute)) };
+    PdfStampAnnotation stamp = new PdfStampAnnotation(image);
+
+    //Enter the location of the stamp.
+    point position = new point(100,100);
+
+    //Enter the required size of the stamp.
+    System.Windows.Size stampSize = new System.Windows.Size (200,200);
+
+    //Adds the custom stamp with desired size.
+    PdfViewer.AddStamp(stamp, pageNumber, position, stampSize);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Events
 
-The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page index, bounds and action type performed in respective annotation. 
+The PdfViewerControl notifies through events, when `AnnotationChangedAction` such us adding, deleting, select, deselect, moving and resizing made in annotations. It also provides the annotations common information such as annotation name, page number, bounds and action type performed in respective annotation. 
 
 ### StampAnnotationChanged Event
 
@@ -258,12 +317,12 @@ private void PdfViewer_StampAnnotationChanged(object sender, StampAnnotationChan
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
 
-    //Page index in which this shape annotation was modified 
+    //Page number in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
 
     //Annotation's previous position and current position 
-    RectangleF currentBound = e.NewBounds;
-    RectangleF previousBound = e.NewBounds;
+    RectangleF currentBounds = e.NewBounds;
+    RectangleF previousBounds = e.OldBounds;
 
     PdfViewerStampSettings settings = e.Settings;
     //Annotation's properties which can be modify 
