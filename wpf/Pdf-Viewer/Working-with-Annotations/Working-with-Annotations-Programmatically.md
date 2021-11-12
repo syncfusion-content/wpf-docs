@@ -57,7 +57,7 @@ N> Similarly, we can implement it for all other annotations.
 
 ### Select an annotation in the PDF file and bring it into view
 
-PDF Viewer also allows the user to select and bring an annotation to view programmatically using overload `SelectAnnotation` method with `BringIntoView` Parameter. The annotation’s name and true value for `BringIntoView` should be passed as a parameter to select and bring an annotation into view. 
+PDF Viewer also allows the user to select and bring an annotation to view programmatically using overload [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Boolean_) method with `BringIntoView` Parameter. The annotation’s name and true value for `BringIntoView` should be passed as a parameter to select and bring an annotation into view. 
 
 The following code snippet explains how to select an ink annotation using the annotation name and bring them into view.
 
@@ -77,7 +77,7 @@ N> Similarly, we can implement it for all other annotations.
 
 ### Select an annotation at specific page and bring it into view 
 
-PDF Viewer also allows the user to select the annotation programmatically and bring it into view using overload `SelectAnnotation` method, specifying the page number on which the annotation is located. The annotation’s name, its page number and its “true” value for `BringIntoView` should be passed as a parameter that needs to be selected. 
+PDF Viewer also allows the user to select the annotation programmatically and bring it into view using overload [SelectAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_SelectAnnotation_System_String_System_Int32_System_Boolean_) method, specifying the page number on which the annotation is located. The annotation’s name, its page number and its “true” value for `BringIntoView` should be passed as a parameter that needs to be selected. 
 
 The following code snippet explains how to select an ink annotation on the first page of the document using the annotation name and bring it into view.
 
@@ -186,7 +186,7 @@ N> If there are multiple annotations with the same name in the document, it will
 
 ### Hide an annotation in the PDF file
 
-PDF Viewer allows the user to hide an annotation programmatically using the `HideAnnotation` method. The annotation name should be passed as a parameter to hide the annotation. 
+PDF Viewer allows the user to hide an annotation programmatically using the [HideAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_HideAnnotation_System_String_) method. The annotation name should be passed as a parameter to hide the annotation. 
 
 The following code snippet explains how to hide an ink annotation using the annotation name. 
 
@@ -207,9 +207,9 @@ N> Similarly, we can implement it for all other annotations.
 
 ### Hide an annotation at specific page
 
-PDF Viewer also allows the user to hide the annotation from a specific page programmatically using the overload `HideAnnotation` method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be hidden. 
+PDF Viewer also allows the user to hide the annotation from a specific page programmatically using the overload [HideAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_HideAnnotation_System_String_System_Int32_) method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be hidden. 
 
-N> For better performance, we can use the method `HideAnnotation` with page number overload.
+N> For better performance, we can use the method [HideAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_HideAnnotation_System_String_System_Int32_) with page number overload.
 
 The following code snippet explains how to hide an ink annotation on the first page of the document using the annotation name.
 
@@ -233,7 +233,7 @@ N> If there are multiple annotations with the same name in the document, it will
 
 ### Show an annotation in the PDF file 
 
-PDF Viewer allows the user to show an annotation programmatically that was hidden using the `ShowAnnotation` method. The annotation name should be passed as a parameter to show the annotation. 
+PDF Viewer allows the user to show an annotation programmatically that was hidden using the [ShowAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShowAnnotation_System_String_) method. The annotation name should be passed as a parameter to show the annotation. 
 
 The following code snippet explains how to show a hidden ink annotation using the annotation name. 
 
@@ -254,9 +254,9 @@ N> Similarly, we can implement it for all other annotations.
 
 ### Show an annotation at specific page  
 
-PDF Viewer also allows the user to show the annotation from a specific page programmatically using the overload `ShowAnnotation` method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be shown.  
+PDF Viewer also allows the user to show the annotation from a specific page programmatically using the overload [ShowAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShowAnnotation_System_String_System_Int32_) method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be shown.  
 
-N> For better performance, we can use the method `ShowAnnotation` with page number overload.
+N> For better performance, we can use the method [ShowAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ShowAnnotation_System_String_System_Int32_) with page number overload.
 
 The following code snippet explains how to show an ink annotation on the first page of the document using the annotation name.
 
@@ -280,7 +280,7 @@ N> If there are multiple annotations with the same name in the document, it will
 
 ### Delete an annotation in the PDF file
 
-PDF Viewer allows the user to delete an annotation programmatically using the `DeleteAnnotation` method. The annotation name should be passed as a parameter to delete the annotation. 
+PDF Viewer allows the user to delete an annotation programmatically using the [DeleteAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DeleteAnnotation_System_String_) method. The annotation name should be passed as a parameter to delete the annotation. 
 
 The following code snippet explains how to delete an ink annotation using the annotation name. 
 
@@ -301,9 +301,9 @@ N> Similarly, we can implement it for all other annotations.
 
 ### Delete an annotation at specific page  
 
-PDF Viewer also allows the user to delete the annotation from a specific page programmatically using the overload `DeleteAnnotation` method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be deleted. 
+PDF Viewer also allows the user to delete the annotation from a specific page programmatically using the overload [DeleteAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DeleteAnnotation_System_String_System_Int32_) method with a specified page number on which the annotation is located. The annotation name and its page number should be passed as a parameter that needs to be deleted. 
 
-N> For better performance, we can use the method `DeleteAnnotation` with page number overload.
+N> For better performance, we can use the method [DeleteAnnotation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DeleteAnnotation_System_String_System_Int32_) with page number overload.
 
 The following code snippet explains how to delete an ink annotation on the first page of the document using the annotation name. 
 
