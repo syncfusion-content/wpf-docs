@@ -41,6 +41,8 @@ The following image shows the strikethrough text in the PDF file.
 
 ## Change the default color of the strikethrough annotation
 
+N> The left click selection for the strikethrough annotation is supported from 19.3.0.5X version. 
+
 The strikethrough color is red by default. However, you can change the default color of the strikethrough programmatically as shown in the following code example.
 
 {% tabs %}

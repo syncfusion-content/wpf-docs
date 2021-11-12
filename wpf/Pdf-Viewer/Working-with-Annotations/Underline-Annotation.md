@@ -39,6 +39,8 @@ The following image shows the underlined text in the PDF file.
 
  ![underline annotation](Annotation-images\Underline-Annotation-1.png)
 
+N> The left click selection for the underline annotation is supported from 19.3.0.5X version.
+
 ## Change the default color of the underline annotation
 
 The underline color is dark green by default. However, you can change the default color of the underline programmatically as shown in the following code example.
