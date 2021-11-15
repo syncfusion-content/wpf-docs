@@ -36,59 +36,42 @@ pdfViewer.FormFieldClicked += PdfViewer_FormFieldClicked;
 
 private void PdfViewer_FormFieldClicked(object sender, FormFieldClickedEventArgs args)
 {
-	  //Typecast the `FormField` property to `System.Windows.Controls.TextBox`
-            TextBox textBox = args.FormField as TextBox;
-            if (textBox != null)
+    if (args.FormField is TextBox)
             {
-                //Retrive the `Text` property
-                string text = textBox.Text;
+                //Typecast the `FormField` property to `System.Windows.Controls.TextBox`
+                TextBox text = args.FormField as TextBox;
                 //{Insert your code here}
             }
-
-            //Typecast the `FormField` property to `System.Windows.Controls.PasswordBox`
-            PasswordBox PasstextBox = args.FormField as PasswordBox;
-            if (PasstextBox != null)
+            else if (args.FormField is PasswordBox)
             {
-                //Retrive the `Text` property
-                string password = PasstextBox.Password;
+                //Typecast the `FormField` property to `System.Windows.Controls.PasswordBox`
+                PasswordBox PasstextBox = args.FormField as PasswordBox;
+                //{Insert your code here}
+            }          
+            else if (args.FormField is ListBox)
+            {
+                //Typecast the `FormField` property to `System.Windows.Controls.ListBox`
+                ListBox listBox = args.FormField as ListBox;
+                //{Insert your code here}
+            }         
+            else if (args.FormField is ComboBox)
+            {
+                //Typecast the `FormField` property to `System.Windows.Controls.ComboBox`
+                ComboBox comboBox = args.FormField as ComboBox;
                 //{Insert your code here}
             }
-
-            //Typecast the `FormField` property to `System.Windows.Controls.ListBox`
-            ListBox listBox = args.FormField as ListBox;
-            if (listBox != null)
+            else if (args.FormField is CheckBox)
             {
-                //Retrive the `SelectedItem` value
-                object selectedItem = listBox.SelectedItem;
+                //Typecast the `FormField` property to `System.Windows.Controls.CheckBox`
+                CheckBox checkBox = args.FormField as CheckBox;
                 //{Insert your code here}
             }
-
-            //Typecast the `FormField` property to `System.Windows.Controls.ComboBox`
-            ComboBox comboBox = args.FormField as ComboBox;
-            if (comboBox != null)
+            else if (args.FormField is RadioButton)
             {
-                //Retrive the `SelectedItem` value
-                object selectedItem  =  comboBox.SelectedItem;
-                 //{Insert your code here}
-            }
-
-            //Typecast the `FormField` property to `System.Windows.Controls.CheckBox`
-            CheckBox checkBox = args.FormField as CheckBox;
-            if (checkBox != null)
-            {
-                //Retrive the checkbox `IsChecked` status
-                bool ischecked = (bool)checkBox.IsChecked;
+                //Typecast the `FormField` property to `System.Windows.Controls.RadioButton`
+                RadioButton radiobtn = args.FormField as RadioButton;
                 //{Insert your code here}
-            }
-
-            //Typecast the `FormField` property to `System.Windows.Controls.RadioButton`
-            RadioButton radiobtn = args.FormField as RadioButton;
-            if (radiobtn != null)
-            {
-                //Retrive the radio button `IsChecked` status
-                bool ischecked =  (bool)radiobtn.IsChecked;
-                //{Insert your code here}
-            }
+            }	 
 }
 
 {% endhighlight %}
