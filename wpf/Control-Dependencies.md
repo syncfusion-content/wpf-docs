@@ -9,11 +9,11 @@ documentation: ug
 
 # Control Dependencies in Syncfusion's WPF Controls
 
-This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
+This section contains a list of assembly or NuGet references required to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/wpf/installation-and-upgrade/system-requirements) to know about assembly installation location and [NuGet packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion WPF controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key), for more information.
 
 ## AutoComplete
 
@@ -554,9 +554,9 @@ Syncfusion.OlapChart.WPF
 </tr>
 </table>
 
-### Exporting OLAP Chart to PDF, Word and Image
+### Exporting OLAP chart to PDF, Word, and Image
 
-For exporting OLAP chart contents to PDF, word and image, the following reference needs to be added in addition to the above assemblies.
+In addition to the above assemblies, the following reference needs to be added to export OLAP chart contents to PDF, word, and image.
 
 <table>
 <tr>
@@ -648,9 +648,9 @@ Syncfusion.OlapGrid.WPF
 </tr>
 </table>
 
-### Exporting OLAP Grid to Excel, Word, PDF and CSV
+### Exporting OLAP grid to Excel, Word, PDF, and CSV
 
-For exporting OLAP grid contents to excel, word, PDF and CSV, the following reference needs to be added in addition to the above assemblies.
+In addition to the above assemblies, the following reference needs to be added to export OLAP grid contents to excel, word, PDF, and CSV.
 
 <table>
 <tr>
@@ -742,10 +742,9 @@ Syncfusion.PivotTable.Wpf
 </tr>
 </table>
 
-### Exporting Pivot Grid to Excel, Word, PDF and CSV
+### Exporting pivot grid to Excel, Word, PDF, and CSV
 
-For exporting pivot grid contents to excel, word, PDF and CSV, the following references need to be added in addition to the above assemblies.
-
+In addition to the above assemblies, the following reference needs to be added to export pivot grid contents to excel, word, PDF, and CSV.
 <table>
 <tr>
 <th>Assembly references </th>
@@ -1178,9 +1177,8 @@ Syncfusion.SfGrid.WPF
 </tr>
 </table>
 
-### Exporting DataGrid to Excel, PDF and CSV
-
-For exporting DataGrid to excel, pdf or csv, the following references need to be added in your application.
+### Exporting DataGrid to Excel, PDF, and CSV
+The following reference needs to be added in your application for exporting DataGrid to excel, pdf, and csv.
 
 <table>
 <tr>
@@ -1275,9 +1273,9 @@ Syncfusion.SfDiagram.WPF
 </tr>
 </table>
 
-### Printing and Print Preview
+### Printing and print preview
 
-For printing the Diagram with new enhanced print preview,the below assembly need to be added in your application.
+The following assembly need to be added in your application for printing the diagram with new enhanced print preview.
 
 <table>
 <tr>
@@ -1294,9 +1292,9 @@ Syncfusion.SfShared.WPF
 </tr>
 </table>
 
-### Diagram Ribbon
+### Diagram ribbon
 
-When your application already having SfDiagram and you need the enhanced ribbon to work with the most important settings and features of the Diagram, then the  following assemblies need to be added in your application.
+If your application already has SfDiagram and you require the enhanced ribbon to work with the most important settings and features of the diagram, then the following assemblies need to be added in your application.
 
 <table>
 <tr>
@@ -1735,9 +1733,9 @@ Syncfusion.SfSpreadsheet.WPF
 </tr>
 </table>
 
-### Import Chart, Sparklines from Excel to SfSpreadsheet
+### Import chart and sparklines from Excel to SfSpreadsheet
 
-For Importing Chart or Sparklines in SfSpreadsheet, the following references need to be added in your application.
+The following references need to be added in your application for importing chart and sparklines in SfSpreadsheet.
 
 <table>
 <tr>
@@ -1758,7 +1756,7 @@ Syncfusion.SfSpreadsheetHelper.WPF
 
 ### Exporting SfSpreadsheet to PDF
 
-For exporting SfSpreadsheet to pdf, the following references need to be added in your application.
+The following references need to be added in your application for exporting SfSpreadsheet to pdf.
 
 <table>
 <tr>
@@ -1865,10 +1863,9 @@ Syncfusion.SfGrid.WPF
 </tr>
 </table>
 
-### Exporting TreeGrid to Excel, PDF and CSV
+### Exporting TreeGrid to Excel, PDF, and CSV
 
-For exporting TreeGrid to excel, pdf or csv, the following references need to be added in your application.
-
+The following references need to be added in your application for exporting TreeGrid to excel, pdf, and csv.
 <table>
 <tr>
 <th>Assembly references </th>
