@@ -28,7 +28,7 @@ The following are the API’s in ChartAxis
 <table>
 <tr>
 <td>
-[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)
+{{'[`Start`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Start)'| markdownify }}
 </td>
 <td>
 Gets the start value of the visible range.
@@ -36,7 +36,7 @@ Gets the start value of the visible range.
 </tr>
 <tr>
 <td>
-[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)
+{{'[`End`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_End)'| markdownify }}
 </td>
 <td>
 Gets the end value of the visible range.
@@ -44,7 +44,7 @@ Gets the end value of the visible range.
 </tr>
 <tr>
 <td>
-[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)
+{{'[`Delta`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Delta)'| markdownify }}
 </td>
 <td>
 Gets the delta value of the visible range.
@@ -52,7 +52,7 @@ Gets the delta value of the visible range.
 </tr>
 <tr>
 <td>
-[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)
+{{'[`Empty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Empty)'| markdownify }}
 </td>
 <td>
 Gets the empty value of the visible range.
@@ -60,7 +60,7 @@ Gets the empty value of the visible range.
 </tr>
 <tr>
 <td>
-[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)
+{{'[`IsEmpty`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_IsEmpty)'| markdownify }}
 </td>
 <td>
 Gets a value indicating whether the visible range is empty or not.
@@ -68,7 +68,7 @@ Gets a value indicating whether the visible range is empty or not.
 </tr>
 <tr>
 <td>
-[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)
+{{'[`Median`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.DoubleRange.html#Syncfusion_UI_Xaml_Charts_DoubleRange_Median)'| markdownify }}
 </td>
 <td>
 Gets the median value of the visible range.
