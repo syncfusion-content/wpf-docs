@@ -17,11 +17,13 @@ String platform='WPF';
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://gitlab.syncfusion.com/api/v4/projects/' + env.projectId + '/merge_requests/' + env.MergeRequestId + '/changes'
+			// def branchCommit = '"' + 'https://gitlab.syncfusion.com/api/v4/projects/' + env.projectId + '/merge_requests/' + env.MergeRequestId + '/changes'
+		   def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/wpf-docs/pulls/'+env.pullRequestId+'/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
-            def ChangeFiles= branchCommitDetails.split('\n')[2];
-            ChangeFiles = ChangeFiles.split('"new_path":')
+           // def ChangeFiles= branchCommitDetails.split('\n')[2];
+		    def ChangeFiles= branchCommitDetails.split('"filename": ');
+           // ChangeFiles = ChangeFiles.split('"new_path":')
 
             for (int i= 1; i < ChangeFiles.size();i++)
             {
@@ -39,7 +41,7 @@ String platform='WPF';
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
-	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://gitlab.syncfusion.com/content/ug_spellchecker.git']]])
+	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
 	}
