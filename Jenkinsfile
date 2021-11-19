@@ -15,6 +15,7 @@ String platform='WPF';
 	    { 
 	    dir('Spell-Checker') 
            {
+
 		     checkout scm			 
 			
 		   def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/wpf-docs/pulls/'+env.pullRequestId+'/files'
@@ -22,6 +23,7 @@ String platform='WPF';
 
            def ChangeFiles= branchCommitDetails.split('"filename": ');
            
+
             for (int i= 1; i < ChangeFiles.size();i++)
             {
             def ChangeFile= ChangeFiles[i].split(',')[0].replace('"', '')
