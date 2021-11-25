@@ -297,10 +297,6 @@ The following table compares the [MonthViewSettings]( https://help.syncfusion.co
 <td>{{'[ViewHeaderTemplate]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate)'| markdownify }}</td>
 <td> Gets or sets the view header template.</td></tr>
 <tr>
-<td>{{'[FirstDayOfWeek]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek/Syncfusion.html)'| markdownify }}</td>
-<td>{{'[FirstDayOfWeek]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek)'| markdownify }}</td>
-<td> Gets or sets the day to modify the default first day of week for schedule.</td></tr>
-<tr>
 <td>-</td>
 <td>{{'[MonthNavigationDirection]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthNavigationDirection)'| markdownify }}</td>
 <td> Gets or sets a value which determines in which direction the MonthView scrolls.</td></tr>
