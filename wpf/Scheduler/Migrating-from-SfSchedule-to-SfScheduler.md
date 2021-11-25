@@ -91,6 +91,10 @@ Description</th></tr>
 <td>{{'[Resource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource)'| markdownify }}</td>
 <td>{{'[ResourceCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection)'| markdownify }}</td>
 <td>Gets or sets the Resource grouping for schedule.</td></tr>
+<tr>
+<td>{{'[EnableReminderTimer]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableReminderTimer/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EnableReminder]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder)'| markdownify }}</td>
+<td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
 The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
@@ -225,6 +229,146 @@ The following table compares the [AppointmentMapping](https://help.syncfusion.co
 <td>-</td>
 <td>{{'[RecurrenceId](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_RecurrenceId)'| markdownify }}</td>
 <td>Gets or sets the RecurrenceId property for mapping to the schedule appointment.</td></tr>
+</table>
+
+The following table compares the [DaysViewSettings]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval)'| markdownify }}</td>
+<td> Gets or sets a time interval.</td></tr>
+<tr>
+<td>{{'[IntervalHeight]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeIntervalSize]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize)'| markdownify }}</td>
+<td> Gets or sets a time interval size.</td></tr>
+<tr>
+<td>{{'[WorkStartHour](https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour)'| markdownify }}</td>
+<td> Gets or sets the StartHour.</td></tr>
+<tr>
+<td>{{'[WorkEndHour]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EndHour]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour)'| markdownify }}</td>
+<td> Gets or sets the EndHour.</td></tr>
+</table>
+
+The following table compares the [TimelineViewSettings]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeInterval]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval)'| markdownify }}</td>
+<td> Gets or sets a time interval.</td></tr>
+<tr>
+<td>{{'[IntervalHeight]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[TimeIntervalSize]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize)'| markdownify }}</td>
+<td> Gets or sets a time interval size.</td></tr>
+<tr>
+<td>{{'[WorkStartHour](https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html?tabs=tabid-c%2Ctabid-1%2Ctabid-a#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour)'| markdownify }}</td>
+<td> Gets or sets the StartHour.</td></tr>
+<tr>
+<td>{{'[WorkEndHour]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[EndHour]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour)'| markdownify }}</td>
+<td> Gets or sets the EndHour.</td></tr>
+</table>
+
+The following table compares the [MonthViewSettings]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>{{'[HeaderDateFormat]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthHeaderDateFormat/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[ViewHeaderDayFormat]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat)'| markdownify }}</td>
+<td> .</td>Gets or sets view header day format.</tr>
+<tr>
+<td>{{'[HeaderBackground]( https://help.syncfusion.com/cr/wpf#Syncfusion_UI_Xaml_Schedule_SfSchedule_HeaderBackground/Syncfusion.html)'| markdownify }}</td>
+<td>{{'[ViewHeaderTemplate]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate)'| markdownify }}</td>
+<td> Gets or sets the view header template.</td></tr>
+<tr>
+<td>-</td>
+<td>{{'[MonthNavigationDirection]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthNavigationDirection)'| markdownify }}</td>
+<td> Gets or sets a value which determines in which direction the MonthView scrolls.</td></tr>
+<tr>
+<td>-</td>
+<td>{{'[AppointmentDisplayMode]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayMode)'| markdownify }}</td>
+<td> Gets or sets a value which define the display mode for appointment in month view.</td></tr>
+<tr>
+<td>-</td>
+<td>{{'[AppointmentDisplayCount]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AppointmentDisplayCount)'| markdownify }}</td>
+<td> Gets or sets a value to define the maximum number of the appointment to be displayed in a month cell.</td></tr>
+<tr>
+<td>-</td>
+<td>{{'[ShowWeekNumber]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowWeekNumber)'| markdownify }}</td>
+<td> Gets or sets a value indicating whether week number should be shown or not.</td></tr>
+</table>
+
+The following table compares the Event APIs,
+
+<table>
+<tr>
+<th>SfSchedule</th>
+<th>SfScheduler</th>
+<th>Description</th></tr>
+<tr>
+<td>ContextMenuOpening</td>
+<td>{{'[SchedulerContextMenuOpening]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerContextMenuOpeningEventArgs.html)'| markdownify }}</td>
+<td> Provides data for a SchedulerContextMenuOpening event.</td></tr>
+<tr>
+<td>ReminderFormActionChanged</td>
+<td>{{'[ReminderAlertActionChanged]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderAlertActionChangedEventArgs.html)'| markdownify }}</td>
+<td> Provides data for a ReminderAlertActionChanged event.</td></tr>
+<tr>
+<td>AppointmentEditorClosed</td>
+<td>{{'[AppointmentEditorClosing]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorClosingEventArgs.html)'| markdownify }}</td>
+<td> Provides data for a AppointmentEditorClosing event.</td></tr>
+<tr>
+<td>ScheduleClick</td>
+<td>{{'[CellTapped]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html)'| markdownify }}</td>
+<td> Provides data for the CellTapped event.</td></tr>
+<tr>
+<td>ReminderOpening</td>
+<td>{{'[ReminderAlertOpening]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderAlertOpeningEventArgs.html)'| markdownify }}</td>
+<td> Provides data for a ReminderAlertOpening event.</td></tr>
+<tr>
+<td>AppointmentEditorOpening</td>
+<td>{{'[AppointmentEditorOpening]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html?tabs=tabid-1)'| markdownify }}</td>
+<td> Provides data for a AppointmentEditorOpening event.</td></tr>
+<tr>
+<td>ScheduleDoubleClick</td>
+<td>{{'[CellDoubleTapped]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html)'| markdownify }}</td>
+<td> Provides data for the CellDoubleTapped event.</td></tr>
+<tr>
+<td>AppointmentStartDragging</td>
+<td>{{'[AppointmentDragStarting]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragStartingEventArgs.html)'| markdownify }}</td>
+<td> Provides data for the AppointmentDragStarting event.</td></tr>
+<tr>
+<td>AppointmentDragging</td>
+<td>{{'[AppointmentDragOver]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDragOverEventArgs.html)'| markdownify }}</td>
+<td> Provides data for the AppointmentDragOver event.</td></tr>
+<tr>
+<td>AppointmentEndDragging</td>
+<td>{{'[AppointmentDropping]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDroppingEventArgs.html)'| markdownify }}</td>
+<td> Provides data for the AppointmentDropping event.</td></tr>
+<tr>
+<td>AppointmentResizing</td>
+<td>{{'[AppointmentResizing]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentResizingEventArgs.html)'| markdownify }}</td>
+<td> Provides data for AppointmentResizing event.</td></tr>
+<tr>
+<td>AppointmentDeleting</td>
+<td>{{'[AppointmentDeleting]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentDeletingEventArgs.html)'| markdownify }}</td>
+<td> Provides data for a AppointmentDeleting event.</td></tr>
 </table>
 
 See the list of the rich set of features in `SfScheduler` over `SfSchedule` as follows:
