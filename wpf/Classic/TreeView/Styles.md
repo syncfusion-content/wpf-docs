@@ -67,7 +67,7 @@ Title="MainWindow" Height="350" Width="400">
 
 {% endtabs %}
 
-![Customize the style of the Drag Indicator in TreeViewAdv](Styles_images/Styles_img1.jpeg)
+![Customize the style of the Drag Indicator in TreeViewAdv](Styles_images/wpf-treeview-drag-indicator-styles.jpeg)
 
 ## Setting expand style   	
 
@@ -139,7 +139,7 @@ Trigger Property="ToggleButton.IsChecked" Value="True">
 
 {% endtabs %}
 
-![Customize appearance of expand and collapse in TreeViewAdv](Styles_images/Styles_img2.jpeg)
+![Customize appearance of expand and collapse in TreeViewAdv](Styles_images/wpf-treeview-expand-collapse-styles.jpeg)
 
 ##  Setting item container style
 
@@ -188,6 +188,6 @@ The following example can be used to set this property.
 
 {% endtabs %}
 
-![Setting item container style in TreeViewAdv](Styles_images/Styles_img3.jpeg)
+![Setting item container style in TreeViewAdv](Styles_images/wpf-treeview-item-container-styles.jpeg)
 
 
