@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Input Restriction in WPF MaskedTextBox control | Syncfusion
-description: Learn here all about Input Restriction support in Syncfusion WPF MaskedTextBox (SfMaskedEdit) control and more.
+description: Learn here all about Input Restriction support in Syncfusion WPF MaskedTextBox control and more.
 platform: WPF
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Input Restriction in WPF MaskedTextBox (SfMaskedEdit)
+# Input Restriction in WPF MaskedTextBox
 
 This section explains accessing the [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) properties and events associated with it.
 
