@@ -62,7 +62,7 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    
 ## Configuring toolbox for WPF .NET 5.0 projects
 
-From 2021 Volume 1,Syncfusion started providing toolbox support for the WPF .NET 5.0 framework in Visual Studio. After installing the Syncfusion WPF installer, Syncfusion controls will be automatically configured in the Visual Studio toolbox for WPF.NET 5.0 projects.
+From 2021 Volume 1, Syncfusion started providing toolbox support for the WPF .NET 5.0 framework in Visual Studio. After installing the Syncfusion WPF installer, Syncfusion controls will be automatically configured in the Visual Studio toolbox for WPF.NET 5.0 projects.
 
 N> * Syncfusion included this toolbox support for .NET 5.0 WPF platform from 2021 Volume 1 release version v19.1.0.54 only. 
 * If the project was created with TargetFramework.NET Core 3.1 and then changed to.NET 5.0 after installing the WPF setup, you must restart Visual Studio to see the Syncfusion controls in the Visual Studio Toolbox. 
