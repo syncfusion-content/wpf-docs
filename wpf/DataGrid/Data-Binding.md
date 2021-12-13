@@ -290,7 +290,7 @@ Reference:
 
 To create the WCF data service, follow the steps mentioned in the below MSDN link or the follow below steps,
 
-[https://docs.microsoft.com/en-us/dotnet/framework/data/wcf/creating-the-data-service](https://docs.microsoft.com/en-us/dotnet/framework/data/wcf/creating-the-data-service).
+[https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service](https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service).
 
 You can skip the below steps and directly add service reference to the client application, if you are having already running service.
  
