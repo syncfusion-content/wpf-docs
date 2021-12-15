@@ -302,7 +302,7 @@ reader.Close()
 
 ## Restrict state persistence for specific child
 
-The [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCanSerialize_System_Windows_DependencyObject_System_Boolean_) function of DockingManager. The LoadDockState will return true only when the DockingManager children count is same as the Serialized item count.
+The [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_CanSerializeProperty) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_SetCanSerialize_System_Windows_DependencyObject_System_Boolean_) function of DockingManager.
 
 {% tabs %}
 
@@ -331,4 +331,6 @@ DockingManager.SetCanSerialize(solutionExplorer, false);
 N> Restrict state persistence does not support to children that were added at run time in DockingManager when performing serialization and de-serialization using [XmlWriter](https://help.syncfusion.com/wpf/tabbed-mdi-form/state-persistence#various-formats-to-save--load-states).
 
 N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
+
+N> The LoadDockState will return true only when the DockingManager children count is same as the Serialized item count otherwise it returns false.
 
