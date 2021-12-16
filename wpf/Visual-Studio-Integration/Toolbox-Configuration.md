@@ -59,6 +59,11 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox.
    * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}. 
 
+## Configuring toolbox for WPF in Visual Studio 2022   
+
+From 2021 Volume 4, Syncfusion started providing toolbox support for .NET Framework in Visual Studio 2022 Toolbox. After installing the Syncfusion WPF installer, Syncfusion controls will be automatically configured in the Visual Studio 2022 toolbox for WPF projects.
+
+N> * Syncfusion WPF .NET 5.0 controls will be compatible with .NET 6.0, on installing the Syncfusion WPF installer, our .NET 5.0 controls will be configured the toolbox for .NET 6.0 projects too.
    
 ## Configuring toolbox for WPF .NET 5.0 projects
 
@@ -117,7 +122,6 @@ Use the following steps to add the Syncfusion WPF controls through Syncfusion Nu
 **step 4:**
    
    Now restart the Visual Studio 2019 to get populate the latest Syncfusion controls in Toolbox.
-
 
 ## Configuring toolbox for .NET Core 3.1 projects
 
