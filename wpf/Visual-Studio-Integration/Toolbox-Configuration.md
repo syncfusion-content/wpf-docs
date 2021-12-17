@@ -56,7 +56,7 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
    
-   N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox.
+   N> * You must reset the toolbox, when the installed controls are not reflected properly in the Toolbox. 
    * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}. 
 
 ## Configuring toolbox for WPF in Visual Studio 2022   
