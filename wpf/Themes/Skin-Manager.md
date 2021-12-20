@@ -510,7 +510,7 @@ Customize theme colors using the predefined palette
 
 {% highlight C# %}
 
-FFluentDarkThemeSettings themeSettings = new FluentDarkThemeSettings();
+FluentDarkThemeSettings themeSettings = new FluentDarkThemeSettings();
 themeSettings.Palette = FluentPalette.PinkRed;
 SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 
