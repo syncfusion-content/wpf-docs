@@ -162,7 +162,7 @@ Fill command allows you to fill adjacent groups of cells with the same text, num
 * Select a cell or a range of cells to fill with data or formulas from nearby cells.
 * Then go to Home > Fill and choose your fill selections (Down, Right, Up and Left).
 
-![WPF Spreadsheet Fill] (Fill_images/wpf-spreadsheet-fill.png)
+![WPF Spreadsheet Fill](Fill_images/wpf-spreadsheet-fill.png)
 
 ## Data Validation
 
