@@ -105,6 +105,12 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ![Orthogonal segments](Connector_images/StraightSpliting.PNG)
 
+## Shift dragging in straight segments at run time
+
+Straight segments can be dragged in specific angles like 0, 45, 90, 180, and etc... by using Shift + dragging in the runtime.
+
+![Shift Dragging](Connector_images/Shiftdragging.gif)
+
 ## How to add or remove the straight segments at run time
 
 Straight segments can be split into multiple straight segments interactively by clicking on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
