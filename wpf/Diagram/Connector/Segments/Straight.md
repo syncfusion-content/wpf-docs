@@ -109,7 +109,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 Straight segments can be dragged in specific angles like 0, 45, 90, 180, and etc... by using Shift + dragging in the runtime.
 
-![Shift Dragging](Connector_images/Shiftdragging.gif)
+![Shift Dragging](Connector_images/Shiftdragging.png)
 
 ## How to add or remove the straight segments at run time
 
