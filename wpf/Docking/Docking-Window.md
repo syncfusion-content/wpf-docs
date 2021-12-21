@@ -159,6 +159,45 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 ![WPF Docking Maximization Feature](DockingWindow_images/wpf-docking-maximization-feature.jpeg)
 
+### Limit Maximized Dock item
+
+DockingManager provides two attached property named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
+Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True` and set values for `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode`.
+
+When specific window is maximized which having `DesiredMaxWidthInDockedMode`, `DesiredMaxHeightInDockedMode`, then the Maximized window will occupy the remaining size of the DockingManager.
+
+{% tabs %}
+
+{highlight XAML %}
+
+<syncfusion:DockingManager x:Name="SyncdockingManager" MaximizeButtonEnabled="True" >
+            
+<ContentControl sync:DockingManager.Header="Solution Explorer" sync:DockingManager.SideInDockedMode="Left"
+                            sync:DockingManager.DesiredMaxWidthInDockedMode="200" />
+            
+<ContentControl sync:DockingManager.Header="Output" sync:DockingManager.SideInDockedMode="Right"
+                            sync:DockingManager.DesiredMaxWidthInDockedMode="300"/>
+            
+<ContentControl sync:DockingManager.Header="Error List" sync:DockingManager.SideInDockedMode="Bottom"
+                            sync:DockingManager.DesiredMaxHeightInDockedMode="200"/>
+            
+</syncfusion:DockingManager>
+
+{endhighlight %}
+
+{% highlight C#}
+
+SyncDockingManager.MaximizeButtonEnabled = true;
+
+DockingManager.DesiredMaxWidthInDockedMode="200";
+
+DockingManager.DesiredMaxHeightInDockedMode="200";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Docking Limit Maximization for Specific Children](DockingWindow_images/wpf-docking-limit-maximizeditem.JPG)
 
 ### Maximize Docking Window to full screen
 
@@ -249,43 +288,6 @@ DockingManager.SetCanMaximize(Toolbox, false);
 {% endtabs %}
 
 ![WPF Docking Min and Max Restriction for Specific Children](DockingWindow_images/wpf-docking-min-and-max-restriction-for-specific-children.jpeg)
-
-### Limit Maximized Dock item
-
-To Limit the size or height of a certain Dock item set the attached property `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` respectively to the specific window.
-
-{% tabs %}
-
-{highlight XAML %}
-
-<sync:DockingManager x:Name="SyncdockingManager" MaximizeButtonEnabled="True" >
-            
-<ContentControl sync:DockingManager.Header="Solution Explorer" sync:DockingManager.SideInDockedMode="Left"
-                            sync:DockingManager.DesiredMaxWidthInDockedMode="200" />
-            
-<ContentControl sync:DockingManager.Header="Output" sync:DockingManager.SideInDockedMode="Right"
-                            sync:DockingManager.DesiredMaxWidthInDockedMode="300"/>
-            
-<ContentControl sync:DockingManager.Header="Error List" sync:DockingManager.SideInDockedMode="Bottom"
-                            sync:DockingManager.DesiredMaxHeightInDockedMode="200"/>
-            
-</sync:DockingManager>
-
-{endhighlight %}
-
-{% highlight C#}
-
-SyncDockingManager.MaximizeButtonEnabled = true;
-
-DockingManager.DesiredMaxWidthInDockedMode="200";
-
-DockingManager.DesiredMaxHeightInDockedMode="200";
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF Docking Limit Maximization for Specific Children](DockingWindow_images/wpf-docking-limit-maximizeditem.JPG)
 
 ## Hot Drag the window
 
