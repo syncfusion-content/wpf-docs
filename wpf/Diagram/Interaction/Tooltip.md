@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WPF Diagram control | Syncfusion
-description: Learn here all about the types of Tooltip support in Syncfusion WPF Diagram (SfDiagram) control.
+description: Learn here all about the Tooltip support in Syncfusion WPF Diagram (SfDiagram) control, its types and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
