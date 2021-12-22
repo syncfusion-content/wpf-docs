@@ -22,6 +22,12 @@ Based on the [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 [Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
 
+## Dragging Diagram elements in vertical/horizontal axis
+
+Diagram provides support to drag its elements in either vertical or horizontal directions by Shift dragging. It can be done by pressing the shift key then drag the Diagram elements.
+
+![Shift Dragging](Drag_Images/ShiftDragging.gif)
+
 ## Drag and Drop Nodes over other elements
 
 Diagram provides support to drop a [node](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html) over another node or [connector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html). Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the [AllowDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) constraints property for both node and connector.
