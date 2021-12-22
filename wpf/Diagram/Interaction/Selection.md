@@ -164,12 +164,6 @@ Diagram control provides support to change the selection handle display mode of 
 |Default| It is used to display selection handle display mode as larger size bubbles. |![Default selection handle display mode](Interaction_images/DefaultSelectorHandleDisplayMode.png)|
 |CompactSelector|It is used to display selection handle display mode as compact size rectangle.|![selectionmode](Interaction_images/CompactSelector.png)|
 
-### Dynamic tooltip in Compact selector mode
-
-Diagram control provides dynamic tooltip support in the Compact selector mode. In this mode, while dragging, resizing, and rotating the diagram elements in the edge of the viewport, the tooltip automatically positions it to the nearer side of the resizer or rotator thumb or place it into the viewport.
-
-![dynamictooltip](Interaction_images/DynamicToolTip.png)
-
 ## Events
 
 * [ItemSelectingEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) and [ItemSelectedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IGraphInfo.html) for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
