@@ -7,9 +7,9 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Split and Join in WPF Diagram (SfDiagram)
+# Enable connector splitting in WPF Diagram (SfDiagram)
 
-Diagram provides support to split and join the connectors using [EnableConnectorSplitting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.EnableConnectorSplitting.html) . Default value of `EnableConnectorSplitting` is false. 
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. You can able to split the connector between two nodes when dropping new node onto the existing connector and create the connection between new node and existing nodes by setting `EnableConnectorSplitting` as `true`. Default value of `EnableConnectorSplitting` is `false`.
 
 {% tabs %}
 {% highlight Xaml %}

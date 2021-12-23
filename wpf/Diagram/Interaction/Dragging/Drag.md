@@ -24,7 +24,7 @@ Based on the [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 ## Dragging Diagram elements in vertical/horizontal axis
 
-Diagram provides support to drag its elements in either vertical or horizontal directions by Shift dragging. It can be done by pressing the shift key then drag the Diagram elements.
+Diagram provides support to drag its elements in either vertical or horizontal directions by hold down SHIFT key while you drag the diagram elements.
 
 ![Shift Dragging](Drag_Images/ShiftDragging.gif)
 
