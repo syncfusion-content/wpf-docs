@@ -11,14 +11,14 @@ documentation: ug
 
 In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. In SfDiagram, Tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing and rotating the diagram elements.
 
-## Default Tooltip
+## Static Tooltip
 
-By default, diagram displays a static tooltip to provide the size, position, and angle related information while dragging, resizing, and rotating. The following image illustrate how the diagram displays the node information during an interaction through tooltip.
+By default, the diagram displays the tooltip at a static position during an interaction. While dragging and resizing, the size and position information will be displayed at the top of the node and during rotation, it will be displayed at the top of the rotation thumb.
 
-![Default Tooltip](Interaction_images/DefaultTooltip.gif)
+![Static Tooltip](Interaction_images/DefaultTooltip.gif)
 
 ## Dynamic Tooltip
 
-Diagram control provides dynamic tooltip support in the Compact selector mode. In this mode, while resizing the tooltip automatically positions it to the nearer side of the resizer and while dragging the diagram elements to the edge of viewport the tooltip place it into the viewport. The following image illustrate how the dynamic tooltip works.
+Diagram control displays the tooltip at a dynamic position when the SelectorHandleDisplayMode is set as Compact. While resizing a diagram element, the tooltip is positioned relatively nearer to the resizer thumbs, and during dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
 
 ![Dynamic Tooltip](Interaction_images/DynamicTooltip.gif)
