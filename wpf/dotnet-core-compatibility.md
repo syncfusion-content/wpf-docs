@@ -7,11 +7,11 @@ control: .NET Core
 documentation: ug
 ---
 
-# Getting started with .NET core
+# Getting started with .NET Core
 
-Syncfusion Essential Studio for WPF ships .NET core assemblies for building WPF .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion WPF controls.
+Syncfusion Essential Studio for WPF ships .NET Core assemblies for building WPF .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion WPF controls.
 
-N> All Syncfusion WPF controls supports .NET core Framework except the controls labeled as `classic`.
+N> All Syncfusion WPF controls supports .NET Core Framework except the controls labeled as `classic`.
 
 ## Adding Reference
 
@@ -69,27 +69,27 @@ Let see how to add `ButtonAdv` control in WPF (.NET Core) application using NuGe
 
 In **Solution Explorer**, right-click on **Dependencies** and select **Manage NuGet Packages...**.
 
-![WPF NET core showing NuGet Packages](NETcore_WPF_images/wpf-netcore-nuget-package.png)
+![WPF NET Core showing NuGet Packages](NETcore_WPF_images/wpf-netcore-nuget-package.png)
 
 Now, **NuGet Package Manager** window will be opened. Here, select **Browse** and search the required assembly in search box. Select the required assembly and click **Install**.
 
-![WPF NET core shows NuGet installation](NETcore_WPF_images/wpf-netcore-install-nuget.png)
+![WPF NET Core shows NuGet installation](NETcore_WPF_images/wpf-netcore-install-nuget.png)
 
 Now, the required assemblies are added in to the project.
 
-![WPF NET core showing installed assembly](NETcore_WPF_images/wpf-netcore-assembly.png)
+![WPF NET Core showing installed assembly](NETcore_WPF_images/wpf-netcore-assembly.png)
 
 ### Through assembly deployment
 
 In **Solution Explorer**, right-click on **Dependencies** and select **Add Reference**.
 
-![NETcore showing assembly](NETcore_WPF_images/NETcore_reference.png)
+![NET Core showing assembly](NETcore_WPF_images/NETcore_reference.png)
 
 Now, **Reference Manager** dialog will be opened. Here click **Browse** and can select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **OK**. Now, required assemblies are added in to the project, like in the below screenshot.
 
 N> You can get Syncfusion WPF (.NET Core) controls assemblies from `netcoreapp3.1` or `net 5.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies
 
-![NETcore showing assembly](NETcore_WPF_images/NETcore_assembly.jpeg)
+![NET Core showing assembly](NETcore_WPF_images/NETcore_assembly.jpeg)
 
 ### Adding ButtonAdv control
 
