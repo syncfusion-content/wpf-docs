@@ -168,7 +168,7 @@ When specific window is maximized which having `DesiredMaxWidthInDockedMode`, `D
 
 {% tabs %}
 
-{highlight XAML %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="SyncdockingManager" MaximizeButtonEnabled="True" >
             
@@ -183,9 +183,9 @@ When specific window is maximized which having `DesiredMaxWidthInDockedMode`, `D
             
 </syncfusion:DockingManager>
 
-{endhighlight %}
+{% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
 SyncDockingManager.MaximizeButtonEnabled = true;
 
