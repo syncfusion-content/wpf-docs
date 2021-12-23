@@ -7,11 +7,11 @@ control: .NET Core
 documentation: ug
 ---
 
-# Getting started with .NET core 3.1 and .NET 5
+# Getting started with .NET core 3.1, .NET 5 and .NET 6
 
-Syncfusion Essential Studio for WPF ships .NET core 3.1 and .NET 5 assemblies for building WPF .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion WPF controls.
+Syncfusion Essential Studio for WPF ships .NET core 3.1, .NET 5 and .NET 6 assemblies for building WPF .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion WPF controls.
 
-N> All Syncfusion WPF controls supports .NET Core 3.1 and .NET 5 Framework except the controls labeled as `classic`.
+N> All Syncfusion WPF controls supports .NET core 3.1, .NET 5 and .NET 6 Framework except the controls labeled as `classic`.
 
 ## Adding Reference
 
@@ -28,7 +28,7 @@ Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencie
 
 ### Adding assembly references from installed location
 
-You can also add the Syncfusion WPF (.NET Core 3.1 and .NET 5) controls assemblies from `precompiledassemblies` folder in the following location.
+You can also add the Syncfusion WPF (.NET core 3.1, .NET 5 and .NET 6) controls assemblies from `precompiledassemblies` folder in the following location.
 
 <table>
 <tr>
@@ -36,14 +36,14 @@ You can also add the Syncfusion WPF (.NET Core 3.1 and .NET 5) controls assembli
 <td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\netcoreapp3.1</td>
 </tr>
 <tr>
-<td>.NET 5</td>
+<td>.NET 5 or .NET 6</td>
 <td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net5.0</td>
 </tr>
 </table>
 
 ## Creating the project
 
-To create the .NET Core 3.1 or .NET 5 project by using the following ways.
+To create the .NET Core 3.1, .NET 5 or .NET 6 project by using the following ways.
 
 ### Create a .NET 5 project
 
@@ -93,7 +93,7 @@ N> You can get Syncfusion WPF (.NET Core or .NET 5) controls assemblies from `ne
 
 ### Adding ButtonAdv control
 
-You can add `ButtonAdv` control either using code behind or through XAML code in your WPF (. NET core 3.1 or .NET 5) application.
+You can add `ButtonAdv` control either using code behind or through XAML code in your WPF (. NET core 3.1, .NET 5 or .NET 6) application.
 
 a.	Following code explains how to create the **ButtonAdv** control through XAML.
 
