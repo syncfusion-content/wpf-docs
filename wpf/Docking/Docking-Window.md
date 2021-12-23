@@ -162,24 +162,23 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 ### Limit Maximized Dock item
 
 DockingManager provides two attached property named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
-Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True` and set values for `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode`.
+Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True` and set values for `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode`and the specific window will gets maximized based on the values respectively.
 
-When specific window is maximized which having `DesiredMaxWidthInDockedMode`, `DesiredMaxHeightInDockedMode`, then the Maximized window will occupy the remaining size of the DockingManager.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="SyncdockingManager" MaximizeButtonEnabled="True" >
+<syncfusion:DockingManager x:Name="SyncDockingManager" MaximizeButtonEnabled="True" >
             
-<ContentControl sync:DockingManager.Header="Solution Explorer" sync:DockingManager.SideInDockedMode="Left"
-                            sync:DockingManager.DesiredMaxWidthInDockedMode="200" />
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.SideInDockedMode="Left"
+                            syncfusion:DockingManager.DesiredMaxWidthInDockedMode="200" />
             
-<ContentControl sync:DockingManager.Header="Output" sync:DockingManager.SideInDockedMode="Right"
-                            sync:DockingManager.DesiredMaxWidthInDockedMode="300"/>
+<ContentControl syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.SideInDockedMode="Right"
+                            syncfusion:DockingManager.DesiredMaxWidthInDockedMode="300"/>
             
-<ContentControl sync:DockingManager.Header="Error List" sync:DockingManager.SideInDockedMode="Bottom"
-                            sync:DockingManager.DesiredMaxHeightInDockedMode="200"/>
+<ContentControl syncfusion:DockingManager.Header="Error List" syncfusion:DockingManager.SideInDockedMode="Bottom"
+                            syncfusion:DockingManager.DesiredMaxHeightInDockedMode="200"/>
             
 </syncfusion:DockingManager>
 
@@ -189,9 +188,17 @@ When specific window is maximized which having `DesiredMaxWidthInDockedMode`, `D
 
 SyncDockingManager.MaximizeButtonEnabled = true;
 
-DockingManager.DesiredMaxWidthInDockedMode="200";
+DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Left);
 
-DockingManager.DesiredMaxHeightInDockedMode="200";
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Right);
+
+DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Bottom);
+
+DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1, 200);
+
+DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow2, 300);
+
+DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow3, 200);
 
 {% endhighlight %}
 
