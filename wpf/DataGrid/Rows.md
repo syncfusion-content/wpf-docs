@@ -56,7 +56,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.png"/>
+ Denotes the row which has current cell or selected item in WPF DataGrid<img src="Rows_images/Rows_img2.png"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -64,7 +64,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.png"/>
+Denotes row is being edited in WPF DataGrid<img src="Rows_images/Rows_img3.png"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -72,7 +72,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.png"/>
+Denotes row is AddNewRow in WPF DataGrid<img src="Rows_images/Rows_img4.png"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -80,7 +80,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img5.png"/>
+Denotes the row has errors in WPF DataGrid<img src="Rows_images/Rows_img5.png"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -88,7 +88,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img6.png"/>
+Denotes that the current row which has errors in WPF DataGrid<img src="Rows_images/Rows_img6.png"/>
 </td>
 <td>
 Denotes that the current row which has errors.
