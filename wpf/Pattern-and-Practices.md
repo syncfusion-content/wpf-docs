@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern and Practices for Syncfusion Essential WPF controls
-description: Learn here about how to use MVVM Commands, patterns and Events of the Syncfusion Essential WPF controls
+description: Learn here about how to use MVVM Commands, Patterns, and Events of the Syncfusion Essential WPF controls
 platform: wpf
 control: Pattern and Practices
 documentation: ug
@@ -10,9 +10,9 @@ documentation: ug
 
 ## Getting Started with MVVM
 
-Essential WPF Controls are suitable for MVVM Pattern. Since the controls are provided with built-in commands. 
+Essential WPF controls are suitable for MVVM Pattern. Since, the controls are provided with built-in commands. 
 
-DataContext property specifies the default source for Data Binding in MVVM pattern.
+The `DataContext` property specifies the default source for Data Binding in MVVM pattern.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ public partial class MainWindow : Window
 
 {% endtabs %}
 
-This section explains how to perform TabControlExt’s `selectionChanged` event, by create a ViewModel and define a Model collection that is used to bind with the TabControl’s `ItemSource` property.
+This section explains how to perform TabControlExt’s `selectionChanged` event by creating a ViewModel and defining a Model collection that is used to bind with the TabControl’s `ItemSource` property.
 
 
 {% tabs %}
@@ -169,7 +169,7 @@ End Class
 {% endtabs %}
 
 To handle the `SelectionChanged` event of the TabControlExt in ViewModel, use `TabControlExtSelectionChangedCommand` and define a SelectionChanged command using `ICommand`. 
-The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.Tools.MVVM.WPF` assembly. And it requires `Syncfusion.Shared.MVVM.WPF` as dependency assembly.  
+The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.Tools.MVVM.WPF` assembly. It also requires `Syncfusion.Shared.MVVM.WPF` as a dependency assembly.  
 
 {% tabs %}
 
@@ -236,11 +236,11 @@ End Sub
 
 ## MVVM Commands
 
-The following section covers usage of commands in code-behind with the help of ViewModel.
+The following section covers how to use commands in code-behind using ViewModel.
 
-### CommandParameter:
+### CommandParameter
 
-`CommandParameter` can easily pass an object or bind it to a property of another control. The following code example passes a string through CommandParameter.
+`CommandParameter` can easily pass an object or bind it to a property of another control. The following code example passes a string using CommandParameter.
 
 
 {% tabs %}
@@ -280,7 +280,7 @@ End Sub
 ![Select third tabitem and command parameter](MVVM_images/MVVM_img2.jpeg)
 
 
-#### Pass a property value through Command Parameter:
+#### Pass a property value through Command parameter
 
 Any property can bind with the `CommandParameter` to pass it as command in ViewModel.
 
@@ -321,7 +321,7 @@ End Sub
 
 ![Select the second tabitem](MVVM_images/MVVM_img3.jpeg)
 
-#### Command Target
+#### Command target
 
-The element where the command exists can be determined through EventBinding’s `CommandTarget` property. Refer to [CommandTarget Property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandtarget?redirectedfrom=MSDN&view=net-5.0#System_Windows_Input_ICommandSource_CommandTarget) for reference.
+The element where the command exists can be determined using the EventBinding’s `CommandTarget` property. Refer to [CommandTarget Property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandtarget?redirectedfrom=MSDN&view=net-5.0#System_Windows_Input_ICommandSource_CommandTarget), for more reference.
 

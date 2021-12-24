@@ -15,12 +15,14 @@ String platform='WPF';
 	    { 
 	    dir('Spell-Checker') 
            {
-		     checkout scm
-			 
-			 def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/WPF-docs/pulls/'+env.pullRequestId+'/files'
+
+		     checkout scm			 
+			
+		   def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/wpf-docs/pulls/'+env.pullRequestId+'/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
-            def ChangeFiles= branchCommitDetails.split('"filename": ');
+           def ChangeFiles= branchCommitDetails.split('"filename": ');
+           
 
             for (int i= 1; i < ChangeFiles.size();i++)
             {
