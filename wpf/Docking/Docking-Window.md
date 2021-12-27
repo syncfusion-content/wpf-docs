@@ -296,6 +296,7 @@ DockingManager.SetCanMaximize(Toolbox, false);
 
 ![WPF Docking Min and Max Restriction for Specific Children](DockingWindow_images/wpf-docking-min-and-max-restriction-for-specific-children.jpeg)
 
+
 ## Hot Drag the window
 
 The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window by [IsEnableHotTracking](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_IsEnableHotTracking) property. Default value of IsEnableHotTracking is `False`, to enable this functionality turn its value to `True`.
