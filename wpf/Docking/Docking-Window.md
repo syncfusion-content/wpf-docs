@@ -161,7 +161,7 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 ### Limit Maximized Dock item
 
-DockingManager provides two attached property named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
+DockingManager has properties named `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode` to limit the size and height respectively to the specific window.
 Initially set [MaximizeButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_MaximizeButtonEnabled) to `True` and set values for `DesiredMaxWidthInDockedMode` and `DesiredMaxHeightInDockedMode`and the specific window will gets maximized based on the values respectively.
 
 
