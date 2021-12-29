@@ -22,9 +22,9 @@ Based on the [BlockPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 [Refer](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrolllimit) for Scroll-Limit.
 
-## Dragging Diagram elements in vertical/horizontal axis
+## Dragging Diagram elements in vertical and horizontal axis
 
-Diagram provides support to drag its elements in either vertical or horizontal directions by hold down SHIFT key while you drag the diagram elements.
+Diagram provides support to drag its elements in either vertical or horizontal directions by holding down SHIFT key while dragging the diagram elements.
 
 ![Shift Dragging](Drag_Images/ShiftDragging.gif)
 
