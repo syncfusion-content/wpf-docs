@@ -48,7 +48,7 @@ The [Symbol](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stenc
  
 ## Using the Diagram Elements
 
-The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), and [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html) can be used to visualize the symbol.
+The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeViewModel.html), [ConnectorViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ConnectorViewModel.html), [GroupViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.GroupViewModel.html), and [ContainerViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ContainerViewModel.html) can be used to visualize the symbol.
  
 {% tabs %} 
 {% highlight xaml %}
@@ -85,6 +85,25 @@ The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/
                 </syncfusion:ConnectorCollection>
             </syncfusion:GroupViewModel.Connectors>
         </syncfusion:GroupViewModel>
+        <Syncfusion:ContainerViewModel Key="Container" UnitHeight="300" UnitWidth="300">
+            <!--Creates the Groupable Nodes-->
+            <Syncfusion:GroupViewModel.Nodes>
+                <Syncfusion:NodeCollection>
+                    <Syncfusion:NodeViewModel UnitHeight="70"
+                                              OffsetX="0"
+                                              OffsetY="100"
+                                              UnitWidth="100"
+                                              Shape="{StaticResource Rectangle}">
+                    </Syncfusion:NodeViewModel>
+                    <Syncfusion:NodeViewModel UnitHeight="70"
+                                              OffsetX="100"
+                                              OffsetY="200"
+                                              UnitWidth="100"
+                                              Shape="{StaticResource Rectangle}">
+                    </Syncfusion:NodeViewModel>
+                </Syncfusion:NodeCollection>
+            </Syncfusion:GroupViewModel.Nodes>
+        </Syncfusion:ContainerViewModel>
     </local:SymbolCollection>
 </stencil:Stencil.SymbolSource>
 
@@ -142,10 +161,38 @@ GroupViewModel grp = new GroupViewModel()
       }
     }
 };
+
+ContainerViewModel container = new ContainerViewModel()
+{
+    UnitHeight = 300,
+    UnitWidth = 300,
+    Key = "Container",
+    Nodes = new NodeCollection()
+    {
+        new NodeViewModel()
+        {
+            UnitHeight = 70,
+            OffsetX = 0,
+            OffsetY = 100,
+            UnitWidth = 100,
+            Shape = this.Resources["Rectangle"],
+        },
+        new NodeViewModel()
+        {
+            UnitHeight = 70,
+            OffsetX = 100,
+            OffsetY = 200,
+            UnitWidth = 100,
+            Shape = this.Resources["Rectangle"],
+        },
+    },
+};
+
 //Adding an element to the collection.
 (stencil.SymbolSource as SymbolCollection).Add(node);
 (stencil.SymbolSource as SymbolCollection).Add(cvm);
 (stencil.SymbolSource as SymbolCollection).Add(grp);
+(stencil.SymbolSource as SymbolCollection).Add(container);
 
 //Adding the ISymbol to the SymbolCollection.
 public class SymbolCollection : ObservableCollection<Object>
