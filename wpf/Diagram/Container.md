@@ -9,11 +9,11 @@ documentation: ug
 
 # Container in WPF Diagram (SfDiagram)
 
-Containers are collections of logically grouped shapes surrounded by a visible border, which the shapes can be dragged in and out of during runtime. Every change made to the Container doesn't affect its children. Child elements can be edited individually.
+Containers are collections of logically grouped shapes surrounded by a visible border, which the shapes can be dragged in and out of during runtime. Every change made to the Container has no effect on its children. Child elements can be edited individually.
 
 ## Create a Container
 
-### Add Container
+### Add a Container
 
 The following code illustrates how to create a Container Node.
 
@@ -60,9 +60,9 @@ Container Nodes can be predefined and added to stencil. You can drop those Conta
 
 To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
 
-## Interactively add/remove diagram elements into Container
+## Interactively add or remove diagram elements into Container
 
-We can interactively add/remove diagram elements into Container in the runtime. Container will adjust its size when we drop diagram element in its edges.
+You can interactively add or remove diagram elements from the Container in the runtime. Container will adjust its size when you drop diagram element into its edges.
 
 ![WPF Diagram Container Interaction](Container_images/Container.gif)
 
@@ -86,24 +86,24 @@ To explore about selection and selection related events, refer to the [Selection
 
 ### Drag  
 
-* Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
+* Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements will move all of the selected elements.
 
 * Instead of dragging original object, preview of the container alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/diagram/interaction/dragging/previewsettings/preview-settings). 
 
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping "Snapping").
 
-* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
 
 ![WPF Diagram Drag Container](Container_images/Container-Drag.gif)
 
 ### Resize
 
-* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
+* The selector is surrounded by eight thumbs. By dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * Enable [AspectRatio](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) NodeConstraints to maintain the aspect ratio of the container when its being resized. 
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping "Snapping").
 
-* The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html).
 
 ![WPF Diagram Resize Container](Container_images/Container-Resize.gif)
 
