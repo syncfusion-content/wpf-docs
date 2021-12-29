@@ -113,7 +113,7 @@ private void SaveDiagram()
 
 ## How to serialize custom properties 
 
-In SfDiagram, you cannot serialize Content, and ContentTemplate of each and every diagramming objects. If you want to preserve the ContentTemplate of diagramming objects, keep them in resources and apply once the diagramming objects are added to the Diagram page.  
+In SfDiagram, you cannot serialize the Content and ContentTemplate of each and every diagramming objects. If you want to preserve the ContentTemplate of diagramming objects, keep them in resources and apply them once the diagramming objects are added to the Diagram page.  
 
 The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of DataMember attribute.
 

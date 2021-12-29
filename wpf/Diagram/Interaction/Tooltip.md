@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in WPF Diagram (SfDiagram)
 
-In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. In SfDiagram, Tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing and rotating the diagram elements.
+In Graphical User Interface (GUI), the tooltip is a message that is displayed when mouse hovers over an element. In SfDiagram, Tooltip is used to provide information about the position, size, and rotation angle while dragging, resizing, and rotating the diagram elements.
 
 ## Static Tooltip
 
@@ -19,6 +19,6 @@ By default, the diagram displays the tooltip at a static position during an inte
 
 ## Dynamic Tooltip
 
-Diagram control displays the tooltip at a dynamic position when the `SelectorHandleDisplayMode` is set as `Compact`. While resizing a diagram element, the tooltip is positioned relatively nearer to the resizer thumbs, and during dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
+Diagram control displays the tooltip at a dynamic position when the `SelectorHandleDisplayMode` is set as `Compact`. When resizing a diagram element, the tooltip is positioned closer to the resizer thumbs, and when dragging, the tooltip is positioned automatically in the nearest available viewport area around that diagram element. The following image illustrates how the dynamic tooltip works.
 
 ![Dynamic Tooltip](Interaction_images/DynamicTooltip.gif)
