@@ -28,12 +28,6 @@ In this walkthrough, you will create a WPF application that contains the NotifyI
 
 Create a new WPF project to show the [NotifyIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.NotifyIcon.html) control in Visual Studio.
 
-## Adding control via designer
-
-The WPF `NotifyIcon` control can be added to the application by dragging it from toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#notifyicon) will be added automatically.
-
-![Adding WPF NotifyIcon control via designer](Getting-Started_images/wpf-notifyicon-designer.png)
-
 ## Adding the control manually in XAML
 
 To add the control manually to the XAML page, follow the given steps:
@@ -42,8 +36,10 @@ To add the control manually to the XAML page, follow the given steps:
 
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.WPF
+* Syncfusion.Shared.WPF.Classic
+* Syncfusion.Tools.WPF.Classic
 
-2.Import Syncfusion.WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or Syncfusion.Windows.Tools.Controls namespace.
+2.Import Syncfusion.WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or **clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf.Classic** namespace.
 
 3.Declare the `NotifyIcon` control in XAML page.
 
@@ -58,6 +54,7 @@ To add the control manually to the XAML page, follow the given steps:
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NotifyIcon_GettingStarted"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="NotifyIcon_GettingStarted.MainWindow"
+        xmlns:tools="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf.Classic"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -77,6 +74,8 @@ To add the control manually in C#, follow the given steps:
 
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.WPF
+* Syncfusion.Shared.WPF.Classic
+* Syncfusion.Tools.WPF.Classic
 
 2.Import the `NotifyIcon` namespace **Syncfusion.Windows.Tools.Controls**.
 
