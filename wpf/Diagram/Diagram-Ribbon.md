@@ -20,7 +20,7 @@ The following table lists actions that end-users can perform using the Diagram R
 | Home | Clipboard | Cut, Copy, and Paste operations. |
 |  | Font | Change the font settings of the selected shape. |
 |  | Alignment | Realign the text within the selected shape. |
-|  | Tools | Select any of the Pointer, Pan, Drawing, Connector, Annotaion, and Port tools. |
+|  | Tools | Select any of the Pointer, Pan, Drawing, Connector, Annotation, and Port tools. |
 |  | Shape Styles | Change the background and border colors for the currently selected shape using a palette of predefined patterns or by selecting the colors individually using color pickers. |
 |  | Arrange | Change the position or alignment of the selected shapes and move the selected shapes in and out in the Z-order.
 |  | Select | Select all the diagram items or by specific type. |
