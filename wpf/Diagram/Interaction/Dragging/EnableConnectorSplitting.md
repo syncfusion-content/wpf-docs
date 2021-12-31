@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Split and join in WPF Diagram control | Syncfusion
+title: Enable connector splitting in WPF Diagram control | Syncfusion
 description: Learn here all about how split and joining of connectors works in Syncfusion WPF Diagram (SfDiagram) control.
 platform: wpf
 control: SfDiagram

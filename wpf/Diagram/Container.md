@@ -17,6 +17,36 @@ Containers are collections of logically grouped shapes surrounded by a visible b
 
 The following code illustrates how to create a Container Node.
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDiagram x:Name="diagram">
+    <syncfusion:SfDiagram.Nodes>
+        <!--Initialize the NodeCollection-->
+        <syncfusion:NodeCollection>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Groups>
+        <syncfusion:GroupCollection>
+            <syncfusion:ContainerViewModel>
+                <syncfusion:ContainerViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                        <syncfusion:NodeViewModel OffsetX="200" OffsetY="200" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                    </syncfusion:NodeCollection>
+                </syncfusion:ContainerViewModel.Nodes>
+            </syncfusion:ContainerViewModel>
+        </syncfusion:GroupCollection>
+    </syncfusion:SfDiagram.Groups>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
 {% highlight C# %}
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -53,6 +83,9 @@ groups.Add(container);
 diagram.Groups = groups;
 
 {% endhighlight %}
+{% endtabs %}
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Container)
 
 ### Container from Stencil
 
