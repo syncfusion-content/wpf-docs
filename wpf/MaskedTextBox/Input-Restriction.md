@@ -7,7 +7,7 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-# Input Restriction in WPF MaskedTextBox
+# Input Restriction in WPF MaskedTextBox SfMaskedEdit
 
 This section explains accessing the [SfMaskedEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfMaskedEdit.html) properties and events associated with it.
 
