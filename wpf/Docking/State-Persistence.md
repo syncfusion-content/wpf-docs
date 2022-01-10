@@ -332,3 +332,5 @@ N> Restrict state persistence does not support to children that were added at ru
 
 N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
 
+N> If we set CanSerialize to false for any item, then the serialized item count will not be same as actual children count, so that the LoadDockState will not work and return false.
+
