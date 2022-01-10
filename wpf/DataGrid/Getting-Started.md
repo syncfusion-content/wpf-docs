@@ -33,7 +33,7 @@ Description
 Syncfusion.Data.WPF
 </td>
 <td>
-Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in SfDataGrid.
+Syncfusion.Data.WPF assembly contains fundamental and base classes for {{'[CollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html)'| markdownify }} which is responsible for data processing operations handled in SfDataGrid.
 </td>
 </tr>
 <tr>
