@@ -198,7 +198,7 @@ Rich set of features in `SfDataGrid` over `GridDataControl`.
 <td>AutoRowHeight</td>
 <td>
 SfDataGrid enables fitting the height of the row based on its content on demand for all columns or certain columns 
-by using {{ '[AutoRowHeight](http://help.syncfusion.com/wpf/sfdatagrid/row-height-customization#autorowheight)' | markdownify }}.
+by using {{ '[AutoRowHeight](https://help.syncfusion.com/wpf/sfdatagrid/row-height-customization#autorowheight)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -206,7 +206,7 @@ by using {{ '[AutoRowHeight](http://help.syncfusion.com/wpf/sfdatagrid/row-heigh
 CellTemplate Support for all columns
 </td>
 <td>
-SfDataGrid provides support for {{ '[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/columns#celltemplate)' | markdownify }}. It is used to customize columns in display mode that present cells with DataTemplate.
+SfDataGrid provides support for {{ '[CellTemplate](https://help.syncfusion.com/wpf/sfdatagrid/columns#celltemplate)' | markdownify }}. It is used to customize columns in display mode that present cells with DataTemplate.
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ IEditableObjectSupport
 </td>
 <td>
 SfDataGrid supports to roll back the changes when you press <kbd>Esc</kbd> Key by implementing IEditableObject interface. 
-For more information about IEditableObject refer {{ '[IEditableObject](http://help.syncfusion.com/wpf/sfdatagrid/editing)' | markdownify }}.
+For more information about IEditableObject refer {{ '[IEditableObject](https://help.syncfusion.com/wpf/sfdatagrid/editing)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@ For more information about IEditableObject refer {{ '[IEditableObject](http://he
 Incremental Loading
 </td>
 <td>
-{{ '[IncrementalLoading](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization#incremental-loading)' | markdownify }} allows you to load a subset of data to 
+{{ '[IncrementalLoading](https://help.syncfusion.com/wpf/sfdatagrid/data-virtualization#incremental-loading)' | markdownify }} allows you to load a subset of data to 
 SfDataGrid sequentially. It provides support for fast and fluid scrolling and loading a huge set of data.
 </td>
 </tr>
@@ -233,7 +233,7 @@ Printing
 </td>
 <td>
 The Printing feature in SfDataGrid is more flexible and customizable. It also provides a good performance when 
-compared to GridDataControl.For more information about CustomPrinting, click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/printing)' | markdownify }}.The PrintManager of SfDataGrid is designed to support different orientations, sizes, margins etc.
+compared to GridDataControl.For more information about CustomPrinting, click {{ '[here](https://help.syncfusion.com/wpf/sfdatagrid/printing)' | markdownify }}.The PrintManager of SfDataGrid is designed to support different orientations, sizes, margins etc.
 </td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@ Exporting To Excel
 SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported 
 workbook. SfDataGrid Exporting is faster than GridDataControl. It exports the content only to the excel sheet. It 
 takes very less time to export the huge amounts of data. To know more about exporting in SfDataGrid, 
-click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/export-to-excel)' | markdownify }}.
+click {{ '[here](https://help.syncfusion.com/wpf/sfdatagrid/export-to-excel)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -254,7 +254,7 @@ Exporting To PDF
 <td>
 SfDataGrid control provides support for exporting the data into a PDF file. You can decide what are the contents 
 is need to export in PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to 
-PDF file.To get more information about {{ '[ExportToPdf](http://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
+PDF file.To get more information about {{ '[ExportToPdf](https://help.syncfusion.com/wpf/sfdatagrid/export-to-pdf)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ FilterPopupPerformance
 <td>
 When you have a large amount of data, it takes time to load the Filter popup. Though, you are having lots of data, 
 you can get better performance while loading Filter popup, by setting CanGenerateUniqueItems to False. To know more 
-about FilterPopupPerformance, click {{ '[here](http://help.syncfusion.com/wpf/sfdatagrid/performance#filter-popup-performance)' | markdownify }}.
+about FilterPopupPerformance, click {{ '[here](https://help.syncfusion.com/wpf/sfdatagrid/performance#filter-popup-performance)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ about FilterPopupPerformance, click {{ '[here](http://help.syncfusion.com/wpf/sf
 DataVirtualization
 </td>
 <td>
-{{ '[DataVirtualization](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization)' | markdownify }} is a term that achieves Virtualization 
+{{ '[DataVirtualization](https://help.syncfusion.com/wpf/sfdatagrid/data-virtualization)' | markdownify }} is a term that achieves Virtualization 
 for the actual data objects that are bound to the DataGrid. For small collection of basic data objects, the memory consumption is not significant. However for large collections, the memory consumption becomes very significant.
 </td>
 </tr>
