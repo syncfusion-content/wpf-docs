@@ -1,14 +1,14 @@
 ---
 layout: post
-title: .NET Framework and .NET Core Compatibility of Syncfusion WPF controls
-description: Learn here about the history of .NET Framework and .NET Core support for the Syncfusion WPF controls
+title: .NET Framework Compatibility of Syncfusion WPF controls
+description: Learn here about the history of .NET Framework support for the Syncfusion WPF controls
 platform: wpf
 control: .Net Framework support History
 documentation: ug
 ---
 # .NET Framework Compatibility
 
-Syncfusion WPF Controls are always compatible latest .NET Framework and .NET Core versions. 
+Syncfusion WPF Controls are always compatible latest .NET Framework versions. 
 
 N> Syncfusion WPF Controls supports `.NET Framework 3.5` and later versions. The controls start with `sf` supports `.NET Framework 4.0` and later versions.
 
