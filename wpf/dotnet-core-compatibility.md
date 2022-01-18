@@ -31,33 +31,22 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 </tr>
 
 <tr>
-<td>From 11.2 (2013 Vol2) <br/></td>
+<td>
+From 17.2 (2019 Vol2) <br/></td>
+<td>Yes<br/></td>
 <td>No<br/></td>
-<td>No<br/></td>
 </tr>
 
 <tr>
 <td>
-From 13.3 (2015 Vol3) <br/></td><td>
-No<br/></td><td>
-No<br/></td>
-</tr>
-
-<tr>
-<td>
-From 17.2 (2019 Vol2) <br/></td><td>
-Yes<br/></td><td>
-No<br/></td>
-</tr>
-
-<tr>
-<td>
-From 18.4 (2020 Vol4) <br/></td><td>
-Yes<br/></td><td>
-Yes<br/></td>
+From 18.4 (2020 Vol4) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
 </tr>
 
 </table>
+
+N> For.NET 6.0 and higher versions, dedicated assemblies are not included. Instead, .NET 5.0 assemblies can be used.
 
 ## Adding Reference
 
