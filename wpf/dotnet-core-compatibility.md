@@ -13,6 +13,41 @@ Syncfusion Essential Studio for WPF ships .NET Core assemblies for building WPF 
 
 N> All Syncfusion WPF controls supports .NET Core except the controls labeled as `classic`.
 
+## Version Compatibility
+
+Below table represents the supported Syncfusion Essential Studio version for .NET Core versions.
+
+<table>
+<tr>
+<th>Syncfusion Version<br/></th>
+<th>.NET Core 3.1<br/></th>
+<th>.NET 5.0 & above<br/></th>
+</tr>
+
+<tr>
+<td>Earlier Version<br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 17.2 (2019 Vol2) <br/></td>
+<td>Yes<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 18.4 (2020 Vol4) <br/></td>
+<td>Yes<br/></td>
+<td>Yes<br/></td>
+</tr>
+
+</table>
+
+N> For.NET 6.0 and higher versions, dedicated assemblies are not included. Instead, .NET 5.0 assemblies can be used.
+
 ## Adding Reference
 
 You can add the Syncfusion assembly references in one of the following ways.
