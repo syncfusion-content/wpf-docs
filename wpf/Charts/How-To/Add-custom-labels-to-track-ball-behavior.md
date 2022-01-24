@@ -40,7 +40,6 @@ public class CustomTrackBallBehavior : ChartTrackBallBehavior
         label.Value1 = pointInfo2.ValueY;
         label.Value2 = pointInfo1.ValueY;
 
-        // You can also specify the series YAxis instead of Area SecondaryAxis by using (pointInfo1.Series as LineSeries).YAxis
         Rect rect = this.ChartArea.SecondaryAxis.ArrangeRect;
 
         //Custom label.
