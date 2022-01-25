@@ -198,7 +198,7 @@ Syncfusion.Themes.VisualStudio2015.Wpf.dll</td><td>
 </td></tr>
 </table>
 
-The following table lists the available themes supported in themestudio and alternative themes suggestions to be used in the application. 
+The following table lists the available themes supported in theme studio and alternative themes suggestions to be used in the application. 
 
 <table>
 <tr>
