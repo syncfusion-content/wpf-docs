@@ -21,239 +21,334 @@ The following table lists the available themes as well as the assembly or NuGet 
 <th>
 Styles</th><th>
 Assembly</th><th>
-NuGet package</th><th>
-Supported in ThemeStudio</th><th>
-Alternative theme suggestion to use</th></tr>
+NuGet package</th></tr>
 <tr>
 <td>
 FluentLight</td><td>
 Syncfusion.Themes.FluentLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.FluentLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentLight.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 FluentDark</td><td>
 Syncfusion.Themes.FluentDark.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.FluentDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentDark.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 MaterialLight</td><td>
 Syncfusion.Themes.MaterialLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLight.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 MaterialDark</td><td>
 Syncfusion.Themes.MaterialDark.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialDark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 MaterialLightBlue</td><td>
 Syncfusion.Themes.MaterialLightBlue.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialLightBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialLightBlue.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 MaterialDarkBlue</td><td>
 Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.MaterialDarkBlue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDarkBlue.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019Colorful</td><td>
 Syncfusion.Themes.Office2019Colorful.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Colorful.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019Black</td><td>
 Syncfusion.Themes.Office2019Black.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019Black.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019White</td><td>
 Syncfusion.Themes.Office2019White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019White.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019DarkGray</td><td>
 Syncfusion.Themes.Office2019DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019DarkGray.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019HighContrast</td><td>
 Syncfusion.Themes.Office2019HighContrast.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019HighContrast.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019HighContrast.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2019HighContrastWhite</td><td>
 Syncfusion.Themes.Office2019HighContrastWhite.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2019HighContrastWhite.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2019HighContrastWhite.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 SystemTheme</td><td>
 Syncfusion.Themes.SystemTheme.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.SystemTheme.WPF](https://www.nuget.org/packages/Syncfusion.Themes.SystemTheme.WPF/)'| markdownify }}
-</td><td>
-Yes</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Metro</td><td>
 Syncfusion.Themes.Metro.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Metro.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Metro.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-FluentLight, Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Lime</td><td>
 Syncfusion.Themes.Lime.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Lime.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Lime.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-FluentLight, Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Saffron</td><td>
 Syncfusion.Themes.Saffron.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Saffron.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Saffron.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-FluentLight, Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Blend</td><td>
 Syncfusion.Themes.Blend.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Blend.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Blend.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-FluentDark, MaterialDark, Office2019Black</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2013White</td><td>
 Syncfusion.Themes.Office2013White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013White.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019White</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2013LightGray</td><td>
 Syncfusion.Themes.Office2013LightGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013LightGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013LightGray.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2013DarkGray</td><td>
 Syncfusion.Themes.Office2013DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2013DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2013DarkGray.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019DarkGray</td></tr>
+</td></tr>
 <tr>
 <td>
 VisualStudio2013</td><td>
 Syncfusion.Themes.VisualStudio2013.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.VisualStudio2013.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2013.WPF/)'| markdownify }}
-</td><td>
--</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2010Black</td><td>
 Syncfusion.Themes.Office2010Black.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2010Black.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Black.WPF/)'| markdownify }}
-</td><td>
--</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2010Blue</td><td>
 Syncfusion.Themes.Office2010Blue.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2010Blue.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Blue.WPF/)'| markdownify }}
-</td><td>
--</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2010Silver</td><td>
 Syncfusion.Themes.Office2010Silver.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2010Silver.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2010Silver.WPF/)'| markdownify }}
-</td><td>
--</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 Office365</td><td>
 Syncfusion.Themes.Office365.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office365.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office365.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2016Colorful</td><td>
 Syncfusion.Themes.Office2016Colorful.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016Colorful.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016Colorful.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019Colorful</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2016White</td><td>
 Syncfusion.Themes.Office2016White.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016White.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016White.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019White</td></tr>
+</td></tr>
 <tr>
 <td>
 Office2016DarkGray</td><td>
 Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.Office2016DarkGray.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Office2016DarkGray.WPF/)'| markdownify }}
-</td><td>
--</td><td>
-Office2019DarkGray</td></tr>
+</td></tr>
 <tr>
 <td>
 VisualStudio2015</td><td>
 Syncfusion.Themes.VisualStudio2015.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.VisualStudio2015.WPF](https://www.nuget.org/packages/Syncfusion.Themes.VisualStudio2015.WPF/)'| markdownify }}
-</td><td>
+</td></tr>
+</table>
+
+The following table lists the available themes supported in theme studio and alternative themes suggestions to be used in the application. 
+
+<table>
+<tr>
+<th>
+Styles</th><th>
+Supported in ThemeStudio</th><th>
+Alternative theme suggestion to use</th></tr>
+<tr>
+<td>
+FluentLight</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+FluentDark</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+MaterialLight</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+MaterialDark</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+MaterialLightBlue</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+MaterialDarkBlue</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019Colorful</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019Black</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019White</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019DarkGray</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019HighContrast</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2019HighContrastWhite</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+SystemTheme</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Metro</td><td>
+-</td><td>
+FluentLight, Office2019Colorful</td></tr>
+<tr>
+<td>
+Lime</td><td>
+-</td><td>
+FluentLight, Office2019Colorful</td></tr>
+<tr>
+<td>
+Saffron</td><td>
+-</td><td>
+FluentLight, Office2019Colorful</td></tr>
+<tr>
+<td>
+Blend</td><td>
+-</td><td>
+FluentDark, MaterialDark, Office2019Black</td></tr>
+<tr>
+<td>
+Office2013White</td><td>
+-</td><td>
+Office2019White</td></tr>
+<tr>
+<td>
+Office2013LightGray</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
+<tr>
+<td>
+Office2013DarkGray</td><td>
+-</td><td>
+Office2019DarkGray</td></tr>
+<tr>
+<td>
+VisualStudio2013</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2010Black</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2010Blue</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+Office2010Silver</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+Office365</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
+<tr>
+<td>
+Office2016Colorful</td><td>
+-</td><td>
+Office2019Colorful</td></tr>
+<tr>
+<td>
+Office2016White</td><td>
+-</td><td>
+Office2019White</td></tr>
+<tr>
+<td>
+Office2016DarkGray</td><td>
+-</td><td>
+Office2019DarkGray</td></tr>
+<tr>
+<td>
+VisualStudio2015</td><td>
 -</td><td>
 -</td></tr>
 </table>
@@ -519,6 +614,61 @@ SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/customize-themes-using-theme-settings).
+
+## Apply themes to the specific controls 
+
+To apply themes for specific controls in application and exclude some of the controls in window visual tree, provide control names list parameter in constructor of [Theme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.Theme.html) class.
+
+This controls list option enables to merge the specific controls theme resource dictionary xaml files to window resources or application resources immediately instead of traversing the window visual tree and applying the theme for those controls in visual tree only.
+
+N> For framework controls, theme will be applied by default on setting the  `Theme` property and cannot be skipped by using above option.
+
+For example, we have skipped applying style for `ComboBoxAdv` in below snippet by providing control names `ButtonAdv` and `ChromelessWindow` only in control names list parameter of `Theme` class.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:ChromelessWindow x:Class="SkinManagerApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkinManagerApplication"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <syncfusion:ButtonAdv Label="Syncfusion Button" SmallIcon="{x:Null}"  Margin="0,0,0,0" Width="150" Height="24"/>
+        <syncfusion:ComboBoxAdv Width="150" Height="24" Margin="0,20,0,0" SelectedIndex="0">
+            <syncfusion:ComboBoxItemAdv Content="Combo 1"/>
+            <syncfusion:ComboBoxItemAdv Content="Combo 2"/>
+        </syncfusion:ComboBoxAdv>
+    </StackPanel>
+</syncfusion:ChromelessWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class MainWindow : ChromelessWindow
+{
+    public MainWindow()
+    {
+        SfSkinManager.SetTheme(this, new Theme("MaterialDark", new string[] { "ButtonAdv", "ChromelessWindow" }));
+        InitializeComponent();
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Applied theme specific for WPF ChromelessWindow and ButtonAdv control](Skin-Manager_images/Theme-WPF-ChromelessWindow-ButtonAdv.png)
 
 ## Apply themes to the controls derived from Syncfusion controls
 
