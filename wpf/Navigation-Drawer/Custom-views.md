@@ -1580,9 +1580,9 @@ namespace NavigationDrawerWPF
 {% endhighlight %}
 {% endtabs %}
 
-## DraweBackground
+## DrawerBackground
 
-The [DrawerBacground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html?tabs=tabid-1#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerBackground) property is used to change the background color of the SfNavigationDrawer's side pane.
+The [DrawerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html?tabs=tabid-1#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerBackground) property is used to change the background color of the SfNavigationDrawer's side pane.
 
 {% tabs %}
 {% highlight xml %}
