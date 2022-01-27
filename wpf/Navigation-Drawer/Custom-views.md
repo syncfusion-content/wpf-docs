@@ -1580,4 +1580,63 @@ namespace NavigationDrawerWPF
 {% endhighlight %}
 {% endtabs %}
 
+## DraweBackground
+
+The [DrawerBacground](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.html?tabs=tabid-1#Syncfusion_UI_Xaml_NavigationDrawer_SfNavigationDrawer_DrawerBackground) property is used to change the background color of the SfNavigationDrawer's side pane.
+
+{% tabs %}
+{% highlight xml %}
+
+<Window x:Class="NavigationDrawerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:NavigationDrawerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+           <syncfusion:SfNavigationDrawer
+            x:Name="navigationDrawer"
+            AutoChangeDisplayMode="True"
+            DisplayMode="Expanded"
+            ExpandedModeThresholdWidth="700" 
+            DrawerBackground="Red"/>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.NavigationDrawer;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
+
+namespace NavigationDrawerWPF
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer()
+            {
+               AutoChangeDisplayMode = true,
+               DisplayMode = DisplayMode.Expanded,
+               ExpandedModeThresholdWidth= 700,
+               DrawerBackground = new SolidColorBrush(Colors.Red)
+            };
+
+            this.Content = navigationDrawer;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Custom_View) in GitHub
