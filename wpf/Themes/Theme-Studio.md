@@ -183,11 +183,7 @@ The theme studio application has been divided into two sections: the controls pr
 
 **Step 3**
 
-<<<<<<< HEAD
 To apply predefined themes, select the appropriate themes from Themes List Drop-down available in the top left corner. 
-=======
-To apply predefined themes, select the appropriate themes from Themes List Dropdown. 
->>>>>>> efb6053a56299c2bbbcef47fa9083b496356d1bf
 
 ![Shows the List of Themes in ThemeStudio](ThemeStudio_images/ThemeStudio-Theme-Selection.png)
 
@@ -211,11 +207,7 @@ Let us see the step-by-step procedure for exporting theme project from theme stu
 
 **Step 1**
 
-<<<<<<< HEAD
 Click `Export` in the top right corner, below the exit of the theme studio application. 
-=======
-Click the `Export` button in the top right corner, beside the exit of the theme studio application. 
->>>>>>> efb6053a56299c2bbbcef47fa9083b496356d1bf
 
 ![Export option in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-Button.png)
 
