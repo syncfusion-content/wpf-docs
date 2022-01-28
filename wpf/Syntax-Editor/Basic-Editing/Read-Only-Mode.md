@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Read Only Mode
+# Read Only Mode support
 
 Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the `IsReadOnly` property of the EditControl class. The following code is used to set the ReadOnly mode for EditControl.
 
