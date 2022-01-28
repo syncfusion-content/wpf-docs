@@ -7,7 +7,7 @@ control: ReportViewer
 documentation: ug
 ---
 
-## HTML Formatted Data with Report
+# HTML Formatted Data with Report
 
 Report viewer supports showing the HTML formatted data with Textbox report items along with the inline CSS. This section provides the information about supported tags and limitations.
 
@@ -18,7 +18,7 @@ Report viewer supports showing the HTML formatted data with Textbox report items
 * Header, style and block elements: `<H{n}>, <DIV>, <SPAN>, <P>, <DIV>, <LI>, <HN>`
 * Text format: `<B>, <I>, <U>, <S>`
 
-## Limitations of Cascading Style Sheet Attributes
+### Limitations of Cascading Style Sheet Attributes
 
 The following is a list of attributes that are supported:
 
