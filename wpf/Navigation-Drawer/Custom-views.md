@@ -1639,4 +1639,6 @@ namespace NavigationDrawerWPF
 {% endhighlight %}
 {% endtabs %}
 
+![DrawerBackground](Concepts-and-features_images/DrawerBackground.png)  
+
 N> View [sample](https://github.com/SyncfusionExamples/wpf-sfnavigationdrawer-samples/tree/main/Custom_View) in GitHub
