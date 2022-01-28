@@ -7,7 +7,9 @@ control: SfRadialMenu
 documentation: ug
 ---
 
-# Appearance and Styling in WPF Radial Menu
+# Appearance and Styling
+
+## Radius
 
 RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
 
