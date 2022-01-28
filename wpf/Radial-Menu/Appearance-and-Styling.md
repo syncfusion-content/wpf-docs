@@ -7,9 +7,9 @@ control: SfRadialMenu
 documentation: ug
 ---
 
-## Appearance and Styling 
+# Appearance and Styling
 
-## Radius 
+## Radius
 
 RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
 
