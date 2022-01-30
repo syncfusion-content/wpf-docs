@@ -76,7 +76,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	N> Project create option will be enabled only if you have selected the window
       
-4.	After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion WPF project is created with the necessary assembly references and XAML. 
+4.	After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion WPF project is created with the necessary XAML files and required Syncfusion WPF assemblies/NuGet packages. 
 
 	![Syncfusion WPF project created with required Syncfusion WPF assemblies](Project-Template-images/Syncfusion-Project-Template-Gallery-7.png)
 
