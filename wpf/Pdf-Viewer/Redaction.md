@@ -11,6 +11,8 @@ documentation: ug
 
 Redaction support allows you to remove sensitive/confidential information in text, images, and graphics from a PDF document.
 
+N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we redact text in the PDF documents
+
 ## Enable redaction mode
 
 The following code shows how to switch to redaction mode in code behind.
