@@ -11,7 +11,7 @@ documentation: ug
 
 Redaction support allows you to remove sensitive/confidential information in text, images, and graphics from a PDF document.
 
-N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we redact text in the PDF documents.
+N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we redact text in the PDF documents. Please refer to the [link](https://help.syncfusion.com/wpf/pdf-viewer/text-extraction-engines) for more details.
 
 ## Enable redaction mode
 
