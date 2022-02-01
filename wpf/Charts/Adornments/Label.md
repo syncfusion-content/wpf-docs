@@ -100,7 +100,7 @@ The following code example demonstrates the customization of label using the abo
 
 ## Label Template
 
-The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property and also set SegmentLabelContent as LabelContentPath as in the below code example:
+The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property and along with [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) is LabelContentPath as in the below code example:
 
 {% tabs %}
 
