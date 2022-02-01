@@ -9,6 +9,8 @@ documentation: ug
 
 # Search text in PDF files using WPF PDF Viewer
 
+N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we perform text search in PDF documents.
+
 The WPF PDF Viewer allows you to search and highlight the text in the PDF files. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
 
 ![Search Text using WPF PDF Viewer](Concept-and-Features_images/wpf-pdf-viewer-search-text.png)
