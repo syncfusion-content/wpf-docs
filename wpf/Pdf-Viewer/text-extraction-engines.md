@@ -14,7 +14,9 @@ Syncfusion WPF PDF Viewer extracts text information from PDF files through two d
 * PDFium (Google Chrome’s text extraction engine)
 * SfPdf (Syncfusion’s own text extraction engine)
 
-Before version 19.4.0.48, we used our own text extraction engine (SfPdf) to perform text-based operations in the PDF pages. We have updated our default text extraction engine to PDFium from version 19.4.0.48. The PDFium text extraction engine is recommended for improved performance. However, you may still use our old text extraction engine by setting the `TextExtractionEngine` property to `SfPdf`. Refer to the following code snippet to apply the same.
+N> Before version 19.4.0.48, we used our own text extraction engine (SfPdf) to perform text-based operations in the PDF pages. We have updated our default text extraction engine to PDFium from version 19.4.0.48. 
+
+The PDFium text extraction engine is recommended for improved performance. However, you may still use our old text extraction engine by setting the [TextExtractionEngine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextExtractionEngine) property to `SfPdf`. Refer to the following code snippet to apply the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -22,4 +24,4 @@ Before version 19.4.0.48, we used our own text extraction engine (SfPdf) to perf
 pdfViewer.TextExtractionEngine = PdfTextExtractionEngine.SfPdf;
 
 {% endhighlight %}
-{% highlight vbnet %}
+{% endtabs %}
