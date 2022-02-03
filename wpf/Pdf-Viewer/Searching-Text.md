@@ -9,6 +9,8 @@ documentation: ug
 
 # Search text in PDF files using WPF PDF Viewer
 
+N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we perform text search in PDF documents. Please refer to the [link](https://help.syncfusion.com/wpf/pdf-viewer/text-extraction-engines) for more details.
+
 The WPF PDF Viewer allows you to search and highlight the text in the PDF files. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
 
 ![Search Text using WPF PDF Viewer](Concept-and-Features_images/wpf-pdf-viewer-search-text.png)
@@ -42,11 +44,9 @@ Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 	Dim isMatchFound As Boolean
 
 	'Load the PDF.
-
 	pdfViewer.Load("../../Data/Barcode.pdf")
 
 	'Get the occurrences of the target text and location.
-
 	Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 
 	isMatchFound = pdfViewer.FindText("targetText", textSearch)
