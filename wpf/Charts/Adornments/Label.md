@@ -42,7 +42,7 @@ The following code example demonstrates about define the value to be displayed a
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
 | DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](Adornments_images/Datetime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
+|LabelContentPath | If ChartAdornmentInfo without LabelTemplate, displays the y value. If we use LabelTemplate for Adornment, it provides the underline DataModel of series point|![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
 | Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](Adornments_images/Percentage.png) |
 | XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
 | YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
