@@ -42,7 +42,7 @@ The following code example demonstrates about define the value to be displayed a
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
 | DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](Adornments_images/Datetime.png) |
-|LabelContentPath | If ChartAdornmentInfo without LabelTemplate, displays the y value. If we use LabelTemplate for Adornment, it provides the underline DataModel of series point|![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
+|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
 | Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](Adornments_images/Percentage.png) |
 | XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
 | YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
@@ -100,7 +100,7 @@ The following code example demonstrates the customization of label using the abo
 
 ## Label Template
 
-The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property and along with [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) is LabelContentPath as in the below code example:
+The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property and along with [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property value as `LabelContentPath` as in the below code example:
 
 {% tabs %}
 
