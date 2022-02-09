@@ -42,7 +42,7 @@ The following code example demonstrates about define the value to be displayed a
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
 | DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](Adornments_images/Datetime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
+|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
 | Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](Adornments_images/Percentage.png) |
 | XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
 | YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
@@ -100,7 +100,7 @@ The following code example demonstrates the customization of label using the abo
 
 ## Label Template
 
-The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property as in the below code example:
+The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property and along with [`SegmentLabelContent`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property value as `LabelContentPath` as in the below code example:
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <TextBlock Grid.Row="1" Text="{Binding}" FontSize="11" Foreground="Black"></TextBlock>
+                <TextBlock Grid.Row="1" Text="{Binding Item.Value}" FontSize="11" Foreground="Black"></TextBlock>
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
@@ -136,7 +136,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
             <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
                 <syncfusion:ColumnSeries.AdornmentsInfo>
                     <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelTemplate="{StaticResource adornmentTemplate}"
-                        LabelPosition="Outer"></syncfusion:ChartAdornmentInfo>
+                        LabelPosition="Outer" SegmentLabelContent="LabelContentPath"></syncfusion:ChartAdornmentInfo>
                 </syncfusion:ColumnSeries.AdornmentsInfo>
             </syncfusion:ColumnSeries>
         ...
