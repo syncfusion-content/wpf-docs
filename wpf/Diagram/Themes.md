@@ -46,7 +46,7 @@ diagram.Theme = theme;
 
 ### Variant Styles and ShapeStyles
 
-Variant styles are set of styles that are applied to the Diagram elements. Each Variant style contains 46 Shape styles. We can change the style of each Node in the diagram through its ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
+Variant styles are set of styles that are applied to the Diagram elements. Each Variant style contains 46 Shape styles. We can change the style of each Node in the diagram using its ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
 
 To change the Variant and Style, 
 
