@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-## Delimiter String Customization
+# Delimiter String Customization in WPF ComboBox
 
 A Delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called `SelectedValueDelimiter` in the ComboBoxAdv.
 
@@ -28,7 +28,7 @@ String</td><td>
 NA</td></tr>
 </table>
 
-### Adding delimiter string customization to an application 
+## Adding delimiter string customization to an application 
 
 Delimiter string customization can be added directly to an application using the following code snippet: 
 
