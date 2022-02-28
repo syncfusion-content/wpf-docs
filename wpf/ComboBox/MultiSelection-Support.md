@@ -152,7 +152,7 @@ public class ViewModel : INotifyPropertyChanged
 <Grid>
     <syncfusion:ComboBoxAdv DisplayMemberPath="Name" SelectedItems="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
             AllowMultiSelect="True" Name="comboboxadv"  HorizontalAlignment="Center" Height="30"
-            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Products}"/>
+            VerticalAlignment="Center" Width="150" ItemsSource="{Binding Countries}"/>
 </Grid>
 
 {% endhighlight %}
