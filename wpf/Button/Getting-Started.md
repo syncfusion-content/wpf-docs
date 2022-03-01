@@ -308,6 +308,9 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:Model/>
+    </Window.DataContext>
     <Window.Resources>
         <DataTemplate x:Key="newIcon">
             <Grid Width="12" Height="16">
@@ -349,6 +352,21 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
  {% highlight c# %}
 
+        private void Check_Checked(object sender, RoutedEventArgs e)
+        {
+            this.DataContext = new Model();
+            if (buttonAdv != null)
+            {
+                buttonAdv.Label = "New";
+            }
+        }
+
+        private void Check_Unchecked(object sender, RoutedEventArgs e)
+        {
+            this.DataContext = null;
+            buttonAdv.Label = "Open";
+        }
+        
  public class TemplateSelector : DataTemplateSelector
  {
     public DataTemplate NewIcon { get; set; }
@@ -366,6 +384,29 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
         return base.SelectTemplate(item, container);
     }
  }
+
+ public class Model : NotificationObject
+    {
+        private bool isChecked = true;
+
+
+        public Model()
+        {
+        }
+
+        public bool IsChecked
+        {
+            get
+            {
+                return isChecked;
+            }
+            set
+            {
+                isChecked = value;
+                this.RaisePropertyChanged("IsChecked");
+            }
+        }
+    }
 
  {% endhighlight %}
 
