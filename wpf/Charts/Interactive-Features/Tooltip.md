@@ -166,7 +166,7 @@ The following code example explains applying the style for tooltip.
 </chart:SfChart.Resources>
 ...
 <chart:SfChart.Behaviors>
-    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+    <chart:ChartTooltipBehavior Style = {StaticResource style}/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
