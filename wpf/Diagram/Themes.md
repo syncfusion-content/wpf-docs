@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme for diagram element | Syncfusion.
-description: How to apply theme for diagramming elements like Node, connectors, Annotations and theme properties to create custom Diagram theme?
+description: How to apply theme for diagramming elements such as Nodes, Connectors, Annotations, and Theme properties to create custom Diagram theme
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,11 +9,15 @@ documentation: ug
 
 # Themes with WPF Diagram (SfDiagram)
 
-Diagram themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles and Theme properties, which is used to create custom Diagram theme. To know more about DiagramTheme properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme_members.html).
+Diagram themes are predefined sets of diagram item styles that can be applied easily to the diagram elements. In Diagram, nearly 20 Built-In themes are available. DiagramTheme has NodeStyles, ConnectorStyles, and Theme properties that can be used to create custom Diagram theme.
+
+To know more about DiagramTheme properties, refer to the [DiagramTheme](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme_members.html).
 
 ### Built-In Themes
 
-Built-In themes are predefined themes inherited from DiagramTheme. Each Built-In themes have 4 Variants. Based on the selected theme and variants, the style of the Node and Connector will be changed. By default, first variant style of the specified Built-In theme will be applied to the diagram elements. To Know more about Built-In themes , refer to [Built-In](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
+Built-In themes are predefined themes inherited from DiagramTheme. Each Built-In themes has four variants. Based on the selected theme and variants, the style of the node and connector will be changed. By default, first variant style of the specified Built-In theme will be applied to the Diagram elements.
+
+To Know more about Built-In themes, refer to [Built-In](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Theming.DiagramTheme.html).
 
 To change the DiagramTheme,
 
@@ -46,7 +50,7 @@ diagram.Theme = theme;
 
 ### Variant Styles and ShapeStyles
 
-Variant styles are set of styles that are applied to the Diagram elements. Each Variant style contains 46 Shape styles. We can change the style of each Node in the diagram using its ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
+Variant styles are set of styles that are applied to Diagram elements. Each variant style contains 46 shape styles. You can change the style of each node in the diagram using the ThemeStyleId property. Based on the values of theme and variant style, the style will be applied to the node.
 
 To change the Variant and Style, 
 
