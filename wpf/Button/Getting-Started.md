@@ -389,17 +389,13 @@ The [IconTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
     {
         private bool isChecked = true;
 
-
         public Model()
         {
         }
 
         public bool IsChecked
         {
-            get
-            {
-                return isChecked;
-            }
+            get{ return isChecked; }
             set
             {
                 isChecked = value;
