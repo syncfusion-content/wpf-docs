@@ -78,7 +78,7 @@ private void PdfViewerControl_PageClicked(object sender, PageClickedEventArgs e)
 
 ## Convert PDF page coordinates to PDF Viewer's coordinates
 
-The user can aslo convert the PDF page coordinates to the client coordinates using the `ConvertPagePointToClientPoint` method by passing the page point and page number as input parameters. The following code sample explains converting a shape annotation's position in the page coordinates to client point.
+The user can also convert the PDF page coordinates to the client coordinates using the `ConvertPagePointToClientPoint` method by passing the page point and page number as input parameters. The following code sample explains converting a shape annotation's position in the page coordinates to client point.
 
 {% tabs %}
 {% highlight c# %}
