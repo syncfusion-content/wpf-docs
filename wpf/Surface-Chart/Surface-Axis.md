@@ -78,63 +78,63 @@ Gets or sets the object that represents the content of a surface axis header. Th
 Gets or sets template for surface axis header.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_LabelTemplate)| markdownify }}<br/><br/></td><td>
+{{'[LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_LabelTemplate) | markdownify }}<br/><br/></td><td>
 Gets or sets template for surface axis label.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[LabelFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_LabelFormat)| markdownify }}<br/><br/></td><td>
+{{'[LabelFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_LabelFormat) | markdownify }}<br/><br/></td><td>
 Gets or sets format for surface axis label.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_Minimum)| markdownify }}<br/><br/></td><td>
+{{'[Minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_Minimum) | markdownify }}<br/><br/></td><td>
 Gets or sets the double that represents the minimum value for the axis. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[Maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_Maximum)| markdownify }}<br/><br/></td><td>
+{{'[Maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_Maximum) | markdownify }}<br/><br/></td><td>
 Gets or sets the double that represents the maximum value for the axis.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[RangePadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_RangePadding)| markdownify }}<br/><br/></td><td>
+{{'[RangePadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_RangePadding) | markdownify }}<br/><br/></td><td>
 Gets or sets NumericalPadding that specifies how to render the surface in surface area.  <br/><br/></td></tr>
 <tr>
 <td>
-{{'[EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_EdgeLabelsDrawingMode)| markdownify }}<br/><br/></td><td>
+{{'[EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_EdgeLabelsDrawingMode) | markdownify }}<br/><br/></td><td>
 Gets or sets EdgeLabelsDrawingMode that specifies how to place edge axis label. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_HeaderTemplate)| markdownify }}<br/><br/></td><td>
+{{'[Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_HeaderTemplate) | markdownify }}<br/><br/></td><td>
 Gets or sets the double that represents the interval between labels.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[SmallTicksPerInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_SmallTicksPerInterval)| markdownify }}<br/><br/></td><td>
+{{'[SmallTicksPerInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_SmallTicksPerInterval) | markdownify }}<br/><br/></td><td>
 Gets or sets the double that represents the small ticks per interval. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[TickLineSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_TickLineSize)| markdownify }}<br/><br/></td><td>
+{{'[TickLineSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_TickLineSize) | markdownify }}<br/><br/></td><td>
 Gets or sets the double that represents the axis tick line size. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[ShowGridLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_RangePadding)| markdownify }}<br/><br/></td><td>
+{{'[ShowGridLines](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_RangePadding) | markdownify }}<br/><br/></td><td>
 Gets or sets bool that represent whether displaying the axis grid lines. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[GridLineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_GridLineStroke)| markdownify }}<br/><br/></td><td>
+{{'[GridLineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_GridLineStroke) | markdownify }}<br/><br/></td><td>
 Gets or sets the brush for grid line stroke. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[GridLineThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_GridLineThickness)| markdownify }}<br/><br/></td><td>
+{{'[GridLineThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_GridLineThickness) | markdownify }}<br/><br/></td><td>
 Gets or sets the double for grid line thickness. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[AxisLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_AxisLineStyle)| markdownify }}<br/><br/></td><td>
+{{'[AxisLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_AxisLineStyle) | markdownify }}<br/><br/></td><td>
 Gets or sets the style for axis line.  <br/><br/></td></tr>
 <tr>
 <td>
-{{'[MajorTickLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_MajorTickLineStyle)| markdownify }}<br/><br/></td><td>
+{{'[MajorTickLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_MajorTickLineStyle) | markdownify }}<br/><br/></td><td>
 Gets or sets the style for axis major tick lines.  <br/><br/></td></tr>
 <tr>
 <td>
-{{'[MinorTickLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_MinorTickLineStyle)| markdownify }}<br/><br/></td><td>
+{{'[MinorTickLineStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceAxis.html#Syncfusion_UI_Xaml_Charts_SurfaceAxis_MinorTickLineStyle) | markdownify }}<br/><br/></td><td>
 Gets or sets the style for axis minor tick lines.  <br/><br/></td></tr>
 </table>
 
