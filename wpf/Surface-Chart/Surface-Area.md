@@ -53,7 +53,7 @@ Gets or sets a brush for left wall.  <br/><br/></td></tr>
 <tr>
 <td>
 
-[`BottomWallBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_BottomWallBrush)<br/><br/></td><td>
+{{'[BottomWallBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SurfaceBase.html#Syncfusion_UI_Xaml_Charts_SurfaceBase_BottomWallBrush)'| markdownify }}<br/><br/></td><td>
 Gets or sets a brush for bottom wall.  <br/><br/></td></tr>
 <tr>
 <td>
