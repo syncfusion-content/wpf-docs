@@ -238,4 +238,49 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ![Selected item background color](Dropdown_customization_images/SelectionBackgroundColor.png)
 
+## Highlighting matched text in DropDown
+
+`SfTextBoxExt` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
+
+{% tabs %}
+
+{% highlight xaml hl_lines="10" %}
+
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              Width="300"
+                              Height="40"
+                              SearchItemPath="Name"
+                              AutoHighlightMatchedItem="True"
+                              AutoCompleteMode="Suggest"
+                              AutoCompleteSource="{Binding Employees}" />
+     </Grid>
+
+{% endhighlight %}
+
+{% highlight c# hl_lines="9" %}
+
+       SfTextBoxExt textBoxExt = new SfTextBoxExt();
+       EmployeeViewModel viewModel = new EmployeeViewModel();
+       this.DataContext = viewModel;
+       textBoxExt.HorizontalAlignment = HorizontalAlignment.Center;
+       textBoxExt.VerticalAlignment = VerticalAlignment.Center;
+       textBoxExt.Width = 200;
+       textBoxExt.Height = 40;
+       textBoxExt.SearchItemPath = "Name";
+       textBoxExt.AutoHighlightMatchedItem = true;
+       textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
+       textBoxExt.AutoCompleteSource = viewModel.Employees;
+       this.Content = textBoxExt;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Highlighted Matched Item](Dropdown_customization_images/highlight_matched_item.png)
+
 N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Dropdown-customization) in GitHub
