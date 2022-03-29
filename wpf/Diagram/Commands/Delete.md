@@ -15,7 +15,7 @@ To execute delete commands, DeleteCommandParameter type have to be passed.
 
 ## Delete command parameter
 
-The DeleteParameter is used to represent the items parameters to for executing delete command. Please find its properties and their description as follows. The DeleteParamter contains a `Items` property and it is used to specify a list of diagram objects need to be delete using delete command.
+The DeleteParameter is used to represent the items parameters to for executing delete command. Please find its properties and their description as follows. The DeleteParameter contains a `Items` property and it is used to specify a list of diagram objects need to be delete using delete command.
 
 {% tabs %}
 
