@@ -240,7 +240,8 @@ textBoxExt.SelectionBackgroundColor = new SolidColorBrush(Colors.Red);
 
 ## Highlighting matched text in DropDown
 
-`SfTextBoxExt` supports highlighting the first matched text when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. By setting `AutoHighlightMatchedItem` to false, you can restrict the highlighting of the first matched text in `SfTextBoxExt`.
+`SfTextBoxExt` supports highlighting the first matched item when a dropdown is opened by setting the `AutoHighlightMatchedItem` API to true. The default value is false.
+
 {% tabs %}
 
 {% highlight xaml hl_lines="10" %}
