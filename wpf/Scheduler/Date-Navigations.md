@@ -12,7 +12,7 @@ documentation: ug
 ## Range for visible dates
 Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MinimumDate) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
 
-### Minimum display date
+#### Minimum display date
 `MinimumDate` will restrict date navigations features of backward, and also it doesn't allow to swipe the control using touch gesture beyond the minimum date range. The dates before the minimum date will be disabled in the schedule.
 
 {% tabs %}
@@ -26,7 +26,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
-### Maximum display date
+#### Maximum display date
 `MaximumDate` will restrict date navigations features of forward, and also it doesn't allow to swipe the control using touch gesture beyond the maximum date range. The dates beyond the maximum date will be disabled in the schedule.
 
 {% tabs %}
@@ -75,7 +75,7 @@ N> Selection before minimum dates and beyond maximum dates using the `SelectedDa
 ## Programmatically change to adjacent dates
 By default, the date can be navigated to next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can be also changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) methods available in SfScheduler.
 
-### Forward
+#### Forward
 Use the `Forward` method of SfScheduler for viewing the next immediate visible dates in the scheduler. It will move to the next month if the scheduler view is month, similarly it will move to the next week for week view and the next day for day view.
 
 {% tabs %}
@@ -97,7 +97,7 @@ private void Forward_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Backward
+#### Backward
 Use the `Backward` method of SfScheduler for viewing the previous immediate visible dates in the scheduler. It will move to the previous month if the scheduler view is month, similarly it will move to the previous week for week view and previous day for day view.
 
 {% tabs %}
