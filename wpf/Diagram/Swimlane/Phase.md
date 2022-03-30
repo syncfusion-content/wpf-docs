@@ -31,11 +31,11 @@ The following code example explains how to add phase at swimlane.
                 UnitHeight="120" UnitWidth="450">
                             <!--Create a header for Swimlane-->
                             <syncfusion:SwimlaneViewModel.Header>
-                                <syncfusion:SwimlaneHeader UnitHeight="32" >
-                                    <syncfusion:SwimlaneHeader.Annotation>
+                                <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" >
+                                    <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                         <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
-                                    </syncfusion:SwimlaneHeader.Annotation>
-                                </syncfusion:SwimlaneHeader>
+                                    </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                                </syncfusion:SwimlaneHeaderViewModel>
                             </syncfusion:SwimlaneViewModel.Header>
                            <syncfusion:SwimlaneViewModel.Phases>
                                 <syncfusion:PhaseCollection>
@@ -43,11 +43,11 @@ The following code example explains how to add phase at swimlane.
                              <syncfusion:PhaseViewModel UnitWidth="450">
                                 <syncfusion:PhaseViewModel.Header>
                                 <!--Create a header for Phase-->
-                            <syncfusion:SwimlaneHeader UnitHeight="30" >
-                                 <syncfusion:SwimlaneHeader.Annotation>
+                            <syncfusion:SwimlaneHeaderViewModel UnitHeight="30" >
+                                 <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                   <syncfusion:AnnotationEditorViewModel Content="Phase1"></syncfusion:AnnotationEditorViewModel>
-                                </syncfusion:SwimlaneHeader.Annotation>
-                                 </syncfusion:SwimlaneHeader>
+                                </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                                 </syncfusion:SwimlaneHeaderViewModel>
                                   </syncfusion:PhaseViewModel.Header>
                                   </syncfusion:PhaseViewModel>
                                 </syncfusion:PhaseCollection>
@@ -73,7 +73,7 @@ The following code example explains how to add phase at swimlane.
    Orientation = Orientation.Horizontal,
  };
    //Creating Header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -87,7 +87,7 @@ The following code example explains how to add phase at swimlane.
        new PhaseViewModel()
        {
         UnitWidth=450,
-        Header=new SwimlaneHeader()
+        Header=new SwimlaneHeaderViewModel()
         {
          UnitHeight=30,
          Annotation=new AnnotationEditorViewModel(){Content="Phase1"},
@@ -158,7 +158,7 @@ private void InitializeDiagram()
    Orientation = Orientation.Horizontal,
  };
    //Creating a header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -172,7 +172,7 @@ private void InitializeDiagram()
    new PhaseViewModel()
     {
      UnitWidth=450,
-     Header=new SwimlaneHeader()
+     Header=new SwimlaneHeaderViewModel()
      {
       UnitHeight=24,
       Annotation=new AnnotationEditorViewModel(){Content="Phase 1"},
@@ -205,7 +205,7 @@ public ICommand RemoveCommand
   var swimlane = (this.Swimlanes as SwimlaneCollection).FirstOrDefault() as SwimlaneViewModel;
    if (swimlane != null)
     {
-     (swimlane.Phases as PhaseCollection).Add(new PhaseViewModel() { UnitWidth = 100,Header=new SwimlaneHeader() { Annotation=new AnnotationEditorViewModel() { Content = "Phase"+ " " + ((swimlane.Phases as PhaseCollection).Count + 1) } } });
+     (swimlane.Phases as PhaseCollection).Add(new PhaseViewModel() { UnitWidth = 100,Header=new SwimlaneHeaderViewModel() { Annotation=new AnnotationEditorViewModel() { Content = "Phase"+ " " + ((swimlane.Phases as PhaseCollection).Count + 1) } } });
     }
  }
  //Remove Lane from the Lanes collection
@@ -262,11 +262,11 @@ The following code example explains how to define a Phase header and its customi
                 UnitHeight="120" UnitWidth="450">
                             <!--Create a header for Swimlane-->
                             <syncfusion:SwimlaneViewModel.Header>
-                                <syncfusion:SwimlaneHeader UnitHeight="32" >
-                                    <syncfusion:SwimlaneHeader.Annotation>
+                                <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" >
+                                    <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                         <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
-                                    </syncfusion:SwimlaneHeader.Annotation>
-                                </syncfusion:SwimlaneHeader>
+                                    </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                                </syncfusion:SwimlaneHeaderViewModel>
                             </syncfusion:SwimlaneViewModel.Header>
                             <syncfusion:SwimlaneViewModel.Phases>
                             <syncfusion:PhaseCollection>
@@ -274,11 +274,11 @@ The following code example explains how to define a Phase header and its customi
                                 <syncfusion:PhaseViewModel UnitHeight="100">
                                     <syncfusion:PhaseViewModel.Header>
                                         <!--Create a header for Lane-->
-                                        <syncfusion:SwimlaneHeader UnitWidth="30" ShapeStyle="{StaticResource phaseHeaderStyle}" >
-                                            <syncfusion:SwimlaneHeader.Annotation>
+                                        <syncfusion:SwimlaneHeaderViewModel UnitWidth="30" ShapeStyle="{StaticResource phaseHeaderStyle}" >
+                                            <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                                 <syncfusion:AnnotationEditorViewModel Content="Phase 1" ViewTemplate="{StaticResource viewTemplate}"></syncfusion:AnnotationEditorViewModel>
-                                            </syncfusion:SwimlaneHeader.Annotation>
-                                        </syncfusion:SwimlaneHeader>
+                                            </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                                        </syncfusion:SwimlaneHeaderViewModel>
                                     </syncfusion:PhaseViewModel.Header>
                                 </syncfusion:PhaseViewModel>
                             </syncfusion:PhaseCollection>
@@ -304,7 +304,7 @@ The following code example explains how to define a Phase header and its customi
    Orientation = Orientation.Horizontal,
  };
    //Creating a Header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -318,7 +318,7 @@ The following code example explains how to define a Phase header and its customi
    new PhaseViewModel()
    {
     UnitHeight=100,
-    Header=new SwimlaneHeader()
+    Header=new SwimlaneHeaderViewModel()
     {
         UnitWidth=30,
         Annotation=new AnnotationEditorViewModel(){Content="Phase 1",ViewTemplate = this.Resources["viewTemplate"] as DataTemplate},
