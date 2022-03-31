@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-## Recurrence Appointment
+# Recurrence Appointment
 Recurring appointments can generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRule) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursive) property in Schedule appointment which will build recurring appointments.
 
 ## Recurrence Rule
@@ -66,7 +66,7 @@ Scheduler supports four types of recurrence patterns. You can set this recurrenc
 
 [RRuleGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_RRuleGenerator_Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_System_DateTime_System_DateTime_) method is used to construct the recurrence rule that can be found in the [ScheduleHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the Scheduler control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or from any iCal directory, the client may apply recurrence rule directly.
 
-### Applying Recurrence to Appointments
+#### Applying Recurrence to Appointments
 
 Use `RRuleGenerator` method to generate the recurrence rule.
 
@@ -193,7 +193,7 @@ schedule.ItemsSource = Meetings;
 Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-working-with-recurrence-appointment).
 
 
-### How to get the Recurrence editor field values from recurrence rule?
+#### How to get the Recurrence editor field values from recurrence rule?
 You can get the recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_RRuleParser_System_String_System_DateTime_) method of Scheduler.
 
 {% tabs %}
@@ -213,7 +213,7 @@ recurrenceProperties.IsDailyEveryNDays as true
 
 recurrenceProperties.RangeRecurrenceCount as 3
 
-### How to get the occurrences date time list of recurring appointment from recurrence rule?
+#### How to get the occurrences date time list of recurring appointment from recurrence rule?
 Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) feature of Scheduler to get the occurrence date time list of recurring appointment from the recurrence rule.
 
 {% tabs %}
@@ -260,7 +260,7 @@ this.schedule.Appointments.Add(recurrenceAppointment);
 
 N> You can also update the `RecursiveExceptionDates` collection dynamically.
 
-### Delete occurrence from recurrence pattern dynamically or add/remove exception dates to recurrence pattern dynamically
+#### Delete occurrence from recurrence pattern dynamically or add/remove exception dates to recurrence pattern dynamically
 You can also delete or add deleted occurrence from the recurrence pattern appointment by adding/removing exception date from the `RecursiveExceptionDates` collection.
 
 {% tabs %}
@@ -271,7 +271,7 @@ recurrenceAppointment.RecursiveExceptionDates.Add(new DateTime(2017, 09, 05));
 {% endhighlight %}
 {% endtabs %}
 
-### Create recurrence exceptions for custom appointment
+#### Create recurrence exceptions for custom appointment
 You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class Meeting(refer [DataBinding](https://help.syncfusion.com/wpf/sfschedule/adding-appointments#using-data-binding-technique)) with mandatory field RecurrenceExceptionDates.
 
 {% tabs %}
@@ -352,4 +352,3 @@ this.schedule.ItemsSource = Meetings;
 ![WPF scheduler recurrence exceptiondate](Recurrence_images/Recurrence-with-RecursiveExceptionDate.jpg)
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-adding-recurrence-exception-dates).
-

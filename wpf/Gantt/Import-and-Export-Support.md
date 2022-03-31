@@ -123,22 +123,14 @@ The following image shows XML Export Import:
 XML Export Import
 {:.caption}
 
-
-
 The following image shows Importing the exported document in MS Project: 
 
-
-
 ![Import-and-Export-Support_img2](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)
-
-
 
 Exported document opened in MS Project
 {:caption}
 
-
-
-### Samples Link
+#### Samples Link
 
 To view samples: 
 
@@ -149,6 +141,3 @@ To view samples:
 4. Select Gantt.
 5. Expand the Import Export Features item in the Sample Browser.
 6. Choose the Import Export Demo sample to launch.
-
-
-

@@ -30,7 +30,7 @@ Scheduler supports to edit the recurrence appointment. The following window will
 
 You can also handle the opening of `Open Recurring Item` window using `RecurrenceEditMode` property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) by handling `AppointmentEditorOpening` event.
 
-### AppointmentEditorOpening event
+#### AppointmentEditorOpening event
 When user opens the appointment editor UI window to edit the appointment, then scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event.
 
 [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) has following members which provides information for `AppointmentEditorOpening` event.
@@ -72,7 +72,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 {% endhighlight %}
 {% endtabs %}
 
-### AppointmentEditorClosed
+#### AppointmentEditorClosed
 Scheduler notifies by [AppointmentEditorClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user close the appointment editor window.
 [AppointmentEditorClosedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html) event has following members which provides information for `AppointmentEditorClosed` event.
 
@@ -146,12 +146,12 @@ Scheduler supports three ways to remove the selected appointment
 2. Using `ContextMenu` delete option.
 3. Using AppointmentEditor.
 
-### Delete recurring appointment
+#### Delete recurring appointment
 Scheduler supports to delete the recurrence appointment. The following window will appear when user deletes the recurrence appointment to select the delete option to make the changes for occurrence or appointment series.
 
 ![WPF Scheduler editing recurrence appointment](editing_images/delete-recurrence-appointment.png)
 
-### AppointmentDeleting event
+#### AppointmentDeleting event
 Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user delete the appointment.
 [AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
 
@@ -168,7 +168,7 @@ Scheduler supports to resize the appointment using the option `Resize`option fro
 
 ![WPF Scheduler appointment resizing using contextmenu](editing_images/appointment-resizing-contextmenu.png)
 
-### AppointmentStartResizing event
+#### AppointmentStartResizing event
 Scheduler notifies by [AppointmentStartResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user start to resize the appointment.
 
 [AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) has following members which provides information for `AppointmentStartResizing` event.
@@ -186,7 +186,7 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentStartRe
 {% endhighlight %}
 {% endtabs %}
 
-### AppointmentResizing event
+#### AppointmentResizing event
 Scheduler notifies by [AppointmentResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user resizing the appointment.
 
 [AppointmentResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) has following members which provides information for `AppointmentResizing` event.
@@ -212,7 +212,7 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentResizin
 {% endtabs %}
 
 
-### AppointmentEndResizing event
+#### AppointmentEndResizing event
 Scheduler notifies by [AppointmentEndResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event when user ends the appointment resizing.
 
 [AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) has following members which provides information for `AppointmentEndResizing` event.
@@ -240,7 +240,7 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentEndResi
 ## Drag and drop
 Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views. 
 
-### DragStarting event
+#### DragStarting event
 Scheduler notifies by [DragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when start to drag the appointment.
 [DragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.DragStartingEventArgs.html) has following members which provides information for `DragStarting` event.
 
@@ -257,7 +257,7 @@ private void Schedule_DragStarting(object sender, DragStartingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### AppointmentDragging event
+#### AppointmentDragging event
 Scheduler notifies by [AppointmentDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when drag the appointment.
 [AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) has following members which provides information for `AppointmentDragging` event.
 
@@ -277,7 +277,7 @@ private void Schedule_AppointmentDragging(object sender, AppointmentDraggingEven
 {% endhighlight %}
 {% endtabs %}
 
-### AppointmentStartDragging event
+#### AppointmentStartDragging event
 Scheduler notifies by [AppointmentStartDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user start to drag the appointment.
 [AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html) has following members which provides information for `AppointmentStartDragging` event.
 
@@ -292,7 +292,7 @@ private void Schedule_AppointmentStartDragging(object sender, AppointmentStartDr
 }
 {% endhighlight %}
 {% endtabs %}
-### AppointmentEndDragging event
+#### AppointmentEndDragging event
 Scheduler notifies by [AppointmentEndDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) when user ends to drag the appointment.
 [AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html) has following members which provides information for `AppointmentEndDragging` event.
 
