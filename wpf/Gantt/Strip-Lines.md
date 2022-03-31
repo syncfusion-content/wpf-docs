@@ -20,7 +20,7 @@ Strip lines can be repeatable in the Gantt chart region based on repeat behavior
 
 The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
 
-### Repeat behavior
+#### Repeat behavior
 
 The available repeat behaviors are as follows:
 
@@ -31,9 +31,9 @@ The available repeat behaviors are as follows:
 * Hour
 * Minute
 
-### Style selector
+#### Style selector
 It used to pass the style of the strip lines dynamically. Based on constraints.
-### Template selector
+#### Template selector
 It used to pass the content template of the strip lines dynamically based on constraints.
 
 ## Types of strip lines
@@ -157,12 +157,12 @@ Double</td></tr>
 </table>
 
 
-### Use Case Scenarios
+#### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-### Properties
+#### Properties
 
 <table>
 <tr>
@@ -186,7 +186,7 @@ IEnumerable</td></tr>
 </table>
 
 
-### Enums
+#### Enums
 
 
 
@@ -206,7 +206,7 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-### Events
+#### Events
 
 By handling its event, you can customize the strip lines dynamically.
 
@@ -227,7 +227,7 @@ Event </td></tr>
 
 ## Adding strip lines to application
 
-### Regular strip lines
+#### Regular strip lines
 
 The following code sample demonstrates how to define a collection of regular strip lines.
 
@@ -285,7 +285,7 @@ The following code sample demonstrates how to bind the regular strip line collec
 
 {% endhighlight  %}
 
-### Output
+#### Output
 
 The following screenshot illustrates how to render the regular strip lines.
 
@@ -295,7 +295,7 @@ The following screenshot illustrates how to render the regular strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-### Absolute Strip lines
+#### Absolute Strip lines
 
 The following code sample demonstrates how to define a collection of absolute strip lines.
 
@@ -350,7 +350,7 @@ The following code sample demonstrates how to bind the absolute strip line colle
 
 {% endhighlight  %}
 
-### Output
+#### Output
 
 The following screenshot illustrates how to render the absolute strip lines.
 
@@ -360,7 +360,7 @@ The following screenshot illustrates how to render the absolute strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-### Sample Link
+#### Sample Link
 
 To view samples:
 

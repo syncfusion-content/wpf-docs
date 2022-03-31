@@ -18,37 +18,21 @@ Dependency relationship is the relationship between two tasks. These relationshi
 
 Finish-to-start—You cannot start a task until the other task is completed.
 
-
-
 ![Dependency-Relationship_img1](Dependency-Relationship_images/Dependency-Relationship_img1.png)
-
-
 
 Finish-to-finish—You cannot finish a task until the other task is completed.
 
-
-
 ![Dependency-Relationship_img2](Dependency-Relationship_images/Dependency-Relationship_img2.png)
-
-
 
 Start-to-start—You cannot start a task until the other task is also started.
 
-
-
 ![Dependency-Relationship_img3](Dependency-Relationship_images/Dependency-Relationship_img3.png)
-
-
 
 Start-to-Finish—You cannot finish a task until another the other task is started.
 
-
-
 ![Dependency-Relationship_img4](Dependency-Relationship_images/Dependency-Relationship_img4.png)
 
-
-
-### Properties
+## Properties
 
 <table>
 <tr>
@@ -116,13 +100,9 @@ task[0].ChildCollection[3].Predecessors.Add(new Predecessor()
 
 The following image shows the Dependency Relationship:
 
-
-
 ![Dependency-Relationship_img5](Dependency-Relationship_images/Dependency-Relationship_img5.png)
 
-
-
-### Samples Link
+#### Samples Link
 
 To view samples: 
 
@@ -149,7 +129,7 @@ There are two predecessor validation modes in Gantt Control.
 * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
 * Manual - Successor nodes need to adjust manually with respect to predecessor.
 
-### Properties
+#### Properties
 
 <table>
 <tr>
@@ -179,7 +159,7 @@ The following image shows the Predecessor in Auto Mode:
 
 ![Predecessors AutoMode](Dependency-Relationship_images/Predecessors AutoMode.png)
 
-### Editing Predecessors
+#### Editing Predecessors
 
 While creating a new predecessor in Grid, it should be in the following format:
 
@@ -205,19 +185,15 @@ The following are what you should use for different relationships:
 
 If any other data is added, the current editing relationship will be deleted and only the valid predecessors remain for the task.
 
-### Editing Resources
+#### Editing Resources
 
 As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the GanttGrid and GanttChart accordingly.
 
-### Use Case Scenario
+#### Use Case Scenario
 
 This helps to change the dependency relationships and resources of the tasks dynamically.
 
-
-
 ![Dependency-Relationship_img6](Dependency-Relationship_images/Dependency-Relationship_img6.png)
-
-
 
 Adding Dynamic Predecessors and Resources to an Application
 
@@ -241,14 +217,9 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 </Sync:GanttControl>
  
 {% endhighlight  %}
-
-
-The following code will illustrate how to dynamically add resource and predecessor in the underlying collection:
-
-
 {% highlight c# %}
 
-
+//// The following code will illustrate how to dynamically add resource and predecessor in the underlying collection:
 // To Add the Dynamic Predecessors
 
 this.viewModel.GanttItemSource[0].ChildCollection[2].Predecessors.Add(new Predecessor()

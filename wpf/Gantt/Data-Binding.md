@@ -13,7 +13,7 @@ documentation: ug
 
 Essential Gantt for WPF includes an built-in class called TaskDetails, which is inherited from the IGanttTask interface. A collection of the TaskDetails can be bounded as an ItemsSource for the GanttControl.
 
-### Use Case Scenarios
+#### Use Case Scenarios
 
 You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
 
@@ -110,15 +110,9 @@ public class ViewModel
 
 The following image shows the BindingTask Details:
 
-
-
 ![Data-Binding_img1](Data-Binding_images/Data-Binding_img1.png)
 
-
-
-
-
-### Samples Link
+#### Samples Link
 
 To view samples: 
 
@@ -419,9 +413,7 @@ The following image shows the External Property Binding:
 
 ![Data-Binding_img2](Data-Binding_images/Data-Binding_img2.png)
 
-
-
-### Samples Link
+#### Samples Link
 
 To view samples: 
 
