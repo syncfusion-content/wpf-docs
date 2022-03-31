@@ -19,8 +19,6 @@ You can also use this to schedule the works that have different week cycle. For 
 
 ## Properties
 
-
-
 <table>
 <tr>
 <th>
@@ -198,7 +196,7 @@ The following image shows Customized Calender and Weekends:
 Customized Calender
 {:.caption}
 
-### Samples Link
+#### Samples Link
 
 To view samples:
 

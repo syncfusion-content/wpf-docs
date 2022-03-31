@@ -30,7 +30,7 @@ In this walk through, you will create a new application that contains the SfKanb
 * Working with Workflows
 * Work In-Progress Limit
 
-### Adding SfKanban
+#### Adding SfKanban
 
 
 1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
@@ -66,7 +66,7 @@ SfKanban kanban = new SfKanban();
 
 {% endtabs %}
 
-### Adding SfKanban from toolbox
+#### Adding SfKanban from toolbox
 
 Drag and drop the Kanban control from the toolbox to your application.
 
@@ -81,7 +81,7 @@ Now the Syncfusion.SfKanban.WPF reference is added to the application references
 ![Adding SfKanban from toolbox](SfKanban_images/xamlreference.png)
 
 
-### Create data model
+#### Create data model
 
 You need to create a collection of KanbanModel objects for populating SfKanban.
 
@@ -173,7 +173,7 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
 {% endhighlight %}
 
-### Binding data
+#### Binding data
 
 In order to bind the data source of the SfKanban, set ItemsSource property as shown below.
 
@@ -197,7 +197,7 @@ SfKanban kanban = new SfKanban()
 
 {% endtabs %}
 
-### Defining columns
+#### Defining columns
 
 By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection property in SfKanban.
 
