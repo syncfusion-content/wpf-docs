@@ -12,7 +12,7 @@ documentation: ug
 ## Range for visible dates
 Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MinimumDate) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
 
-#### Minimum display date
+### Minimum display date
 `MinimumDate` will restrict date navigations features of backward, and also it doesn't allow to swipe the control using touch gesture beyond the minimum date range. The dates before the minimum date will be disabled in the schedule.
 
 {% tabs %}
@@ -26,7 +26,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
-#### Maximum display date
+### Maximum display date
 `MaximumDate` will restrict date navigations features of forward, and also it doesn't allow to swipe the control using touch gesture beyond the maximum date range. The dates beyond the maximum date will be disabled in the schedule.
 
 {% tabs %}
