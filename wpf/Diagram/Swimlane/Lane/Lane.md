@@ -33,11 +33,11 @@ The following code example explains how to define a swimlane with lane.
                 UnitHeight="120" UnitWidth="450">
                             <!--Create a header for Swimlane-->
                             <syncfusion:SwimlaneViewModel.Header>
-                                <syncfusion:SwimlaneHeader UnitHeight="32" >
-                                    <syncfusion:SwimlaneHeader.Annotation>
+                                <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" >
+                                    <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                         <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
-                                    </syncfusion:SwimlaneHeader.Annotation>
-                                </syncfusion:SwimlaneHeader>
+                                    </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                                </syncfusion:SwimlaneHeaderViewModel>
                             </syncfusion:SwimlaneViewModel.Header>
                             <syncfusion:SwimlaneViewModel.Lanes>
                                 <syncfusion:LaneCollection>
@@ -67,7 +67,7 @@ The following code example explains how to define a swimlane with lane.
    Orientation = Orientation.Horizontal,
  };
    //Creating the header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -128,11 +128,11 @@ The following code example explains how to define a lane header and its customiz
         <syncfusion:SwimlaneViewModel OffsetX="300" OffsetY="150"  UnitHeight="120" UnitWidth="450">
        <!--Create a header for Swimlane-->
         <syncfusion:SwimlaneViewModel.Header>
-           <syncfusion:SwimlaneHeader UnitHeight="32" >
-             <syncfusion:SwimlaneHeader.Annotation>
+           <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" >
+             <syncfusion:SwimlaneHeaderViewModel.Annotation>
                <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
-             </syncfusion:SwimlaneHeader.Annotation>
-        </syncfusion:SwimlaneHeader>
+             </syncfusion:SwimlaneHeaderViewModel.Annotation>
+        </syncfusion:SwimlaneHeaderViewModel>
         </syncfusion:SwimlaneViewModel.Header>
         <syncfusion:SwimlaneViewModel.Lanes>
          <syncfusion:LaneCollection>
@@ -140,11 +140,11 @@ The following code example explains how to define a lane header and its customiz
            <syncfusion:LaneViewModel UnitHeight="100">
              <syncfusion:LaneViewModel.Header>
               <!--Create a header for Lane-->
-             <syncfusion:SwimlaneHeader UnitWidth="30" ShapeStyle="{StaticResource LaneHeaderStyle}" >
-              <syncfusion:SwimlaneHeader.Annotation>
+             <syncfusion:SwimlaneHeaderViewModel UnitWidth="30" ShapeStyle="{StaticResource LaneHeaderStyle}" >
+              <syncfusion:SwimlaneHeaderViewModel.Annotation>
                <syncfusion:AnnotationEditorViewModel Content="Consumer" ViewTemplate="{StaticResource viewTemplate}"></syncfusion:AnnotationEditorViewModel>
-               </syncfusion:SwimlaneHeader.Annotation>
-               </syncfusion:SwimlaneHeader>
+               </syncfusion:SwimlaneHeaderViewModel.Annotation>
+               </syncfusion:SwimlaneHeaderViewModel>
              </syncfusion:LaneViewModel.Header>
            </syncfusion:LaneViewModel>
          </syncfusion:LaneCollection>
@@ -170,7 +170,7 @@ The following code example explains how to define a lane header and its customiz
    Orientation = Orientation.Horizontal,
  };
    //Creating the header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -184,7 +184,7 @@ The following code example explains how to define a lane header and its customiz
    new LaneViewModel()
    {
     UnitHeight=100,
-    Header=new SwimlaneHeader()
+    Header=new SwimlaneHeaderViewModel()
     {
         UnitHeight=30,
         Annotation=new AnnotationEditorViewModel(){Content="Consumer", ViewTemplate = this.Resources["viewTemplate"] as DataTemplate},
@@ -253,7 +253,7 @@ public class DiagramVM : DiagramViewModel
     Orientation = Orientation.Horizontal,
    };
    //Creating the header for SwimlaneViewModel
-  swimlane.Header = new SwimlaneHeader()
+  swimlane.Header = new SwimlaneHeaderViewModel()
   {
    UnitHeight = 32,
    Annotation = new AnnotationEditorViewModel()
@@ -267,7 +267,7 @@ public class DiagramVM : DiagramViewModel
     new LaneViewModel()
      {
        UnitHeight=100,
-       Header=new SwimlaneHeader()
+       Header=new SwimlaneHeaderViewModel()
        {
         UnitHeight=30,
         Annotation=new AnnotationEditorViewModel(){Content="Consumer"}                        
@@ -389,7 +389,7 @@ private void InitializeDiagram()
    Orientation = Orientation.Horizontal,
  };
    //Creating the header for SwimlaneViewModel
-   swimlane.Header = new SwimlaneHeader()
+   swimlane.Header = new SwimlaneHeaderViewModel()
    {
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
@@ -400,7 +400,7 @@ private void InitializeDiagram()
 LaneViewModel lane1 = new LaneViewModel()
 {
   UnitHeight = 100,
-  Header = new SwimlaneHeader()
+  Header = new SwimlaneHeaderViewModel()
   {
     UnitHeight = 30,
     Annotation = new AnnotationEditorViewModel() { Content = "Consumer" }

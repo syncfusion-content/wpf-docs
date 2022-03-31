@@ -85,11 +85,11 @@ The following code example explains how to define the swimlane header.
                 UnitHeight="120" UnitWidth="450">
                   <!--Initialize the Swimlane Header-->
                         <syncfusion:SwimlaneViewModel.Header>
-                            <syncfusion:SwimlaneHeader UnitHeight="32" >
-                                <syncfusion:SwimlaneHeader.Annotation>
+                            <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" >
+                                <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                     <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"></syncfusion:AnnotationEditorViewModel>
-                                </syncfusion:SwimlaneHeader.Annotation>
-                            </syncfusion:SwimlaneHeader>
+                                </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                            </syncfusion:SwimlaneHeaderViewModel>
                         </syncfusion:SwimlaneViewModel.Header>
                     </syncfusion:SwimlaneViewModel>
                 </syncfusion:SwimlaneCollection>
@@ -111,7 +111,7 @@ The following code example explains how to define the swimlane header.
   OffsetY = 150,
  };
  //Creating header for SwimlaneViewModel
- swimlane.Header = new SwimlaneHeader()
+ swimlane.Header = new SwimlaneHeaderViewModel()
  {
     UnitHeight = 32,
     Annotation = new AnnotationEditorViewModel()
@@ -165,12 +165,12 @@ The following code example explains how to customize the swimlane header.
                 UnitHeight="120" UnitWidth="450">
                         <syncfusion:SwimlaneViewModel.Header>
                          <!--Initialize the Swimlane Header-->
-                            <syncfusion:SwimlaneHeader UnitHeight="32" ShapeStyle="{StaticResource SwimlaneHeaderStyle}">
-                                <syncfusion:SwimlaneHeader.Annotation>
+                            <syncfusion:SwimlaneHeaderViewModel UnitHeight="32" ShapeStyle="{StaticResource SwimlaneHeaderStyle}">
+                                <syncfusion:SwimlaneHeaderViewModel.Annotation>
                                     <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART" ViewTemplate="{StaticResource viewTemplate">
                                     </syncfusion:AnnotationEditorViewModel>
-                                </syncfusion:SwimlaneHeader.Annotation>
-                            </syncfusion:SwimlaneHeader>
+                                </syncfusion:SwimlaneHeaderViewModel.Annotation>
+                            </syncfusion:SwimlaneHeaderViewModel>
                         </syncfusion:SwimlaneViewModel.Header>
                     </syncfusion:SwimlaneViewModel>
                 </syncfusion:SwimlaneCollection>
@@ -193,7 +193,7 @@ The following code example explains how to customize the swimlane header.
   Orientation=Orientation.Horizontal,
  };
  //Creating header for the SwimlaneViewModel
- swimlane.Header = new SwimlaneHeader()
+ swimlane.Header = new SwimlaneHeaderViewModel()
  {
     UnitHeight = 32,
     Annotation = new AnnotationEditorViewModel()
