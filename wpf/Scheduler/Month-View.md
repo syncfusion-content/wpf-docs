@@ -33,7 +33,7 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 * An agenda view displays text as **No Selected Date** until a date is selected.
 * If there is no appointment on a selected day, the agenda view displays the text as **No Events**.
 
-### Agenda view height
+#### Agenda view height
 Customize the month agenda view height from the Scheduler by using the [AgendaViewHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AgendaViewHeight) property of MonthViewSettings. By default, the agenda view will occupy 30% of the Scheduler height.
 
 {% tabs %}
@@ -149,7 +149,7 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 ## View header
 Customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
 
-### View header text formatting
+#### View header text formatting
 Customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
 
 {% tabs %}
@@ -169,7 +169,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
 
 ![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/wpf-scheduler-viewheader-text-formatting.png)
 
-### View header height
+#### View header height
 Customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of `MonthViewSettings`. By default, the `ViewHeaderHeight` is set to 50.
 
 {% tabs %}
@@ -189,7 +189,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 
 ![WPF Scheduler month view ViewHeaderHeight](Month-View_Images/wpf-scheduler-viewheader-height.png)
 
-### View header appearance customization
+#### View header appearance customization
 Customize the default appearance of the month view header by using the [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -269,7 +269,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ![WPF Scheduler month view BlackoutDates](Month-View_Images/wpf-scheduler-blackoutdates.png)
 
-### Customize blackout dates appearance 
+#### Customize blackout dates appearance 
  Customize the blacked out dates (trailing, leading, normal days, and current date) by using the setting style.
 
 {% tabs %}
@@ -321,7 +321,7 @@ this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 
 ![WPF Scheduler month view ShowWeekNumber](Month-View_Images/wpf-scheduler-showweeknumber.png)
 
-## Customize week number template
+#### Customize week number template
 Customize the default appearance of a week number template in the month view by using the [WeekNumberTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_WeekNumberTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -350,7 +350,7 @@ Customize the default appearance of a week number template in the month view by 
 
 ## Customize month cell appearance 
 
-### Using the DataTemplate 
+#### Using the DataTemplate 
 Customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -374,7 +374,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 
 ![WPF Scheduler month view MonthCellTemplate](Month-View_Images/wpf-scheduler-monthcell-template.png)
 
-### Using the DataTemplateSelector 
+#### Using the DataTemplateSelector 
 Customize the default appearance of the month cell by using the [MonthCellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplateSelector) property of `MonthViewSettings`.
 The `DataTemplateSelector` can choose a DataTemplate at runtime based on the value of a data-bound to Scheduler month cell using the MonthCellTemplate. It allows to choose a different data template for each month's cell, customizing the appearance of a particular month cell based on certain conditions.
 
@@ -435,7 +435,7 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
 
 ## Customize month view appointments
 
-### Using the DataTemplate
+#### Using the DataTemplate
 Customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of `MonthViewSettings`.
 
  {% tabs %}
@@ -463,7 +463,7 @@ Customize the default appearance of the month cell appointment by using the [App
 
 ![WPF Scheduler month view AppointmentTemplate](Month-View_Images/wpf-scheduler-appointment-template.png)
 
-### Using the DataTemplateSelector
+#### Using the DataTemplateSelector
 Customize the default appearance of the month view appointments by using the [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) property of `MonthViewSettings`.
 The `DataTemplateSelector` can choose a DataTemplate at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It allows to choose a different data template for each month's cell, customizing the appearance of a particular appointment based on certain conditions.
 

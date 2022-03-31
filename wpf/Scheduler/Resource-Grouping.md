@@ -44,7 +44,7 @@ Group the resource order by `Date` or order by `Resource` using the [ResourceGro
 
 N> Group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
 
-### Resource
+#### Resource
 
 The `ResourceGroupType` is set to `Resource` to group the number of dates under each resource.
 
@@ -60,7 +60,7 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 
 ![WPF scheduler Resource Grouping](Resource_Images/Resource_DayView.png)
 
-### Date
+#### Date
 
 The `ResourceGroupType` is set to `Date` to group the number of resources under each date.
 
@@ -101,7 +101,7 @@ N>• When `ResourceIdCollection` is not added to 'ScheduleAppointment' then the
 • When `ResourceGroupType` is set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
 • Also add or remove the appointment resources dynamically.
 
-### Multiple resource sharing
+#### Multiple resource sharing
 
 Multiple resources can share the same events or appointments. If the appointment details are edited or updated, then the changes will reflect on all other shared instances simultaneously.
 
@@ -186,7 +186,7 @@ schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-### Assign resource object collection
+#### Assign resource object collection
 
 Add the resources of `Employee` collection that can be assigned to the scheduler using the `ResourceCollection` property which is of `IEnumerable` type. Also add or remove scheduler resources dynamically.
 
@@ -206,7 +206,7 @@ schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
 
-### Assign the resource objects to appointment business object
+#### Assign the resource objects to appointment business object
 
 Associate scheduler `ResourceMapping` to the custom appointment by mapping resource `Id` in the `ResourceIdCollection` property of [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html). Custom appointments associated with the scheduler resources will be displayed when `ResourceGroupType` set as `Resource` or `Date`. Also assign resources to recurrence appointments.
 
@@ -273,7 +273,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 Customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
 
-### Resource header size in days view
+#### Resource header size in days view
 
 `DaysViewSettings` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 50.
 
@@ -290,7 +290,7 @@ schedule.DaysViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
 {% endtabs %}
 
-### Resource header size in timeline view
+#### Resource header size in timeline view
 
 `TimelineViewSettings` applicable for timeline day, timeline week, timeline workweek and timeline month views. By default, value of this property is set to 50.
 
@@ -359,7 +359,7 @@ Customize the number of visible resources in day, week, workweek, timeline day, 
 
 N> Visible resource count exceed count of schedule `ResourceCollection` count then schedule `ResourceCollection` count will be displayed. 
 
-### Visible resource count in days view
+#### Visible resource count in days view
 
 `DaysViewSettings` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
 {% tabs %}
@@ -377,7 +377,7 @@ schedule.DaysViewSettings.VisibleResourceCount = 2;
 
 ![WPF scheduler Visible resource count in day view ](Resource_Images/VisibleResourceCout_DayView.png)
 
-### Visible resource count in timeline views
+#### Visible resource count in timeline views
 
 `TimelineViewSettings` applicable for timeline day, timeline week, timeline workweek and timeline month views. By default, value of this property is set to 3.
 {% tabs %}
@@ -399,7 +399,7 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 
 Special time region can be created based on the resources in day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views.
 
-### Assign resources to special time regions in days view
+#### Assign resources to special time regions in days view
 
 {% tabs %}
 {% highlight c# %}
@@ -426,7 +426,7 @@ The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sc
 
 ![WPF scheduler resource Special Time Region in Day View ](Resource_Images/Timebasis_SpecialTimeRegion_DayView.png)
 
-### Assign resources to special time regions in timeline view
+#### Assign resources to special time regions in timeline view
 
 {% tabs %}
 {% highlight c# %}
@@ -454,7 +454,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 Resource UI customization using a template and template selectors support.
 
-### Customize resource appearance using ResourceHeaderTemplate
+#### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
 {% highlight xaml %}
@@ -503,7 +503,7 @@ Resource UI customization using a template and template selectors support.
 
 N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-support-in-wpf-scheduler/tree/main/ResourceHeaderTemplateDemo)
 
-### Customize resource appearance using ResourceHeaderTemplateSelector
+#### Customize resource appearance using ResourceHeaderTemplateSelector
 
 {% tabs %}
 {% highlight xaml %}
@@ -567,7 +567,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 {% endtabs %}
 
 
-### Creating a ResourceHeaderTemplateSelector
+#### Creating a ResourceHeaderTemplateSelector
 
 {% tabs %}
 {% highlight c# %}

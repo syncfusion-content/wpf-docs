@@ -20,7 +20,7 @@ Assembly: `Syncfusion.SfSchedule.WPF`
 
 Namespace: `Syncfusion.UI.Xaml.Schedule`
 
-## Add control manually in XAML
+#### Add control manually in XAML
 
 To add the control manually in XAML page, follow the given steps:
 
@@ -43,7 +43,7 @@ To add the control manually in XAML page, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C&#35;
+#### Add control manually in C&#35;
 To manually attach control to C #, follow the following steps:
 
 1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
@@ -79,7 +79,7 @@ Scheduler control provides five different views for showing appointments which c
 * Month
 * TimeLine
 
-## Day View
+#### Day View
 `Day` view is used to view a single day, and by default the current day is shown. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
 
 {% tabs %}
@@ -95,7 +95,7 @@ schedule.ScheduleType = ScheduleType.Day;
 
 ![WPF scheduler dayview](Getting-Started_images/Day-View.png)
 
-## Week View
+#### Week View
 `Week` view is to view all week days of a particular week. Appointments will be scheduled in the corresponding timeslots on the basis of the week dates.
 
 {% tabs %}
@@ -109,7 +109,7 @@ this.schedule.ScheduleType = ScheduleType.Week;
 
 ![WPF scheduler weekview](Getting-Started_images/Week-View.png)
 
-## Work Week View
+#### Work Week View
 `WorkWeek` view is to view only working days of a particular week. By default, `Saturday` and `Sunday` are the non-working days. and you can change non-working days of a week using non-working days property. Appointments displayed in timeslots with the corresponding day of the week depending on their duration.
 
 {% tabs %}
@@ -122,7 +122,7 @@ this.schedule.ScheduleType = ScheduleType.WorkWeek;
 {% endtabs %}
 ![WPF scheduler workweekview](Getting-Started_images/WorkWeek-View.png)
 
-## Month View
+#### Month View
 In schedule, `Month` view displays the month of dates similar to calendar and displays appointments for each day in a cell similar to outlook. 
 
 {% tabs %}
@@ -135,7 +135,7 @@ this.schedule.ScheduleType = ScheduleType.Month;
 {% endtabs %}
 ![WPF scheduler monthview](Getting-Started_images/Month-View.png)
 
-## TimeLine View
+#### TimeLine View
 `Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
 
 {% tabs %}
@@ -152,7 +152,7 @@ this.schedule.ScheduleType = ScheduleType.TimeLine;
 ## Appointments
 Scheduler has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) collections. You need to allocate the collection generated to [Appointments](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Appointments) property.
 
-### Adding Appointments
+### Creating the schedule appointments
 `ScheduleAppointment` is a class that includes the specific of scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Subject) and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_Location), [AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDay), [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursive) properties.
 
 {% tabs %}
@@ -177,7 +177,7 @@ schedule.Appointments = appointmentCollection;
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started)
 
-### Adding Custom data object
+### Creating the custom data object
 You can also map custom appointments data to our scheduler.
 
 Here steps to render meetings using scheduler control with respective custom data properties created in a class `Meeting`.
