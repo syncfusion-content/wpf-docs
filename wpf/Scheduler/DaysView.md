@@ -353,7 +353,7 @@ N>
 ## View header
 Customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.
 
-### View header text formatting
+#### View header text formatting
 Customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `DaysViewSettings`.
 {% tabs %}
 {% highlight xaml %}
@@ -373,7 +373,7 @@ Schedule.DaysViewSettings.ViewHeaderDayFormat = "dddd";
 {% endtabs %}
 ![View header text formatting in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-text-formatting.png)
 
-### View header height
+#### View header height
 Customize the height of the ViewHeader in a day ,week ,work week views by setting `ViewHeaderHeight` property of `DaysViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
@@ -391,7 +391,7 @@ Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endtabs %}
 ![View header height in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-height.png)
 
-### View header appearance customization
+#### View header appearance customization
 Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}

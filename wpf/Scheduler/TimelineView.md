@@ -344,7 +344,7 @@ N>
 ## View header
 Customize the default appearance of view header in the timeline views by setting the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat), and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `TimelineViewSettings.`
 
-### View header text formatting
+#### View header text formatting
 Customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `TimelineViewSettings`.
 {% tabs %}
 {% highlight xaml %}
@@ -362,7 +362,7 @@ Schedule.TimelineViewSettings.ViewHeaderDateFormat="dd/MMMM";
 {% endtabs %}
 ![WPF Scheduler View Header Text Formatting](Timeline_images/wpf-scheduler-view-header-text-formatting.png)
 
-### View header height
+#### View header height
 Customize the height of the ViewHeader in timeline views by setting `ViewHeaderHeight` property of `TimelineViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
@@ -381,7 +381,7 @@ Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 
 ![WPF Scheduler View Header Height](Timeline_images/wpf-scheduler-view-header-height.png)
 
-### View header appearance customization
+#### View header appearance customization
 Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `TimelineViewSettings` in `SfScheduler`.
 
 {% tabs %}
