@@ -77,7 +77,7 @@ Restrict the user interaction such as selection and highlights specific regions 
 
 Enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) in the week and workweek views. By default, its value is false.
 
-### Selection restriction in timeslots
+#### Selection restriction in timeslots
 Enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties). By default, its value is true.
 {% tabs %}
 {% highlight xaml %}
@@ -121,7 +121,7 @@ the `CanEdit` property to false
 in the region
 * It does not restrict the appointment rendering on a region, when appointments are loaded from data services or adding programmatically.
 
-### Recurring time region
+#### Recurring time region
 The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties).
 
 Enable merges adjacent region of `SpecialTimeRegion` and show them as a single region instead of showing them separately for each day using the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanMergeAdjacentRegions) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) in the week and workweek views. By default, its value is false.
@@ -165,7 +165,7 @@ If the [CanMergeAdjacentRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 ![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/wpf-scheduler-recurrence-timeregion-on-date-basis.png)
 
-### Recurrence exception dates
+#### Recurrence exception dates
 Delete any of the occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties). The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
@@ -197,7 +197,7 @@ The [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sc
 
 ![Recurrence exception dates in WPF Scheduler](DaysView_Images/wpf-scheduler-recurrence-exception-dates-in-date-basis.png)
 
-### Special time region customization
+#### Special time region customization
 The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#properties) that is used to customize the text style for the image of the `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
@@ -311,7 +311,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-### Customize more appointments indicator in all day panel
+#### Customize more appointments indicator in all day panel
 You can customize the default appearance of more appointments indicator in the all-day panel by using the [AllDayMoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayMoreAppointmentsIndicatorTemplate) property of `DaysViewSettings.`
 
 {% tabs %}
@@ -353,7 +353,7 @@ N>
 ## View header
 Customize the default appearance of view header in day, week, work week views by setting [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `DaysViewSettings`.
 
-### View header text formatting
+#### View header text formatting
 Customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `DaysViewSettings`.
 {% tabs %}
 {% highlight xaml %}
@@ -373,7 +373,7 @@ Schedule.DaysViewSettings.ViewHeaderDayFormat = "dddd";
 {% endtabs %}
 ![View header text formatting in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-text-formatting.png)
 
-### View header height
+#### View header height
 Customize the height of the ViewHeader in a day ,week ,work week views by setting `ViewHeaderHeight` property of `DaysViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
@@ -391,7 +391,7 @@ Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endtabs %}
 ![View header height in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-height.png)
 
-### View header appearance customization
+#### View header appearance customization
 Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}

@@ -138,7 +138,7 @@ this.grid.Children.Add(schedule);
 
 This feature enables users to view appointments based on their subcategory only in day and week views. Using this feature, the end user can group appointments under various subcategories (resources). 
 
-### DayHeaderOrder property
+#### DayHeaderOrder property
 
 [DayHeaderOrder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayHeaderOrder) property is used to set the order by which resources have to be displayed
 
@@ -195,7 +195,7 @@ this.grid.Children.Add(schedule);
 
 ![WPF Scheduler with subresources](Resources_images/subresources.png)
 
-## N Number of Resources in Day View
+## Number of Resources in Day View
 
 This feature supports to display `N` number of resources in the Schedule view. You can achieve this by specifying the count of resources that needs to be displayed per view. This support is offered for `Day` view alone.
 
@@ -214,7 +214,7 @@ int</td><td>
 Gets or sets a value to specify the number of resources that need to be shown in the view.</td></tr>
 </table>
 
-### Example:
+#### Example:
 
 In the following code example, [DayViewColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCount) is “two”, so the Scheduler displays two resources in the view. This count is maintained while scrolling to view the other resources.
 

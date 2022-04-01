@@ -115,7 +115,7 @@ this.schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = ne
 
 ![WPF scheduler non accessible time slots](timelineview_images/timelineview-non-accessible-timeslots.png)
 
-### Customize non-accessible timeslots using template
+#### Customize non-accessible timeslots using template
 Scheduler supports to customize the non-accessible timeslots using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonAccessibleBlockTemplate) property.
 
 {% tabs %}
@@ -173,7 +173,7 @@ this.schedule.IsHighLightWorkingHours = true;
 
 ![WPF scheduler timeline view working hours](timelineview_images/timelineview-change-working-hour.png)
 
-###  Display working hours only
+####  Display working hours only
 Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ShowNonWorkingHours) property.
 
 {% tabs %}
@@ -192,7 +192,7 @@ this.schedule.ShowNonWorkingHours = false;
 
 ![WPF scheduler timeline view prevent Non working hours diplaying](timelineview_images/timelineview-non-working-hour.png)
 
-### Change non-working hours background
+#### Change non-working hours background
 Scheduler supports to change the background color for non-working hours using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonWorkingHourBrush) property.
 
 {% tabs %}
@@ -228,7 +228,7 @@ this.schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
 
 ![WPF Scheduler timeline view current time indicator](timelineview_images/timelineview-current-time-indicator.png)
 
-### Customize current time indicator
+#### Customize current time indicator
 Scheduler supports to customize the current time indicator using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CurrentTimeIndicatorTemplate) property.
 
 {% tabs %}

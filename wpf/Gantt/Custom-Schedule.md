@@ -42,7 +42,7 @@ GanttScheduleRowInfo class will have following fields:
 * Months—represents the corresponding row as month’s row.
 * Years—represents the corresponding row as year’s row.
 
-### Use Case Scenario
+#### Use Case Scenario
 
 This will be useful when you like to define your own schedules with your own measurements/calendars.
 
@@ -50,9 +50,7 @@ Example 1: The Research organizations may follow different measurements to track
 
 Example 2: A very big construction project many have the time period of many years or months. They need some customized way of date time schedule to track their progress. In this scenario, they can use the CustomDateTime schedule to form the custom schedule like the schedule that has the time scale on quarterly basis to track their progress.
 
-### Properties
-
-
+#### Properties
 
 <table>
 <tr>
@@ -69,10 +67,7 @@ DependencyProperty </td><td>
 IList&lt;GanttScheduleRowInfo&gt;</td></tr>
 </table>
 
-
-### Events
-
-
+#### Events
 
 <table>
 <tr>
@@ -89,12 +84,11 @@ ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
 Routed Event </td></tr>
 </table>
 
-
 ## GanttScheduleCell Class
 
 The properties of the GanttScheduleCell class are as follows:
 
-### Properties
+#### Properties
 
 <table>
 <tr>
@@ -128,7 +122,6 @@ Gets/Sets the current schedule cell content.</td><td>
 Dependency Property</td><td>
 Object</td></tr>
 </table>
-
 
 ## Adding Custom Schedule to an Application
 
@@ -164,8 +157,6 @@ The following code illustrates Adding Custom Schedule to an Application:
 
 this.Gantt.CustomScheduleSource = this.GetInfo();   
 
-
-
 /// Gets the Numeric Schedule Items Info        
 
 private ObservableCollection<GanttScheduleRowInfo> GetInfo()
@@ -178,13 +169,9 @@ ObservableCollection<GanttScheduleRowInfo> RowInfo = new
 
  ObservableCollection<GanttScheduleRowInfo>();
 
-
-
 // Defining the top most row of the schedule 
 
 RowInfo.Add(new GanttScheduleRowInfo() { CellsPerUnit = 3 });
-
-
 
 // Defining the consecutive rows of the schedule
 
@@ -192,15 +179,11 @@ RowInfo.Add(new GanttScheduleRowInfo() { CellsPerUnit = 2 });
 
 RowInfo.Add(new GanttScheduleRowInfo() { CellsPerUnit = 5 });
 
-
-
 // Defining the bottom most row of the schedule
 
 // Here we are setting the cell width in pixels
 
 RowInfo.Add(new GanttScheduleRowInfo() { PixelsPerUnit = 30d });
-
-
 
 return RowInfo;
 
@@ -210,11 +193,7 @@ return RowInfo;
 
 The following image shows Custom Schedule:
 
-
-
 ![Custom-Schedule_img1](Custom-Schedule_images/Custom-Schedule_img1.png)
-
-
 
 Custom Schedule
 {:.caption}
