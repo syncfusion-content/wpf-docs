@@ -157,7 +157,7 @@ this.schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = ne
 
 ![WPF scheduler non accessible time slots](views_images/non-accessible-blocks.png)
 
-#### Customize non-accessible timeslots using template
+### Customize non-accessible timeslots using template
 Scheduler supports to customize the non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonAccessibleBlockTemplate) property.
 
 {% tabs %}
@@ -230,7 +230,7 @@ this.schedule.IsHighLightWorkingHours = true;
 
 ![WPF scheduler DayView working hours](views_images/dayview-working-hours.png)
 
-####  Display working hours only
+###  Display working hours only
 Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ShowNonWorkingHours) property.
 
 {% tabs %}
@@ -249,7 +249,7 @@ this.schedule.ShowNonWorkingHours = false;
 
 ![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours.png)
 
-#### Change non-working hours background
+### Change non-working hours background
 Scheduler supports to change the background color for non-working hours by using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonWorkingHourBrush) property.
 
 {% tabs %}
@@ -285,7 +285,7 @@ this.schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
 
 ![WPF Scheduler dayview current time indicator](views_images/dayview-current-time-indicator.png)
 
-#### Customize current time indicator
+### Customize current time indicator
 Scheduler supports to customize the current time indicator by using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CurrentTimeIndicatorTemplate) property.
 
 {% tabs %}

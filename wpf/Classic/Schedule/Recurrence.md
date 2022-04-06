@@ -66,7 +66,7 @@ Scheduler supports four types of recurrence patterns. You can set this recurrenc
 
 [RRuleGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html#Syncfusion_UI_Xaml_Schedule_ScheduleHelper_RRuleGenerator_Syncfusion_UI_Xaml_Schedule_RecurrenceProperties_System_DateTime_System_DateTime_) method is used to construct the recurrence rule that can be found in the [ScheduleHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the Scheduler control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or from any iCal directory, the client may apply recurrence rule directly.
 
-#### Applying Recurrence to Appointments
+### Applying Recurrence to Appointments
 
 Use `RRuleGenerator` method to generate the recurrence rule.
 

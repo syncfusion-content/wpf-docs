@@ -123,7 +123,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 ## Special time regions
 Restrict the user interaction such as selection and highlights specific regions of time in the timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). Set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion,` use the timeZone property to set the specific timezone for the start and end time of the `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it that is set to the text or icon property of `SpecialTimeRegion.` This property will be applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
-#### Selection restriction in timeslots
+### Selection restriction in timeslots
 Enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_CanEdit) property of `SpecialTimeRegion`. By default, it's value is true.
 {% tabs %}
 {% highlight xaml %}
@@ -166,7 +166,7 @@ This property only restricts the interaction on region and it does not restrict 
 * It does not restrict appointment interaction when the appointment is placed in the region.
 * It does not restrict the appointment rendering on a region, when appointments are loaded from data services or adding programmatically.
 
-#### Recurring time region
+### Recurring time region
 The recurring time region on a daily, weekly, monthly, or yearly interval. The recurring special time regions can be created by setting the [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceRule) property in `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
@@ -202,7 +202,7 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-#### Recurrence exception dates
+### Recurrence exception dates
 Delete any of occurrence that is an exception from the recurrence pattern time region by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_RecurrenceExceptionDates) property of `SpecialTimeRegion`. The deleted occurrence date will be considered as a recurrence exception date.
 {% tabs %}
 {% highlight c# %}
@@ -229,7 +229,7 @@ Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {% endhighlight %}
 {% endtabs %}
 
-#### Special time region customization
+### Special time region customization
 The `SpecialTimeRegion` background color can be customized by using the [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_Background) and [SpecialTimeRegionTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegionTemplate) properties of `SpecialTimeRegion` that is used to customize the text style for the image of the `SpecialTimeRegion`.
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ N>
 ## View header
 Customize the default appearance of view header in the timeline views by setting the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat), [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight), [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat), and  [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) of `TimelineViewSettings.`
 
-#### View header text formatting
+### View header text formatting
 Customize the date and day format of ViewHeader by using the `ViewHeaderDateFormat` and `ViewHeaderDayFormat` properties of `TimelineViewSettings`.
 {% tabs %}
 {% highlight xaml %}
@@ -362,7 +362,7 @@ Schedule.TimelineViewSettings.ViewHeaderDateFormat="dd/MMMM";
 {% endtabs %}
 ![WPF Scheduler View Header Text Formatting](Timeline_images/wpf-scheduler-view-header-text-formatting.png)
 
-#### View header height
+### View header height
 Customize the height of the ViewHeader in timeline views by setting `ViewHeaderHeight` property of `TimelineViewSettings` in `SfScheduler`.
 {% tabs %}
 {% highlight xaml %}
@@ -381,7 +381,7 @@ Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 
 ![WPF Scheduler View Header Height](Timeline_images/wpf-scheduler-view-header-height.png)
 
-#### View header appearance customization
+### View header appearance customization
 Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `TimelineViewSettings` in `SfScheduler`.
 
 {% tabs %}

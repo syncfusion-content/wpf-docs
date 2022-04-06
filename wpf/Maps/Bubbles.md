@@ -23,57 +23,57 @@ Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`AutoFillColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor)</td><td>
+{{'[AutoFillColor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_AutoFillColor)'| markdownify }}</td><td>
 Boolean (true / false)</td><td>
 Gets or sets whether the colors should be automatically filled.</td></tr>
 <tr>
 <td>
-[`MaxSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize)</td><td>
+{{'[MaxSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MaxSize)'| markdownify }}</td><td>
 Double</td><td>
 Get or sets the maximum height and width of the bubble.</td></tr>
 <tr>
 <td>
-[`MinSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize)</td><td>
+{{'[MinSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_MinSize)'| markdownify }}</td><td>
 Double</td><td>
 Gets or sets the minimum height and width of the bubble.</td></tr>
 <tr>
 <td>
-[`StrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_StrokeThickness)</td><td>
+{{'[StrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_StrokeThickness)'| markdownify }}</td><td>
 Double</td><td>
 Get or sets the border thickness of the bubbles.</td></tr>
 <tr>
 <td>
-[`ValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath)</td><td>
+{{'[ValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ValuePath)'| markdownify }}</td><td>
 String</td><td>
 Gets or sets the name of the under-bound property in ItemsSource.</td></tr>
 <tr>
 <td>
-[`ColorValuePath`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorValuePath)</td><td>
+{{'[ColorValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorValuePath)'| markdownify }}</td><td>
 String</td><td>
 Gets or sets colors to bubble shape. </td></tr>
 <tr>
 <td>
-[`ColorMapping`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorMappings)</td><td>
+{{'[ColorMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_ColorMappings)'| markdownify }}</td><td>
 ObservableCollection&lt;RangeColorMapping&gt;</td><td>
 Gets or sets the tree map colors.</td></tr>
 <tr>
 <td>
-[`Fill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill)</td><td>
+{{'[Fill](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Fill)'| markdownify }}</td><td>
 Brush</td><td>
 Gets or sets the fill brush of the bubble when auto fill color is set to true.</td></tr>
 <tr>
 <td>
-[`Stroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Stroke)</td><td>
+{{'[Stroke](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Stroke)'| markdownify }}</td><td>
 Brush</td><td>
 Gets or sets the border color of the bubble.</td></tr>
 <tr>
 <td>
-[`Opacity`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Opacity)</td><td>
+{{'[Opacity](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_Opacity)'| markdownify }}</td><td>
 double</td><td>
 Gets or sets the opacity of the bubble in the map.</td></tr>
 <tr>
 <td>
-[`SizeRatio`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_SizeRatio)</td><td>
+{{'[SizeRatio](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting.html#Syncfusion_UI_Xaml_Maps_BubbleMarkerSetting_SizeRatio)'| markdownify }}</td><td>
 double</td><td>
 Gets the Size ratio for the bubbles based on the MinSize and MaxSize.</td></tr>
 </table>
