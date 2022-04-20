@@ -9,13 +9,13 @@ documentation: ug
 
 # Delete Command in WPF Diagram (SfDiagram)
 
-The [Delete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Delete) commands are used to do delete operation on the Diagram view for currently selected item. This command is also used to do delete any un-selected diagram objects with its parameter. 
+The [Delete](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.IDiagramCommands.html#Syncfusion_UI_Xaml_Diagram_IDiagramCommands_Delete) commands are used to do delete operation on the Diagram view for currently selected item. This command is also used to delete any un-selected diagram objects with its parameter. 
 
-To execute delete commands, DeleteCommandParameter type have to be passed.
+To execute delete commands, the DeleteCommandParameter type has to be passed.
 
 ## Delete command parameter
 
-The DeleteParameter is used to represent the items parameters to for executing delete command. Please find its properties and their description as follows. The DeleteParameter contains a `Items` property and it is used to specify a list of diagram objects need to be delete using delete command.
+The DeleteParameter is used to represent the item's parameters for executing the delete command. Please find its properties and their description as follows. The DeleteParameter contains a Items property and it is used to specify a list of diagram objects that need to be deleted using the delete command.
 
 {% tabs %}
 
