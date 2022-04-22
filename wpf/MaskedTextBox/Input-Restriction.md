@@ -167,97 +167,97 @@ Example</th></tr>
 <td>
 Positive whole number</td><td>
 \d+</td><td>
-<Img src="MaskOptions_images/Positive_whole_number.png"></td></tr>
+<Img src="MaskOptions_images/Positive_whole_number.png" alt="WPF MaskedTextBox Positive whole number"></td></tr>
 <tr>
 <td>
 Negative whole number</td><td>
 -\d+</td><td>
-<Img src="MaskOptions_images/Negative_whole_number.png"></td></tr>
+<Img src="MaskOptions_images/Negative_whole_number.png" alt="WPF MaskedTextBox Negative whole number"></td></tr>
 <tr>
 <td>
 Positive and negative whole number</td><td>
 -?\d+</td><td>
-<Img src="MaskOptions_images/Whole_number.png"></td></tr>
+<Img src="MaskOptions_images/Whole_number.png" alt="WPF MaskedTextBox Whole number"></td></tr>
 <tr>
 <td>
 Positive and negative float number</td><td>
 -?\d+\.?\d*</td><td>
-<Img src="MaskOptions_images/Positive-Negative.png"></td></tr>
+<Img src="MaskOptions_images/Positive-Negative.png" alt="WPF MaskedTextBox Positive Negative"></td></tr>
 <tr>
 <td>
 Percent value</td><td>
 \d+\.\d{2}%</td><td>
-<Img src="MaskOptions_images/Percent.png"></td></tr>
+<Img src="MaskOptions_images/Percent.png" alt="WPF MaskedTextBox Percent"></td></tr>
 <tr>
 <td>
 Currency value</td><td>
 $ \d+\.\d{2}"</td><td>
-<Img src="MaskOptions_images/Currency.png"></td></tr>
+<Img src="MaskOptions_images/Currency.png" alt="WPF MaskedTextBox Currency"></td></tr>
 <tr>
 <td>
 Alphanumeric with space</td><td>
 [a-zA-Z0-9 ]*</td><td>
-<Img src="MaskOptions_images/Alphanumeric_with_space.png"></td></tr>
+<Img src="MaskOptions_images/Alphanumeric_with_space.png" alt="WPF MaskedTextBox Alphanumeric with space"></td></tr>
 <tr>
 <td>
 Alphanumeric without space</td><td>
 [a-zA-Z0-9]*</td><td>
-<Img src="MaskOptions_images/Alphanumeric_without_space.png"></td></tr>
+<Img src="MaskOptions_images/Alphanumeric_without_space.png" alt="WPF MaskedTextBox Alphanumeric without space"></td></tr>
 <tr>
 <td>
 Email ID</td><td>
 [A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}</td><td>
-<Img src="MaskOptions_images/Email.png"></td></tr>
+<Img src="MaskOptions_images/Email.png" alt="WPF MaskedTextBox Email"></td></tr>
 <tr>
 <td>
 Hexadecimal number</td><td>
 \\x[0-9A-Fa-f]{1,2}</td><td>
-<Img src="MaskOptions_images/Hexadecimal_number.png"></td></tr>
+<Img src="MaskOptions_images/Hexadecimal_number.png" alt="WPF MaskedTextBox Hexadecimal number"></td></tr>
 <tr>
 <td>
 Octal number</td><td>
 \\0[0-7]{1,3}</td><td>
-<Img src="MaskOptions_images/Octal_number.png"></td></tr>
+<Img src="MaskOptions_images/Octal_number.png" alt="WPF MaskedTextBox Octal number"></td></tr>
 <tr>
 <td>
 Hexadecimal color code</td><td>
 #[A-Fa-f0-9]{6}</td><td>
-<Img src="MaskOptions_images/Hexadecimal_color_code.png"></td></tr>
+<Img src="MaskOptions_images/Hexadecimal_color_code.png" alt="WPF MaskedTextBox Hexadecimal color code"></td></tr>
 <tr>
 <td>
 Time</td><td>
 (0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]</td><td>
-<Img src="MaskOptions_images/Time.png"></td></tr>
+<Img src="MaskOptions_images/Time.png" alt="WPF MaskedTextBox Time"></td></tr>
 <tr>
 <td>
 Phone number</td><td>
 \([0-9]\d{2}\) [0-9]\d{2}-[0-9]\d{3}</td><td>
-<Img src="Working_with_SfMaskedEdit_images/Value.png"></td></tr>
+<Img src="Working_with_SfMaskedEdit_images/Value.png" alt="WPF MaskedTextBox AccountNumber"></td></tr>
 <tr>
 <td>
 Product key</td><td>
 [A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}-[A-Z\d]{5}</td><td>
-<Img src="MaskOptions_images/Product_key.png"></td></tr>
+<Img src="MaskOptions_images/Product_key.png" alt="WPF MaskedTextBox Product key"></td></tr>
 <tr>
 <td>
 Zip code</td><td>
 \d{5}-\d{5}</td><td>
-<Img src="MaskOptions_images/Zip_code.png"></td></tr>
+<Img src="MaskOptions_images/Zip_code.png" alt="WPF MaskedTextBox Zip code"></td></tr>
 <tr>
 <td>
 Bank SWIFT code</td><td>
 [A-Z]{6}[0-9]{2}[A-Z]{3}</td><td>
-<Img src="MaskOptions_images/Bank_SWIFT_code.png"></td></tr>
+<Img src="MaskOptions_images/Bank_SWIFT_code.png" alt="WPF MaskedTextBox Bank SWIFT code"></td></tr>
 <tr>
 <td>
 Bank Account Number</td><td>
 \d{8,12}</td><td>
-<Img src="MaskOptions_images/AccountNumber.png"></td></tr>
+<Img src="MaskOptions_images/AccountNumber.png" alt="WPF MaskedTextBox AccountNumber"></td></tr>
 <tr>
 <td>
 Credit Card Number</td><td>
 \d{4} \d{4} \d{4} \d{4}</td><td>
-<Img src="MaskOptions_images/Credit_Card_Number.png"></td></tr>
+<Img src="MaskOptions_images/Credit_Card_Number.png" alt="WPF MaskedTextBox Credit Card Number"></td></tr>
 </table>
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtextbox-examples/tree/master/Samples/BasicMasks) in GitHub
