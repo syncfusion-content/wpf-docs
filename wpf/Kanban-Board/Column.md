@@ -69,7 +69,7 @@ kanban.ColumnMappingPath = "Group";
 
 {% endtabs %}
 
-### Populate the column with cards from different categories
+#### Populate the column with cards from different categories
 
 More than one category can be mapped to a column by assigning multiple values to the ['Categories'](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) collection of [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). For example, you can map the “In Progress" and "Validated" types under the “In progress” column.
 

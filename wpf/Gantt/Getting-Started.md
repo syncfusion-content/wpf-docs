@@ -17,37 +17,24 @@ Gantt control is composed of three controls. They are:
 * ScheduleHeader  
 * GanttChartVisualControl
 
-
-
 ![WPF Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-### Gantt grid
+#### Gantt grid
 
 Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bounded tasks using this grid.
 
-
-
 ![WPF Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
-
-
 
 * Header— Header represents the table header which contains the field name of the task.
 * Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further split into various child tasks.
 * Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
-### Gantt chart
-
+#### Gantt chart
 
 Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
 
-
-
 ![WPF Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
-
-
 
 * Node— Node represents an individual or child task.
 * Header Node—HeaderNode represents the parent or summary task of the projects.
@@ -55,24 +42,16 @@ Gantt Chart is an items control which provides a graphically representation of t
 * Progress Indicator—Progress indicator represents the percentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
 
-### Gantt schedule 
-
+#### Gantt schedule 
 
 Gantt Schedule is a medium to measure the progress in the Gantt control. Using this you can track or measure the progress of the task or activity.
 
 
-
 ![WPF Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
-
-
 
 ## Class diagram
 
-
-
 ![WPF Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
-
-
 
 ## Feature summary
 
@@ -89,7 +68,6 @@ The following features are available in the Essential Gantt for WPF:
 * XML Import/Export
 
 ## Adding GanttControl to an application
-
 
 You can create a project management application using Essential Gantt WPF. 
 
@@ -235,42 +213,22 @@ The following are the steps to create Gantt control through designer.
 
 1. Open the XAML page of the application.
 
-
-
-   ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
-
-
-
+![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
 
 2. Select GanttControl from ToolBox.
 
-
-
-   ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
-
-
-
+![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
 
 
 3. Drag-and-drop the GanttControl to Designer View.
 
-
-
-   ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
-
-
-
+![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
 
 4. Gantt control is added to the window. Assembly reference will also be added to Project file.
 
-
-
-   ![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
-
-
-
+![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
 
 
 5. Now you can customize the properties of Gantt control in the Properties Window.

@@ -46,7 +46,7 @@ You can populate a resource view Gantt by populating the collection of tasks in 
 
 You can populate a Resource view Gantt for both date-time schedules and numeric schedules. 
 
-### Resource View Gantt in a Custom Numeric Schedule
+#### Resource View Gantt in a Custom Numeric Schedule
 
 To populate a Resource view Gantt in a Custom Numeric Schedule:
 
@@ -110,13 +110,9 @@ teams[1].SubItems.Add(Person);
 
 The following shows the Resultant output:
 
-
-
 ![Resource-View-Gantt-Inline-Items_img1](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)
 
-
-
-### Resource View Gantt with a Date-Time Schedule
+#### Resource View Gantt with a Date-Time Schedule
 
 To populate the Resource view Gantt with a date-time schedule:
 

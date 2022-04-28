@@ -77,7 +77,8 @@ namespace SfProgressBar
             InitializeComponent();      
                 
             SfCircularProgressBar circular = new SfCircularProgressBar();
-            circular.Progress = 50;  
+            circular.Progress = 50; 
+            circular.Width = 347; 
             grid.Children.Add(circular);
 
         }      
@@ -87,6 +88,8 @@ namespace SfProgressBar
 {% endtabs %}
 
 ![wpf Circular ProgressBar control added through code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
+
+The complete source for this demo can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CircularProgressbarSample-990574246)
 
 ## Theme
 
