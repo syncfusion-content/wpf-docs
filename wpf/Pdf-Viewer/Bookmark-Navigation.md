@@ -22,60 +22,79 @@ PDF Viewer control allows users to navigate to the bookmarks present in the load
 
 ## Programmatically navigate to a bookmark destination
 
-You can navigate to a desired bookmark destination using the `GotoBookmark(PdfBookmark)` method in `PdfDocumentView`. The target/destination bookmark should be provided as the parameter to this method. Refer to the following code sample.
+The user can navigate to the desired bookmark destination using the [GoToBookmark](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GoToBookmark_Syncfusion_Pdf_Interactive_PdfBookmark_) method of PDF Viewer after loading the document. You should provide the target/destination bookmark as the parameter to this method. Refer to the following code sample to retrieve the bookmarks collection in the document and navigate to a bookmark.
 
 {% tabs %}
 {% highlight c# %}
 
-//Loads the PDF document in PdfLoadedDocument
-PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
+void GoToBookmark()
+{
+    //Get the loadedDocument object from PDF Viewer
+    PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
 
-//Retrieves the bookmark collection from the loaded PDF document
-PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
+    //Get the complete bookmarks in the PDF.
+    PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
 
-//Navigate to the specified bookmark destination offset
-pdfDocumentView.GoToBookmark(bookmark[0]);
+    //In this example, we get the first bookmark in the PDF bookmarks collection at the index of 0.
+    PdfBookmark firstBookmark = bookmarks[0];
 
-{% endhighlight %}
-{% highlight VB %}
-
-Loads the PDF document in PdfLoadedDocument
-Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument(documentStream)
-
-`Retrieves the bookmark collection from the loaded PDF document
-Dim bookmark As PdfBookmarkBase = loadedDocument.Bookmarks
-
-`Navigate to the specified bookmark destination offset
-pdfDocumentView.GoToBookmark(bookmark(0))
+    //Navigates to the first bookmark present in the PDF.
+    pdfViewer.GoToBookmark(firstBookmark);
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-You can also perform the same in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the [GotoBookmark(PdfBookmark)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_GoToBookmark_Syncfusion_Pdf_Interactive_PdfBookmark_) method. Refer to the following code sample.
+The user can also navigate to the child bookmarks in the PDF Viewer. Please refer to the following code sample to retrieve the child bookmarks in the document and navigate to the bookmark.
 
 {% tabs %}
 {% highlight c# %}
 
-//Loads the PDF document in PdfLoadedDocument
-PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
+void GoToChildBookmark()
+{
+    //Get the loadedDocument object from PDF Viewer
+    PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
 
-//Retrieves the bookmark collection from the loaded PDF document
-PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
+    //Get the complete bookmarks in the PDF.
+    PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
 
-//Navigate to the specified bookmark destination offset
-pdfViewerControl.GoToBookmark(bookmark[0]);
+    //Gets the fourth bookmark in the PDF bookmarks collection at the index of 3.
+    PdfBookmark fourthBookmark = bookmarks[3];
+
+    //Check whether it has child bookmarks.
+    if (fourthBookmark.Count > 0)
+    {
+        //Navigates to the first child of the fourth bookmark in the PDF.
+        pdfViewer.GoToBookmark(bookmarks[3][0]);
+    }
+}
 
 {% endhighlight %}
-{% highlight VB %}
+{% endtabs %}
 
-`Loads the PDF document in PdfLoadedDocument
-Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument(documentStream)
+The user needs to call the above methods after the document is loaded. You can wire the [DocumentLoaded](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_DocumentLoaded) event of PDF Viewer to notify you when the document is loaded, as shown in the following code sample:
 
-`Retrieves the bookmark collection from the loaded PDF document
-Dim bookmark As PdfBookmarkBase = loadedDocument.Bookmarks
+{% tabs %}
+{% highlight c# %}
 
-`Navigate to the specified bookmark destination offset
-pdfViewerControl.GoToBookmark(bookmark(0))
+//Constructor
+public MainWindow()
+{
+    InitializeComponent();
+
+    //Wire the DocumentLoaded event of PDF Viewer
+    pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+
+    //Load the PDF file in PDF Viewer.
+    pdfViewer.Load("../../LayerAndBookmarks.pdf");
+}
+
+//Handle the DocumentLoaded event of PDF Viewer
+private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
+{
+    //Call the logic for bookmark navigation
+    GoToBookmark();
+}
 
 {% endhighlight %}
 {% endtabs %}

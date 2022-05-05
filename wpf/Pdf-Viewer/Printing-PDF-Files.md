@@ -305,5 +305,130 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Events
+
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) notifies you at the start, progress, and end of the printing through events such as [BeginPrint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_BeginPrint), [PrintProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrintProgress), and [EndPrint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_EndPrint), respectively.
+
+### Begin Print
+
+The [BeginPrint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_BeginPrint) event occurs when the print is called and before the first page of the document prints. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using Syncfusion.Windows.PdfViewer;
+
+namespace WPF_PDFViewer
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Wire the BeginPrint event
+            pdfViewer.BeginPrint += pdfViewer_BeginPrint;
+
+            //Load the PDF file
+            pdfViewer.Load("F Sharp Succinctly.pdf");
+
+            //Print the PDF silently to the default printer. 
+            pdfViewer.Print(true);
+        }
+        //Handle the BeginPrint Event
+        private void pdfViewer_BeginPrint(object sender, BeginPrintEventArgs args)
+        {
+            //Insert Your code Here.
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Print Progress
+
+The [PrintProgress](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_PrintProgress) event provides information on how much printing content you submitted to the printing subsystem. It provides the page information through the [PrintProgressEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PrintProgressEventArgs.html). The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using Syncfusion.Windows.PdfViewer;
+
+namespace WPF_PDFViewer
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Wire the PrintProgress event
+            pdfViewer.PrintProgress += pdfViewer_PrintProgress;
+
+            //Load the PDF file
+            pdfViewer.Load("F Sharp Succinctly.pdf");
+
+            //Print the PDF silently to the default printer. 
+            pdfViewer.Print(true);
+        }
+        //Handle the PrintProgress Event
+        private void pdfViewer_PrintProgress(object sender, PrintProgressEventArgs args)
+        {
+            //Provide the total number of pages in the PDF
+            int printCount = args.PageCount;
+
+            //Provide the currently printing page number
+            int currentPage = args.PageIndex;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### End Print
+
+The [EndPrint](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_EndPrint) event occurs when you have printed the last page of the document. It also happens if you cancel the printing process or an exception occurs during the printing process. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+using System.Windows;
+using Syncfusion.Windows.PdfViewer;
+
+namespace WPF_PDFViewer
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Wire the EndPrint event
+            pdfViewer.EndPrint += pdfViewer_EndPrint;
+
+            //Load the PDF file
+            pdfViewer.Load("F Sharp Succinctly.pdf");
+
+            //Print the PDF silently to the default printer. 
+            pdfViewer.Print(true);
+        }
+        //Handle the EndPrint Event
+        private void pdfViewer_EndPrint(object sender, EndPrintEventArgs args)
+        {
+            //Insert your code here
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
