@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
 7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio WPF Offline trial installer which is available in EXE and ZIP format.
 
-   ![License and downloads of Syncfusion Essential Studio](download-images/start-trial-download-offline-installer.png)
+   ![License and downloads of Syncfusion Essential Studio](download-images/start-trial-download-web-installer.png)
 
 ### Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
