@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment for Syncfusion WPF products
-description: Learn here about how to install and deploy the trial or license version of Syncfusion WPF components
+title: Downloading Syncfusion WPF web installer - Syncfusion
+description: Learn here about how to download Syncfusion WPF web installer from our Syncfusion website with license.
 platform: wpf
 control: Installation and Deployment
 documentation: ug
