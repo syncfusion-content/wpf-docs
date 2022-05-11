@@ -70,9 +70,12 @@ You should initiate an evaluation if you have already obtained our components th
 4. The most recent version of the installer will be downloaded from this page.
 5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
 6. You can download WPF licensed offline installer by going to More Downloads Options (element 3 in the screenshot below).
-7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
-	
+   
+7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
+
+   
+   ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-offline-installer.png)
 
 You can also refer to the [**Offline installer**](https://help.syncfusion.com/wpf/Installation/offline-installer/how-to-install) links for step-by-step installation guidelines.	
