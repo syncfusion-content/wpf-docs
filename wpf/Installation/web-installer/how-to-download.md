@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Downloading Syncfusion WPF web installer
+title: Downloading Syncfusion WPF web installer - Syncfusion
 description: Learn here about how to download Syncfusion WPF web installer from our Syncfusion website with license.
 platform: wpf
 control: Installation and Deployment

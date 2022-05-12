@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion WPF web installer
+title: Installing Syncfusion WPF web installer - Syncfusion
 description: Learn here about how to install Syncfusion WPF web installer after downloading from our Syncfusion website.
 platform: wpf
 control: Installation and Deployment
