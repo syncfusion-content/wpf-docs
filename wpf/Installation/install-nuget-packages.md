@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install Syncfusion WPF NuGet packages - Syncfusion
+title: Install Syncfusion WPF NuGet packages
 description: Learn here about how to install  Syncfusion WPF NuGet packages from Package manager and NuGet manager.
 platform: WPF
 control: Extension

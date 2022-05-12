@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Downloading Syncfusion WPF offline installer - Syncfusion
+title: Downloading Syncfusion WPF offline installer
 description: Learn here about how to download the Syncfusion WPF offline installer from our Syncfusion website with license.
 platform: wpf
 control: Installation and Deployment

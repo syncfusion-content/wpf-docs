@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Downloading Syncfusion WPF web installer - Syncfusion
+title: Downloading Syncfusion WPF web installer
 description: Learn here about how to download Syncfusion WPF web installer from our Syncfusion website with license.
 platform: wpf
 control: Installation and Deployment
@@ -36,9 +36,6 @@ Our 30-day trial can be downloaded in two ways.
  
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
 
-7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio WPF Offline trial installer which is available in EXE and ZIP format.
-
-   ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
 
 ### Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
