@@ -113,6 +113,8 @@ Since the DockingManager state persistence feature implemented in such a way tha
 
 When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection. if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, `false` value will be returned by the `LoadDockState` method of DockingManager.
 
+N> If we set CanSerialize to false for any item, then the serialized item count will not be same as actual children count, so that the LoadDockState will not work and return false.
+
 ## Various formats to Save / Load states
 
 DockingManager allows to save and load the DockStates of windows in DockingManager in different format.
