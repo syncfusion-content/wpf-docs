@@ -40,7 +40,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img1.jpeg"/>
+<img src="Rows_images/Rows_img1.jpeg" alt="WPF TreeGrid Rows Indicator"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -48,7 +48,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.jpeg"/>
+<img src="Rows_images/Rows_img2.jpeg" alt="WPF TreeGrid row which has current cell or selected item"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -56,7 +56,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.jpeg"/>
+<img src="Rows_images/Rows_img3.jpeg" alt="WPF TreeGrid row is being edited"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -64,7 +64,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.jpeg"/>
+<img src="Rows_images/Rows_img4.jpeg" alt="WPF TreeGrid row has errors"/>
 </td>
 <td>
 Denotes that the current row which has errors.
