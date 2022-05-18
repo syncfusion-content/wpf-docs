@@ -7,10 +7,10 @@ control: Installation and Deployment
 documentation: ug
 ---
 
-# Installation using Web Installer
+# Installing Syncfusion WPF web installer
 
 
-### Overview
+## Overview
 
 For the Essential Studio WPF product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
@@ -120,15 +120,8 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio W
 **Option 1: Uninstall the WPF using the Syncfusion WPF web installer**
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
-
-Open the Syncfusion Essential Studio WPF Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
-
-![Installer Extraction Wizard uninstall](images/Step-by-Step-Installation_img1.png)
 	
-The Syncfusion WPF Web Installer's welcome wizard will be displayed. Click the Next button
-	
-![Welcome wizard uninstall](images/Step-by-Step-Installation_img2.png)
-	
+   ![Platform Selection wizard Installed](images/Step-by-Step-Installation_img4.png)
 	
 **Option 2: Uninstall the WPF from Windows Control Panel**  
 	
