@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Installation using Offline Installer
+# Installing Syncfusion WPF offline installer
 
 
 ## Installing with UI   
