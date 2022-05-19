@@ -64,14 +64,17 @@ You should initiate an evaluation if you have already obtained our components th
 1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
 3. Click the Download (element 1 in the screenshot below) button to download the WPF web installer.
+4. The most recent version of the installer will be downloaded from this page.
+5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+6. You can download other platform\add-on installers by going to More Downloads Option (element 3 in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
    
-4. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/account/downloads) page (See the screenshot below.)
+7. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/account/downloads) page (See the screenshot below.)
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    
-5.After downloading, the Syncfusion WPF web installer can be unlocked using Syncfusion registered login credential.
+8. After downloading, the Syncfusion WPF web installer can be unlocked using Syncfusion registered login credential.
 
    N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
 
