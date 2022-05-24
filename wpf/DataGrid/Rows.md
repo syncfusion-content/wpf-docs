@@ -197,7 +197,7 @@ You can change the CurrentRowIndicator in the row header by customizing the cont
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Current Row Indicator in WPF DataGrid](Interactive-Features_images/wpf-datagrid-row-indicator.png)
+![WPF DataGrid Customizing Current Row Indicator](Interactive-Features_images/wpf-datagrid-row-indicator.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
 
@@ -290,7 +290,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endhighlight %}
 {% endtabs %}
 
-![Hide Header Row in WPF Details View Datagrid](Rows_images/wpf-datagrid-hide-header-row.png)
+![WPF Datagrid Hide Header Row in Details View](Rows_images/wpf-datagrid-hide-header-row.png)
 
 ## Freeze panes
 
