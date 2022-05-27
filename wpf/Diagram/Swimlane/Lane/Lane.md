@@ -201,6 +201,7 @@ The following code example explains how to define a lane header and its customiz
 
 ![Lane Header](../Swimlane-images/Swimlane_Lane_Header.PNG).
 
+N> Default RotateAngle value of LaneHeader's Annotation is 270 degrees. If you want to place the Annotation in the Horizontal direction, you have to set the RotateAngle of LaneHeader's Annotation as 360 degrees.
 
 ## Add and Remove the lane at runtime
 
