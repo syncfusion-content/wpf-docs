@@ -47,3 +47,7 @@ The following image shows how swapping the lane.
 The following image show children interaction in lane.
 
 ![Lane Children Interaction](../Swimlane-images/Child_Interaction.gif)
+
+## See Also
+
+* [How to restrict node’s dragging from native lane to other lanes in diagram?](https://www.syncfusion.com/kb/13208/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
