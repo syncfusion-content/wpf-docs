@@ -166,3 +166,7 @@ diagram.LineRoutingSettings.RoutingType = RoutingTypes.Classic;
 {% endtabs %}
 
 Find the [Connector interactions sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Interactions) to depict the connector interactions.
+
+## See Also
+ 
+* [How to restrict Connector's source/target changing from native Nodes to other Nodes?](https://www.syncfusion.com/kb/13210/how-to-restrict-connectors-source-target-changing-from-native-nodes-to-other-nodes-in-wpf)

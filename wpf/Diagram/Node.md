@@ -748,3 +748,7 @@ The `Constraints` property of node allows you to enable or disable certain featu
 * [Howto create port at runtime though SetTool?](https://www.syncfusion.com/kb/11446/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
 * [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
 * [How to drag node from one diagram to another diagram?](https://www.syncfusion.com/kb/6981/how-to-enable-drag-the-node-from-one-diagram-to-another-diagram-in-wpf-sfdiagram)
+
+* [How to restrict node’s dragging from native lane to other lanes in diagram?](https://www.syncfusion.com/kb/13208/how-to-restrict-nodes-dragging-from-native-lane-to-other-lanes-in-wpf-diagramsfdiagram)
+
+* [How to add ToolTip for Diagram objects of Node, NodePort in Diagram?](https://www.syncfusion.com/kb/13207/how-to-add-tooltip-for-diagram-objects-of-node-nodeport-in-wpf-diagramsfdiagram)

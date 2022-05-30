@@ -176,3 +176,4 @@ Diagram control provides support to change the selection handle display mode of 
 
 * [How to disable the selection in Diagram?](https://www.syncfusion.com/kb/5881/how-to-disable-the-selection-in-diagram)
 
+* [How to bind the SelectedItems property of SfDiagram to ViewModel property?](https://www.syncfusion.com/kb/13209/how-to-bind-the-selecteditems-property-of-sfdiagram-to-viewmodel-property)
