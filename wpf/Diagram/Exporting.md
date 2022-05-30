@@ -167,6 +167,71 @@ diagram.Export();
 
 ![Export Specific Region in WPF Diagram](Exporting_images/wpf-diagram-export-specific-region.png)
 
+### Change the size of the exported files
+
+SfDiagram provides the supports to change the size of the exported image using the [ImageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageSize) property of `ExportSettings` class.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the export settings with image size-->
+  <syncfusion:SfDiagram.ExportSettings>
+    <syncfusion:ExportSettings ImageSize="400,400"/>
+  </syncfusion:SfDiagram.ExportSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+
+//Initialize the export settings with image size
+ExportSettings settings = new ExportSettings()
+{  
+    ImageSize = new Size(400, 400),
+}; 
+   
+diagram.ExportSettings = settings;         
+//Method to export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
+
+### Change the strech options of the exported files
+
+SfDiagram provides the supports to strech the exported image within given image size using the [ImageShrunk](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageShrunk) property of `ExportSettings` class. The streching options are as follows:
+
+| ImageShrunk | Description |
+|---|---|
+| None | Exported image will not be streched |
+| Expand | Exported image will be expaned to the given image size |
+| Shrink| Exported image will be shrinked to the given image size |
+| BestFit| Exported image will be expaned/shrinked depends on given image size |
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the export settings with image shrunk option as expand-->
+  <syncfusion:SfDiagram.ExportSettings>
+    <syncfusion:ExportSettings ImageShrunk="Expand"/>
+  </syncfusion:SfDiagram.ExportSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+
+//Initialize the export settings with image shrunk options as expand
+ExportSettings settings = new ExportSettings()
+{  
+    ImageShrunk = ImageShrunk.Expand,
+}; 
+   
+diagram.ExportSettings = settings;         
+//Method to export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Change the background of the exported files
 
 SfDiagram provides the supports to change the background color of the exported image using the 'ExportBackground' property of `ExportSettings` class.
