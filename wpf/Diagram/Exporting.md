@@ -167,37 +167,6 @@ diagram.Export();
 
 ![Export Specific Region in WPF Diagram](Exporting_images/wpf-diagram-export-specific-region.png)
 
-### Export specific region of diagram
-
-SfDiagram provides the supports to export any specific region of the diagram by using the 'Clip' proerty of `ExportSettings` class.
-
-{% tabs %}
-{% highlight xaml %}
-<!--Initialize the SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram">
-  <!--Initialize the export settings with clipping area-->
-  <syncfusion:SfDiagram.ExportSettings>
-    <syncfusion:ExportSettings Clip="200, 200, 200, 300"/>
-  </syncfusion:SfDiagram.ExportSettings>
-</syncfusion:SfDiagram>
-{% endhighlight %}
-{% highlight C# %}
-
-//Initialize the export settings with clipping area
-ExportSettings settings = new ExportSettings()
-{  
-    Clip = new Rect(200,0,200,500),
-}; 
-   
-diagram.ExportSettings = settings;         
-//Method to export the SfDiagram
-diagram.Export();
-
-{% endhighlight %}
-{% endtabs %}
-
-![Export Specific Region in WPF Diagram](Exporting_images/wpf-diagram-export-specific-region.png)
-
 ### Change the size of the exported files
 
 SfDiagram provides the supports to change the size of the exported image using the [ImageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html#Syncfusion_UI_Xaml_Diagram_ExportSettings_ImageSize) property of `ExportSettings` class.
