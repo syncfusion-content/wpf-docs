@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Major Version to Service Pack Version| WPF | Syncfusion
-description: this section provides the information about upgrading the WPF projects from major version to service pack version
+title: Upgrading Syncfusion WPF installer to a latest version - Syncfusion
+description: Learn here about the how upgrade Syncfusion WPF installer to a latest version from website and control panel.
 platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WPF
+# Upgrading Syncfusion WPF installer to a latest version
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for this volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
