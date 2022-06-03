@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Transform latitude and longitude to pixel | SfMap | Wpf | Syncfusion
-description: Transform SfMap latitude and longitude value to pixel value and vice-versa by using GeopointToViewPoint and GetLatLonFromPoint methods. 
+description: Learn about Transforming latitude and longitude value to pixel value and vice-versa in Syncfusion WPF SfMap control,it's element and more. 
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-## Transform latitude and longitude value to pixel value and vice-versa
+# Transform latitude and longitude value to pixel value and vice-versa in WPF SfMap
 
 SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. This method is used for both ShapeFileLayer and ImageryLayer.
 
@@ -49,6 +49,6 @@ SfMap offers two utility methods to transform the pixel values to longitude and 
 
 {% endtabs %}
 
-![Set the center from screen point](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_Before.png)
+![WPF SfMap change center point before](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_Before.png)
 
-![Set the center from screen point](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_After.png)
+![WPF SfMap change center point after](Transform_latitude_and_longitude_value_to_pixel_images/Change_Center_Point_After.png)
