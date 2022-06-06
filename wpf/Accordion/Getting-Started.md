@@ -206,7 +206,7 @@ public class ViewModel
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
-        <wpf:EmployeeInfoViewModel></wpf:EmployeeInfoViewModel>
+        <wpf:ViewModel></wpf:ViewModel>
     </Window.DataContext>
     <Grid>
         <syncfusion:SfAccordion
