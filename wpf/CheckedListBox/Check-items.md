@@ -194,11 +194,11 @@ public class ViewModel : NotificationObject {
                              Margin="20">
         
                     <!--Binding the IsChecked property from ViewModel-->
-                    <syncfusion:CheckListBox.ItemContainerStyle>
+                    <syncfusion:CheckListBox.Resources>
                         <Style TargetType="syncfusion:CheckListBoxItem">
                             <Setter Property="IsChecked" Value="{Binding IsChecked}"/>
                         </Style>
-                    </syncfusion:CheckListBox.ItemContainerStyle>
+                    </syncfusion:CheckListBox.Resources>
 
                     <!--Disable the Virtualization to update the checked item-->
                     <syncfusion:CheckListBox.ItemsPanel>
