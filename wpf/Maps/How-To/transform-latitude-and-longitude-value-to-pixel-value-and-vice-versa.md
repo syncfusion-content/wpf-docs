@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# Transform latitude and longitude value to pixel value and vice-versa in WPF SfMap
+# Transform latitude and longitude to pixel in WPF SfMap
 
 SfMap offers two utility methods to transform the pixel values to longitude and latitude values and vice-versa. This method is used for both ShapeFileLayer and ImageryLayer.
 
