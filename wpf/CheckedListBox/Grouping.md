@@ -53,7 +53,7 @@ class ViewModel {
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:CheckListBox ItemsSource="{Binding Vegetables}" DisplayMemberPath="Name"
+<syncfusion:CheckListBox ItemsSource="{Binding Vegetables}"  DisplayMemberPath="Name"
                          Name="checkListBox">
     <syncfusion:CheckListBox.DataContext>
         <local:ViewModel></local:ViewModel>
