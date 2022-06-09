@@ -58,7 +58,7 @@ class ViewModel : NotificationObject {
             return checkedVegetables;
         }
         set {
-            checkedVegetables = value;
+            checkedVegetables = value ;
             this.RaisePropertyChanged("CheckedVegetables");
         }
     }
