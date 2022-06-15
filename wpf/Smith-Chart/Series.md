@@ -144,3 +144,32 @@ chart.Series.Add(series2);
 {% endtabs %}
 
 ![Series_img3](Series_images/Series_img3.png)
+
+## Customizing Series Data
+
+The property of *ArrangeByIndex* value is indicating whether to render the data based on the provided index order.the data points are 
+rendered based on the provided index when it is true otherwise, the data points are rendered by shorting based on its resistance value. 
+The default value is false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfSmithChart x:Name="SmithChart">
+   <syncfusion:LineSeries ArrangeByIndex="False">                
+   </syncfusion:LineSeries>
+</syncfusion:SfSmithChart>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+LineSeries series = new LineSeries();
+series.ArrangeByIndex = false;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Series_img3](Series_images/SmithChart_Series_Image.png)
