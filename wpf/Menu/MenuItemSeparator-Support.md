@@ -26,36 +26,24 @@ MenuItemSeparator can be added to an application, as shown in the following code
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Toolbar" xmlns:shared="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:Toolbar" 
+		xmlns:shared="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
         <shared:MenuAdv x:Name="Menu" Margin="10">
-
             <shared:MenuItemAdv Header="File"/>
-
             <shared:MenuItemAdv Header="Edit"/>
-
             <shared:MenuItemAdv Header="View">
-
                 <shared:MenuItemAdv Header="Immediate" IsCheckable="True" CheckIconType="CheckBox" IsChecked="True"/>
-
                 <shared:MenuItemAdv Header="CallStack" IsCheckable="True" CheckIconType="CheckBox" IsChecked="False"/>
-
                 <shared:MenuItemSeparator/>
-
                 <shared:MenuItemAdv Header="SolutionExplorer" IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" IsChecked="False"/>
-
                 <shared:MenuItemAdv Header="TeamExplorer" IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" IsChecked="True"/>
-
                 <shared:MenuItemAdv Header="ServerExplorer" IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" IsChecked="False"/>
-
             </shared:MenuItemAdv>
-
             <shared:MenuItemAdv Header="Project"/>
-
             <shared:MenuItemAdv Header="Build"/>
-
         </shared:MenuAdv>
     </Grid>
 </Window>
