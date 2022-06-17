@@ -153,7 +153,7 @@ By default, the data points are plotted by sorting them based on the resistance 
 
 {% highlight xaml %}
 
-<syncfusion:SfSmithChart x:Name="SmithChart">
+<syncfusion:SfSmithChart>
    <syncfusion:LineSeries ArrangeByIndex="True"/>                
 </syncfusion:SfSmithChart>
 
