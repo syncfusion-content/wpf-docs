@@ -147,15 +147,14 @@ chart.Series.Add(series2);
 
 ## Customizing data plotting
 
-By default, data points will be sorted and plotted based on the resistance value. By setting the [`ArrangeByIndex`]() property value as true, they can be plotted based on it's index value.
+By default, the data points are plotted by sorting them based on the resistance values and it can be plotted based on their index value as it is by setting the ArrangeByIndex property as true.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfSmithChart x:Name="SmithChart">
-   <syncfusion:LineSeries ArrangeByIndex="True">                
-   </syncfusion:LineSeries>
+   <syncfusion:LineSeries ArrangeByIndex="True"/>                
 </syncfusion:SfSmithChart>
 
 {% endhighlight %}
@@ -170,4 +169,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing series data](Series_images/SmithChartWPF_Seriesdata_Image1.png)
+![Customizing series data](Series_images/SmithChartWPF_ArrangeByIndex.png)
