@@ -170,4 +170,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing series data](Series_images/SmithChart_Seriesdata_Image.png)
+![Customizing series data](Series_images/SmithChartWPF_Seriesdata_Image1.png)
