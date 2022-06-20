@@ -23,6 +23,55 @@ To toggle the visibility of a group of PDF layers, click the eye icon associated
 
 ![WPF PDF Viewer Toggle the visibility of the group of layer](Layers_images/wpf-pdf-viewer-toggle-the-visibility-of-the-group-of-layer.png)
 
+## Programmatically Toggle the Visibility of a PDF Layer
+
+The WPF PDFViewer allows the user to toggle the visibility of a PDF [Layer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.Layer.html) using its [IsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.Layer.html#Syncfusion_Windows_PdfViewer_Layer_IsVisible) property. When this property is set to false, the layer becomes invisible, and when this property is set to true, the layer becomes visible. The following code sample explains how to use the [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) to retrieve the [Layers](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_PdfViewer_PdfDocumentView_Layers) collection and use the [Name](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.Layer.html#Syncfusion_Windows_PdfViewer_Layer_Name) of a PDF layer to toggle its visibility.
+
+{% tabs %}
+{% highlight C# %}
+
+//Retrieve a PDF document's layers collection using the PdfDocumentView. 
+LayerCollection layers = pdfDocumentView.Layers;  
+
+ //Get a layer by its name.              
+ for (int i = 0; i < layers.Count; i++) 
+ { 
+      if (layers[i].Name == "Layer2") 
+      { 
+         //Toggle the visibility of a Layer.  
+         if (layers[i].IsVisible) 
+            layers[i].IsVisible = false; 
+         else 
+            layers[i].IsVisible = true; 
+      } 
+ } 
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+'Retrieve a PDF document's layers collection using the PdfDocumentView. 
+Dim layers As LayerCollection = pdfDocumentView.Layers 
+'Get a layer by its name. 
+For i As Integer = 0 To layers.Count - 1 
+    If layers(i).Name = "Layer2" Then 
+      'Toggle the visibility of a Layer. 
+       If layers(i).IsVisible Then 
+           layers(i).IsVisible = False 
+       Else 
+           layers(i).IsVisible = True 
+       End If 
+     End If 
+Next
+
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, it can be achieved in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) by accessing the [Layers](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_Layers) collection.  
+
+N> The sample project for toggling a PDF Layer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/Layers/ToggleLayers) link. 
+
 ## Disabling the layers
 
 You can disable the display of the layers present in the PDF document by setting the EnableLayers property to false. Refer to the following code example.
