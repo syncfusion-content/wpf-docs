@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free Text Callout Annotation in WPF Pdf Viewer control | Syncfusion
-description: Learn about Text Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+description: Learn about Text Callout Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -163,7 +163,7 @@ The following image illustrates how to change the border thickness of the free t
 The border color of the selected free text callout annotation will be displayed in the border color row in the Appearance tab. Selecting the color will display the color palette control. Choosing a color from the color palette and clicking OK will apply the color to the text annotation.
 The following image illustrates how to change the border color of the free text callout annotation included.
 
-![Text Annotation](Annotation-images\FreeTextCallout-Annotation_3.png)
+![Text Annotation](Annotation-images\FreeTextCallout-Annotation_3.jpg)
 
 ##### Editing background color of the text
 
