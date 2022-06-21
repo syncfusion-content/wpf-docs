@@ -39,7 +39,7 @@ End Sub
 
 The following image shows the squiggled text in the PDF file.
 
- ![squiggly annotation](Annotation-images\Squiggly-Annotation-1.png)
+ ![squiggly annotation](Annotation-images\Squiggly-Annotation-1.jpg)
 
 ## Change the default color of the squiggly annotation
 
@@ -121,7 +121,7 @@ Squiggly annotation supports adding notes along with it, also it allows editing 
 
 We can add notes to the squiggly annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected squiggly annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-2.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-2.jpg)
 
 ### Properties
 
@@ -140,11 +140,11 @@ The color of the selected squiggly annotation will be displayed in the color row
 
 The following image illustrates how to change the color of the squiggly annotation included.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-3.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-3.jpg)
 
 The following image illustrated the change in color of the included squiggly annotation.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-4.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-4.jpg)
 
 ##### Editing opacity of the annotation
 
@@ -152,11 +152,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the squiggly annotation.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-5.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-5.jpg)
 
 The following image illustrates the change in opacity of the included squiggly annotation.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-6.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-6.jpg)
 
 #### General tab
 
@@ -164,7 +164,7 @@ We can add/edit the default Author and Subject to the included squiggly annotati
 
 The following image illustrates the change in Author and Subject of the included Squiggly annotation.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-7.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-7.jpg)
 
 ### Deleting an annotation
 
@@ -172,7 +172,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![squiggly annotation](Annotation-images\Squiggly-Annotation-8.png)
+![squiggly annotation](Annotation-images\Squiggly-Annotation-8.jpg)
 
 ## Notification when the squiggly has changed
 
