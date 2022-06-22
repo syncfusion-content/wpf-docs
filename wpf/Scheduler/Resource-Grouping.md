@@ -44,7 +44,7 @@ Group the resource order by `Date` or order by `Resource` using the [ResourceGro
 
 N> Group the resource order in the day, week, work week, timeline day, timeline week, timeline workweek and timeline month views.
 
-#### Resource
+### Resource
 
 The `ResourceGroupType` is set to `Resource` to group the number of dates under each resource.
 
@@ -60,7 +60,7 @@ schedule.ResourceGroupType = ResourceGroupType.Resource;
 
 ![WPF scheduler Resource Grouping](Resource_Images/Resource_DayView.png)
 
-#### Date
+### Date
 
 The `ResourceGroupType` is set to `Date` to group the number of resources under each date.
 
@@ -101,7 +101,7 @@ N>• When `ResourceIdCollection` is not added to 'ScheduleAppointment' then the
 • When `ResourceGroupType` is set as `None`, resource view will be collapsed and all scheduler DataSource events will be displayed.
 • Also add or remove the appointment resources dynamically.
 
-#### Multiple resource sharing
+### Multiple resource sharing
 
 Multiple resources can share the same events or appointments. If the appointment details are edited or updated, then the changes will reflect on all other shared instances simultaneously.
 

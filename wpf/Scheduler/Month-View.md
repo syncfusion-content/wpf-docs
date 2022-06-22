@@ -33,7 +33,7 @@ this.Schedule.MonthViewSettings.ShowAgendaView = true;
 * An agenda view displays text as **No Selected Date** until a date is selected.
 * If there is no appointment on a selected day, the agenda view displays the text as **No Events**.
 
-#### Agenda view height
+### Agenda view height
 Customize the month agenda view height from the Scheduler by using the [AgendaViewHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AgendaViewHeight) property of MonthViewSettings. By default, the agenda view will occupy 30% of the Scheduler height.
 
 {% tabs %}
@@ -149,7 +149,7 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 ## View header
 Customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
 
-#### View header text formatting
+### View header text formatting
 Customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
 
 {% tabs %}
@@ -169,7 +169,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
 
 ![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/wpf-scheduler-viewheader-text-formatting.png)
 
-#### View header height
+### View header height
 Customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of `MonthViewSettings`. By default, the `ViewHeaderHeight` is set to 50.
 
 {% tabs %}
@@ -189,7 +189,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 
 ![WPF Scheduler month view ViewHeaderHeight](Month-View_Images/wpf-scheduler-viewheader-height.png)
 
-#### View header appearance customization
+### View header appearance customization
 Customize the default appearance of the month view header by using the [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
