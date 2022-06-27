@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrading Syncfusion WPF Extensions| WPF | Syncfusion
-description: This section provides the information about upgrading the Syncfusion WPF extensions in extension manager UI.
+title: Upgrading Syncfusion WPF components to a latest version
+description: Learn here about the how upgrade Syncfusion WPF components to a latest version from NuGet manager and migrate.
 platform: WPF
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WPF Extensions
+# Upgrading Syncfusion WPF components to latest version
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension) for every Syncfusion Volume release, with exciting new features and Service Pack release with  major bug fixes in the volume releases. You can upgrade to our latest version from any installed Syncfusion version.
 
