@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Essential Studio WPF Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio WPF license key, how to generate the license key, how to register the license key, and more details.
+title: Overview of Syncfusion license registration - Syncfusion
+description: Learn here about how to register Syncfusion WPF license key for WPF application for license validation.
 platform: WPF
 control: Essential Studio
 documentation: ug
 ---
 
-# License Key Registration
+# Register Syncfusion License key in WPF application
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
