@@ -1,7 +1,7 @@
 ---
 layout: post
-title: License Key Errors of Essential Studio | Syncfusion 
-description: Learn here some information about how to fix Syncfusion license key related errors and more details.
+title: Overview of Syncfusion licensing errors - Syncfusion 
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion WPF applications.
 platform: WPF
 control: Essential Studio
 documentation: ug

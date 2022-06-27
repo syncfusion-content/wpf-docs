@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrade Syncfusion WPF NuGet packages| WPF Forms | Syncfusion
-description: This section provides the information about upgrade the Syncfusion WPF NuGet packages by using Package Manager UI, .NET CLI, and Package Manager Console.
+title: Upgrade Syncfusion WPF NuGet packages to a latest version
+description: Learn here about the how to upgrading Syncfusion WPF NuGet packages to a latest version using NuGet manager and package manager UI.
 platform: WPF
 control: Essential Studio
 documentation: ug
