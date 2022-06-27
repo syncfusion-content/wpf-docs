@@ -50,14 +50,14 @@ The squiggly color is red by default. However, you can change the default color 
 
 private void ChangeDefaultSquigglyColor()
 {
-    pdfViewer.SquigglyAnnotationSettings.SquigglyColor = System.Windows.Media.Colors.Blue;
+    pdfViewer.SquigglyAnnotationSettings.Color = System.Windows.Media.Colors.Blue;
 }
 
 {% endhighlight %}
 {% highlight vbnet %}
 
 Private Sub ChangeDefaultSquigglyColor()
-    pdfviewer.SquigglyAnnotationSettings.SquigglyColor = System.Windows.Media.Colors.Blue
+    pdfviewer.SquigglyAnnotationSettings.Color = System.Windows.Media.Colors.Blue
 End Sub
 
 {% endhighlight %}
