@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free Text Callout Annotation in WPF Pdf Viewer control | Syncfusion
-description: Learn about Text Callout Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
+description: Learn about Text Annotation support in Syncfusion Essential Studio WPF Pdf Viewer control, its elements and more.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -80,6 +80,39 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+## Modifying the end style of the free text callout annotation
+
+The end style of the free text callout annotation included can be either customized at the time of inclusion or after the inclusion. The following code shows how to set end style of the text annotation at the time of inclusion. The customization of end style after inclusion is explained in the later part.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    // To set the background end style of free text callout annotation
+    pdfViewer.AnnotationMode = Syncfusion.Windows.PdfViewer.PdfDocumentView.PdfViewerAnnotationMode.FreeText;
+    pdfViewer.FreeTextAnnotationSettings.Intent = Syncfusion.Pdf.Interactive.PdfAnnotationIntent.FreeTextCallout;
+    pdfViewer.FreeTextAnnotationSettings.CalloutLineEndingStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
+
+}
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    // To set the background end style of free text callout annotation
+    pdfViewer.AnnotationMode = Syncfusion.Windows.PdfViewer.PdfDocumentView.PdfViewerAnnotationMode.FreeText;
+    pdfViewer.FreeTextAnnotationSettings.Intent = Syncfusion.Pdf.Interactive.PdfAnnotationIntent.FreeTextCallout;
+    pdfViewer.FreeTextAnnotationSettings.CalloutLineEndingStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
+
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Setting the opacity of the free text callout annotation
 
@@ -150,6 +183,12 @@ Selecting properties from the context menu will display the Text Properties wind
 #### Appearance tab
 
 The border color, background color, border thickness,and opacity of the free text callout annotation can be edited using Appearance tab in the Free text callout Properties window.
+##### Editing end style of the free text callout annotation
+
+To modify the end style of the selected free text callout annotation, modify the value of the ComboBox control in the Appearance tab of free text callout annotation properties.
+The following image illustrates how to change the end style of the free text callout annotation.  
+
+![Text Annotation](Annotation-images\FreeTextCallout-Annotation_12.png)
 
 ##### Editing border thickness of the free text callout annotation
 
@@ -163,7 +202,7 @@ The following image illustrates how to change the border thickness of the free t
 The border color of the selected free text callout annotation will be displayed in the border color row in the Appearance tab. Selecting the color will display the color palette control. Choosing a color from the color palette and clicking OK will apply the color to the text annotation.
 The following image illustrates how to change the border color of the free text callout annotation included.
 
-![Text Annotation](Annotation-images\FreeTextCallout-Annotation_3.jpg)
+![Text Annotation](Annotation-images\FreeTextCallout-Annotation_3.png)
 
 ##### Editing background color of the text
 
@@ -241,13 +280,14 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
     System.Collections.ObjectModel.ReadOnlyCollection<System.Windows.Point> calloutPoints;
-    //Annotation's previous position and current position 
+    //Annotation's previous position, current position and callout points
     RectangleF currentBound = e.NewBounds;
-    RectangleF previousBound = e.NewBounds;
+    RectangleF previousBound = e.OldBounds;
     calloutPoints = e.CalloutPoints;
     PdfViewerFreeTextSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     PdfLineEndingStyle calloutEndStyle = settings.CalloutLineEndingStyle;
+    PdfAnnotationIntent calloutIntent = settings.Intent;
     string author = settings.Author;
     string subject = settings.Subject;
     string Text = settings.Text;
