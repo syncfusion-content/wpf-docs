@@ -99,6 +99,8 @@ private void Schedule_SelectionChanged(object sender, SelectionChangedEventArgs 
 {
     var newdate = e.NewValue.ToString();
     var olddate = e.OldValue.ToString();
+    var newResource = e.NewResource.ToString();
+    var oldResource = e.OldResource.ToString();
 }
 {% endhighlight %}
 {% endtabs %}
@@ -107,6 +109,8 @@ The [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
 
 * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangedEventArgs_OldValue) - gets an old selected date.
 * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangedEventArgs_NewValue)- gets a new selected date.
+* `OldResource` - gets a old selected resource details.
+* `newResource` - gets a new selected resource details.
 
 ## SelectionChanging 
 
@@ -116,6 +120,8 @@ The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.S
 
 * [OldValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_OldValue) - gets an old selected date.
 * [NewValue](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_SelectionChangingEventArgs_NewValue)- gets a new selected date.
+* `OldResource` - gets a old selected resource details.
+* `newResource` - gets a new selected resource details.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,6 +135,8 @@ private void Schedule_SelectionChanging(object sender, SelectionChangingEventArg
 {
     var newdate = e.NewValue.ToString();
     var olddate = e.OldValue.ToString();
+    var newResource = e.NewResource.ToString();
+    var oldResource = e.OldResource.ToString();
 }
 {% endhighlight %}
 {% endtabs %}
