@@ -33,6 +33,28 @@ Scheduler supports to edit the recurrence appointment. The following window will
 
 Handle the opening of recurrence popup window using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
 
+#### RecurringAppointmentBeginningEdit Event
+
+The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+
+`EditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `EditMode` is `User.`
+
+* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
+* Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
+* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
+
+{% tabs %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
+
+private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
+{
+	// Get or set the edit mode to perform the edit option
+	e.EditMode = RecurringAppointmentEditMode.Occurrence;
+}
+{% endhighlight %}
+{% endtabs%}
+
 #### AppointmentEditorOpening event
 When the appointment editor UI window is opened to add or update appointment, then Scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 
@@ -67,28 +89,6 @@ For example, To use custom appointment editor window instead of default appointm
 {% endtabs %}
 
 * `Resource` - gets the resource of an appointment under which the appointment is located. 
-
-#### RecurringAppointmentBeginningEdit Event
-
-The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
-
-`EditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `EditMode` is `User.`
-
-* User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
-* Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
-* Series: Edit the entire series in a recurrence appointment. The default editor content dialog will not appear.
-
-{% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
-this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
-
-private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
-{
-	// Get or set the edit mode to perform the edit option
-	var editMode = e.EditMode;
-}
-{% endhighlight %}
-{% endtabs%}
 
 ## Visible/Collapse the built-in editors in appointment editor window
 Programmatically visible or collapse the editors by setting the [AppointmentEditorOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html) property in [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html). By default, the value of [AppointmentEditorOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html) is set to `AppointmentEditorOptions.All` in the [SchedulerAppointmentEditorWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) that displays all the appointment editors. The following code shows how to collapse the `Reminder` and `Resource` editors by handling the[AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) event.
