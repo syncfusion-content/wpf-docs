@@ -28,11 +28,11 @@ Following licensing error will be shown if the license key is not registered in 
 
 <div id="license">
 
-This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/common/essential-studio/licensing/license-key">help topic</a> for more information 
+This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/wpf/licensing/overview">help topic</a> for more information 
 
 </div>
 
 ## See Also
 
-* [How to Generate Syncfusion WPF License Key?](https://help.syncfusion.com/wpf/licensing/generating-license-keys)
-* [How to Register Syncfusion License Key in WPF Application?](https://help.syncfusion.com/wpf/licensing/registering-license-keys)
+* [How to Generate Syncfusion WPF License Key?](https://help.syncfusion.com/wpf/licensing/how-to-generate)
+* [How to Register Syncfusion License Key in WPF Application?](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application)
