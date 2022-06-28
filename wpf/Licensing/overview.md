@@ -34,5 +34,5 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 ## See Also
 
-* [How to Generate Syncfusion WPF License Key?](https://help.syncfusion.com/wpf/licensing/generating-license-keys)
-* [How to Register Syncfusion License Key in WPF Application?](https://help.syncfusion.com/wpf/licensing/registering-license-keys)
+* [How to Generate Syncfusion WPF License Key?](https://help.syncfusion.com/wpf/licensing/how-to-generate)
+* [How to Register Syncfusion License Key in WPF Application?](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application)
