@@ -9,15 +9,15 @@ documentation: ug
 
 # Squiggly text in PDF files using WPF PDF Viewer
 
-The WPF PDF Viewer allows the user to squiggly text in PDF files and provides options to edit or remove the existing squigglies. The squiggly inclusion mode can be enabled via the toolbar UI or the API. Once the squiggly inclusion mode is activated, you can squiggly the required text by selecting it. To select the text, hold down the left mouse button and drag the mouse pointer over the text.
+The WPF PDF Viewer allows users to use squiggly text in PDF files and provides options to edit or remove the existing squigglies. The squiggly inclusion mode can be enabled via the toolbar UI or the API. Once the squiggly inclusion mode is activated, you can squiggle the required text by selecting it. Hold the left mouse button to select the text and drag the mouse pointer over the text.
 
 To enable the mode from UI, click the below icon in the default toolbar of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
 ![Squiggly icon in the WPF PDF Viewer toolbar](Annotation-images\squiggly-icon.png)
 
-N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. Based on the text information, we create text markup annotations in the PDF documents. Please refer to the [link](https://help.syncfusion.com/wpf/pdf-viewer/text-extraction-engines) for more details.
+N> From version 19.4.0.48, we have updated our default text extraction engine to PDFium for extracting text information from PDF documents. We create text markup annotations in the PDF documents based on the text information. Please refer to the [link](https://help.syncfusion.com/wpf/pdf-viewer/text-extraction-engines) for more details.
 
-If you are using [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control, or your own toolbar, or if you want enable the mode programmatically, change the [AnnotationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_AnnotationMode) property of PDF Viewer to **Squiggly**, as shown in the below code example.
+If you are using [PdfDocumentView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html) control, your own toolbar, or if you want enable the mode programmatically, change the [AnnotationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_AnnotationMode) property of PDF Viewer to **Squiggly**, as shown in the below code example.
 
 {% tabs %}
 {% highlight C# %}
@@ -43,7 +43,7 @@ The following image shows the squiggled text in the PDF file.
 
 ## Change the default color of the squiggly annotation
 
-The squiggly color is red by default. However, you can change the default color of the squiggly programmatically as shown in the following code example.
+The squiggly color is red by default. However, you can change the default color of the squiggly programmatically, as shown in the following code example:
 
 {% tabs %}
 {% highlight C# %}
@@ -65,7 +65,7 @@ End Sub
 
 ## Change the default opacity of the squiggly annotation
 
-The squiggly opacity value is 1 by default. However, you can change the default opacity of the squiggly programmatically as shown in the following code example.
+The squiggly opacity value is 1 by default. However, you can change the default opacity of the squiggly programmatically, as shown in the following code example:
 
 {% tabs %}
 {% highlight C# %}
@@ -87,7 +87,7 @@ End Sub
 
 ## Change the default author and subject of the squiggly annotation
 
-You can change the default author and subject of the squiggly annotation programmatically as shown in the following code example.
+You can change the default author and subject of the squiggly annotation programmatically, as shown in the following code example:
 
 {% tabs %}
 {% highlight C# %}
@@ -111,15 +111,15 @@ End Sub
 
 ## Working with included/existing squiggly annotations
 
-Squiggly annotation supports adding notes along with it, also it allows editing its color and opacity. To use these options, select the included/existing squiggly annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
+Squiggly annotation supports adding notes along with it and allows editing its color and opacity. To use these options, select the included/existing squiggly annotation and click right using the mouse. Over the selected annotation, a pop-up context menu will appear with the following options:
 
-*	Open Pop-up note
+*	Open the pop-up note
 *	Properties
 *	Delete
 
 ### Open Pop-up notes
 
-We can add notes to the squiggly annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected squiggly annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
+We can add notes to the squiggly annotation by choosing the Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected squiggly annotation. The added notes will be saved along with the PDF document; if there are any existing notes, they will be displayed here.
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-2.jpg)
 
@@ -132,29 +132,29 @@ Selecting properties from the context menu will display the Squiggly Properties 
 
 #### Appearance tab
 
-The color and opacity of the squiggly annotation can be edited using Appearance tab of Squiggly Properties window.
+The color and opacity of the squiggly annotation can be edited using the Appearance tab of the Squiggly Properties window.
 
 ##### Editing color of the annotation
 
-The color of the selected squiggly annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the squiggly annotation.
+The color of the selected squiggly annotation will be displayed in the color row in the appearance tab. Selecting the Color would display the color palette control, and choosing a color from the color palette and then clicking OK will apply the color to the squiggly annotation.
 
-The following image illustrates how to change the color of the squiggly annotation included.
+The following image illustrates how to change the color of the squiggly annotation included:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-3.jpg)
 
-The following image illustrated the change in color of the included squiggly annotation.
+The following image illustrated the change in color of the included squiggly annotation:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-4.jpg)
 
 ##### Editing opacity of the annotation
 
-The slider displayed in the Appearance tab will allow us to modify the opacity of the selected squiggly annotation. You can also modify the opacity of the selected squiggly annotation by giving numeric value in the opacity text box.
+The slider displayed in the Appearance tab will allow us to modify the opacity of the selected squiggly annotation. You can also modify the opacity of the selected squiggly annotation by giving numeric values in the opacity text box.
 
-The following image illustrates how to change the opacity of the squiggly annotation.
+The following image illustrates how to change the opacity of the squiggly annotation:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-5.jpg)
 
-The following image illustrates the change in opacity of the included squiggly annotation.
+The following image illustrates the change in opacity of the included squiggly annotation:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-6.jpg)
 
@@ -162,21 +162,21 @@ The following image illustrates the change in opacity of the included squiggly a
 
 We can add/edit the default Author and Subject to the included squiggly annotation using General tab of the Squiggly Properties window.
 
-The following image illustrates the change in Author and Subject of the included Squiggly annotation.
+The following image illustrates the change in Author and Subject of the included Squiggly annotation:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-7.jpg)
 
 ### Deleting an annotation
 
-Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
+Selecting the delete option from the context menu, displayed by right-clicking on the selected annotation, would delete the respective annotation from the PDF document.
 
-The following image illustrates how to delete the included annotation from the PDF document.
+The following image illustrates how to delete the included annotation from the PDF document:
 
 ![squiggly annotation](Annotation-images\Squiggly-Annotation-8.jpg)
 
 ## Notification when the squiggly has changed
 
-The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when an squiggly annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides the information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
+The [TextMarkupAnnotationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_TextMarkupAnnotationChanged) event occurs when an squiggly annotation is added, removed or modified. The [TextMarkupAnnotationChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html) provides information such as the [type](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.TextMarkupAnnotationChangedEventArgs.html#Syncfusion_Windows_PdfViewer_TextMarkupAnnotationChangedEventArgs_Type) of the annotation, the [action](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationChangedAction.html) performed, and the annotation properties.
 
 The following code shows how to wire and handle the event.
 
