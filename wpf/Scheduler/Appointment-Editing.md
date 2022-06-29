@@ -31,13 +31,13 @@ Scheduler supports to edit the recurrence appointment. The following window will
 
 ![WPF Scheduler editing recurrence appointment](Appointment-Editing_Images/Editing-Recurrence-Appointment.png)
 
-Handle the opening of recurrence popup window using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+Handle the opening of the recurrence popup window using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
 
 #### RecurringAppointmentBeginningEdit Event
 
-The opening of recurrence popup editor dialog can be handled using `EditMode` property in `RecurringAppointmentBeginningEditEventArgs` by handling `RecurringAppointmentBeginningEdit` event.
+The opening of the recurrence popup editor dialog can be handled using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
 
-`EditMode` : Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment. The default value of `EditMode` is `User.`
+`EditMode:` Gets or Sets the edit mode to perform the edit option to edit the occurrence or series for the recurrence appointment. The default value of the `EditMode` is `User.`
 
 * User: The default editor content dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
 * Occurrence: Edit the particular occurrence alone in a recurrence appointment. The default editor content dialog will not appear.
@@ -49,14 +49,14 @@ this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointme
 
 private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
 {
-	// Get or set the edit mode to perform the edit option
+	// Get or set the edit mode to perform the edit option.
 	e.EditMode = RecurringAppointmentEditMode.Occurrence;
 }
 {% endhighlight %}
 {% endtabs%}
 
 #### AppointmentEditorOpening event
-When the appointment editor UI window is opened to add or update appointment, then Scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
+When the appointment editor UI window is opened to add or update an appointment, then Scheduler notifies by the [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 
 [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOpeningEventArgs.html) has following members which provides the information for [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 
@@ -66,7 +66,7 @@ When the appointment editor UI window is opened to add or update appointment, th
 
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid the default appointment editor showing by enabling this property.
 
-For example, To use custom appointment editor window instead of default appointment editor window, handle `AppointmentEditorOpening` event.
+For example, to use a custom appointment editor window instead of the default appointment editor window, handle the `AppointmentEditorOpening` event.
 
 {% tabs %}
 {% highlight c# %}
