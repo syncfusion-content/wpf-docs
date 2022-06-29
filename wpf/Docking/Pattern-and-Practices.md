@@ -33,9 +33,9 @@ The adapter is simply a user control that contains DockingManager as its content
 
 {% highlight XAML %}
 
-<mvvm:dockingadapter itemssource="{Binding Workspaces}" activedocument="{Binding ActiveDocument,Mode=TwoWay}">
+<mvvm:DockingAdapter ItemsSource="{Binding Workspaces}" ActiveDocument="{Binding ActiveDocument,Mode=TwoWay}">
 
-</mvvm:dockingadapter>
+</mvvm:DockingAdapter>
 
 {% endhighlight %}
 
@@ -73,26 +73,26 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 {% highlight XAML %}
 
-<application.resources>
-    <datatemplate datatype="{x:Type local:Document}">
+<Application.Resources>
+    <DataTemplate DataType="{x:Type local:Document}">
+        <Grid>
+            <local:DocumentView>
+            </local:DocumentView>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:DocumentsViewModel}">
         <grid>
-            <local:documentview>
-            </local:documentview>
-        </grid>
-    </datatemplate>
-    <datatemplate datatype="{x:Type local:DocumentsViewModel}">
-        <grid>
-            <local:documentsview>
-            </local:documentsview>
-        </grid>
-    </datatemplate>
-    <datatemplate datatype="{x:Type local:PropertiesViewModel}">
-        <grid>
-            <local:propertiesview>
-            </local:propertiesview>
-        </grid>
-    </datatemplate>
-</application.resources>
+            <local:DocumentsView>
+            </local:DocumentsView>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local:PropertiesViewModel}">
+        <Grid>
+            <local:PropertiesView>
+            </local:PropertiesView>
+        </Grid>
+    </DataTemplate>
+</Application.Resources>
 
 {% endhighlight %}
 
