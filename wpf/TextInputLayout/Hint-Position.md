@@ -43,7 +43,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![Float](Images/Float.png)
+![WPF TextInputLayout Float](Images/Float.png)
 
 
 ## AlwaysFloat
@@ -75,7 +75,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![AlwaysFloat](Images/AlwaysFloat.png)
+![WPF TextInputLayout AlwaysFloat](Images/AlwaysFloat.png)
 
 
 ## None
@@ -108,7 +108,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![None type](Images/HintLabelHidden.png)
+![WPF TextInputLayout None type](Images/HintLabelHidden.png)
 
 
 
