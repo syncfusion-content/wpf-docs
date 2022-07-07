@@ -41,7 +41,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 {% endtabs %}
 
-![Focused color](Images/Focusedcolor.png)
+![WPF TextInputLayout Focused color](Images/Focusedcolor.png)
 
 N> The current active color of the text input layout can be obtained from the `ActiveForeground` property.
 
@@ -75,7 +75,7 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 {% endtabs %}
 
-![Unfocused color](Images/Unfocusedcolor.png)
+![WPF TextInputLayout Unfocused color](Images/Unfocusedcolor.png)
 
 ## Error color
 
@@ -108,7 +108,7 @@ inputLayout.InputView = new TextBox() { Text = "John/" };
 
 {% endtabs %}
 
-![Error color](Images/Errorcolor.png)
+![WPF TextInputLayout Error color](Images/Errorcolor.png)
 
 ## Container color
 The color of the container can be customized by setting the `ContainerBackground` property. It is applicable when the `ContainerType` property is set to `Filled` and `Outlined`.
@@ -140,7 +140,7 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 {% endtabs %}
 
-![Container color](Images/Containercolor.png)
+![WPF TextInputLayout Container color](Images/Containercolor.png)
 
 N> Container color is not applicable for `None' type.
 
@@ -173,7 +173,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![Outline radius](Images/outlineradius.png)
+![WPF TextInputLayout Outline radius](Images/outlineradius.png)
 
 >**NOTE**
 It is only applicable to the `Outlined` type of container.
