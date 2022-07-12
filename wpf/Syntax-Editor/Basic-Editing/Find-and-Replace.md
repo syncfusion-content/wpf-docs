@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Find and Replace
+# Find and Replace in WPF Syntax Editor
 
 Essential Edit WPF is now enhanced with Find and Replace feature, which enables users to search a text and replace it with an alternate text. Various options available in text search are:
 

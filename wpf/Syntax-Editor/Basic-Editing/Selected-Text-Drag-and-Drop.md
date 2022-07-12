@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Selected Text Drag and Drop
+# Selected Text Drag and Drop
 
 You can drag and drop the selected text in a paragraph by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_AllowDragDrop) property to true. By default, Dragging the selected text will perform a move operation, while dragging using the <kbd>Ctrl</kbd> key will perform a copy operation.
 
