@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-## Auto scale Y axis when X axis is zoomed
+# Auto scale Y axis when X axis is zoomed
 
  The auto scale of y-axis when the x-axis is zoomed can be achieved by the following steps:
 
