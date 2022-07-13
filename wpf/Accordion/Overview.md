@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF Accordion control | Syncfusion
-description: Learn here all about introduction of Syncfusion WPF Accordion (SfAccordion) control, its elements and more details.
+description: Learn here  all about introduction of Syncfusion WPF Accordion (SfAccordion) control, its elements and more details.
 platform: WPF
 control: SfAccordion
 documentation: ug
