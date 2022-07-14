@@ -55,15 +55,15 @@ public class PythonLanguage : ProceduralLanguageBase
 
     public PythonLanguage(EditControl control)
             : base(control)
-        {
-            this.Name = "Python";
-            this.FileExtension = "py";
-            this.ApplyColoring = true;
-            this.SupportsIntellisense = false;
-            this.SupportsOutlining = true;
-            this.TextForeground = Brushes.Black;
-            this.blocksStack = new Stack<BlockListener>();
-        }
+    {
+        this.Name = "Python";
+        this.FileExtension = "py";
+        this.ApplyColoring = true;
+        this.SupportsIntellisense = false;
+        this.SupportsOutlining = true;
+        this.TextForeground = Brushes.Black;
+        this.blocksStack = new Stack<BlockListener>();
+    }
 
 }
 
@@ -89,13 +89,13 @@ N> EditControl uses this collection to fetch the color to be applied to the toke
 
 {% highlight XAML %}
 
-    <syncfusion:FormatsCollection x:Key="pythonLanguageFormats">
-        <syncfusion:EditFormats Foreground="Green" FormatName="CommentFormat" />
-        <syncfusion:EditFormats Foreground="Black" FormatName="MultilineCommentFormat" />
-        <syncfusion:EditFormats Foreground="Blue" FormatName="KeywordFormat" />
-        <syncfusion:EditFormats Foreground="Navy" FormatName="OperatorFormat" />
-        <syncfusion:EditFormats Foreground="Gray" FormatName="LiteralsFormat" />
-    </syncfusion:FormatsCollection>
+<syncfusion:FormatsCollection x:Key="pythonLanguageFormats">
+    <syncfusion:EditFormats Foreground="Green" FormatName="CommentFormat" />
+    <syncfusion:EditFormats Foreground="Black" FormatName="MultilineCommentFormat" />
+    <syncfusion:EditFormats Foreground="Blue" FormatName="KeywordFormat" />
+    <syncfusion:EditFormats Foreground="Navy" FormatName="OperatorFormat" />
+    <syncfusion:EditFormats Foreground="Gray" FormatName="LiteralsFormat" />
+</syncfusion:FormatsCollection>
 
 {% endhighlight %}
 
@@ -111,86 +111,86 @@ N> This collection will be applied to Lexem property of the custom language.Edit
 
 {% highlight XAML %}
 
-    <syncfusion:LexemCollection x:Key="pythonLanguageLexems">
-        <syncfusion:Lexem StartText="class \w+[\s:\w,()]+" IsRegex="True" IsMultiline="True" ContainsEndText="True" LexemType="CodeSnippet" EndText="\r\n" ScopeLevel="Class" ShowAlternateIntellisenseText="True"  IntellisenseDisplayText="class"/>
-        <syncfusion:Lexem StartText="def \w+[\s:\w,()]+" IsRegex="True" IsMultiline="True" ContainsEndText="True" LexemType="CodeSnippet" EndText="\r\n" ScopeLevel="Member" ShowAlternateIntellisenseText="True"  IntellisenseDisplayText="def"/>
-        <syncfusion:Lexem StartText="#" EndText="\r\n" IsMultiline="False" ContainsEndText="True" LexemType="Comment" FormatName="CommentFormat"/>
-        <syncfusion:Lexem StartText="&quot;&quot;&quot;" EndText="&quot;&quot;&quot;" IsMultiline="True" ContainsEndText="True" LexemType="Comment" FormatName="CommentFormat" />
-        <syncfusion:Lexem StartText="and" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="as" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="assert" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="break" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="class" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="continue" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="def" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="del" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="elif" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="else" ContainsEndText="False" IsMultiline="False"  LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="except" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="exec" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="finally" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="for" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="from" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="global" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="if" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="import" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="in" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="is" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="lambda" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="not" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="or" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="pass" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="print" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="raise" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="return" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="try" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="while" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="with" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="yeild" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
-        <syncfusion:Lexem StartText="&quot;" EndText="&quot;" IsMultiline="False" LexemType="Literals" FormatName="LiteralsFormat"/>
-        <syncfusion:Lexem StartText="(" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText=")" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="[" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="]" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="\{" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="\}" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="." ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="," ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText=";" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText=":" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="+" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="-" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="/" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="%" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="^" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="*" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="**" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="|" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="|=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&amp;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="~" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&lt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="==" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="!=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&lt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&gt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="+=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="-=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="*=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="%=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="/=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&amp;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="^=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="|=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&lt;&lt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&lt;&lt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="=&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&lt;&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="&gt;&gt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-        <syncfusion:Lexem StartText="**;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
-    </syncfusion:LexemCollection>
+<syncfusion:LexemCollection x:Key="pythonLanguageLexems">
+    <syncfusion:Lexem StartText="class \w+[\s:\w,()]+" IsRegex="True" IsMultiline="True" ContainsEndText="True" LexemType="CodeSnippet" EndText="\r\n" ScopeLevel="Class" ShowAlternateIntellisenseText="True"  IntellisenseDisplayText="class"/>
+    <syncfusion:Lexem StartText="def \w+[\s:\w,()]+" IsRegex="True" IsMultiline="True" ContainsEndText="True" LexemType="CodeSnippet" EndText="\r\n" ScopeLevel="Member" ShowAlternateIntellisenseText="True"  IntellisenseDisplayText="def"/>
+    <syncfusion:Lexem StartText="#" EndText="\r\n" IsMultiline="False" ContainsEndText="True" LexemType="Comment" FormatName="CommentFormat"/>
+    <syncfusion:Lexem StartText="&quot;&quot;&quot;" EndText="&quot;&quot;&quot;" IsMultiline="True" ContainsEndText="True" LexemType="Comment" FormatName="CommentFormat" />
+    <syncfusion:Lexem StartText="and" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="as" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="assert" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="break" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="class" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="continue" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="def" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="del" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="elif" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="else" ContainsEndText="False" IsMultiline="False"  LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="except" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="exec" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="finally" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="for" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="from" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="global" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="if" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="import" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="in" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="is" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="lambda" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="not" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="or" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="pass" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="print" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="raise" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="return" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="try" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="while" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="with" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="yeild" ContainsEndText="False" IsMultiline="False" LexemType="Keyword"  FormatName="KeywordFormat"/>
+    <syncfusion:Lexem StartText="&quot;" EndText="&quot;" IsMultiline="False" LexemType="Literals" FormatName="LiteralsFormat"/>
+    <syncfusion:Lexem StartText="(" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText=")" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="[" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="]" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="\{" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="\}" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="." ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="," ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText=";" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText=":" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="+" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="-" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="/" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="%" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="^" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="*" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="**" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="|" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="|=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&amp;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="~" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&lt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="==" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="!=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&lt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&gt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="+=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="-=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="*=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="%=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="/=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&amp;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="^=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="|=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&lt;&lt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&lt;&lt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="=&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&lt;&gt;" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="&gt;&gt;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+    <syncfusion:Lexem StartText="**;=" ContainsEndText="False" IsMultiline="False" LexemType="Operator" FormatName="OperatorFormat"/>
+</syncfusion:LexemCollection>
 
 {% endhighlight %}
 
@@ -202,17 +202,16 @@ Initialize Lexem and Formats properties of PythonLanguage by using the following
 
 {% highlight C# %}
 
-    public Window1()
-    {
-        InitializeComponent();
-        Edit1.DocumentLanguage = Languages.Custom;
-        Edit1.DocumentSource = "../../Source.py";
-        PythonLanguage customLanguage = new PythonLanguage(Edit1);
-        customLanguage.Lexem = this.Resources["pythonLanguageLexems"] as LexemCollection;
-        customLanguage.Formats = this.Resources["pythonLanguageFormats"] as FormatsCollection;
-        Edit1.CustomLanguage = customLanguage;
-        fontlst.SelectedItem = new FontFamily("Verdana");
-    }
+public Window1()
+{
+    InitializeComponent();
+    Edit1.DocumentLanguage = Languages.Custom;
+    Edit1.DocumentSource = "../../Source.py";
+    PythonLanguage customLanguage = new PythonLanguage(Edit1);
+    customLanguage.Lexem = this.Resources["pythonLanguageLexems"] as LexemCollection;
+    customLanguage.Formats = this.Resources["pythonLanguageFormats"] as FormatsCollection;
+    Edit1.CustomLanguage = customLanguage;
+}
 
 {% endhighlight %}
 
@@ -316,241 +315,241 @@ List (LineItemExpandInformation)<br/><br/></td></tr>
 
 Here we proceed to override the ApplyExpandCollapse method of LanguageBase class to apply custom outlining. In this method, use LanguageBlocks property from argument as reference for Block definitions. These block definitions are generated using the Lexem property.
 
-    public class PythonLanguage : ProceduralLanguageBase
-    {
-        #region Local Variables
+public class PythonLanguage : ProceduralLanguageBase
+{
+    #region Local Variables
 
-        /// <summary>
-        /// Local variable to hold the current block information
-        /// </summary>
-        BlockListener currentListener = null;
+    /// <summary>
+    /// Local variable to hold the current block information
+    /// </summary>
+    BlockListener currentListener = null;
 
-        /// <summary>
-        /// Local stack instance to hold all the blocks that were encountered previously when a block is started.
-        /// </summary>
-        Stack<BlockListener> blocksStack = null;
+    /// <summary>
+    /// Local stack instance to hold all the blocks that were encountered previously when a block is started.
+    /// </summary>
+    Stack<BlockListener> blocksStack = null;
 
-        /// <summary>
-        /// Local variable to hold ILexem of type comments.
-        /// </summary>
-        IEnumerable<ILexem> commentsCollection = null;
+    /// <summary>
+    /// Local variable to hold ILexem of type comments.
+    /// </summary>
+    IEnumerable<ILexem> commentsCollection = null;
 
-        /// <summary>
-        /// Local variable to stor previous block end line.
-        /// </summary>
-        int lastBlockEndLine = 0;
+    /// <summary>
+    /// Local variable to stor previous block end line.
+    /// </summary>
+    int lastBlockEndLine = 0;
 
-        #endregion
+    #endregion
 
-        #region Initialization
+    #region Initialization
 
-        /// <summary>
-        /// Initializes a new instance of the <see
-        /// cref="T:IronPythonDemo.PythonLanguage">PythonLanguage</see> class.
-        /// </summary>
-        /// <param name="control">represents the EditControl to which to which this instance
-        /// has to be hooked</param>
-        public PythonLanguage(EditControl control)
+    /// <summary>
+    /// Initializes a new instance of the <see
+    /// cref="T:IronPythonDemo.PythonLanguage">PythonLanguage</see> class.
+    /// </summary>
+    /// <param name="control">represents the EditControl to which to which this instance
+    /// has to be hooked</param>
+    public PythonLanguage(EditControl control)
             : base(control)
+    {
+        this.Name = "Python";
+        this.FileExtension = "py";
+        this.ApplyColoring = true;
+        this.SupportsIntellisense = false;
+        this.SupportsOutlining = true;
+        this.TextForeground = Brushes.Black;
+        this.blocksStack = new Stack<BlockListener>();
+    }
+
+    #endregion
+
+    #region Overrides
+
+    /// <summary>
+    /// Initializing the commentsCollection variable when the Lexem property gets
+    /// changed.
+    /// </summary>
+    /// <param name="e">represents the DependencyPropertyChangedEventArgs</param>
+    protected override void OnLexemsChanged(DependencyPropertyChangedEventArgs e)
+    {
+        base.OnLexemsChanged(e);
+        commentsCollection = this.Lexem.OfType<ILexem>().Where(lex => lex.LexemType == EditTokenType.Comment);
+    }
+
+    /// <summary>
+    /// Override method of ApplyExpandCollapse to perform any initialization before Expand collapse is applied
+    /// interactivity.
+    /// </summary>
+    protected override void InitializeApplyExpandCollapse()
+    {
+        currentListener = null;
+    }
+
+    /// <summary>
+    /// Override method of ApplyExpandCollapse to perform language specific expand
+    /// options. This method runs in a background thread to provided better
+    /// interactivity.
+    /// </summary>
+    /// <param name="args">represents the instance of ApplyExpandCollapseArgs contains
+    /// all necessary information related to each line</param>
+    protected override void ApplyExpandCollapse(ApplyExpandCollapseArgs args)
+    {
+        bool createListener = false;
+        if (args.LanguageBlocks == null)
         {
-            this.Name = "Python";
-            this.FileExtension = "py";
-            this.ApplyColoring = true;
-            this.SupportsIntellisense = false;
-            this.SupportsOutlining = true;
-            this.TextForeground = Brushes.Black;
-            this.blocksStack = new Stack<BlockListener>();
+            return;
         }
-
-        #endregion
-
-        #region Overrides
-
-        /// <summary>
-        /// Initializing the commentsCollection variable when the Lexem property gets
-        /// changed.
-        /// </summary>
-        /// <param name="e">represents the DependencyPropertyChangedEventArgs</param>
-        protected override void OnLexemsChanged(DependencyPropertyChangedEventArgs e)
+        var selblocks = from blk in args.LanguageBlocks
+                         where ((!blk.IsRegex && args.ExpandInformation.Text.Trim().StartsWith(blk.BlockStart) || (blk.IsRegex && Regex.Match(args.ExpandInformation.Text, blk.BlockStart).Success)))
+                        select blk;
+        if (selblocks.Count() > 0)
         {
-            base.OnLexemsChanged(e);
-            commentsCollection = this.Lexem.OfType<ILexem>().Where(lex => lex.LexemType == EditTokenType.Comment);
-        }
 
-        /// <summary>
-        /// Override method of ApplyExpandCollapse to perform any initialization before Expand collapse is applied
-        /// interactivity.
-        /// </summary>
-        protected override void InitializeApplyExpandCollapse()
-        {
-            currentListener = null;
-        }
-
-        /// <summary>
-        /// Override method of ApplyExpandCollapse to perform language specific expand
-        /// options. This method runs in a background thread to provided better
-        /// interactivity.
-        /// </summary>
-        /// <param name="args">represents the instance of ApplyExpandCollapseArgs contains
-        /// all necessary information related to each line</param>
-        protected override void ApplyExpandCollapse(ApplyExpandCollapseArgs args)
-        {
-            bool createListener = false;
-            if (args.LanguageBlocks == null)
+            var block = selblocks.ElementAt(0);
+            if (CheckCommentBlock(args.ExpandInformation))
             {
-                return;
-            }
-            var selblocks = from blk in args.LanguageBlocks
-                            where ((!blk.IsRegex && args.ExpandInformation.Text.Trim().StartsWith(blk.BlockStart) || (blk.IsRegex && Regex.Match(args.ExpandInformation.Text, blk.BlockStart).Success)))
-                            select blk;
-            if (selblocks.Count() > 0)
-            {
-
-                var block = selblocks.ElementAt(0);
-                if (CheckCommentBlock(args.ExpandInformation))
-                {
-                    createListener = true;
-                }
-
-                if (createListener)
-                {
-                    if (currentListener != null)
-                    {
-                        if (currentListener.BlockStart.StartsWith("class") && block.BlockStart.StartsWith("class"))
-                        {
-                            var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
-                            parentLineItem.EndLine = args.Source.IndexOf(args.ExpandInformation) - 1;
-                            currentListener.EndLineNumber = parentLineItem.EndLine;
-                            lastBlockEndLine = parentLineItem.EndLine;
-                        }
-                        else
-                        {
-                            args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
-                            args.ExpandInformation.StartLine = args.Source.IndexOf(args.ExpandInformation) + 2;
-                            if (blocksStack == null)
-                            {
-                                blocksStack = new Stack<BlockListener>();
-                            }
-                            blocksStack.Push(currentListener);
-                        }
-                    }
-                    currentListener = new BlockListener()
-                    {
-                        BlockStart = block.BlockStart,
-                        BlockEnd = block.BlockEnd,
-                        IsPreprocessor = block.IsPreprocessor,
-                        ParentLineNumber = args.Source.IndexOf(args.ExpandInformation) + 1,
-                        IsRegex = block.IsRegex,
-                        CheckParentType = block.CheckParentType,
-                        ParentLexemType = block.ParentLexemType,
-                        LexemType = block.LexemType,
-                        ScopeLevel = block.ScopeLevel
-                    };
-
-                    args.ExpandInformation.ContainsPreprocessor = block.IsPreprocessor;
-                    args.ExpandInformation.PreprocessorText = block.IsPreprocessor ? args.ExpandInformation.Text.Trim().Substring(block.BlockStart.Length).Trim() : string.Empty;
-                    args.ExpandInformation.ContainsLines = true;
-                    int tempInd = args.Source.IndexOf(args.ExpandInformation);
-                    args.ExpandInformation.StartLine = block.IsPreprocessor ? tempInd + 1 : tempInd + 2;
-                }
-                else if (currentListener != null)
-                {
-                    args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
-                    args.ExpandInformation.IsExpanded = true;
-                    args.ExpandInformation.ContainsLines = false;
-                }
-                else
-                {
-                    args.ExpandInformation.ParentLineNumber = -1;
-                    args.ExpandInformation.IsExpanded = true;
-                    args.ExpandInformation.ContainsLines = false;
-                }
-            }
-            else if (currentListener != null)
-            {
-                args.ExpandInformation.ContainsLines = false;
-                args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
-                if (args.ExpandInformation.Text.Trim() == string.Empty)
-                {
-                    var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
-                    parentLineItem.EndLine = args.Source.IndexOf(args.ExpandInformation);
-                    currentListener.EndLineNumber = parentLineItem.EndLine;
-                    lastBlockEndLine = parentLineItem.EndLine;
-                    currentListener = null;
-                    if (blocksStack.Count > 0)
-                    {
-                        currentListener = blocksStack.Pop();
-                    }
-                }
-                else if (currentListener.BlockEnd == null)
-                {
-                    currentListener = null;
-                    if (blocksStack.Count > 0)
-                    {
-                        currentListener = blocksStack.Pop();
-                    }
-                }
-            }
-            else
-            {
-                args.ExpandInformation.ContainsLines = false;
-                if (!args.ExpandInformation.IsExpanded)
-                {
-                    args.ExpandInformation.IsExpanded = true;
-                    args.ExpandInformation.ToggleExpansion = true;
-                }
-                args.ExpandInformation.IsExpanded = true;
-                args.ExpandInformation.ContainsLines = false;
+                createListener = true;
             }
 
-            if (args.Source.IndexOf(args.ExpandInformation) == args.Source.Count - 1)
+            if (createListener)
             {
                 if (currentListener != null)
                 {
-                    var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
-                    parentLineItem.EndLine = lastBlockEndLine;
-                    currentListener.EndLineNumber = parentLineItem.EndLine;
+                    if (currentListener.BlockStart.StartsWith("class") && block.BlockStart.StartsWith("class"))
+                    {
+                        var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
+                            parentLineItem.EndLine = args.Source.IndexOf(args.ExpandInformation) - 1;
+                            currentListener.EndLineNumber = parentLineItem.EndLine;
+                            lastBlockEndLine = parentLineItem.EndLine;
+                    }
+                    else
+                    {
+                        args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
+                        args.ExpandInformation.StartLine = args.Source.IndexOf(args.ExpandInformation) + 2;
+                        if (blocksStack == null)
+                        {
+                            blocksStack = new Stack<BlockListener>();
+                        }
+                        blocksStack.Push(currentListener);
+                    }
+                }
+                currentListener = new BlockListener()
+                {
+                    BlockStart = block.BlockStart,
+                    BlockEnd = block.BlockEnd,
+                    IsPreprocessor = block.IsPreprocessor,
+                    ParentLineNumber = args.Source.IndexOf(args.ExpandInformation) + 1,
+                    IsRegex = block.IsRegex,
+                    CheckParentType = block.CheckParentType,
+                    ParentLexemType = block.ParentLexemType,
+                    LexemType = block.LexemType,
+                    ScopeLevel = block.ScopeLevel
+                };
+
+                args.ExpandInformation.ContainsPreprocessor = block.IsPreprocessor;
+                args.ExpandInformation.PreprocessorText = block.IsPreprocessor ? args.ExpandInformation.Text.Trim().Substring(block.BlockStart.Length).Trim() : string.Empty;
+                args.ExpandInformation.ContainsLines = true;
+                int tempInd = args.Source.IndexOf(args.ExpandInformation);
+                args.ExpandInformation.StartLine = block.IsPreprocessor ? tempInd + 1 : tempInd + 2;
+            }
+            else if (currentListener != null)
+            {
+                args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
+                args.ExpandInformation.IsExpanded = true;
+                args.ExpandInformation.ContainsLines = false;
+            }
+            else
+            {
+                args.ExpandInformation.ParentLineNumber = -1;
+                args.ExpandInformation.IsExpanded = true;
+                args.ExpandInformation.ContainsLines = false;
+            }
+        }
+        else if (currentListener != null)
+        {
+            args.ExpandInformation.ContainsLines = false;
+            args.ExpandInformation.ParentLineNumber = currentListener.ParentLineNumber;
+            if (args.ExpandInformation.Text.Trim() == string.Empty)
+            {
+                var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
+                parentLineItem.EndLine = args.Source.IndexOf(args.ExpandInformation);
+                currentListener.EndLineNumber = parentLineItem.EndLine;
+                lastBlockEndLine = parentLineItem.EndLine;
+                currentListener = null;
+                if (blocksStack.Count > 0)
+                {
+                    currentListener = blocksStack.Pop();
+                }
+            }
+            else if (currentListener.BlockEnd == null)
+            {
+                currentListener = null;
+                if (blocksStack.Count > 0)
+                {
+                    currentListener = blocksStack.Pop();
                 }
             }
         }
-
-        #endregion
-
-        #region Helper Methods
-
-        /// <summary>
-        /// Helper method to check if the line starts with or single line or multiline
-        /// comment
-        /// </summary>
-        /// <param name="item">represents the LineItemExpandInformation instance.</param>
-        /// <returns>
-        /// a bool value indicating if the line starts with comment type of lexem.
-        /// </returns>
-        private bool CheckCommentBlock(LineItemExpandInformation item)
+        else
         {
-            if (item.LineStartBlock != null && item.LineStartBlock.LexemType == EditTokenType.Comment)
+            args.ExpandInformation.ContainsLines = false;
+            if (!args.ExpandInformation.IsExpanded)
+            {
+                args.ExpandInformation.IsExpanded = true;
+                args.ExpandInformation.ToggleExpansion = true;
+            }
+            args.ExpandInformation.IsExpanded = true;
+            args.ExpandInformation.ContainsLines = false;
+        }
+
+        if (args.Source.IndexOf(args.ExpandInformation) == args.Source.Count - 1)
+        {
+            if (currentListener != null)
+            {
+                var parentLineItem = args.Source[currentListener.ParentLineNumber - 1];
+                parentLineItem.EndLine = lastBlockEndLine;
+                currentListener.EndLineNumber = parentLineItem.EndLine;
+            }
+        }
+    }
+
+    #endregion
+
+    #region Helper Methods
+
+    /// <summary>
+    /// Helper method to check if the line starts with or single line or multiline
+    /// comment
+    /// </summary>
+    /// <param name="item">represents the LineItemExpandInformation instance.</param>
+    /// <returns>
+    /// a bool value indicating if the line starts with comment type of lexem.
+    /// </returns>
+    private bool CheckCommentBlock(LineItemExpandInformation item)
+    {
+        if (item.LineStartBlock != null && item.LineStartBlock.LexemType == EditTokenType.Comment)
+        {
+            return false;
+        }
+
+        if (commentsCollection != null)
+        {
+            LineItemExpandInformation tempItem = item;
+            RegexOptions options = this.CaseSensitive ? RegexOptions.None : RegexOptions.IgnoreCase;
+            var blocks = commentsCollection.Where(lexem => (!lexem.IsMultiline && tempItem.Text.Trim().StartsWith(lexem.StartText)) || (lexem.IsMultiline && tempItem.Text.Trim().StartsWith(lexem.StartText) &&
+                (tempItem.Text.IndexOf(lexem.EndText) == -1 || tempItem.Text.IndexOf(lexem.EndText) == tempItem.Text.Length - lexem.EndText.Length)));
+            if (blocks.Count() > 0)
             {
                 return false;
             }
-
-            if (commentsCollection != null)
-            {
-                LineItemExpandInformation tempItem = item;
-                RegexOptions options = this.CaseSensitive ? RegexOptions.None : RegexOptions.IgnoreCase;
-                var blocks = commentsCollection.Where(lexem => (!lexem.IsMultiline && tempItem.Text.Trim().StartsWith(lexem.StartText)) || (lexem.IsMultiline && tempItem.Text.Trim().StartsWith(lexem.StartText) &&
-                    (tempItem.Text.IndexOf(lexem.EndText) == -1 || tempItem.Text.IndexOf(lexem.EndText) == tempItem.Text.Length - lexem.EndText.Length)));
-                if (blocks.Count() > 0)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-
         }
 
-        #endregion
+        return true;
+
     }
+    
+    #endregion
+}
 
 The following screenshot displays Custom Language Demo Window.
 
