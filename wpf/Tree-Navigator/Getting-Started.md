@@ -43,6 +43,8 @@ sfToolkit.Items.Add(metroStudio);
 {% endhighlight %}
 {%endtabs%}
 
+N> You can refer the Tree Navigator demo in the Essential Studio WPF [SampleBrowser](https://github.com/syncfusion/wpf-demos/tree/master/navigation) to view its features.
+
 ## Theme
 
 Tree Navigator supports various built-in themes. Refer to the below links to apply themes for the Tree Navigator,
