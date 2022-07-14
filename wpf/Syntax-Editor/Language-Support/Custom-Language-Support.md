@@ -202,16 +202,13 @@ Initialize Lexem and Formats properties of PythonLanguage by using the following
 
 {% highlight C# %}
 
-public Window1()
-{
-    InitializeComponent();
-    Edit1.DocumentLanguage = Languages.Custom;
-    Edit1.DocumentSource = "../../Source.py";
-    PythonLanguage customLanguage = new PythonLanguage(Edit1);
-    customLanguage.Lexem = this.Resources["pythonLanguageLexems"] as LexemCollection;
-    customLanguage.Formats = this.Resources["pythonLanguageFormats"] as FormatsCollection;
-    Edit1.CustomLanguage = customLanguage;
-}
+EditControl Edit1 = new EditControl();
+Edit1.DocumentLanguage = Languages.Custom;
+Edit1.DocumentSource = "../../Source.py";
+PythonLanguage customLanguage = new PythonLanguage(Edit1);
+customLanguage.Lexem = this.Resources["pythonLanguageLexems"] as LexemCollection;
+customLanguage.Formats = this.Resources["pythonLanguageFormats"] as FormatsCollection;
+Edit1.CustomLanguage = customLanguage;
 
 {% endhighlight %}
 
@@ -341,11 +338,11 @@ public class PythonLanguage : ProceduralLanguageBase
 
     #endregion
 
-    #region Initialization
+    #region Constructor
 
     /// <summary>
-    /// Initializes a new instance of the <see
-    /// cref="T:IronPythonDemo.PythonLanguage">PythonLanguage</see> class.
+    /// Constructor a new instance of the <see
+    /// cref="T:syncfusion.syntaxeditordemos.wpf.PythonLanguage">PythonLanguage</see> class.
     /// </summary>
     /// <param name="control">represents the EditControl to which to which this instance
     /// has to be hooked</param>
