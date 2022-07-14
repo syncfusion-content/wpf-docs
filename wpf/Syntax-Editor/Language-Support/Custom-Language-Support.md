@@ -553,7 +553,7 @@ public class PythonLanguage : ProceduralLanguageBase
 
 The following screenshot displays Custom Language Demo Window.
 
-![CustomLanguageSupport_img4](CustomLanguageSupport_images/CustomLanguageSupport_img4.jpeg)
+![CustomLanguageSupport_img4](CustomLanguageSupport_images/WPF_SyntaxEditor_CustomLanguage_Support.jpg)
 
 N> Refer to Custom Language Demo in the Essential Studio WPF SampleBrowser to view its functionality or debug the application. You can explore demo from [Custom Language](https://github.com/syncfusion/wpf-demos/tree/master/syntaxeditor).
 
