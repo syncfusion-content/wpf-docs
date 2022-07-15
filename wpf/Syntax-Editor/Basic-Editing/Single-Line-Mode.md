@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Single Line Mode
+# Single Line Mode in WPF Syntax Editor
 
 Single Line Mode interprets all lines of code as a single line. It appears as a regular textbox with syntax highlighting, editing, clipboard operation, etc. by setting the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IsMultiLine) property to `false`.The default value is `true`.
 
