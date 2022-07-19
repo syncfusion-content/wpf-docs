@@ -7,11 +7,11 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## UIAutomation
+# UIAutomation in WPF Multi Column Dropdown (SfMultiColumnDropDown)
 
 SfMultiColumnDropDownControl supports the following UIAutomations,
 
-### Coded UI
+## Coded UI
 
 SfMultiColumnDropDownControl supports CodedUITest automation that enables you to create an automation test with SfMultiColumnDropDownControl elements and record the sequence of actions.
 
