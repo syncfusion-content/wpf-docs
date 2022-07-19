@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Line Numbers
+# Line Numbers in WPF Syntax Editor
 
 Edit WPF enables users to display line numbers for the content in the EditControl. Line numbers can be displayed or hidden by using the `ShowLineNumber` property of the EditControl class. The following lines of code can be used to display or hide line numbers in EditControl.
 
