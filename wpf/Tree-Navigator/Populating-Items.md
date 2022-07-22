@@ -94,7 +94,7 @@ public class TreeViewModel
 
  This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as shown below. 
 
-![Items source ](Populating-Items_images/Populating-Items_img1.png)
+![WPF Tree Navigator Items source](Populating-Items_images/Populating-Items_img1.png)
 
 ## Item template 
 
@@ -124,7 +124,7 @@ ItemTemplate property of the [Tree Navigator](https://help.syncfusion.com/cr/wpf
 
 This will populate the [Tree Navigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Navigation.SfTreeNavigator.html) as follows.
 
-![Item template](Populating-Items_images/Populating-Items_img2.png)
+![WPF Tree Navigator Item template](Populating-Items_images/Populating-Items_img2.png)
 
 ## See Also
 
