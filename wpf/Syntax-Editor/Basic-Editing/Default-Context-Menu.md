@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Default Context Menu
+# Default Context Menu in WPF Syntax Editor
 
 ShowDefaultContextMenu
 
