@@ -38,7 +38,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
-![Features_img12](Features_images/Features_img12.png)
+![WPF Multi Column Dropdown Coded UI](Features_images/Features_img12.png)
 
 
 
@@ -64,7 +64,7 @@ SfMultiColumnDropDownControl supports for QTP test. You can record the actions p
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
-![Features_img13](Features_images/Features_img13.png)
+![WPF Multi Column Dropdown Quick Test Professional](Features_images/Features_img13.png)
 
 
 
