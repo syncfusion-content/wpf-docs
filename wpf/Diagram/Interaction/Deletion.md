@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Deletion in WPF Diagram (SfDiagram)
+# Deletion in WPF Diagram (SfDiagram)
 
 Selected objects can be deleted by using the Delete key or In-built Delete command through QuickCommand. 
 

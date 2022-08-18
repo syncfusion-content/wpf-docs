@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-## Zoom Pan
+# Zoom Pan in WPF Diagram
 
 * We can Zoom in or Zoom out the diagram view.Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
