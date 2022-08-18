@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting Chart as image in WPF Chart | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Chart control, its elements, and more.
+description: Learn here about getting started with Syncfusion WPF Chart control, its elements and more.
 platform: wpf
 control: Chart (Classic)
 documentation: ug
