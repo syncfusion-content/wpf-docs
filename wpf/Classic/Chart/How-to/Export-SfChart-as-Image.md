@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-## Export Chart as Image
+# Export Chart as Image in WPF Chart
 
 In order to export the Chart control as an image, the Save method needs to be called. Two overload methods are available to export the Chart:
 
