@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in WPF DataGrid (SfDataGrid)
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource] (https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture] (https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource](https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method. 
 
 Below application culture changed to German.
 

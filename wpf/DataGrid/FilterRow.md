@@ -846,7 +846,7 @@ public class GridFilterRowNumericRendererExt : GridFilterRowNumericRenderer
 
 ## Customizing GridFilterRowMultiSelectRenderer 
 
-By default, in SfDataGrid ComboBox is loaded while enter into edit mode in FilterRow but you can customize the [GridFilterRowMultiSelectRenderer] (https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowMultiSelectRenderer.html) for display the combobox while FilterRow loading itself.
+By default, in SfDataGrid ComboBox is loaded while enter into edit mode in FilterRow but you can customize the [GridFilterRowMultiSelectRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowMultiSelectRenderer.html) for display the combobox while FilterRow loading itself.
 
 {% tabs %}
 {% highlight xaml %}
