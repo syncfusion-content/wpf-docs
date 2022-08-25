@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zoom Pan in WPF Diagram control | Syncfusion
-description: Learn here all about Zoom Pan support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more.
+description: Learn here all about Zoom Pan support in Syncfusion WPF Diagram (SfDiagram) control, its elements and more functions.
 platform: wpf
 control: SfDiagram
 documentation: ug
