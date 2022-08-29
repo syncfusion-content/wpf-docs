@@ -15,6 +15,19 @@ The tree navigator control provides a unique interface that can expand a tree st
 
 ### Key features
 
-* Items Source – Any business object collection can be bound to control. 
-* Hierarchical Data Template – Business objects displayed in the hierarchy can be customized with single template. 
-* Navigation Mode – Two types of navigation mode (Default and Extended) support.
+* **Items Source** – Any business object collection can be bound to Tree Navigator items. 
+
+* **Hierarchical** Data Template – Business objects displayed in the hierarchy can be customized with single template. 
+
+* **Navigation Mode** – Two types of navigation mode.  They are
+        
+    * **Default mode** - In this navigation mode, the header of the current hierarchy level item can be shown at the top of the Tree Navigator with the back button. This back button is utilized to navigate towards the root from the current level.
+
+    * **Extended mode** - In the Extended mode, header of each level from the root to current level stacked one by one at the top of the TreeNavigator. 
+
+* **Header** - The HeaderTemplate property of Tree Navigator can be utilized to modify the Tree Navigator header.
+
+* **Item Selection** - The SelectedItem property of SfTreeNavigator can be utilized to get or set the SelectedItem in SfTreeNavigator.
+
+
+
