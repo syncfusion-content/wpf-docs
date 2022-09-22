@@ -99,6 +99,112 @@ You can interactively add or remove diagram elements from the Container in the r
 
 ![WPF Diagram Container Interaction](Container_images/Container.gif)
 
+## Header support in Container
+
+* The `Header` property of container allows you to textually describe the container and to customize the appearance of the description.
+* The size of the container header can be controlled by using the `UnitWidth` and `UnitHeight` properties of header.
+* The appearance of the container header can be set by using the `Shape` and `ShapeStyle` properties.
+
+The following code example explains how to define a container header and its customization.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:ContainerHeader">
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="Transparent"/>
+                <Setter Property="Stretch" Value="Fill"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+<syncfusion:SfDiagram x:Name="diagram">
+    <syncfusion:SfDiagram.Nodes>
+        <!--Initialize the NodeCollection-->
+        <syncfusion:NodeCollection>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Groups>
+        <syncfusion:GroupCollection>
+            <syncfusion:ContainerViewModel>
+                <syncfusion:ContainerViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                        <syncfusion:NodeViewModel OffsetX="200" OffsetY="200" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                    </syncfusion:NodeCollection>
+                </syncfusion:ContainerViewModel.Nodes>
+                <syncfusion:ContainerViewModel.Header>
+                    <syncfusion:ContainerHeaderViewModel UnitHeight="40">
+                        <syncfusion:ContainerHeaderViewModel.Annotation>
+                            <syncfusion:AnnotationEditorViewModel Content="Title" UnitHeight="30" Shape="{StaticResource Rectangle}"/>
+                        </syncfusion:ContainerHeaderViewModel.Annotation>
+                    </syncfusion:ContainerHeaderViewModel>
+                </syncfusion:ContainerViewModel.Header>
+            </syncfusion:ContainerViewModel>
+        </syncfusion:GroupCollection>
+    </syncfusion:SfDiagram.Groups>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+NodeViewModel node = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 100,
+	OffsetY = 100,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
+};
+NodeViewModel node1 = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 200,
+	OffsetY = 200,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
+};
+
+ObservableCollection<GroupViewModel> groups = new ObservableCollection<GroupViewModel>();
+ContainerViewModel container = new ContainerViewModel()
+{
+	Nodes = new ObservableCollection<NodeViewModel>()
+	{
+		node,
+		node1
+	},
+};
+
+container.Header = new ContainerHeaderViewModel()
+{
+    UnitHeight = 40,
+    Annotation = new AnnotationEditorViewModel()
+    {
+        Content = "Container Title",
+        FontSize = 18,
+        FontWeight = FontWeights.Bold,
+        Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#343434"))
+    },
+};
+
+groups.Add(container);
+diagram.Groups = groups;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Interaction
 
 Diagram provides support to drag or resize the container interactively. 
