@@ -89,9 +89,9 @@ diagram.Groups = groups;
 
 ### Setting a Header
 
-You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using header's "ShapeStyle" property.
+You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using the header's "ShapeStyle" property.
 
-The following code example explains how to define a container header and its customization.
+The following code example explains how to define a container header and its customization:
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,13 +196,13 @@ diagram.Groups = groups;
 {% endhighlight %}
 {% endtabs %}
 
-N> You can edit the header by double-clicking the region of the container's header or by pressing F2.
+N> You can edit the header by double-clicking the region of the container's header, or by pressing F2.
 
 ![WPF Diagram Container Header](Container_images/ContainerHeader.png)
 
 ### Container from Stencil
 
-Container Nodes can be predefined and added to stencil. You can drop those Containers into Diagram, when required. 
+Container Nodes can be predefined and added to the stencil. You can drop those Containers into Diagram when required.
 
 To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
 
