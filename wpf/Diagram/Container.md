@@ -87,23 +87,9 @@ diagram.Groups = groups;
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Container)
 
-### Container from Stencil
+### Setting a Header
 
-Container Nodes can be predefined and added to stencil. You can drop those Containers into Diagram, when required. 
-
-To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
-
-## Interactively add or remove diagram elements into Container
-
-You can interactively add or remove diagram elements from the Container in the runtime. Container will adjust its size when you drop diagram element into its edges.
-
-![WPF Diagram Container Interaction](Container_images/Container.gif)
-
-## Header support in Container
-
-* The `Header` property of container allows you to textually describe the container and to customize the appearance of the description.
-* The size of the container header can be controlled by using the `UnitWidth` and `UnitHeight` properties of header.
-* The appearance of the container header can be set by using the `Shape` and `ShapeStyle` properties.
+You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using header's "ShapeStyle" property.
 
 The following code example explains how to define a container header and its customization.
 
@@ -114,8 +100,13 @@ The following code example explains how to define a container header and its cus
     <Setter Property="ShapeStyle">
         <Setter.Value>
             <Style TargetType="Path">
-                <Setter Property="Fill" Value="Transparent"/>
+                <Setter Property="Fill" Value="CornflowerBlue"/>
                 <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Data">
+                    <Setter.Value>
+                        <RectangleGeometry Rect="10,10,10,10"/>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </Setter.Value>
     </Setter>
@@ -204,6 +195,22 @@ diagram.Groups = groups;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can edit the header by double-clicking the region of the container's header or by pressing F2.
+
+![WPF Diagram Container Header](Container_images/ContainerHeader.png)
+
+### Container from Stencil
+
+Container Nodes can be predefined and added to stencil. You can drop those Containers into Diagram, when required. 
+
+To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+
+## Interactively add or remove diagram elements into Container
+
+You can interactively add or remove diagram elements from the Container in the runtime. Container will adjust its size when you drop diagram element into its edges.
+
+![WPF Diagram Container Interaction](Container_images/Container.gif)
 
 ## Interaction
 
