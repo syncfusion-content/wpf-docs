@@ -87,9 +87,122 @@ diagram.Groups = groups;
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Container)
 
+### Setting a Header
+
+You can textually describe a container by using its 'Header' property. Also, users can customize the header's appearance using the header's "ShapeStyle" property.
+
+The following code example explains how to define a container header and its customization:
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:ContainerHeader">
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="CornflowerBlue"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Data">
+                    <Setter.Value>
+                        <RectangleGeometry Rect="10,10,10,10"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+<syncfusion:SfDiagram x:Name="diagram">
+    <syncfusion:SfDiagram.Nodes>
+        <!--Initialize the NodeCollection-->
+        <syncfusion:NodeCollection>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+    <syncfusion:SfDiagram.Groups>
+        <syncfusion:GroupCollection>
+            <syncfusion:ContainerViewModel>
+                <syncfusion:ContainerViewModel.Nodes>
+                    <syncfusion:NodeCollection>
+                        <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                        <syncfusion:NodeViewModel OffsetX="200" OffsetY="200" 
+                                                  Shape="{StaticResource Rectangle}" 
+                                                  ShapeStyle="{StaticResource shapestyle}" 
+                                                  UnitHeight="100" UnitWidth="100"/>
+                    </syncfusion:NodeCollection>
+                </syncfusion:ContainerViewModel.Nodes>
+                <syncfusion:ContainerViewModel.Header>
+                    <syncfusion:ContainerHeaderViewModel UnitHeight="40">
+                        <syncfusion:ContainerHeaderViewModel.Annotation>
+                            <syncfusion:AnnotationEditorViewModel Content="Title" UnitHeight="30" Shape="{StaticResource Rectangle}"/>
+                        </syncfusion:ContainerHeaderViewModel.Annotation>
+                    </syncfusion:ContainerHeaderViewModel>
+                </syncfusion:ContainerViewModel.Header>
+            </syncfusion:ContainerViewModel>
+        </syncfusion:GroupCollection>
+    </syncfusion:SfDiagram.Groups>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+NodeViewModel node = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 100,
+	OffsetY = 100,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
+};
+NodeViewModel node1 = new NodeViewModel()
+{
+	UnitWidth = 100,
+	UnitHeight = 100,
+	OffsetX = 200,
+	OffsetY = 200,
+	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
+};
+
+ObservableCollection<GroupViewModel> groups = new ObservableCollection<GroupViewModel>();
+ContainerViewModel container = new ContainerViewModel()
+{
+	Nodes = new ObservableCollection<NodeViewModel>()
+	{
+		node,
+		node1
+	},
+};
+
+container.Header = new ContainerHeaderViewModel()
+{
+    UnitHeight = 40,
+    Annotation = new AnnotationEditorViewModel()
+    {
+        Content = "Container Title",
+        FontSize = 18,
+        FontWeight = FontWeights.Bold,
+        Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#343434"))
+    },
+};
+
+groups.Add(container);
+diagram.Groups = groups;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> You can edit the header by double-clicking the region of the container's header, or by pressing F2.
+
+![WPF Diagram Container Header](Container_images/ContainerHeader.png)
+
 ### Container from Stencil
 
-Container Nodes can be predefined and added to stencil. You can drop those Containers into Diagram, when required. 
+Container Nodes can be predefined and added to the stencil. You can drop those Containers into Diagram when required.
 
 To explore how to add Containers from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
 
