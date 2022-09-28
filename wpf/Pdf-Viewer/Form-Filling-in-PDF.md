@@ -145,5 +145,12 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Keyboard Shortcuts:
+
+The below keyboard shortcuts are used to navigate through the form fields present in the PDF document.
+
+*	Tab key – Navigates to the next form field present in the PDF document.
+*	Shift + Tab – Navigates to the previous form field present in the PDF document.
+
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
