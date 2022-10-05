@@ -929,7 +929,15 @@ Step 2: In the code behind the file, Added SetTheme() for both light and dark th
 
 {% endtabs %}
 
+### Output ScreenShots
 
+Light Theme
+
+![Apply syncfusion theme at runtime - Light theme](Skin-Manager_images/Switch-theme-Light-Theme.jpg)
+
+Dark Theme
+
+![Apply syncfusion theme at runtime - Dark theme](Skin-Manager_images/Swith-theme-Dark-theme.jpg)
 
 ## Overriding style while Switching Syncfusion theme at runtime
 
@@ -964,6 +972,16 @@ Step 2: In the code behind the file, Added SetTheme() for both light and dark th
 {% endhighlight %}
 
 {% endtabs %}
+
+### Output ScreenShots
+
+Light Theme
+
+![Apply syncfusion theme at runtime - Light theme](Skin-Manager_images/override-theme-light-theme.png)
+
+Dark Theme
+
+![Apply syncfusion theme at runtime - Dark theme](Skin-Manager_images/override-theme-dark-theme.png)
 
 
 
