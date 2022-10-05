@@ -810,7 +810,164 @@ The following code sample overrides the Syncfusion style for the `ButtonAdv` Con
 
 ![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/WPF-ButtonAdv-Overridden-foreground-style.png)
 
-### Change visual style at runtime
+
+
+
+## Switching Syncfusion theme at runtime
+Whenever we need to switch themes we have to call setTheme() separately.
+
+### Step 1: In the Xaml file, Added two RadioButton for light and dark themes. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+  
+
+        <RadioButton Content="Light"
+                     Grid.Row="0"
+                     Grid.Column="0"
+                     Margin="20"
+                     GroupName="themeSwitch"
+                     Click="Switch_Theme"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center" />
+        <RadioButton Content="Dark"
+                     Margin="20"
+                     Grid.Row="0"
+                     Grid.Column="1"
+                     Click="Switch_Theme"
+                     GroupName="themeSwitch"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center" />
+       
+        <TextBlock Text="Framework Controls"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Margin="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+        <TextBlock Text="Syncfusion Controls"
+                   Margin="20"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+
+        
+
+        <Button Content="MS Button"
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="20"
+                Height="30"
+                Width="100"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+        <syncfusion:ButtonAdv Label="SF Button"
+                              Grid.Row="2"
+                              Grid.Column="1"
+                              Margin="20"
+                              Height="30"
+                              Width="100"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center" />
+
+        
+
+        <ComboBox  Grid.Row="3"
+                   Grid.Column="0"
+                   Margin="20"
+                   Height="30"
+                   Width="100"
+                   SelectedIndex="0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <ComboBoxItem Content="Orange" />
+            <ComboBoxItem Content="Orange" />
+            <ComboBoxItem Content="Orange" />
+            <ComboBoxItem Content="Orange" />
+        </ComboBox>
+        <syncfusion:ComboBoxAdv Grid.Row="3"
+                                Grid.Column="1"
+                                Margin="20"
+                                Height="30"
+                                Width="100"
+                                SelectedIndex="0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+            <syncfusion:ComboBoxItemAdv Content="Orange" />
+            <syncfusion:ComboBoxItemAdv Content="Orange" />
+            <syncfusion:ComboBoxItemAdv Content="Orange" />
+            <syncfusion:ComboBoxItemAdv Content="Orange" />
+        </syncfusion:ComboBoxAdv>
+
+    
+
+       
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Step 2: In the code behind the file, Added SetTheme() for both light and dark themes based on condition.
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+    private void Switch_Theme(object sender, RoutedEventArgs e)
+        {
+            if ((sender as RadioButton).Content.ToString() == "Light")
+            SfSkinManager.SetTheme(this, new Theme("MaterialLight"));
+            else
+            SfSkinManager.SetTheme(this, new Theme("MaterialDark"));
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+## Overriding style while Switching Syncfusion theme at runtime
+
+**Step 1**: Add the above steps in Switching Syncfusion theme at runtime.
+
+**Step 2**: Add resource dictionaries in merge dictionary.
+
+{% tabs %}
+
+{% highlight XAML %}
+    
+     <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Syncfusion.Themes.MaterialLight.WPF;component/ButtonAdv/ButtonAdv.xaml" />
+                <ResourceDictionary Source="/Syncfusion.Themes.MaterialDark.WPF;component/MSControl/Button.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style BasedOn="{StaticResource WPFButtonStyle}"
+                   TargetType="{x:Type Button}">
+                <Setter Property="Background"
+                        Value="Magenta" />
+            </Style>
+            <Style BasedOn="{StaticResource SyncfusionButtonAdvStyle}"
+                   TargetType="{x:Type syncfusion:ButtonAdv}">
+                <Setter Property="Background"
+                        Value="Magenta" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+  
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+## Change visual style at runtime
 
 Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure that the new theme assembly is attached as reference in the application when applying theme.
 
