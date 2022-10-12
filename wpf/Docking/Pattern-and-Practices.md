@@ -61,7 +61,7 @@ The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.co
 ![WPF Docking Application Structure](PatternandPractices_images/wpf-docking-application-structure.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the [ItemsSource]([ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2)) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
+The view model has a collection of workspaces that is data-bound to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
 
 Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
