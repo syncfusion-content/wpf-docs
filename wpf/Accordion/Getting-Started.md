@@ -39,6 +39,7 @@ To add the control manually in XAML, follow the given steps:
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the SfAccordion control in the XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -53,6 +54,8 @@ To add the control manually in XAML, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C\#
 
@@ -62,6 +65,7 @@ To add the control manually in C#, follow the given steps:
 2. Import SfAccordion namespace **using Syncfusion.Windows.Controls.Layout;**.
 3. Create a SfAccordion instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Controls.Layout;
@@ -84,6 +88,8 @@ namespace SfAccordionSample
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Add items using SfAccordionItem
 
@@ -134,6 +140,7 @@ SfAccordion accepts any business object collection to be bound using its [ItemsS
 
 * **Model.cs**
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 public class Person
@@ -161,9 +168,12 @@ public class Person
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * **ViewModel.cs**
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 public class ViewModel
@@ -191,6 +201,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * **MainWindow.Xaml**
 
