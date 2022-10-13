@@ -13,5 +13,5 @@ The [WPF Accordion](https://www.syncfusion.com/wpf-controls/accordion) control o
 
 ## Features
 
-* ItemsSource - Any business object collection can be bound to the control
-* SelectionMode - Number of items that can be expanded/selected based on `SelectionMode`
+* **ItemsSource** - Any business object collection can be bound to the control
+* **SelectionMode** - Number of items that can be expanded/selected based on `SelectionMode`
