@@ -236,8 +236,9 @@ SfAccordion accepts any business object collection to be bound to its [ItemsSour
 
 Follow the below steps to add the Items through [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property.
 
-1.Create a model
+1. Create a model
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -262,9 +263,12 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Create a collection of model
+2. Create a collection of model
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -301,9 +305,12 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Populate the collection
+3. Populate the collection
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -347,9 +354,12 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Bind the Employees collection to [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
+4. Bind the Employees collection to [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -359,6 +369,8 @@ Follow the below steps to add the Items through [ItemsSource](https://docs.micro
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 `SfAccordion` control is populated as follows:
 
