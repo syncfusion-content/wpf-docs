@@ -25,11 +25,11 @@ The following assembly is required to run the Syncfusion’ OLAP samples.
 
 Install the following setup files for the above assembly.
 
-* [SQLServer2005_ADOMD.msi and SQLServer2005_ASOLEDB9.msi](https://www.microsoft.com/en-in/download/details.aspx?id=c243a5ae-4bd1-4e3d-94b8-5a0f62bf7796) 
+* [SQLServer2005_ADOMD.msi and SQLServer2005_ASOLEDB9.msi](https://www.microsoft.com/en-in/download/details.aspx?id=8961) 
 
 Or 
 
-* [SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi](https://www.microsoft.com/en-hk/download/details.aspx?id=16bc778c-357b-46e9-8356-d575903ac831)
+* [SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi](https://www.microsoft.com/en-hk/download/details.aspx?id=44272)
 
 
 N>  By default, the following setup files will be installed while installing the Syncfusion’ Essential Studio setup for BI edition.
