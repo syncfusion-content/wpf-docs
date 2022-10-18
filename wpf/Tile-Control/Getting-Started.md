@@ -52,6 +52,7 @@ In order to add control manually in XAML, follow the below steps:
 2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the tile control namespace `Syncfusion.Windows.Controls.Notification` in XAML page.
 3. Declare SfHubTile and SfPulsingTile controls in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -70,6 +71,8 @@ In order to add control manually in XAML, follow the below steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -81,6 +84,7 @@ In order to add control manually in C#, follow the below steps:
 2. Import the `Syncfusion.Windows.Controls.Notification` namespace.
 3. Create SfHubTile and SfPulsingTile controls instance and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -114,6 +118,8 @@ namespace SfHubTileSample
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Setting title, header and image in tile
 

@@ -39,10 +39,11 @@ Create a new WPF project in Visual Studio to display chromeless window.
 
 The following steps help you add ChromelessWindow:
 
-1.	Create a WPF project, and refer the following assemblies: 
+1. Create a WPF project, and refer the following assemblies: 
      * Syncfusion.Shared.WPF.dll.
 2. Include an XML namespace for the above assemblies to the Main window.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window x:Class="Chromelesswindow.MainWindow" 
@@ -53,8 +54,10 @@ The following steps help you add ChromelessWindow:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.	Change the Window to ChromelessWindow.
+3. Change the Window to ChromelessWindow.
 
 <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -65,6 +68,7 @@ The following steps help you add ChromelessWindow:
 
 4.	Add the **Syncfusion.Windows.Shared namespace**, and inherit MainWindow from ChromelessWindow in code behind.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Shared;
@@ -77,6 +81,8 @@ public partial class MainWindow : ChromelessWindow
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wpf chromeless window application](Getting-Started_images/wpf-chromeless-window.jpeg)
 

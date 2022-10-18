@@ -44,6 +44,7 @@ You can select multiple rows at same time by setting [SelectionMode](https://hel
 3. By using `Space` key.
 4. By interacting with the checkbox in the `Selector column`.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xml %}
 <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnDropDown"
@@ -59,6 +60,8 @@ using Syncfusion.UI.Xaml.Grid;
 this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Multiple items selected in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img2.png)
 

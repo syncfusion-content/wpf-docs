@@ -25,26 +25,27 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF CalendarEdit via designer
 
-1) The `CalendarEdit` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1. The `CalendarEdit` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
 ![wpf calendar control added by designer](Getting-Started_images/wpf-calendar-control-added-by-designer.png)
 
-2) Set the properties for `CalendarEdit` in design mode using the SmartTag feature.
+2. Set the properties for `CalendarEdit` in design mode using the SmartTag feature.
 
 ## Adding WPF CalendarEdit via XAML
 
 To add the `CalendarEdit` manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the CalendarEdit in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the CalendarEdit in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -68,19 +69,22 @@ To add the `CalendarEdit` manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF CalendarEdit via C#
 
 To add the `CalendarEdit` manually in C#, follow these steps:
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -88,9 +92,12 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of `CalendarEdit`, and add it to the window.
+4. Create an instance of `CalendarEdit`, and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -103,6 +110,8 @@ calendarEdit.Width = 200;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![wpf calendar control added by code-behind](Getting-Started_images/Codebehind_CalendarEdit.png)
 

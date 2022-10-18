@@ -29,6 +29,7 @@ To add the built-in zooming:
 2. Set the UseOnDemandSchedule API value as _true_. If need set BaseCellMinLength and BaseCellMaxLength, the default value of these APIs are 20 and 40 respectively.
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -66,6 +67,8 @@ void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 The following image shows Built-in Zooming in Gantt:
 
@@ -101,6 +104,7 @@ To add custom zooming:
 4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -117,6 +121,8 @@ To add custom zooming:
 
 {% endhighlight  %}
 {% highlight c# %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 /// APIs in View Model.
 private List<double> _zoomFactors  = new List<double> { 100d, 200d, 300d, 400d, 600d, 800d, 1000d };

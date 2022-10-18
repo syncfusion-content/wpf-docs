@@ -126,6 +126,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 2.	Below (Default)
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xml %}
@@ -168,6 +169,8 @@ The labels in the scale can be placed above or below the linear scale by choosin
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Linear Gauge Labels with position customization](Labels_images/Labels_img3.png)
 

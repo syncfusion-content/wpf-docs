@@ -315,6 +315,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 3.	Cross
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xml %}
@@ -386,6 +387,8 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Pointers - Linear Gauge](Pointers_images/Pointers_img5.png)
 

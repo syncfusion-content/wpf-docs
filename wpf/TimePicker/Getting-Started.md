@@ -42,6 +42,7 @@ To add the control manually in XAML, follow the given steps:
 2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3.	Declare the `SfTimePicker` control in the XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -59,6 +60,8 @@ To add the control manually in XAML, follow the given steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C\#
 
@@ -70,6 +73,7 @@ To add the control manually in C#, follow the given steps:
 2.	Import the `SfTimePicker` namespace **using Syncfusion.Windows.Controls.Input;**.
 3.	Create an `SfTimePicker` instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -90,6 +94,8 @@ namespace SfTimePickerSample {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![SfTimePicker control added by code](GettingStarted_images/wpf-time-picker.png)
 

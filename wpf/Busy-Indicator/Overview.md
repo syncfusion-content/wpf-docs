@@ -18,10 +18,10 @@ Busy Indicator
 
 ## Key Features
 
-* IsBusy – The control will show the animation when this property is set.
-* Header – A user customized string that is displayed while showing animation.
-* Sizing – The control view box height and width can be set.
-* AnimationTypes – There are over 37 built-in animations that can be set with the control.
+* **IsBusy** – The control will show the animation when this property is set.
+* **Header** – A user customized string that is displayed while showing animation.
+* **Sizing** – The control view box height and width can be set.
+* **AnimationTypes** – There are over 37 built-in animations that can be set with the control.
 
 
 

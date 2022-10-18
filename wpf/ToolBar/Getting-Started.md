@@ -25,6 +25,7 @@ The following ways explains how to add ToolBarAdv control using XAML code:
 * Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
 * Include an XML namespace for the above assemblies to the Main window.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -44,8 +45,12 @@ Title="MainWindow" Height="350" Width="525">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 * Now add the WPF ToolBar (ToolBarAdv) control with a required optimal name using the namespace 
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -57,6 +62,8 @@ Title="MainWindow" Height="350" Width="525">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Create the ToolBarAdv control to an application by C#:
 

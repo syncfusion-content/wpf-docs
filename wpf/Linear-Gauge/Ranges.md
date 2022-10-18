@@ -374,6 +374,7 @@ The range can be placed above or below the scale by choosing one of the followin
 1.	Above(Default)
 2.	Below
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xml %}
@@ -443,6 +444,8 @@ The range can be placed above or below the scale by choosing one of the followin
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Ranges - Linear Gauge](Ranges_images/Ranges_img5.png)
 

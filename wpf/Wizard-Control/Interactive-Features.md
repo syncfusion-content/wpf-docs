@@ -55,8 +55,9 @@ wizardControl.Items.Add(wizardPage2);
 
 Below steps will explain on how to add the Items through [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of [Wizard Control](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html).
 
-1.Create a Model class with the necessary properties.
+1. Create a Model class with the necessary properties.
 
+{% capture codesnippet1 %}
 {% highlight C# %}
 
 public class Model : NotificationObject
@@ -93,9 +94,12 @@ public class Model : NotificationObject
 }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Create collection of PageItems in ViewModel class to populate pages.
+2. Create collection of PageItems in ViewModel class to populate pages.
 
+{% capture codesnippet2 %}
 {% highlight C# %}
 
 private ObservableCollection<Model> items;
@@ -115,9 +119,12 @@ public ObservableCollection<Model> PageItems
 }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Populate the PageItems collection as follows.
+3. Populate the PageItems collection as follows.
 
+{% capture codesnippet3 %}
 {% highlight C# %}
 
 private void PopulatePageItems()
@@ -136,9 +143,12 @@ private void PopulatePageItems()
 }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Create a ViewModel instance and use it as DataContext for the Root Window.
+4. Create a ViewModel instance and use it as DataContext for the Root Window.
 
+{% capture codesnippet4 %}
 {% highlight XAML %}
 
 <Window.DataContext>
@@ -146,9 +156,12 @@ private void PopulatePageItems()
 </Window.DataContext>    
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5.Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of the WizardControl. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property.
+5. Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property of the WizardControl. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html#) property.
 
+{% capture codesnippet5 %}
 {% highlight XAML %}
 
 <Window.DataContext>
@@ -174,6 +187,8 @@ private void PopulatePageItems()
 </Grid>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![DataBinding of WizardControl](Interactive-Features_images/data-binding_img1.png)
 

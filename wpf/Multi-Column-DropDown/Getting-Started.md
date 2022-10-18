@@ -88,6 +88,7 @@ In order to add control manually in XAML, do the below steps,
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare `SfMultiColumnDropDownControl` in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window
@@ -102,6 +103,8 @@ In order to add control manually in XAML, do the below steps,
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -113,6 +116,7 @@ In order to add the control manually in C#, do the below steps,
 2. Import SfMultiColumnDropDownControl namespace Syncfusion.UI.Xaml.Grid.
 3. Create `SfMultiColumnDropDownControl` instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
@@ -133,6 +137,8 @@ namespace WpfApplication1
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Creating Data Model for sample application
 
@@ -140,6 +146,7 @@ Before binding `ItemsSource` to the control, you must create data model for Appl
 
 1. Create data object class named `OrderInfo` and declare properties as shown below,
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfo
@@ -191,9 +198,12 @@ public class OrderInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 2. Create a `ViewModel` class with `Orders` property and Orders property is initialized with several data objects in constructor.
  
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel
@@ -228,6 +238,8 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ## Binding to Data
 

@@ -115,6 +115,7 @@ To add control manually using the code behind, follow the given steps:
 
 ![WPF SfStepProgressBar control added through code](Getting-Started_images/wpf-StepProgressBar-control-added-manually.png)
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.UI.Xaml.ProgressBar;
@@ -152,6 +153,9 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 Download demo from [GitHub](https://github.com/SyncfusionExamples/WPF-StepProgressBar-Demos/tree/master/Samples/GettingStarted).
 

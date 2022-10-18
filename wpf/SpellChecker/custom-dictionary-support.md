@@ -46,6 +46,7 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to configure SfSpellChecker.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -108,7 +109,10 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -119,6 +123,8 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> You can add multiple `HunspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `HunspellDictionary` is used for spell check.
 
@@ -145,6 +151,7 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -207,7 +214,10 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -218,6 +228,8 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 N> You can add multiple `IspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `IspellDictionary` is used for spell check.
 
@@ -244,6 +256,7 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -306,7 +319,10 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -317,6 +333,8 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 N> You can add multiple `OpenOfficeDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `OpenOfficeDictionary` is used for spell check.
 
@@ -340,6 +358,7 @@ You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.D
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -417,7 +436,10 @@ SfSpellChecker.SetSpellChecker(textbox, spellChecker);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -428,6 +450,8 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 N> As custom dictionary hold extra words that is not available in standard dictionary, it is always used in conjunction with standard dictionary.
 

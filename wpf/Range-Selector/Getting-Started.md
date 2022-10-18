@@ -34,11 +34,14 @@ The following section explains how to create SfDateTimeRangeNavigator.
 
 3.  Add the following namespace in your XAML page:
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Initialize the SfDateTimeRangeNavigator
 
@@ -204,14 +207,16 @@ This section explains how to create an application using the date-time range nav
 2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
 3. Add the following namespace in your C# file: MainPage.xaml.cs.
 
-
+{% capture codesnippet2 %}
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-Initialize the Range Navigator
+### Initialize the Range Navigator
 
 {% highlight c# %}
 
@@ -219,7 +224,7 @@ SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
 {% endhighlight  %}
 
-Create a Sample Data Source
+### Create a Sample Data Source
 
 {% highlight c# %}
 

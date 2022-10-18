@@ -39,14 +39,15 @@ The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown
 
 In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html) control manually in XAML, do the below steps,
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly reference to the project.
+2. Add the following required assembly reference to the project.
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
+3. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -64,6 +65,8 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![WPF UpDown Control](GettingStarted-images/wpf-updown-designer.jpeg)
 
@@ -72,16 +75,17 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 
 In order to add the UpDown control manually in C#, do the below steps,
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly reference to the project.
+2. Add the following required assembly reference to the project.
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Import UpDown namespace **Syncfusion.Windows.Shared**.
+3. Import UpDown namespace **Syncfusion.Windows.Shared**.
 
-3) Create an instance of UpDown control and add it to the main window.
+4. Create an instance of UpDown control and add it to the main window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -94,6 +98,8 @@ grid.Children.Add(updown);
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![WPF UpDown Control](GettingStarted-images/wpf-updown-code.jpeg)
 

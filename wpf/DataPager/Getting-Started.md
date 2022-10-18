@@ -75,12 +75,13 @@ The following steps help you to use the SfDataPager in an application:
 
 3. When you drag the SfDataPager to the window, it automatically adds the required references to the current application.To add the SfDataPager using code, you can add the following assemblies to the project.
    
-   I. Syncfusion.Data.WPF
+        *Syncfusion.Data.WPF
    
-   II. Syncfusion.SfGrid.WPF
+        *Syncfusion.SfGrid.WPF
 
-4.You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
+4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="SfDataPagerDemo.MainWindow"
@@ -98,9 +99,12 @@ The following steps help you to use the SfDataPager in an application:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5.Create Business object class named as OrderInfo
+5. Create Business object class named as OrderInfo
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfo
@@ -152,9 +156,12 @@ public class OrderInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-6.Add the following code in ViewModel class
+6. Add the following code in ViewModel class
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class ViewModel
@@ -189,9 +196,12 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-7.Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
+7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
@@ -207,9 +217,12 @@ public class ViewModel
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-8.Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
+8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
@@ -230,6 +243,8 @@ public class ViewModel
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
