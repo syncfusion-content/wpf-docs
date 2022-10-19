@@ -12,12 +12,13 @@ documentation: ug
 
 For better control customization MVVM pattern can be followed. The following steps illustrate a simple MVVM pattern with Ribbon control
 
-1.Create new WPF project
+1. Create new WPF project
 
-2.Add `Model` class for each element which need to be included in Ribbon control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
+2. Add `Model` class for each element which need to be included in Ribbon control. In this sample class has been created for RibbonTab, RibbonBar and RibbonItem
 
 ### Model
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -91,11 +92,15 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Create `ViewModel` class where the collection has been declared and the items has been populated to it.
+
+3. Create `ViewModel` class where the collection has been declared and the items has been populated to it.
 
 ### ViewModel
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -221,11 +226,14 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4.In XAML bind the collection to Ribbon control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
+4. In XAML bind the collection to Ribbon control and use ItemContainerStyle to bind the inner level items like RibbonBar and RibbonItems
 
 #### MainWindow.xaml
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -281,11 +289,15 @@ ItemsSource="{Binding CustomRibbonTabs}"
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
 
 5.Converter class is used to set `SizeForm` for the Ribbon items and to set images.
 
 #### Converter.cs
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -396,6 +408,9 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
+
 
 Now the output displays the Ribbon control with the populated items
 
@@ -407,7 +422,7 @@ Now the output displays the Ribbon control with the populated items
 
 Ribbon control provides PRISM support. The following steps explain about creating simple sample project in the PRISM.
 
-1.Create new WPF project and add the following references to the solution project.
+1. Create new WPF project and add the following references to the solution project.
 		
    * Microsoft.Practices.ServiceLocation.dll
    * Microsoft.Practices.Unity.dll
@@ -417,10 +432,11 @@ Ribbon control provides PRISM support. The following steps explain about creatin
    * Prism.Unity.Wpf.dll
    * Prism.Wpf.dll
 
-2.Rename MainWindow to Shell in the Project
+2. Rename MainWindow to Shell in the Project
 
-3.Add new class called Bootstrapper.cs to initialize the prism application.	
+3. Add new class called Bootstrapper.cs to initialize the prism application.	
 
+{% capture codesnippet5 %}
 {% tabs %}
 	
 {% highlight C# %}
@@ -469,9 +485,13 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-4.Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
+
+4. Override OnStartup method in the App.xaml.cs to execute Bootstrapper when the application starts
 	 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -502,8 +522,13 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
+
 
 5.Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
+
+{% capture codesnippet7 %}
 
 {% tabs %}
 
@@ -514,10 +539,12 @@ xmlns:Cal="http://www.codeplex.com/CompositeWPF"
 {% endhighlight %}
 
 {% endtabs %}
-		
-        
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
+		       
 In the below code, a region called “Tabs” has been created to load RibbonTab Module views
 
+{% capture codesnippet8 %}
 
 {% tabs %}
 		
@@ -538,8 +565,11 @@ Title="MainWindow" Height="350" Width="525">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_2 }}
 
-6.Adding Module to the project
+
+6. Adding Module to the project
 	 
 Right click the Solution project, point to “Add” and then click “NewProject”. The new Window called AddNewProject gets open. Select “ClassLibrary” from Visual C# then rename the project with desired name and click “Ok”. Now a new Module has been created in the Solution Project
 
@@ -560,8 +590,9 @@ Right click the Solution project, point to “Add” and then click “NewProjec
    * Prism.Unity.Wpf.dll
    * Prism.WPF.dll
 
-7.In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
+7. In the Shell project, add the reference to the “HomeTabModule” project by registering with ModuleCatalog instance in the GetModuleCatalog method
 
+{% capture codesnippet9 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -610,9 +641,13 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-8.Adding Views to the Module
 
+8. Adding Views to the Module
+
+{% capture codesnippet10 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -699,9 +734,13 @@ TextWrapping="Wrap">
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-9.Add a region to the shell and after creating View for the Module, register the view as Module using the below code
 
+9. Add a region to the shell and after creating View for the Module, register the view as Module using the below code
+
+{% capture codesnippet11 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -737,6 +776,9 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
+
 
 Now run the project. RibbonTabModule get added as one of the Module in the Shell. Similarly any number of Modules can be added based on the complexity of the project.
 

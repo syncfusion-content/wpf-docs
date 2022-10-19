@@ -58,8 +58,9 @@ The following set of instructions illustrates the same.
 
    ![Syncfusion Assemblies referenced in the WPF Application](Testability-Frameworks_images/Testability-Frameworks_img3.png)
 
-2.Create a console project as shown below.
+2. Create a console project as shown below.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Grid>
@@ -81,8 +82,10 @@ private void InitGrid()
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Enter the path where the output of the Window sample has to be saved, in the Output path field.
+3. Enter the path where the output of the Window sample has to be saved, in the Output path field.
 
 ![Specifying the Output Path](Testability-Frameworks_images/Testability-Frameworks_img4.png)
 
@@ -90,6 +93,7 @@ N> Mention the output path as the Console application's bin\Debug directory.
 
 The following sample code uses TestApi assemblies.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 // Initialization Code.
@@ -110,6 +114,8 @@ private static AutomationElement GetGridAut(out AutomatedApplication app)
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> We have added minimal set of LINQ-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With LINQ-To-UIAutomation library, only First method is supported now.
 
@@ -183,6 +189,7 @@ Initial steps before creating the Coded UI Test project:
 
 N> The following code appears.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 <Application x:Class="WpfApplication3.App"
@@ -194,8 +201,11 @@ N> The following code appears.
 </Application>
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-3.Change Application to Syncfusion:GridControlTestApplication as follows.
+3. Change Application to Syncfusion:GridControlTestApplication as follows.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
@@ -208,9 +218,12 @@ N> The following code appears.
 </syncfusion:GridControlTestApplication>
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-4.For the code behind file (App.xaml.cs), make sure to inherit from GridControlTestApplication.
+4. For the code behind file (App.xaml.cs), make sure to inherit from GridControlTestApplication.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 namespace WpfApplication3
@@ -225,6 +238,8 @@ namespace WpfApplication3
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 5.Build the application to make it ready for testing.
 
@@ -244,6 +259,7 @@ N> The GridControlTestApplication works only with a single Grid instance in the 
 
 The following code illustrates this.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %} 
 public void HelloWorld_Test()
@@ -251,39 +267,42 @@ public void HelloWorld_Test()
 }
 {% endhighlight %} 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4.Build and run the Grid application that you configured.
+4. Build and run the Grid application that you configured.
 
   * Right-click on the TestMethod body and then select as below,
 
   ![Generate code for Coded UI Test](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)
     
-5.Click on the record button to perform actions, you can add a Hello World text in a grid cell [x, y] in this scenario.
+5. Click on the record button to perform actions, you can add a Hello World text in a grid cell [x, y] in this scenario.
 
   ![UI Recorder of Coded UI Test](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)
     
   ![Added Hello World text in a Cell](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)
     
-6.Click on Generate code in the Coded UI Test Builder.
+6. Click on Generate code in the Coded UI Test Builder.
 
   ![Add And Generate code in coded UI test builder](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)
     
-7.You can assert the cell value using the cross-hair present in the Coded UI Test builder. 
+7. You can assert the cell value using the cross-hair present in the Coded UI Test builder. 
 
-8.Click on the cross-hair and hover to the Hello World cell.
+8. Click on the cross-hair and hover to the Hello World cell.
 
   N> The assert window is displayed as below.
   
   ![Show the Assert Window](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)
     
-9.Add asserts to the properties displayed in the assert window and generate the assert method.
+9. Add asserts to the properties displayed in the assert window and generate the assert method.
 
-10.Close the Coded UI Test builder. 
+10. Close the Coded UI Test builder. 
 
    N> Coded UI Unit Test is created.
 
 The following code generates automatically. 
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public void HelloWorld_Test()
@@ -293,6 +312,8 @@ public void HelloWorld_Test()
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ### Testing the Application with Generated Coded UI Test
 

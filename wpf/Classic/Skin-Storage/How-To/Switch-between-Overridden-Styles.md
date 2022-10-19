@@ -15,6 +15,7 @@ The following steps explain how to switch between the overridden styles.
 
 1. Add the corresponding Resource Dictionaries in the sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -27,6 +28,8 @@ The following steps explain how to switch between the overridden styles.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Define the new styles using the BasedOn property. 
 
@@ -34,6 +37,7 @@ The following steps explain how to switch between the overridden styles.
 
    The following code snippet explains how to override the Syncfusion style for the Calendar Control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -59,13 +63,14 @@ The following steps explain how to switch between the overridden styles.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. On ComboBox SelectionChanged event, particular overridden style should be set to the control depending on the current visual style. 
 
-
-
    The following code snippet explains how to set the overridden styles to the controls.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -87,7 +92,8 @@ Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 The output is displayed as shown below.
 

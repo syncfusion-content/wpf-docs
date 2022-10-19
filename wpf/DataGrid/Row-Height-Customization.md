@@ -203,7 +203,7 @@ You can reset height of the particular or all rows in View at runtime to get the
  
 * [InvalidateRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_InvalidateRowHeight_System_Int32_) – Resets the height of particular row.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
@@ -212,11 +212,12 @@ dataGrid.InvalidateRowHeight(2);
 dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * [RowHeightManager.Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowHeightManager.html#Syncfusion_UI_Xaml_Grid_RowHeightManager_Reset) – Resets the height for all rows in View.
 
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
@@ -225,6 +226,8 @@ this.datagrid.GetVisualContainer().RowHeightManager.Reset();
 dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ### Update Row Height while editing

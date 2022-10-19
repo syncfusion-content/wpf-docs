@@ -53,6 +53,7 @@ The following code snippet explains how to set the VisualStyle property in XAML.
 
 1. Add the following namespace in the sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -60,9 +61,12 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Set the VisualStyle property for the control as shown below. 
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -71,6 +75,8 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Setting VisualStyle in C#
 
@@ -78,10 +84,9 @@ You can also set the VisualStyle property in C# using SetVisualStyle.
 
 The following code snippet explains how to set the VisualStyle property in C#.
 
-
-
 1. Name the control using the Name attribute.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -90,9 +95,12 @@ The following code snippet explains how to set the VisualStyle property in C#.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 2. Add the following line in code behind file.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -100,6 +108,8 @@ SkinStorage.SetVisualStyle(calendar, "Blend");
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 The output is displayed as shown below.
 
@@ -144,6 +154,7 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 1. Add the following namespace in the sample.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -151,9 +162,12 @@ xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 2. Set the ActiveColorScheme property for the control as shown below.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -162,6 +176,8 @@ xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
    
 ## Setting ActiveColorScheme property in C#
@@ -170,10 +186,9 @@ You can set the custom color for the WPF controls in C# using _SetActiveColorSch
 
 The following code snippet explains how to set the ActiveColorScheme property in C#.
 
-
-
 1. Name the control using the Name attribute.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -182,9 +197,12 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 2. Add the following line in code behind file.
 
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -192,6 +210,8 @@ SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
    The output is displayed as shown below.
 

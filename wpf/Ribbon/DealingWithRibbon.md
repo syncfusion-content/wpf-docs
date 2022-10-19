@@ -2173,6 +2173,7 @@ To create a ContextTabGroup in MVVM, follow below steps.
 
 1. Create a class for ContextTabGroup, RibbonBar and RibbonItems in Model CS file.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -2345,9 +2346,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create a View model class and then add ContextTabGroup , RibbonBars and RibbonItems with some properties.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -2600,8 +2604,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Now bind the properties of View model in XAML.
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -2670,9 +2678,13 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 4. Add a converter class for binding conversions
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -2848,6 +2860,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![WPF Ribbon with ContextTabGroup in MVVM](GroupingRibbonTabsusingContextTabGroups_images/wpf-ribbon-context-tab-group-mvvm.png)
 

@@ -336,6 +336,7 @@ To add the WCF Data Service to your web project created in first step,
 
 4. Once service is added and configure the read and write access to resources in **InitializeService** function of DataService.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class WcfDataService1 : DataService<NORTHWNDEntities>
@@ -360,8 +361,10 @@ public class WcfDataService1 : DataService<NORTHWNDEntities>
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5.On the menu bar, select Debug->Start without Debugging to execute the service. A browser window opens and the XML schema for the service is displayed. You can also get the localhost address for the service here.
+5. On the menu bar, select Debug->Start without Debugging to execute the service. A browser window opens and the XML schema for the service is displayed. You can also get the localhost address for the service here.
 
 ### Creating the WPF Client Application
 
@@ -385,6 +388,7 @@ To load the data from WCF service to SfDataGrid,
 4. Copy the localhost address and replace it in your service URI.
 5. Set the WPF application as StartUp project.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.Loaded += dataGrid_Loaded;
@@ -396,6 +400,8 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 Now, run the application and you can see the SfDataGrid control loaded with data from WCF service.
  
@@ -689,6 +695,7 @@ To access the data from data source using ADO.NET, follow the below steps.
 2. Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
 3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public partial class MainWindow : Window
@@ -714,6 +721,8 @@ public partial class MainWindow : Window
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 Now, run the application and you can see the following screenshot displays the SfDataGrid loaded the data using ADO.NET.
 
@@ -767,6 +776,7 @@ To load the data from Microsoft Access database,
 5. Use `OleDbDataAdapter` to load the data in to `DataSet`.
 6. Access the Employee table from the DataSet and set the Employee collection as `ItemsSource` of SfDataGrid.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -784,6 +794,8 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from Microsoft Access database.
 <br/>    

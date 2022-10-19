@@ -2293,8 +2293,9 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 
 Grid provides inherent support to host chart controls. This is achieved by using Data Template cells. 
 
-1.Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
+1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <local:MyDataCollection x:Key="SeriesData1"/>
@@ -2362,9 +2363,12 @@ public class MyDataCollection : ObservableCollection<MyData>
 }
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Bind the above template to the grid cell to form a chart cell.
+2. Bind the above template to the grid cell to form a chart cell.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 var cell = grid.Model[2, 2];
@@ -2373,6 +2377,8 @@ cell.CellItemTemplateKey = "DataChart";
 grid.Model.RowHeights[2] = 400d;
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Chart cell in WPF GridControl](Cell-Types_images/Cell-Types_img29.jpeg)
 

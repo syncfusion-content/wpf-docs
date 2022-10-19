@@ -21,6 +21,7 @@ There are several ways to add Syncfusion control in to Visual Studio WPF project
   
 * Include an XML namespace for the above assemblies to the Main window.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -34,9 +35,12 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Change the Window as `RibbonWindow`.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -50,9 +54,12 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Add following namespace and inherit MainWindow from `RibbonWindow` in code behind.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -70,9 +77,12 @@ Public class As partial
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -89,11 +99,14 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ## Set icon for RibbonWindow
 
 * Icon of the RibbonWindow can be set using the property named `Office2010Icon`. Please refer to the below code.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -119,6 +132,8 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![WPF Ribbon Control](GettingStarted_images/wpf-ribbon-control.jpg)
 
@@ -128,11 +143,12 @@ Ribbon supports various visual styles by using the `SfSkinManager`. To apply Vis
 
 * Refer the following assemblies with the project
 
-1. Syncfusion.SfSkinManager.Wpf
-2. Syncfusion.Themes.Office2013White.Wpf
+    1. Syncfusion.SfSkinManager.Wpf
+    2. Syncfusion.Themes.Office2013White.Wpf
 
 * Include an XML namespace for the SfSkinManager assembly to the MainWindow.
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -150,9 +166,12 @@ xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 * Now apply the value as `Office2013White` to the `VisualStyle` property of the SfSkinManager for the RibbonWindow.
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -171,6 +190,8 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ![WPF Ribbon with Office2013White Style](GettingStarted_images/wpf-ribbon-style.jpg)
 

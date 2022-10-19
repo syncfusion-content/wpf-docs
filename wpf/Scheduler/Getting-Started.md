@@ -42,6 +42,7 @@ To add the control manually in XAML page, follow the given steps:
 2. Import WPF schema `http://schemas.syncfusion.com/wpf` in the XAML page.
 3. Declare the `SfScheduler` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window
@@ -58,6 +59,8 @@ To add the control manually in XAML page, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 #### Adding control manually in C#
 
