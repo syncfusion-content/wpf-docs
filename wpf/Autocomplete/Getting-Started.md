@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
+Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) documentation to find more details about installing the NuGet package in a WPF application.
 
 ## Creating a simple application
 
