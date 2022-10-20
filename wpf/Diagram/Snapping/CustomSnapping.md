@@ -118,6 +118,6 @@ diagram.SnapSettings = new SnapSettings()
 
 [How to add gridlines for diagram](https://help.syncfusion.com/wpf/diagram/gridlines)
 
-[How to add ruler for diagram](/wpf/sfdiagram/rulers)
+[How to add ruler for diagram](/wpf/diagram/rulers)
 
 {% endseealso %}
