@@ -694,7 +694,7 @@ To explore about selection and selection related events, refer to the [Selection
 
 * Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/diagram/interaction/dragging/previewsettings/preview-settings). 
 
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping "Snapping").
 
 * The `BoundaryConstraints` argument in the `NodeChangedEvent` is used to restrict the dragging of the Nodes in the given region.
 
