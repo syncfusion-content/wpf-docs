@@ -573,6 +573,7 @@ Please follow the below steps to highlight the edited cells.
 1. Add new property `EditedColumns` in data object to maintain edited column `MappingName`.
 2. Add the `MappingName` of the column to `EditedColumns`, in `CurrentCellValueChanged` event to keep track of edited columns in data object. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -590,9 +591,12 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3. Create a style of TargetType `GridCell` and change the Foreground using `CellStyleSelector` based on `EditedColumns` property in data object.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -613,7 +617,10 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class CellStyleSelector : StyleSelector
@@ -636,6 +643,8 @@ public class CellStyleSelector : StyleSelector
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_2 }}
 
 ![Changing Foreground of Edited Cells in WPF DataGrid](Editing_images/wpf-datagrid-edited-cells.jpeg)
 

@@ -35,15 +35,16 @@ The [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 
 To add the control manually in XAML page, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.SfInput.WPF
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
 
-2.Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or Syncfusion.Windows.Tools.Controls namespace.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or Syncfusion.Windows.Tools.Controls namespace.
 
-3.Declare [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) in XAML page.
+3. Declare [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -65,20 +66,23 @@ To add the control manually in XAML page, follow the given steps:
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.SfInput.WPF
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
 
-2.Import the `SfDomainUpDown` namespace **Syncfusion.Windows.Controls.Input**.
+2. Import the `SfDomainUpDown` namespace **Syncfusion.Windows.Controls.Input**.
 
-3.Create the `SfDomainUpDown` control instance and add it to the page.
+3. Create the `SfDomainUpDown` control instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -106,6 +110,8 @@ namespace ComboBox
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![SfDomainUpDown control implemented](Getting-Started_images/Spin-Button_img6.png)
 
@@ -114,8 +120,9 @@ namespace ComboBox
 
 You can populate the [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
-1.You can create a data object class named **Employee** as Model and declare properties as shown below,
+1. You can create a data object class named **Employee** as Model and declare properties as shown below,
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -139,9 +146,12 @@ public class Employee
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.You can create a **ViewModel** class with several data objects in constructor.
+2. You can create a **ViewModel** class with several data objects in constructor.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -168,9 +178,12 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.You can bind the Employees property from the ViewModel class to the ItemSource property of `SfDomainUpDown` control and the control is set to display content based on the Name inside the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_ContentTemplateProperty) property.
+3. You can bind the Employees property from the ViewModel class to the ItemSource property of `SfDomainUpDown` control and the control is set to display content based on the Name inside the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html#Syncfusion_Windows_Controls_Input_SfDomainUpDown_ContentTemplateProperty) property.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -186,6 +199,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![wpf domain up down control added by code](Getting-Started_images/wpf-domain-updown-control-data-binding.png)
 

@@ -21,6 +21,6 @@ The [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Control
 
 ### Key Features
 
-Formatting – The Control displays  the selected time value in a various formats.
+* **Formatting** – The Control displays  the selected time value in a various formats.
 
-Time Selector – The drop-down portion used for selecting the time can be customized.
+* **Time Selector** – The drop-down portion used for selecting the time can be customized.

@@ -34,13 +34,13 @@ GanttScheduleRowInfo class will have following fields:
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
 3. TimeUnit—Gets the information about the type of row, when the schedule type is CustomDateTime. The Time unit can be any one of the following:
 
-* Seconds-represents the corresponding row as second's row.
-* Minutes—represents the corresponding row as minute’s row.
-* Hours—represents the corresponding row as hour’s row.
-* Days—represents the corresponding row as day’s row.
-* Weeks—represents the corresponding row as week’s row.
-* Months—represents the corresponding row as month’s row.
-* Years—represents the corresponding row as year’s row.
+    * Seconds-represents the corresponding row as second's row.
+    * Minutes—represents the corresponding row as minute’s row.
+    * Hours—represents the corresponding row as hour’s row.
+    * Days—represents the corresponding row as day’s row.
+    * Weeks—represents the corresponding row as week’s row.
+    * Months—represents the corresponding row as month’s row.
+    * Years—represents the corresponding row as year’s row.
 
 #### Use Case Scenario
 

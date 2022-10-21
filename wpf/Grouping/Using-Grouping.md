@@ -25,6 +25,7 @@ We will now continue using the same sample created in the previous section and a
 
 1. To group the 'MyObject' ArrayList by a particular property, say property C, you have to add only the property name ("C") to the grouping.Engine.TableDescriptor.GroupedColumns collections. Add the following code snippet to the bottom of the Main method.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -77,8 +78,10 @@ Next rec
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of grouping by column C.
+2. After running the code from step 1, a screen similar to the one below will be displayed. Note that the bottom list displayed is now sorted by column C. This is a one side effect of grouping by column C.
 
 
 
@@ -137,6 +140,7 @@ The Grouping.Group class has two properties that are used to recursively access 
 
 4. Add the following code below the Main method to implement a recursive method to display records in a Group.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -254,9 +258,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5.Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
+5. Once you have your ShowRecordsUnderGroup method, you only have to retrieve a particular group from the Groups collection and then call the method. So, after grouping on property C, you can view all the records whose Category is "c1" using the code like the one given below the Main method.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -288,13 +295,16 @@ Console.ReadLine()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Using-Grouping_img3](Using-Grouping_images/Using-Grouping_img3.png)
 
 
 
-6.Similar code can be used to display all the records by passing the 'primary' group to your ShowRecordsUnderGroup method. To implement this, add the following code to the Main method.
+6. Similar code can be used to display all the records by passing the 'primary' group to your ShowRecordsUnderGroup method. To implement this, add the following code to the Main method.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -324,6 +334,8 @@ Console.ReadLine()
 		
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
    
 ## Adding a Summary
 

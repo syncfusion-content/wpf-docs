@@ -50,6 +50,7 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 1. Near (Default)
 2. Far
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -80,5 +81,7 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Caption_img2](Caption_images/CaptionPosition.png)

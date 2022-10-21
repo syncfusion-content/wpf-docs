@@ -62,6 +62,7 @@ This section explains how to create a CodedUITest project and test the tree grid
 
 1. Create a new WPF application or open an existing WPF application with tree grid and enable the Coded UI test in tree grid. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -75,6 +76,8 @@ public MainWindow()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Build the application and launch the .exe file from the bin folder.
 3. Create a Coded UI test project as shown in the following screenshot.
@@ -128,6 +131,7 @@ public MainWindow()
 
 9. After the record has been completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method, and then close the CodedUITestBuilder. You can see the generated code for cell value changed action as follows.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -151,6 +155,8 @@ public void RecordedMethod1()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 10. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 

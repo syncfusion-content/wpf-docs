@@ -137,6 +137,7 @@ The following steps help you to achieve an OnDemandLoading with the SfDataPager 
 1. Set the UseOnDemandPaging property to true.
 2. Set the PageCount value for the SfDataPager control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.DataContext>
@@ -159,9 +160,13 @@ The following steps help you to achieve an OnDemandLoading with the SfDataPager 
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 3. Wire up the OnDemandLoading event of SfDataPager.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 void OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
@@ -170,6 +175,9 @@ void OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 The following screenshot displays the output for OnDemandPaging,
 

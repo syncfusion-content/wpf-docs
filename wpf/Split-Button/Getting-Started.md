@@ -57,6 +57,7 @@ In order to add the control manually in XAML, follow the below steps.
 
 3. Declare SplitButtonAdv control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -74,6 +75,8 @@ In order to add the control manually in XAML, follow the below steps.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -87,6 +90,7 @@ In order to add control manually in C#, do the below steps.
 
 3. Create SplitButtonAdv control instance and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -101,6 +105,8 @@ In order to add control manually in C#, do the below steps.
 
     </Grid>
 </Window>
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 {% endhighlight %}
 {% highlight c# %}

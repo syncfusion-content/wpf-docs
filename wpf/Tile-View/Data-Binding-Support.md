@@ -86,8 +86,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in the `TileViewControl`. You can easily populates the items from the `XML` files using the `ItemTemplate` and `ContentTemplate` or `ItemContainerStyle` properties. 
 
-1.Create an `XML` file with the required details and name it as `Data.xml`.
+1. Create an `XML` file with the required details and name it as `Data.xml`.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -111,9 +112,12 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `TileViewControl`.
+2. Add `XmlDataProvider` for the above `Data.xml` document and bind the data to `ItemsSource` property for the `TileViewControl`.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -141,6 +145,8 @@ You can bind the `XML` file as `ItemsSource` for creating the `TileViewItem` in 
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![TileViewControl auto creates tileview item from XML using data binding](Data-binding_images/Data-Binding_img2.png)
 

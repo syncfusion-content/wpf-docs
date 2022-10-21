@@ -36,15 +36,16 @@ You can add the `TabControl` control to an application by dragging it from the t
 
 To add the `TabControl` manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
     * Syncfusion.Tools.WPF
     * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TabControl` in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `TabControl` in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -66,6 +67,8 @@ To add the `TabControl` manually in XAML, follow these steps:
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF TabControl via C#
 
@@ -78,8 +81,9 @@ To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) cont
 
 3. Include the required namespace and create an instance of `TabControl` and add it to the window.
 
-4.	Declare the `TabControl` control using C#.
+4. Declare the `TabControl` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -103,6 +107,8 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Adding WPF TabControl to the window](Getting-Started_images/wpf-tabcontrol-addingtabcontrol.png)
 

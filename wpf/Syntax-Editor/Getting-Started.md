@@ -51,20 +51,21 @@ The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Edi
 
 To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Edit.WPF
+        * Syncfusion.Edit.WPF
 
-* Syncfusion.GridCommon.WPF
+        * Syncfusion.GridCommon.WPF
 
-* Syncfusion.Shared.WPF
+        * Syncfusion.Shared.WPF
 
-* Syncfusion.Tools.WPF
+        * Syncfusion.Tools.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the EditControl in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the EditControl in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -94,25 +95,28 @@ VerticalAlignment="Top" Width="300"/>
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF EditControl via C#
 
 To add the [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) manually in C#, follow these steps:
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Edit.WPF
+        * Syncfusion.Edit.WPF
 
-* Syncfusion.GridCommon.WPF
+        * Syncfusion.GridCommon.WPF
 
-* Syncfusion.Shared.WPF
+        * Syncfusion.Shared.WPF
 
-* Syncfusion.Tools.WPF
+        * Syncfusion.Tools.WPF
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -122,9 +126,12 @@ using Syncfusion.Windows.Edit;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html), and add it to the window.
+4. Create an instance of [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html), and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -140,6 +147,8 @@ public MainWindow()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Adding EditControl to Project](Getting-Started_images/Getting-Started_img3.jpeg)
 

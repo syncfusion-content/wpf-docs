@@ -29,11 +29,12 @@ The SfCircularProgressBar control can be added to a WPF application by dragging 
 
 To add control manually in XAML, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.SfProgressBar.WPF     
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
-3.	Declare the SfCircularProgressBar control in the XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
+3. Declare the SfCircularProgressBar control in the XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window
@@ -52,16 +53,20 @@ To add control manually in XAML, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 ## Adding  control through code behind
 
 To add control manually through code behind, follow the given steps:
 
-1.	Add the following required assembly references to the project:
-   * Syncfusion.SfProgressBar.WPF
-2.	Import the Circular ProgressBar namespace **using Syncfusion.UI.Xaml.ProgressBar;**.
-3.	Create an Circular ProgressBar instance, and add it to the window.
+1. Add the following required assembly references to the project:
+    * Syncfusion.SfProgressBar.WPF
+2. Import the Circular ProgressBar namespace **using Syncfusion.UI.Xaml.ProgressBar;**.
+3. Create an Circular ProgressBar instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.UI.Xaml.ProgressBar;
@@ -86,6 +91,9 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 ![wpf Circular ProgressBar control added through code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
 

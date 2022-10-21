@@ -37,12 +37,13 @@ To add the `TimeSpanEdit` control manually in XAML, follow these steps:
 1. Create a new WPF project in Visual Studio.
 
 2. Add the  following assembly references to the project,
-   * Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `TimeSpanEdit` control in XAML page.
 
-4.	Declare the `TimeSpanEdit` control in XAML page.
+4. Declare the `TimeSpanEdit` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -60,6 +61,8 @@ To add the `TimeSpanEdit` control manually in XAML, follow these steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF TimeSpanEdit via C\#
 
@@ -72,8 +75,9 @@ To add the `TimeSpanEdit` control manually in C#, follow these steps:
 
 3. Include the required namespace and create an instance of `TimeSpanEdit` and add it to the window.
 
-4.	Declare the `TimeSpanEdit` control using C#.
+4. Declare the `TimeSpanEdit` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -95,6 +99,8 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![TimeSpanEdit control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
 

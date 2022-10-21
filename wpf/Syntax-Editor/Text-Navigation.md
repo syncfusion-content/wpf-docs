@@ -20,6 +20,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 2. [MoveToNextIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToNextIndex) to move cursor position in forward position in .
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -37,6 +38,8 @@ Me.editControl.MoveToPreviousIndex()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ### Word based navigation
@@ -47,6 +50,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 2. [MoveToPreviousWord](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToPreviousWord) moves cursor to start position of previous word.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -64,6 +68,8 @@ Me.editControl.MoveToPreviousWord()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Line based navigation
 
@@ -77,6 +83,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 4. [MoveToLineEnd](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_MoveToLineEnd) to move cursor to end postion of current line.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -94,6 +101,8 @@ Me.editControl.MoveToNextLine()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ## Keyboard Navigation
 

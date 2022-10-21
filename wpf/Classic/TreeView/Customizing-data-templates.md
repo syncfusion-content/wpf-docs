@@ -322,8 +322,9 @@ Different templates can be used for items based on specific constraints using th
 
 The following example illustrates this:
 
-1.Create the template selector as shown in the following code snippet:
+1. Create the template selector as shown in the following code snippet:
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -363,9 +364,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Define the Data templates in the Window’s resources as follows:
+2. Define the Data templates in the Window’s resources as follows:
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -379,9 +383,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Create the instance for the template selector in the Window’s resources as follows:
+3. Create the instance for the template selector in the Window’s resources as follows:
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -391,9 +398,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Use the template selector to choose the template for the TreeViewAdv as follows:
+4. Use the template selector to choose the template for the TreeViewAdv as follows:
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -404,6 +414,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 The TreeViewAdv generates as shown in the following screenshot:
 
@@ -414,8 +426,9 @@ The TreeViewAdv generates as shown in the following screenshot:
 
 The user can modify the template while editing the TreeViewItemAdv. The following example illustrates the process of changing the template:
 
-1.Create the DataTemplate instance for the EditTemplate as follows:
+1. Create the DataTemplate instance for the EditTemplate as follows:
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -427,9 +440,12 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-2.Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
+2. Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -445,6 +461,8 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 While editing the TreeViewItemAdv appears as shown in the following screen shot:
 
@@ -457,8 +475,9 @@ The user can choose the template at runtime for editing the TreeViewAdv.
 
 The following example explains how to choose the template at runtime:
 
-1.Create the template selector as given in the following code snippet:
+1. Create the template selector as given in the following code snippet:
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -500,9 +519,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2.Define the Data templates in the Window’s resources as follows:
+2. Define the Data templates in the Window’s resources as follows:
 
+{% capture codesnippet8 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -517,9 +539,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.Create the instance for the template selector in the Window’s resources as follows:
+3. Create the instance for the template selector in the Window’s resources as follows:
 
+{% capture codesnippet9 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -529,9 +554,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-4.Use the template selector to choose the template for the TreeViewAdv as follows:
+4. Use the template selector to choose the template for the TreeViewAdv as follows:
 
+{% capture codesnippet10 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -547,6 +575,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 The TreeViewAdv generates as shown in the following screenshot:
 

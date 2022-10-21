@@ -4993,6 +4993,7 @@ Choose the Export to PDF sample to launch.
 1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: 
 [Data Binding](http://help.syncfusion.com/wpf/griddata/data-binding).
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="grid"                            
@@ -5050,8 +5051,8 @@ Choose the Export to PDF sample to launch.
 </syncfusion:GridDataControl>
 
 {% endhighlight  %}
-
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 Bind a button command to the ColumnChooserCommand command
 

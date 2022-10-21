@@ -98,6 +98,7 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 3. Declare [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 <syncfusion:MenuAdv  Height="25" VerticalAlignment="Top">
@@ -119,6 +120,8 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 </syncfusion:MenuAdv>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control manually in C#, do the below steps,
@@ -129,14 +132,18 @@ In order to add [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.
 
 2. Import MenuAdv namespace **Syncfusion.Windows.Shared**.
 
+{% capture codesnippet2 %}
 {% highlight C# %}
 
 using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Create MenuAdv control instance and add it to the page.
 
+{% capture codesnippet3 %}
 {% highlight C# %}
 
 MenuAdv mAdv = new MenuAdv();
@@ -172,6 +179,8 @@ mAdv.Items.Add(product);
 this.Content = mAdv;
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-menuadv-getting-started-sample)
 

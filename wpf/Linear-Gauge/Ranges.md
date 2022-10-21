@@ -371,9 +371,10 @@ Using the [`RangeOffset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 The range can be placed above or below the scale by choosing one of the following options available in the [`RangePosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_RangePosition) property:
 
-1.	Above(Default)
-2.	Below
+1. Above(Default)
+2. Below
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xml %}
@@ -443,6 +444,8 @@ The range can be placed above or below the scale by choosing one of the followin
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Ranges - Linear Gauge](Ranges_images/Ranges_img5.png)
 

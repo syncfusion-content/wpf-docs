@@ -15,6 +15,7 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 1. Create a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml%}
 
@@ -23,9 +24,12 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 {% endhighlight %}			
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Add the [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html) to the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -46,9 +50,12 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. The snippet below demonstrates the steps to add items to a [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control in code:
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -79,6 +86,8 @@ hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
    The following figure shows the items added in code displayed on the interface.
 
@@ -98,6 +107,7 @@ The steps to bind to a Business Object collection are as follows:
 
 1. Create a class named HierarchyItem.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -130,9 +140,12 @@ public class HierarchyItem
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Create a collection for `ItemsSource` to bind with.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -156,10 +169,13 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 
 3. In XAML, bind the collections to the `ItemsSource` property of the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) control.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -176,6 +192,8 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
    The following screenshot shows the items added in code displayed on the interface.
 
@@ -218,6 +236,7 @@ The steps to bind XML data to a [HierarchyNavigator](https://help.syncfusion.com
 
 1. Create a separate class that represents the node in an XML document. In this example, a class named Category is created.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -236,9 +255,12 @@ public class HierarchyItem
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 2. Convert the XML data to a collection, and then bind the collection to the `ItemsSource` property of [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html).
 
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -273,10 +295,13 @@ public partial class MainPage : UserControl
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 
 3. The code for the [HierarchyNavigator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.HierarchyNavigator.html) is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
 
+{% capture codesnippet9 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -290,6 +315,8 @@ public partial class MainPage : UserControl
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
@@ -314,6 +341,7 @@ The steps to bind XML data through WCF services are as follows:
 4. Add an ASP.NET Web application with the sample application, and then add a new WCF Service item to the Web application, to create a WCF service application.
 5. Create an Observable Collection from XML data to bind in ItemsSource, as shown below in the service class that has a return type of ObservableCollection.
 
+{% capture codesnippet10 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -411,6 +439,8 @@ x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Heig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 The image displayed below shows the output of the above code—items bound to XML data.
 

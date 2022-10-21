@@ -13,6 +13,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 * Slide – The item/page navigates with slide effect.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -21,9 +22,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Fade – During navigation, the previous item fades out and the new item appears with variation in opacity.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -32,9 +36,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Zoom – The new item appears with a zooming effect.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -43,9 +50,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * Blur – The new item appears with blur effect.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -54,9 +64,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * Push – The new item descends from the top 
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -65,9 +78,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 * PushIn – The new item ascends from the bottom
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -76,9 +92,12 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 * Wipe – The old item gets washed out and the new item appears.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -87,3 +106,5 @@ Transition Effect property is used to set the animation effect for the tab navig
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}

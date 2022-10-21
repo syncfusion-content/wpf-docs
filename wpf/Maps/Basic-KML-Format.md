@@ -35,6 +35,7 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 2. Folder names
 3. KmlFileName.kml
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
         <syncfusion:SfMap>
@@ -45,6 +46,8 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
         </syncfusion:SfMap>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![KML Shapes Support in ShapeFileLayer](KML-Shapes-Rendered-in-ShapeFileLayer_images/KML-Shapes-Rendered-in-ShapeFileLayer_img1.png)
 

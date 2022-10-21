@@ -54,8 +54,9 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `ColorPickerPalette` control in XAML page.
 
-4.	Declare the `ColorPickerPalette` control in XAML page.
+4. Declare the `ColorPickerPalette` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -73,6 +74,8 @@ To add the `ColorPickerPalette` control manually in XAML, follow these steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF ColorPickerPalette via C\#
 
@@ -85,8 +88,9 @@ To add the `ColorPickerPalette` control manually in C#, follow these steps:
 
 3. Include the required namespace and create an instance of `ColorPickerPalette` and add it to the window.
 
-4.	Declare the `ColorPickerPalette` control using C#.
+4. Declare the `ColorPickerPalette` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -108,6 +112,8 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![ColorPickerPalette control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
 

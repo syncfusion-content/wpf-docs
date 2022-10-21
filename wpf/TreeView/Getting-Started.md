@@ -52,6 +52,7 @@ In order to add control manually in XAML, do the below steps,
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 3. Declare SfTreeView control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -71,6 +72,8 @@ In order to add control manually in XAML, do the below steps,
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 #### Adding SfTreeView by C#.
 
@@ -83,6 +86,7 @@ In order to add control manually in C#, do the below steps,
 2. Import SfTreeView namespace **using Syncfusion.UI.Xaml.TreeView** .
 3. Create SfTreeView control instance and add it to the Page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -107,6 +111,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Populating Nodes without data source - Unbound Mode
 

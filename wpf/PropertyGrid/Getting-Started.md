@@ -43,6 +43,7 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `PropertyGrid` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -62,6 +63,8 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF PropertyGrid via C#
 
@@ -76,6 +79,7 @@ To add the `PropertyGrid` control manually in C#, follow these steps:
 
 3. Include the required namespace and create an instance of `PropertyGrid` and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -99,6 +103,8 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![PropertyGrid control added to Window by code](Getting-Started_images/Getting-Started_img15.png)
 
