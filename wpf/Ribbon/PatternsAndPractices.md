@@ -293,7 +293,7 @@ ItemsSource="{Binding CustomRibbonTabs}"
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-5.Converter class is used to set `SizeForm` for the Ribbon items and to set images.
+5. Converter class is used to set `SizeForm` for the Ribbon items and to set images.
 
 #### Converter.cs
 
@@ -526,7 +526,7 @@ End Class
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 
-5.Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
+5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
 
 {% capture codesnippet7 %}
 

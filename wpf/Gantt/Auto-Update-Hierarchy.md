@@ -444,6 +444,8 @@ public class Task : NotificationObject
 }
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
 

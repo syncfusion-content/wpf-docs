@@ -17,7 +17,7 @@ If we want to display some related properties under the specific category, we ca
 
 For example, the `Background`, `BorderBrush` and `Foreground` are brush type properties. They will categorized under 'A-Brushes' category. ColorEdit controls will assigned as the value editor for the above properties and located in the same place. Based on the property selection, respective `ColorEdit` control will be in the view to pick the color for that property.
 
-a) `ColorEdit` control visibility converter
+a. `ColorEdit` control visibility converter
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -55,7 +55,7 @@ public class SelectedIndexToVisibility : IValueConverter {
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
  
- b) Creating the CategoryEditor for the properties:
+ b. Creating the CategoryEditor for the properties:
 
 {% capture codesnippet2 %}
 {% tabs %}

@@ -61,10 +61,10 @@ To add control manually in XAML, follow the given steps:
 
 To add control manually through code behind, follow the given steps:
 
-1.	Add the following required assembly references to the project:
-   * Syncfusion.SfProgressBar.WPF
-2.	Import the Circular ProgressBar namespace **using Syncfusion.UI.Xaml.ProgressBar;**.
-3.	Create an Circular ProgressBar instance, and add it to the window.
+1. Add the following required assembly references to the project:
+    * Syncfusion.SfProgressBar.WPF
+2. Import the Circular ProgressBar namespace **using Syncfusion.UI.Xaml.ProgressBar;**.
+3. Create an Circular ProgressBar instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}

@@ -309,11 +309,11 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 `SymbolPointer` in the scale can be placed above, below, or in between the scale by choosing the following options available in the [`SymbolPointerPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearPointer.html#Syncfusion_UI_Xaml_Gauges_LinearPointer_SymbolPointerPosition) property:
 
-1.	Above
+1. Above
 
-2.	Below (Default)
+2. Below (Default)
 
-3.	Cross
+3. Cross
 
 {% capture codesnippet1 %}
 {% tabs %}

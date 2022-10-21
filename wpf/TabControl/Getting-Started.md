@@ -81,7 +81,7 @@ To add the [TabControl](https://www.syncfusion.com/wpf-controls/tabcontrol) cont
 
 3. Include the required namespace and create an instance of `TabControl` and add it to the window.
 
-4.	Declare the `TabControl` control using C#.
+4. Declare the `TabControl` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}

@@ -122,9 +122,9 @@ The label font can be customized using the [`LabelSize`](https://help.syncfusion
 
 The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of `LabelPosition` property is below.
 
-1.	Above
+1. Above
 
-2.	Below (Default)
+2. Below (Default)
 
 {% capture codesnippet1 %}
 {% tabs %}

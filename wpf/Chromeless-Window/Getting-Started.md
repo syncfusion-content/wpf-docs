@@ -66,7 +66,7 @@ The following steps help you add ChromelessWindow:
     xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF">
 </syncfusion:ChromelessWindow>
 
-4.	Add the **Syncfusion.Windows.Shared namespace**, and inherit MainWindow from ChromelessWindow in code behind.
+4. Add the **Syncfusion.Windows.Shared namespace**, and inherit MainWindow from ChromelessWindow in code behind.
 
 {% capture codesnippet2 %}
 {% tabs %}

@@ -88,7 +88,7 @@ To add the `ColorPickerPalette` control manually in C#, follow these steps:
 
 3. Include the required namespace and create an instance of `ColorPickerPalette` and add it to the window.
 
-4.	Declare the `ColorPickerPalette` control using C#.
+4. Declare the `ColorPickerPalette` control using C#.
 
 {% capture codesnippet2 %}
 {% tabs %}

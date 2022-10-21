@@ -124,7 +124,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | OrderList_Indent_Level_2 }}
 
 N> You can add multiple `HunspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `HunspellDictionary` is used for spell check.
 
@@ -229,7 +229,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+{{ codesnippet4 | OrderList_Indent_Level_2 }}
 
 N> You can add multiple `IspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `IspellDictionary` is used for spell check.
 
@@ -334,7 +334,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }}
+{{ codesnippet6 | OrderList_Indent_Level_2 }}
 
 N> You can add multiple `OpenOfficeDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `OpenOfficeDictionary` is used for spell check.
 
@@ -451,7 +451,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet8 | OrderList_Indent_Level_1 }}
+{{ codesnippet8 | OrderList_Indent_Level_2 }}
 
 N> As custom dictionary hold extra words that is not available in standard dictionary, it is always used in conjunction with standard dictionary.
 

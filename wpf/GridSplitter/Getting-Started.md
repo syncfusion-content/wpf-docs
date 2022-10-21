@@ -31,11 +31,11 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 To add the control manually in XAML, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the `SfGridSplitter` control in the XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Declare the `SfGridSplitter` control in the XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -62,11 +62,11 @@ To add the control manually in XAML, follow the given steps:
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2.	Import the `SfGridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
-3.	Create an `SfGridSplitter` instance, and add it to the window.
+2. Import the `SfGridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
+3. Create an `SfGridSplitter` instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}
