@@ -13,12 +13,12 @@ The WPF hub tile and pulsing tile controls are used to create a UI similar to th
 
 ## Key Features
 
-* Hub Tile – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and provides support for the display of primary and secondary content for updates and notifications.
+* **Hub Tile** – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and provides support for the display of primary and secondary content for updates and notifications.
 
-* Pulsing Tile – Supports tile feature similar to music and video tiles in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
+* **Pulsing Tile** – Supports tile feature similar to music and video tiles in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
   
-* Grouping - Support for grouping multiple tiles together.
+* **Grouping** - Support for grouping multiple tiles together.
 
-* Freezing/Unfreezing – Support for freezing and unfreezing the tile.
+* **Freezing/Unfreezing** – Support for freezing and unfreezing the tile.
 
-* Themes -  Support for customizing the tile using different themes.
+* **Themes** -  Support for customizing the tile using different themes.

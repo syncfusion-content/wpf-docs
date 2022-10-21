@@ -152,6 +152,7 @@ DockingManager.SetState(content1, DockState.Float)
 
 * Setting state as Document – To create document window in the DockingManager, set [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html#Syncfusion_Windows_Tools_Controls_DockingManager_UseDocumentContainer) as True for DockingManager and set its state as Document.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -169,12 +170,15 @@ DockingManager.SetState(content1, DockState.Document)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![WPF Docking Window Document State](Dealing-with-Windows_images/wpf-docking-window-document-state.jpeg)
 
 
 * Setting state as AutoHidden
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -190,6 +194,8 @@ DockingManager.SetState(content1, DockState.AutoHidden)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![WPF Docking Window AutoHidden State](Dealing-with-Windows_images/wpf-docking-window-autohidden-state.jpeg)
 

@@ -23,28 +23,29 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF SfRadialSlider via designer
 
-1) The `SfRadialSlider` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1. The `SfRadialSlider` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.SfRadialMenu.WPF 
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfRadialMenu.WPF 
+    * Syncfusion.SfShared.WPF
 
 ![wpf SfRadialSlider control added by designer](GettingStarted_images/wpf-SfRadialSlider-control-added-by-designer.png)
 
-2) Set the properties for `SfRadialSlider` in design mode using the SmartTag feature.
+2. Set the properties for `SfRadialSlider` in design mode using the SmartTag feature.
 
 ## Adding WPF SfRadialSlider via XAML
 
 To add the `SfRadialSlider` manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.SfRadialMenu.WPF 
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfRadialMenu.WPF 
+    * Syncfusion.SfShared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the SfRadialSlider in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the SfRadialSlider in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -68,19 +69,22 @@ To add the `SfRadialSlider` manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF SfRadialSlider via C#
 
 To add the `SfRadialSlider` manually in C#, follow these steps:
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -88,9 +92,12 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of `SfRadialSlider`, and add it to the window.
+4. Create an instance of `SfRadialSlider`, and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -103,6 +110,8 @@ radialSlider.Width = 200;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![wpf SfRadialSlider control added by code-behind](GettingStarted_images/Codebehind_SfRadialSlider.png)
 

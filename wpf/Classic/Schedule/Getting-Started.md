@@ -28,6 +28,7 @@ To add the control manually in XAML page, follow the given steps:
 2. Import WPF schema `http://schemas.syncfusion.com/wpf` in the XAML page.
 3. Declare the `SfSchedule` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="SfScheduleSample.MainWindow"   
@@ -42,6 +43,8 @@ To add the control manually in XAML page, follow the given steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 #### Add control manually in C&#35;
 To manually attach control to C #, follow the following steps:
@@ -50,6 +53,7 @@ To manually attach control to C #, follow the following steps:
 2. Import the `SfSchedule` namespace `using Syncfusion.UI.Xaml.Schedule`.
 3. Create an `SfSchedule` instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Schedule;
@@ -63,6 +67,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 Run the code above and now you can see the empty scheduler as follows, but without appointments. To view the scheduler appointments, whether local or remote information must be passed on to the scheduler.
 

@@ -21,8 +21,7 @@ Follow the below steps to bind SfDataGrid with SfDataPager.
 
 3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
 
-
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Grid>
@@ -121,6 +120,8 @@ public class OrderInfo
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![WPF DataGrid diplays Multiple Pages using SfDataPager](Paging_images/wpf-datagrid-multiple-page.png)
 

@@ -107,8 +107,9 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.Ribbon.html#Syncfusion_Windows_Tools_Controls_Ribbon_IsBackStageVisible) property of Ribbon enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
 
-1) Through Property 
+1. Through Property 
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -124,9 +125,12 @@ _ribbon.IsBackStageVisible = true;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2) Through Methods
+2. Through Methods
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -160,11 +164,14 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3) Through Commands
+3. Through Commands
 
 Ribbon control provides the static command [OpenBackStage](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) to show/hide the BackStage based on the parameter passed to it.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -178,6 +185,8 @@ Ribbon control provides the static command [OpenBackStage](https://help.syncfusi
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.RibbonCommands.html#Syncfusion_Windows_Tools_Controls_RibbonCommands_OpenBackStage) command, CommandTarget and CommandParameter must be defined.
 

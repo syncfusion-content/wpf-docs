@@ -24,7 +24,7 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 * Setting DockTabAlignment as `Left`.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -48,13 +48,15 @@ DockingManager1.DockTabAlignment = Dock.Left;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ![WPF Docking Left TabAlignment](TabbedWindow_images/wpf-docking-left-tab-alignment.jpeg)
 
-
 * Setting DockTabAlignment as `Right`
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -78,6 +80,8 @@ DockingManager1.DockTabAlignment = Dock.Right;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ![WPF Docking Right TabAlignment](TabbedWindow_images/wpf-docking-right-tab-alignment.jpeg)
@@ -85,6 +89,7 @@ DockingManager1.DockTabAlignment = Dock.Right;
 
 * Setting DockTabAlignment as `Top`
 
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -109,6 +114,8 @@ SyncDockingManager.DockTabAlignment = Dock.Top;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![WPF Docking Top TabAlignment](TabbedWindow_images/wpf-docking-top-tab-alignment.jpeg)
 

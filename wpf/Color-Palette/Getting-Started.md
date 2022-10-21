@@ -54,6 +54,7 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 3. Declare [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -76,6 +77,8 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![ColorPalette added by xaml code](Getting-Started_images/ColorPalette_img.png)
 
@@ -91,6 +94,7 @@ In order to add [SfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.W
 
 2. Import SfColorPalette namespace **Syncfusion.Windows.Controls.Media** .
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -100,11 +104,13 @@ using Syncfusion.Windows.Controls.Media;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Create [sfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) control instance and add it to the Page.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight c# %}
 
     public partial class MainWindow : Window
@@ -124,6 +130,8 @@ using Syncfusion.Windows.Controls.Media;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 

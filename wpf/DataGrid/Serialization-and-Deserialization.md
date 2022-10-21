@@ -380,6 +380,7 @@ To serialize the above DatePickerColumn, follow the below steps.
  
 1. Create a class derived from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) and define the custom column properties in `SerializableCustomGridColumn` class.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name="SerializableCustomGridColumn")]
@@ -392,9 +393,12 @@ public class SerializableCustomGridColumn : SerializableGridColumn
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
+2. Create a new class named as SerializationControllerExt by overriding [SerializationController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html) class.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
@@ -409,9 +413,13 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.You can get the custom column property settings for serialization by overriding the [GetSerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetSerializableDataGrid) virtual method.
 
+3. You can get the custom column property settings for serialization by overriding the [GetSerializableGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetSerializableDataGrid) virtual method.
+
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
@@ -434,9 +442,12 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Store the custom column property settings during serialization by overriding the [StoreGridColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_StoreGridColumnProperties_Syncfusion_UI_Xaml_Grid_GridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
+4. Store the custom column property settings during serialization by overriding the [StoreGridColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_StoreGridColumnProperties_Syncfusion_UI_Xaml_Grid_GridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
  
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
@@ -457,9 +468,12 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5.Add the custom column in to known column types by overriding the [KnownTypes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_KnownTypes) virtual method.
+5. Add the custom column in to known column types by overriding the [KnownTypes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_KnownTypes) virtual method.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
@@ -479,9 +493,12 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-6.During deserialization, you can get the custom column settings from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
+6. During deserialization, you can get the custom column settings from [SerializableGridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializableGridColumn.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_GetGridColumn_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_) virtual method.
  
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
@@ -501,9 +518,12 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-7.Now restore the custom column settings from SerializableGridColumn by overriding the [RestoreColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_RestoreColumnProperties_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_Syncfusion_UI_Xaml_Grid_GridColumn_) virtual method.
+7. Now restore the custom column settings from SerializableGridColumn by overriding the [RestoreColumnProperties](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SerializationController.html#Syncfusion_UI_Xaml_Grid_SerializationController_RestoreColumnProperties_Syncfusion_UI_Xaml_Grid_SerializableGridColumn_Syncfusion_UI_Xaml_Grid_GridColumn_) virtual method.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
@@ -525,6 +545,8 @@ public class SerializationControllerExt : SerializationController
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_Deserialization-1590961253.zip).
 

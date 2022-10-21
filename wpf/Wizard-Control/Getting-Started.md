@@ -54,6 +54,7 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 
 3. Declare [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -75,6 +76,8 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in C#, do the below steps,
@@ -88,6 +91,7 @@ In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Wi
 
 3. Create WizardControl instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -112,6 +116,8 @@ namespace WizardControl
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![GettingStarted of WizardControl](Getting-Started_images/Getting-Started_img1.jpeg)
 

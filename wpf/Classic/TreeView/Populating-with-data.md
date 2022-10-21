@@ -145,6 +145,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 1. Create the XML file with the following details and name it as Data.xml:
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -177,9 +178,12 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Add the XmlDataProvider for the above XML document as follows:
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -191,9 +195,12 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Set the ItemsSource property for the TreeViewAdv as follows:
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -209,6 +216,8 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. TreeViewAdv will be created as follows:
 
@@ -222,6 +231,7 @@ TreeViewAdv supports object binding. The following example illustrates data bind
 
 1. Create a class that acts as a model for TreeViewAdv as given in the following code snippet:
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -253,9 +263,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Create a ViewModel class and initialize the items as given in the following code snippet:
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -330,9 +343,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 3. Create a ViewModel instance and use it as DataContext for the Root Window as given in the following code snippet:
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -344,9 +360,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 4. Configure the ItemsSource and ItemTemplate of the TreeViewAdv as given below:
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -362,6 +381,8 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 5. The TreeViewAdv will be created as follows:
 

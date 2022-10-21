@@ -33,14 +33,15 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 To add the `ColorPicker` manually in XAML, follow these steps:
 
-1) Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 
-2) Add the following required assembly reference to the project:
+2. Add the following required assembly reference to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `ColorPicker` in WPF XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `ColorPicker` in WPF XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -59,6 +60,8 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![ColorPicker Dropdown](Getting-Started_images/ColorPicker_Dropdown.png)
 
@@ -66,14 +69,15 @@ To add the `ColorPicker` manually in XAML, follow these steps:
 
 To add the `ColorPicker` manually in C#, follow these steps:
 
-1) Create a new WPF application via Visual Studio.
+1. Create a new WPF application via Visual Studio.
 
-2) Add the following required assembly references to the project:
+2. Add the following required assembly references to the project:
 
-* Syncfusion.Shared.WPF
+    * Syncfusion.Shared.WPF
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -81,9 +85,13 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of `ColorPicker`, and add it to the window.
 
+4. Create an instance of `ColorPicker`, and add it to the window.
+
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -93,6 +101,9 @@ colorPicker.Height=100;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
 
 ![ColorPicker Control](Getting-Started_images/ColorPicker_Dropdown.png)
 

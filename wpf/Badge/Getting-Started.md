@@ -34,6 +34,7 @@ To add the `SfBadge` manually in XAML, follow these steps:
 
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `SfBadge` in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -52,6 +53,8 @@ To add the `SfBadge` manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF SfBadge via C#
 
@@ -68,6 +71,7 @@ To add the `SfBadge` control manually in C#, follow these steps:
 
 4. Declare the `SfBadge` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -92,6 +96,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding badge for a Button
 

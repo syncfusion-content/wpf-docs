@@ -175,6 +175,7 @@ Steps to add page header while printing,
 
 1. Create DataTemplate in Application.Resources.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -190,9 +191,12 @@ Steps to add page header while printing,
 </Application.Resources>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and assign value for `PrintSettings.PageHeaderHeight` property also.
+2. Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and assign value for `PrintSettings.PageHeaderHeight` property also.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -220,8 +224,10 @@ editcontrol.ShowPrintPreview
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PageFooterTemplate` also.
+3. Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PageFooterTemplate` also.
 
 ![Print window](Printing_images/header.png)
 

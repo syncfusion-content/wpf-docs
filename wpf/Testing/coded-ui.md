@@ -132,8 +132,9 @@ To add the CUIT file, follow the steps:
 
 ![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
 
-9.Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
+9. Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public void RecordedMethod1()
@@ -147,6 +148,8 @@ public void RecordedMethod1()
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 10.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in `Coded UI Test Builder`.
 ![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
@@ -155,8 +158,9 @@ public void RecordedMethod1()
 
 Application can be tested with the generated CUIT method. Follow the procedure to test the recorded steps:
 
-1.Add a test method called CodedUITestProject1.
+1. Add a test method called CodedUITestProject1.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -181,6 +185,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 2.Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
 
@@ -653,8 +659,9 @@ GroupNameSortDirection
 
 Follow the steps to create a `Coded UI Test` project and test the SfDataGrid application.
 
-1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the `Coded UI Test` by setting AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1. Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the `Coded UI Test` by setting AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
@@ -665,6 +672,8 @@ public MainWindow()
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 2.Build the application and launch the .exe file from bin folder.
 
@@ -736,8 +745,9 @@ public void Mouse_Click_on_GridHeaderCell()
 
 Follow the steps to create a **Coded UI Test** project and test the tree grid application.
 
-1.Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1. Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
@@ -748,6 +758,8 @@ public MainWindow()
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2.Build the application and launch the .exe file from the bin folder.
 
@@ -834,8 +846,9 @@ Follow the steps to prepare the grid application.
 
 1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
 
-2.Open App.xaml file. 
+2. Open App.xaml file. 
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 <Application x:Class="WpfApplication3.App"
@@ -848,9 +861,12 @@ Follow the steps to prepare the grid application.
 </Application>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.Change the application to Syncfusion:GridControlTestApplication.
+3. Change the application to Syncfusion:GridControlTestApplication.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
@@ -864,9 +880,12 @@ Follow the steps to prepare the grid application.
 </syncfusion:GridControlTestApplication>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4.For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
+4. For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight xaml %}
 namespace WpfApplication3 
@@ -881,14 +900,16 @@ namespace WpfApplication3 
 } 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 5.Build the application for testing.
 
-6.Add the following reference in your sample.
+6. Add the following reference in your sample.
 
-* Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll
+  * Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll
 
-* Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
+  * Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
 
 7.To create, record and run the tests for Coded UI Test project, you can refer this section [Create, Record, and Run the tests](https://help.syncfusion.com/wpf/testing/coded-ui#create-record-and-run-the-tests).
 

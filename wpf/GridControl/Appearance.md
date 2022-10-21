@@ -193,8 +193,9 @@ Determines the angle of rotation of the text</td></tr>
 </table>
 
 
-1.Setting Text, Foreground and Font Properties
+1. Setting Text, Foreground and Font Properties
 
+{% capture codesnippet1 %}
 {% tabs %}
 {%highlight c#%}
 
@@ -230,6 +231,8 @@ this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
 this.grid.Model[8, 5].CellValue = "Font style is Normal";
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 #### Output
 
@@ -237,8 +240,9 @@ The following output is generated using the code above.
 
 ![Change the font style and color in WPF GridControl](Appearance_images/Appearance_img4.jpeg)
 
-2.Setting cell orientation
+2. Setting cell orientation
 
+{% capture codesnippet2 %}
 {% tabs %}
 {%highlight c#%}
 this.grid.Model[12, 1].Font.Orientation = 45;
@@ -268,6 +272,8 @@ this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
 this.grid.Model.RowHeights[12] = 50;
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 #### Output
@@ -406,8 +412,9 @@ s</td><td>
 </table>
 
 
-1.Setting text format
+1. Setting text format
 
+{% capture codesnippet3 %}
 {% tabs %}
 {%highlight c#%}
 //Setting Text formats            
@@ -433,9 +440,12 @@ rowIndex += 3;
 }
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.Setting DateTime format
+2. Setting DateTime format
 
+{% capture codesnippet4 %}
 {% tabs %}
 {%highlight c#%}
 //Setting DateTime formats            
@@ -460,7 +470,9 @@ foreach (string format in new string[]
 	rowIndex += 3;
 }
 {%endhighlight%}
-{% endtabs %}   
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}  
 
 #### Output
 

@@ -23,8 +23,8 @@ The various elements of the [sfColorPalette](https://help.syncfusion.com/cr/wpf/
 
 ## Key features
 
-Color Swatches – You can choose different color items from the different swatches colors.
+* **Color Swatches** – You can choose different color items from the different swatches colors.
 
-SelectedColor – Returns the currently selected color.
+* **SelectedColor** – Returns the currently selected color.
 
-Binding support – Selected color can be bound with any object.
+* **Binding support** – Selected color can be bound with any object.

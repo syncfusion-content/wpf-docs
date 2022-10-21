@@ -166,6 +166,7 @@ Steps to add page header while printing,
 
 1. Create DataTemplate in `Application.Resources`.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -181,9 +182,12 @@ Steps to add page header while printing,
 </Application.Resources>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Set the above defined DataTemplate to [PrintSettings.PrintPageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageHeaderTemplate) and assign value for [PrintSettings.PrintPageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageHeaderHeight) property also.
+2. Set the above defined DataTemplate to [PrintSettings.PrintPageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageHeaderTemplate) and assign value for [PrintSettings.PrintPageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageHeaderHeight) property also.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 dataGrid.PrintSettings = new PrintSettings();
@@ -192,8 +196,10 @@ dataGrid.PrintSettings.PrintPageHeaderTemplate = Application.Current.Resources["
 dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageFooterTemplate) also.
+3. Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageFooterTemplate) also.
 
 ![Customizing Header Height in Print Preview for WPF DataGrid](Printing_images/wpf-datagrid-height-customization.png)
 
@@ -901,8 +907,9 @@ You can create custom print preview window by adding [PrintPreviewAreaControl](h
 
 Steps to create `custom print preview` window.
 
-1.Add [PrintPreviewAreaControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html)  and required controls to print or customize the print settings.
+1. Add [PrintPreviewAreaControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html)  and required controls to print or customize the print settings.
  
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight xaml %}
  <Grid>
@@ -931,9 +938,12 @@ Steps to create `custom print preview` window.
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.Assign the instance of [GridPrintManager](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPrintManager.html) to [PrintPreviewAreaControl.PrintManagerBase ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html#Syncfusion_UI_Xaml_Grid_PrintPreviewAreaControl_PrintManagerBase) property.
+2. Assign the instance of [GridPrintManager](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPrintManager.html) to [PrintPreviewAreaControl.PrintManagerBase ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html#Syncfusion_UI_Xaml_Grid_PrintPreviewAreaControl_PrintManagerBase) property.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 var window = new PreviewWindow
@@ -944,15 +954,20 @@ window.PrintPreviewArea.PrintManagerBase = new GridPrintManager(dataGrid);
 window.ShowDialog();
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.You can customize print settings like scaling, Orientation at runtime by using [PrintPreviewAreaControl.PrintManagerBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html#Syncfusion_UI_Xaml_Grid_PrintPreviewAreaControl_PrintManagerBase) and it will be reflected it custom print preview window. 
+3. You can customize print settings like scaling, Orientation at runtime by using [PrintPreviewAreaControl.PrintManagerBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html#Syncfusion_UI_Xaml_Grid_PrintPreviewAreaControl_PrintManagerBase) and it will be reflected it custom print preview window. 
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 this.PrintPreviewArea.PrintManagerBase.PrintScaleOption = PrintScaleOptions.FitAllRowsonOnePage;
 this.PrintPreviewArea.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![Custom Print Preview Window in WPF DataGrid](Printing_images/wpf-datagrid-custom-print-preview-window.png)
 

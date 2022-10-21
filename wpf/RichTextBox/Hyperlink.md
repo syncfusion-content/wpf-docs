@@ -157,7 +157,9 @@ SfRichTextBoxAdv.InsertHyperlinkCommand.Execute(new string[3] { "www.syncfusion.
 {% endtabs %}
 
 The following section illustrates how to insert hyperlink field with ScreenTip in RichTextBox Document through built-in hyperlink dialog UI command like Microsoft Word application.
-1.	Open insert hyperlink dialog.
+1. Open insert hyperlink dialog.
+
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <!-- Binds button to the ShowHyperlinkDialogCommand -->
@@ -165,9 +167,11 @@ The following section illustrates how to insert hyperlink field with ScreenTip i
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.	Enter the display text, URL link and ScreenTip text.
-3.	Click on OK to close the dialog box.
+2. Enter the display text, URL link and ScreenTip text.
+3. Click on OK to close the dialog box.
 
 ![Adding Hyperlink to WPF RichTextBox](Hyperlink_images/wpf-richtextbox-insert-hyperlink.PNG)
 

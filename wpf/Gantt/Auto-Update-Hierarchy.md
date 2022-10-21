@@ -44,6 +44,7 @@ To use the auto updating hierarchy support in an application:
 
 1. Create a simple class structure for business objects.
 
+{% capture codesnippet1 %}
 {% highlight c# %}
 public class Task : NotificationObject
 {
@@ -149,10 +150,12 @@ public class Task : NotificationObject
 }
 		
 {% endhighlight  %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create a collection of business objects to bind them as ItemsSource for the Gantt control.
 
+{% capture codesnippet2 %}
 {% highlight c# %}		
 TaskDetails = new ObservableCollection<Task>();
 TaskDetails = GetData();
@@ -243,9 +246,12 @@ ObservableCollection<Task> GetData()
              }));
 }
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Set the collection as ItemsSource of the Gantt control.
 
+{% capture codesnippet3 %}
 {% highlight xaml %}
 <gantt:GanttControl x:Name="Gantt"
                     Grid.Row="1"
@@ -261,6 +267,8 @@ ObservableCollection<Task> GetData()
     </gantt:GanttControl.TaskAttributeMapping>
 </gantt:GanttControl>
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ## Using Custom Logics in Business Objects
 
@@ -268,6 +276,7 @@ To use your own logics in business objects:
 
 1. Create a simple class structure for business objects. Add custom calculations on business objects to update the hierarchy when its state changed.
 
+{% capture codesnippet4 %}
 {% highlight c# %}
 
 public class Task : NotificationObject
@@ -435,9 +444,12 @@ public class Task : NotificationObject
 }
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
 
+{% capture codesnippet5 %}
 {% highlight c# %}
 
 TaskDetails = new ObservableCollection<Task>();
@@ -597,12 +609,14 @@ ObservableCollection<Task> GetData()
 }
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 3. Set the UseAutoUpdateHierarchy property as false to handle the custom calculations on the business objects. Set the collection as ItemsSource of the Gantt control.
 
    N> If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
-
+{% capture codesnippet6 %}
 {% highlight xaml %}
 
 <gantt:GanttControl x:Name="Gantt"
@@ -620,6 +634,8 @@ ObservableCollection<Task> GetData()
 </gantt:GanttControl>
 
 {% endhighlight  %}	
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 Output:
 

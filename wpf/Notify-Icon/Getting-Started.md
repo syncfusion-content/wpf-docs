@@ -32,17 +32,18 @@ Create a new WPF project to show the [NotifyIcon](https://help.syncfusion.com/cr
 
 To add the control manually to the XAML page, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.Shared.WPF
-* Syncfusion.Tools.WPF
-* Syncfusion.Shared.WPF.Classic
-* Syncfusion.Tools.WPF.Classic
+    * Syncfusion.Shared.WPF
+    * Syncfusion.Tools.WPF
+    * Syncfusion.Shared.WPF.Classic
+    * Syncfusion.Tools.WPF.Classic
 
-2.Import Syncfusion.WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or **clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf.Classic** namespace.
+2. Import Syncfusion.WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page or **clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf.Classic** namespace.
 
-3.Declare the `NotifyIcon` control in XAML page.
+3. Declare the `NotifyIcon` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -65,22 +66,25 @@ To add the control manually to the XAML page, follow the given steps:
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
-1.Add the following required assembly references to the project,
+1. Add the following required assembly references to the project,
 
-* Syncfusion.Shared.WPF
-* Syncfusion.Tools.WPF
-* Syncfusion.Shared.WPF.Classic
-* Syncfusion.Tools.WPF.Classic
+    * Syncfusion.Shared.WPF
+    * Syncfusion.Tools.WPF
+    * Syncfusion.Shared.WPF.Classic
+    * Syncfusion.Tools.WPF.Classic
 
-2.Import the `NotifyIcon` namespace **Syncfusion.Windows.Tools.Controls**.
+2. Import the `NotifyIcon` namespace **Syncfusion.Windows.Tools.Controls**.
 
-3.Create the `NotifyIcon` control instance and add it to the page.
+3. Create the `NotifyIcon` control instance and add it to the page.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -109,6 +113,8 @@ namespace NotifyIcon_GettingStarted
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Show the notify icon
 

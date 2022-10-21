@@ -215,21 +215,17 @@ The following are the steps to create Gantt control through designer.
 
 ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
-
 2. Select GanttControl from ToolBox.
 
 ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
-
 
 3. Drag-and-drop the GanttControl to Designer View.
 
 ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
-
 4. Gantt control is added to the window. Assembly reference will also be added to Project file.
 
 ![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
-
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
 

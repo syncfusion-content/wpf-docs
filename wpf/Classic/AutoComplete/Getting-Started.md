@@ -43,6 +43,7 @@ Following are the step-by-step instructions to add an AutoComplete control in a 
     Adding Reference
 	{:.caption}
 
+{% capture codesnippet1 %}
 {% tabs %}
 {%highlight xaml%}
 
@@ -51,8 +52,12 @@ Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf"
 
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Add Syncfusion.Tools.WPF reference in XAML and C# code as follows.
+4. Add Syncfusion.Tools.WPF reference in XAML and C# code as follows.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 {%highlight c#%}
@@ -61,9 +66,12 @@ using Syncfusion.Windows.Tools.Controls;
 
 {%endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5.Click and open the C# file. Add AutoComplete to the application.
+5. Click and open the C# file. Add AutoComplete to the application.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {%highlight c#%}
 
@@ -85,7 +93,9 @@ productSource.Add("Pdf");
 this.AutoComplete1.CustomSource = productSource;
 
 {%endhighlight%}
-{% endtabs %}   
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}  
    
    ![Creating the AutoComplete in CodeBehind](Getting-Started_images/Getting-Started_img5.png)
    
@@ -112,6 +122,8 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 3. You can now customize the properties of AutoComplete in the Properties Window.
 
+{% capture codesnippet4 %}
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -120,6 +132,8 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
     ![Creating the AutoComplete Using XAML](Getting-Started_images/Getting-Started_img8.png)
 
@@ -169,6 +183,8 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
     Properties Window
 	{:.caption}
+
+{% capture codesnippet5 %}
    
 {% tabs %}
 {% highlight xaml %}
@@ -195,6 +211,9 @@ productSource.Add("Pdf");
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
+
 ![Createing the AutoComplete Using Blend](Getting-Started_images/Getting-Started_img14.png)
 
 AutoComplete Created Using Blend
