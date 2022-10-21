@@ -35,11 +35,14 @@ This section demonstrates how to create a surface chart using the `SfSurfaceChar
 2. Choose Windows > Extensions > Syncfusion.SfChart.WPF.
 3. Add the following namespace in your XAML page.
 
+{% capture codesnippet1 %}
 {% highlight xaml %}
 
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls. You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio<version>\Assemblies (4.0/4.5.1/4.6)
 
@@ -325,11 +328,14 @@ This section demonstrates how to create a surface chart using SfSurfaceChart con
 2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
 3. Add the following namespace in code behind
 
+{% capture codesnippet2 %}
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 The following section demonstrates a simple surface chart with the data discussed in the above table.
 

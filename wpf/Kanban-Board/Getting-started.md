@@ -36,6 +36,7 @@ In this walk through, you will create a new application that contains the SfKanb
 1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
 2. Add the “Syncfusion.UI.Xaml.Kanban” namespace to the application as shown below.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -45,11 +46,13 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Kanban;assembly=Syncfusion.Sf
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Kanban;
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3. Create an instance of SfKanban control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -65,6 +68,8 @@ SfKanban kanban = new SfKanban();
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 #### Adding SfKanban from toolbox
 

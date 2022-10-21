@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
+Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) documentation to find more details about installing the NuGet package in a WPF application.
 
 ## Creating a simple application
 
@@ -42,6 +42,7 @@ To add the control manually in XAML, follow the given steps:
 2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3. Declare the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control in the XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -64,6 +65,8 @@ To add the control manually in XAML, follow the given steps:
   
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Add a control manually in C#
 
@@ -75,6 +78,7 @@ To add the control manually in C#, follow the given steps:
 2. Import the [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) namespace using **Syncfusion.Windows.Controls.Input;**.
 3. Create an [SfTextBoxExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -102,6 +106,8 @@ namespace TextBoxExt
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![GettingStarted](GettingStarted_images/GettingStarted.png)
 
@@ -111,8 +117,9 @@ AutoComplete is a data-bound control. So before create binding to the control, y
 
 For illustration, let us create a textbox, which will populate a list of employees.
 
-1.Create data object class named **Employee** and declare properties as shown below,
+1. Create data object class named **Employee** and declare properties as shown below,
 
+{% capture codesnippet3 %}
 {% highlight c# %}
 
 public class Employee
@@ -134,10 +141,13 @@ public class Employee
 }
 	
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-2.Create a **EmployeeViewModel** class with Employees property and Employees property is initialized with several data objects in constructor.
+2. Create a **EmployeeViewModel** class with Employees property and Employees property is initialized with several data objects in constructor.
 
+{% capture codesnippet4 %}
 {% highlight c# %}
 
  public class EmployeeViewModel
@@ -165,12 +175,15 @@ public class Employee
  }
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property to `IEnumerable` implementation.
+3. To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property to `IEnumerable` implementation.
 
 
 Bind the collection created in previous step to [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfTextBoxExt.html#Syncfusion_Windows_Controls_Input_SfTextBoxExt_AutoCompleteSource) property in XAML by setting EmployeeViewModel as `DataContext`.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -215,6 +228,8 @@ this.Content = textBoxExt;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 For further details, refer to [AutoComplete source](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#autocomplete-source).
 

@@ -45,6 +45,7 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 
 3. Declare [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -58,6 +59,8 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C#
 
@@ -72,6 +75,7 @@ In order to add [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Win
 
 3. Create SfCalculator control instance and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Controls.Input;
@@ -94,6 +98,8 @@ namespace SfCalculatorSample
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wpf SfCalculator control added by code](Getting-Started_images/wpf-sfcalculator-control-added-manually.png)
 

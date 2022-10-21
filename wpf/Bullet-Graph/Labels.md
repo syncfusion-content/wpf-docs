@@ -51,6 +51,7 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 1. Below (Default)
 2. Above
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -67,5 +68,7 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Labels_img2](Labels_images/Labels_img2.png)

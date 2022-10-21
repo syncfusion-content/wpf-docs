@@ -47,6 +47,7 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 3. Declare [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -67,6 +68,8 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add control manually in C#
 
@@ -81,6 +84,7 @@ In order to add [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows
 
 3. Create SfRating control instance and add it to window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -111,6 +115,8 @@ namespace SfRating_GettingStarted
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Customize number of rating items
 

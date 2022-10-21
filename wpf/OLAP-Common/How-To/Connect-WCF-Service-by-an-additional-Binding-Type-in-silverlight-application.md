@@ -73,7 +73,7 @@ contract="Syncfusion.OlapSilverlight.Manager.IOlapDataProvider" />
 
 * Declare the _IOlapDataProvider_ for Service instantiation as given in the following code:
 
-
+{% capture codesnippet1 %}
 
 {% highlight c# %}
 
@@ -89,8 +89,12 @@ IOlapDataProvider DataProvider = null;
 Dim DataProvider As IOlapDataProvider = Nothing
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Specify the _basicHttpBinding_ and Instantiate the _DataProvider_ from the _ChannelFactory_ as given in the following code: 
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 {% highlight c# %}
@@ -143,3 +147,5 @@ End Sub
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

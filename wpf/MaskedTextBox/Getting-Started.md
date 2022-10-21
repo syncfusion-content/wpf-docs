@@ -39,13 +39,14 @@ To add the `SfMaskedEdit` control manually in XAML, follow these steps:
 
 2. Add the  following assembly references to the project,
 
-  * Syncfusion.SfInput.WPF
-  * Syncfusion.SfShared.WPF
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `SfMaskedEdit` control in XAML page.
 
-4.	Declare the `SfMaskedEdit` control in XAML page.
+4. Declare the `SfMaskedEdit` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -63,6 +64,8 @@ To add the `SfMaskedEdit` control manually in XAML, follow these steps:
 </Window>
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF SfMaskedEdit via C\#
 
@@ -77,6 +80,7 @@ To add the `SfMaskedEdit` control manually in C#, follow these steps:
 
 4. Declare the `SfMaskedEdit` control using C#.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -98,6 +102,8 @@ public partial class MainWindow : Window {
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![WPF MaskedEdit Control](Getting-Started_images/wpf-maskededit-control.png)
 

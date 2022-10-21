@@ -591,14 +591,18 @@ To validate data errors, follow the steps below:
 1. Ensure that your data source implements the IDataErrorInfo interface, in which two of the properties, Error (which we can be left empty optionally) and Indexer (where the validation code is placed) must be defined.
 2. Then display the error information by setting the ShowErrorToolTips property of the GridData control to true.
 
+{% capture codesnippet1 %}
 {% highlight c# %}
 
 dataGrid.ShowErrorTooltips = true;
 
 {% endhighlight  %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 The following code example illustrates how the GridData control throws an error message when the Freight value becomes lesser than 10.
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -655,6 +659,8 @@ partial class Orders : IDataErrorInfo
 }
 
 {% endhighlight  %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_2 }}
 
 The following screenshot illustrates Data Error Validation in the GridData control.
 

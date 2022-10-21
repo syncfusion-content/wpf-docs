@@ -431,6 +431,7 @@ N> `ConstructorParameter` property will work only if a value is assigned for the
 
 1. Create a custom editor for the desired property item in `PropertyGrid`. Add constructor with parameters in the custom editor class.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -494,9 +495,12 @@ public class IntegerEditor : ITypeEditor
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create `Employee` and `ViewModel` classes with required properties. Pass the required objects in an object array and assign it to the `ConstructorParameter` property of `CustomEditor` as shown below. 
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -548,6 +552,8 @@ class ViewModel
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 Since we have assigned the custom editor for property type **long(Int64)**, the custom editor will be applied for `Age` property item. You can also create custom editor and set value for `ConstructorParameter` property in xaml file as shown below.
 

@@ -15,6 +15,7 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
   * **LoadingHeader** is used to display the text while sub-items are being loaded.
   * **IsLoadOnDemand** value has to be set to true if the item is to be loaded on demand.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -89,6 +90,8 @@ End Class
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
+ {% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Loading TreeViewitems on demand](LoadOnDemand_images/LoadOnDemand_img1.jpeg)

@@ -60,6 +60,7 @@ All the DateTime values can be given such as [DisplayDate,](https://help.syncfus
 
 * Create an appointment with a start and end time value by declaring the calendar type and relevant calendar type date.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for the schedule appointment collection.
@@ -78,9 +79,12 @@ appointments.Add(new ScheduleAppointment()
 this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create an appointment with a start and end time by declaring the local system date; in that case, the system date will be converted to the relevant calendar type date.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 // Creating an instance for the schedule appointment collection.
@@ -99,5 +103,7 @@ appointments.Add(new ScheduleAppointment()
 this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)

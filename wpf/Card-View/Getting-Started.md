@@ -35,12 +35,13 @@ Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/visu
 
 To add the `CardView` control manually in XAML, follow these steps:
 
-1.  Create a new WPF project in Visual Studio.
+1. Create a new WPF project in Visual Studio.
 2. Add the following required assembly references to the project:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `CardView` control in XAML page.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight XAML %}
@@ -62,6 +63,8 @@ To add the `CardView` control manually in XAML, follow these steps:
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Adding WPF CardView control via C#
 
@@ -71,8 +74,9 @@ To add the `CardView` control manually in C#, follow these steps:
 2. Add the following required assembly references to the project:
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -80,9 +84,12 @@ using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of `CardView` control, and add it to the window.
+4. Create an instance of `CardView` control, and add it to the window.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -104,6 +111,8 @@ namespace CardViewSample
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![wpf card view control added manually](Getting-Started_images/wpf-card-view-control-added-manually.png)
 

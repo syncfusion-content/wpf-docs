@@ -476,6 +476,7 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 
 * Create a new WPF project and add a **Model** class specifying the elements of the Hub Tile. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -503,9 +504,12 @@ public class Model
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create a **ViewModel** class where the collection has been declared and populate the items into it.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -547,9 +551,12 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * In XAML, bind the collection to the ListView control and use ItemTemplate to populate Hub Tile control into it.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight XAML %}
 
@@ -598,6 +605,8 @@ public class ViewModel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![wpf hub tile grouping via databinding](Getting-Started_images/wpf-hubtile-grouping-binding.png)
 

@@ -2137,8 +2137,9 @@ You can calculate the summary values based on custom logic using [GridSummaryCol
 
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
  
-In the below code snippet, the Standard Deviation is calculated for quantity of products.
+   In the below code snippet, the Standard Deviation is calculated for quantity of products.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class CustomAggregate:ISummaryAggregate
@@ -2192,9 +2193,13 @@ public static class LinqExtensions
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
 
+3. Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) as [Custom](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) property is defined based on property name in custom aggregate `StdDev`.
+
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
@@ -2238,6 +2243,9 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 });
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 ![Custom Aggregate Summaries in WPF DataGrid](Summaries_images/wpf-datagrid-custom-summaries.png)
 
