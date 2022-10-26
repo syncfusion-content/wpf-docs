@@ -105,8 +105,6 @@ In order to add control manually in C#, do the below steps.
 
     </Grid>
 </Window>
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 {% endhighlight %}
 {% highlight c# %}
@@ -130,6 +128,8 @@ namespace ButtonSample
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Setting label
 
