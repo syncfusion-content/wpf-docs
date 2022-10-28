@@ -9,7 +9,7 @@ documentation: ug
 
 # Date Formatting in WPF DatePicker (SfDatePicker)
 
-The [SfDatePicker](https://www.syncfusion.com/wpf-ui-controls/datepicker) control allows the user to select and display the date in various formats.
+The [SfDatePicker](https://www.syncfusion.com/wpf-controls/datepicker) control allows the user to select and display the date in various formats.
 
 ## Display the date using the FormatString
 

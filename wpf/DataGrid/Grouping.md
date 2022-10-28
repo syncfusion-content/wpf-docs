@@ -69,7 +69,7 @@ The data can be grouped by an unlimited number of columns. To group more than on
 Each group is identified by its `CaptionSummaryRows` and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 
 
-Each `CaptionSummaryRow` carries information about a particular group like group name, number of items (records) in the group, etc. You can refer [Caption Summaries](http://help.syncfusion.com/wpf/sfdatagrid/summaries#caption-summaries) section, for more information about `CaptionSummaryRow`.
+Each `CaptionSummaryRow` carries information about a particular group like group name, number of items (records) in the group, etc. You can refer [Caption Summaries](https://help.syncfusion.com/wpf/datagrid/summaries#caption-summaries) section, for more information about `CaptionSummaryRow`.
 
 ## Programmatic grouping
 
@@ -454,7 +454,7 @@ Refer [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze
 
 Refer [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTableCustomGrouping1799878748.zip) for Custom grouping when ItemsSource is DataTable.
 
-You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied.
+You can refer [here](https://help.syncfusion.com/wpf/datagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied.
 
 ### Sorting the grouped column records 
 
