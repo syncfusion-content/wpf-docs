@@ -843,42 +843,6 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 ![WPF Docking Hiding the TDI Header](MDI_TDIfunctionalities_images/wpf-docking-hiding-the-TDI-header.jpeg)
 
-
-## Add New button in Header Panel
-
-In DockingManager, the New button can be added in the Document state windows using the [IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsNewButtonEnabled) property of the DocumentTabControl. To achieve this, DocumentTabControl must be fetched from the DockingManager.
-
-{% tabs %}
-
-{% highlight C# %}
-
-DocumentTabControl tab = VisualUtils.FindDescendant(DockingManager1,typeof (DocumentTabControl)) as DocumentTabControl;
-
-if (tab != null)
-{
-   tab.IsNewButtonEnabled = true;
-   tab.NewButtonBackground = Brushes.Green;
-}
-
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim tab As DocumentTabControl = TryCast(VisualUtils.FindDescendant(DockingManager1,GetType(DocumentTabControl)), DocumentTabControl)
-
-If tab IsNot Nothing Then
-   tab.IsNewButtonEnabled = True
-   tab.NewButtonBackground = Brushes.Green
-End If 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-![WPF Docking Add New Button in Header Panel](MDI_TDIfunctionalities_images/wpf-docking-add-new-button-in-header-panel.jpeg)
-
 ## Pin and Unpin tab items
 
 The following section explains the Pin and Unpin tab items in DockingManager.
