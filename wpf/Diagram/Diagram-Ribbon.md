@@ -55,6 +55,7 @@ Steps to add the Diagram ribbon control manually is given below with its code ex
 
 3. Declare the SfDiagramRibbon control in your application.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -120,6 +121,8 @@ namespace SfDiagram_WPF
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Simple Diagram Designer
 

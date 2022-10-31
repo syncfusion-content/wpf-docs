@@ -674,7 +674,7 @@ Calculate the initial zoom level automatically based on the [`Radius`](https://h
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ### Geo-bounds
 

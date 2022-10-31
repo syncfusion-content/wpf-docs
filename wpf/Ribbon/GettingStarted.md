@@ -36,7 +36,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Change the Window as `RibbonWindow`.
 
@@ -55,7 +55,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="RibbonControl.Main
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * Add following namespace and inherit MainWindow from `RibbonWindow` in code behind.
 
@@ -78,7 +78,7 @@ Public class As partial
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Now, Add the Ribbon control with a required optimal name, using the included namespace in XAML.
 
@@ -100,7 +100,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 ## Set icon for RibbonWindow
 
@@ -133,7 +133,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Ribbon Control](GettingStarted_images/wpf-ribbon-control.jpg)
 
@@ -167,7 +167,7 @@ xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }}
+{{ codesnippet6 | UnOrderList_Indent_Level_1 }}
 
 * Now apply the value as `Office2013White` to the `VisualStyle` property of the SfSkinManager for the RibbonWindow.
 
@@ -191,7 +191,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet7 | OrderList_Indent_Level_1 }}
+{{ codesnippet7 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Ribbon with Office2013White Style](GettingStarted_images/wpf-ribbon-style.jpg)
 

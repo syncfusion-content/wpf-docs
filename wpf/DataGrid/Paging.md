@@ -154,8 +154,7 @@ Follow the below steps to load the `ItemsSource` for page in on-demand,
 
 N> Do not assign `SfDataPager.Source` property while using `OnDemandPaging`.
 
-
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Grid>
@@ -191,6 +190,8 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ### Resetting cache

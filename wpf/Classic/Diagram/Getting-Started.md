@@ -1986,7 +1986,7 @@ N/A</td></tr>
 	{%endhighlight%}
 
 
-2.Then the nodes can be added and the connections can be specified as follows:
+2. Then the nodes can be added and the connections can be specified as follows:
 
 
 

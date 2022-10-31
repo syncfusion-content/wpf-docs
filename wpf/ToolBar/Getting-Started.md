@@ -46,7 +46,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Now add the WPF ToolBar (ToolBarAdv) control with a required optimal name using the namespace 
 
@@ -63,7 +63,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ### Create the ToolBarAdv control to an application by C#:
 
