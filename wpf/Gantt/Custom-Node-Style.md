@@ -252,7 +252,7 @@ The following code illustrates how to define style:
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-1. Add the style as a resource to the Gantt control in your application.
+2. Add the style as a resource to the Gantt control in your application.
 
 The following code illustrates how to add the styles to the application:
 

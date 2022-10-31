@@ -37,11 +37,11 @@ The HierarchyNavigator control can be added to an application by dragging it fro
 ## Add control manually in XAML
 
 To add the control manually in XAML, follow the given steps:
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF 
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the HierarchyNavigator control the in XAML page.
+1. Add the following required assembly references to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF 
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Declare the HierarchyNavigator control the in XAML page.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,11 +65,11 @@ To add the control manually in XAML, follow the given steps:
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF
-2.	Import the HierarchyNavigator namespace **using Syncfusion.Windows.Tools.Controls;**.
-3.	Create a HierarchyNavigator instance, and add it to the window.
+1. Add the following required assembly references to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF
+2. Import the HierarchyNavigator namespace **using Syncfusion.Windows.Tools.Controls;**.
+3. Create a HierarchyNavigator instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}

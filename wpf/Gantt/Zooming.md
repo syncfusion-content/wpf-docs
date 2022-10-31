@@ -121,8 +121,6 @@ To add custom zooming:
 
 {% endhighlight  %}
 {% highlight c# %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 /// APIs in View Model.
 private List<double> _zoomFactors  = new List<double> { 100d, 200d, 300d, 400d, 600d, 800d, 1000d };
@@ -233,6 +231,8 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 The following image shows Custom Zooming in Gantt:
 
