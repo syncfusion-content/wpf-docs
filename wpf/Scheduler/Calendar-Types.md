@@ -80,7 +80,7 @@ this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Create an appointment with a start and end time by declaring the local system date; in that case, the system date will be converted to the relevant calendar type date.
 
@@ -104,6 +104,6 @@ this.scheduler.ItemsSource = appointments;
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Scheduler-Examples/tree/main/CalendarTypes)

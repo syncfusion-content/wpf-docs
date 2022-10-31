@@ -60,8 +60,6 @@ To highlight a set of tasks in Gantt chart region:
 {% endhighlight %}
 
 {% highlight c# %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 /// Codes in View Model 
 /// <summary>
@@ -108,6 +106,8 @@ this.Gantt.HighlightedItems = this.view.HighlightedTasks;
 
 {% endhighlight  %}
 {% endtabs  %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 The following image shows the Gantt with Highlighted Tasks:
 

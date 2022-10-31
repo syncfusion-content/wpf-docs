@@ -38,7 +38,8 @@ To add control manually in XAML, do the following steps:
 3. Declare SfDiagram control in XAML page.
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
-    
+
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -57,6 +58,8 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control manually in C#
 
@@ -66,6 +69,7 @@ To add control manually in C#, do the following steps:
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
 3. Create SfDiagram control instance and add it to the Grid.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -89,6 +93,8 @@ namespace SfDiagram_WPF
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Basic Diagram elements
 

@@ -49,7 +49,7 @@ DockingManager1.DockTabAlignment = Dock.Left;
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 
 ![WPF Docking Left TabAlignment](TabbedWindow_images/wpf-docking-left-tab-alignment.jpeg)
@@ -81,7 +81,7 @@ DockingManager1.DockTabAlignment = Dock.Right;
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 
 ![WPF Docking Right TabAlignment](TabbedWindow_images/wpf-docking-right-tab-alignment.jpeg)
@@ -115,7 +115,7 @@ SyncDockingManager.DockTabAlignment = Dock.Top;
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Docking Top TabAlignment](TabbedWindow_images/wpf-docking-top-tab-alignment.jpeg)
 

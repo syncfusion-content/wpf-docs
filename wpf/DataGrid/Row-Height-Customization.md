@@ -113,7 +113,7 @@ Below are the parameter to `GetAutoRowHeight` method,
 
 2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}">
@@ -144,6 +144,8 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 Here, row heights are customized based on the large text content.
 
@@ -203,7 +205,7 @@ You can reset height of the particular or all rows in View at runtime to get the
  
 * [InvalidateRowHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_InvalidateRowHeight_System_Int32_) – Resets the height of particular row.
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
@@ -213,11 +215,11 @@ dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * [RowHeightManager.Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowHeightManager.html#Syncfusion_UI_Xaml_Grid_RowHeightManager_Reset) – Resets the height for all rows in View.
 
-{% capture codesnippet2 %}
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
@@ -227,7 +229,7 @@ dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 
 ### Update Row Height while editing

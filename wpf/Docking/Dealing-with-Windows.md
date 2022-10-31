@@ -171,7 +171,7 @@ DockingManager.SetState(content1, DockState.Document)
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Docking Window Document State](Dealing-with-Windows_images/wpf-docking-window-document-state.jpeg)
 
@@ -195,7 +195,7 @@ DockingManager.SetState(content1, DockState.AutoHidden)
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ![WPF Docking Window AutoHidden State](Dealing-with-Windows_images/wpf-docking-window-autohidden-state.jpeg)
 
