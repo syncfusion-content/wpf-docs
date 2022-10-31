@@ -23,7 +23,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Fade – During navigation, the previous item fades out and the new item appears with variation in opacity.
 
@@ -37,7 +37,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * Zoom – The new item appears with a zooming effect.
 
@@ -51,7 +51,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Blur – The new item appears with blur effect.
 
@@ -65,7 +65,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * Push – The new item descends from the top 
 
@@ -79,7 +79,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
 * PushIn – The new item ascends from the bottom
 
@@ -93,7 +93,7 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }}
+{{ codesnippet6 | UnOrderList_Indent_Level_1 }}
 
 * Wipe – The old item gets washed out and the new item appears.
 
@@ -107,4 +107,4 @@ Transition Effect property is used to set the animation effect for the tab navig
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet7 | OrderList_Indent_Level_1 }}
+{{ codesnippet7 | UnOrderList_Indent_Level_1 }}

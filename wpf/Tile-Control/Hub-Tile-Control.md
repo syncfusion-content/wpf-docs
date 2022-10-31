@@ -505,7 +505,7 @@ public class Model
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Create a **ViewModel** class where the collection has been declared and populate the items into it.
 
@@ -552,7 +552,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * In XAML, bind the collection to the ListView control and use ItemTemplate to populate Hub Tile control into it.
 
@@ -606,7 +606,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 ![wpf hub tile grouping via databinding](Getting-Started_images/wpf-hubtile-grouping-binding.png)
 

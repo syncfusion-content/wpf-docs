@@ -132,7 +132,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% endhighlight %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Set items source and mapping
 
@@ -145,7 +145,7 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% endhighlight %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * This will show a grid with data as in following image.
 
@@ -167,7 +167,7 @@ Next we can configure color range for these values using color mapping
 
 {% endhighlight %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Set ColorMapping
 
@@ -180,7 +180,7 @@ Next we can configure color range for these values using color mapping
 
 {% endhighlight %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * This will show the grid data with color based on the range given.
 

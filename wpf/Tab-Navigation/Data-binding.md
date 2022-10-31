@@ -92,7 +92,7 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * **Model.cs**
 
@@ -147,7 +147,7 @@ namespace TabNavigationXMLBinding
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * **ViewModel.cs**
 
@@ -207,7 +207,7 @@ namespace TabNavigationXMLBinding
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * **MainWindow.Xaml.cs**
 
@@ -253,7 +253,7 @@ namespace TabNavigationXMLBinding
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * **MainWindow.Xaml**
 
@@ -269,4 +269,4 @@ namespace TabNavigationXMLBinding
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
