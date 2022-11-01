@@ -25,15 +25,15 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + D | Duplicate | Copies the selected element from the diagram and pastes the copied element into the diagram. |
 | Delete | Delete | Delete the selected elements in the diagram. |
 | LeftArrow | MoveLeft | MoveLeft (move the selected elements towards left by one pixel). |
-| Shift + LeftArrow | MoveLeft | MoveLeft (move the selected elements towards left by ten pixels). |
+| Shift + LeftArrow | MoveLeft | MoveLeft (move the selected elements towards the left by ten pixels). |
 | RightArrow | MoveRight | MoveRight (move the selected elements towards right by one pixel). |
-| Shift + RightArrow | MoveRight | MoveRight (move the selected elements towards right by ten pixels). |
+| Shift + RightArrow | MoveRight | MoveRight (move the selected elements towards the right by ten pixels). |
 | UpArrow | MoveUp | MoveUp (move the selected elements towards up by one pixel). |
 | Shift + UpArrow | MoveUp | MoveUp (move the selected elements towards up by ten pixels). |
-| DownArrow | MoveDown | MoveDown (move the selected elements towards up by one pixel). |
-| Shift + DownArrow | MoveDown | MoveDown (move the selected elements towards up by ten pixels). |
-| MouseScroll | Zoom | Scrolls the diagram page up and down in vertical direction. |
-| Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in horizontal direction. |
+| DownArrow | MoveDown | MoveDown (move the selected elements upwards by one pixel). |
+| Shift + DownArrow | MoveDown | MoveDown (move the selected elements upwards by ten pixels). |
+| MouseScroll | Zoom | Scrolls the diagram page up and down in a vertical direction. |
+| Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in a horizontal direction. |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |
 | Ctrl + G | Group | Grouping the element in the diagram. |
 | Ctrl + Shift + U | UnGroup | UnGrouping the element in the diagram. |
@@ -42,17 +42,17 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + Shift + F | BringToFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 | Ctrl + PlusKey(+)|Zoom | Zoom in the diagram. |
-| Ctrl - MinusKey(-)| Zoom | Zoom out the diagram. |
+| Ctrl + MinusKey(-)| Zoom | Zoom out the diagram. |
 | Ctrl + 0 (number 0) | Reset | To reset horizontal Offset, vertical Offset, and zoom level of the Diagram. |
 | Ctrl + Shift + W | FitToPage | Fit the diagram content into the view with respect to either width, height, or at the whole. |
 | F2 | EditAnnotation | Enable annotation editing mode of the first selected diagram element. |
 | Enter | SelectFocusedItem | Selects the focused item. |
-| Tab | FocusToNextItem | Focus the item which is next to selected item. |
-| Shift + Tab | FocusToPreviousItem | Focus the item which is previous to selected item. |
-| Ctrl + R | RotateRight | Rotates the selected node in clockwise to 90 degrees. |
-| Ctrl + L | RotateLeft | Rotates the selected node in anticlockwise to 90 degrees. |
-| Ctrl + H | HorizontalFlip | Flips the selected node in horizontal direction. |
-| Ctrl + J | VerticalFlip | Flips the selected node in vertical direction. |
+| Tab | FocusToNextItem | Focus on the item next to the selected item. |
+| Shift + Tab | FocusToPreviousItem | Focus on the item previous to the selected item. |
+| Ctrl + R | RotateRight | Rotates the selected node clockwise to 90 degrees. |
+| Ctrl + L | RotateLeft | Rotates the selected node anticlockwise to 90 degrees. |
+| Ctrl + H | HorizontalFlip | Flips the selected node in a horizontal direction. |
+| Ctrl + J | VerticalFlip | Flips the selected node in a vertical direction. |
 | Ctrl + B | ToggleBold | Adds and removes the Bold text style to the annotation. |
 | Ctrl + I | ToggleItalic | Adds and removes the Italice text style to the annotation. |
 | Ctrl + U | ToggleUnderline | Adds and removes the Underline text style to the annotation. |
