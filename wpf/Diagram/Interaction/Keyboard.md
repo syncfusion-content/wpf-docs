@@ -24,14 +24,14 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + Y | Redo | Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram). |
 | Ctrl + D | Duplicate | Copies the selected element from the diagram and pastes the copied element into the diagram. |
 | Delete | Delete | Delete the selected elements in the diagram. |
-| LeftArrow | MoveLeft | MoveLeft (move the selected elements towards left by one pixel). |
+| LeftArrow | MoveLeft | MoveLeft (move the selected elements towards the left by one pixel). |
 | Shift + LeftArrow | MoveLeft | MoveLeft (move the selected elements towards the left by ten pixels). |
-| RightArrow | MoveRight | MoveRight (move the selected elements towards right by one pixel). |
+| RightArrow | MoveRight | MoveRight (move the selected elements towards the right by one pixel). |
 | Shift + RightArrow | MoveRight | MoveRight (move the selected elements towards the right by ten pixels). |
-| UpArrow | MoveUp | MoveUp (move the selected elements towards up by one pixel). |
-| Shift + UpArrow | MoveUp | MoveUp (move the selected elements towards up by ten pixels). |
-| DownArrow | MoveDown | MoveDown (move the selected elements upwards by one pixel). |
-| Shift + DownArrow | MoveDown | MoveDown (move the selected elements upwards by ten pixels). |
+| UpArrow | MoveUp | MoveUp (move the selected elements upwards by one pixel). |
+| Shift + UpArrow | MoveUp | MoveUp (move the selected elements upwards by ten pixels). |
+| DownArrow | MoveDown | MoveDown (move the selected elements downwards by one pixel). |
+| Shift + DownArrow | MoveDown | MoveDown (move the selected elements downwards by ten pixels). |
 | MouseScroll | Zoom | Scrolls the diagram page up and down in a vertical direction. |
 | Shift + MouseScroll | Zoom | Scrolls the diagram page left and right in a horizontal direction. |
 | Ctrl + MouseScroll | Zoom | Zoom(Zoom in/Zoom out the diagram). |
