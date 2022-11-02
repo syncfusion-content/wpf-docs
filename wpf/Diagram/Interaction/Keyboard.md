@@ -54,7 +54,7 @@ The following table illustrates list of Commands with key Gesture.
 | Ctrl + H | HorizontalFlip | Flips the selected node in a horizontal direction. |
 | Ctrl + J | VerticalFlip | Flips the selected node in a vertical direction. |
 | Ctrl + B | ToggleBold | Adds and removes the Bold text style to the annotation. |
-| Ctrl + I | ToggleItalic | Adds and removes the Italice text style to the annotation. |
+| Ctrl + I | ToggleItalic | Adds and removes the Italic text style to the annotation. |
 | Ctrl + U | ToggleUnderline | Adds and removes the Underline text style to the annotation. |
 | Ctrl + 1 | Pointer Tool | To select, move or resize the elements in the diagram. |
 | Ctrl + 2 | Text Tool | To draw a text node. |
