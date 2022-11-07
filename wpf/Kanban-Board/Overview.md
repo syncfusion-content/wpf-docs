@@ -16,8 +16,8 @@ The Kanban control is an efficient way to visualize a workflow at each stage of 
 
 ## Key features
 
-* WorkFlows – It allows user to control the transitions between tasks from one category (status) to another.
-* Customization – Kanban cards and place holders can be customized. 
-* WIP Limit – Visualize Work-In Progress limit.
-* Indicator color customization – Indicator color for Kanban cards can be customized.
-* Dragging events – Dragging events occurred while rearranging or repositioning Kanban cards.
+* **WorkFlows** – It allows user to control the transitions between tasks from one category (status) to another.
+* **Customization** – Kanban cards and place holders can be customized. 
+* **WIP Limit** – Visualize Work-In Progress limit.
+* **Indicator color customization** – Indicator color for Kanban cards can be customized.
+* **Dragging events** – Dragging events occurred while rearranging or repositioning Kanban cards.
