@@ -154,6 +154,48 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
+## Add an annotation
+
+PDF Viewer allows the users to add the annotation programmatically without user interaction. After adding the annotation, user can change the annotation’s properties programmatically.
+
+The following code snippet explains how to add the ink annotation and modify the ink annotation’s properties. Similarly, we can implement for all other annotations.
+
+{% tabs %}
+{% highlight C# %}
+
+private void AddInk (object sender, RoutedEventArgs e)
+{
+	PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+	PdfLoadedPage page = loadedDocument.Pages[0] as PdfLoadedPage;
+	List<float> inkList = new List<float> { 40, 200, 60, 100, 40, 50, 40, 200, 30, 40 };
+	PdfInkAnnotation inkAnnotation = new PdfInkAnnotation(new RectangleF(28, 215, 34, 190), inkList);
+	page.Annotations.Add(inkAnnotation);
+	inkAnnotation.Color = new PdfColor(System.Drawing.Color.Blue);
+	inkAnnotation.Opacity = .7f;
+	inkAnnotation.BorderWidth = 6;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Remove an annotation
+
+PDF Viewer allows the users to remove the annotation programmatically without user interaction.
+
+{% tabs %}
+{% highlight C# %}
+
+private void RemoveAt (object sender, RoutedEventArgs e)
+{
+	PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+	PdfLoadedPage page = loadedDocument.Pages[0] as PdfLoadedPage;
+	if (page.Annotations.Count > 0)
+		page.Annotations.RemoveAt(0);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Modify an annotation
 
 Annotation’s properties can be modified programmatically through `Settings` in respective annotation changed event. 
