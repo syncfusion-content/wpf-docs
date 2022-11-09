@@ -155,7 +155,7 @@ HierarchyNavigator accepts any business object collection to be bound to its [It
 
 The steps to bind to a Business Object collection are as follows:
 
-**1. Create a class named HierarchyItem.**
+1. Create a class named HierarchyItem.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -191,7 +191,7 @@ public class HierarchyItem
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-**2. Create a collection for ItemsSource to bind HierarchyItem.**
+2. Create a collection for ItemsSource to bind HierarchyItem.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -218,7 +218,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-**3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control**
+3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control
 
 {% capture codesnippet5 %}
 {% tabs %}
