@@ -56,7 +56,7 @@ The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/
 <!--Initialize the SymbolSource-->
 <stencil:Stencil.SymbolSource>
     <!--Define the SymbolCollection-->
-    <local:SymbolCollection>
+    <Syncfusion:SymbolCollection>
         <syncfusion:NodeViewModel x:Name="node" UnitHeight="70" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
         </syncfusion:NodeViewModel>
         <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"/>
@@ -104,7 +104,7 @@ The diagram elements such as [NodeViewModel](https://help.syncfusion.com/cr/wpf/
                 </Syncfusion:NodeCollection>
             </Syncfusion:GroupViewModel.Nodes>
         </Syncfusion:ContainerViewModel>
-    </local:SymbolCollection>
+    </Syncfusion:SymbolCollection>
 </stencil:Stencil.SymbolSource>
 
 {% endhighlight %}
@@ -194,11 +194,6 @@ ContainerViewModel container = new ContainerViewModel()
 (stencil.SymbolSource as SymbolCollection).Add(grp);
 (stencil.SymbolSource as SymbolCollection).Add(container);
 
-//Adding the ISymbol to the SymbolCollection.
-public class SymbolCollection : ObservableCollection<Object>
-{
-}
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -234,10 +229,10 @@ The [SymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diag
 
 <stencil:Stencil.SymbolSource>
     <!--Define the SymbolCollection-->
-    <local:SymbolCollection>
+    <Syncfusion:SymbolCollection>
         <Syncfusion:SymbolViewModel Symbol="User" SymbolTemplate="{StaticResource symboltemplate}"/>
          <Syncfusion:SymbolViewModel Symbol="Diamond" SymbolTemplate="{StaticResource Diamond}"/>
-    </local:SymbolCollection>
+    </Syncfusion:SymbolCollection>
 </stencil:Stencil.SymbolSource>
  
 {% endhighlight %}
@@ -263,11 +258,6 @@ SymbolViewModel symbol = new SymbolViewModel()
 //Adding the element to the collection.
 (stencil.SymbolSource as SymbolCollection).Add(imagenode);
 (stencil.SymbolSource as SymbolCollection).Add(symbol);
-
-//Adding the ISymbol to the SymbolCollection.
-public class SymbolCollection : ObservableCollection<Object>
-{
-}
 
 {% endhighlight %}
 {% endtabs %}
