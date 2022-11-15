@@ -85,7 +85,6 @@ The following code snippet explains how to select an ink annotation on the first
 {% highlight C# %}
 
 //Selecting ink annotation from page 1 with the annotation’s name and bringing into view parameter 
-
 private void SelectAnnotation() 
 {  
     bool isSelected = pdfViewer.SelectAnnotation(inkAnnotationName, 1, true);
@@ -128,7 +127,7 @@ You can also change the name of an annotation. The following code sample demonst
 //Set the annotation name 
 private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e) 
 {  
-   e.Name = ”YOUR OWN NAME”;     
+    e.Name = ”YOUR OWN NAME”;     
 } 
 
 {% endhighlight %}
@@ -146,9 +145,9 @@ The existing annotation’s name can be obtained from [LoadedDocument]( https://
 //Getting existing annotation’s name
 private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
-     PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
-     PdfPageBase page = loadedDocument.Pages[0];
-     string annotationName = page.Annotations[0].Name;
+    PdfLoadedDocument loadedDocument = pdfViewer.LoadedDocument;
+    PdfPageBase page = loadedDocument.Pages[0];
+    string annotationName = page.Annotations[0].Name;
 }
 
 {% endhighlight %}
@@ -194,7 +193,6 @@ The following code snippet explains how to hide an ink annotation using the anno
 {% highlight C# %}
 
 //Hide ink annotation using annotation’s name 
-
 private void HideAnnotation() 
 { 
    bool isHidden =  pdfViewer.HideAnnotation(inkAnnotationName); 
@@ -217,7 +215,6 @@ The following code snippet explains how to hide an ink annotation on the first p
 {% highlight C# %}
 
 //Hide ink annotation from page 1 with the annotation’s name 
-
 private void HideAnnotation() { bool isHidden = pdfViewer.HideAnnotation(inkAnnotationName, 1); } 
 
 {% endhighlight %}
@@ -241,7 +238,6 @@ The following code snippet explains how to show a hidden ink annotation using th
 {% highlight C# %}
 
 //Show ink annotation using annotation’s name 
-
 private void ShowAnnotation() 
 { 
    bool isShown =  pdfViewer.ShowAnnotation(inkAnnotationName); 
@@ -264,7 +260,6 @@ The following code snippet explains how to show an ink annotation on the first p
 {% highlight C# %}
 
 //Show ink annotation from page 1 with the annotation’s name 
-
 private void ShowAnnotation() { bool isShown = pdfViewer.ShowAnnotation(inkAnnotationName, 1); } 
 
 {% endhighlight %}
@@ -288,7 +283,6 @@ The following code snippet explains how to delete an ink annotation using the an
 {% highlight C# %}
 
 //delete ink annotation using annotation’s name 
-
 private void DeleteAnnotation()
 { 
    bool isDeleted =  pdfViewer.DeleteAnnotation(inkAnnotationName); 

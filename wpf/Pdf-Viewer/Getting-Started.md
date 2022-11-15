@@ -136,9 +136,8 @@ N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine t
 		public class PdfReport : INotifyPropertyChanged
 		{
 			private Stream docStream;
-
 			public event PropertyChangedEventHandler PropertyChanged;
-
+			
 			public Stream DocumentStream
 			{
 				get

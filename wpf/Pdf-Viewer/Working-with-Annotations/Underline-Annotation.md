@@ -199,17 +199,13 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
     //Get the action performed on the annotation 
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     //Get annotation's new and old bounds (position and size). 
     RectangleF newBounds = e.NewBounds;
     RectangleF oldBounds = e.OldBounds;
-
     //To identify which type text markup annotation
     TextMarkupAnnotationType type = e.Type;
-
     TextMarkupAnnotationSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     string author = settings.Author;

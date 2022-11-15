@@ -37,8 +37,8 @@ public MainWindow()
 {
     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
 	
-	// Set the Custom assembly and namespace for the localization.
-	LocalizationManager.SetResources(typeof(Custom_Class).Assembly, "ClassLibrary");
+    // Set the Custom assembly and namespace for the localization.
+    LocalizationManager.SetResources(typeof(Custom_Class).Assembly, "ClassLibrary");
     InitializeComponent();
 }    
 {% endhighlight %}

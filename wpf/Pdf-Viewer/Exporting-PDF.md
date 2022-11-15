@@ -39,7 +39,6 @@ if (image != null)
 	//Save the stream, so that the image will be generated in the output location
 	encoder.Save(stream);
 }
-
 //Dispose the document
 loadedDocument.Dispose();
 loadedDocument = null;
@@ -68,7 +67,6 @@ If image IsNot Nothing Then
 	'Save the stream, so that the image will be generated in the output location
 	encoder.Save(stream)
 End If
-
 'Dispose the document
 loadedDocument.Dispose()
 loadedDocument = Nothing
@@ -86,14 +84,12 @@ You can export a specific range of PDF pages into images by passing the start an
 {% highlight C# %}
 
 PdfViewerControl pdfViewer = new PdfViewerControl();
-
 //Load the input PDF file
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument("Sample.pdf");
 pdfViewer.Load(loadedDocument);
 
 //Export all the pages as images at the specific page range
 BitmapSource[] image = pdfViewer.ExportAsImage(0, loadedDocument.Pages.Count - 1);
-
 //Set up the output path
 string output = @"..\..\Output\Image";
 if (image != null)
@@ -110,7 +106,6 @@ if (image != null)
 		encoder.Save(stream);
 	}
 }
-
 //Dispose the document
 loadedDocument.Dispose();
 loadedDocument = null;
@@ -120,7 +115,6 @@ loadedDocument = null;
 {% highlight vbnet %}
 
 Dim pdfViewer As PdfViewerControl = New PdfViewerControl()
-
 'Load the input PDF file
 Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument("Sample.pdf")
 pdfViewer.Load(loadedDocument)
@@ -141,7 +135,6 @@ If image IsNot Nothing Then
 		encoder.Save(stream)
 	Next
 End If
-
 'Dispose the document
 loadedDocument.Dispose()
 loadedDocument = Nothing
@@ -158,7 +151,6 @@ You can export PDF pages as images with custom width and height by passing the r
 
 //Export the particular PDF page as image at the page index of 0
 BitmapSource image = pdfViewerControl.ExportAsImage(0, new SizeF(1836, 2372), false);
-
 //Set up the output path
 string output = @"..\..\Output\Image";
 if (image != null)

@@ -16,7 +16,6 @@ PDF Viewer allows you to navigate through the pages of the PDF document using th
 
 //Load the PDF.
 pdfViewer.Load("Sample.pdf");
-
 //Navigate to page 2
 pdfViewer.GotoPage(2);
 
@@ -26,7 +25,6 @@ pdfViewer.GotoPage(2);
 
 'Load the PDF.
 pdfViewer.Load("Sample.pdf")
-
 'Navigate to page 2
 pdfViewer.GotoPage(2)
 
@@ -41,7 +39,6 @@ You can now scroll to the given horizontal and vertical offset of the PDF docume
 
 //Load the PDF.
 pdfViewer.Load("Sample.pdf");
-
 //Navigate to the horizontal and vertical offset of 160 and 400 respectively
 pdfViewer.ScrollTo (160, 400);
 
@@ -51,7 +48,6 @@ pdfViewer.ScrollTo (160, 400);
 
 'Load the PDF.
 pdfViewer.Load("Sample.pdf")
-
 'Navigate to the horizontal and vertical offset of 160 and 400 respectively
 pdfViewer.ScrollTo (160, 400)
 

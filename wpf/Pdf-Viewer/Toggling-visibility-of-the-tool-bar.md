@@ -33,19 +33,14 @@ private void HideVerticalToolbar()
 { 
 	// Hides the thumbnail icon. 
 	pdfViewer.ThumbnailSettings.IsVisible = false; 
-
 	// Hides the bookmark icon. 
 	pdfViewer.IsBookmarkEnabled = false; 
-
 	// Hides the layer icon. 
 	pdfViewer.EnableLayers = false; 
-
 	// Hides the organize page icon. 
 	pdfViewer.PageOrganizerSettings.IsIconVisible = false; 
-
 	// Hides the redaction icon. 
 	pdfViewer.EnableRedactionTool = false;   
-
 	// Hides the form icon. 
 	pdfViewer.FormSettings.IsIconVisible = false;
 }

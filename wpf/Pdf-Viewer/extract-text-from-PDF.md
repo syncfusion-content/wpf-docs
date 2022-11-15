@@ -34,10 +34,8 @@ namespace TextExtractionDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 
@@ -74,14 +72,12 @@ namespace TextExtractionDemo
         public MainWindow()
         {
             InitializeComponent();
-			
-			//Initialize the `PdfDocumentView` control.
+		    //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-			
-			//Load the PDF file.
+		    //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
 			
-			//Extract text from the file.
+		    //Extract text from the file.
             TextLines textLines = new TextLines();
             string extractedText = string.Empty;
             for (int i = 0; i < pdfDocumentView.PageCount; i++)
@@ -119,25 +115,19 @@ namespace TextExtractionDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
-
             //Initialize the `TextLines`
             TextLines textLines = new TextLines();
-
+			
             //Pass the `TextLines` as a parameter to the `ExtractText` method.
             pdfDocumentView.ExtractText(0, out textLines);
-
             //Gets specific line from the collection through the index.
             TextLine line = textLines[0];
-
             //Get text in the line.
             string text = line.Text;
-			
             //Get bounds of the line.
             RectangleF lineBounds = line.Bounds;
         }
@@ -170,28 +160,21 @@ namespace TextExtractionDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Initialize the `PdfDocumentView` control.
             PdfDocumentView pdfDocumentView = new PdfDocumentView();
-
             //Load the PDF file.
             pdfDocumentView.Load(@"Sample.pdf");
-
             //Initialize the `TextLines`
             TextLines textLines = new TextLines();
 
             //Pass the `TextLines` as a parameter to the `ExtractText` method.
             pdfDocumentView.ExtractText(0, out textLines);
-
             //Gets specific line from the collection through the index.
             TextLine line = textLines[0];
-
             //Get the word collection in a line.
             List<TextWord> wordCollection= line.WordCollection;
-
             //Get the word
             string word = wordCollection[0].Text;
-
             //Get the bounds of the word
             RectangleF bounds= wordCollection[0].Bounds;
         }
