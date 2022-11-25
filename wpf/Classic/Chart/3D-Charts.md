@@ -47,7 +47,7 @@ chart.Areas[0].Series.Add(new ChartSeries(ChartTypes.Column));
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img222.jpeg)
+![Enabling 3D Mode in WPF chart](Chart-Controls_images/Chart-Controls_img222.jpeg)
 
 3D Mode is supported in the following chart types.
 
@@ -155,7 +155,7 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img223.jpeg)
+![Customizing Side Walls in WPF chart](Chart-Controls_images/Chart-Controls_img223.jpeg)
 
 ## Camera Projection Views
 
@@ -181,9 +181,9 @@ chart1.Areas[0].Chart3DSettings.CameraProjection = CameraProjection.Perspective;
 
 {% endtabs %}
 
-![](Chart-Controls_images/Chart-Controls_img224.jpeg)
+![Orthographic Camera Projection view](Chart-Controls_images/Chart-Controls_img224.jpeg)
 
-![](Chart-Controls_images/Chart-Controls_img225.jpeg)
+![Perspective camera Projection View](Chart-Controls_images/Chart-Controls_img225.jpeg)
 
 ## 3-D Manhattan Bar Chart 
 
@@ -196,7 +196,7 @@ chart1.Areas[0].Chart3DSettings.CameraProjection = CameraProjection.Perspective;
 * You can avail of 3D Manhattan bar support by using the IsClustered property, when IsClustered is set to false. Each series is plotted in value of Z Axis, whereas Clustered view has series added to only X Axis
 * You can plot various fields in a chart, using the 3D Manhattan Chart, in a more comprehensive manner, as shown in the following example:
 
-![C:/Users/sujithas/AppData/Local/Syncfusion/EssentialStudio/9.2.0.137/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Chart Area/3D Manhattan Chart Demo/Images/3D Manhattan Chart Demo.png](Chart-Controls_images/Chart-Controls_img226.png)
+![3D Manhattan Chart](Chart-Controls_images/Chart-Controls_img226.png)
 
 ### Properties
 
@@ -252,9 +252,9 @@ These 3-D types can be bound to all basic types of data sources such as IList, O
 
 For example, in the column chart type, BindingPathsY[0] corresponds to a mapping value for y-axis, and BindingPathsY[1] corresponds to a mapping value for z-axis. For the range column chart type, BindingPathsY[0] corresponds to a starting value for y-axis, BindingPathsY[1] corresponds to an end value for y-axis, and BindingPathsY[2] corresponds to a mapping value for z-axis.
 
-![](Chart-Controls_images/Chart-Controls_img227.png)
+![3-D Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img227.png)
 
-![](Chart-Controls_images/Chart-Controls_img228.png)
+![3-D Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img228.png)
 
 ### Properties Table
 
