@@ -196,7 +196,7 @@ chart1.Areas[0].Chart3DSettings.CameraProjection = CameraProjection.Perspective;
 * You can avail of 3D Manhattan bar support by using the IsClustered property, when IsClustered is set to false. Each series is plotted in value of Z Axis, whereas Clustered view has series added to only X Axis
 * You can plot various fields in a chart, using the 3D Manhattan Chart, in a more comprehensive manner, as shown in the following example:
 
-![3D Manhattan Chart](Chart-Controls_images/Chart-Controls_img226.png)
+![Three Dimensional Manhattan Chart](Chart-Controls_images/Chart-Controls_img226.png)
 
 ### Properties
 
@@ -252,9 +252,9 @@ These 3-D types can be bound to all basic types of data sources such as IList, O
 
 For example, in the column chart type, BindingPathsY[0] corresponds to a mapping value for y-axis, and BindingPathsY[1] corresponds to a mapping value for z-axis. For the range column chart type, BindingPathsY[0] corresponds to a starting value for y-axis, BindingPathsY[1] corresponds to an end value for y-axis, and BindingPathsY[2] corresponds to a mapping value for z-axis.
 
-![3-D Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img227.png)
+![Three Dimensional Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img227.png)
 
-![3-D Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img228.png)
+![Three Dimensional Chart with Data Points in Z-Axis](Chart-Controls_images/Chart-Controls_img228.png)
 
 ### Properties Table
 
