@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## Editing Text in EditControl WPF
+# Editing Text in Syntax Editor WPF
 
 [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) supports displaying or editing string values with any number of lines. It also supports all basic editing operations such as typing, cut, copy, paste, delete, backspace, undo and redo operations.
 
@@ -58,7 +58,7 @@ When preserve is used, XAML considers the indentation spaces as empty spaces.
 {% endtabs %}
 
 
-![MultiLine in EditContro in XAML](Editing-Text-in-EditControl_images/Editing-Text-in-EditControl_img1.jpeg)
+![MultiLine in WPF EditControl in XAML](Editing-Text-in-EditControl_images/Editing-Text-in-EditControl_img1.jpeg)
 
 {% tabs %}
 
@@ -72,22 +72,22 @@ editControl.Text = @"Setting multi-line text" + Environment.NewLine + "from C# u
 {% endtabs %}
 
 
-![MultiLine in EditControl in CodeBehind](Editing-Text-in-EditControl_images/Editing-Text-in-EditControl_img2.jpeg)
+![MultiLine in WPF EditControl in CodeBehind](Editing-Text-in-EditControl_images/Editing-Text-in-EditControl_img2.jpeg)
 
 ## Indentation in EditControl
-[EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) allows to auto indent the text when enter key pressed to add new lines. Auto indentation can be enabled by setting [IsAutoIndentationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IsAutoIndentationEnabled) to 'true'. Auto indentation works based on [IndentingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IndentingOptions) property which has following options,
+[Indent in WPF EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) allows to auto indent the text when enter key pressed to add new lines. Auto indentation can be enabled by setting [IsAutoIndentationEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IsAutoIndentationEnabled) to 'true'. Auto indentation works based on [IndentingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IndentingOptions) property which has following options,
 
 * None - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to beginning of the next line.
 
-![IndentingOption as None](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
+![IndentingOption as None in WPF EditControl](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
 
 * Block - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
 
-![IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
+![WPF EditControl in IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
 
 * Smart - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
 
-![IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
+![WPF EditControl in IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
 
 {% tabs %}
 
