@@ -209,7 +209,7 @@ You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by u
         xmlns:local="clr-namespace:DocumentEditor"
         mc:Ignorable="d"
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
-        Title="MainWindow" Height="350" Width="525" Syncfusion:SkinStorage.VisualStyle="Office2013">
+        Title="MainWindow" Height="350" Width="525" Syncfusion:SfSkinManager.Theme="{Syncfusion:SkinManagerExtension ThemeName=FluentLight}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
