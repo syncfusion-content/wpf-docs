@@ -194,6 +194,102 @@ public class ViewModel
 
 * **MainWindow.Xaml**
 
+{% tabs %}
+{% highlight XAML %}
+
+<Window x:Class="SFaccordian.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SFaccordian" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" xmlns:wpf="clr-namespace:syncfusion.Accordianndemos.wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <wpf:ViewModel></wpf:ViewModel>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SfAccordion
+            x:Name="accordion"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="10"
+            DisplayMemberPath="Name"
+            ItemsSource="{Binding Employees}"
+            SelectionMode="One">
+            <syncfusion:SfAccordion.ContentTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Width="100"
+                            Height="100"
+                            HorizontalAlignment="Left"
+                            Source="{Binding Image}" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.ColumnSpan="3"
+                            Margin="10"
+                            Width="850"
+                            Text="Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta,massa ligula magna enim, aliquam orci vestibulum tempus."
+                            TextWrapping="Wrap" />
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Margin="5" Text="Position " />
+                            <TextBlock Margin="5" Text="Organization " />
+                            <TextBlock Margin="5" Text="Date Of Birth " />
+                            <TextBlock Margin="5" Text="Location " />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Margin="5" Text="{Binding Position}" />
+                            <TextBlock Margin="5" Text="{Binding OrganizationUnit}" />
+                            <TextBlock Margin="5" Text="{Binding DateOfBirth}" />
+                            <TextBlock Margin="5" Text="{Binding Location}" />
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Row="2"
+                            Grid.ColumnSpan="3"
+                            Margin="10"
+                            Orientation="Horizontal">
+                            <TextBlock FontFamily="Wingdings" Text=")" />
+                            <TextBlock
+                                Grid.Column="1"
+                                VerticalAlignment="Center"
+                                Text="{Binding Phone}" />
+                            <TextBlock
+                                Grid.Column="2"
+                                Margin="10,0,5,0"
+                                FontFamily="Wingdings"
+                                Text="*" />
+                            <TextBlock
+                                Grid.Column="3"
+                                VerticalAlignment="Center"
+                                Text="{Binding Email}" />
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfAccordion.ContentTemplate>
+            <syncfusion:SfAccordion.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock FontSize="18" Text="{Binding Name}" />
+                </DataTemplate>
+            </syncfusion:SfAccordion.HeaderTemplate>
+        </syncfusion:SfAccordion>
+    </Grid>
+</Window>
+
+
+{% endhighlight %}
+{% endtabs %}
+
 <Window.DataContext>
         <local:ViewModel/>
 </Window.DataContext>
