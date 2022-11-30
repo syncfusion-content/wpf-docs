@@ -70,11 +70,11 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-    // To set the background color of text annotation
+    'To set the background color of text annotation
     pdfviewer.FreeTextAnnotationSettings.Background = Colors.White
-    // To set the background color of text annotation
+    'To set the background color of text annotation
     pdfviewer.FreeTextAnnotationSettings.BorderColor = Colors.Blue
-    // To set the font color
+    'To set the font color
     pdfviewer.FreeTextAnnotationSettings.FontColor = Colors.Black
 End Sub
 
@@ -95,7 +95,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
     pdfViewer.AnnotationMode = Syncfusion.Windows.PdfViewer.PdfDocumentView.PdfViewerAnnotationMode.FreeText;
     pdfViewer.FreeTextAnnotationSettings.Intent = Syncfusion.Pdf.Interactive.PdfAnnotationIntent.FreeTextCallout;
     pdfViewer.FreeTextAnnotationSettings.CalloutLineEndingStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
-
 }
 
 {% endhighlight %}
@@ -108,7 +107,6 @@ Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     pdfViewer.AnnotationMode = Syncfusion.Windows.PdfViewer.PdfDocumentView.PdfViewerAnnotationMode.FreeText;
     pdfViewer.FreeTextAnnotationSettings.Intent = Syncfusion.Pdf.Interactive.PdfAnnotationIntent.FreeTextCallout;
     pdfViewer.FreeTextAnnotationSettings.CalloutLineEndingStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
-
 End Sub
 
 {% endhighlight %}
@@ -123,9 +121,9 @@ The opacity of the free text callout annotation can be customized either at the 
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
-	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-  	pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f;
+    pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f;
 }
 
 {% endhighlight %}
@@ -134,7 +132,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-	pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f
+    pdfviewer.FreeTextAnnotationSettings.Opacity = 0.5f
 End Sub
 
 {% endhighlight %}
@@ -149,9 +147,9 @@ The font size of the free text callout annotation can be customized either at th
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
-	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
     pdfviewer.Load(pdf);
-  	pdfviewer.FreeTextAnnotationSettings.FontSize = 16;
+    pdfviewer.FreeTextAnnotationSettings.FontSize = 16;
 }
 
 {% endhighlight %}
@@ -160,7 +158,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-	pdfviewer.FreeTextAnnotationSettings.FontSize = 16
+    pdfviewer.FreeTextAnnotationSettings.FontSize = 16
 End Sub
 
 {% endhighlight %}
@@ -276,16 +274,13 @@ private void PdfViewer_FreeTextAnnotationChanged(object sender, FreeTextAnnotati
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     System.Collections.ObjectModel.ReadOnlyCollection<System.Windows.Point> calloutPoints;
     //Annotation's previous position, current position and callout points
     RectangleF currentBound = e.NewBounds;
     RectangleF previousBound = e.OldBounds;
     calloutPoints = e.CalloutPoints;
-
     PdfViewerFreeTextSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     PdfAnnotationIntent calloutIntent = settings.Intent;

@@ -43,10 +43,8 @@ The user can navigate to the specified vertical and horizontal scroll offset coo
 
 //Retrieve the current horizontal offset of the PdfViewerControl
 m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
- 
 //Retrieve the current vertical offset of the PdfViewerControl
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
- 
 //Scroll the content to the specified offset position in the PdfViewerControl
 pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
 
@@ -65,7 +63,6 @@ private void PdfViewerControl_PageClicked(object sender, PageClickedEventArgs e)
 {
     //Retrieve the clicked client area position
     Point clientPoint = e.Position;
- 
     //Retrieve the page number that corresponds to the client point
     int pageNumber = pdfViewerControl.GetPageNumberFromClientPoint(clientPoint)
  
@@ -88,10 +85,8 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 {
     //Get the bounds of the shape annotation
     RectangleF bounds = e.OldBounds;
-
     //Create the point from the bounds
     Point pagePoint = new Point(bounds.X, bounds.Y);
-
     //Get the Page Number from the event arguments
     int pageNumber = e.PageNumber;
 
@@ -114,10 +109,8 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 {
     //Get the bounds of the shape annotation
     RectangleF bounds = e.OldBounds;
-
     //Create the point from the bounds
     Point pagePoint = new Point(bounds.X, bounds.Y);
-
     //Get the Page Number from the event arguments
     int pageNumber = e.PageNumber;
 
@@ -137,7 +130,6 @@ The user can bring the given rectangular region into view and zoom in to the doc
 
 //Create a bound with respect to client area
 Rect bounds = new Rect(400 , 300, 200, 400)
-
 //Pass the converted rectangle in client coordinates to the ZoomToRect method. 
 pdfViewerControl.ZoomToRect(bounds);
 

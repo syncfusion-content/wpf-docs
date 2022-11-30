@@ -56,10 +56,8 @@ namespace SaveEvents
 		public MainWindow()
 		{
 			InitializeComponent();
-
 			//Wire the `BeginSave` event.
 			PdfViewer.BeginSave += PdfViewer_BeginSave;
-
 			//Load the PDF file
 			PdfViewer.Load("../../Data/Windows Store Apps Succinctly.pdf");
 		}
@@ -92,10 +90,8 @@ namespace SaveEvents
         public MainWindow()
         {
             InitializeComponent();
-
             //Wire the `EndSave` event.
             PdfViewer.EndSave += PdfViewer_EndSave;
-
             //Load the PDF file
             PdfViewer.Load("../../Data/Windows Store Apps Succinctly.pdf");
         }

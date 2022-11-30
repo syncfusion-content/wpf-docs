@@ -285,14 +285,11 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     //Annotation's previous position and current position 
     RectangleF currentBound = e.NewBounds;
     RectangleF previousBound = e.NewBounds;
-
     PdfViewerStickyNoteSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     string author = settings.Author;
@@ -301,7 +298,6 @@ private void PdfViewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnno
     float opacity = settings.Opacity;
     System.Windows.Media.Color color = settings.Color;
     PdfPopupIcon pdfPopupIcon = settings.Icon;
-
 }
 
 {% endhighlight %}

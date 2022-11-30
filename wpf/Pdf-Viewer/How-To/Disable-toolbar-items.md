@@ -20,10 +20,8 @@ private void HideTextSearchTool()
 {
 	//Get the instance of the toolbar using its template name.
 	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-
 	//Get the instance of the open file button using its template name.
 	Button textSearchButton = (Button)toolbar.Template.FindName("PART_ButtonTextSearch", toolbar);
-
 	//Set the visibility of the button to collapsed.
 	textSearchButton.Visibility = System.Windows.Visibility.Collapsed;
 }
@@ -225,10 +223,8 @@ private void HideOpenTool(object sender, RoutedEventArgs e)
 {
 	//Get the instance of the toolbar using its template name.
 	DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
-
 	//Get the instance of the file menu button using its template name.
 	ToggleButton FileButton = (ToggleButton)toolbar.Template.FindName("PART_FileToggleButton", toolbar);
-
 	//Get the instance of the file menu button context menu and the item collection.
 	ContextMenu FileContextMenu = FileButton.ContextMenu;
 	foreach (MenuItem FileMenuItem in FileContextMenu.Items)

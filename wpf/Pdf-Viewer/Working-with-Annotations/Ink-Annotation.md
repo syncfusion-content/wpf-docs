@@ -262,14 +262,11 @@ private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedE
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page index in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     //Annotation's previous position and current position 
     RectangleF currentBound = e.NewBounds;
     RectangleF previousBound = e.NewBounds;
-
     PdfViewerInkSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     string author = settings.Author;

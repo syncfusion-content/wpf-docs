@@ -23,27 +23,25 @@ To lock an annotation, set the [IsLocked](https://help.syncfusion.com/cr/wpf/Syn
 {% highlight C# %}
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
- {
-   PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf"); 
-
-   //Loads the PDF document
-   pdfviewer.Load(pdf);
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf"); 
+    //Loads the PDF document
+    pdfviewer.Load(pdf);
    
-   //Sets the value to lock all annotations 
-   pdfviewer.PolygonAnnotationSettings.IsLocked = true;
-   pdfviewer.PolylineAnnotationSettings.IsLocked = true;
-   pdfviewer.CircleAnnotationSettings.IsLocked = true;
-   pdfviewer.RectangleAnnotationSettings.IsLocked = true;
-   pdfviewer.LineAnnotationSettings.IsLocked = true;
-   pdfviewer.ArrowAnnotationSettings.IsLocked = true;
-   pdfviewer.StickyNoteAnnotationSettings.IsLocked = true;
-   pdfviewer.StampAnnotationSettings.IsLocked = true;
-   pdfviewer.InkAnnotationSettings.IsLocked = true;
-   pdfviewer.FreeTextAnnotationSettings.IsLocked = true;
-   pdfviewer.HighlightAnnotationSettings.IsLocked = true;
-   pdfviewer.UnderlineAnnotationSettings.IsLocked = true;
-   pdfviewer.StrikethroughAnnotationSettings.IsLocked = true;
-
+    //Sets the value to lock all annotations 
+    pdfviewer.PolygonAnnotationSettings.IsLocked = true;
+    pdfviewer.PolylineAnnotationSettings.IsLocked = true;
+    pdfviewer.CircleAnnotationSettings.IsLocked = true;
+    pdfviewer.RectangleAnnotationSettings.IsLocked = true;
+    pdfviewer.LineAnnotationSettings.IsLocked = true;
+    pdfviewer.ArrowAnnotationSettings.IsLocked = true;
+    pdfviewer.StickyNoteAnnotationSettings.IsLocked = true;
+    pdfviewer.StampAnnotationSettings.IsLocked = true;
+    pdfviewer.InkAnnotationSettings.IsLocked = true;
+    pdfviewer.FreeTextAnnotationSettings.IsLocked = true;
+    pdfviewer.HighlightAnnotationSettings.IsLocked = true;
+    pdfviewer.UnderlineAnnotationSettings.IsLocked = true;
+    pdfviewer.StrikethroughAnnotationSettings.IsLocked = true;
 }
 
 {% endhighlight %}
@@ -60,16 +58,13 @@ To lock an annotation by annotation changed event, set the value of [IsLocked](h
 pdfviewer.StickyNoteAnnotationChanged += Pdfviewer_StickyNoteAnnotationChanged;
 
 private void Pdfviewer_StickyNoteAnnotationChanged(object sender, StickyNoteAnnotationChangedEventArgs e)
- {
-
-  if (e.Action == AnnotationChangedAction.Add)
-   {
-
-    //Sets the value to lock the annotation
-    e.Settings.IsLocked = true;
-
-   }
- }
+{
+    if (e.Action == AnnotationChangedAction.Add)
+    {
+        //Sets the value to lock the annotation
+        e.Settings.IsLocked = true;
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}

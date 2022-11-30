@@ -31,10 +31,8 @@ void GoToBookmark()
 {
     //Get the loadedDocument object from PDF Viewer
     PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
-
     //Get the complete bookmarks in the PDF.
     PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
-
     //In this example, we get the first bookmark in the PDF bookmarks collection at the index of 0.
     PdfBookmark firstBookmark = bookmarks[0];
 
@@ -54,13 +52,10 @@ void GoToChildBookmark()
 {
     //Get the loadedDocument object from PDF Viewer
     PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
-
     //Get the complete bookmarks in the PDF.
     PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
-
     //Gets the fourth bookmark in the PDF bookmarks collection at the index of 3.
     PdfBookmark fourthBookmark = bookmarks[3];
-
     //Check whether it has child bookmarks.
     if (fourthBookmark.Count > 0)
     {
@@ -81,10 +76,8 @@ The user needs to call the above methods after the document is loaded. You can w
 public MainWindow()
 {
     InitializeComponent();
-
     //Wire the DocumentLoaded event of PDF Viewer
     pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
-
     //Load the PDF file in PDF Viewer.
     pdfViewer.Load("../../LayerAndBookmarks.pdf");
 }

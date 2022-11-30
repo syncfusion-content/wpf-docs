@@ -764,9 +764,9 @@ The stroke color of the arrow can be customized at the time of inclusion itself.
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArrowAnnotationSettings.StrokeColor = Colors.Blue; 
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArrowAnnotationSettings.StrokeColor = Colors.Blue; 
 }
 
 {% endhighlight %}
@@ -790,9 +790,9 @@ The fill color of the arrow can be customized at the time of inclusion itself. T
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArrowAnnotationSettings.FillColor = Colors.Blue; 
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArrowAnnotationSettings.FillColor = Colors.Blue; 
 }
 
 {% endhighlight %}
@@ -818,9 +818,9 @@ The opacity of the arrow can be customized at the time of inclusion itself. The 
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArrowAnnotationSettings.Opacity = 0.5f;
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArrowAnnotationSettings.Opacity = 0.5f;
 }
 
 {% endhighlight %}
@@ -846,9 +846,9 @@ The thickness of the arrow can be customized at the time of inclusion itself. Th
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArrowAnnotationSettings.Thickness = 5; 
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArrowAnnotationSettings.Thickness = 5; 
 }
 
 {% endhighlight %}
@@ -874,10 +874,10 @@ The begin and end style of the arrow can be customized at the time of inclusion 
 
 private void Window_Loaded(object sender, RoutedEventArgs e) 
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArrowAnnotationSettings.BeginLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.OpenArrow;
- pdfviewer.ArrowAnnotationSettings.EndLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArrowAnnotationSettings.BeginLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.OpenArrow;
+    pdfviewer.ArrowAnnotationSettings.EndLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
 }
 
 {% endhighlight %}
@@ -904,10 +904,10 @@ The author and subject fields of the arrow can be added at the time of inclusion
 
 private void Window_Loaded(object sender, RoutedEventArgs e)
 {
- PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
- pdfviewer.Load(pdf);
- pdfviewer.ArroannotationSettings.Author = "Syncfusion Softwares";
- pdfviewer.ArrowAnnotationSettings.Subject = "Line Annotation";
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.ArroannotationSettings.Author = "Syncfusion Softwares";
+    pdfviewer.ArrowAnnotationSettings.Subject = "Line Annotation";
 }
 
 {% endhighlight %}
@@ -1587,22 +1587,17 @@ private void PdfViewer_ShapeAnnotationChanged(object sender, ShapeAnnotationChan
 	//COMMON PROPERTIES
 	//AnnotationChangedAction to identify action performed for annotation 
 	AnnotationChangedAction action = e.Action;
-
 	//To identify which type shape annotation
 	ShapeAnnotationType annotationType = e.Type;
-
 	//Page index in which this shape annotation was modified 
 	int pageNumber = e.PageNumber;
-
 	//Get Shape annotation's position and size 
 	System.Drawing.PointF position = e.NewBounds.Location;
 	System.Drawing.SizeF size = e.NewBounds.Size;
 
 	//For Polygon and Polyline annotations collection of points   
 	ReadOnlyCollection<System.Windows.Point> points = e.Points;
-
 	ShapeAnnotationSettings settings = e.Settings;
-
 	//SHAPES PROPERTIES can be get/set. 
 	string author = settings.Author;
 	string subject = settings.Subject;
