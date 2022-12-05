@@ -197,7 +197,7 @@ chart.Series.Add(errorBar);
 
 **Both**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as both.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirection) value as both.
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as minus.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirection) value as minus.
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirectionProperty) value as plus.
+The following code illustrates how to set the [`HorizontalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalDirection) value as plus.
 
 {% tabs %}
 
@@ -281,7 +281,7 @@ chart.Series.Add(errorBar);
 
 **Vertical direction**
 
-[`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the vertical error value in following type of directions:
+[`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirection) property of [`ErrorBarSeries`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) allows you to view the vertical error value in following type of directions:
 
  * Both - It indicates the actual data point value along with specific amount of positive and negative error values.
  * Minus - It indicates the actual data point value along with specific amount of negative error value.
@@ -289,7 +289,7 @@ chart.Series.Add(errorBar);
 
 **Both**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as both.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirection) value as both.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as minus.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirection) value as minus.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirectionProperty) value as plus.
+The following code illustrates how to set the [`VerticalDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalDirection) value as plus.
 
 {% tabs %}
 
