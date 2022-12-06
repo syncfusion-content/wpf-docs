@@ -360,7 +360,7 @@ chart.Behaviors.Add(behavior);
 
 ## Customization of Crosshair axis labels
 
-The default appearance of the crosshair axis labels can be customized by using the [`CrosshairLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CrosshairLabelTemplateProperty) property of chart axis. It can be set as shown in the following code example.
+The default appearance of the crosshair axis labels can be customized by using the [`CrosshairLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CrosshairLabelTemplate) property of chart axis. It can be set as shown in the following code example.
 
 {% tabs %}
 

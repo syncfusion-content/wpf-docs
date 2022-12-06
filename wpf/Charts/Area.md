@@ -13,12 +13,12 @@ Chart area represents the entire chart and all its elements. It’s a virtual re
 
 The following are the major properties of chart(SfChart):
 
-* [`PrimaryAxis`](https://help.syncfusion.com/wpf/charts/axis#) –  Gets or sets the horizontal x axis for the chart.
-* [`SecondaryAxis`](https://help.syncfusion.com/wpf/charts/axis#) –  Gets or sets the vertical y axis for the chart.
-* [`Legend`](https://help.syncfusion.com/wpf/charts/legend#) –  Gets or sets the legend for the chart.
-* [`Series`](https://help.syncfusion.com/wpf/charts/seriestypes/series) –  Gets or sets the list of series in the chart.
-* [`TechnicalIndicators`](https://help.syncfusion.com/wpf/charts/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/wpf/charts/interactive-features/interactivefeatures)–  Used to add one more interactive features to the chart.
+* [`PrimaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) –  Gets or sets the horizontal x axis for the chart.
+* [`SecondaryAxis`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis) –  Gets or sets the vertical y axis for the chart.
+* [`Legend`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) –  Gets or sets the legend for the chart.
+* [`Series`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) –  Gets or sets the list of series in the chart.
+* [`TechnicalIndicators`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) –  Gets or sets the various financial indicators for the chart.
+* [`Behaviors`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors)–  Used to add one more interactive features to the chart.
 
 
 ## Customization
