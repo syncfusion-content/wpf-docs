@@ -19,7 +19,7 @@ Technical indicator merely an another type meta series. The following steps illu
 
 Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) collection. 
 
-Here for instance, the [Accumulation Distribution](#accumulationdistributionindicator) is added.
+Here for instance, the [Accumulation Distribution](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html) is added.
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Exponential Average
 
-The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
+The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html) and this can be defined using the following code examples.
 
 {% tabs %}
 
