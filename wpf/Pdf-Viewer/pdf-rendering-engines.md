@@ -20,13 +20,14 @@ PDFium is used in Google Chrome for rendering PDF files. It provides accurate an
 
 N>* From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WPF PDF Viewer.
 N>* From v20.1.0.x onwards, Pdfium is upgraded to the new version which was built with the branch [chromium/4880](https://pdfium.googlesource.com/pdfium/+/refs/heads/chromium/4880).
+N>* From v20.4.0.x onwards, ARM64 based Pdfium assembly is generated for Syncfusion WPF PDF Viewer control in applications that target ARM64 architecture.
 
 ### How PDFium works with Syncfusion’s PDF Viewer
 
 * On running your WPF application, Syncfusion PDF Viewer control generates a folder named `PDFium` in the application output path folder (for example: bin/release or bin/debug) at runtime. 
 * Syncfusion PDF Viewer control detects the architecture of the running machine automatically.
-* Next, it creates another subfolder named “x64” or “x86” based on the machine architecture.
-* Extracts the PDFium binary (PDFium.dll) into the subfolder (x64 or x86) and consumes it to render PDF files.
+* Next, it creates another subfolder named “x64”, “x86” or “arm64” based on the machine architecture.
+* Extracts the PDFium binary (PDFium.dll) into the subfolder (x64, x86 or arm64) and consumes it to render PDF files.
 
 ![WPF PDF Viewer Folder Structure](pdf-rendering-engines_images/wpf-pdf-viewer-folder-structure.png)
 
@@ -72,6 +73,8 @@ N>	* Pdfium
 N>		* x86
 N>			* Pdfium.dll
 N>		* x64
+N>			* Pdfium.dll
+N>		* arm64
 N>			* Pdfium.dll
 
 ## SfPdf
