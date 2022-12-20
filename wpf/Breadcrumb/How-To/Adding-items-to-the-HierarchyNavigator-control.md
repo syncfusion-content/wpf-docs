@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Adding items to the HierarchyNavigator control
+# Adding items to the WPF HierarchyNavigator control
 
 The steps to add items to the HierarchyNavigator control through code are as follows:
 

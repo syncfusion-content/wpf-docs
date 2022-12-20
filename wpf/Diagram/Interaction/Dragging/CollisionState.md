@@ -6,7 +6,7 @@ platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-## Collision State in WPF Diagram (SfDiagram)
+# Collision State in WPF Diagram (SfDiagram)
 
 SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
