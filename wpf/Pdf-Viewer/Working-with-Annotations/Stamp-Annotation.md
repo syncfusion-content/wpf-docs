@@ -61,7 +61,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
     Dim pdf As New PdfLoadedDocument(“Input.pdf”)
     pdfViewer.Load(pdf)
-       pdfviewer.StampAnnotationSettings.Opacity = 0.5F
+    pdfviewer.StampAnnotationSettings.Opacity = 0.5F
 End Sub
 
 {% endhighlight %}
@@ -218,14 +218,11 @@ private void AddStandardStamp()
 {
     // Clear the existing standard stamps if it is not needed.
     pdfViewer.ToolbarSettings.StampAnnotations.Clear();
-
     //Load the custom image from the local disk.
     System.Windows.Controls.Image image = new System.Windows.Controls.Image();
     image.Source = new BitmapImage(new Uri(@"..\..\Data\AdventureCycle.jpg", UriKind.RelativeOrAbsolute));
-
     //Create a new standard stamp from the image.
     PdfStampAnnotation newStandardStamp = new PdfStampAnnotation(image);
-
     //Add the custom stamp in the toolbar.
     pdfViewer.ToolbarSettings.StampAnnotations.Add(newStandardStamp);
 }
@@ -254,14 +251,11 @@ private void AddStamp_Click(object sender, RoutedEventArgs e)
 {
     //Enter the page number ranges from 1 to page count.
     int pageNumber = 1;
-
     //Create the custom stamp with the required image.
     Image image = new Image() { Source = new BitmapImage(new Uri("//Enter your stamp location", UriKind.RelativeOrAbsolute)) };
     PdfStampAnnotation stamp = new PdfStampAnnotation(image);
-
     //Enter the location of the stamp.
     point position = new point(100,100);
-
     //Adds the custom stamp with the actual size.
     PdfViewer.AddStamp(stamp, pageNumber, position);
 }
@@ -280,17 +274,13 @@ private void AddStamp_Click(object sender, RoutedEventArgs e)
 {
     //Enter the page number ranges from 1 to page count.
     int pageNumber = 1;
-
     //Create the custom stamp with the required image.
     Image image = new Image() { Source = new BitmapImage(new Uri("//Enter your stamp location", UriKind.RelativeOrAbsolute)) };
     PdfStampAnnotation stamp = new PdfStampAnnotation(image);
-
     //Enter the location of the stamp.
     point position = new point(100,100);
-
     //Enter the required size of the stamp.
     System.Windows.Size stampSize = new System.Windows.Size (200,200);
-
     //Adds the custom stamp with the desired size.
     PdfViewer.AddStamp(stamp, pageNumber, position, stampSize);
 }
@@ -316,14 +306,11 @@ private void PdfViewer_StampAnnotationChanged(object sender, StampAnnotationChan
     //COMMON PROPERTIES
     //AnnotationChangedAction to identify action performed for annotation 
     AnnotationChangedAction action = e.Action;
-
     //Page number in which this shape annotation was modified 
     int pageNumber = e.PageNumber;
-
     //Annotation's previous position and current position 
     RectangleF currentBounds = e.NewBounds;
     RectangleF previousBounds = e.OldBounds;
-
     PdfViewerStampSettings settings = e.Settings;
     //Annotation's properties which can be modify 
     string author = settings.Author;
@@ -332,7 +319,6 @@ private void PdfViewer_StampAnnotationChanged(object sender, StampAnnotationChan
     float opacity = settings.Opacity;
     System.Windows.Media.Color color = settings.Color;
     PdfRubberStampAnnotationIcon stampAnnotationIcon = settings.Icon;
-
 }
 
 {% endhighlight %}

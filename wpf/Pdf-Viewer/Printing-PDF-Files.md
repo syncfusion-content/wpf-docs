@@ -210,14 +210,11 @@ namespace PdfViewer
         public MainWindow()
         {
             InitializeComponent();
-
             //Load PDF file with the absolute file path.
             string filePath = Path.GetFullPath(@"../../Data/PDF_Succinctly.pdf");
             pdfViewer.Load(filePath);
-            
             //Get the file name
             string fileName = pdfViewer.DocumentInfo.FileName;
-            
             //Set the document name to be displayed when printing the document.
             pdfViewer.PrinterSettings.DocumentName = fileName;
 
@@ -256,11 +253,9 @@ namespace PdfViewer
         public MainWindow()
         {
             InitializeComponent();
-
             //Load PDF file.
             string filePath = Path.GetFullPath(@"../../Data/PDF_Succinctly.pdf");
             pdfViewer.Load(filePath);
-            
             //Set the document name to be displayed when printing the document.
             pdfViewer.PrinterSettings.ShowPrintStatusDialog = false;
 
@@ -290,16 +285,13 @@ PageSettings pageSettings = new PageSettings();
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
+    //Enter Your Printer’s Name
+    printerSettings.PrinterName = "Mention Your printer's name here";
+    //Changes the papersource in pagesettings
+    pageSettings.PaperSource = printerSettings.PaperSources[3];
 
- //Enter Your Printer’s Name
- printerSettings.PrinterName = "Mention Your printer's name here";
-
- //Changes the papersource in pagesettings
- pageSettings.PaperSource = printerSettings.PaperSources[3];
-
- //Prints the PDF with required papersource
- pdfviewer.Print(printerSettings.PrinterName, pageSettings);
- 
+    //Prints the PDF with required papersource
+    pdfviewer.Print(printerSettings.PrinterName, pageSettings);
 }
 
 {% endhighlight %}
@@ -328,10 +320,8 @@ namespace WPF_PDFViewer
             InitializeComponent();
             //Wire the BeginPrint event
             pdfViewer.BeginPrint += pdfViewer_BeginPrint;
-
             //Load the PDF file
             pdfViewer.Load("F Sharp Succinctly.pdf");
-
             //Print the PDF silently to the default printer. 
             pdfViewer.Print(true);
         }
@@ -368,10 +358,8 @@ namespace WPF_PDFViewer
             InitializeComponent();
             //Wire the PrintProgress event
             pdfViewer.PrintProgress += pdfViewer_PrintProgress;
-
             //Load the PDF file
             pdfViewer.Load("F Sharp Succinctly.pdf");
-
             //Print the PDF silently to the default printer. 
             pdfViewer.Print(true);
         }
@@ -380,7 +368,6 @@ namespace WPF_PDFViewer
         {
             //Provide the total number of pages in the PDF
             int printCount = args.PageCount;
-
             //Provide the currently printing page number
             int currentPage = args.PageIndex;
         }
@@ -412,10 +399,8 @@ namespace WPF_PDFViewer
             InitializeComponent();
             //Wire the EndPrint event
             pdfViewer.EndPrint += pdfViewer_EndPrint;
-
             //Load the PDF file
             pdfViewer.Load("F Sharp Succinctly.pdf");
-
             //Print the PDF silently to the default printer. 
             pdfViewer.Print(true);
         }

@@ -82,7 +82,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             FileStream stream = new FileStream(@"HTTP Succinctly.pdf", FileMode.Open);
 
             //Load PDF file using stream.
@@ -211,7 +210,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //Load PDF file with the absolute file path.
             pdfViewer.Load(Path.GetFullPath(@"HTTP Succinctly.pdf"));
 
@@ -243,7 +241,6 @@ namespace PdfViewerDemo
         public MainWindow()
         {
             InitializeComponent();
-
             //wire the DocumentLoaded event
             pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
         }

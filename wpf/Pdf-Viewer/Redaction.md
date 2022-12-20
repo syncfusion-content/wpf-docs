@@ -61,12 +61,10 @@ You can also mark regions for redaction without UI interaction from the code beh
 private void Button_Click(object sender, RoutedEventArgs e)
 {            
 	List<RectangleF> rectangles = new List<RectangleF>();
-
 	rectangles = new List<RectangleF>() { new RectangleF(100, 100, 100, 100) };
 
 	// Appends regions to the existing marked regions, marking regions if it does not already exist.
 	pdfViewerControl.PageRedactor.MarkRegions(0, rectangles, false);
-
 	// Enable the redaction mode.
 	pdfViewerControl.PageRedactor.EnableRedactionMode = true;
 }
@@ -128,19 +126,14 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {
     //Set the overlay text
     pdfviewer.RedactionSettings.OverlayText = "overlay text";
-
     //Sets the overlay text font color 
     pdfviewer.RedactionSettings.FontColor = Colors.Blue;
-
     //Sets the overlay text font family 
     pdfviewer.RedactionSettings.FontFamily = new System.Windows.Media.FontFamily("Times new Roman");
-
     //Sets the overlay text font size
     pdfviewer.RedactionSettings.FontSize = 17;
-
     //Enable the overlay text appearance 
     pdfviewer.RedactionSettings.UseOverlayText = true;
-
 }
 
 {% endhighlight %}
@@ -149,16 +142,12 @@ private void button1_Click(object sender, RoutedEventArgs e)
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
     'Set the overlay text
     pdfviewer.RedactionSettings.OverlayText = "overlay text"
-
     'Sets the overlay text font color 
     pdfviewer.RedactionSettings.FontColor = Colors.Blue
-
     'Sets the overlay text font family 
     pdfviewer.RedactionSettings.FontFamily = new System.Windows.Media.FontFamily("Times new Roman")
-
     'Sets the overlay text font size
     pdfviewer.RedactionSettings.FontSize = 17
-
     'Enable the overlay text appearance 
     pdfviewer.RedactionSettings.UseOverlayText = true
 End Sub
@@ -181,12 +170,10 @@ The following code shows how to customize the appearance of mark for redaction a
 
 private void button1_Click(object sender, RoutedEventArgs e)
 {
-     //Sets the redact mark area fill color
+    //Sets the redact mark area fill color
     pdfviewer.RedactionSettings.MarkAppearance.FillColor = Colors.Green;
-
     //Sets the redact mark area fill color opacity
     pdfviewer.RedactionSettings.MarkAppearance.FillOpacity = 0.5f;
-
     //Sets the redact mark area outline color 
     pdfviewer.RedactionSettings.MarkAppearance.OutlineColor = Colors.Yellow;
 }
@@ -197,10 +184,8 @@ private void button1_Click(object sender, RoutedEventArgs e)
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
     'Sets the redact mark area fill color
     pdfviewer.RedactionSettings.MarkAppearance.FillColor = Colors.Green
-
     'Sets the redact mark area fill color opacity
     pdfviewer.RedactionSettings.MarkAppearance.FillOpacity = 0.5f
-
     'Sets the redact mark area outline color 
     pdfviewer.RedactionSettings.MarkAppearance.OutlineColor = Colors.Yellow
 End Sub
@@ -266,15 +251,12 @@ namespace RedactionAppliedEventDemo
         {
             //Collection of redacted regions for pdf pages
              List<RedactionMark> RedactedMarks = args.Marks;
-
             foreach (RedactionMark redactionMark in RedactedMarks)
             {
                 //Bounds of the redacted region
                 System.Drawing.RectangleF RedactedRegion = redactionMark.Bounds;
-
                 //Brush color used to fill the redacted region
                 System.Windows.Media.Color Fillcolor = redactionMark.Fill;
-
                 //Page index of the redaction mark
                 int pageIndex = redactionMark.PageIndex;
             }

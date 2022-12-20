@@ -95,7 +95,6 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
     //Return true, if the given text is found
     bool isMatchFound = pdfViewer.FindText("FindText", out textSearch);
-
     if (isMatchFound)
     {
         //Get the list of bounds in the first page
@@ -120,7 +119,6 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 
     //Return true, if the given text is found in the particular page
     bool isMatchFound = pdfViewer.FindText("FindText",0, out textSearch);
-
     if (isMatchFound)
     {
         //Get the bounds of the first occurance in the particluar page
@@ -142,13 +140,11 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
     //Get the occurrences of the target text and location.
     Dictionary<int, List<TextSearchResult>> searchResult = new Dictionary<int, List<TextSearchResult>>();
-
     //List of text need to be found
     List<string> findText = new List<string>() {"Find","Text"};;
 
     //Return true, if the given text is found in the particular page
     bool isMatchFound = pdfViewer.FindText(findText, out searchResult);
-
     if (isMatchFound)
     {
         //Get the bounds of the first TextSearchResult
@@ -170,13 +166,11 @@ private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
 {
     //Get the occurrences of the target text and location.
     List<MatchedItem> searchResult = new List<MatchedItem>();
-
     //List of text need to be found
     List<string> findText = new List<string>() {"Find","Text"};
 
     //Return true, if the given text is found in the particular page
     bool isMatchFound = pdfViewer.FindText(findText,0, out searchResult);
-
     if (isMatchFound)
     {
         //Get the bounds of the first MatchedItem on the desired page
