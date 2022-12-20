@@ -50,11 +50,14 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Project Configurations**
 
-	**Project Type:** Choose .Net 6.0, .Net 5.0, .Net Core 3.1, or .Net Framework as the project type.
+	**Project Type:** Choose .Net 7.0 and .Net 6.0 or .Net Framework as the project type.
 
-	N> From Visual Studio 2019, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net Core 3.1, .Net 5.0, and .Net 6.0 option will be listed in project type when only the .Net Core 3.1, .Net 5.0, and .Net 6.0 SDK setup has been installed.
+	N> From Visual Studio 2019, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
 
-	N> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
+	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
+
+	> .NET 7.0 version is available from v20.4.0.38 and it support from Visual Studio 2022.
+
 
 	**Language:** Select the language, either CSharp or VB.
 
@@ -64,7 +67,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .Net Core 3.1, .Net 5.0, and .NET 6.0 from project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0 and .NET 7.0 from project type option in Visual Studio.
 
 	**Installed ES Build Version:** To add the appropriate version assemblies to the project, choose the build version.
 
