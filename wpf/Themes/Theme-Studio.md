@@ -15,6 +15,10 @@ The Theme Studio helps users to transform their visual presentation into a new t
 
 The WPF Theme Studio comes with the following set of themes:
 
+* Windows 11 Light
+
+* Windows 11 Dark
+
 * Fluent Light
 
 * Fluent Dark
@@ -50,6 +54,26 @@ The WPF Theme Studio comes with various set of palettes for each theme variant.
 <th>Theme variant</th>
 <th>Palette list</th>
 <th>Supported themes</th>
+</tr>
+<tr>
+<td>Windows 11</td>
+<td>
+<ul>
+<li>Default</li>
+<li>PurpleShadowDark</li>
+<li>VioletRed</li>
+<li>PlumbLight</li>
+<li>MintLight</li>
+<li>YellowGold</li>
+<li>SteelBlue</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Windows11Light</li>
+<li>Windows11Dark</li>
+</ul>
+</td>
 </tr>
 <tr>
 <td>Fluent</td>
@@ -242,8 +266,8 @@ Target Framework</th><th>
 Solution Project</th></tr>
 <tr>
 <td>
-.Net 5.0</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_NET50.csproj</td>
+.Net 6.0</td><td>
+Syncfusion.Themes.MaterialDarkYellow.WPF_NET60.csproj</td>
 </tr>
 <tr>
 <td>
@@ -261,10 +285,6 @@ Syncfusion.Themes.MaterialDarkYellow.WPF_2012.csproj</td></tr>
 <td>
 .Net Framework 4.0</td><td>
 Syncfusion.Themes.MaterialDarkYellow.WPF_2010.csproj</td></tr>
-<tr>
-<td>
-.Net Core 3</td><td>
-Syncfusion.Themes.MaterialDarkYellow.WPF_NETCore.csproj</td></tr>
 </table>
 
 
