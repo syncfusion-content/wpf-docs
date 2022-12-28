@@ -58,7 +58,7 @@ From 20.4 (2022 Vol4) <br/></td>
 
 </table>
 
-N> Dedicated assemblies are not included for .NET 7.0 and higher versions. Instead, .NET 6.0 assemblies can be used.
+N> Dedicated assemblies are not included for .NET 7.0 and higher versions. Instead, .NET 6.0 assemblies can be used .
 
 ## Adding Reference
 
