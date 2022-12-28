@@ -15,7 +15,7 @@ The [ScrollBarMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.
 * `Default` - The ScrollBar will be displayed with the default look of a thumb along with up and down arrow to scroll.
 * `Compact` - The Windows 10 like compact scrollbar will have the look of a thin layer of thumb until the user hovers over the scrollbar area. 
 
-N> The `Compact` scrollbar mode is enabled by default in [WPF Fluent Theme](https://help.syncfusion.com/wpf/themes/fluent-theme) and WPF Windows11 Theme. 
+N> The `Compact` scrollbar mode is enabled by default in the [WPF Fluent Theme](https://help.syncfusion.com/wpf/themes/fluent-theme) and WPF Windows11 Theme. 
 
 {% tabs %}
 
