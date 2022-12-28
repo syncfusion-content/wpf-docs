@@ -58,7 +58,7 @@ From 20.4 (2022 Vol4) <br/></td>
 
 </table>
 
-N> For.NET 7.0 and higher versions, dedicated assemblies are not included. Instead, .NET 6.0 assemblies can be used.
+N> Dedicated assemblies are not included for .NET 7.0 and higher versions. Instead, .NET 6.0 assemblies can be used.
 
 ## Adding Reference
 
@@ -75,7 +75,7 @@ Refer [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/
 
 ### Adding assembly references from installed location
 
-You can also add the Syncfusion WPF (.NET Core) controls assemblies from `precompiledassemblies` folder in the following location.
+You can also add the Syncfusion WPF (.NET Core) controls assemblies from the `precompiledassemblies` folder in the following location.
 
 <table>
 <td>.NET 6 or higher</td>
