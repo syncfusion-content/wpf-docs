@@ -17,6 +17,7 @@ This section describes the system requirements to use Syncfusion WPF Controls fo
 * Windows 7 SP1
 * Windows 8, 8.1
 * Windows 10
+* Windows 11
 
 
 ### Hardware Environment
@@ -29,5 +30,4 @@ This section describes the system requirements to use Syncfusion WPF Controls fo
 
 * Microsoft Visual Studio 2008/2010/2012/2013/2015/2017/2019/2022
 * .NET Framework 3.5/4.0/4.5/4.5.1/4.6
-* .NET Core 3.1
-* .NET 5.0
+* .NET 6.0
