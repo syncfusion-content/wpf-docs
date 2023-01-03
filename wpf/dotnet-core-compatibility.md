@@ -78,6 +78,7 @@ Refer [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/
 You can also add the Syncfusion WPF (.NET Core) controls assemblies from the `precompiledassemblies` folder in the following location.
 
 <table>
+<tr>
 <td>.NET 6 or higher</td>
 <td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net6.0</td>
 </tr>
