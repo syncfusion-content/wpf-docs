@@ -23,9 +23,9 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:** 
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button click from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate#Claim-License-Key) for more details.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button click from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/windowsforms/licensing/how-to-register-in-an-application) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ### Invalid key
 
@@ -37,7 +37,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button click from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate#Claim-License-Key) for more details..
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform or License keys can also be generated from the Claim License Key page by clicking the **"Claim License"** button click from Syncfusion licensing warning message. Refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-generate#Claim-License-Key) for more details..
 
 * In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/wpf/licensing/how-to-register-in-an-application) for information on registering the license key.
 
