@@ -21,11 +21,13 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 <tr>
 <th>Syncfusion Version<br/></th>
 <th>.NET Core 3.1<br/></th>
-<th>.NET 5.0 & above<br/></th>
+<th>.NET 5.0<br/></th>
+<th>.NET 6.0 & above<br/></th>
 </tr>
 
 <tr>
 <td>Earlier Version<br/></td>
+<td>No<br/></td>
 <td>No<br/></td>
 <td>No<br/></td>
 </tr>
@@ -35,6 +37,7 @@ Below table represents the supported Syncfusion Essential Studio version for .NE
 From 17.2 (2019 Vol2) <br/></td>
 <td>Yes<br/></td>
 <td>No<br/></td>
+<td>No<br/></td>
 </tr>
 
 <tr>
@@ -42,11 +45,20 @@ From 17.2 (2019 Vol2) <br/></td>
 From 18.4 (2020 Vol4) <br/></td>
 <td>Yes<br/></td>
 <td>Yes<br/></td>
+<td>No<br/></td>
+</tr>
+
+<tr>
+<td>
+From 20.4 (2022 Vol4) <br/></td>
+<td>No<br/></td>
+<td>No<br/></td>
+<td>Yes<br/></td>
 </tr>
 
 </table>
 
-N> For.NET 6.0 and higher versions, dedicated assemblies are not included. Instead, .NET 5.0 assemblies can be used.
+N> Dedicated assemblies are not included for .NET 7.0 and higher versions. Instead, .NET 6.0 assemblies can be used.
 
 ## Adding Reference
 
@@ -63,16 +75,11 @@ Refer [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/
 
 ### Adding assembly references from installed location
 
-You can also add the Syncfusion WPF (.NET Core) controls assemblies from `precompiledassemblies` folder in the following location.
+You can also add the Syncfusion WPF (.NET Core) controls assemblies from the `precompiledassemblies` folder in the following location.
 
 <table>
-<tr>
-<td>.NET Core 3.1</td>
-<td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\netcoreapp3.1</td>
-</tr>
-<tr>
-<td>.NET 5 or higher</td>
-<td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net5.0</td>
+<td>.NET 6 or higher</td>
+<td>C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\precompiledassemblies\net6.0</td>
 </tr>
 </table>
 
