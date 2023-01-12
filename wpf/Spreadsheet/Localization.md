@@ -44,7 +44,7 @@ The following steps show how to implement the localization in SfSpreadsheet,
 ![WPF Spreadsheet Localization using Resource File](localization_images/wpf-spreadsheet-localization-using-resource-file.JPG)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfSpreadsheet.WPF.ja.resx file.
-  For your reference, you can download the Japanese("ja-JP") Resx file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Wpf.ja-JP-601564739)
+  For your reference, you can download the Japanese("ja-JP") Resx file [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.WPF.ja1723377679)
 
 ![WPF Spreadsheet Localization with Resource Key](localization_images/wpf-spreadsheet-localization-with-resource-key.JPG)
 
