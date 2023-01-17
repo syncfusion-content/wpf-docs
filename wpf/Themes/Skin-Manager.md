@@ -24,6 +24,18 @@ Assembly</th><th>
 NuGet package</th></tr>
 <tr>
 <td>
+Windows11Light</td><td>
+Syncfusion.Themes.Windows11Light.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.Windows11Light.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Light.WPF/)'| markdownify }}
+</td></tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+Syncfusion.Themes.Windows11Dark.Wpf.dll</td><td>
+{{'[Syncfusion.Themes.Windows11Dark.WPF](https://www.nuget.org/packages/Syncfusion.Themes.Windows11Dark.WPF/)'| markdownify }}
+</td></tr>
+<tr>
+<td>
 FluentLight</td><td>
 Syncfusion.Themes.FluentLight.Wpf.dll</td><td>
 {{'[Syncfusion.Themes.FluentLight.WPF](https://www.nuget.org/packages/Syncfusion.Themes.FluentLight.WPF/)'| markdownify }}
@@ -206,6 +218,16 @@ The following table lists the available themes supported in theme studio and alt
 Styles</th><th>
 Supported in ThemeStudio</th><th>
 Alternative theme suggestion to use</th></tr>
+<tr>
+<td>
+Windows11Light</td><td>
+Yes</td><td>
+-</td></tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+Yes</td><td>
+-</td></tr>
 <tr>
 <td>
 FluentLight</td><td>
@@ -467,6 +489,24 @@ Please find the complete list of theme names, respective theme settings class, a
 Styles/Theme name</th><th>
 Respective theme settings class to customize</th>
 <th>Supported palette</th>
+</tr>
+<tr>
+<td>
+Windows11Light</td><td>
+{{'[Windows11LightThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Light.WPF.Windows11LightThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Windows11Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Light.WPF.Windows11Palette.html)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Windows11Dark</td><td>
+{{'[Windows11DarkThemeSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Dark.WPF.Windows11DarkThemeSettings.html)'| markdownify }}
+</td>
+<td>
+{{'[Windows11Palette](https://help.syncfusion.com/cr/wpf/Syncfusion.Themes.Windows11Dark.WPF.Windows11Palette.html)'| markdownify }}
+</td>
 </tr>
 <tr>
 <td>
