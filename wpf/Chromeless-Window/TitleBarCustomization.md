@@ -149,7 +149,7 @@ documentation: ug
 
  The visibility of maximize and minimize buttons can be customized using the [`ShowMaximizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMaximizeButton) and [`ShowMinimizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMinimizeButton) properties respectively. The default value of `ShowMaximizeButton` and `ShowMinimizeButton` properties are true. 
 
- N> By default, the maximize and minimize buttons will not be displayed in ResizeMode -`NoResize` even when the value of `ShowMaximizeButton` and `ShowMaximizeButton` set as `True`. The maximize and minimize buttons will be displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` based on the `ShowMaximizeButton` and `ShowMinimizeButton` properties.
+ N> By default, the maximize and minimize buttons will not be displayed in ResizeMode -`NoResize` even when the value of `ShowMaximizeButton` and `ShowMinimizeButton` set as `True`. The maximize and minimize buttons will be displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` based on the `ShowMaximizeButton` and `ShowMinimizeButton` properties.
 
  {% tabs %}
 {% highlight XAML %}
