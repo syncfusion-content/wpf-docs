@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Customizing Border of the ChromelessWindow in WPF Chromeless Window
 
-**BorderBrush**
+## BorderBrush
 
 The Borders of the resizable window can be painted by using the **ResizeBorderBrush** property.
 
@@ -45,7 +45,7 @@ Me.ResizeBorderBrush = New SolidColorBrush(Colors.Maroon)
 
 ![WPF ChromelessWindow border color customized](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img1.jpeg)
 
-**BorderThickness**
+## BorderThickness
 
 To set the thickness for the Resizable border, use **ResizableBorderThickness** property of the ChromelessWindow. This property virtually sets the region for the resize pointer to appear. Hence, greater the region, easier it is to resize.
 
