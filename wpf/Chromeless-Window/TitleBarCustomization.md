@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Title bar Customization in WPF Chromeless Window
 
- ### Customizing the background
+## Customizing the background
  
  The [`TitleBarBackground`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarBackground) property can be used to set the background for the Title bar.
  
@@ -46,7 +46,7 @@ documentation: ug
  
  ![Setting title bar background](TitleBarBackground_images/TitleBarBackground_img1.jpeg)
  
- ### Customizing the height
+## Customizing the height
  
  The [`TitleBarHeight`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleBarHeight) property can be used to change the height of the Title bar. The default value is `30`. 
   
@@ -82,7 +82,7 @@ documentation: ug
  
  ![Setting title bar height](TitleBarHeight-Support_images/TitleBarHeight-Support_img1.jpeg)
 
- ### Customizing  the font size
+## Customizing the font size
 
  The font size of the ChromelessWindow title bar can be changed by using [`TitleFontSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_TitleFontSize) property. The default value is `12`.
 
@@ -117,7 +117,7 @@ documentation: ug
  
  ![Setting font size for the title bar text](ChromelessWindow-TitleFontSize-Support_images/ChromelessWindow-TitleFontSize-Support_img1.jpeg)
 
- ### Show or hide the title bar text
+## Show or hide the title bar text
 
  The visibility of the title can be customized using the [`ShowTitle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowTitle) property. The default value of `ShowTitle` property is true.
 
@@ -145,11 +145,11 @@ documentation: ug
 
  ![Show or hide the title bar text](Getting-Started_images/ShowTitle.PNG)
 
- ### Show or hide the maximize and minimize buttons
+## Show or hide the maximize and minimize buttons
 
  The visibility of maximize and minimize buttons can be customized using the [`ShowMaximizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMaximizeButton) and [`ShowMinimizeButton`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.ChromelessWindow.html#Syncfusion_Windows_Shared_ChromelessWindow_ShowMinimizeButton) properties respectively. The default value of `ShowMaximizeButton` and `ShowMinimizeButton` properties are true. 
 
- N> By default, the maximize and minimize buttons will not be displayed in ResizeMode -`NoResize` even when the value of `ShowMaximizeButton` and `ShowMaximizeButton` set as `True`. The maximize and minimize buttons will be displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` based on the `ShowMaximizeButton` and `ShowMinimizeButton` properties.
+ N> By default, the maximize and minimize buttons will not be displayed in ResizeMode -`NoResize` even when the value of `ShowMaximizeButton` and `ShowMinimizeButton` set as `True`. The maximize and minimize buttons will be displayed only in the remaining resize modes such as `CanMinimize`, `CanResize`, `CanResizeWithGrip` based on the `ShowMaximizeButton` and `ShowMinimizeButton` properties.
 
  {% tabs %}
 {% highlight XAML %}
