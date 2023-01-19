@@ -13,7 +13,37 @@ Edit for WPF provides built-in support for a procedural and markup languages suc
 
 With the language support, EditControl enables the users to create, open, modify and save programming codes from different file types. EditControl provides built in Syntax highlighting and outlining support for all supported languages with SQL being exception in outlining support. It also provides built-in IntelliSense support for all procedural languages such as C# and Visual Basic.
 
-The `DocumentLanguage` property in the EditControl class enables the users to select the language. DocumentLanguage is a Language enum type property with default value as Text. The following lines of code can be used to change the DocumentLanguage property.
+The [`DocumentLanguage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_DocumentLanguage) property in the EditControl class enables the users to select the language. `DocumentLanguage` is a Language `enum` type property with default value as Text and includes the following languages:
+
+1. C
+
+2. CSharp
+
+3. Custom
+
+4. Delphi
+
+5. HTML
+
+6. Java
+
+7. JScript
+
+8. PowerShell
+
+9. SQL
+
+10. Text
+
+11. VBScript
+
+12. VisualBasic
+
+13. XAML
+
+14. XML
+
+The following lines of code can be used to change the DocumentLanguage property.
 
 {% tabs %}
 
