@@ -26,7 +26,21 @@ Edit WPF can also be used as a static control in order to view only the contents
 
 {% highlight C# %}
 
+public partial class MainWindow : Window
+
+{
+
+public MainWindow()
+
+{
+
+InitializeComponent();
+
 editControl.IsReadOnly = true;
+
+}
+
+}
 
 {% endhighlight %}
 
