@@ -780,6 +780,7 @@ private void Window_Closed(object sender, EventArgs e)
 ## Resource Key List
 
 ### Framework Controls
+
 <table>
 <tr><th>Control Name</th><th>Key Name</th></tr>
 <tr><td>Button</td><td>WPFButtonStyle</td></tr>
@@ -795,7 +796,7 @@ private void Window_Closed(object sender, EventArgs e)
 <tr><td>GlyphButton</td><td>WPFGlyphButtonStyle</td></tr>
 <tr><td>GlyphDropdownExpander</td><td>WPFGlyphDropdownExpanderStyle</td></tr>
 <tr><td>GlyphEditableDropdownExpander</td><td>WPFGlyphEditableDropdownExpanderStyle</td></tr>
-<tr><td>GlyphPrimaryToggleButton</td><td>WPFGlyphPrimaryToggleButtonStyle<//td></tr>
+<tr><td>GlyphPrimaryToggleButton</td><td>WPFGlyphPrimaryToggleButtonStyle</td></tr>
 <tr><td>GlyphRepeatButton</td><td>WPFGlyphRepeatButtonStyle</td></tr>
 <tr><td>GlyphToggleButton</td><td>WPFGlyphToggleButtonStyle</td></tr>
 <tr><td>GlyphTreeExpander</td><td>WPFGlyphTreeExpanderStyle</td></tr>
