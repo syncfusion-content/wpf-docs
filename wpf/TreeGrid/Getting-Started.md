@@ -248,7 +248,7 @@ public class EmployeeInfo
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface.
 
 2. Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 
