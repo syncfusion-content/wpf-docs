@@ -10,7 +10,7 @@ documentation: ug
 # Data Binding in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand).
-If the data source implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), SfTreeGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
@@ -21,11 +21,11 @@ Below are the ways to bind the data source to SfTreeGrid.
 
 ## Binding with IEnumerable
 
-SfTreeGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. Data operations such as sorting is supported when you are binding collection derived from `IEnumerable`.
+SfTreeGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. Data operations such as sorting is supported when you are binding collection derived from `IEnumerable`.
 
 ## Binding with dynamic data object
 
-SfTreeGrid control supports to bind [dynamic data object](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN&view=net-5.0). Below are the limitations when you are binding dynamic data object,
+SfTreeGrid control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN&view=net-5.0). Below are the limitations when you are binding dynamic data object,
 
 1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
 2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
@@ -505,7 +505,7 @@ The following events are associated with View.
 
 #### RecordPropertyChanged
 
-This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
+This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
 
 `PropertyChangedEventArgs` has below property,
 

@@ -238,7 +238,7 @@ if (sfd.ShowDialog() == true)
 
 ## Opening exported excel without saving
 
-You can open the exported workbook without saving by using [SfSpreadsheet](http://help.syncfusion.com/wpf/sfspreadsheet) control.
+You can open the exported workbook without saving by using [SfSpreadsheet](https://help.syncfusion.com/wpf/spreadsheet/overview) control.
 
 {% tabs %}
 {% highlight c# %}
