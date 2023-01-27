@@ -127,10 +127,10 @@ The `OverviewChangedEvent` will notify the interactions in Overview control with
 
 {% seealso %}
 
-[How to virtualize the diagram control](/wpf/sfdiagram/virtualization)
+[How to virtualize the diagram control](/wpf/diagram/virtualization)
 
-[How to serialize the diagram control](/wpf/sfdiagram/serialization)
+[How to serialize the diagram control](/wpf/diagram/serialization)
 
-[How to localize the diagram control](/wpf/sfdiagram/localization)
+[How to localize the diagram control](/wpf/diagram/localization)
 
 {% endseealso %}
