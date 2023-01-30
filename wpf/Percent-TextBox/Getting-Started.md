@@ -21,7 +21,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF PercentTextBox via designer
 
-You can add the [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [PercentTextBox](https://www.syncfusion.com/wpf-controls/percent-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -123,7 +123,7 @@ percentTextBox.PercentValue = 100;
 
 ![WPF PercentTextBox displays Percent Value](Getting-Started_images/wpf-percent-textbox-value.png)
 
-N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the percent value for the PercentTextBox. Use only the `PercentValue` property.
+N> Do not use the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the percent value for the PercentTextBox. Use only the `PercentValue` property.
 
 ### Binding Value
 
