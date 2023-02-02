@@ -941,7 +941,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 ### Apply customized theme from Theme Studio
 
-Create custom themes by modifying the existing themes from Themestudio. To apply a custom theme in the application by using the following reference.
+Create custom themes by modifying the existing themes from Theme studio. To apply a custom theme in the application by using the following reference.
 
 {% tabs %}
 
@@ -1095,10 +1095,10 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-a
 
 ### Switch theme with custom styles
 
-To add a theme's name list in a control like a Radiobutton or a Dropdownlist choose a theme dynamically by following the steps outlined below.
+To add a theme's name list in a control like a Radio button or a Dropdown list choose a theme dynamically by following the steps outlined below.
  
 *  **Step 1**: Create a list with the themes (Example. "Windows11Light", "Windows11Dark")
-*  **Step 2**: Make use of the data binding to add the themes to the Dropdownlist or Radiobutton. 
-*  **Step 3**: Need to Add an event handler for the selection changed event of the Radiobutton or Dropdownlist.
-*  **Step 4**:  Retrieve the selected theme and apply it to your application by modifying the custom styles, in the event handler.
+*  **Step 2**: Make use of the data binding to add the themes to the Dropdown list or Radio button. 
+*  **Step 3**: Need to Add an event handler for the selection changed event of the Radio button or Dropdown list.
+*  **Step 4**: Retrieve the selected theme and apply it to your application by modifying the custom styles, in the event handler.
 
