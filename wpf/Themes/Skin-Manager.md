@@ -939,82 +939,92 @@ private void Window_Closed(object sender, EventArgs e)
 
 ## How to
 
-### Apply custom theme in the application
+### Apply customized theme from Theme Studio
 
-To apply a custom theme in the application, export the custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
-
-For demonstration purposes, the exported theme name has been used as `MaterialDarkYellow` and assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
-
-Now, for the control used in the application, set the `SfSkinManager` attached property `Theme` to `MaterialDarkYellow;MaterialDark`. Since, custom theme name should be updated in the following format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `MaterialDarkYellow;MaterialDark`.
+You can create custom themes by modifying the existing themes from Themestudio. To apply a custom theme in the application by using the following reference.
 
 {% tabs %}
+
+{% highlight XAML %}
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentLightGreen}"
+
+{% endhighlight %}
 
 {% highlight C# %}
 
-SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
+SfSkinManager.SetTheme(this, new Theme("FluentLightGreen"));
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Override syncfusion themes in the application
 
-All Syncfusion themes are [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). A common naming convention can be used to override control styles. A unique key is given to every style so that the styles can be overridden using the `BasedOn` property.
+### Customize theme in application level
 
-The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
+To customize the Syncfusion theme in application level, merge the theme in ResourceDictionary and override the style using BasedOn property. 
 
-The following steps explain how to override the Syncfusion themes:
+In ResourceDictionary, mention the style path which need to be override, in BasedOn, mention the key stated in the table.
 
-**Step1:**
+We can customize or override the theme styles by following the steps outlined below.
 
-Add respective resource dictionary from the themes assembly to the application.
 
-The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.WPF;component/<ControlName>/<ControlName>.xaml`, where `ThemeName` denotes the theme name for which overridden style is going to be applied and `ControlName` denotes the control name. For example, `/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml`.
+**Step 1**: Adding ResourceDictionary for Framework button.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-<ResourceDictionary Source="/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml"/>
+<ResourceDictionary.MergedDictionaries> 
+     <ResourceDictionary Source="/Syncfusion.Themes.Windows11Light.WPF;component/MSControl/Button.xaml" /> 
 </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Step2:**
-
-Define the new style using the `BasedOn` property.
-
-The following code sample overrides the Syncfusion style for the `ButtonAdv` Control.
+**Step 2**: Customizing Height, Width and Background color of button using BasedOn Property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Grid>
-        <Grid.Resources>
-            <Style x:Key="CustomButtonAdvStyle" TargetType="syncfusion:ButtonAdv" BasedOn="{StaticResource SyncfusionButtonAdvStyle}" >
-                <Setter Property="Foreground" Value="Red"/>
-            </Style>
-        </Grid.Resources>
-        <syncfusion:ButtonAdv Name="buttonAdv" Content="Testing" Width="150" Height="30" SmallIcon="{x:Null}" Style="{StaticResource CustomButtonAdvStyle}"></syncfusion:ButtonAdv>   
-</Grid>
+   <Style BasedOn="{StaticResource WPFButtonStyle}"  TargetType="{x:Type Button}">
+         <Setter Property="Background" Value="#5dbea3" />
+         <Setter Property="Foreground" Value="White" />
+         <Setter Property="FontFamily" Value="Berlin Sans FB Demi" />
+         <Setter Property="BorderBrush" Value="#5dbea3" />   
+   </Style>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/WPF-ButtonAdv-Overridden-foreground-style.png)
+**Step 3**: Adding Button in an application
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<StackPanel Orientation="Horizontal" >
+    <Button Content="OK" Height="30" Width="120" Margin="10"></Button>
+    <Button Content="Cancel" Height="30" Width="120" Margin="10"></Button>           
+</StackPanel>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing theme styles basedOn for buttons](Skin-Manager_images/CustomizingStyle.png)
+
+
 
 ### Change visual style at runtime
 
 Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure that the new theme assembly is attached as reference in the application when applying theme.
-
-![Added references for WPF SkinManager and visual style](Skin-Manager_images/WPF-SkinManager-References.jpg)
 
 {% tabs %}
 
@@ -1072,6 +1082,23 @@ Themes for application can be changed at runtime by changing `VisualStyle` prope
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfSkinManager.SetTheme(this, new Theme(comboVisualStyle.SelectedValue.ToString()));
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
+
+
+### Switch theme with custom styles
+
+To add a theme's name list in a control like a Radiobutton or a Dropdownlist choose a theme dynamically by following the steps outlined below.
+ 
+*  **Step 1**: Create a list with the themes (Example. "Windows11Light", "Windows11Dark")
+*  **Step 2**: Make use of the data binding to add the themes to the Dropdownlist or Radiobutton. 
+*  **Step 3**: Need to Add an event handler for the selection changed event of the Radiobutton or Dropdownlist.
+*  **Step 4**:  Retrieve the selected theme and apply it to your application by modifying the custom styles, in the event handler.
+
