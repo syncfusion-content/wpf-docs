@@ -941,7 +941,7 @@ private void Window_Closed(object sender, EventArgs e)
 
 ### Apply customized theme from Theme Studio
 
-You can create custom themes by modifying the existing themes from Themestudio. To apply a custom theme in the application by using the following reference.
+Create custom themes by modifying the existing themes from Themestudio. To apply a custom theme in the application by using the following reference.
 
 {% tabs %}
 
