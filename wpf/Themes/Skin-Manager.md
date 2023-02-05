@@ -1101,7 +1101,7 @@ We have provided an example that demonstrates switching between the Window11Ligh
 Always call the SetTheme() method of the SfSkinManager when changing themes.
 
  
-*  **Step 1**: In this example, we have an SfDataGrid and a combobox, so we need to add resource dictionaries with paths in merged dictionaries in ViewModel or codebehind.
+*  **Step 1**: In this example, we have an SfDataGrid and a combobox, so we need to add resource dictionaries with paths in merged dictionaries in ViewModel or code behind.
 
 {% tabs %}
 
