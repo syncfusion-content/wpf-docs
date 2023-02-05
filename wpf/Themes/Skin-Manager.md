@@ -1177,10 +1177,10 @@ Always call the SetTheme() method of the SfSkinManager when changing themes.
 
 Light Theme:
 
-![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light.png)
+![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light1.png)
 
 
 
 Dark Theme:
-![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark.png.png)
+![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark1.png)
 
