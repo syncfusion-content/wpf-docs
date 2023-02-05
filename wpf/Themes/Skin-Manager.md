@@ -1084,7 +1084,7 @@ Themes for application can be changed at runtime by changing `VisualStyle` prope
 
 {% highlight C# %}
 
-SfSkinManager.SetTheme(this, new Theme(comboVisualStyle.SelectedValue.ToString()));
+SfSkinManager.SetVisualStyle(this, (VisualStyles)Enum.Parse(typeof(VisualStyles), comboVisualStyle.SelectedItem.ToString()));
 
 {% endhighlight %}
 
