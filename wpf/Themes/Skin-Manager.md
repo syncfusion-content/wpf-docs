@@ -1095,10 +1095,92 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-a
 
 ### Switch theme with custom styles
 
-To add a theme's name list in a control like a Radio button or a Dropdown list choose a theme dynamically by following the steps outlined below.
+To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
+
+We have provided an example that demonstrates switching between the Window11Light and Windows11Dark themes using the SfGrid control. In this example, we customize the foreground color of the GridTableSummaryCell to green in Window11Light and red in Window11Dark.
+Always call the SetTheme() method of the SfSkinManager when changing themes.
+
  
-*  **Step 1**: Create a list with the themes (Example. "Windows11Light", "Windows11Dark")
-*  **Step 2**: Make use of the data binding to add the themes to the Dropdown list or Radio button. 
-*  **Step 3**: Need to Add an event handler for the selection changed event of the Radio button or Dropdown list.
-*  **Step 4**: Retrieve the selected theme and apply it to your application by modifying the custom styles, in the event handler.
+*  **Step 1**: In this example, we have an SfDataGrid and a combobox, so we need to add resource dictionaries with paths in merged dictionaries in ViewModel or codebehind.
+
+{% tabs %}
+
+{% highlight C# %}
+
+       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+       {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/Window.xaml", UriKind.RelativeOrAbsolute)
+       });
+
+
+       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+       {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)           
+        });
+
+
+       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+       {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/SfDataGrid/SfDataGrid.xaml", UriKind.RelativeOrAbsolute)
+       });
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+*  **Step 2**: Customize the foreground color and font weight of the table summary row in Both Light and dark themes.
+
+
+
+
+### Light Theme:
+{% tabs %}
+
+{% highlight C# %}
+<ResourceDictionary>
+           <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                      TargetType="syncfusion:GridTableSummaryCell">      
+                                       <Setter Property="FontWeight"  Value="Bold" />
+                                      <Setter Property="Foreground" Value="Green" />      
+           </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Dark Theme:
+
+{% tabs %}
+
+{% highlight C# %}
+
+<ResourceDictionary>
+                <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                           TargetType="syncfusion:GridTableSummaryCell">      
+                               <Setter Property="FontWeight"    Value="Bold" />
+                              <Setter Property="Foreground"   Value="Red" />       
+            </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+*  **Step 3**: Include these custom styled 'ResourceDictionaries' in the 'MergedDictionaries'
+
+### Output Screenshots:
+
+
+Light Theme:
+
+![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light.png)
+
+
+
+Dark Theme:
+![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark.png.png)
 
