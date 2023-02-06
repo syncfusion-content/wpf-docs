@@ -971,7 +971,7 @@ In ResourceDictionary, mention the style path which need to be override, in Base
 We can customize or override the theme styles by following the steps outlined below.
 
 
-**Step 1**: Adding ResourceDictionary for Framework button.
+**Step 1**: Include the resource dictionaries of the controls(Which are used in our application) into the merged dictionaries. In this example, we added ‘ResourceDictionary’ for Button.
 
 {% tabs %}
 
@@ -985,13 +985,17 @@ We can customize or override the theme styles by following the steps outlined be
 
 {% endtabs %}
 
-**Step 2**: Customizing Height, Width and Background color of button using BasedOn Property.
+**Step 2**: : Customize the style of controls. In this step, we can customize the style of the Button. The code below customizes the background color, text color, font, and border color of the Button.
+
+Here, we are customizing Height, Width and Background color of Button using ‘BasedOn’ Property with ‘Key’.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-   <Style BasedOn="{StaticResource WPFButtonStyle}"  TargetType="{x:Type Button}">
+   <Style BasedOn="{StaticResource WPFButtonStyle}" 
+          x:Key="customizeButtonStyle"    
+          TargetType="{x:Type Button}">
          <Setter Property="Background" Value="#5dbea3" />
          <Setter Property="Foreground" Value="White" />
          <Setter Property="FontFamily" Value="Berlin Sans FB Demi" />
@@ -1002,15 +1006,15 @@ We can customize or override the theme styles by following the steps outlined be
 
 {% endtabs %}
 
-**Step 3**: Adding Button in an application
+**Step 3**: : Now, utilize the customized in our application using the style. This step adds Buttons in WPF application. The code below creates a ‘StackPanel’ with two buttons:
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <StackPanel Orientation="Horizontal" >
-    <Button Content="OK" Height="30" Width="120" Margin="10"></Button>
-    <Button Content="Cancel" Height="30" Width="120" Margin="10"></Button>           
+    <Button Content="OK" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>
+    <Button Content="Cancel" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>          
 </StackPanel>
 
 
