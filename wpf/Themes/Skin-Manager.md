@@ -1211,7 +1211,7 @@ We have provided an example that demonstrates switching between the Window11Ligh
 
 
 
-*  **Step 3**: Include these custom styled 'ResourceDictionaries' in the 'MergedDictionaries'
+
 
 ### Output Screenshots:
 
