@@ -1006,7 +1006,7 @@ Here, we are customizing Height, Width and Background color of Button using ‘B
 
 {% endtabs %}
 
-**Step 3**: : Now, utilize the customized in our application using the style. This step adds Buttons in WPF application. The code below creates a ‘StackPanel’ with two buttons:
+**Step 3**: : Now, utilize the customized styles in our application using the 'Style' property. This step adds custom styles of Buttons in WPF application. The code below creates a ‘StackPanel’ with two buttons:
 
 {% tabs %}
 
