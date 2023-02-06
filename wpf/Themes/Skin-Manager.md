@@ -964,9 +964,9 @@ SfSkinManager.SetTheme(this, new Theme("FluentLightGreen"));
 
 ### Customize theme in application level
 
-To customize the Syncfusion theme in application level, merge the theme in ResourceDictionary and override the style using BasedOn property. 
+To customize the Syncfusion theme in application level, merge the theme in ResourceDictionary and override the style using 'BasedOn' property. 
 
-In ResourceDictionary, mention the style path which need to be override, in BasedOn, mention the key stated in the table.
+In 'ResourceDictionary', mention the style path which need to be override, in 'BasedOn', mention the key stated in the table.
 
 We can customize or override the theme styles by following the steps outlined below.
 
@@ -984,7 +984,7 @@ We can customize or override the theme styles by following the steps outlined be
 
 {% endtabs %}
 
-**Step 2**: Declare style for the control with BasedOn key. Here style of the button has been declared and its key is used in BasedOn. Button's Background, Foreground, FontFamily, BorderBrush has been overridden.
+**Step 2**: Declare style for the control with 'BasedOn' key. Here style of the button has been declared and its key is used in 'BasedOn'. Button's Background, Foreground, FontFamily, BorderBrush has been overridden.
 
 {% tabs %}
 
@@ -1003,7 +1003,7 @@ We can customize or override the theme styles by following the steps outlined be
 
 {% endtabs %}
 
-**Step 3**: : Now, utilize the customized styles in our application using the 'Style' property. This step adds custom styles of Buttons in WPF application. 
+**Step 3**: Now, utilize the customized styles in our application using the 'Style' property. This step adds custom styles of Buttons in WPF application. 
 
 {% tabs %}
 
@@ -1014,14 +1014,11 @@ We can customize or override the theme styles by following the steps outlined be
     <Button Content="Cancel" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>          
 </StackPanel>
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Customizing theme styles basedOn for buttons](Skin-Manager_images/CustomizingStyle.png)
-
-
 
 ### Change visual style at runtime
 
@@ -1099,17 +1096,14 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-a
 To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
 
 We have provided an example that demonstrates switching between the Window11Light and Windows11Dark themes using the SfGrid control. In this example, we customize the foreground color of the GridTableSummaryCell to green in **Window 11 Light** and red in **Windows 11 Dark**.
-
-
  
 *  **Step 1**: In this example, we have an SfDataGrid and a RadioButton which is used to switching theme and we need to add resource dictionaries with paths in merged dictionaries in view model or code behind. The following code can be used to effortlessly switch themes.
-
  
 {% tabs %}
 
 {% highlight C# %}      
 
-      private void RadioButton_Click(object sender, RoutedEventArgs e)
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
         {
             var themeName = (sender as RadioButton).Content.ToString();
             string syncfusionTheme = string.Empty;
@@ -1134,18 +1128,10 @@ We have provided an example that demonstrates switching between the Window11Ligh
             {
                 Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/Window.xaml", UriKind.RelativeOrAbsolute)
             });
-
-
             Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
             {
                 Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)
-            });
-
-            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
-            {
-                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/TextBlock.xaml", UriKind.RelativeOrAbsolute)
-            });
-
+            });       
             Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
             {
                 Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/SfDataGrid/SfDataGrid.xaml", UriKind.RelativeOrAbsolute)
@@ -1165,8 +1151,8 @@ We have provided an example that demonstrates switching between the Window11Ligh
 {% endtabs %}
 
 *  **Step 2**: Customize the foreground color and font weight of the table summary row in both light and dark themes.
-
 ### Light Theme:
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -1174,9 +1160,9 @@ We have provided an example that demonstrates switching between the Window11Ligh
 <!--Light.xaml-->
 <ResourceDictionary>
            <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
-                      TargetType="syncfusion:GridTableSummaryCell">      
-                                       <Setter Property="FontWeight"  Value="Bold" />
-                                       <Setter Property="Foreground" Value="Green" />      
+                  TargetType="syncfusion:GridTableSummaryCell">      
+                <Setter Property="FontWeight"  Value="Bold" />
+                <Setter Property="Foreground" Value="Green" />      
            </Style>
 </ResourceDictionary>
 
@@ -1204,18 +1190,11 @@ We have provided an example that demonstrates switching between the Window11Ligh
 
 {% endtabs %}
 
-
-
-
-
 ### Output Screenshots:
-
 
 Light Theme:
 
 ![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light1.png)
-
-
 
 Dark Theme:
 ![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark1.png)
