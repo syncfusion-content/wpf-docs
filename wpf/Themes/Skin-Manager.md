@@ -1090,7 +1090,6 @@ SfSkinManager.SetVisualStyle(this, (VisualStyles)Enum.Parse(typeof(VisualStyles)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
 
-
 ### Switch theme with custom styles
 
 To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
