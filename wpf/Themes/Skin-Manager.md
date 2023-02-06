@@ -1102,32 +1102,68 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-a
 To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
 
 We have provided an example that demonstrates switching between the Window11Light and Windows11Dark themes using the SfGrid control. In this example, we customize the foreground color of the GridTableSummaryCell to green in Window11Light and red in Window11Dark.
-Always call the SetTheme() method of the SfSkinManager when changing themes.
+
 
  
-*  **Step 1**: In this example, we have an SfDataGrid and a combobox, so we need to add resource dictionaries with paths in merged dictionaries in ViewModel or code behind.
+*  **Step 1**: In this example, we have an SfDataGrid and a RadioButton which is used to switching theme and we need to add resource dictionaries with paths in merged dictionaries in ViewModel or code behind. The following code can be used to effortlessly switch themes.
 
+ 
 {% tabs %}
 
 {% highlight C# %}
 
-       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
-       {
+      
+
+      private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            var themeName = (sender as RadioButton).Content.ToString();
+            string syncfusionTheme = null;
+            if (themeName == "Dark")
+            {
+                syncfusionTheme = "Windows11Dark";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Dark"));
+            }
+            else if (themeName == "Light")
+            {
+                syncfusionTheme = "Windows11Light";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Light"));
+            }
+            
+            MergeResourceDictionary(syncfusionTheme);
+            MergeCustomResourceDictionary(themeName);
+        }
+
+        private void MergeResourceDictionary(string syncfusionTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
                 Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/Window.xaml", UriKind.RelativeOrAbsolute)
-       });
+            });
 
 
-       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
-       {
-                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)           
-        });
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)
+            });
 
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/TextBlock.xaml", UriKind.RelativeOrAbsolute)
+            });
 
-       Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
-       {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
                 Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/SfDataGrid/SfDataGrid.xaml", UriKind.RelativeOrAbsolute)
-       });
+            });
+        }
 
+        private void MergeCustomResourceDictionary(object selectedTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/WpfApp1;component/Themes/{selectedTheme}.xaml", UriKind.RelativeOrAbsolute)
+            });
+        }
 
 {% endhighlight %}
 
@@ -1135,18 +1171,17 @@ Always call the SetTheme() method of the SfSkinManager when changing themes.
 
 *  **Step 2**: Customize the foreground color and font weight of the table summary row in Both Light and dark themes.
 
-
-
-
 ### Light Theme:
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
+
+<!--Light.xaml-->
 <ResourceDictionary>
            <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
                       TargetType="syncfusion:GridTableSummaryCell">      
                                        <Setter Property="FontWeight"  Value="Bold" />
-                                      <Setter Property="Foreground" Value="Green" />      
+                                       <Setter Property="Foreground" Value="Green" />      
            </Style>
 </ResourceDictionary>
 
@@ -1158,13 +1193,15 @@ Always call the SetTheme() method of the SfSkinManager when changing themes.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
+
+<!--Dark.xaml-->
 
 <ResourceDictionary>
                 <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
                            TargetType="syncfusion:GridTableSummaryCell">      
                                <Setter Property="FontWeight"    Value="Bold" />
-                              <Setter Property="Foreground"   Value="Red" />       
+                               <Setter Property="Foreground"   Value="Red" />       
             </Style>
 </ResourceDictionary>
 
