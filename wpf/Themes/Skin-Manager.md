@@ -1151,7 +1151,7 @@ We have provided an example that demonstrates switching between the Window11Ligh
 
 *  **Step 2**: Customize the foreground color and font weight of the table summary row in both light and dark themes.
 
-**Light Theme:**
+**Light Theme**
 
 {% tabs %}
 
