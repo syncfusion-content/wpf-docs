@@ -9,7 +9,7 @@ documentation: ug
 
 # Read Only Mode support
 
-Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the `IsReadOnly` property of the EditControl class. The following code is used to set the ReadOnly mode for EditControl.
+Edit WPF can also be used as a static control in order to view only the contents of the file. ReadOnly mode is enabled/disabled by using the [IsReadOnly](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_IsReadOnlyProperty) property of the EditControl class. The following code is used to set the ReadOnly mode for EditControl.
 
 {% tabs %}
 
@@ -38,17 +38,17 @@ Edit WPF can also be used as a static control in order to view only the contents
 
 {% highlight C# %}
 
-  public partial class MainWindow : Window
+public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            EditControl editControl = new EditControl();
-            this.Content = editControl;
-            editControl.Text = "This is Syncfusion's EditControl";
-            editControl.IsReadOnly = true;           
-        }
+        InitializeComponent();
+        EditControl editControl = new EditControl();
+        editControl.Text = "This is Syncfusion's EditControl";
+        editControl.IsReadOnly = true;
+        this.Content = editControl;           
     }
+}
 
 {% endhighlight %}
 
