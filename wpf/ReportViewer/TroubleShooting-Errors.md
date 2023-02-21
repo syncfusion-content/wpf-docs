@@ -6,7 +6,7 @@ platform: wpf
 control: ReportViewer
 documentation: ug
 ---
-# Troubleshooting Errors
+# Troubleshooting Errors in WPF ReportViewer
 
 To resolve the respective issues in report viewer, use the following troubleshooting steps:
 
