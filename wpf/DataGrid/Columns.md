@@ -24,7 +24,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[GridTextColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
+{{'[GridTextColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -40,7 +40,7 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[GridCurrencyColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html)'| markdownify }}
+{{'[GridCurrencyColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrencyColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the currency value.
@@ -48,7 +48,7 @@ Use to display the currency value.
 </tr>
 <tr>
 <td>
-{{'[GridPercentColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html)'| markdownify }}
+{{'[GridPercentColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridPercentColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the percent value
@@ -56,7 +56,7 @@ Use to display the percent value
 </tr>
 <tr>
 <td>
-{{'[GridMaskColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMaskColumn.html)'| markdownify }}
+{{'[GridMaskColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMaskColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the data to be masked.
@@ -64,7 +64,7 @@ Use to display the data to be masked.
 </tr>
 <tr>
 <td>
-{{'[GridTimeSpanColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn.html)'| markdownify }}
+{{'[GridTimeSpanColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTimeSpanColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the time span value
@@ -72,7 +72,7 @@ Use to display the time span value
 </tr>
 <tr>
 <td>
-{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the date time value 
@@ -80,7 +80,7 @@ Use to display the date time value
 </tr>
 <tr>
 <td>
-{{'[GridComboBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using ComboBox.
@@ -88,7 +88,7 @@ Use to display the IEnumerable data using ComboBox.
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the boolean type data
@@ -96,7 +96,7 @@ Use to display the boolean type data
 </tr>
 <tr>
 <td>
-{{'[GridImageColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
+{{'[GridImageColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the image in each row.
@@ -104,7 +104,7 @@ Use to display the image in each row.
 </tr>
 <tr>
 <td>
-{{'[GridHyperlinkColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the Uri data
@@ -112,7 +112,7 @@ Use to display the Uri data
 </tr>
 <tr>
 <td>
-{{'[GridTemplateColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
+{{'[GridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -120,7 +120,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[GridUnboundColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
+{{'[GridUnboundColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display custom information of each record.
@@ -128,7 +128,7 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-{{'[GridMultiColumnDropDownList](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
+{{'[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using SfMultiColumnDropdownControl.
@@ -147,7 +147,7 @@ You can let the SfDataGrid to create columns or you can manually define columns 
 
 The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns). Default value is `true`.
 
-Columns are generated based on type of property. For example, [GridNumericColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added. 
+Columns are generated based on type of property. For example, [GridNumericColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, `GridTextColumn` will be added. 
 
 <table>
 <tr>
@@ -352,7 +352,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
+[AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
 
 ##### Cancel column generation for particular property
 
@@ -787,9 +787,9 @@ You can enable or disable dragging on particular column using [GridColumn.AllowD
 
 ### Disable column reordering
 
-You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event. 
+You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event. 
 
-`QueryColumnDraggingEventArgs.From` property returns the index of column triggered this event. `QueryColumnDraggingEventArgs.To` property returns the index where you try to drop the column. `QueryColumnDraggingEventArgs.Reason` returns column dragging details by [QueryColumnDraggingReason](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingReason.html).  
+`QueryColumnDraggingEventArgs.From` property returns the index of column triggered this event. `QueryColumnDraggingEventArgs.To` property returns the index where you try to drop the column. `QueryColumnDraggingEventArgs.Reason` returns column dragging details by [QueryColumnDraggingReason](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingReason.html).  
 
 {% tabs %}
 {% highlight c# %}
@@ -809,7 +809,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 ### Column drag and drop customization 
 
-The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`. 
+The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`. 
 
 {% tabs %}
 {% highlight c# %}
