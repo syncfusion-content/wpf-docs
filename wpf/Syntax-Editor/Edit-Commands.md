@@ -23,6 +23,8 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
 
 <MenuItem Command="{x:Static sfedit:EditCommands.Open}" CommandTarget="{Binding ElementName=Edit1}"/>
 
+<MenuItem Command="{x:Static sfedit:EditCommands.Find}" CommandTarget="{Binding ElementName=Edit1}"/>
+
 <MenuItem Command="{x:Static sfedit:EditCommands.Save}" CommandTarget="{Binding ElementName=Edit1}"/>
 
 <MenuItem Command="{x:Static sfedit:EditCommands.SaveAs}" CommandTarget="{Binding ElementName=Edit1}"/>
@@ -33,13 +35,7 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
 
 <Border BorderThickness="1" BorderBrush="Gray"  Grid.Row="1" Grid.ColumnSpan="2">
 
-<sfedit:EditControl Name="Edit1" EnableOutlining="False" Background="white" AllowDrop="True" BorderBrush="Black" BorderThickness="0" Margin="0" ShowLineNumber="True"
-
-
-
-Grid.Row="1" >
-
-</sfedit:EditControl>
+<sfedit:EditControl Name="Edit1" EnableOutlining="False" Background="white" AllowDrop="True" BorderBrush="Black" BorderThickness="0" Margin="0" DocumentSource="C:\Content.txt" ShowLineNumber="True" Grid.Row="1" />
 
 </Border>
 
@@ -52,6 +48,6 @@ Grid.Row="1" >
 
 The following image displays **Open** edit command window.
 
-![Edit Commands enabled in Syntax Editor](Edit-Commands_images/Edit-Commands_img1.png)
+![Edit Commands enabled in Syntax Editor](Edit-Commands_images/edit-commands_img1.png)
 
 

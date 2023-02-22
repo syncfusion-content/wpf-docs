@@ -69,7 +69,7 @@ Gets or sets a value indicating whether Outlining of text in EditControl should 
 <tr>
 <td>
 FindOptions<br/><br/></td><td>
-FindOptions<br/><br/></td><td>
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html#Syncfusion_Windows_Edit_EditControl_FindOptions">FindOptions</a><br/><br/></td><td>
 Gets or sets an instance of FindOptions indicating the options selected in the FindReplace Window.<br/><br/></td></tr>
 <tr>
 <td>
