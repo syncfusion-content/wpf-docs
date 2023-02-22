@@ -66,8 +66,13 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Controls.TextBox</td>
 </tr>
 <tr>
+<td>Page separator tool</td>
+<td>PART_PageSeparator</td>
+<td>System.Windows.Controls.TextBlock</td>
+</tr>
+<tr>
 <td>Page count tool</td>
-<td>PART_LabelTotalPageCount</td>
+<td>PART_LableTotalPageCount</td>
 <td>System.Windows.Controls.TextBlock</td>
 </tr>
 <tr>
@@ -136,18 +141,8 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Highlight tool</td>
-<td>PART_Highlight</td>
-<td>System.Windows.Controls.Primitives.ToggleButton</td>
-</tr>
-<tr>
-<td>Underline tool</td>
-<td>PART_Underline</td>
-<td>System.Windows.Controls.Primitives.ToggleButton</td>
-</tr>
-<tr>
-<td>Strikethrough tool</td>
-<td>PART_Strikethrough</td>
+<td>Text markup tool</td>
+<td>PART_TextMarkup</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
