@@ -702,19 +702,19 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 [`How to add footer content to WPF Chart`](https://www.syncfusion.com/kb/10201/how-to-add-footer-content-to-wpf-sfchart)
 
-[`How to access data from Meta Trader to chart using TradePlatform.Net in WPF`](https://www.syncfusion.com/kb/7932/how-to-access-data-from-metatrader-to-sfchart-using-tradeplatform-net-in-wpf)
+[`How to access data from Meta Trader to chart using TradePlatform.Net in WPF`](https://www.syncfusion.com/kb/7932/how-to-access-data-from-metatrader-to-wpf-chart-sfchart)
 
-[`How to synchronize the selection between the chart and data grid`](https://www.syncfusion.com/kb/3579/how-to-synchronize-the-selection-between-the-chart-and-data-grid)
+[`How to synchronize the selection between the chart and data grid`](https://www.syncfusion.com/kb/3579/how-to-synchronize-the-selection-between-wpf-chart-sfchart-and-datagrid)
 
 [`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
 
-[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-sfchart)
+[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
 
-[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
+[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
 
 [`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
 
-[`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
+[`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-in-wpf-chart-sfchart)
 
 ## Theme
 

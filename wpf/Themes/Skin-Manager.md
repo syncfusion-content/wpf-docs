@@ -939,82 +939,90 @@ private void Window_Closed(object sender, EventArgs e)
 
 ## How to
 
-### Apply custom theme in the application
+### Apply customized theme from Theme Studio
 
-To apply a custom theme in the application, export the custom theme project from ThemeStudio using [this reference](https://help.syncfusion.com/wpf/themes/theme-studio#exporting-theme-project).
-
-For demonstration purposes, the exported theme name has been used as `MaterialDarkYellow` and assembly name as `Syncfusion.Themes.MaterialDarkYellow.WPF`.
-
-Now, for the control used in the application, set the `SfSkinManager` attached property `Theme` to `MaterialDarkYellow;MaterialDark`. Since, custom theme name should be updated in the following format: `CustomTheme1;BaseThemeName`, where `CustomTheme1` denotes the custom theme name and `BaseThemeName` denotes the theme name from which it is derived. For example, `MaterialDarkYellow;MaterialDark`.
+Create custom themes by modifying the existing themes from Theme studio. To apply a custom theme in the application by using the following reference.
 
 {% tabs %}
+
+{% highlight XAML %}
+
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+syncfusionskin:SfSkinManager.Theme="{syncfusionskin:SkinManagerExtension ThemeName=FluentLightGreen}"
+
+{% endhighlight %}
 
 {% highlight C# %}
 
-SfSkinManager.SetTheme(this, new Theme("MaterialDarkYellow;MaterialDark"));
+SfSkinManager.SetTheme(this, new Theme("FluentLightGreen"));
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Override syncfusion themes in the application
 
-All Syncfusion themes are [supported in theme studio](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). A common naming convention can be used to override control styles. A unique key is given to every style so that the styles can be overridden using the `BasedOn` property.
+### Customize theme in application level
 
-The naming convention of a control style will be like `Syncfusion-ControlName-Style`. For example, `MaterialDarkButtonAdvStyle`.
+To customize the Syncfusion theme in application level, merge the theme in ResourceDictionary and override the style using 'BasedOn' property. 
 
-The following steps explain how to override the Syncfusion themes:
+In 'ResourceDictionary', mention the style path which need to be override, in 'BasedOn', mention the key stated in the table.
 
-**Step1:**
+We can customize or override the theme styles by following the steps outlined below.
 
-Add respective resource dictionary from the themes assembly to the application.
 
-The resource dictionary will be in this format: `/Syncfusion.Themes.<ThemeName>.WPF;component/<ControlName>/<ControlName>.xaml`, where `ThemeName` denotes the theme name for which overridden style is going to be applied and `ControlName` denotes the control name. For example, `/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml`.
-
+**Step 1**: Merge the resource dictionaries of the controls which need to customize. In this example, we have merged the Framework Button‘s resource dictionary.
 {% tabs %}
 
 {% highlight XAML %}
 
-<ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-<ResourceDictionary Source="/Syncfusion.Themes.MaterialDark.WPF;component/ButtonAdv/ButtonAdv.xaml"/>
+<ResourceDictionary.MergedDictionaries> 
+     <ResourceDictionary Source="/Syncfusion.Themes.Windows11Light.WPF;component/MSControl/Button.xaml" /> 
 </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-**Step2:**
-
-Define the new style using the `BasedOn` property.
-
-The following code sample overrides the Syncfusion style for the `ButtonAdv` Control.
+**Step 2**: Declare style for the control with 'BasedOn' key. Here style of the button has been declared and its key is used in 'BasedOn'. Button's Background, Foreground, FontFamily, BorderBrush has been overridden.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<Grid>
-        <Grid.Resources>
-            <Style x:Key="CustomButtonAdvStyle" TargetType="syncfusion:ButtonAdv" BasedOn="{StaticResource SyncfusionButtonAdvStyle}" >
-                <Setter Property="Foreground" Value="Red"/>
-            </Style>
-        </Grid.Resources>
-        <syncfusion:ButtonAdv Name="buttonAdv" Content="Testing" Width="150" Height="30" SmallIcon="{x:Null}" Style="{StaticResource CustomButtonAdvStyle}"></syncfusion:ButtonAdv>   
-</Grid>
+   <Style BasedOn="{StaticResource WPFButtonStyle}" 
+          x:Key="customizeButtonStyle"    
+          TargetType="{x:Type Button}">
+         <Setter Property="Background" Value="#5dbea3" />
+         <Setter Property="Foreground" Value="White" />
+         <Setter Property="FontFamily" Value="Berlin Sans FB Demi" />
+         <Setter Property="BorderBrush" Value="#5dbea3" />   
+   </Style>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Overridden foreground style applied for WPF ButtonAdv control](Skin-Manager_images/WPF-ButtonAdv-Overridden-foreground-style.png)
+**Step 3**: Now, utilize the customized styles in our application using the 'Style' property. This step adds custom styles of Buttons in WPF application. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<StackPanel Orientation="Horizontal" >
+    <Button Content="OK" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>
+    <Button Content="Cancel" Height="30" Width="120" Margin="10" Style="{StaticResource customizeButtonStyle}"></Button>          
+</StackPanel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing theme styles basedOn for buttons](Skin-Manager_images/CustomizingStyle.png)
 
 ### Change visual style at runtime
 
 Themes for application can be changed at runtime by changing `VisualStyle` property. Make sure that the new theme assembly is attached as reference in the application when applying theme.
-
-![Added references for WPF SkinManager and visual style](Skin-Manager_images/WPF-SkinManager-References.jpg)
 
 {% tabs %}
 
@@ -1072,6 +1080,122 @@ Themes for application can be changed at runtime by changing `VisualStyle` prope
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfSkinManager.SetVisualStyle(this, (VisualStyles)Enum.Parse(typeof(VisualStyles), comboVisualStyle.SelectedItem.ToString()));
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/change-themes-at-runtime-using-skinmanager).
+
+### Switch theme with custom styles
+
+To change a theme dynamically with custom styles, utilize the resource dictionary and override the style using the 'BasedOn' property.
+
+We have provided an example that demonstrates switching between the Window11Light and Windows11Dark themes using the SfGrid control. In this example, we customize the foreground color of the GridTableSummaryCell to green in **Window 11 Light** and red in **Windows 11 Dark**.
+ 
+*  **Step 1**: In this example, we have an SfDataGrid and a RadioButton which is used to switching theme and we need to add resource dictionaries with paths in merged dictionaries in view model or code behind. The following code can be used to effortlessly switch themes.
+ 
+{% tabs %}
+
+{% highlight C# %}      
+
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            var themeName = (sender as RadioButton).Content.ToString();
+            string syncfusionTheme = string.Empty;
+            if (themeName == "Dark")
+            {
+                syncfusionTheme = "Windows11Dark";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Dark"));
+            }
+            else if (themeName == "Light")
+            {
+                syncfusionTheme = "Windows11Light";
+                SfSkinManager.SetTheme(Application.Current.MainWindow, new Theme("Windows11Light"));
+            }
+            
+            MergeResourceDictionary(syncfusionTheme);
+            MergeCustomResourceDictionary(themeName);
+        }
+
+        private void MergeResourceDictionary(string syncfusionTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/Window.xaml", UriKind.RelativeOrAbsolute)
+            });
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/MSControl/ComboBox.xaml", UriKind.RelativeOrAbsolute)
+            });       
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/Syncfusion.Themes.{syncfusionTheme}.WPF;component/SfDataGrid/SfDataGrid.xaml", UriKind.RelativeOrAbsolute)
+            });
+        }
+
+        private void MergeCustomResourceDictionary(object selectedTheme)
+        {
+            Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary()
+            {
+                Source = new Uri($"/WpfApp1;component/Themes/{selectedTheme}.xaml", UriKind.RelativeOrAbsolute)
+            });
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+*  **Step 2**: Customize the foreground color and font weight of the table summary row in both light and dark themes.
+
+**Light Theme**
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<!--Light.xaml-->
+<ResourceDictionary>
+           <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                  TargetType="syncfusion:GridTableSummaryCell">      
+                <Setter Property="FontWeight"  Value="Bold" />
+                <Setter Property="Foreground" Value="Green" />      
+           </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Dark Theme**
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<!--Dark.xaml-->
+
+<ResourceDictionary>
+                <Style BasedOn="{StaticResource SyncfusionGridTableSummaryCellStyle}"
+                           TargetType="syncfusion:GridTableSummaryCell">      
+                               <Setter Property="FontWeight"    Value="Bold" />
+                               <Setter Property="Foreground"   Value="Red" />       
+            </Style>
+</ResourceDictionary>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Output Screenshots**
+
+Light Theme:
+
+![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light1.png)
+
+Dark Theme:
+![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark1.png)
+
