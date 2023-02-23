@@ -57,7 +57,7 @@ The Find and Replace dialog provides the basic search functionality as mentioned
 
 **Quick** **Replace**: Quick Replace tab enables to find a text and replace it with an alternative text.
 
-**Quick** **find**
+## Quick find
 
 Quick Find tab enables users to search all the occurrences of a text in an open document or a selection. Select Quick Find in Find and Replace dialog or use <kbd>Ctrl+F</kbd> to enable Quick Find.
 
@@ -77,7 +77,9 @@ The following image displays look in field in Find and Replace Window.
 ![Find-and-Replace_img4](Find-and-Replace_images/Find-and-Replace_img4.jpeg)
 
 
-**Find** **options**: Find options are placed under collapsible GroupBox control to have a compact view of the Find and Replace window.
+## Find options 
+
+Find options are placed under collapsible GroupBox control to have a compact view of the Find and Replace window.
 
 Find and Replace window facilitates you to search the text based on the following options.
 
@@ -98,7 +100,7 @@ The following image displays EditControl Sample Window.
 ![Find-and-Replace_img6](Find-and-Replace_images/Find-and-Replace_img6.jpeg)
 
 
-**Find** **symbol**
+## Find symbol
 
 Find symbol tab in Find and Replace window facilitates the users to find all the occurrences of the specified text in the entire Edit Control’s text. Find Symbol tab can be enabled by selecting the drop-down option in the Quick Find tab.
 
@@ -143,7 +145,7 @@ The following image displays Find Symbol Results tab in Hidden State Window.
 ![Find-and-Replace_img12](Find-and-Replace_images/Find-and-Replace_img12.jpeg)
 
 
-**Quick** **replace**
+## Quick replace
 
 Quick replace tab in Find and replace window enables the users to search a text and replace it with an alternate text. Quick replace tab can be enabled by clicking on the Quick Replace button at the top of the Find and Replace window or by using <kbd>Ctrl+H</kbd> key from EditControl.
 
@@ -207,7 +209,7 @@ editcontrol.GoToLine(100)
 
 {% endtabs %}
 
-**ShowGoToLine**
+## ShowGoToLine
 
 The GoToLine Window is invoked using the ShowGoToLine method. The KeyBoard Shortcut key is <kbd>Ctrl+G</kbd>.
 
@@ -256,7 +258,7 @@ editcontrol.ShowGoToLine(1000)
 
 ![Find-and-Replace_img15](Find-and-Replace_images/Find-and-Replace_img15.jpg)
 
-**Localization support**
+## Localization support
 
 EditControl also provides the Localization support for the GoToLine functionality. This allows to configure the content of the GoToLine window in the multi-lingual according to the cultures.
 
