@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-## MarkupLanguageBase Class
+# MarkupLanguageBase Class in WPF Syntax Editor
 
 MarkupLanguageBase class contains syntax highlighting and outlining implementations for markup languages. XAML and XML language support have been implemented using MarkupLanguageBase class.
 

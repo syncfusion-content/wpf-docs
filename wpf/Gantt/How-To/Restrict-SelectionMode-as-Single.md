@@ -7,7 +7,7 @@ control: Gantt
 documentation: ug
 ---
 
-## Restrict SelectionMode as Single
+# Restrict SelectionMode as Single in WPF Gantt
 
 To restrict the selection mode to single, set the ListBoxSelectionMode options of GanttGrid’s Model in the GanttControl loaded event. 
 
