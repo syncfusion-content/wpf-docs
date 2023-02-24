@@ -22,7 +22,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 [How to install nuget packages](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use our components.
 
 ## Creating Application with MenuAdv control
 In this walk through, user will create a WPF application that contains [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control.
