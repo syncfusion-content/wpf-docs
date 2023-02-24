@@ -154,6 +154,8 @@ N> You can explore our [WPF Spline Area Chart](https://www.syncfusion.com/wpf-co
 
 **Cardinal**
 
+The cardinal spline algorithm ensures that the resulting curve passes through each data point, while also providing a smooth and visually appealing interpolation with continuous derivatives up to a certain order at each point. This makes it a popular choice for use in computer graphics and image processing applications. 
+
 The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
@@ -180,6 +182,8 @@ series.SplineType = SplineType.Cardinal;
 
 **Monotonic**
 
+The monotonic spline algorithm ensures that the resulting curve is non-decreasing (or non-increasing) between each pair of adjacent points. This means that if the data points increase (or decrease) monotonically, the resulting curve will follow the same trend without any oscillations or inflections. 
+
 The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as Monotonic.
 
 {% tabs %}
@@ -205,6 +209,12 @@ series.SplineType = SplineType.Monotonic;
 ![WPF Chart with Monotonic Spline](Series_images/wpf-chart-monotonic-spline.png)
 
 **Clamped**
+
+The clamped splines algorithm ensures that the resulting curve passes through the first and last data points and has a specified slope or curvature at these endpoints, thus ensuring that the curve is well-behaved at the boundaries and does not exhibit any unusual behavior. 
+
+Clamped splines are often used in engineering and scientific applications where the behavior of the curve at the endpoints is critical. 
+
+However, one important characteristic of clamped splines is that they can produce sharp bends or kinks in the curve if the data points are too far apart or if the constraints are too restrictive, resulting in an unrealistic or non-smooth curve. Therefore, it is important to choose appropriate constraints and data points when using clamped splines. 
 
 The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) value as Clamped.
 
