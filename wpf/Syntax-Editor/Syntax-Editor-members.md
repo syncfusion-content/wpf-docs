@@ -70,7 +70,7 @@ Gets or sets a value indicating whether Outlining of text in EditControl should 
 <td>
 FindOptions<br/><br/></td><td>
 FindOptions<br/><br/></td><td>
-Gets or sets an instance of FindOptions indicating the options selected in the FindReplace Window. For detailed instructions on using the FindOptions, click <a href="https://help.syncfusion.com/wpf/syntax-editor/find-and-replace#find-options">here</a>.<br/><br/></td></tr>
+Gets or sets an instance of FindOptions indicating the options selected in the FindReplace Window. For detailed instructions on using the FindOptions, click <a href="https://help.syncfusion.com/wpf/syntax-editor/basic-editing/find-and-replace#find-options">here</a>.<br/><br/></td></tr>
 <tr>
 <td>
 FindResultsTabHeight<br/><br/></td><td>
