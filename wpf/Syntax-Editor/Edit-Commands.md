@@ -15,17 +15,15 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
 
 {% highlight XAML %}
 
-<StackPanel Grid.ColumnSpan="1" Orientation="Horizontal">
+<StackPanel>
     <Menu Background="Transparent" BorderThickness="0,0,1,2">
-        <MenuItem Header="_File" Background="Transparent" Width="{Binding}" >      
-        <MenuItem Command="{x:Static sfedit:EditCommands.New}" CommandTarget="{Binding ElementName=Edit1}"/>
-        <MenuItem Command="{x:Static sfedit:EditCommands.Open}" CommandTarget="{Binding ElementName=Edit1}"/>
-        <MenuItem Command="{x:Static sfedit:EditCommands.Find}" CommandTarget="{Binding ElementName=Edit1}"/>
-        <MenuItem Command="{x:Static sfedit:EditCommands.Save}" CommandTarget="{Binding ElementName=Edit1}"/>
-        <MenuItem Command="{x:Static sfedit:EditCommands.SaveAs}" CommandTarget="{Binding ElementName=Edit1}"/>
-    </MenuItem>
-</Menu>
-    <Menu Background="Transparent" BorderThickness="0,0,1,2">
+        <MenuItem Header="_File" Background="Transparent" Width="{Binding}" >
+            <MenuItem Command="{x:Static sfedit:EditCommands.New}" CommandTarget="{Binding ElementName=Edit1}"/>
+            <MenuItem Command="{x:Static sfedit:EditCommands.Open}" CommandTarget="{Binding ElementName=Edit1}"/>
+            <MenuItem Command="{x:Static sfedit:EditCommands.Find}" CommandTarget="{Binding ElementName=Edit1}"/>
+            <MenuItem Command="{x:Static sfedit:EditCommands.Save}" CommandTarget="{Binding ElementName=Edit1}"/>
+            <MenuItem Command="{x:Static sfedit:EditCommands.SaveAs}" CommandTarget="{Binding ElementName=Edit1}"/>
+        </MenuItem>
         <MenuItem Header="_Edit" Background="Transparent" Width="{Binding}" >
             <MenuItem Command="{x:Static sfedit:EditCommands.Copy}" CommandTarget="{Binding ElementName=Edit1}"/>
             <MenuItem Command="{x:Static sfedit:EditCommands.Cut}" CommandTarget="{Binding ElementName=Edit1}"/>
@@ -34,13 +32,9 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
             <MenuItem Command="{x:Static sfedit:EditCommands.Undo}" CommandTarget="{Binding ElementName=Edit1}"/>
         </MenuItem>
     </Menu>
+    <sfedit:EditControl Name="Edit1" EnableOutlining="False" Height="270"
+                        Background="white" AllowDrop="True" ShowLineNumber="True"/>
 </StackPanel>
-
-<Border BorderThickness="1" BorderBrush="Gray"  Grid.Row="1" Grid.ColumnSpan="2">
-    <sfedit:EditControl Name="Edit1" EnableOutlining="False" Background="white" AllowDrop="True" BorderBrush="Black" BorderThickness="0" Margin="0" DocumentSource="C:\Content.txt" ShowLineNumber="True" Grid.Row="1" />
-</Border>
-
-
 
 {% endhighlight %}
 
