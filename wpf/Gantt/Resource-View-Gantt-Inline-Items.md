@@ -50,7 +50,7 @@ You can populate a Resource view Gantt for both date-time schedules and numeric 
 
 To populate a Resource view Gantt in a Custom Numeric Schedule:
 
-1. Define the Gantt with a custom numeric schedule source. For more information about custom numeric schedules, visit the following link: <http://help.syncfusion.com/wpf/gantt/custom-schedule#custom-numeric>
+1. Define the Gantt with a custom numeric schedule source. For more information about custom numeric schedules, visit the following link: <https://help.syncfusion.com/wpf/gantt/custom-schedule#custom-numeric>
 2. You can populate the collection of tasks in a single row by mapping the corresponding field in the underlying source to the InLineTaskMapping.
 
 The following code illustrates this.
