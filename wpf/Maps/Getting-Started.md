@@ -152,7 +152,7 @@ The dBase file (.dbf) contains any desired feature attributes or attributes keys
 
 For more information about the 8.3 naming convention, shape files and their descriptions, visit the following link:
 
-[http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+[https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
 
 Maps read the main file and create the map shapes. The associated .dbf file contents are then incorporated with the shapes created from the main files.
 
