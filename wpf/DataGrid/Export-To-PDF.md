@@ -31,7 +31,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using [Essential PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to PDF file by using [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](https://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
 
 ## PDF exporting options
 
@@ -287,9 +287,9 @@ After exporting to PDF, you can save exported PDF file directly to file system b
 var document = dataGrid.ExportToPdf();
 document.Save("Sample.pdf");
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} 
 
-You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/loading-and-saving-document#saving-a-pdf-document-to-file-system). 
+You can refer [PDF documentation](https://help.syncfusion.com/#saving-a-pdf-document-to-file-system). 
 
 ### Save as stream
 
@@ -304,7 +304,7 @@ fileStream.Close();
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/loading-and-saving-document#saving-a-pdf-document-to-stream). 
+You can refer [PDF documentation](https://help.syncfusion.com/#saving-a-pdf-document-to-stream). 
 
 ### Save using File dialog
 
@@ -340,7 +340,7 @@ if (sfd.ShowDialog() == true)
 
 ## Opening exported PDF without saving
 
-You can view exported PDF document without saving by using [PDFViewerControl](http://help.syncfusion.com/wpf/pdfviewer/overview).
+You can view exported PDF document without saving by using [PDFViewerControl](https://help.syncfusion.com/wpf/pdf-viewer/overview).
 
 {% tabs %}
 {% highlight c# %}
