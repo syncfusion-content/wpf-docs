@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
+SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf) control user guide for more information.
 
 ## Getting started
 
@@ -146,7 +146,7 @@ Follow the below steps to load the `ItemsSource` for page in on-demand,
 
 [OnDemandLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html) event is raised when SfDataPager moves to another page and you can load the `ItemsSource` for corresponding page through `OnDemandLoading` event. 
 
-[OnDemandLoadingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
+[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
 
 1. `StartIndex` - returns the start index based on `PageIndex` (Number of previous pages * PageSize).
 
@@ -404,7 +404,7 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
 ![WPF DataGrid displays Altering Page Count for DataPager while Filtering](Paging_images/wpf-datagrid-change-page-count.png)
 
-You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
+You can refer the [sample](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2F.png%3Ftoken%3D06f7jKUAjdjuymFoCKo9GQ%3D%3D) from here.
 
 ### Sorting complete collection
 
