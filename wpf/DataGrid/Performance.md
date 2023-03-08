@@ -32,7 +32,7 @@ this.sfDataGrid.ScrollMode = ScrollMode.Async;
 
 ### Data virtualization for loading
 
-You can load the large amount of data in less time using built-in [Data Virtualization](http://help.syncfusion.com/wpf/sfdatagrid/data-virtualization).
+You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/wpf/datagrid/data-virtualization).
 
 ### Improving loading and scrolling when using conditional styling
 
