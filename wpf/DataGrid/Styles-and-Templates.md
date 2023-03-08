@@ -422,7 +422,7 @@ N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` prop
 
 ### Changing Grid line border as dotted line
 
-You can change the gridline border as dotted line by customizing [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
+You can change the gridline border as dotted line by customizing [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=windows desktop-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -458,7 +458,7 @@ You can change the gridline border as dotted line by customizing [GridCell.Borde
 
 ### Changing Grid line color
 
-You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property.
+You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=windows desktop-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight xaml %}
