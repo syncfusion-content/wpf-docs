@@ -57,7 +57,7 @@ groupBar.VisualMode = VisualMode.Default;
 
 #### Stack mode appearance in themes.
 
-When using the stack mode in ThemeStudio themes(Windows11, Fluent, Material, Office2019, System), the items will be stacked horizontally. However, the items will be stacked veritally for the classic themes.
+When using the stack mode in ThemeStudio themes(Windows11, Fluent, Material, Office2019, System), the items will be stacked horizontally. However, the items will be stacked vertically for the classic themes.
 
 **ThemeStudio themes**
 
