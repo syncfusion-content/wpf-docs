@@ -411,11 +411,11 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-dat
 
 ## Asynchronous Load on demand using event
 
-SfTreeGrid supports asynchronous loading of data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime. SfTreeGrid gets the root and leaf nodes through this event handler. `TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
+SfTreeGrid supports asynchronous loading of data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. The `RequestTreeItems` event is triggered at the time of loading and when the user expands any node at runtime. SfTreeGrid gets the root and leaf nodes through this event handler. `TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
  
-The RequestTreeItems event allows you to fetch the data asynchronously, enabling you to handle large amounts of data without any performance issues. 
+The RequestTreeItems event allows you to fetch both the parent and child items asynchronously, enabling you to handle large amounts of data without any performance issues. 
 
-In the below example SfTreeGrid is populate parent nodes and child nodes asynchronously through `SfTreeGrid.RequestTreeItems`.
+In the below example, SfTreeGrid populates parent nodes and child nodes asynchronously through `SfTreeGrid.RequestTreeItems`.
 
 {% tabs %}
 {% highlight c# %}
