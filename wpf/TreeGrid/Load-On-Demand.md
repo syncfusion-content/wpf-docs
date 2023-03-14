@@ -411,9 +411,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-dat
 
 ## Asynchronous Load on demand using event
 
-SfTreeGrid supports asynchronous loading of data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. The `RequestTreeItems` event is triggered at the time of loading and when the user expands any node at runtime. SfTreeGrid gets the root and leaf nodes through this event handler. `TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
+SfTreeGrid supports asynchronous loading of data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
  
-The RequestTreeItems event allows you to fetch both the parent and child items asynchronously, enabling you to handle large amounts of data without any performance issues. 
+The RequestTreeItems event allows you to fetch both the parent and child items asynchronously.
 
 In the below example, SfTreeGrid populates parent nodes and child nodes asynchronously through `SfTreeGrid.RequestTreeItems`.
 
@@ -429,6 +429,7 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
     {
         var parentItems = viewModel.EmployeeDetails.Where(x => x.ReportsTo == -1);
 
+        // time delay to retrieve the parent items.
         await Task.Delay(3000);
 
         args.ChildItems = parentItems;
@@ -442,6 +443,7 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
         {
             var childItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
 
+            // time delay to retrieve the child items.
             await Task.Delay(2000);
 
             args.ChildItems = childItems;
