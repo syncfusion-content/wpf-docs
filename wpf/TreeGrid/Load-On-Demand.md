@@ -409,7 +409,7 @@ You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.Re
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-events-in-wpf-treegrid).
 
-## Asynchronous Load on demand using event
+## Asynchronous load on demand using event
 
 The SfTreeGrid provides support for loading data asynchronously on-demand by using the [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. This event enables you to fetch both parent and child items asynchronously. 
 
