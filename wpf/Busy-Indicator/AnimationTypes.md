@@ -9,7 +9,7 @@ documentation: ug
 
 # AnimationTypes in WPF Busy Indicator (SfBusyIndicator)
 
-The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator. The different types of animations are `ArrowTrack`,`Ball`,`Delete`,`Drop`,`GPS`, `Pen`,`Liquid`, `BarChart`,`Clock`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `Flower`,`Gear`,`SingleCircle`, `Rain`,`Rotation`,`SlicedBox`, `SlicedCircle`,`DoubleCircle`, `ECG`, `Flight`,`Print`, `Box`,`Snow`,`Sunny`,`Temparature`,`Umbrella`,`WindMill`,`Double Ring`,`Dual Ring`,`Ripple Type`, `Message`,`Fluent` , `DotCircle`, and `Cupertino`.
+The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator. The different types of animations are `ArrowTrack`,`Ball`,`Delete`,`Drop`,`GPS`, `Pen`,`Liquid`, `BarChart`,`Clock`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `Flower`,`Gear`,`SingleCircle`, `Rain`,`Rotation`,`SlicedBox`, `SlicedCircle`,`DoubleCircle`, `ECG`, `Flight`,`Print`, `Box`,`Snow`,`Sunny`,`Temperature`,`Umbrella`,`WindMill`,`Double Ring`,`Dual Ring`,`Ripple Type`, `Message`,`Fluent` , `DotCircle`, and `Cupertino`.
 
 N> `AnimationSpeed` property is not applicable for `Fluent` animation type.
 
