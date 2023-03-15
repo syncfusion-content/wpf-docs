@@ -411,9 +411,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-dat
 
 ## Asynchronous load on demand using event
 
-The SfTreeGrid provides support for loading data asynchronously on-demand by using the [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. This event enables you to fetch both parent and child items asynchronously. 
+The SfTreeGrid supports loading data asynchronously on-demand by using the [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. This event enables you to fetch both parent and child items asynchronously. 
 
-In the below example, the SfTreeGrid retrieves parent and child nodes asynchronously by using the `RequestTreeItems` event. 
+In the following example, the SfTreeGrid retrieves parent and child nodes asynchronously by using the `RequestTreeItems` event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -427,7 +427,7 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
     {
         var parentItems = viewModel.EmployeeDetails.Where(x => x.ReportsTo == -1);
 
-        // time delay to retrieve the parent items.
+        // Time delay to retrieve the parent items.
         await Task.Delay(3000);
 
         args.ChildItems = parentItems;
@@ -441,7 +441,7 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
         {
             var childItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
 
-            // time delay to retrieve the child items.
+            // Time delay to retrieve the child items.
             await Task.Delay(2000);
 
             args.ChildItems = childItems;
@@ -567,4 +567,4 @@ public class ViewModel
 
 ![WPF TreeGrid Asynchronous Load on demand support](Getting-Started_images/wpf-treegrid-async-on-demand-load.gif)
 
-N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
+N> Refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to learn how to render and configure the treegrid.
