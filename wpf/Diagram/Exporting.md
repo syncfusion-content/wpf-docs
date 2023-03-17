@@ -265,7 +265,7 @@ diagram.Export();
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting)
 
-## How to change the export resolution
+## DPI resolution on exporting
 
 SfDiagram provides support to change export resolution in the application level. To change Export resolution using following properties. 
 
