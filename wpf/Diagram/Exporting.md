@@ -267,13 +267,19 @@ diagram.Export();
 
 ## DPI resolution on exporting
 
-SfDiagram provides support to change export resolution in the application level. To change Export resolution using following properties. 
-
-* DpiX- Specifies the horizontal resolution in which the diagram is exported. The default value is 96.
-* DpiY- Specifies the vertical resolution in which the diagram is exported. The default value is 96.
+SfDiagram provides the support to specify the preferred export resolution using the [DipX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) and [DipY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) properties of the ExportSettings class.
 
 The following code example illustrate how to change export resolution.
 {% tabs %}
+{% highlight xaml %}
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the export settings with DPiX and DPiY values-->
+  <syncfusion:SfDiagram.ExportSettings>
+    <syncfusion:ExportSettings DpiX="300" DpiY="300/>
+  </syncfusion:SfDiagram.ExportSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
 {% highlight C# %}
 
 //Initialize the export settings
