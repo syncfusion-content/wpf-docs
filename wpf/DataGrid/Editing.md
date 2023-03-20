@@ -747,10 +747,10 @@ public class SfDataGridExt : SfDataGrid
 
 [How to focus a particular UIElement inside DataTemplate after calling CurrentCell.BeginEdit() or when entering edit mode?](https://www.syncfusion.com/kb/2526)
 
-[How to change the same values in all records when the ComboBox column value is changed?](https://www.syncfusion.com/kb/2498)
+[How to change the same values in all records when the ComboBox column value is changed?](https://www.syncfusion.com/kb/2498/how-to-change-the-same-values-in-all-records-when-the-combobox-column-value-is-changed)
 
-[How to disable the edit mode of AddNewRow in SfDataGrid when AllowEditing is set as False?](https://www.syncfusion.com/kb/2495)
+[How to disable the edit mode of AddNewRow in SfDataGrid when AllowEditing is set as False?](https://www.syncfusion.com/kb/2495/how-to-disable-the-edit-mode-of-addnewrow-in-sfdatagrid-when-allowediting-is-set-as-false)
 
-[How to get the parent grid while editing the child grid?](https://www.syncfusion.com/kb/2472)
+[How to get the parent grid while editing the child grid?](https://www.syncfusion.com/kb/2472/how-to-get-the-parent-grid-while-editing-the-child-grid)
 
-[How to handle keyboard and mouse interactions for GridTemplateColumn?](https://www.syncfusion.com/kb/2433/)
+[How to handle keyboard and mouse interactions for GridTemplateColumn?](https://www.syncfusion.com/kb/2433/how-to-handle-keyboard-and-mouse-interactions-for-gridtemplatecolumn)

@@ -918,7 +918,7 @@ You can change the filter icon style by editing the [FilterToggleButton](http://
 When you apply above style to [FilterToggleButton](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html), FilterIcon changes from Default to Gray and to Red when filtering is applied. When you clear it, it changes from Red to Gray and to default style.
 
 ## See Also
-[How to display values with underscore in check boxes of the filter control?](https://www.syncfusion.com/kb/10163)
+[How to display values with underscore in check boxes of the filter control?](https://www.syncfusion.com/kb/10163/how-to-display-values-with-underscore-in-check-boxes-of-the-filter-control)
 
 [How to serialize the filtered values based on FilterMode of the column](https://www.syncfusion.com/kb/9900)
 
@@ -950,4 +950,4 @@ When you apply above style to [FilterToggleButton](http://help.syncfusion.com/cr
 
 [How to change the FilterToggleButton color while filtering?](https://www.syncfusion.com/kb/2482)
 
-[How to access the filtered records from SfDataGrid?](https://www.syncfusion.com/kb/2425)
+[How to access the filtered records from SfDataGrid?](https://www.syncfusion.com/kb/2425/how-to-access-the-filtered-records-from-sfdatagrid)

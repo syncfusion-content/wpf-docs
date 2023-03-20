@@ -5555,7 +5555,7 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 [`How to display the axis labels for all datapoints`](https://www.syncfusion.com/kb/2989/how-to-display-the-axis-labels-for-all-datapoints)
 
-[`How to define ticker labels of custom axis`](https://www.syncfusion.com/kb/2588/how-to-define-ticker-labels-of-custom-axis)
+[`How to define ticker labels of custom axis`](https://www.syncfusion.com/kb/2588/how-to-define-ticker-labels-of-custom-axis-in-wpf-chart-sfchart)
 
 [`How to display striplines in DateTimeAxis of WPF Chart`](https://www.syncfusion.com/kb/10674/how-to-display-striplines-in-datetimeaxis-of-wpf-chart)
 
