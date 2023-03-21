@@ -228,7 +228,7 @@ groupBar.VisualMode = VisualMode.StackMode;
 
 #### Stack mode appearance in themes.
 
-When using the stack mode in ThemeStudio themes(Windows11, Fluent, Material, Office2019, System), the items will be stacked horizontally. However, the items will be stacked vertically for the classic themes.
+When using the stack mode in ThemeStudio themes (Windows 11, Fluent, Material, Office 2019, and System) for the GroupBar control, the group bar items will be arranged horizontally. However, when using classic themes, the items will be arranged vertically.
 
 **ThemeStudio themes**
 
@@ -442,8 +442,8 @@ Use the below code snippet to set this property.
  
 <!-- Adding GroupBar -->
 <syncfusion:GroupBar Height="200" DragMarkerBrush="Red" Width="230" Name="groupBar">
-	<!-- Adding GroupBarItem -->
-	<syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">
+    <!-- Adding GroupBarItem -->
+    <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">
 		<!-- Adding content for GroupBar item using panel -->
 		<StackPanel Orientation="Vertical">
 			<TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>
