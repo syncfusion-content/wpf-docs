@@ -1086,4 +1086,4 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 [`How to bind the ViewModel property to content template of a TextAnnotation`](https://www.syncfusion.com/kb/2639/how-to-bind-the-content-template-of-textannotation-in-wpf-chart-sfchart)
 
-[`How to draw horizontal line in chart`]( https://www.syncfusion.com/kb/2850/how-to-draw-horizontal-line-in-wpf-chart-sfchart)
+[`How to draw horizontal line in chart`](https://www.syncfusion.com/kb/2850/how-to-draw-horizontal-line-in-wpf-chart-sfchart)
