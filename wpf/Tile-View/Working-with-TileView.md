@@ -44,7 +44,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileView items are populated to the TileView control](Working-with-TileView_images/TileViewItem.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using binding
 
