@@ -181,7 +181,7 @@ public class CustomRowGenerator : RowGenerator
 {% endhighlight %}
 {% endtabs %}
 
-You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/wpf-953049514).
+You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/wpf-953049514).
 ![WPF DataGrid with Animation Row](Styles-and-Templates_images/wpf-datagrid-animation-row.png)
 
 The below code example shows how to change the background color of the `VirtualizingCellsControl` when the value has been changed for a particular cell. This can be done by hooking the `DataContextChanged` and `PropertyChanged` event.
@@ -231,7 +231,7 @@ public class CustomRowGenerator : RowGenerator
 {% endhighlight %}
 {% endtabs %}
 
-You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControl-1405123935.zip).
+You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControl-1405123935.zip).
 
 ### Cell containers
 Below table shows the different types of cells and its container.
@@ -343,7 +343,7 @@ public class CustomRowGenerator : RowGenerator
 {% endhighlight %}
 {% endtabs %}
 
-You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gridcell-1615427562).
+You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Gridcell-1615427562).
 
 ## Editing Style in Visual Studio Designer
 
