@@ -312,8 +312,6 @@ private void HideComboBoxTools(object sender, RoutedEventArgs e)
     }
 }
 
-N> The above code sample is for hiding the tools in the toolbar design above 21.1.0.x version.
-
 {% endhighlight %}
 {% endtabs %}
 
