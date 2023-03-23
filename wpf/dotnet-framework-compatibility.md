@@ -10,8 +10,6 @@ documentation: ug
 
 Syncfusion WPF Controls are always compatible latest .NET Framework versions. 
 
-N> Syncfusion WPF Controls supports `.NET Framework 3.5` and later versions. The controls start with `sf` supports `.NET Framework 4.0` and later versions.
-
 ## Version Compatibility
 
 Below table represents the supported Syncfusion Essential Studio version for .NET Framework versions .
@@ -64,6 +62,15 @@ Yes<br/></td>
 <td>
 From 18.4 (2020 Vol4) <br/></td><td>
 Yes<br/></td><td>
+Yes<br/></td><td>
+Yes<br/></td><td>
+Yes<br/></td>
+</tr>
+
+<tr>
+<td>
+From 21.1 (2023 Vol1) <br/></td><td>
+No<br/></td><td>
 Yes<br/></td><td>
 Yes<br/></td><td>
 Yes<br/></td>
