@@ -9,7 +9,7 @@ documentation: ug
 
 # Generate Syncfusion WPF License key
 
-License keys for WPF can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trail & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
+License keys for WPF can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or [Trail & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
 
 ![Get License Key](licensing-images/generate-license.png)
 
