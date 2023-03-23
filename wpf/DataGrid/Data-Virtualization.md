@@ -72,7 +72,7 @@ this.datagrid.EnableDataVirtualization = true;
 
 ## Working with GridVirtualizingCollectionView
 
-You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource). 
+You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource). 
 
 In the below code, `ViewModel` defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
@@ -114,10 +114,10 @@ public class ViewModel
 
 ## Incremental Loading
  
-DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ISupportIncrementalLoading.html) interface.
+DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ISupportIncrementalLoading.html) interface.
 `ISupportIncrementalLoading` interface has [LoadMoreItemsAsync](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_HasMoreItems) property.
 
-If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -378,4 +378,4 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 
 ## Paging
 
-SfDataGrid supports to load paged data source using [SfDataPager](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](https://help.syncfusion.com/wpf/datagrid/paging) section.
+SfDataGrid supports to load paged data source using [SfDataPager](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html). You can use the paging in SfDataGrid by go through the [Paging](https://help.syncfusion.com/wpf/datagrid/paging) section.
