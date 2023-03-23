@@ -180,7 +180,7 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 N> From the v18.4.0.x onwards, the file menu items such as Open, Save, Save As, and Print are not directly present in the toolbar and they are present in the context menu of the File tools toggle button.
 N> From the v21.1.0.x onwards, the PDFViewer toolbar design is changed for a better user interface and visual.
 
-Due to the changes in the toolbar design, there were some changes for few tools template. They were listed as follows.
+Due to the changes in the toolbar design, there were some changes for a few tool templates. They are listed as follows.
 
 ## Before v21.1.0.x (Old Toolbar)
 
@@ -267,7 +267,7 @@ Due to the changes in the toolbar design, there were some changes for few tools 
 </tr>
 </table>
 
-The following code sample explains disabling the combo box item and separators present inside the combo box.
+The following code sample explains disabling the combo box item, and separators present inside the combo box.
 
 {% tabs %}
 {% highlight c# %}
