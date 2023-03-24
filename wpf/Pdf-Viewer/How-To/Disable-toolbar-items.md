@@ -86,11 +86,6 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Zoom tools separator</td>
-<td>Part_ZoomToolsSeparator_0</td>
-<td>System.Windows.Shapes.Rectangle</td>
-</tr>
-<tr>
 <td>Current zoom level tool</td>
 <td>PART_ComboBoxCurrentZoomLevel</td>
 <td>System.Windows.Controls.ComboBox</td>
@@ -103,21 +98,6 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <tr>
 <td>Zoom out tool</td>
 <td>PART_ButtonZoomOut</td>
-<td>System.Windows.Controls.Button</td>
-</tr>
-<tr>
-<td>Zoom tools separator</td>
-<td>PART_ZoomToolsSeparator_1</td>
-<td>System.Windows.Shapes.Rectangle</td>
-</tr>
-<tr>
-<td>Fit width tool</td>
-<td>PART_ButtonFitWidth</td>
-<td>System.Windows.Controls.Button</td>
-</tr>
-<tr>
-<td>Fit page tool</td>
-<td>PART_ButtonFitPage</td>
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
@@ -166,11 +146,6 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Controls.Button</td>
 </tr>
 <tr>
-<td>Separator between the annotation and cursor tools</td>
-<td>PART_AnnotationsSeparator</td>
-<td>System.Windows.Shapes.Rectangle</td>
-</tr>
-<tr>
 <td>Stamp tool</td>
 <td>PART_Stamp</td>
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
@@ -191,11 +166,6 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 <td>System.Windows.Controls.Primitives.ToggleButton</td>
 </tr>
 <tr>
-<td>Marquee zoom tool</td>
-<td>PART_MarqueeZoom</td>
-<td>System.Windows.Controls.Primitives.ToggleButton</td>
-</tr>
-<tr>
 <td>Separator between the cursor tools and text search button</td>
 <td>Part_CursorTools</td>
 <td>System.Windows.Shapes.Rectangle</td>
@@ -208,6 +178,142 @@ Similarly, other toolbar items also can be disabled. The following table lists t
 </table>
 
 N> From the v18.4.0.x onwards, the file menu items such as Open, Save, Save As, and Print are not directly present in the toolbar and they are present in the context menu of the File tools toggle button.
+N> From the v21.1.0.x onwards, the PDFViewer toolbar design is changed for a better user interface and visual.
+
+Due to the changes in the toolbar design, there were some changes for a few tool templates. They are listed as follows.
+
+## Before v21.1.0.x (Old Toolbar)
+
+<table>
+<tr>
+<th>Toolbar item</th>
+<th>Template name</th>
+<th>Type</th>
+</tr>
+<tr>
+<td>Zoom tools separator</td>
+<td>Part_ZoomToolsSeparator_0</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Fit width tool</td>
+<td>PART_ButtonFitWidth</td>
+<td>System.Windows.Controls.Button</td>
+</tr>
+<tr>
+<td>Fit page tool</td>
+<td>PART_ButtonFitPage</td>
+<td>System.Windows.Controls.Button</td>
+</tr>
+<tr>
+<td>Zoom tools separator</td>
+<td>PART_ZoomToolsSeparator_1</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Separator between annotation and cursor tools</td>
+<td>PART_AnnotationsSeparator</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Marquee zoom tool</td>
+<td>PART_MarqueeZoom</td>
+<td>System.Windows.Controls.Primitives.ToggleButton</td>
+</tr>
+</table>
+
+## After v21.1.0.x (Current Toolbar)
+
+<table>
+<tr>
+<th>Toolbar item</th>
+<th>Template name</th>
+<th>Type</th>
+</tr>
+<tr>
+<td>Zoom tools separator</td>
+<td>PART_ZoomToolsSeparator</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Cursor tools separator</td>
+<td>PART_CursorToolsSeparator</td>
+<td>System.Windows.Shapes.Rectangle</td>
+</tr>
+<tr>
+<td>Fit width tool</td>
+<td>PART_FitWidth</td>
+<td>System.Windows.Controls.ComboBoxItem</td>
+</tr>
+<tr>
+<td>Fit page tool</td>
+<td>PART_FitPage</td>
+<td>System.Windows.Controls.ComboBoxItem</td>
+</tr>
+<tr>
+<td>Marquee zoom tool</td>
+<td>PART_MarqueeZoom</td>
+<td>System.Windows.Controls.ComboBoxItem</td>
+</tr>
+<tr>
+<td>Separates zoom mode and zoom percentage</td>
+<td>PART_ComboBoxZoomModeSeperator</td>
+<td>System.Windows.Controls.Separator</td>
+</tr>
+<tr>
+<td>Separates zoom mode and marquee zoom</td>
+<td>PART_ComboBoxMarqueeZoomSeperator</td>
+<td>System.Windows.Controls.Separator</td>
+</tr>
+</table>
+
+The following code sample explains disabling the combo box item, and separators present inside the combo box.
+
+{% tabs %}
+{% highlight c# %}
+
+private void HideComboBoxTools(object sender, RoutedEventArgs e)
+{
+	// Get the instance of the toolbar using its template name.
+    DocumentToolbar toolbar = pdfViewer.Template.FindName("PART_Toolbar", pdfViewer) as DocumentToolbar;
+    // Get the Instance of the zoom level combo box using its template name.
+    ComboBox comboBox = (ComboBox)toolbar.Template.FindName("PART_ComboBoxCurrentZoomLevel", toolbar); 
+    // Iterates the combo box items present inside the combo box and disables them.
+    for (int i = 0; i < comboBox.Items.Count; i++)
+    {
+        if (comboBox.Items[i] is ComboBoxItem)
+        {
+            ComboBoxItem item = comboBox.Items[i] as ComboBoxItem;
+			if (item.Name == "PART_FitPage")
+            {
+                item.Visibility = System.Windows.Visibility.Collapsed;
+            }
+            if (item.Name == "PART_FitWidth")
+            {
+                item.Visibility = System.Windows.Visibility.Collapsed;
+            }
+            if (item.Name == "PART_MarqueeZoom")
+            {
+                item.Visibility = System.Windows.Visibility.Collapsed;
+            }
+        }
+        if (comboBox.Items[i] is Separator)
+        {
+            Separator separator = comboBox.Items[i] as Separator;
+            if (separator.Name == "PART_ComboBoxZoomModeSeperator")
+            {
+                separator.Visibility = System.Windows.Visibility.Collapsed;
+            }
+            if (separator.Name == "PART_ComboBoxMarqueeZoomSeperator")
+            {
+                separator.Visibility = System.Windows.Visibility.Collapsed;
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 The following code sample explains disabling the Open tool from the menu.
 
