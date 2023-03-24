@@ -82,7 +82,7 @@ Use the following code snippet to set the VisualMode property to _Default_.
 		</StackPanel>
 	</syncfusion:GroupBarItem>
 </syncfusion:GroupBar>
-
+{% endhighlight %} 
 {% highlight C# %} 
 //Setting visual mode as Default
 groupBar.VisualMode = VisualMode.Default; 
