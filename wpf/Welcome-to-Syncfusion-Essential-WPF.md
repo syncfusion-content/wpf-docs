@@ -392,7 +392,7 @@ N> Using `Classic` labeled controls in new projects is not recommended. In `Clas
 
 ## Licensing
 
-Refer [licensing documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion controls without license message dialog at runtime.
+Refer [licensing documentation](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your WPF application to use Syncfusion controls without license message dialog at runtime.
 
 ## Additional help resources
 
