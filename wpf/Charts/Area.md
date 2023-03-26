@@ -389,10 +389,10 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 [`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-the-chart-while-dragging-the-series-out-of-the-range)
 
-[`How to set the Z Index to the series`](https://www.syncfusion.com/kb/2681/how-to-set-the-z-index-to-the-series)
+[`How to set the Z Index to the series`](https://www.syncfusion.com/kb/2681/how-to-set-the-z-index-to-scatter-series-of-wpf-chart-sfchart)
 
-[`How to get coordinates of x and y in MouseDown event`](https://www.syncfusion.com/kb/2566/how-to-get-coordinates-of-x-and-y-in-mousedown-event)
+[`How to get coordinates of x and y in MouseDown event`](https://www.syncfusion.com/kb/2566/how-to-get-coordinates-of-x-and-y-in-wpf-chart-sfchartt)
 
-[`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-itemwidthpercent-before-drawing-chart)
+[`How to set ItemWidthPercent before drawing chart`](https://www.syncfusion.com/kb/2554/how-to-set-spacing-between-each-columns-in-wpf-chart-sfchart)
 
 [`How to view corner segments without cutting in edge of WPF Chart`](https://www.syncfusion.com/kb/10728/how-to-view-corner-segments-without-cutting-in-edge-of-wpf-chart)

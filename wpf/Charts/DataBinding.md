@@ -366,4 +366,4 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 [`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
 
-[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-nan-in-sfchart)
+[`How to manage the empty values (NaN) in Chart`](https://www.syncfusion.com/kb/2900/how-to-manage-the-empty-values-in-wpf-chart-sfchart)

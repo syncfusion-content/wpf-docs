@@ -688,11 +688,11 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to create chart in VB .NET WPF`]( https://www.syncfusion.com/kb/10796/how-to-create-chart-in-vb-net-wpf)
+[`How to create chart in VB .NET WPF`](https://www.syncfusion.com/kb/10796/how-to-create-chart-control-example-in-vb-net-wpf)
 
 [`How to create a chart control in WPF application using XAML`](https://www.syncfusion.com/kb/10786/how-to-create-a-chart-control-in-wpf-application-using-xaml)
 
-[`How to create chart in C# WPF`](https://www.syncfusion.com/kb/10783/how-to-create-chart-in-c-wpf)
+[`How to create chart in C# WPF`](https://www.syncfusion.com/kb/10783/how-to-create-chart-control-example-in-c-wpf)
 
 [`How to create Chart in F# WPF`](https://www.syncfusion.com/kb/11663/how-to-create-chart-in-f-wpf)
 
