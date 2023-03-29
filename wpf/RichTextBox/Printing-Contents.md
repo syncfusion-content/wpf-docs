@@ -69,5 +69,30 @@ The following code example demonstrates how to bind UI Command to invoke printin
 
 {% endtabs %}
 
+In the SfRichTextBoxAdv control, comments will be shown by default on printing the document. You can hide the comments while printing by using the [PrintComments](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.EditorSettings.html#Syncfusion_Windows_Controls_RichTextBoxAdv_EditorSettings_PrintComments) property of [EditorSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.EditorSettings.html) class.
+
+The following code example illustrates how to hide the comments on printing the document.
+
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv">
+    <RichTextBoxAdv:SfRichTextBoxAdv.EditorSettings>
+        <RichTextBoxAdv:EditorSettings PrintComments="False" />
+    </RichTextBoxAdv:SfRichTextBoxAdv.EditorSettings>
+</RichTextBoxAdv:SfRichTextBoxAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+richTextBoxAdv.EditorSettings.PrintComments = false;
+
+{% endhighlight %}
+{% highlight VB %}
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+richTextBoxAdv.EditorSettings.PrintComments = False
+
+{% endhighlight %}
+{% endtabs %}
+
 N> In order to invoke printing, the standard keyboard shortcut CTRL + P can also be used.
 You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
