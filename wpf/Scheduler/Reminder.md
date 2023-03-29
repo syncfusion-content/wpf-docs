@@ -198,7 +198,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/appointment-rem
 ## ReminderAlertOpening event
 Scheduler notifies by the [ReminderAlertOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertOpening) event when appearing in the reminder window. The [ReminderAlertOpeningEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ReminderAlertOpeningEventArgs.html) has following properties,
 * [Reminders](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders)  - Gets a list of reminders that are used to display the appointment reminders in the reminder alert window.
-* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid the reminder window opening by enabling this property.
+* [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid the reminder window opening by enabling this property.
 
 {% tabs %}
 {% highlight c#%}
