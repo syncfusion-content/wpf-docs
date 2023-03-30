@@ -28,7 +28,7 @@ String</td><td>
 NA</td></tr>
 </table>
 
-#### Adding DefaultText property to an application 
+## Adding DefaultText property to an application 
 
 DefaultText property can be added directly to an application in the following way: 
 
