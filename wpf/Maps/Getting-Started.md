@@ -19,7 +19,7 @@ You can add SfMap reference using one of the following methods:
 
 Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add SfMap to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfMaps.WPF](https://www.nuget.org/packages/Syncfusion.SfMaps.WPF), and then install it.
 
-![Adding SfMap reference from NuGet](Getting-Started_images/Adding SfMaps reference.png)
+![Adding SfMap reference from NuGet](Getting-Started_images/Adding-SfMaps-reference.png)
 
 **Method 2: Adding SfMap reference from toolbox**
 
