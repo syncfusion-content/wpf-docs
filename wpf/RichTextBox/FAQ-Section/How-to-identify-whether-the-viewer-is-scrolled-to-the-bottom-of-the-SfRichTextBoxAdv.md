@@ -17,7 +17,7 @@ We can use the ValueChanged event of the [VerticalScrollBar](https://help.syncfu
 
 The following code example illustrates to identify whether the viewer is scrolled to the bottom of the SfRichTextBoxAdv.
 
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 /// <summary>
 ///  Occurs when the element is laid out, rendered, and ready for interaction.
@@ -45,4 +45,5 @@ The following code example illustrates to identify whether the viewer is scrolle
              ///Then scroll reached the bottom of the control.
      }
  }
-		
+{% endhighlight %}
+{% endtabs %}
