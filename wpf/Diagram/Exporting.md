@@ -265,6 +265,36 @@ diagram.Export();
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting)
 
+## DPI resolution on exporting
+
+SfDiagram provides the support to specify the preferred export resolution using the [DipX](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) and [DipY](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ExportSettings.html) properties of the ExportSettings class.
+
+The following code example illustrate how to change export resolution.
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the export settings with DPiX and DPiY values-->
+  <syncfusion:SfDiagram.ExportSettings>
+    <syncfusion:ExportSettings DpiX="300" DpiY="300/>
+  </syncfusion:SfDiagram.ExportSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+
+//Initialize the export settings
+ExportSettings settings = new ExportSettings()
+{  
+  ExportType = ExportType.PNG, DpiX = 300, DpiY = 300 
+}; 
+
+diagram.ExportSettings = settings;         
+//Method to export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## See Also
  
 [How to export the Diagram as PDF?](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf?_ga=2.224896664.348008717.1586668974-282675519.1571983805)
