@@ -25,7 +25,7 @@ pdfViewer.ShowToolbar = False
 
 ## Expand the Annotation toolbar by programmatically.
 
-The annotation toolbar is a secondary toolbar of PDF Viewer control that contains a collection of annotation buttons. By default, this annotation toolbar will be collapsed. To expand annotation toolbar at runtime, the user can click show annotations button, which is present in the primary toolbar. In order to expand annotation toolbar at loading or by programmatically, the user can just enable the isChecked property in annotations button as true. The following code example shows how to expands the annotation toolbar by programmatically in the PDF Viewer control.
+The annotation toolbar is a secondary toolbar of PDF Viewer control that contains a collection of annotation buttons. By default, this annotation toolbar will be collapsed. To expand annotation toolbar at runtime, the user can click show annotations button, which is present in the primary toolbar. In order to expand annotation toolbar at loading or by programmatically,the user can just enable the isChecked property in annotations button as true. The following code example shows how to expands the annotation toolbar by programmatically in the PDF Viewer control.
 
 {% tabs %}
 {% highlight c# %}
