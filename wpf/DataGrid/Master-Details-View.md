@@ -1881,7 +1881,7 @@ this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowChildViewUpdate | Liv
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF_-_Sample1341078924).
 
 ## Refreshing UI while adding records to relation property at run time
 
