@@ -169,13 +169,13 @@ You can navigate to the cells contains the SearchText using [SearchHelper.FindNe
 
 {% endhighlight %}
 {% endtabs %}
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSearch-140489943.zip).
 
 N> It is not possible to Navigate with the two DataGrid at a time.
 
 ## Search customization
 
-WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
+WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
 
 {% tabs %}
 {% highlight c# %}
@@ -249,7 +249,7 @@ this.dataGrid.SelectedIndex = recordIndex;
 
 ### Search with the GridComboBoxColumn
 
-You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
+You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
 
 {% tabs %}
 {% highlight c# %}
@@ -377,8 +377,8 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
 
 ## See Also
 
-[How to apply search and filter for one column in SfDataGrid?](https://www.syncfusion.com/kb/9297)
+[How to apply search and filter for one column in SfDataGrid?](https://www.syncfusion.com/kb/9297/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-sfdatagrid)
 
-[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://www.syncfusion.com/kb/9290)
+[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://www.syncfusion.com/kb/9290/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf)
 
-[How to perform incremental search ?](https://www.syncfusion.com/kb/8505)
+[How to perform incremental search ?](https://www.syncfusion.com/kb/8505/how-to-perform-the-incremental-search-in-wpf-datagrid-sfdatagrid)
