@@ -333,7 +333,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) **–** Gets the action triggered this event. 
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) **–** Setting value to `true`, cancels the triggered action. 
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) **–** Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) **-** Gets the list of new `SortColumnDescription’s` that are added.
 
@@ -341,7 +341,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [CancelScroll](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) **-** Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property of `SortColumnsChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -365,12 +365,12 @@ void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSor
 [GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnsChanged` event. 
 
 ## See Also
-[How to sort a column in WPF DataGrid?](https://www.syncfusion.com/kb/10797)
+[How to sort a column in WPF DataGrid?](https://www.syncfusion.com/kb/10797/how-to-sort-a-column-in-wpf-datagrid-sfdatagrid)
 
-[How to customize the Filtering and Sorting icons in the SfDataGrid ?](https://www.syncfusion.com/kb/8184)
+[How to customize the Filtering and Sorting icons in the SfDataGrid ?](https://www.syncfusion.com/kb/8184/how-to-customize-the-filtering-and-sorting-icons-in-wpf-datagrid-sfdatagrid)
 
-[How to sort multiple column without pressing Ctrl key in SfDataGrid?](https://www.syncfusion.com/kb/7160)
+[How to sort multiple column without pressing Ctrl key in SfDataGrid?](https://www.syncfusion.com/kb/7160/how-to-sort-multiple-column-without-pressing-ctrl-key-in-wpf-datagrid-sfdatagrid)
 
-[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://www.syncfusion.com/kb/4052)
+[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://www.syncfusion.com/kb/4052/how-to-change-the-position-of-filtertogglebutton-and-sorticon-in-header-cell-of-sfdatagrid)
 
-[How to sort your binded collection of ViewModel?](https://www.syncfusion.com/kb/2461)
+[How to sort your binded collection of ViewModel?](https://www.syncfusion.com/kb/2461/how-to-sort-your-binded-collection-of-viewmodel)
