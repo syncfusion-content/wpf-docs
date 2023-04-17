@@ -23,11 +23,11 @@ Built-in validations through `IDataErrorInfo`, `INotifyDataErrorInfo` and Data a
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-WPF DataGrid (SfDataGrid) provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0).
+WPF DataGrid (SfDataGrid) provides support to validate the data based on [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) / [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0).
  
 ### Using IDataErrorInfo
  
-You can validate the data by inheriting the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) interface in model class.
+You can validate the data by inheriting the [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 
 ### INotifyDataErrorInfo
 
-You can validate the data by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
+You can validate the data by inheriting the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ public string CustomerName
 {% endhighlight %}
 {% endtabs %}
 
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=net-5.0).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -840,11 +840,11 @@ You can change the error tip background color by setting `Background` property o
 
 ## Showing error details in RowHeader
 
-WPF DataGrid (SfDataGrid) support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) or [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0) property.
+WPF DataGrid (SfDataGrid) support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0) property.
 
 ### Using IDataErrorInfo
 
-You can show the error information in row header by setting [IDataErrorInfo.Error](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
+You can show the error information in row header by setting [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?view=net-5.0). `IDataErrorInfo.Error` will be displayed as error message in tooltip.
 
 {% tabs %}
 {% highlight c# %}
@@ -868,7 +868,7 @@ public string Error
 
 ### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message **Row Containing Error** will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message **Row Containing Error** will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}
