@@ -596,7 +596,6 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 
 3. Create a style of TargetType `GridCell` and change the Foreground using `CellStyleSelector` based on `EditedColumns` property in data object.
 
-{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -616,12 +615,6 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
                        ShowRowHeader="True">
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
-{% capture codesnippet3 %}
-{% tabs %}
 {% highlight c# %}
 public class CellStyleSelector : StyleSelector
 {
@@ -643,8 +636,6 @@ public class CellStyleSelector : StyleSelector
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_2 }}
 
 ![Changing Foreground of Edited Cells in WPF DataGrid](Editing_images/wpf-datagrid-edited-cells.jpeg)
 
