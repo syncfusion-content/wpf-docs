@@ -116,4 +116,21 @@ End Sub
 {% endtabs %}
 ![Customizing Comment Style in WPF RichTextBox](Comment_images/wpf-richtextbox-comment-customization.jpeg)
 
+The SfRichTextBoxAdv control allows you to determine the visibility of the comment pane using the IsCommentPaneVisible property of the EditorSettings class.
+
+The following code example illustrates how to check whether the comment pane is currently visible or hidden:
+
+{% tabs %}
+{% highlight c# %}
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+bool isCommentPaneVisible = richTextBoxAdv.EditorSettings.IsCommentPaneVisible;
+
+{% endhighlight %}
+{% highlight VB %}
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+Dim isCommentPaneVisible As Boolean = richTextBoxAdv.EditorSettings.IsCommentPaneVisible
+
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [WPF RichTextBox](https://www.syncfusion.com/wpf-controls/richtextbox) feature tour page for its groundbreaking feature representations.You can also explore our [WPF RichTextBox example](https://github.com/syncfusion/wpf-demos/tree/master/richtextbox) to knows how to render and configure the editing tools.
