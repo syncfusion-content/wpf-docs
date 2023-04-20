@@ -116,6 +116,8 @@ End Sub
 {% endtabs %}
 ![Customizing Comment Style in WPF RichTextBox](Comment_images/wpf-richtextbox-comment-customization.jpeg)
 
+## Visibility of comment pane
+
 The SfRichTextBoxAdv control allows you to determine the visibility of the comment pane using the IsCommentPaneVisible property of the EditorSettings class.
 
 The following code example illustrates how to check whether the comment pane is currently visible or hidden:
