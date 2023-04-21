@@ -192,7 +192,7 @@ You can create a tree view by binding the ItemsSource to a hierarchical data sou
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NodeWithImageDemo"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
+        xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
         mc:Ignorable="d">
 
     <Window.DataContext>
