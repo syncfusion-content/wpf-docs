@@ -191,34 +191,34 @@ Due to the changes in the toolbar design, there were some changes for a few tool
 <th>Type</th>
 </tr>
 <tr>
-<td>Zoom tools separator</td>
-<td>Part_ZoomToolsSeparator_0</td>
-<td>System.Windows.Shapes.Rectangle</td>
+<th>Zoom tools separator</th>
+<th>Part_ZoomToolsSeparator_0</th>
+<th>System.Windows.Shapes.Rectangle</th>
 </tr>
 <tr>
-<td>Fit width tool</td>
-<td>PART_ButtonFitWidth</td>
-<td>System.Windows.Controls.Button</td>
+<th>Fit width tool</th>
+<th>PART_ButtonFitWidth</th>
+<th>System.Windows.Controls.Button</th>
 </tr>
 <tr>
-<td>Fit page tool</td>
-<td>PART_ButtonFitPage</td>
-<td>System.Windows.Controls.Button</td>
+<th>Fit page tool</th>
+<th>PART_ButtonFitPage</th>
+<th>System.Windows.Controls.Button</th>
 </tr>
 <tr>
-<td>Zoom tools separator</td>
-<td>PART_ZoomToolsSeparator_1</td>
-<td>System.Windows.Shapes.Rectangle</td>
+<th>Zoom tools separator</th>
+<th>PART_ZoomToolsSeparator_1</th>
+<th>System.Windows.Shapes.Rectangle</th>
 </tr>
 <tr>
-<td>Separator between annotation and cursor tools</td>
-<td>PART_AnnotationsSeparator</td>
-<td>System.Windows.Shapes.Rectangle</td>
+<th>Separator between annotation and cursor tools</th>
+<th>PART_AnnotationsSeparator</th>
+<th>System.Windows.Shapes.Rectangle</th>
 </tr>
 <tr>
-<td>Marquee zoom tool</td>
-<td>PART_MarqueeZoom</td>
-<td>System.Windows.Controls.Primitives.ToggleButton</td>
+<th>Marquee zoom tool</th>
+<th>PART_MarqueeZoom</th>
+<th>System.Windows.Controls.Primitives.ToggleButton</th>
 </tr>
 </table>
 
@@ -231,39 +231,39 @@ Due to the changes in the toolbar design, there were some changes for a few tool
 <th>Type</th>
 </tr>
 <tr>
-<td>Zoom tools separator</td>
-<td>PART_ZoomToolsSeparator</td>
-<td>System.Windows.Shapes.Rectangle</td>
+<th>Zoom tools separator</th>
+<th>PART_ZoomToolsSeparator</th>
+<th>System.Windows.Shapes.Rectangle</th>
 </tr>
 <tr>
-<td>Cursor tools separator</td>
-<td>PART_CursorToolsSeparator</td>
-<td>System.Windows.Shapes.Rectangle</td>
+<th>Cursor tools separator</th>
+<th>PART_CursorToolsSeparator</th>
+<th>System.Windows.Shapes.Rectangle</th>
 </tr>
 <tr>
-<td>Fit width tool</td>
-<td>PART_FitWidth</td>
-<td>System.Windows.Controls.ComboBoxItem</td>
+<th>Fit width tool</th>
+<th>PART_FitWidth</th>
+<th>System.Windows.Controls.ComboBoxItem</th>
 </tr>
 <tr>
-<td>Fit page tool</td>
-<td>PART_FitPage</td>
-<td>System.Windows.Controls.ComboBoxItem</td>
+<th>Fit page tool</th>
+<th>PART_FitPage</th>
+<th>System.Windows.Controls.ComboBoxItem</th>
 </tr>
 <tr>
-<td>Marquee zoom tool</td>
-<td>PART_MarqueeZoom</td>
-<td>System.Windows.Controls.ComboBoxItem</td>
+<th>Marquee zoom tool</th>
+<th>PART_MarqueeZoom</th>
+<th>System.Windows.Controls.ComboBoxItem</th>
 </tr>
 <tr>
-<td>Separates zoom mode and zoom percentage</td>
-<td>PART_ComboBoxZoomModeSeperator</td>
-<td>System.Windows.Controls.Separator</td>
+<th>Separates zoom mode and zoom percentage</th>
+<th>PART_ComboBoxZoomModeSeperator</th>
+<th>System.Windows.Controls.Separator</th>
 </tr>
 <tr>
-<td>Separates zoom mode and marquee zoom</td>
-<td>PART_ComboBoxMarqueeZoomSeperator</td>
-<td>System.Windows.Controls.Separator</td>
+<th>Separates zoom mode and marquee zoom</th>
+<th>PART_ComboBoxMarqueeZoomSeperator</th>
+<th>System.Windows.Controls.Separator</th>
 </tr>
 </table>
 
