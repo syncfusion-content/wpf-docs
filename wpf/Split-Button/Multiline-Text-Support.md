@@ -30,7 +30,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("image\userlarge.png"));
 {% endhighlight %}
 {% endtabs %}
 
-![Multiline](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![WPF Split Button Multiline text](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
 
 
