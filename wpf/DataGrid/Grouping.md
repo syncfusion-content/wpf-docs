@@ -604,7 +604,7 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
 
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ShowGroupDropArea) of `GroupCollapsing` event.
 
 
 {% tabs %}
