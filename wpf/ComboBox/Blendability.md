@@ -9,7 +9,7 @@ documentation: ug
 
 # Blendability in WPF ComboBox (ComboBoxAdv)
 
-### Creating the ComboBoxAdv control in expression blend
+## Creating the ComboBoxAdv control in expression blend
 
 To create ComboBoxAdv instance in Expression Blend:
 

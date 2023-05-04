@@ -281,7 +281,7 @@ SfDataGrid triggers the following events during editing.
 
 ### CurrentCellBeginEdit Event
 
-[CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) enter into edit mode. [CurrentCellBeginEditEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
+[CurrentCellBeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) enter into edit mode. [CurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
 * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_RowColumnIndex) : Gets the current row column index of the DataGrid.
@@ -301,7 +301,7 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 
 ### CurrentCellEndEdit Event
 
-[CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) exits the edit mode. [CurrentCellEndEditEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for `CurrentCellEndEdit` event.
+[CurrentCellEndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) exits the edit mode. [CurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for `CurrentCellEndEdit` event.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellEndEditEventArgs_RowColumnIndex) : Gets the value for the current row column index.
 
@@ -319,7 +319,7 @@ void dataGrid_CurrentCellEndEdit(object sender, Syncfusion.UI.Xaml.Grid.CurrentC
 
 ### CurrentCellValueChanged Event
 
-[CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs whenever a value changes in GridColumn's that supports editing. [CurrentCellValueChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
+[CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs whenever a value changes in GridColumn's that supports editing. [CurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
 * [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_Column) : Gets the Grid Column of the SfDataGrid.
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellValueChangedEventArgs_RowColumnIndex) : Gets the value of the current RowColumnIndex.
@@ -342,7 +342,7 @@ N> `GridComboBoxColumn` and `GridMultiColumnDropList`, you have to use the `Curr
 
 [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs whenever the `SelectedItem` of `GridMultiColumnDropDownList` and `GridComboBoxColumn` column changed.
 
-[CurrentCellDropDownSelectionChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
+[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellDropDownSelectionChangedEventArgs_RowColumnIndex) – Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
 * [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellDropDownSelectionChangedEventArgs_SelectedIndex) – Gets the index of the corresponding item that were selected from the drop-down control.
@@ -596,7 +596,6 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 
 3. Create a style of TargetType `GridCell` and change the Foreground using `CellStyleSelector` based on `EditedColumns` property in data object.
 
-{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -616,12 +615,6 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
                        ShowRowHeader="True">
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-{% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
-{% capture codesnippet3 %}
-{% tabs %}
 {% highlight c# %}
 public class CellStyleSelector : StyleSelector
 {
@@ -643,8 +636,6 @@ public class CellStyleSelector : StyleSelector
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_2 }}
 
 ![Changing Foreground of Edited Cells in WPF DataGrid](Editing_images/wpf-datagrid-edited-cells.jpeg)
 
@@ -707,50 +698,50 @@ public class SfDataGridExt : SfDataGrid
 
 [How to change row background based on RowState.Modified when underlying itemsSource is DataTable in SfDataGrid?](https://www.syncfusion.com/kb/9894)
 
-[How to show different controls in same column of SfDataGrid?](https://www.syncfusion.com/kb/7181)
+[How to show different controls in same column of SfDataGrid?](https://www.syncfusion.com/kb/7181/how-to-show-different-controls-in-same-column-of-wpf-datagrid-sfdatagrid)
 
-[How to edit GridHyperLinkColumn?](https://www.syncfusion.com/kb/6770)
+[How to edit GridHyperLinkColumn?](https://www.syncfusion.com/kb/6770/how-to-edit-gridhyperlinkcolumn-in-wpf-datagrid-sfdatagrid)
 
-[How to use the editing related events in GridCheckBoxColumn?](https://www.syncfusion.com/kb/6705)
+[How to use the editing related events in GridCheckBoxColumn?](https://www.syncfusion.com/kb/6705/how-to-use-the-editing-related-events-in-gridcheckboxcolumn-of-wpf-datagrid-sfdatagrid)
 
-[How to skip editing for Read-Only columns in AddNewRow?](https://www.syncfusion.com/kb/6702)
+[How to skip editing for Read-Only columns in AddNewRow?](https://www.syncfusion.com/kb/6702/how-to-skip-editing-for-read-only-colums-in-addnewrow-of-wpf-datagrid-sfdatagrid)
 
-[How to change the cell value of selectedcells when end edit?](https://www.syncfusion.com/kb/6655)
+[How to change the cell value of selectedcells when end edit?](https://www.syncfusion.com/kb/6655/how-to-change-the-cell-value-of-selected-cells-in-wpf-datagrid-sfdatagrid)
 
 [How to show the Number Keyboard when editing GridNumericColumn?](https://www.syncfusion.com/kb/6630/how-to-show-the-number-keyboard-while-editing-gridnumericcolumn-in-wpf-datagrid-sfdatagrid)
 
-[How to validate the AddNewRow value based on already existing records?](https://www.syncfusion.com/kb/6596)
+[How to validate the AddNewRow value based on already existing records?](https://www.syncfusion.com/kb/6596/how-to-validate-the-addnewrow-value-based-on-existing-records-in-wpf-datagrid-sfdatagrid)
 
-[How to change the CheckBox value for all SelectedItems when any selected CheckBox value changed?](https://www.syncfusion.com/kb/6083)
+[How to change the CheckBox value for all SelectedItems when any selected CheckBox value changed?](https://www.syncfusion.com/kb/6083/how-to-change-the-checkbox-value-for-all-selecteditems-when-any-selected-checkbox-value)
 
-[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://www.syncfusion.com/kb/5954)
+[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://www.syncfusion.com/kb/5954/how-to-fire-rowvalidating-event-for-gridcheckboxcolumn-in-sfdatagrid)
 
-[How to create ReadOnly UnboundRows?](https://www.syncfusion.com/kb/5348)
+[How to create ReadOnly UnboundRows?](https://www.syncfusion.com/kb/5348/how-to-create-readonly-unboundrows)
 
-[How to load null value to the GridDateTimeColumn when AllowInlineEditing is set to true?](https://www.syncfusion.com/kb/5337)
+[How to load null value to the GridDateTimeColumn when AllowInlineEditing is set to true?](https://www.syncfusion.com/kb/5337/how-to-load-null-value-to-the-griddatetimecolumn-when-allowinlineediting-is-set-to-true)
 
-[How to move the CurrentCell to the first column of the AddNewRow when the Tab key is pressed from the last column and its position is at the Bottom of the SfDataGrid?](https://www.syncfusion.com/kb/4736)
+[How to move the CurrentCell to the first column of the AddNewRow when the Tab key is pressed from the last column and its position is at the Bottom of the SfDataGrid?](https://www.syncfusion.com/kb/4736/how-to-move-the-currentcell-to-the-first-column-of-the-addnewrow-when-the-tab-key-is)
 
-[How to customize edit mode behavior of GridCell in SfDataGrid?](https://www.syncfusion.com/kb/3823)
+[How to customize edit mode behavior of GridCell in SfDataGrid?](https://www.syncfusion.com/kb/3823/how-to-customize-edit-mode-behavior-of-gridcell-in-sfdatagrid)
 
-[How to change the Enter key behavior in SfDataGrid?](https://www.syncfusion.com/kb/3815)
+[How to change the Enter key behavior in SfDataGrid?](https://www.syncfusion.com/kb/3815/how-to-change-the-enter-key-behavior-in-sfdatagrid)
 
-[How to change the Enter key behavior to insert line break when the CurrentCell is in the edit mode?](https://www.syncfusion.com/kb/3727)
+[How to change the Enter key behavior to insert line break when the CurrentCell is in the edit mode?](https://www.syncfusion.com/kb/3727/how-to-change-the-enter-key-behavior-to-insert-line-break-when-the-currentcell-is-in-the)
 
-[How to edit SfDataGrid Template column by single tap?](https://www.syncfusion.com/kb/3206)
+[How to edit SfDataGrid Template column by single tap?](https://www.syncfusion.com/kb/3206/how-to-edit-sfdatagrid-template-column-by-single-tap)
 
-[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbon?](https://www.syncfusion.com/kb/3203)
+[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbon?](https://www.syncfusion.com/kb/3203/how-to-set-the-copy-and-paste-option-of-the-grid-by-using-contextmenu-and-sfribbion)
 
-[How to hide the rows based on condition in SfDataGrid?](https://www.syncfusion.com/kb/3190)
+[How to hide the rows based on condition in SfDataGrid?](https://www.syncfusion.com/kb/3190/how-to-hide-the-rows-based-on-condition-in-sfdatagrid)
 
-[How to disable Edit mode for cells in SfDataGrid with different background for those disabled cells?](https://www.syncfusion.com/kb/2604)
+[How to disable Edit mode for cells in SfDataGrid with different background for those disabled cells?](https://www.syncfusion.com/kb/2604/how-to-disable-edit-mode-for-cells-in-sfdatagrid-with-different-background-for-those)
 
-[How to focus a particular UIElement inside DataTemplate after calling CurrentCell.BeginEdit() or when entering edit mode?](https://www.syncfusion.com/kb/2526)
+[How to focus a particular UIElement inside DataTemplate after calling CurrentCell.BeginEdit() or when entering edit mode?](https://www.syncfusion.com/kb/2526/how-to-focus-a-particular-uielement-inside-datatemplate-after-calling-currentcell-beginedit)
 
-[How to change the same values in all records when the ComboBox column value is changed?](https://www.syncfusion.com/kb/2498)
+[How to change the same values in all records when the ComboBox column value is changed?](https://www.syncfusion.com/kb/2498/how-to-change-the-same-values-in-all-records-when-the-combobox-column-value-is-changed)
 
-[How to disable the edit mode of AddNewRow in SfDataGrid when AllowEditing is set as False?](https://www.syncfusion.com/kb/2495)
+[How to disable the edit mode of AddNewRow in SfDataGrid when AllowEditing is set as False?](https://www.syncfusion.com/kb/2495/how-to-disable-the-edit-mode-of-addnewrow-in-sfdatagrid-when-allowediting-is-set-as-false)
 
-[How to get the parent grid while editing the child grid?](https://www.syncfusion.com/kb/2472)
+[How to get the parent grid while editing the child grid?](https://www.syncfusion.com/kb/2472/how-to-get-the-parent-grid-while-editing-the-child-grid)
 
-[How to handle keyboard and mouse interactions for GridTemplateColumn?](https://www.syncfusion.com/kb/2433/)
+[How to handle keyboard and mouse interactions for GridTemplateColumn?](https://www.syncfusion.com/kb/2433/how-to-handle-keyboard-and-mouse-interactions-for-gridtemplatecolumn)
