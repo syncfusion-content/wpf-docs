@@ -118,7 +118,7 @@ End Sub
 
 ## Visibility of comment pane
 
-The SfRichTextBoxAdv control allows you to determine the visibility of the comment pane using the IsCommentPaneVisible property of the EditorSettings class.
+The SfRichTextBoxAdv control allows you to determine the visibility of the comment pane using the [IsCommentPaneVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.EditorSettings.html#Syncfusion_Windows_Controls_RichTextBoxAdv_EditorSettings_IsCommentPaneVisible) property of the [EditorSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.RichTextBoxAdv.EditorSettings.html) class.
 
 The following code example illustrates how to check whether the comment pane is currently visible or hidden:
 
