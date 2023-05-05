@@ -54,7 +54,7 @@ It affects scrolling performance while styling more number of columns based on n
 
 ### Conditional styling of cells using converter
 
-The record cells ([GridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally by changing its property value based on `cell value` or `data object` using `converter`. 
+The record cells ([GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally by changing its property value based on `cell value` or `data object` using `converter`. 
 
 Here, `GridCell` background is changed using `converter`, where converter returns the value based on `OrderID` property of underlying record.
 
@@ -151,7 +151,7 @@ public class ColorConverter : IValueConverter
 
 ### Conditional styling of cells using triggers
 
-The record cells ([GridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized by setting [Style.Triggers](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) that apply property values based on specified conditions. Multiple conditions can be specified by setting [MultiDataTrigger](https://docs.microsoft.com/en-us/dotnet/api/system.windows.multidatatrigger).
+The record cells ([GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized by setting [Style.Triggers](https://learn.microsoft.com/en-us/dotnet/api/system.windows.style.triggers?view=windowsdesktop-7.0) that apply property values based on specified conditions. Multiple conditions can be specified by setting [MultiDataTrigger](https://learn.microsoft.com/en-us/dotnet/api/system.windows.multidatatrigger?view=windowsdesktop-7.0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -184,7 +184,7 @@ Here, GridCell’s are conditionally customized based on `OrderID` value.
 
 ### Conditional styling of cells using style selector
 
-The record cells ([GridCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally based on data by setting [SfDataGrid.CellStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellStyleSelector) property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellStyleSelector) property and you can get the container as `GridCell` in the StyleSelector.
+The record cells ([GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally based on data by setting [SfDataGrid.CellStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellStyleSelector) property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellStyleSelector) property and you can get the container as `GridCell` in the StyleSelector.
 
 N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellStyleSelector` property.
 
@@ -282,7 +282,7 @@ Here, rows are customized based on `TotalPrice` property of underlying record.
 
 ### Conditional styling of rows using style selector
 
-The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally based on data by setting [SfDataGrid.RowStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowStyleSelector) property and you can get the container as `VirtualizingCellsControl` in StyleSelector.
+The record rows ([VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally based on data by setting [SfDataGrid.RowStyleSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowStyleSelector) property and you can get the container as `VirtualizingCellsControl` in StyleSelector.
 
 {% tabs %}
 {% highlight xaml %}
