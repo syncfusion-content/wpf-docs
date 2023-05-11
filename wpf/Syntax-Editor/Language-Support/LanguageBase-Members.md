@@ -7,7 +7,7 @@ control: Syntax Editor
 documentation: ug
 ---
 
-# Language Base Members in WPF Syntax Editor
+## LanguageBase Members
 
 LanguageBase class in Syncfusion.Windows.Edit namespace plays a vital role in the implementation of language support in EditControl. In order to include a support for a new or custom language, a class inherited from LanguageBase or its sub classes need to be implemented. LanguageBase contains a number of properties and methods to enable the custom language developers configure their languages easily. This topic discusses about the properties and methods available in the LanguageBase class.
 

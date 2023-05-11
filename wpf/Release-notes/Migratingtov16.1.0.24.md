@@ -5,7 +5,7 @@ platform: wpf
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes
 ---
-# Volume 1 Migration document in WPF RichTextBox(SfRichTextBoxAdv)
+## SfRichTextBoxAdv
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
