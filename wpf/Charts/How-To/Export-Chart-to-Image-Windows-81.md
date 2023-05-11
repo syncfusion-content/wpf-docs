@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Export Chart to Image (Windows 8.1)
+# Export Chart to Image (Windows 8.1) in WPF
 
 The export chart to image feature in the SfChart control enables the user to export the image of the chart in different image file formats. 
 
