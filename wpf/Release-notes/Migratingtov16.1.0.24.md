@@ -1,11 +1,11 @@
 ---
-title: Essential Studio for WPF 2018 volume 1 Migration document
-description: Essential Studio for WPF 2018 volume 1 Migration document
+title: Volume 1 Migration Document in WPF Release Notes Control | Syncfusion
+description: Learn about volume 1 migration document support in Syncfusion Essential WPF Release Notes Control, its elements and more.
 platform: wpf
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes
 ---
-# Volume 1 Migration document in WPF RichTextBox(SfRichTextBoxAdv)
+# Volume 1 Migration document in WPF Release Notes
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
