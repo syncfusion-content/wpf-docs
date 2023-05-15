@@ -1,6 +1,6 @@
 ---
-title: Volume 1 Migration Document in WPF Release Notes Control | Syncfusion
-description: Learn about volume 1 migration document support in Syncfusion Essential WPF Release Notes Control, its elements and more.
+title: Volume 1 Migration Document in WPF Release Notes | Syncfusion
+description: Learn about volume 1 migration document support in Syncfusion Essential WPF Release Notes, its elements and more.
 platform: wpf
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes
