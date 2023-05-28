@@ -14,7 +14,7 @@ documentation: ug
 The date-time range navigator control is composed of various elements such as higher level bar, lower Level bar, content, and resizable scroll bar.
 
 * Higher level bar: Contains timespan format that is one level higher than date-time values of lower level bar, e.g. the higher level bar contains year format (yyyy) and the lower level bar contains month format (MMM).
-* Lower level bar: Contains timespan format that is one lever lower than date-time values of higher level bar, e.g. the lower level bar contains month format (MMM) and the higher level bar contains year format (yyyy).
+* Lower level bar: Contains timespan format that is one level lower than date-time values of higher level bar, e.g. the lower level bar contains month format (MMM) and the higher level bar contains year format (yyyy).
 * Content: Holds any type of UI element inside the navigator.
 * Resizable scroll bar: Allows users to zoom and scroll the content and label bars.
 
