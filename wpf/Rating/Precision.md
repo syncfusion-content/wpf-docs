@@ -39,7 +39,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Standard precision mode in WPF Rating](images/wpf-rating-precision-Standard-mode.png)
+![Standard precision mode in WPF Rating](images/wpf-rating-precision-standard-mode.png)
 
 ### Half
 
