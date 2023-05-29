@@ -69,7 +69,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Half precision mode in WPF Rating](images/wpf-rating-Precision-half-mode.png)
+![Half precision mode in WPF Rating](images/wpf-rating-precision-half-mode.png)
 
 ### Exact
 
