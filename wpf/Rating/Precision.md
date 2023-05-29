@@ -39,7 +39,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Standard precision modes in WPF Rating](images/wpf-rating-precision-standard-modes.png)
+![Standard precision mode in WPF Rating](images/wpf-rating-precision-standard-mode.png)
 
 ### Half
 
@@ -69,7 +69,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Half precision modes in WPF Rating](images/wpf-rating-precision-half-modes.png)
+![Half precision mode in WPF Rating](images/wpf-rating-precision-half-mode.png)
 
 ### Exact
 
@@ -99,4 +99,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![Exact precision modes in WPF Rating](images/wpf-rating-precision-exact-modes.png) 
+![Exact precision mode in WPF Rating](images/wpf-rating-precision-exact-mode.png) 
