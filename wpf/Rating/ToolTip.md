@@ -36,7 +36,7 @@ public MainWindow()
 
 {% endtabs %}
 
-![Tooltip mode in WPF Rating ](images/wpf-rating-toolTip-mode.png)
+![Tooltip mode in WPF Rating](images/wpf-rating-tooltip-mode.png)
 
 ### Set tooltip precision
 
@@ -70,4 +70,4 @@ public MainWindow()
 
 {% endtabs %}
 
-![Set tooltip precision mode in WPF Rating](images/wpf-rating-toolTipPrecision-mode.png)
+![Set tooltip precision mode in WPF Rating](images/wpf-rating-tooltip-precision-mode.png)
