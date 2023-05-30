@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section explains different UI customization, styling, theming options available in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control.
+This section explains different UI customization, styling, theming options available in [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control.
 
 ## Setting the Foreground
 
