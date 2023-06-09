@@ -37,7 +37,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression) property.
 * `AddNewRow` is not support when filtering is enabled.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) is not supported.
+* [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) is not supported.
 * Custom sorting is not supported.
 * Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan) values is not supported.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) is not supported.
@@ -58,7 +58,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 ## Binding Complex properties
 
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
+SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,7 +80,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 
 ## Binding Indexer properties
 
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
+SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,16 +125,16 @@ For example, when you set [SourceType](https://help.syncfusion.com/cr/wpf/Syncfu
 ### ItemsSourceChanged
 
 [SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the data source is changed by using ItemsSource property.
-This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
+This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
 
-The [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)object contains the following properties:
+The [GridItemsSourceChangedEventArgs ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)object contains the following properties:
 
 * [OldItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridItemsSourceChangedEventArgs_OldItemsSource) - Gets the value of old data source
 * [NewItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridItemsSourceChangedEventArgs_NewItemsSource) - Get the value of new data source
 
 ## View
 
-WPF DataGrid has the View property of type [ICollectionViewAdv](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
+WPF DataGrid has the View property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. 
 
 When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. 
 
@@ -408,7 +408,7 @@ Now, run the application and you can see the SfDataGrid control loaded with data
  
 ## Binding data from ADO.NET Entity Framework
 
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
+SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
 
 To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
