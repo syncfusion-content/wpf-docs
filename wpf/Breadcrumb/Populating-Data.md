@@ -31,7 +31,7 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml %
 
 <syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"   VerticalAlignment="Top" Height="30" Width="600">
 <syncfusion:HierarchyNavigator.Items>
@@ -84,7 +84,7 @@ hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem114);
 hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
 hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
-{% endhighlight %}
+{% endhighlight %
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
