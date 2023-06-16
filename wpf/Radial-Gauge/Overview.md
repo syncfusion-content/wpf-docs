@@ -42,6 +42,6 @@ The [`Pointers`](https://help.syncfusion.com/wpf/radial-gauge/pointers) are elem
 
 The [`Header`](https://help.syncfusion.com/wpf/radial-gauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
 
-![Circular Gauge - Overview](Overview_images/Overview_img1.jpeg)
+![Circular Gauge - Overview](overview_images/wpf-radial-gauge-overview.jpeg)
 
 

@@ -18,7 +18,7 @@ You can add gauge reference using one of the following methods:
 
 Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
-![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
+![Adding gauge reference from NuGet in WPF Radial Gauge](getting-started_images/wpf-radial-gauge-adding-gauge-reference.png)
 
 **Method 2: Adding gauge reference from toolbox**
 
@@ -481,7 +481,7 @@ The following code example is the complete code of the previous configurations.
 
 The following screenshot illustrates the result of the previous codes.
 
-![Getting started image](Getting-Started_images/Getting_Started_img1.png)
+![Getting started image in WPF Radial Gauge](getting-started_images/wpf-radial-gauge-getting-started.png)
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).
 
@@ -493,7 +493,7 @@ SfCircularGauge supports various built-in themes. Refer to the below links to ap
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfCircularGauge](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF SfCircularGauge](getting-started_images/wpf-radial-gauge-setting-theme.png)
 
 ## See also
 
