@@ -32,7 +32,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfRating](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRating.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
-![Adding control via designer](Getting-Started-images/Getting-Started-img1.png)
+![Adding Control via Designer in WPF Rating](getting-started-images/wpf-rating-add-control-designer.png)
 
 ## Adding control manually in XAML
 
@@ -210,4 +210,4 @@ SfRating supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfRating](Getting-Started-images/Theme.png)
+  ![Setting Theme in WPF Rating](getting-started-images/wpf-rating-setting-theme.png)

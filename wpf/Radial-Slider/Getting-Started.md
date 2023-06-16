@@ -13,7 +13,7 @@ This section explains how to create a WPF [SfRadialSlider](https://help.syncfusi
 
 ## Structure of SfRadialSlider
 
-![Structure of WPF SfRadialSlider](GettingStarted_images/Getting-Started_img1.png)
+![Structure in WPF Radial Slider](getting-started_images/wpf-radial-slider-structure.png)
 
 ## Assembly deployment
 
@@ -28,7 +28,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
     * Syncfusion.SfRadialMenu.WPF 
     * Syncfusion.SfShared.WPF
 
-![wpf SfRadialSlider control added by designer](GettingStarted_images/wpf-SfRadialSlider-control-added-by-designer.png)
+![Control Added by Designer in WPF Radial Slider](getting-started_images/wpf-radial-slider-control-added-by-designer.png)
 
 2. Set the properties for `SfRadialSlider` in design mode using the SmartTag feature.
 
@@ -113,7 +113,7 @@ radialSlider.Width = 200;
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![wpf SfRadialSlider control added by code-behind](GettingStarted_images/Codebehind_SfRadialSlider.png)
+![Control Added by Code-behind in WPF Radial Slider](getting-started_images/wpf-radial-slider-code-behind.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Getting-Started)
 
@@ -121,7 +121,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-
 
 You can select any tick value by dragging the pointer along the circular track or clicking on the corresponding track value. You can get the selected value by using the `Value` property. The default value of `Value` property is `0`.
 
-![Selecting a value by clicking and draging](GettingStarted_images/SelectValue.gif)
+![Selecting a Value by Clicking and Draging in WPF Radial Slider](getting-started_images/wpf-radial-slider-drag-select-value.gif)
 
 ### Select tick value programmatically
 
@@ -141,7 +141,7 @@ radialSlider.Value = 34;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider selecting a value programmatically](GettingStarted_images/SelectedValue.png)
+![Selecting a Value Programmatically in WPF Radial Slider](getting-started_images/wpf-radial-slider-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -183,7 +183,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider displays the selected value](GettingStarted_images/DisplaySelectedValue.png)
+![Displays the Selected Value in WPF Radial Slider](getting-started_images/wpf-radial-slider-display-selected-value.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -207,7 +207,7 @@ radialSlider.Maximum = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider with changed minimum and maximum values](GettingStarted_images/min-max.png)
+![Changed Minimum and Maximum Values in WPF Radial Slider](getting-started_images/wpf-radial-slider-min-max-values.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -231,7 +231,7 @@ radialSlider.EndAngle = 300;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks start and end position changed](GettingStarted_images/Start-EndAngle.png)
+![Ticks Start and End Position Changed in WPF Radial Slider](getting-started_images/wpf-radial-slider-start-end-angle.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -253,7 +253,7 @@ radialSlider.TickFrequency = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks display interval changed to 20](GettingStarted_images/TickFrequency.png)
+![Ticks Display Interval Changed in WPF Radial Slider](getting-started_images/wpf-radial-slider-tick-frequency.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -275,7 +275,7 @@ radialSlider.SmallChange = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider value selection interval changed](GettingStarted_images/SmallChange.gif)
+![Value selection Interval Changed in WPF Radial Slider](getting-started_images/wpf-radial-slider-value-selection.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -299,7 +299,7 @@ radialSlider.OuterRimRadiusFactor = 0.8;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider inner and outer rim radius changed](GettingStarted_images/Radius.png)
+![Inner and Outer Radius Changed in WPF Radial Slider](getting-started_images/wpf-radial-slider-inner-outer-radius.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -323,7 +323,7 @@ radialSlider.SweepDirection = SweepDirection.Counterclockwise;
 {% endhighlight %}
 {% endtabs %}
 
-![SfRadialSlider ticks displayed in counter-clockwise](GettingStarted_images/SweepDirection.png)
+![Sweep Direction in WPF Radial Slider](getting-started_images/wpf-radial-slider-sweep-direction.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/RadialSlider-Features)
 
@@ -378,7 +378,7 @@ private void sfRadialSlider_DrawLabel(object sender, DrawLabelEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-![Change tick label text formatting](Ticks_images/LabelEdit.gif)
+![Change Tick Label Text Formatting in WPF Radial Slider](ticks_images/wpf-radial-slider-label-edit.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Label-Formatting)
 
@@ -423,4 +423,4 @@ SfRadialSlider supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfRadialSlider](GettingStarted_images/Theme.png)
+  ![Setting theme in WPF Radial Slider](getting-started_images/wpf-radial-slider-theme-setting.png)
