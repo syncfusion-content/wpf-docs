@@ -114,7 +114,7 @@ Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
 ### Adding control via Designer
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![Dragging WPF DataGrid Control from Toolbox to Designer](Getting-Started_images/wpf-datagrid-toolbox.png)
+    ![Dragging WPF DataGrid Control from Toolbox to Designer](getting-started_images/wpf-datagrid-toolbox.png)
 
 ### Adding control manually in XAML
 
@@ -314,7 +314,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![WPF DataGrid](Getting-Started_images/WPF-DataGrid.png)
+![WPF DataGrid](getting-started_images/wpf-datagrid-output.png)
 
 ## Defining Columns
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
@@ -555,7 +555,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Sorting](Getting-Started_images/WPF-DataGrid-Sorting.png)
+![WPF DataGrid Sorting](getting-started_images/wpf-datagrid-sorting.png)
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -587,13 +587,13 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Grouping](Getting-Started_images/WPF-DataGrid-Grouping.png)
+![WPF DataGrid Grouping](getting-started_images/wpf-datagrid-grouping.png)
 
 ### Filtering
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true` , where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
 
-![WPF DataGrid Filtering](Getting-Started_images/wpf-datagrid-filter.png)
+![WPF DataGrid Filtering](getting-started_images/wpf-datagrid-filter.png)
 
 
 ## Editing
@@ -612,4 +612,4 @@ SfDataGrid supports various built-in themes. Refer to the below links to apply t
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Applying Theme to WPF DataGrid](Getting-Started_images/wpf-datagrid-theme.png)
+  ![Applying Theme to WPF DataGrid](getting-started_images/wpf-datagrid-theme.png)

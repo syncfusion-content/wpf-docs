@@ -27,7 +27,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Printing in WPF DataGrid](Printing_images/wpf-datagrid-printing.png)
+![Printing in WPF DataGrid](printing_images/wpf-datagrid-printing.png)
 
 ## Print Settings
 
@@ -45,11 +45,11 @@ dataGrid.Print();
 
 Print preview window has Print and Quick Print Buttons which needs to be clicked to print the SfDataGrid.
 
-![WPF DataGrid displays Print and Quick Print Buttons in Print Preview Window](Printing_images/wpf-datagrid-printing-buttons.png)
+![WPF DataGrid displays Print and Quick Print Buttons in Print Preview Window](printing_images/wpf-datagrid-buttons.png)
 
 1. Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-    ![WPF DataGrid displays System Print Dialog for Printing](Printing_images/wpf-datagrid-system-print-dialog.png)
+    ![WPF DataGrid displays System Print Dialog for Printing](printing_images/wpf-datagrid-system-print-dialog.png)
 
 2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
@@ -67,7 +67,7 @@ dataGrid.ShowPrintPreview();
 
 Scaling options can be changed in print preview at runtime by selecting from scaling options drop-down in print preview. 
 
-![WPF DataGrid displays Print Scaling Options](Printing_images/wpf-datagrid-print-scaling-option.png)
+![WPF DataGrid displays Print Scaling Options](printing_images/wpf-datagrid-print-scaling-option.png)
 
 ### Column Header on each page
 
@@ -103,7 +103,7 @@ this.sfDataGrid.PrintSettings.CanPrintStackedHeaders = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Printing with Stacked Headers](Printing_images/wpf-datagrid-printing-with-stacked-headers.png)
+![WPF DataGrid displays Printing with Stacked Headers](printing_images/wpf-datagrid-stacked-headers.png)
 
 ## Page Settings
 
@@ -123,7 +123,7 @@ dataGrid.ShowPrintPreview();
 
 Print orientation can be changed in print preview at runtime by selecting from orientation drop-down in print preview.
 
-![WPF DataGrid displays Page Orientation Options in Print Preview](Printing_images/wpf-datagrid-print-page-orientation.png)
+![WPF DataGrid displays Page Orientation Options in Print Preview](printing_images/wpf-datagrid-print-page-orientation.png)
 
 ### Page size
 
@@ -140,7 +140,7 @@ dataGrid.Print();
 
 Page size can be changed in print preview also by selecting from page-size drop-down which displays pre-defined page sizes. You can also manually enter custom page width and height in the editors below page-size drop-down and press OK to apply the custom width and height for the page.
 
-![WPF DataGrid displays Page Size Options in Print Preview](Printing_images/wpf-datagrid-page-size-option.png)
+![WPF DataGrid displays Page Size Options in Print Preview](printing_images/wpf-datagrid-page-size-option.png)
 
 ### Page margin
 
@@ -156,7 +156,7 @@ dataGrid.Print();
 
 Page margin can be changed in print preview also by selecting from pre-defined page margin from margin drop-down. You can manually enter custom margins in the editors below margin drop-down and press OK to apply the custom margin.
 
-![WPF DataGrid displays Page Margin Options in Print Preview](Printing_images/wpf-datagrid-page-margin-option.png)
+![WPF DataGrid displays Page Margin Options in Print Preview](printing_images/wpf-datagrid-page-margin-option.png)
 
 ## Setting Header and Footer
 
@@ -201,7 +201,7 @@ dataGrid.ShowPrintPreview();
 
 3. Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageFooterTemplate) also.
 
-![Customizing Header Height in Print Preview for WPF DataGrid](Printing_images/wpf-datagrid-height-customization.png)
+![Customizing Header Height in Print Preview for WPF DataGrid](printing_images/wpf-datagrid-height-customization.png)
 
 
 N> [PrintManagerBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the `DataContext` for [PrintPageControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the header and footer templates are loaded.
@@ -246,7 +246,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Current DateTime in Printing](Printing_images/wpf-datagrid-datetime-in-printing.png)
+![WPF DataGrid displays Current DateTime in Printing](printing_images/wpf-datagrid-datetime.png)
 
 ## Different modes of printing for better performance
 
@@ -285,7 +285,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Style in Printing of WPF DataGrid](Printing_images/wpf-datagrid-printing-with-style.png)
+![Customizing Style in Printing of WPF DataGrid](printing_images/wpf-datagrid-style.png)
 
 #### Applying custom style
 
@@ -374,7 +374,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Custom Style while Printing](Printing_images/wpf-datagrid-custom-style-in-printing.png)
+![WPF DataGrid with Custom Style while Printing](printing_images/wpf-datagrid-custom-style.png)
 
 ## Printing Customization
  
@@ -417,7 +417,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Height while Printing in WPF DataGrid](Printing_images/wpf-datagrid-row-height-customization.png)
+![Customizing Row Height while Printing in WPF DataGrid](printing_images/wpf-datagrid-row-height-customization.png)
 
 ### Hiding rows while printing
      
@@ -488,7 +488,7 @@ dataGrid.ShowPrintPreview();
 
 Here, `CustomerName` column is displayed in grid. But it is excluded while printing.
 
-![WPF DataGrid Printing with Hidden Column](Printing_images/wpf-datagrid-hidden-column.png)
+![WPF DataGrid Printing with Hidden Column](printing_images/wpf-datagrid-hidden-column.png)
 
 ### Customize the header text while printing
 
@@ -526,7 +526,7 @@ dataGrid.ShowPrintPreview();
 
 Here, OrderID column Header text is changed as `Order ID` while printing.
 
-![Customizing Column Header Text while Printing in WPF DataGrid](Printing_images/wpf-datagrid-header-text-customization.png)
+![Customizing Column Header Text while Printing in WPF DataGrid](printing_images/wpf-datagrid-header-text-customization.png)
 
 ### Styling Rows when AllowPrintByDrawing enabled
 
@@ -572,7 +572,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-row-style-customization.png)
+![Customizing Row Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-row-style-customization.png)
 
 ### Styling Rows when AllowPrintByDrawing disabled
 
@@ -616,7 +616,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![Customizing Row Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-printing-with-row-style.png)
+![Customizing Row Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-row-style.png)
 
 <table>
 <tr>
@@ -715,7 +715,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![Changing Alternate Row Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-alternate-row-style.png)
+![Changing Alternate Row Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-alternate-row-style.png)
 
 ### Setup alternate row style when AllowPrintByDrawing disabled
 
@@ -754,7 +754,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![Changing Alternate Row Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-with-alternate-row-style.png)
+![Changing Alternate Row Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-with-alternate-row-style.png)
 
 ### Styling Columns when AllowPrintByDrawing enabled
 
@@ -803,7 +803,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![Changing Column Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-printing-with-column-style.png)
+![Changing Column Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-column-style.png)
 
 Here, OrderID column Font Style and Background are changed.
 
@@ -843,7 +843,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![Changing Column Style while Printing in WPF DataGrid](Printing_images/wpf-datagrid-column-style.png)
+![Changing Column Style while Printing in WPF DataGrid](printing_images/wpf-datagrid-column-style.png)
 
 
 N> [GetColumnWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnWidth_System_String_) , [GetColumnTextWrapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnTextWrapping_System_String_), [GetColumnTextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnTextAlignment_System_String_) and [GetColumnPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnPadding_System_String_) methods are also used for column customization while printing.
@@ -898,7 +898,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![Printing Selected Rows in WPF DataGrid](Printing_images/wpf-datagrid-print-selected-rows.png)
+![Printing Selected Rows in WPF DataGrid](printing_images/wpf-datagrid-print-selected-rows.png)
 
 
 ## Creating custom PrintPreview window
@@ -969,6 +969,6 @@ this.PrintPreviewArea.PrintManagerBase.Print();
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![Custom Print Preview Window in WPF DataGrid](Printing_images/wpf-datagrid-custom-print-preview-window.png)
+![Custom Print Preview Window in WPF DataGrid](printing_images/wpf-datagrid-custom-print-preview-window.png)
 
 You can get the sample for custom print preview [here](https://www.syncfusion.com/downloads/support/directtrac/general/CUSTOM~1272396097.ZIP).
