@@ -17,7 +17,7 @@ Research scholars, IT companies or any organization that following work breakdow
 
 
 
-![Gantt - Overview](Overview_images/Overview_img1.png)
+![WPF Gantt Overview Real World Scenario](overview_images/wpf-gantt-real-world-scenario.png)
 
 
 
