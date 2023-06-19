@@ -30,7 +30,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
-![WPF Docking Add via Designer](GettingStarted_images/wpf-docking-add-via-designer.png)
+![WPF Docking Add via Designer](getting-started_images/wpf-docking-add-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
@@ -130,7 +130,7 @@ namespace DockingManager_Sample
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WPF Docking in Visual Studio](Getting-Started_images/wpf-docking-in-visual-studio.jpeg)
+![WPF Docking in Visual Studio](getting-started_images/wpf-docking-in-visual-studio.jpeg)
 
 ## Set Header for each child window
 
@@ -174,7 +174,7 @@ DockingManager.SetHeader(StartPage, "StartPage");
 
 {% endtabs %}
 
-![WPF Docking Child Window Header](Getting-Started_images/wpf-docking-child-window-header.jpeg)
+![WPF Docking Child Window Header](getting-started_images/wpf-docking-child-window-header.jpeg)
 
 ## Set States for each child window
 
@@ -235,7 +235,7 @@ DockingManager.SetState(StartPage, DockState.Document);
 
 {% endtabs %}
 
-![WPF Docking Child Window States](Getting-Started_images/wpf-docking-child-window-states.jpeg)
+![WPF Docking Child Window States](getting-started_images/wpf-docking-child-window-states.jpeg)
 
 
 ## Set Sides for children
@@ -277,7 +277,7 @@ DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 {% endtabs %}
 
-![WPF Docking Child Window Sides](Getting-Started_images/wpf-docking-child-window-sides.jpeg)
+![WPF Docking Child Window Sides](getting-started_images/wpf-docking-child-window-sides.jpeg)
 
 ## Save / Load the layout 
 
@@ -398,7 +398,7 @@ SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 {% endcapture %}
 {{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
-![WPF Docking Visual Styles](Getting-Started_images/wpf-docking-visual-styles.jpeg)
+![WPF Docking Visual Styles](getting-started_images/wpf-docking-visual-styles.jpeg)
 
 ## ToolTip for child window
 
@@ -426,7 +426,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 {% endtabs %}
 
-![WPF Docking Child Window ToolTip](Getting-Started_images/wpf-docking-child-window-tooltip.png)
+![WPF Docking Child Window ToolTip](getting-started_images/wpf-docking-child-window-tooltip.png)
 
 
 ## Theme
@@ -437,4 +437,4 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Docking Theme](Getting-Started_images/wpf-docking-theme.png)
+  ![WPF Docking Theme](getting-started_images/wpf-docking-theme.png)
