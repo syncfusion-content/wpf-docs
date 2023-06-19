@@ -13,7 +13,7 @@ This section describes how to create a [CardView](https://help.syncfusion.com/cr
 
 ## Structure of CardView control
 
-![Structure of WPF CardView Control](Getting-Started_images/Structure.png)
+![Structure of WPF Card View Control](getting-started_images/wpf-card-view-structure.png)
 
 ## Assembly deployment
 
@@ -27,7 +27,7 @@ Refer to the [NuGet Packages Documentation](https://help.syncfusion.com/wpf/visu
 	* Syncfusion.Shared.WPF
 	* Syncfusion.Tools.WPF
 
-![wpf card view control added by designer](Getting-Started_images/wpf-card-view-control-added-by-designer.png)
+![WPF Card View control added by designer](getting-started_images/wpf-card-view-added-by-designer.png)
 
 2. Set the properties for `CardView` control in design mode using the SmartTag feature.
 
@@ -114,7 +114,7 @@ namespace CardViewSample
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![wpf card view control added manually](Getting-Started_images/wpf-card-view-control-added-manually.png)
+![WPF Card View control added manually](getting-started_images/wpf-card-view-added-manually.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
 
@@ -164,7 +164,7 @@ cardView.Items.Add(cardViewItem3);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items added into CardView control](Getting-Started_images/wpf-card-view-item.png)
+![WPF Card View items](getting-started_images/wpf-card-view-items.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
 
@@ -236,7 +236,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items added into CardView control using data binding](Data-Binding-to-Objects_images/databinding.png)
+![WPF Card View items added using data binding](data-binding-to-objects_images/wpf-card-view-items-added-using-data-binding.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/PopulateItems)
 
@@ -288,7 +288,7 @@ cardView.Items.Add(cardViewItem3);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items selected using mouse click](Getting-Started_images/selectitem.png)
+![WPF Card View items selected using mouse click](getting-started_images/wpf-card-view-select-item.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
 
@@ -340,7 +340,7 @@ cardView.Items.Add(cardViewItem3);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view item selected programmatically](Getting-Started_images/selectitem_programmatically.png)
+![WPF Card View item selected programmatically](getting-started_images/wpf-card-view-select-item-programmatically.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
 
@@ -450,7 +450,7 @@ cardView.CanGroup = true;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items grouped based on age field](Grouping-Sorting-Filtering_images/grouping.gif)
+![WPF Card View items grouped based on age field](grouping-sorting-filtering_images/wpf-card-view-grouping-items.gif)
 
 Here, `CardViewItems` grouped based on `Age` field.
 
@@ -475,7 +475,7 @@ cardView.CanSort = true;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items sorted in ascending and descending order](Grouping-Sorting-Filtering_images/sorting.gif)
+![WPF Card View items sorted in ascending and descending order](grouping-sorting-filtering_images/wpf-card-view-sorting-items.gif)
 
 Here, `CardViewItems` sorted based on `FirstName` field.
 
@@ -546,7 +546,7 @@ cardView.CanEdit = true;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items edited by keyboard and mouse interaction](Grouping-Sorting-Filtering_images/editing.gif)
+![WPF Card View editting items](grouping-sorting-filtering_images/wpf-card-view-editing-items.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
@@ -571,7 +571,7 @@ cardView.Orientation = Orientation.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf card view items arranged in horizontal orientation](Getting-Started_images/orientation.png)
+![WPF Card View items arranged in horizontal orientation](getting-started_images/wpf-card-view-items-arranged-horizontal-orientation.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
 
@@ -619,4 +619,4 @@ CardView supports various built-in themes. Refer to the below links to apply the
   
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Themes)
 
-  ![Setting theme to WPF CardView](Getting-Started_images/wpf-card-view-theme-support.png)
+  ![Setting theme support to WPF Card View](getting-started_images/wpf-card-view-setting-theme-support.png)

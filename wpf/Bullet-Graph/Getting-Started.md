@@ -19,25 +19,25 @@ Follow these steps to add `SfBulletGraph` Control using the Syncfusion Reference
 
 Create a simple WPF application using Visual Studio.
 
-![Create new WPF Project in Visual Studio](Getting-Started_images/Getting-Started_img1.jpeg)
+![WPF Bullet Graph creates new project in Visual Studio](getting-started_images/wpf-bullet-graph-creates-new-project.jpeg)
 
 Right Click on the Project and select Syncfusion Reference Manager.
 
-![selecting Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img2.jpeg)
+![Selecting reference manager in WPF Bullet Graph](getting-started_images/wpf-bullet-graph-selecting-reference-manager.jpeg)
 
 The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
-![Opening Syncfusion Reference Manager Wizard](Getting-Started_images/Getting-Started_img3.jpeg)
+![Opening reference manager wizard in WPF Bullet Graph](getting-started_images/wpf-bullet-graph-selecting-reference-manager-wizard.jpeg)
 
 Search for `SfBulletGraph` using SearchBox and select the `SfBulletGraph` Control. Click `Done` to add selected SfBulletGraph control.
 
-![Selecting SfBulletGraph Control in Syncfusion Reference Manager](Getting-Started_images/Getting-Started_img4.jpeg)
+![Selection in WPF Bullet Graph](getting-started_images/wpf-bullet-graph-selection.jpeg)
 
 The `SfBulletGraph` assemblies will be automatically added to the project after clicking `OK`.
 
-![Adding SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img5.jpeg)
+![Adding Bullet Graph assemblies in WPF application](getting-started_images/wpf-bullet-graph-add-assemblies.jpeg)
 
-![Added SfBulletGraph assemblies in WPF application](Getting-Started_images/Getting-Started_img6.jpeg)
+![Assemblies added to the project in WPF application](getting-started_images/wpf-bullet-graph-add-assemblies-to-the-project.jpeg)
 
 Create a namespace reference to the SfBulletGraph control using Syncfusion’s global namespace reference **schemas.Syncfusion.com** or the SfBulletGraph control’s namespace reference using **Syncfusion.UI.Xaml.BulletGraph** available in the **Syncfusion.SfBulletGraph.WPF** assembly.
 
@@ -115,7 +115,7 @@ Create a namespace reference to the SfBulletGraph control using Syncfusion’s g
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying SfBulletGraph control](Getting-Started_images/Getting-Started_img7.jpg)
+![Displaying Bullet Graph control in WPF application](getting-started_images/wpf-bullet-graph-displaying.jpg)
 
 As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
 
@@ -155,7 +155,7 @@ You can assign a caption to bullet graph by making use of [`Caption`](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![Adding Caption to SfBulletGraph control](Caption_images/CaptionPosition.png)
+![Adding caption position in WPF Bullet Graph control](caption_images/wpf-bullet-graph-caption-position.png)
 
 ## Configuring Ticks and Labels 
 
@@ -223,7 +223,7 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![Configuring Ticks and Labels](Getting-Started_images/Getting-Started_img9.jpg)
+![Configuring ticks and labels in WPF Bullet Graph](getting-started_images/wpf-bullet-graph-configuring-ticks-and-labels.jpg)
 
 
 ## Adding Ranges 
@@ -295,7 +295,7 @@ SfBulletGraph ranges are displayed as follows.
 
 You can get the complete getting started sample [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/BulletGraphDemo-1174716111).
 
-![Adding Ranges to SfBulletGraph control](Getting-Started_images/Getting-Started_img10.jpg)
+![Adding Ranges in WPF Bullet Graph](getting-started_images/wpf-bullet-graph-add-range.jpg)
 
 ## Theme
 
@@ -305,4 +305,4 @@ Bullet Graph supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Bullet Graph](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF Bullet Graph](getting-started_images/wpf-bullet-graph-theme.png)
