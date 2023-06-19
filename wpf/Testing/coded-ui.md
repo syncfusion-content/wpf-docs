@@ -100,7 +100,7 @@ CUIT contains the Coded UI test project. When application does not contain 
 
 Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition does not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
-![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
+![WPF Coded UI create project](codedui_images/wpf-codedui-create-project.jpeg)
 
 ### Adding Coded UI Test file
 
@@ -108,19 +108,19 @@ To add the CUIT file, follow the steps:
 
 1.Create the CUIT project, the CUIT file will be automatically generated. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
 
-![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
+![WPF Coded UI adding test file](codedui_images/wpf-codedui-add-test-file.jpeg)
 
 2.`Generate Code for Coded UI Test` dialog box will be shown after selecting the Coded UI test file. Choose `Record` to record the test actions.
 
-![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
+![WPF Coded UI showing Record option](codedui_images/wpf-codedui-record-option.jpeg)
 
 3.Then, right-click the body of the Coded UI Test file. 
 
-![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
+![WPF Coded UI showing test file content](codedui_images/wpf-codedui-test-file-content.png)
 
 4.Choose `Coded UI Test Builder` (UI Map) at the bottom right side of the window.
 
-![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
+![WPF Coded UI showing UI Map](codedui_images/wpf-codedui-map.jpeg)
 
 5.Start the recording option from UI Map to record the test actions and recording option can be paused when testing the project.
 
@@ -130,7 +130,7 @@ To add the CUIT file, follow the steps:
 
 8.The actions made on UI elements can be recorded by clicking `Record` on the `Coded UI Test builder`. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
 
-![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
+![WPF Coded UI showing pause option](codedui_images/wpf-codedui-pause-option.jpeg)
 
 9. Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
 
@@ -152,7 +152,7 @@ public void RecordedMethod1()
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 10.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in `Coded UI Test Builder`.
-![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
+![WPF Coded UI showing Add Assertion](codedui_images/wpf-codedui-add-assertion.jpeg)
 
 ### Testing recorded steps
 
@@ -192,7 +192,7 @@ End Sub
 
 3.Right-click the body of the `CodedUITestMethod` and select `Run Tests`.
 
-![WPF Coded UI showing Run Tests](CodedUI_images/CodedUI_RunTests.png)
+![WPF Coded UI showing Run Tests](codedui_images/wpf-codedui-run-test.png)
 
 4.Before running tests, ensure that the test application is launched and the initial states of controls are same as at the beginning of the test recording.
 

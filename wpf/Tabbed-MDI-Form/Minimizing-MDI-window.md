@@ -25,7 +25,7 @@ You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)
+![Minimizing MDI window in WPF Document Container](minimizing-mdi-window_images/wpf-document-container-minimizing-window.jpeg)
 
 ## Restrict Minimizing the MDI window
 
@@ -45,5 +45,5 @@ You can restrict minimizing the `MDI` window by setting the `CanMDIMinimize` pro
 {% endhighlight %}
 {% endtabs %}
 
-![Restrict the Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Restrict_Minimizing.png)
+![Restrict the Minimizing MDI window in Document Container](minimizing-mdi-window_images/wpf-document-container-restrict-minimizing.png)
 
