@@ -13,11 +13,11 @@ This section explains how to create a [WPF GridSplitter](https://www.syncfusion.
 
 ## Structure of SfGridSplitter
 
-![WPF SfGridSplitter Control](Getting-Started-images/Grid-Splitter.png)
+![WPF SfGridSplitter Control](getting-started-images/wpf-grid-splitter-structure.png)
 
 ## Visual representation 
 
-![Getting started with SfGridSplitter](Positioning-GridSplitter-images/Getting_started1.gif)
+![WPF SfGridSplitter Visual representation](positioning-gridsplitter-images/wpf-grid-splitter-visual-representation.gif)
 
 ## Assembly deployment
 
@@ -93,7 +93,7 @@ namespace SfGridSplitterSample {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfGridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
+![WPF SfGridSplitter control added by code](getting-started-images/wpf-grid-splitter-added-by-code.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
@@ -140,7 +140,7 @@ If we want to resize the specific grid rows, place the `SfGridSplitter` on next 
 {% endhighlight %}
 {% endtabs %}
 
-![Resize the grid rows using SfGridSplitter](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
+![Resize the grid rows using SfGridSplitter](positioning-gridsplitter-images/wpf-grid-horizontal-splitter.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
@@ -187,7 +187,7 @@ If we want to resize the specific grid columns, place the `SfGridSplitter` on ne
 {% endhighlight %}
 {% endtabs %}
 
-![Resize the grid columns using SfGridSplitter](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
+![Resize the grid columns using SfGridSplitter](positioning-gridsplitter-images/wpf-grid-vertical-splitter.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -238,7 +238,7 @@ If we want to resize the rows or columns of grid with particular pixel interval,
 {% endtabs %}
 
 
-![Resizing the grid rows and colums with specific pixel](Positioning-GridSplitter-images/Move-Interval.gif)
+![Resizing the grid rows and colums with specific pixel](positioning-gridsplitter-images/wpf-grid-splitter-move-interval.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -336,7 +336,7 @@ We can collapse or expands the element in either side of the splitter by clickin
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the grid row and columns](Positioning-GridSplitter-images/EnableCollapseButton.gif)
+![Show or hide the grid row and columns](positioning-gridsplitter-images/wpf-grid-splitter-enablecollapsebutton.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -434,7 +434,7 @@ N> You can see the effect of collapse button templates only on when `EnableColla
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
+![SfGridSplitter with expand or collapse button template](positioning-gridsplitter-images/wpf-grid-splitter-collapsebuttontemplate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
@@ -535,7 +535,7 @@ If you you want to change the UI of vertical and horizontal splitter gripper sep
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with custom gripper](Positioning-GridSplitter-images/Gripper.png)
+![SfGridSplitter with custom gripper](positioning-gridsplitter-images/wpf-grid-splitter-gripper.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Custom-Gripper)
 
@@ -581,7 +581,7 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
+![SfGridSplitter with deferred resizing](positioning-gridsplitter-images/wpf-grid-splitter-showspreview.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -643,7 +643,7 @@ If we want resize the merged columns or rows, place the grid splitter on next or
 {% endhighlight %}
 {% endtabs %}
 
-![Grid splitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
+![Grid splitter for the merged columns or rows](positioning-gridsplitter-images/wpf-grid-splitter-columspan.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -655,4 +655,4 @@ SfGridSplitter supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfGridSplitter](Getting-Started-images/WPF-Grid-Splitter-theme-support.png)
+  ![Setting theme to WPF SfGridSplitter](getting-started-images/wpf-grid-splitter-theme-support.png)

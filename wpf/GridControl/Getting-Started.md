@@ -35,15 +35,15 @@ Please follow the steps below to add the Grid control through a designer.
 
 3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the Grid control doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
 
-   ![WPF Designer](Getting-Started_images/Getting-Started_img6.png)
+   ![WPF Grid Designer](getting-started_images/wpf-grid-designer.png)
 
 4. Drag GridControl from the Toolbox and drop it inside the ScrollViewer.
 
-   ![WPF Grid Control](Getting-Started_images/Getting-Started_img7.png)
+   ![WPF Grid Control](getting-started_images/wpf-grid-control.png)
 
 5. Once you drag GridControl and drop it in ScrollViewer, the grid control will be added to the designer and its dependent assemblies will be added to the project.
 
-   ![Designer after Dropping GridControl](Getting-Started_images/Getting-Started_img8.png)
+   ![WPF Grid Designer after Dropping GridControl](getting-started_images/wpf-designer-after-dropping-grid-control.png)
 
 ### Programmatically Adding the Grid Control
 
@@ -57,7 +57,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
    * Syncfusion.GridCommon.Wpf.dll
    * Syncfusion.Shared.Wpf.dll
 
-    ![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
+    ![WPF Grid Control Assembly References](getting-started_images/wpf-grid-assembly-references.png)
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
 
@@ -146,7 +146,7 @@ void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Gri
 
 3.Now, run the application. The grid will appear as follows. 
 
-![WPF Grid Control](Getting-Started_images/Getting-Started_img10.png)
+![WPF Grid Control](getting-started_images/wpf-grid-application.png)
 
    
 

@@ -52,7 +52,7 @@ The Grid control is a cell-based, data-representation control. It can load milli
 
 Because the Grid control is cell based, it doesn’t have any internal data structures, so it cannot store data internally. Data can be populated by either looping through the cells or by a virtual mode, which dynamically provides data to the grid by handling an event. In virtual mode, the Grid control can display millions of rows easily. 
 
-![Loading data in virtual mode](Overview_images/Overview_img4.png)
+![WPF Grid Loading data in virtual mode](overview_images/wpf-grid-loading-data-in-virtual-mode.png)
 
 Virtual Grid
 {:.caption}
@@ -61,13 +61,13 @@ Virtual Grid
 
 The Grid control supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
 
-![Various Cell Types of the Grid Control](Overview_images/Overview_img5.png)
+![WPF Various Cell Types of the Grid Control](overview_images/wpf-grid-data-presentation.png)
 
 #### Appearance
 
 The Grid control’s appearance can be customized very easily. Common style properties include options to change background or text color, font, alignment, orientation, border, and wrap text. Various cell formats include date-time, currency, numeric, and text formats, and Excel-like comments are supported.
 
-![Common customization of grid cells](Overview_images/Overview_img6.png)
+![Common customization of grid cells](overview_images/wpf-grid-appearance.png)
 
 #### Customization Possibilities of the Grid Control
 
@@ -87,7 +87,7 @@ The Grid control’s appearance can be customized very easily. Common style prop
 * CTRL+X, CTRL+V, CTRL+C, INSERT & DELETE – For common clipboard operations.
 * Cell Selection – The Grid control also supports Excel-like cell selection.
 
-![Excel Features of the Grid Control](Overview_images/Overview_img7.png)
+![Excel Features of the Grid Control](overview_images/wpf-grid-excel-features.png)
 
 #### Excel Compatibility
 
