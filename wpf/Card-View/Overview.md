@@ -13,7 +13,7 @@ The WPF [CardView](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.C
 
 ## Control Structure
 
-![wpf card view control structure](getting-started_images/wpf-card-view-control-structure.png)
+![WPF Card View control structure](getting-started_images/wpf-card-view-control-structure.png)
 
 ## Key features
 

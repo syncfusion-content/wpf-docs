@@ -11,7 +11,7 @@ documentation: ug
 
 The [SfCalculator](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfCalculator.html) control allows us to perform mathematical operations as like in calculator.
 
-![Overview of WPF Calculator](overview_images/wpf-calculator-overview.png)
+![Overview of WPF Calculator](overview_images/wpf-calculator-control-overview.png)
 
 ## Key features 
 
