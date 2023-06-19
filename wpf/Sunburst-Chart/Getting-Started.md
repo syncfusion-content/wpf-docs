@@ -16,7 +16,7 @@ This section explains you the steps required to populate the sunburst chart with
 1. Open the Add Reference window from your project
 2. Choose Assemblies -> Extensions -> Syncfusion.SfSunburstChart.WPF
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/gettingstarted1.png)
+![WPF Sunburst Chart Reference Manager Dialog Windows in Visual Studio](getting-started_images/wpf-sunburst-chart-dialog-manager.png)
 
 N> This window differs for the Visual Basic project.
 
@@ -24,13 +24,13 @@ N> This window differs for the Visual Basic project.
 
 Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
-![Visual Studio Toolbox](Getting-Started_images/gettingstarted2.png)
+![WPF Sunburst Chart Visual Studio Toolbox](getting-started_images/wpf-sunburst-chart-toolbox.png)
 
 Now the Syncfusion.SfSunburstChart.WPF reference is added to the application references and the namespace code is generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted3.png)
+![WPF Sunburst Chart Project Solution reference](getting-started_images/wpf-sunburst-chart-project-solution.png)
 
-![Added namespace for SfSunburstChart control in MainWindow](Getting-Started_images/gettingstarted4.png)
+![WPF Sunburst Chart Added namespace](getting-started_images/wpf-sunburst-chart-add-namespace.png)
 
 ## Initialize view model
 
@@ -559,7 +559,7 @@ You can get the complete getting started sample [`here`](https://www.syncfusion.
 
 Following is the final output screenshot,
 
-![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted5.png)
+![WPF Sunburst Chart data label and legend](getting-started_images/wpf-sunburst-chart-data-label-legend.png)
 
 ## Theme
 
@@ -569,4 +569,4 @@ Sunburst chart supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfSunburstChart](Getting-Started_images/Theme.jpg)
+  ![Setting theme to WPF Sunburst Chart](getting-started_images/wpf-sunburst-chart-setting-theme.jpg)

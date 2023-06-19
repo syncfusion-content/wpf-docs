@@ -30,7 +30,7 @@ Create a new WPF project in the Visual Studio to display the TabNavigation with 
 
 The TabNavigation control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The required assembly references will be added automatically.
 
-![wpf tab navigation control structure](Getting-Started_images/wpf-tabnavigation-control-added-by-designer.png)
+![WPF Tab Navigation control structure](getting-started_images/wpf-tab-navigation-added-by-designer.png)
 
 ### Adding control manually in XAML
 
@@ -164,7 +164,7 @@ tabNavigation.Items.Add(item4);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation control supports data binding](Getting-Started_images/wpf-tabnavigation-items-added.png)
+![WPF Tab Navigation control supports data binding](getting-started_images/wpf-tab-navigation-items-added.png)
 
 ### Binding ItemsSource
 
@@ -219,4 +219,4 @@ TabNavigation control supports various built-in themes. Refer to the below links
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme in wpf tabnavigation control ](Getting-Started_images/wpf-tabnavigation-control-theme.png)
+  ![Setting theme in WPF Tab Navigation control Theme](getting-started_images/wpf-tab-navigation-theme.png)

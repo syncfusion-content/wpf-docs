@@ -30,7 +30,7 @@ These steps are explained below in both XAML and code behind.
 1. Open the Add Reference window in your project.
 2. Choose Windows > Extensions > Syncfusion.SfSmithChart.WPF.
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/Getting-Started_img1.png)
+![WPF Smith Chart Reference Manager Dialog Windows in Visual Studio](getting-started_images/wpf-smith-chart-reference-manager.png)
 
 3. Select the .NET Framework version with respect  to your application. The version can be identified as below:
 
@@ -71,14 +71,14 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusio
 
 Drag and drop the SfSmithChart control from the Toolbox into your application.
 
-![Visual Studio Toolbox](Getting-Started_images/Getting-Started_img2.png)
+![WPF Smith Chart Visual Studio Toolbox](getting-started_images/wpf-smith-chart-toolbox.png)
 
 Now, the Syncfusion.SfSmithChart.WPF reference has been added to the application references and the xmlns namespace code has been generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
+![Project Solution Window contains SmithChart reference in WPF](getting-started_images/wpf-smith-chart-project-solution.png)
 
 
-![Added namespace for SfSmithChart control in MainWindow](Getting-Started_images/Getting-Started_img4.png)
+![Added namespace for SfSmithChart control in MainWindow in WPF](getting-started_images/wpf-smith-chart-add-namespace.png)
 
 
 In this section, the data in the following table is used for demonstration.
@@ -292,7 +292,7 @@ To to initialize the smith chart,  use the following class Syncfusion.UI.Xaml.Sf
 
 {% endhighlight %}
 
-![SmithChart with default axes](Getting-Started_images/Getting-Started_img5.png)
+![WPF Smith Chart with default axes](getting-started_images/wpf-smith-chart-default-axes.png)
 
 
 ### Add header to smith chart
@@ -329,7 +329,7 @@ The following code example illustrates how to add and customize the resistance (
 {% endhighlight %}
 
 
-![SmithChart with header and axis customization](Getting-Started_images/Getting-Started_img6.png)
+![WPF Smith Chart with header and axis customization](getting-started_images/wpf-smith-chart-axis-customization.png)
 
 
 ### Adding series 
@@ -445,7 +445,7 @@ The following code example  illustrates the complete code for creating a smith c
     
 The following smith chart is created as the result of above codes.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![WPF Smith Chart with Line series including legend](getting-started_images/wpf-smith-chart-line-series.png)
 
 
 ## Create a simple smith chart from code behind (C#)
@@ -477,7 +477,7 @@ SfSmithChart chart = new SfSmithChart();
 
 {% endhighlight  %}
 
-![SmithChart with default axes](Getting-Started_images/Getting-Started_img5.png)
+![SmithChart with default axes](getting-started_images/Getting-Started_img5.png)
 
 ### Adding header to the smith chart
 
@@ -508,7 +508,7 @@ The following code example illustrates how to add and customize the resistance (
 
 {% endhighlight  %}
 
-![SmithChart with header and axis customization](Getting-Started_images/Getting-Started_img6.png)
+![SmithChart with header and axis customization](getting-started_images/Getting-Started_img6.png)
 
 ### Adding series
 
@@ -594,7 +594,7 @@ The following code example  illustrates the complete code for creating a smith c
 
 The following output is displayed as the result of above code example.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![SfSmithChart with Line series including legend](getting-started_images/Getting-Started_img7.png)
 
 ## Theme
 
@@ -604,4 +604,4 @@ Smith chart supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF SfSmithChart](Getting-Started_images/Theme.png)
+![Setting theme to WPF SfSmithChart](getting-started_images/wpf-smith-chart-theme.png)

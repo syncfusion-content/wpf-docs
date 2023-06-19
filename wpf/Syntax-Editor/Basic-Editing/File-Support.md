@@ -40,7 +40,7 @@ editControl.DocumentSource = @"C:\Content.txt";
 
 The following image displays the contents from file set as DocumentSource window.
 
-![Open a file in syntax editor using file path](File-Support_images/File-Support_img1.jpeg)
+![WPF Syntax Editor Open a File Using File Path](file-support_images/wpf-syntax-editor-open-file.jpeg)
 
 ### Opening through file dialog
 
@@ -58,7 +58,7 @@ editControl.LoadFile();
 
 The following image displays the file open dialog.
 
-![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
+![WPF Syntax Editor Open a File Using Open File Dialog](file-support_images/wpf-syntax-editor-open-file-dialog.jpeg)
 
 ### Dropping a file
 The `EditControl` allows users to drop a file over it, by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`. The editor will automatically switch its `DocumentLanguage` based on dropped file's extension. When dropping, if any documents is already in open, it will be closed, and the `DocumentClosing` event will occur. Here, you can control the desired action before closing.
@@ -92,7 +92,7 @@ editControl.SaveFile();
 
 The following image displays the save file dialog.
 
-![Saving changes in a file using save file dialog](File-Support_images/File-Support_img3.jpeg)
+![WPF Syntax Editor Saving Using Save File Dialog](file-support_images/wpf-syntax-editor-save-file-dialog.jpeg)
 
 ## DocumentClosing event
 By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the [DocumentClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.EditControl.html) event, which occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.

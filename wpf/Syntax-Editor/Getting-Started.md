@@ -45,7 +45,7 @@ The [EditControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Edit.Edi
 
 * Syncfusion.Tools.WPF
 
-![GettingStarted by designer](Getting-Started_images/Getting-Started_img1.jpg)
+![WPF Syntax Editor designer](getting-started_images/wpf-syntax-editor-designer.jpg)
 
 ## Adding WPF EditControl via XAML
 
@@ -150,7 +150,7 @@ public MainWindow()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Adding EditControl to Project](Getting-Started_images/Getting-Started_img3.jpeg)
+![WPF Syntax Editor Adding EditControl to Project](getting-started_images/wpf-syntax-editor-add-control-project.jpeg)
 
 ## Loading a file into document
 
@@ -290,4 +290,4 @@ SyntaxEditor supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SyntaxEditor](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF SyntaxEditor](getting-started_images/wpf-syntax-editor-theme.png)
