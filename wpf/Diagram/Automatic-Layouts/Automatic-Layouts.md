@@ -219,7 +219,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram with Hierarchical Layout](Automatic-Layouts_images/wpf-diagram-with-hierarchical-layout.png)
+![WPF Diagram with Hierarchical Layout](automatic-layouts_images/wpf-diagram-with-hierarchical-layout.png)
 
 ## Updating layout
 
@@ -269,7 +269,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram displays Spacing between Nodes](Automatic-Layouts_images/wpf-diagram-spacing.png)
+![WPF Diagram displays Spacing between Nodes](automatic-layouts_images/wpf-diagram-spacing.png)
 
 ## Customize tree orientation in layout
 
@@ -297,7 +297,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Tree Orientation in WPF Diagram](Automatic-Layouts_images/wpf-diagram-tree-orientation.png)
+![Customizing Tree Orientation in WPF Diagram](automatic-layouts_images/wpf-diagram-tree-orientation.png)
 
 >N `Orientation` is not valid for `RadialTreeLayout`.
 
@@ -321,7 +321,7 @@ diagram.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Diagram without Overlapping Segment in Tree Layout](Automatic-Layouts_images/wpf-diagram-without-overlapping-segment.png)
+![WPF Diagram without Overlapping Segment in Tree Layout](automatic-layouts_images/wpf-diagram-without-overlapping-segment.png)
 
 >N `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`.
 

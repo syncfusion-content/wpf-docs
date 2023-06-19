@@ -76,136 +76,136 @@ NodeViewModel node = new NodeViewModel()
 
 Output Node will be,
 
-![WPF Diagram Shapes](Shapes_images\wpf-diagram-shapes.PNG)
+![WPF Diagram Shapes](shapes_images\wpf-diagram-shapes.PNG)
   
 The list of shapes are available in the resource dictionary as follows
  
 | Shape Category | Shape Name | Output Shape |
 |---|---|---|
-| Basic Shapes | Rectangle | ![BasicRectangle](Shapes_images\BasicRectangle.PNG) |
-|  | Triangle| ![BasicTriangle](Shapes_images\BasicTriangle.PNG) |
-|  | Plus| ![BasicPlus](Shapes_images\BasicPlus.PNG) |
-|  | Pentagon | ![BasicPentagon](Shapes_images\BasicPentagon.PNG) |
-|  | Hexagon | ![BasicHexagon](Shapes_images\BasicHexagon.PNG) |
-|  |Heptagon | ![BasicHeptagon](Shapes_images\BasicHeptagon.PNG) |
-|  | Octagon | ![BasicOctagon](Shapes_images\BasicOctagon.PNG) |
-|  |Trapezoid | ![BasicTrapezoid](Shapes_images\BasicTrapezoid.PNG) |
-|  | Decagon|![BasicDecagon](Shapes_images\BasicDecagon.PNG) |
-|  | RightTriangle| ![BasicRightTriangle](Shapes_images\BasicRightTriangle.PNG)|
-|  | Cylinder| ![BasicCylinder](Shapes_images\BasicCylinder.PNG)|
-|  | Diamond| ![BasicDiamond](Shapes_images\BasicDiamond.PNG)|
-|  |TwoSideFlatCorner | ![BasicTwoSideFlatCorner](Shapes_images\BasicTwoSideFlatCorner.PNG)|
-|  | TwoSideRoundCorner| ![BasicTwoSideRoundCorner](Shapes_images\BasicTwoSideRoundCorner.PNG)|
-|  |RoundedRectangle | ![BasicRoundedRectangle](Shapes_images\BasicRoundedRectangle.PNG)|
-|  | Cloud | ![BasicCloud](Shapes_images\BasicCloud.PNG)|
-|  |CloudCallOut | ![BasicCloudCallOut](Shapes_images\BasicCloudCallOut.PNG)|
-|  | Paralleogram| ![BasicParalleogram](Shapes_images\BasicParalleogram.PNG)|
-|  |Frame | ![BasicFrame](Shapes_images\BasicFrame.PNG)|
-|  | Donut| ![BasicDonut](Shapes_images\BasicDonut.PNG)|
-|  |RectangleCallOut | ![BasicRectangleCallOut](Shapes_images\BasicRectangleCallOut.PNG)|
-|  |RoundedRectangleCallOut | ![BasicRoundedRectangleCallOut](Shapes_images\BasicRoundedRectangleCallOut.PNG)|
-|  | OvalCallOut| ![BasicOvalCallOut](Shapes_images\BasicOvalCallOut.PNG)|
-|  | Cube| ![BasicCube](Shapes_images\BasicCube.PNG)|
-|  |NoSymbol | ![BasicNoSymbol](Shapes_images\BasicNoSymbol.PNG)|
-|  |FourPointStar | ![BasicFourPointStar](Shapes_images\BasicFourPointStar.PNG)|
-|  |FivePointStar | ![BasicFivePointStar](Shapes_images\BasicFivePointStar.PNG)|
-|  | SixPointStar| ![BasicSixPointStar](Shapes_images\BasicSixPointStar.PNG)|
-|  |SevenPointStar | ![BasicSevenPointStar](Shapes_images\BasicSevenPointStar.PNG)|
-|  |SixteenPointStar | ![BasicSixteenPointStar](Shapes_images\BasicSixteenPointStar.PNG)|
-|  |TwentyFourPointStar | ![BasicTwentyFourPointStar](Shapes_images\BasicTwentyFourPointStar.PNG)|
-|  |ThirtyTwoPointStar | ![BasicThirtyTwoPointStar](Shapes_images\BasicThirtyTwoPointStar.PNG)|
-| Flow Shapes |Process | ![FlowProcess](Shapes_images\FlowProcess.PNG)|
-|  | Decision| ![FlowDecision](Shapes_images\FlowDecision.PNG)|
-|  |Terminator | ![FlowTerminator](Shapes_images\FlowTerminator.PNG)|
-|  |Sort | ![Sort](Shapes_images\FlowSort.PNG)|
-| |Document | ![FlowSort](Shapes_images\FlowDocument.PNG)|
-|  |MultiDocument | ![FlowMultiDocument](Shapes_images\FlowMultiDocument.PNG)|
-| |DirectData | ![FlowDirectData](Shapes_images\FlowDirectData.PNG)|
-|  |SequentialData | ![FlowSequentialData](Shapes_images\FlowSequentialData.PNG)|
-|  |PaperTap | ![FlowPaperTap](Shapes_images\FlowPaperTap.PNG)|
-|  | Collate| ![FlowCollate](Shapes_images\FlowCollate.PNG)|
-|  | SummingJunction| ![FlowSummingJunction](Shapes_images\FlowSummingJunction.PNG)|
-|  |Or | ![Or](Shapes_images\FlowOr.PNG)|
-| |InternalStorage | ![FlowInternalStorage](Shapes_images\FlowInternalStorage.PNG)|
-|  |PredefinedProcess | ![FlowPredefinedProcess](Shapes_images\FlowPredefinedProcess.PNG)|
-| |Extract | ![FlowExtract](Shapes_images\FlowExtract.PNG)|
-|  |Merge | ![FlowMerge](Shapes_images\FlowMerge.PNG)|
-|  | OffPageReference| ![FlowOffPageReference](Shapes_images\FlowOffPageReference.PNG)|
-|  |SequentialAccessStorage | ![FlowSequentialAccessStorage](Shapes_images\FlowSequentialAccessStorage.PNG)|
-|  |Delay | ![FlowDelay](Shapes_images\FlowDelay.PNG)|
-|  | StoredData| ![FlowStoredData](Shapes_images\FlowStoredData.PNG)|
-|  |Display | ![FlowDisplay](Shapes_images\FlowDisplay.PNG)|
-|  |ManualOperation | ![FlowManualOperation](Shapes_images\FlowManualOperation.PNG)|
-|  |Data | ![FlowData](Shapes_images\FlowData.PNG)|
-|  | OnPageReference| ![FlowOnPageReference](Shapes_images\FlowOnPageReference.PNG)|
-|  |Prepration | ![FlowPrepration](Shapes_images\FlowPrepration.PNG)|
-|  |PunchedCard | ![FlowPunchedCard](Shapes_images\FlowPunchedCard.PNG)|
-|  |Card | ![FlowCard](Shapes_images\FlowCard.PNG)|
-|  | LoopLimit| ![LoopLimit](Shapes_images\FlowLoopLimit.PNG)|
-|  |ManualInput | ![ManualInput](Shapes_images\FlowManualInput.PNG)|
-| Arrow Shapes |CurvedDownArrow | ![CurvedDownArrow](Shapes_images\ArrowCurvedDownArrow.PNG)|
-|  | CurvedLeftArrow| ![CurvedLeftArrow](Shapes_images\ArrowCurvedLeftArrow.PNG)|
-|  |CurvedRightArrow| ![CurvedRightArrow](Shapes_images\ArrowCurvedRightArrow.PNG)|
-|  | CurvedUpArrow| ![CurvedUpArrow](Shapes_images\ArrowCurvedUpArrow.PNG)|
-|  |CircularArrow | ![CircularArrow](Shapes_images\ArrowCircularArrow.PNG)|
-|  | JumpingLeftArrow| ![JumpingLeftArrow](Shapes_images\ArrowJumpingLeftArrow.PNG)|
-|  | JumpingRightArrow| ![JumpingRightArrow](Shapes_images\ArrowJumpingRightArrow.PNG)|
-|  |UTurnArrow | ![UTurnArrow](Shapes_images\ArrowUTurnArrow.PNG)|
-|  | LeftArrow| ![LeftArrow](Shapes_images\ArrowLeftArrow.PNG)|
-|  |RightArrow | ![RightArrow](Shapes_images\ArrowRightArrow.PNG)|
-|  |DoubleArrow | ![DoubleArrow](Shapes_images\ArrowDoubleArrow.PNG)|
-|  |TopArrow | ![TopArrow](Shapes_images\ArrowTopArrow.PNG)|
-|  |BottomArrow | ![BottomArrow](Shapes_images\ArrowBottomArrow.PNG)|
-|  | MultiArrow| ![MultiArrow](Shapes_images\ArrowMultiArrow.PNG)|
-|  |BlockArrow | ![BlockArrow](Shapes_images\ArrowBlockArrow.PNG)|
-|  |QuadBlockArrow | ![QuadBlockArrow](Shapes_images\ArrowQuadBlockArrow.PNG)|
-|  | NotchedArrow| ![NotchedArrow](Shapes_images\ArrowNotchedArrow.PNG)|
-|  |LeftRightBlockArrow | ![LeftRightBlockArrow](Shapes_images\ArrowLeftRightBlockArrow.PNG)|
-|  |QuadArrow | ![QuadArrow](Shapes_images\ArrowQuadArrow.PNG)|
-|  |FlexibleArrow | ![FlexibleArrow](Shapes_images\ArrowFlexibleArrow.PNG)|
-|Data Flow Shapes  |OvalProcess | ![OvalProcess](Shapes_images\DataFlowOvalProcess.PNG)|
-|  |ExternalIndicator | ![ExternalIndicator](Shapes_images\DataFlowExternalIndicator.PNG)|
-|  |Object | ![Object](Shapes_images\DataFlowObject.PNG)|
-|  |MultipleProcess | ![MultipleProcess](Shapes_images\DataFlowMultipleProcess.PNG)|
-|  |State | ![State](Shapes_images\DataFlowState.PNG)|
-|  | Stop1| ![Stop1](Shapes_images\DataFlowStop1.PNG)|
-|  |Entity1 | ![Entity1](Shapes_images\DataFlowEntity1.PNG)|
-|  |Entity2 | ![Entity2](Shapes_images\DataFlowEntity2.PNG)|
-|Electrical Shapes  |Resistor | ![Resistor](Shapes_images\ElectricalResistor.PNG)|
-|  |Capacitor | ![Capacitor](Shapes_images\ElectricalCapacitor.PNG)|
-|  | AC| ![AC](Shapes_images\ElectricalAC.PNG)|
-|  |Dc1 | ![Dc1](Shapes_images\ElectricalDc1.PNG)|
-|  |EquiPotent | ![EquiPotent](Shapes_images\ElectricalEquiPotent.PNG)|
-|  | Inductor| ![Inductor](Shapes_images\ElectricalInductor.PNG)|
-|  |Crystal | ![Crystal](Shapes_images\ElectricalCrystal.PNG)|
-|  | Attenuator| ![Attenuator](Shapes_images\ElectricalChassis.PNG)|
-|  | Antenna| ![Antenna](Shapes_images\ElectricalAntenna.PNG)|
-|  | LoopAntenna| ![LoopAntenna](Shapes_images\ElectricalLoopAntenna.PNG)|
-|  |CircuitBreaker | ![CircuitBreaker](Shapes_images\ElectricalCircuitBreaker.PNG)|
-|  |Fuse | ![Fuse](Shapes_images\ElectricalFuse.PNG)|
-|  | IdealSource| ![IdealSource](Shapes_images\ElectricalIdealSource.PNG)|
-|  |GenericComponent | ![GenericComponent](Shapes_images\ElectricalGenericComponent.PNG)|
-|  |Transducer | ![Transducer](Shapes_images\ElectricalTransducer.PNG)|
-|  |Transducer2 | ![Transducer2](Shapes_images\ElectricalTransducer2.PNG)|
-|  |PickupHead | ![PickupHead](Shapes_images\ElectricalPickupHead.PNG)|
-|  |HalfConductor | ![HalfConductor](Shapes_images\ElectricalHalfConductor.PNG)|
-|  | Pulse| ![Pulse](Shapes_images\ElectricalPulse.PNG)|
-|  |Pulse1 | ![Pulse1](Shapes_images\ElectricalPulse1.PNG)|
-|  |Sawtooth | ![Sawtooth](Shapes_images\ElectricalSawtooth.PNG)|
-|  | Step| ![Step](Shapes_images\ElectricalStep.PNG)|
-|  | SensingLinkSquib| ![SensingLinkSquib](Shapes_images\ElectricalSensingLinkSquib.PNG)|
-|  |Indicator | ![Indicator](Shapes_images\ElectricalIndicator.PNG)|
-|  | Material| ![Material](Shapes_images\ElectricalMaterial.PNG)|
-|  |DelayElement | ![DelayElement](Shapes_images\ElectricalDelayElement.PNG)|
-|  | SurgeProtector| ![SurgeProtector](Shapes_images\ElectricalSurgeProtector.PNG)|
-|  |SurgeProtector1 | ![SurgeProtector1](Shapes_images\ElectricalSurgeProtector1.PNG)|
-|  |PermanentMagnet | ![PermanentMagnet](Shapes_images\ElectricalPermanentMagnet.PNG)|
-|  |Magnetoresistor_shape | ![Magnetoresistor_shape](Shapes_images\ElectricalMagnetoresistor_shape.PNG)|
-|  | IgnitorPlug| ![IgnitorPlug](Shapes_images\ElectricalIgnitorPlug.PNG)|
-|  |Bell | ![Bell](Shapes_images\ElectricalBell.PNG)|
-|  | Buzzer| ![Buzzer](Shapes_images\ElectricalBuzzer.PNG)|
-|  |ThermalElement | ![ThermalElement](Shapes_images\ElectricalThermalElement.PNG)|
-|  | ThermoCouple| ![ThermoCouple](Shapes_images\ElectricalThermoCouple.PNG)|
+| Basic Shapes | Rectangle | ![Basic Rectangle in WPF Diagram ](shapes_images\wpf-diagram-basic-rectangle.PNG) |
+|  | Triangle| ![Basic Triangle in WPF Diagram](shapes_images\wpf-diagram-basic-triangle.PNG) |
+|  | Plus| ![Basic Plus in WPF Diagram](shapes_images\wpf-diagram-basic-plus.PNG) |
+|  | Pentagon | ![Basic Pentagon in WPF Diagram](shapes_images\wpf-diagram-basic-pentagon.PNG) |
+|  | Hexagon | ![Basic Hexagon in WPF Diagram](shapes_images\wpf-diagram-basic-hexagon.PNG) |
+|  |Heptagon | ![Basic Heptagon in WPF Diagram](shapes_images\wpf-diagram-basic-heptagon.PNG) |
+|  | Octagon | ![Basic Octagon in WPF Diagram](shapes_images\wpf-diagram-basic-octagon.PNG) |
+|  |Trapezoid | ![Basic Trapezoid in WPF Diagram](shapes_images\wpf-diagram-basic-trapezoid.PNG) |
+|  | Decagon|![Basic Decagon in WPF Diagram](shapes_images\wpf-diagram-basic-decagon.PNG) |
+|  | RightTriangle| ![Basic Right Triangle in WPF Diagram](shapes_images\wpf-diagram-basic-right-triangle.PNG)|
+|  | Cylinder| ![Basic Cylinder in WPF Diagram](shapes_images\wpf-diagram-basic-cylinder.PNG)|
+|  | Diamond| ![Basic Diamond in WPF Diagram ](shapes_images\wpf-diagram-basic-diamond.PNG)|
+|  |TwoSideFlatCorner | ![Basic Two Side Flat Corner in WPF Diagram](shapes_images\wpf-diagram-basic-two-side-flat-corner.PNG)|
+|  | TwoSideRoundCorner| ![Basic Two Side Round Corner in WPF Diagram](shapes_images\wpf-diagram-basic-two-side-round-corner.PNG)|
+|  |RoundedRectangle | ![Basic Rounded Rectangle in WPF Diagram](shapes_images\wpf-diagram-basic-rounded-rectangle.PNG)|
+|  | Cloud | ![Basic Cloud in WPF diagram](shapes_images\wpf-diagram-basic-cloud.PNG)|
+|  |CloudCallOut | ![Basic Cloud CallOut in WPF Diagram](shapes_images\wpf-diagram-basic-cloud-callout.PNG)|
+|  | Paralleogram| ![Basic Paralleogram in WPF Diagram](shapes_images\wpf-diagram-basic-paralleogram.PNG)|
+|  |Frame | ![Basic Frame in WPF Diagram](shapes_images\wpf-diagram-basic-frame.PNG)|
+|  | Donut| ![Basic Donut in WPF Diagram](shapes_images\wpf-diagram-basic-donut.PNG)|
+|  |RectangleCallOut | ![Basic Rectangle CallOut](shapes_images\wpf-diagram-basic-rectangle-callout.PNG)|
+|  |RoundedRectangleCallOut | ![Basic Rounded Rectangle CallOut in WPF Diagram](shapes_images\wpf-diagram-basic-rounded-rectangle-callout.PNG)|
+|  | OvalCallOut| ![Basic Oval CallOut in WPF Diagram](shapes_images\wpf-diagram-basic-oval-callout.PNG)|
+|  | Cube| ![Basic Cube in WPF Diagram](shapes_images\wpf-diagram-basic-cube.PNG)|
+|  |NoSymbol | ![Basic No Symbol in WPF Diagram](shapes_images\wpf-diagram-basic-no-symbol.PNG)|
+|  |FourPointStar | ![Basic Four Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-four-point-star.PNG)|
+|  |FivePointStar | ![Basic Five Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-five-point-star.PNG)|
+|  | SixPointStar| ![Basic Six Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-six-point-star.PNG)|
+|  |SevenPointStar | ![Basic Seven Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-seven-point-star.PNG)|
+|  |SixteenPointStar | ![Basic Sixteen Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-sixteen-point-star.PNG)|
+|  |TwentyFourPointStar | ![Basic Twenty Four Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-twenty-four-point-star.PNG)|
+|  |ThirtyTwoPointStar | ![Basic Thirty Two Point Star in WPF Diagram](shapes_images\wpf-diagram-basic-thirty-two-point-star.PNG)|
+| Flow Shapes |Process | ![Flow Process in WPF Diagram](shapes_images\wpf-diagram-flow-process.PNG)|
+|  | Decision| ![Flow Decision in WPF Diagram](S\shapes_images\wpf-diagram-flow-decision.PNG)|
+|  |Terminator | ![Flow Terminator in WPF Diagram](shapes_images\wpf-diagram-flow-terminator.PNG)|
+|  |Sort | ![Sort in WPF Diagram](shapes_images\wpf-diagram-flow-sort.PNG)|
+| |Document | ![Flow Sort in WPF Diagram](shapes_images\wpf-diagram-flow-document.PNG)|
+|  |MultiDocument | ![Flow MultiDocument in WPF Diagram](shapes_images\wpf-diagram-flow-multi-document.PNG)|
+| |DirectData | ![Flow Direct Data in WPF Diagram](shapes_images\wpf-diagram-flow-direct-data.PNG)|
+|  |SequentialData | ![Flow Sequential Data in WPF Diagram](shapes_images\wpf-diagram-flow-sequential-data.PNG)|
+|  |PaperTap | ![Flow Paper Tap in WPF Diagram](shapes_images\wpf-diagram-flow-paper-tap.PNG)|
+|  | Collate| ![Flow Collate in WPF Diagram](shapes_images\wpf-diagram-flow-collate.PNG)|
+|  | SummingJunction| ![Flow Summing Junction in WPF Diagram](shapes_images\wpf-diagram-flow-summing-junction.PNG)|
+|  |Or | ![Flow Or WPF Diagram](shapes_images\wpf-diagram-flow-or.PNG)|
+| |InternalStorage | ![Flow Internal Storage in WPF Diagram](shapes_images\wpf-diagram-flow-internal-storage.PNG)|
+|  |PredefinedProcess | ![Flow Predefined Process in WPF Diagram](shapes_images\wpf-diagram-flow-predefined-process.PNG)|
+| |Extract | ![Flow Extract in WPF Diagram](shapes_images\wpf-diagram-flow-extract.PNG)|
+|  |Merge | ![Flow Merge in WPF Diagram](shapes_images\wpf-diagram-flow-merge.PNG)|
+|  | OffPageReference| ![Flow Off Page Reference in WPF Diagram](shapes_images\wpf-diagram-basic-flow-offpage-reference.PNG)|
+|  |SequentialAccessStorage | ![Flow Sequential Access Storage in WPF Diagram](shapes_images\wpf-diagram-flow-sequential-access-storage.PNG)|
+|  |Delay | ![Flow Delay in WPF Diagram](shapes_images\wpf-diagram-flow-delay.PNG)|
+|  | StoredData| ![Flow Stored Data in WPF Diagram](shapes_images\wpf-diagram-flow-stored-data.PNG)|
+|  |Display | ![Flow Display in WPF Diagram](shapes_images\wpf-diagram-flow-display.PNG)|
+|  |ManualOperation | ![Flow Manual Operation in WPF Diagram](shapes_images\wpf-diagram-flow-manual-operation.PNG)|
+|  |Data | ![Flow Data in WPF Diagram](shapes_images\wpf-diagram-flow-data.PNG)|
+|  | OnPageReference| ![Flow On Page Reference in WPF Diagram](shapes_images\wpf-diagram-flow-onpage-reference.PNG)|
+|  |Prepration | ![Flow Prepration in WPF Diagram](shapes_images\wpf-diagram-flow-prepration.PNG)|
+|  |PunchedCard | ![Flow Punched Card in WPF Diagram](shapes_images\wpf-diagram-flow-punched-card.PNG)|
+|  |Card | ![Flow Card in WPF Diagram](shapes_images\wpf-diagram-flow-card.PNG)|
+|  | LoopLimit| ![Loop Limit in WPF Diagram](shapes_images\wpf-diagram-flow-loop-limit.PNG)|
+|  |ManualInput | ![Manual Input in WPF Diagram](shapes_images\wpf-diagram-flow-manual-input.PNG)|
+| Arrow Shapes |CurvedDownArrow | ![Curved DownArrow in WPF Diagram](shapes_images\wpf-diagram-curved-down-arrow.PNG)|
+|  | CurvedLeftArrow| ![Curved Left Arrow in WPF Diagram](shapes_images\wpf-diagram-curved-left-arrow.PNG)|
+|  |CurvedRightArrow| ![Curved Right Arrow in WPF Diagram](shapes_images\wpf-diagram-curved-right-arrow.PNG)|
+|  | CurvedUpArrow| ![Curved UpArrow in WPF Diagram](shapes_images\wpf-diagram-curved-up-arrow.PNG)|
+|  |CircularArrow | ![Circular Arrow in WPF Diagram](shapes_images\wpf-diagram-circular-arrow.PNG)|
+|  | JumpingLeftArrow| ![Jumping Left Arrow in WPF Diagram](shapes_images\wpf-diagram-jumping-left-arrow.PNG)|
+|  | JumpingRightArrow| ![Jumping Right Arrow in WPF Diagram](shapes_images\wpf-diagram-jumping-right-arrow.PNG)|
+|  |UTurnArrow | ![UTurn Arrow in WPF Diagram](shapes_images\wpf-diagram-uturn-arrow.PNG)|
+|  | LeftArrow| ![Left Arrow in WPF Diagram](shapes_images\wpf-diagram-left-arrow.PNG)|
+|  |RightArrow | ![Right Arrow in WPF Diagram](shapes_images\wpf-diagram-right-arrow.PNG)|
+|  |DoubleArrow | ![Double Arrow in WPF Diagram](shapes_images\wpf-diagram-double-arrow.PNG)|
+|  |TopArrow | ![Top Arrow in WPF Diagram](shapes_images\wpf-diagram-top-arrow.PNG)|
+|  |BottomArrow | ![Bottom Arrow in WPF Diagram](shapes_images\wpf-diagram-bottom-arrow.PNG)|
+|  | MultiArrow| ![Multi Arrow in WPF Diagram](shapes_images\wpf-diagram-multi-arrow.PNG)|
+|  |BlockArrow | ![Block Arrow in WPF Diagram](shapes_images\wpf-diagram-block-arrow.PNG)|
+|  |QuadBlockArrow | ![Quad Block Arrow in WPF Diagram](shapes_images\wpf-diagram-quad-block-arrow.PNG)|
+|  | NotchedArrow| ![Notched Arrow in WPF Diagram](shapes_images\wpf-diagram-notched-arrow.PNG)|
+|  |LeftRightBlockArrow | ![left Right Block Arrow in WPF Diagram](shapes_images\wpf-diagram-left-right-block-arrow.PNG)|
+|  |QuadArrow | ![Quad Arrow in WPF Diagram](shapes_images\wpf-diagram-quad-arrow.PNG)|
+|  |FlexibleArrow | ![Flexible Arrow](shapes_images\wpf-diagram-flexible-arrow.PNG)|
+|Data Flow Shapes  |OvalProcess | ![Oval Process in WPF Diagram](shapes_images\wpf-diagram-data-flow-oval-process.PNG)|
+|  |ExternalIndicator | ![External Indicator in WPD Diagram](shapes_images\wpf-diagram-data-flow-external-indicator.PNG)|
+|  |Object | ![Object in WPF Diagram](shapes_images\wpf-diagram-data-flow-object.PNG)|
+|  |MultipleProcess | ![Multiple Process in WPF Diagram](shapes_images\wpf-diagram--data-flow-multiple-process.PNG)|
+|  |State | ![State in WPF Diagram](shapes_images\wpf-diagram-data-flow-state.PNG)|
+|  | Stop1| ![Stop1 in WPF Diagram](shapes_images\wpf-diagram-data-flow-stop-one.PNG)|
+|  |Entity1 | ![Entity1 in WPF Diagram](shapes_images\wpf-diagram-data-flow-entity-one.PNG)|
+|  |Entity2 | ![Entity2 in WPF Diagram](shapes_images\wpf-diagram-data-flow-entity-two.PNG)|
+|Electrical Shapes  |Resistor | ![Resistor in WPF Diagram](shapes_images\wpf-diagram-electrical-resistor.PNG)|
+|  |Capacitor | ![Capacitor in WPF Diagram](shapes_images\wpf-diagram-electrical-capacitor.PNG)|
+|  | AC| ![AC in WPF Diagram](shapes_images\wpf-diagram-electrical-ac.PNG)|
+|  |Dc1 | ![Dc1 in WPF Diagram](shapes_images\wpf-diagram-electrical-dc-one.PNG)|
+|  |EquiPotent | ![EquiPotent in WPF Diagram](shapes_images\wpf-diagram-electrical-equipotent.PNG)|
+|  | Inductor| ![Inductor in WPF Diagram](shapes_images\wpf-diagram-electrical-inductor.PNG)|
+|  |Crystal | ![Crystal in WPF Diagram](shapes_images\wpf-diagram-electrical-crystal.PNG)|
+|  | Attenuator| ![Attenuator in WPF Diagram](shapes_images\wpf-diagram-electrical-chassis.PNG)|
+|  | Antenna| ![Antenna in WPF Diagram](shapes_images\wpf-diagram-electrical-antenna.PNG)|
+|  | LoopAntenna| ![Loop Antenna in WPF Diagram](shapes_images\wpf-diagram-electrical-loop-antenna.PNG)|
+|  |CircuitBreaker | ![Circuit Breaker in WPF Diagram](shapes_images\wpf-diagram-electrical-circuit-breaker.PNG)|
+|  |Fuse | ![Fuse in WPF Diagram](shapes_images\wpf-diagram-electrical-fuse.PNG)|
+|  | IdealSource| ![Ideal Source in WPF Diagram](shapes_images\wpf-diagram-electrical-ideal-source.PNG)|
+|  |GenericComponent | ![Generic Component in WPF Diagram](shapes_images\wpf-diagram-electrical-generic-component.PNG)|
+|  |Transducer | ![Transducer in WPF Diagram](shapes_images\wpf-diagram-electrical-transducer.PNG)|
+|  |Transducer2 | ![Transducer2 in WPF Diagram](shapes_images\wpf-diagram-electrical-transducer-two.PNG)|
+|  |PickupHead | ![Pickup Head in WPF Diagram](shapes_images\wpf-diagram-electrical-pickup-head.PNG)|
+|  |HalfConductor | ![Half Conductor in WPF Diagram](shapes_images\wpf-diagram-electrical-half-conductor.PNG)|
+|  | Pulse| ![Pulse in WPF Diagram](shapes_images\wpf-diagram-electrical-pulse.PNG)|
+|  |Pulse1 | ![Pulse1 in WPF Diagram](shapes_images\wpf-diagram-electrical-pulse-one.PNG)|
+|  |Sawtooth | ![Sawtooth in WPF Diagram](shapes_images\wpf-diagram-electrical-sawtooth.PNG)|
+|  | Step| ![Step in WPF Diagram](shapes_images\wpf-diagram-electrical-step.PNG)|
+|  | SensingLinkSquib| ![Sensing Link Squib in WPF Diagram](shapes_images\wpf-diagram-electrical-sensing-link-squib.PNG)|
+|  |Indicator | ![Indicator in WPF Diagram](shapes_images\wpf-diagram-electrical-indicator.PNG)|
+|  | Material| ![Material in WPF Diagram](shapes_images\wpf-diagram-electrical-material.PNG)|
+|  |DelayElement | ![Delay Element in WPF Diagram](shapes_images\wpf-diagram-electrical-delay-element.PNG)|
+|  | SurgeProtector| ![Surge Protector in WPF Diagram](shapes_images\wpf-diagram-electrical-surge-protector.PNG)|
+|  |SurgeProtector1 | ![Surge Protector1 in WPF Diagram](shapes_images\wpf-diagram-electrical-surge-protector-one.PNG)|
+|  |PermanentMagnet | ![Permanen tMagnet in WPF Diagram](shapes_images\wpf-diagram-electrical-permanent-magnet.PNG)|
+|  |Magnetoresistor_shape | ![Magnetoresistor_shape in WPF Diagram](shapes_images\wpf-diagram-electrical-magnetoresistor-shape.PNG)|
+|  | IgnitorPlug| ![Ignitor Plug in WPF Diagram](shapes_images\wpf-diagram-electrical-ignitor-plug.PNG)|
+|  |Bell | ![Bell in WPF Diagram](shapes_images\wpf-diagram-electrical-bell.PNG)|
+|  | Buzzer| ![Buzzer in WPF Diagram](shapes_images\wpf-diagram-electrical-buzzer.PNG)|
+|  |ThermalElement | ![Thermal Element in WPF Diagram](shapes_images\wpf-diagram-electrical-thermal-element.PNG)|
+|  | ThermoCouple| ![ThermoCouple in WPF Diagram](shapes_images\wpf-diagram-electrical-thermo-couple.PNG)|
 
 Find the [Shapes sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Shapes) to depict the shapes.
 
