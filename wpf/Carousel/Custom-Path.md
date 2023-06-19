@@ -94,7 +94,7 @@ carousel.SelectedIndex = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Customized visual path of Carousel items](customization_images/Path.gif)
+![Customized visual path of Carousel items](customization_images/wpf-carousel-customized-visual-path.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
