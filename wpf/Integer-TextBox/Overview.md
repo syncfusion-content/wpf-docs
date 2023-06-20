@@ -13,9 +13,9 @@ The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox)
 
 ## Control structure
 
-![WPF IntegerTextBox](Getting-Started_images/wpf-integer-textbox.png)
+![WPF IntegerTextBox](getting-started_images/wpf-integer-textbox.png)
 
-![WPF IntegerTextBox with Watermark Text](Getting-Started_images/wpf-integer-textbox-watermark-text.png)
+![WPF IntegerTextBox with Watermark Text](getting-started_images/wpf-integer-textbox-watermark-text.png)
 
 ## Features
 
