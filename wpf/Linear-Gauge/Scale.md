@@ -55,7 +55,7 @@ The [`MainScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.S
 
 {% endtabs %}
 
-![Linear Gauge Scale](Scale_images/Scale_img1.png)
+![WPF Linear Gauge Scale](scale_images/wpf-linear-gauge-scale.png)
 
 ## Setting minimum and maximum values for a scale
 
@@ -96,7 +96,7 @@ To change the minimum and maximum values of a linear scale, use the [`Minimum`](
 
 {% endtabs %}
 
-![Linear Gauge Scale Value](Scale_images/Scale_img2.png)
+![WPF Linear Gauge Scale Value](scale_images/wpf-linear-gauge-scale-values.png)
 
 ## Setting interval for a scale
 
@@ -148,7 +148,7 @@ The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.Li
 
 {% endtabs %}
 
-![Linear Gauge Interval](Scale_images/Scale_img3.png)
+![WPF Linear Gauge Interval](scale_images/wpf-linear-gauge-scale-intervals.png)
 
 ## Scale customization
 
@@ -202,7 +202,7 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
 {% endtabs %}
 
-![Linear Gauge Scale Customization](Scale_images/Scale_img4.png)
+![WPF Linear Gauge Scale Customization](scale_images/wpf-linear-gauge-scale-customization.png)
 
 ### Size customization
 
@@ -259,7 +259,7 @@ Size of the scale can be customized using the following two properties.
 
 {% endtabs %}
 
-![Linear Gauge Scale Size Customization](Scale_images/Scale_img7.png)
+![WPF Linear Gauge Scale Size Customization](scale_images/wpf-linear-gauge-scale-size-customization.png)
 
 ## Setting scale direction
 
@@ -309,7 +309,7 @@ You can set the scale position to its forward and backward using the [`ScaleDire
 
 {% endtabs %}
 
-![Linear Gauge Scale Direction](Scale_images/Scale_img5.png)
+![WPF Linear Gauge Scale Direction](scale_images/wpf-linear-gauge-scale-direction.png)
 
 ## Setting position for a scale
 
@@ -375,4 +375,4 @@ You can set the scale position using the [`ScaleBarPositionFactor`](https://help
 
 {% endtabs %}
 
-![Linear Gauge scale position](Scale_images/Scale_img6.png)
+![WPF Linear Gauge scale position](scale_images/wpf-linear-gauge-scale-position.png)

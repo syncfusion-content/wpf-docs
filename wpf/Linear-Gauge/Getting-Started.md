@@ -18,7 +18,7 @@ You can add gauge reference using one of the following methods:
 
 Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
-![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
+![Adding gauge reference from NuGet](getting-started_images/wpf-linear-gauge-adding-gauge-reference.png)
 
 **Method 2: Adding gauge reference from toolbox**
 
@@ -353,7 +353,7 @@ this.Content = sfLinearGauge;
 
 The following screenshot illustrates the result of the previous codes.
 
-![Getting started image](Getting-Started_images/Getting_started_img1.png)
+![Adding ranges in Linear Gauge](getting-started_images/wpf-linear-gauge-adding-ranges.png)
 
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedLinearGauge).
@@ -366,7 +366,7 @@ LinearGauge supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF LinearGauge](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF LinearGauge](getting-started_images/wpf-linear-gauge-theme.png)
 
 ## See also
 
