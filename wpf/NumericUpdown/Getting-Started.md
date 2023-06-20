@@ -12,7 +12,7 @@ This section explains how to create [WPF NumericUpdown](https://www.syncfusion.c
 
 ## Structure of UpDown
 
-![WPF UpDown Control](GettingStarted-images/wpf-updown-structure.jpeg)
+![WPF UpDown Control](gettingstarted-images/wpf-updown-structure.jpeg)
 
 
 The following are the elements of the UpDown control:
@@ -33,7 +33,7 @@ The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown
 
 * Syncfusion.Shared.WPF
 
-![Dragging WPF UpDown from Toolbox to Designer Page](GettingStarted-images/wpf-updown-toolbox.png)
+![Dragging WPF UpDown from Toolbox to Designer Page](gettingstarted-images/wpf-updown-toolbox.png)
 
 ## Adding WPF UpDown control via XAML
 
@@ -68,7 +68,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF UpDown Control](GettingStarted-images/wpf-updown-designer.jpeg)
+![WPF UpDown Control](gettingstarted-images/wpf-updown-designer.jpeg)
 
 
 ## Adding WPF UpDown control via C#
@@ -101,7 +101,7 @@ grid.Children.Add(updown);
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WPF UpDown Control](GettingStarted-images/wpf-updown-code.jpeg)
+![WPF UpDown Control](gettingstarted-images/wpf-updown-code.jpeg)
 
 ## Value
 
@@ -123,7 +123,7 @@ updown.Value = 10;
 
 {% endtabs %}
 
-![Applying Value to WPF UpDown](GettingStarted-images/wpf-updown-value.png)
+![Applying Value to WPF UpDown](gettingstarted-images/wpf-updown-value.png)
 
 ## Step Value
 
@@ -146,7 +146,7 @@ updown.Step = 5;
 
 {% endtabs %}
 
-![Changing Step Value in WPF UpDown by clicking Spinbutton](GettingStarted-images/wpf-updown-stepvalue.gif)
+![Changing Step Value in WPF UpDown by clicking Spinbutton](gettingstarted-images/wpf-updown-stepvalue.gif)
 
 ## Number formatting
 
@@ -190,7 +190,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 {% endtabs %}
 
-![WPF UpDown with Number Format](GettingStarted-images/wpf-updown-number-format.png)
+![WPF UpDown with Number Format](gettingstarted-images/wpf-updown-number-format.png)
 
 For more number formatting in UpDown control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.UpDown.html#Syncfusion_Windows_Shared_UpDown_Culture) property. The `Culture` property is used to format the values based on the respective culture.
 
@@ -212,7 +212,7 @@ updown.Culture = cultureInfo;
 
 {% endtabs %}
 
-![WPF UpDown with Latin Culture](GettingStarted-images/wpf-updown-culture.png)
+![WPF UpDown with Latin Culture](gettingstarted-images/wpf-updown-culture.png)
 
 ## Theme
 
@@ -222,4 +222,4 @@ UpDown supports various built-in themes. Refer to the below links to apply theme
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Applying Theme to WPF UpDown Control](GettingStarted-images/wpf-updown-theme.png)
+![Applying Theme to WPF UpDown Control](gettingstarted-images/wpf-updown-theme.png)

@@ -27,7 +27,7 @@ You can add the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/proper
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.Wpf
 
-![PropertyGrid Control added by designer](Getting-Started_images/Getting-Started_img2.png)
+![WPF PropertyGrid Control added by designer](getting-started_images/wpf-propertygrid-added-by-designer.png)
 
 ## Adding WPF PropertyGrid via XAML
 
@@ -106,7 +106,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![PropertyGrid control added to Window by code](Getting-Started_images/Getting-Started_img15.png)
+![WPF PropertyGrid control added to Window by code](getting-started_images/wpf-propertygrid-added-by-code.png)
 
 ## Populating the properties
 
@@ -162,7 +162,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endhighlight %}
 {% endtabs %}
 
-![ Populating the SelectedEmployee object properties into the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
+![ Populating the SelectedEmployee object properties into the PropertyGrid control](getting-started_images/wpf-propertygrid-populating-properties)
 
 Here, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object.
 
@@ -274,7 +274,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
 Here, The `EmailID` property is accepts only the inputs which are in the email-id format by the `EmailEditor`.
 
-![Property grid with specified custom value editor for EmailID property](CustomEditor-support_images/CustomEditor-Attribute.png)
+![Property grid with specified custom value editor for EmailID property](customeditor-support_images/wpf-propertygrid-customeditor-attribute.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
@@ -372,7 +372,7 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 {% endhighlight %}
 {% endtabs %}
 
-![Loading selected object without animation](Getting-Started_images/DisableAnimationOnObjectSelection.png)
+![Loading selected object without animation in WPF PropertyGrid](getting-started_images/wpf-propertygrid-object-selection.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/blob/master/Samples/Common)
 
@@ -513,7 +513,7 @@ private void propertyGrid1_AutoGeneratingPropertyGridItem(object sender, Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](Getting-Started_images/Getting-Started-AutoGeneratingPropertyGridItems.png)
+![WPF PropertyGrid change editor in AutoGeneratingPropertyGridItem event](getting-started_images/wpf-propertygrid-auto-generating-items.png)
 
 ## Property item value changed notification
 
@@ -563,4 +563,4 @@ PropertyGrid supports various built-in themes. Refer to the below links to apply
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF PropertyGrid](Getting-Started_images/Theme.png)
+![Setting theme to WPF PropertyGrid](getting-started_images/wpf-propertygrid-theme.png)

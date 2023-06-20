@@ -13,7 +13,7 @@ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) cont
 
 ## Control structure
 
-![Default PropertyGrid control](Getting-Started_images/Getting-Started_img8.png)
+![Default PropertyGrid control](getting-started_images/wpf-propertygrid-control-structure.png)
 
 ## Features
 
