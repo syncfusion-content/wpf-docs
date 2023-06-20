@@ -238,7 +238,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items opacity fraction changed in custom path mode](rotation-images/wpf-carousel-fpacity-fraction-custom.png)
+![WPF Carousel items opacity fraction changed in custom path mode](rotation-images/wpf-carousel-opacity-fraction-custom-path-mode.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
@@ -295,7 +295,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Carousel items opacity fraction changed in custom path view mode](rotation-images/wpf-carousel-items-opacity-fractions-changed.gif)
+![WPF Carousel items opacity fraction changed in custom path view mode](rotation-images/wpf-carousel-opacity-fractions.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
