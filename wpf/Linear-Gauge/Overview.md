@@ -26,6 +26,6 @@ Highlights the desired [`Ranges`](https://help.syncfusion.com/wpf/linear-gauge/r
 
 The [`Pointers`](https://help.syncfusion.com/wpf/linear-gauge/pointers) supports adding multiple pointers (bar and symbol) to the linear scale.
 
-![Linear Gauge - Overview](Overview_images/Overview_img1.jpeg)
+![Linear Gauge - Overview](overview_images/wpf-linear-gauge-overview.jpeg)
 
 
