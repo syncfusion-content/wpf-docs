@@ -121,7 +121,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Accumulation distribution indicator in WPF Chart](technical-Indicators_images/wpf-chart-accumulation-indicator.png)
+![Accumulation distribution indicator in WPF Chart](technical-indicators_images/wpf-chart-accumulation-indicator.png)
 
 
 The following sections covers all the different types of technical indicators available in SfChart.
