@@ -25,7 +25,7 @@ The [SfRadialSlider](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Contr
 
 * Start-End angle support
 
-![RadialSlider control structure](Overview_images/Overview_img1.png) 
+![Control Structure in WPF Radial Slider](overview_images/wpf-radial-slider-control-structure.png) 
 
 
 
