@@ -148,7 +148,7 @@ DocumentContainer.SetHeader(flowScrollViewer, "Document Container");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Document Container Control Added by Code](getting-started_images/wpf-document-container-items.png)
+![WPF Document Container Control added by code](getting-started_images/wpf-document-container-items.png)
 
 ## Set TDI/MDI document mode
 

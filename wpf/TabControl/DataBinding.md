@@ -236,6 +236,6 @@ By default, built-in `TextBox` is used as editor for the tab item header editing
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of the Editable Header in WPF TabControl](databinding_images/wpf-tabcontrol-binding-editable-header.png)
+![Custom UI of the editable header in WPF TabControl](databinding_images/wpf-tabcontrol-binding-editable-header.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub

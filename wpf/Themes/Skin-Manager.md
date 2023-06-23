@@ -1194,8 +1194,8 @@ We have provided an example that demonstrates switching between the Window11Ligh
 
 Light Theme:
 
-![Customizing theme while run time in Light](skin-manager_images/wpf-themes-switching-theme-at-runtime-light.png)
+![Customizing theme while run time in Light](skin-manager_images/wpf-skin-manager-light-theme.png)
 
 Dark Theme:
-![Customizing theme while run time in Dark](skin-manager_images/wpf-themes-switching-theme-at-runtime-Dark.png)
+![Customizing theme while run time in Dark](skin-manager_images/wpf-skin-manager-dark-theme.png)
 

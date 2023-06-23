@@ -162,7 +162,7 @@ tabControlExt.Items.Add(tabItemExt3);
 {% endhighlight %}
 {% endtabs %}
 
-![Adding Tab Items into WPF TabControl](getting-started_images/wpf-tabcontrol-add-tab-item.png) 
+![Adding tab items into WPF TabControl](getting-started_images/wpf-tabcontrol-add-tab-item.png) 
 
 Please refer [DataBinding](https://help.syncfusion.com/wpf/tabcontrol/databinding) page to know about how to add a tab item using Data Binding.
 
@@ -277,7 +277,7 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TabControl and TabItem Displays the Close Button](getting-started_images/wpf-tabcontrol-close-button.png)
+![WPF TabControl and tabitem displays the close button](getting-started_images/wpf-tabcontrol-close-button.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
@@ -309,7 +309,7 @@ tabItem2.CanClose = false;
 
 In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and `TabControl` is in disabled state for second tabitem.
 
-![Disable the Second Tab Item Close Button in WPF TabControl](getting-started_images/wpf-tabcontrol-disable-close-button.png)
+![Disable the second tab item close button in WPF TabControl](getting-started_images/wpf-tabcontrol-disable-close-button.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
@@ -537,7 +537,7 @@ tabItem2.ContextMenuItems.Add(customMenuItem1);
 {% endhighlight %}
 {% endtabs %}
 
-![Added Custom Context Menu for Tab Items in WPF TabControl](getting-started_images/wpf-tabcontrol-custom-context-menu.png)
+![Added custom context menu for tab items in WPF TabControl](getting-started_images/wpf-tabcontrol-custom-context-menu.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
