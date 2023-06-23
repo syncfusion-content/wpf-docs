@@ -896,7 +896,7 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 
 ![Customizing Filter Row in WPF DataGrid](FilterRow_images/wpf-datagrid-filter-row-customization.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
 
 ## See Also
 [How to load the symbols in FilterRow and perform actions based on that ?](https://www.syncfusion.com/kb/9310)
