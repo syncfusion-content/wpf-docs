@@ -10,14 +10,14 @@ documentation: ug
 
 The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 
-![WPF scheduler rirstdayofweek](overview_images/wpf-scheduler-firstdayofweek.png)
+![WPF scheduler first day of week](overview_images/wpf-scheduler-first-day-of-week.png)
 
 
 ## Key features
 
 **Built-in Views** - The SfScheduler provides eight different types of views such as Day, WorkWeek, Week, TimelineDay, TimelineWeek, TimelineWorkWeek, TimelineMonth, and Month.
 
-![WPF Scheduler Views](overview_images/wpf-scheduler-views.png)
+![WPF Scheduler views](overview_images/wpf-scheduler-views.png)
 
 **Events** - Appointments contain information on events scheduled at specific times. In addition to the default appointments, the users can use their own collections to connect a business entity to an appointment by mapping their fields, such as start time, end time, subject, notes, and recurrence.
 
