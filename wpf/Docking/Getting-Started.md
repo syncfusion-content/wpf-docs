@@ -30,7 +30,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
-![WPF Docking Add via Designer](getting-started_images/wpf-docking-add-via-designer.png)
+![WPF Docking Add via Designer](gettingstarted_images/wpf-docking-add-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control manually in XAML, do the below steps,
@@ -426,7 +426,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 {% endtabs %}
 
-![WPF Docking Child Window ToolTip](getting-started_images/wpf-docking-child-window-tooltip.png)
+![WPF Docking Child Window ToolTip](gettingstarted_images/wpf-docking-child-window-tooltip.png)
 
 
 ## Theme
@@ -437,4 +437,4 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Docking Theme](getting-started_images/wpf-docking-theme.png)
+  ![WPF Docking Theme](gettingstarted_images/wpf-docking-theme.png)
