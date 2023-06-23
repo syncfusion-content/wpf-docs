@@ -18,7 +18,7 @@ You can add gauge reference using one of the following methods:
 
 Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
-![Adding gauge reference from NuGet in WPF Radial Gauge](getting-started_images/wpf-radial-gauge-adding-gauge-reference.png)
+![Adding gauge reference from NuGet in WPF Radial Gauge](getting-started_images/wpf-radial-gauge-adding-using-nuget.png)
 
 **Method 2: Adding gauge reference from toolbox**
 
