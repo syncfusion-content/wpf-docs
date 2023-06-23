@@ -13,7 +13,7 @@ The appearance of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagri
 
 ## Control Structure of SfDataGrid
 
-![Structure of WPF DataGrid](styles-and-templates_images/wpf-datagrid-structure.png)
+![Control structure of WPF DataGrid](styles-and-templates_images/wpf-datagrid-structure.png)
 
 ## Customizing Default Containers
 WPF DataGrid (SfDataGrid) arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
