@@ -1751,7 +1751,7 @@ The following screenshot illustrates the different ShipCity ItemsSource bound to
 
 ![WPF DataGrid Column with ComboBox using Template](Column-Types_images/wpf-datagrid-combobox-template.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo-1585046085.zip).
 
 ## GridMultiColumnDropDownList
 
