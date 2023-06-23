@@ -336,7 +336,7 @@ We can collapse or expands the element in either side of the splitter by clickin
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide the grid row and columns](positioning-gridsplitter-images/wpf-grid-splitter-enablecollapsebutton.gif)
+![Show or hide the grid row and columns](positioning-gridsplitter-images/wpf-grid-splitter-enable-collapse-button.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -434,7 +434,7 @@ N> You can see the effect of collapse button templates only on when `EnableColla
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with expand or collapse button template](positioning-gridsplitter-images/wpf-grid-splitter-collapsebuttontemplate.png)
+![SfGridSplitter with expand or collapse button template](positioning-gridsplitter-images/wpf-grid-splitter-collapse-button-template.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
@@ -581,7 +581,7 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 {% endhighlight %}
 {% endtabs %}
 
-![SfGridSplitter with deferred resizing](positioning-gridsplitter-images/wpf-grid-splitter-showspreview.png)
+![SfGridSplitter with deferred resizing](positioning-gridsplitter-images/wpf-grid-splitter-shows-preview.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
@@ -643,7 +643,7 @@ If we want resize the merged columns or rows, place the grid splitter on next or
 {% endhighlight %}
 {% endtabs %}
 
-![Grid splitter for the merged columns or rows](positioning-gridsplitter-images/wpf-grid-splitter-columspan.png)
+![Grid splitter for the merged columns or rows](positioning-gridsplitter-images/wpf-grid-splitter-colum-span.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
