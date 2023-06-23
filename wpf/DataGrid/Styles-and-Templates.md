@@ -13,12 +13,12 @@ The appearance of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagri
 
 ## Control Structure of SfDataGrid
 
-![Structure of WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-structure.png)
+![Structure of WPF DataGrid](styles-and-templates_images/wpf-datagrid-structure.png)
 
 ## Customizing Default Containers
 WPF DataGrid (SfDataGrid) arranges the cell and row content using cell and row containers. Below screenshot shows the `VisualTree` of SfDataGrid where `HeaderCell` is loaded into the `HeaderCellControl` and data cells are loaded into the [VirtualizingCellsControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) container. `VirtualizingCellsControl` container uses [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) to load the cell content.
 
-![Tree Structure of WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-tree-structure.png)
+![Tree Structure of WPF DataGrid](styles-and-templates_images/wpf-datagrid-tree-structure.png)
 
 [RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding `RowGenerator` class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowGenerator). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
 
@@ -349,7 +349,7 @@ You can download a working demo for the above customization from [here](https://
 
 You can edit the SfDataGrid style in Visual Studio Designer by right clicking it in design View and click **Edit Template**.
 
-![WPF DataGrid displays Editing Style in Visual Studio Designer](Styles-and-Templates_images/wpf-datagrid-editing-style.png)
+![WPF DataGrid displays Editing Style in Visual Studio Designer](styles-and-templates_images/wpf-datagrid-editing-style.png)
 
 By clicking **Edit a Copy**, it will generate default template of SfDataGrid in **XAML view** and you can edit the default style.
 
@@ -357,7 +357,7 @@ By clicking **Edit a Copy**, it will generate default template of SfDataGrid in 
 
 You can edit the SfDataGrid elements style in Visual Studio Designer by right clicking it in designer view and click **Edit Additional Templates**.
 
-![WPF DataGrid displays Editing Elements in Visual Studio Designer](Styles-and-Templates_images/wpf-datagrid-edit-templates.png)
+![WPF DataGrid displays Editing Elements in Visual Studio Designer](styles-and-templates_images/wpf-datagrid-edit-templates.png)
 
 You can edit or create new style for the following SfDataGrid elements through **Edit Additional Templates** option,
 
@@ -418,7 +418,7 @@ You can also set the `CellStyle` to particular column in below way.
 
 N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` property.
 
-![Customizing Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-cell-style-customization.png)
+![Customizing Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-cell-style-customization.png)
 
 ### Changing Grid line border as dotted line
 
@@ -454,7 +454,7 @@ You can change the gridline border as dotted line by customizing [GridCell.Borde
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Dotted Line Border for Each Cell](Styles-and-Templates_images/wpf-datagrid-dotted-line-border.png)
+![WPF DataGrid displays Dotted Line Border for Each Cell](styles-and-templates_images/wpf-datagrid-dotted-line-border.png)
 
 ### Changing Grid line color
 
@@ -487,7 +487,7 @@ The record rows can be customized by writing style of TargetType [VirtualizingCe
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-row-style-customization.png)
+![Customizing Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-row-style-customization.png)
 
 ## Alternating Row Style
 
@@ -513,7 +513,7 @@ You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](htt
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Alternate Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-alternate-row-style.png)
+![Customizing Alternate Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-alternate-row-style.png)
 
 ## Selection
 
@@ -528,7 +528,7 @@ The foreground and background for the selected row, cell can be customized by se
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Selection Appearance for WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-selection-customization.png)
+![Customizing Selection Appearance for WPF DataGrid](styles-and-templates_images/wpf-datagrid-selection-customization.png)
 
 ## Styling Column Header
 
@@ -554,7 +554,7 @@ N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` 
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Header Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-header-cell-customization.png)
+![Customizing Header Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-header-cell-customization.png)
 
 ### Styling DetailsViewDataGrid header
 
@@ -618,7 +618,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing StackedHeader Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-stacked-header-cell-style.png)
+![Customizing StackedHeader Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-stacked-header-cell-style.png)
 
 ### Setting different styles to StackedHeader
 
@@ -670,7 +670,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Applying Different style for each StackedHeader Cell in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-different-header-style.png)
+![Applying Different style for each StackedHeader Cell in WPF DataGrid](styles-and-templates_images/wpf-datagrid-different-header-style.png)
 
 ## Setting Default Style for one column
 
@@ -698,7 +698,7 @@ this.dataGrid.Columns["OrderID"].CellStyle = null;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with default Cell Style](Styles-and-Templates_images/wpf-datagrid-cell-style.png)
+![WPF DataGrid Column with default Cell Style](styles-and-templates_images/wpf-datagrid-cell-style.png)
 
 ## Styling CaptionSummary 
 
@@ -724,7 +724,7 @@ The caption summary cells can be customized by writing style of TargetType [Grid
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing CaptionSummary Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-caption-summary-cell-style.png)
+![Customizing CaptionSummary Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-caption-summary-cell-style.png)
 
 ### Styling CaptionSummary rows
 
@@ -748,7 +748,7 @@ The caption summary rows can be customized by writing style of TargetType [GridC
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing CaptionSummary Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-caption-summary-row-style.png)
+![Customizing CaptionSummary Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-caption-summary-row-style.png)
 
 ## Styling GroupSummary
 
@@ -774,7 +774,7 @@ The group summary cells can be customized by writing style of TargetType [GridGr
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing GroupSummary Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-group-summary-cell-style.png)
+![Customizing GroupSummary Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-group-summary-cell-style.png)
 
 ### Styling GroupSummary rows
 
@@ -795,7 +795,7 @@ The group summary rows can be customized by writing style of TargetType [GridGro
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing GroupSummary Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-group-summary-row-style.png)
+![Customizing GroupSummary Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-group-summary-row-style.png)
 
 ## Styling TableSummary
 
@@ -819,7 +819,7 @@ The table summary cells can be customized by writing style of TargetType [GridTa
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing TableSummary Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-table-summary-cell-style.png)
+![Customizing TableSummary Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-table-summary-cell-style.png)
 
 ### Styling TableSummary rows
 
@@ -839,7 +839,7 @@ The table summary rows can be customized by writing style of TargetType [GridTab
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing TableSummary Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-table-summary-row-style.png)
+![Customizing TableSummary Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-table-summary-row-style.png)
 
 ## Styling UnboundRows
 
@@ -859,7 +859,7 @@ The unbound row cells can be customized by writing style of TargetType [GridUnBo
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Row Cell Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-unbound-cell-style.png)
+![Customizing Unbound Row Cell Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-unbound-cell-style.png)
 
 ### Styling unbound row 
 
@@ -877,7 +877,7 @@ The unbound rows can be customized by writing style of TargetType [UnBoundRowCon
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Unbound Row Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-unbound-row-style.png)
+![Customizing Unbound Row Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-unbound-row-style.png)
 
 ## Styling AddNewRow
 
@@ -898,7 +898,7 @@ The appearance of AddNewRow can customized by writing style of TargetType [AddNe
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing AddNewRow Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-add-new-row-style.png)
+![Customizing AddNewRow Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-add-new-row-style.png)
 
 ## Styling RowHeader
 
@@ -915,7 +915,7 @@ The appearance of header row can be customized by writing style of TargetType [H
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing RowHeader Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-row-header-style.png)
+![Customizing RowHeader Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-row-header-style.png)
 
 ### Displaying row index in row header cell
 
@@ -951,7 +951,7 @@ You can also display the row index value in the row header cell by customizing i
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Row Index of RowHeader Cell in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-header-row-index.png)
+![Customizing Row Index of RowHeader Cell in WPF DataGrid](styles-and-templates_images/wpf-datagrid-header-row-index.png)
 
 ## Template Selectors
 
@@ -1004,7 +1004,7 @@ public class GridCellTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid with Custom Cell Style based on Data](Styles-and-Templates_images/wpf-datagrid-custom-cell-style.png)
+![WPF DataGrid with Custom Cell Style based on Data](styles-and-templates_images/wpf-datagrid-custom-cell-style.png)
 
 ### Changing HeaderTemplates
 
@@ -1030,7 +1030,7 @@ You can customize the appearance of particular SfDataGrid column header by setti
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Specific Column Header Cell in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-specific-column-header-cell.png)
+![Customizing Specific Column Header Cell in WPF DataGrid](styles-and-templates_images/wpf-datagrid-specific-column-header-cell.png)
 
 ### Loading different editor elements in a same column
 
@@ -1105,7 +1105,7 @@ The appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncf
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Cell Style of WPF DetailsView DataGrid](Styles-and-Templates_images/wpf-detailsview-datagrid-cell-style.png)
+![Customizing Cell Style of WPF DetailsView DataGrid](styles-and-templates_images/wpf-detailsview-datagrid-cell-style.png)
 
 ## Styling Filter popup
 
@@ -1352,7 +1352,7 @@ Here, height and color of the indicator is customized in the below code example.
 
 And also, you can change the appearance of Descending sort indicator by customizing second path present in PART_SortButtonPresenter. For example, in the below code example height and color of the indicator is changed.
 
-![Customizing Ascending Sort Icon in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-ascending-sort-icon.png)
+![Customizing Ascending Sort Icon in WPF DataGrid](styles-and-templates_images/wpf-datagrid-ascending-sort-icon.png)
 
 ### Customizing Descending Sort Indicator
 
@@ -1383,7 +1383,7 @@ And also, you can change the appearance of Descending sort indicator by customiz
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Descending Sort Icon in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-descending-sort-icon.png)
+![Customizing Descending Sort Icon in WPF DataGrid](styles-and-templates_images/wpf-datagrid-descending-sort-icon.png)
 
 ## Styling GroupDropArea
 
@@ -1406,7 +1406,7 @@ The appearance of [GroupDropArea](https://help.syncfusion.com/cr/wpf/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing GroupDropArea Style in WPF DataGrid](Styles-and-Templates_images/wpf-datagrid-group-drop-area-style.png)
+![Customizing GroupDropArea Style in WPF DataGrid](styles-and-templates_images/wpf-datagrid-group-drop-area-style.png)
 
 ## Showing busy indicator before loading records
 
@@ -1435,4 +1435,4 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Busy Indicator before Loading Data](Styles-and-Templates_images/wpf-datagrid-busy-indicator.png)
+![WPF DataGrid displays Busy Indicator before Loading Data](styles-and-templates_images/wpf-datagrid-busy-indicator.png)
