@@ -54,7 +54,7 @@ namespace TabNavigationSample
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Tab Navigation Control Supports Data Binding](data-binding_images/wpf-tab-navigation-adding-items-through-items-source.png)
+![WPF Tab Navigation Control supports data binding](data-binding_images/wpf-tab-navigation-adding-items-through-items-source.png)
 
 ## Binding data from XML
 

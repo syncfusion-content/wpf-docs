@@ -16,7 +16,7 @@ This section explains you the steps required to populate the sunburst chart with
 1. Open the Add Reference window from your project
 2. Choose Assemblies -> Extensions -> Syncfusion.SfSunburstChart.WPF
 
-![WPF Sunburst Chart Reference Manager Dialog Windows in Visual Studio](getting-started_images/wpf-sunburst-chart-dialog-manager.png)
+![WPF Sunburst Chart reference manager dialog windows in visual studio](getting-started_images/wpf-sunburst-chart-dialog-manager.png)
 
 N> This window differs for the Visual Basic project.
 
@@ -24,13 +24,13 @@ N> This window differs for the Visual Basic project.
 
 Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
-![WPF Sunburst Chart Visual Studio Toolbox](getting-started_images/wpf-sunburst-chart-toolbox.png)
+![WPF Sunburst Chart visual studio toolbox](getting-started_images/wpf-sunburst-chart-toolbox.png)
 
 Now the Syncfusion.SfSunburstChart.WPF reference is added to the application references and the namespace code is generated in MainWindow.xaml as below.
 
-![WPF Sunburst Chart Project Solution reference](getting-started_images/wpf-sunburst-chart-project-solution.png)
+![WPF Sunburst Chart oroject solution reference](getting-started_images/wpf-sunburst-chart-project-solution.png)
 
-![WPF Sunburst Chart Added namespace](getting-started_images/wpf-sunburst-chart-add-namespace.png)
+![WPF Sunburst Chart added namespace](getting-started_images/wpf-sunburst-chart-add-namespace.png)
 
 ## Initialize view model
 

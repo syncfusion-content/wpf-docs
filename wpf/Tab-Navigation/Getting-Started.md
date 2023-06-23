@@ -219,4 +219,4 @@ TabNavigation control supports various built-in themes. Refer to the below links
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme in WPF Tab Navigation control Theme](getting-started_images/wpf-tab-navigation-theme.png)
+  ![Setting theme in WPF Tab Navigation control](getting-started_images/wpf-tab-navigation-theme.png)

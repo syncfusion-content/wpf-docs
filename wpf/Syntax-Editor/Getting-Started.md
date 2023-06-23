@@ -150,7 +150,7 @@ public MainWindow()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![WPF Syntax Editor Adding EditControl to Project](getting-started_images/wpf-syntax-editor-add-control-project.jpeg)
+![WPF Syntax Editor adding editcontrol to project](getting-started_images/wpf-syntax-editor-add-control-project.jpeg)
 
 ## Loading a file into document
 

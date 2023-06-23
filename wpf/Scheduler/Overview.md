@@ -10,7 +10,7 @@ documentation: ug
 
 The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 
-![WPF scheduler FirstDayOfWeek](overview_images/wpf-scheduler-firstdayofweek.png)
+![WPF scheduler rirstdayofweek](overview_images/wpf-scheduler-firstdayofweek.png)
 
 
 ## Key features
@@ -23,13 +23,13 @@ The [WPF Scheduler](https://www.syncfusion.com/wpf-controls/scheduler) control i
 
 **Recurrence Events** — Easily configure recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
 
-![WPF Scheduler Recurrence Events](overview_images/wpf-scheduler-recurrence-events.png)
+![WPF Scheduler recurrence events](overview_images/wpf-scheduler-recurrence-events.png)
 
 **Appointment Mapping** - SfScheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
 
 **Appointment Editor** - Create, edit, or delete appointments using the built-in appointment editor.
 
-![WPF Scheduler Appointment Editor](overview_images/wpf-scheduler-appointment-editor.png)
+![WPF Scheduler appointment editor](overview_images/wpf-scheduler-appointment-editor.png)
 
 **Timezone** - Display appointments created in various time zones in the system time zone. Appointment start and end times are also automatically adjusted and displayed based on the daylight savings time.
 

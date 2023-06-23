@@ -30,7 +30,7 @@ These steps are explained below in both XAML and code behind.
 1. Open the Add Reference window in your project.
 2. Choose Windows > Extensions > Syncfusion.SfSmithChart.WPF.
 
-![WPF Smith Chart Reference Manager Dialog Windows in Visual Studio](getting-started_images/wpf-smith-chart-reference-manager.png)
+![WPF Smith Chart reference manager dialog Windows in visual studio](getting-started_images/wpf-smith-chart-reference-manager.png)
 
 3. Select the .NET Framework version with respect  to your application. The version can be identified as below:
 
@@ -71,7 +71,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SmithChart;assembly=Syncfusio
 
 Drag and drop the SfSmithChart control from the Toolbox into your application.
 
-![WPF Smith Chart Visual Studio Toolbox](getting-started_images/wpf-smith-chart-toolbox.png)
+![WPF Smith Chart visual studio toolbox](getting-started_images/wpf-smith-chart-toolbox.png)
 
 Now, the Syncfusion.SfSmithChart.WPF reference has been added to the application references and the xmlns namespace code has been generated in MainWindow.xaml as below.
 

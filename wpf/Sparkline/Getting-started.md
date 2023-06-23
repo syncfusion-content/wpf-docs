@@ -157,7 +157,7 @@ N> if we do not map the XBindingPath means sparkline data positioned as indexed.
 
 The following illustrates the result of the above code sample,
 
-![Binding Data to WPF Sparkline](getting-started_images/wpf-sparkline-binding-data.png)
+![Binding data to WPF Sparkline](getting-started_images/wpf-sparkline-binding-data.png)
 
 ## Theme
 
