@@ -86,18 +86,18 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 # How to nudge the annotation
 
-Click over the annotation then press arrow keys to nudge the annotation and nudging can be controlled by the annotation and its parent node or connector.
+Select the annotation then press arrow keys to nudge the annotation and nudging can be controlled by the annotation and its parent node or connector.
 To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
 ## Nudging the annotation
 
-In order to enable the nudging feature for annotations in an annotation editor, you can utilize the `Constraints` property of the `AnnotationEditorViewModel` class. By setting it's value to `AnnotationConstraints.Draggable`, you can allow the annotation to  be moved by a single pixel. If you hold down the shift key while pressing the right arrow key, the annotation will be moved ten pixels to the right. Based on the key press the annotation will move towards the particular direction.  
+In order to enable the nudging feature for annotations, you can utilize the `Constraints` property of the `AnnotationEditorViewModel` class. By setting it's value to `AnnotationConstraints.Draggable`, you can be able to nudge the annotation by one pixel in specific direction based on the arrow key press. If you hold down the shift key while pressing the right arrow key, the annotation will be moved ten pixels to the right. 
 
 ![WPF Diagram Annotation Nudging](Annotation_images/wpf-diagram-annotation-nudging.gif)
 
 ## How to restrict the nudging area 
 
-Diagram allows you to specify the amount of nudging around the annotation. You can utilize the `Constraints` property of the `AnnotationEditorViewModel`. By Enabling the `AnnotationConstraints.DragLimit` and you can specified the dragging area using the `Draglimit`. You  cannot nudge the annotation behind of this drag limit value.Default value is (10, 10, 10, 10).
+Diagram allows you to specify the nudging area for the annotation. You can utilize the `Constraints` property of the `AnnotationEditorViewModel`. By Enabling the `AnnotationConstraints.DragLimit` and you can specified the dragging area using the `Draglimit`. You  cannot nudge the annotation behind the provided drag limit value. Default value of `DragLimit` is (10, 10, 10, 10).
 
 ![WPF Diagram Annotation DragLimit](Annotation_images/wpf-diagram-annotation-nudge-limit-default.gif)
 
