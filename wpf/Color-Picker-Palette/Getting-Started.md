@@ -115,7 +115,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![WPF Color Picker Palette control added by xaml and code](getting-started_images/wpf-color-picker-palette-xaml-code-control.png)
+![WPF Color Picker Palette control added by xaml and code](getting-started_images/wpf-color-picker-palette-control-added-via-xaml-code.png)
 
 ## Accessing a Color programmatically
 
@@ -143,7 +143,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF  Color Picker Palette programmatically picked the red color](dealing-with-color-picker-palette_images/wpf-programmatically-color.png)
+![WPF  Color Picker Palette programmatically picked the red color](dealing-with-colorpickerpalette_images/wpf-programmatically-picked-red.png)
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
@@ -173,7 +173,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette control with theme and standard color items](getting-started_images/wpf-color-picker-palette-theme-standard-items.png)
+![WPF Color Picker Palette control with theme and standard color items](getting-started_images/wpf-color-picker-palette-with-standard-theme.png)
 
 ## Add your own color in the palette
 
@@ -234,7 +234,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette with own color items](dealing-with-color-picker-palette_images/wpf-color-itemns.png)
+![WPF Color Picker Palette with own color items](dealing-with-colorpickerpalette_images/wpf-own-color-itemns.png)
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/CustomColors) to download the sample that showcases how to add your own color items into the palette. 
 
@@ -262,7 +262,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette with recently used color items](getting-started_images/wpf-color-picker-palette-recent-colors.png)
+![WPF Color Picker Palette with recently used color items](getting-started_images/wpf-color-picker-palette-items-used-recently.png)
 
 ## Choosing a color from MoreColor window
 
@@ -288,7 +288,7 @@ colorPickerPalette.Height = 40;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette with more color panel](getting-started_images/wpf-color-picker-palette-color-window.gif)
+![WPF Color Picker Palette with more color panel](getting-started_images/wpf-color-picker-palette-window.gif)
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
 
@@ -310,7 +310,7 @@ colorPickerPalette.NoColorVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Color Picker Palette reset selected color as Transparent by clicking the No color button](dealing-with-color-picker-palette_images/wpf-color-reset.png)
+![WPF Color Picker Palette reset selected color as Transparent by clicking the No color button](dealing-with-colorpickerpalette_images/wpf-reset-transparency-button.png)
 
 N> [View Sample  in GitHub](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started)
 
