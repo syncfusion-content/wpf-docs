@@ -194,6 +194,8 @@ You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
+![Minimizing MDI window in WPF Document Container](minimizing-mdi-window_images/wpf-document-container-minimizing-window.jpeg)
+
 ## Theme
 
 DocumentContainer supports various built-in themes. Refer to the below links to apply themes for the DocumentContainer,
