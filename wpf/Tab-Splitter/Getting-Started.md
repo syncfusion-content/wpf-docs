@@ -100,7 +100,7 @@ grid.Children.Add(tabSplitter);
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![WPF TabSplitter control](Getting-Started_images/TabSplitter_control.png)
+![WPF TabSplitter control](getting-started_images/wpf-tab-splitter-add-control.png)
 
 ## Adding splitter item
 
@@ -191,7 +191,7 @@ splitterPage1.Content = label1;
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![Shows the splitter pages in WPF TabSplitter](Getting-Started_images/TabSplitter_code.png)
+![Shows the splitter pages in WPF TabSplitter](getting-started_images/wpf-tab-splitter-code.png)
 
 ## Tab orientation
 
@@ -214,7 +214,7 @@ tabSplitterItem1.Orientation = Orientation.Vertical;
 
 {% endtabs %}
 
-![Vertical orientation of WPF TabSplitter](Getting-Started_images/TabSplitter_vertical.png)
+![Vertical orientation of WPF TabSplitter](getting-started_images/wpf-tab-splitter-vertical.png)
 
 ## Collapsing bottom panel
 
@@ -237,7 +237,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true;
 
 {% endtabs %}
 
-![Collapse the splitter item in WPF TabSplitter](Getting-Started_images/TabSplitter_collapse.png)
+![Collapse the splitter item in WPF TabSplitter](getting-started_images/wpf-tab-splitter-collapse.png)
 
 ## Theme
 
@@ -247,4 +247,4 @@ TabSplitter supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF TabSplitter](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF TabSplitter](getting-started_images/wpf-tab-splitter-theme.png)

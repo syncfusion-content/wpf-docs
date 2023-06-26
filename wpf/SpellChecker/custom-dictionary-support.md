@@ -36,7 +36,7 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 1. Add your [HunspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
-![Adding Basic word and Grammar files as resource into the application](Dictionary_images/HunspellAdding.png)
+![WPF SpellChecker adding hunspell dictionary](dictionary_images/wpf-spellchecker-hunspell-adding.png)
 
 2. Create a `HunspellDictionary` instance and add the basic word & grammar file path to the [HunspellDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html#Syncfusion_Windows_Controls_HunspellDictionary_DictionaryUri) & [HunspellDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html#Syncfusion_Windows_Controls_HunspellDictionary_GrammarUri) properties and add the culture to the [HunspellDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.HunspellDictionary.html) property.
 
@@ -128,7 +128,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 N> You can add multiple `HunspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `HunspellDictionary` is used for spell check.
 
-![SpellCheck using Hunspell dictionary](Dictionary_images/HunSpell.png)
+![WPF SpellChecker hunspell dictionary](dictionary_images/wpf-spellchecker-hunspell.png)
 
 ## SpellCheck using Ispell dictionary
 
@@ -143,7 +143,7 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 1. Add your [IspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
-![Adding Basic word and Grammar files as resource into the application](Dictionary_images/IspellAdding.png)
+![WPF SpellChecker adding ispell dictionary](dictionary_images/wpf-spellchecker-ispell-adding.png)
 
 2. Create a `IspellDictionary` instance and add the basic word & grammar file path to the [IspellDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html#Syncfusion_Windows_Controls_IspellDictionary_DictionaryUri) & [IspellDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html#Syncfusion_Windows_Controls_IspellDictionary_GrammarUri) properties and add the culture to the [IspellDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.IspellDictionary.html) property.
 
@@ -233,7 +233,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 N> You can add multiple `IspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `IspellDictionary` is used for spell check.
 
-![SpellCheck using Ispell dictionary](Dictionary_images/Ispell.png)
+![WPF SpellChecker ispell dictionary](dictionary_images/wpf-spellchecker-ispell.png)
 
 ## SpellCheck using OpenOffice dictionary
 
@@ -248,7 +248,7 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 1. Add your [OpenOfficeDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
-![Adding Basic word and Grammar files as resource into the application](Dictionary_images/OpenOfficeAdding.png)
+![WPF SpellChecker adding open office dictionary](dictionary_images/wpf-spellchecker-open-office-adding.png)
 
 2. Create a `OpenOfficeDictionary` instance and add the basic word & grammar file path to the [OpenOfficeDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html) & [OpenOfficeDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html) properties and add the culture to the [OpenOfficeDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.OpenOfficeDictionary.html) property.
 
@@ -338,7 +338,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 
 N> You can add multiple `OpenOfficeDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `OpenOfficeDictionary` is used for spell check.
 
-![SpellCheck using OpenOffice dictionary](Dictionary_images/OpenOffice.png)
+![WPF SpellChecker open office dictionary](dictionary_images/wpf-spellchecker-open-office.png)
 
 ## Add custom words to dictionary
 
@@ -350,7 +350,7 @@ You can add multiple `CustomDictionary` for each culture using `SfSpellChecker.D
 
 1. Create a custom dictionary text file, set build action as `None` and set `Copy to Output Directory` to `Copy if newer`. 
 
-![Adding custom word files as resource into the application](Dictionary_images/CustomDictionaryAdding.png)
+![WPF SpellChecker adding custom word files as resource into the application](dictionary_images/wpf-spellchecker-custom-dictionary-adding.png)
 
 2. Create a `CustomDictionary` instance and add the custom word file path to the [CustomDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.CustomDictionary.html#Syncfusion_Windows_Controls_CustomDictionary_DictionaryUri) property and add the culture to the [CustomDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.CustomDictionary.html) property.
 
@@ -459,7 +459,7 @@ N> If you use the custom dictionary without standard dictionary, all words that 
 
 N> You can add multiple `CustomDictionary` with various culture word files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `CustomDictionary` is used for spell check.
 
-![SpellCheck using Custom dictionary](Dictionary_images/CustomDictionary.png)
+![WPF SpellChecker custom dictionary](dictionary_images/wpf-spellchecker-custom-dictionary.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/CustomSpellCheck) 
 
@@ -569,7 +569,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 
-![SpellCheck using Hunspell dictionary](Dictionary_images/HunSpell.png)
+![WPF SpellChecker hunspell dictionary](dictionary_images/wpf-spellchecker-hunspell.png)
 
 Here, `SpellChecker.Culture` is `fr-FR` culture. So, `fr-FR` cultured `Hunspell` dictionary is used as speck check dictionary.
 
