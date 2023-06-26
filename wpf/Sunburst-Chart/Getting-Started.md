@@ -28,7 +28,7 @@ Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
 Now the Syncfusion.SfSunburstChart.WPF reference is added to the application references and the namespace code is generated in MainWindow.xaml as below.
 
-![WPF Sunburst Chart oroject solution reference](getting-started_images/wpf-sunburst-chart-project-solution.png)
+![WPF Sunburst Chart project solution reference](getting-started_images/wpf-sunburst-chart-project-solution.png)
 
 ![WPF Sunburst Chart added namespace](getting-started_images/wpf-sunburst-chart-add-namespace.png)
 
