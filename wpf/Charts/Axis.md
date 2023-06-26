@@ -408,7 +408,7 @@ chart.PrimaryAxis = axis;
 
 {% endtabs %}
 
-![WPF Chart with Custom Axis Label](axis_images/wpf-chart-custom-axis-label.jpeg)
+![WPF Chart with Custom axis label](axis_images/wpf-chart-custom-axis-label.jpeg)
 
 
 You can also directly bind the collection of labels to the [`LabelsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsSource) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
