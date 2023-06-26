@@ -47,7 +47,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## Nudging an annotation
 
-SfDiagram allows users to nudge annotations by one pixel in a specific direction using the arrow keys. By enabling the `AnnotationConstraints.Selectable` and `AnnotationConstraints.Draggable` through the `Constraints` property in the `AnnotationEditorViewModel` class, users can interact with annotations and adjust their positions incrementally. Additionally, holding down the shift key while pressing the arrow key will move the annotation ten pixels instead of one.
+Diagram allows users to nudge annotations by one pixel in a specific direction using the arrow keys. By enabling the `AnnotationConstraints.Selectable` and `AnnotationConstraints.Draggable` through the `Constraints` property in the `AnnotationEditorViewModel` class, users can interact with annotations and adjust their positions incrementally. Additionally, holding down the shift key while pressing the arrow key will move the annotation ten pixels instead of one.
 
 ![WPF Diagram Annotation Nudging](Annotation_images/wpf-diagram-annotation-nudging.gif)
 
@@ -85,8 +85,8 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-| Property | Value | Output |
-|---|---|---|---|
-| DragLimit | (10,10,10,10) | ![WPF Diagram Annotation NoWrap](Annotation_images/wpf-diagram-annotation-drag-limit-default.gif) |
-| |(40,80,40,40) | ![WPF Diagram Annotation Wrap](Annotation_images/wpf-diagram-annotation-custom-drag-limit.gif) |
+| Property | Value | Output | Keyboard Output |
+|---|---|---|---| --- |
+| DragLimit | (10,10,10,10) | ![WPF Diagram Annotation NoWrap](Annotation_images/wpf-diagram-annotation-drag-limit-default.gif) | ![WPF Diagram	Annotation Nudging](Annotation_images/wpf-diagram-annotation-nudging-draglimit-default.gif) |
+| |(40,80,40,40) | ![WPF Diagram Annotation Wrap](Annotation_images/wpf-diagram-annotation-custom-drag-limit.gif) | ![WPF Diagram Annotation Nudging Custom](Annotation_images/wpf-diagram-annotation-nudging-draglimit-custom.gif) |
 
