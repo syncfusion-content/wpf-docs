@@ -426,7 +426,7 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 
 {% endtabs %}
 
-![WPF Docking Child Window ToolTip](gettingstarted_images/wpf-docking-child-window-tooltip.png)
+![WPF Docking Child Window ToolTip](getting-started_images/wpf-docking-child-window-tooltip.png)
 
 
 ## Theme
@@ -437,4 +437,4 @@ DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF Docking Theme](gettingstarted_images/wpf-docking-theme.png)
+  ![WPF Docking Theme](getting-started_images/wpf-docking-theme.png)
