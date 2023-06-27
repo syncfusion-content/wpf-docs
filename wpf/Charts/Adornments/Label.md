@@ -41,8 +41,8 @@ The following code example demonstrates about define the value to be displayed a
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![DateTime in WPF Chart](adornments_images/wpf-chart-datetime.png) |
-|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![ LabelContentPath in WPF Chart](adornments_images/wpf-chart-label-content-path.png)|
+| DateTime | Displays LabelContent.DateTime value | ![WPF Chart DateTime in Adornment](adornments_images/wpf-chart-datetime.png) |
+|LabelContentPath | Without using a LabelTemplate, it displays the y value by default. If we use LabelTemplate for Adornment, we must specify this in to get the underlying data model as DataContext. |![WPF Chart LabelContentPath in Adornment](adornments_images/wpf-chart-label-content-path.png)|
 | Percentage | Displays the percentage value of series' point among other points |![WPF Chart Percentage in Adornment](adornments_images/wpf-chart-percentage.png) |
 | XValue | Displays the X value of series' point|![WPF Chart XValue in Adornment](adornments_images/wpf-chart-Xvalue.png) |
 | YofTot | Displays the value of Y of total values' point|![WPF Chart YofTot in Adornment](Adornments_images/YofTot.png) |
