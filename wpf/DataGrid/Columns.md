@@ -547,7 +547,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![Changing Columns Order in WPF DataGrid](columns_images/wpf-datagrid-order.png)
+![Changing Columns Order in WPF DataGrid](columns_images/wpf-datagrid-columns-order.png)
 
 ##### DataGrid column formatting
 
