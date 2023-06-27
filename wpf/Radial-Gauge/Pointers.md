@@ -59,7 +59,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img1.png)
+![Needle Pointers in WPF Radial Gauge](pointers_images/wpf-radial-gauge-needle-pointer.png)
 
 ### Different types of needle pointer 
 
@@ -119,7 +119,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img2.png)
+![Types of Needle Pointers in WPF Radial Gauge](pointers_images/wpf-radial-gauge-needle-pointer-types.png)
 
 ### Needle pointer customization
 
@@ -184,7 +184,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img3.png)
+![Needle Pointer Customization in WPF Radial Gauge](pointers_images/wpf-radial-gauge-needle-pointer-customization.png)
 
 ### Needle pointer knob customization
 
@@ -239,7 +239,7 @@ You can able to customize the needle pointer knob size, fill, stroke and stroke 
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_needlepointer_knobcustomization.png)
+![Needle Pointer Knob Customization in WPF Radial](pointers_images/wpf-radial-gauge-needle-pointer-knob-customization.png)
 
 ### Setting visibility of needle pointer
 
@@ -371,7 +371,7 @@ Tail of the needle pointer can be customized by using the [`TailFill`](https://h
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/TailImage.png)
+![Setting Tail for Needle Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-tail-needle-pointer.png)
 
 ## Range pointer
 
@@ -421,7 +421,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img5.png)
+![Range Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer.png)
 
 ### Range pointer customization
 
@@ -476,7 +476,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img6.png)
+![Range Pointer Customization in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer-customization.png)
 
 ### Setting visibility for range pointer
 
@@ -524,7 +524,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img7.png)
+![Setting Visibility for Range Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer-visibility.png)
 
 ### Setting position for range pointer
 
@@ -595,7 +595,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img8.png)
+![Direct Range Pointer Position in WPF Radial Gauge](pointers_images/wpf-radial-gauge-direct-range-pointer-position.png)
 
 #### Setting offset range pointer position with fixed width	
 
@@ -647,7 +647,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
+![Offset Range Pointer Position in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer-position.png)
 
 #### Setting start and end position of the range pointer with offset
 
@@ -699,7 +699,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_rangepointer_custom_offset.png)
+![Start and End Position in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer-custom-offset.png)
 
 ### Range pointer start customization
 
@@ -754,7 +754,7 @@ The [`RangeStart`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_rangepointer_custom_start.png)
+![Range Pointer Start Customization in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-pointer-custom-start.png)
 
 ### Setting range cap for range pointer
 
@@ -798,7 +798,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.Ci
 
 {% endtabs %}
 
-![RangeCap for Circular Gauge RangePointer](Pointers_images/RangeCap.png)
+![Range Cap for Circular Gauge Range Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-range-cap.png)
 
 ## Symbol pointer
 
@@ -848,7 +848,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img10.png)
+![Symbol Pointer In WPF Radial Gauge](pointers_images/wpf-radial-gauge-symbol-pointers.png)
 
 ### Symbol pointer types
 
@@ -917,7 +917,7 @@ You can modify the symbol pointer view by choosing available options in [`Symbol
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_pentagon_symbolpointer.png)
+![Symbol Pointer Types in WPF Radial Gauge](pointers_images/wpf-radial-gauge-symbol-pointer-types.png)
 
 ### Setting custom symbol pointer
 
@@ -979,7 +979,7 @@ You can customize the `SymbolPointer` by setting [`Symbol`](https://help.syncfus
 
 {% endhighlight %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_custom_symbolpointer.png)
+![Setting Custom Symbol Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-custom-symbol-pointer.png)
 
 ### Symbol pointer customization
 
@@ -1036,7 +1036,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img11.png)
+![Symbol Pointer Customization in WPF Radial Gauge](pointers_images/wpf-radial-gauge-pointer-customization.png)
 
 ### Setting visibility of symbol pointer
 
@@ -1126,7 +1126,7 @@ The [`Offset`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.Circ
 
 {% endtabs %}
 
-![SymbolPointer with offset image](Pointers_images/Symbol_Offset.png)
+![Symbol Pointer with Offset Image in WPF Radial Gauge](pointers_images/wpf-radial-gauge-symbol-offset.png)
 
 ### Setting multiple pointers
 
@@ -1206,7 +1206,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img13.png)
+![Setting Multiple Pointers in WPF Radial Gauge](pointers_images/wpf-radial-gauge-multiple-pointers.png)
 
 ## Setting animation for pointer
 
@@ -1289,7 +1289,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ga
 
 {% endtabs %}
 
-![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)
+![Setting Animation for Pointer in WPF Radial Gauge](pointers_images/wpf-radial-gauge-animation-pointer.gif)
 
 ## Circular pointer dragging
 
@@ -1378,7 +1378,7 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 {% endhighlight %}
 {% endtabs %}
 
-![Pointer dragging](Pointers_images/Pointer_dragging.gif)
+![Pointer Dragging in WPF Radial Gauge](pointers_images/wpf-radial-gauge-pointer-dragging.gif)
 
 ## Events
 

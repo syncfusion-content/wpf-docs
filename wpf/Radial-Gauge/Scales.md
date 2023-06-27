@@ -44,7 +44,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
 {% endtabs %}
 
-![Circular Gauge Scale Image](Scales_images/Scales_img1.png)
+![Circular Gauge Scale Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-scale.png)
 
 ## Setting start and end values for scale
 
@@ -98,7 +98,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.
 
 {% endtabs %}
 
-![Circular Scale With Start And End Value Image](Scales_images/Scales_img2.png)
+![Circular Scale With Start And End Value Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-start-end-value.png)
 
 ## Setting start and sweep angles for scale
 
@@ -152,7 +152,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Gauge.C
 
 {% endtabs %}
 
-![Circular Scale With Start And Sweep Angle Image](Scales_images/Scales_img3.png)
+![Circular Scale With Start And Sweep Angle Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-start-sweep-angle.png)
 
 ## Setting interval for scale
 
@@ -208,7 +208,7 @@ The [`Interval`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gauges.Ci
 
 {% endtabs %}
 
-![Circular Scale Interval Image](Scales_images/Scales_img4.png)
+![Circular Scale Interval Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-scale-interval.png)
 
 N> You can specify the interval value upto 5 decimal places while showing the labels of linear scale.
 
@@ -262,7 +262,7 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Gau
 
 {% endtabs %}
 
-![Circular Scale Direction Image](Scales_images/Scales_img5.png)
+![Circular Scale Direction Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-scale-direction.png)
 
 ## Setting multiple scales for circular gauge
 
@@ -418,4 +418,4 @@ You can add multiple scales to the same circular gauge and customize all the sca
 
 {% endtabs %}
 
-![Multiple Scales Image](Scales_images/Scales_img6.png)
+![Multiple Scales Image in WPF Radial Gauge](scales_images/wpf-radial-gauge-multiple-scales.png)
