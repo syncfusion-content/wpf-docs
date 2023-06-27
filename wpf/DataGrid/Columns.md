@@ -773,7 +773,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop Column in WPF DataGrid](columns_images/wpf-datagrid-drag-and-drop.png)
+![Drag and Drop Column in WPF DataGrid](columns_images/wpf-datagrid-drag-and-drop-columns.png)
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowDragging) property.
 
@@ -971,5 +971,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid Column with Data Binding](columns_images/wpf-datagrid-data-binding.png)
+![WPF DataGrid Column with Data Binding](columns_images/wpf-datagrid-data-binding-columns.png)
 
