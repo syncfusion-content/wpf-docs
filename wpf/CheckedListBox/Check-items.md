@@ -20,7 +20,7 @@ In [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), it
 
 You can check or uncheck the items by using collection or property.
 
-### Check items using Collection
+## Check items using Collection
 
 We can check or uncheck the particular item by add or remove that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_SelectedItems) collection. 
 
@@ -109,18 +109,32 @@ class ViewModel : NotificationObject {
 
 Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/CheckItems) to download the sample that showcases check the items by using the collection.
 
-### Check items using Property
+## Check items using Property
 
-We can change the item’s checked state by using the [CheckListBoxItem.IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html#Syncfusion_Windows_Tools_Controls_CheckListBoxItem_IsChecked) property bounded with any boolean property. There is limitation when using this approach. During virtualization, views will not be loaded, so it does not know the bounded value of `CheckListBoxItem.IsChecked` property. Hence, `SelectedItems` will not be in synchronized. However we can turnoff virtualization if you want both selected items to be in sync with bounded boolean property.
+The [IsCheckedMemberPath](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.CheckListBox.html#Syncfusion_Windows_Tools_Controls_CheckListBox_IsCheckedMemberPathProperty) property in the CheckListBox allows you to directly control the checked state of items using a specific property from your data source. By specifying the name of the boolean property, the CheckListBox will automatically update the checked state of the items based on the value of the designated property. This provides a simple and straightforward way to manage the checked state of items in the CheckListBox without the need for complex bindings. With IsCheckedMemberPath, you have full control over the checked state of items, making it easier to track and respond to changes in your application.
 
 {% tabs %}
 {% highlight C#%}
 
 //Model.cs
-public class GroupItem {
+public class GroupItem : INotifyPropertyChanged
+{
     public string Name { get; set; }
     public string GroupName { get; set; }
-    public bool IsChecked { get; set; }
+    private bool enabled;
+    public bool Enabled
+    {
+        get { return enabled; }
+        set { isChecked1 = value;
+              OnPropertyChanged("Enabled");
+            }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected virtual void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 }
 //ViewModel.cs
 public class ViewModel : NotificationObject {
@@ -160,7 +174,7 @@ public class ViewModel : NotificationObject {
                 if (i % 2 == 0)
                 {
                     //Define a checked state for items
-                    myitem.IsChecked = true;
+                    myitem.Enabled = true;
                 }
                 VirtualCollection.Add(myitem);
             }
@@ -186,19 +200,13 @@ public class ViewModel : NotificationObject {
     </local:ViewModel>
 </Window.Resources>
 <Grid>
-    <syncfusion:CheckListBox ItemsSource="{Binding VirtualCollection}"
+    <syncfusion:CheckListBox IsCheckedMemberPath="Enabled"
+                             ItemsSource="{Binding VirtualCollection}"
                              GroupDescriptions="{Binding GroupDescriptions}"
                              DataContext="{StaticResource viewModel}"
                              DisplayMemberPath="Name" 
                              Name="checkListBox"
                              Margin="20">
-        
-                    <!--Binding the IsChecked property from ViewModel-->
-                    <syncfusion:CheckListBox.Resources>
-                        <Style TargetType="syncfusion:CheckListBoxItem">
-                            <Setter Property="IsChecked" Value="{Binding IsChecked}"/>
-                        </Style>
-                    </syncfusion:CheckListBox.Resources>
 
                     <!--Disable the Virtualization to update the checked item-->
                     <syncfusion:CheckListBox.ItemsPanel>
