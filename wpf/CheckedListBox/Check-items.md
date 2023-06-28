@@ -125,7 +125,7 @@ public class GroupItem : INotifyPropertyChanged
     public bool Enabled
     {
         get { return enabled; }
-        set { isChecked1 = value;
+        set { enabled = value;
               OnPropertyChanged("Enabled");
             }
     }
@@ -162,7 +162,7 @@ public class ViewModel : NotificationObject {
     public ViewModel() {
         GroupDescriptions = new ObservableCollection<GroupDescription>();
         VirtualCollection = new ObservableCollection<GroupItem>();
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 10; i++)
         {
             for (int j = 0; j < 10; j++)
             {
