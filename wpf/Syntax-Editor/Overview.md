@@ -26,7 +26,7 @@ Essential Edit WPF allows to create interactive code editor applications with it
 
 The following image shows an example of Essential Edit control.
 
-![Syntax Editor window](Overview_images/Overview_img1.jpeg)
+![WPF Syntax Editor overview](overview_images/wpf-syntax-editor-overview.jpeg)
 
 
 **Real world scenarios**
