@@ -40,7 +40,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#wizard) will be added automatically.
 
-![Adding control via designer in WPF Wizard Control](getting-started_images/wpf-wizard-control-adding-control-via-designer.png)
+![WPF Wizard Control adding via designer](getting-started_images/wpf-wizard-control-adding-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in XAML, do the below steps,
@@ -119,7 +119,7 @@ namespace WizardControl
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Gettingstarted of WPF WizardControl](getting-started_images/wpf-wizard-control-getting-started.jpeg)
+![Getting started of WPF Wizard Control](getting-started_images/wpf-wizard-control-getting-started.jpeg)
 
 ## Adding multiple pages
 
@@ -152,7 +152,7 @@ wizardControl.Items.Add(wizardPage3);
 
 {% endtabs %}
 
-![Adding control manually in C# in WPF Wizard Control](getting-started_images/wpf-wizard-control-adding-control-in-c#.png)
+![WPF Wizard control added by C# code](getting-started_images/wpf-wizard-control-adding-control-using-c#.png)
 
 ## Theme
 
