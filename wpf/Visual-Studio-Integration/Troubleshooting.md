@@ -62,7 +62,7 @@ The Syncfusion Troubleshooter handles the assembly reference issues listed below
 
    **For Instance:**  : If “Syncfusion.Chart.WPF” assembly referred in project and “Syncfusion.Shared.WPF” (dependent of Syncfusion.Chart.Base) not referred in project, the Syncfusion Troubleshooter will show dependent assembly missing.
 
-   ![Dependent assemblies missing issue shown in Troubleshooter wizard](syncfusiontroubleshooter_images/syncfusion-troubleshooter-missing-dependent-assemlies.png)
+   ![Dependent assemblies missing issue shown in Troubleshooter wizard](syncfusiontroubleshooter_images/syncfusion-troubleshooter-missing-dependent-assemblies.png)
 
 2. Syncfusion Troubleshooter compare all Syncfusion assembly’s versions in the same project. If found any Syncfusion assembly version inconsistency, the Syncfusion Troubleshooter will show Syncfusion assemblies version mismatched. 
 
