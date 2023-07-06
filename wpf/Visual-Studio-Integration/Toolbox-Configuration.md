@@ -22,7 +22,7 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    **Option 1:**   
    Open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
    
-   ![Add On and Utilities in Toolbox Installer for wpf](toolbox-configuration_images/wpf-toolbox-installer-add-on-and-utilities.png)
+   ![Add On and Utilities in Toolbox Installer for WPF](toolbox-configuration_images/wpf-toolbox-installer-add-on-and-utilities.png)
    
    **Option 2:**  
    Click **Syncfusion menu** and choose **Essential Studio for WPF > Toolbox Configuration...** in **Visual Studio**
@@ -53,7 +53,7 @@ To add the Syncfusion WPF components via the Syncfusion Toolbox Installer, perfo
    
 3. The successful configuration of Toolbox is indicated by an Information message. Click OK.
 
-   ![Toolbox Installer syncfusion menu in visual studio](toolbox-configuration_images/toolbox-installer-in-syncfusion-menu-in-visual-studio.png)
+   ![Toolbox Installer Syncfusion menu in visual studio](toolbox-configuration_images/toolbox-installer-in-syncfusion-menu-in-visual-studio.png)
    
    
    N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox.
