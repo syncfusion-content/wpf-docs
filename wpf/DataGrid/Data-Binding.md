@@ -37,7 +37,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression) property.
 * `AddNewRow` is not support when filtering is enabled.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) is not supported.
+* [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Filter) is not supported.
 * Custom sorting is not supported.
 * Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan) values is not supported.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) is not supported.
@@ -124,10 +124,10 @@ For example, when you set [SourceType](https://help.syncfusion.com/cr/wpf/Syncfu
 
 ### ItemsSourceChanged
 
-[SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the data source is changed by using ItemsSource property.
-This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)as objects.
+[SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSourceChanged) event occurs when the data source is changed by using ItemsSource property.
+This event receives two arguments namely `sender` that handles `SfDataGrid` and [GridItemsSourceChangedEventArgs ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html)as objects.
 
-The [GridItemsSourceChangedEventArgs ](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventHandler.html)object contains the following properties:
+The [GridItemsSourceChangedEventArgs ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html)object contains the following properties:
 
 * [OldItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridItemsSourceChangedEventArgs_OldItemsSource) - Gets the value of old data source
 * [NewItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridItemsSourceChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridItemsSourceChangedEventArgs_NewItemsSource) - Get the value of new data source
@@ -214,7 +214,7 @@ The following events are associated with View.
 
 ### RecordPropertyChanged
 
-[RecordPropertyChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.PropertyChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_RecordPropertyChanged) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.PropertyChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
 
 `PropertyChangedEventArgs` has below property,
 
@@ -222,7 +222,7 @@ The following events are associated with View.
 
 ### CollectionChanged
 
-[CollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
+[CollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_CollectionChanged) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
@@ -238,7 +238,7 @@ The following events are associated with View.
 
 ### SourceCollectionChanged
 
-[SourceCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ICollectionViewAdv.html) event is raised when you make changes in SourceCollection for example add or remove the collection. The event receives two arguments namely sender that handles GridQueryableCollectionViewWrapper object and NotifyCollectionChangedEventArgs as object.
+[SourceCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_SourceCollectionChanged) event is raised when you make changes in SourceCollection for example add or remove the collection. The event receives two arguments namely sender that handles GridQueryableCollectionViewWrapper object and NotifyCollectionChangedEventArgs as object.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
@@ -499,7 +499,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 
 ### Save back to Database
 
-You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
+You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidated), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidated) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValueChanged) events. 
 
 The below code example will save back the changed value of row to data  base.
 
@@ -627,7 +627,7 @@ Now, run the application and you can see the following screenshot shows the SfDa
 
 ### Save back to Database
 
-You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
+You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidated), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidated) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValueChanged) events. 
 
 The below code example will save back the changed value of row to database.
 
@@ -731,7 +731,7 @@ Now, run the application and you can see the following screenshot displays the S
 
 ### Save back to Database
 
-You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
+You can save the row or cell level changes back to the data source by handling [SfDataGrid.RowValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidated), [SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidated) or [SfDataGrid.CurrentCellValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValueChanged) events. 
 
 The below code example will save back the changed value of row to database.
 You can refer the below MSDN link for more information.

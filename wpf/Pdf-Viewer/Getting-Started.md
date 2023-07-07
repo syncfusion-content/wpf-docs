@@ -174,7 +174,7 @@ N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine t
 	</Window.DataContext>
 	~~~
 
-3.	After setting the `DataContext`, bind the file stream property to the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) dependency property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the following code sample in XAML.
+3.	After setting the `DataContext`, bind the file stream property to the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) dependency property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ItemSource) using the following code sample in XAML.
 
 	~~~xaml
 	<syncfusion:PdfViewerControl x:Name="pdfViewer" ItemSource="{Binding DocumentStream}"/>
