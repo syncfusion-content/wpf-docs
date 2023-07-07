@@ -128,7 +128,7 @@ this.treeGrid.ShowSortNumbers = true;
 
 ## Programmatic Sorting
 
-You can sort the data programmatically by adding or removing the SortColumnDescription in [SfTreeGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) property.
+You can sort the data programmatically by adding or removing the SortColumnDescription in [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) property.
 
 N> [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events are not raised when the data sorted programmatically through `SfTreeGrid.SortColumnDescriptions`.
 
@@ -159,7 +159,7 @@ this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnNam
 
 ### Removing sort columns
 
-You can unsort the data by removing the corresponding `SortColumnDescription` from the [SfTreeGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) property.
+You can unsort the data by removing the corresponding `SortColumnDescription` from the [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -174,7 +174,7 @@ if (sortColumnDescription != null)
 
 ### Clear sorting
 
-You can clear sorting, by clearing the [SfTreeGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html).
+You can clear sorting, by clearing the [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SortColumnDescription.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -187,15 +187,15 @@ this.treeGrid.SortColumnDescriptions.Clear();
 ## Custom sorting
 
 SfTreeGrid allows you to sort the columns based on the custom logic. 
-The custom sorting can be applied by adding the [SortComparer](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
+The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
 
-The [SortComparer](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) have the following properties,
+The [SortComparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html) have the following properties,
 
 [PropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html#Syncfusion_Data_SortComparer_PropertyName) - Gets or sets the name of the column to apply custom sorting.
 
 [Comparer](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.SortComparer.html#Syncfusion_Data_SortComparer_Comparer) - Gets or sets the custom comparer in which you can code to compare the data using custom logic. 
 
-You can implement [ISortDirection](http://help.syncfusion.com/cr/wpf/Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending. 
+You can implement [ISortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending. 
 
 Follow the below steps to add custom comparer to sort using custom logic,
 
@@ -280,11 +280,11 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 ### SortColumnChanging event
 
-[SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
+[SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html) has following members which provides information for `SortColumnChanging` event.
 
 [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) - Gets the action triggered this event. 
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) - Setting value to `true`, cancels the triggered action. 
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) - Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescriptions` that are added.
 
@@ -292,7 +292,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [CancelScroll](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_CancelEventArgs_Cancel) property of `SortColumnChanging` event.
 
 {% tabs %}
 {% highlight c# %}

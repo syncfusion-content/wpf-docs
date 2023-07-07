@@ -688,33 +688,33 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to create chart in VB .NET WPF`]( https://www.syncfusion.com/kb/10796/how-to-create-chart-in-vb-net-wpf)
+[`How to create chart in VB .NET WPF`](https://support.syncfusion.com/kb/article/9550/how-to-create-chart-control-example-in-vb-net-wpf)
 
-[`How to create a chart control in WPF application using XAML`](https://www.syncfusion.com/kb/10786/how-to-create-a-chart-control-in-wpf-application-using-xaml)
+[`How to create a chart control in WPF application using XAML`](https://support.syncfusion.com/kb/article/9513/how-to-create-a-chart-control-in-wpf-application-using-xaml)
 
-[`How to create chart in C# WPF`](https://www.syncfusion.com/kb/10783/how-to-create-chart-in-c-wpf)
+[`How to create chart in C# WPF`](https://support.syncfusion.com/kb/article/9466/how-to-create-chart-control-example-in-c-wpf)
 
-[`How to create Chart in F# WPF`](https://www.syncfusion.com/kb/11663/how-to-create-chart-in-f-wpf)
+[`How to create Chart in F# WPF`](https://support.syncfusion.com/kb/article/9843/how-to-create-chart-in-f-wpf)
 
-[`How to add Context Menu for WPF Chart`](https://www.syncfusion.com/kb/10726/how-to-add-contextmenu-for-wpf-chart)
+[`How to add Context Menu for WPF Chart`](https://support.syncfusion.com/kb/article/9349/how-to-add-contextmenu-for-wpf-chart)
 
-[`How to add WPF SfChart inside the SfDataGrid`](https://www.syncfusion.com/kb/10386/how-to-add-wpf-sfchart-inside-the-sfdatagrid)
+[`How to add WPF SfChart inside the SfDataGrid`](https://support.syncfusion.com/kb/article/9061/how-to-add-wpf-sfchart-inside-the-sfdatagrid)
 
-[`How to add footer content to WPF Chart`](https://www.syncfusion.com/kb/10201/how-to-add-footer-content-to-wpf-sfchart)
+[`How to add footer content to WPF Chart`](https://support.syncfusion.com/kb/article/9097/how-to-add-footer-content-to-wpf-sfchart)
 
 [`How to access data from Meta Trader to chart using TradePlatform.Net in WPF`](https://www.syncfusion.com/kb/7932/how-to-access-data-from-metatrader-to-wpf-chart-sfchart)
 
-[`How to synchronize the selection between the chart and data grid`](https://www.syncfusion.com/kb/3579/how-to-synchronize-the-selection-between-wpf-chart-sfchart-and-datagrid)
+[`How to synchronize the selection between the chart and data grid`](https://support.syncfusion.com/kb/article/3753/how-to-synchronize-the-selection-between-wpf-chart-sfchart-and-datagrid)
 
-[`How to generate dynamic number of series based on common items source`](https://www.syncfusion.com/kb/7578/how-to-generate-dynamic-number-of-series-based-on-common-items-source)
+[`How to generate dynamic number of series based on common items source`](https://support.syncfusion.com/kb/article/6858/how-to-generate-dynamic-number-of-series-based-on-common-items-source-in-wpf-chart-sfchart)
 
-[`How to display the chart area alone in Chart`](https://www.syncfusion.com/kb/5477/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
+[`How to display the chart area alone in Chart`](https://support.syncfusion.com/kb/article/5116/how-to-display-the-chart-area-alone-in-wpf-chart-sfchart)
 
-[`How to redraw the chart while dragging the series out of the range`](https://www.syncfusion.com/kb/5366/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
+[`How to redraw the chart while dragging the series out of the range`](https://support.syncfusion.com/kb/article/5173/how-to-redraw-wpf-chart-sfchart-while-dragging-the-series-out-of-the-range)
 
-[`How to create a real time Chart using MVVM in WPF`](https://www.syncfusion.com/kb/11416/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
+[`How to create a real time Chart using MVVM in WPF`](https://support.syncfusion.com/kb/article/10039/how-to-create-a-real-time-chart-sfchart-using-mvvm-in-wpf)
 
-[`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-in-wpf-chart-sfchart)
+[`How to add watermark to chart`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart)
 
 ## Theme
 

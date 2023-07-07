@@ -133,5 +133,5 @@ N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/cha
 
 ## See also
 
-[`How to add watermark to chart`](https://www.syncfusion.com/kb/5225/how-to-add-watermark-to-chart)
+[`How to add watermark to chart`](https://support.syncfusion.com/kb/article/4952/how-to-add-watermark-in-wpf-chart-sfchart)
 
