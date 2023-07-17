@@ -32,7 +32,7 @@ To change the DiagramTheme,
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.Theme>
-        <syncfusion:OfficeTheme></sfdiagram:OfficeTheme>
+        <syncfusion:OfficeTheme></syncfusion:OfficeTheme>
     </syncfusion:SfDiagram.Theme>
 </syncfusion:SfDiagram>
 
@@ -60,14 +60,14 @@ To change the Variant and Style,
 <!--Initialize the Sfdiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
     <syncfusion:SfDiagram.Theme>
-        <syncfusion:OfficeTheme></sfdiagram:OfficeTheme>
+        <syncfusion:OfficeTheme></syncfusion:OfficeTheme>
     </syncfusion:SfDiagram.Theme>
     <syncfusion:SfDiagram.Nodes>
         <!--Initialize the NodeCollection-->
         <syncfusion:NodeCollection>
             <!--Initialize the Node-->
             <syncfusion:NodeViewModel OffsetX="100" OffsetY="100" UnitWidth="75" UnitHeight = "75" Shape="{StaticResource Ellipse}" ThemeStyleId="Variant1">
-            </sfdiagram:NodeViewModel>     
+            </syncfusion:NodeViewModel>     
         </syncfusion:NodeCollection>
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
