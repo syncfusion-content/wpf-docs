@@ -11,7 +11,7 @@ documentation: ug
 
 The various elements of the [sfColorPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.SfColorPalette.html) are illustrated in the following screenshot.
 
-![VisualStructure of SfColorPalatte](Overview_images/Overview_img1.png)
+![Visual Structure of Sf WPF Color Palatte](overview_images/wpf-color-palette-visual-structure.png)
 
   * The [Swatch button](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Media.ColorPaletteButton.html) is used to switch between available color packages.
 
