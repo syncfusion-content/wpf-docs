@@ -48,7 +48,7 @@ The following code example illustrates how to initialize the adornment.
 
 {% endtabs %}
 
-![WPF Chart Data Markers in Adornment](Adornments_images/wpf-chart-data-markers-in-adornment.PNG) 
+![Data markers in WPF Chart](adornments_images/wpf-chart-data-markers.PNG) 
 
 ## See also
 

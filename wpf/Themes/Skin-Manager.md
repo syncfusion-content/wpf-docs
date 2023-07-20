@@ -384,7 +384,7 @@ There are several ways for including the Syncfusion [SfSkinManager](https://help
 1) Add a reference to the `Syncfusion.SfSkinManager.WPF` assembly or [Syncfusion.SfSkinManager.WPF nuget package](https://www.nuget.org/packages/Syncfusion.SfSkinManager.WPF/) to the project.
 2) Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the assembly namespace `Syncfusion.SfSkinManager` into a XAML page.
 
-![Add SfSkinManager Reference](Skin-Manager_images/WPF-SkinManager-Reference.png)
+![Add WPF SkinManager Reference](skin-manager_images/wpf-theme-reference.png)
 
 {% tabs %}
 
@@ -404,7 +404,7 @@ There are several ways for including the Syncfusion [SfSkinManager](https://help
 
 The [SfSkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSkinManager.SfSkinManager.html) supports to apply themes listed in [themes list](https://help.syncfusion.com/wpf/themes/skin-manager#themes-list). To use a theme in the application, add Reference to the corresponding theme assembly. For example, to apply `MaterialDark` theme, attach `Syncfusion.Themes.MaterialDark.Wpf` assembly or [NuGet](https://www.nuget.org/packages/Syncfusion.Themes.MaterialDark.WPF/) reference to the project. While applying a theme to a Window, SkinManager inherits the same theme to all the elements inside the Window.
 
-![Add theme assembly reference](Skin-Manager_images/Add-MaterialDark-Theme-Assembly-Reference.png)
+![Add WPF SkinManager theme assembly reference](skin-manager_images/wpf-theme-assembly-reference.png)
 
 
 ### Set theme
@@ -453,7 +453,7 @@ SfSkinManager.SetTheme(this, new Theme("MaterialDark"));
 
 {% endtabs %}
 
-![Applied skinmanager theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Applied-SkinManager-Theme-WPF-ChromelessWindow-DataGrid.jpg)
+![Applied WPF SkinManager theme for WPF ChromelessWindow and SfDataGrid control](skin-manager_images/wpf-skinmanager-themes-applied.jpg)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-themes-demo-using-skinmanager).
 
@@ -637,7 +637,7 @@ SfSkinManager.RegisterThemeSettings("FluentDark", themeSettings);
 
 {% endtabs %}
 
-![Applied custom theme for WPF ChromelessWindow and SfDataGrid control](Skin-Manager_images/Custom-Theme-WPF-ChromelessWindow-DataGrid.png)
+![Applied custom theme for WPF SkinManager ChromelessWindow and SfDataGrid control](skin-manager_images/wpf-theme-custom-chromelesswindow-datagrid.png)
 
 Customize theme colors using the predefined palette
 
@@ -708,7 +708,7 @@ public partial class MainWindow : ChromelessWindow
 
 {% endtabs %}
 
-![Applied theme specific for WPF ChromelessWindow and ButtonAdv control](Skin-Manager_images/Theme-WPF-ChromelessWindow-ButtonAdv.png)
+![Applied theme specific for WPF SkinManager ChromelessWindow and ButtonAdv control](skin-manager_images/wpf-themes-chromelesswindow-button.png)
 
 ## Apply themes to the controls derived from Syncfusion controls
 
@@ -1018,7 +1018,7 @@ We can customize or override the theme styles by following the steps outlined be
 
 {% endtabs %}
 
-![Customizing theme styles basedOn for buttons](Skin-Manager_images/CustomizingStyle.png)
+![Customizing theme styles basedOn for buttons in WPF SkinManager](skin-manager_images/wpf-themes-customizing-style.png)
 
 ### Change visual style at runtime
 
@@ -1194,8 +1194,8 @@ We have provided an example that demonstrates switching between the Window11Ligh
 
 Light Theme:
 
-![Customizing theme while run time in Light](Skin-Manager_images/Switching-theme-at-runtime-light1.png)
+![Customizing theme while run time in Light in WPF SkinManager](skin-manager_images/wpf-skin-manager-light-theme.png)
 
 Dark Theme:
-![Customizing theme while run time in Dark](Skin-Manager_images/Switching-theme-at-runtime-Dark1.png)
+![Customizing theme while run time in Dark in WPF SkinManager](skin-manager_images/wpf-skin-manager-dark-theme.png)
 

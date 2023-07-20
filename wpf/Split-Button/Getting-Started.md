@@ -489,7 +489,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind
 
 ![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add split button control and its basic features like image sizing options and size modes.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Getting-Started) in GitHub. This sample showcases how to add split button control and its basic features like image sizing options and size modes.
 
 ## IsDefault mode
 

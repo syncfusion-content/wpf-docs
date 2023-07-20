@@ -121,7 +121,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistribution Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-accumulation-indicator.png)
+![Accumulation distribution indicator in WPF Chart](technical-indicators_images/wpf-chart-accumulation-indicator.png)
 
 
 The following sections covers all the different types of technical indicators available in SfChart.
@@ -130,7 +130,7 @@ Most of the indicators are having the [`Period`](https://help.syncfusion.com/cr/
 
 ## Average True Range
 
-You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#) using the following code example
+You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html) using the following code example
 
 {% tabs %}
 
@@ -175,12 +175,12 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AverageTrueRange Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-average-range-indicator.png)
+![Average true range indicator in WPF Chart](technical-indicators_images/wpf-chart-average-range-indicator.png)
 
 
 ## Simple Average 
 
-The following code example demonstrates the usage of [`SimpleAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html#).
+The following code example demonstrates the usage of [`SimpleAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html).
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![SimpleAverage Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-simple-average-indicator.png)
+![Simple average indicator in WPF Chart](technical-indicators_images/wpf-chart-simple-average-indicator.png)
 
 
 ## RSI 
@@ -236,7 +236,7 @@ The Relative Strength Index(RSI) indicators are having additional two lines othe
 
 The [`UpperLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_UpperLineColor) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_LowerLineColor) property is used to define the color for the line indicating oversold region.
 
-To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
+To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html), you can use the following code example:
 
 {% tabs %}
 
@@ -287,7 +287,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![RSI Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-rsi-technical-indicator.png)
+![RSI technical indicator in WPF Chart](technical-indicators_images/wpf-chart-rsi-technical-indicator.png)
 
 
 ## Momentum 
@@ -341,7 +341,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Momentum Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-momentum-technical-indicator.png)
+![Momentum technical indicator in WPF Chart](technical-indicators_images/wpf-chart-momentum-technical-indicator.png)
 
 
 ## Stochastic 
@@ -403,12 +403,12 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Stochastic Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-stochastic-technical-indicator.png)
+![Stochastic technical indicator in WPF Chart](technical-indicators_images/wpf-chart-stochastic-technical-indicator.png)
 
 
 ## Exponential Average
 
-The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html) and this can be defined using the following code examples.
+The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html) is similar to [SimpleAverageIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html) and this can be defined using the following code examples.
 
 {% tabs %}
 
@@ -453,12 +453,12 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Exponential Average Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-exponential-average-indicator.png)
+![Exponential average indicator in WPF Chart](technical-indicators_images/wpf-chart-exponential-average-indicator.png)
 
 
 ## Triangular Average 
 
-The [`TriangularAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html#) can be defined as in the following code example.
+The [`TriangularAverageIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html) can be defined as in the following code example.
 
 {% tabs %}
 
@@ -503,12 +503,12 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Triangular Average Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-triangular-average-indicator.png)
+![Triangular average indicator in WPF Chart](technical-indicators_images/wpf-chart-triangular-average-indicator.png)
 
 
 ## Accumulation Distribution 
 
-The following code example help you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html#).
+The following code example help you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html).
 
 {% tabs %}
 
@@ -557,14 +557,14 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistribution Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-accumulation-distribution-indicator.png)
+![Accumulation distribution indicator in WPF Chart](technical-indicators_images/wpf-chart-accumulation-distribution-indicator.png)
 
 
 ## Bollinger Band
 
 This indicator also having [`UpperLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_UpperLineColor), [`LowerLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_LowerLineColor) and [`SignalLineColor`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_SignalLineColor) property for defining the brushes for the indicator lines.
 
-You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#) using the following code example:
+You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html) using the following code example:
 
 {% tabs %}
 
@@ -615,7 +615,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![Bollinger Band Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-bollinger-indicator.png)
+![Bollinger band indicator in WPF Chart](technical-indicators_images/wpf-chart-bollinger-indicator.png)
 
 
 ## MACD 
@@ -626,7 +626,7 @@ Other than signal line, MACD is having convergence and divergence line. The brus
 
 Also you can draw [`Line`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDType.html) using the [`Type`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_Type) property, which defines the type of MACD to be drawn.
 
-You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
+You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html) using the following code example:
 
 {% tabs %}
 
@@ -681,7 +681,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![MACD Technical Indicator in WPF Chart](Technical-Indicators_images/wpf-chart-macd-indicator.png)
+![MACD technical indicator in WPF Chart](technical-indicators_images/wpf-chart-macd-indicator.png)
 
 
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

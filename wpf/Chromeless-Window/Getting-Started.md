@@ -84,7 +84,7 @@ public partial class MainWindow : ChromelessWindow
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![wpf chromeless window application](Getting-Started_images/wpf-chromeless-window.jpeg)
+![WPF Chromeless Window application](getting-started_images/wpf-chromeless-window.jpeg)
 
 
 ## Customizing title bar
@@ -110,7 +110,7 @@ You can customize the background of the title bar by setting the [TitleBarBackgr
 {% endhighlight %}
 {% endtabs %}
 
-![wpf chromeless window title bar backcolor](Getting-Started_images/wpf-chromeless-window-title-back-color.png)
+![WPF Chromeless Window title bar backcolor](getting-started_images/wpf-chromeless-window-title-back-color.png)
 
 
 ## Title bar font
@@ -134,7 +134,7 @@ The font of the caption in the title bar can be customized using the [TitleFontS
 {% endhighlight %}
 {% endtabs %}
 
-![wpf chromeless window title font size](Getting-Started_images/wpf-chromeless-window-title-font-size.png)
+![WPF Chromeless Window title font size](getting-started_images/wpf-chromeless-window-title-font-size.png)
 
 
 ## Title bar height
@@ -159,7 +159,7 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 {% endhighlight %}
 {% endtabs %}
 
-![wpf chromeless window title bar height](Getting-Started_images/wpf-chromeless-window-title-height.png)
+![WPF Chromeless Window title bar height](getting-started_images/wpf-chromeless-window-title-height.png)
 
 ## Title bar text alignment
 
@@ -190,7 +190,7 @@ The text alignment of the title can be set using the [`TitleTextAlignment`](http
 {% endhighlight %}
 {% endtabs %}
 
-![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
+![Title text alignment in WPF Chromeless Window](getting-started_images/wpf-chromeless-window-title-text-alignment.png)
 
 
 
@@ -215,7 +215,7 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 {% endhighlight %}
 {% endtabs %}
 
-![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
+![WPF Chromeless Window icon](getting-started_images/wpf-chromeless-window-icon.png)
 
 ## Title bar icon alignment
 
@@ -244,7 +244,7 @@ The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment
 {% endhighlight %}
 {% endtabs %}
 
-![Chromeless Window icon alignment](Getting-Started_images/wpf-chromeless-window-icon-alignment.png)
+![WPF Chromeless Window icon alignment](getting-started_images/wpf-chromeless-window-icon-alignment.png)
 
 ## Customizing the border of ChromelessWindow
 
@@ -267,7 +267,7 @@ You can change the border color of the chromeless window by setting the [ResizeB
 {% endhighlight %}
 {% endtabs %}
 
-![wpf chromeless window border color](Getting-Started_images/wpf-chromeless-window-border-color.png)
+![WPF Chromeless Window border color](getting-started_images/wpf-chromeless-window-border-color.png)
 
 ## Theme
 
@@ -277,4 +277,4 @@ ChromelessWindow supports various built-in themes. Refer to the below links to a
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF ChromelessWindow](Getting-Started_images/wpf-chromeless-window-theme-support.png)
+  ![Setting theme to WPF ChromelessWindow](getting-started_images/wpf-chromeless-window-theme-support.png)

@@ -71,7 +71,7 @@ The start and end values of ranges are set by using the [`StartValue`](https://h
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img1.png)
+![Setting Values in WPF Radial Gauge](ranges_images/wpf-radial-gauge-setting-values.png)
 
 ## Range customization
 
@@ -128,7 +128,7 @@ A ranges  appearance is customized by using the [`Stroke`](https://help.syncfusi
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img2.png)
+![Range Customization in WPF Radial Gauge](ranges_images/wpf-radial-gauge-range-customization.png)
 
 ## Setting a width for range
 
@@ -207,7 +207,7 @@ The circular range width is customized by setting the [`StartWidth`](https://hel
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img3.png)
+![Setting Width Range in WPF Radial Gauge](ranges_images/wpf-radial-gauge-setting-width-range.png)
 
 ## Binding range color to scale tick and labels
 
@@ -307,7 +307,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img4.png)
+![Binding Range Color in WPF Radial Gauge](ranges_images/wpf-radial-gauge-binding-range-color.png)
 
 ## Setting a position for range
 
@@ -416,7 +416,7 @@ this.Content = sfCircularGauge;
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img5.png)
+![Direct Range Position in WPF Radial Gauge](ranges_images/wpf-radial-gauge-direct-range-position.png)
 
 ### By setting range offset
 
@@ -476,7 +476,7 @@ For absolute position, you can use `Offset` and `StrokeThickness` properties of 
 
 {% endtabs %}
 
-![Offset Image for Range](Ranges_images/Range-Offset.png)
+![Offset Image for Range in WPF Radial Gauge](ranges_images/wpf-radial-gauge-range-offset.png)
 
 #### By setting InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
 
@@ -531,7 +531,7 @@ For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterS
 
 {% endtabs %}
 
-![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
+![Inner,Outer Offset Image for Range in WPF Radial Gauge](ranges_images/wpf-radial-gauge-inner-outer-offset-range.png)
 
 ## Setting a multiple ranges
 
@@ -631,7 +631,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
+![Setting Multiple Ranges in WPF Radial Gauge](ranges_images/wpf-radial-gauge-multiple-ranges.png)
 
 ### Setting gradient color for range
 
@@ -725,4 +725,4 @@ You can give color transition to range by specifying the different colors using 
 
 {% endtabs %}
 
-![Ranges - GradientStops](Ranges_images/Gradient-image.png)
+![Gradient Color in WPF Radial Gauge](ranges_images/wpf-radial-gauge-gradient-color.png)
