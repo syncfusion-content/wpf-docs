@@ -40,7 +40,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#wizard) will be added automatically.
 
-![Adding control via designer](Getting-Started_images/GettingStarted_img1.png)
+![WPF Wizard Control adding via designe](getting-started_images/wpf-wizard-control-adding-via-designer.png)
 
 ## Adding control manually in XAML
 In order to add [WizardControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.WizardControl.html) control manually in XAML, do the below steps,
@@ -119,7 +119,7 @@ namespace WizardControl
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![GettingStarted of WizardControl](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting started of WPF Wizard Control](getting-started_images/wpf-wizard-control-getting-started.jpeg)
 
 ## Adding multiple pages
 
@@ -152,7 +152,7 @@ wizardControl.Items.Add(wizardPage3);
 
 {% endtabs %}
 
-![Adding control via designer](Getting-Started_images/GettingStarted_img2.png)
+![WPF Wizard control added by C# code](getting-started_images/wpf-wizard-control-adding-control-using-c#.png)
 
 ## Theme
 
@@ -162,4 +162,4 @@ WizardControl supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to WPF WizardControl](Getting-Started_images/Theme.png)
+   ![Setting theme to WPF WizardControl](getting-started_images/wpf-wizard-control-theme-setting.png)
