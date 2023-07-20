@@ -35,7 +35,7 @@ Stencil stencil = new Stencil()
 {% endhighlight %}
 {% endtabs %}
 
-![StencilDiagram](Stencil_images/Stencil_img1.PNG)
+![Stencil Diagram in WPF](stencil_images/stencil-diagram-in-wpf.PNG)
 
 ## Add symbols in a Stencil 
 
@@ -198,7 +198,7 @@ ContainerViewModel container = new ContainerViewModel()
 
 {% endtabs %}
 
-![DiagramElements](Stencil_images/stencil1.PNG) 
+![Diagram Elements in WPF](stencil_images/diagram-elements-in-wpf.PNG) 
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/Stencil-with-node-connector-group)
 
@@ -262,7 +262,7 @@ SymbolViewModel symbol = new SymbolViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Symbol](Stencil_images/symbolimage.PNG) 
+![Symbol Image in WPF Diagram](stencil_images/symbol-image-in-wpf-diagram.PNG) 
 
 ## Constraints
 

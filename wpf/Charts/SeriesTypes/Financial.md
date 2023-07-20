@@ -64,7 +64,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![WPF OHLC Chart](Series_images/wpf-ohlc-chart.png)
+![WPF OHLC Chart](series_images/wpf-ohlc-chart.png)
 
 N> You can explore our [WPF OHLC Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-ohlc-chart) feature tour page for its groundbreaking features. You can also explore our [WPF OHLC Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/HiLoOpenCloseChart.xaml) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
@@ -111,7 +111,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![WPF Candle Chart](Series_images/wpf-candle-chart.png)
+![WPF Candle Chart](series_images/wpf-candle-chart.png)
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ chart.Series.Add(series);
 
 {% endtabs %}               
 
-![WPF Candle Chart](Series_images/wpf-candle-charts.png)
+![WPF Candle Chart](series_images/wpf-candle-charts.png)
 
 N> You can refer to our [WPF Candlestick Chart](https://www.syncfusion.com/wpf-controls/charts/wpf-candlestick-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Candlestick Chart example](https://github.com/syncfusion/wpf-demos/blob/master/chart/Views/Financial%20Charts/CandleChart.xaml) to know how to render and configure the candle chart.
 
@@ -181,7 +181,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 {% endtabs %}     
 
-![WPF Candle Chart displays Comparison between Opened Segment](Series_images/wpf-candle-chart-comparision.png)
+![WPF Candle Chart displays comparison between opened segment](series_images/wpf-candle-chart-comparision.png)
 
 In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
@@ -209,7 +209,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 {% endtabs %}   
 
-![WPF Candle Chart displays Comparison between Closed Segment](Series_images/wpf-candle-chart-closed-segment-comparison.png)
+![WPF Candle Chart displays comparison between closed segment](series_images/wpf-candle-chart-closed-segment-comparison.png)
 
  In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
@@ -237,7 +237,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% endtabs %}   
 
-![Comparing High Value of WPF Candle Chart](Series_images/wpf-cadle-chart-compare-high-value.png)
+![Comparing high value of WPF Candle Chart](series_images/wpf-candle-chart-compare-high-value.png)
 
  In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
@@ -265,6 +265,6 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 {% endtabs %}   
 
-![Comparing Low Values of WPF Candle Chart](Series_images/wpf-candle-chart-compare-low-value.png)
+![Comparing low values of WPF Candle Chart](series_images/wpf-candle-chart-compare-low-value.png)
 
 In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.

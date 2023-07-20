@@ -374,4 +374,4 @@ To view samples:
 
 ## see also
 
-[How to enable horizontal lines for gantt chart rows](https://www.syncfusion.com/kb/3067/how-to-enable-horizontal-lines-for-ganttcharts-rows)
+[How to enable horizontal lines for gantt chart rows](https://support.syncfusion.com/kb/article/3380/how-to-enable-horizontal-lines-for-ganttcharts-rows)

@@ -32,7 +32,7 @@ The HierarchyNavigator control can be added to an application by dragging it fro
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF 
 
-![wpf hierarchical navigator control added by designer](Getting-Started_images/wpf-hierarchy-navigator-control-added-by-designer.png)
+![wpf hierarchical navigator control added by designer](getting-started_images/wpf-hierarchical-navigator-control-added-by-designer.png)
 
 ## Add control manually in XAML
 
@@ -97,7 +97,7 @@ namespace HierarchicalNavigatorSample
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![wpf hierarchical navigator control added by code](Getting-Started_images/wpf-hierarchy-navigator-control-added-manually.png)
+![wpf hierarchical navigator control added by code](getting-started_images/wpf-hierarchical-navigator-control-added-by-code.png)
 
 ## Add items using HierarchyNavigatorItem
 
@@ -238,7 +238,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![wpf hierarchy navigator control items added by data binding](Getting-Started_images/wpf-hierarchy-navigator-control-data-binding.png)
+![wpf hierarchical navigator control items added by data binding](getting-started_images/wpf-hierarchical-navigator-control-added-by-data-binding.png)
 
 ## Theme
 
@@ -248,4 +248,4 @@ HierarchyNavigator supports various built-in themes. Refer to the below links to
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF Hierarchical Navigator control](Getting-Started_images/wpf-hierarchy-navigator-control-theme.png)
+  ![Setting theme to WPF Hierarchical Navigator control](getting-started_images/wpf-hierarchical-navigator-control-theme.png)

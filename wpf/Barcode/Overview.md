@@ -11,13 +11,13 @@ documentation: ug
 
 The Barcode control helps rendering bar codes in desktop (WPF) application. The control can be merged with into any desktop application and easy to encode text using the supported symbol types. The basic structure of a bar code consists of a leading and trailing quiet zone, a start pattern, one or more data characters, optionally one or two check characters, and a stop pattern. 
 
-![WPF One Dimensional Barcode](Overview_images/wpf-one-dimensional-barcode.png)
+![One dimensional in Barcode WPF](overview_images/wpf-barcode-one-dimensional.png)
 
 Barcode control rendering 1D bar code
 {:.caption}
 
 
-![WPF Two Dimensional Barcode](Overview_images/wpf-two-dimensional-barcode.png)
+![Two dimensional in Barcode WPF](overview_images/wpf-barcode-two-dimensional.png)
 
 
 Barcode control rendering 2D bar code
@@ -25,7 +25,7 @@ Barcode control rendering 2D bar code
 
 ## Structure of the Control
 
-![WPF Barcode Structure](Overview_images/wpf-barcode-structure.png)
+![WPF Barcode Structure](overview_images/wpf-barcode-structure.png)
 
 Structure of Barcode control
 {:.caption}

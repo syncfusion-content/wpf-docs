@@ -105,7 +105,7 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![TabControl auto creates tabitem using data binding](Databinding_images/wpf-tabcontrol-databinding.png)
+![WPF TabControl auto creates tabitem using data binding](databinding_images/wpf-tabcontrol-databinding.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
@@ -164,7 +164,7 @@ Below code is used to define the tabitem header using `ItemTemplate` property.
 {% endhighlight %}
 {% endtabs %}
 
-![Added header to tabitem in WPF TabControl](Databinding_images/wpf-tabcontrol-binding_header.png)
+![Added header to tabitem in WPF TabControl](databinding_images/wpf-tabcontrol-binding-header.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
@@ -192,7 +192,7 @@ You can define the tab item content using `ContentTemplate` property. Otherwise,
 {% endhighlight %}
 {% endtabs %}
 
-![Added content to tabitem in WPF TabControl](Databinding_images/wpf-tabcontrol-binding_content.png)
+![Added content to tabitem in WPF TabControl](databinding_images/wpf-tabcontrol-binding-content.png)
 
 ##  Editing tab header
 
@@ -236,6 +236,6 @@ By default, built-in `TextBox` is used as editor for the tab item header editing
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of the editable header](Databinding_images/wpf-tabcontrol-binding_Editableheader.png)
+![Custom UI of the editable header in WPF TabControl](databinding_images/wpf-tabcontrol-binding-editable-header.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub

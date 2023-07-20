@@ -29,14 +29,14 @@ The Syncfusion provides the following extension supports in Visual Studio:
 
 **No project selected in Visual Studio**
 
-![Syncfusion Menu when No project selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView1.png)
+![Syncfusion WPF Menu when No project selected in Visual Studio](overview-images/syncfusion-wpf-menu-no-project-selected.png)
 
 **Selected Microsoft WPF application in Visual Studio**
 
-![Syncfusion Menu when Selected Microsoft WPF application in Visual Studio](Overview-images/Syncfusion_Menu_OverView2.png)
+![Syncfusion Menu when Selected Microsoft WPF application in Visual Studio](overview-images/syncfusion-menu-selected-microsoft-application.png)
 
 **Selected Syncfusion WPF application in Visual Studio**
 
-![Syncfusion Menu when Selected Synfusion WPF application in Visual Studio](Overview-images/Syncfusion_Menu_OverView3.png)
+![Syncfusion Menu when Selected Synfusion WPF application in Visual Studio](overview-images/syncfusion-wpf-selected-application.png)
 
 N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.

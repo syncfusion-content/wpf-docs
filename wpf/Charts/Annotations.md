@@ -46,7 +46,7 @@ chart.Annotations.Add(annotation);
 
 {% endtabs %}
 
-![Annotation in WPF Chart](Annotation_images/wpf-chart-annotation.jpeg)
+![Annotation in WPF Chart](annotation_images/wpf-chart-annotation.jpeg)
 
 
 ## Positioning the Annotation
@@ -83,7 +83,7 @@ chart.Annotations.Add(annotation);
 
 {% endtabs %}
 
-![Changing Annotation Position based on CoordinateUnit as Axis in WPF Chart](Annotation_images/wpf-chart-annotation-based-on-coordinates.jpg)
+![Changing annotation position based on CoordinateUnit as axis in WPF Chart](annotation_images/wpf-chart-annotation-based-on-coordinates.jpg)
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Pixels**
 
@@ -115,7 +115,7 @@ chart.Annotations.Add(annotation);
 
 {% endtabs %}
 
-![Changing Annotation Position based on CoordinateUnit as Pixel in WPF Chart](Annotation_images/wpf-chart-axis-based-on-coordinate-pixel.jpg)
+![Changing annotation position based on CoordinateUnit as pixel in WPF Chart](annotation_images/wpf-chart-axis-based-on-coordinate-pixel.jpg)
 
 **Adding** **Annotation** **for** **MultipleAxes**
 
@@ -225,7 +225,7 @@ You can also add annotation for a particular axis when there is multiple axes us
 
 {% endtabs %}
 
-![WPF Chart displays Annotation with Multiple Axes](Annotation_images/wpf-chart-multiple-annotation.jpeg)
+![WPF Chart displays annotation with Multiple axes](annotation_images/wpf-chart-multiple-annotation.jpeg)
 
 ## Text Annotation
 
@@ -257,7 +257,7 @@ chart.Annotations.Add(annotation);
 
 {% endtabs %}
 
-![WPF Chart with Text Annotation](Annotation_images/wpf-chart-text-annotation.jpg)
+![WPF Chart with Text annotation](annotation_images/wpf-chart-text-annotation.jpg)
 
 ### Customizing Text Annotation
 
@@ -313,7 +313,7 @@ The following properties are used to customize the text:
 
 {% endtabs %}
 
-![Editing Text Annotation in WPF Chart](Annotation_images/wpf-chart-text-annotation-editing.jpeg)
+![Editing text annotation in WPF Chart](annotation_images/wpf-chart-text-annotation-editing.jpeg)
 
 
 ## Shape Annotation
@@ -373,7 +373,7 @@ The [`EllipseAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% endtabs %}
 
-![WPF Chart with Ellipse Annotation](Annotation_images/wpf-chart-ellipse-annotation.jpg)
+![WPF Chart with Ellipse annotation](annotation_images/wpf-chart-ellipse-annotation.jpg)
 
 ### Rectangle Annotation
 
@@ -403,7 +403,7 @@ The [`RectangleAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% endtabs %}
 
-![WPF Chart with Rectangle Annotation](Annotation_images/wpf-chart-rectangle-annotation.jpg)
+![WPF Chart with Rectangle annotation](annotation_images/wpf-chart-rectangle-annotation.jpg)
 
 ### Line Annotation
 
@@ -433,7 +433,7 @@ The [`LineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Cha
 
 {% endtabs %}
 
-![WPF Chart with Line Annotation](Annotation_images/wpf-chart-line-annotation.jpg)
+![WPF Chart with Line annotation](annotation_images/wpf-chart-line-annotation.jpg)
 
 ### Vertical and Horizontal line annotation
 
@@ -468,7 +468,7 @@ The [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.
 
 {% endtabs %}
 
-![WPF Chart with Vertical and Horizontal Line Annotation](Annotation_images/wpf-chart-horizontal-vertical-annotation.jpg)
+![WPF Chart with Vertical and horizontal line annotation](annotation_images/wpf-chart-horizontal-vertical-annotation.jpg)
 
 ### Customizing Line Annotation
 The appearance of the LineAnnotation, VerticalLineAnnotation and HorizontalLineAnnotation can be customized with use of following properties.
@@ -510,7 +510,7 @@ To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/
 
 {% endtabs %}
 
-![WPF Chart displays Arrow in Line Annotation](Annotation_images/wpf-chart-line-annotation-with-arrow.jpg)
+![WPF Chart displays arrow in Line annotation](annotation_images/wpf-chart-line-annotation-with-arrow.jpg)
 
 **Displaying** **Axis** **Labels** **for** **LineAnnotation**
 
@@ -548,7 +548,7 @@ To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/
 
 {% endtabs %}
 
-![Displaying Axis Label for Line Annotation in WPF Chart](Annotation_images/wpf-chart-line-axis-label.jpg)
+![Displaying axis label for line annotation in WPF Chart](annotation_images/wpf-chart-line-axis-label.jpg)
 
 Also, axis label can be customized the default appearance using [`AxisLabelTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_AxisLabelTemplate) property.
 
@@ -586,7 +586,7 @@ The text alignment can be changed using [`HorizontalTextAlignment`](https://help
 
 {% endtabs %}
 
-![Customizing Text of Shape Annotation in WPF Chart](Annotation_images/wpf-chart-text-in-shape.jpg)
+![Customizing text of shape annotation in WPF Chart](annotation_images/wpf-chart-text-in-shape.jpg)
 
 N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_VerticalTextAlignment) properties are not applicable for [`TextAnnotation`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TextAnnotation.html#).
 
@@ -638,7 +638,7 @@ SfChart allows customization of shape annotation using the following properties.
 
 {% endtabs %}
 
-![Customizing Shape Annotations in WPF Chart](Annotation_images/wpf-chart-shape-annotation-customization.jpg)
+![Customizing shape snnotations in WPF Chart](annotation_images/wpf-chart-shape-annotation-customization.jpg)
 
 
 ## Image Annotation
@@ -680,7 +680,7 @@ The following API’s are used in ImageAnnotation.
 
 {% endtabs %}
 
-![WPF Chart with Image Annotation](Annotation_images/wpf-chart-image-annotation.jpeg)
+![WPF Chart with Image annotation](annotation_images/wpf-chart-image-annotation.jpeg)
 
 ## Interaction
 
@@ -728,7 +728,7 @@ The following code example demonstrates the dragging the rectangle annotation.
 
 {% endtabs %}
 
-![Dragging Annotation in WPF Chart](Annotation_images/wpf-chart-drag-annotation.jpeg)
+![Dragging annotation in WPF Chart](annotation_images/wpf-chart-drag-annotation.jpeg)
 
 
 Also, the direction of dragging can be customized by using [`DraggingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_DraggingMode) property.
@@ -765,7 +765,7 @@ You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.
 
     {% endtabs %}
 
-![Eesizing Annotation in WPF Chart](Annotation_images/wpf-chart-resize-annotation.jpeg)
+![Resizing annotation in WPF Chart](annotation_images/wpf-chart-resize-annotation.jpeg)
 
 
 Also, the direction of resizing can be customized by using [`ResizingMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_SolidShapeAnnotation_ResizingMode) property.
@@ -811,7 +811,7 @@ The following code example demonstrates the default tooltip.
 
 {% endtabs %}
 
-![ToolTip for Annotation in WPF Chart](Annotation_images/wpf-chart-annotation-tooltip.jpeg)
+![ToolTip for annotation in WPF Chart](annotation_images/wpf-chart-annotation-tooltip.jpeg)
 
 **ToolTipTemplate**
 
@@ -858,7 +858,7 @@ The default appearance of the Tooltip can be changed using [`TooltipTemplate`](h
 {% endtabs %}
 
 
-![Annotation Tooltip Template in WPF Chart](Annotation_images/wpf-chart-annotation-tooltip-template.jpeg)
+![Annotation tooltip template in WPF Chart](annotation_images/wpf-chart-annotation-tooltip-template.jpeg)
 
 ## Annotation Clipping
 
@@ -898,7 +898,7 @@ SfChart allows you to clip the annotation if the annotation crosses the boundary
 
 The following screenshot explains that even when x value is provided out of bounds the image annotation is placed inside the chart area.
 
-![Annotation Clipping in WPF Chart](Annotation_images/wpf-chart-annotation-clipping.jpeg)
+![Annotation clipping in WPF Chart](annotation_images/wpf-chart-annotation-clipping.jpeg)
 
 ## Annotation based on axis
 
@@ -1053,7 +1053,7 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
 
 {% endtabs %}
 
-![WPF Chart with Annotation based on DareTimeAxis](Annotation_images/wpf-chart-datetime-annotation.jpg)
+![WPF Chart with annotation based on DateTimeAxis](annotation_images/wpf-chart-datetime-annotation.jpg)
 
 ## Events
 

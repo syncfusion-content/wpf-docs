@@ -94,7 +94,7 @@ carousel.SelectedIndex = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Customized visual path of Carousel items](customization_images/Path.gif)
+![Customized visual path of Carousel items in WPF application](customization_images/wpf-carousel-customized-visual-path.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
@@ -119,7 +119,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Number of items displayed in the Carousel control is reduced](Getting-Started_images/ItemsPerPage.png)
+![Number of items displayed per page in WPF Carousel](getting-started_images/wpf-carousel-items-displayed-per-page.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 
@@ -238,7 +238,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel items opacity fraction changed in custom path mode](Rotation-images/OpacityFraction_custom.png)
+![WPF Carousel items opacity fraction changed in custom path mode](rotation-images/wpf-carousel-opacity-fraction-custom-path-mode.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath_customization)
 
@@ -295,7 +295,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel items opacity fraction changed in custom path view mode](Rotation-images/OpacityFractions.gif)
+![WPF Carousel items opacity fraction changed in custom path view mode](rotation-images/wpf-carousel-opacity-fractions.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CustomPath)
 

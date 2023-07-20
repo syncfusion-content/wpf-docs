@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WPF DataGrid (SfDataGrid)
 
-This section provides a quick overview for working with the [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
+This section provides a quick overview for working with the [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) for WPF. Walk through the entire process of creating a real world of this control.
 
 To get start quickly with WPF DataGrid, you can check on this video:
 <style>#WPFDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>

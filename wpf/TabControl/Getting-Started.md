@@ -15,7 +15,7 @@ This section explains how to create a WPF [TabControl](https://help.syncfusion.c
 
 The various elements of `TabControl` are illustrated in the following images.
 
-![Structure of WPF TabControl](Getting-Started_images/wpf-tabcontrol-structure.png)
+![Structure of WPF TabControl](getting-started_images/wpf-tabcontrol-structure.png)
 
 ## Assembly deployment
 
@@ -30,7 +30,7 @@ You can add the `TabControl` control to an application by dragging it from the t
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF
 
-![Drag and drop WPF TabControl from toolbox](Getting-Started_images/wpf-tabcontrol-toolbox.png)
+![Drag and drop WPF TabControl from toolbox](getting-started_images/wpf-tabcontrol-toolbox.png)
 
 ## Adding WPF TabControl via XAML
 
@@ -110,7 +110,7 @@ public partial class MainWindow : Window {
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![Adding WPF TabControl to the window](Getting-Started_images/wpf-tabcontrol-addingtabcontrol.png)
+![Adding WPF TabControl to the window](getting-started_images/wpf-tabcontrol-adding-tabcontrol.png)
 
 ## Adding TabItem
 
@@ -162,7 +162,7 @@ tabControlExt.Items.Add(tabItemExt3);
 {% endhighlight %}
 {% endtabs %}
 
-![Adding tabitems into WPF TabControl](Getting-Started_images/wpf-tabcontrol-addtabitem.png) 
+![Adding tab items into WPF TabControl](getting-started_images/wpf-tabcontrol-add-tab-item.png) 
 
 Please refer [DataBinding](https://help.syncfusion.com/wpf/tabcontrol/databinding) page to know about how to add a tab item using Data Binding.
 
@@ -190,7 +190,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 {% endhighlight %}
 {% endtabs %}
 
-![Positioning tabitems at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
+![Positioning tabitems at the bottom in WPF TabControl](getting-started_images/wpf-tabcontrol-orientation.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
@@ -277,7 +277,7 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF TabControl and TabItem displays the close button](Getting-Started_images/wpf-tabcontrol-closebutton.png)
+![WPF TabControl and tabitem displays the close button](getting-started_images/wpf-tabcontrol-close-button.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
@@ -309,7 +309,7 @@ tabItem2.CanClose = false;
 
 In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and `TabControl` is in disabled state for second tabitem.
 
-![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
+![Disable the second tab item close button in WPF TabControl](getting-started_images/wpf-tabcontrol-disable-close-button.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
@@ -343,7 +343,7 @@ tabItem2.CloseButtonState = Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![Collapse and disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
+![Collapse and disable the second tabitem close button in WPF TabControl](getting-started_images/wpf-tabcontrol-collapse.png)
 
 Here, `tabItem2` close button is collapsed.
 
@@ -408,7 +408,7 @@ tabControlExt.ShowTabListContextMenu = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Tablist Context menu of tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-tablistcontextmenu.png)
+![Tablist Context Menu of tabitem in WPF TabControl](getting-started_images/wpf-tabcontrol-tablist-context-menu.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
@@ -467,7 +467,7 @@ tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 {% endhighlight %}
 {% endtabs %}
 
-![Enable tab navigation bar in WPF TabControl](Getting-Started_images/wpf-tabcontrol-navigation.png)
+![Enable tab navigation bar in WPF TabControl](getting-started_images/wpf-tabcontrol-navigation.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
@@ -499,7 +499,7 @@ tabControlExt.ShowTabItemContextMenu = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Enable the built-in context menu in WPF TabControl](Getting-Started_images/wpf-tabcontrol-contextmenu.png)
+![Enable the Built-in Context Menu in WPF TabControl](getting-started_images/wpf-tabcontrol-context-menu.png)
 
 You can add custom context menu item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html#Syncfusion_Windows_Tools_Controls_TabItemExt_ContextMenuItems) property in `TabControl`. This property is enabled by setting the [IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html#Syncfusion_Windows_Tools_Controls_TabControlExt_IsCustomTabItemContextMenuEnabled) property to `true`.
 
@@ -537,7 +537,7 @@ tabItem2.ContextMenuItems.Add(customMenuItem1);
 {% endhighlight %}
 {% endtabs %}
 
-![Added custom context menu for tabitems in WPF TabControl](Getting-Started_images/wpf-tabcontrol-customcontextmenu.png)
+![Added custom context menu for tab items in WPF TabControl](getting-started_images/wpf-tabcontrol-custom-context-menu.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
@@ -561,4 +561,4 @@ The WPF TabControl supports various built-in themes. Refer to the below links to
   
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Themes) in GitHub
 
-  ![Setting theme in WPF TabControl](Getting-Started_images/wpf-tabcontrol-theme.png)
+  ![Setting theme in WPF TabControl](getting-started_images/wpf-tabcontrol-theme.png)
