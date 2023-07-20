@@ -27,7 +27,7 @@ Create new WPF project using Visual Studio. For more [details](https://learn.mic
 
 [WPF Diagram](https://www.syncfusion.com/wpf-controls/diagram) (SfDiagram) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![WPF Diagram from Designer](getting-started_images\wpf-diagram-from-designer.png)
+![WPF Diagram from Designer](getting-started_images\wpf-diagram-designer.png)
 
 ### Adding control manually in XAML
 
@@ -238,7 +238,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now, the node will be as follows.
    
-![WPF Diagram Adding Shape and Style to Node](getting-started_images\wpf-diagram-adding-shape-and-style-to-node.png)
+![WPF Diagram Adding Shape and Style to Node](getting-started_images\wpf-diagram-node-shape-and-style.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -443,7 +443,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Now, the output will be as follows.
 
-![WPF Diagram Node with Connector](getting-started_images\wpf-diagram-node-with-connector.png)
+![WPF Diagram Node with Connector](getting-started_images\wpf-diagram-node-connector.png)
  
 ### Connectors for flow diagram
 
@@ -485,7 +485,7 @@ private ConnectorViewModel CreateConnector(string source, string target)
 
 Now, the output will be as follows.
 
-![WPF Connectors for Flow Diagram](getting-started_images\wpf-connectors-for-flow-diagram.png)
+![WPF Connectors for Flow Diagram](getting-started_images\wpf-diagram-connectors-flow.png)
     
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-FlowChart-Creation)
 
@@ -724,7 +724,7 @@ The output will be as follows.
 
 We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
-![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-with-stencil.gif)
+![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-stencil.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 

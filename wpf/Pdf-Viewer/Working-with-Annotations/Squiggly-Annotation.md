@@ -9,7 +9,7 @@ documentation: ug
 
 # Squiggly text in PDF files using WPF PDF Viewer
 
-The WPF PDF Viewer allows users to use squiggly text in PDF files and provides options to edit or remove the existing squigglies. The squiggly inclusion mode can be enabled via the toolbar UI or the API. Once the squiggly inclusion mode is activated, you can squiggle the required text by selecting it. Hold the left mouse button to select the text and drag the mouse pointer over the text.
+The WPF PDF Viewer allows users to use squiggly text in PDF files and provides options to edit or remove the existing squiggles. The squiggly inclusion mode can be enabled via the toolbar UI or the API. Once the squiggly inclusion mode is activated, you can squiggle the required text by selecting it. Hold the left mouse button to select the text and drag the mouse pointer over the text.
 
 To enable the mode from UI, click the below icon in the default toolbar of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
@@ -215,4 +215,4 @@ private void PdfViewer_TextMarkupAnnotationChanged(object sender, TextMarkupAnno
 {% endhighlight %}
 {% endtabs %}
 
-N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
+N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer. 
