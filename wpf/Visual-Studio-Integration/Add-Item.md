@@ -23,7 +23,7 @@ The steps below will guide you to adding the Syncfusion WPF window to your Visua
 1.	Open a new or existing WPF application.
 2.	From the **Solution Explorer, right-click** on the WPF application. Choose **Add Syncfusion Item...**
 
-    ![Choose Add Syncfusion Item option from right click project](add-item-images/wpf-add-syncfusion-item.png)
+    ![Choose Add Syncfusion Item option from right click project in WPF Application](add-item-images/wpf-add-syncfusion-item.png)
 
 3.	The Syncfusion WPF Item Template Gallery wizard will be launched as like below.
 
@@ -35,7 +35,7 @@ The steps below will guide you to adding the Syncfusion WPF window to your Visua
 6.	Provide the **name** for the selected window.
 7.	Click **Add button** to add the selected window into the WPF application along with required Syncfusion assemblies.
 
-    ![Syncfusion WPF Added Item template Gallery](add-item-images/wpf-added-item.png)
+    ![Syncfusion WPF Added Item template Gallery](add-item-images/wpf-added-item-template-gallery.png)
 8.	Then, Syncfusion licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
     ![Syncfusion WPF Item License Page](add-item-images/wpf-license-page.png)
