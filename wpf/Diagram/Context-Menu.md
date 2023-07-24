@@ -113,4 +113,4 @@ void MainPage_MenuItemClickedEvent(object sender,
 
 ## See Also
 
-* [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
+* [How to customize the context menu?](https://support.syncfusion.com/kb/article/9270/how-to-customize-the-contextmenu-in-wpf-diagram-sfdiagram)

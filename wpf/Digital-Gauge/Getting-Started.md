@@ -17,7 +17,7 @@ You can add gauge reference using one of the following methods:
 
 **Method 1: Adding gauge reference from nuget.org**
 
-Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org/). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
+Syncfusion WPF components are available in [`nuget.org`](https://www.nuget.org). To add gauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.SfGauge.WPF](https://www.nuget.org/packages/Syncfusion.SfGauge.WPF), and then install it.
 
 ![Adding gauge reference from NuGet](Getting-Started_images/Adding gauge reference.png)
 
@@ -204,4 +204,4 @@ SfDigitalGauge supports various built-in themes. Refer to the below links to app
 
 ## See also
 
-[How to apply themes for SfDigitalGauge](https://www.syncfusion.com/kb/2535/how-to-apply-themes-for-sfdigitalgauge)
+[How to apply themes for SfDigitalGauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge)
