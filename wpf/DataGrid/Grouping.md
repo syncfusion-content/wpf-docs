@@ -566,9 +566,9 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group expansion.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
 
 
 {% tabs %}
@@ -601,10 +601,10 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
 
 [Group](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being collapsed.
 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) – Decides whether to cancel the group collapsing.
 
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
 
 
 {% tabs %}

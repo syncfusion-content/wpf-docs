@@ -68,7 +68,7 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![Trendlines in WPF Chart](Trendlines_images/wpf-chart-trendlines.png)
+![Trendlines in WPF Chart](trendlines_images/wpf-chart-trendlines.png)
 
 
 You can get the [`Slope`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_Slope) and [`Intercept`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_Intercept) of the drawn trend line. 
@@ -133,7 +133,7 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![Visibility of Trendlines in WPF Chart](Trendlines_images/wpf-chart-trendline-visibility.png)
+![Visibility of trendlines in WPF Chart](trendlines_images/wpf-chart-trendline-visibility.png)
 
 
 N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
@@ -216,7 +216,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![Linear Trendline in WPF Chart](Trendlines_images/wpf-chart-linear-trendline.png)
+![Linear trendline in WPF Chart](trendlines_images/wpf-chart-linear-trendline.png)
 
 
 ### Exponential
@@ -287,7 +287,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![Exponential Trendline in WPF Chart](Trendlines_images/wpf-chart-exponential-trendline.png)
+![Exponential trendline in WPF Chart](trendlines_images/wpf-chart-exponential-trendline.png)
 
 
 N> This is not recommended for the data values having zero and negative value.
@@ -360,7 +360,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![Power Trendline in WPF Chart](Trendlines_images/wpf-chart-power-trendline.png)
+![Power trendline in WPF Chart](trendlines_images/wpf-chart-power-trendline.png)
 
 ### Logarithmic
 
@@ -430,7 +430,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![Logarithmic Trendline in WPF Chart](Trendlines_images/wpf-chart-logarithmic-trendline.png)
+![Logarithmic trendline in WPF Chart](trendlines_images/wpf-chart-logarithmic-trendline.png)
 
 ### Polynomial
 
@@ -568,7 +568,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Changing Polynomial Order for Trendline in WPF Chart](Trendlines_images/wpf-chart-polynomial-order-trendline.png)
+![Changing Polynomial order for trendline in WPF Chart](trendlines_images/wpf-chart-polynomial-order-trendline.png)
 
 ## Forecasting
 
@@ -645,7 +645,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Forward Forecast in WPF Chart](Trendlines_images/wpf-chart-forward-forecast.png)
+![Forward forecast in WPF Chart](trendlines_images/wpf-chart-forward-forecast.png)
 
 ### Backward Forecast
 
@@ -713,7 +713,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Backward Forecast in WPF Chart](Trendlines_images/wpf-chart-backward-forecast.png)
+![Backward forecast in WPF Chart](trendlines_images/wpf-chart-backward-forecast.png)
 
 
 ## Customization 
@@ -782,7 +782,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Customization of Trendlines in WPF Chart](Trendlines_images/wpf-chart-trendline-customization.png)
+![Customization of trendlines in WPF Chart](trendlines_images/wpf-chart-trendline-customization.png)
 
 N> You can refer to our [WPF Charts](https://www.syncfusion.com/wpf-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [WPF Charts example](https://github.com/syncfusion/wpf-demos) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 

@@ -175,7 +175,7 @@ N> It is not possible to Navigate with the two DataGrid at a time.
 
 ## Search customization
 
-WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
+WPF DataGrid (SfDataGrid) process the search operations in [SearchHelper](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SearchHelper.html) class. You can change the default search behaviors by overriding `SearchHelper` class and set to `SfDataGrid.SearchHelper`.
 
 {% tabs %}
 {% highlight c# %}
@@ -249,7 +249,7 @@ this.dataGrid.SelectedIndex = recordIndex;
 
 ### Search with the GridComboBoxColumn
 
-You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
+You can search the data in SfDataGrid with all the GridColumns which loads TextBlock as display element. To perform the search operation in the [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) you need to customize the `GridComboBoxColumn`.  As it loads the ContentControl in display mode. 
 
 {% tabs %}
 {% highlight c# %}

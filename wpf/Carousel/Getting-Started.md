@@ -13,7 +13,7 @@ This section explains how to create a [WPF Carousel](https://www.syncfusion.com/
 
 ## Structure of Carousel
 
-![Structure of WPF Carousel with Carousel](Getting-Started_images/Getting-Started_img1.jpeg)
+![Structure of WPF Carousel](getting-started_images/wpf-carousel-structure.jpeg)
 
 ## Assembly deployment
 
@@ -27,7 +27,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
     * Syncfusion.Shared.WPF
 
-![wpf Carousel control added by designer](Getting-Started_images/wpf-carousel-control-added-by-designer.png)
+![WPF Carousel control added by designer](getting-started_images/wpf-carousel-added-by-designer.png)
 
 2. Set the properties for `Carousel` in design mode using the SmartTag feature.
 
@@ -230,7 +230,7 @@ carousel.Items.Add(new CarouselItem() { Content = new Viewbox(){ Child = image7 
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel items are populated to the Carousel control](Getting-Started_images/wpf-carousel-item.jpeg)
+![Items are populated to the WPF Carousel](getting-started_images/wpf-carousel-item-are-populated.jpeg)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/CarouselItem-Selection)
 
@@ -386,7 +386,7 @@ carousel.EnableRotationAnimation = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel items rotated with 25 degree angle](Getting-Started_images/Rotating.png)
+![WPF Carousel items rotated with 25 degree angle](getting-started_images/wpf-carousel-rotating-items.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -409,7 +409,7 @@ carousel. ScaleFraction = 0.50;
 {% endhighlight %}
 {% endtabs %}
 
-![Size reduced for the next and previous items of the selected item](Getting-Started_images/wpf-carousel-scaling-view.png)
+![Scaling view in WPF Carousel](getting-started_images/wpf-carousel-scaling-view.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -434,7 +434,7 @@ carousel.RadiusY = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![The radius of the carousel control changed](Getting-Started_images/radius.png)
+![The radius of the carousel control changed in WPF application](getting-started_images/wpf-carousel-radius.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/StandardPath)
 
@@ -539,7 +539,7 @@ carousel.VisualMode = VisualMode.CustomPath;
 {% endhighlight %}
 {% endtabs %}
 
-![Customized visual path of Carousel items](customization_images/Path.gif)
+![Customized visual path of Carousel items in WPF application](customization_images/wpf-carousel-customize-visual-Path.gif)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-carousel-examples/tree/master/Samples/Binding)
 
@@ -610,4 +610,4 @@ Carousel supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-   ![Setting theme to WPF Carousel](Getting-Started_images/wpf-Carousel-with-theme.jpg)
+   ![Setting theme to WPF Carousel](getting-started_images/wpf-carousel-setting-theme.jpg)

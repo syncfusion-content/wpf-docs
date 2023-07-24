@@ -85,7 +85,7 @@ this.Content = sfCircularGauge;
 
 {% endtabs %}
 
-![CircularGauge Header](Header_images/Header_img1.png)
+![CircularGauge Header in WPF Radial Gauge](header_images/wpf-radial-gauge-header.png)
 
 ## Setting alignment for header
 
@@ -183,7 +183,7 @@ this.Content = sfCircularGauge;
 
 {% endtabs %}
 
-![CircularGauge Header with customization](Header_images/Header_img2.png)
+![CircularGauge Header with customization in WPF Radial Gauge](header_images/wpf-radial-gauge-header-alignment.png)
 
 ## Setting position for header
 
@@ -261,7 +261,7 @@ The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xam
 
 {% endtabs %}
 
-![CircularGauge header with custom position](Header_images/Header_img3.png)
+![CircularGauge header with custom position in WPF Radial Gauge](header_images/wpf-radial-gauge-header-custon-position.png)
 
 ## Customization of header font
 
@@ -345,7 +345,7 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 
 {% endtabs %}
 
-![CircularGauge Header with customization](Header_images/Header_img4.png)
+![CircularGauge Header with customization in WPF Radial Gauge](header_images/wpf-radial-gauge-header-customization.png)
 
 
 

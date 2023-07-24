@@ -32,7 +32,7 @@ The DocumentContainer control can be added to an application by dragging it from
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF 
 
-![wpf doument container control added by designer](Getting-Started_images/wpf-document-container-added-by-designer.png)
+![wpf doument container control added by designer](getting-started_images/wpf-document-container-added-by-designer.png)
 
 ## Add control manually in XAML
 
@@ -148,7 +148,7 @@ DocumentContainer.SetHeader(flowScrollViewer, "Document Container");
 {% endhighlight %}
 {% endtabs %}
 
-![wpf document container control added by code](Getting-Started_images/wpf-document-container-items.png)
+![WPF Document Container Control added by code](getting-started_images/wpf-document-container-items.png)
 
 ## Set TDI/MDI document mode
 
@@ -170,11 +170,11 @@ documentContainer.Mode=DocumentContainerMode.TDI;
 
 * **TDI**
 
-![wpf document container tdi mode](Getting-Started_images/wpf-document-container-tdi.png)
+![WPF Document Container TDI Mode](getting-started_images/wpf-document-container-tdi-mode.png)
 
 * **MDI**
 
-![wpf document conainer mdi mode](Getting-Started_images/wpf-document-container-mdi.png)
+![WPF Document Container MDI Mode](getting-started_images/wpf-document-container-mdi-mode.png)
 
 ## Minimizing MDI window
 
@@ -194,7 +194,7 @@ You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)
+![Minimizing MDI window in WPF Document Container](minimizing-mdi-window_images/wpf-document-container-minimizing-window.jpeg)
 
 ## Theme
 
@@ -204,6 +204,6 @@ DocumentContainer supports various built-in themes. Refer to the below links to 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-MDI-Theme.png)
+  ![Setting theme to WPF Document Container MDI](getting-started_images/wpf-document-container-mdi-theme.png)
    
-  ![Setting theme to wpf document container](Getting-Started_images/wpf-document-container-TDI-Theme.png)
+  ![Setting theme to WPF Document Container TDI](getting-started_images/wpf-document-container-tdi-theme.png)
