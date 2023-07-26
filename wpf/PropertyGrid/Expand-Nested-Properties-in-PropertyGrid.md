@@ -9,7 +9,7 @@ documentation: ug
 
 # Nested Properties in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class.
+The [PropertyGrid](https://www.syncfusion.com/wpf-controls/propertygrid) control has support to expand instance properties of a class.
 
 ## Explore the nested properties
 
