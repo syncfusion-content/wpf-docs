@@ -52,7 +52,7 @@ Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 2. Open the Visual Studio toolbox.
 3. Navigate to <b>Syncfusion WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
-   ![WPF PDF Viewer in Toolbox](Getting-Started_images/wpf-pdf-viewer-in-toolbox.png)
+   ![WPF PDF Viewer in Toolbox](getting-started_images/wpf-pdf-viewer-in-toolbox.png)
     PDF viewer control in toolbox
     {:.caption}
 
@@ -192,7 +192,7 @@ The WPF PdfViewer Control supports various built-in themes. Refer to the below l
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![WPF PDF Viewer Theme](Getting-Started_images/wpf-pdf-viewer-theme.png)
+  ![WPF PDF Viewer Theme](getting-started_images/wpf-pdf-viewer-theme.png)
 
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
