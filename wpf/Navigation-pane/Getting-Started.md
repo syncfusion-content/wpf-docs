@@ -32,7 +32,7 @@ The GroupBar control can be added to an application by dragging it from the tool
 * Syncfusion.Tools.WPF
 * Syncfusion.Shared.WPF
 
-![wpf group bar button control added by designer](Getting-Started_images/wpf-group-bar-control-added-by-designer.png)
+![wpf group bar button control added by designer](getting-started_images/wpf-group-bar-control-added-by-designer.png)
 
 ## Add control manually in XAML
 
@@ -135,7 +135,7 @@ this.Content = groupBar;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf group bar item added by groupbaritem](Getting-Started_images/wpf-group-bar-control-itesm-added.png)
+![wpf group bar item added by groupbaritem](getting-started_images/wpf-group-bar-control-itesm-added.png)
 
 ## Bind data
 
@@ -218,7 +218,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![wpf group bar control data binding](Getting-Started_images/wpf-group-bar-control-data-binding.png)
+![wpf group bar control data binding](getting-started_images/wpf-group-bar-control-data-binding.png)
 
 ## Add content to GroupBar Item
 
@@ -269,7 +269,7 @@ this.Content = groupBar;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf group bar content](Getting-Started_images/wpf-group-bar-content.png)
+![wpf group bar content](getting-started_images/wpf-group-bar-content.png)
 
 ## Expand one or more items
 
@@ -286,7 +286,7 @@ groupBar.VisualMode = Syncfusion.Windows.Tools.VisualMode.MultipleExpansion;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf group bar items expanded](Getting-Started_images/wpf-group-bar-item-expansion.png)
+![wpf group bar items expanded](getting-started_images/wpf-group-bar-item-expansion.png)
 
 ## Theme
 
@@ -296,4 +296,4 @@ GroupBar supports various built-in themes. Refer to the below links to apply the
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF GroupBar](Getting-Started_images/wpf-group-bar-control-theme.png)
+  ![Setting theme to WPF GroupBar](getting-started_images/wpf-group-bar-control-theme.png)

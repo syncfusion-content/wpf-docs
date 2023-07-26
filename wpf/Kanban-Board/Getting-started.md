@@ -15,7 +15,7 @@ The following section provides an assistance to create a simple Kanban applicati
 1. Open the Add Reference window from your project
 2. Choose Assemblies -> Extensions -> Syncfusion.SfKanban.WPF
 
-![Reference Manager Dialog Windows in Visual Studio](SfKanban_images/assemblyreference.png)
+![Reference Manager Dialog Windows in Visual Studio](sfkanban_images/wpf-kanban-board-assembly-reference.png)
 
 N> This window differs for the Visual Basic project.
 
@@ -75,15 +75,15 @@ SfKanban kanban = new SfKanban();
 
 Drag and drop the Kanban control from the toolbox to your application.
 
-![Adding SfKanban from toolbox](SfKanban_images/toolbox.png)
+![Adding SfKanban from toolbox](sfkanban_images/wpf-kanban-board-toolbox.png)
 
 
 Now the Syncfusion.SfKanban.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Adding SfKanban from toolbox](SfKanban_images/assemblyincluded.png)
+![Adding SfKanban from toolbox Assembly Included](sfkanban_images/wpf-kanban-board-assembly-included.png)
 
 
-![Adding SfKanban from toolbox](SfKanban_images/xamlreference.png)
+![Adding SfKanban from toolbox Xaml Reference](sfkanban_images/wpf-kanban-board-xaml-reference.png)
 
 
 #### Create data model
@@ -297,7 +297,7 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![Defining columns for SfKanban](SfKanban_images/column.png)
+![Defining columns for SfKanban](sfkanban_images/wpf-kanban-board-column.png)
 
 
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
@@ -314,4 +314,4 @@ Kanban control supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfKanban](SfKanban_images/Theme.jpg)
+  ![Setting theme to WPF SfKanban](sfkanban_images/wpf-kanban-board-theme.jpg)

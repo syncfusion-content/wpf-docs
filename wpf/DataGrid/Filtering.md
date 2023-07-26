@@ -162,11 +162,11 @@ By default, both Checkbox Filter and Advanced Filter are loaded while opening th
 
 SfDataGrid with Checkbox Filter View:
       
-![WPF DataGrid with CheckBox Filter](Filtering_images/wpf-datagrid-checkbox-filter.png)
+![WPF DataGrid with CheckBox Filter](filtering_images/wpf-datagrid-checkbox-filter.png)
         
 SfDataGrid with Advanced Filter View:
     
-![WPF DataGrid with Advanced Filter](Filtering_images/wpf-datagrid-advanced-filter.png)
+![WPF DataGrid with Advanced Filter](filtering_images/wpf-datagrid-advanced-filter.png)
 
 ## Choose between built-in UI Views
 
@@ -418,7 +418,7 @@ N> When you use [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.d
 {% endhighlight %}
 {% endtabs %}
 
-![Improving Performance while Applying Filter in WPF DataGrid](Filtering_images/wpf-datagrid-apply-filter.png)
+![Improving Performance while Applying Filter in WPF DataGrid](filtering_images/wpf-datagrid-apply-filter.png)
 
 By default, [CanGenerateUniqueItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html#Syncfusion_UI_Xaml_Grid_AdvancedFilterControl_CanGenerateUniqueItems) is true. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -437,11 +437,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 
 Checkbox Filter with `AllowBlankFilters` as `True`
 
-![Filter Null Values using CheckBox Filter in WPF DataGrid](Filtering_images/wpf-datagrid-null-values-in-checkbox-filter.png)
+![Filter Null Values using CheckBox Filter in WPF DataGrid](filtering_images/wpf-datagrid-null-values-in-checkbox-filter.png)
 
 Advanced Filter with `AllowBlankFilters` as `True`
 
-![Filter Null Values using Advanced Filter in WPF DataGrid](Filtering_images/wpf-datagrid-null-values-in-advanced-filter.png)
+![Filter Null Values using Advanced Filter in WPF DataGrid](filtering_images/wpf-datagrid-null-values-in-advanced-filter.png)
 
 ## Instant Filtering
 
@@ -460,11 +460,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![CheckBox Filter with Immediate Filter in WPF DataGrid](Filtering_images/wpf-datagrd-checkbox-immediate-filter.png)
+![CheckBox Filter with Immediate Filter in WPF DataGrid](filtering_images/wpf-datagrd-checkbox-immediate-filter.png)
 
 Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
-![Advanced Filter with Immediate Filter in WPF DataGrid](Filtering_images/wpf-datagrd-advanced-immediate-filter.png)
+![Advanced Filter with Immediate Filter in WPF DataGrid](filtering_images/wpf-datagrd-advanced-immediate-filter.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ImmediateUpdateColumnFilter) is true.
 
@@ -483,19 +483,19 @@ dataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 
 Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2/10/2010 12:00:00 AM and 2/10/2010 6:30:00 PM).
 
-![Filter WPF DataGrid using Actual Value instead of Formatted String](Filtering_images/wpf-datagrid-filter-formatted-string.png)
+![Filter WPF DataGrid using Actual Value instead of Formatted String](filtering_images/wpf-datagrid-filter-formatted-string.png)
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![Filtering WPF DataGrid based on Formatted String](Filtering_images/wpf-datagrid-string-format.png)
+![Filtering WPF DataGrid based on Formatted String](filtering_images/wpf-datagrid-string-format.png)
 
 If you set [ColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnFilter) as DisplayText, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![Filter based on actual value in WPF DataGrid](Filtering_images/wpf-datagrid-filter-actual-value.png)
+![Filter based on actual value in WPF DataGrid](filtering_images/wpf-datagrid-filter-actual-value.png)
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![Filtered same Record Values in WPF DataGrid](Filtering_images/wpf-datagrid-filter-same-records.png)
+![Filtered same Record Values in WPF DataGrid](filtering_images/wpf-datagrid-filter-same-records.png)
 
 ## Events
 
@@ -648,7 +648,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Filter with Image in WPF DataGrid Column](Filtering_images/wpf-datagrid-filter-with-image.png)
+![Filter with Image in WPF DataGrid Column](filtering_images/wpf-datagrid-filter-with-image.png)
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
@@ -768,7 +768,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-![Collapse sort option from filter popup in WPF DataGrid](Filtering_images/wpf-datagrid-collapse-sort-option.png)
+![Collapse sort option from filter popup in WPF DataGrid](filtering_images/wpf-datagrid-collapse-sort-option.png)
 
 ### Customizing Sort Options text
 
@@ -806,7 +806,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing Sort Option Text from Filter Popup in WPF DataGrid](Filtering_images/wpf-datagrid-filter-popup-customization.png)
+![Customizing Sort Option Text from Filter Popup in WPF DataGrid](filtering_images/wpf-datagrid-filter-popup-customization.png)
 
 ### Changing filter icon style after applying filters
 
