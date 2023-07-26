@@ -445,7 +445,7 @@ if (this.dataGrid.View.IsAddingNew)
 
 ### Validating AddNewRow
 
-You can validate the data in AddNewRow like other data rows through [built-in validation](http://help.syncfusion.com/wpf/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://help.syncfusion.com/wpf/sfdatagrid/data-validation#custom-validation-through-events). Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.  
+You can validate the data in AddNewRow like other data rows through [built-in validation](https://help.syncfusion.com/wpf/datagrid/data-validation#built-in-validations) or [custom validation](https://help.syncfusion.com/wpf/datagrid/data-validation#custom-validation-through-events). Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.  
 
 {% tabs %}
 {% highlight c# %}
@@ -474,7 +474,7 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 ### Customizing AddNewRow text using default resource file
 
-SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](http://help.syncfusion.com/wpf/sfdatagrid/localization#editing-default-culture-resource) section.
+SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/wpf/datagrid/localization#editing-default-culture-resource) section.
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/windowsforms/sfdatagrid/localization) to learn more about localization. 
 
@@ -714,7 +714,7 @@ You can delete record directly in underlying collection also using Remove () or 
 
 #### RecordDeleting 
 
-[RecordDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
+[RecordDeleting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
 * `Cancel` - Gets or sets a value indicating whether the event should be canceled.
 
@@ -743,7 +743,7 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 #### RecordDeleted	
 
-[RecordDeleted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the record is deleted. The [RecordDeletedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs.html)  of   `RecordDeleted` event contains the following members.
+[RecordDeleted](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the record is deleted. The [RecordDeletedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs.html)  of   `RecordDeleted` event contains the following members.
 
 * `Items` - Gets the records that were removed from the source collection.
 
@@ -766,7 +766,7 @@ void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
 
 ### Deleting cell value in display mode
 
-By default, the cell content can be cleared in edit mode by pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd> key. It is also possible to delete the cell when it’s not in edit mode by handling the <kbd>Delete</kbd> key operation in the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionController.html#Syncfusion_UI_Xaml_Grid_GridSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method of [GridSelectionController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionController.html) or [GridCellSelectionController](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellSelectionController.html). Based on type of [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit), override right selection controller.
+By default, the cell content can be cleared in edit mode by pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd> key. It is also possible to delete the cell when it’s not in edit mode by handling the <kbd>Delete</kbd> key operation in the [ProcessKeyDown](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionController.html#Syncfusion_UI_Xaml_Grid_GridSelectionController_ProcessKeyDown_System_Windows_Input_KeyEventArgs_) method of [GridSelectionController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridSelectionController.html) or [GridCellSelectionController](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCellSelectionController.html). Based on type of [SelectionUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit), override right selection controller.
 
 {% tabs %}
 {% highlight c# %}
@@ -812,7 +812,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Conditionally deleting records when pressing Delete key
 
-You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
 
 {% tabs %}
 {% highlight c# %}
