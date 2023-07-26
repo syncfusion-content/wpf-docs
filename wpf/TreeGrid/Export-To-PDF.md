@@ -18,7 +18,7 @@ The following assemblies should be added for exporting a tree grid to PDF file:-
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
-You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](http://help.syncfusion.com/cr/wpf/) namespace:-
+You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.html) namespace:-
 
 * [ExportToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportExtension_ExportToPdf_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridPdfExportingOptions_)
 
@@ -206,7 +206,7 @@ fileStream.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
+After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN).
 
 {% tabs %}
 {% highlight c# %}
