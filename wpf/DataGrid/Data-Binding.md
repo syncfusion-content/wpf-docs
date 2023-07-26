@@ -19,37 +19,37 @@ documentation: ug
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. 
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. 
 
-When you add, remove item in [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1), SfDataGrid will not refresh the UI automatically.
+When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0), SfDataGrid will not refresh the UI automatically.
 
 ## Binding with IEnumerable
 
-WPF DataGrid (SfDataGrid) control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
+WPF DataGrid (SfDataGrid) control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-7.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
 
 ## Binding with DataTable
 
-WPF DataGrid (SfDataGrid) control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
+WPF DataGrid (SfDataGrid) control supports to bind the [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-7.0). SfDataGrid control automatically refresh the UI when you are binding DataTable as ItemsSource when rows are added, removed or cleared.
 
 Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression) property.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) is not supported. You can achieve the expression support when binding DataTable using [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-7.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-7.0) property.
 * `AddNewRow` is not support when filtering is enabled.
 * Advanced Filtering does not support Case Sensitive filtering.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Filter) is not supported.
 * Custom sorting is not supported.
-* Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan) values is not supported.
+* Filtering with [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-7.0) values is not supported.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) is not supported.
 * Filtering with sub second components in `DateTime` values is not supported.
 
 ### Apply DataView.RowFilter on initial loading
 
-When DataTable is bounded as `SfDataGrid.ItemsSource`, the [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading by default. The `DataView.RowFilter` can be applied to the data on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property.
+When DataTable is bounded as `SfDataGrid.ItemsSource`, the [DataView.RowFilter](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading by default. The `DataView.RowFilter` can be applied to the data on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property.
 
 ## Binding with dynamic data object
 
-WPF DataGrid (SfDataGrid) control supports to bind [dynamic data object](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic). Below are the limitations when you are binding dynamic data object,
+WPF DataGrid (SfDataGrid) control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?view=net-7.0). Below are the limitations when you are binding dynamic data object,
 
 1. SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
@@ -314,7 +314,7 @@ Follow the below steps to define **ADO.NET Entity Data Model** in the web projec
 
     ![Choose the model contents from visual studio](Data-Binding_images/Data-Binding_img2.png)
 
-5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
     ![Choose the Northwind database from visual studio](Data-Binding_images/Data-Binding_img3.png)
 
@@ -444,7 +444,7 @@ To create Data Model using Entity Framework in WPF application created in the pr
 
     ![Choose the modelcontents when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img8.png)
 
-6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
     ![The Northwind database when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img9.png)
 
@@ -653,7 +653,7 @@ void dataGrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidatedEv
 
 ## Binding data from ADO.NET
 
-SfDataGrid control supports to load the data using [ADO.NET](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/aa302325(v=msdn.10)). In this walk-through, you will learn about binding data from ADO.NET service and save back the changes to the database.
+SfDataGrid control supports to load the data using [ADO.NET](https://learn.microsoft.com/en-us/previous-versions/dotnet/articles/aa302325(v=msdn.10)). In this walk-through, you will learn about binding data from ADO.NET service and save back the changes to the database.
 
 1. Creating WPF application 
 2. Connecting  database to WPF application
@@ -692,8 +692,8 @@ To connect SQL database to your WPF application, refer the below MSDN link or fo
 To access the data from data source using ADO.NET, follow the below steps.
 
 1. Create a user interface with SfDataGrid control and add the required assemblies to your WPF application.
-2. Create a connection through any of the [.NET Framework data provider](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
-3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
+2. Create a connection through any of the [.NET Framework data provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) based on the type of data source that you have owned.
+3. Set the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) as Shippers table from data set. For more information refer [here](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
 {% capture codesnippet3 %}
 {% tabs %}
