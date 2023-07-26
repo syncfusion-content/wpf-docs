@@ -2000,7 +2000,7 @@ void dataGrid_DetailsViewCollapsed(object sender, GridDetailsViewCollapsedEventA
 
 ### Cancel expanding or collapsing operations through events
 
-You can cancel expanding operation while expanding the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+You can cancel expanding operation while expanding the [DetailsViewDataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) by using [GridDetailsViewExpandingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-7.0) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -2016,7 +2016,7 @@ void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDe
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-7.0) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}

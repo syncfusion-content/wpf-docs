@@ -812,7 +812,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Conditionally deleting records when pressing Delete key
 
-You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event.  You can skip certain records when deleting more than one record by removing items from `RecordDeletingEventArgs.Items`. 
 
 {% tabs %}
 {% highlight c# %}
