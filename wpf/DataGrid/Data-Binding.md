@@ -195,17 +195,17 @@ N> DataGrid creates different types of views derived from `ICollectionViewAdv` i
 <tr>
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
-<td>Maintains the TableSummaryRows collection information. To know more about TableSummaries {{ '[Refer here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }} </td>
+<td>Maintains the TableSummaryRows collection information. To know more about TableSummaries {{ '[Refer here](https://help.syncfusion.com/wpf/datagrid/summaries)' | markdownify }} </td>
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
-<td>Maintains the SummaryRows collection information. To know more about summaries {{ '[Refer here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }} </td>
+<td>Maintains the SummaryRows collection information. To know more about summaries {{ '[Refer here](https://help.syncfusion.com/wpf/datagrid/summaries)' | markdownify }} </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
-<td>Maintains the CaptionSummaryRow information.To know more about CaptionSummaries {{ '[Refer here](http://help.syncfusion.com/wpf/sfdatagrid/summaries)' | markdownify }}</td>
+<td>Maintains the CaptionSummaryRow information.To know more about CaptionSummaries {{ '[Refer here](https://help.syncfusion.com/wpf/datagrid/summaries)' | markdownify }}</td>
 </tr>
 </table>
 
@@ -214,27 +214,27 @@ The following events are associated with View.
 
 ### RecordPropertyChanged
 
-[RecordPropertyChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_RecordPropertyChanged) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.PropertyChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_RecordPropertyChanged) event is raised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true&view=net-5.0) as object.
 
 `PropertyChangedEventArgs` has below property,
 
-[PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
+[PropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-7.0) – It denotes the PropertyName of the changed value.
 
 ### CollectionChanged
 
-[CollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_CollectionChanged) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as object.
+[CollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_CollectionChanged) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true&view=net-5.0) as object.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
-[Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)%26rd%3Dtrue&view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
+[Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true&view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
 
-[NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of new items involved in the change.
+[NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)&rd=true&view=net-5.0) - It contains the list of new items involved in the change.
 
-[OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of old items affected by the Action.
+[OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)&rd=true&view=net-5.0) - It contains the list of old items affected by the Action.
 
-[NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)%26rd%3Dtrue&view=net-5.0) - It contains the index at which the change occurred.
+[NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)&rd=true&view=net-5.0) - It contains the index at which the change occurred.
 
-[OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)%26rd%3Dtrue&view=net-5.0)-It contains the index at which the Action occurred.
+[OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)&rd=true&view=net-5.0)-It contains the index at which the Action occurred.
 
 ### SourceCollectionChanged
 
@@ -242,15 +242,15 @@ The following events are associated with View.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
-[Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)%26rd%3Dtrue&view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
+[Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true&view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace, Reset.
 
-[NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of new items involved in the change.
+[NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)&rd=true&view=net-5.0) - It contains the list of new items involved in the change.
 
-[OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)%26rd%3Dtrue&view=net-5.0) - It contains the list of old items affected by the Action.
+[OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)&rd=true&view=net-5.0) - It contains the list of old items affected by the Action.
 
-[NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)%26rd%3Dtrue&view=net-5.0) - It contains the index at which the change occurred.
+[NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)&rd=true&view=net-5.0) - It contains the index at which the change occurred.
 
-[OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)%26rd%3Dtrue&view=net-5.0) - It contains the index at which the Action occurred.
+[OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)&rd=true&view=net-5.0) - It contains the index at which the Action occurred.
 
 The following is the methods that are associated with View which can be used to defer refresh the view.
 
@@ -284,13 +284,13 @@ Below are the topics,
 3. Loading data from WCF Service
 
 Reference:
-[https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/bind-wpf-controls-to-a-wcf-data-service?view=vs-2015](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/bind-wpf-controls-to-a-wcf-data-service?view=vs-2015)
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/bind-wpf-controls-to-a-wcf-data-service?view=vs-2015](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/data-tools/bind-wpf-controls-to-a-wcf-data-service?view=vs-2015)
 
 ### Create the WCF data service 
 
 To create the WCF data service, follow the steps mentioned in the below MSDN link or the follow below steps,
 
-[https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service](https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service).
+[https://learn.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service](https://learn.microsoft.com/en-us/previous-versions/dotnet/framework/data/wcf/creating-the-data-service).
 
 You can skip the below steps and directly add service reference to the client application, if you are having already running service.
  
@@ -408,7 +408,7 @@ Now, run the application and you can see the SfDataGrid control loaded with data
  
 ## Binding data from ADO.NET Entity Framework
 
-SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
+SfDataGrid control supports to bind data from ADO.NET Entity Framework. In this walk-through, you will learn about binding data from ADO.NET Entity Framework and save back the changes to the database. You can download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ADO.Net_EntityFrmeworkDemo-1459994268.zip).
 
 To load the data from ADO.NET Entity Framework, you can refer the steps mentioned in below follow the below steps,
 
@@ -418,11 +418,11 @@ To load the data from ADO.NET Entity Framework, you can refer the steps mentione
 
 References :
 
-[https://docs.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)](https://docs.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))
+[https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120)](https://learn.microsoft.com/en-us/previous-versions/dd465159(v=vs.120))
 
-[https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))
+[https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100)](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ee340709(v=vs.100))
 
-[https://docs.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first](https://docs.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first)
+[https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first](https://learn.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first)
 
 ### Creating WPF client Application
 
@@ -541,9 +541,9 @@ SfDataGrid control supports to bind data from LINQ to SQL .In this walkthrough, 
 
 References :
 
-[https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/data-binding](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/data-binding)
+[https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/data-binding](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/data-binding)
 
-[https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
+[https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
 
 ### Creating WPF Client Application
 
@@ -667,7 +667,7 @@ To display the data from the ADO.NET data service, create a new WPF Application
 
 To connect SQL database to your WPF application, refer the below MSDN link or follow the below steps,
 
-[https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))
+[https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90))
 
 1. In the Tools menu, select the **Connect to Database**.
 2. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient)**.
@@ -736,7 +736,7 @@ You can save the row or cell level changes back to the data source by handling [
 The below code example will save back the changed value of row to database.
 You can refer the below MSDN link for more information.
 
-[https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/updating-data-sources-with-dataadapters](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/updating-data-sources-with-dataadapters)
+[https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/updating-data-sources-with-dataadapters](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/updating-data-sources-with-dataadapters)
 
 {% tabs %}
 {% highlight c# %}
