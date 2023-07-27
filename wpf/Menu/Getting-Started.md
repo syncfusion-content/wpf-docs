@@ -13,7 +13,7 @@ This section provides a quick overview for working with the Menu ([MenuAdv](http
 
 ## Structure of the MenuAdv Control
 
-![MenuAdvStructure](Getting-Started_images/Getting-Started_img1.png)
+![WPF MenuAdv Structure](getting-started_images/wpf-menu-structure.png)
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#menuadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) control in any application.
@@ -45,13 +45,13 @@ The following are the steps to create the [MenuAdv](https://help.syncfusion.com/
 
 1. Drag [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) from the Visual Studio Toolbox and drop it in the designer.
 
-   ![ThroughVisualStudio](Getting-Started_images/Getting-Started_img2.png)
+   ![WPF Designer ThroughVisualStudio](getting-started_images/wpf-menu-designer.png)
 
 2. Select the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) and go to properties.
 
 3. Click the three dotted button given in Items property. Collection Editor window will open.
 
-   ![ThroughVisualStudio](Getting-Started_images/Getting-Started_img3.png)
+   ![WPF MenuAdv Collection Editor ThroughVisualStudio](getting-started_images/wpf-menu-collection-editor.png)
 
 4. Using the Collection Editor, add the GroupBarItems and configure their properties.
 
@@ -65,7 +65,7 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuA
 
 2. Search for [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) in the Toolbox.
 
-   ![ThroughExpressionBlend](Getting-Started_images/Getting-Started_img4.png)
+   ![WPF MenuAdv Through Expression Blend](getting-started_images/wpf-menu-through-expression-blend.png)
 
 3. Drag the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuAdv.html) to designer to generate an empty menu bar. 
 
@@ -73,17 +73,17 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuA
 
 5. Click Items (Collection) under Common Properties.
 
-   ![ItemCollection](Getting-Started_images/Getting-Started_img5.png)
+   ![ItemCollection in WPF MenuAdv](getting-started_images/wpf-menu-common-properties.png)
 
 6. Once the Collection Editor opens, click Add another item.  The Select Object window will open.
 
 7. Select [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) by typing [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) in the search box, and then click OK.
 
-    ![ItemCollection](Getting-Started_images/Getting-Started_img6.png)
+    ![Item Collection in WPF MenuAdv](getting-started_images/wpf-menu-item-collection.png)
 
 8. Configure the properties (such as header or icon) of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the properties in the Collection Editor. This will generate the following control.
 
-	![Output](Getting-Started_images/Getting-Started_img7.png)
+	![Output in WPF MenuAdv](getting-started_images/wpf-menu-output.png)
 
 N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
 
@@ -274,7 +274,7 @@ menuAdv.Items.Add(Project);
 
 {% endtabs %}
 
-![Icons in MenuAdv](Getting-Started_images/Getting-Started_img8.png)
+![Icons in WPF MenuAdv](getting-started_images/wpf-menu-icons.png)
 
 ## Theme
 
@@ -284,4 +284,4 @@ MenuAdv supports various built-in themes. Refer to the below links to apply them
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF MenuAdv](Getting-Started_images/Theme.png)
+  ![Setting theme to WPF MenuAdv](getting-started_images/wpf-menu-theme.png)
