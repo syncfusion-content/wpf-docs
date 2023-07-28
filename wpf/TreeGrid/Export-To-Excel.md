@@ -662,7 +662,7 @@ You can perform cell level customizations such as row-level styling, formatting 
 In the following code snippet, NumberFormat for `Employee ID` column is changed in the exported sheet after exporting without using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_CellsExportingEventHandler).
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -683,7 +683,7 @@ workBook.SaveAs("Sample.xlsx");
 In the following code snippet, the background color of the rows in Excel is changed based on the row index using conditional formatting for better performance.
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -784,7 +784,7 @@ protected override void ExportNodesToExcel(SfTreeGrid treeGrid, TreeNodes nodes,
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
