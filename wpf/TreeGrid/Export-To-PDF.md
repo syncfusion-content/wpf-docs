@@ -206,7 +206,7 @@ fileStream.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?redirectedfrom=MSDN&view=net-5.0).
+After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN).
 
 {% tabs %}
 {% highlight c# %}
@@ -402,7 +402,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![Exporting Image to PDF page from WPF TreeGrid Content](Export-To-PDF_images/wpf-treegrid-export-with-image.png)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfExportingDemo386427743.zip).
 
 ## Embed fonts in PDF file
 
@@ -428,7 +428,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingFonts_to_PDF-1471058966.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingFonts_to_PDF-1471058966.zip).
 
 ## Export parent and expanded child nodes
 
@@ -502,7 +502,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![Exporting with Arabic Language Text from WPF TreeGrid to PDF Page](Export-To-PDF_images/wpf-treegrid-export-arabic-text.png)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExportMiddleEstern_to_PDF32087667.zip).
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
