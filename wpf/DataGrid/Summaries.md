@@ -2249,7 +2249,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ![Custom Aggregate Summaries in WPF DataGrid](Summaries_images/wpf-datagrid-custom-summaries.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
 
 ## Overriding Summary Renderer
 
@@ -2362,7 +2362,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 ![Table Summary Formatting using Renderer in WPF DataGrid](Summaries_images/wpf-datagrid-table-summary-formatting.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
 
 ### Customizing GroupCaptionText
 
@@ -2457,7 +2457,7 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![Customized Group Caption Text Format in WPF DataGrid](Summaries_images/wpf-datagrid-customization.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
 
 ## See Also
 
