@@ -45,7 +45,7 @@ The steps to create a [SfRangeSlider](https://help.syncfusion.com/cr/wpf/Syncfus
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![Tools](GettingStarted_images/img1.png)
+![Tools in WPF Range Slider](getting-started_images/wpf-range-slider-tools.png)
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ SfRangeSlider rangeSlider = new SfRangeSlider()
 
 {% endtabs %}
 
-![RangeSlider](GettingStarted_images/img2.png)
+![Adding Control Manually in WPF Range Slider](getting-started_images/wpf-range-slider-add-control-manually.png)
 
 ## Theme
 
@@ -95,4 +95,4 @@ SfRangeSlider supports various built-in themes. Refer to the below links to appl
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF RangeSlider](GettingStarted_images/Theme.png)
+  ![Setting theme in WPF Range Slider](getting-started_images/wpf-range-slider-theme.png)
