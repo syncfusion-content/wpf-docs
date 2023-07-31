@@ -11,7 +11,7 @@ documentation: ug
 
 The [DockingManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.DockingManager.html) control implements an architecture that allows child controls to be docked at any part of a window as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
 
-![Overview of WPF Docking Manger control](Overview_images/wpf-docking-overview.png)
+![Overview of WPF Docking Manger control](overview_images/wpf-docking-overview.png)
 
 ## Key features
 

@@ -29,7 +29,7 @@ Create a new WPF project to show the [SfDomainUpDown](https://help.syncfusion.co
 
 The [SfDomainUpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfDomainUpDown.html) control can be added to the application by dragging it from Toolbox and dropping it in the designer. The required [assemblies](https://help.syncfusion.com/wpf/control-dependencies#sfdomainupdown) will be added automatically.
 
-![Adding control via designer](Getting-Started_images/SfDomainUpDown_GettingStarted_img2.png)
+![Adding control via designer in WPF Domain UpDown](getting-started_images/wpf-domain-updown-adding-control-via-designer.png)
 
 ## Adding control manually in XAML
 
@@ -113,7 +113,7 @@ namespace ComboBox
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfDomainUpDown control implemented](Getting-Started_images/Spin-Button_img6.png)
+![SfDomainUpDown control implemented in WPF](getting-started_images/wpf-domain-updown-adding-control-manually.png)
 
 
 ## Populating by DataBinding
@@ -202,7 +202,7 @@ public class ViewModel
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![wpf domain up down control added by code](Getting-Started_images/wpf-domain-updown-control-data-binding.png)
+![wpf domain up down control added by code](getting-started_images/wpf-domain-updown-control-data-binding.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GettingStarted-Databinding).
 
@@ -228,15 +228,15 @@ domainUpDown1.SpinButtonsAlignment = Syncfusion.Windows.Controls.SpinButtonsAlig
 
 1.Right
 
-![SpinButton aligned right](Getting-Started_images/Spin-Button-Alignment_img1.png)
+![SpinButton aligned right in WPF Domain UpDown](getting-started_images/wpf-domain-updown-spin-button-aligned-right.png)
 
 2.Left
 
-![SpinButton aligned left](Getting-Started_images/Spin-Button-Alignment_img3.png)
+![SpinButton aligned left in WPF Domain UpDown](getting-started_images/wpf-domain-updown-spin-button-aligned-left.png)
 
 3.Both
 
-![SpinButton aligned both](Getting-Started_images/Spin-Button-Alignment_img5.png)
+![SpinButton aligned both in WPF Domain UpDown](getting-started_images/wpf-domain-updown-spin-button-aligned-both.png)
 
 ## Theme
 
@@ -246,4 +246,4 @@ SfDomainUpDown supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-![Setting theme to WPF SfDomainUpDown](Getting-Started_images/SfDomainUpDown_theme_support.png)
+![Setting theme to WPF SfDomainUpDown](getting-started_images/wpf-domain-updown-theme-support.png)
