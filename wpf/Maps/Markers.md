@@ -486,5 +486,5 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 ## See also
 
-[How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
+[How to customize the markers in maps](https://support.syncfusion.com/kb/article/6824/how-to-customize-the-markers-in-maps)
 
