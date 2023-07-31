@@ -15,9 +15,9 @@ Syncfusion WPF suite comes up with a package of powerful grid controls that prov
 
 The Essential Studio for WPF is comprised of following three types of grid controls:
 
-* [Grid Control](https://www.syncfusion.com/wpf-ui-controls/excel-like-grid)
-* [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) and GridDataControl (classic)
-* [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid) and GridTreeControl (classic)
+* [Grid Control](https://www.syncfusion.com/wpf-controls/excel-like-grid)
+* [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) and GridDataControl (classic)
+* [SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) and GridTreeControl (classic)
 
 N> Refer [Choose between different Grid's](https://help.syncfusion.com/wpf/datagrid/overview#choose-between-different-grids) to take closer look at the characteristics of each of these controls. 
 
