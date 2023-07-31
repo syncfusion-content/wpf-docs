@@ -11,7 +11,7 @@ documentation: ug
 
 [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfGridSplitter.html) is a container control that helps to split the available space horizontally or vertically with a movable splitter and arrange the visual elements inside it. 
 
-![WPF GridSplitter resize and collapse](Overview-images/overview.png)
+![WPF GridSplitter resize and collapse](overview-images/wpf-grid-splitter-resize-and-collapse.png)
 
 ## Features of SfGridSplitter
 

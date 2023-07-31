@@ -13,9 +13,9 @@ The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) c
 
 ## Control structure
 
-![WPF DoubleTextBox](Getting-Started_images/wpf-double-textbox.png)
+![WPF DoubleTextBox Overview](getting-started_images/wpf-double-textbox-overview.png)
 
-![WPF DoubleTextBox with Watermark Text](Getting-Started_images/wpf-double-textbox-watermark.png)
+![WPF DoubleTextBox with Watermark Text](getting-started_images/wpf-double-textbox-watermark.png)
 
 ## Features
 
