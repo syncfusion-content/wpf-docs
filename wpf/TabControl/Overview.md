@@ -11,7 +11,7 @@ documentation: ug
 
 The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using `TabControl`, an application can define multiple pages for the same area of a window. `TabControl` contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `TabControl`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
 
-![Overview of TabControlExt control](Overview_images/overview.png)
+![Overview in WPF TabControl](overview_images/wpf-tabcontrol-overview.png)
 
 ## Key features
 

@@ -35,12 +35,12 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend in WPF Chart](Legend_images/wpf-chart-legend.png)
+![Legend in WPF Chart](legend_images/wpf-chart-legend.png)
 
 
 Each legend composed of the following parts:
 
-![WPF Chart displays Legend Elements](Legend_images/wpf-chart-legend-elements.png)
+![WPF Chart displays legend elements](legend_images/wpf-chart-legend-elements.png)
 
 
 ## Legend Icon
@@ -93,7 +93,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Changing Legend Icon in WPF Chart](Legend_images/wpf-chart-legend-icon.png)
+![Changing legend icon in WPF Chart](legend_images/wpf-chart-legend-icon.png)
 
 
 The following properties are used to customize the legend icons.
@@ -170,7 +170,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Customizing Legend Icon in WPF Chart](Legend_images/wpf-chart-legend-icon-customization.png)
+![Customizing legend icon in WPF Chart](legend_images/wpf-chart-legend-icon-customization.png)
 
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) property in ChartLegend. 
@@ -207,7 +207,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Hide Legend Icon in WPF Chart](Legend_images/wpf-chart-hide-legend-icon.png)
+![Hide legend icon in WPF Chart](legend_images/wpf-chart-hide-legend-icon.png)
 
 
 **Custom** **Legend** **Icon**
@@ -273,7 +273,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![WPF Chart with Custom Legend Icon](Legend_images/wpf-chart-custom-legend-icon.png)
+![WPF Chart with custom legend icon](legend_images/wpf-chart-custom-legend-icon.png)
 
 
 ## Label
@@ -321,7 +321,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Adding Labels for Legend in WPF Chart](Legend_images/wpf-chart-label-for-legend.png)
+![Adding labels for legend in WPF Chart](legend_images/wpf-chart-label-for-legend.png)
 
 
 ## Checkbox 
@@ -355,12 +355,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![WPF Chart with CheckBox for Legend](Legend_images/wpf-chart-checkbox-for-legend.png)
+![WPF Chart with checkBox for legend](legend_images/wpf-chart-checkbox-for-legend.png)
 
 
 The series can be collapsed by unchecking the CheckBox as below:
 
-![WPF Chart with CheckBox for Legend](Legend_images/wpf-chart-legend-with-unchecked-checkbox.png)
+![WPF Chart with CheckBox for legend](legend_images/wpf-chart-legend-with-unchecked-checkbox.png)
 
 
 ## ToggleSeriesVisibility 
@@ -397,12 +397,12 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/wpf/charts/seriestypes/series) can be collapsed, by clicking on the respective legend item,
 
-![Collapse Toggle Series for Legend in WPF Chart](Legend_images/wpf-chart-collapse-toggle-series.png)
+![Collapse toggle series for legend in WPF Chart](legend_images/wpf-chart-collapse-toggle-series.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/wpf/charts/seriestypes/series), by clicking on its disabled legend item,
 
-![Visible Toggle Series for Legend in WPF Chart](Legend_images/wpf-chart-visible-toggle-series.png)
+![Visible toggle series for legend in WPF Chart](legend_images/wpf-chart-visible-toggle-series.png)
 
 
 ## Positioning the Legend
@@ -437,7 +437,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Displaying Legend at Inside of WPF Chart](Legend_images/wpf-chart-legend-inside.png)
+![Displaying legend at inside of WPF Chart](legend_images/wpf-chart-legend-inside.png)
 
 
 **Docking**
@@ -472,7 +472,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Displaying Legend at Bottom Position of WPF Chart](Legend_images/wpf-chart-legend-bottom.png)
+![Displaying legend at bottom position of WPF Chart](legend_images/wpf-chart-legend-bottom.png)
 
 
 **Floating** **Legends**
@@ -510,7 +510,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Displaying Legend at Floating Position of WPF Chart](Legend_images/wpf-chart-floating-legend.png)
+![Displaying legend at floating position of WPF Chart](legend_images/wpf-chart-floating-legend.png)
 
 
 ## Legend Header
@@ -568,7 +568,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![Legend Header in WPF Chart](Legend_images/wpf-chart-legend-header.png)
+![Legend header in WPF Chart](legend_images/wpf-chart-legend-header.png)
 
 
 ## Multiple Legends
@@ -675,7 +675,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![Multiple Legends in WPF Chart](Legend_images/wpf-chart-multi-legends.png)
+![Multiple legends in WPF Chart](legend_images/wpf-chart-multi-legends.png)
 
 
 ## Legends for Accumulation Series
@@ -721,7 +721,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![Legends for Accumulation Series in WPF Chart](Legend_images/wpf-chart-legend-series.png)
+![Legends for accumulation series in WPF Chart](legend_images/wpf-chart-legend-series.png)
 
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
@@ -804,7 +804,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Series of legend in WPF Chart](Legend_images/wpf-chart-visibile-series.png)
+![Series of legend in WPF Chart](legend_images/wpf-chart-visibile-series.png)
 
 
 ## Legend Orientation
@@ -836,7 +836,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![WPF Chart displays Legend in Vertical](Legend_images/wpf-chart-vertical-legend.png)
+![WPF Chart displays legend in vertical](legend_images/wpf-chart-vertical-legend.png)
 
 
 ## Customization
@@ -941,7 +941,7 @@ public class ImageConverter:IValueConverter
 
 {% endtabs %}
 
-![Customizing Legend in WPF Chart](Legend_images/wpf-chart-legend-customization.png)
+![Customizing legend in WPF Chart](legend_images/wpf-chart-legend-customization.png)
 
 
 **Customizing** **Legend** **Items** **Layout**
@@ -989,7 +989,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![Customizing Legend Items Layout in WPF Chart](Legend_images/wpf-chart-legend-item-customization.png)
+![Customizing legend items layout in WPF Chart](legend_images/wpf-chart-legend-item-customization.png)
 
 ## Troubleshooting
 
