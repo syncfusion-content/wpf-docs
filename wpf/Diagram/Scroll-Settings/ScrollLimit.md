@@ -72,4 +72,4 @@ diagram.ScrollSettings = new ScrollSettings()
 
 
 ## See Also
-* [How to stop infinite scrolling?](https://www.syncfusion.com/kb/11477/how-to-stop-infinite-scrolling-in-wpf-diagramsfdiagram)
+* [How to stop infinite scrolling?](https://support.syncfusion.com/kb/article/9869/how-to-stop-infinite-scrolling-in-wpf-diagram-sfdiagram)

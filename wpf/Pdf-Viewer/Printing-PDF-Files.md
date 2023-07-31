@@ -271,11 +271,11 @@ namespace PdfViewer
 
 ## Customizing Paper source in Silent Printing
 
-You can customize [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) in silent printing by changing the [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) property in [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0) and passing it as a parameter with printer name to the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_PdfViewer_PdfDocumentView_Print_System_String_System_Drawing_Printing_PageSettings_) API. 
+You can customize [PaperSource](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) in silent printing by changing the [PaperSource](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) property in [PageSettings](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) and passing it as a parameter with printer name to the [Print](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_PdfViewer_PdfDocumentView_Print_System_String_System_Drawing_Printing_PageSettings_) API. 
 
 N> The `System.Drawing` assembly is required. 
 
-The following code example illustrates how to set [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) for Your printer. In the [PageSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=net-5.0), pass the required [PaperSource](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=net-5.0) value. 
+The following code example illustrates how to set [PaperSource](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) for Your printer. In the [PageSettings](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0), pass the required [PaperSource](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.papersource?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) value. 
 
 {% tabs %}
 {% highlight c# %}
