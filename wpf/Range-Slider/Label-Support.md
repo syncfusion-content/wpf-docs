@@ -75,7 +75,7 @@ Create a ViewModel class with CustomCollection property.
 
 {% endtabs %}
 
-In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) property in the SfRangeSlider control that populates the custom labels collection.
+In the following code example, the CustomCollection property is bound to [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_CustomLabels) property in the SfRangeSlider control that populates the custom labels collection.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ RangeSlider with CustomLabels
 
 ## ShowCustomLabels
 
-The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ShowCustomLabels.html) is false. When set to true, it displays the custom labels with the corresponding Tool tip for specific values based on the [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~CustomLabels.html) collection.
+The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ShowCustomLabels) is false. When set to true, it displays the custom labels with the corresponding Tool tip for specific values based on the [CustomLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_CustomLabels) collection.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ RangeSlider with ShowCustomLabels
 
 ## LabelPlacement
 
-[LabelPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~LabelPlacement.html) property describes the position of the custom labels for particular values mentioned in the CustomLabels collection. Available options for this property are:
+[LabelPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_LabelPlacement) property describes the position of the custom labels for particular values mentioned in the CustomLabels collection. Available options for this property are:
 
 1. BottomRight
 2. TopLeft
@@ -272,7 +272,7 @@ LabelPlacement in TopLeft
 
 ## ShowValueLabels
 
-The default value of the [ShowValueLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ShowValueLabels.html) property is false. When set to true, it displays the label for all the ticks based on the ValuePlacement property.
+The default value of the [ShowValueLabels](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ShowValueLabels) property is false. When set to true, it displays the label for all the ticks based on the ValuePlacement property.
 
 {% tabs %}
 
@@ -316,12 +316,12 @@ ShowValueLabels property
 
 ## ValuePlacement
 
-The [ValuePlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ValuePlacement.html) property describes the position of the labels for all the ticks. Available options for this property are:
+The [ValuePlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ValuePlacement) property describes the position of the labels for all the ticks. Available options for this property are:
 
 1. BottomRight
 2. TopLeft
 
-The following code example illustrates the usage of [ValuePlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~ValuePlacement.html) property. The output is displayed in the corresponding images.
+The following code example illustrates the usage of [ValuePlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_ValuePlacement) property. The output is displayed in the corresponding images.
 
 {% tabs %}
 
@@ -409,12 +409,12 @@ ValuePlacement in BottomRight
 
 ## LabelOrientation
 
-The [LabelOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~LabelOrientation.html) property describes the orientation of the labels for both ticks and custom labels. Available options for this property are:
+The [LabelOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_LabelOrientation) property describes the orientation of the labels for both ticks and custom labels. Available options for this property are:
 
 1. Horizontal
 2. Vertical
 
-The following code example illustrates the usage of [LabelOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfRangeSlider~LabelOrientation.html) property. The output is displayed in the corresponding images.
+The following code example illustrates the usage of [LabelOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Input.SfRangeSlider.html#Syncfusion_Windows_Controls_Input_SfRangeSlider_LabelOrientation) property. The output is displayed in the corresponding images.
 
 {% tabs %}
 
