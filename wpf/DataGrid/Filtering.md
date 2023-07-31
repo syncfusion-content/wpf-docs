@@ -48,7 +48,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> View filter is not supported when ItemsSource is [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0).
+N> View filter is not supported when ItemsSource is [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0).
 
 ### Column Filtering
 
@@ -69,7 +69,7 @@ The [FilterBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data
 * **StringTyped** - Records are filtered without considering the type and it takes [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) type as string.
 * **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.
 
-N> When you use [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) as items Source, [IsCaseSensitive](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in [FilterPredicate](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
+N> When you use [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) as items Source, [IsCaseSensitive](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in [FilterPredicate](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
 
 #### Improving performance while adding multiple FilterPredicates to the column in loop
 
@@ -265,7 +265,7 @@ Below are the built-in filter types supported.
  
 * **Text Filters** – Loads various menu options to filter the display text effectively.
 * **Number Filters** – Loads various menu options to filter the numeric data.
-* **Date Filters** – Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=net-5.0) to filter DateTime type column.
+* **Date Filters** – Loads various menu options and [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) to filter DateTime type column.
 
 <table>
 <tr>
@@ -281,7 +281,7 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bounded to the {{ '[GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} or the items source is {{ '[dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)'| markdownify }} ,then <code>TextFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
+When the string value is bounded to the {{ '[GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} or the items source is {{ '[dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)'| markdownify }} ,then <code>TextFilters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 <td>
 When integer, double, short, decimal, byte or long are bound to the {{ '[GridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} then <code>Number Filters</code> are loaded in {{ '[AdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
@@ -394,7 +394,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 
 By default, casing is not considered while filtering. Because, filter predicates will be created with [IsCaseSensitive](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) as `false`. If you want to filter the records with `IsCaseSensitive` as `true`, you need to click case sensitive button present in Advanced Filter.
 
-N> When you use [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) as items Source, CaseSensitive button will not be available in Filter popup as `DataTable` does not support CaseSensitive filtering.
+N> When you use [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) as items Source, CaseSensitive button will not be available in Filter popup as `DataTable` does not support CaseSensitive filtering.
 
 ## Performance tips
 
@@ -653,7 +653,7 @@ public class StringToImageConverter : IValueConverter
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
 ## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
-By default, the default filter created by [ICollectionView.Filter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview.filter?view=netframework-4.8#System_ComponentModel_ICollectionView_Filter) and [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property. 
+By default, the default filter created by [ICollectionView.Filter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview.filter?view=netframework-4.8#System_ComponentModel_ICollectionView_Filter) and [DataView.RowFilter](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanUseViewFilter) property. 
 
 ## Functionality Customization
 
@@ -687,7 +687,7 @@ void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridF
 
 ### Changing AdvancedFilter type while loading dynamic ItemsSource
   
-By default, `TextFilters` will be loaded for the columns if `ItemsSource` is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnMemberType) property.
+By default, `TextFilters` will be loaded for the columns if `ItemsSource` is [dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types).  If you want to load Number Filters or Date Filters based on column values, you need to use [ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnMemberType) property.
 
 {% tabs %}
 {% highlight c# %}
