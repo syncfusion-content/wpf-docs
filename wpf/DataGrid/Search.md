@@ -377,8 +377,8 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
 
 ## See Also
 
-[How to apply search and filter for one column in SfDataGrid?](https://www.syncfusion.com/kb/9297)
+[How to apply search and filter for one column in SfDataGrid?](https://support.syncfusion.com/kb/article/7984/how-to-apply-search-and-filter-for-one-column-in-wpf-datagrid-sfdatagrid)
 
-[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://www.syncfusion.com/kb/9290)
+[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://support.syncfusion.com/kb/article/7966/how-to-filter-the-records-with-searching-when-underlying-items-source-is-datatable-in-wpf)
 
-[How to perform incremental search ?](https://www.syncfusion.com/kb/8505)
+[How to perform incremental search ?](https://support.syncfusion.com/kb/article/7649/how-to-perform-the-incremental-search-in-wpf-datagrid-sfdatagrid)
