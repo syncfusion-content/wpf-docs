@@ -655,4 +655,4 @@ SfGridSplitter supports various built-in themes. Refer to the below links to app
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF SfGridSplitter](getting-started-images/wpf-grid-splitter-theme-support.png)
+  ![Setting theme to WPF SfGridSplitter](getting-started-images/wpf-grid-splitter-theme.png)
