@@ -1352,16 +1352,16 @@ You can download a working demo for the above customization from [here](https://
 
 ## See Also
 
-[How to navigate to the error cells in datagrid via button click?](https://www.syncfusion.com/kb/9600/how-to-navigate-to-the-error-cells-in-wpf-datagrid-sfdatagrid-via-button-click)
+[How to navigate to the error cells in datagrid via button click?](https://support.syncfusion.com/kb/article/8527/how-to-navigate-to-the-error-cells-in-wpf-datagrid-sfdatagrid-via-button-click)
 
-[How to validate the AddNewRow value based on already existing records?](https://www.syncfusion.com/kb/6596/how-to-validate-the-addnewrow-value-based-on-existing-records-in-wpf-datagrid-sfdatagrid)
+[How to validate the AddNewRow value based on already existing records?](https://support.syncfusion.com/kb/article/6055/how-to-validate-the-addnewrow-value-based-on-existing-records-in-wpf-datagrid-sfdatagrid)
 
-[How to show the validation tooltip without hovering the red indicator in cell?](https://www.syncfusion.com/kb/6234/how-to-show-the-validation-tooltip-without-hovering-the-red-indicator-in-cell)
+[How to show the validation tooltip without hovering the red indicator in cell?](https://support.syncfusion.com/kb/article/5958/how-to-show-the-validation-tooltip-without-hovering-the-red-indicator-in-cell-in-wpf-datagrid)
 
-[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://www.syncfusion.com/kb/5954/how-to-fire-rowvalidating-event-for-gridcheckboxcolumn-in-sfdatagrid)
+[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://support.syncfusion.com/kb/article/5634/how-to-fire-rowvalidating-event-for-gridcheckboxcolumn-in-sfdatagrid-in-wpf-)
 
-[How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://www.syncfusion.com/kb/5317/how-to-remove-the-top-right-corner-error-mark-from-the-gridcell-by-pressing-esc-key-when)
+[How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://support.syncfusion.com/kb/article/5019/how-to-remove-the-top-right-corner-error-mark-from-the-gridcell-in-wpf-datagrid)
 
-[How to change the validation error template color?](https://www.syncfusion.com/kb/2574/how-to-change-the-validation-error-template-color)
+[How to change the validation error template color?](https://support.syncfusion.com/kb/article/2775/how-to-change-the-validation-error-template-color-in-wpf-datagrid)
 
-[How to wire the RowValidating event after pasted the content to datagrid?](https://www.syncfusion.com/kb/9432/how-to-wire-the-rowvalidating-event-after-pasted-content-to-wpf-datagrid-sfdatagrid)
+[How to wire the RowValidating event after pasted the content to datagrid?](https://support.syncfusion.com/kb/article/8249/how-to-wire-the-rowvalidating-event-after-pasted-content-to-wpf-datagrid-sfdatagrid)
