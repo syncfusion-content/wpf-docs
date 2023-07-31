@@ -13,9 +13,9 @@ The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbo
 
 ## Control structure
 
-![WPF CurrencyTextBox](Getting-Started_images/wpf-currency-textbox.png)
+![WPF Currency TextBox](getting-started_images/wpf-currency-textbox-control-structure.png)
 
-![WPF CurrencyTextBox with Watermark Text](Getting-Started_images/wpf-currency-textbox-watermark.png)
+![WPF Currency TextBox with Watermark Text](getting-started_images/wpf-currency-textbox-watermark.png)
 
 ## Features
 

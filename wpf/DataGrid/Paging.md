@@ -123,7 +123,7 @@ public class OrderInfo
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WPF DataGrid diplays Multiple Pages using SfDataPager](Paging_images/wpf-datagrid-multiple-page.png)
+![WPF DataGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-datagrid-multiple-page.png)
 
 #### Limitations
 
@@ -402,7 +402,7 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
-![WPF DataGrid displays Altering Page Count for DataPager while Filtering](Paging_images/wpf-datagrid-change-page-count.png)
+![WPF DataGrid displays Altering Page Count for DataPager while Filtering](paging_images/wpf-datagrid-datapager.png)
 
 You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
 
@@ -485,7 +485,7 @@ private void dataPager_OnDemandLoading(object sender, Syncfusion.UI.Xaml.Control
 {% endtabs %}
 
 
-![WPF DataGrid displys Sorting with loaded DataPager](Paging_images/wpf-datagrid-sorting.png)
+![WPF DataGrid displys Sorting with loaded DataPager](paging_images/wpf-datagrid-sorting.png)
 
 ### Loading ItemsSource for page using async and await
 

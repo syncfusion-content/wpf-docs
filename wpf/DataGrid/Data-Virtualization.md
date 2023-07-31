@@ -272,7 +272,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays Incremental Data Loading](Data-Virtualization_images/wpf-datagrid-loading-data.png)
+![WPF DataGrid displays Incremental Data Loading](data-virtualization_images/wpf-datagrid-loading-data.png)
 
 You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
 
