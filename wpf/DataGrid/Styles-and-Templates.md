@@ -422,7 +422,7 @@ N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` prop
 
 ### Changing Grid line border as dotted line
 
-You can change the gridline border as dotted line by customizing [GridCell.BorderBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=net-5.0) property.
+You can change the gridline border as dotted line by customizing [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -458,7 +458,7 @@ You can change the gridline border as dotted line by customizing [GridCell.Borde
 
 ### Changing Grid line color
 
-You can also change the gridline color by setting [GridCell.BorderBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Windows.Controls.Control.BorderBrush)%26rd%3Dtrue&view=net-5.0) property.
+You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&f1url=%253FappId%3DDev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -955,7 +955,7 @@ You can also display the row index value in the row header cell by customizing i
 
 ## Template Selectors
 
-The [DataTemplateSelectors](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_CellTemplateSelector) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector).
+The [DataTemplateSelectors](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=windowsdesktop-7.0) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_CellTemplateSelector) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplateSelector).
 
 Here, custom template applied to `TotalPrice` and `CustomerID` columns.
 
