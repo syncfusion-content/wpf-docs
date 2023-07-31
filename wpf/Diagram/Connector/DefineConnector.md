@@ -407,17 +407,17 @@ Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-D
 
 ## Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/diagram/tools#drawing-tools:connectors "Drawing Tools").
+Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](https://help.syncfusion.com/wpf/diagram/tools#drawing-tools:connectors).
 
 ## Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/diagram/datasource "DataSource").
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](https://help.syncfusion.com/wpf/diagram/datasource).
 
 ## Add connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those connectors into the diagram, when required. 
 
-For more information about adding connectors from stencil, refer to [Stencil](/wpf/diagram/stencil "Stencil").
+For more information about adding connectors from stencil, refer to [Stencil](https://help.syncfusion.com/wpf/diagram/stencil).
 
 ## See Also
 
