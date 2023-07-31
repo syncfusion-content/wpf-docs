@@ -74,7 +74,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![TrackBall support in WPF Chart](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![TrackBall apperance support in WPF Chart](interactive-features_images/wpf-chart-trackball-appearance.jpeg)
 
 
 The Trackball is composed of the following parts:
@@ -120,7 +120,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![TrackBall support in WPF Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![Vertical line in WPF Chart](interactive-features_images/wpf-chart-vertical-line.jpeg)
 
 
 **Customization of TrackBall Line**
@@ -174,7 +174,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![TrackBall line customization in WPF Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![TrackBall line customization in WPF Chart](interactive-features_images/wpf-chart-trackball-line-customization.jpeg)
 
 
 ## Symbol
@@ -224,7 +224,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![Symbol for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img10.jpeg)
+![Symbol for trackball in WPF Chart](interactive-features_images/wpf-chart-symbol.jpeg)
 
 
 ## Axis Label
@@ -276,7 +276,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Alignment support for trackball axis label in WPF Chart](Interactive-Features_images/Interactive-Features_img11.jpeg)
+![Axis label in WPF Chart](interactive-features_images/wpf-chart-axis-label.jpeg)
 
 
 **Near**
@@ -310,7 +310,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Alignment support for trackball axis label in WPF Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
+![Alignment support for trackball axis label in WPF Chart](interactive-features_images/wpf-chart-alignment-of-axis-label.jpeg)
 
 
 ### Customization of axis label
@@ -374,7 +374,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Customization support for trackball axis label in WPF Chart](Interactive-Features_images/Interactive-Features_img13.jpeg)
+![Customization support for trackball axis label in WPF Chart](interactive-features_images/wpf-chart-customize-axis-label.jpeg)
 
 
 ### Series Label
@@ -420,7 +420,7 @@ The [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
 
 {% endtabs %}
 
-![TrackBall series label in WPF Chart](Interactive-Features_images/ShowTrackball.png)
+![Show trackball info in WPF Chart](interactive-features_images/wpf-chart-show-trackball-info.png)
 
 
 
@@ -463,7 +463,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Alignment support for trackball series label in WPF Chart](Interactive-Features_images/Interactive-Features_img14.jpeg)
+![Alignment support for trackball series label in WPF Chart](interactive-features_images/wpf-chart-alignment-of-series-label.jpeg)
 
 
 ### Label Display Mode
@@ -501,7 +501,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img15.jpeg)
+![Float all points in WPF Chart](interactive-features_images/wpf-chart-float-all-points.jpeg)
 
 
 **NearestPoint**
@@ -535,7 +535,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img16.jpeg)
+![Label display mode nearest point in WPF Chart](interactive-features_images/wpf-chart-label-display-mode-nearest-point.jpeg)
 
 **GroupAllPoints**
 
@@ -572,11 +572,11 @@ chart.Behaviors.Add(behavior);
 
 The following screenshot illustrates the trackball label for multiple series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property value is GroupAllPoints.
 
-![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping1.png)
+![TrackBall label for multiple series in WPF Chart](interactive-features_images/wpf-chart-trackball-label-for-multiple-series.png)
 
 The following screenshot illustrates the trackball label for financial series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property value is GroupAllPoints.
 
-![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping2.png)
+![TrackBall label for financial series in WPF Chart](interactive-features_images/wpf-chart-trackball-label-for-financial-series.png)
 
 
 ## TrackBall for Technical Indicators
@@ -619,7 +619,7 @@ chart.TechnicalIndicators.Add(average);
 
 {% endtabs %}
 
-![TrackBall for Technical Indicators support in WPF](Interactive-Features_images/indicator.png)
+![TrackBall for technical indicators support in WPF Chart](interactive-features_images/wpf-chart-technical-indicator-trackball.png)
 
 N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_ShowTrackballInfo) value of technical indicators is false.
 
@@ -699,7 +699,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Trackball templte support for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
+![Trackball label template in WPF Chart](interactive-features_images/wpf-chart-trackball-label-template.jpeg)
 
 
 **Applying** **Palette** **to** **the** **Series** **Label**
@@ -735,7 +735,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Applying palette to the trackball series label in WPF Chart](Interactive-Features_images/Interactive-Features_img18.jpeg)
+![Applying palette to the trackball series label in WPF Chart](interactive-features_images/wpf-chart-apply-palette-to-series-label.jpeg)
 
 
 ## Events
