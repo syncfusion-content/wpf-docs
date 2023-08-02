@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-## Add Custom Legends
+# Add Custom Legends in WPF Chart
 
 It's easy to replace existing, default, legend items with custom items in Chart or Chart Area legends.
 
@@ -28,4 +28,4 @@ Chart1.Legends.Add(legend);
 
 {% endhighlight %}
 
-![Add-Custom-Legends_img1](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg)
+![Add-Custom-Legends](add-custom-legends_images/wpf-chart-add-custom-legends.jpeg)
