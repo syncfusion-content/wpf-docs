@@ -278,13 +278,13 @@ N> You can refer to our [WPF Map](https://www.syncfusion.com/wpf-controls/map) f
 
 ## See also
 
-[How to show google map in WPF SfMap](https://www.syncfusion.com/kb/11928/how-to-show-google-map-in-wpf-map-sfmap)
+[How to show google map in WPF SfMap](https://support.syncfusion.com/kb/article/10441/how-to-show-google-map-in-wpf-map-sfmap)
 
-[How to view bing map using WPF SfMap](https://www.syncfusion.com/kb/10799/how-to-view-bing-map-using-wpf-map-control-sfmap)
+[How to view bing map using WPF SfMap](https://support.syncfusion.com/kb/article/9564/how-to-view-bing-map-using-wpf-map-control-sfmap)
 
-[How to customize the markers in maps](https://www.syncfusion.com/kb/7656/how-to-customize-the-markers-in-maps)
+[How to customize the markers in maps](https://support.syncfusion.com/kb/article/6824/how-to-customize-the-markers-in-maps)
 
-[How to drilldown map layers]( https://www.syncfusion.com/kb/7647/how-to-drilldown-map-layers)
+[How to drilldown map layers](https://support.syncfusion.com/kb/article/6771/how-to-drilldown-map-layers-in-wpf-application)
 
 
 

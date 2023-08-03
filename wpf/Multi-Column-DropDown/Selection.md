@@ -215,7 +215,7 @@ You can handle the selection operations in SfMultiColumnDropDownControl by using
 
 ### SelectionChanged
 
-[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when select the item in SfDataGrid. You can use this event to get the SelectedItem, SelectedValue. [SelectionChangedEventArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs.html) provides data for `SelectionChanged` event.
+[SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html) event is fired when select the item in SfDataGrid. You can use this event to get the SelectedItem, SelectedValue. [SelectionChangedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SelectionChangedEventArgs.html) provides data for `SelectionChanged` event.
 
 {% tabs %}
 {% highlight c# %}
