@@ -84,7 +84,7 @@ While filtering, if the node satisfies filter condition, [IsFiltered](https://he
 
 N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)property is set as `AllowDataShaping`.
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo-587565594).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo-587565594).
 
 ### Clear filters
 
@@ -307,7 +307,7 @@ The following built-in filter types are supported in SfTreeGrid:
 
 * Number filter: Loads various menu options to filter the numeric data.
 
-* Date filter: Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?redirectedfrom=MSDN&view=net-5.0) to filter date-time type columns.
+* Date filter: Loads various menu options and [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0&redirectedfrom=MSDN) to filter date-time type columns.
 
 <table>
 <tr>
@@ -323,7 +323,7 @@ Date filters
 </tr>
 <tr>
 <td>
-When the string value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type)'| markdownify}}, then `TextFilters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
+When the string value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types#the-dynamic-type)'| markdownify}}, then `TextFilters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
 <td>
 When integer, double, short, decimal, byte, or long are bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Number Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
@@ -454,7 +454,7 @@ The following screenshot illustrates advanced filter when `AllowBlankFilters` is
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
-By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
+By default, the text filters will be loaded for the columns if `ItemsSource` is [dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types). The [TreeGridColumn.ColumnMemberType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnMemberType) property loads number filters or date filters based on the column values.
 
 {% tabs %}
 {% highlight c# %}
@@ -618,7 +618,7 @@ The size of the filter popup can be changed using the [FilterPopupHeight](https:
 
 ### Changing filter icon style after applying filters
 
-The filter icon style can be changed by writing style with TargetType as [FilterToggleButton](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
+The filter icon style can be changed by writing style with TargetType as [FilterToggleButton](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FilterToggleButton.html).
 
 {% tabs %}
 {% highlight c# %}
