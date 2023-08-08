@@ -19,7 +19,7 @@ The following assemblies should be added for exporting a tree grid to Excel:-
 
 For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.WPF) package. For more details refer this [UG link](https://help.syncfusion.com/wpf/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
-You can export the tree grid to Excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) extension method present in [Syncfusion.UI.Xaml.TreeGrid.Converter](http://help.syncfusion.com/cr/wpf) namespace.
+You can export the tree grid to Excel by using the [ExportToExcel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) extension method present in [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/wpf/Syncfusion.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -264,11 +264,11 @@ workBook.SaveAs(fileStream);
 {% endhighlight %}
 {% endtabs %}
 
-You can refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/faq).
+You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq).
 
 ### Save Excel using File dialog
 
-After exporting to Excel, you can save the exported workbook by opening the [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=net-5.0).
+After exporting to Excel, you can save the exported workbook by opening the [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0).
 
 
 {% tabs %}
@@ -315,7 +315,7 @@ if (sfd.ShowDialog() == true)
 
 ### Open exported Excel without saving in disk
 
-You can open the exported workbook without saving by using the [SfSpreadsheet](http://help.syncfusion.com/wpf/sfspreadsheet) control.
+You can open the exported workbook without saving by using the [SfSpreadsheet](https://help.syncfusion.com/wpf/spreadsheet/overview) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -348,7 +348,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save the worksheet as HTML by using the [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer to[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html).
+It is also possible to save the worksheet as HTML by using the [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. You can refer to[XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html).
 
 ## Export to mail
 
@@ -431,11 +431,11 @@ workBook.SaveAs("Sample.csv", ",");
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can also save the exported worksheet to CSV. Refer to the  [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv)
+Similarly, you can also save the exported worksheet to CSV. Refer to the  [XlsIO documentation.](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv)
 
 ## Customize row height and column width 
 
-After exporting the data to Excel, you can set different row heights and column widths for the columns. You can refer to [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
+After exporting the data to Excel, you can set different row heights and column widths for the columns. You can refer to [here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
 
 {% tabs %}
 {% highlight c# %}
@@ -581,7 +581,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 
 ## Customize exported workbook and worksheet
 
-The tree grid can be exported to Excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
+The tree grid can be exported to Excel using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
 
 ### Set borders
 
@@ -632,7 +632,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-You can refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+You can refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
 
 ### Customize the range of cells
 
@@ -662,7 +662,7 @@ You can perform cell level customizations such as row-level styling, formatting 
 In the following code snippet, NumberFormat for `Employee ID` column is changed in the exported sheet after exporting without using the [CellsExportingEventHandler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_CellsExportingEventHandler).
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -683,7 +683,7 @@ workBook.SaveAs("Sample.xlsx");
 In the following code snippet, the background color of the rows in Excel is changed based on the row index using conditional formatting for better performance.
 
 Reference:
-[http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -784,7 +784,7 @@ protected override void ExportNodesToExcel(SfTreeGrid treeGrid, TreeNodes nodes,
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExcelExportingDemo1880731953.zip).
 
 
 N> You can refer to our [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) feature tour page for its groundbreaking feature representations. You can also explore our [WPF TreeGrid example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the treegrid.
