@@ -51,7 +51,7 @@ for (int i = 0; i < table.Rows.Count; i++)
     }
 }
 ///Paste the WordDocument into SfRichTextBoxAdv.
-  richTextBoxAdv.PasteCommand.Execute(document);
+SfRichTextBoxAdv.PasteCommand.Execute(document,richTextBoxAdv);
 {% endhighlight %}
 {% endtabs %}
 
