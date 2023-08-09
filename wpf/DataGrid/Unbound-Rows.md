@@ -101,7 +101,7 @@ Below screen shot shows different unbound rows placed in all possible positions.
 ## Populating data for unbound rows
 
 You can populate data for the unbound row by handling [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event of SfDataGrid. This event occurs for each cell in unbound row whenever the row gets refreshed. 
-[GridUnBoundRowEventsArgs](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html) of the `QueryUnBoundRow` event provides information about the cell triggered this event. [GridUnBoundRowEventsArgs.OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. 
+[GridUnBoundRowEventsArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html) of the `QueryUnBoundRow` event provides information about the cell triggered this event. [GridUnBoundRowEventsArgs.OriginalSender](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. 
 
 You can get or set the [GridUnBoundRowEventsArgs.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_Value) property based on the [UnBoundAction](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_UnBoundAction). If `UnBoundAction` is `QueryData` then you can set the value for display. If the `UnBoundAction` is `CommitData` then you can get the edited value.
 
@@ -160,7 +160,7 @@ You can add or remove unbound rows using [SfDataGrid.UnBoundRows](https://help.s
  
 ### Trigger QueryUnBoundRow event programmatically
  
-You can trigger the [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_InValidateUnBoundRow_Syncfusion_UI_Xaml_Grid_GridUnBoundRow_System_Boolean_) method and invalidating the [VisualContainer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html) by calling [InvalidateMeasureInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html#Syncfusion_UI_Xaml_Grid_VisualContainer_InvalidateMeasureInfo) method.
+You can trigger the [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event for the unbound row cells at runtime by invalidating the unbound row by calling [SfDataGrid.InValidateUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_InValidateUnBoundRow_Syncfusion_UI_Xaml_Grid_GridUnBoundRow_System_Boolean_) method and invalidating the [VisualContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html) by calling [InvalidateMeasureInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html#Syncfusion_UI_Xaml_Grid_VisualContainer_InvalidateMeasureInfo) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -214,7 +214,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 
 ### Unbound row style
 
-You can customize the style of unbound row by writing style of TargetType [UnBoundRowControl](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html) or setting [SfDataGrid.UnBoundRowStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowStyle) property.
+You can customize the style of unbound row by writing style of TargetType [UnBoundRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html) or setting [SfDataGrid.UnBoundRowStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowStyle) property.
 
 
 {% tabs %}
@@ -239,7 +239,7 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 
 ### Unbound row cell’s style
 
-You can customize the style of unbound row cell by writing style of TargetType [GridUnBoundRowCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html) or setting [SfDataGrid.UnBoundRowCellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowCellStyle) property.
+You can customize the style of unbound row cell by writing style of TargetType [GridUnBoundRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html) or setting [SfDataGrid.UnBoundRowCellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowCellStyle) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,7 +304,7 @@ Renderer
 UnBoundTemplateColumn
 </td>
 <td>
-{{'[GridUnBoundRowCellTemplateRenderer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTemplateRenderer.html)'| markdownify }}
+{{'[GridUnBoundRowCellTemplateRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTemplateRenderer.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -312,20 +312,20 @@ UnBoundTemplateColumn
 UnBoundTextColumn
 </td>
 <td>
-{{'[GridUnBoundRowCellTextBoxRenderer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTextBoxRenderer.html)'| markdownify }}
+{{'[GridUnBoundRowCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTextBoxRenderer.html)'| markdownify }}
 </td>
 </tr>
 </table>
 
-The renderer of unbound row cell defined by [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property in the [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. If the `GridUnBoundRowEventsArgs.CellType` not defined then the `UnboundTextColumn` set as default cell type of [GridUnBoundRowCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html).
+The renderer of unbound row cell defined by [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property in the [QueryUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. If the `GridUnBoundRowEventsArgs.CellType` not defined then the `UnboundTextColumn` set as default cell type of [GridUnBoundRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html).
  
-If [GridUnBoundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellTemplate) and [GridUnBoundRowEventsArgs.EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_EditTemplate) properties defined then `UnBoundTemplateColumn` set as cell type of  [GridUnBoundRowCell](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html).
+If [GridUnBoundRowEventsArgs.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellTemplate) and [GridUnBoundRowEventsArgs.EditTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_EditTemplate) properties defined then `UnBoundTemplateColumn` set as cell type of  [GridUnBoundRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html).
 
 ### Overriding Existing CellType
 
 You can customize the unbound row cell behavior by overriding existing renderer and replace the default one in [SfDataGrid.UnBoundRowCellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowCellRenderers).
 
-Below [GridUnBoundRowCellTextBoxRenderer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTextBoxRenderer.html) is customized to change the foreground.
+Below [GridUnBoundRowCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellTextBoxRenderer.html) is customized to change the foreground.
 
 {% tabs %}
 {% highlight c# %}
@@ -369,9 +369,9 @@ dataGrid.UnBoundRowCellRenderers.Add("UnBoundTextColumn", new GridUnBoundRowCell
 
 ### Custom Renderer
 
-You can customize the unbound row cell by creating new renderer, deriving from [GridUnBoundRowCellRenderer](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundRowCellRenderer%602.html) and setting the [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property.
+You can customize the unbound row cell by creating new renderer, deriving from [GridUnBoundRowCellRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowCellRenderers) and setting the [GridUnBoundRowEventsArgs.CellType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRowEventsArgs_CellType) property.
 
-Below code creates `DatePickerRenderer` to load the [DatePicker](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker) as editor element in the first cell of unbound row.
+Below code creates `DatePickerRenderer` to load the [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datepicker?view=windowsdesktop-7.0) as editor element in the first cell of unbound row.
 
 {% tabs %}
 {% highlight c# %}
@@ -672,7 +672,7 @@ var unboundRow = dataGrid.GetUnBoundRow(1);
 
 ## Merging with Unbound rows
 
-You can merge the unbound row cell by setting the Left, Right, Top and Bottom properties of [CoveredCellInfo](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CoveredCellInfo.html) with the help of [GetUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html#Syncfusion_UI_Xaml_Grid_GridIndexResolver_GetUnBoundRow_Syncfusion_UI_Xaml_Grid_SfDataGrid_System_Int32_) method and RowIndex.
+You can merge the unbound row cell by setting the Left, Right, Top and Bottom properties of [CoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.CoveredCellInfo.html) with the help of [GetUnBoundRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridIndexResolver.html#Syncfusion_UI_Xaml_Grid_GridIndexResolver_GetUnBoundRow_Syncfusion_UI_Xaml_Grid_SfDataGrid_System_Int32_) method and RowIndex.
 
 {% tabs %}
 {% highlight c# %}
