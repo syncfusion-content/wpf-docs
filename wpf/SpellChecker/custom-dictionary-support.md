@@ -124,7 +124,7 @@ private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_2 }}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> You can add multiple `HunspellDictionary` with various culture files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `HunspellDictionary` is used for spell check.
 
