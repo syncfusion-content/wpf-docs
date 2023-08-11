@@ -456,7 +456,7 @@ Below screenshot shows the customized header template loaded on the header of Or
 
 #### Data Annotations with AutoGenerateColumns
 
-WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+WPF DataGrid (SfDataGrid) support to generate the columns based on built-in [Data Annotation Attributes](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc490428(v=vs.95)). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
 
 ##### Exclude column
 
@@ -583,7 +583,7 @@ public string Country
 
 ##### Format datagrid columns using DisplayFormat attribute
 
-The auto-generated columns will be formatted using the [DataFormatString](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
+The auto-generated columns will be formatted using the [DataFormatString](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
 
 {% tabs %}
 {% highlight c# %}
