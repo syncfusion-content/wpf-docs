@@ -30,33 +30,33 @@ You can enable tooltip for TreeMap by setting [`ShowToolTip`](https://help.syncf
 
                 <StackPanel>
 
-                  <Grid Background="{Binding MappedColor}" Margin="40 10 20 0" Height="40">
+                    <Grid Background="{Binding MappedColor}" Margin="40 10 20 0" Height="40">
 
-                  <TextBlock Text="{Binding Data.Continent}" Foreground= "White" FontWeight="SemiBold" FontSize="30" TextAlignment="Center"/>
+                        <TextBlock Text="{Binding Data.Continent}" Foreground="White" FontWeight="SemiBold" FontSize="30" TextAlignment="Center"/>
 
-                  </Grid>
+                    </Grid>
 
-                  <StackPanel Margin="40 20">
+                    <StackPanel Margin="40 20">
 
-                  <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal">
 
-                  <TextBlock Text="Country" Width="140" FontSize="25"/>
+                            <TextBlock Text="Country" Width="140" FontSize="25" Foreground="White"/>
 
-                  <TextBlock Text="-" Width="20" FontSize="25"/>
+                            <TextBlock Text="-" Width="20" FontSize="25" Foreground="White"/>
 
-                  <TextBlock Text="{Binding Data.Country}" FontSize="25"/>
+                            <TextBlock Text="{Binding Data.Country}" FontSize="25" Foreground="White"/>
 
-                  </StackPanel>
+                        </StackPanel>
 
-                  <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal">
 
-                  <TextBlock Text="Population" Width="140" FontSize="25"/>
+                            <TextBlock Text="Population" Width="140" FontSize="25" Foreground="White"/>
 
-                  <TextBlock Text="-" Width="20" FontSize="25"/>
+                            <TextBlock Text="-" Width="20" FontSize="25" Foreground="White"/>
 
-                  <TextBlock Text="{Binding Data.Population}" FontSize="25"/>
+                            <TextBlock Text="{Binding Data.Population}" FontSize="25" Foreground="White"/>
 
-                  </StackPanel>
+                        </StackPanel>
 
                   </StackPanel>
 
@@ -67,6 +67,16 @@ You can enable tooltip for TreeMap by setting [`ShowToolTip`](https://help.syncf
         </DataTemplate>
 
     </syncfusion:SfTreeMap.ToolTipTemplate>
+
+    <syncfusion:SfTreeMap.LeafItemSettings>
+        <syncfusion:LeafItemSettings>
+            <syncfusion:LeafItemSettings.LabelTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Data.Country}"  TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                </DataTemplate>
+            </syncfusion:LeafItemSettings.LabelTemplate>
+        </syncfusion:LeafItemSettings>
+    </syncfusion:SfTreeMap.LeafItemSettings>
 
     <syncfusion:SfTreeMap.LeafColorMapping>
 
