@@ -22,7 +22,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf")
     pdfviewer.Load(pdf);   
-    pdfviewer1.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.FreeText;
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.FreeText;
 }
 {% endhighlight %}
 {% highlight vbnet %}
