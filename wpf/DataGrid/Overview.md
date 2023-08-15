@@ -34,9 +34,9 @@ Following are the key features of SfDataGrid control
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
 
-1. [GridControl](https://www.syncfusion.com/wpf-ui-controls/excel-like-grid)
-2. [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid)
-3. [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid)
+1. [GridControl](https://www.syncfusion.com/wpf-controls/excel-like-grid)
+2. [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid)
+3. [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid)
 
 ### GridControl
 
@@ -44,11 +44,11 @@ Syncfusion WPF suite comes up with following different Grid’s namely,
 
 ### GridTreeControl and SfTreeGrid
 
-The [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid) control is a data-oriented control that displays self-relational data in a tree structure user interface like multicolumn treeview. The data can be loaded on demand. You can move items between parent nodes by using the built-in row drag-and-drop functionality. Its rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering.
+The [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) control is a data-oriented control that displays self-relational data in a tree structure user interface like multicolumn treeview. The data can be loaded on demand. You can move items between parent nodes by using the built-in row drag-and-drop functionality. Its rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering.
 
 ### GridDataControl and SfDataGrid
 
-The [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
+The [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-controls/datagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
 
 1. **SfDataGrid** - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding. 
 2. **GridDataControl** - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 

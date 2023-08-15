@@ -267,4 +267,4 @@ diagram.Export();
 
 ## See Also
  
-[How to export the Diagram as PDF?](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf?_ga=2.224896664.348008717.1586668974-282675519.1571983805)
+[How to export the Diagram as PDF?](https://support.syncfusion.com/kb/article/7520/how-to-export-the-diagram-as-a-pdf-in-the-wpf-diagram-sfdiagram)
