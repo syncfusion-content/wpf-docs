@@ -13,7 +13,7 @@ Localization is the process of configuring the application to a specific languag
 
 ![Localization](Localization_images/Localization_img1.png)
 
-You can refer [Localization](https://help.syncfusion.com/wpf/localization) to add [resource file](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) in the application.
+You can refer [Localization](https://help.syncfusion.com/wpf/localization) to add [resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) in the application.
 
 ## Localize the Annotations using ResourceManager
 
