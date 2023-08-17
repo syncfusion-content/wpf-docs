@@ -21,7 +21,7 @@ You can find more details about installing the NuGet packages in a WPF applicati
 
 ## Adding WPF IntegerTextBox via designer
 
-You can add the [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -123,7 +123,7 @@ integerTextBox.Value = 100;
 
 ![WPF IntegerTextBox displays Value](getting-started_images/wpf-integer-textbox-value.png)
 
-N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the IntegerTextBox. Use only the `Value` property.
+N> Do not use the [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the IntegerTextBox. Use only the `Value` property.
 
 ### Binding Value
 

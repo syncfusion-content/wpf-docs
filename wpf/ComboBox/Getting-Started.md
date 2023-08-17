@@ -312,7 +312,7 @@ N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-da
 
 ## Defining ItemTemplate
 
-You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
+You can customize the visualization of data object using the [ItemTemplate](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
 
 {% tabs %}
 {% highlight xaml %}
@@ -363,7 +363,7 @@ ComboBoxAdv supports various built-in themes. Refer to the below links to apply 
 
 
 ## See Also
-[How to filter dropdown items in WPF editable ComboBoxAdv?](https://www.syncfusion.com/kb/11499/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
+[How to filter dropdown items in WPF editable ComboBoxAdv?](https://support.syncfusion.com/kb/article/9968/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
 
 [How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
 
