@@ -397,7 +397,7 @@ UnBoundTemplateColumn
 UnBoundTextColumn
 </td>
 <td>
-{{'[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundCellTextBoxRenderer.htmlde)'| markdownify }}
+{{'[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundCellTextBoxRenderer.html)'| markdownify }}
 </td>
 </tr>
 </table>
