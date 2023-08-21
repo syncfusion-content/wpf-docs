@@ -21,7 +21,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF CurrencyTextBox via designer
 
-You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.WPF
 
