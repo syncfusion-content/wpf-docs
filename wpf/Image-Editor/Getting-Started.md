@@ -125,4 +125,4 @@ You can load the image as stream using the [`Image`](https://help.syncfusion.com
 
 ## See also
 
-[How to retrieve a edited image as a stream in an image editor](https://www.syncfusion.com/kb/11214/how-to-retrieve-a-edited-image-as-a-stream-in-an-image-editor)
+[How to retrieve a edited image as a stream in an image editor](https://support.syncfusion.com/kb/article/9828/how-to-retrieve-a-edited-image-as-a-stream-in-wpf-image-editor)

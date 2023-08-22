@@ -125,7 +125,7 @@ The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Pdf
 
 N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine to render the PDF pages, which is a more robust and promising rendering engine. Refer to this [link](https://help.syncfusion.com/wpf/pdf-viewer/pdf-rendering-engines) for more details.
 
-1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
+1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
 
 	~~~csharp
 	using System.ComponentModel;
@@ -166,7 +166,7 @@ N> From v16.3.0x onwards, PDF Viewer uses PDFium as a default rendering engine t
 	}
 	~~~
 
-2. Set the [DataContext](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.datacontext?view=netcore-3.1) to the Window for data binding. To add the `DataContext` in XAML, use the following code example.
+2. Set the [DataContext](https://learn.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.datacontext?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) to the Window for data binding. To add the `DataContext` in XAML, use the following code example.
 
 	~~~xaml
 	<Window.DataContext>
