@@ -312,4 +312,68 @@ private void DeleteAnnotation() { bool isDeleted = pdfViewer.DeleteAnnotation(in
 
 N> Similarly, we can implement it for all other annotations.
 
+## Delete all annotations  
+
+PDF Viewer allows the user to delete all annotations programmatically without user interaction.   
+
+### Delete all annotations in the PDF file
+
+PDF Viewer allows the user to delete all annotations programmatically using the ClearAllAnnotations method. 
+
+The following code snippet explains how to delete all annotations. 
+
+{% tabs %}
+{% highlight C# %}
+
+//delete all annotations
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations(); 
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Delete all annotations at specific page  
+
+PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload ClearAllAnnotations method with a specified page number on which the annotations are located. The page number should be passed as a parameter that needs to be deleted. 
+
+The following code snippet explains how to delete all annotations on the first page of the PDF document. 
+
+{% tabs %}
+{% highlight C# %}
+
+//Delete all annotations from page 1
+private void DeleteAnnotation() 
+{ 
+    pdfViewer.ClearAllAnnotations(1); 
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+## Set the modified date of an annotation
+
+PDF Viewer allows the user to set the modified date of an annotation programmatically without user interaction.
+
+### How to set the modified date of an annotation?
+
+The modified date field of an annotation can be added for an annotation to be added to the PDF document.
+
+The following code snippet explains how to set the modified date field of an annotation to be included.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    pdfviewer.Load("Input.pdf");
+    pdfviewer.InkAnnotationSettings.ModifiedDate = new DateTime(2020, 12, 1, 1, 1, 1);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Similarly, we can implement it for all other annotations.
+
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
