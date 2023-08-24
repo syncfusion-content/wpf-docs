@@ -111,7 +111,7 @@ tileViewControl.Width = 300;
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using TileViewItem
 
@@ -145,7 +145,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileView items are populated to the TileView control](Working-with-TileView_images/TileViewItem.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using collection binding
 
@@ -212,7 +212,7 @@ public class ViewModel : NotificationObject {
 
 ![TileViewControl auto creates tileview item from objects using data binding](Data-binding_images/Data-Binding_img1.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Binding-Object)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Binding-Object)
 
 ## Select a TileViewItem
 
@@ -248,7 +248,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![TileViewItem selected by mouse click](Working-with-TileView_images/Selection.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ### Select TileViewItem programmatically using property
 
@@ -283,7 +283,7 @@ tileViewControl.Items.Add(new TileViewItem() { Content = "Content 4",
 
 ![Particular TileViewItem selected by using IsSelected property](Working-with-TileView_images/IsSelected.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Getting-Started)
 
 ## Selected item changed notification
 
@@ -446,7 +446,7 @@ tileViewControl.Items.Add(new TileViewItem() { Header = "Item 4",
 
 ![TileViewItems closing by close button click](Closing_images/CloseButtonClick.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Closing-TileItem)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Closing-TileItem)
 
 ## Custom UI of TileViewItem
 
@@ -490,7 +490,7 @@ You can customize the header and content of `TileViewItem` appearance by using t
 
 ![Custom UI of the TileViewItems](Getting-Started_images/TileViewItem_UI.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/blob/master/Samples/Custom-UI)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-tileview-control-examples/tree/master/Samples/Custom-UI)
 
 ## Theme
 
