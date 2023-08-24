@@ -78,12 +78,12 @@ The following code example demonstrates how to define custom dictionaries for sp
     </RichTextBoxAdv:SpellChecker.CustomDictionaries>
 </RichTextBoxAdv:SpellChecker>
 
-You can download a complete working sample from [GitHub]. (https://github.com/SyncfusionExamples/WPF-RichTextBox-Samples/tree/main/How-to-add-custom-dictionaries-in-richtextbox)
-
-
 {% endhighlight %}
 
 {% endtabs %}
+
+You can download a complete working sample from [GitHub]. (https://github.com/SyncfusionExamples/WPF-RichTextBox-Samples/tree/main/How-to-add-custom-dictionaries-in-richtextbox)
+
 
 ## Multilingual Spell Check Support
 
