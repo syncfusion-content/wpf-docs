@@ -31,6 +31,9 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>Syncfusion.Pdf.Base</td>
 <td>This library contains the PDF reader and creator that supports the PDF Viewer.</td></tr>
 <tr>
+<td>Syncfusion.PdfToImageConverter.Base</td>
+<td>This library handles Pdfium and image creation to support the PDF Viewer.</td></tr>
+<tr>
 <td>Syncfusion.PdfViewer.WPF</td>
 <td>This component contains the rendering area and other related UI elements.</td>
 </tr>
@@ -39,6 +42,7 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the PDF Viewer.</td></tr>
 </table>
 
+N> Starting with v23.1.x, Syncfusion.PdfToImageConverter.Base assembly is required for PdfViewer.
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your WPF application to use our components.
 
 ## Create a simple PDF Viewer application 
