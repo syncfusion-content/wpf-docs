@@ -9,7 +9,7 @@ documentation: ug
 
 # WPF Currency TextBox Overview
 
-The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control restricts text box input to only decimal values and displays it in the currency format with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-controls/currency-textbox) control restricts text box input to only decimal values and displays it in the currency format with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
 
 ## Control structure
 
