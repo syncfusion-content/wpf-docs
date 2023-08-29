@@ -154,7 +154,7 @@ public class StringToImageConverter : IValueConverter
 
 ![Customize the ToolTip using ToolTipTemplate in WPF TreeGrid](Interactive-Features_images/wpf-treegrid-tooltip-template.png)
 
-You can get the sample [here](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1).
+You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
