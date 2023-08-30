@@ -204,4 +204,4 @@ SfDigitalGauge supports various built-in themes. Refer to the below links to app
 
 ## See also
 
-[How to apply themes for SfDigitalGauge](https://www.syncfusion.com/kb/2535/how-to-apply-themes-for-sfdigitalgauge)
+[How to apply themes for SfDigitalGauge](https://support.syncfusion.com/kb/article/2842/how-to-apply-themes-for-sfdigitalgauge)
