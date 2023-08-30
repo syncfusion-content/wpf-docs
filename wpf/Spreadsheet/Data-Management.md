@@ -34,8 +34,7 @@ For more details regarding importing of data, please refer the [XlsIO UG](https:
 
 ## Export to DataTable
 
-SfSpreadsheet provides support to export the data. To Export the data from a data table, you can use [ExportDataTable]()
-method
+SfSpreadsheet provides support to export the data. To Export the data from a data table, you can use [ExportDataTable](https://help.syncfusion.com/file-formats/xlsio/working-with-data#exporting-from-worksheet-to-data-table)
 
 {% tabs %}
 {% highlight c# %}
