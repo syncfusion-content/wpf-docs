@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-# Change the position of the Chart Legend
+# Change the position of the Legend in WPF Chart
 
 Chart Legend can be docked by using the Dock property of DockPanel class. The Legend can be docked to the top, left, bottom or right of either the Chart or Chart Area; also it can be placed anywhere inside or outside the Chart Area (floating).
 
