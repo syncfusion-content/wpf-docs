@@ -318,7 +318,7 @@ The PDF Viewer enables users to programmatically remove all annotations from a d
 
 ### Delete all annotations in the PDF file
 
-PDF Viewer allows the user to delete all annotations programmatically using the ClearAllAnnotations method. 
+PDF Viewer allows the user to delete all annotations programmatically using the [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations) method. 
 
 The following code snippet explains how to delete all annotations. 
 
@@ -345,7 +345,7 @@ private void DeleteAnnotations()
 
 ### Delete all annotations at specific page  
 
-PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload ClearAllAnnotations method with a specified page number on which the annotations are located. The page number should be passed as a parameter that needs to be deleted. 
+PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations_System_Int32_) method with a specified page number on which the annotations are located. The page number should be passed as a parameter that needs to be deleted. 
 
 The following code snippet explains how to delete all annotations on the first page of the PDF document. 
 
