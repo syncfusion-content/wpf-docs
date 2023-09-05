@@ -288,7 +288,7 @@ N> The sample projects for organizing pages using the Syncfusion PDF Viewer are 
 
 ## Show/Hide the annotations in page organizer panel
 
-You can show or hide the annotations and form fields in the page organizer panel of the ‘PdfViewerControl’ by setting the ‘PageOrganizerSettings.ShowAnnotations’ property to true. By default, the value of 'ShowAnnotations' is set to false.
+You can show or hide the annotations and form fields in the page organizer panel of the ‘PdfViewerControl’ by setting the [PageOrganizerSettings.ShowAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PageOrganizeSettings.html#Syncfusion_Windows_PdfViewer_PageOrganizeSettings_ShowAnnotations) property to true. By default, the value of 'ShowAnnotations' is set to false.
 Refer to the following code example to show the annotations in page organizer panel.
 x
 {% tabs %}
