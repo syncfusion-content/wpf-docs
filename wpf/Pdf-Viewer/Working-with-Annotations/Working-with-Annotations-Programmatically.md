@@ -314,7 +314,7 @@ N> Similarly, we can implement it for all other annotations.
 
 ## Delete all annotations  
 
-PDF Viewer allows the user to delete all annotations programmatically without user interaction.   
+The PDF Viewer enables users to programmatically remove all annotations from a document without requiring any user interaction. This option helps users to remove unwanted annotations from the document. 
 
 ### Delete all annotations in the PDF file
 
@@ -329,6 +329,15 @@ The following code snippet explains how to delete all annotations.
 private void DeleteAnnotations()
 { 
    pdfViewer.ClearAllAnnotations(); 
+} 
+
+{% endhighlight %}
+{% highlight VB %}
+
+'delete all annotations
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations()
 } 
 
 {% endhighlight %}
@@ -350,15 +359,24 @@ private void DeleteAnnotation()
 } 
 
 {% endhighlight %}
+{% highlight VB %}
+
+'delete all annotations from page 1
+private void DeleteAnnotations()
+{ 
+   pdfViewer.ClearAllAnnotations(1)
+} 
+
+{% endhighlight %}
 {% endtabs %}
 
-## Set the modified date of an annotation
+## Update the annotation's modified date
 
-PDF Viewer allows the user to set the modified date of an annotation programmatically without user interaction.
+PDF Viewer allows the user to update the modified date of an annotation programmatically without user interaction. With this feature, users can specify the date and time according to their preferences.
 
-### How to set the modified date of an annotation?
+### How to update the modified date of an annotation using default annotation settings?
 
-The modified date field of an annotation can be added for an annotation to be added to the PDF document.
+User can include a modified date field when adding an annotation to a PDF document using default annotation settings.
 
 The following code snippet explains how to set the modified date field of an annotation to be included.
 
@@ -369,6 +387,42 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {
     pdfviewer.Load("Input.pdf");
     pdfviewer.InkAnnotationSettings.ModifiedDate = new DateTime(2020, 12, 1, 1, 1, 1);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+{
+    pdfviewer.Load("Input.pdf")
+    pdfviewer.InkAnnotationSettings.ModifiedDate = new DateTime(2020, 12, 1, 1, 1, 1)
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Similarly, we can implement it for all other annotations.
+
+### How to update the modified date of an annotation using annotation changed event settings?
+
+User can include a modified date field of an annotation to a PDF document using annotation changed event settings.
+
+The following code snippet explains how to set the modified date field of an annotation using annotation changed event settings.
+
+{% tabs %}
+{% highlight C# %}
+
+private void PdfViewer_InkAnnotationChanged(object sender, InkAnnotationChangedEventArgs e)
+{
+    e.Settings.ModifiedDate = new DateTime(2023, 12, 1, 1, 1, 1);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+
+private Sub PdfViewer_InkAnnotationChanged(sender As Object, e As InkAnnotationChangedEventArgs)
+{
+    e.Settings.ModifiedDate = new DateTime(2023, 12, 1, 1, 1, 1)
 }
 
 {% endhighlight %}
