@@ -35,6 +35,25 @@ Clicking and dragging on the stencil area allows you to create a rectangular reg
 
 ![Rubber band selection](Stencil_images/SymbolRubberbandSelection.gif)
 
+### Symbol Selection Mode
+
+Stencil has option to control the selection of symbols, by default multiple symbols can be selected, this can be restrict by using [SymbolSelectionMode] property of 'Stencil' class.
+
+|SelectionMode|Description|Output|
+|----------|-----------|--------|
+| Single | Only one symbol can be selected at a time | |
+| Multiple | Multiple symbols can be selected either using ctrl key or using rubber band selection ||
+
+### Duplicate symbols
+
+Duplicate the symbols within the Symbol Group:
+
+Stencil supports the creation of symbol copies within its group using the ctrl key. Simply hold down the ctrl key and drag and drop the symbol in the desired location in current symbol group. This allows for easy duplication of symbols.
+
+Duplicate the symbols from one symbol group to another symbol group:
+ 
+The stencil provides support for copying symbols from one symbol group to another using the Ctrl key. Simply hold down Ctrl, then drag and drop the symbol from one group to another. Ensure that you drop the symbol at the header of the target group. This method provides an efficient way to duplicate symbols.
+
 ## Symbol reordering
 
 Stencil provides support to reorder the symbols within the specific [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html). By default, symbols reordering will be enabled. Symbol reordering can be disabled by removing `AllowDragDrop` constraint from
