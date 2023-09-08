@@ -660,7 +660,7 @@ You can change the error tip background color by setting `Background` property o
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors]https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
+SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on [IDataErrorInfo.Error](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo.error?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IDataErrorInfo_Error) or [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
 
 #### Using IDataErrorInfo
 
