@@ -50,6 +50,8 @@ Duplicate the symbols within the Symbol Group:
 
 Stencil supports the creation of symbol copies within its group using the ctrl key. Simply hold down the ctrl key and drag and drop the symbol in the desired location in current symbol group. This allows for easy duplication of symbols.
 
+![WithinAGroup](Stencil_images/DuplicateSymbolsWithinGroup.gif)
+
 Duplicate the symbols from one symbol group to another symbol group:
  
 The stencil provides support for copying symbols from one symbol group to another using the Ctrl key. Simply hold down Ctrl, then drag and drop the symbol from one group to another. Ensure that you drop the symbol at the header of the target group. This method provides an efficient way to duplicate symbols.
