@@ -13,7 +13,12 @@ Stencil symbols can be selected, dragged, and reordered over stencil control.
 
 ## Symbol selection
 
-Stencil provides support to select single symbol or multiple symbols at a time that can be dragged on the diagram surface.
+Stencil provides support to select single symbol or multiple symbols at a time that can be dragged on the diagram surface. The symbol selection modes can be controlled through the 'SymbolSelectionMode' property within the 'Stencil' class. This option empowers users to effortlessly switch between single or multiple symbol selections, aligning perfectly with their preferences. By default, stencil allows the selection of multiple symbols.
+
+|SelectionMode|Description|
+|----------|-----------|
+| Single | Only one symbol can be selected at a time |
+| Multiple | Multiple symbols can be selected either using ctrl key or using rubber band selection |
 
 ### Single selection
 
@@ -35,26 +40,17 @@ Clicking and dragging on the stencil area allows you to create a rectangular reg
 
 ![Rubber band selection](Stencil_images/SymbolRubberbandSelection.gif)
 
-### Symbol Selection Mode
-
-Stencil has option to control the selection of symbols, by default multiple symbols can be selected, this can be restrict by using [SymbolSelectionMode] property of 'Stencil' class.
-
-|SelectionMode|Description|Output|
-|----------|-----------|--------|
-| Single | Only one symbol can be selected at a time | |
-| Multiple | Multiple symbols can be selected either using ctrl key or using rubber band selection ||
-
 ### Duplicate symbols
 
-Duplicate the symbols within the Symbol Group:
+#### Duplicate the symbols within the Symbol Group:
 
-Stencil supports the creation of symbol copies within its group using the ctrl key. Simply hold down the ctrl key and drag and drop the symbol in the desired location in current symbol group. This allows for easy duplication of symbols.
+Stencil allows users to duplicate symbols within the [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) simply by holding down the Ctrl key and dragging and droping the symbol to their desired location within the current symbol group.
 
 ![WithinAGroup](Stencil_images/DuplicateSymbolsWithinGroup.gif)
 
-Duplicate the symbols from one symbol group to another symbol group:
+#### Duplicate the symbols from one symbol group to another symbol group:
  
-Provided support to clone symbols from one symbol group to another by dragging them along with holding the Ctrl key and dropping onto the symbol group header.
+Stencil allows users to clone symbols from one [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) to another by dragging them while holding the Ctrl key and dropping them onto the symbol group header.
 
 ![OneGroupToAnotherGroup](Stencil_images/DuplicateSymbolToAnotherGroup.gif)
 
