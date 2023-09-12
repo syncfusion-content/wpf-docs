@@ -13,7 +13,12 @@ Stencil symbols can be selected, dragged, and reordered over stencil control.
 
 ## Symbol selection
 
-Stencil provides support to select single symbol or multiple symbols at a time that can be dragged on the diagram surface.
+Stencil offers the flexibility to select either a single symbol or multiple symbols simultaneously, allowing you to easily place them on the diagram surface. You can control the symbol selection mode using the 'SymbolSelectionMode' property within the 'Stencil' class. This capability enables users to switch between single and multiple symbol selections to align with their preferences. By default, the stencil allows the selection of multiple symbols.
+
+|SelectionMode|Description|
+|----------|-----------|
+| Single | Only one symbol can be selected at a time |
+| Multiple | Multiple symbols can be selected either using ctrl key or using rubber band selection |
 
 ### Single selection
 
@@ -34,6 +39,20 @@ By holding down the Ctrl key and clicking each symbol that you want to select or
 Clicking and dragging on the stencil area allows you to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 ![Rubber band selection](Stencil_images/SymbolRubberbandSelection.gif)
+
+### Duplicate symbols
+
+#### Duplicate the symbols within the Symbol Group:
+
+Stencil allows users to duplicate symbols within the [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) by holding down the Ctrl key and dragging and dropping the symbol to your desired location within the current symbol group.
+
+![WithinAGroup](Stencil_images/DuplicateSymbolsWithinGroup.gif)
+
+#### Duplicate the symbols from one symbol group to another symbol group:
+ 
+Stencil allows users to clone symbols from one [SymbolGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroup.html) to another by dragging them while holding the Ctrl key and dropping them onto the symbol group header.
+
+![OneGroupToAnotherGroup](Stencil_images/DuplicateSymbolToAnotherGroup.gif)
 
 ## Symbol reordering
 
