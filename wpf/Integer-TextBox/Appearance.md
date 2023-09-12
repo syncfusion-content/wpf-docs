@@ -13,7 +13,7 @@ This section deals with the appearance of `IntegerTextBox` control and contains 
 
 ## Setting the Foreground
 
-The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) control [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `IntegerTextBox` control.
+The [IntegerTextBox](https://www.syncfusion.com/wpf-controls/integer-textbox) control [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `IntegerTextBox` control.
 
 ### Foreground for Positive Value
 
