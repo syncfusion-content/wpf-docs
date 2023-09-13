@@ -14,6 +14,8 @@ The Visual Studio Project Templates for the Syncfusion WPF platform allow you to
 
 I> The Syncfusion WPF templates are available from v16.1.0.24. 
 
+> In the release of Essential Studio Volume 3 in 2023, we have discontinued WPF project template support for Visual Studio 2017, Visual Studio 2019, and Visual Studio 2022. Instead of the WPF Project Template, Syncfusion has introduced the [WPF Template Studio](https://help.syncfusion.com/wpf/visual-studio-integration/template-studio).
+
 Create the Syncfusion WPF project using the Visual Studio Project Template by following the steps below: 
 
 > Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio 2015 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
