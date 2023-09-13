@@ -54,12 +54,6 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Project Type:** Choose .Net 7.0 and .Net 6.0 or .Net Framework as the project type.
 
-	N> From Visual Studio 2019, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
-
-	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
-
-	> .NET 7.0 version is available from v20.4.0.38 and it support from Visual Studio 2022.
-
 
 	**Language:** Select the language, either CSharp or VB.
 
