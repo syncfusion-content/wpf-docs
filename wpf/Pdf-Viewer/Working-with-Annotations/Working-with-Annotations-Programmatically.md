@@ -345,7 +345,7 @@ private void DeleteAnnotations()
 
 ### Delete all annotations at specific page  
 
-PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations_System_Int32_) method with a specified page number on which the annotations are located. The page number should be passed as a parameter that needs to be deleted. 
+PDF Viewer also allows the user to delete all annotations from a specific page programmatically using the overload [ClearAllAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_PdfViewer_PdfViewerControl_ClearAllAnnotations_System_Int32_) method with a specified page number on which the annotations are located. The page number which we pass as a parameter, its annotations get deleted.
 
 The following code snippet explains how to delete all annotations on the first page of the PDF document. 
 
@@ -372,13 +372,13 @@ private void DeleteAnnotations()
 
 ## Update the annotation's modified date
 
-PDF Viewer allows the user to update the [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) of an annotation programmatically without user interaction. With this feature, users can specify the date and time according to their preferences.
+PDF Viewer allows the user to update the [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) of an annotation programmatically without user interaction. With this feature, users can alter the modified date and time according to their preferences.
 
 ### How to update the modified date of an annotation using default annotation settings?
 
 User can include a [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) field when adding an annotation to a PDF document using default annotation settings.
 
-The following code snippet explains how to set the modified date field of an annotation to be included.
+The following code snippet explains how to set the modified date field of an ink annotation to be included. Similarly, we can implement it for all other annotations.
 
 {% tabs %}
 {% highlight C# %}
@@ -401,13 +401,11 @@ private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 {% endhighlight %}
 {% endtabs %}
 
-N> Similarly, we can implement it for all other annotations.
-
 ### How to update the modified date of an annotation using annotation changed event settings?
 
 User can include a [ModifiedDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.PdfViewer.AnnotationSettings.html#Syncfusion_Windows_PdfViewer_AnnotationSettings_ModifiedDate) field of an annotation to a PDF document using annotation changed event settings.
 
-The following code snippet explains how to set the modified date field of an annotation using annotation changed event settings.
+The following code snippet explains how to set the modified date field of an ink annotation using ink annotation changed event settings. Similarly, we can implement it for all other annotations.
 
 {% tabs %}
 {% highlight C# %}
@@ -428,6 +426,6 @@ private Sub PdfViewer_InkAnnotationChanged(sender As Object, e As InkAnnotationC
 {% endhighlight %}
 {% endtabs %}
 
-N> Similarly, we can implement it for all other annotations.
+N>
 
 N> You can refer to our [WPF PDF Viewer](https://www.syncfusion.com/wpf-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [WPF PDF Viewer example](https://github.com/syncfusion/wpf-demos) to know how to render and configure the pdfviewer.
