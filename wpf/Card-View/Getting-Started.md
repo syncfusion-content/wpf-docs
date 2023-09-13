@@ -116,7 +116,7 @@ namespace CardViewSample
 
 ![wpf card view control added manually](Getting-Started_images/wpf-card-view-control-added-manually.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using CardViewItem
 
@@ -166,7 +166,7 @@ cardView.Items.Add(cardViewItem3);
 
 ![wpf card view items added into CardView control](Getting-Started_images/wpf-card-view-item.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
 ## Populating items using ItemsSource
 
@@ -238,7 +238,7 @@ public class ViewModel : NotificationObject
 
 ![wpf card view items added into CardView control using data binding](Data-Binding-to-Objects_images/databinding.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/PopulateItems)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/PopulateItems)
 
 ## Select a CardViewItem
 
@@ -290,7 +290,7 @@ cardView.Items.Add(cardViewItem3);
 
 ![wpf card view items selected using mouse click](Getting-Started_images/selectitem.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
 ## Select CardViewItem programmatically using property
 
@@ -342,7 +342,7 @@ cardView.Items.Add(cardViewItem3);
 
 ![wpf card view item selected programmatically](Getting-Started_images/selectitem_programmatically.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Getting-Started)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Getting-Started)
 
 ## Group the CardViewItems
 
@@ -454,7 +454,7 @@ cardView.CanGroup = true;
 
 Here, `CardViewItems` grouped based on `Age` field.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Sort the CardViewItems
 
@@ -479,7 +479,7 @@ cardView.CanSort = true;
 
 Here, `CardViewItems` sorted based on `FirstName` field.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ##  Edit the CardViewItems
 
@@ -548,7 +548,7 @@ cardView.CanEdit = true;
 
 ![wpf card view items edited by keyboard and mouse interaction](Grouping-Sorting-Filtering_images/editing.gif)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Orientation of CardViewItems
 
@@ -573,7 +573,7 @@ cardView.Orientation = Orientation.Horizontal;
 
 ![wpf card view items arranged in horizontal orientation](Getting-Started_images/orientation.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/blob/master/Samples/Editing)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/Editing)
 
 ## Selected item changed notification
 
