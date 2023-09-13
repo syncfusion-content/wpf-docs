@@ -26,13 +26,13 @@ The following steps will guide you to add the Syncfusion WPF components to your 
 
 2.	From the **Solution Explorer, right-click** on the WPF application. Choose **Add Syncfusion Item...**.
 
-![Choose Add Syncfusion Item option from right click project](Add-Item-images/Add-syncfusion-item.png)
+	![Choose Add Syncfusion Item option from right click project](Add-Item-images/Add-syncfusion-item.png)
 
 **Option 2:**
 
 3.	Click **Extensions > Essential Studio for WPF > Add Syncfusion Item…** in Visual Studio.
 
-![Choose Add Syncfusion Item option from menu](Add-Item-images/Add-item.png)
+	![Choose Add Syncfusion Item option from menu](Add-Item-images/Add-item.png)
 
 
 4.	The Syncfusion WPF Item Template wizard will be launched as follows.
