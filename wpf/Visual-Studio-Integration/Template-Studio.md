@@ -78,7 +78,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
 10.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
 
-	N> From Visual Studio 2019, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
+	N> From Visual Studio 2022, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
 
 	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
 

@@ -16,18 +16,20 @@ I> The Syncfusion WPF item templates are available from v19.1.0.54.
 
 The following steps will guide you to add the Syncfusion WPF components to your Visual Studio WPF application.
 
-> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](download-and-installation) help topic.
+> Check whether the **WPF Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://help.syncfusion.com/wpf/visual-studio-integration/download-and-installation) help topic.
 
 ## Add Components using Syncfusion Item Template
 
 1.	Open a new or existing WPF application.
 
 **Option 1:**
+
 2.	From the **Solution Explorer, right-click** on the WPF application. Choose **Add Syncfusion Item...**.
 
 ![Choose Add Syncfusion Item option from right click project](Add-Item-images/Add-syncfusion-item.png)
 
 **Option 2:**
+
 3.	Click **Extensions > Essential Studio for WPF > Add Syncfusion Item…** in Visual Studio.
 
 ![Choose Add Syncfusion Item option from menu](Add-Item-images/Add-item.png)
