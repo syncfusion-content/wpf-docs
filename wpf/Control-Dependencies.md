@@ -678,6 +678,7 @@ Syncfusion.ExportOlapGrid.Wpf
 <td> 
 Syncfusion.Compression.Base <br/>
 Syncfusion.Pdf.Base <br/>
+Syncfusion.PdfToImageConverter.Base<br/>
 Syncfusion.PdfViewer.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
