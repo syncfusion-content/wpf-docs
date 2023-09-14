@@ -14,7 +14,7 @@ The WPF Template Studio is a tool Syncfusion provides specifically for building 
 
 I> The Syncfusion WPF Template Studio is available from v23.1.36.
 
-N> WPF Template Studio works seamlessly with Visual Studio 2022, 2019, and 2017. It is recommended to utilise the earliest compatible version for the best experience when using it as a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
+N> WPF Template Studio works seamlessly with Visual Studio 2017 or later. For the Visual Studio 2015 or lower versions, it is recommended to use a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
 
 Create the Syncfusion WPF project using the Visual Studio Project Template by following the provided steps.
 
