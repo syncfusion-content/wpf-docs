@@ -41,13 +41,13 @@ The following steps will guide you to add the Syncfusion WPF components to your 
 
 5.	Select the WPF control from the control list within your WPF Item Template. The features associated with the selected control will be presented. From here, choose the specific features that are essential for your project.
 
-6.	Click **Add**, and a pop-up will appear providing information about adding control **files** and **NuGet/Assemblies** details.
-
-	![Syncfusion WPF Item template details](Add-Item-images/Add-syncfusion-item-3.png)
-
-7.	Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages to specify where the required Syncfusion assemblies are added to the project.
+6.	Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages to specify where the required Syncfusion assemblies are added to the project.
 
 N> If the Syncfusion Essential WPF build is installed, the Installed location and GAC options will be enabled. Without installing the Syncfusion Essential WPF setup, use the NuGet option. The GAC option will not be available when using the Syncfusion WPF components in a .NET Core application. The Version drop-down lists the installed WPF versions.
+
+7.  Click **Add**, and a pop-up will appear providing information about adding control **files** and **NuGet/Assemblies** details.
+
+	![Syncfusion WPF Item template details](Add-Item-images/Add-syncfusion-item-3.png)	
 
 8.	Click **OK** to incorporate the chosen controls into the WPF application, along with the necessary Syncfusion assemblies.
 
