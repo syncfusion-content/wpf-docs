@@ -52,9 +52,6 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Project Configurations**
 
-	**Project Type:** Choose .Net 7.0 and .Net 6.0 or .Net Framework as the project type.
-
-
 	**Language:** Select the language, either CSharp or VB.
 
 	N> VB language is available only when you choose .NET Framework from option in Visual Studio.
@@ -63,7 +60,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	**Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
-	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup. Also, the GAC option will not be available when you choose .NET 6.0 and .NET 7.0 from project type option in Visual Studio.
+	N> The installed location and GAC options will be available only after the Syncfusion Essential WPF setup has been installed. You can use the NuGet option instead of installing the Syncfusion Essential WPF setup.
 
 	**Installed ES Build Version:** To add the appropriate version assemblies to the project, choose the build version.
 

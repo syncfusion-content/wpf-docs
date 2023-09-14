@@ -14,7 +14,7 @@ The WPF Template Studio is a tool Syncfusion provides specifically for building 
 
 I> The Syncfusion WPF Template Studio is available from v23.1.36.
 
-N> WPF Template Studio is compatible with Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017. Use the lowest version among these as a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
+N> WPF Template Studio works seamlessly with Visual Studio 2022, 2019, and 2017. It is recommended to utilise the earliest compatible version for the best experience when using it as a [WPF project template](https://help.syncfusion.com/wpf/visual-studio-integration/create-project).
 
 Create the Syncfusion WPF project using the Visual Studio Project Template by following the provided steps.
 
@@ -50,7 +50,7 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF project type selection wizard](Template-Studio-Images/WPF-5.png)
 
-6.	Click **Next** or the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
+6.	Click **Next** or navigate to the **Pages** tab to access a list of available Syncfusion WPF components you can add to the application.
 
 	![Syncfusion WPF pages selection wizard](Template-Studio-Images/WPF-6.png)
 
@@ -78,7 +78,7 @@ In the **Project Details** section, you can modify configurations and project ty
 
 10.	The Syncfusion WPF application is configured with the latest versions of Syncfusion WPF NuGet packages, complete with the appropriate namespaces and component 			render code for seamless integration of Syncfusion components.
 
-	N> From Visual Studio 2022, Project type selection option will be available in Syncfusion WPF Project template configuration. The .Net 6.0 and .Net 7.0 option will be listed in project type when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
+	N> From Visual Studio 2022, Project type selection option will be available in Syncfusion WPF template studio configuration. The .Net 6.0 and .Net 7.0 option will be listed in configuration when only the .Net 6.0 and .Net 7.0 SDK setup has been installed.
 
 	> .NET 6.0 version is available from v19.4.0.38 and it support from Visual Studio 2022.
 
