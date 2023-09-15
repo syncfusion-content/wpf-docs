@@ -66,11 +66,11 @@ Create the Syncfusion WPF project using the Visual Studio Project Template by fo
 
 	![Syncfusion WPF app features selection wizard](Template-Studio-Images/WPF-7.png)
 
-**Project Details Section**
+	**Project Details Section**
 
-In the **Project Details** section, you can modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
+	In the **Project Details** section, you can modify configurations and project types. Additionally, you can remove one or more controls from the selected list and remove the chosen application feature.
 
-![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
+	![Syncfusion WPF project details selection and unselection wizard](Template-Studio-Images/WPF-8.png)
 
 9.	Click **Create** to initiate the process. This action generates the Syncfusion WPF application. The resulting Syncfusion WPF app has the necessary Syncfusion NuGet 	packages, styles, and rendering code specific to the chosen Syncfusion component.
 
