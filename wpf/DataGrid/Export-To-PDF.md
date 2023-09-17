@@ -670,6 +670,6 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](export-to-pdf_images/wpf-details-view-datagrid-cells-customization.png)
+![Customizing WPF DetailsView DataGrid Cells Exported to PDF File](export-to-pdf_images/wpf-datagrid-details-view-cells-customization.png)
 
 

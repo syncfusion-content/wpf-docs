@@ -249,7 +249,7 @@ public class ViewModel
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 
-![Displaying the WPF SfDataPager in the SfDataGrid Control ](getting-started_images/wpf-datapager-datagrid-control.png)
+![Displaying the WPF SfDataPager in the SfDataGrid Control ](getting-started_images/wpf-datapager-displayed-in-datagrid-control.png)
 
 ## Theme
 
@@ -259,6 +259,6 @@ SfDataPager supports various built-in themes. Refer to the below links to apply 
 	
   * [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
-  ![Setting theme to WPF DataPager](getting-started_images/wpf-datapager-Theme.png)
+  ![Setting theme to WPF DataPager](getting-started_images/wpf-datapager-theme-support.png)
 
 

@@ -724,7 +724,7 @@ The output will be as follows.
 
 We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
-![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-stencil.gif)
+![WPF Diagram Interact with Stencil](getting-started_images\wpf-diagram-interact-with-stencil.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
